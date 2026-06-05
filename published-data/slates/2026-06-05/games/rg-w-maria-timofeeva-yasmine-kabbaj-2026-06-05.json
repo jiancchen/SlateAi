@@ -7,8 +7,8 @@
   "title": "Maria Timofeeva vs Yasmine Kabbaj",
   "stage": "WTA Makarska | Quarterfinal",
   "spotlight": false,
-  "confidence": 51,
-  "volatility": 59,
+  "confidence": 55,
+  "volatility": 53,
   "tags": [
     "Clay",
     "WTA Makarska",
@@ -29,13 +29,13 @@
       "side": "Player 2",
       "name": "Yasmine Kabbaj",
       "displayName": "Yasmine Kabbaj",
-      "detail": "Rank not joined | adj form 74"
+      "detail": "Live rank #297 | Morocco | age 22 | adj form 74"
     }
   ],
   "summary": "Our model pick: Maria Timofeeva. Opponent-adjusted recent form is basically even: Maria Timofeeva 75, Yasmine Kabbaj 74. Lean, not a chase.",
   "factors": [
     "Opponent-adjusted recent form is basically even: Maria Timofeeva 75, Yasmine Kabbaj 74. Lean, not a chase.",
-    "Model 51% vs DraftKings Sportsbook implied 78.8% (-27.8 pts).",
+    "Model 55% vs DraftKings Sportsbook implied 78.8% (-23.8 pts).",
     "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
     "Wait for a visible service-pressure split before entering.",
     "Best O/U angle: no play without a posted total.",
@@ -54,7 +54,7 @@
       {
         "label": "Model fair",
         "book": "Tennis warehouse model",
-        "value": "Maria Timofeeva 51% / Yasmine Kabbaj 49%"
+        "value": "Maria Timofeeva 55% / Yasmine Kabbaj 45%"
       },
       {
         "label": "DraftKings Sportsbook moneyline",
@@ -84,7 +84,7 @@
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
       "liveTrigger": "Wait for a visible service-pressure split before entering.",
-      "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Maria Timofeeva",
@@ -148,7 +148,7 @@
         "rank": 118,
         "label": "Maria Timofeeva",
         "form": null,
-        "boardPct": 51,
+        "boardPct": 55,
         "decimalOdds": 1.269,
         "marketLabel": "-372 / 78.8% implied",
         "clayLine": "Live rank #118 | Uzbekistan | age 22 | adj form 75",
@@ -178,20 +178,1228 @@
           ],
           "gameFlowRead": "Maria Timofeeva can drop points quickly through first-serve points won below comfort (57%)."
         },
-        "warehouseStats": null,
+        "warehouseStats": {
+          "name": "Maria Timofeeva",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Maria Timofeeva",
+            "country": "Uzbekistan",
+            "birthdate": "2003-11-18",
+            "age": 22,
+            "rank": 118,
+            "rankingLabel": "WTA ranking",
+            "topRank": 93,
+            "topRankDate": "2024-04-01",
+            "topRankPoints": 74900,
+            "points": 678,
+            "prizeMoney": "804.954 $",
+            "matchesTotal": 359,
+            "wins": 225,
+            "losses": 134,
+            "winPct": 62.67,
+            "sourceUrl": "https://www.tennislive.net/wta/maria-timofeeva/",
+            "capturedAt": "2026-06-04T22:53:43.850566+00:00"
+          },
+          "ranking": {
+            "rank": 118,
+            "points": 678,
+            "country": "Uzbekistan",
+            "age": 22,
+            "tour": "WTA ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/wta/maria-timofeeva/",
+            "asOf": "2026-06-04T22:53:43.850566+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/wta/match/maria-timofeeva-VS-yasmine-kabbaj/makarska-open-makarska-2026/",
+            "capturedAt": "2026-06-05T02:48:06.480600+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 1,
+                "value": -1,
+                "label": "03.01.2026 (lost vs Aliaksandra Sasnovich)",
+                "date": "2026-01-03",
+                "result": "lost",
+                "opponentName": "Aliaksandra Sasnovich"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 2,
+                "value": 0,
+                "label": "20.01.2026 (win vs Anastasia Tikhonova)",
+                "date": "2026-01-20",
+                "result": "win",
+                "opponentName": "Anastasia Tikhonova"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 3,
+                "value": -1,
+                "label": "22.01.2026 (lost vs Carol Young Suh Lee)",
+                "date": "2026-01-22",
+                "result": "lost",
+                "opponentName": "Carol Young Suh Lee"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 4,
+                "value": -2,
+                "label": "13.01.2026 (lost vs Mai Hontama)",
+                "date": "2026-01-13",
+                "result": "lost",
+                "opponentName": "Mai Hontama"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 5,
+                "value": -1,
+                "label": "21.02.2026 (win vs Martina Capurro Taborda)",
+                "date": "2026-02-21",
+                "result": "win",
+                "opponentName": "Martina Capurro Taborda"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 6,
+                "value": 0,
+                "label": "22.02.2026 (win vs Maria Lourdes Carle)",
+                "date": "2026-02-22",
+                "result": "win",
+                "opponentName": "Maria Lourdes Carle"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 7,
+                "value": -1,
+                "label": "24.02.2026 (lost vs Magdalena Frech)",
+                "date": "2026-02-24",
+                "result": "lost",
+                "opponentName": "Magdalena Frech"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 8,
+                "value": 0,
+                "label": "01.03.2026 (win vs Suzan Lamens)",
+                "date": "2026-03-01",
+                "result": "win",
+                "opponentName": "Suzan Lamens"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 9,
+                "value": -1,
+                "label": "03.03.2026 (lost vs Kamilla Rakhimova)",
+                "date": "2026-03-03",
+                "result": "lost",
+                "opponentName": "Kamilla Rakhimova"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 10,
+                "value": -2,
+                "label": "16.03.2026 (lost vs Lulu Sun)",
+                "date": "2026-03-16",
+                "result": "lost",
+                "opponentName": "Lulu Sun"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 11,
+                "value": -1,
+                "label": "05.04.2026 (win vs Alina Charaeva)",
+                "date": "2026-04-05",
+                "result": "win",
+                "opponentName": "Alina Charaeva"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 12,
+                "value": -2,
+                "label": "06.04.2026 (lost vs Tamara Korpatsch)",
+                "date": "2026-04-06",
+                "result": "lost",
+                "opponentName": "Tamara Korpatsch"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 13,
+                "value": -1,
+                "label": "11.04.2026 (win vs Yara Bartashevich)",
+                "date": "2026-04-11",
+                "result": "win",
+                "opponentName": "Yara Bartashevich"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 14,
+                "value": -2,
+                "label": "12.04.2026 (lost vs Chloe Paquet)",
+                "date": "2026-04-12",
+                "result": "lost",
+                "opponentName": "Chloe Paquet"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 15,
+                "value": -3,
+                "label": "13.04.2026 (lost vs Katie Boulter)",
+                "date": "2026-04-13",
+                "result": "lost",
+                "opponentName": "Katie Boulter"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 16,
+                "value": -2,
+                "label": "22.04.2026 (win vs Lucia Cortez Llorca)",
+                "date": "2026-04-22",
+                "result": "win",
+                "opponentName": "Lucía Cortez Llorca"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 17,
+                "value": -1,
+                "label": "23.04.2026 (win vs Jennifer Ruggeri)",
+                "date": "2026-04-23",
+                "result": "win",
+                "opponentName": "Jennifer Ruggeri"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 18,
+                "value": 0,
+                "label": "24.04.2026 (win vs Susan Bandecchi)",
+                "date": "2026-04-24",
+                "result": "win",
+                "opponentName": "Susan Bandecchi"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 19,
+                "value": 1,
+                "label": "25.04.2026 (win vs Alice Rame)",
+                "date": "2026-04-25",
+                "result": "win",
+                "opponentName": "Alice Ramé"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 20,
+                "value": 2,
+                "label": "26.04.2026 (win vs Lisa Pigato)",
+                "date": "2026-04-26",
+                "result": "win",
+                "opponentName": "Lisa Pigato"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 21,
+                "value": 1,
+                "label": "29.04.2026 (lost vs Tessa Johanna Brockmann)",
+                "date": "2026-04-29",
+                "result": "lost",
+                "opponentName": "Tessa Johanna Brockmann"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 22,
+                "value": 2,
+                "label": "05.05.2026 (win vs Noma Akugue Noha)",
+                "date": "2026-05-05",
+                "result": "win",
+                "opponentName": "Noma Akugue Noha"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 23,
+                "value": 3,
+                "label": "07.05.2026 (win vs Adelina Lachinova)",
+                "date": "2026-05-07",
+                "result": "win",
+                "opponentName": "Adelina Lachinova"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 24,
+                "value": 4,
+                "label": "08.05.2026 (win vs Francesca Jones)",
+                "date": "2026-05-08",
+                "result": "win",
+                "opponentName": "Francesca Jones"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 25,
+                "value": 5,
+                "label": "09.05.2026 (win vs Alice Tubello)",
+                "date": "2026-05-09",
+                "result": "win",
+                "opponentName": "Alice Tubello"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 26,
+                "value": 6,
+                "label": "10.05.2026 (win vs Donna Vekic)",
+                "date": "2026-05-10",
+                "result": "win",
+                "opponentName": "Donna Vekic"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 27,
+                "value": 7,
+                "label": "19.05.2026 (win vs Cadence Brace)",
+                "date": "2026-05-19",
+                "result": "win",
+                "opponentName": "Cadence Brace"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 28,
+                "value": 6,
+                "label": "20.05.2026 (lost vs Maria Lourdes Carle)",
+                "date": "2026-05-20",
+                "result": "lost",
+                "opponentName": "Maria Lourdes Carle"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 29,
+                "value": 7,
+                "label": "04.06.2026 (win vs Lea Boskovic)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Lea Bošković"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 30,
+                "value": 8,
+                "label": "04.06.2026 (win vs Erika Andreeva)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Erika Andreeva"
+              }
+            ],
+            "latestValue": 8,
+            "minValue": -3,
+            "maxValue": 8
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 1.2,
+              "avgAces": 1.2,
+              "doubleFaults": 2.6,
+              "avgDoubleFaults": 2.6,
+              "firstServePct": 64.6,
+              "firstServeWonPct": 57,
+              "secondServeWonPct": 49.6,
+              "returnPointsWonPct": 57,
+              "breakPointsConvertedPct": 65.2,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 30,
+              "breakPointsToConvert": 46,
+              "breakPointChancesPerMatch": 9.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 30,
+                "bpChances": 46,
+                "bpConvertedPct": 65.2,
+                "bpChancesPerMatch": 9.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 30,
+                "bpChances": 46,
+                "bpConvertedPct": 65.2,
+                "bpChancesPerMatch": 9.2
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Maria Timofeeva",
+            "matches": [
+              {
+                "opponentName": "Lea Bošković",
+                "event": "Makarska",
+                "matchDateLabel": "2026-06-04",
+                "isoDate": "2026-06-04",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "6-4, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/maria-timofeeva-VS-lea-boskovic/makarska-open-makarska-2026/",
+                "matchId": "tl-2026-06-04-makarska-open-makarska-2026-maria-timofeeva-vs-lea-boskovic",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "40/54 (74%)",
+                      "made": 40,
+                      "attempts": 54,
+                      "pct": 74
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "24/40 (60%)",
+                      "made": 24,
+                      "attempts": 40,
+                      "pct": 60
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "7/14 (50%)",
+                      "made": 7,
+                      "attempts": 14,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/8 (75%)",
+                      "made": 6,
+                      "attempts": 8,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "62/105 (59%)",
+                      "made": 62,
+                      "attempts": 105,
+                      "pct": 59
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "31/51 (61%)",
+                      "made": 31,
+                      "attempts": 51,
+                      "pct": 61
+                    }
+                  ],
+                  "firstServePct": 74,
+                  "firstServeIn": "40/54 (74%)",
+                  "firstServeWonPct": 60,
+                  "firstServePointsWon": "24/40 (60%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "7/14 (50%)",
+                  "aces": 1,
+                  "breakPointsConverted": "6/8 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 59,
+                  "totalPointsWon": "62/105 (59%)",
+                  "returnPointsWonPct": 61,
+                  "returnPointsWon": "31/51 (61%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "40/54 (74%)",
+                      "made": 40,
+                      "attempts": 54,
+                      "pct": 74
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "24/40 (60%)",
+                      "made": 24,
+                      "attempts": 40,
+                      "pct": 60
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "7/14 (50%)",
+                      "made": 7,
+                      "attempts": 14,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/8 (75%)",
+                      "made": 6,
+                      "attempts": 8,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "62/105 (59%)",
+                      "made": 62,
+                      "attempts": 105,
+                      "pct": 59
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "31/51 (61%)",
+                      "made": 31,
+                      "attempts": 51,
+                      "pct": 61
+                    }
+                  ],
+                  "firstServePct": 74,
+                  "firstServeIn": "40/54 (74%)",
+                  "firstServeWonPct": 60,
+                  "firstServePointsWon": "24/40 (60%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "7/14 (50%)",
+                  "aces": 1,
+                  "breakPointsConverted": "6/8 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 59,
+                  "totalPointsWon": "62/105 (59%)",
+                  "returnPointsWonPct": 61,
+                  "returnPointsWon": "31/51 (61%)"
+                }
+              },
+              {
+                "opponentName": "Erika Andreeva",
+                "event": "Makarska",
+                "matchDateLabel": "2026-06-04",
+                "isoDate": "2026-06-04",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "6-3, 6-2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/maria-timofeeva-VS-erika-andreeva/makarska-open-makarska-2026/",
+                "matchId": "tl-2026-06-04-makarska-open-makarska-2026-maria-timofeeva-vs-erika-andreeva",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "35/53 (66%)",
+                      "made": 35,
+                      "attempts": 53,
+                      "pct": 66
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "22/35 (63%)",
+                      "made": 22,
+                      "attempts": 35,
+                      "pct": 63
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "11/18 (61%)",
+                      "made": 11,
+                      "attempts": 18,
+                      "pct": 61
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/11 (45%)",
+                      "made": 5,
+                      "attempts": 11,
+                      "pct": 45
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "61/111 (55%)",
+                      "made": 61,
+                      "attempts": 111,
+                      "pct": 55
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "28/58 (48%)",
+                      "made": 28,
+                      "attempts": 58,
+                      "pct": 48
+                    }
+                  ],
+                  "firstServePct": 66,
+                  "firstServeIn": "35/53 (66%)",
+                  "firstServeWonPct": 63,
+                  "firstServePointsWon": "22/35 (63%)",
+                  "secondServeWonPct": 61,
+                  "secondServePointsWon": "11/18 (61%)",
+                  "aces": 1,
+                  "breakPointsConverted": "5/11 (45%)",
+                  "breakPointsConvertedPct": 45,
+                  "doubleFaults": 3,
+                  "totalPointsWonPct": 55,
+                  "totalPointsWon": "61/111 (55%)",
+                  "returnPointsWonPct": 48,
+                  "returnPointsWon": "28/58 (48%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "35/53 (66%)",
+                      "made": 35,
+                      "attempts": 53,
+                      "pct": 66
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "22/35 (63%)",
+                      "made": 22,
+                      "attempts": 35,
+                      "pct": 63
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "11/18 (61%)",
+                      "made": 11,
+                      "attempts": 18,
+                      "pct": 61
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/11 (45%)",
+                      "made": 5,
+                      "attempts": 11,
+                      "pct": 45
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "61/111 (55%)",
+                      "made": 61,
+                      "attempts": 111,
+                      "pct": 55
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "28/58 (48%)",
+                      "made": 28,
+                      "attempts": 58,
+                      "pct": 48
+                    }
+                  ],
+                  "firstServePct": 66,
+                  "firstServeIn": "35/53 (66%)",
+                  "firstServeWonPct": 63,
+                  "firstServePointsWon": "22/35 (63%)",
+                  "secondServeWonPct": 61,
+                  "secondServePointsWon": "11/18 (61%)",
+                  "aces": 1,
+                  "breakPointsConverted": "5/11 (45%)",
+                  "breakPointsConvertedPct": 45,
+                  "doubleFaults": 3,
+                  "totalPointsWonPct": 55,
+                  "totalPointsWon": "61/111 (55%)",
+                  "returnPointsWonPct": 48,
+                  "returnPointsWon": "28/58 (48%)"
+                }
+              },
+              {
+                "opponentName": "Maria Lourdes Carle",
+                "event": "Paris",
+                "matchDateLabel": "2026-05-20",
+                "isoDate": "2026-05-20",
+                "surface": "Clay",
+                "round": "q 2",
+                "result": "lost",
+                "score": "2-6, 6-0, 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/maria-lourdes-carle-VS-maria-timofeeva/french-open-paris-2026/",
+                "matchId": "tl-2026-05-20-french-open-paris-2026-maria-lourdes-carle-vs-maria-timofeeva",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "51/82 (62%)",
+                      "made": 51,
+                      "attempts": 82,
+                      "pct": 62
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "28/51 (55%)",
+                      "made": 28,
+                      "attempts": 51,
+                      "pct": 55
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "12/31 (39%)",
+                      "made": 12,
+                      "attempts": 31,
+                      "pct": 39
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/8 (63%)",
+                      "made": 5,
+                      "attempts": 8,
+                      "pct": 63
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "76/162 (47%)",
+                      "made": 76,
+                      "attempts": 162,
+                      "pct": 47
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "36/80 (45%)",
+                      "made": 36,
+                      "attempts": 80,
+                      "pct": 45
+                    }
+                  ],
+                  "firstServePct": 62,
+                  "firstServeIn": "51/82 (62%)",
+                  "firstServeWonPct": 55,
+                  "firstServePointsWon": "28/51 (55%)",
+                  "secondServeWonPct": 39,
+                  "secondServePointsWon": "12/31 (39%)",
+                  "aces": 1,
+                  "breakPointsConverted": "5/8 (63%)",
+                  "breakPointsConvertedPct": 63,
+                  "doubleFaults": 4,
+                  "totalPointsWonPct": 47,
+                  "totalPointsWon": "76/162 (47%)",
+                  "returnPointsWonPct": 45,
+                  "returnPointsWon": "36/80 (45%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "51/82 (62%)",
+                      "made": 51,
+                      "attempts": 82,
+                      "pct": 62
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "28/51 (55%)",
+                      "made": 28,
+                      "attempts": 51,
+                      "pct": 55
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "12/31 (39%)",
+                      "made": 12,
+                      "attempts": 31,
+                      "pct": 39
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/8 (63%)",
+                      "made": 5,
+                      "attempts": 8,
+                      "pct": 63
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "76/162 (47%)",
+                      "made": 76,
+                      "attempts": 162,
+                      "pct": 47
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "36/80 (45%)",
+                      "made": 36,
+                      "attempts": 80,
+                      "pct": 45
+                    }
+                  ],
+                  "firstServePct": 62,
+                  "firstServeIn": "51/82 (62%)",
+                  "firstServeWonPct": 55,
+                  "firstServePointsWon": "28/51 (55%)",
+                  "secondServeWonPct": 39,
+                  "secondServePointsWon": "12/31 (39%)",
+                  "aces": 1,
+                  "breakPointsConverted": "5/8 (63%)",
+                  "breakPointsConvertedPct": 63,
+                  "doubleFaults": 4,
+                  "totalPointsWonPct": 47,
+                  "totalPointsWon": "76/162 (47%)",
+                  "returnPointsWonPct": 45,
+                  "returnPointsWon": "36/80 (45%)"
+                }
+              },
+              {
+                "opponentName": "Cadence Brace",
+                "event": "Paris",
+                "matchDateLabel": "2026-05-19",
+                "isoDate": "2026-05-19",
+                "surface": "Clay",
+                "round": "q 1",
+                "result": "win",
+                "score": "6-1, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/maria-timofeeva-VS-cadence-brace/french-open-paris-2026/",
+                "matchId": "tl-2026-05-19-french-open-paris-2026-maria-timofeeva-vs-cadence-brace",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "34/55 (62%)",
+                      "made": 34,
+                      "attempts": 55,
+                      "pct": 62
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "21/34 (62%)",
+                      "made": 21,
+                      "attempts": 34,
+                      "pct": 62
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/21 (48%)",
+                      "made": 10,
+                      "attempts": 21,
+                      "pct": 48
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "7/10 (70%)",
+                      "made": 7,
+                      "attempts": 10,
+                      "pct": 70
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "59/96 (61%)",
+                      "made": 59,
+                      "attempts": 96,
+                      "pct": 61
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "28/41 (68%)",
+                      "made": 28,
+                      "attempts": 41,
+                      "pct": 68
+                    }
+                  ],
+                  "firstServePct": 62,
+                  "firstServeIn": "34/55 (62%)",
+                  "firstServeWonPct": 62,
+                  "firstServePointsWon": "21/34 (62%)",
+                  "secondServeWonPct": 48,
+                  "secondServePointsWon": "10/21 (48%)",
+                  "aces": 2,
+                  "breakPointsConverted": "7/10 (70%)",
+                  "breakPointsConvertedPct": 70,
+                  "doubleFaults": 4,
+                  "totalPointsWonPct": 61,
+                  "totalPointsWon": "59/96 (61%)",
+                  "returnPointsWonPct": 68,
+                  "returnPointsWon": "28/41 (68%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "34/55 (62%)",
+                      "made": 34,
+                      "attempts": 55,
+                      "pct": 62
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "21/34 (62%)",
+                      "made": 21,
+                      "attempts": 34,
+                      "pct": 62
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/21 (48%)",
+                      "made": 10,
+                      "attempts": 21,
+                      "pct": 48
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "7/10 (70%)",
+                      "made": 7,
+                      "attempts": 10,
+                      "pct": 70
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "59/96 (61%)",
+                      "made": 59,
+                      "attempts": 96,
+                      "pct": 61
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "28/41 (68%)",
+                      "made": 28,
+                      "attempts": 41,
+                      "pct": 68
+                    }
+                  ],
+                  "firstServePct": 62,
+                  "firstServeIn": "34/55 (62%)",
+                  "firstServeWonPct": 62,
+                  "firstServePointsWon": "21/34 (62%)",
+                  "secondServeWonPct": 48,
+                  "secondServePointsWon": "10/21 (48%)",
+                  "aces": 2,
+                  "breakPointsConverted": "7/10 (70%)",
+                  "breakPointsConvertedPct": 70,
+                  "doubleFaults": 4,
+                  "totalPointsWonPct": 61,
+                  "totalPointsWon": "59/96 (61%)",
+                  "returnPointsWonPct": 68,
+                  "returnPointsWon": "28/41 (68%)"
+                }
+              },
+              {
+                "opponentName": "Donna Vekic",
+                "event": "Istanbul",
+                "matchDateLabel": "2026-05-10",
+                "isoDate": "2026-05-10",
+                "surface": "Clay",
+                "round": "fin",
+                "result": "win",
+                "score": "6-4, 6-2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/maria-timofeeva-VS-donna-vekic/istanbul-open-istanbul-2026/",
+                "matchId": "tl-2026-05-10-istanbul-open-istanbul-2026-maria-timofeeva-vs-donna-vekic",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "29/49 (59%)",
+                      "made": 29,
+                      "attempts": 49,
+                      "pct": 59
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "13/29 (45%)",
+                      "made": 13,
+                      "attempts": 29,
+                      "pct": 45
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/20 (50%)",
+                      "made": 10,
+                      "attempts": 20,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "7/9 (78%)",
+                      "made": 7,
+                      "attempts": 9,
+                      "pct": 78
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "60/108 (56%)",
+                      "made": 60,
+                      "attempts": 108,
+                      "pct": 56
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "37/59 (63%)",
+                      "made": 37,
+                      "attempts": 59,
+                      "pct": 63
+                    }
+                  ],
+                  "firstServePct": 59,
+                  "firstServeIn": "29/49 (59%)",
+                  "firstServeWonPct": 45,
+                  "firstServePointsWon": "13/29 (45%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "10/20 (50%)",
+                  "aces": 1,
+                  "breakPointsConverted": "7/9 (78%)",
+                  "breakPointsConvertedPct": 78,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 56,
+                  "totalPointsWon": "60/108 (56%)",
+                  "returnPointsWonPct": 63,
+                  "returnPointsWon": "37/59 (63%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "29/49 (59%)",
+                      "made": 29,
+                      "attempts": 49,
+                      "pct": 59
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "13/29 (45%)",
+                      "made": 13,
+                      "attempts": 29,
+                      "pct": 45
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/20 (50%)",
+                      "made": 10,
+                      "attempts": 20,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "7/9 (78%)",
+                      "made": 7,
+                      "attempts": 9,
+                      "pct": 78
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "60/108 (56%)",
+                      "made": 60,
+                      "attempts": 108,
+                      "pct": 56
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "37/59 (63%)",
+                      "made": 37,
+                      "attempts": 59,
+                      "pct": 63
+                    }
+                  ],
+                  "firstServePct": 59,
+                  "firstServeIn": "29/49 (59%)",
+                  "firstServeWonPct": 45,
+                  "firstServePointsWon": "13/29 (45%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "10/20 (50%)",
+                  "aces": 1,
+                  "breakPointsConverted": "7/9 (78%)",
+                  "breakPointsConvertedPct": 78,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 56,
+                  "totalPointsWon": "60/108 (56%)",
+                  "returnPointsWonPct": 63,
+                  "returnPointsWon": "37/59 (63%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 75,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.8,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.634,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 75,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/wta/maria-timofeeva/"
+          }
+        },
         "record2026": "",
-        "notes": "Pick: model 51%",
+        "notes": "Pick: model 55%",
         "matchupNote": "Why pick: Opponent-adjusted recent form is basically even: Maria Timofeeva 75, Yasmine Kabbaj 74. Lean, not a chase."
       },
       {
         "name": "Yasmine Kabbaj",
-        "rank": null,
+        "rank": 297,
         "label": "Yasmine Kabbaj",
         "form": null,
-        "boardPct": 49,
+        "boardPct": 45,
         "decimalOdds": 3.62,
         "marketLabel": "+262 / 27.6% implied",
-        "clayLine": "Rank not joined | adj form 74",
+        "clayLine": "Live rank #297 | Morocco | age 22 | adj form 74",
         "weakness": {
           "name": "Yasmine Kabbaj",
           "serviceHoldPct": null,
@@ -220,9 +1428,1217 @@
           ],
           "gameFlowRead": "Yasmine Kabbaj can drop points quickly through first-serve points won below comfort (58%) and 3 recent matches with serve instability."
         },
-        "warehouseStats": null,
+        "warehouseStats": {
+          "name": "Yasmine Kabbaj",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Yasmine Kabbaj",
+            "country": "Morocco",
+            "birthdate": "2004-01-15",
+            "age": 22,
+            "rank": 297,
+            "rankingLabel": "WTA ranking",
+            "topRank": 297,
+            "topRankDate": "2026-05-25",
+            "topRankPoints": 23400,
+            "points": 234,
+            "prizeMoney": "53.120 $",
+            "matchesTotal": 196,
+            "wins": 123,
+            "losses": 73,
+            "winPct": 62.76,
+            "sourceUrl": "https://www.tennislive.net/wta/yasmine-kabbaj/",
+            "capturedAt": "2026-06-04T22:53:53.708815+00:00"
+          },
+          "ranking": {
+            "rank": 297,
+            "points": 234,
+            "country": "Morocco",
+            "age": 22,
+            "tour": "WTA ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/wta/yasmine-kabbaj/",
+            "asOf": "2026-06-04T22:53:53.708815+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/wta/match/maria-timofeeva-VS-yasmine-kabbaj/makarska-open-makarska-2026/",
+            "capturedAt": "2026-06-05T02:48:06.480600+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 1,
+                "value": -1,
+                "label": "10.01.2026 (lost vs Alize Lim)",
+                "date": "2026-01-10",
+                "result": "lost",
+                "opponentName": "Alizé Lim"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 2,
+                "value": 0,
+                "label": "14.01.2026 (win vs Pauline Payet)",
+                "date": "2026-01-14",
+                "result": "win",
+                "opponentName": "Pauline Payet"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 3,
+                "value": 1,
+                "label": "15.01.2026 (win vs Alize Lim)",
+                "date": "2026-01-15",
+                "result": "win",
+                "opponentName": "Alizé Lim"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 4,
+                "value": 0,
+                "label": "16.01.2026 (lost vs Lina Glushko)",
+                "date": "2026-01-16",
+                "result": "lost",
+                "opponentName": "Lina Glushko"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 5,
+                "value": 1,
+                "label": "21.01.2026 (win vs Nehanda Thomias)",
+                "date": "2026-01-21",
+                "result": "win",
+                "opponentName": "Nehanda Thomias"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 6,
+                "value": 0,
+                "label": "22.01.2026 (lost vs Alize Lim)",
+                "date": "2026-01-22",
+                "result": "lost",
+                "opponentName": "Alizé Lim"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 7,
+                "value": 1,
+                "label": "31.01.2026 (win vs Sonal Patil)",
+                "date": "2026-01-31",
+                "result": "win",
+                "opponentName": "Sonal Patil"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 8,
+                "value": 0,
+                "label": "01.02.2026 (lost vs Kristiana Sidorova)",
+                "date": "2026-02-01",
+                "result": "lost",
+                "opponentName": "Kristiana Sidorova"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 9,
+                "value": 1,
+                "label": "03.02.2026 (win vs Peangtarn Plipuech)",
+                "date": "2026-02-03",
+                "result": "win",
+                "opponentName": "Peangtarn Plipuech"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 10,
+                "value": 0,
+                "label": "04.02.2026 (lost vs Mei Yamaguchi)",
+                "date": "2026-02-04",
+                "result": "lost",
+                "opponentName": "Mei Yamaguchi"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 11,
+                "value": 1,
+                "label": "08.02.2026 (win vs Soha Sadiq)",
+                "date": "2026-02-08",
+                "result": "win",
+                "opponentName": "Soha Sadiq"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 12,
+                "value": 2,
+                "label": "09.02.2026 (win vs Ulyana Hrabavets)",
+                "date": "2026-02-09",
+                "result": "win",
+                "opponentName": "Ulyana Hrabavets"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 13,
+                "value": 3,
+                "label": "10.02.2026 (win vs Zuzanna Pawlikowska)",
+                "date": "2026-02-10",
+                "result": "win",
+                "opponentName": "Zuzanna Pawlikowska"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 14,
+                "value": 2,
+                "label": "11.02.2026 (lost vs Harriet Dart)",
+                "date": "2026-02-11",
+                "result": "lost",
+                "opponentName": "Harriet Dart"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 15,
+                "value": 1,
+                "label": "04.03.2026 (lost vs Alena Kovackova)",
+                "date": "2026-03-04",
+                "result": "lost",
+                "opponentName": "Alena Kovačková"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 16,
+                "value": 0,
+                "label": "11.03.2026 (lost vs Gina Marie Dittmann)",
+                "date": "2026-03-11",
+                "result": "lost",
+                "opponentName": "Gina Marie Dittmann"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 17,
+                "value": 1,
+                "label": "19.03.2026 (win vs Laura Hietaranta)",
+                "date": "2026-03-19",
+                "result": "win",
+                "opponentName": "Laura Hietaranta"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 18,
+                "value": 0,
+                "label": "19.03.2026 (lost vs Lisa Pigato)",
+                "date": "2026-03-19",
+                "result": "lost",
+                "opponentName": "Lisa Pigato"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 19,
+                "value": -1,
+                "label": "23.03.2026 (lost vs Suzan Lamens)",
+                "date": "2026-03-23",
+                "result": "lost",
+                "opponentName": "Suzan Lamens"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 20,
+                "value": -2,
+                "label": "21.04.2026 (lost vs Katarina Zavatska)",
+                "date": "2026-04-21",
+                "result": "lost",
+                "opponentName": "Katarina Zavatska"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 21,
+                "value": -1,
+                "label": "26.04.2026 (win vs Eleejah Inisan)",
+                "date": "2026-04-26",
+                "result": "win",
+                "opponentName": "Eleejah Inisan"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 22,
+                "value": -2,
+                "label": "27.04.2026 (lost vs Lucie Nguyen Tan)",
+                "date": "2026-04-27",
+                "result": "lost",
+                "opponentName": "Lucie Nguyen Tan"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 23,
+                "value": -1,
+                "label": "28.04.2026 (win vs Diane Parry)",
+                "date": "2026-04-28",
+                "result": "win",
+                "opponentName": "Diane Parry"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 24,
+                "value": -2,
+                "label": "30.04.2026 (lost vs Jessika Ponchet)",
+                "date": "2026-04-30",
+                "result": "lost",
+                "opponentName": "Jessika Ponchet"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 25,
+                "value": -1,
+                "label": "19.05.2026 (win vs Berfu Cengiz)",
+                "date": "2026-05-19",
+                "result": "win",
+                "opponentName": "Berfu Cengiz"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 26,
+                "value": 0,
+                "label": "20.05.2026 (win vs Tatjana Maria)",
+                "date": "2026-05-20",
+                "result": "win",
+                "opponentName": "Tatjana Maria"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 27,
+                "value": -1,
+                "label": "21.05.2026 (lost vs Jil Teichmann)",
+                "date": "2026-05-21",
+                "result": "lost",
+                "opponentName": "Jil Teichmann"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 28,
+                "value": 0,
+                "label": "02.06.2026 (win vs Dalila Jakupovic)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Dalila Jakupović"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 29,
+                "value": 1,
+                "label": "04.06.2026 (win vs Maya Joint)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Maya Joint"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 30,
+                "value": 2,
+                "label": "04.06.2026 (win vs Lucie Havlickova)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Lucie Havlickova"
+              }
+            ],
+            "latestValue": 2,
+            "minValue": -2,
+            "maxValue": 3
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 0.2,
+              "avgAces": 0.2,
+              "doubleFaults": 2.6,
+              "avgDoubleFaults": 2.6,
+              "firstServePct": 75.4,
+              "firstServeWonPct": 57.8,
+              "secondServeWonPct": 55.2,
+              "returnPointsWonPct": 50.4,
+              "breakPointsConvertedPct": 51.9,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 28,
+              "breakPointsToConvert": 54,
+              "breakPointChancesPerMatch": 10.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 28,
+                "bpChances": 54,
+                "bpConvertedPct": 51.9,
+                "bpChancesPerMatch": 10.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 28,
+                "bpChances": 54,
+                "bpConvertedPct": 51.9,
+                "bpChancesPerMatch": 10.8
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Yasmine Kabbaj",
+            "matches": [
+              {
+                "opponentName": "Lucie Havlickova",
+                "event": "Makarska",
+                "matchDateLabel": "2026-06-04",
+                "isoDate": "2026-06-04",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "7-6 5 , 7-5",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/yasmine-kabbaj-VS-lucie-havlickova/makarska-open-makarska-2026/",
+                "matchId": "tl-2026-06-04-makarska-open-makarska-2026-yasmine-kabbaj-vs-lucie-havlickova",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "59/84 (70%)",
+                      "made": 59,
+                      "attempts": 84,
+                      "pct": 70
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "34/59 (58%)",
+                      "made": 34,
+                      "attempts": 59,
+                      "pct": 58
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "14/25 (56%)",
+                      "made": 14,
+                      "attempts": 25,
+                      "pct": 56
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/15 (33%)",
+                      "made": 5,
+                      "attempts": 15,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "93/184 (51%)",
+                      "made": 93,
+                      "attempts": 184,
+                      "pct": 51
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "45/100 (45%)",
+                      "made": 45,
+                      "attempts": 100,
+                      "pct": 45
+                    }
+                  ],
+                  "firstServePct": 70,
+                  "firstServeIn": "59/84 (70%)",
+                  "firstServeWonPct": 58,
+                  "firstServePointsWon": "34/59 (58%)",
+                  "secondServeWonPct": 56,
+                  "secondServePointsWon": "14/25 (56%)",
+                  "aces": 0,
+                  "breakPointsConverted": "5/15 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 51,
+                  "totalPointsWon": "93/184 (51%)",
+                  "returnPointsWonPct": 45,
+                  "returnPointsWon": "45/100 (45%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "59/84 (70%)",
+                      "made": 59,
+                      "attempts": 84,
+                      "pct": 70
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "34/59 (58%)",
+                      "made": 34,
+                      "attempts": 59,
+                      "pct": 58
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "14/25 (56%)",
+                      "made": 14,
+                      "attempts": 25,
+                      "pct": 56
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/15 (33%)",
+                      "made": 5,
+                      "attempts": 15,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "93/184 (51%)",
+                      "made": 93,
+                      "attempts": 184,
+                      "pct": 51
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "45/100 (45%)",
+                      "made": 45,
+                      "attempts": 100,
+                      "pct": 45
+                    }
+                  ],
+                  "firstServePct": 70,
+                  "firstServeIn": "59/84 (70%)",
+                  "firstServeWonPct": 58,
+                  "firstServePointsWon": "34/59 (58%)",
+                  "secondServeWonPct": 56,
+                  "secondServePointsWon": "14/25 (56%)",
+                  "aces": 0,
+                  "breakPointsConverted": "5/15 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 51,
+                  "totalPointsWon": "93/184 (51%)",
+                  "returnPointsWonPct": 45,
+                  "returnPointsWon": "45/100 (45%)"
+                }
+              },
+              {
+                "opponentName": "Maya Joint",
+                "event": "Makarska",
+                "matchDateLabel": "2026-06-04",
+                "isoDate": "2026-06-04",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "6-3, 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/yasmine-kabbaj-VS-maya-joint/makarska-open-makarska-2026/",
+                "matchId": "tl-2026-06-04-makarska-open-makarska-2026-yasmine-kabbaj-vs-maya-joint",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "38/50 (76%)",
+                      "made": 38,
+                      "attempts": 50,
+                      "pct": 76
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "23/38 (61%)",
+                      "made": 23,
+                      "attempts": 38,
+                      "pct": 61
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/12 (75%)",
+                      "made": 9,
+                      "attempts": 12,
+                      "pct": 75
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/10 (50%)",
+                      "made": 5,
+                      "attempts": 10,
+                      "pct": 50
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "67/117 (57%)",
+                      "made": 67,
+                      "attempts": 117,
+                      "pct": 57
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "35/67 (52%)",
+                      "made": 35,
+                      "attempts": 67,
+                      "pct": 52
+                    }
+                  ],
+                  "firstServePct": 76,
+                  "firstServeIn": "38/50 (76%)",
+                  "firstServeWonPct": 61,
+                  "firstServePointsWon": "23/38 (61%)",
+                  "secondServeWonPct": 75,
+                  "secondServePointsWon": "9/12 (75%)",
+                  "aces": 0,
+                  "breakPointsConverted": "5/10 (50%)",
+                  "breakPointsConvertedPct": 50,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 57,
+                  "totalPointsWon": "67/117 (57%)",
+                  "returnPointsWonPct": 52,
+                  "returnPointsWon": "35/67 (52%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "38/50 (76%)",
+                      "made": 38,
+                      "attempts": 50,
+                      "pct": 76
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "23/38 (61%)",
+                      "made": 23,
+                      "attempts": 38,
+                      "pct": 61
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/12 (75%)",
+                      "made": 9,
+                      "attempts": 12,
+                      "pct": 75
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/10 (50%)",
+                      "made": 5,
+                      "attempts": 10,
+                      "pct": 50
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "67/117 (57%)",
+                      "made": 67,
+                      "attempts": 117,
+                      "pct": 57
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "35/67 (52%)",
+                      "made": 35,
+                      "attempts": 67,
+                      "pct": 52
+                    }
+                  ],
+                  "firstServePct": 76,
+                  "firstServeIn": "38/50 (76%)",
+                  "firstServeWonPct": 61,
+                  "firstServePointsWon": "23/38 (61%)",
+                  "secondServeWonPct": 75,
+                  "secondServePointsWon": "9/12 (75%)",
+                  "aces": 0,
+                  "breakPointsConverted": "5/10 (50%)",
+                  "breakPointsConvertedPct": 50,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 57,
+                  "totalPointsWon": "67/117 (57%)",
+                  "returnPointsWonPct": 52,
+                  "returnPointsWon": "35/67 (52%)"
+                }
+              },
+              {
+                "opponentName": "Dalila Jakupović",
+                "event": "Makarska",
+                "matchDateLabel": "2026-06-02",
+                "isoDate": "2026-06-02",
+                "surface": "Clay",
+                "round": "qual.",
+                "result": "win",
+                "score": "6-3, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/yasmine-kabbaj-VS-dalila-jakupovic/makarska-open-makarska-2026/",
+                "matchId": "tl-2026-06-02-makarska-open-makarska-2026-yasmine-kabbaj-vs-dalila-jakupovic",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "37/53 (70%)",
+                      "made": 37,
+                      "attempts": 53,
+                      "pct": 70
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "22/37 (59%)",
+                      "made": 22,
+                      "attempts": 37,
+                      "pct": 59
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "11/16 (69%)",
+                      "made": 11,
+                      "attempts": 16,
+                      "pct": 69
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/10 (60%)",
+                      "made": 6,
+                      "attempts": 10,
+                      "pct": 60
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "63/105 (60%)",
+                      "made": 63,
+                      "attempts": 105,
+                      "pct": 60
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "30/52 (58%)",
+                      "made": 30,
+                      "attempts": 52,
+                      "pct": 58
+                    }
+                  ],
+                  "firstServePct": 70,
+                  "firstServeIn": "37/53 (70%)",
+                  "firstServeWonPct": 59,
+                  "firstServePointsWon": "22/37 (59%)",
+                  "secondServeWonPct": 69,
+                  "secondServePointsWon": "11/16 (69%)",
+                  "aces": 0,
+                  "breakPointsConverted": "6/10 (60%)",
+                  "breakPointsConvertedPct": 60,
+                  "doubleFaults": 4,
+                  "totalPointsWonPct": 60,
+                  "totalPointsWon": "63/105 (60%)",
+                  "returnPointsWonPct": 58,
+                  "returnPointsWon": "30/52 (58%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "37/53 (70%)",
+                      "made": 37,
+                      "attempts": 53,
+                      "pct": 70
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "22/37 (59%)",
+                      "made": 22,
+                      "attempts": 37,
+                      "pct": 59
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "11/16 (69%)",
+                      "made": 11,
+                      "attempts": 16,
+                      "pct": 69
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/10 (60%)",
+                      "made": 6,
+                      "attempts": 10,
+                      "pct": 60
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "63/105 (60%)",
+                      "made": 63,
+                      "attempts": 105,
+                      "pct": 60
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "30/52 (58%)",
+                      "made": 30,
+                      "attempts": 52,
+                      "pct": 58
+                    }
+                  ],
+                  "firstServePct": 70,
+                  "firstServeIn": "37/53 (70%)",
+                  "firstServeWonPct": 59,
+                  "firstServePointsWon": "22/37 (59%)",
+                  "secondServeWonPct": 69,
+                  "secondServePointsWon": "11/16 (69%)",
+                  "aces": 0,
+                  "breakPointsConverted": "6/10 (60%)",
+                  "breakPointsConvertedPct": 60,
+                  "doubleFaults": 4,
+                  "totalPointsWonPct": 60,
+                  "totalPointsWon": "63/105 (60%)",
+                  "returnPointsWonPct": 58,
+                  "returnPointsWon": "30/52 (58%)"
+                }
+              },
+              {
+                "opponentName": "Jil Teichmann",
+                "event": "Rabat",
+                "matchDateLabel": "2026-05-21",
+                "isoDate": "2026-05-21",
+                "surface": "Clay",
+                "round": "1/4",
+                "result": "lost",
+                "score": "6-1, 5-7, 7-6 6",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/jil-belen-teichmann-VS-yasmine-kabbaj/grand-prix-de-sar-la-princesse-lalla-meryem-rabat-2026/",
+                "matchId": "tl-2026-05-21-grand-prix-de-sar-la-princesse-lalla-meryem-rabat-2026-jil-teichmann-vs-yasmine-kabbaj",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "83/117 (71%)",
+                      "made": 83,
+                      "attempts": 117,
+                      "pct": 71
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "37/83 (45%)",
+                      "made": 37,
+                      "attempts": 83,
+                      "pct": 45
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "19/34 (56%)",
+                      "made": 19,
+                      "attempts": 34,
+                      "pct": 56
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/11 (55%)",
+                      "made": 6,
+                      "attempts": 11,
+                      "pct": 55
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "96/214 (45%)",
+                      "made": 96,
+                      "attempts": 214,
+                      "pct": 45
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "40/97 (41%)",
+                      "made": 40,
+                      "attempts": 97,
+                      "pct": 41
+                    }
+                  ],
+                  "firstServePct": 71,
+                  "firstServeIn": "83/117 (71%)",
+                  "firstServeWonPct": 45,
+                  "firstServePointsWon": "37/83 (45%)",
+                  "secondServeWonPct": 56,
+                  "secondServePointsWon": "19/34 (56%)",
+                  "aces": 0,
+                  "breakPointsConverted": "6/11 (55%)",
+                  "breakPointsConvertedPct": 55,
+                  "doubleFaults": 3,
+                  "totalPointsWonPct": 45,
+                  "totalPointsWon": "96/214 (45%)",
+                  "returnPointsWonPct": 41,
+                  "returnPointsWon": "40/97 (41%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "83/117 (71%)",
+                      "made": 83,
+                      "attempts": 117,
+                      "pct": 71
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "37/83 (45%)",
+                      "made": 37,
+                      "attempts": 83,
+                      "pct": 45
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "19/34 (56%)",
+                      "made": 19,
+                      "attempts": 34,
+                      "pct": 56
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/11 (55%)",
+                      "made": 6,
+                      "attempts": 11,
+                      "pct": 55
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "96/214 (45%)",
+                      "made": 96,
+                      "attempts": 214,
+                      "pct": 45
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "40/97 (41%)",
+                      "made": 40,
+                      "attempts": 97,
+                      "pct": 41
+                    }
+                  ],
+                  "firstServePct": 71,
+                  "firstServeIn": "83/117 (71%)",
+                  "firstServeWonPct": 45,
+                  "firstServePointsWon": "37/83 (45%)",
+                  "secondServeWonPct": 56,
+                  "secondServePointsWon": "19/34 (56%)",
+                  "aces": 0,
+                  "breakPointsConverted": "6/11 (55%)",
+                  "breakPointsConvertedPct": 55,
+                  "doubleFaults": 3,
+                  "totalPointsWonPct": 45,
+                  "totalPointsWon": "96/214 (45%)",
+                  "returnPointsWonPct": 41,
+                  "returnPointsWon": "40/97 (41%)"
+                }
+              },
+              {
+                "opponentName": "Tatjana Maria",
+                "event": "Rabat",
+                "matchDateLabel": "2026-05-20",
+                "isoDate": "2026-05-20",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "6-2, 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/yasmine-kabbaj-VS-tatjana-malek/grand-prix-de-sar-la-princesse-lalla-meryem-rabat-2026/",
+                "matchId": "tl-2026-05-20-grand-prix-de-sar-la-princesse-lalla-meryem-rabat-2026-yasmine-kabbaj-vs-tatjana-maria",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "47/52 (90%)",
+                      "made": 47,
+                      "attempts": 52,
+                      "pct": 90
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "31/47 (66%)",
+                      "made": 31,
+                      "attempts": 47,
+                      "pct": 66
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "1/5 (20%)",
+                      "made": 1,
+                      "attempts": 5,
+                      "pct": 20
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/8 (75%)",
+                      "made": 6,
+                      "attempts": 8,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "62/106 (58%)",
+                      "made": 62,
+                      "attempts": 106,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "30/54 (56%)",
+                      "made": 30,
+                      "attempts": 54,
+                      "pct": 56
+                    }
+                  ],
+                  "firstServePct": 90,
+                  "firstServeIn": "47/52 (90%)",
+                  "firstServeWonPct": 66,
+                  "firstServePointsWon": "31/47 (66%)",
+                  "secondServeWonPct": 20,
+                  "secondServePointsWon": "1/5 (20%)",
+                  "aces": 1,
+                  "breakPointsConverted": "6/8 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "62/106 (58%)",
+                  "returnPointsWonPct": 56,
+                  "returnPointsWon": "30/54 (56%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "47/52 (90%)",
+                      "made": 47,
+                      "attempts": 52,
+                      "pct": 90
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "31/47 (66%)",
+                      "made": 31,
+                      "attempts": 47,
+                      "pct": 66
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "1/5 (20%)",
+                      "made": 1,
+                      "attempts": 5,
+                      "pct": 20
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/8 (75%)",
+                      "made": 6,
+                      "attempts": 8,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "62/106 (58%)",
+                      "made": 62,
+                      "attempts": 106,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "30/54 (56%)",
+                      "made": 30,
+                      "attempts": 54,
+                      "pct": 56
+                    }
+                  ],
+                  "firstServePct": 90,
+                  "firstServeIn": "47/52 (90%)",
+                  "firstServeWonPct": 66,
+                  "firstServePointsWon": "31/47 (66%)",
+                  "secondServeWonPct": 20,
+                  "secondServePointsWon": "1/5 (20%)",
+                  "aces": 1,
+                  "breakPointsConverted": "6/8 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "62/106 (58%)",
+                  "returnPointsWonPct": 56,
+                  "returnPointsWon": "30/54 (56%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 73.8,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.8,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.593,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 73.8,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/wta/yasmine-kabbaj/"
+          }
+        },
         "record2026": "",
-        "notes": "Opponent case: model 49%",
+        "notes": "Opponent case: model 45%",
         "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
       }
     ],
@@ -230,8 +2646,8 @@
       {
         "label": "Model pick",
         "metric": "Fair win split",
-        "leftScore": 51,
-        "rightScore": 49,
+        "leftScore": 55,
+        "rightScore": 45,
         "leftLabel": "Maria Timofeeva",
         "rightLabel": "Yasmine Kabbaj",
         "winner": "Maria Timofeeva"
@@ -257,11 +2673,11 @@
       {
         "label": "Volatility",
         "metric": "Lower is cleaner",
-        "leftScore": 59,
-        "rightScore": 41,
+        "leftScore": 53,
+        "rightScore": 47,
         "leftLabel": "Risk",
         "rightLabel": "Stability",
-        "winner": "Pass-first"
+        "winner": "Stable enough"
       }
     ],
     "predictionMarket": {
@@ -274,7 +2690,7 @@
           "probabilityPct": 78.8,
           "amount": null,
           "americanOdds": -372,
-          "edgePct": -27.8,
+          "edgePct": -23.8,
           "priceBand": "Low-payout favorite"
         },
         {
@@ -282,7 +2698,7 @@
           "probabilityPct": 27.6,
           "amount": null,
           "americanOdds": 262,
-          "edgePct": 21.4,
+          "edgePct": 17.4,
           "priceBand": "Underdog"
         }
       ]
@@ -294,14 +2710,14 @@
         "selection": "Yasmine Kabbaj",
         "line": null,
         "americanOdds": 262,
-        "modelPct": 49,
+        "modelPct": 45,
         "impliedPct": 27.6,
-        "edgePct": 21.4,
-        "evPer100": 77.4,
-        "netEvPer100": 75.4,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "grade": "Outlier price/manual review",
-        "issue": "Picked side is overpriced; value board flips to Yasmine Kabbaj because that side has the better posted-price edge.",
-        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        "issue": "Outlier dog price on Yasmine Kabbaj; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+        "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
       },
       {
         "marketType": "Total games",
@@ -314,7 +2730,7 @@
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
-        "expectedGames": 21.4,
+        "expectedGames": 20.9,
         "edgeGames": null,
         "confidence": null,
         "grade": "No direction",
@@ -323,22 +2739,22 @@
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Maria Timofeeva 70% / Yasmine Kabbaj 65%",
+        "selection": "Maria Timofeeva 71% / Yasmine Kabbaj 60%",
         "rows": [
           {
             "name": "Maria Timofeeva",
-            "confidence": 70,
-            "modelPct": 51,
+            "confidence": 71,
+            "modelPct": 55,
             "label": "Live to win a set"
           },
           {
             "name": "Yasmine Kabbaj",
-            "confidence": 65,
-            "modelPct": 49,
+            "confidence": 60,
+            "modelPct": 45,
             "label": "Needs early hold pressure"
           }
         ],
-        "confidence": 70,
+        "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -346,12 +2762,12 @@
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Under 9.5",
-        "expectedGames": 9,
-        "confidence": 59,
+        "expectedGames": 8.8,
+        "confidence": 61,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "grade": "Thin value",
-        "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets."
+        "grade": "Actionable live watch",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets."
       }
     ],
     "derivativeMarketCase": null,
@@ -361,13 +2777,16 @@
         "marketType": "ML",
         "selection": "Yasmine Kabbaj",
         "americanOdds": 262,
-        "modelPct": 49,
+        "modelPct": 45,
         "impliedPct": 27.6,
-        "edgePct": 21.4,
-        "evPer100": 77.4,
-        "netEvPer100": 75.4,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Yasmine Kabbaj because that side has the better posted-price edge.",
+        "rawEdgePct": 17.4,
+        "rawEvPer100": 62.9,
+        "rawNetEvPer100": 60.9,
+        "valueIssue": "Outlier dog price on Yasmine Kabbaj; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
         "valueGrade": "Outlier price/manual review",
         "betGrade": false
       },
@@ -378,7 +2797,7 @@
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 21.4,
+        "expectedGames": 20.9,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false
@@ -388,22 +2807,22 @@
         "selection": "Under 9.5",
         "line": 9.5,
         "americanOdds": -185,
-        "expectedGames": 9,
-        "confidence": 59,
+        "expectedGames": 8.8,
+        "confidence": 61,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 59,
-        "evPer100": -9.1,
-        "netEvPer100": -11.1,
-        "valueGrade": "Thin value",
-        "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets.",
+        "modelPct": 61,
+        "evPer100": -6,
+        "netEvPer100": -8,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Maria Timofeeva",
-          "confidence": 70,
-          "modelPct": 51,
+          "confidence": 71,
+          "modelPct": 55,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -411,8 +2830,8 @@
         },
         {
           "name": "Yasmine Kabbaj",
-          "confidence": 65,
-          "modelPct": 49,
+          "confidence": 60,
+          "modelPct": 45,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -427,20 +2846,20 @@
       "setWinProjections": [
         {
           "name": "Maria Timofeeva",
-          "confidence": 70,
-          "modelPct": 51,
+          "confidence": 71,
+          "modelPct": 55,
           "label": "Live to win a set"
         },
         {
           "name": "Yasmine Kabbaj",
-          "confidence": 65,
-          "modelPct": 49,
+          "confidence": 60,
+          "modelPct": 45,
           "label": "Needs early hold pressure"
         }
       ],
       "totalGames": null,
       "straightSetsProbability": 48,
-      "upsetRisk": 49,
+      "upsetRisk": 45,
       "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
       "fantasy": []
     },
@@ -455,19 +2874,22 @@
     "derivativeMarkets": [
       {
         "label": "ML",
-        "value": "Maria Timofeeva -372; Model 51% vs DraftKings Sportsbook implied 78.8% (-27.8 pts).",
+        "value": "Maria Timofeeva -372; Model 55% vs DraftKings Sportsbook implied 78.8% (-23.8 pts).",
         "lean": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-        "confidence": 51,
+        "confidence": 55,
         "marketType": "ML",
         "selection": "Yasmine Kabbaj",
         "americanOdds": 262,
-        "modelPct": 49,
+        "modelPct": 45,
         "impliedPct": 27.6,
-        "edgePct": 21.4,
-        "evPer100": 77.4,
-        "netEvPer100": 75.4,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Yasmine Kabbaj because that side has the better posted-price edge.",
+        "rawEdgePct": 17.4,
+        "rawEvPer100": 62.9,
+        "rawNetEvPer100": 60.9,
+        "valueIssue": "Outlier dog price on Yasmine Kabbaj; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
         "valueGrade": "Outlier price/manual review",
         "betGrade": false,
         "tone": "warning",
@@ -477,7 +2899,7 @@
         "label": "Win a set",
         "value": "No set-win price captured",
         "lean": "Needs early hold pressure",
-        "confidence": 70,
+        "confidence": 71,
         "setWinRows": [],
         "valueGrade": "Needs posted price",
         "tone": "neutral",
@@ -501,7 +2923,7 @@
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 21.4,
+        "expectedGames": 20.9,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false,
@@ -511,19 +2933,19 @@
         "label": "1st set O/U",
         "value": "Line 9.5",
         "lean": "Under 9.5",
-        "confidence": 59,
+        "confidence": 61,
         "marketType": "First-set total",
         "selection": "Under 9.5",
         "line": 9.5,
         "americanOdds": -185,
-        "expectedGames": 9,
+        "expectedGames": 8.8,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 59,
-        "evPer100": -9.1,
-        "netEvPer100": -11.1,
-        "valueGrade": "Thin value",
-        "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets.",
+        "modelPct": 61,
+        "evPer100": -6,
+        "netEvPer100": -8,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets.",
         "betGrade": false,
         "tone": "accent"
       },
@@ -531,7 +2953,7 @@
         "label": "1st service game",
         "value": "No first-service-game market captured",
         "lean": "First-service-game prices",
-        "confidence": 51,
+        "confidence": 55,
         "firstServiceGameRows": [],
         "tone": "muted",
         "reason": "No sportsbook first-service-game market captured."
@@ -540,7 +2962,7 @@
         "label": "First games",
         "value": "No first-game prop market captured",
         "lean": "First-game prop prices",
-        "confidence": 51,
+        "confidence": 55,
         "firstGamePropRows": [],
         "tone": "muted",
         "reason": "No sportsbook first-games prop captured."
@@ -552,15 +2974,15 @@
       "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-makarska?event=34244593",
       "deskName": "Maria Timofeeva",
       "deskPricePct": 78.8,
-      "deskEdgePct": -27.8,
+      "deskEdgePct": -23.8,
       "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
       "players": [
         {
           "name": "Maria Timofeeva",
           "americanOdds": -372,
           "impliedPct": 78.8,
-          "modelPct": 51,
-          "edgePct": -27.8,
+          "modelPct": 55,
+          "edgePct": -23.8,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 26.9,
           "grossPayoutMultiple": 1.269,
@@ -575,8 +2997,8 @@
           "name": "Yasmine Kabbaj",
           "americanOdds": 262,
           "impliedPct": 27.6,
-          "modelPct": 49,
-          "edgePct": 21.4,
+          "modelPct": 45,
+          "edgePct": 17.4,
           "priceBand": "Underdog",
           "grossProfitPct": 262,
           "grossPayoutMultiple": 3.62,
@@ -625,7 +3047,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Yasmine Kabbaj",
-      "detail": "Rank not joined | adj form 74",
+      "detail": "Live rank #297 | Morocco | age 22 | adj form 74",
       "americanOdds": 262,
       "americanLabel": "+262",
       "decimalOdds": 3.62,
@@ -655,7 +3077,7 @@
         "index": 1,
         "role": "Player 2",
         "name": "Yasmine Kabbaj",
-        "detail": "Rank not joined | adj form 74",
+        "detail": "Live rank #297 | Morocco | age 22 | adj form 74",
         "americanOdds": 262,
         "americanLabel": "+262",
         "decimalOdds": 3.62,
@@ -684,7 +3106,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Yasmine Kabbaj",
-      "detail": "Rank not joined | adj form 74",
+      "detail": "Live rank #297 | Morocco | age 22 | adj form 74",
       "americanOdds": 262,
       "americanLabel": "+262",
       "decimalOdds": 3.62,
@@ -693,9 +3115,9 @@
     },
     "lean": "Lean Maria Timofeeva; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
     "rationale": "Our model pick: Maria Timofeeva. Opponent-adjusted recent form is basically even: Maria Timofeeva 75, Yasmine Kabbaj 74. Lean, not a chase.",
-    "confidence": 51,
-    "volatility": 59,
-    "recommendationScore": 36,
+    "confidence": 55,
+    "volatility": 53,
+    "recommendationScore": 42,
     "tier": "Watch",
     "sourceLabel": "DraftKings Sportsbook",
     "modelEdge": null,

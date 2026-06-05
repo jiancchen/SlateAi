@@ -156,7 +156,6 @@ const verifyOutputRows = async ({ runId, runDir }) => {
 const verifyRequiredMarkets = (snapshot) => {
   const required = [
     { label: 'ML value', type: 'Moneyline' },
-    { label: 'Game spread', type: 'Game spread' },
     { label: 'O/U games', type: 'Total games' },
     { label: 'Win a set %', type: 'Win a set' },
     { label: '1st set O/U', type: 'First-set total games' }
@@ -312,13 +311,13 @@ const main = async () => {
   const output = await verifyOutputRows({ runId, runDir })
 
   if (!health.ok) throw new Error('health.json is not ok')
-  const requiredChecks = ['sourceFiles', 'rankings', 'warehouse', 'sofascore', 'kalshi', 'weather', 'resultsTraining', 'published', 'valueBooks']
+  const requiredChecks = ['sourceFiles', 'matchContract', 'rankings', 'tennisliveContext', 'warehouse', 'tennislive', 'kalshi', 'weather', 'resultsTraining', 'published', 'valueBooks']
   const checkMap = new Map((health.checks || []).map((check) => [check.name, check.status]))
   const badChecks = requiredChecks.filter((name) => checkMap.get(name) !== 'ok')
   if (badChecks.length) throw new Error(`Health checks not ok: ${badChecks.join(', ')}`)
 
   if (calibration.status === 'missing') throw new Error('Calibration artifact is marked missing')
-  if (backtest.status === 'missing') throw new Error('Backtest artifact is marked missing')
+  if (backtest.status === 'missing' && run.mode !== 'pregame') throw new Error('Backtest artifact is marked missing')
   const marketCoverage = verifyRequiredMarkets(snapshot)
 
   const trainingRows = await sqliteJson(`

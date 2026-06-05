@@ -65,10 +65,8 @@ const fileHash = async (filePath) => {
 
 const inputPathsForDate = (date) => [
   `data-private/reference/tennis/espn-scoreboard-${date}.json`,
-  'data-private/reference/tennis/player-rankings.json',
-  `web/src/lib/day-${date}-tennis-opponent-quality.generated.json`,
-  `web/src/lib/day-${date}-tennis-clay-context.generated.json`,
   `web/src/lib/day-${date}-tennis-warehouse-context.generated.json`,
+  `data-private/reference/tennis/draftkings-lines-${date}.json`,
   `data-private/reference/tennis/fanduel-lines-${date}.json`,
   `data-private/predictions/tennis/${date}-multimodel-ensemble.json`,
   `data-private/predictions/tennis/${date}-derivative-markets.json`,

@@ -7,14 +7,15 @@
   "title": "Giorgia Pedone vs Lucia Bronzetti",
   "stage": "WTA Foggia | Quarterfinal",
   "spotlight": false,
-  "confidence": 52,
-  "volatility": 57,
+  "confidence": 50,
+  "volatility": 60,
   "tags": [
     "Clay",
     "WTA Foggia",
     "WTA",
     "Watch only",
-    "No blind bet",
+    "Model split - pass ML",
+    "Positive price edge",
     "WTA volatility tax",
     "Controlled volatility"
   ],
@@ -29,20 +30,21 @@
       "side": "Player 2",
       "name": "Lucia Bronzetti",
       "displayName": "Lucia Bronzetti",
-      "detail": "Rank not joined | adj form 75"
+      "detail": "Live rank #172 | Italy | age 27 | adj form 75"
     }
   ],
-  "summary": "Our model pick: Lucia Bronzetti. Lucia Bronzetti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+  "summary": "Our model pick: Giorgia Pedone. Giorgia Pedone has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
   "factors": [
-    "Lucia Bronzetti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
-    "Model 52% vs DraftKings Sportsbook implied 73.7% (-21.7 pts).",
+    "Giorgia Pedone has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+    "Model 50% vs DraftKings Sportsbook implied 32.8% (+17.2 pts).",
     "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
     "Wait for a visible service-pressure split before entering.",
     "Best O/U angle: no play without a posted total.",
+    "Model split warning: the older score model preferred Lucia Bronzetti, but the multimodel ensemble makes Giorgia Pedone the official pick. Treat ML as pass-first unless the price and live state agree.",
     "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
-    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Model is meaningfully above DraftKings Sportsbook implied price."
   ],
-  "lean": "Lean Lucia Bronzetti; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+  "lean": "Lean Giorgia Pedone; Model is meaningfully above DraftKings Sportsbook implied price.",
   "swing": "Risk: best-of-three volatility and break clusters.",
   "swingFactor": "Risk: best-of-three volatility and break clusters.",
   "odds": {
@@ -54,7 +56,7 @@
       {
         "label": "Model fair",
         "book": "Tennis warehouse model",
-        "value": "Giorgia Pedone 48% / Lucia Bronzetti 52%"
+        "value": "Giorgia Pedone 50% / Lucia Bronzetti 50%"
       },
       {
         "label": "DraftKings Sportsbook moneyline",
@@ -67,7 +69,7 @@
         "value": "9.5 1st-set games: Over +110 / Under -165"
       }
     ],
-    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Model is meaningfully above DraftKings Sportsbook implied price.",
     "provider": "DraftKings Sportsbook"
   },
   "tennisContext": {
@@ -79,14 +81,36 @@
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
-      "scoreGap": -5,
+      "scoreGap": 5,
       "attackingSide": null,
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
       "liveTrigger": "Wait for a visible service-pressure split before entering.",
-      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
+        "name": "Giorgia Pedone",
+        "serviceHoldPct": null,
+        "firstServeWonPct": null,
+        "secondServeWonPct": null,
+        "firstServePct": null,
+        "avgAces": null,
+        "avgDoubleFaults": null,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": null,
+        "servicePointsWonPct": null,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 0,
+        "weaknessScore": 0,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [],
+        "strengths": [],
+        "gameFlowRead": "Giorgia Pedone has no major service weakness in the joined warehouse sample."
+      },
+      "opponent": {
         "name": "Lucia Bronzetti",
         "serviceHoldPct": null,
         "firstServeWonPct": 63,
@@ -110,28 +134,6 @@
           "creates return pressure (52% return points won)"
         ],
         "gameFlowRead": "Lucia Bronzetti has no major service weakness in the joined warehouse sample."
-      },
-      "opponent": {
-        "name": "Giorgia Pedone",
-        "serviceHoldPct": null,
-        "firstServeWonPct": null,
-        "secondServeWonPct": null,
-        "firstServePct": null,
-        "avgAces": null,
-        "avgDoubleFaults": null,
-        "avgWinners": null,
-        "avgUnforcedErrors": null,
-        "avgBreakPointsFaced": null,
-        "returnPointsWonPct": null,
-        "servicePointsWonPct": null,
-        "weakServeMatches": 0,
-        "pressureMatches": null,
-        "matchesWithStats": 0,
-        "weaknessScore": 0,
-        "firstGameComfort": "Comfortable enough if first serve lands",
-        "liabilities": [],
-        "strengths": [],
-        "gameFlowRead": "Giorgia Pedone has no major service weakness in the joined warehouse sample."
       }
     },
     "warehouseContext": null,
@@ -141,7 +143,7 @@
         "rank": null,
         "label": "Giorgia Pedone",
         "form": null,
-        "boardPct": 48,
+        "boardPct": 50,
         "decimalOdds": 3.05,
         "marketLabel": "+205 / 32.8% implied",
         "clayLine": "Rank not joined",
@@ -169,18 +171,18 @@
         },
         "warehouseStats": null,
         "record2026": "",
-        "notes": "Opponent case: model 48%",
-        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+        "notes": "Pick: model 50%",
+        "matchupNote": "Why pick: Giorgia Pedone has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase."
       },
       {
         "name": "Lucia Bronzetti",
-        "rank": null,
+        "rank": 172,
         "label": "Lucia Bronzetti",
         "form": null,
-        "boardPct": 52,
+        "boardPct": 50,
         "decimalOdds": 1.357,
         "marketLabel": "-280 / 73.7% implied",
-        "clayLine": "Rank not joined | adj form 75",
+        "clayLine": "Live rank #172 | Italy | age 27 | adj form 75",
         "weakness": {
           "name": "Lucia Bronzetti",
           "serviceHoldPct": null,
@@ -208,19 +210,19 @@
         },
         "warehouseStats": null,
         "record2026": "",
-        "notes": "Pick: model 52%",
-        "matchupNote": "Why pick: Lucia Bronzetti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase."
+        "notes": "Opponent case: model 50%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
       }
     ],
     "comparisonRows": [
       {
         "label": "Model pick",
         "metric": "Fair win split",
-        "leftScore": 48,
-        "rightScore": 52,
+        "leftScore": 50,
+        "rightScore": 50,
         "leftLabel": "Giorgia Pedone",
         "rightLabel": "Lucia Bronzetti",
-        "winner": "Lucia Bronzetti"
+        "winner": "Giorgia Pedone"
       },
       {
         "label": "DraftKings Sportsbook moneyline",
@@ -229,7 +231,7 @@
         "rightScore": 73.7,
         "leftLabel": "Giorgia Pedone",
         "rightLabel": "Lucia Bronzetti",
-        "winner": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        "winner": "Model is meaningfully above DraftKings Sportsbook implied price."
       },
       {
         "label": "Weakness",
@@ -243,8 +245,8 @@
       {
         "label": "Volatility",
         "metric": "Lower is cleaner",
-        "leftScore": 57,
-        "rightScore": 43,
+        "leftScore": 60,
+        "rightScore": 40,
         "leftLabel": "Risk",
         "rightLabel": "Stability",
         "winner": "Pass-first"
@@ -260,7 +262,7 @@
           "probabilityPct": 32.8,
           "amount": null,
           "americanOdds": 205,
-          "edgePct": 15.2,
+          "edgePct": 17.2,
           "priceBand": "Underdog"
         },
         {
@@ -268,7 +270,7 @@
           "probabilityPct": 73.7,
           "amount": null,
           "americanOdds": -280,
-          "edgePct": -21.7,
+          "edgePct": -23.7,
           "priceBand": "Low-payout favorite"
         }
       ]
@@ -280,14 +282,14 @@
         "selection": "Giorgia Pedone",
         "line": null,
         "americanOdds": 205,
-        "modelPct": 48,
+        "modelPct": 50,
         "impliedPct": 32.8,
-        "edgePct": 15.2,
-        "evPer100": 46.4,
-        "netEvPer100": 44.4,
+        "edgePct": 17.2,
+        "evPer100": 52.5,
+        "netEvPer100": 50.5,
         "grade": "Bet-grade value",
-        "issue": "Picked side is overpriced; value board flips to Giorgia Pedone because that side has the better posted-price edge.",
-        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        "issue": "Validated ML candidate",
+        "reason": "Model is meaningfully above DraftKings Sportsbook implied price."
       },
       {
         "marketType": "Total games",
@@ -309,22 +311,22 @@
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Giorgia Pedone 65% / Lucia Bronzetti 71%",
+        "selection": "Giorgia Pedone 70% / Lucia Bronzetti 70%",
         "rows": [
           {
             "name": "Giorgia Pedone",
-            "confidence": 65,
-            "modelPct": 48,
-            "label": "Needs early hold pressure"
+            "confidence": 70,
+            "modelPct": 50,
+            "label": "Live to win a set"
           },
           {
             "name": "Lucia Bronzetti",
-            "confidence": 71,
-            "modelPct": 52,
+            "confidence": 70,
+            "modelPct": 50,
             "label": "Live to win a set"
           }
         ],
-        "confidence": 71,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -347,15 +349,15 @@
         "marketType": "ML",
         "selection": "Giorgia Pedone",
         "americanOdds": 205,
-        "modelPct": 48,
+        "modelPct": 50,
         "impliedPct": 32.8,
-        "edgePct": 15.2,
-        "evPer100": 46.4,
-        "netEvPer100": 44.4,
+        "edgePct": 17.2,
+        "evPer100": 52.5,
+        "netEvPer100": 50.5,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Giorgia Pedone because that side has the better posted-price edge.",
+        "valueIssue": "Validated ML candidate",
         "valueGrade": "Bet-grade value",
-        "betGrade": false
+        "betGrade": true
       },
       "spread": null,
       "total": {
@@ -388,17 +390,17 @@
       "setWin": [
         {
           "name": "Giorgia Pedone",
-          "confidence": 65,
-          "modelPct": 48,
-          "label": "Needs early hold pressure",
+          "confidence": 70,
+          "modelPct": 50,
+          "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
           "betGrade": false
         },
         {
           "name": "Lucia Bronzetti",
-          "confidence": 71,
-          "modelPct": 52,
+          "confidence": 70,
+          "modelPct": 50,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -408,30 +410,30 @@
     },
     "ensembleValueCase": null,
     "projection": {
-      "projectedWinner": "Lucia Bronzetti",
+      "projectedWinner": "Giorgia Pedone",
       "projectedSetLine": "2-0/2-1 range",
       "setWinProjections": [
         {
           "name": "Giorgia Pedone",
-          "confidence": 65,
-          "modelPct": 48,
-          "label": "Needs early hold pressure"
+          "confidence": 70,
+          "modelPct": 50,
+          "label": "Live to win a set"
         },
         {
           "name": "Lucia Bronzetti",
-          "confidence": 71,
-          "modelPct": 52,
+          "confidence": 70,
+          "modelPct": 50,
           "label": "Live to win a set"
         }
       ],
       "totalGames": null,
       "straightSetsProbability": 48,
-      "upsetRisk": 48,
+      "upsetRisk": 50,
       "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
       "fantasy": []
     },
     "tradePlan": {
-      "laneLabel": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "laneLabel": "Model is meaningfully above DraftKings Sportsbook implied price.",
       "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
       "trigger": "Wait for a visible service-pressure split before entering.",
       "headline": "No clear weakness edge",
@@ -441,29 +443,29 @@
     "derivativeMarkets": [
       {
         "label": "ML",
-        "value": "Lucia Bronzetti -280; Model 52% vs DraftKings Sportsbook implied 73.7% (-21.7 pts).",
-        "lean": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-        "confidence": 52,
+        "value": "Giorgia Pedone +205; Model 50% vs DraftKings Sportsbook implied 32.8% (+17.2 pts).",
+        "lean": "Model is meaningfully above DraftKings Sportsbook implied price.",
+        "confidence": 50,
         "marketType": "ML",
         "selection": "Giorgia Pedone",
         "americanOdds": 205,
-        "modelPct": 48,
+        "modelPct": 50,
         "impliedPct": 32.8,
-        "edgePct": 15.2,
-        "evPer100": 46.4,
-        "netEvPer100": 44.4,
+        "edgePct": 17.2,
+        "evPer100": 52.5,
+        "netEvPer100": 50.5,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Giorgia Pedone because that side has the better posted-price edge.",
+        "valueIssue": "Validated ML candidate",
         "valueGrade": "Bet-grade value",
-        "betGrade": false,
-        "tone": "warning",
-        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        "betGrade": true,
+        "tone": "accent",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Model is meaningfully above DraftKings Sportsbook implied price."
       },
       {
         "label": "Win a set",
         "value": "No set-win price captured",
-        "lean": "Needs early hold pressure",
-        "confidence": 71,
+        "lean": "Live to win a set",
+        "confidence": 70,
         "setWinRows": [],
         "valueGrade": "Needs posted price",
         "tone": "neutral",
@@ -517,7 +519,7 @@
         "label": "1st service game",
         "value": "No first-service-game market captured",
         "lean": "First-service-game prices",
-        "confidence": 52,
+        "confidence": 50,
         "firstServiceGameRows": [],
         "tone": "muted",
         "reason": "No sportsbook first-service-game market captured."
@@ -526,7 +528,7 @@
         "label": "First games",
         "value": "No first-game prop market captured",
         "lean": "First-game prop prices",
-        "confidence": 52,
+        "confidence": 50,
         "firstGamePropRows": [],
         "tone": "muted",
         "reason": "No sportsbook first-games prop captured."
@@ -536,17 +538,17 @@
       "source": "DraftKings Sportsbook",
       "capturedAt": "2026-06-04T22:16:54.685Z",
       "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-foggia?event=34244600",
-      "deskName": "Lucia Bronzetti",
-      "deskPricePct": 73.7,
-      "deskEdgePct": -21.7,
-      "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total.",
+      "deskName": "Giorgia Pedone",
+      "deskPricePct": 32.8,
+      "deskEdgePct": 17.2,
+      "priceAction": "Model is meaningfully above DraftKings Sportsbook implied price.",
       "players": [
         {
           "name": "Giorgia Pedone",
           "americanOdds": 205,
           "impliedPct": 32.8,
-          "modelPct": 48,
-          "edgePct": 15.2,
+          "modelPct": 50,
+          "edgePct": 17.2,
           "priceBand": "Underdog",
           "grossProfitPct": 205,
           "grossPayoutMultiple": 3.05,
@@ -561,8 +563,8 @@
           "name": "Lucia Bronzetti",
           "americanOdds": -280,
           "impliedPct": 73.7,
-          "modelPct": 52,
-          "edgePct": -21.7,
+          "modelPct": 50,
+          "edgePct": -23.7,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 35.7,
           "grossPayoutMultiple": 1.357,
@@ -591,7 +593,7 @@
         "url": "https://sportsbook.draftkings.com/leagues/tennis/wta-foggia?event=34244600"
       }
     ],
-    "formEdgeName": "Lucia Bronzetti"
+    "formEdgeName": "Giorgia Pedone"
   },
   "participants": [
     {
@@ -611,7 +613,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Lucia Bronzetti",
-      "detail": "Rank not joined | adj form 75",
+      "detail": "Live rank #172 | Italy | age 27 | adj form 75",
       "americanOdds": -280,
       "americanLabel": "-280",
       "decimalOdds": 1.3571428571428572,
@@ -641,7 +643,7 @@
         "index": 1,
         "role": "Player 2",
         "name": "Lucia Bronzetti",
-        "detail": "Rank not joined | adj form 75",
+        "detail": "Live rank #172 | Italy | age 27 | adj form 75",
         "americanOdds": -280,
         "americanLabel": "-280",
         "decimalOdds": 1.3571428571428572,
@@ -652,20 +654,8 @@
   },
   "analysis": {
     "available": true,
-    "participantId": "rg-w-giorgia-pedone-lucia-bronzetti-2026-06-05:1",
+    "participantId": "rg-w-giorgia-pedone-lucia-bronzetti-2026-06-05:0",
     "participant": {
-      "id": "rg-w-giorgia-pedone-lucia-bronzetti-2026-06-05:1",
-      "index": 1,
-      "role": "Player 2",
-      "name": "Lucia Bronzetti",
-      "detail": "Rank not joined | adj form 75",
-      "americanOdds": -280,
-      "americanLabel": "-280",
-      "decimalOdds": 1.3571428571428572,
-      "impliedProbability": 0.7368421052631579,
-      "impliedProbabilityLabel": "73.7%"
-    },
-    "opponent": {
       "id": "rg-w-giorgia-pedone-lucia-bronzetti-2026-06-05:0",
       "index": 0,
       "role": "Player 1",
@@ -677,17 +667,29 @@
       "impliedProbability": 0.32786885245901637,
       "impliedProbabilityLabel": "32.8%"
     },
-    "lean": "Lean Lucia Bronzetti; Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-    "rationale": "Our model pick: Lucia Bronzetti. Lucia Bronzetti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
-    "confidence": 52,
-    "volatility": 57,
-    "recommendationScore": 38,
+    "opponent": {
+      "id": "rg-w-giorgia-pedone-lucia-bronzetti-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Lucia Bronzetti",
+      "detail": "Live rank #172 | Italy | age 27 | adj form 75",
+      "americanOdds": -280,
+      "americanLabel": "-280",
+      "decimalOdds": 1.3571428571428572,
+      "impliedProbability": 0.7368421052631579,
+      "impliedProbabilityLabel": "73.7%"
+    },
+    "lean": "Lean Giorgia Pedone; Model is meaningfully above DraftKings Sportsbook implied price.",
+    "rationale": "Our model pick: Giorgia Pedone. Giorgia Pedone has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+    "confidence": 50,
+    "volatility": 60,
+    "recommendationScore": 35,
     "tier": "Watch",
     "sourceLabel": "DraftKings Sportsbook",
     "modelEdge": null,
     "modelEdgeLabel": "",
-    "marketProbability": 0.7368421052631579,
-    "marketProbabilityLabel": "73.7%",
+    "marketProbability": 0.32786885245901637,
+    "marketProbabilityLabel": "32.8%",
     "inputs": [],
     "inputsUsed": 0,
     "volatilityNotes": [],
@@ -699,7 +701,7 @@
       "Giorgia Pedone",
       "Lucia Bronzetti"
     ],
-    "tagCount": 7,
+    "tagCount": 8,
     "hasSeriesBreakdown": false,
     "hasMoneyline": true,
     "hasAnalysisPick": true,

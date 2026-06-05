@@ -2756,6 +2756,8 @@
         },
         "warehouseStats": {
           "name": "Arda Azkara",
+          "side": "home",
+          "stats": {},
           "profile": {
             "source": "tennislive_player_profiles",
             "name": "Arda Azkara",
@@ -3121,10 +3123,14 @@
             "maxValue": 6
           },
           "expectedStats": {
+            "name": "Arda Azkara",
             "source": "TennisLive recent-match stats",
             "matches": 5,
             "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
             "stats": {
+              "opponentAdjustedFormScore": 56.7,
+              "recentWinPct": 0.6,
+              "recentGamePct": 0.489,
               "aces": 2.8,
               "avgAces": 2.8,
               "doubleFaults": 5.4,
@@ -4054,6 +4060,8 @@
         },
         "warehouseStats": {
           "name": "Khololwam Montsi",
+          "side": "away",
+          "stats": {},
           "profile": {
             "source": "tennislive_player_profiles",
             "name": "Khololwam Montsi",
@@ -4419,10 +4427,14 @@
             "maxValue": 11
           },
           "expectedStats": {
+            "name": "Khololwam Montsi",
             "source": "TennisLive recent-match stats",
             "matches": 5,
             "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
             "stats": {
+              "opponentAdjustedFormScore": 43.1,
+              "recentWinPct": 0.4,
+              "recentGamePct": 0.505,
               "aces": 0.4,
               "avgAces": 0.4,
               "doubleFaults": 2.2,

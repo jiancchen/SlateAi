@@ -26,6 +26,7 @@ except ModuleNotFoundError:
     from warehouse_paths import tennis_warehouse_path
 
 DB_PATH = tennis_warehouse_path()
+BLOCKED_TENNIS_SOURCE_RE = re.compile(r"flashscore|sofascore|tennistonic|tennis[_\s-]*tonic", re.IGNORECASE)
 
 
 def connect(db_path: Path | None = None) -> sqlite3.Connection:
@@ -53,6 +54,20 @@ def as_json(value: str | None) -> Any:
 def normalize_name(value: str | None) -> str:
     ascii_value = unicodedata.normalize("NFKD", str(value or "")).encode("ascii", "ignore").decode("ascii")
     return re.sub(r"\s+", " ", re.sub(r"[^a-zA-Z0-9]+", " ", ascii_value).strip().lower())
+
+
+def has_blocked_source(value: Any) -> bool:
+    return BLOCKED_TENNIS_SOURCE_RE.search(str(value or "")) is not None
+
+
+def assert_no_blocked_tennis_sources(label: str, payload: Any) -> None:
+    text = json.dumps(payload, ensure_ascii=False, default=str) if not isinstance(payload, str) else payload
+    match = BLOCKED_TENNIS_SOURCE_RE.search(text)
+    if match:
+        start = max(0, match.start() - 90)
+        end = min(len(text), match.end() + 90)
+        snippet = text[start:end].replace("\n", " ")
+        raise RuntimeError(f"Blocked legacy tennis source leaked into {label}: ...{snippet}...")
 
 
 def stat_rows(conn: sqlite3.Connection, event_id: str, period: str = "ALL") -> list[dict[str, Any]]:
@@ -856,6 +871,7 @@ def h2h_match_rows(conn: sqlite3.Connection, match_id: str) -> list[dict[str, An
                 "raw": None,
             }
             for row in rows
+            if not has_blocked_source(row["source_name"])
         ]
     return [
         {
@@ -881,6 +897,7 @@ def h2h_match_rows(conn: sqlite3.Connection, match_id: str) -> list[dict[str, An
             """,
             (match_id,),
         )
+        if not has_blocked_source(row["source_name"])
     ]
 
 
@@ -1046,6 +1063,8 @@ def hold_pct_from_service_points(first_in: float | None, first_won: float | None
 
 
 def player_page_expected_stats(conn: sqlite3.Connection, date: str) -> dict[str, dict[str, Any]]:
+    # Archived source path. Active tennis export must come from TennisLive warehouse rows only.
+    return {}
     if not table_exists(conn, "tennis_sofascore_player_page_stats"):
         return {}
     try:
@@ -1266,6 +1285,8 @@ def pct_from_fractional(value: Any) -> float | None:
 
 
 def compact_sofascore_signals(raw_json: str | None, home_name: str | None, away_name: str | None) -> dict[str, Any]:
+    # Archived source path. Active tennis export must come from TennisLive warehouse rows only.
+    return {}
     payload = as_json(raw_json) or {}
     payloads = payload.get("payloads") or {}
     votes = (payloads.get("votes") or {}).get("body") or {}
@@ -1344,6 +1365,8 @@ def compact_sofascore_signals(raw_json: str | None, home_name: str | None, away_
 
 
 def sofascore_signals_by_match(date: str) -> dict[str, dict[str, Any]]:
+    # Archived source path. Active tennis export must come from TennisLive warehouse rows only.
+    return {}
     source_dir = ROOT / "data-private" / "reference" / "tennis" / "sofascore-match-data"
     if not source_dir.exists():
         return {}
@@ -1591,13 +1614,15 @@ def export_context(date: str, db_path: Path | None = None) -> dict[str, Any]:
                 },
             }
     conn.close()
-    return {
+    payload = {
         "date": date,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "source": "SQLite tennis warehouse",
         "playersByName": players_by_name,
         "matches": matches,
     }
+    assert_no_blocked_tennis_sources(f"tennis warehouse context {date}", payload)
+    return payload
 
 
 def main() -> None:

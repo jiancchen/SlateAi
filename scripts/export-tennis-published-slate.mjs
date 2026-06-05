@@ -2,6 +2,7 @@ import fs from 'node:fs/promises'
 import fsSync from 'node:fs'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
+import { execFileSync } from 'node:child_process'
 
 const root = path.resolve(import.meta.dirname, '..')
 const publishedSlatesRoot = path.join(root, 'published-data', 'slates')
@@ -99,6 +100,18 @@ const main = async () => {
     games
   })
   await updateSlateIndex({ date, label, slateMeta, totalGames: games.length })
+  execFileSync('node', ['scripts/audit-tennis-active-sources.mjs', '--date', date], {
+    cwd: root,
+    stdio: 'inherit'
+  })
+  execFileSync('node', ['scripts/audit-tennis-match-contract.mjs', '--date', date], {
+    cwd: root,
+    stdio: 'inherit'
+  })
+  execFileSync('node', ['scripts/audit-tennis-warehouse-identity.mjs', '--date', date], {
+    cwd: root,
+    stdio: 'inherit'
+  })
   console.log(`Exported ${games.length} tennis games to published-data/slates/${date}`)
 }
 

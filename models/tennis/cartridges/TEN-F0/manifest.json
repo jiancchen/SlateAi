@@ -10,12 +10,12 @@
   "modelNotes": "models/tennis/cartridges/TEN-F0/MODEL_NOTES.md",
   "description": "Baseline feature layer for the TEN-T0 tennis cartridge. This records current model-ready inputs without changing feature math.",
   "components": [
-    "live ranking joins",
-    "2026 clay record and opponent-adjusted form",
-    "Flashscore recent service/return cells",
-    "SofaScore replay/stat context when available",
-    "FanDuel market lines",
+    "TennisLive profile ranking joins",
+    "surface-aware recent form and opponent-adjusted form",
+    "TennisLive recent service/return stat rows",
+    "TennisLive form chart points",
+    "DraftKings and FanDuel market lines",
     "Kalshi prediction-market snapshots",
-    "Roland Garros weather windows"
+    "optional venue weather windows"
   ]
 }

@@ -4,21 +4,26 @@
   "featureVersion": "TEN-F0",
   "requiredSources": [
     "espn_scoreboard",
-    "rankings_snapshot",
-    "flashscore_recent_form",
-    "sofascore_context",
+    "tennislive_player_profiles",
+    "tennislive_recent_matches",
+    "tennislive_match_stats",
+    "tennislive_form_charts",
+    "draftkings_lines",
     "fanduel_lines",
     "kalshi_prediction_market",
-    "weather"
+    "weather_optional"
   ],
   "requiredCoverageMetrics": [
     "singles_count",
-    "missing_rank_count",
-    "flashscore_missing_stat_cells",
-    "sofascore_mapped_event_count",
+    "tennislive_profile_missing_count",
+    "tennislive_rank_missing_count",
+    "tennislive_recent_missing_count",
+    "tennislive_stat_missing_count",
+    "tennislive_form_chart_missing_count",
+    "draftkings_market_coverage",
     "fanduel_market_coverage",
     "kalshi_market_coverage",
-    "weather_window_coverage"
+    "weather_window_coverage_optional"
   ],
   "trainingSnapshotRule": "Run-scoped training rows or a training-row hash must be stored with each snapshotted run."
 }

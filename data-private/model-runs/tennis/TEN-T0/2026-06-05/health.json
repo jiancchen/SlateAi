@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "runId": "tennis-2026-06-05-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
+  "mode": "pregame",
+  "ok": true,
+  "command": "npm run data:health:tennis -- --date 2026-06-05 --pregame",
+  "exitCode": 0,
+  "checks": [
+    {
+      "name": "sourceFiles",
+      "status": "ok"
+    },
+    {
+      "name": "matchContract",
+      "status": "ok"
+    },
+    {
+      "name": "rankings",
+      "status": "ok"
+    },
+    {
+      "name": "tennisliveContext",
+      "status": "ok"
+    },
+    {
+      "name": "warehouse",
+      "status": "ok"
+    },
+    {
+      "name": "tennislive",
+      "status": "ok"
+    },
+    {
+      "name": "kalshi",
+      "status": "ok"
+    },
+    {
+      "name": "weather",
+      "status": "ok"
+    },
+    {
+      "name": "resultsTraining",
+      "status": "ok"
+    },
+    {
+      "name": "published",
+      "status": "ok"
+    },
+    {
+      "name": "valueBooks",
+      "status": "ok"
+    }
+  ],
+  "stdout": "\n> sports-trading-board-workspace@1.0.0 data:health:tennis\n> python3 pipeline/tennis/workflows/health.py --date 2026-06-05 --pregame\n\nTennis pipeline health PASS for 2026-06-05 (pregame)\n- sourceFiles: ok\n- matchContract: ok\n- rankings: ok\n- tennisliveContext: ok\n- warehouse: ok\n- tennislive: ok\n- kalshi: ok\n- weather: ok\n- resultsTraining: ok\n- published: ok\n- valueBooks: ok\n",
+  "stderr": ""
+}

@@ -2606,6 +2606,8 @@
         },
         "warehouseStats": {
           "name": "Alexander Donski",
+          "side": "home",
+          "stats": {},
           "profile": {
             "source": "tennislive_player_profiles",
             "name": "Alexander Donski",
@@ -2971,6 +2973,7 @@
             "maxValue": 1
           },
           "expectedStats": {
+            "name": "Alexander Donski",
             "source": "TennisLive recent-match stats",
             "matches": 5,
             "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
@@ -3906,6 +3909,8 @@
         },
         "warehouseStats": {
           "name": "Tuncay Duran",
+          "side": "away",
+          "stats": {},
           "profile": {
             "source": "tennislive_player_profiles",
             "name": "Tuncay Duran",
@@ -4271,6 +4276,7 @@
             "maxValue": 10
           },
           "expectedStats": {
+            "name": "Tuncay Duran",
             "source": "TennisLive recent-match stats",
             "matches": 4,
             "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",

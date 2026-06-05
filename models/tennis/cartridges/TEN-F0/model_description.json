@@ -7,14 +7,14 @@
   "summary": "Baseline tennis feature cartridge consumed by TEN-T0. It documents source coverage and model-ready feature expectations without changing feature math.",
   "keyImprovements": [
     "Gives the tennis feature layer a canonical sport-prefixed cartridge identity.",
-    "Keeps rankings, recent form, market lines, Kalshi context, and weather coverage expectations in one feature contract.",
+    "Keeps TennisLive profile ranks, recent form, stat rows, form charts, market lines, Kalshi context, and optional weather coverage expectations in one feature contract.",
     "Makes feature coverage auditable separately from TEN-T0 winner and market-lane decisions."
   ],
   "keyMetrics": [
     {
       "label": "Required source groups",
-      "value": "7",
-      "details": "Scoreboard, rankings, Flashscore, SofaScore, FanDuel, Kalshi, and weather."
+      "value": "8",
+      "details": "Scoreboard, TennisLive profiles, TennisLive recent matches, TennisLive match stats, TennisLive form charts, DraftKings/FanDuel lines, Kalshi, and optional weather."
     },
     {
       "label": "Training snapshot",

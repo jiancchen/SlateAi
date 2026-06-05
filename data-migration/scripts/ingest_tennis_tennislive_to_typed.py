@@ -158,7 +158,7 @@ def surface_from_class(class_text: str, fallback: str = "") -> str:
     if "surf_2" in classes:
         return "Clay"
     if "surf_3" in classes:
-        return "I. hard"
+        return "Indoor Hard"
     if "surf_4" in classes:
         return "Carpet"
     if "surf_5" in classes:
@@ -166,6 +166,23 @@ def surface_from_class(class_text: str, fallback: str = "") -> str:
     if "surf_6" in classes:
         return "Acrylic"
     return fallback
+
+
+def canonical_surface(value: Any) -> str:
+    normalized = re.sub(r"\s+", " ", str(value or "")).strip().lower()
+    if normalized in {"clay"}:
+        return "Clay"
+    if normalized in {"grass"}:
+        return "Grass"
+    if normalized in {"hard"}:
+        return "Hard"
+    if normalized in {"i. hard", "indoor hard", "indoor-hard", "indoor"}:
+        return "Indoor Hard"
+    if normalized in {"carpet"}:
+        return "Carpet"
+    if normalized in {"acrylic"}:
+        return "Acrylic"
+    return "Unknown"
 
 
 @dataclass
@@ -870,7 +887,7 @@ def upsert_match(con: sqlite3.Connection, summary: dict[str, Any], url: str, sna
             summary.get("match_date") or "unknown",
             summary.get("round"),
             tour,
-            summary.get("surface"),
+            canonical_surface(summary.get("surface")),
             5 if tour == "ATP" and re.search(r"open|slam|garros|wimbledon|australian|u\.s", str(summary.get("tournament")), re.I) else 3,
             summary.get("status") or "completed",
             url,

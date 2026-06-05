@@ -7,8 +7,8 @@
   "title": "Noma Noha Akugue vs Sara Sorribes Tormo",
   "stage": "WTA Makarska | Quarterfinal",
   "spotlight": false,
-  "confidence": 51,
-  "volatility": 59,
+  "confidence": 55,
+  "volatility": 53,
   "tags": [
     "Clay",
     "WTA Makarska",
@@ -29,13 +29,13 @@
       "side": "Player 2",
       "name": "Sara Sorribes Tormo",
       "displayName": "Sara Sorribes Tormo",
-      "detail": "Rank not joined | adj form 57"
+      "detail": "Live rank #304 | Spain | age 29 | adj form 57"
     }
   ],
   "summary": "Our model pick: Noma Noha Akugue. Noma Noha Akugue has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
   "factors": [
     "Noma Noha Akugue has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
-    "Model 51% vs DraftKings Sportsbook implied 53.1% (-2.1 pts).",
+    "Model 55% vs DraftKings Sportsbook implied 53.1% (+1.9 pts).",
     "Noma Noha Akugue has a real path if Sara Sorribes Tormo's first two service games show the same weakness: first-serve points won below comfort (58%); second-serve points won are attackable (42%).",
     "Look for Sara Sorribes Tormo facing break points or second-serve pressure before 3-3.",
     "Best O/U angle: no play without a posted total.",
@@ -54,7 +54,7 @@
       {
         "label": "Model fair",
         "book": "Tennis warehouse model",
-        "value": "Noma Noha Akugue 51% / Sara Sorribes Tormo 49%"
+        "value": "Noma Noha Akugue 55% / Sara Sorribes Tormo 45%"
       },
       {
         "label": "DraftKings Sportsbook moneyline",
@@ -84,7 +84,7 @@
       "vulnerableSide": "Sara Sorribes Tormo",
       "gameFlow": "Noma Noha Akugue has a real path if Sara Sorribes Tormo's first two service games show the same weakness: first-serve points won below comfort (58%); second-serve points won are attackable (42%).",
       "liveTrigger": "Look for Sara Sorribes Tormo facing break points or second-serve pressure before 3-3.",
-      "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Noma Noha Akugue",
@@ -144,7 +144,7 @@
         "rank": null,
         "label": "Noma Noha Akugue",
         "form": null,
-        "boardPct": 51,
+        "boardPct": 55,
         "decimalOdds": 1.885,
         "marketLabel": "-113 / 53.1% implied",
         "clayLine": "Rank not joined",
@@ -172,18 +172,18 @@
         },
         "warehouseStats": null,
         "record2026": "",
-        "notes": "Pick: model 51%",
+        "notes": "Pick: model 55%",
         "matchupNote": "Why pick: Noma Noha Akugue has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase."
       },
       {
         "name": "Sara Sorribes Tormo",
-        "rank": null,
+        "rank": 304,
         "label": "Sara Sorribes Tormo",
         "form": null,
-        "boardPct": 49,
+        "boardPct": 45,
         "decimalOdds": 1.862,
         "marketLabel": "-116 / 53.7% implied",
-        "clayLine": "Rank not joined | adj form 57",
+        "clayLine": "Live rank #304 | Spain | age 29 | adj form 57",
         "weakness": {
           "name": "Sara Sorribes Tormo",
           "serviceHoldPct": null,
@@ -214,7 +214,7 @@
         },
         "warehouseStats": null,
         "record2026": "",
-        "notes": "Opponent case: model 49%",
+        "notes": "Opponent case: model 45%",
         "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
       }
     ],
@@ -222,8 +222,8 @@
       {
         "label": "Model pick",
         "metric": "Fair win split",
-        "leftScore": 51,
-        "rightScore": 49,
+        "leftScore": 55,
+        "rightScore": 45,
         "leftLabel": "Noma Noha Akugue",
         "rightLabel": "Sara Sorribes Tormo",
         "winner": "Noma Noha Akugue"
@@ -249,11 +249,11 @@
       {
         "label": "Volatility",
         "metric": "Lower is cleaner",
-        "leftScore": 59,
-        "rightScore": 41,
+        "leftScore": 53,
+        "rightScore": 47,
         "leftLabel": "Risk",
         "rightLabel": "Stability",
-        "winner": "Pass-first"
+        "winner": "Stable enough"
       }
     ],
     "predictionMarket": {
@@ -266,7 +266,7 @@
           "probabilityPct": 53.1,
           "amount": null,
           "americanOdds": -113,
-          "edgePct": -2.1,
+          "edgePct": 1.9,
           "priceBand": "Coinflip"
         },
         {
@@ -274,7 +274,7 @@
           "probabilityPct": 53.7,
           "amount": null,
           "americanOdds": -116,
-          "edgePct": -4.7,
+          "edgePct": -8.7,
           "priceBand": "Coinflip"
         }
       ]
@@ -286,12 +286,12 @@
         "selection": "Noma Noha Akugue",
         "line": null,
         "americanOdds": -113,
-        "modelPct": 51,
+        "modelPct": 55,
         "impliedPct": 53.1,
-        "edgePct": -2.1,
-        "evPer100": -3.9,
-        "netEvPer100": -5.9,
-        "grade": "Near fair",
+        "edgePct": 1.9,
+        "evPer100": 3.7,
+        "netEvPer100": 1.7,
+        "grade": "Favorite price needs better proof",
         "issue": "Favorite price needs better proof",
         "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
       },
@@ -306,7 +306,7 @@
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
-        "expectedGames": 21.2,
+        "expectedGames": 20.7,
         "edgeGames": null,
         "confidence": null,
         "grade": "No direction",
@@ -315,22 +315,22 @@
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Noma Noha Akugue 71% / Sara Sorribes Tormo 65%",
+        "selection": "Noma Noha Akugue 73% / Sara Sorribes Tormo 60%",
         "rows": [
           {
             "name": "Noma Noha Akugue",
-            "confidence": 71,
-            "modelPct": 51,
+            "confidence": 73,
+            "modelPct": 55,
             "label": "Live to win a set"
           },
           {
             "name": "Sara Sorribes Tormo",
-            "confidence": 65,
-            "modelPct": 49,
+            "confidence": 60,
+            "modelPct": 45,
             "label": "Needs early hold pressure"
           }
         ],
-        "confidence": 71,
+        "confidence": 73,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -338,12 +338,12 @@
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Under 9.5",
-        "expectedGames": 8.9,
-        "confidence": 58,
+        "expectedGames": 8.7,
+        "confidence": 60,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 54,
-        "grade": "Thin value",
-        "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
+        "grade": "Actionable live watch",
+        "reason": "Expected first-set games 8.7 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
       }
     ],
     "derivativeMarketCase": null,
@@ -353,14 +353,14 @@
         "marketType": "ML",
         "selection": "Noma Noha Akugue",
         "americanOdds": -113,
-        "modelPct": 51,
+        "modelPct": 55,
         "impliedPct": 53.1,
-        "edgePct": -2.1,
-        "evPer100": -3.9,
-        "netEvPer100": -5.9,
+        "edgePct": 1.9,
+        "evPer100": 3.7,
+        "netEvPer100": 1.7,
         "feePer100": 2,
         "valueIssue": "Favorite price needs better proof",
-        "valueGrade": "Near fair",
+        "valueGrade": "Favorite price needs better proof",
         "betGrade": false
       },
       "spread": null,
@@ -370,7 +370,7 @@
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 21.2,
+        "expectedGames": 20.7,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false
@@ -380,22 +380,22 @@
         "selection": "Under 9.5",
         "line": 9.5,
         "americanOdds": -150,
-        "expectedGames": 8.9,
-        "confidence": 58,
+        "expectedGames": 8.7,
+        "confidence": 60,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 54,
-        "modelPct": 58,
-        "evPer100": -3.3,
-        "netEvPer100": -5.3,
-        "valueGrade": "Thin value",
-        "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
+        "modelPct": 60,
+        "evPer100": 0,
+        "netEvPer100": -2,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 8.7 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Noma Noha Akugue",
-          "confidence": 71,
-          "modelPct": 51,
+          "confidence": 73,
+          "modelPct": 55,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -403,8 +403,8 @@
         },
         {
           "name": "Sara Sorribes Tormo",
-          "confidence": 65,
-          "modelPct": 49,
+          "confidence": 60,
+          "modelPct": 45,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -419,20 +419,20 @@
       "setWinProjections": [
         {
           "name": "Noma Noha Akugue",
-          "confidence": 71,
-          "modelPct": 51,
+          "confidence": 73,
+          "modelPct": 55,
           "label": "Live to win a set"
         },
         {
           "name": "Sara Sorribes Tormo",
-          "confidence": 65,
-          "modelPct": 49,
+          "confidence": 60,
+          "modelPct": 45,
           "label": "Needs early hold pressure"
         }
       ],
       "totalGames": null,
       "straightSetsProbability": 48,
-      "upsetRisk": 49,
+      "upsetRisk": 45,
       "overview": "Noma Noha Akugue has a real path if Sara Sorribes Tormo's first two service games show the same weakness: first-serve points won below comfort (58%); second-serve points won are attackable (42%).",
       "fantasy": []
     },
@@ -447,20 +447,20 @@
     "derivativeMarkets": [
       {
         "label": "ML",
-        "value": "Noma Noha Akugue -113; Model 51% vs DraftKings Sportsbook implied 53.1% (-2.1 pts).",
+        "value": "Noma Noha Akugue -113; Model 55% vs DraftKings Sportsbook implied 53.1% (+1.9 pts).",
         "lean": "ML is close to fair; derivative or live entry needs to carry the edge.",
-        "confidence": 51,
+        "confidence": 55,
         "marketType": "ML",
         "selection": "Noma Noha Akugue",
         "americanOdds": -113,
-        "modelPct": 51,
+        "modelPct": 55,
         "impliedPct": 53.1,
-        "edgePct": -2.1,
-        "evPer100": -3.9,
-        "netEvPer100": -5.9,
+        "edgePct": 1.9,
+        "evPer100": 3.7,
+        "netEvPer100": 1.7,
         "feePer100": 2,
         "valueIssue": "Favorite price needs better proof",
-        "valueGrade": "Near fair",
+        "valueGrade": "Favorite price needs better proof",
         "betGrade": false,
         "tone": "neutral",
         "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML is close to fair; derivative or live entry needs to carry the edge."
@@ -469,7 +469,7 @@
         "label": "Win a set",
         "value": "No set-win price captured",
         "lean": "Needs early hold pressure",
-        "confidence": 71,
+        "confidence": 73,
         "setWinRows": [],
         "valueGrade": "Needs posted price",
         "tone": "neutral",
@@ -493,7 +493,7 @@
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 21.2,
+        "expectedGames": 20.7,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false,
@@ -503,19 +503,19 @@
         "label": "1st set O/U",
         "value": "Line 9.5",
         "lean": "Under 9.5",
-        "confidence": 58,
+        "confidence": 60,
         "marketType": "First-set total",
         "selection": "Under 9.5",
         "line": 9.5,
         "americanOdds": -150,
-        "expectedGames": 8.9,
+        "expectedGames": 8.7,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 54,
-        "modelPct": 58,
-        "evPer100": -3.3,
-        "netEvPer100": -5.3,
-        "valueGrade": "Thin value",
-        "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
+        "modelPct": 60,
+        "evPer100": 0,
+        "netEvPer100": -2,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 8.7 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
         "betGrade": false,
         "tone": "accent"
       },
@@ -523,7 +523,7 @@
         "label": "1st service game",
         "value": "No first-service-game market captured",
         "lean": "First-service-game prices",
-        "confidence": 51,
+        "confidence": 55,
         "firstServiceGameRows": [],
         "tone": "muted",
         "reason": "No sportsbook first-service-game market captured."
@@ -532,7 +532,7 @@
         "label": "First games",
         "value": "No first-game prop market captured",
         "lean": "First-game prop prices",
-        "confidence": 51,
+        "confidence": 55,
         "firstGamePropRows": [],
         "tone": "muted",
         "reason": "No sportsbook first-games prop captured."
@@ -544,15 +544,15 @@
       "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-makarska?event=34244708",
       "deskName": "Noma Noha Akugue",
       "deskPricePct": 53.1,
-      "deskEdgePct": -2.1,
+      "deskEdgePct": 1.9,
       "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
       "players": [
         {
           "name": "Noma Noha Akugue",
           "americanOdds": -113,
           "impliedPct": 53.1,
-          "modelPct": 51,
-          "edgePct": -2.1,
+          "modelPct": 55,
+          "edgePct": 1.9,
           "priceBand": "Coinflip",
           "grossProfitPct": 88.5,
           "grossPayoutMultiple": 1.885,
@@ -567,8 +567,8 @@
           "name": "Sara Sorribes Tormo",
           "americanOdds": -116,
           "impliedPct": 53.7,
-          "modelPct": 49,
-          "edgePct": -4.7,
+          "modelPct": 45,
+          "edgePct": -8.7,
           "priceBand": "Coinflip",
           "grossProfitPct": 86.2,
           "grossPayoutMultiple": 1.862,
@@ -617,7 +617,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Sara Sorribes Tormo",
-      "detail": "Rank not joined | adj form 57",
+      "detail": "Live rank #304 | Spain | age 29 | adj form 57",
       "americanOdds": -116,
       "americanLabel": "-116",
       "decimalOdds": 1.8620689655172413,
@@ -647,7 +647,7 @@
         "index": 1,
         "role": "Player 2",
         "name": "Sara Sorribes Tormo",
-        "detail": "Rank not joined | adj form 57",
+        "detail": "Live rank #304 | Spain | age 29 | adj form 57",
         "americanOdds": -116,
         "americanLabel": "-116",
         "decimalOdds": 1.8620689655172413,
@@ -676,7 +676,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Sara Sorribes Tormo",
-      "detail": "Rank not joined | adj form 57",
+      "detail": "Live rank #304 | Spain | age 29 | adj form 57",
       "americanOdds": -116,
       "americanLabel": "-116",
       "decimalOdds": 1.8620689655172413,
@@ -685,9 +685,9 @@
     },
     "lean": "Lean Noma Noha Akugue; ML is close to fair; derivative or live entry needs to carry the edge.",
     "rationale": "Our model pick: Noma Noha Akugue. Noma Noha Akugue has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
-    "confidence": 51,
-    "volatility": 59,
-    "recommendationScore": 36,
+    "confidence": 55,
+    "volatility": 53,
+    "recommendationScore": 42,
     "tier": "Watch",
     "sourceLabel": "DraftKings Sportsbook",
     "modelEdge": null,

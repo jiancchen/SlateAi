@@ -183,13 +183,22 @@ export function TennisDetail(props: TennisDetailProps) {
     const range = Math.max(1, max - min)
     const width = 240
     const height = 74
-    const chartPoints = points
+    const plottedPoints = points
       .map((point: AnyRecord, index: number) => {
         const x = points.length === 1 ? width / 2 : (index / (points.length - 1)) * width
         const y = height - 8 - ((Number(point.value) - min) / range) * (height - 18)
-        return `${x.toFixed(1)},${y.toFixed(1)}`
+        return {
+          ...point,
+          x,
+          y,
+          tooltip: [
+            point.date || point.label?.match?.(/\d{1,2}\.\d{1,2}\.\d{4}/)?.[0] || 'Date pending',
+            point.result ? `${String(point.result).toUpperCase()} vs ${point.opponentName || 'opponent pending'}` : point.opponentName ? `vs ${point.opponentName}` : null,
+            `Form ${formatSignedNumber(Number(point.value), 1)}`
+          ].filter(Boolean).join(' | ')
+        }
       })
-      .join(' ')
+    const chartPoints = plottedPoints.map((point: AnyRecord) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(' ')
     const zeroY = height - 8 - ((0 - min) / range) * (height - 18)
     const latest = values[values.length - 1]
     const latestDate = points[points.length - 1]?.date
@@ -203,6 +212,18 @@ export function TennisDetail(props: TennisDetailProps) {
         <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label={`${player.name} TennisLive form chart`}>
           <line x1="0" x2={width} y1={zeroY} y2={zeroY} />
           <polyline points={chartPoints} />
+          {plottedPoints.map((point: AnyRecord, index: number) => (
+            <circle
+              key={`${player.name}-form-point-${point.sequenceIndex ?? index}`}
+              cx={point.x}
+              cy={point.y}
+              r="3.2"
+              tabIndex={0}
+              aria-label={point.tooltip}
+            >
+              <title>{point.tooltip}</title>
+            </circle>
+          ))}
         </svg>
       </div>
     )

@@ -135,11 +135,8 @@ export const runIdFor = ({ date, stack }) =>
 
 export const inputPathsForDate = (date) => [
   { path: `data-private/reference/tennis/espn-scoreboard-${date}.json`, role: 'espn-scoreboard' },
-  { path: 'data-private/reference/tennis/player-rankings.json', role: 'rankings-latest' },
-  { path: `data-private/reference/tennis/player-rankings-history/${date}.json`, role: 'rankings-history' },
-  { path: `web/src/lib/day-${date}-tennis-opponent-quality.generated.json`, role: 'opponent-quality' },
-  { path: `web/src/lib/day-${date}-tennis-clay-context.generated.json`, role: 'clay-context' },
   { path: `web/src/lib/day-${date}-tennis-warehouse-context.generated.json`, role: 'warehouse-context' },
+  { path: `data-private/reference/tennis/draftkings-lines-${date}.json`, role: 'draftkings-lines' },
   { path: `data-private/reference/tennis/fanduel-lines-${date}.json`, role: 'fanduel-lines' },
   { path: `data-private/predictions/tennis/${date}-multimodel-ensemble.json`, role: 'multimodel-ensemble' },
   { path: `data-private/predictions/tennis/${date}-derivative-markets.json`, role: 'derivative-markets' },

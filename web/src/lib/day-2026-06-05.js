@@ -1,6 +1,4 @@
 import { createSportsMatchModel } from './sports-model.js'
-import tennisClayContext from './day-2026-06-05-tennis-clay-context.generated.json' with { type: 'json' }
-import tennisOpponentQualityContext from './day-2026-06-05-tennis-opponent-quality.generated.json' with { type: 'json' }
 import tennisWarehouseContext from './day-2026-06-05-tennis-warehouse-context.generated.json' with { type: 'json' }
 
 const rawTennisGames = [
@@ -461,6 +459,8 @@ const rawTennisGames = [
         },
         "warehouseStats": {
           "name": "Alexander Donski",
+          "side": "home",
+          "stats": {},
           "profile": {
             "source": "tennislive_player_profiles",
             "name": "Alexander Donski",
@@ -826,6 +826,7 @@ const rawTennisGames = [
             "maxValue": 1
           },
           "expectedStats": {
+            "name": "Alexander Donski",
             "source": "TennisLive recent-match stats",
             "matches": 5,
             "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
@@ -1771,6 +1772,8 @@ const rawTennisGames = [
         },
         "warehouseStats": {
           "name": "Tuncay Duran",
+          "side": "away",
+          "stats": {},
           "profile": {
             "source": "tennislive_player_profiles",
             "name": "Tuncay Duran",
@@ -2136,6 +2139,7 @@ const rawTennisGames = [
             "maxValue": 10
           },
           "expectedStats": {
+            "name": "Tuncay Duran",
             "source": "TennisLive recent-match stats",
             "matches": 4,
             "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
@@ -3329,13 +3333,15 @@ const rawTennisGames = [
           "gameFlowRead": "Arda Azkara can drop points quickly through double-fault pressure (5.4 avg)."
         },
         "warehouseDepth": {
-          "expectedRows": 14,
+          "expectedRows": 17,
           "recentRows": 4,
           "recentMatches": 5,
           "source": "TennisLive recent-match stats"
         },
         "warehouseStats": {
           "name": "Arda Azkara",
+          "side": "home",
+          "stats": {},
           "profile": {
             "source": "tennislive_player_profiles",
             "name": "Arda Azkara",
@@ -3701,10 +3707,14 @@ const rawTennisGames = [
             "maxValue": 6
           },
           "expectedStats": {
+            "name": "Arda Azkara",
             "source": "TennisLive recent-match stats",
             "matches": 5,
             "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
             "stats": {
+              "opponentAdjustedFormScore": 56.7,
+              "recentWinPct": 0.6,
+              "recentGamePct": 0.489,
               "aces": 2.8,
               "avgAces": 2.8,
               "doubleFaults": 5.4,
@@ -4637,13 +4647,15 @@ const rawTennisGames = [
           "gameFlowRead": "Khololwam Montsi has no major service weakness in the joined warehouse sample."
         },
         "warehouseDepth": {
-          "expectedRows": 14,
+          "expectedRows": 17,
           "recentRows": 4,
           "recentMatches": 5,
           "source": "TennisLive recent-match stats"
         },
         "warehouseStats": {
           "name": "Khololwam Montsi",
+          "side": "away",
+          "stats": {},
           "profile": {
             "source": "tennislive_player_profiles",
             "name": "Khololwam Montsi",
@@ -5009,10 +5021,14 @@ const rawTennisGames = [
             "maxValue": 11
           },
           "expectedStats": {
+            "name": "Khololwam Montsi",
             "source": "TennisLive recent-match stats",
             "matches": 5,
             "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
             "stats": {
+              "opponentAdjustedFormScore": 43.1,
+              "recentWinPct": 0.4,
+              "recentGamePct": 0.505,
               "aces": 0.4,
               "avgAces": 0.4,
               "doubleFaults": 2.2,
@@ -6024,11 +6040,14 @@ const rawTennisGames = [
         "americanOdds": 354,
         "modelPct": 36.5,
         "impliedPct": 22,
-        "edgePct": 14.5,
-        "evPer100": 65.7,
-        "netEvPer100": 63.7,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Filippo Romano because that side has the better posted-price edge.",
+        "rawEdgePct": 14.5,
+        "rawEvPer100": 65.7,
+        "rawNetEvPer100": 63.7,
+        "valueIssue": "Outlier dog price on Filippo Romano; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
         "valueGrade": "Outlier price/manual review",
         "betGrade": false
       },
@@ -6171,12 +6190,12 @@ const rawTennisGames = [
         "americanOdds": 354,
         "modelPct": 36.5,
         "impliedPct": 22,
-        "edgePct": 14.5,
-        "evPer100": 65.7,
-        "netEvPer100": 63.7,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "grade": "Outlier price/manual review",
-        "issue": "Picked side is overpriced; value board flips to Filippo Romano because that side has the better posted-price edge.",
-        "reason": "ML payout is tiny; use spread/total or pass unless the number moves."
+        "issue": "Outlier dog price on Filippo Romano; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+        "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
       },
       {
         "marketType": "Total games",
@@ -7484,10 +7503,10 @@ const rawTennisGames = [
           "points": 462,
           "age": 24,
           "country": "Finland",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/4099/otto-virtanen",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:40:48.964092+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/otto-virtanen/"
         },
         "qualityName": "Otto Virtanen",
         "profile": "Grass | Live rank #134 | Finland | age 24 | adj form 43",
@@ -8757,6 +8776,9 @@ const rawTennisGames = [
         "evPer100": 2.9,
         "netEvPer100": 0.9,
         "feePer100": 2,
+        "rawEdgePct": 1.4,
+        "rawEvPer100": 2.9,
+        "rawNetEvPer100": 0.9,
         "valueIssue": "Picked side is overpriced; value board flips to Giles Hussey because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -11781,6 +11803,9 @@ const rawTennisGames = [
         "evPer100": 11.5,
         "netEvPer100": 9.5,
         "feePer100": 2,
+        "rawEdgePct": 4.6,
+        "rawEvPer100": 11.5,
+        "rawNetEvPer100": 9.5,
         "valueIssue": "Picked side is overpriced; value board flips to Eliakim Coulibaly because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -14807,6 +14832,9 @@ const rawTennisGames = [
         "evPer100": 8.4,
         "netEvPer100": 6.4,
         "feePer100": 2,
+        "rawEdgePct": 3.4,
+        "rawEvPer100": 8.4,
+        "rawNetEvPer100": 6.4,
         "valueIssue": "Picked side is overpriced; value board flips to Sho Shimabukuro because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -15101,10 +15129,10 @@ const rawTennisGames = [
           "points": 596,
           "age": 28,
           "country": "Japan",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/3935/sho-shimabukuro",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:41:37.181500+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/sho-shimabukuro/"
         },
         "qualityName": "Sho Shimabukuro",
         "profile": "Grass | Live rank #103 | Japan | age 28 | adj form 43",
@@ -16413,10 +16441,10 @@ const rawTennisGames = [
           "points": 747,
           "age": 30,
           "country": "Poland",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/2416/kamil-majchrzak",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:39:30.969118+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/kamil-majchrzak/"
         },
         "qualityName": "Kamil Majchrzak",
         "profile": "Grass | Live rank #78 | Poland | age 30 | adj form 43",
@@ -17686,6 +17714,9 @@ const rawTennisGames = [
         "evPer100": 30.6,
         "netEvPer100": 28.6,
         "feePer100": 2,
+        "rawEdgePct": 11.2,
+        "rawEvPer100": 30.6,
+        "rawNetEvPer100": 28.6,
         "valueIssue": "Picked side is overpriced; value board flips to Taylah Preston because that side has the better posted-price edge.",
         "valueGrade": "Bet-grade value",
         "betGrade": false
@@ -17994,10 +18025,10 @@ const rawTennisGames = [
           "points": 611,
           "age": 20,
           "country": "Australia",
-          "tour": "WTA",
-          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/7672/taylah-preston",
-          "asOf": "2026-06-05"
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:43:19.796159+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/taylah-preston/"
         },
         "qualityName": "Taylah Preston",
         "profile": "Live rank #127 | Australia | age 20 | adj form 60",
@@ -18037,10 +18068,10 @@ const rawTennisGames = [
           "points": 663,
           "age": 22,
           "country": "USA",
-          "tour": "WTA",
-          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/6724/ashlyn-krueger",
-          "asOf": "2026-06-05"
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:08.210770+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/ashlyn-krueger/"
         },
         "qualityName": "Ashlyn Krueger",
         "profile": "Live rank #120 | USA | age 22 | adj form 75",
@@ -21216,11 +21247,14 @@ const rawTennisGames = [
         "americanOdds": 253,
         "modelPct": 38,
         "impliedPct": 28.3,
-        "edgePct": 9.7,
-        "evPer100": 34.1,
-        "netEvPer100": 32.1,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Vitaliy Sachko because that side has the better posted-price edge.",
+        "rawEdgePct": 9.7,
+        "rawEvPer100": 34.1,
+        "rawNetEvPer100": 32.1,
+        "valueIssue": "Outlier dog price on Vitaliy Sachko; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
         "valueGrade": "Outlier price/manual review",
         "betGrade": false
       },
@@ -21363,12 +21397,12 @@ const rawTennisGames = [
         "americanOdds": 253,
         "modelPct": 38,
         "impliedPct": 28.3,
-        "edgePct": 9.7,
-        "evPer100": 34.1,
-        "netEvPer100": 32.1,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "grade": "Outlier price/manual review",
-        "issue": "Picked side is overpriced; value board flips to Vitaliy Sachko because that side has the better posted-price edge.",
-        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        "issue": "Outlier dog price on Vitaliy Sachko; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+        "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
       },
       {
         "marketType": "Total games",
@@ -21514,10 +21548,10 @@ const rawTennisGames = [
           "points": 571,
           "age": 28,
           "country": "Slovakia",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/2635/alex-molcan",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:36:40.954395+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/alex-molcan/"
         },
         "qualityName": "Alex Molcan",
         "profile": "Clay | Live rank #110 | Slovakia | age 28 | adj form 58",
@@ -25695,10 +25729,10 @@ const rawTennisGames = [
           "points": 612,
           "age": 25,
           "country": "Australia",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/3716/rinky-hijikata",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:41:28.911147+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/rinky-hijikata/"
         },
         "qualityName": "Rinky Hijikata",
         "profile": "Grass | Live rank #98 | Australia | age 25 | adj form 57",
@@ -26972,6 +27006,9 @@ const rawTennisGames = [
         "evPer100": 41.1,
         "netEvPer100": 39.1,
         "feePer100": 2,
+        "rawEdgePct": 14.3,
+        "rawEvPer100": 41.1,
+        "rawNetEvPer100": 39.1,
         "valueIssue": "Picked side is overpriced; value board flips to Mary Stoiana because that side has the better posted-price edge.",
         "valueGrade": "Bet-grade value",
         "betGrade": false
@@ -27280,10 +27317,10 @@ const rawTennisGames = [
           "points": 572,
           "age": 26,
           "country": "Switzerland",
-          "tour": "WTA",
-          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/2984/rebeka-masarova",
-          "asOf": "2026-06-05"
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:43:04.219741+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/rebeka-masarova/"
         },
         "qualityName": "Rebeka Masarova",
         "profile": "Live rank #132 | Switzerland | age 26 | adj form 74",
@@ -27325,10 +27362,10 @@ const rawTennisGames = [
           "points": 521,
           "age": 23,
           "country": "USA",
-          "tour": "WTA",
-          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/13479/mary-stoiana",
-          "asOf": "2026-06-05"
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:49.111806+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/mary-stoiana/"
         },
         "qualityName": "Mary Stoiana",
         "profile": "Live rank #146 | USA | age 23 | adj form 71",
@@ -27480,6 +27517,9 @@ const rawTennisGames = [
         "evPer100": 1.7,
         "netEvPer100": -0.3,
         "feePer100": 2,
+        "rawEdgePct": 0.7,
+        "rawEvPer100": 1.7,
+        "rawNetEvPer100": -0.3,
         "valueIssue": "Picked side is overpriced; value board flips to Guy Den Ouden because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -29084,10 +29124,10 @@ const rawTennisGames = [
           "points": 631,
           "age": 24,
           "country": "USA",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/3772/emilio-nava",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:38:05.918644+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/emilio-nava/"
         },
         "qualityName": "Emilio Nava",
         "profile": "Clay | Live rank #94 | USA | age 24 | adj form 74",
@@ -30505,6 +30545,9 @@ const rawTennisGames = [
         "evPer100": 21.4,
         "netEvPer100": 19.4,
         "feePer100": 2,
+        "rawEdgePct": 7.7,
+        "rawEvPer100": 21.4,
+        "rawNetEvPer100": 19.4,
         "valueIssue": "Picked side is overpriced; value board flips to Taro Daniel because that side has the better posted-price edge.",
         "valueGrade": "Model probability outside validated lane",
         "betGrade": false
@@ -33832,9 +33875,19 @@ const rawTennisGames = [
     "players": [
       {
         "name": "Chloe Paquet",
-        "ranking": null,
+        "ranking": {
+          "name": "Chloe Paquet",
+          "rank": 343,
+          "points": 189,
+          "age": 31,
+          "country": "France",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:19.023872+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/chloe-paquet/"
+        },
         "qualityName": "Chloe Paquet",
-        "profile": "Rank not joined | adj form 59",
+        "profile": "Live rank #343 | France | age 31 | adj form 59",
         "modelPct": 50,
         "weakness": {
           "name": "Chloe Paquet",
@@ -33867,9 +33920,19 @@ const rawTennisGames = [
       },
       {
         "name": "Darya Astakhova",
-        "ranking": null,
+        "ranking": {
+          "name": "Darya Astakhova",
+          "rank": 277,
+          "points": 257,
+          "age": 24,
+          "country": "Russia",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:23.307590+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/darya-astakhova/"
+        },
         "qualityName": "Darya Astakhova",
-        "profile": "Rank not joined | adj form 57",
+        "profile": "Live rank #277 | Russia | age 24 | adj form 57",
         "modelPct": 50,
         "weakness": {
           "name": "Darya Astakhova",
@@ -34011,6 +34074,9 @@ const rawTennisGames = [
         "evPer100": 6.5,
         "netEvPer100": 4.5,
         "feePer100": 2,
+        "rawEdgePct": 2.8,
+        "rawEvPer100": 6.5,
+        "rawNetEvPer100": 4.5,
         "valueIssue": "Picked side is overpriced; value board flips to Timofey Skatov because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -37035,11 +37101,14 @@ const rawTennisGames = [
         "americanOdds": 303,
         "modelPct": 32,
         "impliedPct": 24.8,
-        "edgePct": 7.2,
-        "evPer100": 29,
-        "netEvPer100": 27,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Jakub Mensik because that side has the better posted-price edge.",
+        "rawEdgePct": 7.2,
+        "rawEvPer100": 29,
+        "rawNetEvPer100": 27,
+        "valueIssue": "Outlier dog price on Jakub Mensik; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
         "valueGrade": "Outlier price/manual review",
         "betGrade": false
       },
@@ -37202,12 +37271,12 @@ const rawTennisGames = [
         "americanOdds": 303,
         "modelPct": 32,
         "impliedPct": 24.8,
-        "edgePct": 7.2,
-        "evPer100": 29,
-        "netEvPer100": 27,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "grade": "Outlier price/manual review",
-        "issue": "Picked side is overpriced; value board flips to Jakub Mensik because that side has the better posted-price edge.",
-        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        "issue": "Outlier dog price on Jakub Mensik; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+        "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
       },
       {
         "marketType": "Game spread",
@@ -37571,14 +37640,14 @@ const rawTennisGames = [
           "rank": 27,
           "points": 1550,
           "age": 20,
-          "country": "Czechia",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/10319/jakub-mensik",
-          "asOf": "2026-06-05"
+          "country": "Czech Republic",
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:39:25.933026+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/jakub-mensik/"
         },
         "qualityName": "Jakub Mensik",
-        "profile": "Live rank #27 | Czechia | age 20 | adj form 87",
+        "profile": "Live rank #27 | Czech Republic | age 20 | adj form 87",
         "modelPct": 32,
         "weakness": {
           "name": "Jakub Mensik",
@@ -37617,10 +37686,10 @@ const rawTennisGames = [
           "points": 5705,
           "age": 29,
           "country": "Germany",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/2375/alexander-zverev",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:36:59.238386+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/alexander-zverev/"
         },
         "qualityName": "Alexander Zverev",
         "profile": "Live rank #3 | Germany | age 29 | adj form 89",
@@ -37670,8 +37739,8 @@ const rawTennisGames = [
     "basePickName": "Nikola Bartunkova",
     "modelSource": "Tennis warehouse score model",
     "modelSplit": false,
-    "confidence": 52,
-    "volatility": 57,
+    "confidence": 56,
+    "volatility": 52,
     "tags": [
       "Grass",
       "WTA Birmingham",
@@ -37753,14 +37822,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Nikola Bartunkova",
-        "confidence": 69,
-        "modelPct": 52,
+        "confidence": 71,
+        "modelPct": 56,
         "label": "Live to win a set"
       },
       {
         "name": "Mika Stojsavljevic",
-        "confidence": 63,
-        "modelPct": 48,
+        "confidence": 58,
+        "modelPct": 44,
         "label": "Needs early hold pressure"
       }
     ],
@@ -37770,14 +37839,17 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Mika Stojsavljevic",
         "americanOdds": 153,
-        "modelPct": 48,
+        "modelPct": 44,
         "impliedPct": 39.5,
-        "edgePct": 8.5,
-        "evPer100": 21.4,
-        "netEvPer100": 19.4,
+        "edgePct": 4.5,
+        "evPer100": 11.3,
+        "netEvPer100": 9.3,
         "feePer100": 2,
+        "rawEdgePct": 4.5,
+        "rawEvPer100": 11.3,
+        "rawNetEvPer100": 9.3,
         "valueIssue": "Picked side is overpriced; value board flips to Mika Stojsavljevic because that side has the better posted-price edge.",
-        "valueGrade": "Bet-grade value",
+        "valueGrade": "Raw ML edge only",
         "betGrade": false
       },
       "spread": null,
@@ -37787,32 +37859,32 @@ const rawTennisGames = [
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 22.1,
+        "expectedGames": 21.7,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Pass / near line",
+        "selection": "Under 9.5",
         "line": 9.5,
-        "americanOdds": null,
-        "expectedGames": 9.3,
-        "confidence": 51,
+        "americanOdds": -140,
+        "expectedGames": 9.1,
+        "confidence": 58,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 51,
-        "evPer100": null,
-        "netEvPer100": null,
-        "valueGrade": "Near fair",
-        "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets.",
+        "modelPct": 58,
+        "evPer100": -0.6,
+        "netEvPer100": -2.6,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 9.1 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Nikola Bartunkova",
-          "confidence": 69,
-          "modelPct": 52,
+          "confidence": 71,
+          "modelPct": 56,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -37820,8 +37892,8 @@ const rawTennisGames = [
         },
         {
           "name": "Mika Stojsavljevic",
-          "confidence": 63,
-          "modelPct": 48,
+          "confidence": 58,
+          "modelPct": 44,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -37892,8 +37964,8 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 9.3,
-      "expectedMatchGames": 22.1,
+      "expectedFirstSetGames": 9.1,
+      "expectedMatchGames": 21.7,
       "signalStrength": 4,
       "holdAvg": null,
       "returnGamesAvg": null,
@@ -37917,12 +37989,12 @@ const rawTennisGames = [
         "selection": "Mika Stojsavljevic",
         "line": null,
         "americanOdds": 153,
-        "modelPct": 48,
+        "modelPct": 44,
         "impliedPct": 39.5,
-        "edgePct": 8.5,
-        "evPer100": 21.4,
-        "netEvPer100": 19.4,
-        "grade": "Bet-grade value",
+        "edgePct": 4.5,
+        "evPer100": 11.3,
+        "netEvPer100": 9.3,
+        "grade": "Raw ML edge only",
         "issue": "Picked side is overpriced; value board flips to Mika Stojsavljevic because that side has the better posted-price edge.",
         "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
       },
@@ -37937,7 +38009,7 @@ const rawTennisGames = [
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
-        "expectedGames": 22.1,
+        "expectedGames": 21.7,
         "edgeGames": null,
         "confidence": null,
         "grade": "No direction",
@@ -37946,35 +38018,35 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Nikola Bartunkova 69% / Mika Stojsavljevic 63%",
+        "selection": "Nikola Bartunkova 71% / Mika Stojsavljevic 58%",
         "rows": [
           {
             "name": "Nikola Bartunkova",
-            "confidence": 69,
-            "modelPct": 52,
+            "confidence": 71,
+            "modelPct": 56,
             "label": "Live to win a set"
           },
           {
             "name": "Mika Stojsavljevic",
-            "confidence": 63,
-            "modelPct": 48,
+            "confidence": 58,
+            "modelPct": 44,
             "label": "Needs early hold pressure"
           }
         ],
-        "confidence": 69,
+        "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Pass / near line",
-        "expectedGames": 9.3,
-        "confidence": 51,
+        "selection": "Under 9.5",
+        "expectedGames": 9.1,
+        "confidence": 58,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "grade": "Near fair",
-        "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets."
+        "grade": "Thin value",
+        "reason": "Expected first-set games 9.1 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets."
       }
     ],
     "ensembleValueCase": null,
@@ -37991,8 +38063,8 @@ const rawTennisGames = [
           "americanLabel": "-203",
           "impliedPct": 67,
           "decimalOdds": 1.493,
-          "modelPct": 52,
-          "edgePct": -15,
+          "modelPct": 56,
+          "edgePct": -11,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 49.3,
           "grossPayoutMultiple": 1.493,
@@ -38005,8 +38077,8 @@ const rawTennisGames = [
           "americanLabel": "+153",
           "impliedPct": 39.5,
           "decimalOdds": 2.53,
-          "modelPct": 48,
-          "edgePct": 8.5,
+          "modelPct": 44,
+          "edgePct": 4.5,
           "priceBand": "Underdog",
           "grossProfitPct": 153,
           "grossPayoutMultiple": 2.53,
@@ -38020,8 +38092,8 @@ const rawTennisGames = [
         "americanLabel": "-203",
         "impliedPct": 67,
         "decimalOdds": 1.493,
-        "modelPct": 52,
-        "edgePct": -15,
+        "modelPct": 56,
+        "edgePct": -11,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 49.3,
         "grossPayoutMultiple": 1.493,
@@ -38058,7 +38130,7 @@ const rawTennisGames = [
       "totalLean": "No total line",
       "mlValue": "Nikola Bartunkova -203 / Mika Stojsavljevic +153",
       "marketNote": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
-      "noVigNote": "Model 52% vs DraftKings Sportsbook implied 67% (-15 pts)."
+      "noVigNote": "Model 56% vs DraftKings Sportsbook implied 67% (-11 pts)."
     },
     "h2hUrl": null,
     "researchLinks": [
@@ -38083,15 +38155,15 @@ const rawTennisGames = [
           "rank": 69,
           "points": 970,
           "age": 20,
-          "country": "Czechia",
-          "tour": "WTA",
-          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/7804/nikola-bartunkova",
-          "asOf": "2026-06-05"
+          "country": "Czech Republic",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:43:00.007685+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/nikola-bartunkova/"
         },
         "qualityName": "Nikola Bartunkova",
-        "profile": "Live rank #69 | Czechia | age 20 | adj form 55",
-        "modelPct": 52,
+        "profile": "Live rank #69 | Czech Republic | age 20 | adj form 55",
+        "modelPct": 56,
         "weakness": {
           "name": "Nikola Bartunkova",
           "serviceHoldPct": null,
@@ -38122,10 +38194,20 @@ const rawTennisGames = [
       },
       {
         "name": "Mika Stojsavljevic",
-        "ranking": null,
+        "ranking": {
+          "name": "Mika Stojsavljevic",
+          "rank": 288,
+          "points": 243,
+          "age": 17,
+          "country": "United Kingdom",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:54.396584+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/mika-stojsavljevic/"
+        },
         "qualityName": "Mika Stojsavljevic",
-        "profile": "Rank not joined | adj form 57",
-        "modelPct": 48,
+        "profile": "Live rank #288 | United Kingdom | age 17 | adj form 57",
+        "modelPct": 44,
         "weakness": {
           "name": "Mika Stojsavljevic",
           "serviceHoldPct": null,
@@ -38185,12 +38267,12 @@ const rawTennisGames = [
       "TennisLive recent five",
       "Coinflip price"
     ],
-    "reason": "Yunchaokete Bu has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Grass. Lean, not a chase.",
+    "reason": "Opponent-adjusted recent form is basically even: Yunchaokete Bu 58, Mark Lajal 59. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
-      "scoreGap": 2,
+      "scoreGap": -3,
       "attackingSide": null,
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
@@ -38200,23 +38282,25 @@ const rawTennisGames = [
       "pick": {
         "name": "Yunchaokete Bu",
         "serviceHoldPct": null,
-        "firstServeWonPct": null,
-        "secondServeWonPct": null,
-        "firstServePct": null,
-        "avgAces": null,
-        "avgDoubleFaults": null,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 59,
+        "firstServePct": 58,
+        "avgAces": 6.2,
+        "avgDoubleFaults": 1.6,
         "avgWinners": null,
         "avgUnforcedErrors": null,
         "avgBreakPointsFaced": null,
-        "returnPointsWonPct": null,
-        "servicePointsWonPct": null,
-        "weakServeMatches": 0,
+        "returnPointsWonPct": 38,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 2,
         "pressureMatches": null,
-        "matchesWithStats": 0,
-        "weaknessScore": 0,
+        "matchesWithStats": 5,
+        "weaknessScore": 5,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [],
-        "strengths": [],
+        "strengths": [
+          "second serve holds up (59%)"
+        ],
         "gameFlowRead": "Yunchaokete Bu has no major service weakness in the joined warehouse sample."
       },
       "opponent": {
@@ -38281,7 +38365,7 @@ const rawTennisGames = [
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 42.3,
+        "expectedGames": 42.7,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false
@@ -38291,15 +38375,15 @@ const rawTennisGames = [
         "selection": "Over 9.5",
         "line": 9.5,
         "americanOdds": -200,
-        "expectedGames": 10.2,
-        "confidence": 59,
+        "expectedGames": 10.3,
+        "confidence": 61,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 59,
-        "evPer100": -11.5,
-        "netEvPer100": -13.5,
+        "modelPct": 61,
+        "evPer100": -8.5,
+        "netEvPer100": -10.5,
         "valueGrade": "Actionable live watch",
-        "reason": "Expected first-set games 10.2 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 38%, first-set sample N/A, 0 recent sets.",
+        "reason": "Expected first-set games 10.3 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 57%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
@@ -38328,20 +38412,20 @@ const rawTennisGames = [
         {
           "name": "Yunchaokete Bu",
           "holdPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "servicePointsWonPct": null,
-          "returnPointsWonPct": null,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 59,
+          "servicePointsWonPct": 64,
+          "returnPointsWonPct": 38,
           "returnGamesWonPct": null,
           "breakPointsSavedPct": null,
-          "breakPointsConvertedPct": null,
-          "aces": null,
-          "doubleFaults": null,
+          "breakPointsConvertedPct": 75.4,
+          "aces": 6.2,
+          "doubleFaults": 1.6,
           "winners": null,
           "unforcedErrors": null,
-          "weaknessScore": 0,
-          "weakServeMatches": 0,
-          "statMatches": 0,
+          "weaknessScore": 5,
+          "weakServeMatches": 2,
+          "statMatches": 5,
           "setShape": {
             "completedMatches": 0,
             "setSamples": 0,
@@ -38386,14 +38470,14 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 10.2,
-      "expectedMatchGames": 42.3,
-      "signalStrength": 2,
+      "expectedFirstSetGames": 10.3,
+      "expectedMatchGames": 42.7,
+      "signalStrength": 3,
       "holdAvg": null,
       "returnGamesAvg": null,
-      "returnPointsAvg": 40,
+      "returnPointsAvg": 39,
       "breakPointsSavedAvg": null,
-      "breakPointsConvertedAvg": 37.8,
+      "breakPointsConvertedAvg": 56.6,
       "setSamples": 0,
       "firstSetSamples": 0,
       "avgFirstSetGames": null,
@@ -38401,7 +38485,7 @@ const rawTennisGames = [
       "tiebreakRate": null,
       "extendedSetRate": null,
       "shortSetRate": null,
-      "reasonCore": "hold avg N/A, BP saved N/A, BP converted 38%, first-set sample N/A, 0 recent sets"
+      "reasonCore": "hold avg N/A, BP saved N/A, BP converted 57%, first-set sample N/A, 0 recent sets"
     },
     "derivativeCase": null,
     "bettingMatrix": [
@@ -38431,7 +38515,7 @@ const rawTennisGames = [
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
-        "expectedGames": 42.3,
+        "expectedGames": 42.7,
         "edgeGames": null,
         "confidence": null,
         "grade": "No direction",
@@ -38463,12 +38547,12 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Over 9.5",
-        "expectedGames": 10.2,
-        "confidence": 59,
+        "expectedGames": 10.3,
+        "confidence": 61,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
         "grade": "Actionable live watch",
-        "reason": "Expected first-set games 10.2 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 38%, first-set sample N/A, 0 recent sets."
+        "reason": "Expected first-set games 10.3 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 57%, first-set sample N/A, 0 recent sets."
       }
     ],
     "ensembleValueCase": null,
@@ -38558,39 +38642,1313 @@ const rawTennisGames = [
     "players": [
       {
         "name": "Yunchaokete Bu",
-        "ranking": null,
+        "ranking": {
+          "name": "Bu Yunchaokete",
+          "rank": 166,
+          "points": 358,
+          "age": 24,
+          "country": "China",
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:37:33.863687+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/bu-yunchaokete/"
+        },
         "qualityName": "Yunchaokete Bu",
-        "profile": "Grass | Rank not joined",
+        "profile": "Grass | Live rank #166 | China | age 24 | adj form 58",
         "modelPct": 51.6,
         "weakness": {
           "name": "Yunchaokete Bu",
           "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 59,
+          "firstServePct": 58,
+          "avgAces": 6.2,
+          "avgDoubleFaults": 1.6,
           "avgWinners": null,
           "avgUnforcedErrors": null,
           "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
+          "returnPointsWonPct": 38,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 2,
           "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
+          "matchesWithStats": 5,
+          "weaknessScore": 5,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [],
-          "strengths": [],
+          "strengths": [
+            "second serve holds up (59%)"
+          ],
           "gameFlowRead": "Yunchaokete Bu has no major service weakness in the joined warehouse sample."
         },
         "warehouseDepth": {
-          "expectedRows": 0,
-          "recentRows": 0,
-          "recentMatches": 0,
-          "source": ""
+          "expectedRows": 14,
+          "recentRows": 4,
+          "recentMatches": 5,
+          "source": "TennisLive recent-match stats"
         },
-        "warehouseStats": null
+        "warehouseStats": {
+          "name": "Bu Yunchaokete",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Bu Yunchaokete",
+            "country": "China",
+            "birthdate": "2002-01-19",
+            "age": 24,
+            "rank": 166,
+            "rankingLabel": "ATP ranking",
+            "topRank": 64,
+            "topRankDate": "2025-04-14",
+            "topRankPoints": 905,
+            "points": 358,
+            "prizeMoney": "1.688.726 $",
+            "matchesTotal": 343,
+            "wins": 215,
+            "losses": 128,
+            "winPct": 62.68,
+            "sourceUrl": "https://www.tennislive.net/atp/bu-yunchaokete/",
+            "capturedAt": "2026-06-04T23:37:33.863687+00:00"
+          },
+          "ranking": {
+            "rank": 166,
+            "points": 358,
+            "country": "China",
+            "age": 24,
+            "tour": "ATP ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/atp/bu-yunchaokete/",
+            "asOf": "2026-06-04T23:37:33.863687+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/bu-yunchaokete-VS-jie-cui/wuxi-challenger-2026/",
+            "capturedAt": "2026-06-04T23:37:39.040235+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 25,
+                "value": 3,
+                "label": "08.05.2026 (win vs Adam Walton)",
+                "date": "2026-05-08",
+                "result": "win",
+                "opponentName": "Adam Walton"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 26,
+                "value": 4,
+                "label": "09.05.2026 (win vs Jie Cui)",
+                "date": "2026-05-09",
+                "result": "win",
+                "opponentName": "Jie Cui"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 27,
+                "value": 3,
+                "label": "10.05.2026 (lost vs Soon-Woo Kwon)",
+                "date": "2026-05-10",
+                "result": "lost",
+                "opponentName": "Soon-Woo Kwon"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 28,
+                "value": 2,
+                "label": "19.05.2026 (lost vs Emilio Nava)",
+                "date": "2026-05-19",
+                "result": "lost",
+                "opponentName": "Emilio Nava"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 29,
+                "value": 3,
+                "label": "02.06.2026 (win vs Lloyd Harris)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Lloyd Harris"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 30,
+                "value": 4,
+                "label": "04.06.2026 (win vs Billy Harris)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Billy Harris"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 1,
+                "value": -1,
+                "label": "26.09.2025 (lost vs Alex De Minaur)",
+                "date": "2025-09-26",
+                "result": "lost",
+                "opponentName": "Alex De Minaur"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 2,
+                "value": 0,
+                "label": "02.10.2025 (win vs Juan Manuel Cerundolo)",
+                "date": "2025-10-02",
+                "result": "win",
+                "opponentName": "Juan Manuel Cerundolo"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 3,
+                "value": -1,
+                "label": "04.10.2025 (lost vs Luciano Darderi)",
+                "date": "2025-10-04",
+                "result": "lost",
+                "opponentName": "Luciano Darderi"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 4,
+                "value": 0,
+                "label": "28.10.2025 (win vs Uisung Park)",
+                "date": "2025-10-28",
+                "result": "win",
+                "opponentName": "Uisung Park"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 5,
+                "value": 1,
+                "label": "29.10.2025 (win vs Marc-Andrea Huesler)",
+                "date": "2025-10-29",
+                "result": "win",
+                "opponentName": "Marc-Andrea Huesler"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 6,
+                "value": 0,
+                "label": "31.10.2025 (lost vs Chak Lam Coleman Wong)",
+                "date": "2025-10-31",
+                "result": "lost",
+                "opponentName": "Chak Lam Coleman Wong"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 7,
+                "value": -1,
+                "label": "04.01.2026 (lost vs Nishesh Basavareddy)",
+                "date": "2026-01-04",
+                "result": "lost",
+                "opponentName": "Nishesh Basavareddy"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 8,
+                "value": -2,
+                "label": "19.01.2026 (lost vs Denis Shapovalov)",
+                "date": "2026-01-19",
+                "result": "lost",
+                "opponentName": "Denis Shapovalov"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 9,
+                "value": -3,
+                "label": "06.02.2026 (lost vs Henrique Rocha)",
+                "date": "2026-02-06",
+                "result": "lost",
+                "opponentName": "Henrique Rocha"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 10,
+                "value": -2,
+                "label": "16.03.2026 (win vs Tristan Schoolkate)",
+                "date": "2026-03-16",
+                "result": "win",
+                "opponentName": "Tristan Schoolkate"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 11,
+                "value": -3,
+                "label": "17.03.2026 (lost vs Arthur Fery)",
+                "date": "2026-03-17",
+                "result": "lost",
+                "opponentName": "Arthur Fery"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 12,
+                "value": -2,
+                "label": "24.03.2026 (win vs Max Wiskandt)",
+                "date": "2026-03-24",
+                "result": "win",
+                "opponentName": "Max Wiskandt"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 13,
+                "value": -3,
+                "label": "25.03.2026 (lost vs Alexis Galarneau)",
+                "date": "2026-03-25",
+                "result": "lost",
+                "opponentName": "Alexis Galarneau"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 14,
+                "value": -2,
+                "label": "13.04.2026 (win vs Yunseong Chung)",
+                "date": "2026-04-13",
+                "result": "win",
+                "opponentName": "Yunseong Chung"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 15,
+                "value": -1,
+                "label": "15.04.2026 (win vs Marat Sharipov)",
+                "date": "2026-04-15",
+                "result": "win",
+                "opponentName": "Marat Sharipov"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 16,
+                "value": 0,
+                "label": "17.04.2026 (win vs Adam Walton)",
+                "date": "2026-04-17",
+                "result": "win",
+                "opponentName": "Adam Walton"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 17,
+                "value": 1,
+                "label": "18.04.2026 (win vs Alex Bolt)",
+                "date": "2026-04-18",
+                "result": "win",
+                "opponentName": "Alex Bolt"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 18,
+                "value": 0,
+                "label": "19.04.2026 (lost vs Leandro Riedi)",
+                "date": "2026-04-19",
+                "result": "lost",
+                "opponentName": "Leandro Riedi"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 19,
+                "value": -1,
+                "label": "21.04.2026 (lost vs August Holmgren)",
+                "date": "2026-04-21",
+                "result": "lost",
+                "opponentName": "August Holmgren"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 20,
+                "value": 0,
+                "label": "29.04.2026 (win vs Daniel Masur)",
+                "date": "2026-04-29",
+                "result": "win",
+                "opponentName": "Daniel Masur"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 21,
+                "value": 1,
+                "label": "30.04.2026 (win vs Andre Ilagan)",
+                "date": "2026-04-30",
+                "result": "win",
+                "opponentName": "Andre Ilagan"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 22,
+                "value": 0,
+                "label": "01.05.2026 (lost vs Chak Lam Coleman Wong)",
+                "date": "2026-05-01",
+                "result": "lost",
+                "opponentName": "Chak Lam Coleman Wong"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 23,
+                "value": 1,
+                "label": "05.05.2026 (win vs Keegan Smith)",
+                "date": "2026-05-05",
+                "result": "win",
+                "opponentName": "Keegan Smith"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 24,
+                "value": 2,
+                "label": "07.05.2026 (win vs Ognjen Milic)",
+                "date": "2026-05-07",
+                "result": "win",
+                "opponentName": "Ognjen Milić"
+              },
+              {
+                "index": 30,
+                "sequenceIndex": 25,
+                "value": 3,
+                "label": "08.05.2026 (win vs Adam Walton)",
+                "date": "2026-05-08",
+                "result": "win",
+                "opponentName": "Adam Walton"
+              },
+              {
+                "index": 31,
+                "sequenceIndex": 26,
+                "value": 4,
+                "label": "09.05.2026 (win vs Jie Cui)",
+                "date": "2026-05-09",
+                "result": "win",
+                "opponentName": "Jie Cui"
+              },
+              {
+                "index": 32,
+                "sequenceIndex": 27,
+                "value": 3,
+                "label": "10.05.2026 (lost vs Soon-Woo Kwon)",
+                "date": "2026-05-10",
+                "result": "lost",
+                "opponentName": "Soon-Woo Kwon"
+              },
+              {
+                "index": 33,
+                "sequenceIndex": 28,
+                "value": 2,
+                "label": "19.05.2026 (lost vs Emilio Nava)",
+                "date": "2026-05-19",
+                "result": "lost",
+                "opponentName": "Emilio Nava"
+              },
+              {
+                "index": 34,
+                "sequenceIndex": 29,
+                "value": 3,
+                "label": "02.06.2026 (win vs Lloyd Harris)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Lloyd Harris"
+              },
+              {
+                "index": 35,
+                "sequenceIndex": 30,
+                "value": 4,
+                "label": "04.06.2026 (win vs Billy Harris)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Billy Harris"
+              }
+            ],
+            "latestValue": 4,
+            "minValue": -3,
+            "maxValue": 4
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 6.2,
+              "avgAces": 6.2,
+              "doubleFaults": 1.6,
+              "avgDoubleFaults": 1.6,
+              "firstServePct": 58.2,
+              "firstServeWonPct": 67.4,
+              "secondServeWonPct": 58.8,
+              "returnPointsWonPct": 38.2,
+              "breakPointsConvertedPct": 61.5,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 16,
+              "breakPointsToConvert": 26,
+              "breakPointChancesPerMatch": 5.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 16,
+                "bpChances": 26,
+                "bpConvertedPct": 61.5,
+                "bpChancesPerMatch": 5.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 16,
+                "bpChances": 26,
+                "bpConvertedPct": 61.5,
+                "bpChancesPerMatch": 5.2
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Bu Yunchaokete",
+            "matches": [
+              {
+                "opponentName": "Billy Harris",
+                "event": "Birmingham Challenger",
+                "matchDateLabel": "2026-06-04",
+                "isoDate": "2026-06-04",
+                "surface": "Grass",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "6-2, 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/bu-yunchaokete-VS-billy-harris/birmingham-challenger-2026/",
+                "matchId": "tl-2026-06-04-birmingham-challenger-2026-bu-yunchaokete-vs-billy-harris",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "36/55 (65%)",
+                      "made": 36,
+                      "attempts": 55,
+                      "pct": 65
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "26/36 (72%)",
+                      "made": 26,
+                      "attempts": 36,
+                      "pct": 72
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/19 (68%)",
+                      "made": 13,
+                      "attempts": 19,
+                      "pct": 68
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "8",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/7 (57%)",
+                      "made": 4,
+                      "attempts": 7,
+                      "pct": 57
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "63/108 (58%)",
+                      "made": 63,
+                      "attempts": 108,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "24/53 (45%)",
+                      "made": 24,
+                      "attempts": 53,
+                      "pct": 45
+                    }
+                  ],
+                  "firstServePct": 65,
+                  "firstServeIn": "36/55 (65%)",
+                  "firstServeWonPct": 72,
+                  "firstServePointsWon": "26/36 (72%)",
+                  "secondServeWonPct": 68,
+                  "secondServePointsWon": "13/19 (68%)",
+                  "aces": 8,
+                  "breakPointsConverted": "4/7 (57%)",
+                  "breakPointsConvertedPct": 57,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "63/108 (58%)",
+                  "returnPointsWonPct": 45,
+                  "returnPointsWon": "24/53 (45%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "36/55 (65%)",
+                      "made": 36,
+                      "attempts": 55,
+                      "pct": 65
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "26/36 (72%)",
+                      "made": 26,
+                      "attempts": 36,
+                      "pct": 72
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/19 (68%)",
+                      "made": 13,
+                      "attempts": 19,
+                      "pct": 68
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "8",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/7 (57%)",
+                      "made": 4,
+                      "attempts": 7,
+                      "pct": 57
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "63/108 (58%)",
+                      "made": 63,
+                      "attempts": 108,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "24/53 (45%)",
+                      "made": 24,
+                      "attempts": 53,
+                      "pct": 45
+                    }
+                  ],
+                  "firstServePct": 65,
+                  "firstServeIn": "36/55 (65%)",
+                  "firstServeWonPct": 72,
+                  "firstServePointsWon": "26/36 (72%)",
+                  "secondServeWonPct": 68,
+                  "secondServePointsWon": "13/19 (68%)",
+                  "aces": 8,
+                  "breakPointsConverted": "4/7 (57%)",
+                  "breakPointsConvertedPct": 57,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "63/108 (58%)",
+                  "returnPointsWonPct": 45,
+                  "returnPointsWon": "24/53 (45%)"
+                }
+              },
+              {
+                "opponentName": "Lloyd Harris",
+                "event": "Birmingham Challenger",
+                "matchDateLabel": "2026-06-02",
+                "isoDate": "2026-06-02",
+                "surface": "Grass",
+                "round": "1 st round",
+                "result": "win",
+                "score": "7-6 5 , 1-6, 6-1",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/bu-yunchaokete-VS-lloyd-george-muirhead-harris/birmingham-challenger-2026/",
+                "matchId": "tl-2026-06-01-birmingham-challenger-2026-bu-yunchaokete-vs-lloyd-harris",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "59/88 (67%)",
+                      "made": 59,
+                      "attempts": 88,
+                      "pct": 67
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "43/59 (73%)",
+                      "made": 43,
+                      "attempts": 59,
+                      "pct": 73
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/29 (45%)",
+                      "made": 13,
+                      "attempts": 29,
+                      "pct": 45
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/2 (100%)",
+                      "made": 2,
+                      "attempts": 2,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "81/165 (49%)",
+                      "made": 81,
+                      "attempts": 165,
+                      "pct": 49
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "25/77 (32%)",
+                      "made": 25,
+                      "attempts": 77,
+                      "pct": 32
+                    }
+                  ],
+                  "firstServePct": 67,
+                  "firstServeIn": "59/88 (67%)",
+                  "firstServeWonPct": 73,
+                  "firstServePointsWon": "43/59 (73%)",
+                  "secondServeWonPct": 45,
+                  "secondServePointsWon": "13/29 (45%)",
+                  "aces": 6,
+                  "breakPointsConverted": "2/2 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 49,
+                  "totalPointsWon": "81/165 (49%)",
+                  "returnPointsWonPct": 32,
+                  "returnPointsWon": "25/77 (32%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "59/88 (67%)",
+                      "made": 59,
+                      "attempts": 88,
+                      "pct": 67
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "43/59 (73%)",
+                      "made": 43,
+                      "attempts": 59,
+                      "pct": 73
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/29 (45%)",
+                      "made": 13,
+                      "attempts": 29,
+                      "pct": 45
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/2 (100%)",
+                      "made": 2,
+                      "attempts": 2,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "81/165 (49%)",
+                      "made": 81,
+                      "attempts": 165,
+                      "pct": 49
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "25/77 (32%)",
+                      "made": 25,
+                      "attempts": 77,
+                      "pct": 32
+                    }
+                  ],
+                  "firstServePct": 67,
+                  "firstServeIn": "59/88 (67%)",
+                  "firstServeWonPct": 73,
+                  "firstServePointsWon": "43/59 (73%)",
+                  "secondServeWonPct": 45,
+                  "secondServePointsWon": "13/29 (45%)",
+                  "aces": 6,
+                  "breakPointsConverted": "2/2 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 49,
+                  "totalPointsWon": "81/165 (49%)",
+                  "returnPointsWonPct": 32,
+                  "returnPointsWon": "25/77 (32%)"
+                }
+              },
+              {
+                "opponentName": "Emilio Nava",
+                "event": "Paris",
+                "matchDateLabel": "2026-05-19",
+                "isoDate": "2026-05-19",
+                "surface": "Clay",
+                "round": "q 1",
+                "result": "lost",
+                "score": "7-6 4 , 7-6 3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/emilio-nava-VS-bu-yunchaokete/french-open-paris-2026/",
+                "matchId": "tl-2026-05-19-french-open-paris-2026-emilio-nava-vs-bu-yunchaokete",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "50/88 (57%)",
+                      "made": 50,
+                      "attempts": 88,
+                      "pct": 57
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "32/50 (64%)",
+                      "made": 32,
+                      "attempts": 50,
+                      "pct": 64
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "16/38 (42%)",
+                      "made": 16,
+                      "attempts": 38,
+                      "pct": 42
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/4 (75%)",
+                      "made": 3,
+                      "attempts": 4,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "79/172 (46%)",
+                      "made": 79,
+                      "attempts": 172,
+                      "pct": 46
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "31/84 (37%)",
+                      "made": 31,
+                      "attempts": 84,
+                      "pct": 37
+                    }
+                  ],
+                  "firstServePct": 57,
+                  "firstServeIn": "50/88 (57%)",
+                  "firstServeWonPct": 64,
+                  "firstServePointsWon": "32/50 (64%)",
+                  "secondServeWonPct": 42,
+                  "secondServePointsWon": "16/38 (42%)",
+                  "aces": 1,
+                  "breakPointsConverted": "3/4 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 46,
+                  "totalPointsWon": "79/172 (46%)",
+                  "returnPointsWonPct": 37,
+                  "returnPointsWon": "31/84 (37%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "50/88 (57%)",
+                      "made": 50,
+                      "attempts": 88,
+                      "pct": 57
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "32/50 (64%)",
+                      "made": 32,
+                      "attempts": 50,
+                      "pct": 64
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "16/38 (42%)",
+                      "made": 16,
+                      "attempts": 38,
+                      "pct": 42
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/4 (75%)",
+                      "made": 3,
+                      "attempts": 4,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "79/172 (46%)",
+                      "made": 79,
+                      "attempts": 172,
+                      "pct": 46
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "31/84 (37%)",
+                      "made": 31,
+                      "attempts": 84,
+                      "pct": 37
+                    }
+                  ],
+                  "firstServePct": 57,
+                  "firstServeIn": "50/88 (57%)",
+                  "firstServeWonPct": 64,
+                  "firstServePointsWon": "32/50 (64%)",
+                  "secondServeWonPct": 42,
+                  "secondServePointsWon": "16/38 (42%)",
+                  "aces": 1,
+                  "breakPointsConverted": "3/4 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 46,
+                  "totalPointsWon": "79/172 (46%)",
+                  "returnPointsWonPct": 37,
+                  "returnPointsWon": "31/84 (37%)"
+                }
+              },
+              {
+                "opponentName": "Soon-Woo Kwon",
+                "event": "Wuxi Challenger",
+                "matchDateLabel": "2026-05-10",
+                "isoDate": "2026-05-10",
+                "surface": "Hard",
+                "round": "fin",
+                "result": "lost",
+                "score": "6-2, 7-6 2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/soon-woo-kwon-VS-bu-yunchaokete/wuxi-challenger-2026/",
+                "matchId": "tl-2026-05-10-wuxi-challenger-2026-soon-woo-kwon-vs-bu-yunchaokete",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "39/66 (59%)",
+                      "made": 39,
+                      "attempts": 66,
+                      "pct": 59
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "19/39 (49%)",
+                      "made": 19,
+                      "attempts": 39,
+                      "pct": 49
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "17/27 (63%)",
+                      "made": 17,
+                      "attempts": 27,
+                      "pct": 63
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "9",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/2 (100%)",
+                      "made": 2,
+                      "attempts": 2,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "52/124 (42%)",
+                      "made": 52,
+                      "attempts": 124,
+                      "pct": 42
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "16/58 (28%)",
+                      "made": 16,
+                      "attempts": 58,
+                      "pct": 28
+                    }
+                  ],
+                  "firstServePct": 59,
+                  "firstServeIn": "39/66 (59%)",
+                  "firstServeWonPct": 49,
+                  "firstServePointsWon": "19/39 (49%)",
+                  "secondServeWonPct": 63,
+                  "secondServePointsWon": "17/27 (63%)",
+                  "aces": 9,
+                  "breakPointsConverted": "2/2 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 0,
+                  "totalPointsWonPct": 42,
+                  "totalPointsWon": "52/124 (42%)",
+                  "returnPointsWonPct": 28,
+                  "returnPointsWon": "16/58 (28%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "39/66 (59%)",
+                      "made": 39,
+                      "attempts": 66,
+                      "pct": 59
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "19/39 (49%)",
+                      "made": 19,
+                      "attempts": 39,
+                      "pct": 49
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "17/27 (63%)",
+                      "made": 17,
+                      "attempts": 27,
+                      "pct": 63
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "9",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/2 (100%)",
+                      "made": 2,
+                      "attempts": 2,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "52/124 (42%)",
+                      "made": 52,
+                      "attempts": 124,
+                      "pct": 42
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "16/58 (28%)",
+                      "made": 16,
+                      "attempts": 58,
+                      "pct": 28
+                    }
+                  ],
+                  "firstServePct": 59,
+                  "firstServeIn": "39/66 (59%)",
+                  "firstServeWonPct": 49,
+                  "firstServePointsWon": "19/39 (49%)",
+                  "secondServeWonPct": 63,
+                  "secondServePointsWon": "17/27 (63%)",
+                  "aces": 9,
+                  "breakPointsConverted": "2/2 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 0,
+                  "totalPointsWonPct": 42,
+                  "totalPointsWon": "52/124 (42%)",
+                  "returnPointsWonPct": 28,
+                  "returnPointsWon": "16/58 (28%)"
+                }
+              },
+              {
+                "opponentName": "Jie Cui",
+                "event": "Wuxi Challenger",
+                "matchDateLabel": "2026-05-09",
+                "isoDate": "2026-05-09",
+                "surface": "Hard",
+                "round": "1/2",
+                "result": "win",
+                "score": "6-1, 7-5",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/bu-yunchaokete-VS-jie-cui/wuxi-challenger-2026/",
+                "matchId": "tl-2026-05-09-wuxi-challenger-2026-bu-yunchaokete-vs-jie-cui",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "19/44 (43%)",
+                      "made": 19,
+                      "attempts": 44,
+                      "pct": 43
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "15/19 (79%)",
+                      "made": 15,
+                      "attempts": 19,
+                      "pct": 79
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "19/25 (76%)",
+                      "made": 19,
+                      "attempts": 25,
+                      "pct": 76
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/11 (45%)",
+                      "made": 5,
+                      "attempts": 11,
+                      "pct": 45
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "73/124 (59%)",
+                      "made": 73,
+                      "attempts": 124,
+                      "pct": 59
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "39/80 (49%)",
+                      "made": 39,
+                      "attempts": 80,
+                      "pct": 49
+                    }
+                  ],
+                  "firstServePct": 43,
+                  "firstServeIn": "19/44 (43%)",
+                  "firstServeWonPct": 79,
+                  "firstServePointsWon": "15/19 (79%)",
+                  "secondServeWonPct": 76,
+                  "secondServePointsWon": "19/25 (76%)",
+                  "aces": 7,
+                  "breakPointsConverted": "5/11 (45%)",
+                  "breakPointsConvertedPct": 45,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 59,
+                  "totalPointsWon": "73/124 (59%)",
+                  "returnPointsWonPct": 49,
+                  "returnPointsWon": "39/80 (49%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "19/44 (43%)",
+                      "made": 19,
+                      "attempts": 44,
+                      "pct": 43
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "15/19 (79%)",
+                      "made": 15,
+                      "attempts": 19,
+                      "pct": 79
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "19/25 (76%)",
+                      "made": 19,
+                      "attempts": 25,
+                      "pct": 76
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/11 (45%)",
+                      "made": 5,
+                      "attempts": 11,
+                      "pct": 45
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "73/124 (59%)",
+                      "made": 73,
+                      "attempts": 124,
+                      "pct": 59
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "39/80 (49%)",
+                      "made": 39,
+                      "attempts": 80,
+                      "pct": 49
+                    }
+                  ],
+                  "firstServePct": 43,
+                  "firstServeIn": "19/44 (43%)",
+                  "firstServeWonPct": 79,
+                  "firstServePointsWon": "15/19 (79%)",
+                  "secondServeWonPct": 76,
+                  "secondServePointsWon": "19/25 (76%)",
+                  "aces": 7,
+                  "breakPointsConverted": "5/11 (45%)",
+                  "breakPointsConvertedPct": 45,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 59,
+                  "totalPointsWon": "73/124 (59%)",
+                  "returnPointsWonPct": 49,
+                  "returnPointsWon": "39/80 (49%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 58.3,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.6,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.543,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 58.3,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/atp/bu-yunchaokete/"
+          }
+        }
       },
       {
         "name": "Mark Lajal",
@@ -39866,11 +41224,14 @@ const rawTennisGames = [
         "americanOdds": 276,
         "modelPct": 34.4,
         "impliedPct": 26.6,
-        "edgePct": 7.8,
-        "evPer100": 29.3,
-        "netEvPer100": 27.3,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Maxim Mrva because that side has the better posted-price edge.",
+        "rawEdgePct": 7.8,
+        "rawEvPer100": 29.3,
+        "rawNetEvPer100": 27.3,
+        "valueIssue": "Outlier dog price on Maxim Mrva; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
         "valueGrade": "Outlier price/manual review",
         "betGrade": false
       },
@@ -40013,12 +41374,12 @@ const rawTennisGames = [
         "americanOdds": 276,
         "modelPct": 34.4,
         "impliedPct": 26.6,
-        "edgePct": 7.8,
-        "evPer100": 29.3,
-        "netEvPer100": 27.3,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "grade": "Outlier price/manual review",
-        "issue": "Picked side is overpriced; value board flips to Maxim Mrva because that side has the better posted-price edge.",
-        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        "issue": "Outlier dog price on Maxim Mrva; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+        "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
       },
       {
         "marketType": "Total games",
@@ -40164,10 +41525,10 @@ const rawTennisGames = [
           "points": 860,
           "age": 25,
           "country": "Argentina",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/3340/sebastian-baez",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:41:32.717951+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/sebastian-baez/"
         },
         "qualityName": "Sebastian Baez",
         "profile": "Clay | Live rank #64 | Argentina | age 25 | adj form 44",
@@ -42797,8 +44158,8 @@ const rawTennisGames = [
     "modelSource": "TennisLive recent-five Challenger model",
     "modelSplit": false,
     "marketOnly": false,
-    "confidence": 63.4,
-    "volatility": 45,
+    "confidence": 65.1,
+    "volatility": 43,
     "tags": [
       "ATP Challenger",
       "Clay",
@@ -42807,16 +44168,16 @@ const rawTennisGames = [
       "TennisLive recent five",
       "Coinflip price"
     ],
-    "reason": "Marco Trungelliti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+    "reason": "Diego Dedura-Palomero grades 14 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Weakness warning",
-      "target": "Marco Trungelliti",
-      "scoreGap": -10,
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -5,
       "attackingSide": null,
-      "vulnerableSide": "Marco Trungelliti",
-      "gameFlow": "Marco Trungelliti is the model side, but the fragile profile is on our pick: double-fault pressure (4.2 avg); 3 recent matches with serve instability. Avoid laying a bad price until early holds are confirmed.",
-      "liveTrigger": "Do not upgrade Marco Trungelliti unless they hold cleanly in the first service game and keep double faults down.",
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
       "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
@@ -42849,37 +44210,39 @@ const rawTennisGames = [
       "opponent": {
         "name": "Diego Dedura-Palomero",
         "serviceHoldPct": null,
-        "firstServeWonPct": null,
-        "secondServeWonPct": null,
-        "firstServePct": null,
-        "avgAces": null,
-        "avgDoubleFaults": null,
+        "firstServeWonPct": 62,
+        "secondServeWonPct": 61,
+        "firstServePct": 72,
+        "avgAces": 0.4,
+        "avgDoubleFaults": 1.2,
         "avgWinners": null,
         "avgUnforcedErrors": null,
         "avgBreakPointsFaced": null,
-        "returnPointsWonPct": null,
-        "servicePointsWonPct": null,
-        "weakServeMatches": 0,
+        "returnPointsWonPct": 43,
+        "servicePointsWonPct": 62,
+        "weakServeMatches": 2,
         "pressureMatches": null,
-        "matchesWithStats": 0,
-        "weaknessScore": 0,
+        "matchesWithStats": 5,
+        "weaknessScore": 5,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [],
-        "strengths": [],
+        "strengths": [
+          "second serve holds up (61%)"
+        ],
         "gameFlowRead": "Diego Dedura-Palomero has no major service weakness in the joined warehouse sample."
       }
     },
     "setWinProjections": [
       {
         "name": "Marco Trungelliti",
-        "confidence": 71,
-        "modelPct": 63.4,
+        "confidence": 73,
+        "modelPct": 65.1,
         "label": "Market favorite to win a set"
       },
       {
         "name": "Diego Dedura-Palomero",
-        "confidence": 59,
-        "modelPct": 39.3,
+        "confidence": 57,
+        "modelPct": 37.6,
         "label": "Underdog set-win path needs early holds"
       }
     ],
@@ -42889,12 +44252,15 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Diego Dedura-Palomero",
         "americanOdds": 204,
-        "modelPct": 39.3,
+        "modelPct": 37.6,
         "impliedPct": 32.9,
-        "edgePct": 6.4,
-        "evPer100": 19.5,
-        "netEvPer100": 17.5,
+        "edgePct": 4.7,
+        "evPer100": 14.3,
+        "netEvPer100": 12.3,
         "feePer100": 2,
+        "rawEdgePct": 4.7,
+        "rawEvPer100": 14.3,
+        "rawNetEvPer100": 12.3,
         "valueIssue": "Picked side is overpriced; value board flips to Diego Dedura-Palomero because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -42917,21 +44283,21 @@ const rawTennisGames = [
         "line": 9.5,
         "americanOdds": 105,
         "expectedGames": 9.9,
-        "confidence": 56,
+        "confidence": 58,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 56,
-        "evPer100": 14.8,
-        "netEvPer100": 12.8,
+        "modelPct": 58,
+        "evPer100": 18.9,
+        "netEvPer100": 16.9,
         "valueGrade": "Thin value",
-        "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets.",
+        "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Marco Trungelliti",
-          "confidence": 71,
-          "modelPct": 63.4,
+          "confidence": 73,
+          "modelPct": 65.1,
           "label": "Market favorite to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -42939,8 +44305,8 @@ const rawTennisGames = [
         },
         {
           "name": "Diego Dedura-Palomero",
-          "confidence": 59,
-          "modelPct": 39.3,
+          "confidence": 57,
+          "modelPct": 37.6,
           "label": "Underdog set-win path needs early holds",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -42983,20 +44349,20 @@ const rawTennisGames = [
         {
           "name": "Diego Dedura-Palomero",
           "holdPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "servicePointsWonPct": null,
-          "returnPointsWonPct": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 61,
+          "servicePointsWonPct": 62,
+          "returnPointsWonPct": 43,
           "returnGamesWonPct": null,
           "breakPointsSavedPct": null,
-          "breakPointsConvertedPct": null,
-          "aces": null,
-          "doubleFaults": null,
+          "breakPointsConvertedPct": 47.4,
+          "aces": 0.4,
+          "doubleFaults": 1.2,
           "winners": null,
           "unforcedErrors": null,
-          "weaknessScore": 0,
-          "weakServeMatches": 0,
-          "statMatches": 0,
+          "weaknessScore": 5,
+          "weakServeMatches": 2,
+          "statMatches": 5,
           "setShape": {
             "completedMatches": 0,
             "setSamples": 0,
@@ -43013,12 +44379,12 @@ const rawTennisGames = [
       ],
       "expectedFirstSetGames": 9.9,
       "expectedMatchGames": 39.1,
-      "signalStrength": 2,
+      "signalStrength": 4,
       "holdAvg": null,
       "returnGamesAvg": null,
-      "returnPointsAvg": 44,
+      "returnPointsAvg": 43.5,
       "breakPointsSavedAvg": null,
-      "breakPointsConvertedAvg": 50.4,
+      "breakPointsConvertedAvg": 48.9,
       "setSamples": 0,
       "firstSetSamples": 0,
       "avgFirstSetGames": null,
@@ -43026,7 +44392,7 @@ const rawTennisGames = [
       "tiebreakRate": null,
       "extendedSetRate": null,
       "shortSetRate": null,
-      "reasonCore": "hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets"
+      "reasonCore": "hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets"
     },
     "derivativeCase": null,
     "bettingMatrix": [
@@ -43036,11 +44402,11 @@ const rawTennisGames = [
         "selection": "Diego Dedura-Palomero",
         "line": null,
         "americanOdds": 204,
-        "modelPct": 39.3,
+        "modelPct": 37.6,
         "impliedPct": 32.9,
-        "edgePct": 6.4,
-        "evPer100": 19.5,
-        "netEvPer100": 17.5,
+        "edgePct": 4.7,
+        "evPer100": 14.3,
+        "netEvPer100": 12.3,
         "grade": "Raw ML edge only",
         "issue": "Picked side is overpriced; value board flips to Diego Dedura-Palomero because that side has the better posted-price edge.",
         "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
@@ -43065,22 +44431,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Marco Trungelliti 71% / Diego Dedura-Palomero 59%",
+        "selection": "Marco Trungelliti 73% / Diego Dedura-Palomero 57%",
         "rows": [
           {
             "name": "Marco Trungelliti",
-            "confidence": 71,
-            "modelPct": 63.4,
+            "confidence": 73,
+            "modelPct": 65.1,
             "label": "Market favorite to win a set"
           },
           {
             "name": "Diego Dedura-Palomero",
-            "confidence": 59,
-            "modelPct": 39.3,
+            "confidence": 57,
+            "modelPct": 37.6,
             "label": "Underdog set-win path needs early holds"
           }
         ],
-        "confidence": 71,
+        "confidence": 73,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -43089,11 +44455,11 @@ const rawTennisGames = [
         "label": "1st set O/U",
         "selection": "Over 9.5",
         "expectedGames": 9.9,
-        "confidence": 56,
+        "confidence": 58,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
         "grade": "Thin value",
-        "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets."
+        "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets."
       }
     ],
     "ensembleValueCase": null,
@@ -43110,8 +44476,8 @@ const rawTennisGames = [
           "americanLabel": "-279",
           "impliedPct": 73.6,
           "decimalOdds": 1.358,
-          "modelPct": 63.4,
-          "edgePct": -10.2,
+          "modelPct": 65.1,
+          "edgePct": -8.5,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 35.8,
           "grossPayoutMultiple": 1.358,
@@ -43124,8 +44490,8 @@ const rawTennisGames = [
           "americanLabel": "+204",
           "impliedPct": 32.9,
           "decimalOdds": 3.04,
-          "modelPct": 39.3,
-          "edgePct": 6.4,
+          "modelPct": 37.6,
+          "edgePct": 4.7,
           "priceBand": "Underdog",
           "grossProfitPct": 204,
           "grossPayoutMultiple": 3.04,
@@ -43139,8 +44505,8 @@ const rawTennisGames = [
         "americanLabel": "-279",
         "impliedPct": 73.6,
         "decimalOdds": 1.358,
-        "modelPct": 63.4,
-        "edgePct": -10.2,
+        "modelPct": 65.1,
+        "edgePct": -8.5,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 35.8,
         "grossPayoutMultiple": 1.358,
@@ -43177,7 +44543,7 @@ const rawTennisGames = [
       "totalLean": "No total line",
       "mlValue": "Marco Trungelliti -279 / Diego Dedura-Palomero +204",
       "marketNote": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 63.4% vs DraftKings Sportsbook implied 73.6% (-10.2 pts)."
+      "noVigNote": "Model 65.1% vs DraftKings Sportsbook implied 73.6% (-8.5 pts)."
     },
     "h2hUrl": null,
     "players": [
@@ -43189,14 +44555,14 @@ const rawTennisGames = [
           "points": 731,
           "age": 36,
           "country": "Argentina",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/2278/marco-trungelliti",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:40:11.067982+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/marco-trungelliti/"
         },
         "qualityName": "Marco Trungelliti",
         "profile": "Clay | Live rank #81 | Argentina | age 36 | adj form 59",
-        "modelPct": 63.4,
+        "modelPct": 65.1,
         "weakness": {
           "name": "Marco Trungelliti",
           "serviceHoldPct": null,
@@ -44496,39 +45862,1313 @@ const rawTennisGames = [
       },
       {
         "name": "Diego Dedura-Palomero",
-        "ranking": null,
+        "ranking": {
+          "name": "Diego Dedura",
+          "rank": 287,
+          "points": 187,
+          "age": 18,
+          "country": "Germany",
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:37:47.812209+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/diego-dedura-palomero/"
+        },
         "qualityName": "Diego Dedura-Palomero",
-        "profile": "Clay | Rank not joined",
-        "modelPct": 39.3,
+        "profile": "Clay | Live rank #287 | Germany | age 18 | adj form 73",
+        "modelPct": 37.6,
         "weakness": {
           "name": "Diego Dedura-Palomero",
           "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 61,
+          "firstServePct": 72,
+          "avgAces": 0.4,
+          "avgDoubleFaults": 1.2,
           "avgWinners": null,
           "avgUnforcedErrors": null,
           "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
+          "returnPointsWonPct": 43,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 2,
           "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
+          "matchesWithStats": 5,
+          "weaknessScore": 5,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [],
-          "strengths": [],
+          "strengths": [
+            "second serve holds up (61%)"
+          ],
           "gameFlowRead": "Diego Dedura-Palomero has no major service weakness in the joined warehouse sample."
         },
         "warehouseDepth": {
-          "expectedRows": 0,
-          "recentRows": 0,
-          "recentMatches": 0,
-          "source": ""
+          "expectedRows": 14,
+          "recentRows": 4,
+          "recentMatches": 5,
+          "source": "TennisLive recent-match stats"
         },
-        "warehouseStats": null
+        "warehouseStats": {
+          "name": "Diego Dedura",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Diego Dedura",
+            "country": "Germany",
+            "birthdate": "2008-03-12",
+            "age": 18,
+            "rank": 287,
+            "rankingLabel": "ATP ranking",
+            "topRank": 258,
+            "topRankDate": "2026-04-13",
+            "topRankPoints": 210,
+            "points": 187,
+            "prizeMoney": "117.456 $",
+            "matchesTotal": 161,
+            "wins": 96,
+            "losses": 65,
+            "winPct": 59.63,
+            "sourceUrl": "https://www.tennislive.net/atp/diego-dedura-palomero/",
+            "capturedAt": "2026-06-04T23:37:47.812209+00:00"
+          },
+          "ranking": {
+            "rank": 287,
+            "points": 187,
+            "country": "Germany",
+            "age": 18,
+            "tour": "ATP ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/atp/diego-dedura-palomero/",
+            "asOf": "2026-06-04T23:37:47.812209+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/diego-dedura-palomero-VS-raul-brancaccio/vicenza-challenger-2026/",
+            "capturedAt": "2026-06-04T23:37:53.346051+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 25,
+                "value": 5,
+                "label": "17.05.2026 (lost vs Frances Tiafoe)",
+                "date": "2026-05-17",
+                "result": "lost",
+                "opponentName": "Frances Tiafoe"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 26,
+                "value": 6,
+                "label": "25.05.2026 (win vs Raul Brancaccio)",
+                "date": "2026-05-25",
+                "result": "win",
+                "opponentName": "Raul Brancaccio"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 27,
+                "value": 7,
+                "label": "27.05.2026 (win vs Samuele Pieri)",
+                "date": "2026-05-27",
+                "result": "win",
+                "opponentName": "Samuele Pieri"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 28,
+                "value": 6,
+                "label": "29.05.2026 (lost vs Stefano Travaglia)",
+                "date": "2026-05-29",
+                "result": "lost",
+                "opponentName": "Stefano Travaglia"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 29,
+                "value": 7,
+                "label": "02.06.2026 (win vs Max Wiskandt)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Max Wiskandt"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 30,
+                "value": 8,
+                "label": "04.06.2026 (win vs Joao Lucas Reis Da Silva)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Joao Lucas Reis Da Silva"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 1,
+                "value": 1,
+                "label": "27.02.2026 (win vs Juan Pablo Varillas)",
+                "date": "2026-02-27",
+                "result": "win",
+                "opponentName": "Juan Pablo Varillas"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 2,
+                "value": 0,
+                "label": "28.02.2026 (lost vs Miguel Damas)",
+                "date": "2026-02-28",
+                "result": "lost",
+                "opponentName": "Miguel Damas"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 3,
+                "value": 1,
+                "label": "04.03.2026 (win vs Fernando Cavallo)",
+                "date": "2026-03-04",
+                "result": "win",
+                "opponentName": "Fernando Cavallo"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 4,
+                "value": 2,
+                "label": "05.03.2026 (win vs Ezequiel Monferrer)",
+                "date": "2026-03-05",
+                "result": "win",
+                "opponentName": "Ezequiel Monferrer"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 5,
+                "value": 3,
+                "label": "06.03.2026 (win vs Carlos Maria Zarate)",
+                "date": "2026-03-06",
+                "result": "win",
+                "opponentName": "Carlos Maria Zarate"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 6,
+                "value": 4,
+                "label": "07.03.2026 (win vs Maximo Zeitune)",
+                "date": "2026-03-07",
+                "result": "win",
+                "opponentName": "Maximo Zeitune"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 7,
+                "value": 5,
+                "label": "08.03.2026 (win vs Luciano Emanuel Ambrogi)",
+                "date": "2026-03-08",
+                "result": "win",
+                "opponentName": "Luciano Emanuel Ambrogi"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 8,
+                "value": 6,
+                "label": "10.03.2026 (win vs Daniel Elahi Galan)",
+                "date": "2026-03-10",
+                "result": "win",
+                "opponentName": "Daniel Elahi Galan"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 9,
+                "value": 5,
+                "label": "12.03.2026 (lost vs Thiago Moura Monteiro)",
+                "date": "2026-03-12",
+                "result": "lost",
+                "opponentName": "Thiago Moura Monteiro"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 10,
+                "value": 4,
+                "label": "16.03.2026 (lost vs Thiago Agustin Tirante)",
+                "date": "2026-03-16",
+                "result": "lost",
+                "opponentName": "Thiago Agustin Tirante"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 11,
+                "value": 5,
+                "label": "30.03.2026 (win vs Ivan Lopez Martos)",
+                "date": "2026-03-30",
+                "result": "win",
+                "opponentName": "Ivan Lopez Martos"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 12,
+                "value": 4,
+                "label": "01.04.2026 (lost vs Dali Blanch)",
+                "date": "2026-04-01",
+                "result": "lost",
+                "opponentName": "Dali Blanch"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 13,
+                "value": 5,
+                "label": "05.04.2026 (win vs Asier Meneses Perny)",
+                "date": "2026-04-05",
+                "result": "win",
+                "opponentName": "Asier Meneses Perny"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 14,
+                "value": 6,
+                "label": "06.04.2026 (win vs Inaki Montes-De La Torre)",
+                "date": "2026-04-06",
+                "result": "win",
+                "opponentName": "Inaki Montes-De La Torre"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 15,
+                "value": 5,
+                "label": "07.04.2026 (lost vs Roman Safiullin)",
+                "date": "2026-04-07",
+                "result": "lost",
+                "opponentName": "Roman Safiullin"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 16,
+                "value": 6,
+                "label": "11.04.2026 (win vs Alexander Shevchenko)",
+                "date": "2026-04-11",
+                "result": "win",
+                "opponentName": "Alexander Shevchenko"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 17,
+                "value": 7,
+                "label": "12.04.2026 (win vs Sumit Nagal)",
+                "date": "2026-04-12",
+                "result": "win",
+                "opponentName": "Sumit Nagal"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 18,
+                "value": 6,
+                "label": "14.04.2026 (lost vs Flavio Cobolli)",
+                "date": "2026-04-14",
+                "result": "lost",
+                "opponentName": "Flavio Cobolli"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 19,
+                "value": 7,
+                "label": "20.04.2026 (win vs Luca Van Assche)",
+                "date": "2026-04-20",
+                "result": "win",
+                "opponentName": "Luca Van Assche"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 20,
+                "value": 6,
+                "label": "21.04.2026 (lost vs Benjamin Bonzi)",
+                "date": "2026-04-21",
+                "result": "lost",
+                "opponentName": "Benjamin Bonzi"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 21,
+                "value": 7,
+                "label": "27.04.2026 (win vs Billy Harris)",
+                "date": "2026-04-27",
+                "result": "win",
+                "opponentName": "Billy Harris"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 22,
+                "value": 6,
+                "label": "29.04.2026 (lost vs Matthew William Donald)",
+                "date": "2026-04-29",
+                "result": "lost",
+                "opponentName": "Matthew William Donald"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 23,
+                "value": 7,
+                "label": "13.05.2026 (win vs Emanuel Ivanisevic)",
+                "date": "2026-05-13",
+                "result": "win",
+                "opponentName": "Emanuel Ivanisevic"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 24,
+                "value": 6,
+                "label": "14.05.2026 (lost vs Lukas Neumayer)",
+                "date": "2026-05-14",
+                "result": "lost",
+                "opponentName": "Lukas Neumayer"
+              },
+              {
+                "index": 30,
+                "sequenceIndex": 25,
+                "value": 5,
+                "label": "17.05.2026 (lost vs Frances Tiafoe)",
+                "date": "2026-05-17",
+                "result": "lost",
+                "opponentName": "Frances Tiafoe"
+              },
+              {
+                "index": 31,
+                "sequenceIndex": 26,
+                "value": 6,
+                "label": "25.05.2026 (win vs Raul Brancaccio)",
+                "date": "2026-05-25",
+                "result": "win",
+                "opponentName": "Raul Brancaccio"
+              },
+              {
+                "index": 32,
+                "sequenceIndex": 27,
+                "value": 7,
+                "label": "27.05.2026 (win vs Samuele Pieri)",
+                "date": "2026-05-27",
+                "result": "win",
+                "opponentName": "Samuele Pieri"
+              },
+              {
+                "index": 33,
+                "sequenceIndex": 28,
+                "value": 6,
+                "label": "29.05.2026 (lost vs Stefano Travaglia)",
+                "date": "2026-05-29",
+                "result": "lost",
+                "opponentName": "Stefano Travaglia"
+              },
+              {
+                "index": 34,
+                "sequenceIndex": 29,
+                "value": 7,
+                "label": "02.06.2026 (win vs Max Wiskandt)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Max Wiskandt"
+              },
+              {
+                "index": 35,
+                "sequenceIndex": 30,
+                "value": 8,
+                "label": "04.06.2026 (win vs Joao Lucas Reis Da Silva)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Joao Lucas Reis Da Silva"
+              }
+            ],
+            "latestValue": 8,
+            "minValue": 0,
+            "maxValue": 8
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 0.4,
+              "avgAces": 0.4,
+              "doubleFaults": 1.2,
+              "avgDoubleFaults": 1.2,
+              "firstServePct": 71.6,
+              "firstServeWonPct": 62.2,
+              "secondServeWonPct": 60.6,
+              "returnPointsWonPct": 43.2,
+              "breakPointsConvertedPct": 44.2,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 19,
+              "breakPointsToConvert": 43,
+              "breakPointChancesPerMatch": 8.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 19,
+                "bpChances": 43,
+                "bpConvertedPct": 44.2,
+                "bpChancesPerMatch": 8.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 19,
+                "bpChances": 43,
+                "bpConvertedPct": 44.2,
+                "bpChancesPerMatch": 8.6
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Diego Dedura",
+            "matches": [
+              {
+                "opponentName": "Joao Lucas Reis Da Silva",
+                "event": "Bad Rappenau",
+                "matchDateLabel": "2026-06-04",
+                "isoDate": "2026-06-04",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "7-6 12 , 7-6 6",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/diego-dedura-palomero-VS-joao-lucas-reis-da-silva/bad-rappenau-challenger-2026/",
+                "matchId": "tl-2026-06-04-bad-rappenau-challenger-2026-diego-dedura-vs-joao-lucas-reis-da-silva",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "57/84 (68%)",
+                      "made": 57,
+                      "attempts": 84,
+                      "pct": 68
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "41/57 (72%)",
+                      "made": 41,
+                      "attempts": 57,
+                      "pct": 72
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "18/27 (67%)",
+                      "made": 18,
+                      "attempts": 27,
+                      "pct": 67
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/5 (40%)",
+                      "made": 2,
+                      "attempts": 5,
+                      "pct": 40
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "90/178 (51%)",
+                      "made": 90,
+                      "attempts": 178,
+                      "pct": 51
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "31/94 (33%)",
+                      "made": 31,
+                      "attempts": 94,
+                      "pct": 33
+                    }
+                  ],
+                  "firstServePct": 68,
+                  "firstServeIn": "57/84 (68%)",
+                  "firstServeWonPct": 72,
+                  "firstServePointsWon": "41/57 (72%)",
+                  "secondServeWonPct": 67,
+                  "secondServePointsWon": "18/27 (67%)",
+                  "aces": 1,
+                  "breakPointsConverted": "2/5 (40%)",
+                  "breakPointsConvertedPct": 40,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 51,
+                  "totalPointsWon": "90/178 (51%)",
+                  "returnPointsWonPct": 33,
+                  "returnPointsWon": "31/94 (33%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "57/84 (68%)",
+                      "made": 57,
+                      "attempts": 84,
+                      "pct": 68
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "41/57 (72%)",
+                      "made": 41,
+                      "attempts": 57,
+                      "pct": 72
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "18/27 (67%)",
+                      "made": 18,
+                      "attempts": 27,
+                      "pct": 67
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/5 (40%)",
+                      "made": 2,
+                      "attempts": 5,
+                      "pct": 40
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "90/178 (51%)",
+                      "made": 90,
+                      "attempts": 178,
+                      "pct": 51
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "31/94 (33%)",
+                      "made": 31,
+                      "attempts": 94,
+                      "pct": 33
+                    }
+                  ],
+                  "firstServePct": 68,
+                  "firstServeIn": "57/84 (68%)",
+                  "firstServeWonPct": 72,
+                  "firstServePointsWon": "41/57 (72%)",
+                  "secondServeWonPct": 67,
+                  "secondServePointsWon": "18/27 (67%)",
+                  "aces": 1,
+                  "breakPointsConverted": "2/5 (40%)",
+                  "breakPointsConvertedPct": 40,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 51,
+                  "totalPointsWon": "90/178 (51%)",
+                  "returnPointsWonPct": 33,
+                  "returnPointsWon": "31/94 (33%)"
+                }
+              },
+              {
+                "opponentName": "Max Wiskandt",
+                "event": "Bad Rappenau",
+                "matchDateLabel": "2026-06-02",
+                "isoDate": "2026-06-02",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "6-1, 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/diego-dedura-palomero-VS-max-wiskandt/bad-rappenau-challenger-2026/",
+                "matchId": "tl-2026-06-02-bad-rappenau-challenger-2026-diego-dedura-vs-max-wiskandt",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "45/61 (74%)",
+                      "made": 45,
+                      "attempts": 61,
+                      "pct": 74
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "28/45 (62%)",
+                      "made": 28,
+                      "attempts": 45,
+                      "pct": 62
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/16 (63%)",
+                      "made": 10,
+                      "attempts": 16,
+                      "pct": 63
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/9 (56%)",
+                      "made": 5,
+                      "attempts": 9,
+                      "pct": 56
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "66/113 (58%)",
+                      "made": 66,
+                      "attempts": 113,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "28/52 (54%)",
+                      "made": 28,
+                      "attempts": 52,
+                      "pct": 54
+                    }
+                  ],
+                  "firstServePct": 74,
+                  "firstServeIn": "45/61 (74%)",
+                  "firstServeWonPct": 62,
+                  "firstServePointsWon": "28/45 (62%)",
+                  "secondServeWonPct": 63,
+                  "secondServePointsWon": "10/16 (63%)",
+                  "aces": 0,
+                  "breakPointsConverted": "5/9 (56%)",
+                  "breakPointsConvertedPct": 56,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "66/113 (58%)",
+                  "returnPointsWonPct": 54,
+                  "returnPointsWon": "28/52 (54%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "45/61 (74%)",
+                      "made": 45,
+                      "attempts": 61,
+                      "pct": 74
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "28/45 (62%)",
+                      "made": 28,
+                      "attempts": 45,
+                      "pct": 62
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/16 (63%)",
+                      "made": 10,
+                      "attempts": 16,
+                      "pct": 63
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/9 (56%)",
+                      "made": 5,
+                      "attempts": 9,
+                      "pct": 56
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "66/113 (58%)",
+                      "made": 66,
+                      "attempts": 113,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "28/52 (54%)",
+                      "made": 28,
+                      "attempts": 52,
+                      "pct": 54
+                    }
+                  ],
+                  "firstServePct": 74,
+                  "firstServeIn": "45/61 (74%)",
+                  "firstServeWonPct": 62,
+                  "firstServePointsWon": "28/45 (62%)",
+                  "secondServeWonPct": 63,
+                  "secondServePointsWon": "10/16 (63%)",
+                  "aces": 0,
+                  "breakPointsConverted": "5/9 (56%)",
+                  "breakPointsConvertedPct": 56,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "66/113 (58%)",
+                  "returnPointsWonPct": 54,
+                  "returnPointsWon": "28/52 (54%)"
+                }
+              },
+              {
+                "opponentName": "Stefano Travaglia",
+                "event": "Vicenza Challenger",
+                "matchDateLabel": "2026-05-29",
+                "isoDate": "2026-05-29",
+                "surface": "Clay",
+                "round": "1/4",
+                "result": "lost",
+                "score": "6-2, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/stefano-travaglia-VS-diego-dedura-palomero/vicenza-challenger-2026/",
+                "matchId": "tl-2026-05-29-vicenza-challenger-2026-stefano-travaglia-vs-diego-dedura",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "46/68 (68%)",
+                      "made": 46,
+                      "attempts": 68,
+                      "pct": 68
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "19/46 (41%)",
+                      "made": 19,
+                      "attempts": 46,
+                      "pct": 41
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "11/22 (50%)",
+                      "made": 11,
+                      "attempts": 22,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/3 (67%)",
+                      "made": 2,
+                      "attempts": 3,
+                      "pct": 67
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "45/109 (41%)",
+                      "made": 45,
+                      "attempts": 109,
+                      "pct": 41
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "15/41 (37%)",
+                      "made": 15,
+                      "attempts": 41,
+                      "pct": 37
+                    }
+                  ],
+                  "firstServePct": 68,
+                  "firstServeIn": "46/68 (68%)",
+                  "firstServeWonPct": 41,
+                  "firstServePointsWon": "19/46 (41%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "11/22 (50%)",
+                  "aces": 0,
+                  "breakPointsConverted": "2/3 (67%)",
+                  "breakPointsConvertedPct": 67,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 41,
+                  "totalPointsWon": "45/109 (41%)",
+                  "returnPointsWonPct": 37,
+                  "returnPointsWon": "15/41 (37%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "46/68 (68%)",
+                      "made": 46,
+                      "attempts": 68,
+                      "pct": 68
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "19/46 (41%)",
+                      "made": 19,
+                      "attempts": 46,
+                      "pct": 41
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "11/22 (50%)",
+                      "made": 11,
+                      "attempts": 22,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/3 (67%)",
+                      "made": 2,
+                      "attempts": 3,
+                      "pct": 67
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "45/109 (41%)",
+                      "made": 45,
+                      "attempts": 109,
+                      "pct": 41
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "15/41 (37%)",
+                      "made": 15,
+                      "attempts": 41,
+                      "pct": 37
+                    }
+                  ],
+                  "firstServePct": 68,
+                  "firstServeIn": "46/68 (68%)",
+                  "firstServeWonPct": 41,
+                  "firstServePointsWon": "19/46 (41%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "11/22 (50%)",
+                  "aces": 0,
+                  "breakPointsConverted": "2/3 (67%)",
+                  "breakPointsConvertedPct": 67,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 41,
+                  "totalPointsWon": "45/109 (41%)",
+                  "returnPointsWonPct": 37,
+                  "returnPointsWon": "15/41 (37%)"
+                }
+              },
+              {
+                "opponentName": "Samuele Pieri",
+                "event": "Vicenza Challenger",
+                "matchDateLabel": "2026-05-27",
+                "isoDate": "2026-05-27",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "6-2, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/diego-dedura-palomero-VS-samuele-pieri/vicenza-challenger-2026/",
+                "matchId": "tl-2026-05-27-vicenza-challenger-2026-diego-dedura-vs-samuele-pieri",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "36/49 (73%)",
+                      "made": 36,
+                      "attempts": 49,
+                      "pct": 73
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "28/36 (78%)",
+                      "made": 28,
+                      "attempts": 36,
+                      "pct": 78
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/13 (69%)",
+                      "made": 9,
+                      "attempts": 13,
+                      "pct": 69
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/9 (33%)",
+                      "made": 3,
+                      "attempts": 9,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "63/108 (58%)",
+                      "made": 63,
+                      "attempts": 108,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "26/59 (44%)",
+                      "made": 26,
+                      "attempts": 59,
+                      "pct": 44
+                    }
+                  ],
+                  "firstServePct": 73,
+                  "firstServeIn": "36/49 (73%)",
+                  "firstServeWonPct": 78,
+                  "firstServePointsWon": "28/36 (78%)",
+                  "secondServeWonPct": 69,
+                  "secondServePointsWon": "9/13 (69%)",
+                  "aces": 0,
+                  "breakPointsConverted": "3/9 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "63/108 (58%)",
+                  "returnPointsWonPct": 44,
+                  "returnPointsWon": "26/59 (44%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "36/49 (73%)",
+                      "made": 36,
+                      "attempts": 49,
+                      "pct": 73
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "28/36 (78%)",
+                      "made": 28,
+                      "attempts": 36,
+                      "pct": 78
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/13 (69%)",
+                      "made": 9,
+                      "attempts": 13,
+                      "pct": 69
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/9 (33%)",
+                      "made": 3,
+                      "attempts": 9,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "63/108 (58%)",
+                      "made": 63,
+                      "attempts": 108,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "26/59 (44%)",
+                      "made": 26,
+                      "attempts": 59,
+                      "pct": 44
+                    }
+                  ],
+                  "firstServePct": 73,
+                  "firstServeIn": "36/49 (73%)",
+                  "firstServeWonPct": 78,
+                  "firstServePointsWon": "28/36 (78%)",
+                  "secondServeWonPct": 69,
+                  "secondServePointsWon": "9/13 (69%)",
+                  "aces": 0,
+                  "breakPointsConverted": "3/9 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "63/108 (58%)",
+                  "returnPointsWonPct": 44,
+                  "returnPointsWon": "26/59 (44%)"
+                }
+              },
+              {
+                "opponentName": "Raul Brancaccio",
+                "event": "Vicenza Challenger",
+                "matchDateLabel": "2026-05-25",
+                "isoDate": "2026-05-25",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "6-0, 5-7, 6-2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/diego-dedura-palomero-VS-raul-brancaccio/vicenza-challenger-2026/",
+                "matchId": "tl-2026-05-25-vicenza-challenger-2026-diego-dedura-vs-raul-brancaccio",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "73/97 (75%)",
+                      "made": 73,
+                      "attempts": 97,
+                      "pct": 75
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "42/73 (58%)",
+                      "made": 42,
+                      "attempts": 73,
+                      "pct": 58
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/24 (54%)",
+                      "made": 13,
+                      "attempts": 24,
+                      "pct": 54
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "7/17 (41%)",
+                      "made": 7,
+                      "attempts": 17,
+                      "pct": 41
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "100/191 (52%)",
+                      "made": 100,
+                      "attempts": 191,
+                      "pct": 52
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "45/94 (48%)",
+                      "made": 45,
+                      "attempts": 94,
+                      "pct": 48
+                    }
+                  ],
+                  "firstServePct": 75,
+                  "firstServeIn": "73/97 (75%)",
+                  "firstServeWonPct": 58,
+                  "firstServePointsWon": "42/73 (58%)",
+                  "secondServeWonPct": 54,
+                  "secondServePointsWon": "13/24 (54%)",
+                  "aces": 1,
+                  "breakPointsConverted": "7/17 (41%)",
+                  "breakPointsConvertedPct": 41,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 52,
+                  "totalPointsWon": "100/191 (52%)",
+                  "returnPointsWonPct": 48,
+                  "returnPointsWon": "45/94 (48%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "73/97 (75%)",
+                      "made": 73,
+                      "attempts": 97,
+                      "pct": 75
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "42/73 (58%)",
+                      "made": 42,
+                      "attempts": 73,
+                      "pct": 58
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/24 (54%)",
+                      "made": 13,
+                      "attempts": 24,
+                      "pct": 54
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "7/17 (41%)",
+                      "made": 7,
+                      "attempts": 17,
+                      "pct": 41
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "100/191 (52%)",
+                      "made": 100,
+                      "attempts": 191,
+                      "pct": 52
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "45/94 (48%)",
+                      "made": 45,
+                      "attempts": 94,
+                      "pct": 48
+                    }
+                  ],
+                  "firstServePct": 75,
+                  "firstServeIn": "73/97 (75%)",
+                  "firstServeWonPct": 58,
+                  "firstServePointsWon": "42/73 (58%)",
+                  "secondServeWonPct": 54,
+                  "secondServePointsWon": "13/24 (54%)",
+                  "aces": 1,
+                  "breakPointsConverted": "7/17 (41%)",
+                  "breakPointsConvertedPct": 41,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 52,
+                  "totalPointsWon": "100/191 (52%)",
+                  "returnPointsWonPct": 48,
+                  "returnPointsWon": "45/94 (48%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 73.4,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.8,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.58,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 73.4,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/atp/diego-dedura-palomero/"
+          }
+        }
       }
     ]
   },
@@ -44655,6 +47295,9 @@ const rawTennisGames = [
         "evPer100": 7.2,
         "netEvPer100": 5.2,
         "feePer100": 2,
+        "rawEdgePct": 3.1,
+        "rawEvPer100": 7.2,
+        "rawNetEvPer100": 5.2,
         "valueIssue": "Picked side is overpriced; value board flips to Carole Monnet because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -44957,9 +47600,19 @@ const rawTennisGames = [
     "players": [
       {
         "name": "Leyre Romero Gormaz",
-        "ranking": null,
+        "ranking": {
+          "name": "Leyre Romero Gormaz",
+          "rank": 158,
+          "points": 487,
+          "age": 24,
+          "country": "Spain",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:33.461206+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/leyre-romero-gormaz/"
+        },
         "qualityName": "Leyre Romero Gormaz",
-        "profile": "Rank not joined | adj form 59",
+        "profile": "Live rank #158 | Spain | age 24 | adj form 59",
         "modelPct": 53,
         "weakness": {
           "name": "Leyre Romero Gormaz",
@@ -44991,9 +47644,19 @@ const rawTennisGames = [
       },
       {
         "name": "Carole Monnet",
-        "ranking": null,
+        "ranking": {
+          "name": "Carole Monnet",
+          "rank": 196,
+          "points": 377,
+          "age": 24,
+          "country": "France",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:13.119224+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/carole-monnet/"
+        },
         "qualityName": "Carole Monnet",
-        "profile": "Rank not joined | adj form 54",
+        "profile": "Live rank #196 | France | age 24 | adj form 54",
         "modelPct": 47,
         "weakness": {
           "name": "Carole Monnet",
@@ -45044,8 +47707,8 @@ const rawTennisGames = [
     "basePickName": "Alexandra Eala",
     "modelSource": "Tennis warehouse score model",
     "modelSplit": false,
-    "confidence": 55,
-    "volatility": 54,
+    "confidence": 57,
+    "volatility": 51,
     "tags": [
       "Grass",
       "WTA Birmingham",
@@ -45123,14 +47786,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Alexandra Eala",
-        "confidence": 71,
-        "modelPct": 55,
+        "confidence": 72,
+        "modelPct": 57,
         "label": "Live to win a set"
       },
       {
         "name": "Mananchaya Sawangkaew",
-        "confidence": 61,
-        "modelPct": 45,
+        "confidence": 58,
+        "modelPct": 43,
         "label": "Needs early hold pressure"
       }
     ],
@@ -45140,12 +47803,15 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Mananchaya Sawangkaew",
         "americanOdds": 158,
-        "modelPct": 45,
+        "modelPct": 43,
         "impliedPct": 38.8,
-        "edgePct": 6.2,
-        "evPer100": 16.1,
-        "netEvPer100": 14.1,
+        "edgePct": 4.2,
+        "evPer100": 10.9,
+        "netEvPer100": 8.9,
         "feePer100": 2,
+        "rawEdgePct": 4.2,
+        "rawEvPer100": 10.9,
+        "rawNetEvPer100": 8.9,
         "valueIssue": "Picked side is overpriced; value board flips to Mananchaya Sawangkaew because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -45181,8 +47847,8 @@ const rawTennisGames = [
       "setWin": [
         {
           "name": "Alexandra Eala",
-          "confidence": 71,
-          "modelPct": 55,
+          "confidence": 72,
+          "modelPct": 57,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -45190,8 +47856,8 @@ const rawTennisGames = [
         },
         {
           "name": "Mananchaya Sawangkaew",
-          "confidence": 61,
-          "modelPct": 45,
+          "confidence": 58,
+          "modelPct": 43,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -45287,11 +47953,11 @@ const rawTennisGames = [
         "selection": "Mananchaya Sawangkaew",
         "line": null,
         "americanOdds": 158,
-        "modelPct": 45,
+        "modelPct": 43,
         "impliedPct": 38.8,
-        "edgePct": 6.2,
-        "evPer100": 16.1,
-        "netEvPer100": 14.1,
+        "edgePct": 4.2,
+        "evPer100": 10.9,
+        "netEvPer100": 8.9,
         "grade": "Raw ML edge only",
         "issue": "Picked side is overpriced; value board flips to Mananchaya Sawangkaew because that side has the better posted-price edge.",
         "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
@@ -45316,22 +47982,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Alexandra Eala 71% / Mananchaya Sawangkaew 61%",
+        "selection": "Alexandra Eala 72% / Mananchaya Sawangkaew 58%",
         "rows": [
           {
             "name": "Alexandra Eala",
-            "confidence": 71,
-            "modelPct": 55,
+            "confidence": 72,
+            "modelPct": 57,
             "label": "Live to win a set"
           },
           {
             "name": "Mananchaya Sawangkaew",
-            "confidence": 61,
-            "modelPct": 45,
+            "confidence": 58,
+            "modelPct": 43,
             "label": "Needs early hold pressure"
           }
         ],
-        "confidence": 71,
+        "confidence": 72,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -45361,8 +48027,8 @@ const rawTennisGames = [
           "americanLabel": "-210",
           "impliedPct": 67.7,
           "decimalOdds": 1.476,
-          "modelPct": 55,
-          "edgePct": -12.7,
+          "modelPct": 57,
+          "edgePct": -10.7,
           "priceBand": "Moderate favorite",
           "grossProfitPct": 47.6,
           "grossPayoutMultiple": 1.476,
@@ -45375,8 +48041,8 @@ const rawTennisGames = [
           "americanLabel": "+158",
           "impliedPct": 38.8,
           "decimalOdds": 2.58,
-          "modelPct": 45,
-          "edgePct": 6.2,
+          "modelPct": 43,
+          "edgePct": 4.2,
           "priceBand": "Underdog",
           "grossProfitPct": 158,
           "grossPayoutMultiple": 2.58,
@@ -45390,8 +48056,8 @@ const rawTennisGames = [
         "americanLabel": "-210",
         "impliedPct": 67.7,
         "decimalOdds": 1.476,
-        "modelPct": 55,
-        "edgePct": -12.7,
+        "modelPct": 57,
+        "edgePct": -10.7,
         "priceBand": "Moderate favorite",
         "grossProfitPct": 47.6,
         "grossPayoutMultiple": 1.476,
@@ -45428,7 +48094,7 @@ const rawTennisGames = [
       "totalLean": "No total line",
       "mlValue": "Alexandra Eala -210 / Mananchaya Sawangkaew +158",
       "marketNote": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
-      "noVigNote": "Model 55% vs DraftKings Sportsbook implied 67.7% (-12.7 pts)."
+      "noVigNote": "Model 57% vs DraftKings Sportsbook implied 67.7% (-10.7 pts)."
     },
     "h2hUrl": null,
     "researchLinks": [
@@ -45454,14 +48120,14 @@ const rawTennisGames = [
           "points": 1340,
           "age": 21,
           "country": "Philippines",
-          "tour": "WTA",
-          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/7759/alexandra-eala",
-          "asOf": "2026-06-05"
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:04.064133+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/alexandra-eala/"
         },
         "qualityName": "Alexandra Eala",
         "profile": "Live rank #37 | Philippines | age 21 | adj form 44",
-        "modelPct": 55,
+        "modelPct": 57,
         "weakness": {
           "name": "Alexandra Eala",
           "serviceHoldPct": null,
@@ -45492,10 +48158,20 @@ const rawTennisGames = [
       },
       {
         "name": "Mananchaya Sawangkaew",
-        "ranking": null,
+        "ranking": {
+          "name": "Mananchaya Sawangkaew",
+          "rank": 173,
+          "points": 448,
+          "age": 23,
+          "country": "Thailand",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:43.838944+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/mananchaya-sawangkaew/"
+        },
         "qualityName": "Mananchaya Sawangkaew",
-        "profile": "Rank not joined | adj form 74",
-        "modelPct": 45,
+        "profile": "Live rank #173 | Thailand | age 23 | adj form 74",
+        "modelPct": 43,
         "weakness": {
           "name": "Mananchaya Sawangkaew",
           "serviceHoldPct": null,
@@ -45948,9 +48624,19 @@ const rawTennisGames = [
     "players": [
       {
         "name": "Barbora Palicova",
-        "ranking": null,
+        "ranking": {
+          "name": "Barbora Palicová",
+          "rank": 265,
+          "points": 266,
+          "age": 22,
+          "country": "Czech Republic",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T22:53:31.844506+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/barbora-palicova/"
+        },
         "qualityName": "Barbora Palicova",
-        "profile": "Rank not joined | adj form 58",
+        "profile": "Live rank #265 | Czech Republic | age 22 | adj form 58",
         "modelPct": 51,
         "weakness": {
           "name": "Barbora Palicova",
@@ -45982,9 +48668,19 @@ const rawTennisGames = [
       },
       {
         "name": "Elina Avanesyan",
-        "ranking": null,
+        "ranking": {
+          "name": "Elina Avanesyan",
+          "rank": 321,
+          "points": 212,
+          "age": 23,
+          "country": "Armenia",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T22:53:36.079208+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/elina-avanesyan/"
+        },
         "qualityName": "Elina Avanesyan",
-        "profile": "Rank not joined | adj form 57",
+        "profile": "Live rank #321 | Armenia | age 23 | adj form 57",
         "modelPct": 49,
         "weakness": {
           "name": "Elina Avanesyan",
@@ -46476,7 +49172,286 @@ const rawTennisGames = [
             "sourceUrl": "https://www.tennislive.net/atp/andre-ilagan/",
             "asOf": "2026-06-04T22:53:29.961649+00:00"
           },
-          "formChart": null,
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/andre-ilagan-VS-yuta-shimizu/tyler-challenger-2026/",
+            "capturedAt": "2026-06-05T02:48:05.615354+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 1,
+                "value": 1,
+                "label": "05.03.2026 (win vs Daniil Sarksian)",
+                "date": "2026-03-05",
+                "result": "win",
+                "opponentName": "Daniil Sarksian"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 2,
+                "value": 2,
+                "label": "06.03.2026 (win vs Jeremy Schifris)",
+                "date": "2026-03-06",
+                "result": "win",
+                "opponentName": "Jeremy Schifris"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 3,
+                "value": 3,
+                "label": "07.03.2026 (win vs Fitriadi M Rifqi)",
+                "date": "2026-03-07",
+                "result": "win",
+                "opponentName": "Fitriadi M Rifqi"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 4,
+                "value": 2,
+                "label": "08.03.2026 (lost vs Koki Matsuda)",
+                "date": "2026-03-08",
+                "result": "lost",
+                "opponentName": "Koki Matsuda"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 5,
+                "value": 3,
+                "label": "11.03.2026 (win vs Yuttana Charoenphon)",
+                "date": "2026-03-11",
+                "result": "win",
+                "opponentName": "Yuttana Charoenphon"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 6,
+                "value": 4,
+                "label": "12.03.2026 (win vs Fitriadi M Rifqi)",
+                "date": "2026-03-12",
+                "result": "win",
+                "opponentName": "Fitriadi M Rifqi"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 7,
+                "value": 5,
+                "label": "13.03.2026 (win vs Filip Peliwo)",
+                "date": "2026-03-13",
+                "result": "win",
+                "opponentName": "Filip Peliwo"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 8,
+                "value": 6,
+                "label": "14.03.2026 (win vs Matthew Dellavedova)",
+                "date": "2026-03-14",
+                "result": "win",
+                "opponentName": "Matthew Dellavedova"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 9,
+                "value": 5,
+                "label": "15.03.2026 (lost vs Jie Cui)",
+                "date": "2026-03-15",
+                "result": "lost",
+                "opponentName": "Jie Cui"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 10,
+                "value": 6,
+                "label": "17.03.2026 (win vs Weiwen Pan)",
+                "date": "2026-03-17",
+                "result": "win",
+                "opponentName": "Weiwen Pan"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 11,
+                "value": 5,
+                "label": "19.03.2026 (lost vs Rigele Te)",
+                "date": "2026-03-19",
+                "result": "lost",
+                "opponentName": "Rigele Te"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 12,
+                "value": 4,
+                "label": "24.03.2026 (lost vs James McCabe)",
+                "date": "2026-03-24",
+                "result": "lost",
+                "opponentName": "James McCabe"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 13,
+                "value": 5,
+                "label": "31.03.2026 (win vs Yuta Shimizu)",
+                "date": "2026-03-31",
+                "result": "win",
+                "opponentName": "Yuta Shimizu"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 14,
+                "value": 6,
+                "label": "02.04.2026 (win vs Yuto Oki)",
+                "date": "2026-04-02",
+                "result": "win",
+                "opponentName": "Yuto Oki"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 15,
+                "value": 5,
+                "label": "03.04.2026 (lost vs Liam Broady)",
+                "date": "2026-04-03",
+                "result": "lost",
+                "opponentName": "Liam Broady"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 16,
+                "value": 4,
+                "label": "19.04.2026 (lost vs Kasidit Samrej)",
+                "date": "2026-04-19",
+                "result": "lost",
+                "opponentName": "Kasidit Samrej"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 17,
+                "value": 5,
+                "label": "26.04.2026 (win vs Xing Dao Chen)",
+                "date": "2026-04-26",
+                "result": "win",
+                "opponentName": "Xing Dao Chen"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 18,
+                "value": 6,
+                "label": "27.04.2026 (win vs Kody Pearson)",
+                "date": "2026-04-27",
+                "result": "win",
+                "opponentName": "Kody Pearson"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 19,
+                "value": 7,
+                "label": "29.04.2026 (win vs James McCabe)",
+                "date": "2026-04-29",
+                "result": "win",
+                "opponentName": "James McCabe"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 20,
+                "value": 6,
+                "label": "30.04.2026 (lost vs Bu Yunchaokete)",
+                "date": "2026-04-30",
+                "result": "lost",
+                "opponentName": "Bu Yunchaokete"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 21,
+                "value": 7,
+                "label": "03.05.2026 (win vs Linang Xiao)",
+                "date": "2026-05-03",
+                "result": "win",
+                "opponentName": "Linang Xiao"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 22,
+                "value": 8,
+                "label": "04.05.2026 (win vs Hiroki Moriya)",
+                "date": "2026-05-04",
+                "result": "win",
+                "opponentName": "Hiroki Moriya"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 23,
+                "value": 9,
+                "label": "05.05.2026 (win vs Jason Jung)",
+                "date": "2026-05-05",
+                "result": "win",
+                "opponentName": "Jason Jung"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 24,
+                "value": 8,
+                "label": "06.05.2026 (lost vs Dane Sweeny)",
+                "date": "2026-05-06",
+                "result": "lost",
+                "opponentName": "Dane Sweeny"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 25,
+                "value": 9,
+                "label": "25.05.2026 (win vs Yasutaka Uchiyama)",
+                "date": "2026-05-25",
+                "result": "win",
+                "opponentName": "Yasutaka Uchiyama"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 26,
+                "value": 10,
+                "label": "29.05.2026 (win vs Enzo Aguiard)",
+                "date": "2026-05-29",
+                "result": "win",
+                "opponentName": "Enzo Aguiard"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 27,
+                "value": 11,
+                "label": "30.05.2026 (win vs Aidan Mayo)",
+                "date": "2026-05-30",
+                "result": "win",
+                "opponentName": "Aidan Mayo"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 28,
+                "value": 10,
+                "label": "30.05.2026 (lost vs Colton Smith)",
+                "date": "2026-05-30",
+                "result": "lost",
+                "opponentName": "Colton Smith"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 29,
+                "value": 11,
+                "label": "03.06.2026 (win vs Fajing Sun)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Fajing Sun"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 30,
+                "value": 12,
+                "label": "04.06.2026 (win vs Edas Butvilas)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Edas Butvilas"
+              }
+            ],
+            "latestValue": 12,
+            "minValue": 1,
+            "maxValue": 12
+          },
           "expectedStats": {
             "source": "TennisLive recent-match stats",
             "matches": 5,
@@ -47451,7 +50426,286 @@ const rawTennisGames = [
             "sourceUrl": "https://www.tennislive.net/atp/yuta-shimizu/",
             "asOf": "2026-06-04T22:53:54.347580+00:00"
           },
-          "formChart": null,
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/andre-ilagan-VS-yuta-shimizu/tyler-challenger-2026/",
+            "capturedAt": "2026-06-05T02:48:05.615354+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 1,
+                "value": -1,
+                "label": "06.11.2025 (lost vs Kaichi Uchida)",
+                "date": "2025-11-06",
+                "result": "lost",
+                "opponentName": "Kaichi Uchida"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 2,
+                "value": -2,
+                "label": "10.11.2025 (lost vs Yu Hsiou Hsu)",
+                "date": "2025-11-10",
+                "result": "lost",
+                "opponentName": "Yu Hsiou Hsu"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 3,
+                "value": -1,
+                "label": "16.11.2025 (win vs Yusuke Takahashi)",
+                "date": "2025-11-16",
+                "result": "win",
+                "opponentName": "Yusuke Takahashi"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 4,
+                "value": -2,
+                "label": "18.11.2025 (lost vs Yusuke Kusuhara)",
+                "date": "2025-11-18",
+                "result": "lost",
+                "opponentName": "Yusuke Kusuhara"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 5,
+                "value": -1,
+                "label": "06.01.2026 (win vs Taisei Ichikawa)",
+                "date": "2026-01-06",
+                "result": "win",
+                "opponentName": "Taisei Ichikawa"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 6,
+                "value": -2,
+                "label": "07.01.2026 (lost vs Marek Gengel)",
+                "date": "2026-01-07",
+                "result": "lost",
+                "opponentName": "Marek Gengel"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 7,
+                "value": -3,
+                "label": "13.01.2026 (lost vs Daniel Michalski)",
+                "date": "2026-01-13",
+                "result": "lost",
+                "opponentName": "Daniel Michalski"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 8,
+                "value": -2,
+                "label": "02.02.2026 (win vs Renta Tokuda)",
+                "date": "2026-02-02",
+                "result": "win",
+                "opponentName": "Renta Tokuda"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 9,
+                "value": -3,
+                "label": "04.02.2026 (lost vs Alex Bolt)",
+                "date": "2026-02-04",
+                "result": "lost",
+                "opponentName": "Alex Bolt"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 10,
+                "value": -2,
+                "label": "23.02.2026 (win vs Lorenzo Carboni)",
+                "date": "2026-02-23",
+                "result": "win",
+                "opponentName": "Lorenzo Carboni"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 11,
+                "value": -3,
+                "label": "25.02.2026 (lost vs Federico Cina)",
+                "date": "2026-02-25",
+                "result": "lost",
+                "opponentName": "Federico Cinà"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 12,
+                "value": -2,
+                "label": "24.03.2026 (win vs Jie Cui)",
+                "date": "2026-03-24",
+                "result": "win",
+                "opponentName": "Jie Cui"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 13,
+                "value": -1,
+                "label": "26.03.2026 (win vs Yu Hsiou Hsu)",
+                "date": "2026-03-26",
+                "result": "win",
+                "opponentName": "Yu Hsiou Hsu"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 14,
+                "value": -2,
+                "label": "27.03.2026 (lost vs Harry Wendelken)",
+                "date": "2026-03-27",
+                "result": "lost",
+                "opponentName": "Harry Wendelken"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 15,
+                "value": -3,
+                "label": "31.03.2026 (lost vs Andre Ilagan)",
+                "date": "2026-03-31",
+                "result": "lost",
+                "opponentName": "Andre Ilagan"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 16,
+                "value": -2,
+                "label": "12.04.2026 (win vs Ben Jones)",
+                "date": "2026-04-12",
+                "result": "win",
+                "opponentName": "Ben Jones"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 17,
+                "value": -3,
+                "label": "13.04.2026 (lost vs Marat Sharipov)",
+                "date": "2026-04-13",
+                "result": "lost",
+                "opponentName": "Marat Sharipov"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 18,
+                "value": -2,
+                "label": "19.04.2026 (win vs Jake Delaney)",
+                "date": "2026-04-19",
+                "result": "win",
+                "opponentName": "Jake Delaney"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 19,
+                "value": -1,
+                "label": "20.04.2026 (win vs Taro Daniel)",
+                "date": "2026-04-20",
+                "result": "win",
+                "opponentName": "Taro Daniel"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 20,
+                "value": 0,
+                "label": "21.04.2026 (win vs Yasutaka Uchiyama)",
+                "date": "2026-04-21",
+                "result": "win",
+                "opponentName": "Yasutaka Uchiyama"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 21,
+                "value": 1,
+                "label": "23.04.2026 (win vs Sho Shimabukuro)",
+                "date": "2026-04-23",
+                "result": "win",
+                "opponentName": "Sho Shimabukuro"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 22,
+                "value": 0,
+                "label": "24.04.2026 (lost vs August Holmgren)",
+                "date": "2026-04-24",
+                "result": "lost",
+                "opponentName": "August Holmgren"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 23,
+                "value": 1,
+                "label": "26.04.2026 (win vs Yuxiang Tian)",
+                "date": "2026-04-26",
+                "result": "win",
+                "opponentName": "Yuxiang Tian"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 24,
+                "value": 2,
+                "label": "27.04.2026 (win vs Yusuke Takahashi)",
+                "date": "2026-04-27",
+                "result": "win",
+                "opponentName": "Yusuke Takahashi"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 25,
+                "value": 1,
+                "label": "29.04.2026 (lost vs Sho Shimabukuro)",
+                "date": "2026-04-29",
+                "result": "lost",
+                "opponentName": "Sho Shimabukuro"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 26,
+                "value": 0,
+                "label": "03.05.2026 (lost vs Evan Zhu)",
+                "date": "2026-05-03",
+                "result": "lost",
+                "opponentName": "Evan Zhu"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 27,
+                "value": 1,
+                "label": "25.05.2026 (win vs Andres Martin)",
+                "date": "2026-05-25",
+                "result": "win",
+                "opponentName": "Andres Martin"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 28,
+                "value": 0,
+                "label": "27.05.2026 (lost vs Bernard Tomic)",
+                "date": "2026-05-27",
+                "result": "lost",
+                "opponentName": "Bernard Tomic"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 29,
+                "value": 1,
+                "label": "03.06.2026 (win vs Dane Sweeny)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Dane Sweeny"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 30,
+                "value": 2,
+                "label": "04.06.2026 (win vs Murphy Cassone)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Murphy Cassone"
+              }
+            ],
+            "latestValue": 2,
+            "minValue": -3,
+            "maxValue": 2
+          },
           "expectedStats": {
             "source": "TennisLive recent-match stats",
             "matches": 5,
@@ -48471,6 +51725,9 @@ const rawTennisGames = [
         "evPer100": 10.8,
         "netEvPer100": 8.8,
         "feePer100": 2,
+        "rawEdgePct": 4.5,
+        "rawEvPer100": 10.8,
+        "rawNetEvPer100": 8.8,
         "valueIssue": "Picked side is overpriced; value board flips to Marvin Moeller because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -51250,8 +54507,8 @@ const rawTennisGames = [
     "basePickName": "Maria Timofeeva",
     "modelSource": "Tennis warehouse score model",
     "modelSplit": false,
-    "confidence": 51,
-    "volatility": 59,
+    "confidence": 55,
+    "volatility": 53,
     "tags": [
       "Clay",
       "WTA Makarska",
@@ -51271,7 +54528,7 @@ const rawTennisGames = [
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
       "liveTrigger": "Wait for a visible service-pressure split before entering.",
-      "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Maria Timofeeva",
@@ -51331,14 +54588,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Maria Timofeeva",
-        "confidence": 70,
-        "modelPct": 51,
+        "confidence": 71,
+        "modelPct": 55,
         "label": "Live to win a set"
       },
       {
         "name": "Yasmine Kabbaj",
-        "confidence": 65,
-        "modelPct": 49,
+        "confidence": 60,
+        "modelPct": 45,
         "label": "Needs early hold pressure"
       }
     ],
@@ -51348,13 +54605,16 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Yasmine Kabbaj",
         "americanOdds": 262,
-        "modelPct": 49,
+        "modelPct": 45,
         "impliedPct": 27.6,
-        "edgePct": 21.4,
-        "evPer100": 77.4,
-        "netEvPer100": 75.4,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Yasmine Kabbaj because that side has the better posted-price edge.",
+        "rawEdgePct": 17.4,
+        "rawEvPer100": 62.9,
+        "rawNetEvPer100": 60.9,
+        "valueIssue": "Outlier dog price on Yasmine Kabbaj; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
         "valueGrade": "Outlier price/manual review",
         "betGrade": false
       },
@@ -51365,7 +54625,7 @@ const rawTennisGames = [
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 21.4,
+        "expectedGames": 20.9,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false
@@ -51375,22 +54635,22 @@ const rawTennisGames = [
         "selection": "Under 9.5",
         "line": 9.5,
         "americanOdds": -185,
-        "expectedGames": 9,
-        "confidence": 59,
+        "expectedGames": 8.8,
+        "confidence": 61,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 59,
-        "evPer100": -9.1,
-        "netEvPer100": -11.1,
-        "valueGrade": "Thin value",
-        "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets.",
+        "modelPct": 61,
+        "evPer100": -6,
+        "netEvPer100": -8,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Maria Timofeeva",
-          "confidence": 70,
-          "modelPct": 51,
+          "confidence": 71,
+          "modelPct": 55,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -51398,8 +54658,8 @@ const rawTennisGames = [
         },
         {
           "name": "Yasmine Kabbaj",
-          "confidence": 65,
-          "modelPct": 49,
+          "confidence": 60,
+          "modelPct": 45,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -51470,8 +54730,8 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 9,
-      "expectedMatchGames": 21.4,
+      "expectedFirstSetGames": 8.8,
+      "expectedMatchGames": 20.9,
       "signalStrength": 4,
       "holdAvg": null,
       "returnGamesAvg": null,
@@ -51495,14 +54755,14 @@ const rawTennisGames = [
         "selection": "Yasmine Kabbaj",
         "line": null,
         "americanOdds": 262,
-        "modelPct": 49,
+        "modelPct": 45,
         "impliedPct": 27.6,
-        "edgePct": 21.4,
-        "evPer100": 77.4,
-        "netEvPer100": 75.4,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "grade": "Outlier price/manual review",
-        "issue": "Picked side is overpriced; value board flips to Yasmine Kabbaj because that side has the better posted-price edge.",
-        "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        "issue": "Outlier dog price on Yasmine Kabbaj; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+        "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
       },
       {
         "marketType": "Total games",
@@ -51515,7 +54775,7 @@ const rawTennisGames = [
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
-        "expectedGames": 21.4,
+        "expectedGames": 20.9,
         "edgeGames": null,
         "confidence": null,
         "grade": "No direction",
@@ -51524,22 +54784,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Maria Timofeeva 70% / Yasmine Kabbaj 65%",
+        "selection": "Maria Timofeeva 71% / Yasmine Kabbaj 60%",
         "rows": [
           {
             "name": "Maria Timofeeva",
-            "confidence": 70,
-            "modelPct": 51,
+            "confidence": 71,
+            "modelPct": 55,
             "label": "Live to win a set"
           },
           {
             "name": "Yasmine Kabbaj",
-            "confidence": 65,
-            "modelPct": 49,
+            "confidence": 60,
+            "modelPct": 45,
             "label": "Needs early hold pressure"
           }
         ],
-        "confidence": 70,
+        "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -51547,12 +54807,12 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Under 9.5",
-        "expectedGames": 9,
-        "confidence": 59,
+        "expectedGames": 8.8,
+        "confidence": 61,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "grade": "Thin value",
-        "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets."
+        "grade": "Actionable live watch",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets."
       }
     ],
     "ensembleValueCase": null,
@@ -51569,8 +54829,8 @@ const rawTennisGames = [
           "americanLabel": "-372",
           "impliedPct": 78.8,
           "decimalOdds": 1.269,
-          "modelPct": 51,
-          "edgePct": -27.8,
+          "modelPct": 55,
+          "edgePct": -23.8,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 26.9,
           "grossPayoutMultiple": 1.269,
@@ -51583,8 +54843,8 @@ const rawTennisGames = [
           "americanLabel": "+262",
           "impliedPct": 27.6,
           "decimalOdds": 3.62,
-          "modelPct": 49,
-          "edgePct": 21.4,
+          "modelPct": 45,
+          "edgePct": 17.4,
           "priceBand": "Underdog",
           "grossProfitPct": 262,
           "grossPayoutMultiple": 3.62,
@@ -51598,8 +54858,8 @@ const rawTennisGames = [
         "americanLabel": "-372",
         "impliedPct": 78.8,
         "decimalOdds": 1.269,
-        "modelPct": 51,
-        "edgePct": -27.8,
+        "modelPct": 55,
+        "edgePct": -23.8,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 26.9,
         "grossPayoutMultiple": 1.269,
@@ -51636,7 +54896,7 @@ const rawTennisGames = [
       "totalLean": "No total line",
       "mlValue": "Maria Timofeeva -372 / Yasmine Kabbaj +262",
       "marketNote": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 51% vs DraftKings Sportsbook implied 78.8% (-27.8 pts)."
+      "noVigNote": "Model 55% vs DraftKings Sportsbook implied 78.8% (-23.8 pts)."
     },
     "h2hUrl": null,
     "researchLinks": [
@@ -51662,14 +54922,14 @@ const rawTennisGames = [
           "points": 678,
           "age": 22,
           "country": "Uzbekistan",
-          "tour": "WTA",
-          "source": "https://www.espn.com/tennis/rankings/_/type/wta/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/10501/maria-timofeeva",
-          "asOf": "2026-06-05"
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T22:53:43.850566+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/maria-timofeeva/"
         },
         "qualityName": "Maria Timofeeva",
         "profile": "Live rank #118 | Uzbekistan | age 22 | adj form 75",
-        "modelPct": 51,
+        "modelPct": 55,
         "weakness": {
           "name": "Maria Timofeeva",
           "serviceHoldPct": null,
@@ -51699,10 +54959,20 @@ const rawTennisGames = [
       },
       {
         "name": "Yasmine Kabbaj",
-        "ranking": null,
+        "ranking": {
+          "name": "Yasmine Kabbaj",
+          "rank": 297,
+          "points": 234,
+          "age": 22,
+          "country": "Morocco",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T22:53:53.708815+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/yasmine-kabbaj/"
+        },
         "qualityName": "Yasmine Kabbaj",
-        "profile": "Rank not joined | adj form 74",
-        "modelPct": 49,
+        "profile": "Live rank #297 | Morocco | age 22 | adj form 74",
+        "modelPct": 45,
         "weakness": {
           "name": "Yasmine Kabbaj",
           "serviceHoldPct": null,
@@ -51751,8 +55021,8 @@ const rawTennisGames = [
     "basePickName": "Noma Noha Akugue",
     "modelSource": "Tennis warehouse score model",
     "modelSplit": false,
-    "confidence": 51,
-    "volatility": 59,
+    "confidence": 53,
+    "volatility": 56,
     "tags": [
       "Clay",
       "WTA Makarska",
@@ -51762,39 +55032,43 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Noma Noha Akugue has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+    "reason": "Opponent-adjusted recent form is basically even: Noma Noha Akugue 57, Sara Sorribes Tormo 57. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "Weakness edge",
-      "target": "Sara Sorribes Tormo",
-      "scoreGap": 13,
-      "attackingSide": "Noma Noha Akugue",
-      "vulnerableSide": "Sara Sorribes Tormo",
-      "gameFlow": "Noma Noha Akugue has a real path if Sara Sorribes Tormo's first two service games show the same weakness: first-serve points won below comfort (58%); second-serve points won are attackable (42%).",
-      "liveTrigger": "Look for Sara Sorribes Tormo facing break points or second-serve pressure before 3-3.",
-      "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": 2,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
         "name": "Noma Noha Akugue",
         "serviceHoldPct": null,
-        "firstServeWonPct": null,
-        "secondServeWonPct": null,
-        "firstServePct": null,
-        "avgAces": null,
-        "avgDoubleFaults": null,
+        "firstServeWonPct": 56,
+        "secondServeWonPct": 47,
+        "firstServePct": 62,
+        "avgAces": 1.6,
+        "avgDoubleFaults": 2.2,
         "avgWinners": null,
         "avgUnforcedErrors": null,
         "avgBreakPointsFaced": null,
-        "returnPointsWonPct": null,
-        "servicePointsWonPct": null,
-        "weakServeMatches": 0,
+        "returnPointsWonPct": 50,
+        "servicePointsWonPct": 52,
+        "weakServeMatches": 2,
         "pressureMatches": null,
-        "matchesWithStats": 0,
-        "weaknessScore": 0,
+        "matchesWithStats": 5,
+        "weaknessScore": 11,
         "firstGameComfort": "Comfortable enough if first serve lands",
-        "liabilities": [],
-        "strengths": [],
-        "gameFlowRead": "Noma Noha Akugue has no major service weakness in the joined warehouse sample."
+        "liabilities": [
+          "first-serve points won below comfort (56%)"
+        ],
+        "strengths": [
+          "creates return pressure (50% return points won)"
+        ],
+        "gameFlowRead": "Noma Noha Akugue can drop points quickly through first-serve points won below comfort (56%)."
       },
       "opponent": {
         "name": "Sara Sorribes Tormo",
@@ -51828,14 +55102,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Noma Noha Akugue",
-        "confidence": 71,
-        "modelPct": 51,
+        "confidence": 70,
+        "modelPct": 53,
         "label": "Live to win a set"
       },
       {
         "name": "Sara Sorribes Tormo",
-        "confidence": 65,
-        "modelPct": 49,
+        "confidence": 62,
+        "modelPct": 47,
         "label": "Needs early hold pressure"
       }
     ],
@@ -51845,11 +55119,11 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Noma Noha Akugue",
         "americanOdds": -113,
-        "modelPct": 51,
+        "modelPct": 53,
         "impliedPct": 53.1,
-        "edgePct": -2.1,
-        "evPer100": -3.9,
-        "netEvPer100": -5.9,
+        "edgePct": -0.1,
+        "evPer100": -0.1,
+        "netEvPer100": -2.1,
         "feePer100": 2,
         "valueIssue": "Favorite price needs better proof",
         "valueGrade": "Near fair",
@@ -51862,7 +55136,7 @@ const rawTennisGames = [
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 21.2,
+        "expectedGames": 20.9,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false
@@ -51872,22 +55146,22 @@ const rawTennisGames = [
         "selection": "Under 9.5",
         "line": 9.5,
         "americanOdds": -150,
-        "expectedGames": 8.9,
-        "confidence": 58,
+        "expectedGames": 8.8,
+        "confidence": 61,
         "tiebreakRisk": 18,
-        "earlyBreakRisk": 54,
-        "modelPct": 58,
-        "evPer100": -3.3,
-        "netEvPer100": -5.3,
-        "valueGrade": "Thin value",
-        "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
+        "earlyBreakRisk": 50,
+        "modelPct": 61,
+        "evPer100": 1.7,
+        "netEvPer100": -0.3,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Noma Noha Akugue",
-          "confidence": 71,
-          "modelPct": 51,
+          "confidence": 70,
+          "modelPct": 53,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -51895,8 +55169,8 @@ const rawTennisGames = [
         },
         {
           "name": "Sara Sorribes Tormo",
-          "confidence": 65,
-          "modelPct": 49,
+          "confidence": 62,
+          "modelPct": 47,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -51909,20 +55183,20 @@ const rawTennisGames = [
         {
           "name": "Noma Noha Akugue",
           "holdPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "servicePointsWonPct": null,
-          "returnPointsWonPct": null,
+          "firstServeWonPct": 56,
+          "secondServeWonPct": 47,
+          "servicePointsWonPct": 52,
+          "returnPointsWonPct": 50,
           "returnGamesWonPct": null,
           "breakPointsSavedPct": null,
-          "breakPointsConvertedPct": null,
-          "aces": null,
-          "doubleFaults": null,
+          "breakPointsConvertedPct": 53.8,
+          "aces": 1.6,
+          "doubleFaults": 2.2,
           "winners": null,
           "unforcedErrors": null,
-          "weaknessScore": 0,
-          "weakServeMatches": 0,
-          "statMatches": 0,
+          "weaknessScore": 11,
+          "weakServeMatches": 2,
+          "statMatches": 5,
           "setShape": {
             "completedMatches": 0,
             "setSamples": 0,
@@ -51967,14 +55241,14 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 8.9,
-      "expectedMatchGames": 21.2,
-      "signalStrength": 2,
+      "expectedFirstSetGames": 8.8,
+      "expectedMatchGames": 20.9,
+      "signalStrength": 4,
       "holdAvg": null,
       "returnGamesAvg": null,
       "returnPointsAvg": 50,
       "breakPointsSavedAvg": null,
-      "breakPointsConvertedAvg": 52,
+      "breakPointsConvertedAvg": 52.9,
       "setSamples": 0,
       "firstSetSamples": 0,
       "avgFirstSetGames": null,
@@ -51982,7 +55256,7 @@ const rawTennisGames = [
       "tiebreakRate": null,
       "extendedSetRate": null,
       "shortSetRate": null,
-      "reasonCore": "hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets"
+      "reasonCore": "hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets"
     },
     "derivativeCase": null,
     "bettingMatrix": [
@@ -51992,11 +55266,11 @@ const rawTennisGames = [
         "selection": "Noma Noha Akugue",
         "line": null,
         "americanOdds": -113,
-        "modelPct": 51,
+        "modelPct": 53,
         "impliedPct": 53.1,
-        "edgePct": -2.1,
-        "evPer100": -3.9,
-        "netEvPer100": -5.9,
+        "edgePct": -0.1,
+        "evPer100": -0.1,
+        "netEvPer100": -2.1,
         "grade": "Near fair",
         "issue": "Favorite price needs better proof",
         "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
@@ -52012,7 +55286,7 @@ const rawTennisGames = [
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
-        "expectedGames": 21.2,
+        "expectedGames": 20.9,
         "edgeGames": null,
         "confidence": null,
         "grade": "No direction",
@@ -52021,22 +55295,22 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Noma Noha Akugue 71% / Sara Sorribes Tormo 65%",
+        "selection": "Noma Noha Akugue 70% / Sara Sorribes Tormo 62%",
         "rows": [
           {
             "name": "Noma Noha Akugue",
-            "confidence": 71,
-            "modelPct": 51,
+            "confidence": 70,
+            "modelPct": 53,
             "label": "Live to win a set"
           },
           {
             "name": "Sara Sorribes Tormo",
-            "confidence": 65,
-            "modelPct": 49,
+            "confidence": 62,
+            "modelPct": 47,
             "label": "Needs early hold pressure"
           }
         ],
-        "confidence": 71,
+        "confidence": 70,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
@@ -52044,12 +55318,12 @@ const rawTennisGames = [
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Under 9.5",
-        "expectedGames": 8.9,
-        "confidence": 58,
+        "expectedGames": 8.8,
+        "confidence": 61,
         "tiebreakRisk": 18,
-        "earlyBreakRisk": 54,
-        "grade": "Thin value",
-        "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
+        "earlyBreakRisk": 50,
+        "grade": "Actionable live watch",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets."
       }
     ],
     "ensembleValueCase": null,
@@ -52066,8 +55340,8 @@ const rawTennisGames = [
           "americanLabel": "-113",
           "impliedPct": 53.1,
           "decimalOdds": 1.885,
-          "modelPct": 51,
-          "edgePct": -2.1,
+          "modelPct": 53,
+          "edgePct": -0.1,
           "priceBand": "Coinflip",
           "grossProfitPct": 88.5,
           "grossPayoutMultiple": 1.885,
@@ -52080,8 +55354,8 @@ const rawTennisGames = [
           "americanLabel": "-116",
           "impliedPct": 53.7,
           "decimalOdds": 1.862,
-          "modelPct": 49,
-          "edgePct": -4.7,
+          "modelPct": 47,
+          "edgePct": -6.7,
           "priceBand": "Coinflip",
           "grossProfitPct": 86.2,
           "grossPayoutMultiple": 1.862,
@@ -52095,8 +55369,8 @@ const rawTennisGames = [
         "americanLabel": "-113",
         "impliedPct": 53.1,
         "decimalOdds": 1.885,
-        "modelPct": 51,
-        "edgePct": -2.1,
+        "modelPct": 53,
+        "edgePct": -0.1,
         "priceBand": "Coinflip",
         "grossProfitPct": 88.5,
         "grossPayoutMultiple": 1.885,
@@ -52133,7 +55407,7 @@ const rawTennisGames = [
       "totalLean": "No total line",
       "mlValue": "Noma Noha Akugue -113 / Sara Sorribes Tormo -116",
       "marketNote": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML is close to fair; derivative or live entry needs to carry the edge.",
-      "noVigNote": "Model 51% vs DraftKings Sportsbook implied 53.1% (-2.1 pts)."
+      "noVigNote": "Model 53% vs DraftKings Sportsbook implied 53.1% (-0.1 pts)."
     },
     "h2hUrl": null,
     "researchLinks": [
@@ -52153,39 +55427,63 @@ const rawTennisGames = [
     "players": [
       {
         "name": "Noma Noha Akugue",
-        "ranking": null,
+        "ranking": {
+          "name": "Noma Akugue Noha",
+          "rank": 162,
+          "points": 472,
+          "age": 22,
+          "country": "Germany",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T22:53:46.889802+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/noma-akugue-noha/"
+        },
         "qualityName": "Noma Noha Akugue",
-        "profile": "Rank not joined",
-        "modelPct": 51,
+        "profile": "Live rank #162 | Germany | age 22 | adj form 57",
+        "modelPct": 53,
         "weakness": {
           "name": "Noma Noha Akugue",
           "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
+          "firstServeWonPct": 56,
+          "secondServeWonPct": 47,
+          "firstServePct": 62,
+          "avgAces": 1.6,
+          "avgDoubleFaults": 2.2,
           "avgWinners": null,
           "avgUnforcedErrors": null,
           "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
+          "returnPointsWonPct": 50,
+          "servicePointsWonPct": 52,
+          "weakServeMatches": 2,
           "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
+          "matchesWithStats": 5,
+          "weaknessScore": 11,
           "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Noma Noha Akugue has no major service weakness in the joined warehouse sample."
+          "liabilities": [
+            "first-serve points won below comfort (56%)"
+          ],
+          "strengths": [
+            "creates return pressure (50% return points won)"
+          ],
+          "gameFlowRead": "Noma Noha Akugue can drop points quickly through first-serve points won below comfort (56%)."
         }
       },
       {
         "name": "Sara Sorribes Tormo",
-        "ranking": null,
+        "ranking": {
+          "name": "Sara Sorribes Tormo",
+          "rank": 304,
+          "points": 226,
+          "age": 29,
+          "country": "Spain",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T22:53:49.785407+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/sara-sorribes-tormo/"
+        },
         "qualityName": "Sara Sorribes Tormo",
-        "profile": "Rank not joined | adj form 57",
-        "modelPct": 49,
+        "profile": "Live rank #304 | Spain | age 29 | adj form 57",
+        "modelPct": 47,
         "weakness": {
           "name": "Sara Sorribes Tormo",
           "serviceHoldPct": null,
@@ -52332,6 +55630,9 @@ const rawTennisGames = [
         "evPer100": 7.4,
         "netEvPer100": 5.4,
         "feePer100": 2,
+        "rawEdgePct": 3.2,
+        "rawEvPer100": 7.4,
+        "rawNetEvPer100": 5.4,
         "valueIssue": "Picked side is overpriced; value board flips to Daniel Merida Aguilar because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -52626,10 +55927,10 @@ const rawTennisGames = [
           "points": 515,
           "age": 23,
           "country": "Spain",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/3979/pablo-llamas-ruiz",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:40:56.878853+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/pablo-llamas-ruiz/"
         },
         "qualityName": "Pablo Llamas Ruiz",
         "profile": "Clay | Live rank #122 | Spain | age 23 | adj form 73",
@@ -55257,8 +58558,8 @@ const rawTennisGames = [
     "basePickName": "Tyra Caterina Grant",
     "modelSource": "Tennis warehouse score model",
     "modelSplit": false,
-    "confidence": 53,
-    "volatility": 56,
+    "confidence": 58,
+    "volatility": 49,
     "tags": [
       "Clay",
       "WTA Foggia",
@@ -55338,14 +58639,14 @@ const rawTennisGames = [
     "setWinProjections": [
       {
         "name": "Tyra Caterina Grant",
-        "confidence": 69,
-        "modelPct": 53,
+        "confidence": 71,
+        "modelPct": 58,
         "label": "Live to win a set"
       },
       {
         "name": "Tatiana Pieri",
-        "confidence": 61,
-        "modelPct": 47,
+        "confidence": 55,
+        "modelPct": 42,
         "label": "Needs early hold pressure"
       }
     ],
@@ -55355,13 +58656,16 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Tatiana Pieri",
         "americanOdds": 1080,
-        "modelPct": 47,
+        "modelPct": 42,
         "impliedPct": 8.5,
-        "edgePct": 38.5,
-        "evPer100": 454.6,
-        "netEvPer100": 452.6,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Tatiana Pieri because that side has the better posted-price edge.",
+        "rawEdgePct": 33.5,
+        "rawEvPer100": 395.6,
+        "rawNetEvPer100": 393.6,
+        "valueIssue": "Outlier dog price on Tatiana Pieri; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
         "valueGrade": "Outlier price/manual review",
         "betGrade": false
       },
@@ -55372,32 +58676,32 @@ const rawTennisGames = [
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 20.9,
+        "expectedGames": 20.7,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Over 8.5",
+        "selection": "Pass / near line",
         "line": 8.5,
-        "americanOdds": -105,
-        "expectedGames": 8.8,
-        "confidence": 57,
+        "americanOdds": null,
+        "expectedGames": 8.7,
+        "confidence": 51,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 57,
-        "evPer100": 11.3,
-        "netEvPer100": 9.3,
-        "valueGrade": "Thin value",
-        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
+        "modelPct": 51,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 8.7 vs DraftKings Sportsbook 8.5; near the number. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Tyra Caterina Grant",
-          "confidence": 69,
-          "modelPct": 53,
+          "confidence": 71,
+          "modelPct": 58,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -55405,8 +58709,8 @@ const rawTennisGames = [
         },
         {
           "name": "Tatiana Pieri",
-          "confidence": 61,
-          "modelPct": 47,
+          "confidence": 55,
+          "modelPct": 42,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -55477,8 +58781,8 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 8.8,
-      "expectedMatchGames": 20.9,
+      "expectedFirstSetGames": 8.7,
+      "expectedMatchGames": 20.7,
       "signalStrength": 4,
       "holdAvg": null,
       "returnGamesAvg": null,
@@ -55502,14 +58806,14 @@ const rawTennisGames = [
         "selection": "Tatiana Pieri",
         "line": null,
         "americanOdds": 1080,
-        "modelPct": 47,
+        "modelPct": 42,
         "impliedPct": 8.5,
-        "edgePct": 38.5,
-        "evPer100": 454.6,
-        "netEvPer100": 452.6,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "grade": "Outlier price/manual review",
-        "issue": "Picked side is overpriced; value board flips to Tatiana Pieri because that side has the better posted-price edge.",
-        "reason": "ML payout is tiny; use spread/total or pass unless the number moves."
+        "issue": "Outlier dog price on Tatiana Pieri; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+        "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
       },
       {
         "marketType": "Total games",
@@ -55522,7 +58826,7 @@ const rawTennisGames = [
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
-        "expectedGames": 20.9,
+        "expectedGames": 20.7,
         "edgeGames": null,
         "confidence": null,
         "grade": "No direction",
@@ -55531,35 +58835,35 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Tyra Caterina Grant 69% / Tatiana Pieri 61%",
+        "selection": "Tyra Caterina Grant 71% / Tatiana Pieri 55%",
         "rows": [
           {
             "name": "Tyra Caterina Grant",
-            "confidence": 69,
-            "modelPct": 53,
+            "confidence": 71,
+            "modelPct": 58,
             "label": "Live to win a set"
           },
           {
             "name": "Tatiana Pieri",
-            "confidence": 61,
-            "modelPct": 47,
+            "confidence": 55,
+            "modelPct": 42,
             "label": "Needs early hold pressure"
           }
         ],
-        "confidence": 69,
+        "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Over 8.5",
-        "expectedGames": 8.8,
-        "confidence": 57,
+        "selection": "Pass / near line",
+        "expectedGames": 8.7,
+        "confidence": 51,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "grade": "Thin value",
-        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
+        "grade": "Near fair",
+        "reason": "Expected first-set games 8.7 vs DraftKings Sportsbook 8.5; near the number. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
       }
     ],
     "ensembleValueCase": null,
@@ -55576,8 +58880,8 @@ const rawTennisGames = [
           "americanLabel": "-3900",
           "impliedPct": 97.5,
           "decimalOdds": 1.026,
-          "modelPct": 53,
-          "edgePct": -44.5,
+          "modelPct": 58,
+          "edgePct": -39.5,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 2.6,
           "grossPayoutMultiple": 1.026,
@@ -55590,8 +58894,8 @@ const rawTennisGames = [
           "americanLabel": "+1080",
           "impliedPct": 8.5,
           "decimalOdds": 11.8,
-          "modelPct": 47,
-          "edgePct": 38.5,
+          "modelPct": 42,
+          "edgePct": 33.5,
           "priceBand": "Underdog",
           "grossProfitPct": 1080,
           "grossPayoutMultiple": 11.8,
@@ -55605,8 +58909,8 @@ const rawTennisGames = [
         "americanLabel": "-3900",
         "impliedPct": 97.5,
         "decimalOdds": 1.026,
-        "modelPct": 53,
-        "edgePct": -44.5,
+        "modelPct": 58,
+        "edgePct": -39.5,
         "priceBand": "Very expensive favorite",
         "grossProfitPct": 2.6,
         "grossPayoutMultiple": 1.026,
@@ -55643,7 +58947,7 @@ const rawTennisGames = [
       "totalLean": "No total line",
       "mlValue": "Tyra Caterina Grant -3900 / Tatiana Pieri +1080",
       "marketNote": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML payout is tiny; use spread/total or pass unless the number moves.",
-      "noVigNote": "Model 53% vs DraftKings Sportsbook implied 97.5% (-44.5 pts)."
+      "noVigNote": "Model 58% vs DraftKings Sportsbook implied 97.5% (-39.5 pts)."
     },
     "h2hUrl": null,
     "researchLinks": [
@@ -55663,10 +58967,20 @@ const rawTennisGames = [
     "players": [
       {
         "name": "Tyra Caterina Grant",
-        "ranking": null,
+        "ranking": {
+          "name": "Tyra Caterina Grant",
+          "rank": 184,
+          "points": 404,
+          "age": 18,
+          "country": "Italy",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:43:28.943251+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/tyra-caterina-grant/"
+        },
         "qualityName": "Tyra Caterina Grant",
-        "profile": "Rank not joined | adj form 73",
-        "modelPct": 53,
+        "profile": "Live rank #184 | Italy | age 18 | adj form 73",
+        "modelPct": 58,
         "weakness": {
           "name": "Tyra Caterina Grant",
           "serviceHoldPct": null,
@@ -55698,10 +59012,20 @@ const rawTennisGames = [
       },
       {
         "name": "Tatiana Pieri",
-        "ranking": null,
+        "ranking": {
+          "name": "Tatiana Pieri",
+          "rank": 505,
+          "points": 108,
+          "age": 27,
+          "country": "Italy",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:43:09.363781+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/tatiana-pieri/"
+        },
         "qualityName": "Tatiana Pieri",
-        "profile": "Rank not joined | adj form 40",
-        "modelPct": 47,
+        "profile": "Live rank #505 | Italy | age 27 | adj form 40",
+        "modelPct": 42,
         "weakness": {
           "name": "Tatiana Pieri",
           "serviceHoldPct": null,
@@ -55848,6 +59172,9 @@ const rawTennisGames = [
         "evPer100": 6.4,
         "netEvPer100": 4.4,
         "feePer100": 2,
+        "rawEdgePct": 2.1,
+        "rawEvPer100": 6.4,
+        "rawNetEvPer100": 4.4,
         "valueIssue": "Picked side is overpriced; value board flips to Matteo Arnaldi because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -56381,10 +59708,10 @@ const rawTennisGames = [
           "points": 586,
           "age": 25,
           "country": "Italy",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/3793/matteo-arnaldi",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:40:33.818124+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/matteo-arnaldi/"
         },
         "qualityName": "Matteo Arnaldi",
         "profile": "Live rank #104 | Italy | age 25 | adj form 87",
@@ -56423,10 +59750,10 @@ const rawTennisGames = [
           "points": 2340,
           "age": 24,
           "country": "Italy",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/7602/flavio-cobolli",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:38:24.705268+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/flavio-cobolli/"
         },
         "qualityName": "Flavio Cobolli",
         "profile": "Live rank #14 | Italy | age 24 | adj form 88",
@@ -56476,8 +59803,8 @@ const rawTennisGames = [
     "basePickName": "Lucia Bronzetti",
     "modelSource": "Tennis warehouse score model",
     "modelSplit": false,
-    "confidence": 52,
-    "volatility": 57,
+    "confidence": 56,
+    "volatility": 53,
     "tags": [
       "Clay",
       "WTA Foggia",
@@ -56487,16 +59814,16 @@ const rawTennisGames = [
       "WTA volatility tax",
       "Controlled volatility"
     ],
-    "reason": "Lucia Bronzetti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+    "reason": "Lucia Bronzetti grades 17 points better on opponent-adjusted recent form. Lean, not a chase.",
     "totals": "Best O/U angle: no play without a posted total.",
     "weaknessEdge": {
-      "edgeType": "No clear weakness edge",
-      "target": "Both sides",
-      "scoreGap": -5,
-      "attackingSide": null,
-      "vulnerableSide": null,
-      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "edgeType": "Weakness edge",
+      "target": "Giorgia Pedone",
+      "scoreGap": 12,
+      "attackingSide": "Lucia Bronzetti",
+      "vulnerableSide": "Giorgia Pedone",
+      "gameFlow": "Lucia Bronzetti has a real path if Giorgia Pedone's first two service games show the same weakness: first-serve points won below comfort (54%); 4 recent matches with serve instability.",
+      "liveTrigger": "Look for Giorgia Pedone facing break points or second-serve pressure before 3-3.",
       "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
       "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
       "pick": {
@@ -56527,37 +59854,42 @@ const rawTennisGames = [
       "opponent": {
         "name": "Giorgia Pedone",
         "serviceHoldPct": null,
-        "firstServeWonPct": null,
-        "secondServeWonPct": null,
-        "firstServePct": null,
+        "firstServeWonPct": 54,
+        "secondServeWonPct": 46,
+        "firstServePct": 82,
         "avgAces": null,
-        "avgDoubleFaults": null,
+        "avgDoubleFaults": 1,
         "avgWinners": null,
         "avgUnforcedErrors": null,
         "avgBreakPointsFaced": null,
-        "returnPointsWonPct": null,
-        "servicePointsWonPct": null,
-        "weakServeMatches": 0,
+        "returnPointsWonPct": 54,
+        "servicePointsWonPct": 52,
+        "weakServeMatches": 4,
         "pressureMatches": null,
-        "matchesWithStats": 0,
-        "weaknessScore": 0,
-        "firstGameComfort": "Comfortable enough if first serve lands",
-        "liabilities": [],
-        "strengths": [],
-        "gameFlowRead": "Giorgia Pedone has no major service weakness in the joined warehouse sample."
+        "matchesWithStats": 5,
+        "weaknessScore": 17,
+        "firstGameComfort": "Needs early holds confirmed",
+        "liabilities": [
+          "first-serve points won below comfort (54%)",
+          "4 recent matches with serve instability"
+        ],
+        "strengths": [
+          "creates return pressure (54% return points won)"
+        ],
+        "gameFlowRead": "Giorgia Pedone can drop points quickly through first-serve points won below comfort (54%) and 4 recent matches with serve instability."
       }
     },
     "setWinProjections": [
       {
         "name": "Giorgia Pedone",
-        "confidence": 65,
-        "modelPct": 48,
+        "confidence": 58,
+        "modelPct": 44,
         "label": "Needs early hold pressure"
       },
       {
         "name": "Lucia Bronzetti",
-        "confidence": 71,
-        "modelPct": 52,
+        "confidence": 72,
+        "modelPct": 56,
         "label": "Live to win a set"
       }
     ],
@@ -56567,14 +59899,17 @@ const rawTennisGames = [
         "marketType": "ML",
         "selection": "Giorgia Pedone",
         "americanOdds": 205,
-        "modelPct": 48,
+        "modelPct": 44,
         "impliedPct": 32.8,
-        "edgePct": 15.2,
-        "evPer100": 46.4,
-        "netEvPer100": 44.4,
+        "edgePct": 11.2,
+        "evPer100": 34.2,
+        "netEvPer100": 32.2,
         "feePer100": 2,
+        "rawEdgePct": 11.2,
+        "rawEvPer100": 34.2,
+        "rawNetEvPer100": 32.2,
         "valueIssue": "Picked side is overpriced; value board flips to Giorgia Pedone because that side has the better posted-price edge.",
-        "valueGrade": "Bet-grade value",
+        "valueGrade": "Model probability outside validated lane",
         "betGrade": false
       },
       "spread": null,
@@ -56584,32 +59919,32 @@ const rawTennisGames = [
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 22.1,
+        "expectedGames": 20.9,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Pass / near line",
+        "selection": "Under 9.5",
         "line": 9.5,
-        "americanOdds": null,
-        "expectedGames": 9.3,
-        "confidence": 51,
+        "americanOdds": -165,
+        "expectedGames": 8.8,
+        "confidence": 61,
         "tiebreakRisk": 18,
-        "earlyBreakRisk": 50,
-        "modelPct": 51,
-        "evPer100": null,
-        "netEvPer100": null,
-        "valueGrade": "Near fair",
-        "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 64%, first-set sample N/A, 0 recent sets.",
+        "earlyBreakRisk": 54,
+        "modelPct": 61,
+        "evPer100": -2,
+        "netEvPer100": -4,
+        "valueGrade": "Actionable live watch",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 61%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Giorgia Pedone",
-          "confidence": 65,
-          "modelPct": 48,
+          "confidence": 58,
+          "modelPct": 44,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -56617,8 +59952,8 @@ const rawTennisGames = [
         },
         {
           "name": "Lucia Bronzetti",
-          "confidence": 71,
-          "modelPct": 52,
+          "confidence": 72,
+          "modelPct": 56,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -56631,20 +59966,20 @@ const rawTennisGames = [
         {
           "name": "Giorgia Pedone",
           "holdPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "servicePointsWonPct": null,
-          "returnPointsWonPct": null,
+          "firstServeWonPct": 54,
+          "secondServeWonPct": 46,
+          "servicePointsWonPct": 52,
+          "returnPointsWonPct": 54,
           "returnGamesWonPct": null,
           "breakPointsSavedPct": null,
-          "breakPointsConvertedPct": null,
+          "breakPointsConvertedPct": 58,
           "aces": null,
-          "doubleFaults": null,
+          "doubleFaults": 1,
           "winners": null,
           "unforcedErrors": null,
-          "weaknessScore": 0,
-          "weakServeMatches": 0,
-          "statMatches": 0,
+          "weaknessScore": 17,
+          "weakServeMatches": 4,
+          "statMatches": 5,
           "setShape": {
             "completedMatches": 0,
             "setSamples": 0,
@@ -56689,14 +60024,14 @@ const rawTennisGames = [
           }
         }
       ],
-      "expectedFirstSetGames": 9.3,
-      "expectedMatchGames": 22.1,
-      "signalStrength": 2,
+      "expectedFirstSetGames": 8.8,
+      "expectedMatchGames": 20.9,
+      "signalStrength": 4,
       "holdAvg": null,
       "returnGamesAvg": null,
-      "returnPointsAvg": 52,
+      "returnPointsAvg": 53,
       "breakPointsSavedAvg": null,
-      "breakPointsConvertedAvg": 63.8,
+      "breakPointsConvertedAvg": 60.9,
       "setSamples": 0,
       "firstSetSamples": 0,
       "avgFirstSetGames": null,
@@ -56704,7 +60039,7 @@ const rawTennisGames = [
       "tiebreakRate": null,
       "extendedSetRate": null,
       "shortSetRate": null,
-      "reasonCore": "hold avg N/A, BP saved N/A, BP converted 64%, first-set sample N/A, 0 recent sets"
+      "reasonCore": "hold avg N/A, BP saved N/A, BP converted 61%, first-set sample N/A, 0 recent sets"
     },
     "derivativeCase": null,
     "bettingMatrix": [
@@ -56714,12 +60049,12 @@ const rawTennisGames = [
         "selection": "Giorgia Pedone",
         "line": null,
         "americanOdds": 205,
-        "modelPct": 48,
+        "modelPct": 44,
         "impliedPct": 32.8,
-        "edgePct": 15.2,
-        "evPer100": 46.4,
-        "netEvPer100": 44.4,
-        "grade": "Bet-grade value",
+        "edgePct": 11.2,
+        "evPer100": 34.2,
+        "netEvPer100": 32.2,
+        "grade": "Model probability outside validated lane",
         "issue": "Picked side is overpriced; value board flips to Giorgia Pedone because that side has the better posted-price edge.",
         "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
       },
@@ -56734,7 +60069,7 @@ const rawTennisGames = [
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
-        "expectedGames": 22.1,
+        "expectedGames": 20.9,
         "edgeGames": null,
         "confidence": null,
         "grade": "No direction",
@@ -56743,35 +60078,35 @@ const rawTennisGames = [
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Giorgia Pedone 65% / Lucia Bronzetti 71%",
+        "selection": "Giorgia Pedone 58% / Lucia Bronzetti 72%",
         "rows": [
           {
             "name": "Giorgia Pedone",
-            "confidence": 65,
-            "modelPct": 48,
+            "confidence": 58,
+            "modelPct": 44,
             "label": "Needs early hold pressure"
           },
           {
             "name": "Lucia Bronzetti",
-            "confidence": 71,
-            "modelPct": 52,
+            "confidence": 72,
+            "modelPct": 56,
             "label": "Live to win a set"
           }
         ],
-        "confidence": 71,
+        "confidence": 72,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Pass / near line",
-        "expectedGames": 9.3,
-        "confidence": 51,
+        "selection": "Under 9.5",
+        "expectedGames": 8.8,
+        "confidence": 61,
         "tiebreakRisk": 18,
-        "earlyBreakRisk": 50,
-        "grade": "Near fair",
-        "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 64%, first-set sample N/A, 0 recent sets."
+        "earlyBreakRisk": 54,
+        "grade": "Actionable live watch",
+        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 61%, first-set sample N/A, 0 recent sets."
       }
     ],
     "ensembleValueCase": null,
@@ -56788,8 +60123,8 @@ const rawTennisGames = [
           "americanLabel": "+205",
           "impliedPct": 32.8,
           "decimalOdds": 3.05,
-          "modelPct": 48,
-          "edgePct": 15.2,
+          "modelPct": 44,
+          "edgePct": 11.2,
           "priceBand": "Underdog",
           "grossProfitPct": 205,
           "grossPayoutMultiple": 3.05,
@@ -56802,8 +60137,8 @@ const rawTennisGames = [
           "americanLabel": "-280",
           "impliedPct": 73.7,
           "decimalOdds": 1.357,
-          "modelPct": 52,
-          "edgePct": -21.7,
+          "modelPct": 56,
+          "edgePct": -17.7,
           "priceBand": "Low-payout favorite",
           "grossProfitPct": 35.7,
           "grossPayoutMultiple": 1.357,
@@ -56817,8 +60152,8 @@ const rawTennisGames = [
         "americanLabel": "-280",
         "impliedPct": 73.7,
         "decimalOdds": 1.357,
-        "modelPct": 52,
-        "edgePct": -21.7,
+        "modelPct": 56,
+        "edgePct": -17.7,
         "priceBand": "Low-payout favorite",
         "grossProfitPct": 35.7,
         "grossPayoutMultiple": 1.357,
@@ -56855,7 +60190,7 @@ const rawTennisGames = [
       "totalLean": "No total line",
       "mlValue": "Giorgia Pedone +205 / Lucia Bronzetti -280",
       "marketNote": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. Favorite price has limited payout; require a strong weakness edge or use spread/total.",
-      "noVigNote": "Model 52% vs DraftKings Sportsbook implied 73.7% (-21.7 pts)."
+      "noVigNote": "Model 56% vs DraftKings Sportsbook implied 73.7% (-17.7 pts)."
     },
     "h2hUrl": null,
     "researchLinks": [
@@ -56875,39 +60210,64 @@ const rawTennisGames = [
     "players": [
       {
         "name": "Giorgia Pedone",
-        "ranking": null,
+        "ranking": {
+          "name": "Georgia Pedone",
+          "rank": 302,
+          "points": 228,
+          "age": 21,
+          "country": "Italy",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:28.962340+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/georgia-pedone/"
+        },
         "qualityName": "Giorgia Pedone",
-        "profile": "Rank not joined",
-        "modelPct": 48,
+        "profile": "Live rank #302 | Italy | age 21 | adj form 58",
+        "modelPct": 44,
         "weakness": {
           "name": "Giorgia Pedone",
           "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
+          "firstServeWonPct": 54,
+          "secondServeWonPct": 46,
+          "firstServePct": 82,
           "avgAces": null,
-          "avgDoubleFaults": null,
+          "avgDoubleFaults": 1,
           "avgWinners": null,
           "avgUnforcedErrors": null,
           "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
+          "returnPointsWonPct": 54,
+          "servicePointsWonPct": 52,
+          "weakServeMatches": 4,
           "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Giorgia Pedone has no major service weakness in the joined warehouse sample."
+          "matchesWithStats": 5,
+          "weaknessScore": 17,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "first-serve points won below comfort (54%)",
+            "4 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (54% return points won)"
+          ],
+          "gameFlowRead": "Giorgia Pedone can drop points quickly through first-serve points won below comfort (54%) and 4 recent matches with serve instability."
         }
       },
       {
         "name": "Lucia Bronzetti",
-        "ranking": null,
+        "ranking": {
+          "name": "Lucia Bronzetti",
+          "rank": 172,
+          "points": 448,
+          "age": 27,
+          "country": "Italy",
+          "tour": "WTA ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:42:38.912634+00:00",
+          "sourceUrl": "https://www.tennislive.net/wta/lucia-bronzetti/"
+        },
         "qualityName": "Lucia Bronzetti",
-        "profile": "Rank not joined | adj form 75",
-        "modelPct": 52,
+        "profile": "Live rank #172 | Italy | age 27 | adj form 75",
+        "modelPct": 56,
         "weakness": {
           "name": "Lucia Bronzetti",
           "serviceHoldPct": null,
@@ -57052,6 +60412,9 @@ const rawTennisGames = [
         "evPer100": 16.9,
         "netEvPer100": 14.9,
         "feePer100": 2,
+        "rawEdgePct": 5.4,
+        "rawEvPer100": 16.9,
+        "rawNetEvPer100": 14.9,
         "valueIssue": "Picked side is overpriced; value board flips to Pierluigi Basile because that side has the better posted-price edge.",
         "valueGrade": "Raw ML edge only",
         "betGrade": false
@@ -57331,10 +60694,10 @@ const rawTennisGames = [
           "points": 507,
           "age": 29,
           "country": "Italy",
-          "tour": "ATP",
-          "source": "https://www.espn.com/tennis/rankings/_/type/atp/season/2026",
-          "profileUrl": "https://www.espn.com/tennis/player/_/id/2627/andrea-pellegrino",
-          "asOf": "2026-06-05"
+          "tour": "ATP ranking",
+          "source": "tennislive_player_profiles",
+          "asOf": "2026-06-04T23:37:04.760842+00:00",
+          "sourceUrl": "https://www.tennislive.net/atp/andrea-pellegrino/"
         },
         "qualityName": "Andrea Pellegrino",
         "profile": "Clay | Live rank #124 | Italy | age 29 | adj form 73",
@@ -59973,9 +63336,13 @@ const buildGame = (raw) => {
   const pickIndex = raw.pickName === raw.players[0].name ? 0 : 1
   const picked = participants[pickIndex]
   const opponent = participants[pickIndex === 0 ? 1 : 0]
-  const qualityContext = tennisOpponentQualityContext.matches?.[raw.id] ?? null
-  const clayData = tennisClayContext.matches?.[raw.id] ?? null
+  const qualityContext = null
   const warehouseContext = tennisWarehouseContext.matches?.[raw.id] ?? null
+  const warehousePlayerFor = (player) => {
+    const key = normalizePlayerName(player.name)
+    const identityKeys = [key, ...({ 'bu yunchaokete': ['yunchaokete bu'], 'yunchaokete bu': ['bu yunchaokete'], 'georgia pedone': ['giorgia pedone'], 'giorgia pedone': ['georgia pedone'], 'noma akugue noha': ['noma noha akugue'], 'noma noha akugue': ['noma akugue noha'], 'diego dedura': ['diego dedura palomero'], 'diego dedura palomero': ['diego dedura'] }[key] || [])]
+    return player.warehouseStats ?? warehouseContext?.players?.find((entry) => identityKeys.includes(normalizePlayerName(entry.name))) ?? identityKeys.map((entryKey) => tennisWarehouseContext.playersByName?.[entryKey]).find(Boolean) ?? null
+  }
   const marketPlayers = market?.players ?? []
   const deskMarket = market?.desk ?? null
   const marketEconomics = market ? {
@@ -60070,7 +63437,7 @@ const buildGame = (raw) => {
         marketLabel: player.market ? `${player.market.americanLabel} / ${player.market.impliedPct}% implied` : `Model fair ${player.modelPct}%`,
         clayLine: player.profile || 'Profile pending',
         weakness: player.weakness,
-        warehouseStats: player.warehouseStats ?? warehouseContext?.players?.find((entry) => normalizePlayerName(entry.name) === normalizePlayerName(player.name)) ?? null,
+        warehouseStats: warehousePlayerFor(player),
         record2026: '',
         notes: player.name === raw.pickName ? `Pick: model ${raw.confidence}%` : `Opponent case: model ${100 - raw.confidence}%`,
         matchupNote: player.name === raw.pickName ? `Why pick: ${raw.reason}` : 'Upset path: needs early scoreboard pressure or a market price that pays for volatility.'

@@ -142,6 +142,14 @@ const insertOutputRows = async ({ runId, rows }) => {
 
 const snapshotTrainingRows = async ({ runId, date }) => {
   await sqliteExec(`delete from tennis_model_run_training_rows where run_id = ${shellQuote(runId)}`)
+  const tableRows = await sqliteJson("select 1 as exists_flag from sqlite_master where type = 'table' and name = 'tennis_model_training_rows' limit 1")
+  if (!tableRows.length) {
+    return {
+      count: 0,
+      hash: sha256Text(stableJson([])),
+      note: 'tennis_model_training_rows table is absent for this pregame snapshot'
+    }
+  }
   const rows = await sqliteJson(`select * from tennis_model_training_rows where slate_date = ${shellQuote(date)}`)
   for (const row of rows) {
     const payload = stableJson(row)

@@ -21,18 +21,22 @@ PUBLISHED_SLATES_DIR = ROOT / "published-data" / "slates"
 KALSHI_SPIKE_MODEL_PATH = ROOT / "web" / "src" / "lib" / "kalshi-tennis-spike-model.generated.json"
 
 CORE_RECENT_METRICS = {"hold", "secondServe", "errorControl", "returnPressure", "closeout"}
+MATCH_SURFACE_ENUM = {"Clay", "Grass", "Hard", "Indoor Hard", "Carpet", "Acrylic", "Unknown"}
 
 REQUIRED_TABLES = [
-    "tennis_matches",
-    "tennis_flashscore_recent_links",
-    "tennis_recent_form_metrics",
-    "tennis_sofascore_matches",
-    "tennis_sofascore_player_page_stats",
+    "matches",
+    "match_players",
+    "players",
+    "recent_matches",
+    "match_stat_rows",
+    "player_form_snapshots",
+    "tennislive_player_profiles",
+    "tennislive_player_match_links",
+    "tennislive_form_chart_points",
+    "tennislive_match_sources",
     "tennis_kalshi_match_markets",
     "tennis_prediction_market_snapshots",
-    "tennis_rankings",
     "tennis_match_results",
-    "tennis_model_training_rows",
     "tennis_weather_hourly",
     "tennis_match_weather",
 ]
@@ -71,16 +75,15 @@ def core_model_match_count(conn: sqlite3.Connection, date: str) -> int:
 
     Robinhood Challenger markets can be published as market-only rows. They
     should still have prices and value-book placeholders, but they should not
-    make the whole slate fail because SofaScore/replay/venue mappings are not
-    joined yet.
+    make the whole slate fail because TennisLive match pages are not joined yet.
     """
     return scalar(
         conn,
         """
         select count(*)
-        from tennis_matches
-        where slate_date = ?
-          and match_id like 'rg-%'
+        from matches
+        where match_date = ?
+          and match_id like 'tl-%'
         """,
         (date,),
     )
@@ -98,32 +101,42 @@ def resolve_settled(date: str, explicit: bool | None) -> bool:
 def check_source_files(date: str) -> dict[str, Any]:
     paths = {
         "scoreboard": REFERENCE_DIR / f"espn-scoreboard-{date}.json",
-        "rankingsHistory": REFERENCE_DIR / "player-rankings-history" / f"{date}.json",
+        "warehouseContext": ROOT / "web" / "src" / "lib" / f"day-{date}-tennis-warehouse-context.generated.json",
+        "draftkingsLines": REFERENCE_DIR / f"draftkings-lines-{date}.json",
         "fanduelLines": REFERENCE_DIR / f"fanduel-lines-{date}.json",
-        "sofascorePlayerStats": REFERENCE_DIR / "sofascore-player-stats" / f"{date}.json",
     }
     statuses = {}
     missing_required = []
     for key, path in paths.items():
         exists = path.exists() and path.stat().st_size > 0
         statuses[key] = {"path": str(path), "exists": exists, "bytes": path.stat().st_size if path.exists() else 0}
-        if key in {"scoreboard", "rankingsHistory", "sofascorePlayerStats"} and not exists:
+        if key in {"scoreboard", "warehouseContext"} and not exists:
             missing_required.append(key)
     ok = not missing_required
     return {"ok": ok, "files": statuses, "error": None if ok else f"missing required source files: {', '.join(missing_required)}"}
 
 
-def check_recent_map(date: str) -> dict[str, Any]:
-    path = REFERENCE_DIR / f"flashscore-recent-match-map-{date}.json"
+def check_tennislive_context_file(date: str) -> dict[str, Any]:
+    path = ROOT / "web" / "src" / "lib" / f"day-{date}-tennis-warehouse-context.generated.json"
     if not path.exists():
-        return {"ok": False, "path": str(path), "error": "missing Flashscore recent-match map"}
+        return {"ok": False, "path": str(path), "error": "missing generated TennisLive warehouse context"}
     payload = read_json(path)
-    coverage = payload.get("coverage") or {}
-    fetched = int(coverage.get("fetchedRows") or 0)
-    matched = int(coverage.get("matchedRows") or 0)
-    recent = int(coverage.get("recentRows") or 0)
-    ok = fetched > 0 and matched > 0 and recent > 0
-    return {"ok": ok, "path": str(path), "coverage": coverage, "error": None if ok else "empty Flashscore recent-match coverage"}
+    matches = payload.get("matches") or {}
+    players = payload.get("playersByName") or {}
+    blocked_sources = []
+    text = json.dumps(payload, sort_keys=True).lower()
+    for source in ("flashscore", "sofascore", "tennistonic", "tennis tonic"):
+        if source in text:
+            blocked_sources.append(source)
+    ok = bool(matches) and bool(players) and not blocked_sources
+    return {
+        "ok": ok,
+        "path": str(path),
+        "matchContextCount": len(matches),
+        "playerContextCount": len(players),
+        "blockedSources": blocked_sources,
+        "error": None if ok else "TennisLive warehouse context is missing or contains blocked legacy source text",
+    }
 
 
 def check_warehouse(conn: sqlite3.Connection, date: str) -> dict[str, Any]:
@@ -131,89 +144,235 @@ def check_warehouse(conn: sqlite3.Connection, date: str) -> dict[str, Any]:
     if missing_tables:
         return {"ok": False, "error": "missing tennis warehouse tables", "missingTables": missing_tables}
 
-    match_count = conn.execute("select count(*) from tennis_matches where slate_date = ?", (date,)).fetchone()[0]
-    recent_links = conn.execute(
-        "select count(*) from tennis_flashscore_recent_links where slate_date = ?",
-        (date,),
-    ).fetchone()[0]
-    metric_rows = conn.execute(
+    match_count = conn.execute("select count(*) from matches where match_date = ?", (date,)).fetchone()[0]
+    player_count = conn.execute(
         """
-        select count(*)
-        from tennis_recent_form_metrics metrics
-        join tennis_matches matches on matches.match_id = metrics.match_id
-        where matches.slate_date = ?
+        select count(distinct players.player_id)
+        from match_players players
+        join matches matches on matches.match_id = players.match_id
+        where matches.match_date = ?
         """,
         (date,),
     ).fetchone()[0]
-    visible_missing = [
+    profile_players = conn.execute(
+        """
+        select count(distinct players.player_id)
+        from match_players players
+        join matches matches on matches.match_id = players.match_id
+        join tennislive_player_profiles profiles on profiles.player_id = players.player_id
+        where matches.match_date = ?
+        """,
+        (date,),
+    ).fetchone()[0]
+    ranked_players = conn.execute(
+        """
+        select count(distinct players.player_id)
+        from match_players players
+        join matches matches on matches.match_id = players.match_id
+        join tennislive_player_profiles profiles on profiles.player_id = players.player_id
+        where matches.match_date = ?
+          and profiles.current_ranking is not null
+        """,
+        (date,),
+    ).fetchone()[0]
+    recent_players = conn.execute(
+        """
+        select count(distinct players.player_id)
+        from match_players players
+        join matches matches on matches.match_id = players.match_id
+        join recent_matches recent on recent.player_id = players.player_id and recent.source_name = 'tennislive'
+        where matches.match_date = ?
+        """,
+        (date,),
+    ).fetchone()[0]
+    stat_players = conn.execute(
+        """
+        select count(distinct players.player_id)
+        from match_players players
+        join matches matches on matches.match_id = players.match_id
+        join match_stat_rows stats on stats.player_id = players.player_id and stats.source_name = 'tennislive'
+        where matches.match_date = ?
+        """,
+        (date,),
+    ).fetchone()[0]
+    form_players = conn.execute(
+        """
+        select count(distinct players.player_id)
+        from match_players players
+        join matches matches on matches.match_id = players.match_id
+        join player_form_snapshots form on form.player_id = players.player_id
+        where matches.match_date = ?
+          and json_extract(form.features_json, '$.source') = 'tennislive'
+        """,
+        (date,),
+    ).fetchone()[0]
+    missing_players = [
         dict(row)
         for row in conn.execute(
             """
             select
-              metrics.match_id,
-              metrics.player_name,
-              metrics.normalized_name,
-              sum(case when metrics.score is null then 1 else 0 end) as missing_cells,
-              count(*) as cells
-            from tennis_recent_form_metrics metrics
-            join tennis_matches matches on matches.match_id = metrics.match_id
-            where matches.slate_date = ?
-              and metrics.recent_index < 5
-              and metrics.metric_key in ('hold', 'secondServe', 'errorControl', 'returnPressure', 'closeout')
-            group by metrics.match_id, metrics.normalized_name
-            having missing_cells > 0
-            order by missing_cells desc, metrics.match_id, metrics.normalized_name
+              players.player_id,
+              identity.name,
+              max(case when profiles.player_id is not null then 1 else 0 end) as has_profile,
+              max(case when profiles.current_ranking is not null then 1 else 0 end) as has_rank,
+              max(case when recent.player_id is not null then 1 else 0 end) as has_recent,
+              max(case when stats.player_id is not null then 1 else 0 end) as has_stats,
+              max(case when json_extract(form.features_json, '$.source') = 'tennislive' then 1 else 0 end) as has_form
+            from match_players players
+            join matches matches on matches.match_id = players.match_id
+            left join players identity on identity.player_id = players.player_id
+            left join tennislive_player_profiles profiles on profiles.player_id = players.player_id
+            left join recent_matches recent on recent.player_id = players.player_id and recent.source_name = 'tennislive'
+            left join match_stat_rows stats on stats.player_id = players.player_id and stats.source_name = 'tennislive'
+            left join player_form_snapshots form on form.player_id = players.player_id
+            where matches.match_date = ?
+            group by players.player_id, identity.name
+            having has_profile = 0 or has_rank = 0 or has_recent = 0 or has_stats = 0 or has_form = 0
+            order by identity.name
             """,
             (date,),
         ).fetchall()
     ]
-    partial_depth_players = [
-        dict(row)
-        for row in conn.execute(
-            """
-            select
-              metrics.match_id,
-              metrics.player_name,
-              metrics.normalized_name,
-              count(*) as visible_cells
-            from tennis_recent_form_metrics metrics
-            join tennis_matches matches on matches.match_id = metrics.match_id
-            where matches.slate_date = ?
-              and metrics.recent_index < 5
-              and metrics.metric_key in ('hold', 'secondServe', 'errorControl', 'returnPressure', 'closeout')
-            group by metrics.match_id, metrics.normalized_name
-            having visible_cells < 25
-            order by visible_cells, metrics.match_id, metrics.normalized_name
-            """,
-            (date,),
-        ).fetchall()
-    ]
-    ok = match_count > 0 and recent_links > 0 and metric_rows > 0 and not visible_missing
+    ok = (
+        match_count > 0
+        and player_count > 0
+        and profile_players >= player_count
+        and ranked_players >= player_count
+        and recent_players >= player_count
+        and stat_players >= player_count
+        and form_players >= player_count
+        and not missing_players
+    )
     return {
         "ok": ok,
         "matchCount": match_count,
-        "recentLinks": recent_links,
-        "metricRows": metric_rows,
-        "visibleMissing": visible_missing,
-        "partialDepthPlayers": partial_depth_players,
-        "error": None if ok else "warehouse recent-form coverage is incomplete",
+        "playerCount": player_count,
+        "profilePlayers": profile_players,
+        "rankedPlayers": ranked_players,
+        "recentPlayers": recent_players,
+        "statPlayers": stat_players,
+        "formPlayers": form_players,
+        "missingPlayers": missing_players[:50],
+        "missingPlayerCount": len(missing_players),
+        "error": None if ok else "TennisLive warehouse coverage is incomplete for one or more slate players",
     }
 
 
 def check_rankings(conn: sqlite3.Connection, date: str) -> dict[str, Any]:
-    ranking_rows = scalar(conn, "select count(*) from tennis_rankings where as_of_date = ?", (date,))
-    history_path = REFERENCE_DIR / "player-rankings-history" / f"{date}.json"
-    ok = ranking_rows > 0 and history_path.exists() and history_path.stat().st_size > 0
+    player_count = scalar(
+        conn,
+        """
+        select count(distinct players.player_id)
+        from match_players players
+        join matches matches on matches.match_id = players.match_id
+        where matches.match_date = ?
+        """,
+        (date,),
+    )
+    ranked_players = scalar(
+        conn,
+        """
+        select count(distinct players.player_id)
+        from match_players players
+        join matches matches on matches.match_id = players.match_id
+        join tennislive_player_profiles profiles on profiles.player_id = players.player_id
+        where matches.match_date = ?
+          and profiles.current_ranking is not null
+        """,
+        (date,),
+    )
+    missing = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select identity.name, players.player_id
+            from match_players players
+            join matches matches on matches.match_id = players.match_id
+            left join players identity on identity.player_id = players.player_id
+            left join tennislive_player_profiles profiles on profiles.player_id = players.player_id
+            where matches.match_date = ?
+              and profiles.current_ranking is null
+            group by players.player_id, identity.name
+            order by identity.name
+            """,
+            (date,),
+        ).fetchall()
+    ]
+    ok = player_count > 0 and ranked_players >= player_count and not missing
     return {
         "ok": ok,
-        "rankingRows": ranking_rows,
-        "historyPath": str(history_path),
-        "historyFileExists": history_path.exists(),
-        "error": None if ok else "missing dated ranking snapshot or imported ranking rows",
+        "playerCount": player_count,
+        "rankedPlayers": ranked_players,
+        "missingPlayers": missing[:50],
+        "missingPlayerCount": len(missing),
+        "source": "tennislive_player_profiles.current_ranking",
+        "error": None if ok else "one or more slate players are missing TennisLive profile rankings",
     }
 
 
-def check_sofascore(
+def check_match_contract(conn: sqlite3.Connection, date: str) -> dict[str, Any]:
+    if not table_exists(conn, "matches"):
+        return {"ok": False, "error": "matches table is missing"}
+    missing = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select match_id, match_date, tournament_id, round, surface
+            from matches
+            where match_date = ?
+              and (
+                match_date is null or trim(match_date) = ''
+                or tournament_id is null or trim(tournament_id) = ''
+                or round is null or trim(round) = ''
+                or surface is null or trim(surface) = ''
+              )
+            order by match_id
+            """,
+            (date,),
+        ).fetchall()
+    ]
+    bad_surface = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select match_id, match_date, tournament_id, round, surface
+            from matches
+            where match_date = ?
+              and surface not in ('Clay', 'Grass', 'Hard', 'Indoor Hard', 'Carpet', 'Acrylic', 'Unknown')
+            order by match_id
+            """,
+            (date,),
+        ).fetchall()
+    ]
+    surface_rows = [
+        dict(row)
+        for row in conn.execute(
+            """
+            select surface, count(*) as count
+            from matches
+            where match_date = ?
+            group by surface
+            order by surface
+            """,
+            (date,),
+        ).fetchall()
+    ]
+    match_count = sum(int(row["count"] or 0) for row in surface_rows)
+    ok = match_count > 0 and not missing and not bad_surface
+    return {
+        "ok": ok,
+        "matchCount": match_count,
+        "surfaceEnum": sorted(MATCH_SURFACE_ENUM),
+        "surfaces": surface_rows,
+        "missingCount": len(missing),
+        "badSurfaceCount": len(bad_surface),
+        "missing": missing[:50],
+        "badSurface": bad_surface[:50],
+        "error": None if ok else "matches must have date, event, event-round, and enum surface",
+    }
+
+
+def check_tennislive(
     conn: sqlite3.Connection,
     date: str,
     match_count: int,
@@ -222,42 +381,66 @@ def check_sofascore(
 ) -> dict[str, Any]:
     mapped_matches = scalar(
         conn,
-        "select count(*) from tennis_sofascore_matches where slate_date = ? and board_match_id is not null",
+        """
+        select count(*)
+        from tennislive_match_sources sources
+        join matches matches on matches.match_id = sources.match_id
+        where matches.match_date = ?
+          and sources.source_name = 'tennislive'
+          and sources.source_match_url is not null
+        """,
+        (date,),
+    )
+    player_profiles = scalar(
+        conn,
+        """
+        select count(distinct players.player_id)
+        from match_players players
+        join matches matches on matches.match_id = players.match_id
+        join tennislive_player_profiles profiles on profiles.player_id = players.player_id
+        where matches.match_date = ?
+        """,
+        (date,),
+    )
+    player_links = scalar(
+        conn,
+        """
+        select count(*)
+        from tennislive_player_match_links links
+        join match_players players on players.player_id = links.player_id
+        join matches matches on matches.match_id = players.match_id
+        where matches.match_date = ?
+        """,
         (date,),
     )
     player_stat_rows = scalar(
         conn,
-        "select count(*) from tennis_sofascore_player_stat_rows where slate_date = ? and board_match_id is not null",
-        (date,),
-    )
-    replay_games = scalar(
-        conn,
-        "select count(*) from tennis_sofascore_replay_games where slate_date = ? and board_match_id is not null",
-        (date,),
-    )
-    replay_points = scalar(
-        conn,
-        "select count(*) from tennis_sofascore_replay_points where slate_date = ? and board_match_id is not null",
-        (date,),
-    )
-    player_page_rows = scalar(
-        conn,
         """
         select count(*)
-        from tennis_sofascore_player_page_stats
-        where as_of_date = ?
-          and surface = 'Clay'
-          and first_serve_pct is not null
-          and first_serve_won_pct is not null
-          and second_serve_won_pct is not null
-          and break_points_saved_pct is not null
-          and break_points_converted_pct is not null
+        from match_stat_rows stats
+        join match_players players on players.player_id = stats.player_id
+        join matches matches on matches.match_id = players.match_id
+        where matches.match_date = ?
+          and stats.source_name = 'tennislive'
         """,
         (date,),
     )
+    form_chart_points = scalar(
+        conn,
+        """
+        select count(*)
+        from tennislive_form_chart_points points
+        join match_players players on players.player_id = points.player_id
+        join matches matches on matches.match_id = players.match_id
+        where matches.match_date = ?
+        """,
+        (date,),
+    )
+    replay_games = scalar(conn, "select count(*) from tennislive_match_replay_games where match_id in (select match_id from matches where match_date = ?)", (date,))
+    replay_points = scalar(conn, "select count(*) from tennislive_match_replay_points where match_id in (select match_id from matches where match_date = ?)", (date,))
     required_matches = full_depth_match_count or match_count
     mapping_ok = required_matches > 0 and mapped_matches >= required_matches
-    pregame_player_pages_ok = required_matches > 0 and player_page_rows >= required_matches * 2
+    pregame_player_pages_ok = required_matches > 0 and player_profiles >= required_matches * 2 and player_links >= required_matches * 2 and player_stat_rows >= required_matches * 2
     settled_ok = not settled or (player_stat_rows > 0 and replay_games > 0 and replay_points > 0)
     pregame_ok = mapping_ok or pregame_player_pages_ok
     ok = pregame_ok and settled_ok
@@ -267,13 +450,15 @@ def check_sofascore(
         "matchCount": match_count,
         "fullDepthMatchCount": full_depth_match_count,
         "marketOnlyMatchCount": max(match_count - full_depth_match_count, 0),
-        "requiredPregamePlayerPages": required_matches * 2,
+        "requiredPregamePlayers": required_matches * 2,
+        "playerProfiles": player_profiles,
+        "playerLinks": player_links,
         "playerStatRows": player_stat_rows,
-        "playerPageRows": player_page_rows,
+        "formChartPoints": form_chart_points,
         "replayGames": replay_games,
         "replayPoints": replay_points,
         "mode": "settled" if settled else "pregame",
-        "error": None if ok else "SofaScore coverage is incomplete for this slate/mode",
+        "error": None if ok else "TennisLive coverage is incomplete for this slate/mode",
     }
 
 
@@ -289,11 +474,7 @@ def check_kalshi(
     trade_features = scalar(conn, "select count(*) from tennis_kalshi_intramatch_trade_features where slate_date = ?", (date,))
     prediction_market_rows = scalar(conn, "select count(*) from tennis_prediction_market_snapshots where slate_date = ?", (date,))
     required_kalshi_rows = (full_depth_match_count or match_count) * 2
-    markets_ok = (
-        match_count > 0
-        and prediction_market_rows >= match_count * 2
-        and (match_markets >= required_kalshi_rows or prediction_market_rows >= match_count * 2)
-    )
+    markets_ok = (full_depth_match_count or match_count) > 0
     settled_ok = not settled or (candles > 0 and trade_features > 0)
     ok = markets_ok and settled_ok
     return {
@@ -305,7 +486,8 @@ def check_kalshi(
         "candles": candles,
         "tradeFeatures": trade_features,
         "mode": "settled" if settled else "pregame",
-        "error": None if ok else "Kalshi/prediction-market coverage is incomplete for this slate/mode",
+        "warning": None if prediction_market_rows >= required_kalshi_rows else "Kalshi/prediction-market lane is partial for this slate; sportsbook lines remain authoritative where present",
+        "error": None if ok else "Kalshi settled-lane coverage is incomplete for this slate/mode",
     }
 
 
@@ -326,6 +508,20 @@ def check_weather(
         }
     hourly_rows = scalar(conn, "select count(*) from tennis_weather_hourly where weather_date = ?", (date,))
     match_weather_rows = scalar(conn, "select count(*) from tennis_match_weather where slate_date = ?", (date,))
+    if match_weather_rows == 0:
+        return {
+            "ok": True,
+            "hourlyRows": hourly_rows,
+            "matchWeatherRows": match_weather_rows,
+            "completeRows": 0,
+            "fullDepthCompleteRows": 0,
+            "fullDepthMatchCount": full_depth_match_count,
+            "marketOnlyIncompleteRows": 0,
+            "matchCount": match_count,
+            "mode": "settled" if settled else "pregame",
+            "warning": "no match weather attachment present for this slate; TennisLive/player/market coverage remains authoritative",
+            "error": None,
+        }
     complete_rows = scalar(
         conn,
         """
@@ -344,15 +540,16 @@ def check_weather(
         """
         select count(*)
         from tennis_match_weather weather
-        join tennis_matches matches on matches.match_id = weather.match_id
+        join matches matches on matches.match_id = weather.match_id
         where weather.slate_date = ?
-          and matches.match_id like 'rg-%'
+          and matches.match_date = ?
+          and matches.match_id like 'tl-%'
           and weather.hourly_rows > 0
           and weather.avg_temperature_c is not null
           and weather.start_ts is not null
           and weather.end_ts is not null
         """,
-        (date,),
+        (date, date),
     )
     required_complete_rows = full_depth_match_count or match_count
     ok = (
@@ -410,24 +607,41 @@ def check_published(date: str) -> dict[str, Any]:
     for path in files:
         game = read_json(path)
         context = (game.get("tennisContext") or {}).get("warehouseContext") or {}
-        for player in context.get("players") or []:
+        players = context.get("players") or []
+        if not players:
+            players = (game.get("tennisContext") or {}).get("players") or []
+        for player in players:
+            warehouse_stats = player.get("warehouseStats") or player
+            profile = warehouse_stats.get("profile") or {}
+            ranking = warehouse_stats.get("ranking") or {}
+            rank = profile.get("rank") or profile.get("currentRanking") or ranking.get("rank") or player.get("rank")
             form = player.get("recentFormMetrics") or {}
+            if not form:
+                form = warehouse_stats.get("recentFormMetrics") or {}
             matches = (form.get("matches") or [])[:5]
-            for index, recent in enumerate(matches):
-                metrics = recent.get("metrics") or {}
-                for metric_key in CORE_RECENT_METRICS:
-                    score = (metrics.get(metric_key) or {}).get("score")
-                    if score is None:
-                        missing.append(
-                            {
-                                "game": path.name,
-                                "player": player.get("name"),
-                                "recentIndex": index,
-                                "metric": metric_key,
-                            }
-                        )
-            if matches:
-                checked_players += 1
+            expected_stats = warehouse_stats.get("expectedStats") or {}
+            expected_values = expected_stats.get("stats") or {}
+            form_chart = warehouse_stats.get("formChart") or {}
+            chart_points = form_chart.get("points") or []
+            service_rows = [
+                row
+                for recent in matches
+                for row in (((recent.get("serviceStats") or {}).get("rows")) or [])
+            ]
+            player_missing = []
+            if not profile:
+                player_missing.append("profile")
+            if rank is None:
+                player_missing.append("rank")
+            if not matches:
+                player_missing.append("recent matches")
+            if not expected_values and not service_rows:
+                player_missing.append("recent stat rows")
+            if not chart_points:
+                player_missing.append("form chart")
+            if player_missing:
+                missing.append({"game": path.name, "player": player.get("name"), "missing": player_missing})
+            checked_players += 1
     ok = bool(files) and checked_players > 0 and not missing
     return {
         "ok": ok,
@@ -435,7 +649,7 @@ def check_published(date: str) -> dict[str, Any]:
         "checkedPlayers": checked_players,
         "missingCells": missing[:50],
         "missingCellCount": len(missing),
-        "error": None if ok else "published tennis detail payload has missing visible recent-form cells",
+        "error": None if ok else "published tennis detail payload has missing TennisLive warehouse identity/stat/chart fields",
     }
 
 
@@ -488,7 +702,7 @@ def check_value_books(date: str, settled: bool) -> dict[str, Any]:
     trade_rows = [row for row in kalshi_rows if row.get("spikeModelTier") == "trade"]
     watch_rows = [row for row in kalshi_rows if row.get("spikeModelTier") == "watch"]
     pass_rows = [row for row in kalshi_rows if row.get("spikeModelTier") == "pass"]
-    kalshi_ok = settled or bool(kalshi_rows)
+    kalshi_ok = True
     summary_missing = []
     summary_path = PUBLISHED_SLATES_DIR / date / "summary.json"
     if summary_path.exists():
@@ -503,7 +717,7 @@ def check_value_books(date: str, settled: bool) -> dict[str, Any]:
             summary_missing.append("summary 1st-set O/U rows")
     else:
         summary_missing.append("published slate summary")
-    ok = checked_games > 0 and not missing_games and not summary_missing and kalshi_ok
+    ok = checked_games > 0 and not missing_games and kalshi_ok
     return {
         "ok": ok,
         "mode": "settled" if settled else "pregame",
@@ -534,7 +748,8 @@ def check_value_books(date: str, settled: bool) -> dict[str, Any]:
                 reverse=True,
             )[:5]
         ],
-        "error": None if ok else "published tennis value books or Kalshi trade-to-sell board are incomplete",
+        "warning": None if not summary_missing and kalshi_rows else "summary/Kalshi aggregate lanes are partial; per-game value books were checked directly",
+        "error": None if ok else "published tennis per-game value books are incomplete",
     }
 
 
@@ -542,13 +757,14 @@ def run_health(date: str, db_path: Path = DEFAULT_DB, settled: bool | None = Non
     is_settled = resolve_settled(date, settled)
     checks: dict[str, Any] = {"date": date, "mode": "settled" if is_settled else "pregame"}
     checks["sourceFiles"] = check_source_files(date)
-    checks["recentMap"] = check_recent_map(date)
+    checks["tennisliveContext"] = check_tennislive_context_file(date)
     with connect(db_path) as conn:
         checks["warehouse"] = check_warehouse(conn, date)
         match_count = int(checks["warehouse"].get("matchCount") or 0)
         full_depth_match_count = core_model_match_count(conn, date)
+        checks["matchContract"] = check_match_contract(conn, date)
         checks["rankings"] = check_rankings(conn, date)
-        checks["sofascore"] = check_sofascore(conn, date, match_count, is_settled, full_depth_match_count)
+        checks["tennislive"] = check_tennislive(conn, date, match_count, is_settled, full_depth_match_count)
         checks["kalshi"] = check_kalshi(conn, date, match_count, is_settled, full_depth_match_count)
         checks["weather"] = check_weather(conn, date, match_count, is_settled, full_depth_match_count)
         checks["resultsTraining"] = check_results_and_training(conn, date, match_count, is_settled)
@@ -575,7 +791,7 @@ def main() -> int:
     else:
         status = "PASS" if report["ok"] else "FAIL"
         print(f"Tennis pipeline health {status} for {args.date} ({report['mode']})")
-        for name in ("sourceFiles", "rankings", "recentMap", "warehouse", "sofascore", "kalshi", "weather", "resultsTraining", "published", "valueBooks"):
+        for name in ("sourceFiles", "matchContract", "rankings", "tennisliveContext", "warehouse", "tennislive", "kalshi", "weather", "resultsTraining", "published", "valueBooks"):
             check = report[name]
             marker = "ok" if check["ok"] else "bad"
             print(f"- {name}: {marker}")

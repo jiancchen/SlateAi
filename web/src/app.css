@@ -7295,6 +7295,20 @@ h3 {
   stroke-linejoin: round;
 }
 
+.tennislive-form-chart circle {
+  fill: rgba(82, 214, 179, 0.9);
+  stroke: rgba(5, 13, 18, 0.95);
+  stroke-width: 1.2;
+  cursor: help;
+}
+
+.tennislive-form-chart circle:hover,
+.tennislive-form-chart circle:focus {
+  fill: var(--warning);
+  stroke: var(--heading);
+  outline: none;
+}
+
 .tennis-last-five-strip {
   display: grid;
   gap: 7px;

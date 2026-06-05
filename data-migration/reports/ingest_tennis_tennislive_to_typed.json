@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "started_at": "2026-06-05T02:48:04.098577+00:00",
+  "finished_at": "2026-06-05T02:48:07.392316+00:00",
+  "player_urls": [],
+  "match_urls": [
+    "https://www.tennislive.net/wta/match/barbora-palicova-VS-elina-avanesyan/makarska-open-makarska-2026/",
+    "https://www.tennislive.net/atp/match/andre-ilagan-VS-yuta-shimizu/tyler-challenger-2026/",
+    "https://www.tennislive.net/wta/match/maria-timofeeva-VS-yasmine-kabbaj/makarska-open-makarska-2026/",
+    "https://www.tennislive.net/wta/match/noma-akugue-noha-VS-sara-sorribes-tormo/makarska-open-makarska-2026/"
+  ],
+  "max_links": 5,
+  "max_matches": 5,
+  "player_results": [],
+  "match_results": [
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-05-makarska-open-makarska-2026-barbora-palicova-vs-elina-avanesyan",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 0,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-05-tyler-challenger-2026-andre-ilagan-vs-yuta-shimizu",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 3,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-05-makarska-open-makarska-2026-maria-timofeeva-vs-yasmine-kabbaj",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 0,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-05-makarska-open-makarska-2026-noma-akugue-noha-vs-sara-sorribes-tormo",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 0,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    }
+  ],
+  "failures": []
+}

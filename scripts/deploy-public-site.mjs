@@ -222,6 +222,11 @@ const main = async () => {
 
   await run('public build', npmCommand, ['run', 'build'], { env })
   const preflight = await assertDeployShape({ requestedDate })
+  for (const slateId of preflight.publicSlateIds) {
+    if (slateId >= '2026-06-05' && fsSync.existsSync(path.join(webRoot, 'src', 'lib', `day-${slateId}.js`))) {
+      await run('tennis active source audit', 'node', ['scripts/audit-tennis-active-sources.mjs', '--date', slateId])
+    }
+  }
   const staticArtifact = await hashDir(path.join(webRoot, 'dist'))
   const deployOutput = dryRun
     ? ''

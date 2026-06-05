@@ -190,7 +190,286 @@
             "sourceUrl": "https://www.tennislive.net/atp/andre-ilagan/",
             "asOf": "2026-06-04T22:53:29.961649+00:00"
           },
-          "formChart": null,
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/andre-ilagan-VS-yuta-shimizu/tyler-challenger-2026/",
+            "capturedAt": "2026-06-05T02:48:05.615354+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 1,
+                "value": 1,
+                "label": "05.03.2026 (win vs Daniil Sarksian)",
+                "date": "2026-03-05",
+                "result": "win",
+                "opponentName": "Daniil Sarksian"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 2,
+                "value": 2,
+                "label": "06.03.2026 (win vs Jeremy Schifris)",
+                "date": "2026-03-06",
+                "result": "win",
+                "opponentName": "Jeremy Schifris"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 3,
+                "value": 3,
+                "label": "07.03.2026 (win vs Fitriadi M Rifqi)",
+                "date": "2026-03-07",
+                "result": "win",
+                "opponentName": "Fitriadi M Rifqi"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 4,
+                "value": 2,
+                "label": "08.03.2026 (lost vs Koki Matsuda)",
+                "date": "2026-03-08",
+                "result": "lost",
+                "opponentName": "Koki Matsuda"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 5,
+                "value": 3,
+                "label": "11.03.2026 (win vs Yuttana Charoenphon)",
+                "date": "2026-03-11",
+                "result": "win",
+                "opponentName": "Yuttana Charoenphon"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 6,
+                "value": 4,
+                "label": "12.03.2026 (win vs Fitriadi M Rifqi)",
+                "date": "2026-03-12",
+                "result": "win",
+                "opponentName": "Fitriadi M Rifqi"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 7,
+                "value": 5,
+                "label": "13.03.2026 (win vs Filip Peliwo)",
+                "date": "2026-03-13",
+                "result": "win",
+                "opponentName": "Filip Peliwo"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 8,
+                "value": 6,
+                "label": "14.03.2026 (win vs Matthew Dellavedova)",
+                "date": "2026-03-14",
+                "result": "win",
+                "opponentName": "Matthew Dellavedova"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 9,
+                "value": 5,
+                "label": "15.03.2026 (lost vs Jie Cui)",
+                "date": "2026-03-15",
+                "result": "lost",
+                "opponentName": "Jie Cui"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 10,
+                "value": 6,
+                "label": "17.03.2026 (win vs Weiwen Pan)",
+                "date": "2026-03-17",
+                "result": "win",
+                "opponentName": "Weiwen Pan"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 11,
+                "value": 5,
+                "label": "19.03.2026 (lost vs Rigele Te)",
+                "date": "2026-03-19",
+                "result": "lost",
+                "opponentName": "Rigele Te"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 12,
+                "value": 4,
+                "label": "24.03.2026 (lost vs James McCabe)",
+                "date": "2026-03-24",
+                "result": "lost",
+                "opponentName": "James McCabe"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 13,
+                "value": 5,
+                "label": "31.03.2026 (win vs Yuta Shimizu)",
+                "date": "2026-03-31",
+                "result": "win",
+                "opponentName": "Yuta Shimizu"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 14,
+                "value": 6,
+                "label": "02.04.2026 (win vs Yuto Oki)",
+                "date": "2026-04-02",
+                "result": "win",
+                "opponentName": "Yuto Oki"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 15,
+                "value": 5,
+                "label": "03.04.2026 (lost vs Liam Broady)",
+                "date": "2026-04-03",
+                "result": "lost",
+                "opponentName": "Liam Broady"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 16,
+                "value": 4,
+                "label": "19.04.2026 (lost vs Kasidit Samrej)",
+                "date": "2026-04-19",
+                "result": "lost",
+                "opponentName": "Kasidit Samrej"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 17,
+                "value": 5,
+                "label": "26.04.2026 (win vs Xing Dao Chen)",
+                "date": "2026-04-26",
+                "result": "win",
+                "opponentName": "Xing Dao Chen"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 18,
+                "value": 6,
+                "label": "27.04.2026 (win vs Kody Pearson)",
+                "date": "2026-04-27",
+                "result": "win",
+                "opponentName": "Kody Pearson"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 19,
+                "value": 7,
+                "label": "29.04.2026 (win vs James McCabe)",
+                "date": "2026-04-29",
+                "result": "win",
+                "opponentName": "James McCabe"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 20,
+                "value": 6,
+                "label": "30.04.2026 (lost vs Bu Yunchaokete)",
+                "date": "2026-04-30",
+                "result": "lost",
+                "opponentName": "Bu Yunchaokete"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 21,
+                "value": 7,
+                "label": "03.05.2026 (win vs Linang Xiao)",
+                "date": "2026-05-03",
+                "result": "win",
+                "opponentName": "Linang Xiao"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 22,
+                "value": 8,
+                "label": "04.05.2026 (win vs Hiroki Moriya)",
+                "date": "2026-05-04",
+                "result": "win",
+                "opponentName": "Hiroki Moriya"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 23,
+                "value": 9,
+                "label": "05.05.2026 (win vs Jason Jung)",
+                "date": "2026-05-05",
+                "result": "win",
+                "opponentName": "Jason Jung"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 24,
+                "value": 8,
+                "label": "06.05.2026 (lost vs Dane Sweeny)",
+                "date": "2026-05-06",
+                "result": "lost",
+                "opponentName": "Dane Sweeny"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 25,
+                "value": 9,
+                "label": "25.05.2026 (win vs Yasutaka Uchiyama)",
+                "date": "2026-05-25",
+                "result": "win",
+                "opponentName": "Yasutaka Uchiyama"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 26,
+                "value": 10,
+                "label": "29.05.2026 (win vs Enzo Aguiard)",
+                "date": "2026-05-29",
+                "result": "win",
+                "opponentName": "Enzo Aguiard"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 27,
+                "value": 11,
+                "label": "30.05.2026 (win vs Aidan Mayo)",
+                "date": "2026-05-30",
+                "result": "win",
+                "opponentName": "Aidan Mayo"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 28,
+                "value": 10,
+                "label": "30.05.2026 (lost vs Colton Smith)",
+                "date": "2026-05-30",
+                "result": "lost",
+                "opponentName": "Colton Smith"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 29,
+                "value": 11,
+                "label": "03.06.2026 (win vs Fajing Sun)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Fajing Sun"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 30,
+                "value": 12,
+                "label": "04.06.2026 (win vs Edas Butvilas)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Edas Butvilas"
+              }
+            ],
+            "latestValue": 12,
+            "minValue": 1,
+            "maxValue": 12
+          },
           "expectedStats": {
             "source": "TennisLive recent-match stats",
             "matches": 5,
@@ -1155,7 +1434,286 @@
             "sourceUrl": "https://www.tennislive.net/atp/yuta-shimizu/",
             "asOf": "2026-06-04T22:53:54.347580+00:00"
           },
-          "formChart": null,
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/andre-ilagan-VS-yuta-shimizu/tyler-challenger-2026/",
+            "capturedAt": "2026-06-05T02:48:05.615354+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 1,
+                "value": -1,
+                "label": "06.11.2025 (lost vs Kaichi Uchida)",
+                "date": "2025-11-06",
+                "result": "lost",
+                "opponentName": "Kaichi Uchida"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 2,
+                "value": -2,
+                "label": "10.11.2025 (lost vs Yu Hsiou Hsu)",
+                "date": "2025-11-10",
+                "result": "lost",
+                "opponentName": "Yu Hsiou Hsu"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 3,
+                "value": -1,
+                "label": "16.11.2025 (win vs Yusuke Takahashi)",
+                "date": "2025-11-16",
+                "result": "win",
+                "opponentName": "Yusuke Takahashi"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 4,
+                "value": -2,
+                "label": "18.11.2025 (lost vs Yusuke Kusuhara)",
+                "date": "2025-11-18",
+                "result": "lost",
+                "opponentName": "Yusuke Kusuhara"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 5,
+                "value": -1,
+                "label": "06.01.2026 (win vs Taisei Ichikawa)",
+                "date": "2026-01-06",
+                "result": "win",
+                "opponentName": "Taisei Ichikawa"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 6,
+                "value": -2,
+                "label": "07.01.2026 (lost vs Marek Gengel)",
+                "date": "2026-01-07",
+                "result": "lost",
+                "opponentName": "Marek Gengel"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 7,
+                "value": -3,
+                "label": "13.01.2026 (lost vs Daniel Michalski)",
+                "date": "2026-01-13",
+                "result": "lost",
+                "opponentName": "Daniel Michalski"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 8,
+                "value": -2,
+                "label": "02.02.2026 (win vs Renta Tokuda)",
+                "date": "2026-02-02",
+                "result": "win",
+                "opponentName": "Renta Tokuda"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 9,
+                "value": -3,
+                "label": "04.02.2026 (lost vs Alex Bolt)",
+                "date": "2026-02-04",
+                "result": "lost",
+                "opponentName": "Alex Bolt"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 10,
+                "value": -2,
+                "label": "23.02.2026 (win vs Lorenzo Carboni)",
+                "date": "2026-02-23",
+                "result": "win",
+                "opponentName": "Lorenzo Carboni"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 11,
+                "value": -3,
+                "label": "25.02.2026 (lost vs Federico Cina)",
+                "date": "2026-02-25",
+                "result": "lost",
+                "opponentName": "Federico Cinà"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 12,
+                "value": -2,
+                "label": "24.03.2026 (win vs Jie Cui)",
+                "date": "2026-03-24",
+                "result": "win",
+                "opponentName": "Jie Cui"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 13,
+                "value": -1,
+                "label": "26.03.2026 (win vs Yu Hsiou Hsu)",
+                "date": "2026-03-26",
+                "result": "win",
+                "opponentName": "Yu Hsiou Hsu"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 14,
+                "value": -2,
+                "label": "27.03.2026 (lost vs Harry Wendelken)",
+                "date": "2026-03-27",
+                "result": "lost",
+                "opponentName": "Harry Wendelken"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 15,
+                "value": -3,
+                "label": "31.03.2026 (lost vs Andre Ilagan)",
+                "date": "2026-03-31",
+                "result": "lost",
+                "opponentName": "Andre Ilagan"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 16,
+                "value": -2,
+                "label": "12.04.2026 (win vs Ben Jones)",
+                "date": "2026-04-12",
+                "result": "win",
+                "opponentName": "Ben Jones"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 17,
+                "value": -3,
+                "label": "13.04.2026 (lost vs Marat Sharipov)",
+                "date": "2026-04-13",
+                "result": "lost",
+                "opponentName": "Marat Sharipov"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 18,
+                "value": -2,
+                "label": "19.04.2026 (win vs Jake Delaney)",
+                "date": "2026-04-19",
+                "result": "win",
+                "opponentName": "Jake Delaney"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 19,
+                "value": -1,
+                "label": "20.04.2026 (win vs Taro Daniel)",
+                "date": "2026-04-20",
+                "result": "win",
+                "opponentName": "Taro Daniel"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 20,
+                "value": 0,
+                "label": "21.04.2026 (win vs Yasutaka Uchiyama)",
+                "date": "2026-04-21",
+                "result": "win",
+                "opponentName": "Yasutaka Uchiyama"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 21,
+                "value": 1,
+                "label": "23.04.2026 (win vs Sho Shimabukuro)",
+                "date": "2026-04-23",
+                "result": "win",
+                "opponentName": "Sho Shimabukuro"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 22,
+                "value": 0,
+                "label": "24.04.2026 (lost vs August Holmgren)",
+                "date": "2026-04-24",
+                "result": "lost",
+                "opponentName": "August Holmgren"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 23,
+                "value": 1,
+                "label": "26.04.2026 (win vs Yuxiang Tian)",
+                "date": "2026-04-26",
+                "result": "win",
+                "opponentName": "Yuxiang Tian"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 24,
+                "value": 2,
+                "label": "27.04.2026 (win vs Yusuke Takahashi)",
+                "date": "2026-04-27",
+                "result": "win",
+                "opponentName": "Yusuke Takahashi"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 25,
+                "value": 1,
+                "label": "29.04.2026 (lost vs Sho Shimabukuro)",
+                "date": "2026-04-29",
+                "result": "lost",
+                "opponentName": "Sho Shimabukuro"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 26,
+                "value": 0,
+                "label": "03.05.2026 (lost vs Evan Zhu)",
+                "date": "2026-05-03",
+                "result": "lost",
+                "opponentName": "Evan Zhu"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 27,
+                "value": 1,
+                "label": "25.05.2026 (win vs Andres Martin)",
+                "date": "2026-05-25",
+                "result": "win",
+                "opponentName": "Andres Martin"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 28,
+                "value": 0,
+                "label": "27.05.2026 (lost vs Bernard Tomic)",
+                "date": "2026-05-27",
+                "result": "lost",
+                "opponentName": "Bernard Tomic"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 29,
+                "value": 1,
+                "label": "03.06.2026 (win vs Dane Sweeny)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Dane Sweeny"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 30,
+                "value": 2,
+                "label": "04.06.2026 (win vs Murphy Cassone)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Murphy Cassone"
+              }
+            ],
+            "latestValue": 2,
+            "minValue": -3,
+            "maxValue": 2
+          },
           "expectedStats": {
             "source": "TennisLive recent-match stats",
             "matches": 5,

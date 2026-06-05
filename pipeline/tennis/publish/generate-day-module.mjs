@@ -4,6 +4,7 @@ import { execFileSync } from 'node:child_process'
 
 const ROOT = path.resolve(import.meta.dirname, '..', '..', '..')
 const DEFAULT_TENNIS_DB = 'data-private/warehouse/sports/tennis/sql-tennis.db'
+const BLOCKED_TENNIS_SOURCE_PATTERN = /flashscore|sofascore|tennistonic|tennis[_\s-]*tonic/i
 const MODEL_CARTRIDGES = {
   'TEN-T0': {
     id: 'TEN-T0',
@@ -258,6 +259,21 @@ const startMinutes = (isoDate) => {
 
 const getRanking = (rankings, name) => rankings.players?.[normalizeName(name)] ?? null
 
+const playerIdentityKeys = (name) => {
+  const key = normalizeName(name)
+  const aliasMap = {
+    'bu yunchaokete': ['yunchaokete bu'],
+    'yunchaokete bu': ['bu yunchaokete'],
+    'georgia pedone': ['giorgia pedone'],
+    'giorgia pedone': ['georgia pedone'],
+    'noma akugue noha': ['noma noha akugue'],
+    'noma noha akugue': ['noma akugue noha'],
+    'diego dedura': ['diego dedura palomero'],
+    'diego dedura palomero': ['diego dedura']
+  }
+  return Array.from(new Set([key, ...(aliasMap[key] || [])]))
+}
+
 const warehouseRanking = (warehousePlayer) => {
   const ranking = warehousePlayer?.ranking || {}
   const profile = warehousePlayer?.profile || {}
@@ -284,9 +300,14 @@ const findQuality = (quality, matchId, name) => {
 
 const findWarehousePlayer = (warehouse, matchId, name) => {
   const players = warehouse?.matches?.[matchId]?.players || []
-  const key = normalizeName(name)
-  const playerByName = warehouse?.playersByName?.[key]
+  const keys = playerIdentityKeys(name)
+  const matchPlayer = players.find((player) => keys.includes(normalizeName(player.name)))
+  if (matchPlayer) return matchPlayer
+  const playerByName = keys.map((key) => warehouse?.playersByName?.[key]).find(Boolean)
   if (
+    playerByName?.profile ||
+    playerByName?.ranking ||
+    playerByName?.expectedStats ||
     playerByName?.recentFormMetrics?.sourceUrl ||
     playerByName?.recentFormMetrics?.matches?.some((row) => row.source === 'tennislive') ||
     playerByName?.recentFormMetrics?.summary?.some((row) => row.source === 'tennislive')
@@ -352,7 +373,7 @@ const mergeWarehouseExpectedStats = (name, qualityPlayer, warehousePlayer) => {
   }
 }
 
-const clayRecordScore = (qualityPlayer, surface = 'Clay') => {
+const clayRecordScore = (qualityPlayer, surface = 'Unknown') => {
   if (!isClaySurface(surface)) return 0
   const record = qualityPlayer?.records?.clay2026
   if (!record || !Number.isFinite(Number(record.winPct)) || !Number.isFinite(Number(record.total))) return 0
@@ -788,7 +809,7 @@ const rankScore = (ranking) => {
   return -16
 }
 
-const playerScore = (ranking, qualityPlayer, isAtp, surface = 'Clay') =>
+const playerScore = (ranking, qualityPlayer, isAtp, surface = 'Unknown') =>
   rankScore(ranking) +
   clayRecordScore(qualityPlayer, surface) +
   formScore(qualityPlayer) +
@@ -1244,14 +1265,14 @@ const buildEnsembleValueCase = ({ row, rawPickName, players, selectionQuality, o
   }
 }
 
-const formatProfile = (ranking, qualityPlayer, surface = 'Clay') => {
+const formatProfile = (ranking, qualityPlayer, surface = 'Unknown') => {
   const clayRecord = qualityPlayer?.records?.clay2026
   const parts = [
     Number.isFinite(Number(ranking?.rank)) ? `Live rank #${ranking.rank}` : 'Rank not joined',
     ranking?.country ? ranking.country : null,
     Number.isFinite(Number(ranking?.age)) ? `age ${ranking.age}` : null,
     clayRecord && isClaySurface(surface) ? `2026 clay ${formatRecord(clayRecord)}` : null,
-    clayRecord && !isClaySurface(surface) ? `${surface || 'Surface'} match; clay record context only` : null,
+    clayRecord && !isClaySurface(surface) ? `${surface || 'Surface'} match; surface-specific record unavailable` : null,
     Number.isFinite(Number(qualityPlayer?.recentWindow?.opponentAdjustedFormScore))
       ? `adj form ${Math.round(Number(qualityPlayer.recentWindow.opponentAdjustedFormScore))}`
       : null,
@@ -1262,7 +1283,7 @@ const formatProfile = (ranking, qualityPlayer, surface = 'Clay') => {
   return parts.join(' | ')
 }
 
-const buildRead = ({ pick, opponent, confidence, volatility, pickQuality, oppQuality, isAtp, surface = 'Clay' }) => {
+const buildRead = ({ pick, opponent, confidence, volatility, pickQuality, oppQuality, isAtp, surface = 'Unknown' }) => {
   const pickHold = serviceAverage(pickQuality, 'avgServiceHoldPct')
   const oppHold = serviceAverage(oppQuality, 'avgServiceHoldPct')
   const pickForm = Number(pickQuality?.recentWindow?.opponentAdjustedFormScore)
@@ -1292,7 +1313,7 @@ const buildRead = ({ pick, opponent, confidence, volatility, pickQuality, oppQua
     notes.push(
       isClaySurface(surface)
         ? `${pick} has the cleaner composite of rank, clay record, and recent opponent quality.`
-        : `${pick} has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on ${surface || 'this surface'}.`
+        : `${pick} has the cleaner composite of rank, recent opponent quality, and joined service data on ${surface || 'this surface'}.`
     )
   }
   const discipline =
@@ -1713,18 +1734,24 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
     const impliedPct = Number(player?.impliedPct)
     const candidateEv = Number.isFinite(modelPct) && odds !== null ? evPer100(modelPct, odds) : null
     const candidateNetEv = Number.isFinite(modelPct) && odds !== null ? netEvPer100(modelPct, odds) : null
+    const issueText = valueIssue({ marketType: 'ML', edgePct, ev: candidateEv, netEv: candidateNetEv, odds, modelPct })
+    const gradeText = valueGrade({ marketType: 'ML', edgePct, ev: candidateEv, odds, modelPct })
+    const suppressRawEv = /outlier|manual|model-market/i.test(`${issueText} ${gradeText}`)
     return {
       marketType: 'ML',
       selection: player?.name,
       americanOdds: odds,
       modelPct: Number.isFinite(modelPct) ? Number(modelPct.toFixed(1)) : null,
       impliedPct: Number.isFinite(impliedPct) ? Number(impliedPct.toFixed(1)) : null,
-      edgePct: Number.isFinite(edgePct) ? Number(edgePct.toFixed(1)) : null,
-      evPer100: candidateEv,
-      netEvPer100: candidateNetEv,
+      edgePct: suppressRawEv ? null : Number.isFinite(edgePct) ? Number(edgePct.toFixed(1)) : null,
+      evPer100: suppressRawEv ? null : candidateEv,
+      netEvPer100: suppressRawEv ? null : candidateNetEv,
       feePer100: FEE_PER_100_RISKED,
-      valueIssue: valueIssue({ marketType: 'ML', edgePct, ev: candidateEv, netEv: candidateNetEv, odds, modelPct }),
-      valueGrade: valueGrade({ marketType: 'ML', edgePct, ev: candidateEv, odds, modelPct }),
+      rawEdgePct: Number.isFinite(edgePct) ? Number(edgePct.toFixed(1)) : null,
+      rawEvPer100: candidateEv,
+      rawNetEvPer100: candidateNetEv,
+      valueIssue: issueText,
+      valueGrade: gradeText,
       betGrade: isBetGradeValue({ marketType: 'ML', edgePct, ev: candidateEv, odds, modelPct })
     }
   }
@@ -1745,14 +1772,16 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
   const bestOpponentMl = (marketData.players || [])
     .filter((player) => player?.name && player.name !== pickName)
     .map(mlCandidateFor)
-    .filter((row) => Number.isFinite(Number(row.edgePct)) || Number.isFinite(Number(row.evPer100)))
-    .sort((left, right) => Math.max(Number(right.edgePct) || -99, Number(right.evPer100) || -99) - Math.max(Number(left.edgePct) || -99, Number(left.evPer100) || -99))[0]
+    .filter((row) => Number.isFinite(Number(row.rawEdgePct ?? row.edgePct)) || Number.isFinite(Number(row.rawEvPer100 ?? row.evPer100)))
+    .sort((left, right) => Math.max(Number(right.rawEdgePct ?? right.edgePct) || -99, Number(right.rawEvPer100 ?? right.evPer100) || -99) - Math.max(Number(left.rawEdgePct ?? left.edgePct) || -99, Number(left.rawEvPer100 ?? left.evPer100) || -99))[0]
   const pickIsTaxed = Number(pickedMl.edgePct) <= -4 || Number(pickedMl.evPer100) < -4 || ['Negative EV', 'Favorite tax trap'].includes(pickedMl.valueGrade)
   const mlValueRow =
-    pickIsTaxed && bestOpponentMl && (Number(bestOpponentMl.edgePct) > 0 || Number(bestOpponentMl.evPer100) > 0)
+    pickIsTaxed && bestOpponentMl && (Number(bestOpponentMl.rawEdgePct ?? bestOpponentMl.edgePct) > 0 || Number(bestOpponentMl.rawEvPer100 ?? bestOpponentMl.evPer100) > 0)
       ? {
           ...bestOpponentMl,
-          valueIssue: `Picked side is overpriced; value board flips to ${bestOpponentMl.selection} because that side has the better posted-price edge.`,
+          valueIssue: /outlier|manual|model-market/i.test(String(bestOpponentMl.valueGrade || bestOpponentMl.valueIssue || ''))
+            ? `Outlier dog price on ${bestOpponentMl.selection}; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.`
+            : `Picked side is overpriced; value board flips to ${bestOpponentMl.selection} because that side has the better posted-price edge.`,
           betGrade: false
         }
       : pickedMl
@@ -1877,13 +1906,15 @@ const buildBettingMatrix = ({ marketData, valueBoard, setWinProjections, derivat
       americanOdds: ml.americanOdds,
       modelPct: ml.modelPct ?? confidence,
       impliedPct: ml.impliedPct ?? marketData?.desk?.impliedPct ?? null,
-      edgePct: ml.edgePct ?? marketData?.desk?.edgePct ?? null,
+      edgePct: ml.edgePct ?? (ml.selection === pickName ? marketData?.desk?.edgePct ?? null : null),
       evPer100: ml.evPer100 ?? null,
       netEvPer100: ml.netEvPer100 ?? null,
       grade: ml.valueGrade || 'No price',
       issue: ml.valueIssue || null,
       reason:
-        ml.valueGrade === 'Favorite tax trap'
+        /outlier|manual|model-market/i.test(String(ml.valueGrade || ml.valueIssue || ''))
+          ? 'Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation.'
+          : ml.valueGrade === 'Favorite tax trap'
           ? 'Likely winner can still be a bad ML bet after payout and fees. Check spread, total, and set-win instead.'
           : marketData?.priceAction || 'Compare model probability to break-even price before betting ML.'
     })
@@ -1994,10 +2025,10 @@ const buildGame = (match, rankings, quality, warehouse, date, sportsbookIndex, r
   const eventMeta = eventMetaFromSportsbook(sportsbook, tour)
   const eventName = eventMeta.eventName
   const surface = inferSurface(match.surface, eventMeta.surface, eventName, match.stage, match.round, match.court, match.raw?.league)
-  const rankA = getRanking(rankings, a.name)
-  const rankB = getRanking(rankings, b.name)
   const warehouseA = findWarehousePlayer(warehouse, matchId, a.name)
   const warehouseB = findWarehousePlayer(warehouse, matchId, b.name)
+  const rankA = warehouseRanking(warehouseA) ?? getRanking(rankings, a.name)
+  const rankB = warehouseRanking(warehouseB) ?? getRanking(rankings, b.name)
   const qualityA = mergeWarehouseExpectedStats(a.name, findQuality(quality, matchId, a.name), warehouseA)
   const qualityB = mergeWarehouseExpectedStats(b.name, findQuality(quality, matchId, b.name), warehouseB)
   const scoreA = playerScore(rankA, qualityA, tour === 'ATP', surface)
@@ -2140,8 +2171,8 @@ const buildSupplementGame = (match, rankings, warehouse, sportsbookIndex) => {
   const surface = match.surface || inferSurface(match.tournament, match.category, match.title)
   const warehouseA = findWarehousePlayer(warehouse, match.id, a.name)
   const warehouseB = findWarehousePlayer(warehouse, match.id, b.name)
-  const rankA = getRanking(rankings, a.name) ?? warehouseRanking(warehouseA)
-  const rankB = getRanking(rankings, b.name) ?? warehouseRanking(warehouseB)
+  const rankA = warehouseRanking(warehouseA) ?? getRanking(rankings, a.name)
+  const rankB = warehouseRanking(warehouseB) ?? getRanking(rankings, b.name)
   const qualityA = mergeWarehouseExpectedStats(a.name, null, warehouseA)
   const qualityB = mergeWarehouseExpectedStats(b.name, null, warehouseB)
   const depthA = warehouseDepthSummary(warehouseA)
@@ -2348,6 +2379,15 @@ const guessTour = (aName, bName, rankings) => {
 
 const jsString = (value) => JSON.stringify(value, null, 2)
 
+const assertNoBlockedTennisSources = (label, payload) => {
+  const text = typeof payload === 'string' ? payload : JSON.stringify(payload)
+  const match = BLOCKED_TENNIS_SOURCE_PATTERN.exec(text || '')
+  if (!match) return
+  const start = Math.max(0, match.index - 90)
+  const end = Math.min(text.length, match.index + match[0].length + 90)
+  throw new Error(`Blocked legacy tennis source leaked into ${label}: ...${text.slice(start, end).replace(/\s+/g, ' ')}...`)
+}
+
 const main = async () => {
   const options = parseArgs()
   const modelCartridge = MODEL_CARTRIDGES[options.model]
@@ -2358,7 +2398,7 @@ const main = async () => {
   const rankings = useDbInputs
     ? loadDbRankings(options.date, options.dbPath)
     : await readJson('data-private/reference/tennis/player-rankings.json', { players: {} })
-  const quality = await readJson(`web/src/lib/day-${options.date}-tennis-opponent-quality.generated.json`, { matches: {} })
+  const quality = { matches: {} }
   const warehouseContext = await readJson(`web/src/lib/day-${options.date}-tennis-warehouse-context.generated.json`, { matches: {} })
   const draftkingsLines = await readJson(`data-private/reference/tennis/draftkings-lines-${options.date}.json`, { matches: [] })
   const fanduelLines = await readJson(`data-private/reference/tennis/fanduel-lines-${options.date}.json`, { matches: [] })
@@ -2404,6 +2444,22 @@ const main = async () => {
   const compact = options.date.replaceAll('-', '')
   let moduleText = `import { createSportsMatchModel } from './sports-model.js'\nimport tennisClayContext from './day-${options.date}-tennis-clay-context.generated.json' with { type: 'json' }\nimport tennisOpponentQualityContext from './day-${options.date}-tennis-opponent-quality.generated.json' with { type: 'json' }\nimport tennisWarehouseContext from './day-${options.date}-tennis-warehouse-context.generated.json' with { type: 'json' }\n\nconst rawTennisGames = ${jsString(games)}\n\nconst normalizePlayerName = (value) => {\n  const normalized = String(value || '').normalize('NFKD').replace(/[\\u0300-\\u036f]/g, '').replace(/[^a-z0-9]+/gi, ' ').trim().toLowerCase()\n  return ({ 'barbora palicov': 'barbora palicova', 'bu yunchaokete': 'yunchaokete bu', 'chak lam coleman wong': 'coleman wong', 'diego dedura': 'diego dedura palomero', 'georgia pedone': 'giorgia pedone', 'noma akugue noha': 'noma noha akugue', 'taro taro': 'taro daniel', 'xinyu wang': 'wang xinyu', 'xiyu wang': 'wang xiyu', 'yibing wu': 'wu yibing' })[normalized] || normalized\n}\n\nconst participant = (id, index, role, player) => ({\n  id: \`\${id}:\${index}\`,\n  index,\n  role,\n  name: player.name,\n  detail: player.profile || 'Profile pending',\n  americanOdds: player.market?.odds ?? null,\n  americanLabel: player.market?.americanLabel ?? 'N/A',\n  decimalOdds: player.market?.decimalOdds ?? null,\n  impliedProbability: player.market?.impliedPct ? player.market.impliedPct / 100 : null,\n  impliedProbabilityLabel: player.market?.impliedPct ? \`\${player.market.impliedPct}%\` : 'N/A'\n})\n\nconst buildGame = (raw) => {\n  const market = raw.marketData ?? null\n  const players = raw.players.map((player) => ({ ...player, market: market?.players?.find((entry) => entry.name === player.name) ?? null }))\n  const participants = [participant(raw.id, 0, 'Player 1', players[0]), participant(raw.id, 1, 'Player 2', players[1])]\n  const pickIndex = raw.pickName === raw.players[0].name ? 0 : 1\n  const picked = participants[pickIndex]\n  const opponent = participants[pickIndex === 0 ? 1 : 0]\n  const qualityContext = tennisOpponentQualityContext.matches?.[raw.id] ?? null\n  const clayData = tennisClayContext.matches?.[raw.id] ?? null\n  const warehouseContext = tennisWarehouseContext.matches?.[raw.id] ?? null\n  const marketPlayers = market?.players ?? []\n  const deskMarket = market?.desk ?? null\n  const marketEconomics = market ? {\n    source: market.source,\n    capturedAt: market.capturedAt,\n    eventUrl: market.eventUrl,\n    deskName: raw.pickName,\n    deskPricePct: deskMarket?.impliedPct ?? null,\n    deskEdgePct: deskMarket?.edgePct ?? null,\n    priceAction: market.priceAction,\n    players: marketPlayers.map((player) => ({\n      name: player.name,\n      americanOdds: player.odds,\n      impliedPct: player.impliedPct,\n      modelPct: player.modelPct,\n      edgePct: player.edgePct,\n      priceBand: player.priceBand,\n      grossProfitPct: player.grossProfitPct,\n      grossPayoutMultiple: player.grossPayoutMultiple,\n      centsAtRisk: player.centsAtRisk,\n      centsProfitIfWin: player.centsProfitIfWin\n    }))\n  } : null\n  const predictionMarket = market ? {\n    source: market.source,\n    capturedAt: market.capturedAt,\n    totalVolume: null,\n    players: marketPlayers.map((player) => ({ name: player.name, probabilityPct: player.impliedPct, amount: null, americanOdds: player.odds, edgePct: player.edgePct, priceBand: player.priceBand }))\n  } : null\n  const oddsMarkets = [\n    { label: 'Model fair', book: 'Tennis warehouse model', value: raw.players.map((player) => \`\${player.name} \${player.modelPct}%\`).join(' / ') },\n    market ? { label: 'FanDuel moneyline', book: market.source, value: market.mlValue } : null,\n    market?.spread ? { label: 'Game handicap', book: market.source, value: market.spreadValue } : null,\n    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null\n  ].filter(Boolean)\n  return createSportsMatchModel({\n    id: raw.id,\n    eventId: raw.eventId,\n    league: 'Tennis',\n    start: raw.start,\n    startMinutes: raw.startMinutes,\n    title: raw.title,\n    stage: \`Roland Garros \${raw.tour === 'ATP' ? 'Men' : 'Women'} | \${raw.round || 'Round 2'}\`,\n    spotlight: raw.tags.includes('High confidence'),\n    confidence: raw.confidence,\n    volatility: raw.volatility,\n    tags: raw.tags,\n    matchup: players.map((player, index) => ({ side: index === 0 ? 'Player 1' : 'Player 2', name: player.name, displayName: player.name, detail: player.profile || 'Profile pending' })),\n    summary: \`\${raw.pickName} is the desk side. \${raw.reason}\`,\n    factors: [\n      raw.reason,\n      market?.noVigNote,\n      raw.weaknessEdge?.gameFlow,\n      raw.weaknessEdge?.liveTrigger,\n      raw.totals,\n      'May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.',\n      market ? market.marketNote : 'No FanDuel line is stored for this match yet, so market edge is model-vs-fair only until a price is captured.'\n    ].filter(Boolean),\n    lean: market?.priceAction ? \`Lean \${raw.pickName}; \${market.priceAction}\` : \`Lean \${raw.pickName}; pass if the market price removes payout.\`,\n    swing: \`Risk: \${raw.tour === 'WTA' ? 'best-of-three volatility and break clusters' : 'best-of-five set extension and tiebreak variance'}.\`,\n    swingFactor: \`Risk: \${raw.tour === 'WTA' ? 'best-of-three volatility and break clusters' : 'best-of-five set extension and tiebreak variance'}.\`,\n    odds: {\n      participantOrder: [0, 1],\n      markets: oddsMarkets,\n      note: market?.marketNote || 'Market price not captured yet. Use this as fair-value context, not a bet ticket.',\n      provider: market?.source || 'Tennis warehouse model'\n    },\n    tennisContext: {\n      surface: 'Clay',\n      court: raw.court,\n      h2hLeader: '',\n      fatigueFlag: false,\n      liveDog: false,\n      weaknessEdge: raw.weaknessEdge,\n      warehouseContext,\n      sofascoreData: warehouseContext,\n      players: players.map((player) => ({\n        name: player.name,\n        rank: player.ranking?.rank ?? null,\n        label: player.name,\n        form: null,\n        boardPct: player.modelPct,\n        decimalOdds: player.market?.decimalOdds ?? null,\n        marketLabel: player.market ? \`\${player.market.americanLabel} / \${player.market.impliedPct}% implied\` : \`Model fair \${player.modelPct}%\`,\n        clayLine: player.profile || 'Profile pending',\n        weakness: player.weakness,\n        warehouseStats: warehouseContext?.players?.find((entry) => normalizePlayerName(entry.name) === normalizePlayerName(player.name)) ?? null,\n        record2026: '',\n        notes: player.name === raw.pickName ? \`Pick: model \${raw.confidence}%\` : \`Opponent case: model \${100 - raw.confidence}%\`,\n        matchupNote: player.name === raw.pickName ? \`Why pick: \${raw.reason}\` : 'Upset path: needs early scoreboard pressure or a market price that pays for volatility.'\n      })),\n      comparisonRows: [\n        { label: 'Model pick', metric: 'Fair win split', leftScore: raw.players[0].modelPct, rightScore: raw.players[1].modelPct, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: raw.pickName },\n        market ? { label: 'FanDuel moneyline', metric: 'Implied price', leftScore: marketPlayers.find((player) => player.name === raw.players[0].name)?.impliedPct ?? 0, rightScore: marketPlayers.find((player) => player.name === raw.players[1].name)?.impliedPct ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: market.priceAction } : null,\n        { label: 'Weakness', metric: 'Lower is cleaner', leftScore: raw.players[0].weakness?.weaknessScore ?? 0, rightScore: raw.players[1].weakness?.weaknessScore ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: raw.weaknessEdge?.edgeType || 'No clear weakness edge' },\n        { label: 'Volatility', metric: 'Lower is cleaner', leftScore: raw.volatility, rightScore: 100 - raw.volatility, leftLabel: 'Risk', rightLabel: 'Stability', winner: raw.volatility <= 55 ? 'Stable enough' : 'Pass-first' }\n      ].filter(Boolean),\n      predictionMarket,\n      valueBoard: raw.valueBoard,\n      projection: { projectedWinner: raw.pickName, projectedSetLine: raw.tour === 'ATP' ? '3-1/3-2 range' : '2-0/2-1 range', setWinProjections: raw.setWinProjections, totalGames: market?.total?.line ?? null, straightSetsProbability: raw.tour === 'ATP' ? null : Math.max(48, Math.min(68, raw.confidence - 8)), upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },\n      tradePlan: { laneLabel: raw.tags.includes('High confidence') ? 'High confidence, price required' : market?.priceAction || 'Pass-first', summary: raw.weaknessEdge?.gameFlow || raw.totals, trigger: raw.weaknessEdge?.liveTrigger, headline: raw.weaknessEdge?.edgeType, exit: market?.spreadLean || raw.weaknessEdge?.spreadRead, tone: raw.tags.includes('High confidence') ? 'accent' : 'warning' },\n      derivativeMarkets: [\n        { label: 'ML', value: market ? \`\${raw.pickName} \${deskMarket?.americanLabel || ''}; \${market.noVigNote}\` : 'Need market price', lean: market?.priceAction || raw.weaknessEdge?.edgeType || 'Fair only', confidence: raw.confidence, ...(raw.valueBoard?.ml || {}), tone: market?.desk?.edgePct >= 7 ? 'accent' : market?.desk?.edgePct <= -4 ? 'warning' : 'neutral', reason: market?.marketNote || raw.weaknessEdge?.gameFlow || raw.reason },\n        { label: 'Win a set', value: raw.setWinProjections?.map((entry) => entry.name + ' ' + entry.confidence + '%').join(' / ') || 'No set projection', lean: raw.setWinProjections?.find((entry) => entry.name !== raw.pickName)?.label || 'Set-win path', confidence: Math.max(...(raw.setWinProjections || []).map((entry) => Number(entry.confidence) || 0), 0), setWinRows: raw.valueBoard?.setWin || [], valueGrade: 'Needs posted price', tone: raw.tour === 'ATP' ? 'accent' : 'neutral', reason: raw.tour === 'ATP' ? 'Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence.' : 'Best-of-three set-win confidence is more fragile; early service holds matter more.' },\n        { label: 'Spread', value: market?.spreadValue || 'Need posted game spread', lean: market?.spreadLean || raw.weaknessEdge?.spreadRead || 'Need number', confidence: Math.max(50, raw.confidence - 6), ...(raw.valueBoard?.spread || {}), tone: raw.weaknessEdge?.edgeType === 'Weakness edge' ? 'accent' : 'neutral', reason: raw.weaknessEdge?.liveTrigger || 'Wait for first service cycle.' },\n        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals }\n      ],\n      marketEconomics,\n      clayMatchupData: clayData,\n      opponentQualityData: qualityContext,\n      researchLinks: [{ label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/${compact}' }, { label: 'Tennistonic H2H', url: clayData?.sourceUrl || raw.h2hUrl }, ...(market?.eventUrl ? [{ label: 'FanDuel event', url: market.eventUrl }] : [])],\n      formEdgeName: raw.pickName\n    },\n    participants,\n    moneyline: market ? { available: true, label: 'FanDuel moneyline', provider: market.source, participants } : { available: false, label: 'Moneyline', provider: 'Tennis warehouse model', participants: [] },\n    analysis: { available: true, participantId: picked.id, participant: picked, opponent, lean: \`Lean \${raw.pickName}\`, rationale: raw.reason, confidence: raw.confidence, volatility: raw.volatility, recommendationScore: raw.confidence - Math.round(raw.volatility / 3) + Math.round(Math.max(-8, Math.min(8, deskMarket?.edgePct ?? 0))), tier: raw.tags.includes('High confidence')  ? 'High confidence' : raw.tags.includes('Lean') ? 'Lean' : 'Watch', sourceLabel: market?.source || 'Tennis warehouse model', modelEdge: deskMarket?.edgePct ?? 0, modelEdgeLabel: deskMarket ? \`\${deskMarket.edgePct > 0 ? '+' : ''}\${deskMarket.edgePct} pts vs FanDuel implied\` : 'Fair value only until market price is captured', marketProbability: deskMarket?.impliedPct ? deskMarket.impliedPct / 100 : null, marketProbabilityLabel: deskMarket?.impliedPct ? \`\${deskMarket.impliedPct}% FanDuel implied\` : 'No market', inputs: [], inputsUsed: market ? 4 : 3, volatilityNotes: [] }\n  }, { structuredAnalysis: true })\n}\n\nconst matches = rawTennisGames.map(buildGame)\n\nexport const tennisModelCartridge = ${jsString(modelCartridge)}\nexport const slateMeta = { title: '${dayLabel} Tennis Desk', date: '${dayLabel}', isoDate: '${options.date}', timeZone: 'America/Los_Angeles', modelCartridge: tennisModelCartridge, subtitle: 'Singles-only Roland Garros main-draw slate with weakness-edge, game-flow gates, and sportsbook/market lines where captured.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.', '${dayLabel} uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'] }\nexport const filters = ['All', 'Tennis']\nexport const oddsMeta = { provider: 'FanDuel Sportsbook + Tennis warehouse model', snapshot: '${dayLabel} Roland Garros desk', note: 'FanDuel lines are stored for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.' }\nexport const sources = [{ label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/${compact}' }, { label: 'Live Tennis rankings warehouse', url: 'https://live-tennis.eu/' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }]\nexport const games = matches.sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))\n`
 
+  moduleText = moduleText.replace(
+    `import tennisClayContext from './day-${options.date}-tennis-clay-context.generated.json' with { type: 'json' }\n`,
+    ''
+  )
+  moduleText = moduleText.replace(
+    `import tennisOpponentQualityContext from './day-${options.date}-tennis-opponent-quality.generated.json' with { type: 'json' }\n`,
+    ''
+  )
+  moduleText = moduleText.replace(
+    '  const qualityContext = tennisOpponentQualityContext.matches?.[raw.id] ?? null\n  const clayData = tennisClayContext.matches?.[raw.id] ?? null\n',
+    '  const qualityContext = null\n'
+  )
+  moduleText = moduleText.replace(
+    '  const warehouseContext = tennisWarehouseContext.matches?.[raw.id] ?? null\n',
+    "  const warehouseContext = tennisWarehouseContext.matches?.[raw.id] ?? null\n  const warehousePlayerFor = (player) => {\n    const key = normalizePlayerName(player.name)\n    const identityKeys = [key, ...({ 'bu yunchaokete': ['yunchaokete bu'], 'yunchaokete bu': ['bu yunchaokete'], 'georgia pedone': ['giorgia pedone'], 'giorgia pedone': ['georgia pedone'], 'noma akugue noha': ['noma noha akugue'], 'noma noha akugue': ['noma akugue noha'], 'diego dedura': ['diego dedura palomero'], 'diego dedura palomero': ['diego dedura'] }[key] || [])]\n    return player.warehouseStats ?? warehouseContext?.players?.find((entry) => identityKeys.includes(normalizePlayerName(entry.name))) ?? identityKeys.map((entryKey) => tennisWarehouseContext.playersByName?.[entryKey]).find(Boolean) ?? null\n  }\n"
+  )
   moduleText = moduleText.replace(
     '      valueBoard: raw.valueBoard,\n',
     '      bettingMatrix: raw.bettingMatrix,\n      derivativeMarketCase: raw.derivativeCase,\n      valueBoard: raw.valueBoard,\n      ensembleValueCase: raw.ensembleValueCase,\n'
@@ -2477,7 +2533,7 @@ const main = async () => {
   moduleText = moduleText.replace("      sofascoreData: warehouseContext,\n", "")
   moduleText = moduleText.replace(
     "warehouseStats: warehouseContext?.players?.find((entry) => normalizePlayerName(entry.name) === normalizePlayerName(player.name)) ?? null,",
-    "warehouseStats: player.warehouseStats ?? warehouseContext?.players?.find((entry) => normalizePlayerName(entry.name) === normalizePlayerName(player.name)) ?? null,"
+    "warehouseStats: warehousePlayerFor(player),"
   )
   moduleText = moduleText.replace("clayMatchupData: clayData,", "clayMatchupData: null,")
   moduleText = moduleText.replace(
@@ -2541,6 +2597,9 @@ const main = async () => {
     "{ label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }]",
     "{ label: 'DraftKings sportsbook tennis', url: 'https://sportsbook.draftkings.com/sports/tennis' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }, { label: 'Robinhood tennis prediction markets', url: 'https://robinhood.com/us/en/prediction-markets/tennis/' }]"
   )
+
+  assertNoBlockedTennisSources(`raw tennis games ${options.date}`, games)
+  assertNoBlockedTennisSources(`generated day module ${options.date}`, moduleText)
 
   await fs.mkdir(path.dirname(path.resolve(ROOT, options.output)), { recursive: true })
   await fs.writeFile(path.resolve(ROOT, options.output), moduleText)

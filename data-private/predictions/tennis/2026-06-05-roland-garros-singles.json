@@ -459,12 +459,12 @@
           "americanOdds": 354,
           "modelPct": 36.5,
           "impliedPct": 22,
-          "edgePct": 14.5,
-          "evPer100": 65.7,
-          "netEvPer100": 63.7,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
           "grade": "Outlier price/manual review",
-          "issue": "Picked side is overpriced; value board flips to Filippo Romano because that side has the better posted-price edge.",
-          "reason": "ML payout is tiny; use spread/total or pass unless the number moves."
+          "issue": "Outlier dog price on Filippo Romano; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+          "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
         },
         {
           "marketType": "Total games",
@@ -1519,12 +1519,12 @@
           "americanOdds": 253,
           "modelPct": 38,
           "impliedPct": 28.3,
-          "edgePct": 9.7,
-          "evPer100": 34.1,
-          "netEvPer100": 32.1,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
           "grade": "Outlier price/manual review",
-          "issue": "Picked side is overpriced; value board flips to Vitaliy Sachko because that side has the better posted-price edge.",
-          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+          "issue": "Outlier dog price on Vitaliy Sachko; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+          "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
         },
         {
           "marketType": "Total games",
@@ -2760,12 +2760,12 @@
           "americanOdds": 303,
           "modelPct": 32,
           "impliedPct": 24.8,
-          "edgePct": 7.2,
-          "evPer100": 29,
-          "netEvPer100": 27,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
           "grade": "Outlier price/manual review",
-          "issue": "Picked side is overpriced; value board flips to Jakub Mensik because that side has the better posted-price edge.",
-          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+          "issue": "Outlier dog price on Jakub Mensik; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+          "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
         },
         {
           "marketType": "Game spread",
@@ -2874,12 +2874,12 @@
       "court": "Centre Court",
       "start": "5:30 AM",
       "pick": "Nikola Bartunkova",
-      "modelProbability": 52,
+      "modelProbability": 56,
       "marketProbability": 67,
       "marketAmericanOdds": -203,
-      "modelEdge": -15,
-      "confidence": 52,
-      "volatility": 57,
+      "modelEdge": -11,
+      "confidence": 56,
+      "volatility": 52,
       "tier": "Watch",
       "rationale": "Opponent-adjusted recent form is basically even: Nikola Bartunkova 55, Mika Stojsavljevic 57. Lean, not a chase.",
       "weaknessEdge": {
@@ -2957,12 +2957,12 @@
           "selection": "Mika Stojsavljevic",
           "line": null,
           "americanOdds": 153,
-          "modelPct": 48,
+          "modelPct": 44,
           "impliedPct": 39.5,
-          "edgePct": 8.5,
-          "evPer100": 21.4,
-          "netEvPer100": 19.4,
-          "grade": "Bet-grade value",
+          "edgePct": 4.5,
+          "evPer100": 11.3,
+          "netEvPer100": 9.3,
+          "grade": "Raw ML edge only",
           "issue": "Picked side is overpriced; value board flips to Mika Stojsavljevic because that side has the better posted-price edge.",
           "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
         },
@@ -2977,7 +2977,7 @@
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
-          "expectedGames": 22.1,
+          "expectedGames": 21.7,
           "edgeGames": null,
           "confidence": null,
           "grade": "No direction",
@@ -2986,35 +2986,35 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Nikola Bartunkova 69% / Mika Stojsavljevic 63%",
+          "selection": "Nikola Bartunkova 71% / Mika Stojsavljevic 58%",
           "rows": [
             {
               "name": "Nikola Bartunkova",
-              "confidence": 69,
-              "modelPct": 52,
+              "confidence": 71,
+              "modelPct": 56,
               "label": "Live to win a set"
             },
             {
               "name": "Mika Stojsavljevic",
-              "confidence": 63,
-              "modelPct": 48,
+              "confidence": 58,
+              "modelPct": 44,
               "label": "Needs early hold pressure"
             }
           ],
-          "confidence": 69,
+          "confidence": 71,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
         {
           "marketType": "First-set total games",
           "label": "1st set O/U",
-          "selection": "Pass / near line",
-          "expectedGames": 9.3,
-          "confidence": 51,
+          "selection": "Under 9.5",
+          "expectedGames": 9.1,
+          "confidence": 58,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 50,
-          "grade": "Near fair",
-          "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets."
+          "grade": "Thin value",
+          "reason": "Expected first-set games 9.1 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets."
         }
       ],
       "market": {
@@ -3025,8 +3025,8 @@
             "name": "Nikola Bartunkova",
             "americanOdds": -203,
             "impliedPct": 67,
-            "modelPct": 52,
-            "edgePct": -15,
+            "modelPct": 56,
+            "edgePct": -11,
             "grossProfitPct": 49.3,
             "priceBand": "Moderate favorite"
           },
@@ -3034,8 +3034,8 @@
             "name": "Mika Stojsavljevic",
             "americanOdds": 153,
             "impliedPct": 39.5,
-            "modelPct": 48,
-            "edgePct": 8.5,
+            "modelPct": 44,
+            "edgePct": 4.5,
             "grossProfitPct": 153,
             "priceBand": "Underdog"
           }
@@ -3063,11 +3063,11 @@
       "confidence": 51.6,
       "volatility": 50,
       "tier": "Watch",
-      "rationale": "Yunchaokete Bu has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Grass. Lean, not a chase.",
+      "rationale": "Opponent-adjusted recent form is basically even: Yunchaokete Bu 58, Mark Lajal 59. Lean, not a chase.",
       "weaknessEdge": {
         "edgeType": "No clear weakness edge",
         "target": "Both sides",
-        "scoreGap": 2,
+        "scoreGap": -3,
         "attackingSide": null,
         "vulnerableSide": null,
         "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
@@ -3077,23 +3077,25 @@
         "pick": {
           "name": "Yunchaokete Bu",
           "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 59,
+          "firstServePct": 58,
+          "avgAces": 6.2,
+          "avgDoubleFaults": 1.6,
           "avgWinners": null,
           "avgUnforcedErrors": null,
           "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
+          "returnPointsWonPct": 38,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 2,
           "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
+          "matchesWithStats": 5,
+          "weaknessScore": 5,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [],
-          "strengths": [],
+          "strengths": [
+            "second serve holds up (59%)"
+          ],
           "gameFlowRead": "Yunchaokete Bu has no major service weakness in the joined warehouse sample."
         },
         "opponent": {
@@ -3150,7 +3152,7 @@
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
-          "expectedGames": 42.3,
+          "expectedGames": 42.7,
           "edgeGames": null,
           "confidence": null,
           "grade": "No direction",
@@ -3182,12 +3184,12 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Over 9.5",
-          "expectedGames": 10.2,
-          "confidence": 59,
+          "expectedGames": 10.3,
+          "confidence": 61,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 50,
           "grade": "Actionable live watch",
-          "reason": "Expected first-set games 10.2 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 38%, first-set sample N/A, 0 recent sets."
+          "reason": "Expected first-set games 10.3 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 57%, first-set sample N/A, 0 recent sets."
         }
       ],
       "market": {
@@ -3308,12 +3310,12 @@
           "americanOdds": 276,
           "modelPct": 34.4,
           "impliedPct": 26.6,
-          "edgePct": 7.8,
-          "evPer100": 29.3,
-          "netEvPer100": 27.3,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
           "grade": "Outlier price/manual review",
-          "issue": "Picked side is overpriced; value board flips to Maxim Mrva because that side has the better posted-price edge.",
-          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+          "issue": "Outlier dog price on Maxim Mrva; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+          "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
         },
         {
           "marketType": "Total games",
@@ -3405,22 +3407,22 @@
       "court": "ATP Challenger - Heilbronn",
       "start": "6:00 AM",
       "pick": "Marco Trungelliti",
-      "modelProbability": 63.4,
+      "modelProbability": 65.1,
       "marketProbability": 73.6,
       "marketAmericanOdds": -279,
-      "modelEdge": -10.2,
-      "confidence": 63.4,
-      "volatility": 45,
+      "modelEdge": -8.5,
+      "confidence": 65.1,
+      "volatility": 43,
       "tier": "Watch",
-      "rationale": "Marco Trungelliti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+      "rationale": "Diego Dedura-Palomero grades 14 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
       "weaknessEdge": {
-        "edgeType": "Weakness warning",
-        "target": "Marco Trungelliti",
-        "scoreGap": -10,
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": -5,
         "attackingSide": null,
-        "vulnerableSide": "Marco Trungelliti",
-        "gameFlow": "Marco Trungelliti is the model side, but the fragile profile is on our pick: double-fault pressure (4.2 avg); 3 recent matches with serve instability. Avoid laying a bad price until early holds are confirmed.",
-        "liveTrigger": "Do not upgrade Marco Trungelliti unless they hold cleanly in the first service game and keep double faults down.",
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
         "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
         "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
         "pick": {
@@ -3453,23 +3455,25 @@
         "opponent": {
           "name": "Diego Dedura-Palomero",
           "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 61,
+          "firstServePct": 72,
+          "avgAces": 0.4,
+          "avgDoubleFaults": 1.2,
           "avgWinners": null,
           "avgUnforcedErrors": null,
           "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
+          "returnPointsWonPct": 43,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 2,
           "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
+          "matchesWithStats": 5,
+          "weaknessScore": 5,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [],
-          "strengths": [],
+          "strengths": [
+            "second serve holds up (61%)"
+          ],
           "gameFlowRead": "Diego Dedura-Palomero has no major service weakness in the joined warehouse sample."
         }
       },
@@ -3482,11 +3486,11 @@
           "selection": "Diego Dedura-Palomero",
           "line": null,
           "americanOdds": 204,
-          "modelPct": 39.3,
+          "modelPct": 37.6,
           "impliedPct": 32.9,
-          "edgePct": 6.4,
-          "evPer100": 19.5,
-          "netEvPer100": 17.5,
+          "edgePct": 4.7,
+          "evPer100": 14.3,
+          "netEvPer100": 12.3,
           "grade": "Raw ML edge only",
           "issue": "Picked side is overpriced; value board flips to Diego Dedura-Palomero because that side has the better posted-price edge.",
           "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
@@ -3511,22 +3515,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Marco Trungelliti 71% / Diego Dedura-Palomero 59%",
+          "selection": "Marco Trungelliti 73% / Diego Dedura-Palomero 57%",
           "rows": [
             {
               "name": "Marco Trungelliti",
-              "confidence": 71,
-              "modelPct": 63.4,
+              "confidence": 73,
+              "modelPct": 65.1,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Diego Dedura-Palomero",
-              "confidence": 59,
-              "modelPct": 39.3,
+              "confidence": 57,
+              "modelPct": 37.6,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 71,
+          "confidence": 73,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -3535,11 +3539,11 @@
           "label": "1st set O/U",
           "selection": "Over 9.5",
           "expectedGames": 9.9,
-          "confidence": 56,
+          "confidence": 58,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 50,
           "grade": "Thin value",
-          "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets."
+          "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 49%, first-set sample N/A, 0 recent sets."
         }
       ],
       "market": {
@@ -3550,8 +3554,8 @@
             "name": "Marco Trungelliti",
             "americanOdds": -279,
             "impliedPct": 73.6,
-            "modelPct": 63.4,
-            "edgePct": -10.2,
+            "modelPct": 65.1,
+            "edgePct": -8.5,
             "grossProfitPct": 35.8,
             "priceBand": "Low-payout favorite"
           },
@@ -3559,8 +3563,8 @@
             "name": "Diego Dedura-Palomero",
             "americanOdds": 204,
             "impliedPct": 32.9,
-            "modelPct": 39.3,
-            "edgePct": 6.4,
+            "modelPct": 37.6,
+            "edgePct": 4.7,
             "grossProfitPct": 204,
             "priceBand": "Underdog"
           }
@@ -3764,12 +3768,12 @@
       "court": "Centre Court",
       "start": "7:00 AM",
       "pick": "Alexandra Eala",
-      "modelProbability": 55,
+      "modelProbability": 57,
       "marketProbability": 67.7,
       "marketAmericanOdds": -210,
-      "modelEdge": -12.7,
-      "confidence": 55,
-      "volatility": 54,
+      "modelEdge": -10.7,
+      "confidence": 57,
+      "volatility": 51,
       "tier": "Watch",
       "rationale": "Mananchaya Sawangkaew grades 30 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
       "weaknessEdge": {
@@ -3843,11 +3847,11 @@
           "selection": "Mananchaya Sawangkaew",
           "line": null,
           "americanOdds": 158,
-          "modelPct": 45,
+          "modelPct": 43,
           "impliedPct": 38.8,
-          "edgePct": 6.2,
-          "evPer100": 16.1,
-          "netEvPer100": 14.1,
+          "edgePct": 4.2,
+          "evPer100": 10.9,
+          "netEvPer100": 8.9,
           "grade": "Raw ML edge only",
           "issue": "Picked side is overpriced; value board flips to Mananchaya Sawangkaew because that side has the better posted-price edge.",
           "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
@@ -3872,22 +3876,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Alexandra Eala 71% / Mananchaya Sawangkaew 61%",
+          "selection": "Alexandra Eala 72% / Mananchaya Sawangkaew 58%",
           "rows": [
             {
               "name": "Alexandra Eala",
-              "confidence": 71,
-              "modelPct": 55,
+              "confidence": 72,
+              "modelPct": 57,
               "label": "Live to win a set"
             },
             {
               "name": "Mananchaya Sawangkaew",
-              "confidence": 61,
-              "modelPct": 45,
+              "confidence": 58,
+              "modelPct": 43,
               "label": "Needs early hold pressure"
             }
           ],
-          "confidence": 71,
+          "confidence": 72,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -3911,8 +3915,8 @@
             "name": "Alexandra Eala",
             "americanOdds": -210,
             "impliedPct": 67.7,
-            "modelPct": 55,
-            "edgePct": -12.7,
+            "modelPct": 57,
+            "edgePct": -10.7,
             "grossProfitPct": 47.6,
             "priceBand": "Moderate favorite"
           },
@@ -3920,8 +3924,8 @@
             "name": "Mananchaya Sawangkaew",
             "americanOdds": 158,
             "impliedPct": 38.8,
-            "modelPct": 45,
-            "edgePct": 6.2,
+            "modelPct": 43,
+            "edgePct": 4.2,
             "grossProfitPct": 158,
             "priceBand": "Underdog"
           }
@@ -4475,12 +4479,12 @@
       "court": "Court 1",
       "start": "8:30 AM",
       "pick": "Maria Timofeeva",
-      "modelProbability": 51,
+      "modelProbability": 55,
       "marketProbability": 78.8,
       "marketAmericanOdds": -372,
-      "modelEdge": -27.8,
-      "confidence": 51,
-      "volatility": 59,
+      "modelEdge": -23.8,
+      "confidence": 55,
+      "volatility": 53,
       "tier": "Watch",
       "rationale": "Opponent-adjusted recent form is basically even: Maria Timofeeva 75, Yasmine Kabbaj 74. Lean, not a chase.",
       "weaknessEdge": {
@@ -4491,7 +4495,7 @@
         "vulnerableSide": null,
         "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
         "liveTrigger": "Wait for a visible service-pressure split before entering.",
-        "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
         "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
         "pick": {
           "name": "Maria Timofeeva",
@@ -4557,14 +4561,14 @@
           "selection": "Yasmine Kabbaj",
           "line": null,
           "americanOdds": 262,
-          "modelPct": 49,
+          "modelPct": 45,
           "impliedPct": 27.6,
-          "edgePct": 21.4,
-          "evPer100": 77.4,
-          "netEvPer100": 75.4,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
           "grade": "Outlier price/manual review",
-          "issue": "Picked side is overpriced; value board flips to Yasmine Kabbaj because that side has the better posted-price edge.",
-          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+          "issue": "Outlier dog price on Yasmine Kabbaj; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+          "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
         },
         {
           "marketType": "Total games",
@@ -4577,7 +4581,7 @@
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
-          "expectedGames": 21.4,
+          "expectedGames": 20.9,
           "edgeGames": null,
           "confidence": null,
           "grade": "No direction",
@@ -4586,22 +4590,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Maria Timofeeva 70% / Yasmine Kabbaj 65%",
+          "selection": "Maria Timofeeva 71% / Yasmine Kabbaj 60%",
           "rows": [
             {
               "name": "Maria Timofeeva",
-              "confidence": 70,
-              "modelPct": 51,
+              "confidence": 71,
+              "modelPct": 55,
               "label": "Live to win a set"
             },
             {
               "name": "Yasmine Kabbaj",
-              "confidence": 65,
-              "modelPct": 49,
+              "confidence": 60,
+              "modelPct": 45,
               "label": "Needs early hold pressure"
             }
           ],
-          "confidence": 70,
+          "confidence": 71,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -4609,12 +4613,12 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Under 9.5",
-          "expectedGames": 9,
-          "confidence": 59,
+          "expectedGames": 8.8,
+          "confidence": 61,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 50,
-          "grade": "Thin value",
-          "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets."
+          "grade": "Actionable live watch",
+          "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets."
         }
       ],
       "market": {
@@ -4625,8 +4629,8 @@
             "name": "Maria Timofeeva",
             "americanOdds": -372,
             "impliedPct": 78.8,
-            "modelPct": 51,
-            "edgePct": -27.8,
+            "modelPct": 55,
+            "edgePct": -23.8,
             "grossProfitPct": 26.9,
             "priceBand": "Low-payout favorite"
           },
@@ -4634,8 +4638,8 @@
             "name": "Yasmine Kabbaj",
             "americanOdds": 262,
             "impliedPct": 27.6,
-            "modelPct": 49,
-            "edgePct": 21.4,
+            "modelPct": 45,
+            "edgePct": 17.4,
             "grossProfitPct": 262,
             "priceBand": "Underdog"
           }
@@ -4656,45 +4660,49 @@
       "court": "Center Court",
       "start": "8:30 AM",
       "pick": "Noma Noha Akugue",
-      "modelProbability": 51,
+      "modelProbability": 53,
       "marketProbability": 53.1,
       "marketAmericanOdds": -113,
-      "modelEdge": -2.1,
-      "confidence": 51,
-      "volatility": 59,
+      "modelEdge": -0.1,
+      "confidence": 53,
+      "volatility": 56,
       "tier": "Watch",
-      "rationale": "Noma Noha Akugue has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+      "rationale": "Opponent-adjusted recent form is basically even: Noma Noha Akugue 57, Sara Sorribes Tormo 57. Lean, not a chase.",
       "weaknessEdge": {
-        "edgeType": "Weakness edge",
-        "target": "Sara Sorribes Tormo",
-        "scoreGap": 13,
-        "attackingSide": "Noma Noha Akugue",
-        "vulnerableSide": "Sara Sorribes Tormo",
-        "gameFlow": "Noma Noha Akugue has a real path if Sara Sorribes Tormo's first two service games show the same weakness: first-serve points won below comfort (58%); second-serve points won are attackable (42%).",
-        "liveTrigger": "Look for Sara Sorribes Tormo facing break points or second-serve pressure before 3-3.",
-        "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 2,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
         "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
         "pick": {
           "name": "Noma Noha Akugue",
           "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
+          "firstServeWonPct": 56,
+          "secondServeWonPct": 47,
+          "firstServePct": 62,
+          "avgAces": 1.6,
+          "avgDoubleFaults": 2.2,
           "avgWinners": null,
           "avgUnforcedErrors": null,
           "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
+          "returnPointsWonPct": 50,
+          "servicePointsWonPct": 52,
+          "weakServeMatches": 2,
           "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
+          "matchesWithStats": 5,
+          "weaknessScore": 11,
           "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Noma Noha Akugue has no major service weakness in the joined warehouse sample."
+          "liabilities": [
+            "first-serve points won below comfort (56%)"
+          ],
+          "strengths": [
+            "creates return pressure (50% return points won)"
+          ],
+          "gameFlowRead": "Noma Noha Akugue can drop points quickly through first-serve points won below comfort (56%)."
         },
         "opponent": {
           "name": "Sara Sorribes Tormo",
@@ -4734,11 +4742,11 @@
           "selection": "Noma Noha Akugue",
           "line": null,
           "americanOdds": -113,
-          "modelPct": 51,
+          "modelPct": 53,
           "impliedPct": 53.1,
-          "edgePct": -2.1,
-          "evPer100": -3.9,
-          "netEvPer100": -5.9,
+          "edgePct": -0.1,
+          "evPer100": -0.1,
+          "netEvPer100": -2.1,
           "grade": "Near fair",
           "issue": "Favorite price needs better proof",
           "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
@@ -4754,7 +4762,7 @@
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
-          "expectedGames": 21.2,
+          "expectedGames": 20.9,
           "edgeGames": null,
           "confidence": null,
           "grade": "No direction",
@@ -4763,22 +4771,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Noma Noha Akugue 71% / Sara Sorribes Tormo 65%",
+          "selection": "Noma Noha Akugue 70% / Sara Sorribes Tormo 62%",
           "rows": [
             {
               "name": "Noma Noha Akugue",
-              "confidence": 71,
-              "modelPct": 51,
+              "confidence": 70,
+              "modelPct": 53,
               "label": "Live to win a set"
             },
             {
               "name": "Sara Sorribes Tormo",
-              "confidence": 65,
-              "modelPct": 49,
+              "confidence": 62,
+              "modelPct": 47,
               "label": "Needs early hold pressure"
             }
           ],
-          "confidence": 71,
+          "confidence": 70,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -4786,12 +4794,12 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Under 9.5",
-          "expectedGames": 8.9,
-          "confidence": 58,
+          "expectedGames": 8.8,
+          "confidence": 61,
           "tiebreakRisk": 18,
-          "earlyBreakRisk": 54,
-          "grade": "Thin value",
-          "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
+          "earlyBreakRisk": 50,
+          "grade": "Actionable live watch",
+          "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets."
         }
       ],
       "market": {
@@ -4802,8 +4810,8 @@
             "name": "Noma Noha Akugue",
             "americanOdds": -113,
             "impliedPct": 53.1,
-            "modelPct": 51,
-            "edgePct": -2.1,
+            "modelPct": 53,
+            "edgePct": -0.1,
             "grossProfitPct": 88.5,
             "priceBand": "Coinflip"
           },
@@ -4811,8 +4819,8 @@
             "name": "Sara Sorribes Tormo",
             "americanOdds": -116,
             "impliedPct": 53.7,
-            "modelPct": 49,
-            "edgePct": -4.7,
+            "modelPct": 47,
+            "edgePct": -6.7,
             "grossProfitPct": 86.2,
             "priceBand": "Coinflip"
           }
@@ -5008,12 +5016,12 @@
       "court": "Center Court",
       "start": "9:00 AM",
       "pick": "Tyra Caterina Grant",
-      "modelProbability": 53,
+      "modelProbability": 58,
       "marketProbability": 97.5,
       "marketAmericanOdds": -3900,
-      "modelEdge": -44.5,
-      "confidence": 53,
-      "volatility": 56,
+      "modelEdge": -39.5,
+      "confidence": 58,
+      "volatility": 49,
       "tier": "Watch",
       "rationale": "Tyra Caterina Grant grades 33 points better on opponent-adjusted recent form. Lean, not a chase.",
       "weaknessEdge": {
@@ -5090,14 +5098,14 @@
           "selection": "Tatiana Pieri",
           "line": null,
           "americanOdds": 1080,
-          "modelPct": 47,
+          "modelPct": 42,
           "impliedPct": 8.5,
-          "edgePct": 38.5,
-          "evPer100": 454.6,
-          "netEvPer100": 452.6,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
           "grade": "Outlier price/manual review",
-          "issue": "Picked side is overpriced; value board flips to Tatiana Pieri because that side has the better posted-price edge.",
-          "reason": "ML payout is tiny; use spread/total or pass unless the number moves."
+          "issue": "Outlier dog price on Tatiana Pieri; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+          "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
         },
         {
           "marketType": "Total games",
@@ -5110,7 +5118,7 @@
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
-          "expectedGames": 20.9,
+          "expectedGames": 20.7,
           "edgeGames": null,
           "confidence": null,
           "grade": "No direction",
@@ -5119,35 +5127,35 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Tyra Caterina Grant 69% / Tatiana Pieri 61%",
+          "selection": "Tyra Caterina Grant 71% / Tatiana Pieri 55%",
           "rows": [
             {
               "name": "Tyra Caterina Grant",
-              "confidence": 69,
-              "modelPct": 53,
+              "confidence": 71,
+              "modelPct": 58,
               "label": "Live to win a set"
             },
             {
               "name": "Tatiana Pieri",
-              "confidence": 61,
-              "modelPct": 47,
+              "confidence": 55,
+              "modelPct": 42,
               "label": "Needs early hold pressure"
             }
           ],
-          "confidence": 69,
+          "confidence": 71,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
         {
           "marketType": "First-set total games",
           "label": "1st set O/U",
-          "selection": "Over 8.5",
-          "expectedGames": 8.8,
-          "confidence": 57,
+          "selection": "Pass / near line",
+          "expectedGames": 8.7,
+          "confidence": 51,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 50,
-          "grade": "Thin value",
-          "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
+          "grade": "Near fair",
+          "reason": "Expected first-set games 8.7 vs DraftKings Sportsbook 8.5; near the number. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
         }
       ],
       "market": {
@@ -5158,8 +5166,8 @@
             "name": "Tyra Caterina Grant",
             "americanOdds": -3900,
             "impliedPct": 97.5,
-            "modelPct": 53,
-            "edgePct": -44.5,
+            "modelPct": 58,
+            "edgePct": -39.5,
             "grossProfitPct": 2.6,
             "priceBand": "Very expensive favorite"
           },
@@ -5167,8 +5175,8 @@
             "name": "Tatiana Pieri",
             "americanOdds": 1080,
             "impliedPct": 8.5,
-            "modelPct": 47,
-            "edgePct": 38.5,
+            "modelPct": 42,
+            "edgePct": 33.5,
             "grossProfitPct": 1080,
             "priceBand": "Underdog"
           }
@@ -5383,22 +5391,22 @@
       "court": "Center Court",
       "start": "11:00 AM",
       "pick": "Lucia Bronzetti",
-      "modelProbability": 52,
+      "modelProbability": 56,
       "marketProbability": 73.7,
       "marketAmericanOdds": -280,
-      "modelEdge": -21.7,
-      "confidence": 52,
-      "volatility": 57,
+      "modelEdge": -17.7,
+      "confidence": 56,
+      "volatility": 53,
       "tier": "Watch",
-      "rationale": "Lucia Bronzetti has the cleaner composite of rank, clay record, and recent opponent quality. Lean, not a chase.",
+      "rationale": "Lucia Bronzetti grades 17 points better on opponent-adjusted recent form. Lean, not a chase.",
       "weaknessEdge": {
-        "edgeType": "No clear weakness edge",
-        "target": "Both sides",
-        "scoreGap": -5,
-        "attackingSide": null,
-        "vulnerableSide": null,
-        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "edgeType": "Weakness edge",
+        "target": "Giorgia Pedone",
+        "scoreGap": 12,
+        "attackingSide": "Lucia Bronzetti",
+        "vulnerableSide": "Giorgia Pedone",
+        "gameFlow": "Lucia Bronzetti has a real path if Giorgia Pedone's first two service games show the same weakness: first-serve points won below comfort (54%); 4 recent matches with serve instability.",
+        "liveTrigger": "Look for Giorgia Pedone facing break points or second-serve pressure before 3-3.",
         "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
         "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
         "pick": {
@@ -5429,24 +5437,29 @@
         "opponent": {
           "name": "Giorgia Pedone",
           "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
+          "firstServeWonPct": 54,
+          "secondServeWonPct": 46,
+          "firstServePct": 82,
           "avgAces": null,
-          "avgDoubleFaults": null,
+          "avgDoubleFaults": 1,
           "avgWinners": null,
           "avgUnforcedErrors": null,
           "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
+          "returnPointsWonPct": 54,
+          "servicePointsWonPct": 52,
+          "weakServeMatches": 4,
           "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [],
-          "gameFlowRead": "Giorgia Pedone has no major service weakness in the joined warehouse sample."
+          "matchesWithStats": 5,
+          "weaknessScore": 17,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "first-serve points won below comfort (54%)",
+            "4 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (54% return points won)"
+          ],
+          "gameFlowRead": "Giorgia Pedone can drop points quickly through first-serve points won below comfort (54%) and 4 recent matches with serve instability."
         }
       },
       "totals": "Best O/U angle: no play without a posted total.",
@@ -5458,12 +5471,12 @@
           "selection": "Giorgia Pedone",
           "line": null,
           "americanOdds": 205,
-          "modelPct": 48,
+          "modelPct": 44,
           "impliedPct": 32.8,
-          "edgePct": 15.2,
-          "evPer100": 46.4,
-          "netEvPer100": 44.4,
-          "grade": "Bet-grade value",
+          "edgePct": 11.2,
+          "evPer100": 34.2,
+          "netEvPer100": 32.2,
+          "grade": "Model probability outside validated lane",
           "issue": "Picked side is overpriced; value board flips to Giorgia Pedone because that side has the better posted-price edge.",
           "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
         },
@@ -5478,7 +5491,7 @@
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
-          "expectedGames": 22.1,
+          "expectedGames": 20.9,
           "edgeGames": null,
           "confidence": null,
           "grade": "No direction",
@@ -5487,35 +5500,35 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Giorgia Pedone 65% / Lucia Bronzetti 71%",
+          "selection": "Giorgia Pedone 58% / Lucia Bronzetti 72%",
           "rows": [
             {
               "name": "Giorgia Pedone",
-              "confidence": 65,
-              "modelPct": 48,
+              "confidence": 58,
+              "modelPct": 44,
               "label": "Needs early hold pressure"
             },
             {
               "name": "Lucia Bronzetti",
-              "confidence": 71,
-              "modelPct": 52,
+              "confidence": 72,
+              "modelPct": 56,
               "label": "Live to win a set"
             }
           ],
-          "confidence": 71,
+          "confidence": 72,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
         {
           "marketType": "First-set total games",
           "label": "1st set O/U",
-          "selection": "Pass / near line",
-          "expectedGames": 9.3,
-          "confidence": 51,
+          "selection": "Under 9.5",
+          "expectedGames": 8.8,
+          "confidence": 61,
           "tiebreakRisk": 18,
-          "earlyBreakRisk": 50,
-          "grade": "Near fair",
-          "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 64%, first-set sample N/A, 0 recent sets."
+          "earlyBreakRisk": 54,
+          "grade": "Actionable live watch",
+          "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 61%, first-set sample N/A, 0 recent sets."
         }
       ],
       "market": {
@@ -5526,8 +5539,8 @@
             "name": "Giorgia Pedone",
             "americanOdds": 205,
             "impliedPct": 32.8,
-            "modelPct": 48,
-            "edgePct": 15.2,
+            "modelPct": 44,
+            "edgePct": 11.2,
             "grossProfitPct": 205,
             "priceBand": "Underdog"
           },
@@ -5535,8 +5548,8 @@
             "name": "Lucia Bronzetti",
             "americanOdds": -280,
             "impliedPct": 73.7,
-            "modelPct": 52,
-            "edgePct": -21.7,
+            "modelPct": 56,
+            "edgePct": -17.7,
             "grossProfitPct": 35.7,
             "priceBand": "Low-payout favorite"
           }

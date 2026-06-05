@@ -7,8 +7,8 @@
   "title": "Tyra Caterina Grant vs Tatiana Pieri",
   "stage": "WTA Foggia | Quarterfinal",
   "spotlight": false,
-  "confidence": 53,
-  "volatility": 56,
+  "confidence": 58,
+  "volatility": 49,
   "tags": [
     "Clay",
     "WTA Foggia",
@@ -23,19 +23,19 @@
       "side": "Player 1",
       "name": "Tyra Caterina Grant",
       "displayName": "Tyra Caterina Grant",
-      "detail": "Rank not joined | adj form 73"
+      "detail": "Live rank #184 | Italy | age 18 | adj form 73"
     },
     {
       "side": "Player 2",
       "name": "Tatiana Pieri",
       "displayName": "Tatiana Pieri",
-      "detail": "Rank not joined | adj form 40"
+      "detail": "Live rank #505 | Italy | age 27 | adj form 40"
     }
   ],
   "summary": "Our model pick: Tyra Caterina Grant. Tyra Caterina Grant grades 33 points better on opponent-adjusted recent form. Lean, not a chase.",
   "factors": [
     "Tyra Caterina Grant grades 33 points better on opponent-adjusted recent form. Lean, not a chase.",
-    "Model 53% vs DraftKings Sportsbook implied 97.5% (-44.5 pts).",
+    "Model 58% vs DraftKings Sportsbook implied 97.5% (-39.5 pts).",
     "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
     "Wait for a visible service-pressure split before entering.",
     "Best O/U angle: no play without a posted total.",
@@ -54,7 +54,7 @@
       {
         "label": "Model fair",
         "book": "Tennis warehouse model",
-        "value": "Tyra Caterina Grant 53% / Tatiana Pieri 47%"
+        "value": "Tyra Caterina Grant 58% / Tatiana Pieri 42%"
       },
       {
         "label": "DraftKings Sportsbook moneyline",
@@ -145,13 +145,13 @@
     "players": [
       {
         "name": "Tyra Caterina Grant",
-        "rank": null,
+        "rank": 184,
         "label": "Tyra Caterina Grant",
         "form": null,
-        "boardPct": 53,
+        "boardPct": 58,
         "decimalOdds": 1.026,
         "marketLabel": "-3900 / 97.5% implied",
-        "clayLine": "Rank not joined | adj form 73",
+        "clayLine": "Live rank #184 | Italy | age 18 | adj form 73",
         "weakness": {
           "name": "Tyra Caterina Grant",
           "serviceHoldPct": null,
@@ -180,20 +180,1282 @@
           ],
           "gameFlowRead": "Tyra Caterina Grant can drop points quickly through second-serve points won are attackable (40%) and double-fault pressure (5.6 avg)."
         },
-        "warehouseStats": null,
+        "warehouseStats": {
+          "name": "Tyra Caterina Grant",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Tyra Caterina Grant",
+            "country": "Italy",
+            "birthdate": "2008-03-12",
+            "age": 18,
+            "rank": 184,
+            "rankingLabel": "WTA ranking",
+            "topRank": 184,
+            "topRankDate": "2026-05-25",
+            "topRankPoints": 40400,
+            "points": 404,
+            "prizeMoney": "177.147 $",
+            "matchesTotal": 137,
+            "wins": 91,
+            "losses": 46,
+            "winPct": 66.42,
+            "sourceUrl": "https://www.tennislive.net/wta/tyra-caterina-grant/",
+            "capturedAt": "2026-06-04T23:43:28.943251+00:00"
+          },
+          "ranking": {
+            "rank": 184,
+            "points": 404,
+            "country": "Italy",
+            "age": 18,
+            "tour": "WTA ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/wta/tyra-caterina-grant/",
+            "asOf": "2026-06-04T23:43:28.943251+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/wta/match/tyra-caterina-grant-VS-caroline-uebelhoer/w75-kosice-2026/",
+            "capturedAt": "2026-06-04T23:43:33.736689+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 25,
+                "value": 11,
+                "label": "22.05.2026 (win vs Martyna Kubka)",
+                "date": "2026-05-22",
+                "result": "win",
+                "opponentName": "Martyna Kubka"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 26,
+                "value": 12,
+                "label": "23.05.2026 (win vs Caroline Werner)",
+                "date": "2026-05-23",
+                "result": "win",
+                "opponentName": "Caroline Werner"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 27,
+                "value": 13,
+                "label": "27.05.2026 (win vs Irene Burillo)",
+                "date": "2026-05-27",
+                "result": "win",
+                "opponentName": "Irene Burillo"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 28,
+                "value": 12,
+                "label": "28.05.2026 (lost vs Andrea Lazaro Garcia)",
+                "date": "2026-05-28",
+                "result": "lost",
+                "opponentName": "Andrea Lazaro Garcia"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 29,
+                "value": 13,
+                "label": "02.06.2026 (win vs Lisa Zaar)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Lisa Zaar"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 30,
+                "value": 14,
+                "label": "03.06.2026 (win vs Varvara Lepchenko)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Varvara Lepchenko"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 1,
+                "value": 1,
+                "label": "02.12.2025 (win vs Anastasia Abbagnato)",
+                "date": "2025-12-02",
+                "result": "win",
+                "opponentName": "Anastasia Abbagnato"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 2,
+                "value": 0,
+                "label": "04.12.2025 (lost vs Adithya Karunaratne)",
+                "date": "2025-12-04",
+                "result": "lost",
+                "opponentName": "Adithya Karunaratne"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 3,
+                "value": 1,
+                "label": "11.02.2026 (win vs Tiphanie Lemaitre)",
+                "date": "2026-02-11",
+                "result": "win",
+                "opponentName": "Tiphanie Lemaître"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 4,
+                "value": 2,
+                "label": "12.02.2026 (win vs Ekaterina Kazionova)",
+                "date": "2026-02-12",
+                "result": "win",
+                "opponentName": "Ekaterina Kazionova"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 5,
+                "value": 3,
+                "label": "13.02.2026 (win vs Sada Nahimana)",
+                "date": "2026-02-13",
+                "result": "win",
+                "opponentName": "Sada Nahimana"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 6,
+                "value": 2,
+                "label": "14.02.2026 (lost vs Jeline Vandromme)",
+                "date": "2026-02-14",
+                "result": "lost",
+                "opponentName": "Jeline Vandromme"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 7,
+                "value": 1,
+                "label": "22.03.2026 (lost vs Ana Petkovic)",
+                "date": "2026-03-22",
+                "result": "lost",
+                "opponentName": "Ana Petkovic"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 8,
+                "value": 0,
+                "label": "31.03.2026 (lost vs Alena Kovackova)",
+                "date": "2026-03-31",
+                "result": "lost",
+                "opponentName": "Alena Kovačková"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 9,
+                "value": 1,
+                "label": "08.04.2026 (win vs Valentina Steiner)",
+                "date": "2026-04-08",
+                "result": "win",
+                "opponentName": "Valentina Steiner"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 10,
+                "value": 2,
+                "label": "09.04.2026 (win vs Jana Kovackova)",
+                "date": "2026-04-09",
+                "result": "win",
+                "opponentName": "Jana Kovačková"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 11,
+                "value": 3,
+                "label": "10.04.2026 (win vs Noemi Basiletti)",
+                "date": "2026-04-10",
+                "result": "win",
+                "opponentName": "Noemi Basiletti"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 12,
+                "value": 4,
+                "label": "11.04.2026 (win vs Martina Trevisan)",
+                "date": "2026-04-11",
+                "result": "win",
+                "opponentName": "Martina Trevisan"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 13,
+                "value": 5,
+                "label": "12.04.2026 (win vs Alena Kovackova)",
+                "date": "2026-04-12",
+                "result": "win",
+                "opponentName": "Alena Kovačková"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 14,
+                "value": 6,
+                "label": "16.04.2026 (win vs Adrienn Nagy)",
+                "date": "2026-04-16",
+                "result": "win",
+                "opponentName": "Adrienn Nagy"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 15,
+                "value": 5,
+                "label": "17.04.2026 (lost vs Sara Sorribes Tormo)",
+                "date": "2026-04-17",
+                "result": "lost",
+                "opponentName": "Sara Sorribes Tormo"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 16,
+                "value": 6,
+                "label": "20.04.2026 (win vs Veronika Erjavec)",
+                "date": "2026-04-20",
+                "result": "win",
+                "opponentName": "Veronika Erjavec"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 17,
+                "value": 7,
+                "label": "21.04.2026 (win vs Panna Udvardy)",
+                "date": "2026-04-21",
+                "result": "win",
+                "opponentName": "Panna Udvardy"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 18,
+                "value": 8,
+                "label": "22.04.2026 (win vs Elsa Jacquemot)",
+                "date": "2026-04-22",
+                "result": "win",
+                "opponentName": "Elsa Jacquemot"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 19,
+                "value": 7,
+                "label": "24.04.2026 (lost vs Sorana Cirstea)",
+                "date": "2026-04-24",
+                "result": "lost",
+                "opponentName": "Sorana Cirstea"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 20,
+                "value": 8,
+                "label": "06.05.2026 (win vs Lisa Pigato)",
+                "date": "2026-05-06",
+                "result": "win",
+                "opponentName": "Lisa Pigato"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 21,
+                "value": 7,
+                "label": "08.05.2026 (lost vs Nikola Bartunkova)",
+                "date": "2026-05-08",
+                "result": "lost",
+                "opponentName": "Nikola Bartunkova"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 22,
+                "value": 8,
+                "label": "19.05.2026 (win vs Valeriya Strakhova)",
+                "date": "2026-05-19",
+                "result": "win",
+                "opponentName": "Valeriya Strakhova"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 23,
+                "value": 9,
+                "label": "20.05.2026 (win vs Julia Adams)",
+                "date": "2026-05-20",
+                "result": "win",
+                "opponentName": "Julia Adams"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 24,
+                "value": 10,
+                "label": "21.05.2026 (win vs Erika Andreeva)",
+                "date": "2026-05-21",
+                "result": "win",
+                "opponentName": "Erika Andreeva"
+              },
+              {
+                "index": 30,
+                "sequenceIndex": 25,
+                "value": 11,
+                "label": "22.05.2026 (win vs Martyna Kubka)",
+                "date": "2026-05-22",
+                "result": "win",
+                "opponentName": "Martyna Kubka"
+              },
+              {
+                "index": 31,
+                "sequenceIndex": 26,
+                "value": 12,
+                "label": "23.05.2026 (win vs Caroline Werner)",
+                "date": "2026-05-23",
+                "result": "win",
+                "opponentName": "Caroline Werner"
+              },
+              {
+                "index": 32,
+                "sequenceIndex": 27,
+                "value": 13,
+                "label": "27.05.2026 (win vs Irene Burillo)",
+                "date": "2026-05-27",
+                "result": "win",
+                "opponentName": "Irene Burillo"
+              },
+              {
+                "index": 33,
+                "sequenceIndex": 28,
+                "value": 12,
+                "label": "28.05.2026 (lost vs Andrea Lazaro Garcia)",
+                "date": "2026-05-28",
+                "result": "lost",
+                "opponentName": "Andrea Lazaro Garcia"
+              },
+              {
+                "index": 34,
+                "sequenceIndex": 29,
+                "value": 13,
+                "label": "02.06.2026 (win vs Lisa Zaar)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Lisa Zaar"
+              },
+              {
+                "index": 35,
+                "sequenceIndex": 30,
+                "value": 14,
+                "label": "03.06.2026 (win vs Varvara Lepchenko)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Varvara Lepchenko"
+              }
+            ],
+            "latestValue": 14,
+            "minValue": 0,
+            "maxValue": 14
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 1.8,
+              "avgAces": 1.8,
+              "doubleFaults": 5.6,
+              "avgDoubleFaults": 5.6,
+              "firstServePct": 67.6,
+              "firstServeWonPct": 62.2,
+              "secondServeWonPct": 40.4,
+              "returnPointsWonPct": 49.6,
+              "breakPointsConvertedPct": 46.4,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 26,
+              "breakPointsToConvert": 56,
+              "breakPointChancesPerMatch": 11.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 26,
+                "bpChances": 56,
+                "bpConvertedPct": 46.4,
+                "bpChancesPerMatch": 11.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 26,
+                "bpChances": 56,
+                "bpConvertedPct": 46.4,
+                "bpChancesPerMatch": 11.2
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Tyra Caterina Grant",
+            "matches": [
+              {
+                "opponentName": "Varvara Lepchenko",
+                "event": "Foggia",
+                "matchDateLabel": "2026-06-03",
+                "isoDate": "2026-06-03",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "7-6 3 , 2-6, 6-2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/tyra-caterina-grant-VS-varvara-lepchenko/open-delle-puglie-foggia-2026/",
+                "matchId": "tl-2026-06-03-open-delle-puglie-foggia-2026-tyra-caterina-grant-vs-varvara-lepchenko",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "71/97 (73%)",
+                      "made": 71,
+                      "attempts": 97,
+                      "pct": 73
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "42/71 (59%)",
+                      "made": 42,
+                      "attempts": 71,
+                      "pct": 59
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "15/26 (58%)",
+                      "made": 15,
+                      "attempts": 26,
+                      "pct": 58
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/7 (71%)",
+                      "made": 5,
+                      "attempts": 7,
+                      "pct": 71
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "94/181 (52%)",
+                      "made": 94,
+                      "attempts": 181,
+                      "pct": 52
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "37/84 (44%)",
+                      "made": 37,
+                      "attempts": 84,
+                      "pct": 44
+                    }
+                  ],
+                  "firstServePct": 73,
+                  "firstServeIn": "71/97 (73%)",
+                  "firstServeWonPct": 59,
+                  "firstServePointsWon": "42/71 (59%)",
+                  "secondServeWonPct": 58,
+                  "secondServePointsWon": "15/26 (58%)",
+                  "aces": 3,
+                  "breakPointsConverted": "5/7 (71%)",
+                  "breakPointsConvertedPct": 71,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 52,
+                  "totalPointsWon": "94/181 (52%)",
+                  "returnPointsWonPct": 44,
+                  "returnPointsWon": "37/84 (44%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "71/97 (73%)",
+                      "made": 71,
+                      "attempts": 97,
+                      "pct": 73
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "42/71 (59%)",
+                      "made": 42,
+                      "attempts": 71,
+                      "pct": 59
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "15/26 (58%)",
+                      "made": 15,
+                      "attempts": 26,
+                      "pct": 58
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/7 (71%)",
+                      "made": 5,
+                      "attempts": 7,
+                      "pct": 71
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "94/181 (52%)",
+                      "made": 94,
+                      "attempts": 181,
+                      "pct": 52
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "37/84 (44%)",
+                      "made": 37,
+                      "attempts": 84,
+                      "pct": 44
+                    }
+                  ],
+                  "firstServePct": 73,
+                  "firstServeIn": "71/97 (73%)",
+                  "firstServeWonPct": 59,
+                  "firstServePointsWon": "42/71 (59%)",
+                  "secondServeWonPct": 58,
+                  "secondServePointsWon": "15/26 (58%)",
+                  "aces": 3,
+                  "breakPointsConverted": "5/7 (71%)",
+                  "breakPointsConvertedPct": 71,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 52,
+                  "totalPointsWon": "94/181 (52%)",
+                  "returnPointsWonPct": 44,
+                  "returnPointsWon": "37/84 (44%)"
+                }
+              },
+              {
+                "opponentName": "Lisa Zaar",
+                "event": "Foggia",
+                "matchDateLabel": "2026-06-02",
+                "isoDate": "2026-06-02",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "3-6, 6-3, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/tyra-caterina-grant-VS-lisa-zaar/open-delle-puglie-foggia-2026/",
+                "matchId": "tl-2026-06-02-open-delle-puglie-foggia-2026-tyra-caterina-grant-vs-lisa-zaar",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "66/103 (64%)",
+                      "made": 66,
+                      "attempts": 103,
+                      "pct": 64
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "38/66 (58%)",
+                      "made": 38,
+                      "attempts": 66,
+                      "pct": 58
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/37 (35%)",
+                      "made": 13,
+                      "attempts": 37,
+                      "pct": 35
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "9/15 (60%)",
+                      "made": 9,
+                      "attempts": 15,
+                      "pct": 60
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "102/197 (52%)",
+                      "made": 102,
+                      "attempts": 197,
+                      "pct": 52
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "51/94 (54%)",
+                      "made": 51,
+                      "attempts": 94,
+                      "pct": 54
+                    }
+                  ],
+                  "firstServePct": 64,
+                  "firstServeIn": "66/103 (64%)",
+                  "firstServeWonPct": 58,
+                  "firstServePointsWon": "38/66 (58%)",
+                  "secondServeWonPct": 35,
+                  "secondServePointsWon": "13/37 (35%)",
+                  "aces": 2,
+                  "breakPointsConverted": "9/15 (60%)",
+                  "breakPointsConvertedPct": 60,
+                  "doubleFaults": 7,
+                  "totalPointsWonPct": 52,
+                  "totalPointsWon": "102/197 (52%)",
+                  "returnPointsWonPct": 54,
+                  "returnPointsWon": "51/94 (54%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "66/103 (64%)",
+                      "made": 66,
+                      "attempts": 103,
+                      "pct": 64
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "38/66 (58%)",
+                      "made": 38,
+                      "attempts": 66,
+                      "pct": 58
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/37 (35%)",
+                      "made": 13,
+                      "attempts": 37,
+                      "pct": 35
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "9/15 (60%)",
+                      "made": 9,
+                      "attempts": 15,
+                      "pct": 60
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "102/197 (52%)",
+                      "made": 102,
+                      "attempts": 197,
+                      "pct": 52
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "51/94 (54%)",
+                      "made": 51,
+                      "attempts": 94,
+                      "pct": 54
+                    }
+                  ],
+                  "firstServePct": 64,
+                  "firstServeIn": "66/103 (64%)",
+                  "firstServeWonPct": 58,
+                  "firstServePointsWon": "38/66 (58%)",
+                  "secondServeWonPct": 35,
+                  "secondServePointsWon": "13/37 (35%)",
+                  "aces": 2,
+                  "breakPointsConverted": "9/15 (60%)",
+                  "breakPointsConvertedPct": 60,
+                  "doubleFaults": 7,
+                  "totalPointsWonPct": 52,
+                  "totalPointsWon": "102/197 (52%)",
+                  "returnPointsWonPct": 54,
+                  "returnPointsWon": "51/94 (54%)"
+                }
+              },
+              {
+                "opponentName": "Andrea Lazaro Garcia",
+                "event": "W75 Zaragoza",
+                "matchDateLabel": "2026-05-28",
+                "isoDate": "2026-05-28",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "lost",
+                "score": "6-4, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/andrea-lazaro-garcia-VS-tyra-caterina-grant/w75-zaragoza-2026/",
+                "matchId": "tl-2026-05-28-w75-zaragoza-2026-andrea-lazaro-garcia-vs-tyra-caterina-grant",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "38/69 (55%)",
+                      "made": 38,
+                      "attempts": 69,
+                      "pct": 55
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "24/38 (63%)",
+                      "made": 24,
+                      "attempts": 38,
+                      "pct": 63
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "11/31 (35%)",
+                      "made": 11,
+                      "attempts": 31,
+                      "pct": 35
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/13 (8%)",
+                      "made": 1,
+                      "attempts": 13,
+                      "pct": 8
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "10",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "64/145 (44%)",
+                      "made": 64,
+                      "attempts": 145,
+                      "pct": 44
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "29/76 (38%)",
+                      "made": 29,
+                      "attempts": 76,
+                      "pct": 38
+                    }
+                  ],
+                  "firstServePct": 55,
+                  "firstServeIn": "38/69 (55%)",
+                  "firstServeWonPct": 63,
+                  "firstServePointsWon": "24/38 (63%)",
+                  "secondServeWonPct": 35,
+                  "secondServePointsWon": "11/31 (35%)",
+                  "aces": 3,
+                  "breakPointsConverted": "1/13 (8%)",
+                  "breakPointsConvertedPct": 8,
+                  "doubleFaults": 10,
+                  "totalPointsWonPct": 44,
+                  "totalPointsWon": "64/145 (44%)",
+                  "returnPointsWonPct": 38,
+                  "returnPointsWon": "29/76 (38%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "38/69 (55%)",
+                      "made": 38,
+                      "attempts": 69,
+                      "pct": 55
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "24/38 (63%)",
+                      "made": 24,
+                      "attempts": 38,
+                      "pct": 63
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "11/31 (35%)",
+                      "made": 11,
+                      "attempts": 31,
+                      "pct": 35
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/13 (8%)",
+                      "made": 1,
+                      "attempts": 13,
+                      "pct": 8
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "10",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "64/145 (44%)",
+                      "made": 64,
+                      "attempts": 145,
+                      "pct": 44
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "29/76 (38%)",
+                      "made": 29,
+                      "attempts": 76,
+                      "pct": 38
+                    }
+                  ],
+                  "firstServePct": 55,
+                  "firstServeIn": "38/69 (55%)",
+                  "firstServeWonPct": 63,
+                  "firstServePointsWon": "24/38 (63%)",
+                  "secondServeWonPct": 35,
+                  "secondServePointsWon": "11/31 (35%)",
+                  "aces": 3,
+                  "breakPointsConverted": "1/13 (8%)",
+                  "breakPointsConvertedPct": 8,
+                  "doubleFaults": 10,
+                  "totalPointsWonPct": 44,
+                  "totalPointsWon": "64/145 (44%)",
+                  "returnPointsWonPct": 38,
+                  "returnPointsWon": "29/76 (38%)"
+                }
+              },
+              {
+                "opponentName": "Irene Burillo",
+                "event": "W75 Zaragoza",
+                "matchDateLabel": "2026-05-27",
+                "isoDate": "2026-05-27",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "6-3, 6-1",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/tyra-caterina-grant-VS-irene-burillo-escorihuela/w75-zaragoza-2026/",
+                "matchId": "tl-2026-05-27-w75-zaragoza-2026-tyra-caterina-grant-vs-irene-burillo",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "48/69 (70%)",
+                      "made": 48,
+                      "attempts": 69,
+                      "pct": 70
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "29/48 (60%)",
+                      "made": 29,
+                      "attempts": 48,
+                      "pct": 60
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/21 (43%)",
+                      "made": 9,
+                      "attempts": 21,
+                      "pct": 43
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/8 (75%)",
+                      "made": 6,
+                      "attempts": 8,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "70/122 (57%)",
+                      "made": 70,
+                      "attempts": 122,
+                      "pct": 57
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "32/53 (60%)",
+                      "made": 32,
+                      "attempts": 53,
+                      "pct": 60
+                    }
+                  ],
+                  "firstServePct": 70,
+                  "firstServeIn": "48/69 (70%)",
+                  "firstServeWonPct": 60,
+                  "firstServePointsWon": "29/48 (60%)",
+                  "secondServeWonPct": 43,
+                  "secondServePointsWon": "9/21 (43%)",
+                  "aces": 0,
+                  "breakPointsConverted": "6/8 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 57,
+                  "totalPointsWon": "70/122 (57%)",
+                  "returnPointsWonPct": 60,
+                  "returnPointsWon": "32/53 (60%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "48/69 (70%)",
+                      "made": 48,
+                      "attempts": 69,
+                      "pct": 70
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "29/48 (60%)",
+                      "made": 29,
+                      "attempts": 48,
+                      "pct": 60
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/21 (43%)",
+                      "made": 9,
+                      "attempts": 21,
+                      "pct": 43
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "6/8 (75%)",
+                      "made": 6,
+                      "attempts": 8,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "70/122 (57%)",
+                      "made": 70,
+                      "attempts": 122,
+                      "pct": 57
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "32/53 (60%)",
+                      "made": 32,
+                      "attempts": 53,
+                      "pct": 60
+                    }
+                  ],
+                  "firstServePct": 70,
+                  "firstServeIn": "48/69 (70%)",
+                  "firstServeWonPct": 60,
+                  "firstServePointsWon": "29/48 (60%)",
+                  "secondServeWonPct": 43,
+                  "secondServePointsWon": "9/21 (43%)",
+                  "aces": 0,
+                  "breakPointsConverted": "6/8 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 57,
+                  "totalPointsWon": "70/122 (57%)",
+                  "returnPointsWonPct": 60,
+                  "returnPointsWon": "32/53 (60%)"
+                }
+              },
+              {
+                "opponentName": "Caroline Werner",
+                "event": "W75 Kosice",
+                "matchDateLabel": "2026-05-23",
+                "isoDate": "2026-05-23",
+                "surface": "Clay",
+                "round": "fin",
+                "result": "win",
+                "score": "6-3, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/tyra-caterina-grant-VS-caroline-uebelhoer/w75-kosice-2026/",
+                "matchId": "tl-2026-05-23-w75-kosice-2026-tyra-caterina-grant-vs-caroline-werner",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "42/55 (76%)",
+                      "made": 42,
+                      "attempts": 55,
+                      "pct": 76
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "30/42 (71%)",
+                      "made": 30,
+                      "attempts": 42,
+                      "pct": 71
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "4/13 (31%)",
+                      "made": 4,
+                      "attempts": 13,
+                      "pct": 31
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/13 (38%)",
+                      "made": 5,
+                      "attempts": 13,
+                      "pct": 38
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "68/121 (56%)",
+                      "made": 68,
+                      "attempts": 121,
+                      "pct": 56
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "34/66 (52%)",
+                      "made": 34,
+                      "attempts": 66,
+                      "pct": 52
+                    }
+                  ],
+                  "firstServePct": 76,
+                  "firstServeIn": "42/55 (76%)",
+                  "firstServeWonPct": 71,
+                  "firstServePointsWon": "30/42 (71%)",
+                  "secondServeWonPct": 31,
+                  "secondServePointsWon": "4/13 (31%)",
+                  "aces": 1,
+                  "breakPointsConverted": "5/13 (38%)",
+                  "breakPointsConvertedPct": 38,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 56,
+                  "totalPointsWon": "68/121 (56%)",
+                  "returnPointsWonPct": 52,
+                  "returnPointsWon": "34/66 (52%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "42/55 (76%)",
+                      "made": 42,
+                      "attempts": 55,
+                      "pct": 76
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "30/42 (71%)",
+                      "made": 30,
+                      "attempts": 42,
+                      "pct": 71
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "4/13 (31%)",
+                      "made": 4,
+                      "attempts": 13,
+                      "pct": 31
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/13 (38%)",
+                      "made": 5,
+                      "attempts": 13,
+                      "pct": 38
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "68/121 (56%)",
+                      "made": 68,
+                      "attempts": 121,
+                      "pct": 56
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "34/66 (52%)",
+                      "made": 34,
+                      "attempts": 66,
+                      "pct": 52
+                    }
+                  ],
+                  "firstServePct": 76,
+                  "firstServeIn": "42/55 (76%)",
+                  "firstServeWonPct": 71,
+                  "firstServePointsWon": "30/42 (71%)",
+                  "secondServeWonPct": 31,
+                  "secondServePointsWon": "4/13 (31%)",
+                  "aces": 1,
+                  "breakPointsConverted": "5/13 (38%)",
+                  "breakPointsConvertedPct": 38,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 56,
+                  "totalPointsWon": "68/121 (56%)",
+                  "returnPointsWonPct": 52,
+                  "returnPointsWon": "34/66 (52%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 73.2,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.8,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.572,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 73.2,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/wta/tyra-caterina-grant/"
+          }
+        },
         "record2026": "",
-        "notes": "Pick: model 53%",
+        "notes": "Pick: model 58%",
         "matchupNote": "Why pick: Tyra Caterina Grant grades 33 points better on opponent-adjusted recent form. Lean, not a chase."
       },
       {
         "name": "Tatiana Pieri",
-        "rank": null,
+        "rank": 505,
         "label": "Tatiana Pieri",
         "form": null,
-        "boardPct": 47,
+        "boardPct": 42,
         "decimalOdds": 11.8,
         "marketLabel": "+1080 / 8.5% implied",
-        "clayLine": "Rank not joined | adj form 40",
+        "clayLine": "Live rank #505 | Italy | age 27 | adj form 40",
         "weakness": {
           "name": "Tatiana Pieri",
           "serviceHoldPct": null,
@@ -220,9 +1482,1271 @@
           "strengths": [],
           "gameFlowRead": "Tatiana Pieri can drop points quickly through first-serve points won below comfort (52%) and second-serve points won are attackable (42%)."
         },
-        "warehouseStats": null,
+        "warehouseStats": {
+          "name": "Tatiana Pieri",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Tatiana Pieri",
+            "country": "Italy",
+            "birthdate": "1999-03-29",
+            "age": 27,
+            "rank": 505,
+            "rankingLabel": "WTA ranking",
+            "topRank": 322,
+            "topRankDate": "2024-07-22",
+            "topRankPoints": 19500,
+            "points": 108,
+            "prizeMoney": "107.495 $",
+            "matchesTotal": 562,
+            "wins": 305,
+            "losses": 257,
+            "winPct": 54.27,
+            "sourceUrl": "https://www.tennislive.net/wta/tatiana-pieri/",
+            "capturedAt": "2026-06-04T23:43:09.363781+00:00"
+          },
+          "ranking": {
+            "rank": 505,
+            "points": 108,
+            "country": "Italy",
+            "age": 27,
+            "tour": "WTA ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/wta/tatiana-pieri/",
+            "asOf": "2026-06-04T23:43:09.363781+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/wta/match/verena-meliss-VS-tatiana-pieri/w35-santa-margherita-di-pula-2026-5/",
+            "capturedAt": "2026-06-04T23:43:17.606340+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 25,
+                "value": -7,
+                "label": "06.05.2026 (win vs Sara Milanese)",
+                "date": "2026-05-06",
+                "result": "win",
+                "opponentName": "Sara Milanese"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 26,
+                "value": -8,
+                "label": "07.05.2026 (lost vs Verena Meliss)",
+                "date": "2026-05-07",
+                "result": "lost",
+                "opponentName": "Verena Meliss"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 27,
+                "value": -9,
+                "label": "20.05.2026 (lost vs Mia Ristic)",
+                "date": "2026-05-20",
+                "result": "lost",
+                "opponentName": "Mia Ristic"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 28,
+                "value": -10,
+                "label": "26.05.2026 (lost vs Nadia Podoroska)",
+                "date": "2026-05-26",
+                "result": "lost",
+                "opponentName": "Nadia Podoroska"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 29,
+                "value": -9,
+                "label": "01.06.2026 (win vs Victoria Bosio)",
+                "date": "2026-06-01",
+                "result": "win",
+                "opponentName": "Victoria Bosio"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 30,
+                "value": -8,
+                "label": "03.06.2026 (win vs Sofia Costoulas)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Sofia Costoulas"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 1,
+                "value": -1,
+                "label": "25.09.2025 (lost vs Daria Lodikova)",
+                "date": "2025-09-25",
+                "result": "lost",
+                "opponentName": "Daria Lodikova"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 2,
+                "value": -2,
+                "label": "29.09.2025 (lost vs Mayar Sherif)",
+                "date": "2025-09-29",
+                "result": "lost",
+                "opponentName": "Mayar Sherif"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 3,
+                "value": -3,
+                "label": "14.10.2025 (lost vs Rositsa Dencheva)",
+                "date": "2025-10-14",
+                "result": "lost",
+                "opponentName": "Rositsa Dencheva"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 4,
+                "value": -4,
+                "label": "12.11.2025 (lost vs Sara Dols)",
+                "date": "2025-11-12",
+                "result": "lost",
+                "opponentName": "Sara Dols"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 5,
+                "value": -5,
+                "label": "19.11.2025 (lost vs Isabella Maria Serban)",
+                "date": "2025-11-19",
+                "result": "lost",
+                "opponentName": "Isabella Maria Serban"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 6,
+                "value": -4,
+                "label": "14.01.2026 (win vs Sofia Johnson)",
+                "date": "2026-01-14",
+                "result": "win",
+                "opponentName": "Sofia Johnson"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 7,
+                "value": -5,
+                "label": "16.01.2026 (lost vs Bianca Vanessa Andreescu)",
+                "date": "2026-01-16",
+                "result": "lost",
+                "opponentName": "Bianca Vanessa Andreescu"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 8,
+                "value": -4,
+                "label": "16.01.2026 (win vs Rachel Gailis)",
+                "date": "2026-01-16",
+                "result": "win",
+                "opponentName": "Rachel Gailis"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 9,
+                "value": -5,
+                "label": "20.01.2026 (lost vs Akasha Urhobo)",
+                "date": "2026-01-20",
+                "result": "lost",
+                "opponentName": "Akasha Urhobo"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 10,
+                "value": -4,
+                "label": "26.01.2026 (win vs Kolie Allen)",
+                "date": "2026-01-26",
+                "result": "win",
+                "opponentName": "Kolie Allen"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 11,
+                "value": -3,
+                "label": "27.01.2026 (win vs Ya-Yi Yang)",
+                "date": "2026-01-27",
+                "result": "win",
+                "opponentName": "Ya Yi Yang"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 12,
+                "value": -4,
+                "label": "28.01.2026 (lost vs Jessica Pieri)",
+                "date": "2026-01-28",
+                "result": "lost",
+                "opponentName": "Jessica Pieri"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 13,
+                "value": -5,
+                "label": "02.02.2026 (lost vs Kylie Collins)",
+                "date": "2026-02-02",
+                "result": "lost",
+                "opponentName": "Kylie Collins"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 14,
+                "value": -6,
+                "label": "25.02.2026 (lost vs Luisina Giovannini)",
+                "date": "2026-02-25",
+                "result": "lost",
+                "opponentName": "Luisina Giovannini"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 15,
+                "value": -5,
+                "label": "04.03.2026 (win vs Aran Teixido Garcia)",
+                "date": "2026-03-04",
+                "result": "win",
+                "opponentName": "Aran Teixido Garcia"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 16,
+                "value": -6,
+                "label": "05.03.2026 (lost vs Jennifer Ruggeri)",
+                "date": "2026-03-05",
+                "result": "lost",
+                "opponentName": "Jennifer Ruggeri"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 17,
+                "value": -7,
+                "label": "10.03.2026 (lost vs Allura Zamarripa)",
+                "date": "2026-03-10",
+                "result": "lost",
+                "opponentName": "Allura Zamarripa"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 18,
+                "value": -8,
+                "label": "28.03.2026 (lost vs Ayana Akli)",
+                "date": "2026-03-28",
+                "result": "lost",
+                "opponentName": "Ayana Akli"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 19,
+                "value": -7,
+                "label": "08.04.2026 (win vs Jamilah Snells)",
+                "date": "2026-04-08",
+                "result": "win",
+                "opponentName": "Jamilah Snells"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 20,
+                "value": -6,
+                "label": "09.04.2026 (win vs Anna Sinclair Rogers)",
+                "date": "2026-04-09",
+                "result": "win",
+                "opponentName": "Anna Sinclair Rogers"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 21,
+                "value": -7,
+                "label": "10.04.2026 (lost vs Claire Liu)",
+                "date": "2026-04-10",
+                "result": "lost",
+                "opponentName": "Claire Liu"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 22,
+                "value": -6,
+                "label": "15.04.2026 (win vs Alyssa James)",
+                "date": "2026-04-15",
+                "result": "win",
+                "opponentName": "Alyssa James"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 23,
+                "value": -7,
+                "label": "16.04.2026 (lost vs Angela Fita Boluda)",
+                "date": "2026-04-16",
+                "result": "lost",
+                "opponentName": "Angela Fita Boluda"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 24,
+                "value": -8,
+                "label": "21.04.2026 (lost vs Shilin Xu)",
+                "date": "2026-04-21",
+                "result": "lost",
+                "opponentName": "Shilin Xu"
+              },
+              {
+                "index": 30,
+                "sequenceIndex": 25,
+                "value": -7,
+                "label": "06.05.2026 (win vs Sara Milanese)",
+                "date": "2026-05-06",
+                "result": "win",
+                "opponentName": "Sara Milanese"
+              },
+              {
+                "index": 31,
+                "sequenceIndex": 26,
+                "value": -8,
+                "label": "07.05.2026 (lost vs Verena Meliss)",
+                "date": "2026-05-07",
+                "result": "lost",
+                "opponentName": "Verena Meliss"
+              },
+              {
+                "index": 32,
+                "sequenceIndex": 27,
+                "value": -9,
+                "label": "20.05.2026 (lost vs Mia Ristic)",
+                "date": "2026-05-20",
+                "result": "lost",
+                "opponentName": "Mia Ristic"
+              },
+              {
+                "index": 33,
+                "sequenceIndex": 28,
+                "value": -10,
+                "label": "26.05.2026 (lost vs Nadia Podoroska)",
+                "date": "2026-05-26",
+                "result": "lost",
+                "opponentName": "Nadia Podoroska"
+              },
+              {
+                "index": 34,
+                "sequenceIndex": 29,
+                "value": -9,
+                "label": "01.06.2026 (win vs Victoria Bosio)",
+                "date": "2026-06-01",
+                "result": "win",
+                "opponentName": "Victoria Bosio"
+              },
+              {
+                "index": 35,
+                "sequenceIndex": 30,
+                "value": -8,
+                "label": "03.06.2026 (win vs Sofia Costoulas)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Sofia Costoulas"
+              }
+            ],
+            "latestValue": -8,
+            "minValue": -10,
+            "maxValue": -1
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 0,
+              "avgAces": 0,
+              "doubleFaults": 2,
+              "avgDoubleFaults": 2,
+              "firstServePct": 65,
+              "firstServeWonPct": 51.6,
+              "secondServeWonPct": 42.4,
+              "returnPointsWonPct": 39,
+              "breakPointsConvertedPct": 43.2,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 16,
+              "breakPointsToConvert": 37,
+              "breakPointChancesPerMatch": 7.4
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 16,
+                "bpChances": 37,
+                "bpConvertedPct": 43.2,
+                "bpChancesPerMatch": 7.4
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 16,
+                "bpChances": 37,
+                "bpConvertedPct": 43.2,
+                "bpChancesPerMatch": 7.4
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Tatiana Pieri",
+            "matches": [
+              {
+                "opponentName": "Sofia Costoulas",
+                "event": "Foggia",
+                "matchDateLabel": "2026-06-03",
+                "isoDate": "2026-06-03",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "1-6, 2-3, Sofia Costoulas - retired",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/tatiana-pieri-VS-sofia-costoulas/open-delle-puglie-foggia-2026/",
+                "matchId": "tl-2026-06-03-open-delle-puglie-foggia-2026-tatiana-pieri-vs-sofia-costoulas",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "23/37 (62%)",
+                      "made": 23,
+                      "attempts": 37,
+                      "pct": 62
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "9/23 (39%)",
+                      "made": 9,
+                      "attempts": 23,
+                      "pct": 39
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "6/14 (43%)",
+                      "made": 6,
+                      "attempts": 14,
+                      "pct": 43
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/1 (100%)",
+                      "made": 1,
+                      "attempts": 1,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "21/64 (33%)",
+                      "made": 21,
+                      "attempts": 64,
+                      "pct": 33
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "6/27 (22%)",
+                      "made": 6,
+                      "attempts": 27,
+                      "pct": 22
+                    }
+                  ],
+                  "firstServePct": 62,
+                  "firstServeIn": "23/37 (62%)",
+                  "firstServeWonPct": 39,
+                  "firstServePointsWon": "9/23 (39%)",
+                  "secondServeWonPct": 43,
+                  "secondServePointsWon": "6/14 (43%)",
+                  "aces": 0,
+                  "breakPointsConverted": "1/1 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 33,
+                  "totalPointsWon": "21/64 (33%)",
+                  "returnPointsWonPct": 22,
+                  "returnPointsWon": "6/27 (22%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "23/37 (62%)",
+                      "made": 23,
+                      "attempts": 37,
+                      "pct": 62
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "9/23 (39%)",
+                      "made": 9,
+                      "attempts": 23,
+                      "pct": 39
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "6/14 (43%)",
+                      "made": 6,
+                      "attempts": 14,
+                      "pct": 43
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/1 (100%)",
+                      "made": 1,
+                      "attempts": 1,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "21/64 (33%)",
+                      "made": 21,
+                      "attempts": 64,
+                      "pct": 33
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "6/27 (22%)",
+                      "made": 6,
+                      "attempts": 27,
+                      "pct": 22
+                    }
+                  ],
+                  "firstServePct": 62,
+                  "firstServeIn": "23/37 (62%)",
+                  "firstServeWonPct": 39,
+                  "firstServePointsWon": "9/23 (39%)",
+                  "secondServeWonPct": 43,
+                  "secondServePointsWon": "6/14 (43%)",
+                  "aces": 0,
+                  "breakPointsConverted": "1/1 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 33,
+                  "totalPointsWon": "21/64 (33%)",
+                  "returnPointsWonPct": 22,
+                  "returnPointsWon": "6/27 (22%)"
+                }
+              },
+              {
+                "opponentName": "Victoria Bosio",
+                "event": "Foggia",
+                "matchDateLabel": "2026-06-01",
+                "isoDate": "2026-06-01",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "6-0, 2-6, 6-2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/tatiana-pieri-VS-victoria-bosio/open-delle-puglie-foggia-2026/",
+                "matchId": "tl-2026-06-01-open-delle-puglie-foggia-2026-tatiana-pieri-vs-victoria-bosio",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "45/57 (79%)",
+                      "made": 45,
+                      "attempts": 57,
+                      "pct": 79
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "26/45 (58%)",
+                      "made": 26,
+                      "attempts": 45,
+                      "pct": 58
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "7/12 (58%)",
+                      "made": 7,
+                      "attempts": 12,
+                      "pct": 58
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "7/16 (44%)",
+                      "made": 7,
+                      "attempts": 16,
+                      "pct": 44
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "77/135 (57%)",
+                      "made": 77,
+                      "attempts": 135,
+                      "pct": 57
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "44/78 (56%)",
+                      "made": 44,
+                      "attempts": 78,
+                      "pct": 56
+                    }
+                  ],
+                  "firstServePct": 79,
+                  "firstServeIn": "45/57 (79%)",
+                  "firstServeWonPct": 58,
+                  "firstServePointsWon": "26/45 (58%)",
+                  "secondServeWonPct": 58,
+                  "secondServePointsWon": "7/12 (58%)",
+                  "aces": 0,
+                  "breakPointsConverted": "7/16 (44%)",
+                  "breakPointsConvertedPct": 44,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 57,
+                  "totalPointsWon": "77/135 (57%)",
+                  "returnPointsWonPct": 56,
+                  "returnPointsWon": "44/78 (56%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "45/57 (79%)",
+                      "made": 45,
+                      "attempts": 57,
+                      "pct": 79
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "26/45 (58%)",
+                      "made": 26,
+                      "attempts": 45,
+                      "pct": 58
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "7/12 (58%)",
+                      "made": 7,
+                      "attempts": 12,
+                      "pct": 58
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "7/16 (44%)",
+                      "made": 7,
+                      "attempts": 16,
+                      "pct": 44
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "77/135 (57%)",
+                      "made": 77,
+                      "attempts": 135,
+                      "pct": 57
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "44/78 (56%)",
+                      "made": 44,
+                      "attempts": 78,
+                      "pct": 56
+                    }
+                  ],
+                  "firstServePct": 79,
+                  "firstServeIn": "45/57 (79%)",
+                  "firstServeWonPct": 58,
+                  "firstServePointsWon": "26/45 (58%)",
+                  "secondServeWonPct": 58,
+                  "secondServePointsWon": "7/12 (58%)",
+                  "aces": 0,
+                  "breakPointsConverted": "7/16 (44%)",
+                  "breakPointsConvertedPct": 44,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 57,
+                  "totalPointsWon": "77/135 (57%)",
+                  "returnPointsWonPct": 56,
+                  "returnPointsWon": "44/78 (56%)"
+                }
+              },
+              {
+                "opponentName": "Nadia Podoroska",
+                "event": "W75 Zaragoza",
+                "matchDateLabel": "2026-05-26",
+                "isoDate": "2026-05-26",
+                "surface": "Clay",
+                "round": "qual.",
+                "result": "lost",
+                "score": "6-3, 7-5",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/nadia-podoroska-VS-tatiana-pieri/w75-zaragoza-2026/",
+                "matchId": "tl-2026-05-26-w75-zaragoza-2026-nadia-podoroska-vs-tatiana-pieri",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "33/65 (51%)",
+                      "made": 33,
+                      "attempts": 65,
+                      "pct": 51
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "18/33 (55%)",
+                      "made": 18,
+                      "attempts": 33,
+                      "pct": 55
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/32 (31%)",
+                      "made": 10,
+                      "attempts": 32,
+                      "pct": 31
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/12 (33%)",
+                      "made": 4,
+                      "attempts": 12,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "69/155 (45%)",
+                      "made": 69,
+                      "attempts": 155,
+                      "pct": 45
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "41/90 (46%)",
+                      "made": 41,
+                      "attempts": 90,
+                      "pct": 46
+                    }
+                  ],
+                  "firstServePct": 51,
+                  "firstServeIn": "33/65 (51%)",
+                  "firstServeWonPct": 55,
+                  "firstServePointsWon": "18/33 (55%)",
+                  "secondServeWonPct": 31,
+                  "secondServePointsWon": "10/32 (31%)",
+                  "aces": 0,
+                  "breakPointsConverted": "4/12 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 45,
+                  "totalPointsWon": "69/155 (45%)",
+                  "returnPointsWonPct": 46,
+                  "returnPointsWon": "41/90 (46%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "33/65 (51%)",
+                      "made": 33,
+                      "attempts": 65,
+                      "pct": 51
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "18/33 (55%)",
+                      "made": 18,
+                      "attempts": 33,
+                      "pct": 55
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/32 (31%)",
+                      "made": 10,
+                      "attempts": 32,
+                      "pct": 31
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/12 (33%)",
+                      "made": 4,
+                      "attempts": 12,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "69/155 (45%)",
+                      "made": 69,
+                      "attempts": 155,
+                      "pct": 45
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "41/90 (46%)",
+                      "made": 41,
+                      "attempts": 90,
+                      "pct": 46
+                    }
+                  ],
+                  "firstServePct": 51,
+                  "firstServeIn": "33/65 (51%)",
+                  "firstServeWonPct": 55,
+                  "firstServePointsWon": "18/33 (55%)",
+                  "secondServeWonPct": 31,
+                  "secondServePointsWon": "10/32 (31%)",
+                  "aces": 0,
+                  "breakPointsConverted": "4/12 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 45,
+                  "totalPointsWon": "69/155 (45%)",
+                  "returnPointsWonPct": 46,
+                  "returnPointsWon": "41/90 (46%)"
+                }
+              },
+              {
+                "opponentName": "Mia Ristic",
+                "event": "W50 Portoroz",
+                "matchDateLabel": "2026-05-20",
+                "isoDate": "2026-05-20",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "lost",
+                "score": "6-4, 6-2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/mia-ristic-VS-tatiana-pieri/w50-portoroz-2026/",
+                "matchId": "tl-2026-05-20-w50-portoroz-2026-mia-ristic-vs-tatiana-pieri",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "34/52 (65%)",
+                      "made": 34,
+                      "attempts": 52,
+                      "pct": 65
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "15/34 (44%)",
+                      "made": 15,
+                      "attempts": 34,
+                      "pct": 44
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/18 (50%)",
+                      "made": 9,
+                      "attempts": 18,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/5 (60%)",
+                      "made": 3,
+                      "attempts": 5,
+                      "pct": 60
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "42/99 (42%)",
+                      "made": 42,
+                      "attempts": 99,
+                      "pct": 42
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "18/47 (38%)",
+                      "made": 18,
+                      "attempts": 47,
+                      "pct": 38
+                    }
+                  ],
+                  "firstServePct": 65,
+                  "firstServeIn": "34/52 (65%)",
+                  "firstServeWonPct": 44,
+                  "firstServePointsWon": "15/34 (44%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "9/18 (50%)",
+                  "aces": 0,
+                  "breakPointsConverted": "3/5 (60%)",
+                  "breakPointsConvertedPct": 60,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 42,
+                  "totalPointsWon": "42/99 (42%)",
+                  "returnPointsWonPct": 38,
+                  "returnPointsWon": "18/47 (38%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "34/52 (65%)",
+                      "made": 34,
+                      "attempts": 52,
+                      "pct": 65
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "15/34 (44%)",
+                      "made": 15,
+                      "attempts": 34,
+                      "pct": 44
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/18 (50%)",
+                      "made": 9,
+                      "attempts": 18,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/5 (60%)",
+                      "made": 3,
+                      "attempts": 5,
+                      "pct": 60
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "42/99 (42%)",
+                      "made": 42,
+                      "attempts": 99,
+                      "pct": 42
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "18/47 (38%)",
+                      "made": 18,
+                      "attempts": 47,
+                      "pct": 38
+                    }
+                  ],
+                  "firstServePct": 65,
+                  "firstServeIn": "34/52 (65%)",
+                  "firstServeWonPct": 44,
+                  "firstServePointsWon": "15/34 (44%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "9/18 (50%)",
+                  "aces": 0,
+                  "breakPointsConverted": "3/5 (60%)",
+                  "breakPointsConvertedPct": 60,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 42,
+                  "totalPointsWon": "42/99 (42%)",
+                  "returnPointsWonPct": 38,
+                  "returnPointsWon": "18/47 (38%)"
+                }
+              },
+              {
+                "opponentName": "Verena Meliss",
+                "event": "W35 Santa",
+                "matchDateLabel": "2026-05-07",
+                "isoDate": "2026-05-07",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "lost",
+                "score": "5-3, Tatiana Pieri - retired",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/wta/match/verena-meliss-VS-tatiana-pieri/w35-santa-margherita-di-pula-2026-5/",
+                "matchId": "tl-2026-05-07-w35-santa-margherita-di-pula-2026-5-verena-meliss-vs-tatiana-pieri",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "21/31 (68%)",
+                      "made": 21,
+                      "attempts": 31,
+                      "pct": 68
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "13/21 (62%)",
+                      "made": 13,
+                      "attempts": 21,
+                      "pct": 62
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "3/10 (30%)",
+                      "made": 3,
+                      "attempts": 10,
+                      "pct": 30
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/3 (33%)",
+                      "made": 1,
+                      "attempts": 3,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "25/58 (43%)",
+                      "made": 25,
+                      "attempts": 58,
+                      "pct": 43
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "9/27 (33%)",
+                      "made": 9,
+                      "attempts": 27,
+                      "pct": 33
+                    }
+                  ],
+                  "firstServePct": 68,
+                  "firstServeIn": "21/31 (68%)",
+                  "firstServeWonPct": 62,
+                  "firstServePointsWon": "13/21 (62%)",
+                  "secondServeWonPct": 30,
+                  "secondServePointsWon": "3/10 (30%)",
+                  "aces": 0,
+                  "breakPointsConverted": "1/3 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 0,
+                  "totalPointsWonPct": 43,
+                  "totalPointsWon": "25/58 (43%)",
+                  "returnPointsWonPct": 33,
+                  "returnPointsWon": "9/27 (33%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "21/31 (68%)",
+                      "made": 21,
+                      "attempts": 31,
+                      "pct": 68
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "13/21 (62%)",
+                      "made": 13,
+                      "attempts": 21,
+                      "pct": 62
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "3/10 (30%)",
+                      "made": 3,
+                      "attempts": 10,
+                      "pct": 30
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/3 (33%)",
+                      "made": 1,
+                      "attempts": 3,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "25/58 (43%)",
+                      "made": 25,
+                      "attempts": 58,
+                      "pct": 43
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "9/27 (33%)",
+                      "made": 9,
+                      "attempts": 27,
+                      "pct": 33
+                    }
+                  ],
+                  "firstServePct": 68,
+                  "firstServeIn": "21/31 (68%)",
+                  "firstServeWonPct": 62,
+                  "firstServePointsWon": "13/21 (62%)",
+                  "secondServeWonPct": 30,
+                  "secondServePointsWon": "3/10 (30%)",
+                  "aces": 0,
+                  "breakPointsConverted": "1/3 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 0,
+                  "totalPointsWonPct": 43,
+                  "totalPointsWon": "25/58 (43%)",
+                  "returnPointsWonPct": 33,
+                  "returnPointsWon": "9/27 (33%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 39.9,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.4,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.395,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 39.9,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/wta/tatiana-pieri/"
+          }
+        },
         "record2026": "",
-        "notes": "Opponent case: model 47%",
+        "notes": "Opponent case: model 42%",
         "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
       }
     ],
@@ -230,8 +2754,8 @@
       {
         "label": "Model pick",
         "metric": "Fair win split",
-        "leftScore": 53,
-        "rightScore": 47,
+        "leftScore": 58,
+        "rightScore": 42,
         "leftLabel": "Tyra Caterina Grant",
         "rightLabel": "Tatiana Pieri",
         "winner": "Tyra Caterina Grant"
@@ -257,11 +2781,11 @@
       {
         "label": "Volatility",
         "metric": "Lower is cleaner",
-        "leftScore": 56,
-        "rightScore": 44,
+        "leftScore": 49,
+        "rightScore": 51,
         "leftLabel": "Risk",
         "rightLabel": "Stability",
-        "winner": "Pass-first"
+        "winner": "Stable enough"
       }
     ],
     "predictionMarket": {
@@ -274,7 +2798,7 @@
           "probabilityPct": 97.5,
           "amount": null,
           "americanOdds": -3900,
-          "edgePct": -44.5,
+          "edgePct": -39.5,
           "priceBand": "Very expensive favorite"
         },
         {
@@ -282,7 +2806,7 @@
           "probabilityPct": 8.5,
           "amount": null,
           "americanOdds": 1080,
-          "edgePct": 38.5,
+          "edgePct": 33.5,
           "priceBand": "Underdog"
         }
       ]
@@ -294,14 +2818,14 @@
         "selection": "Tatiana Pieri",
         "line": null,
         "americanOdds": 1080,
-        "modelPct": 47,
+        "modelPct": 42,
         "impliedPct": 8.5,
-        "edgePct": 38.5,
-        "evPer100": 454.6,
-        "netEvPer100": 452.6,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "grade": "Outlier price/manual review",
-        "issue": "Picked side is overpriced; value board flips to Tatiana Pieri because that side has the better posted-price edge.",
-        "reason": "ML payout is tiny; use spread/total or pass unless the number moves."
+        "issue": "Outlier dog price on Tatiana Pieri; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+        "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
       },
       {
         "marketType": "Total games",
@@ -314,7 +2838,7 @@
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
-        "expectedGames": 20.9,
+        "expectedGames": 20.7,
         "edgeGames": null,
         "confidence": null,
         "grade": "No direction",
@@ -323,35 +2847,35 @@
       {
         "marketType": "Win a set",
         "label": "Win a set %",
-        "selection": "Tyra Caterina Grant 69% / Tatiana Pieri 61%",
+        "selection": "Tyra Caterina Grant 71% / Tatiana Pieri 55%",
         "rows": [
           {
             "name": "Tyra Caterina Grant",
-            "confidence": 69,
-            "modelPct": 53,
+            "confidence": 71,
+            "modelPct": 58,
             "label": "Live to win a set"
           },
           {
             "name": "Tatiana Pieri",
-            "confidence": 61,
-            "modelPct": 47,
+            "confidence": 55,
+            "modelPct": 42,
             "label": "Needs early hold pressure"
           }
         ],
-        "confidence": 69,
+        "confidence": 71,
         "grade": "Price required",
         "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
       },
       {
         "marketType": "First-set total games",
         "label": "1st set O/U",
-        "selection": "Over 8.5",
-        "expectedGames": 8.8,
-        "confidence": 57,
+        "selection": "Pass / near line",
+        "expectedGames": 8.7,
+        "confidence": 51,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "grade": "Thin value",
-        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
+        "grade": "Near fair",
+        "reason": "Expected first-set games 8.7 vs DraftKings Sportsbook 8.5; near the number. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets."
       }
     ],
     "derivativeMarketCase": null,
@@ -361,13 +2885,16 @@
         "marketType": "ML",
         "selection": "Tatiana Pieri",
         "americanOdds": 1080,
-        "modelPct": 47,
+        "modelPct": 42,
         "impliedPct": 8.5,
-        "edgePct": 38.5,
-        "evPer100": 454.6,
-        "netEvPer100": 452.6,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Tatiana Pieri because that side has the better posted-price edge.",
+        "rawEdgePct": 33.5,
+        "rawEvPer100": 395.6,
+        "rawNetEvPer100": 393.6,
+        "valueIssue": "Outlier dog price on Tatiana Pieri; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
         "valueGrade": "Outlier price/manual review",
         "betGrade": false
       },
@@ -378,32 +2905,32 @@
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 20.9,
+        "expectedGames": 20.7,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false
       },
       "firstSetTotal": {
         "marketType": "First-set total",
-        "selection": "Over 8.5",
+        "selection": "Pass / near line",
         "line": 8.5,
-        "americanOdds": -105,
-        "expectedGames": 8.8,
-        "confidence": 57,
+        "americanOdds": null,
+        "expectedGames": 8.7,
+        "confidence": 51,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 57,
-        "evPer100": 11.3,
-        "netEvPer100": 9.3,
-        "valueGrade": "Thin value",
-        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
+        "modelPct": 51,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 8.7 vs DraftKings Sportsbook 8.5; near the number. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
         {
           "name": "Tyra Caterina Grant",
-          "confidence": 69,
-          "modelPct": 53,
+          "confidence": 71,
+          "modelPct": 58,
           "label": "Live to win a set",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -411,8 +2938,8 @@
         },
         {
           "name": "Tatiana Pieri",
-          "confidence": 61,
-          "modelPct": 47,
+          "confidence": 55,
+          "modelPct": 42,
           "label": "Needs early hold pressure",
           "marketType": "Win a set",
           "valueGrade": "Needs posted price",
@@ -427,20 +2954,20 @@
       "setWinProjections": [
         {
           "name": "Tyra Caterina Grant",
-          "confidence": 69,
-          "modelPct": 53,
+          "confidence": 71,
+          "modelPct": 58,
           "label": "Live to win a set"
         },
         {
           "name": "Tatiana Pieri",
-          "confidence": 61,
-          "modelPct": 47,
+          "confidence": 55,
+          "modelPct": 42,
           "label": "Needs early hold pressure"
         }
       ],
       "totalGames": null,
-      "straightSetsProbability": 48,
-      "upsetRisk": 47,
+      "straightSetsProbability": 50,
+      "upsetRisk": 42,
       "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
       "fantasy": []
     },
@@ -455,19 +2982,22 @@
     "derivativeMarkets": [
       {
         "label": "ML",
-        "value": "Tyra Caterina Grant -3900; Model 53% vs DraftKings Sportsbook implied 97.5% (-44.5 pts).",
+        "value": "Tyra Caterina Grant -3900; Model 58% vs DraftKings Sportsbook implied 97.5% (-39.5 pts).",
         "lean": "ML payout is tiny; use spread/total or pass unless the number moves.",
-        "confidence": 53,
+        "confidence": 58,
         "marketType": "ML",
         "selection": "Tatiana Pieri",
         "americanOdds": 1080,
-        "modelPct": 47,
+        "modelPct": 42,
         "impliedPct": 8.5,
-        "edgePct": 38.5,
-        "evPer100": 454.6,
-        "netEvPer100": 452.6,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
         "feePer100": 2,
-        "valueIssue": "Picked side is overpriced; value board flips to Tatiana Pieri because that side has the better posted-price edge.",
+        "rawEdgePct": 33.5,
+        "rawEvPer100": 395.6,
+        "rawNetEvPer100": 393.6,
+        "valueIssue": "Outlier dog price on Tatiana Pieri; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
         "valueGrade": "Outlier price/manual review",
         "betGrade": false,
         "tone": "warning",
@@ -477,7 +3007,7 @@
         "label": "Win a set",
         "value": "No set-win price captured",
         "lean": "Needs early hold pressure",
-        "confidence": 69,
+        "confidence": 71,
         "setWinRows": [],
         "valueGrade": "Needs posted price",
         "tone": "neutral",
@@ -487,7 +3017,7 @@
         "label": "Spread",
         "value": "No primary game spread captured",
         "lean": "No spread line",
-        "confidence": 50,
+        "confidence": 52,
         "tone": "neutral",
         "reason": "Wait for a visible service-pressure split before entering."
       },
@@ -501,7 +3031,7 @@
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 20.9,
+        "expectedGames": 20.7,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false,
@@ -510,20 +3040,20 @@
       {
         "label": "1st set O/U",
         "value": "Line 8.5",
-        "lean": "Over 8.5",
-        "confidence": 57,
+        "lean": "Pass / near line",
+        "confidence": 51,
         "marketType": "First-set total",
-        "selection": "Over 8.5",
+        "selection": "Pass / near line",
         "line": 8.5,
-        "americanOdds": -105,
-        "expectedGames": 8.8,
+        "americanOdds": null,
+        "expectedGames": 8.7,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 57,
-        "evPer100": 11.3,
-        "netEvPer100": 9.3,
-        "valueGrade": "Thin value",
-        "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
+        "modelPct": 51,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 8.7 vs DraftKings Sportsbook 8.5; near the number. hold avg N/A, BP saved N/A, BP converted 52%, first-set sample N/A, 0 recent sets.",
         "betGrade": false,
         "tone": "neutral"
       },
@@ -531,7 +3061,7 @@
         "label": "1st service game",
         "value": "No first-service-game market captured",
         "lean": "First-service-game prices",
-        "confidence": 53,
+        "confidence": 58,
         "firstServiceGameRows": [],
         "tone": "muted",
         "reason": "No sportsbook first-service-game market captured."
@@ -540,7 +3070,7 @@
         "label": "First games",
         "value": "No first-game prop market captured",
         "lean": "First-game prop prices",
-        "confidence": 53,
+        "confidence": 58,
         "firstGamePropRows": [],
         "tone": "muted",
         "reason": "No sportsbook first-games prop captured."
@@ -552,15 +3082,15 @@
       "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/wta-foggia?event=34241330",
       "deskName": "Tyra Caterina Grant",
       "deskPricePct": 97.5,
-      "deskEdgePct": -44.5,
+      "deskEdgePct": -39.5,
       "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves.",
       "players": [
         {
           "name": "Tyra Caterina Grant",
           "americanOdds": -3900,
           "impliedPct": 97.5,
-          "modelPct": 53,
-          "edgePct": -44.5,
+          "modelPct": 58,
+          "edgePct": -39.5,
           "priceBand": "Very expensive favorite",
           "grossProfitPct": 2.6,
           "grossPayoutMultiple": 1.026,
@@ -575,8 +3105,8 @@
           "name": "Tatiana Pieri",
           "americanOdds": 1080,
           "impliedPct": 8.5,
-          "modelPct": 47,
-          "edgePct": 38.5,
+          "modelPct": 42,
+          "edgePct": 33.5,
           "priceBand": "Underdog",
           "grossProfitPct": 1080,
           "grossPayoutMultiple": 11.8,
@@ -613,7 +3143,7 @@
       "index": 0,
       "role": "Player 1",
       "name": "Tyra Caterina Grant",
-      "detail": "Rank not joined | adj form 73",
+      "detail": "Live rank #184 | Italy | age 18 | adj form 73",
       "americanOdds": -3900,
       "americanLabel": "-3900",
       "decimalOdds": 1.0256410256410255,
@@ -625,7 +3155,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Tatiana Pieri",
-      "detail": "Rank not joined | adj form 40",
+      "detail": "Live rank #505 | Italy | age 27 | adj form 40",
       "americanOdds": 1080,
       "americanLabel": "+1080",
       "decimalOdds": 11.8,
@@ -643,7 +3173,7 @@
         "index": 0,
         "role": "Player 1",
         "name": "Tyra Caterina Grant",
-        "detail": "Rank not joined | adj form 73",
+        "detail": "Live rank #184 | Italy | age 18 | adj form 73",
         "americanOdds": -3900,
         "americanLabel": "-3900",
         "decimalOdds": 1.0256410256410255,
@@ -655,7 +3185,7 @@
         "index": 1,
         "role": "Player 2",
         "name": "Tatiana Pieri",
-        "detail": "Rank not joined | adj form 40",
+        "detail": "Live rank #505 | Italy | age 27 | adj form 40",
         "americanOdds": 1080,
         "americanLabel": "+1080",
         "decimalOdds": 11.8,
@@ -672,7 +3202,7 @@
       "index": 0,
       "role": "Player 1",
       "name": "Tyra Caterina Grant",
-      "detail": "Rank not joined | adj form 73",
+      "detail": "Live rank #184 | Italy | age 18 | adj form 73",
       "americanOdds": -3900,
       "americanLabel": "-3900",
       "decimalOdds": 1.0256410256410255,
@@ -684,7 +3214,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Tatiana Pieri",
-      "detail": "Rank not joined | adj form 40",
+      "detail": "Live rank #505 | Italy | age 27 | adj form 40",
       "americanOdds": 1080,
       "americanLabel": "+1080",
       "decimalOdds": 11.8,
@@ -693,9 +3223,9 @@
     },
     "lean": "Lean Tyra Caterina Grant; ML payout is tiny; use spread/total or pass unless the number moves.",
     "rationale": "Our model pick: Tyra Caterina Grant. Tyra Caterina Grant grades 33 points better on opponent-adjusted recent form. Lean, not a chase.",
-    "confidence": 53,
-    "volatility": 56,
-    "recommendationScore": 39,
+    "confidence": 58,
+    "volatility": 49,
+    "recommendationScore": 46,
     "tier": "Watch",
     "sourceLabel": "DraftKings Sportsbook",
     "modelEdge": null,

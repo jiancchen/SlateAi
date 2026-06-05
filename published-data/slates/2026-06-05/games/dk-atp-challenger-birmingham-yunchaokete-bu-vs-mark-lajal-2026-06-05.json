@@ -22,7 +22,7 @@
       "side": "Player 1",
       "name": "Yunchaokete Bu",
       "displayName": "Yunchaokete Bu",
-      "detail": "Grass | Rank not joined"
+      "detail": "Grass | Live rank #166 | China | age 24 | adj form 58"
     },
     {
       "side": "Player 2",
@@ -31,9 +31,9 @@
       "detail": "Grass | Live rank #157 | Estonia | age 23 | adj form 59"
     }
   ],
-  "summary": "Our model pick: Yunchaokete Bu. Yunchaokete Bu has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Grass. Lean, not a chase.",
+  "summary": "Our model pick: Yunchaokete Bu. Opponent-adjusted recent form is basically even: Yunchaokete Bu 58, Mark Lajal 59. Lean, not a chase.",
   "factors": [
-    "Yunchaokete Bu has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Grass. Lean, not a chase.",
+    "Opponent-adjusted recent form is basically even: Yunchaokete Bu 58, Mark Lajal 59. Lean, not a chase.",
     "Model 51.6% vs DraftKings Sportsbook implied 53.9% (-2.3 pts).",
     "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
     "Wait for a visible service-pressure split before entering.",
@@ -78,7 +78,7 @@
     "weaknessEdge": {
       "edgeType": "No clear weakness edge",
       "target": "Both sides",
-      "scoreGap": 2,
+      "scoreGap": -3,
       "attackingSide": null,
       "vulnerableSide": null,
       "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
@@ -88,23 +88,25 @@
       "pick": {
         "name": "Yunchaokete Bu",
         "serviceHoldPct": null,
-        "firstServeWonPct": null,
-        "secondServeWonPct": null,
-        "firstServePct": null,
-        "avgAces": null,
-        "avgDoubleFaults": null,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 59,
+        "firstServePct": 58,
+        "avgAces": 6.2,
+        "avgDoubleFaults": 1.6,
         "avgWinners": null,
         "avgUnforcedErrors": null,
         "avgBreakPointsFaced": null,
-        "returnPointsWonPct": null,
-        "servicePointsWonPct": null,
-        "weakServeMatches": 0,
+        "returnPointsWonPct": 38,
+        "servicePointsWonPct": 64,
+        "weakServeMatches": 2,
         "pressureMatches": null,
-        "matchesWithStats": 0,
-        "weaknessScore": 0,
+        "matchesWithStats": 5,
+        "weaknessScore": 5,
         "firstGameComfort": "Comfortable enough if first serve lands",
         "liabilities": [],
-        "strengths": [],
+        "strengths": [
+          "second serve holds up (59%)"
+        ],
         "gameFlowRead": "Yunchaokete Bu has no major service weakness in the joined warehouse sample."
       },
       "opponent": {
@@ -136,39 +138,1303 @@
     "players": [
       {
         "name": "Yunchaokete Bu",
-        "rank": null,
+        "rank": 166,
         "label": "Yunchaokete Bu",
         "form": null,
         "boardPct": 51.6,
         "decimalOdds": 1.855,
         "marketLabel": "-117 / 53.9% implied",
-        "clayLine": "Grass | Rank not joined",
+        "clayLine": "Grass | Live rank #166 | China | age 24 | adj form 58",
         "weakness": {
           "name": "Yunchaokete Bu",
           "serviceHoldPct": null,
-          "firstServeWonPct": null,
-          "secondServeWonPct": null,
-          "firstServePct": null,
-          "avgAces": null,
-          "avgDoubleFaults": null,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 59,
+          "firstServePct": 58,
+          "avgAces": 6.2,
+          "avgDoubleFaults": 1.6,
           "avgWinners": null,
           "avgUnforcedErrors": null,
           "avgBreakPointsFaced": null,
-          "returnPointsWonPct": null,
-          "servicePointsWonPct": null,
-          "weakServeMatches": 0,
+          "returnPointsWonPct": 38,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 2,
           "pressureMatches": null,
-          "matchesWithStats": 0,
-          "weaknessScore": 0,
+          "matchesWithStats": 5,
+          "weaknessScore": 5,
           "firstGameComfort": "Comfortable enough if first serve lands",
           "liabilities": [],
-          "strengths": [],
+          "strengths": [
+            "second serve holds up (59%)"
+          ],
           "gameFlowRead": "Yunchaokete Bu has no major service weakness in the joined warehouse sample."
         },
-        "warehouseStats": null,
+        "warehouseStats": {
+          "name": "Bu Yunchaokete",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Bu Yunchaokete",
+            "country": "China",
+            "birthdate": "2002-01-19",
+            "age": 24,
+            "rank": 166,
+            "rankingLabel": "ATP ranking",
+            "topRank": 64,
+            "topRankDate": "2025-04-14",
+            "topRankPoints": 905,
+            "points": 358,
+            "prizeMoney": "1.688.726 $",
+            "matchesTotal": 343,
+            "wins": 215,
+            "losses": 128,
+            "winPct": 62.68,
+            "sourceUrl": "https://www.tennislive.net/atp/bu-yunchaokete/",
+            "capturedAt": "2026-06-04T23:37:33.863687+00:00"
+          },
+          "ranking": {
+            "rank": 166,
+            "points": 358,
+            "country": "China",
+            "age": 24,
+            "tour": "ATP ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/atp/bu-yunchaokete/",
+            "asOf": "2026-06-04T23:37:33.863687+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/bu-yunchaokete-VS-jie-cui/wuxi-challenger-2026/",
+            "capturedAt": "2026-06-04T23:37:39.040235+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 25,
+                "value": 3,
+                "label": "08.05.2026 (win vs Adam Walton)",
+                "date": "2026-05-08",
+                "result": "win",
+                "opponentName": "Adam Walton"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 26,
+                "value": 4,
+                "label": "09.05.2026 (win vs Jie Cui)",
+                "date": "2026-05-09",
+                "result": "win",
+                "opponentName": "Jie Cui"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 27,
+                "value": 3,
+                "label": "10.05.2026 (lost vs Soon-Woo Kwon)",
+                "date": "2026-05-10",
+                "result": "lost",
+                "opponentName": "Soon-Woo Kwon"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 28,
+                "value": 2,
+                "label": "19.05.2026 (lost vs Emilio Nava)",
+                "date": "2026-05-19",
+                "result": "lost",
+                "opponentName": "Emilio Nava"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 29,
+                "value": 3,
+                "label": "02.06.2026 (win vs Lloyd Harris)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Lloyd Harris"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 30,
+                "value": 4,
+                "label": "04.06.2026 (win vs Billy Harris)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Billy Harris"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 1,
+                "value": -1,
+                "label": "26.09.2025 (lost vs Alex De Minaur)",
+                "date": "2025-09-26",
+                "result": "lost",
+                "opponentName": "Alex De Minaur"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 2,
+                "value": 0,
+                "label": "02.10.2025 (win vs Juan Manuel Cerundolo)",
+                "date": "2025-10-02",
+                "result": "win",
+                "opponentName": "Juan Manuel Cerundolo"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 3,
+                "value": -1,
+                "label": "04.10.2025 (lost vs Luciano Darderi)",
+                "date": "2025-10-04",
+                "result": "lost",
+                "opponentName": "Luciano Darderi"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 4,
+                "value": 0,
+                "label": "28.10.2025 (win vs Uisung Park)",
+                "date": "2025-10-28",
+                "result": "win",
+                "opponentName": "Uisung Park"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 5,
+                "value": 1,
+                "label": "29.10.2025 (win vs Marc-Andrea Huesler)",
+                "date": "2025-10-29",
+                "result": "win",
+                "opponentName": "Marc-Andrea Huesler"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 6,
+                "value": 0,
+                "label": "31.10.2025 (lost vs Chak Lam Coleman Wong)",
+                "date": "2025-10-31",
+                "result": "lost",
+                "opponentName": "Chak Lam Coleman Wong"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 7,
+                "value": -1,
+                "label": "04.01.2026 (lost vs Nishesh Basavareddy)",
+                "date": "2026-01-04",
+                "result": "lost",
+                "opponentName": "Nishesh Basavareddy"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 8,
+                "value": -2,
+                "label": "19.01.2026 (lost vs Denis Shapovalov)",
+                "date": "2026-01-19",
+                "result": "lost",
+                "opponentName": "Denis Shapovalov"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 9,
+                "value": -3,
+                "label": "06.02.2026 (lost vs Henrique Rocha)",
+                "date": "2026-02-06",
+                "result": "lost",
+                "opponentName": "Henrique Rocha"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 10,
+                "value": -2,
+                "label": "16.03.2026 (win vs Tristan Schoolkate)",
+                "date": "2026-03-16",
+                "result": "win",
+                "opponentName": "Tristan Schoolkate"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 11,
+                "value": -3,
+                "label": "17.03.2026 (lost vs Arthur Fery)",
+                "date": "2026-03-17",
+                "result": "lost",
+                "opponentName": "Arthur Fery"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 12,
+                "value": -2,
+                "label": "24.03.2026 (win vs Max Wiskandt)",
+                "date": "2026-03-24",
+                "result": "win",
+                "opponentName": "Max Wiskandt"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 13,
+                "value": -3,
+                "label": "25.03.2026 (lost vs Alexis Galarneau)",
+                "date": "2026-03-25",
+                "result": "lost",
+                "opponentName": "Alexis Galarneau"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 14,
+                "value": -2,
+                "label": "13.04.2026 (win vs Yunseong Chung)",
+                "date": "2026-04-13",
+                "result": "win",
+                "opponentName": "Yunseong Chung"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 15,
+                "value": -1,
+                "label": "15.04.2026 (win vs Marat Sharipov)",
+                "date": "2026-04-15",
+                "result": "win",
+                "opponentName": "Marat Sharipov"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 16,
+                "value": 0,
+                "label": "17.04.2026 (win vs Adam Walton)",
+                "date": "2026-04-17",
+                "result": "win",
+                "opponentName": "Adam Walton"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 17,
+                "value": 1,
+                "label": "18.04.2026 (win vs Alex Bolt)",
+                "date": "2026-04-18",
+                "result": "win",
+                "opponentName": "Alex Bolt"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 18,
+                "value": 0,
+                "label": "19.04.2026 (lost vs Leandro Riedi)",
+                "date": "2026-04-19",
+                "result": "lost",
+                "opponentName": "Leandro Riedi"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 19,
+                "value": -1,
+                "label": "21.04.2026 (lost vs August Holmgren)",
+                "date": "2026-04-21",
+                "result": "lost",
+                "opponentName": "August Holmgren"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 20,
+                "value": 0,
+                "label": "29.04.2026 (win vs Daniel Masur)",
+                "date": "2026-04-29",
+                "result": "win",
+                "opponentName": "Daniel Masur"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 21,
+                "value": 1,
+                "label": "30.04.2026 (win vs Andre Ilagan)",
+                "date": "2026-04-30",
+                "result": "win",
+                "opponentName": "Andre Ilagan"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 22,
+                "value": 0,
+                "label": "01.05.2026 (lost vs Chak Lam Coleman Wong)",
+                "date": "2026-05-01",
+                "result": "lost",
+                "opponentName": "Chak Lam Coleman Wong"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 23,
+                "value": 1,
+                "label": "05.05.2026 (win vs Keegan Smith)",
+                "date": "2026-05-05",
+                "result": "win",
+                "opponentName": "Keegan Smith"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 24,
+                "value": 2,
+                "label": "07.05.2026 (win vs Ognjen Milic)",
+                "date": "2026-05-07",
+                "result": "win",
+                "opponentName": "Ognjen Milić"
+              },
+              {
+                "index": 30,
+                "sequenceIndex": 25,
+                "value": 3,
+                "label": "08.05.2026 (win vs Adam Walton)",
+                "date": "2026-05-08",
+                "result": "win",
+                "opponentName": "Adam Walton"
+              },
+              {
+                "index": 31,
+                "sequenceIndex": 26,
+                "value": 4,
+                "label": "09.05.2026 (win vs Jie Cui)",
+                "date": "2026-05-09",
+                "result": "win",
+                "opponentName": "Jie Cui"
+              },
+              {
+                "index": 32,
+                "sequenceIndex": 27,
+                "value": 3,
+                "label": "10.05.2026 (lost vs Soon-Woo Kwon)",
+                "date": "2026-05-10",
+                "result": "lost",
+                "opponentName": "Soon-Woo Kwon"
+              },
+              {
+                "index": 33,
+                "sequenceIndex": 28,
+                "value": 2,
+                "label": "19.05.2026 (lost vs Emilio Nava)",
+                "date": "2026-05-19",
+                "result": "lost",
+                "opponentName": "Emilio Nava"
+              },
+              {
+                "index": 34,
+                "sequenceIndex": 29,
+                "value": 3,
+                "label": "02.06.2026 (win vs Lloyd Harris)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Lloyd Harris"
+              },
+              {
+                "index": 35,
+                "sequenceIndex": 30,
+                "value": 4,
+                "label": "04.06.2026 (win vs Billy Harris)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Billy Harris"
+              }
+            ],
+            "latestValue": 4,
+            "minValue": -3,
+            "maxValue": 4
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 6.2,
+              "avgAces": 6.2,
+              "doubleFaults": 1.6,
+              "avgDoubleFaults": 1.6,
+              "firstServePct": 58.2,
+              "firstServeWonPct": 67.4,
+              "secondServeWonPct": 58.8,
+              "returnPointsWonPct": 38.2,
+              "breakPointsConvertedPct": 61.5,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 16,
+              "breakPointsToConvert": 26,
+              "breakPointChancesPerMatch": 5.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 16,
+                "bpChances": 26,
+                "bpConvertedPct": 61.5,
+                "bpChancesPerMatch": 5.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 16,
+                "bpChances": 26,
+                "bpConvertedPct": 61.5,
+                "bpChancesPerMatch": 5.2
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Bu Yunchaokete",
+            "matches": [
+              {
+                "opponentName": "Billy Harris",
+                "event": "Birmingham Challenger",
+                "matchDateLabel": "2026-06-04",
+                "isoDate": "2026-06-04",
+                "surface": "Grass",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "6-2, 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/bu-yunchaokete-VS-billy-harris/birmingham-challenger-2026/",
+                "matchId": "tl-2026-06-04-birmingham-challenger-2026-bu-yunchaokete-vs-billy-harris",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "36/55 (65%)",
+                      "made": 36,
+                      "attempts": 55,
+                      "pct": 65
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "26/36 (72%)",
+                      "made": 26,
+                      "attempts": 36,
+                      "pct": 72
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/19 (68%)",
+                      "made": 13,
+                      "attempts": 19,
+                      "pct": 68
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "8",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/7 (57%)",
+                      "made": 4,
+                      "attempts": 7,
+                      "pct": 57
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "63/108 (58%)",
+                      "made": 63,
+                      "attempts": 108,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "24/53 (45%)",
+                      "made": 24,
+                      "attempts": 53,
+                      "pct": 45
+                    }
+                  ],
+                  "firstServePct": 65,
+                  "firstServeIn": "36/55 (65%)",
+                  "firstServeWonPct": 72,
+                  "firstServePointsWon": "26/36 (72%)",
+                  "secondServeWonPct": 68,
+                  "secondServePointsWon": "13/19 (68%)",
+                  "aces": 8,
+                  "breakPointsConverted": "4/7 (57%)",
+                  "breakPointsConvertedPct": 57,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "63/108 (58%)",
+                  "returnPointsWonPct": 45,
+                  "returnPointsWon": "24/53 (45%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "36/55 (65%)",
+                      "made": 36,
+                      "attempts": 55,
+                      "pct": 65
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "26/36 (72%)",
+                      "made": 26,
+                      "attempts": 36,
+                      "pct": 72
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/19 (68%)",
+                      "made": 13,
+                      "attempts": 19,
+                      "pct": 68
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "8",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/7 (57%)",
+                      "made": 4,
+                      "attempts": 7,
+                      "pct": 57
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "63/108 (58%)",
+                      "made": 63,
+                      "attempts": 108,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "24/53 (45%)",
+                      "made": 24,
+                      "attempts": 53,
+                      "pct": 45
+                    }
+                  ],
+                  "firstServePct": 65,
+                  "firstServeIn": "36/55 (65%)",
+                  "firstServeWonPct": 72,
+                  "firstServePointsWon": "26/36 (72%)",
+                  "secondServeWonPct": 68,
+                  "secondServePointsWon": "13/19 (68%)",
+                  "aces": 8,
+                  "breakPointsConverted": "4/7 (57%)",
+                  "breakPointsConvertedPct": 57,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "63/108 (58%)",
+                  "returnPointsWonPct": 45,
+                  "returnPointsWon": "24/53 (45%)"
+                }
+              },
+              {
+                "opponentName": "Lloyd Harris",
+                "event": "Birmingham Challenger",
+                "matchDateLabel": "2026-06-02",
+                "isoDate": "2026-06-02",
+                "surface": "Grass",
+                "round": "1 st round",
+                "result": "win",
+                "score": "7-6 5 , 1-6, 6-1",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/bu-yunchaokete-VS-lloyd-george-muirhead-harris/birmingham-challenger-2026/",
+                "matchId": "tl-2026-06-01-birmingham-challenger-2026-bu-yunchaokete-vs-lloyd-harris",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "59/88 (67%)",
+                      "made": 59,
+                      "attempts": 88,
+                      "pct": 67
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "43/59 (73%)",
+                      "made": 43,
+                      "attempts": 59,
+                      "pct": 73
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/29 (45%)",
+                      "made": 13,
+                      "attempts": 29,
+                      "pct": 45
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/2 (100%)",
+                      "made": 2,
+                      "attempts": 2,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "81/165 (49%)",
+                      "made": 81,
+                      "attempts": 165,
+                      "pct": 49
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "25/77 (32%)",
+                      "made": 25,
+                      "attempts": 77,
+                      "pct": 32
+                    }
+                  ],
+                  "firstServePct": 67,
+                  "firstServeIn": "59/88 (67%)",
+                  "firstServeWonPct": 73,
+                  "firstServePointsWon": "43/59 (73%)",
+                  "secondServeWonPct": 45,
+                  "secondServePointsWon": "13/29 (45%)",
+                  "aces": 6,
+                  "breakPointsConverted": "2/2 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 49,
+                  "totalPointsWon": "81/165 (49%)",
+                  "returnPointsWonPct": 32,
+                  "returnPointsWon": "25/77 (32%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "59/88 (67%)",
+                      "made": 59,
+                      "attempts": 88,
+                      "pct": 67
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "43/59 (73%)",
+                      "made": 43,
+                      "attempts": 59,
+                      "pct": 73
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/29 (45%)",
+                      "made": 13,
+                      "attempts": 29,
+                      "pct": 45
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/2 (100%)",
+                      "made": 2,
+                      "attempts": 2,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "81/165 (49%)",
+                      "made": 81,
+                      "attempts": 165,
+                      "pct": 49
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "25/77 (32%)",
+                      "made": 25,
+                      "attempts": 77,
+                      "pct": 32
+                    }
+                  ],
+                  "firstServePct": 67,
+                  "firstServeIn": "59/88 (67%)",
+                  "firstServeWonPct": 73,
+                  "firstServePointsWon": "43/59 (73%)",
+                  "secondServeWonPct": 45,
+                  "secondServePointsWon": "13/29 (45%)",
+                  "aces": 6,
+                  "breakPointsConverted": "2/2 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 49,
+                  "totalPointsWon": "81/165 (49%)",
+                  "returnPointsWonPct": 32,
+                  "returnPointsWon": "25/77 (32%)"
+                }
+              },
+              {
+                "opponentName": "Emilio Nava",
+                "event": "Paris",
+                "matchDateLabel": "2026-05-19",
+                "isoDate": "2026-05-19",
+                "surface": "Clay",
+                "round": "q 1",
+                "result": "lost",
+                "score": "7-6 4 , 7-6 3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/emilio-nava-VS-bu-yunchaokete/french-open-paris-2026/",
+                "matchId": "tl-2026-05-19-french-open-paris-2026-emilio-nava-vs-bu-yunchaokete",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "50/88 (57%)",
+                      "made": 50,
+                      "attempts": 88,
+                      "pct": 57
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "32/50 (64%)",
+                      "made": 32,
+                      "attempts": 50,
+                      "pct": 64
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "16/38 (42%)",
+                      "made": 16,
+                      "attempts": 38,
+                      "pct": 42
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/4 (75%)",
+                      "made": 3,
+                      "attempts": 4,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "79/172 (46%)",
+                      "made": 79,
+                      "attempts": 172,
+                      "pct": 46
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "31/84 (37%)",
+                      "made": 31,
+                      "attempts": 84,
+                      "pct": 37
+                    }
+                  ],
+                  "firstServePct": 57,
+                  "firstServeIn": "50/88 (57%)",
+                  "firstServeWonPct": 64,
+                  "firstServePointsWon": "32/50 (64%)",
+                  "secondServeWonPct": 42,
+                  "secondServePointsWon": "16/38 (42%)",
+                  "aces": 1,
+                  "breakPointsConverted": "3/4 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 46,
+                  "totalPointsWon": "79/172 (46%)",
+                  "returnPointsWonPct": 37,
+                  "returnPointsWon": "31/84 (37%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "50/88 (57%)",
+                      "made": 50,
+                      "attempts": 88,
+                      "pct": 57
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "32/50 (64%)",
+                      "made": 32,
+                      "attempts": 50,
+                      "pct": 64
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "16/38 (42%)",
+                      "made": 16,
+                      "attempts": 38,
+                      "pct": 42
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/4 (75%)",
+                      "made": 3,
+                      "attempts": 4,
+                      "pct": 75
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "79/172 (46%)",
+                      "made": 79,
+                      "attempts": 172,
+                      "pct": 46
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "31/84 (37%)",
+                      "made": 31,
+                      "attempts": 84,
+                      "pct": 37
+                    }
+                  ],
+                  "firstServePct": 57,
+                  "firstServeIn": "50/88 (57%)",
+                  "firstServeWonPct": 64,
+                  "firstServePointsWon": "32/50 (64%)",
+                  "secondServeWonPct": 42,
+                  "secondServePointsWon": "16/38 (42%)",
+                  "aces": 1,
+                  "breakPointsConverted": "3/4 (75%)",
+                  "breakPointsConvertedPct": 75,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 46,
+                  "totalPointsWon": "79/172 (46%)",
+                  "returnPointsWonPct": 37,
+                  "returnPointsWon": "31/84 (37%)"
+                }
+              },
+              {
+                "opponentName": "Soon-Woo Kwon",
+                "event": "Wuxi Challenger",
+                "matchDateLabel": "2026-05-10",
+                "isoDate": "2026-05-10",
+                "surface": "Hard",
+                "round": "fin",
+                "result": "lost",
+                "score": "6-2, 7-6 2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/soon-woo-kwon-VS-bu-yunchaokete/wuxi-challenger-2026/",
+                "matchId": "tl-2026-05-10-wuxi-challenger-2026-soon-woo-kwon-vs-bu-yunchaokete",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "39/66 (59%)",
+                      "made": 39,
+                      "attempts": 66,
+                      "pct": 59
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "19/39 (49%)",
+                      "made": 19,
+                      "attempts": 39,
+                      "pct": 49
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "17/27 (63%)",
+                      "made": 17,
+                      "attempts": 27,
+                      "pct": 63
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "9",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/2 (100%)",
+                      "made": 2,
+                      "attempts": 2,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "52/124 (42%)",
+                      "made": 52,
+                      "attempts": 124,
+                      "pct": 42
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "16/58 (28%)",
+                      "made": 16,
+                      "attempts": 58,
+                      "pct": 28
+                    }
+                  ],
+                  "firstServePct": 59,
+                  "firstServeIn": "39/66 (59%)",
+                  "firstServeWonPct": 49,
+                  "firstServePointsWon": "19/39 (49%)",
+                  "secondServeWonPct": 63,
+                  "secondServePointsWon": "17/27 (63%)",
+                  "aces": 9,
+                  "breakPointsConverted": "2/2 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 0,
+                  "totalPointsWonPct": 42,
+                  "totalPointsWon": "52/124 (42%)",
+                  "returnPointsWonPct": 28,
+                  "returnPointsWon": "16/58 (28%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "39/66 (59%)",
+                      "made": 39,
+                      "attempts": 66,
+                      "pct": 59
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "19/39 (49%)",
+                      "made": 19,
+                      "attempts": 39,
+                      "pct": 49
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "17/27 (63%)",
+                      "made": 17,
+                      "attempts": 27,
+                      "pct": 63
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "9",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "2/2 (100%)",
+                      "made": 2,
+                      "attempts": 2,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "52/124 (42%)",
+                      "made": 52,
+                      "attempts": 124,
+                      "pct": 42
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "16/58 (28%)",
+                      "made": 16,
+                      "attempts": 58,
+                      "pct": 28
+                    }
+                  ],
+                  "firstServePct": 59,
+                  "firstServeIn": "39/66 (59%)",
+                  "firstServeWonPct": 49,
+                  "firstServePointsWon": "19/39 (49%)",
+                  "secondServeWonPct": 63,
+                  "secondServePointsWon": "17/27 (63%)",
+                  "aces": 9,
+                  "breakPointsConverted": "2/2 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 0,
+                  "totalPointsWonPct": 42,
+                  "totalPointsWon": "52/124 (42%)",
+                  "returnPointsWonPct": 28,
+                  "returnPointsWon": "16/58 (28%)"
+                }
+              },
+              {
+                "opponentName": "Jie Cui",
+                "event": "Wuxi Challenger",
+                "matchDateLabel": "2026-05-09",
+                "isoDate": "2026-05-09",
+                "surface": "Hard",
+                "round": "1/2",
+                "result": "win",
+                "score": "6-1, 7-5",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/bu-yunchaokete-VS-jie-cui/wuxi-challenger-2026/",
+                "matchId": "tl-2026-05-09-wuxi-challenger-2026-bu-yunchaokete-vs-jie-cui",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "19/44 (43%)",
+                      "made": 19,
+                      "attempts": 44,
+                      "pct": 43
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "15/19 (79%)",
+                      "made": 15,
+                      "attempts": 19,
+                      "pct": 79
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "19/25 (76%)",
+                      "made": 19,
+                      "attempts": 25,
+                      "pct": 76
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/11 (45%)",
+                      "made": 5,
+                      "attempts": 11,
+                      "pct": 45
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "73/124 (59%)",
+                      "made": 73,
+                      "attempts": 124,
+                      "pct": 59
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "39/80 (49%)",
+                      "made": 39,
+                      "attempts": 80,
+                      "pct": 49
+                    }
+                  ],
+                  "firstServePct": 43,
+                  "firstServeIn": "19/44 (43%)",
+                  "firstServeWonPct": 79,
+                  "firstServePointsWon": "15/19 (79%)",
+                  "secondServeWonPct": 76,
+                  "secondServePointsWon": "19/25 (76%)",
+                  "aces": 7,
+                  "breakPointsConverted": "5/11 (45%)",
+                  "breakPointsConvertedPct": 45,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 59,
+                  "totalPointsWon": "73/124 (59%)",
+                  "returnPointsWonPct": 49,
+                  "returnPointsWon": "39/80 (49%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "19/44 (43%)",
+                      "made": 19,
+                      "attempts": 44,
+                      "pct": 43
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "15/19 (79%)",
+                      "made": 15,
+                      "attempts": 19,
+                      "pct": 79
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "19/25 (76%)",
+                      "made": 19,
+                      "attempts": 25,
+                      "pct": 76
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/11 (45%)",
+                      "made": 5,
+                      "attempts": 11,
+                      "pct": 45
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "73/124 (59%)",
+                      "made": 73,
+                      "attempts": 124,
+                      "pct": 59
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "39/80 (49%)",
+                      "made": 39,
+                      "attempts": 80,
+                      "pct": 49
+                    }
+                  ],
+                  "firstServePct": 43,
+                  "firstServeIn": "19/44 (43%)",
+                  "firstServeWonPct": 79,
+                  "firstServePointsWon": "15/19 (79%)",
+                  "secondServeWonPct": 76,
+                  "secondServePointsWon": "19/25 (76%)",
+                  "aces": 7,
+                  "breakPointsConverted": "5/11 (45%)",
+                  "breakPointsConvertedPct": 45,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 59,
+                  "totalPointsWon": "73/124 (59%)",
+                  "returnPointsWonPct": 49,
+                  "returnPointsWon": "39/80 (49%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 58.3,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.6,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.543,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 58.3,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/atp/bu-yunchaokete/"
+          }
+        },
         "record2026": "",
         "notes": "Pick: model 51.6%",
-        "matchupNote": "Why pick: Yunchaokete Bu has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Grass. Lean, not a chase."
+        "matchupNote": "Why pick: Opponent-adjusted recent form is basically even: Yunchaokete Bu 58, Mark Lajal 59. Lean, not a chase."
       },
       {
         "name": "Mark Lajal",
@@ -1343,7 +2609,7 @@
       {
         "label": "Weakness",
         "metric": "Lower is cleaner",
-        "leftScore": 0,
+        "leftScore": 5,
         "rightScore": 2,
         "leftLabel": "Yunchaokete Bu",
         "rightLabel": "Mark Lajal",
@@ -1409,7 +2675,7 @@
         "edgePct": null,
         "evPer100": null,
         "netEvPer100": null,
-        "expectedGames": 42.3,
+        "expectedGames": 42.7,
         "edgeGames": null,
         "confidence": null,
         "grade": "No direction",
@@ -1441,12 +2707,12 @@
         "marketType": "First-set total games",
         "label": "1st set O/U",
         "selection": "Over 9.5",
-        "expectedGames": 10.2,
-        "confidence": 59,
+        "expectedGames": 10.3,
+        "confidence": 61,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
         "grade": "Actionable live watch",
-        "reason": "Expected first-set games 10.2 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 38%, first-set sample N/A, 0 recent sets."
+        "reason": "Expected first-set games 10.3 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 57%, first-set sample N/A, 0 recent sets."
       }
     ],
     "derivativeMarketCase": null,
@@ -1473,7 +2739,7 @@
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 42.3,
+        "expectedGames": 42.7,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false
@@ -1483,15 +2749,15 @@
         "selection": "Over 9.5",
         "line": 9.5,
         "americanOdds": -200,
-        "expectedGames": 10.2,
-        "confidence": 59,
+        "expectedGames": 10.3,
+        "confidence": 61,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 59,
-        "evPer100": -11.5,
-        "netEvPer100": -13.5,
+        "modelPct": 61,
+        "evPer100": -8.5,
+        "netEvPer100": -10.5,
         "valueGrade": "Actionable live watch",
-        "reason": "Expected first-set games 10.2 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 38%, first-set sample N/A, 0 recent sets.",
+        "reason": "Expected first-set games 10.3 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 57%, first-set sample N/A, 0 recent sets.",
         "betGrade": false
       },
       "setWin": [
@@ -1596,7 +2862,7 @@
         "line": null,
         "overOdds": null,
         "underOdds": null,
-        "expectedGames": 42.3,
+        "expectedGames": 42.7,
         "valueGrade": "No direction",
         "reason": "No posted match total captured.",
         "betGrade": false,
@@ -1606,19 +2872,19 @@
         "label": "1st set O/U",
         "value": "Line 9.5",
         "lean": "Over 9.5",
-        "confidence": 59,
+        "confidence": 61,
         "marketType": "First-set total",
         "selection": "Over 9.5",
         "line": 9.5,
         "americanOdds": -200,
-        "expectedGames": 10.2,
+        "expectedGames": 10.3,
         "tiebreakRisk": 18,
         "earlyBreakRisk": 50,
-        "modelPct": 59,
-        "evPer100": -11.5,
-        "netEvPer100": -13.5,
+        "modelPct": 61,
+        "evPer100": -8.5,
+        "netEvPer100": -10.5,
         "valueGrade": "Actionable live watch",
-        "reason": "Expected first-set games 10.2 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 38%, first-set sample N/A, 0 recent sets.",
+        "reason": "Expected first-set games 10.3 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 57%, first-set sample N/A, 0 recent sets.",
         "betGrade": false,
         "tone": "accent"
       },
@@ -1708,7 +2974,7 @@
       "index": 0,
       "role": "Player 1",
       "name": "Yunchaokete Bu",
-      "detail": "Grass | Rank not joined",
+      "detail": "Grass | Live rank #166 | China | age 24 | adj form 58",
       "americanOdds": -117,
       "americanLabel": "-117",
       "decimalOdds": 1.8547008547008548,
@@ -1738,7 +3004,7 @@
         "index": 0,
         "role": "Player 1",
         "name": "Yunchaokete Bu",
-        "detail": "Grass | Rank not joined",
+        "detail": "Grass | Live rank #166 | China | age 24 | adj form 58",
         "americanOdds": -117,
         "americanLabel": "-117",
         "decimalOdds": 1.8547008547008548,
@@ -1767,7 +3033,7 @@
       "index": 0,
       "role": "Player 1",
       "name": "Yunchaokete Bu",
-      "detail": "Grass | Rank not joined",
+      "detail": "Grass | Live rank #166 | China | age 24 | adj form 58",
       "americanOdds": -117,
       "americanLabel": "-117",
       "decimalOdds": 1.8547008547008548,
@@ -1787,7 +3053,7 @@
       "impliedProbabilityLabel": "52.8%"
     },
     "lean": "Lean Yunchaokete Bu; ML is close to fair; derivative or live entry needs to carry the edge.",
-    "rationale": "Our model pick: Yunchaokete Bu. Yunchaokete Bu has the cleaner composite of rank, recent opponent quality, and joined service data; clay record is context only on Grass. Lean, not a chase.",
+    "rationale": "Our model pick: Yunchaokete Bu. Opponent-adjusted recent form is basically even: Yunchaokete Bu 58, Mark Lajal 59. Lean, not a chase.",
     "confidence": 51.6,
     "volatility": 50,
     "recommendationScore": 39,

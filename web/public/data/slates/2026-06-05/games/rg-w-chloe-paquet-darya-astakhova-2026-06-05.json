@@ -23,13 +23,13 @@
       "side": "Player 1",
       "name": "Chloe Paquet",
       "displayName": "Chloe Paquet",
-      "detail": "Rank not joined | adj form 59"
+      "detail": "Live rank #343 | France | age 31 | adj form 59"
     },
     {
       "side": "Player 2",
       "name": "Darya Astakhova",
       "displayName": "Darya Astakhova",
-      "detail": "Rank not joined | adj form 57"
+      "detail": "Live rank #277 | Russia | age 24 | adj form 57"
     }
   ],
   "summary": "Our model pick: Chloe Paquet. Opponent-adjusted recent form is basically even: Chloe Paquet 59, Darya Astakhova 57. Lean, not a chase.",
@@ -141,13 +141,13 @@
     "players": [
       {
         "name": "Chloe Paquet",
-        "rank": null,
+        "rank": 343,
         "label": "Chloe Paquet",
         "form": null,
         "boardPct": 50,
         "decimalOdds": 1.877,
         "marketLabel": "-114 / 53.3% implied",
-        "clayLine": "Rank not joined | adj form 59",
+        "clayLine": "Live rank #343 | France | age 31 | adj form 59",
         "weakness": {
           "name": "Chloe Paquet",
           "serviceHoldPct": null,
@@ -183,13 +183,13 @@
       },
       {
         "name": "Darya Astakhova",
-        "rank": null,
+        "rank": 277,
         "label": "Darya Astakhova",
         "form": null,
         "boardPct": 50,
         "decimalOdds": 1.87,
         "marketLabel": "-115 / 53.5% implied",
-        "clayLine": "Rank not joined | adj form 57",
+        "clayLine": "Live rank #277 | Russia | age 24 | adj form 57",
         "weakness": {
           "name": "Darya Astakhova",
           "serviceHoldPct": null,
@@ -605,7 +605,7 @@
       "index": 0,
       "role": "Player 1",
       "name": "Chloe Paquet",
-      "detail": "Rank not joined | adj form 59",
+      "detail": "Live rank #343 | France | age 31 | adj form 59",
       "americanOdds": -114,
       "americanLabel": "-114",
       "decimalOdds": 1.8771929824561404,
@@ -617,7 +617,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Darya Astakhova",
-      "detail": "Rank not joined | adj form 57",
+      "detail": "Live rank #277 | Russia | age 24 | adj form 57",
       "americanOdds": -115,
       "americanLabel": "-115",
       "decimalOdds": 1.8695652173913042,
@@ -635,7 +635,7 @@
         "index": 0,
         "role": "Player 1",
         "name": "Chloe Paquet",
-        "detail": "Rank not joined | adj form 59",
+        "detail": "Live rank #343 | France | age 31 | adj form 59",
         "americanOdds": -114,
         "americanLabel": "-114",
         "decimalOdds": 1.8771929824561404,
@@ -647,7 +647,7 @@
         "index": 1,
         "role": "Player 2",
         "name": "Darya Astakhova",
-        "detail": "Rank not joined | adj form 57",
+        "detail": "Live rank #277 | Russia | age 24 | adj form 57",
         "americanOdds": -115,
         "americanLabel": "-115",
         "decimalOdds": 1.8695652173913042,
@@ -664,7 +664,7 @@
       "index": 0,
       "role": "Player 1",
       "name": "Chloe Paquet",
-      "detail": "Rank not joined | adj form 59",
+      "detail": "Live rank #343 | France | age 31 | adj form 59",
       "americanOdds": -114,
       "americanLabel": "-114",
       "decimalOdds": 1.8771929824561404,
@@ -676,7 +676,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Darya Astakhova",
-      "detail": "Rank not joined | adj form 57",
+      "detail": "Live rank #277 | Russia | age 24 | adj form 57",
       "americanOdds": -115,
       "americanLabel": "-115",
       "decimalOdds": 1.8695652173913042,

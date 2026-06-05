@@ -97,4 +97,5 @@ The ingestor must stay bounded.
 ## Current Gaps
 
 - Point winners are not inferred yet; point score, server, break point, deuce, and tiebreak flags are stored.
-- TennisLive form-chart points are stored as source-native rows, but they are not yet promoted into prediction features.
+- TennisLive form-chart points are stored as source-native rows and promoted to player cards with point-level hover context when available.
+- Active public tennis export is TennisLive-only for ranks, recent stats, H2H, and form charts. Archived non-TennisLive source tables may remain in the warehouse for historical research, but they are blocked from active npm ingestion/export commands and audited out of generated/public artifacts.

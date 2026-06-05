@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "runId": "tennis-2026-06-05-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
+  "sport": "tennis",
+  "slateDate": "2026-06-05",
+  "warehouseVersion": "TEN-W1",
+  "featureVersion": "TEN-F0",
+  "modelId": "TEN-T0",
+  "evaluatorVersion": "TEN-E0",
+  "mode": "pregame",
+  "status": "snapshotted",
+  "createdAt": "2026-06-05T03:29:06.066Z",
+  "snapshottedAt": "2026-06-05T03:29:30.245Z",
+  "git": {
+    "commit": "481fa22aafd6d29863a078c9f437861a81414325",
+    "dirty": true
+  },
+  "registry": {
+    "path": "models/tennis/registry.json",
+    "active": {
+      "warehouse": "TEN-W1",
+      "features": "TEN-F0",
+      "model": "TEN-T0",
+      "evaluator": "TEN-E0"
+    }
+  },
+  "modelManifest": {
+    "path": "models/tennis/cartridges/TEN-T0/manifest.json",
+    "name": "TEN-T0 tennis baseline",
+    "status": "baseline"
+  },
+  "notes": "Snapshotted TEN-T0 pregame run for 2026-06-05.",
+  "sourceHash": null,
+  "inputHash": null,
+  "outputHash": null,
+  "sourceFiles": 40,
+  "inputs": 7,
+  "outputs": 6,
+  "trainingRows": {
+    "count": 0,
+    "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "verifier": {
+    "ok": true,
+    "command": "node pipeline/tennis/workflows/verify-model-snapshot.mjs --date 2026-06-05 --model TEN-T0",
+    "stdout": "Tennis TEN-T0 snapshot verified for 2026-06-05\n",
+    "stderr": ""
+  },
+  "artifacts": [
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-06-05/predictions.snapshot.json",
+      "role": "prediction-snapshot"
+    },
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-06-05/calibration.json",
+      "role": "calibration"
+    },
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-06-05/backtest.json",
+      "role": "backtest"
+    },
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-06-05/grades.json",
+      "role": "grades"
+    },
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-06-05/health.json",
+      "role": "health"
+    },
+    {
+      "path": "data-private/model-runs/tennis/TEN-T0/2026-06-05/run.json",
+      "role": "run-manifest"
+    }
+  ]
+}

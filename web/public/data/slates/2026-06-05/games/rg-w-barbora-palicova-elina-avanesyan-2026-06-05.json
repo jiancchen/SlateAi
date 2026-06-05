@@ -23,13 +23,13 @@
       "side": "Player 1",
       "name": "Barbora Palicova",
       "displayName": "Barbora Palicova",
-      "detail": "Rank not joined | adj form 58"
+      "detail": "Live rank #265 | Czech Republic | age 22 | adj form 58"
     },
     {
       "side": "Player 2",
       "name": "Elina Avanesyan",
       "displayName": "Elina Avanesyan",
-      "detail": "Rank not joined | adj form 57"
+      "detail": "Live rank #321 | Armenia | age 23 | adj form 57"
     }
   ],
   "summary": "Our model pick: Barbora Palicova. Opponent-adjusted recent form is basically even: Barbora Palicova 58, Elina Avanesyan 57. Lean, not a chase.",
@@ -147,13 +147,13 @@
     "players": [
       {
         "name": "Barbora Palicova",
-        "rank": null,
+        "rank": 265,
         "label": "Barbora Palicova",
         "form": null,
         "boardPct": 51,
         "decimalOdds": 3.17,
         "marketLabel": "+217 / 31.5% implied",
-        "clayLine": "Rank not joined | adj form 58",
+        "clayLine": "Live rank #265 | Czech Republic | age 22 | adj form 58",
         "weakness": {
           "name": "Barbora Palicova",
           "serviceHoldPct": null,
@@ -188,13 +188,13 @@
       },
       {
         "name": "Elina Avanesyan",
-        "rank": null,
+        "rank": 321,
         "label": "Elina Avanesyan",
         "form": null,
         "boardPct": 49,
         "decimalOdds": 1.333,
         "marketLabel": "-300 / 75% implied",
-        "clayLine": "Rank not joined | adj form 57",
+        "clayLine": "Live rank #321 | Armenia | age 23 | adj form 57",
         "weakness": {
           "name": "Elina Avanesyan",
           "serviceHoldPct": null,
@@ -617,7 +617,7 @@
       "index": 0,
       "role": "Player 1",
       "name": "Barbora Palicova",
-      "detail": "Rank not joined | adj form 58",
+      "detail": "Live rank #265 | Czech Republic | age 22 | adj form 58",
       "americanOdds": 217,
       "americanLabel": "+217",
       "decimalOdds": 3.17,
@@ -629,7 +629,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Elina Avanesyan",
-      "detail": "Rank not joined | adj form 57",
+      "detail": "Live rank #321 | Armenia | age 23 | adj form 57",
       "americanOdds": -300,
       "americanLabel": "-300",
       "decimalOdds": 1.3333333333333333,
@@ -647,7 +647,7 @@
         "index": 0,
         "role": "Player 1",
         "name": "Barbora Palicova",
-        "detail": "Rank not joined | adj form 58",
+        "detail": "Live rank #265 | Czech Republic | age 22 | adj form 58",
         "americanOdds": 217,
         "americanLabel": "+217",
         "decimalOdds": 3.17,
@@ -659,7 +659,7 @@
         "index": 1,
         "role": "Player 2",
         "name": "Elina Avanesyan",
-        "detail": "Rank not joined | adj form 57",
+        "detail": "Live rank #321 | Armenia | age 23 | adj form 57",
         "americanOdds": -300,
         "americanLabel": "-300",
         "decimalOdds": 1.3333333333333333,
@@ -676,7 +676,7 @@
       "index": 0,
       "role": "Player 1",
       "name": "Barbora Palicova",
-      "detail": "Rank not joined | adj form 58",
+      "detail": "Live rank #265 | Czech Republic | age 22 | adj form 58",
       "americanOdds": 217,
       "americanLabel": "+217",
       "decimalOdds": 3.17,
@@ -688,7 +688,7 @@
       "index": 1,
       "role": "Player 2",
       "name": "Elina Avanesyan",
-      "detail": "Rank not joined | adj form 57",
+      "detail": "Live rank #321 | Armenia | age 23 | adj form 57",
       "americanOdds": -300,
       "americanLabel": "-300",
       "decimalOdds": 1.3333333333333333,
