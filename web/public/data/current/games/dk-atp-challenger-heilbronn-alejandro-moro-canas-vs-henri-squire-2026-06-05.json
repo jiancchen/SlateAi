@@ -1,0 +1,3250 @@
+{
+  "id": "dk-atp-challenger-heilbronn-alejandro-moro-canas-vs-henri-squire-2026-06-05",
+  "eventId": "34240753",
+  "league": "Tennis",
+  "start": "3:00 AM",
+  "startMinutes": 180,
+  "title": "Alejandro Moro Canas vs Henri Squire",
+  "stage": "ATP Challenger - Heilbronn | DraftKings board",
+  "spotlight": false,
+  "confidence": 54.9,
+  "volatility": 56,
+  "tags": [
+    "ATP Challenger",
+    "Clay",
+    "Prediction market",
+    "Warehouse joined",
+    "TennisLive recent five",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Alejandro Moro Canas",
+      "displayName": "Alejandro Moro Canas",
+      "detail": "Clay | Live rank #242 | Spain | age 25 | adj form 57"
+    },
+    {
+      "side": "Player 2",
+      "name": "Henri Squire",
+      "displayName": "Henri Squire",
+      "detail": "Clay | Live rank #249 | Germany | age 25 | adj form 59"
+    }
+  ],
+  "summary": "Our model pick: Alejandro Moro Canas. Opponent-adjusted recent form is basically even: Alejandro Moro Canas 57, Henri Squire 59. Lean, not a chase.",
+  "factors": [
+    "Opponent-adjusted recent form is basically even: Alejandro Moro Canas 57, Henri Squire 59. Lean, not a chase.",
+    "Model 54.9% vs DraftKings Sportsbook implied 57.6% (-2.7 pts).",
+    "Alejandro Moro Canas has a real path if Henri Squire's first two service games show the same weakness: second-serve points won are attackable (40%); double-fault pressure (8.2 avg).",
+    "Look for Henri Squire facing break points or second-serve pressure before 3-3.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML is close to fair; derivative or live entry needs to carry the edge."
+  ],
+  "lean": "Lean Alejandro Moro Canas; ML is close to fair; derivative or live entry needs to carry the edge.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Alejandro Moro Canas 54.9% / Henri Squire 47.8%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Alejandro Moro Canas -136 / Henri Squire +105"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over -125 / Under -115"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML is close to fair; derivative or live entry needs to carry the edge.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Clay",
+    "court": "ATP Challenger - Heilbronn",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "Weakness edge",
+      "target": "Henri Squire",
+      "scoreGap": 26,
+      "attackingSide": "Alejandro Moro Canas",
+      "vulnerableSide": "Henri Squire",
+      "gameFlow": "Alejandro Moro Canas has a real path if Henri Squire's first two service games show the same weakness: second-serve points won are attackable (40%); double-fault pressure (8.2 avg).",
+      "liveTrigger": "Look for Henri Squire facing break points or second-serve pressure before 3-3.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "Avoid low unders if Henri Squire faces early break points or second-serve pressure.",
+      "pick": {
+        "name": "Alejandro Moro Canas",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 67,
+        "secondServeWonPct": 55,
+        "firstServePct": 69,
+        "avgAces": 3,
+        "avgDoubleFaults": 1.4,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 37,
+        "servicePointsWonPct": 63,
+        "weakServeMatches": 2,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 5,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "limited return pressure (37% return points won)"
+        ],
+        "strengths": [
+          "second serve holds up (55%)"
+        ],
+        "gameFlowRead": "Alejandro Moro Canas can drop points quickly through limited return pressure (37% return points won)."
+      },
+      "opponent": {
+        "name": "Henri Squire",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 65,
+        "secondServeWonPct": 40,
+        "firstServePct": 71,
+        "avgAces": 4.4,
+        "avgDoubleFaults": 8.2,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 46,
+        "servicePointsWonPct": 58,
+        "weakServeMatches": 5,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 31,
+        "firstGameComfort": "Fragile opening-service profile",
+        "liabilities": [
+          "second-serve points won are attackable (40%)",
+          "double-fault pressure (8.2 avg)",
+          "5 recent matches with serve instability"
+        ],
+        "strengths": [
+          "creates return pressure (46% return points won)"
+        ],
+        "gameFlowRead": "Henri Squire can drop points quickly through second-serve points won are attackable (40%) and double-fault pressure (8.2 avg)."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Alejandro Moro Canas",
+        "rank": 242,
+        "label": "Alejandro Moro Canas",
+        "form": null,
+        "boardPct": 54.9,
+        "decimalOdds": 1.735,
+        "marketLabel": "-136 / 57.6% implied",
+        "clayLine": "Clay | Live rank #242 | Spain | age 25 | adj form 57",
+        "weakness": {
+          "name": "Alejandro Moro Canas",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 55,
+          "firstServePct": 69,
+          "avgAces": 3,
+          "avgDoubleFaults": 1.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 37,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "limited return pressure (37% return points won)"
+          ],
+          "strengths": [
+            "second serve holds up (55%)"
+          ],
+          "gameFlowRead": "Alejandro Moro Canas can drop points quickly through limited return pressure (37% return points won)."
+        },
+        "warehouseStats": {
+          "name": "Alejandro Moro Canas",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Alejandro Moro Canas",
+            "country": "Spain",
+            "birthdate": "2000-12-07",
+            "age": 25,
+            "rank": 242,
+            "rankingLabel": "ATP ranking",
+            "topRank": 142,
+            "topRankDate": "2024-08-26",
+            "topRankPoints": 415,
+            "points": 234,
+            "prizeMoney": "514.987 $",
+            "matchesTotal": 400,
+            "wins": 234,
+            "losses": 166,
+            "winPct": 58.5,
+            "sourceUrl": "https://www.tennislive.net/atp/alejandro-moro-canas/",
+            "capturedAt": "2026-06-04T23:36:30.877386+00:00"
+          },
+          "ranking": {
+            "rank": 242,
+            "points": 234,
+            "country": "Spain",
+            "age": 25,
+            "tour": "ATP ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/atp/alejandro-moro-canas/",
+            "asOf": "2026-06-04T23:36:30.877386+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/alejandro-moro-canas-VS-stefano-napolitano/french-open-paris-2026/",
+            "capturedAt": "2026-06-04T23:36:37.883048+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 25,
+                "value": 1,
+                "label": "11.05.2026 (lost vs Tiago Torres)",
+                "date": "2026-05-11",
+                "result": "lost",
+                "opponentName": "Tiago Torres"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 26,
+                "value": 2,
+                "label": "18.05.2026 (win vs Stefano Napolitano)",
+                "date": "2026-05-18",
+                "result": "win",
+                "opponentName": "Stefano Napolitano"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 27,
+                "value": 1,
+                "label": "20.05.2026 (lost vs Lukas Neumayer)",
+                "date": "2026-05-20",
+                "result": "lost",
+                "opponentName": "Lukas Neumayer"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 28,
+                "value": 0,
+                "label": "26.05.2026 (lost vs Stefano Travaglia)",
+                "date": "2026-05-26",
+                "result": "lost",
+                "opponentName": "Stefano Travaglia"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 29,
+                "value": 1,
+                "label": "02.06.2026 (win vs Mika Petkovic)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Mika Petković"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 30,
+                "value": 2,
+                "label": "03.06.2026 (win vs Max Schoenhaus)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Max Schoenhaus"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 1,
+                "value": 1,
+                "label": "05.02.2026 (win vs Daniel Rincon)",
+                "date": "2026-02-05",
+                "result": "win",
+                "opponentName": "Daniel Rincon"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 2,
+                "value": 0,
+                "label": "06.02.2026 (lost vs Daniel Merida Aguilar)",
+                "date": "2026-02-06",
+                "result": "lost",
+                "opponentName": "Daniel Merida Aguilar"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 3,
+                "value": 1,
+                "label": "10.02.2026 (win vs George Loffhagen)",
+                "date": "2026-02-10",
+                "result": "win",
+                "opponentName": "George Loffhagen"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 4,
+                "value": 2,
+                "label": "12.02.2026 (win vs Benjamin Hassan)",
+                "date": "2026-02-12",
+                "result": "win",
+                "opponentName": "Benjamin Hassan"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 5,
+                "value": 3,
+                "label": "13.02.2026 (win vs Stefano Travaglia)",
+                "date": "2026-02-13",
+                "result": "win",
+                "opponentName": "Stefano Travaglia"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 6,
+                "value": 4,
+                "label": "14.02.2026 (win vs Daniel Merida Aguilar)",
+                "date": "2026-02-14",
+                "result": "win",
+                "opponentName": "Daniel Merida Aguilar"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 7,
+                "value": 3,
+                "label": "15.02.2026 (lost vs Lloyd Harris)",
+                "date": "2026-02-15",
+                "result": "lost",
+                "opponentName": "Lloyd Harris"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 8,
+                "value": 4,
+                "label": "24.02.2026 (win vs Nerman Fatic)",
+                "date": "2026-02-24",
+                "result": "win",
+                "opponentName": "Nerman Fatić"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 9,
+                "value": 3,
+                "label": "26.02.2026 (lost vs Dominic Stricker)",
+                "date": "2026-02-26",
+                "result": "lost",
+                "opponentName": "Dominic Stricker"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 10,
+                "value": 2,
+                "label": "02.03.2026 (lost vs Menelaos Efstathiou)",
+                "date": "2026-03-02",
+                "result": "lost",
+                "opponentName": "Menelaos Efstathiou"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 11,
+                "value": 3,
+                "label": "17.03.2026 (win vs Vilius Gaubas)",
+                "date": "2026-03-17",
+                "result": "win",
+                "opponentName": "Vilius Gaubas"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 12,
+                "value": 2,
+                "label": "19.03.2026 (lost vs Gilles Arnaud Bailly)",
+                "date": "2026-03-19",
+                "result": "lost",
+                "opponentName": "Gilles Arnaud Bailly"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 13,
+                "value": 3,
+                "label": "23.03.2026 (win vs Zdenek Kolar)",
+                "date": "2026-03-23",
+                "result": "win",
+                "opponentName": "Zdeněk Kolář"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 14,
+                "value": 2,
+                "label": "25.03.2026 (lost vs Sebastian Ofner)",
+                "date": "2026-03-25",
+                "result": "lost",
+                "opponentName": "Sebastian Ofner"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 15,
+                "value": 3,
+                "label": "01.04.2026 (win vs Franco Agamenone)",
+                "date": "2026-04-01",
+                "result": "win",
+                "opponentName": "Franco Agamenone"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 16,
+                "value": 2,
+                "label": "03.04.2026 (lost vs Dali Blanch)",
+                "date": "2026-04-03",
+                "result": "lost",
+                "opponentName": "Dali Blanch"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 17,
+                "value": 3,
+                "label": "07.04.2026 (win vs Henry Bernet)",
+                "date": "2026-04-07",
+                "result": "win",
+                "opponentName": "Henry Bernet"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 18,
+                "value": 4,
+                "label": "08.04.2026 (win vs Pablo Llamas Ruiz)",
+                "date": "2026-04-08",
+                "result": "win",
+                "opponentName": "Pablo Llamas Ruiz"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 19,
+                "value": 3,
+                "label": "10.04.2026 (lost vs Zsombor Piros)",
+                "date": "2026-04-10",
+                "result": "lost",
+                "opponentName": "Zsombor Piros"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 20,
+                "value": 4,
+                "label": "12.04.2026 (win vs Maxim Mrva)",
+                "date": "2026-04-12",
+                "result": "win",
+                "opponentName": "Maxim Mrva"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 21,
+                "value": 3,
+                "label": "13.04.2026 (lost vs Tom Gentzsch)",
+                "date": "2026-04-13",
+                "result": "lost",
+                "opponentName": "Tom Gentzsch"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 22,
+                "value": 2,
+                "label": "14.04.2026 (lost vs Rei Sakamoto)",
+                "date": "2026-04-14",
+                "result": "lost",
+                "opponentName": "Rei Sakamoto"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 23,
+                "value": 1,
+                "label": "04.05.2026 (lost vs Nishesh Basavareddy)",
+                "date": "2026-05-04",
+                "result": "lost",
+                "opponentName": "Nishesh Basavareddy"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 24,
+                "value": 2,
+                "label": "10.05.2026 (win vs Manas Manoj Dhamne)",
+                "date": "2026-05-10",
+                "result": "win",
+                "opponentName": "Manas Manoj Dhamne"
+              },
+              {
+                "index": 30,
+                "sequenceIndex": 25,
+                "value": 1,
+                "label": "11.05.2026 (lost vs Tiago Torres)",
+                "date": "2026-05-11",
+                "result": "lost",
+                "opponentName": "Tiago Torres"
+              },
+              {
+                "index": 31,
+                "sequenceIndex": 26,
+                "value": 2,
+                "label": "18.05.2026 (win vs Stefano Napolitano)",
+                "date": "2026-05-18",
+                "result": "win",
+                "opponentName": "Stefano Napolitano"
+              },
+              {
+                "index": 32,
+                "sequenceIndex": 27,
+                "value": 1,
+                "label": "20.05.2026 (lost vs Lukas Neumayer)",
+                "date": "2026-05-20",
+                "result": "lost",
+                "opponentName": "Lukas Neumayer"
+              },
+              {
+                "index": 33,
+                "sequenceIndex": 28,
+                "value": 0,
+                "label": "26.05.2026 (lost vs Stefano Travaglia)",
+                "date": "2026-05-26",
+                "result": "lost",
+                "opponentName": "Stefano Travaglia"
+              },
+              {
+                "index": 34,
+                "sequenceIndex": 29,
+                "value": 1,
+                "label": "02.06.2026 (win vs Mika Petkovic)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Mika Petković"
+              },
+              {
+                "index": 35,
+                "sequenceIndex": 30,
+                "value": 2,
+                "label": "03.06.2026 (win vs Max Schoenhaus)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Max Schoenhaus"
+              }
+            ],
+            "latestValue": 2,
+            "minValue": 0,
+            "maxValue": 4
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 3,
+              "avgAces": 3,
+              "doubleFaults": 1.4,
+              "avgDoubleFaults": 1.4,
+              "firstServePct": 68.6,
+              "firstServeWonPct": 67,
+              "secondServeWonPct": 55.4,
+              "returnPointsWonPct": 36.8,
+              "breakPointsConvertedPct": 46.2,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 12,
+              "breakPointsToConvert": 26,
+              "breakPointChancesPerMatch": 5.2
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 12,
+                "bpChances": 26,
+                "bpConvertedPct": 46.2,
+                "bpChancesPerMatch": 5.2
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 12,
+                "bpChances": 26,
+                "bpConvertedPct": 46.2,
+                "bpChancesPerMatch": 5.2
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Alejandro Moro Canas",
+            "matches": [
+              {
+                "opponentName": "Max Schoenhaus",
+                "event": "Bad Rappenau",
+                "matchDateLabel": "2026-06-03",
+                "isoDate": "2026-06-03",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "6-7 3 , 6-3, 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/alejandro-moro-canas-VS-max-schoenhaus/bad-rappenau-challenger-2026/",
+                "matchId": "tl-2026-06-03-bad-rappenau-challenger-2026-alejandro-moro-canas-vs-max-schoenhaus",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "68/99 (69%)",
+                      "made": 68,
+                      "attempts": 99,
+                      "pct": 69
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "46/68 (68%)",
+                      "made": 46,
+                      "attempts": 68,
+                      "pct": 68
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "20/31 (65%)",
+                      "made": 20,
+                      "attempts": 31,
+                      "pct": 65
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/4 (100%)",
+                      "made": 4,
+                      "attempts": 4,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "99/186 (53%)",
+                      "made": 99,
+                      "attempts": 186,
+                      "pct": 53
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "33/87 (38%)",
+                      "made": 33,
+                      "attempts": 87,
+                      "pct": 38
+                    }
+                  ],
+                  "firstServePct": 69,
+                  "firstServeIn": "68/99 (69%)",
+                  "firstServeWonPct": 68,
+                  "firstServePointsWon": "46/68 (68%)",
+                  "secondServeWonPct": 65,
+                  "secondServePointsWon": "20/31 (65%)",
+                  "aces": 2,
+                  "breakPointsConverted": "4/4 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 53,
+                  "totalPointsWon": "99/186 (53%)",
+                  "returnPointsWonPct": 38,
+                  "returnPointsWon": "33/87 (38%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "68/99 (69%)",
+                      "made": 68,
+                      "attempts": 99,
+                      "pct": 69
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "46/68 (68%)",
+                      "made": 46,
+                      "attempts": 68,
+                      "pct": 68
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "20/31 (65%)",
+                      "made": 20,
+                      "attempts": 31,
+                      "pct": 65
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/4 (100%)",
+                      "made": 4,
+                      "attempts": 4,
+                      "pct": 100
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "99/186 (53%)",
+                      "made": 99,
+                      "attempts": 186,
+                      "pct": 53
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "33/87 (38%)",
+                      "made": 33,
+                      "attempts": 87,
+                      "pct": 38
+                    }
+                  ],
+                  "firstServePct": 69,
+                  "firstServeIn": "68/99 (69%)",
+                  "firstServeWonPct": 68,
+                  "firstServePointsWon": "46/68 (68%)",
+                  "secondServeWonPct": 65,
+                  "secondServePointsWon": "20/31 (65%)",
+                  "aces": 2,
+                  "breakPointsConverted": "4/4 (100%)",
+                  "breakPointsConvertedPct": 100,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 53,
+                  "totalPointsWon": "99/186 (53%)",
+                  "returnPointsWonPct": 38,
+                  "returnPointsWon": "33/87 (38%)"
+                }
+              },
+              {
+                "opponentName": "Mika Petković",
+                "event": "Bad Rappenau",
+                "matchDateLabel": "2026-06-02",
+                "isoDate": "2026-06-02",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "6-1, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/alejandro-moro-canas-VS-mika-petkovic/bad-rappenau-challenger-2026/",
+                "matchId": "tl-2026-06-02-bad-rappenau-challenger-2026-alejandro-moro-canas-vs-mika-petkovic",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "29/43 (67%)",
+                      "made": 29,
+                      "attempts": 43,
+                      "pct": 67
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "26/29 (90%)",
+                      "made": 26,
+                      "attempts": 29,
+                      "pct": 90
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "7/14 (50%)",
+                      "made": 7,
+                      "attempts": 14,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/7 (57%)",
+                      "made": 4,
+                      "attempts": 7,
+                      "pct": 57
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "62/102 (61%)",
+                      "made": 62,
+                      "attempts": 102,
+                      "pct": 61
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "29/59 (49%)",
+                      "made": 29,
+                      "attempts": 59,
+                      "pct": 49
+                    }
+                  ],
+                  "firstServePct": 67,
+                  "firstServeIn": "29/43 (67%)",
+                  "firstServeWonPct": 90,
+                  "firstServePointsWon": "26/29 (90%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "7/14 (50%)",
+                  "aces": 7,
+                  "breakPointsConverted": "4/7 (57%)",
+                  "breakPointsConvertedPct": 57,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 61,
+                  "totalPointsWon": "62/102 (61%)",
+                  "returnPointsWonPct": 49,
+                  "returnPointsWon": "29/59 (49%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "29/43 (67%)",
+                      "made": 29,
+                      "attempts": 43,
+                      "pct": 67
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "26/29 (90%)",
+                      "made": 26,
+                      "attempts": 29,
+                      "pct": 90
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "7/14 (50%)",
+                      "made": 7,
+                      "attempts": 14,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/7 (57%)",
+                      "made": 4,
+                      "attempts": 7,
+                      "pct": 57
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "62/102 (61%)",
+                      "made": 62,
+                      "attempts": 102,
+                      "pct": 61
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "29/59 (49%)",
+                      "made": 29,
+                      "attempts": 59,
+                      "pct": 49
+                    }
+                  ],
+                  "firstServePct": 67,
+                  "firstServeIn": "29/43 (67%)",
+                  "firstServeWonPct": 90,
+                  "firstServePointsWon": "26/29 (90%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "7/14 (50%)",
+                  "aces": 7,
+                  "breakPointsConverted": "4/7 (57%)",
+                  "breakPointsConvertedPct": 57,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 61,
+                  "totalPointsWon": "62/102 (61%)",
+                  "returnPointsWonPct": 49,
+                  "returnPointsWon": "29/59 (49%)"
+                }
+              },
+              {
+                "opponentName": "Stefano Travaglia",
+                "event": "Vicenza Challenger",
+                "matchDateLabel": "2026-05-26",
+                "isoDate": "2026-05-26",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "lost",
+                "score": "6-3, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/stefano-travaglia-VS-alejandro-moro-canas/vicenza-challenger-2026/",
+                "matchId": "tl-2026-05-26-vicenza-challenger-2026-stefano-travaglia-vs-alejandro-moro-canas",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "38/55 (69%)",
+                      "made": 38,
+                      "attempts": 55,
+                      "pct": 69
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "20/38 (53%)",
+                      "made": 20,
+                      "attempts": 38,
+                      "pct": 53
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/17 (53%)",
+                      "made": 9,
+                      "attempts": 17,
+                      "pct": 53
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/3 (33%)",
+                      "made": 1,
+                      "attempts": 3,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "45/108 (42%)",
+                      "made": 45,
+                      "attempts": 108,
+                      "pct": 42
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "16/53 (30%)",
+                      "made": 16,
+                      "attempts": 53,
+                      "pct": 30
+                    }
+                  ],
+                  "firstServePct": 69,
+                  "firstServeIn": "38/55 (69%)",
+                  "firstServeWonPct": 53,
+                  "firstServePointsWon": "20/38 (53%)",
+                  "secondServeWonPct": 53,
+                  "secondServePointsWon": "9/17 (53%)",
+                  "aces": 0,
+                  "breakPointsConverted": "1/3 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 42,
+                  "totalPointsWon": "45/108 (42%)",
+                  "returnPointsWonPct": 30,
+                  "returnPointsWon": "16/53 (30%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "38/55 (69%)",
+                      "made": 38,
+                      "attempts": 55,
+                      "pct": 69
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "20/38 (53%)",
+                      "made": 20,
+                      "attempts": 38,
+                      "pct": 53
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/17 (53%)",
+                      "made": 9,
+                      "attempts": 17,
+                      "pct": 53
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/3 (33%)",
+                      "made": 1,
+                      "attempts": 3,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "45/108 (42%)",
+                      "made": 45,
+                      "attempts": 108,
+                      "pct": 42
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "16/53 (30%)",
+                      "made": 16,
+                      "attempts": 53,
+                      "pct": 30
+                    }
+                  ],
+                  "firstServePct": 69,
+                  "firstServeIn": "38/55 (69%)",
+                  "firstServeWonPct": 53,
+                  "firstServePointsWon": "20/38 (53%)",
+                  "secondServeWonPct": 53,
+                  "secondServePointsWon": "9/17 (53%)",
+                  "aces": 0,
+                  "breakPointsConverted": "1/3 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 42,
+                  "totalPointsWon": "45/108 (42%)",
+                  "returnPointsWonPct": 30,
+                  "returnPointsWon": "16/53 (30%)"
+                }
+              },
+              {
+                "opponentName": "Lukas Neumayer",
+                "event": "Paris",
+                "matchDateLabel": "2026-05-20",
+                "isoDate": "2026-05-20",
+                "surface": "Clay",
+                "round": "q 2",
+                "result": "lost",
+                "score": "6-1, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/lukas-neumayer-VS-alejandro-moro-canas/french-open-paris-2026/",
+                "matchId": "tl-2026-05-20-french-open-paris-2026-lukas-neumayer-vs-alejandro-moro-canas",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "32/46 (70%)",
+                      "made": 32,
+                      "attempts": 46,
+                      "pct": 70
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "16/32 (50%)",
+                      "made": 16,
+                      "attempts": 32,
+                      "pct": 50
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "8/14 (57%)",
+                      "made": 8,
+                      "attempts": 14,
+                      "pct": 57
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "0/3 (0%)",
+                      "made": 0,
+                      "attempts": 3,
+                      "pct": 0
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "37/93 (40%)",
+                      "made": 37,
+                      "attempts": 93,
+                      "pct": 40
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "13/47 (28%)",
+                      "made": 13,
+                      "attempts": 47,
+                      "pct": 28
+                    }
+                  ],
+                  "firstServePct": 70,
+                  "firstServeIn": "32/46 (70%)",
+                  "firstServeWonPct": 50,
+                  "firstServePointsWon": "16/32 (50%)",
+                  "secondServeWonPct": 57,
+                  "secondServePointsWon": "8/14 (57%)",
+                  "aces": 1,
+                  "breakPointsConverted": "0/3 (0%)",
+                  "breakPointsConvertedPct": 0,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 40,
+                  "totalPointsWon": "37/93 (40%)",
+                  "returnPointsWonPct": 28,
+                  "returnPointsWon": "13/47 (28%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "32/46 (70%)",
+                      "made": 32,
+                      "attempts": 46,
+                      "pct": 70
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "16/32 (50%)",
+                      "made": 16,
+                      "attempts": 32,
+                      "pct": 50
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "8/14 (57%)",
+                      "made": 8,
+                      "attempts": 14,
+                      "pct": 57
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "0/3 (0%)",
+                      "made": 0,
+                      "attempts": 3,
+                      "pct": 0
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "37/93 (40%)",
+                      "made": 37,
+                      "attempts": 93,
+                      "pct": 40
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "13/47 (28%)",
+                      "made": 13,
+                      "attempts": 47,
+                      "pct": 28
+                    }
+                  ],
+                  "firstServePct": 70,
+                  "firstServeIn": "32/46 (70%)",
+                  "firstServeWonPct": 50,
+                  "firstServePointsWon": "16/32 (50%)",
+                  "secondServeWonPct": 57,
+                  "secondServePointsWon": "8/14 (57%)",
+                  "aces": 1,
+                  "breakPointsConverted": "0/3 (0%)",
+                  "breakPointsConvertedPct": 0,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 40,
+                  "totalPointsWon": "37/93 (40%)",
+                  "returnPointsWonPct": 28,
+                  "returnPointsWon": "13/47 (28%)"
+                }
+              },
+              {
+                "opponentName": "Stefano Napolitano",
+                "event": "Paris",
+                "matchDateLabel": "2026-05-18",
+                "isoDate": "2026-05-18",
+                "surface": "Clay",
+                "round": "q 1",
+                "result": "win",
+                "score": "4-6, 7-6 4 , 6-0",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/alejandro-moro-canas-VS-stefano-napolitano/french-open-paris-2026/",
+                "matchId": "tl-2026-05-18-french-open-paris-2026-alejandro-moro-canas-vs-stefano-napolitano",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "66/97 (68%)",
+                      "made": 66,
+                      "attempts": 97,
+                      "pct": 68
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "49/66 (74%)",
+                      "made": 49,
+                      "attempts": 66,
+                      "pct": 74
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "16/31 (52%)",
+                      "made": 16,
+                      "attempts": 31,
+                      "pct": 52
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/9 (33%)",
+                      "made": 3,
+                      "attempts": 9,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "102/193 (53%)",
+                      "made": 102,
+                      "attempts": 193,
+                      "pct": 53
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "37/96 (39%)",
+                      "made": 37,
+                      "attempts": 96,
+                      "pct": 39
+                    }
+                  ],
+                  "firstServePct": 68,
+                  "firstServeIn": "66/97 (68%)",
+                  "firstServeWonPct": 74,
+                  "firstServePointsWon": "49/66 (74%)",
+                  "secondServeWonPct": 52,
+                  "secondServePointsWon": "16/31 (52%)",
+                  "aces": 5,
+                  "breakPointsConverted": "3/9 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 53,
+                  "totalPointsWon": "102/193 (53%)",
+                  "returnPointsWonPct": 39,
+                  "returnPointsWon": "37/96 (39%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "66/97 (68%)",
+                      "made": 66,
+                      "attempts": 97,
+                      "pct": 68
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "49/66 (74%)",
+                      "made": 49,
+                      "attempts": 66,
+                      "pct": 74
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "16/31 (52%)",
+                      "made": 16,
+                      "attempts": 31,
+                      "pct": 52
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/9 (33%)",
+                      "made": 3,
+                      "attempts": 9,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "1",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "102/193 (53%)",
+                      "made": 102,
+                      "attempts": 193,
+                      "pct": 53
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "37/96 (39%)",
+                      "made": 37,
+                      "attempts": 96,
+                      "pct": 39
+                    }
+                  ],
+                  "firstServePct": 68,
+                  "firstServeIn": "66/97 (68%)",
+                  "firstServeWonPct": 74,
+                  "firstServePointsWon": "49/66 (74%)",
+                  "secondServeWonPct": 52,
+                  "secondServePointsWon": "16/31 (52%)",
+                  "aces": 5,
+                  "breakPointsConverted": "3/9 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 1,
+                  "totalPointsWonPct": 53,
+                  "totalPointsWon": "102/193 (53%)",
+                  "returnPointsWonPct": 39,
+                  "returnPointsWon": "37/96 (39%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 56.9,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.6,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.496,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 56.9,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/atp/alejandro-moro-canas/"
+          }
+        },
+        "record2026": "",
+        "notes": "Pick: model 54.9%",
+        "matchupNote": "Why pick: Opponent-adjusted recent form is basically even: Alejandro Moro Canas 57, Henri Squire 59. Lean, not a chase."
+      },
+      {
+        "name": "Henri Squire",
+        "rank": 249,
+        "label": "Henri Squire",
+        "form": null,
+        "boardPct": 47.8,
+        "decimalOdds": 2.05,
+        "marketLabel": "+105 / 48.8% implied",
+        "clayLine": "Clay | Live rank #249 | Germany | age 25 | adj form 59",
+        "weakness": {
+          "name": "Henri Squire",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 65,
+          "secondServeWonPct": 40,
+          "firstServePct": 71,
+          "avgAces": 4.4,
+          "avgDoubleFaults": 8.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 46,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 5,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 31,
+          "firstGameComfort": "Fragile opening-service profile",
+          "liabilities": [
+            "second-serve points won are attackable (40%)",
+            "double-fault pressure (8.2 avg)",
+            "5 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (46% return points won)"
+          ],
+          "gameFlowRead": "Henri Squire can drop points quickly through second-serve points won are attackable (40%) and double-fault pressure (8.2 avg)."
+        },
+        "warehouseStats": {
+          "name": "Henri Squire",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Henri Squire",
+            "country": "Germany",
+            "birthdate": "2000-09-27",
+            "age": 25,
+            "rank": 249,
+            "rankingLabel": "ATP ranking",
+            "topRank": 169,
+            "topRankDate": "2024-07-15",
+            "topRankPoints": 350,
+            "points": 223,
+            "prizeMoney": "498.674 $",
+            "matchesTotal": 427,
+            "wins": 241,
+            "losses": 186,
+            "winPct": 56.44,
+            "sourceUrl": "https://www.tennislive.net/atp/henri-squire/",
+            "capturedAt": "2026-06-04T23:39:06.629301+00:00"
+          },
+          "ranking": {
+            "rank": 249,
+            "points": 223,
+            "country": "Germany",
+            "age": 25,
+            "tour": "ATP ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/atp/henri-squire/",
+            "asOf": "2026-06-04T23:39:06.629301+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/rinky-hijikata-VS-henri-squire/hamburg-open-hamburg-2026/",
+            "capturedAt": "2026-06-04T23:41:31.951685+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 25,
+                "value": -1,
+                "label": "16.05.2026 (win vs Cristian Garin)",
+                "date": "2026-05-16",
+                "result": "win",
+                "opponentName": "Cristian Garin"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 26,
+                "value": -2,
+                "label": "17.05.2026 (lost vs Rinky Hijikata)",
+                "date": "2026-05-17",
+                "result": "lost",
+                "opponentName": "Rinky Hijikata"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 27,
+                "value": -1,
+                "label": "26.05.2026 (win vs Luca Castagnola)",
+                "date": "2026-05-26",
+                "result": "win",
+                "opponentName": "Luca Castagnola"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 28,
+                "value": -2,
+                "label": "27.05.2026 (lost vs Stefano Travaglia)",
+                "date": "2026-05-27",
+                "result": "lost",
+                "opponentName": "Stefano Travaglia"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 29,
+                "value": -1,
+                "label": "02.06.2026 (win vs Marc Polmans)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Marc Polmans"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 30,
+                "value": 0,
+                "label": "03.06.2026 (win vs Pedro Martinez Portero)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Pedro Martinez Portero"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 1,
+                "value": 1,
+                "label": "19.01.2026 (win vs Mathys Erhard)",
+                "date": "2026-01-19",
+                "result": "win",
+                "opponentName": "Mathys Erhard"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 2,
+                "value": 0,
+                "label": "20.01.2026 (lost vs Petr Brunclik)",
+                "date": "2026-01-20",
+                "result": "lost",
+                "opponentName": "Petr Brunclik"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 3,
+                "value": -1,
+                "label": "04.02.2026 (lost vs Buvaysar Gadamauri)",
+                "date": "2026-02-04",
+                "result": "lost",
+                "opponentName": "Buvaysar Gadamauri"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 4,
+                "value": 0,
+                "label": "08.02.2026 (win vs Matteo Martineau)",
+                "date": "2026-02-08",
+                "result": "win",
+                "opponentName": "Mattéo Martineau"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 5,
+                "value": 1,
+                "label": "09.02.2026 (win vs Geoffrey Blancaneaux)",
+                "date": "2026-02-09",
+                "result": "win",
+                "opponentName": "Geoffrey Blancaneaux"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 6,
+                "value": 2,
+                "label": "10.02.2026 (win vs Moise Kouame)",
+                "date": "2026-02-10",
+                "result": "win",
+                "opponentName": "Moise Kouame"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 7,
+                "value": 3,
+                "label": "11.02.2026 (win vs Giulio Zeppieri)",
+                "date": "2026-02-11",
+                "result": "win",
+                "opponentName": "Giulio Zeppieri"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 8,
+                "value": 4,
+                "label": "13.02.2026 (win vs Alexander Shevchenko)",
+                "date": "2026-02-13",
+                "result": "win",
+                "opponentName": "Alexander Shevchenko"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 9,
+                "value": 3,
+                "label": "14.02.2026 (lost vs Benjamin Bonzi)",
+                "date": "2026-02-14",
+                "result": "lost",
+                "opponentName": "Benjamin Bonzi"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 10,
+                "value": 2,
+                "label": "15.02.2026 (lost vs Felix Balshaw)",
+                "date": "2026-02-15",
+                "result": "lost",
+                "opponentName": "Felix Balshaw"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 11,
+                "value": 1,
+                "label": "23.02.2026 (lost vs Zsombor Piros)",
+                "date": "2026-02-23",
+                "result": "lost",
+                "opponentName": "Zsombor Piros"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 12,
+                "value": 2,
+                "label": "17.03.2026 (win vs Stefan Palosi)",
+                "date": "2026-03-17",
+                "result": "win",
+                "opponentName": "Stefan Palosi"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 13,
+                "value": 1,
+                "label": "19.03.2026 (lost vs Stefano Travaglia)",
+                "date": "2026-03-19",
+                "result": "lost",
+                "opponentName": "Stefano Travaglia"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 14,
+                "value": 0,
+                "label": "23.03.2026 (lost vs Sumit Nagal)",
+                "date": "2026-03-23",
+                "result": "lost",
+                "opponentName": "Sumit Nagal"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 15,
+                "value": -1,
+                "label": "02.04.2026 (lost vs Mili Poljicak)",
+                "date": "2026-04-02",
+                "result": "lost",
+                "opponentName": "Mili Poljičak"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 16,
+                "value": 0,
+                "label": "05.04.2026 (win vs Van Son Didoni)",
+                "date": "2026-04-05",
+                "result": "win",
+                "opponentName": "Van Son Didoni"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 17,
+                "value": -1,
+                "label": "06.04.2026 (lost vs Jacopo Vasami)",
+                "date": "2026-04-06",
+                "result": "lost",
+                "opponentName": "Jacopo Vasami"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 18,
+                "value": -2,
+                "label": "20.04.2026 (lost vs Stefanos Sakellaridis)",
+                "date": "2026-04-20",
+                "result": "lost",
+                "opponentName": "Stefanos Sakellaridis"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 19,
+                "value": -1,
+                "label": "28.04.2026 (win vs Ugo Blanchet)",
+                "date": "2026-04-28",
+                "result": "win",
+                "opponentName": "Ugo Blanchet"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 20,
+                "value": -2,
+                "label": "29.04.2026 (lost vs Rudolf Molleker)",
+                "date": "2026-04-29",
+                "result": "lost",
+                "opponentName": "Rudolf Molleker"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 21,
+                "value": -3,
+                "label": "05.05.2026 (lost vs Radu David Turcanu)",
+                "date": "2026-05-05",
+                "result": "lost",
+                "opponentName": "Radu David Turcanu"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 22,
+                "value": -2,
+                "label": "11.05.2026 (win vs Alejandro Juan Mano)",
+                "date": "2026-05-11",
+                "result": "win",
+                "opponentName": "Alejandro Juan Mano"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 23,
+                "value": -1,
+                "label": "12.05.2026 (win vs Timofey Skatov)",
+                "date": "2026-05-12",
+                "result": "win",
+                "opponentName": "Timofey Skatov"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 24,
+                "value": -2,
+                "label": "13.05.2026 (lost vs Daniel Altmaier)",
+                "date": "2026-05-13",
+                "result": "lost",
+                "opponentName": "Daniel Altmaier"
+              },
+              {
+                "index": 30,
+                "sequenceIndex": 25,
+                "value": -1,
+                "label": "16.05.2026 (win vs Cristian Garin)",
+                "date": "2026-05-16",
+                "result": "win",
+                "opponentName": "Cristian Garin"
+              },
+              {
+                "index": 31,
+                "sequenceIndex": 26,
+                "value": -2,
+                "label": "17.05.2026 (lost vs Rinky Hijikata)",
+                "date": "2026-05-17",
+                "result": "lost",
+                "opponentName": "Rinky Hijikata"
+              },
+              {
+                "index": 32,
+                "sequenceIndex": 27,
+                "value": -1,
+                "label": "26.05.2026 (win vs Luca Castagnola)",
+                "date": "2026-05-26",
+                "result": "win",
+                "opponentName": "Luca Castagnola"
+              },
+              {
+                "index": 33,
+                "sequenceIndex": 28,
+                "value": -2,
+                "label": "27.05.2026 (lost vs Stefano Travaglia)",
+                "date": "2026-05-27",
+                "result": "lost",
+                "opponentName": "Stefano Travaglia"
+              },
+              {
+                "index": 34,
+                "sequenceIndex": 29,
+                "value": -1,
+                "label": "02.06.2026 (win vs Marc Polmans)",
+                "date": "2026-06-02",
+                "result": "win",
+                "opponentName": "Marc Polmans"
+              },
+              {
+                "index": 35,
+                "sequenceIndex": 30,
+                "value": 0,
+                "label": "03.06.2026 (win vs Pedro Martinez Portero)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Pedro Martinez Portero"
+              }
+            ],
+            "latestValue": 0,
+            "minValue": -3,
+            "maxValue": 4
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 4.4,
+              "avgAces": 4.4,
+              "doubleFaults": 8.2,
+              "avgDoubleFaults": 8.2,
+              "firstServePct": 70.8,
+              "firstServeWonPct": 64.8,
+              "secondServeWonPct": 40.4,
+              "returnPointsWonPct": 46.2,
+              "breakPointsConvertedPct": 29,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 20,
+              "breakPointsToConvert": 69,
+              "breakPointChancesPerMatch": 13.8
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 20,
+                "bpChances": 69,
+                "bpConvertedPct": 29,
+                "bpChancesPerMatch": 13.8
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 20,
+                "bpChances": 69,
+                "bpConvertedPct": 29,
+                "bpChancesPerMatch": 13.8
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Henri Squire",
+            "matches": [
+              {
+                "opponentName": "Pedro Martinez Portero",
+                "event": "Bad Rappenau",
+                "matchDateLabel": "2026-06-03",
+                "isoDate": "2026-06-03",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "7-6 4 , 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/henri-squire-VS-pedro-martinez-portero/bad-rappenau-challenger-2026/",
+                "matchId": "tl-2026-06-03-bad-rappenau-challenger-2026-henri-squire-vs-pedro-martinez-portero",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "56/86 (65%)",
+                      "made": 56,
+                      "attempts": 86,
+                      "pct": 65
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "34/56 (61%)",
+                      "made": 34,
+                      "attempts": 56,
+                      "pct": 61
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "18/30 (60%)",
+                      "made": 18,
+                      "attempts": 30,
+                      "pct": 60
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/9 (44%)",
+                      "made": 4,
+                      "attempts": 9,
+                      "pct": 44
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "8",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "89/167 (53%)",
+                      "made": 89,
+                      "attempts": 167,
+                      "pct": 53
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "37/81 (46%)",
+                      "made": 37,
+                      "attempts": 81,
+                      "pct": 46
+                    }
+                  ],
+                  "firstServePct": 65,
+                  "firstServeIn": "56/86 (65%)",
+                  "firstServeWonPct": 61,
+                  "firstServePointsWon": "34/56 (61%)",
+                  "secondServeWonPct": 60,
+                  "secondServePointsWon": "18/30 (60%)",
+                  "aces": 3,
+                  "breakPointsConverted": "4/9 (44%)",
+                  "breakPointsConvertedPct": 44,
+                  "doubleFaults": 8,
+                  "totalPointsWonPct": 53,
+                  "totalPointsWon": "89/167 (53%)",
+                  "returnPointsWonPct": 46,
+                  "returnPointsWon": "37/81 (46%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "56/86 (65%)",
+                      "made": 56,
+                      "attempts": 86,
+                      "pct": 65
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "34/56 (61%)",
+                      "made": 34,
+                      "attempts": 56,
+                      "pct": 61
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "18/30 (60%)",
+                      "made": 18,
+                      "attempts": 30,
+                      "pct": 60
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/9 (44%)",
+                      "made": 4,
+                      "attempts": 9,
+                      "pct": 44
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "8",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "89/167 (53%)",
+                      "made": 89,
+                      "attempts": 167,
+                      "pct": 53
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "37/81 (46%)",
+                      "made": 37,
+                      "attempts": 81,
+                      "pct": 46
+                    }
+                  ],
+                  "firstServePct": 65,
+                  "firstServeIn": "56/86 (65%)",
+                  "firstServeWonPct": 61,
+                  "firstServePointsWon": "34/56 (61%)",
+                  "secondServeWonPct": 60,
+                  "secondServePointsWon": "18/30 (60%)",
+                  "aces": 3,
+                  "breakPointsConverted": "4/9 (44%)",
+                  "breakPointsConvertedPct": 44,
+                  "doubleFaults": 8,
+                  "totalPointsWonPct": 53,
+                  "totalPointsWon": "89/167 (53%)",
+                  "returnPointsWonPct": 46,
+                  "returnPointsWon": "37/81 (46%)"
+                }
+              },
+              {
+                "opponentName": "Marc Polmans",
+                "event": "Bad Rappenau",
+                "matchDateLabel": "2026-06-02",
+                "isoDate": "2026-06-02",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "6-0, 7-5",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/henri-squire-VS-marc-polmans/bad-rappenau-challenger-2026/",
+                "matchId": "tl-2026-06-02-bad-rappenau-challenger-2026-henri-squire-vs-marc-polmans",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "41/56 (73%)",
+                      "made": 41,
+                      "attempts": 56,
+                      "pct": 73
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "31/41 (76%)",
+                      "made": 31,
+                      "attempts": 41,
+                      "pct": 76
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "6/15 (40%)",
+                      "made": 6,
+                      "attempts": 15,
+                      "pct": 40
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/13 (38%)",
+                      "made": 5,
+                      "attempts": 13,
+                      "pct": 38
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "72/124 (58%)",
+                      "made": 72,
+                      "attempts": 124,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "35/68 (51%)",
+                      "made": 35,
+                      "attempts": 68,
+                      "pct": 51
+                    }
+                  ],
+                  "firstServePct": 73,
+                  "firstServeIn": "41/56 (73%)",
+                  "firstServeWonPct": 76,
+                  "firstServePointsWon": "31/41 (76%)",
+                  "secondServeWonPct": 40,
+                  "secondServePointsWon": "6/15 (40%)",
+                  "aces": 3,
+                  "breakPointsConverted": "5/13 (38%)",
+                  "breakPointsConvertedPct": 38,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "72/124 (58%)",
+                  "returnPointsWonPct": 51,
+                  "returnPointsWon": "35/68 (51%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "41/56 (73%)",
+                      "made": 41,
+                      "attempts": 56,
+                      "pct": 73
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "31/41 (76%)",
+                      "made": 31,
+                      "attempts": 41,
+                      "pct": 76
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "6/15 (40%)",
+                      "made": 6,
+                      "attempts": 15,
+                      "pct": 40
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/13 (38%)",
+                      "made": 5,
+                      "attempts": 13,
+                      "pct": 38
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "72/124 (58%)",
+                      "made": 72,
+                      "attempts": 124,
+                      "pct": 58
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "35/68 (51%)",
+                      "made": 35,
+                      "attempts": 68,
+                      "pct": 51
+                    }
+                  ],
+                  "firstServePct": 73,
+                  "firstServeIn": "41/56 (73%)",
+                  "firstServeWonPct": 76,
+                  "firstServePointsWon": "31/41 (76%)",
+                  "secondServeWonPct": 40,
+                  "secondServePointsWon": "6/15 (40%)",
+                  "aces": 3,
+                  "breakPointsConverted": "5/13 (38%)",
+                  "breakPointsConvertedPct": 38,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 58,
+                  "totalPointsWon": "72/124 (58%)",
+                  "returnPointsWonPct": 51,
+                  "returnPointsWon": "35/68 (51%)"
+                }
+              },
+              {
+                "opponentName": "Stefano Travaglia",
+                "event": "Vicenza Challenger",
+                "matchDateLabel": "2026-05-27",
+                "isoDate": "2026-05-27",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "lost",
+                "score": "6-4, 6-2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/stefano-travaglia-VS-henri-squire/vicenza-challenger-2026/",
+                "matchId": "tl-2026-05-27-vicenza-challenger-2026-stefano-travaglia-vs-henri-squire",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "40/56 (71%)",
+                      "made": 40,
+                      "attempts": 56,
+                      "pct": 71
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "19/40 (48%)",
+                      "made": 19,
+                      "attempts": 40,
+                      "pct": 48
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "5/16 (31%)",
+                      "made": 5,
+                      "attempts": 16,
+                      "pct": 31
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/19 (16%)",
+                      "made": 3,
+                      "attempts": 19,
+                      "pct": 16
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "9",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "59/136 (43%)",
+                      "made": 59,
+                      "attempts": 136,
+                      "pct": 43
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "35/80 (44%)",
+                      "made": 35,
+                      "attempts": 80,
+                      "pct": 44
+                    }
+                  ],
+                  "firstServePct": 71,
+                  "firstServeIn": "40/56 (71%)",
+                  "firstServeWonPct": 48,
+                  "firstServePointsWon": "19/40 (48%)",
+                  "secondServeWonPct": 31,
+                  "secondServePointsWon": "5/16 (31%)",
+                  "aces": 2,
+                  "breakPointsConverted": "3/19 (16%)",
+                  "breakPointsConvertedPct": 16,
+                  "doubleFaults": 9,
+                  "totalPointsWonPct": 43,
+                  "totalPointsWon": "59/136 (43%)",
+                  "returnPointsWonPct": 44,
+                  "returnPointsWon": "35/80 (44%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "40/56 (71%)",
+                      "made": 40,
+                      "attempts": 56,
+                      "pct": 71
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "19/40 (48%)",
+                      "made": 19,
+                      "attempts": 40,
+                      "pct": 48
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "5/16 (31%)",
+                      "made": 5,
+                      "attempts": 16,
+                      "pct": 31
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/19 (16%)",
+                      "made": 3,
+                      "attempts": 19,
+                      "pct": 16
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "9",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "59/136 (43%)",
+                      "made": 59,
+                      "attempts": 136,
+                      "pct": 43
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "35/80 (44%)",
+                      "made": 35,
+                      "attempts": 80,
+                      "pct": 44
+                    }
+                  ],
+                  "firstServePct": 71,
+                  "firstServeIn": "40/56 (71%)",
+                  "firstServeWonPct": 48,
+                  "firstServePointsWon": "19/40 (48%)",
+                  "secondServeWonPct": 31,
+                  "secondServePointsWon": "5/16 (31%)",
+                  "aces": 2,
+                  "breakPointsConverted": "3/19 (16%)",
+                  "breakPointsConvertedPct": 16,
+                  "doubleFaults": 9,
+                  "totalPointsWonPct": 43,
+                  "totalPointsWon": "59/136 (43%)",
+                  "returnPointsWonPct": 44,
+                  "returnPointsWon": "35/80 (44%)"
+                }
+              },
+              {
+                "opponentName": "Luca Castagnola",
+                "event": "Vicenza Challenger",
+                "matchDateLabel": "2026-05-26",
+                "isoDate": "2026-05-26",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "win",
+                "score": "6-3, 6-2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/henri-squire-VS-luca-castagnola/vicenza-challenger-2026/",
+                "matchId": "tl-2026-05-26-vicenza-challenger-2026-henri-squire-vs-luca-castagnola",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "55/71 (77%)",
+                      "made": 55,
+                      "attempts": 71,
+                      "pct": 77
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "37/55 (67%)",
+                      "made": 37,
+                      "attempts": 55,
+                      "pct": 67
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "7/16 (44%)",
+                      "made": 7,
+                      "attempts": 16,
+                      "pct": 44
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/6 (67%)",
+                      "made": 4,
+                      "attempts": 6,
+                      "pct": 67
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "67/119 (56%)",
+                      "made": 67,
+                      "attempts": 119,
+                      "pct": 56
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "23/48 (48%)",
+                      "made": 23,
+                      "attempts": 48,
+                      "pct": 48
+                    }
+                  ],
+                  "firstServePct": 77,
+                  "firstServeIn": "55/71 (77%)",
+                  "firstServeWonPct": 67,
+                  "firstServePointsWon": "37/55 (67%)",
+                  "secondServeWonPct": 44,
+                  "secondServePointsWon": "7/16 (44%)",
+                  "aces": 7,
+                  "breakPointsConverted": "4/6 (67%)",
+                  "breakPointsConvertedPct": 67,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 56,
+                  "totalPointsWon": "67/119 (56%)",
+                  "returnPointsWonPct": 48,
+                  "returnPointsWon": "23/48 (48%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "55/71 (77%)",
+                      "made": 55,
+                      "attempts": 71,
+                      "pct": 77
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "37/55 (67%)",
+                      "made": 37,
+                      "attempts": 55,
+                      "pct": 67
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "7/16 (44%)",
+                      "made": 7,
+                      "attempts": 16,
+                      "pct": 44
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/6 (67%)",
+                      "made": 4,
+                      "attempts": 6,
+                      "pct": 67
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "67/119 (56%)",
+                      "made": 67,
+                      "attempts": 119,
+                      "pct": 56
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "23/48 (48%)",
+                      "made": 23,
+                      "attempts": 48,
+                      "pct": 48
+                    }
+                  ],
+                  "firstServePct": 77,
+                  "firstServeIn": "55/71 (77%)",
+                  "firstServeWonPct": 67,
+                  "firstServePointsWon": "37/55 (67%)",
+                  "secondServeWonPct": 44,
+                  "secondServePointsWon": "7/16 (44%)",
+                  "aces": 7,
+                  "breakPointsConverted": "4/6 (67%)",
+                  "breakPointsConvertedPct": 67,
+                  "doubleFaults": 5,
+                  "totalPointsWonPct": 56,
+                  "totalPointsWon": "67/119 (56%)",
+                  "returnPointsWonPct": 48,
+                  "returnPointsWon": "23/48 (48%)"
+                }
+              },
+              {
+                "opponentName": "Rinky Hijikata",
+                "event": "Hamburg",
+                "matchDateLabel": "2026-05-17",
+                "isoDate": "2026-05-17",
+                "surface": "Clay",
+                "round": "qual.",
+                "result": "lost",
+                "score": "6-7 4 , 7-5, 7-6 5",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/rinky-hijikata-VS-henri-squire/hamburg-open-hamburg-2026/",
+                "matchId": "tl-2026-05-17-hamburg-open-hamburg-2026-rinky-hijikata-vs-henri-squire",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "102/150 (68%)",
+                      "made": 102,
+                      "attempts": 150,
+                      "pct": 68
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "73/102 (72%)",
+                      "made": 73,
+                      "attempts": 102,
+                      "pct": 72
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/48 (27%)",
+                      "made": 13,
+                      "attempts": 48,
+                      "pct": 27
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/22 (18%)",
+                      "made": 4,
+                      "attempts": 22,
+                      "pct": 18
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "14",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "147/296 (50%)",
+                      "made": 147,
+                      "attempts": 296,
+                      "pct": 50
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "61/146 (42%)",
+                      "made": 61,
+                      "attempts": 146,
+                      "pct": 42
+                    }
+                  ],
+                  "firstServePct": 68,
+                  "firstServeIn": "102/150 (68%)",
+                  "firstServeWonPct": 72,
+                  "firstServePointsWon": "73/102 (72%)",
+                  "secondServeWonPct": 27,
+                  "secondServePointsWon": "13/48 (27%)",
+                  "aces": 7,
+                  "breakPointsConverted": "4/22 (18%)",
+                  "breakPointsConvertedPct": 18,
+                  "doubleFaults": 14,
+                  "totalPointsWonPct": 50,
+                  "totalPointsWon": "147/296 (50%)",
+                  "returnPointsWonPct": 42,
+                  "returnPointsWon": "61/146 (42%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "102/150 (68%)",
+                      "made": 102,
+                      "attempts": 150,
+                      "pct": 68
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "73/102 (72%)",
+                      "made": 73,
+                      "attempts": 102,
+                      "pct": 72
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "13/48 (27%)",
+                      "made": 13,
+                      "attempts": 48,
+                      "pct": 27
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/22 (18%)",
+                      "made": 4,
+                      "attempts": 22,
+                      "pct": 18
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "14",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "147/296 (50%)",
+                      "made": 147,
+                      "attempts": 296,
+                      "pct": 50
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "61/146 (42%)",
+                      "made": 61,
+                      "attempts": 146,
+                      "pct": 42
+                    }
+                  ],
+                  "firstServePct": 68,
+                  "firstServeIn": "102/150 (68%)",
+                  "firstServeWonPct": 72,
+                  "firstServePointsWon": "73/102 (72%)",
+                  "secondServeWonPct": 27,
+                  "secondServePointsWon": "13/48 (27%)",
+                  "aces": 7,
+                  "breakPointsConverted": "4/22 (18%)",
+                  "breakPointsConvertedPct": 18,
+                  "doubleFaults": 14,
+                  "totalPointsWonPct": 50,
+                  "totalPointsWon": "147/296 (50%)",
+                  "returnPointsWonPct": 42,
+                  "returnPointsWon": "61/146 (42%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 58.8,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.6,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.56,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 58.8,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/atp/henri-squire/"
+          }
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 45.1%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 54.9,
+        "rightScore": 47.8,
+        "leftLabel": "Alejandro Moro Canas",
+        "rightLabel": "Henri Squire",
+        "winner": "Alejandro Moro Canas"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 57.6,
+        "rightScore": 48.8,
+        "leftLabel": "Alejandro Moro Canas",
+        "rightLabel": "Henri Squire",
+        "winner": "ML is close to fair; derivative or live entry needs to carry the edge."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 5,
+        "rightScore": 31,
+        "leftLabel": "Alejandro Moro Canas",
+        "rightLabel": "Henri Squire",
+        "winner": "Weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 56,
+        "rightScore": 44,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Pass-first"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:29.245Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Alejandro Moro Canas",
+          "probabilityPct": 57.6,
+          "amount": null,
+          "americanOdds": -136,
+          "edgePct": -2.7,
+          "priceBand": "Coinflip"
+        },
+        {
+          "name": "Henri Squire",
+          "probabilityPct": 48.8,
+          "amount": null,
+          "americanOdds": 105,
+          "edgePct": -1,
+          "priceBand": "Coinflip"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Alejandro Moro Canas",
+        "line": null,
+        "americanOdds": -136,
+        "modelPct": 54.9,
+        "impliedPct": 57.6,
+        "edgePct": -2.7,
+        "evPer100": -4.7,
+        "netEvPer100": -6.7,
+        "grade": "Negative EV",
+        "issue": "Favorite price needs better proof",
+        "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": 39.8,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "No posted match total captured."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Alejandro Moro Canas 63% / Henri Squire 67%",
+        "rows": [
+          {
+            "name": "Alejandro Moro Canas",
+            "confidence": 63,
+            "modelPct": 54.9,
+            "label": "Market favorite to win a set"
+          },
+          {
+            "name": "Henri Squire",
+            "confidence": 67,
+            "modelPct": 47.8,
+            "label": "Underdog set-win path needs early holds"
+          }
+        ],
+        "confidence": 67,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Pass / near line",
+        "expectedGames": 9.6,
+        "confidence": 51,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 54,
+        "grade": "Near fair",
+        "reason": "Expected first-set games 9.6 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 41%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Alejandro Moro Canas",
+        "americanOdds": -136,
+        "modelPct": 54.9,
+        "impliedPct": 57.6,
+        "edgePct": -2.7,
+        "evPer100": -4.7,
+        "netEvPer100": -6.7,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 39.8,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
+        "expectedGames": 9.6,
+        "confidence": 51,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 54,
+        "modelPct": 51,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.6 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 41%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Alejandro Moro Canas",
+          "confidence": 63,
+          "modelPct": 54.9,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Henri Squire",
+          "confidence": 67,
+          "modelPct": 47.8,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Alejandro Moro Canas",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Alejandro Moro Canas",
+          "confidence": 63,
+          "modelPct": 54.9,
+          "label": "Market favorite to win a set"
+        },
+        {
+          "name": "Henri Squire",
+          "confidence": 67,
+          "modelPct": 47.8,
+          "label": "Underdog set-win path needs early holds"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 48,
+      "upsetRisk": 45.1,
+      "overview": "Alejandro Moro Canas has a real path if Henri Squire's first two service games show the same weakness: second-serve points won are attackable (40%); double-fault pressure (8.2 avg).",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "ML is close to fair; derivative or live entry needs to carry the edge.",
+      "summary": "Alejandro Moro Canas has a real path if Henri Squire's first two service games show the same weakness: second-serve points won are attackable (40%); double-fault pressure (8.2 avg).",
+      "trigger": "Look for Henri Squire facing break points or second-serve pressure before 3-3.",
+      "headline": "Weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Alejandro Moro Canas -136; Model 54.9% vs DraftKings Sportsbook implied 57.6% (-2.7 pts).",
+        "lean": "ML is close to fair; derivative or live entry needs to carry the edge.",
+        "confidence": 54.9,
+        "marketType": "ML",
+        "selection": "Alejandro Moro Canas",
+        "americanOdds": -136,
+        "modelPct": 54.9,
+        "impliedPct": 57.6,
+        "edgePct": -2.7,
+        "evPer100": -4.7,
+        "netEvPer100": -6.7,
+        "feePer100": 2,
+        "valueIssue": "Favorite price needs better proof",
+        "valueGrade": "Negative EV",
+        "betGrade": false,
+        "tone": "neutral",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. ML is close to fair; derivative or live entry needs to carry the edge."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 67,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "accent",
+        "reason": "Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 50,
+        "tone": "accent",
+        "reason": "Look for Henri Squire facing break points or second-serve pressure before 3-3."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 39.8,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Pass / near line",
+        "confidence": 51,
+        "marketType": "First-set total",
+        "selection": "Pass / near line",
+        "line": 9.5,
+        "americanOdds": null,
+        "expectedGames": 9.6,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 54,
+        "modelPct": 51,
+        "evPer100": null,
+        "netEvPer100": null,
+        "valueGrade": "Near fair",
+        "reason": "Expected first-set games 9.6 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 41%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 54.9,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 54.9,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:29.245Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/challenger-heilbronn?event=34240753",
+      "deskName": "Alejandro Moro Canas",
+      "deskPricePct": 57.6,
+      "deskEdgePct": -2.7,
+      "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge.",
+      "players": [
+        {
+          "name": "Alejandro Moro Canas",
+          "americanOdds": -136,
+          "impliedPct": 57.6,
+          "modelPct": 54.9,
+          "edgePct": -2.7,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 73.5,
+          "grossPayoutMultiple": 1.735,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 73.5,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Henri Squire",
+          "americanOdds": 105,
+          "impliedPct": 48.8,
+          "modelPct": 47.8,
+          "edgePct": -1,
+          "priceBand": "Coinflip",
+          "grossProfitPct": 105,
+          "grossPayoutMultiple": 2.05,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 105,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/challenger-heilbronn?event=34240753"
+      }
+    ],
+    "formEdgeName": "Alejandro Moro Canas"
+  },
+  "participants": [
+    {
+      "id": "dk-atp-challenger-heilbronn-alejandro-moro-canas-vs-henri-squire-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Alejandro Moro Canas",
+      "detail": "Clay | Live rank #242 | Spain | age 25 | adj form 57",
+      "americanOdds": -136,
+      "americanLabel": "-136",
+      "decimalOdds": 1.7352941176470589,
+      "impliedProbability": 0.576271186440678,
+      "impliedProbabilityLabel": "57.6%"
+    },
+    {
+      "id": "dk-atp-challenger-heilbronn-alejandro-moro-canas-vs-henri-squire-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Henri Squire",
+      "detail": "Clay | Live rank #249 | Germany | age 25 | adj form 59",
+      "americanOdds": 105,
+      "americanLabel": "+105",
+      "decimalOdds": 2.05,
+      "impliedProbability": 0.4878048780487805,
+      "impliedProbabilityLabel": "48.8%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "dk-atp-challenger-heilbronn-alejandro-moro-canas-vs-henri-squire-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Alejandro Moro Canas",
+        "detail": "Clay | Live rank #242 | Spain | age 25 | adj form 57",
+        "americanOdds": -136,
+        "americanLabel": "-136",
+        "decimalOdds": 1.7352941176470589,
+        "impliedProbability": 0.576271186440678,
+        "impliedProbabilityLabel": "57.6%"
+      },
+      {
+        "id": "dk-atp-challenger-heilbronn-alejandro-moro-canas-vs-henri-squire-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Henri Squire",
+        "detail": "Clay | Live rank #249 | Germany | age 25 | adj form 59",
+        "americanOdds": 105,
+        "americanLabel": "+105",
+        "decimalOdds": 2.05,
+        "impliedProbability": 0.4878048780487805,
+        "impliedProbabilityLabel": "48.8%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "dk-atp-challenger-heilbronn-alejandro-moro-canas-vs-henri-squire-2026-06-05:0",
+    "participant": {
+      "id": "dk-atp-challenger-heilbronn-alejandro-moro-canas-vs-henri-squire-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Alejandro Moro Canas",
+      "detail": "Clay | Live rank #242 | Spain | age 25 | adj form 57",
+      "americanOdds": -136,
+      "americanLabel": "-136",
+      "decimalOdds": 1.7352941176470589,
+      "impliedProbability": 0.576271186440678,
+      "impliedProbabilityLabel": "57.6%"
+    },
+    "opponent": {
+      "id": "dk-atp-challenger-heilbronn-alejandro-moro-canas-vs-henri-squire-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Henri Squire",
+      "detail": "Clay | Live rank #249 | Germany | age 25 | adj form 59",
+      "americanOdds": 105,
+      "americanLabel": "+105",
+      "decimalOdds": 2.05,
+      "impliedProbability": 0.4878048780487805,
+      "impliedProbabilityLabel": "48.8%"
+    },
+    "lean": "Lean Alejandro Moro Canas; ML is close to fair; derivative or live entry needs to carry the edge.",
+    "rationale": "Our model pick: Alejandro Moro Canas. Opponent-adjusted recent form is basically even: Alejandro Moro Canas 57, Henri Squire 59. Lean, not a chase.",
+    "confidence": 54.9,
+    "volatility": 56,
+    "recommendationScore": 41,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.576271186440678,
+    "marketProbabilityLabel": "57.6%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Alejandro Moro Canas",
+      "Henri Squire"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 180,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

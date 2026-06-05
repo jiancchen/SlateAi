@@ -25,6 +25,7 @@
     "data:audit:mlb-public": "node scripts/audit-public-mlb-slate.mjs",
     "data:audit:mlb-morning-contracts": "node scripts/audit-mlb-morning-contracts.mjs",
     "data:publish:mlb-clean": "node scripts/publish-mlb-clean-slate.mjs",
+    "data:publish:mlb-clean:vercel-safe": "node scripts/publish-mlb-clean-slate.mjs --preserve-public-slates --allow-known-audit-failures",
     "data:run:mlb-morning": "node scripts/run-mlb-morning-predictions.mjs",
     "data:init": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py init-db",
     "data:ingest:mlb-day": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py ingest-mlb-day",

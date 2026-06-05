@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-05",
+  "dry_run": false,
+  "family": "mlb_team_features",
+  "generated_at": "2026-06-05T15:39:41.912150+00:00",
+  "inserted": {
+    "team_state_snapshots": 30
+  },
+  "ok": true,
+  "parsed_rows": 30,
+  "parser_module": "pipeline/sources/mlb/normalization/team_features.py",
+  "script": "data-migration/scripts/normalize_mlb_team_features.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 30,
+  "source_tables": {
+    "mlb_team_state_snapshots": 30
+  },
+  "targets": {
+    "team_state_snapshots": 30
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}

@@ -10,9 +10,9 @@ Goal:
 
 Target slate:
 
-- date: `2026-06-04`
-- team-side shadow cards: `18`
-- reliever candidates scored: `161`
+- date: `2026-06-05`
+- team-side shadow cards: `30`
+- reliever candidates scored: `287`
 - conversion window: `8`
 - dependency window: `5`
 
@@ -32,16 +32,16 @@ Target slate:
 
 | Team | Opponent | Lead | Alt | Starter hook | Top-2 share |
 | --- | --- | --- | --- | --- | --- |
-| Diamondbacks | Dodgers | Brandyn Garcia | Kevin Ginkel | 0.0% | 60.3% |
-| Pirates | Astros | Evan Sisk | Cam Sanders | 0.0% | 53.0% |
-| Astros | Pirates | Enyel De Los Santos | Steven Okert | 0.0% | 52.0% |
-| Braves | Blue Jays | Didier Fuentes | Dylan Dodd | 0.0% | 49.6% |
-| Padres | Phillies | Bradgley Rodriguez | Yuki Matsui | 0.0% | 49.0% |
-| Guardians | Yankees | Matt Festa | Codi Heuer | 0.0% | 48.8% |
-| Cubs | Athletics | Trent Thornton | Jacob Webb | 0.0% | 43.3% |
-| Yankees | Guardians | Jake Bird | Brent Headrick | 0.0% | 40.3% |
-| Dodgers | Diamondbacks | Edgardo Henriquez | Will Klein | 0.0% | 39.9% |
-| Phillies | Padres | Tim Mayza | Tanner Banks | 0.0% | 39.2% |
+| Padres | Mets | Bradgley Rodriguez | Jeremiah Estrada | 0.0% | 57.1% |
+| Braves | Pirates | Dylan Lee | Tyler Kinley | 0.0% | 53.3% |
+| Yankees | Red Sox | Jake Bird | Camilo Doval | 0.0% | 47.1% |
+| Cubs | Giants | Jacob Webb | Ethan Roberts | 0.0% | 46.8% |
+| Astros | Athletics | Alimber Santa | Bryan King | 0.0% | 46.3% |
+| Brewers | Rockies | Aaron Ashby | Abner Uribe | 0.0% | 46.3% |
+| Twins | Royals | Andrew Morris | Kody Funderburk | 0.0% | 45.0% |
+| Dodgers | Angels | Edgardo Henriquez | Blake Treinen | 0.0% | 44.0% |
+| Mariners | Tigers | Matt Brash | José A. Ferrer | 0.0% | 43.9% |
+| Phillies | White Sox | Tanner Banks | Chase Shugart | 0.0% | 42.9% |
 
 ## Top Shadow Features
 

@@ -1,0 +1,58 @@
+{
+  "batch_size": 24,
+  "date": "2026-06-05",
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "dry_run": false,
+  "mode": "ingest_hitter_career_profiles",
+  "ok": true,
+  "player_count": 3,
+  "results": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "pipeline/mlb/fetchers/fetch_mlb_hitter_career_profiles.py",
+        "--date",
+        "2026-06-05",
+        "--batch-size",
+        "24",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_fetch_hitter_career_profiles_2026-06-05.json",
+        "--player-id",
+        "663457",
+        "--player-id",
+        "682987",
+        "--player-id",
+        "694671"
+      ],
+      "date": "2026-06-05",
+      "family": "hitter_career_profile_fetch",
+      "ok": true,
+      "player_count": 3,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_fetch_hitter_career_profiles_2026-06-05.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"batch_count\": 1,\n  \"batch_size\": 24,\n  \"date\": \"2026-06-05\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"generated_at\": \"2026-06-05T15:44:01.311122+00:00\",\n  \"ok\": true,\n  \"people\": 3,\n  \"player_count\": 3,\n  \"raw_root\": \"data-private/raw/mlb-stats-api/hitter-career-profiles\",\n  \"script\": \"pipeline/mlb/fetchers/fetch_mlb_hitter_career_profiles.py\",\n  \"written_files\": [\n    {\n      \"path\": \"data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-05/profiles-1.json\",\n      \"people\": 3,\n      \"player_ids\": [\n        663457,\n        682987,\n        694671\n      ],\n      \"url\": \"https://statsapi.mlb.com/api/v1/people?personIds=663457,682987,694671&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)\"\n    }\n  ]\n}\n"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py",
+        "--date",
+        "2026-06-05",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_ingest_hitter_career_profiles_2026-06-05.json"
+      ],
+      "date": "2026-06-05",
+      "family": "player_context",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_ingest_hitter_career_profiles_2026-06-05.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-06-05\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_context_items\": 246,\n  \"generated_at\": \"2026-06-05T15:44:01.707726+00:00\",\n  \"ok\": true,\n  \"player_context\": {\n    \"career_profiles\": 246,\n    \"identity_profiles\": 246,\n    \"people\": 246,\n    \"source_files\": 12,\n    \"source_snapshot_ids\": [\n      \"mlb-8ddafed1d7050b856cdc717ac30f3991\",\n      \"mlb-08abdf1696e08b3618e4db230f69fa3b\",\n      \"mlb-0f49cf5c2ad46c3b6321fb7bd86ffbb6\",\n      \"mlb-29cbeb3462a17e51e225999f2b7e02ce\",\n      \"mlb-abc8cb03a71eb3f845fb0784e2e73cf9\",\n      \"mlb-d10dee79e9b3277688b38f6d7b564551\",\n      \"mlb-476166e272f01e67dce0eb304c94b136\",\n      \"mlb-d7bf2a97e4ea99c50879da58729a3f2d\",\n      \"mlb-362b9458ba138c8c64536d62b5bae40e\",\n      \"mlb-7f6b605c89b0bcc5c12a92a45a1792ca\",\n      \"mlb-c21395f50b6060a9510af2662ea4a094\",\n      \"mlb-d129f05c6f381fd191eba32b4d68747f\"\n    ],\n    \"unresolved\": 0\n  },\n  \"row_count_delta\": {\n    \"health_checks\": 0,\n    \"player_career_profiles\": 3,\n    \"player_identity_profiles\": 3,\n    \"player_statcast_game_logs\": 0,\n    \"players\": 1,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 1,\n    \"unresolved_entities\": 0\n  },\n  \"savant\": {\n    \"details_rows\": 0,\n    \"game_logs\": 0,\n    \"grouped_rows\": 0,\n    \"players\": 0,\n    \"source_files\": 2,\n    \"source_snapshot_ids\": [\n      \"mlb-48cd3f7fbb067b66c638793ed04ea06b\",\n      \"mlb-0c124b5a9d944840be188fc21a335ca1\"\n    ],\n    \"unresolved\": 0\n  },\n  \"script\": \"data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py\",\n  \"skip_player_context\": false,\n  \"skip_savant\": false,\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    }
+  ],
+  "skip_fetch": false,
+  "version": "1.0.0"
+}

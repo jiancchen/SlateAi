@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-05",
+  "dry_run": false,
+  "family": "mlb_bullpen_features",
+  "generated_at": "2026-06-05T15:39:41.829673+00:00",
+  "inserted": {
+    "bullpen_usage_snapshots": 296,
+    "likely_relief_chains": 60,
+    "team_bullpen_shape_snapshots": 30
+  },
+  "ok": true,
+  "parsed_rows": 386,
+  "parser_module": "pipeline/sources/mlb/normalization/bullpen_features.py",
+  "script": "data-migration/scripts/normalize_mlb_bullpen_features.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 386,
+  "source_tables": {
+    "mlb_bullpen_usage": 296,
+    "mlb_likely_relief_chains": 60,
+    "mlb_team_bullpen_shape_daily": 30
+  },
+  "targets": {
+    "bullpen_usage_snapshots": 296,
+    "likely_relief_chains": 60,
+    "team_bullpen_shape_snapshots": 30
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}

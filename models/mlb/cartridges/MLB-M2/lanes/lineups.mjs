@@ -116,7 +116,10 @@ const quoteSqlText = (value = '') => `'${String(value).replace(/'/g, "''")}'`
 
 const runSqliteJson = (sql) => {
   if (!existsSync(mlbWarehousePath)) return []
-  const raw = execFileSync('sqlite3', ['-json', mlbWarehousePath, sql], { encoding: 'utf8' }).trim()
+  const raw = execFileSync('sqlite3', ['-json', mlbWarehousePath, sql], {
+    encoding: 'utf8',
+    maxBuffer: 64 * 1024 * 1024
+  }).trim()
   return raw ? JSON.parse(raw) : []
 }
 

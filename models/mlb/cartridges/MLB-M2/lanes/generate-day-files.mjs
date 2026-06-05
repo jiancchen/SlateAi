@@ -419,7 +419,7 @@ const runSqliteJson = (sql) => {
   const output = execFileSync(
     'sqlite3',
     ['-json', mlbWarehouseDbPath, sql],
-    { encoding: 'utf8', cwd: rootDir }
+    { encoding: 'utf8', cwd: rootDir, maxBuffer: 64 * 1024 * 1024 }
   )
   return JSON.parse(output || '[]')
 }

@@ -1,0 +1,25 @@
+{
+  "batch_count": 1,
+  "batch_size": 24,
+  "date": "2026-06-05",
+  "dry_run": false,
+  "errors": [],
+  "generated_at": "2026-06-05T15:44:01.311122+00:00",
+  "ok": true,
+  "people": 3,
+  "player_count": 3,
+  "raw_root": "data-private/raw/mlb-stats-api/hitter-career-profiles",
+  "script": "pipeline/mlb/fetchers/fetch_mlb_hitter_career_profiles.py",
+  "written_files": [
+    {
+      "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-05/profiles-1.json",
+      "people": 3,
+      "player_ids": [
+        663457,
+        682987,
+        694671
+      ],
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=663457,682987,694671&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+    }
+  ]
+}

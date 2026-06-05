@@ -1,0 +1,31 @@
+{
+  "date_count": 1,
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "dry_run": false,
+  "end_date": "2026-06-05",
+  "mode": "ingest_mlb_day",
+  "ok": true,
+  "results": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+        "--date",
+        "2026-06-05",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_ingest_mlb_day_schedule_game_feed_2026-06-05.json"
+      ],
+      "date": "2026-06-05",
+      "family": "schedule_game_feed",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_ingest_mlb_day_schedule_game_feed_2026-06-05.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-06-05\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 15,\n  \"feed\": {\n    \"game_outcomes\": 0,\n    \"games\": 15,\n    \"missing_schedule_games\": 0,\n    \"phase_outcomes\": 0,\n    \"pitch_events\": 1,\n    \"pitcher_appearances\": 0,\n    \"plate_appearances\": 1,\n    \"players\": 780,\n    \"source_files\": 15,\n    \"starting_pitchers\": 29,\n    \"team_game_stats\": 0\n  },\n  \"feed_file_count\": 15,\n  \"generated_at\": \"2026-06-05T15:35:31.351880+00:00\",\n  \"ok\": true,\n  \"raw_root\": \"data-private/raw/mlb\",\n  \"row_count_delta\": {\n    \"game_outcomes\": 0,\n    \"games\": 15,\n    \"pitch_events\": 1,\n    \"plate_appearances\": 1,\n    \"players\": 0,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 16,\n    \"starting_pitchers\": 29,\n    \"teams\": 0,\n    \"venues\": 0\n  },\n  \"schedule\": {\n    \"games\": 15,\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-7e31ecdeb259955817d38f81150e29f8\",\n    \"starting_pitchers\": 29,\n    \"teams\": 30,\n    \"venues\": 15\n  },\n  \"schedule_path\": \"data-private/raw/mlb/2026-06-05/schedule.json\",\n  \"script\": \"data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    }
+  ],
+  "start_date": "2026-06-05",
+  "version": "1.0.0"
+}

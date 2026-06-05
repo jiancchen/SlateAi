@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-05",
+  "dry_run": false,
+  "family": "mlb_props",
+  "generated_at": "2026-06-05T15:36:03.247705+00:00",
+  "inserted": {
+    "prop_market_snapshots": 46
+  },
+  "ok": true,
+  "parsed_rows": 46,
+  "parser_module": "pipeline/sources/mlb/normalization/props.py",
+  "script": "data-migration/scripts/normalize_mlb_props.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 46,
+  "source_tables": {
+    "mlb_player_prop_odds_snapshots": 46
+  },
+  "targets": {
+    "prop_market_snapshots": 46
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}

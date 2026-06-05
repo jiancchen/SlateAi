@@ -1,0 +1,3100 @@
+{
+  "id": "dk-atp-challenger-birmingham-sho-shimabukuro-vs-kamil-majchrzak-2026-06-05",
+  "eventId": "34242762",
+  "league": "Tennis",
+  "start": "2:30 AM",
+  "startMinutes": 150,
+  "title": "Sho Shimabukuro vs Kamil Majchrzak",
+  "stage": "ATP Challenger - Birmingham | DraftKings board",
+  "spotlight": false,
+  "confidence": 58.2,
+  "volatility": 48,
+  "tags": [
+    "ATP Challenger",
+    "Grass",
+    "Prediction market",
+    "Warehouse joined",
+    "TennisLive recent five",
+    "Coinflip price"
+  ],
+  "matchup": [
+    {
+      "side": "Player 1",
+      "name": "Sho Shimabukuro",
+      "displayName": "Sho Shimabukuro",
+      "detail": "Grass | Live rank #103 | Japan | age 28 | adj form 43"
+    },
+    {
+      "side": "Player 2",
+      "name": "Kamil Majchrzak",
+      "displayName": "Kamil Majchrzak",
+      "detail": "Grass | Live rank #78 | Poland | age 30 | adj form 43"
+    }
+  ],
+  "summary": "Our model pick: Kamil Majchrzak. Opponent-adjusted recent form is basically even: Kamil Majchrzak 43, Sho Shimabukuro 43. Lean, not a chase.",
+  "factors": [
+    "Opponent-adjusted recent form is basically even: Kamil Majchrzak 43, Sho Shimabukuro 43. Lean, not a chase.",
+    "Model 58.2% vs DraftKings Sportsbook implied 65.4% (-7.2 pts).",
+    "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+    "Wait for a visible service-pressure split before entering.",
+    "Best O/U angle: no play without a posted total.",
+    "May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.",
+    "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+  ],
+  "lean": "Lean Kamil Majchrzak; DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+  "swing": "Risk: best-of-five set extension and tiebreak variance.",
+  "swingFactor": "Risk: best-of-five set extension and tiebreak variance.",
+  "odds": {
+    "participantOrder": [
+      0,
+      1
+    ],
+    "markets": [
+      {
+        "label": "Model fair",
+        "book": "Tennis warehouse model",
+        "value": "Sho Shimabukuro 44.6% / Kamil Majchrzak 58.2%"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "book": "DraftKings Sportsbook",
+        "value": "Sho Shimabukuro +143 / Kamil Majchrzak -189"
+      },
+      {
+        "label": "1st set total games",
+        "book": "DraftKings Sportsbook",
+        "value": "9.5 1st-set games: Over -150 / Under +105"
+      }
+    ],
+    "note": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+    "provider": "DraftKings Sportsbook"
+  },
+  "tennisContext": {
+    "surface": "Grass",
+    "court": "ATP Challenger - Birmingham",
+    "h2hLeader": "",
+    "fatigueFlag": false,
+    "liveDog": false,
+    "weaknessEdge": {
+      "edgeType": "No clear weakness edge",
+      "target": "Both sides",
+      "scoreGap": -2,
+      "attackingSide": null,
+      "vulnerableSide": null,
+      "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "liveTrigger": "Wait for a visible service-pressure split before entering.",
+      "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+      "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+      "pick": {
+        "name": "Kamil Majchrzak",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 69,
+        "secondServeWonPct": 42,
+        "firstServePct": 67,
+        "avgAces": 6.2,
+        "avgDoubleFaults": 1.5,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 32,
+        "servicePointsWonPct": 60,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 4,
+        "weaknessScore": 3,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "second-serve points won are attackable (42%)",
+          "limited return pressure (32% return points won)"
+        ],
+        "strengths": [],
+        "gameFlowRead": "Kamil Majchrzak can drop points quickly through second-serve points won are attackable (42%) and limited return pressure (32% return points won)."
+      },
+      "opponent": {
+        "name": "Sho Shimabukuro",
+        "serviceHoldPct": null,
+        "firstServeWonPct": 71,
+        "secondServeWonPct": 47,
+        "firstServePct": 57,
+        "avgAces": 4,
+        "avgDoubleFaults": 2.6,
+        "avgWinners": null,
+        "avgUnforcedErrors": null,
+        "avgBreakPointsFaced": null,
+        "returnPointsWonPct": 35,
+        "servicePointsWonPct": 61,
+        "weakServeMatches": 0,
+        "pressureMatches": null,
+        "matchesWithStats": 5,
+        "weaknessScore": 1,
+        "firstGameComfort": "Comfortable enough if first serve lands",
+        "liabilities": [
+          "limited return pressure (35% return points won)"
+        ],
+        "strengths": [
+          "wins enough first-serve points (71%)"
+        ],
+        "gameFlowRead": "Sho Shimabukuro can drop points quickly through limited return pressure (35% return points won)."
+      }
+    },
+    "warehouseContext": null,
+    "players": [
+      {
+        "name": "Sho Shimabukuro",
+        "rank": 103,
+        "label": "Sho Shimabukuro",
+        "form": null,
+        "boardPct": 44.6,
+        "decimalOdds": 2.43,
+        "marketLabel": "+143 / 41.2% implied",
+        "clayLine": "Grass | Live rank #103 | Japan | age 28 | adj form 43",
+        "weakness": {
+          "name": "Sho Shimabukuro",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 71,
+          "secondServeWonPct": 47,
+          "firstServePct": 57,
+          "avgAces": 4,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 35,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "limited return pressure (35% return points won)"
+          ],
+          "strengths": [
+            "wins enough first-serve points (71%)"
+          ],
+          "gameFlowRead": "Sho Shimabukuro can drop points quickly through limited return pressure (35% return points won)."
+        },
+        "warehouseStats": {
+          "name": "Sho Shimabukuro",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Sho Shimabukuro",
+            "country": "Japan",
+            "birthdate": "1997-07-30",
+            "age": 28,
+            "rank": 103,
+            "rankingLabel": "ATP ranking",
+            "topRank": 103,
+            "topRankDate": "2026-05-25",
+            "topRankPoints": 596,
+            "points": 596,
+            "prizeMoney": "765.875 $",
+            "matchesTotal": 482,
+            "wins": 296,
+            "losses": 186,
+            "winPct": 61.41,
+            "sourceUrl": "https://www.tennislive.net/atp/sho-shimabukuro/",
+            "capturedAt": "2026-06-04T23:41:37.181500+00:00"
+          },
+          "ranking": {
+            "rank": 103,
+            "points": 596,
+            "country": "Japan",
+            "age": 28,
+            "tour": "ATP ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/atp/sho-shimabukuro/",
+            "asOf": "2026-06-04T23:41:37.181500+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/keegan-smith-VS-sho-shimabukuro/jiujiang-challenger-2026/",
+            "capturedAt": "2026-06-04T23:41:42.137124+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 25,
+                "value": 5,
+                "label": "29.04.2026 (win vs Yuta Shimizu)",
+                "date": "2026-04-29",
+                "result": "win",
+                "opponentName": "Yuta Shimizu"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 26,
+                "value": 4,
+                "label": "30.04.2026 (lost vs Keegan Smith)",
+                "date": "2026-04-30",
+                "result": "lost",
+                "opponentName": "Keegan Smith"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 27,
+                "value": 3,
+                "label": "12.05.2026 (lost vs Quentin Halys)",
+                "date": "2026-05-12",
+                "result": "lost",
+                "opponentName": "Quentin Halys"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 28,
+                "value": 2,
+                "label": "18.05.2026 (lost vs Stefanos Sakellaridis)",
+                "date": "2026-05-18",
+                "result": "lost",
+                "opponentName": "Stefanos Sakellaridis"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 29,
+                "value": 3,
+                "label": "03.06.2026 (win vs Shintaro Mochizuki)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Shintaro Mochizuki"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 30,
+                "value": 4,
+                "label": "04.06.2026 (win vs Elias Ymer)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Elias Ymer"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 1,
+                "value": 1,
+                "label": "30.01.2026 (win vs Rinky Hijikata)",
+                "date": "2026-01-30",
+                "result": "win",
+                "opponentName": "Rinky Hijikata"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 2,
+                "value": 0,
+                "label": "31.01.2026 (lost vs Zachary Svajda)",
+                "date": "2026-01-31",
+                "result": "lost",
+                "opponentName": "Zachary Svajda"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 3,
+                "value": -1,
+                "label": "03.02.2026 (lost vs Dan Martin)",
+                "date": "2026-02-03",
+                "result": "lost",
+                "opponentName": "Dan Martin"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 4,
+                "value": 0,
+                "label": "07.02.2026 (win vs Thai Kwiatkowski)",
+                "date": "2026-02-07",
+                "result": "win",
+                "opponentName": "Thai Kwiatkowski"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 5,
+                "value": 1,
+                "label": "08.02.2026 (win vs Bernard Tomic)",
+                "date": "2026-02-08",
+                "result": "win",
+                "opponentName": "Bernard Tomic"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 6,
+                "value": 0,
+                "label": "10.02.2026 (lost vs Miomir Kecmanovic)",
+                "date": "2026-02-10",
+                "result": "lost",
+                "opponentName": "Miomir Kecmanovic"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 7,
+                "value": 1,
+                "label": "14.02.2026 (win vs Benjamin Willwerth)",
+                "date": "2026-02-14",
+                "result": "win",
+                "opponentName": "Benjamin Willwerth"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 8,
+                "value": 2,
+                "label": "15.02.2026 (win vs Adam Walton)",
+                "date": "2026-02-15",
+                "result": "win",
+                "opponentName": "Adam Walton"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 9,
+                "value": 1,
+                "label": "16.02.2026 (lost vs Marcos Giron)",
+                "date": "2026-02-16",
+                "result": "lost",
+                "opponentName": "Marcos Giron"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 10,
+                "value": 2,
+                "label": "21.02.2026 (win vs Rafael De Alba)",
+                "date": "2026-02-21",
+                "result": "win",
+                "opponentName": "Rafael De Alba"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 11,
+                "value": 3,
+                "label": "22.02.2026 (win vs Zachary Svajda)",
+                "date": "2026-02-22",
+                "result": "win",
+                "opponentName": "Zachary Svajda"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 12,
+                "value": 4,
+                "label": "24.02.2026 (win vs Adrian Mannarino)",
+                "date": "2026-02-24",
+                "result": "win",
+                "opponentName": "Adrian Mannarino"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 13,
+                "value": 3,
+                "label": "25.02.2026 (lost vs Yibing Wu)",
+                "date": "2026-02-25",
+                "result": "lost",
+                "opponentName": "Yibing Wu"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 14,
+                "value": 4,
+                "label": "02.03.2026 (win vs Colton Smith)",
+                "date": "2026-03-02",
+                "result": "win",
+                "opponentName": "Colton Smith"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 15,
+                "value": 5,
+                "label": "03.03.2026 (win vs Martin Landaluce)",
+                "date": "2026-03-03",
+                "result": "win",
+                "opponentName": "Martin Landaluce"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 16,
+                "value": 4,
+                "label": "05.03.2026 (lost vs Alexander Shevchenko)",
+                "date": "2026-03-05",
+                "result": "lost",
+                "opponentName": "Alexander Shevchenko"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 17,
+                "value": 5,
+                "label": "16.03.2026 (win vs Alex Bolt)",
+                "date": "2026-03-16",
+                "result": "win",
+                "opponentName": "Alex Bolt"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 18,
+                "value": 4,
+                "label": "17.03.2026 (lost vs Nikoloz Basilashvili)",
+                "date": "2026-03-17",
+                "result": "lost",
+                "opponentName": "Nikoloz Basilashvili"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 19,
+                "value": 3,
+                "label": "24.03.2026 (lost vs Naoya Honda)",
+                "date": "2026-03-24",
+                "result": "lost",
+                "opponentName": "Naoya Honda"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 20,
+                "value": 4,
+                "label": "14.04.2026 (win vs Ilia Simakin)",
+                "date": "2026-04-14",
+                "result": "win",
+                "opponentName": "Ilia Simakin"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 21,
+                "value": 5,
+                "label": "16.04.2026 (win vs Beibit Zhukayev)",
+                "date": "2026-04-16",
+                "result": "win",
+                "opponentName": "Beibit Zhukayev"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 22,
+                "value": 4,
+                "label": "17.04.2026 (lost vs Leandro Riedi)",
+                "date": "2026-04-17",
+                "result": "lost",
+                "opponentName": "Leandro Riedi"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 23,
+                "value": 5,
+                "label": "21.04.2026 (win vs Uisung Park)",
+                "date": "2026-04-21",
+                "result": "win",
+                "opponentName": "Uisung Park"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 24,
+                "value": 4,
+                "label": "23.04.2026 (lost vs Yuta Shimizu)",
+                "date": "2026-04-23",
+                "result": "lost",
+                "opponentName": "Yuta Shimizu"
+              },
+              {
+                "index": 30,
+                "sequenceIndex": 25,
+                "value": 5,
+                "label": "29.04.2026 (win vs Yuta Shimizu)",
+                "date": "2026-04-29",
+                "result": "win",
+                "opponentName": "Yuta Shimizu"
+              },
+              {
+                "index": 31,
+                "sequenceIndex": 26,
+                "value": 4,
+                "label": "30.04.2026 (lost vs Keegan Smith)",
+                "date": "2026-04-30",
+                "result": "lost",
+                "opponentName": "Keegan Smith"
+              },
+              {
+                "index": 32,
+                "sequenceIndex": 27,
+                "value": 3,
+                "label": "12.05.2026 (lost vs Quentin Halys)",
+                "date": "2026-05-12",
+                "result": "lost",
+                "opponentName": "Quentin Halys"
+              },
+              {
+                "index": 33,
+                "sequenceIndex": 28,
+                "value": 2,
+                "label": "18.05.2026 (lost vs Stefanos Sakellaridis)",
+                "date": "2026-05-18",
+                "result": "lost",
+                "opponentName": "Stefanos Sakellaridis"
+              },
+              {
+                "index": 34,
+                "sequenceIndex": 29,
+                "value": 3,
+                "label": "03.06.2026 (win vs Shintaro Mochizuki)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "Shintaro Mochizuki"
+              },
+              {
+                "index": 35,
+                "sequenceIndex": 30,
+                "value": 4,
+                "label": "04.06.2026 (win vs Elias Ymer)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Elias Ymer"
+              }
+            ],
+            "latestValue": 4,
+            "minValue": -1,
+            "maxValue": 5
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 5,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 4,
+              "avgAces": 4,
+              "doubleFaults": 2.6,
+              "avgDoubleFaults": 2.6,
+              "firstServePct": 57.4,
+              "firstServeWonPct": 71,
+              "secondServeWonPct": 47.4,
+              "returnPointsWonPct": 35,
+              "breakPointsConvertedPct": 36.8,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 14,
+              "breakPointsToConvert": 38,
+              "breakPointChancesPerMatch": 7.6
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 14,
+                "bpChances": 38,
+                "bpConvertedPct": 36.8,
+                "bpChancesPerMatch": 7.6
+              },
+              "last5": {
+                "matches": 5,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 14,
+                "bpChances": 38,
+                "bpConvertedPct": 36.8,
+                "bpChancesPerMatch": 7.6
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Sho Shimabukuro",
+            "matches": [
+              {
+                "opponentName": "Elias Ymer",
+                "event": "Birmingham Challenger",
+                "matchDateLabel": "2026-06-04",
+                "isoDate": "2026-06-04",
+                "surface": "Grass",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "6-3, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/sho-shimabukuro-VS-elias-ymer/birmingham-challenger-2026/",
+                "matchId": "tl-2026-06-04-birmingham-challenger-2026-sho-shimabukuro-vs-elias-ymer",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "27/49 (55%)",
+                      "made": 27,
+                      "attempts": 49,
+                      "pct": 55
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "22/27 (81%)",
+                      "made": 22,
+                      "attempts": 27,
+                      "pct": 81
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "12/22 (55%)",
+                      "made": 12,
+                      "attempts": 22,
+                      "pct": 55
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/11 (36%)",
+                      "made": 4,
+                      "attempts": 11,
+                      "pct": 36
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "57/102 (56%)",
+                      "made": 57,
+                      "attempts": 102,
+                      "pct": 56
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "23/53 (43%)",
+                      "made": 23,
+                      "attempts": 53,
+                      "pct": 43
+                    }
+                  ],
+                  "firstServePct": 55,
+                  "firstServeIn": "27/49 (55%)",
+                  "firstServeWonPct": 81,
+                  "firstServePointsWon": "22/27 (81%)",
+                  "secondServeWonPct": 55,
+                  "secondServePointsWon": "12/22 (55%)",
+                  "aces": 7,
+                  "breakPointsConverted": "4/11 (36%)",
+                  "breakPointsConvertedPct": 36,
+                  "doubleFaults": 3,
+                  "totalPointsWonPct": 56,
+                  "totalPointsWon": "57/102 (56%)",
+                  "returnPointsWonPct": 43,
+                  "returnPointsWon": "23/53 (43%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "27/49 (55%)",
+                      "made": 27,
+                      "attempts": 49,
+                      "pct": 55
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "22/27 (81%)",
+                      "made": 22,
+                      "attempts": 27,
+                      "pct": 81
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "12/22 (55%)",
+                      "made": 12,
+                      "attempts": 22,
+                      "pct": 55
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "7",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/11 (36%)",
+                      "made": 4,
+                      "attempts": 11,
+                      "pct": 36
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "57/102 (56%)",
+                      "made": 57,
+                      "attempts": 102,
+                      "pct": 56
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "23/53 (43%)",
+                      "made": 23,
+                      "attempts": 53,
+                      "pct": 43
+                    }
+                  ],
+                  "firstServePct": 55,
+                  "firstServeIn": "27/49 (55%)",
+                  "firstServeWonPct": 81,
+                  "firstServePointsWon": "22/27 (81%)",
+                  "secondServeWonPct": 55,
+                  "secondServePointsWon": "12/22 (55%)",
+                  "aces": 7,
+                  "breakPointsConverted": "4/11 (36%)",
+                  "breakPointsConvertedPct": 36,
+                  "doubleFaults": 3,
+                  "totalPointsWonPct": 56,
+                  "totalPointsWon": "57/102 (56%)",
+                  "returnPointsWonPct": 43,
+                  "returnPointsWon": "23/53 (43%)"
+                }
+              },
+              {
+                "opponentName": "Shintaro Mochizuki",
+                "event": "Birmingham Challenger",
+                "matchDateLabel": "2026-06-03",
+                "isoDate": "2026-06-03",
+                "surface": "Grass",
+                "round": "1 st round",
+                "result": "win",
+                "score": "7-6 3 , 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/sho-shimabukuro-VS-shintaro-mochizuki/birmingham-challenger-2026/",
+                "matchId": "tl-2026-06-02-birmingham-challenger-2026-sho-shimabukuro-vs-shintaro-mochizuki",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "41/79 (52%)",
+                      "made": 41,
+                      "attempts": 79,
+                      "pct": 52
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "32/41 (78%)",
+                      "made": 32,
+                      "attempts": 41,
+                      "pct": 78
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "20/38 (53%)",
+                      "made": 20,
+                      "attempts": 38,
+                      "pct": 53
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/7 (43%)",
+                      "made": 3,
+                      "attempts": 7,
+                      "pct": 43
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "84/154 (55%)",
+                      "made": 84,
+                      "attempts": 154,
+                      "pct": 55
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "32/75 (43%)",
+                      "made": 32,
+                      "attempts": 75,
+                      "pct": 43
+                    }
+                  ],
+                  "firstServePct": 52,
+                  "firstServeIn": "41/79 (52%)",
+                  "firstServeWonPct": 78,
+                  "firstServePointsWon": "32/41 (78%)",
+                  "secondServeWonPct": 53,
+                  "secondServePointsWon": "20/38 (53%)",
+                  "aces": 6,
+                  "breakPointsConverted": "3/7 (43%)",
+                  "breakPointsConvertedPct": 43,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 55,
+                  "totalPointsWon": "84/154 (55%)",
+                  "returnPointsWonPct": 43,
+                  "returnPointsWon": "32/75 (43%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "41/79 (52%)",
+                      "made": 41,
+                      "attempts": 79,
+                      "pct": 52
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "32/41 (78%)",
+                      "made": 32,
+                      "attempts": 41,
+                      "pct": 78
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "20/38 (53%)",
+                      "made": 20,
+                      "attempts": 38,
+                      "pct": 53
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/7 (43%)",
+                      "made": 3,
+                      "attempts": 7,
+                      "pct": 43
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "84/154 (55%)",
+                      "made": 84,
+                      "attempts": 154,
+                      "pct": 55
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "32/75 (43%)",
+                      "made": 32,
+                      "attempts": 75,
+                      "pct": 43
+                    }
+                  ],
+                  "firstServePct": 52,
+                  "firstServeIn": "41/79 (52%)",
+                  "firstServeWonPct": 78,
+                  "firstServePointsWon": "32/41 (78%)",
+                  "secondServeWonPct": 53,
+                  "secondServePointsWon": "20/38 (53%)",
+                  "aces": 6,
+                  "breakPointsConverted": "3/7 (43%)",
+                  "breakPointsConvertedPct": 43,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 55,
+                  "totalPointsWon": "84/154 (55%)",
+                  "returnPointsWonPct": 43,
+                  "returnPointsWon": "32/75 (43%)"
+                }
+              },
+              {
+                "opponentName": "Stefanos Sakellaridis",
+                "event": "Paris",
+                "matchDateLabel": "2026-05-18",
+                "isoDate": "2026-05-18",
+                "surface": "Clay",
+                "round": "q 1",
+                "result": "lost",
+                "score": "2-6, 6-4, 7-5",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/stefanos-sakellaridis-VS-sho-shimabukuro/french-open-paris-2026/",
+                "matchId": "tl-2026-05-18-french-open-paris-2026-stefanos-sakellaridis-vs-sho-shimabukuro",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "50/89 (56%)",
+                      "made": 50,
+                      "attempts": 89,
+                      "pct": 56
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "33/50 (66%)",
+                      "made": 33,
+                      "attempts": 50,
+                      "pct": 66
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "18/39 (46%)",
+                      "made": 18,
+                      "attempts": 39,
+                      "pct": 46
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/15 (33%)",
+                      "made": 5,
+                      "attempts": 15,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "101/204 (50%)",
+                      "made": 101,
+                      "attempts": 204,
+                      "pct": 50
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "50/115 (43%)",
+                      "made": 50,
+                      "attempts": 115,
+                      "pct": 43
+                    }
+                  ],
+                  "firstServePct": 56,
+                  "firstServeIn": "50/89 (56%)",
+                  "firstServeWonPct": 66,
+                  "firstServePointsWon": "33/50 (66%)",
+                  "secondServeWonPct": 46,
+                  "secondServePointsWon": "18/39 (46%)",
+                  "aces": 3,
+                  "breakPointsConverted": "5/15 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 4,
+                  "totalPointsWonPct": 50,
+                  "totalPointsWon": "101/204 (50%)",
+                  "returnPointsWonPct": 43,
+                  "returnPointsWon": "50/115 (43%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "50/89 (56%)",
+                      "made": 50,
+                      "attempts": 89,
+                      "pct": 56
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "33/50 (66%)",
+                      "made": 33,
+                      "attempts": 50,
+                      "pct": 66
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "18/39 (46%)",
+                      "made": 18,
+                      "attempts": 39,
+                      "pct": 46
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "3",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "5/15 (33%)",
+                      "made": 5,
+                      "attempts": 15,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "101/204 (50%)",
+                      "made": 101,
+                      "attempts": 204,
+                      "pct": 50
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "50/115 (43%)",
+                      "made": 50,
+                      "attempts": 115,
+                      "pct": 43
+                    }
+                  ],
+                  "firstServePct": 56,
+                  "firstServeIn": "50/89 (56%)",
+                  "firstServeWonPct": 66,
+                  "firstServePointsWon": "33/50 (66%)",
+                  "secondServeWonPct": 46,
+                  "secondServePointsWon": "18/39 (46%)",
+                  "aces": 3,
+                  "breakPointsConverted": "5/15 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 4,
+                  "totalPointsWonPct": 50,
+                  "totalPointsWon": "101/204 (50%)",
+                  "returnPointsWonPct": 43,
+                  "returnPointsWon": "50/115 (43%)"
+                }
+              },
+              {
+                "opponentName": "Quentin Halys",
+                "event": "Bordeaux Challenger",
+                "matchDateLabel": "2026-05-12",
+                "isoDate": "2026-05-12",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "lost",
+                "score": "6-4, 6-2",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/quentin-halys-VS-sho-shimabukuro/bordeaux-challenger-2026/",
+                "matchId": "tl-2026-05-12-bordeaux-challenger-2026-quentin-halys-vs-sho-shimabukuro",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "29/50 (58%)",
+                      "made": 29,
+                      "attempts": 50,
+                      "pct": 58
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "18/29 (62%)",
+                      "made": 18,
+                      "attempts": 29,
+                      "pct": 62
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/21 (48%)",
+                      "made": 10,
+                      "attempts": 21,
+                      "pct": 48
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/3 (33%)",
+                      "made": 1,
+                      "attempts": 3,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "38/96 (40%)",
+                      "made": 38,
+                      "attempts": 96,
+                      "pct": 40
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "10/46 (22%)",
+                      "made": 10,
+                      "attempts": 46,
+                      "pct": 22
+                    }
+                  ],
+                  "firstServePct": 58,
+                  "firstServeIn": "29/50 (58%)",
+                  "firstServeWonPct": 62,
+                  "firstServePointsWon": "18/29 (62%)",
+                  "secondServeWonPct": 48,
+                  "secondServePointsWon": "10/21 (48%)",
+                  "aces": 0,
+                  "breakPointsConverted": "1/3 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 40,
+                  "totalPointsWon": "38/96 (40%)",
+                  "returnPointsWonPct": 22,
+                  "returnPointsWon": "10/46 (22%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "29/50 (58%)",
+                      "made": 29,
+                      "attempts": 50,
+                      "pct": 58
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "18/29 (62%)",
+                      "made": 18,
+                      "attempts": 29,
+                      "pct": 62
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/21 (48%)",
+                      "made": 10,
+                      "attempts": 21,
+                      "pct": 48
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/3 (33%)",
+                      "made": 1,
+                      "attempts": 3,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "38/96 (40%)",
+                      "made": 38,
+                      "attempts": 96,
+                      "pct": 40
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "10/46 (22%)",
+                      "made": 10,
+                      "attempts": 46,
+                      "pct": 22
+                    }
+                  ],
+                  "firstServePct": 58,
+                  "firstServeIn": "29/50 (58%)",
+                  "firstServeWonPct": 62,
+                  "firstServePointsWon": "18/29 (62%)",
+                  "secondServeWonPct": 48,
+                  "secondServePointsWon": "10/21 (48%)",
+                  "aces": 0,
+                  "breakPointsConverted": "1/3 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 40,
+                  "totalPointsWon": "38/96 (40%)",
+                  "returnPointsWonPct": 22,
+                  "returnPointsWon": "10/46 (22%)"
+                }
+              },
+              {
+                "opponentName": "Keegan Smith",
+                "event": "Jiujiang Challenger",
+                "matchDateLabel": "2026-04-30",
+                "isoDate": "2026-04-30",
+                "surface": "Hard",
+                "round": "2 nd round",
+                "result": "lost",
+                "score": "5-7, 6-0, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/keegan-smith-VS-sho-shimabukuro/jiujiang-challenger-2026/",
+                "matchId": "tl-2026-04-30-jiujiang-challenger-2026-keegan-smith-vs-sho-shimabukuro",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "59/90 (66%)",
+                      "made": 59,
+                      "attempts": 90,
+                      "pct": 66
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "40/59 (68%)",
+                      "made": 40,
+                      "attempts": 59,
+                      "pct": 68
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "11/31 (35%)",
+                      "made": 11,
+                      "attempts": 31,
+                      "pct": 35
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/2 (50%)",
+                      "made": 1,
+                      "attempts": 2,
+                      "pct": 50
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "68/162 (42%)",
+                      "made": 68,
+                      "attempts": 162,
+                      "pct": 42
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "17/72 (24%)",
+                      "made": 17,
+                      "attempts": 72,
+                      "pct": 24
+                    }
+                  ],
+                  "firstServePct": 66,
+                  "firstServeIn": "59/90 (66%)",
+                  "firstServeWonPct": 68,
+                  "firstServePointsWon": "40/59 (68%)",
+                  "secondServeWonPct": 35,
+                  "secondServePointsWon": "11/31 (35%)",
+                  "aces": 4,
+                  "breakPointsConverted": "1/2 (50%)",
+                  "breakPointsConvertedPct": 50,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 42,
+                  "totalPointsWon": "68/162 (42%)",
+                  "returnPointsWonPct": 24,
+                  "returnPointsWon": "17/72 (24%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "59/90 (66%)",
+                      "made": 59,
+                      "attempts": 90,
+                      "pct": 66
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "40/59 (68%)",
+                      "made": 40,
+                      "attempts": 59,
+                      "pct": 68
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "11/31 (35%)",
+                      "made": 11,
+                      "attempts": 31,
+                      "pct": 35
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "4",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "1/2 (50%)",
+                      "made": 1,
+                      "attempts": 2,
+                      "pct": 50
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "68/162 (42%)",
+                      "made": 68,
+                      "attempts": 162,
+                      "pct": 42
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "17/72 (24%)",
+                      "made": 17,
+                      "attempts": 72,
+                      "pct": 24
+                    }
+                  ],
+                  "firstServePct": 66,
+                  "firstServeIn": "59/90 (66%)",
+                  "firstServeWonPct": 68,
+                  "firstServePointsWon": "40/59 (68%)",
+                  "secondServeWonPct": 35,
+                  "secondServePointsWon": "11/31 (35%)",
+                  "aces": 4,
+                  "breakPointsConverted": "1/2 (50%)",
+                  "breakPointsConvertedPct": 50,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 42,
+                  "totalPointsWon": "68/162 (42%)",
+                  "returnPointsWonPct": 24,
+                  "returnPointsWon": "17/72 (24%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 42.6,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.4,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.487,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 42.6,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/atp/sho-shimabukuro/"
+          }
+        },
+        "record2026": "",
+        "notes": "Opponent case: model 41.8%",
+        "matchupNote": "Upset path: needs early scoreboard pressure or a market price that pays for volatility."
+      },
+      {
+        "name": "Kamil Majchrzak",
+        "rank": 78,
+        "label": "Kamil Majchrzak",
+        "form": null,
+        "boardPct": 58.2,
+        "decimalOdds": 1.529,
+        "marketLabel": "-189 / 65.4% implied",
+        "clayLine": "Grass | Live rank #78 | Poland | age 30 | adj form 43",
+        "weakness": {
+          "name": "Kamil Majchrzak",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 42,
+          "firstServePct": 67,
+          "avgAces": 6.2,
+          "avgDoubleFaults": 1.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 32,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "second-serve points won are attackable (42%)",
+            "limited return pressure (32% return points won)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Kamil Majchrzak can drop points quickly through second-serve points won are attackable (42%) and limited return pressure (32% return points won)."
+        },
+        "warehouseStats": {
+          "name": "Kamil Majchrzak",
+          "profile": {
+            "source": "tennislive_player_profiles",
+            "name": "Kamil Majchrzak",
+            "country": "Poland",
+            "birthdate": "1996-01-13",
+            "age": 30,
+            "rank": 78,
+            "rankingLabel": "ATP ranking",
+            "topRank": 53,
+            "topRankDate": "2026-03-30",
+            "topRankPoints": 955,
+            "points": 747,
+            "prizeMoney": "3.155.929 $",
+            "matchesTotal": 721,
+            "wins": 458,
+            "losses": 263,
+            "winPct": 63.52,
+            "sourceUrl": "https://www.tennislive.net/atp/kamil-majchrzak/",
+            "capturedAt": "2026-06-04T23:39:30.969118+00:00"
+          },
+          "ranking": {
+            "rank": 78,
+            "points": 747,
+            "country": "Poland",
+            "age": 30,
+            "tour": "ATP ranking",
+            "source": "tennislive_player_profiles",
+            "sourceUrl": "https://www.tennislive.net/atp/kamil-majchrzak/",
+            "asOf": "2026-06-04T23:39:30.969118+00:00"
+          },
+          "formChart": {
+            "source": "tennislive_form_chart_points",
+            "sourceUrl": "https://www.tennislive.net/atp/match/marco-trungelliti-VS-kamil-majchrzak/grand-prix-hassan-ii-marrakech-2026/",
+            "capturedAt": "2026-06-04T23:39:36.124699+00:00",
+            "points": [
+              {
+                "index": 0,
+                "sequenceIndex": 25,
+                "value": -1,
+                "label": "31.03.2026 (win vs Juan Manuel Cerundolo)",
+                "date": "2026-03-31",
+                "result": "win",
+                "opponentName": "Juan Manuel Cerundolo"
+              },
+              {
+                "index": 1,
+                "sequenceIndex": 26,
+                "value": -2,
+                "label": "01.04.2026 (lost vs Marco Trungelliti)",
+                "date": "2026-04-01",
+                "result": "lost",
+                "opponentName": "Marco Trungelliti"
+              },
+              {
+                "index": 2,
+                "sequenceIndex": 27,
+                "value": -3,
+                "label": "18.05.2026 (lost vs Camilo Ugo Carabelli)",
+                "date": "2026-05-18",
+                "result": "lost",
+                "opponentName": "Camilo Ugo Carabelli"
+              },
+              {
+                "index": 3,
+                "sequenceIndex": 28,
+                "value": -4,
+                "label": "26.05.2026 (lost vs Alejandro Tabilo)",
+                "date": "2026-05-26",
+                "result": "lost",
+                "opponentName": "Alejandro Tabilo"
+              },
+              {
+                "index": 4,
+                "sequenceIndex": 29,
+                "value": -3,
+                "label": "03.06.2026 (win vs James McCabe)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "James McCabe"
+              },
+              {
+                "index": 5,
+                "sequenceIndex": 30,
+                "value": -2,
+                "label": "04.06.2026 (win vs Felix Gill)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Felix Gill"
+              },
+              {
+                "index": 6,
+                "sequenceIndex": 1,
+                "value": 1,
+                "label": "04.10.2025 (win vs Brandon Nakashima)",
+                "date": "2025-10-04",
+                "result": "win",
+                "opponentName": "Brandon Nakashima"
+              },
+              {
+                "index": 7,
+                "sequenceIndex": 2,
+                "value": 0,
+                "label": "06.10.2025 (lost vs Alex De Minaur)",
+                "date": "2025-10-06",
+                "result": "lost",
+                "opponentName": "Alex De Minaur"
+              },
+              {
+                "index": 8,
+                "sequenceIndex": 3,
+                "value": 1,
+                "label": "14.10.2025 (win vs Filip Misolic)",
+                "date": "2025-10-14",
+                "result": "win",
+                "opponentName": "Filip Misolic"
+              },
+              {
+                "index": 9,
+                "sequenceIndex": 4,
+                "value": 0,
+                "label": "15.10.2025 (lost vs Sebastian Korda)",
+                "date": "2025-10-15",
+                "result": "lost",
+                "opponentName": "Sebastian Korda"
+              },
+              {
+                "index": 10,
+                "sequenceIndex": 5,
+                "value": 1,
+                "label": "18.10.2025 (win vs Pedro Martinez Portero)",
+                "date": "2025-10-18",
+                "result": "win",
+                "opponentName": "Pedro Martinez Portero"
+              },
+              {
+                "index": 11,
+                "sequenceIndex": 6,
+                "value": 2,
+                "label": "19.10.2025 (win vs Valentin Royer)",
+                "date": "2025-10-19",
+                "result": "win",
+                "opponentName": "Valentin Royer"
+              },
+              {
+                "index": 12,
+                "sequenceIndex": 7,
+                "value": 1,
+                "label": "21.10.2025 (lost vs Ben Shelton)",
+                "date": "2025-10-21",
+                "result": "lost",
+                "opponentName": "Ben Shelton"
+              },
+              {
+                "index": 13,
+                "sequenceIndex": 8,
+                "value": 0,
+                "label": "25.10.2025 (lost vs Jesper De Jong)",
+                "date": "2025-10-25",
+                "result": "lost",
+                "opponentName": "Jesper De Jong"
+              },
+              {
+                "index": 14,
+                "sequenceIndex": 9,
+                "value": -1,
+                "label": "03.11.2025 (lost vs Miomir Kecmanovic)",
+                "date": "2025-11-03",
+                "result": "lost",
+                "opponentName": "Miomir Kecmanovic"
+              },
+              {
+                "index": 15,
+                "sequenceIndex": 10,
+                "value": 0,
+                "label": "03.01.2026 (win vs Cruz Hewitt)",
+                "date": "2026-01-03",
+                "result": "win",
+                "opponentName": "Cruz Hewitt"
+              },
+              {
+                "index": 16,
+                "sequenceIndex": 11,
+                "value": -1,
+                "label": "04.01.2026 (lost vs Quentin Halys)",
+                "date": "2026-01-04",
+                "result": "lost",
+                "opponentName": "Quentin Halys"
+              },
+              {
+                "index": 17,
+                "sequenceIndex": 12,
+                "value": 0,
+                "label": "05.01.2026 (win vs Daniel Altmaier)",
+                "date": "2026-01-05",
+                "result": "win",
+                "opponentName": "Daniel Altmaier"
+              },
+              {
+                "index": 18,
+                "sequenceIndex": 13,
+                "value": 1,
+                "label": "07.01.2026 (win vs Reilly Opelka)",
+                "date": "2026-01-07",
+                "result": "win",
+                "opponentName": "Reilly Opelka"
+              },
+              {
+                "index": 19,
+                "sequenceIndex": 14,
+                "value": 0,
+                "label": "09.01.2026 (lost vs Daniil Medvedev)",
+                "date": "2026-01-09",
+                "result": "lost",
+                "opponentName": "Daniil Medvedev"
+              },
+              {
+                "index": 20,
+                "sequenceIndex": 15,
+                "value": 1,
+                "label": "19.01.2026 (win vs Jacob Fearnley)",
+                "date": "2026-01-19",
+                "result": "win",
+                "opponentName": "Jacob Fearnley"
+              },
+              {
+                "index": 21,
+                "sequenceIndex": 16,
+                "value": 0,
+                "label": "21.01.2026 (lost vs Fabian Marozsan)",
+                "date": "2026-01-21",
+                "result": "lost",
+                "opponentName": "Fabian Marozsan"
+              },
+              {
+                "index": 22,
+                "sequenceIndex": 17,
+                "value": -1,
+                "label": "16.02.2026 (lost vs Arthur Fils)",
+                "date": "2026-02-16",
+                "result": "lost",
+                "opponentName": "Arthur Fils"
+              },
+              {
+                "index": 23,
+                "sequenceIndex": 18,
+                "value": -2,
+                "label": "24.02.2026 (lost vs Alexei Popyrin)",
+                "date": "2026-02-24",
+                "result": "lost",
+                "opponentName": "Alexei Popyrin"
+              },
+              {
+                "index": 24,
+                "sequenceIndex": 19,
+                "value": -1,
+                "label": "05.03.2026 (win vs Giovanni Mpetshi Perricard)",
+                "date": "2026-03-05",
+                "result": "win",
+                "opponentName": "Giovanni Mpetshi Perricard"
+              },
+              {
+                "index": 25,
+                "sequenceIndex": 20,
+                "value": -2,
+                "label": "07.03.2026 (lost vs Novak Djokovic)",
+                "date": "2026-03-07",
+                "result": "lost",
+                "opponentName": "Novak Djokovic"
+              },
+              {
+                "index": 26,
+                "sequenceIndex": 21,
+                "value": -3,
+                "label": "11.03.2026 (lost vs Nikoloz Basilashvili)",
+                "date": "2026-03-11",
+                "result": "lost",
+                "opponentName": "Nikoloz Basilashvili"
+              },
+              {
+                "index": 27,
+                "sequenceIndex": 22,
+                "value": -2,
+                "label": "19.03.2026 (win vs Miomir Kecmanovic)",
+                "date": "2026-03-19",
+                "result": "win",
+                "opponentName": "Miomir Kecmanovic"
+              },
+              {
+                "index": 28,
+                "sequenceIndex": 23,
+                "value": -1,
+                "label": "21.03.2026 (win vs Learner Tien)",
+                "date": "2026-03-21",
+                "result": "win",
+                "opponentName": "Learner Tien"
+              },
+              {
+                "index": 29,
+                "sequenceIndex": 24,
+                "value": -2,
+                "label": "23.03.2026 (lost vs Quentin Halys)",
+                "date": "2026-03-23",
+                "result": "lost",
+                "opponentName": "Quentin Halys"
+              },
+              {
+                "index": 30,
+                "sequenceIndex": 25,
+                "value": -1,
+                "label": "31.03.2026 (win vs Juan Manuel Cerundolo)",
+                "date": "2026-03-31",
+                "result": "win",
+                "opponentName": "Juan Manuel Cerundolo"
+              },
+              {
+                "index": 31,
+                "sequenceIndex": 26,
+                "value": -2,
+                "label": "01.04.2026 (lost vs Marco Trungelliti)",
+                "date": "2026-04-01",
+                "result": "lost",
+                "opponentName": "Marco Trungelliti"
+              },
+              {
+                "index": 32,
+                "sequenceIndex": 27,
+                "value": -3,
+                "label": "18.05.2026 (lost vs Camilo Ugo Carabelli)",
+                "date": "2026-05-18",
+                "result": "lost",
+                "opponentName": "Camilo Ugo Carabelli"
+              },
+              {
+                "index": 33,
+                "sequenceIndex": 28,
+                "value": -4,
+                "label": "26.05.2026 (lost vs Alejandro Tabilo)",
+                "date": "2026-05-26",
+                "result": "lost",
+                "opponentName": "Alejandro Tabilo"
+              },
+              {
+                "index": 34,
+                "sequenceIndex": 29,
+                "value": -3,
+                "label": "03.06.2026 (win vs James McCabe)",
+                "date": "2026-06-03",
+                "result": "win",
+                "opponentName": "James McCabe"
+              },
+              {
+                "index": 35,
+                "sequenceIndex": 30,
+                "value": -2,
+                "label": "04.06.2026 (win vs Felix Gill)",
+                "date": "2026-06-04",
+                "result": "win",
+                "opponentName": "Felix Gill"
+              }
+            ],
+            "latestValue": -2,
+            "minValue": -4,
+            "maxValue": 2
+          },
+          "expectedStats": {
+            "source": "TennisLive recent-match stats",
+            "matches": 4,
+            "note": "Pregame expected stats are averaged from TennisLive recent singles match stat tables.",
+            "stats": {
+              "aces": 6.2,
+              "avgAces": 6.2,
+              "doubleFaults": 1.5,
+              "avgDoubleFaults": 1.5,
+              "firstServePct": 67.2,
+              "firstServeWonPct": 68.8,
+              "secondServeWonPct": 42.2,
+              "returnPointsWonPct": 31.8,
+              "breakPointsConvertedPct": 38.9,
+              "breakPointsSaved": 0,
+              "breakPointsFaced": 0,
+              "breakPointsConverted": 7,
+              "breakPointsToConvert": 18,
+              "breakPointChancesPerMatch": 4.5
+            },
+            "pressureSamples": {
+              "recent": {
+                "matches": 4,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 7,
+                "bpChances": 18,
+                "bpConvertedPct": 38.9,
+                "bpChancesPerMatch": 4.5
+              },
+              "last5": {
+                "matches": 4,
+                "bpSaved": 0,
+                "bpFaced": 0,
+                "bpConverted": 7,
+                "bpChances": 18,
+                "bpConvertedPct": 38.9,
+                "bpChancesPerMatch": 4.5
+              }
+            },
+            "sourceUrl": null
+          },
+          "recentFormMetrics": {
+            "playerName": "Kamil Majchrzak",
+            "matches": [
+              {
+                "opponentName": "Felix Gill",
+                "event": "Birmingham Challenger",
+                "matchDateLabel": "2026-06-04",
+                "isoDate": "2026-06-04",
+                "surface": "Grass",
+                "round": "2 nd round",
+                "result": "win",
+                "score": "6-3, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/felix-gill-VS-kamil-majchrzak/birmingham-challenger-2026/",
+                "matchId": "tl-2026-06-04-birmingham-challenger-2026-felix-gill-vs-kamil-majchrzak"
+              },
+              {
+                "opponentName": "James McCabe",
+                "event": "Birmingham Challenger",
+                "matchDateLabel": "2026-06-03",
+                "isoDate": "2026-06-03",
+                "surface": "Grass",
+                "round": "1 st round",
+                "result": "win",
+                "score": "7-6 3 , 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/kamil-majchrzak-VS-james-mccabe/birmingham-challenger-2026/",
+                "matchId": "tl-2026-06-03-birmingham-challenger-2026-kamil-majchrzak-vs-james-mccabe",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "51/69 (74%)",
+                      "made": 51,
+                      "attempts": 69,
+                      "pct": 74
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "37/51 (73%)",
+                      "made": 37,
+                      "attempts": 51,
+                      "pct": 73
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/18 (50%)",
+                      "made": 9,
+                      "attempts": 18,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/6 (67%)",
+                      "made": 4,
+                      "attempts": 6,
+                      "pct": 67
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "76/137 (55%)",
+                      "made": 76,
+                      "attempts": 137,
+                      "pct": 55
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "30/68 (44%)",
+                      "made": 30,
+                      "attempts": 68,
+                      "pct": 44
+                    }
+                  ],
+                  "firstServePct": 74,
+                  "firstServeIn": "51/69 (74%)",
+                  "firstServeWonPct": 73,
+                  "firstServePointsWon": "37/51 (73%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "9/18 (50%)",
+                  "aces": 5,
+                  "breakPointsConverted": "4/6 (67%)",
+                  "breakPointsConvertedPct": 67,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 55,
+                  "totalPointsWon": "76/137 (55%)",
+                  "returnPointsWonPct": 44,
+                  "returnPointsWon": "30/68 (44%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "51/69 (74%)",
+                      "made": 51,
+                      "attempts": 69,
+                      "pct": 74
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "37/51 (73%)",
+                      "made": 37,
+                      "attempts": 51,
+                      "pct": 73
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "9/18 (50%)",
+                      "made": 9,
+                      "attempts": 18,
+                      "pct": 50
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "4/6 (67%)",
+                      "made": 4,
+                      "attempts": 6,
+                      "pct": 67
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "76/137 (55%)",
+                      "made": 76,
+                      "attempts": 137,
+                      "pct": 55
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "30/68 (44%)",
+                      "made": 30,
+                      "attempts": 68,
+                      "pct": 44
+                    }
+                  ],
+                  "firstServePct": 74,
+                  "firstServeIn": "51/69 (74%)",
+                  "firstServeWonPct": 73,
+                  "firstServePointsWon": "37/51 (73%)",
+                  "secondServeWonPct": 50,
+                  "secondServePointsWon": "9/18 (50%)",
+                  "aces": 5,
+                  "breakPointsConverted": "4/6 (67%)",
+                  "breakPointsConvertedPct": 67,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 55,
+                  "totalPointsWon": "76/137 (55%)",
+                  "returnPointsWonPct": 44,
+                  "returnPointsWon": "30/68 (44%)"
+                }
+              },
+              {
+                "opponentName": "Alejandro Tabilo",
+                "event": "Paris",
+                "matchDateLabel": "2026-05-26",
+                "isoDate": "2026-05-26",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "lost",
+                "score": "6-1, 6-3, 6-4",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/alejandro-tabilo-VS-kamil-majchrzak/french-open-paris-2026/",
+                "matchId": "tl-2026-05-26-french-open-paris-2026-alejandro-tabilo-vs-kamil-majchrzak",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "63/94 (67%)",
+                      "made": 63,
+                      "attempts": 94,
+                      "pct": 67
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "41/63 (65%)",
+                      "made": 41,
+                      "attempts": 63,
+                      "pct": 65
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/31 (32%)",
+                      "made": 10,
+                      "attempts": 31,
+                      "pct": 32
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "0/2 (0%)",
+                      "made": 0,
+                      "attempts": 2,
+                      "pct": 0
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "64/160 (40%)",
+                      "made": 64,
+                      "attempts": 160,
+                      "pct": 40
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "13/66 (20%)",
+                      "made": 13,
+                      "attempts": 66,
+                      "pct": 20
+                    }
+                  ],
+                  "firstServePct": 67,
+                  "firstServeIn": "63/94 (67%)",
+                  "firstServeWonPct": 65,
+                  "firstServePointsWon": "41/63 (65%)",
+                  "secondServeWonPct": 32,
+                  "secondServePointsWon": "10/31 (32%)",
+                  "aces": 6,
+                  "breakPointsConverted": "0/2 (0%)",
+                  "breakPointsConvertedPct": 0,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 40,
+                  "totalPointsWon": "64/160 (40%)",
+                  "returnPointsWonPct": 20,
+                  "returnPointsWon": "13/66 (20%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "63/94 (67%)",
+                      "made": 63,
+                      "attempts": 94,
+                      "pct": 67
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "41/63 (65%)",
+                      "made": 41,
+                      "attempts": 63,
+                      "pct": 65
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "10/31 (32%)",
+                      "made": 10,
+                      "attempts": 31,
+                      "pct": 32
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "6",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "0/2 (0%)",
+                      "made": 0,
+                      "attempts": 2,
+                      "pct": 0
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "64/160 (40%)",
+                      "made": 64,
+                      "attempts": 160,
+                      "pct": 40
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "13/66 (20%)",
+                      "made": 13,
+                      "attempts": 66,
+                      "pct": 20
+                    }
+                  ],
+                  "firstServePct": 67,
+                  "firstServeIn": "63/94 (67%)",
+                  "firstServeWonPct": 65,
+                  "firstServePointsWon": "41/63 (65%)",
+                  "secondServeWonPct": 32,
+                  "secondServePointsWon": "10/31 (32%)",
+                  "aces": 6,
+                  "breakPointsConverted": "0/2 (0%)",
+                  "breakPointsConvertedPct": 0,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 40,
+                  "totalPointsWon": "64/160 (40%)",
+                  "returnPointsWonPct": 20,
+                  "returnPointsWon": "13/66 (20%)"
+                }
+              },
+              {
+                "opponentName": "Camilo Ugo Carabelli",
+                "event": "Hamburg",
+                "matchDateLabel": "2026-05-18",
+                "isoDate": "2026-05-18",
+                "surface": "Clay",
+                "round": "1 st round",
+                "result": "lost",
+                "score": "1-6, 6-2, 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/camilo-ugo-carabelli-VS-kamil-majchrzak/hamburg-open-hamburg-2026/",
+                "matchId": "tl-2026-05-18-hamburg-open-hamburg-2026-camilo-ugo-carabelli-vs-kamil-majchrzak",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "57/91 (63%)",
+                      "made": 57,
+                      "attempts": 91,
+                      "pct": 63
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "36/57 (63%)",
+                      "made": 36,
+                      "attempts": 57,
+                      "pct": 63
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "15/34 (44%)",
+                      "made": 15,
+                      "attempts": 34,
+                      "pct": 44
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/9 (33%)",
+                      "made": 3,
+                      "attempts": 9,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "83/170 (49%)",
+                      "made": 83,
+                      "attempts": 170,
+                      "pct": 49
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "32/79 (41%)",
+                      "made": 32,
+                      "attempts": 79,
+                      "pct": 41
+                    }
+                  ],
+                  "firstServePct": 63,
+                  "firstServeIn": "57/91 (63%)",
+                  "firstServeWonPct": 63,
+                  "firstServePointsWon": "36/57 (63%)",
+                  "secondServeWonPct": 44,
+                  "secondServePointsWon": "15/34 (44%)",
+                  "aces": 5,
+                  "breakPointsConverted": "3/9 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 49,
+                  "totalPointsWon": "83/170 (49%)",
+                  "returnPointsWonPct": 41,
+                  "returnPointsWon": "32/79 (41%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "57/91 (63%)",
+                      "made": 57,
+                      "attempts": 91,
+                      "pct": 63
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "36/57 (63%)",
+                      "made": 36,
+                      "attempts": 57,
+                      "pct": 63
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "15/34 (44%)",
+                      "made": 15,
+                      "attempts": 34,
+                      "pct": 44
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "5",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "3/9 (33%)",
+                      "made": 3,
+                      "attempts": 9,
+                      "pct": 33
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "2",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "83/170 (49%)",
+                      "made": 83,
+                      "attempts": 170,
+                      "pct": 49
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "32/79 (41%)",
+                      "made": 32,
+                      "attempts": 79,
+                      "pct": 41
+                    }
+                  ],
+                  "firstServePct": 63,
+                  "firstServeIn": "57/91 (63%)",
+                  "firstServeWonPct": 63,
+                  "firstServePointsWon": "36/57 (63%)",
+                  "secondServeWonPct": 44,
+                  "secondServePointsWon": "15/34 (44%)",
+                  "aces": 5,
+                  "breakPointsConverted": "3/9 (33%)",
+                  "breakPointsConvertedPct": 33,
+                  "doubleFaults": 2,
+                  "totalPointsWonPct": 49,
+                  "totalPointsWon": "83/170 (49%)",
+                  "returnPointsWonPct": 41,
+                  "returnPointsWon": "32/79 (41%)"
+                }
+              },
+              {
+                "opponentName": "Marco Trungelliti",
+                "event": "Marrakech",
+                "matchDateLabel": "2026-04-01",
+                "isoDate": "2026-04-01",
+                "surface": "Clay",
+                "round": "2 nd round",
+                "result": "lost",
+                "score": "7-6 4 , 6-3",
+                "source": "tennislive",
+                "sourceUrl": "https://www.tennislive.net/atp/match/marco-trungelliti-VS-kamil-majchrzak/grand-prix-hassan-ii-marrakech-2026/",
+                "matchId": "tl-2026-04-01-grand-prix-hassan-ii-marrakech-2026-marco-trungelliti-vs-kamil-majchrzak",
+                "serviceStats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "53/81 (65%)",
+                      "made": 53,
+                      "attempts": 81,
+                      "pct": 65
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "39/53 (74%)",
+                      "made": 39,
+                      "attempts": 53,
+                      "pct": 74
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "12/28 (43%)",
+                      "made": 12,
+                      "attempts": 28,
+                      "pct": 43
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "9",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "0/1 (0%)",
+                      "made": 0,
+                      "attempts": 1,
+                      "pct": 0
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "65/146 (45%)",
+                      "made": 65,
+                      "attempts": 146,
+                      "pct": 45
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "14/65 (22%)",
+                      "made": 14,
+                      "attempts": 65,
+                      "pct": 22
+                    }
+                  ],
+                  "firstServePct": 65,
+                  "firstServeIn": "53/81 (65%)",
+                  "firstServeWonPct": 74,
+                  "firstServePointsWon": "39/53 (74%)",
+                  "secondServeWonPct": 43,
+                  "secondServePointsWon": "12/28 (43%)",
+                  "aces": 9,
+                  "breakPointsConverted": "0/1 (0%)",
+                  "breakPointsConvertedPct": 0,
+                  "doubleFaults": 0,
+                  "totalPointsWonPct": 45,
+                  "totalPointsWon": "65/146 (45%)",
+                  "returnPointsWonPct": 22,
+                  "returnPointsWon": "14/65 (22%)"
+                },
+                "stats": {
+                  "source": "tennislive",
+                  "rows": [
+                    {
+                      "label": "1st SERVE %",
+                      "value": "53/81 (65%)",
+                      "made": 53,
+                      "attempts": 81,
+                      "pct": 65
+                    },
+                    {
+                      "label": "1st SERVE POINTS WON",
+                      "value": "39/53 (74%)",
+                      "made": 39,
+                      "attempts": 53,
+                      "pct": 74
+                    },
+                    {
+                      "label": "2nd SERVE POINTS WON",
+                      "value": "12/28 (43%)",
+                      "made": 12,
+                      "attempts": 28,
+                      "pct": 43
+                    },
+                    {
+                      "label": "ACES",
+                      "value": "9",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "BREAK POINTS WON",
+                      "value": "0/1 (0%)",
+                      "made": 0,
+                      "attempts": 1,
+                      "pct": 0
+                    },
+                    {
+                      "label": "DOUBLE FAULTS",
+                      "value": "0",
+                      "made": null,
+                      "attempts": null,
+                      "pct": null
+                    },
+                    {
+                      "label": "TOTAL POINTS WON",
+                      "value": "65/146 (45%)",
+                      "made": 65,
+                      "attempts": 146,
+                      "pct": 45
+                    },
+                    {
+                      "label": "TOTAL RETURN POINTS WON",
+                      "value": "14/65 (22%)",
+                      "made": 14,
+                      "attempts": 65,
+                      "pct": 22
+                    }
+                  ],
+                  "firstServePct": 65,
+                  "firstServeIn": "53/81 (65%)",
+                  "firstServeWonPct": 74,
+                  "firstServePointsWon": "39/53 (74%)",
+                  "secondServeWonPct": 43,
+                  "secondServePointsWon": "12/28 (43%)",
+                  "aces": 9,
+                  "breakPointsConverted": "0/1 (0%)",
+                  "breakPointsConvertedPct": 0,
+                  "doubleFaults": 0,
+                  "totalPointsWonPct": 45,
+                  "totalPointsWon": "65/146 (45%)",
+                  "returnPointsWonPct": 22,
+                  "returnPointsWon": "14/65 (22%)"
+                }
+              }
+            ],
+            "summary": [
+              {
+                "key": "opponent_adjusted_form_score",
+                "label": "Opponent-adjusted form",
+                "score": 42.6,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_win_pct",
+                "label": "Recent win pct",
+                "score": 0.4,
+                "source": "tennislive"
+              },
+              {
+                "key": "recent_game_pct",
+                "label": "Recent game pct",
+                "score": 0.487,
+                "source": "tennislive"
+              },
+              {
+                "key": "scoreline_form_score",
+                "label": "Scoreline form",
+                "score": 42.6,
+                "source": "tennislive"
+              }
+            ],
+            "coverage": {
+              "cells": 9,
+              "exactCells": 9,
+              "estimatedCells": 0,
+              "missingCells": 0
+            },
+            "source": "sql-tennis.db:player_form_snapshots/recent_matches",
+            "sourceUrl": "https://www.tennislive.net/atp/kamil-majchrzak/"
+          }
+        },
+        "record2026": "",
+        "notes": "Pick: model 58.2%",
+        "matchupNote": "Why pick: Opponent-adjusted recent form is basically even: Kamil Majchrzak 43, Sho Shimabukuro 43. Lean, not a chase."
+      }
+    ],
+    "comparisonRows": [
+      {
+        "label": "Model pick",
+        "metric": "Fair win split",
+        "leftScore": 44.6,
+        "rightScore": 58.2,
+        "leftLabel": "Sho Shimabukuro",
+        "rightLabel": "Kamil Majchrzak",
+        "winner": "Kamil Majchrzak"
+      },
+      {
+        "label": "DraftKings Sportsbook moneyline",
+        "metric": "Implied price",
+        "leftScore": 41.2,
+        "rightScore": 65.4,
+        "leftLabel": "Sho Shimabukuro",
+        "rightLabel": "Kamil Majchrzak",
+        "winner": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "label": "Weakness",
+        "metric": "Lower is cleaner",
+        "leftScore": 1,
+        "rightScore": 3,
+        "leftLabel": "Sho Shimabukuro",
+        "rightLabel": "Kamil Majchrzak",
+        "winner": "No clear weakness edge"
+      },
+      {
+        "label": "Volatility",
+        "metric": "Lower is cleaner",
+        "leftScore": 48,
+        "rightScore": 52,
+        "leftLabel": "Risk",
+        "rightLabel": "Stability",
+        "winner": "Stable enough"
+      }
+    ],
+    "predictionMarket": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:38.901Z",
+      "totalVolume": null,
+      "players": [
+        {
+          "name": "Sho Shimabukuro",
+          "probabilityPct": 41.2,
+          "amount": null,
+          "americanOdds": 143,
+          "edgePct": 3.4,
+          "priceBand": "Underdog"
+        },
+        {
+          "name": "Kamil Majchrzak",
+          "probabilityPct": 65.4,
+          "amount": null,
+          "americanOdds": -189,
+          "edgePct": -7.2,
+          "priceBand": "Moderate favorite"
+        }
+      ]
+    },
+    "bettingMatrix": [
+      {
+        "marketType": "Moneyline",
+        "label": "ML value",
+        "selection": "Sho Shimabukuro",
+        "line": null,
+        "americanOdds": 143,
+        "modelPct": 44.6,
+        "impliedPct": 41.2,
+        "edgePct": 3.4,
+        "evPer100": 8.4,
+        "netEvPer100": 6.4,
+        "grade": "Raw ML edge only",
+        "issue": "Picked side is overpriced; value board flips to Sho Shimabukuro because that side has the better posted-price edge.",
+        "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "marketType": "Total games",
+        "label": "O/U games",
+        "selection": "No bet",
+        "line": null,
+        "americanOdds": null,
+        "modelPct": null,
+        "impliedPct": null,
+        "edgePct": null,
+        "evPer100": null,
+        "netEvPer100": null,
+        "expectedGames": 39.5,
+        "edgeGames": null,
+        "confidence": null,
+        "grade": "No direction",
+        "reason": "No posted match total captured."
+      },
+      {
+        "marketType": "Win a set",
+        "label": "Win a set %",
+        "selection": "Sho Shimabukuro 64% / Kamil Majchrzak 66%",
+        "rows": [
+          {
+            "name": "Sho Shimabukuro",
+            "confidence": 64,
+            "modelPct": 44.6,
+            "label": "Underdog set-win path needs early holds"
+          },
+          {
+            "name": "Kamil Majchrzak",
+            "confidence": 66,
+            "modelPct": 58.2,
+            "label": "Market favorite to win a set"
+          }
+        ],
+        "confidence": 66,
+        "grade": "Price required",
+        "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+      },
+      {
+        "marketType": "First-set total games",
+        "label": "1st set O/U",
+        "selection": "Over 9.5",
+        "expectedGames": 10,
+        "confidence": 58,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "grade": "Thin value",
+        "reason": "Expected first-set games 10 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 32%, first-set sample N/A, 0 recent sets."
+      }
+    ],
+    "derivativeMarketCase": null,
+    "valueBoard": {
+      "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+      "ml": {
+        "marketType": "ML",
+        "selection": "Sho Shimabukuro",
+        "americanOdds": 143,
+        "modelPct": 44.6,
+        "impliedPct": 41.2,
+        "edgePct": 3.4,
+        "evPer100": 8.4,
+        "netEvPer100": 6.4,
+        "feePer100": 2,
+        "rawEdgePct": 3.4,
+        "rawEvPer100": 8.4,
+        "rawNetEvPer100": 6.4,
+        "valueIssue": "Picked side is overpriced; value board flips to Sho Shimabukuro because that side has the better posted-price edge.",
+        "valueGrade": "Raw ML edge only",
+        "betGrade": false
+      },
+      "spread": null,
+      "total": {
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 39.5,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false
+      },
+      "firstSetTotal": {
+        "marketType": "First-set total",
+        "selection": "Over 9.5",
+        "line": 9.5,
+        "americanOdds": -150,
+        "expectedGames": 10,
+        "confidence": 58,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 58,
+        "evPer100": -3.3,
+        "netEvPer100": -5.3,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 10 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 32%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false
+      },
+      "setWin": [
+        {
+          "name": "Sho Shimabukuro",
+          "confidence": 64,
+          "modelPct": 44.6,
+          "label": "Underdog set-win path needs early holds",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        },
+        {
+          "name": "Kamil Majchrzak",
+          "confidence": 66,
+          "modelPct": 58.2,
+          "label": "Market favorite to win a set",
+          "marketType": "Win a set",
+          "valueGrade": "Needs posted price",
+          "betGrade": false
+        }
+      ]
+    },
+    "ensembleValueCase": null,
+    "projection": {
+      "projectedWinner": "Kamil Majchrzak",
+      "projectedSetLine": "2-0/2-1 range",
+      "setWinProjections": [
+        {
+          "name": "Sho Shimabukuro",
+          "confidence": 64,
+          "modelPct": 44.6,
+          "label": "Underdog set-win path needs early holds"
+        },
+        {
+          "name": "Kamil Majchrzak",
+          "confidence": 66,
+          "modelPct": 58.2,
+          "label": "Market favorite to win a set"
+        }
+      ],
+      "totalGames": null,
+      "straightSetsProbability": 50.2,
+      "upsetRisk": 41.8,
+      "overview": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "fantasy": []
+    },
+    "tradePlan": {
+      "laneLabel": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+      "summary": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+      "trigger": "Wait for a visible service-pressure split before entering.",
+      "headline": "No clear weakness edge",
+      "exit": "No spread line",
+      "tone": "warning"
+    },
+    "derivativeMarkets": [
+      {
+        "label": "ML",
+        "value": "Kamil Majchrzak -189; Model 58.2% vs DraftKings Sportsbook implied 65.4% (-7.2 pts).",
+        "lean": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+        "confidence": 58.2,
+        "marketType": "ML",
+        "selection": "Sho Shimabukuro",
+        "americanOdds": 143,
+        "modelPct": 44.6,
+        "impliedPct": 41.2,
+        "edgePct": 3.4,
+        "evPer100": 8.4,
+        "netEvPer100": 6.4,
+        "feePer100": 2,
+        "rawEdgePct": 3.4,
+        "rawEvPer100": 8.4,
+        "rawNetEvPer100": 6.4,
+        "valueIssue": "Picked side is overpriced; value board flips to Sho Shimabukuro because that side has the better posted-price edge.",
+        "valueGrade": "Raw ML edge only",
+        "betGrade": false,
+        "tone": "warning",
+        "reason": "DraftKings Sportsbook ML, game handicap, match total, first-set total, set-win, and first-service-game markets captured where available. DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      },
+      {
+        "label": "Win a set",
+        "value": "No set-win price captured",
+        "lean": "Underdog set-win path needs early holds",
+        "confidence": 66,
+        "setWinRows": [],
+        "valueGrade": "Needs posted price",
+        "tone": "accent",
+        "reason": "Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence."
+      },
+      {
+        "label": "Spread",
+        "value": "No primary game spread captured",
+        "lean": "No spread line",
+        "confidence": 52.2,
+        "tone": "neutral",
+        "reason": "Wait for a visible service-pressure split before entering."
+      },
+      {
+        "label": "O/U",
+        "value": "No total captured",
+        "lean": "No bet",
+        "confidence": 50.2,
+        "marketType": "Total",
+        "selection": "No bet",
+        "line": null,
+        "overOdds": null,
+        "underOdds": null,
+        "expectedGames": 39.5,
+        "valueGrade": "No direction",
+        "reason": "No posted match total captured.",
+        "betGrade": false,
+        "tone": "neutral"
+      },
+      {
+        "label": "1st set O/U",
+        "value": "Line 9.5",
+        "lean": "Over 9.5",
+        "confidence": 58,
+        "marketType": "First-set total",
+        "selection": "Over 9.5",
+        "line": 9.5,
+        "americanOdds": -150,
+        "expectedGames": 10,
+        "tiebreakRisk": 18,
+        "earlyBreakRisk": 50,
+        "modelPct": 58,
+        "evPer100": -3.3,
+        "netEvPer100": -5.3,
+        "valueGrade": "Thin value",
+        "reason": "Expected first-set games 10 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 32%, first-set sample N/A, 0 recent sets.",
+        "betGrade": false,
+        "tone": "accent"
+      },
+      {
+        "label": "1st service game",
+        "value": "No first-service-game market captured",
+        "lean": "First-service-game prices",
+        "confidence": 58.2,
+        "firstServiceGameRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-service-game market captured."
+      },
+      {
+        "label": "First games",
+        "value": "No first-game prop market captured",
+        "lean": "First-game prop prices",
+        "confidence": 58.2,
+        "firstGamePropRows": [],
+        "tone": "muted",
+        "reason": "No sportsbook first-games prop captured."
+      }
+    ],
+    "marketEconomics": {
+      "source": "DraftKings Sportsbook",
+      "capturedAt": "2026-06-04T22:16:38.901Z",
+      "eventUrl": "https://sportsbook.draftkings.com/leagues/tennis/challenger-birmingham?event=34242762",
+      "deskName": "Kamil Majchrzak",
+      "deskPricePct": 65.4,
+      "deskEdgePct": -7.2,
+      "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+      "players": [
+        {
+          "name": "Sho Shimabukuro",
+          "americanOdds": 143,
+          "impliedPct": 41.2,
+          "modelPct": 44.6,
+          "edgePct": 3.4,
+          "priceBand": "Underdog",
+          "grossProfitPct": 143,
+          "grossPayoutMultiple": 2.43,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 143,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        },
+        {
+          "name": "Kamil Majchrzak",
+          "americanOdds": -189,
+          "impliedPct": 65.4,
+          "modelPct": 58.2,
+          "edgePct": -7.2,
+          "priceBand": "Moderate favorite",
+          "grossProfitPct": 52.9,
+          "grossPayoutMultiple": 1.529,
+          "centsAtRisk": 100,
+          "centsProfitIfWin": 52.9,
+          "bidPct": null,
+          "lastTradePct": null,
+          "openInterest": null,
+          "symbol": null
+        }
+      ]
+    },
+    "clayMatchupData": null,
+    "opponentQualityData": null,
+    "researchLinks": [
+      {
+        "label": "ESPN scoreboard",
+        "url": "https://www.espn.com/tennis/scoreboard/_/date/20260605"
+      },
+      {
+        "label": "TennisLive",
+        "url": "https://www.tennislive.net/"
+      },
+      {
+        "label": "DraftKings Sportsbook event",
+        "url": "https://sportsbook.draftkings.com/leagues/tennis/challenger-birmingham?event=34242762"
+      }
+    ],
+    "formEdgeName": "Kamil Majchrzak"
+  },
+  "participants": [
+    {
+      "id": "dk-atp-challenger-birmingham-sho-shimabukuro-vs-kamil-majchrzak-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Sho Shimabukuro",
+      "detail": "Grass | Live rank #103 | Japan | age 28 | adj form 43",
+      "americanOdds": 143,
+      "americanLabel": "+143",
+      "decimalOdds": 2.4299999999999997,
+      "impliedProbability": 0.411522633744856,
+      "impliedProbabilityLabel": "41.2%"
+    },
+    {
+      "id": "dk-atp-challenger-birmingham-sho-shimabukuro-vs-kamil-majchrzak-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Kamil Majchrzak",
+      "detail": "Grass | Live rank #78 | Poland | age 30 | adj form 43",
+      "americanOdds": -189,
+      "americanLabel": "-189",
+      "decimalOdds": 1.529100529100529,
+      "impliedProbability": 0.6539792387543253,
+      "impliedProbabilityLabel": "65.4%"
+    }
+  ],
+  "moneyline": {
+    "available": true,
+    "label": "DraftKings Sportsbook moneyline",
+    "provider": "DraftKings Sportsbook",
+    "participants": [
+      {
+        "id": "dk-atp-challenger-birmingham-sho-shimabukuro-vs-kamil-majchrzak-2026-06-05:0",
+        "index": 0,
+        "role": "Player 1",
+        "name": "Sho Shimabukuro",
+        "detail": "Grass | Live rank #103 | Japan | age 28 | adj form 43",
+        "americanOdds": 143,
+        "americanLabel": "+143",
+        "decimalOdds": 2.4299999999999997,
+        "impliedProbability": 0.411522633744856,
+        "impliedProbabilityLabel": "41.2%"
+      },
+      {
+        "id": "dk-atp-challenger-birmingham-sho-shimabukuro-vs-kamil-majchrzak-2026-06-05:1",
+        "index": 1,
+        "role": "Player 2",
+        "name": "Kamil Majchrzak",
+        "detail": "Grass | Live rank #78 | Poland | age 30 | adj form 43",
+        "americanOdds": -189,
+        "americanLabel": "-189",
+        "decimalOdds": 1.529100529100529,
+        "impliedProbability": 0.6539792387543253,
+        "impliedProbabilityLabel": "65.4%"
+      }
+    ]
+  },
+  "analysis": {
+    "available": true,
+    "participantId": "dk-atp-challenger-birmingham-sho-shimabukuro-vs-kamil-majchrzak-2026-06-05:1",
+    "participant": {
+      "id": "dk-atp-challenger-birmingham-sho-shimabukuro-vs-kamil-majchrzak-2026-06-05:1",
+      "index": 1,
+      "role": "Player 2",
+      "name": "Kamil Majchrzak",
+      "detail": "Grass | Live rank #78 | Poland | age 30 | adj form 43",
+      "americanOdds": -189,
+      "americanLabel": "-189",
+      "decimalOdds": 1.529100529100529,
+      "impliedProbability": 0.6539792387543253,
+      "impliedProbabilityLabel": "65.4%"
+    },
+    "opponent": {
+      "id": "dk-atp-challenger-birmingham-sho-shimabukuro-vs-kamil-majchrzak-2026-06-05:0",
+      "index": 0,
+      "role": "Player 1",
+      "name": "Sho Shimabukuro",
+      "detail": "Grass | Live rank #103 | Japan | age 28 | adj form 43",
+      "americanOdds": 143,
+      "americanLabel": "+143",
+      "decimalOdds": 2.4299999999999997,
+      "impliedProbability": 0.411522633744856,
+      "impliedProbabilityLabel": "41.2%"
+    },
+    "lean": "Lean Kamil Majchrzak; DraftKings Sportsbook price is richer than the model; pass ML unless live state improves.",
+    "rationale": "Our model pick: Kamil Majchrzak. Opponent-adjusted recent form is basically even: Kamil Majchrzak 43, Sho Shimabukuro 43. Lean, not a chase.",
+    "confidence": 58.2,
+    "volatility": 48,
+    "recommendationScore": 46,
+    "tier": "Watch",
+    "sourceLabel": "DraftKings Sportsbook",
+    "modelEdge": null,
+    "modelEdgeLabel": "",
+    "marketProbability": 0.6539792387543253,
+    "marketProbabilityLabel": "65.4%",
+    "inputs": [],
+    "inputsUsed": 0,
+    "volatilityNotes": [],
+    "indicators": {}
+  },
+  "metadata": {
+    "participantCount": 2,
+    "participantNames": [
+      "Sho Shimabukuro",
+      "Kamil Majchrzak"
+    ],
+    "tagCount": 6,
+    "hasSeriesBreakdown": false,
+    "hasMoneyline": true,
+    "hasAnalysisPick": true,
+    "hasStructuredInputs": false,
+    "hasPlayerProps": false,
+    "startMinutes": 150,
+    "spotlight": false,
+    "league": "Tennis",
+    "oddsProvider": "DraftKings Sportsbook"
+  }
+}

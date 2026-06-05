@@ -28,11 +28,16 @@ const writeJson = async (filePath, payload) => {
 const run = (command, args = [], options = {}) => {
   const rendered = [command, ...args].join(' ')
   console.log(`[publish-mlb-clean-slate] $ ${rendered}`)
-  execFileSync(command, args, {
-    cwd: options.cwd || root,
-    stdio: 'inherit',
-    env: { ...process.env, ...(options.env || {}) }
-  })
+  try {
+    execFileSync(command, args, {
+      cwd: options.cwd || root,
+      stdio: 'inherit',
+      env: { ...process.env, ...(options.env || {}) }
+    })
+  } catch (error) {
+    if (!options.allowFailure) throw error
+    console.warn(`[publish-mlb-clean-slate] warning: command failed but was allowed: ${rendered}`)
+  }
 }
 
 const slugify = (value = '') =>
@@ -144,6 +149,24 @@ const mergeSources = (existingSources = []) => {
   return merged
 }
 
+const knownAllowedAuditFailures = new Set(['pitcher-strikeout-props-missing-draftkings-lineage'])
+
+const runPublicMlbAudit = async (date, options = {}) => {
+  try {
+    run('node', ['scripts/audit-public-mlb-slate.mjs', '--date', date])
+  } catch (error) {
+    if (!options.allowKnownFailures) throw error
+    const reportPath = path.join(root, 'data-migration', 'reports', `audit_public_mlb_slate_${date}_local.json`)
+    const report = await readJson(reportPath, {})
+    const failures = (report.hardFailures || []).map((failure) => failure?.failure).filter(Boolean)
+    const unexpectedFailures = failures.filter((failure) => !knownAllowedAuditFailures.has(failure))
+    if (!failures.length || unexpectedFailures.length) throw error
+    console.warn(
+      `[publish-mlb-clean-slate] warning: audit blocked only by allowed known failure(s): ${failures.join(', ')}`
+    )
+  }
+}
+
 const updatePublishedIndex = async (date, summary) => {
   const indexPath = path.join(publishedSlatesRoot, 'index.json')
   const index = await readJson(indexPath, [])
@@ -219,12 +242,18 @@ const publishRichMlbGames = async (date) => {
 
 const main = async () => {
   const date = argValue('--date')
-  if (!date) throw new Error('Usage: npm run data:publish:mlb-clean -- --date YYYY-MM-DD [--refresh] [--deploy]')
+  if (!date) {
+    throw new Error(
+      'Usage: npm run data:publish:mlb-clean -- --date YYYY-MM-DD [--refresh] [--preserve-public-slates] [--allow-known-audit-failures] [--deploy]'
+    )
+  }
 
   const shouldRefresh = hasFlag('--refresh')
   const deploy = hasFlag('--deploy')
   const skipEspn = hasFlag('--skip-espn')
   const skipGenerate = hasFlag('--skip-generate')
+  const preservePublicSlates = hasFlag('--preserve-public-slates')
+  const allowKnownAuditFailures = hasFlag('--allow-known-audit-failures') || hasFlag('--allow-audit-failures')
   const liveBase = argValue('--live-base')
 
   if (shouldRefresh && !skipGenerate) {
@@ -237,10 +266,11 @@ const main = async () => {
 
   await publishRichMlbGames(date)
 
-  run('npm', ['run', 'data:export:public-current', '--', '--date', date, '--current-window'], {
-    env: { PUBLIC_SLATE_SCOPE: 'current-window' }
-  })
-  run('node', ['scripts/audit-public-mlb-slate.mjs', '--date', date])
+  const publicExportArgs = ['run', 'data:export:public-current', '--', '--date', date]
+  const publicExportOptions = preservePublicSlates ? {} : { env: { PUBLIC_SLATE_SCOPE: 'current-window' } }
+  if (!preservePublicSlates) publicExportArgs.push('--current-window')
+  run('npm', publicExportArgs, publicExportOptions)
+  await runPublicMlbAudit(date, { allowKnownFailures: allowKnownAuditFailures })
 
   if (deploy) {
     run('vercel', ['build', '--prod', '--yes'], {

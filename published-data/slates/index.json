@@ -317,11 +317,28 @@
     "label": "June 5, 2026",
     "status": "ready",
     "slateMeta": {
+      "title": "June 5, 2026 Tennis Desk",
       "date": "June 5, 2026",
-      "isoDate": "2026-06-05"
+      "isoDate": "2026-06-05",
+      "timeZone": "America/Los_Angeles",
+      "modelCartridge": {
+        "id": "TEN-T0",
+        "sport": "tennis",
+        "label": "TEN-T0 tennis baseline",
+        "status": "baseline",
+        "entrypoint": "models/tennis/cartridges/TEN-T0/runner.mjs",
+        "manifestPath": "models/tennis/cartridges/TEN-T0/manifest.json"
+      },
+      "subtitle": "Roland Garros senior singles plus Robinhood ATP Challenger prediction-market inventory; model edges only apply where warehouse context is joined.",
+      "notes": [
+        "No doubles included.",
+        "DraftKings lines are preferred, with FanDuel and Robinhood fallback where needed.",
+        "June 5, 2026 uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined."
+      ]
     },
     "summary": {
-      "totalGames": 32
+      "totalGames": 47,
+      "mlbGames": 15
     }
   }
 ]
