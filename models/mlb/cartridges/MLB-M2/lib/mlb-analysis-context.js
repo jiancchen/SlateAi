@@ -1284,6 +1284,14 @@ const getPostedTotalLine = (game = {}) => {
   return parseFirstTotalNumber(game.lineupBoard?.marketWeatherContext?.total || '')
 }
 
+const getPostedFirst5TotalLine = (game = {}) => {
+  const oddsMarket = game.odds?.markets?.find((market) => /(?:1st|first)\s*5.*total/i.test(String(market?.label || '')))
+  const sportsbookFirst5Total = parseFirstTotalNumber(oddsMarket?.value || '')
+  if (Number.isFinite(sportsbookFirst5Total)) return sportsbookFirst5Total
+
+  return parseFirstTotalNumber(game.lineupBoard?.marketWeatherContext?.first5Total || '')
+}
+
 const finiteMetricValues = (items = [], key = '') =>
   items
     .map((item) => Number(item?.[key]))
@@ -2721,10 +2729,14 @@ const buildMlbAnalysisContext = (game, participants) => {
       )
       const first5Share =
         projectedFullTotalRuns > 0 ? projectedFirst5TotalRuns / projectedFullTotalRuns : null
-      const derivedFirst5TotalLine =
+      const postedFirst5Total = getPostedFirst5TotalLine(game)
+      const runShareFirst5TotalLine =
         Number.isFinite(postedTotal) && Number.isFinite(first5Share)
           ? roundToTenths(postedTotal * first5Share)
           : null
+      const derivedFirst5TotalLine = Number.isFinite(postedFirst5Total)
+        ? postedFirst5Total
+        : runShareFirst5TotalLine
       const derivedLateTotalLine =
         Number.isFinite(postedTotal) && Number.isFinite(derivedFirst5TotalLine)
           ? roundToTenths(postedTotal - derivedFirst5TotalLine)
@@ -2989,6 +3001,9 @@ const buildMlbAnalysisContext = (game, participants) => {
           first5TailOverlay,
           projectedLateTotalRuns,
           derivedFirst5TotalLine,
+          postedFirst5TotalLine: Number.isFinite(postedFirst5Total) ? postedFirst5Total : null,
+          runShareFirst5TotalLine,
+          first5TotalLineSource: Number.isFinite(postedFirst5Total) ? 'posted' : 'full-game-derived',
           derivedLateTotalLine,
           bullpenExhaustionNote: [weatherNote, sunVisibilityNote, bullpenExhaustionNote].filter(Boolean).join(' '),
           weatherNote,

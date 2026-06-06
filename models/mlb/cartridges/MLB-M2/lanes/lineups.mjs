@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
 const season = 2026
-const mlbWarehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
+const mlbWarehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')
 const typedWarehouseCliPath = path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_typed_warehouse.py')
 
 const deskToOfficialTeam = {
@@ -226,11 +226,23 @@ const fetchHitterStatcastTrendMap = (asOfDate, playerIds = []) => {
       pa_sample_7,
       bbe_sample_7,
       rolling_7_xwoba,
+      rolling_14_xwoba,
+      rolling_30_xwoba,
       rolling_7_xba,
+      rolling_14_xba,
+      rolling_30_xba,
       rolling_7_xslg,
+      rolling_14_xslg,
+      rolling_30_xslg,
       rolling_7_barrel_pct,
+      rolling_14_barrel_pct,
+      rolling_30_barrel_pct,
       rolling_7_hard_hit_pct,
+      rolling_14_hard_hit_pct,
+      rolling_30_hard_hit_pct,
       rolling_7_sweet_spot_pct,
+      rolling_14_sweet_spot_pct,
+      rolling_30_sweet_spot_pct,
       xwoba_trend_7_minus_30,
       barrel_trend_7_minus_30,
       hard_hit_trend_7_minus_30,
@@ -240,26 +252,106 @@ const fetchHitterStatcastTrendMap = (asOfDate, playerIds = []) => {
       and player_id in (${normalizedIds.join(',')})
   `)
 
+  const recentStatcastRows = runSqliteJson(`
+    select
+      player_id,
+      count(distinct game_pk) as recent_statcast_games,
+      sum(coalesce(plate_appearances, 0)) as recent_statcast_pa,
+      sum(coalesce(at_bats, 0)) as recent_statcast_ab,
+      sum(coalesce(home_runs, 0)) as recent_statcast_home_runs,
+      sum(coalesce(batted_ball_events, 0)) as recent_statcast_bbe,
+      sum(coalesce(barrels_total, 0)) as recent_statcast_barrels,
+      sum(coalesce(hard_hit_events, 0)) as recent_statcast_hard_hit,
+      sum(coalesce(sweet_spot_events, 0)) as recent_statcast_sweet_spot,
+      sum(case when xobp is not null and coalesce(plate_appearances, 0) > 0 then xobp * plate_appearances else 0 end) /
+        nullif(sum(case when xobp is not null then coalesce(plate_appearances, 0) else 0 end), 0) as recent_xobp,
+      sum(case when xslg is not null and coalesce(at_bats, 0) > 0 then xslg * at_bats else 0 end) /
+        nullif(sum(case when xslg is not null then coalesce(at_bats, 0) else 0 end), 0) as recent_xslg,
+      sum(case when avg_launch_speed is not null and coalesce(batted_ball_events, 0) > 0 then avg_launch_speed * batted_ball_events else 0 end) /
+        nullif(sum(case when avg_launch_speed is not null then coalesce(batted_ball_events, 0) else 0 end), 0) as recent_avg_launch_speed,
+      sum(case when avg_launch_angle is not null and coalesce(batted_ball_events, 0) > 0 then avg_launch_angle * batted_ball_events else 0 end) /
+        nullif(sum(case when avg_launch_angle is not null then coalesce(batted_ball_events, 0) else 0 end), 0) as recent_avg_launch_angle
+    from mlb_hitter_statcast_game_logs
+    where game_date between ${quoteSqlText(shiftDate(asOfDate, -7))} and ${quoteSqlText(asOfDate)}
+      and player_id in (${normalizedIds.join(',')})
+    group by player_id
+  `)
+
+  const recentStatcastByPlayerId = new Map(
+    recentStatcastRows.map((row) => {
+      const recentXobp = parseNumber(row.recent_xobp)
+      const recentXslg = parseNumber(row.recent_xslg)
+      const recentXops =
+        Number.isFinite(recentXobp) && Number.isFinite(recentXslg)
+          ? Number((recentXobp + recentXslg).toFixed(3))
+          : null
+      const recentBbeSample = Number(row.recent_statcast_bbe || 0) || 0
+      const recentBarrels = Number(row.recent_statcast_barrels || 0) || 0
+      const recentHardHit = Number(row.recent_statcast_hard_hit || 0) || 0
+      const recentSweetSpot = Number(row.recent_statcast_sweet_spot || 0) || 0
+
+      return [
+        Number(row.player_id),
+        {
+          recentStatcastGames: Number(row.recent_statcast_games || 0) || 0,
+          recentStatcastPa: Number(row.recent_statcast_pa || 0) || 0,
+          recentStatcastAb: Number(row.recent_statcast_ab || 0) || 0,
+          recentStatcastHomeRuns: Number(row.recent_statcast_home_runs || 0) || 0,
+          recentBbeSample,
+          recentBarrels,
+          recentHardHit,
+          recentSweetSpot,
+          recentBarrelPct: recentBbeSample > 0 ? roundToTenths((recentBarrels / recentBbeSample) * 100) : null,
+          recentHardHitPct: recentBbeSample > 0 ? roundToTenths((recentHardHit / recentBbeSample) * 100) : null,
+          recentSweetSpotPct: recentBbeSample > 0 ? roundToTenths((recentSweetSpot / recentBbeSample) * 100) : null,
+          recentXobp,
+          recentXslg,
+          recentXops,
+          recentAvgExitVelocity: parseNumber(row.recent_avg_launch_speed),
+          recentAvgLaunchAngle: parseNumber(row.recent_avg_launch_angle)
+        }
+      ]
+    })
+  )
+
   return new Map(
-    rows.map((row) => [
-      Number(row.player_id),
-      {
-        gamesSample7: Number(row.games_sample_7 || 0) || 0,
-        paSample7: Number(row.pa_sample_7 || 0) || 0,
-        bbeSample7: Number(row.bbe_sample_7 || 0) || 0,
-        rolling7Xwoba: parseNumber(row.rolling_7_xwoba),
-        rolling7Xba: parseNumber(row.rolling_7_xba),
-        rolling7Xslg: parseNumber(row.rolling_7_xslg),
-        rolling7BarrelPct: parseNumber(row.rolling_7_barrel_pct),
-        rolling7HardHitPct: parseNumber(row.rolling_7_hard_hit_pct),
-        rolling7SweetSpotPct: parseNumber(row.rolling_7_sweet_spot_pct),
-        xwobaTrend: parseNumber(row.xwoba_trend_7_minus_30),
-        barrelTrend: parseNumber(row.barrel_trend_7_minus_30),
-        hardHitTrend: parseNumber(row.hard_hit_trend_7_minus_30),
-        sweetSpotTrend: parseNumber(row.sweet_spot_trend_7_minus_30),
-        trendSignal: buildStatcastTrendSignal(row)
-      }
-    ])
+    rows.map((row) => {
+      const playerId = Number(row.player_id)
+      const recentStatcast = recentStatcastByPlayerId.get(playerId) ?? {}
+
+      return [
+        playerId,
+        {
+          gamesSample7: Number(row.games_sample_7 || 0) || 0,
+          paSample7: Number(row.pa_sample_7 || 0) || 0,
+          bbeSample7: Number(row.bbe_sample_7 || 0) || 0,
+          ...recentStatcast,
+          rolling7Xwoba: parseNumber(row.rolling_7_xwoba),
+          rolling14Xwoba: parseNumber(row.rolling_14_xwoba),
+          rolling30Xwoba: parseNumber(row.rolling_30_xwoba),
+          rolling7Xba: parseNumber(row.rolling_7_xba),
+          rolling14Xba: parseNumber(row.rolling_14_xba),
+          rolling30Xba: parseNumber(row.rolling_30_xba),
+          rolling7Xslg: parseNumber(row.rolling_7_xslg),
+          rolling14Xslg: parseNumber(row.rolling_14_xslg),
+          rolling30Xslg: parseNumber(row.rolling_30_xslg),
+          rolling7BarrelPct: parseNumber(row.rolling_7_barrel_pct),
+          rolling14BarrelPct: parseNumber(row.rolling_14_barrel_pct),
+          rolling30BarrelPct: parseNumber(row.rolling_30_barrel_pct),
+          rolling7HardHitPct: parseNumber(row.rolling_7_hard_hit_pct),
+          rolling14HardHitPct: parseNumber(row.rolling_14_hard_hit_pct),
+          rolling30HardHitPct: parseNumber(row.rolling_30_hard_hit_pct),
+          rolling7SweetSpotPct: parseNumber(row.rolling_7_sweet_spot_pct),
+          rolling14SweetSpotPct: parseNumber(row.rolling_14_sweet_spot_pct),
+          rolling30SweetSpotPct: parseNumber(row.rolling_30_sweet_spot_pct),
+          xwobaTrend: parseNumber(row.xwoba_trend_7_minus_30),
+          barrelTrend: parseNumber(row.barrel_trend_7_minus_30),
+          hardHitTrend: parseNumber(row.hard_hit_trend_7_minus_30),
+          sweetSpotTrend: parseNumber(row.sweet_spot_trend_7_minus_30),
+          trendSignal: buildStatcastTrendSignal(row)
+        }
+      ]
+    })
   )
 }
 
@@ -760,8 +852,38 @@ const buildPitcherProfile = (starterContext = null, pitchMix = null) => {
   const kPerNine = inningsFloat > 0 ? (strikeouts / inningsFloat) * 9 : null
   const bbPerNine = inningsFloat > 0 && Number.isFinite(walks) ? (walks / inningsFloat) * 9 : null
   const hitsPerNine = inningsFloat > 0 && Number.isFinite(hitsAllowed) ? (hitsAllowed / inningsFloat) * 9 : null
+  const homeRunsPerNine =
+    inningsFloat > 0 && Number.isFinite(homeRunsAllowed) ? (homeRunsAllowed / inningsFloat) * 9 : null
   const whip = parseNumber(starterContext.whip)
   const era = parseNumber(starterContext.era)
+  const recentStarts = Array.isArray(starterContext.startHistoryLast5) ? starterContext.startHistoryLast5 : []
+  const recentHomeRunsAllowed = recentStarts.reduce(
+    (sum, start) => sum + (Number.isFinite(Number(start.homeRunsAllowed)) ? Number(start.homeRunsAllowed) : 0),
+    0
+  )
+  const recentOutsRecorded = recentStarts.reduce(
+    (sum, start) => sum + (Number.isFinite(Number(start.outsRecorded)) ? Number(start.outsRecorded) : 0),
+    0
+  )
+  const recentInningsFloat = recentOutsRecorded > 0
+    ? recentOutsRecorded / 3
+    : recentStarts.reduce(
+        (sum, start) => sum + (Number.isFinite(Number(start.inningsPitched)) ? Number(start.inningsPitched) : 0),
+        0
+      )
+  const recentHomeRunsAllowedPerStart = recentStarts.length > 0 ? recentHomeRunsAllowed / recentStarts.length : null
+  const recentHomeRunsPerNine =
+    recentInningsFloat > 0 ? (recentHomeRunsAllowed / recentInningsFloat) * 9 : null
+  const homeRunDamageLabel =
+    !Number.isFinite(homeRunsPerNine)
+      ? 'HR sample N/A'
+      : homeRunsPerNine <= 0.8
+        ? 'HR suppressor'
+        : homeRunsPerNine <= 1.1
+          ? 'HR neutral'
+          : homeRunsPerNine <= 1.4
+            ? 'HR leak'
+            : 'HR-prone'
 
   return {
     fullName: starterContext.fullName || '',
@@ -775,6 +897,13 @@ const buildPitcherProfile = (starterContext = null, pitchMix = null) => {
     walks: Number.isFinite(walks) ? walks : null,
     hitsAllowed: Number.isFinite(hitsAllowed) ? hitsAllowed : null,
     homeRunsAllowed: Number.isFinite(homeRunsAllowed) ? homeRunsAllowed : null,
+    homeRunsPerNine: Number.isFinite(homeRunsPerNine) ? roundToHundredths(homeRunsPerNine) : null,
+    recentHomeRunsAllowed,
+    recentHomeRunsAllowedPerStart: Number.isFinite(recentHomeRunsAllowedPerStart)
+      ? roundToHundredths(recentHomeRunsAllowedPerStart)
+      : null,
+    recentHomeRunsPerNine: Number.isFinite(recentHomeRunsPerNine) ? roundToHundredths(recentHomeRunsPerNine) : null,
+    homeRunDamageLabel,
     kPerNine,
     bbPerNine,
     hitsPerNine,
@@ -1642,11 +1771,39 @@ const buildPlayerLineupEntry = ({
       ? {
           ...statcastTrend,
           rolling7Xwoba: parseNumber(statcastTrend.rolling7Xwoba),
+          rolling14Xwoba: parseNumber(statcastTrend.rolling14Xwoba),
+          rolling30Xwoba: parseNumber(statcastTrend.rolling30Xwoba),
           rolling7Xba: parseNumber(statcastTrend.rolling7Xba),
+          rolling14Xba: parseNumber(statcastTrend.rolling14Xba),
+          rolling30Xba: parseNumber(statcastTrend.rolling30Xba),
           rolling7Xslg: parseNumber(statcastTrend.rolling7Xslg),
+          rolling14Xslg: parseNumber(statcastTrend.rolling14Xslg),
+          rolling30Xslg: parseNumber(statcastTrend.rolling30Xslg),
           rolling7BarrelPct: parseNumber(statcastTrend.rolling7BarrelPct),
+          rolling14BarrelPct: parseNumber(statcastTrend.rolling14BarrelPct),
+          rolling30BarrelPct: parseNumber(statcastTrend.rolling30BarrelPct),
           rolling7HardHitPct: parseNumber(statcastTrend.rolling7HardHitPct),
+          rolling14HardHitPct: parseNumber(statcastTrend.rolling14HardHitPct),
+          rolling30HardHitPct: parseNumber(statcastTrend.rolling30HardHitPct),
           rolling7SweetSpotPct: parseNumber(statcastTrend.rolling7SweetSpotPct),
+          rolling14SweetSpotPct: parseNumber(statcastTrend.rolling14SweetSpotPct),
+          rolling30SweetSpotPct: parseNumber(statcastTrend.rolling30SweetSpotPct),
+          recentStatcastGames: parseNumber(statcastTrend.recentStatcastGames),
+          recentStatcastPa: parseNumber(statcastTrend.recentStatcastPa),
+          recentStatcastAb: parseNumber(statcastTrend.recentStatcastAb),
+          recentStatcastHomeRuns: parseNumber(statcastTrend.recentStatcastHomeRuns),
+          recentBbeSample: parseNumber(statcastTrend.recentBbeSample),
+          recentBarrels: parseNumber(statcastTrend.recentBarrels),
+          recentHardHit: parseNumber(statcastTrend.recentHardHit),
+          recentSweetSpot: parseNumber(statcastTrend.recentSweetSpot),
+          recentBarrelPct: parseNumber(statcastTrend.recentBarrelPct),
+          recentHardHitPct: parseNumber(statcastTrend.recentHardHitPct),
+          recentSweetSpotPct: parseNumber(statcastTrend.recentSweetSpotPct),
+          recentXobp: parseNumber(statcastTrend.recentXobp),
+          recentXslg: parseNumber(statcastTrend.recentXslg),
+          recentXops: parseNumber(statcastTrend.recentXops),
+          recentAvgExitVelocity: parseNumber(statcastTrend.recentAvgExitVelocity),
+          recentAvgLaunchAngle: parseNumber(statcastTrend.recentAvgLaunchAngle),
           xwobaTrend: parseNumber(statcastTrend.xwobaTrend),
           barrelTrend: parseNumber(statcastTrend.barrelTrend),
           hardHitTrend: parseNumber(statcastTrend.hardHitTrend),
@@ -2235,6 +2392,13 @@ const main = async () => {
           name: awayPitcher?.fullName || '',
           hand: awayPitcher?.handedness || '',
           type: awayPitcher?.profileType || 'Unknown sample',
+          inningsPitched: awayPitcher?.inningsFloat ?? null,
+          homeRunsAllowed: awayPitcher?.homeRunsAllowed ?? null,
+          homeRunsPerNine: awayPitcher?.homeRunsPerNine ?? null,
+          recentHomeRunsAllowed: awayPitcher?.recentHomeRunsAllowed ?? null,
+          recentHomeRunsAllowedPerStart: awayPitcher?.recentHomeRunsAllowedPerStart ?? null,
+          recentHomeRunsPerNine: awayPitcher?.recentHomeRunsPerNine ?? null,
+          homeRunDamageLabel: awayPitcher?.homeRunDamageLabel || '',
           pitchMixSummary:
             awayPitcher?.pitchMix?.topPitches
               ?.slice(0, 3)
@@ -2264,6 +2428,13 @@ const main = async () => {
           name: homePitcher?.fullName || '',
           hand: homePitcher?.handedness || '',
           type: homePitcher?.profileType || 'Unknown sample',
+          inningsPitched: homePitcher?.inningsFloat ?? null,
+          homeRunsAllowed: homePitcher?.homeRunsAllowed ?? null,
+          homeRunsPerNine: homePitcher?.homeRunsPerNine ?? null,
+          recentHomeRunsAllowed: homePitcher?.recentHomeRunsAllowed ?? null,
+          recentHomeRunsAllowedPerStart: homePitcher?.recentHomeRunsAllowedPerStart ?? null,
+          recentHomeRunsPerNine: homePitcher?.recentHomeRunsPerNine ?? null,
+          homeRunDamageLabel: homePitcher?.homeRunDamageLabel || '',
           pitchMixSummary:
             homePitcher?.pitchMix?.topPitches
               ?.slice(0, 3)

@@ -26,7 +26,7 @@
   "summary": "Brewers @ Rockies with Brandon Sproat against Ryan Feltner.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Brewers -152 / Rockies +130 | o11.5 -115 / u12 -115 | -1.5 -102 / +1.5 -114.",
+    "Current board: Brewers -154 / Rockies +130 | o12 -105 / u12 -112 | -1.5 -102 / +1.5 -114 | F5 no F5 ML / no F5 total.",
     "Brandon Sproat vs Ryan Feltner."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -768,13 +768,21 @@
         "playerName": "Brandon Sproat",
         "line": 4.5,
         "overPrice": 110,
-        "underPrice": -146
+        "underPrice": -146,
+        "sportsbook": "FanDuel Research",
+        "sourceName": "fanduel_research",
+        "sourcePath": "https://sportsbook.fanduel.com/baseball/mlb",
+        "capturedAt": "2026-06-05T03:12:54Z"
       },
       "home": {
         "playerName": "Ryan Feltner",
         "line": 3.5,
         "overPrice": 100,
-        "underPrice": -122
+        "underPrice": -122,
+        "sportsbook": "FanDuel Research",
+        "sourceName": "fanduel_research",
+        "sourcePath": "https://sportsbook.fanduel.com/baseball/mlb",
+        "capturedAt": "2026-06-05T03:12:54Z"
       }
     },
     "seriesEarlyPhase": {
@@ -784,36 +792,6 @@
     "recentGames": {
       "away": [
         {
-          "gamePk": 823783,
-          "date": "2026-05-27",
-          "opponent": "Cardinals",
-          "venueRole": "home",
-          "result": "W",
-          "runsFor": 2,
-          "runsAgainst": 1,
-          "seriesSlot": 0
-        },
-        {
-          "gamePk": 824191,
-          "date": "2026-05-29",
-          "opponent": "Astros",
-          "venueRole": "road",
-          "result": "W",
-          "runsFor": 5,
-          "runsAgainst": 4,
-          "seriesSlot": 1
-        },
-        {
-          "gamePk": 824190,
-          "date": "2026-05-30",
-          "opponent": "Astros",
-          "venueRole": "road",
-          "result": "L",
-          "runsFor": 2,
-          "runsAgainst": 9,
-          "seriesSlot": 1
-        },
-        {
           "gamePk": 824187,
           "date": "2026-05-31",
           "opponent": "Astros",
@@ -821,7 +799,7 @@
           "result": "W",
           "runsFor": 2,
           "runsAgainst": 0,
-          "seriesSlot": 1
+          "seriesSlot": 0
         },
         {
           "gamePk": 823781,
@@ -831,7 +809,7 @@
           "result": "W",
           "runsFor": 16,
           "runsAgainst": 2,
-          "seriesSlot": 2
+          "seriesSlot": 1
         },
         {
           "gamePk": 823782,
@@ -841,7 +819,17 @@
           "result": "W",
           "runsFor": 8,
           "runsAgainst": 3,
-          "seriesSlot": 2
+          "seriesSlot": 1
+        },
+        {
+          "gamePk": 823782,
+          "date": "2026-06-02",
+          "opponent": "Giants",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 8,
+          "runsAgainst": 3,
+          "seriesSlot": 1
         },
         {
           "gamePk": 823780,
@@ -851,7 +839,17 @@
           "result": "L",
           "runsFor": 0,
           "runsAgainst": 1,
-          "seriesSlot": 2
+          "seriesSlot": 1
+        },
+        {
+          "gamePk": 823780,
+          "date": "2026-06-03",
+          "opponent": "Giants",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 0,
+          "runsAgainst": 1,
+          "seriesSlot": 1
         },
         {
           "gamePk": 823779,
@@ -861,30 +859,20 @@
           "result": "L",
           "runsFor": 9,
           "runsAgainst": 12,
-          "seriesSlot": 2
+          "seriesSlot": 1
+        },
+        {
+          "gamePk": 823779,
+          "date": "2026-06-04",
+          "opponent": "Giants",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 9,
+          "runsAgainst": 12,
+          "seriesSlot": 1
         }
       ],
       "home": [
-        {
-          "gamePk": 823949,
-          "date": "2026-05-26",
-          "opponent": "Dodgers",
-          "venueRole": "road",
-          "result": "L",
-          "runsFor": 6,
-          "runsAgainst": 15,
-          "seriesSlot": 0
-        },
-        {
-          "gamePk": 823947,
-          "date": "2026-05-27",
-          "opponent": "Dodgers",
-          "venueRole": "road",
-          "result": "L",
-          "runsFor": 1,
-          "runsAgainst": 4,
-          "seriesSlot": 0
-        },
         {
           "gamePk": 824353,
           "date": "2026-05-29",
@@ -893,7 +881,7 @@
           "result": "W",
           "runsFor": 8,
           "runsAgainst": 6,
-          "seriesSlot": 1
+          "seriesSlot": 0
         },
         {
           "gamePk": 824352,
@@ -903,7 +891,7 @@
           "result": "W",
           "runsFor": 8,
           "runsAgainst": 3,
-          "seriesSlot": 1
+          "seriesSlot": 0
         },
         {
           "gamePk": 824354,
@@ -913,7 +901,7 @@
           "result": "L",
           "runsFor": 6,
           "runsAgainst": 19,
-          "seriesSlot": 1
+          "seriesSlot": 0
         },
         {
           "gamePk": 824027,
@@ -923,7 +911,7 @@
           "result": "W",
           "runsFor": 9,
           "runsAgainst": 8,
-          "seriesSlot": 2
+          "seriesSlot": 1
         },
         {
           "gamePk": 824026,
@@ -933,7 +921,17 @@
           "result": "W",
           "runsFor": 8,
           "runsAgainst": 2,
-          "seriesSlot": 2
+          "seriesSlot": 1
+        },
+        {
+          "gamePk": 824026,
+          "date": "2026-06-02",
+          "opponent": "Angels",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 8,
+          "runsAgainst": 2,
+          "seriesSlot": 1
         },
         {
           "gamePk": 824024,
@@ -943,261 +941,22 @@
           "result": "L",
           "runsFor": 4,
           "runsAgainst": 11,
-          "seriesSlot": 2
+          "seriesSlot": 1
+        },
+        {
+          "gamePk": 824024,
+          "date": "2026-06-03",
+          "opponent": "Angels",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 4,
+          "runsAgainst": 11,
+          "seriesSlot": 1
         }
       ]
     },
     "recentInningHistory": {
       "away": [
-        {
-          "gamePk": 823784,
-          "date": "2026-05-25",
-          "opponent": "Cardinals",
-          "venueRole": "home",
-          "result": "W",
-          "runsFor": 5,
-          "runsAgainst": 1,
-          "starters": {
-            "team": {
-              "pitcherId": 694819,
-              "pitcherName": "Jacob Misiorowski",
-              "teamName": "Milwaukee Brewers",
-              "opponentName": "St. Louis Cardinals",
-              "firstInningRunsAllowed": 0,
-              "firstInningOutcome": "NRFI"
-            },
-            "opponent": {
-              "pitcherId": 669461,
-              "pitcherName": "Matthew Liberatore",
-              "teamName": "St. Louis Cardinals",
-              "opponentName": "Milwaukee Brewers",
-              "firstInningRunsAllowed": 3,
-              "firstInningOutcome": "RFI"
-            }
-          },
-          "storyAxes": {
-            "market": {
-              "label": "Fav held",
-              "tone": "positive"
-            },
-            "hitters": {
-              "label": "Cashed",
-              "tone": "positive"
-            },
-            "starter": {
-              "label": "Met",
-              "tone": "positive"
-            },
-            "relief": {
-              "label": "Held",
-              "tone": "positive"
-            }
-          },
-          "innings": [
-            {
-              "inning": 1,
-              "runs": 3
-            },
-            {
-              "inning": 2,
-              "runs": 0
-            },
-            {
-              "inning": 3,
-              "runs": 0
-            },
-            {
-              "inning": 4,
-              "runs": 0
-            },
-            {
-              "inning": 5,
-              "runs": 0
-            },
-            {
-              "inning": 6,
-              "runs": 1
-            },
-            {
-              "inning": 7,
-              "runs": 1
-            },
-            {
-              "inning": 8,
-              "runs": 0
-            },
-            {
-              "inning": 9,
-              "runs": 0
-            }
-          ]
-        },
-        {
-          "gamePk": 823785,
-          "date": "2026-05-26",
-          "opponent": "Cardinals",
-          "venueRole": "home",
-          "result": "W",
-          "runsFor": 6,
-          "runsAgainst": 0,
-          "starters": {
-            "team": {
-              "pitcherId": 690986,
-              "pitcherName": "Kyle Harrison",
-              "teamName": "Milwaukee Brewers",
-              "opponentName": "St. Louis Cardinals",
-              "firstInningRunsAllowed": 0,
-              "firstInningOutcome": "NRFI"
-            },
-            "opponent": {
-              "pitcherId": 700241,
-              "pitcherName": "Michael McGreevy",
-              "teamName": "St. Louis Cardinals",
-              "opponentName": "Milwaukee Brewers",
-              "firstInningRunsAllowed": 0,
-              "firstInningOutcome": "NRFI"
-            }
-          },
-          "storyAxes": {
-            "market": {
-              "label": "Won",
-              "tone": "info"
-            },
-            "hitters": {
-              "label": "Cashed",
-              "tone": "positive"
-            },
-            "starter": {
-              "label": "Met",
-              "tone": "positive"
-            },
-            "relief": {
-              "label": "Held",
-              "tone": "positive"
-            }
-          },
-          "innings": [
-            {
-              "inning": 1,
-              "runs": 0
-            },
-            {
-              "inning": 2,
-              "runs": 0
-            },
-            {
-              "inning": 3,
-              "runs": 0
-            },
-            {
-              "inning": 4,
-              "runs": 1
-            },
-            {
-              "inning": 5,
-              "runs": 5
-            },
-            {
-              "inning": 6,
-              "runs": 0
-            },
-            {
-              "inning": 7,
-              "runs": 0
-            },
-            {
-              "inning": 8,
-              "runs": 0
-            },
-            {
-              "inning": 9,
-              "runs": 0
-            }
-          ]
-        },
-        {
-          "gamePk": 823783,
-          "date": "2026-05-27",
-          "opponent": "Cardinals",
-          "venueRole": "home",
-          "result": "W",
-          "runsFor": 2,
-          "runsAgainst": 1,
-          "starters": {
-            "team": {
-              "pitcherId": 694477,
-              "pitcherName": "Chad Patrick",
-              "teamName": "Milwaukee Brewers",
-              "opponentName": "St. Louis Cardinals",
-              "firstInningRunsAllowed": 0,
-              "firstInningOutcome": "NRFI"
-            },
-            "opponent": {
-              "pitcherId": 669160,
-              "pitcherName": "Dustin May",
-              "teamName": "St. Louis Cardinals",
-              "opponentName": "Milwaukee Brewers",
-              "firstInningRunsAllowed": 0,
-              "firstInningOutcome": "NRFI"
-            }
-          },
-          "storyAxes": {
-            "market": {
-              "label": "Won",
-              "tone": "info"
-            },
-            "hitters": {
-              "label": "Flat",
-              "tone": "warning"
-            },
-            "starter": {
-              "label": "Short",
-              "tone": "warning"
-            },
-            "relief": {
-              "label": "Rescued",
-              "tone": "positive"
-            }
-          },
-          "innings": [
-            {
-              "inning": 1,
-              "runs": 0
-            },
-            {
-              "inning": 2,
-              "runs": 0
-            },
-            {
-              "inning": 3,
-              "runs": 0
-            },
-            {
-              "inning": 4,
-              "runs": 0
-            },
-            {
-              "inning": 5,
-              "runs": 0
-            },
-            {
-              "inning": 6,
-              "runs": 0
-            },
-            {
-              "inning": 7,
-              "runs": 0
-            },
-            {
-              "inning": 8,
-              "runs": 2
-            },
-            {
-              "inning": 9,
-              "runs": 0
-            }
-          ]
-        },
         {
           "gamePk": 824191,
           "date": "2026-05-29",
@@ -1553,7 +1312,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 3
+              "runs": 6
             },
             {
               "inning": 2,
@@ -1577,11 +1336,11 @@
             },
             {
               "inning": 7,
-              "runs": 1
+              "runs": 2
             },
             {
               "inning": 8,
-              "runs": 4
+              "runs": 8
             },
             {
               "inning": 9,
@@ -1691,7 +1450,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 1
+              "runs": 2
             },
             {
               "inning": 2,
@@ -1707,7 +1466,7 @@
             },
             {
               "inning": 5,
-              "runs": 2
+              "runs": 4
             },
             {
               "inning": 6,
@@ -1715,186 +1474,20 @@
             },
             {
               "inning": 7,
-              "runs": 2
+              "runs": 4
             },
             {
               "inning": 8,
-              "runs": 1
+              "runs": 2
             },
             {
               "inning": 9,
-              "runs": 3
+              "runs": 6
             }
           ]
         }
       ],
       "home": [
-        {
-          "gamePk": 825081,
-          "date": "2026-05-24",
-          "opponent": "Diamondbacks",
-          "venueRole": "road",
-          "result": "L",
-          "runsFor": 1,
-          "runsAgainst": 9,
-          "starters": {
-            "team": {
-              "pitcherId": 500779,
-              "pitcherName": "Jose Quintana",
-              "teamName": "Colorado Rockies",
-              "opponentName": "Arizona Diamondbacks",
-              "firstInningRunsAllowed": 2,
-              "firstInningOutcome": "RFI"
-            },
-            "opponent": {
-              "pitcherId": 669194,
-              "pitcherName": "Ryne Nelson",
-              "teamName": "Arizona Diamondbacks",
-              "opponentName": "Colorado Rockies",
-              "firstInningRunsAllowed": 0,
-              "firstInningOutcome": "NRFI"
-            }
-          },
-          "storyAxes": {
-            "market": {
-              "label": "Exp L",
-              "tone": "warning"
-            },
-            "hitters": {
-              "label": "Flat",
-              "tone": "warning"
-            },
-            "starter": {
-              "label": "Cracked",
-              "tone": "negative"
-            },
-            "relief": {
-              "label": "No rescue",
-              "tone": "warning"
-            }
-          },
-          "innings": [
-            {
-              "inning": 1,
-              "runs": 0
-            },
-            {
-              "inning": 2,
-              "runs": 0
-            },
-            {
-              "inning": 3,
-              "runs": 0
-            },
-            {
-              "inning": 4,
-              "runs": 0
-            },
-            {
-              "inning": 5,
-              "runs": 0
-            },
-            {
-              "inning": 6,
-              "runs": 0
-            },
-            {
-              "inning": 7,
-              "runs": 0
-            },
-            {
-              "inning": 8,
-              "runs": 1
-            },
-            {
-              "inning": 9,
-              "runs": 0
-            }
-          ]
-        },
-        {
-          "gamePk": 823948,
-          "date": "2026-05-25",
-          "opponent": "Dodgers",
-          "venueRole": "road",
-          "result": "L",
-          "runsFor": 3,
-          "runsAgainst": 5,
-          "starters": {
-            "team": {
-              "pitcherId": 685299,
-              "pitcherName": "Tanner Gordon",
-              "teamName": "Colorado Rockies",
-              "opponentName": "Los Angeles Dodgers",
-              "firstInningRunsAllowed": 0,
-              "firstInningOutcome": "NRFI"
-            },
-            "opponent": {
-              "pitcherId": 686218,
-              "pitcherName": "Emmet Sheehan",
-              "teamName": "Los Angeles Dodgers",
-              "opponentName": "Colorado Rockies",
-              "firstInningRunsAllowed": 0,
-              "firstInningOutcome": "NRFI"
-            }
-          },
-          "storyAxes": {
-            "market": {
-              "label": "Exp L",
-              "tone": "warning"
-            },
-            "hitters": {
-              "label": "Mixed",
-              "tone": "info"
-            },
-            "starter": {
-              "label": "Met",
-              "tone": "positive"
-            },
-            "relief": {
-              "label": "Blew",
-              "tone": "negative"
-            }
-          },
-          "innings": [
-            {
-              "inning": 1,
-              "runs": 0
-            },
-            {
-              "inning": 2,
-              "runs": 0
-            },
-            {
-              "inning": 3,
-              "runs": 0
-            },
-            {
-              "inning": 4,
-              "runs": 2
-            },
-            {
-              "inning": 5,
-              "runs": 0
-            },
-            {
-              "inning": 6,
-              "runs": 0
-            },
-            {
-              "inning": 7,
-              "runs": 1
-            },
-            {
-              "inning": 8,
-              "runs": 0
-            },
-            {
-              "inning": 9,
-              "runs": 0
-            }
-          ]
-        },
         {
           "gamePk": 823949,
           "date": "2026-05-26",
@@ -2416,7 +2009,7 @@
             },
             {
               "inning": 2,
-              "runs": 3
+              "runs": 6
             },
             {
               "inning": 3,
@@ -2424,7 +2017,7 @@
             },
             {
               "inning": 4,
-              "runs": 5
+              "runs": 10
             },
             {
               "inning": 5,
@@ -2493,11 +2086,11 @@
             },
             {
               "inning": 4,
-              "runs": 1
+              "runs": 2
             },
             {
               "inning": 5,
-              "runs": 2
+              "runs": 4
             },
             {
               "inning": 6,
@@ -2509,7 +2102,7 @@
             },
             {
               "inning": 8,
-              "runs": 1
+              "runs": 2
             },
             {
               "inning": 9,
@@ -2572,10 +2165,10 @@
       "starterThreatCount": 9,
       "contactCount": 3,
       "powerCount": 1,
-      "platoonCount": 5,
+      "platoonCount": 6,
       "pitchTypeEdgeCount": 9,
-      "oppositeHandCount": 5,
-      "sameHandCount": 4,
+      "oppositeHandCount": 6,
+      "sameHandCount": 3,
       "switchCount": 1,
       "topThirdSplitCount": 2,
       "topThirdArsenalCount": 3,
@@ -2583,7 +2176,7 @@
       "suppressorCount": 0,
       "platoonPressureIndex": 94,
       "pitchTypePressureIndex": 94,
-      "bullpenPitchTypePressureIndex": 54.6,
+      "bullpenPitchTypePressureIndex": 56.4,
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
       "topThirdScore": 94,
@@ -2610,33 +2203,40 @@
   "lineupBoard": {
     "gameId": "brewers-rockies",
     "title": "Brewers @ Rockies",
-    "snapshot": "2026-06-05T15:41:45.555Z",
+    "snapshot": "2026-06-05T23:10:08.008Z",
     "status": {
-      "away": "partial",
-      "home": "partial"
+      "away": "posted",
+      "home": "posted"
     },
     "weather": {
       "icon": "partly-cloudy-day",
-      "summary": "12% Precipitation 85° Wind 8 mph Out",
-      "precipitationPct": 12,
+      "summary": "16% Precipitation 85° Wind 8 mph Out",
+      "precipitationPct": 16,
       "temperatureF": 85,
       "windMph": 8,
       "windDirection": "Out",
-      "label": "85°F | Wind 8 mph Out | 12% precip"
+      "label": "85°F | Wind 8 mph Out | 16% precip"
     },
     "marketWeatherContext": {
-      "line": "MIL -154",
-      "total": "11.5 Runs",
+      "line": "MIL -153",
+      "total": "12.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
       "teamName": "Brewers",
-      "lineupSource": "rotowire-supplement",
+      "lineupSource": "official-feed",
       "opposingStarter": {
         "id": 663372,
         "name": "Ryan Feltner",
         "hand": "R",
         "type": "Balanced",
+        "inningsPitched": 26,
+        "homeRunsAllowed": 5,
+        "homeRunsPerNine": 1.73,
+        "recentHomeRunsAllowed": 5,
+        "recentHomeRunsAllowedPerStart": 1,
+        "recentHomeRunsPerNine": 1.96,
+        "homeRunDamageLabel": "HR-prone",
         "pitchMixSummary": "4-Seam Fastball 24% / Slider 23% / Changeup 16%"
       },
       "opposingRelievers": [
@@ -2782,8 +2382,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 7,
+            "paSample7": 33,
+            "bbeSample7": 29,
+            "recentStatcastGames": 7,
+            "recentStatcastPa": 33,
+            "recentStatcastAb": 28,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 29,
+            "recentBarrels": 1,
+            "recentHardHit": 5,
+            "recentSweetSpot": 10,
+            "recentBarrelPct": 3.4,
+            "recentHardHitPct": 17.2,
+            "recentSweetSpotPct": 34.5,
+            "recentXobp": 0.35384848484848486,
+            "recentXslg": 0.334,
+            "recentXops": 0.688,
+            "recentAvgExitVelocity": 80.61724137931034,
+            "recentAvgLaunchAngle": 0.5344827586206896,
+            "rolling7Xwoba": 0.316,
+            "rolling14Xwoba": 0.305,
+            "rolling30Xwoba": 0.297,
+            "rolling7Xba": 0.239,
+            "rolling14Xba": 0.223,
+            "rolling30Xba": 0.208,
+            "rolling7Xslg": 0.334,
+            "rolling14Xslg": 0.352,
+            "rolling30Xslg": 0.384,
+            "rolling7BarrelPct": 3.4,
+            "rolling14BarrelPct": 3.5,
+            "rolling30BarrelPct": 4.8,
+            "rolling7HardHitPct": 17.2,
+            "rolling14HardHitPct": 21.1,
+            "rolling30HardHitPct": 18.1,
+            "rolling7SweetSpotPct": 34.5,
+            "rolling14SweetSpotPct": 33.3,
+            "rolling30SweetSpotPct": 32.5,
+            "xwobaTrend": 0.019,
+            "barrelTrend": -1.4,
+            "hardHitTrend": -0.9,
+            "sweetSpotTrend": 2,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.4857142857142857,
+            "avgOpponentRunDiffLast10": 0.6285714285714284,
+            "avgOpponentRunDiffPerGameLast10": 0.9142857142857144,
+            "gamesVsWinningLast10": 4,
+            "weightedHitsPerPaLast10": 0.24541284403669728,
+            "weightedTotalBasesPerPaLast10": 0.36926605504587157,
+            "hitsPerPaWeightDeltaLast10": -0.027,
+            "totalBasesPerPaWeightDeltaLast10": -0.04
+          },
           "careerProfile": {
             "playerId": 592885,
             "fullName": "Christian Yelich",
@@ -2825,7 +2478,8 @@
             "carry",
             "split edge",
             "arsenal edge",
-            "cold"
+            "cold",
+            "statcast up"
           ],
           "primaryTag": "carry",
           "summary": ".289 AVG | .821 OPS | 35 H | 4 HR | 14g: .321 AVG | .817 OPS | 18 H | 0 HR | vs RHP: .289 AVG | .797 OPS | 2 HR | career 7141 PA | .837 OPS | 237 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +2.8 | +5.9 matchup grade in a neutral lane",
@@ -2957,8 +2611,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 6,
+            "paSample7": 26,
+            "bbeSample7": 29,
+            "recentStatcastGames": 6,
+            "recentStatcastPa": 26,
+            "recentStatcastAb": 21,
+            "recentStatcastHomeRuns": 3,
+            "recentBbeSample": 29,
+            "recentBarrels": 3,
+            "recentHardHit": 8,
+            "recentSweetSpot": 9,
+            "recentBarrelPct": 10.3,
+            "recentHardHitPct": 27.6,
+            "recentSweetSpotPct": 31,
+            "recentXobp": 0.469,
+            "recentXslg": 0.7647619047619048,
+            "recentXops": 1.234,
+            "recentAvgExitVelocity": 93.83103448275861,
+            "recentAvgLaunchAngle": 15.017241379310345,
+            "rolling7Xwoba": 0.508,
+            "rolling14Xwoba": 0.383,
+            "rolling30Xwoba": 0.316,
+            "rolling7Xba": 0.343,
+            "rolling14Xba": 0.254,
+            "rolling30Xba": 0.214,
+            "rolling7Xslg": 0.765,
+            "rolling14Xslg": 0.538,
+            "rolling30Xslg": 0.45,
+            "rolling7BarrelPct": 10.3,
+            "rolling14BarrelPct": 10.2,
+            "rolling30BarrelPct": 8.5,
+            "rolling7HardHitPct": 27.6,
+            "rolling14HardHitPct": 27.1,
+            "rolling30HardHitPct": 27.5,
+            "rolling7SweetSpotPct": 31,
+            "rolling14SweetSpotPct": 30.5,
+            "rolling30SweetSpotPct": 29.6,
+            "xwobaTrend": 0.192,
+            "barrelTrend": 1.8,
+            "hardHitTrend": 0.1,
+            "sweetSpotTrend": 1.4,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.4857142857142857,
+            "avgOpponentRunDiffLast10": 0.6285714285714284,
+            "avgOpponentRunDiffPerGameLast10": 1.2142857142857142,
+            "gamesVsWinningLast10": 4,
+            "weightedHitsPerPaLast10": 0.3024390243902439,
+            "weightedTotalBasesPerPaLast10": 0.6219512195121951,
+            "hitsPerPaWeightDeltaLast10": 0.01,
+            "totalBasesPerPaWeightDeltaLast10": 0.037
+          },
           "careerProfile": {
             "playerId": 694192,
             "fullName": "Jackson Chourio",
@@ -3000,7 +2707,8 @@
             "carry",
             "heater",
             "arsenal edge",
-            "traffic"
+            "traffic",
+            "statcast up"
           ],
           "primaryTag": "carry",
           "summary": ".308 AVG | .878 OPS | 33 H | 4 HR | 12g: .476 AVG | 1.577 OPS | 20 H | 6 HR | vs RHP: .317 AVG | .921 OPS | 3 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +5.8 | +10.0 matchup grade in a neutral lane",
@@ -3132,8 +2840,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 7,
+            "paSample7": 29,
+            "bbeSample7": 40,
+            "recentStatcastGames": 7,
+            "recentStatcastPa": 29,
+            "recentStatcastAb": 22,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 40,
+            "recentBarrels": 1,
+            "recentHardHit": 11,
+            "recentSweetSpot": 10,
+            "recentBarrelPct": 2.5,
+            "recentHardHitPct": 27.5,
+            "recentSweetSpotPct": 25,
+            "recentXobp": 0.40793103448275864,
+            "recentXslg": 0.42590909090909085,
+            "recentXops": 0.834,
+            "recentAvgExitVelocity": 91.6575,
+            "recentAvgLaunchAngle": 11.809999999999999,
+            "rolling7Xwoba": 0.375,
+            "rolling14Xwoba": 0.32,
+            "rolling30Xwoba": 0.32,
+            "rolling7Xba": 0.251,
+            "rolling14Xba": 0.231,
+            "rolling30Xba": 0.24,
+            "rolling7Xslg": 0.426,
+            "rolling14Xslg": 0.355,
+            "rolling30Xslg": 0.35,
+            "rolling7BarrelPct": 2.5,
+            "rolling14BarrelPct": 1.6,
+            "rolling30BarrelPct": 1.4,
+            "rolling7HardHitPct": 27.5,
+            "rolling14HardHitPct": 23.4,
+            "rolling30HardHitPct": 20.3,
+            "rolling7SweetSpotPct": 25,
+            "rolling14SweetSpotPct": 31.2,
+            "rolling30SweetSpotPct": 28,
+            "xwobaTrend": 0.055,
+            "barrelTrend": 1.1,
+            "hardHitTrend": 7.2,
+            "sweetSpotTrend": -3,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.4857142857142857,
+            "avgOpponentRunDiffLast10": 0.6,
+            "avgOpponentRunDiffPerGameLast10": 1.0857142857142856,
+            "gamesVsWinningLast10": 4,
+            "weightedHitsPerPaLast10": 0.1491442542787286,
+            "weightedTotalBasesPerPaLast10": 0.17359413202933985,
+            "hitsPerPaWeightDeltaLast10": 0.003,
+            "totalBasesPerPaWeightDeltaLast10": 0.003
+          },
           "careerProfile": {
             "playerId": 668930,
             "fullName": "Brice Turang",
@@ -3175,7 +2936,8 @@
             "carry",
             "split edge",
             "arsenal edge",
-            "cold"
+            "cold",
+            "statcast up"
           ],
           "primaryTag": "carry",
           "summary": ".280 AVG | .869 OPS | 58 H | 7 HR | 14g: .318 AVG | .948 OPS | 14 H | 0 HR | vs RHP: .315 AVG | .991 OPS | 7 HR | career 1966 PA | .709 OPS | 38 HR | contact-stable profile | power 38 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +4.2 | +10.0 matchup grade in a neutral lane",
@@ -3307,8 +3069,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 6,
+            "paSample7": 27,
+            "bbeSample7": 35,
+            "recentStatcastGames": 6,
+            "recentStatcastPa": 27,
+            "recentStatcastAb": 23,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 35,
+            "recentBarrels": 0,
+            "recentHardHit": 9,
+            "recentSweetSpot": 7,
+            "recentBarrelPct": 0,
+            "recentHardHitPct": 25.7,
+            "recentSweetSpotPct": 20,
+            "recentXobp": 0.16525925925925927,
+            "recentXslg": 0.1884782608695652,
+            "recentXops": 0.354,
+            "recentAvgExitVelocity": 87.43142857142857,
+            "recentAvgLaunchAngle": 11.28857142857143,
+            "rolling7Xwoba": 0.166,
+            "rolling14Xwoba": 0.272,
+            "rolling30Xwoba": 0.299,
+            "rolling7Xba": 0.133,
+            "rolling14Xba": 0.229,
+            "rolling30Xba": 0.248,
+            "rolling7Xslg": 0.188,
+            "rolling14Xslg": 0.37,
+            "rolling30Xslg": 0.372,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 3.4,
+            "rolling30BarrelPct": 4.1,
+            "rolling7HardHitPct": 25.7,
+            "rolling14HardHitPct": 27.6,
+            "rolling30HardHitPct": 30.9,
+            "rolling7SweetSpotPct": 20,
+            "rolling14SweetSpotPct": 31,
+            "rolling30SweetSpotPct": 29.3,
+            "xwobaTrend": -0.133,
+            "barrelTrend": -4.1,
+            "hardHitTrend": -5.2,
+            "sweetSpotTrend": -9.3,
+            "trendSignal": "fading"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.5142857142857143,
+            "avgOpponentRunDiffLast10": 1.1142857142857143,
+            "avgOpponentRunDiffPerGameLast10": 1.1857142857142855,
+            "gamesVsWinningLast10": 4,
+            "weightedHitsPerPaLast10": 0.2292682926829268,
+            "weightedTotalBasesPerPaLast10": 0.36829268292682926,
+            "hitsPerPaWeightDeltaLast10": 0.004,
+            "totalBasesPerPaWeightDeltaLast10": 0.018
+          },
           "careerProfile": {
             "playerId": 661388,
             "fullName": "William Contreras",
@@ -3349,7 +3164,8 @@
           "tags": [
             "arsenal edge",
             "traffic",
-            "cold"
+            "cold",
+            "statcast fade"
           ],
           "primaryTag": "arsenal edge",
           "summary": ".285 AVG | .731 OPS | 63 H | 4 HR | 12g: .130 AVG | .322 OPS | 6 H | 0 HR | vs RHP: .295 AVG | .739 OPS | 3 HR | career 2750 PA | .801 OPS | 89 HR | contact-stable profile | power 59 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +4.4 | -8.0 matchup grade in a neutral lane",
@@ -3481,8 +3297,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 7,
+            "paSample7": 29,
+            "bbeSample7": 43,
+            "recentStatcastGames": 7,
+            "recentStatcastPa": 29,
+            "recentStatcastAb": 22,
+            "recentStatcastHomeRuns": 2,
+            "recentBbeSample": 43,
+            "recentBarrels": 2,
+            "recentHardHit": 12,
+            "recentSweetSpot": 12,
+            "recentBarrelPct": 4.7,
+            "recentHardHitPct": 27.9,
+            "recentSweetSpotPct": 27.9,
+            "recentXobp": 0.43413793103448284,
+            "recentXslg": 0.5226315789473684,
+            "recentXops": 0.957,
+            "recentAvgExitVelocity": 93.7657142857143,
+            "recentAvgLaunchAngle": 7.1000000000000005,
+            "rolling7Xwoba": 0.397,
+            "rolling14Xwoba": 0.352,
+            "rolling30Xwoba": 0.399,
+            "rolling7Xba": 0.294,
+            "rolling14Xba": 0.27,
+            "rolling30Xba": 0.302,
+            "rolling7Xslg": 0.523,
+            "rolling14Xslg": 0.452,
+            "rolling30Xslg": 0.574,
+            "rolling7BarrelPct": 4.7,
+            "rolling14BarrelPct": 4.9,
+            "rolling30BarrelPct": 7.4,
+            "rolling7HardHitPct": 27.9,
+            "rolling14HardHitPct": 29.5,
+            "rolling30HardHitPct": 33.3,
+            "rolling7SweetSpotPct": 27.9,
+            "rolling14SweetSpotPct": 24.6,
+            "rolling30SweetSpotPct": 27.8,
+            "xwobaTrend": -0.002,
+            "barrelTrend": -2.7,
+            "hardHitTrend": -5.4,
+            "sweetSpotTrend": 0.1,
+            "trendSignal": "fading"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.5142857142857143,
+            "avgOpponentRunDiffLast10": 0.9142857142857144,
+            "avgOpponentRunDiffPerGameLast10": 1.5857142857142856,
+            "gamesVsWinningLast10": 5,
+            "weightedHitsPerPaLast10": 0.15159574468085105,
+            "weightedTotalBasesPerPaLast10": 0.375,
+            "hitsPerPaWeightDeltaLast10": -0.011,
+            "totalBasesPerPaWeightDeltaLast10": -0.03
+          },
           "careerProfile": {
             "playerId": 641343,
             "fullName": "Jake Bauers",
@@ -3523,7 +3392,8 @@
           "tags": [
             "split edge",
             "arsenal edge",
-            "cold"
+            "cold",
+            "statcast fade"
           ],
           "primaryTag": "split edge",
           "summary": ".269 AVG | .839 OPS | 50 H | 10 HR | 14g: .136 AVG | .754 OPS | 6 H | 4 HR | vs RHP: .275 AVG | .871 OPS | 8 HR | career 2156 PA | .688 OPS | 67 HR | baseline career profile | power 53 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +3.7 | +4.2 matchup grade in a neutral lane",
@@ -3655,8 +3525,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 6,
+            "paSample7": 19,
+            "bbeSample7": 21,
+            "recentStatcastGames": 6,
+            "recentStatcastPa": 19,
+            "recentStatcastAb": 14,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 21,
+            "recentBarrels": 0,
+            "recentHardHit": 3,
+            "recentSweetSpot": 5,
+            "recentBarrelPct": 0,
+            "recentHardHitPct": 14.3,
+            "recentSweetSpotPct": 23.8,
+            "recentXobp": 0.37289473684210533,
+            "recentXslg": 0.2661,
+            "recentXops": 0.639,
+            "recentAvgExitVelocity": 92.35625,
+            "recentAvgLaunchAngle": 10.6875,
+            "rolling7Xwoba": 0.293,
+            "rolling14Xwoba": 0.308,
+            "rolling30Xwoba": 0.309,
+            "rolling7Xba": 0.209,
+            "rolling14Xba": 0.221,
+            "rolling30Xba": 0.229,
+            "rolling7Xslg": 0.266,
+            "rolling14Xslg": 0.39,
+            "rolling30Xslg": 0.412,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 2.7,
+            "rolling30BarrelPct": 5.6,
+            "rolling7HardHitPct": 14.3,
+            "rolling14HardHitPct": 13.5,
+            "rolling30HardHitPct": 25.4,
+            "rolling7SweetSpotPct": 23.8,
+            "rolling14SweetSpotPct": 32.4,
+            "rolling30SweetSpotPct": 31,
+            "xwobaTrend": -0.016,
+            "barrelTrend": -5.6,
+            "hardHitTrend": -11.1,
+            "sweetSpotTrend": -7.2,
+            "trendSignal": "fading"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.4857142857142857,
+            "avgOpponentRunDiffLast10": 0.6,
+            "avgOpponentRunDiffPerGameLast10": 1.0857142857142856,
+            "gamesVsWinningLast10": 4,
+            "weightedHitsPerPaLast10": 0.2338461538461538,
+            "weightedTotalBasesPerPaLast10": 0.3507692307692307,
+            "hitsPerPaWeightDeltaLast10": -0.009,
+            "totalBasesPerPaWeightDeltaLast10": -0.043
+          },
           "careerProfile": {
             "playerId": 669003,
             "fullName": "Garrett Mitchell",
@@ -3696,7 +3619,8 @@
           },
           "tags": [
             "split edge",
-            "cold"
+            "cold",
+            "statcast fade"
           ],
           "primaryTag": "split edge",
           "summary": ".234 AVG | .727 OPS | 36 H | 3 HR | 12g: .214 AVG | .707 OPS | 6 H | 0 HR | vs RHP: .223 AVG | .723 OPS | 3 HR | career 621 PA | .752 OPS | 16 HR | baseline career profile | power 47 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit -0.1 | +0.6 matchup grade in a neutral lane",
@@ -3828,8 +3752,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 6,
+            "paSample7": 23,
+            "bbeSample7": 30,
+            "recentStatcastGames": 6,
+            "recentStatcastPa": 23,
+            "recentStatcastAb": 22,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 30,
+            "recentBarrels": 0,
+            "recentHardHit": 8,
+            "recentSweetSpot": 11,
+            "recentBarrelPct": 0,
+            "recentHardHitPct": 26.7,
+            "recentSweetSpotPct": 36.7,
+            "recentXobp": 0.2866086956521739,
+            "recentXslg": 0.31663636363636366,
+            "recentXops": 0.603,
+            "recentAvgExitVelocity": 88.16000000000001,
+            "recentAvgLaunchAngle": 8.936666666666667,
+            "rolling7Xwoba": 0.266,
+            "rolling14Xwoba": 0.251,
+            "rolling30Xwoba": 0.236,
+            "rolling7Xba": 0.254,
+            "rolling14Xba": 0.243,
+            "rolling30Xba": 0.232,
+            "rolling7Xslg": 0.317,
+            "rolling14Xslg": 0.294,
+            "rolling30Xslg": 0.282,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 0,
+            "rolling30BarrelPct": 0,
+            "rolling7HardHitPct": 26.7,
+            "rolling14HardHitPct": 20.8,
+            "rolling30HardHitPct": 20,
+            "rolling7SweetSpotPct": 36.7,
+            "rolling14SweetSpotPct": 28.3,
+            "rolling30SweetSpotPct": 26.7,
+            "xwobaTrend": 0.03,
+            "barrelTrend": 0,
+            "hardHitTrend": 6.7,
+            "sweetSpotTrend": 10,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.5428571428571428,
+            "avgOpponentRunDiffLast10": 1.3714285714285714,
+            "avgOpponentRunDiffPerGameLast10": 1.7714285714285716,
+            "gamesVsWinningLast10": 5,
+            "weightedHitsPerPaLast10": 0.1747851002865329,
+            "weightedTotalBasesPerPaLast10": 0.19484240687679077,
+            "hitsPerPaWeightDeltaLast10": -0.002,
+            "totalBasesPerPaWeightDeltaLast10": -0.011
+          },
           "careerProfile": {
             "playerId": 686217,
             "fullName": "Sal Frelick",
@@ -3870,7 +3847,8 @@
           "tags": [
             "split edge",
             "traffic",
-            "arsenal risk"
+            "arsenal risk",
+            "statcast up"
           ],
           "primaryTag": "split edge",
           "summary": ".223 AVG | .599 OPS | 42 H | 3 HR | 12g: .273 AVG | .668 OPS | 12 H | 0 HR | vs RHP: .261 AVG | .682 OPS | 2 HR | career 1540 PA | .689 OPS | 20 HR | contact-stable profile | power 26 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit -1.6 | +1.6 matchup grade in a neutral lane",
@@ -4002,8 +3980,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 5,
+            "paSample7": 21,
+            "bbeSample7": 33,
+            "recentStatcastGames": 5,
+            "recentStatcastPa": 21,
+            "recentStatcastAb": 17,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 33,
+            "recentBarrels": 0,
+            "recentHardHit": 5,
+            "recentSweetSpot": 7,
+            "recentBarrelPct": 0,
+            "recentHardHitPct": 15.2,
+            "recentSweetSpotPct": 21.2,
+            "recentXobp": 0.3345714285714286,
+            "recentXslg": 0.28217647058823525,
+            "recentXops": 0.617,
+            "recentAvgExitVelocity": 87.39393939393939,
+            "recentAvgLaunchAngle": -4.184848484848484,
+            "rolling7Xwoba": 0.285,
+            "rolling14Xwoba": 0.339,
+            "rolling30Xwoba": 0.314,
+            "rolling7Xba": 0.233,
+            "rolling14Xba": 0.312,
+            "rolling30Xba": 0.287,
+            "rolling7Xslg": 0.282,
+            "rolling14Xslg": 0.371,
+            "rolling30Xslg": 0.342,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 0,
+            "rolling30BarrelPct": 0.9,
+            "rolling7HardHitPct": 15.2,
+            "rolling14HardHitPct": 18.5,
+            "rolling30HardHitPct": 19.5,
+            "rolling7SweetSpotPct": 21.2,
+            "rolling14SweetSpotPct": 25.9,
+            "rolling30SweetSpotPct": 27.4,
+            "xwobaTrend": -0.029,
+            "barrelTrend": -0.9,
+            "hardHitTrend": -4.3,
+            "sweetSpotTrend": -6.2,
+            "trendSignal": "fading"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.48571428571428577,
+            "avgOpponentRunDiffLast10": 0.6857142857142857,
+            "avgOpponentRunDiffPerGameLast10": 0.7571428571428571,
+            "gamesVsWinningLast10": 3,
+            "weightedHitsPerPaLast10": 0.1348314606741573,
+            "weightedTotalBasesPerPaLast10": 0.1348314606741573,
+            "hitsPerPaWeightDeltaLast10": -0.004,
+            "totalBasesPerPaWeightDeltaLast10": -0.004
+          },
           "careerProfile": {
             "playerId": 650859,
             "fullName": "Luis Rengifo",
@@ -4043,7 +4074,8 @@
           },
           "tags": [
             "split edge",
-            "cold"
+            "cold",
+            "statcast fade"
           ],
           "primaryTag": "split edge",
           "summary": ".204 AVG | .527 OPS | 34 H | 0 HR | 10g: .176 AVG | .476 OPS | 6 H | 0 HR | vs RHP: .248 AVG | .628 OPS | 0 HR | career 2673 PA | .677 OPS | 62 HR | contact-stable profile | power 36 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit -0.5 | -3.1 matchup grade in a neutral lane",
@@ -4175,8 +4207,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 7,
+            "paSample7": 25,
+            "bbeSample7": 31,
+            "recentStatcastGames": 7,
+            "recentStatcastPa": 25,
+            "recentStatcastAb": 22,
+            "recentStatcastHomeRuns": 2,
+            "recentBbeSample": 31,
+            "recentBarrels": 2,
+            "recentHardHit": 9,
+            "recentSweetSpot": 16,
+            "recentBarrelPct": 6.5,
+            "recentHardHitPct": 29,
+            "recentSweetSpotPct": 51.6,
+            "recentXobp": 0.32752000000000003,
+            "recentXslg": 0.4380909090909091,
+            "recentXops": 0.766,
+            "recentAvgExitVelocity": 89.82903225806452,
+            "recentAvgLaunchAngle": 21.683870967741935,
+            "rolling7Xwoba": 0.334,
+            "rolling14Xwoba": 0.296,
+            "rolling30Xwoba": 0.259,
+            "rolling7Xba": 0.236,
+            "rolling14Xba": 0.223,
+            "rolling30Xba": 0.198,
+            "rolling7Xslg": 0.438,
+            "rolling14Xslg": 0.385,
+            "rolling30Xslg": 0.305,
+            "rolling7BarrelPct": 6.5,
+            "rolling14BarrelPct": 4.3,
+            "rolling30BarrelPct": 2.4,
+            "rolling7HardHitPct": 29,
+            "rolling14HardHitPct": 27.7,
+            "rolling30HardHitPct": 19.3,
+            "rolling7SweetSpotPct": 51.6,
+            "rolling14SweetSpotPct": 38.3,
+            "rolling30SweetSpotPct": 30.1,
+            "xwobaTrend": 0.075,
+            "barrelTrend": 4.1,
+            "hardHitTrend": 9.7,
+            "sweetSpotTrend": 21.5,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.5142857142857143,
+            "avgOpponentRunDiffLast10": 0.9142857142857144,
+            "avgOpponentRunDiffPerGameLast10": 1.5857142857142856,
+            "gamesVsWinningLast10": 5,
+            "weightedHitsPerPaLast10": 0.10179640718562875,
+            "weightedTotalBasesPerPaLast10": 0.3083832335329342,
+            "hitsPerPaWeightDeltaLast10": 0.011,
+            "totalBasesPerPaWeightDeltaLast10": 0.036
+          },
           "careerProfile": {
             "playerId": 666152,
             "fullName": "David Hamilton",
@@ -4217,7 +4302,8 @@
           "tags": [
             "carry",
             "heater",
-            "split edge"
+            "split edge",
+            "statcast up"
           ],
           "primaryTag": "carry",
           "summary": ".231 AVG | .629 OPS | 33 H | 2 HR | 14g: .273 AVG | .951 OPS | 12 H | 4 HR | vs RHP: .224 AVG | .627 OPS | 2 HR | career 703 PA | .633 OPS | 15 HR | baseline career profile | power 30 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +0.2 | +10.0 matchup grade in a neutral lane",
@@ -4448,12 +4534,19 @@
     },
     "home": {
       "teamName": "Rockies",
-      "lineupSource": "rotowire-supplement",
+      "lineupSource": "official-feed",
       "opposingStarter": {
         "id": 687075,
         "name": "Brandon Sproat",
         "hand": "R",
         "type": "Traffic-risk",
+        "inningsPitched": 49,
+        "homeRunsAllowed": 10,
+        "homeRunsPerNine": 1.84,
+        "recentHomeRunsAllowed": 3,
+        "recentHomeRunsAllowedPerStart": 0.6,
+        "recentHomeRunsPerNine": 1.21,
+        "homeRunDamageLabel": "HR-prone",
         "pitchMixSummary": "Sinker 28% / Cutter 27% / 4-Seam Fastball 19%"
       },
       "opposingRelievers": [
@@ -4599,8 +4692,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 6,
+            "paSample7": 29,
+            "bbeSample7": 36,
+            "recentStatcastGames": 6,
+            "recentStatcastPa": 29,
+            "recentStatcastAb": 25,
+            "recentStatcastHomeRuns": 2,
+            "recentBbeSample": 36,
+            "recentBarrels": 2,
+            "recentHardHit": 9,
+            "recentSweetSpot": 12,
+            "recentBarrelPct": 5.6,
+            "recentHardHitPct": 25,
+            "recentSweetSpotPct": 33.3,
+            "recentXobp": 0.36579310344827587,
+            "recentXslg": 0.53888,
+            "recentXops": 0.905,
+            "recentAvgExitVelocity": 90.55000000000001,
+            "recentAvgLaunchAngle": 11.475,
+            "rolling7Xwoba": 0.388,
+            "rolling14Xwoba": 0.298,
+            "rolling30Xwoba": 0.324,
+            "rolling7Xba": 0.295,
+            "rolling14Xba": 0.248,
+            "rolling30Xba": 0.279,
+            "rolling7Xslg": 0.539,
+            "rolling14Xslg": 0.412,
+            "rolling30Xslg": 0.457,
+            "rolling7BarrelPct": 5.6,
+            "rolling14BarrelPct": 2.7,
+            "rolling30BarrelPct": 4.2,
+            "rolling7HardHitPct": 25,
+            "rolling14HardHitPct": 21.3,
+            "rolling30HardHitPct": 16.1,
+            "rolling7SweetSpotPct": 33.3,
+            "rolling14SweetSpotPct": 34.7,
+            "rolling30SweetSpotPct": 35.7,
+            "xwobaTrend": 0.064,
+            "barrelTrend": 1.4,
+            "hardHitTrend": 8.9,
+            "sweetSpotTrend": -2.4,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.5750000000000001,
+            "avgOpponentRunDiffLast10": 1.25,
+            "avgOpponentRunDiffPerGameLast10": 1.6375,
+            "gamesVsWinningLast10": 5,
+            "weightedHitsPerPaLast10": 0.24666666666666665,
+            "weightedTotalBasesPerPaLast10": 0.3355555555555555,
+            "hitsPerPaWeightDeltaLast10": -0.009,
+            "totalBasesPerPaWeightDeltaLast10": -0.037
+          },
           "careerProfile": {
             "playerId": 664983,
             "fullName": "Jake McCarthy",
@@ -4642,7 +4788,8 @@
             "carry",
             "heater",
             "split edge",
-            "arsenal edge"
+            "arsenal edge",
+            "statcast up"
           ],
           "primaryTag": "carry",
           "summary": ".284 AVG | .794 OPS | 44 H | 4 HR | 12g: .360 AVG | 1.134 OPS | 18 H | 4 HR | vs RHP: .264 AVG | .777 OPS | 4 HR | career 1611 PA | .711 OPS | 27 HR | contact-stable profile | power 39 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.7 | +10.0 matchup grade in a traffic-risk lane",
@@ -4774,8 +4921,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 5,
+            "paSample7": 20,
+            "bbeSample7": 27,
+            "recentStatcastGames": 5,
+            "recentStatcastPa": 20,
+            "recentStatcastAb": 16,
+            "recentStatcastHomeRuns": 1,
+            "recentBbeSample": 27,
+            "recentBarrels": 2,
+            "recentHardHit": 7,
+            "recentSweetSpot": 6,
+            "recentBarrelPct": 7.4,
+            "recentHardHitPct": 25.9,
+            "recentSweetSpotPct": 22.2,
+            "recentXobp": 0.46624999999999994,
+            "recentXslg": 0.5211250000000001,
+            "recentXops": 0.987,
+            "recentAvgExitVelocity": 91.31481481481481,
+            "recentAvgLaunchAngle": 2.574074074074074,
+            "rolling7Xwoba": 0.434,
+            "rolling14Xwoba": 0.336,
+            "rolling30Xwoba": 0.317,
+            "rolling7Xba": 0.333,
+            "rolling14Xba": 0.278,
+            "rolling30Xba": 0.276,
+            "rolling7Xslg": 0.521,
+            "rolling14Xslg": 0.394,
+            "rolling30Xslg": 0.373,
+            "rolling7BarrelPct": 7.4,
+            "rolling14BarrelPct": 3,
+            "rolling30BarrelPct": 1.6,
+            "rolling7HardHitPct": 25.9,
+            "rolling14HardHitPct": 22.7,
+            "rolling30HardHitPct": 18.5,
+            "rolling7SweetSpotPct": 22.2,
+            "rolling14SweetSpotPct": 27.3,
+            "rolling30SweetSpotPct": 30.6,
+            "xwobaTrend": 0.117,
+            "barrelTrend": 5.8,
+            "hardHitTrend": 7.4,
+            "sweetSpotTrend": -8.4,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.6222222222222222,
+            "avgOpponentRunDiffLast10": 1.511111111111111,
+            "avgOpponentRunDiffPerGameLast10": 1.6888888888888889,
+            "gamesVsWinningLast10": 6,
+            "weightedHitsPerPaLast10": 0.22666666666666668,
+            "weightedTotalBasesPerPaLast10": 0.34888888888888897,
+            "hitsPerPaWeightDeltaLast10": -0.048,
+            "totalBasesPerPaWeightDeltaLast10": -0.076
+          },
           "careerProfile": {
             "playerId": 671289,
             "fullName": "Tyler Freeman",
@@ -4817,7 +5017,8 @@
             "carry",
             "heater",
             "arsenal edge",
-            "traffic"
+            "traffic",
+            "statcast up"
           ],
           "primaryTag": "carry",
           "summary": ".277 AVG | .733 OPS | 38 H | 3 HR | 10g: .500 AVG | 1.413 OPS | 16 H | 2 HR | vs RHP: .293 AVG | .739 OPS | 1 HR | career 1213 PA | .672 OPS | 15 HR | contact-stable profile | power 26 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane",
@@ -4949,8 +5150,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 5,
+            "paSample7": 20,
+            "bbeSample7": 31,
+            "recentStatcastGames": 5,
+            "recentStatcastPa": 20,
+            "recentStatcastAb": 18,
+            "recentStatcastHomeRuns": 1,
+            "recentBbeSample": 31,
+            "recentBarrels": 0,
+            "recentHardHit": 7,
+            "recentSweetSpot": 9,
+            "recentBarrelPct": 0,
+            "recentHardHitPct": 22.6,
+            "recentSweetSpotPct": 29,
+            "recentXobp": 0.24355000000000002,
+            "recentXslg": 0.24933333333333335,
+            "recentXops": 0.493,
+            "recentAvgExitVelocity": 83.37096774193549,
+            "recentAvgLaunchAngle": 15.654838709677419,
+            "rolling7Xwoba": 0.227,
+            "rolling14Xwoba": 0.285,
+            "rolling30Xwoba": 0.34,
+            "rolling7Xba": 0.202,
+            "rolling14Xba": 0.216,
+            "rolling30Xba": 0.259,
+            "rolling7Xslg": 0.249,
+            "rolling14Xslg": 0.317,
+            "rolling30Xslg": 0.392,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 1.9,
+            "rolling30BarrelPct": 2.8,
+            "rolling7HardHitPct": 22.6,
+            "rolling14HardHitPct": 19.2,
+            "rolling30HardHitPct": 19.4,
+            "rolling7SweetSpotPct": 29,
+            "rolling14SweetSpotPct": 32.7,
+            "rolling30SweetSpotPct": 33.3,
+            "xwobaTrend": -0.113,
+            "barrelTrend": -2.8,
+            "hardHitTrend": 3.2,
+            "sweetSpotTrend": -4.3,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.7000000000000001,
+            "avgOpponentRunDiffLast10": 2.075,
+            "avgOpponentRunDiffPerGameLast10": 1.8499999999999999,
+            "gamesVsWinningLast10": 6,
+            "weightedHitsPerPaLast10": 0.30075187969924816,
+            "weightedTotalBasesPerPaLast10": 0.5363408521303259,
+            "hitsPerPaWeightDeltaLast10": -0.005,
+            "totalBasesPerPaWeightDeltaLast10": 0.009
+          },
           "careerProfile": {
             "playerId": 681198,
             "fullName": "TJ Rumfield",
@@ -4993,7 +5247,8 @@
             "heater",
             "split edge",
             "arsenal edge",
-            "traffic"
+            "traffic",
+            "statcast up"
           ],
           "primaryTag": "carry",
           "summary": ".286 AVG | .816 OPS | 60 H | 8 HR | 10g: .333 AVG | .906 OPS | 12 H | 2 HR | vs RHP: .298 AVG | .893 OPS | 8 HR | career 227 PA | .804 OPS | 7 HR | baseline career profile | power 59 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +6.6 | +10.0 matchup grade in a traffic-risk lane",
@@ -5125,8 +5380,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 6,
+            "paSample7": 29,
+            "bbeSample7": 32,
+            "recentStatcastGames": 6,
+            "recentStatcastPa": 29,
+            "recentStatcastAb": 24,
+            "recentStatcastHomeRuns": 3,
+            "recentBbeSample": 32,
+            "recentBarrels": 4,
+            "recentHardHit": 11,
+            "recentSweetSpot": 9,
+            "recentBarrelPct": 12.5,
+            "recentHardHitPct": 34.4,
+            "recentSweetSpotPct": 28.1,
+            "recentXobp": 0.4537586206896552,
+            "recentXslg": 0.7677499999999999,
+            "recentXops": 1.222,
+            "recentAvgExitVelocity": 90.440625,
+            "recentAvgLaunchAngle": 19.271875,
+            "rolling7Xwoba": 0.506,
+            "rolling14Xwoba": 0.414,
+            "rolling30Xwoba": 0.328,
+            "rolling7Xba": 0.34,
+            "rolling14Xba": 0.276,
+            "rolling30Xba": 0.244,
+            "rolling7Xslg": 0.768,
+            "rolling14Xslg": 0.595,
+            "rolling30Xslg": 0.449,
+            "rolling7BarrelPct": 12.5,
+            "rolling14BarrelPct": 10,
+            "rolling30BarrelPct": 6.4,
+            "rolling7HardHitPct": 34.4,
+            "rolling14HardHitPct": 30,
+            "rolling30HardHitPct": 24.8,
+            "rolling7SweetSpotPct": 28.1,
+            "rolling14SweetSpotPct": 26.7,
+            "rolling30SweetSpotPct": 22.7,
+            "xwobaTrend": 0.178,
+            "barrelTrend": 6.1,
+            "hardHitTrend": 9.6,
+            "sweetSpotTrend": 5.4,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.6,
+            "avgOpponentRunDiffLast10": 1.55,
+            "avgOpponentRunDiffPerGameLast10": 1.6125,
+            "gamesVsWinningLast10": 5,
+            "weightedHitsPerPaLast10": 0.2621564482029598,
+            "weightedTotalBasesPerPaLast10": 0.5264270613107822,
+            "hitsPerPaWeightDeltaLast10": 0.012,
+            "totalBasesPerPaWeightDeltaLast10": 0.004
+          },
           "careerProfile": {
             "playerId": 696100,
             "fullName": "Hunter Goodman",
@@ -5168,6 +5476,7 @@
             "carry",
             "heater",
             "arsenal edge",
+            "statcast up",
             "career power"
           ],
           "primaryTag": "carry",
@@ -5300,8 +5609,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 6,
+            "paSample7": 29,
+            "bbeSample7": 42,
+            "recentStatcastGames": 6,
+            "recentStatcastPa": 29,
+            "recentStatcastAb": 28,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 42,
+            "recentBarrels": 2,
+            "recentHardHit": 8,
+            "recentSweetSpot": 13,
+            "recentBarrelPct": 4.8,
+            "recentHardHitPct": 19,
+            "recentSweetSpotPct": 31,
+            "recentXobp": 0.3291724137931034,
+            "recentXslg": 0.46935714285714286,
+            "recentXops": 0.799,
+            "recentAvgExitVelocity": 90.58333333333333,
+            "recentAvgLaunchAngle": 17.945238095238096,
+            "rolling7Xwoba": 0.346,
+            "rolling14Xwoba": 0.33,
+            "rolling30Xwoba": 0.345,
+            "rolling7Xba": 0.305,
+            "rolling14Xba": 0.29,
+            "rolling30Xba": 0.324,
+            "rolling7Xslg": 0.469,
+            "rolling14Xslg": 0.402,
+            "rolling30Xslg": 0.423,
+            "rolling7BarrelPct": 4.8,
+            "rolling14BarrelPct": 2.6,
+            "rolling30BarrelPct": 1.6,
+            "rolling7HardHitPct": 19,
+            "rolling14HardHitPct": 19.7,
+            "rolling30HardHitPct": 19.4,
+            "rolling7SweetSpotPct": 31,
+            "rolling14SweetSpotPct": 27.6,
+            "rolling30SweetSpotPct": 32.6,
+            "xwobaTrend": 0.001,
+            "barrelTrend": 3.2,
+            "hardHitTrend": -0.4,
+            "sweetSpotTrend": -1.6,
+            "trendSignal": "flat"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.5750000000000001,
+            "avgOpponentRunDiffLast10": 1.25,
+            "avgOpponentRunDiffPerGameLast10": 1.6375,
+            "gamesVsWinningLast10": 5,
+            "weightedHitsPerPaLast10": 0.2879120879120879,
+            "weightedTotalBasesPerPaLast10": 0.37142857142857144,
+            "hitsPerPaWeightDeltaLast10": -0.008,
+            "totalBasesPerPaWeightDeltaLast10": -0.015
+          },
           "careerProfile": {
             "playerId": 687859,
             "fullName": "Troy Johnston",
@@ -5353,7 +5715,7 @@
           "playerId": 650489,
           "slot": 6,
           "name": "Willi Castro",
-          "position": "2B",
+          "position": "3B",
           "bats": "S",
           "savant": {
             "playerId": 650489,
@@ -5475,8 +5837,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 6,
+            "paSample7": 29,
+            "bbeSample7": 40,
+            "recentStatcastGames": 6,
+            "recentStatcastPa": 29,
+            "recentStatcastAb": 24,
+            "recentStatcastHomeRuns": 1,
+            "recentBbeSample": 40,
+            "recentBarrels": 1,
+            "recentHardHit": 8,
+            "recentSweetSpot": 12,
+            "recentBarrelPct": 2.5,
+            "recentHardHitPct": 20,
+            "recentSweetSpotPct": 30,
+            "recentXobp": 0.3469655172413793,
+            "recentXslg": 0.400625,
+            "recentXops": 0.748,
+            "recentAvgExitVelocity": 85.515,
+            "recentAvgLaunchAngle": 18.942500000000003,
+            "rolling7Xwoba": 0.336,
+            "rolling14Xwoba": 0.307,
+            "rolling30Xwoba": 0.29,
+            "rolling7Xba": 0.211,
+            "rolling14Xba": 0.23,
+            "rolling30Xba": 0.214,
+            "rolling7Xslg": 0.401,
+            "rolling14Xslg": 0.372,
+            "rolling30Xslg": 0.344,
+            "rolling7BarrelPct": 2.5,
+            "rolling14BarrelPct": 3.2,
+            "rolling30BarrelPct": 2.2,
+            "rolling7HardHitPct": 20,
+            "rolling14HardHitPct": 28.6,
+            "rolling30HardHitPct": 25.7,
+            "rolling7SweetSpotPct": 30,
+            "rolling14SweetSpotPct": 30.2,
+            "rolling30SweetSpotPct": 27.2,
+            "xwobaTrend": 0.046,
+            "barrelTrend": 0.3,
+            "hardHitTrend": -5.7,
+            "sweetSpotTrend": 2.8,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.6,
+            "avgOpponentRunDiffLast10": 1.55,
+            "avgOpponentRunDiffPerGameLast10": 1.675,
+            "gamesVsWinningLast10": 5,
+            "weightedHitsPerPaLast10": 0.31555555555555553,
+            "weightedTotalBasesPerPaLast10": 0.4022222222222222,
+            "hitsPerPaWeightDeltaLast10": 0.013,
+            "totalBasesPerPaWeightDeltaLast10": 0.007
+          },
           "careerProfile": {
             "playerId": 650489,
             "fullName": "Willi Castro",
@@ -5518,7 +5933,8 @@
             "carry",
             "heater",
             "split edge",
-            "arsenal edge"
+            "arsenal edge",
+            "statcast up"
           ],
           "primaryTag": "carry",
           "summary": ".256 AVG | .684 OPS | 45 H | 3 HR | 12g: .250 AVG | .796 OPS | 12 H | 2 HR | vs RHP: .226 AVG | .664 OPS | 3 HR | career 2772 PA | .695 OPS | 58 HR | baseline career profile | power 39 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +5.3 | +7.4 matchup grade in a traffic-risk lane",
@@ -5650,8 +6066,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 5,
+            "paSample7": 23,
+            "bbeSample7": 33,
+            "recentStatcastGames": 5,
+            "recentStatcastPa": 23,
+            "recentStatcastAb": 21,
+            "recentStatcastHomeRuns": 2,
+            "recentBbeSample": 33,
+            "recentBarrels": 3,
+            "recentHardHit": 5,
+            "recentSweetSpot": 7,
+            "recentBarrelPct": 9.1,
+            "recentHardHitPct": 15.2,
+            "recentSweetSpotPct": 21.2,
+            "recentXobp": 0.2550555555555556,
+            "recentXslg": 0.6513125,
+            "recentXops": 0.906,
+            "recentAvgExitVelocity": 87.896,
+            "recentAvgLaunchAngle": 27.348,
+            "rolling7Xwoba": 0.284,
+            "rolling14Xwoba": 0.31,
+            "rolling30Xwoba": 0.301,
+            "rolling7Xba": 0.224,
+            "rolling14Xba": 0.252,
+            "rolling30Xba": 0.248,
+            "rolling7Xslg": 0.651,
+            "rolling14Xslg": 0.531,
+            "rolling30Xslg": 0.429,
+            "rolling7BarrelPct": 9.1,
+            "rolling14BarrelPct": 6,
+            "rolling30BarrelPct": 3,
+            "rolling7HardHitPct": 15.2,
+            "rolling14HardHitPct": 16.4,
+            "rolling30HardHitPct": 19.5,
+            "rolling7SweetSpotPct": 21.2,
+            "rolling14SweetSpotPct": 17.9,
+            "rolling30SweetSpotPct": 25.6,
+            "xwobaTrend": -0.017,
+            "barrelTrend": 6.1,
+            "hardHitTrend": -4.3,
+            "sweetSpotTrend": -4.4,
+            "trendSignal": "fading"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.6222222222222222,
+            "avgOpponentRunDiffLast10": 1.511111111111111,
+            "avgOpponentRunDiffPerGameLast10": 1.6888888888888889,
+            "gamesVsWinningLast10": 6,
+            "weightedHitsPerPaLast10": 0.24086021505376345,
+            "weightedTotalBasesPerPaLast10": 0.4408602150537635,
+            "hitsPerPaWeightDeltaLast10": 0.003,
+            "totalBasesPerPaWeightDeltaLast10": -0.012
+          },
           "careerProfile": {
             "playerId": 678662,
             "fullName": "Ezequiel Tovar",
@@ -5692,7 +6161,8 @@
           "tags": [
             "carry",
             "heater",
-            "arsenal edge"
+            "arsenal edge",
+            "statcast fade"
           ],
           "primaryTag": "carry",
           "summary": ".212 AVG | .583 OPS | 44 H | 4 HR | 10g: .190 AVG | .694 OPS | 8 H | 4 HR | vs RHP: .206 AVG | .584 OPS | 4 HR | career 1951 PA | .708 OPS | 55 HR | baseline career profile | power 50 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +6.8 | +5.5 matchup grade in a traffic-risk lane",
@@ -5824,8 +6294,61 @@
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 5,
+            "paSample7": 18,
+            "bbeSample7": 31,
+            "recentStatcastGames": 5,
+            "recentStatcastPa": 18,
+            "recentStatcastAb": 14,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 31,
+            "recentBarrels": 0,
+            "recentHardHit": 5,
+            "recentSweetSpot": 11,
+            "recentBarrelPct": 0,
+            "recentHardHitPct": 16.1,
+            "recentSweetSpotPct": 35.5,
+            "recentXobp": 0.4502222222222222,
+            "recentXslg": 0.4564285714285714,
+            "recentXops": 0.907,
+            "recentAvgExitVelocity": 91.93870967741935,
+            "recentAvgLaunchAngle": 21.993548387096773,
+            "rolling7Xwoba": 0.407,
+            "rolling14Xwoba": 0.33,
+            "rolling30Xwoba": 0.311,
+            "rolling7Xba": 0.293,
+            "rolling14Xba": 0.255,
+            "rolling30Xba": 0.246,
+            "rolling7Xslg": 0.456,
+            "rolling14Xslg": 0.366,
+            "rolling30Xslg": 0.35,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 0,
+            "rolling30BarrelPct": 0,
+            "rolling7HardHitPct": 16.1,
+            "rolling14HardHitPct": 17,
+            "rolling30HardHitPct": 21.3,
+            "rolling7SweetSpotPct": 35.5,
+            "rolling14SweetSpotPct": 30.2,
+            "rolling30SweetSpotPct": 27.9,
+            "xwobaTrend": 0.096,
+            "barrelTrend": 0,
+            "hardHitTrend": -5.2,
+            "sweetSpotTrend": 7.6,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.65,
+            "avgOpponentRunDiffLast10": 1.625,
+            "avgOpponentRunDiffPerGameLast10": 2,
+            "gamesVsWinningLast10": 6,
+            "weightedHitsPerPaLast10": 0.13746630727762804,
+            "weightedTotalBasesPerPaLast10": 0.17789757412398924,
+            "hitsPerPaWeightDeltaLast10": 0.012,
+            "totalBasesPerPaWeightDeltaLast10": 0.022
+          },
           "careerProfile": {
             "playerId": 694514,
             "fullName": "Sterlin Thompson",
@@ -5867,184 +6390,240 @@
             "carry",
             "heater",
             "split edge",
-            "arsenal edge"
+            "arsenal edge",
+            "statcast up"
           ],
           "primaryTag": "carry",
           "summary": ".184 AVG | .548 OPS | 7 H | 0 HR | 12g: .214 AVG | .675 OPS | 6 H | 0 HR | vs RHP: .194 AVG | .582 OPS | 0 HR | career 31 PA | .443 OPS | 0 HR | unproven MLB sample | power 14 | shallow 2026 sample | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.5 | +5.2 matchup grade in a traffic-risk lane",
           "matchupNote": "+5.18 vs Brandon Sproat"
         },
         {
-          "playerId": 691720,
+          "playerId": 666397,
           "slot": 9,
-          "name": "Kyle Karros",
-          "position": "3B",
-          "bats": "R",
+          "name": "Edouard Julien",
+          "position": "2B",
+          "bats": "L",
           "savant": {
-            "playerId": 691720,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/kyle-karros-691720",
+            "playerId": 666397,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/edouard-julien-666397",
             "statsSuffix": "r-hitting-mlb",
             "season": 2026,
             "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/kyle-karros-691720?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/kyle-karros-691720?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/kyle-karros-691720?stats=gamelogs-r-hitting-mlb&season=2026"
+              "statcast": "https://baseballsavant.mlb.com/savant-player/edouard-julien-666397?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/edouard-julien-666397?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/edouard-julien-666397?stats=gamelogs-r-hitting-mlb&season=2026"
             }
           },
           "season": {
-            "gamesPlayed": 59,
-            "hits": 38,
-            "singles": 26,
-            "doubles": 9,
-            "triples": 0,
-            "homeRuns": 3,
-            "walks": 26,
-            "totalBases": 56,
-            "atBats": 174,
-            "plateAppearances": 203,
+            "gamesPlayed": 52,
+            "hits": 32,
+            "singles": 25,
+            "doubles": 4,
+            "triples": 1,
+            "homeRuns": 2,
+            "walks": 22,
+            "totalBases": 44,
+            "atBats": 147,
+            "plateAppearances": 170,
             "avg": 0.218,
-            "obp": 0.32,
-            "slg": 0.322,
-            "ops": 0.642,
-            "hitRate": 0.18719999999999998,
-            "singlesRate": 0.1281,
-            "hrRate": 0.0148,
-            "walkRate": 0.1281,
-            "totalBasesRate": 0.2759
+            "obp": 0.324,
+            "slg": 0.299,
+            "ops": 0.623,
+            "hitRate": 0.1882,
+            "singlesRate": 0.1471,
+            "hrRate": 0.0118,
+            "walkRate": 0.1294,
+            "totalBasesRate": 0.2588
           },
           "recent": {
             "gamesPlayed": 12,
-            "hits": 12,
-            "singles": 6,
-            "doubles": 4,
+            "hits": 10,
+            "singles": 8,
+            "doubles": 2,
             "triples": 0,
-            "homeRuns": 2,
-            "walks": 4,
-            "totalBases": 22,
-            "atBats": 38,
-            "plateAppearances": 44,
-            "avg": 0.316,
-            "obp": 0.409,
-            "slg": 0.579,
-            "ops": 0.988,
-            "hitRate": 0.2727,
-            "singlesRate": 0.1364,
-            "hrRate": 0.0455,
-            "walkRate": 0.0909,
-            "totalBasesRate": 0.5
+            "homeRuns": 0,
+            "walks": 10,
+            "totalBases": 12,
+            "atBats": 28,
+            "plateAppearances": 38,
+            "avg": 0.357,
+            "obp": 0.526,
+            "slg": 0.429,
+            "ops": 0.955,
+            "hitRate": 0.2632,
+            "singlesRate": 0.21050000000000002,
+            "hrRate": 0,
+            "walkRate": 0.2632,
+            "totalBasesRate": 0.31579999999999997
           },
           "split": {
-            "hits": 23,
-            "singles": 16,
-            "doubles": 5,
-            "triples": 0,
+            "hits": 32,
+            "singles": 25,
+            "doubles": 4,
+            "triples": 1,
             "homeRuns": 2,
-            "walks": 22,
-            "strikeouts": 31,
-            "totalBases": 34,
-            "atBats": 117,
-            "plateAppearances": 142,
-            "avg": 0.197,
-            "obp": 0.324,
-            "slg": 0.291,
-            "ops": 0.615,
-            "hitRate": 0.162,
-            "singlesRate": 0.1127,
-            "hrRate": 0.0141,
-            "walkRate": 0.1549,
-            "kRate": 0.2183,
-            "totalBasesRate": 0.2394
+            "walks": 20,
+            "strikeouts": 40,
+            "totalBases": 44,
+            "atBats": 136,
+            "plateAppearances": 157,
+            "avg": 0.235,
+            "obp": 0.338,
+            "slg": 0.324,
+            "ops": 0.661,
+            "hitRate": 0.20379999999999998,
+            "singlesRate": 0.1592,
+            "hrRate": 0.0127,
+            "walkRate": 0.1274,
+            "kRate": 0.2548,
+            "totalBasesRate": 0.2803
           },
           "metrics": {
-            "powerScore": 25.1,
-            "contactScore": 39.1,
-            "patienceScore": 67.9,
+            "powerScore": 22.7,
+            "contactScore": 37.3,
+            "patienceScore": 69.7,
             "formScore": 92,
-            "splitScore": 41.9,
+            "splitScore": 58.9,
             "varianceScore": 92,
-            "pitchTypeFitScore": 45.3,
-            "pitchTypeGrade": 2.6,
+            "pitchTypeFitScore": 60.3,
+            "pitchTypeGrade": 3.77,
             "pitchTypeCoveragePct": 100,
             "matchupScore": 94,
             "matchupGrade": 10
           },
           "pitchType": {
-            "fitScore": 45.3,
-            "fitGrade": 2.6,
+            "fitScore": 60.3,
+            "fitGrade": 3.77,
             "coveragePct": 100,
-            "summary": "Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +2.6",
+            "summary": "Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.8",
             "topPitches": [
               {
                 "pitchType": "SI",
                 "pitchName": "Sinker",
                 "pitchUsage": 27.9,
-                "fitGrade": 3.85,
-                "batterFitScore": 39.2,
+                "fitGrade": 10,
+                "batterFitScore": 94,
                 "qualityScore": 18
               },
               {
                 "pitchType": "FC",
                 "pitchName": "Cutter",
                 "pitchUsage": 26.7,
-                "fitGrade": -2.2,
-                "batterFitScore": 18,
+                "fitGrade": -0.67,
+                "batterFitScore": 26.4,
                 "qualityScore": 30.1
               },
               {
                 "pitchType": "FF",
                 "pitchName": "4-Seam Fastball",
                 "pitchUsage": 18.6,
-                "fitGrade": 9.24,
-                "batterFitScore": 94,
+                "fitGrade": 2.58,
+                "batterFitScore": 57.4,
                 "qualityScore": 43.2
               }
             ]
           },
-          "statcastTrend": null,
-          "opponentContext": null,
+          "statcastTrend": {
+            "gamesSample7": 6,
+            "paSample7": 19,
+            "bbeSample7": 27,
+            "recentStatcastGames": 6,
+            "recentStatcastPa": 19,
+            "recentStatcastAb": 14,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 27,
+            "recentBarrels": 0,
+            "recentHardHit": 5,
+            "recentSweetSpot": 10,
+            "recentBarrelPct": 0,
+            "recentHardHitPct": 18.5,
+            "recentSweetSpotPct": 37,
+            "recentXobp": 0.5159473684210527,
+            "recentXslg": 0.45128571428571435,
+            "recentXops": 0.967,
+            "recentAvgExitVelocity": 90.43333333333332,
+            "recentAvgLaunchAngle": 10.014814814814814,
+            "rolling7Xwoba": 0.44,
+            "rolling14Xwoba": 0.368,
+            "rolling30Xwoba": 0.305,
+            "rolling7Xba": 0.343,
+            "rolling14Xba": 0.274,
+            "rolling30Xba": 0.235,
+            "rolling7Xslg": 0.451,
+            "rolling14Xslg": 0.363,
+            "rolling30Xslg": 0.343,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 0,
+            "rolling30BarrelPct": 1.1,
+            "rolling7HardHitPct": 18.5,
+            "rolling14HardHitPct": 17.1,
+            "rolling30HardHitPct": 25.3,
+            "rolling7SweetSpotPct": 37,
+            "rolling14SweetSpotPct": 39,
+            "rolling30SweetSpotPct": 40,
+            "xwobaTrend": 0.135,
+            "barrelTrend": -1.1,
+            "hardHitTrend": -6.8,
+            "sweetSpotTrend": -3,
+            "trendSignal": "improving"
+          },
+          "opponentContext": {
+            "gamesSampleLast10": 10,
+            "avgOpponentWinPctLast10": 0.47500000000000003,
+            "avgOpponentRunDiffLast10": 0.9,
+            "avgOpponentRunDiffPerGameLast10": 1.275,
+            "gamesVsWinningLast10": 3,
+            "weightedHitsPerPaLast10": 0.15436241610738258,
+            "weightedTotalBasesPerPaLast10": 0.18791946308724836,
+            "hitsPerPaWeightDeltaLast10": -0.012,
+            "totalBasesPerPaWeightDeltaLast10": -0.012
+          },
           "careerProfile": {
-            "playerId": 691720,
-            "fullName": "Kyle Karros",
-            "seasonsSample": 2,
-            "debutYear": 2025,
+            "playerId": 666397,
+            "fullName": "Edouard Julien",
+            "seasonsSample": 4,
+            "debutYear": 2023,
             "latestMlbYear": 2026,
-            "careerGames": 99,
-            "careerPlateAppearances": 346,
-            "careerHits": 66,
-            "careerHomeRuns": 4,
-            "careerTotalBases": 90,
-            "careerWalks": 40,
-            "careerStrikeouts": 87,
-            "careerHitRate": 0.19079999999999997,
-            "careerAvg": 0.22,
-            "careerObp": 0.312,
-            "careerSlg": 0.3,
-            "careerOps": 0.612,
-            "careerTbPerPa": 0.26011560693641617,
-            "careerHrPerPa": 0.011560693641618497,
-            "careerKRate": 0.2514450867052023,
-            "careerBbRate": 0.11560693641618497,
-            "bestPowerYear": 2026,
-            "bestPowerHomeRuns": 3,
-            "bestPowerSlg": 0.31901840490797545,
+            "careerGames": 316,
+            "careerPlateAppearances": 1077,
+            "careerHits": 211,
+            "careerHomeRuns": 29,
+            "careerTotalBases": 340,
+            "careerWalks": 138,
+            "careerStrikeouts": 335,
+            "careerHitRate": 0.1959,
+            "careerAvg": 0.228,
+            "careerObp": 0.331,
+            "careerSlg": 0.367,
+            "careerOps": 0.698,
+            "careerTbPerPa": 0.31569173630454966,
+            "careerHrPerPa": 0.02692664809656453,
+            "careerKRate": 0.3110492107706592,
+            "careerBbRate": 0.12813370473537605,
+            "bestPowerYear": 2023,
+            "bestPowerHomeRuns": 16,
+            "bestPowerSlg": 0.45857988165680474,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 190,
-            "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.2736842105263158,
-            "careerPowerIndex": 17.82,
-            "contactRiskIndex": 47.94,
-            "roleStabilityIndex": 76.25,
+            "recentMlbPlateAppearances": 160,
+            "recentMlbHomeRuns": 2,
+            "recentMlbTbPerPa": 0.25,
+            "careerPowerIndex": 39.29,
+            "contactRiskIndex": 58.51,
+            "roleStabilityIndex": 100,
             "repeatabilityLabel": "baseline career profile",
-            "volatilityLabel": "stable enough",
-            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691720?stats=statcast-r-hitting-mlb",
+            "volatilityLabel": "strikeout volatility",
+            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/666397?stats=statcast-r-hitting-mlb",
             "fetchedAt": "2026-06-01T22:44:40Z"
           },
           "tags": [
             "carry",
             "heater",
-            "arsenal edge"
+            "split edge",
+            "arsenal edge",
+            "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".218 AVG | .642 OPS | 38 H | 3 HR | 12g: .316 AVG | .988 OPS | 12 H | 2 HR | vs RHP: .197 AVG | .615 OPS | 2 HR | career 346 PA | .612 OPS | 4 HR | baseline career profile | power 18 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +2.6 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".218 AVG | .623 OPS | 32 H | 2 HR | 12g: .357 AVG | .955 OPS | 10 H | 0 HR | vs RHP: .235 AVG | .661 OPS | 2 HR | career 1077 PA | .698 OPS | 29 HR | baseline career profile | power 39 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.8 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Brandon Sproat"
         }
       ],
@@ -6059,10 +6638,10 @@
         "starterThreatCount": 9,
         "contactCount": 3,
         "powerCount": 1,
-        "platoonCount": 5,
+        "platoonCount": 6,
         "pitchTypeEdgeCount": 9,
-        "oppositeHandCount": 5,
-        "sameHandCount": 4,
+        "oppositeHandCount": 6,
+        "sameHandCount": 3,
         "switchCount": 1,
         "topThirdSplitCount": 2,
         "topThirdArsenalCount": 3,
@@ -6070,7 +6649,7 @@
         "suppressorCount": 0,
         "platoonPressureIndex": 94,
         "pitchTypePressureIndex": 94,
-        "bullpenPitchTypePressureIndex": 54.6,
+        "bullpenPitchTypePressureIndex": 56.4,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 94,
@@ -6129,22 +6708,22 @@
         "underperformHitters": [],
         "underperformNote": "No obvious suppressor lane has surfaced yet, but this side still needs its middle order to convert traffic.",
         "overview": "Rockies can lean on Jake McCarthy, Tyler Freeman, TJ Rumfield to drive early pressure against Brandon Sproat.",
-        "bullpenOverview": "Abner Uribe is the first bridge look, and this lineup grades -0.1 against that likely first-up arsenal.",
+        "bullpenOverview": "Abner Uribe is the first bridge look, and this lineup grades +0.3 against that likely first-up arsenal.",
         "topThirdScore": 94,
         "middleScore": 88.9,
         "depthScore": 83.5,
         "bullpenPitchTypeSummary": {
-          "pressureIndex": 54.6,
-          "averageFitScore": 56.6,
-          "averageFitGrade": -0.55,
+          "pressureIndex": 56.4,
+          "averageFitScore": 58,
+          "averageFitGrade": -0.36,
           "firstReliever": {
             "pitcherId": 682842,
             "name": "Abner Uribe",
             "role": "middle",
             "availabilityScore": 74.9,
             "firstRelieverLikelihood": 97.55,
-            "fitScore": 59.2,
-            "fitGrade": -0.14,
+            "fitScore": 62.6,
+            "fitGrade": 0.35,
             "pitchMixSummary": "Sinker 65% / Slider 35%",
             "topAttackers": [
               {
@@ -6166,8 +6745,8 @@
               "role": "middle",
               "availabilityScore": 74.9,
               "firstRelieverLikelihood": 97.55,
-              "fitScore": 59.2,
-              "fitGrade": -0.14,
+              "fitScore": 62.6,
+              "fitGrade": 0.35,
               "pitchMixSummary": "Sinker 65% / Slider 35%",
               "topAttackers": [
                 {
@@ -6188,8 +6767,8 @@
               "role": "bridge",
               "availabilityScore": 44.75,
               "firstRelieverLikelihood": 90.54,
-              "fitScore": 54,
-              "fitGrade": -0.97,
+              "fitScore": 53.5,
+              "fitGrade": -1.07,
               "pitchMixSummary": "Cutter 41% / 4-Seam Fastball 25% / Sinker 21%",
               "topAttackers": [
                 {
@@ -6222,7 +6801,7 @@
               "tag": "carry | fit +1.1"
             }
           ],
-          "overview": "Abner Uribe is the first bridge look, and this lineup grades -0.1 against that likely first-up arsenal."
+          "overview": "Abner Uribe is the first bridge look, and this lineup grades +0.3 against that likely first-up arsenal."
         }
       }
     }
@@ -6391,7 +6970,11 @@
         "playerName": "Brandon Sproat",
         "line": 4.5,
         "overPrice": 110,
-        "underPrice": -146
+        "underPrice": -146,
+        "sportsbook": "FanDuel Research",
+        "sourceName": "fanduel_research",
+        "sourcePath": "https://sportsbook.fanduel.com/baseball/mlb",
+        "capturedAt": "2026-06-05T03:12:54Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
@@ -6415,7 +6998,7 @@
         "battersFaced": null,
         "totalRow": null,
         "gameRows": [],
-        "fetchedAt": "2026-06-05T15:40:31.288Z"
+        "fetchedAt": "2026-06-05T21:26:23.228Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -11158,7 +11741,7 @@
           "Away split: 6.14 ERA / 4 HR allowed.",
           "vs. Left: .244 AVG / .861 OPS allowed."
         ],
-        "fetchedAt": "2026-06-05T15:40:46.923Z"
+        "fetchedAt": "2026-06-05T21:26:48.389Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -11342,19 +11925,23 @@
         "playerName": "Ryan Feltner",
         "line": 3.5,
         "overPrice": 100,
-        "underPrice": -122
+        "underPrice": -122,
+        "sportsbook": "FanDuel Research",
+        "sourceName": "fanduel_research",
+        "sourcePath": "https://sportsbook.fanduel.com/baseball/mlb",
+        "capturedAt": "2026-06-05T03:12:54Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/ryan-feltner-vs-brewers",
-        "answerText": "Ryan Feltner has a record of 1-1 with an ERA of 2.93 and 26 strikeouts in 5 appearances versus the Brewers in his career.",
+        "answerText": "Ryan Feltner is 1-1 with an ERA of 2.93 and 26 strikeouts in 5 appearances versus the Brewers in his career.",
         "pitcherName": "Ryan Feltner",
         "pitcherTeam": "Rockies",
         "opponentTeam": "Brewers",
         "appearances": 5,
         "gamesStarted": 5,
-        "wins": null,
-        "losses": null,
+        "wins": 1,
+        "losses": 1,
         "era": 2.93,
         "strikeouts": 26,
         "inningsPitched": "27.2",
@@ -11511,7 +12098,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-05T15:40:32.076Z"
+        "fetchedAt": "2026-06-05T21:26:23.645Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -15490,7 +16077,7 @@
           "vs. Right: .321 AVG / .994 OPS allowed.",
           "Coors Field: 3.79 ERA / .250 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-05T15:40:46.923Z"
+        "fetchedAt": "2026-06-05T21:26:48.389Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -15544,12 +16131,12 @@
       {
         "label": "Total",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "o11.5 -115 / u12 -115"
+        "value": "o12 -105 / u12 -112"
       },
       {
         "label": "Moneyline",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "Brewers -152 / Rockies +130"
+        "value": "Brewers -154 / Rockies +130"
       }
     ],
     "note": "Board snapshot plus model context.",
@@ -15562,11 +16149,11 @@
       "role": "Away",
       "name": "Brewers",
       "detail": "Brandon Sproat (RHP) | 1-4 | 6.24 ERA | 52 SO | 1.53 WHIP | 49.0 IP",
-      "americanOdds": -152,
-      "americanLabel": "-152",
-      "decimalOdds": 1.6578947368421053,
-      "impliedProbability": 0.6031746031746031,
-      "impliedProbabilityLabel": "60.3%"
+      "americanOdds": -154,
+      "americanLabel": "-154",
+      "decimalOdds": 1.6493506493506493,
+      "impliedProbability": 0.6062992125984252,
+      "impliedProbabilityLabel": "60.6%"
     },
     {
       "id": "brewers-rockies:1",
@@ -15592,11 +16179,11 @@
         "role": "Away",
         "name": "Brewers",
         "detail": "Brandon Sproat (RHP) | 1-4 | 6.24 ERA | 52 SO | 1.53 WHIP | 49.0 IP",
-        "americanOdds": -152,
-        "americanLabel": "-152",
-        "decimalOdds": 1.6578947368421053,
-        "impliedProbability": 0.6031746031746031,
-        "impliedProbabilityLabel": "60.3%"
+        "americanOdds": -154,
+        "americanLabel": "-154",
+        "decimalOdds": 1.6493506493506493,
+        "impliedProbability": 0.6062992125984252,
+        "impliedProbabilityLabel": "60.6%"
       },
       {
         "id": "brewers-rockies:1",
@@ -15621,11 +16208,11 @@
       "role": "Away",
       "name": "Brewers",
       "detail": "Brandon Sproat (RHP) | 1-4 | 6.24 ERA | 52 SO | 1.53 WHIP | 49.0 IP",
-      "americanOdds": -152,
-      "americanLabel": "-152",
-      "decimalOdds": 1.6578947368421053,
-      "impliedProbability": 0.6031746031746031,
-      "impliedProbabilityLabel": "60.3%"
+      "americanOdds": -154,
+      "americanLabel": "-154",
+      "decimalOdds": 1.6493506493506493,
+      "impliedProbability": 0.6062992125984252,
+      "impliedProbabilityLabel": "60.6%"
     },
     "opponent": {
       "id": "brewers-rockies:1",
@@ -15641,16 +16228,16 @@
     },
     "lean": "Model pick: Brewers on standings profile and market price.",
     "rationale": "Standings profile: Brewers (37-23, division leader, +89 RD) vs Rockies (24-39, 5th in division, -83 RD)",
-    "confidence": 62,
+    "confidence": 61,
     "volatility": 92,
-    "recommendationScore": 40,
+    "recommendationScore": 39,
     "tier": "Swingy",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 6,
-    "modelEdgeLabel": "6-point model edge",
-    "marketProbability": 0.5811170212765957,
-    "marketProbabilityLabel": "58.1%",
+    "modelEdge": 4.9,
+    "modelEdgeLabel": "4.9-point model edge",
+    "marketProbability": 0.5823742190069057,
+    "marketProbabilityLabel": "58.2%",
     "inputs": [
       {
         "label": "Standings profile",
@@ -15661,9 +16248,9 @@
       },
       {
         "label": "Market price",
-        "summary": "Market price: Brewers (58.1% no-vig) vs Rockies (41.9% no-vig)",
+        "summary": "Market price: Brewers (58.2% no-vig) vs Rockies (41.8% no-vig)",
         "source": "Moneyline board",
-        "margin": 16.2,
+        "margin": 16.5,
         "weight": 0.26
       },
       {
@@ -15685,8 +16272,8 @@
         "delta": 5
       },
       {
-        "label": "Late-game traffic projection is nearly even once the bridge begins",
-        "delta": 3
+        "label": "The underdog projects cleaner through the starter window",
+        "delta": 4
       },
       {
         "label": "Higher posted total",
@@ -15757,10 +16344,6 @@
         "delta": 3
       },
       {
-        "label": "Projected hit edge is partially compressed because lineup certainty was still incomplete",
-        "delta": 2
-      },
-      {
         "label": "Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.",
         "delta": 3
       }
@@ -15774,8 +16357,8 @@
     "indicators": {
       "reliefPitchingRisk": 43,
       "coinflipPressure": 55,
-      "starterLeverageIndex": 33.9,
-      "lateInningStabilityIndex": 27.7,
+      "starterLeverageIndex": 33.3,
+      "lateInningStabilityIndex": 27.6,
       "pickBullpenScore": 64.4,
       "oppBullpenScore": 60.8,
       "pickBullpenChainScore": 95.7,
@@ -15837,7 +16420,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": -0.1,
+      "projectedHitEdgeForPick": -0.2,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
@@ -15878,7 +16461,7 @@
         "highRiskPoints"
       ],
       "favoredSignalCount": 6,
-      "starterLateGap": 6.2,
+      "starterLateGap": 5.7,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 0.8,
       "gameShape": {
@@ -15886,8 +16469,8 @@
         "shapeLabel": "starter/late split",
         "category": "late_rescue_side",
         "bestExpression": "Live side after starter exit",
-        "categoryConfidence": 68,
-        "realityGapScore": 59.5,
+        "categoryConfidence": 60,
+        "realityGapScore": 49.1,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -15904,10 +16487,10 @@
           {
             "id": "flow",
             "label": "Flow",
-            "score": 32
+            "score": 40
           }
         ],
-        "rfImpactScore": 39.3
+        "rfImpactScore": 36.8
       }
     },
     "gameShape": {
@@ -15918,7 +16501,7 @@
         "slug": "late_rescue_side",
         "label": "Late-rescue side",
         "bestExpression": "Live side after starter exit",
-        "confidence": 68,
+        "confidence": 60,
         "reasons": [
           "The edge is late/bridge, not early comfort.",
           "F5 side is weaker than a live entry after the starter turns over."
@@ -15962,20 +16545,20 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": -0.1
+          "projectedHitEdge": -0.2
         }
       },
-      "summary": "Late-rescue side: Live side after starter exit. Reality-gap 59.5/100. Main checks: 85°F | Wind 8 mph Out | 12% precip | weather helps carry.",
+      "summary": "Late-rescue side: Live side after starter exit. Reality-gap 49.1/100. Main checks: 85°F | Wind 8 mph Out | 16% precip | weather helps carry.",
       "pickTeam": "Brewers",
       "opponentTeam": "Rockies",
       "scores": {
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
-        "phaseSplitScore": 68,
+        "phaseSplitScore": 60,
         "bullpenFlipScore": 42.9,
-        "starterControlScore": 16.5,
-        "marketContradictionScore": 13.6,
-        "realityGapScore": 59.5
+        "starterControlScore": 19.8,
+        "marketContradictionScore": 14.2,
+        "realityGapScore": 49.1
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -15990,7 +16573,7 @@
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
             "gameScore": 9.8,
-            "pickScore": 8.4,
+            "pickScore": 7.6,
             "opponentScore": 9.8
           },
           {
@@ -16029,7 +16612,7 @@
             "id": "flow",
             "label": "Flow",
             "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-            "gameScore": 32,
+            "gameScore": 40,
             "pickScore": 50,
             "opponentScore": 50
           }
@@ -16039,7 +16622,7 @@
             "role": "pick",
             "team": "Brewers",
             "scores": {
-              "pressure": 8.4,
+              "pressure": 7.6,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -16047,7 +16630,7 @@
               "flow": 50
             },
             "polygon": [
-              8.4,
+              7.6,
               5,
               0,
               16,
@@ -16111,7 +16694,7 @@
             "freeze": 8.5,
             "air": 24.4,
             "bridge": 42.9,
-            "flow": 32
+            "flow": 40
           },
           "polygon": [
             9.8,
@@ -16119,7 +16702,7 @@
             8.5,
             24.4,
             42.9,
-            32
+            40
           ],
           "dominantAxes": [
             {
@@ -16135,7 +16718,7 @@
             {
               "id": "flow",
               "label": "Flow",
-              "score": 32
+              "score": 40
             }
           ]
         }
@@ -16161,7 +16744,7 @@
         "sunVisibilityChaosBoost": 0
       },
       "metricNotes": [
-        "85°F | Wind 8 mph Out | 12% precip | weather helps carry"
+        "85°F | Wind 8 mph Out | 16% precip | weather helps carry"
       ],
       "laneMap": {
         "side": "Prefer live entry after starter exit.",
@@ -16195,13 +16778,13 @@
       "marketImplications": {
         "side": "Do not treat Brewers as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
         "first5": "First-five may be cleaner than full game if the starter-window edge is on the pick and the late edge flips.",
-        "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 74.2% YRFI."
+        "total": "No forced total edge. Wait for a line move or a clearer first-five total.",
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 75.2% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 39.3,
+        "impactScore": 36.8,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -16229,33 +16812,33 @@
           }
         },
         "trustedUse": "Use RF as a nonlinear totals/game-shape check first. Do not let it pick ML/F5 by itself yet.",
-        "totalsRead": "RF totals baseline can be used as a second check on the posted total.",
+        "totalsRead": "RF totals baseline has little to add when the line and projection are nearly equal.",
         "moneylineRead": "RF moneyline history is not deployable; it can only flag disagreement for review.",
         "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
         "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 9.3,
-      "homeProjectedHits": 9.5,
-      "awayHitEfficiencyPct": 26.9,
-      "homeHitEfficiencyPct": 27.7,
-      "awayFirst5ProjectedHits": 5.2,
-      "homeFirst5ProjectedHits": 5.6,
-      "awayFirst5HitEfficiencyPct": 27.2,
-      "homeFirst5HitEfficiencyPct": 29.5,
-      "awayLateProjectedHits": 4.1,
-      "homeLateProjectedHits": 3.9,
-      "awayLateHitEfficiencyPct": 26.1,
-      "homeLateHitEfficiencyPct": 25.6,
+      "awayProjectedHits": 11.4,
+      "homeProjectedHits": 11.6,
+      "awayHitEfficiencyPct": 32.9,
+      "homeHitEfficiencyPct": 33.9,
+      "awayFirst5ProjectedHits": 6.3,
+      "homeFirst5ProjectedHits": 7.2,
+      "awayFirst5HitEfficiencyPct": 32.9,
+      "homeFirst5HitEfficiencyPct": 38,
+      "awayLateProjectedHits": 5,
+      "homeLateProjectedHits": 4.5,
+      "awayLateHitEfficiencyPct": 32.1,
+      "homeLateHitEfficiencyPct": 29.3,
       "awayBullpenChainScore": 95.7,
       "homeBullpenChainScore": 82.4,
       "edgeTeam": "Rockies",
       "edgeHits": 0.2,
       "first5EdgeTeam": "Rockies",
-      "first5EdgeHits": 0.4,
+      "first5EdgeHits": 0.9,
       "lateEdgeTeam": "Brewers",
-      "lateEdgeHits": 0.2,
+      "lateEdgeHits": 0.5,
       "bridgeEdgeTeam": "Brewers",
       "bridgeEdgeScore": 13.3,
       "awayLikelyRelievers": [
@@ -16502,20 +17085,20 @@
       "homePitcherType": "Balanced righty",
       "awayStarterHoldConfidence": 18,
       "homeStarterHoldConfidence": 21.7,
-      "awayProjectedRuns": 4.5,
-      "homeProjectedRuns": 5.1,
-      "awayFirst5ProjectedRuns": 2.4,
-      "homeFirst5ProjectedRuns": 2.9,
-      "awayLateProjectedRuns": 2.1,
-      "homeLateProjectedRuns": 2.2,
-      "postedTotal": 11.5,
+      "awayProjectedRuns": 5.5,
+      "homeProjectedRuns": 6.2,
+      "awayFirst5ProjectedRuns": 2.9,
+      "homeFirst5ProjectedRuns": 3.7,
+      "awayLateProjectedRuns": 2.6,
+      "homeLateProjectedRuns": 2.5,
+      "postedTotal": 12,
       "totals": {
         "fullGame": {
-          "lean": "Under",
-          "edge": -1.9,
-          "strength": "Strong",
-          "label": "Under 11.5",
-          "summary": "Under lean with a 1.9-run edge against 11.5.",
+          "lean": "Pass",
+          "edge": -0.3,
+          "strength": "Thin",
+          "label": "Hold 12",
+          "summary": "Model projection 11.7 is essentially on the posted 12.",
           "chaosGate": {
             "phase": "full",
             "overChaosScore": 4,
@@ -16524,7 +17107,7 @@
             "vetoed": false,
             "vetoReason": "",
             "notes": [
-              "85°F | Wind 8 mph Out | 12% precip | weather helps carry",
+              "85°F | Wind 8 mph Out | 16% precip | weather helps carry",
               "both offenses project traffic"
             ],
             "metrics": {
@@ -16541,11 +17124,11 @@
           }
         },
         "first5": {
-          "lean": "Under",
-          "edge": -1,
-          "strength": "Clear",
-          "label": "Under 6.3",
-          "summary": "Under lean with a 1.0-run edge against 6.3.",
+          "lean": "Pass",
+          "edge": -0.2,
+          "strength": "Thin",
+          "label": "Hold 6.8",
+          "summary": "Model projection 6.6 is essentially on the posted 6.8.",
           "chaosGate": {
             "phase": "first5",
             "overChaosScore": 3,
@@ -16554,7 +17137,7 @@
             "vetoed": false,
             "vetoReason": "",
             "notes": [
-              "85°F | Wind 8 mph Out | 12% precip | weather helps carry",
+              "85°F | Wind 8 mph Out | 16% precip | weather helps carry",
               "both offenses project traffic"
             ],
             "metrics": {
@@ -16570,12 +17153,12 @@
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 5.3,
-            "adjustedProjectedRuns": 5.3,
-            "adjustedEdge": -1,
-            "marketExpression": "Under",
+            "baseProjectedRuns": 6.6,
+            "adjustedProjectedRuns": 6.6,
+            "adjustedEdge": -0.2,
+            "marketExpression": "Pass",
             "shape": "balanced",
-            "tailScore": 28,
+            "tailScore": 32,
             "strandScore": 0,
             "forkScore": 0,
             "tailLift": 0,
@@ -16589,7 +17172,7 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 10.8,
+              "totalFirst5ProjectedHits": 13.5,
               "weatherCarry": true,
               "weatherSuppress": false,
               "visibilityRisk": null
@@ -16597,11 +17180,11 @@
           }
         },
         "late": {
-          "lean": "Under",
-          "edge": -0.9,
-          "strength": "Clear",
-          "label": "Under 5.2",
-          "summary": "Under lean with a 0.9-run edge against 5.2.",
+          "lean": "Pass",
+          "edge": -0.1,
+          "strength": "Thin",
+          "label": "Hold 5.2",
+          "summary": "Model projection 5.1 is essentially on the posted 5.2.",
           "chaosGate": {
             "phase": "late",
             "overChaosScore": 3,
@@ -16610,7 +17193,7 @@
             "vetoed": false,
             "vetoReason": "",
             "notes": [
-              "85°F | Wind 8 mph Out | 12% precip | weather helps carry",
+              "85°F | Wind 8 mph Out | 16% precip | weather helps carry",
               "both offenses project traffic"
             ],
             "metrics": {
@@ -16626,16 +17209,16 @@
             }
           }
         },
-        "projectedFullTotalRuns": 9.6,
-        "projectedFirst5TotalRuns": 5.3,
-        "tailAdjustedProjectedFirst5TotalRuns": 5.3,
+        "projectedFullTotalRuns": 11.7,
+        "projectedFirst5TotalRuns": 6.6,
+        "tailAdjustedProjectedFirst5TotalRuns": 6.6,
         "first5TailOverlay": {
-          "baseProjectedRuns": 5.3,
-          "adjustedProjectedRuns": 5.3,
-          "adjustedEdge": -1,
-          "marketExpression": "Under",
+          "baseProjectedRuns": 6.6,
+          "adjustedProjectedRuns": 6.6,
+          "adjustedEdge": -0.2,
+          "marketExpression": "Pass",
           "shape": "balanced",
-          "tailScore": 28,
+          "tailScore": 32,
           "strandScore": 0,
           "forkScore": 0,
           "tailLift": 0,
@@ -16649,28 +17232,31 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 10.8,
+            "totalFirst5ProjectedHits": 13.5,
             "weatherCarry": true,
             "weatherSuppress": false,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 4.3,
-        "derivedFirst5TotalLine": 6.3,
+        "projectedLateTotalRuns": 5.1,
+        "derivedFirst5TotalLine": 6.8,
+        "postedFirst5TotalLine": null,
+        "runShareFirst5TotalLine": 6.8,
+        "first5TotalLineSource": "full-game-derived",
         "derivedLateTotalLine": 5.2,
-        "bullpenExhaustionNote": "85°F | Wind 8 mph Out | 12% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
-        "weatherNote": "85°F | Wind 8 mph Out | 12% precip | weather helps carry.",
+        "bullpenExhaustionNote": "85°F | Wind 8 mph Out | 16% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
+        "weatherNote": "85°F | Wind 8 mph Out | 16% precip | weather helps carry.",
         "sunVisibilityNote": ""
       },
       "firstInning": {
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 24.2,
-        "yesProbabilityPct": 74.2,
-        "noProbabilityPct": 25.8,
-        "awayRunProbabilityPct": 58,
-        "homeRunProbabilityPct": 38.5,
+        "edge": 25.2,
+        "yesProbabilityPct": 75.2,
+        "noProbabilityPct": 24.8,
+        "awayRunProbabilityPct": 58.9,
+        "homeRunProbabilityPct": 39.7,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 40,
@@ -16689,12 +17275,12 @@
         ],
         "projectedRuns": 1.2,
         "line": 0.5,
-        "summary": "YRFI with a 74% modeled chance of at least one first-inning run. Brewers score 58% of the time and Rockies 38.5% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 75% modeled chance of at least one first-inning run. Brewers score 58.9% of the time and Rockies 39.7% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
       },
       "teamScripts": [
         {
           "teamName": "Brewers",
-          "lineupStatus": "partial lineup",
+          "lineupStatus": "confirmed lineup",
           "overperformHitters": [
             {
               "name": "Jackson Chourio",
@@ -16752,7 +17338,7 @@
         },
         {
           "teamName": "Rockies",
-          "lineupStatus": "partial lineup",
+          "lineupStatus": "confirmed lineup",
           "overperformHitters": [
             {
               "name": "Jake McCarthy",
@@ -16791,10 +17377,10 @@
             }
           ],
           "winPath": [
-            "Rockies own the cleaner full-game traffic script at 9.5 projected hits.",
-            "Rockies have the better starter-window lane with 5.6 projected first-five hits.",
+            "Rockies own the cleaner full-game traffic script at 11.6 projected hits.",
+            "Rockies have the better starter-window lane with 7.2 projected first-five hits.",
             "Rockies can lean on Jake McCarthy, Tyler Freeman, TJ Rumfield to drive early pressure against Brandon Sproat.",
-            "Abner Uribe is the first bridge look, and this lineup grades -0.1 against that likely first-up arsenal.",
+            "Abner Uribe is the first bridge look, and this lineup grades +0.3 against that likely first-up arsenal.",
             "Rockies top third are live enough to pressure the starter before the bridge innings.",
             "Jake McCarthy and Tyler Freeman and TJ Rumfield are the best current carry bats in this lineup."
           ]
@@ -16806,29 +17392,29 @@
           {
             "label": "First 5",
             "edgeTeam": "Rockies",
-            "projection": "2.9 R",
+            "projection": "3.7 R",
             "note": "Rockies lean on Jake McCarthy, Tyler Freeman to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
             "edgeTeam": "Brewers",
-            "projection": "2.1 R",
+            "projection": "2.6 R",
             "note": "Brewers keep more late scoring paths alive, with Jackson Chourio, Brice Turang plus the Brewers bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Rockies",
-            "projection": "9.5 H",
+            "projection": "11.6 H",
             "note": "Rockies finish with the stronger aggregate traffic path, anchored by Jake McCarthy, Tyler Freeman."
           }
         ]
       },
       "weather": {
-        "label": "85°F | Wind 8 mph Out | 12% precip | weather helps carry",
+        "label": "85°F | Wind 8 mph Out | 16% precip | weather helps carry",
         "temperatureF": 85,
         "windMph": 8,
         "windDirection": "Out",
-        "precipitationPct": 12,
+        "precipitationPct": 16,
         "isDome": false,
         "hitBoostFirst5": 0.176,
         "hitBoostLate": 0.19,
@@ -16842,17 +17428,17 @@
         "marketType": "ML shape",
         "selection": "Brewers",
         "opponent": "Rockies",
-        "pickProjectedRuns": 4.5,
-        "opponentProjectedRuns": 5.1,
-        "projectedTotalRuns": 9.6,
-        "runDiff": -0.6,
-        "absoluteRunDiff": 0.6,
-        "runDiffSharePct": 6.2,
-        "confidence": 62,
-        "marketProbabilityPct": 58.1,
+        "pickProjectedRuns": 5.5,
+        "opponentProjectedRuns": 6.2,
+        "projectedTotalRuns": 11.7,
+        "runDiff": -0.7,
+        "absoluteRunDiff": 0.7,
+        "runDiffSharePct": 6,
+        "confidence": 61,
+        "marketProbabilityPct": 58.2,
         "grade": "Thin ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Brewers projects -0.6 runs better in a 9.6-run environment."
+        "note": "Brewers projects -0.7 runs better in a 11.7-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -16862,7 +17448,7 @@
           "slug": "late_rescue_side",
           "label": "Late-rescue side",
           "bestExpression": "Live side after starter exit",
-          "confidence": 68,
+          "confidence": 60,
           "reasons": [
             "The edge is late/bridge, not early comfort.",
             "F5 side is weaker than a live entry after the starter turns over."
@@ -16906,20 +17492,20 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": -0.1
+            "projectedHitEdge": -0.2
           }
         },
-        "summary": "Late-rescue side: Live side after starter exit. Reality-gap 59.5/100. Main checks: 85°F | Wind 8 mph Out | 12% precip | weather helps carry.",
+        "summary": "Late-rescue side: Live side after starter exit. Reality-gap 49.1/100. Main checks: 85°F | Wind 8 mph Out | 16% precip | weather helps carry.",
         "pickTeam": "Brewers",
         "opponentTeam": "Rockies",
         "scores": {
           "chaosScore": 44.8,
           "deadEarlyScore": 8.5,
-          "phaseSplitScore": 68,
+          "phaseSplitScore": 60,
           "bullpenFlipScore": 42.9,
-          "starterControlScore": 16.5,
-          "marketContradictionScore": 13.6,
-          "realityGapScore": 59.5
+          "starterControlScore": 19.8,
+          "marketContradictionScore": 14.2,
+          "realityGapScore": 49.1
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -16934,7 +17520,7 @@
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
               "gameScore": 9.8,
-              "pickScore": 8.4,
+              "pickScore": 7.6,
               "opponentScore": 9.8
             },
             {
@@ -16973,7 +17559,7 @@
               "id": "flow",
               "label": "Flow",
               "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-              "gameScore": 32,
+              "gameScore": 40,
               "pickScore": 50,
               "opponentScore": 50
             }
@@ -16983,7 +17569,7 @@
               "role": "pick",
               "team": "Brewers",
               "scores": {
-                "pressure": 8.4,
+                "pressure": 7.6,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -16991,7 +17577,7 @@
                 "flow": 50
               },
               "polygon": [
-                8.4,
+                7.6,
                 5,
                 0,
                 16,
@@ -17055,7 +17641,7 @@
               "freeze": 8.5,
               "air": 24.4,
               "bridge": 42.9,
-              "flow": 32
+              "flow": 40
             },
             "polygon": [
               9.8,
@@ -17063,7 +17649,7 @@
               8.5,
               24.4,
               42.9,
-              32
+              40
             ],
             "dominantAxes": [
               {
@@ -17079,7 +17665,7 @@
               {
                 "id": "flow",
                 "label": "Flow",
-                "score": 32
+                "score": 40
               }
             ]
           }
@@ -17105,7 +17691,7 @@
           "sunVisibilityChaosBoost": 0
         },
         "metricNotes": [
-          "85°F | Wind 8 mph Out | 12% precip | weather helps carry"
+          "85°F | Wind 8 mph Out | 16% precip | weather helps carry"
         ],
         "laneMap": {
           "side": "Prefer live entry after starter exit.",
@@ -17139,13 +17725,13 @@
         "marketImplications": {
           "side": "Do not treat Brewers as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
           "first5": "First-five may be cleaner than full game if the starter-window edge is on the pick and the late edge flips.",
-          "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 74.2% YRFI."
+          "total": "No forced total edge. Wait for a line move or a clearer first-five total.",
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 75.2% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 39.3,
+          "impactScore": 36.8,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -17173,7 +17759,7 @@
             }
           },
           "trustedUse": "Use RF as a nonlinear totals/game-shape check first. Do not let it pick ML/F5 by itself yet.",
-          "totalsRead": "RF totals baseline can be used as a second check on the posted total.",
+          "totalsRead": "RF totals baseline has little to add when the line and projection are nearly equal.",
           "moneylineRead": "RF moneyline history is not deployable; it can only flag disagreement for review.",
           "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
           "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
@@ -17182,22 +17768,100 @@
       "first5Moneyline": {
         "pickSide": "home",
         "pickTeam": "Rockies",
-        "awayProjectedRuns": 2.4,
-        "homeProjectedRuns": 2.9,
-        "awayLeadProbability": 32.9,
-        "homeLeadProbability": 49.7,
-        "pushProbability": 17.4,
-        "leadProbability": 49.7,
+        "awayProjectedRuns": 2.9,
+        "homeProjectedRuns": 3.7,
+        "awayLeadProbability": 30.4,
+        "homeLeadProbability": 54.4,
+        "pushProbability": 15.2,
+        "leadProbability": 54.4,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
   },
   "playerProps": {
     "available": true,
-    "targets": [],
-    "featured": [
+    "targets": [
       {
-        "id": "brewers-rockies:694192:homeRun",
+        "id": "brewers-rockies:671289:singles",
+        "gameId": "brewers-rockies",
+        "gameTitle": "Brewers @ Rockies",
+        "league": "MLB",
+        "playerId": 671289,
+        "playerName": "Tyler Freeman",
+        "teamName": "Rockies",
+        "slot": 2,
+        "propType": "singles",
+        "propLabel": "Singles",
+        "marketLabel": "Over 0.5 singles",
+        "confidence": 82,
+        "probability": 85.6,
+        "expectedValue": 1.9,
+        "statValueLabel": "1.94 exp singles",
+        "sample": {
+          "seasonGames": 41,
+          "seasonPlateAppearances": 157,
+          "recentGames": 10,
+          "recentPlateAppearances": 40,
+          "statcastGames": 5,
+          "statcastPlateAppearances": 20,
+          "opponentContextGames": 10
+        },
+        "repeatability": {
+          "careerPa": 1213,
+          "seasonPa": 157,
+          "powerIndex": 26.24,
+          "contactRisk": 28.42,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 71.6,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": 3.2,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 157,
+            "careerPa": 1213
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 2 carry | contact quality has cooled | recent form up | clean traffic lane",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "deep-lineup",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "contact-lane",
+          "statcast-power-up",
+          "statcast-hr-carry",
+          "statcast-fade"
+        ],
+        "matchupNote": "+10.00 vs Brandon Sproat",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".277 AVG | .733 OPS | 38 H | 3 HR | 10g: .500 AVG | 1.413 OPS | 16 H | 2 HR | vs RHP: .293 AVG | .739 OPS | 1 HR | career 1213 PA | .672 OPS | 15 HR | contact-stable profile | power 26 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane",
+        "trackingScore": 99,
+        "supportCount": 6,
+        "trackingLabel": "6 script supports"
+      },
+      {
+        "id": "brewers-rockies:694192:singles",
         "gameId": "brewers-rockies",
         "gameTitle": "Brewers @ Rockies",
         "league": "MLB",
@@ -17205,21 +17869,21 @@
         "playerName": "Jackson Chourio",
         "teamName": "Brewers",
         "slot": 2,
-        "propType": "homeRun",
-        "propLabel": "HR",
-        "marketLabel": "Over 0.5 HR",
-        "confidence": 59,
-        "probability": 30.3,
-        "expectedValue": 0.4,
-        "statValueLabel": "0.36 exp HR",
+        "propType": "singles",
+        "propLabel": "Singles",
+        "marketLabel": "Over 0.5 singles",
+        "confidence": 81,
+        "probability": 72.6,
+        "expectedValue": 1.3,
+        "statValueLabel": "1.29 exp singles",
         "sample": {
           "seasonGames": 26,
           "seasonPlateAppearances": 118,
           "recentGames": 12,
           "recentPlateAppearances": 52,
-          "statcastGames": 0,
-          "statcastPlateAppearances": 0,
-          "opponentContextGames": 0
+          "statcastGames": 6,
+          "statcastPlateAppearances": 26,
+          "opponentContextGames": 10
         },
         "repeatability": {
           "careerPa": 1263,
@@ -17233,14 +17897,92 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 55.1,
-            "processScore": 0,
+            "confidenceScore": 73.1,
+            "processScore": 18,
             "careerWeight": 0.1,
             "identityDelta": 2.1,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "baseline approach",
+            "approachLabel": "process improving",
+            "seasonPa": 118,
+            "careerPa": 1263
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "baseline career profile"
+        },
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 2 carry | recent form up | clean traffic lane",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "deep-lineup",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "statcast-power-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+10.00 vs Ryan Feltner",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".308 AVG | .878 OPS | 33 H | 4 HR | 12g: .476 AVG | 1.577 OPS | 20 H | 6 HR | vs RHP: .317 AVG | .921 OPS | 3 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +5.8 | +10.0 matchup grade in a neutral lane",
+        "trackingScore": 99,
+        "supportCount": 5,
+        "trackingLabel": "5 script supports"
+      }
+    ],
+    "featured": [
+      {
+        "id": "brewers-rockies:694192:homeRun",
+        "gameId": "brewers-rockies",
+        "gameTitle": "Brewers @ Rockies",
+        "league": "MLB",
+        "playerId": 694192,
+        "playerName": "Jackson Chourio",
+        "teamName": "Brewers",
+        "slot": 2,
+        "propType": "homeRun",
+        "propLabel": "HR",
+        "marketLabel": "Over 0.5 HR",
+        "confidence": 66,
+        "probability": 32.1,
+        "expectedValue": 0.4,
+        "statValueLabel": "0.39 exp HR",
+        "sample": {
+          "seasonGames": 26,
+          "seasonPlateAppearances": 118,
+          "recentGames": 12,
+          "recentPlateAppearances": 52,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 26,
+          "opponentContextGames": 10
+        },
+        "repeatability": {
+          "careerPa": 1263,
+          "seasonPa": 118,
+          "powerIndex": 64.05,
+          "contactRisk": 44.26,
+          "roleStability": 96,
+          "label": "baseline career profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 73.1,
+            "processScore": 18,
+            "careerWeight": 0.1,
+            "identityDelta": 2.1,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
             "seasonPa": 118,
             "careerPa": 1263
           },
@@ -17251,19 +17993,23 @@
         "recommendationTier": "Lean",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 2 carry | baseline career profile | baseline approach; approach 55.1/100 | recent form up",
+        "reason": "slot 2 carry | baseline career profile | process improving; approach 73.1/100 | hard-hit / barrel trend is live",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "deep-lineup",
+          "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
           "career-power-backed",
-          "baseline-approach"
+          "process-improving",
+          "statcast-power-up",
+          "statcast-hr-carry"
         ],
         "matchupNote": "+10.00 vs Ryan Feltner",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".308 AVG | .878 OPS | 33 H | 4 HR | 12g: .476 AVG | 1.577 OPS | 20 H | 6 HR | vs RHP: .317 AVG | .921 OPS | 3 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +5.8 | +10.0 matchup grade in a neutral lane"
       },
       {
@@ -17279,17 +18025,17 @@
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
         "confidence": 82,
-        "probability": 90.5,
-        "expectedValue": 2.4,
-        "statValueLabel": "2.35 exp RBI",
+        "probability": 94.3,
+        "expectedValue": 2.9,
+        "statValueLabel": "2.86 exp RBI",
         "sample": {
           "seasonGames": 57,
           "seasonPlateAppearances": 239,
           "recentGames": 12,
           "recentPlateAppearances": 58,
-          "statcastGames": 0,
-          "statcastPlateAppearances": 0,
-          "opponentContextGames": 0
+          "statcastGames": 6,
+          "statcastPlateAppearances": 29,
+          "opponentContextGames": 10
         },
         "repeatability": {
           "careerPa": 1104,
@@ -17303,14 +18049,14 @@
           "careerVolatile": true,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 55.4,
-            "processScore": 0,
+            "confidenceScore": 73.4,
+            "processScore": 18,
             "careerWeight": 0.1,
             "identityDelta": 2.5,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "baseline approach",
+            "approachLabel": "process improving",
             "seasonPa": 239,
             "careerPa": 1104
           },
@@ -17321,8 +18067,9 @@
         "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 4 carry | baseline approach; approach 55.4/100 | recent form up | run-production slot",
+        "reason": "slot 4 carry | process improving; approach 73.4/100 | recent form up | run-production slot",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
           "deep-lineup",
@@ -17330,84 +18077,94 @@
           "traffic-lane-live",
           "clean-conversion-lane",
           "bullpen-carry-bat",
-          "baseline-approach",
-          "run-production-slot"
+          "process-improving",
+          "run-production-slot",
+          "statcast-power-up",
+          "statcast-contact-up",
+          "statcast-hr-carry"
         ],
         "matchupNote": "+10.00 vs Brandon Sproat",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".244 AVG | .816 OPS | 53 H | 15 HR | 12g: .292 AVG | 1.205 OPS | 14 H | 6 HR | vs RHP: .247 AVG | .832 OPS | 11 HR | career 1104 PA | .775 OPS | 58 HR | volatile career power | power 85 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +4.6 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
-        "id": "brewers-rockies:694192:totalBases",
+        "id": "brewers-rockies:696100:totalBases",
         "gameId": "brewers-rockies",
         "gameTitle": "Brewers @ Rockies",
         "league": "MLB",
-        "playerId": 694192,
-        "playerName": "Jackson Chourio",
-        "teamName": "Brewers",
-        "slot": 2,
+        "playerId": 696100,
+        "playerName": "Hunter Goodman",
+        "teamName": "Rockies",
+        "slot": 4,
         "propType": "totalBases",
         "propLabel": "TB",
         "marketLabel": "Over 1.5 total bases",
-        "confidence": 73,
-        "probability": 63.3,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.15 exp TB",
+        "confidence": 82,
+        "probability": 98.9,
+        "expectedValue": 6.6,
+        "statValueLabel": "6.57 exp TB",
         "sample": {
-          "seasonGames": 26,
-          "seasonPlateAppearances": 118,
+          "seasonGames": 57,
+          "seasonPlateAppearances": 239,
           "recentGames": 12,
-          "recentPlateAppearances": 52,
-          "statcastGames": 0,
-          "statcastPlateAppearances": 0,
-          "opponentContextGames": 0
+          "recentPlateAppearances": 58,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 29,
+          "opponentContextGames": 10
         },
         "repeatability": {
-          "careerPa": 1263,
-          "seasonPa": 118,
-          "powerIndex": 64.05,
-          "contactRisk": 44.26,
-          "roleStability": 96,
-          "label": "baseline career profile",
-          "volatilityLabel": "stable enough",
+          "careerPa": 1104,
+          "seasonPa": 239,
+          "powerIndex": 85.4,
+          "contactRisk": 58.51,
+          "roleStability": 100,
+          "label": "volatile career power",
+          "volatilityLabel": "strikeout volatility",
           "careerPowerBacked": true,
-          "careerVolatile": false,
+          "careerVolatile": true,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 55.1,
-            "processScore": 0,
+            "confidenceScore": 73.4,
+            "processScore": 18,
             "careerWeight": 0.1,
-            "identityDelta": 2.1,
+            "identityDelta": 2.5,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "baseline approach",
-            "seasonPa": 118,
-            "careerPa": 1263
+            "approachLabel": "process improving",
+            "seasonPa": 239,
+            "careerPa": 1104
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
-          "reason": "baseline career profile"
+          "reason": "volatile career power"
         },
-        "recommendationTier": "Strong",
+        "recommendationTier": "Core",
         "shadowSupportTag": "Soft heat",
         "shadowSupportLevel": "soft",
-        "reason": "slot 2 carry | soft heat only: xSLG + hard-hit support is still thin | baseline career profile | baseline approach; approach 55.1/100",
+        "reason": "slot 4 carry | soft heat only: hard-hit support is still thin | rolling Statcast power is live | volatile career power",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
+          "middle-order-traffic",
           "deep-lineup",
+          "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
-          "carry-bat-live",
+          "bullpen-carry-bat",
+          "power-lane",
           "career-power-backed",
-          "baseline-approach",
-          "soft-heat"
+          "process-improving",
+          "soft-heat",
+          "statcast-power-up",
+          "statcast-contact-up",
+          "statcast-hr-carry"
         ],
-        "matchupNote": "+10.00 vs Ryan Feltner",
+        "matchupNote": "+10.00 vs Brandon Sproat",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".308 AVG | .878 OPS | 33 H | 4 HR | 12g: .476 AVG | 1.577 OPS | 20 H | 6 HR | vs RHP: .317 AVG | .921 OPS | 3 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +5.8 | +10.0 matchup grade in a neutral lane"
+        "lineupStatus": "posted",
+        "playerSummary": ".244 AVG | .816 OPS | 53 H | 15 HR | 12g: .292 AVG | 1.205 OPS | 14 H | 6 HR | vs RHP: .247 AVG | .832 OPS | 11 HR | career 1104 PA | .775 OPS | 58 HR | volatile career power | power 85 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +4.6 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
         "id": "brewers-rockies:671289:hits",
@@ -17421,18 +18178,18 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 70,
-        "probability": 61.1,
-        "expectedValue": 2.1,
-        "statValueLabel": "2.06 exp hits",
+        "confidence": 80,
+        "probability": 71.8,
+        "expectedValue": 2.5,
+        "statValueLabel": "2.52 exp hits",
         "sample": {
           "seasonGames": 41,
           "seasonPlateAppearances": 157,
           "recentGames": 10,
           "recentPlateAppearances": 40,
-          "statcastGames": 0,
-          "statcastPlateAppearances": 0,
-          "opponentContextGames": 0
+          "statcastGames": 5,
+          "statcastPlateAppearances": 20,
+          "opponentContextGames": 10
         },
         "repeatability": {
           "careerPa": 1213,
@@ -17446,14 +18203,14 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 56.6,
-            "processScore": 0,
+            "confidenceScore": 71.6,
+            "processScore": 15,
             "careerWeight": 0.1,
             "identityDelta": 3.2,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "baseline approach",
+            "approachLabel": "process improving",
             "seasonPa": 157,
             "careerPa": 1213
           },
@@ -17461,11 +18218,12 @@
           "trackingPenalty": 18,
           "reason": "contact-stable profile"
         },
-        "recommendationTier": "Strong",
+        "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 2 carry | recent form up | clean traffic lane",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
           "deep-lineup",
@@ -17473,85 +18231,88 @@
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
-          "baseline-approach"
+          "process-improving",
+          "statcast-power-up",
+          "statcast-hr-carry",
+          "statcast-fade"
         ],
         "matchupNote": "+10.00 vs Brandon Sproat",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".277 AVG | .733 OPS | 38 H | 3 HR | 10g: .500 AVG | 1.413 OPS | 16 H | 2 HR | vs RHP: .293 AVG | .739 OPS | 1 HR | career 1213 PA | .672 OPS | 15 HR | contact-stable profile | power 26 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
-        "id": "brewers-rockies:681198:walks",
+        "id": "brewers-rockies:666397:walks",
         "gameId": "brewers-rockies",
         "gameTitle": "Brewers @ Rockies",
         "league": "MLB",
-        "playerId": 681198,
-        "playerName": "TJ Rumfield",
+        "playerId": 666397,
+        "playerName": "Edouard Julien",
         "teamName": "Rockies",
-        "slot": 3,
+        "slot": 9,
         "propType": "walks",
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
-        "confidence": 58,
-        "probability": 39.7,
-        "expectedValue": 0.5,
-        "statValueLabel": "0.51 exp walks",
+        "confidence": 69,
+        "probability": 59.7,
+        "expectedValue": 0.9,
+        "statValueLabel": "0.91 exp walks",
         "sample": {
-          "seasonGames": 60,
-          "seasonPlateAppearances": 237,
-          "recentGames": 10,
-          "recentPlateAppearances": 40,
-          "statcastGames": 0,
-          "statcastPlateAppearances": 0,
-          "opponentContextGames": 0
+          "seasonGames": 52,
+          "seasonPlateAppearances": 170,
+          "recentGames": 12,
+          "recentPlateAppearances": 38,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 19,
+          "opponentContextGames": 10
         },
         "repeatability": {
-          "careerPa": 227,
-          "seasonPa": 237,
-          "powerIndex": 59.09,
-          "contactRisk": 30.01,
-          "roleStability": 53.38,
+          "careerPa": 1077,
+          "seasonPa": 170,
+          "powerIndex": 39.29,
+          "contactRisk": 58.51,
+          "roleStability": 100,
           "label": "baseline career profile",
-          "volatilityLabel": "role volatility",
+          "volatilityLabel": "strikeout volatility",
           "careerPowerBacked": false,
           "careerVolatile": true,
-          "roleStable": false,
+          "roleStable": true,
           "approachState": {
-            "confidenceScore": 51.1,
-            "processScore": 0,
+            "confidenceScore": 57.1,
+            "processScore": 11,
             "careerWeight": 0.1,
-            "identityDelta": 1.4,
-            "tbDelta": 0,
+            "identityDelta": -6.7,
+            "tbDelta": -0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "baseline approach",
-            "seasonPa": 237,
-            "careerPa": 227
+            "seasonPa": 170,
+            "careerPa": 1077
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
           "reason": "baseline career profile"
         },
-        "recommendationTier": "Lean",
+        "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 3 carry | recent form up | split fit live | starter walk pressure",
+        "reason": "slot 9 carry | recent form up | split fit live | starter walk pressure",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
           "deep-lineup",
           "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
-          "bullpen-carry-bat",
-          "carry-bat-live",
           "starter-wildness-lane",
-          "baseline-approach"
+          "baseline-approach",
+          "statcast-power-up"
         ],
         "matchupNote": "+10.00 vs Brandon Sproat",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".286 AVG | .816 OPS | 60 H | 8 HR | 10g: .333 AVG | .906 OPS | 12 H | 2 HR | vs RHP: .298 AVG | .893 OPS | 8 HR | career 227 PA | .804 OPS | 7 HR | baseline career profile | power 59 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +6.6 | +10.0 matchup grade in a traffic-risk lane"
+        "lineupStatus": "posted",
+        "playerSummary": ".218 AVG | .623 OPS | 32 H | 2 HR | 12g: .357 AVG | .955 OPS | 10 H | 0 HR | vs RHP: .235 AVG | .661 OPS | 2 HR | career 1077 PA | .698 OPS | 29 HR | baseline career profile | power 39 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.8 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
         "id": "brewers-rockies:671289:singles",
@@ -17565,18 +18326,18 @@
         "propType": "singles",
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
-        "confidence": 78,
-        "probability": 79.8,
-        "expectedValue": 1.6,
-        "statValueLabel": "1.60 exp singles",
+        "confidence": 82,
+        "probability": 85.6,
+        "expectedValue": 1.9,
+        "statValueLabel": "1.94 exp singles",
         "sample": {
           "seasonGames": 41,
           "seasonPlateAppearances": 157,
           "recentGames": 10,
           "recentPlateAppearances": 40,
-          "statcastGames": 0,
-          "statcastPlateAppearances": 0,
-          "opponentContextGames": 0
+          "statcastGames": 5,
+          "statcastPlateAppearances": 20,
+          "opponentContextGames": 10
         },
         "repeatability": {
           "careerPa": 1213,
@@ -17590,14 +18351,14 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 56.6,
-            "processScore": 0,
+            "confidenceScore": 71.6,
+            "processScore": 15,
             "careerWeight": 0.1,
             "identityDelta": 3.2,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "baseline approach",
+            "approachLabel": "process improving",
             "seasonPa": 157,
             "careerPa": 1213
           },
@@ -17605,11 +18366,12 @@
           "trackingPenalty": 18,
           "reason": "contact-stable profile"
         },
-        "recommendationTier": "Strong",
+        "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 2 carry | recent form up | clean traffic lane",
+        "reason": "slot 2 carry | contact quality has cooled | recent form up | clean traffic lane",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
           "deep-lineup",
@@ -17617,89 +18379,94 @@
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
-          "baseline-approach",
-          "contact-lane"
+          "process-improving",
+          "contact-lane",
+          "statcast-power-up",
+          "statcast-hr-carry",
+          "statcast-fade"
         ],
         "matchupNote": "+10.00 vs Brandon Sproat",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".277 AVG | .733 OPS | 38 H | 3 HR | 10g: .500 AVG | 1.413 OPS | 16 H | 2 HR | vs RHP: .293 AVG | .739 OPS | 1 HR | career 1213 PA | .672 OPS | 15 HR | contact-stable profile | power 26 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
-        "id": "brewers-rockies:681198:rbi",
+        "id": "brewers-rockies:694192:totalBases",
         "gameId": "brewers-rockies",
         "gameTitle": "Brewers @ Rockies",
         "league": "MLB",
-        "playerId": 681198,
-        "playerName": "TJ Rumfield",
-        "teamName": "Rockies",
-        "slot": 3,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
+        "playerId": 694192,
+        "playerName": "Jackson Chourio",
+        "teamName": "Brewers",
+        "slot": 2,
+        "propType": "totalBases",
+        "propLabel": "TB",
+        "marketLabel": "Over 1.5 total bases",
         "confidence": 82,
-        "probability": 85.8,
-        "expectedValue": 1.9,
-        "statValueLabel": "1.95 exp RBI",
+        "probability": 97.9,
+        "expectedValue": 5.8,
+        "statValueLabel": "5.75 exp TB",
         "sample": {
-          "seasonGames": 60,
-          "seasonPlateAppearances": 237,
-          "recentGames": 10,
-          "recentPlateAppearances": 40,
-          "statcastGames": 0,
-          "statcastPlateAppearances": 0,
-          "opponentContextGames": 0
+          "seasonGames": 26,
+          "seasonPlateAppearances": 118,
+          "recentGames": 12,
+          "recentPlateAppearances": 52,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 26,
+          "opponentContextGames": 10
         },
         "repeatability": {
-          "careerPa": 227,
-          "seasonPa": 237,
-          "powerIndex": 59.09,
-          "contactRisk": 30.01,
-          "roleStability": 53.38,
+          "careerPa": 1263,
+          "seasonPa": 118,
+          "powerIndex": 64.05,
+          "contactRisk": 44.26,
+          "roleStability": 96,
           "label": "baseline career profile",
-          "volatilityLabel": "role volatility",
-          "careerPowerBacked": false,
-          "careerVolatile": true,
-          "roleStable": false,
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
           "approachState": {
-            "confidenceScore": 51.1,
-            "processScore": 0,
+            "confidenceScore": 73.1,
+            "processScore": 18,
             "careerWeight": 0.1,
-            "identityDelta": 1.4,
+            "identityDelta": 2.1,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "baseline approach",
-            "seasonPa": 237,
-            "careerPa": 227
+            "approachLabel": "process improving",
+            "seasonPa": 118,
+            "careerPa": 1263
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
           "reason": "baseline career profile"
         },
         "recommendationTier": "Core",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 3 carry | baseline approach; approach 51.1/100 | recent form up | split fit live",
+        "shadowSupportTag": "Soft heat",
+        "shadowSupportLevel": "soft",
+        "reason": "slot 2 carry | soft heat only: hard-hit support is still thin | rolling Statcast power is live | baseline career profile",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
-          "middle-order-traffic",
           "deep-lineup",
           "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
-          "bullpen-carry-bat",
           "carry-bat-live",
-          "baseline-approach",
-          "run-production-slot"
+          "career-power-backed",
+          "process-improving",
+          "soft-heat",
+          "statcast-power-up",
+          "statcast-hr-carry"
         ],
-        "matchupNote": "+10.00 vs Brandon Sproat",
+        "matchupNote": "+10.00 vs Ryan Feltner",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".286 AVG | .816 OPS | 60 H | 8 HR | 10g: .333 AVG | .906 OPS | 12 H | 2 HR | vs RHP: .298 AVG | .893 OPS | 8 HR | career 227 PA | .804 OPS | 7 HR | baseline career profile | power 59 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +6.6 | +10.0 matchup grade in a traffic-risk lane"
+        "lineupStatus": "posted",
+        "playerSummary": ".308 AVG | .878 OPS | 33 H | 4 HR | 12g: .476 AVG | 1.577 OPS | 20 H | 6 HR | vs RHP: .317 AVG | .921 OPS | 3 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +5.8 | +10.0 matchup grade in a neutral lane"
       },
       {
-        "id": "brewers-rockies:664983:rbi",
+        "id": "brewers-rockies:664983:totalBases",
         "gameId": "brewers-rockies",
         "gameTitle": "Brewers @ Rockies",
         "league": "MLB",
@@ -17707,21 +18474,21 @@
         "playerName": "Jake McCarthy",
         "teamName": "Rockies",
         "slot": 1,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 80,
-        "probability": 81,
-        "expectedValue": 1.7,
-        "statValueLabel": "1.66 exp RBI",
+        "propType": "totalBases",
+        "propLabel": "TB",
+        "marketLabel": "Over 1.5 total bases",
+        "confidence": 82,
+        "probability": 92.7,
+        "expectedValue": 4.3,
+        "statValueLabel": "4.29 exp TB",
         "sample": {
           "seasonGames": 52,
           "seasonPlateAppearances": 173,
           "recentGames": 12,
           "recentPlateAppearances": 58,
-          "statcastGames": 0,
-          "statcastPlateAppearances": 0,
-          "opponentContextGames": 0
+          "statcastGames": 6,
+          "statcastPlateAppearances": 29,
+          "opponentContextGames": 10
         },
         "repeatability": {
           "careerPa": 1611,
@@ -17735,14 +18502,14 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 59.3,
-            "processScore": 0,
+            "confidenceScore": 74.3,
+            "processScore": 15,
             "careerWeight": 0.1,
             "identityDelta": 5.9,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "baseline approach",
+            "approachLabel": "process improving",
             "seasonPa": 173,
             "careerPa": 1611
           },
@@ -17751,10 +18518,11 @@
           "reason": "contact-stable profile"
         },
         "recommendationTier": "Core",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 1 carry | baseline approach; approach 59.3/100 | recent form up | split fit live",
+        "shadowSupportTag": "Soft heat",
+        "shadowSupportLevel": "soft",
+        "reason": "slot 1 carry | soft heat only: xSLG + hard-hit support is still thin | rolling Statcast power is live | contact-stable profile",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
           "deep-lineup",
@@ -17762,22 +18530,180 @@
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
-          "baseline-approach",
-          "run-production-slot"
+          "process-improving",
+          "soft-heat",
+          "statcast-power-up",
+          "statcast-fade"
         ],
         "matchupNote": "+10.00 vs Brandon Sproat",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".284 AVG | .794 OPS | 44 H | 4 HR | 12g: .360 AVG | 1.134 OPS | 18 H | 4 HR | vs RHP: .264 AVG | .777 OPS | 4 HR | career 1611 PA | .711 OPS | 27 HR | contact-stable profile | power 39 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.7 | +10.0 matchup grade in a traffic-risk lane"
       }
     ],
     "byType": {
       "totalBases": [],
-      "singles": [],
+      "singles": [
+        {
+          "id": "brewers-rockies:671289:singles",
+          "gameId": "brewers-rockies",
+          "gameTitle": "Brewers @ Rockies",
+          "league": "MLB",
+          "playerId": 671289,
+          "playerName": "Tyler Freeman",
+          "teamName": "Rockies",
+          "slot": 2,
+          "propType": "singles",
+          "propLabel": "Singles",
+          "marketLabel": "Over 0.5 singles",
+          "confidence": 82,
+          "probability": 85.6,
+          "expectedValue": 1.9,
+          "statValueLabel": "1.94 exp singles",
+          "sample": {
+            "seasonGames": 41,
+            "seasonPlateAppearances": 157,
+            "recentGames": 10,
+            "recentPlateAppearances": 40,
+            "statcastGames": 5,
+            "statcastPlateAppearances": 20,
+            "opponentContextGames": 10
+          },
+          "repeatability": {
+            "careerPa": 1213,
+            "seasonPa": 157,
+            "powerIndex": 26.24,
+            "contactRisk": 28.42,
+            "roleStability": 100,
+            "label": "contact-stable profile",
+            "volatilityLabel": "stable enough",
+            "careerPowerBacked": false,
+            "careerVolatile": false,
+            "roleStable": true,
+            "approachState": {
+              "confidenceScore": 71.6,
+              "processScore": 15,
+              "careerWeight": 0.1,
+              "identityDelta": 3.2,
+              "tbDelta": 0,
+              "hrDelta": 0,
+              "rolePressure": "role established",
+              "approachLabel": "process improving",
+              "seasonPa": 157,
+              "careerPa": 1213
+            },
+            "canCarryTinySample": false,
+            "trackingPenalty": 18,
+            "reason": "contact-stable profile"
+          },
+          "recommendationTier": "Core",
+          "shadowSupportTag": null,
+          "shadowSupportLevel": null,
+          "reason": "slot 2 carry | contact quality has cooled | recent form up | clean traffic lane",
+          "scriptTags": [
+            "posted-lineup",
+            "top-third-pressure",
+            "middle-order-traffic",
+            "deep-lineup",
+            "run-ceiling-live",
+            "traffic-lane-live",
+            "clean-conversion-lane",
+            "carry-bat-live",
+            "process-improving",
+            "contact-lane",
+            "statcast-power-up",
+            "statcast-hr-carry",
+            "statcast-fade"
+          ],
+          "matchupNote": "+10.00 vs Brandon Sproat",
+          "teamScriptLabel": "",
+          "lineupStatus": "posted",
+          "playerSummary": ".277 AVG | .733 OPS | 38 H | 3 HR | 10g: .500 AVG | 1.413 OPS | 16 H | 2 HR | vs RHP: .293 AVG | .739 OPS | 1 HR | career 1213 PA | .672 OPS | 15 HR | contact-stable profile | power 26 | 2026 sample ok | arsenal Sinker 28% / Cutter 27% / 4-Seam Fastball 19% | fit +3.3 | +10.0 matchup grade in a traffic-risk lane",
+          "trackingScore": 99,
+          "supportCount": 6,
+          "trackingLabel": "6 script supports"
+        },
+        {
+          "id": "brewers-rockies:694192:singles",
+          "gameId": "brewers-rockies",
+          "gameTitle": "Brewers @ Rockies",
+          "league": "MLB",
+          "playerId": 694192,
+          "playerName": "Jackson Chourio",
+          "teamName": "Brewers",
+          "slot": 2,
+          "propType": "singles",
+          "propLabel": "Singles",
+          "marketLabel": "Over 0.5 singles",
+          "confidence": 81,
+          "probability": 72.6,
+          "expectedValue": 1.3,
+          "statValueLabel": "1.29 exp singles",
+          "sample": {
+            "seasonGames": 26,
+            "seasonPlateAppearances": 118,
+            "recentGames": 12,
+            "recentPlateAppearances": 52,
+            "statcastGames": 6,
+            "statcastPlateAppearances": 26,
+            "opponentContextGames": 10
+          },
+          "repeatability": {
+            "careerPa": 1263,
+            "seasonPa": 118,
+            "powerIndex": 64.05,
+            "contactRisk": 44.26,
+            "roleStability": 96,
+            "label": "baseline career profile",
+            "volatilityLabel": "stable enough",
+            "careerPowerBacked": true,
+            "careerVolatile": false,
+            "roleStable": true,
+            "approachState": {
+              "confidenceScore": 73.1,
+              "processScore": 18,
+              "careerWeight": 0.1,
+              "identityDelta": 2.1,
+              "tbDelta": 0,
+              "hrDelta": 0,
+              "rolePressure": "role established",
+              "approachLabel": "process improving",
+              "seasonPa": 118,
+              "careerPa": 1263
+            },
+            "canCarryTinySample": false,
+            "trackingPenalty": 18,
+            "reason": "baseline career profile"
+          },
+          "recommendationTier": "Core",
+          "shadowSupportTag": null,
+          "shadowSupportLevel": null,
+          "reason": "slot 2 carry | recent form up | clean traffic lane",
+          "scriptTags": [
+            "posted-lineup",
+            "top-third-pressure",
+            "deep-lineup",
+            "run-ceiling-live",
+            "traffic-lane-live",
+            "clean-conversion-lane",
+            "carry-bat-live",
+            "process-improving",
+            "statcast-power-up",
+            "statcast-hr-carry"
+          ],
+          "matchupNote": "+10.00 vs Ryan Feltner",
+          "teamScriptLabel": "",
+          "lineupStatus": "posted",
+          "playerSummary": ".308 AVG | .878 OPS | 33 H | 4 HR | 12g: .476 AVG | 1.577 OPS | 20 H | 6 HR | vs RHP: .317 AVG | .921 OPS | 3 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Slider 23% / Changeup 16% | fit +5.8 | +10.0 matchup grade in a neutral lane",
+          "trackingScore": 99,
+          "supportCount": 5,
+          "trackingLabel": "5 script supports"
+        }
+      ],
       "walks": [],
       "rbi": []
     },
-    "candidateCount": 58,
-    "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
+    "candidateCount": 73,
+    "summary": "Tyler Freeman leads the tracked prop board, with 2 narrower lanes surviving script and volatility filters out of 73 raw candidates. Featured props now show a broader mix than the tracked-only shortlist."
   }
 }

@@ -188,7 +188,10 @@ const fetchStatmuse = async ({ pitcherName, opponentTeam }) => {
     }
   })
   if (!response.ok) {
-    throw new Error(`StatMuse ${response.status} for ${url}`)
+    const error = new Error(`StatMuse ${response.status} for ${url}`)
+    error.status = response.status
+    error.url = url
+    throw error
   }
   const html = await response.text()
   const answerText = parseMetaAnswer(html)
@@ -269,17 +272,29 @@ const main = async () => {
   const starters = starterRowsForGames(await loadGames())
   const fetched = []
   const errors = []
+  const noHistory = []
 
   for (const [index, starter] of starters.entries()) {
     try {
       const payload = await fetchStatmuse(starter)
       fetched.push({ ...starter, ...payload, fetchedAt: new Date().toISOString() })
     } catch (error) {
-      errors.push({ ...starter, error: error.message })
       const opponentSlug = slugify(shortTeamNameByOfficial[starter.opponentTeam] || starter.opponentTeam)
+      const noHistoryUrl = `https://www.statmuse.com/mlb/ask/${slugify(starter.pitcherName)}-vs-${opponentSlug}`
+      const noHistoryPayload = {
+        ...starter,
+        status: error.status || null,
+        url: error.url || noHistoryUrl,
+        error: error.message
+      }
+      if ([404, 422].includes(Number(error.status))) {
+        noHistory.push(noHistoryPayload)
+      } else {
+        errors.push(noHistoryPayload)
+      }
       fetched.push({
         ...starter,
-        url: `https://www.statmuse.com/mlb/ask/${slugify(starter.pitcherName)}-vs-${opponentSlug}`,
+        url: noHistoryUrl,
         answerText: `${starter.pitcherName}: no StatMuse matchup history found vs ${starter.opponentTeam}.`,
         rows: [],
         total: null,
@@ -309,6 +324,7 @@ const main = async () => {
     dryRun,
     starterCount: starters.length,
     inserted: dryRun ? 0 : fetched.length,
+    noHistory,
     errors
   }, null, 2))
   process.exit(errors.length ? 2 : 0)

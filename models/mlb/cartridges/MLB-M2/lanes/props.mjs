@@ -117,6 +117,14 @@ const loadDayGames = async (date) => loadMlbDayGames(date)
 
 const fullNameForTeam = (name = '') => fullTeamNames[name] || name
 
+const publicPropSourcePath = (sourceName = '', sourcePath = '') => {
+  const sourceText = `${sourceName} ${sourcePath}`.toLowerCase()
+  if (sourceText.includes('draftkings')) return 'https://sportsbook.draftkings.com/leagues/baseball/mlb'
+  if (sourceText.includes('fanduel')) return 'https://sportsbook.fanduel.com/baseball/mlb'
+  if (/data-private|\/users\//i.test(String(sourcePath || ''))) return ''
+  return sourcePath || ''
+}
+
 const thresholdForProp = (propType, marketLabel = '') => {
   if (Number.isFinite(propThresholdByType[propType])) return propThresholdByType[propType]
   const match = marketLabel.match(/Over\s+([0-9.]+)/i)
@@ -202,17 +210,21 @@ const loadPitcherStrikeoutOddsByGame = (date) => {
       game_id,
       player_name,
       line_value,
-      MAX(source_name) AS source_name,
-      MAX(sportsbook) AS sportsbook,
-      MAX(source_path) AS source_path,
+      source_name,
+      sportsbook,
+      source_path,
       MAX(captured_at) AS captured_at,
       MAX(CASE WHEN selection='Over' THEN american_odds END) AS over_price,
       MAX(CASE WHEN selection='Under' THEN american_odds END) AS under_price
     FROM prop_market_snapshots
     WHERE market_date=?
       AND market_key='pitcher_strikeouts'
-    GROUP BY game_id, player_name, line_value
-    ORDER BY game_id, player_name
+    GROUP BY game_id, player_name, line_value, source_name, sportsbook, source_path
+    ORDER BY
+      game_id,
+      player_name,
+      CASE WHEN lower(source_name)='draftkings' THEN 1 ELSE 0 END,
+      captured_at
   `, [date])
 
   return rows.reduce((acc, row) => {
@@ -226,7 +238,7 @@ const loadPitcherStrikeoutOddsByGame = (date) => {
       underPrice: Number.isFinite(Number(row.under_price)) ? Number(row.under_price) : null,
       sportsbook: row.sportsbook || row.source_name || 'Prop market',
       sourceName: row.source_name || '',
-      sourcePath: row.source_path || '',
+      sourcePath: publicPropSourcePath(row.source_name, row.source_path),
       capturedAt: row.captured_at || ''
     }
     return acc

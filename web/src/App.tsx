@@ -739,9 +739,11 @@ const buildPitcherSummary = (
         }`
       : ''
   const strikeoutMarket = pitcher?.strikeoutMarket ?? null
+  const strikeoutBook =
+    strikeoutMarket?.sportsbook || strikeoutMarket?.sourceName || 'Market'
   const strikeoutLine =
     strikeoutMarket && Number.isFinite(Number(strikeoutMarket.line))
-      ? `FanDuel K line: O/U ${formatNumber(strikeoutMarket.line, 1)}${
+      ? `${strikeoutBook} K line: O/U ${formatNumber(strikeoutMarket.line, 1)}${
           Number.isFinite(Number(strikeoutMarket.overPrice)) || Number.isFinite(Number(strikeoutMarket.underPrice))
             ? ` · O ${Number.isFinite(Number(strikeoutMarket.overPrice)) ? formatAmericanOdds(Number(strikeoutMarket.overPrice)) : 'n/a'} / U ${Number.isFinite(Number(strikeoutMarket.underPrice)) ? formatAmericanOdds(Number(strikeoutMarket.underPrice)) : 'n/a'}`
             : ''
@@ -4114,6 +4116,25 @@ function App() {
             const recentOps = Number(player.recent?.ops)
             const splitOps = Number(player.split?.ops)
             const careerOps = Number(player.careerProfile?.careerOps)
+            const rolling7Xwoba = Number(statcastTrend.rolling7Xwoba)
+            const rolling14Xwoba = Number(statcastTrend.rolling14Xwoba)
+            const rolling30Xwoba = Number(statcastTrend.rolling30Xwoba)
+            const xwobaTrend = Number(statcastTrend.xwobaTrend)
+            const rolling7Xslg = Number(statcastTrend.rolling7Xslg)
+            const rolling7BarrelPct = Number(statcastTrend.rolling7BarrelPct)
+            const rolling7HardHitPct = Number(statcastTrend.rolling7HardHitPct)
+            const rolling7SweetSpotPct = Number(statcastTrend.rolling7SweetSpotPct)
+            const recentXobp = Number(statcastTrend.recentXobp)
+            const recentXslg = Number(statcastTrend.recentXslg)
+            const recentXops = Number(statcastTrend.recentXops)
+            const recentAvgExitVelocity = Number(statcastTrend.recentAvgExitVelocity)
+            const recentAvgLaunchAngle = Number(statcastTrend.recentAvgLaunchAngle)
+            const recentBarrelPct = Number(statcastTrend.recentBarrelPct)
+            const recentHardHitPct = Number(statcastTrend.recentHardHitPct)
+            const recentSweetSpotPct = Number(statcastTrend.recentSweetSpotPct)
+            const recentBbeSample = Number(statcastTrend.recentBbeSample)
+            const recentStatcastPa = Number(statcastTrend.recentStatcastPa)
+            const recentStatcastHomeRuns = Number(statcastTrend.recentStatcastHomeRuns)
             const opsInputs = [
               Number.isFinite(recentOps) ? { value: recentOps, weight: 0.4 } : null,
               Number.isFinite(splitOps) ? { value: splitOps, weight: 0.35 } : null,
@@ -4130,7 +4151,125 @@ function App() {
             const pitchFitScore = Number(metrics.pitchTypeFitScore)
             const pitchFitGrade = Number(metrics.pitchTypeGrade)
             const formScore = Number(metrics.formScore)
+            const powerScore = Number(metrics.powerScore)
             const slot = Number(player.slot)
+            const effectiveBarrelPct = Number.isFinite(recentBarrelPct) ? recentBarrelPct : rolling7BarrelPct
+            const effectiveHardHitPct = Number.isFinite(recentHardHitPct) ? recentHardHitPct : rolling7HardHitPct
+            const effectiveSweetSpotPct = Number.isFinite(recentSweetSpotPct) ? recentSweetSpotPct : rolling7SweetSpotPct
+            const hasOptimalLaunchAngle = Number.isFinite(recentAvgLaunchAngle)
+              ? recentAvgLaunchAngle >= 8 && recentAvgLaunchAngle <= 32
+              : Number.isFinite(effectiveSweetSpotPct)
+                ? effectiveSweetSpotPct >= 33
+                : false
+            const seasonHrRate = Number(player.season?.hrRate)
+            const recentHrRate = Number(player.recent?.hrRate)
+            const splitHrRate = Number(player.split?.hrRate)
+            const recentHomeRuns = Number.isFinite(recentStatcastHomeRuns)
+              ? recentStatcastHomeRuns
+              : Number(player.recent?.homeRuns)
+            const opposingStarterHomeRunsAllowed = Number(opposingStarter.homeRunsAllowed)
+            const opposingStarterHr9 = Number(opposingStarter.homeRunsPerNine)
+            const opposingStarterRecentHr9 = Number(opposingStarter.recentHomeRunsPerNine)
+            const opposingStarterRecentHrPerStart = Number(opposingStarter.recentHomeRunsAllowedPerStart)
+            const opposingStarterHrScoreInput =
+              Number.isFinite(opposingStarterHr9) && Number.isFinite(opposingStarterRecentHr9)
+                ? opposingStarterHr9 * 0.7 + opposingStarterRecentHr9 * 0.3
+                : Number.isFinite(opposingStarterHr9)
+                  ? opposingStarterHr9
+                  : Number.isFinite(opposingStarterRecentHr9)
+                    ? opposingStarterRecentHr9
+                    : null
+            const pitcherHrMultiplier =
+              opposingStarterHrScoreInput == null
+                ? 0.92
+                : opposingStarterHrScoreInput <= 0.7
+                  ? 0.7
+                  : opposingStarterHrScoreInput <= 0.9
+                    ? 0.78
+                    : opposingStarterHrScoreInput <= 1.1
+                      ? 0.88
+                      : opposingStarterHrScoreInput <= 1.3
+                        ? 0.98
+                        : opposingStarterHrScoreInput <= 1.6
+                          ? 1.1
+                          : 1.2
+            const bbeSampleMultiplier =
+              !Number.isFinite(recentBbeSample)
+                ? 0.6
+                : recentBbeSample >= 35
+                  ? 1
+                  : recentBbeSample >= 25
+                    ? 0.94
+                    : recentBbeSample >= 18
+                      ? 0.84
+                      : recentBbeSample >= 10
+                        ? 0.66
+                        : 0.25
+            const hrRawScore = clamp(
+              (Number.isFinite(rolling7Xwoba) ? clamp(((rolling7Xwoba - 0.3) / 0.12) * 28, 0, 28) : 0) +
+                (Number.isFinite(effectiveBarrelPct) ? clamp(((effectiveBarrelPct - 4) / 9) * 24, 0, 24) : 0) +
+                (Number.isFinite(recentAvgExitVelocity)
+                  ? clamp(((recentAvgExitVelocity - 87) / 8) * 20, 0, 20)
+                  : Number.isFinite(effectiveHardHitPct)
+                    ? clamp(((effectiveHardHitPct - 34) / 22) * 14, 0, 14)
+                    : 0) +
+                (hasOptimalLaunchAngle ? 12 : 0) +
+                (Number.isFinite(powerScore) ? clamp(((powerScore - 45) / 35) * 8, 0, 8) : 0) +
+                (Number.isFinite(matchupScore) ? clamp(((matchupScore - 45) / 35) * 8, 0, 8) : 4),
+              0,
+              100
+            )
+            const hrLikelyScore = roundToTenths(
+              clamp(hrRawScore * bbeSampleMultiplier * pitcherHrMultiplier, 0, 100)
+            )
+            const bbeSampleNote =
+              Number.isFinite(recentBbeSample) && recentBbeSample < 10
+                ? `below 10 BBE floor (${recentBbeSample})`
+                : Number.isFinite(recentBbeSample) && recentBbeSample < 18
+                  ? `thin ${recentBbeSample} BBE sample`
+                  : Number.isFinite(recentBbeSample) && recentBbeSample < 25
+                    ? `${recentBbeSample} BBE sample, slightly shrunk`
+                    : ''
+            const pitcherHrNote =
+              Number.isFinite(opposingStarterHr9)
+                ? `${opposingStarter.name || 'Starter'} ${formatNumber(opposingStarterHr9, 2)} HR/9${
+                    Number.isFinite(opposingStarterHomeRunsAllowed) ? `, ${opposingStarterHomeRunsAllowed} HR allowed` : ''
+                  }${
+                    Number.isFinite(opposingStarterRecentHrPerStart)
+                      ? `, last 5 ${formatNumber(opposingStarterRecentHrPerStart, 2)} HR/start`
+                      : ''
+                  }`
+                : ''
+            const pitcherHrContext =
+              Number.isFinite(opposingStarterHrScoreInput) && opposingStarterHrScoreInput <= 0.8
+                ? `${opposingStarter.name || 'Starter'} suppresses HR damage`
+                : Number.isFinite(opposingStarterHrScoreInput) && opposingStarterHrScoreInput >= 1.35
+                  ? `${opposingStarter.name || 'Starter'} has allowed HR damage`
+                  : pitcherHrNote
+                    ? `${opposingStarter.name || 'Starter'} is neutral-to-moderate HR risk`
+                    : ''
+            const hotHitterScore = roundToTenths(
+              clamp(
+                (Number.isFinite(rolling7Xwoba) ? clamp(((rolling7Xwoba - 0.27) / 0.1) * 30, 0, 30) : 0) +
+                  (Number.isFinite(recentXops) ? clamp(((recentXops - 0.62) / 0.22) * 30, 0, 30) : 0) +
+                  (hasOptimalLaunchAngle ? 24 : Number.isFinite(effectiveSweetSpotPct) ? clamp((effectiveSweetSpotPct / 38) * 18, 0, 18) : 0) +
+                  (Number.isFinite(recentAvgExitVelocity) ? clamp(((recentAvgExitVelocity - 86) / 8) * 8, 0, 8) : 0) +
+                  (Number.isFinite(formScore) ? clamp(((formScore - 45) / 35) * 8, 0, 8) : 0),
+                0,
+                100
+              )
+            )
+            const hitterHrHistoryNote =
+              Number.isFinite(recentHomeRuns) && recentHomeRuns >= 1 && Number.isFinite(matchupScore) && matchupScore >= 60
+                ? 'HR history plus a good matchup grade'
+                : [recentHrRate, seasonHrRate, splitHrRate].some((rate) => Number.isFinite(rate) && rate >= 0.04) &&
+                    Number.isFinite(matchupScore) &&
+                    matchupScore < 50
+                  ? 'HR power has played through tougher matchup grades'
+                  : [recentHrRate, seasonHrRate, splitHrRate].some((rate) => Number.isFinite(rate) && rate >= 0.03)
+                    ? 'HR history is mixed; process flags carry it'
+                    : 'HR history thin; EV/barrel/LA drive the case'
+            const hrMatchupNote = [hitterHrHistoryNote, pitcherHrContext, bbeSampleNote].filter(Boolean).join(' | ')
             const badOpsScore = weightedOps != null ? clamp(((0.78 - weightedOps) / 0.34) * 42, 0, 42) : 18
             const badPitchFitScore = [
               Number.isFinite(pitchFitScore) ? clamp(((58 - pitchFitScore) / 46) * 24, 0, 24) : 8,
@@ -4163,6 +4302,20 @@ function App() {
               bats: player.bats || '',
               opposingStarterName: opposingStarter.name || opposingStarter.fullName || 'Starter TBD',
               opposingStarterHand: opposingHand,
+              opposingStarterHomeRunsAllowed: Number.isFinite(opposingStarterHomeRunsAllowed)
+                ? opposingStarterHomeRunsAllowed
+                : null,
+              opposingStarterHr9: Number.isFinite(opposingStarterHr9) ? opposingStarterHr9 : null,
+              opposingStarterRecentHr9: Number.isFinite(opposingStarterRecentHr9) ? opposingStarterRecentHr9 : null,
+              opposingStarterRecentHrPerStart: Number.isFinite(opposingStarterRecentHrPerStart)
+                ? opposingStarterRecentHrPerStart
+                : null,
+              opposingStarterHomeRunDamageLabel: opposingStarter.homeRunDamageLabel || '',
+              pitcherHrMultiplier,
+              bbeSampleMultiplier,
+              hrRawScore,
+              pitcherHrNote,
+              bbeSampleNote,
               seasonOps: Number.isFinite(seasonOps) ? seasonOps : null,
               recentOps: Number.isFinite(recentOps) ? recentOps : null,
               splitOps: Number.isFinite(splitOps) ? splitOps : null,
@@ -4184,17 +4337,52 @@ function App() {
               pitchFitGrade: Number.isFinite(pitchFitGrade) ? pitchFitGrade : null,
               pitchFitSummary: player.pitchType?.summary || '',
               formScore: Number.isFinite(formScore) ? formScore : null,
-              powerScore: Number.isFinite(Number(metrics.powerScore)) ? Number(metrics.powerScore) : null,
+              powerScore: Number.isFinite(powerScore) ? powerScore : null,
               contactScore: Number.isFinite(Number(metrics.contactScore)) ? Number(metrics.contactScore) : null,
-              rolling7Xwoba: Number.isFinite(Number(statcastTrend.rolling7Xwoba))
-                ? Number(statcastTrend.rolling7Xwoba)
-                : null,
-              rolling7HardHitPct: Number.isFinite(Number(statcastTrend.rolling7HardHitPct))
-                ? Number(statcastTrend.rolling7HardHitPct)
-                : null,
-              rolling7BarrelPct: Number.isFinite(Number(statcastTrend.rolling7BarrelPct))
-                ? Number(statcastTrend.rolling7BarrelPct)
-                : null,
+              rolling7Xwoba: Number.isFinite(rolling7Xwoba) ? rolling7Xwoba : null,
+              rolling14Xwoba: Number.isFinite(rolling14Xwoba) ? rolling14Xwoba : null,
+              rolling30Xwoba: Number.isFinite(rolling30Xwoba) ? rolling30Xwoba : null,
+              rolling7Xslg: Number.isFinite(rolling7Xslg) ? rolling7Xslg : null,
+              xwobaTrend: Number.isFinite(xwobaTrend) ? xwobaTrend : null,
+              rolling7HardHitPct: Number.isFinite(rolling7HardHitPct) ? rolling7HardHitPct : null,
+              rolling7BarrelPct: Number.isFinite(rolling7BarrelPct) ? rolling7BarrelPct : null,
+              rolling7SweetSpotPct: Number.isFinite(rolling7SweetSpotPct) ? rolling7SweetSpotPct : null,
+              recentXobp: Number.isFinite(recentXobp) ? recentXobp : null,
+              recentXslg: Number.isFinite(recentXslg) ? recentXslg : null,
+              recentXops: Number.isFinite(recentXops) ? recentXops : null,
+              recentAvgExitVelocity: Number.isFinite(recentAvgExitVelocity) ? recentAvgExitVelocity : null,
+              recentAvgLaunchAngle: Number.isFinite(recentAvgLaunchAngle) ? recentAvgLaunchAngle : null,
+              recentBarrelPct: Number.isFinite(recentBarrelPct) ? recentBarrelPct : null,
+              recentHardHitPct: Number.isFinite(recentHardHitPct) ? recentHardHitPct : null,
+              recentSweetSpotPct: Number.isFinite(recentSweetSpotPct) ? recentSweetSpotPct : null,
+              effectiveBarrelPct: Number.isFinite(effectiveBarrelPct) ? effectiveBarrelPct : null,
+              effectiveHardHitPct: Number.isFinite(effectiveHardHitPct) ? effectiveHardHitPct : null,
+              effectiveSweetSpotPct: Number.isFinite(effectiveSweetSpotPct) ? effectiveSweetSpotPct : null,
+              recentBbeSample: Number.isFinite(recentBbeSample) ? recentBbeSample : null,
+              recentStatcastPa: Number.isFinite(recentStatcastPa) ? recentStatcastPa : null,
+              recentHomeRuns: Number.isFinite(recentHomeRuns) ? recentHomeRuns : null,
+              seasonHrRate: Number.isFinite(seasonHrRate) ? seasonHrRate : null,
+              recentHrRate: Number.isFinite(recentHrRate) ? recentHrRate : null,
+              splitHrRate: Number.isFinite(splitHrRate) ? splitHrRate : null,
+              hasOptimalLaunchAngle,
+              hrLikelyScore,
+              hotHitterScore,
+              hrMatchupNote,
+              hrLikelyReason: [
+                Number.isFinite(rolling7Xwoba) ? `7g xwOBA ${formatSlashMetric(rolling7Xwoba)}` : null,
+                Number.isFinite(effectiveBarrelPct) ? `barrel ${formatNumber(effectiveBarrelPct, 1)}%` : null,
+                Number.isFinite(recentAvgExitVelocity) ? `EV ${formatNumber(recentAvgExitVelocity, 1)} mph` : null,
+                Number.isFinite(recentAvgLaunchAngle) ? `LA ${formatNumber(recentAvgLaunchAngle, 1)} deg` : null,
+                pitcherHrNote,
+                bbeSampleNote,
+                hrMatchupNote
+              ].filter(Boolean).join(' | '),
+              hotHitterReason: [
+                Number.isFinite(rolling7Xwoba) ? `recent xwOBA ${formatSlashMetric(rolling7Xwoba)}` : null,
+                Number.isFinite(recentXops) ? `xOPS ${formatSlashMetric(recentXops)}` : null,
+                hasOptimalLaunchAngle ? 'launch angle sweet spot' : null,
+                Number.isFinite(recentBbeSample) ? `${recentBbeSample} BBE sample` : null
+              ].filter(Boolean).join(' | '),
               trendSignal: statcastTrend.trendSignal || '',
               primaryTag: player.primaryTag || '',
               underTargetScore,

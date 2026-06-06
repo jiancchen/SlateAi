@@ -33,6 +33,8 @@ const playerHasSavant = (player) => Boolean(player?.savant?.playerUrl || player?
 const playerHasGrade = (player) => isFiniteNumber(player?.metrics?.matchupGrade)
 const playerHasSplit = (player) => isFiniteNumber(player?.split?.ops) || isFiniteNumber(player?.split?.plateAppearances)
 const playerHasPitchFit = (player) => String(player?.pitchType?.summary || '').trim().length > 0
+const playerHasXwobaBubble = (player) =>
+  isFiniteNumber(player?.statcastTrend?.rolling7Xwoba) && isFiniteNumber(player?.statcastTrend?.rolling30Xwoba)
 
 const starterSplitStatus = (starter) => {
   const status = starter?.espnSplits?.sourceStatus
@@ -60,6 +62,22 @@ const projectionHasPushContext = (projection = {}) => {
   )
 }
 
+const oddsMarketValue = (game, pattern) =>
+  array(game?.odds?.markets).find((market) => pattern.test(String(market?.label || '')) && String(market?.value || '').trim())
+
+const hasDraftKingsBoard = (game) =>
+  /draftkings/i.test([game?.odds?.provider, ...array(game?.odds?.markets).map((market) => market?.book)].filter(Boolean).join(' '))
+
+const hasDraftKingsFullGameLines = (game) =>
+  hasDraftKingsBoard(game) &&
+  Boolean(oddsMarketValue(game, /^Moneyline$/i)) &&
+  Boolean(oddsMarketValue(game, /^Total$/i))
+
+const hasDraftKingsFirstFiveLines = (game) =>
+  hasDraftKingsBoard(game) &&
+  Boolean(oddsMarketValue(game, /(?:1st|first)\s*5\s*ML/i)) &&
+  Boolean(oddsMarketValue(game, /(?:1st|first)\s*5\s*Total/i))
+
 const summarizeGame = (game) => {
   const awayLineup = array(game?.lineupBoard?.away?.lineup)
   const homeLineup = array(game?.lineupBoard?.home?.lineup)
@@ -81,12 +99,17 @@ const summarizeGame = (game) => {
     matchupGrades: players.filter(playerHasGrade).length,
     splitRows: players.filter(playerHasSplit).length,
     pitchFits: players.filter(playerHasPitchFit).length,
+    xwobaBubbles: players.filter(playerHasXwobaBubble).length,
     starterSplitStatuses: starterStatuses,
     hasBridgeChain: Boolean(game?.bullpenChainContext?.away && game?.bullpenChainContext?.home),
     hasRelieverShadow: Boolean(game?.relieverShadowContext?.away && game?.relieverShadowContext?.home),
     hasParkContext: Boolean(game?.parkContext?.venueName),
     hasFirstFive: projectionHasFirstFive(projection),
     hasFirstFivePush: projectionHasPushContext(projection),
+    hasDraftKingsBoard: hasDraftKingsBoard(game),
+    hasDraftKingsFullGameLines: hasDraftKingsFullGameLines(game),
+    hasDraftKingsFirstFiveLines: hasDraftKingsFirstFiveLines(game),
+    first5TotalLineSource: projection?.totals?.first5TotalLineSource || '',
     hasMoneylineShape: Boolean(projection?.moneylineShape),
     hasFirstInning: Boolean(projection?.firstInning)
   }
@@ -100,11 +123,15 @@ const hardFailuresForGame = (gameReport) => {
   if (gameReport.matchupGrades < 16) failures.push('missing-matchup-grades')
   if (gameReport.splitRows < 14) failures.push('missing-batter-splits')
   if (gameReport.pitchFits < 16) failures.push('missing-pitch-fit')
+  if (gameReport.xwobaBubbles < 14) failures.push('missing-batter-xwoba-bubbles')
   if (!gameReport.hasBridgeChain) failures.push('missing-bridge-chain')
   if (!gameReport.hasRelieverShadow) failures.push('missing-rp36-shadow')
   if (!gameReport.hasParkContext) failures.push('missing-park-context')
   if (!gameReport.hasFirstFive) failures.push('missing-first-five-context')
   if (!gameReport.hasFirstFivePush) failures.push('missing-first-five-push-context')
+  if (gameReport.hasDraftKingsBoard && !gameReport.hasDraftKingsFullGameLines) failures.push('missing-draftkings-full-game-lines')
+  if (gameReport.hasDraftKingsBoard && !gameReport.hasDraftKingsFirstFiveLines) failures.push('missing-draftkings-first-five-lines')
+  if (gameReport.hasDraftKingsBoard && gameReport.first5TotalLineSource !== 'posted') failures.push('first-five-total-not-posted-market-line')
   if (!gameReport.hasMoneylineShape) failures.push('missing-moneyline-shape')
   if (!gameReport.hasFirstInning) failures.push('missing-first-inning-context')
   if (gameReport.starterSplitStatuses.some((status) => !status)) failures.push('missing-espn-pitcher-splits')
@@ -182,6 +209,17 @@ const valueBoardFailures = (report) => {
   return failures
 }
 
+const expectedDraftKingsGames = async (date) => {
+  if (!date || !fsSync.existsSync(root)) return 0
+  const filePath = path.join(root, 'data-private', 'odds', 'draftkings', 'mlb', `${date}-draftkings-mlb-lines.json`)
+  try {
+    const payload = JSON.parse(await fs.readFile(filePath, 'utf8'))
+    return array(payload.events).length
+  } catch {
+    return 0
+  }
+}
+
 const writeReport = async (date, report) => {
   await fs.mkdir(reportsRoot, { recursive: true })
   const suffix = report.baseUrl ? 'live' : 'local'
@@ -224,6 +262,20 @@ const main = async () => {
   for (const failure of propsFailures(propSummary)) hardFailures.push({ failure })
   const valueBoard = valueBoardReport(gameReports, gameDetails, propSummary)
   for (const failure of valueBoardFailures(valueBoard)) hardFailures.push({ failure })
+  const draftKingsExpectedGames = await expectedDraftKingsGames(slateDate)
+  const draftKingsLineCoverage = {
+    expectedGames: draftKingsExpectedGames,
+    boardGames: gameReports.filter((game) => game.hasDraftKingsBoard).length,
+    fullGameLineGames: gameReports.filter((game) => game.hasDraftKingsFullGameLines).length,
+    firstFiveLineGames: gameReports.filter((game) => game.hasDraftKingsFirstFiveLines).length,
+    postedFirst5TotalGames: gameReports.filter((game) => game.hasDraftKingsBoard && game.first5TotalLineSource === 'posted').length
+  }
+  if (draftKingsExpectedGames > 0 && draftKingsLineCoverage.fullGameLineGames < draftKingsExpectedGames) {
+    hardFailures.push({ failure: 'draftkings-full-game-line-coverage-short', ...draftKingsLineCoverage })
+  }
+  if (draftKingsExpectedGames > 0 && draftKingsLineCoverage.firstFiveLineGames < draftKingsExpectedGames) {
+    hardFailures.push({ failure: 'draftkings-first-five-line-coverage-short', ...draftKingsLineCoverage })
+  }
 
   if (!mlbSummaryGames.length) hardFailures.push({ failure: 'no-mlb-games-in-summary' })
   if (date && summary.id && summary.id !== date) {
@@ -243,6 +295,7 @@ const main = async () => {
     games: gameReports,
     props: propSummary,
     valueBoard,
+    draftKingsLineCoverage,
     hardFailures
   }
 

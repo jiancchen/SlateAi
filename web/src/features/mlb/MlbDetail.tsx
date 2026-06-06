@@ -85,6 +85,36 @@ export function MlbDetail(props: MlbDetailProps) {
         prop.propType === 'pitcherStrikeouts' &&
         normalizeNameToken(prop.playerName) === normalizeNameToken(pitcherName)
     ) ?? null
+  const formatXwoba = (value: unknown) => {
+    const numberValue = Number(value)
+    if (!Number.isFinite(numberValue)) return 'N/A'
+    return numberValue.toFixed(3).replace(/^0/, '.')
+  }
+  const formatXwobaTrend = (value: unknown) => {
+    const numberValue = Number(value)
+    if (!Number.isFinite(numberValue)) return ''
+    return `${numberValue >= 0 ? '+' : ''}${numberValue.toFixed(3).replace(/^(-?)0/, '$1.')}`
+  }
+  const xwobaTone = (value: unknown) => {
+    const numberValue = Number(value)
+    if (!Number.isFinite(numberValue)) return 'empty'
+    if (numberValue >= 0.37) return 'strong'
+    if (numberValue >= 0.32) return 'watch'
+    return 'cold'
+  }
+  const renderLineupXwobaBubble = (player: AnyRecord) => {
+    const statcast = player.statcastTrend || {}
+    const trendLabel = formatXwobaTrend(statcast.xwobaTrend)
+    return (
+      <span
+        className={`react-lineup-xwoba-bubble ${xwobaTone(statcast.rolling7Xwoba)}`}
+        title={`7-game xwOBA ${formatXwoba(statcast.rolling7Xwoba)} | 30-day xwOBA ${formatXwoba(statcast.rolling30Xwoba)}${trendLabel ? ` | trend ${trendLabel}` : ''}`}
+      >
+        <strong>7g {formatXwoba(statcast.rolling7Xwoba)}</strong>
+        <small>30d {formatXwoba(statcast.rolling30Xwoba)}{trendLabel ? ` · ${trendLabel}` : ''}</small>
+      </span>
+    )
+  }
   const awayHold = Number(projection?.awayStarterHoldConfidence)
   const homeHold = Number(projection?.homeStarterHoldConfidence)
   const awayStarter = buildPitcherSummary(
@@ -1328,6 +1358,7 @@ export function MlbDetail(props: MlbDetailProps) {
                           <small>{player.position} | {player.bats} | {player.primaryTag}</small>
                         </div>
                         <div className="react-lineup-player-metrics">
+                          {renderLineupXwobaBubble(player)}
                           <span className={`game-highlight-chip ${getMetricTone(Number(player.metrics?.matchupGrade))}`}>
                             Matchup {formatSignedNumber(player.metrics?.matchupGrade, 1)}
                           </span>

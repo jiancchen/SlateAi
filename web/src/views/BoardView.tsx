@@ -392,6 +392,26 @@ export function BoardView(props: BoardViewProps) {
       title: `Expected bases ${formatNumber(expectedBases, 2)} | weighted TB/PA ${formatNumber(weightedTbRate, 3)} | projected PA ${formatNumber(projectedPa, 2)}`
     }
   }
+  const formatMiniXwoba = (value: unknown) => {
+    const numberValue = Number(value)
+    if (!Number.isFinite(numberValue)) return 'N/A'
+    return numberValue.toFixed(3).replace(/^0/, '.')
+  }
+  const buildMiniLineupXwobaSignal = (player: AnyRecord | null | undefined) => {
+    if (!player) return null
+    const statcast = player.statcastTrend || {}
+    const rolling7 = Number(statcast.rolling7Xwoba)
+    const rolling30 = Number(statcast.rolling30Xwoba)
+    if (!Number.isFinite(rolling7) && !Number.isFinite(rolling30)) return null
+    const tone = Number.isFinite(rolling7) && rolling7 >= 0.37 ? 'strong' : Number.isFinite(rolling7) && rolling7 < 0.29 ? 'cold' : 'watch'
+    const trend = Number(statcast.xwobaTrend)
+    const trendLabel = Number.isFinite(trend) ? `${trend >= 0 ? '+' : ''}${trend.toFixed(3).replace(/^(-?)0/, '$1.')}` : ''
+    return {
+      label: `xwOBA ${formatMiniXwoba(rolling7)}`,
+      tone,
+      title: `7-game xwOBA ${formatMiniXwoba(rolling7)} | 30-day xwOBA ${formatMiniXwoba(rolling30)}${trendLabel ? ` | trend ${trendLabel}` : ''}`
+    }
+  }
   const renderMiniLineupOrder = (game: AnyRecord) => {
     const lineupBoard = game.lineupBoard
     if (!lineupBoard?.away && !lineupBoard?.home) return null
@@ -465,6 +485,7 @@ export function BoardView(props: BoardViewProps) {
                     const player = playerBySlot.get(slot)
                     const signal = buildMiniLineupSignal(player)
                     const basesSignal = buildMiniLineupBasesSignal(player)
+                    const xwobaSignal = buildMiniLineupXwobaSignal(player)
                     const playerMeta = player
                       ? [player.position, player.bats ? `${player.bats} bat` : null].filter(Boolean).join(' | ')
                       : 'missing / unknown'
@@ -477,20 +498,29 @@ export function BoardView(props: BoardViewProps) {
                         title={player ? `${slot}. ${playerName} | ${playerMeta}` : `${side.teamName} slot ${slot} missing`}
                       >
                         <span className="mini-lineup-slot-number">{slot}</span>
-                        <strong>
-                          <span className="mini-lineup-player-name">{playerName}</span>
-                          {signal ? (
-                            <span className="mini-lineup-player-signal" aria-label={signal.label} title={signal.label}>
-                              {signal.emoji}
-                            </span>
-                          ) : null}
-                          {basesSignal ? (
-                            <span className={`mini-lineup-bases-signal ${basesSignal.tone}`} title={basesSignal.title}>
-                              {basesSignal.label}
-                            </span>
-                          ) : null}
-                        </strong>
-                        <small>{playerMeta}</small>
+                        <div className="mini-lineup-slot-main">
+                          <strong className="mini-lineup-slot-name-row">
+                            <span className="mini-lineup-player-name">{playerName}</span>
+                          </strong>
+                          <span className="mini-lineup-slot-meta-row">
+                            {signal ? (
+                              <span className="mini-lineup-player-signal" aria-label={signal.label} title={signal.label}>
+                                {signal.emoji}
+                              </span>
+                            ) : null}
+                            {basesSignal ? (
+                              <span className={`mini-lineup-bases-signal ${basesSignal.tone}`} title={basesSignal.title}>
+                                {basesSignal.label}
+                              </span>
+                            ) : null}
+                            {xwobaSignal ? (
+                              <span className={`mini-lineup-xwoba-signal ${xwobaSignal.tone}`} title={xwobaSignal.title}>
+                                {xwobaSignal.label}
+                              </span>
+                            ) : null}
+                            <small>{playerMeta}</small>
+                          </span>
+                        </div>
                       </div>
                     )
                   })}

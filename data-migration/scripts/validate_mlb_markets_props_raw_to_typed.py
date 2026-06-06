@@ -101,7 +101,7 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
             """
             select count(*)
             from market_contracts
-            where source_table in ('raw_kalshi_mlb_markets', 'raw_robinhood_mlb_markets')
+            where source_table in ('raw_draftkings_mlb_markets', 'raw_kalshi_mlb_markets', 'raw_robinhood_mlb_markets')
               and source_pk like ?
             """,
             (f"%{args.date}%",),
@@ -111,7 +111,7 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
             """
             select count(*)
             from market_price_ticks
-            where source_table in ('raw_kalshi_mlb_markets', 'raw_robinhood_mlb_markets')
+            where source_table in ('raw_draftkings_mlb_markets', 'raw_kalshi_mlb_markets', 'raw_robinhood_mlb_markets')
               and source_pk like ?
             """,
             (f"%{args.date}%",),
@@ -126,6 +126,30 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
               and ms.game_id is not null
             """,
             (args.date,),
+        )
+        draftkings_game_line_games = scalar(
+            con,
+            """
+            select count(distinct contracts.game_id)
+            from market_contracts contracts
+            join games g on g.game_id=contracts.game_id
+            where g.game_date like ?
+              and contracts.source_name='draftkings'
+              and contracts.market_type in ('winner', 'total')
+            """,
+            (f"{args.date}%",),
+        )
+        draftkings_first5_games = scalar(
+            con,
+            """
+            select count(distinct contracts.game_id)
+            from market_contracts contracts
+            join games g on g.game_id=contracts.game_id
+            where g.game_date like ?
+              and contracts.source_name='draftkings'
+              and contracts.market_type in ('first5Winner', 'first5Total')
+            """,
+            (f"{args.date}%",),
         )
         orphan_snapshot_games = scalar(
             con,
@@ -169,6 +193,29 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
             """,
             (args.date,),
         )
+        draftkings_pitcher_strikeout_prop_rows = scalar(
+            con,
+            """
+            select count(*)
+            from prop_market_snapshots
+            where substr(coalesce(market_date, captured_at, ''), 1, 10)=?
+              and source_name='draftkings'
+              and market_key='pitcher_strikeouts'
+            """,
+            (args.date,),
+        )
+        mapped_draftkings_pitcher_strikeout_prop_players = scalar(
+            con,
+            """
+            select count(*)
+            from prop_market_snapshots
+            where substr(coalesce(market_date, captured_at, ''), 1, 10)=?
+              and source_name='draftkings'
+              and market_key='pitcher_strikeouts'
+              and player_id is not null
+            """,
+            (args.date,),
+        )
         odds_status = source_status(con, "mlb_odds", args.date)
         props_status = source_status(con, "mlb_props", args.date)
         errors: list[str] = []
@@ -183,12 +230,20 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
             errors.append("No dated raw-market price ticks inserted.")
         if mapped_snapshot_games <= 0 and direct_mapped_snapshot_games <= 0:
             errors.append("No dated market snapshots mapped to games.")
+        if draftkings_game_line_games <= 0:
+            errors.append("No DraftKings full-game ML/total markets mapped to games.")
+        if draftkings_first5_games <= 0:
+            errors.append("No DraftKings first-five ML/total markets mapped to games.")
         if orphan_snapshot_games:
             errors.append(f"{orphan_snapshot_games} dated market snapshots reference missing games.")
         if prop_rows <= 0:
             errors.append("No prop_market_snapshots for date.")
         if mapped_prop_players <= 0:
             errors.append("No dated prop snapshots mapped to players.")
+        if draftkings_pitcher_strikeout_prop_rows <= 0:
+            errors.append("No DraftKings pitcher strikeout prop snapshots for date.")
+        if mapped_draftkings_pitcher_strikeout_prop_players <= 0:
+            errors.append("No DraftKings pitcher strikeout prop snapshots mapped to players.")
         if orphan_prop_players:
             errors.append(f"{orphan_prop_players} dated prop snapshots reference missing players.")
         if not odds_status:
@@ -210,11 +265,15 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
             "dated_contracts": dated_contracts,
             "dated_ticks": dated_ticks,
             "mapped_snapshot_games": mapped_snapshot_games,
+            "draftkings_game_line_games": draftkings_game_line_games,
+            "draftkings_first5_games": draftkings_first5_games,
             "direct_mapped_snapshot_games": direct_mapped_snapshot_games,
             "orphan_snapshot_games": orphan_snapshot_games,
             "prop_rows": prop_rows,
             "mapped_prop_players": mapped_prop_players,
             "orphan_prop_players": orphan_prop_players,
+            "draftkings_pitcher_strikeout_prop_rows": draftkings_pitcher_strikeout_prop_rows,
+            "mapped_draftkings_pitcher_strikeout_prop_players": mapped_draftkings_pitcher_strikeout_prop_players,
             "odds_status": odds_status,
             "props_status": props_status,
             "errors": errors,
@@ -267,6 +326,7 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
                     "contracts": dated_contracts,
                     "ticks": dated_ticks,
                     "prop_rows": prop_rows,
+                    "draftkings_pitcher_strikeout_prop_rows": draftkings_pitcher_strikeout_prop_rows,
                 }
             ),
         },
@@ -277,7 +337,7 @@ def validate(args: argparse.Namespace) -> dict[str, Any]:
 def main() -> int:
     args = parse_args()
     report = validate(args)
-    print(json.dumps({k: report[k] for k in ["date", "dated_market_snapshots", "prop_rows", "ok"]}, sort_keys=True))
+    print(json.dumps({k: report[k] for k in ["date", "dated_market_snapshots", "prop_rows", "draftkings_pitcher_strikeout_prop_rows", "ok"]}, sort_keys=True))
     return 0 if report["ok"] else 1
 
 

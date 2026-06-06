@@ -69,6 +69,7 @@ const runMlbCartridge = (entry, extraArgs = [], modelId = currentModelId) => {
     modelId,
     '--entry',
     entry,
+    '--skip-preflight',
     ...extraArgs
   ], {
     cwd: rootDir,

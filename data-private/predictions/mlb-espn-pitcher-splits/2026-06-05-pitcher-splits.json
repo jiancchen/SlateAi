@@ -1,7 +1,7 @@
 {
   "date": "2026-06-05",
   "source": "ESPN player splits API",
-  "fetchedAt": "2026-06-05T15:40:46.923Z",
+  "fetchedAt": "2026-06-05T21:26:48.389Z",
   "totalStarters": 30,
   "fetchedStarters": 30,
   "rows": [
@@ -1163,91 +1163,6 @@
                   "label": "OBA",
                   "name": "opponentAvg",
                   "value": ".311"
-                }
-              ]
-            },
-            {
-              "label": "Last 15 Days",
-              "stats": [
-                {
-                  "label": "ERA",
-                  "name": "ERA",
-                  "value": "3.00"
-                },
-                {
-                  "label": "W",
-                  "name": "wins",
-                  "value": "0"
-                },
-                {
-                  "label": "L",
-                  "name": "losses",
-                  "value": "1"
-                },
-                {
-                  "label": "SV",
-                  "name": "saves",
-                  "value": "0"
-                },
-                {
-                  "label": "SVOP",
-                  "name": "saveOpportunities",
-                  "value": "0"
-                },
-                {
-                  "label": "GP",
-                  "name": "gamesPlayed",
-                  "value": "1"
-                },
-                {
-                  "label": "GS",
-                  "name": "gamesStarted",
-                  "value": "1"
-                },
-                {
-                  "label": "CG",
-                  "name": "completeGames",
-                  "value": "0"
-                },
-                {
-                  "label": "IP",
-                  "name": "innings",
-                  "value": "3.0"
-                },
-                {
-                  "label": "H",
-                  "name": "hits",
-                  "value": "4"
-                },
-                {
-                  "label": "R",
-                  "name": "runs",
-                  "value": "4"
-                },
-                {
-                  "label": "ER",
-                  "name": "earnedRuns",
-                  "value": "1"
-                },
-                {
-                  "label": "HR",
-                  "name": "homeRuns",
-                  "value": "0"
-                },
-                {
-                  "label": "BB",
-                  "name": "walks",
-                  "value": "2"
-                },
-                {
-                  "label": "K",
-                  "name": "strikeouts",
-                  "value": "2"
-                },
-                {
-                  "label": "OBA",
-                  "name": "opponentAvg",
-                  "value": ".308"
                 }
               ]
             },
@@ -4504,7 +4419,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/40944"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -9429,7 +9344,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/32175"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -14099,7 +14014,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/40947"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -18854,7 +18769,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4629089"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -23865,7 +23780,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/36581"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -28621,7 +28536,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/39667"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -33122,7 +33037,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/41178"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -37622,7 +37537,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/32082"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -41952,7 +41867,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4414339"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -46198,7 +46113,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4949041"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -50868,7 +50783,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/42584"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -54347,7 +54262,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/5131986"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -59272,7 +59187,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/31098"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -64112,7 +64027,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/33722"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -68867,7 +68782,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4418686"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -73112,7 +73027,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/39898"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -77867,7 +77782,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/41172"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -82367,7 +82282,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4414525"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -87207,7 +87122,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/5006093"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -91792,7 +91707,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/32640"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -96462,7 +96377,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4619898"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -100198,7 +100113,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4791597"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -104953,7 +104868,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4621041"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -108944,7 +108859,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4019484"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -113189,7 +113104,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4414215"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -117944,7 +117859,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/33773"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -122445,7 +122360,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/32968"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -127286,7 +127201,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/40429"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -132211,7 +132126,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/4326697"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     },
     {
       "snapshotDate": "2026-06-05",
@@ -136796,7 +136711,7 @@
         "searchUrl": "https://www.espn.com/mlb/player/_/id/5134638"
       },
       "error": "",
-      "fetchedAt": "2026-06-05T15:40:46.923Z"
+      "fetchedAt": "2026-06-05T21:26:48.389Z"
     }
   ]
 }

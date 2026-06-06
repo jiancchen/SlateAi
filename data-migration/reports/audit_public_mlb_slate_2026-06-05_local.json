@@ -2,7 +2,7 @@
   "audit": "public-mlb-slate",
   "date": "2026-06-05",
   "baseUrl": null,
-  "generatedAt": "2026-06-05T16:10:31.110Z",
+  "generatedAt": "2026-06-05T23:26:32.204Z",
   "summary": {
     "totalGames": 47,
     "mlbGames": 15,
@@ -20,6 +20,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -29,6 +30,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -44,6 +49,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -53,6 +59,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -68,6 +78,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -77,6 +88,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -92,6 +107,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -101,6 +117,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -116,6 +136,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -125,6 +146,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -140,6 +165,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -149,6 +175,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -164,6 +194,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -173,6 +204,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -188,6 +223,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -197,6 +233,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -212,6 +252,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 17,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -221,6 +262,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -234,8 +279,9 @@
       "summaries": 18,
       "savantLinks": 18,
       "matchupGrades": 18,
-      "splitRows": 18,
-      "pitchFits": 18,
+      "splitRows": 17,
+      "pitchFits": 17,
+      "xwobaBubbles": 17,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -245,6 +291,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -260,6 +310,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -269,6 +320,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -284,6 +339,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -293,6 +349,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -308,6 +368,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -317,6 +378,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -330,8 +395,9 @@
       "summaries": 18,
       "savantLinks": 18,
       "matchupGrades": 18,
-      "splitRows": 18,
-      "pitchFits": 18,
+      "splitRows": 17,
+      "pitchFits": 17,
+      "xwobaBubbles": 17,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -341,6 +407,10 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
@@ -356,6 +426,7 @@
       "matchupGrades": 18,
       "splitRows": 18,
       "pitchFits": 18,
+      "xwobaBubbles": 18,
       "starterSplitStatuses": [
         "fetched",
         "fetched"
@@ -365,22 +436,26 @@
       "hasParkContext": true,
       "hasFirstFive": true,
       "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
       "hasMoneylineShape": true,
       "hasFirstInning": true,
       "failures": []
     }
   ],
   "props": {
-    "total": 333,
+    "total": 447,
     "byType": {
-      "pitcherStrikeouts": 16,
-      "hits": 55,
-      "singles": 64,
-      "rbi": 89,
-      "totalBases": 74,
-      "walks": 35
+      "totalBases": 100,
+      "singles": 82,
+      "pitcherStrikeouts": 15,
+      "walks": 65,
+      "rbi": 101,
+      "hits": 84
     },
-    "pitcherStrikeoutDraftKings": 0,
+    "pitcherStrikeoutDraftKings": 5,
     "sources": [
       "typed MLB DB day-game loader",
       "models/mlb/app-model.js",
@@ -393,17 +468,20 @@
   },
   "valueBoard": {
     "moneylineRows": 15,
-    "first5MoneylineRows": 12,
+    "first5MoneylineRows": 13,
     "first5TotalRows": 15,
     "firstInningRows": 15,
     "fullGameTotalRows": 15,
-    "totalBaseRows": 74,
-    "pitcherStrikeoutRows": 16,
+    "totalBaseRows": 100,
+    "pitcherStrikeoutRows": 15,
     "gameCount": 15
   },
-  "hardFailures": [
-    {
-      "failure": "pitcher-strikeout-props-missing-draftkings-lineage"
-    }
-  ]
+  "draftKingsLineCoverage": {
+    "expectedGames": 7,
+    "boardGames": 7,
+    "fullGameLineGames": 7,
+    "firstFiveLineGames": 7,
+    "postedFirst5TotalGames": 7
+  },
+  "hardFailures": []
 }

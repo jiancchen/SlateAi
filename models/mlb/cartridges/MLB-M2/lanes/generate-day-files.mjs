@@ -1,5 +1,5 @@
 import { execFileSync, execSync } from 'node:child_process'
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -372,6 +372,103 @@ const tableRowCells = (rowHtml = '') =>
 
 const parseOddsText = (value = '') => value.replace(/\s*\+\s*$/, '').trim()
 
+const normalizeMarketTeam = (value = '') =>
+  String(value || '')
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+
+const formatAmerican = (value) => {
+  const parsed = Number(value)
+  if (!Number.isFinite(parsed)) return ''
+  if (parsed === 100) return '+100'
+  return parsed > 0 ? `+${Math.round(parsed)}` : `${Math.round(parsed)}`
+}
+
+const formatLine = (value) => {
+  const parsed = Number(value)
+  if (!Number.isFinite(parsed)) return ''
+  return parsed > 0 ? `+${parsed}` : `${parsed}`
+}
+
+const formatDkTotal = (rows = []) => {
+  const over = rows.find((row) => /^over$/i.test(String(row.side || '')))
+  const under = rows.find((row) => /^under$/i.test(String(row.side || '')))
+  if (!over || !under) return ''
+  const line = Number.isFinite(Number(over.line)) ? Number(over.line) : Number(under.line)
+  if (!Number.isFinite(line)) return ''
+  return `o${line} ${formatAmerican(over.odds)} / u${line} ${formatAmerican(under.odds)}`
+}
+
+const formatDkTeamMarket = (rows = [], awayDeskTeam, homeDeskTeam, { includeLine = false } = {}) => {
+  const away = rows.find((row) => /^away$/i.test(String(row.side || '')))
+  const home = rows.find((row) => /^home$/i.test(String(row.side || '')))
+  if (!away || !home) return ''
+  const awayLine = includeLine ? `${formatLine(away.line)} ` : ''
+  const homeLine = includeLine ? `${formatLine(home.line)} ` : ''
+  return `${awayDeskTeam} ${awayLine}${formatAmerican(away.odds)} / ${homeDeskTeam} ${homeLine}${formatAmerican(home.odds)}`
+}
+
+const dkFullGameLooksLiveOrIncomplete = (event = {}) => {
+  const moneylineRows = event?.markets?.moneyline || []
+  const runLineRows = event?.markets?.runLine || []
+  const totalRows = event?.markets?.total || []
+  const hasTwoSidedMoneyline =
+    moneylineRows.some((row) => /^away$/i.test(String(row.side || ''))) &&
+    moneylineRows.some((row) => /^home$/i.test(String(row.side || '')))
+  const hasTwoSidedTotal =
+    totalRows.some((row) => /^over$/i.test(String(row.side || row.label || ''))) &&
+    totalRows.some((row) => /^under$/i.test(String(row.side || row.label || '')))
+  const extremeRunLine = runLineRows.some((row) => Math.abs(Number(row.line)) > 3)
+  const extremeTotal = totalRows.some((row) => Number(row.line) > 15)
+  const extremeMoneyline = moneylineRows.some((row) => Math.abs(Number(row.odds)) > 5000)
+  return !hasTwoSidedMoneyline || !hasTwoSidedTotal || extremeRunLine || extremeTotal || extremeMoneyline
+}
+
+const loadDraftKingsMlbLines = async (date) => {
+  const filePath = path.join(rootDir, 'data-private', 'odds', 'draftkings', 'mlb', `${date}-draftkings-mlb-lines.json`)
+  try {
+    const payload = JSON.parse(await readFile(filePath, 'utf8'))
+    return Array.isArray(payload.events) ? payload.events : []
+  } catch {
+    return []
+  }
+}
+
+const findDraftKingsEvent = (events = [], awayDeskTeam, homeDeskTeam) => {
+  const awayKey = normalizeMarketTeam(awayDeskTeam)
+  const homeKey = normalizeMarketTeam(homeDeskTeam)
+  return events.find((event) => {
+    const parts = String(event.name || '').split('@').map(normalizeMarketTeam)
+    return parts.length === 2 && parts[0].endsWith(awayKey) && parts[1].endsWith(homeKey)
+  })
+}
+
+const draftKingsOddsForMatchup = (event, awayDeskTeam, homeDeskTeam, typedFallback = null) => {
+  if (!event?.markets) return null
+  const moneyline = formatDkTeamMarket(event.markets.moneyline, awayDeskTeam, homeDeskTeam)
+  const spread = formatDkTeamMarket(event.markets.runLine, awayDeskTeam, homeDeskTeam, { includeLine: true })
+  const total = formatDkTotal(event.markets.total)
+  const useTypedFullGame = typedFallback && dkFullGameLooksLiveOrIncomplete(event)
+  const first5Moneyline = formatDkTeamMarket(event.markets.first5Moneyline, awayDeskTeam, homeDeskTeam)
+  const first5Total = formatDkTotal(event.markets.first5Total)
+  const finalMoneyline = useTypedFullGame ? typedFallback.moneyline || moneyline : moneyline
+  const finalSpread = useTypedFullGame ? typedFallback.spread || spread : spread
+  const finalTotal = useTypedFullGame ? typedFallback.total || total : total
+  if (!finalMoneyline && !finalTotal && !first5Moneyline && !first5Total) return null
+  return {
+    spread: finalSpread,
+    total: finalTotal,
+    moneyline: finalMoneyline,
+    first5Moneyline,
+    first5Total,
+    oddsPage: event.href || 'https://sportsbook.draftkings.com/leagues/baseball/mlb',
+    oddsProvider: 'DraftKings typed MLB board'
+  }
+}
+
 const parseHighlightedOrFirstOdds = (rowHtml = '') => {
   const anchors = [...rowHtml.matchAll(/<a [^>]*class="([^"]*)"[^>]*>(.*?)<\/a>/gs)].map((match) => ({
     className: match[1] || '',
@@ -392,7 +489,21 @@ const extractOddsRows = (html, table) => {
   return [...tableMatch[0].matchAll(/<tr>(.*?)<\/tr>/gs)].map((match) => match[1])
 }
 
-const parseMatchupOdds = async (awayDeskTeam, homeDeskTeam) => {
+const parseMatchupOdds = async (awayDeskTeam, homeDeskTeam, { draftKingsEvents = [], date = '' } = {}) => {
+  const draftKingsEvent = findDraftKingsEvent(draftKingsEvents, awayDeskTeam, homeDeskTeam)
+  const typedDraftKingsFallback = date
+    ? latestCompleteTypedDraftKingsFullGame(date, awayDeskTeam, homeDeskTeam)
+    : null
+  const draftKingsOdds = draftKingsOddsForMatchup(draftKingsEvent, awayDeskTeam, homeDeskTeam, typedDraftKingsFallback)
+  if (draftKingsOdds) return draftKingsOdds
+  if (typedDraftKingsFallback) return {
+    ...typedDraftKingsFallback,
+    first5Moneyline: '',
+    first5Total: '',
+    oddsProvider: 'DraftKings typed MLB board',
+    oddsPage: 'https://sportsbook.draftkings.com/leagues/baseball/mlb'
+  }
+
   const slug = toMatchupSlug(awayDeskTeam, homeDeskTeam)
   const url = `https://www.scoresandodds.com/mlb/${slug}`
   const html = await fetchText(url)
@@ -411,6 +522,9 @@ const parseMatchupOdds = async (awayDeskTeam, homeDeskTeam) => {
     spread: spreadAway && spreadHome ? `${spreadAway} / ${spreadHome}` : '',
     total: totalOver && totalUnder ? `${totalOver} / ${totalUnder}` : '',
     moneyline: moneylineAway && moneylineHome ? `${awayDeskTeam} ${moneylineAway} / ${homeDeskTeam} ${moneylineHome}` : '',
+    first5Moneyline: '',
+    first5Total: '',
+    oddsProvider: 'Official MLB data + ScoresAndOdds live board',
     oddsPage: url
   }
 }
@@ -422,6 +536,106 @@ const runSqliteJson = (sql) => {
     { encoding: 'utf8', cwd: rootDir, maxBuffer: 64 * 1024 * 1024 }
   )
   return JSON.parse(output || '[]')
+}
+
+const sqliteText = (value = '') => `'${String(value).replaceAll("'", "''")}'`
+
+const typedGameRowsByDate = new Map()
+
+const typedGamesForDate = (date) => {
+  if (!typedGameRowsByDate.has(date)) {
+    const rows = runSqliteJson(`
+      SELECT
+        g.game_id,
+        away.name AS away_name,
+        home.name AS home_name
+      FROM games g
+      JOIN teams away ON away.team_id = g.away_team_id
+      JOIN teams home ON home.team_id = g.home_team_id
+      WHERE g.game_date = ${sqliteText(date)}
+    `)
+    typedGameRowsByDate.set(date, rows)
+  }
+  return typedGameRowsByDate.get(date) || []
+}
+
+const typedGameIdForMatchup = (date, awayDeskTeam, homeDeskTeam) => {
+  const awayKey = normalizeMarketTeam(awayDeskTeam)
+  const homeKey = normalizeMarketTeam(homeDeskTeam)
+  const row = typedGamesForDate(date).find((entry) => {
+    const awayName = officialToDeskTeam[entry.away_name] || entry.away_name
+    const homeName = officialToDeskTeam[entry.home_name] || entry.home_name
+    return normalizeMarketTeam(awayName) === awayKey && normalizeMarketTeam(homeName) === homeKey
+  })
+  return row?.game_id || ''
+}
+
+const teamSelectionMatches = (selection = '', deskTeam = '') => {
+  const selectionKey = normalizeMarketTeam(selection)
+  const teamKey = normalizeMarketTeam(deskTeam)
+  return selectionKey === teamKey || selectionKey.endsWith(` ${teamKey}`)
+}
+
+const typedMarketRowForTeam = (rows = [], deskTeam = '') =>
+  rows.find((row) => teamSelectionMatches(row.selection, deskTeam) && Number.isFinite(Number(row.odds_american)))
+
+const typedTotalRow = (rows = [], side = '') =>
+  rows.find((row) => String(row.selection || '').toLowerCase() === side && Number.isFinite(Number(row.odds_american)))
+
+const latestCompleteTypedDraftKingsFullGame = (date, awayDeskTeam, homeDeskTeam) => {
+  const gameId = typedGameIdForMatchup(date, awayDeskTeam, homeDeskTeam)
+  if (!gameId) return null
+  const rows = runSqliteJson(`
+    SELECT market_type, selection, line_value, odds_american, captured_at
+    FROM market_snapshots
+    WHERE lower(source_name) = 'draftkings'
+      AND game_id = ${sqliteText(gameId)}
+      AND substr(captured_at, 1, 10) = ${sqliteText(date)}
+      AND market_type IN ('winner', 'spread', 'total')
+    ORDER BY captured_at DESC
+  `)
+  const rowsByCapturedAt = new Map()
+  for (const row of rows) {
+    const capturedAt = row.captured_at || ''
+    if (!rowsByCapturedAt.has(capturedAt)) rowsByCapturedAt.set(capturedAt, [])
+    rowsByCapturedAt.get(capturedAt).push(row)
+  }
+
+  for (const [capturedAt, capturedRows] of rowsByCapturedAt) {
+    const byType = (marketType) => capturedRows.filter((row) => row.market_type === marketType)
+    const winnerAway = typedMarketRowForTeam(byType('winner'), awayDeskTeam)
+    const winnerHome = typedMarketRowForTeam(byType('winner'), homeDeskTeam)
+    const spreadAway = typedMarketRowForTeam(byType('spread'), awayDeskTeam)
+    const spreadHome = typedMarketRowForTeam(byType('spread'), homeDeskTeam)
+    const totalOver = typedTotalRow(byType('total'), 'over')
+    const totalUnder = typedTotalRow(byType('total'), 'under')
+    const totalLine = Number.isFinite(Number(totalOver?.line_value))
+      ? Number(totalOver.line_value)
+      : Number(totalUnder?.line_value)
+    if (!winnerAway || !winnerHome || !spreadAway || !spreadHome || !totalOver || !totalUnder || !Number.isFinite(totalLine)) {
+      continue
+    }
+    if (Math.abs(Number(spreadAway.line_value)) > 3 || Math.abs(Number(spreadHome.line_value)) > 3 || totalLine > 15) {
+      continue
+    }
+    return {
+      moneyline: `${awayDeskTeam} ${formatAmerican(winnerAway.odds_american)} / ${homeDeskTeam} ${formatAmerican(winnerHome.odds_american)}`,
+      spread:
+        `${awayDeskTeam} ${formatLine(spreadAway.line_value)} ${formatAmerican(spreadAway.odds_american)} / ` +
+        `${homeDeskTeam} ${formatLine(spreadHome.line_value)} ${formatAmerican(spreadHome.odds_american)}`,
+      total: `o${totalLine} ${formatAmerican(totalOver.odds_american)} / u${totalLine} ${formatAmerican(totalUnder.odds_american)}`,
+      sourceCapturedAt: capturedAt
+    }
+  }
+  return null
+}
+
+const publicPropSourcePath = (sourceName = '', sourcePath = '') => {
+  const sourceText = `${sourceName} ${sourcePath}`.toLowerCase()
+  if (sourceText.includes('draftkings')) return 'https://sportsbook.draftkings.com/leagues/baseball/mlb'
+  if (sourceText.includes('fanduel')) return 'https://sportsbook.fanduel.com/baseball/mlb'
+  if (/data-private|\/users\//i.test(String(sourcePath || ''))) return ''
+  return sourcePath || ''
 }
 
 const safeJsonParse = (value, fallback = null) => {
@@ -1805,17 +2019,26 @@ const buildPitcherStrikeoutMarketsByGamePk = ({ date, games }) => {
 
   const rows = runSqliteJson(`
     SELECT
-      game_pk,
-      player_name,
-      point,
-      MAX(CASE WHEN outcome_name='Over' THEN price END) AS over_price,
-      MAX(CASE WHEN outcome_name='Under' THEN price END) AS under_price
-    FROM mlb_player_prop_odds_snapshots
-    WHERE market_date='${date}'
-      AND market_key='pitcher_strikeouts'
-      AND game_pk IN (${gamePks.join(',')})
-    GROUP BY game_pk, player_name, point
-    ORDER BY game_pk, player_name
+      g.mlb_game_pk AS game_pk,
+      p.player_name,
+      p.line_value AS point,
+      p.source_name,
+      p.sportsbook,
+      p.source_path,
+      MAX(p.captured_at) AS captured_at,
+      MAX(CASE WHEN p.selection='Over' THEN p.american_odds END) AS over_price,
+      MAX(CASE WHEN p.selection='Under' THEN p.american_odds END) AS under_price
+    FROM prop_market_snapshots p
+    JOIN games g ON g.game_id=p.game_id
+    WHERE p.market_date='${date}'
+      AND p.market_key='pitcher_strikeouts'
+      AND g.mlb_game_pk IN (${gamePks.join(',')})
+    GROUP BY g.mlb_game_pk, p.player_name, p.line_value, p.source_name, p.sportsbook, p.source_path
+    ORDER BY
+      g.mlb_game_pk,
+      p.player_name,
+      CASE WHEN lower(p.source_name)='draftkings' THEN 1 ELSE 0 END,
+      captured_at
   `)
 
   const byGamePk = {}
@@ -1827,7 +2050,11 @@ const buildPitcherStrikeoutMarketsByGamePk = ({ date, games }) => {
       playerName: row.player_name,
       line: Number.isFinite(Number(row.point)) ? Number(row.point) : null,
       overPrice: Number.isFinite(Number(row.over_price)) ? Number(row.over_price) : null,
-      underPrice: Number.isFinite(Number(row.under_price)) ? Number(row.under_price) : null
+      underPrice: Number.isFinite(Number(row.under_price)) ? Number(row.under_price) : null,
+      sportsbook: row.sportsbook || row.source_name || 'Prop market',
+      sourceName: row.source_name || '',
+      sourcePath: publicPropSourcePath(row.source_name, row.source_path),
+      capturedAt: row.captured_at || ''
     }
   })
 
@@ -3045,6 +3272,7 @@ const main = async () => {
   const schedule = await fetchJson(scheduleUrl)
   const standings = await fetchJson(standingsUrl)
   const rtSportsProbablesByMatchup = await fetchRtSportsProbables(options.date)
+  const draftKingsEvents = await loadDraftKingsMlbLines(options.date)
   const pitcherIds = new Set()
 
   for (const dateEntry of schedule.dates || []) {
@@ -3122,7 +3350,7 @@ const main = async () => {
               fullName: rtFallback?.homeStarter || homeProbable?.fullName || '',
               record: rtFallback?.homeStarterRecord || ''
             })
-      const boardOdds = await parseMatchupOdds(awayDesk, homeDesk)
+      const boardOdds = await parseMatchupOdds(awayDesk, homeDesk, { draftKingsEvents, date: options.date })
 
       const matchupKey = `${slugifyDeskTeam(awayDesk)}-${slugifyDeskTeam(homeDesk)}`
       const seenCount = seenMatchupCounts.get(matchupKey) ?? 0
@@ -3147,6 +3375,9 @@ const main = async () => {
         spread: boardOdds.spread,
         total: boardOdds.total,
         moneyline: boardOdds.moneyline,
+        first5Moneyline: boardOdds.first5Moneyline,
+        first5Total: boardOdds.first5Total,
+        oddsProvider: boardOdds.oddsProvider,
         pitcherSourceNote: '',
         oddsPage: boardOdds.oddsPage,
         metadata: {

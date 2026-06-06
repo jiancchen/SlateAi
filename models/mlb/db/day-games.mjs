@@ -141,12 +141,14 @@ const formatAmerican = (value) => {
 
 const market = (label, book, value) => ({ label, book, value })
 
-const makeBoardOdds = ({ spread = '', total = '', moneyline = '', provider = oddsProvider }) => ({
+const makeBoardOdds = ({ spread = '', total = '', moneyline = '', first5Moneyline = '', first5Total = '', provider = oddsProvider }) => ({
   participantOrder: [0, 1],
   markets: [
     ...(spread ? [market('Spread', provider, spread)] : []),
     ...(total ? [market('Total', provider, total)] : []),
-    ...(moneyline ? [market('Moneyline', provider, moneyline)] : [])
+    ...(moneyline ? [market('Moneyline', provider, moneyline)] : []),
+    ...(first5Moneyline ? [market('1st 5 ML', provider, first5Moneyline)] : []),
+    ...(first5Total ? [market('1st 5 Total', provider, first5Total)] : [])
   ],
   note: 'Typed DB board snapshot plus model context.',
   provider
@@ -546,11 +548,23 @@ const buildStatcastTrend = (row = {}) =>
         paSample7: num(row.pa_sample_7, 0),
         bbeSample7: num(row.bbe_sample_7, 0),
         rolling7Xwoba: num(row.rolling_7_xwoba, null),
+        rolling14Xwoba: num(row.rolling_14_xwoba, null),
+        rolling30Xwoba: num(row.rolling_30_xwoba, null),
         rolling7Xba: num(row.rolling_7_xba, null),
+        rolling14Xba: num(row.rolling_14_xba, null),
+        rolling30Xba: num(row.rolling_30_xba, null),
         rolling7Xslg: num(row.rolling_7_xslg, null),
+        rolling14Xslg: num(row.rolling_14_xslg, null),
+        rolling30Xslg: num(row.rolling_30_xslg, null),
         rolling7BarrelPct: num(row.rolling_7_barrel_pct, null),
+        rolling14BarrelPct: num(row.rolling_14_barrel_pct, null),
+        rolling30BarrelPct: num(row.rolling_30_barrel_pct, null),
         rolling7HardHitPct: num(row.rolling_7_hard_hit_pct, null),
+        rolling14HardHitPct: num(row.rolling_14_hard_hit_pct, null),
+        rolling30HardHitPct: num(row.rolling_30_hard_hit_pct, null),
         rolling7SweetSpotPct: num(row.rolling_7_sweet_spot_pct, null),
+        rolling14SweetSpotPct: num(row.rolling_14_sweet_spot_pct, null),
+        rolling30SweetSpotPct: num(row.rolling_30_sweet_spot_pct, null),
         xwobaTrend: num(row.xwoba_trend_7_minus_30, null),
         barrelTrend: num(row.barrel_trend_7_minus_30, null),
         hardHitTrend: num(row.hard_hit_trend_7_minus_30, null),
@@ -772,12 +786,34 @@ const buildMoneyline = (markets, awayTeamId, homeTeamId) => {
   return `${formatAmerican(byTeam.get(awayTeamId))} / ${formatAmerican(byTeam.get(homeTeamId))}`
 }
 
+const buildFirst5Moneyline = (markets, awayTeamId, homeTeamId) => {
+  const winners = markets.filter((marketRow) => marketRow.market_type === 'first5Winner')
+  const byTeam = new Map()
+  for (const marketRow of winners) {
+    if (!marketRow.team_id || byTeam.has(marketRow.team_id)) continue
+    const american = num(marketRow.odds_american, null) ?? americanFromPriceCents(marketRow.price_cents)
+    if (Number.isFinite(american)) byTeam.set(marketRow.team_id, american)
+  }
+  if (!byTeam.has(awayTeamId) || !byTeam.has(homeTeamId)) return ''
+  return `${formatAmerican(byTeam.get(awayTeamId))} / ${formatAmerican(byTeam.get(homeTeamId))}`
+}
+
 const buildTotal = (markets) => {
   const totals = markets
     .filter((marketRow) => marketRow.market_type === 'total' && /^Over/i.test(marketRow.selection_name || ''))
     .map((marketRow) => ({ line: num(marketRow.line_value), price: num(marketRow.price_cents) }))
     .filter((marketRow) => Number.isFinite(marketRow.line))
     .sort((left, right) => Math.abs((left.price ?? 50) - 50) - Math.abs((right.price ?? 50) - 50))
+  const best = totals[0]
+  return best ? `${best.line.toFixed(1)} Runs` : ''
+}
+
+const buildFirst5Total = (markets) => {
+  const totals = markets
+    .filter((marketRow) => marketRow.market_type === 'first5Total' && /^Over/i.test(marketRow.selection_name || ''))
+    .map((marketRow) => ({ line: num(marketRow.line_value), price: num(marketRow.odds_american, null) }))
+    .filter((marketRow) => Number.isFinite(marketRow.line))
+    .sort((left, right) => Math.abs((left.price ?? 0)) - Math.abs((right.price ?? 0)))
   const best = totals[0]
   return best ? `${best.line.toFixed(1)} Runs` : ''
 }
@@ -802,6 +838,11 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
   const moneyline = buildMoneyline(game.markets || [], awayTeamId, homeTeamId)
   const total = buildTotal(game.markets || [])
   const spread = buildSpread(game.markets || [])
+  const first5Moneyline = buildFirst5Moneyline(game.markets || [], awayTeamId, homeTeamId)
+  const first5Total = buildFirst5Total(game.markets || [])
+  const marketProvider = (game.markets || []).some((marketRow) => marketRow.source_name === 'draftkings')
+    ? 'DraftKings typed MLB board'
+    : oddsProvider
   const awaySide = buildLineupBoardSide({ game, teamId: awayTeamId, opponentTeamId: homeTeamId, opponentPitcher: homePitcher, context })
   const homeSide = buildLineupBoardSide({ game, teamId: homeTeamId, opponentTeamId: awayTeamId, opponentPitcher: awayPitcher, context })
   const awayStatus = game.lineups?.[awayTeamId]?.lineup_status === 'complete' ? 'posted' : game.lineups?.[awayTeamId]?.lineup_status || 'pending'
@@ -816,7 +857,9 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
     marketWeatherContext: {
       line: moneyline,
       total,
-      source: oddsProvider
+      first5Moneyline,
+      first5Total,
+      source: marketProvider
     }
   }
   const lineupContext = {
@@ -842,7 +885,7 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
     ],
     summary: `${awayName} @ ${homeName} from typed MLB DB inputs.`,
     lean: 'Lean on the modeled side, but respect source freshness and lineup completeness.',
-    factors: [`Current board: ${moneyline || 'no ML'} | ${total || 'no total'} | ${spread || 'no spread'}.`, `${awayPitcher.fullName || 'Away starter'} vs ${homePitcher.fullName || 'Home starter'}.`],
+    factors: [`Current board: ${moneyline || 'no ML'} | ${total || 'no total'} | ${spread || 'no spread'} | F5 ${first5Moneyline || 'no F5 ML'} / ${first5Total || 'no F5 total'}.`, `${awayPitcher.fullName || 'Away starter'} vs ${homePitcher.fullName || 'Home starter'}.`],
     swingFactor: 'Swing factor: whether the starter edge survives the bridge innings.',
     teamContext: { away: null, home: null },
     parkContext: null,
@@ -891,7 +934,9 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
       spread,
       total,
       moneyline,
-      provider: oddsProvider
+      first5Moneyline,
+      first5Total,
+      provider: marketProvider
     })
   }
 

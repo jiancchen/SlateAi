@@ -24,6 +24,7 @@ from pipeline.sources.mlb.normalization.common import (  # noqa: E402
 )
 from pipeline.sources.mlb.normalization.market_raw_context import (  # noqa: E402
     ensure_market_raw_schema,
+    parse_draftkings_payload,
     parse_kalshi_payload,
     parse_robinhood_payload,
     read_json_file,
@@ -74,6 +75,7 @@ def cache_valid_until(now_iso: str, ttl_hours: float) -> str:
 
 def candidate_odds_files(date: str) -> list[Path]:
     candidates = [
+        ROOT / "data-private" / "odds" / "draftkings" / "mlb" / f"{date}-draftkings-mlb-lines.json",
         ROOT / "data-private" / "odds" / "kalshi" / "mlb" / f"{date}-kalshi-markets.json",
         ROOT / "data-private" / "odds" / "robinhood" / "mlb" / f"{date}-robinhood-baseball-visible-markets.json",
     ]
@@ -87,14 +89,19 @@ def source_snapshot_id_for(source_name: str, local_path: str) -> str:
 def ensure_source_snapshot(con: sqlite3.Connection, source_name: str, file_path: Path, payload: dict[str, Any], date: str) -> str:
     local_path = sql_path(file_path)
     snapshot_id = source_snapshot_id_for(source_name, local_path)
+    parse_family = "draftkings_mlb_lines"
+    if "kalshi" in file_path.name:
+        parse_family = "kalshi_markets"
+    elif "robinhood" in file_path.name:
+        parse_family = "robinhood_visible_markets"
     notes = {
         "root": str(file_path.parent.relative_to(ROOT)),
         "parser_module": "pipeline/sources/mlb/normalization/market_raw_context.py",
         "active_raw_to_typed_adapter": True,
         "requested_date": date,
         "source": payload.get("source"),
-        "source_url": payload.get("url"),
-        "parse_family": "kalshi_markets" if "kalshi" in file_path.name else "robinhood_visible_markets",
+        "source_url": payload.get("sourceUrl") or payload.get("url"),
+        "parse_family": parse_family,
     }
     con.execute(
         """
@@ -115,7 +122,7 @@ def ensure_source_snapshot(con: sqlite3.Connection, source_name: str, file_path:
         (
             snapshot_id,
             source_name,
-            payload.get("url"),
+            payload.get("sourceUrl") or payload.get("url"),
             local_path,
             payload.get("fetchedAt") or utc_now(),
             date,
@@ -294,15 +301,19 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
         all_contracts: list[dict[str, Any]] = []
         all_ticks: list[dict[str, Any]] = []
         all_snapshots: list[dict[str, Any]] = []
+        all_prop_snapshots: list[dict[str, Any]] = []
         source_snapshot_ids: list[str] = []
         counts: dict[str, Any] = {
             "source_files": len(files),
             "source_games": 0,
             "source_rows": 0,
+            "source_prop_rows": 0,
             "parsed_contracts": 0,
             "parsed_ticks": 0,
             "parsed_snapshots": 0,
+            "parsed_prop_snapshots": 0,
             "unmapped_games": 0,
+            "unmapped_prop_players": 0,
             "by_file": {},
         }
         for file_path in files:
@@ -313,19 +324,33 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
                 parsed = parse_kalshi_payload(payload, resolver, date=args.date, source_snapshot_id=snapshot_id, local_path=sql_path(file_path))
             elif "robinhood" in file_path.name:
                 parsed = parse_robinhood_payload(payload, resolver, date=args.date, source_snapshot_id=snapshot_id, local_path=sql_path(file_path))
+            elif "draftkings" in file_path.name:
+                parsed = parse_draftkings_payload(payload, resolver, date=args.date, source_snapshot_id=snapshot_id, local_path=sql_path(file_path))
             else:
                 continue
             all_contracts.extend(parsed.contracts)
             all_ticks.extend(parsed.ticks)
             all_snapshots.extend(parsed.snapshots)
+            all_prop_snapshots.extend(parsed.prop_snapshots)
             counts["by_file"][sql_path(file_path)] = parsed.counts
-            for key in ["source_games", "source_rows", "parsed_contracts", "parsed_ticks", "parsed_snapshots", "unmapped_games"]:
+            for key in [
+                "source_games",
+                "source_rows",
+                "source_prop_rows",
+                "parsed_contracts",
+                "parsed_ticks",
+                "parsed_snapshots",
+                "parsed_prop_snapshots",
+                "unmapped_games",
+                "unmapped_prop_players",
+            ]:
                 counts[key] += parsed.counts.get(key, 0)
-        inserted = {"market_contracts": 0, "market_price_ticks": 0, "market_snapshots": 0}
+        inserted = {"market_contracts": 0, "market_price_ticks": 0, "market_snapshots": 0, "prop_market_snapshots": 0}
         if not args.dry_run:
             inserted.update(insert_value_rows(con, [("market_contracts", row) for row in all_contracts]))
             inserted.update(insert_value_rows(con, [("market_price_ticks", row) for row in all_ticks]))
             inserted.update(insert_value_rows(con, [("market_snapshots", row) for row in all_snapshots]))
+            inserted.update(insert_value_rows(con, [("prop_market_snapshots", row) for row in all_prop_snapshots]))
         prop_count = count_prop_rows(con, args.date)
         direct_market_count = count_direct_market_rows(con, args.date)
         after = {
@@ -399,7 +424,12 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
                 run_reason="typed_feature_status",
                 report_path=args.report,
                 source_snapshot_id=None,
-                details={"adapter": "mlb_props_typed_status", "prop_market_snapshots_for_date": prop_count},
+                details={
+                    "adapter": "mlb_props_typed_status",
+                    "prop_market_snapshots_for_date": prop_count,
+                    "draftkings_prop_snapshots_parsed": len(all_prop_snapshots),
+                    "unmapped_prop_players": counts["unmapped_prop_players"],
+                },
             )
             upsert_health_check(
                 con,
@@ -427,7 +457,7 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
                     "timestamp": utc_now(),
                     "phase": "9F",
                     "area": "mlb_markets_props_raw_to_typed",
-                    "source": "data-private/odds/{kalshi,robinhood}/mlb + typed prop_market_snapshots",
+                    "source": "data-private/odds/{draftkings,kalshi,robinhood}/mlb + typed prop_market_snapshots",
                     "target": "sql-mlb.db:market_contracts,market_price_ticks,market_snapshots,source_fetch_status",
                     "parser_module": "pipeline/sources/mlb/normalization/market_raw_context.py",
                     "migration_script": "data-migration/scripts/ingest_mlb_markets_props_raw_to_typed.py",
@@ -436,7 +466,14 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
                     "status_to": "inserted",
                     "report_path": sql_path(args.report),
                     "checksum": None,
-                    "notes": compact_json({"date": args.date, "odds_snapshots": len(all_snapshots), "prop_snapshots": prop_count}),
+                    "notes": compact_json(
+                        {
+                            "date": args.date,
+                            "odds_snapshots": len(all_snapshots),
+                            "typed_prop_snapshots_for_date": prop_count,
+                            "draftkings_prop_snapshots_parsed": len(all_prop_snapshots),
+                        }
+                    ),
                 },
             )
         write_report(args.report, report)
@@ -446,7 +483,7 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
 def main() -> int:
     args = parse_args()
     report = ingest(args)
-    print(compact_json({k: report[k] for k in ["date", "dry_run", "source_files", "parsed_snapshots", "prop_market_snapshots_for_date", "ok"]}))
+    print(compact_json({k: report[k] for k in ["date", "dry_run", "source_files", "parsed_snapshots", "parsed_prop_snapshots", "prop_market_snapshots_for_date", "ok"]}))
     return 0 if report["ok"] else 1
 
 

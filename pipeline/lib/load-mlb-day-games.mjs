@@ -24,12 +24,14 @@ const importMaybeFresh = async (absolutePath) => {
 const oddsProvider = 'Official MLB data + ScoresAndOdds live board'
 const market = (label, book, value) => ({ label, book, value })
 
-const makeBoardOdds = ({ spread = '', total = '', moneyline = '', provider = oddsProvider }) => ({
+const makeBoardOdds = ({ spread = '', total = '', moneyline = '', first5Moneyline = '', first5Total = '', provider = oddsProvider }) => ({
   participantOrder: [0, 1],
   markets: [
     ...(spread ? [market('Spread', provider, spread)] : []),
     ...(total ? [market('Total', provider, total)] : []),
-    ...(moneyline ? [market('Moneyline', provider, moneyline)] : [])
+    ...(moneyline ? [market('Moneyline', provider, moneyline)] : []),
+    ...(first5Moneyline ? [market('1st 5 ML', provider, first5Moneyline)] : []),
+    ...(first5Total ? [market('1st 5 Total', provider, first5Total)] : [])
   ],
   note: 'Board snapshot plus model context.',
   provider
@@ -75,7 +77,7 @@ const buildGenericMlbGame = (
         }
       : null
   const factors = [
-    `Current board: ${raw.moneyline} | ${raw.total} | ${raw.spread}.`,
+    `Current board: ${raw.moneyline} | ${raw.total} | ${raw.spread} | F5 ${raw.first5Moneyline || 'no F5 ML'} / ${raw.first5Total || 'no F5 total'}.`,
     `${raw.awayPitcher.fullName} vs ${raw.homePitcher.fullName}.`
   ]
 
@@ -139,7 +141,9 @@ const buildGenericMlbGame = (
       spread: raw.spread,
       total: raw.total,
       moneyline: raw.moneyline,
-      provider: oddsProvider
+      first5Moneyline: raw.first5Moneyline,
+      first5Total: raw.first5Total,
+      provider: raw.oddsProvider || oddsProvider
     })
   }
 }

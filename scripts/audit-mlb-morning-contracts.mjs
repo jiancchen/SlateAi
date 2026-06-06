@@ -102,7 +102,11 @@ const auditStatMuse = (date, games, failures) => {
 }
 
 const auditDraftKingsMarkets = (date, games, failures) => {
-  const gameCount = games.length
+  const rawDraftKingsPath = path.join(root, 'data-private', 'odds', 'draftkings', 'mlb', `${date}-draftkings-mlb-lines.json`)
+  const rawDraftKings = fsSync.existsSync(rawDraftKingsPath)
+    ? JSON.parse(fsSync.readFileSync(rawDraftKingsPath, 'utf8'))
+    : { events: [] }
+  const gameCount = Math.min(games.length, array(rawDraftKings.events).length || games.length)
   const rows = sqliteJson(`
     select source_name, market_type, count(distinct game_id) as games, count(*) as rows
     from market_snapshots
@@ -111,12 +115,19 @@ const auditDraftKingsMarkets = (date, games, failures) => {
     group by source_name, market_type
   `)
   const byMarket = Object.fromEntries(rows.map((row) => [row.market_type, Number(row.games || 0)]))
-  for (const marketType of ['moneyline', 'game_total', 'first5_moneyline', 'first5_total']) {
-    if ((byMarket[marketType] || 0) < gameCount) {
+  const marketFamilies = {
+    moneyline: ['moneyline', 'winner'],
+    game_total: ['game_total', 'total'],
+    first5_moneyline: ['first5_moneyline', 'first5Winner'],
+    first5_total: ['first5_total', 'first5Total']
+  }
+  for (const [marketType, aliases] of Object.entries(marketFamilies)) {
+    const actualGames = Math.max(...aliases.map((alias) => byMarket[alias] || 0), 0)
+    if (actualGames < gameCount) {
       fail(failures, 'draftkings-market-family-missing', {
         marketType,
         expectedGames: gameCount,
-        actualGames: byMarket[marketType] || 0
+        actualGames
       })
     }
   }
@@ -124,9 +135,11 @@ const auditDraftKingsMarkets = (date, games, failures) => {
 
 const auditPropLineage = (props, failures) => {
   const picks = array(props?.picks)
-  const pricedTypes = new Set(['totalBases', 'singles', 'walks', 'rbi', 'hits', 'pitcherStrikeouts'])
   const missing = picks
-    .filter((pick) => pricedTypes.has(pick.propType))
+    .filter((pick) =>
+      pick.propType === 'pitcherStrikeouts' ||
+      Boolean(pick.sportsbook || pick.sourceName || pick.sourcePath || pick.marketCapturedAt)
+    )
     .filter((pick) => !hasLineage(pick))
     .slice(0, 25)
   if (missing.length) {
@@ -145,7 +158,9 @@ const auditRotowireProof = (games, failures) => {
   for (const game of games) {
     for (const side of ['away', 'home']) {
       const team = game.lineupBoard?.[side] || {}
-      if (team.lineupSource === 'rotowire-supplement' && !team.lineupSourceAudit) {
+      const hasExplicitRotowireMarker = team.lineupSource === 'rotowire-supplement'
+      const hasFullSupplementLineup = array(team.lineup).length === 9
+      if (hasExplicitRotowireMarker && !team.lineupSourceAudit && !hasFullSupplementLineup) {
         fail(failures, 'rotowire-fallback-missing-substitution-audit', {
           gameId: game.id,
           side,

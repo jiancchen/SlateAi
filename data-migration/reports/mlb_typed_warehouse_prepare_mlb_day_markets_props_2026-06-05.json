@@ -1,38 +1,52 @@
 {
   "after_counts": {
-    "market_contracts": 798,
-    "market_price_ticks": 798,
-    "market_snapshots": 2516,
-    "prop_market_snapshots": 2573,
-    "source_snapshots": 2470,
+    "market_contracts": 891,
+    "market_price_ticks": 1133,
+    "market_snapshots": 2851,
+    "prop_market_snapshots": 2625,
+    "source_snapshots": 2559,
     "unresolved_entities": 10
   },
   "before_counts": {
-    "market_contracts": 798,
-    "market_price_ticks": 798,
-    "market_snapshots": 2516,
-    "prop_market_snapshots": 2573,
-    "source_snapshots": 2470,
+    "market_contracts": 891,
+    "market_price_ticks": 1133,
+    "market_snapshots": 2851,
+    "prop_market_snapshots": 2625,
+    "source_snapshots": 2559,
     "unresolved_entities": 10
   },
-  "by_file": {},
+  "by_file": {
+    "data-private/odds/draftkings/mlb/2026-06-05-draftkings-mlb-lines.json": {
+      "parsed_contracts": 83,
+      "parsed_prop_snapshots": 26,
+      "parsed_snapshots": 83,
+      "parsed_ticks": 83,
+      "source_games": 7,
+      "source_prop_rows": 26,
+      "source_rows": 83,
+      "unmapped_games": 0,
+      "unmapped_prop_players": 0
+    }
+  },
   "date": "2026-06-05",
   "direct_market_snapshots_for_date": 30,
   "dry_run": false,
-  "generated_at": "2026-06-05T15:38:28.530641+00:00",
+  "generated_at": "2026-06-05T21:15:09.631386+00:00",
   "inserted": {
-    "market_contracts": 0,
-    "market_price_ticks": 0,
-    "market_snapshots": 0
+    "market_contracts": 83,
+    "market_price_ticks": 83,
+    "market_snapshots": 83,
+    "prop_market_snapshots": 26
   },
   "odds_completeness": "complete",
   "odds_status": "success",
   "ok": true,
-  "parsed_contracts": 0,
-  "parsed_snapshots": 0,
-  "parsed_ticks": 0,
+  "parsed_contracts": 83,
+  "parsed_prop_snapshots": 26,
+  "parsed_snapshots": 83,
+  "parsed_ticks": 83,
   "parser_module": "pipeline/sources/mlb/normalization/market_raw_context.py",
-  "prop_market_snapshots_for_date": 46,
+  "prop_market_snapshots_for_date": 98,
   "props_completeness": "complete",
   "props_status": "success",
   "row_count_delta": {
@@ -43,12 +57,16 @@
     "source_snapshots": 0,
     "unresolved_entities": 0
   },
-  "sample_source_snapshots": [],
+  "sample_source_snapshots": [
+    "mlb-27bcf6b7a21df94aca8009e4514e52c7"
+  ],
   "script": "data-migration/scripts/ingest_mlb_markets_props_raw_to_typed.py",
   "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
-  "source_files": 0,
-  "source_games": 0,
-  "source_rows": 0,
-  "source_snapshot_rows": 0,
-  "unmapped_games": 0
+  "source_files": 1,
+  "source_games": 7,
+  "source_prop_rows": 26,
+  "source_rows": 83,
+  "source_snapshot_rows": 1,
+  "unmapped_games": 0,
+  "unmapped_prop_players": 0
 }

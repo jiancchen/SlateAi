@@ -264,7 +264,17 @@ export const marketContractsForDate = (date) => {
       limit 1
     )
     where g.game_date like ?
-    order by g.start_time_utc, contracts.market_type, contracts.selection_name
+    order by
+      g.start_time_utc,
+      case contracts.source_name
+        when 'draftkings' then 0
+        when 'fanduel_research' then 1
+        when 'kalshi' then 2
+        when 'robinhood' then 3
+        else 9
+      end,
+      contracts.market_type,
+      contracts.selection_name
     `,
     [`${date}%`]
   )

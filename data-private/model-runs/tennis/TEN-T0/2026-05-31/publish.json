@@ -5,8 +5,8 @@
   "modelId": "TEN-T0",
   "slateDate": "2026-05-31",
   "status": "deployed",
-  "deployedAt": "2026-06-05T16:23:09.815Z",
-  "deploymentUrl": "https://slate-web-static-1-o5j2xvqms-jian-chens-projects-667dcf76.vercel.app",
+  "deployedAt": "2026-06-05T23:27:34.332Z",
+  "deploymentUrl": "https://slate-web-static-1-8mnkmk3wp-jian-chens-projects-667dcf76.vercel.app",
   "webRoot": "web",
   "vercelProject": {
     "projectId": "prj_wKTGUqaCcDzyat6fBENE0ROnBWFL",
@@ -26,8 +26,8 @@
   },
   "staticArtifact": {
     "root": "web/dist",
-    "files": 949,
-    "sha256": "618c6549e88d152720f3c10ccd9a74ddb8259325dc4feb3bc0b62f6a45777538"
+    "files": 951,
+    "sha256": "4dd5737fb9edebe74bdf8d22cceb4d6a7c7bd2fb9cbf0056660648ab60c62456"
   },
   "publicData": {
     "currentSlate": {
