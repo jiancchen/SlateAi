@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import sqlite3
+import re
 from collections import defaultdict
 from dataclasses import dataclass
 from typing import Any
@@ -455,6 +456,151 @@ def build_service_pressure(rows: list[ParsedStatRow]) -> list[dict[str, Any]]:
     return snapshots
 
 
+def _row_value(row: sqlite3.Row | dict[str, Any], key: str) -> Any:
+    if isinstance(row, sqlite3.Row):
+        return row[key] if key in row.keys() else None
+    return row.get(key)
+
+
+def _stat_pct_from_row(row: sqlite3.Row | dict[str, Any] | None) -> float | None:
+    if row is None:
+        return None
+    made = to_float(_row_value(row, "stat_made"))
+    attempts = to_float(_row_value(row, "stat_attempts"))
+    if made is not None and attempts:
+        return round((made / attempts) * 100.0, 4)
+    text = str(_row_value(row, "stat_text") or "")
+    match = re.search(r"\((-?\d+(?:\.\d+)?)%\)", text)
+    if match:
+        return to_float(match.group(1))
+    value = to_float(_row_value(row, "stat_value"))
+    if value is not None and 0 <= value <= 100:
+        return value
+    return None
+
+
+def _made_attempts_from_row(row: sqlite3.Row | dict[str, Any] | None) -> tuple[int | None, int | None]:
+    if row is None:
+        return (None, None)
+    return (to_int(_row_value(row, "stat_made")), to_int(_row_value(row, "stat_attempts")))
+
+
+def hold_pct_from_service_points(
+    first_in_pct: float | None,
+    first_won_pct: float | None,
+    second_won_pct: float | None,
+) -> float | None:
+    if first_in_pct is None or first_won_pct is None or second_won_pct is None:
+        return None
+    point_win = (first_in_pct / 100) * (first_won_pct / 100) + (1 - first_in_pct / 100) * (second_won_pct / 100)
+    if point_win <= 0 or point_win >= 1:
+        return None
+    q = 1 - point_win
+    pre_deuce = point_win ** 4 * (1 + 4 * q + 10 * q ** 2)
+    reach_deuce = 20 * point_win ** 3 * q ** 3
+    win_from_deuce = point_win ** 2 / (point_win ** 2 + q ** 2)
+    return round(max(0, min(100, (pre_deuce + reach_deuce * win_from_deuce) * 100)), 1)
+
+
+def build_tennislive_service_pressure(rows: list[sqlite3.Row | dict[str, Any]]) -> list[dict[str, Any]]:
+    grouped: dict[tuple[str, str], dict[str, Any]] = defaultdict(
+        lambda: {
+            "stats": {},
+            "source_snapshot_ids": set(),
+            "source_stat_rows": 0,
+        }
+    )
+    players_by_match: dict[str, set[str]] = defaultdict(set)
+    for row in rows:
+        if str(_row_value(row, "source_name") or "").lower() != "tennislive":
+            continue
+        match_id = _row_value(row, "match_id")
+        player_id = _row_value(row, "player_id")
+        if not match_id or not player_id:
+            continue
+        key = (str(match_id), str(player_id))
+        label = str(_row_value(row, "stat_name") or "").strip().upper()
+        bucket = grouped[key]
+        bucket["match_id"] = str(match_id)
+        bucket["player_id"] = str(player_id)
+        bucket["source_name"] = "tennislive"
+        bucket["source_stat_rows"] += 1
+        bucket["match_date"] = _row_value(row, "match_date") or bucket.get("match_date")
+        bucket["surface"] = _row_value(row, "surface") or bucket.get("surface")
+        if label:
+            bucket["stats"][label] = row
+        snapshot_id = _row_value(row, "source_snapshot_id")
+        if snapshot_id:
+            bucket["source_snapshot_ids"].add(str(snapshot_id))
+        players_by_match[str(match_id)].add(str(player_id))
+
+    snapshots: list[dict[str, Any]] = []
+    for (match_id, player_id), bucket in grouped.items():
+        stats = bucket["stats"]
+        first_in = _stat_pct_from_row(stats.get("1ST SERVE %"))
+        first_won = _stat_pct_from_row(stats.get("1ST SERVE POINTS WON"))
+        second_won = _stat_pct_from_row(stats.get("2ND SERVE POINTS WON"))
+        hold_pct = hold_pct_from_service_points(first_in, first_won, second_won)
+        break_pct = _stat_pct_from_row(stats.get("TOTAL RETURN POINTS WON"))
+
+        converted = stats.get("BREAK POINTS WON")
+        bp_converted_made, bp_converted_attempts = _made_attempts_from_row(converted)
+        bp_converted_pct = _stat_pct_from_row(converted)
+
+        opponent_bp = None
+        for opponent_player_id in sorted(players_by_match.get(match_id, set()) - {player_id}):
+            opponent_bucket = grouped.get((match_id, opponent_player_id))
+            if opponent_bucket and opponent_bucket["stats"].get("BREAK POINTS WON"):
+                opponent_bp = opponent_bucket["stats"]["BREAK POINTS WON"]
+                break
+        opponent_converted, opponent_chances = _made_attempts_from_row(opponent_bp)
+        bp_saved_attempts = opponent_chances
+        bp_saved_made = None
+        bp_saved_pct = None
+        if opponent_converted is not None and opponent_chances is not None:
+            bp_saved_made = max(0, opponent_chances - opponent_converted)
+            bp_saved_pct = round((bp_saved_made / opponent_chances) * 100.0, 4) if opponent_chances else None
+
+        has_pressure = any(
+            value is not None
+            for value in [
+                hold_pct,
+                break_pct,
+                bp_saved_made,
+                bp_saved_attempts,
+                bp_saved_pct,
+                bp_converted_made,
+                bp_converted_attempts,
+                bp_converted_pct,
+            ]
+        )
+        if not has_pressure:
+            continue
+        snapshots.append(
+            {
+                "pressure_snapshot_id": stable_id("pressure", match_id, player_id, "tennislive", "match"),
+                "player_id": player_id,
+                "match_id": match_id,
+                "snapshot_date": bucket.get("match_date"),
+                "surface": bucket.get("surface"),
+                "sample_type": "single_match",
+                "sample_size": 1,
+                "hold_pct": hold_pct,
+                "break_pct": break_pct,
+                "bp_saved_made": bp_saved_made,
+                "bp_saved_attempts": bp_saved_attempts,
+                "bp_saved_pct": bp_saved_pct,
+                "bp_converted_made": bp_converted_made,
+                "bp_converted_attempts": bp_converted_attempts,
+                "bp_converted_pct": bp_converted_pct,
+                "source_name": "tennislive",
+                "source_snapshot_ids": sorted(bucket["source_snapshot_ids"]),
+                "source_stat_rows": bucket["source_stat_rows"],
+            }
+        )
+    return snapshots
+
+
 def insert_service_pressure(con: sqlite3.Connection, snapshots: list[dict[str, Any]]) -> int:
     inserted = 0
     for row in snapshots:
@@ -471,6 +617,9 @@ def insert_service_pressure(con: sqlite3.Connection, snapshots: list[dict[str, A
               tiebreak_record, source_name, created_at
             ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, null, null, ?, ?)
             on conflict(pressure_snapshot_id) do update set
+              snapshot_date = excluded.snapshot_date,
+              surface = excluded.surface,
+              sample_type = excluded.sample_type,
               sample_size = excluded.sample_size,
               hold_pct = excluded.hold_pct,
               break_pct = excluded.break_pct,
@@ -480,6 +629,7 @@ def insert_service_pressure(con: sqlite3.Connection, snapshots: list[dict[str, A
               bp_converted_made = excluded.bp_converted_made,
               bp_converted_attempts = excluded.bp_converted_attempts,
               bp_converted_pct = excluded.bp_converted_pct,
+              source_name = excluded.source_name,
               created_at = excluded.created_at
             """,
             (

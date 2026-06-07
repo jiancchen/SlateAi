@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "date": "2026-06-07",
+  "started_at": "2026-06-07T06:03:41.746386+00:00",
+  "finished_at": "2026-06-07T06:03:42.121836+00:00",
+  "player_urls": [
+    "https://www.tennislive.net/atp/giuseppe-la-vela/"
+  ],
+  "match_urls": [],
+  "max_links": 0,
+  "max_matches": 0,
+  "fetch_status": {
+    "run_id": "source-fetch-tennislive-2026-06-07-2026-06-07T06-03-42-120585+00-00",
+    "status": "success",
+    "completeness_status": "complete",
+    "player_attempts": 1,
+    "player_successes": 1,
+    "player_failures": 0,
+    "match_attempts": 0,
+    "match_successes": 0,
+    "match_failures": 0,
+    "attempted_pages": 1,
+    "successful_pages": 1,
+    "failed_pages": 0
+  },
+  "player_results": [
+    {
+      "status": "ok",
+      "player_id": "tennis-player-giuseppe-la-vela",
+      "player": "Giuseppe La Vela",
+      "snapshot_already_seen": false,
+      "surface_records": 70,
+      "match_links": 0,
+      "recent_matches_upserted": 0,
+      "matches_fetched": 0,
+      "matches_skipped_existing": 0,
+      "matches_failed": 0
+    }
+  ],
+  "match_results": [],
+  "failures": []
+}

@@ -1,0 +1,122 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "date": "2026-06-07",
+  "started_at": "2026-06-07T03:37:13.780329+00:00",
+  "finished_at": "2026-06-07T03:37:53.452972+00:00",
+  "player_urls": [
+    "https://www.tennislive.net/atp/alex-marti-pujolras/",
+    "https://www.tennislive.net/atp/carlos-sanchez-jover/",
+    "https://www.tennislive.net/atp/david-jorda-sanchis/",
+    "https://www.tennislive.net/atp/hynek-barton/",
+    "https://www.tennislive.net/atp/matteo-martineau/",
+    "https://www.tennislive.net/atp/mae-malige/",
+    "https://www.tennislive.net/atp/raphael-perot/"
+  ],
+  "match_urls": [],
+  "max_links": 25,
+  "max_matches": 2,
+  "fetch_status": {
+    "run_id": "source-fetch-tennislive-2026-06-07-2026-06-07T03-37-53-451344+00-00",
+    "status": "success",
+    "completeness_status": "complete",
+    "player_attempts": 7,
+    "player_successes": 7,
+    "player_failures": 0,
+    "match_attempts": 14,
+    "match_successes": 14,
+    "match_failures": 0,
+    "attempted_pages": 21,
+    "successful_pages": 21,
+    "failed_pages": 0
+  },
+  "player_results": [
+    {
+      "status": "ok",
+      "player_id": "tennis-player-alex-marti-pujolras",
+      "player": "Alex Marti Pujolras",
+      "snapshot_already_seen": false,
+      "surface_records": 91,
+      "match_links": 25,
+      "recent_matches_upserted": 2,
+      "matches_fetched": 2,
+      "matches_skipped_existing": 0,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-carlos-sanchez-jover",
+      "player": "Carlos Sanchez Jover",
+      "snapshot_already_seen": false,
+      "surface_records": 98,
+      "match_links": 25,
+      "recent_matches_upserted": 2,
+      "matches_fetched": 2,
+      "matches_skipped_existing": 0,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-david-jorda-sanchis",
+      "player": "David Jorda Sanchis",
+      "snapshot_already_seen": false,
+      "surface_records": 126,
+      "match_links": 25,
+      "recent_matches_upserted": 2,
+      "matches_fetched": 2,
+      "matches_skipped_existing": 0,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-hynek-barton",
+      "player": "Hynek Barton",
+      "snapshot_already_seen": false,
+      "surface_records": 56,
+      "match_links": 25,
+      "recent_matches_upserted": 2,
+      "matches_fetched": 2,
+      "matches_skipped_existing": 0,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-matteo-martineau",
+      "player": "Matteo Martineau",
+      "snapshot_already_seen": false,
+      "surface_records": 105,
+      "match_links": 25,
+      "recent_matches_upserted": 2,
+      "matches_fetched": 2,
+      "matches_skipped_existing": 0,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-mae-malige",
+      "player": "Mae Malige",
+      "snapshot_already_seen": false,
+      "surface_records": 49,
+      "match_links": 25,
+      "recent_matches_upserted": 2,
+      "matches_fetched": 2,
+      "matches_skipped_existing": 0,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-raphael-perot",
+      "player": "Raphael Perot",
+      "snapshot_already_seen": false,
+      "surface_records": 49,
+      "match_links": 25,
+      "recent_matches_upserted": 2,
+      "matches_fetched": 2,
+      "matches_skipped_existing": 0,
+      "matches_failed": 0
+    }
+  ],
+  "match_results": [],
+  "failures": []
+}

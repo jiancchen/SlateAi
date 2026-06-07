@@ -1,0 +1,269 @@
+{
+  "after_counts": {
+    "service_pressure_snapshots": 2359,
+    "slate_players": 54,
+    "slate_players_with_tennislive_pressure": 51,
+    "slate_players_with_tennislive_stats": 51,
+    "tennislive_service_pressure_snapshots": 713
+  },
+  "before_counts": {
+    "service_pressure_snapshots": 2183,
+    "slate_players": 54,
+    "slate_players_with_tennislive_pressure": 23,
+    "slate_players_with_tennislive_stats": 51,
+    "tennislive_service_pressure_snapshots": 537
+  },
+  "date": null,
+  "dry_run": false,
+  "generated_at": "2026-06-07T06:04:05.116273+00:00",
+  "matches_with_pressure": 277,
+  "ok": true,
+  "parser_module": "pipeline/sources/tennis/normalization/stats.py",
+  "player_id_filters": [],
+  "players_with_pressure": 51,
+  "row_count_delta": {
+    "service_pressure_snapshots": 176,
+    "tennislive_service_pressure_snapshots": 176
+  },
+  "sample_pressure_snapshots": [
+    {
+      "bp_converted_attempts": 5,
+      "bp_converted_made": 1,
+      "bp_converted_pct": 20.0,
+      "bp_saved_attempts": 9,
+      "bp_saved_made": 7,
+      "bp_saved_pct": 77.7778,
+      "break_pct": 29.5775,
+      "hold_pct": 73.1,
+      "match_id": "tl-2025-09-19-m15-fayetteville-2025-keegan-smith-vs-khololwam-montsi",
+      "player_id": "tennis-player-khololwam-montsi",
+      "pressure_snapshot_id": "fd8502926ec76c2e6e8f0ea72235eeb34f1a44df",
+      "snapshot_date": "2025-09-19",
+      "source_snapshot_ids": [
+        "aa2f7ab87eb41b3a65677ee4c88a8abce9813760"
+      ],
+      "surface": "Hard"
+    },
+    {
+      "bp_converted_attempts": 2,
+      "bp_converted_made": 2,
+      "bp_converted_pct": 100.0,
+      "bp_saved_attempts": 13,
+      "bp_saved_made": 9,
+      "bp_saved_pct": 69.2308,
+      "break_pct": 33.3333,
+      "hold_pct": 61.5,
+      "match_id": "tl-2025-11-12-m15-orlando-2025-2-mehdi-benchakroun-vs-khololwam-montsi",
+      "player_id": "tennis-player-khololwam-montsi",
+      "pressure_snapshot_id": "eed88598d62081acc1905df243df35881b054fd5",
+      "snapshot_date": "2025-11-12",
+      "source_snapshot_ids": [
+        "3db683d5782ff7cc4936dce4c01c722092112971"
+      ],
+      "surface": "Clay"
+    },
+    {
+      "bp_converted_attempts": 2,
+      "bp_converted_made": 0,
+      "bp_converted_pct": 0.0,
+      "bp_saved_attempts": 2,
+      "bp_saved_made": 0,
+      "bp_saved_pct": 0.0,
+      "break_pct": 26.3158,
+      "hold_pct": 78.1,
+      "match_id": "tl-2026-01-09-bengaluru-challenger-2026-timofey-skatov-vs-harold-mayot",
+      "player_id": "tennis-player-harold-mayot",
+      "pressure_snapshot_id": "a7b9a89a885a1dcce65b64849e0800dcc5ffe798",
+      "snapshot_date": "2026-01-09",
+      "source_snapshot_ids": [
+        "d9cc2be44014101f7cf369b3b0997876875a3435"
+      ],
+      "surface": "Hard"
+    },
+    {
+      "bp_converted_attempts": 2,
+      "bp_converted_made": 2,
+      "bp_converted_pct": 100.0,
+      "bp_saved_attempts": 2,
+      "bp_saved_made": 2,
+      "bp_saved_pct": 100.0,
+      "break_pct": 37.7358,
+      "hold_pct": 93.9,
+      "match_id": "tl-2026-01-09-bengaluru-challenger-2026-timofey-skatov-vs-harold-mayot",
+      "player_id": "tennis-player-timofey-skatov",
+      "pressure_snapshot_id": "9a0ead9d0ad3cce96b04c921bf7726661a2217f1",
+      "snapshot_date": "2026-01-09",
+      "source_snapshot_ids": [
+        "d9cc2be44014101f7cf369b3b0997876875a3435"
+      ],
+      "surface": "Hard"
+    },
+    {
+      "bp_converted_attempts": 1,
+      "bp_converted_made": 0,
+      "bp_converted_pct": 0.0,
+      "bp_saved_attempts": 11,
+      "bp_saved_made": 9,
+      "bp_saved_pct": 81.8182,
+      "break_pct": 21.1538,
+      "hold_pct": 71.2,
+      "match_id": "tl-2026-01-13-australian-open-melbourne-2026-jason-murray-kubler-vs-harold-mayot",
+      "player_id": "tennis-player-harold-mayot",
+      "pressure_snapshot_id": "b1cef66b2477c20254675c63688b76faa60fa2f2",
+      "snapshot_date": "2026-01-13",
+      "source_snapshot_ids": [
+        "8d45257f017154f0b4de74af170820c0152f97d8"
+      ],
+      "surface": "Hard"
+    },
+    {
+      "bp_converted_attempts": 1,
+      "bp_converted_made": 0,
+      "bp_converted_pct": 0.0,
+      "bp_saved_attempts": 12,
+      "bp_saved_made": 11,
+      "bp_saved_pct": 91.6667,
+      "break_pct": 21.5385,
+      "hold_pct": 79.4,
+      "match_id": "tl-2026-04-01-grand-prix-hassan-ii-marrakech-2026-marco-trungelliti-vs-kamil-majchrzak",
+      "player_id": "tennis-player-kamil-majchrzak",
+      "pressure_snapshot_id": "8468a9e05d073434843b20aab9dcaa6f7c1440f5",
+      "snapshot_date": "2026-04-01",
+      "source_snapshot_ids": [
+        "bc694e2ee42ebde764e3452605faf14cb7b120f1"
+      ],
+      "surface": "Clay"
+    },
+    {
+      "bp_converted_attempts": 6,
+      "bp_converted_made": 1,
+      "bp_converted_pct": 16.6667,
+      "bp_saved_attempts": 7,
+      "bp_saved_made": 3,
+      "bp_saved_pct": 42.8571,
+      "break_pct": 38.806,
+      "hold_pct": 52.3,
+      "match_id": "tl-2026-04-14-barcelona-open-banc-sabadell-barcelona-2026-carlos-alcaraz-vs-otto-virtanen",
+      "player_id": "tennis-player-otto-virtanen",
+      "pressure_snapshot_id": "ec74da5b0b6a2e8a34fd6b50506b401e17ede0ad",
+      "snapshot_date": "2026-04-14",
+      "source_snapshot_ids": [
+        "936558e0f0384df196f34b712948cc9459ee7090"
+      ],
+      "surface": "Clay"
+    },
+    {
+      "bp_converted_attempts": 9,
+      "bp_converted_made": 2,
+      "bp_converted_pct": 22.2222,
+      "bp_saved_attempts": 12,
+      "bp_saved_made": 7,
+      "bp_saved_pct": 58.3333,
+      "break_pct": 41.9355,
+      "hold_pct": 48.3,
+      "match_id": "tl-2026-04-23-rome-challenger-2026-andrea-guerrieri-vs-arthur-fery",
+      "player_id": "tennis-player-arthur-fery",
+      "pressure_snapshot_id": "e0522cf90eae12b50701b516247b1434fd46c018",
+      "snapshot_date": "2026-04-23",
+      "source_snapshot_ids": [
+        "fa2a0f79251a3f7c95bd4270a82f12854e61c530"
+      ],
+      "surface": "Clay"
+    }
+  ],
+  "sample_source_snapshots": [
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-pedro-martinez-portero-vs-arthur-fery-french-open-paris-2026-49554eef39d8.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "0010157e2a0b54cd8af7756d02745a50a1b0d948",
+      "source_url": "https://www.tennislive.net/atp/match/pedro-martinez-portero-VS-arthur-fery/french-open-paris-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/wta-match-tamara-korpatsch-vs-sara-sorribes-tormo-french-open-paris-2026-df6fe1834baf.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "001f6060c6cb773dc9c6d50be1432e115e8477cf",
+      "source_url": "https://www.tennislive.net/wta/match/tamara-korpatsch-VS-sara-sorribes-tormo/french-open-paris-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-soon-woo-kwon-vs-bu-yunchaokete-wuxi-challenger-2026-6049068013cf.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "006120f97d71d9794e60b938993bb5b62e692a02",
+      "source_url": "https://www.tennislive.net/atp/match/soon-woo-kwon-VS-bu-yunchaokete/wuxi-challenger-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-hynek-barton-vs-norbert-gombos-prostejov-challenger-2026-d00da26971b7.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "0498ea5d54ca190dd33748e8c4604250a9a56878",
+      "source_url": "https://www.tennislive.net/atp/match/hynek-barton-VS-norbert-gombos/prostejov-challenger-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/wta-match-joanna-garland-vs-britt-du-pree-libema-open-s-hertogenbosch-2026-3b75cc469839.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "056fffa6d674dd3fcae3ab6c34d7b09dd332ad22",
+      "source_url": "https://www.tennislive.net/wta/match/joanna-garland-VS-britt-du-pree/libema-open-s-hertogenbosch-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-liam-draxl-vs-braden-shick-tyler-challenger-2026-183b3bba012a.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "076ddd773693b17afa9a05a43ae9773ea234519e",
+      "source_url": "https://www.tennislive.net/atp/match/liam-draxl-VS-braden-shick/tyler-challenger-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/wta-match-iva-jovic-vs-alexandra-eala-french-open-paris-2026-fa55e217bb6f.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "08a65962f97e01021c8bbc3e4e5556e89bfdeee3",
+      "source_url": "https://www.tennislive.net/wta/match/iva-jovic-VS-alexandra-eala/french-open-paris-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/wta-match-sara-sorribes-tormo-vs-maria-timofeeva-makarska-open-makarska-2026-f3cbfa80c688.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "09fe742c76b509d791ff1799984bb1939a5b80c2",
+      "source_url": "https://www.tennislive.net/wta/match/sara-sorribes-tormo-VS-maria-timofeeva/makarska-open-makarska-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/wta-match-andrea-lazaro-garcia-vs-tyra-caterina-grant-w75-zaragoza-2026-90ebd9d55735.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "0af31ff500d9c32f234abb8f71ff84070c91aa54",
+      "source_url": "https://www.tennislive.net/wta/match/andrea-lazaro-garcia-VS-tyra-caterina-grant/w75-zaragoza-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-adam-walton-vs-timo-legout-tyler-challenger-2026-3ddb43cccbc2.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "0b314b646fa0f7dd2402a83362c30e051698373b",
+      "source_url": "https://www.tennislive.net/atp/match/adam-walton-VS-timo-legout/tyler-challenger-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-andre-ilagan-vs-yuta-shimizu-tyler-challenger-2026-45f7dea9c212.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "0b67b3475fb5828ebb18546a66362931536e1e27",
+      "source_url": "https://www.tennislive.net/atp/match/andre-ilagan-VS-yuta-shimizu/tyler-challenger-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-bu-yunchaokete-vs-ognjen-milic-wuxi-challenger-2026-ed90d708f5cf.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "0d1f15d7c3349d55202402005115297a24b97fc4",
+      "source_url": "https://www.tennislive.net/atp/match/bu-yunchaokete-VS-ognjen-milic/wuxi-challenger-2026/",
+      "status": "captured"
+    }
+  ],
+  "script": "data-migration/scripts/promote_tennis_tennislive_pressure.py",
+  "selected_player_ids": 54,
+  "service_pressure_rows": 304,
+  "slate_date": "2026-06-06",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_player_matches_loaded": 554,
+  "source_player_matches_selected": 304,
+  "source_stat_rows": 4432,
+  "upserted_service_pressure_rows": 304
+}

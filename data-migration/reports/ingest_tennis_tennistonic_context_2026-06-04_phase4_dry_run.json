@@ -1,0 +1,44 @@
+{
+  "after_counts": {
+    "match_context_snapshots": 540,
+    "player_form_snapshots": 3531,
+    "source_snapshots": 3957,
+    "tennis_h2h_snapshots": 23
+  },
+  "before_counts": {
+    "match_context_snapshots": 494,
+    "player_form_snapshots": 3488,
+    "source_snapshots": 3934,
+    "tennis_h2h_snapshots": 23
+  },
+  "clay_context": "web/src/lib/day-2026-06-04-tennis-clay-context.generated.json",
+  "clay_matches": 23,
+  "completeness_status": "inserted_with_unlinked_players",
+  "date": "2026-06-04",
+  "dry_run": true,
+  "error": null,
+  "error_rows": 0,
+  "generated_at": "2026-06-07T05:00:23.239378+00:00",
+  "linked_matches": 23,
+  "match_context_snapshots": 46,
+  "missing_artifacts": [],
+  "ok": true,
+  "opponent_quality": "web/src/lib/day-2026-06-04-tennis-opponent-quality.generated.json",
+  "opponent_quality_matches": 23,
+  "original_provider": "TennisTonic H2H via Chrome DOM",
+  "player_form_snapshots": 43,
+  "row_count_delta": {
+    "match_context_snapshots": 46,
+    "player_form_snapshots": 43,
+    "source_snapshots": 23,
+    "tennis_h2h_snapshots": 0
+  },
+  "script": "data-migration/scripts/ingest_tennis_tennistonic_context.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_family": "supplemental-context",
+  "source_name": "tennis_supplemental_context",
+  "source_snapshots": 23,
+  "status": "success",
+  "tennis_h2h_snapshots": 23,
+  "unlinked_player_rows": 3
+}

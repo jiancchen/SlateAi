@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DB_PATH = ROOT / "data-private" / "warehouse" / "sports" / "tennis" / "sql-tennis.db"
 REFERENCE_DIR = ROOT / "data-private" / "reference" / "tennis" / "tennislive"
 SOURCE_NAME = "tennislive"
+SOURCE_FAMILY = "player-context"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125 Safari/537.36"
 
 
@@ -266,7 +267,58 @@ def get_connection(path: Path = DB_PATH) -> sqlite3.Connection:
 def ensure_tennislive_schema(con: sqlite3.Connection) -> None:
     migration = ROOT / "pipeline" / "tennis" / "warehouse" / "migrations" / "TEN-W2" / "001_tennislive_source_tables.sql"
     con.executescript(migration.read_text(encoding="utf-8"))
+    ensure_tennislive_fetch_policy(con)
     con.commit()
+
+
+def table_exists(con: sqlite3.Connection, table_name: str) -> bool:
+    return con.execute(
+        "select 1 from sqlite_master where type in ('table','view') and name = ?",
+        (table_name,),
+    ).fetchone() is not None
+
+
+def ensure_tennislive_fetch_policy(con: sqlite3.Connection) -> None:
+    if not table_exists(con, "source_fetch_policies"):
+        return
+    now = utc_now()
+    con.execute(
+        """
+        insert into source_fetch_policies(
+          source_fetch_policy_id, sport, source_name, source_family, run_rule,
+          default_ttl_hours, max_stale_hours, required_for_prediction,
+          env_ttl_key, env_force_key, env_disable_key, config_path,
+          created_at, updated_at, notes
+        ) values (
+          'tennis:tennislive', 'tennis', ?, ?, 'fetch_if_stale',
+          12.0, 48.0, 1,
+          'TENNIS_TENNISLIVE_TTL_HOURS',
+          'TENNIS_TENNISLIVE_FORCE_FETCH',
+          'TENNIS_TENNISLIVE_DISABLE_FETCH',
+          'development-docs/tennis/runbooks/ingestion_health_remediation.md',
+          ?, ?, ?
+        )
+        on conflict(sport, source_name) do update set
+          source_family = excluded.source_family,
+          run_rule = excluded.run_rule,
+          default_ttl_hours = excluded.default_ttl_hours,
+          max_stale_hours = excluded.max_stale_hours,
+          required_for_prediction = excluded.required_for_prediction,
+          env_ttl_key = excluded.env_ttl_key,
+          env_force_key = excluded.env_force_key,
+          env_disable_key = excluded.env_disable_key,
+          config_path = excluded.config_path,
+          updated_at = excluded.updated_at,
+          notes = excluded.notes
+        """,
+        (
+            SOURCE_NAME,
+            SOURCE_FAMILY,
+            now,
+            now,
+            "TennisLive player and match pages feeding profiles, recent form, source-native match links, match stats, and replay rows.",
+        ),
+    )
 
 
 def store_snapshot(con: sqlite3.Connection, *, url: str, html_text: str, source_date: str | None, page_kind: str) -> tuple[str, str, Path, bool]:
@@ -292,13 +344,214 @@ def store_snapshot(con: sqlite3.Connection, *, url: str, html_text: str, source_
     return snapshot_id, digest, local_path, already is not None
 
 
-def upsert_player(con: sqlite3.Connection, name: str, tour: str | None = None, country: str | None = None) -> str:
+def store_failed_snapshot(
+    con: sqlite3.Connection,
+    *,
+    url: str,
+    source_date: str | None,
+    page_kind: str,
+    error: Exception | str,
+) -> str:
+    error_text = str(error)
+    content_hash = hashlib.sha256(error_text.encode("utf-8")).hexdigest()
+    snapshot_id = stable_id("source-snapshot-failed", SOURCE_NAME, url, source_date or "", page_kind)
+    con.execute(
+        """
+        insert into source_snapshots(
+          source_snapshot_id, source_name, sport, source_url, local_path,
+          captured_at, source_date, content_hash, content_type, status, notes
+        )
+        values (?, ?, 'tennis', ?, null, ?, ?, ?, 'text/plain', 'failed', ?)
+        on conflict(source_snapshot_id)
+        do update set
+          source_url = excluded.source_url,
+          captured_at = excluded.captured_at,
+          source_date = excluded.source_date,
+          content_hash = excluded.content_hash,
+          content_type = excluded.content_type,
+          status = excluded.status,
+          notes = excluded.notes
+        """,
+        (
+            snapshot_id,
+            SOURCE_NAME,
+            url,
+            utc_now(),
+            source_date,
+            content_hash,
+            compact_json({"page_kind": page_kind, "error": error_text[:2000]}),
+        ),
+    )
+    return snapshot_id
+
+
+def canonicalize_player_id(con: sqlite3.Connection, player_id: str | None) -> str | None:
+    if not player_id or not table_exists(con, "player_identity_redirects"):
+        return player_id
+    current = str(player_id)
+    seen: set[str] = set()
+    while current and current not in seen:
+        seen.add(current)
+        row = con.execute(
+            """
+            select to_player_id
+            from player_identity_redirects
+            where sport = 'tennis'
+              and from_player_id = ?
+              and redirect_status = 'active'
+            order by confidence desc, updated_at desc
+            limit 1
+            """,
+            (current,),
+        ).fetchone()
+        if not row or not row["to_player_id"]:
+            return current
+        current = str(row["to_player_id"])
+    return current
+
+
+def active_player_row(con: sqlite3.Connection, player_id: str | None) -> sqlite3.Row | None:
+    if not player_id:
+        return None
+    return con.execute(
+        "select player_id, name, canonical_name, active from players where player_id = ? and active != 0",
+        (player_id,),
+    ).fetchone()
+
+
+def expected_player_id(name_key: str) -> str:
+    return f"tennis-player-{name_key.replace(' ', '-')}"
+
+
+def player_from_tennislive_alias(con: sqlite3.Connection, source_entity_id: str | None) -> str | None:
+    if not source_entity_id or not table_exists(con, "entity_aliases"):
+        return None
+    rows = con.execute(
+        """
+        select canonical_entity_id
+        from entity_aliases
+        where entity_type = 'player'
+          and source_name = ?
+          and source_entity_id = ?
+        order by confidence desc, last_seen_at desc
+        """,
+        (SOURCE_NAME, source_entity_id),
+    ).fetchall()
+    for row in rows:
+        canonical_id = canonicalize_player_id(con, row["canonical_entity_id"])
+        if active_player_row(con, canonical_id):
+            return canonical_id
+    return None
+
+
+def player_from_registry_name(con: sqlite3.Connection, name_key: str) -> str | None:
+    if not name_key or not table_exists(con, "player_identity_registry"):
+        return None
+    rows = con.execute(
+        """
+        select registry.player_id, identity.name, identity.canonical_name
+        from player_identity_registry registry
+        join players identity on identity.player_id = registry.player_id
+        where registry.sport = 'tennis'
+          and registry.normalized_name = ?
+          and registry.active != 0
+          and identity.active != 0
+        order by
+          case when registry.player_id = ? then 0 else 1 end,
+          registry.trusted_alias_count desc,
+          registry.player_id
+        """,
+        (name_key, expected_player_id(name_key)),
+    ).fetchall()
+    if not rows:
+        return None
+    expected_id = expected_player_id(name_key)
+    for row in rows:
+        if row["player_id"] == expected_id:
+            return row["player_id"]
+    if len(rows) == 1:
+        return rows[0]["player_id"]
+    ascii_rows = [
+        row
+        for row in rows
+        if normalize_name(row["name"]) == name_key and normalize_name(row["canonical_name"]) == name_key
+    ]
+    if len(ascii_rows) == 1:
+        return ascii_rows[0]["player_id"]
+    return rows[0]["player_id"]
+
+
+def player_from_existing_players(con: sqlite3.Connection, name_key: str, include_inactive: bool = False) -> str | None:
+    rows = con.execute(
+        """
+        select player_id, name, canonical_name, active
+        from players
+        order by active desc, player_id
+        """
+    ).fetchall()
+    matches = [
+        row
+        for row in rows
+        if (include_inactive or row["active"] != 0)
+        and (normalize_name(row["name"]) == name_key or normalize_name(row["canonical_name"]) == name_key)
+    ]
+    if not matches:
+        return None
+    expected_id = expected_player_id(name_key)
+    for row in matches:
+        canonical_id = canonicalize_player_id(con, row["player_id"])
+        if canonical_id == expected_id and active_player_row(con, canonical_id):
+            return canonical_id
+    for row in matches:
+        canonical_id = canonicalize_player_id(con, row["player_id"])
+        if active_player_row(con, canonical_id):
+            return canonical_id
+    return None
+
+
+def resolve_player_id(
+    con: sqlite3.Connection,
+    name: str,
+    *,
+    source_entity_id: str | None = None,
+) -> str | None:
     name_key = normalize_name(name)
-    for row in con.execute("select player_id, name, canonical_name from players").fetchall():
-        if normalize_name(row["name"]) == name_key or normalize_name(row["canonical_name"]) == name_key:
-            player_id = row["player_id"]
-            ensure_player_registry(con, player_id, name, tour, country)
-            return player_id
+    if not name_key:
+        return None
+    for candidate in (
+        player_from_tennislive_alias(con, source_entity_id),
+        player_from_registry_name(con, name_key),
+        active_player_row(con, expected_player_id(name_key))["player_id"] if active_player_row(con, expected_player_id(name_key)) else None,
+        player_from_existing_players(con, name_key),
+        player_from_existing_players(con, name_key, include_inactive=True),
+    ):
+        canonical_id = canonicalize_player_id(con, candidate)
+        if active_player_row(con, canonical_id):
+            return canonical_id
+    return None
+
+
+def upsert_player(
+    con: sqlite3.Connection,
+    name: str,
+    tour: str | None = None,
+    country: str | None = None,
+    source_entity_id: str | None = None,
+) -> str:
+    name_key = normalize_name(name)
+    resolved_player_id = resolve_player_id(con, name, source_entity_id=source_entity_id)
+    if resolved_player_id:
+        ensure_player_registry(con, resolved_player_id, name, tour, country)
+        con.execute(
+            """
+            update players
+            set tour = coalesce(tour, ?),
+                country = coalesce(country, ?)
+            where player_id = ?
+            """,
+            (tour, country, resolved_player_id),
+        )
+        return resolved_player_id
     player_id = f"tlp-{stable_id('tennis-player', name_key, length=24)}"
     con.execute(
         """
@@ -906,7 +1159,13 @@ def ingest_player(con: sqlite3.Connection, url: str, max_links: int, max_matches
     if not profile.get("name"):
         raise ValueError(f"Could not parse TennisLive player profile from {url}")
     snapshot_id, digest, _, already = store_snapshot(con, url=url, html_text=html_text, source_date=None, page_kind="player")
-    player_id = upsert_player(con, profile["name"], "ATP" if "/atp/" in url else "WTA" if "/wta/" in url else None, profile.get("country"))
+    player_id = upsert_player(
+        con,
+        profile["name"],
+        "ATP" if "/atp/" in url else "WTA" if "/wta/" in url else None,
+        profile.get("country"),
+        source_entity_id=url,
+    )
     upsert_entity_alias(
         con,
         canonical_entity_id=player_id,
@@ -1013,8 +1272,12 @@ def ingest_player(con: sqlite3.Connection, url: str, max_links: int, max_matches
         )
     for link in [item for item in links if has_completed_score(item)][:max_matches]:
         link_id = link_ids[link["source_match_url"]]
-        existing = con.execute("select last_content_hash from tennislive_match_sources where source_match_url = ?", (link["source_match_url"],)).fetchone()
+        existing = con.execute("select match_id, last_content_hash from tennislive_match_sources where source_match_url = ?", (link["source_match_url"],)).fetchone()
         if existing and not force:
+            con.execute(
+                "update tennislive_player_match_links set match_id = ?, last_ingested_at = ?, ingest_status = ? where tennislive_match_link_id = ?",
+                (existing["match_id"], utc_now(), "normalized", link_id),
+            )
             skipped += 1
             continue
         try:
@@ -1025,9 +1288,16 @@ def ingest_player(con: sqlite3.Connection, url: str, max_links: int, max_matches
             )
             fetched += 1
         except Exception as error:
+            failed_snapshot_id = store_failed_snapshot(
+                con,
+                url=link["source_match_url"],
+                source_date=link.get("match_date"),
+                page_kind="match",
+                error=error,
+            )
             con.execute(
                 "update tennislive_player_match_links set last_ingested_at = ?, ingest_status = ?, raw_json = ? where tennislive_match_link_id = ?",
-                (utc_now(), "fetch_failed", compact_json({**link, "error": str(error)}), link_id),
+                (utc_now(), "fetch_failed", compact_json({**link, "error": str(error), "failed_source_snapshot_id": failed_snapshot_id}), link_id),
             )
             failed += 1
     return {
@@ -1256,6 +1526,155 @@ def ingest_match(con: sqlite3.Connection, url: str, force: bool = False) -> dict
     }
 
 
+def sql_path(path: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(ROOT))
+    except ValueError:
+        return str(path)
+
+
+def fetch_status_counts(player_results: list[dict[str, Any]], match_results: list[dict[str, Any]]) -> dict[str, int]:
+    player_attempts = len(player_results)
+    player_successes = sum(1 for row in player_results if row.get("status") == "ok")
+    player_failures = player_attempts - player_successes
+    nested_match_fetched = sum(int(row.get("matches_fetched") or 0) for row in player_results)
+    nested_match_skipped = sum(int(row.get("matches_skipped_existing") or 0) for row in player_results)
+    nested_match_failures = sum(int(row.get("matches_failed") or 0) for row in player_results)
+    direct_match_attempts = len(match_results)
+    direct_match_successes = sum(1 for row in match_results if row.get("status") == "ok")
+    direct_match_failures = direct_match_attempts - direct_match_successes
+    match_attempts = direct_match_attempts + nested_match_fetched + nested_match_skipped + nested_match_failures
+    match_successes = direct_match_successes + nested_match_fetched + nested_match_skipped
+    match_failures = direct_match_failures + nested_match_failures
+    return {
+        "player_attempts": player_attempts,
+        "player_successes": player_successes,
+        "player_failures": player_failures,
+        "match_attempts": match_attempts,
+        "match_successes": match_successes,
+        "match_failures": match_failures,
+        "attempted_pages": player_attempts + match_attempts,
+        "successful_pages": player_successes + match_successes,
+        "failed_pages": player_failures + match_failures,
+    }
+
+
+def update_fetch_status(
+    con: sqlite3.Connection,
+    *,
+    date: str,
+    started_at: str,
+    player_results: list[dict[str, Any]],
+    match_results: list[dict[str, Any]],
+    report_path: Path,
+    force: bool,
+) -> dict[str, Any]:
+    now = utc_now()
+    counts = fetch_status_counts(player_results, match_results)
+    if counts["attempted_pages"] == 0:
+        status = "missing"
+        completeness_status = "missing"
+    elif counts["successful_pages"] == 0:
+        status = "failed"
+        completeness_status = "missing"
+    elif counts["failed_pages"] > 0:
+        status = "partial"
+        completeness_status = "partial"
+    else:
+        status = "success"
+        completeness_status = "complete"
+    failures = [
+        *[row for row in player_results if row.get("status") == "failed"],
+        *[row for row in match_results if row.get("status") == "failed"],
+    ]
+    details = {
+        "adapter": "ingest_tennis_tennislive_to_typed",
+        "force": force,
+        "report_path": sql_path(report_path),
+        "counts": counts,
+        "failures": failures[:50],
+        "note": "Network fetch and typed normalization for TennisLive player and match pages.",
+    }
+    run_id = f"source-fetch-{SOURCE_NAME}-{date}-{now.replace(':', '-').replace('.', '-')}"
+    con.execute(
+        """
+        insert into source_fetch_runs (
+          source_fetch_run_id, sport, source_name, source_family, source_date,
+          run_reason, requested_url, cache_status, cache_ttl_hours, previous_success_at,
+          status, completeness_status, expected_item_count, actual_item_count,
+          missing_item_count, source_snapshot_id, started_at, finished_at,
+          error_code, error_message, details_json
+        ) values (?, 'tennis', ?, ?, ?, 'network_fetch',
+          null, ?, 12.0,
+          (select last_success_at from source_fetch_status where sport='tennis' and source_name=? and source_date=?),
+          ?, ?, ?, ?, ?, null, ?, ?, ?, ?, ?)
+        """,
+        (
+            run_id,
+            SOURCE_NAME,
+            SOURCE_FAMILY,
+            date,
+            "forced" if force else "refetched",
+            SOURCE_NAME,
+            date,
+            status,
+            completeness_status,
+            counts["attempted_pages"],
+            counts["successful_pages"],
+            counts["failed_pages"],
+            started_at,
+            now,
+            "tennislive_fetch_failed" if status == "failed" else None,
+            "; ".join(str(row.get("error")) for row in failures[:3])[:500] if failures else None,
+            compact_json(details),
+        ),
+    )
+    con.execute(
+        """
+        insert into source_fetch_status (
+          source_fetch_status_id, sport, source_name, source_family, source_date,
+          last_fetch_run_id, last_attempt_at, last_success_at, last_status,
+          last_completeness_status, cache_valid_until, expected_item_count,
+          actual_item_count, missing_item_count, unresolved_count, updated_at, notes
+        ) values (?, 'tennis', ?, ?, ?, ?, ?, ?,
+          ?, ?, datetime(?, '+12 hours'), ?, ?, ?, ?, ?, ?)
+        on conflict (sport, source_name, source_date) do update set
+          source_family = excluded.source_family,
+          last_fetch_run_id = excluded.last_fetch_run_id,
+          last_attempt_at = excluded.last_attempt_at,
+          last_success_at = excluded.last_success_at,
+          last_status = excluded.last_status,
+          last_completeness_status = excluded.last_completeness_status,
+          cache_valid_until = excluded.cache_valid_until,
+          expected_item_count = excluded.expected_item_count,
+          actual_item_count = excluded.actual_item_count,
+          missing_item_count = excluded.missing_item_count,
+          unresolved_count = excluded.unresolved_count,
+          updated_at = excluded.updated_at,
+          notes = excluded.notes
+        """,
+        (
+            f"tennis:{SOURCE_NAME}:{date}",
+            SOURCE_NAME,
+            SOURCE_FAMILY,
+            date,
+            run_id,
+            now,
+            now if counts["successful_pages"] > 0 else None,
+            status,
+            completeness_status,
+            now,
+            counts["attempted_pages"],
+            counts["successful_pages"],
+            counts["failed_pages"],
+            counts["failed_pages"],
+            now,
+            compact_json(details),
+        ),
+    )
+    return {"run_id": run_id, "status": status, "completeness_status": completeness_status, **counts}
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Fetch and normalize TennisLive player/match pages into sql-tennis.db.")
     parser.add_argument("--date", default=None, help="Optional slate date for report context.")
@@ -1302,25 +1721,53 @@ def main() -> None:
             con.commit()
         except Exception as error:
             con.rollback()
-            player_results.append({"status": "failed", "source_player_url": url, "error": str(error)})
+            failed_snapshot_id = store_failed_snapshot(
+                con,
+                url=url,
+                source_date=args.date,
+                page_kind="player",
+                error=error,
+            )
+            con.commit()
+            player_results.append({"status": "failed", "source_player_url": url, "source_snapshot_id": failed_snapshot_id, "error": str(error)})
     for url in args.match_url:
         try:
             match_results.append({"status": "ok", **ingest_match(con, url, force=args.force)})
             con.commit()
         except Exception as error:
             con.rollback()
-            match_results.append({"status": "failed", "source_match_url": url, "error": str(error)})
+            failed_snapshot_id = store_failed_snapshot(
+                con,
+                url=url,
+                source_date=args.date,
+                page_kind="match",
+                error=error,
+            )
+            con.commit()
+            match_results.append({"status": "failed", "source_match_url": url, "source_snapshot_id": failed_snapshot_id, "error": str(error)})
+    status_date = args.date or started[:10]
+    fetch_status = update_fetch_status(
+        con,
+        date=status_date,
+        started_at=started,
+        player_results=player_results,
+        match_results=match_results,
+        report_path=args.report,
+        force=args.force,
+    )
+    con.commit()
     report = {
         "ok": True,
         "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
         "source_db": str(args.source_db),
-        "date": args.date,
+        "date": status_date,
         "started_at": started,
         "finished_at": utc_now(),
         "player_urls": args.player_url,
         "match_urls": args.match_url,
         "max_links": max_links,
         "max_matches": args.max_matches,
+        "fetch_status": fetch_status,
         "player_results": player_results,
         "match_results": match_results,
         "failures": [

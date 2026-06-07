@@ -1,0 +1,4457 @@
+{
+  "dry_run": false,
+  "generated_at": "2026-06-07T03:14:02.853920+00:00",
+  "ok": true,
+  "parser_module": "pipeline/sources/tennis/normalization/player_identity_repair.py",
+  "report": {
+    "active_abbrev_stubs_after": 0,
+    "aliases_written": 932,
+    "apply": true,
+    "dry_run": false,
+    "family": "player_identity_repair",
+    "full_name_duplicate_candidates": 290,
+    "full_name_duplicate_ready": 290,
+    "full_name_duplicate_ready_samples": [
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "novak djokovic",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Novak Djokovic",
+            "player_id": "tennis-player-novak-djokovic",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 3,
+              "match_stat_rows": 1472,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 20,
+              "replay_games": 140,
+              "replay_points": 327,
+              "service_pressure_snapshots": 4,
+              "tennislive_form_chart_points": 20,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 3853,
+            "stable_reference_score": 3893
+          },
+          {
+            "active": 1,
+            "canonical_name": "novak djokovi",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Novak Djokovi\u0107",
+            "player_id": "tennis-player-novak-djokovi",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-novak-djokovic",
+        "from_player_id": "tennis-player-novak-djokovi",
+        "source_display_name": "Novak Djokovi\u0107",
+        "to_player_id": "tennis-player-novak-djokovic"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "felix auger aliassime",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Felix Auger-Aliassime",
+            "player_id": "tennis-player-felix-auger-aliassime",
+            "reference_counts": {
+              "market_contracts": 9,
+              "market_price_ticks": 6,
+              "market_snapshots": 17,
+              "match_players": 6,
+              "match_stat_rows": 710,
+              "rankings": 7,
+              "recent_matches": 9,
+              "replay_games": 172,
+              "replay_points": 537,
+              "service_pressure_snapshots": 3,
+              "tennislive_form_chart_points": 56,
+              "tennislive_h2h_source_rows": 3,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 2662,
+            "stable_reference_score": 2806
+          },
+          {
+            "active": 1,
+            "canonical_name": "f lix auger aliassime",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "F\u00e9lix Auger-Aliassime",
+            "player_id": "tennis-player-f-lix-auger-aliassime",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-felix-auger-aliassime",
+        "from_player_id": "tennis-player-f-lix-auger-aliassime",
+        "source_display_name": "F\u00e9lix Auger-Aliassime",
+        "to_player_id": "tennis-player-felix-auger-aliassime"
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "jiri lehecka",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Jiri Lehecka",
+            "player_id": "tennis-player-jiri-lehecka",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 182,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 10,
+              "replay_games": 29,
+              "replay_points": 90,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 26,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 712,
+            "stable_reference_score": 710
+          },
+          {
+            "active": 1,
+            "canonical_name": "ji lehe ka",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Ji\u0159\u00ed Lehe\u010dka",
+            "player_id": "tennis-player-ji-lehe-ka",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "jiri lehe ka",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Jiri Lehe\u010dka",
+            "player_id": "tennis-player-jiri-lehe-ka",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-jiri-lehecka",
+        "from_player_id": "tennis-player-ji-lehe-ka",
+        "source_display_name": "Ji\u0159\u00ed Lehe\u010dka",
+        "to_player_id": "tennis-player-jiri-lehecka"
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "jiri lehecka",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Jiri Lehecka",
+            "player_id": "tennis-player-jiri-lehecka",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 182,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 10,
+              "replay_games": 29,
+              "replay_points": 90,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 26,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 712,
+            "stable_reference_score": 710
+          },
+          {
+            "active": 1,
+            "canonical_name": "ji lehe ka",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Ji\u0159\u00ed Lehe\u010dka",
+            "player_id": "tennis-player-ji-lehe-ka",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "jiri lehe ka",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Jiri Lehe\u010dka",
+            "player_id": "tennis-player-jiri-lehe-ka",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-jiri-lehecka",
+        "from_player_id": "tennis-player-jiri-lehe-ka",
+        "source_display_name": "Jiri Lehe\u010dka",
+        "to_player_id": "tennis-player-jiri-lehecka"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "francisco cerundolo",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Francisco Cerundolo",
+            "player_id": "tennis-player-francisco-cerundolo",
+            "reference_counts": {
+              "h2h_matches": 2,
+              "market_contracts": 5,
+              "market_price_ticks": 3,
+              "market_snapshots": 8,
+              "match_players": 3,
+              "match_stat_rows": 2676,
+              "player_form_snapshots": 27,
+              "rankings": 7,
+              "recent_matches": 31,
+              "replay_games": 126,
+              "replay_points": 323,
+              "service_pressure_snapshots": 5,
+              "tennislive_form_chart_points": 39,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 6442,
+            "stable_reference_score": 6445
+          },
+          {
+            "active": 1,
+            "canonical_name": "francisco cer ndolo",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Francisco Cer\u00fandolo",
+            "player_id": "tennis-player-francisco-cer-ndolo",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-francisco-cerundolo",
+        "from_player_id": "tennis-player-francisco-cer-ndolo",
+        "source_display_name": "Francisco Cer\u00fandolo",
+        "to_player_id": "tennis-player-francisco-cerundolo"
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Jakub Mensik",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Jakub Mensik",
+            "player_id": "tennis-player-jakub-mensik",
+            "reference_counts": {
+              "market_contracts": 10,
+              "market_price_ticks": 4,
+              "market_snapshots": 31,
+              "match_players": 13,
+              "match_stat_rows": 5302,
+              "player_form_snapshots": 38,
+              "rankings": 7,
+              "recent_matches": 95,
+              "replay_games": 278,
+              "replay_points": 1126,
+              "service_pressure_snapshots": 16,
+              "tennislive_form_chart_points": 218,
+              "tennislive_h2h_source_rows": 19,
+              "tennislive_match_player_snapshots": 6,
+              "tennislive_player_match_links": 20,
+              "tennislive_player_profiles": 4,
+              "tennislive_player_sources": 1,
+              "tennislive_player_surface_records": 224,
+              "trusted_entity_aliases": 10
+            },
+            "reference_score": 13901,
+            "stable_reference_score": 13573
+          },
+          {
+            "active": 1,
+            "canonical_name": "jakub men k",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Jakub Men\u0161\u00edk",
+            "player_id": "tennis-player-jakub-men-k",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "jakub men ik",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Jakub Men\u0161ik",
+            "player_id": "tennis-player-jakub-men-ik",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-jakub-mensik",
+        "from_player_id": "tennis-player-jakub-men-k",
+        "source_display_name": "Jakub Men\u0161\u00edk",
+        "to_player_id": "tennis-player-jakub-mensik"
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Jakub Mensik",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Jakub Mensik",
+            "player_id": "tennis-player-jakub-mensik",
+            "reference_counts": {
+              "market_contracts": 10,
+              "market_price_ticks": 4,
+              "market_snapshots": 31,
+              "match_players": 13,
+              "match_stat_rows": 5302,
+              "player_form_snapshots": 38,
+              "rankings": 7,
+              "recent_matches": 95,
+              "replay_games": 278,
+              "replay_points": 1126,
+              "service_pressure_snapshots": 16,
+              "tennislive_form_chart_points": 218,
+              "tennislive_h2h_source_rows": 19,
+              "tennislive_match_player_snapshots": 6,
+              "tennislive_player_match_links": 20,
+              "tennislive_player_profiles": 4,
+              "tennislive_player_sources": 1,
+              "tennislive_player_surface_records": 224,
+              "trusted_entity_aliases": 10
+            },
+            "reference_score": 13901,
+            "stable_reference_score": 13573
+          },
+          {
+            "active": 1,
+            "canonical_name": "jakub men k",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Jakub Men\u0161\u00edk",
+            "player_id": "tennis-player-jakub-men-k",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "jakub men ik",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Jakub Men\u0161ik",
+            "player_id": "tennis-player-jakub-men-ik",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-jakub-mensik",
+        "from_player_id": "tennis-player-jakub-men-ik",
+        "source_display_name": "Jakub Men\u0161ik",
+        "to_player_id": "tennis-player-jakub-mensik"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "tomas martin etcheverry",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Tomas Martin Etcheverry",
+            "player_id": "tennis-player-tomas-martin-etcheverry",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 186,
+              "rankings": 7,
+              "recent_matches": 9,
+              "replay_games": 32,
+              "replay_points": 77,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 25,
+              "trusted_entity_aliases": 1
+            },
+            "reference_score": 591,
+            "stable_reference_score": 609
+          },
+          {
+            "active": 1,
+            "canonical_name": "tom s mart n etcheverry",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Tom\u00e1s Mart\u00edn Etcheverry",
+            "player_id": "tennis-player-tom-s-mart-n-etcheverry",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-tomas-martin-etcheverry",
+        "from_player_id": "tennis-player-tom-s-mart-n-etcheverry",
+        "source_display_name": "Tom\u00e1s Mart\u00edn Etcheverry",
+        "to_player_id": "tennis-player-tomas-martin-etcheverry"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "rafael jodar",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Rafael Jodar",
+            "player_id": "tennis-player-rafael-jodar",
+            "reference_counts": {
+              "market_contracts": 9,
+              "market_price_ticks": 3,
+              "market_snapshots": 18,
+              "match_players": 6,
+              "match_stat_rows": 3682,
+              "player_form_snapshots": 38,
+              "rankings": 7,
+              "recent_matches": 105,
+              "replay_games": 195,
+              "replay_points": 495,
+              "service_pressure_snapshots": 15,
+              "tennislive_form_chart_points": 86,
+              "tennislive_h2h_source_rows": 1,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 9
+            },
+            "reference_score": 9373,
+            "stable_reference_score": 9324
+          },
+          {
+            "active": 1,
+            "canonical_name": "rafael j dar",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Rafael J\u00f3dar",
+            "player_id": "tennis-player-rafael-j-dar",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-rafael-jodar",
+        "from_player_id": "tennis-player-rafael-j-dar",
+        "source_display_name": "Rafael J\u00f3dar",
+        "to_player_id": "tennis-player-rafael-jodar"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "joao fonseca",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Joao Fonseca",
+            "player_id": "tennis-player-joao-fonseca",
+            "reference_counts": {
+              "market_contracts": 9,
+              "market_price_ticks": 3,
+              "market_snapshots": 18,
+              "match_players": 6,
+              "match_stat_rows": 4900,
+              "player_form_snapshots": 34,
+              "rankings": 7,
+              "recent_matches": 93,
+              "replay_games": 192,
+              "replay_points": 569,
+              "service_pressure_snapshots": 14,
+              "tennislive_form_chart_points": 54,
+              "tennislive_h2h_source_rows": 3,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 11751,
+            "stable_reference_score": 11752
+          },
+          {
+            "active": 1,
+            "canonical_name": "jo o fonseca",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Jo\u00e3o Fonseca",
+            "player_id": "tennis-player-jo-o-fonseca",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-joao-fonseca",
+        "from_player_id": "tennis-player-jo-o-fonseca",
+        "source_display_name": "Jo\u00e3o Fonseca",
+        "to_player_id": "tennis-player-joao-fonseca"
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "tomas machac",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Tomas Machac",
+            "player_id": "tennis-player-tomas-machac",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 5,
+              "match_stat_rows": 1356,
+              "player_form_snapshots": 6,
+              "rankings": 7,
+              "recent_matches": 18,
+              "replay_games": 79,
+              "replay_points": 289,
+              "service_pressure_snapshots": 3,
+              "tennislive_form_chart_points": 92,
+              "tennislive_h2h_source_rows": 5,
+              "tennislive_match_player_snapshots": 2,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 3544,
+            "stable_reference_score": 3499
+          },
+          {
+            "active": 1,
+            "canonical_name": "tom mach",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Tom\u00e1\u0161 Mach\u00e1\u010d",
+            "player_id": "tennis-player-tom-mach",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "toma macha",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Toma\u0161 Macha\u010d",
+            "player_id": "tennis-player-toma-macha",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-tomas-machac",
+        "from_player_id": "tennis-player-tom-mach",
+        "source_display_name": "Tom\u00e1\u0161 Mach\u00e1\u010d",
+        "to_player_id": "tennis-player-tomas-machac"
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "tomas machac",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Tomas Machac",
+            "player_id": "tennis-player-tomas-machac",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 5,
+              "match_stat_rows": 1356,
+              "player_form_snapshots": 6,
+              "rankings": 7,
+              "recent_matches": 18,
+              "replay_games": 79,
+              "replay_points": 289,
+              "service_pressure_snapshots": 3,
+              "tennislive_form_chart_points": 92,
+              "tennislive_h2h_source_rows": 5,
+              "tennislive_match_player_snapshots": 2,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 3544,
+            "stable_reference_score": 3499
+          },
+          {
+            "active": 1,
+            "canonical_name": "tom mach",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Tom\u00e1\u0161 Mach\u00e1\u010d",
+            "player_id": "tennis-player-tom-mach",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "toma macha",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Toma\u0161 Macha\u010d",
+            "player_id": "tennis-player-toma-macha",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-tomas-machac",
+        "from_player_id": "tennis-player-toma-macha",
+        "source_display_name": "Toma\u0161 Macha\u010d",
+        "to_player_id": "tennis-player-tomas-machac"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "marin cilic",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Marin Cilic",
+            "player_id": "tennis-player-marin-cilic",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 1,
+              "match_stat_rows": 186,
+              "player_form_snapshots": 1,
+              "rankings": 7,
+              "recent_matches": 19,
+              "replay_games": 22,
+              "replay_points": 74,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 29,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 742,
+            "stable_reference_score": 764
+          },
+          {
+            "active": 1,
+            "canonical_name": "marin ili",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Marin \u010cili\u0107",
+            "player_id": "tennis-player-marin-ili",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-marin-cilic",
+        "from_player_id": "tennis-player-marin-ili",
+        "source_display_name": "Marin \u010cili\u0107",
+        "to_player_id": "tennis-player-marin-cilic"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "miomir kecmanovic",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Miomir Kecmanovic",
+            "player_id": "tennis-player-miomir-kecmanovic",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 2,
+              "match_stat_rows": 1302,
+              "player_form_snapshots": 4,
+              "rankings": 7,
+              "recent_matches": 22,
+              "replay_games": 63,
+              "replay_points": 152,
+              "service_pressure_snapshots": 3,
+              "tennislive_form_chart_points": 62,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 3205,
+            "stable_reference_score": 3188
+          },
+          {
+            "active": 1,
+            "canonical_name": "miomir kecmanovi",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Miomir Kecmanovi\u0107",
+            "player_id": "tennis-player-miomir-kecmanovi",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-miomir-kecmanovic",
+        "from_player_id": "tennis-player-miomir-kecmanovi",
+        "source_display_name": "Miomir Kecmanovi\u0107",
+        "to_player_id": "tennis-player-miomir-kecmanovic"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "terence atmane",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Terence Atmane",
+            "player_id": "tennis-player-terence-atmane",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 252,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 13,
+              "replay_games": 49,
+              "replay_points": 126,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 29,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 923,
+            "stable_reference_score": 915
+          },
+          {
+            "active": 1,
+            "canonical_name": "t rence atmane",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "T\u00e9rence Atmane",
+            "player_id": "tennis-player-t-rence-atmane",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-terence-atmane",
+        "from_player_id": "tennis-player-t-rence-atmane",
+        "source_display_name": "T\u00e9rence Atmane",
+        "to_player_id": "tennis-player-terence-atmane"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "fabian marozsan",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Fabian Marozsan",
+            "player_id": "tennis-player-fabian-marozsan",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 186,
+              "rankings": 7,
+              "recent_matches": 8,
+              "replay_games": 28,
+              "replay_points": 99,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 34,
+              "trusted_entity_aliases": 2
+            },
+            "reference_score": 634,
+            "stable_reference_score": 644
+          },
+          {
+            "active": 1,
+            "canonical_name": "f bi n marozs n",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "F\u00e1bi\u00e1n Marozs\u00e1n",
+            "player_id": "tennis-player-f-bi-n-marozs-n",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-fabian-marozsan",
+        "from_player_id": "tennis-player-f-bi-n-marozs-n",
+        "source_display_name": "F\u00e1bi\u00e1n Marozs\u00e1n",
+        "to_player_id": "tennis-player-fabian-marozsan"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "juan manuel cerundolo",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Juan Manuel Cerundolo",
+            "player_id": "tennis-player-juan-manuel-cerundolo",
+            "reference_counts": {
+              "market_contracts": 9,
+              "market_price_ticks": 6,
+              "market_snapshots": 17,
+              "match_players": 4,
+              "match_stat_rows": 3416,
+              "player_form_snapshots": 18,
+              "rankings": 7,
+              "recent_matches": 48,
+              "replay_games": 145,
+              "replay_points": 403,
+              "service_pressure_snapshots": 6,
+              "tennislive_form_chart_points": 41,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 8189,
+            "stable_reference_score": 8271
+          },
+          {
+            "active": 1,
+            "canonical_name": "juan manuel cer ndolo",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Juan Manuel Cer\u00fandolo",
+            "player_id": "tennis-player-juan-manuel-cer-ndolo",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-juan-manuel-cerundolo",
+        "from_player_id": "tennis-player-juan-manuel-cer-ndolo",
+        "source_display_name": "Juan Manuel Cer\u00fandolo",
+        "to_player_id": "tennis-player-juan-manuel-cerundolo"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "hamad medjedovic",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Hamad Medjedovic",
+            "player_id": "tennis-player-hamad-medjedovic",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 2,
+              "match_stat_rows": 2350,
+              "player_form_snapshots": 6,
+              "rankings": 7,
+              "recent_matches": 28,
+              "replay_games": 61,
+              "replay_points": 193,
+              "service_pressure_snapshots": 3,
+              "tennislive_form_chart_points": 46,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 5340,
+            "stable_reference_score": 5329
+          },
+          {
+            "active": 1,
+            "canonical_name": "hamad medjedovi",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Hamad Medjedovi\u0107",
+            "player_id": "tennis-player-hamad-medjedovi",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-hamad-medjedovic",
+        "from_player_id": "tennis-player-hamad-medjedovi",
+        "source_display_name": "Hamad Medjedovi\u0107",
+        "to_player_id": "tennis-player-hamad-medjedovic"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "thiago agustin tirante",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Thiago Agustin Tirante",
+            "player_id": "tennis-player-thiago-agustin-tirante",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 4,
+              "match_stat_rows": 2336,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 19,
+              "replay_games": 152,
+              "replay_points": 446,
+              "service_pressure_snapshots": 4,
+              "tennislive_form_chart_points": 79,
+              "tennislive_h2h_source_rows": 2,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 5785,
+            "stable_reference_score": 5767
+          },
+          {
+            "active": 1,
+            "canonical_name": "thiago agust n tirante",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Thiago Agust\u00edn Tirante",
+            "player_id": "tennis-player-thiago-agust-n-tirante",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-thiago-agustin-tirante",
+        "from_player_id": "tennis-player-thiago-agust-n-tirante",
+        "source_display_name": "Thiago Agust\u00edn Tirante",
+        "to_player_id": "tennis-player-thiago-agustin-tirante"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "raphael collignon",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Raphael Collignon",
+            "player_id": "tennis-player-raphael-collignon",
+            "reference_counts": {
+              "market_contracts": 5,
+              "market_price_ticks": 3,
+              "market_snapshots": 8,
+              "match_players": 6,
+              "match_stat_rows": 1926,
+              "player_form_snapshots": 23,
+              "rankings": 7,
+              "recent_matches": 39,
+              "replay_games": 179,
+              "replay_points": 640,
+              "service_pressure_snapshots": 5,
+              "tennislive_form_chart_points": 99,
+              "tennislive_h2h_source_rows": 3,
+              "tennislive_match_player_snapshots": 2,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 5424,
+            "stable_reference_score": 5373
+          },
+          {
+            "active": 1,
+            "canonical_name": "rapha l collignon",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Rapha\u00ebl Collignon",
+            "player_id": "tennis-player-rapha-l-collignon",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-raphael-collignon",
+        "from_player_id": "tennis-player-rapha-l-collignon",
+        "source_display_name": "Rapha\u00ebl Collignon",
+        "to_player_id": "tennis-player-raphael-collignon"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Sebastian Baez",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Sebastian Baez",
+            "player_id": "tennis-player-sebastian-baez",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_price_ticks": 1,
+              "market_snapshots": 5,
+              "match_players": 11,
+              "match_stat_rows": 1580,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 70,
+              "replay_games": 101,
+              "replay_points": 577,
+              "service_pressure_snapshots": 7,
+              "tennislive_form_chart_points": 250,
+              "tennislive_h2h_source_rows": 13,
+              "tennislive_match_player_snapshots": 7,
+              "tennislive_player_match_links": 25,
+              "tennislive_player_profiles": 4,
+              "tennislive_player_sources": 1,
+              "tennislive_player_surface_records": 364,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 5291,
+            "stable_reference_score": 4668
+          },
+          {
+            "active": 1,
+            "canonical_name": "sebasti n b ez",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Sebasti\u00e1n B\u00e1ez",
+            "player_id": "tennis-player-sebasti-n-b-ez",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-sebastian-baez",
+        "from_player_id": "tennis-player-sebasti-n-b-ez",
+        "source_display_name": "Sebasti\u00e1n B\u00e1ez",
+        "to_player_id": "tennis-player-sebastian-baez"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "marton fucsovics",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Marton Fucsovics",
+            "player_id": "tennis-player-marton-fucsovics",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 220,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 13,
+              "replay_games": 35,
+              "replay_points": 118,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 12,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 857,
+            "stable_reference_score": 876
+          },
+          {
+            "active": 1,
+            "canonical_name": "m rton fucsovics",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "M\u00e1rton Fucsovics",
+            "player_id": "tennis-player-m-rton-fucsovics",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-marton-fucsovics",
+        "from_player_id": "tennis-player-m-rton-fucsovics",
+        "source_display_name": "M\u00e1rton Fucsovics",
+        "to_player_id": "tennis-player-marton-fucsovics"
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Vit Kopriva",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Vit Kopriva",
+            "player_id": "tennis-player-vit-kopriva",
+            "reference_counts": {
+              "market_contracts": 7,
+              "market_price_ticks": 2,
+              "market_snapshots": 8,
+              "match_players": 9,
+              "match_stat_rows": 3414,
+              "player_form_snapshots": 19,
+              "rankings": 7,
+              "recent_matches": 126,
+              "replay_games": 173,
+              "replay_points": 726,
+              "service_pressure_snapshots": 15,
+              "tennislive_form_chart_points": 71,
+              "tennislive_h2h_source_rows": 5,
+              "tennislive_match_player_snapshots": 1,
+              "tennislive_player_match_links": 5,
+              "tennislive_player_profiles": 1,
+              "tennislive_player_sources": 1,
+              "tennislive_player_surface_records": 98,
+              "trusted_entity_aliases": 9
+            },
+            "reference_score": 9080,
+            "stable_reference_score": 8887
+          },
+          {
+            "active": 1,
+            "canonical_name": "v t kop iva",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "V\u00edt Kop\u0159iva",
+            "player_id": "tennis-player-v-t-kop-iva",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "vit kop iva",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Vit Kop\u0159iva",
+            "player_id": "tennis-player-vit-kop-iva",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-vit-kopriva",
+        "from_player_id": "tennis-player-v-t-kop-iva",
+        "source_display_name": "V\u00edt Kop\u0159iva",
+        "to_player_id": "tennis-player-vit-kopriva"
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Vit Kopriva",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Vit Kopriva",
+            "player_id": "tennis-player-vit-kopriva",
+            "reference_counts": {
+              "market_contracts": 7,
+              "market_price_ticks": 2,
+              "market_snapshots": 8,
+              "match_players": 9,
+              "match_stat_rows": 3414,
+              "player_form_snapshots": 19,
+              "rankings": 7,
+              "recent_matches": 126,
+              "replay_games": 173,
+              "replay_points": 726,
+              "service_pressure_snapshots": 15,
+              "tennislive_form_chart_points": 71,
+              "tennislive_h2h_source_rows": 5,
+              "tennislive_match_player_snapshots": 1,
+              "tennislive_player_match_links": 5,
+              "tennislive_player_profiles": 1,
+              "tennislive_player_sources": 1,
+              "tennislive_player_surface_records": 98,
+              "trusted_entity_aliases": 9
+            },
+            "reference_score": 9080,
+            "stable_reference_score": 8887
+          },
+          {
+            "active": 1,
+            "canonical_name": "v t kop iva",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "V\u00edt Kop\u0159iva",
+            "player_id": "tennis-player-v-t-kop-iva",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "vit kop iva",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Vit Kop\u0159iva",
+            "player_id": "tennis-player-vit-kop-iva",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-vit-kopriva",
+        "from_player_id": "tennis-player-vit-kop-iva",
+        "source_display_name": "Vit Kop\u0159iva",
+        "to_player_id": "tennis-player-vit-kopriva"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "aleksandar kovacevic",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Aleksandar Kovacevic",
+            "player_id": "tennis-player-aleksandar-kovacevic",
+            "reference_counts": {
+              "match_players": 4,
+              "match_stat_rows": 194,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 22,
+              "replay_games": 31,
+              "replay_points": 155,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 70,
+              "tennislive_h2h_source_rows": 1,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 942,
+            "stable_reference_score": 891
+          },
+          {
+            "active": 1,
+            "canonical_name": "aleksandar kova evi",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Aleksandar Kova\u010devi\u0107",
+            "player_id": "tennis-player-aleksandar-kova-evi",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-aleksandar-kovacevic",
+        "from_player_id": "tennis-player-aleksandar-kova-evi",
+        "source_display_name": "Aleksandar Kova\u010devi\u0107",
+        "to_player_id": "tennis-player-aleksandar-kovacevic"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "roman andres burruchaga",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Roman Andres Burruchaga",
+            "player_id": "tennis-player-roman-andres-burruchaga",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 3,
+              "match_stat_rows": 448,
+              "player_form_snapshots": 1,
+              "rankings": 7,
+              "recent_matches": 18,
+              "replay_games": 76,
+              "replay_points": 305,
+              "service_pressure_snapshots": 2,
+              "tennislive_form_chart_points": 76,
+              "tennislive_h2h_source_rows": 3,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 1689,
+            "stable_reference_score": 1687
+          },
+          {
+            "active": 1,
+            "canonical_name": "rom n andr s burruchaga",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Rom\u00e1n Andr\u00e9s Burruchaga",
+            "player_id": "tennis-player-rom-n-andr-s-burruchaga",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-roman-andres-burruchaga",
+        "from_player_id": "tennis-player-rom-n-andr-s-burruchaga",
+        "source_display_name": "Rom\u00e1n Andr\u00e9s Burruchaga",
+        "to_player_id": "tennis-player-roman-andres-burruchaga"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "dino prizmic",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Dino Prizmic",
+            "player_id": "tennis-player-dino-prizmic",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 2,
+              "match_stat_rows": 1600,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 22,
+              "replay_games": 70,
+              "replay_points": 163,
+              "service_pressure_snapshots": 3,
+              "tennislive_form_chart_points": 33,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 3820,
+            "stable_reference_score": 3822
+          },
+          {
+            "active": 1,
+            "canonical_name": "dino pri mi",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Dino Pri\u017emi\u0107",
+            "player_id": "tennis-player-dino-pri-mi",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-dino-prizmic",
+        "from_player_id": "tennis-player-dino-pri-mi",
+        "source_display_name": "Dino Pri\u017emi\u0107",
+        "to_player_id": "tennis-player-dino-prizmic"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "daniel merida",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Daniel Merida",
+            "player_id": "tennis-player-daniel-merida",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 186,
+              "rankings": 7,
+              "replay_games": 24,
+              "replay_points": 66,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 2
+            },
+            "reference_score": 548,
+            "stable_reference_score": 610
+          },
+          {
+            "active": 1,
+            "canonical_name": "daniel m rida",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Daniel M\u00e9rida",
+            "player_id": "tennis-player-daniel-m-rida",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-daniel-merida",
+        "from_player_id": "tennis-player-daniel-m-rida",
+        "source_display_name": "Daniel M\u00e9rida",
+        "to_player_id": "tennis-player-daniel-merida"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Damir Dzumhur",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Damir Dzumhur",
+            "player_id": "tennis-player-damir-dzumhur",
+            "reference_counts": {
+              "market_contracts": 3,
+              "market_price_ticks": 2,
+              "market_snapshots": 3,
+              "match_players": 8,
+              "match_stat_rows": 3010,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 106,
+              "replay_games": 139,
+              "replay_points": 673,
+              "service_pressure_snapshots": 13,
+              "tennislive_form_chart_points": 73,
+              "tennislive_h2h_source_rows": 6,
+              "tennislive_match_player_snapshots": 1,
+              "tennislive_player_match_links": 51,
+              "tennislive_player_profiles": 2,
+              "tennislive_player_sources": 1,
+              "tennislive_player_surface_records": 294,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 8089,
+            "stable_reference_score": 7640
+          },
+          {
+            "active": 1,
+            "canonical_name": "damir d umhur",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Damir D\u017eumhur",
+            "player_id": "tennis-player-damir-d-umhur",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-damir-dzumhur",
+        "from_player_id": "tennis-player-damir-d-umhur",
+        "source_display_name": "Damir D\u017eumhur",
+        "to_player_id": "tennis-player-damir-dzumhur"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "pablo carreno busta",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Pablo Carreno-Busta",
+            "player_id": "tennis-player-pablo-carreno-busta",
+            "reference_counts": {
+              "market_contracts": 6,
+              "market_price_ticks": 2,
+              "market_snapshots": 11,
+              "match_players": 5,
+              "match_stat_rows": 848,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 20,
+              "replay_games": 159,
+              "replay_points": 423,
+              "service_pressure_snapshots": 4,
+              "tennislive_form_chart_points": 92,
+              "tennislive_h2h_source_rows": 4,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 2908,
+            "stable_reference_score": 2932
+          },
+          {
+            "active": 1,
+            "canonical_name": "pablo carre o busta",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Pablo Carre\u00f1o Busta",
+            "player_id": "tennis-player-pablo-carre-o-busta",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-pablo-carreno-busta",
+        "from_player_id": "tennis-player-pablo-carre-o-busta",
+        "source_display_name": "Pablo Carre\u00f1o Busta",
+        "to_player_id": "tennis-player-pablo-carreno-busta"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Aleksandar Vukic",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Aleksandar Vukic",
+            "player_id": "tennis-player-aleksandar-vukic",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_price_ticks": 2,
+              "market_snapshots": 5,
+              "match_players": 8,
+              "match_stat_rows": 2844,
+              "player_form_snapshots": 18,
+              "rankings": 7,
+              "recent_matches": 112,
+              "replay_games": 77,
+              "replay_points": 391,
+              "service_pressure_snapshots": 13,
+              "tennislive_form_chart_points": 82,
+              "tennislive_h2h_source_rows": 4,
+              "tennislive_match_player_snapshots": 1,
+              "tennislive_player_match_links": 51,
+              "tennislive_player_profiles": 2,
+              "tennislive_player_sources": 1,
+              "tennislive_player_surface_records": 224,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 7510,
+            "stable_reference_score": 7117
+          },
+          {
+            "active": 1,
+            "canonical_name": "aleksandar vuki",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Aleksandar Vuki\u0107",
+            "player_id": "tennis-player-aleksandar-vuki",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-aleksandar-vukic",
+        "from_player_id": "tennis-player-aleksandar-vuki",
+        "source_display_name": "Aleksandar Vuki\u0107",
+        "to_player_id": "tennis-player-aleksandar-vukic"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "francisco comesana",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Francisco Comesana",
+            "player_id": "tennis-player-francisco-comesana",
+            "reference_counts": {
+              "market_contracts": 6,
+              "market_price_ticks": 3,
+              "market_snapshots": 9,
+              "match_players": 4,
+              "match_stat_rows": 1970,
+              "player_form_snapshots": 18,
+              "rankings": 7,
+              "recent_matches": 28,
+              "replay_games": 160,
+              "replay_points": 460,
+              "service_pressure_snapshots": 5,
+              "tennislive_form_chart_points": 32,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 5174,
+            "stable_reference_score": 5220
+          },
+          {
+            "active": 1,
+            "canonical_name": "francisco comesa a",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Francisco Comesa\u00f1a",
+            "player_id": "tennis-player-francisco-comesa-a",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-francisco-comesana",
+        "from_player_id": "tennis-player-francisco-comesa-a",
+        "source_display_name": "Francisco Comesa\u00f1a",
+        "to_player_id": "tennis-player-francisco-comesana"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "dalibor svrcina",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Dalibor Svrcina",
+            "player_id": "tennis-player-dalibor-svrcina",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_price_ticks": 1,
+              "market_snapshots": 2,
+              "match_players": 4,
+              "match_stat_rows": 1560,
+              "player_form_snapshots": 7,
+              "rankings": 7,
+              "recent_matches": 52,
+              "replay_games": 44,
+              "replay_points": 221,
+              "service_pressure_snapshots": 7,
+              "tennislive_form_chart_points": 109,
+              "tennislive_h2h_source_rows": 2,
+              "tennislive_match_player_snapshots": 2,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 3979,
+            "stable_reference_score": 3881
+          },
+          {
+            "active": 1,
+            "canonical_name": "dalibor svr ina",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Dalibor Svr\u010dina",
+            "player_id": "tennis-player-dalibor-svr-ina",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-dalibor-svrcina",
+        "from_player_id": "tennis-player-dalibor-svr-ina",
+        "source_display_name": "Dalibor Svr\u010dina",
+        "to_player_id": "tennis-player-dalibor-svrcina"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Alex Molcan",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Alex Molcan",
+            "player_id": "tennis-player-alex-molcan",
+            "reference_counts": {
+              "market_contracts": 3,
+              "market_price_ticks": 2,
+              "market_snapshots": 6,
+              "match_players": 12,
+              "match_stat_rows": 2676,
+              "player_form_snapshots": 10,
+              "rankings": 7,
+              "recent_matches": 109,
+              "replay_games": 63,
+              "replay_points": 419,
+              "service_pressure_snapshots": 12,
+              "tennislive_form_chart_points": 291,
+              "tennislive_h2h_source_rows": 15,
+              "tennislive_match_player_snapshots": 8,
+              "tennislive_player_match_links": 56,
+              "tennislive_player_profiles": 7,
+              "tennislive_player_sources": 1,
+              "tennislive_player_surface_records": 735,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 7862,
+            "stable_reference_score": 6756
+          },
+          {
+            "active": 1,
+            "canonical_name": "alex mol an",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Alex Mol\u010dan",
+            "player_id": "tennis-player-alex-mol-an",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-alex-molcan",
+        "from_player_id": "tennis-player-alex-mol-an",
+        "source_display_name": "Alex Mol\u010dan",
+        "to_player_id": "tennis-player-alex-molcan"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "cristian garin",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Cristian Garin",
+            "player_id": "tennis-player-cristian-garin",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 1,
+              "match_stat_rows": 220,
+              "player_form_snapshots": 1,
+              "rankings": 7,
+              "recent_matches": 16,
+              "replay_games": 22,
+              "replay_points": 72,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 45,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 812,
+            "stable_reference_score": 821
+          },
+          {
+            "active": 1,
+            "canonical_name": "cristian gar n",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Cristian Gar\u00edn",
+            "player_id": "tennis-player-cristian-gar-n",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-cristian-garin",
+        "from_player_id": "tennis-player-cristian-gar-n",
+        "source_display_name": "Cristian Gar\u00edn",
+        "to_player_id": "tennis-player-cristian-garin"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "alexandre muller",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Alexandre Muller",
+            "player_id": "tennis-player-alexandre-muller",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 1,
+              "match_stat_rows": 152,
+              "player_form_snapshots": 1,
+              "rankings": 7,
+              "recent_matches": 12,
+              "replay_games": 8,
+              "replay_points": 30,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 45,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 604,
+            "stable_reference_score": 617
+          },
+          {
+            "active": 1,
+            "canonical_name": "alexandre m ller",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Alexandre M\u00fcller",
+            "player_id": "tennis-player-alexandre-m-ller",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-alexandre-muller",
+        "from_player_id": "tennis-player-alexandre-m-ller",
+        "source_display_name": "Alexandre M\u00fcller",
+        "to_player_id": "tennis-player-alexandre-muller"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "arthur gea",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Arthur Gea",
+            "player_id": "tennis-player-arthur-gea",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 186,
+              "rankings": 7,
+              "recent_matches": 4,
+              "replay_games": 22,
+              "replay_points": 71,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 48,
+              "trusted_entity_aliases": 1
+            },
+            "reference_score": 578,
+            "stable_reference_score": 578
+          },
+          {
+            "active": 1,
+            "canonical_name": "arthur g a",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Arthur G\u00e9a",
+            "player_id": "tennis-player-arthur-g-a",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-arthur-gea",
+        "from_player_id": "tennis-player-arthur-g-a",
+        "source_display_name": "Arthur G\u00e9a",
+        "to_player_id": "tennis-player-arthur-gea"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "tomas barrios vera",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Tomas Barrios Vera",
+            "player_id": "tennis-player-tomas-barrios-vera",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 8,
+              "rankings": 7,
+              "recent_matches": 3,
+              "replay_games": 13,
+              "replay_points": 83,
+              "tennislive_form_chart_points": 85,
+              "tennislive_h2h_source_rows": 2,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 1
+            },
+            "reference_score": 254,
+            "stable_reference_score": 215
+          },
+          {
+            "active": 1,
+            "canonical_name": "tom s barrios vera",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Tom\u00e1s Barrios Vera",
+            "player_id": "tennis-player-tom-s-barrios-vera",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-tomas-barrios-vera",
+        "from_player_id": "tennis-player-tom-s-barrios-vera",
+        "source_display_name": "Tom\u00e1s Barrios Vera",
+        "to_player_id": "tennis-player-tomas-barrios-vera"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "dusan lajovic",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Dusan Lajovic",
+            "player_id": "tennis-player-dusan-lajovic",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_price_ticks": 1,
+              "market_snapshots": 2,
+              "match_players": 2,
+              "match_stat_rows": 1182,
+              "player_form_snapshots": 7,
+              "rankings": 7,
+              "recent_matches": 56,
+              "replay_games": 11,
+              "replay_points": 67,
+              "service_pressure_snapshots": 6,
+              "tennislive_form_chart_points": 77,
+              "tennislive_h2h_source_rows": 1,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 3
+            },
+            "reference_score": 2961,
+            "stable_reference_score": 2887
+          },
+          {
+            "active": 1,
+            "canonical_name": "du an lajovi",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Du\u0161an Lajovi\u0107",
+            "player_id": "tennis-player-du-an-lajovi",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-dusan-lajovic",
+        "from_player_id": "tennis-player-du-an-lajovi",
+        "source_display_name": "Du\u0161an Lajovi\u0107",
+        "to_player_id": "tennis-player-dusan-lajovic"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "pedro martinez",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Pedro Martinez",
+            "player_id": "tennis-player-pedro-martinez",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 150,
+              "rankings": 7,
+              "replay_games": 15,
+              "replay_points": 41,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 2
+            },
+            "reference_score": 425,
+            "stable_reference_score": 477
+          },
+          {
+            "active": 1,
+            "canonical_name": "pedro mart nez",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Pedro Mart\u00ednez",
+            "player_id": "tennis-player-pedro-mart-nez",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-pedro-martinez",
+        "from_player_id": "tennis-player-pedro-mart-nez",
+        "source_display_name": "Pedro Mart\u00ednez",
+        "to_player_id": "tennis-player-pedro-martinez"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "iga swiatek",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Iga Swiatek",
+            "player_id": "tennis-player-iga-swiatek",
+            "reference_counts": {
+              "h2h_matches": 1,
+              "market_contracts": 7,
+              "market_price_ticks": 2,
+              "market_snapshots": 12,
+              "match_players": 5,
+              "match_stat_rows": 2058,
+              "player_form_snapshots": 34,
+              "rankings": 7,
+              "recent_matches": 52,
+              "replay_games": 77,
+              "replay_points": 237,
+              "service_pressure_snapshots": 7,
+              "tennislive_form_chart_points": 24,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 5286,
+            "stable_reference_score": 5310
+          },
+          {
+            "active": 1,
+            "canonical_name": "iga wi tek",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Iga \u015awi\u0105tek",
+            "player_id": "tennis-player-iga-wi-tek",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-iga-swiatek",
+        "from_player_id": "tennis-player-iga-wi-tek",
+        "source_display_name": "Iga \u015awi\u0105tek",
+        "to_player_id": "tennis-player-iga-swiatek"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "karolina muchova",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Karolina Muchova",
+            "player_id": "tennis-player-karolina-muchova",
+            "reference_counts": {
+              "market_contracts": 5,
+              "market_snapshots": 5,
+              "match_players": 4,
+              "match_stat_rows": 1998,
+              "player_form_snapshots": 21,
+              "rankings": 7,
+              "recent_matches": 36,
+              "replay_games": 66,
+              "replay_points": 208,
+              "service_pressure_snapshots": 5,
+              "tennislive_form_chart_points": 62,
+              "tennislive_h2h_source_rows": 2,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 4932,
+            "stable_reference_score": 4900
+          },
+          {
+            "active": 1,
+            "canonical_name": "karol na muchov",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Karol\u00edna Muchov\u00e1",
+            "player_id": "tennis-player-karol-na-muchov",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-karolina-muchova",
+        "from_player_id": "tennis-player-karol-na-muchov",
+        "source_display_name": "Karol\u00edna Muchov\u00e1",
+        "to_player_id": "tennis-player-karolina-muchova"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "linda noskova",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Linda Noskova",
+            "player_id": "tennis-player-linda-noskova",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 152,
+              "player_form_snapshots": 1,
+              "rankings": 7,
+              "recent_matches": 28,
+              "replay_games": 23,
+              "replay_points": 61,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 33,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 665,
+            "stable_reference_score": 664
+          },
+          {
+            "active": 1,
+            "canonical_name": "linda noskov",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Linda Noskov\u00e1",
+            "player_id": "tennis-player-linda-noskov",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-linda-noskova",
+        "from_player_id": "tennis-player-linda-noskov",
+        "source_display_name": "Linda Noskov\u00e1",
+        "to_player_id": "tennis-player-linda-noskova"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "sorana cirstea",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Sorana Cirstea",
+            "player_id": "tennis-player-sorana-cirstea",
+            "reference_counts": {
+              "market_contracts": 9,
+              "market_price_ticks": 3,
+              "market_snapshots": 18,
+              "match_players": 6,
+              "match_stat_rows": 3058,
+              "player_form_snapshots": 37,
+              "rankings": 7,
+              "recent_matches": 93,
+              "replay_games": 90,
+              "replay_points": 206,
+              "service_pressure_snapshots": 16,
+              "tennislive_form_chart_points": 48,
+              "trusted_entity_aliases": 9
+            },
+            "reference_score": 7644,
+            "stable_reference_score": 7649
+          },
+          {
+            "active": 1,
+            "canonical_name": "sorana c rstea",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Sorana C\u00eerstea",
+            "player_id": "tennis-player-sorana-c-rstea",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-sorana-cirstea",
+        "from_player_id": "tennis-player-sorana-c-rstea",
+        "source_display_name": "Sorana C\u00eerstea",
+        "to_player_id": "tennis-player-sorana-cirstea"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "marie bouzkova",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Marie Bouzkova",
+            "player_id": "tennis-player-marie-bouzkova",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 6,
+              "match_stat_rows": 1378,
+              "player_form_snapshots": 13,
+              "rankings": 7,
+              "recent_matches": 27,
+              "replay_games": 66,
+              "replay_points": 241,
+              "service_pressure_snapshots": 5,
+              "tennislive_form_chart_points": 72,
+              "tennislive_h2h_source_rows": 2,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 3644,
+            "stable_reference_score": 3623
+          },
+          {
+            "active": 1,
+            "canonical_name": "marie bouzkov",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Marie Bouzkov\u00e1",
+            "player_id": "tennis-player-marie-bouzkov",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-marie-bouzkova",
+        "from_player_id": "tennis-player-marie-bouzkov",
+        "source_display_name": "Marie Bouzkov\u00e1",
+        "to_player_id": "tennis-player-marie-bouzkova"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "jelena ostapenko",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Jelena Ostapenko",
+            "player_id": "tennis-player-jelena-ostapenko",
+            "reference_counts": {
+              "market_contracts": 3,
+              "market_snapshots": 3,
+              "match_players": 3,
+              "match_stat_rows": 1860,
+              "player_form_snapshots": 18,
+              "rankings": 7,
+              "recent_matches": 30,
+              "replay_games": 54,
+              "replay_points": 198,
+              "service_pressure_snapshots": 3,
+              "tennislive_form_chart_points": 57,
+              "tennislive_h2h_source_rows": 1,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 4503,
+            "stable_reference_score": 4466
+          },
+          {
+            "active": 1,
+            "canonical_name": "je ena ostapenko",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Je\u013cena Ostapenko",
+            "player_id": "tennis-player-je-ena-ostapenko",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-jelena-ostapenko",
+        "from_player_id": "tennis-player-je-ena-ostapenko",
+        "source_display_name": "Je\u013cena Ostapenko",
+        "to_player_id": "tennis-player-jelena-ostapenko"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "cristina bucsa",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Cristina Bucsa",
+            "player_id": "tennis-player-cristina-bucsa",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 186,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 10,
+              "replay_games": 28,
+              "replay_points": 79,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 25,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 707,
+            "stable_reference_score": 706
+          },
+          {
+            "active": 1,
+            "canonical_name": "cristina buc a",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Cristina Buc\u0219a",
+            "player_id": "tennis-player-cristina-buc-a",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-cristina-bucsa",
+        "from_player_id": "tennis-player-cristina-buc-a",
+        "source_display_name": "Cristina Buc\u0219a",
+        "to_player_id": "tennis-player-cristina-bucsa"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "sara bejlek",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Sara Bejlek",
+            "player_id": "tennis-player-sara-bejlek",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 2,
+              "match_stat_rows": 1360,
+              "player_form_snapshots": 4,
+              "rankings": 7,
+              "recent_matches": 13,
+              "replay_games": 26,
+              "replay_points": 89,
+              "service_pressure_snapshots": 3,
+              "tennislive_form_chart_points": 33,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 3136,
+            "stable_reference_score": 3157
+          },
+          {
+            "active": 1,
+            "canonical_name": "s ra bejlek",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "S\u00e1ra Bejlek",
+            "player_id": "tennis-player-s-ra-bejlek",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-sara-bejlek",
+        "from_player_id": "tennis-player-s-ra-bejlek",
+        "source_display_name": "S\u00e1ra Bejlek",
+        "to_player_id": "tennis-player-sara-bejlek"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "katerina siniakova",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Katerina Siniakova",
+            "player_id": "tennis-player-katerina-siniakova",
+            "reference_counts": {
+              "market_contracts": 3,
+              "market_snapshots": 3,
+              "match_players": 2,
+              "match_stat_rows": 878,
+              "player_form_snapshots": 10,
+              "rankings": 7,
+              "recent_matches": 24,
+              "replay_games": 53,
+              "replay_points": 192,
+              "service_pressure_snapshots": 3,
+              "tennislive_form_chart_points": 21,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 2427,
+            "stable_reference_score": 2447
+          },
+          {
+            "active": 1,
+            "canonical_name": "kate ina siniakov",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Kate\u0159ina Siniakov\u00e1",
+            "player_id": "tennis-player-kate-ina-siniakov",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-katerina-siniakova",
+        "from_player_id": "tennis-player-kate-ina-siniakov",
+        "source_display_name": "Kate\u0159ina Siniakov\u00e1",
+        "to_player_id": "tennis-player-katerina-siniakova"
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "barbora krejcikova",
+            "exact_ascii_canonical": true,
+            "expected_player_id_match": true,
+            "name": "Barbora Krejcikova",
+            "player_id": "tennis-player-barbora-krejcikova",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 2,
+              "match_stat_rows": 194,
+              "rankings": 7,
+              "recent_matches": 12,
+              "replay_games": 43,
+              "replay_points": 134,
+              "service_pressure_snapshots": 1,
+              "tennislive_form_chart_points": 46,
+              "tennislive_h2h_source_rows": 1,
+              "tennislive_match_player_snapshots": 1,
+              "trusted_entity_aliases": 2
+            },
+            "reference_score": 762,
+            "stable_reference_score": 767
+          },
+          {
+            "active": 1,
+            "canonical_name": "barbora krej kov",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Barbora Krej\u010d\u00edkov\u00e1",
+            "player_id": "tennis-player-barbora-krej-kov",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "barbora krej ikov",
+            "exact_ascii_canonical": false,
+            "expected_player_id_match": false,
+            "name": "Barbora Krej\u010dikov\u00e1",
+            "player_id": "tennis-player-barbora-krej-ikov",
+            "reference_counts": {},
+            "reference_score": 0,
+            "stable_reference_score": 0
+          }
+        ],
+        "confidence": 0.96,
+        "evidence_policy": "expected_ascii_player_id_duplicate",
+        "expected_player_id": "tennis-player-barbora-krejcikova",
+        "from_player_id": "tennis-player-barbora-krej-kov",
+        "source_display_name": "Barbora Krej\u010d\u00edkov\u00e1",
+        "to_player_id": "tennis-player-barbora-krejcikova"
+      }
+    ],
+    "full_name_duplicate_unresolved": 0,
+    "full_name_duplicate_unresolved_samples": [],
+    "full_name_duplicates_deactivated": 290,
+    "policy_counts": {
+      "accent_duplicate_group": 113,
+      "dominant_context_candidate": 22,
+      "expected_ascii_player_id_duplicate": 290,
+      "multiple_live_candidates": 6,
+      "no_full_name_candidate": 7,
+      "unique_abbreviation_full_name": 507
+    },
+    "redirect_ready": 932,
+    "redirect_ready_samples": [
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "laslo djere",
+            "name": "Laslo Djere",
+            "player_id": "tennis-player-laslo-djere",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 8,
+              "rankings": 1,
+              "recent_matches": 6,
+              "replay_games": 10,
+              "replay_points": 83,
+              "trusted_entity_aliases": 2
+            },
+            "reference_score": 189
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-djere-l",
+        "source_display_name": "Djere L.",
+        "to_player_id": "tennis-player-laslo-djere"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "james duckworth",
+            "name": "James Duckworth",
+            "player_id": "tennis-player-james-duckworth",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_price_ticks": 1,
+              "market_snapshots": 4,
+              "match_players": 3,
+              "match_stat_rows": 1614,
+              "player_form_snapshots": 12,
+              "rankings": 7,
+              "recent_matches": 59,
+              "replay_games": 55,
+              "replay_points": 157,
+              "service_pressure_snapshots": 9,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 4092
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-duckworth-j",
+        "source_display_name": "Duckworth J.",
+        "to_player_id": "tennis-player-james-duckworth"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "magda linette",
+            "name": "Magda Linette",
+            "player_id": "tennis-player-magda-linette",
+            "reference_counts": {
+              "h2h_matches": 2,
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 3,
+              "match_stat_rows": 2198,
+              "player_form_snapshots": 13,
+              "rankings": 7,
+              "recent_matches": 21,
+              "replay_games": 75,
+              "replay_points": 178,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 5112
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-linette-m",
+        "source_display_name": "Linette M.",
+        "to_player_id": "tennis-player-magda-linette"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "iva jovic",
+            "name": "Iva Jovic",
+            "player_id": "tennis-player-iva-jovic",
+            "reference_counts": {
+              "h2h_matches": 1,
+              "market_contracts": 5,
+              "market_price_ticks": 3,
+              "market_snapshots": 8,
+              "match_players": 4,
+              "match_stat_rows": 1568,
+              "player_form_snapshots": 19,
+              "rankings": 7,
+              "recent_matches": 36,
+              "replay_games": 85,
+              "replay_points": 244,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 4091
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-jovic-i",
+        "source_display_name": "Jovic I.",
+        "to_player_id": "tennis-player-iva-jovic"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "lorenzo sonego",
+            "name": "Lorenzo Sonego",
+            "player_id": "tennis-player-lorenzo-sonego",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 2,
+              "match_stat_rows": 2004,
+              "player_form_snapshots": 5,
+              "rankings": 7,
+              "recent_matches": 9,
+              "replay_games": 71,
+              "replay_points": 188,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 4565
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-sonego-l",
+        "source_display_name": "Sonego L.",
+        "to_player_id": "tennis-player-lorenzo-sonego"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "dusan lajovic",
+            "name": "Dusan Lajovic",
+            "player_id": "tennis-player-dusan-lajovic",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_price_ticks": 1,
+              "market_snapshots": 2,
+              "match_players": 2,
+              "match_stat_rows": 1182,
+              "player_form_snapshots": 7,
+              "rankings": 7,
+              "recent_matches": 56,
+              "replay_games": 11,
+              "replay_points": 67,
+              "service_pressure_snapshots": 6,
+              "trusted_entity_aliases": 3
+            },
+            "reference_score": 2882
+          },
+          {
+            "active": 1,
+            "canonical_name": "du an lajovi",
+            "name": "Du\u0161an Lajovi\u0107",
+            "player_id": "tennis-player-du-an-lajovi",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "confidence": 0.94,
+        "evidence_policy": "accent_duplicate_group",
+        "from_player_id": "tennis-player-lajovic-d",
+        "source_display_name": "Lajovic D.",
+        "to_player_id": "tennis-player-dusan-lajovic"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "giovanni mpetshi perricard",
+            "name": "Giovanni Mpetshi Perricard",
+            "player_id": "tennis-player-giovanni-mpetshi-perricard",
+            "reference_counts": {
+              "match_players": 3,
+              "match_stat_rows": 236,
+              "rankings": 7,
+              "recent_matches": 9,
+              "replay_games": 59,
+              "replay_points": 235,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 3
+            },
+            "reference_score": 921
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-mpetshi-perricard-g",
+        "source_display_name": "Mpetshi Perricard G.",
+        "to_player_id": "tennis-player-giovanni-mpetshi-perricard"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "novak djokovic",
+            "name": "Novak Djokovic",
+            "player_id": "tennis-player-novak-djokovic",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 3,
+              "match_stat_rows": 1472,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 20,
+              "replay_games": 140,
+              "replay_points": 327,
+              "service_pressure_snapshots": 4,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 3833
+          },
+          {
+            "active": 1,
+            "canonical_name": "novak djokovi",
+            "name": "Novak Djokovi\u0107",
+            "player_id": "tennis-player-novak-djokovi",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "confidence": 0.94,
+        "evidence_policy": "accent_duplicate_group",
+        "from_player_id": "tennis-player-djokovic-n",
+        "source_display_name": "Djokovic N.",
+        "to_player_id": "tennis-player-novak-djokovic"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "yuliia starodubtseva",
+            "name": "Yuliia Starodubtseva",
+            "player_id": "tennis-player-yuliia-starodubtseva",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 5,
+              "match_stat_rows": 1653,
+              "player_form_snapshots": 10,
+              "rankings": 7,
+              "recent_matches": 35,
+              "replay_games": 81,
+              "replay_points": 355,
+              "service_pressure_snapshots": 4,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 4206
+          },
+          {
+            "active": 1,
+            "canonical_name": "yulia starodubtseva",
+            "name": "Yulia Starodubtseva",
+            "player_id": "tennis-player-yulia-starodubtseva",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          }
+        ],
+        "confidence": 0.88,
+        "evidence_policy": "dominant_context_candidate",
+        "from_player_id": "tennis-player-starodubtseva-y",
+        "source_display_name": "Starodubtseva Y.",
+        "to_player_id": "tennis-player-yuliia-starodubtseva"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "simona waltert",
+            "name": "Simona Waltert",
+            "player_id": "tennis-player-simona-waltert",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 152,
+              "player_form_snapshots": 1,
+              "rankings": 7,
+              "recent_matches": 15,
+              "replay_games": 21,
+              "replay_points": 58,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 595
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-waltert-s",
+        "source_display_name": "Waltert S.",
+        "to_player_id": "tennis-player-simona-waltert"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "jannik sinner",
+            "name": "Jannik Sinner",
+            "player_id": "tennis-player-jannik-sinner",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 3,
+              "match_stat_rows": 1019,
+              "player_form_snapshots": 19,
+              "rankings": 7,
+              "recent_matches": 54,
+              "replay_games": 72,
+              "replay_points": 174,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 2915
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-sinner-j",
+        "source_display_name": "Sinner J.",
+        "to_player_id": "tennis-player-jannik-sinner"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Alexander Zverev",
+            "name": "Alexander Zverev",
+            "player_id": "tennis-player-alexander-zverev",
+            "reference_counts": {
+              "market_contracts": 9,
+              "market_price_ticks": 4,
+              "market_snapshots": 40,
+              "match_players": 15,
+              "match_stat_rows": 4662,
+              "player_form_snapshots": 39,
+              "rankings": 7,
+              "recent_matches": 109,
+              "replay_games": 225,
+              "replay_points": 911,
+              "service_pressure_snapshots": 16,
+              "trusted_entity_aliases": 10
+            },
+            "reference_score": 11986
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-zverev-a",
+        "source_display_name": "Zverev A.",
+        "to_player_id": "tennis-player-alexander-zverev"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "viktorija golubic",
+            "name": "Viktorija Golubic",
+            "player_id": "tennis-player-viktorija-golubic",
+            "reference_counts": {
+              "market_contracts": 5,
+              "market_snapshots": 5,
+              "match_players": 5,
+              "match_stat_rows": 1314,
+              "player_form_snapshots": 20,
+              "rankings": 7,
+              "recent_matches": 36,
+              "replay_games": 72,
+              "replay_points": 232,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 3558
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-golubic-v",
+        "source_display_name": "Golubic V.",
+        "to_player_id": "tennis-player-viktorija-golubic"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Mirra Andreeva",
+            "name": "Mirra Andreeva",
+            "player_id": "tennis-player-mirra-andreeva",
+            "reference_counts": {
+              "market_contracts": 10,
+              "market_price_ticks": 4,
+              "market_snapshots": 46,
+              "match_players": 12,
+              "match_stat_rows": 4836,
+              "player_form_snapshots": 41,
+              "rankings": 7,
+              "recent_matches": 156,
+              "replay_games": 134,
+              "replay_points": 541,
+              "service_pressure_snapshots": 22,
+              "trusted_entity_aliases": 10
+            },
+            "reference_score": 12112
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-andreeva-m",
+        "source_display_name": "Andreeva M.",
+        "to_player_id": "tennis-player-mirra-andreeva"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "pierre hugues herbert",
+            "name": "Pierre-Hugues Herbert",
+            "player_id": "tennis-player-pierre-hugues-herbert",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 3,
+              "match_stat_rows": 438,
+              "rankings": 1,
+              "recent_matches": 1,
+              "replay_games": 86,
+              "replay_points": 232,
+              "service_pressure_snapshots": 2,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 1355
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-herbert-p",
+        "source_display_name": "Herbert P.",
+        "to_player_id": "tennis-player-pierre-hugues-herbert"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "ignacio buse",
+            "name": "Ignacio Buse",
+            "player_id": "tennis-player-ignacio-buse",
+            "reference_counts": {
+              "match_players": 3,
+              "match_stat_rows": 220,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 35,
+              "replay_games": 38,
+              "replay_points": 114,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 945
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-buse-i",
+        "source_display_name": "Buse I.",
+        "to_player_id": "tennis-player-ignacio-buse"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "catherine mcnally",
+            "name": "Catherine McNally",
+            "player_id": "tennis-player-catherine-mcnally",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 1082,
+              "player_form_snapshots": 8,
+              "rankings": 7,
+              "replay_games": 12,
+              "replay_points": 34,
+              "service_pressure_snapshots": 2,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 2391
+          },
+          {
+            "active": 1,
+            "canonical_name": "caty mcnally",
+            "name": "Caty McNally",
+            "player_id": "tennis-player-caty-mcnally",
+            "reference_counts": {
+              "rankings": 1,
+              "recent_matches": 28
+            },
+            "reference_score": 113
+          }
+        ],
+        "confidence": 0.88,
+        "evidence_policy": "dominant_context_candidate",
+        "from_player_id": "tennis-player-mcnally-c",
+        "source_display_name": "McNally C.",
+        "to_player_id": "tennis-player-catherine-mcnally"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Katie Volynets",
+            "name": "Katie Volynets",
+            "player_id": "tennis-player-katie-volynets",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 6,
+              "match_players": 8,
+              "match_stat_rows": 1214,
+              "player_form_snapshots": 7,
+              "rankings": 7,
+              "recent_matches": 26,
+              "replay_games": 103,
+              "replay_points": 497,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 3536
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-volynets-k",
+        "source_display_name": "Volynets K.",
+        "to_player_id": "tennis-player-katie-volynets"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "madison keys",
+            "name": "Madison Keys",
+            "player_id": "tennis-player-madison-keys",
+            "reference_counts": {
+              "market_contracts": 7,
+              "market_price_ticks": 6,
+              "market_snapshots": 14,
+              "match_players": 7,
+              "match_stat_rows": 3238,
+              "player_form_snapshots": 18,
+              "rankings": 7,
+              "recent_matches": 45,
+              "replay_games": 105,
+              "replay_points": 374,
+              "service_pressure_snapshots": 6,
+              "trusted_entity_aliases": 9
+            },
+            "reference_score": 7737
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-keys-m",
+        "source_display_name": "Keys M.",
+        "to_player_id": "tennis-player-madison-keys"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "peyton stearns",
+            "name": "Peyton Stearns",
+            "player_id": "tennis-player-peyton-stearns",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 3,
+              "match_stat_rows": 2122,
+              "player_form_snapshots": 16,
+              "rankings": 7,
+              "recent_matches": 31,
+              "replay_games": 56,
+              "replay_points": 157,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 4992
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-stearns-p",
+        "source_display_name": "Stearns P.",
+        "to_player_id": "tennis-player-peyton-stearns"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "marie bouzkova",
+            "name": "Marie Bouzkova",
+            "player_id": "tennis-player-marie-bouzkova",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 6,
+              "match_stat_rows": 1378,
+              "player_form_snapshots": 13,
+              "rankings": 7,
+              "recent_matches": 27,
+              "replay_games": 66,
+              "replay_points": 241,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 3569
+          },
+          {
+            "active": 1,
+            "canonical_name": "marie bouzkov",
+            "name": "Marie Bouzkov\u00e1",
+            "player_id": "tennis-player-marie-bouzkov",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "confidence": 0.94,
+        "evidence_policy": "accent_duplicate_group",
+        "from_player_id": "tennis-player-bouzkova-m",
+        "source_display_name": "Bouzkova M.",
+        "to_player_id": "tennis-player-marie-bouzkova"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "taylor townsend",
+            "name": "Taylor Townsend",
+            "player_id": "tennis-player-taylor-townsend",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 152,
+              "rankings": 7,
+              "recent_matches": 9,
+              "replay_games": 12,
+              "replay_points": 41,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 4
+            },
+            "reference_score": 519
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-townsend-t",
+        "source_display_name": "Townsend T.",
+        "to_player_id": "tennis-player-taylor-townsend"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "mariano navone",
+            "name": "Mariano Navone",
+            "player_id": "tennis-player-mariano-navone",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 6,
+              "match_stat_rows": 1632,
+              "player_form_snapshots": 18,
+              "rankings": 7,
+              "recent_matches": 39,
+              "replay_games": 121,
+              "replay_points": 513,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 4454
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-navone-m",
+        "source_display_name": "Navone M.",
+        "to_player_id": "tennis-player-mariano-navone"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "jenson brooksby",
+            "name": "Jenson Brooksby",
+            "player_id": "tennis-player-jenson-brooksby",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 186,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 14,
+              "replay_games": 27,
+              "replay_points": 94,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 732
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-brooksby-j",
+        "source_display_name": "Brooksby J.",
+        "to_player_id": "tennis-player-jenson-brooksby"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "anastasia potapova",
+            "name": "Anastasia Potapova",
+            "player_id": "tennis-player-anastasia-potapova",
+            "reference_counts": {
+              "market_contracts": 7,
+              "market_price_ticks": 6,
+              "market_snapshots": 15,
+              "match_players": 4,
+              "match_stat_rows": 2938,
+              "player_form_snapshots": 27,
+              "rankings": 7,
+              "recent_matches": 42,
+              "replay_games": 84,
+              "replay_points": 217,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 6934
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-potapova-a",
+        "source_display_name": "Potapova A.",
+        "to_player_id": "tennis-player-anastasia-potapova"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "jelena ostapenko",
+            "name": "Jelena Ostapenko",
+            "player_id": "tennis-player-jelena-ostapenko",
+            "reference_counts": {
+              "market_contracts": 3,
+              "market_snapshots": 3,
+              "match_players": 3,
+              "match_stat_rows": 1860,
+              "player_form_snapshots": 18,
+              "rankings": 7,
+              "recent_matches": 30,
+              "replay_games": 54,
+              "replay_points": 198,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 4444
+          },
+          {
+            "active": 1,
+            "canonical_name": "je ena ostapenko",
+            "name": "Je\u013cena Ostapenko",
+            "player_id": "tennis-player-je-ena-ostapenko",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "confidence": 0.94,
+        "evidence_policy": "accent_duplicate_group",
+        "from_player_id": "tennis-player-ostapenko-j",
+        "source_display_name": "Ostapenko J.",
+        "to_player_id": "tennis-player-jelena-ostapenko"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "hugo dellien",
+            "name": "Hugo Dellien",
+            "player_id": "tennis-player-hugo-dellien",
+            "reference_counts": {
+              "market_contracts": 3,
+              "market_price_ticks": 1,
+              "market_snapshots": 3,
+              "match_players": 4,
+              "match_stat_rows": 706,
+              "player_form_snapshots": 7,
+              "rankings": 7,
+              "recent_matches": 58,
+              "replay_games": 69,
+              "replay_points": 177,
+              "service_pressure_snapshots": 8,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 2207
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-dellien-h",
+        "source_display_name": "Dellien H.",
+        "to_player_id": "tennis-player-hugo-dellien"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "valentin royer",
+            "name": "Valentin Royer",
+            "player_id": "tennis-player-valentin-royer",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_price_ticks": 1,
+              "market_snapshots": 4,
+              "match_players": 4,
+              "match_stat_rows": 2168,
+              "player_form_snapshots": 12,
+              "rankings": 7,
+              "recent_matches": 63,
+              "replay_games": 62,
+              "replay_points": 214,
+              "service_pressure_snapshots": 9,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 5275
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-royer-v",
+        "source_display_name": "Royer V.",
+        "to_player_id": "tennis-player-valentin-royer"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "jesper de jong",
+            "name": "Jesper De Jong",
+            "player_id": "tennis-player-jesper-de-jong",
+            "reference_counts": {
+              "market_contracts": 6,
+              "market_price_ticks": 2,
+              "market_snapshots": 9,
+              "match_players": 7,
+              "match_stat_rows": 2988,
+              "player_form_snapshots": 32,
+              "rankings": 7,
+              "recent_matches": 38,
+              "replay_games": 201,
+              "replay_points": 579,
+              "service_pressure_snapshots": 8,
+              "trusted_entity_aliases": 9
+            },
+            "reference_score": 7567
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-de-jong-j",
+        "source_display_name": "De Jong J.",
+        "to_player_id": "tennis-player-jesper-de-jong"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "nuno borges",
+            "name": "Nuno Borges",
+            "player_id": "tennis-player-nuno-borges",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 3,
+              "match_stat_rows": 1680,
+              "player_form_snapshots": 12,
+              "rankings": 7,
+              "recent_matches": 33,
+              "replay_games": 95,
+              "replay_points": 278,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 4232
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-borges-n",
+        "source_display_name": "Borges N.",
+        "to_player_id": "tennis-player-nuno-borges"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "luciano darderi",
+            "name": "Luciano Darderi",
+            "player_id": "tennis-player-luciano-darderi",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 3,
+              "match_stat_rows": 980,
+              "player_form_snapshots": 10,
+              "rankings": 7,
+              "recent_matches": 37,
+              "replay_games": 85,
+              "replay_points": 213,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 2767
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-darderi-l",
+        "source_display_name": "Darderi L.",
+        "to_player_id": "tennis-player-luciano-darderi"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "learner tien",
+            "name": "Learner Tien",
+            "player_id": "tennis-player-learner-tien",
+            "reference_counts": {
+              "market_contracts": 6,
+              "market_price_ticks": 3,
+              "market_snapshots": 9,
+              "match_players": 6,
+              "match_stat_rows": 2042,
+              "player_form_snapshots": 19,
+              "rankings": 7,
+              "recent_matches": 39,
+              "replay_games": 120,
+              "replay_points": 348,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 5234
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-tien-l",
+        "source_display_name": "Tien L.",
+        "to_player_id": "tennis-player-learner-tien"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "laura siegemund",
+            "name": "Laura Siegemund",
+            "player_id": "tennis-player-laura-siegemund",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 152,
+              "player_form_snapshots": 1,
+              "rankings": 7,
+              "recent_matches": 14,
+              "replay_games": 19,
+              "replay_points": 62,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 593
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-siegemund-l",
+        "source_display_name": "Siegemund L.",
+        "to_player_id": "tennis-player-laura-siegemund"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "sara bejlek",
+            "name": "Sara Bejlek",
+            "player_id": "tennis-player-sara-bejlek",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 2,
+              "match_stat_rows": 1360,
+              "player_form_snapshots": 4,
+              "rankings": 7,
+              "recent_matches": 13,
+              "replay_games": 26,
+              "replay_points": 89,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 3103
+          },
+          {
+            "active": 1,
+            "canonical_name": "s ra bejlek",
+            "name": "S\u00e1ra Bejlek",
+            "player_id": "tennis-player-s-ra-bejlek",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "confidence": 0.94,
+        "evidence_policy": "accent_duplicate_group",
+        "from_player_id": "tennis-player-bejlek-s",
+        "source_display_name": "Bejlek S.",
+        "to_player_id": "tennis-player-sara-bejlek"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "hamad medjedovic",
+            "name": "Hamad Medjedovic",
+            "player_id": "tennis-player-hamad-medjedovic",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 2,
+              "match_stat_rows": 2350,
+              "player_form_snapshots": 6,
+              "rankings": 7,
+              "recent_matches": 28,
+              "replay_games": 61,
+              "replay_points": 193,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 5294
+          },
+          {
+            "active": 1,
+            "canonical_name": "hamad medjedovi",
+            "name": "Hamad Medjedovi\u0107",
+            "player_id": "tennis-player-hamad-medjedovi",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "confidence": 0.94,
+        "evidence_policy": "accent_duplicate_group",
+        "from_player_id": "tennis-player-medjedovic-h",
+        "source_display_name": "Medjedovic H.",
+        "to_player_id": "tennis-player-hamad-medjedovic"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "martin landaluce",
+            "name": "Martin Landaluce",
+            "player_id": "tennis-player-martin-landaluce",
+            "reference_counts": {
+              "market_contracts": 5,
+              "market_price_ticks": 3,
+              "market_snapshots": 8,
+              "match_players": 4,
+              "match_stat_rows": 1896,
+              "player_form_snapshots": 19,
+              "rankings": 7,
+              "recent_matches": 30,
+              "replay_games": 179,
+              "replay_points": 573,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 5143
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-landaluce-m",
+        "source_display_name": "Landaluce M.",
+        "to_player_id": "tennis-player-martin-landaluce"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "joao fonseca",
+            "name": "Joao Fonseca",
+            "player_id": "tennis-player-joao-fonseca",
+            "reference_counts": {
+              "market_contracts": 9,
+              "market_price_ticks": 3,
+              "market_snapshots": 18,
+              "match_players": 6,
+              "match_stat_rows": 4900,
+              "player_form_snapshots": 34,
+              "rankings": 7,
+              "recent_matches": 93,
+              "replay_games": 192,
+              "replay_points": 569,
+              "service_pressure_snapshots": 14,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 11693
+          },
+          {
+            "active": 1,
+            "canonical_name": "jo o fonseca",
+            "name": "Jo\u00e3o Fonseca",
+            "player_id": "tennis-player-jo-o-fonseca",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "confidence": 0.94,
+        "evidence_policy": "accent_duplicate_group",
+        "from_player_id": "tennis-player-fonseca-j",
+        "source_display_name": "Fonseca J.",
+        "to_player_id": "tennis-player-joao-fonseca"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "rafael jodar",
+            "name": "Rafael Jodar",
+            "player_id": "tennis-player-rafael-jodar",
+            "reference_counts": {
+              "market_contracts": 9,
+              "market_price_ticks": 3,
+              "market_snapshots": 18,
+              "match_players": 6,
+              "match_stat_rows": 3682,
+              "player_form_snapshots": 38,
+              "rankings": 7,
+              "recent_matches": 105,
+              "replay_games": 195,
+              "replay_points": 495,
+              "service_pressure_snapshots": 15,
+              "trusted_entity_aliases": 9
+            },
+            "reference_score": 9285
+          },
+          {
+            "active": 1,
+            "canonical_name": "rafael j dar",
+            "name": "Rafael J\u00f3dar",
+            "player_id": "tennis-player-rafael-j-dar",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "confidence": 0.94,
+        "evidence_policy": "accent_duplicate_group",
+        "from_player_id": "tennis-player-jodar-r",
+        "source_display_name": "Jodar R.",
+        "to_player_id": "tennis-player-rafael-jodar"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Marco Trungelliti",
+            "name": "Marco Trungelliti",
+            "player_id": "tennis-player-marco-trungelliti",
+            "reference_counts": {
+              "market_contracts": 3,
+              "market_price_ticks": 1,
+              "market_snapshots": 4,
+              "match_players": 11,
+              "match_stat_rows": 3062,
+              "player_form_snapshots": 10,
+              "rankings": 7,
+              "recent_matches": 74,
+              "replay_games": 164,
+              "replay_points": 704,
+              "service_pressure_snapshots": 9,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 7800
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-trungelliti-m",
+        "source_display_name": "Trungelliti M.",
+        "to_player_id": "tennis-player-marco-trungelliti"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "anna bondar",
+            "name": "Anna Bondar",
+            "player_id": "tennis-player-anna-bondar",
+            "reference_counts": {
+              "h2h_matches": 2,
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 186,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 18,
+              "replay_games": 28,
+              "replay_points": 79,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 757
+          },
+          {
+            "active": 1,
+            "canonical_name": "anna bond r",
+            "name": "Anna Bond\u00e1r",
+            "player_id": "tennis-player-anna-bond-r",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "confidence": 0.94,
+        "evidence_policy": "accent_duplicate_group",
+        "from_player_id": "tennis-player-bondar-a",
+        "source_display_name": "Bondar A.",
+        "to_player_id": "tennis-player-anna-bondar"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "elina svitolina",
+            "name": "Elina Svitolina",
+            "player_id": "tennis-player-elina-svitolina",
+            "reference_counts": {
+              "h2h_matches": 1,
+              "market_contracts": 10,
+              "market_price_ticks": 3,
+              "market_snapshots": 19,
+              "match_players": 8,
+              "match_stat_rows": 3704,
+              "player_form_snapshots": 47,
+              "rankings": 7,
+              "recent_matches": 109,
+              "replay_games": 128,
+              "replay_points": 445,
+              "service_pressure_snapshots": 16,
+              "trusted_entity_aliases": 10
+            },
+            "reference_score": 9359
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-svitolina-e",
+        "source_display_name": "Svitolina E.",
+        "to_player_id": "tennis-player-elina-svitolina"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "ugo humbert",
+            "name": "Ugo Humbert",
+            "player_id": "tennis-player-ugo-humbert",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 3,
+              "match_stat_rows": 1806,
+              "player_form_snapshots": 17,
+              "rankings": 7,
+              "recent_matches": 24,
+              "replay_games": 66,
+              "replay_points": 163,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 7
+            },
+            "reference_score": 4286
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-humbert-u",
+        "source_display_name": "Humbert U.",
+        "to_player_id": "tennis-player-ugo-humbert"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "karen khachanov",
+            "name": "Karen Khachanov",
+            "player_id": "tennis-player-karen-khachanov",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 4,
+              "match_stat_rows": 2222,
+              "player_form_snapshots": 16,
+              "rankings": 7,
+              "recent_matches": 29,
+              "replay_games": 153,
+              "replay_points": 445,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 5584
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-khachanov-k",
+        "source_display_name": "Khachanov K.",
+        "to_player_id": "tennis-player-karen-khachanov"
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "coco gauff",
+            "name": "Coco Gauff",
+            "player_id": "tennis-player-coco-gauff",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_price_ticks": 3,
+              "market_snapshots": 7,
+              "match_players": 3,
+              "match_stat_rows": 490,
+              "rankings": 7,
+              "replay_games": 74,
+              "replay_points": 181,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 5
+            },
+            "reference_score": 1494
+          },
+          {
+            "active": 1,
+            "canonical_name": "cori gauff",
+            "name": "Cori Gauff",
+            "player_id": "tennis-player-cori-gauff",
+            "reference_counts": {
+              "recent_matches": 31
+            },
+            "reference_score": 124
+          }
+        ],
+        "confidence": 0.88,
+        "evidence_policy": "dominant_context_candidate",
+        "from_player_id": "tennis-player-gauff-c",
+        "source_display_name": "Gauff C.",
+        "to_player_id": "tennis-player-coco-gauff"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "solana sierra",
+            "name": "Solana Sierra",
+            "player_id": "tennis-player-solana-sierra",
+            "reference_counts": {
+              "market_contracts": 4,
+              "market_snapshots": 4,
+              "match_players": 4,
+              "match_stat_rows": 1932,
+              "player_form_snapshots": 12,
+              "rankings": 7,
+              "recent_matches": 28,
+              "replay_games": 66,
+              "replay_points": 247,
+              "service_pressure_snapshots": 5,
+              "trusted_entity_aliases": 8
+            },
+            "reference_score": 4691
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-sierra-s",
+        "source_display_name": "Sierra S.",
+        "to_player_id": "tennis-player-solana-sierra"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "stan wawrinka",
+            "name": "Stan Wawrinka",
+            "player_id": "tennis-player-stan-wawrinka",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 1,
+              "match_stat_rows": 216,
+              "player_form_snapshots": 9,
+              "rankings": 7,
+              "recent_matches": 16,
+              "replay_games": 34,
+              "replay_points": 85,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 835
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-wawrinka-s",
+        "source_display_name": "Wawrinka S.",
+        "to_player_id": "tennis-player-stan-wawrinka"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Noemi Basiletti",
+            "name": "Noemi Basiletti",
+            "player_id": "tennis-player-noemi-basiletti",
+            "reference_counts": {
+              "market_snapshots": 1,
+              "match_players": 6,
+              "match_stat_rows": 40,
+              "player_form_snapshots": 1,
+              "rankings": 1,
+              "recent_matches": 9,
+              "replay_games": 62,
+              "replay_points": 445,
+              "trusted_entity_aliases": 3
+            },
+            "reference_score": 785
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-basiletti-n",
+        "source_display_name": "Basiletti N.",
+        "to_player_id": "tennis-player-noemi-basiletti"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "daria snigur",
+            "name": "Daria Snigur",
+            "player_id": "tennis-player-daria-snigur",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_snapshots": 2,
+              "match_players": 3,
+              "match_stat_rows": 1896,
+              "player_form_snapshots": 8,
+              "rankings": 7,
+              "recent_matches": 13,
+              "replay_games": 56,
+              "replay_points": 244,
+              "service_pressure_snapshots": 3,
+              "trusted_entity_aliases": 6
+            },
+            "reference_score": 4419
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-snigur-d",
+        "source_display_name": "Snigur D.",
+        "to_player_id": "tennis-player-daria-snigur"
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "Jakub Mensik",
+            "name": "Jakub Mensik",
+            "player_id": "tennis-player-jakub-mensik",
+            "reference_counts": {
+              "market_contracts": 10,
+              "market_price_ticks": 4,
+              "market_snapshots": 31,
+              "match_players": 13,
+              "match_stat_rows": 5302,
+              "player_form_snapshots": 38,
+              "rankings": 7,
+              "recent_matches": 95,
+              "replay_games": 278,
+              "replay_points": 1126,
+              "service_pressure_snapshots": 16,
+              "trusted_entity_aliases": 10
+            },
+            "reference_score": 13409
+          },
+          {
+            "active": 1,
+            "canonical_name": "jakub men k",
+            "name": "Jakub Men\u0161\u00edk",
+            "player_id": "tennis-player-jakub-men-k",
+            "reference_counts": {},
+            "reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "jakub men ik",
+            "name": "Jakub Men\u0161ik",
+            "player_id": "tennis-player-jakub-men-ik",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "confidence": 0.94,
+        "evidence_policy": "accent_duplicate_group",
+        "from_player_id": "tennis-player-mensik-j",
+        "source_display_name": "Mensik J.",
+        "to_player_id": "tennis-player-jakub-mensik"
+      },
+      {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "jil teichmann",
+            "name": "Jil Teichmann",
+            "player_id": "tennis-player-jil-teichmann",
+            "reference_counts": {
+              "market_contracts": 7,
+              "market_price_ticks": 2,
+              "market_snapshots": 12,
+              "match_players": 7,
+              "match_stat_rows": 2548,
+              "player_form_snapshots": 35,
+              "rankings": 1,
+              "recent_matches": 41,
+              "replay_games": 118,
+              "replay_points": 447,
+              "service_pressure_snapshots": 7,
+              "trusted_entity_aliases": 9
+            },
+            "reference_score": 6516
+          }
+        ],
+        "confidence": 0.93,
+        "evidence_policy": "unique_abbreviation_full_name",
+        "from_player_id": "tennis-player-teichmann-j",
+        "source_display_name": "Teichmann J.",
+        "to_player_id": "tennis-player-jil-teichmann"
+      }
+    ],
+    "redirects_written": 932,
+    "repair_version": "tennis-player-identity-repair-v2",
+    "source_abbreviation_stubs": 655,
+    "sport": "tennis",
+    "status_counts": {
+      "needs_deep_dive": 13,
+      "redirect_ready": 932
+    },
+    "stubs_deactivated": 655,
+    "unresolved": 13,
+    "unresolved_samples": [
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "leylah fernandez",
+            "name": "Leylah Fernandez",
+            "player_id": "tennis-player-leylah-fernandez",
+            "reference_counts": {
+              "market_contracts": 1,
+              "market_snapshots": 1,
+              "match_players": 2,
+              "match_stat_rows": 152,
+              "rankings": 7,
+              "replay_games": 19,
+              "replay_points": 74,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 3
+            },
+            "reference_score": 518
+          },
+          {
+            "active": 1,
+            "canonical_name": "leylah annie fernandez",
+            "name": "Leylah Annie Fernandez",
+            "player_id": "tennis-player-leylah-annie-fernandez",
+            "reference_counts": {
+              "match_players": 2,
+              "match_stat_rows": 16,
+              "recent_matches": 18,
+              "replay_games": 19,
+              "replay_points": 136
+            },
+            "reference_score": 289
+          },
+          {
+            "active": 1,
+            "canonical_name": "lya fernandez",
+            "name": "Lya Fernandez",
+            "player_id": "tennis-player-lya-fernandez",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          }
+        ],
+        "evidence_policy": "multiple_live_candidates",
+        "from_player_id": "tennis-player-fernandez-l",
+        "source_display_name": "Fernandez L."
+      },
+      {
+        "candidate_count": 5,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "pedro martinez",
+            "name": "Pedro Martinez",
+            "player_id": "tennis-player-pedro-martinez",
+            "reference_counts": {
+              "match_players": 1,
+              "match_stat_rows": 150,
+              "rankings": 7,
+              "replay_games": 15,
+              "replay_points": 41,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 2
+            },
+            "reference_score": 425
+          },
+          {
+            "active": 1,
+            "canonical_name": "pedro martinez portero",
+            "name": "Pedro Martinez Portero",
+            "player_id": "tennis-player-pedro-martinez-portero",
+            "reference_counts": {
+              "match_players": 3,
+              "match_stat_rows": 24,
+              "recent_matches": 12,
+              "replay_games": 37,
+              "replay_points": 247
+            },
+            "reference_score": 425
+          },
+          {
+            "active": 1,
+            "canonical_name": "pedro mart nez",
+            "name": "Pedro Mart\u00ednez",
+            "player_id": "tennis-player-pedro-mart-nez",
+            "reference_counts": {},
+            "reference_score": 0
+          },
+          {
+            "active": 1,
+            "canonical_name": "pablo martinez gomez",
+            "name": "Pablo Martinez Gomez",
+            "player_id": "tennis-player-pablo-martinez-gomez",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          },
+          {
+            "active": 1,
+            "canonical_name": "Juan Pablo Barriga Martinez",
+            "name": "Juan Pablo Barriga Martinez",
+            "player_id": "tlp-1d05b87c15e03bb321ad901a",
+            "reference_counts": {},
+            "reference_score": 0
+          }
+        ],
+        "evidence_policy": "multiple_live_candidates",
+        "from_player_id": "tennis-player-martinez-p",
+        "source_display_name": "Martinez P."
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "darwin blanch",
+            "name": "Darwin Blanch",
+            "player_id": "tennis-player-darwin-blanch",
+            "reference_counts": {
+              "match_players": 3,
+              "match_stat_rows": 166,
+              "rankings": 1,
+              "recent_matches": 5,
+              "replay_games": 33,
+              "replay_points": 175,
+              "service_pressure_snapshots": 1,
+              "trusted_entity_aliases": 2
+            },
+            "reference_score": 653
+          },
+          {
+            "active": 1,
+            "canonical_name": "dali blanch",
+            "name": "Dali Blanch",
+            "player_id": "tennis-player-dali-blanch",
+            "reference_counts": {
+              "match_players": 3,
+              "match_stat_rows": 24,
+              "rankings": 1,
+              "recent_matches": 3,
+              "replay_games": 28,
+              "replay_points": 215
+            },
+            "reference_score": 349
+          }
+        ],
+        "evidence_policy": "multiple_live_candidates",
+        "from_player_id": "tennis-player-blanch-d",
+        "source_display_name": "Blanch D."
+      },
+      {
+        "candidate_count": 3,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "maximus jones",
+            "name": "Maximus Jones",
+            "player_id": "tennis-player-maximus-jones",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          },
+          {
+            "active": 1,
+            "canonical_name": "miles jones",
+            "name": "Miles Jones",
+            "player_id": "tennis-player-miles-jones",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          },
+          {
+            "active": 1,
+            "canonical_name": "makenna jones",
+            "name": "Makenna Jones",
+            "player_id": "tennis-player-makenna-jones",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          }
+        ],
+        "evidence_policy": "multiple_live_candidates",
+        "from_player_id": "tennis-player-jones-m",
+        "source_display_name": "Jones M."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-schwaerzler-j-j",
+        "source_display_name": "Schwaerzler J. J."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-poulsen-brostrom-o",
+        "source_display_name": "Poulsen Brostrom O."
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "andres martin",
+            "name": "Andres Martin",
+            "player_id": "tennis-player-andres-martin",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_price_ticks": 1,
+              "market_snapshots": 2,
+              "match_players": 3,
+              "match_stat_rows": 838,
+              "player_form_snapshots": 7,
+              "rankings": 1,
+              "recent_matches": 52,
+              "replay_games": 21,
+              "replay_points": 126,
+              "service_pressure_snapshots": 6,
+              "trusted_entity_aliases": 2
+            },
+            "reference_score": 2236
+          },
+          {
+            "active": 1,
+            "canonical_name": "Andrej Martin",
+            "name": "Andrej Martin",
+            "player_id": "tennis-player-andrej-martin",
+            "reference_counts": {
+              "market_contracts": 2,
+              "market_price_ticks": 1,
+              "market_snapshots": 3,
+              "match_players": 8,
+              "match_stat_rows": 1178,
+              "player_form_snapshots": 8,
+              "rankings": 1,
+              "recent_matches": 54,
+              "replay_games": 50,
+              "replay_points": 328,
+              "service_pressure_snapshots": 6,
+              "trusted_entity_aliases": 3
+            },
+            "reference_score": 3261
+          }
+        ],
+        "evidence_policy": "multiple_live_candidates",
+        "from_player_id": "tennis-player-martin-a",
+        "source_display_name": "Martin A."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-nam-ji-s",
+        "source_display_name": "Nam Ji S."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-ridout-f",
+        "source_display_name": "Ridout F."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-mtisi-r",
+        "source_display_name": "Mtisi R."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-roothman-c",
+        "source_display_name": "Roothman C."
+      },
+      {
+        "candidate_count": 0,
+        "candidates": [],
+        "evidence_policy": "no_full_name_candidate",
+        "from_player_id": "tennis-player-kesharwani-m",
+        "source_display_name": "Kesharwani M."
+      },
+      {
+        "candidate_count": 2,
+        "candidates": [
+          {
+            "active": 1,
+            "canonical_name": "ryuki matsuda",
+            "name": "Ryuki Matsuda",
+            "player_id": "tennis-player-ryuki-matsuda",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          },
+          {
+            "active": 1,
+            "canonical_name": "rinko matsuda",
+            "name": "Rinko Matsuda",
+            "player_id": "tennis-player-rinko-matsuda",
+            "reference_counts": {
+              "rankings": 1
+            },
+            "reference_score": 1
+          }
+        ],
+        "evidence_policy": "multiple_live_candidates",
+        "from_player_id": "tennis-player-matsuda-r",
+        "source_display_name": "Matsuda R."
+      }
+    ]
+  },
+  "script": "data-migration/scripts/repair_tennis_player_identity.py"
+}

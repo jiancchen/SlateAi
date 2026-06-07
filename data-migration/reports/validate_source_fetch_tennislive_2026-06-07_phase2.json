@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-06-07T03:39:45.323Z",
+  "script": "data-migration/scripts/validate_source_fetch_contract.mjs",
+  "result": {
+    "sport": "tennis",
+    "source_name": "tennislive",
+    "source_date": "2026-06-07",
+    "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+    "policy": {
+      "source_fetch_policy_id": "tennis:tennislive",
+      "sport": "tennis",
+      "source_name": "tennislive",
+      "source_family": "player-context",
+      "run_rule": "fetch_if_stale",
+      "default_ttl_hours": 12,
+      "max_stale_hours": 48,
+      "required_for_prediction": 1,
+      "env_ttl_key": "TENNIS_TENNISLIVE_TTL_HOURS",
+      "env_force_key": "TENNIS_TENNISLIVE_FORCE_FETCH",
+      "env_disable_key": "TENNIS_TENNISLIVE_DISABLE_FETCH",
+      "config_path": "development-docs/tennis/runbooks/ingestion_health_remediation.md",
+      "created_at": "2026-06-07T03:39:35.006477+00:00",
+      "updated_at": "2026-06-07T03:39:35.006477+00:00",
+      "notes": "TennisLive player and match pages feeding profiles, recent form, source-native match links, match stats, and replay rows."
+    },
+    "status": {
+      "source_fetch_status_id": "tennis:tennislive:2026-06-07",
+      "sport": "tennis",
+      "source_name": "tennislive",
+      "source_family": "player-context",
+      "source_date": "2026-06-07",
+      "last_fetch_run_id": "source-fetch-tennislive-2026-06-07-2026-06-07T03-37-53-451344+00-00",
+      "last_attempt_at": "2026-06-07T03:37:53.451344+00:00",
+      "last_success_at": "2026-06-07T03:37:53.451344+00:00",
+      "last_status": "success",
+      "last_completeness_status": "complete",
+      "cache_valid_until": "2026-06-07 15:37:53",
+      "expected_item_count": 21,
+      "actual_item_count": 21,
+      "missing_item_count": 0,
+      "unresolved_count": 0,
+      "updated_at": "2026-06-07T03:37:53.451344+00:00",
+      "notes": "{\"adapter\":\"ingest_tennis_tennislive_to_typed\",\"counts\":{\"attempted_pages\":21,\"failed_pages\":0,\"match_attempts\":14,\"match_failures\":0,\"match_successes\":14,\"player_attempts\":7,\"player_failures\":0,\"player_successes\":7,\"successful_pages\":21},\"failures\":[],\"force\":true,\"note\":\"Network fetch and typed normalization for TennisLive player and match pages.\",\"report_path\":\"data-migration/reports/ingest_tennis_tennislive_2026-06-07_phase2_canonical_targets.json\"}"
+    },
+    "run_counts": [
+      {
+        "status": "success",
+        "row_count": 1
+      }
+    ],
+    "stale": false,
+    "ok": true,
+    "errors": []
+  },
+  "ok": true
+}

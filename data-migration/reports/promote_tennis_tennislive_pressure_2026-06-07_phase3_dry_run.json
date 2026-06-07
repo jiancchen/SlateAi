@@ -1,0 +1,269 @@
+{
+  "after_counts": {
+    "service_pressure_snapshots": 1646,
+    "slate_players": 118,
+    "slate_players_with_tennislive_pressure": 0,
+    "slate_players_with_tennislive_stats": 111,
+    "tennislive_service_pressure_snapshots": 0
+  },
+  "before_counts": {
+    "service_pressure_snapshots": 1646,
+    "slate_players": 118,
+    "slate_players_with_tennislive_pressure": 0,
+    "slate_players_with_tennislive_stats": 111,
+    "tennislive_service_pressure_snapshots": 0
+  },
+  "date": null,
+  "dry_run": true,
+  "generated_at": "2026-06-07T03:53:14.707630+00:00",
+  "matches_with_pressure": 499,
+  "ok": true,
+  "parser_module": "pipeline/sources/tennis/normalization/stats.py",
+  "player_id_filters": [],
+  "players_with_pressure": 111,
+  "row_count_delta": {
+    "service_pressure_snapshots": 0,
+    "tennislive_service_pressure_snapshots": 0
+  },
+  "sample_pressure_snapshots": [
+    {
+      "bp_converted_attempts": 9,
+      "bp_converted_made": 5,
+      "bp_converted_pct": 55.5556,
+      "bp_saved_attempts": 10,
+      "bp_saved_made": 3,
+      "bp_saved_pct": 30.0,
+      "break_pct": 50.0,
+      "hold_pct": 40.2,
+      "match_id": "tl-2025-08-11-w50-saskatoon-2025-kaede-usui-vs-jodie-anna-burrage",
+      "player_id": "tennis-player-jodie-anna-burrage",
+      "pressure_snapshot_id": "4d30f061718342155cecbd29462266247acc2fa2",
+      "snapshot_date": "2025-08-11",
+      "source_snapshot_ids": [
+        "c970725811f0e99fe298ac8ae58e9de029cad696"
+      ],
+      "surface": "Hard"
+    },
+    {
+      "bp_converted_attempts": 8,
+      "bp_converted_made": 4,
+      "bp_converted_pct": 50.0,
+      "bp_saved_attempts": 0,
+      "bp_saved_made": 0,
+      "bp_saved_pct": null,
+      "break_pct": 54.902,
+      "hold_pct": 96.9,
+      "match_id": "tl-2025-08-18-us-open-new-york-2025-jodie-anna-burrage-vs-patricia-maria-tig",
+      "player_id": "tennis-player-jodie-anna-burrage",
+      "pressure_snapshot_id": "930b426ded3ce3a9e8fd0ed4b5260af13fb67845",
+      "snapshot_date": "2025-08-18",
+      "source_snapshot_ids": [
+        "ab60b2fc9a02405acf5b6bb34b9187c037c6226f"
+      ],
+      "surface": "Hard"
+    },
+    {
+      "bp_converted_attempts": 10,
+      "bp_converted_made": 4,
+      "bp_converted_pct": 40.0,
+      "bp_saved_attempts": 12,
+      "bp_saved_made": 6,
+      "bp_saved_pct": 50.0,
+      "break_pct": 41.5929,
+      "hold_pct": 60.8,
+      "match_id": "tl-2025-08-21-us-open-new-york-2025-arantxa-rus-vs-jodie-anna-burrage",
+      "player_id": "tennis-player-jodie-anna-burrage",
+      "pressure_snapshot_id": "25a7c52347f4b0ce0e804ee277d0a82579d1882c",
+      "snapshot_date": "2025-08-21",
+      "source_snapshot_ids": [
+        "02d4958bf80b1bf75afa074af0e71d708111aaca"
+      ],
+      "surface": "Hard"
+    },
+    {
+      "bp_converted_attempts": 7,
+      "bp_converted_made": 4,
+      "bp_converted_pct": 57.1429,
+      "bp_saved_attempts": 7,
+      "bp_saved_made": 4,
+      "bp_saved_pct": 57.1429,
+      "break_pct": 50.6329,
+      "hold_pct": 57.8,
+      "match_id": "tl-2025-09-07-m25-plaisir-2025-andrea-baudel-vs-richard-antoni",
+      "player_id": "tennis-player-andrea-baudel",
+      "pressure_snapshot_id": "78c59d7ffcbaf1d68e9928f535293026a5a66157",
+      "snapshot_date": "2025-09-07",
+      "source_snapshot_ids": [
+        "25ed7e4c2c77ce241d2e81d1217c6476dcdd13a1"
+      ],
+      "surface": "Indoor Hard"
+    },
+    {
+      "bp_converted_attempts": 6,
+      "bp_converted_made": 5,
+      "bp_converted_pct": 83.3333,
+      "bp_saved_attempts": 1,
+      "bp_saved_made": 0,
+      "bp_saved_pct": 0.0,
+      "break_pct": 56.4103,
+      "hold_pct": 92.1,
+      "match_id": "tl-2025-09-07-m25-plaisir-2025-andrea-baudel-vs-ulysse-esphahani",
+      "player_id": "tennis-player-andrea-baudel",
+      "pressure_snapshot_id": "8ad2d41f6dd3184789ebdedae9e76124f3c8c09f",
+      "snapshot_date": "2025-09-07",
+      "source_snapshot_ids": [
+        "b746cece000a49333cbbbcaf3c385d7b60ceab10"
+      ],
+      "surface": "Indoor Hard"
+    },
+    {
+      "bp_converted_attempts": 7,
+      "bp_converted_made": 3,
+      "bp_converted_pct": 42.8571,
+      "bp_saved_attempts": 8,
+      "bp_saved_made": 5,
+      "bp_saved_pct": 62.5,
+      "break_pct": 43.5897,
+      "hold_pct": 65.5,
+      "match_id": "tl-2025-09-08-m25-plaisir-2025-timothee-andriveau-vs-andrea-baudel",
+      "player_id": "tennis-player-andrea-baudel",
+      "pressure_snapshot_id": "17c91649886577093f54f0017fabfa8d7a01cec4",
+      "snapshot_date": "2025-09-08",
+      "source_snapshot_ids": [
+        "5577f579bed565995d3144872167ff4c24d2e1dd"
+      ],
+      "surface": "Indoor Hard"
+    },
+    {
+      "bp_converted_attempts": 4,
+      "bp_converted_made": 1,
+      "bp_converted_pct": 25.0,
+      "bp_saved_attempts": 8,
+      "bp_saved_made": 4,
+      "bp_saved_pct": 50.0,
+      "break_pct": 35.9375,
+      "hold_pct": 65.7,
+      "match_id": "tl-2025-09-23-jingshan-tennis-open-jingshan-2025-yexin-ma-vs-jodie-anna-burrage",
+      "player_id": "tennis-player-jodie-anna-burrage",
+      "pressure_snapshot_id": "c1738372a5a9188d734b07be13dc04f982b3e026",
+      "snapshot_date": "2025-09-23",
+      "source_snapshot_ids": [
+        "70c3540644a55a6f282b83ec0e81f3053f4b35e5"
+      ],
+      "surface": "Hard"
+    },
+    {
+      "bp_converted_attempts": 2,
+      "bp_converted_made": 1,
+      "bp_converted_pct": 50.0,
+      "bp_saved_attempts": 12,
+      "bp_saved_made": 7,
+      "bp_saved_pct": 58.3333,
+      "break_pct": 35.8491,
+      "hold_pct": 47.6,
+      "match_id": "tl-2026-03-17-asuncion-challenger-2026-juan-pablo-varillas-vs-mariano-kestelboim",
+      "player_id": "tennis-player-mariano-kestelboim",
+      "pressure_snapshot_id": "33788fe24978b9c0fe40434e20ba711beae77f54",
+      "snapshot_date": "2026-03-17",
+      "source_snapshot_ids": [
+        "c3ecad651f0f43a055576b53d7b0b0b2956d8249"
+      ],
+      "surface": "Clay"
+    }
+  ],
+  "sample_source_snapshots": [
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/wta-match-susan-bandecchi-vs-chloe-paquet-french-open-paris-2026-d5057287724c.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "0022c1edf44d5fddfb352bc4cce2a5a1b12261d4",
+      "source_url": "https://www.tennislive.net/wta/match/susan-bandecchi-VS-chloe-paquet/french-open-paris-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-lorenzo-rottoli-vs-jan-wygona-m15-tsaghkadzor-2026-796ae754b84d.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "00494c3f9df0f9085dc09b7f86975e1fdf276964",
+      "source_url": "https://www.tennislive.net/atp/match/lorenzo-rottoli-VS-jan-wygona/m15-tsaghkadzor-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-mathys-erhard-vs-taro-taro-kosice-challenger-2026-e94f186f577d.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "0061e10567476bf7deda1d915210474aa0ce56c8",
+      "source_url": "https://www.tennislive.net/atp/match/mathys-erhard-VS-taro-taro/kosice-challenger-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/wta-match-francesca-pace-vs-luisina-giovannini-w75-caserta-2026-13865194c6fe.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "00b2af8980a20c3cbc180f3f3471ec3dfe887b3c",
+      "source_url": "https://www.tennislive.net/wta/match/francesca-pace-VS-luisina-giovannini/w75-caserta-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/wta-match-solana-sierra-vs-carole-monnet-parma-ladies-open-parma-2026-bc521f6fbd44.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "00d7b804ccbb7489affb74ad532784f012549171",
+      "source_url": "https://www.tennislive.net/wta/match/solana-sierra-VS-carole-monnet/parma-ladies-open-parma-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/wta-match-elsa-jacquemot-vs-linda-fruhvirtova-french-open-paris-2026-ffb2737b53f5.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "01f7b4e1dcb48583ecff32297bbd8531ac650cc4",
+      "source_url": "https://www.tennislive.net/wta/match/elsa-jacquemot-VS-linda-fruhvirtova/french-open-paris-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-lucas-poullain-vs-michal-krajci-m25-louny-2026-085195c0620c.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "0211ee3d1767f7724357ea473e5c873056477b79",
+      "source_url": "https://www.tennislive.net/atp/match/lucas-poullain-VS-michal-krajci/m25-louny-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-soon-woo-kwon-vs-akira-santillan-wuxi-challenger-2026-66d496795d6a.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "028d5664359d0df453945d1c9e135e25856dfbda",
+      "source_url": "https://www.tennislive.net/atp/match/soon-woo-kwon-VS-akira-santillan/wuxi-challenger-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/wta-match-arantxa-rus-vs-jodie-anna-burrage-us-open-new-york-2025-bf1cb8521b68.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "02d4958bf80b1bf75afa074af0e71d708111aaca",
+      "source_url": "https://www.tennislive.net/wta/match/arantxa-rus-VS-jodie-anna-burrage/us-open-new-york-2025/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-mika-petkovic-vs-viktor-durasovic-m25-troisdorf-2026-8d7f328ca3ea.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "02ed7b845d30868ef598d456850e94848f724713",
+      "source_url": "https://www.tennislive.net/atp/match/mika-petkovic-VS-viktor-durasovic/m25-troisdorf-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-rei-sakamoto-vs-matteo-martineau-bordeaux-challenger-2026-e1860ea5654f.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "04252895ff14c3dc5a0525692d147d1d684ee34e",
+      "source_url": "https://www.tennislive.net/atp/match/rei-sakamoto-VS-matteo-martineau/bordeaux-challenger-2026/",
+      "status": "captured"
+    },
+    {
+      "local_path": "data-private/reference/tennis/tennislive/match/atp-match-hynek-barton-vs-norbert-gombos-prostejov-challenger-2026-d00da26971b7.html",
+      "source_name": "tennislive",
+      "source_snapshot_id": "0498ea5d54ca190dd33748e8c4604250a9a56878",
+      "source_url": "https://www.tennislive.net/atp/match/hynek-barton-VS-norbert-gombos/prostejov-challenger-2026/",
+      "status": "captured"
+    }
+  ],
+  "script": "data-migration/scripts/promote_tennis_tennislive_pressure.py",
+  "selected_player_ids": 118,
+  "service_pressure_rows": 537,
+  "slate_date": "2026-06-07",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_player_matches_loaded": 998,
+  "source_player_matches_selected": 537,
+  "source_stat_rows": 7984,
+  "upserted_service_pressure_rows": 0
+}
