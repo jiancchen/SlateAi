@@ -89,10 +89,10 @@ const isDoublesName = (value) => /[/&]/.test(String(value || ''))
 
 const SURFACE_BY_TOURNAMENT_TOKEN = [
   [/french open|roland garros/i, 'Clay', 'Grand Slam tournament surface'],
-  [/perugia/i, 'Clay', 'ATP Challenger Perugia surface'],
+  [/perugia|foggia|makarska|modena|bratislava|lyon|cattolica/i, 'Clay', 'ATP/WTA clay tournament surface'],
   [/prostejov/i, 'Clay', 'ATP Challenger Prostejov surface'],
   [/bad rappenau|heilbronn|neckarcup/i, 'Clay', 'ATP Challenger Bad Rappenau surface'],
-  [/\b(birmingham|wimbledon|halle|queen)\b/i, 'Grass', 'Grass tournament surface'],
+  [/\b(birmingham|wimbledon|halle|queen|hertogenbosch|london|ilkley)\b/i, 'Grass', 'Grass tournament surface'],
   [/tyler/i, 'Hard', 'ATP Challenger Tyler surface'],
   [/centurion/i, 'Hard', 'ATP Challenger Centurion surface']
 ]
@@ -133,13 +133,22 @@ const eventContracts = (event, quotesById, fundamentalsById) =>
   })
 
 const classify = (tournament, event) => {
-  if (/French Open.*Women Singles/i.test(tournament)) return 'french_open_women_singles'
-  if (/French Open.*Men Singles/i.test(tournament)) return 'french_open_men_singles'
+  const text = `${tournament || ''} ${event.name || ''} ${event.longDescription || ''} ${(event.urlSlugs || []).join(' ')}`
+  if (/French Open.*Women Singles|Women's French Open|womens-french-open/i.test(text)) return 'french_open_women_singles'
+  if (/French Open.*Men Singles|Men's French Open|mens-french-open/i.test(text)) return 'french_open_men_singles'
   if (/ATP Challenger/i.test(tournament)) return 'atp_challenger_singles'
   if (/WTA 125K/i.test(tournament)) return 'wta_125k_singles'
+  if (/\bWTA\b/i.test(tournament)) return 'wta_singles'
   if (/ITF|^M\d+|^W\d+/i.test(tournament)) return 'itf'
   return event.isSports ? 'tennis_other' : 'other'
 }
+
+const isPredictionSupplementRow = (row) =>
+  row.singles &&
+  (/^french_open_/.test(row.category) ||
+    row.category === 'wta_singles' ||
+    row.category === 'wta_125k_singles' ||
+    row.category === 'atp_challenger_singles')
 
 const buildMarketRows = (pageProps, date) => {
   const quotesById = new Map(values(pageProps.quotes).map((quote) => [quote.instrument_id, quote]))
@@ -176,9 +185,11 @@ const buildMarketRows = (pageProps, date) => {
 const toSupplementMatch = (row, date) => {
   const surfaceInfo = inferSurface(row.tournament, row.name)
   const players = row.contracts.map((contract) => ({
+    contractId: contract.id,
     name: contract.name,
     shortName: contract.shortName,
     symbol: contract.symbol,
+    sourceUrl: row.sourceUrl,
     yesBid: contract.yesBid,
     yesAsk: contract.yesAsk,
     lastTradePrice: contract.lastTradePrice,
@@ -186,7 +197,8 @@ const toSupplementMatch = (row, date) => {
     yesAskCents: contract.yesAskCents,
     lastTradeCents: contract.lastTradeCents,
     openInterest: contract.openInterest,
-    volume: contract.volume
+    volume: contract.volume,
+    quoteUpdatedAt: contract.quoteUpdatedAt
   }))
   const id = `rh-${slug(row.tournament)}-${slug(row.name)}-${date}`
   return {
@@ -241,8 +253,8 @@ const main = async () => {
   const frenchOpenSingles = rows
     .filter((row) => row.singles && /^french_open_/.test(row.category))
     .map((row) => toSupplementMatch(row, options.date))
-  const nonItfSingles = rows
-    .filter((row) => row.singles && row.category !== 'itf')
+  const predictionSingles = rows
+    .filter(isPredictionSupplementRow)
     .map((row) => toSupplementMatch(row, options.date))
 
   const payload = {
@@ -257,7 +269,7 @@ const main = async () => {
     }, {}),
     events: rows
   }
-  const supplementMatches = nonItfSingles.sort(
+  const supplementMatches = predictionSingles.sort(
     (left, right) => left.startIso.localeCompare(right.startIso) || left.title.localeCompare(right.title)
   )
   const supplement = {
@@ -268,7 +280,7 @@ const main = async () => {
     totalEvents: rows.length,
     atpChallengerSingles: atpChallenger.length,
     frenchOpenSingles: frenchOpenSingles.length,
-    nonItfSingles: nonItfSingles.length,
+    predictionSingles: predictionSingles.length,
     surfaceCounts: supplementMatches.reduce((counts, row) => {
       counts[row.surface || 'Unknown'] = (counts[row.surface || 'Unknown'] || 0) + 1
       return counts
@@ -291,7 +303,7 @@ const main = async () => {
         supplementMatches: supplement.matches.length,
         atpChallengerSingles: supplement.atpChallengerSingles,
         frenchOpenSingles: supplement.frenchOpenSingles,
-        nonItfSingles: supplement.nonItfSingles
+        predictionSingles: supplement.predictionSingles
       },
       null,
       2

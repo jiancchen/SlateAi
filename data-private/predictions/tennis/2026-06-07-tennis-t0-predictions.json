@@ -224,6 +224,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:07.554Z",
@@ -472,6 +473,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:25.245Z",
@@ -721,6 +723,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:08.947Z",
@@ -967,6 +970,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:06.022Z",
@@ -1209,6 +1213,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:31.977Z",
@@ -1449,6 +1454,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:11.217Z",
@@ -1693,6 +1699,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:09.952Z",
@@ -1936,6 +1943,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:30.686Z",
@@ -2182,6 +2190,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:08.607Z",
@@ -2424,6 +2433,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:33.268Z",
@@ -2460,17 +2470,17 @@
       "format": "WTA",
       "bestOf": 3,
       "marketOnly": false,
-      "court": "WTA Quals. - Hertogenbosch",
+      "court": "WTA S-Hertogenbosch Qualification",
       "start": "2:00 AM",
       "pick": "Greet Minnen",
-      "modelProbability": 56,
+      "modelProbability": 54.9,
       "marketProbability": 65.6,
       "marketAmericanOdds": -191,
-      "modelEdge": -9.6,
-      "confidence": 56,
+      "modelEdge": -10.7,
+      "confidence": 54.9,
       "volatility": 49,
       "tier": "Watch",
-      "rationale": "Greet Minnen has the cleaner composite of rank, recent opponent quality, and joined service data on Unknown. Lean, not a chase.",
+      "rationale": "Greet Minnen has the cleaner composite of rank, recent opponent quality, and joined service data on Grass. Lean, not a chase.",
       "weaknessEdge": {
         "edgeType": "Weakness edge",
         "target": "Ella Seidel",
@@ -2557,14 +2567,14 @@
           "selection": "Greet Minnen",
           "line": -3.5,
           "americanOdds": -115,
-          "modelPct": 54,
+          "modelPct": 53,
           "impliedPct": 53.5,
-          "edgePct": 0.5,
-          "evPer100": 1,
-          "netEvPer100": -1,
+          "edgePct": -0.5,
+          "evPer100": -0.9,
+          "netEvPer100": -2.9,
           "expectedGames": null,
           "edgeGames": null,
-          "confidence": 54,
+          "confidence": 53,
           "grade": "Near fair",
           "reason": "Greet Minnen spread is playable only if early return pressure shows"
         },
@@ -2579,7 +2589,7 @@
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
-          "expectedGames": 20.2,
+          "expectedGames": 20.5,
           "edgeGames": null,
           "confidence": null,
           "grade": "No direction",
@@ -2588,22 +2598,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Ella Seidel 66% / Greet Minnen 64%",
+          "selection": "Ella Seidel 67% / Greet Minnen 63%",
           "rows": [
             {
               "name": "Ella Seidel",
-              "confidence": 66,
+              "confidence": 67,
               "modelPct": 46,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Greet Minnen",
-              "confidence": 64,
-              "modelPct": 56,
+              "confidence": 63,
+              "modelPct": 54.9,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 66,
+          "confidence": 67,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -2611,12 +2621,12 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Under 9.5",
-          "expectedGames": 8.5,
-          "confidence": 62,
+          "expectedGames": 8.6,
+          "confidence": 61,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 54,
           "grade": "Actionable live watch",
-          "reason": "Expected first-set games 8.5 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets."
+          "reason": "Expected first-set games 8.6 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets."
         }
       ],
       "valueBoard": {
@@ -2643,11 +2653,11 @@
           "selection": "Greet Minnen",
           "line": -3.5,
           "americanOdds": -115,
-          "modelPct": 54,
+          "modelPct": 53,
           "impliedPct": 53.5,
-          "edgePct": 0.5,
-          "evPer100": 1,
-          "netEvPer100": -1,
+          "edgePct": -0.5,
+          "evPer100": -0.9,
+          "netEvPer100": -2.9,
           "feePer100": 2,
           "valueIssue": "Spread watch only",
           "valueGrade": "Near fair",
@@ -2659,7 +2669,7 @@
           "line": 20.5,
           "overOdds": -130,
           "underOdds": -110,
-          "expectedGames": 20.2,
+          "expectedGames": 20.5,
           "valueGrade": "No direction",
           "reason": "DraftKings Sportsbook total is 20.5; model did not clear a full-match over/under edge from hold, return, and set-shape data. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets.",
           "betGrade": false
@@ -2669,21 +2679,21 @@
           "selection": "Under 9.5",
           "line": 9.5,
           "americanOdds": -140,
-          "expectedGames": 8.5,
-          "confidence": 62,
+          "expectedGames": 8.6,
+          "confidence": 61,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 54,
-          "modelPct": 62,
-          "evPer100": 6.3,
-          "netEvPer100": 4.3,
+          "modelPct": 61,
+          "evPer100": 4.6,
+          "netEvPer100": 2.6,
           "valueGrade": "Actionable live watch",
-          "reason": "Expected first-set games 8.5 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets.",
+          "reason": "Expected first-set games 8.6 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets.",
           "betGrade": false
         },
         "setWin": [
           {
             "name": "Ella Seidel",
-            "confidence": 66,
+            "confidence": 67,
             "modelPct": 46,
             "label": "Underdog set-win path needs early holds",
             "marketType": "Win a set",
@@ -2692,14 +2702,44 @@
           },
           {
             "name": "Greet Minnen",
-            "confidence": 64,
-            "modelPct": 56,
+            "confidence": 63,
+            "modelPct": 54.9,
             "label": "Market favorite to win a set",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
             "betGrade": false
           }
         ]
+      },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 3945,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Ella Seidel",
+            "probabilityPct": 39,
+            "bidPct": 36,
+            "lastTradePct": 39,
+            "openInterest": 3688,
+            "symbol": "KXWTAMATCH-26JUN07SEIMIN-SEI",
+            "modelPct": 46,
+            "edgePct": 7
+          },
+          {
+            "name": "Greet Minnen",
+            "probabilityPct": 63,
+            "bidPct": 62,
+            "lastTradePct": 63,
+            "openInterest": 257,
+            "symbol": "KXWTAMATCH-26JUN07SEIMIN-MIN",
+            "modelPct": 54.9,
+            "edgePct": -8.1
+          }
+        ],
+        "priceAction": "Prediction-market fade; market is asking too much versus the model."
       },
       "market": {
         "source": "DraftKings Sportsbook",
@@ -2718,8 +2758,8 @@
             "name": "Greet Minnen",
             "americanOdds": -191,
             "impliedPct": 65.6,
-            "modelPct": 56,
-            "edgePct": -9.6,
+            "modelPct": 54.9,
+            "edgePct": -10.7,
             "grossProfitPct": 52.4,
             "priceBand": "Moderate favorite"
           }
@@ -2737,14 +2777,14 @@
       "format": "WTA",
       "bestOf": 3,
       "marketOnly": false,
-      "court": "WTA Quals. - Hertogenbosch",
+      "court": "WTA S-Hertogenbosch Qualification",
       "start": "2:00 AM",
       "pick": "Hanne Vandewinkel",
-      "modelProbability": 55.2,
+      "modelProbability": 54.6,
       "marketProbability": 62.3,
       "marketAmericanOdds": -165,
-      "modelEdge": -7.1,
-      "confidence": 55.2,
+      "modelEdge": -7.7,
+      "confidence": 54.6,
       "volatility": 50,
       "tier": "Watch",
       "rationale": "Anouk Koevermans grades 35 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
@@ -2818,11 +2858,11 @@
           "selection": "Anouk Koevermans",
           "line": null,
           "americanOdds": 134,
-          "modelPct": 46.9,
+          "modelPct": 46.2,
           "impliedPct": 42.7,
-          "edgePct": 4.2,
-          "evPer100": 9.7,
-          "netEvPer100": 7.7,
+          "edgePct": 3.5,
+          "evPer100": 8.1,
+          "netEvPer100": 6.1,
           "grade": "Raw ML edge only",
           "issue": "Picked side is overpriced; value board flips to Anouk Koevermans because that side has the better posted-price edge.",
           "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
@@ -2869,13 +2909,13 @@
             {
               "name": "Hanne Vandewinkel",
               "confidence": 63,
-              "modelPct": 55.2,
+              "modelPct": 54.6,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Anouk Koevermans",
               "confidence": 67,
-              "modelPct": 46.9,
+              "modelPct": 46.2,
               "label": "Underdog set-win path needs early holds"
             }
           ],
@@ -2901,15 +2941,15 @@
           "marketType": "ML",
           "selection": "Anouk Koevermans",
           "americanOdds": 134,
-          "modelPct": 46.9,
+          "modelPct": 46.2,
           "impliedPct": 42.7,
-          "edgePct": 4.2,
-          "evPer100": 9.7,
-          "netEvPer100": 7.7,
+          "edgePct": 3.5,
+          "evPer100": 8.1,
+          "netEvPer100": 6.1,
           "feePer100": 2,
-          "rawEdgePct": 4.2,
-          "rawEvPer100": 9.7,
-          "rawNetEvPer100": 7.7,
+          "rawEdgePct": 3.5,
+          "rawEvPer100": 8.1,
+          "rawNetEvPer100": 6.1,
           "valueIssue": "Picked side is overpriced; value board flips to Anouk Koevermans because that side has the better posted-price edge.",
           "valueGrade": "Raw ML edge only",
           "betGrade": false
@@ -2966,7 +3006,7 @@
           {
             "name": "Hanne Vandewinkel",
             "confidence": 63,
-            "modelPct": 55.2,
+            "modelPct": 54.6,
             "label": "Market favorite to win a set",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
@@ -2975,13 +3015,43 @@
           {
             "name": "Anouk Koevermans",
             "confidence": 67,
-            "modelPct": 46.9,
+            "modelPct": 46.2,
             "label": "Underdog set-win path needs early holds",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
             "betGrade": false
           }
         ]
+      },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 11095,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Hanne Vandewinkel",
+            "probabilityPct": 61,
+            "bidPct": 59,
+            "lastTradePct": 61,
+            "openInterest": 9990,
+            "symbol": "KXWTAMATCH-26JUN07VANKOE-VAN",
+            "modelPct": 54.6,
+            "edgePct": -6.4
+          },
+          {
+            "name": "Anouk Koevermans",
+            "probabilityPct": 41,
+            "bidPct": 38,
+            "lastTradePct": 39,
+            "openInterest": 1105,
+            "symbol": "KXWTAMATCH-26JUN07VANKOE-KOE",
+            "modelPct": 46.2,
+            "edgePct": 5.2
+          }
+        ],
+        "priceAction": "Prediction-market tax; price is ahead of the model."
       },
       "market": {
         "source": "DraftKings Sportsbook",
@@ -2991,8 +3061,8 @@
             "name": "Hanne Vandewinkel",
             "americanOdds": -165,
             "impliedPct": 62.3,
-            "modelPct": 55.2,
-            "edgePct": -7.1,
+            "modelPct": 54.6,
+            "edgePct": -7.7,
             "grossProfitPct": 60.6,
             "priceBand": "Moderate favorite"
           },
@@ -3000,8 +3070,8 @@
             "name": "Anouk Koevermans",
             "americanOdds": 134,
             "impliedPct": 42.7,
-            "modelPct": 46.9,
-            "edgePct": 4.2,
+            "modelPct": 46.2,
+            "edgePct": 3.5,
             "grossProfitPct": 134,
             "priceBand": "Underdog"
           }
@@ -3019,14 +3089,14 @@
       "format": "ATP",
       "bestOf": 3,
       "marketOnly": false,
-      "court": "ATP Challenger - Prostejov",
+      "court": "ATP Challenger Prostejov",
       "start": "2:00 AM",
       "pick": "Sebastian Baez",
-      "modelProbability": 56.1,
+      "modelProbability": 56.8,
       "marketProbability": 60.3,
       "marketAmericanOdds": -152,
-      "modelEdge": -4.2,
-      "confidence": 56.1,
+      "modelEdge": -3.5,
+      "confidence": 56.8,
       "volatility": 48,
       "tier": "Watch",
       "rationale": "Opponent-adjusted recent form is basically even: Sebastian Baez 74, Alex Molcan 70. Lean, not a chase.",
@@ -3099,17 +3169,17 @@
         {
           "marketType": "Moneyline",
           "label": "ML value",
-          "selection": "Alex Molcan",
+          "selection": "Sebastian Baez",
           "line": null,
-          "americanOdds": 116,
-          "modelPct": 46.7,
-          "impliedPct": 46.3,
-          "edgePct": 0.4,
-          "evPer100": 0.9,
-          "netEvPer100": -1.1,
-          "grade": "Raw ML edge only",
-          "issue": "Picked side is overpriced; value board flips to Alex Molcan because that side has the better posted-price edge.",
-          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+          "americanOdds": -152,
+          "modelPct": 56.8,
+          "impliedPct": 60.3,
+          "edgePct": -3.5,
+          "evPer100": -5.8,
+          "netEvPer100": -7.8,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
         },
         {
           "marketType": "Total games",
@@ -3131,22 +3201,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Sebastian Baez 64% / Alex Molcan 66%",
+          "selection": "Sebastian Baez 65% / Alex Molcan 65%",
           "rows": [
             {
               "name": "Sebastian Baez",
-              "confidence": 64,
-              "modelPct": 56.1,
+              "confidence": 65,
+              "modelPct": 56.8,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Alex Molcan",
-              "confidence": 66,
-              "modelPct": 46.7,
+              "confidence": 65,
+              "modelPct": 44.1,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 66,
+          "confidence": 65,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -3166,19 +3236,16 @@
         "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
         "ml": {
           "marketType": "ML",
-          "selection": "Alex Molcan",
-          "americanOdds": 116,
-          "modelPct": 46.7,
-          "impliedPct": 46.3,
-          "edgePct": 0.4,
-          "evPer100": 0.9,
-          "netEvPer100": -1.1,
+          "selection": "Sebastian Baez",
+          "americanOdds": -152,
+          "modelPct": 56.8,
+          "impliedPct": 60.3,
+          "edgePct": -3.5,
+          "evPer100": -5.8,
+          "netEvPer100": -7.8,
           "feePer100": 2,
-          "rawEdgePct": 0.4,
-          "rawEvPer100": 0.9,
-          "rawNetEvPer100": -1.1,
-          "valueIssue": "Picked side is overpriced; value board flips to Alex Molcan because that side has the better posted-price edge.",
-          "valueGrade": "Raw ML edge only",
+          "valueIssue": "Favorite price needs better proof",
+          "valueGrade": "Negative EV",
           "betGrade": false
         },
         "spread": null,
@@ -3212,8 +3279,8 @@
         "setWin": [
           {
             "name": "Sebastian Baez",
-            "confidence": 64,
-            "modelPct": 56.1,
+            "confidence": 65,
+            "modelPct": 56.8,
             "label": "Market favorite to win a set",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
@@ -3221,14 +3288,44 @@
           },
           {
             "name": "Alex Molcan",
-            "confidence": 66,
-            "modelPct": 46.7,
+            "confidence": 65,
+            "modelPct": 44.1,
             "label": "Underdog set-win path needs early holds",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
             "betGrade": false
           }
         ]
+      },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 109932,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Sebastian Baez",
+            "probabilityPct": 62,
+            "bidPct": 60,
+            "lastTradePct": 62,
+            "openInterest": 84075,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN07BAEMOL-BAE",
+            "modelPct": 56.8,
+            "edgePct": -5.2
+          },
+          {
+            "name": "Alex Molcan",
+            "probabilityPct": 40,
+            "bidPct": 39,
+            "lastTradePct": 41,
+            "openInterest": 25857,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN07BAEMOL-MOL",
+            "modelPct": 44.1,
+            "edgePct": 4.1
+          }
+        ],
+        "priceAction": "Prediction-market tax; price is ahead of the model."
       },
       "market": {
         "source": "DraftKings Sportsbook",
@@ -3238,8 +3335,8 @@
             "name": "Sebastian Baez",
             "americanOdds": -152,
             "impliedPct": 60.3,
-            "modelPct": 56.1,
-            "edgePct": -4.2,
+            "modelPct": 56.8,
+            "edgePct": -3.5,
             "grossProfitPct": 65.8,
             "priceBand": "Moderate favorite"
           },
@@ -3247,15 +3344,15 @@
             "name": "Alex Molcan",
             "americanOdds": 116,
             "impliedPct": 46.3,
-            "modelPct": 46.7,
-            "edgePct": 0.4,
+            "modelPct": 44.1,
+            "edgePct": -2.2,
             "grossProfitPct": 116,
             "priceBand": "Coinflip"
           }
         ],
         "spread": "No primary game spread captured",
         "totalGames": "No total captured",
-        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
       }
     },
     {
@@ -3479,6 +3576,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:11.582Z",
@@ -3720,6 +3818,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:10.212Z",
@@ -4001,6 +4100,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:44.964Z",
@@ -4282,6 +4382,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:41.959Z",
@@ -4560,6 +4661,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:40.589Z",
@@ -4838,6 +4940,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:43.567Z",
@@ -5079,6 +5182,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:26.409Z",
@@ -5327,6 +5431,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:14.103Z",
@@ -5573,6 +5678,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:37.579Z",
@@ -5817,6 +5923,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:12.534Z",
@@ -6062,6 +6169,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:34.555Z",
@@ -6301,6 +6409,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:35.905Z",
@@ -6546,6 +6655,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:15.409Z",
@@ -6576,6 +6686,283 @@
     },
     {
       "rank": 27,
+      "id": "dk-atp-challenger-centurion-2-philip-henning-vs-alexander-donski-2026-06-07",
+      "matchId": "dk-atp-challenger-centurion-2-philip-henning-vs-alexander-donski-2026-06-07",
+      "match": "Alexander Donski vs Philip Henning",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger Centurion 2",
+      "start": "3:00 AM",
+      "pick": "Philip Henning",
+      "modelProbability": 67.9,
+      "marketProbability": 86.7,
+      "marketAmericanOdds": -650,
+      "modelEdge": -18.8,
+      "confidence": 67.9,
+      "volatility": 53,
+      "tier": "Watch",
+      "rationale": "Opponent-adjusted recent form is basically even: Philip Henning 76, Alexander Donski 78. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "Weakness edge",
+        "target": "Alexander Donski",
+        "scoreGap": 34,
+        "attackingSide": "Philip Henning",
+        "vulnerableSide": "Alexander Donski",
+        "gameFlow": "Philip Henning has a real path if Alexander Donski's first two service games show the same weakness: double-fault pressure (10.2 avg); 5 recent matches with serve instability.",
+        "liveTrigger": "Look for Alexander Donski facing break points or second-serve pressure before 3-3.",
+        "spreadRead": "Philip Henning spread only if the handicap is short and Alexander Donski is under pressure early.",
+        "totalRead": "Avoid low unders if Alexander Donski faces early break points or second-serve pressure.",
+        "pick": {
+          "name": "Philip Henning",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 80,
+          "secondServeWonPct": 53,
+          "firstServePct": 60,
+          "avgAces": 3.2,
+          "avgDoubleFaults": 2.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 49,
+          "servicePointsWonPct": 69,
+          "weakServeMatches": 1,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (80%)",
+            "creates return pressure (49% return points won)"
+          ],
+          "gameFlowRead": "Philip Henning has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Alexander Donski",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 78,
+          "secondServeWonPct": 48,
+          "firstServePct": 49,
+          "avgAces": 11.8,
+          "avgDoubleFaults": 10.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 38,
+          "servicePointsWonPct": 63,
+          "weakServeMatches": 5,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 36,
+          "firstGameComfort": "Fragile opening-service profile",
+          "liabilities": [
+            "double-fault pressure (10.2 avg)",
+            "5 recent matches with serve instability"
+          ],
+          "strengths": [
+            "wins enough first-serve points (78%)"
+          ],
+          "gameFlowRead": "Alexander Donski can drop points quickly through double-fault pressure (10.2 avg) and 5 recent matches with serve instability."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Alexander Donski",
+          "line": null,
+          "americanOdds": 400,
+          "modelPct": 32.9,
+          "impliedPct": 20,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Outlier price/manual review",
+          "issue": "Outlier dog price on Alexander Donski; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+          "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 35.1,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Alexander Donski 54% / Philip Henning 76%",
+          "rows": [
+            {
+              "name": "Alexander Donski",
+              "confidence": 54,
+              "modelPct": 32.9,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Philip Henning",
+              "confidence": 76,
+              "modelPct": 67.9,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 76,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Over 9.5",
+          "expectedGames": 9.9,
+          "confidence": 58,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 54,
+          "grade": "Thin value",
+          "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 42%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "valueBoard": {
+        "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+        "ml": {
+          "marketType": "ML",
+          "selection": "Alexander Donski",
+          "americanOdds": 400,
+          "modelPct": 32.9,
+          "impliedPct": 20,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "feePer100": 2,
+          "rawEdgePct": 12.9,
+          "rawEvPer100": 64.5,
+          "rawNetEvPer100": 62.5,
+          "valueIssue": "Outlier dog price on Alexander Donski; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+          "valueGrade": "Outlier price/manual review",
+          "betGrade": false
+        },
+        "spread": null,
+        "total": {
+          "marketType": "Total",
+          "selection": "No bet",
+          "line": null,
+          "overOdds": null,
+          "underOdds": null,
+          "expectedGames": 35.1,
+          "valueGrade": "No direction",
+          "reason": "No posted match total captured.",
+          "betGrade": false
+        },
+        "firstSetTotal": {
+          "marketType": "First-set total",
+          "selection": "Over 9.5",
+          "line": 9.5,
+          "americanOdds": 110,
+          "expectedGames": 9.9,
+          "confidence": 58,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 54,
+          "modelPct": 58,
+          "evPer100": 21.8,
+          "netEvPer100": 19.8,
+          "valueGrade": "Thin value",
+          "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 42%, first-set sample N/A, 0 recent sets.",
+          "betGrade": false
+        },
+        "setWin": [
+          {
+            "name": "Alexander Donski",
+            "confidence": 54,
+            "modelPct": 32.9,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Philip Henning",
+            "confidence": 76,
+            "modelPct": 67.9,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ]
+      },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 21827,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Alexander Donski",
+            "probabilityPct": 19,
+            "bidPct": 17,
+            "lastTradePct": 19,
+            "openInterest": 20976,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN07HENDON-DON",
+            "modelPct": 32.9,
+            "edgePct": 13.9
+          },
+          {
+            "name": "Philip Henning",
+            "probabilityPct": 83,
+            "bidPct": 82,
+            "lastTradePct": 83,
+            "openInterest": 851,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN07HENDON-HEN",
+            "modelPct": 67.9,
+            "edgePct": -15.1
+          }
+        ],
+        "priceAction": "Prediction-market fade; market is asking too much versus the model."
+      },
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-07T07:05:22.231Z",
+        "moneyline": [
+          {
+            "name": "Alexander Donski",
+            "americanOdds": 400,
+            "impliedPct": 20,
+            "modelPct": 32.9,
+            "edgePct": 12.9,
+            "grossProfitPct": 400,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Philip Henning",
+            "americanOdds": -650,
+            "impliedPct": 86.7,
+            "modelPct": 67.9,
+            "edgePct": -18.8,
+            "grossProfitPct": 15.4,
+            "priceBand": "Very expensive favorite"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves."
+      }
+    },
+    {
+      "rank": 28,
       "id": "dk-wta-wta-quals-ilkley-elena-pridankina-vs-ella-mcdonald-2026-06-07",
       "matchId": "dk-wta-wta-quals-ilkley-elena-pridankina-vs-ella-mcdonald-2026-06-07",
       "match": "Elena Pridankina vs Ella McDonald",
@@ -6785,6 +7172,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:51.625Z",
@@ -6814,7 +7202,7 @@
       }
     },
     {
-      "rank": 28,
+      "rank": 29,
       "id": "dk-atp-challenger-quals-ilkley-finn-bass-vs-keegan-smith-2026-06-07",
       "matchId": "dk-atp-challenger-quals-ilkley-finn-bass-vs-keegan-smith-2026-06-07",
       "match": "Finn Bass vs Keegan Smith",
@@ -6997,6 +7385,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:21.328Z",
@@ -7026,7 +7415,7 @@
       }
     },
     {
-      "rank": 29,
+      "rank": 30,
       "id": "dk-wta-wta-quals-ilkley-harmony-tan-vs-amelia-rajecki-2026-06-07",
       "matchId": "dk-wta-wta-quals-ilkley-harmony-tan-vs-amelia-rajecki-2026-06-07",
       "match": "Harmony Tan vs Amelia Rajecki",
@@ -7209,6 +7598,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:54.532Z",
@@ -7238,7 +7628,7 @@
       }
     },
     {
-      "rank": 30,
+      "rank": 31,
       "id": "dk-atp-challenger-quals-ilkley-mark-lajal-vs-anton-matusevich-2026-06-07",
       "matchId": "dk-atp-challenger-quals-ilkley-mark-lajal-vs-anton-matusevich-2026-06-07",
       "match": "Mark Lajal vs Anton Matusevich",
@@ -7450,6 +7840,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:22.690Z",
@@ -7479,7 +7870,7 @@
       }
     },
     {
-      "rank": 31,
+      "rank": 32,
       "id": "dk-atp-challenger-quals-ilkley-max-basing-vs-paul-jubb-2026-06-07",
       "matchId": "dk-atp-challenger-quals-ilkley-max-basing-vs-paul-jubb-2026-06-07",
       "match": "Max Basing vs Paul Jubb",
@@ -7662,6 +8053,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:24.089Z",
@@ -7688,253 +8080,6 @@
         "spread": "No primary game spread captured",
         "totalGames": "No total captured",
         "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
-      }
-    },
-    {
-      "rank": 32,
-      "id": "dk-atp-challenger-centurion-2-philip-henning-vs-alexander-donski-2026-06-07",
-      "matchId": "dk-atp-challenger-centurion-2-philip-henning-vs-alexander-donski-2026-06-07",
-      "match": "Philip Henning vs Alexander Donski",
-      "format": "ATP",
-      "bestOf": 3,
-      "marketOnly": false,
-      "court": "ATP Challenger - Centurion-2",
-      "start": "3:00 AM",
-      "pick": "Philip Henning",
-      "modelProbability": 69.5,
-      "marketProbability": 86.7,
-      "marketAmericanOdds": -650,
-      "modelEdge": -17.2,
-      "confidence": 69.5,
-      "volatility": 53,
-      "tier": "Watch",
-      "rationale": "Opponent-adjusted recent form is basically even: Philip Henning 76, Alexander Donski 78. Lean, not a chase.",
-      "weaknessEdge": {
-        "edgeType": "Weakness edge",
-        "target": "Alexander Donski",
-        "scoreGap": 34,
-        "attackingSide": "Philip Henning",
-        "vulnerableSide": "Alexander Donski",
-        "gameFlow": "Philip Henning has a real path if Alexander Donski's first two service games show the same weakness: double-fault pressure (10.2 avg); 5 recent matches with serve instability.",
-        "liveTrigger": "Look for Alexander Donski facing break points or second-serve pressure before 3-3.",
-        "spreadRead": "Philip Henning spread only if the handicap is short and Alexander Donski is under pressure early.",
-        "totalRead": "Avoid low unders if Alexander Donski faces early break points or second-serve pressure.",
-        "pick": {
-          "name": "Philip Henning",
-          "serviceHoldPct": null,
-          "firstServeWonPct": 80,
-          "secondServeWonPct": 53,
-          "firstServePct": 60,
-          "avgAces": 3.2,
-          "avgDoubleFaults": 2.6,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": 49,
-          "servicePointsWonPct": 69,
-          "weakServeMatches": 1,
-          "pressureMatches": null,
-          "matchesWithStats": 5,
-          "weaknessScore": 2,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [
-            "wins enough first-serve points (80%)",
-            "creates return pressure (49% return points won)"
-          ],
-          "gameFlowRead": "Philip Henning has no major service weakness in the joined warehouse sample."
-        },
-        "opponent": {
-          "name": "Alexander Donski",
-          "serviceHoldPct": null,
-          "firstServeWonPct": 78,
-          "secondServeWonPct": 48,
-          "firstServePct": 49,
-          "avgAces": 11.8,
-          "avgDoubleFaults": 10.2,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": 38,
-          "servicePointsWonPct": 63,
-          "weakServeMatches": 5,
-          "pressureMatches": null,
-          "matchesWithStats": 5,
-          "weaknessScore": 36,
-          "firstGameComfort": "Fragile opening-service profile",
-          "liabilities": [
-            "double-fault pressure (10.2 avg)",
-            "5 recent matches with serve instability"
-          ],
-          "strengths": [
-            "wins enough first-serve points (78%)"
-          ],
-          "gameFlowRead": "Alexander Donski can drop points quickly through double-fault pressure (10.2 avg) and 5 recent matches with serve instability."
-        }
-      },
-      "totals": "Best O/U angle: no play without a posted total.",
-      "derivativeMarketCase": null,
-      "bettingMatrix": [
-        {
-          "marketType": "Moneyline",
-          "label": "ML value",
-          "selection": "Alexander Donski",
-          "line": null,
-          "americanOdds": 400,
-          "modelPct": 33.3,
-          "impliedPct": 20,
-          "edgePct": null,
-          "evPer100": null,
-          "netEvPer100": null,
-          "grade": "Outlier price/manual review",
-          "issue": "Outlier dog price on Alexander Donski; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
-          "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
-        },
-        {
-          "marketType": "Total games",
-          "label": "O/U games",
-          "selection": "No bet",
-          "line": null,
-          "americanOdds": null,
-          "modelPct": null,
-          "impliedPct": null,
-          "edgePct": null,
-          "evPer100": null,
-          "netEvPer100": null,
-          "expectedGames": 35.1,
-          "edgeGames": null,
-          "confidence": null,
-          "grade": "No direction",
-          "reason": "No posted match total captured."
-        },
-        {
-          "marketType": "Win a set",
-          "label": "Win a set %",
-          "selection": "Philip Henning 78% / Alexander Donski 53%",
-          "rows": [
-            {
-              "name": "Philip Henning",
-              "confidence": 78,
-              "modelPct": 69.5,
-              "label": "Market favorite to win a set"
-            },
-            {
-              "name": "Alexander Donski",
-              "confidence": 53,
-              "modelPct": 33.3,
-              "label": "Underdog set-win path needs early holds"
-            }
-          ],
-          "confidence": 78,
-          "grade": "Price required",
-          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
-        },
-        {
-          "marketType": "First-set total games",
-          "label": "1st set O/U",
-          "selection": "Over 9.5",
-          "expectedGames": 9.9,
-          "confidence": 58,
-          "tiebreakRisk": 18,
-          "earlyBreakRisk": 54,
-          "grade": "Thin value",
-          "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 42%, first-set sample N/A, 0 recent sets."
-        }
-      ],
-      "valueBoard": {
-        "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
-        "ml": {
-          "marketType": "ML",
-          "selection": "Alexander Donski",
-          "americanOdds": 400,
-          "modelPct": 33.3,
-          "impliedPct": 20,
-          "edgePct": null,
-          "evPer100": null,
-          "netEvPer100": null,
-          "feePer100": 2,
-          "rawEdgePct": 13.3,
-          "rawEvPer100": 66.5,
-          "rawNetEvPer100": 64.5,
-          "valueIssue": "Outlier dog price on Alexander Donski; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
-          "valueGrade": "Outlier price/manual review",
-          "betGrade": false
-        },
-        "spread": null,
-        "total": {
-          "marketType": "Total",
-          "selection": "No bet",
-          "line": null,
-          "overOdds": null,
-          "underOdds": null,
-          "expectedGames": 35.1,
-          "valueGrade": "No direction",
-          "reason": "No posted match total captured.",
-          "betGrade": false
-        },
-        "firstSetTotal": {
-          "marketType": "First-set total",
-          "selection": "Over 9.5",
-          "line": 9.5,
-          "americanOdds": 110,
-          "expectedGames": 9.9,
-          "confidence": 58,
-          "tiebreakRisk": 18,
-          "earlyBreakRisk": 54,
-          "modelPct": 58,
-          "evPer100": 21.8,
-          "netEvPer100": 19.8,
-          "valueGrade": "Thin value",
-          "reason": "Expected first-set games 9.9 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 42%, first-set sample N/A, 0 recent sets.",
-          "betGrade": false
-        },
-        "setWin": [
-          {
-            "name": "Philip Henning",
-            "confidence": 78,
-            "modelPct": 69.5,
-            "label": "Market favorite to win a set",
-            "marketType": "Win a set",
-            "valueGrade": "Needs posted price",
-            "betGrade": false
-          },
-          {
-            "name": "Alexander Donski",
-            "confidence": 53,
-            "modelPct": 33.3,
-            "label": "Underdog set-win path needs early holds",
-            "marketType": "Win a set",
-            "valueGrade": "Needs posted price",
-            "betGrade": false
-          }
-        ]
-      },
-      "market": {
-        "source": "DraftKings Sportsbook",
-        "capturedAt": "2026-06-07T07:05:22.231Z",
-        "moneyline": [
-          {
-            "name": "Philip Henning",
-            "americanOdds": -650,
-            "impliedPct": 86.7,
-            "modelPct": 69.5,
-            "edgePct": -17.2,
-            "grossProfitPct": 15.4,
-            "priceBand": "Very expensive favorite"
-          },
-          {
-            "name": "Alexander Donski",
-            "americanOdds": 400,
-            "impliedPct": 20,
-            "modelPct": 33.3,
-            "edgePct": 13.3,
-            "grossProfitPct": 400,
-            "priceBand": "Underdog"
-          }
-        ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
-        "priceAction": "ML payout is tiny; use spread/total or pass unless the number moves."
       }
     },
     {
@@ -8121,6 +8266,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:53.393Z",
@@ -8151,6 +8297,319 @@
     },
     {
       "rank": 34,
+      "id": "dk-wta-wta-quals-hertogenbosch-katie-volynets-vs-lin-zhu-2026-06-07",
+      "matchId": "dk-wta-wta-quals-hertogenbosch-katie-volynets-vs-lin-zhu-2026-06-07",
+      "match": "Katie Volynets vs Lin Zhu",
+      "format": "WTA",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "WTA S-Hertogenbosch Qualification",
+      "start": "3:10 AM",
+      "pick": "Katie Volynets",
+      "modelProbability": 59,
+      "marketProbability": 70.1,
+      "marketAmericanOdds": -234,
+      "modelEdge": -11.1,
+      "confidence": 59,
+      "volatility": 49,
+      "tier": "Watch",
+      "rationale": "Opponent-adjusted recent form is basically even: Katie Volynets 61, Lin Zhu 58. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 3,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Katie Volynets",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 64,
+          "firstServePct": 78,
+          "avgAces": 2.2,
+          "avgDoubleFaults": 1.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 55,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 6,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "first-serve points won below comfort (62%)"
+          ],
+          "strengths": [
+            "second serve holds up (64%)",
+            "creates return pressure (55% return points won)"
+          ],
+          "gameFlowRead": "Katie Volynets can drop points quickly through first-serve points won below comfort (62%)."
+        },
+        "opponent": {
+          "name": "Lin Zhu",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 65,
+          "secondServeWonPct": 52,
+          "firstServePct": 66,
+          "avgAces": 2,
+          "avgDoubleFaults": 3.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 43,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 9,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Lin Zhu can drop points quickly through 3 recent matches with serve instability."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Lin Zhu",
+          "line": null,
+          "americanOdds": 188,
+          "modelPct": 41.9,
+          "impliedPct": 34.7,
+          "edgePct": 7.2,
+          "evPer100": 20.7,
+          "netEvPer100": 18.7,
+          "grade": "Model probability outside validated lane",
+          "issue": "Picked side is overpriced; value board flips to Lin Zhu because that side has the better posted-price edge.",
+          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Katie Volynets",
+          "line": -4.5,
+          "americanOdds": -125,
+          "modelPct": 53,
+          "impliedPct": 55.6,
+          "edgePct": -2.6,
+          "evPer100": -4.6,
+          "netEvPer100": -6.6,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": 53,
+          "grade": "Negative EV",
+          "reason": "Spread is number-dependent; verify first service cycle"
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 19.5,
+          "americanOdds": -120,
+          "modelPct": 61,
+          "impliedPct": 54.5,
+          "edgePct": 6.5,
+          "evPer100": 11.8,
+          "netEvPer100": 9.8,
+          "expectedGames": 22.1,
+          "edgeGames": null,
+          "confidence": 61,
+          "grade": "Watch only",
+          "reason": "Expected match games 22.1 vs DraftKings Sportsbook 19.5; Over. hold avg N/A, BP saved N/A, BP converted 55%, first-set sample N/A, 0 recent sets."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Katie Volynets 67% / Lin Zhu 63%",
+          "rows": [
+            {
+              "name": "Katie Volynets",
+              "confidence": 67,
+              "modelPct": 59,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Lin Zhu",
+              "confidence": 63,
+              "modelPct": 41.9,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 67,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Over 8.5",
+          "expectedGames": 9.3,
+          "confidence": 62,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Actionable live watch",
+          "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 55%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "valueBoard": {
+        "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+        "ml": {
+          "marketType": "ML",
+          "selection": "Lin Zhu",
+          "americanOdds": 188,
+          "modelPct": 41.9,
+          "impliedPct": 34.7,
+          "edgePct": 7.2,
+          "evPer100": 20.7,
+          "netEvPer100": 18.7,
+          "feePer100": 2,
+          "rawEdgePct": 7.2,
+          "rawEvPer100": 20.7,
+          "rawNetEvPer100": 18.7,
+          "valueIssue": "Picked side is overpriced; value board flips to Lin Zhu because that side has the better posted-price edge.",
+          "valueGrade": "Model probability outside validated lane",
+          "betGrade": false
+        },
+        "spread": {
+          "marketType": "Spread",
+          "selection": "Katie Volynets",
+          "line": -4.5,
+          "americanOdds": -125,
+          "modelPct": 53,
+          "impliedPct": 55.6,
+          "edgePct": -2.6,
+          "evPer100": -4.6,
+          "netEvPer100": -6.6,
+          "feePer100": 2,
+          "valueIssue": "Spread watch only",
+          "valueGrade": "Negative EV",
+          "betGrade": false
+        },
+        "total": {
+          "marketType": "Total",
+          "selection": "Over",
+          "line": 19.5,
+          "americanOdds": -120,
+          "expectedGames": 22.1,
+          "modelPct": 61,
+          "impliedPct": 54.5,
+          "edgePct": 6.5,
+          "evPer100": 11.8,
+          "netEvPer100": 9.8,
+          "feePer100": 2,
+          "valueIssue": "Total watch only",
+          "valueGrade": "Watch only",
+          "reason": "Expected match games 22.1 vs DraftKings Sportsbook 19.5; Over. hold avg N/A, BP saved N/A, BP converted 55%, first-set sample N/A, 0 recent sets.",
+          "betGrade": false
+        },
+        "firstSetTotal": {
+          "marketType": "First-set total",
+          "selection": "Over 8.5",
+          "line": 8.5,
+          "americanOdds": -185,
+          "expectedGames": 9.3,
+          "confidence": 62,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "modelPct": 62,
+          "evPer100": -4.5,
+          "netEvPer100": -6.5,
+          "valueGrade": "Actionable live watch",
+          "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 55%, first-set sample N/A, 0 recent sets.",
+          "betGrade": false
+        },
+        "setWin": [
+          {
+            "name": "Katie Volynets",
+            "confidence": 67,
+            "modelPct": 59,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Lin Zhu",
+            "confidence": 63,
+            "modelPct": 41.9,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ]
+      },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 9938,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Katie Volynets",
+            "probabilityPct": 70,
+            "bidPct": 65,
+            "lastTradePct": 69,
+            "openInterest": 7229,
+            "symbol": "KXWTAMATCH-26JUN07VOLZHU-VOL",
+            "modelPct": 59,
+            "edgePct": -11
+          },
+          {
+            "name": "Lin Zhu",
+            "probabilityPct": 32,
+            "bidPct": 30,
+            "lastTradePct": 32,
+            "openInterest": 2709,
+            "symbol": "KXWTAMATCH-26JUN07VOLZHU-ZHU",
+            "modelPct": 41.9,
+            "edgePct": 9.9
+          }
+        ],
+        "priceAction": "Prediction-market fade; market is asking too much versus the model."
+      },
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-07T07:03:59.308Z",
+        "moneyline": [
+          {
+            "name": "Katie Volynets",
+            "americanOdds": -234,
+            "impliedPct": 70.1,
+            "modelPct": 59,
+            "edgePct": -11.1,
+            "grossProfitPct": 42.7,
+            "priceBand": "Low-payout favorite"
+          },
+          {
+            "name": "Lin Zhu",
+            "americanOdds": 188,
+            "impliedPct": 34.7,
+            "modelPct": 41.9,
+            "edgePct": 7.2,
+            "grossProfitPct": 188,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "Katie Volynets -4.5 (-125)",
+        "totalGames": "19.5 games: Over -120 / Under -120",
+        "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      }
+    },
+    {
+      "rank": 35,
       "id": "dk-atp-challenger-quals-lyon-alex-martinez-vs-nitin-kumar-sinha-2026-06-07",
       "matchId": "dk-atp-challenger-quals-lyon-alex-martinez-vs-nitin-kumar-sinha-2026-06-07",
       "match": "Alex Martinez vs Nitin Kumar Sinha",
@@ -8367,6 +8826,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:14.010Z",
@@ -8396,7 +8856,7 @@
       }
     },
     {
-      "rank": 35,
+      "rank": 36,
       "id": "dk-atp-challenger-quals-lyon-andrea-baudel-vs-alejo-sanchez-quilez-2026-06-07",
       "matchId": "dk-atp-challenger-quals-lyon-andrea-baudel-vs-alejo-sanchez-quilez-2026-06-07",
       "match": "Andrea Baudel vs Alejo Sanchez Quilez",
@@ -8611,6 +9071,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:15.465Z",
@@ -8640,7 +9101,7 @@
       }
     },
     {
-      "rank": 36,
+      "rank": 37,
       "id": "dk-atp-challenger-quals-lyon-max-alcala-gurri-vs-kenny-de-schepper-2026-06-07",
       "matchId": "dk-atp-challenger-quals-lyon-max-alcala-gurri-vs-kenny-de-schepper-2026-06-07",
       "match": "Max Alcala Gurri vs Kenny de Schepper",
@@ -8855,6 +9316,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:12.784Z",
@@ -8884,21 +9346,21 @@
       }
     },
     {
-      "rank": 37,
+      "rank": 38,
       "id": "dk-wta-wta-birmingham-alexandra-eala-vs-nikola-bartunkova-2026-06-07",
       "matchId": "dk-wta-wta-birmingham-alexandra-eala-vs-nikola-bartunkova-2026-06-07",
       "match": "Alexandra Eala vs Nikola Bartunkova",
       "format": "WTA",
       "bestOf": 3,
       "marketOnly": false,
-      "court": "WTA Birmingham",
+      "court": "WTA 125K Birmingham",
       "start": "3:30 AM",
       "pick": "Alexandra Eala",
-      "modelProbability": 62,
+      "modelProbability": 61.4,
       "marketProbability": 67.6,
       "marketAmericanOdds": -209,
-      "modelEdge": -5.6,
-      "confidence": 62,
+      "modelEdge": -6.2,
+      "confidence": 61.4,
       "volatility": 44,
       "tier": "Watch",
       "rationale": "Opponent-adjusted recent form is basically even: Alexandra Eala 75, Nikola Bartunkova 70. Lean, not a chase.",
@@ -8971,11 +9433,11 @@
           "selection": "Nikola Bartunkova",
           "line": null,
           "americanOdds": 157,
-          "modelPct": 40.7,
+          "modelPct": 39.9,
           "impliedPct": 38.9,
-          "edgePct": 1.8,
-          "evPer100": 4.6,
-          "netEvPer100": 2.6,
+          "edgePct": 1,
+          "evPer100": 2.5,
+          "netEvPer100": 0.5,
           "grade": "Raw ML edge only",
           "issue": "Picked side is overpriced; value board flips to Nikola Bartunkova because that side has the better posted-price edge.",
           "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
@@ -8991,7 +9453,7 @@
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
-          "expectedGames": 20.4,
+          "expectedGames": 21.9,
           "edgeGames": null,
           "confidence": null,
           "grade": "No direction",
@@ -9000,22 +9462,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Alexandra Eala 70% / Nikola Bartunkova 60%",
+          "selection": "Alexandra Eala 69% / Nikola Bartunkova 61%",
           "rows": [
             {
               "name": "Alexandra Eala",
-              "confidence": 70,
-              "modelPct": 62,
+              "confidence": 69,
+              "modelPct": 61.4,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Nikola Bartunkova",
-              "confidence": 60,
-              "modelPct": 40.7,
+              "confidence": 61,
+              "modelPct": 39.9,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 70,
+          "confidence": 69,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -9037,15 +9499,15 @@
           "marketType": "ML",
           "selection": "Nikola Bartunkova",
           "americanOdds": 157,
-          "modelPct": 40.7,
+          "modelPct": 39.9,
           "impliedPct": 38.9,
-          "edgePct": 1.8,
-          "evPer100": 4.6,
-          "netEvPer100": 2.6,
+          "edgePct": 1,
+          "evPer100": 2.5,
+          "netEvPer100": 0.5,
           "feePer100": 2,
-          "rawEdgePct": 1.8,
-          "rawEvPer100": 4.6,
-          "rawNetEvPer100": 2.6,
+          "rawEdgePct": 1,
+          "rawEvPer100": 2.5,
+          "rawNetEvPer100": 0.5,
           "valueIssue": "Picked side is overpriced; value board flips to Nikola Bartunkova because that side has the better posted-price edge.",
           "valueGrade": "Raw ML edge only",
           "betGrade": false
@@ -9057,7 +9519,7 @@
           "line": null,
           "overOdds": null,
           "underOdds": null,
-          "expectedGames": 20.4,
+          "expectedGames": 21.9,
           "valueGrade": "No direction",
           "reason": "No posted match total captured.",
           "betGrade": false
@@ -9081,8 +9543,8 @@
         "setWin": [
           {
             "name": "Alexandra Eala",
-            "confidence": 70,
-            "modelPct": 62,
+            "confidence": 69,
+            "modelPct": 61.4,
             "label": "Market favorite to win a set",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
@@ -9090,14 +9552,44 @@
           },
           {
             "name": "Nikola Bartunkova",
-            "confidence": 60,
-            "modelPct": 40.7,
+            "confidence": 61,
+            "modelPct": 39.9,
             "label": "Underdog set-win path needs early holds",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
             "betGrade": false
           }
         ]
+      },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 37001,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Alexandra Eala",
+            "probabilityPct": 66,
+            "bidPct": 64,
+            "lastTradePct": 65,
+            "openInterest": 25805,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN07EALBAR-EAL",
+            "modelPct": 61.4,
+            "edgePct": -4.6
+          },
+          {
+            "name": "Nikola Bartunkova",
+            "probabilityPct": 37,
+            "bidPct": 34,
+            "lastTradePct": 34,
+            "openInterest": 11196,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN07EALBAR-BAR",
+            "modelPct": 39.9,
+            "edgePct": 2.9
+          }
+        ],
+        "priceAction": "Prediction-market tax; price is ahead of the model."
       },
       "market": {
         "source": "DraftKings Sportsbook",
@@ -9107,8 +9599,8 @@
             "name": "Alexandra Eala",
             "americanOdds": -209,
             "impliedPct": 67.6,
-            "modelPct": 62,
-            "edgePct": -5.6,
+            "modelPct": 61.4,
+            "edgePct": -6.2,
             "grossProfitPct": 47.8,
             "priceBand": "Moderate favorite"
           },
@@ -9116,8 +9608,8 @@
             "name": "Nikola Bartunkova",
             "americanOdds": 157,
             "impliedPct": 38.9,
-            "modelPct": 40.7,
-            "edgePct": 1.8,
+            "modelPct": 39.9,
+            "edgePct": 1,
             "grossProfitPct": 157,
             "priceBand": "Underdog"
           }
@@ -9125,289 +9617,6 @@
         "spread": "No primary game spread captured",
         "totalGames": "No total captured",
         "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
-      }
-    },
-    {
-      "rank": 38,
-      "id": "dk-wta-wta-quals-hertogenbosch-katie-volynets-vs-lin-zhu-2026-06-07",
-      "matchId": "dk-wta-wta-quals-hertogenbosch-katie-volynets-vs-lin-zhu-2026-06-07",
-      "match": "Katie Volynets vs Lin Zhu",
-      "format": "WTA",
-      "bestOf": 3,
-      "marketOnly": false,
-      "court": "WTA Quals. - Hertogenbosch",
-      "start": "3:30 AM",
-      "pick": "Katie Volynets",
-      "modelProbability": 59,
-      "marketProbability": 70.1,
-      "marketAmericanOdds": -234,
-      "modelEdge": -11.1,
-      "confidence": 59,
-      "volatility": 49,
-      "tier": "Watch",
-      "rationale": "Opponent-adjusted recent form is basically even: Katie Volynets 61, Lin Zhu 58. Lean, not a chase.",
-      "weaknessEdge": {
-        "edgeType": "No clear weakness edge",
-        "target": "Both sides",
-        "scoreGap": 3,
-        "attackingSide": null,
-        "vulnerableSide": null,
-        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-        "liveTrigger": "Wait for a visible service-pressure split before entering.",
-        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
-        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
-        "pick": {
-          "name": "Katie Volynets",
-          "serviceHoldPct": null,
-          "firstServeWonPct": 62,
-          "secondServeWonPct": 64,
-          "firstServePct": 78,
-          "avgAces": 2.2,
-          "avgDoubleFaults": 1.5,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": 55,
-          "servicePointsWonPct": 62,
-          "weakServeMatches": 2,
-          "pressureMatches": null,
-          "matchesWithStats": 4,
-          "weaknessScore": 6,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [
-            "first-serve points won below comfort (62%)"
-          ],
-          "strengths": [
-            "second serve holds up (64%)",
-            "creates return pressure (55% return points won)"
-          ],
-          "gameFlowRead": "Katie Volynets can drop points quickly through first-serve points won below comfort (62%)."
-        },
-        "opponent": {
-          "name": "Lin Zhu",
-          "serviceHoldPct": null,
-          "firstServeWonPct": 65,
-          "secondServeWonPct": 52,
-          "firstServePct": 66,
-          "avgAces": 2,
-          "avgDoubleFaults": 3.8,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": 43,
-          "servicePointsWonPct": 60,
-          "weakServeMatches": 3,
-          "pressureMatches": null,
-          "matchesWithStats": 4,
-          "weaknessScore": 9,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [
-            "3 recent matches with serve instability"
-          ],
-          "strengths": [],
-          "gameFlowRead": "Lin Zhu can drop points quickly through 3 recent matches with serve instability."
-        }
-      },
-      "totals": "Best O/U angle: no play without a posted total.",
-      "derivativeMarketCase": null,
-      "bettingMatrix": [
-        {
-          "marketType": "Moneyline",
-          "label": "ML value",
-          "selection": "Lin Zhu",
-          "line": null,
-          "americanOdds": 188,
-          "modelPct": 43,
-          "impliedPct": 34.7,
-          "edgePct": 8.3,
-          "evPer100": 23.8,
-          "netEvPer100": 21.8,
-          "grade": "Model probability outside validated lane",
-          "issue": "Picked side is overpriced; value board flips to Lin Zhu because that side has the better posted-price edge.",
-          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
-        },
-        {
-          "marketType": "Game spread",
-          "label": "Game spread",
-          "selection": "Katie Volynets",
-          "line": -4.5,
-          "americanOdds": -125,
-          "modelPct": 53,
-          "impliedPct": 55.6,
-          "edgePct": -2.6,
-          "evPer100": -4.6,
-          "netEvPer100": -6.6,
-          "expectedGames": null,
-          "edgeGames": null,
-          "confidence": 53,
-          "grade": "Negative EV",
-          "reason": "Spread is number-dependent; verify first service cycle"
-        },
-        {
-          "marketType": "Total games",
-          "label": "O/U games",
-          "selection": "Over",
-          "line": 19.5,
-          "americanOdds": -120,
-          "modelPct": 61,
-          "impliedPct": 54.5,
-          "edgePct": 6.5,
-          "evPer100": 11.8,
-          "netEvPer100": 9.8,
-          "expectedGames": 22.1,
-          "edgeGames": null,
-          "confidence": 61,
-          "grade": "Watch only",
-          "reason": "Expected match games 22.1 vs DraftKings Sportsbook 19.5; Over. hold avg N/A, BP saved N/A, BP converted 55%, first-set sample N/A, 0 recent sets."
-        },
-        {
-          "marketType": "Win a set",
-          "label": "Win a set %",
-          "selection": "Katie Volynets 67% / Lin Zhu 63%",
-          "rows": [
-            {
-              "name": "Katie Volynets",
-              "confidence": 67,
-              "modelPct": 59,
-              "label": "Market favorite to win a set"
-            },
-            {
-              "name": "Lin Zhu",
-              "confidence": 63,
-              "modelPct": 43,
-              "label": "Underdog set-win path needs early holds"
-            }
-          ],
-          "confidence": 67,
-          "grade": "Price required",
-          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
-        },
-        {
-          "marketType": "First-set total games",
-          "label": "1st set O/U",
-          "selection": "Over 8.5",
-          "expectedGames": 9.3,
-          "confidence": 62,
-          "tiebreakRisk": 18,
-          "earlyBreakRisk": 50,
-          "grade": "Actionable live watch",
-          "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 55%, first-set sample N/A, 0 recent sets."
-        }
-      ],
-      "valueBoard": {
-        "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
-        "ml": {
-          "marketType": "ML",
-          "selection": "Lin Zhu",
-          "americanOdds": 188,
-          "modelPct": 43,
-          "impliedPct": 34.7,
-          "edgePct": 8.3,
-          "evPer100": 23.8,
-          "netEvPer100": 21.8,
-          "feePer100": 2,
-          "rawEdgePct": 8.3,
-          "rawEvPer100": 23.8,
-          "rawNetEvPer100": 21.8,
-          "valueIssue": "Picked side is overpriced; value board flips to Lin Zhu because that side has the better posted-price edge.",
-          "valueGrade": "Model probability outside validated lane",
-          "betGrade": false
-        },
-        "spread": {
-          "marketType": "Spread",
-          "selection": "Katie Volynets",
-          "line": -4.5,
-          "americanOdds": -125,
-          "modelPct": 53,
-          "impliedPct": 55.6,
-          "edgePct": -2.6,
-          "evPer100": -4.6,
-          "netEvPer100": -6.6,
-          "feePer100": 2,
-          "valueIssue": "Spread watch only",
-          "valueGrade": "Negative EV",
-          "betGrade": false
-        },
-        "total": {
-          "marketType": "Total",
-          "selection": "Over",
-          "line": 19.5,
-          "americanOdds": -120,
-          "expectedGames": 22.1,
-          "modelPct": 61,
-          "impliedPct": 54.5,
-          "edgePct": 6.5,
-          "evPer100": 11.8,
-          "netEvPer100": 9.8,
-          "feePer100": 2,
-          "valueIssue": "Total watch only",
-          "valueGrade": "Watch only",
-          "reason": "Expected match games 22.1 vs DraftKings Sportsbook 19.5; Over. hold avg N/A, BP saved N/A, BP converted 55%, first-set sample N/A, 0 recent sets.",
-          "betGrade": false
-        },
-        "firstSetTotal": {
-          "marketType": "First-set total",
-          "selection": "Over 8.5",
-          "line": 8.5,
-          "americanOdds": -185,
-          "expectedGames": 9.3,
-          "confidence": 62,
-          "tiebreakRisk": 18,
-          "earlyBreakRisk": 50,
-          "modelPct": 62,
-          "evPer100": -4.5,
-          "netEvPer100": -6.5,
-          "valueGrade": "Actionable live watch",
-          "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 55%, first-set sample N/A, 0 recent sets.",
-          "betGrade": false
-        },
-        "setWin": [
-          {
-            "name": "Katie Volynets",
-            "confidence": 67,
-            "modelPct": 59,
-            "label": "Market favorite to win a set",
-            "marketType": "Win a set",
-            "valueGrade": "Needs posted price",
-            "betGrade": false
-          },
-          {
-            "name": "Lin Zhu",
-            "confidence": 63,
-            "modelPct": 43,
-            "label": "Underdog set-win path needs early holds",
-            "marketType": "Win a set",
-            "valueGrade": "Needs posted price",
-            "betGrade": false
-          }
-        ]
-      },
-      "market": {
-        "source": "DraftKings Sportsbook",
-        "capturedAt": "2026-06-07T07:03:59.308Z",
-        "moneyline": [
-          {
-            "name": "Katie Volynets",
-            "americanOdds": -234,
-            "impliedPct": 70.1,
-            "modelPct": 59,
-            "edgePct": -11.1,
-            "grossProfitPct": 42.7,
-            "priceBand": "Low-payout favorite"
-          },
-          {
-            "name": "Lin Zhu",
-            "americanOdds": 188,
-            "impliedPct": 34.7,
-            "modelPct": 43,
-            "edgePct": 8.3,
-            "grossProfitPct": 188,
-            "priceBand": "Underdog"
-          }
-        ],
-        "spread": "Katie Volynets -4.5 (-125)",
-        "totalGames": "19.5 games: Over -120 / Under -120",
-        "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
       }
     },
     {
@@ -9628,6 +9837,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:17.993Z",
@@ -9871,6 +10081,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:41.351Z",
@@ -10116,6 +10327,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:38.813Z",
@@ -10360,6 +10572,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:39.999Z",
@@ -10601,6 +10814,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:16.695Z",
@@ -10813,6 +11027,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:55.944Z",
@@ -11055,6 +11270,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:27.707Z",
@@ -11267,6 +11483,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:26.944Z",
@@ -11479,6 +11696,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:25.436Z",
@@ -11691,6 +11909,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:28.390Z",
@@ -11721,6 +11940,318 @@
     },
     {
       "rank": 49,
+      "id": "dk-wta-wta-quals-hertogenbosch-robin-montgomery-vs-joanna-garland-2026-06-07",
+      "matchId": "dk-wta-wta-quals-hertogenbosch-robin-montgomery-vs-joanna-garland-2026-06-07",
+      "match": "Joanna Garland vs Robin Montgomery",
+      "format": "WTA",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "WTA S-Hertogenbosch Qualification",
+      "start": "4:20 AM",
+      "pick": "Joanna Garland",
+      "modelProbability": 51.3,
+      "marketProbability": 42.2,
+      "marketAmericanOdds": 137,
+      "modelEdge": 9.1,
+      "confidence": 51.3,
+      "volatility": 43,
+      "tier": "Watch",
+      "rationale": "Opponent-adjusted recent form is basically even: Joanna Garland 43, Robin Montgomery 42. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "Weakness edge",
+        "target": "Robin Montgomery",
+        "scoreGap": 10,
+        "attackingSide": "Joanna Garland",
+        "vulnerableSide": "Robin Montgomery",
+        "gameFlow": "Joanna Garland has a real path if Robin Montgomery's first two service games show the same weakness: second-serve points won are attackable (41%); double-fault pressure (6.0 avg).",
+        "liveTrigger": "Look for Robin Montgomery facing break points or second-serve pressure before 3-3.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Joanna Garland",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 48,
+          "firstServePct": 66,
+          "avgAces": 4.4,
+          "avgDoubleFaults": 4.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 37,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 12,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "double-fault pressure (4.6 avg)",
+            "3 recent matches with serve instability",
+            "limited return pressure (37% return points won)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Joanna Garland can drop points quickly through double-fault pressure (4.6 avg) and 3 recent matches with serve instability."
+        },
+        "opponent": {
+          "name": "Robin Montgomery",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 64,
+          "secondServeWonPct": 41,
+          "firstServePct": 61,
+          "avgAces": 5.2,
+          "avgDoubleFaults": 6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 38,
+          "servicePointsWonPct": 55,
+          "weakServeMatches": 4,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 22,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "second-serve points won are attackable (41%)",
+            "double-fault pressure (6.0 avg)",
+            "4 recent matches with serve instability",
+            "limited return pressure (38% return points won)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Robin Montgomery can drop points quickly through second-serve points won are attackable (41%) and double-fault pressure (6.0 avg)."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Joanna Garland",
+          "line": null,
+          "americanOdds": 137,
+          "modelPct": 51.3,
+          "impliedPct": 42.2,
+          "edgePct": 9.1,
+          "evPer100": 21.6,
+          "netEvPer100": 19.6,
+          "grade": "Bet-grade value",
+          "issue": "Validated ML candidate",
+          "reason": "Model is meaningfully above DraftKings Sportsbook implied price."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Joanna Garland",
+          "line": 2.5,
+          "americanOdds": -120,
+          "modelPct": 49,
+          "impliedPct": 54.5,
+          "edgePct": -5.5,
+          "evPer100": -10.2,
+          "netEvPer100": -12.2,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": 49,
+          "grade": "Negative EV",
+          "reason": "Joanna Garland spread is playable only if early return pressure shows"
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 21.5,
+          "americanOdds": -130,
+          "modelPct": 57,
+          "impliedPct": 56.5,
+          "edgePct": 0.5,
+          "evPer100": 0.8,
+          "netEvPer100": -1.2,
+          "expectedGames": 22.4,
+          "edgeGames": null,
+          "confidence": 57,
+          "grade": "Near fair",
+          "reason": "Expected match games 22.4 vs DraftKings Sportsbook 21.5; Over. hold avg N/A, BP saved N/A, BP converted 36%, first-set sample N/A, 0 recent sets."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Joanna Garland 59% / Robin Montgomery 71%",
+          "rows": [
+            {
+              "name": "Joanna Garland",
+              "confidence": 59,
+              "modelPct": 51.3,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Robin Montgomery",
+              "confidence": 71,
+              "modelPct": 49.6,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 71,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Pass / near line",
+          "expectedGames": 9.4,
+          "confidence": 51,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 54,
+          "grade": "Near fair",
+          "reason": "Expected first-set games 9.4 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 36%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "valueBoard": {
+        "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+        "ml": {
+          "marketType": "ML",
+          "selection": "Joanna Garland",
+          "americanOdds": 137,
+          "modelPct": 51.3,
+          "impliedPct": 42.2,
+          "edgePct": 9.1,
+          "evPer100": 21.6,
+          "netEvPer100": 19.6,
+          "feePer100": 2,
+          "valueIssue": "Validated ML candidate",
+          "valueGrade": "Bet-grade value",
+          "betGrade": true
+        },
+        "spread": {
+          "marketType": "Spread",
+          "selection": "Joanna Garland",
+          "line": 2.5,
+          "americanOdds": -120,
+          "modelPct": 49,
+          "impliedPct": 54.5,
+          "edgePct": -5.5,
+          "evPer100": -10.2,
+          "netEvPer100": -12.2,
+          "feePer100": 2,
+          "valueIssue": "Spread watch only",
+          "valueGrade": "Negative EV",
+          "betGrade": false
+        },
+        "total": {
+          "marketType": "Total",
+          "selection": "Over",
+          "line": 21.5,
+          "americanOdds": -130,
+          "expectedGames": 22.4,
+          "modelPct": 57,
+          "impliedPct": 56.5,
+          "edgePct": 0.5,
+          "evPer100": 0.8,
+          "netEvPer100": -1.2,
+          "feePer100": 2,
+          "valueIssue": "Total watch only",
+          "valueGrade": "Near fair",
+          "reason": "Expected match games 22.4 vs DraftKings Sportsbook 21.5; Over. hold avg N/A, BP saved N/A, BP converted 36%, first-set sample N/A, 0 recent sets.",
+          "betGrade": false
+        },
+        "firstSetTotal": {
+          "marketType": "First-set total",
+          "selection": "Pass / near line",
+          "line": 9.5,
+          "americanOdds": null,
+          "expectedGames": 9.4,
+          "confidence": 51,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 54,
+          "modelPct": 51,
+          "evPer100": null,
+          "netEvPer100": null,
+          "valueGrade": "Near fair",
+          "reason": "Expected first-set games 9.4 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 36%, first-set sample N/A, 0 recent sets.",
+          "betGrade": false
+        },
+        "setWin": [
+          {
+            "name": "Joanna Garland",
+            "confidence": 59,
+            "modelPct": 51.3,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Robin Montgomery",
+            "confidence": 71,
+            "modelPct": 49.6,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ]
+      },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 327,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Joanna Garland",
+            "probabilityPct": 42,
+            "bidPct": 39,
+            "lastTradePct": 42,
+            "openInterest": 221,
+            "symbol": "KXWTAMATCH-26JUN07MONGAR-GAR",
+            "modelPct": 51.3,
+            "edgePct": 9.3
+          },
+          {
+            "name": "Robin Montgomery",
+            "probabilityPct": 60,
+            "bidPct": 58,
+            "lastTradePct": 61,
+            "openInterest": 106,
+            "symbol": "KXWTAMATCH-26JUN07MONGAR-MON",
+            "modelPct": 49.6,
+            "edgePct": -10.4
+          }
+        ],
+        "priceAction": "Prediction-market value lane; cap entry by cents and do not treat as sportsbook arbitrage."
+      },
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-07T07:04:00.652Z",
+        "moneyline": [
+          {
+            "name": "Joanna Garland",
+            "americanOdds": 137,
+            "impliedPct": 42.2,
+            "modelPct": 51.3,
+            "edgePct": 9.1,
+            "grossProfitPct": 137,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Robin Montgomery",
+            "americanOdds": -168,
+            "impliedPct": 62.7,
+            "modelPct": 49.6,
+            "edgePct": -13.1,
+            "grossProfitPct": 59.5,
+            "priceBand": "Moderate favorite"
+          }
+        ],
+        "spread": "Joanna Garland +2.5 (-120)",
+        "totalGames": "21.5 games: Over -130 / Under -115",
+        "priceAction": "Model is meaningfully above DraftKings Sportsbook implied price."
+      }
+    },
+    {
+      "rank": 50,
       "id": "dk-wta-wta-quals-ilkley-celine-naef-vs-hiroko-kuwata-2026-06-07",
       "matchId": "dk-wta-wta-quals-ilkley-celine-naef-vs-hiroko-kuwata-2026-06-07",
       "match": "Celine Naef vs Hiroko Kuwata",
@@ -11903,6 +12434,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:58.694Z",
@@ -11932,7 +12464,7 @@
       }
     },
     {
-      "rank": 50,
+      "rank": 51,
       "id": "dk-atp-challenger-quals-lyon-jules-fabre-vs-johan-nikles-2026-06-07",
       "matchId": "dk-atp-challenger-quals-lyon-jules-fabre-vs-johan-nikles-2026-06-07",
       "match": "Jules Fabre vs Johan Nikles",
@@ -12144,6 +12676,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:19.583Z",
@@ -12173,7 +12706,7 @@
       }
     },
     {
-      "rank": 51,
+      "rank": 52,
       "id": "dk-atp-challenger-quals-lyon-matteo-martineau-vs-mae-malige-2026-06-07",
       "matchId": "dk-atp-challenger-quals-lyon-matteo-martineau-vs-mae-malige-2026-06-07",
       "match": "Matteo Martineau vs Mae Malige",
@@ -12390,6 +12923,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:16.807Z",
@@ -12419,7 +12953,7 @@
       }
     },
     {
-      "rank": 52,
+      "rank": 53,
       "id": "dk-atp-challenger-quals-lyon-maxime-janvier-vs-laurent-lokoli-2026-06-07",
       "matchId": "dk-atp-challenger-quals-lyon-maxime-janvier-vs-laurent-lokoli-2026-06-07",
       "match": "Maxime Janvier vs Laurent Lokoli",
@@ -12633,6 +13167,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:18.104Z",
@@ -12662,7 +13197,7 @@
       }
     },
     {
-      "rank": 53,
+      "rank": 54,
       "id": "dk-wta-wta-quals-ilkley-ranah-akua-stoiber-vs-victoria-allen-2026-06-07",
       "matchId": "dk-wta-wta-quals-ilkley-ranah-akua-stoiber-vs-victoria-allen-2026-06-07",
       "match": "Ranah Akua Stoiber vs Victoria Allen",
@@ -12845,6 +13380,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:57.368Z",
@@ -12874,7 +13410,7 @@
       }
     },
     {
-      "rank": 54,
+      "rank": 55,
       "id": "dk-atp-challenger-cattolica-qualifiers-carlo-alberto-caniato-vs-giuseppe-la-vela-2026-06-07",
       "matchId": "dk-atp-challenger-cattolica-qualifiers-carlo-alberto-caniato-vs-giuseppe-la-vela-2026-06-07",
       "match": "Carlo Alberto Caniato vs Giuseppe La Vela",
@@ -13092,6 +13628,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:44.067Z",
@@ -13121,7 +13658,278 @@
       }
     },
     {
-      "rank": 55,
+      "rank": 56,
+      "id": "dk-atp-challenger-heilbronn-luka-mikrut-vs-emilio-nava-2026-06-07",
+      "matchId": "dk-atp-challenger-heilbronn-luka-mikrut-vs-emilio-nava-2026-06-07",
+      "match": "Emilio Nava vs Luka Mikrut",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger Bad Rappenau",
+      "start": "5:00 AM",
+      "pick": "Emilio Nava",
+      "modelProbability": 61.4,
+      "marketProbability": 66.8,
+      "marketAmericanOdds": -201,
+      "modelEdge": -5.4,
+      "confidence": 61.4,
+      "volatility": 44,
+      "tier": "Watch",
+      "rationale": "Emilio Nava grades 7 points better on opponent-adjusted recent form. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": -2,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Emilio Nava",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 55,
+          "firstServePct": 66,
+          "avgAces": 5.4,
+          "avgDoubleFaults": 3.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 38,
+          "servicePointsWonPct": 67,
+          "weakServeMatches": 1,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (72%)",
+            "second serve holds up (55%)"
+          ],
+          "gameFlowRead": "Emilio Nava has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Luka Mikrut",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 48,
+          "firstServePct": 57,
+          "avgAces": 4.7,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 37,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 3,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "limited return pressure (37% return points won)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Luka Mikrut can drop points quickly through limited return pressure (37% return points won)."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Emilio Nava",
+          "line": null,
+          "americanOdds": -201,
+          "modelPct": 61.4,
+          "impliedPct": 66.8,
+          "edgePct": -5.4,
+          "evPer100": -8.1,
+          "netEvPer100": -10.1,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 39.9,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Emilio Nava 69% / Luka Mikrut 61%",
+          "rows": [
+            {
+              "name": "Emilio Nava",
+              "confidence": 69,
+              "modelPct": 61.4,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Luka Mikrut",
+              "confidence": 61,
+              "modelPct": 39.1,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 69,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Over 9.5",
+          "expectedGames": 10.1,
+          "confidence": 59,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Thin value",
+          "reason": "Expected first-set games 10.1 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 39%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "valueBoard": {
+        "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
+        "ml": {
+          "marketType": "ML",
+          "selection": "Emilio Nava",
+          "americanOdds": -201,
+          "modelPct": 61.4,
+          "impliedPct": 66.8,
+          "edgePct": -5.4,
+          "evPer100": -8.1,
+          "netEvPer100": -10.1,
+          "feePer100": 2,
+          "valueIssue": "Favorite price needs better proof",
+          "valueGrade": "Negative EV",
+          "betGrade": false
+        },
+        "spread": null,
+        "total": {
+          "marketType": "Total",
+          "selection": "No bet",
+          "line": null,
+          "overOdds": null,
+          "underOdds": null,
+          "expectedGames": 39.9,
+          "valueGrade": "No direction",
+          "reason": "No posted match total captured.",
+          "betGrade": false
+        },
+        "firstSetTotal": {
+          "marketType": "First-set total",
+          "selection": "Over 9.5",
+          "line": 9.5,
+          "americanOdds": -150,
+          "expectedGames": 10.1,
+          "confidence": 59,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "modelPct": 59,
+          "evPer100": -1.7,
+          "netEvPer100": -3.7,
+          "valueGrade": "Thin value",
+          "reason": "Expected first-set games 10.1 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 39%, first-set sample N/A, 0 recent sets.",
+          "betGrade": false
+        },
+        "setWin": [
+          {
+            "name": "Emilio Nava",
+            "confidence": 69,
+            "modelPct": 61.4,
+            "label": "Market favorite to win a set",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          },
+          {
+            "name": "Luka Mikrut",
+            "confidence": 61,
+            "modelPct": 39.1,
+            "label": "Underdog set-win path needs early holds",
+            "marketType": "Win a set",
+            "valueGrade": "Needs posted price",
+            "betGrade": false
+          }
+        ]
+      },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 5004,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Emilio Nava",
+            "probabilityPct": 66,
+            "bidPct": 64,
+            "lastTradePct": 66,
+            "openInterest": 4813,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN07MIKNAV-NAV",
+            "modelPct": 61.4,
+            "edgePct": -4.6
+          },
+          {
+            "name": "Luka Mikrut",
+            "probabilityPct": 35,
+            "bidPct": 34,
+            "lastTradePct": 35,
+            "openInterest": 191,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN07MIKNAV-MIK",
+            "modelPct": 39.1,
+            "edgePct": 4.1
+          }
+        ],
+        "priceAction": "Prediction-market tax; price is ahead of the model."
+      },
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-07T07:04:37.507Z",
+        "moneyline": [
+          {
+            "name": "Emilio Nava",
+            "americanOdds": -201,
+            "impliedPct": 66.8,
+            "modelPct": 61.4,
+            "edgePct": -5.4,
+            "grossProfitPct": 49.8,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Luka Mikrut",
+            "americanOdds": 152,
+            "impliedPct": 39.7,
+            "modelPct": 39.1,
+            "edgePct": -0.6,
+            "grossProfitPct": 152,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      }
+    },
+    {
+      "rank": 57,
       "id": "dk-atp-challenger-quals-bratislava-hynek-barton-vs-sebastian-sorger-2026-06-07",
       "matchId": "dk-atp-challenger-quals-bratislava-hynek-barton-vs-sebastian-sorger-2026-06-07",
       "match": "Hynek Barton vs Sebastian Sorger",
@@ -13337,6 +14145,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:19.199Z",
@@ -13366,251 +14175,7 @@
       }
     },
     {
-      "rank": 56,
-      "id": "dk-atp-challenger-heilbronn-luka-mikrut-vs-emilio-nava-2026-06-07",
-      "matchId": "dk-atp-challenger-heilbronn-luka-mikrut-vs-emilio-nava-2026-06-07",
-      "match": "Luka Mikrut vs Emilio Nava",
-      "format": "ATP",
-      "bestOf": 3,
-      "marketOnly": false,
-      "court": "ATP Challenger - Heilbronn",
-      "start": "5:00 AM",
-      "pick": "Emilio Nava",
-      "modelProbability": 61.7,
-      "marketProbability": 66.8,
-      "marketAmericanOdds": -201,
-      "modelEdge": -5.1,
-      "confidence": 61.7,
-      "volatility": 44,
-      "tier": "Watch",
-      "rationale": "Emilio Nava grades 7 points better on opponent-adjusted recent form. Lean, not a chase.",
-      "weaknessEdge": {
-        "edgeType": "No clear weakness edge",
-        "target": "Both sides",
-        "scoreGap": -2,
-        "attackingSide": null,
-        "vulnerableSide": null,
-        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
-        "liveTrigger": "Wait for a visible service-pressure split before entering.",
-        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
-        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
-        "pick": {
-          "name": "Emilio Nava",
-          "serviceHoldPct": null,
-          "firstServeWonPct": 72,
-          "secondServeWonPct": 55,
-          "firstServePct": 66,
-          "avgAces": 5.4,
-          "avgDoubleFaults": 3.4,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": 38,
-          "servicePointsWonPct": 67,
-          "weakServeMatches": 1,
-          "pressureMatches": null,
-          "matchesWithStats": 5,
-          "weaknessScore": 3,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [],
-          "strengths": [
-            "wins enough first-serve points (72%)",
-            "second serve holds up (55%)"
-          ],
-          "gameFlowRead": "Emilio Nava has no major service weakness in the joined warehouse sample."
-        },
-        "opponent": {
-          "name": "Luka Mikrut",
-          "serviceHoldPct": null,
-          "firstServeWonPct": 69,
-          "secondServeWonPct": 48,
-          "firstServePct": 57,
-          "avgAces": 4.7,
-          "avgDoubleFaults": 2,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": 37,
-          "servicePointsWonPct": 60,
-          "weakServeMatches": 0,
-          "pressureMatches": null,
-          "matchesWithStats": 3,
-          "weaknessScore": 1,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [
-            "limited return pressure (37% return points won)"
-          ],
-          "strengths": [],
-          "gameFlowRead": "Luka Mikrut can drop points quickly through limited return pressure (37% return points won)."
-        }
-      },
-      "totals": "Best O/U angle: no play without a posted total.",
-      "derivativeMarketCase": null,
-      "bettingMatrix": [
-        {
-          "marketType": "Moneyline",
-          "label": "ML value",
-          "selection": "Luka Mikrut",
-          "line": null,
-          "americanOdds": 152,
-          "modelPct": 41,
-          "impliedPct": 39.7,
-          "edgePct": 1.3,
-          "evPer100": 3.3,
-          "netEvPer100": 1.3,
-          "grade": "Raw ML edge only",
-          "issue": "Picked side is overpriced; value board flips to Luka Mikrut because that side has the better posted-price edge.",
-          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
-        },
-        {
-          "marketType": "Total games",
-          "label": "O/U games",
-          "selection": "No bet",
-          "line": null,
-          "americanOdds": null,
-          "modelPct": null,
-          "impliedPct": null,
-          "edgePct": null,
-          "evPer100": null,
-          "netEvPer100": null,
-          "expectedGames": 39.9,
-          "edgeGames": null,
-          "confidence": null,
-          "grade": "No direction",
-          "reason": "No posted match total captured."
-        },
-        {
-          "marketType": "Win a set",
-          "label": "Win a set %",
-          "selection": "Luka Mikrut 60% / Emilio Nava 70%",
-          "rows": [
-            {
-              "name": "Luka Mikrut",
-              "confidence": 60,
-              "modelPct": 41,
-              "label": "Underdog set-win path needs early holds"
-            },
-            {
-              "name": "Emilio Nava",
-              "confidence": 70,
-              "modelPct": 61.7,
-              "label": "Market favorite to win a set"
-            }
-          ],
-          "confidence": 70,
-          "grade": "Price required",
-          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
-        },
-        {
-          "marketType": "First-set total games",
-          "label": "1st set O/U",
-          "selection": "Over 9.5",
-          "expectedGames": 10.1,
-          "confidence": 59,
-          "tiebreakRisk": 18,
-          "earlyBreakRisk": 50,
-          "grade": "Thin value",
-          "reason": "Expected first-set games 10.1 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 39%, first-set sample N/A, 0 recent sets."
-        }
-      ],
-      "valueBoard": {
-        "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
-        "ml": {
-          "marketType": "ML",
-          "selection": "Luka Mikrut",
-          "americanOdds": 152,
-          "modelPct": 41,
-          "impliedPct": 39.7,
-          "edgePct": 1.3,
-          "evPer100": 3.3,
-          "netEvPer100": 1.3,
-          "feePer100": 2,
-          "rawEdgePct": 1.3,
-          "rawEvPer100": 3.3,
-          "rawNetEvPer100": 1.3,
-          "valueIssue": "Picked side is overpriced; value board flips to Luka Mikrut because that side has the better posted-price edge.",
-          "valueGrade": "Raw ML edge only",
-          "betGrade": false
-        },
-        "spread": null,
-        "total": {
-          "marketType": "Total",
-          "selection": "No bet",
-          "line": null,
-          "overOdds": null,
-          "underOdds": null,
-          "expectedGames": 39.9,
-          "valueGrade": "No direction",
-          "reason": "No posted match total captured.",
-          "betGrade": false
-        },
-        "firstSetTotal": {
-          "marketType": "First-set total",
-          "selection": "Over 9.5",
-          "line": 9.5,
-          "americanOdds": -150,
-          "expectedGames": 10.1,
-          "confidence": 59,
-          "tiebreakRisk": 18,
-          "earlyBreakRisk": 50,
-          "modelPct": 59,
-          "evPer100": -1.7,
-          "netEvPer100": -3.7,
-          "valueGrade": "Thin value",
-          "reason": "Expected first-set games 10.1 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 39%, first-set sample N/A, 0 recent sets.",
-          "betGrade": false
-        },
-        "setWin": [
-          {
-            "name": "Luka Mikrut",
-            "confidence": 60,
-            "modelPct": 41,
-            "label": "Underdog set-win path needs early holds",
-            "marketType": "Win a set",
-            "valueGrade": "Needs posted price",
-            "betGrade": false
-          },
-          {
-            "name": "Emilio Nava",
-            "confidence": 70,
-            "modelPct": 61.7,
-            "label": "Market favorite to win a set",
-            "marketType": "Win a set",
-            "valueGrade": "Needs posted price",
-            "betGrade": false
-          }
-        ]
-      },
-      "market": {
-        "source": "DraftKings Sportsbook",
-        "capturedAt": "2026-06-07T07:04:37.507Z",
-        "moneyline": [
-          {
-            "name": "Luka Mikrut",
-            "americanOdds": 152,
-            "impliedPct": 39.7,
-            "modelPct": 41,
-            "edgePct": 1.3,
-            "grossProfitPct": 152,
-            "priceBand": "Underdog"
-          },
-          {
-            "name": "Emilio Nava",
-            "americanOdds": -201,
-            "impliedPct": 66.8,
-            "modelPct": 61.7,
-            "edgePct": -5.1,
-            "grossProfitPct": 49.8,
-            "priceBand": "Moderate favorite"
-          }
-        ],
-        "spread": "No primary game spread captured",
-        "totalGames": "No total captured",
-        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
-      }
-    },
-    {
-      "rank": 57,
+      "rank": 58,
       "id": "dk-atp-challenger-quals-bratislava-max-lorincik-vs-abdullah-shelbayh-2026-06-07",
       "matchId": "dk-atp-challenger-quals-bratislava-max-lorincik-vs-abdullah-shelbayh-2026-06-07",
       "match": "Max Lorincik vs Abdullah Shelbayh",
@@ -13793,6 +14358,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:20.727Z",
@@ -13822,7 +14388,7 @@
       }
     },
     {
-      "rank": 58,
+      "rank": 59,
       "id": "dk-atp-challenger-cattolica-qualifiers-peter-fajta-vs-miguel-tobon-2026-06-07",
       "matchId": "dk-atp-challenger-cattolica-qualifiers-peter-fajta-vs-miguel-tobon-2026-06-07",
       "match": "Peter Fajta vs Miguel Tobon",
@@ -14029,6 +14595,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:42.616Z",
@@ -14055,288 +14622,6 @@
         "spread": "No primary game spread captured",
         "totalGames": "No total captured",
         "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
-      }
-    },
-    {
-      "rank": 59,
-      "id": "dk-wta-wta-quals-hertogenbosch-robin-montgomery-vs-joanna-garland-2026-06-07",
-      "matchId": "dk-wta-wta-quals-hertogenbosch-robin-montgomery-vs-joanna-garland-2026-06-07",
-      "match": "Robin Montgomery vs Joanna Garland",
-      "format": "WTA",
-      "bestOf": 3,
-      "marketOnly": false,
-      "court": "WTA Quals. - Hertogenbosch",
-      "start": "5:00 AM",
-      "pick": "Joanna Garland",
-      "modelProbability": 51.4,
-      "marketProbability": 42.2,
-      "marketAmericanOdds": 137,
-      "modelEdge": 9.2,
-      "confidence": 51.4,
-      "volatility": 43,
-      "tier": "Watch",
-      "rationale": "Opponent-adjusted recent form is basically even: Joanna Garland 43, Robin Montgomery 42. Lean, not a chase.",
-      "weaknessEdge": {
-        "edgeType": "Weakness edge",
-        "target": "Robin Montgomery",
-        "scoreGap": 10,
-        "attackingSide": "Joanna Garland",
-        "vulnerableSide": "Robin Montgomery",
-        "gameFlow": "Joanna Garland has a real path if Robin Montgomery's first two service games show the same weakness: second-serve points won are attackable (41%); double-fault pressure (6.0 avg).",
-        "liveTrigger": "Look for Robin Montgomery facing break points or second-serve pressure before 3-3.",
-        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
-        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
-        "pick": {
-          "name": "Joanna Garland",
-          "serviceHoldPct": null,
-          "firstServeWonPct": 70,
-          "secondServeWonPct": 48,
-          "firstServePct": 66,
-          "avgAces": 4.4,
-          "avgDoubleFaults": 4.6,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": 37,
-          "servicePointsWonPct": 62,
-          "weakServeMatches": 3,
-          "pressureMatches": null,
-          "matchesWithStats": 5,
-          "weaknessScore": 12,
-          "firstGameComfort": "Comfortable enough if first serve lands",
-          "liabilities": [
-            "double-fault pressure (4.6 avg)",
-            "3 recent matches with serve instability",
-            "limited return pressure (37% return points won)"
-          ],
-          "strengths": [],
-          "gameFlowRead": "Joanna Garland can drop points quickly through double-fault pressure (4.6 avg) and 3 recent matches with serve instability."
-        },
-        "opponent": {
-          "name": "Robin Montgomery",
-          "serviceHoldPct": null,
-          "firstServeWonPct": 64,
-          "secondServeWonPct": 41,
-          "firstServePct": 61,
-          "avgAces": 5.2,
-          "avgDoubleFaults": 6,
-          "avgWinners": null,
-          "avgUnforcedErrors": null,
-          "avgBreakPointsFaced": null,
-          "returnPointsWonPct": 38,
-          "servicePointsWonPct": 55,
-          "weakServeMatches": 4,
-          "pressureMatches": null,
-          "matchesWithStats": 4,
-          "weaknessScore": 22,
-          "firstGameComfort": "Needs early holds confirmed",
-          "liabilities": [
-            "second-serve points won are attackable (41%)",
-            "double-fault pressure (6.0 avg)",
-            "4 recent matches with serve instability",
-            "limited return pressure (38% return points won)"
-          ],
-          "strengths": [],
-          "gameFlowRead": "Robin Montgomery can drop points quickly through second-serve points won are attackable (41%) and double-fault pressure (6.0 avg)."
-        }
-      },
-      "totals": "Best O/U angle: no play without a posted total.",
-      "derivativeMarketCase": null,
-      "bettingMatrix": [
-        {
-          "marketType": "Moneyline",
-          "label": "ML value",
-          "selection": "Joanna Garland",
-          "line": null,
-          "americanOdds": 137,
-          "modelPct": 51.4,
-          "impliedPct": 42.2,
-          "edgePct": 9.2,
-          "evPer100": 21.8,
-          "netEvPer100": 19.8,
-          "grade": "Bet-grade value",
-          "issue": "Validated ML candidate",
-          "reason": "Model is meaningfully above DraftKings Sportsbook implied price."
-        },
-        {
-          "marketType": "Game spread",
-          "label": "Game spread",
-          "selection": "Joanna Garland",
-          "line": 2.5,
-          "americanOdds": -120,
-          "modelPct": 49,
-          "impliedPct": 54.5,
-          "edgePct": -5.5,
-          "evPer100": -10.2,
-          "netEvPer100": -12.2,
-          "expectedGames": null,
-          "edgeGames": null,
-          "confidence": 49,
-          "grade": "Negative EV",
-          "reason": "Joanna Garland spread is playable only if early return pressure shows"
-        },
-        {
-          "marketType": "Total games",
-          "label": "O/U games",
-          "selection": "Over",
-          "line": 21.5,
-          "americanOdds": -130,
-          "modelPct": 57,
-          "impliedPct": 56.5,
-          "edgePct": 0.5,
-          "evPer100": 0.8,
-          "netEvPer100": -1.2,
-          "expectedGames": 22.4,
-          "edgeGames": null,
-          "confidence": 57,
-          "grade": "Near fair",
-          "reason": "Expected match games 22.4 vs DraftKings Sportsbook 21.5; Over. hold avg N/A, BP saved N/A, BP converted 36%, first-set sample N/A, 0 recent sets."
-        },
-        {
-          "marketType": "Win a set",
-          "label": "Win a set %",
-          "selection": "Robin Montgomery 71% / Joanna Garland 59%",
-          "rows": [
-            {
-              "name": "Robin Montgomery",
-              "confidence": 71,
-              "modelPct": 50.7,
-              "label": "Underdog set-win path needs early holds"
-            },
-            {
-              "name": "Joanna Garland",
-              "confidence": 59,
-              "modelPct": 51.4,
-              "label": "Market favorite to win a set"
-            }
-          ],
-          "confidence": 71,
-          "grade": "Price required",
-          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
-        },
-        {
-          "marketType": "First-set total games",
-          "label": "1st set O/U",
-          "selection": "Pass / near line",
-          "expectedGames": 9.4,
-          "confidence": 51,
-          "tiebreakRisk": 18,
-          "earlyBreakRisk": 54,
-          "grade": "Near fair",
-          "reason": "Expected first-set games 9.4 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 36%, first-set sample N/A, 0 recent sets."
-        }
-      ],
-      "valueBoard": {
-        "note": "EV is profit per 100 risked from model probability vs posted odds. Positive model confidence is not enough if price is bad.",
-        "ml": {
-          "marketType": "ML",
-          "selection": "Joanna Garland",
-          "americanOdds": 137,
-          "modelPct": 51.4,
-          "impliedPct": 42.2,
-          "edgePct": 9.2,
-          "evPer100": 21.8,
-          "netEvPer100": 19.8,
-          "feePer100": 2,
-          "valueIssue": "Validated ML candidate",
-          "valueGrade": "Bet-grade value",
-          "betGrade": true
-        },
-        "spread": {
-          "marketType": "Spread",
-          "selection": "Joanna Garland",
-          "line": 2.5,
-          "americanOdds": -120,
-          "modelPct": 49,
-          "impliedPct": 54.5,
-          "edgePct": -5.5,
-          "evPer100": -10.2,
-          "netEvPer100": -12.2,
-          "feePer100": 2,
-          "valueIssue": "Spread watch only",
-          "valueGrade": "Negative EV",
-          "betGrade": false
-        },
-        "total": {
-          "marketType": "Total",
-          "selection": "Over",
-          "line": 21.5,
-          "americanOdds": -130,
-          "expectedGames": 22.4,
-          "modelPct": 57,
-          "impliedPct": 56.5,
-          "edgePct": 0.5,
-          "evPer100": 0.8,
-          "netEvPer100": -1.2,
-          "feePer100": 2,
-          "valueIssue": "Total watch only",
-          "valueGrade": "Near fair",
-          "reason": "Expected match games 22.4 vs DraftKings Sportsbook 21.5; Over. hold avg N/A, BP saved N/A, BP converted 36%, first-set sample N/A, 0 recent sets.",
-          "betGrade": false
-        },
-        "firstSetTotal": {
-          "marketType": "First-set total",
-          "selection": "Pass / near line",
-          "line": 9.5,
-          "americanOdds": null,
-          "expectedGames": 9.4,
-          "confidence": 51,
-          "tiebreakRisk": 18,
-          "earlyBreakRisk": 54,
-          "modelPct": 51,
-          "evPer100": null,
-          "netEvPer100": null,
-          "valueGrade": "Near fair",
-          "reason": "Expected first-set games 9.4 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 36%, first-set sample N/A, 0 recent sets.",
-          "betGrade": false
-        },
-        "setWin": [
-          {
-            "name": "Robin Montgomery",
-            "confidence": 71,
-            "modelPct": 50.7,
-            "label": "Underdog set-win path needs early holds",
-            "marketType": "Win a set",
-            "valueGrade": "Needs posted price",
-            "betGrade": false
-          },
-          {
-            "name": "Joanna Garland",
-            "confidence": 59,
-            "modelPct": 51.4,
-            "label": "Market favorite to win a set",
-            "marketType": "Win a set",
-            "valueGrade": "Needs posted price",
-            "betGrade": false
-          }
-        ]
-      },
-      "market": {
-        "source": "DraftKings Sportsbook",
-        "capturedAt": "2026-06-07T07:04:00.652Z",
-        "moneyline": [
-          {
-            "name": "Robin Montgomery",
-            "americanOdds": -168,
-            "impliedPct": 62.7,
-            "modelPct": 50.7,
-            "edgePct": -12,
-            "grossProfitPct": 59.5,
-            "priceBand": "Moderate favorite"
-          },
-          {
-            "name": "Joanna Garland",
-            "americanOdds": 137,
-            "impliedPct": 42.2,
-            "modelPct": 51.4,
-            "edgePct": 9.2,
-            "grossProfitPct": 137,
-            "priceBand": "Underdog"
-          }
-        ],
-        "spread": "Joanna Garland +2.5 (-120)",
-        "totalGames": "21.5 games: Over -130 / Under -115",
-        "priceAction": "Model is meaningfully above DraftKings Sportsbook implied price."
       }
     },
     {
@@ -14523,6 +14808,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:30.974Z",
@@ -14735,6 +15021,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:29.712Z",
@@ -14947,6 +15234,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:32.128Z",
@@ -15226,6 +15514,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:48.840Z",
@@ -15506,6 +15795,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:50.192Z",
@@ -15792,6 +16082,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:46.235Z",
@@ -16007,6 +16298,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:00.228Z",
@@ -16283,6 +16575,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:47.605Z",
@@ -16498,6 +16791,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:03.103Z",
@@ -16780,6 +17074,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:03:47.597Z",
@@ -16992,6 +17287,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:01.667Z",
@@ -17235,6 +17531,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:34.603Z",
@@ -17483,6 +17780,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:28.910Z",
@@ -17695,6 +17993,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:33.411Z",
@@ -17907,6 +18206,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:04.350Z",
@@ -18122,6 +18422,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:07.076Z",
@@ -18334,6 +18635,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:05.687Z",
@@ -18366,18 +18668,18 @@
       "rank": 77,
       "id": "dk-wta-wta-foggia-leyre-romero-gormaz-vs-tyra-caterina-grant-2026-06-07",
       "matchId": "dk-wta-wta-foggia-leyre-romero-gormaz-vs-tyra-caterina-grant-2026-06-07",
-      "match": "Leyre Romero Gormaz vs Tyra Caterina Grant",
+      "match": "Tyra Caterina Grant vs Leyre Romero Gormaz",
       "format": "WTA",
       "bestOf": 3,
       "marketOnly": false,
-      "court": "WTA Foggia",
+      "court": "WTA 125K Foggia",
       "start": "9:30 AM",
       "pick": "Tyra Caterina Grant",
-      "modelProbability": 57.1,
+      "modelProbability": 57,
       "marketProbability": 68.4,
       "marketAmericanOdds": -216,
-      "modelEdge": -11.3,
-      "confidence": 57.1,
+      "modelEdge": -11.4,
+      "confidence": 57,
       "volatility": 57,
       "tier": "Watch",
       "rationale": "Opponent-adjusted recent form is basically even: Tyra Caterina Grant 73, Leyre Romero Gormaz 74. Lean, not a chase.",
@@ -18458,12 +18760,12 @@
           "selection": "Leyre Romero Gormaz",
           "line": null,
           "americanOdds": 162,
-          "modelPct": 45.6,
+          "modelPct": 44.3,
           "impliedPct": 38.2,
-          "edgePct": 7.4,
-          "evPer100": 19.5,
-          "netEvPer100": 17.5,
-          "grade": "Bet-grade value",
+          "edgePct": 6.1,
+          "evPer100": 16.1,
+          "netEvPer100": 14.1,
+          "grade": "Raw ML edge only",
           "issue": "Picked side is overpriced; value board flips to Leyre Romero Gormaz because that side has the better posted-price edge.",
           "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
         },
@@ -18487,19 +18789,19 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Leyre Romero Gormaz 65% / Tyra Caterina Grant 65%",
+          "selection": "Tyra Caterina Grant 65% / Leyre Romero Gormaz 65%",
           "rows": [
-            {
-              "name": "Leyre Romero Gormaz",
-              "confidence": 65,
-              "modelPct": 45.6,
-              "label": "Underdog set-win path needs early holds"
-            },
             {
               "name": "Tyra Caterina Grant",
               "confidence": 65,
-              "modelPct": 57.1,
+              "modelPct": 57,
               "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Leyre Romero Gormaz",
+              "confidence": 65,
+              "modelPct": 44.3,
+              "label": "Underdog set-win path needs early holds"
             }
           ],
           "confidence": 65,
@@ -18524,17 +18826,17 @@
           "marketType": "ML",
           "selection": "Leyre Romero Gormaz",
           "americanOdds": 162,
-          "modelPct": 45.6,
+          "modelPct": 44.3,
           "impliedPct": 38.2,
-          "edgePct": 7.4,
-          "evPer100": 19.5,
-          "netEvPer100": 17.5,
+          "edgePct": 6.1,
+          "evPer100": 16.1,
+          "netEvPer100": 14.1,
           "feePer100": 2,
-          "rawEdgePct": 7.4,
-          "rawEvPer100": 19.5,
-          "rawNetEvPer100": 17.5,
+          "rawEdgePct": 6.1,
+          "rawEvPer100": 16.1,
+          "rawNetEvPer100": 14.1,
           "valueIssue": "Picked side is overpriced; value board flips to Leyre Romero Gormaz because that side has the better posted-price edge.",
-          "valueGrade": "Bet-grade value",
+          "valueGrade": "Raw ML edge only",
           "betGrade": false
         },
         "spread": null,
@@ -18567,46 +18869,76 @@
         },
         "setWin": [
           {
-            "name": "Leyre Romero Gormaz",
+            "name": "Tyra Caterina Grant",
             "confidence": 65,
-            "modelPct": 45.6,
-            "label": "Underdog set-win path needs early holds",
+            "modelPct": 57,
+            "label": "Market favorite to win a set",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
             "betGrade": false
           },
           {
-            "name": "Tyra Caterina Grant",
+            "name": "Leyre Romero Gormaz",
             "confidence": 65,
-            "modelPct": 57.1,
-            "label": "Market favorite to win a set",
+            "modelPct": 44.3,
+            "label": "Underdog set-win path needs early holds",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
             "betGrade": false
           }
         ]
       },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 355,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Tyra Caterina Grant",
+            "probabilityPct": 68,
+            "bidPct": 65,
+            "lastTradePct": 67,
+            "openInterest": 273,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN07ROMGRA-GRA",
+            "modelPct": 57,
+            "edgePct": -11
+          },
+          {
+            "name": "Leyre Romero Gormaz",
+            "probabilityPct": 35,
+            "bidPct": 32,
+            "lastTradePct": 35,
+            "openInterest": 82,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN07ROMGRA-ROM",
+            "modelPct": 44.3,
+            "edgePct": 9.3
+          }
+        ],
+        "priceAction": "Prediction-market fade; market is asking too much versus the model."
+      },
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:05:23.902Z",
         "moneyline": [
           {
-            "name": "Leyre Romero Gormaz",
-            "americanOdds": 162,
-            "impliedPct": 38.2,
-            "modelPct": 45.6,
-            "edgePct": 7.4,
-            "grossProfitPct": 162,
-            "priceBand": "Underdog"
-          },
-          {
             "name": "Tyra Caterina Grant",
             "americanOdds": -216,
             "impliedPct": 68.4,
-            "modelPct": 57.1,
-            "edgePct": -11.3,
+            "modelPct": 57,
+            "edgePct": -11.4,
             "grossProfitPct": 46.3,
             "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Leyre Romero Gormaz",
+            "americanOdds": 162,
+            "impliedPct": 38.2,
+            "modelPct": 44.3,
+            "edgePct": 6.1,
+            "grossProfitPct": 162,
+            "priceBand": "Underdog"
           }
         ],
         "spread": "No primary game spread captured",
@@ -18798,6 +19130,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:35.878Z",
@@ -18834,14 +19167,14 @@
       "format": "ATP",
       "bestOf": 3,
       "marketOnly": false,
-      "court": "ATP Challenger - Tyler",
-      "start": "10:05 AM",
+      "court": "ATP Challenger Tyler",
+      "start": "10:00 AM",
       "pick": "Adam Walton",
-      "modelProbability": 69,
+      "modelProbability": 71.1,
       "marketProbability": 80,
       "marketAmericanOdds": -400,
-      "modelEdge": -11,
-      "confidence": 69,
+      "modelEdge": -8.9,
+      "confidence": 71.1,
       "volatility": 41,
       "tier": "Watch",
       "rationale": "Opponent-adjusted recent form is basically even: Adam Walton 71, Andre Ilagan 70. Lean, not a chase.",
@@ -18913,7 +19246,7 @@
           "selection": "Andre Ilagan",
           "line": null,
           "americanOdds": 265,
-          "modelPct": 34.1,
+          "modelPct": 32.7,
           "impliedPct": 27.4,
           "edgePct": null,
           "evPer100": null,
@@ -18942,22 +19275,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Adam Walton 77% / Andre Ilagan 53%",
+          "selection": "Adam Walton 79% / Andre Ilagan 51%",
           "rows": [
             {
               "name": "Adam Walton",
-              "confidence": 77,
-              "modelPct": 69,
+              "confidence": 79,
+              "modelPct": 71.1,
               "label": "Market favorite to win a set"
             },
             {
               "name": "Andre Ilagan",
-              "confidence": 53,
-              "modelPct": 34.1,
+              "confidence": 51,
+              "modelPct": 32.7,
               "label": "Underdog set-win path needs early holds"
             }
           ],
-          "confidence": 77,
+          "confidence": 79,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -18979,15 +19312,15 @@
           "marketType": "ML",
           "selection": "Andre Ilagan",
           "americanOdds": 265,
-          "modelPct": 34.1,
+          "modelPct": 32.7,
           "impliedPct": 27.4,
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
           "feePer100": 2,
-          "rawEdgePct": 6.7,
-          "rawEvPer100": 24.5,
-          "rawNetEvPer100": 22.5,
+          "rawEdgePct": 5.3,
+          "rawEvPer100": 19.4,
+          "rawNetEvPer100": 17.4,
           "valueIssue": "Outlier dog price on Andre Ilagan; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
           "valueGrade": "Outlier price/manual review",
           "betGrade": false
@@ -19023,8 +19356,8 @@
         "setWin": [
           {
             "name": "Adam Walton",
-            "confidence": 77,
-            "modelPct": 69,
+            "confidence": 79,
+            "modelPct": 71.1,
             "label": "Market favorite to win a set",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
@@ -19032,14 +19365,44 @@
           },
           {
             "name": "Andre Ilagan",
-            "confidence": 53,
-            "modelPct": 34.1,
+            "confidence": 51,
+            "modelPct": 32.7,
             "label": "Underdog set-win path needs early holds",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
             "betGrade": false
           }
         ]
+      },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 641,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Adam Walton",
+            "probabilityPct": 85,
+            "bidPct": 71,
+            "lastTradePct": 78,
+            "openInterest": 622,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN07WALILA-WAL",
+            "modelPct": 71.1,
+            "edgePct": -13.9
+          },
+          {
+            "name": "Andre Ilagan",
+            "probabilityPct": 24,
+            "bidPct": 19,
+            "lastTradePct": 24,
+            "openInterest": 19,
+            "symbol": "KXATPCHALLENGERMATCH-26JUN07WALILA-ILA",
+            "modelPct": 32.7,
+            "edgePct": 8.7
+          }
+        ],
+        "priceAction": "Prediction-market fade; market is asking too much versus the model."
       },
       "market": {
         "source": "DraftKings Sportsbook",
@@ -19049,8 +19412,8 @@
             "name": "Adam Walton",
             "americanOdds": -400,
             "impliedPct": 80,
-            "modelPct": 69,
-            "edgePct": -11,
+            "modelPct": 71.1,
+            "edgePct": -8.9,
             "grossProfitPct": 25,
             "priceBand": "Low-payout favorite"
           },
@@ -19058,8 +19421,8 @@
             "name": "Andre Ilagan",
             "americanOdds": 265,
             "impliedPct": 27.4,
-            "modelPct": 34.1,
-            "edgePct": 6.7,
+            "modelPct": 32.7,
+            "edgePct": 5.3,
             "grossProfitPct": 265,
             "priceBand": "Underdog"
           }
@@ -19077,14 +19440,14 @@
       "format": "WTA",
       "bestOf": 3,
       "marketOnly": false,
-      "court": "WTA Makarska",
+      "court": "WTA 125K Makarska",
       "start": "11:00 AM",
       "pick": "Maria Timofeeva",
-      "modelProbability": 53.4,
+      "modelProbability": 62.8,
       "marketProbability": 56.7,
       "marketAmericanOdds": -131,
-      "modelEdge": -3.3,
-      "confidence": 53.4,
+      "modelEdge": 6.1,
+      "confidence": 62.8,
       "volatility": 49,
       "tier": "Watch",
       "rationale": "Opponent-adjusted recent form is basically even: Maria Timofeeva 75, Darja Semenistaja 73. Lean, not a chase.",
@@ -19161,12 +19524,12 @@
           "selection": "Maria Timofeeva",
           "line": null,
           "americanOdds": -131,
-          "modelPct": 53.4,
+          "modelPct": 62.8,
           "impliedPct": 56.7,
-          "edgePct": -3.3,
-          "evPer100": -5.8,
-          "netEvPer100": -7.8,
-          "grade": "Negative EV",
+          "edgePct": 6.1,
+          "evPer100": 10.7,
+          "netEvPer100": 8.7,
+          "grade": "Favorite price needs better proof",
           "issue": "Favorite price needs better proof",
           "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
         },
@@ -19181,7 +19544,7 @@
           "edgePct": null,
           "evPer100": null,
           "netEvPer100": null,
-          "expectedGames": 21.4,
+          "expectedGames": 19.8,
           "edgeGames": null,
           "confidence": null,
           "grade": "No direction",
@@ -19190,22 +19553,22 @@
         {
           "marketType": "Win a set",
           "label": "Win a set %",
-          "selection": "Darja Semenistaja 69% / Maria Timofeeva 61%",
+          "selection": "Darja Semenistaja 59% / Maria Timofeeva 71%",
           "rows": [
             {
               "name": "Darja Semenistaja",
-              "confidence": 69,
-              "modelPct": 49.3,
+              "confidence": 59,
+              "modelPct": 55.3,
               "label": "Underdog set-win path needs early holds"
             },
             {
               "name": "Maria Timofeeva",
-              "confidence": 61,
-              "modelPct": 53.4,
+              "confidence": 71,
+              "modelPct": 62.8,
               "label": "Market favorite to win a set"
             }
           ],
-          "confidence": 69,
+          "confidence": 71,
           "grade": "Price required",
           "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
         },
@@ -19213,12 +19576,12 @@
           "marketType": "First-set total games",
           "label": "1st set O/U",
           "selection": "Under 9.5",
-          "expectedGames": 9,
-          "confidence": 58,
+          "expectedGames": 8.9,
+          "confidence": 59,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 50,
           "grade": "Thin value",
-          "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets."
+          "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets."
         }
       ],
       "valueBoard": {
@@ -19227,14 +19590,14 @@
           "marketType": "ML",
           "selection": "Maria Timofeeva",
           "americanOdds": -131,
-          "modelPct": 53.4,
+          "modelPct": 62.8,
           "impliedPct": 56.7,
-          "edgePct": -3.3,
-          "evPer100": -5.8,
-          "netEvPer100": -7.8,
+          "edgePct": 6.1,
+          "evPer100": 10.7,
+          "netEvPer100": 8.7,
           "feePer100": 2,
           "valueIssue": "Favorite price needs better proof",
-          "valueGrade": "Negative EV",
+          "valueGrade": "Favorite price needs better proof",
           "betGrade": false
         },
         "spread": null,
@@ -19244,7 +19607,7 @@
           "line": null,
           "overOdds": null,
           "underOdds": null,
-          "expectedGames": 21.4,
+          "expectedGames": 19.8,
           "valueGrade": "No direction",
           "reason": "No posted match total captured.",
           "betGrade": false
@@ -19254,22 +19617,22 @@
           "selection": "Under 9.5",
           "line": 9.5,
           "americanOdds": -175,
-          "expectedGames": 9,
-          "confidence": 58,
+          "expectedGames": 8.9,
+          "confidence": 59,
           "tiebreakRisk": 18,
           "earlyBreakRisk": 50,
-          "modelPct": 58,
-          "evPer100": -8.9,
-          "netEvPer100": -10.9,
+          "modelPct": 59,
+          "evPer100": -7.3,
+          "netEvPer100": -9.3,
           "valueGrade": "Thin value",
-          "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets.",
+          "reason": "Expected first-set games 8.9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 53%, first-set sample N/A, 0 recent sets.",
           "betGrade": false
         },
         "setWin": [
           {
             "name": "Darja Semenistaja",
-            "confidence": 69,
-            "modelPct": 49.3,
+            "confidence": 59,
+            "modelPct": 55.3,
             "label": "Underdog set-win path needs early holds",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
@@ -19277,14 +19640,44 @@
           },
           {
             "name": "Maria Timofeeva",
-            "confidence": 61,
-            "modelPct": 53.4,
+            "confidence": 71,
+            "modelPct": 62.8,
             "label": "Market favorite to win a set",
             "marketType": "Win a set",
             "valueGrade": "Needs posted price",
             "betGrade": false
           }
         ]
+      },
+      "predictionMarket": {
+        "source": "Robinhood prediction market",
+        "capturedAt": null,
+        "eventUrl": "https://robinhood.com/us/en/prediction-markets/tennis/",
+        "totalOpenInterest": 159,
+        "totalVolume": 0,
+        "moneyline": [
+          {
+            "name": "Darja Semenistaja",
+            "probabilityPct": 64,
+            "bidPct": 41,
+            "lastTradePct": 48,
+            "openInterest": 159,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN07SEMTIM-SEM",
+            "modelPct": 55.3,
+            "edgePct": -8.7
+          },
+          {
+            "name": "Maria Timofeeva",
+            "probabilityPct": 79,
+            "bidPct": 49,
+            "lastTradePct": 0,
+            "openInterest": 0,
+            "symbol": "KXWTACHALLENGERMATCH-26JUN07SEMTIM-TIM",
+            "modelPct": 62.8,
+            "edgePct": -16.2
+          }
+        ],
+        "priceAction": "Prediction-market fade; market is asking too much versus the model."
       },
       "market": {
         "source": "DraftKings Sportsbook",
@@ -19294,8 +19687,8 @@
             "name": "Darja Semenistaja",
             "americanOdds": 101,
             "impliedPct": 49.8,
-            "modelPct": 49.3,
-            "edgePct": -0.5,
+            "modelPct": 55.3,
+            "edgePct": 5.5,
             "grossProfitPct": 101,
             "priceBand": "Coinflip"
           },
@@ -19303,8 +19696,8 @@
             "name": "Maria Timofeeva",
             "americanOdds": -131,
             "impliedPct": 56.7,
-            "modelPct": 53.4,
-            "edgePct": -3.3,
+            "modelPct": 62.8,
+            "edgePct": 6.1,
             "grossProfitPct": 76.3,
             "priceBand": "Coinflip"
           }
@@ -19530,6 +19923,7 @@
           }
         ]
       },
+      "predictionMarket": null,
       "market": {
         "source": "DraftKings Sportsbook",
         "capturedAt": "2026-06-07T07:04:02.616Z",

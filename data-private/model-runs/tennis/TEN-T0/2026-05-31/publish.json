@@ -5,8 +5,8 @@
   "modelId": "TEN-T0",
   "slateDate": "2026-05-31",
   "status": "deployed",
-  "deployedAt": "2026-06-05T23:27:34.332Z",
-  "deploymentUrl": "https://slate-web-static-1-8mnkmk3wp-jian-chens-projects-667dcf76.vercel.app",
+  "deployedAt": "2026-06-07T07:53:06.845Z",
+  "deploymentUrl": "https://slate-web-static-1-k2ora8qjd-jian-chens-projects-667dcf76.vercel.app",
   "webRoot": "web",
   "vercelProject": {
     "projectId": "prj_wKTGUqaCcDzyat6fBENE0ROnBWFL",
@@ -26,37 +26,20 @@
   },
   "staticArtifact": {
     "root": "web/dist",
-    "files": 951,
-    "sha256": "4dd5737fb9edebe74bdf8d22cceb4d6a7c7bd2fb9cbf0056660648ab60c62456"
+    "files": 1113,
+    "sha256": "c2530683233a8c1d3856ffa1e3d9b8ab637936255674b40f0b62d04e87106e3e"
   },
   "publicData": {
     "currentSlate": {
-      "id": "2026-06-05",
-      "label": "June 5, 2026",
+      "id": "2026-06-07",
+      "label": "June 7, 2026",
       "status": "ready",
       "slateMeta": {
-        "title": "June 5, 2026 Tennis Desk",
-        "date": "June 5, 2026",
-        "isoDate": "2026-06-05",
-        "timeZone": "America/Los_Angeles",
-        "modelCartridge": {
-          "id": "TEN-T0",
-          "sport": "tennis",
-          "label": "TEN-T0 tennis baseline",
-          "status": "baseline",
-          "entrypoint": "models/tennis/cartridges/TEN-T0/runner.mjs",
-          "manifestPath": "models/tennis/cartridges/TEN-T0/manifest.json"
-        },
-        "subtitle": "Roland Garros senior singles plus Robinhood ATP Challenger prediction-market inventory; model edges only apply where warehouse context is joined.",
-        "notes": [
-          "No doubles included.",
-          "DraftKings lines are preferred, with FanDuel and Robinhood fallback where needed.",
-          "June 5, 2026 uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined."
-        ]
+        "date": "June 7, 2026",
+        "isoDate": "2026-06-07"
       },
       "summary": {
-        "totalGames": 47,
-        "mlbGames": 15
+        "totalGames": 81
       }
     },
     "slates": [
@@ -225,7 +208,7 @@
           "isoDate": "2026-05-23"
         },
         "summary": {
-          "totalGames": 14
+          "totalGames": 15
         }
       },
       {
@@ -369,8 +352,7 @@
           "isoDate": "2026-06-04"
         },
         "summary": {
-          "totalGames": 32,
-          "mlbGames": 9
+          "totalGames": 32
         }
       },
       {
@@ -378,28 +360,35 @@
         "label": "June 5, 2026",
         "status": "ready",
         "slateMeta": {
-          "title": "June 5, 2026 Tennis Desk",
           "date": "June 5, 2026",
-          "isoDate": "2026-06-05",
-          "timeZone": "America/Los_Angeles",
-          "modelCartridge": {
-            "id": "TEN-T0",
-            "sport": "tennis",
-            "label": "TEN-T0 tennis baseline",
-            "status": "baseline",
-            "entrypoint": "models/tennis/cartridges/TEN-T0/runner.mjs",
-            "manifestPath": "models/tennis/cartridges/TEN-T0/manifest.json"
-          },
-          "subtitle": "Roland Garros senior singles plus Robinhood ATP Challenger prediction-market inventory; model edges only apply where warehouse context is joined.",
-          "notes": [
-            "No doubles included.",
-            "DraftKings lines are preferred, with FanDuel and Robinhood fallback where needed.",
-            "June 5, 2026 uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined."
-          ]
+          "isoDate": "2026-06-05"
         },
         "summary": {
-          "totalGames": 47,
-          "mlbGames": 15
+          "totalGames": 47
+        }
+      },
+      {
+        "id": "2026-06-06",
+        "label": "June 6, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 6, 2026",
+          "isoDate": "2026-06-06"
+        },
+        "summary": {
+          "totalGames": 15
+        }
+      },
+      {
+        "id": "2026-06-07",
+        "label": "June 7, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 7, 2026",
+          "isoDate": "2026-06-07"
+        },
+        "summary": {
+          "totalGames": 81
         }
       }
     ],

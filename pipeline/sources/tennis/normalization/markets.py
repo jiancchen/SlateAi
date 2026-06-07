@@ -204,6 +204,8 @@ def robinhood_level(category: str | None) -> str:
         return "Challenger"
     if "wta_125" in text:
         return "WTA 125K"
+    if "wta" in text:
+        return "WTA"
     return "Prediction market"
 
 

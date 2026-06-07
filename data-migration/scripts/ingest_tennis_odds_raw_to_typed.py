@@ -136,6 +136,107 @@ def ensure_source_snapshot(con: sqlite3.Connection, file_path: Path, payload: di
     return snapshot_id
 
 
+def delete_existing_typed_rows(
+    con: sqlite3.Connection,
+    file_path: Path,
+    *,
+    source_snapshot_id: str,
+    date: str,
+) -> dict[str, int]:
+    counts = {
+        "market_contracts": 0,
+        "market_price_ticks": 0,
+        "market_snapshots": 0,
+        "matches": 0,
+        "match_players": 0,
+        "match_aliases": 0,
+    }
+    if "robinhood-tennis-supplement" in file_path.name:
+        robinhood_match_ids = [
+            row["match_id"]
+            for row in con.execute(
+                """
+                select match_id
+                from matches
+                where source_snapshot_id = ?
+                """,
+                (source_snapshot_id,),
+            ).fetchall()
+        ]
+        counts["market_price_ticks"] = con.execute(
+            """
+            delete from market_price_ticks
+            where source_name = 'robinhood'
+              and raw_source_snapshot_id = ?
+            """,
+            (source_snapshot_id,),
+        ).rowcount
+        counts["market_snapshots"] = con.execute(
+            """
+            delete from market_snapshots
+            where source_name = 'robinhood'
+              and raw_source_snapshot_id = ?
+            """,
+            (source_snapshot_id,),
+        ).rowcount
+        counts["market_contracts"] = con.execute(
+            """
+            delete from market_contracts
+            where source_name = 'robinhood'
+              and match_id in (
+                select match_id
+                from matches
+                where match_date = ?
+              )
+            """,
+            (date,),
+        ).rowcount
+        if robinhood_match_ids:
+            placeholders = ",".join("?" for _ in robinhood_match_ids)
+            counts["match_aliases"] = con.execute(
+                f"""
+                delete from entity_aliases
+                where source_name = 'robinhood'
+                  and entity_type = 'match'
+                  and canonical_entity_id in ({placeholders})
+                """,
+                tuple(robinhood_match_ids),
+            ).rowcount
+            counts["match_players"] = con.execute(
+                f"""
+                delete from match_players
+                where match_id in ({placeholders})
+                """,
+                tuple(robinhood_match_ids),
+            ).rowcount
+            counts["matches"] = con.execute(
+                f"""
+                delete from matches
+                where match_id in ({placeholders})
+                """,
+                tuple(robinhood_match_ids),
+            ).rowcount
+    elif "draftkings-lines" in file_path.name:
+        counts["market_snapshots"] = con.execute(
+            """
+            delete from market_snapshots
+            where source_name = 'draftkings'
+              and raw_source_snapshot_id = ?
+            """,
+            (source_snapshot_id,),
+        ).rowcount
+    elif "fanduel-lines" in file_path.name:
+        counts["market_snapshots"] = con.execute(
+            """
+            delete from market_snapshots
+            where source_name = 'fanduel'
+              and raw_source_snapshot_id = ?
+            """,
+            (source_snapshot_id,),
+        ).rowcount
+    return counts
+
+
 def update_fetch_status(
     con: sqlite3.Connection,
     *,
@@ -259,11 +360,32 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
         con.execute("pragma foreign_keys = on")
         con.execute("begin")
         ensure_market_schema(con)
-        resolver = TennisIdentityResolver(con)
         before_unresolved = con.execute("select count(*) from unresolved_entities").fetchone()[0]
         before_contracts = con.execute("select count(*) from market_contracts").fetchone()[0]
         before_ticks = con.execute("select count(*) from market_price_ticks").fetchone()[0]
         before_snapshots = con.execute("select count(*) from market_snapshots").fetchone()[0]
+        source_file_entries = []
+        deleted_stale_rows = {
+            "market_contracts": 0,
+            "market_price_ticks": 0,
+            "market_snapshots": 0,
+            "matches": 0,
+            "match_players": 0,
+            "match_aliases": 0,
+        }
+        for file_path in files:
+            payload = read_json(file_path)
+            snapshot_id = ensure_source_snapshot(con, file_path, payload, args.date)
+            source_file_entries.append((file_path, payload, snapshot_id))
+            deleted_counts = delete_existing_typed_rows(
+                con,
+                file_path,
+                source_snapshot_id=snapshot_id,
+                date=args.date,
+            )
+            for key, value in deleted_counts.items():
+                deleted_stale_rows[key] += value
+        resolver = TennisIdentityResolver(con)
         contracts = []
         ticks = []
         snapshots = []
@@ -275,9 +397,7 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
             "parsed_snapshots": 0,
             "unparsed_rows": 0,
         }
-        for file_path in files:
-            payload = read_json(file_path)
-            snapshot_id = ensure_source_snapshot(con, file_path, payload, args.date)
+        for file_path, payload, snapshot_id in source_file_entries:
             source_snapshots.append(snapshot_id)
             if "robinhood-tennis-supplement" in file_path.name:
                 parsed_contracts, parsed_ticks, parsed_snapshots, row_counts = parse_robinhood_supplement_payload(
@@ -354,6 +474,7 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
                 "market_snapshots": after_snapshots - before_snapshots,
                 "unresolved_entities": unresolved_added,
             },
+            "deleted_stale_rows": deleted_stale_rows,
             "sample_source_snapshots": source_snapshots[:8],
             "ok": len(files) > 0 and len(snapshots) > 0,
         }
@@ -379,7 +500,7 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
                     "timestamp": utc_now(),
                     "phase": "9C",
                     "area": "tennis_odds_raw_to_typed",
-                    "source": "data-private/reference/tennis/{robinhood-tennis-supplement,fanduel-lines}",
+                    "source": "data-private/reference/tennis/{draftkings-lines,robinhood-tennis-supplement,fanduel-lines}",
                     "target": "sql-tennis.db:market_contracts,market_price_ticks,market_snapshots,source_fetch_status",
                     "parser_module": "pipeline/sources/tennis/normalization/markets.py",
                     "migration_script": "data-migration/scripts/ingest_tennis_odds_raw_to_typed.py",
@@ -395,6 +516,7 @@ def ingest(args: argparse.Namespace) -> dict[str, Any]:
                             "ticks": len(ticks),
                             "snapshots": len(snapshots),
                             "unresolved_rows_added": unresolved_added,
+                            "deleted_stale_rows": deleted_stale_rows,
                         }
                     ),
                 },

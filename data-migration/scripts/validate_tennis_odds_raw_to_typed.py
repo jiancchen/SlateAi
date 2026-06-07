@@ -103,6 +103,22 @@ def validate(args: argparse.Namespace) -> dict:
             """,
             (args.date,),
         )
+        draftkings_snapshots = scalar(
+            con,
+            """
+            select count(*)
+            from market_snapshots
+            where source_name = 'draftkings'
+              and raw_source_snapshot_id in (
+                select source_snapshot_id
+                from source_snapshots
+                where sport = 'tennis'
+                  and source_name = ?
+                  and source_date = ?
+              )
+            """,
+            (SOURCE_NAME, args.date),
+        )
         fanduel_snapshots = scalar(
             con,
             """
@@ -219,16 +235,19 @@ def validate(args: argparse.Namespace) -> dict:
         )
 
     errors = []
+    warnings = []
     if source_files <= 0:
         errors.append("No dated tennis odds source snapshots found.")
     if source_linked_snapshots <= 0:
         errors.append("No tennis odds market_snapshots linked to dated source snapshots.")
+    if draftkings_snapshots <= 0:
+        errors.append("No DraftKings market snapshots linked to dated source snapshots.")
     if robinhood_ticks <= 0:
         errors.append("No Robinhood market ticks linked to dated source snapshots.")
     if robinhood_contracts <= 0:
         errors.append("No Robinhood contracts linked to dated matches.")
     if fanduel_snapshots <= 0:
-        errors.append("No FanDuel market snapshots linked to dated source snapshots.")
+        warnings.append("No FanDuel market snapshots linked to dated source snapshots.")
     if status is None:
         errors.append("Missing source_fetch_status for tennis_odds date.")
     elif status["last_status"] not in {"success", "partial", "skipped_cache"}:
@@ -253,6 +272,7 @@ def validate(args: argparse.Namespace) -> dict:
         "date": args.date,
         "source_files": source_files,
         "source_linked_market_snapshots": source_linked_snapshots,
+        "draftkings_snapshots": draftkings_snapshots,
         "robinhood_contracts_for_date": robinhood_contracts,
         "robinhood_ticks": robinhood_ticks,
         "fanduel_snapshots": fanduel_snapshots,
@@ -266,6 +286,7 @@ def validate(args: argparse.Namespace) -> dict:
         "open_odds_unresolved": open_unresolved,
         "ok": not errors,
         "errors": errors,
+        "warnings": warnings,
     }
 
 
@@ -284,7 +305,7 @@ def main() -> int:
             "target": "sql-tennis.db:market_contracts,market_price_ticks,market_snapshots,source_fetch_status",
             "parser_module": "pipeline/sources/tennis/normalization/markets.py",
             "migration_script": "data-migration/scripts/validate_tennis_odds_raw_to_typed.py",
-            "validation": "passed" if report["ok"] else "; ".join(report["errors"]),
+            "validation": "passed" if report["ok"] and not report["warnings"] else "passed with warnings" if report["ok"] else "; ".join(report["errors"]),
             "status_from": "inserted",
             "status_to": "validated" if report["ok"] else "blocked",
             "report_path": str(args.report.relative_to(ROOT)),
@@ -293,8 +314,10 @@ def main() -> int:
                 {
                     "source_files": report["source_files"],
                     "snapshots": report["source_linked_market_snapshots"],
+                    "draftkings_snapshots": report["draftkings_snapshots"],
                     "robinhood_ticks": report["robinhood_ticks"],
                     "fanduel_snapshots": report["fanduel_snapshots"],
+                    "warnings": report["warnings"],
                 }
             ),
         },

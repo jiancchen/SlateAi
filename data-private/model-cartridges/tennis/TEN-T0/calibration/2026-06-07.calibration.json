@@ -8,9 +8,9 @@
       {
         "role": "model-runner",
         "path": "pipeline/tennis/publish/generate-day-module.mjs",
-        "expectedSha256": "c75709e49cfb5b66d5ed23d5aab72a1e273e0185a7295aff8d85fc41be5f09a6",
+        "expectedSha256": "2af92a178208910ea25a39530bfa603717002016e901b07c03c6e00d31571cfb",
         "exists": true,
-        "sha256": "c75709e49cfb5b66d5ed23d5aab72a1e273e0185a7295aff8d85fc41be5f09a6"
+        "sha256": "2af92a178208910ea25a39530bfa603717002016e901b07c03c6e00d31571cfb"
       },
       {
         "role": "source-mapping-helper",
@@ -36,7 +36,7 @@
       {
         "path": "web/src/lib/day-2026-06-07-tennis-warehouse-context.generated.json",
         "exists": true,
-        "sha256": "5eeeeb4ef1d57b55d529dfa1f0051d744a321dadb17a039f1ce25d7fa5874c12"
+        "sha256": "89583e9fd9ac9bc8c466b03a0e969cad5a62888221506c77cb6694150bfb776b"
       },
       {
         "path": "data-private/reference/tennis/draftkings-lines-2026-06-07.json",

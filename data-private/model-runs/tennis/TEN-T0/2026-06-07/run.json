@@ -10,9 +10,9 @@
   "mode": "pregame",
   "status": "snapshotted",
   "createdAt": "2026-06-07T07:08:49.258Z",
-  "snapshottedAt": "2026-06-07T07:10:20.576Z",
+  "snapshottedAt": "2026-06-07T07:49:35.221Z",
   "git": {
-    "commit": "8c504561ac7c98911512d0c7ae808cfb73cace4a",
+    "commit": "7b7660ed9a5ba39bc11286ca7ad8a1edd665276d",
     "dirty": true
   },
   "registry": {
