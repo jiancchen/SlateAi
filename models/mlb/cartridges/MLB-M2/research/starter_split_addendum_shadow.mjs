@@ -104,6 +104,47 @@ const gradeFirst5Moneyline = (pick, actual) => {
   return pick === actual
 }
 
+const gradeTotalQuality = ({ lean, projection, line, actual }) => {
+  if (lean !== 'Over' && lean !== 'Under') return null
+  if (!Number.isFinite(projection) || !Number.isFinite(line) || !Number.isFinite(actual)) return null
+  const modelEdge = projection - line
+  const actualMargin = actual - line
+  const directionalActualMargin = lean === 'Over' ? actualMargin : -actualMargin
+  const directionalModelEdge = lean === 'Over' ? modelEdge : -modelEdge
+  const hit = directionalActualMargin > 0
+  const missBy = hit ? 0 : Math.abs(directionalActualMargin)
+  const coverBy = hit ? directionalActualMargin : 0
+  const error = Math.abs(actual - projection)
+  const closeBand = 0.5
+  let quality = 'unknown'
+
+  if (hit && coverBy >= 2) quality = 'clean-hit'
+  else if (hit && coverBy <= closeBand) quality = 'close-hit'
+  else if (hit) quality = 'solid-hit'
+  else if (missBy <= closeBand) quality = 'close-miss'
+  else if (missBy >= 3) quality = 'severe-miss'
+  else quality = 'bad-miss'
+
+  let confidenceAlignment = 'neutral'
+  if (Math.abs(directionalModelEdge) >= 1 && hit && coverBy >= 1) confidenceAlignment = 'aligned'
+  else if (Math.abs(directionalModelEdge) >= 1 && !hit && missBy >= 1) confidenceAlignment = 'overconfident'
+  else if (Math.abs(directionalModelEdge) < 0.8 && missBy <= closeBand) confidenceAlignment = 'thin-close'
+  else if (Math.abs(directionalModelEdge) < 0.8 && hit && coverBy >= 1) confidenceAlignment = 'underconfident'
+
+  return {
+    lean,
+    modelEdge: round(modelEdge, 2),
+    directionalModelEdge: round(directionalModelEdge, 2),
+    actualMargin: round(actualMargin, 2),
+    directionalActualMargin: round(directionalActualMargin, 2),
+    coverBy: round(coverBy, 2),
+    missBy: round(missBy, 2),
+    error: round(error, 2),
+    quality,
+    confidenceAlignment
+  }
+}
+
 const sourceKey = (row) => `${row.game_id}|${String(row.pitcher_name || '').toLowerCase()}`
 
 const findSource = (map, game, pitcherName) => {
@@ -254,6 +295,18 @@ const buildRow = ({ game, sources, phase }) => {
   const adjustedF5SideTieHit = gradeFirst5SideTie(adjustedF5SideShape.pick, actualF5Side)
   const baselineF5MoneylineHit = gradeFirst5Moneyline(baselineF5SideShape.pick, actualF5Side)
   const adjustedF5MoneylineHit = gradeFirst5Moneyline(adjustedF5SideShape.pick, actualF5Side)
+  const baselineF5TotalQuality = gradeTotalQuality({
+    lean: baselineF5TotalLean,
+    projection: baselineF5Projection,
+    line,
+    actual: actualFirst5Total
+  })
+  const adjustedF5TotalQuality = gradeTotalQuality({
+    lean: adjustedF5TotalLean,
+    projection: adjustedF5Projection,
+    line,
+    actual: actualFirst5Total
+  })
 
   return {
     gameId,
@@ -301,7 +354,9 @@ const buildRow = ({ game, sources, phase }) => {
       baselineF5SideTieHit,
       adjustedF5SideTieHit,
       baselineF5MoneylineHit,
-      adjustedF5MoneylineHit
+      adjustedF5MoneylineHit,
+      baselineF5TotalQuality,
+      adjustedF5TotalQuality
     }
   }
 }
@@ -314,6 +369,29 @@ const summarizeBooleanHits = (rows, key) => {
     hits,
     misses: graded.length - hits,
     hitRate: graded.length ? hits / graded.length : null
+  }
+}
+
+const summarizeTotalQuality = (rows, key) => {
+  const graded = rows.map((row) => row.results[key]).filter(Boolean)
+  const buckets = {}
+  const alignment = {}
+  for (const row of graded) {
+    buckets[row.quality] = (buckets[row.quality] || 0) + 1
+    alignment[row.confidenceAlignment] = (alignment[row.confidenceAlignment] || 0) + 1
+  }
+  const average = (field) => {
+    const values = graded.map((row) => Number(row[field])).filter(Number.isFinite)
+    return values.length ? round(values.reduce((sum, value) => sum + value, 0) / values.length, 2) : null
+  }
+  return {
+    graded: graded.length,
+    buckets,
+    confidenceAlignment: alignment,
+    averageModelEdge: average('modelEdge'),
+    averageDirectionalModelEdge: average('directionalModelEdge'),
+    averageDirectionalActualMargin: average('directionalActualMargin'),
+    averageError: average('error')
   }
 }
 
@@ -345,7 +423,9 @@ const writeReports = ({ date, rows, sources }) => {
     },
     first5Total: {
       baseline: summarizeBooleanHits(rows, 'baselineF5TotalHit'),
-      adjusted: summarizeBooleanHits(rows, 'adjustedF5TotalHit')
+      adjusted: summarizeBooleanHits(rows, 'adjustedF5TotalHit'),
+      baselineQuality: summarizeTotalQuality(rows, 'baselineF5TotalQuality'),
+      adjustedQuality: summarizeTotalQuality(rows, 'adjustedF5TotalQuality')
     },
     first5SideTie: {
       baseline: summarizeBooleanHits(rows, 'baselineF5SideTieHit'),
@@ -379,6 +459,8 @@ const writeReports = ({ date, rows, sources }) => {
     `- First inning addendum: ${summary.firstInning.adjusted.hits}/${summary.firstInning.adjusted.graded}`,
     `- F5 total baseline: ${summary.first5Total.baseline.hits}/${summary.first5Total.baseline.graded}`,
     `- F5 total addendum: ${summary.first5Total.adjusted.hits}/${summary.first5Total.adjusted.graded}`,
+    `- F5 total baseline quality: ${JSON.stringify(summary.first5Total.baselineQuality.buckets)}; alignment ${JSON.stringify(summary.first5Total.baselineQuality.confidenceAlignment)}`,
+    `- F5 total addendum quality: ${JSON.stringify(summary.first5Total.adjustedQuality.buckets)}; alignment ${JSON.stringify(summary.first5Total.adjustedQuality.confidenceAlignment)}`,
     `- F5 side/tie baseline: ${summary.first5SideTie.baseline.hits}/${summary.first5SideTie.baseline.graded}`,
     `- F5 side/tie addendum: ${summary.first5SideTie.adjusted.hits}/${summary.first5SideTie.adjusted.graded}`,
     `- F5 moneyline baseline: ${summary.first5Moneyline.baseline.hits}/${summary.first5Moneyline.baseline.graded}`,
@@ -396,7 +478,13 @@ const writeReports = ({ date, rows, sources }) => {
     ...rows.map((row) => {
       const src = `${row.sourceCoverage.espn.filter(Boolean).length}/2 ESPN, ${row.sourceCoverage.statmuse.filter(Boolean).length}/2 SM`
       const fi = `${row.baseline.firstInningPick} ${pct(row.baseline.firstInningYesPct)} (${hitLabel(row.results.baselineFirstInningHit)}) -> ${row.adjusted.firstInningPick} ${pct(row.adjusted.firstInningYesPct)} (${hitLabel(row.results.adjustedFirstInningHit)})`
-      const f5 = `${row.baseline.f5TotalLean} ${row.baseline.f5Projection}/${row.baseline.f5Line} (${hitLabel(row.results.baselineF5TotalHit)}) -> ${row.adjusted.f5TotalLean} ${row.adjusted.f5Projection}/${row.baseline.f5Line} (${hitLabel(row.results.adjustedF5TotalHit)})`
+      const baseQuality = row.results.baselineF5TotalQuality
+        ? `${row.results.baselineF5TotalQuality.quality}, margin ${row.results.baselineF5TotalQuality.directionalActualMargin}`
+        : 'n/a'
+      const addQuality = row.results.adjustedF5TotalQuality
+        ? `${row.results.adjustedF5TotalQuality.quality}, margin ${row.results.adjustedF5TotalQuality.directionalActualMargin}`
+        : 'n/a'
+      const f5 = `${row.baseline.f5TotalLean} ${row.baseline.f5Projection}/${row.baseline.f5Line} (${hitLabel(row.results.baselineF5TotalHit)}; ${baseQuality}) -> ${row.adjusted.f5TotalLean} ${row.adjusted.f5Projection}/${row.baseline.f5Line} (${hitLabel(row.results.adjustedF5TotalHit)}; ${addQuality})`
       const f5Side = `${row.baseline.f5SideTiePick} ${pct(row.baseline.f5AwayLeadProbabilityPct)} away / ${pct(row.baseline.f5TieProbabilityPct)} tie (${hitLabel(row.results.baselineF5SideTieHit)}) -> ${row.adjusted.f5SideTiePick} ${pct(row.adjusted.f5AwayLeadProbabilityPct)} away / ${pct(row.adjusted.f5TieProbabilityPct)} tie (${hitLabel(row.results.adjustedF5SideTieHit)})`
       const actual = `FI ${row.actual.firstInningYes ? 'YRFI' : 'NRFI'}, F5 ${row.actual.f5Total} ${row.actual.f5TotalSide}, ${row.actual.f5Side}`
       return `| ${row.title} | ${src} | ${fi} | ${f5} | ${f5Side} | ${actual} |`

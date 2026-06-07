@@ -46,6 +46,42 @@
         "hits": 5,
         "misses": 4,
         "hitRate": 0.5555555555555556
+      },
+      "baselineQuality": {
+        "graded": 10,
+        "buckets": {
+          "severe-miss": 2,
+          "clean-hit": 4,
+          "close-miss": 1,
+          "bad-miss": 2,
+          "solid-hit": 1
+        },
+        "confidenceAlignment": {
+          "neutral": 6,
+          "aligned": 4
+        },
+        "averageModelEdge": -0.72,
+        "averageDirectionalModelEdge": 1.06,
+        "averageDirectionalActualMargin": -0.68,
+        "averageError": 3.22
+      },
+      "adjustedQuality": {
+        "graded": 9,
+        "buckets": {
+          "severe-miss": 1,
+          "clean-hit": 4,
+          "close-miss": 1,
+          "bad-miss": 2,
+          "solid-hit": 1
+        },
+        "confidenceAlignment": {
+          "neutral": 4,
+          "aligned": 5
+        },
+        "averageModelEdge": -0.94,
+        "averageDirectionalModelEdge": 1.26,
+        "averageDirectionalActualMargin": -0.03,
+        "averageError": 2.73
       }
     },
     "first5SideTie": {
@@ -178,7 +214,20 @@
         "baselineF5SideTieHit": true,
         "adjustedF5SideTieHit": true,
         "baselineF5MoneylineHit": true,
-        "adjustedF5MoneylineHit": true
+        "adjustedF5MoneylineHit": true,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -0.6,
+          "directionalModelEdge": 0.6,
+          "actualMargin": 5.5,
+          "directionalActualMargin": -5.5,
+          "coverBy": 0,
+          "missBy": 5.5,
+          "error": 6.1,
+          "quality": "severe-miss",
+          "confidenceAlignment": "neutral"
+        },
+        "adjustedF5TotalQuality": null
       }
     },
     {
@@ -280,7 +329,31 @@
         "baselineF5SideTieHit": null,
         "adjustedF5SideTieHit": false,
         "baselineF5MoneylineHit": null,
-        "adjustedF5MoneylineHit": null
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -0.9,
+          "directionalModelEdge": 0.9,
+          "actualMargin": 9.5,
+          "directionalActualMargin": -9.5,
+          "coverBy": 0,
+          "missBy": 9.5,
+          "error": 10.4,
+          "quality": "severe-miss",
+          "confidenceAlignment": "neutral"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -0.63,
+          "directionalModelEdge": 0.63,
+          "actualMargin": 9.5,
+          "directionalActualMargin": -9.5,
+          "coverBy": 0,
+          "missBy": 9.5,
+          "error": 10.13,
+          "quality": "severe-miss",
+          "confidenceAlignment": "neutral"
+        }
       }
     },
     {
@@ -383,7 +456,31 @@
         "baselineF5SideTieHit": true,
         "adjustedF5SideTieHit": true,
         "baselineF5MoneylineHit": true,
-        "adjustedF5MoneylineHit": true
+        "adjustedF5MoneylineHit": true,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1,
+          "directionalModelEdge": 1,
+          "actualMargin": -2.7,
+          "directionalActualMargin": 2.7,
+          "coverBy": 2.7,
+          "missBy": 0,
+          "error": 1.7,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1.12,
+          "directionalModelEdge": 1.12,
+          "actualMargin": -2.7,
+          "directionalActualMargin": 2.7,
+          "coverBy": 2.7,
+          "missBy": 0,
+          "error": 1.58,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
       }
     },
     {
@@ -486,7 +583,31 @@
         "baselineF5SideTieHit": true,
         "adjustedF5SideTieHit": true,
         "baselineF5MoneylineHit": null,
-        "adjustedF5MoneylineHit": null
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1.8,
+          "directionalModelEdge": 1.8,
+          "actualMargin": -3.5,
+          "directionalActualMargin": 3.5,
+          "coverBy": 3.5,
+          "missBy": 0,
+          "error": 1.7,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -2.15,
+          "directionalModelEdge": 2.15,
+          "actualMargin": -3.5,
+          "directionalActualMargin": 3.5,
+          "coverBy": 3.5,
+          "missBy": 0,
+          "error": 1.35,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
       }
     },
     {
@@ -589,7 +710,31 @@
         "baselineF5SideTieHit": false,
         "adjustedF5SideTieHit": false,
         "baselineF5MoneylineHit": null,
-        "adjustedF5MoneylineHit": null
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1,
+          "directionalModelEdge": 1,
+          "actualMargin": 0.5,
+          "directionalActualMargin": -0.5,
+          "coverBy": 0,
+          "missBy": 0.5,
+          "error": 1.5,
+          "quality": "close-miss",
+          "confidenceAlignment": "neutral"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1.13,
+          "directionalModelEdge": 1.13,
+          "actualMargin": 0.5,
+          "directionalActualMargin": -0.5,
+          "coverBy": 0,
+          "missBy": 0.5,
+          "error": 1.63,
+          "quality": "close-miss",
+          "confidenceAlignment": "neutral"
+        }
       }
     },
     {
@@ -692,7 +837,9 @@
         "baselineF5SideTieHit": null,
         "adjustedF5SideTieHit": null,
         "baselineF5MoneylineHit": null,
-        "adjustedF5MoneylineHit": null
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": null,
+        "adjustedF5TotalQuality": null
       }
     },
     {
@@ -795,7 +942,9 @@
         "baselineF5SideTieHit": false,
         "adjustedF5SideTieHit": false,
         "baselineF5MoneylineHit": null,
-        "adjustedF5MoneylineHit": null
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": null,
+        "adjustedF5TotalQuality": null
       }
     },
     {
@@ -898,7 +1047,31 @@
         "baselineF5SideTieHit": false,
         "adjustedF5SideTieHit": false,
         "baselineF5MoneylineHit": null,
-        "adjustedF5MoneylineHit": null
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -0.9,
+          "directionalModelEdge": 0.9,
+          "actualMargin": -2.5,
+          "directionalActualMargin": 2.5,
+          "coverBy": 2.5,
+          "missBy": 0,
+          "error": 1.6,
+          "quality": "clean-hit",
+          "confidenceAlignment": "neutral"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1.04,
+          "directionalModelEdge": 1.04,
+          "actualMargin": -2.5,
+          "directionalActualMargin": 2.5,
+          "coverBy": 2.5,
+          "missBy": 0,
+          "error": 1.46,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
       }
     },
     {
@@ -1001,7 +1174,31 @@
         "baselineF5SideTieHit": true,
         "adjustedF5SideTieHit": true,
         "baselineF5MoneylineHit": true,
-        "adjustedF5MoneylineHit": true
+        "adjustedF5MoneylineHit": true,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -0.6,
+          "directionalModelEdge": 0.6,
+          "actualMargin": 2.5,
+          "directionalActualMargin": -2.5,
+          "coverBy": 0,
+          "missBy": 2.5,
+          "error": 3.1,
+          "quality": "bad-miss",
+          "confidenceAlignment": "neutral"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -0.79,
+          "directionalModelEdge": 0.79,
+          "actualMargin": 2.5,
+          "directionalActualMargin": -2.5,
+          "coverBy": 0,
+          "missBy": 2.5,
+          "error": 3.29,
+          "quality": "bad-miss",
+          "confidenceAlignment": "neutral"
+        }
       }
     },
     {
@@ -1103,7 +1300,9 @@
         "baselineF5SideTieHit": null,
         "adjustedF5SideTieHit": null,
         "baselineF5MoneylineHit": null,
-        "adjustedF5MoneylineHit": null
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": null,
+        "adjustedF5TotalQuality": null
       }
     },
     {
@@ -1206,7 +1405,31 @@
         "baselineF5SideTieHit": false,
         "adjustedF5SideTieHit": false,
         "baselineF5MoneylineHit": false,
-        "adjustedF5MoneylineHit": false
+        "adjustedF5MoneylineHit": false,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -2.1,
+          "directionalModelEdge": 2.1,
+          "actualMargin": -1.5,
+          "directionalActualMargin": 1.5,
+          "coverBy": 1.5,
+          "missBy": 0,
+          "error": 0.6,
+          "quality": "solid-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -2.45,
+          "directionalModelEdge": 2.45,
+          "actualMargin": -1.5,
+          "directionalActualMargin": 1.5,
+          "coverBy": 1.5,
+          "missBy": 0,
+          "error": 0.95,
+          "quality": "solid-hit",
+          "confidenceAlignment": "aligned"
+        }
       }
     },
     {
@@ -1299,7 +1522,9 @@
         "baselineF5SideTieHit": null,
         "adjustedF5SideTieHit": null,
         "baselineF5MoneylineHit": null,
-        "adjustedF5MoneylineHit": null
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": null,
+        "adjustedF5TotalQuality": null
       }
     },
     {
@@ -1402,7 +1627,31 @@
         "baselineF5SideTieHit": false,
         "adjustedF5SideTieHit": false,
         "baselineF5MoneylineHit": null,
-        "adjustedF5MoneylineHit": null
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 1.1,
+          "directionalModelEdge": 1.1,
+          "actualMargin": 3.5,
+          "directionalActualMargin": 3.5,
+          "coverBy": 3.5,
+          "missBy": 0,
+          "error": 2.4,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 1.45,
+          "directionalModelEdge": 1.45,
+          "actualMargin": 3.5,
+          "directionalActualMargin": 3.5,
+          "coverBy": 3.5,
+          "missBy": 0,
+          "error": 2.05,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
       }
     },
     {
@@ -1505,7 +1754,20 @@
         "baselineF5SideTieHit": false,
         "adjustedF5SideTieHit": false,
         "baselineF5MoneylineHit": null,
-        "adjustedF5MoneylineHit": null
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 0.6,
+          "directionalModelEdge": 0.6,
+          "actualMargin": -2.5,
+          "directionalActualMargin": -2.5,
+          "coverBy": 0,
+          "missBy": 2.5,
+          "error": 3.1,
+          "quality": "bad-miss",
+          "confidenceAlignment": "neutral"
+        },
+        "adjustedF5TotalQuality": null
       }
     },
     {
@@ -1608,7 +1870,20 @@
         "baselineF5SideTieHit": true,
         "adjustedF5SideTieHit": true,
         "baselineF5MoneylineHit": true,
-        "adjustedF5MoneylineHit": true
+        "adjustedF5MoneylineHit": true,
+        "baselineF5TotalQuality": null,
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -0.61,
+          "directionalModelEdge": 0.61,
+          "actualMargin": 1.5,
+          "directionalActualMargin": -1.5,
+          "coverBy": 0,
+          "missBy": 1.5,
+          "error": 2.11,
+          "quality": "bad-miss",
+          "confidenceAlignment": "neutral"
+        }
       }
     }
   ]
