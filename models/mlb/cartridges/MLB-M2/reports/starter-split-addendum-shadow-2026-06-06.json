@@ -47,6 +47,34 @@
         "misses": 4,
         "hitRate": 0.5555555555555556
       }
+    },
+    "first5SideTie": {
+      "baseline": {
+        "graded": 11,
+        "hits": 5,
+        "misses": 6,
+        "hitRate": 0.45454545454545453
+      },
+      "adjusted": {
+        "graded": 12,
+        "hits": 5,
+        "misses": 7,
+        "hitRate": 0.4166666666666667
+      }
+    },
+    "first5Moneyline": {
+      "baseline": {
+        "graded": 5,
+        "hits": 4,
+        "misses": 1,
+        "hitRate": 0.8
+      },
+      "adjusted": {
+        "graded": 5,
+        "hits": 4,
+        "misses": 1,
+        "hitRate": 0.8
+      }
     }
   },
   "rows": [
@@ -68,7 +96,11 @@
         "firstInningYesPct": 73.7,
         "f5TotalLean": "Under",
         "f5Projection": 3.9,
-        "f5Line": 4.5
+        "f5Line": 4.5,
+        "f5SideTiePick": "Home",
+        "f5AwayLeadProbabilityPct": 46,
+        "f5TieProbabilityPct": 22,
+        "f5RunGap": -0.5
       },
       "addendum": {
         "away": {
@@ -124,12 +156,17 @@
         "firstInningYesPct": 74.8,
         "f5TotalLean": "Pass",
         "f5Projection": 3.92,
+        "f5SideTiePick": "Home",
+        "f5AwayLeadProbabilityPct": 44.9,
+        "f5TieProbabilityPct": 18.7,
+        "f5RunGap": -0.64,
         "awayFirst5LeadProbabilityPctDelta": -1.1
       },
       "actual": {
         "firstInningYes": true,
         "f5Total": 10,
         "f5TotalSide": "Over",
+        "f5Side": "Home",
         "awayFirst5Runs": 1,
         "homeFirst5Runs": 9
       },
@@ -137,7 +174,11 @@
         "baselineFirstInningHit": true,
         "adjustedFirstInningHit": true,
         "baselineF5TotalHit": false,
-        "adjustedF5TotalHit": null
+        "adjustedF5TotalHit": null,
+        "baselineF5SideTieHit": true,
+        "adjustedF5SideTieHit": true,
+        "baselineF5MoneylineHit": true,
+        "adjustedF5MoneylineHit": true
       }
     },
     {
@@ -158,7 +199,11 @@
         "firstInningYesPct": 57.7,
         "f5TotalLean": "Under",
         "f5Projection": 4.6,
-        "f5Line": 5.5
+        "f5Line": 5.5,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 53.2,
+        "f5TieProbabilityPct": 24.4,
+        "f5RunGap": 0.4
       },
       "addendum": {
         "away": {
@@ -213,12 +258,17 @@
         "firstInningYesPct": 59.8,
         "f5TotalLean": "Under",
         "f5Projection": 4.87,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 51.4,
+        "f5TieProbabilityPct": 29.8,
+        "f5RunGap": 0.17,
         "awayFirst5LeadProbabilityPctDelta": -1.8
       },
       "actual": {
         "firstInningYes": true,
         "f5Total": 15,
         "f5TotalSide": "Over",
+        "f5Side": "Home",
         "awayFirst5Runs": 2,
         "homeFirst5Runs": 13
       },
@@ -226,7 +276,11 @@
         "baselineFirstInningHit": true,
         "adjustedFirstInningHit": true,
         "baselineF5TotalHit": false,
-        "adjustedF5TotalHit": false
+        "adjustedF5TotalHit": false,
+        "baselineF5SideTieHit": null,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null
       }
     },
     {
@@ -247,7 +301,11 @@
         "firstInningYesPct": 71.1,
         "f5TotalLean": "Under",
         "f5Projection": 4.7,
-        "f5Line": 5.7
+        "f5Line": 5.7,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 55.6,
+        "f5TieProbabilityPct": 17.2,
+        "f5RunGap": 0.7
       },
       "addendum": {
         "away": {
@@ -303,12 +361,17 @@
         "firstInningYesPct": 70.7,
         "f5TotalLean": "Under",
         "f5Projection": 4.58,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 57.7,
+        "f5TieProbabilityPct": 10.9,
+        "f5RunGap": 0.96,
         "awayFirst5LeadProbabilityPctDelta": 2.1
       },
       "actual": {
         "firstInningYes": true,
         "f5Total": 3,
         "f5TotalSide": "Under",
+        "f5Side": "Away",
         "awayFirst5Runs": 2,
         "homeFirst5Runs": 1
       },
@@ -316,7 +379,11 @@
         "baselineFirstInningHit": true,
         "adjustedFirstInningHit": true,
         "baselineF5TotalHit": true,
-        "adjustedF5TotalHit": true
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": true,
+        "adjustedF5SideTieHit": true,
+        "baselineF5MoneylineHit": true,
+        "adjustedF5MoneylineHit": true
       }
     },
     {
@@ -337,7 +404,11 @@
         "firstInningYesPct": 55.9,
         "f5TotalLean": "Under",
         "f5Projection": 1.7,
-        "f5Line": 3.5
+        "f5Line": 3.5,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 50.8,
+        "f5TieProbabilityPct": 31.6,
+        "f5RunGap": 0.1
       },
       "addendum": {
         "away": {
@@ -393,12 +464,17 @@
         "firstInningYesPct": 53.6,
         "f5TotalLean": "Under",
         "f5Projection": 1.35,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 49.8,
+        "f5TieProbabilityPct": 33.4,
+        "f5RunGap": -0.02,
         "awayFirst5LeadProbabilityPctDelta": -1
       },
       "actual": {
         "firstInningYes": false,
         "f5Total": 0,
         "f5TotalSide": "Under",
+        "f5Side": "Tie",
         "awayFirst5Runs": 0,
         "homeFirst5Runs": 0
       },
@@ -406,7 +482,11 @@
         "baselineFirstInningHit": false,
         "adjustedFirstInningHit": null,
         "baselineF5TotalHit": true,
-        "adjustedF5TotalHit": true
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": true,
+        "adjustedF5SideTieHit": true,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null
       }
     },
     {
@@ -427,7 +507,11 @@
         "firstInningYesPct": 83,
         "f5TotalLean": "Under",
         "f5Projection": 3.5,
-        "f5Line": 4.5
+        "f5Line": 4.5,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 49.2,
+        "f5TieProbabilityPct": 31.6,
+        "f5RunGap": -0.1
       },
       "addendum": {
         "away": {
@@ -483,12 +567,17 @@
         "firstInningYesPct": 82.2,
         "f5TotalLean": "Under",
         "f5Projection": 3.37,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 49.2,
+        "f5TieProbabilityPct": 31.6,
+        "f5RunGap": -0.1,
         "awayFirst5LeadProbabilityPctDelta": 0
       },
       "actual": {
         "firstInningYes": false,
         "f5Total": 5,
         "f5TotalSide": "Over",
+        "f5Side": "Away",
         "awayFirst5Runs": 5,
         "homeFirst5Runs": 0
       },
@@ -496,7 +585,11 @@
         "baselineFirstInningHit": false,
         "adjustedFirstInningHit": false,
         "baselineF5TotalHit": false,
-        "adjustedF5TotalHit": false
+        "adjustedF5TotalHit": false,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null
       }
     },
     {
@@ -517,7 +610,11 @@
         "firstInningYesPct": 23.9,
         "f5TotalLean": "Pass",
         "f5Projection": 4.7,
-        "f5Line": 4.5
+        "f5Line": 4.5,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 52.4,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": 0.3
       },
       "addendum": {
         "away": {
@@ -573,12 +670,17 @@
         "firstInningYesPct": 20.8,
         "f5TotalLean": "Pass",
         "f5Projection": 4.35,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 52.4,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": 0.3,
         "awayFirst5LeadProbabilityPctDelta": 0
       },
       "actual": {
         "firstInningYes": false,
         "f5Total": 4,
         "f5TotalSide": "Under",
+        "f5Side": "Away",
         "awayFirst5Runs": 4,
         "homeFirst5Runs": 0
       },
@@ -586,7 +688,11 @@
         "baselineFirstInningHit": true,
         "adjustedFirstInningHit": true,
         "baselineF5TotalHit": null,
-        "adjustedF5TotalHit": null
+        "adjustedF5TotalHit": null,
+        "baselineF5SideTieHit": null,
+        "adjustedF5SideTieHit": null,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null
       }
     },
     {
@@ -607,7 +713,11 @@
         "firstInningYesPct": 80.3,
         "f5TotalLean": "Pass",
         "f5Projection": 3.7,
-        "f5Line": 4.1
+        "f5Line": 4.1,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 57.2,
+        "f5TieProbabilityPct": 12.4,
+        "f5RunGap": 0.9
       },
       "addendum": {
         "away": {
@@ -663,12 +773,17 @@
         "firstInningYesPct": 78.7,
         "f5TotalLean": "Pass",
         "f5Projection": 3.59,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 58.6,
+        "f5TieProbabilityPct": 8.2,
+        "f5RunGap": 1.08,
         "awayFirst5LeadProbabilityPctDelta": 1.4
       },
       "actual": {
         "firstInningYes": false,
         "f5Total": 2,
         "f5TotalSide": "Under",
+        "f5Side": "Tie",
         "awayFirst5Runs": 1,
         "homeFirst5Runs": 1
       },
@@ -676,7 +791,11 @@
         "baselineFirstInningHit": false,
         "adjustedFirstInningHit": false,
         "baselineF5TotalHit": null,
-        "adjustedF5TotalHit": null
+        "adjustedF5TotalHit": null,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null
       }
     },
     {
@@ -697,7 +816,11 @@
         "firstInningYesPct": 69.4,
         "f5TotalLean": "Under",
         "f5Projection": 4.6,
-        "f5Line": 5.5
+        "f5Line": 5.5,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 51.6,
+        "f5TieProbabilityPct": 29.2,
+        "f5RunGap": 0.2
       },
       "addendum": {
         "away": {
@@ -753,12 +876,17 @@
         "firstInningYesPct": 68.5,
         "f5TotalLean": "Under",
         "f5Projection": 4.46,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 50.6,
+        "f5TieProbabilityPct": 32.2,
+        "f5RunGap": 0.07,
         "awayFirst5LeadProbabilityPctDelta": -1
       },
       "actual": {
         "firstInningYes": true,
         "f5Total": 3,
         "f5TotalSide": "Under",
+        "f5Side": "Away",
         "awayFirst5Runs": 2,
         "homeFirst5Runs": 1
       },
@@ -766,7 +894,11 @@
         "baselineFirstInningHit": true,
         "adjustedFirstInningHit": true,
         "baselineF5TotalHit": true,
-        "adjustedF5TotalHit": true
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null
       }
     },
     {
@@ -787,7 +919,11 @@
         "firstInningYesPct": 31.3,
         "f5TotalLean": "Under",
         "f5Projection": 3.9,
-        "f5Line": 4.5
+        "f5Line": 4.5,
+        "f5SideTiePick": "Home",
+        "f5AwayLeadProbabilityPct": 42.8,
+        "f5TieProbabilityPct": 12.4,
+        "f5RunGap": -0.9
       },
       "addendum": {
         "away": {
@@ -843,12 +979,17 @@
         "firstInningYesPct": 30.7,
         "f5TotalLean": "Under",
         "f5Projection": 3.71,
+        "f5SideTiePick": "Home",
+        "f5AwayLeadProbabilityPct": 41.5,
+        "f5TieProbabilityPct": 8.5,
+        "f5RunGap": -1.06,
         "awayFirst5LeadProbabilityPctDelta": -1.3
       },
       "actual": {
         "firstInningYes": false,
         "f5Total": 7,
         "f5TotalSide": "Over",
+        "f5Side": "Home",
         "awayFirst5Runs": 1,
         "homeFirst5Runs": 6
       },
@@ -856,7 +997,11 @@
         "baselineFirstInningHit": true,
         "adjustedFirstInningHit": true,
         "baselineF5TotalHit": false,
-        "adjustedF5TotalHit": false
+        "adjustedF5TotalHit": false,
+        "baselineF5SideTieHit": true,
+        "adjustedF5SideTieHit": true,
+        "baselineF5MoneylineHit": true,
+        "adjustedF5MoneylineHit": true
       }
     },
     {
@@ -877,7 +1022,11 @@
         "firstInningYesPct": 66.7,
         "f5TotalLean": "Pass",
         "f5Projection": 4.1,
-        "f5Line": 4.5
+        "f5Line": 4.5,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 52.4,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": 0.3
       },
       "addendum": {
         "away": {
@@ -932,12 +1081,17 @@
         "firstInningYesPct": 65.8,
         "f5TotalLean": "Pass",
         "f5Projection": 3.94,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 52.9,
+        "f5TieProbabilityPct": 25.3,
+        "f5RunGap": 0.36,
         "awayFirst5LeadProbabilityPctDelta": 0.5
       },
       "actual": {
         "firstInningYes": true,
         "f5Total": 9,
         "f5TotalSide": "Over",
+        "f5Side": "Home",
         "awayFirst5Runs": 3,
         "homeFirst5Runs": 6
       },
@@ -945,7 +1099,11 @@
         "baselineFirstInningHit": true,
         "adjustedFirstInningHit": true,
         "baselineF5TotalHit": null,
-        "adjustedF5TotalHit": null
+        "adjustedF5TotalHit": null,
+        "baselineF5SideTieHit": null,
+        "adjustedF5SideTieHit": null,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null
       }
     },
     {
@@ -966,7 +1124,11 @@
         "firstInningYesPct": 18.5,
         "f5TotalLean": "Under",
         "f5Projection": 1.4,
-        "f5Line": 3.5
+        "f5Line": 3.5,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 55.6,
+        "f5TieProbabilityPct": 17.2,
+        "f5RunGap": 0.7
       },
       "addendum": {
         "away": {
@@ -1022,12 +1184,17 @@
         "firstInningYesPct": 15,
         "f5TotalLean": "Under",
         "f5Projection": 1.05,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 55,
+        "f5TieProbabilityPct": 19,
+        "f5RunGap": 0.63,
         "awayFirst5LeadProbabilityPctDelta": -0.6
       },
       "actual": {
         "firstInningYes": false,
         "f5Total": 2,
         "f5TotalSide": "Under",
+        "f5Side": "Home",
         "awayFirst5Runs": 0,
         "homeFirst5Runs": 2
       },
@@ -1035,7 +1202,11 @@
         "baselineFirstInningHit": true,
         "adjustedFirstInningHit": true,
         "baselineF5TotalHit": true,
-        "adjustedF5TotalHit": true
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": false,
+        "adjustedF5MoneylineHit": false
       }
     },
     {
@@ -1056,7 +1227,11 @@
         "firstInningYesPct": 64.5,
         "f5TotalLean": "Under",
         "f5Projection": 3.8,
-        "f5Line": 4.5
+        "f5Line": 4.5,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 56.4,
+        "f5TieProbabilityPct": 14.8,
+        "f5RunGap": 0.8
       },
       "addendum": {
         "away": {
@@ -1102,12 +1277,17 @@
         "firstInningYesPct": 65.4,
         "f5TotalLean": "Pass",
         "f5Projection": 3.91,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 56.7,
+        "f5TieProbabilityPct": 13.9,
+        "f5RunGap": 0.84,
         "awayFirst5LeadProbabilityPctDelta": 0.3
       },
       "actual": {
         "firstInningYes": null,
         "f5Total": null,
         "f5TotalSide": "Unknown",
+        "f5Side": "Unknown",
         "awayFirst5Runs": null,
         "homeFirst5Runs": null
       },
@@ -1115,7 +1295,11 @@
         "baselineFirstInningHit": null,
         "adjustedFirstInningHit": null,
         "baselineF5TotalHit": null,
-        "adjustedF5TotalHit": null
+        "adjustedF5TotalHit": null,
+        "baselineF5SideTieHit": null,
+        "adjustedF5SideTieHit": null,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null
       }
     },
     {
@@ -1136,7 +1320,11 @@
         "firstInningYesPct": 86.9,
         "f5TotalLean": "Over",
         "f5Projection": 6.6,
-        "f5Line": 5.5
+        "f5Line": 5.5,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 51.6,
+        "f5TieProbabilityPct": 29.2,
+        "f5RunGap": 0.2
       },
       "addendum": {
         "away": {
@@ -1192,12 +1380,17 @@
         "firstInningYesPct": 89.4,
         "f5TotalLean": "Over",
         "f5Projection": 6.95,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 51.3,
+        "f5TieProbabilityPct": 30.1,
+        "f5RunGap": 0.16,
         "awayFirst5LeadProbabilityPctDelta": -0.3
       },
       "actual": {
         "firstInningYes": false,
         "f5Total": 9,
         "f5TotalSide": "Over",
+        "f5Side": "Away",
         "awayFirst5Runs": 5,
         "homeFirst5Runs": 4
       },
@@ -1205,7 +1398,11 @@
         "baselineFirstInningHit": false,
         "adjustedFirstInningHit": false,
         "baselineF5TotalHit": true,
-        "adjustedF5TotalHit": true
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null
       }
     },
     {
@@ -1226,7 +1423,11 @@
         "firstInningYesPct": 81,
         "f5TotalLean": "Over",
         "f5Projection": 5.1,
-        "f5Line": 4.5
+        "f5Line": 4.5,
+        "f5SideTiePick": "Home",
+        "f5AwayLeadProbabilityPct": 38,
+        "f5TieProbabilityPct": 6,
+        "f5RunGap": -1.5
       },
       "addendum": {
         "away": {
@@ -1282,12 +1483,17 @@
         "firstInningYesPct": 78.1,
         "f5TotalLean": "Pass",
         "f5Projection": 4.75,
+        "f5SideTiePick": "Home",
+        "f5AwayLeadProbabilityPct": 37.3,
+        "f5TieProbabilityPct": 6,
+        "f5RunGap": -1.59,
         "awayFirst5LeadProbabilityPctDelta": -0.7
       },
       "actual": {
         "firstInningYes": true,
         "f5Total": 2,
         "f5TotalSide": "Under",
+        "f5Side": "Tie",
         "awayFirst5Runs": 1,
         "homeFirst5Runs": 1
       },
@@ -1295,7 +1501,11 @@
         "baselineFirstInningHit": true,
         "adjustedFirstInningHit": true,
         "baselineF5TotalHit": false,
-        "adjustedF5TotalHit": null
+        "adjustedF5TotalHit": null,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null
       }
     },
     {
@@ -1316,7 +1526,11 @@
         "firstInningYesPct": 57.5,
         "f5TotalLean": "Pass",
         "f5Projection": 5.1,
-        "f5Line": 5.5
+        "f5Line": 5.5,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 57.2,
+        "f5TieProbabilityPct": 12.4,
+        "f5RunGap": 0.9
       },
       "addendum": {
         "away": {
@@ -1372,12 +1586,17 @@
         "firstInningYesPct": 56.5,
         "f5TotalLean": "Under",
         "f5Projection": 4.89,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 58.6,
+        "f5TieProbabilityPct": 8.2,
+        "f5RunGap": 1.08,
         "awayFirst5LeadProbabilityPctDelta": 1.4
       },
       "actual": {
         "firstInningYes": true,
         "f5Total": 7,
         "f5TotalSide": "Over",
+        "f5Side": "Away",
         "awayFirst5Runs": 6,
         "homeFirst5Runs": 1
       },
@@ -1385,7 +1604,11 @@
         "baselineFirstInningHit": true,
         "adjustedFirstInningHit": true,
         "baselineF5TotalHit": null,
-        "adjustedF5TotalHit": false
+        "adjustedF5TotalHit": false,
+        "baselineF5SideTieHit": true,
+        "adjustedF5SideTieHit": true,
+        "baselineF5MoneylineHit": true,
+        "adjustedF5MoneylineHit": true
       }
     }
   ]

@@ -67,6 +67,43 @@ const actualTotalSide = (actual, line) => {
   return 'Push'
 }
 
+const first5SideShape = ({ awayRuns, homeRuns, awayLeadProbabilityPctDelta = 0 }) => {
+  if (!Number.isFinite(awayRuns) || !Number.isFinite(homeRuns)) {
+    return { pick: 'Pass', awayLeadProbabilityPct: null, tieProbabilityPct: null, runGap: null }
+  }
+  const runGap = awayRuns - homeRuns
+  const adjustedRunGap = runGap + (Number(awayLeadProbabilityPctDelta) || 0) / 8
+  const awayLeadProbabilityPct = Math.min(70, Math.max(30, 50 + adjustedRunGap * 8))
+  const tieProbabilityPct = Math.min(34, Math.max(6, 34 - Math.abs(adjustedRunGap) * 24))
+  let pick = 'Pass'
+  if (tieProbabilityPct >= 28) pick = 'Tie'
+  else if (awayLeadProbabilityPct >= 54) pick = 'Away'
+  else if (awayLeadProbabilityPct <= 46) pick = 'Home'
+  return {
+    pick,
+    awayLeadProbabilityPct: round(awayLeadProbabilityPct, 1),
+    tieProbabilityPct: round(tieProbabilityPct, 1),
+    runGap: round(adjustedRunGap, 2)
+  }
+}
+
+const actualFirst5Side = (awayRuns, homeRuns) => {
+  if (!Number.isFinite(awayRuns) || !Number.isFinite(homeRuns)) return 'Unknown'
+  if (awayRuns > homeRuns) return 'Away'
+  if (homeRuns > awayRuns) return 'Home'
+  return 'Tie'
+}
+
+const gradeFirst5SideTie = (pick, actual) => {
+  if (actual === 'Unknown' || pick === 'Pass') return null
+  return pick === actual
+}
+
+const gradeFirst5Moneyline = (pick, actual) => {
+  if (actual === 'Unknown' || actual === 'Tie' || pick === 'Tie' || pick === 'Pass') return null
+  return pick === actual
+}
+
 const sourceKey = (row) => `${row.game_id}|${String(row.pitcher_name || '').toLowerCase()}`
 
 const findSource = (map, game, pitcherName) => {
@@ -168,6 +205,19 @@ const buildRow = ({ game, sources, phase }) => {
   const adjustedF5TotalLean = hasAnyAddendumSource
     ? totalSide(adjustedF5Projection, line)
     : baselineF5TotalLean
+  const awayF5Projection = Number(game?.analysis?.mlbProjection?.awayFirst5ProjectedRuns)
+  const homeF5Projection = Number(game?.analysis?.mlbProjection?.homeFirst5ProjectedRuns)
+  const baselineF5SideShape = first5SideShape({
+    awayRuns: awayF5Projection,
+    homeRuns: homeF5Projection
+  })
+  const adjustedF5SideShape = hasAnyAddendumSource
+    ? first5SideShape({
+        awayRuns: awayF5Projection,
+        homeRuns: homeF5Projection,
+        awayLeadProbabilityPctDelta: addendum.adjustments.awayFirst5LeadProbabilityPct
+      })
+    : baselineF5SideShape
 
   const awayOutcome = phase?.away
   const homeOutcome = phase?.home
@@ -180,6 +230,10 @@ const buildRow = ({ game, sources, phase }) => {
       ? Number(awayOutcome.runs_first5 || 0) + Number(homeOutcome.runs_first5 || 0)
       : null
   const actualF5TotalSide = actualTotalSide(actualFirst5Total, line)
+  const actualF5Side = actualFirst5Side(
+    awayOutcome ? Number(awayOutcome.runs_first5 || 0) : null,
+    homeOutcome ? Number(homeOutcome.runs_first5 || 0) : null
+  )
   const baselineFirstInningHit =
     actualFirstInningYes === null || baselineFirstInningPick === 'Pass'
       ? null
@@ -196,6 +250,10 @@ const buildRow = ({ game, sources, phase }) => {
     actualF5TotalSide === 'Unknown' || actualF5TotalSide === 'Push' || adjustedF5TotalLean === 'Pass'
       ? null
       : adjustedF5TotalLean === actualF5TotalSide
+  const baselineF5SideTieHit = gradeFirst5SideTie(baselineF5SideShape.pick, actualF5Side)
+  const adjustedF5SideTieHit = gradeFirst5SideTie(adjustedF5SideShape.pick, actualF5Side)
+  const baselineF5MoneylineHit = gradeFirst5Moneyline(baselineF5SideShape.pick, actualF5Side)
+  const adjustedF5MoneylineHit = gradeFirst5Moneyline(adjustedF5SideShape.pick, actualF5Side)
 
   return {
     gameId,
@@ -209,7 +267,11 @@ const buildRow = ({ game, sources, phase }) => {
       firstInningYesPct: round(baselineYesPct, 1),
       f5TotalLean: baselineF5TotalLean,
       f5Projection: round(baselineF5Projection, 1),
-      f5Line: round(line, 1)
+      f5Line: round(line, 1),
+      f5SideTiePick: baselineF5SideShape.pick,
+      f5AwayLeadProbabilityPct: baselineF5SideShape.awayLeadProbabilityPct,
+      f5TieProbabilityPct: baselineF5SideShape.tieProbabilityPct,
+      f5RunGap: baselineF5SideShape.runGap
     },
     addendum,
     adjusted: {
@@ -217,12 +279,17 @@ const buildRow = ({ game, sources, phase }) => {
       firstInningYesPct: round(adjustedYesPct, 1),
       f5TotalLean: adjustedF5TotalLean,
       f5Projection: round(adjustedF5Projection, 2),
+      f5SideTiePick: adjustedF5SideShape.pick,
+      f5AwayLeadProbabilityPct: adjustedF5SideShape.awayLeadProbabilityPct,
+      f5TieProbabilityPct: adjustedF5SideShape.tieProbabilityPct,
+      f5RunGap: adjustedF5SideShape.runGap,
       awayFirst5LeadProbabilityPctDelta: addendum.adjustments.awayFirst5LeadProbabilityPct
     },
     actual: {
       firstInningYes: actualFirstInningYes,
       f5Total: actualFirst5Total,
       f5TotalSide: actualF5TotalSide,
+      f5Side: actualF5Side,
       awayFirst5Runs: awayOutcome ? Number(awayOutcome.runs_first5 || 0) : null,
       homeFirst5Runs: homeOutcome ? Number(homeOutcome.runs_first5 || 0) : null
     },
@@ -230,7 +297,11 @@ const buildRow = ({ game, sources, phase }) => {
       baselineFirstInningHit,
       adjustedFirstInningHit,
       baselineF5TotalHit,
-      adjustedF5TotalHit
+      adjustedF5TotalHit,
+      baselineF5SideTieHit,
+      adjustedF5SideTieHit,
+      baselineF5MoneylineHit,
+      adjustedF5MoneylineHit
     }
   }
 }
@@ -275,6 +346,14 @@ const writeReports = ({ date, rows, sources }) => {
     first5Total: {
       baseline: summarizeBooleanHits(rows, 'baselineF5TotalHit'),
       adjusted: summarizeBooleanHits(rows, 'adjustedF5TotalHit')
+    },
+    first5SideTie: {
+      baseline: summarizeBooleanHits(rows, 'baselineF5SideTieHit'),
+      adjusted: summarizeBooleanHits(rows, 'adjustedF5SideTieHit')
+    },
+    first5Moneyline: {
+      baseline: summarizeBooleanHits(rows, 'baselineF5MoneylineHit'),
+      adjusted: summarizeBooleanHits(rows, 'adjustedF5MoneylineHit')
     }
   }
   const reportDir = path.join(rootDir, 'models', 'mlb', 'cartridges', 'MLB-M2', 'reports')
@@ -300,6 +379,10 @@ const writeReports = ({ date, rows, sources }) => {
     `- First inning addendum: ${summary.firstInning.adjusted.hits}/${summary.firstInning.adjusted.graded}`,
     `- F5 total baseline: ${summary.first5Total.baseline.hits}/${summary.first5Total.baseline.graded}`,
     `- F5 total addendum: ${summary.first5Total.adjusted.hits}/${summary.first5Total.adjusted.graded}`,
+    `- F5 side/tie baseline: ${summary.first5SideTie.baseline.hits}/${summary.first5SideTie.baseline.graded}`,
+    `- F5 side/tie addendum: ${summary.first5SideTie.adjusted.hits}/${summary.first5SideTie.adjusted.graded}`,
+    `- F5 moneyline baseline: ${summary.first5Moneyline.baseline.hits}/${summary.first5Moneyline.baseline.graded}`,
+    `- F5 moneyline addendum: ${summary.first5Moneyline.adjusted.hits}/${summary.first5Moneyline.adjusted.graded}`,
     '',
     '## High-Confidence First-Inning Misses',
     '',
@@ -308,14 +391,15 @@ const writeReports = ({ date, rows, sources }) => {
     '',
     '## Game Rows',
     '',
-    '| Game | Src | FI Base -> Add | F5 Base -> Add | Actual |',
-    '|---|---:|---|---|---|',
+    '| Game | Src | FI Base -> Add | F5 O/U Base -> Add | F5 Side/Tie Base -> Add | Actual |',
+    '|---|---:|---|---|---|---|',
     ...rows.map((row) => {
       const src = `${row.sourceCoverage.espn.filter(Boolean).length}/2 ESPN, ${row.sourceCoverage.statmuse.filter(Boolean).length}/2 SM`
       const fi = `${row.baseline.firstInningPick} ${pct(row.baseline.firstInningYesPct)} (${hitLabel(row.results.baselineFirstInningHit)}) -> ${row.adjusted.firstInningPick} ${pct(row.adjusted.firstInningYesPct)} (${hitLabel(row.results.adjustedFirstInningHit)})`
       const f5 = `${row.baseline.f5TotalLean} ${row.baseline.f5Projection}/${row.baseline.f5Line} (${hitLabel(row.results.baselineF5TotalHit)}) -> ${row.adjusted.f5TotalLean} ${row.adjusted.f5Projection}/${row.baseline.f5Line} (${hitLabel(row.results.adjustedF5TotalHit)})`
-      const actual = `FI ${row.actual.firstInningYes ? 'YRFI' : 'NRFI'}, F5 ${row.actual.f5Total} ${row.actual.f5TotalSide}`
-      return `| ${row.title} | ${src} | ${fi} | ${f5} | ${actual} |`
+      const f5Side = `${row.baseline.f5SideTiePick} ${pct(row.baseline.f5AwayLeadProbabilityPct)} away / ${pct(row.baseline.f5TieProbabilityPct)} tie (${hitLabel(row.results.baselineF5SideTieHit)}) -> ${row.adjusted.f5SideTiePick} ${pct(row.adjusted.f5AwayLeadProbabilityPct)} away / ${pct(row.adjusted.f5TieProbabilityPct)} tie (${hitLabel(row.results.adjustedF5SideTieHit)})`
+      const actual = `FI ${row.actual.firstInningYes ? 'YRFI' : 'NRFI'}, F5 ${row.actual.f5Total} ${row.actual.f5TotalSide}, ${row.actual.f5Side}`
+      return `| ${row.title} | ${src} | ${fi} | ${f5} | ${f5Side} | ${actual} |`
     }),
     ''
   ].join('\n'))
