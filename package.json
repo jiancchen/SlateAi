@@ -147,6 +147,7 @@
     "data:research:mlb-kalshi-market-shape": "python3 pipeline/mlb/research/research_mlb_kalshi_market_shape.py",
     "data:research:mlb-m2-game-shape": "python3 models/mlb/cartridges/MLB-M2/research/game_shape_backtest.py",
     "data:research:mlb-m2-run-total-stories": "node models/mlb/cartridges/MLB-M2/research/run_total_story_engine.mjs",
+    "data:research:mlb-starter-split-addendum": "node models/mlb/cartridges/MLB-M2/research/starter_split_addendum_shadow.mjs",
     "data:research:mlb-m2-state-formulas": "python3 models/mlb/cartridges/MLB-M2/research/state_formula_parallel_model.py",
     "data:research:mlb-m2-state-formula-rows": "python3 models/mlb/cartridges/MLB-M2/research/state_formula_rows_report.py",
     "data:research:mlb-m2-player-identity": "python3 models/mlb/cartridges/MLB-M2/research/player_identity_rows_report.py",

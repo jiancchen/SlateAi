@@ -258,6 +258,7 @@ For active M2 evaluation days, also run:
 npm run data:research:mlb-m2-game-shape -- --start 2026-05-10 --end YYYY-MM-DD
 npm run data:research:mlb-m2-run-total-stories -- --post-date YYYY-MM-DD --today NEXT-YYYY-MM-DD
 npm run data:research:mlb-m2-state-formulas -- --start 2026-05-10 --end YYYY-MM-DD
+npm run data:research:mlb-starter-split-addendum -- --date YYYY-MM-DD
 ```
 
 The postmortem should not stop at `risky`, `veto`, projection error, or average miss. It should first answer:

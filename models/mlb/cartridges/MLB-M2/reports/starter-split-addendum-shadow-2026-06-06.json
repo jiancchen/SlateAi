@@ -1,0 +1,1392 @@
+{
+  "summary": {
+    "date": "2026-06-06",
+    "sourceRows": {
+      "espn": 29,
+      "statmuse": 30
+    },
+    "sourceCoverage": {
+      "games": 15,
+      "fullEspnGames": 14,
+      "fullStatmuseGames": 15
+    },
+    "firstInning": {
+      "baseline": {
+        "graded": 14,
+        "hits": 10,
+        "misses": 4,
+        "hitRate": 0.7142857142857143
+      },
+      "adjusted": {
+        "graded": 13,
+        "hits": 10,
+        "misses": 3,
+        "hitRate": 0.7692307692307693
+      },
+      "baselineHighConfidenceMisses": [
+        "Guardians @ Rangers",
+        "Mets @ Padres",
+        "Reds @ Cardinals"
+      ],
+      "adjustedHighConfidenceMisses": [
+        "Guardians @ Rangers",
+        "Mets @ Padres",
+        "Reds @ Cardinals"
+      ]
+    },
+    "first5Total": {
+      "baseline": {
+        "graded": 10,
+        "hits": 5,
+        "misses": 5,
+        "hitRate": 0.5
+      },
+      "adjusted": {
+        "graded": 9,
+        "hits": 5,
+        "misses": 4,
+        "hitRate": 0.5555555555555556
+      }
+    }
+  },
+  "rows": [
+    {
+      "gameId": "mlb-823942",
+      "title": "Angels @ Dodgers",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 73.7,
+        "f5TotalLean": "Under",
+        "f5Projection": 3.9,
+        "f5Line": 4.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 10,
+          "f5StabilityScore": 0.5,
+          "f5SideScore": -2.4,
+          "reasons": [
+            "1st time OPS allowed 0.786",
+            "1st time OBP allowed 0.388",
+            "3rd time OPS allowed 0.584",
+            "away split ERA 8.13",
+            "night split ERA 5.13",
+            "vs opponent runs/IP 1.08",
+            "expected innings 5.31"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": -4.3,
+          "f5StabilityScore": 5.1,
+          "f5SideScore": 5.1,
+          "reasons": [
+            "1st time OPS allowed 0.633",
+            "1st time OBP allowed 0.257",
+            "3rd time OPS allowed 0.575",
+            "home split ERA 2.84",
+            "night split ERA 3.05",
+            "vs opponent runs/IP 0.55",
+            "expected innings 6.3"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 1.1,
+          "first5TotalRuns": 0.02,
+          "awayFirst5LeadProbabilityPct": -1.1
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 74.8,
+        "f5TotalLean": "Pass",
+        "f5Projection": 3.92,
+        "awayFirst5LeadProbabilityPctDelta": -1.1
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 10,
+        "f5TotalSide": "Over",
+        "awayFirst5Runs": 1,
+        "homeFirst5Runs": 9
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": false,
+        "adjustedF5TotalHit": null
+      }
+    },
+    {
+      "gameId": "mlb-824184",
+      "title": "Athletics @ Astros",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 57.7,
+        "f5TotalLean": "Under",
+        "f5Projection": 4.6,
+        "f5Line": 5.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 10,
+          "f5StabilityScore": -10,
+          "f5SideScore": -10,
+          "reasons": [
+            "1st time OPS allowed 1.722",
+            "1st time OBP allowed 0.556",
+            "3rd time OPS allowed 1",
+            "away split ERA 20.25",
+            "day split ERA 20.25",
+            "expected innings 0"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0.4,
+          "f5StabilityScore": 4.4,
+          "f5SideScore": 1.9,
+          "reasons": [
+            "1st time OPS allowed 0.609",
+            "1st time OBP allowed 0.329",
+            "3rd time OPS allowed 0.259",
+            "home split ERA 7.13",
+            "day split ERA 3.72",
+            "vs opponent runs/IP 0.19",
+            "expected innings 4.19"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 2.1,
+          "first5TotalRuns": 0.27,
+          "awayFirst5LeadProbabilityPct": -1.8
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 59.8,
+        "f5TotalLean": "Under",
+        "f5Projection": 4.87,
+        "awayFirst5LeadProbabilityPctDelta": -1.8
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 15,
+        "f5TotalSide": "Over",
+        "awayFirst5Runs": 2,
+        "homeFirst5Runs": 13
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": false,
+        "adjustedF5TotalHit": false
+      }
+    },
+    {
+      "gameId": "mlb-824351",
+      "title": "Brewers @ Rockies",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 71.1,
+        "f5TotalLean": "Under",
+        "f5Projection": 4.7,
+        "f5Line": 5.7
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": -10,
+          "f5StabilityScore": 8.9,
+          "f5SideScore": 8.8,
+          "reasons": [
+            "1st time OPS allowed 0.353",
+            "1st time OBP allowed 0.203",
+            "3rd time OPS allowed 0.453",
+            "away split ERA 1.01",
+            "night split ERA 1.5",
+            "Coors Field ERA 0",
+            "expected innings 5.92"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 8,
+          "f5StabilityScore": -3.6,
+          "f5SideScore": -5.3,
+          "reasons": [
+            "1st time OPS allowed 0.806",
+            "1st time OBP allowed 0.346",
+            "3rd time OPS allowed 0.717",
+            "home split ERA 9.92",
+            "night split ERA 6.35",
+            "Coors Field ERA 9.92",
+            "expected innings 4"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -0.4,
+          "first5TotalRuns": -0.12,
+          "awayFirst5LeadProbabilityPct": 2.1
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 70.7,
+        "f5TotalLean": "Under",
+        "f5Projection": 4.58,
+        "awayFirst5LeadProbabilityPctDelta": 2.1
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 3,
+        "f5TotalSide": "Under",
+        "awayFirst5Runs": 2,
+        "homeFirst5Runs": 1
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true
+      }
+    },
+    {
+      "gameId": "mlb-824669",
+      "title": "Giants @ Cubs",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 55.9,
+        "f5TotalLean": "Under",
+        "f5Projection": 1.7,
+        "f5Line": 3.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": -1.5,
+          "f5StabilityScore": 2.6,
+          "f5SideScore": 2.2,
+          "reasons": [
+            "1st time OPS allowed 0.714",
+            "1st time OBP allowed 0.31",
+            "3rd time OPS allowed 0.757",
+            "away split ERA 3.95",
+            "day split ERA 2.22",
+            "Wrigley Field ERA 1.59",
+            "vs opponent runs/IP 0.47"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": -10,
+          "f5StabilityScore": 10,
+          "f5SideScore": 9,
+          "reasons": [
+            "1st time OPS allowed 0.483",
+            "1st time OBP allowed 0.26",
+            "3rd time OPS allowed 0.368",
+            "home split ERA 2.05",
+            "day split ERA 1.21",
+            "Wrigley Field ERA 2.05",
+            "vs opponent runs/IP 0.29"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -2.3,
+          "first5TotalRuns": -0.35,
+          "awayFirst5LeadProbabilityPct": -1
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "Pass",
+        "firstInningYesPct": 53.6,
+        "f5TotalLean": "Under",
+        "f5Projection": 1.35,
+        "awayFirst5LeadProbabilityPctDelta": -1
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 0,
+        "f5TotalSide": "Under",
+        "awayFirst5Runs": 0,
+        "homeFirst5Runs": 0
+      },
+      "results": {
+        "baselineFirstInningHit": false,
+        "adjustedFirstInningHit": null,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true
+      }
+    },
+    {
+      "gameId": "mlb-822891",
+      "title": "Guardians @ Rangers",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 83,
+        "f5TotalLean": "Under",
+        "f5Projection": 3.5,
+        "f5Line": 4.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0.1,
+          "f5StabilityScore": 3,
+          "f5SideScore": 1.9,
+          "reasons": [
+            "1st time OPS allowed 0.762",
+            "1st time OBP allowed 0.283",
+            "3rd time OPS allowed 0.619",
+            "away split ERA 4.54",
+            "night split ERA 4.15",
+            "vs opponent runs/IP 0.23",
+            "expected innings 5.31"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": -4.1,
+          "f5StabilityScore": 0.6,
+          "f5SideScore": 1.8,
+          "reasons": [
+            "1st time OPS allowed 0.488",
+            "1st time OBP allowed 0.231",
+            "3rd time OPS allowed 0.699",
+            "home split ERA 4.14",
+            "night split ERA 5.26",
+            "vs opponent runs/IP 0.64",
+            "expected innings 5.53"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -0.8,
+          "first5TotalRuns": -0.13,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 82.2,
+        "f5TotalLean": "Under",
+        "f5Projection": 3.37,
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 5,
+        "f5TotalSide": "Over",
+        "awayFirst5Runs": 5,
+        "homeFirst5Runs": 0
+      },
+      "results": {
+        "baselineFirstInningHit": false,
+        "adjustedFirstInningHit": false,
+        "baselineF5TotalHit": false,
+        "adjustedF5TotalHit": false
+      }
+    },
+    {
+      "gameId": "mlb-824269",
+      "title": "Mariners @ Tigers",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "NRFI",
+        "firstInningYesPct": 23.9,
+        "f5TotalLean": "Pass",
+        "f5Projection": 4.7,
+        "f5Line": 4.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": -10,
+          "f5StabilityScore": 2.9,
+          "f5SideScore": 4.7,
+          "reasons": [
+            "1st time OPS allowed 0.36",
+            "1st time OBP allowed 0.156",
+            "3rd time OPS allowed 1.067",
+            "away split ERA 2.2",
+            "day split ERA 0",
+            "Comerica Park ERA 0",
+            "vs opponent runs/IP 0"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": -5.5,
+          "f5StabilityScore": 4.4,
+          "f5SideScore": 4.6,
+          "reasons": [
+            "1st time OPS allowed 0.509",
+            "1st time OBP allowed 0.234",
+            "3rd time OPS allowed 0.556",
+            "home split ERA 4.26",
+            "day split ERA 5.06",
+            "Comerica Park ERA 4.26",
+            "vs opponent runs/IP 0.57"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -3.1,
+          "first5TotalRuns": -0.35,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "NRFI",
+        "firstInningYesPct": 20.8,
+        "f5TotalLean": "Pass",
+        "f5Projection": 4.35,
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 4,
+        "f5TotalSide": "Under",
+        "awayFirst5Runs": 4,
+        "homeFirst5Runs": 0
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": null,
+        "adjustedF5TotalHit": null
+      }
+    },
+    {
+      "gameId": "mlb-823292",
+      "title": "Mets @ Padres",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 80.3,
+        "f5TotalLean": "Pass",
+        "f5Projection": 3.7,
+        "f5Line": 4.1
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": -9.5,
+          "f5StabilityScore": 3.5,
+          "f5SideScore": 5.1,
+          "reasons": [
+            "1st time OPS allowed 0.487",
+            "1st time OBP allowed 0.239",
+            "3rd time OPS allowed 0.687",
+            "away split ERA 3.44",
+            "night split ERA 3.45",
+            "Petco Park ERA 1.5",
+            "expected innings 5.53"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 1.7,
+          "f5StabilityScore": -5.6,
+          "f5SideScore": -4.3,
+          "reasons": [
+            "1st time OPS allowed 0.752",
+            "1st time OBP allowed 0.333",
+            "3rd time OPS allowed 1.458",
+            "home split ERA 4.85",
+            "night split ERA 6.28",
+            "Petco Park ERA 4.85",
+            "vs opponent runs/IP 0.24"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -1.6,
+          "first5TotalRuns": -0.11,
+          "awayFirst5LeadProbabilityPct": 1.4
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 78.7,
+        "f5TotalLean": "Pass",
+        "f5Projection": 3.59,
+        "awayFirst5LeadProbabilityPctDelta": 1.4
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 2,
+        "f5TotalSide": "Under",
+        "awayFirst5Runs": 1,
+        "homeFirst5Runs": 1
+      },
+      "results": {
+        "baselineFirstInningHit": false,
+        "adjustedFirstInningHit": false,
+        "baselineF5TotalHit": null,
+        "adjustedF5TotalHit": null
+      }
+    },
+    {
+      "gameId": "mlb-825075",
+      "title": "Nationals @ Diamondbacks",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 69.4,
+        "f5TotalLean": "Under",
+        "f5Projection": 4.6,
+        "f5Line": 5.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0.4,
+          "f5StabilityScore": -1.6,
+          "f5SideScore": -1.3,
+          "reasons": [
+            "1st time OPS allowed 0.736",
+            "1st time OBP allowed 0.294",
+            "3rd time OPS allowed 0.908",
+            "away split ERA 4.25",
+            "day split ERA 3.42",
+            "Chase Field ERA 1.8",
+            "vs opponent runs/IP 0.63"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": -4.8,
+          "f5StabilityScore": 5.7,
+          "f5SideScore": 5.5,
+          "reasons": [
+            "1st time OPS allowed 0.694",
+            "1st time OBP allowed 0.308",
+            "3rd time OPS allowed 0.515",
+            "home split ERA 1.93",
+            "day split ERA 4.32",
+            "Chase Field ERA 1.93",
+            "vs opponent runs/IP 0.34"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -0.9,
+          "first5TotalRuns": -0.14,
+          "awayFirst5LeadProbabilityPct": -1
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 68.5,
+        "f5TotalLean": "Under",
+        "f5Projection": 4.46,
+        "awayFirst5LeadProbabilityPctDelta": -1
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 3,
+        "f5TotalSide": "Under",
+        "awayFirst5Runs": 2,
+        "homeFirst5Runs": 1
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true
+      }
+    },
+    {
+      "gameId": "mlb-822808",
+      "title": "Orioles @ Blue Jays",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "NRFI",
+        "firstInningYesPct": 31.3,
+        "f5TotalLean": "Under",
+        "f5Projection": 3.9,
+        "f5Line": 4.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 6.9,
+          "f5StabilityScore": -1.1,
+          "f5SideScore": -2.4,
+          "reasons": [
+            "1st time OPS allowed 0.718",
+            "1st time OBP allowed 0.322",
+            "3rd time OPS allowed 0.831",
+            "away split ERA 6.18",
+            "night split ERA 3.06",
+            "Rogers Centre ERA 11.25",
+            "vs opponent runs/IP 0.61"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": -9.9,
+          "f5StabilityScore": 10,
+          "f5SideScore": 6.1,
+          "reasons": [
+            "1st time OPS allowed 0.574",
+            "1st time OBP allowed 0.269",
+            "3rd time OPS allowed 0",
+            "home split ERA 1.08",
+            "night split ERA 1.89",
+            "Rogers Centre ERA 1.08",
+            "vs opponent runs/IP 0.16"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -0.6,
+          "first5TotalRuns": -0.19,
+          "awayFirst5LeadProbabilityPct": -1.3
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "NRFI",
+        "firstInningYesPct": 30.7,
+        "f5TotalLean": "Under",
+        "f5Projection": 3.71,
+        "awayFirst5LeadProbabilityPctDelta": -1.3
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 7,
+        "f5TotalSide": "Over",
+        "awayFirst5Runs": 1,
+        "homeFirst5Runs": 6
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": false,
+        "adjustedF5TotalHit": false
+      }
+    },
+    {
+      "gameId": "mlb-824915",
+      "title": "Pirates @ Braves",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 66.7,
+        "f5TotalLean": "Pass",
+        "f5Projection": 4.1,
+        "f5Line": 4.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": -6,
+          "f5StabilityScore": 3.3,
+          "f5SideScore": 4.4,
+          "reasons": [
+            "1st time OPS allowed 0.571",
+            "1st time OBP allowed 0.25",
+            "3rd time OPS allowed 0.681",
+            "away split ERA 3.16",
+            "day split ERA 2.76",
+            "expected innings 6.22"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 1.5,
+          "f5StabilityScore": 2.1,
+          "f5SideScore": 0.9,
+          "reasons": [
+            "1st time OPS allowed 0.649",
+            "1st time OBP allowed 0.286",
+            "3rd time OPS allowed 0.561",
+            "home split ERA 3.48",
+            "day split ERA 6.08",
+            "vs opponent runs/IP 0.62",
+            "expected innings 5.17"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -0.9,
+          "first5TotalRuns": -0.16,
+          "awayFirst5LeadProbabilityPct": 0.5
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 65.8,
+        "f5TotalLean": "Pass",
+        "f5Projection": 3.94,
+        "awayFirst5LeadProbabilityPctDelta": 0.5
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 9,
+        "f5TotalSide": "Over",
+        "awayFirst5Runs": 3,
+        "homeFirst5Runs": 6
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": null,
+        "adjustedF5TotalHit": null
+      }
+    },
+    {
+      "gameId": "mlb-823859",
+      "title": "Rays @ Marlins",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "NRFI",
+        "firstInningYesPct": 18.5,
+        "f5TotalLean": "Under",
+        "f5Projection": 1.4,
+        "f5Line": 3.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": -10,
+          "f5StabilityScore": 2.4,
+          "f5SideScore": 4.1,
+          "reasons": [
+            "1st time OPS allowed 0.404",
+            "1st time OBP allowed 0.222",
+            "3rd time OPS allowed 0.876",
+            "away split ERA 3.68",
+            "day split ERA 2.88",
+            "vs opponent runs/IP 0.31",
+            "expected innings 5"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": -7.5,
+          "f5StabilityScore": 10,
+          "f5SideScore": 8.3,
+          "reasons": [
+            "1st time OPS allowed 0.574",
+            "1st time OBP allowed 0.246",
+            "3rd time OPS allowed 0",
+            "home split ERA 1.56",
+            "day split ERA 5.79",
+            "vs opponent runs/IP 0.5",
+            "expected innings 5.2"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -3.5,
+          "first5TotalRuns": -0.35,
+          "awayFirst5LeadProbabilityPct": -0.6
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "NRFI",
+        "firstInningYesPct": 15,
+        "f5TotalLean": "Under",
+        "f5Projection": 1.05,
+        "awayFirst5LeadProbabilityPctDelta": -0.6
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 2,
+        "f5TotalSide": "Under",
+        "awayFirst5Runs": 0,
+        "homeFirst5Runs": 2
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true
+      }
+    },
+    {
+      "gameId": "mlb-823539",
+      "title": "Red Sox @ Yankees",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 64.5,
+        "f5TotalLean": "Under",
+        "f5Projection": 3.8,
+        "f5Line": 4.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": -0.2,
+          "f5StabilityScore": -0.1,
+          "f5SideScore": 0.1,
+          "reasons": [
+            "vs opponent runs/IP 0.57",
+            "expected innings 5.33"
+          ],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 4.6,
+          "f5StabilityScore": -1.7,
+          "f5SideScore": -2.2,
+          "reasons": [
+            "vs opponent runs/IP 1.05",
+            "expected innings 5.36"
+          ],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0.9,
+          "first5TotalRuns": 0.11,
+          "awayFirst5LeadProbabilityPct": 0.3
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 65.4,
+        "f5TotalLean": "Pass",
+        "f5Projection": 3.91,
+        "awayFirst5LeadProbabilityPctDelta": 0.3
+      },
+      "actual": {
+        "firstInningYes": null,
+        "f5Total": null,
+        "f5TotalSide": "Unknown",
+        "awayFirst5Runs": null,
+        "homeFirst5Runs": null
+      },
+      "results": {
+        "baselineFirstInningHit": null,
+        "adjustedFirstInningHit": null,
+        "baselineF5TotalHit": null,
+        "adjustedF5TotalHit": null
+      }
+    },
+    {
+      "gameId": "mlb-823048",
+      "title": "Reds @ Cardinals",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 86.9,
+        "f5TotalLean": "Over",
+        "f5Projection": 6.6,
+        "f5Line": 5.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 10,
+          "f5StabilityScore": -6,
+          "f5SideScore": -6.3,
+          "reasons": [
+            "1st time OPS allowed 1.001",
+            "1st time OBP allowed 0.37",
+            "3rd time OPS allowed 1.338",
+            "away split ERA 4.32",
+            "day split ERA 4.08",
+            "vs opponent runs/IP 0.61",
+            "expected innings 5.53"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 2.5,
+          "f5StabilityScore": -5.3,
+          "f5SideScore": -4,
+          "reasons": [
+            "1st time OPS allowed 0.724",
+            "1st time OBP allowed 0.316",
+            "3rd time OPS allowed 1.236",
+            "home split ERA 4.58",
+            "day split ERA 4.25",
+            "vs opponent runs/IP 0.54",
+            "expected innings 5.17"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 2.5,
+          "first5TotalRuns": 0.35,
+          "awayFirst5LeadProbabilityPct": -0.3
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 89.4,
+        "f5TotalLean": "Over",
+        "f5Projection": 6.95,
+        "awayFirst5LeadProbabilityPctDelta": -0.3
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 9,
+        "f5TotalSide": "Over",
+        "awayFirst5Runs": 5,
+        "homeFirst5Runs": 4
+      },
+      "results": {
+        "baselineFirstInningHit": false,
+        "adjustedFirstInningHit": false,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true
+      }
+    },
+    {
+      "gameId": "mlb-823697",
+      "title": "Royals @ Twins",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 81,
+        "f5TotalLean": "Over",
+        "f5Projection": 5.1,
+        "f5Line": 4.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": -5.1,
+          "f5StabilityScore": 3.3,
+          "f5SideScore": 2,
+          "reasons": [
+            "1st time OPS allowed 0.684",
+            "1st time OBP allowed 0.333",
+            "3rd time OPS allowed 0",
+            "away split ERA 1.86",
+            "day split ERA 5.73",
+            "Target Field ERA 1.8",
+            "vs opponent runs/IP 0.14"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": -9.6,
+          "f5StabilityScore": 6.2,
+          "f5SideScore": 6.7,
+          "reasons": [
+            "1st time OPS allowed 0.558",
+            "1st time OBP allowed 0.24",
+            "3rd time OPS allowed 0.526",
+            "home split ERA 2.61",
+            "day split ERA 1.46",
+            "Target Field ERA 2.61",
+            "vs opponent runs/IP 0.28"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -2.9,
+          "first5TotalRuns": -0.35,
+          "awayFirst5LeadProbabilityPct": -0.7
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 78.1,
+        "f5TotalLean": "Pass",
+        "f5Projection": 4.75,
+        "awayFirst5LeadProbabilityPctDelta": -0.7
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 2,
+        "f5TotalSide": "Under",
+        "awayFirst5Runs": 1,
+        "homeFirst5Runs": 1
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": false,
+        "adjustedF5TotalHit": null
+      }
+    },
+    {
+      "gameId": "mlb-823454",
+      "title": "White Sox @ Phillies",
+      "sourceCoverage": {
+        "espn": [
+          true,
+          true
+        ],
+        "statmuse": [
+          true,
+          true
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 57.5,
+        "f5TotalLean": "Pass",
+        "f5Projection": 5.1,
+        "f5Line": 5.5
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": -10,
+          "f5StabilityScore": 10,
+          "f5SideScore": 6.3,
+          "reasons": [
+            "1st time OPS allowed 0.683",
+            "1st time OBP allowed 0.298",
+            "3rd time OPS allowed 0",
+            "away split ERA 2.25",
+            "day split ERA 3.86",
+            "Citizens Bank Park ERA 0",
+            "vs opponent runs/IP 0"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 5.2,
+          "f5StabilityScore": -1.9,
+          "f5SideScore": -2.9,
+          "reasons": [
+            "1st time OPS allowed 0.826",
+            "1st time OBP allowed 0.361",
+            "3rd time OPS allowed 0.671",
+            "home split ERA 5.91",
+            "day split ERA 5.92",
+            "Citizens Bank Park ERA 5.91",
+            "expected innings 4.83"
+          ],
+          "sourceStatus": {
+            "espn": "fetched",
+            "statmuse": "fetched"
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": -1,
+          "first5TotalRuns": -0.21,
+          "awayFirst5LeadProbabilityPct": 1.4
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 56.5,
+        "f5TotalLean": "Under",
+        "f5Projection": 4.89,
+        "awayFirst5LeadProbabilityPctDelta": 1.4
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 7,
+        "f5TotalSide": "Over",
+        "awayFirst5Runs": 6,
+        "homeFirst5Runs": 1
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": null,
+        "adjustedF5TotalHit": false
+      }
+    }
+  ]
+}

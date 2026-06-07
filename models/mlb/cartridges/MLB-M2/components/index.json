@@ -78,6 +78,13 @@
       "owns": ["MLB-RP36 bridge risk", "first-up reliever clusters", "bullpen path warnings"],
       "entrypoints": ["models/mlb/cartridges/MLB-RP36/runner.py"],
       "coreFiles": ["models/mlb/cartridges/MLB-RP36/exporter.py"]
+    },
+    {
+      "id": "starter-split-addendum",
+      "name": "Starter Split Addendum",
+      "owns": ["ESPN starter splits", "StatMuse starter-vs-opponent context", "shadow YRFI/NRFI and F5 adjustments"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/research/starter_split_addendum_shadow.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/starter-split-addendum.js", "models/mlb/cartridges/MLB-M2/components/starter-split-addendum/README.md"]
     }
   ]
 }
