@@ -219,6 +219,14 @@ const fetchHitterStatcastTrendMap = (asOfDate, playerIds = []) => {
   const normalizedIds = [...new Set(playerIds.map((value) => Number(value)).filter(Number.isFinite))]
   if (!normalizedIds.length) return new Map()
 
+  const [{ trend_as_of_date: trendAsOfDate } = {}] = runSqliteJson(`
+    select max(as_of_date) as trend_as_of_date
+    from mlb_hitter_statcast_trend_snapshots
+    where as_of_date <= ${quoteSqlText(asOfDate)}
+      and player_id in (${normalizedIds.join(',')})
+  `)
+  const resolvedAsOfDate = trendAsOfDate || asOfDate
+
   const rows = runSqliteJson(`
     select
       player_id,
@@ -248,7 +256,7 @@ const fetchHitterStatcastTrendMap = (asOfDate, playerIds = []) => {
       hard_hit_trend_7_minus_30,
       sweet_spot_trend_7_minus_30
     from mlb_hitter_statcast_trend_snapshots
-    where as_of_date = ${quoteSqlText(asOfDate)}
+    where as_of_date = ${quoteSqlText(resolvedAsOfDate)}
       and player_id in (${normalizedIds.join(',')})
   `)
 
@@ -322,6 +330,7 @@ const fetchHitterStatcastTrendMap = (asOfDate, playerIds = []) => {
       return [
         playerId,
         {
+          sourceAsOfDate: resolvedAsOfDate,
           gamesSample7: Number(row.games_sample_7 || 0) || 0,
           paSample7: Number(row.pa_sample_7 || 0) || 0,
           bbeSample7: Number(row.bbe_sample_7 || 0) || 0,
