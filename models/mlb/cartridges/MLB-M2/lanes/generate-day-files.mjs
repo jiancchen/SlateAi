@@ -881,6 +881,55 @@ const buildHistoricalReliefStory = (phase = null) => {
   return { label: 'Mixed', tone: 'info' }
 }
 
+const sumRunsThroughInning = (inningsByNumber = new Map(), lastInning = 5) =>
+  Array.from({ length: Math.max(0, lastInning) }, (_, index) => Number(inningsByNumber.get(index + 1) || 0) || 0)
+    .reduce((sum, runs) => sum + runs, 0)
+
+const sumRunsAfterInning = (inningsByNumber = new Map(), firstLateInning = 6) =>
+  [...inningsByNumber.entries()]
+    .filter(([inning]) => Number(inning) >= firstLateInning)
+    .reduce((sum, [, runs]) => sum + (Number(runs || 0) || 0), 0)
+
+const buildHistoricalHitterStoryFallback = (record = null) => {
+  if (!record) return { label: 'Unknown', tone: 'info' }
+  const totalRuns = Number(record.runsFor || 0) || 0
+  const earlyRuns = sumRunsThroughInning(record.inningsByNumber, 5)
+  const lateRuns = sumRunsAfterInning(record.inningsByNumber, 6)
+
+  if (totalRuns >= 6) return { label: 'Cashed', tone: 'positive' }
+  if (lateRuns >= 3 && lateRuns > earlyRuns) return { label: 'Late cash', tone: 'positive' }
+  if (totalRuns >= 4) return { label: 'Met', tone: 'positive' }
+  if (earlyRuns >= 3 && totalRuns <= 4) return { label: 'Stranded', tone: 'warning' }
+  if (totalRuns <= 1) return { label: 'Quiet', tone: 'negative' }
+  return { label: 'Mixed', tone: 'info' }
+}
+
+const buildHistoricalStarterStoryFallback = (record = null) => {
+  if (!record) return { label: 'Unknown', tone: 'info' }
+  const runsAgainst = Number(record.runsAgainst || 0) || 0
+  const result = record.result || 'T'
+
+  if (runsAgainst <= 2) return { label: 'Met', tone: 'positive' }
+  if (runsAgainst <= 4 && result !== 'L') return { label: 'Mixed', tone: 'warning' }
+  if (runsAgainst <= 4) return { label: 'Short', tone: 'warning' }
+  if (runsAgainst >= 6) return { label: 'Cracked', tone: 'negative' }
+  return { label: 'Mixed', tone: 'info' }
+}
+
+const buildHistoricalReliefStoryFallback = (record = null) => {
+  if (!record) return { label: 'Unknown', tone: 'info' }
+  const result = record.result || 'T'
+  const runsFor = Number(record.runsFor || 0) || 0
+  const runsAgainst = Number(record.runsAgainst || 0) || 0
+  const lateRuns = sumRunsAfterInning(record.inningsByNumber, 6)
+
+  if (result === 'W' && lateRuns >= 2) return { label: 'Won late', tone: 'positive' }
+  if (result === 'W') return { label: 'Held', tone: 'positive' }
+  if (result === 'L' && runsAgainst - runsFor <= 2) return { label: 'Lost late', tone: 'warning' }
+  if (result === 'L') return { label: 'No rescue', tone: 'warning' }
+  return { label: 'Mixed', tone: 'info' }
+}
+
 const buildHistoricalHitterStory = (phase = null) => {
   if (!phase) return { label: 'Unknown', tone: 'info' }
 
@@ -2548,9 +2597,24 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 10, maxInnings =
                 gameResult: runsFor > runsAgainst ? 'W' : runsFor < runsAgainst ? 'L' : 'T',
                 marketContext
               }),
-              hitters: buildHistoricalHitterStory(phaseContext),
-              starter: buildHistoricalStarterStory(phaseContext),
-              relief: buildHistoricalReliefStory(phaseContext)
+              hitters: phaseContext ? buildHistoricalHitterStory(phaseContext) : buildHistoricalHitterStoryFallback({
+                runsFor,
+                runsAgainst,
+                result: runsFor > runsAgainst ? 'W' : runsFor < runsAgainst ? 'L' : 'T',
+                inningsByNumber: teamInnings
+              }),
+              starter: phaseContext ? buildHistoricalStarterStory(phaseContext) : buildHistoricalStarterStoryFallback({
+                runsFor,
+                runsAgainst,
+                result: runsFor > runsAgainst ? 'W' : runsFor < runsAgainst ? 'L' : 'T',
+                inningsByNumber: teamInnings
+              }),
+              relief: phaseContext ? buildHistoricalReliefStory(phaseContext) : buildHistoricalReliefStoryFallback({
+                runsFor,
+                runsAgainst,
+                result: runsFor > runsAgainst ? 'W' : runsFor < runsAgainst ? 'L' : 'T',
+                inningsByNumber: teamInnings
+              })
             },
             innings: Array.from({ length: maxInning }, (_, index) => ({
               inning: index + 1,
@@ -2729,9 +2793,9 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 
               gameResult: record.result,
               marketContext
             }),
-            hitters: buildHistoricalHitterStory(phaseContext),
-            starter: buildHistoricalStarterStory(phaseContext),
-            relief: buildHistoricalReliefStory(phaseContext)
+            hitters: phaseContext ? buildHistoricalHitterStory(phaseContext) : buildHistoricalHitterStoryFallback(record),
+            starter: phaseContext ? buildHistoricalStarterStory(phaseContext) : buildHistoricalStarterStoryFallback(record),
+            relief: phaseContext ? buildHistoricalReliefStory(phaseContext) : buildHistoricalReliefStoryFallback(record)
           },
           innings: Array.from({ length: maxInning }, (_, index) => ({
             inning: index + 1,

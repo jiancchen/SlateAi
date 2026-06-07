@@ -1258,14 +1258,32 @@ def ingest_match(con: sqlite3.Connection, url: str, force: bool = False) -> dict
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Fetch and normalize TennisLive player/match pages into sql-tennis.db.")
+    parser.add_argument("--date", default=None, help="Optional slate date for report context.")
     parser.add_argument("--source-db", type=Path, default=DB_PATH)
     parser.add_argument("--player-url", action="append", default=[])
+    parser.add_argument("--player-url-file", action="append", default=[])
     parser.add_argument("--match-url", action="append", default=[])
+    parser.add_argument("--match-url-file", action="append", default=[])
     parser.add_argument("--max-links", type=int, default=None, help="Maximum lightweight match links to store per player page. Defaults to --max-matches.")
     parser.add_argument("--max-matches", type=int, default=10)
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--report", type=Path, default=ROOT / "data-migration" / "reports" / "ingest_tennis_tennislive_to_typed.json")
-    return parser.parse_args()
+    args = parser.parse_args()
+    for path in args.player_url_file:
+        args.player_url.extend(
+            line.strip()
+            for line in Path(path).read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.strip().startswith("#")
+        )
+    for path in args.match_url_file:
+        args.match_url.extend(
+            line.strip()
+            for line in Path(path).read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.strip().startswith("#")
+        )
+    args.player_url = list(dict.fromkeys(args.player_url))
+    args.match_url = list(dict.fromkeys(args.match_url))
+    return args
 
 
 def main() -> None:
@@ -1296,6 +1314,7 @@ def main() -> None:
         "ok": True,
         "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
         "source_db": str(args.source_db),
+        "date": args.date,
         "started_at": started,
         "finished_at": utc_now(),
         "player_urls": args.player_url,

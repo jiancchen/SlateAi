@@ -80,6 +80,13 @@ export function BoardView(props: BoardViewProps) {
     setSelectedGameIdByDay((current: AnyRecord) => ({ ...current, [activeDayId]: nextGameId }))
     openMobileDetailForGame(nextGameId)
   }
+
+  const renderMlbRowTime = (row: AnyRecord) => {
+    const start = row?.start || row?.raw?.start || row?.game?.start || ''
+    if (!start) return null
+    return <small className="mlb-value-row-time">Time {start}</small>
+  }
+
   const renderTennisValueRows = (sectionLabel: string, rows: AnyRecord[] = []) => {
     const visibleRows = rows.filter((row) => row?.game).slice(0, 5)
     if (!visibleRows.length) return null
@@ -848,6 +855,7 @@ export function BoardView(props: BoardViewProps) {
                               <span>
                                 <strong>{row.title}</strong>
                                 <small>{row.subtitle} | {row.priceLabel || row.metaLabel}</small>
+                                {renderMlbRowTime(row)}
                               </span>
                               <span>
                                 <strong>
@@ -908,6 +916,7 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.subtitle} | {row.metaLabel}</small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
                               <strong>
@@ -934,6 +943,7 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.subtitle} | {row.metaLabel}</small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
                               <strong>
@@ -964,6 +974,7 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.subtitle} | {row.metaLabel}</small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
                               <strong>Research</strong>
@@ -989,6 +1000,12 @@ export function BoardView(props: BoardViewProps) {
                       <span>YRFI lanes {mlbFirstInningValueSummary.yrfiRows.length}</span>
                       <span>NRFI lanes {mlbFirstInningValueSummary.nrfiRows.length}</span>
                       <span>Kalshi mapped {mlbFirstInningValueSummary.mappedGames}</span>
+                      {mlbFirstInningValueSummary.settledRows ? (
+                        <>
+                          <span>Hit {mlbFirstInningValueSummary.hitRows}</span>
+                          <span>Miss {mlbFirstInningValueSummary.missRows}</span>
+                        </>
+                      ) : null}
                     </div>
                     {mlbFirstInningValueSummary.yrfiRows.length ? (
                       <div className="tennis-value-list">
@@ -1002,10 +1019,14 @@ export function BoardView(props: BoardViewProps) {
                           >
                             <span>
                               <strong>{row.title}</strong>
-                              <small>{row.summary}</small>
+                              <small>
+                                {row.result?.label ? `${row.result.label} | ${row.result.actualPick || 'pending'} ${row.result.totalRunsFirst1 ?? ''} R 1st | ` : ''}
+                                {row.summary}
+                              </small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
-                              <strong>{`${row.confidence}%`}</strong>
+                              <strong>{row.result?.label || `${row.confidence}%`}</strong>
                               <small>
                                 {`YES ${formatNumber(row.yesModel, 1)}% · away ${formatNumber(row.awayRunPct, 1)}% · home ${formatNumber(row.homeRunPct, 1)}%`}
                                 {row.hasKalshi ? ` · ask ${formatNumber(row.yesAsk, 1)}c` : ''}
@@ -1027,10 +1048,14 @@ export function BoardView(props: BoardViewProps) {
                           >
                             <span>
                               <strong>{row.title}</strong>
-                              <small>{row.summary}</small>
+                              <small>
+                                {row.result?.label ? `${row.result.label} | ${row.result.actualPick || 'pending'} ${row.result.totalRunsFirst1 ?? ''} R 1st | ` : ''}
+                                {row.summary}
+                              </small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
-                              <strong>{`${row.confidence}%`}</strong>
+                              <strong>{row.result?.label || `${row.confidence}%`}</strong>
                               <small>
                                 {`NO ${formatNumber(row.noModel, 1)}% · away ${formatNumber(row.awayRunPct, 1)}% · home ${formatNumber(row.homeRunPct, 1)}%`}
                                 {row.hasKalshi ? ` · ask ${formatNumber(row.noAsk, 1)}c` : ''}
@@ -1069,10 +1094,16 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
                               <strong>{row.confidence}%</strong>
                               <small>{`${row.priceLabel} | ${row.raw?.shadowSupportTag || 'Model-only'}`}</small>
+                              {(row.contextWarnings?.length || row.raw?.contextWarnings?.length) ? (
+                                <small className="tennis-value-warning inline">
+                                  {(row.contextWarnings || row.raw?.contextWarnings).join(' | ')}
+                                </small>
+                              ) : null}
                             </span>
                           </button>
                         ))}
@@ -1113,6 +1144,7 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
                               <strong>{row.confidence}%</strong>
@@ -1135,6 +1167,7 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
                               <strong>{row.confidence}%</strong>
@@ -1178,10 +1211,16 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
                               <strong>{row.confidence}%</strong>
                               <small>{row.priceLabel}</small>
+                              {(row.contextWarnings?.length || row.raw?.contextWarnings?.length) ? (
+                                <small className="tennis-value-warning inline">
+                                  {(row.contextWarnings || row.raw?.contextWarnings).join(' | ')}
+                                </small>
+                              ) : null}
                             </span>
                           </button>
                         ))}
@@ -1315,6 +1354,7 @@ export function BoardView(props: BoardViewProps) {
                                 <div className="hr-value-title-block">
                                   <strong>#{row.rank || '?'} {row.playerName}</strong>
                                   <small>{row.teamName} | {row.gameTitle}</small>
+                                  {renderMlbRowTime(row)}
                                 </div>
                                 <div className="hr-value-score-block">
                                   <strong>{scoreLabel}</strong>
@@ -1371,6 +1411,7 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
                               <strong>{row.scalpLabel}</strong>
@@ -1393,6 +1434,7 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
                               <strong>{`< ${formatNumber(row.maxEntryFor70Pct, 1)}c`}</strong>
@@ -1415,6 +1457,7 @@ export function BoardView(props: BoardViewProps) {
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderMlbRowTime(row)}
                             </span>
                             <span>
                               <strong>{`${formatNumber(row.postScorelessTopNoPct, 1)}c fair`}</strong>

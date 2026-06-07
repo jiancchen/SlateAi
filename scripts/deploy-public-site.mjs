@@ -129,7 +129,7 @@ const assertNoPrivateReferences = async (dirs) => {
   if (leaks.length) throw new Error(`Public deploy payload contains private references: ${leaks.slice(0, 8).join(', ')}`)
 }
 
-const assertDeployShape = async ({ requestedDate }) => {
+const assertDeployShape = async ({ requestedDate, onlyCurrent = false }) => {
   const meta = await readJson(path.join(webRoot, 'public', 'data', 'meta.json'))
   if (!meta?.currentSlate?.id) throw new Error('web/public/data/meta.json is missing currentSlate.id')
   if (requestedDate && meta.currentSlate.id !== requestedDate) {
@@ -144,7 +144,7 @@ const assertDeployShape = async ({ requestedDate }) => {
   if (!publicSlateIds.has(currentId)) throw new Error(`Public slates are missing current slate ${currentId}`)
   const nextId = addDays(currentId, 1)
   const nextPublished = fsSync.existsSync(path.join(publishedRoot, 'slates', nextId, 'summary.json'))
-  if (nextPublished && !publicSlateIds.has(nextId)) {
+  if (!onlyCurrent && nextPublished && !publicSlateIds.has(nextId)) {
     throw new Error(`Next generated slate ${nextId} exists but was not exported to public slates`)
   }
   const modelHistoryPath = path.join(webRoot, 'public', 'data', 'model-history', 'index.json')
@@ -214,23 +214,30 @@ const main = async () => {
   const vercelCommand = process.platform === 'win32' ? 'vercel.cmd' : 'vercel'
   const requestedDate = argValue('--date')
   const extraDates = argValue('--include-dates')
+  const onlyDates = argValue('--only-dates')
   const dryRun = hasArg('--dry-run')
+  const onlyCurrent = hasArg('--only-current')
   const env = {
     ...(requestedDate ? { PUBLIC_SLATE_DATE: requestedDate } : {}),
-    ...(extraDates ? { PUBLIC_EXTRA_SLATE_DATES: extraDates } : {})
+    ...(extraDates ? { PUBLIC_EXTRA_SLATE_DATES: extraDates } : {}),
+    ...(onlyDates ? { PUBLIC_ONLY_SLATE_DATES: onlyDates } : {}),
+    ...(onlyCurrent ? { PUBLIC_SLATE_SCOPE: 'only-current' } : {})
   }
 
   await run('public build', npmCommand, ['run', 'build'], { env })
-  const preflight = await assertDeployShape({ requestedDate })
+  const preflight = await assertDeployShape({ requestedDate, onlyCurrent })
   for (const slateId of preflight.publicSlateIds) {
     if (slateId >= '2026-06-05' && fsSync.existsSync(path.join(webRoot, 'src', 'lib', `day-${slateId}.js`))) {
       await run('tennis active source audit', 'node', ['scripts/audit-tennis-active-sources.mjs', '--date', slateId])
     }
   }
   const staticArtifact = await hashDir(path.join(webRoot, 'dist'))
+  if (!dryRun) {
+    await run('vercel prebuild', vercelCommand, ['build', '--prod', '--yes'], { cwd: webRoot, env })
+  }
   const deployOutput = dryRun
     ? ''
-    : await run('vercel production deploy', vercelCommand, ['--prod', '--force', '--yes'], { cwd: webRoot, capture: true })
+    : await run('vercel production deploy', vercelCommand, ['deploy', '--prebuilt', '--prod', '--yes'], { cwd: webRoot, capture: true })
   const deployUrl = dryRun ? null : parseVercelUrl(deployOutput)
   if (!dryRun && !deployUrl) throw new Error('Vercel deploy completed but no deployment URL was detected')
   const publishArtifacts = await writePublishArtifacts({ deployUrl, staticArtifact, preflight, dryRun })

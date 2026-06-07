@@ -1,35 +1,17 @@
 {
-  "date": null,
+  "date": "2026-06-06",
   "dry_run": false,
   "family": "mlb_bullpen_features",
-  "generated_at": "2026-06-02T09:34:55.545936+00:00",
-  "inserted": {
-    "bullpen_mistake_shape_snapshots": 3508,
-    "bullpen_usage_snapshots": 16542,
-    "likely_relief_chains": 3508,
-    "reliever_command_profiles": 4113,
-    "team_bullpen_shape_snapshots": 1754
-  },
+  "generated_at": "2026-06-06T14:42:26.397595+00:00",
+  "inserted": {},
   "ok": true,
-  "parsed_rows": 29425,
+  "parsed_rows": 0,
   "parser_module": "pipeline/sources/mlb/normalization/bullpen_features.py",
   "script": "data-migration/scripts/normalize_mlb_bullpen_features.py",
   "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
-  "source_rows": 29425,
-  "source_tables": {
-    "mlb_bullpen_mistake_shape_daily": 3508,
-    "mlb_bullpen_usage": 16542,
-    "mlb_likely_relief_chains": 3508,
-    "mlb_reliever_first_batter_command_profiles": 4113,
-    "mlb_team_bullpen_shape_daily": 1754
-  },
-  "targets": {
-    "bullpen_mistake_shape_snapshots": 3508,
-    "bullpen_usage_snapshots": 16542,
-    "likely_relief_chains": 3508,
-    "reliever_command_profiles": 4113,
-    "team_bullpen_shape_snapshots": 1754
-  },
+  "source_rows": 0,
+  "source_tables": {},
+  "targets": {},
   "unparsed_rows": 0,
   "unresolved_rows_added": 0
 }

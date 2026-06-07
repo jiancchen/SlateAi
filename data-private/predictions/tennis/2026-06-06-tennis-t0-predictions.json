@@ -1,0 +1,3058 @@
+{
+  "date": "2026-06-06",
+  "modelCartridge": {
+    "id": "TEN-T0",
+    "sport": "tennis",
+    "label": "TEN-T0 tennis baseline",
+    "status": "baseline",
+    "entrypoint": "models/tennis/cartridges/TEN-T0/runner.mjs",
+    "manifestPath": "models/tennis/cartridges/TEN-T0/manifest.json"
+  },
+  "source": "ESPN scoreboard + live rankings + TennisLive warehouse enrichment when available",
+  "totalSingles": 17,
+  "picks": [
+    {
+      "rank": 1,
+      "id": "dk-challenger-prostejov-hynek-barton-vs-alex-molcan-2026-06-06",
+      "matchId": "dk-challenger-prostejov-hynek-barton-vs-alex-molcan-2026-06-06",
+      "match": "Hynek Barton vs Alex Molcan",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger - Prostejov",
+      "start": "2:00 AM",
+      "pick": "Alex Molcan",
+      "modelProbability": 62.2,
+      "marketProbability": 69.5,
+      "marketAmericanOdds": -228,
+      "modelEdge": -7.3,
+      "confidence": 62.2,
+      "volatility": 45,
+      "tier": "Watch",
+      "rationale": "Opponent-adjusted recent form is basically even: Alex Molcan 74, Hynek Barton 73. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": -1,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Alex Molcan",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 59,
+          "firstServePct": 58,
+          "avgAces": 3.8,
+          "avgDoubleFaults": 1.3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 43,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 1,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (72%)",
+            "second serve holds up (59%)"
+          ],
+          "gameFlowRead": "Alex Molcan has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Hynek Barton",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 77,
+          "secondServeWonPct": 53,
+          "firstServePct": 63,
+          "avgAces": 5.2,
+          "avgDoubleFaults": 1.3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 41,
+          "servicePointsWonPct": 68,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (77%)"
+          ],
+          "gameFlowRead": "Hynek Barton has no major service weakness in the joined warehouse sample."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Hynek Barton",
+          "line": null,
+          "americanOdds": 170,
+          "modelPct": 40.5,
+          "impliedPct": 37,
+          "edgePct": 3.5,
+          "evPer100": 9.4,
+          "netEvPer100": 7.4,
+          "grade": "Raw ML edge only",
+          "issue": "Picked side is overpriced; value board flips to Hynek Barton because that side has the better posted-price edge.",
+          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 40.3,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Hynek Barton 60% / Alex Molcan 70%",
+          "rows": [
+            {
+              "name": "Hynek Barton",
+              "confidence": 60,
+              "modelPct": 40.5,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Alex Molcan",
+              "confidence": 70,
+              "modelPct": 62.2,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 70,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Over 9.5",
+          "expectedGames": 10.2,
+          "confidence": 60,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Actionable live watch",
+          "reason": "Expected first-set games 10.2 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:15.813Z",
+        "moneyline": [
+          {
+            "name": "Hynek Barton",
+            "americanOdds": 170,
+            "impliedPct": 37,
+            "modelPct": 40.5,
+            "edgePct": 3.5,
+            "grossProfitPct": 170,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Alex Molcan",
+            "americanOdds": -228,
+            "impliedPct": 69.5,
+            "modelPct": 62.2,
+            "edgePct": -7.3,
+            "grossProfitPct": 43.9,
+            "priceBand": "Moderate favorite"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      }
+    },
+    {
+      "rank": 2,
+      "id": "rg-w-alexandra-eala-rebeka-masarova-2026-06-06",
+      "matchId": "rg-w-alexandra-eala-rebeka-masarova-2026-06-06",
+      "match": "Alexandra Eala vs Rebeka Masarova",
+      "format": "WTA",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "Centre Court",
+      "start": "3:00 AM",
+      "pick": "Alexandra Eala",
+      "modelProbability": 54,
+      "marketProbability": 62.1,
+      "marketAmericanOdds": -164,
+      "modelEdge": -8.1,
+      "confidence": 54,
+      "volatility": 55,
+      "tier": "Watch",
+      "rationale": "Rebeka Masarova grades 29 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 7,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Alexandra Eala",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 53,
+          "firstServePct": 66,
+          "avgAces": 1.5,
+          "avgDoubleFaults": 1.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 49,
+          "servicePointsWonPct": 59,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "creates return pressure (49% return points won)"
+          ],
+          "gameFlowRead": "Alexandra Eala has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Rebeka Masarova",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 77,
+          "secondServeWonPct": 53,
+          "firstServePct": 60,
+          "avgAces": 9.5,
+          "avgDoubleFaults": 4.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 48,
+          "servicePointsWonPct": 68,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 12,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "double-fault pressure (4.8 avg)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "wins enough first-serve points (77%)",
+            "creates return pressure (48% return points won)"
+          ],
+          "gameFlowRead": "Rebeka Masarova can drop points quickly through double-fault pressure (4.8 avg) and 3 recent matches with serve instability."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Rebeka Masarova",
+          "line": null,
+          "americanOdds": 125,
+          "modelPct": 46,
+          "impliedPct": 44.4,
+          "edgePct": 1.6,
+          "evPer100": 3.5,
+          "netEvPer100": 1.5,
+          "grade": "Raw ML edge only",
+          "issue": "Picked side is overpriced; value board flips to Rebeka Masarova because that side has the better posted-price edge.",
+          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 22.6,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Alexandra Eala 71% / Rebeka Masarova 61%",
+          "rows": [
+            {
+              "name": "Alexandra Eala",
+              "confidence": 71,
+              "modelPct": 54,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Rebeka Masarova",
+              "confidence": 61,
+              "modelPct": 46,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 71,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Pass / near line",
+          "expectedGames": 9.5,
+          "confidence": 51,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Near fair",
+          "reason": "Expected first-set games 9.5 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 54%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:04.550Z",
+        "moneyline": [
+          {
+            "name": "Alexandra Eala",
+            "americanOdds": -164,
+            "impliedPct": 62.1,
+            "modelPct": 54,
+            "edgePct": -8.1,
+            "grossProfitPct": 61,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Rebeka Masarova",
+            "americanOdds": 125,
+            "impliedPct": 44.4,
+            "modelPct": 46,
+            "edgePct": 1.6,
+            "grossProfitPct": 125,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      }
+    },
+    {
+      "rank": 3,
+      "id": "dk-challenger-heilbronn-henri-squire-vs-emilio-nava-2026-06-06",
+      "matchId": "dk-challenger-heilbronn-henri-squire-vs-emilio-nava-2026-06-06",
+      "match": "Henri Squire vs Emilio Nava",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger - Heilbronn",
+      "start": "3:00 AM",
+      "pick": "Emilio Nava",
+      "modelProbability": 64.8,
+      "marketProbability": 72.7,
+      "marketAmericanOdds": -266,
+      "modelEdge": -7.9,
+      "confidence": 64.8,
+      "volatility": 50,
+      "tier": "Watch",
+      "rationale": "Opponent-adjusted recent form is basically even: Emilio Nava 73, Henri Squire 74. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "Weakness edge",
+        "target": "Henri Squire",
+        "scoreGap": 21,
+        "attackingSide": "Emilio Nava",
+        "vulnerableSide": "Henri Squire",
+        "gameFlow": "Emilio Nava has a real path if Henri Squire's first two service games show the same weakness: double-fault pressure (6.8 avg); 5 recent matches with serve instability.",
+        "liveTrigger": "Look for Henri Squire facing break points or second-serve pressure before 3-3.",
+        "spreadRead": "Emilio Nava spread only if the handicap is short and Henri Squire is under pressure early.",
+        "totalRead": "Avoid low unders if Henri Squire faces early break points or second-serve pressure.",
+        "pick": {
+          "name": "Emilio Nava",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 51,
+          "firstServePct": 67,
+          "avgAces": 5,
+          "avgDoubleFaults": 3.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 38,
+          "servicePointsWonPct": 65,
+          "weakServeMatches": 1,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "limited return pressure (38% return points won)"
+          ],
+          "strengths": [
+            "wins enough first-serve points (72%)"
+          ],
+          "gameFlowRead": "Emilio Nava can drop points quickly through limited return pressure (38% return points won)."
+        },
+        "opponent": {
+          "name": "Henri Squire",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 65,
+          "secondServeWonPct": 45,
+          "firstServePct": 71,
+          "avgAces": 4.4,
+          "avgDoubleFaults": 6.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 46,
+          "servicePointsWonPct": 59,
+          "weakServeMatches": 5,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 24,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "double-fault pressure (6.8 avg)",
+            "5 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (46% return points won)"
+          ],
+          "gameFlowRead": "Henri Squire can drop points quickly through double-fault pressure (6.8 avg) and 5 recent matches with serve instability."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Henri Squire",
+          "line": null,
+          "americanOdds": 196,
+          "modelPct": 38,
+          "impliedPct": 33.8,
+          "edgePct": 4.2,
+          "evPer100": 12.5,
+          "netEvPer100": 10.5,
+          "grade": "Raw ML edge only",
+          "issue": "Picked side is overpriced; value board flips to Henri Squire because that side has the better posted-price edge.",
+          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 37.9,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Henri Squire 57% / Emilio Nava 73%",
+          "rows": [
+            {
+              "name": "Henri Squire",
+              "confidence": 57,
+              "modelPct": 38,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Emilio Nava",
+              "confidence": 73,
+              "modelPct": 64.8,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 73,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Pass / near line",
+          "expectedGames": 9.6,
+          "confidence": 51,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 54,
+          "grade": "Near fair",
+          "reason": "Expected first-set games 9.6 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 41%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:20.936Z",
+        "moneyline": [
+          {
+            "name": "Henri Squire",
+            "americanOdds": 196,
+            "impliedPct": 33.8,
+            "modelPct": 38,
+            "edgePct": 4.2,
+            "grossProfitPct": 196,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Emilio Nava",
+            "americanOdds": -266,
+            "impliedPct": 72.7,
+            "modelPct": 64.8,
+            "edgePct": -7.9,
+            "grossProfitPct": 37.6,
+            "priceBand": "Low-payout favorite"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      }
+    },
+    {
+      "rank": 4,
+      "id": "rg-w-nikola-bartunkova-ashlyn-krueger-2026-06-06",
+      "matchId": "rg-w-nikola-bartunkova-ashlyn-krueger-2026-06-06",
+      "match": "Nikola Bartunkova vs Ashlyn Krueger",
+      "format": "WTA",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "Court 1",
+      "start": "3:00 AM",
+      "pick": "Ashlyn Krueger",
+      "modelProbability": 53,
+      "marketProbability": 62.4,
+      "marketAmericanOdds": -166,
+      "modelEdge": -9.4,
+      "confidence": 53,
+      "volatility": 56,
+      "tier": "Watch",
+      "rationale": "Ashlyn Krueger grades 35 points better on opponent-adjusted recent form. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "Weakness edge",
+        "target": "Nikola Bartunkova",
+        "scoreGap": 21,
+        "attackingSide": "Ashlyn Krueger",
+        "vulnerableSide": "Nikola Bartunkova",
+        "gameFlow": "Ashlyn Krueger has a real path if Nikola Bartunkova's first two service games show the same weakness: first-serve points won below comfort (56%); second-serve points won are attackable (42%).",
+        "liveTrigger": "Look for Nikola Bartunkova facing break points or second-serve pressure before 3-3.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Ashlyn Krueger",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 52,
+          "firstServePct": 72,
+          "avgAces": 4.6,
+          "avgDoubleFaults": 2.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 46,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 1,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "creates return pressure (46% return points won)"
+          ],
+          "gameFlowRead": "Ashlyn Krueger has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Nikola Bartunkova",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 56,
+          "secondServeWonPct": 42,
+          "firstServePct": 55,
+          "avgAces": 1.8,
+          "avgDoubleFaults": 4.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 43,
+          "servicePointsWonPct": 50,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 23,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "first-serve points won below comfort (56%)",
+            "second-serve points won are attackable (42%)",
+            "double-fault pressure (4.8 avg)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Nikola Bartunkova can drop points quickly through first-serve points won below comfort (56%) and second-serve points won are attackable (42%)."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Nikola Bartunkova",
+          "line": null,
+          "americanOdds": 126,
+          "modelPct": 47,
+          "impliedPct": 44.2,
+          "edgePct": 2.8,
+          "evPer100": 6.2,
+          "netEvPer100": 4.2,
+          "grade": "Raw ML edge only",
+          "issue": "Picked side is overpriced; value board flips to Nikola Bartunkova because that side has the better posted-price edge.",
+          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 21.9,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Nikola Bartunkova 61% / Ashlyn Krueger 71%",
+          "rows": [
+            {
+              "name": "Nikola Bartunkova",
+              "confidence": 61,
+              "modelPct": 47,
+              "label": "Needs early hold pressure"
+            },
+            {
+              "name": "Ashlyn Krueger",
+              "confidence": 71,
+              "modelPct": 53,
+              "label": "Live to win a set"
+            }
+          ],
+          "confidence": 71,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Under 9.5",
+          "expectedGames": 9.2,
+          "confidence": 56,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 54,
+          "grade": "Thin value",
+          "reason": "Expected first-set games 9.2 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 51%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:02.700Z",
+        "moneyline": [
+          {
+            "name": "Nikola Bartunkova",
+            "americanOdds": 126,
+            "impliedPct": 44.2,
+            "modelPct": 47,
+            "edgePct": 2.8,
+            "grossProfitPct": 126,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Ashlyn Krueger",
+            "americanOdds": -166,
+            "impliedPct": 62.4,
+            "modelPct": 53,
+            "edgePct": -9.4,
+            "grossProfitPct": 60.2,
+            "priceBand": "Moderate favorite"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      }
+    },
+    {
+      "rank": 5,
+      "id": "dk-challenger-centurion-2-khololwam-montsi-vs-alexander-donski-2026-06-06",
+      "matchId": "dk-challenger-centurion-2-khololwam-montsi-vs-alexander-donski-2026-06-06",
+      "match": "Khololwam Montsi vs Alexander Donski",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger Centurion-2",
+      "start": "4:00 AM",
+      "pick": "Khololwam Montsi",
+      "modelProbability": 57.5,
+      "marketProbability": 69.2,
+      "marketAmericanOdds": -225,
+      "modelEdge": -11.7,
+      "confidence": 57.5,
+      "volatility": 57,
+      "tier": "Watch",
+      "rationale": "Alexander Donski grades 28 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "Weakness edge",
+        "target": "Alexander Donski",
+        "scoreGap": 39,
+        "attackingSide": "Khololwam Montsi",
+        "vulnerableSide": "Alexander Donski",
+        "gameFlow": "Khololwam Montsi has a real path if Alexander Donski's first two service games show the same weakness: second-serve points won are attackable (43%); double-fault pressure (12.0 avg).",
+        "liveTrigger": "Look for Alexander Donski facing break points or second-serve pressure before 3-3.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "Avoid low unders if Alexander Donski faces early break points or second-serve pressure.",
+        "pick": {
+          "name": "Khololwam Montsi",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 53,
+          "firstServePct": 68,
+          "avgAces": 0.8,
+          "avgDoubleFaults": 2.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 44,
+          "servicePointsWonPct": 59,
+          "weakServeMatches": 1,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Khololwam Montsi has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Alexander Donski",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 83,
+          "secondServeWonPct": 43,
+          "firstServePct": 47,
+          "avgAces": 12.8,
+          "avgDoubleFaults": 12,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 40,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 4,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 42,
+          "firstGameComfort": "Fragile opening-service profile",
+          "liabilities": [
+            "second-serve points won are attackable (43%)",
+            "double-fault pressure (12.0 avg)",
+            "4 recent matches with serve instability"
+          ],
+          "strengths": [
+            "wins enough first-serve points (83%)"
+          ],
+          "gameFlowRead": "Alexander Donski can drop points quickly through second-serve points won are attackable (43%) and double-fault pressure (12.0 avg)."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Alexander Donski",
+          "line": null,
+          "americanOdds": 150,
+          "modelPct": 46.4,
+          "impliedPct": 40,
+          "edgePct": 6.4,
+          "evPer100": 16,
+          "netEvPer100": 14,
+          "grade": "Raw ML edge only",
+          "issue": "Picked side is overpriced; value board flips to Alexander Donski because that side has the better posted-price edge.",
+          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 39.8,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Khololwam Montsi 66% / Alexander Donski 65%",
+          "rows": [
+            {
+              "name": "Khololwam Montsi",
+              "confidence": 66,
+              "modelPct": 57.5,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Alexander Donski",
+              "confidence": 65,
+              "modelPct": 46.4,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 66,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Pass / near line",
+          "expectedGames": 9.6,
+          "confidence": 51,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 54,
+          "grade": "Near fair",
+          "reason": "Expected first-set games 9.6 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 56%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:36.089Z",
+        "moneyline": [
+          {
+            "name": "Khololwam Montsi",
+            "americanOdds": -225,
+            "impliedPct": 69.2,
+            "modelPct": 57.5,
+            "edgePct": -11.7,
+            "grossProfitPct": 44.4,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Alexander Donski",
+            "americanOdds": 150,
+            "impliedPct": 40,
+            "modelPct": 46.4,
+            "edgePct": 6.4,
+            "grossProfitPct": 150,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      }
+    },
+    {
+      "rank": 6,
+      "id": "dk-challenger-heilbronn-diego-dedura-palomero-vs-luka-mikrut-2026-06-06",
+      "matchId": "dk-challenger-heilbronn-diego-dedura-palomero-vs-luka-mikrut-2026-06-06",
+      "match": "Diego Dedura-Palomero vs Luka Mikrut",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger - Heilbronn",
+      "start": "4:35 AM",
+      "pick": "Luka Mikrut",
+      "modelProbability": 51.5,
+      "marketProbability": 50.7,
+      "marketAmericanOdds": -103,
+      "modelEdge": 0.8,
+      "confidence": 51.5,
+      "volatility": 49,
+      "tier": "Watch",
+      "rationale": "Diego Dedura-Palomero grades 18 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": -1,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Luka Mikrut",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 67,
+          "secondServeWonPct": 42,
+          "firstServePct": 61,
+          "avgAces": 4.3,
+          "avgDoubleFaults": 1.3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 27,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 3,
+          "weaknessScore": 3,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "second-serve points won are attackable (42%)",
+            "limited return pressure (27% return points won)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Luka Mikrut can drop points quickly through second-serve points won are attackable (42%) and limited return pressure (27% return points won)."
+        },
+        "opponent": {
+          "name": "Diego Dedura-Palomero",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 65,
+          "secondServeWonPct": 63,
+          "firstServePct": 69,
+          "avgAces": 0.2,
+          "avgDoubleFaults": 1.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 43,
+          "servicePointsWonPct": 64,
+          "weakServeMatches": 1,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "second serve holds up (63%)"
+          ],
+          "gameFlowRead": "Diego Dedura-Palomero has no major service weakness in the joined warehouse sample."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Luka Mikrut",
+          "line": null,
+          "americanOdds": -103,
+          "modelPct": 51.5,
+          "impliedPct": 50.7,
+          "edgePct": 0.8,
+          "evPer100": 1.5,
+          "netEvPer100": -0.5,
+          "grade": "Favorite price needs better proof",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 42.3,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Diego Dedura-Palomero 71% / Luka Mikrut 60%",
+          "rows": [
+            {
+              "name": "Diego Dedura-Palomero",
+              "confidence": 71,
+              "modelPct": 51.3,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Luka Mikrut",
+              "confidence": 60,
+              "modelPct": 51.5,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 71,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Over 9.5",
+          "expectedGames": 10.2,
+          "confidence": 60,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Actionable live watch",
+          "reason": "Expected first-set games 10.2 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 30%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:23.787Z",
+        "moneyline": [
+          {
+            "name": "Diego Dedura-Palomero",
+            "americanOdds": -126,
+            "impliedPct": 55.8,
+            "modelPct": 51.3,
+            "edgePct": -4.5,
+            "grossProfitPct": 79.4,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Luka Mikrut",
+            "americanOdds": -103,
+            "impliedPct": 50.7,
+            "modelPct": 51.5,
+            "edgePct": 0.8,
+            "grossProfitPct": 97.1,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
+      }
+    },
+    {
+      "rank": 7,
+      "id": "dk-challenger-birmingham-arthur-fery-vs-yunchaokete-bu-2026-06-06",
+      "matchId": "dk-challenger-birmingham-arthur-fery-vs-yunchaokete-bu-2026-06-06",
+      "match": "Arthur Fery vs Yunchaokete Bu",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger - Birmingham",
+      "start": "5:00 AM",
+      "pick": "Arthur Fery",
+      "modelProbability": 55.4,
+      "marketProbability": 60,
+      "marketAmericanOdds": -150,
+      "modelEdge": -4.6,
+      "confidence": 55.4,
+      "volatility": 48,
+      "tier": "Watch",
+      "rationale": "Arthur Fery grades 15 points better on opponent-adjusted recent form. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 5,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Arthur Fery",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 61,
+          "firstServePct": 59,
+          "avgAces": 3.3,
+          "avgDoubleFaults": 2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 39,
+          "servicePointsWonPct": 65,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 3,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "second serve holds up (61%)"
+          ],
+          "gameFlowRead": "Arthur Fery has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Yunchaokete Bu",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 65,
+          "secondServeWonPct": 55,
+          "firstServePct": 62,
+          "avgAces": 6,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 36,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "limited return pressure (36% return points won)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Yunchaokete Bu can drop points quickly through limited return pressure (36% return points won)."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Yunchaokete Bu",
+          "line": null,
+          "americanOdds": 115,
+          "modelPct": 47.4,
+          "impliedPct": 46.5,
+          "edgePct": 0.9,
+          "evPer100": 1.9,
+          "netEvPer100": -0.1,
+          "grade": "Raw ML edge only",
+          "issue": "Picked side is overpriced; value board flips to Yunchaokete Bu because that side has the better posted-price edge.",
+          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 41.9,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Arthur Fery 63% / Yunchaokete Bu 67%",
+          "rows": [
+            {
+              "name": "Arthur Fery",
+              "confidence": 63,
+              "modelPct": 55.4,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Yunchaokete Bu",
+              "confidence": 67,
+              "modelPct": 47.4,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 67,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Over 9.5",
+          "expectedGames": 10.1,
+          "confidence": 59,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Thin value",
+          "reason": "Expected first-set games 10.1 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 64%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:30.558Z",
+        "moneyline": [
+          {
+            "name": "Arthur Fery",
+            "americanOdds": -150,
+            "impliedPct": 60,
+            "modelPct": 55.4,
+            "edgePct": -4.6,
+            "grossProfitPct": 66.7,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Yunchaokete Bu",
+            "americanOdds": 115,
+            "impliedPct": 46.5,
+            "modelPct": 47.4,
+            "edgePct": 0.9,
+            "grossProfitPct": 115,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      }
+    },
+    {
+      "rank": 8,
+      "id": "dk-challenger-birmingham-otto-virtanen-vs-kamil-majchrzak-2026-06-06",
+      "matchId": "dk-challenger-birmingham-otto-virtanen-vs-kamil-majchrzak-2026-06-06",
+      "match": "Otto Virtanen vs Kamil Majchrzak",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger - Birmingham",
+      "start": "5:00 AM",
+      "pick": "Otto Virtanen",
+      "modelProbability": 52.6,
+      "marketProbability": 60.3,
+      "marketAmericanOdds": -152,
+      "modelEdge": -7.7,
+      "confidence": 52.6,
+      "volatility": 47,
+      "tier": "Watch",
+      "rationale": "Opponent-adjusted recent form is basically even: Otto Virtanen 58, Kamil Majchrzak 58. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": -7,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Otto Virtanen",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 79,
+          "secondServeWonPct": 50,
+          "firstServePct": 58,
+          "avgAces": 8,
+          "avgDoubleFaults": 4.3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 37,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 9,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "double-fault pressure (4.3 avg)",
+            "limited return pressure (37% return points won)"
+          ],
+          "strengths": [
+            "wins enough first-serve points (79%)"
+          ],
+          "gameFlowRead": "Otto Virtanen can drop points quickly through double-fault pressure (4.3 avg) and limited return pressure (37% return points won)."
+        },
+        "opponent": {
+          "name": "Kamil Majchrzak",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 69,
+          "secondServeWonPct": 45,
+          "firstServePct": 67,
+          "avgAces": 6.5,
+          "avgDoubleFaults": 1.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 36,
+          "servicePointsWonPct": 61,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "second-serve points won are attackable (45%)",
+            "limited return pressure (36% return points won)"
+          ],
+          "strengths": [],
+          "gameFlowRead": "Kamil Majchrzak can drop points quickly through second-serve points won are attackable (45%) and limited return pressure (36% return points won)."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Kamil Majchrzak",
+          "line": null,
+          "americanOdds": 116,
+          "modelPct": 50.2,
+          "impliedPct": 46.3,
+          "edgePct": 3.9,
+          "evPer100": 8.4,
+          "netEvPer100": 6.4,
+          "grade": "Raw ML edge only",
+          "issue": "Picked side is overpriced; value board flips to Kamil Majchrzak because that side has the better posted-price edge.",
+          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 42.7,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Otto Virtanen 61% / Kamil Majchrzak 69%",
+          "rows": [
+            {
+              "name": "Otto Virtanen",
+              "confidence": 61,
+              "modelPct": 52.6,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Kamil Majchrzak",
+              "confidence": 69,
+              "modelPct": 50.2,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 69,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.5,
+          "confidence": 50,
+          "tiebreakRisk": 52,
+          "earlyBreakRisk": 48,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:32.175Z",
+        "moneyline": [
+          {
+            "name": "Otto Virtanen",
+            "americanOdds": -152,
+            "impliedPct": 60.3,
+            "modelPct": 52.6,
+            "edgePct": -7.7,
+            "grossProfitPct": 65.8,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Kamil Majchrzak",
+            "americanOdds": 116,
+            "impliedPct": 46.3,
+            "modelPct": 50.2,
+            "edgePct": 3.9,
+            "grossProfitPct": 116,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      }
+    },
+    {
+      "rank": 9,
+      "id": "dk-challenger-centurion-2-harold-mayot-vs-philip-henning-2026-06-06",
+      "matchId": "dk-challenger-centurion-2-harold-mayot-vs-philip-henning-2026-06-06",
+      "match": "Harold Mayot vs Philip Henning",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger Centurion-2",
+      "start": "6:00 AM",
+      "pick": "Harold Mayot",
+      "modelProbability": 54.6,
+      "marketProbability": 58.3,
+      "marketAmericanOdds": -140,
+      "modelEdge": -3.7,
+      "confidence": 54.6,
+      "volatility": 48,
+      "tier": "Watch",
+      "rationale": "Opponent-adjusted recent form is basically even: Harold Mayot 73, Philip Henning 76. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": -2,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Harold Mayot",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 54,
+          "firstServePct": 61,
+          "avgAces": 3.5,
+          "avgDoubleFaults": 2.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 44,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 1,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Harold Mayot has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Philip Henning",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 79,
+          "secondServeWonPct": 56,
+          "firstServePct": 61,
+          "avgAces": 3.6,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 49,
+          "servicePointsWonPct": 70,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (79%)",
+            "second serve holds up (56%)",
+            "creates return pressure (49% return points won)"
+          ],
+          "gameFlowRead": "Philip Henning has no major service weakness in the joined warehouse sample."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Harold Mayot",
+          "line": null,
+          "americanOdds": -140,
+          "modelPct": 54.6,
+          "impliedPct": 58.3,
+          "edgePct": -3.7,
+          "evPer100": -6.4,
+          "netEvPer100": -8.4,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 41.5,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Harold Mayot 63% / Philip Henning 67%",
+          "rows": [
+            {
+              "name": "Harold Mayot",
+              "confidence": 63,
+              "modelPct": 54.6,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Philip Henning",
+              "confidence": 67,
+              "modelPct": 48.8,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 67,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Over 9.5",
+          "expectedGames": 10,
+          "confidence": 58,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Thin value",
+          "reason": "Expected first-set games 10 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 45%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:39.161Z",
+        "moneyline": [
+          {
+            "name": "Harold Mayot",
+            "americanOdds": -140,
+            "impliedPct": 58.3,
+            "modelPct": 54.6,
+            "edgePct": -3.7,
+            "grossProfitPct": 71.4,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Philip Henning",
+            "americanOdds": 100,
+            "impliedPct": 50,
+            "modelPct": 48.8,
+            "edgePct": -1.2,
+            "grossProfitPct": 100,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
+      }
+    },
+    {
+      "rank": 10,
+      "id": "rg-w-maja-chwalinska-mirra-andreeva-2026-06-06",
+      "matchId": "rg-w-maja-chwalinska-mirra-andreeva-2026-06-06",
+      "match": "Maja Chwalinska vs Mirra Andreeva",
+      "format": "WTA",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "Court Philippe-Chatrier",
+      "start": "6:00 AM",
+      "pick": "Mirra Andreeva",
+      "modelProbability": 65,
+      "marketProbability": 80.4,
+      "marketAmericanOdds": -410,
+      "modelEdge": -15.4,
+      "confidence": 65,
+      "volatility": 40,
+      "tier": "Lean",
+      "rationale": "Opponent-adjusted recent form is basically even: Mirra Andreeva 92, Maja Chwalinska 89. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 2,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Mirra Andreeva",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 70,
+          "secondServeWonPct": 57,
+          "firstServePct": 66,
+          "avgAces": 1.8,
+          "avgDoubleFaults": 2.2,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 54,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (70%)",
+            "second serve holds up (57%)",
+            "creates return pressure (54% return points won)"
+          ],
+          "gameFlowRead": "Mirra Andreeva has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Maja Chwalinska",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 64,
+          "secondServeWonPct": 54,
+          "firstServePct": 76,
+          "avgAces": 0.8,
+          "avgDoubleFaults": 1,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 50,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 1,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 2,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "creates return pressure (50% return points won)"
+          ],
+          "gameFlowRead": "Maja Chwalinska has no major service weakness in the joined warehouse sample."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Maja Chwalinska",
+          "line": null,
+          "americanOdds": 310,
+          "modelPct": 35,
+          "impliedPct": 24.4,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "grade": "Outlier price/manual review",
+          "issue": "Outlier dog price on Maja Chwalinska; raw model-vs-price EV is hidden until matchup, line source, and probability are manually validated.",
+          "reason": "Outlier ML price: do not treat the raw model gap as actionable EV without manual matchup, line-source, and probability validation."
+        },
+        {
+          "marketType": "Game spread",
+          "label": "Game spread",
+          "selection": "Mirra Andreeva",
+          "line": -5.5,
+          "americanOdds": -105,
+          "modelPct": 59,
+          "impliedPct": 51.2,
+          "edgePct": 7.8,
+          "evPer100": 15.2,
+          "netEvPer100": 13.2,
+          "expectedGames": null,
+          "edgeGames": null,
+          "confidence": 59,
+          "grade": "Watch only",
+          "reason": "Spread is number-dependent; verify first service cycle"
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "Over",
+          "line": 19.5,
+          "americanOdds": -125,
+          "modelPct": 56,
+          "impliedPct": 55.6,
+          "edgePct": 0.4,
+          "evPer100": 0.8,
+          "netEvPer100": -1.2,
+          "expectedGames": 20.6,
+          "edgeGames": null,
+          "confidence": 56,
+          "grade": "Near fair",
+          "reason": "Expected match games 20.6 vs DraftKings Sportsbook 19.5; Over. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Maja Chwalinska 49% / Mirra Andreeva 77%",
+          "rows": [
+            {
+              "name": "Maja Chwalinska",
+              "confidence": 49,
+              "modelPct": 35,
+              "label": "Thin set-win path"
+            },
+            {
+              "name": "Mirra Andreeva",
+              "confidence": 77,
+              "modelPct": 65,
+              "label": "Live to win a set"
+            }
+          ],
+          "confidence": 77,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Over 8.5",
+          "expectedGames": 9.3,
+          "confidence": 61,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Actionable live watch",
+          "reason": "Expected first-set games 9.3 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 60%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:44:57.795Z",
+        "moneyline": [
+          {
+            "name": "Maja Chwalinska",
+            "americanOdds": 310,
+            "impliedPct": 24.4,
+            "modelPct": 35,
+            "edgePct": 10.6,
+            "grossProfitPct": 310,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Mirra Andreeva",
+            "americanOdds": -410,
+            "impliedPct": 80.4,
+            "modelPct": 65,
+            "edgePct": -15.4,
+            "grossProfitPct": 24.4,
+            "priceBand": "Low-payout favorite"
+          }
+        ],
+        "spread": "Mirra Andreeva -5.5 (-105)",
+        "totalGames": "19.5 games: Over -125 / Under -115",
+        "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      }
+    },
+    {
+      "rank": 11,
+      "id": "rg-w-elina-avanesyan-darja-semenistaja-2026-06-06",
+      "matchId": "rg-w-elina-avanesyan-darja-semenistaja-2026-06-06",
+      "match": "Elina Avanesyan vs Darja Semenistaja",
+      "format": "WTA",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "Court 1",
+      "start": "8:00 AM",
+      "pick": "Darja Semenistaja",
+      "modelProbability": 58,
+      "marketProbability": 51,
+      "marketAmericanOdds": -104,
+      "modelEdge": 7,
+      "confidence": 58,
+      "volatility": 50,
+      "tier": "Watch",
+      "rationale": "Darja Semenistaja grades 16 points better on opponent-adjusted recent form. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "Weakness edge",
+        "target": "Elina Avanesyan",
+        "scoreGap": 16,
+        "attackingSide": "Darja Semenistaja",
+        "vulnerableSide": "Elina Avanesyan",
+        "gameFlow": "Darja Semenistaja has a real path if Elina Avanesyan's first two service games show the same weakness: first-serve points won below comfort (56%); second-serve points won are attackable (42%).",
+        "liveTrigger": "Look for Elina Avanesyan facing break points or second-serve pressure before 3-3.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "Avoid low unders if Elina Avanesyan faces early break points or second-serve pressure.",
+        "pick": {
+          "name": "Darja Semenistaja",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 58,
+          "secondServeWonPct": 47,
+          "firstServePct": 67,
+          "avgAces": 1.4,
+          "avgDoubleFaults": 1.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 51,
+          "servicePointsWonPct": 54,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 11,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "first-serve points won below comfort (58%)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (51% return points won)"
+          ],
+          "gameFlowRead": "Darja Semenistaja can drop points quickly through first-serve points won below comfort (58%) and 3 recent matches with serve instability."
+        },
+        "opponent": {
+          "name": "Elina Avanesyan",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 56,
+          "secondServeWonPct": 42,
+          "firstServePct": 66,
+          "avgAces": 1,
+          "avgDoubleFaults": 5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 49,
+          "servicePointsWonPct": 51,
+          "weakServeMatches": 5,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 27,
+          "firstGameComfort": "Fragile opening-service profile",
+          "liabilities": [
+            "first-serve points won below comfort (56%)",
+            "second-serve points won are attackable (42%)",
+            "double-fault pressure (5.0 avg)",
+            "5 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (49% return points won)"
+          ],
+          "gameFlowRead": "Elina Avanesyan can drop points quickly through first-serve points won below comfort (56%) and second-serve points won are attackable (42%)."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Darja Semenistaja",
+          "line": null,
+          "americanOdds": -104,
+          "modelPct": 58,
+          "impliedPct": 51,
+          "edgePct": 7,
+          "evPer100": 13.8,
+          "netEvPer100": 11.8,
+          "grade": "Favorite price needs better proof",
+          "issue": "Favorite price needs better proof",
+          "reason": "Model is meaningfully above DraftKings Sportsbook implied price."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 20.7,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Elina Avanesyan 55% / Darja Semenistaja 72%",
+          "rows": [
+            {
+              "name": "Elina Avanesyan",
+              "confidence": 55,
+              "modelPct": 42,
+              "label": "Needs early hold pressure"
+            },
+            {
+              "name": "Darja Semenistaja",
+              "confidence": 72,
+              "modelPct": 58,
+              "label": "Live to win a set"
+            }
+          ],
+          "confidence": 72,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Under 9.5",
+          "expectedGames": 8.7,
+          "confidence": 62,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 54,
+          "grade": "Actionable live watch",
+          "reason": "Expected first-set games 8.7 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 50%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:07.725Z",
+        "moneyline": [
+          {
+            "name": "Elina Avanesyan",
+            "americanOdds": -125,
+            "impliedPct": 55.6,
+            "modelPct": 42,
+            "edgePct": -13.6,
+            "grossProfitPct": 80,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Darja Semenistaja",
+            "americanOdds": -104,
+            "impliedPct": 51,
+            "modelPct": 58,
+            "edgePct": 7,
+            "grossProfitPct": 96.2,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Model is meaningfully above DraftKings Sportsbook implied price."
+      }
+    },
+    {
+      "rank": 12,
+      "id": "rg-w-sara-sorribes-tormo-maria-timofeeva-2026-06-06",
+      "matchId": "rg-w-sara-sorribes-tormo-maria-timofeeva-2026-06-06",
+      "match": "Sara Sorribes Tormo vs Maria Timofeeva",
+      "format": "WTA",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "Center Court",
+      "start": "8:00 AM",
+      "pick": "Maria Timofeeva",
+      "modelProbability": 57,
+      "marketProbability": 53.9,
+      "marketAmericanOdds": -117,
+      "modelEdge": 3.1,
+      "confidence": 57,
+      "volatility": 51,
+      "tier": "Watch",
+      "rationale": "Maria Timofeeva grades 17 points better on opponent-adjusted recent form. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 6,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Maria Timofeeva",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 60,
+          "secondServeWonPct": 50,
+          "firstServePct": 66,
+          "avgAces": 1.2,
+          "avgDoubleFaults": 3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 56,
+          "servicePointsWonPct": 56,
+          "weakServeMatches": 1,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 4,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "first-serve points won below comfort (60%)"
+          ],
+          "strengths": [
+            "creates return pressure (56% return points won)"
+          ],
+          "gameFlowRead": "Maria Timofeeva can drop points quickly through first-serve points won below comfort (60%)."
+        },
+        "opponent": {
+          "name": "Sara Sorribes Tormo",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 58,
+          "secondServeWonPct": 52,
+          "firstServePct": 76,
+          "avgAces": 0.2,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 51,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 10,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "first-serve points won below comfort (58%)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (51% return points won)"
+          ],
+          "gameFlowRead": "Sara Sorribes Tormo can drop points quickly through first-serve points won below comfort (58%) and 3 recent matches with serve instability."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Maria Timofeeva",
+          "line": null,
+          "americanOdds": -117,
+          "modelPct": 57,
+          "impliedPct": 53.9,
+          "edgePct": 3.1,
+          "evPer100": 5.7,
+          "netEvPer100": 3.7,
+          "grade": "Favorite price needs better proof",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 20.9,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Sara Sorribes Tormo 58% / Maria Timofeeva 73%",
+          "rows": [
+            {
+              "name": "Sara Sorribes Tormo",
+              "confidence": 58,
+              "modelPct": 43,
+              "label": "Needs early hold pressure"
+            },
+            {
+              "name": "Maria Timofeeva",
+              "confidence": 73,
+              "modelPct": 57,
+              "label": "Live to win a set"
+            }
+          ],
+          "confidence": 73,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Under 9.5",
+          "expectedGames": 8.8,
+          "confidence": 60,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Actionable live watch",
+          "reason": "Expected first-set games 8.8 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 58%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:08.959Z",
+        "moneyline": [
+          {
+            "name": "Sara Sorribes Tormo",
+            "americanOdds": -111,
+            "impliedPct": 52.6,
+            "modelPct": 43,
+            "edgePct": -9.6,
+            "grossProfitPct": 90.1,
+            "priceBand": "Coinflip"
+          },
+          {
+            "name": "Maria Timofeeva",
+            "americanOdds": -117,
+            "impliedPct": 53.9,
+            "modelPct": 57,
+            "edgePct": 3.1,
+            "grossProfitPct": 85.5,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
+      }
+    },
+    {
+      "rank": 13,
+      "id": "rg-w-tyra-caterina-grant-darya-astakhova-2026-06-06",
+      "matchId": "rg-w-tyra-caterina-grant-darya-astakhova-2026-06-06",
+      "match": "Tyra Caterina Grant vs Darya Astakhova",
+      "format": "WTA",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "Center Court",
+      "start": "8:30 AM",
+      "pick": "Tyra Caterina Grant",
+      "modelProbability": 52,
+      "marketProbability": 75.9,
+      "marketAmericanOdds": -315,
+      "modelEdge": -23.9,
+      "confidence": 52,
+      "volatility": 57,
+      "tier": "Watch",
+      "rationale": "Tyra Caterina Grant grades 16 points better on opponent-adjusted recent form. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "Weakness warning",
+        "target": "Tyra Caterina Grant",
+        "scoreGap": -16,
+        "attackingSide": null,
+        "vulnerableSide": "Tyra Caterina Grant",
+        "gameFlow": "Tyra Caterina Grant is the model side, but the fragile profile is on our pick: first-serve points won below comfort (60%); second-serve points won are attackable (43%). Avoid laying a bad price until early holds are confirmed.",
+        "liveTrigger": "Do not upgrade Tyra Caterina Grant unless they hold cleanly in the first service game and keep double faults down.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Tyra Caterina Grant",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 60,
+          "secondServeWonPct": 43,
+          "firstServePct": 66,
+          "avgAces": 2,
+          "avgDoubleFaults": 5.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 49,
+          "servicePointsWonPct": 54,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 21,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "first-serve points won below comfort (60%)",
+            "second-serve points won are attackable (43%)",
+            "double-fault pressure (5.8 avg)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (49% return points won)"
+          ],
+          "gameFlowRead": "Tyra Caterina Grant can drop points quickly through first-serve points won below comfort (60%) and second-serve points won are attackable (43%)."
+        },
+        "opponent": {
+          "name": "Darya Astakhova",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 51,
+          "firstServePct": 63,
+          "avgAces": 1.4,
+          "avgDoubleFaults": 1.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 45,
+          "servicePointsWonPct": 58,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "creates return pressure (45% return points won)"
+          ],
+          "gameFlowRead": "Darya Astakhova has no major service weakness in the joined warehouse sample."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Darya Astakhova",
+          "line": null,
+          "americanOdds": 227,
+          "modelPct": 48,
+          "impliedPct": 30.6,
+          "edgePct": 17.4,
+          "evPer100": 57,
+          "netEvPer100": 55,
+          "grade": "Bet-grade value",
+          "issue": "Picked side is overpriced; value board flips to Darya Astakhova because that side has the better posted-price edge.",
+          "reason": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 21.7,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Tyra Caterina Grant 68% / Darya Astakhova 64%",
+          "rows": [
+            {
+              "name": "Tyra Caterina Grant",
+              "confidence": 68,
+              "modelPct": 52,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Darya Astakhova",
+              "confidence": 64,
+              "modelPct": 48,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 68,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Over 8.5",
+          "expectedGames": 9.1,
+          "confidence": 60,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Thin value",
+          "reason": "Expected first-set games 9.1 vs DraftKings Sportsbook 8.5; Over 8.5. hold avg N/A, BP saved N/A, BP converted 54%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:41.107Z",
+        "moneyline": [
+          {
+            "name": "Tyra Caterina Grant",
+            "americanOdds": -315,
+            "impliedPct": 75.9,
+            "modelPct": 52,
+            "edgePct": -23.9,
+            "grossProfitPct": 31.7,
+            "priceBand": "Low-payout favorite"
+          },
+          {
+            "name": "Darya Astakhova",
+            "americanOdds": 227,
+            "impliedPct": 30.6,
+            "modelPct": 48,
+            "edgePct": 17.4,
+            "grossProfitPct": 227,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "Favorite price has limited payout; require a strong weakness edge or use spread/total."
+      }
+    },
+    {
+      "rank": 14,
+      "id": "dk-challenger-tyler-adam-walton-vs-liam-draxl-2026-06-06",
+      "matchId": "dk-challenger-tyler-adam-walton-vs-liam-draxl-2026-06-06",
+      "match": "Adam Walton vs Liam Draxl",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger - Tyler",
+      "start": "9:00 AM",
+      "pick": "Adam Walton",
+      "modelProbability": 62.3,
+      "marketProbability": 68.3,
+      "marketAmericanOdds": -215,
+      "modelEdge": -6,
+      "confidence": 62.3,
+      "volatility": 44,
+      "tier": "Watch",
+      "rationale": "Opponent-adjusted recent form is basically even: Adam Walton 74, Liam Draxl 74. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 5,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Adam Walton",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 75,
+          "secondServeWonPct": 48,
+          "firstServePct": 65,
+          "avgAces": 8.6,
+          "avgDoubleFaults": 1.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 41,
+          "servicePointsWonPct": 65,
+          "weakServeMatches": 0,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 0,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (75%)"
+          ],
+          "gameFlowRead": "Adam Walton has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Liam Draxl",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 68,
+          "secondServeWonPct": 51,
+          "firstServePct": 65,
+          "avgAces": 3.6,
+          "avgDoubleFaults": 3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 43,
+          "servicePointsWonPct": 62,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 5,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [],
+          "gameFlowRead": "Liam Draxl has no major service weakness in the joined warehouse sample."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Liam Draxl",
+          "line": null,
+          "americanOdds": 150,
+          "modelPct": 41.2,
+          "impliedPct": 40,
+          "edgePct": 1.2,
+          "evPer100": 3,
+          "netEvPer100": 1,
+          "grade": "Raw ML edge only",
+          "issue": "Picked side is overpriced; value board flips to Liam Draxl because that side has the better posted-price edge.",
+          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 39.5,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Adam Walton 70% / Liam Draxl 60%",
+          "rows": [
+            {
+              "name": "Adam Walton",
+              "confidence": 70,
+              "modelPct": 62.3,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Liam Draxl",
+              "confidence": 60,
+              "modelPct": 41.2,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 70,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Price required",
+          "expectedGames": 9.2,
+          "confidence": 50,
+          "tiebreakRisk": 52,
+          "earlyBreakRisk": 48,
+          "grade": "Needs posted first-set total",
+          "reason": "Use expected first-set games against the posted 1st-set total; do not infer this from ML confidence alone."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:26.979Z",
+        "moneyline": [
+          {
+            "name": "Adam Walton",
+            "americanOdds": -215,
+            "impliedPct": 68.3,
+            "modelPct": 62.3,
+            "edgePct": -6,
+            "grossProfitPct": 46.5,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Liam Draxl",
+            "americanOdds": 150,
+            "impliedPct": 40,
+            "modelPct": 41.2,
+            "edgePct": 1.2,
+            "grossProfitPct": 150,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      }
+    },
+    {
+      "rank": 15,
+      "id": "dk-challenger-perugia-timofey-skatov-vs-henrique-rocha-2026-06-06",
+      "matchId": "dk-challenger-perugia-timofey-skatov-vs-henrique-rocha-2026-06-06",
+      "match": "Timofey Skatov vs Henrique Rocha",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger - Perugia",
+      "start": "9:00 AM",
+      "pick": "Henrique Rocha",
+      "modelProbability": 59.5,
+      "marketProbability": 67,
+      "marketAmericanOdds": -203,
+      "modelEdge": -7.5,
+      "confidence": 59.5,
+      "volatility": 46,
+      "tier": "Watch",
+      "rationale": "Opponent-adjusted recent form is basically even: Henrique Rocha 73, Timofey Skatov 73. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": -5,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Henrique Rocha",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 75,
+          "secondServeWonPct": 55,
+          "firstServePct": 58,
+          "avgAces": 2.6,
+          "avgDoubleFaults": 4.4,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 39,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 12,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "double-fault pressure (4.4 avg)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "wins enough first-serve points (75%)"
+          ],
+          "gameFlowRead": "Henrique Rocha can drop points quickly through double-fault pressure (4.4 avg) and 3 recent matches with serve instability."
+        },
+        "opponent": {
+          "name": "Timofey Skatov",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 63,
+          "secondServeWonPct": 44,
+          "firstServePct": 68,
+          "avgAces": 1.6,
+          "avgDoubleFaults": 2.8,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 47,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 7,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "second-serve points won are attackable (44%)"
+          ],
+          "strengths": [
+            "creates return pressure (47% return points won)"
+          ],
+          "gameFlowRead": "Timofey Skatov can drop points quickly through second-serve points won are attackable (44%)."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Timofey Skatov",
+          "line": null,
+          "americanOdds": 153,
+          "modelPct": 43.3,
+          "impliedPct": 39.5,
+          "edgePct": 3.8,
+          "evPer100": 9.5,
+          "netEvPer100": 7.5,
+          "grade": "Raw ML edge only",
+          "issue": "Picked side is overpriced; value board flips to Timofey Skatov because that side has the better posted-price edge.",
+          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 38.3,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Timofey Skatov 63% / Henrique Rocha 68%",
+          "rows": [
+            {
+              "name": "Timofey Skatov",
+              "confidence": 63,
+              "modelPct": 43.3,
+              "label": "Underdog set-win path needs early holds"
+            },
+            {
+              "name": "Henrique Rocha",
+              "confidence": 68,
+              "modelPct": 59.5,
+              "label": "Market favorite to win a set"
+            }
+          ],
+          "confidence": 68,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Pass / near line",
+          "expectedGames": 9.7,
+          "confidence": 51,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Near fair",
+          "reason": "Expected first-set games 9.7 vs DraftKings Sportsbook 9.5; near the number. hold avg N/A, BP saved N/A, BP converted 45%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:11.821Z",
+        "moneyline": [
+          {
+            "name": "Timofey Skatov",
+            "americanOdds": 153,
+            "impliedPct": 39.5,
+            "modelPct": 43.3,
+            "edgePct": 3.8,
+            "grossProfitPct": 153,
+            "priceBand": "Underdog"
+          },
+          {
+            "name": "Henrique Rocha",
+            "americanOdds": -203,
+            "impliedPct": 67,
+            "modelPct": 59.5,
+            "edgePct": -7.5,
+            "grossProfitPct": 49.3,
+            "priceBand": "Moderate favorite"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      }
+    },
+    {
+      "rank": 16,
+      "id": "rg-w-lucia-bronzetti-leyre-romero-gormaz-2026-06-06",
+      "matchId": "rg-w-lucia-bronzetti-leyre-romero-gormaz-2026-06-06",
+      "match": "Lucia Bronzetti vs Leyre Romero Gormaz",
+      "format": "WTA",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "Center Court",
+      "start": "10:00 AM",
+      "pick": "Lucia Bronzetti",
+      "modelProbability": 52,
+      "marketProbability": 63,
+      "marketAmericanOdds": -170,
+      "modelEdge": -11,
+      "confidence": 52,
+      "volatility": 58,
+      "tier": "Watch",
+      "rationale": "Lucia Bronzetti grades 17 points better on opponent-adjusted recent form. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "Weakness edge",
+        "target": "Leyre Romero Gormaz",
+        "scoreGap": 8,
+        "attackingSide": "Lucia Bronzetti",
+        "vulnerableSide": "Leyre Romero Gormaz",
+        "gameFlow": "Lucia Bronzetti has a real path if Leyre Romero Gormaz's first two service games show the same weakness: first-serve points won below comfort (59%); double-fault pressure (4.3 avg).",
+        "liveTrigger": "Look for Leyre Romero Gormaz facing break points or second-serve pressure before 3-3.",
+        "spreadRead": "Pre-match spread is fragile; wait for both players to serve once.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Lucia Bronzetti",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 60,
+          "secondServeWonPct": 52,
+          "firstServePct": 63,
+          "avgAces": 1.2,
+          "avgDoubleFaults": 2.3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 54,
+          "servicePointsWonPct": 57,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 7,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "first-serve points won below comfort (60%)"
+          ],
+          "strengths": [
+            "creates return pressure (54% return points won)"
+          ],
+          "gameFlowRead": "Lucia Bronzetti can drop points quickly through first-serve points won below comfort (60%)."
+        },
+        "opponent": {
+          "name": "Leyre Romero Gormaz",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 59,
+          "secondServeWonPct": 46,
+          "firstServePct": 61,
+          "avgAces": 2.8,
+          "avgDoubleFaults": 4.3,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 48,
+          "servicePointsWonPct": 54,
+          "weakServeMatches": 3,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 15,
+          "firstGameComfort": "Needs early holds confirmed",
+          "liabilities": [
+            "first-serve points won below comfort (59%)",
+            "double-fault pressure (4.3 avg)",
+            "3 recent matches with serve instability"
+          ],
+          "strengths": [
+            "creates return pressure (48% return points won)"
+          ],
+          "gameFlowRead": "Leyre Romero Gormaz can drop points quickly through first-serve points won below comfort (59%) and double-fault pressure (4.3 avg)."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Leyre Romero Gormaz",
+          "line": null,
+          "americanOdds": 129,
+          "modelPct": 48,
+          "impliedPct": 43.7,
+          "edgePct": 4.3,
+          "evPer100": 9.9,
+          "netEvPer100": 7.9,
+          "grade": "Raw ML edge only",
+          "issue": "Picked side is overpriced; value board flips to Leyre Romero Gormaz because that side has the better posted-price edge.",
+          "reason": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 21.4,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Lucia Bronzetti 70% / Leyre Romero Gormaz 63%",
+          "rows": [
+            {
+              "name": "Lucia Bronzetti",
+              "confidence": 70,
+              "modelPct": 52,
+              "label": "Live to win a set"
+            },
+            {
+              "name": "Leyre Romero Gormaz",
+              "confidence": 63,
+              "modelPct": 48,
+              "label": "Needs early hold pressure"
+            }
+          ],
+          "confidence": 70,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Under 9.5",
+          "expectedGames": 9,
+          "confidence": 59,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 54,
+          "grade": "Thin value",
+          "reason": "Expected first-set games 9 vs DraftKings Sportsbook 9.5; Under 9.5. hold avg N/A, BP saved N/A, BP converted 56%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:42.440Z",
+        "moneyline": [
+          {
+            "name": "Lucia Bronzetti",
+            "americanOdds": -170,
+            "impliedPct": 63,
+            "modelPct": 52,
+            "edgePct": -11,
+            "grossProfitPct": 58.8,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Leyre Romero Gormaz",
+            "americanOdds": 129,
+            "impliedPct": 43.7,
+            "modelPct": 48,
+            "edgePct": 4.3,
+            "grossProfitPct": 129,
+            "priceBand": "Underdog"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "DraftKings Sportsbook price is richer than the model; pass ML unless live state improves."
+      }
+    },
+    {
+      "rank": 17,
+      "id": "dk-challenger-perugia-daniel-merida-aguilar-vs-andrea-pellegrino-2026-06-06",
+      "matchId": "dk-challenger-perugia-daniel-merida-aguilar-vs-andrea-pellegrino-2026-06-06",
+      "match": "Daniel Merida Aguilar vs Andrea Pellegrino",
+      "format": "ATP",
+      "bestOf": 3,
+      "marketOnly": false,
+      "court": "ATP Challenger - Perugia",
+      "start": "11:30 AM",
+      "pick": "Daniel Merida Aguilar",
+      "modelProbability": 55.6,
+      "marketProbability": 59.3,
+      "marketAmericanOdds": -146,
+      "modelEdge": -3.7,
+      "confidence": 55.6,
+      "volatility": 48,
+      "tier": "Watch",
+      "rationale": "Andrea Pellegrino grades 13 points better on opponent-adjusted recent form, which keeps this below bet-grade without a good price. Lean, not a chase.",
+      "weaknessEdge": {
+        "edgeType": "No clear weakness edge",
+        "target": "Both sides",
+        "scoreGap": 0,
+        "attackingSide": null,
+        "vulnerableSide": null,
+        "gameFlow": "The weakness gap is small. Do not force arbitrage; wait for first-set serve comfort and break-point pressure.",
+        "liveTrigger": "Wait for a visible service-pressure split before entering.",
+        "spreadRead": "No spread edge without a posted handicap and first service-cycle read.",
+        "totalRead": "No total edge unless the posted number is low and both players hold comfortably early.",
+        "pick": {
+          "name": "Daniel Merida Aguilar",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 72,
+          "secondServeWonPct": 53,
+          "firstServePct": 65,
+          "avgAces": 3,
+          "avgDoubleFaults": 3.6,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 43,
+          "servicePointsWonPct": 66,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 5,
+          "weaknessScore": 6,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [],
+          "strengths": [
+            "wins enough first-serve points (72%)"
+          ],
+          "gameFlowRead": "Daniel Merida Aguilar has no major service weakness in the joined warehouse sample."
+        },
+        "opponent": {
+          "name": "Andrea Pellegrino",
+          "serviceHoldPct": null,
+          "firstServeWonPct": 62,
+          "secondServeWonPct": 58,
+          "firstServePct": 59,
+          "avgAces": 3,
+          "avgDoubleFaults": 2.5,
+          "avgWinners": null,
+          "avgUnforcedErrors": null,
+          "avgBreakPointsFaced": null,
+          "returnPointsWonPct": 37,
+          "servicePointsWonPct": 60,
+          "weakServeMatches": 2,
+          "pressureMatches": null,
+          "matchesWithStats": 4,
+          "weaknessScore": 6,
+          "firstGameComfort": "Comfortable enough if first serve lands",
+          "liabilities": [
+            "limited return pressure (37% return points won)"
+          ],
+          "strengths": [
+            "second serve holds up (58%)"
+          ],
+          "gameFlowRead": "Andrea Pellegrino can drop points quickly through limited return pressure (37% return points won)."
+        }
+      },
+      "totals": "Best O/U angle: no play without a posted total.",
+      "derivativeMarketCase": null,
+      "bettingMatrix": [
+        {
+          "marketType": "Moneyline",
+          "label": "ML value",
+          "selection": "Daniel Merida Aguilar",
+          "line": null,
+          "americanOdds": -146,
+          "modelPct": 55.6,
+          "impliedPct": 59.3,
+          "edgePct": -3.7,
+          "evPer100": -6.3,
+          "netEvPer100": -8.3,
+          "grade": "Negative EV",
+          "issue": "Favorite price needs better proof",
+          "reason": "ML is close to fair; derivative or live entry needs to carry the edge."
+        },
+        {
+          "marketType": "Total games",
+          "label": "O/U games",
+          "selection": "No bet",
+          "line": null,
+          "americanOdds": null,
+          "modelPct": null,
+          "impliedPct": null,
+          "edgePct": null,
+          "evPer100": null,
+          "netEvPer100": null,
+          "expectedGames": 41.5,
+          "edgeGames": null,
+          "confidence": null,
+          "grade": "No direction",
+          "reason": "No posted match total captured."
+        },
+        {
+          "marketType": "Win a set",
+          "label": "Win a set %",
+          "selection": "Daniel Merida Aguilar 64% / Andrea Pellegrino 66%",
+          "rows": [
+            {
+              "name": "Daniel Merida Aguilar",
+              "confidence": 64,
+              "modelPct": 55.6,
+              "label": "Market favorite to win a set"
+            },
+            {
+              "name": "Andrea Pellegrino",
+              "confidence": 66,
+              "modelPct": 47.1,
+              "label": "Underdog set-win path needs early holds"
+            }
+          ],
+          "confidence": 66,
+          "grade": "Price required",
+          "reason": "Use this when ML is fair or taxed. A fair ML can still create a live set-win entry after the other side wins early."
+        },
+        {
+          "marketType": "First-set total games",
+          "label": "1st set O/U",
+          "selection": "Over 9.5",
+          "expectedGames": 10,
+          "confidence": 58,
+          "tiebreakRisk": 18,
+          "earlyBreakRisk": 50,
+          "grade": "Thin value",
+          "reason": "Expected first-set games 10 vs DraftKings Sportsbook 9.5; Over 9.5. hold avg N/A, BP saved N/A, BP converted 48%, first-set sample N/A, 0 recent sets."
+        }
+      ],
+      "market": {
+        "source": "DraftKings Sportsbook",
+        "capturedAt": "2026-06-06T03:45:13.333Z",
+        "moneyline": [
+          {
+            "name": "Daniel Merida Aguilar",
+            "americanOdds": -146,
+            "impliedPct": 59.3,
+            "modelPct": 55.6,
+            "edgePct": -3.7,
+            "grossProfitPct": 68.5,
+            "priceBand": "Moderate favorite"
+          },
+          {
+            "name": "Andrea Pellegrino",
+            "americanOdds": 112,
+            "impliedPct": 47.2,
+            "modelPct": 47.1,
+            "edgePct": -0.1,
+            "grossProfitPct": 112,
+            "priceBand": "Coinflip"
+          }
+        ],
+        "spread": "No primary game spread captured",
+        "totalGames": "No total captured",
+        "priceAction": "ML is close to fair; derivative or live entry needs to carry the edge."
+      }
+    }
+  ]
+}

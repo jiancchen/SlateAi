@@ -1,33 +1,33 @@
 {
-  "date": "2026-05-31",
-  "generated_at": "2026-06-02T22:25:23.655066+00:00",
-  "ok": true,
+  "date": "2026-06-05",
+  "generated_at": "2026-06-06T14:22:53.348699+00:00",
+  "ok": false,
   "script": "data-migration/scripts/refresh_mlb_model_source_status.py",
   "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
   "sources": {
     "mlb_game_shape": {
-      "actual_item_count": 292,
+      "actual_item_count": 0,
       "source_name": "mlb_game_shape",
-      "status": "success",
+      "status": "missing",
       "table_counts": {
-        "component_settlement_rows": 31,
-        "side_backtest_rows": 15,
-        "state_formula_backtests": 126,
-        "state_formula_training_rows": 120
+        "component_settlement_rows": 0,
+        "side_backtest_rows": 0,
+        "state_formula_backtests": 0,
+        "state_formula_training_rows": 0
       }
     },
     "mlb_model_artifacts": {
-      "actual_item_count": 729,
+      "actual_item_count": 0,
       "source_name": "mlb_model_artifacts",
-      "status": "success",
+      "status": "missing",
       "table_counts": {
-        "model_artifacts": 14,
-        "model_run_artifacts": 11,
-        "model_run_lanes": 18,
-        "model_runs": 17,
-        "prediction_rows": 603,
-        "prop_backtest_rows": 36,
-        "settlement_rows": 30
+        "model_artifacts": 0,
+        "model_run_artifacts": 0,
+        "model_run_lanes": 0,
+        "model_runs": 0,
+        "prediction_rows": 0,
+        "prop_backtest_rows": 0,
+        "settlement_rows": 0
       }
     }
   }

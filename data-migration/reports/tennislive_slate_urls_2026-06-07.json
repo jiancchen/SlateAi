@@ -1,0 +1,453 @@
+{
+  "date": "2026-06-07",
+  "source": "Generated from DraftKings June 7 slate after typed warehouse materialization",
+  "capturedAt": "2026-06-07T02:12:20.652Z",
+  "matchCount": 55,
+  "playerUrlCount": 110,
+  "matchUrlCount": 55,
+  "matches": [
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/flavio-cobolli-VS-alexander-zverev/french-open-paris-2026/",
+      "leagueName": "French Open (M)",
+      "match": "Flavio Cobolli vs Alexander Zverev",
+      "confidence": "medium"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/alexandra-eala-VS-nikola-bartunkova/lexus-birmingham-open-birmingham-2026/",
+      "leagueName": "WTA - Birmingham",
+      "match": "Alexandra Eala vs Nikola Bartunkova",
+      "confidence": "medium"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/darja-semenistaja-VS-maria-timofeeva/makarska-open-makarska-2026/",
+      "leagueName": "WTA - Makarska",
+      "match": "Darja Semenistaja vs Maria Timofeeva",
+      "confidence": "medium"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/ella-seidel-VS-greet-minnen/libema-open-hertogenbosch-2026/",
+      "leagueName": "WTA Quals. - Hertogenbosch",
+      "match": "Ella Seidel vs Greet Minnen",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/hanne-vandewinkel-VS-anouk-koevermans/libema-open-hertogenbosch-2026/",
+      "leagueName": "WTA Quals. - Hertogenbosch",
+      "match": "Hanne Vandewinkel vs Anouk Koevermans",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/katie-volynets-VS-lin-zhu/libema-open-hertogenbosch-2026/",
+      "leagueName": "WTA Quals. - Hertogenbosch",
+      "match": "Katie Volynets vs Lin Zhu",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/robin-montgomery-VS-joanna-garland/libema-open-hertogenbosch-2026/",
+      "leagueName": "WTA Quals. - Hertogenbosch",
+      "match": "Robin Montgomery vs Joanna Garland",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/sebastian-baez-VS-alex-molcan/prostejov-challenger-2026/",
+      "leagueName": "Challenger - Prostejov",
+      "match": "Sebastian Baez vs Alex Molcan",
+      "confidence": "medium"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/geoffrey-blancaneaux-VS-luca-staeheli/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "Geoffrey Blancaneaux vs Luca Staeheli",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/mariano-kestelboim-VS-iliyan-radulov/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "Mariano Kestelboim vs Iliyan Radulov",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/lucas-poullain-VS-loann-massard/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "Lucas Poullain vs Loann Massard",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/david-jorda-sanchis-VS-s-d-prajwal-dev/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "David Jorda Sanchis vs S D Prajwal Dev",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/noah-karma-VS-raphael-perot/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "Noah Karma vs Raphael Perot",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/max-alcala-gurri-VS-kenny-de-schepper/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "Max Alcala Gurri vs Kenny de Schepper",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/andrea-baudel-VS-alejo-sanchez-quilez/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "Andrea Baudel vs Alejo Sanchez Quilez",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/alex-martinez-VS-nitin-kumar-sinha/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "Alex Martinez vs Nitin Kumar Sinha",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/matteo-martineau-VS-mae-malige/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "Matteo Martineau vs Mae Malige",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/maxime-janvier-VS-laurent-lokoli/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "Maxime Janvier vs Laurent Lokoli",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/jules-fabre-VS-johan-nikles/lyon-challenger-2026/",
+      "leagueName": "Challenger Quals. - Lyon",
+      "match": "Jules Fabre vs Johan Nikles",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/luka-mikrut-VS-emilio-nava/bad-rappenau-challenger-2026/",
+      "leagueName": "Challenger - Heilbronn",
+      "match": "Luka Mikrut vs Emilio Nava",
+      "confidence": "medium"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/adam-walton-VS-andre-ilagan/tyler-challenger-2026/",
+      "leagueName": "Challenger - Tyler",
+      "match": "Adam Walton vs Andre Ilagan",
+      "confidence": "medium"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/priscilla-hon-VS-polina-kudermetova/hsbc-championships-london-2026/",
+      "leagueName": "WTA Quals. - London",
+      "match": "Priscilla Hon vs Polina Kudermetova",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/talia-gibson-VS-alina-charaeva/hsbc-championships-london-2026/",
+      "leagueName": "WTA Quals. - London",
+      "match": "Talia Gibson vs Alina Charaeva",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/jodie-anna-burrage-VS-anna-blinkova/hsbc-championships-london-2026/",
+      "leagueName": "WTA Quals. - London",
+      "match": "Jodie Anna Burrage vs Anna Blinkova",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/donna-vekic-VS-carole-monnet/hsbc-championships-london-2026/",
+      "leagueName": "WTA Quals. - London",
+      "match": "Donna Vekic vs Carole Monnet",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/maddison-inglis-VS-alycia-parks/hsbc-championships-london-2026/",
+      "leagueName": "WTA Quals. - London",
+      "match": "Maddison Inglis vs Alycia Parks",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/tatjana-maria-VS-yuriko-lily-miyazaki/hsbc-championships-london-2026/",
+      "leagueName": "WTA Quals. - London",
+      "match": "Tatjana Maria vs Yuriko Lily Miyazaki",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/ekaterine-gorgodze-VS-kamilla-rakhimova/hsbc-championships-london-2026/",
+      "leagueName": "WTA Quals. - London",
+      "match": "Ekaterine Gorgodze vs Kamilla Rakhimova",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/elsa-jacquemot-VS-hanyu-guo/hsbc-championships-london-2026/",
+      "leagueName": "WTA Quals. - London",
+      "match": "Elsa Jacquemot vs Hanyu Guo",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/daniel-michalski-VS-andrej-martin/bratislava-challenger-2026/",
+      "leagueName": "Challenger Quals. - Bratislava",
+      "match": "Daniel Michalski vs Andrej Martin",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/alex-marti-pujolras-VS-benjamin-hassan/bratislava-challenger-2026/",
+      "leagueName": "Challenger Quals. - Bratislava",
+      "match": "Alex Marti Pujolras vs Benjamin Hassan",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/martin-krumich-VS-viktor-durasovic/bratislava-challenger-2026/",
+      "leagueName": "Challenger Quals. - Bratislava",
+      "match": "Martin Krumich vs Viktor Durasovic",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/tomas-lanik-VS-taro-daniel/bratislava-challenger-2026/",
+      "leagueName": "Challenger Quals. - Bratislava",
+      "match": "Tomas Lanik vs Taro Daniel",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/buvaysar-gadamauri-VS-matthew-william-donald/bratislava-challenger-2026/",
+      "leagueName": "Challenger Quals. - Bratislava",
+      "match": "Buvaysar Gadamauri vs Matthew William Donald",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/fares-zakaria-VS-mathys-erhard/bratislava-challenger-2026/",
+      "leagueName": "Challenger Quals. - Bratislava",
+      "match": "Fares Zakaria vs Mathys Erhard",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/akira-santillan-VS-marko-bekeni/bratislava-challenger-2026/",
+      "leagueName": "Challenger Quals. - Bratislava",
+      "match": "Akira Santillan vs Marko Bekeni",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/lukas-neumayer-VS-michal-krajci/bratislava-challenger-2026/",
+      "leagueName": "Challenger Quals. - Bratislava",
+      "match": "Lukas Neumayer vs Michal Krajci",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/hynek-barton-VS-sebastian-sorger/bratislava-challenger-2026/",
+      "leagueName": "Challenger Quals. - Bratislava",
+      "match": "Hynek Barton vs Sebastian Sorger",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/philip-henning-VS-alexander-donski/centurion-2-challenger-2026/",
+      "leagueName": "Challenger - Centurion-2",
+      "match": "Philip Henning vs Alexander Donski",
+      "confidence": "medium"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/leyre-romero-gormaz-VS-tyra-caterina-grant/open-delle-puglie-foggia-2026/",
+      "leagueName": "WTA - Foggia",
+      "match": "Leyre Romero Gormaz vs Tyra Caterina Grant",
+      "confidence": "medium"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/jazmin-ortenzi-VS-viola-turini/modena-2026/",
+      "leagueName": "WTA Modena Qualifiers",
+      "match": "Jazmin Ortenzi vs Viola Turini",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/tiantsoa-sarah-rakotomanga-rajaonah-VS-chloe-paquet/modena-2026/",
+      "leagueName": "WTA Modena Qualifiers",
+      "match": "Tiantsoa Sarah Rakotomanga Rajaonah vs Chloe Paquet",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/victoria-bosio-VS-francesca-pace/modena-2026/",
+      "leagueName": "WTA Modena Qualifiers",
+      "match": "Victoria Bosio vs Francesca Pace",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/noemi-basiletti-VS-beatrice-ricci/modena-2026/",
+      "leagueName": "WTA Modena Qualifiers",
+      "match": "Noemi Basiletti vs Beatrice Ricci",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/aleksandr-braynin-VS-sergio-callejon-hernando/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Aleksandr Braynin vs Sergio Callejon Hernando",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/gabriele-bosio-VS-gianmarco-ferrari/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Gabriele Bosio vs Gianmarco Ferrari",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/petr-nesterov-VS-michele-mecarelli/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Petr Nesterov vs Michele Mecarelli",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/lucio-ratti-VS-filippo-mazzola/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Lucio Ratti vs Filippo Mazzola",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/manuel-mazza-VS-lorenzo-carboni/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Manuel Mazza vs Lorenzo Carboni",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/carlos-sanchez-jover-VS-gerard-campana-lee/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Carlos Sanchez Jover vs Gerard Campana Lee",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/francesco-forti-VS-luca-castagnola/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Francesco Forti vs Luca Castagnola",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/giovanni-oradini-VS-samuele-pieri/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Giovanni Oradini vs Samuele Pieri",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/lorenzo-rottoli-VS-juan-cruz-martin-manzano/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Lorenzo Rottoli vs Juan Cruz Martin Manzano",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/peter-fajta-VS-miguel-tobon/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Peter Fajta vs Miguel Tobon",
+      "confidence": "low"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/carlo-alberto-caniato-VS-giuseppe-la-vela/cattolica-challenger-2026/",
+      "leagueName": "Challenger Cattolica Qualifiers",
+      "match": "Carlo Alberto Caniato vs Giuseppe La Vela",
+      "confidence": "low"
+    }
+  ],
+  "playerUrls": [
+    "https://www.tennislive.net/atp/adam-walton/",
+    "https://www.tennislive.net/atp/akira-santillan/",
+    "https://www.tennislive.net/atp/alejo-sanchez-quilez/",
+    "https://www.tennislive.net/atp/aleksandr-braynin/",
+    "https://www.tennislive.net/atp/alex-marti-pujolras/",
+    "https://www.tennislive.net/atp/alex-martinez/",
+    "https://www.tennislive.net/atp/alex-molcan/",
+    "https://www.tennislive.net/atp/alexander-donski/",
+    "https://www.tennislive.net/atp/alexander-zverev/",
+    "https://www.tennislive.net/atp/andre-ilagan/",
+    "https://www.tennislive.net/atp/andrea-baudel/",
+    "https://www.tennislive.net/atp/andrej-martin/",
+    "https://www.tennislive.net/atp/benjamin-hassan/",
+    "https://www.tennislive.net/atp/buvaysar-gadamauri/",
+    "https://www.tennislive.net/atp/carlo-alberto-caniato/",
+    "https://www.tennislive.net/atp/carlos-sanchez-jover/",
+    "https://www.tennislive.net/atp/daniel-michalski/",
+    "https://www.tennislive.net/atp/david-jorda-sanchis/",
+    "https://www.tennislive.net/atp/emilio-nava/",
+    "https://www.tennislive.net/atp/fares-zakaria/",
+    "https://www.tennislive.net/atp/filippo-mazzola/",
+    "https://www.tennislive.net/atp/flavio-cobolli/",
+    "https://www.tennislive.net/atp/francesco-forti/",
+    "https://www.tennislive.net/atp/gabriele-bosio/",
+    "https://www.tennislive.net/atp/geoffrey-blancaneaux/",
+    "https://www.tennislive.net/atp/gerard-campana-lee/",
+    "https://www.tennislive.net/atp/gianmarco-ferrari/",
+    "https://www.tennislive.net/atp/giovanni-oradini/",
+    "https://www.tennislive.net/atp/giuseppe-la-vela/",
+    "https://www.tennislive.net/atp/hynek-barton/",
+    "https://www.tennislive.net/atp/iliyan-radulov/",
+    "https://www.tennislive.net/atp/johan-nikles/",
+    "https://www.tennislive.net/atp/juan-cruz-martin-manzano/",
+    "https://www.tennislive.net/atp/jules-fabre/",
+    "https://www.tennislive.net/atp/kenny-de-schepper/",
+    "https://www.tennislive.net/atp/laurent-lokoli/",
+    "https://www.tennislive.net/atp/loann-massard/",
+    "https://www.tennislive.net/atp/lorenzo-carboni/",
+    "https://www.tennislive.net/atp/lorenzo-rottoli/",
+    "https://www.tennislive.net/atp/luca-castagnola/",
+    "https://www.tennislive.net/atp/luca-staeheli/",
+    "https://www.tennislive.net/atp/lucas-poullain/",
+    "https://www.tennislive.net/atp/lucio-ratti/",
+    "https://www.tennislive.net/atp/luka-mikrut/",
+    "https://www.tennislive.net/atp/lukas-neumayer/",
+    "https://www.tennislive.net/atp/mae-malige/",
+    "https://www.tennislive.net/atp/manuel-mazza/",
+    "https://www.tennislive.net/atp/mariano-kestelboim/",
+    "https://www.tennislive.net/atp/marko-bekeni/",
+    "https://www.tennislive.net/atp/martin-krumich/",
+    "https://www.tennislive.net/atp/mathys-erhard/",
+    "https://www.tennislive.net/atp/matteo-martineau/",
+    "https://www.tennislive.net/atp/matthew-william-donald/",
+    "https://www.tennislive.net/atp/max-alcala-gurri/",
+    "https://www.tennislive.net/atp/maxime-janvier/",
+    "https://www.tennislive.net/atp/michal-krajci/",
+    "https://www.tennislive.net/atp/michele-mecarelli/",
+    "https://www.tennislive.net/atp/miguel-tobon/",
+    "https://www.tennislive.net/atp/nitin-kumar-sinha/",
+    "https://www.tennislive.net/atp/noah-karma/",
+    "https://www.tennislive.net/atp/peter-fajta/",
+    "https://www.tennislive.net/atp/petr-nesterov/",
+    "https://www.tennislive.net/atp/philip-henning/",
+    "https://www.tennislive.net/atp/raphael-perot/",
+    "https://www.tennislive.net/atp/s-d-prajwal-dev/",
+    "https://www.tennislive.net/atp/samuele-pieri/",
+    "https://www.tennislive.net/atp/sebastian-baez/",
+    "https://www.tennislive.net/atp/sebastian-sorger/",
+    "https://www.tennislive.net/atp/sergio-callejon-hernando/",
+    "https://www.tennislive.net/atp/taro-daniel/",
+    "https://www.tennislive.net/atp/tomas-lanik/",
+    "https://www.tennislive.net/atp/viktor-durasovic/",
+    "https://www.tennislive.net/wta/alexandra-eala/",
+    "https://www.tennislive.net/wta/alina-charaeva/",
+    "https://www.tennislive.net/wta/alycia-parks/",
+    "https://www.tennislive.net/wta/anna-blinkova/",
+    "https://www.tennislive.net/wta/anouk-koevermans/",
+    "https://www.tennislive.net/wta/beatrice-ricci/",
+    "https://www.tennislive.net/wta/carole-monnet/",
+    "https://www.tennislive.net/wta/chloe-paquet/",
+    "https://www.tennislive.net/wta/darja-semenistaja/",
+    "https://www.tennislive.net/wta/donna-vekic/",
+    "https://www.tennislive.net/wta/ekaterine-gorgodze/",
+    "https://www.tennislive.net/wta/ella-seidel/",
+    "https://www.tennislive.net/wta/elsa-jacquemot/",
+    "https://www.tennislive.net/wta/francesca-pace/",
+    "https://www.tennislive.net/wta/greet-minnen/",
+    "https://www.tennislive.net/wta/hanne-vandewinkel/",
+    "https://www.tennislive.net/wta/hanyu-guo/",
+    "https://www.tennislive.net/wta/jazmin-ortenzi/",
+    "https://www.tennislive.net/wta/joanna-garland/",
+    "https://www.tennislive.net/wta/jodie-anna-burrage/",
+    "https://www.tennislive.net/wta/kamilla-rakhimova/",
+    "https://www.tennislive.net/wta/katie-volynets/",
+    "https://www.tennislive.net/wta/leyre-romero-gormaz/",
+    "https://www.tennislive.net/wta/lin-zhu/",
+    "https://www.tennislive.net/wta/maddison-inglis/",
+    "https://www.tennislive.net/wta/maria-timofeeva/",
+    "https://www.tennislive.net/wta/nikola-bartunkova/",
+    "https://www.tennislive.net/wta/noemi-basiletti/",
+    "https://www.tennislive.net/wta/polina-kudermetova/",
+    "https://www.tennislive.net/wta/priscilla-hon/",
+    "https://www.tennislive.net/wta/robin-montgomery/",
+    "https://www.tennislive.net/wta/talia-gibson/",
+    "https://www.tennislive.net/wta/tatjana-maria/",
+    "https://www.tennislive.net/wta/tiantsoa-sarah-rakotomanga-rajaonah/",
+    "https://www.tennislive.net/wta/tyra-caterina-grant/",
+    "https://www.tennislive.net/wta/victoria-bosio/",
+    "https://www.tennislive.net/wta/viola-turini/",
+    "https://www.tennislive.net/wta/yuriko-lily-miyazaki/"
+  ],
+  "missingMatchUrls": []
+}

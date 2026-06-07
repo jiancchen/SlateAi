@@ -4632,6 +4632,22 @@ h3 {
   line-height: 1.45;
 }
 
+.tennis-value-warning.inline {
+  display: block;
+  margin-top: 4px;
+  color: var(--warning);
+  font-weight: 800;
+}
+
+.mlb-value-row-time {
+  display: block;
+  margin-top: 3px;
+  color: var(--accent);
+  font: 800 0.64rem/1.25 var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .tennis-value-pill-row {
   display: flex;
   flex-wrap: wrap;
@@ -4997,6 +5013,23 @@ h3 {
   border-color: rgba(79, 210, 166, 0.42);
 }
 
+.batter-feature-card.lineup-risk,
+.batter-under-card.lineup-risk,
+.batter-table tbody tr.lineup-risk {
+  border-color: rgba(255, 107, 107, 0.38);
+  background: rgba(255, 107, 107, 0.08);
+}
+
+.batter-table tbody tr.lineup-risk td {
+  color: rgba(255, 215, 215, 0.92);
+}
+
+.batter-lineup-risk {
+  color: var(--danger) !important;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .batter-feature-card-top,
 .batter-feature-card-top span {
   display: grid;
@@ -5045,6 +5078,33 @@ h3 {
 
 .batter-feature-note {
   min-height: 2.7em;
+}
+
+.batter-context-warnings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.batter-context-warnings small,
+.batter-context-warning-inline {
+  border: 1px solid rgba(240, 177, 90, 0.34);
+  border-radius: 999px;
+  background: rgba(240, 177, 90, 0.1);
+  color: var(--warning);
+  font: 800 0.62rem/1.2 var(--mono);
+  padding: 4px 6px;
+}
+
+.batter-context-warnings.compact {
+  margin-top: 4px;
+}
+
+.batter-context-warnings.compact small {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .batter-section-title {

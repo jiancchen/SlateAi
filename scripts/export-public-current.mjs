@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises'
 import fsSync from 'node:fs'
 import path from 'node:path'
+import { execFileSync } from 'node:child_process'
 
 const root = path.resolve(import.meta.dirname, '..')
 const publishedRoot = path.join(root, 'published-data')
@@ -92,10 +93,22 @@ const selectSlate = async () => {
 const selectPublicSlates = async (currentSlate) => {
   const manifest = await readJson(path.join(publishedRoot, 'slates', 'index.json'))
   const sorted = [...manifest].sort((left, right) => String(left.id).localeCompare(String(right.id)))
+  const onlyDates = [
+    ...parseDateList(argValue('--only-dates')),
+    ...parseDateList(process.env.PUBLIC_ONLY_SLATE_DATES)
+  ]
   const windowOnly =
     process.argv.includes('--current-window') ||
     process.env.PUBLIC_SLATE_SCOPE === 'current-window'
+  const onlyCurrent =
+    process.argv.includes('--only-current') ||
+    process.env.PUBLIC_SLATE_SCOPE === 'only-current'
 
+  if (onlyDates.length) {
+    const ids = new Set(onlyDates)
+    return sorted.filter((entry) => ids.has(entry.id))
+  }
+  if (onlyCurrent) return [currentSlate]
   if (!windowOnly) return sorted
 
   const explicitDates = [
@@ -165,6 +178,46 @@ const copyMlbPropsIfPresent = async (slateId, targetPath) => {
     fallbackFrom: 'mlb-player-props-legacy',
     fallbackReason: 'Primary MLB player-props board had no picks for this slate.'
   }))
+  return true
+}
+
+const copyMlbResultsIfPresent = async (slateId, targetPath) => {
+  const sqliteDb = path.join(root, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
+  if (!fsSync.existsSync(sqliteDb)) return false
+  const query = `
+    select
+      g.game_date as date,
+      g.mlb_game_pk as gamePk,
+      g.game_id as sqlGameId,
+      at.name as awayTeam,
+      ht.name as homeTeam,
+      go.away_runs as awayRuns,
+      go.home_runs as homeRuns,
+      go.total_runs as totalRuns,
+      max(case when p.team_role='away' then p.runs_first1 end) as awayRunsFirst1,
+      max(case when p.team_role='home' then p.runs_first1 end) as homeRunsFirst1,
+      max(case when p.team_role='away' then p.won_first5_flag end) as awayWonFirst5,
+      max(case when p.team_role='home' then p.won_first5_flag end) as homeWonFirst5,
+      max(case when p.team_role='away' then p.first5_push_flag end) as awayFirst5Push,
+      max(case when p.team_role='home' then p.first5_push_flag end) as homeFirst5Push
+    from games g
+    join teams at on at.team_id=g.away_team_id
+    join teams ht on ht.team_id=g.home_team_id
+    left join game_outcomes go on go.game_id=g.game_id
+    left join phase_outcomes p on p.game_id=g.game_id
+    where g.game_date='${slateId.replace(/'/g, "''")}'
+    group by g.game_id
+    order by g.start_time_utc
+  `
+  const text = execFileSync('sqlite3', ['-json', sqliteDb, query], { encoding: 'utf8' })
+  const rows = JSON.parse(text || '[]')
+  if (!rows.length) return false
+  await fs.mkdir(path.dirname(targetPath), { recursive: true })
+  await writeJson(targetPath, {
+    source: 'sql-mlb.db',
+    date: slateId,
+    rows: sanitizePublicPayload(rows)
+  })
   return true
 }
 
@@ -397,13 +450,15 @@ const exportSlateBundle = async (slate, targetRoot) => {
   const homeRunsSource = path.join(root, 'data-private', 'predictions', 'mlb-home-runs', `${slate.id}-statcast-prototype.json`)
   const propsTarget = path.join(targetRoot, 'props.json')
   const homeRunsTarget = path.join(targetRoot, 'home-runs.json')
+  const resultsTarget = path.join(targetRoot, 'mlb-results.json')
   const hasProps = await copyMlbPropsIfPresent(slate.id, propsTarget)
   const hasHomeRuns = await copyIfPresent(homeRunsSource, homeRunsTarget)
+  const hasMlbResults = await copyMlbResultsIfPresent(slate.id, resultsTarget)
 
   const summary = await readJson(path.join(targetRoot, 'summary.json'))
   const searchIndex = await buildSearchIndex(slate, summary, propsTarget, homeRunsTarget)
   await writeJson(path.join(targetRoot, 'search.json'), searchIndex)
-  return { slate, summary, searchIndex, hasProps, hasHomeRuns }
+  return { slate, summary, searchIndex, hasProps, hasHomeRuns, hasMlbResults }
 }
 
 const main = async () => {
@@ -438,7 +493,8 @@ const main = async () => {
       bundle.slate.id,
       {
         hasProps: bundle.hasProps,
-        hasHomeRuns: bundle.hasHomeRuns
+        hasHomeRuns: bundle.hasHomeRuns,
+        hasMlbResults: bundle.hasMlbResults
       }
     ])
   )
@@ -451,11 +507,13 @@ const main = async () => {
     availabilityByDate,
     hasProps: currentBundle.hasProps,
     hasHomeRuns: currentBundle.hasHomeRuns,
+    hasMlbResults: currentBundle.hasMlbResults,
     files: {
       summary: '/data/current/summary.json',
       games: '/data/current/games',
       props: currentBundle.hasProps ? '/data/current/props.json' : null,
       homeRuns: currentBundle.hasHomeRuns ? '/data/current/home-runs.json' : null,
+      mlbResults: currentBundle.hasMlbResults ? '/data/current/mlb-results.json' : null,
       search: '/data/search.json',
       slates: '/data/slates',
       modelHistory: fsSync.existsSync(path.join(publicModelHistoryRoot, 'index.json')) ? '/data/model-history/index.json' : null

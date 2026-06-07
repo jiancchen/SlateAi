@@ -108,7 +108,7 @@ const main = async () => {
     cwd: root,
     stdio: 'inherit'
   })
-  execFileSync('node', ['scripts/audit-tennis-warehouse-identity.mjs', '--date', date], {
+  execFileSync('node', ['scripts/audit-tennis-warehouse-identity.mjs', '--date', date, '--allow-partial-market-context'], {
     cwd: root,
     stdio: 'inherit'
   })

@@ -10,9 +10,9 @@ Goal:
 
 Target slate:
 
-- date: `2026-06-05`
-- team-side shadow cards: `30`
-- reliever candidates scored: `287`
+- date: `2026-06-06`
+- team-side shadow cards: `0`
+- reliever candidates scored: `0`
 - conversion window: `8`
 - dependency window: `5`
 
@@ -32,33 +32,11 @@ Target slate:
 
 | Team | Opponent | Lead | Alt | Starter hook | Top-2 share |
 | --- | --- | --- | --- | --- | --- |
-| Padres | Mets | Bradgley Rodriguez | Jeremiah Estrada | 0.0% | 57.1% |
-| Braves | Pirates | Dylan Lee | Tyler Kinley | 0.0% | 53.3% |
-| Yankees | Red Sox | Jake Bird | Camilo Doval | 0.0% | 47.1% |
-| Cubs | Giants | Jacob Webb | Ethan Roberts | 0.0% | 46.8% |
-| Astros | Athletics | Alimber Santa | Bryan King | 0.0% | 46.3% |
-| Brewers | Rockies | Aaron Ashby | Abner Uribe | 0.0% | 46.3% |
-| Twins | Royals | Andrew Morris | Kody Funderburk | 0.0% | 45.0% |
-| Dodgers | Angels | Edgardo Henriquez | Blake Treinen | 0.0% | 44.0% |
-| Mariners | Tigers | Matt Brash | José A. Ferrer | 0.0% | 43.9% |
-| Phillies | White Sox | Tanner Banks | Chase Shugart | 0.0% | 42.9% |
+| - | - | - | - | - | - |
 
 ## Top Shadow Features
 
-- `quality_entry_order_avg_last10` `0.029`
-- `days_since_last_appearance` `0.027`
-- `first_reliever_likelihood` `0.027`
-- `availability_score` `0.026`
-- `fatigue_score` `0.025`
-- `bridge_score` `0.018`
-- `avg_pitches_per_appearance` `0.017`
-- `quality_strikeouts_per_bf_last10` `0.016`
-- `quality_traffic_per_bf_last10` `0.016`
-- `quality_pitches_per_app_last10` `0.015`
-- `starter_prob_15` `0.015`
-- `pitches_last3` `0.015`
-- `starter_prob_12` `0.015`
-- `quality_strike_rate_last10` `0.014`
+- `sklearn` unavailable, so no feature ranking was produced.
 
 ## Read
 

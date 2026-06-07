@@ -14,9 +14,10 @@ export { fallbackSlateDayManifest }
 type PublicDataMeta = {
   currentSlate: SlateManifestEntry
   slates?: SlateManifestEntry[]
-  availabilityByDate?: Record<string, { hasProps?: boolean; hasHomeRuns?: boolean }>
+  availabilityByDate?: Record<string, { hasProps?: boolean; hasHomeRuns?: boolean; hasMlbResults?: boolean }>
   hasProps?: boolean
   hasHomeRuns?: boolean
+  hasMlbResults?: boolean
 }
 
 type PublicSearchRow = Record<string, unknown> & {
@@ -64,7 +65,8 @@ const publicSlateAvailability = async (date: string) => {
   return (
     meta.availabilityByDate?.[date] ?? {
       hasProps: meta.currentSlate?.id === date ? meta.hasProps : false,
-      hasHomeRuns: meta.currentSlate?.id === date ? meta.hasHomeRuns : false
+      hasHomeRuns: meta.currentSlate?.id === date ? meta.hasHomeRuns : false,
+      hasMlbResults: meta.currentSlate?.id === date ? meta.hasMlbResults : false
     }
   )
 }
@@ -420,4 +422,36 @@ export const loadMlbHomeRunBoardData = async (date: string): Promise<Record<stri
   }
 
   return null
+}
+
+export const loadMlbResultsJournalData = async (date: string): Promise<Record<string, unknown>[]> => {
+  const loadPublicResults = async () => {
+    const availability = await publicSlateAvailability(date)
+    if (!availability.hasMlbResults || !(await publicDataMatchesDate(date))) return []
+    const payload = await fetchJsonWithTimeout<{ rows?: Record<string, unknown>[] }>(
+      `${publicSlateBasePath(date)}/mlb-results.json`,
+      5000
+    )
+    return Array.isArray(payload.rows) ? payload.rows : []
+  }
+
+  if (isPublicStaticMode()) {
+    try {
+      return await loadPublicResults()
+    } catch (error) {
+      console.warn(`Public MLB results journal unavailable for ${date}.`, error)
+      return []
+    }
+  }
+
+  if (await publicDataMatchesDateSafe(date)) {
+    try {
+      const results = await loadPublicResults()
+      if (results.length) return results
+    } catch (error) {
+      console.warn(`Public MLB results journal unavailable for ${date}; falling back to empty results.`, error)
+    }
+  }
+
+  return []
 }

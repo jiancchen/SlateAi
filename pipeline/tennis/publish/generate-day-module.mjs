@@ -18,7 +18,15 @@ const MODEL_CARTRIDGES = {
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
-  const options = { date: '', output: '', predictionsOutput: '', model: 'TEN-T0', inputSource: process.env.TENNIS_T0_USE_DB === '1' ? 'db' : 'files', dbPath: process.env.SLATE_TENNIS_WAREHOUSE_DB || DEFAULT_TENNIS_DB }
+  const options = {
+    date: '',
+    output: '',
+    predictionsOutput: '',
+    model: 'TEN-T0',
+    inputSource: process.env.TENNIS_T0_USE_DB === '1' ? 'db' : 'files',
+    dbPath: process.env.SLATE_TENNIS_WAREHOUSE_DB || DEFAULT_TENNIS_DB,
+    warehouseContext: ''
+  }
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
     if (arg === '--date') {
@@ -39,12 +47,16 @@ const parseArgs = () => {
     } else if (arg === '--db-path') {
       options.dbPath = args[index + 1] || options.dbPath
       index += 1
+    } else if (arg === '--warehouse-context') {
+      options.warehouseContext = args[index + 1] || ''
+      index += 1
     }
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(options.date)) throw new Error('Pass --date YYYY-MM-DD')
   if (!MODEL_CARTRIDGES[options.model]) throw new Error(`Unsupported tennis model cartridge: ${options.model}`)
   options.output ||= `web/src/lib/day-${options.date}.js`
   options.predictionsOutput ||= `data-private/predictions/tennis/${options.date}-roland-garros-singles.json`
+  options.warehouseContext ||= `web/src/lib/day-${options.date}-tennis-warehouse-context.generated.json`
   return options
 }
 
@@ -2158,6 +2170,15 @@ const warehouseDepthSummary = (warehousePlayer) => {
 const buildSupplementGame = (match, rankings, warehouse, sportsbookIndex) => {
   const [a, b] = match.players || []
   if (!a?.name || !b?.name) return null
+  const categoryText = String(match.category || '')
+  const tour = /wta|women/i.test(categoryText) ? 'WTA' : 'ATP'
+  const isAtp = tour === 'ATP'
+  const eventTag = /challenger/i.test(categoryText)
+    ? `${tour} Challenger`
+    : /french_open/i.test(categoryText)
+      ? `French Open ${tour === 'WTA' ? 'Women' : 'Men'}`
+      : tour
+  const tournamentLabel = match.tournament || eventTag
   const marketPlayers = match.predictionMarket?.players || []
   const marketPctFor = (name) => {
     const row = playerLine(
@@ -2183,8 +2204,8 @@ const buildSupplementGame = (match, rankings, warehouse, sportsbookIndex) => {
     || depthB.recentRows > 0
     || depthA.recentMatches > 0
     || depthB.recentMatches > 0
-  const scoreA = hasWarehouseDepth ? playerScore(rankA, qualityA, true, surface) : 0
-  const scoreB = hasWarehouseDepth ? playerScore(rankB, qualityB, true, surface) : 0
+  const scoreA = hasWarehouseDepth ? playerScore(rankA, qualityA, isAtp, surface) : 0
+  const scoreB = hasWarehouseDepth ? playerScore(rankB, qualityB, isAtp, surface) : 0
   const basePickA = scoreA >= scoreB
   const baseConfidence = hasWarehouseDepth ? pctFromDelta(Math.abs(scoreA - scoreB), true) : Math.max(modelPctA, modelPctB)
   const baseModelPctA = hasWarehouseDepth ? (basePickA ? baseConfidence : 100 - baseConfidence) : modelPctA
@@ -2230,7 +2251,7 @@ const buildSupplementGame = (match, rankings, warehouse, sportsbookIndex) => {
         scoreGap: null,
         attackingSide: null,
         vulnerableSide: null,
-        gameFlow: 'Robinhood market is captured, but rank/form/service data has not been joined for this Challenger row yet.',
+        gameFlow: `Market is captured, but rank/form/service data has not been joined for this ${eventTag} row yet.`,
         liveTrigger: 'Only enter after visible first-service comfort and break-point pressure; no pre-match model edge.',
         spreadRead: 'No spread line',
         totalRead: 'No total line',
@@ -2238,10 +2259,10 @@ const buildSupplementGame = (match, rankings, warehouse, sportsbookIndex) => {
         opponent: weaknessB
       }
   const read = hasWarehouseDepth
-    ? buildRead({ pick: pickName, opponent: opponentName, confidence, volatility, pickQuality, oppQuality, isAtp: true, surface })
+    ? buildRead({ pick: pickName, opponent: opponentName, confidence, volatility, pickQuality, oppQuality, isAtp, surface })
     : {
-        reason: `${pickName} is only the current Robinhood market favorite over ${opponentName}; ${surface} surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.`,
-        totals: 'No posted sportsbook total captured for this Challenger market.'
+        reason: `${pickName} is only the current market favorite over ${opponentName}; ${surface} surface is tagged, but no surface-specific warehouse service, break-point, or opponent-quality edge is joined yet.`,
+        totals: `No posted sportsbook total captured for this ${eventTag} market.`
       }
   const players = [
     {
@@ -2275,7 +2296,7 @@ const buildSupplementGame = (match, rankings, warehouse, sportsbookIndex) => {
     label: player.name === pickName ? 'Market favorite to win a set' : 'Underdog set-win path needs early holds'
   }))
   const totalsProfile = hasWarehouseDepth
-    ? buildTotalsProfile({ tour: 'ATP', confidence, volatility, qualityA, qualityB, weaknessA, weaknessB })
+    ? buildTotalsProfile({ tour, confidence, volatility, qualityA, qualityB, weaknessA, weaknessB })
     : null
   const valueBoard = buildValueBoard({
     marketData,
@@ -2291,27 +2312,27 @@ const buildSupplementGame = (match, rankings, warehouse, sportsbookIndex) => {
   return {
     id: match.id,
     eventId: match.eventId,
-    tour: 'ATP',
-    bestOf: 3,
+    tour,
+    bestOf: categoryText === 'french_open_men_singles' ? 5 : 3,
     surface,
     surfaceSource: match.surfaceSource || 'Robinhood tournament surface inference',
     title: `${a.name} vs ${b.name}`,
     start: timeLabel(match.startIso),
     startMinutes: startMinutes(match.startIso),
-    court: match.tournament || 'ATP Challenger',
+    court: tournamentLabel,
     round: match.round || 'Round',
-    stage: `${match.tournament || 'ATP Challenger'} | ${match.round || 'Round'}`,
+    stage: `${tournamentLabel} | ${match.round || 'Round'}`,
     pickName,
     basePickName: pickName,
-    modelSource: hasWarehouseDepth ? 'TennisLive recent-five Challenger model' : 'Robinhood market watch only',
+    modelSource: hasWarehouseDepth ? `TennisLive recent-five ${eventTag} model` : 'Sportsbook market watch only',
     modelSplit: false,
     marketOnly: !hasWarehouseDepth,
     confidence,
     volatility,
     tags: [
-      'ATP Challenger',
+      eventTag,
       surface,
-      'Prediction market',
+      match.predictionMarket?.source || 'Sportsbook board',
       hasWarehouseDepth ? 'Warehouse joined' : 'Market only',
       hasWarehouseDepth ? 'TennisLive recent five' : 'No model edge',
       confidence >= 70 ? 'Market favorite' : 'Coinflip price'
@@ -2335,6 +2356,17 @@ const sportsbookSupplementShape = (row, date) => {
   const names = splitEventName(row.match || row.draftKingsMatch)
   if (names.length !== 2) return null
   const leagueName = cleanSportsbookLeagueName(row.leagueName) || 'ATP Challenger'
+  const leagueText = `${leagueName} ${row.href || ''}`.toLowerCase()
+  const tour = leagueText.includes('wta') || leagueText.includes('women') ? 'WTA' : 'ATP'
+  const category = leagueText.includes('french open') || leagueText.includes('roland garros')
+    ? tour === 'WTA'
+      ? 'french_open_women_singles'
+      : 'french_open_men_singles'
+    : leagueText.includes('challenger')
+      ? `${tour.toLowerCase()}_challenger_singles`
+      : tour === 'WTA'
+        ? 'wta_singles'
+        : 'atp_singles'
   const tournament = /^Challenger/i.test(leagueName) ? leagueName.replace(/^Challenger/i, 'ATP Challenger') : leagueName
   const surface = inferSurface(leagueName, row.href)
   const impliedPctFor = (name) => {
@@ -2349,7 +2381,7 @@ const sportsbookSupplementShape = (row, date) => {
     eventId: row.eventId,
     title: `${names[0]} vs ${names[1]}`,
     tournament,
-    category: 'atp_challenger_singles',
+    category,
     surface,
     surfaceSource: `${row.source || 'DraftKings Sportsbook'} league surface inference`,
     startIso: row.startEventDate,
@@ -2366,9 +2398,15 @@ const sportsbookSupplementShape = (row, date) => {
   }
 }
 
-const isAtpChallengerSportsbookRow = (row) => {
+const isPrioritySportsbookRow = (row) => {
   const text = `${row?.leagueName || ''} ${row?.href || ''}`.toLowerCase()
-  return text.includes('challenger') && !text.includes('wta') && !text.includes('women')
+  return (
+    text.includes('french open') ||
+    text.includes('roland garros') ||
+    text.includes('wta') ||
+    text.includes('women') ||
+    text.includes('challenger')
+  )
 }
 
 const guessTour = (aName, bName, rankings) => {
@@ -2378,6 +2416,13 @@ const guessTour = (aName, bName, rankings) => {
 }
 
 const jsString = (value) => JSON.stringify(value, null, 2)
+
+const moduleImportPath = (fromFilePath, toFilePath) => {
+  const fromDir = path.dirname(path.resolve(ROOT, fromFilePath))
+  const toResolved = path.resolve(ROOT, toFilePath)
+  const relativePath = path.relative(fromDir, toResolved).replace(/\\/g, '/')
+  return relativePath.startsWith('.') ? relativePath : `./${relativePath}`
+}
 
 const assertNoBlockedTennisSources = (label, payload) => {
   const text = typeof payload === 'string' ? payload : JSON.stringify(payload)
@@ -2394,12 +2439,12 @@ const main = async () => {
   const useDbInputs = options.inputSource === 'db'
   const scoreboard = useDbInputs
     ? loadDbScoreboard(options.date, options.dbPath)
-    : await readJson(`data-private/reference/tennis/espn-scoreboard-${options.date}.json`)
+    : await readJson(`data-private/reference/tennis/espn-scoreboard-${options.date}.json`, { singles: [] })
   const rankings = useDbInputs
     ? loadDbRankings(options.date, options.dbPath)
     : await readJson('data-private/reference/tennis/player-rankings.json', { players: {} })
   const quality = { matches: {} }
-  const warehouseContext = await readJson(`web/src/lib/day-${options.date}-tennis-warehouse-context.generated.json`, { matches: {} })
+  const warehouseContext = await readJson(options.warehouseContext, { matches: {} })
   const draftkingsLines = await readJson(`data-private/reference/tennis/draftkings-lines-${options.date}.json`, { matches: [] })
   const fanduelLines = await readJson(`data-private/reference/tennis/fanduel-lines-${options.date}.json`, { matches: [] })
   const robinhoodMarkets = await readJson(`data-private/reference/tennis/robinhood-tennis-supplement-${options.date}.json`, { matches: [] })
@@ -2418,7 +2463,7 @@ const main = async () => {
   const sportsbookIndex = buildSportsbookIndex(draftkingsLines, fanduelLines)
   const robinhoodIndex = buildRobinhoodIndex(robinhoodMarkets)
   const derivativeIndex = buildDerivativeIndex(derivativeMarkets.rows || [])
-  const rolandGarrosGames = scoreboard.singles
+  const rolandGarrosGames = (scoreboard.singles || [])
     .filter((match) => !match.doubles && match.players?.length === 2)
     .filter((match) => isSeniorRolandGarrosMatch(match) || isWtaScoreboardMatch(match))
     .filter((match) => !/qualifying/i.test(String(match.round || '')))
@@ -2430,7 +2475,7 @@ const main = async () => {
     .filter(Boolean)
   const existingSupplementKeys = new Set([...rolandGarrosGames, ...supplementGames].map((game) => tokenKey(game.title)))
   const draftKingsSupplementGames = (draftkingsLines.matches || [])
-    .filter(isAtpChallengerSportsbookRow)
+    .filter(isPrioritySportsbookRow)
     .filter((row) => !existingSupplementKeys.has(tokenKey(row.match || row.draftKingsMatch)))
     .map((row) => sportsbookSupplementShape(row, options.date))
     .filter(Boolean)
@@ -2442,8 +2487,18 @@ const main = async () => {
   }
   const dayLabel = titleDate(options.date)
   const compact = options.date.replaceAll('-', '')
+  const sportsModelImportPath = moduleImportPath(options.output, 'web/src/lib/sports-model.js')
+  const warehouseContextImportPath = moduleImportPath(options.output, options.warehouseContext)
   let moduleText = `import { createSportsMatchModel } from './sports-model.js'\nimport tennisClayContext from './day-${options.date}-tennis-clay-context.generated.json' with { type: 'json' }\nimport tennisOpponentQualityContext from './day-${options.date}-tennis-opponent-quality.generated.json' with { type: 'json' }\nimport tennisWarehouseContext from './day-${options.date}-tennis-warehouse-context.generated.json' with { type: 'json' }\n\nconst rawTennisGames = ${jsString(games)}\n\nconst normalizePlayerName = (value) => {\n  const normalized = String(value || '').normalize('NFKD').replace(/[\\u0300-\\u036f]/g, '').replace(/[^a-z0-9]+/gi, ' ').trim().toLowerCase()\n  return ({ 'barbora palicov': 'barbora palicova', 'bu yunchaokete': 'yunchaokete bu', 'chak lam coleman wong': 'coleman wong', 'diego dedura': 'diego dedura palomero', 'georgia pedone': 'giorgia pedone', 'noma akugue noha': 'noma noha akugue', 'taro taro': 'taro daniel', 'xinyu wang': 'wang xinyu', 'xiyu wang': 'wang xiyu', 'yibing wu': 'wu yibing' })[normalized] || normalized\n}\n\nconst participant = (id, index, role, player) => ({\n  id: \`\${id}:\${index}\`,\n  index,\n  role,\n  name: player.name,\n  detail: player.profile || 'Profile pending',\n  americanOdds: player.market?.odds ?? null,\n  americanLabel: player.market?.americanLabel ?? 'N/A',\n  decimalOdds: player.market?.decimalOdds ?? null,\n  impliedProbability: player.market?.impliedPct ? player.market.impliedPct / 100 : null,\n  impliedProbabilityLabel: player.market?.impliedPct ? \`\${player.market.impliedPct}%\` : 'N/A'\n})\n\nconst buildGame = (raw) => {\n  const market = raw.marketData ?? null\n  const players = raw.players.map((player) => ({ ...player, market: market?.players?.find((entry) => entry.name === player.name) ?? null }))\n  const participants = [participant(raw.id, 0, 'Player 1', players[0]), participant(raw.id, 1, 'Player 2', players[1])]\n  const pickIndex = raw.pickName === raw.players[0].name ? 0 : 1\n  const picked = participants[pickIndex]\n  const opponent = participants[pickIndex === 0 ? 1 : 0]\n  const qualityContext = tennisOpponentQualityContext.matches?.[raw.id] ?? null\n  const clayData = tennisClayContext.matches?.[raw.id] ?? null\n  const warehouseContext = tennisWarehouseContext.matches?.[raw.id] ?? null\n  const marketPlayers = market?.players ?? []\n  const deskMarket = market?.desk ?? null\n  const marketEconomics = market ? {\n    source: market.source,\n    capturedAt: market.capturedAt,\n    eventUrl: market.eventUrl,\n    deskName: raw.pickName,\n    deskPricePct: deskMarket?.impliedPct ?? null,\n    deskEdgePct: deskMarket?.edgePct ?? null,\n    priceAction: market.priceAction,\n    players: marketPlayers.map((player) => ({\n      name: player.name,\n      americanOdds: player.odds,\n      impliedPct: player.impliedPct,\n      modelPct: player.modelPct,\n      edgePct: player.edgePct,\n      priceBand: player.priceBand,\n      grossProfitPct: player.grossProfitPct,\n      grossPayoutMultiple: player.grossPayoutMultiple,\n      centsAtRisk: player.centsAtRisk,\n      centsProfitIfWin: player.centsProfitIfWin\n    }))\n  } : null\n  const predictionMarket = market ? {\n    source: market.source,\n    capturedAt: market.capturedAt,\n    totalVolume: null,\n    players: marketPlayers.map((player) => ({ name: player.name, probabilityPct: player.impliedPct, amount: null, americanOdds: player.odds, edgePct: player.edgePct, priceBand: player.priceBand }))\n  } : null\n  const oddsMarkets = [\n    { label: 'Model fair', book: 'Tennis warehouse model', value: raw.players.map((player) => \`\${player.name} \${player.modelPct}%\`).join(' / ') },\n    market ? { label: 'FanDuel moneyline', book: market.source, value: market.mlValue } : null,\n    market?.spread ? { label: 'Game handicap', book: market.source, value: market.spreadValue } : null,\n    market?.total ? { label: 'Total games', book: market.source, value: market.totalValue } : null\n  ].filter(Boolean)\n  return createSportsMatchModel({\n    id: raw.id,\n    eventId: raw.eventId,\n    league: 'Tennis',\n    start: raw.start,\n    startMinutes: raw.startMinutes,\n    title: raw.title,\n    stage: \`Roland Garros \${raw.tour === 'ATP' ? 'Men' : 'Women'} | \${raw.round || 'Round 2'}\`,\n    spotlight: raw.tags.includes('High confidence'),\n    confidence: raw.confidence,\n    volatility: raw.volatility,\n    tags: raw.tags,\n    matchup: players.map((player, index) => ({ side: index === 0 ? 'Player 1' : 'Player 2', name: player.name, displayName: player.name, detail: player.profile || 'Profile pending' })),\n    summary: \`\${raw.pickName} is the desk side. \${raw.reason}\`,\n    factors: [\n      raw.reason,\n      market?.noVigNote,\n      raw.weaknessEdge?.gameFlow,\n      raw.weaknessEdge?.liveTrigger,\n      raw.totals,\n      'May 27 lesson applied: favorites need proof from recent hold, opponent strength, payout, and a visible weakness path.',\n      market ? market.marketNote : 'No FanDuel line is stored for this match yet, so market edge is model-vs-fair only until a price is captured.'\n    ].filter(Boolean),\n    lean: market?.priceAction ? \`Lean \${raw.pickName}; \${market.priceAction}\` : \`Lean \${raw.pickName}; pass if the market price removes payout.\`,\n    swing: \`Risk: \${raw.tour === 'WTA' ? 'best-of-three volatility and break clusters' : 'best-of-five set extension and tiebreak variance'}.\`,\n    swingFactor: \`Risk: \${raw.tour === 'WTA' ? 'best-of-three volatility and break clusters' : 'best-of-five set extension and tiebreak variance'}.\`,\n    odds: {\n      participantOrder: [0, 1],\n      markets: oddsMarkets,\n      note: market?.marketNote || 'Market price not captured yet. Use this as fair-value context, not a bet ticket.',\n      provider: market?.source || 'Tennis warehouse model'\n    },\n    tennisContext: {\n      surface: 'Clay',\n      court: raw.court,\n      h2hLeader: '',\n      fatigueFlag: false,\n      liveDog: false,\n      weaknessEdge: raw.weaknessEdge,\n      warehouseContext,\n      sofascoreData: warehouseContext,\n      players: players.map((player) => ({\n        name: player.name,\n        rank: player.ranking?.rank ?? null,\n        label: player.name,\n        form: null,\n        boardPct: player.modelPct,\n        decimalOdds: player.market?.decimalOdds ?? null,\n        marketLabel: player.market ? \`\${player.market.americanLabel} / \${player.market.impliedPct}% implied\` : \`Model fair \${player.modelPct}%\`,\n        clayLine: player.profile || 'Profile pending',\n        weakness: player.weakness,\n        warehouseStats: warehouseContext?.players?.find((entry) => normalizePlayerName(entry.name) === normalizePlayerName(player.name)) ?? null,\n        record2026: '',\n        notes: player.name === raw.pickName ? \`Pick: model \${raw.confidence}%\` : \`Opponent case: model \${100 - raw.confidence}%\`,\n        matchupNote: player.name === raw.pickName ? \`Why pick: \${raw.reason}\` : 'Upset path: needs early scoreboard pressure or a market price that pays for volatility.'\n      })),\n      comparisonRows: [\n        { label: 'Model pick', metric: 'Fair win split', leftScore: raw.players[0].modelPct, rightScore: raw.players[1].modelPct, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: raw.pickName },\n        market ? { label: 'FanDuel moneyline', metric: 'Implied price', leftScore: marketPlayers.find((player) => player.name === raw.players[0].name)?.impliedPct ?? 0, rightScore: marketPlayers.find((player) => player.name === raw.players[1].name)?.impliedPct ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: market.priceAction } : null,\n        { label: 'Weakness', metric: 'Lower is cleaner', leftScore: raw.players[0].weakness?.weaknessScore ?? 0, rightScore: raw.players[1].weakness?.weaknessScore ?? 0, leftLabel: raw.players[0].name, rightLabel: raw.players[1].name, winner: raw.weaknessEdge?.edgeType || 'No clear weakness edge' },\n        { label: 'Volatility', metric: 'Lower is cleaner', leftScore: raw.volatility, rightScore: 100 - raw.volatility, leftLabel: 'Risk', rightLabel: 'Stability', winner: raw.volatility <= 55 ? 'Stable enough' : 'Pass-first' }\n      ].filter(Boolean),\n      predictionMarket,\n      valueBoard: raw.valueBoard,\n      projection: { projectedWinner: raw.pickName, projectedSetLine: raw.tour === 'ATP' ? '3-1/3-2 range' : '2-0/2-1 range', setWinProjections: raw.setWinProjections, totalGames: market?.total?.line ?? null, straightSetsProbability: raw.tour === 'ATP' ? null : Math.max(48, Math.min(68, raw.confidence - 8)), upsetRisk: 100 - raw.confidence, overview: raw.weaknessEdge?.gameFlow || raw.reason, fantasy: [] },\n      tradePlan: { laneLabel: raw.tags.includes('High confidence') ? 'High confidence, price required' : market?.priceAction || 'Pass-first', summary: raw.weaknessEdge?.gameFlow || raw.totals, trigger: raw.weaknessEdge?.liveTrigger, headline: raw.weaknessEdge?.edgeType, exit: market?.spreadLean || raw.weaknessEdge?.spreadRead, tone: raw.tags.includes('High confidence') ? 'accent' : 'warning' },\n      derivativeMarkets: [\n        { label: 'ML', value: market ? \`\${raw.pickName} \${deskMarket?.americanLabel || ''}; \${market.noVigNote}\` : 'Need market price', lean: market?.priceAction || raw.weaknessEdge?.edgeType || 'Fair only', confidence: raw.confidence, ...(raw.valueBoard?.ml || {}), tone: market?.desk?.edgePct >= 7 ? 'accent' : market?.desk?.edgePct <= -4 ? 'warning' : 'neutral', reason: market?.marketNote || raw.weaknessEdge?.gameFlow || raw.reason },\n        { label: 'Win a set', value: raw.setWinProjections?.map((entry) => entry.name + ' ' + entry.confidence + '%').join(' / ') || 'No set projection', lean: raw.setWinProjections?.find((entry) => entry.name !== raw.pickName)?.label || 'Set-win path', confidence: Math.max(...(raw.setWinProjections || []).map((entry) => Number(entry.confidence) || 0), 0), setWinRows: raw.valueBoard?.setWin || [], valueGrade: 'Needs posted price', tone: raw.tour === 'ATP' ? 'accent' : 'neutral', reason: raw.tour === 'ATP' ? 'Best-of-five gives the non-ML side more room to win a set; use this to separate upset risk from match-winner confidence.' : 'Best-of-three set-win confidence is more fragile; early service holds matter more.' },\n        { label: 'Spread', value: market?.spreadValue || 'Need posted game spread', lean: market?.spreadLean || raw.weaknessEdge?.spreadRead || 'Need number', confidence: Math.max(50, raw.confidence - 6), ...(raw.valueBoard?.spread || {}), tone: raw.weaknessEdge?.edgeType === 'Weakness edge' ? 'accent' : 'neutral', reason: raw.weaknessEdge?.liveTrigger || 'Wait for first service cycle.' },\n        { label: 'O/U', value: market?.totalValue || 'Need posted total', lean: market?.totalLean || raw.weaknessEdge?.totalRead || raw.totals, confidence: Math.max(50, raw.confidence - 8), ...(raw.valueBoard?.total || {}), tone: raw.totals.includes('over') || raw.weaknessEdge?.totalRead?.includes('breaks') ? 'accent' : 'neutral', reason: raw.totals }\n      ],\n      marketEconomics,\n      clayMatchupData: clayData,\n      opponentQualityData: qualityContext,\n      researchLinks: [{ label: 'ESPN scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/${compact}' }, { label: 'Tennistonic H2H', url: clayData?.sourceUrl || raw.h2hUrl }, ...(market?.eventUrl ? [{ label: 'FanDuel event', url: market.eventUrl }] : [])],\n      formEdgeName: raw.pickName\n    },\n    participants,\n    moneyline: market ? { available: true, label: 'FanDuel moneyline', provider: market.source, participants } : { available: false, label: 'Moneyline', provider: 'Tennis warehouse model', participants: [] },\n    analysis: { available: true, participantId: picked.id, participant: picked, opponent, lean: \`Lean \${raw.pickName}\`, rationale: raw.reason, confidence: raw.confidence, volatility: raw.volatility, recommendationScore: raw.confidence - Math.round(raw.volatility / 3) + Math.round(Math.max(-8, Math.min(8, deskMarket?.edgePct ?? 0))), tier: raw.tags.includes('High confidence')  ? 'High confidence' : raw.tags.includes('Lean') ? 'Lean' : 'Watch', sourceLabel: market?.source || 'Tennis warehouse model', modelEdge: deskMarket?.edgePct ?? 0, modelEdgeLabel: deskMarket ? \`\${deskMarket.edgePct > 0 ? '+' : ''}\${deskMarket.edgePct} pts vs FanDuel implied\` : 'Fair value only until market price is captured', marketProbability: deskMarket?.impliedPct ? deskMarket.impliedPct / 100 : null, marketProbabilityLabel: deskMarket?.impliedPct ? \`\${deskMarket.impliedPct}% FanDuel implied\` : 'No market', inputs: [], inputsUsed: market ? 4 : 3, volatilityNotes: [] }\n  }, { structuredAnalysis: true })\n}\n\nconst matches = rawTennisGames.map(buildGame)\n\nexport const tennisModelCartridge = ${jsString(modelCartridge)}\nexport const slateMeta = { title: '${dayLabel} Tennis Desk', date: '${dayLabel}', isoDate: '${options.date}', timeZone: 'America/Los_Angeles', modelCartridge: tennisModelCartridge, subtitle: 'Singles-only Roland Garros main-draw slate with weakness-edge, game-flow gates, and sportsbook/market lines where captured.', notes: ['No doubles included.', 'FanDuel ML, game handicap, and total-games lines are attached where the sportsbook board exposes a matching singles event.', '${dayLabel} uses live rank, clay record, opponent-adjusted recent form, and warehouse service rows where joined.'] }\nexport const filters = ['All', 'Tennis']\nexport const oddsMeta = { provider: 'FanDuel Sportsbook + Tennis warehouse model', snapshot: '${dayLabel} Roland Garros desk', note: 'FanDuel lines are stored for priced matches; very expensive favorites are marked as low-payout or pass-first instead of automatic bets.' }\nexport const sources = [{ label: 'ESPN tennis scoreboard', url: 'https://www.espn.com/tennis/scoreboard/_/date/${compact}' }, { label: 'Live Tennis rankings warehouse', url: 'https://live-tennis.eu/' }, { label: 'FanDuel sportsbook tennis', url: 'https://sportsbook.fanduel.com/tennis' }]\nexport const games = matches.sort((left, right) => left.startMinutes - right.startMinutes || left.title.localeCompare(right.title))\n`
 
+  moduleText = moduleText.replace(
+    `import { createSportsMatchModel } from './sports-model.js'\n`,
+    `import { createSportsMatchModel } from '${sportsModelImportPath}'\n`
+  )
+  moduleText = moduleText.replace(
+    `import tennisWarehouseContext from './day-${options.date}-tennis-warehouse-context.generated.json' with { type: 'json' }\n`,
+    `import tennisWarehouseContext from '${warehouseContextImportPath}' with { type: 'json' }\n`
+  )
   moduleText = moduleText.replace(
     `import tennisClayContext from './day-${options.date}-tennis-clay-context.generated.json' with { type: 'json' }\n`,
     ''

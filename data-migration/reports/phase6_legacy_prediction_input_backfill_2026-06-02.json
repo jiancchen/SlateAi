@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T06:32:44.564305+00:00",
+  "generated_at": "2026-06-06T15:52:26.648297+00:00",
   "phase": "6",
   "script": "data-migration/scripts/legacy_prediction_input_backfill.py",
   "dry_run": false,
@@ -10,22 +10,22 @@
       "target_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
       "dry_run": false,
       "source_table_count": 72,
-      "source_row_count": 1206213,
+      "source_row_count": 1219876,
       "tables": [
         {
           "source_table": "mlb_batter_game_outcomes",
           "kind": "sport_or_adjacent",
-          "source_count": 18080
+          "source_count": 18876
         },
         {
           "source_table": "mlb_bullpen_mistake_shape_daily",
           "kind": "sport_or_adjacent",
-          "source_count": 3508
+          "source_count": 3724
         },
         {
           "source_table": "mlb_bullpen_usage",
           "kind": "sport_or_adjacent",
-          "source_count": 16542
+          "source_count": 17591
         },
         {
           "source_table": "mlb_featured_market_odds_snapshots",
@@ -35,7 +35,7 @@
         {
           "source_table": "mlb_game_outcomes",
           "kind": "sport_or_adjacent",
-          "source_count": 886
+          "source_count": 925
         },
         {
           "source_table": "mlb_game_story_labels",
@@ -45,22 +45,22 @@
         {
           "source_table": "mlb_game_story_signals",
           "kind": "sport_or_adjacent",
-          "source_count": 886
+          "source_count": 925
         },
         {
           "source_table": "mlb_game_sun_visibility_snapshots",
           "kind": "sport_or_adjacent",
-          "source_count": 306
+          "source_count": 375
         },
         {
           "source_table": "mlb_game_team_stats",
           "kind": "sport_or_adjacent",
-          "source_count": 1776
+          "source_count": 1854
         },
         {
           "source_table": "mlb_game_visibility_outcomes",
           "kind": "sport_or_adjacent",
-          "source_count": 295
+          "source_count": 334
         },
         {
           "source_table": "mlb_hitter_career_profiles",
@@ -70,12 +70,12 @@
         {
           "source_table": "mlb_hitter_classic_trend_snapshots",
           "kind": "sport_or_adjacent",
-          "source_count": 25167
+          "source_count": 25624
         },
         {
           "source_table": "mlb_hitter_opponent_context_snapshots",
           "kind": "sport_or_adjacent",
-          "source_count": 25167
+          "source_count": 25624
         },
         {
           "source_table": "mlb_hitter_pitch_type_response_daily",
@@ -90,32 +90,32 @@
         {
           "source_table": "mlb_hitter_statcast_game_logs",
           "kind": "sport_or_adjacent",
-          "source_count": 18004
+          "source_count": 19299
         },
         {
           "source_table": "mlb_hitter_statcast_trend_snapshots",
           "kind": "sport_or_adjacent",
-          "source_count": 25797
+          "source_count": 26760
         },
         {
           "source_table": "mlb_hitter_state_snapshots",
           "kind": "sport_or_adjacent",
-          "source_count": 24396
+          "source_count": 25926
         },
         {
           "source_table": "mlb_home_run_backtests",
           "kind": "sport_or_adjacent",
-          "source_count": 182
+          "source_count": 206
         },
         {
           "source_table": "mlb_home_run_events",
           "kind": "sport_or_adjacent",
-          "source_count": 1900
+          "source_count": 1992
         },
         {
           "source_table": "mlb_home_run_predictions",
           "kind": "sport_or_adjacent",
-          "source_count": 194
+          "source_count": 218
         },
         {
           "source_table": "mlb_kalshi_market_snapshots",
@@ -125,17 +125,17 @@
         {
           "source_table": "mlb_likely_relief_chains",
           "kind": "sport_or_adjacent",
-          "source_count": 3508
+          "source_count": 3724
         },
         {
           "source_table": "mlb_lineup_conversion_shape_daily",
           "kind": "sport_or_adjacent",
-          "source_count": 5262
+          "source_count": 5586
         },
         {
           "source_table": "mlb_lineup_dependency_profiles",
           "kind": "sport_or_adjacent",
-          "source_count": 3092
+          "source_count": 3620
         },
         {
           "source_table": "mlb_lineup_pitcher_matchup_daily",
@@ -155,17 +155,17 @@
         {
           "source_table": "mlb_pitcher_appearances",
           "kind": "sport_or_adjacent",
-          "source_count": 7498
+          "source_count": 7821
         },
         {
           "source_table": "mlb_pitcher_first_inning_profiles_daily",
           "kind": "sport_or_adjacent",
-          "source_count": 3024
+          "source_count": 3176
         },
         {
           "source_table": "mlb_pitcher_mistake_shape_daily",
           "kind": "sport_or_adjacent",
-          "source_count": 3024
+          "source_count": 3176
         },
         {
           "source_table": "mlb_pitcher_pitch_mix_daily",
@@ -175,7 +175,7 @@
         {
           "source_table": "mlb_pitcher_war_by_season",
           "kind": "sport_or_adjacent",
-          "source_count": 1527
+          "source_count": 1544
         },
         {
           "source_table": "mlb_player_current_deviation_daily",
@@ -185,7 +185,7 @@
         {
           "source_table": "mlb_player_game_batting",
           "kind": "sport_or_adjacent",
-          "source_count": 18080
+          "source_count": 18876
         },
         {
           "source_table": "mlb_player_game_distribution_daily",
@@ -215,17 +215,17 @@
         {
           "source_table": "mlb_prop_backtests",
           "kind": "sport_or_adjacent",
-          "source_count": 1688
+          "source_count": 1718
         },
         {
           "source_table": "mlb_prop_predictions",
           "kind": "sport_or_adjacent",
-          "source_count": 1688
+          "source_count": 1718
         },
         {
           "source_table": "mlb_reliever_first_batter_command_profiles",
           "kind": "sport_or_adjacent",
-          "source_count": 4113
+          "source_count": 4501
         },
         {
           "source_table": "mlb_rp36_settlements",
@@ -240,7 +240,7 @@
         {
           "source_table": "mlb_series_context_snapshots",
           "kind": "sport_or_adjacent",
-          "source_count": 809
+          "source_count": 953
         },
         {
           "source_table": "mlb_side_backtests",
@@ -255,7 +255,7 @@
         {
           "source_table": "mlb_starter_leash_profiles",
           "kind": "sport_or_adjacent",
-          "source_count": 4005
+          "source_count": 4761
         },
         {
           "source_table": "mlb_starter_third_time_penalty_profiles",
@@ -265,12 +265,12 @@
         {
           "source_table": "mlb_starting_pitcher_game_logs",
           "kind": "sport_or_adjacent",
-          "source_count": 1776
+          "source_count": 1854
         },
         {
           "source_table": "mlb_starting_pitcher_rolling_form",
           "kind": "sport_or_adjacent",
-          "source_count": 4533
+          "source_count": 4761
         },
         {
           "source_table": "mlb_state_formula_backtests",
@@ -285,57 +285,57 @@
         {
           "source_table": "mlb_team_bullpen_shape_daily",
           "kind": "sport_or_adjacent",
-          "source_count": 1754
+          "source_count": 1862
         },
         {
           "source_table": "mlb_team_first_inning_profiles_daily",
           "kind": "sport_or_adjacent",
-          "source_count": 5262
+          "source_count": 5586
         },
         {
           "source_table": "mlb_team_form_carryover_profiles",
           "kind": "sport_or_adjacent",
-          "source_count": 3448
+          "source_count": 3664
         },
         {
           "source_table": "mlb_team_lead_surrender_profiles",
           "kind": "sport_or_adjacent",
-          "source_count": 3508
+          "source_count": 3724
         },
         {
           "source_table": "mlb_team_market_context_daily",
           "kind": "sport_or_adjacent",
-          "source_count": 1754
+          "source_count": 1784
         },
         {
           "source_table": "mlb_team_mistake_shape_daily",
           "kind": "sport_or_adjacent",
-          "source_count": 5262
+          "source_count": 5586
         },
         {
           "source_table": "mlb_team_opponent_quality_daily",
           "kind": "sport_or_adjacent",
-          "source_count": 1754
+          "source_count": 1784
         },
         {
           "source_table": "mlb_team_rolling_form",
           "kind": "sport_or_adjacent",
-          "source_count": 5196
+          "source_count": 5430
         },
         {
           "source_table": "mlb_team_state_snapshots",
           "kind": "sport_or_adjacent",
-          "source_count": 1754
+          "source_count": 1862
         },
         {
           "source_table": "mlb_team_story_priors",
           "kind": "sport_or_adjacent",
-          "source_count": 3092
+          "source_count": 3620
         },
         {
           "source_table": "mlb_team_whiff_persistence_profiles",
           "kind": "sport_or_adjacent",
-          "source_count": 3508
+          "source_count": 3724
         },
         {
           "source_table": "park_factor_snapshots",
@@ -373,233 +373,7 @@
           "source_count": 8
         }
       ],
-      "inserted_rows": 1206213,
-      "ok": true
-    },
-    {
-      "sport": "tennis",
-      "target_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
-      "dry_run": false,
-      "source_table_count": 43,
-      "source_row_count": 484024,
-      "tables": [
-        {
-          "source_table": "tennis_flashscore_match_stats",
-          "kind": "sport_or_adjacent",
-          "source_count": 1210
-        },
-        {
-          "source_table": "tennis_flashscore_player_stat_rows",
-          "kind": "sport_or_adjacent",
-          "source_count": 144510
-        },
-        {
-          "source_table": "tennis_flashscore_recent_links",
-          "kind": "sport_or_adjacent",
-          "source_count": 1892
-        },
-        {
-          "source_table": "tennis_flashscore_stat_rows",
-          "kind": "sport_or_adjacent",
-          "source_count": 72255
-        },
-        {
-          "source_table": "tennis_h2h_snapshots",
-          "kind": "sport_or_adjacent",
-          "source_count": 204
-        },
-        {
-          "source_table": "tennis_kalshi_intramatch_trade_features",
-          "kind": "sport_or_adjacent",
-          "source_count": 175
-        },
-        {
-          "source_table": "tennis_kalshi_market_candles",
-          "kind": "sport_or_adjacent",
-          "source_count": 130968
-        },
-        {
-          "source_table": "tennis_kalshi_match_markets",
-          "kind": "sport_or_adjacent",
-          "source_count": 374
-        },
-        {
-          "source_table": "tennis_kalshi_open_orderbook_snapshots",
-          "kind": "sport_or_adjacent",
-          "source_count": 280
-        },
-        {
-          "source_table": "tennis_livesport_matches",
-          "kind": "sport_or_adjacent",
-          "source_count": 1
-        },
-        {
-          "source_table": "tennis_livesport_replay_games",
-          "kind": "sport_or_adjacent",
-          "source_count": 41
-        },
-        {
-          "source_table": "tennis_livesport_replay_points",
-          "kind": "sport_or_adjacent",
-          "source_count": 213
-        },
-        {
-          "source_table": "tennis_match_results",
-          "kind": "sport_or_adjacent",
-          "source_count": 323
-        },
-        {
-          "source_table": "tennis_match_sources",
-          "kind": "sport_or_adjacent",
-          "source_count": 408
-        },
-        {
-          "source_table": "tennis_match_weather",
-          "kind": "sport_or_adjacent",
-          "source_count": 244
-        },
-        {
-          "source_table": "tennis_model_run_calibration_buckets",
-          "kind": "sport_or_adjacent",
-          "source_count": 23
-        },
-        {
-          "source_table": "tennis_model_run_events",
-          "kind": "sport_or_adjacent",
-          "source_count": 14
-        },
-        {
-          "source_table": "tennis_model_run_files",
-          "kind": "sport_or_adjacent",
-          "source_count": 40
-        },
-        {
-          "source_table": "tennis_model_run_inputs",
-          "kind": "sport_or_adjacent",
-          "source_count": 10
-        },
-        {
-          "source_table": "tennis_model_run_lane_grades",
-          "kind": "sport_or_adjacent",
-          "source_count": 48
-        },
-        {
-          "source_table": "tennis_model_run_metrics",
-          "kind": "sport_or_adjacent",
-          "source_count": 1
-        },
-        {
-          "source_table": "tennis_model_run_outputs",
-          "kind": "sport_or_adjacent",
-          "source_count": 6
-        },
-        {
-          "source_table": "tennis_model_run_settlements",
-          "kind": "sport_or_adjacent",
-          "source_count": 1
-        },
-        {
-          "source_table": "tennis_model_run_training_rows",
-          "kind": "sport_or_adjacent",
-          "source_count": 8
-        },
-        {
-          "source_table": "tennis_model_runs",
-          "kind": "sport_or_adjacent",
-          "source_count": 1
-        },
-        {
-          "source_table": "tennis_model_training_rows",
-          "kind": "sport_or_adjacent",
-          "source_count": 336
-        },
-        {
-          "source_table": "tennis_player_match_context",
-          "kind": "sport_or_adjacent",
-          "source_count": 358
-        },
-        {
-          "source_table": "tennis_prediction_grades",
-          "kind": "sport_or_adjacent",
-          "source_count": 282
-        },
-        {
-          "source_table": "tennis_prediction_market_snapshots",
-          "kind": "sport_or_adjacent",
-          "source_count": 450
-        },
-        {
-          "source_table": "tennis_predictions",
-          "kind": "sport_or_adjacent",
-          "source_count": 531
-        },
-        {
-          "source_table": "tennis_recent_form_metrics",
-          "kind": "sport_or_adjacent",
-          "source_count": 13160
-        },
-        {
-          "source_table": "tennis_schema_migrations",
-          "kind": "sport_or_adjacent",
-          "source_count": 4
-        },
-        {
-          "source_table": "tennis_sofascore_matches",
-          "kind": "sport_or_adjacent",
-          "source_count": 252
-        },
-        {
-          "source_table": "tennis_sofascore_player_page_stats",
-          "kind": "sport_or_adjacent",
-          "source_count": 78
-        },
-        {
-          "source_table": "tennis_sofascore_player_stat_rows",
-          "kind": "sport_or_adjacent",
-          "source_count": 46118
-        },
-        {
-          "source_table": "tennis_sofascore_replay_games",
-          "kind": "sport_or_adjacent",
-          "source_count": 7133
-        },
-        {
-          "source_table": "tennis_sofascore_replay_points",
-          "kind": "sport_or_adjacent",
-          "source_count": 38746
-        },
-        {
-          "source_table": "tennis_sofascore_stat_rows",
-          "kind": "sport_or_adjacent",
-          "source_count": 23059
-        },
-        {
-          "source_table": "tennis_weather_hourly",
-          "kind": "sport_or_adjacent",
-          "source_count": 216
-        },
-        {
-          "source_table": "model_component_runs",
-          "kind": "shared_model",
-          "source_count": 0
-        },
-        {
-          "source_table": "model_run_artifacts",
-          "kind": "shared_model",
-          "source_count": 50
-        },
-        {
-          "source_table": "model_run_lanes",
-          "kind": "shared_model",
-          "source_count": 0
-        },
-        {
-          "source_table": "model_runs",
-          "kind": "shared_model",
-          "source_count": 1
-        }
-      ],
-      "inserted_rows": 484024,
+      "inserted_rows": 1219876,
       "ok": true
     }
   ],

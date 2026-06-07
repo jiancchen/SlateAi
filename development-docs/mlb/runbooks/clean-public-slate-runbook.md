@@ -132,6 +132,8 @@ The audit fails the run if any MLB game is missing core public-page fields:
 - public props file with total bases, singles, walks, and pitcher strikeout props
 - pitcher strikeout props without DraftKings lineage
 - missing feed data for value-board sections: ML, first 5 ML, first 5 O/U, first inning, total bases, and pitcher K O/U
+- Batter Board presentation with HR, xOPS / LA, and Barrel / EV columns intact
+- HR likely and Hot Hitters feature lanes that respect team scoring context: market underdogs, low projected team totals, or weak implied scoring environments must be suppressed from top promotion unless the artifact carries an explicit exception note
 
 The stricter morning source-contract audit also fails the run if any of these are missing:
 
@@ -175,6 +177,7 @@ Current blockers observed on the June 4 local slate:
 - Andrew Morris is missing ESPN split data because the ESPN athlete mapping was not resolved.
 - Legacy batter props are still model-derived without sportsbook/source lineage.
 - `source_fetch_status` reports `mlb_props` as missing while typed DraftKings pitcher K rows exist.
+- The Batter Board promotion audit still needs a hard source-level check for team-total/implied-runs suppression. Until that is automated, browser/audit review must confirm that underdog or weak-scoring bats are not being featured as likely HR or hot-hitter top calls.
 
 Remaining guardrail to add:
 

@@ -135,6 +135,9 @@ Even if the verifier passes, manually inspect these:
 ### HR board
 - Make sure the board is populated and not blank.
 - Sanity-check obvious false carries or stale projected-lineup contamination.
+- Do not promote an HR bat as `HR likely` on hitter contact alone. The promoted lane must have recent xwOBA, barrel or hard-hit/EV, usable launch angle, and a real matchup note.
+- Apply the team-context promotion gate before trusting the featured lane: if the batter's team is a market underdog, projects for a low team total, or has a weak run environment, the bat can stay visible in the table/watchlist but should not be treated as a top promoted HR read without an explicit exception note.
+- Confirm the public Batter Board still exposes the HR, xOPS / LA, and Barrel / EV columns after every publish.
 
 ### Props
 - Make sure the saved prop file exists.
@@ -166,6 +169,11 @@ npm run data:grade:mlb-props -- --date YYYY-MM-DD --model-name mlb-player-props-
   - approach/confidence score should be supported by recent Statcast process, not batting average alone.
   - role pressure should be visible when a hitter is fighting for playing time or only getting partial lineup work.
   - volatile career power can stay on the watchlist, but it should not become a core prop without current damage-contact proof.
+- Before promoting batter props, likely HR bats, or hot hitters, check the team run context:
+  - market underdog or weak implied scoring environment means no featured promotion by default.
+  - low team total / low projected runs means the player can remain a table row or secondary watch, but needs a specific role, lineup-slot, pitch-fit, or plus-price exception to be called out.
+  - favored or neutral team context does not create a bet by itself; it only allows the hitter process signals to be promoted if the Statcast thresholds also clear.
+- Hot hitters lane gate: recent xwOBA must clear `.300`, recent Statcast xOPS must clear `.725`, launch angle or sweet-spot context must be usable, and the team-context gate must not be suppressing the bat.
 - For total bases, separate three lanes:
   - `TB backed`: recent Statcast damage plus opponent-strength support.
   - `Career-backed heat`: current spike fits the player’s career power, but opponent-strength support is still thin.

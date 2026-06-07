@@ -1,18 +1,18 @@
 {
   "after_counts": {
-    "market_contracts": 891,
-    "market_price_ticks": 1133,
-    "market_snapshots": 2851,
-    "prop_market_snapshots": 2625,
-    "source_snapshots": 2559,
+    "market_contracts": 895,
+    "market_price_ticks": 1216,
+    "market_snapshots": 2934,
+    "prop_market_snapshots": 2651,
+    "source_snapshots": 2631,
     "unresolved_entities": 10
   },
   "before_counts": {
-    "market_contracts": 891,
-    "market_price_ticks": 1133,
-    "market_snapshots": 2851,
-    "prop_market_snapshots": 2625,
-    "source_snapshots": 2559,
+    "market_contracts": 895,
+    "market_price_ticks": 1216,
+    "market_snapshots": 2934,
+    "prop_market_snapshots": 2651,
+    "source_snapshots": 2631,
     "unresolved_entities": 10
   },
   "by_file": {
@@ -31,7 +31,7 @@
   "date": "2026-06-05",
   "direct_market_snapshots_for_date": 30,
   "dry_run": false,
-  "generated_at": "2026-06-05T21:15:09.631386+00:00",
+  "generated_at": "2026-06-06T14:22:40.946235+00:00",
   "inserted": {
     "market_contracts": 83,
     "market_price_ticks": 83,
@@ -46,7 +46,7 @@
   "parsed_snapshots": 83,
   "parsed_ticks": 83,
   "parser_module": "pipeline/sources/mlb/normalization/market_raw_context.py",
-  "prop_market_snapshots_for_date": 98,
+  "prop_market_snapshots_for_date": 124,
   "props_completeness": "complete",
   "props_status": "success",
   "row_count_delta": {

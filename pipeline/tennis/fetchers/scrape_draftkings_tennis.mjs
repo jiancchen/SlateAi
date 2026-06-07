@@ -98,9 +98,22 @@ const slug = (value) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '')
 
+const leagueText = (league) => `${league.eventGroupName || ''} ${league.nameIdentifier || ''}`.toLowerCase()
+
 const isDiscoverableSupplementLeague = (league) => {
+  const text = leagueText(league)
+  return (
+    text.includes('french open') ||
+    text.includes('roland garros') ||
+    text.includes('wta') ||
+    text.includes('women') ||
+    text.includes('challenger')
+  )
+}
+
+const tourSlugForLeague = (league) => {
   const text = `${league.eventGroupName || ''} ${league.nameIdentifier || ''}`.toLowerCase()
-  return text.includes('challenger') && !text.includes('wta') && !text.includes('women')
+  return text.includes('wta') || text.includes('women') ? 'wta' : 'atp'
 }
 
 const americanOdds = (selection) => {
@@ -279,7 +292,7 @@ const main = async () => {
         draftKingsMatch: event.name,
         href: `https://sportsbook.draftkings.com/leagues/tennis/${league.urlName}?event=${event.id}`,
         eventId: event.id,
-        syntheticSlateId: slateMatch?.id || `dk-atp-${slug(league.eventGroupName)}-${slug(names[0])}-vs-${slug(names[1])}-${options.date}`,
+        syntheticSlateId: slateMatch?.id || `dk-${tourSlugForLeague(league)}-${slug(league.eventGroupName)}-${slug(names[0])}-vs-${slug(names[1])}-${options.date}`,
         leagueId: league.eventGroupId,
         leagueName: league.eventGroupName,
         startEventDate: event.startEventDate,

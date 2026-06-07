@@ -169,6 +169,7 @@ const isHrLikely = (row: AnyRecord) => {
   const hasGoodContact = (exitVelocity != null && exitVelocity >= 89) || (hardHitPct != null && hardHitPct >= 40)
 
   return (
+    row.batterPromotionSuppressed !== true &&
     bbeSample != null &&
     bbeSample >= 10 &&
     xwoba != null &&
@@ -186,6 +187,7 @@ const isHotHitter = (row: AnyRecord) => {
   const xops = numericValue(row.recentXops)
   const bbeSample = numericValue(row.recentBbeSample)
   return (
+    row.batterPromotionSuppressed !== true &&
     bbeSample != null &&
     bbeSample >= 10 &&
     xwoba != null &&
@@ -201,10 +203,16 @@ const renderFeatureCard = (
   mode: 'hr' | 'hot',
   openGame: (gameId: string) => void
 ) => (
-  <button key={`${mode}-${row.id}`} type="button" className="batter-feature-card" onClick={() => openGame(row.gameId)}>
+  <button
+    key={`${mode}-${row.id}`}
+    type="button"
+    className={`batter-feature-card ${row.isLineupConfirmed === false ? 'lineup-risk' : ''}`}
+    onClick={() => openGame(row.gameId)}
+  >
     <span className="batter-feature-card-top">
       <strong>{row.playerName}</strong>
       <small>{row.teamName} · slot {row.slot ?? 'N/A'} · vs {row.opposingStarterName}</small>
+      {row.lineupWarning ? <small className="batter-lineup-risk">{row.lineupWarning}</small> : null}
     </span>
     <span className="batter-feature-metrics">
       <span>
@@ -225,8 +233,17 @@ const renderFeatureCard = (
       </span>
     </span>
     <small className="batter-feature-note">
-      {mode === 'hr' ? [row.pitcherHrNote, row.hrMatchupNote].filter(Boolean).join(' | ') : row.hotHitterReason}
+      {mode === 'hr'
+        ? [row.pitcherHrNote, row.hrMatchupNote, row.batterPromotionNote].filter(Boolean).join(' | ')
+        : [row.hotHitterReason, row.batterPromotionNote].filter(Boolean).join(' | ')}
     </small>
+    {row.contextWarnings?.length ? (
+      <span className="batter-context-warnings">
+        {row.contextWarnings.map((warning: string) => (
+          <small key={warning}>{warning}</small>
+        ))}
+      </span>
+    ) : null}
   </button>
 )
 
@@ -396,7 +413,7 @@ export function BatterView({ activeDayId, batterRows, formatNumber, openGame, sl
         <article className="batter-feature-lane">
           <div className="batter-section-title">
             <span>HR Likely</span>
-            <small>Good xwOBA, barrel, EV, and matchup note</small>
+            <small>Good xwOBA, barrel, EV, matchup note, and team context</small>
           </div>
           <div className="batter-feature-grid">
             {hrLikelyCandidates.slice(0, 6).length ? (
@@ -409,7 +426,7 @@ export function BatterView({ activeDayId, batterRows, formatNumber, openGame, sl
         <article className="batter-feature-lane">
           <div className="batter-section-title">
             <span>Hot Hitters</span>
-            <small>Recent xwOBA over .300, xOPS over .725, optimal launch</small>
+            <small>Recent xwOBA over .300, xOPS over .725, optimal launch, and team context</small>
           </div>
           <div className="batter-feature-grid">
             {hotHitterCandidates.slice(0, 6).length ? (
@@ -429,14 +446,23 @@ export function BatterView({ activeDayId, batterRows, formatNumber, openGame, sl
         <div className="batter-under-grid">
           {underTargets.length ? (
             underTargets.map((row) => (
-              <button key={`under-${row.id}`} type="button" className="batter-under-card" onClick={() => openGame(row.gameId)}>
+              <button
+                key={`under-${row.id}`}
+                type="button"
+                className={`batter-under-card ${row.isLineupConfirmed === false ? 'lineup-risk' : ''}`}
+                onClick={() => openGame(row.gameId)}
+              >
                 <span>
                   <strong>{row.playerName}</strong>
                   <small>{row.teamName} · slot {row.slot ?? 'N/A'} · vs {row.opposingStarterName}</small>
+                  {row.lineupWarning ? <small className="batter-lineup-risk">{row.lineupWarning}</small> : null}
                 </span>
                 <span>
                   <strong>{formatNumber(row.underTargetScore, 1)}</strong>
                   <small>{row.underTargetReason}</small>
+                  {row.contextWarnings?.length ? (
+                    <small className="batter-context-warning-inline">{row.contextWarnings.join(' | ')}</small>
+                  ) : null}
                 </span>
               </button>
             ))
@@ -502,11 +528,19 @@ export function BatterView({ activeDayId, batterRows, formatNumber, openGame, sl
             </thead>
             <tbody>
               {sortedRows.map((row) => (
-                <tr key={row.id}>
+                <tr key={row.id} className={row.isLineupConfirmed === false ? 'lineup-risk' : ''}>
                   <td>
                     <div className="batter-name-cell">
                       <strong>{row.playerName}</strong>
                       <small>{[row.position, row.bats ? `${row.bats} bat` : null, row.primaryTag].filter(Boolean).join(' · ')}</small>
+                      {row.lineupWarning ? <small className="batter-lineup-risk">{row.lineupWarning}</small> : null}
+                      {row.contextWarnings?.length ? (
+                        <span className="batter-context-warnings compact">
+                          {row.contextWarnings.map((warning: string) => (
+                            <small key={warning}>{warning}</small>
+                          ))}
+                        </span>
+                      ) : null}
                     </div>
                   </td>
                   <td>

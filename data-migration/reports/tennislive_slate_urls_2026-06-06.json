@@ -1,0 +1,200 @@
+{
+  "date": "2026-06-06",
+  "source": "TennisLive tournament pages matched to DraftKings + ESPN non-qualifying slate",
+  "capturedAt": "2026-06-06T03:46:46Z",
+  "pageReceipts": [
+    {
+      "leagueName": "French Open (W)",
+      "url": "https://www.tennislive.net/wta-women/french-open-paris-2026/",
+      "candidateLinks": 231
+    },
+    {
+      "leagueName": "WTA - Birmingham",
+      "url": "https://www.tennislive.net/wta-women/lexus-birmingham-open-birmingham-2026/",
+      "candidateLinks": 2
+    },
+    {
+      "leagueName": "WTA - Makarska",
+      "url": "https://www.tennislive.net/wta-women/makarska-open-makarska-2026/",
+      "candidateLinks": 2
+    },
+    {
+      "leagueName": "WTA Foggia",
+      "url": "https://www.tennislive.net/wta-women/open-delle-puglie-foggia-2026/",
+      "candidateLinks": 2
+    },
+    {
+      "leagueName": "Challenger - Heilbronn",
+      "url": "https://www.tennislive.net/atp-men/bad-rappenau-challenger-2026/",
+      "candidateLinks": 2
+    },
+    {
+      "leagueName": "Challenger - Perugia",
+      "url": "https://www.tennislive.net/atp-men/perugia-challenger-2026/",
+      "candidateLinks": 2
+    },
+    {
+      "leagueName": "Challenger - Prostejov",
+      "url": "https://www.tennislive.net/atp-men/prostejov-challenger-2026/",
+      "candidateLinks": 2
+    },
+    {
+      "leagueName": "Challenger - Tyler",
+      "url": "https://www.tennislive.net/atp-men/tyler-challenger-2026/",
+      "candidateLinks": 2
+    },
+    {
+      "leagueName": "Challenger - Birmingham",
+      "url": "https://www.tennislive.net/atp-men/birmingham-challenger-2026/",
+      "candidateLinks": 2
+    },
+    {
+      "leagueName": "Challenger Centurion-2",
+      "url": "https://www.tennislive.net/atp-men/centurion-2-challenger-2026/",
+      "candidateLinks": 2
+    }
+  ],
+  "targetCount": 17,
+  "matchCount": 16,
+  "playerUrlCount": 34,
+  "matches": [
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/nikola-bartunkova-VS-ashlyn-krueger/lexus-birmingham-open-birmingham-2026/",
+      "leagueName": "WTA - Birmingham",
+      "match": "Nikola Bartunkova vs Ashlyn Krueger",
+      "tournamentPage": "https://www.tennislive.net/wta-women/lexus-birmingham-open-birmingham-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/alexandra-eala-VS-rebeka-masarova/lexus-birmingham-open-birmingham-2026/",
+      "leagueName": "WTA - Birmingham",
+      "match": "Alexandra Eala vs Rebeka Masarova",
+      "tournamentPage": "https://www.tennislive.net/wta-women/lexus-birmingham-open-birmingham-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/elina-avanesyan-VS-darja-semenistaja/makarska-open-makarska-2026/",
+      "leagueName": "WTA - Makarska",
+      "match": "Elina Avanesyan vs Darja Semenistaja",
+      "tournamentPage": "https://www.tennislive.net/wta-women/makarska-open-makarska-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/sara-sorribes-tormo-VS-maria-timofeeva/makarska-open-makarska-2026/",
+      "leagueName": "WTA - Makarska",
+      "match": "Sara Sorribes Tormo vs Maria Timofeeva",
+      "tournamentPage": "https://www.tennislive.net/wta-women/makarska-open-makarska-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/timofey-skatov-VS-henrique-rocha/perugia-challenger-2026/",
+      "leagueName": "Challenger - Perugia",
+      "match": "Timofey Skatov vs Henrique Rocha",
+      "tournamentPage": "https://www.tennislive.net/atp-men/perugia-challenger-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/daniel-merida-aguilar-VS-andrea-pellegrino/perugia-challenger-2026/",
+      "leagueName": "Challenger - Perugia",
+      "match": "Daniel Merida Aguilar vs Andrea Pellegrino",
+      "tournamentPage": "https://www.tennislive.net/atp-men/perugia-challenger-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/hynek-barton-VS-alex-molcan/prostejov-challenger-2026/",
+      "leagueName": "Challenger - Prostejov",
+      "match": "Hynek Barton vs Alex Molcan",
+      "tournamentPage": "https://www.tennislive.net/atp-men/prostejov-challenger-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/henri-squire-VS-emilio-nava/bad-rappenau-challenger-2026/",
+      "leagueName": "Challenger - Heilbronn",
+      "match": "Henri Squire vs Emilio Nava",
+      "tournamentPage": "https://www.tennislive.net/atp-men/bad-rappenau-challenger-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/diego-dedura-palomero-VS-luka-mikrut/bad-rappenau-challenger-2026/",
+      "leagueName": "Challenger - Heilbronn",
+      "match": "Diego Dedura-Palomero vs Luka Mikrut",
+      "tournamentPage": "https://www.tennislive.net/atp-men/bad-rappenau-challenger-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/adam-walton-VS-liam-draxl/tyler-challenger-2026/",
+      "leagueName": "Challenger - Tyler",
+      "match": "Adam Walton vs Liam Draxl",
+      "tournamentPage": "https://www.tennislive.net/atp-men/tyler-challenger-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/arthur-fery-VS-bu-yunchaokete/birmingham-challenger-2026/",
+      "leagueName": "Challenger - Birmingham",
+      "match": "Arthur Fery vs Yunchaokete Bu",
+      "tournamentPage": "https://www.tennislive.net/atp-men/birmingham-challenger-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/otto-virtanen-VS-kamil-majchrzak/birmingham-challenger-2026/",
+      "leagueName": "Challenger - Birmingham",
+      "match": "Otto Virtanen vs Kamil Majchrzak",
+      "tournamentPage": "https://www.tennislive.net/atp-men/birmingham-challenger-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/khololwam-montsi-VS-alexander-donski/centurion-2-challenger-2026/",
+      "leagueName": "Challenger Centurion-2",
+      "match": "Khololwam Montsi vs Alexander Donski",
+      "tournamentPage": "https://www.tennislive.net/atp-men/centurion-2-challenger-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/atp/match/harold-mayot-VS-philip-henning/centurion-2-challenger-2026/",
+      "leagueName": "Challenger Centurion-2",
+      "match": "Harold Mayot vs Philip Henning",
+      "tournamentPage": "https://www.tennislive.net/atp-men/centurion-2-challenger-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/tyra-caterina-grant-VS-darya-astakhova/open-delle-puglie-foggia-2026/",
+      "leagueName": "WTA Foggia",
+      "match": "Tyra Caterina Grant vs Darya Astakhova",
+      "tournamentPage": "https://www.tennislive.net/wta-women/open-delle-puglie-foggia-2026/"
+    },
+    {
+      "source_match_url": "https://www.tennislive.net/wta/match/lucia-bronzetti-VS-leyre-romero-gormaz/open-delle-puglie-foggia-2026/",
+      "leagueName": "WTA Foggia",
+      "match": "Lucia Bronzetti vs Leyre Romero Gormaz",
+      "tournamentPage": "https://www.tennislive.net/wta-women/open-delle-puglie-foggia-2026/"
+    }
+  ],
+  "playerUrls": [
+    "https://www.tennislive.net/atp/adam-walton/",
+    "https://www.tennislive.net/atp/alex-molcan/",
+    "https://www.tennislive.net/atp/alexander-donski/",
+    "https://www.tennislive.net/atp/andrea-pellegrino/",
+    "https://www.tennislive.net/atp/arthur-fery/",
+    "https://www.tennislive.net/atp/bu-yunchaokete/",
+    "https://www.tennislive.net/atp/daniel-merida-aguilar/",
+    "https://www.tennislive.net/atp/diego-dedura-palomero/",
+    "https://www.tennislive.net/atp/emilio-nava/",
+    "https://www.tennislive.net/atp/harold-mayot/",
+    "https://www.tennislive.net/atp/henri-squire/",
+    "https://www.tennislive.net/atp/henrique-rocha/",
+    "https://www.tennislive.net/atp/hynek-barton/",
+    "https://www.tennislive.net/atp/kamil-majchrzak/",
+    "https://www.tennislive.net/atp/khololwam-montsi/",
+    "https://www.tennislive.net/atp/liam-draxl/",
+    "https://www.tennislive.net/atp/luka-mikrut/",
+    "https://www.tennislive.net/atp/otto-virtanen/",
+    "https://www.tennislive.net/atp/philip-henning/",
+    "https://www.tennislive.net/atp/timofey-skatov/",
+    "https://www.tennislive.net/wta/alexandra-eala/",
+    "https://www.tennislive.net/wta/ashlyn-krueger/",
+    "https://www.tennislive.net/wta/darja-semenistaja/",
+    "https://www.tennislive.net/wta/darya-astakhova/",
+    "https://www.tennislive.net/wta/elina-avanesyan/",
+    "https://www.tennislive.net/wta/leyre-romero-gormaz/",
+    "https://www.tennislive.net/wta/lucia-bronzetti/",
+    "https://www.tennislive.net/wta/maja-chwalinska/",
+    "https://www.tennislive.net/wta/maria-timofeeva/",
+    "https://www.tennislive.net/wta/mirra-andreeva/",
+    "https://www.tennislive.net/wta/nikola-bartunkova/",
+    "https://www.tennislive.net/wta/rebeka-masarova/",
+    "https://www.tennislive.net/wta/sara-sorribes-tormo/",
+    "https://www.tennislive.net/wta/tyra-caterina-grant/"
+  ],
+  "missingMatchUrls": [
+    {
+      "leagueName": "French Open (W)",
+      "match": "Maja Chwalinska vs Mirra Andreeva"
+    }
+  ]
+}

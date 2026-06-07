@@ -2,18 +2,18 @@ export const mlbPropCalibration = {
   "overallByType": {
     "rbi": {
       "hits": 84,
-      "total": 278,
-      "hitRate": 30.2
+      "total": 279,
+      "hitRate": 30.1
     },
     "totalBases": {
       "hits": 144,
-      "total": 390,
-      "hitRate": 36.9
+      "total": 395,
+      "hitRate": 36.5
     },
     "singles": {
       "hits": 111,
-      "total": 251,
-      "hitRate": 44.2
+      "total": 258,
+      "hitRate": 43
     },
     "hits": {
       "hits": 47,
@@ -27,8 +27,8 @@ export const mlbPropCalibration = {
     },
     "pitcherStrikeouts": {
       "hits": 32,
-      "total": 68,
-      "hitRate": 47.1
+      "total": 90,
+      "hitRate": 35.6
     }
   },
   "byTeamAndType": {
@@ -64,8 +64,8 @@ export const mlbPropCalibration = {
     },
     "rbi::Tigers": {
       "hits": 2,
-      "total": 11,
-      "hitRate": 18.2
+      "total": 12,
+      "hitRate": 16.7
     },
     "rbi::Rays": {
       "hits": 7,
@@ -74,8 +74,8 @@ export const mlbPropCalibration = {
     },
     "singles::Nationals": {
       "hits": 7,
-      "total": 15,
-      "hitRate": 46.7
+      "total": 16,
+      "hitRate": 43.8
     },
     "rbi::White Sox": {
       "hits": 5,
@@ -119,13 +119,13 @@ export const mlbPropCalibration = {
     },
     "totalBases::Royals": {
       "hits": 0,
-      "total": 5,
+      "total": 6,
       "hitRate": 0
     },
     "totalBases::Rays": {
       "hits": 11,
-      "total": 21,
-      "hitRate": 52.4
+      "total": 22,
+      "hitRate": 50
     },
     "totalBases::White Sox": {
       "hits": 8,
@@ -139,8 +139,8 @@ export const mlbPropCalibration = {
     },
     "singles::Reds": {
       "hits": 3,
-      "total": 13,
-      "hitRate": 23.1
+      "total": 14,
+      "hitRate": 21.4
     },
     "singles::Mariners": {
       "hits": 1,
@@ -279,8 +279,8 @@ export const mlbPropCalibration = {
     },
     "singles::White Sox": {
       "hits": 2,
-      "total": 6,
-      "hitRate": 33.3
+      "total": 7,
+      "hitRate": 28.6
     },
     "walks::Cardinals": {
       "hits": 2,
@@ -294,8 +294,8 @@ export const mlbPropCalibration = {
     },
     "singles::Rangers": {
       "hits": 4,
-      "total": 8,
-      "hitRate": 50
+      "total": 9,
+      "hitRate": 44.4
     },
     "hits::Twins": {
       "hits": 3,
@@ -329,8 +329,8 @@ export const mlbPropCalibration = {
     },
     "totalBases::Mets": {
       "hits": 9,
-      "total": 23,
-      "hitRate": 39.1
+      "total": 24,
+      "hitRate": 37.5
     },
     "singles::Mets": {
       "hits": 17,
@@ -424,8 +424,8 @@ export const mlbPropCalibration = {
     },
     "singles::Giants": {
       "hits": 8,
-      "total": 16,
-      "hitRate": 50
+      "total": 17,
+      "hitRate": 47.1
     },
     "rbi::Guardians": {
       "hits": 5,
@@ -539,8 +539,8 @@ export const mlbPropCalibration = {
     },
     "totalBases::Dodgers": {
       "hits": 12,
-      "total": 22,
-      "hitRate": 54.5
+      "total": 24,
+      "hitRate": 50
     },
     "rbi::Brewers": {
       "hits": 3,
@@ -659,13 +659,23 @@ export const mlbPropCalibration = {
     },
     "singles::Rockies": {
       "hits": 4,
-      "total": 6,
-      "hitRate": 66.7
+      "total": 7,
+      "hitRate": 57.1
     },
     "singles::Angels": {
       "hits": 2,
+      "total": 5,
+      "hitRate": 40
+    },
+    "pitcherStrikeouts::Yankees": {
+      "hits": 2,
       "total": 4,
       "hitRate": 50
+    },
+    "pitcherStrikeouts::Mariners": {
+      "hits": 1,
+      "total": 5,
+      "hitRate": 20
     },
     "pitcherStrikeouts::Orioles": {
       "hits": 1,
@@ -674,18 +684,43 @@ export const mlbPropCalibration = {
     },
     "pitcherStrikeouts::Angels": {
       "hits": 2,
+      "total": 5,
+      "hitRate": 40
+    },
+    "pitcherStrikeouts::Padres": {
+      "hits": 1,
       "total": 4,
-      "hitRate": 50
+      "hitRate": 25
     },
     "pitcherStrikeouts::Tigers": {
       "hits": 3,
-      "total": 5,
-      "hitRate": 60
+      "total": 6,
+      "hitRate": 50
     },
     "pitcherStrikeouts::Dodgers": {
       "hits": 2,
+      "total": 5,
+      "hitRate": 40
+    },
+    "pitcherStrikeouts::Rangers": {
+      "hits": 1,
+      "total": 4,
+      "hitRate": 25
+    },
+    "pitcherStrikeouts::Blue Jays": {
+      "hits": 2,
       "total": 4,
       "hitRate": 50
+    },
+    "pitcherStrikeouts::Cardinals": {
+      "hits": 1,
+      "total": 4,
+      "hitRate": 25
+    },
+    "pitcherStrikeouts::Brewers": {
+      "hits": 0,
+      "total": 4,
+      "hitRate": 0
     }
   },
   "byReasonTagAndType": {
@@ -696,8 +731,8 @@ export const mlbPropCalibration = {
     },
     "rbi::recent form up": {
       "hits": 64,
-      "total": 218,
-      "hitRate": 29.4
+      "total": 219,
+      "hitRate": 29.2
     },
     "rbi::split fit live": {
       "hits": 67,
@@ -706,13 +741,13 @@ export const mlbPropCalibration = {
     },
     "rbi::slot 5 carry": {
       "hits": 7,
-      "total": 28,
-      "hitRate": 25
+      "total": 29,
+      "hitRate": 24.1
     },
     "totalBases::slot 3 carry": {
       "hits": 23,
-      "total": 72,
-      "hitRate": 31.9
+      "total": 73,
+      "hitRate": 31.5
     },
     "totalBases::recent form up": {
       "hits": 113,
@@ -736,13 +771,13 @@ export const mlbPropCalibration = {
     },
     "totalBases::slot 1 carry": {
       "hits": 29,
-      "total": 64,
-      "hitRate": 45.3
+      "total": 65,
+      "hitRate": 44.6
     },
     "rbi::run-production slot": {
       "hits": 25,
-      "total": 78,
-      "hitRate": 32.1
+      "total": 79,
+      "hitRate": 31.6
     },
     "rbi::slot 6 carry": {
       "hits": 11,
@@ -761,18 +796,18 @@ export const mlbPropCalibration = {
     },
     "singles::slot 2 carry": {
       "hits": 28,
-      "total": 50,
-      "hitRate": 56
+      "total": 53,
+      "hitRate": 52.8
     },
     "singles::recent form up": {
       "hits": 92,
-      "total": 215,
-      "hitRate": 42.8
+      "total": 222,
+      "hitRate": 41.4
     },
     "singles::split fit live": {
       "hits": 84,
-      "total": 193,
-      "hitRate": 43.5
+      "total": 198,
+      "hitRate": 42.4
     },
     "totalBases::power lane": {
       "hits": 29,
@@ -781,8 +816,8 @@ export const mlbPropCalibration = {
     },
     "singles::slot 5 carry": {
       "hits": 10,
-      "total": 25,
-      "hitRate": 40
+      "total": 26,
+      "hitRate": 38.5
     },
     "totalBases::slot 4 carry": {
       "hits": 20,
@@ -791,18 +826,18 @@ export const mlbPropCalibration = {
     },
     "singles::slot 3 carry": {
       "hits": 15,
-      "total": 37,
-      "hitRate": 40.5
+      "total": 38,
+      "hitRate": 39.5
     },
     "totalBases::slot 2 carry": {
       "hits": 34,
-      "total": 83,
-      "hitRate": 41
+      "total": 86,
+      "hitRate": 39.5
     },
     "singles::clean traffic lane": {
       "hits": 31,
-      "total": 63,
-      "hitRate": 49.2
+      "total": 65,
+      "hitRate": 47.7
     },
     "singles::slot 6 carry": {
       "hits": 12,
@@ -846,8 +881,8 @@ export const mlbPropCalibration = {
     },
     "singles::slot 1 carry": {
       "hits": 18,
-      "total": 43,
-      "hitRate": 41.9
+      "total": 44,
+      "hitRate": 40.9
     },
     "hits::clean traffic lane": {
       "hits": 12,
@@ -956,8 +991,8 @@ export const mlbPropCalibration = {
     },
     "singles::slot 7 carry": {
       "hits": 7,
-      "total": 15,
-      "hitRate": 46.7
+      "total": 16,
+      "hitRate": 43.8
     },
     "walks::slot 8 carry": {
       "hits": 3,
@@ -984,10 +1019,25 @@ export const mlbPropCalibration = {
       "total": 8,
       "hitRate": 37.5
     },
+    "pitcherStrikeouts::4.7 ip lane": {
+      "hits": 1,
+      "total": 22,
+      "hitRate": 4.5
+    },
+    "pitcherStrikeouts::5.2 ip lane": {
+      "hits": 1,
+      "total": 6,
+      "hitRate": 16.7
+    },
     "pitcherStrikeouts::5.5 ip lane": {
       "hits": 6,
-      "total": 9,
-      "hitRate": 66.7
+      "total": 10,
+      "hitRate": 60
+    },
+    "pitcherStrikeouts::8.8 k/9 base": {
+      "hits": 3,
+      "total": 6,
+      "hitRate": 50
     },
     "totalBases::soft heat only: xslg + hard-hit support is still thin": {
       "hits": 8,
@@ -996,95 +1046,95 @@ export const mlbPropCalibration = {
     },
     "totalBases::rolling statcast power is live": {
       "hits": 16,
-      "total": 39,
-      "hitRate": 41
+      "total": 44,
+      "hitRate": 36.4
     },
     "singles::sweet-spot contact is live": {
       "hits": 9,
-      "total": 24,
-      "hitRate": 37.5
+      "total": 28,
+      "hitRate": 32.1
     },
     "totalBases::repeatable career power": {
       "hits": 2,
-      "total": 6,
-      "hitRate": 33.3
+      "total": 10,
+      "hitRate": 20
     }
   },
   "byScriptTagAndType": {
     "totalBases::posted-lineup": {
       "hits": 56,
-      "total": 159,
-      "hitRate": 35.2
+      "total": 164,
+      "hitRate": 34.1
     },
     "totalBases::top-third-pressure": {
       "hits": 54,
-      "total": 154,
-      "hitRate": 35.1
+      "total": 159,
+      "hitRate": 34
     },
     "totalBases::middle-order-traffic": {
       "hits": 32,
-      "total": 98,
-      "hitRate": 32.7
+      "total": 101,
+      "hitRate": 31.7
     },
     "totalBases::deep-lineup": {
       "hits": 25,
-      "total": 65,
-      "hitRate": 38.5
+      "total": 67,
+      "hitRate": 37.3
     },
     "totalBases::run-ceiling-live": {
       "hits": 34,
-      "total": 84,
-      "hitRate": 40.5
+      "total": 87,
+      "hitRate": 39.1
     },
     "totalBases::traffic-lane-live": {
       "hits": 44,
-      "total": 117,
-      "hitRate": 37.6
+      "total": 120,
+      "hitRate": 36.7
     },
     "totalBases::clean-conversion-lane": {
       "hits": 44,
-      "total": 117,
-      "hitRate": 37.6
+      "total": 120,
+      "hitRate": 36.7
     },
     "totalBases::bullpen-carry-bat": {
       "hits": 36,
-      "total": 103,
-      "hitRate": 35
+      "total": 107,
+      "hitRate": 33.6
     },
     "totalBases::carry-bat-live": {
       "hits": 55,
-      "total": 161,
-      "hitRate": 34.2
+      "total": 166,
+      "hitRate": 33.1
     },
     "totalBases::power-lane": {
       "hits": 37,
-      "total": 107,
-      "hitRate": 34.6
+      "total": 111,
+      "hitRate": 33.3
     },
     "singles::posted-lineup": {
       "hits": 17,
-      "total": 54,
-      "hitRate": 31.5
+      "total": 61,
+      "hitRate": 27.9
     },
     "singles::top-third-pressure": {
       "hits": 15,
-      "total": 51,
-      "hitRate": 29.4
+      "total": 57,
+      "hitRate": 26.3
     },
     "singles::bullpen-carry-bat": {
       "hits": 8,
-      "total": 21,
-      "hitRate": 38.1
+      "total": 26,
+      "hitRate": 30.8
     },
     "singles::carry-bat-live": {
       "hits": 18,
-      "total": 55,
-      "hitRate": 32.7
+      "total": 62,
+      "hitRate": 29
     },
     "singles::contact-lane": {
       "hits": 12,
-      "total": 37,
-      "hitRate": 32.4
+      "total": 41,
+      "hitRate": 29.3
     },
     "walks::posted-lineup": {
       "hits": 4,
@@ -1113,98 +1163,103 @@ export const mlbPropCalibration = {
     },
     "singles::traffic-lane-live": {
       "hits": 9,
-      "total": 33,
-      "hitRate": 27.3
+      "total": 39,
+      "hitRate": 23.1
     },
     "singles::clean-conversion-lane": {
       "hits": 9,
-      "total": 33,
-      "hitRate": 27.3
+      "total": 38,
+      "hitRate": 23.7
     },
     "singles::middle-order-traffic": {
       "hits": 8,
-      "total": 33,
-      "hitRate": 24.2
+      "total": 38,
+      "hitRate": 21.1
     },
     "singles::deep-lineup": {
       "hits": 6,
-      "total": 16,
-      "hitRate": 37.5
+      "total": 20,
+      "hitRate": 30
     },
     "singles::run-ceiling-live": {
       "hits": 7,
-      "total": 23,
-      "hitRate": 30.4
+      "total": 26,
+      "hitRate": 26.9
     },
     "rbi::posted-lineup": {
       "hits": 0,
-      "total": 10,
+      "total": 11,
       "hitRate": 0
     },
     "rbi::top-third-pressure": {
       "hits": 0,
-      "total": 10,
+      "total": 11,
       "hitRate": 0
     },
     "rbi::run-ceiling-live": {
       "hits": 0,
-      "total": 6,
+      "total": 7,
       "hitRate": 0
     },
     "rbi::traffic-lane-live": {
       "hits": 0,
-      "total": 8,
+      "total": 9,
       "hitRate": 0
     },
     "rbi::clean-conversion-lane": {
       "hits": 0,
-      "total": 8,
+      "total": 9,
       "hitRate": 0
     },
     "rbi::carry-bat-live": {
       "hits": 0,
-      "total": 9,
+      "total": 10,
       "hitRate": 0
     },
     "rbi::run-production-slot": {
       "hits": 0,
-      "total": 10,
+      "total": 11,
       "hitRate": 0
     },
     "rbi::middle-order-traffic": {
       "hits": 0,
-      "total": 7,
+      "total": 8,
       "hitRate": 0
     },
     "rbi::bullpen-carry-bat": {
       "hits": 0,
-      "total": 6,
+      "total": 7,
       "hitRate": 0
     },
     "pitcherStrikeouts::posted-lineup": {
       "hits": 31,
-      "total": 66,
-      "hitRate": 47
+      "total": 88,
+      "hitRate": 35.2
     },
     "pitcherStrikeouts::starter-k-lane": {
       "hits": 32,
-      "total": 68,
-      "hitRate": 47.1
+      "total": 90,
+      "hitRate": 35.6
     },
     "pitcherStrikeouts::opponent-whiff-lane": {
       "hits": 15,
-      "total": 31,
-      "hitRate": 48.4
+      "total": 50,
+      "hitRate": 30
     },
     "pitcherStrikeouts::starter-volume-live": {
       "hits": 30,
-      "total": 63,
-      "hitRate": 47.6
+      "total": 69,
+      "hitRate": 43.5
+    },
+    "pitcherStrikeouts::short-leash-risk": {
+      "hits": 2,
+      "total": 21,
+      "hitRate": 9.5
     },
     "pitcherStrikeouts::contact-resistance": {
       "hits": 17,
-      "total": 37,
-      "hitRate": 45.9
+      "total": 40,
+      "hitRate": 42.5
     },
     "totalBases::soft-heat": {
       "hits": 11,
@@ -1213,18 +1268,18 @@ export const mlbPropCalibration = {
     },
     "totalBases::statcast-contact-up": {
       "hits": 11,
-      "total": 25,
-      "hitRate": 44
+      "total": 30,
+      "hitRate": 36.7
     },
     "totalBases::statcast-hr-carry": {
       "hits": 9,
-      "total": 23,
-      "hitRate": 39.1
+      "total": 27,
+      "hitRate": 33.3
     },
     "totalBases::statcast-power-up": {
       "hits": 16,
-      "total": 39,
-      "hitRate": 41
+      "total": 44,
+      "hitRate": 36.4
     },
     "totalBases::statcast-fade": {
       "hits": 2,
@@ -1233,38 +1288,43 @@ export const mlbPropCalibration = {
     },
     "totalBases::tb-backed": {
       "hits": 4,
-      "total": 11,
-      "hitRate": 36.4
+      "total": 13,
+      "hitRate": 30.8
     },
     "singles::statcast-power-up": {
       "hits": 9,
-      "total": 23,
-      "hitRate": 39.1
+      "total": 29,
+      "hitRate": 31
     },
     "singles::statcast-contact-up": {
       "hits": 9,
-      "total": 24,
-      "hitRate": 37.5
+      "total": 28,
+      "hitRate": 32.1
     },
     "singles::statcast-hr-carry": {
       "hits": 4,
-      "total": 12,
-      "hitRate": 33.3
+      "total": 17,
+      "hitRate": 23.5
     },
     "totalBases::career-power-backed": {
       "hits": 3,
-      "total": 8,
-      "hitRate": 37.5
+      "total": 12,
+      "hitRate": 25
     },
     "totalBases::process-improving": {
       "hits": 5,
-      "total": 10,
-      "hitRate": 50
+      "total": 15,
+      "hitRate": 33.3
+    },
+    "totalBases::career-backed-heat": {
+      "hits": 2,
+      "total": 6,
+      "hitRate": 33.3
     },
     "singles::process-improving": {
       "hits": 5,
-      "total": 14,
-      "hitRate": 35.7
+      "total": 20,
+      "hitRate": 25
     }
   },
   "byStoryTagAndType": {

@@ -4,18 +4,30 @@ import { pathToFileURL } from 'node:url'
 const rootDir = path.resolve(import.meta.dirname, '..')
 
 const parseArgs = () => {
-  const options = { date: '' }
+  const options = { date: '', allowPartialMarketContext: false }
   const args = process.argv.slice(2)
   for (let index = 0; index < args.length; index += 1) {
     if (args[index] === '--date') {
       options.date = args[index + 1] || ''
       index += 1
+    } else if (args[index] === '--allow-partial-market-context') {
+      options.allowPartialMarketContext = true
     }
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(options.date)) {
     throw new Error('Pass --date YYYY-MM-DD')
   }
   return options
+}
+
+const isSportsbookBacked = (game) => {
+  const text = [
+    game?.analysis?.sourceLabel,
+    game?.odds?.provider,
+    game?.moneyline?.provider,
+    ...(game?.tags || [])
+  ].filter(Boolean).join(' ')
+  return /draftkings|fanduel|robinhood|sportsbook|prediction market/i.test(text)
 }
 
 const hasRecentRows = (warehouseStats) => {
@@ -37,7 +49,7 @@ const hasStatRows = (warehouseStats) => {
   return (warehouseStats?.recentFormMetrics?.matches || []).some((match) => (match?.serviceStats?.rows || []).length > 0)
 }
 
-const audit = async ({ date }) => {
+const audit = async ({ date, allowPartialMarketContext }) => {
   const modulePath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}.js`)
   const slate = await import(`${pathToFileURL(modulePath).href}?audit=${Date.now()}`)
   const games = slate.games || []
@@ -54,6 +66,7 @@ const audit = async ({ date }) => {
     for (const participant of game.tennisContext?.players || []) {
       playerCount += 1
       const stats = participant?.warehouseStats
+      const marketContextAllowed = allowPartialMarketContext && isSportsbookBacked(game) && Boolean(stats)
       const profile = stats?.profile || stats?.playerProfile || null
       const rank = profile?.rank ?? profile?.currentRanking ?? profile?.current_ranking ?? stats?.ranking?.rank ?? participant?.rank ?? null
       const row = {
@@ -72,14 +85,20 @@ const audit = async ({ date }) => {
       if (row.hasStats) statCount += 1
       if (row.hasFormChart) chartCount += 1
       if (!row.hasWarehouseStats || !row.hasProfile || !row.hasRank || !row.hasRecent || !row.hasStats || !row.hasFormChart) {
-        missing.push(row)
+        missing.push({
+          ...row,
+          blocking: !marketContextAllowed,
+          warningReason: marketContextAllowed ? 'partial sportsbook-backed warehouse context' : 'missing required warehouse context'
+        })
       }
     }
   }
+  const blockingMissing = missing.filter((row) => row.blocking)
 
   const report = {
-    ok: playerCount > 0 && missing.length === 0,
+    ok: playerCount > 0 && blockingMissing.length === 0,
     date,
+    allowPartialMarketContext,
     playerCount,
     profileCount,
     rankCount,
@@ -87,6 +106,7 @@ const audit = async ({ date }) => {
     statCount,
     chartCount,
     missingCount: missing.length,
+    blockingMissingCount: blockingMissing.length,
     missing: missing.slice(0, 50)
   }
   console.log(JSON.stringify(report, null, 2))

@@ -672,5 +672,62 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Fernando Tatis Jr. Over 0.5 singles",
       "Tanner Gordon Over 3.5 strikeouts"
     ]
+  },
+  "2026-06-01": {
+    "overall": {
+      "hits": 0,
+      "total": 19,
+      "hitRate": 0
+    },
+    "byType": {
+      "totalBases": {
+        "hits": 0,
+        "total": 5,
+        "hitRate": 0
+      },
+      "singles": {
+        "hits": 0,
+        "total": 7,
+        "hitRate": 0
+      },
+      "pitcherStrikeouts": {
+        "hits": 0,
+        "total": 6,
+        "hitRate": 0
+      },
+      "rbi": {
+        "hits": 0,
+        "total": 1,
+        "hitRate": 0
+      }
+    },
+    "topHits": [],
+    "topMisses": [
+      "Andy Pages Over 1.5 total bases",
+      "Shohei Ohtani Over 1.5 total bases",
+      "Bobby Witt Jr. Over 1.5 total bases",
+      "Juan Soto Over 1.5 total bases"
+    ]
+  },
+  "2026-06-05": {
+    "overall": {
+      "hits": 0,
+      "total": 16,
+      "hitRate": 0
+    },
+    "byType": {
+      "pitcherStrikeouts": {
+        "hits": 0,
+        "total": 16,
+        "hitRate": 0
+      }
+    },
+    "topHits": [],
+    "topMisses": [
+      "Sonny Gray Under 5.5 strikeouts",
+      "Trey Yesavage Under 6.5 strikeouts",
+      "Anthony Kay Under 4.5 strikeouts",
+      "Ryan Weathers Under 6.5 strikeouts"
+    ]
   }
 }

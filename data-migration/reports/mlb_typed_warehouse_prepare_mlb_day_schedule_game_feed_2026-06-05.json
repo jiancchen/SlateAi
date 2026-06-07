@@ -4,20 +4,20 @@
   "errors": [],
   "expected_game_count": 15,
   "feed": {
-    "game_outcomes": 0,
+    "game_outcomes": 15,
     "games": 15,
     "missing_schedule_games": 0,
-    "phase_outcomes": 0,
-    "pitch_events": 1,
-    "pitcher_appearances": 0,
-    "plate_appearances": 1,
+    "phase_outcomes": 30,
+    "pitch_events": 5056,
+    "pitcher_appearances": 119,
+    "plate_appearances": 1136,
     "players": 780,
     "source_files": 15,
-    "starting_pitchers": 29,
-    "team_game_stats": 0
+    "starting_pitchers": 30,
+    "team_game_stats": 30
   },
   "feed_file_count": 15,
-  "generated_at": "2026-06-05T21:15:08.967969+00:00",
+  "generated_at": "2026-06-06T14:39:23.368141+00:00",
   "ok": true,
   "raw_root": "data-private/raw/mlb",
   "row_count_delta": {
@@ -36,8 +36,8 @@
   "schedule": {
     "games": 15,
     "source_files": 1,
-    "source_snapshot_id": "mlb-7e31ecdeb259955817d38f81150e29f8",
-    "starting_pitchers": 29,
+    "source_snapshot_id": "mlb-e177e37d32626567d4dbbe811684a39b",
+    "starting_pitchers": 30,
     "teams": 30,
     "venues": 15
   },

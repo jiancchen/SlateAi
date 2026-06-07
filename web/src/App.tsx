@@ -28,6 +28,7 @@ import {
   fallbackSlateDayManifest,
   loadMlbHomeRunBoardData,
   loadMlbPropBoardData,
+  loadMlbResultsJournalData,
   searchSlateGamesData,
   loadSlateDayData,
   loadSlateGameDetailData,
@@ -406,6 +407,110 @@ const normalizeNameToken = (value = '') =>
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9]+/g, ' ')
     .trim()
+
+const batterTeamPromotionContext = (game: AnyRecord, sideKey: 'away' | 'home', teamName = '') => {
+  const sideIndex = sideKey === 'away' ? 0 : 1
+  const participants = Array.isArray(game?.moneyline?.participants) ? game.moneyline.participants : []
+  const normalizedTeamName = normalizeNameToken(teamName)
+  const participant =
+    participants.find((entry: AnyRecord) => Number(entry.index) === sideIndex) ??
+    participants.find((entry: AnyRecord) => normalizeNameToken(entry.name) === normalizedTeamName) ??
+    null
+  const opponent =
+    participants.find((entry: AnyRecord) => participant && entry.id !== participant.id) ??
+    participants.find((entry: AnyRecord) => Number(entry.index) !== sideIndex) ??
+    null
+  const teamMarketImpliedPct = impliedPctFromParticipant(participant)
+  const opponentMarketImpliedPct = impliedPctFromParticipant(opponent)
+  const teamProjectedRuns =
+    finiteValueOrNull(game?.analysis?.mlbProjection?.[`${sideKey}ProjectedRuns`]) ??
+    finiteValueOrNull(game?.analysis?.projection?.[`${sideKey}ProjectedRuns`]) ??
+    finiteValueOrNull(game?.projection?.[`${sideKey}ProjectedRuns`]) ??
+    finiteValueOrNull(game?.totals?.[`${sideKey}ProjectedRuns`]) ??
+    null
+  const marketUnderdog =
+    teamMarketImpliedPct !== null &&
+    opponentMarketImpliedPct !== null &&
+    teamMarketImpliedPct < opponentMarketImpliedPct
+  const lowRunContext = teamProjectedRuns !== null && teamProjectedRuns < 3.8
+  const suppressed = marketUnderdog || lowRunContext
+  const note = [
+    marketUnderdog && teamMarketImpliedPct !== null
+      ? `market underdog ${formatNumber(teamMarketImpliedPct, 1)}%`
+      : null,
+    lowRunContext && teamProjectedRuns !== null
+      ? `low team run context ${formatNumber(teamProjectedRuns, 1)}`
+      : null
+  ].filter(Boolean).join(' | ')
+
+  return {
+    suppressed,
+    scoreMultiplier: suppressed ? 0.78 : 1,
+    note,
+    teamMarketImpliedPct,
+    opponentMarketImpliedPct,
+    teamProjectedRuns
+  }
+}
+
+const gameFullTotalUnderWarning = (game: AnyRecord) => {
+  const fullGameTotal = game?.analysis?.mlbProjection?.totals?.fullGame ?? null
+  const leanText = String(fullGameTotal?.lean || fullGameTotal?.label || '').toLowerCase()
+  if (!leanText.includes('under')) return ''
+
+  const projectedRuns = finiteValueOrNull(game?.analysis?.mlbProjection?.totals?.projectedFullTotalRuns)
+  const postedTotal = finiteValueOrNull(game?.analysis?.mlbProjection?.postedTotal)
+  const edge = finiteValueOrNull(fullGameTotal?.edge)
+  const context = [
+    projectedRuns !== null ? `proj ${formatNumber(projectedRuns, 1)}` : null,
+    postedTotal !== null ? `line ${formatNumber(postedTotal, 1)}` : null,
+    edge !== null ? `edge ${formatSignedNumber(edge, 1)}` : null
+  ].filter(Boolean).join(' vs ')
+
+  return context ? `Game total leans under (${context})` : 'Game total leans under'
+}
+
+const teamSideForName = (game: AnyRecord, teamName = ''): 'away' | 'home' | null => {
+  const normalizedTeamName = normalizeNameToken(teamName)
+  if (!normalizedTeamName) return null
+
+  const awayNames = [
+    game?.matchup?.[0]?.name,
+    game?.matchup?.[0]?.shortName,
+    game?.participants?.[0]?.name,
+    game?.awayTeam,
+    game?.awayTeamFull,
+    game?.lineupBoard?.away?.teamName
+  ].filter(Boolean).map(normalizeNameToken)
+  const homeNames = [
+    game?.matchup?.[1]?.name,
+    game?.matchup?.[1]?.shortName,
+    game?.participants?.[1]?.name,
+    game?.homeTeam,
+    game?.homeTeamFull,
+    game?.lineupBoard?.home?.teamName
+  ].filter(Boolean).map(normalizeNameToken)
+
+  if (awayNames.some((name) => name === normalizedTeamName || name.endsWith(normalizedTeamName) || normalizedTeamName.endsWith(name))) return 'away'
+  if (homeNames.some((name) => name === normalizedTeamName || name.endsWith(normalizedTeamName) || normalizedTeamName.endsWith(name))) return 'home'
+
+  const [awayTitle = '', homeTitle = ''] = String(game?.title || '').split('@').map((part) => normalizeNameToken(part))
+  if (awayTitle && (awayTitle === normalizedTeamName || awayTitle.endsWith(normalizedTeamName) || normalizedTeamName.endsWith(awayTitle))) return 'away'
+  if (homeTitle && (homeTitle === normalizedTeamName || homeTitle.endsWith(normalizedTeamName) || normalizedTeamName.endsWith(homeTitle))) return 'home'
+
+  return null
+}
+
+const batterPropContextWarnings = (game: AnyRecord, teamName = '') => {
+  const sideKey = teamSideForName(game, teamName)
+  if (!sideKey) return []
+  const teamContext = batterTeamPromotionContext(game, sideKey, teamName)
+  return teamContext.teamMarketImpliedPct !== null &&
+    teamContext.opponentMarketImpliedPct !== null &&
+    teamContext.teamMarketImpliedPct < teamContext.opponentMarketImpliedPct
+    ? [`Team expected to lose (${formatNumber(teamContext.teamMarketImpliedPct, 1)}% implied)`]
+    : []
+}
 
 const percentageFromRecord = (record?: HistoryRecord | null) => {
   if (!record) return null
@@ -2100,6 +2205,7 @@ function App() {
   const [loadingGameDetailsByDay, setLoadingGameDetailsByDay] = useState<Record<string, Record<string, boolean>>>({})
   const [loadedPropBoardsByDay, setLoadedPropBoardsByDay] = useState<Record<string, AnyRecord | null>>({})
   const [loadedHomeRunBoardsByDay, setLoadedHomeRunBoardsByDay] = useState<Record<string, AnyRecord | null>>({})
+  const [loadedMlbResultsByDay, setLoadedMlbResultsByDay] = useState<Record<string, AnyRecord[] | null>>({})
   const [loadingSlateIds, setLoadingSlateIds] = useState<Record<string, boolean>>({})
   const [historyArchive, setHistoryArchive] = useState<HistoryEntry[]>([])
   const [historyLoaded, setHistoryLoaded] = useState(false)
@@ -2577,11 +2683,35 @@ function App() {
       })
   }, [activeDayId, games, loadedHomeRunBoardsByDay])
 
+  useEffect(() => {
+    if (!activeDayId) return
+    if (!games.some((game: AnyRecord) => game.league === 'MLB')) return
+    if (loadedMlbResultsByDay[activeDayId] !== undefined) return
+
+    loadMlbResultsJournalData(activeDayId)
+      .then((results) => {
+        setLoadedMlbResultsByDay((current) => ({ ...current, [activeDayId]: results as AnyRecord[] }))
+      })
+      .catch((error) => {
+        console.error(`Failed to load MLB results journal for ${activeDayId}`, error)
+        setLoadedMlbResultsByDay((current) => ({ ...current, [activeDayId]: null }))
+      })
+  }, [activeDayId, games, loadedMlbResultsByDay])
+
   const activePropBoardByGame = useMemo(
     () => buildTrackedPropBoardByGame(loadedPropBoardsByDay[activeDayId] ?? null),
     [activeDayId, loadedPropBoardsByDay]
   )
   const activeHomeRunBoard = loadedHomeRunBoardsByDay[activeDayId] ?? null
+  const activeMlbResultsByGamePk = useMemo(() => {
+    const rows = loadedMlbResultsByDay[activeDayId] ?? []
+    const byGamePk = new Map<number, AnyRecord>()
+    rows.forEach((row: AnyRecord) => {
+      const gamePk = Number(row.gamePk)
+      if (Number.isFinite(gamePk)) byGamePk.set(gamePk, row)
+    })
+    return byGamePk
+  }, [activeDayId, loadedMlbResultsByDay])
 
   const selectedGameDetail = loadedGameDetailsByDay[activeDayId]?.[selectedGameId] ?? null
   const selectedGame =
@@ -3197,6 +3327,13 @@ function App() {
     () =>
       mlbPlayerProps.map((prop: AnyRecord) => {
         const eventState = getEventState(prop.game, activeDayIsoDate, pacificClock)
+        const propType = String(prop.propType || '')
+        const isBatterFacingProp = prop.league === 'MLB' && propType !== 'pitcherStrikeouts'
+        const isPostedBatterProp = !isBatterFacingProp || prop.lineupStatus === 'posted'
+        const propContextWarnings =
+          isBatterFacingProp
+            ? batterPropContextWarnings(prop.game, prop.teamName || prop.teamNameFull || prop.team || '')
+            : []
         return {
           id: prop.id,
           category: 'props',
@@ -3214,12 +3351,17 @@ function App() {
           priceLabel: prop.statValueLabel,
           metaLabel: `${prop.probability}% model`,
           summary: prop.reason || prop.matchupNote,
-          tags: [prop.recommendationTier, prop.propLabel, prop.shadowSupportTag, prop.lineupStatus].filter(Boolean).slice(0, 4),
-          invalid: eventState.invalid,
-          statusLabel: eventState.label,
-          tone: eventState.tone,
+          tags: [prop.recommendationTier, prop.propLabel, prop.shadowSupportTag, isPostedBatterProp ? prop.lineupStatus : 'Projected lineup withheld', propContextWarnings[0]].filter(Boolean).slice(0, 4),
+          contextWarnings: propContextWarnings,
+          invalid: eventState.invalid || !isPostedBatterProp,
+          statusLabel: isPostedBatterProp ? eventState.label : 'Projected lineup',
+          tone: isPostedBatterProp ? eventState.tone : 'warning',
           selected: Boolean(selectedProps[prop.id]),
-          raw: prop
+          raw: {
+            ...prop,
+            lineupGated: !isPostedBatterProp,
+            contextWarnings: propContextWarnings
+          }
         }
       }),
     [activeDayIsoDate, mlbPlayerProps, pacificClock, selectedProps]
@@ -3783,8 +3925,10 @@ function App() {
           const team = lineupBoard?.[sideKey] ?? {}
           const lineup = Array.isArray(team.lineup) ? team.lineup : []
           const lineupStatus = lineupBoard?.status?.[sideKey] || 'partial'
+          if (lineupStatus !== 'posted') return []
           const opposingHand = team.opposingStarter?.handedness || team.opposingStarter?.throws || ''
           const aggregate = team.aggregate || {}
+          const teamContextWarnings = batterPropContextWarnings(game, team.teamName || '')
 
           return lineup.map((player: AnyRecord) => {
             const recentXops = computeXops(player.recent)
@@ -3868,6 +4012,7 @@ function App() {
               league: 'MLB',
               title: `${player.name} H+R+RBI watch`,
               summary: summaryBits.join(' · '),
+              contextWarnings: teamContextWarnings,
               confidence: 0,
               sortConfidence: 0,
               sortEdge: productionScore,
@@ -3888,6 +4033,7 @@ function App() {
                   matchupPressure,
                   pitchFitPressure
                 },
+                contextWarnings: teamContextWarnings,
                 slot,
                 playerName: player.name
               }
@@ -4030,6 +4176,22 @@ function App() {
         const noAsk = Number(kalshiFirstInning?.noAskCents)
         const hasKalshi = [yesAsk, noAsk].every(Number.isFinite)
         const modelConfidence = Math.round(String(firstInning.pick || '').toUpperCase() === 'YRFI' ? yesModel : noModel)
+        const resultRow = activeMlbResultsByGamePk.get(Number(game.gamePk)) ?? null
+        const awayRunsFirst1 = Number(resultRow?.awayRunsFirst1)
+        const homeRunsFirst1 = Number(resultRow?.homeRunsFirst1)
+        const hasFirstInningResult =
+          resultRow &&
+          resultRow.awayRunsFirst1 !== null &&
+          resultRow.awayRunsFirst1 !== undefined &&
+          resultRow.homeRunsFirst1 !== null &&
+          resultRow.homeRunsFirst1 !== undefined &&
+          Number.isFinite(awayRunsFirst1) &&
+          Number.isFinite(homeRunsFirst1)
+        const firstInningRuns = hasFirstInningResult ? awayRunsFirst1 + homeRunsFirst1 : null
+        const actualPick = hasFirstInningResult
+          ? firstInningRuns > 0 ? 'YRFI' : 'NRFI'
+          : ''
+        const resultHit = actualPick ? actualPick === String(firstInning.pick || '').toUpperCase() : null
 
         return {
           gameId: game.id,
@@ -4045,7 +4207,23 @@ function App() {
           awayRunPct,
           homeRunPct,
           edge: Number(firstInning.edge) || 0,
-          summary: firstInning.summary
+          summary: firstInning.summary,
+          result: hasFirstInningResult
+            ? {
+                source: resultRow.source || 'sql-mlb.db',
+                hit: resultHit,
+                actualPick,
+                awayRunsFirst1,
+                homeRunsFirst1,
+                totalRunsFirst1: firstInningRuns,
+                label:
+                  resultHit === true
+                    ? 'Hit'
+                    : resultHit === false
+                      ? 'Miss'
+                      : 'Ungraded'
+              }
+            : null
         }
       })
       .filter(Boolean)
@@ -4072,12 +4250,15 @@ function App() {
       totalGames: mlbGames.length,
       modeledGames: rows.length,
       mappedGames: rows.filter((row: AnyRecord) => row.hasKalshi).length,
+      settledRows: rows.filter((row: AnyRecord) => row.result?.label && row.result.label !== 'Ungraded').length,
+      hitRows: rows.filter((row: AnyRecord) => row.result?.hit === true).length,
+      missRows: rows.filter((row: AnyRecord) => row.result?.hit === false).length,
       yrfiRows,
       nrfiRows,
       note:
         'First-inning board is model-first. It ranks the strongest YRFI / NRFI lanes from lineup pressure, early scoring shape, and starter leakage; Kalshi asks only show up as optional context when mapped.'
     }
-  }, [activeKalshiMlbMarketByGame, games])
+  }, [activeKalshiMlbMarketByGame, activeMlbResultsByGamePk, games])
 
   const mlbScalpSummary = useMemo(() => {
     return null
@@ -4094,13 +4275,26 @@ function App() {
         const gameDetail = detailByGame[game.id] ?? game
         const lineupBoard = gameDetail?.lineupBoard ?? null
         if (!lineupBoard) return
+        const fullTotalUnderWarning = gameFullTotalUnderWarning(gameDetail)
 
         ;(['away', 'home'] as const).forEach((sideKey) => {
           const team = lineupBoard?.[sideKey] ?? {}
           const opponentSide = sideKey === 'away' ? 'home' : 'away'
           const opponentTeam = lineupBoard?.[opponentSide] ?? {}
+          const teamName = team.teamName || game.matchup?.[sideKey === 'away' ? 0 : 1]?.name || ''
+          const opponentName = opponentTeam.teamName || game.matchup?.[sideKey === 'away' ? 1 : 0]?.name || ''
+          const teamPromotionContext = batterTeamPromotionContext(game, sideKey, teamName)
+          const contextWarnings = [
+            fullTotalUnderWarning,
+            teamPromotionContext.teamMarketImpliedPct !== null &&
+            teamPromotionContext.opponentMarketImpliedPct !== null &&
+            teamPromotionContext.teamMarketImpliedPct < teamPromotionContext.opponentMarketImpliedPct
+              ? `Team expected to lose (${formatNumber(teamPromotionContext.teamMarketImpliedPct, 1)}% implied)`
+              : null
+          ].filter(Boolean)
           const lineup = Array.isArray(team.lineup) ? team.lineup : []
           const lineupStatus = lineupBoard?.status?.[sideKey] || 'partial'
+          const lineupWarning = lineupStatus === 'posted' ? '' : 'Not confirmed playing'
           const opposingStarter = team.opposingStarter ?? {}
           const opposingHand =
             opposingStarter.handedness || opposingStarter.throws || opposingStarter.hand || ''
@@ -4220,7 +4414,7 @@ function App() {
               100
             )
             const hrLikelyScore = roundToTenths(
-              clamp(hrRawScore * bbeSampleMultiplier * pitcherHrMultiplier, 0, 100)
+              clamp(hrRawScore * bbeSampleMultiplier * pitcherHrMultiplier * teamPromotionContext.scoreMultiplier, 0, 100)
             )
             const bbeSampleNote =
               Number.isFinite(recentBbeSample) && recentBbeSample < 10
@@ -4257,7 +4451,7 @@ function App() {
                   (Number.isFinite(formScore) ? clamp(((formScore - 45) / 35) * 8, 0, 8) : 0),
                 0,
                 100
-              )
+              ) * teamPromotionContext.scoreMultiplier
             )
             const hitterHrHistoryNote =
               Number.isFinite(recentHomeRuns) && recentHomeRuns >= 1 && Number.isFinite(matchupScore) && matchupScore >= 60
@@ -4292,9 +4486,11 @@ function App() {
               startMinutes: Number(game.startMinutes) || 0,
               stage: game.stage,
               side: sideKey,
-              teamName: team.teamName || game.matchup?.[sideKey === 'away' ? 0 : 1]?.name || '',
-              opponentName: opponentTeam.teamName || game.matchup?.[sideKey === 'away' ? 1 : 0]?.name || '',
+              teamName,
+              opponentName,
               lineupStatus,
+              lineupWarning,
+              isLineupConfirmed: lineupStatus === 'posted',
               slot: Number.isFinite(slot) ? slot : null,
               playerId: player.playerId ?? null,
               playerName: player.name || 'Unknown batter',
@@ -4365,6 +4561,14 @@ function App() {
               recentHrRate: Number.isFinite(recentHrRate) ? recentHrRate : null,
               splitHrRate: Number.isFinite(splitHrRate) ? splitHrRate : null,
               hasOptimalLaunchAngle,
+              batterPromotionSuppressed: teamPromotionContext.suppressed,
+              batterPromotionNote: teamPromotionContext.note,
+              contextWarnings,
+              fullTotalUnderWarning,
+              teamLossWarning: contextWarnings.find((warning) => String(warning).startsWith('Team expected to lose')) || '',
+              teamMarketImpliedPct: teamPromotionContext.teamMarketImpliedPct,
+              opponentMarketImpliedPct: teamPromotionContext.opponentMarketImpliedPct,
+              teamProjectedRuns: teamPromotionContext.teamProjectedRuns,
               hrLikelyScore,
               hotHitterScore,
               hrMatchupNote,

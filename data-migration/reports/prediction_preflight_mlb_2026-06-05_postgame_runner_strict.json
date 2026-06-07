@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-06-06T14:22:48.185Z",
+  "script": "data-migration/scripts/prediction_preflight.mjs",
+  "sport": "mlb",
+  "source_date": "2026-06-05",
+  "lane": "postgame",
+  "degraded": false,
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "required_sources_checked": 3,
+  "passed_sources": 2,
+  "stale_sources": [
+    "mlb_model_artifacts"
+  ],
+  "warnings": [],
+  "blocking_errors": [
+    "mlb_model_artifacts: Missing source_fetch_status for mlb_model_artifacts/2026-06-05"
+  ],
+  "sources": [
+    {
+      "source_name": "mlb_game_feed",
+      "source_family": "game-feed",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-05",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-06T14:22:40.407668+00:00",
+        "cache_valid_until": "2026-06-06T20:22:40.407668+00:00",
+        "expected_item_count": 15,
+        "actual_item_count": 15,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"feed_file_count\":15,\"missing_schedule_games\":0,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-05.json\"}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_model_artifacts",
+      "source_family": "model-artifacts",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": null,
+      "stale": true,
+      "errors": [
+        "Missing source_fetch_status for mlb_model_artifacts/2026-06-05"
+      ],
+      "warnings": [],
+      "ok": false
+    },
+    {
+      "source_name": "mlb_schedule",
+      "source_family": "schedule",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-05",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-06T14:22:40.407519+00:00",
+        "cache_valid_until": "2026-06-06T20:22:40.407519+00:00",
+        "expected_item_count": 15,
+        "actual_item_count": 15,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-05.json\",\"schedule_path\":\"data-private/raw/mlb/2026-06-05/schedule.json\"}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    }
+  ],
+  "ok": false,
+  "publish_allowed": false
+}
