@@ -9,10 +9,10 @@
   "evaluatorVersion": "TEN-E0",
   "mode": "pregame",
   "status": "snapshotted",
-  "createdAt": "2026-06-07T02:26:58.804Z",
-  "snapshottedAt": "2026-06-07T02:27:59.552Z",
+  "createdAt": "2026-06-07T07:08:49.258Z",
+  "snapshottedAt": "2026-06-07T07:10:20.576Z",
   "git": {
-    "commit": "cb87821ced1a71c889a298434e2be97d409bed9a",
+    "commit": "8c504561ac7c98911512d0c7ae808cfb73cace4a",
     "dirty": true
   },
   "registry": {

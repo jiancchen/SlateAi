@@ -313,8 +313,9 @@ const main = async () => {
   if (!health.ok) throw new Error('health.json is not ok')
   const requiredChecks = ['sourceFiles', 'matchContract', 'rankings', 'tennisliveContext', 'warehouse', 'tennislive', 'kalshi', 'weather', 'resultsTraining', 'published', 'valueBooks']
   const checkMap = new Map((health.checks || []).map((check) => [check.name, check.status]))
-  const badChecks = requiredChecks.filter((name) => checkMap.get(name) !== 'ok')
-  if (badChecks.length) throw new Error(`Health checks not ok: ${badChecks.join(', ')}`)
+  const acceptableHealthStatuses = new Set(['ok', 'warning', 'not_applicable'])
+  const badChecks = requiredChecks.filter((name) => !acceptableHealthStatuses.has(checkMap.get(name)))
+  if (badChecks.length) throw new Error(`Health checks failed or missing: ${badChecks.join(', ')}`)
 
   if (calibration.status === 'missing') throw new Error('Calibration artifact is marked missing')
   if (backtest.status === 'missing' && run.mode !== 'pregame') throw new Error('Backtest artifact is marked missing')

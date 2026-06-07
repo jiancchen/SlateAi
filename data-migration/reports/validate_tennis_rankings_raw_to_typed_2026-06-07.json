@@ -2,12 +2,12 @@
   "date": "2026-06-07",
   "duplicate_rankings": 0,
   "errors": [],
-  "generated_at": "2026-06-07T02:07:18.157915+00:00",
+  "generated_at": "2026-06-07T07:03:40.559580+00:00",
   "health_check": {
     "actual_count": 300,
     "check_name": "tennis_rankings_raw_to_typed:2026-06-07",
-    "checked_at": "2026-06-07T02:07:13.290390+00:00",
-    "details_json": "{\"after_counts\":{\"rankings\":3813,\"unresolved_entities\":451},\"alias_rows\":309,\"before_counts\":{\"rankings\":3513,\"unresolved_entities\":451},\"date\":\"2026-06-07\",\"dry_run\":false,\"generated_at\":\"2026-06-07T02:07:13.289860+00:00\",\"inserted_rankings\":300,\"ok\":true,\"parsed_rankings\":300,\"parser_module\":\"pipeline/sources/tennis/normalization/rankings.py\",\"rankings_by_tour\":{\"ATP\":150,\"WTA\":150},\"row_count_delta\":{\"rankings\":300,\"unresolved_entities\":0},\"sample_source_snapshots\":[\"tennis-b9f85644a45c6f8831ca7cbcbf452e36\"],\"script\":\"data-migration/scripts/ingest_tennis_rankings_raw_to_typed.py\",\"source_db\":\"data-private/warehouse/sports/tennis/sql-tennis.db\",\"source_files\":1,\"source_name\":\"tennis_rankings\",\"source_rows\":300,\"source_snapshot_rows\":1,\"unparsed_rows\":0,\"unresolved_rows_added\":0}",
+    "checked_at": "2026-06-07T07:03:40.502603+00:00",
+    "details_json": "{\"after_counts\":{\"rankings\":3813,\"unresolved_entities\":451},\"alias_rows\":309,\"before_counts\":{\"rankings\":3813,\"unresolved_entities\":451},\"date\":\"2026-06-07\",\"dry_run\":false,\"generated_at\":\"2026-06-07T07:03:40.500806+00:00\",\"inserted_rankings\":300,\"ok\":true,\"parsed_rankings\":300,\"parser_module\":\"pipeline/sources/tennis/normalization/rankings.py\",\"rankings_by_tour\":{\"ATP\":150,\"WTA\":150},\"row_count_delta\":{\"rankings\":0,\"unresolved_entities\":0},\"sample_source_snapshots\":[\"tennis-b9f85644a45c6f8831ca7cbcbf452e36\"],\"script\":\"data-migration/scripts/ingest_tennis_rankings_raw_to_typed.py\",\"source_db\":\"data-private/warehouse/sports/tennis/sql-tennis.db\",\"source_files\":1,\"source_name\":\"tennis_rankings\",\"source_rows\":300,\"source_snapshot_rows\":1,\"unparsed_rows\":0,\"unresolved_rows_added\":0}",
     "expected_count": 300,
     "health_check_id": "tennis-rankings-raw-to-typed:2026-06-07",
     "model_run_id": null,
@@ -31,13 +31,13 @@
   "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
   "source_fetch_status": {
     "actual_item_count": 1,
-    "cache_valid_until": "2026-06-08 02:07:13",
+    "cache_valid_until": "2026-06-08 07:03:40",
     "expected_item_count": null,
-    "last_attempt_at": "2026-06-07T02:07:13.289896+00:00",
+    "last_attempt_at": "2026-06-07T07:03:40.500858+00:00",
     "last_completeness_status": "unknown",
-    "last_fetch_run_id": "source-fetch-tennis_rankings-2026-06-07-2026-06-07T02-07-13-289896+00-00",
+    "last_fetch_run_id": "source-fetch-tennis_rankings-2026-06-07-2026-06-07T07-03-40-500858+00-00",
     "last_status": "success",
-    "last_success_at": "2026-06-07T02:07:13.289896+00:00",
+    "last_success_at": "2026-06-07T07:03:40.500858+00:00",
     "missing_item_count": null,
     "notes": "{\"adapter\":\"tennis_rankings_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis ranking raw archive. This does not perform network fetch.\",\"parsed_rankings\":300,\"report_path\":\"data-migration/reports/ingest_tennis_rankings_raw_to_typed_2026-06-07.json\",\"source_files\":1,\"unresolved_added\":0}",
     "source_date": "2026-06-07",
@@ -46,7 +46,7 @@
     "source_name": "tennis_rankings",
     "sport": "tennis",
     "unresolved_count": 0,
-    "updated_at": "2026-06-07T02:07:13.289896+00:00"
+    "updated_at": "2026-06-07T07:03:40.500858+00:00"
   },
   "source_files": 1
 }

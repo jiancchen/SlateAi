@@ -8,9 +8,9 @@
       {
         "role": "model-runner",
         "path": "pipeline/tennis/publish/generate-day-module.mjs",
-        "expectedSha256": "03804523357b119e7d56bc571d76c1f6fc93da1314b1f71b75ddbaead9fc5028",
+        "expectedSha256": "c75709e49cfb5b66d5ed23d5aab72a1e273e0185a7295aff8d85fc41be5f09a6",
         "exists": true,
-        "sha256": "03804523357b119e7d56bc571d76c1f6fc93da1314b1f71b75ddbaead9fc5028"
+        "sha256": "c75709e49cfb5b66d5ed23d5aab72a1e273e0185a7295aff8d85fc41be5f09a6"
       },
       {
         "role": "source-mapping-helper",
@@ -36,12 +36,12 @@
       {
         "path": "web/src/lib/day-2026-06-07-tennis-warehouse-context.generated.json",
         "exists": true,
-        "sha256": "637895ee2c6176aa60698b2ae9b5db6cc9877fecc264417b2d34449a0ecb4103"
+        "sha256": "5eeeeb4ef1d57b55d529dfa1f0051d744a321dadb17a039f1ce25d7fa5874c12"
       },
       {
         "path": "data-private/reference/tennis/draftkings-lines-2026-06-07.json",
         "exists": true,
-        "sha256": "bfcd370cc3a9de15d0f678680f09e151033609e4e6f6adb1af274f80ca809515"
+        "sha256": "d3212e5cca7683c552ff80094c6cb9b0bbf11ddcf4b1fedb6c3b692845997a42"
       },
       {
         "path": "data-private/reference/tennis/fanduel-lines-2026-06-07.json",

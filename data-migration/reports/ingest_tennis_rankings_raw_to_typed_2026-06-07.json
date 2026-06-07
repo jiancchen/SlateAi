@@ -5,12 +5,12 @@
   },
   "alias_rows": 309,
   "before_counts": {
-    "rankings": 3513,
+    "rankings": 3813,
     "unresolved_entities": 451
   },
   "date": "2026-06-07",
   "dry_run": false,
-  "generated_at": "2026-06-07T02:07:13.289860+00:00",
+  "generated_at": "2026-06-07T07:03:40.500806+00:00",
   "inserted_rankings": 300,
   "ok": true,
   "parsed_rankings": 300,
@@ -20,7 +20,7 @@
     "WTA": 150
   },
   "row_count_delta": {
-    "rankings": 300,
+    "rankings": 0,
     "unresolved_entities": 0
   },
   "sample_source_snapshots": [

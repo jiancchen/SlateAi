@@ -229,9 +229,9 @@ def sportsbook_level(league_name: str | None) -> str:
 
 def sportsbook_surface(league_name: str | None) -> str | None:
     text = str(league_name or "").lower()
-    if any(token in text for token in ["french open", "roland garros", "foggia", "makarska", "modena", "prostejov", "heilbronn", "bratislava", "lyon", "cattolica"]):
+    if any(token in text for token in ["french open", "roland garros", "foggia", "makarska", "modena", "prostejov", "heilbronn", "bratislava", "lyon", "cattolica", "perugia"]):
         return "Clay"
-    if any(token in text for token in ["birmingham", "hertogenbosch", "london"]):
+    if any(token in text for token in ["birmingham", "hertogenbosch", "london", "ilkley"]):
         return "Grass"
     if any(token in text for token in ["centurion", "tyler"]):
         return "Hard"

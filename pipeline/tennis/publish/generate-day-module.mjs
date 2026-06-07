@@ -2690,6 +2690,7 @@ const main = async () => {
           totals: game.totals,
           derivativeMarketCase: game.derivativeCase,
           bettingMatrix: game.bettingMatrix,
+          valueBoard: game.valueBoard,
           market: game.marketData
             ? {
                 source: game.marketData.source,
