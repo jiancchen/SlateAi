@@ -3624,7 +3624,16 @@ function App() {
       const opponentRuns = pickIndex === 0 ? homeFirst5Runs : awayFirst5Runs
       const leadPct = pickIndex === 0 ? leadProbabilities.awayWinPct : leadProbabilities.homeWinPct
       const runEdge = pickRuns - opponentRuns
-      const f5Confidence = clamp(Math.round(Number(leadPct) || 50), 50, 86)
+      const projectedF5TotalRuns = awayFirst5Runs + homeFirst5Runs
+      const tieRisk =
+        leadProbabilities.tiePct >= 30 && projectedF5TotalRuns <= 4.2
+          ? 'high'
+          : leadProbabilities.tiePct >= 26 && projectedF5TotalRuns <= 4.8
+            ? 'watch'
+            : 'low'
+      const tieRiskHaircut = tieRisk === 'high' ? 8 : tieRisk === 'watch' ? 4 : 0
+      const f5Confidence = clamp(Math.round(Number(leadPct) || 50) - tieRiskHaircut, 50, 86)
+      const tieRiskLabel = tieRisk === 'high' ? 'Tie risk high' : tieRisk === 'watch' ? 'Tie risk watch' : null
 
       if (participant && Math.abs(runEdge) >= 0.15) {
         first5MoneylineRows.push({
@@ -3643,11 +3652,15 @@ function App() {
           sortEdge: Math.abs(runEdge),
           priceLabel: `Lead ${formatNumber(leadPct, 1)}% | Push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
           metaLabel: `Proj F5 ${formatNumber(awayFirst5Runs, 1)}-${formatNumber(homeFirst5Runs, 1)} | edge ${formatSignedNumber(runEdge, 1)} | push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
-          summary: `${participant.name} projects ${formatSignedNumber(runEdge, 1)} first-five runs better in the M2 starter window.`,
+          summary: [
+            `${participant.name} projects ${formatSignedNumber(runEdge, 1)} first-five runs better in the M2 starter window.`,
+            tieRiskLabel ? `${tieRiskLabel}; confidence haircut applied.` : null
+          ].filter(Boolean).join(' '),
           tags: [
             'M2 F5 ML',
             `${formatNumber(leadPct, 1)}% lead`,
             `push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
+            tieRiskLabel,
             projection.first5EdgeTeam ? `edge ${projection.first5EdgeTeam}` : null
           ].filter(Boolean).slice(0, 4),
           invalid: eventState.invalid,
@@ -3668,6 +3681,8 @@ function App() {
             leadPct,
             tiePct: leadProbabilities.tiePct,
             pushPct: leadProbabilities.tiePct,
+            tieRisk,
+            confidenceHaircut: tieRiskHaircut,
             confidence: f5Confidence,
             valueGate: 'model-owned',
             hasMarket: false,
@@ -3698,7 +3713,21 @@ function App() {
           : first5Edge
       const totalProbability = buildTotalProbabilityPct(projectedFirst5Total, first5Line, first5Lean)
       if (first5Lean && Number.isFinite(first5DisplayEdge) && Number.isFinite(first5Line)) {
-        const confidence = clamp(Math.round(Number(totalProbability) || (54 + Math.abs(first5DisplayEdge) * 8)), 50, 78)
+        const first5ChaosMetrics = first5Total?.chaosGate?.metrics || first5Total?.tailOverlay?.metrics || {}
+        const underVolatilityRisk =
+          first5Lean === 'Under' &&
+          (Boolean(first5Total?.chaosGate?.warning) ||
+            Boolean(first5ChaosMetrics.weatherCarry) ||
+            Number(first5ChaosMetrics.maxMistakeChaos) >= 55 ||
+            Number(first5ChaosMetrics.maxRunClustering) >= 65)
+        const thinTotalEdgeRisk = Math.abs(first5DisplayEdge) < 0.8
+        const f5TotalHaircut = (underVolatilityRisk ? 8 : 0) + (thinTotalEdgeRisk ? 3 : 0)
+        const baseConfidence = clamp(Math.round(Number(totalProbability) || (54 + Math.abs(first5DisplayEdge) * 8)), 50, 78)
+        const confidence = clamp(baseConfidence - f5TotalHaircut, 50, 78)
+        const f5TotalWarnings = [
+          underVolatilityRisk ? 'F5 under volatility' : null,
+          thinTotalEdgeRisk ? 'Thin F5 edge' : null
+        ].filter(Boolean)
         first5TotalRows.push({
           id: `f5-total:${game.id}`,
           category: 'first5-total',
@@ -3720,6 +3749,7 @@ function App() {
             'M2 F5 O/U',
             first5Total?.strength,
             `${formatSignedNumber(first5DisplayEdge, 1)} runs`,
+            ...f5TotalWarnings,
             first5Total?.chaosGate?.warning ? 'chaos warning' : null
           ].filter(Boolean).slice(0, 4),
           invalid: eventState.invalid,
@@ -3735,6 +3765,9 @@ function App() {
             projectedRuns: projectedFirst5Total,
             edge: first5DisplayEdge,
             baseEdge: first5Edge,
+            baseConfidence,
+            confidenceHaircut: f5TotalHaircut,
+            confidenceWarnings: f5TotalWarnings,
             strength: first5Total?.strength || '',
             probability: totalProbability,
             valueGate: 'model-owned',
