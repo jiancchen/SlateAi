@@ -69,12 +69,19 @@ const actualTotalSide = (actual, line) => {
 
 const first5SideShape = ({ awayRuns, homeRuns, awayLeadProbabilityPctDelta = 0 }) => {
   if (!Number.isFinite(awayRuns) || !Number.isFinite(homeRuns)) {
-    return { pick: 'Pass', awayLeadProbabilityPct: null, tieProbabilityPct: null, runGap: null }
+    return { pick: 'Pass', awayLeadProbabilityPct: null, tieProbabilityPct: null, runGap: null, tieRisk: 'unknown' }
   }
   const runGap = awayRuns - homeRuns
   const adjustedRunGap = runGap + (Number(awayLeadProbabilityPctDelta) || 0) / 8
   const awayLeadProbabilityPct = Math.min(70, Math.max(30, 50 + adjustedRunGap * 8))
   const tieProbabilityPct = Math.min(34, Math.max(6, 34 - Math.abs(adjustedRunGap) * 24))
+  const totalRuns = awayRuns + homeRuns
+  const tieRisk =
+    tieProbabilityPct >= 30 && totalRuns <= 4.2
+      ? 'high'
+      : tieProbabilityPct >= 26 && totalRuns <= 4.8
+        ? 'watch'
+        : 'low'
   let pick = 'Pass'
   if (tieProbabilityPct >= 28) pick = 'Tie'
   else if (awayLeadProbabilityPct >= 54) pick = 'Away'
@@ -83,7 +90,8 @@ const first5SideShape = ({ awayRuns, homeRuns, awayLeadProbabilityPctDelta = 0 }
     pick,
     awayLeadProbabilityPct: round(awayLeadProbabilityPct, 1),
     tieProbabilityPct: round(tieProbabilityPct, 1),
-    runGap: round(adjustedRunGap, 2)
+    runGap: round(adjustedRunGap, 2),
+    tieRisk
   }
 }
 
@@ -324,7 +332,8 @@ const buildRow = ({ game, sources, phase }) => {
       f5SideTiePick: baselineF5SideShape.pick,
       f5AwayLeadProbabilityPct: baselineF5SideShape.awayLeadProbabilityPct,
       f5TieProbabilityPct: baselineF5SideShape.tieProbabilityPct,
-      f5RunGap: baselineF5SideShape.runGap
+      f5RunGap: baselineF5SideShape.runGap,
+      f5TieRisk: baselineF5SideShape.tieRisk
     },
     addendum,
     adjusted: {
@@ -336,6 +345,7 @@ const buildRow = ({ game, sources, phase }) => {
       f5AwayLeadProbabilityPct: adjustedF5SideShape.awayLeadProbabilityPct,
       f5TieProbabilityPct: adjustedF5SideShape.tieProbabilityPct,
       f5RunGap: adjustedF5SideShape.runGap,
+      f5TieRisk: adjustedF5SideShape.tieRisk,
       awayFirst5LeadProbabilityPctDelta: addendum.adjustments.awayFirst5LeadProbabilityPct
     },
     actual: {
@@ -486,7 +496,8 @@ const writeReports = ({ date, rows, sources }) => {
         : 'n/a'
       const f5 = `${row.baseline.f5TotalLean} ${row.baseline.f5Projection}/${row.baseline.f5Line} (${hitLabel(row.results.baselineF5TotalHit)}; ${baseQuality}) -> ${row.adjusted.f5TotalLean} ${row.adjusted.f5Projection}/${row.baseline.f5Line} (${hitLabel(row.results.adjustedF5TotalHit)}; ${addQuality})`
       const f5Side = `${row.baseline.f5SideTiePick} ${pct(row.baseline.f5AwayLeadProbabilityPct)} away / ${pct(row.baseline.f5TieProbabilityPct)} tie (${hitLabel(row.results.baselineF5SideTieHit)}) -> ${row.adjusted.f5SideTiePick} ${pct(row.adjusted.f5AwayLeadProbabilityPct)} away / ${pct(row.adjusted.f5TieProbabilityPct)} tie (${hitLabel(row.results.adjustedF5SideTieHit)})`
-      const actual = `FI ${row.actual.firstInningYes ? 'YRFI' : 'NRFI'}, F5 ${row.actual.f5Total} ${row.actual.f5TotalSide}, ${row.actual.f5Side}`
+      const tieRisk = row.adjusted.f5TieRisk && row.adjusted.f5TieRisk !== 'low' ? `, tie risk ${row.adjusted.f5TieRisk}` : ''
+      const actual = `FI ${row.actual.firstInningYes ? 'YRFI' : 'NRFI'}, F5 ${row.actual.f5Total} ${row.actual.f5TotalSide}, ${row.actual.f5Side}${tieRisk}`
       return `| ${row.title} | ${src} | ${fi} | ${f5} | ${f5Side} | ${actual} |`
     }),
     ''

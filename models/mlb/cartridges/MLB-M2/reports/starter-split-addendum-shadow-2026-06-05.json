@@ -1,0 +1,1739 @@
+{
+  "summary": {
+    "date": "2026-06-05",
+    "sourceRows": {
+      "espn": 30,
+      "statmuse": 30
+    },
+    "sourceCoverage": {
+      "games": 15,
+      "fullEspnGames": 0,
+      "fullStatmuseGames": 0
+    },
+    "firstInning": {
+      "baseline": {
+        "graded": 15,
+        "hits": 11,
+        "misses": 4,
+        "hitRate": 0.7333333333333333
+      },
+      "adjusted": {
+        "graded": 15,
+        "hits": 11,
+        "misses": 4,
+        "hitRate": 0.7333333333333333
+      },
+      "baselineHighConfidenceMisses": [],
+      "adjustedHighConfidenceMisses": []
+    },
+    "first5Total": {
+      "baseline": {
+        "graded": 11,
+        "hits": 8,
+        "misses": 3,
+        "hitRate": 0.7272727272727273
+      },
+      "adjusted": {
+        "graded": 11,
+        "hits": 8,
+        "misses": 3,
+        "hitRate": 0.7272727272727273
+      },
+      "baselineQuality": {
+        "graded": 12,
+        "buckets": {
+          "close-miss": 2,
+          "clean-hit": 7,
+          "close-hit": 1,
+          "severe-miss": 2
+        },
+        "confidenceAlignment": {
+          "neutral": 3,
+          "aligned": 7,
+          "overconfident": 2
+        },
+        "averageModelEdge": 2.13,
+        "averageDirectionalModelEdge": 3.23,
+        "averageDirectionalActualMargin": 2.08,
+        "averageError": 2.72
+      },
+      "adjustedQuality": {
+        "graded": 12,
+        "buckets": {
+          "close-miss": 2,
+          "clean-hit": 7,
+          "close-hit": 1,
+          "severe-miss": 2
+        },
+        "confidenceAlignment": {
+          "neutral": 3,
+          "aligned": 7,
+          "overconfident": 2
+        },
+        "averageModelEdge": 2.13,
+        "averageDirectionalModelEdge": 3.23,
+        "averageDirectionalActualMargin": 2.08,
+        "averageError": 2.72
+      }
+    },
+    "first5SideTie": {
+      "baseline": {
+        "graded": 10,
+        "hits": 4,
+        "misses": 6,
+        "hitRate": 0.4
+      },
+      "adjusted": {
+        "graded": 10,
+        "hits": 4,
+        "misses": 6,
+        "hitRate": 0.4
+      }
+    },
+    "first5Moneyline": {
+      "baseline": {
+        "graded": 6,
+        "hits": 3,
+        "misses": 3,
+        "hitRate": 0.5
+      },
+      "adjusted": {
+        "graded": 6,
+        "hits": 3,
+        "misses": 3,
+        "hitRate": 0.5
+      }
+    }
+  },
+  "rows": [
+    {
+      "gameId": "mlb-823943",
+      "title": "Angels @ Dodgers",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 63.5,
+        "f5TotalLean": "Over",
+        "f5Projection": 5.3,
+        "f5Line": 0,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 49.2,
+        "f5TieProbabilityPct": 31.6,
+        "f5RunGap": -0.1,
+        "f5TieRisk": "low"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 63.5,
+        "f5TotalLean": "Over",
+        "f5Projection": 5.3,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 49.2,
+        "f5TieProbabilityPct": 31.6,
+        "f5RunGap": -0.1,
+        "f5TieRisk": "low",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 0,
+        "f5TotalSide": "Push",
+        "f5Side": "Tie",
+        "awayFirst5Runs": 0,
+        "homeFirst5Runs": 0
+      },
+      "results": {
+        "baselineFirstInningHit": false,
+        "adjustedFirstInningHit": false,
+        "baselineF5TotalHit": null,
+        "adjustedF5TotalHit": null,
+        "baselineF5SideTieHit": true,
+        "adjustedF5SideTieHit": true,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 5.3,
+          "directionalModelEdge": 5.3,
+          "actualMargin": 0,
+          "directionalActualMargin": 0,
+          "coverBy": 0,
+          "missBy": 0,
+          "error": 5.3,
+          "quality": "close-miss",
+          "confidenceAlignment": "neutral"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 5.3,
+          "directionalModelEdge": 5.3,
+          "actualMargin": 0,
+          "directionalActualMargin": 0,
+          "coverBy": 0,
+          "missBy": 0,
+          "error": 5.3,
+          "quality": "close-miss",
+          "confidenceAlignment": "neutral"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-824186",
+      "title": "Athletics @ Astros",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 54.1,
+        "f5TotalLean": "Over",
+        "f5Projection": 4.1,
+        "f5Line": 0,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 49.2,
+        "f5TieProbabilityPct": 31.6,
+        "f5RunGap": -0.1,
+        "f5TieRisk": "high"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 54.1,
+        "f5TotalLean": "Over",
+        "f5Projection": 4.1,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 49.2,
+        "f5TieProbabilityPct": 31.6,
+        "f5RunGap": -0.1,
+        "f5TieRisk": "high",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 5,
+        "f5TotalSide": "Over",
+        "f5Side": "Home",
+        "awayFirst5Runs": 0,
+        "homeFirst5Runs": 5
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 4.1,
+          "directionalModelEdge": 4.1,
+          "actualMargin": 5,
+          "directionalActualMargin": 5,
+          "coverBy": 5,
+          "missBy": 0,
+          "error": 0.9,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 4.1,
+          "directionalModelEdge": 4.1,
+          "actualMargin": 5,
+          "directionalActualMargin": 5,
+          "coverBy": 5,
+          "missBy": 0,
+          "error": 0.9,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-824350",
+      "title": "Brewers @ Rockies",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 57.5,
+        "f5TotalLean": "Over",
+        "f5Projection": 4.5,
+        "f5Line": 0,
+        "f5SideTiePick": "Home",
+        "f5AwayLeadProbabilityPct": 46,
+        "f5TieProbabilityPct": 22,
+        "f5RunGap": -0.5,
+        "f5TieRisk": "low"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 57.5,
+        "f5TotalLean": "Over",
+        "f5Projection": 4.5,
+        "f5SideTiePick": "Home",
+        "f5AwayLeadProbabilityPct": 46,
+        "f5TieProbabilityPct": 22,
+        "f5RunGap": -0.5,
+        "f5TieRisk": "low",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 4,
+        "f5TotalSide": "Over",
+        "f5Side": "Home",
+        "awayFirst5Runs": 1,
+        "homeFirst5Runs": 3
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": true,
+        "adjustedF5SideTieHit": true,
+        "baselineF5MoneylineHit": true,
+        "adjustedF5MoneylineHit": true,
+        "baselineF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 4.5,
+          "directionalModelEdge": 4.5,
+          "actualMargin": 4,
+          "directionalActualMargin": 4,
+          "coverBy": 4,
+          "missBy": 0,
+          "error": 0.5,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 4.5,
+          "directionalModelEdge": 4.5,
+          "actualMargin": 4,
+          "directionalActualMargin": 4,
+          "coverBy": 4,
+          "missBy": 0,
+          "error": 0.5,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-824673",
+      "title": "Giants @ Cubs",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 64.1,
+        "f5TotalLean": "Pass",
+        "f5Projection": 5.4,
+        "f5Line": 5.5,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 56.4,
+        "f5TieProbabilityPct": 14.8,
+        "f5RunGap": 0.8,
+        "f5TieRisk": "low"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 64.1,
+        "f5TotalLean": "Pass",
+        "f5Projection": 5.4,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 56.4,
+        "f5TieProbabilityPct": 14.8,
+        "f5RunGap": 0.8,
+        "f5TieRisk": "low",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 9,
+        "f5TotalSide": "Over",
+        "f5Side": "Away",
+        "awayFirst5Runs": 9,
+        "homeFirst5Runs": 0
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": null,
+        "adjustedF5TotalHit": null,
+        "baselineF5SideTieHit": true,
+        "adjustedF5SideTieHit": true,
+        "baselineF5MoneylineHit": true,
+        "adjustedF5MoneylineHit": true,
+        "baselineF5TotalQuality": null,
+        "adjustedF5TotalQuality": null
+      }
+    },
+    {
+      "gameId": "mlb-822892",
+      "title": "Guardians @ Rangers",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 53.3,
+        "f5TotalLean": "Over",
+        "f5Projection": 4,
+        "f5Line": 0,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 53.2,
+        "f5TieProbabilityPct": 24.4,
+        "f5RunGap": 0.4,
+        "f5TieRisk": "low"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 53.3,
+        "f5TotalLean": "Over",
+        "f5Projection": 4,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 53.2,
+        "f5TieProbabilityPct": 24.4,
+        "f5RunGap": 0.4,
+        "f5TieRisk": "low",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 2,
+        "f5TotalSide": "Over",
+        "f5Side": "Away",
+        "awayFirst5Runs": 2,
+        "homeFirst5Runs": 0
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": null,
+        "adjustedF5SideTieHit": null,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 4,
+          "directionalModelEdge": 4,
+          "actualMargin": 2,
+          "directionalActualMargin": 2,
+          "coverBy": 2,
+          "missBy": 0,
+          "error": 2,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 4,
+          "directionalModelEdge": 4,
+          "actualMargin": 2,
+          "directionalActualMargin": 2,
+          "coverBy": 2,
+          "missBy": 0,
+          "error": 2,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-824271",
+      "title": "Mariners @ Tigers",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 60.6,
+        "f5TotalLean": "Under",
+        "f5Projection": 2.5,
+        "f5Line": 3.5,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 55.6,
+        "f5TieProbabilityPct": 17.2,
+        "f5RunGap": 0.7,
+        "f5TieRisk": "low"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 60.6,
+        "f5TotalLean": "Under",
+        "f5Projection": 2.5,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 55.6,
+        "f5TieProbabilityPct": 17.2,
+        "f5RunGap": 0.7,
+        "f5TieRisk": "low",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 4,
+        "f5TotalSide": "Over",
+        "f5Side": "Home",
+        "awayFirst5Runs": 1,
+        "homeFirst5Runs": 3
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": false,
+        "adjustedF5TotalHit": false,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": false,
+        "adjustedF5MoneylineHit": false,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1,
+          "directionalModelEdge": 1,
+          "actualMargin": 0.5,
+          "directionalActualMargin": -0.5,
+          "coverBy": 0,
+          "missBy": 0.5,
+          "error": 1.5,
+          "quality": "close-miss",
+          "confidenceAlignment": "neutral"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1,
+          "directionalModelEdge": 1,
+          "actualMargin": 0.5,
+          "directionalActualMargin": -0.5,
+          "coverBy": 0,
+          "missBy": 0.5,
+          "error": 1.5,
+          "quality": "close-miss",
+          "confidenceAlignment": "neutral"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-823293",
+      "title": "Mets @ Padres",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "NRFI",
+        "firstInningYesPct": 46.6,
+        "f5TotalLean": "Over",
+        "f5Projection": 3.3,
+        "f5Line": 0,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 52.4,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": 0.3,
+        "f5TieRisk": "watch"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "NRFI",
+        "firstInningYesPct": 46.6,
+        "f5TotalLean": "Over",
+        "f5Projection": 3.3,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 52.4,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": 0.3,
+        "f5TieRisk": "watch",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 4,
+        "f5TotalSide": "Over",
+        "f5Side": "Away",
+        "awayFirst5Runs": 4,
+        "homeFirst5Runs": 0
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": null,
+        "adjustedF5SideTieHit": null,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 3.3,
+          "directionalModelEdge": 3.3,
+          "actualMargin": 4,
+          "directionalActualMargin": 4,
+          "coverBy": 4,
+          "missBy": 0,
+          "error": 0.7,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 3.3,
+          "directionalModelEdge": 3.3,
+          "actualMargin": 4,
+          "directionalActualMargin": 4,
+          "coverBy": 4,
+          "missBy": 0,
+          "error": 0.7,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-825073",
+      "title": "Nationals @ Diamondbacks",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "NRFI",
+        "firstInningYesPct": 48.6,
+        "f5TotalLean": "Over",
+        "f5Projection": 3.5,
+        "f5Line": 0,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 52.4,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": 0.3,
+        "f5TieRisk": "watch"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "NRFI",
+        "firstInningYesPct": 48.6,
+        "f5TotalLean": "Over",
+        "f5Projection": 3.5,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 52.4,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": 0.3,
+        "f5TieRisk": "watch",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 8,
+        "f5TotalSide": "Over",
+        "f5Side": "Away",
+        "awayFirst5Runs": 7,
+        "homeFirst5Runs": 1
+      },
+      "results": {
+        "baselineFirstInningHit": false,
+        "adjustedFirstInningHit": false,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": null,
+        "adjustedF5SideTieHit": null,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 3.5,
+          "directionalModelEdge": 3.5,
+          "actualMargin": 8,
+          "directionalActualMargin": 8,
+          "coverBy": 8,
+          "missBy": 0,
+          "error": 4.5,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 3.5,
+          "directionalModelEdge": 3.5,
+          "actualMargin": 8,
+          "directionalActualMargin": 8,
+          "coverBy": 8,
+          "missBy": 0,
+          "error": 4.5,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-822810",
+      "title": "Orioles @ Blue Jays",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 61.3,
+        "f5TotalLean": "Under",
+        "f5Projection": 2.7,
+        "f5Line": 4.5,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 50,
+        "f5TieProbabilityPct": 34,
+        "f5RunGap": 0,
+        "f5TieRisk": "low"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 61.3,
+        "f5TotalLean": "Under",
+        "f5Projection": 2.7,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 50,
+        "f5TieProbabilityPct": 34,
+        "f5RunGap": 0,
+        "f5TieRisk": "low",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 4,
+        "f5TotalSide": "Under",
+        "f5Side": "Home",
+        "awayFirst5Runs": 1,
+        "homeFirst5Runs": 3
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1.8,
+          "directionalModelEdge": 1.8,
+          "actualMargin": -0.5,
+          "directionalActualMargin": 0.5,
+          "coverBy": 0.5,
+          "missBy": 0,
+          "error": 1.3,
+          "quality": "close-hit",
+          "confidenceAlignment": "neutral"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1.8,
+          "directionalModelEdge": 1.8,
+          "actualMargin": -0.5,
+          "directionalActualMargin": 0.5,
+          "coverBy": 0.5,
+          "missBy": 0,
+          "error": 1.3,
+          "quality": "close-hit",
+          "confidenceAlignment": "neutral"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-824914",
+      "title": "Pirates @ Braves",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 59.1,
+        "f5TotalLean": "Under",
+        "f5Projection": 2.3,
+        "f5Line": 4.5,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 58.8,
+        "f5TieProbabilityPct": 7.6,
+        "f5RunGap": 1.1,
+        "f5TieRisk": "low"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 59.1,
+        "f5TotalLean": "Under",
+        "f5Projection": 2.3,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 58.8,
+        "f5TieProbabilityPct": 7.6,
+        "f5RunGap": 1.1,
+        "f5TieRisk": "low",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 9,
+        "f5TotalSide": "Over",
+        "f5Side": "Home",
+        "awayFirst5Runs": 3,
+        "homeFirst5Runs": 6
+      },
+      "results": {
+        "baselineFirstInningHit": false,
+        "adjustedFirstInningHit": false,
+        "baselineF5TotalHit": false,
+        "adjustedF5TotalHit": false,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": false,
+        "adjustedF5MoneylineHit": false,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -2.2,
+          "directionalModelEdge": 2.2,
+          "actualMargin": 4.5,
+          "directionalActualMargin": -4.5,
+          "coverBy": 0,
+          "missBy": 4.5,
+          "error": 6.7,
+          "quality": "severe-miss",
+          "confidenceAlignment": "overconfident"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -2.2,
+          "directionalModelEdge": 2.2,
+          "actualMargin": 4.5,
+          "directionalActualMargin": -4.5,
+          "coverBy": 0,
+          "missBy": 4.5,
+          "error": 6.7,
+          "quality": "severe-miss",
+          "confidenceAlignment": "overconfident"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-823860",
+      "title": "Rays @ Marlins",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 54.1,
+        "f5TotalLean": "Pass",
+        "f5Projection": 4.1,
+        "f5Line": 4.5,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 47.6,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": -0.3,
+        "f5TieRisk": "watch"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 54.1,
+        "f5TotalLean": "Pass",
+        "f5Projection": 4.1,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 47.6,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": -0.3,
+        "f5TieRisk": "watch",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 4,
+        "f5TotalSide": "Under",
+        "f5Side": "Away",
+        "awayFirst5Runs": 4,
+        "homeFirst5Runs": 0
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": null,
+        "adjustedF5TotalHit": null,
+        "baselineF5SideTieHit": null,
+        "adjustedF5SideTieHit": null,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": null,
+        "adjustedF5TotalQuality": null
+      }
+    },
+    {
+      "gameId": "mlb-823538",
+      "title": "Red Sox @ Yankees",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 62.8,
+        "f5TotalLean": "Under",
+        "f5Projection": 2.9,
+        "f5Line": 4.5,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 54.8,
+        "f5TieProbabilityPct": 19.6,
+        "f5RunGap": 0.6,
+        "f5TieRisk": "low"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 62.8,
+        "f5TotalLean": "Under",
+        "f5Projection": 2.9,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 54.8,
+        "f5TieProbabilityPct": 19.6,
+        "f5RunGap": 0.6,
+        "f5TieRisk": "low",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 8,
+        "f5TotalSide": "Over",
+        "f5Side": "Away",
+        "awayFirst5Runs": 5,
+        "homeFirst5Runs": 3
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": false,
+        "adjustedF5TotalHit": false,
+        "baselineF5SideTieHit": true,
+        "adjustedF5SideTieHit": true,
+        "baselineF5MoneylineHit": true,
+        "adjustedF5MoneylineHit": true,
+        "baselineF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1.6,
+          "directionalModelEdge": 1.6,
+          "actualMargin": 3.5,
+          "directionalActualMargin": -3.5,
+          "coverBy": 0,
+          "missBy": 3.5,
+          "error": 5.1,
+          "quality": "severe-miss",
+          "confidenceAlignment": "overconfident"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Under",
+          "modelEdge": -1.6,
+          "directionalModelEdge": 1.6,
+          "actualMargin": 3.5,
+          "directionalActualMargin": -3.5,
+          "coverBy": 0,
+          "missBy": 3.5,
+          "error": 5.1,
+          "quality": "severe-miss",
+          "confidenceAlignment": "overconfident"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-823049",
+      "title": "Reds @ Cardinals",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 50.5,
+        "f5TotalLean": "Over",
+        "f5Projection": 3.7,
+        "f5Line": 0,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 47.6,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": -0.3,
+        "f5TieRisk": "watch"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 50.5,
+        "f5TotalLean": "Over",
+        "f5Projection": 3.7,
+        "f5SideTiePick": "Pass",
+        "f5AwayLeadProbabilityPct": 47.6,
+        "f5TieProbabilityPct": 26.8,
+        "f5RunGap": -0.3,
+        "f5TieRisk": "watch",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 7,
+        "f5TotalSide": "Over",
+        "f5Side": "Home",
+        "awayFirst5Runs": 3,
+        "homeFirst5Runs": 4
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": null,
+        "adjustedF5SideTieHit": null,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 3.7,
+          "directionalModelEdge": 3.7,
+          "actualMargin": 7,
+          "directionalActualMargin": 7,
+          "coverBy": 7,
+          "missBy": 0,
+          "error": 3.3,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 3.7,
+          "directionalModelEdge": 3.7,
+          "actualMargin": 7,
+          "directionalActualMargin": 7,
+          "coverBy": 7,
+          "missBy": 0,
+          "error": 3.3,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-823699",
+      "title": "Royals @ Twins",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 51.4,
+        "f5TotalLean": "Over",
+        "f5Projection": 3.8,
+        "f5Line": 0,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 51.6,
+        "f5TieProbabilityPct": 29.2,
+        "f5RunGap": 0.2,
+        "f5TieRisk": "watch"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 51.4,
+        "f5TotalLean": "Over",
+        "f5Projection": 3.8,
+        "f5SideTiePick": "Tie",
+        "f5AwayLeadProbabilityPct": 51.6,
+        "f5TieProbabilityPct": 29.2,
+        "f5RunGap": 0.2,
+        "f5TieRisk": "watch",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": true,
+        "f5Total": 3,
+        "f5TotalSide": "Over",
+        "f5Side": "Away",
+        "awayFirst5Runs": 2,
+        "homeFirst5Runs": 1
+      },
+      "results": {
+        "baselineFirstInningHit": true,
+        "adjustedFirstInningHit": true,
+        "baselineF5TotalHit": true,
+        "adjustedF5TotalHit": true,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": null,
+        "adjustedF5MoneylineHit": null,
+        "baselineF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 3.8,
+          "directionalModelEdge": 3.8,
+          "actualMargin": 3,
+          "directionalActualMargin": 3,
+          "coverBy": 3,
+          "missBy": 0,
+          "error": 0.8,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        },
+        "adjustedF5TotalQuality": {
+          "lean": "Over",
+          "modelEdge": 3.8,
+          "directionalModelEdge": 3.8,
+          "actualMargin": 3,
+          "directionalActualMargin": 3,
+          "coverBy": 3,
+          "missBy": 0,
+          "error": 0.8,
+          "quality": "clean-hit",
+          "confidenceAlignment": "aligned"
+        }
+      }
+    },
+    {
+      "gameId": "mlb-823455",
+      "title": "White Sox @ Phillies",
+      "sourceCoverage": {
+        "espn": [
+          false,
+          false
+        ],
+        "statmuse": [
+          false,
+          false
+        ]
+      },
+      "baseline": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 54.1,
+        "f5TotalLean": "Pass",
+        "f5Projection": 4.1,
+        "f5Line": 4.5,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 60.4,
+        "f5TieProbabilityPct": 6,
+        "f5RunGap": 1.3,
+        "f5TieRisk": "low"
+      },
+      "addendum": {
+        "away": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "home": {
+          "earlyLeakageScore": 0,
+          "f5StabilityScore": 0,
+          "f5SideScore": 0,
+          "reasons": [],
+          "sourceStatus": {
+            "espn": "",
+            "statmuse": ""
+          }
+        },
+        "adjustments": {
+          "yrfiProbabilityPct": 0,
+          "first5TotalRuns": 0,
+          "awayFirst5LeadProbabilityPct": 0
+        },
+        "caps": {
+          "yrfiProbabilityPct": 4,
+          "first5TotalRuns": 0.35,
+          "first5LeadProbabilityPct": 3
+        },
+        "mode": "shadow"
+      },
+      "adjusted": {
+        "firstInningPick": "YRFI",
+        "firstInningYesPct": 54.1,
+        "f5TotalLean": "Pass",
+        "f5Projection": 4.1,
+        "f5SideTiePick": "Away",
+        "f5AwayLeadProbabilityPct": 60.4,
+        "f5TieProbabilityPct": 6,
+        "f5RunGap": 1.3,
+        "f5TieRisk": "low",
+        "awayFirst5LeadProbabilityPctDelta": 0
+      },
+      "actual": {
+        "firstInningYes": false,
+        "f5Total": 10,
+        "f5TotalSide": "Over",
+        "f5Side": "Home",
+        "awayFirst5Runs": 4,
+        "homeFirst5Runs": 6
+      },
+      "results": {
+        "baselineFirstInningHit": false,
+        "adjustedFirstInningHit": false,
+        "baselineF5TotalHit": null,
+        "adjustedF5TotalHit": null,
+        "baselineF5SideTieHit": false,
+        "adjustedF5SideTieHit": false,
+        "baselineF5MoneylineHit": false,
+        "adjustedF5MoneylineHit": false,
+        "baselineF5TotalQuality": null,
+        "adjustedF5TotalQuality": null
+      }
+    }
+  ]
+}

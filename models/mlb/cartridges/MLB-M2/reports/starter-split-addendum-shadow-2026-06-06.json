@@ -136,7 +136,8 @@
         "f5SideTiePick": "Home",
         "f5AwayLeadProbabilityPct": 46,
         "f5TieProbabilityPct": 22,
-        "f5RunGap": -0.5
+        "f5RunGap": -0.5,
+        "f5TieRisk": "low"
       },
       "addendum": {
         "away": {
@@ -196,6 +197,7 @@
         "f5AwayLeadProbabilityPct": 44.9,
         "f5TieProbabilityPct": 18.7,
         "f5RunGap": -0.64,
+        "f5TieRisk": "low",
         "awayFirst5LeadProbabilityPctDelta": -1.1
       },
       "actual": {
@@ -252,7 +254,8 @@
         "f5SideTiePick": "Pass",
         "f5AwayLeadProbabilityPct": 53.2,
         "f5TieProbabilityPct": 24.4,
-        "f5RunGap": 0.4
+        "f5RunGap": 0.4,
+        "f5TieRisk": "low"
       },
       "addendum": {
         "away": {
@@ -311,6 +314,7 @@
         "f5AwayLeadProbabilityPct": 51.4,
         "f5TieProbabilityPct": 29.8,
         "f5RunGap": 0.17,
+        "f5TieRisk": "watch",
         "awayFirst5LeadProbabilityPctDelta": -1.8
       },
       "actual": {
@@ -378,7 +382,8 @@
         "f5SideTiePick": "Away",
         "f5AwayLeadProbabilityPct": 55.6,
         "f5TieProbabilityPct": 17.2,
-        "f5RunGap": 0.7
+        "f5RunGap": 0.7,
+        "f5TieRisk": "low"
       },
       "addendum": {
         "away": {
@@ -438,6 +443,7 @@
         "f5AwayLeadProbabilityPct": 57.7,
         "f5TieProbabilityPct": 10.9,
         "f5RunGap": 0.96,
+        "f5TieRisk": "low",
         "awayFirst5LeadProbabilityPctDelta": 2.1
       },
       "actual": {
@@ -505,7 +511,8 @@
         "f5SideTiePick": "Tie",
         "f5AwayLeadProbabilityPct": 50.8,
         "f5TieProbabilityPct": 31.6,
-        "f5RunGap": 0.1
+        "f5RunGap": 0.1,
+        "f5TieRisk": "high"
       },
       "addendum": {
         "away": {
@@ -565,6 +572,7 @@
         "f5AwayLeadProbabilityPct": 49.8,
         "f5TieProbabilityPct": 33.4,
         "f5RunGap": -0.02,
+        "f5TieRisk": "high",
         "awayFirst5LeadProbabilityPctDelta": -1
       },
       "actual": {
@@ -632,7 +640,8 @@
         "f5SideTiePick": "Tie",
         "f5AwayLeadProbabilityPct": 49.2,
         "f5TieProbabilityPct": 31.6,
-        "f5RunGap": -0.1
+        "f5RunGap": -0.1,
+        "f5TieRisk": "high"
       },
       "addendum": {
         "away": {
@@ -692,6 +701,7 @@
         "f5AwayLeadProbabilityPct": 49.2,
         "f5TieProbabilityPct": 31.6,
         "f5RunGap": -0.1,
+        "f5TieRisk": "high",
         "awayFirst5LeadProbabilityPctDelta": 0
       },
       "actual": {
@@ -759,7 +769,8 @@
         "f5SideTiePick": "Pass",
         "f5AwayLeadProbabilityPct": 52.4,
         "f5TieProbabilityPct": 26.8,
-        "f5RunGap": 0.3
+        "f5RunGap": 0.3,
+        "f5TieRisk": "watch"
       },
       "addendum": {
         "away": {
@@ -819,6 +830,7 @@
         "f5AwayLeadProbabilityPct": 52.4,
         "f5TieProbabilityPct": 26.8,
         "f5RunGap": 0.3,
+        "f5TieRisk": "watch",
         "awayFirst5LeadProbabilityPctDelta": 0
       },
       "actual": {
@@ -864,7 +876,8 @@
         "f5SideTiePick": "Away",
         "f5AwayLeadProbabilityPct": 57.2,
         "f5TieProbabilityPct": 12.4,
-        "f5RunGap": 0.9
+        "f5RunGap": 0.9,
+        "f5TieRisk": "low"
       },
       "addendum": {
         "away": {
@@ -924,6 +937,7 @@
         "f5AwayLeadProbabilityPct": 58.6,
         "f5TieProbabilityPct": 8.2,
         "f5RunGap": 1.08,
+        "f5TieRisk": "low",
         "awayFirst5LeadProbabilityPctDelta": 1.4
       },
       "actual": {
@@ -969,7 +983,8 @@
         "f5SideTiePick": "Tie",
         "f5AwayLeadProbabilityPct": 51.6,
         "f5TieProbabilityPct": 29.2,
-        "f5RunGap": 0.2
+        "f5RunGap": 0.2,
+        "f5TieRisk": "watch"
       },
       "addendum": {
         "away": {
@@ -1029,6 +1044,7 @@
         "f5AwayLeadProbabilityPct": 50.6,
         "f5TieProbabilityPct": 32.2,
         "f5RunGap": 0.07,
+        "f5TieRisk": "watch",
         "awayFirst5LeadProbabilityPctDelta": -1
       },
       "actual": {
@@ -1096,7 +1112,8 @@
         "f5SideTiePick": "Home",
         "f5AwayLeadProbabilityPct": 42.8,
         "f5TieProbabilityPct": 12.4,
-        "f5RunGap": -0.9
+        "f5RunGap": -0.9,
+        "f5TieRisk": "low"
       },
       "addendum": {
         "away": {
@@ -1156,6 +1173,7 @@
         "f5AwayLeadProbabilityPct": 41.5,
         "f5TieProbabilityPct": 8.5,
         "f5RunGap": -1.06,
+        "f5TieRisk": "low",
         "awayFirst5LeadProbabilityPctDelta": -1.3
       },
       "actual": {
@@ -1223,7 +1241,8 @@
         "f5SideTiePick": "Pass",
         "f5AwayLeadProbabilityPct": 52.4,
         "f5TieProbabilityPct": 26.8,
-        "f5RunGap": 0.3
+        "f5RunGap": 0.3,
+        "f5TieRisk": "watch"
       },
       "addendum": {
         "away": {
@@ -1282,6 +1301,7 @@
         "f5AwayLeadProbabilityPct": 52.9,
         "f5TieProbabilityPct": 25.3,
         "f5RunGap": 0.36,
+        "f5TieRisk": "low",
         "awayFirst5LeadProbabilityPctDelta": 0.5
       },
       "actual": {
@@ -1327,7 +1347,8 @@
         "f5SideTiePick": "Away",
         "f5AwayLeadProbabilityPct": 55.6,
         "f5TieProbabilityPct": 17.2,
-        "f5RunGap": 0.7
+        "f5RunGap": 0.7,
+        "f5TieRisk": "low"
       },
       "addendum": {
         "away": {
@@ -1387,6 +1408,7 @@
         "f5AwayLeadProbabilityPct": 55,
         "f5TieProbabilityPct": 19,
         "f5RunGap": 0.63,
+        "f5TieRisk": "low",
         "awayFirst5LeadProbabilityPctDelta": -0.6
       },
       "actual": {
@@ -1454,7 +1476,8 @@
         "f5SideTiePick": "Away",
         "f5AwayLeadProbabilityPct": 56.4,
         "f5TieProbabilityPct": 14.8,
-        "f5RunGap": 0.8
+        "f5RunGap": 0.8,
+        "f5TieRisk": "low"
       },
       "addendum": {
         "away": {
@@ -1504,6 +1527,7 @@
         "f5AwayLeadProbabilityPct": 56.7,
         "f5TieProbabilityPct": 13.9,
         "f5RunGap": 0.84,
+        "f5TieRisk": "low",
         "awayFirst5LeadProbabilityPctDelta": 0.3
       },
       "actual": {
@@ -1549,7 +1573,8 @@
         "f5SideTiePick": "Tie",
         "f5AwayLeadProbabilityPct": 51.6,
         "f5TieProbabilityPct": 29.2,
-        "f5RunGap": 0.2
+        "f5RunGap": 0.2,
+        "f5TieRisk": "low"
       },
       "addendum": {
         "away": {
@@ -1609,6 +1634,7 @@
         "f5AwayLeadProbabilityPct": 51.3,
         "f5TieProbabilityPct": 30.1,
         "f5RunGap": 0.16,
+        "f5TieRisk": "low",
         "awayFirst5LeadProbabilityPctDelta": -0.3
       },
       "actual": {
@@ -1676,7 +1702,8 @@
         "f5SideTiePick": "Home",
         "f5AwayLeadProbabilityPct": 38,
         "f5TieProbabilityPct": 6,
-        "f5RunGap": -1.5
+        "f5RunGap": -1.5,
+        "f5TieRisk": "low"
       },
       "addendum": {
         "away": {
@@ -1736,6 +1763,7 @@
         "f5AwayLeadProbabilityPct": 37.3,
         "f5TieProbabilityPct": 6,
         "f5RunGap": -1.59,
+        "f5TieRisk": "low",
         "awayFirst5LeadProbabilityPctDelta": -0.7
       },
       "actual": {
@@ -1792,7 +1820,8 @@
         "f5SideTiePick": "Away",
         "f5AwayLeadProbabilityPct": 57.2,
         "f5TieProbabilityPct": 12.4,
-        "f5RunGap": 0.9
+        "f5RunGap": 0.9,
+        "f5TieRisk": "low"
       },
       "addendum": {
         "away": {
@@ -1852,6 +1881,7 @@
         "f5AwayLeadProbabilityPct": 58.6,
         "f5TieProbabilityPct": 8.2,
         "f5RunGap": 1.08,
+        "f5TieRisk": "low",
         "awayFirst5LeadProbabilityPctDelta": 1.4
       },
       "actual": {
