@@ -77,9 +77,21 @@ The report compares:
 
 - baseline YRFI/NRFI hit rate and high-confidence misses
 - addendum-adjusted YRFI/NRFI hit rate and high-confidence misses
-- baseline F5 total lean results
-- addendum-adjusted F5 total lean results
+- baseline F5 total lean results, including margin-quality buckets
+- addendum-adjusted F5 total lean results, including whether severe misses were reduced
+- baseline and addendum F5 side/tie classification
+- baseline and addendum F5 ML classification
+- modeled F5 tie-risk flags for games where push probability should affect confidence
 - source coverage for both ESPN and StatMuse starters
+
+F5 total margin-quality buckets:
+
+- `clean-hit`: outcome cleared the lean by at least one run.
+- `solid-hit`: outcome cleared the lean by more than a close margin.
+- `close-hit`: result was correct but near the line.
+- `close-miss`: result missed near the line and should not be treated as a model failure equal to a blowout miss.
+- `bad-miss`: result missed by a meaningful margin.
+- `severe-miss`: result missed badly enough to warrant confidence or feature-lane caution.
 
 ## Promotion Rule
 
@@ -88,6 +100,8 @@ Do not wire this into live M2 scoring until the shadow reports show at least one
 - lower confidence on bad YRFI misses
 - preserve correct NRFI hits
 - improve F5 total/tie classification
+- improve F5 O/U margin quality, especially by avoiding severe misses
+- improve F5 ML grading or attach useful tie-risk flags without damaging correct side reads
 - leave already-correct picks mostly unchanged
 
 When promoted, keep `starterSplitAddendum` in `analysis.mlbProjection` with `mode: 'active'` and keep the capped deltas visible for audit.

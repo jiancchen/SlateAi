@@ -26,6 +26,7 @@ Required prior-day checks:
 - `mlb_side_backtests` has one graded row per prior-day board pick for `board-moneyline-v1.1-sanity`.
 - the postmortem names the actual failure shape before any next-day model change is trusted.
 - if an MLB-M2-style branch is being evaluated, rerun the category/lane backtest and record whether the prior day was side, F5/timing, total, first-inning, live-only, or no-pregame-ML shape.
+- if the starter-split addendum is being evaluated, run it as shadow only and record source coverage plus YRFI/NRFI, F5 O/U, F5 side/tie, and F5 ML grading before trusting any confidence change.
 
 If the side rows are missing, do not start the new slate. Fix closeout first.
 
@@ -223,6 +224,9 @@ Current hard rule:
 - Guard null and blank line candidates before number conversion. `Number(null)` becomes `0`, and a non-positive F5 total line is a hard presentation/data bug, not a fallback.
 - If the value board applies a tail-overlay adjusted projection, the displayed edge must be recalculated as adjusted projection minus the actual stored line. Preserve the raw/base edge only as diagnostic context.
 - Before deploy, audit value-board F5 O/U rows against the slate payload: displayed line, projected runs, edge, and lean must match stored fields and no row should show a synthetic value such as `F5 2.4` unless a sportsbook/source actually posted that number.
+- F5 ML confidence must account for push/tie risk. Games with a high modeled F5 tie probability, especially low projected F5 totals, should carry a confidence haircut or warning instead of ranking purely by side run edge.
+- F5 O/U confidence must account for edge quality. Thin projected edges, volatile unders, weather/park carry, and chaos tags should reduce displayed confidence even when the lean remains visible.
+- Sort/rank audits should explain why a row moved. For F5 ML, a team can rise because it owns the largest projected F5 run gap; that is a side-gap read, not automatic proof it is the safest value-board bet.
 - Pregame batter Statcast bubbles may use the latest `mlb_hitter_statcast_trend_snapshots` row with `as_of_date <= slate date` when same-day Statcast has not landed yet. The exported trend object should carry `sourceAsOfDate` so stale-but-valid context is auditable.
 
 ## 6. End-of-Day Archive Loop
@@ -260,6 +264,12 @@ npm run data:research:mlb-m2-run-total-stories -- --post-date YYYY-MM-DD --today
 npm run data:research:mlb-m2-state-formulas -- --start 2026-05-10 --end YYYY-MM-DD
 npm run data:research:mlb-starter-split-addendum -- --date YYYY-MM-DD
 ```
+
+Starter-split shadow review must answer:
+- Did ESPN/StatMuse split context lower confidence on bad high-confidence YRFI misses without damaging correct NRFI lanes?
+- Did F5 O/U quality improve by avoiding severe misses, not merely by changing hit rate?
+- Did F5 side/tie and F5 ML grading improve, and were tie-risk flags attached to games where the push path was meaningfully elevated?
+- If a source row is missing from SQL-MLB, record the coverage gap. Do not use JSONL as a fallback.
 
 The postmortem should not stop at `risky`, `veto`, projection error, or average miss. It should first answer:
 

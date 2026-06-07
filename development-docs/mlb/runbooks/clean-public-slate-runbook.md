@@ -134,6 +134,9 @@ The audit fails the run if any MLB game is missing core public-page fields:
 - missing feed data for value-board sections: ML, first 5 ML, first 5 O/U, first inning, total bases, and pitcher K O/U
 - first-five O/U value-board rows that invent presentation lines instead of using stored line fields. Display line source order is `postedFirst5TotalLine`, then `derivedFirst5TotalLine`, then `runShareFirst5TotalLine`; null, blank, zero, or negative F5 total lines are hard failures.
 - first-five O/U rows whose displayed edge is stale after a tail-overlay adjustment. The public edge must equal displayed projection minus the actual stored line; raw/base edge may appear only as diagnostic metadata.
+- first-five O/U rows whose displayed confidence ignores edge quality. Thin edges, volatile unders, weather/park carry, and chaos tags should reduce confidence or add a warning.
+- first-five ML rows whose displayed confidence ignores tie/push risk. Low-scoring games with elevated modeled F5 tie probability need a haircut or tie-risk warning before promotion.
+- first-five ML rows that rise in ranking only because of projected run gap. Confirm the board explains the move as side-gap strength, and do not treat it as safer than a lower-risk row without confidence support.
 - Batter Board presentation with HR, xOPS / LA, and Barrel / EV columns intact
 - HR likely and Hot Hitters feature lanes that respect team scoring context: market underdogs, low projected team totals, or weak implied scoring environments must be suppressed from top promotion unless the artifact carries an explicit exception note
 
@@ -175,6 +178,9 @@ Run this audit whenever the value board changes, when line-source plumbing chang
 - First-five O/U rows must show the actual posted or derived F5 total line from the artifact. Do not derive the visible line from projection and edge.
 - A tail-overlay adjusted projection must also adjust the displayed edge. If the UI shows `Proj X | edge Y`, then `X - line = Y` within rounding tolerance.
 - Null or blank candidates must be rejected before number conversion. A displayed `0`, negative, or implausibly tiny F5 total line should stop the deploy.
+- First-five O/U rows must expose confidence that is consistent with margin quality. A close miss should not look like a clean-hit profile, and severe-miss patterns from prior grading should trigger caution before promotion.
+- First-five ML rows must expose push/tie risk when the modeled F5 tie probability is elevated. Check both the visible warning and the machine-readable value metadata.
+- Ranking checks should compare `sortEdge` and `sortConfidence`. If a row jumps because the run-gap edge is largest, confirm that confidence and warnings still tell the correct story.
 - The public audit should sample both posted-line rows and fallback-line rows, because those are different failure modes.
 - If a slate is already generated and only the public board needs repair, republish scoped dates instead of exporting every historical slate:
 
