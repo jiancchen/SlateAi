@@ -219,6 +219,11 @@ If any of those fail, rerun or patch before trusting the board.
 Current hard rule:
 - First-five O/U rows are research-only after the May 31 failure. Do not publish them as bet-grade value until settled bucket calibration exists for line, ask, model probability, projected-run edge, chaos gate, and date-level walk-forward ROI.
 - The web value board must filter model-owned rows only. Do not add UI-side value math for F5 ML, F5 O/U, totals, scalp trades, or any new market. If a lane is not in the cartridge output, it is not a value-board lane yet.
+- First-five O/U display lines must come from the artifact's actual line fields, in this order: `postedFirst5TotalLine`, `derivedFirst5TotalLine`, then `runShareFirst5TotalLine`. Do not reconstruct a betting line from `projectedFirst5Total - edge`; tail overlays can change the projected runs and make that reconstruction invent fake lines.
+- Guard null and blank line candidates before number conversion. `Number(null)` becomes `0`, and a non-positive F5 total line is a hard presentation/data bug, not a fallback.
+- If the value board applies a tail-overlay adjusted projection, the displayed edge must be recalculated as adjusted projection minus the actual stored line. Preserve the raw/base edge only as diagnostic context.
+- Before deploy, audit value-board F5 O/U rows against the slate payload: displayed line, projected runs, edge, and lean must match stored fields and no row should show a synthetic value such as `F5 2.4` unless a sportsbook/source actually posted that number.
+- Pregame batter Statcast bubbles may use the latest `mlb_hitter_statcast_trend_snapshots` row with `as_of_date <= slate date` when same-day Statcast has not landed yet. The exported trend object should carry `sourceAsOfDate` so stale-but-valid context is auditable.
 
 ## 6. End-of-Day Archive Loop
 

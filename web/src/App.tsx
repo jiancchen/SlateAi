@@ -3682,10 +3682,23 @@ function App() {
         ? Number(first5Total.tailOverlay.adjustedProjectedRuns)
         : awayFirst5Runs + homeFirst5Runs
       const first5Edge = Number(first5Total?.edge)
-      const first5Line = Number.isFinite(first5Edge) ? projectedFirst5Total - first5Edge : Number.NaN
+      const first5LineCandidates = [
+        projection.totals?.postedFirst5TotalLine,
+        projection.totals?.derivedFirst5TotalLine,
+        projection.totals?.runShareFirst5TotalLine
+      ]
+      const first5Line = Number(
+        first5LineCandidates.find(
+          (value) => value !== null && value !== undefined && String(value).trim() !== '' && Number.isFinite(Number(value))
+        )
+      )
+      const first5DisplayEdge =
+        Number.isFinite(projectedFirst5Total) && Number.isFinite(first5Line)
+          ? projectedFirst5Total - first5Line
+          : first5Edge
       const totalProbability = buildTotalProbabilityPct(projectedFirst5Total, first5Line, first5Lean)
-      if (first5Lean && Number.isFinite(first5Edge) && Number.isFinite(first5Line)) {
-        const confidence = clamp(Math.round(Number(totalProbability) || (54 + Math.abs(first5Edge) * 8)), 50, 78)
+      if (first5Lean && Number.isFinite(first5DisplayEdge) && Number.isFinite(first5Line)) {
+        const confidence = clamp(Math.round(Number(totalProbability) || (54 + Math.abs(first5DisplayEdge) * 8)), 50, 78)
         first5TotalRows.push({
           id: `f5-total:${game.id}`,
           category: 'first5-total',
@@ -3699,14 +3712,14 @@ function App() {
           subtitle: game.title,
           confidence,
           sortConfidence: confidence,
-          sortEdge: Math.abs(first5Edge),
-          priceLabel: `Proj ${formatNumber(projectedFirst5Total, 1)} | edge ${formatSignedNumber(first5Edge, 1)}`,
+          sortEdge: Math.abs(first5DisplayEdge),
+          priceLabel: `Proj ${formatNumber(projectedFirst5Total, 1)} | edge ${formatSignedNumber(first5DisplayEdge, 1)}`,
           metaLabel: `${first5Total?.strength || 'Model'} | ${formatNumber(Number(totalProbability), 1)}% model`,
           summary: first5Total?.summary || `${first5Lean} first-five total with ${formatSignedNumber(first5Edge, 1)} M2 run edge.`,
           tags: [
             'M2 F5 O/U',
             first5Total?.strength,
-            `${formatSignedNumber(first5Edge, 1)} runs`,
+            `${formatSignedNumber(first5DisplayEdge, 1)} runs`,
             first5Total?.chaosGate?.warning ? 'chaos warning' : null
           ].filter(Boolean).slice(0, 4),
           invalid: eventState.invalid,
@@ -3720,7 +3733,8 @@ function App() {
             phaseId: 'first5',
             line: first5Line,
             projectedRuns: projectedFirst5Total,
-            edge: first5Edge,
+            edge: first5DisplayEdge,
+            baseEdge: first5Edge,
             strength: first5Total?.strength || '',
             probability: totalProbability,
             valueGate: 'model-owned',

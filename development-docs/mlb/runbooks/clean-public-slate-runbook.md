@@ -132,6 +132,8 @@ The audit fails the run if any MLB game is missing core public-page fields:
 - public props file with total bases, singles, walks, and pitcher strikeout props
 - pitcher strikeout props without DraftKings lineage
 - missing feed data for value-board sections: ML, first 5 ML, first 5 O/U, first inning, total bases, and pitcher K O/U
+- first-five O/U value-board rows that invent presentation lines instead of using stored line fields. Display line source order is `postedFirst5TotalLine`, then `derivedFirst5TotalLine`, then `runShareFirst5TotalLine`; null, blank, zero, or negative F5 total lines are hard failures.
+- first-five O/U rows whose displayed edge is stale after a tail-overlay adjustment. The public edge must equal displayed projection minus the actual stored line; raw/base edge may appear only as diagnostic metadata.
 - Batter Board presentation with HR, xOPS / LA, and Barrel / EV columns intact
 - HR likely and Hot Hitters feature lanes that respect team scoring context: market underdogs, low projected team totals, or weak implied scoring environments must be suppressed from top promotion unless the artifact carries an explicit exception note
 
@@ -164,6 +166,21 @@ Keep these sources attached or named in the public slate metadata:
 - ESPN pitcher splits pages
 - StatMuse starter-vs-opponent history
 - RP36 reliever shadow model artifacts
+- latest hitter Statcast trend snapshot used for each lineup batter. Same-day Statcast can lag pregame, so a snapshot with `as_of_date <= slate date` is valid only when the public trend payload exposes the chosen `sourceAsOfDate`.
+
+## Value-Board Presentation Audit
+
+Run this audit whenever the value board changes, when line-source plumbing changes, or when republishing a slate after a model refresh:
+
+- First-five O/U rows must show the actual posted or derived F5 total line from the artifact. Do not derive the visible line from projection and edge.
+- A tail-overlay adjusted projection must also adjust the displayed edge. If the UI shows `Proj X | edge Y`, then `X - line = Y` within rounding tolerance.
+- Null or blank candidates must be rejected before number conversion. A displayed `0`, negative, or implausibly tiny F5 total line should stop the deploy.
+- The public audit should sample both posted-line rows and fallback-line rows, because those are different failure modes.
+- If a slate is already generated and only the public board needs repair, republish scoped dates instead of exporting every historical slate:
+
+```bash
+npm run publish:site -- --date YYYY-MM-DD --only-dates=YYYY-MM-DD,PRIOR-YYYY-MM-DD
+```
 
 ## Current Production Blockers
 
