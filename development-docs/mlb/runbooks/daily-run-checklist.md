@@ -200,6 +200,21 @@ Required public publish command:
 npm run data:publish:mlb-clean -- --date YYYY-MM-DD --refresh --deploy --live-base https://slate-web-static-1.vercel.app
 ```
 
+After publish, normalize the cached MLB board artifacts into SQL-MLB so the board can be audited and graded from database rows later:
+
+```bash
+npm run data:backfill:mlb-cached-predictions -- --date YYYY-MM-DD
+sqlite3 data-private/warehouse/sports/mlb/sql-mlb.db "select mr.run_date, pr.lane, pr.market_type, count(*) from prediction_rows pr join model_runs mr on mr.model_run_id=pr.model_run_id where mr.model_id='MLB-cached-board' and mr.run_date='YYYY-MM-DD' group by 1,2,3 order by 1,2,3;"
+```
+
+For old cached pages, backfill a range instead:
+
+```bash
+npm run data:backfill:mlb-cached-predictions -- --start YYYY-MM-DD --end YYYY-MM-DD
+```
+
+Expected normalized lanes include moneyline shape, first-inning YRFI/NRFI, F5 ML, F5 totals when present, full-game totals when present, player props, and home-run rows. Treat this as a storage/backfill step: it preserves the cached predictions and artifact lineage in `model_runs`, `model_artifacts`, and `prediction_rows`, but it does not rerun or change the original model picks.
+
 Hard rule for the public board:
 - do not publish MLB through the typed DB loader until the public audit proves field parity
 - do not delete existing non-MLB slate entries while refreshing MLB

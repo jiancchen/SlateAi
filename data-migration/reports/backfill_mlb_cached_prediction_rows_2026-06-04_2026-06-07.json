@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-06-08T00:49:21.688Z",
+  "script": "data-migration/scripts/backfill_mlb_cached_prediction_rows.mjs",
+  "db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "start": "2026-06-04",
+  "end": "2026-06-07",
+  "dry_run": false,
+  "dates": [
+    {
+      "date": "2026-06-04",
+      "rows": 317,
+      "lane_counts": {
+        "ml_shape": 9,
+        "first_inning": 9,
+        "player_prop": 287,
+        "home_run": 12
+      },
+      "game_artifacts": 9,
+      "prop_rows": 287,
+      "prop_sources": [
+        "web/public/data/slates/2026-06-04/props.json"
+      ],
+      "home_run_rows": 12,
+      "home_run_sources": [
+        "web/public/data/slates/2026-06-04/home-runs.json"
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "rows": 508,
+      "lane_counts": {
+        "ml_shape": 15,
+        "first_inning": 15,
+        "first5_ml": 12,
+        "full_total": 7,
+        "player_prop": 447,
+        "home_run": 12
+      },
+      "game_artifacts": 15,
+      "prop_rows": 447,
+      "prop_sources": [
+        "web/public/data/slates/2026-06-05/props.json"
+      ],
+      "home_run_rows": 12,
+      "home_run_sources": [
+        "web/public/data/slates/2026-06-05/home-runs.json"
+      ]
+    },
+    {
+      "date": "2026-06-06",
+      "rows": 401,
+      "lane_counts": {
+        "ml_shape": 15,
+        "first_inning": 15,
+        "first5_ml": 13,
+        "first5_total": 9,
+        "full_total": 11,
+        "player_prop": 326,
+        "home_run": 12
+      },
+      "game_artifacts": 15,
+      "prop_rows": 326,
+      "prop_sources": [
+        "web/public/data/slates/2026-06-06/props.json"
+      ],
+      "home_run_rows": 12,
+      "home_run_sources": [
+        "web/public/data/slates/2026-06-06/home-runs.json"
+      ]
+    },
+    {
+      "date": "2026-06-07",
+      "rows": 521,
+      "lane_counts": {
+        "ml_shape": 15,
+        "first_inning": 15,
+        "first5_ml": 14,
+        "first5_total": 7,
+        "full_total": 13,
+        "player_prop": 445,
+        "home_run": 12
+      },
+      "game_artifacts": 15,
+      "prop_rows": 445,
+      "prop_sources": [
+        "web/public/data/slates/2026-06-07/props.json"
+      ],
+      "home_run_rows": 12,
+      "home_run_sources": [
+        "web/public/data/slates/2026-06-07/home-runs.json"
+      ]
+    }
+  ],
+  "planned_prediction_rows": 1747,
+  "lane_counts": {
+    "ml_shape": 54,
+    "first_inning": 54,
+    "player_prop": 1505,
+    "home_run": 48,
+    "first5_ml": 39,
+    "full_total": 31,
+    "first5_total": 16
+  },
+  "before_prediction_rows": 9767,
+  "after_prediction_rows": 9767,
+  "sample_rows": [
+    {
+      "prediction_row_id": "pred-c6fa8948eaac741abef8950e959569ba",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Cubs",
+      "confidence": 55
+    },
+    {
+      "prediction_row_id": "pred-24036a36fbfa19e38e5cc475f9bc543f",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 53.2
+    },
+    {
+      "prediction_row_id": "pred-bbd92f9d7d4201de515ad6a2e272094c",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Braves",
+      "confidence": 59
+    },
+    {
+      "prediction_row_id": "pred-3235dba2d1d1839faa228e89e821d27f",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 53.2
+    },
+    {
+      "prediction_row_id": "pred-558a3011d28771512f523687b5c552a8",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Diamondbacks",
+      "confidence": 52
+    },
+    {
+      "prediction_row_id": "pred-98edfca9a895e0c49b0ed03cb357420e",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 53.2
+    },
+    {
+      "prediction_row_id": "pred-d559716af17f8940d1b60d4562e018fc",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Brewers",
+      "confidence": 61
+    },
+    {
+      "prediction_row_id": "pred-a9f355e0ee7c366ef3b43e27f9fc1d28",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 53.2
+    },
+    {
+      "prediction_row_id": "pred-3d8be473caa71a87b5d55eb4b03cfb30",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Yankees",
+      "confidence": 59
+    },
+    {
+      "prediction_row_id": "pred-fc9b65b82d5c1f029d0559abc750aec3",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 53.2
+    },
+    {
+      "prediction_row_id": "pred-0a336f0e7dde93b72489d9cc5e0ab5ce",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Red Sox",
+      "confidence": 57
+    },
+    {
+      "prediction_row_id": "pred-1f8585d305140317d512eb765a6613f2",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 53.2
+    }
+  ],
+  "ok": true
+}
