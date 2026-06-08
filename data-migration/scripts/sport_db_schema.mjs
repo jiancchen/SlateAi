@@ -637,6 +637,9 @@ function mlbSchemaSql() {
       feature_snapshot_id text,
       rationale_json text,
       created_at text not null,
+      is_final integer not null default 0,
+      finalized_at text,
+      final_reason text,
       foreign key (model_run_id) references model_runs(model_run_id)
     );`,
     `create table if not exists settlement_rows (
@@ -660,6 +663,7 @@ function mlbSchemaSql() {
     `create index if not exists idx_mlb_pitch_events_replay_order on pitch_events (game_id, at_bat_index, event_index);`,
     `create index if not exists idx_mlb_market_snapshots_lookup on market_snapshots (game_id, player_id, source_name, market_type, captured_at);`,
     `create index if not exists idx_mlb_prediction_rows_run on prediction_rows (model_run_id, game_id, player_id, lane);`,
+    `create index if not exists idx_mlb_prediction_rows_final on prediction_rows (is_final, game_id);`,
     `create index if not exists idx_mlb_settlement_rows_prediction on settlement_rows (prediction_row_id);`,
   ];
 }

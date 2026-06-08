@@ -215,6 +215,8 @@ npm run data:backfill:mlb-cached-predictions -- --start YYYY-MM-DD --end YYYY-MM
 
 Expected normalized lanes include moneyline shape, first-inning YRFI/NRFI, F5 ML, F5 totals when present, full-game totals when present, player props, and home-run rows. Treat this as a storage/backfill step: it preserves the cached predictions and artifact lineage in `model_runs`, `model_artifacts`, and `prediction_rows`, but it does not rerun or change the original model picks.
 
+Once an MLB game has started, cached prediction rows for that game must be frozen with `prediction_rows.is_final = 1`. Final rows are immutable audit evidence: refresh, replay, and backfill jobs must not update or delete them. If a later board refresh changes a still-pregame game, it may update only rows where `is_final = 0`; if the game is already underway, preserve the original prediction and write any new observation as a separate run/artifact instead.
+
 Hard rule for the public board:
 - do not publish MLB through the typed DB loader until the public audit proves field parity
 - do not delete existing non-MLB slate entries while refreshing MLB

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T00:49:21.688Z",
+  "generated_at": "2026-06-08T06:15:59.621Z",
   "script": "data-migration/scripts/backfill_mlb_cached_prediction_rows.mjs",
   "db": "data-private/warehouse/sports/mlb/sql-mlb.db",
   "start": "2026-06-04",
@@ -101,6 +101,7 @@
     "full_total": 31,
     "first5_total": 16
   },
+  "final_prediction_rows": 1717,
   "before_prediction_rows": 9767,
   "after_prediction_rows": 9767,
   "sample_rows": [

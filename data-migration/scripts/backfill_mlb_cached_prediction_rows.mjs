@@ -91,6 +91,16 @@ function runSqlite(dbPath, sql) {
   }).trim();
 }
 
+function queryJson(dbPath, sql) {
+  const output = execFileSync('sqlite3', ['-json', dbPath], {
+    cwd: repoRoot,
+    input: sql,
+    encoding: 'utf8',
+    stdio: ['pipe', 'pipe', 'pipe'],
+  }).trim();
+  return output ? JSON.parse(output) : [];
+}
+
 function queryScalar(dbPath, sql) {
   return runSqlite(dbPath, sql).trim();
 }
@@ -108,6 +118,22 @@ function datesBetween(start, end) {
 
 function stableId(parts) {
   return `pred-${sha256(parts.filter((part) => part !== null && part !== undefined).join('|')).slice(0, 32)}`;
+}
+
+function ensurePredictionLifecycleColumns(dbPath) {
+  const columns = new Set(queryJson(dbPath, 'pragma table_info(prediction_rows);').map((column) => column.name));
+  const statements = [];
+  if (!columns.has('is_final')) {
+    statements.push('alter table prediction_rows add column is_final integer not null default 0;');
+  }
+  if (!columns.has('finalized_at')) {
+    statements.push('alter table prediction_rows add column finalized_at text;');
+  }
+  if (!columns.has('final_reason')) {
+    statements.push('alter table prediction_rows add column final_reason text;');
+  }
+  statements.push('create index if not exists idx_mlb_prediction_rows_final on prediction_rows (is_final, game_id);');
+  if (statements.length) runSqlite(dbPath, statements.join('\n'));
 }
 
 function probabilityValue(value) {
@@ -139,6 +165,66 @@ function compactJson(value) {
   });
 }
 
+function chunked(values, size = 400) {
+  const chunks = [];
+  for (let index = 0; index < values.length; index += size) {
+    chunks.push(values.slice(index, index + size));
+  }
+  return chunks;
+}
+
+function startedGameIdsForRows(dbPath, rows) {
+  const gameIds = [...new Set(rows.map((row) => row.game_id).filter(Boolean))];
+  const started = new Set();
+  for (const batch of chunked(gameIds)) {
+    const ids = batch.map(sqlString).join(',');
+    const records = queryJson(
+      dbPath,
+      `select game_id
+       from games
+       where game_id in (${ids})
+         and start_time_utc is not null
+         and start_time_utc <= ${sqlString(timestamp)}
+         and coalesce(lower(status), '') not like '%postpon%'
+         and coalesce(lower(status), '') not like '%cancel%';`,
+    );
+    for (const record of records) started.add(record.game_id);
+  }
+  return started;
+}
+
+function attachFinalState(dbPath, rows) {
+  const started = startedGameIdsForRows(dbPath, rows);
+  return rows.map((row) => ({
+    ...row,
+    is_final: started.has(row.game_id) ? 1 : 0,
+    finalized_at: started.has(row.game_id) ? timestamp : null,
+    final_reason: started.has(row.game_id) ? 'game_started' : null,
+  }));
+}
+
+function finalizeStartedRowsSql(start, end) {
+  return `update prediction_rows
+    set is_final = 1,
+      finalized_at = coalesce(finalized_at, ${sqlString(timestamp)}),
+      final_reason = coalesce(final_reason, 'game_started')
+    where coalesce(is_final, 0) = 0
+      and model_run_id in (
+        select model_run_id
+        from model_runs
+        where sport = 'mlb'
+          and run_date between ${sqlString(start)} and ${sqlString(end)}
+      )
+      and game_id in (
+        select game_id
+        from games
+        where start_time_utc is not null
+          and start_time_utc <= ${sqlString(timestamp)}
+          and coalesce(lower(status), '') not like '%postpon%'
+          and coalesce(lower(status), '') not like '%cancel%'
+      );`;
+}
+
 function gameDirForDate(date) {
   const candidates = [
     `published-data/slates/${date}/games`,
@@ -160,6 +246,37 @@ function readGameArtifacts(date) {
     sources.push(localPath);
   }
   return { games, sources };
+}
+
+function normalizeKey(value) {
+  return String(value || '').trim().toLowerCase();
+}
+
+function gameLookupFromArtifacts(records) {
+  const bySlug = new Map();
+  const byTitle = new Map();
+  for (const { game, localPath } of records) {
+    const canonicalGameId = gameIdFor(game);
+    if (!canonicalGameId) continue;
+    const slug = path.basename(localPath, '.json');
+    bySlug.set(normalizeKey(slug), canonicalGameId);
+    if (game?.id) bySlug.set(normalizeKey(game.id), canonicalGameId);
+    if (game?.title) byTitle.set(normalizeKey(game.title), canonicalGameId);
+  }
+  return { bySlug, byTitle };
+}
+
+function canonicalGameIdForPick(pick, lookup) {
+  if (pick?.gamePk) return `mlb-${pick.gamePk}`;
+  const rawGameId = pick?.gameId;
+  if (rawGameId && String(rawGameId).startsWith('mlb-')) return rawGameId;
+  if (rawGameId && lookup.bySlug.has(normalizeKey(rawGameId))) {
+    return lookup.bySlug.get(normalizeKey(rawGameId));
+  }
+  if (pick?.gameTitle && lookup.byTitle.has(normalizeKey(pick.gameTitle))) {
+    return lookup.byTitle.get(normalizeKey(pick.gameTitle));
+  }
+  return rawGameId || null;
 }
 
 function readPropArtifacts(date) {
@@ -215,9 +332,10 @@ function readHomeRunArtifacts(date) {
   return { picks: [], sources: [] };
 }
 
-function rowFromParts({ modelRunId, sourcePath, sourceIndex, gameId, playerId, lane, marketType, selection, probability, projectedValue, confidence, evCents, oddsAmerican, rationale }) {
+function rowFromParts({ modelRunId, sourcePath, sourceIndex, gameId, identityGameId, playerId, lane, marketType, selection, probability, projectedValue, confidence, evCents, oddsAmerican, rationale }) {
+  const identityGameKey = identityGameId !== undefined ? identityGameId : gameId;
   return {
-    prediction_row_id: stableId([modelRunId, sourcePath, sourceIndex, gameId, playerId, lane, marketType, selection]),
+    prediction_row_id: stableId([modelRunId, sourcePath, sourceIndex, identityGameKey, playerId, lane, marketType, selection]),
     model_run_id: modelRunId,
     game_id: gameId,
     player_id: playerId,
@@ -370,12 +488,13 @@ function gameRows(date, records, modelRunId) {
   return rows;
 }
 
-function propRows(date, picks, modelRunId) {
+function propRows(date, picks, modelRunId, gameLookup) {
   return picks.map((pick, index) => rowFromParts({
     modelRunId,
     sourcePath: `mlb-props:${date}`,
     sourceIndex: index,
-    gameId: pick.gamePk ? `mlb-${pick.gamePk}` : pick.gameId || null,
+    gameId: canonicalGameIdForPick(pick, gameLookup),
+    identityGameId: pick.gamePk ? `mlb-${pick.gamePk}` : pick.gameId || null,
     playerId: playerIdFor(pick.playerId),
     lane: 'player_prop',
     marketType: pick.propType || 'player_prop',
@@ -400,12 +519,13 @@ function propRows(date, picks, modelRunId) {
   }));
 }
 
-function homeRunRows(date, picks, modelRunId) {
+function homeRunRows(date, picks, modelRunId, gameLookup) {
   return picks.map((pick, index) => rowFromParts({
     modelRunId,
     sourcePath: `mlb-home-runs:${date}`,
     sourceIndex: index,
-    gameId: pick.gamePk ? `mlb-${pick.gamePk}` : pick.gameId || null,
+    gameId: canonicalGameIdForPick(pick, gameLookup),
+    identityGameId: pick.gamePk ? `mlb-${pick.gamePk}` : pick.gameId || null,
     playerId: playerIdFor(pick.playerId),
     lane: 'home_run',
     marketType: 'home_run',
@@ -465,13 +585,15 @@ function predictionSql(row) {
   return `insert into prediction_rows (
     prediction_row_id, model_run_id, game_id, player_id, lane, market_type, selection,
     predicted_probability, projected_value, confidence, ev_cents, price_cents,
-    odds_american, feature_snapshot_id, rationale_json, created_at
+    odds_american, feature_snapshot_id, rationale_json, created_at,
+    is_final, finalized_at, final_reason
   ) values (
     ${sqlString(row.prediction_row_id)}, ${sqlString(row.model_run_id)}, ${sqlString(row.game_id)},
     ${sqlString(row.player_id)}, ${sqlString(row.lane)}, ${sqlString(row.market_type)},
     ${sqlString(row.selection)}, ${sqlNumber(row.predicted_probability)}, ${sqlNumber(row.projected_value)},
     ${sqlNumber(row.confidence)}, ${sqlNumber(row.ev_cents)}, ${sqlNumber(row.price_cents)},
-    ${sqlNumber(row.odds_american)}, null, ${sqlString(row.rationale_json)}, ${sqlString(timestamp)}
+    ${sqlNumber(row.odds_american)}, null, ${sqlString(row.rationale_json)}, ${sqlString(timestamp)},
+    ${sqlNumber(row.is_final)}, ${sqlString(row.finalized_at)}, ${sqlString(row.final_reason)}
   ) on conflict(prediction_row_id) do update set
     game_id = excluded.game_id,
     player_id = excluded.player_id,
@@ -485,20 +607,25 @@ function predictionSql(row) {
     price_cents = excluded.price_cents,
     odds_american = excluded.odds_american,
     rationale_json = excluded.rationale_json,
-    created_at = excluded.created_at;`;
+    created_at = excluded.created_at,
+    is_final = excluded.is_final,
+    finalized_at = excluded.finalized_at,
+    final_reason = excluded.final_reason
+  where coalesce(prediction_rows.is_final, 0) = 0;`;
 }
 
 function dateBackfill(date) {
   const gameArtifacts = readGameArtifacts(date);
   const propArtifacts = readPropArtifacts(date);
   const hrArtifacts = readHomeRunArtifacts(date);
+  const gameLookup = gameLookupFromArtifacts(gameArtifacts.games);
   const sourcePaths = [...gameArtifacts.sources, ...propArtifacts.sources, ...hrArtifacts.sources];
   const sourceHash = sha256(sourcePaths.map((source) => `${source}:${localExists(source) ? fileHash(source) : ''}`).join('|'));
   const modelRunId = `cached-mlb-board-${date}`;
   const rows = [
     ...gameRows(date, gameArtifacts.games, modelRunId),
-    ...propRows(date, propArtifacts.picks, modelRunId),
-    ...homeRunRows(date, hrArtifacts.picks, modelRunId),
+    ...propRows(date, propArtifacts.picks, modelRunId, gameLookup),
+    ...homeRunRows(date, hrArtifacts.picks, modelRunId, gameLookup),
   ];
   const run = {
     model_run_id: modelRunId,
@@ -525,19 +652,23 @@ function dateBackfill(date) {
 }
 
 const args = parseArgs(process.argv.slice(2));
+if (!args.dryRun) ensurePredictionLifecycleColumns(args.db);
 const dates = datesBetween(args.start, args.end);
 const before = Number(queryScalar(args.db, 'select count(*) from prediction_rows;'));
 const reports = dates.map(dateBackfill);
-const allRows = reports.flatMap((report) => report.rows);
+const allRows = attachFinalState(args.db, reports.flatMap((report) => report.rows));
 
 if (!args.dryRun) {
   const statements = ['begin;'];
+  statements.push(finalizeStartedRowsSql(args.start, args.end));
   for (const report of reports) {
     statements.push(modelRunSql(report.run));
     for (const source of report.sources) {
       statements.push(artifactSql(report.run.model_run_id, source, source.includes('/games/') ? 'cached-game-artifact' : 'cached-board-artifact'));
     }
-    for (const row of report.rows) statements.push(predictionSql(row));
+    for (const row of allRows.filter((candidate) => candidate.model_run_id === report.run.model_run_id)) {
+      statements.push(predictionSql(row));
+    }
   }
   statements.push(`insert into migration_runs (
     migration_run_id, sport, phase, script_path, source_ref, target_ref, status,
@@ -593,6 +724,7 @@ const report = {
   })),
   planned_prediction_rows: allRows.length,
   lane_counts: laneCounts,
+  final_prediction_rows: allRows.filter((row) => row.is_final).length,
   before_prediction_rows: before,
   after_prediction_rows: after,
   sample_rows: allRows.slice(0, 12).map((row) => ({

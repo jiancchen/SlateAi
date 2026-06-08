@@ -137,7 +137,8 @@ function insertSqlForMlb(rows) {
     price_cents = excluded.price_cents,
     odds_american = excluded.odds_american,
     rationale_json = excluded.rationale_json,
-    created_at = excluded.created_at;`);
+    created_at = excluded.created_at
+  where coalesce(prediction_rows.is_final, 0) = 0;`);
 }
 
 function insertSqlForTennis(rows) {
