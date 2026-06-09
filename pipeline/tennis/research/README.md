@@ -5,6 +5,7 @@ Offline tennis research and active-but-not-yet-cartridge-owned model scripts liv
 ## Files
 
 - `multimodel_backtest.py`: Current tennis ensemble/backtest and training-row refresh.
+- `baseline_pass.mjs`: One-slate baseline evaluator for published pick vs market favorite, rank favorite, form favorite, serve/return favorite, and simple proof gates.
 - `value_backtest.py`: Sportsbook value-lane backtest.
 - `analyze_kalshi_intramatch.py`: Kalshi in-match candle/backtest audit.
 - `project_kalshi_trade_candidates.py`: Open Kalshi orderbook mirror and trade-candidate projection.

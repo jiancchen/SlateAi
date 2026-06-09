@@ -214,6 +214,7 @@
     "data:export:tennis-warehouse-context": "python3 pipeline/tennis/publish/export_warehouse_context.py",
     "data:train:tennis": "python3 pipeline/tennis/research/multimodel_backtest.py",
     "data:backtest:tennis-value": "python3 pipeline/tennis/research/value_backtest.py",
+    "data:baseline:tennis": "node pipeline/tennis/research/baseline_pass.mjs",
     "data:backtest:tennis-kalshi-intramatch": "python3 pipeline/tennis/research/analyze_kalshi_intramatch.py",
     "data:project:tennis-kalshi-trades": "python3 pipeline/tennis/research/project_kalshi_trade_candidates.py",
     "data:summary:tennis": "python3 pipeline/tennis/warehouse/tennis_warehouse.py summary",
