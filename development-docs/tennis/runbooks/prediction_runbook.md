@@ -362,7 +362,28 @@ node -e "import('./data-private/predictions/tennis/YYYY-MM-DD-tennis-day-module.
 
 This should expose the expected game count before publishing.
 
-### 11. Pregame Health And Run Records
+### 11. Generate TEN-T1 Selector Overlay
+
+TEN-T0 is the raw slate and market-fair generator. The selector overlay is the narrower daily board for usable pregame candidates, watch rows, live-dog rows, fades, and no-plays.
+
+```bash
+npm run data:selector:tennis -- --date YYYY-MM-DD
+```
+
+Outputs:
+
+- `data-private/reports/tennis-selector-overlay-YYYY-MM-DD.json`
+- `data-private/reports/tennis-selector-overlay-YYYY-MM-DD.md`
+- `data-private/predictions/tennis/YYYY-MM-DD-tennis-t1-selector.json`
+
+Publishing guidance:
+
+- Use `Prediction A`, `Prediction B`, and `Prediction Dog` as the pregame ML candidate board.
+- Treat `Live Dog` rows as live-entry or favorite-fade candidates, not automatic pregame dog bets.
+- Treat `Watch`, `Chalk Watch`, `Fade`, and `No Play` rows as non-publish ML rows unless a later operator override is documented.
+- If the selector output has zero prediction candidates, publish the slate as watch/no-play instead of forcing TEN-T0 rows into picks.
+
+### 12. Pregame Health And Run Records
 
 Pregame health:
 
@@ -388,7 +409,7 @@ npm run data:capture:tennis-t0-db -- \
   --context data-private/predictions/tennis/YYYY-MM-DD-tennis-warehouse-context.generated.json
 ```
 
-### 12. Publish To Vercel
+### 13. Publish To Vercel
 
 After prediction artifacts are generated, export the tennis slate, refresh the public two-day window, and deploy. This is the normal production path.
 
