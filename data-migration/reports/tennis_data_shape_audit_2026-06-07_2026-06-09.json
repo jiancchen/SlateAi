@@ -1,31 +1,31 @@
 {
   "bucket_summary": {
     "canonical": {
-      "tennislive_match_candidates": 1167
+      "tennislive_match_candidates": 111
     },
     "delete_candidate": {
       "automatic_delete_rows": 0,
       "requires_human_review": true
     },
     "model_output_context": {
-      "prediction_rows": 776,
+      "prediction_rows": 162,
       "settlement_rows": 0
     },
     "needs_review": {
       "duplicate_player_name_examples": 0,
-      "missing_start_time_matches": 1576,
-      "participant_anomaly_matches": 38
+      "missing_start_time_matches": 120,
+      "participant_anomaly_matches": 7
     },
     "quarantine": {
-      "market_duplicate_groups": 109,
-      "non_tennislive_match_shapes": 536,
-      "prediction_rows_without_db_match": 289,
-      "stat_duplicate_groups": 68526,
-      "ten_t0_market_only_prediction_rows": 71
+      "market_duplicate_groups": 56,
+      "non_tennislive_match_shapes": 154,
+      "prediction_rows_without_db_match": 72,
+      "stat_duplicate_groups": 0,
+      "ten_t0_market_only_prediction_rows": 68
     }
   },
   "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
-  "generated_at": "2026-06-10T07:36:06.147795+00:00",
+  "generated_at": "2026-06-10T07:36:06.147801+00:00",
   "identity": {
     "duplicate_canonical_name_examples": [],
     "market_missing_identity_by_source": [
@@ -102,59 +102,17 @@
     "by_source": [
       {
         "missing_match_id": 0,
-        "missing_player_id": 296,
+        "missing_player_id": 184,
         "missing_price": 0,
-        "rows": 939,
+        "rows": 648,
         "source_name": "draftkings"
       },
       {
-        "missing_match_id": 186,
-        "missing_player_id": 187,
-        "missing_price": 0,
-        "rows": 751,
-        "source_name": "kalshi"
-      },
-      {
         "missing_match_id": 0,
         "missing_player_id": 0,
         "missing_price": 0,
-        "rows": 364,
+        "rows": 178,
         "source_name": "robinhood"
-      },
-      {
-        "missing_match_id": 0,
-        "missing_player_id": 0,
-        "missing_price": 0,
-        "rows": 150,
-        "source_name": "FanDuel Sportsbook"
-      },
-      {
-        "missing_match_id": 0,
-        "missing_player_id": 0,
-        "missing_price": 0,
-        "rows": 136,
-        "source_name": "Prediction market screenshot"
-      },
-      {
-        "missing_match_id": 0,
-        "missing_player_id": 0,
-        "missing_price": 0,
-        "rows": 132,
-        "source_name": "Robinhood prediction market"
-      },
-      {
-        "missing_match_id": 0,
-        "missing_player_id": 24,
-        "missing_price": 0,
-        "rows": 104,
-        "source_name": "fanduel"
-      },
-      {
-        "missing_match_id": 0,
-        "missing_player_id": 0,
-        "missing_price": 0,
-        "rows": 32,
-        "source_name": "Kalshi open orderbook"
       }
     ],
     "duplicate_examples": [
@@ -359,605 +317,10 @@
         "source_name": "draftkings"
       }
     ],
-    "market_snapshot_duplicate_groups": 109
+    "market_snapshot_duplicate_groups": 56
   },
   "match_shapes": {
     "by_date": [
-      {
-        "match_date": "2000-03-06",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2001-01-29",
-        "matches": 2,
-        "missing_start": 2,
-        "missing_status": 0,
-        "tennislive_matches": 2
-      },
-      {
-        "match_date": "2025-07-13",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-08-11",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-08-18",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-08-21",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-09-07",
-        "matches": 2,
-        "missing_start": 2,
-        "missing_status": 0,
-        "tennislive_matches": 2
-      },
-      {
-        "match_date": "2025-09-08",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-09-12",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-09-19",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-09-23",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-10-29",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-10-31",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-11-04",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-11-06",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-11-12",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-11-24",
-        "matches": 2,
-        "missing_start": 2,
-        "missing_status": 0,
-        "tennislive_matches": 2
-      },
-      {
-        "match_date": "2025-12-21",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-12-22",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2025-12-23",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-01-09",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-01-12",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-01-13",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-02-24",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-03-03",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-03-08",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-03-16",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-03-17",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-03-18",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-03-19",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-03-24",
-        "matches": 2,
-        "missing_start": 2,
-        "missing_status": 0,
-        "tennislive_matches": 2
-      },
-      {
-        "match_date": "2026-04-01",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-04-05",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-04-07",
-        "matches": 2,
-        "missing_start": 2,
-        "missing_status": 0,
-        "tennislive_matches": 2
-      },
-      {
-        "match_date": "2026-04-11",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-04-13",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-04-14",
-        "matches": 4,
-        "missing_start": 4,
-        "missing_status": 0,
-        "tennislive_matches": 4
-      },
-      {
-        "match_date": "2026-04-15",
-        "matches": 2,
-        "missing_start": 2,
-        "missing_status": 0,
-        "tennislive_matches": 2
-      },
-      {
-        "match_date": "2026-04-20",
-        "matches": 2,
-        "missing_start": 2,
-        "missing_status": 0,
-        "tennislive_matches": 2
-      },
-      {
-        "match_date": "2026-04-21",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-04-22",
-        "matches": 3,
-        "missing_start": 3,
-        "missing_status": 0,
-        "tennislive_matches": 3
-      },
-      {
-        "match_date": "2026-04-23",
-        "matches": 6,
-        "missing_start": 6,
-        "missing_status": 0,
-        "tennislive_matches": 6
-      },
-      {
-        "match_date": "2026-04-24",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-04-25",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-04-27",
-        "matches": 3,
-        "missing_start": 3,
-        "missing_status": 0,
-        "tennislive_matches": 3
-      },
-      {
-        "match_date": "2026-04-28",
-        "matches": 7,
-        "missing_start": 7,
-        "missing_status": 0,
-        "tennislive_matches": 7
-      },
-      {
-        "match_date": "2026-04-29",
-        "matches": 4,
-        "missing_start": 4,
-        "missing_status": 0,
-        "tennislive_matches": 4
-      },
-      {
-        "match_date": "2026-04-30",
-        "matches": 6,
-        "missing_start": 6,
-        "missing_status": 0,
-        "tennislive_matches": 6
-      },
-      {
-        "match_date": "2026-05-01",
-        "matches": 5,
-        "missing_start": 5,
-        "missing_status": 0,
-        "tennislive_matches": 5
-      },
-      {
-        "match_date": "2026-05-02",
-        "matches": 4,
-        "missing_start": 4,
-        "missing_status": 0,
-        "tennislive_matches": 4
-      },
-      {
-        "match_date": "2026-05-03",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2026-05-04",
-        "matches": 6,
-        "missing_start": 6,
-        "missing_status": 0,
-        "tennislive_matches": 6
-      },
-      {
-        "match_date": "2026-05-05",
-        "matches": 18,
-        "missing_start": 18,
-        "missing_status": 0,
-        "tennislive_matches": 18
-      },
-      {
-        "match_date": "2026-05-06",
-        "matches": 6,
-        "missing_start": 6,
-        "missing_status": 0,
-        "tennislive_matches": 6
-      },
-      {
-        "match_date": "2026-05-07",
-        "matches": 16,
-        "missing_start": 16,
-        "missing_status": 0,
-        "tennislive_matches": 16
-      },
-      {
-        "match_date": "2026-05-08",
-        "matches": 14,
-        "missing_start": 14,
-        "missing_status": 0,
-        "tennislive_matches": 14
-      },
-      {
-        "match_date": "2026-05-09",
-        "matches": 5,
-        "missing_start": 5,
-        "missing_status": 0,
-        "tennislive_matches": 5
-      },
-      {
-        "match_date": "2026-05-10",
-        "matches": 10,
-        "missing_start": 10,
-        "missing_status": 0,
-        "tennislive_matches": 10
-      },
-      {
-        "match_date": "2026-05-11",
-        "matches": 24,
-        "missing_start": 24,
-        "missing_status": 0,
-        "tennislive_matches": 24
-      },
-      {
-        "match_date": "2026-05-12",
-        "matches": 22,
-        "missing_start": 22,
-        "missing_status": 0,
-        "tennislive_matches": 22
-      },
-      {
-        "match_date": "2026-05-13",
-        "matches": 27,
-        "missing_start": 27,
-        "missing_status": 0,
-        "tennislive_matches": 27
-      },
-      {
-        "match_date": "2026-05-14",
-        "matches": 25,
-        "missing_start": 25,
-        "missing_status": 0,
-        "tennislive_matches": 25
-      },
-      {
-        "match_date": "2026-05-15",
-        "matches": 11,
-        "missing_start": 11,
-        "missing_status": 0,
-        "tennislive_matches": 11
-      },
-      {
-        "match_date": "2026-05-16",
-        "matches": 14,
-        "missing_start": 14,
-        "missing_status": 0,
-        "tennislive_matches": 14
-      },
-      {
-        "match_date": "2026-05-17",
-        "matches": 18,
-        "missing_start": 18,
-        "missing_status": 0,
-        "tennislive_matches": 18
-      },
-      {
-        "match_date": "2026-05-18",
-        "matches": 42,
-        "missing_start": 42,
-        "missing_status": 0,
-        "tennislive_matches": 42
-      },
-      {
-        "match_date": "2026-05-19",
-        "matches": 47,
-        "missing_start": 47,
-        "missing_status": 0,
-        "tennislive_matches": 47
-      },
-      {
-        "match_date": "2026-05-20",
-        "matches": 51,
-        "missing_start": 51,
-        "missing_status": 0,
-        "tennislive_matches": 51
-      },
-      {
-        "match_date": "2026-05-21",
-        "matches": 55,
-        "missing_start": 55,
-        "missing_status": 28,
-        "tennislive_matches": 27
-      },
-      {
-        "match_date": "2026-05-22",
-        "matches": 39,
-        "missing_start": 39,
-        "missing_status": 22,
-        "tennislive_matches": 17
-      },
-      {
-        "match_date": "2026-05-23",
-        "matches": 11,
-        "missing_start": 11,
-        "missing_status": 0,
-        "tennislive_matches": 11
-      },
-      {
-        "match_date": "2026-05-24",
-        "matches": 70,
-        "missing_start": 70,
-        "missing_status": 36,
-        "tennislive_matches": 34
-      },
-      {
-        "match_date": "2026-05-25",
-        "matches": 79,
-        "missing_start": 79,
-        "missing_status": 49,
-        "tennislive_matches": 30
-      },
-      {
-        "match_date": "2026-05-26",
-        "matches": 83,
-        "missing_start": 83,
-        "missing_status": 40,
-        "tennislive_matches": 43
-      },
-      {
-        "match_date": "2026-05-27",
-        "matches": 71,
-        "missing_start": 71,
-        "missing_status": 31,
-        "tennislive_matches": 40
-      },
-      {
-        "match_date": "2026-05-28",
-        "matches": 67,
-        "missing_start": 67,
-        "missing_status": 32,
-        "tennislive_matches": 35
-      },
-      {
-        "match_date": "2026-05-29",
-        "matches": 47,
-        "missing_start": 47,
-        "missing_status": 16,
-        "tennislive_matches": 31
-      },
-      {
-        "match_date": "2026-05-30",
-        "matches": 35,
-        "missing_start": 35,
-        "missing_status": 16,
-        "tennislive_matches": 19
-      },
-      {
-        "match_date": "2026-05-31",
-        "matches": 48,
-        "missing_start": 48,
-        "missing_status": 8,
-        "tennislive_matches": 40
-      },
-      {
-        "match_date": "2026-06-01",
-        "matches": 53,
-        "missing_start": 53,
-        "missing_status": 8,
-        "tennislive_matches": 45
-      },
-      {
-        "match_date": "2026-06-02",
-        "matches": 148,
-        "missing_start": 148,
-        "missing_status": 66,
-        "tennislive_matches": 82
-      },
-      {
-        "match_date": "2026-06-03",
-        "matches": 36,
-        "missing_start": 36,
-        "missing_status": 0,
-        "tennislive_matches": 36
-      },
-      {
-        "match_date": "2026-06-04",
-        "matches": 96,
-        "missing_start": 73,
-        "missing_status": 0,
-        "tennislive_matches": 72
-      },
-      {
-        "match_date": "2026-06-05",
-        "matches": 60,
-        "missing_start": 56,
-        "missing_status": 0,
-        "tennislive_matches": 56
-      },
-      {
-        "match_date": "2026-06-06",
-        "matches": 42,
-        "missing_start": 42,
-        "missing_status": 0,
-        "tennislive_matches": 32
-      },
       {
         "match_date": "2026-06-07",
         "matches": 152,
@@ -978,76 +341,27 @@
         "missing_start": 14,
         "missing_status": 0,
         "tennislive_matches": 14
-      },
-      {
-        "match_date": "2099-02-12",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "2099-04-02",
-        "matches": 1,
-        "missing_start": 1,
-        "missing_status": 0,
-        "tennislive_matches": 1
-      },
-      {
-        "match_date": "unknown",
-        "matches": 2,
-        "missing_start": 2,
-        "missing_status": 0,
-        "tennislive_matches": 2
       }
     ],
-    "canonical_tennislive_match_candidates": 1167,
+    "canonical_tennislive_match_candidates": 111,
     "match_id_prefixes": [
       {
-        "matches": 1245,
+        "matches": 141,
         "prefix": "tl"
-      },
-      {
-        "matches": 256,
-        "prefix": "rg"
-      },
-      {
-        "matches": 136,
-        "prefix": "rh"
       },
       {
         "matches": 84,
         "prefix": "dk"
       },
       {
-        "matches": 16,
-        "prefix": "rgq"
-      },
-      {
-        "matches": 4,
-        "prefix": "atp"
-      },
-      {
-        "matches": 4,
-        "prefix": "geneva"
-      },
-      {
-        "matches": 4,
-        "prefix": "hamburg"
-      },
-      {
-        "matches": 4,
-        "prefix": "strasbourg"
-      },
-      {
-        "matches": 2,
-        "prefix": "wta"
+        "matches": 47,
+        "prefix": "rh"
       }
     ],
-    "missing_start_time": 1576,
-    "missing_status": 352,
-    "non_tennislive_match_shapes": 536,
-    "participant_anomaly_count": 38,
+    "missing_start_time": 120,
+    "missing_status": 0,
+    "non_tennislive_match_shapes": 154,
+    "participant_anomaly_count": 7,
     "participant_anomaly_examples": [
       {
         "distinct_players": 3,
@@ -1104,185 +418,26 @@
         "participant_rows": 3,
         "sides": "2,2,1",
         "status": "scheduled"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-06",
-        "match_id": "tl-2026-06-06-bad-rappenau-challenger-2026-luka-mikrut-vs-diego-dedura",
-        "participant_rows": 3,
-        "sides": "2,2,1",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-06",
-        "match_id": "tl-2026-06-06-birmingham-challenger-2026-arthur-fery-vs-bu-yunchaokete",
-        "participant_rows": 3,
-        "sides": "1,2,2",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-06",
-        "match_id": "tl-2026-06-06-prostejov-challenger-2026-alex-molcan-vs-hynek-barton",
-        "participant_rows": 3,
-        "sides": "1,2,2",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-06",
-        "match_id": "tl-2026-06-06-prostejov-challenger-2026-sebastian-baez-vs-nikolas-sanchez-izquierdo",
-        "participant_rows": 3,
-        "sides": "2,2,1",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-05",
-        "match_id": "tl-2026-06-05-bad-rappenau-challenger-2026-diego-dedura-vs-marco-trungelliti",
-        "participant_rows": 3,
-        "sides": "1,1,2",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-05",
-        "match_id": "tl-2026-06-05-birmingham-challenger-2026-bu-yunchaokete-vs-mark-lajal",
-        "participant_rows": 3,
-        "sides": "1,2,1",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-05",
-        "match_id": "tl-2026-06-05-m25-caltanissetta-2026-luca-potenza-vs-mae-malige",
-        "participant_rows": 3,
-        "sides": "1,2,2",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-05",
-        "match_id": "tl-2026-06-05-prostejov-challenger-2026-hynek-barton-vs-taro-daniel",
-        "participant_rows": 3,
-        "sides": "1,1,2",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-04",
-        "match_id": "tl-2026-06-04-bad-rappenau-challenger-2026-diego-dedura-vs-joao-lucas-reis-da-silva",
-        "participant_rows": 3,
-        "sides": "1,1,2",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-04",
-        "match_id": "tl-2026-06-04-birmingham-challenger-2026-bu-yunchaokete-vs-billy-harris",
-        "participant_rows": 3,
-        "sides": "2,1,1",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-04",
-        "match_id": "tl-2026-06-04-prostejov-challenger-2026-alex-molcan-vs-milos-karol",
-        "participant_rows": 3,
-        "sides": "1,2,2",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-03",
-        "match_id": "tl-2026-06-03-m25-caltanissetta-2026-mae-malige-vs-giacomo-crisostomo",
-        "participant_rows": 3,
-        "sides": "1,1,2",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-02",
-        "match_id": "tl-2026-06-02-bad-rappenau-challenger-2026-diego-dedura-vs-max-wiskandt",
-        "participant_rows": 3,
-        "sides": "1,1,2",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-02",
-        "match_id": "tl-2026-06-02-bad-rappenau-challenger-2026-luka-mikrut-vs-alex-marti-pujolras",
-        "participant_rows": 3,
-        "sides": "2,2,1",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-02",
-        "match_id": "tl-2026-06-02-perugia-challenger-2026-andrea-pellegrino-vs-maks-kasnikowski",
-        "participant_rows": 3,
-        "sides": "1,2,2",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-02",
-        "match_id": "tl-2026-06-02-perugia-challenger-2026-liam-broady-vs-david-jorda-sanchis",
-        "participant_rows": 3,
-        "sides": "2,2,1",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-01",
-        "match_id": "tl-2026-06-01-bad-rappenau-challenger-2026-abedallah-shelbayh-vs-raphael-perot",
-        "participant_rows": 3,
-        "sides": "2,2,1",
-        "status": "completed"
-      },
-      {
-        "distinct_players": 3,
-        "match_date": "2026-06-01",
-        "match_id": "tl-2026-06-01-bad-rappenau-challenger-2026-alex-marti-pujolras-vs-mariano-kestelboim",
-        "participant_rows": 3,
-        "sides": "1,1,2",
-        "status": "completed"
       }
     ],
     "scope": {
-      "end_date": null,
-      "start_date": null
+      "end_date": "2026-06-09",
+      "start_date": "2026-06-07"
     },
-    "tennislive_attached_matches": 1219,
-    "total_matches": 1755
+    "tennislive_attached_matches": 118,
+    "total_matches": 272
   },
   "prediction_outputs": {
     "by_lane": [
       {
         "lane": "ml",
         "market_type": "match_winner",
-        "rows": 728
-      },
-      {
-        "lane": "first_set_ou",
-        "market_type": "first_set_total_games",
-        "rows": 16
-      },
-      {
-        "lane": "match_ou",
-        "market_type": "match_total_games",
-        "rows": 16
-      },
-      {
-        "lane": "spread",
-        "market_type": "game_spread",
-        "rows": 16
+        "rows": 162
       }
     ],
-    "model_run_count": 19,
-    "prediction_rows": 776,
-    "prediction_rows_without_db_match": 289,
+    "model_run_count": 2,
+    "prediction_rows": 162,
+    "prediction_rows_without_db_match": 72,
     "settlement_rows": 0,
     "ten_t0_runs": [
       {
@@ -1300,28 +455,12 @@
         "model_run_id": "tennis-TEN-T0-2026-06-08-db",
         "rows": 81,
         "rows_with_ev": 0
-      },
-      {
-        "market_only_token": 66,
-        "market_only_true": 1,
-        "ml_match_winner_rows": 66,
-        "model_run_id": "tennis-TEN-T0-2026-06-02-db",
-        "rows": 66,
-        "rows_with_ev": 0
-      },
-      {
-        "market_only_token": 23,
-        "market_only_true": 2,
-        "ml_match_winner_rows": 23,
-        "model_run_id": "tennis-TEN-T0-2026-06-04-db",
-        "rows": 23,
-        "rows_with_ev": 0
       }
     ]
   },
   "scope": {
-    "end_date": null,
-    "start_date": null
+    "end_date": "2026-06-09",
+    "start_date": "2026-06-07"
   },
   "script": "data-migration/scripts/audit_tennis_data_shapes.py",
   "source_freshness": {
@@ -1534,185 +673,12 @@
       {
         "missing_match_id": 0,
         "missing_player_id": 0,
-        "rows": 336376,
-        "source_name": "flashscore"
-      },
-      {
-        "missing_match_id": 0,
-        "missing_player_id": 0,
-        "rows": 91072,
-        "source_name": "sofascore"
-      },
-      {
-        "missing_match_id": 0,
-        "missing_player_id": 0,
-        "rows": 17520,
+        "rows": 1024,
         "source_name": "tennislive"
       }
     ],
-    "duplicate_examples": [
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Match",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "1st_return_points_won"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 1",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "1st_return_points_won"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 2",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "1st_return_points_won"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Match",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "2nd_return_points_won"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 1",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "2nd_return_points_won"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 2",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "2nd_return_points_won"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Match",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "aces"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 1",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "aces"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 2",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "aces"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Match",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "break_points_converted"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 1",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "break_points_converted"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 2",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "break_points_converted"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Match",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "break_points_saved"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 1",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "break_points_saved"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 2",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "break_points_saved"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Match",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "double_faults"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 1",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "double_faults"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 2",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "double_faults"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Match",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "first_serve_pct"
-      },
-      {
-        "match_id": "rg-w-elina-svitolina-marta-kostyuk-2026-06-02",
-        "period": "Set 1",
-        "player_id": "tennis-player-elina-svitolina",
-        "rows": 32,
-        "source_name": "flashscore",
-        "stat_name": "first_serve_pct"
-      }
-    ],
-    "stat_duplicate_groups": 68526
+    "duplicate_examples": [],
+    "stat_duplicate_groups": 0
   },
   "table_inventory": [
     {

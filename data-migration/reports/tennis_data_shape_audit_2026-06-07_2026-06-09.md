@@ -1,6 +1,6 @@
 # Tennis Data Shape Audit
 
-Generated: `2026-06-10T07:36:06.147795+00:00`
+Generated: `2026-06-10T07:36:06.147801+00:00`
 
 DB: `data-private/warehouse/sports/tennis/sql-tennis.db`
 
@@ -8,79 +8,61 @@ DB: `data-private/warehouse/sports/tennis/sql-tennis.db`
 
 | Bucket | Metric | Count |
 | --- | --- | --- |
-| canonical | TennisLive match candidates | 1167 |
-| needs_review | Participant anomaly matches | 38 |
-| needs_review | Missing start-time matches | 1576 |
-| quarantine | Non-TennisLive match shapes | 536 |
-| quarantine | TEN-T0 market-only prediction rows | 71 |
-| quarantine | Prediction rows without DB match | 289 |
-| quarantine | Market duplicate groups | 109 |
-| quarantine | Stat duplicate groups | 68526 |
-| model_output | Prediction rows | 776 |
+| canonical | TennisLive match candidates | 111 |
+| needs_review | Participant anomaly matches | 7 |
+| needs_review | Missing start-time matches | 120 |
+| quarantine | Non-TennisLive match shapes | 154 |
+| quarantine | TEN-T0 market-only prediction rows | 68 |
+| quarantine | Prediction rows without DB match | 72 |
+| quarantine | Market duplicate groups | 56 |
+| quarantine | Stat duplicate groups | 0 |
+| model_output | Prediction rows | 162 |
 | model_output | Settlement rows | 0 |
 
 ## Match Shape
 
 | Metric | Count |
 | --- | --- |
-| Total matches | 1755 |
-| TennisLive-attached matches | 1219 |
-| Canonical TennisLive candidates | 1167 |
-| Non-TennisLive match shapes | 536 |
-| Missing start time | 1576 |
-| Missing status | 352 |
-| Participant anomalies | 38 |
+| Total matches | 272 |
+| TennisLive-attached matches | 118 |
+| Canonical TennisLive candidates | 111 |
+| Non-TennisLive match shapes | 154 |
+| Missing start time | 120 |
+| Missing status | 0 |
+| Participant anomalies | 7 |
 
 ### Match ID Prefixes
 
 | Prefix | Matches |
 | --- | --- |
-| tl | 1245 |
-| rg | 256 |
-| rh | 136 |
+| tl | 141 |
 | dk | 84 |
-| rgq | 16 |
-| atp | 4 |
-| geneva | 4 |
-| hamburg | 4 |
-| strasbourg | 4 |
-| wta | 2 |
+| rh | 47 |
 
 ## Market Shape
 
 | Source | Rows | Missing match | Missing player | Missing price |
 | --- | --- | --- | --- | --- |
-| draftkings | 939 | 0 | 296 | 0 |
-| kalshi | 751 | 186 | 187 | 0 |
-| robinhood | 364 | 0 | 0 | 0 |
-| FanDuel Sportsbook | 150 | 0 | 0 | 0 |
-| Prediction market screenshot | 136 | 0 | 0 | 0 |
-| Robinhood prediction market | 132 | 0 | 0 | 0 |
-| fanduel | 104 | 0 | 24 | 0 |
-| Kalshi open orderbook | 32 | 0 | 0 | 0 |
+| draftkings | 648 | 0 | 184 | 0 |
+| robinhood | 178 | 0 | 0 | 0 |
 
-Market duplicate groups: `109`
+Market duplicate groups: `56`
 
 ## Stat Shape
 
 | Source | Rows | Missing match | Missing player |
 | --- | --- | --- | --- |
-| flashscore | 336376 | 0 | 0 |
-| sofascore | 91072 | 0 | 0 |
-| tennislive | 17520 | 0 | 0 |
+| tennislive | 1024 | 0 | 0 |
 
-Stat duplicate groups: `68526`
+Stat duplicate groups: `0`
 
 ## Prediction Outputs
 
 | Lane | Market type | Rows |
 | --- | --- | --- |
-| ml | match_winner | 728 |
-| first_set_ou | first_set_total_games | 16 |
-| match_ou | match_total_games | 16 |
-| spread | game_spread | 16 |
+| ml | match_winner | 162 |
 
-Prediction rows without a DB match: `289`
+Prediction rows without a DB match: `72`
 
 ### TEN-T0 Runs
 
@@ -88,8 +70,6 @@ Prediction rows without a DB match: `289`
 | --- | --- | --- | --- |
 | tennis-TEN-T0-2026-06-07-db | 81 | 22 | 0 |
 | tennis-TEN-T0-2026-06-08-db | 81 | 46 | 0 |
-| tennis-TEN-T0-2026-06-02-db | 66 | 1 | 0 |
-| tennis-TEN-T0-2026-06-04-db | 23 | 2 | 0 |
 
 ## Largest Tables
 

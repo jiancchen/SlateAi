@@ -254,6 +254,63 @@ def date_clause(alias: str, start_date: str | None, end_date: str | None) -> tup
     return " and " + " and ".join(parts), params
 
 
+def match_id_date_filter(
+    table_alias: str,
+    match_id_column: str,
+    start_date: str | None,
+    end_date: str | None,
+) -> tuple[str, list[Any]]:
+    parts = []
+    params: list[Any] = []
+    if start_date:
+        parts.append("m_scope.match_date >= ?")
+        params.append(start_date)
+    if end_date:
+        parts.append("m_scope.match_date <= ?")
+        params.append(end_date)
+    if not parts:
+        return "1=1", params
+    return (
+        f"""
+        exists (
+          select 1
+          from matches m_scope
+          where m_scope.match_id = {table_alias}.{match_id_column}
+            and {" and ".join(parts)}
+        )
+        """,
+        params,
+    )
+
+
+def prediction_run_date_filter(
+    table_alias: str,
+    start_date: str | None,
+    end_date: str | None,
+) -> tuple[str, list[Any]]:
+    parts = []
+    params: list[Any] = []
+    if start_date:
+        parts.append("mr_scope.run_date >= ?")
+        params.append(start_date)
+    if end_date:
+        parts.append("mr_scope.run_date <= ?")
+        params.append(end_date)
+    if not parts:
+        return "1=1", params
+    return (
+        f"""
+        exists (
+          select 1
+          from model_runs mr_scope
+          where mr_scope.model_run_id = {table_alias}.model_run_id
+            and {" and ".join(parts)}
+        )
+        """,
+        params,
+    )
+
+
 def audit_match_shapes(con: sqlite3.Connection, start_date: str | None, end_date: str | None) -> dict[str, Any]:
     scoped_clause, params = date_clause("m", start_date, end_date)
     total_matches = int(one(con, f"select count(*) from matches m where 1=1{scoped_clause}", tuple(params)))
@@ -458,44 +515,51 @@ def audit_identity(con: sqlite3.Connection) -> dict[str, Any]:
     }
 
 
-def audit_market_shapes(con: sqlite3.Connection) -> dict[str, Any]:
+def audit_market_shapes(con: sqlite3.Connection, start_date: str | None, end_date: str | None) -> dict[str, Any]:
+    scoped_where, params = match_id_date_filter("ms", "match_id", start_date, end_date)
     duplicate_groups = int(
         one(
             con,
-            """
+            f"""
             select count(*)
             from (
               select match_id, player_id, source_name, market_type, selection, line_value, captured_at, count(*) as rows
-              from market_snapshots
+              from market_snapshots ms
+              where {scoped_where}
               group by match_id, player_id, source_name, market_type, selection, line_value, captured_at
               having rows > 1
             )
             """,
+            tuple(params),
         )
     )
     duplicate_examples = rows(
         con,
-        """
+        f"""
         select match_id, player_id, source_name, market_type, selection, line_value, captured_at, count(*) as rows
-        from market_snapshots
+        from market_snapshots ms
+        where {scoped_where}
         group by match_id, player_id, source_name, market_type, selection, line_value, captured_at
         having rows > 1
         order by rows desc, source_name, match_id
         limit 20
         """,
+        tuple(params),
     )
     by_source = rows(
         con,
-        """
+        f"""
         select source_name,
                count(*) as rows,
                sum(case when match_id is null or match_id = '' then 1 else 0 end) as missing_match_id,
                sum(case when player_id is null or player_id = '' then 1 else 0 end) as missing_player_id,
                sum(case when price_cents is null and implied_probability is null and odds_american is null then 1 else 0 end) as missing_price
-        from market_snapshots
+        from market_snapshots ms
+        where {scoped_where}
         group by source_name
         order by rows desc, source_name
         """,
+        tuple(params),
     )
     return {
         "market_snapshot_duplicate_groups": duplicate_groups,
@@ -504,43 +568,50 @@ def audit_market_shapes(con: sqlite3.Connection) -> dict[str, Any]:
     }
 
 
-def audit_stats(con: sqlite3.Connection) -> dict[str, Any]:
+def audit_stats(con: sqlite3.Connection, start_date: str | None, end_date: str | None) -> dict[str, Any]:
+    scoped_where, params = match_id_date_filter("sr", "match_id", start_date, end_date)
     duplicate_groups = int(
         one(
             con,
-            """
+            f"""
             select count(*)
             from (
               select match_id, player_id, source_name, stat_name, period, count(*) as rows
-              from match_stat_rows
+              from match_stat_rows sr
+              where {scoped_where}
               group by match_id, player_id, source_name, stat_name, period
               having rows > 1
             )
             """,
+            tuple(params),
         )
     )
     by_source = rows(
         con,
-        """
+        f"""
         select source_name,
                count(*) as rows,
                sum(case when match_id is null or match_id = '' then 1 else 0 end) as missing_match_id,
                sum(case when player_id is null or player_id = '' then 1 else 0 end) as missing_player_id
-        from match_stat_rows
+        from match_stat_rows sr
+        where {scoped_where}
         group by source_name
         order by rows desc, source_name
         """,
+        tuple(params),
     )
     duplicate_examples = rows(
         con,
-        """
+        f"""
         select match_id, player_id, source_name, stat_name, period, count(*) as rows
-        from match_stat_rows
+        from match_stat_rows sr
+        where {scoped_where}
         group by match_id, player_id, source_name, stat_name, period
         having rows > 1
         order by rows desc, source_name, match_id
         limit 20
         """,
+        tuple(params),
     )
     return {
         "stat_duplicate_groups": duplicate_groups,
@@ -549,36 +620,58 @@ def audit_stats(con: sqlite3.Connection) -> dict[str, Any]:
     }
 
 
-def audit_predictions(con: sqlite3.Connection) -> dict[str, Any]:
-    total_rows = int(one(con, "select count(*) from prediction_rows"))
+def audit_predictions(con: sqlite3.Connection, start_date: str | None, end_date: str | None) -> dict[str, Any]:
+    scoped_where, params = prediction_run_date_filter("p", start_date, end_date)
+    total_rows = int(one(con, f"select count(*) from prediction_rows p where {scoped_where}", tuple(params)))
     settlement_rows = int(one(con, "select count(*) from settlement_rows"))
+    missing_match_rows = int(
+        one(
+            con,
+            f"""
+            select count(*)
+            from prediction_rows p
+            where {scoped_where}
+              and not exists (
+                select 1
+                from matches m
+                where m.match_id = p.match_id
+              )
+            """,
+            tuple(params),
+        )
+    )
     by_run = rows(
         con,
-        """
+        f"""
         select model_run_id,
                count(*) as rows,
                sum(case when instr(coalesce(rationale_json, ''), '"marketOnly":true') > 0 then 1 else 0 end) as market_only_true,
                sum(case when instr(coalesce(rationale_json, ''), '"marketOnly"') > 0 then 1 else 0 end) as market_only_token,
                sum(case when lane = 'ml' and market_type = 'match_winner' then 1 else 0 end) as ml_match_winner_rows,
                sum(case when ev_cents is not null then 1 else 0 end) as rows_with_ev
-        from prediction_rows
+        from prediction_rows p
+        where {scoped_where}
         group by model_run_id
         order by rows desc, model_run_id
-        """
+        """,
+        tuple(params),
     )
     ten_t0 = [row for row in by_run if "TEN-T0" in row["model_run_id"] or "tennis-TEN-T0" in row["model_run_id"]]
     by_lane = rows(
         con,
-        """
+        f"""
         select lane, market_type, count(*) as rows
-        from prediction_rows
+        from prediction_rows p
+        where {scoped_where}
         group by lane, market_type
         order by rows desc, lane, market_type
-        """
+        """,
+        tuple(params),
     )
     return {
         "prediction_rows": total_rows,
         "settlement_rows": settlement_rows,
+        "prediction_rows_without_db_match": missing_match_rows,
         "model_run_count": len(by_run),
         "ten_t0_runs": ten_t0,
         "by_lane": by_lane,
@@ -662,6 +755,7 @@ def bucket_summary(report: dict[str, Any]) -> dict[str, Any]:
         "quarantine": {
             "non_tennislive_match_shapes": match_shapes["non_tennislive_match_shapes"],
             "ten_t0_market_only_prediction_rows": market_only,
+            "prediction_rows_without_db_match": report["prediction_outputs"]["prediction_rows_without_db_match"],
             "market_duplicate_groups": report["market_shapes"]["market_snapshot_duplicate_groups"],
             "stat_duplicate_groups": report["stat_shapes"]["stat_duplicate_groups"],
         },
@@ -685,9 +779,9 @@ def build_report(con: sqlite3.Connection, args: argparse.Namespace) -> dict[str,
         "table_inventory": audit_tables(con),
         "match_shapes": audit_match_shapes(con, args.start_date, args.end_date),
         "identity": audit_identity(con),
-        "market_shapes": audit_market_shapes(con),
-        "stat_shapes": audit_stats(con),
-        "prediction_outputs": audit_predictions(con),
+        "market_shapes": audit_market_shapes(con, args.start_date, args.end_date),
+        "stat_shapes": audit_stats(con, args.start_date, args.end_date),
+        "prediction_outputs": audit_predictions(con, args.start_date, args.end_date),
         "source_freshness": audit_source_freshness(con),
     }
     report["bucket_summary"] = bucket_summary(report)
@@ -734,6 +828,7 @@ def write_markdown(report: dict[str, Any], path: Path) -> None:
                 ["needs_review", "Missing start-time matches", bucket["needs_review"]["missing_start_time_matches"]],
                 ["quarantine", "Non-TennisLive match shapes", bucket["quarantine"]["non_tennislive_match_shapes"]],
                 ["quarantine", "TEN-T0 market-only prediction rows", bucket["quarantine"]["ten_t0_market_only_prediction_rows"]],
+                ["quarantine", "Prediction rows without DB match", bucket["quarantine"]["prediction_rows_without_db_match"]],
                 ["quarantine", "Market duplicate groups", bucket["quarantine"]["market_duplicate_groups"]],
                 ["quarantine", "Stat duplicate groups", bucket["quarantine"]["stat_duplicate_groups"]],
                 ["model_output", "Prediction rows", bucket["model_output_context"]["prediction_rows"]],
@@ -790,6 +885,8 @@ def write_markdown(report: dict[str, Any], path: Path) -> None:
             ["Lane", "Market type", "Rows"],
             [[row["lane"], row["market_type"], row["rows"]] for row in predictions["by_lane"]],
         ),
+        "",
+        f"Prediction rows without a DB match: `{predictions['prediction_rows_without_db_match']}`",
         "",
         "### TEN-T0 Runs",
         "",
