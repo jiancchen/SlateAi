@@ -162,6 +162,14 @@ Required checks:
 
 ## Standard Commands
 
+Run the canonical shape inventory:
+
+```bash
+npm run data:audit:tennis-data-shapes -- \
+  --out data-migration/reports/tennis_data_shape_audit_YYYY-MM-DD.json \
+  --markdown data-migration/reports/tennis_data_shape_audit_YYYY-MM-DD.md
+```
+
 Run the table/shape audit:
 
 ```bash
@@ -169,6 +177,40 @@ python3 data-migration/scripts/audit_tennis_data_shapes.py \
   --db data-private/warehouse/sports/tennis/sql-tennis.db \
   --out data-migration/reports/tennis_data_shape_audit_YYYY-MM-DD.json \
   --markdown data-migration/reports/tennis_data_shape_audit_YYYY-MM-DD.md
+```
+
+Check canonical audit views without mutating the DB:
+
+```bash
+npm run data:audit:tennis-canonical-views -- \
+  --report data-migration/reports/create_tennis_canonical_audit_views_YYYY-MM-DD.json
+```
+
+Run date-level readiness:
+
+```bash
+npm run data:audit:tennis-date-readiness -- \
+  --out data-migration/reports/tennis_date_readiness_YYYY-MM-DD.json \
+  --markdown data-migration/reports/tennis_date_readiness_YYYY-MM-DD.md
+```
+
+Run settlement readiness:
+
+```bash
+npm run data:audit:tennis-settlement-readiness -- \
+  --out data-migration/reports/tennis_settlement_readiness_YYYY-MM-DD.json \
+  --markdown data-migration/reports/tennis_settlement_readiness_YYYY-MM-DD.md
+```
+
+Export quarantine/review queues:
+
+```bash
+npm run data:audit:tennis-quarantine-candidates -- \
+  --start-date YYYY-MM-DD \
+  --end-date YYYY-MM-DD \
+  --out data-migration/reports/tennis_quarantine_candidates_SCOPE.json \
+  --markdown data-migration/reports/tennis_quarantine_candidates_SCOPE.md \
+  --csv-dir data-migration/reports/tennis_quarantine_candidates_SCOPE_csv
 ```
 
 Run source preflight for a date before accepting any export:
@@ -191,6 +233,30 @@ python3 data-migration/scripts/export_tennis_public_from_db.py \
   --force \
   --dry-run
 ```
+
+Require readiness when testing publish eligibility:
+
+```bash
+python3 data-migration/scripts/export_tennis_public_from_db.py \
+  --date YYYY-MM-DD \
+  --model TEN-T0 \
+  --out-dir data-migration/export-previews/tennis/YYYY-MM-DD \
+  --force \
+  --dry-run \
+  --require-ready
+```
+
+## Current Audit Snapshot
+
+As of 2026-06-10:
+
+- `TEN-T0` is archived as forensic output and guarded by explicit override flags.
+- Whole-warehouse date readiness found 91 tennis dates: 0 usable, 71 usable with warnings, and 20 blocked.
+- Date sanity blockers include 1 invalid date value and 2 far-future sentinel-like date values.
+- Jun 7-9 readiness found 3 dates: Jun 7 and Jun 8 blocked, Jun 9 usable only with warnings.
+- Global settlement readiness found 776 prediction rows, 0 settled rows, and 0 settlement-ready rows.
+- Jun 7-9 quarantine queues contain 154 non-TennisLive matches, 72 prediction rows without a DB match, 68 TEN-T0 market-only prediction rows, 184 market identity gaps, and 56 duplicate market groups.
+- The DB-derived public export now reports `blocked` instead of `ready` when model status, prediction/value shape, source freshness, or market-only rows fail readiness.
 
 ## Review Gates
 
