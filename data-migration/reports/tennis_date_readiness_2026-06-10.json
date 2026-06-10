@@ -1,0 +1,3570 @@
+{
+  "dates": [
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2000-03-06",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 2,
+      "date": "2001-01-29",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 2,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 2,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 2,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-07-13",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-08-11",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-08-18",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-08-21",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 2,
+      "date": "2025-09-07",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 2,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 2,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 2,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-09-08",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-09-12",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-09-19",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-09-23",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-10-29",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-10-31",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-11-04",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-11-06",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-11-12",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 2,
+      "date": "2025-11-24",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 2,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 2,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 2,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-12-21",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-12-22",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2025-12-23",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-01-09",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-01-12",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-01-13",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-02-24",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-03-03",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-03-08",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-03-16",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-03-17",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-03-18",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-03-19",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 2,
+      "date": "2026-03-24",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 2,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 2,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 2,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-04-01",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-04-05",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 2,
+      "date": "2026-04-07",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 2,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 2,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 2,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-04-11",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-04-13",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 4,
+      "date": "2026-04-14",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 4,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 4,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 4,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 2,
+      "date": "2026-04-15",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 2,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 2,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 2,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 2,
+      "date": "2026-04-20",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 2,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 2,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 2,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-04-21",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 3,
+      "date": "2026-04-22",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 3,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 3,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 3,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 6,
+      "date": "2026-04-23",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 6,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 6,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 6,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-04-24",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-04-25",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 3,
+      "date": "2026-04-27",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 3,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 3,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 3,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 7,
+      "date": "2026-04-28",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 7,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 7,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 7,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 4,
+      "date": "2026-04-29",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 4,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 4,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 4,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 6,
+      "date": "2026-04-30",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 6,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 6,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 6,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 5,
+      "date": "2026-05-01",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 5,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 5,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 5,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 4,
+      "date": "2026-05-02",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 4,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 4,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 4,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 1,
+      "date": "2026-05-03",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 6,
+      "date": "2026-05-04",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 6,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 6,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 6,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 18,
+      "date": "2026-05-05",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 18,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 18,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 18,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 6,
+      "date": "2026-05-06",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 6,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 6,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 6,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 16,
+      "date": "2026-05-07",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 16,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 16,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 16,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 14,
+      "date": "2026-05-08",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 14,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 14,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 14,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 4,
+      "date": "2026-05-09",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 5,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 5,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 5,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 9,
+      "date": "2026-05-10",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 10,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 10,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 10,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 24,
+      "date": "2026-05-11",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 24,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 24,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 24,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 22,
+      "date": "2026-05-12",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 22,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 22,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 22,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 27,
+      "date": "2026-05-13",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 27,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 27,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 27,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 25,
+      "date": "2026-05-14",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 25,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 25,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 25,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 11,
+      "date": "2026-05-15",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 11,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 11,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 11,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 14,
+      "date": "2026-05-16",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 14,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 14,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 14,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 18,
+      "date": "2026-05-17",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 18,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 18,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 18,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 41,
+      "date": "2026-05-18",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 42,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 42,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 42,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 46,
+      "date": "2026-05-19",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 47,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 47,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 47,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 51,
+      "date": "2026-05-20",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 51,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 51,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 51,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present"
+      ],
+      "canonicalMatches": 27,
+      "date": "2026-05-21",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 28,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 55,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 27,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 55,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present"
+      ],
+      "canonicalMatches": 17,
+      "date": "2026-05-22",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 22,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 39,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 17,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 39,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 11,
+      "date": "2026-05-23",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 11,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 11,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 11,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present"
+      ],
+      "canonicalMatches": 33,
+      "date": "2026-05-24",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 36,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 70,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 34,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 70,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present"
+      ],
+      "canonicalMatches": 29,
+      "date": "2026-05-25",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 49,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 79,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 30,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 79,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "only_forensic_or_quarantine_predictions",
+        "prediction_rows_without_db_match",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 43,
+      "date": "2026-05-26",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 40,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 40,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 40,
+      "quarantineMatches": 40,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 83,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 43,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 83,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "market_identity_gaps_present",
+        "only_forensic_or_quarantine_predictions",
+        "prediction_rows_without_db_match",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 39,
+      "date": "2026-05-27",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 31,
+      "marketIdentityGaps": 1,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 31,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 31,
+      "quarantineMatches": 31,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 71,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 40,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 71,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "prediction_rows_without_db_match",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 35,
+      "date": "2026-05-28",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 32,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 96,
+      "predictionRowsWithEv": 52,
+      "predictionRowsWithoutDbMatch": 32,
+      "quarantineMatches": 32,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 67,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 35,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 67,
+      "warnings": [
+        "some_forensic_or_quarantine_predictions",
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "prediction_rows_without_db_match",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 29,
+      "date": "2026-05-29",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 16,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 48,
+      "predictionRowsWithEv": 32,
+      "predictionRowsWithoutDbMatch": 16,
+      "quarantineMatches": 16,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 47,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 31,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 47,
+      "warnings": [
+        "some_forensic_or_quarantine_predictions",
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "prediction_rows_without_db_match",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 19,
+      "date": "2026-05-30",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 16,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 96,
+      "predictionRowsWithEv": 32,
+      "predictionRowsWithoutDbMatch": 16,
+      "quarantineMatches": 16,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 35,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 19,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 35,
+      "warnings": [
+        "some_forensic_or_quarantine_predictions",
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "prediction_rows_without_db_match",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 38,
+      "date": "2026-05-31",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 8,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 24,
+      "predictionRowsWithEv": 16,
+      "predictionRowsWithoutDbMatch": 8,
+      "quarantineMatches": 8,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 48,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 40,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 48,
+      "warnings": [
+        "some_forensic_or_quarantine_predictions",
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "prediction_rows_without_db_match",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 41,
+      "date": "2026-06-01",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 8,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 24,
+      "predictionRowsWithEv": 16,
+      "predictionRowsWithoutDbMatch": 8,
+      "quarantineMatches": 8,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 53,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 45,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 53,
+      "warnings": [
+        "some_forensic_or_quarantine_predictions",
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "market_identity_gaps_present",
+        "prediction_rows_without_db_match",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 78,
+      "date": "2026-06-02",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 132,
+      "marketIdentityGaps": 16,
+      "marketOnlyPredictionRows": 2,
+      "predictionRows": 232,
+      "predictionRowsWithEv": 100,
+      "predictionRowsWithoutDbMatch": 66,
+      "quarantineMatches": 66,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 148,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 4,
+        "requiredSources": 5,
+        "stale": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings"
+        ]
+      },
+      "tennisLiveResultRows": 82,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 148,
+      "warnings": [
+        "some_forensic_or_quarantine_predictions",
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 35,
+      "date": "2026-06-03",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 36,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 35,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 36,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "market_identity_gaps_present",
+        "only_forensic_or_quarantine_predictions",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 69,
+      "date": "2026-06-04",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 23,
+      "marketIdentityGaps": 68,
+      "marketOnlyPredictionRows": 2,
+      "predictionRows": 23,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 24,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 73,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 3,
+        "requiredSources": 5,
+        "stale": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context"
+        ]
+      },
+      "tennisLiveResultRows": 63,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 96,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "market_identity_gaps_present"
+      ],
+      "canonicalMatches": 52,
+      "date": "2026-06-05",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 24,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 4,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 56,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 1,
+        "requiredSources": 5,
+        "stale": [
+          "tennis_odds"
+        ]
+      },
+      "tennisLiveResultRows": 32,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 60,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "market_identity_gaps_present"
+      ],
+      "canonicalMatches": 20,
+      "date": "2026-06-06",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 28,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 10,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 10,
+      "reviewMatchShapes": 34,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_player_context",
+          "tennis_rankings"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 2,
+        "requiredSources": 5,
+        "stale": [
+          "tennis_odds",
+          "tennislive"
+        ]
+      },
+      "tennisLiveResultRows": 24,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 34,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "market_identity_gaps_present",
+        "only_forensic_or_quarantine_predictions",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 57,
+      "date": "2026-06-07",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 81,
+      "marketIdentityGaps": 74,
+      "marketOnlyPredictionRows": 22,
+      "predictionRows": 81,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 88,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 64,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_player_context"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 3,
+        "requiredSources": 5,
+        "stale": [
+          "tennis_odds",
+          "tennis_rankings",
+          "tennislive"
+        ]
+      },
+      "tennisLiveResultRows": 28,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 152,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "market_identity_gaps_present",
+        "only_forensic_or_quarantine_predictions",
+        "prediction_rows_without_db_match",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 40,
+      "date": "2026-06-08",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 81,
+      "marketIdentityGaps": 110,
+      "marketOnlyPredictionRows": 46,
+      "predictionRows": 81,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 72,
+      "quarantineMatches": 66,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 58,
+      "reviewMatchShapes": 42,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_player_context"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 3,
+        "requiredSources": 5,
+        "stale": [
+          "tennis_odds",
+          "tennis_rankings",
+          "tennislive"
+        ]
+      },
+      "tennisLiveResultRows": 40,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 106,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 14,
+      "date": "2026-06-09",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 14,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 1,
+        "requiredSources": 5,
+        "stale": [
+          "tennis_rankings"
+        ]
+      },
+      "tennisLiveResultRows": 0,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 14,
+      "warnings": [
+        "no_result_evidence",
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "far_future_date_value"
+      ],
+      "canonicalMatches": 1,
+      "date": "2099-02-12",
+      "dateStatus": "far_future",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "far_future_date_value"
+      ],
+      "canonicalMatches": 1,
+      "date": "2099-04-02",
+      "dateStatus": "far_future",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 1,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 1,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 1,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "invalid_date_value"
+      ],
+      "canonicalMatches": 2,
+      "date": "unknown",
+      "dateStatus": "invalid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 2,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennis_rankings",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 0,
+        "requiredSources": 5,
+        "stale": []
+      },
+      "tennisLiveResultRows": 0,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 2,
+      "warnings": [
+        "no_result_evidence",
+        "source_freshness_not_current_publish_ready"
+      ]
+    }
+  ],
+  "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "generated_at": "2026-06-10T08:20:08.420418+00:00",
+  "scope": {
+    "end_date": null,
+    "start_date": null
+  },
+  "script": "data-migration/scripts/audit_tennis_date_readiness.py",
+  "sql_path": "data-migration/contracts/tennis_canonical_audit_views.sql",
+  "summary": {
+    "blocked": 20,
+    "dates": 91,
+    "farFutureDates": 2,
+    "futureDates": 0,
+    "invalidDates": 1,
+    "totalCanonicalMatches": 1173,
+    "totalPredictionRows": 776,
+    "totalQuarantineMatches": 544,
+    "totalSettlementRows": 0,
+    "usable": 0,
+    "usableWithWarnings": 71
+  }
+}

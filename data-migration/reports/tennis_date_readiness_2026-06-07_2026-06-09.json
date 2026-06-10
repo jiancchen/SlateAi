@@ -1,0 +1,154 @@
+{
+  "dates": [
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "market_identity_gaps_present",
+        "only_forensic_or_quarantine_predictions",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 57,
+      "date": "2026-06-07",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 81,
+      "marketIdentityGaps": 74,
+      "marketOnlyPredictionRows": 22,
+      "predictionRows": 81,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 88,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 64,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_player_context"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 3,
+        "requiredSources": 5,
+        "stale": [
+          "tennis_odds",
+          "tennis_rankings",
+          "tennislive"
+        ]
+      },
+      "tennisLiveResultRows": 28,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 152,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [
+        "non_tennislive_match_shapes_present",
+        "market_identity_gaps_present",
+        "only_forensic_or_quarantine_predictions",
+        "prediction_rows_without_db_match",
+        "no_settlement_rows_for_prediction_runs"
+      ],
+      "canonicalMatches": 40,
+      "date": "2026-06-08",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 81,
+      "marketIdentityGaps": 110,
+      "marketOnlyPredictionRows": 46,
+      "predictionRows": 81,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 72,
+      "quarantineMatches": 66,
+      "readiness": "blocked",
+      "resolvedMarketSnapshots": 58,
+      "reviewMatchShapes": 42,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_player_context"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 3,
+        "requiredSources": 5,
+        "stale": [
+          "tennis_odds",
+          "tennis_rankings",
+          "tennislive"
+        ]
+      },
+      "tennisLiveResultRows": 40,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 106,
+      "warnings": [
+        "source_freshness_not_current_publish_ready"
+      ]
+    },
+    {
+      "blockers": [],
+      "canonicalMatches": 14,
+      "date": "2026-06-09",
+      "dateStatus": "valid",
+      "forensicOrQuarantinePredictionRows": 0,
+      "marketIdentityGaps": 0,
+      "marketOnlyPredictionRows": 0,
+      "predictionRows": 0,
+      "predictionRowsWithEv": 0,
+      "predictionRowsWithoutDbMatch": 0,
+      "quarantineMatches": 0,
+      "readiness": "usable_with_warnings",
+      "resolvedMarketSnapshots": 0,
+      "reviewMatchShapes": 14,
+      "settlementRows": 0,
+      "sourceStatus": {
+        "failed": [],
+        "missing": [
+          "tennis_flashscore_stats",
+          "tennis_odds",
+          "tennis_player_context",
+          "tennislive"
+        ],
+        "okForCurrentPublish": false,
+        "presentSuccess": 1,
+        "requiredSources": 5,
+        "stale": [
+          "tennis_rankings"
+        ]
+      },
+      "tennisLiveResultRows": 0,
+      "tennisMatchResultRows": 0,
+      "tennisModelSettlementRows": 0,
+      "totalMatches": 14,
+      "warnings": [
+        "no_result_evidence",
+        "source_freshness_not_current_publish_ready"
+      ]
+    }
+  ],
+  "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "generated_at": "2026-06-10T08:20:08.420420+00:00",
+  "scope": {
+    "end_date": "2026-06-09",
+    "start_date": "2026-06-07"
+  },
+  "script": "data-migration/scripts/audit_tennis_date_readiness.py",
+  "sql_path": "data-migration/contracts/tennis_canonical_audit_views.sql",
+  "summary": {
+    "blocked": 2,
+    "dates": 3,
+    "farFutureDates": 0,
+    "futureDates": 0,
+    "invalidDates": 0,
+    "totalCanonicalMatches": 111,
+    "totalPredictionRows": 162,
+    "totalQuarantineMatches": 154,
+    "totalSettlementRows": 0,
+    "usable": 0,
+    "usableWithWarnings": 1
+  }
+}

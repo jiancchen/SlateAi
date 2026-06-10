@@ -167,6 +167,7 @@
     "data:audit:tennis-quarantine-candidates": "python3 data-migration/scripts/audit_tennis_quarantine_candidates.py",
     "data:audit:tennis-canonical-views": "python3 data-migration/scripts/create_tennis_canonical_audit_views.py",
     "data:audit:tennis-settlement-readiness": "python3 data-migration/scripts/audit_tennis_settlement_readiness.py",
+    "data:audit:tennis-date-readiness": "python3 data-migration/scripts/audit_tennis_date_readiness.py",
     "data:audit:tennis-active-sources": "node scripts/audit-tennis-active-sources.mjs",
     "data:audit:tennis-warehouse-identity": "node scripts/audit-tennis-warehouse-identity.mjs",
     "data:audit:tennis-match-contract": "node scripts/audit-tennis-match-contract.mjs",
