@@ -1,0 +1,2667 @@
+{
+  "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "examples": {
+    "duplicateCanonicalNameGroups": [],
+    "duplicateMatchPlayerSideGroups": [
+      {
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-alex-marti-pujolras-vs-benjamin-hassan",
+        "player_ids": "tennis-player-alex-mart-pujolras,tennis-player-alex-marti-pujolras",
+        "rows": 2,
+        "side": 1
+      },
+      {
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-hynek-barton-vs-sebastian-sorger",
+        "player_ids": "tennis-player-hynek-barto,tennis-player-hynek-barton",
+        "rows": 2,
+        "side": 1
+      },
+      {
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-lukas-neumayer-vs-michal-krajci",
+        "player_ids": "tennis-player-michal-kraj,tennis-player-michal-krajci",
+        "rows": 2,
+        "side": 2
+      },
+      {
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-carlos-sanchez-jover-vs-gerard-campana-lee",
+        "player_ids": "tennis-player-carlos-s-nchez-jover,tennis-player-carlos-sanchez-jover",
+        "rows": 2,
+        "side": 1
+      },
+      {
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-david-jorda-sanchis-vs-s-d-prajwal-dev",
+        "player_ids": "tennis-player-david-jord-sanchis,tennis-player-david-jorda-sanchis",
+        "rows": 2,
+        "side": 1
+      },
+      {
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-matteo-martineau-vs-mae-malige",
+        "player_ids": "tennis-player-matt-o-martineau,tennis-player-matteo-martineau",
+        "rows": 2,
+        "side": 1
+      },
+      {
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-matteo-martineau-vs-mae-malige",
+        "player_ids": "tennis-player-ma-malige,tennis-player-mae-malige",
+        "rows": 2,
+        "side": 2
+      },
+      {
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-noah-karma-vs-raphael-perot",
+        "player_ids": "tennis-player-rapha-l-p-rot,tennis-player-raphael-perot",
+        "rows": 2,
+        "side": 2
+      }
+    ],
+    "marketRowsMissingPlayerId": [
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "261cd7e7077224d3638d34a4bc42bf033e833601",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-san-miguel-de-tucuman-karim-bennani-vs-santiago-rodriguez-taverna-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "342eb9882285eda40d0c7f90e512ee17e6a8f315",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-san-miguel-de-tucuman-karim-bennani-vs-santiago-rodriguez-taverna-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "c70354987813ae2cd9c7ddf6474e7c5dc216491e",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-atp-challenger-bratislava-sachko-vs-watanuki-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "d89751d671bf83aff5aaceb3592fd22a41a98401",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-atp-challenger-bratislava-sachko-vs-watanuki-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "0bb17fa370c9a81509f2651a0e6b666bf391599e",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-atp-challenger-ilkley-schoolkate-vs-harris-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "c9f2132f08f972068beecbf1befb8d382ad72462",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-atp-challenger-ilkley-schoolkate-vs-harris-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "51ece0696894067cbff76011e490d3d092651923",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-atp-challenger-lyon-pavlovic-vs-galan-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "b4fe5acaa37db34f1a7d8339e808859fc7828081",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-atp-challenger-lyon-pavlovic-vs-galan-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "6beeceb41be34bf7dfd2299ba37d2191fb8b4f6d",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-dudeney-vs-sakatsume-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "60936f19d86763f534a9b1c26307cb41a6da7d6e",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-dudeney-vs-sakatsume-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "c745e560a1c2d4e94c3e84b1efe7ec7d6f102df6",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-golubic-vs-britton-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "ea37feb3625a143fc108ff3b6f9a5237171ab922",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-golubic-vs-britton-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "1a6e39d6943eab40737267ce734c32cef41c8df1",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-klimovicova-vs-kraus-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "8da970dccbef25352b860671946287562d1937ee",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-klimovicova-vs-kraus-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "ebd7e191e0a8dd71a730e616027d4776ba4fa2d3",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-podrez-vs-prozorova-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "468581cf3aefcbdb37db168894fdb00b16dcbba8",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-podrez-vs-prozorova-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "3514ab0ea9ecf460a61c7462acc15814e819a86a",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-sawangkaew-vs-urhobo-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "3a43d3bd6e17b148966c937dfe8b2950ee4a5fe6",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-sawangkaew-vs-urhobo-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "c53089183a9778400b9ef5440907d3d7344ba26b",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-vidmanova-vs-fruhvirtova-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "d9fc7decb8a122d205dd154a4ccb1292cac50c09",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-ilkley-vidmanova-vs-fruhvirtova-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "8df3c5202bc307a19790931f613fc49be618854e",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-kawa-vs-pigato-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "558fe19e5c44803a03552b024a2776c976e32806",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-kawa-vs-pigato-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "cbf4ff80b067e2f4ace6415a221c64e6ced6f785",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-noha-akugue-vs-rakotomanga-rajaonah-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "7e8f3ce716b489e1e2dc87282c128de290f19774",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-noha-akugue-vs-rakotomanga-rajaonah-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "5281d4556a89d5023e0d5c76e5f0e85b74a2bebd",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-quevedo-vs-ortenzi-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "1d4cf2029d4e65977d298581c2e601d64c4a2abb",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-quevedo-vs-ortenzi-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "cf0af229d3e5a79956f8d45acaab82d6a25305df",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-trevisan-vs-ruggeri-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "b27374365263fe3d339e0cea15c9344f1550e43d",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-trevisan-vs-ruggeri-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "39c0e4578f88f8dce3c2607152d4baa794ad6d04",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-vandromme-vs-fita-boluda-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "3b421c8ba9eedf4b4541cd2de03f66e90eb1e628",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-vandromme-vs-fita-boluda-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "af12599516f7a5ab2afe345d0b75031f307fdcbb",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-wang-vs-samson-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "ec51b02c6ce25e19be657652d75de86684bbe576",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-125k-modena-wang-vs-samson-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "5273d2bbdc6d2d633c71750e7c8d5ecddc1cc308",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-london-boulter-vs-fernandez-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "b3d90f6a229ad001fd67d94dea95284fdab29486",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-london-boulter-vs-fernandez-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "e8ac7be2daeb920f9aac72800040c27fd66de86c",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-london-boulter-vs-fernandez-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "f2b13a4bb08c07e4c8a3d2a4dbae1bd937ee14bb",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-london-boulter-vs-fernandez-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "0f43f48bd11fb81ba20b878a8b88c88fb92f36d1",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-london-dart-vs-samsonova-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "d5a1998825e9ac4e215c2a2dbb4d30b37db40a5b",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-london-dart-vs-samsonova-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "0ef1a39a1a6d73714c611e6c13caca6962fa203d",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-london-dart-vs-samsonova-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "a542bf99ad544c1909ece723115f4f30e2fa5d20",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-london-dart-vs-samsonova-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "e280c718ae0dea251358374179a3d624ce4d9f91",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-london-pliskova-vs-kessler-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "012800f9cc06c2f30043fe40ba3d48af4ed72220",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-london-pliskova-vs-kessler-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "88f4b0424c72d4116dea9666f2cf550958daccd9",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-london-pliskova-vs-kessler-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "b14e86eddd87d39641ed370d66c49d9b2bc45a50",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-london-pliskova-vs-kessler-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "5d49f93df4a4542bb918bf0286e7ba258fdd02c7",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-london-siegemund-vs-jones-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "d1abeab483fba8cf792e87fe2fac38719009cdfb",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-london-siegemund-vs-jones-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "e6d6f201ea51ed21e715802faa07a036bd0bac4e",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-london-siegemund-vs-jones-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "02ef7fb5f19f3f51c4971cbb4333bb4f16c8ad70",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-london-siegemund-vs-jones-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "515df41f08250076e992a86968e65312694ae8e7",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-london-zheng-vs-cristian-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "7aa9f28918a1f1198aa56a08232b49c01682db7d",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-london-zheng-vs-cristian-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "a025cb2b14df5855d180f5f4fb185894d27852a9",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-london-zheng-vs-cristian-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "3f36c25d65abd1dd5c6143a2b4641595333e2d17",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-london-zheng-vs-cristian-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "97f11b1015d693bb76b2890eab5fcb0660909017",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-alexandrova-vs-udvardy-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "7450977c1cbb98502454c8226185966ac4309777",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-alexandrova-vs-udvardy-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "c643dd426a91e1eedd31defebecdbe76a70ef749",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-alexandrova-vs-udvardy-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "6cf6a5a4fe06d63aee5f9797e648bb4dd181985b",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-alexandrova-vs-udvardy-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "2bc2abf648911b8a6ce14d791bd94be2256831ae",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-andreescu-vs-mertens-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "fdbb939d203b6f6e485416e504f17c1c3567eff5",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-andreescu-vs-mertens-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "00b0c591f2147fc78fba02e4aadbb08ed5a078ea",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-andreescu-vs-mertens-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "b1ff8a135903d2cce87f5546e9f59d68b04cbb76",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-andreescu-vs-mertens-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "5c248f7edfeade5c24d13fb876d6c3f29b4fa572",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-kasatkina-vs-montgomery-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "55d94edfa472dd239d95933e35a3ced0cd1f7b5a",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-kasatkina-vs-montgomery-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "3c27c34120e23b3fd474e4bb11b558274b8c8c73",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-kasatkina-vs-montgomery-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "02665a4ec2954fff317a37cab90ff24359e651a4",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-kasatkina-vs-montgomery-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "6415aaccfa5e1e3913a3a85041599964b3f7f435",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-linette-vs-birrell-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "dbf04dccad5b71f51143e24a59dae152de0afeb3",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-linette-vs-birrell-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "21067e49369a11e305727fba8aee8b52f57162d0",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-linette-vs-birrell-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "392a2593bdcc03b6196d52e502f3964db7211d0a",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-linette-vs-birrell-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "5fc09b598c96103a47d4a8f6714953895c3a87c3",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-pohankova-vs-tauson-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "de5610c703f3cdc7c4120d7c44c3e594f8d34aed",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-pohankova-vs-tauson-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "589786a10bc1bf173598568b05b2ecaee1f1b9a3",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-pohankova-vs-tauson-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "3729ee8257e5ab50a019426e13d2df88b5fb7b75",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-pohankova-vs-tauson-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "a73a797d2d8017c6ab7742e957ea3a4eb9f8aa0e",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-snigur-vs-badosa-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "8acf980a9747a21d3668d2a6eff8dbde5ae31e42",
+        "market_type": "match_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-snigur-vs-badosa-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "dab516fd66fbc0cc5aa000e924f6f6b2ba123be6",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-snigur-vs-badosa-2026-06-08",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "38577629861070ed87506e007aa61c68f83d2863",
+        "market_type": "first_set_total_games",
+        "match_id": "rh-wta-s-hertogenbosch-snigur-vs-badosa-2026-06-08",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "92064c15c1548dce3865115ecb9d8930232b5233",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-bratislava-challenger-2026-federico-cina-vs-marko-topo",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "ee8453c022c8c13f4ef40b4b01b913de7e98d620",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-bratislava-challenger-2026-federico-cina-vs-marko-topo",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "5d7d8ae3a1e8d15690966aaeca75e04d6128aff8",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-bratislava-challenger-2026-norbert-gombos-vs-jan-choinski",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "60a40eb2521d6c2c44489f1a69bdea5ffafe57a2",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-bratislava-challenger-2026-norbert-gombos-vs-jan-choinski",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "635b31e19b7fc41a940832865ffaf3a35d775506",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-bratislava-challenger-2026-thanasi-kokkinakis-vs-tomas-barrios-vera",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "775d90e40aabbddd4f0ae62af26d30fa6b0e3f8d",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-bratislava-challenger-2026-thanasi-kokkinakis-vs-tomas-barrios-vera",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "c102951eb9973549b69168e9a5170fc905f994bb",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-cattolica-challenger-2026-andrea-guerrieri-vs-dalibor-svrcina",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "bc7ee54f73c0652f6c558479da8d03622762c458",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-cattolica-challenger-2026-andrea-guerrieri-vs-dalibor-svrcina",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "c919e582a324c215413c5d18382ab7695780ab59",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-cattolica-challenger-2026-liam-broady-vs-ioannis-xilas",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "464de3c0f8ac57063411ea03dcea3c706daed699",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-cattolica-challenger-2026-liam-broady-vs-ioannis-xilas",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "c9c8203139d5cc4982f10d3d87f9448b8db43fce",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-cattolica-challenger-2026-michele-ribecai-vs-franco-agamenone",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "762aea93f54b5e07fddbc604c2c33428fdcb530a",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-cattolica-challenger-2026-michele-ribecai-vs-franco-agamenone",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "c49065bb80bf59192d69a94b56e5c80cd670337d",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-cattolica-challenger-2026-pierluigi-basile-vs-raul-brancaccio",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "7e261fd545469479566b6c119cb16d1b1454c5df",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-cattolica-challenger-2026-pierluigi-basile-vs-raul-brancaccio",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "6939e9ab075ac4f5229908d2f0228813d14834e4",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-ilkley-challenger-2026-august-holmgren-vs-nicolai-budkov-kjaer",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "27d686cc082395b3b05f65db485ebce66882f5b2",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-ilkley-challenger-2026-august-holmgren-vs-nicolai-budkov-kjaer",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "e9acfd6ddb4feabe6556c9e2a31086bf3f50c6a8",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-ilkley-challenger-2026-harry-wendelken-vs-jack-pinnington-jones",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "4a1e103b7ff465e1555f1dc781d923b7ef200a32",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-ilkley-challenger-2026-harry-wendelken-vs-jack-pinnington-jones",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "ec61ddfad23e4b4fe466bf6c360655a054a2ec85",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-ilkley-challenger-2026-kyrian-jacquet-vs-toby-samuel",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "8e8ae660072983afcd0bfa64faade4bbe915852a",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-ilkley-challenger-2026-kyrian-jacquet-vs-toby-samuel",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "15ed139094bc96a3a1df253ef63e5ba38f707b42",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-ilkley-challenger-2026-ugo-blanchet-vs-oliver-tarvet",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "298a41693c46f80206e625dc420ed5afa5e4e482",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-ilkley-challenger-2026-ugo-blanchet-vs-oliver-tarvet",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "03f6ca6c0e5a94858ecc53ca312f6f92627d4aa1",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-lyon-challenger-2026-hugo-grenier-vs-luca-van-assche",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "48a4a8879bba1a9c5b0421a88065849bdc896c6e",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-lyon-challenger-2026-hugo-grenier-vs-luca-van-assche",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "c868fa10085dd94ca70b2c9034d67430ac931848",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-lyon-challenger-2026-laslo-djere-vs-kimmer-coppejans",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "2155a48032f4a3fb3a742213c4fd06b8bab26c7b",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-lyon-challenger-2026-laslo-djere-vs-kimmer-coppejans",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "fbd9ee909bc0388e4f2182a89c2442a2f9915d81",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-lyon-challenger-2026-lorenzo-giustino-vs-daniel-rincon",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "28b12d3d4a0a7aa72c7cd204c1aed330f658b09a",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-lyon-challenger-2026-lorenzo-giustino-vs-daniel-rincon",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "b987c0af87f0a787b71bdb258259f010c4da12b7",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-san-miguel-de-tucuman-challenger-2026-eduardo-ribeiro-vs-santiago-de-la-fuente",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "30b02d029f0437296db5804d67041373a040285d",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-san-miguel-de-tucuman-challenger-2026-eduardo-ribeiro-vs-santiago-de-la-fuente",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "df1a3bca6103c598eaeac9eb387f1bc31a707848",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-san-miguel-de-tucuman-challenger-2026-facundo-mena-vs-lorenzo-joaquin-rodriguez",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "14ffbc3a519e2dca3858bb020b807438d832d92a",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-san-miguel-de-tucuman-challenger-2026-facundo-mena-vs-lorenzo-joaquin-rodriguez",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "437bc8db647c4ec31ceffdacd2413710106c40cb",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-san-miguel-de-tucuman-challenger-2026-juan-sebastian-gomez-vs-luciano-emanuel-ambrogi",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-08T07:31:18.345Z",
+        "market_snapshot_id": "6a8b31292943ca12ad78cf69ad247cc9b09126a0",
+        "market_type": "first_set_total_games",
+        "match_id": "tl-2026-06-08-san-miguel-de-tucuman-challenger-2026-juan-sebastian-gomez-vs-luciano-emanuel-ambrogi",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "95beb67381c754e99e8187412362cc2774700cba",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-centurion-2-philip-henning-vs-alexander-donski-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "5bdaa0d85864046612a53c375ae83e3a0d37ef0f",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-centurion-2-philip-henning-vs-alexander-donski-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "cce726a929f532aa3c9084d166aa63a2ba1fde77",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-heilbronn-luka-mikrut-vs-emilio-nava-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "90604fc135deed32a581d98cb2dbe3901d3573ee",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-heilbronn-luka-mikrut-vs-emilio-nava-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "e9930e7cb5c27945c3bfa5d010653a976eef2d8f",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-perugia-henrique-rocha-vs-daniel-merida-aguilar-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "c0d01e11c208546a3a97bc0a47b1dcc041680e95",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-perugia-henrique-rocha-vs-daniel-merida-aguilar-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "92828e8924a4ef7d23d7f82168f0b52ca6e522b3",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-prostejov-sebastian-baez-vs-alex-molcan-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "a37e1274ecf1fca71b977410a5bf34d8e6a14131",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-prostejov-sebastian-baez-vs-alex-molcan-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "7ead615ddca184fb78df651fa00475e69fb87b7f",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-tyler-adam-walton-vs-andre-ilagan-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "23a1b6f03ab10e3c1dea8aacd7a2a3603595b65b",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-challenger-tyler-adam-walton-vs-andre-ilagan-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "6afa7d382cc500879430d5887708aeb11ac7999b",
+        "market_type": "match_total_games",
+        "match_id": "dk-atp-french-open-m-flavio-cobolli-vs-alexander-zverev-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "bc8317a83e604e41cdefea47a2300d98bd8651fb",
+        "market_type": "match_total_games",
+        "match_id": "dk-atp-french-open-m-flavio-cobolli-vs-alexander-zverev-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "39928788ef802dec2bb7f0eba022884561cb8b73",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-french-open-m-flavio-cobolli-vs-alexander-zverev-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "a405befd778dd5d9b8266d2053677aa35781ba84",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-atp-french-open-m-flavio-cobolli-vs-alexander-zverev-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "b798139735554bfe6420bf461385a5e7777f1064",
+        "market_type": "first_game_props",
+        "match_id": "dk-atp-french-open-m-flavio-cobolli-vs-alexander-zverev-2026-06-07",
+        "selection": "First 2 Game Props: All Holds of Serve",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "8d90a9e6890b779e269592a73c5562d7f1d327e9",
+        "market_type": "first_game_props",
+        "match_id": "dk-atp-french-open-m-flavio-cobolli-vs-alexander-zverev-2026-06-07",
+        "selection": "First 2 Game Props: Break Point in Every Game",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "82dcf75f47218d0dc067d4c61ff3dcd1cf8cd6c4",
+        "market_type": "first_game_props",
+        "match_id": "dk-atp-french-open-m-flavio-cobolli-vs-alexander-zverev-2026-06-07",
+        "selection": "First 2 Game Props: All Breaks of Serve",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "5c5e423e34216b22690dd4a3d46c3ca5ca20fffe",
+        "market_type": "first_game_props",
+        "match_id": "dk-atp-french-open-m-flavio-cobolli-vs-alexander-zverev-2026-06-07",
+        "selection": "First 4 Game Props: All Holds of Serve",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "7e38427973f80bbbf254b83e5fc9fb1a1a4c4935",
+        "market_type": "first_game_props",
+        "match_id": "dk-atp-french-open-m-flavio-cobolli-vs-alexander-zverev-2026-06-07",
+        "selection": "First 4 Game Props: Break Point in Every Game",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "a1bb3fa326b273ea5afe5d81feff95057c5858c0",
+        "market_type": "first_game_props",
+        "match_id": "dk-atp-french-open-m-flavio-cobolli-vs-alexander-zverev-2026-06-07",
+        "selection": "First 4 Game Props: All Breaks of Serve",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "7272baa8f1dd377838e7c33a90431873ab95ef1f",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-birmingham-alexandra-eala-vs-nikola-bartunkova-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "b433159d366cef671c5e63f6ef8cc3b393e92f42",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-birmingham-alexandra-eala-vs-nikola-bartunkova-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "5163e1db10e4f723a212082872cb51dfc415fadf",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-foggia-leyre-romero-gormaz-vs-tyra-caterina-grant-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "473e1b101e36dc3c0e644566b526afd54ad30153",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-foggia-leyre-romero-gormaz-vs-tyra-caterina-grant-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "8d35549d921e050c61a17a61d74c00fb47bbe3b8",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-makarska-darja-semenistaja-vs-maria-timofeeva-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "cce54e0b42fc5101b34aace1ddedeec8646649c9",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-makarska-darja-semenistaja-vs-maria-timofeeva-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "5c123f50fd9184141367559a633c0abd84770c32",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-ella-seidel-vs-greet-minnen-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "66a4417bb7041dcde970008a1277a2b978271924",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-ella-seidel-vs-greet-minnen-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "9731eb3ee50a3b4f14870b5fef301ca9d8a7e2b1",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-ella-seidel-vs-greet-minnen-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "8eff2114ffd6531978af638c667223934066ec7a",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-ella-seidel-vs-greet-minnen-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "d537bf0d01a1228a2c454f7609a8a07aff5c38a2",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-hanne-vandewinkel-vs-anouk-koevermans-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "7a51132592fbdac8b6a89c64c6568892315bf14f",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-hanne-vandewinkel-vs-anouk-koevermans-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "c60fed61ced1334b350d8c7232d571b7e2bbad97",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-hanne-vandewinkel-vs-anouk-koevermans-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "72043fbf6d5489b39116b0c12532196fc3f0a7e0",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-hanne-vandewinkel-vs-anouk-koevermans-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "8709d98cdf65ed3daaf6b73770fa3c20735c39e1",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-katie-volynets-vs-lin-zhu-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "f1b3361ec5257fe924b4f18528e8536bf7604299",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-katie-volynets-vs-lin-zhu-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "b85bb584e4f8730daa28f83d277bf2a445dd1813",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-katie-volynets-vs-lin-zhu-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "83f15d1ab6808e581e0ec3e33c9971b1ec89b5f1",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-katie-volynets-vs-lin-zhu-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "f7c0ffe6bb303303292c3bab4bccd40494143d32",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-robin-montgomery-vs-joanna-garland-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "80f73c47df54a8fec8357e925f5b6de94aee61ac",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-robin-montgomery-vs-joanna-garland-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "74f18f0bde0fe22c95911eaee027c85074eaa2bb",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-robin-montgomery-vs-joanna-garland-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "26bb3571ff4f13ad506e483e70c0a5b2b16200bd",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-robin-montgomery-vs-joanna-garland-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "3c8a7dccd50254976ef73efbb0833b274822d6d7",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-donna-vekic-vs-carole-monnet-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "e4e210e72df0dc5ed40e8fbebe03635a7df5754b",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-donna-vekic-vs-carole-monnet-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "cddcca7b787bcb8cb4b34525a9e270dd95bd08c6",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-donna-vekic-vs-carole-monnet-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "a6b47036475ea25b7363db3c5458611dadd7ab3a",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-donna-vekic-vs-carole-monnet-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "3d8c5c3719b4c6cf3c7e5082a7e376f7f070dca1",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-ekaterine-gorgodze-vs-kamilla-rakhimova-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "e97c46671e885b4168cdb24763537d07add479b2",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-ekaterine-gorgodze-vs-kamilla-rakhimova-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "fee528c426e49ad53db4841e33a2ba8bdcf0759e",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-ekaterine-gorgodze-vs-kamilla-rakhimova-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "24f19f57f4b8ba330699268bde0359c9c3242692",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-ekaterine-gorgodze-vs-kamilla-rakhimova-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "9b26e62aea1701189a7eaec5e8228196e2697298",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-elsa-jacquemot-vs-hanyu-guo-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "8b5c66502eee300009f5e42df02aa22f2c859139",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-elsa-jacquemot-vs-hanyu-guo-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "be15be67d7c7a1f2c9c578b231b4a2d8d32b0a71",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-elsa-jacquemot-vs-hanyu-guo-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "764584fe0f244ee67f1e2c5165bf6fc15b315ddf",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-elsa-jacquemot-vs-hanyu-guo-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "1494989a7ac9568aa069499cfccc9019dc0db5e6",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-jodie-anna-burrage-vs-anna-blinkova-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "970acbdb37ac8809eda831699ec56913acce0516",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-jodie-anna-burrage-vs-anna-blinkova-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "c13d290a957ecbb50fd8b4366999b00ebaa80fc3",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-jodie-anna-burrage-vs-anna-blinkova-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "626fc6d3758f2c8878971e0782c2c5ee10bda9c3",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-jodie-anna-burrage-vs-anna-blinkova-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "b88c583940caae4350c490614253bb70a8aa7836",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-maddison-inglis-vs-alycia-parks-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "3db2775cb16907bc0b13c417d1036c90fe0793d2",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-maddison-inglis-vs-alycia-parks-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "418a25fdd7c2d3b094684b4a7294565de1aea561",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-maddison-inglis-vs-alycia-parks-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "2cb449839dea1f8382b1dec78494b44b67261505",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-maddison-inglis-vs-alycia-parks-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "7b1985af70f3e1901ad28edfbb745f038a6b01a0",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-priscilla-hon-vs-polina-kudermetova-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "01e32ddc5209904accb026997f9e337a292cd919",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-priscilla-hon-vs-polina-kudermetova-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "1b3127fe46d6afc5c5adb2d1c2e2a566a035a0b6",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-priscilla-hon-vs-polina-kudermetova-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "d2498474d9a0cbece39e41de6cbfba599b603946",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-priscilla-hon-vs-polina-kudermetova-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "4453170eb92fc4f3b46719fd8511c24caa0ad934",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-talia-gibson-vs-alina-charaeva-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "cb08ddf9494ec4c6bfc15201e6e8afe07ab1e46d",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-talia-gibson-vs-alina-charaeva-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "e859b7a69e265051657995ac2a37ff160cca9442",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-talia-gibson-vs-alina-charaeva-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "c1277e0c09f5d10fcaa8d3d07c974ea6fd1507ce",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-talia-gibson-vs-alina-charaeva-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "88ba6cbdafbbbe647686f8f863dcb6438821f4da",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-tatjana-maria-vs-yuriko-lily-miyazaki-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "c0e0dacbd8c91c77e8c025ae26126b708aafa040",
+        "market_type": "match_total_games",
+        "match_id": "dk-wta-wta-quals-london-tatjana-maria-vs-yuriko-lily-miyazaki-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "e824372fdc93bfc007b5ca444839aadb18bbc7e5",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-tatjana-maria-vs-yuriko-lily-miyazaki-2026-06-07",
+        "selection": "Over",
+        "source_name": "draftkings"
+      },
+      {
+        "captured_at": "2026-06-07T07:05:44.067Z",
+        "market_snapshot_id": "2ee4ee5a309fde9c6a39515a2503b2cce5499daa",
+        "market_type": "first_set_total_games",
+        "match_id": "dk-wta-wta-quals-london-tatjana-maria-vs-yuriko-lily-miyazaki-2026-06-07",
+        "selection": "Under",
+        "source_name": "draftkings"
+      }
+    ],
+    "marketRowsWithDanglingPlayerId": [],
+    "matchPlayersMissingRegistry": [
+      {
+        "market_name": "Dan Evans",
+        "match_date": "2026-06-08",
+        "match_id": "dk-atp-challenger-quals-ilkley-dan-evans-vs-charles-broom-2026-06-08",
+        "player_id": "tennis-player-dan-evans",
+        "side": 1
+      },
+      {
+        "market_name": "Pyotr Nesterov",
+        "match_date": "2026-06-08",
+        "match_id": "rh-atp-challenger-cattolica-qualification-nesterov-vs-ferrari-2026-06-08",
+        "player_id": "tennis-player-pyotr-nesterov",
+        "side": 1
+      },
+      {
+        "market_name": "Nicolas Villalon Valdes",
+        "match_date": "2026-06-08",
+        "match_id": "rh-atp-challenger-san-miguel-de-tucuman-qualification-villalon-valdes-vs-monferrer-2026-06-08",
+        "player_id": "tennis-player-nicolas-villalon-valdes",
+        "side": 1
+      },
+      {
+        "market_name": "Tiantsoa Sarah Rakotomanga Rajaonah",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-125k-modena-noha-akugue-vs-rakotomanga-rajaonah-2026-06-08",
+        "player_id": "tennis-player-tiantsoa-sarah-rakotomanga-rajaonah",
+        "side": 2
+      },
+      {
+        "market_name": "Dan Evans",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-dan-evans-vs-james-watt-2026-06-07",
+        "player_id": "tennis-player-dan-evans",
+        "side": 1
+      },
+      {
+        "market_name": "Mark Ceban",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-oliver-crawford-vs-mark-ceban-2026-06-07",
+        "player_id": "tennis-player-mark-ceban",
+        "side": 2
+      },
+      {
+        "market_name": "Tiantsoa Sarah Rakotomanga Rajaonah",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-modena-qualifiers-tiantsoa-sarah-rakotomanga-rajaonah-vs-chloe-paquet-2026-06-07",
+        "player_id": "tennis-player-tiantsoa-sarah-rakotomanga-rajaonah",
+        "side": 1
+      },
+      {
+        "market_name": "Brooke Anna Black",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-brooke-anna-black-vs-tereza-martincova-2026-06-07",
+        "player_id": "tennis-player-brooke-anna-black",
+        "side": 1
+      },
+      {
+        "market_name": "Edie Griffiths",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-edie-griffiths-vs-naiktha-bains-2026-06-07",
+        "player_id": "tennis-player-edie-griffiths",
+        "side": 1
+      },
+      {
+        "market_name": "Savannah Dada-Mascoll",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-iryna-shymanovich-vs-savannah-dada-mascoll-2026-06-07",
+        "player_id": "tennis-player-savannah-dada-mascoll",
+        "side": 2
+      },
+      {
+        "market_name": "Megan Knight",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-kayla-cross-vs-megan-knight-2026-06-07",
+        "player_id": "tennis-player-megan-knight",
+        "side": 2
+      },
+      {
+        "market_name": "Tegan Bush",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-tegan-bush-vs-emily-appleton-2026-06-07",
+        "player_id": "tennis-player-tegan-bush",
+        "side": 1
+      }
+    ],
+    "matchPlayersWithoutActiveTennisLiveSource": [
+      {
+        "canonical_name": "Santiago Rodriguez Taverna",
+        "market_name": "Santiago Rodriguez Taverna",
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-karim-bennani-vs-santiago-rodriguez-taverna",
+        "name": "Santiago Rodriguez Taverna",
+        "player_id": "tlp-e32825c7dce4a8fd44d85390",
+        "side": 2
+      },
+      {
+        "canonical_name": "nicolas villalon",
+        "market_name": "Nicolas Villalon",
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-nicolas-villalon-vs-ezequiel-monferrer",
+        "name": "Nicol\u00e1s Villal\u00f3n",
+        "player_id": "tennis-player-nicolas-villalon",
+        "side": 1
+      },
+      {
+        "canonical_name": "Dan Evans",
+        "market_name": "Dan Evans",
+        "match_date": "2026-06-08",
+        "match_id": "dk-atp-challenger-quals-ilkley-dan-evans-vs-charles-broom-2026-06-08",
+        "name": "Dan Evans",
+        "player_id": "tennis-player-dan-evans",
+        "side": 1
+      },
+      {
+        "canonical_name": "Santiago Rodriguez Taverna",
+        "market_name": "Santiago Rodriguez Taverna",
+        "match_date": "2026-06-08",
+        "match_id": "dk-atp-challenger-san-miguel-de-tucuman-karim-bennani-vs-santiago-rodriguez-taverna-2026-06-08",
+        "name": "Santiago Rodriguez Taverna",
+        "player_id": "tlp-e32825c7dce4a8fd44d85390",
+        "side": 2
+      },
+      {
+        "canonical_name": "Abdullah Shelbayh",
+        "market_name": "Abdullah Shelbayh",
+        "match_date": "2026-06-08",
+        "match_id": "rh-atp-challenger-bratislava-qualification-santillan-vs-shelbayh-2026-06-08",
+        "name": "Abdullah Shelbayh",
+        "player_id": "tennis-player-abdullah-shelbayh",
+        "side": 1
+      },
+      {
+        "canonical_name": "Yosuke Watanuki",
+        "market_name": "Yosuke Watanuki",
+        "match_date": "2026-06-08",
+        "match_id": "rh-atp-challenger-bratislava-sachko-vs-watanuki-2026-06-08",
+        "name": "Yosuke Watanuki",
+        "player_id": "tennis-player-yosuke-watanuki",
+        "side": 2
+      },
+      {
+        "canonical_name": "Pyotr Nesterov",
+        "market_name": "Pyotr Nesterov",
+        "match_date": "2026-06-08",
+        "match_id": "rh-atp-challenger-cattolica-qualification-nesterov-vs-ferrari-2026-06-08",
+        "name": "Pyotr Nesterov",
+        "player_id": "tennis-player-pyotr-nesterov",
+        "side": 1
+      },
+      {
+        "canonical_name": "Lloyd Harris",
+        "market_name": "Lloyd Harris",
+        "match_date": "2026-06-08",
+        "match_id": "rh-atp-challenger-ilkley-schoolkate-vs-harris-2026-06-08",
+        "name": "Lloyd Harris",
+        "player_id": "tennis-player-lloyd-harris",
+        "side": 1
+      },
+      {
+        "canonical_name": "Daniel Elahi Galan",
+        "market_name": "Daniel Elahi Galan",
+        "match_date": "2026-06-08",
+        "match_id": "rh-atp-challenger-lyon-pavlovic-vs-galan-2026-06-08",
+        "name": "Daniel Elahi Galan",
+        "player_id": "tennis-player-daniel-elahi-galan",
+        "side": 2
+      },
+      {
+        "canonical_name": "Arklon Huertas Del Pino Cordova",
+        "market_name": "Arklon Huertas Del Pino Cordova",
+        "match_date": "2026-06-08",
+        "match_id": "rh-atp-challenger-san-miguel-de-tucuman-qualification-del-pino-vs-huertas-del-pino-cordova-2026-06-08",
+        "name": "Arklon Huertas Del Pino Cordova",
+        "player_id": "tennis-player-arklon-huertas-del-pino-cordova",
+        "side": 2
+      },
+      {
+        "canonical_name": "Nicolas Villalon Valdes",
+        "market_name": "Nicolas Villalon Valdes",
+        "match_date": "2026-06-08",
+        "match_id": "rh-atp-challenger-san-miguel-de-tucuman-qualification-villalon-valdes-vs-monferrer-2026-06-08",
+        "name": "Nicolas Villalon Valdes",
+        "player_id": "tennis-player-nicolas-villalon-valdes",
+        "side": 1
+      },
+      {
+        "canonical_name": "Tatiana Prozorova",
+        "market_name": "Tatiana Prozorova",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-125k-ilkley-podrez-vs-prozorova-2026-06-08",
+        "name": "Tatiana Prozorova",
+        "player_id": "tennis-player-tatiana-prozorova",
+        "side": 2
+      },
+      {
+        "canonical_name": "Noma Noha Akugue",
+        "market_name": "Noma Noha Akugue",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-125k-modena-noha-akugue-vs-rakotomanga-rajaonah-2026-06-08",
+        "name": "Noma Noha Akugue",
+        "player_id": "tennis-player-noma-noha-akugue",
+        "side": 1
+      },
+      {
+        "canonical_name": "Tiantsoa Sarah Rakotomanga Rajaonah",
+        "market_name": "Tiantsoa Sarah Rakotomanga Rajaonah",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-125k-modena-noha-akugue-vs-rakotomanga-rajaonah-2026-06-08",
+        "name": "Tiantsoa Sarah Rakotomanga Rajaonah",
+        "player_id": "tennis-player-tiantsoa-sarah-rakotomanga-rajaonah",
+        "side": 2
+      },
+      {
+        "canonical_name": "Laura Samson",
+        "market_name": "Laura Samson",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-125k-modena-wang-vs-samson-2026-06-08",
+        "name": "Laura Samson",
+        "player_id": "tennis-player-laura-samson",
+        "side": 2
+      },
+      {
+        "canonical_name": "Leylah Fernandez",
+        "market_name": "Leylah Fernandez",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-london-boulter-vs-fernandez-2026-06-08",
+        "name": "Leylah Fernandez",
+        "player_id": "tennis-player-leylah-fernandez",
+        "side": 2
+      },
+      {
+        "canonical_name": "Liudmila Samsonova",
+        "market_name": "Liudmila Samsonova",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-london-dart-vs-samsonova-2026-06-08",
+        "name": "Liudmila Samsonova",
+        "player_id": "tennis-player-liudmila-samsonova",
+        "side": 2
+      },
+      {
+        "canonical_name": "Jaqueline Cristian",
+        "market_name": "Jaqueline Cristian",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-london-zheng-vs-cristian-2026-06-08",
+        "name": "Jaqueline Cristian",
+        "player_id": "tennis-player-jaqueline-cristian",
+        "side": 2
+      },
+      {
+        "canonical_name": "Bianca Andreescu",
+        "market_name": "Bianca Andreescu",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-s-hertogenbosch-andreescu-vs-mertens-2026-06-08",
+        "name": "Bianca Andreescu",
+        "player_id": "tennis-player-bianca-andreescu",
+        "side": 2
+      },
+      {
+        "canonical_name": "Daria Kasatkina",
+        "market_name": "Daria Kasatkina",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-s-hertogenbosch-kasatkina-vs-montgomery-2026-06-08",
+        "name": "Daria Kasatkina",
+        "player_id": "tennis-player-daria-kasatkina",
+        "side": 1
+      },
+      {
+        "canonical_name": "Paula Badosa",
+        "market_name": "Paula Badosa",
+        "match_date": "2026-06-08",
+        "match_id": "rh-wta-s-hertogenbosch-snigur-vs-badosa-2026-06-08",
+        "name": "Paula Badosa",
+        "player_id": "tennis-player-paula-badosa",
+        "side": 1
+      },
+      {
+        "canonical_name": "Abedallah Shelbayh",
+        "market_name": "Abedallah Shelbayh",
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-bratislava-challenger-2026-abedallah-shelbayh-vs-akira-santillan",
+        "name": "Abedallah Shelbayh",
+        "player_id": "tlp-63fc4102e2e5dad579793ec8",
+        "side": 1
+      },
+      {
+        "canonical_name": "Yosuke Watanuki",
+        "market_name": "Yosuke Watanuki",
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-bratislava-challenger-2026-vitaliy-sachko-vs-yosuke-watanuki",
+        "name": "Yosuke Watanuki",
+        "player_id": "tennis-player-yosuke-watanuki",
+        "side": 2
+      },
+      {
+        "canonical_name": "Daniel Elahi Galan",
+        "market_name": "Daniel Elahi Galan",
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-lyon-challenger-2026-daniel-elahi-galan-vs-luka-pavlovic",
+        "name": "Daniel Elahi Galan",
+        "player_id": "tennis-player-daniel-elahi-galan",
+        "side": 1
+      },
+      {
+        "canonical_name": "Arklon Huertas Del Pino",
+        "market_name": "Arklon Huertas Del Pino",
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-san-miguel-de-tucuman-challenger-2026-mateo-del-pino-vs-arklon-huertas-del-pino",
+        "name": "Arklon Huertas Del Pino",
+        "player_id": "tlp-216397e7e82b5277377d6e5c",
+        "side": 2
+      },
+      {
+        "canonical_name": "leylah annie fernandez",
+        "market_name": "Leylah Annie Fernandez",
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-the-hsbc-championships-london-2026-katie-boulter-vs-leylah-annie-fernandez",
+        "name": "Leylah Annie Fernandez",
+        "player_id": "tennis-player-leylah-annie-fernandez",
+        "side": 2
+      },
+      {
+        "canonical_name": "Miguel Tobon",
+        "market_name": "Miguel Tobon",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-cattolica-qualifiers-peter-fajta-vs-miguel-tobon-2026-06-07",
+        "name": "Miguel Tobon",
+        "player_id": "tennis-player-miguel-tobon",
+        "side": 2
+      },
+      {
+        "canonical_name": "Fares Zakaria",
+        "market_name": "Fares Zakaria",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-bratislava-fares-zakaria-vs-mathys-erhard-2026-06-07",
+        "name": "Fares Zakaria",
+        "player_id": "tennis-player-fares-zakaria",
+        "side": 1
+      },
+      {
+        "canonical_name": "Max Lorincik",
+        "market_name": "Max Lorincik",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-bratislava-max-lorincik-vs-abdullah-shelbayh-2026-06-07",
+        "name": "Max Lorincik",
+        "player_id": "tennis-player-max-lorincik",
+        "side": 1
+      },
+      {
+        "canonical_name": "Abdullah Shelbayh",
+        "market_name": "Abdullah Shelbayh",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-bratislava-max-lorincik-vs-abdullah-shelbayh-2026-06-07",
+        "name": "Abdullah Shelbayh",
+        "player_id": "tennis-player-abdullah-shelbayh",
+        "side": 2
+      },
+      {
+        "canonical_name": "Dan Evans",
+        "market_name": "Dan Evans",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-dan-evans-vs-james-watt-2026-06-07",
+        "name": "Dan Evans",
+        "player_id": "tennis-player-dan-evans",
+        "side": 1
+      },
+      {
+        "canonical_name": "James Watt",
+        "market_name": "James Watt",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-dan-evans-vs-james-watt-2026-06-07",
+        "name": "James Watt",
+        "player_id": "tennis-player-james-watt",
+        "side": 2
+      },
+      {
+        "canonical_name": "Alastair Gray",
+        "market_name": "Alastair Gray",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-edward-winter-vs-alastair-gray-2026-06-07",
+        "name": "Alastair Gray",
+        "player_id": "tennis-player-alastair-gray",
+        "side": 2
+      },
+      {
+        "canonical_name": "Finn Bass",
+        "market_name": "Finn Bass",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-finn-bass-vs-keegan-smith-2026-06-07",
+        "name": "Finn Bass",
+        "player_id": "tlp-e35a4bcc8b1d3cd4088104f2",
+        "side": 1
+      },
+      {
+        "canonical_name": "Anton Matusevich",
+        "market_name": "Anton Matusevich",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-mark-lajal-vs-anton-matusevich-2026-06-07",
+        "name": "Anton Matusevich",
+        "player_id": "tennis-player-anton-matusevich",
+        "side": 2
+      },
+      {
+        "canonical_name": "Max Basing",
+        "market_name": "Max Basing",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-max-basing-vs-paul-jubb-2026-06-07",
+        "name": "Max Basing",
+        "player_id": "tennis-player-max-basing",
+        "side": 1
+      },
+      {
+        "canonical_name": "Michael Mmoh",
+        "market_name": "Michael Mmoh",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-michael-mmoh-vs-filippo-romano-2026-06-07",
+        "name": "Michael Mmoh",
+        "player_id": "tennis-player-michael-mmoh",
+        "side": 1
+      },
+      {
+        "canonical_name": "Millen Hurrion",
+        "market_name": "Millen Hurrion",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-millen-hurrion-vs-hamish-stewart-2026-06-07",
+        "name": "Millen Hurrion",
+        "player_id": "tennis-player-millen-hurrion",
+        "side": 1
+      },
+      {
+        "canonical_name": "Hamish Stewart",
+        "market_name": "Hamish Stewart",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-millen-hurrion-vs-hamish-stewart-2026-06-07",
+        "name": "Hamish Stewart",
+        "player_id": "tennis-player-hamish-stewart",
+        "side": 2
+      },
+      {
+        "canonical_name": "Oliver Crawford",
+        "market_name": "Oliver Crawford",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-oliver-crawford-vs-mark-ceban-2026-06-07",
+        "name": "Oliver Crawford",
+        "player_id": "tennis-player-oliver-crawford",
+        "side": 1
+      },
+      {
+        "canonical_name": "Mark Ceban",
+        "market_name": "Mark Ceban",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-oliver-crawford-vs-mark-ceban-2026-06-07",
+        "name": "Mark Ceban",
+        "player_id": "tennis-player-mark-ceban",
+        "side": 2
+      },
+      {
+        "canonical_name": "Oliver Okonkwo",
+        "market_name": "Oliver Okonkwo",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-oliver-okonkwo-vs-antoine-ghibaudo-2026-06-07",
+        "name": "Oliver Okonkwo",
+        "player_id": "tlp-c061e26c32ef858c91e2b50f",
+        "side": 1
+      },
+      {
+        "canonical_name": "Antoine Ghibaudo",
+        "market_name": "Antoine Ghibaudo",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-oliver-okonkwo-vs-antoine-ghibaudo-2026-06-07",
+        "name": "Antoine Ghibaudo",
+        "player_id": "tennis-player-antoine-ghibaudo",
+        "side": 2
+      },
+      {
+        "canonical_name": "Quinn Vandecasteele",
+        "market_name": "Quinn Vandecasteele",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-quinn-vandecasteele-vs-charles-broom-2026-06-07",
+        "name": "Quinn Vandecasteele",
+        "player_id": "tennis-player-quinn-vandecasteele",
+        "side": 1
+      },
+      {
+        "canonical_name": "Patrick Brady",
+        "market_name": "Patrick Brady",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-rio-noguchi-vs-patrick-brady-2026-06-07",
+        "name": "Patrick Brady",
+        "player_id": "tennis-player-patrick-brady",
+        "side": 2
+      },
+      {
+        "canonical_name": "Yi Zhou",
+        "market_name": "Yi Zhou",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-yi-zhou-vs-ben-jones-2026-06-07",
+        "name": "Yi Zhou",
+        "player_id": "tennis-player-yi-zhou",
+        "side": 1
+      },
+      {
+        "canonical_name": "Ben Jones",
+        "market_name": "Ben Jones",
+        "match_date": "2026-06-07",
+        "match_id": "dk-atp-challenger-quals-ilkley-yi-zhou-vs-ben-jones-2026-06-07",
+        "name": "Ben Jones",
+        "player_id": "tennis-player-ben-jones",
+        "side": 2
+      },
+      {
+        "canonical_name": "Tiantsoa Sarah Rakotomanga Rajaonah",
+        "market_name": "Tiantsoa Sarah Rakotomanga Rajaonah",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-modena-qualifiers-tiantsoa-sarah-rakotomanga-rajaonah-vs-chloe-paquet-2026-06-07",
+        "name": "Tiantsoa Sarah Rakotomanga Rajaonah",
+        "player_id": "tennis-player-tiantsoa-sarah-rakotomanga-rajaonah",
+        "side": 1
+      },
+      {
+        "canonical_name": "Greet Minnen",
+        "market_name": "Greet Minnen",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-hertogenbosch-ella-seidel-vs-greet-minnen-2026-06-07",
+        "name": "Greet Minnen",
+        "player_id": "tennis-player-greet-minnen",
+        "side": 2
+      },
+      {
+        "canonical_name": "Brooke Anna Black",
+        "market_name": "Brooke Anna Black",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-brooke-anna-black-vs-tereza-martincova-2026-06-07",
+        "name": "Brooke Anna Black",
+        "player_id": "tennis-player-brooke-anna-black",
+        "side": 1
+      },
+      {
+        "canonical_name": "Hiroko Kuwata",
+        "market_name": "Hiroko Kuwata",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-celine-naef-vs-hiroko-kuwata-2026-06-07",
+        "name": "Hiroko Kuwata",
+        "player_id": "tennis-player-hiroko-kuwata",
+        "side": 2
+      },
+      {
+        "canonical_name": "Edie Griffiths",
+        "market_name": "Edie Griffiths",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-edie-griffiths-vs-naiktha-bains-2026-06-07",
+        "name": "Edie Griffiths",
+        "player_id": "tennis-player-edie-griffiths",
+        "side": 1
+      },
+      {
+        "canonical_name": "Naiktha Bains",
+        "market_name": "Naiktha Bains",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-edie-griffiths-vs-naiktha-bains-2026-06-07",
+        "name": "Naiktha Bains",
+        "player_id": "tennis-player-naiktha-bains",
+        "side": 2
+      },
+      {
+        "canonical_name": "Elena Pridankina",
+        "market_name": "Elena Pridankina",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-elena-pridankina-vs-ella-mcdonald-2026-06-07",
+        "name": "Elena Pridankina",
+        "player_id": "tennis-player-elena-pridankina",
+        "side": 1
+      },
+      {
+        "canonical_name": "Amelia Rajecki",
+        "market_name": "Amelia Rajecki",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-harmony-tan-vs-amelia-rajecki-2026-06-07",
+        "name": "Amelia Rajecki",
+        "player_id": "tennis-player-amelia-rajecki",
+        "side": 2
+      },
+      {
+        "canonical_name": "Savannah Dada-Mascoll",
+        "market_name": "Savannah Dada-Mascoll",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-iryna-shymanovich-vs-savannah-dada-mascoll-2026-06-07",
+        "name": "Savannah Dada-Mascoll",
+        "player_id": "tennis-player-savannah-dada-mascoll",
+        "side": 2
+      },
+      {
+        "canonical_name": "Katy Dunne",
+        "market_name": "Katy Dunne",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-katy-dunne-vs-momoko-kobori-2026-06-07",
+        "name": "Katy Dunne",
+        "player_id": "tennis-player-katy-dunne",
+        "side": 1
+      },
+      {
+        "canonical_name": "Megan Knight",
+        "market_name": "Megan Knight",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-kayla-cross-vs-megan-knight-2026-06-07",
+        "name": "Megan Knight",
+        "player_id": "tennis-player-megan-knight",
+        "side": 2
+      },
+      {
+        "canonical_name": "Maria Kozyreva",
+        "market_name": "Maria Kozyreva",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-maria-kozyreva-vs-clervie-ngounoue-2026-06-07",
+        "name": "Maria Kozyreva",
+        "player_id": "tennis-player-maria-kozyreva",
+        "side": 1
+      },
+      {
+        "canonical_name": "Victoria Allen",
+        "market_name": "Victoria Allen",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-ranah-akua-stoiber-vs-victoria-allen-2026-06-07",
+        "name": "Victoria Allen",
+        "player_id": "tennis-player-victoria-allen",
+        "side": 2
+      },
+      {
+        "canonical_name": "Tegan Bush",
+        "market_name": "Tegan Bush",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-tegan-bush-vs-emily-appleton-2026-06-07",
+        "name": "Tegan Bush",
+        "player_id": "tennis-player-tegan-bush",
+        "side": 1
+      },
+      {
+        "canonical_name": "Vendula Valdmannova",
+        "market_name": "Vendula Valdmannova",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-vendula-valdmannova-vs-sayaka-ishii-2026-06-07",
+        "name": "Vendula Valdmannova",
+        "player_id": "tennis-player-vendula-valdmannova",
+        "side": 1
+      },
+      {
+        "canonical_name": "Sayaka Ishii",
+        "market_name": "Sayaka Ishii",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-ilkley-vendula-valdmannova-vs-sayaka-ishii-2026-06-07",
+        "name": "Sayaka Ishii",
+        "player_id": "tennis-player-sayaka-ishii",
+        "side": 2
+      },
+      {
+        "canonical_name": "Tatjana Maria",
+        "market_name": "Tatjana Maria",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-london-tatjana-maria-vs-yuriko-lily-miyazaki-2026-06-07",
+        "name": "Tatjana Maria",
+        "player_id": "tennis-player-tatjana-maria",
+        "side": 1
+      },
+      {
+        "canonical_name": "Yuriko Lily Miyazaki",
+        "market_name": "Yuriko Lily Miyazaki",
+        "match_date": "2026-06-07",
+        "match_id": "dk-wta-wta-quals-london-tatjana-maria-vs-yuriko-lily-miyazaki-2026-06-07",
+        "name": "Yuriko Lily Miyazaki",
+        "player_id": "tennis-player-yuriko-lily-miyazaki",
+        "side": 2
+      },
+      {
+        "canonical_name": "alex mart pujolras",
+        "market_name": "Alex Marti Pujolras",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-alex-marti-pujolras-vs-benjamin-hassan",
+        "name": "Alex Mart\u00ed Pujolras",
+        "player_id": "tennis-player-alex-mart-pujolras",
+        "side": 1
+      },
+      {
+        "canonical_name": "Vadym Ursu",
+        "market_name": "Vadym Ursu",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-dimitar-kuzmanov-vs-vadym-ursu",
+        "name": "Vadym Ursu",
+        "player_id": "tennis-player-vadym-ursu",
+        "side": 2
+      },
+      {
+        "canonical_name": "hynek barto",
+        "market_name": "Hynek Barton",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-hynek-barton-vs-sebastian-sorger",
+        "name": "Hynek Barto\u0148",
+        "player_id": "tennis-player-hynek-barto",
+        "side": 1
+      },
+      {
+        "canonical_name": "michal kraj",
+        "market_name": "Michal Krajci",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-lukas-neumayer-vs-michal-krajci",
+        "name": "Michal Kraj\u010d\u00ed",
+        "player_id": "tennis-player-michal-kraj",
+        "side": 2
+      },
+      {
+        "canonical_name": "Fares Zakaria",
+        "market_name": "Fares Zakaria",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-mathys-erhard-vs-fares-zakaria",
+        "name": "Fares Zakaria",
+        "player_id": "tennis-player-fares-zakaria",
+        "side": 2
+      },
+      {
+        "canonical_name": "Milos Karol",
+        "market_name": "Milos Karol",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-nicolas-alvarez-varona-vs-milos-karol",
+        "name": "Milos Karol",
+        "player_id": "tennis-player-milos-karol",
+        "side": 2
+      },
+      {
+        "canonical_name": "carlos s nchez jover",
+        "market_name": "Carlos Sanchez Jover",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-carlos-sanchez-jover-vs-gerard-campana-lee",
+        "name": "Carlos S\u00e1nchez Jover",
+        "player_id": "tennis-player-carlos-s-nchez-jover",
+        "side": 1
+      },
+      {
+        "canonical_name": "Quinn Vandecasteele",
+        "market_name": "Quinn Vandecasteele",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-charles-broom-vs-quinn-vandecasteele",
+        "name": "Quinn Vandecasteele",
+        "player_id": "tennis-player-quinn-vandecasteele",
+        "side": 2
+      },
+      {
+        "canonical_name": "James Watt",
+        "market_name": "James Watt",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-daniel-evans-vs-james-watt",
+        "name": "James Watt",
+        "player_id": "tennis-player-james-watt",
+        "side": 2
+      },
+      {
+        "canonical_name": "Finn Bass",
+        "market_name": "Finn Bass",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-keegan-smith-vs-finn-bass",
+        "name": "Finn Bass",
+        "player_id": "tlp-e35a4bcc8b1d3cd4088104f2",
+        "side": 2
+      },
+      {
+        "canonical_name": "Anton Matusevich",
+        "market_name": "Anton Matusevich",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-mark-lajal-vs-anton-matusevich",
+        "name": "Anton Matusevich",
+        "player_id": "tennis-player-anton-matusevich",
+        "side": 2
+      },
+      {
+        "canonical_name": "Max Basing",
+        "market_name": "Max Basing",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-paul-jubb-vs-max-basing",
+        "name": "Max Basing",
+        "player_id": "tennis-player-max-basing",
+        "side": 2
+      },
+      {
+        "canonical_name": "Patrick Brady",
+        "market_name": "Patrick Brady",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-rio-noguchi-vs-patrick-brady",
+        "name": "Patrick Brady",
+        "player_id": "tennis-player-patrick-brady",
+        "side": 2
+      },
+      {
+        "canonical_name": "Benjamin Winter Lopez",
+        "market_name": "Benjamin Winter Lopez",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-david-jorda-sanchis-vs-benjamin-winter-lopez",
+        "name": "Benjamin Winter Lopez",
+        "player_id": "tlp-6960b863cfc9a162da13b350",
+        "side": 2
+      },
+      {
+        "canonical_name": "david jord sanchis",
+        "market_name": "David Jorda Sanchis",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-david-jorda-sanchis-vs-s-d-prajwal-dev",
+        "name": "David Jord\u00e1 Sanchis",
+        "player_id": "tennis-player-david-jord-sanchis",
+        "side": 1
+      },
+      {
+        "canonical_name": "matt o martineau",
+        "market_name": "Matteo Martineau",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-matteo-martineau-vs-mae-malige",
+        "name": "Matt\u00e9o Martineau",
+        "player_id": "tennis-player-matt-o-martineau",
+        "side": 1
+      },
+      {
+        "canonical_name": "ma malige",
+        "market_name": "Mae Malige",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-matteo-martineau-vs-mae-malige",
+        "name": "Ma\u00e9 Malige",
+        "player_id": "tennis-player-ma-malige",
+        "side": 2
+      },
+      {
+        "canonical_name": "rapha l p rot",
+        "market_name": "Raphael Perot",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-noah-karma-vs-raphael-perot",
+        "name": "Rapha\u00ebl P\u00e9rot",
+        "player_id": "tennis-player-rapha-l-p-rot",
+        "side": 2
+      },
+      {
+        "canonical_name": "Leo Raquillet",
+        "market_name": "Leo Raquillet",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-svyatoslav-gulin-vs-leo-raquillet",
+        "name": "Leo Raquillet",
+        "player_id": "tennis-player-leo-raquillet",
+        "side": 2
+      },
+      {
+        "canonical_name": "Samuel Alejandro Linde Palacios",
+        "market_name": "Samuel Alejandro Linde Palacios",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-benjamin-chelia-vs-samuel-alejandro-linde-palacios",
+        "name": "Samuel Alejandro Linde Palacios",
+        "player_id": "tennis-player-samuel-alejandro-linde-palacios",
+        "side": 2
+      },
+      {
+        "canonical_name": "Amador Salazar",
+        "market_name": "Amador Salazar",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-ezequiel-monferrer-vs-amador-salazar",
+        "name": "Amador Salazar",
+        "player_id": "tlp-64f0e13b6750a0beef901547",
+        "side": 2
+      },
+      {
+        "canonical_name": "Manuel Mouilleron Salvo",
+        "market_name": "Manuel Mouilleron Salvo",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-johan-alexander-rodriguez-vs-manuel-mouilleron-salvo",
+        "name": "Manuel Mouilleron Salvo",
+        "player_id": "tennis-player-manuel-mouilleron-salvo",
+        "side": 2
+      },
+      {
+        "canonical_name": "Mateo Carballo",
+        "market_name": "Mateo Carballo",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-julian-cundom-vs-mateo-carballo",
+        "name": "Mateo Carballo",
+        "player_id": "tennis-player-mateo-carballo",
+        "side": 2
+      },
+      {
+        "canonical_name": "conner huertas del pino",
+        "market_name": "Conner Huertas Del Pino",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-mateo-del-pino-vs-conner-huertas-del-pino",
+        "name": "Conner Huertas del Pino",
+        "player_id": "tennis-player-conner-huertas-del-pino",
+        "side": 2
+      },
+      {
+        "canonical_name": "Jose Gabriel Fernandez",
+        "market_name": "Jose Gabriel Fernandez",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-samuel-heredia-vs-jose-gabriel-fernandez",
+        "name": "Jose Gabriel Fernandez",
+        "player_id": "tlp-e3bd9fe0a1bc47be2d95438c",
+        "side": 2
+      },
+      {
+        "canonical_name": "Ignacio Monzon",
+        "market_name": "Ignacio Monzon",
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-santiago-giamichelle-vs-ignacio-monzon",
+        "name": "Ignacio Monzon",
+        "player_id": "tennis-player-ignacio-monzon",
+        "side": 2
+      }
+    ],
+    "playersMissingRegistry": [
+      {
+        "active": 1,
+        "canonical_name": "Brooke Anna Black",
+        "country": null,
+        "name": "Brooke Anna Black",
+        "player_id": "tennis-player-brooke-anna-black",
+        "tour": "WTA"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Connor Huertas Del Pino",
+        "country": null,
+        "name": "Connor Huertas Del Pino",
+        "player_id": "tennis-player-connor-huertas-del-pino",
+        "tour": "ATP"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Dan Evans",
+        "country": null,
+        "name": "Dan Evans",
+        "player_id": "tennis-player-dan-evans",
+        "tour": "ATP"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Edie Griffiths",
+        "country": null,
+        "name": "Edie Griffiths",
+        "player_id": "tennis-player-edie-griffiths",
+        "tour": "WTA"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Faris Zakaria",
+        "country": null,
+        "name": "Faris Zakaria",
+        "player_id": "tennis-player-faris-zakaria",
+        "tour": "ATP"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Johan Alexander Rodriguez Rodriguez",
+        "country": null,
+        "name": "Johan Alexander Rodriguez Rodriguez",
+        "player_id": "tennis-player-johan-alexander-rodriguez-rodriguez",
+        "tour": "ATP"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Marcelo Tomas Barrios Vera",
+        "country": null,
+        "name": "Marcelo Tomas Barrios Vera",
+        "player_id": "tennis-player-marcelo-tomas-barrios-vera",
+        "tour": "ATP"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Mark Ceban",
+        "country": null,
+        "name": "Mark Ceban",
+        "player_id": "tennis-player-mark-ceban",
+        "tour": "ATP"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Martin Damm Jr",
+        "country": null,
+        "name": "Martin Damm Jr",
+        "player_id": "tennis-player-martin-damm-jr",
+        "tour": "ATP"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Megan Knight",
+        "country": null,
+        "name": "Megan Knight",
+        "player_id": "tennis-player-megan-knight",
+        "tour": "WTA"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Nicolas Villalon Valdes",
+        "country": null,
+        "name": "Nicolas Villalon Valdes",
+        "player_id": "tennis-player-nicolas-villalon-valdes",
+        "tour": "ATP"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Pyotr Nesterov",
+        "country": null,
+        "name": "Pyotr Nesterov",
+        "player_id": "tennis-player-pyotr-nesterov",
+        "tour": "ATP"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Savannah Dada-Mascoll",
+        "country": null,
+        "name": "Savannah Dada-Mascoll",
+        "player_id": "tennis-player-savannah-dada-mascoll",
+        "tour": "WTA"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Tegan Bush",
+        "country": null,
+        "name": "Tegan Bush",
+        "player_id": "tennis-player-tegan-bush",
+        "tour": "WTA"
+      },
+      {
+        "active": 1,
+        "canonical_name": "Tiantsoa Sarah Rakotomanga Rajaonah",
+        "country": null,
+        "name": "Tiantsoa Sarah Rakotomanga Rajaonah",
+        "player_id": "tennis-player-tiantsoa-sarah-rakotomanga-rajaonah",
+        "tour": "WTA"
+      }
+    ],
+    "redirectRowsWithDanglingPlayerId": []
+  },
+  "generated_at": "2026-06-10T08:30:20.887328+00:00",
+  "limit": 200,
+  "matchDates": [
+    {
+      "match_date": "2026-06-07",
+      "matches": 152,
+      "participant_rows": 312,
+      "participant_rows_without_active_tennislive_source": 65
+    },
+    {
+      "match_date": "2026-06-08",
+      "matches": 106,
+      "participant_rows": 212,
+      "participant_rows_without_active_tennislive_source": 24
+    },
+    {
+      "match_date": "2026-06-09",
+      "matches": 14,
+      "participant_rows": 28,
+      "participant_rows_without_active_tennislive_source": 2
+    }
+  ],
+  "redirectCandidateStatusCounts": [
+    {
+      "policy": "unique_abbreviation_full_name",
+      "rows": 621,
+      "status": "redirect_ready"
+    },
+    {
+      "policy": "expected_ascii_player_id_duplicate",
+      "rows": 290,
+      "status": "redirect_ready"
+    },
+    {
+      "policy": "dominant_context_candidate",
+      "rows": 21,
+      "status": "redirect_ready"
+    },
+    {
+      "policy": "no_full_name_candidate",
+      "rows": 7,
+      "status": "needs_deep_dive"
+    },
+    {
+      "policy": "multiple_live_candidates",
+      "rows": 6,
+      "status": "needs_deep_dive"
+    }
+  ],
+  "redirectStatusCounts": [
+    {
+      "policy": "unique_abbreviation_full_name",
+      "rows": 621,
+      "status": "active"
+    },
+    {
+      "policy": "expected_ascii_player_id_duplicate",
+      "rows": 290,
+      "status": "active"
+    },
+    {
+      "policy": "dominant_context_candidate",
+      "rows": 24,
+      "status": "active"
+    },
+    {
+      "policy": "expanded_given_name_source_url",
+      "rows": 1,
+      "status": "active"
+    },
+    {
+      "policy": "name_order_source_url",
+      "rows": 1,
+      "status": "active"
+    },
+    {
+      "policy": "source_short_name_matches_slug",
+      "rows": 1,
+      "status": "active"
+    }
+  ],
+  "scope": {
+    "end_date": "2026-06-09",
+    "start_date": "2026-06-07"
+  },
+  "script": "data-migration/scripts/audit_tennis_entity_resolution.py",
+  "summary": {
+    "activeTennisLivePlayerSources": 279,
+    "duplicateCanonicalNameGroups": 0,
+    "duplicateMatchPlayerSideGroups": 8,
+    "marketRowsMissingPlayerId": 184,
+    "marketRowsWithDanglingPlayerId": 0,
+    "matchPlayerRowsMissingPlayer": 0,
+    "matchPlayerRowsMissingRegistry": 12,
+    "matchPlayerRowsWithoutActiveTennisLiveSource": 91,
+    "openUnresolvedPlayerEntities": 0,
+    "playerIdentityRedirectCandidates": 945,
+    "playerIdentityRedirects": 938,
+    "playerIdentityRegistryRows": 5562,
+    "players": 5577,
+    "playersMissingRegistry": 15,
+    "redirectCandidatesWithDanglingProposedPlayerId": 0,
+    "redirectRowsWithDanglingPlayerId": 0,
+    "registryRowsMissingPlayer": 0
+  },
+  "unresolvedPlayerEntitiesBySource": []
+}

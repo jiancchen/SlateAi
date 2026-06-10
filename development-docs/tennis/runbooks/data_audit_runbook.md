@@ -210,6 +210,14 @@ npm run data:audit:tennis-source-freshness -- \
   --markdown data-migration/reports/tennis_source_freshness_YYYY-MM-DD.md
 ```
 
+Run entity-resolution readiness:
+
+```bash
+npm run data:audit:tennis-entity-resolution -- \
+  --out data-migration/reports/tennis_entity_resolution_YYYY-MM-DD.json \
+  --markdown data-migration/reports/tennis_entity_resolution_YYYY-MM-DD.md
+```
+
 Export quarantine/review queues:
 
 ```bash
@@ -263,6 +271,7 @@ As of 2026-06-10:
 - Date sanity blockers include 1 invalid date value and 2 far-future sentinel-like date values.
 - Jun 7-9 readiness found 3 dates: Jun 7 and Jun 8 blocked, Jun 9 usable only with warnings.
 - Source freshness found 0 current-publish-ready dates across 91 dates, with 438 missing required date/source slots and 17 stale required source slots.
+- Entity resolution found 15 players missing registry rows, 41 duplicate match-player side groups globally, and 8 duplicate side groups in the Jun 7-9 scope.
 - Global settlement readiness found 776 prediction rows, 0 settled rows, and 0 settlement-ready rows.
 - Jun 7-9 quarantine queues contain 154 non-TennisLive matches, 72 prediction rows without a DB match, 68 TEN-T0 market-only prediction rows, 184 market identity gaps, and 56 duplicate market groups.
 - The DB-derived public export now reports `blocked` instead of `ready` when model status, prediction/value shape, source freshness, or market-only rows fail readiness.

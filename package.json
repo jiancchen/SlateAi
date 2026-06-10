@@ -169,6 +169,7 @@
     "data:audit:tennis-settlement-readiness": "python3 data-migration/scripts/audit_tennis_settlement_readiness.py",
     "data:audit:tennis-date-readiness": "python3 data-migration/scripts/audit_tennis_date_readiness.py",
     "data:audit:tennis-source-freshness": "python3 data-migration/scripts/audit_tennis_source_freshness.py",
+    "data:audit:tennis-entity-resolution": "python3 data-migration/scripts/audit_tennis_entity_resolution.py",
     "data:audit:tennis-active-sources": "node scripts/audit-tennis-active-sources.mjs",
     "data:audit:tennis-warehouse-identity": "node scripts/audit-tennis-warehouse-identity.mjs",
     "data:audit:tennis-match-contract": "node scripts/audit-tennis-match-contract.mjs",
