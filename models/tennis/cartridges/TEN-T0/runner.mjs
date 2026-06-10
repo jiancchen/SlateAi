@@ -4,13 +4,16 @@ import path from 'node:path'
 const rootDir = path.resolve(import.meta.dirname, '..', '..', '..', '..')
 const generator = path.join(rootDir, 'pipeline', 'tennis', 'publish', 'generate-day-module.mjs')
 const preflightScript = path.join(rootDir, 'data-migration', 'scripts', 'prediction_preflight.mjs')
+const ARCHIVE_OVERRIDE_ARG = '--allow-archived-ten-t0'
+const ARCHIVE_OVERRIDE_ENV = 'TEN_T0_ALLOW_ARCHIVED_RUN'
 
 const parseRunnerArgs = (argv) => {
   const generatorArgs = []
   const options = {
     date: '',
     preflightLane: 'value',
-    skipPreflight: false
+    skipPreflight: false,
+    allowArchived: process.env[ARCHIVE_OVERRIDE_ENV] === '1'
   }
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -24,6 +27,8 @@ const parseRunnerArgs = (argv) => {
       index += 1
     } else if (arg === '--skip-preflight') {
       options.skipPreflight = true
+    } else if (arg === ARCHIVE_OVERRIDE_ARG) {
+      options.allowArchived = true
     } else {
       generatorArgs.push(arg)
     }
@@ -54,6 +59,15 @@ const runPreflight = ({ date, preflightLane }) => {
 }
 
 const { generatorArgs: args, options } = parseRunnerArgs(process.argv.slice(2))
+
+if (!options.allowArchived) {
+  console.error([
+    'TEN-T0 is archived for forensic reproduction only.',
+    `Re-run with ${ARCHIVE_OVERRIDE_ARG} or ${ARCHIVE_OVERRIDE_ENV}=1 only for audit/debug output.`,
+    'Do not use TEN-T0 output for production prediction publication.'
+  ].join('\n'))
+  process.exit(2)
+}
 
 if (!options.skipPreflight) {
   runPreflight(options)

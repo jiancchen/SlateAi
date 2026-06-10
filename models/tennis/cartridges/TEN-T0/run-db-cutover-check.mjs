@@ -3,6 +3,8 @@ import path from 'node:path'
 import { spawnSync } from 'node:child_process'
 
 const ROOT = path.resolve(import.meta.dirname, '..', '..', '..', '..')
+const ARCHIVE_OVERRIDE_ARG = '--allow-archived-ten-t0'
+const ARCHIVE_OVERRIDE_ENV = 'TEN_T0_ALLOW_ARCHIVED_RUN'
 
 const parseArgs = () => {
   const args = process.argv.slice(2)
@@ -11,7 +13,8 @@ const parseArgs = () => {
     compareLegacy: false,
     captureDb: false,
     outputDir: '/tmp',
-    dbPath: 'data-private/warehouse/sports/tennis/sql-tennis.db'
+    dbPath: 'data-private/warehouse/sports/tennis/sql-tennis.db',
+    allowArchived: process.env[ARCHIVE_OVERRIDE_ENV] === '1'
   }
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
@@ -28,6 +31,8 @@ const parseArgs = () => {
     } else if (arg === '--db-path') {
       options.dbPath = args[index + 1] || options.dbPath
       index += 1
+    } else if (arg === ARCHIVE_OVERRIDE_ARG) {
+      options.allowArchived = true
     }
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(options.date)) {
@@ -89,6 +94,14 @@ const comparePredictions = (legacyPath, dbPath) => {
 
 const main = () => {
   const options = parseArgs()
+  if (!options.allowArchived) {
+    console.error([
+      'TEN-T0 DB cutover check is archived for forensic reproduction only.',
+      `Re-run with ${ARCHIVE_OVERRIDE_ARG} or ${ARCHIVE_OVERRIDE_ENV}=1 only for audit/debug output.`,
+      'Do not use TEN-T0 output for production prediction publication.'
+    ].join('\n'))
+    process.exit(2)
+  }
   fs.mkdirSync(options.outputDir, { recursive: true })
   const contextPath = path.join(options.outputDir, `day-${options.date}-tennis-warehouse-context.generated.json`)
   const dbModulePath = path.join(options.outputDir, `tennis-db-day-${options.date}.js`)
@@ -111,6 +124,7 @@ const main = () => {
     '--date',
     options.date,
     '--skip-preflight',
+    ARCHIVE_OVERRIDE_ARG,
     '--input-source',
     'db',
     '--db-path',
@@ -138,6 +152,7 @@ const main = () => {
       '--date',
       options.date,
       '--skip-preflight',
+      ARCHIVE_OVERRIDE_ARG,
       '--output',
       legacyModulePath,
       '--predictions-output',
@@ -160,8 +175,10 @@ const main = () => {
       '--module',
       dbModulePath,
       '--context',
-      contextPath
+      contextPath,
+      ARCHIVE_OVERRIDE_ARG
     ], {
+      TEN_T0_ALLOW_ARCHIVED_CAPTURE: '1',
       SLATE_TENNIS_WAREHOUSE_DB: options.dbPath
     })
     report.capturedDb = true

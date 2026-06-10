@@ -15,6 +15,8 @@ const MODEL_ID = 'TEN-T0'
 const MODEL_VERSION = 'TEN-W1/TEN-F0/TEN-T0/TEN-E0'
 const CARTRIDGE_PATH = 'models/tennis/cartridges/TEN-T0/runner.mjs'
 const MANIFEST_PATH = 'models/tennis/cartridges/TEN-T0/manifest.json'
+const ARCHIVE_OVERRIDE_ARG = '--allow-archived-ten-t0'
+const ARCHIVE_OVERRIDE_ENV = 'TEN_T0_ALLOW_ARCHIVED_CAPTURE'
 
 const parseArgs = () => {
   const options = {
@@ -24,7 +26,8 @@ const parseArgs = () => {
     modulePath: '',
     contextPath: '',
     runId: '',
-    dryRun: false
+    dryRun: false,
+    allowArchived: process.env[ARCHIVE_OVERRIDE_ENV] === '1'
   }
   const args = process.argv.slice(2)
   for (let index = 0; index < args.length; index += 1) {
@@ -49,6 +52,8 @@ const parseArgs = () => {
       index += 1
     } else if (arg === '--dry-run') {
       options.dryRun = true
+    } else if (arg === ARCHIVE_OVERRIDE_ARG) {
+      options.allowArchived = true
     } else {
       throw new Error(`Unknown argument: ${arg}`)
     }
@@ -121,7 +126,7 @@ insert into migration_runs (
   'models/tennis/cartridges/TEN-T0/capture-db-run.mjs',
   ${sqlString(localOrAbsolutePath(options.predictionsPath))},
   ${sqlString(`${options.dbPath}:model_runs,model_artifacts,prediction_rows`)},
-  'captured',
+  'archived_forensic',
   ${options.dryRun ? 1 : 0},
   ${rows.length},
   ${rows.length + artifacts.length + 1},
@@ -131,7 +136,7 @@ insert into migration_runs (
   null,
   ${sqlString(timestamp)},
   ${sqlString(timestamp)},
-  ${sqlString(`Captured ${MODEL_ID} DB-mode run ${runId}.`)}
+  ${sqlString(`Captured archived forensic ${MODEL_ID} DB-mode run ${runId}.`)}
 );`
 
 const insertArtifactSql = (artifact) => `
@@ -207,6 +212,14 @@ insert into prediction_rows (
 
 const main = () => {
   const options = parseArgs()
+  if (!options.dryRun && !options.allowArchived) {
+    console.error([
+      'TEN-T0 capture is archived for forensic reproduction only.',
+      `Re-run with ${ARCHIVE_OVERRIDE_ARG} or ${ARCHIVE_OVERRIDE_ENV}=1 only when intentionally writing forensic rows.`,
+      'Do not capture TEN-T0 rows as production predictions.'
+    ].join('\n'))
+    process.exit(2)
+  }
   const predictionsPath = absolutePath(options.predictionsPath)
   if (!fs.existsSync(predictionsPath)) throw new Error(`Missing predictions artifact: ${options.predictionsPath}`)
 
@@ -238,7 +251,8 @@ const main = () => {
   const rows = predictionRowsFromArtifact(payload, predictionsLocalPath, runId, 'tennis')
   const missingMatchIds = rows.filter((row) => String(row.match_id || '').startsWith('legacy-tennis-match-')).length
   const notes = {
-    source: 'TEN-T0 db-mode capture',
+    source: 'TEN-T0 archived forensic db-mode capture',
+    archived_forensic: true,
     predictions_path: predictionsLocalPath,
     total_singles: payload.totalSingles ?? null,
     missing_match_id_rows: missingMatchIds
@@ -267,8 +281,8 @@ const main = () => {
         ${sqlString(MODEL_ID)},
         ${sqlString(MODEL_VERSION)},
         ${sqlString(options.date)},
-        'pregame-db',
-        'captured',
+        'forensic-db',
+        'archived_forensic',
         ${sqlString(CARTRIDGE_PATH)},
         ${sqlString(MANIFEST_PATH)},
         ${sqlString(inputHash)},

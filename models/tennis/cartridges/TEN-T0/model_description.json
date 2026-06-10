@@ -3,9 +3,11 @@
   "modelId": "TEN-T0",
   "sport": "tennis",
   "name": "TEN-T0 tennis baseline",
-  "status": "baseline",
+  "status": "archived_forensic",
+  "archivedAt": "2026-06-10",
+  "archiveReason": "TEN-T0 mixed slate generation, market-watch inventory, DB fallback inputs, and prediction capture. It is retained for forensic reproduction only and must not publish production prediction rows.",
   "createdForSlate": "2026-05-31",
-  "summary": "Baseline tennis cartridge for the Roland Garros pipeline after the May 31 value-book and derivative-lane cleanup. TEN-T0 is a reproducibility baseline, not a claim that the model is already good enough to bet blindly.",
+  "summary": "Archived forensic tennis cartridge for the Roland Garros pipeline after the May 31 value-book and derivative-lane cleanup. TEN-T0 is retained for diagnosis and reproducibility only; it is not an active prediction model.",
   "keyImprovements": [
     "Separated the active tennis model into a cartridge/run stack so future TEN-T1+ changes can be compared against a frozen TEN-T0 baseline.",
     "Made ML, spread, match O/U, first-set O/U, set-win, and Kalshi trade-to-sell separate lanes instead of blending them into one vague confidence number.",
@@ -40,7 +42,8 @@
     }
   ],
   "notes": [
-    "TEN-T0 exists so refactors can prove they did not silently change the May 31 predictions.",
+    "TEN-T0 is archived and must not be used for production prediction publication.",
+    "TEN-T0 exists only so forensic audits can reproduce the old May 31 prediction shape.",
     "May 30 is the closest settled TEN-T0-compatible validation slate, but it was produced before formal cartridge run snapshots existed.",
     "Prediction-market trade-to-sell is not the same model objective as picking the match winner; it must stay separately graded.",
     "Future cartridges should explain what changed, what got better, what got worse, and which lane the change is supposed to improve.",
@@ -49,7 +52,7 @@
   "knownLimitations": [
     "May 30 is legacy pre-cartridge history, so it is shown under the legacy tennis archive rather than TEN-T0 settlement.",
     "Derivative lanes are only as strong as the captured FanDuel and Kalshi line coverage.",
-    "TEN-T0 still needs better upset-path and in-match price-spike calibration before it should be treated as a betting engine."
+    "TEN-T0 mixed slate generation, market-watch inventory, DB fallback inputs, and prediction capture; it should not be rehabilitated into an active betting engine."
   ],
   "files": {
     "markdown": "models/tennis/cartridges/TEN-T0/MODEL_NOTES.md"

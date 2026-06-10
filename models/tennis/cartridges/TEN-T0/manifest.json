@@ -2,7 +2,9 @@
   "id": "TEN-T0",
   "sport": "tennis",
   "name": "TEN-T0 tennis baseline",
-  "status": "baseline",
+  "status": "archived_forensic",
+  "archivedAt": "2026-06-10",
+  "archiveReason": "TEN-T0 mixed slate generation, market-watch inventory, DB fallback inputs, and prediction capture. It is retained for forensic reproduction only and must not publish production prediction rows.",
   "createdForSlate": "2026-05-31",
   "warehouseVersion": "TEN-W1",
   "featureVersion": "TEN-F0",
@@ -30,7 +32,7 @@
       "sha256": "b7a1e04d76858aeb003cde4dea67da2ee791066d9ad2b1bdd2d9f297c8bb3149"
     }
   ],
-  "description": "Frozen baseline of the Roland Garros tennis pipeline after the May 31 totals/first-set O-U fix. This is a reproducibility lock, not a claim that the model is good.",
+  "description": "Archived forensic baseline of the Roland Garros tennis pipeline after the May 31 totals/first-set O-U fix. This is retained for diagnosis and reproducibility only; it is not an active prediction model.",
   "components": [
     "warehouse score fallback from live rank, 2026 clay record, opponent-adjusted form, and service weakness",
     "pandas multimodel ensemble rows when available",
@@ -45,7 +47,8 @@
     "data-private/model-cartridges/tennis/TEN-T0/calibration/2026-05-31.calibration.json"
   ],
   "notes": [
-    "Future TEN-T1+ cartridges should be compared against this May 31 snapshot before any behavior change is accepted.",
+    "TEN-T0 is archived and must not be used for production prediction publication.",
+    "Future tennis cartridges may compare against this May 31 snapshot for forensic context, but not as an approval gate.",
     "ML, spread, match O-U, first-set O-U, set-win, and Kalshi lanes must be tracked separately."
   ]
 }

@@ -37,6 +37,14 @@ Checklist:
 - Mark current `prediction_rows` from `TEN-T0` as historical/forensic in audit output.
 - Count `marketOnly` rows separately from true predictions.
 - Preserve raw artifacts for diagnosis; do not backfill them into new prediction rows.
+- Require `--allow-archived-ten-t0` or the documented forensic environment variable before running or capturing `TEN-T0`.
+
+Forensic override only:
+
+```bash
+TEN_T0_ALLOW_ARCHIVED_RUN=1 node models/tennis/cartridges/TEN-T0/runner.mjs ...
+TEN_T0_ALLOW_ARCHIVED_CAPTURE=1 node models/tennis/cartridges/TEN-T0/capture-db-run.mjs ...
+```
 
 ### 2. Warehouse Shape Inventory
 
@@ -205,4 +213,3 @@ Each audit pass should produce:
 - exact SQL/query evidence for blocker counts
 - examples for each quarantine category
 - a follow-up checklist with owner-reviewed decisions
-

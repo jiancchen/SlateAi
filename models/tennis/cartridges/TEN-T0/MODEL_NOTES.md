@@ -1,10 +1,16 @@
-# TEN-T0 Tennis Baseline Model Notes
+# TEN-T0 Tennis Archived Forensic Notes
+
+## Archive Status
+
+TEN-T0 is archived as of 2026-06-10. It is retained for forensic reproduction only and must not be used for production prediction publication.
+
+The archive decision is based on the data-shape audit: TEN-T0 mixed slate generation, market-watch inventory, DB fallback inputs, and prediction capture. Future tennis model work must start from canonical audited data shapes instead of patching this cartridge.
 
 ## Summary
 
-TEN-T0 is the first cartridge version of the tennis pipeline. It freezes the May 31 Roland Garros prediction shape so future model work can be tested against a known baseline before behavior changes are accepted.
+TEN-T0 was the first cartridge version of the tennis pipeline. It freezes the May 31 Roland Garros prediction shape for historical diagnosis.
 
-This is a reproducibility baseline, not a claim that the tennis model is already sharp enough to bet blindly.
+This is an archived forensic baseline, not a claim that the tennis model is sharp enough to bet blindly.
 
 ## Key Improvements
 
@@ -25,7 +31,8 @@ This is a reproducibility baseline, not a claim that the tennis model is already
 
 ## Notes
 
-- Future TEN-T1+ cartridges must compare against the May 31 TEN-T0 golden snapshot before behavior changes are accepted.
+- TEN-T0 must not publish production prediction rows.
+- Future tennis cartridges may compare against the May 31 TEN-T0 golden snapshot for forensic context, but not as an approval gate.
 - May 30 is the closest settled TEN-T0-compatible validation slate, but it was produced before formal cartridge run snapshots existed.
 - Prediction-market trade-to-sell is a separate objective from picking winners and must stay separately graded.
 - Blind ML value remains downgraded until bucketed EV and ROI improve in settled postmatch runs.
