@@ -1,7 +1,7 @@
 {
   "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
-  "generated_at": "2026-06-10T07:52:37.954171+00:00",
-  "limit_per_category": 1000,
+  "generated_at": "2026-06-10T08:23:13.731833+00:00",
+  "limit_per_category": 500,
   "scope": {
     "end_date": "2026-06-09",
     "start_date": "2026-06-07"

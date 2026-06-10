@@ -1,6 +1,6 @@
 # Tennis Quarantine Candidates
 
-Generated: `2026-06-10T07:52:37.954171+00:00`
+Generated: `2026-06-10T08:23:13.731833+00:00`
 
 DB: `data-private/warehouse/sports/tennis/sql-tennis.db`
 

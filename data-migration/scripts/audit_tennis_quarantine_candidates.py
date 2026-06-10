@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import sqlite3
 from datetime import datetime, timezone
@@ -14,10 +15,117 @@ from typing import Any
 DEFAULT_DB = Path("data-private/warehouse/sports/tennis/sql-tennis.db")
 DEFAULT_JSON = Path("data-migration/reports/tennis_quarantine_candidates.json")
 DEFAULT_MARKDOWN = Path("data-migration/reports/tennis_quarantine_candidates.md")
+SECTION_ROW_KEYS = {
+    "non_tennislive_matches": "candidates",
+    "participant_anomalies": "candidates",
+    "prediction_rows_without_match": "candidates",
+    "ten_t0_market_only_predictions": "candidates",
+    "market_identity_gaps": "candidates",
+    "duplicate_market_groups": "groups",
+    "duplicate_stat_groups": "groups",
+}
+SECTION_CSV_FIELDS = {
+    "non_tennislive_matches": [
+        "bucket",
+        "reason",
+        "match_id",
+        "id_prefix",
+        "match_date",
+        "start_time_utc",
+        "status",
+        "tour",
+        "surface",
+        "source_event_id",
+        "participant_rows",
+        "distinct_players",
+    ],
+    "participant_anomalies": [
+        "bucket",
+        "reason",
+        "match_id",
+        "id_prefix",
+        "match_date",
+        "status",
+        "participant_rows",
+        "distinct_players",
+        "player_ids",
+        "sides",
+    ],
+    "prediction_rows_without_match": [
+        "bucket",
+        "reason",
+        "prediction_row_id",
+        "model_run_id",
+        "match_id",
+        "id_prefix",
+        "lane",
+        "market_type",
+        "selection",
+        "confidence",
+        "ev_cents",
+        "created_at",
+    ],
+    "ten_t0_market_only_predictions": [
+        "bucket",
+        "reason",
+        "prediction_row_id",
+        "model_run_id",
+        "match_id",
+        "id_prefix",
+        "lane",
+        "market_type",
+        "selection",
+        "confidence",
+        "ev_cents",
+        "created_at",
+    ],
+    "market_identity_gaps": [
+        "bucket",
+        "reason",
+        "market_snapshot_id",
+        "match_id",
+        "id_prefix",
+        "player_id",
+        "source_name",
+        "market_type",
+        "selection",
+        "line_value",
+        "odds_american",
+        "price_cents",
+        "implied_probability",
+        "captured_at",
+    ],
+    "duplicate_market_groups": [
+        "bucket",
+        "reason",
+        "match_id",
+        "id_prefix",
+        "player_id",
+        "source_name",
+        "market_type",
+        "selection",
+        "line_value",
+        "captured_at",
+        "duplicate_rows",
+        "market_snapshot_ids",
+    ],
+    "duplicate_stat_groups": [
+        "bucket",
+        "reason",
+        "match_id",
+        "id_prefix",
+        "player_id",
+        "source_name",
+        "stat_name",
+        "period",
+        "duplicate_rows",
+        "stat_row_ids",
+    ],
+}
 
 
 def connect(db_path: Path) -> sqlite3.Connection:
-    con = sqlite3.connect(db_path)
+    con = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
     con.row_factory = sqlite3.Row
     return con
 
@@ -511,11 +619,38 @@ def write_markdown(report: dict[str, Any], path: Path) -> None:
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def write_csv(path: Path, fieldnames: list[str], rows_to_write: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=fieldnames, extrasaction="ignore", lineterminator="\n")
+        writer.writeheader()
+        for row in rows_to_write:
+            writer.writerow({field: "" if row.get(field) is None else row.get(field) for field in fieldnames})
+
+
+def write_csvs(report: dict[str, Any], csv_dir: Path) -> dict[str, str]:
+    outputs: dict[str, str] = {}
+    summary_rows = [
+        {"category": name, "candidate_count": count}
+        for name, count in report["summary"].items()
+    ]
+    summary_path = csv_dir / "_summary.csv"
+    write_csv(summary_path, ["category", "candidate_count"], summary_rows)
+    outputs["_summary"] = str(summary_path)
+    for section_name, section in report["sections"].items():
+        row_key = SECTION_ROW_KEYS[section_name]
+        output_path = csv_dir / f"{section_name}.csv"
+        write_csv(output_path, SECTION_CSV_FIELDS[section_name], list(section.get(row_key) or []))
+        outputs[section_name] = str(output_path)
+    return outputs
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Export tennis quarantine/review candidates.")
     parser.add_argument("--db", type=Path, default=DEFAULT_DB)
     parser.add_argument("--out", type=Path, default=DEFAULT_JSON)
     parser.add_argument("--markdown", type=Path, default=DEFAULT_MARKDOWN)
+    parser.add_argument("--csv-dir", type=Path, help="Optional directory for per-category CSV review queues.")
     parser.add_argument("--start-date")
     parser.add_argument("--end-date")
     parser.add_argument("--limit-per-category", type=int, default=500)
@@ -533,12 +668,15 @@ def main() -> None:
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     write_markdown(report, args.markdown)
+    csv_outputs = write_csvs(report, args.csv_dir) if args.csv_dir else None
     print(
         json.dumps(
             {
                 "ok": True,
                 "json": str(args.out),
                 "markdown": str(args.markdown),
+                "csv_dir": str(args.csv_dir) if args.csv_dir else None,
+                "csv_files": csv_outputs,
                 "summary": report["summary"],
             },
             indent=2,
