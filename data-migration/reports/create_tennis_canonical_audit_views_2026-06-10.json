@@ -1,0 +1,28 @@
+{
+  "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "generated_at": "2026-06-10T07:56:17.363137+00:00",
+  "mode": "checked_temp_views_readonly",
+  "ok": true,
+  "script": "data-migration/scripts/create_tennis_canonical_audit_views.py",
+  "sql_path": "data-migration/contracts/tennis_canonical_audit_views.sql",
+  "view_counts": {
+    "v_tennis_canonical_match_players": 2346,
+    "v_tennis_canonical_matches": 1173,
+    "v_tennis_forensic_prediction_rows": 776,
+    "v_tennis_market_identity_gaps": 507,
+    "v_tennis_needs_review_match_shapes": 1576,
+    "v_tennis_prediction_settlement_status": 776,
+    "v_tennis_quarantine_non_tennislive_matches": 544,
+    "v_tennis_resolved_market_snapshots": 68
+  },
+  "views": [
+    "v_tennis_canonical_matches",
+    "v_tennis_canonical_match_players",
+    "v_tennis_quarantine_non_tennislive_matches",
+    "v_tennis_needs_review_match_shapes",
+    "v_tennis_resolved_market_snapshots",
+    "v_tennis_market_identity_gaps",
+    "v_tennis_forensic_prediction_rows",
+    "v_tennis_prediction_settlement_status"
+  ]
+}
