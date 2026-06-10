@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T21:25:34.756Z",
+  "generated_at": "2026-06-10T06:01:46.293Z",
   "script": "data-migration/scripts/prediction_preflight.mjs",
   "sport": "mlb",
   "source_date": "2026-06-09",
@@ -7,11 +7,12 @@
   "degraded": false,
   "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
   "required_sources_checked": 8,
-  "passed_sources": 4,
+  "passed_sources": 3,
   "stale_sources": [
     "mlb_bullpen_features",
     "mlb_environment",
     "mlb_pitcher_features",
+    "mlb_probables",
     "mlb_team_features"
   ],
   "warnings": [],
@@ -19,6 +20,7 @@
     "mlb_bullpen_features: Missing source_fetch_status for mlb_bullpen_features/2026-06-09",
     "mlb_environment: Missing source_fetch_status for mlb_environment/2026-06-09",
     "mlb_pitcher_features: Missing source_fetch_status for mlb_pitcher_features/2026-06-09",
+    "mlb_probables: Stale or missing cache_valid_until: 2026-06-10T03:26:14.142809+00:00",
     "mlb_team_features: Missing source_fetch_status for mlb_team_features/2026-06-09"
   ],
   "sources": [
@@ -57,13 +59,13 @@
         "source_date": "2026-06-09",
         "last_status": "success",
         "last_completeness_status": "complete",
-        "last_success_at": "2026-06-09T20:07:22.928962+00:00",
-        "cache_valid_until": "2026-06-10T02:07:22.928962+00:00",
+        "last_success_at": "2026-06-10T05:59:38.887795+00:00",
+        "cache_valid_until": "2026-06-10T11:59:38.887795+00:00",
         "expected_item_count": 15,
         "actual_item_count": 15,
         "missing_item_count": 0,
         "unresolved_count": 0,
-        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"feed_file_count\":15,\"missing_schedule_games\":0,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-09.json\"}"
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"feed_file_count\":15,\"missing_schedule_games\":0,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_mlb_day_schedule_game_feed_2026-06-09.json\"}"
       },
       "stale": false,
       "errors": [],
@@ -79,13 +81,13 @@
         "source_date": "2026-06-09",
         "last_status": "success",
         "last_completeness_status": "complete",
-        "last_success_at": "2026-06-09T20:13:53.537219+00:00",
-        "cache_valid_until": "2026-06-10T08:13:53.537219+00:00",
+        "last_success_at": "2026-06-09T21:26:14.142457+00:00",
+        "cache_valid_until": "2026-06-10T09:26:14.142457+00:00",
         "expected_item_count": 270,
         "actual_item_count": 270,
         "missing_item_count": 0,
         "unresolved_count": 0,
-        "notes": "{\"adapter\":\"mlb_lineup_board_raw_to_typed\",\"expected_lineup_slots\":270,\"games\":15,\"lineup_matchup_snapshots\":270,\"lineup_slots\":270,\"lineups\":30,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-09.json\",\"source_snapshot_id\":\"mlb-fe23e01183321aa054afe2be96240b5b\",\"unresolved_count\":0}"
+        "notes": "{\"adapter\":\"mlb_lineup_board_raw_to_typed\",\"expected_lineup_slots\":270,\"games\":15,\"lineup_matchup_snapshots\":270,\"lineup_slots\":270,\"lineups\":30,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-09.json\",\"source_snapshot_id\":\"mlb-d68ad15073dd4bce82e647737d126d32\",\"unresolved_count\":0}"
       },
       "stale": false,
       "errors": [],
@@ -114,18 +116,20 @@
         "source_date": "2026-06-09",
         "last_status": "success",
         "last_completeness_status": "complete",
-        "last_success_at": "2026-06-09T20:13:53.537484+00:00",
-        "cache_valid_until": "2026-06-10T02:13:53.537484+00:00",
+        "last_success_at": "2026-06-09T21:26:14.142809+00:00",
+        "cache_valid_until": "2026-06-10T03:26:14.142809+00:00",
         "expected_item_count": 15,
         "actual_item_count": 15,
         "missing_item_count": 0,
         "unresolved_count": 0,
-        "notes": "{\"adapter\":\"mlb_lineup_board_raw_to_typed\",\"probable_pitcher_rows\":30,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-09.json\",\"source_kind\":\"lineup_board_opposing_starters\",\"source_snapshot_id\":\"mlb-2ad4e2b133c8c004769937100784f4c4\",\"unresolved_count\":0}"
+        "notes": "{\"adapter\":\"mlb_lineup_board_raw_to_typed\",\"probable_pitcher_rows\":30,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-09.json\",\"source_kind\":\"lineup_board_opposing_starters\",\"source_snapshot_id\":\"mlb-1028d764892c7b7fdd6684dbb1b0ead2\",\"unresolved_count\":0}"
       },
-      "stale": false,
-      "errors": [],
+      "stale": true,
+      "errors": [
+        "Stale or missing cache_valid_until: 2026-06-10T03:26:14.142809+00:00"
+      ],
       "warnings": [],
-      "ok": true
+      "ok": false
     },
     {
       "source_name": "mlb_schedule",
@@ -136,13 +140,13 @@
         "source_date": "2026-06-09",
         "last_status": "success",
         "last_completeness_status": "complete",
-        "last_success_at": "2026-06-09T20:07:22.928810+00:00",
-        "cache_valid_until": "2026-06-10T02:07:22.928810+00:00",
+        "last_success_at": "2026-06-10T05:59:38.887439+00:00",
+        "cache_valid_until": "2026-06-10T11:59:38.887439+00:00",
         "expected_item_count": 15,
         "actual_item_count": 15,
         "missing_item_count": 0,
         "unresolved_count": 0,
-        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-09.json\",\"schedule_path\":\"data-private/raw/mlb/2026-06-09/schedule.json\"}"
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_mlb_day_schedule_game_feed_2026-06-09.json\",\"schedule_path\":\"data-private/raw/mlb/2026-06-09/schedule.json\"}"
       },
       "stale": false,
       "errors": [],

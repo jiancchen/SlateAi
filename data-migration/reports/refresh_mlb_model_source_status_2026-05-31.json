@@ -1,6 +1,6 @@
 {
-  "date": "2026-06-06",
-  "generated_at": "2026-06-07T15:12:51.446728+00:00",
+  "date": "2026-06-09",
+  "generated_at": "2026-06-10T05:59:19.973887+00:00",
   "ok": false,
   "script": "data-migration/scripts/refresh_mlb_model_source_status.py",
   "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
@@ -17,15 +17,15 @@
       }
     },
     "mlb_model_artifacts": {
-      "actual_item_count": 0,
+      "actual_item_count": 603,
       "source_name": "mlb_model_artifacts",
-      "status": "missing",
+      "status": "success",
       "table_counts": {
-        "model_artifacts": 0,
+        "model_artifacts": 17,
         "model_run_artifacts": 0,
         "model_run_lanes": 0,
-        "model_runs": 0,
-        "prediction_rows": 0,
+        "model_runs": 1,
+        "prediction_rows": 585,
         "prop_backtest_rows": 0,
         "settlement_rows": 0
       }

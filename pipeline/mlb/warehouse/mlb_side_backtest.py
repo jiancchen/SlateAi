@@ -192,6 +192,7 @@ def grade_predictions(conn: sqlite3.Connection, model_name: str) -> None:
 
     skipped_missing_outcome = 0
     skipped_ambiguous_outcome = 0
+    skipped_missing_team_stats = 0
 
     for row in rows:
         outcome = None
@@ -230,6 +231,9 @@ def grade_predictions(conn: sqlite3.Connection, model_name: str) -> None:
         ).fetchone()
         predicted_stats = away_stats if row["predicted_side"] == "away" else home_stats
         opponent_stats = home_stats if row["predicted_side"] == "away" else away_stats
+        if predicted_stats is None or opponent_stats is None:
+            skipped_missing_team_stats += 1
+            continue
 
         full_game_hit = predicted_stats["full_game_result"] == "win"
         first5_hit = predicted_stats["first5_result"] == "win"
@@ -314,10 +318,11 @@ def grade_predictions(conn: sqlite3.Connection, model_name: str) -> None:
         )
 
     conn.commit()
-    if skipped_missing_outcome or skipped_ambiguous_outcome:
+    if skipped_missing_outcome or skipped_ambiguous_outcome or skipped_missing_team_stats:
         print(
             f"Skipped {skipped_missing_outcome} rows with no outcome and "
-            f"{skipped_ambiguous_outcome} rows with ambiguous doubleheader outcomes for {model_name}"
+            f"{skipped_ambiguous_outcome} rows with ambiguous doubleheader outcomes and "
+            f"{skipped_missing_team_stats} rows with missing team stats for {model_name}"
         )
 
 

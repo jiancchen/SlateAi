@@ -5,8 +5,8 @@
   "modelId": "TEN-T0",
   "slateDate": "2026-06-08",
   "status": "deployed",
-  "deployedAt": "2026-06-10T00:58:50.548Z",
-  "deploymentUrl": "https://slate-web-static-1-3rchg1f8m-jian-chens-projects-667dcf76.vercel.app",
+  "deployedAt": "2026-06-10T06:09:57.935Z",
+  "deploymentUrl": "https://slate-web-static-1-nl5twn0nl-jian-chens-projects-667dcf76.vercel.app",
   "webRoot": "web",
   "vercelProject": {
     "projectId": "prj_wKTGUqaCcDzyat6fBENE0ROnBWFL",
@@ -27,7 +27,7 @@
   "staticArtifact": {
     "root": "web/dist",
     "files": 262,
-    "sha256": "6ca3a3d2594217c6532d3588a602711f3151a32e09a3a7d8c93daace485b3712"
+    "sha256": "a0bd3f70f81e9496d5cbf403a6b1b40b8ab6160343c33b59949d5da147d59df3"
   },
   "publicData": {
     "currentSlate": {
@@ -39,8 +39,7 @@
         "isoDate": "2026-06-09"
       },
       "summary": {
-        "totalGames": 15,
-        "mlbGames": 15
+        "totalGames": 15
       }
     },
     "slates": [
@@ -53,8 +52,7 @@
           "isoDate": "2026-06-06"
         },
         "summary": {
-          "totalGames": 14,
-          "mlbGames": 14
+          "totalGames": 14
         }
       },
       {
@@ -66,8 +64,7 @@
           "isoDate": "2026-06-07"
         },
         "summary": {
-          "totalGames": 96,
-          "mlbGames": 15
+          "totalGames": 96
         }
       },
       {
@@ -79,8 +76,7 @@
           "isoDate": "2026-06-08"
         },
         "summary": {
-          "totalGames": 89,
-          "mlbGames": 8
+          "totalGames": 89
         }
       },
       {
@@ -92,8 +88,7 @@
           "isoDate": "2026-06-09"
         },
         "summary": {
-          "totalGames": 15,
-          "mlbGames": 15
+          "totalGames": 15
         }
       }
     ],

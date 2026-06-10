@@ -5,7 +5,7 @@
   "errors": [],
   "expected_game_count": 15,
   "expected_lineup_slot_count": 270,
-  "generated_at": "2026-06-09T21:26:13.770675+00:00",
+  "generated_at": "2026-06-10T06:02:26.918530+00:00",
   "lineup_board": {
     "games": 15,
     "lineup_matchup_snapshots": 270,
@@ -19,7 +19,7 @@
     "unresolved_games": 0,
     "unresolved_players": 0
   },
-  "lineup_file": "data-private/lineups/mlb/2026-06-09-lineup-board.json",
+  "lineup_file": null,
   "lineup_root": "data-private/lineups/mlb",
   "ok": true,
   "row_count_delta": {
@@ -30,7 +30,7 @@
     "players": 0,
     "source_fetch_runs": 2,
     "source_fetch_status": 0,
-    "source_snapshots": 2,
+    "source_snapshots": 0,
     "starting_pitchers": 0,
     "unresolved_entities": 0
   },
