@@ -1,0 +1,34 @@
+{
+  "blocking_reasons": [
+    "archived_or_forensic_model",
+    "prediction_rows_have_no_value_rows",
+    "prediction_rows_without_exported_db_match",
+    "market_only_rows_present_in_prediction_rows",
+    "required_source_freshness_blocked"
+  ],
+  "contract": "data-migration/contracts/tennis_public_export_contract.md",
+  "date": "2026-06-08",
+  "dry_run": true,
+  "export_manifest_id": null,
+  "export_status": "blocked",
+  "games": 106,
+  "generated_at": "2026-06-10T08:07:10.014398+00:00",
+  "model": "TEN-T0",
+  "ok": false,
+  "out_dir": "/tmp/tennis-db-public-export-2026-06-08-guarded",
+  "prediction_rows": 81,
+  "publish_allowed": false,
+  "resolved_model": {
+    "model_id": "TEN-T0",
+    "model_run_id": "tennis-TEN-T0-2026-06-08-db",
+    "model_version": "TEN-W1/TEN-F0/TEN-T0/TEN-E0",
+    "prediction_rows": 81,
+    "run_date": "2026-06-08",
+    "run_type": "pregame-db",
+    "status": "captured"
+  },
+  "script": "data-migration/scripts/export_tennis_public_from_db.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "summary_path": "/tmp/tennis-db-public-export-2026-06-08-guarded/summary.json",
+  "value_rows": 0
+}

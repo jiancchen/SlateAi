@@ -63,6 +63,21 @@ def fetch_json_rows(con: sqlite3.Connection, sql: str, params: tuple[Any, ...] =
     return [dict(row) for row in con.execute(sql, params).fetchall()]
 
 
+def parse_sqlite_timestamp(value: str | None) -> datetime | None:
+    if not value:
+        return None
+    text = str(value).strip().replace("Z", "+00:00")
+    if re.match(r"^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$", text):
+        text = text.replace(" ", "T") + "+00:00"
+    try:
+        parsed = datetime.fromisoformat(text)
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        return parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
 def fetch_legacy_rows(con: sqlite3.Connection, source_table: str, date: str) -> list[dict[str, Any]]:
     rows = fetch_json_rows(
         con,
@@ -191,6 +206,81 @@ def load_predictions(con: sqlite3.Connection, model_run_id: str) -> list[dict[st
         """,
         (model_run_id,),
     )
+
+
+def load_source_readiness(con: sqlite3.Connection, date: str) -> dict[str, Any]:
+    rows = fetch_json_rows(
+        con,
+        """
+        select
+          p.source_name,
+          p.source_family,
+          p.required_for_prediction,
+          s.last_status,
+          s.last_completeness_status,
+          s.last_success_at,
+          s.cache_valid_until,
+          s.actual_item_count,
+          s.missing_item_count,
+          s.unresolved_count
+        from source_fetch_policies p
+        left join source_fetch_status s
+          on s.sport = p.sport
+         and s.source_name = p.source_name
+         and s.source_date = ?
+        where p.sport = 'tennis'
+          and p.required_for_prediction = 1
+        order by p.source_name
+        """,
+        (date,),
+    )
+    now = datetime.now(timezone.utc)
+    missing = []
+    stale = []
+    failed = []
+    sources = []
+    for row in rows:
+        valid_until = parse_sqlite_timestamp(row.get("cache_valid_until"))
+        status = row.get("last_status")
+        source = {
+            "sourceName": row.get("source_name"),
+            "sourceFamily": row.get("source_family"),
+            "lastStatus": status,
+            "lastCompletenessStatus": row.get("last_completeness_status"),
+            "lastSuccessAt": row.get("last_success_at"),
+            "cacheValidUntil": row.get("cache_valid_until"),
+            "actualItemCount": row.get("actual_item_count"),
+            "missingItemCount": row.get("missing_item_count"),
+            "unresolvedCount": row.get("unresolved_count"),
+            "ok": True,
+            "errors": [],
+        }
+        if status is None:
+            source["ok"] = False
+            source["errors"].append("missing_source_fetch_status")
+            missing.append(row.get("source_name"))
+        elif status != "success":
+            source["ok"] = False
+            source["errors"].append(f"last_status_{status}")
+            failed.append(row.get("source_name"))
+        if valid_until is None:
+            source["ok"] = False
+            source["errors"].append("missing_cache_valid_until")
+            stale.append(row.get("source_name"))
+        elif valid_until < now:
+            source["ok"] = False
+            source["errors"].append("stale_cache_valid_until")
+            stale.append(row.get("source_name"))
+        sources.append(source)
+    return {
+        "requiredSources": len(rows),
+        "passedSources": len([row for row in sources if row["ok"]]),
+        "missingSources": sorted(set(filter(None, missing))),
+        "staleSources": sorted(set(filter(None, stale))),
+        "failedSources": sorted(set(filter(None, failed))),
+        "sources": sources,
+        "ok": all(row["ok"] for row in sources),
+    }
 
 
 def build_sidecar_maps(con: sqlite3.Connection, date: str) -> dict[str, Any]:
@@ -376,6 +466,71 @@ def value_rows(predictions: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return sorted(rows, key=lambda row: (-(row["evPer100"] or -9999), row["selection"] or ""))
 
 
+def export_readiness(
+    model: dict[str, Any] | None,
+    matches: list[dict[str, Any]],
+    predictions: list[dict[str, Any]],
+    values: list[dict[str, Any]],
+    source_readiness: dict[str, Any],
+) -> dict[str, Any]:
+    match_ids = {row["match_id"] for row in matches}
+    missing_match_rows = [row for row in predictions if row.get("match_id") not in match_ids]
+    market_only_rows = [
+        row for row in predictions
+        if '"marketOnly":true' in str(row.get("rationale_json") or "")
+    ]
+    model_id = str(model.get("model_id") if model else "")
+    model_run_id = str(model.get("model_run_id") if model else "")
+    model_status = str(model.get("status") if model else "")
+    run_type = str(model.get("run_type") if model else "")
+    is_forensic_model = (
+        model_id == "TEN-T0"
+        or "TEN-T0" in model_run_id
+        or "forensic" in model_status.lower()
+        or "archived" in model_status.lower()
+        or "forensic" in run_type.lower()
+    )
+    blocking = []
+    warnings = []
+    if not model:
+        blocking.append("missing_model_run")
+    if is_forensic_model:
+        blocking.append("archived_or_forensic_model")
+    if predictions and not values:
+        blocking.append("prediction_rows_have_no_value_rows")
+    if missing_match_rows:
+        blocking.append("prediction_rows_without_exported_db_match")
+    if market_only_rows:
+        blocking.append("market_only_rows_present_in_prediction_rows")
+    if not source_readiness.get("ok"):
+        blocking.append("required_source_freshness_blocked")
+    if not predictions:
+        warnings.append("no_prediction_rows")
+    if not matches:
+        blocking.append("no_exported_matches")
+    publish_allowed = not blocking
+    return {
+        "status": "ready" if publish_allowed else "blocked",
+        "publishAllowed": publish_allowed,
+        "blockingReasons": blocking,
+        "warnings": warnings,
+        "checks": {
+            "modelId": model_id or None,
+            "modelRunId": model_run_id or None,
+            "modelStatus": model_status or None,
+            "runType": run_type or None,
+            "isForensicModel": is_forensic_model,
+            "matches": len(matches),
+            "predictionRows": len(predictions),
+            "valueRows": len(values),
+            "predictionRowsWithoutExportedDbMatch": len(missing_match_rows),
+            "marketOnlyPredictionRows": len(market_only_rows),
+            "sourceFreshnessOk": source_readiness.get("ok"),
+        },
+        "sourceFreshness": source_readiness,
+    }
+
+
 def write_json(path: Path, payload: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -395,13 +550,16 @@ def build_export(root: Path, args: argparse.Namespace) -> dict[str, Any]:
             build_game(match, predictions_by_match.get(match["match_id"], []), sidecars)
             for match in matches
         ]
+        source_readiness = load_source_readiness(con, args.date)
 
     values = value_rows(predictions)
+    readiness = export_readiness(model, matches, predictions, values, source_readiness)
     label = label_from_date(args.date)
     payload = {
         "id": args.date,
         "label": label,
-        "status": "ready",
+        "status": readiness["status"],
+        "exportReadiness": readiness,
         "slateMeta": {
             "title": f"{label} Tennis DB export",
             "date": label,
@@ -414,6 +572,7 @@ def build_export(root: Path, args: argparse.Namespace) -> dict[str, Any]:
             "totalGames": len(games),
             "predictionRows": len(predictions),
             "valueRows": len(values),
+            "publishAllowed": readiness["publishAllowed"],
         },
         "filters": ["All", "Tennis"],
         "sources": [
@@ -524,6 +683,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--report", type=Path)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true")
+    parser.add_argument("--require-ready", action="store_true", help="Exit nonzero if export readiness is blocked.")
     args = parser.parse_args()
     if not re.match(r"^\d{4}-\d{2}-\d{2}$", args.date):
         raise ValueError("Pass --date YYYY-MM-DD")
@@ -559,9 +719,12 @@ def main() -> int:
         "games": len(payload["games"]),
         "prediction_rows": payload["summary"]["predictionRows"],
         "value_rows": payload["summary"]["valueRows"],
+        "export_status": payload["status"],
+        "publish_allowed": payload["exportReadiness"]["publishAllowed"],
+        "blocking_reasons": payload["exportReadiness"]["blockingReasons"],
         "resolved_model": payload["migrationExport"]["resolvedModel"],
         "export_manifest_id": None,
-        "ok": True,
+        "ok": payload["exportReadiness"]["publishAllowed"],
     }
     if not args.dry_run:
         if args.out_dir.exists():
@@ -594,6 +757,8 @@ def main() -> int:
     args.report.parent.mkdir(parents=True, exist_ok=True)
     write_json(args.report, report)
     print(json.dumps(report, indent=2, sort_keys=True))
+    if args.require_ready and not payload["exportReadiness"]["publishAllowed"]:
+        return 1
     return 0
 
 

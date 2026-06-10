@@ -57,6 +57,7 @@ Required behavior:
   "id": "YYYY-MM-DD",
   "label": "June 2, 2026",
   "status": "ready",
+  "exportReadiness": {},
   "slateMeta": {},
   "summary": {
     "totalGames": 0,
@@ -70,6 +71,8 @@ Required behavior:
   "games": []
 }
 ```
+
+`status` must reflect export readiness. It may be `ready` only when the exporter can prove the selected model/run is publishable. It must be `blocked` when required source freshness is blocked, the selected model is archived/forensic, prediction rows do not resolve to exported DB matches, prediction rows contain market-only inventory, or prediction rows produce no value rows.
 
 Each game row must include:
 
