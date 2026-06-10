@@ -163,6 +163,7 @@
     "data:train:mlb-market-models": "python3 pipeline/mlb/research/train_mlb_market_models.py",
     "data:generate:tennis-clay-context": "node scripts/blocked-tennis-legacy-source.mjs archived clay/opponent context",
     "data:export:tennis-published-slate": "node scripts/export-tennis-published-slate.mjs",
+    "data:audit:tennis-data-shapes": "python3 data-migration/scripts/audit_tennis_data_shapes.py",
     "data:audit:tennis-active-sources": "node scripts/audit-tennis-active-sources.mjs",
     "data:audit:tennis-warehouse-identity": "node scripts/audit-tennis-warehouse-identity.mjs",
     "data:audit:tennis-match-contract": "node scripts/audit-tennis-match-contract.mjs",
