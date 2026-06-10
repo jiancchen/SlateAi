@@ -1,0 +1,1431 @@
+{
+  "byDate": [
+    {
+      "canonical_matches": 57,
+      "match_date": "2026-06-07",
+      "with_any_stat_rows": 28,
+      "with_flashscore_stat_rows": 0,
+      "with_form_for_both_players": 14,
+      "with_h2h_pair_rows": 46,
+      "with_replay_games": 27,
+      "with_replay_points": 27,
+      "with_result_summary": 28,
+      "with_sofascore_stat_rows": 0,
+      "with_summary": 57,
+      "with_tennislive_stat_rows": 28
+    },
+    {
+      "canonical_matches": 40,
+      "match_date": "2026-06-08",
+      "with_any_stat_rows": 36,
+      "with_flashscore_stat_rows": 0,
+      "with_form_for_both_players": 35,
+      "with_h2h_pair_rows": 37,
+      "with_replay_games": 40,
+      "with_replay_points": 40,
+      "with_result_summary": 40,
+      "with_sofascore_stat_rows": 0,
+      "with_summary": 40,
+      "with_tennislive_stat_rows": 36
+    },
+    {
+      "canonical_matches": 14,
+      "match_date": "2026-06-09",
+      "with_any_stat_rows": 0,
+      "with_flashscore_stat_rows": 0,
+      "with_form_for_both_players": 7,
+      "with_h2h_pair_rows": 5,
+      "with_replay_games": 0,
+      "with_replay_points": 0,
+      "with_result_summary": 0,
+      "with_sofascore_stat_rows": 0,
+      "with_summary": 14,
+      "with_tennislive_stat_rows": 0
+    }
+  ],
+  "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "examples": {
+    "missing_any_stat_rows": [
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-elvina-kalieva-vs-ashlyn-krueger",
+        "players": "Ashlyn Krueger | Elvina Kalieva",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/elvina-kalieva-VS-ashlyn-krueger/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-emerson-jones-vs-dalma-galfi",
+        "players": "Dalma Galfi | Emerson Jones",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/emerson-jones-VS-dalma-galfi/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-kayla-day-vs-mary-stoiana",
+        "players": "Kayla Day | Mary Stoiana",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/kayla-day-VS-mary-stoiana/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-mingge-xu-vs-elizabeth-mandlik",
+        "players": "Elizabeth Mandlik | Mingge Xu",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/mingge-xu-VS-elizabeth-mandlik/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-benjamin-chelia-vs-tomas-martinez",
+        "players": "Tomas Martinez | Benjamin Chelia",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/benjamin-chelia-VS-tomas-martinez/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-eduardo-ribeiro-vs-santiago-de-la-fuente",
+        "players": "Eduardo Ribeiro | Santiago De la Fuente",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/eduardo-ribeiro-VS-santiago-de-la-fuente/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-facundo-mena-vs-lorenzo-joaquin-rodriguez",
+        "players": "Facundo Mena | Lorenzo Joaquin Rodriguez",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/facundo-mena-VS-lorenzo-joaquin-rodriguez/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-johan-alexander-rodriguez-vs-wilson-leite",
+        "players": "Johan Alexander Rodriguez | Wilson Leite",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/johan-alexander-rodriguez-rodriguez-VS-wilson-leite/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-juan-sebastian-gomez-vs-luciano-emanuel-ambrogi",
+        "players": "Juan Sebastian Gomez | Luciano Emanuel Ambrogi",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/juan-sebastian-gomez-VS-luciano-emanuel-ambrogi/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-karim-bennani-vs-santiago-rodriguez-taverna",
+        "players": "Karim Bennani | Santiago Rodriguez Taverna",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/karim-bennani-VS-santiago-fa-rodriguez-taverna/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-nicolas-villalon-vs-ezequiel-monferrer",
+        "players": "Nicol\u00e1s Villal\u00f3n | Ezequiel Monferrer",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/nicolas-villalon-VS-ezequiel-monferrer/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-samuel-heredia-vs-julian-cundom",
+        "players": "Julian Cundom | Samuel Heredia",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/samuel-heredia-VS-julian-cundom/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-santiago-giamichelle-vs-thiago-cigarran",
+        "players": "Santiago Giamichelle | Thiago Cigarran",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/santiago-giamichelle-VS-thiago-cigarran/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-the-hsbc-championships-london-2026-laura-siegemund-vs-francesca-jones",
+        "players": "Francesca Jones | Laura Siegemund",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/laura-siegemund-VS-francesca-jones/the-hsbc-championships-london-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-birmingham-challenger-2026-otto-virtanen-vs-kamil-majchrzak",
+        "players": "Kamil Majchrzak | Otto Virtanen",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/otto-virtanen-VS-kamil-majchrzak/birmingham-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-lexus-ilkley-open-ilkley-2026-darja-vidmanova-vs-linda-fruhvirtova",
+        "players": "Darja Vidmanova | Linda Fruhvirtova",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/darja-vidmanova-VS-linda-fruhvirtova/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-san-miguel-de-tucuman-challenger-2026-mateo-del-pino-vs-arklon-huertas-del-pino",
+        "players": "Arklon Huertas Del Pino | Mateo Del Pino",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/mateo-del-pino-VS-arklon-huertas-del-pino/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-the-hsbc-championships-london-2026-katie-boulter-vs-leylah-annie-fernandez",
+        "players": "Katie Boulter | Leylah Annie Fernandez",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/katie-boulter-VS-leylah-annie-fernandez/the-hsbc-championships-london-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bad-rappenau-challenger-2026-luka-mikrut-vs-emilio-nava",
+        "players": "Emilio Nava | Luka Mikrut",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/luka-mikrut-VS-emilio-nava/bad-rappenau-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-akira-santillan-vs-marko-bekeni",
+        "players": "Akira Santillan | Marko Bekeni",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/akira-santillan-VS-marko-bekeni/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-buvaysar-gadamauri-vs-matthew-william-donald",
+        "players": "Buvaysar Gadamauri | Matthew William Donald",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/buvaysar-gadamauri-VS-matthew-william-donald/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-daniel-michalski-vs-andrej-martin",
+        "players": "Andrej Martin | Daniel Michalski",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/daniel-michalski-VS-andrej-martin/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-martin-krumich-vs-viktor-durasovic",
+        "players": "Martin Krumich | Viktor Durasovic",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/martin-krumich-VS-viktor-durasovic/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-aleksandr-braynin-vs-sergio-callejon-hernando",
+        "players": "Aleksandr Braynin | Sergio Callejon Hernando",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/aleksandr-braynin-VS-sergio-callejon-hernando/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-carlo-alberto-caniato-vs-giuseppe-la-vela",
+        "players": "Carlo Alberto Caniato | Giuseppe La Vela",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/carlo-alberto-caniato-VS-giuseppe-la-vela/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-francesco-forti-vs-luca-castagnola",
+        "players": "Francesco Forti | Luca Castagnola",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/francesco-forti-VS-luca-castagnola/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-gabriele-bosio-vs-gianmarco-ferrari",
+        "players": "Gabriele Bosio | Gianmarco Ferrari",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/gabriele-bosio-VS-gianmarco-ferrari/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-giovanni-oradini-vs-samuele-pieri",
+        "players": "Giovanni Oradini | Samuele Pieri",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/giovanni-oradini-VS-samuele-pieri/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-lorenzo-rottoli-vs-juan-cruz-martin-manzano",
+        "players": "Juan Cruz Martin Manzano | Lorenzo Rottoli",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/lorenzo-rottoli-VS-juan-cruz-martin-manzano/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-lucio-ratti-vs-filippo-mazzola",
+        "players": "Lucio Ratti | Filippo Mazzola",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/lucio-ratti-VS-filippo-mazzola/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-manuel-mazza-vs-lorenzo-carboni",
+        "players": "Lorenzo Carboni | Manuel Mazza",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/manuel-mazza-VS-lorenzo-carboni/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-petr-nesterov-vs-michele-mecarelli",
+        "players": "Michele Mecarelli | Petr Nesterov",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/petr-nesterov-VS-michele-mecarelli/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-centurion-2-challenger-2026-philip-henning-vs-alexander-donski",
+        "players": "Alexander Donski | Philip Henning",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/philip-henning-VS-alexander-donski/centurion-2-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-french-open-paris-2026-flavio-cobolli-vs-alexander-zverev",
+        "players": "Alexander Zverev | Flavio Cobolli",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/flavio-cobolli-VS-alexander-zverev/french-open-paris-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lexus-birmingham-open-birmingham-2026-alexandra-eala-vs-nikola-bartunkova",
+        "players": "Alexandra Eala | Nikola Bartunkova",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/alexandra-eala-VS-nikola-bartunkova/lexus-birmingham-open-birmingham-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-alex-martinez-vs-nitin-kumar-sinha",
+        "players": "Alex Martinez | Nitin Kumar Sinha",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/alex-martinez-VS-nitin-kumar-sinha/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-andrea-baudel-vs-alejo-sanchez-quilez",
+        "players": "Alejo Sanchez Quilez | Andrea Baudel",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/andrea-baudel-VS-alejo-sanchez-quilez/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-geoffrey-blancaneaux-vs-luca-staeheli",
+        "players": "Geoffrey Blancaneaux | Luca Staeheli",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/geoffrey-blancaneaux-VS-luca-staeheli/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-jules-fabre-vs-johan-nikles",
+        "players": "Johan Nikles | Jules Fabre",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/jules-fabre-VS-johan-nikles/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-lucas-poullain-vs-loann-massard",
+        "players": "Loann Massard | Lucas Poullain",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/lucas-poullain-VS-loann-massard/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-mariano-kestelboim-vs-iliyan-radulov",
+        "players": "Iliyan Radulov | Mariano Kestelboim",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/mariano-kestelboim-VS-iliyan-radulov/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-max-alcala-gurri-vs-kenny-de-schepper",
+        "players": "Kenny De Schepper | Max Alcala Gurri",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/max-alcala-gurri-VS-kenny-de-schepper/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-maxime-janvier-vs-laurent-lokoli",
+        "players": "Laurent Lokoli | Maxime Janvier",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/maxime-janvier-VS-laurent-lokoli/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-makarska-open-makarska-2026-darja-semenistaja-vs-maria-timofeeva",
+        "players": "Darja Semenistaja | Maria Timofeeva",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/darja-semenistaja-VS-maria-timofeeva/makarska-open-makarska-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-open-delle-puglie-foggia-2026-leyre-romero-gormaz-vs-tyra-caterina-grant",
+        "players": "Leyre Romero Gormaz | Tyra Caterina Grant",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/leyre-romero-gormaz-VS-tyra-caterina-grant/open-delle-puglie-foggia-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-prostejov-challenger-2026-sebastian-baez-vs-alex-molcan",
+        "players": "Alex Molcan | Sebastian Baez",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/sebastian-baez-VS-alex-molcan/prostejov-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-tyler-challenger-2026-adam-walton-vs-andre-ilagan",
+        "players": "Adam Walton | Andre Ilagan",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/adam-walton-VS-andre-ilagan/tyler-challenger-2026/",
+        "tournament_name": null
+      }
+    ],
+    "missing_form_for_both_players": [
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-elvina-kalieva-vs-ashlyn-krueger",
+        "players": "Ashlyn Krueger | Elvina Kalieva",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/elvina-kalieva-VS-ashlyn-krueger/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-mingge-xu-vs-elizabeth-mandlik",
+        "players": "Elizabeth Mandlik | Mingge Xu",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/mingge-xu-VS-elizabeth-mandlik/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-benjamin-chelia-vs-tomas-martinez",
+        "players": "Tomas Martinez | Benjamin Chelia",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/benjamin-chelia-VS-tomas-martinez/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-johan-alexander-rodriguez-vs-wilson-leite",
+        "players": "Johan Alexander Rodriguez | Wilson Leite",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/johan-alexander-rodriguez-rodriguez-VS-wilson-leite/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-karim-bennani-vs-santiago-rodriguez-taverna",
+        "players": "Karim Bennani | Santiago Rodriguez Taverna",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/karim-bennani-VS-santiago-fa-rodriguez-taverna/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-nicolas-villalon-vs-ezequiel-monferrer",
+        "players": "Nicol\u00e1s Villal\u00f3n | Ezequiel Monferrer",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/nicolas-villalon-VS-ezequiel-monferrer/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-santiago-giamichelle-vs-thiago-cigarran",
+        "players": "Santiago Giamichelle | Thiago Cigarran",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/santiago-giamichelle-VS-thiago-cigarran/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-bratislava-challenger-2026-abedallah-shelbayh-vs-akira-santillan",
+        "players": "Akira Santillan | Abedallah Shelbayh",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/akira-santillan-VS-abedallah-shelbayh/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-bratislava-challenger-2026-vitaliy-sachko-vs-yosuke-watanuki",
+        "players": "Vitaliy Sachko | Yosuke Watanuki",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/vitaliy-sachko-VS-yousuke-watanuki/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-lexus-ilkley-open-ilkley-2026-darja-vidmanova-vs-linda-fruhvirtova",
+        "players": "Darja Vidmanova | Linda Fruhvirtova",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/darja-vidmanova-VS-linda-fruhvirtova/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-san-miguel-de-tucuman-challenger-2026-mateo-del-pino-vs-arklon-huertas-del-pino",
+        "players": "Arklon Huertas Del Pino | Mateo Del Pino",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/mateo-del-pino-VS-arklon-huertas-del-pino/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-the-hsbc-championships-london-2026-katie-boulter-vs-leylah-annie-fernandez",
+        "players": "Katie Boulter | Leylah Annie Fernandez",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/katie-boulter-VS-leylah-annie-fernandez/the-hsbc-championships-london-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-buvaysar-gadamauri-vs-matthew-william-donald",
+        "players": "Buvaysar Gadamauri | Matthew William Donald",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/buvaysar-gadamauri-VS-matthew-william-donald/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-dimitar-kuzmanov-vs-vadym-ursu",
+        "players": "Dimitar Kuzmanov | Vadym Ursu",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/dimitar-kuzmanov-VS-vadym-ursu/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-mathys-erhard-vs-fares-zakaria",
+        "players": "Fares Zakaria | Mathys Erhard",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/mathys-erhard-VS-faris-zakaryia/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-aleksandr-braynin-vs-sergio-callejon-hernando",
+        "players": "Aleksandr Braynin | Sergio Callejon Hernando",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/aleksandr-braynin-VS-sergio-callejon-hernando/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-francesco-forti-vs-luca-castagnola",
+        "players": "Francesco Forti | Luca Castagnola",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/francesco-forti-VS-luca-castagnola/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-gabriele-bosio-vs-gianmarco-ferrari",
+        "players": "Gabriele Bosio | Gianmarco Ferrari",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/gabriele-bosio-VS-gianmarco-ferrari/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-gianmarco-ferrari-vs-gabriele-bosio",
+        "players": "Gabriele Bosio | Gianmarco Ferrari",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/gianmarco-ferrari-VS-gabriele-bosio/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-giovanni-oradini-vs-samuele-pieri",
+        "players": "Giovanni Oradini | Samuele Pieri",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/giovanni-oradini-VS-samuele-pieri/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-juan-cruz-martin-manzano-vs-lorenzo-rottoli",
+        "players": "Juan Cruz Martin Manzano | Lorenzo Rottoli",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/juan-cruz-martin-manzano-VS-lorenzo-rottoli/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-lorenzo-rottoli-vs-juan-cruz-martin-manzano",
+        "players": "Juan Cruz Martin Manzano | Lorenzo Rottoli",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/lorenzo-rottoli-VS-juan-cruz-martin-manzano/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-lucio-ratti-vs-filippo-mazzola",
+        "players": "Lucio Ratti | Filippo Mazzola",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/lucio-ratti-VS-filippo-mazzola/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-manuel-mazza-vs-lorenzo-carboni",
+        "players": "Lorenzo Carboni | Manuel Mazza",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/manuel-mazza-VS-lorenzo-carboni/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-petr-nesterov-vs-michele-mecarelli",
+        "players": "Michele Mecarelli | Petr Nesterov",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/petr-nesterov-VS-michele-mecarelli/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-samuele-pieri-vs-giovanni-oradini",
+        "players": "Giovanni Oradini | Samuele Pieri",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/samuele-pieri-VS-giovanni-oradini/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-sergio-callejon-hernando-vs-aleksandr-braynin",
+        "players": "Aleksandr Braynin | Sergio Callejon Hernando",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/sergio-callejon-hernando-VS-aleksandr-braynin/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-charles-broom-vs-quinn-vandecasteele",
+        "players": "Charles Broom | Quinn Vandecasteele",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/charles-broom-VS-quinn-vandecasteele/ilkley-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-daniel-evans-vs-james-watt",
+        "players": "Daniel Evans | James Watt",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/daniel-evans-VS-james-watt/ilkley-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-keegan-smith-vs-finn-bass",
+        "players": "Keegan Smith | Finn Bass",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/keegan-smith-VS-finn-bass/ilkley-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-mark-lajal-vs-anton-matusevich",
+        "players": "Anton Matusevich | Mark Lajal",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/mark-lajal-VS-anton-matusevich/ilkley-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-paul-jubb-vs-max-basing",
+        "players": "Max Basing | Paul Jubb",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/paul-jubb-VS-max-basing/ilkley-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-ilkley-challenger-2026-rio-noguchi-vs-patrick-brady",
+        "players": "Patrick Brady | Rio Noguchi",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/rio-noguchi-VS-patrick-brady/ilkley-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-alejo-sanchez-quilez-vs-andrea-baudel",
+        "players": "Alejo Sanchez Quilez | Andrea Baudel",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/alejo-sanchez-quilez-VS-andrea-baudel/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-alex-martinez-vs-nitin-kumar-sinha",
+        "players": "Alex Martinez | Nitin Kumar Sinha",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/alex-martinez-VS-nitin-kumar-sinha/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-andrea-baudel-vs-alejo-sanchez-quilez",
+        "players": "Alejo Sanchez Quilez | Andrea Baudel",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/andrea-baudel-VS-alejo-sanchez-quilez/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-david-jorda-sanchis-vs-benjamin-winter-lopez",
+        "players": "David Jorda Sanchis | Benjamin Winter Lopez",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/david-jorda-sanchis-VS-benjamin-winter-lopez/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-geoffrey-blancaneaux-vs-luca-staeheli",
+        "players": "Geoffrey Blancaneaux | Luca Staeheli",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/geoffrey-blancaneaux-VS-luca-staeheli/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-iliyan-radulov-vs-mariano-kestelboim",
+        "players": "Iliyan Radulov | Mariano Kestelboim",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/iliyan-radulov-VS-mariano-kestelboim/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-johan-nikles-vs-jules-fabre",
+        "players": "Johan Nikles | Jules Fabre",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/johan-nikles-VS-jules-fabre/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-jules-fabre-vs-johan-nikles",
+        "players": "Johan Nikles | Jules Fabre",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/jules-fabre-VS-johan-nikles/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-luca-staeheli-vs-geoffrey-blancaneaux",
+        "players": "Geoffrey Blancaneaux | Luca Staeheli",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/luca-staeheli-VS-geoffrey-blancaneaux/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-lucas-poullain-vs-loann-massard",
+        "players": "Loann Massard | Lucas Poullain",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/lucas-poullain-VS-loann-massard/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-mariano-kestelboim-vs-iliyan-radulov",
+        "players": "Iliyan Radulov | Mariano Kestelboim",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/mariano-kestelboim-VS-iliyan-radulov/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-max-alcala-gurri-vs-kenny-de-schepper",
+        "players": "Kenny De Schepper | Max Alcala Gurri",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/max-alcala-gurri-VS-kenny-de-schepper/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-maxime-janvier-vs-laurent-lokoli",
+        "players": "Laurent Lokoli | Maxime Janvier",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/maxime-janvier-VS-laurent-lokoli/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-raphael-perot-vs-noah-karma",
+        "players": "Raphael Perot | Noah Karma",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/raphael-perot-VS-noah-karma/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-svyatoslav-gulin-vs-leo-raquillet",
+        "players": "Leo Raquillet | Svyatoslav Gulin",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/svyatoslav-gulin-VS-leo-raquillet/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-benjamin-chelia-vs-samuel-alejandro-linde-palacios",
+        "players": "Samuel Alejandro Linde Palacios | Benjamin Chelia",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/benjamin-chelia-VS-samuel-alejandro-linde-palacios/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-ezequiel-monferrer-vs-amador-salazar",
+        "players": "Amador Salazar | Ezequiel Monferrer",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/ezequiel-monferrer-VS-amador-salazar/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-johan-alexander-rodriguez-vs-manuel-mouilleron-salvo",
+        "players": "Johan Alexander Rodriguez | Manuel Mouilleron Salvo",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/johan-alexander-rodriguez-rodriguez-VS-manuel-mouilleron-salvo/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-julian-cundom-vs-mateo-carballo",
+        "players": "Julian Cundom | Mateo Carballo",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/julian-cundom-VS-mateo-carballo/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-mateo-del-pino-vs-conner-huertas-del-pino",
+        "players": "Conner Huertas del Pino | Mateo Del Pino",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/mateo-del-pino-VS-conner-huertas-del-pino/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-samuel-heredia-vs-jose-gabriel-fernandez",
+        "players": "Samuel Heredia | Jose Gabriel Fernandez",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/samuel-heredia-VS-jose-gabriel-fernandez/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-san-miguel-de-tucuman-challenger-2026-santiago-giamichelle-vs-ignacio-monzon",
+        "players": "Ignacio Monzon | Santiago Giamichelle",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/santiago-giamichelle-VS-ignacio-monzon/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      }
+    ],
+    "missing_h2h_pair_rows": [
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-emerson-jones-vs-dalma-galfi",
+        "players": "Dalma Galfi | Emerson Jones",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/emerson-jones-VS-dalma-galfi/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-mingge-xu-vs-elizabeth-mandlik",
+        "players": "Elizabeth Mandlik | Mingge Xu",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/mingge-xu-VS-elizabeth-mandlik/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-eduardo-ribeiro-vs-santiago-de-la-fuente",
+        "players": "Eduardo Ribeiro | Santiago De la Fuente",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/eduardo-ribeiro-VS-santiago-de-la-fuente/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-facundo-mena-vs-lorenzo-joaquin-rodriguez",
+        "players": "Facundo Mena | Lorenzo Joaquin Rodriguez",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/facundo-mena-VS-lorenzo-joaquin-rodriguez/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-johan-alexander-rodriguez-vs-wilson-leite",
+        "players": "Johan Alexander Rodriguez | Wilson Leite",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/johan-alexander-rodriguez-rodriguez-VS-wilson-leite/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-juan-sebastian-gomez-vs-luciano-emanuel-ambrogi",
+        "players": "Juan Sebastian Gomez | Luciano Emanuel Ambrogi",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/juan-sebastian-gomez-VS-luciano-emanuel-ambrogi/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-karim-bennani-vs-santiago-rodriguez-taverna",
+        "players": "Karim Bennani | Santiago Rodriguez Taverna",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/karim-bennani-VS-santiago-fa-rodriguez-taverna/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-nicolas-villalon-vs-ezequiel-monferrer",
+        "players": "Nicol\u00e1s Villal\u00f3n | Ezequiel Monferrer",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/nicolas-villalon-VS-ezequiel-monferrer/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-santiago-giamichelle-vs-thiago-cigarran",
+        "players": "Santiago Giamichelle | Thiago Cigarran",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/santiago-giamichelle-VS-thiago-cigarran/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-birmingham-challenger-2026-otto-virtanen-vs-kamil-majchrzak",
+        "players": "Kamil Majchrzak | Otto Virtanen",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/otto-virtanen-VS-kamil-majchrzak/birmingham-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-lexus-ilkley-open-ilkley-2026-darja-vidmanova-vs-linda-fruhvirtova",
+        "players": "Darja Vidmanova | Linda Fruhvirtova",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/darja-vidmanova-VS-linda-fruhvirtova/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-08",
+        "match_id": "tl-2026-06-08-san-miguel-de-tucuman-challenger-2026-mateo-del-pino-vs-arklon-huertas-del-pino",
+        "players": "Arklon Huertas Del Pino | Mateo Del Pino",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/mateo-del-pino-VS-arklon-huertas-del-pino/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bad-rappenau-challenger-2026-luka-mikrut-vs-emilio-nava",
+        "players": "Emilio Nava | Luka Mikrut",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/luka-mikrut-VS-emilio-nava/bad-rappenau-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-akira-santillan-vs-marko-bekeni",
+        "players": "Akira Santillan | Marko Bekeni",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/akira-santillan-VS-marko-bekeni/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-carlo-alberto-caniato-vs-giuseppe-la-vela",
+        "players": "Carlo Alberto Caniato | Giuseppe La Vela",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/carlo-alberto-caniato-VS-giuseppe-la-vela/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-francesco-forti-vs-luca-castagnola",
+        "players": "Francesco Forti | Luca Castagnola",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/francesco-forti-VS-luca-castagnola/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-lucio-ratti-vs-filippo-mazzola",
+        "players": "Lucio Ratti | Filippo Mazzola",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/lucio-ratti-VS-filippo-mazzola/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-petr-nesterov-vs-michele-mecarelli",
+        "players": "Michele Mecarelli | Petr Nesterov",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/petr-nesterov-VS-michele-mecarelli/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lexus-birmingham-open-birmingham-2026-alexandra-eala-vs-nikola-bartunkova",
+        "players": "Alexandra Eala | Nikola Bartunkova",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/alexandra-eala-VS-nikola-bartunkova/lexus-birmingham-open-birmingham-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-alex-martinez-vs-nitin-kumar-sinha",
+        "players": "Alex Martinez | Nitin Kumar Sinha",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/alex-martinez-VS-nitin-kumar-sinha/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-max-alcala-gurri-vs-kenny-de-schepper",
+        "players": "Kenny De Schepper | Max Alcala Gurri",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/max-alcala-gurri-VS-kenny-de-schepper/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-makarska-open-makarska-2026-darja-semenistaja-vs-maria-timofeeva",
+        "players": "Darja Semenistaja | Maria Timofeeva",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/darja-semenistaja-VS-maria-timofeeva/makarska-open-makarska-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-open-delle-puglie-foggia-2026-leyre-romero-gormaz-vs-tyra-caterina-grant",
+        "players": "Leyre Romero Gormaz | Tyra Caterina Grant",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/leyre-romero-gormaz-VS-tyra-caterina-grant/open-delle-puglie-foggia-2026/",
+        "tournament_name": null
+      }
+    ],
+    "missing_replay_points": [
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-elvina-kalieva-vs-ashlyn-krueger",
+        "players": "Ashlyn Krueger | Elvina Kalieva",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/elvina-kalieva-VS-ashlyn-krueger/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-emerson-jones-vs-dalma-galfi",
+        "players": "Dalma Galfi | Emerson Jones",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/emerson-jones-VS-dalma-galfi/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-kayla-day-vs-mary-stoiana",
+        "players": "Kayla Day | Mary Stoiana",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/kayla-day-VS-mary-stoiana/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-lexus-ilkley-open-ilkley-2026-mingge-xu-vs-elizabeth-mandlik",
+        "players": "Elizabeth Mandlik | Mingge Xu",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/mingge-xu-VS-elizabeth-mandlik/lexus-ilkley-open-ilkley-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-benjamin-chelia-vs-tomas-martinez",
+        "players": "Tomas Martinez | Benjamin Chelia",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/benjamin-chelia-VS-tomas-martinez/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-eduardo-ribeiro-vs-santiago-de-la-fuente",
+        "players": "Eduardo Ribeiro | Santiago De la Fuente",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/eduardo-ribeiro-VS-santiago-de-la-fuente/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-facundo-mena-vs-lorenzo-joaquin-rodriguez",
+        "players": "Facundo Mena | Lorenzo Joaquin Rodriguez",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/facundo-mena-VS-lorenzo-joaquin-rodriguez/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-johan-alexander-rodriguez-vs-wilson-leite",
+        "players": "Johan Alexander Rodriguez | Wilson Leite",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/johan-alexander-rodriguez-rodriguez-VS-wilson-leite/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-juan-sebastian-gomez-vs-luciano-emanuel-ambrogi",
+        "players": "Juan Sebastian Gomez | Luciano Emanuel Ambrogi",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/juan-sebastian-gomez-VS-luciano-emanuel-ambrogi/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-karim-bennani-vs-santiago-rodriguez-taverna",
+        "players": "Karim Bennani | Santiago Rodriguez Taverna",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/karim-bennani-VS-santiago-fa-rodriguez-taverna/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-nicolas-villalon-vs-ezequiel-monferrer",
+        "players": "Nicol\u00e1s Villal\u00f3n | Ezequiel Monferrer",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/nicolas-villalon-VS-ezequiel-monferrer/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-samuel-heredia-vs-julian-cundom",
+        "players": "Julian Cundom | Samuel Heredia",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/samuel-heredia-VS-julian-cundom/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-santiago-giamichelle-vs-thiago-cigarran",
+        "players": "Santiago Giamichelle | Thiago Cigarran",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/santiago-giamichelle-VS-thiago-cigarran/san-miguel-de-tucuman-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-09",
+        "match_id": "tl-2026-06-09-the-hsbc-championships-london-2026-laura-siegemund-vs-francesca-jones",
+        "players": "Francesca Jones | Laura Siegemund",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/laura-siegemund-VS-francesca-jones/the-hsbc-championships-london-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bad-rappenau-challenger-2026-luka-mikrut-vs-emilio-nava",
+        "players": "Emilio Nava | Luka Mikrut",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/luka-mikrut-VS-emilio-nava/bad-rappenau-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-akira-santillan-vs-marko-bekeni",
+        "players": "Akira Santillan | Marko Bekeni",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/akira-santillan-VS-marko-bekeni/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-buvaysar-gadamauri-vs-matthew-william-donald",
+        "players": "Buvaysar Gadamauri | Matthew William Donald",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/buvaysar-gadamauri-VS-matthew-william-donald/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-daniel-michalski-vs-andrej-martin",
+        "players": "Andrej Martin | Daniel Michalski",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/daniel-michalski-VS-andrej-martin/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-bratislava-challenger-2026-martin-krumich-vs-viktor-durasovic",
+        "players": "Martin Krumich | Viktor Durasovic",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/martin-krumich-VS-viktor-durasovic/bratislava-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-aleksandr-braynin-vs-sergio-callejon-hernando",
+        "players": "Aleksandr Braynin | Sergio Callejon Hernando",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/aleksandr-braynin-VS-sergio-callejon-hernando/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-carlo-alberto-caniato-vs-giuseppe-la-vela",
+        "players": "Carlo Alberto Caniato | Giuseppe La Vela",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/carlo-alberto-caniato-VS-giuseppe-la-vela/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-francesco-forti-vs-luca-castagnola",
+        "players": "Francesco Forti | Luca Castagnola",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/francesco-forti-VS-luca-castagnola/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-gabriele-bosio-vs-gianmarco-ferrari",
+        "players": "Gabriele Bosio | Gianmarco Ferrari",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/gabriele-bosio-VS-gianmarco-ferrari/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-giovanni-oradini-vs-samuele-pieri",
+        "players": "Giovanni Oradini | Samuele Pieri",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/giovanni-oradini-VS-samuele-pieri/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-lorenzo-rottoli-vs-juan-cruz-martin-manzano",
+        "players": "Juan Cruz Martin Manzano | Lorenzo Rottoli",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/lorenzo-rottoli-VS-juan-cruz-martin-manzano/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-lucio-ratti-vs-filippo-mazzola",
+        "players": "Lucio Ratti | Filippo Mazzola",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/lucio-ratti-VS-filippo-mazzola/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-manuel-mazza-vs-lorenzo-carboni",
+        "players": "Lorenzo Carboni | Manuel Mazza",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/manuel-mazza-VS-lorenzo-carboni/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-cattolica-challenger-2026-petr-nesterov-vs-michele-mecarelli",
+        "players": "Michele Mecarelli | Petr Nesterov",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/petr-nesterov-VS-michele-mecarelli/cattolica-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-centurion-2-challenger-2026-philip-henning-vs-alexander-donski",
+        "players": "Alexander Donski | Philip Henning",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/philip-henning-VS-alexander-donski/centurion-2-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-french-open-paris-2026-flavio-cobolli-vs-alexander-zverev",
+        "players": "Alexander Zverev | Flavio Cobolli",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/flavio-cobolli-VS-alexander-zverev/french-open-paris-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lexus-birmingham-open-birmingham-2026-alexandra-eala-vs-nikola-bartunkova",
+        "players": "Alexandra Eala | Nikola Bartunkova",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/alexandra-eala-VS-nikola-bartunkova/lexus-birmingham-open-birmingham-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-alex-martinez-vs-nitin-kumar-sinha",
+        "players": "Alex Martinez | Nitin Kumar Sinha",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/alex-martinez-VS-nitin-kumar-sinha/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-andrea-baudel-vs-alejo-sanchez-quilez",
+        "players": "Alejo Sanchez Quilez | Andrea Baudel",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/andrea-baudel-VS-alejo-sanchez-quilez/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-david-jorda-sanchis-vs-benjamin-winter-lopez",
+        "players": "David Jorda Sanchis | Benjamin Winter Lopez",
+        "status": "completed",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/david-jorda-sanchis-VS-benjamin-winter-lopez/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-geoffrey-blancaneaux-vs-luca-staeheli",
+        "players": "Geoffrey Blancaneaux | Luca Staeheli",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/geoffrey-blancaneaux-VS-luca-staeheli/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-jules-fabre-vs-johan-nikles",
+        "players": "Johan Nikles | Jules Fabre",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/jules-fabre-VS-johan-nikles/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-lucas-poullain-vs-loann-massard",
+        "players": "Loann Massard | Lucas Poullain",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/lucas-poullain-VS-loann-massard/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-mariano-kestelboim-vs-iliyan-radulov",
+        "players": "Iliyan Radulov | Mariano Kestelboim",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/mariano-kestelboim-VS-iliyan-radulov/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-max-alcala-gurri-vs-kenny-de-schepper",
+        "players": "Kenny De Schepper | Max Alcala Gurri",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/max-alcala-gurri-VS-kenny-de-schepper/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-lyon-challenger-2026-maxime-janvier-vs-laurent-lokoli",
+        "players": "Laurent Lokoli | Maxime Janvier",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/maxime-janvier-VS-laurent-lokoli/lyon-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-makarska-open-makarska-2026-darja-semenistaja-vs-maria-timofeeva",
+        "players": "Darja Semenistaja | Maria Timofeeva",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/darja-semenistaja-VS-maria-timofeeva/makarska-open-makarska-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-open-delle-puglie-foggia-2026-leyre-romero-gormaz-vs-tyra-caterina-grant",
+        "players": "Leyre Romero Gormaz | Tyra Caterina Grant",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/wta/match/leyre-romero-gormaz-VS-tyra-caterina-grant/open-delle-puglie-foggia-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-prostejov-challenger-2026-sebastian-baez-vs-alex-molcan",
+        "players": "Alex Molcan | Sebastian Baez",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/sebastian-baez-VS-alex-molcan/prostejov-challenger-2026/",
+        "tournament_name": null
+      },
+      {
+        "match_date": "2026-06-07",
+        "match_id": "tl-2026-06-07-tyler-challenger-2026-adam-walton-vs-andre-ilagan",
+        "players": "Adam Walton | Andre Ilagan",
+        "status": "scheduled",
+        "tennislive_match_url": "https://www.tennislive.net/atp/match/adam-walton-VS-andre-ilagan/tyler-challenger-2026/",
+        "tournament_name": null
+      }
+    ],
+    "missing_summary": []
+  },
+  "generated_at": "2026-06-10T08:35:50.380416+00:00",
+  "limit": 200,
+  "scope": {
+    "end_date": "2026-06-09",
+    "start_date": "2026-06-07"
+  },
+  "script": "data-migration/scripts/audit_tennis_context_coverage.py",
+  "sql_path": "data-migration/contracts/tennis_canonical_audit_views.sql",
+  "summary": {
+    "canonicalMatches": 111,
+    "withAnyStatRows": 64,
+    "withFlashscoreStatRows": 0,
+    "withFormForBothPlayers": 56,
+    "withH2hPairRows": 88,
+    "withReplayGames": 67,
+    "withReplayPoints": 67,
+    "withResultSummary": 68,
+    "withSofascoreStatRows": 0,
+    "withSummary": 111,
+    "withTennisLiveStatRows": 64
+  }
+}

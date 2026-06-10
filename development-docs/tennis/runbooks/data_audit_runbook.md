@@ -218,6 +218,14 @@ npm run data:audit:tennis-entity-resolution -- \
   --markdown data-migration/reports/tennis_entity_resolution_YYYY-MM-DD.md
 ```
 
+Run context coverage readiness:
+
+```bash
+npm run data:audit:tennis-context-coverage -- \
+  --out data-migration/reports/tennis_context_coverage_YYYY-MM-DD.json \
+  --markdown data-migration/reports/tennis_context_coverage_YYYY-MM-DD.md
+```
+
 Export quarantine/review queues:
 
 ```bash
@@ -272,6 +280,7 @@ As of 2026-06-10:
 - Jun 7-9 readiness found 3 dates: Jun 7 and Jun 8 blocked, Jun 9 usable only with warnings.
 - Source freshness found 0 current-publish-ready dates across 91 dates, with 438 missing required date/source slots and 17 stale required source slots.
 - Entity resolution found 15 players missing registry rows, 41 duplicate match-player side groups globally, and 8 duplicate side groups in the Jun 7-9 scope.
+- Context coverage found 1,173 canonical matches with summaries, but only 224 with both-player form snapshots; in the Jun 7-9 scope, 64 of 111 canonical matches have stat rows and 56 have both-player form coverage.
 - Global settlement readiness found 776 prediction rows, 0 settled rows, and 0 settlement-ready rows.
 - Jun 7-9 quarantine queues contain 154 non-TennisLive matches, 72 prediction rows without a DB match, 68 TEN-T0 market-only prediction rows, 184 market identity gaps, and 56 duplicate market groups.
 - Guarded DB export previews block Jun 7, Jun 8, and Jun 9 from public publish; Jun 7/8 fail TEN-T0/value/source gates, and Jun 9 has no model run plus blocked source freshness.
