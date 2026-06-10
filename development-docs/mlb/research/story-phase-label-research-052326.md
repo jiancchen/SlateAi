@@ -14,10 +14,10 @@ This pass looks at the new label tables and asks a better question than `did the
 
 | Market label | Rows |
 | --- | --- |
-| expensive_favorite_failed | 15 |
-| underdog_beat_market | 26 |
-| favorite_held | 51 |
-| market_neutral | 36 |
+| expensive_favorite_failed | 14 |
+| underdog_beat_market | 23 |
+| favorite_held | 55 |
+| market_neutral | 40 |
 
 ## Phase Label Shapes
 
@@ -33,10 +33,10 @@ This pass looks at the new label tables and asks a better question than `did the
 
 | Label | Rows | Fav prob | Pick chaos | Opp chaos gap | Pick lineup | Pick lineup edge | Pick bullpen | Opp bullpen gap | Opp snapback gap |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| expensive_favorite_failed | 15 | 0.631 | 56.4 | 1.0 | 37.7 | 8.6 | 47.2 | -2.3 | 0.2 |
-| underdog_beat_market | 26 | 0.575 | 58.2 | 1.5 | 43.0 | 9.4 | 46.4 | 0.8 | 1.0 |
-| first5_cleaner | 14 | 0.571 | 55.7 | 4.8 | 38.5 | 6.1 | 46.0 | -0.2 | 13.1 |
-| full_game_cleaner | 29 | 0.559 | 54.6 | 5.5 | 43.6 | 10.0 | 46.0 | 2.7 | 10.0 |
+| expensive_favorite_failed | 14 | 0.629 | 56.5 | -0.0 | 37.6 | 10.4 | 47.9 | -3.6 | -7.3 |
+| underdog_beat_market | 23 | 0.576 | 56.0 | 3.6 | 42.4 | 9.6 | 45.6 | 1.7 | 0.7 |
+| first5_cleaner | 12 | 0.568 | 54.6 | 6.2 | 36.8 | 3.5 | 46.2 | -1.7 | 8.0 |
+| full_game_cleaner | 31 | 0.561 | 54.2 | 5.8 | 43.0 | 9.6 | 46.4 | 2.7 | 4.4 |
 
 ## Candidate Market Triggers
 
@@ -44,20 +44,20 @@ This pass looks at the new label tables and asks a better question than `did the
 
 | Rule | Games | Precision | Recall |
 | --- | --- | --- | --- |
-| Heavy favorite baseline | 37 | 0.405 | 1.000 |
-| Heavy favorite + lineup index <= 25 | 5 | 0.800 | 0.267 |
-| Heavy favorite + bullpen chaos >= 50 | 13 | 0.462 | 0.400 |
-| Heavy favorite + quiet first5 >= 50% | 13 | 0.385 | 0.333 |
+| Heavy favorite baseline | 36 | 0.389 | 1.000 |
+| Heavy favorite + lineup index <= 25 | 5 | 0.800 | 0.286 |
+| Heavy favorite + bullpen chaos >= 50 | 13 | 0.462 | 0.429 |
+| Heavy favorite + quiet first5 >= 50% | 13 | 0.385 | 0.357 |
 
 ### Underdog Beat Market
 
 | Rule | Games | Precision | Recall |
 | --- | --- | --- | --- |
-| Market dog baseline | 44 | 0.591 | 1.000 |
-| Dog + opponent chaos gap >= 8 | 14 | 0.857 | 0.462 |
-| Dog + opponent snapback gap >= 10 | 20 | 0.600 | 0.462 |
-| Dog + lineup edge >= 10 | 20 | 0.550 | 0.423 |
-| Dog + opponent bullpen gap >= 8 | 14 | 0.714 | 0.385 |
+| Market dog baseline | 37 | 0.622 | 1.000 |
+| Dog + opponent chaos gap >= 8 | 13 | 0.923 | 0.522 |
+| Dog + opponent snapback gap >= 10 | 17 | 0.706 | 0.522 |
+| Dog + lineup edge >= 10 | 16 | 0.625 | 0.435 |
+| Dog + opponent bullpen gap >= 8 | 11 | 0.727 | 0.348 |
 
 ## Read
 

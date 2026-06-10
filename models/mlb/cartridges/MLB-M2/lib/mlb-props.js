@@ -15,8 +15,22 @@ const mlbPropTypeConfig = {
     label: 'RBI',
     marketLabel: 'Over 0.5 RBI',
     bucket: 'production',
-    probabilityWeight: 0.8,
-    baseOffset: 12
+    probabilityWeight: 0.66,
+    baseOffset: 8
+  },
+  runs: {
+    label: 'Runs',
+    marketLabel: 'Over 0.5 runs',
+    bucket: 'production',
+    probabilityWeight: 0.72,
+    baseOffset: 10
+  },
+  hitRunRbi: {
+    label: 'H+R+RBI',
+    marketLabel: 'Over 1.5 H+R+RBI',
+    bucket: 'production',
+    probabilityWeight: 0.86,
+    baseOffset: 13
   },
   totalBases: {
     label: 'TB',
@@ -53,6 +67,8 @@ const trackedMlbPropTypeConfig = {
   singles: { minConfidence: 66, minSupport: 3, maxPerTeam: 1, maxPerGame: 3, priority: 5, minTrackingScore: 72 },
   walks: { minConfidence: 66, minSupport: 3, maxPerTeam: 1, maxPerGame: 2, priority: 4, minTrackingScore: 71 },
   rbi: { minConfidence: 71, minSupport: 4, maxPerTeam: 1, maxPerGame: 2, priority: 3, minTrackingScore: 76 },
+  runs: { minConfidence: 68, minSupport: 3, maxPerTeam: 1, maxPerGame: 2, priority: 4, minTrackingScore: 73 },
+  hitRunRbi: { minConfidence: 70, minSupport: 4, maxPerTeam: 2, maxPerGame: 4, priority: 7, minTrackingScore: 76 },
   hits: { disabled: true },
   homeRun: { disabled: true }
 }
@@ -566,6 +582,9 @@ const calibrateMlbPropConfidence = ({
   if (propType === 'homeRun' && Number(homeRunBoost?.target?.homeRunsLast7Days || 0) === 0) confidence -= 3
   if (propType === 'walks' && Number(hitter?.metrics?.patienceScore || 50) >= 66) confidence += 2
   if (propType === 'hits' && Number(hitter?.metrics?.contactScore || 50) >= 68) confidence += 2
+  if (propType === 'rbi') confidence = Math.min(confidence - 6, 68)
+  if (propType === 'runs') confidence = Math.min(confidence, 72)
+  if (propType === 'hitRunRbi') confidence += 3
 
   return Math.round(clamp(confidence, 18, 82))
 }
@@ -617,6 +636,8 @@ const buildPropScriptTags = ({
   if (repeatability.approachState?.approachLabel) tags.push(repeatability.approachState.approachLabel.replace(/[^a-z0-9]+/gi, '-').toLowerCase())
   if (propType === 'singles' && Number(hitter?.metrics?.contactScore || 50) >= 66) tags.push('contact-lane')
   if (propType === 'rbi' && Number(hitter?.slot || 9) <= 5) tags.push('run-production-slot')
+  if (propType === 'runs' && Number(hitter?.slot || 9) <= 3) tags.push('run-scoring-slot')
+  if (propType === 'hitRunRbi') tags.push('combined-production-lane')
   if (weatherProfile?.label && Number(weatherProfile.runBoostLate || 0) + Number(weatherProfile.runBoostFirst5 || 0) >= 0.08) {
     tags.push('weather-run-lift')
   }
@@ -790,6 +811,57 @@ const buildMlbPropCandidate = ({
     probability = 1 - Math.exp(-Math.max(expectedValue, 0))
     line = config.marketLabel
     statValueLabel = `${expectedValue.toFixed(2)} exp RBI`
+  } else if (propType === 'runs') {
+    const onBasePressure =
+      seasonHitRate * 0.46 +
+      seasonWalkRate * 0.32 +
+      clamp((Number(hitter.metrics.patienceScore || 50) - 42) / 260, 0, 0.08)
+    const teamRunPressure = clamp(Number(projectedRuns || 4.3) / 4.5, 0.72, 1.34)
+    expectedValue =
+      expectedPA *
+      onBasePressure *
+      formFactor *
+      matchupFactor *
+      teamRunPressure *
+      slotPressure *
+      overperformBoost
+    probability = 1 - Math.exp(-Math.max(expectedValue, 0))
+    line = config.marketLabel
+    statValueLabel = `${expectedValue.toFixed(2)} exp runs`
+  } else if (propType === 'hitRunRbi') {
+    const hittersAhead = Math.max(0, hitter.slot - 1)
+    const aheadTraffic = clamp(
+      0.92 +
+        hittersAhead * 0.035 +
+        ((Number(teamScript?.topThirdScore || 50) - 50) / 180) +
+        ((Number(teamScript?.middleScore || 50) - 50) / 240),
+      0.72,
+      1.36
+    )
+    const expectedHits = expectedPA * seasonHitRate * contactFactor * formFactor * matchupFactor * teamTrafficFactor * 0.98
+    const expectedRuns =
+      expectedPA *
+      (
+        (seasonHitRate + seasonWalkRate) * 0.28 +
+        Math.max(Number(hitter.statcastTrend?.rolling7Xwoba || 0), 0) * 0.1 +
+        (Number(teamScript?.topThirdScore || 50) / 100) * 0.05
+      ) *
+      matchupFactor *
+      clamp(Number(projectedRuns || 4.3) / 4.5, 0.72, 1.34) *
+      (hitter.slot <= 2 ? 1.1 : hitter.slot <= 5 ? 1.02 : 0.9)
+    const expectedRbis =
+      (Number(projectedRuns || 4.3) / 4.8) *
+      slotPressure *
+      powerFactor *
+      formFactor *
+      matchupFactor *
+      aheadTraffic *
+      overperformBoost *
+      0.82
+    expectedValue = expectedHits + expectedRuns + expectedRbis
+    probability = poissonProbabilityAtLeast(expectedValue, 1.5)
+    line = config.marketLabel
+    statValueLabel = `${expectedHits.toFixed(2)} H · ${expectedRuns.toFixed(2)} R · ${expectedRbis.toFixed(2)} RBI · ${expectedValue.toFixed(2)} total`
   }
 
   const confidence = calibrateMlbPropConfidence({
@@ -820,6 +892,8 @@ const buildMlbPropCandidate = ({
   if (propType === 'homeRun' && homeRunBoost.target) reasons.push(describeHomeRunPropLane(homeRunBoost.target))
   if (propType === 'walks' && starterWalkPressure > 0.05) reasons.push('starter walk pressure')
   if (propType === 'rbi' && hitter.slot <= 5) reasons.push('run-production slot')
+  if (propType === 'runs' && hitter.slot <= 3) reasons.push('run-scoring slot')
+  if (propType === 'hitRunRbi') reasons.push('combined hits/runs/RBI lane')
   if (propType === 'hits' || propType === 'singles') {
     if (Number(projectedProfile?.hitEfficiencyPct || 24) >= 25) reasons.push('clean traffic lane')
   }
@@ -900,7 +974,7 @@ const buildLegacyMlbPlayerProps = (game, analysis) => {
 
   const weatherProfile = analysis.mlbProjection?.weather || null
   const sunVisibilityProfile = analysis.mlbProjection?.sunVisibility || null
-  const propTypes = ['homeRun', 'rbi', 'totalBases', 'hits', 'walks', 'singles']
+  const propTypes = ['homeRun', 'hitRunRbi', 'runs', 'rbi', 'totalBases', 'hits', 'walks', 'singles']
   const targets = teamBoardEntries.flatMap(({ teamName, lineupTeam, teamScript, projectedRuns, projectedHits, projectedProfile, opposingStarter, lineupStatus }) =>
     (lineupTeam?.lineup || []).flatMap((hitter) =>
       propTypes
@@ -1076,6 +1150,20 @@ const buildTrackedPropSelection = (game, target) => {
     if ((target.reason || '').includes('run-production slot')) supportCount += 1
     if (Number(context.teamScript?.topThirdScore || 0) >= 60) supportCount += 1
     if (Number(target.expectedValue || 0) >= 0.9) trackingScore += 4
+  } else if (target.propType === 'runs') {
+    if (context.projectedRuns >= 4.6) supportCount += 1
+    if (context.projectedHits >= 8.4) supportCount += 1
+    if (Number(target.slot || 9) <= 3) supportCount += 1
+    if ((target.reason || '').includes('run-scoring slot')) supportCount += 1
+    if (Number(context.teamScript?.topThirdScore || 0) >= 58) supportCount += 1
+    if (Number(target.expectedValue || 0) >= 0.7) trackingScore += 3
+  } else if (target.propType === 'hitRunRbi') {
+    if (context.projectedRuns >= 4.4) supportCount += 1
+    if (context.projectedHits >= 8.2) supportCount += 1
+    if (Number(target.slot || 9) <= 6) supportCount += 1
+    if ((target.reason || '').includes('combined hits/runs/RBI lane')) supportCount += 1
+    if (Number(context.teamScript?.topThirdScore || 0) >= 56) supportCount += 1
+    if (Number(target.expectedValue || 0) >= 2.1) trackingScore += 4
   }
 
   if (calibration.overall?.hitRate !== null && calibration.overall?.hitRate !== undefined) {

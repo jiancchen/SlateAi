@@ -1,0 +1,1072 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "date": "2026-06-08",
+  "started_at": "2026-06-09T07:01:38.398259+00:00",
+  "finished_at": "2026-06-09T07:04:05.876239+00:00",
+  "player_urls": [],
+  "match_urls": [
+    "https://www.tennislive.net/atp/match/akira-santillan-VS-abdullah-shelbayh/bratislava-challenger-2026/",
+    "https://www.tennislive.net/atp/match/alex-martinez-VS-alejo-sanchez-quilez/lyon-challenger-2026/",
+    "https://www.tennislive.net/atp/match/andrea-guerrieri-VS-dalibor-svrcina/cattolica-challenger-2026/",
+    "https://www.tennislive.net/atp/match/andrej-martin-VS-alex-marti-pujolras/bratislava-challenger-2026/",
+    "https://www.tennislive.net/atp/match/august-holmgren-VS-nicolai-budkov-kjaer/ilkley-challenger-2026/",
+    "https://www.tennislive.net/atp/match/benjamin-chelia-VS-tomas-martinez/san-miguel-de-tucuman-challenger-2026/",
+    "https://www.tennislive.net/atp/match/buvaysar-gadamauri-VS-dimitar-kuzmanov/bratislava-challenger-2026/",
+    "https://www.tennislive.net/atp/match/carlo-alberto-caniato-VS-juan-cruz-martin-manzano/cattolica-challenger-2026/",
+    "https://www.tennislive.net/atp/match/carlos-sanchez-jover-VS-manuel-mazza/cattolica-challenger-2026/",
+    "https://www.tennislive.net/atp/match/dan-evans-VS-charles-broom/ilkley-challenger-2026/",
+    "https://www.tennislive.net/atp/match/daniel-evans-VS-charles-broom/ilkley-challenger-2026/",
+    "https://www.tennislive.net/atp/match/david-jorda-sanchis-VS-svyatoslav-gulin/lyon-challenger-2026/",
+    "https://www.tennislive.net/atp/match/eduardo-ribeiro-VS-santiago-de-la-fuente/san-miguel-de-tucuman-challenger-2026/",
+    "https://www.tennislive.net/atp/match/facundo-mena-VS-lorenzo-joaquin-rodriguez/san-miguel-de-tucuman-challenger-2026/",
+    "https://www.tennislive.net/atp/match/federico-cina-VS-marko-topo/bratislava-challenger-2026/",
+    "https://www.tennislive.net/atp/match/francesco-forti-VS-samuele-pieri/cattolica-challenger-2026/",
+    "https://www.tennislive.net/atp/match/harry-wendelken-VS-jack-pinnington-jones/ilkley-challenger-2026/",
+    "https://www.tennislive.net/atp/match/hugo-grenier-VS-luca-van-assche/lyon-challenger-2026/",
+    "https://www.tennislive.net/atp/match/hynek-barton-VS-nicolas-alvarez-varona/bratislava-challenger-2026/",
+    "https://www.tennislive.net/atp/match/johan-alexander-rodriguez-rodriguez-VS-wilson-leite/san-miguel-de-tucuman-challenger-2026/",
+    "https://www.tennislive.net/atp/match/juan-sebastian-gomez-VS-luciano-emanuel-ambrogi/san-miguel-de-tucuman-challenger-2026/",
+    "https://www.tennislive.net/atp/match/karim-bennani-VS-santiago-rodriguez-taverna/san-miguel-de-tucuman-challenger-2026/",
+    "https://www.tennislive.net/atp/match/kyrian-jacquet-VS-toby-samuel/ilkley-challenger-2026/",
+    "https://www.tennislive.net/atp/match/laslo-djere-VS-kimmer-coppejans/lyon-challenger-2026/",
+    "https://www.tennislive.net/atp/match/liam-broady-VS-ioannis-xilas/cattolica-challenger-2026/",
+    "https://www.tennislive.net/atp/match/lorenzo-giustino-VS-daniel-rincon/lyon-challenger-2026/",
+    "https://www.tennislive.net/atp/match/luca-staeheli-VS-iliyan-radulov/lyon-challenger-2026/",
+    "https://www.tennislive.net/atp/match/lucas-poullain-VS-raphael-perot/lyon-challenger-2026/",
+    "https://www.tennislive.net/atp/match/lucio-ratti-VS-sergio-callejon-hernando/cattolica-challenger-2026/",
+    "https://www.tennislive.net/atp/match/luka-pavlovic-VS-daniel-elahi-galan/lyon-challenger-2026/",
+    "https://www.tennislive.net/atp/match/lukas-neumayer-VS-taro-daniel/bratislava-challenger-2026/",
+    "https://www.tennislive.net/atp/match/mark-lajal-VS-paul-jubb/ilkley-challenger-2026/",
+    "https://www.tennislive.net/atp/match/martin-krumich-VS-mathys-erhard/bratislava-challenger-2026/",
+    "https://www.tennislive.net/atp/match/mateo-del-pino-VS-arklon-huertas-del-pino-cordova/san-miguel-de-tucuman-challenger-2026/",
+    "https://www.tennislive.net/atp/match/matteo-martineau-VS-maxime-janvier/lyon-challenger-2026/",
+    "https://www.tennislive.net/atp/match/max-alcala-gurri-VS-johan-nikles/lyon-challenger-2026/",
+    "https://www.tennislive.net/atp/match/michele-ribecai-VS-franco-agamenone/cattolica-challenger-2026/",
+    "https://www.tennislive.net/atp/match/nicolas-villalon-valdes-VS-ezequiel-monferrer/san-miguel-de-tucuman-challenger-2026/",
+    "https://www.tennislive.net/atp/match/norbert-gombos-VS-jan-choinski/bratislava-challenger-2026/",
+    "https://www.tennislive.net/atp/match/petr-nesterov-VS-gianmarco-ferrari/cattolica-challenger-2026/",
+    "https://www.tennislive.net/atp/match/pierluigi-basile-VS-raul-brancaccio/cattolica-challenger-2026/",
+    "https://www.tennislive.net/atp/match/rio-noguchi-VS-keegan-smith/ilkley-challenger-2026/",
+    "https://www.tennislive.net/atp/match/samuel-heredia-VS-julian-cundom/san-miguel-de-tucuman-challenger-2026/",
+    "https://www.tennislive.net/atp/match/santiago-giamichelle-VS-thiago-cigarran/san-miguel-de-tucuman-challenger-2026/",
+    "https://www.tennislive.net/atp/match/thanasi-kokkinakis-VS-marcelo-tomas-barrios-vera/bratislava-challenger-2026/",
+    "https://www.tennislive.net/atp/match/tristan-schoolkate-VS-lloyd-harris/ilkley-challenger-2026/",
+    "https://www.tennislive.net/atp/match/ugo-blanchet-VS-oliver-tarvet/ilkley-challenger-2026/",
+    "https://www.tennislive.net/atp/match/vitaliy-sachko-VS-yosuke-watanuki/bratislava-challenger-2026/",
+    "https://www.tennislive.net/wta/match/alicia-dudeney-VS-himeno-sakatsume/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/bianca-andreescu-VS-elise-mertens/libema-open-hertogenbosch-2026/",
+    "https://www.tennislive.net/wta/match/celine-naef-VS-momoko-kobori/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/daria-kasatkina-VS-robin-montgomery/libema-open-hertogenbosch-2026/",
+    "https://www.tennislive.net/wta/match/daria-snigur-VS-paula-badosa/libema-open-hertogenbosch-2026/",
+    "https://www.tennislive.net/wta/match/darja-vidmanova-VS-linda-fruhvirtova/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/ekaterina-alexandrova-VS-panna-udvardy/libema-open-hertogenbosch-2026/",
+    "https://www.tennislive.net/wta/match/ella-mcdonald-VS-ranah-akua-stoiber/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/elvina-kalieva-VS-ashlyn-krueger/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/emerson-jones-VS-dalma-galfi/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/harmony-tan-VS-emily-appleton/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/harriet-dart-VS-liudmila-samsonova/hsbc-championships-london-2026/",
+    "https://www.tennislive.net/wta/match/iryna-shymanovich-VS-clervie-ngounoue/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/jeline-vandromme-VS-angela-fita-boluda/modena-2026/",
+    "https://www.tennislive.net/wta/match/kaitlin-quevedo-VS-jazmin-ortenzi/modena-2026/",
+    "https://www.tennislive.net/wta/match/karolina-pliskova-VS-mccartney-kessler/hsbc-championships-london-2026/",
+    "https://www.tennislive.net/wta/match/katarzyna-kawa-VS-lisa-pigato/modena-2026/",
+    "https://www.tennislive.net/wta/match/katie-boulter-VS-leylah-fernandez/hsbc-championships-london-2026/",
+    "https://www.tennislive.net/wta/match/kayla-cross-VS-tereza-martincova/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/kayla-day-VS-mary-stoiana/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/laura-siegemund-VS-francesca-jones/hsbc-championships-london-2026/",
+    "https://www.tennislive.net/wta/match/linda-klimovicova-VS-sinja-kraus/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/magda-linette-VS-kimberly-birrell/libema-open-hertogenbosch-2026/",
+    "https://www.tennislive.net/wta/match/mananchaya-sawangkaew-VS-akasha-urhobo/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/martina-trevisan-VS-jennifer-ruggeri/modena-2026/",
+    "https://www.tennislive.net/wta/match/mia-pohankova-VS-clara-tauson/libema-open-hertogenbosch-2026/",
+    "https://www.tennislive.net/wta/match/mingge-xu-VS-elizabeth-mandlik/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/noma-noha-akugue-VS-tiantsoa-sarah-rakotomanga-rajaonah/modena-2026/",
+    "https://www.tennislive.net/wta/match/qinwen-zheng-VS-jaqueline-cristian/hsbc-championships-london-2026/",
+    "https://www.tennislive.net/wta/match/veronika-podrez-VS-tatiana-prozorova/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/viktorija-golubic-VS-daniella-britton/ilkley-challenger-2026/",
+    "https://www.tennislive.net/wta/match/xiyu-wang-VS-laura-samson/modena-2026/"
+  ],
+  "max_links": 0,
+  "max_matches": 0,
+  "fetch_status": {
+    "run_id": "source-fetch-tennislive-2026-06-08-2026-06-09T07-04-05-872926+00-00",
+    "status": "partial",
+    "completeness_status": "partial",
+    "player_attempts": 0,
+    "player_successes": 0,
+    "player_failures": 0,
+    "match_attempts": 80,
+    "match_successes": 39,
+    "match_failures": 41,
+    "attempted_pages": 80,
+    "successful_pages": 39,
+    "failed_pages": 41
+  },
+  "player_results": [],
+  "match_results": [
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/akira-santillan-VS-abdullah-shelbayh/bratislava-challenger-2026/",
+      "source_snapshot_id": "e1520db96d165e7210c2f13db70539bc47c2505e",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-lyon-challenger-2026-alejo-sanchez-quilez-vs-alex-martinez",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 59,
+      "stats": 16,
+      "replay_games": 17,
+      "replay_points": 109
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-cattolica-challenger-2026-andrea-guerrieri-vs-dalibor-svrcina",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 28,
+      "replay_points": 172
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-bratislava-challenger-2026-andrej-martin-vs-alex-marti-pujolras",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 27,
+      "replay_points": 176
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-ilkley-challenger-2026-august-holmgren-vs-nicolai-budkov-kjaer",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 19,
+      "replay_points": 108
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-benjamin-chelia-vs-tomas-martinez",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-bratislava-challenger-2026-buvaysar-gadamauri-vs-dimitar-kuzmanov",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 27,
+      "replay_points": 145
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-cattolica-challenger-2026-carlo-alberto-caniato-vs-juan-cruz-martin-manzano",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 4,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 22,
+      "replay_points": 140
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-cattolica-challenger-2026-carlos-sanchez-jover-vs-manuel-mazza",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 28,
+      "replay_points": 185
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/dan-evans-VS-charles-broom/ilkley-challenger-2026/",
+      "source_snapshot_id": "4b17fcbb92b2aa2279e3fdd4e9bedcb183f4885f",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-ilkley-challenger-2026-charles-broom-vs-daniel-evans",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 30,
+      "replay_points": 196
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-lyon-challenger-2026-svyatoslav-gulin-vs-david-jorda-sanchis",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 17,
+      "replay_points": 109
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-eduardo-ribeiro-vs-santiago-de-la-fuente",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 0,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-facundo-mena-vs-lorenzo-joaquin-rodriguez",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 0,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-bratislava-challenger-2026-federico-cina-vs-marko-topo",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 17,
+      "replay_points": 98
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-cattolica-challenger-2026-francesco-forti-vs-samuele-pieri",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 26,
+      "replay_points": 164
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-ilkley-challenger-2026-jack-pinnington-jones-vs-harry-wendelken",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 3,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 19,
+      "replay_points": 119
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-lyon-challenger-2026-luca-van-assche-vs-hugo-grenier",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 4,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 15,
+      "replay_points": 94
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-bratislava-challenger-2026-hynek-barton-vs-nicolas-alvarez-varona",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 8,
+      "replay_points": 39
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-johan-alexander-rodriguez-vs-wilson-leite",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 0,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-juan-sebastian-gomez-vs-luciano-emanuel-ambrogi",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 0,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/karim-bennani-VS-santiago-rodriguez-taverna/san-miguel-de-tucuman-challenger-2026/",
+      "source_snapshot_id": "147a98a0780f543632ab2fc6ce229ae9c5088530",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-ilkley-challenger-2026-toby-samuel-vs-kyrian-jacquet",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 59,
+      "stats": 16,
+      "replay_games": 30,
+      "replay_points": 186
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-lyon-challenger-2026-kimmer-coppejans-vs-laslo-djere",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 26,
+      "replay_points": 169
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-cattolica-challenger-2026-liam-broady-vs-ioannis-xilas",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 26,
+      "replay_points": 166
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-lyon-challenger-2026-daniel-rincon-vs-lorenzo-giustino",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 17,
+      "replay_points": 87
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-lyon-challenger-2026-luca-staeheli-vs-iliyan-radulov",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 19,
+      "replay_points": 142
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-lyon-challenger-2026-raphael-perot-vs-lucas-poullain",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 19,
+      "replay_points": 135
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-cattolica-challenger-2026-sergio-callejon-hernando-vs-lucio-ratti",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 59,
+      "stats": 16,
+      "replay_games": 30,
+      "replay_points": 185
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/luka-pavlovic-VS-daniel-elahi-galan/lyon-challenger-2026/",
+      "source_snapshot_id": "152d4e223cc0ceab74ec179cf71d8a32f70f3166",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/lukas-neumayer-VS-taro-daniel/bratislava-challenger-2026/",
+      "source_snapshot_id": "e190b69a2dcfbd54fcc0882e2a5e648c12c2c9a1",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-ilkley-challenger-2026-paul-jubb-vs-mark-lajal",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 34,
+      "replay_points": 205
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-bratislava-challenger-2026-martin-krumich-vs-mathys-erhard",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 26,
+      "replay_points": 148
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/mateo-del-pino-VS-arklon-huertas-del-pino-cordova/san-miguel-de-tucuman-challenger-2026/",
+      "source_snapshot_id": "e66d76011319856a9f43f7050c28e481e28459e7",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-lyon-challenger-2026-matteo-martineau-vs-maxime-janvier",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 3,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 29,
+      "replay_points": 174
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-lyon-challenger-2026-max-alcala-gurri-vs-johan-nikles",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 2,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 20,
+      "replay_points": 144
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-cattolica-challenger-2026-franco-agamenone-vs-michele-ribecai",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 30,
+      "replay_points": 181
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/nicolas-villalon-valdes-VS-ezequiel-monferrer/san-miguel-de-tucuman-challenger-2026/",
+      "source_snapshot_id": "245d0c1d8ecc1024c1c73a7a6177aaea7ad1b410",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-bratislava-challenger-2026-jan-choinski-vs-norbert-gombos",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 19,
+      "replay_points": 85
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-cattolica-challenger-2026-petr-nesterov-vs-gianmarco-ferrari",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 26,
+      "replay_points": 142
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-cattolica-challenger-2026-raul-brancaccio-vs-pierluigi-basile",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 25,
+      "replay_points": 144
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-ilkley-challenger-2026-keegan-smith-vs-rio-noguchi",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 27,
+      "replay_points": 147
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-samuel-heredia-vs-julian-cundom",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-09-san-miguel-de-tucuman-challenger-2026-santiago-giamichelle-vs-thiago-cigarran",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 0,
+      "form_chart_points": 60,
+      "stats": 0,
+      "replay_games": 0,
+      "replay_points": 0
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-bratislava-challenger-2026-thanasi-kokkinakis-vs-tomas-barrios-vera",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 20,
+      "replay_points": 130
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/tristan-schoolkate-VS-lloyd-harris/ilkley-challenger-2026/",
+      "source_snapshot_id": "538aa9632061db548dd5465a88239aa7e4b3f4c3",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "ok",
+      "match_id": "tl-2026-06-08-ilkley-challenger-2026-oliver-tarvet-vs-ugo-blanchet",
+      "skipped_existing": false,
+      "snapshot_already_seen": false,
+      "player_snapshots": 2,
+      "h2h_rows": 1,
+      "form_chart_points": 60,
+      "stats": 16,
+      "replay_games": 18,
+      "replay_points": 107
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/vitaliy-sachko-VS-yosuke-watanuki/bratislava-challenger-2026/",
+      "source_snapshot_id": "6866bec7411e835d3c0835a7c3f8c15cabf1d3aa",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/alicia-dudeney-VS-himeno-sakatsume/ilkley-challenger-2026/",
+      "source_snapshot_id": "bb9b5837e1b0792c14d59e26e5d53233ac7257d5",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/bianca-andreescu-VS-elise-mertens/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "9aff0a6573c530150a7792de711d874e9fcdf70b",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/celine-naef-VS-momoko-kobori/ilkley-challenger-2026/",
+      "source_snapshot_id": "f4365149843f687c11396fa32bdcdd6209b32f3a",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/daria-kasatkina-VS-robin-montgomery/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "b6feb6b52d147da17f72734e238b79f6f66b02da",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/daria-snigur-VS-paula-badosa/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "6b6c38e7ce10b345e4792ff6b9976aa4c9c2b8fd",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/darja-vidmanova-VS-linda-fruhvirtova/ilkley-challenger-2026/",
+      "source_snapshot_id": "0b660d29c2c3635ec1bbbbbafd7daa06e358f942",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/ekaterina-alexandrova-VS-panna-udvardy/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "ad76022a1ce4861056b8ad8d5ecbc3057b599daf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/ella-mcdonald-VS-ranah-akua-stoiber/ilkley-challenger-2026/",
+      "source_snapshot_id": "3bf4b2a8b6a8aa448817ba8362c8511fd02542e9",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/elvina-kalieva-VS-ashlyn-krueger/ilkley-challenger-2026/",
+      "source_snapshot_id": "082854853b16070ec5486dc8e496d3d952a55422",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/emerson-jones-VS-dalma-galfi/ilkley-challenger-2026/",
+      "source_snapshot_id": "0ca016c6014fa8808c469f37a3007c6e35d3cab8",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/harmony-tan-VS-emily-appleton/ilkley-challenger-2026/",
+      "source_snapshot_id": "68968dc54ec0b93459a616187498972c6926a0e0",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/harriet-dart-VS-liudmila-samsonova/hsbc-championships-london-2026/",
+      "source_snapshot_id": "4273cc58b11a527ae7105c085f8c32d1faed64a2",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/iryna-shymanovich-VS-clervie-ngounoue/ilkley-challenger-2026/",
+      "source_snapshot_id": "d5ca9038e275b2c92f624edf4c794c27cad8812b",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/jeline-vandromme-VS-angela-fita-boluda/modena-2026/",
+      "source_snapshot_id": "ecea10bb2082116278a52d1a18ebdfa866ab83d1",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/kaitlin-quevedo-VS-jazmin-ortenzi/modena-2026/",
+      "source_snapshot_id": "18ec64693bb4f4d7b4cdc851a48e16380c1acab6",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/karolina-pliskova-VS-mccartney-kessler/hsbc-championships-london-2026/",
+      "source_snapshot_id": "ae3e0d9e827c2b4bc3019214531bf8f163527841",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/katarzyna-kawa-VS-lisa-pigato/modena-2026/",
+      "source_snapshot_id": "18b1e109b1f1d3208e96742c3410e7fa83452eb0",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/katie-boulter-VS-leylah-fernandez/hsbc-championships-london-2026/",
+      "source_snapshot_id": "3a257380dafd6601f463e144119cb3f4dc3f10b5",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/kayla-cross-VS-tereza-martincova/ilkley-challenger-2026/",
+      "source_snapshot_id": "2f490c3c55fbadb30ed1cf5da80fe2b3b6c4bf2e",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/kayla-day-VS-mary-stoiana/ilkley-challenger-2026/",
+      "source_snapshot_id": "a32b9ed888a6d0512e5ac5ea7f0e8d28a1b03eeb",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/laura-siegemund-VS-francesca-jones/hsbc-championships-london-2026/",
+      "source_snapshot_id": "68c6c60216e9be3ed7d91467aa878dbf3e7c71d6",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/linda-klimovicova-VS-sinja-kraus/ilkley-challenger-2026/",
+      "source_snapshot_id": "0d72521755cb29cf725fc894eaabbbbf937de57e",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/magda-linette-VS-kimberly-birrell/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "4fd3d8f5df6852c41ba695b2b00bd7a58b758ee0",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/mananchaya-sawangkaew-VS-akasha-urhobo/ilkley-challenger-2026/",
+      "source_snapshot_id": "3d19f38fcd9cc2ccd3bbf34f7fa679d27e34376a",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/martina-trevisan-VS-jennifer-ruggeri/modena-2026/",
+      "source_snapshot_id": "5dc60ccbb4822d2d3ae20715ce60089a7d78a75d",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/mia-pohankova-VS-clara-tauson/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "6010b99883da3f6ba36d683dbabe183f032e663d",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/mingge-xu-VS-elizabeth-mandlik/ilkley-challenger-2026/",
+      "source_snapshot_id": "f3b1af5182c7875b48e58ba92b0dd7446ca534a4",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/noma-noha-akugue-VS-tiantsoa-sarah-rakotomanga-rajaonah/modena-2026/",
+      "source_snapshot_id": "df23848489f04490b68ebae85bdab2453f186ec6",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/qinwen-zheng-VS-jaqueline-cristian/hsbc-championships-london-2026/",
+      "source_snapshot_id": "58e20b840c6656961af1e728a0f77aa9d8bf838a",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/veronika-podrez-VS-tatiana-prozorova/ilkley-challenger-2026/",
+      "source_snapshot_id": "de932dc486a86f2b676b018a9806c7d38bed5eda",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/viktorija-golubic-VS-daniella-britton/ilkley-challenger-2026/",
+      "source_snapshot_id": "732fd7a46b9a8cffcd3405a278c4aa9836189b38",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/xiyu-wang-VS-laura-samson/modena-2026/",
+      "source_snapshot_id": "102db16a83ab200fe7e63e75f8241dc1d379937c",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "failures": [
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/akira-santillan-VS-abdullah-shelbayh/bratislava-challenger-2026/",
+      "source_snapshot_id": "e1520db96d165e7210c2f13db70539bc47c2505e",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/dan-evans-VS-charles-broom/ilkley-challenger-2026/",
+      "source_snapshot_id": "4b17fcbb92b2aa2279e3fdd4e9bedcb183f4885f",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/karim-bennani-VS-santiago-rodriguez-taverna/san-miguel-de-tucuman-challenger-2026/",
+      "source_snapshot_id": "147a98a0780f543632ab2fc6ce229ae9c5088530",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/luka-pavlovic-VS-daniel-elahi-galan/lyon-challenger-2026/",
+      "source_snapshot_id": "152d4e223cc0ceab74ec179cf71d8a32f70f3166",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/lukas-neumayer-VS-taro-daniel/bratislava-challenger-2026/",
+      "source_snapshot_id": "e190b69a2dcfbd54fcc0882e2a5e648c12c2c9a1",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/mateo-del-pino-VS-arklon-huertas-del-pino-cordova/san-miguel-de-tucuman-challenger-2026/",
+      "source_snapshot_id": "e66d76011319856a9f43f7050c28e481e28459e7",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/nicolas-villalon-valdes-VS-ezequiel-monferrer/san-miguel-de-tucuman-challenger-2026/",
+      "source_snapshot_id": "245d0c1d8ecc1024c1c73a7a6177aaea7ad1b410",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/tristan-schoolkate-VS-lloyd-harris/ilkley-challenger-2026/",
+      "source_snapshot_id": "538aa9632061db548dd5465a88239aa7e4b3f4c3",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/atp/match/vitaliy-sachko-VS-yosuke-watanuki/bratislava-challenger-2026/",
+      "source_snapshot_id": "6866bec7411e835d3c0835a7c3f8c15cabf1d3aa",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/alicia-dudeney-VS-himeno-sakatsume/ilkley-challenger-2026/",
+      "source_snapshot_id": "bb9b5837e1b0792c14d59e26e5d53233ac7257d5",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/bianca-andreescu-VS-elise-mertens/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "9aff0a6573c530150a7792de711d874e9fcdf70b",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/celine-naef-VS-momoko-kobori/ilkley-challenger-2026/",
+      "source_snapshot_id": "f4365149843f687c11396fa32bdcdd6209b32f3a",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/daria-kasatkina-VS-robin-montgomery/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "b6feb6b52d147da17f72734e238b79f6f66b02da",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/daria-snigur-VS-paula-badosa/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "6b6c38e7ce10b345e4792ff6b9976aa4c9c2b8fd",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/darja-vidmanova-VS-linda-fruhvirtova/ilkley-challenger-2026/",
+      "source_snapshot_id": "0b660d29c2c3635ec1bbbbbafd7daa06e358f942",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/ekaterina-alexandrova-VS-panna-udvardy/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "ad76022a1ce4861056b8ad8d5ecbc3057b599daf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/ella-mcdonald-VS-ranah-akua-stoiber/ilkley-challenger-2026/",
+      "source_snapshot_id": "3bf4b2a8b6a8aa448817ba8362c8511fd02542e9",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/elvina-kalieva-VS-ashlyn-krueger/ilkley-challenger-2026/",
+      "source_snapshot_id": "082854853b16070ec5486dc8e496d3d952a55422",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/emerson-jones-VS-dalma-galfi/ilkley-challenger-2026/",
+      "source_snapshot_id": "0ca016c6014fa8808c469f37a3007c6e35d3cab8",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/harmony-tan-VS-emily-appleton/ilkley-challenger-2026/",
+      "source_snapshot_id": "68968dc54ec0b93459a616187498972c6926a0e0",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/harriet-dart-VS-liudmila-samsonova/hsbc-championships-london-2026/",
+      "source_snapshot_id": "4273cc58b11a527ae7105c085f8c32d1faed64a2",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/iryna-shymanovich-VS-clervie-ngounoue/ilkley-challenger-2026/",
+      "source_snapshot_id": "d5ca9038e275b2c92f624edf4c794c27cad8812b",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/jeline-vandromme-VS-angela-fita-boluda/modena-2026/",
+      "source_snapshot_id": "ecea10bb2082116278a52d1a18ebdfa866ab83d1",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/kaitlin-quevedo-VS-jazmin-ortenzi/modena-2026/",
+      "source_snapshot_id": "18ec64693bb4f4d7b4cdc851a48e16380c1acab6",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/karolina-pliskova-VS-mccartney-kessler/hsbc-championships-london-2026/",
+      "source_snapshot_id": "ae3e0d9e827c2b4bc3019214531bf8f163527841",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/katarzyna-kawa-VS-lisa-pigato/modena-2026/",
+      "source_snapshot_id": "18b1e109b1f1d3208e96742c3410e7fa83452eb0",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/katie-boulter-VS-leylah-fernandez/hsbc-championships-london-2026/",
+      "source_snapshot_id": "3a257380dafd6601f463e144119cb3f4dc3f10b5",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/kayla-cross-VS-tereza-martincova/ilkley-challenger-2026/",
+      "source_snapshot_id": "2f490c3c55fbadb30ed1cf5da80fe2b3b6c4bf2e",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/kayla-day-VS-mary-stoiana/ilkley-challenger-2026/",
+      "source_snapshot_id": "a32b9ed888a6d0512e5ac5ea7f0e8d28a1b03eeb",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/laura-siegemund-VS-francesca-jones/hsbc-championships-london-2026/",
+      "source_snapshot_id": "68c6c60216e9be3ed7d91467aa878dbf3e7c71d6",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/linda-klimovicova-VS-sinja-kraus/ilkley-challenger-2026/",
+      "source_snapshot_id": "0d72521755cb29cf725fc894eaabbbbf937de57e",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/magda-linette-VS-kimberly-birrell/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "4fd3d8f5df6852c41ba695b2b00bd7a58b758ee0",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/mananchaya-sawangkaew-VS-akasha-urhobo/ilkley-challenger-2026/",
+      "source_snapshot_id": "3d19f38fcd9cc2ccd3bbf34f7fa679d27e34376a",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/martina-trevisan-VS-jennifer-ruggeri/modena-2026/",
+      "source_snapshot_id": "5dc60ccbb4822d2d3ae20715ce60089a7d78a75d",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/mia-pohankova-VS-clara-tauson/libema-open-hertogenbosch-2026/",
+      "source_snapshot_id": "6010b99883da3f6ba36d683dbabe183f032e663d",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/mingge-xu-VS-elizabeth-mandlik/ilkley-challenger-2026/",
+      "source_snapshot_id": "f3b1af5182c7875b48e58ba92b0dd7446ca534a4",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/noma-noha-akugue-VS-tiantsoa-sarah-rakotomanga-rajaonah/modena-2026/",
+      "source_snapshot_id": "df23848489f04490b68ebae85bdab2453f186ec6",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/qinwen-zheng-VS-jaqueline-cristian/hsbc-championships-london-2026/",
+      "source_snapshot_id": "58e20b840c6656961af1e728a0f77aa9d8bf838a",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/veronika-podrez-VS-tatiana-prozorova/ilkley-challenger-2026/",
+      "source_snapshot_id": "de932dc486a86f2b676b018a9806c7d38bed5eda",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/viktorija-golubic-VS-daniella-britton/ilkley-challenger-2026/",
+      "source_snapshot_id": "732fd7a46b9a8cffcd3405a278c4aa9836189b38",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "status": "failed",
+      "source_match_url": "https://www.tennislive.net/wta/match/xiyu-wang-VS-laura-samson/modena-2026/",
+      "source_snapshot_id": "102db16a83ab200fe7e63e75f8241dc1d379937c",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

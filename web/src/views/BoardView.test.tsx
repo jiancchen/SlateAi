@@ -142,9 +142,20 @@ describe('BoardView MLB value center', () => {
     expect(screen.getByText('Marlins @ Mets')).toBeTruthy()
   })
 
-  it('caps the overview board at unique-game min(10, slate size)', () => {
+  it('keeps the ML shape board limited to ML shape rows', () => {
     const props = createBaseProps()
-    const sideRows = Array.from({ length: 6 }, (_, index) => ({
+    const mlShapeRows = Array.from({ length: 4 }, (_, index) => ({
+      id: `ml-shape-${index + 1}`,
+      category: 'ml-shape',
+      gameId: `game-${index + 1}`,
+      title: `ML Shape ${index + 1}`,
+      subtitle: 'Full game',
+      priceLabel: '65% model | 55% market',
+      confidence: 70 - index,
+      sortEdge: 12 - index,
+      tags: ['ML shape']
+    }))
+    const sideRows = Array.from({ length: 2 }, (_, index) => ({
       id: `side-${index + 1}`,
       gameId: `game-${index + 1}`,
       title: `Side ${index + 1}`,
@@ -154,9 +165,9 @@ describe('BoardView MLB value center', () => {
       sortEdge: 20 - index,
       tags: ['Side']
     }))
-    const totalRows = Array.from({ length: 7 }, (_, index) => ({
+    const totalRows = Array.from({ length: 2 }, (_, index) => ({
       id: `total-${index + 1}`,
-      gameId: `game-${Math.min(index + 1, 6)}`,
+      gameId: `game-${index + 1}`,
       title: `Total ${index + 1}`,
       subtitle: 'Full game',
       priceLabel: 'Proj 8.0 vs 7.5',
@@ -164,19 +175,40 @@ describe('BoardView MLB value center', () => {
       sortEdge: 19 - index,
       tags: ['Total']
     }))
+    const first5MoneylineRows = [
+      {
+        id: 'f5-ml-1',
+        gameId: 'game-1',
+        title: 'F5 ML 1',
+        subtitle: 'Starter window',
+        metaLabel: 'Lead 55%',
+        priceLabel: 'Push 18%',
+        confidence: 55,
+        sortEdge: 0.8,
+        tags: ['F5 ML']
+      }
+    ]
 
     render(
       <BoardView
         {...props}
-        activeValueScope="mlb-overview"
-        availableValueScopes={[{ id: 'mlb-overview', label: 'Overview' }]}
+        activeValueScope="all"
+        availableValueScopes={[
+          { id: 'mlb-overview', label: 'ML shape' },
+          { id: 'mlb-totals', label: 'Totals' },
+          { id: 'mlb-first5', label: '1st 5' }
+        ]}
         mlbValueSummary={{
           totalGames: 6,
           fullyPostedGames: 3,
           partialGames: 3,
           mappedKalshiGames: 0,
+          mlShapeRows,
           sideRows,
           totalRows,
+          first5MoneylineRows,
+          first5TotalRows: [],
+          first5TotalResearchRows: [],
           totalBaseRows: [],
           tbBackedRows: [],
           tbSoftHeatRows: [],
@@ -199,13 +231,17 @@ describe('BoardView MLB value center', () => {
       />
     )
 
-    const heading = screen.getByRole('heading', { name: '2026-05-30 board map' })
+    const heading = screen.getByRole('heading', { name: '2026-05-30 moneyline shape' })
     const section = heading.closest('section')
     expect(section).toBeTruthy()
     const rows = within(section as HTMLElement).getAllByRole('button')
-    expect(rows).toHaveLength(6)
-    expect(within(section as HTMLElement).getByRole('button', { name: /Side 1/i })).toBeTruthy()
-    expect(within(section as HTMLElement).getByRole('button', { name: /Side 6/i })).toBeTruthy()
+    expect(rows).toHaveLength(4)
+    expect(within(section as HTMLElement).getByRole('button', { name: /ML Shape 1/i })).toBeTruthy()
+    expect(within(section as HTMLElement).queryByRole('button', { name: /Side 1/i })).toBe(null)
+    expect(within(section as HTMLElement).queryByRole('button', { name: /Total 1/i })).toBe(null)
+    expect(within(section as HTMLElement).queryByRole('button', { name: /F5 ML 1/i })).toBe(null)
+    expect(screen.getByRole('heading', { name: '2026-05-30 O/U runs' })).toBeTruthy()
+    expect(screen.getByRole('heading', { name: '2026-05-30 starter-window ML + O/U' })).toBeTruthy()
   })
 
   it('keeps first-five O/U rows research-only when the value gate is not validated', () => {

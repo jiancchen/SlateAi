@@ -74,9 +74,12 @@ const runMlbCartridge = (entry, extraArgs = [], modelId = currentModelId) => {
 const buildPostmortemPaths = (date) => {
   const [, month, day] = date.split('-')
   const stamp = `${month}${day}${date.slice(2, 4)}`
+  const monthLabel = new Date(`${date}T00:00:00Z`)
+    .toLocaleString('en-US', { month: 'short', timeZone: 'UTC' })
+    .toLowerCase()
   return {
-    postmortem: path.join(rootDir, 'development-docs', 'mlb', 'postmortems', `may${Number(day)}-slate-postmortem-${stamp}.md`),
-    followup: path.join(rootDir, 'development-docs', 'mlb', 'postmortems', `may${Number(day)}-chaos-followups-${stamp}.md`)
+    postmortem: path.join(rootDir, 'development-docs', 'mlb', 'postmortems', `${monthLabel}${Number(day)}-slate-postmortem-${stamp}.md`),
+    followup: path.join(rootDir, 'development-docs', 'mlb', 'postmortems', `${monthLabel}${Number(day)}-chaos-followups-${stamp}.md`)
   }
 }
 

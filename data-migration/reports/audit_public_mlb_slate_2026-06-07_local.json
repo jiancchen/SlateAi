@@ -2,7 +2,7 @@
   "audit": "public-mlb-slate",
   "date": "2026-06-07",
   "baseUrl": null,
-  "generatedAt": "2026-06-07T15:21:03.853Z",
+  "generatedAt": "2026-06-09T21:03:12.907Z",
   "summary": {
     "totalGames": 96,
     "mlbGames": 15,
@@ -491,16 +491,16 @@
     }
   ],
   "props": {
-    "total": 410,
+    "total": 445,
     "byType": {
-      "pitcherStrikeouts": 21,
-      "hits": 67,
-      "singles": 73,
-      "rbi": 101,
-      "totalBases": 96,
-      "walks": 52
+      "pitcherStrikeouts": 20,
+      "hits": 79,
+      "singles": 80,
+      "rbi": 105,
+      "totalBases": 98,
+      "walks": 63
     },
-    "pitcherStrikeoutDraftKings": 21,
+    "pitcherStrikeoutDraftKings": 20,
     "sources": [
       "typed MLB DB day-game loader",
       "models/mlb/app-model.js",
@@ -513,12 +513,12 @@
   },
   "valueBoard": {
     "moneylineRows": 15,
-    "first5MoneylineRows": 13,
+    "first5MoneylineRows": 14,
     "first5TotalRows": 15,
     "firstInningRows": 15,
     "fullGameTotalRows": 15,
-    "totalBaseRows": 96,
-    "pitcherStrikeoutRows": 21,
+    "totalBaseRows": 98,
+    "pitcherStrikeoutRows": 20,
     "gameCount": 15
   },
   "draftKingsLineCoverage": {

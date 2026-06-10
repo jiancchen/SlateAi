@@ -5,8 +5,8 @@
   "modelId": "TEN-T0",
   "slateDate": "2026-05-31",
   "status": "deployed",
-  "deployedAt": "2026-06-07T07:53:06.845Z",
-  "deploymentUrl": "https://slate-web-static-1-k2ora8qjd-jian-chens-projects-667dcf76.vercel.app",
+  "deployedAt": "2026-06-10T00:17:15.639Z",
+  "deploymentUrl": "https://slate-web-static-1-q9qph3ccx-jian-chens-projects-667dcf76.vercel.app",
   "webRoot": "web",
   "vercelProject": {
     "projectId": "prj_wKTGUqaCcDzyat6fBENE0ROnBWFL",
@@ -26,20 +26,21 @@
   },
   "staticArtifact": {
     "root": "web/dist",
-    "files": 1113,
-    "sha256": "c2530683233a8c1d3856ffa1e3d9b8ab637936255674b40f0b62d04e87106e3e"
+    "files": 1181,
+    "sha256": "29125dea6c625850b1b82ae30a3ed67d271511fb8c9a78303f47a7b8481ed5d8"
   },
   "publicData": {
     "currentSlate": {
-      "id": "2026-06-07",
-      "label": "June 7, 2026",
+      "id": "2026-06-09",
+      "label": "June 9, 2026",
       "status": "ready",
       "slateMeta": {
-        "date": "June 7, 2026",
-        "isoDate": "2026-06-07"
+        "date": "June 9, 2026",
+        "isoDate": "2026-06-09"
       },
       "summary": {
-        "totalGames": 81
+        "totalGames": 15,
+        "mlbGames": 15
       }
     },
     "slates": [
@@ -376,7 +377,8 @@
           "isoDate": "2026-06-06"
         },
         "summary": {
-          "totalGames": 15
+          "totalGames": 14,
+          "mlbGames": 14
         }
       },
       {
@@ -388,7 +390,34 @@
           "isoDate": "2026-06-07"
         },
         "summary": {
-          "totalGames": 81
+          "totalGames": 96,
+          "mlbGames": 15
+        }
+      },
+      {
+        "id": "2026-06-08",
+        "label": "June 8, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 8, 2026",
+          "isoDate": "2026-06-08"
+        },
+        "summary": {
+          "totalGames": 89,
+          "mlbGames": 8
+        }
+      },
+      {
+        "id": "2026-06-09",
+        "label": "June 9, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 9, 2026",
+          "isoDate": "2026-06-09"
+        },
+        "summary": {
+          "totalGames": 15,
+          "mlbGames": 15
         }
       }
     ],

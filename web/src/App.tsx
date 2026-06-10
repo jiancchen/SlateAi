@@ -15,6 +15,9 @@ import type {
   StoryTimelineEvent
 } from './lib/story-types'
 import { mlbPropPerformanceByDate } from './lib/history-prop-performance.generated'
+import { mlbBattingResultsRows } from './lib/mlb-batting-results.generated'
+import { mlbF5TeamTotalBackfillRows } from './lib/mlb-f5-team-total-backfill.generated'
+import { mlbFicDailyMatchupsByDate } from './lib/mlb-fic-daily-matchups.generated'
 import {
   loadHistoryArchiveData,
   loadModelHistoryData,
@@ -109,6 +112,14 @@ const confidenceTag = (confidence: number) => {
   return 'Watch confidence'
 }
 
+const slugify = (value = '') =>
+  String(value)
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+
 const payoffTag = (pricePct: number | null | undefined) => {
   if (!Number.isFinite(Number(pricePct))) return null
   const profitCents = Math.max(0, Math.round(100 - Number(pricePct)))
@@ -195,6 +206,17 @@ const buildTotalProbabilityPct = (projectedRunsInput: number, lineInput: number,
   if (lean.startsWith('over')) return roundToTenths(overProbability * 100)
   if (lean.startsWith('under')) return roundToTenths(underProbability * 100)
   return roundToTenths(Math.max(overProbability, underProbability) * 100)
+}
+
+const impliedPctFromAmericanOdds = (oddsInput: any) => {
+  const odds = Number(oddsInput)
+  if (!Number.isFinite(odds) || odds === 0) return null
+  return odds > 0 ? roundToTenths((100 / (odds + 100)) * 100) : roundToTenths((-odds / (-odds + 100)) * 100)
+}
+
+const averageNumeric = (values: any[]) => {
+  const numeric = values.map(Number).filter(Number.isFinite)
+  return numeric.length ? numeric.reduce((sum, value) => sum + value, 0) / numeric.length : null
 }
 
 const contractEvCents = (modelPctInput: number, askCentsInput: number) => {
@@ -408,6 +430,14 @@ const normalizeNameToken = (value = '') =>
     .replace(/[^a-z0-9]+/g, ' ')
     .trim()
 
+const nameInitialAndLastName = (value = '') => {
+  const parts = normalizeNameToken(value).split(/\s+/).filter(Boolean)
+  return {
+    initial: parts[0]?.[0] || '',
+    lastName: parts.at(-1) || ''
+  }
+}
+
 const batterTeamPromotionContext = (game: AnyRecord, sideKey: 'away' | 'home', teamName = '') => {
   const sideIndex = sideKey === 'away' ? 0 : 1
   const participants = Array.isArray(game?.moneyline?.participants) ? game.moneyline.participants : []
@@ -499,6 +529,69 @@ const teamSideForName = (game: AnyRecord, teamName = ''): 'away' | 'home' | null
   if (homeTitle && (homeTitle === normalizedTeamName || homeTitle.endsWith(normalizedTeamName) || normalizedTeamName.endsWith(homeTitle))) return 'home'
 
   return null
+}
+
+const opposingStarterNameForTeam = (game: AnyRecord, teamName = '') => {
+  const sideKey = teamSideForName(game, teamName)
+  if (!sideKey) return ''
+  const opponentSide = sideKey === 'away' ? 'home' : 'away'
+  const directPitcher = opponentSide === 'away' ? game?.awayPitcher : game?.homePitcher
+  const lineupPitcher = game?.lineupBoard?.[sideKey]?.opposingStarter ?? game?.lineupBoard?.[opponentSide]?.starter ?? null
+  return (
+    directPitcher?.fullName ||
+    directPitcher?.name ||
+    directPitcher?.displayName ||
+    lineupPitcher?.fullName ||
+    lineupPitcher?.name ||
+    lineupPitcher?.displayName ||
+    ''
+  )
+}
+
+const findFicDailyMatchup = (rows: AnyRecord[], playerName = '', pitcherName = '') => {
+  const playerParts = nameInitialAndLastName(playerName)
+  if (!playerParts.lastName) return null
+  const playerMatches = rows.filter((row) => {
+    const rowLastName = normalizeNameToken(row.playerLastName || row.playerName).split(/\s+/).at(-1) || ''
+    const rowInitial = String(row.playerInitial || nameInitialAndLastName(row.playerName).initial || '').toLowerCase()
+    return rowLastName === playerParts.lastName && (!playerParts.initial || !rowInitial || rowInitial === playerParts.initial)
+  })
+  if (!playerMatches.length) return null
+
+  const pitcherLastName = nameInitialAndLastName(pitcherName).lastName
+  if (pitcherLastName) {
+    const pitcherMatch = playerMatches.find((row) => {
+      const rowPitcherLastName = normalizeNameToken(row.pitcherLastName || row.pitcherName).split(/\s+/).at(-1) || ''
+      return rowPitcherLastName === pitcherLastName
+    })
+    if (pitcherMatch) return pitcherMatch
+  }
+
+  return playerMatches.length === 1 ? playerMatches[0] : null
+}
+
+const manuallyIdentifiedMikesBotdByDate: Record<string, string[]> = {
+  '2026-06-09': ['randy arozarena', 'trent grisham', 'otto lopez']
+}
+
+const invalidMlbPropIdentitiesByDate: Record<string, Array<{ player: string; team?: string; gameId?: string }>> = {
+  '2026-06-09': [
+    { player: 'willson contreras', team: 'red sox', gameId: 'red-sox-rays' }
+  ]
+}
+
+const isInvalidMlbPropIdentity = (date: string, prop: AnyRecord) => {
+  const invalidRows = invalidMlbPropIdentitiesByDate[date] || []
+  if (!invalidRows.length) return false
+  const playerName = normalizeNameToken(prop.playerName || prop.title || '')
+  const teamName = normalizeNameToken(prop.teamName || prop.teamNameFull || prop.team || '')
+  const gameId = String(prop.gameId || prop.game?.id || '')
+  return invalidRows.some((row) => {
+    if (normalizeNameToken(row.player) !== playerName) return false
+    if (row.team && normalizeNameToken(row.team) !== teamName) return false
+    if (row.gameId && row.gameId !== gameId) return false
+    return true
+  })
 }
 
 const batterPropContextWarnings = (game: AnyRecord, teamName = '') => {
@@ -2712,6 +2805,10 @@ function App() {
     })
     return byGamePk
   }, [activeDayId, loadedMlbResultsByDay])
+  const activeMlbResultRows = useMemo(
+    () => (Array.isArray(loadedMlbResultsByDay[activeDayId]) ? loadedMlbResultsByDay[activeDayId] as AnyRecord[] : []),
+    [activeDayId, loadedMlbResultsByDay]
+  )
 
   const selectedGameDetail = loadedGameDetailsByDay[activeDayId]?.[selectedGameId] ?? null
   const selectedGame =
@@ -2969,6 +3066,10 @@ function App() {
 
   const efficientFavoritePicks = useMemo(() => rankEfficientFavoritePicks(games), [games])
   const flipRiskPicks = useMemo(() => rankFlipRiskPicks(games), [games])
+  const activeFicDailyMatchupRows = useMemo(
+    () => (Array.isArray((mlbFicDailyMatchupsByDate as AnyRecord)[activeDayIsoDate]) ? (mlbFicDailyMatchupsByDate as AnyRecord)[activeDayIsoDate] as AnyRecord[] : []),
+    [activeDayIsoDate]
+  )
   const mlbPlayerProps = useMemo(() => {
     const fromApi = Object.values(activePropBoardByGame).flatMap((board: AnyRecord) => board?.targets ?? [])
     if (fromApi.length) {
@@ -3140,10 +3241,11 @@ function App() {
                 sortConfidence: confidence,
                 sortEdge: Math.abs(Number(phase.lean.edge) || 0),
                 priceLabel: phase.projectedLabel,
-                metaLabel: phase.lean.strength,
+                metaLabel: `${phase.lean.strength || 'Model'} | ${confidence}% model`,
                 summary: phase.lean.summary,
                 tags: [
                   phase.label,
+                  `${confidence}% model`,
                   phase.lean.chaosGate?.warning ? 'Chaos checked' : null,
                   totals.bullpenExhaustionNote ? 'Bullpen live' : 'Model total'
                 ].filter(Boolean).slice(0, 3),
@@ -3329,11 +3431,97 @@ function App() {
         const eventState = getEventState(prop.game, activeDayIsoDate, pacificClock)
         const propType = String(prop.propType || '')
         const isBatterFacingProp = prop.league === 'MLB' && propType !== 'pitcherStrikeouts'
+        const isCombinedHrrProp = ['hitRunRbi', 'hitsRunsRbis'].includes(propType)
         const isPostedBatterProp = !isBatterFacingProp || prop.lineupStatus === 'posted'
+        const invalidPlayerTeamIdentity = isInvalidMlbPropIdentity(activeDayIsoDate, prop)
+        const opposingStarterName =
+          isCombinedHrrProp
+            ? opposingStarterNameForTeam(prop.game, prop.teamName || prop.teamNameFull || prop.team || '')
+            : ''
+        const ficDailyMatchup =
+          isCombinedHrrProp
+            ? findFicDailyMatchup(activeFicDailyMatchupRows, prop.playerName || prop.title || '', opposingStarterName)
+            : null
+        const ficHrrCleanPass = Boolean(ficDailyMatchup?.matchupPass)
+        const derivedHrrFilters = isCombinedHrrProp
+          ? (() => {
+              const sideKey = teamSideForName(prop.game, prop.teamName || prop.teamNameFull || prop.team || '')
+              if (!sideKey) return null
+              const teamContext = batterTeamPromotionContext(prop.game, sideKey, prop.teamName || prop.teamNameFull || prop.team || '')
+              const projectedTeamFullGameResult =
+                teamContext.teamMarketImpliedPct !== null &&
+                teamContext.opponentMarketImpliedPct !== null
+                  ? teamContext.teamMarketImpliedPct < teamContext.opponentMarketImpliedPct
+                    ? 'loss'
+                    : 'win'
+                  : null
+              const recentAtBats =
+                finiteValueOrNull(prop.valueBoardFilters?.recentAtBats) ??
+                finiteValueOrNull(prop.sample?.recentAtBats) ??
+                finiteValueOrNull(prop.sample?.recentPlateAppearances) ??
+                finiteValueOrNull(prop.sample?.seasonAtBats) ??
+                finiteValueOrNull(prop.sample?.seasonPlateAppearances) ??
+                null
+
+              return {
+                projectedTeamFullGameResult,
+                teamMarketImpliedPct: teamContext.teamMarketImpliedPct,
+                opponentMarketImpliedPct: teamContext.opponentMarketImpliedPct,
+                recentAtBats,
+                opposingStarterName,
+                ficDailyMatchup: ficDailyMatchup
+                  ? {
+                      playerName: ficDailyMatchup.playerName,
+                      pitcherName: ficDailyMatchup.pitcherName,
+                      recentOps: ficDailyMatchup.recentOps,
+                      bvpAtBats: ficDailyMatchup.bvpAtBats,
+                      bvpAvg: ficDailyMatchup.bvpAvg,
+                      bvpObp: ficDailyMatchup.bvpObp,
+                      bvpOps: ficDailyMatchup.bvpOps,
+                      matchupPass: ficDailyMatchup.matchupPass
+                    }
+                  : null,
+                ficHrrCleanPass,
+                ficHrrCleanGateRequired: activeFicDailyMatchupRows.length > 0,
+                hrrCleanBoardFiltered:
+                  projectedTeamFullGameResult !== 'win' ||
+                  recentAtBats === null ||
+                  recentAtBats < 30,
+                mikesBotdFiltered:
+                  projectedTeamFullGameResult !== 'win' ||
+                  recentAtBats === null ||
+                  recentAtBats < 30 ||
+                  (activeFicDailyMatchupRows.length > 0 && !ficHrrCleanPass)
+              }
+            })()
+          : null
+        const valueBoardFilters =
+          isCombinedHrrProp
+            ? {
+                ...(derivedHrrFilters || {}),
+                ...(prop.valueBoardFilters || {})
+              }
+            : prop.valueBoardFilters
         const propContextWarnings =
           isBatterFacingProp
             ? batterPropContextWarnings(prop.game, prop.teamName || prop.teamNameFull || prop.team || '')
             : []
+        const propValueBoardWarnings =
+          isCombinedHrrProp && valueBoardFilters?.hrrCleanBoardFiltered
+            ? [
+                'Clean H+R+RBI filter: requires projected ML win, 70%+ confidence, and 30+ AB'
+              ].filter(Boolean)
+            : []
+        const ficDailyMatchupLabel =
+          isCombinedHrrProp && valueBoardFilters?.ficDailyMatchup
+            ? `FIC BvP ${valueBoardFilters.ficDailyMatchup.bvpAtBats ?? '?'} AB / ${formatSlashMetric(valueBoardFilters.ficDailyMatchup.bvpAvg)} AVG / ${formatSlashMetric(valueBoardFilters.ficDailyMatchup.bvpOps)} OPS`
+            : ''
+        const identityWarnings = invalidPlayerTeamIdentity ? ['Invalid player/team identity in prop feed'] : []
+        const contextWarnings = [...identityWarnings, ...propContextWarnings, ...propValueBoardWarnings]
+        const valueBoardResultLabel =
+          isCombinedHrrProp && valueBoardFilters?.actualTeamFullGameResult
+            ? `Result ML ${String(valueBoardFilters?.actualTeamFullGameResult || 'pending').toUpperCase()}`
+            : ''
         return {
           id: prop.id,
           category: 'props',
@@ -3350,21 +3538,22 @@ function App() {
           sortEdge: Number(prop.expectedValue) || Number(prop.probability) || 0,
           priceLabel: prop.statValueLabel,
           metaLabel: `${prop.probability}% model`,
-          summary: prop.reason || prop.matchupNote,
-          tags: [prop.recommendationTier, prop.propLabel, prop.shadowSupportTag, isPostedBatterProp ? prop.lineupStatus : 'Projected lineup withheld', propContextWarnings[0]].filter(Boolean).slice(0, 4),
-          contextWarnings: propContextWarnings,
-          invalid: eventState.invalid || !isPostedBatterProp,
+          summary: [prop.reason || prop.matchupNote, valueBoardResultLabel, ficDailyMatchupLabel].filter(Boolean).join(' | '),
+          tags: [prop.recommendationTier, prop.propLabel, prop.shadowSupportTag, isPostedBatterProp ? prop.lineupStatus : 'Projected lineup withheld', contextWarnings[0]].filter(Boolean).slice(0, 4),
+          contextWarnings,
+          invalid: eventState.invalid || !isPostedBatterProp || invalidPlayerTeamIdentity,
           statusLabel: isPostedBatterProp ? eventState.label : 'Projected lineup',
           tone: isPostedBatterProp ? eventState.tone : 'warning',
           selected: Boolean(selectedProps[prop.id]),
           raw: {
             ...prop,
+            valueBoardFilters,
             lineupGated: !isPostedBatterProp,
-            contextWarnings: propContextWarnings
+            contextWarnings
           }
         }
       }),
-    [activeDayIsoDate, mlbPlayerProps, pacificClock, selectedProps]
+    [activeDayIsoDate, activeFicDailyMatchupRows, mlbPlayerProps, pacificClock, selectedProps]
   )
 
   const allBuilderEntries = useMemo(
@@ -3585,6 +3774,166 @@ function App() {
   const mlbValueSummary = useMemo(() => {
     const mlbGames = games.filter((game: AnyRecord) => game.league === 'MLB')
     if (!mlbGames.length) return null
+    const shadowSeedWindow = '2026-06-06..2026-06-08'
+    const resultLabel = (hit: boolean | null | undefined) =>
+      hit === true ? 'Hit' : hit === false ? 'Miss' : 'Ungraded'
+    const resultTone = (hit: boolean | null | undefined) =>
+      hit === true ? 'hit' : hit === false ? 'miss' : ''
+    const resultFromHit = (hit: boolean | null | undefined, detail: AnyRecord = {}) =>
+      hit === true || hit === false
+        ? {
+            ...detail,
+            hit,
+            label: resultLabel(hit),
+            tone: resultTone(hit)
+          }
+        : null
+    const resultFromPush = (detail: AnyRecord = {}) => ({
+      ...detail,
+      hit: null,
+      label: 'Push',
+      tone: 'push'
+    })
+    const buildShadowCalibration = ({
+      tier,
+      lane,
+      modelConfidence,
+      calibratedScore,
+      reasons,
+      cautions = ['Small sample: June 6-8 seed window only.'],
+      evidence
+    }: AnyRecord) => ({
+      mode: 'shadow',
+      tier,
+      lane,
+      potdEligible: tier === 'promoted',
+      calibratedScore: Math.round(Number(calibratedScore) || Number(modelConfidence) || 0),
+      modelConfidence: Math.round(Number(modelConfidence) || 0),
+      reasons: (reasons || []).filter(Boolean),
+      cautions: (cautions || []).filter(Boolean),
+      evidence: {
+        seedWindow: shadowSeedWindow,
+        ...(evidence || {})
+      }
+    })
+    const shadowTierRank = (row: AnyRecord) => {
+      const tier = String(row?.shadowCalibration?.tier || row?.raw?.shadowCalibration?.tier || '').toLowerCase()
+      if (tier === 'promoted') return 3
+      if (tier === 'watch') return 2
+      if (tier === 'research') return 1
+      return 0
+    }
+    const sortByShadowCalibration = (left: AnyRecord, right: AnyRecord) =>
+      shadowTierRank(right) - shadowTierRank(left) ||
+      Number(right.shadowCalibration?.calibratedScore || 0) - Number(left.shadowCalibration?.calibratedScore || 0) ||
+      Number(right.sortConfidence ?? right.confidence ?? 0) - Number(left.sortConfidence ?? left.confidence ?? 0) ||
+      Number(right.sortEdge || 0) - Number(left.sortEdge || 0)
+    const resultByMatchupMarket = new Map<string, AnyRecord>()
+    const playerPropResultByKey = new Map<string, AnyRecord>()
+    activeMlbResultRows.forEach((row: AnyRecord) => {
+      const matchupKey = normalizeNameToken(row.matchup || '')
+      const marketType = String(row.marketType || '')
+      if (matchupKey && marketType) resultByMatchupMarket.set(`${matchupKey}:${marketType}`, row)
+      if (marketType === 'playerProp') {
+        const propKey = [
+          matchupKey,
+          normalizeNameToken(row.playerName || ''),
+          String(row.propType || ''),
+          normalizeNameToken(row.marketLabel || row.predictedPick || '')
+        ].join(':')
+        playerPropResultByKey.set(propKey, row)
+      }
+    })
+    const marketResultFor = (game: AnyRecord, marketType: string) => {
+      const direct = resultByMatchupMarket.get(`${normalizeNameToken(game?.title || '')}:${marketType}`)
+      if (direct) return direct
+      const awayName = game?.matchup?.[0]?.name || ''
+      const homeName = game?.matchup?.[1]?.name || ''
+      return activeMlbResultRows.find((row: AnyRecord) => {
+        if (String(row.marketType || '') !== marketType) return false
+        return (
+          namesLikelyMatch(row.awayTeam || '', awayName) &&
+          namesLikelyMatch(row.homeTeam || '', homeName)
+        ) || (
+          namesLikelyMatch(row.matchup || '', game?.title || '')
+        )
+      }) || null
+    }
+    const playerPropResultFor = (row: AnyRecord) => {
+      const raw = row.raw || {}
+      const propKey = [
+        normalizeNameToken(row.subtitle || raw.gameTitle || raw.game?.title || ''),
+        normalizeNameToken(raw.playerName || row.title || ''),
+        String(raw.propType || ''),
+        normalizeNameToken(raw.marketLabel || '')
+      ].join(':')
+      return playerPropResultByKey.get(propKey) || null
+    }
+    const typedOutcomeFor = (game: AnyRecord) => {
+      const gamePk = Number(game?.gamePk)
+      const gameId = String(game?.id || '')
+      return activeMlbResultRows.find((row: AnyRecord) => {
+        if (String(row.marketType || '')) return false
+        if (Number.isFinite(gamePk) && Number(row.gamePk) === gamePk) return true
+        return namesLikelyMatch(row.sqlGameId || '', gameId) ||
+          (
+            namesLikelyMatch(row.awayTeam || '', game?.matchup?.[0]?.name || '') &&
+            namesLikelyMatch(row.homeTeam || '', game?.matchup?.[1]?.name || '')
+          )
+      }) || null
+    }
+    const typedOutcomeResultFor = (game: AnyRecord) => {
+      const outcome = typedOutcomeFor(game)
+      const awayRunsFinal = finiteValueOrNull(outcome?.awayRuns)
+      const homeRunsFinal = finiteValueOrNull(outcome?.homeRuns)
+      if (awayRunsFinal === null || homeRunsFinal === null) return null
+      const awayRunsFirst5 = finiteValueOrNull(outcome?.awayRunsFirst5)
+      const homeRunsFirst5 = finiteValueOrNull(outcome?.homeRunsFirst5)
+      const actualWinner =
+        awayRunsFinal > homeRunsFinal
+          ? outcome?.awayTeam
+          : homeRunsFinal > awayRunsFinal
+            ? outcome?.homeTeam
+            : ''
+      const actualFirst5Winner =
+        awayRunsFirst5 !== null && homeRunsFirst5 !== null
+          ? awayRunsFirst5 > homeRunsFirst5
+            ? outcome?.awayTeam
+            : homeRunsFirst5 > awayRunsFirst5
+              ? outcome?.homeTeam
+              : 'Push'
+          : ''
+      return {
+        actualWinner,
+        actualFirst5Winner,
+        awayRunsFinal,
+        homeRunsFinal,
+        awayRunsFirst5,
+        homeRunsFirst5,
+        starterPitchers: Array.isArray(outcome?.starterPitchers) ? outcome.starterPitchers : []
+      }
+    }
+    const rowSelectionName = (row: AnyRecord) =>
+      String(row.raw?.selection || row.raw?.participant?.name || row.participant?.name || row.title || '')
+        .replace(/\bF5\s+ML\b/gi, '')
+        .replace(/\bmoneyline\b/gi, '')
+        .trim()
+    const battingResultByPlayer = new Map<string, AnyRecord>()
+    ;(mlbBattingResultsRows as AnyRecord[])
+      .filter((row: AnyRecord) => row.date === activeDayIsoDate)
+      .forEach((row: AnyRecord) => {
+        const playerKey = normalizeNameToken(row.playerName || '')
+        if (!playerKey) return
+        battingResultByPlayer.set(playerKey, row)
+        battingResultByPlayer.set(`${normalizeNameToken(row.gameTitle || '')}:${playerKey}`, row)
+      })
+    const battingResultFor = (row: AnyRecord) => {
+      const playerKey = normalizeNameToken(row.playerName || row.raw?.playerName || row.title || '')
+      const gameKey = normalizeNameToken(
+        row.gameTitle || row.raw?.gameTitle || row.summary?.split(' · ')?.[0] || row.subtitle || row.raw?.game?.title || ''
+      )
+      return battingResultByPlayer.get(`${gameKey}:${playerKey}`) || battingResultByPlayer.get(playerKey) || null
+    }
     const hrScoreBandRank = (band: string) => {
       if (band === 'premium') return 3
       if (band === 'strong') return 2
@@ -3604,6 +3953,8 @@ function App() {
     const first5MoneylineRows: AnyRecord[] = []
     const first5TotalRows: AnyRecord[] = []
     const first5TotalResearchRows: AnyRecord[] = []
+    const teamTotalRows: AnyRecord[] = []
+    const pitcherEarnedRunRows: AnyRecord[] = []
 
     mlbGames.forEach((game: AnyRecord) => {
       const projection = game.analysis?.mlbProjection ?? {}
@@ -3613,6 +3964,13 @@ function App() {
 
       const participants = Array.isArray(game.moneyline?.participants) ? game.moneyline.participants : []
       const eventState = getEventState(game, activeDayIsoDate, pacificClock)
+      const awayFullRuns = Number(projection.awayProjectedRuns)
+      const homeFullRuns = Number(projection.homeProjectedRuns)
+      const awayLateRuns = Number(projection.awayLateProjectedRuns)
+      const homeLateRuns = Number(projection.homeLateProjectedRuns)
+      const matrixAnchors = game.stateContext?.inningRunMatrix?.marketAnchors ?? null
+      const teamRunAnchors = matrixAnchors?.teamRuns ?? {}
+      const pitcherAnchors = matrixAnchors?.pitchers ?? {}
       const leadProbabilities = buildFirst5LeadProbabilities(awayFirst5Runs, homeFirst5Runs)
       const pickIndex = homeFirst5Runs >= awayFirst5Runs ? 1 : 0
       const participant =
@@ -3636,6 +3994,38 @@ function App() {
       const tieRiskLabel = tieRisk === 'high' ? 'Tie risk high' : tieRisk === 'watch' ? 'Tie risk watch' : null
 
       if (participant && Math.abs(runEdge) >= 0.15) {
+        const absoluteRunEdge = Math.abs(runEdge)
+        const f5MlPromoted = absoluteRunEdge >= 0.5 && leadProbabilities.tiePct < 20 && leadPct >= 52
+        const f5MlStrongEdge = absoluteRunEdge >= 1.5
+        const f5MlEvidenceBucket = f5MlStrongEdge
+          ? 'F5 ML edge >=1.5, confidence >=52, and tie <20'
+          : 'F5 ML edge 0.5-1.49, confidence >=52, and tie <20'
+        const f5MlShadowCalibration = buildShadowCalibration({
+          tier: f5MlPromoted ? 'promoted' : 'watch',
+          lane: 'f5-ml',
+          modelConfidence: f5Confidence,
+          calibratedScore:
+            f5Confidence +
+            (f5MlPromoted ? 8 : 0) +
+            Math.min(absoluteRunEdge, 2.2) * 4 -
+            Math.max(Number(leadProbabilities.tiePct) - 20, 0) * 0.5,
+          reasons: f5MlPromoted
+            ? [
+                `${participant.name} projects ${formatSignedNumber(runEdge, 1)} F5 runs better with ${formatNumber(leadPct, 1)}% lead and ${formatNumber(leadProbabilities.tiePct, 1)}% push risk.`,
+                f5MlStrongEdge
+                  ? 'Strong-edge promotion: confidence is the primary signal; the larger run gap supports it while push risk stays below 20%.'
+                  : 'Seed-window promotion: confidence clears the side read, the run gap is meaningful, and push risk stays below 20%.'
+              ]
+            : [
+                `${participant.name} projects ${formatSignedNumber(runEdge, 1)} F5 runs better with ${formatNumber(leadPct, 1)}% lead and ${formatNumber(leadProbabilities.tiePct, 1)}% push risk.`,
+                tieRiskLabel ? `${tieRiskLabel}; confidence haircut already applied.` : null
+              ],
+          evidence: {
+            bucket: f5MlEvidenceBucket,
+            record: f5MlStrongEdge ? 'strong-edge shadow bucket' : '13-4 non-loss seed bucket',
+            hitRatePct: f5MlStrongEdge ? null : 76.5
+          }
+        })
         first5MoneylineRows.push({
           id: `f5-ml:${game.id}:${participant.id || pickIndex}`,
           category: 'first5-ml',
@@ -3657,12 +4047,14 @@ function App() {
             tieRiskLabel ? `${tieRiskLabel}; confidence haircut applied.` : null
           ].filter(Boolean).join(' '),
           tags: [
+            f5MlShadowCalibration.tier === 'promoted' ? 'Promoted' : 'Watch',
             'M2 F5 ML',
             `${formatNumber(leadPct, 1)}% lead`,
             `push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
             tieRiskLabel,
             projection.first5EdgeTeam ? `edge ${projection.first5EdgeTeam}` : null
           ].filter(Boolean).slice(0, 4),
+          shadowCalibration: f5MlShadowCalibration,
           invalid: eventState.invalid,
           statusLabel: eventState.label,
           tone: eventState.tone,
@@ -3684,6 +4076,7 @@ function App() {
             tieRisk,
             confidenceHaircut: tieRiskHaircut,
             confidence: f5Confidence,
+            shadowCalibration: f5MlShadowCalibration,
             valueGate: 'model-owned',
             hasMarket: false,
             source: 'analysis.mlbProjection'
@@ -3693,9 +4086,10 @@ function App() {
 
       const first5Total = projection.totals?.first5 ?? null
       const first5Lean = String(first5Total?.lean || '').trim()
-      const projectedFirst5Total = Number.isFinite(Number(first5Total?.tailOverlay?.adjustedProjectedRuns))
+      const projectedFirst5Total = awayFirst5Runs + homeFirst5Runs
+      const tailAdjustedProjectedFirst5Total = Number.isFinite(Number(first5Total?.tailOverlay?.adjustedProjectedRuns))
         ? Number(first5Total.tailOverlay.adjustedProjectedRuns)
-        : awayFirst5Runs + homeFirst5Runs
+        : null
       const first5Edge = Number(first5Total?.edge)
       const first5LineCandidates = [
         projection.totals?.postedFirst5TotalLine,
@@ -3728,7 +4122,22 @@ function App() {
           underVolatilityRisk ? 'F5 under volatility' : null,
           thinTotalEdgeRisk ? 'Thin F5 edge' : null
         ].filter(Boolean)
-        first5TotalRows.push({
+        const f5TotalShadowCalibration = buildShadowCalibration({
+          tier: 'research',
+          lane: 'f5-ou',
+          modelConfidence: confidence,
+          calibratedScore: confidence,
+          reasons: [
+            `${first5Lean} has a ${formatSignedNumber(first5DisplayEdge, 1)} run F5 edge (${formatNumber(projectedFirst5Total, 1)} projected vs ${formatNumber(first5Line, 1)} line).`,
+            'F5 O/U remains research-only until a larger settled bucket clears promotion.'
+          ],
+          evidence: {
+            bucket: 'F5 O/U research-only seed',
+            record: 'held out of promotion',
+            hitRatePct: null
+          }
+        })
+        const first5TotalRow = {
           id: `f5-total:${game.id}`,
           category: 'first5-total',
           actionKind: 'total',
@@ -3746,12 +4155,14 @@ function App() {
           metaLabel: `${first5Total?.strength || 'Model'} | ${formatNumber(Number(totalProbability), 1)}% model`,
           summary: first5Total?.summary || `${first5Lean} first-five total with ${formatSignedNumber(first5Edge, 1)} M2 run edge.`,
           tags: [
+            'Research',
             'M2 F5 O/U',
             first5Total?.strength,
             `${formatSignedNumber(first5DisplayEdge, 1)} runs`,
             ...f5TotalWarnings,
             first5Total?.chaosGate?.warning ? 'chaos warning' : null
           ].filter(Boolean).slice(0, 4),
+          shadowCalibration: f5TotalShadowCalibration,
           invalid: eventState.invalid,
           statusLabel: eventState.label,
           tone: eventState.tone,
@@ -3763,6 +4174,7 @@ function App() {
             phaseId: 'first5',
             line: first5Line,
             projectedRuns: projectedFirst5Total,
+            tailAdjustedProjectedRuns: tailAdjustedProjectedFirst5Total,
             edge: first5DisplayEdge,
             baseEdge: first5Edge,
             baseConfidence,
@@ -3770,18 +4182,217 @@ function App() {
             confidenceWarnings: f5TotalWarnings,
             strength: first5Total?.strength || '',
             probability: totalProbability,
+            shadowCalibration: f5TotalShadowCalibration,
             valueGate: 'model-owned',
             hasMarket: false,
             source: 'analysis.mlbProjection.totals.first5'
           }
-        })
+        }
+        if (/^(over|under)$/i.test(first5Lean)) {
+          first5TotalRows.push(first5TotalRow)
+        } else {
+          first5TotalResearchRows.push({
+            ...first5TotalRow,
+            category: 'first5-total-research',
+            sortConfidence: 0,
+            raw: {
+              ...first5TotalRow.raw,
+              gateReasons: [
+                `non-actionable ${first5Lean || 'pass'} lean`,
+                first5Total?.strength ? String(first5Total.strength) : null,
+                first5Total?.tailOverlay?.shape ? `tail ${first5Total.tailOverlay.shape}` : null
+              ].filter(Boolean)
+            }
+          })
+        }
       }
+
+      const projectedTeamRunsForWindow = (teamSide: 'away' | 'home', windowKey: string) => {
+        const first5Runs = teamSide === 'away' ? awayFirst5Runs : homeFirst5Runs
+        if (windowKey === 'first5') return { runs: first5Runs, source: 'M2 F5 team runs' }
+        return { runs: null, source: 'No team-run projection' }
+      }
+
+      const teamEntries = [
+        { key: 'away', teamKey: slugify(game.matchup?.[0]?.name || ''), name: game.matchup?.[0]?.name || 'Away' },
+        { key: 'home', teamKey: slugify(game.matchup?.[1]?.name || ''), name: game.matchup?.[1]?.name || 'Home' }
+      ] as Array<{ key: 'away' | 'home'; teamKey: string; name: string }>
+      const windowLabels: Record<string, string> = {
+        first5: '1st 5'
+      }
+      teamEntries.forEach((team) => {
+        const anchors = teamRunAnchors?.[team.teamKey] || {}
+        Object.entries(anchors).forEach(([windowKey, anchorValue]) => {
+          if (windowKey !== 'first5') return
+          const anchor = anchorValue as AnyRecord
+          const line = Number(anchor?.line)
+          const projected = projectedTeamRunsForWindow(team.key, windowKey)
+          const projectedRuns = Number(projected.runs)
+          if (!Number.isFinite(line) || !Number.isFinite(projectedRuns)) return
+          const lean = projectedRuns >= line ? 'Over' : 'Under'
+          const probability = buildTotalProbabilityPct(projectedRuns, line, lean)
+          const edge = projectedRuns - line
+          if (!Number.isFinite(Number(probability)) || Math.abs(edge) < 0.25) return
+          const thinEdgeHaircut = Math.abs(edge) < 0.5 ? 4 : 0
+          const confidence = clamp(Math.round(Number(probability)) - thinEdgeHaircut, 50, 80)
+          const teamTotalPromoted = confidence >= 65 || confidence < 60
+          const teamTotalShadowCalibration = buildShadowCalibration({
+            tier: teamTotalPromoted ? 'promoted' : 'watch',
+            lane: 'f5-team-total',
+            modelConfidence: confidence,
+            calibratedScore: confidence + (teamTotalPromoted ? 6 : -2) + Math.min(Math.abs(edge), 1.25) * 5,
+            reasons: teamTotalPromoted
+              ? [
+                  `${team.name} projects ${formatNumber(projectedRuns, 1)} F5 runs vs ${formatNumber(line, 1)} line (${formatSignedNumber(edge, 1)} edge).`,
+                  'Confidence bucket is currently promotable for F5 team totals.'
+                ]
+              : [
+                  `${team.name} projects ${formatNumber(projectedRuns, 1)} F5 runs vs ${formatNumber(line, 1)} line (${formatSignedNumber(edge, 1)} edge).`,
+                  'The 60-64 confidence bucket is watch-only in the current seed.'
+                ],
+            evidence: {
+              bucket: teamTotalPromoted ? 'F5 team total promoted seed' : 'F5 team total 60-64 watch bucket',
+              record: teamTotalPromoted ? '21-11' : '4-6',
+              hitRatePct: teamTotalPromoted ? 65.6 : 40
+            }
+          })
+          teamTotalRows.push({
+            id: `team-total:${game.id}:${team.teamKey}:${windowKey}`,
+            category: 'team-total',
+            actionKind: 'total',
+            gameId: game.id,
+            league: game.league,
+            start: game.start,
+            startMinutes: Number(game.startMinutes) || 0,
+            stage: game.stage,
+            title: `${team.name} ${lean} ${formatNumber(line, 1)}`,
+            subtitle: `${game.title} | ${windowLabels[windowKey] || windowKey}`,
+            confidence,
+            sortConfidence: confidence,
+            sortEdge: Math.abs(edge),
+            priceLabel: `Proj ${formatNumber(projectedRuns, 1)} | edge ${formatSignedNumber(edge, 1)}`,
+            metaLabel: `${formatNumber(Number(probability), 1)}% model | ${projected.source}`,
+            summary: `${team.name} projects ${formatNumber(projectedRuns, 1)} runs against a posted ${windowLabels[windowKey] || windowKey} team-total line of ${formatNumber(line, 1)}.`,
+            tags: [
+              teamTotalShadowCalibration.tier === 'promoted' ? 'Promoted' : 'Watch',
+              'Team total',
+              windowLabels[windowKey] || windowKey,
+              `${formatNumber(Number(probability), 1)}% raw`,
+              'direct F5 window'
+            ].filter(Boolean).slice(0, 4),
+            shadowCalibration: teamTotalShadowCalibration,
+            invalid: eventState.invalid,
+            statusLabel: eventState.label,
+            tone: eventState.tone,
+            selected: false,
+            raw: {
+              game,
+              marketType: 'Team total runs',
+              selection: lean,
+              teamName: team.name,
+              teamKey: team.teamKey,
+              windowKey,
+              line,
+              projectedRuns,
+              edge,
+              probability,
+              confidence,
+              confidenceHaircut: thinEdgeHaircut,
+              shadowCalibration: teamTotalShadowCalibration,
+              source: matrixAnchors?.source || 'stateContext.inningRunMatrix.marketAnchors'
+            }
+          })
+        })
+      })
+
+      const starterRows = [
+        { side: 'away', teamSide: 'away', opponentRuns: homeFirst5Runs, starter: game.starterContext?.away },
+        { side: 'home', teamSide: 'home', opponentRuns: awayFirst5Runs, starter: game.starterContext?.home }
+      ]
+      starterRows.forEach((starterRow) => {
+        const starter = starterRow.starter || {}
+        const pitcherName = starter.pitcherName || starter.name || starter.probablePitcher || ''
+        const pitcherKey = slugify(pitcherName)
+        const anchor = pitcherAnchors?.[pitcherKey]?.earnedRunsAllowed
+        const line = Number(anchor?.line)
+        if (!pitcherName || !Number.isFinite(line)) return
+        const recentAvgEr = averageNumeric((starter.startHistoryLast5 || []).map((row: AnyRecord) => row?.earnedRuns))
+        const opponentFirst5Runs = Number(starterRow.opponentRuns)
+        const projectedEr =
+          Number.isFinite(Number(recentAvgEr)) && Number.isFinite(opponentFirst5Runs)
+            ? Number(recentAvgEr) * 0.6 + opponentFirst5Runs * 0.4
+            : Number.isFinite(Number(recentAvgEr))
+              ? Number(recentAvgEr)
+              : Number.isFinite(opponentFirst5Runs)
+                ? opponentFirst5Runs * 0.72
+                : null
+        if (!Number.isFinite(Number(projectedEr))) return
+        const lean = Number(projectedEr) >= line ? 'Over' : 'Under'
+        const probability = buildTotalProbabilityPct(Number(projectedEr), line, lean)
+        const edge = Number(projectedEr) - line
+        if (!Number.isFinite(Number(probability)) || Math.abs(edge) < 0.25) return
+        const selectedOdds = lean === 'Over' ? anchor.overOdds : anchor.underOdds
+        const impliedPct = impliedPctFromAmericanOdds(selectedOdds)
+        const marketEdgePct = Number.isFinite(Number(impliedPct)) ? Number(probability) - Number(impliedPct) : null
+        const confidence = clamp(
+          Math.round(Number(probability)) - (Math.abs(edge) < 0.5 ? 4 : 0) - (!Number.isFinite(Number(recentAvgEr)) ? 5 : 0),
+          50,
+          80
+        )
+        pitcherEarnedRunRows.push({
+          id: `pitcher-er:${game.id}:${pitcherKey}`,
+          category: 'pitcher-er',
+          actionKind: 'prop',
+          gameId: game.id,
+          league: game.league,
+          start: game.start,
+          startMinutes: Number(game.startMinutes) || 0,
+          stage: game.stage,
+          title: `${pitcherName} ${lean} ${formatNumber(line, 1)} ER`,
+          subtitle: game.title,
+          confidence,
+          sortConfidence: confidence,
+          sortEdge: Math.abs(edge),
+          priceLabel: `Proj ${formatNumber(projectedEr, 1)} | edge ${formatSignedNumber(edge, 1)}`,
+          metaLabel: [
+            `${formatNumber(Number(probability), 1)}% model`,
+            Number.isFinite(Number(selectedOdds)) ? formatAmericanOdds(Number(selectedOdds)) : null,
+            Number.isFinite(Number(marketEdgePct)) ? `edge ${formatSignedNumber(marketEdgePct, 1)} pts` : null
+          ].filter(Boolean).join(' | '),
+          summary: `${pitcherName} recent ER/start and opponent F5 pressure project ${formatNumber(projectedEr, 1)} earned runs allowed.`,
+          tags: [
+            'Pitcher ER',
+            `${formatNumber(Number(probability), 1)}% raw`,
+            Number.isFinite(Number(recentAvgEr)) ? `last5 ER ${formatNumber(recentAvgEr, 1)}` : 'thin recent ER',
+            Number.isFinite(Number(marketEdgePct)) ? `${formatSignedNumber(marketEdgePct, 1)} pts` : null
+          ].filter(Boolean).slice(0, 4),
+          invalid: eventState.invalid,
+          statusLabel: eventState.label,
+          tone: eventState.tone,
+          selected: false,
+          raw: {
+            game,
+            marketType: 'Pitcher earned runs allowed',
+            selection: lean,
+            pitcherName,
+            line,
+            projectedRuns: Number(projectedEr),
+            edge,
+            probability,
+            selectedOdds,
+            impliedPct,
+            marketEdgePct,
+            confidence,
+            source: matrixAnchors?.source || 'stateContext.inningRunMatrix.marketAnchors'
+          }
+        })
+      })
     })
 
-    first5MoneylineRows.sort(
-      (left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.sortConfidence - left.sortConfidence
-    )
-    first5TotalRows.sort(
+    first5MoneylineRows.sort(sortByShadowCalibration)
+    first5TotalRows.sort(sortByShadowCalibration)
+    teamTotalRows.sort(sortByShadowCalibration)
+    pitcherEarnedRunRows.sort(
       (left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.sortConfidence - left.sortConfidence
     )
 
@@ -3828,6 +4439,7 @@ function App() {
           : (absoluteRunDiff / projectedTotal) * 100
         const confidence = Number(publishedShape?.confidence ?? game.analysis?.confidence ?? 0) || 0
         const marketPricePct = impliedPctFromParticipant(participant)
+        const marketEdgePct = Number.isFinite(Number(marketPricePct)) ? confidence - Number(marketPricePct) : null
         const shapeGrade = publishedShape?.grade ||
           (runDiffShare >= 18 && absoluteRunDiff >= 1.4
             ? 'Separated ML shape'
@@ -3836,6 +4448,43 @@ function App() {
               : 'Thin ML shape')
         const first5Team = projection.first5EdgeTeam ? `F5 edge ${projection.first5EdgeTeam}` : null
         const bridgeTeam = projection.bridgeEdgeTeam ? `Bridge ${projection.bridgeEdgeTeam}` : null
+        const mlShapePromoted = confidence >= 65
+        const marketEdgeLabel = Number.isFinite(Number(marketEdgePct))
+          ? `${formatSignedNumber(Number(marketEdgePct), 1)} pts market edge`
+          : 'no priced market edge'
+        const marginSupportLabel = `${formatNumber(runDiffShare, 1)}% margin support`
+        const confidenceVsMarginRead =
+          confidence >= 65 && runDiffShare < 8
+            ? `Confidence is carrying this ML read; ${marginSupportLabel} is thin, so this is a closer-score win profile.`
+            : confidence >= 65 && runDiffShare >= 11
+              ? `Confidence and margin both support the read: ${confidence}% model confidence plus ${marginSupportLabel}.`
+              : confidence < 65 && runDiffShare >= 11
+                ? `Margin support is strong at ${formatNumber(runDiffShare, 1)}%, but ${confidence}% model confidence is too low to promote.`
+                : `${confidence}% model confidence is the primary ML signal; ${marginSupportLabel} is only tiebreak context.`
+        const mlShapeShadowCalibration = buildShadowCalibration({
+          tier: mlShapePromoted ? 'promoted' : 'watch',
+          lane: 'ml-shape',
+          modelConfidence: confidence,
+          calibratedScore:
+            confidence +
+            (mlShapePromoted ? 8 : 0) +
+            Math.max(Number(marketEdgePct) || 0, 0) * 0.35 +
+            Math.min(Number(runDiffShare) || 0, 20) * 0.15,
+          reasons: mlShapePromoted
+            ? [
+                `${participant.name}: ${confidenceVsMarginRead} ${marketEdgeLabel}.`,
+                'ML shape confidence >=65 is the current promoted seed bucket.'
+              ]
+            : [
+                `${participant.name}: ${confidenceVsMarginRead} ${marketEdgeLabel}.`,
+                'ML shape below 65% is watch-only; confidence remains the primary ML trust signal.'
+              ],
+          evidence: {
+            bucket: mlShapePromoted ? 'ML shape confidence >=65' : 'ML shape below 65',
+            record: mlShapePromoted ? '12-3' : '12-10',
+            hitRatePct: mlShapePromoted ? 80 : 54.5
+          }
+        })
         return {
           id: `ml-shape:${game.id}:${participant.id}`,
           category: 'ml-shape',
@@ -3851,18 +4500,20 @@ function App() {
           sortConfidence: confidence,
           sortEdge: runDiffShare,
           priceLabel: `Proj ${formatNumber(pickRuns, 1)}-${formatNumber(opponentRuns, 1)} | diff ${formatSignedNumber(runDiff, 1)} of ${formatNumber(projectedTotal, 1)}`,
-          metaLabel: `${formatNumber(runDiffShare, 1)}% of total | ${participant.americanLabel || 'ML price N/A'}`,
+          metaLabel: `Margin support ${formatNumber(runDiffShare, 1)}% | ${participant.americanLabel || 'ML price N/A'}`,
           summary: [
             `${participant.name} projects ${formatSignedNumber(runDiff, 1)} runs better in a ${formatNumber(projectedTotal, 1)}-run environment.`,
             first5Team,
             bridgeTeam
           ].filter(Boolean).join(' '),
           tags: [
+            mlShapeShadowCalibration.tier === 'promoted' ? 'Promoted' : 'Watch',
             shapeGrade,
-            `${formatNumber(runDiffShare, 1)}% diff/total`,
+            `${formatNumber(runDiffShare, 1)}% margin support`,
             `${confidence}% model`,
             Number.isFinite(Number(marketPricePct)) ? `${formatNumber(Number(marketPricePct), 1)}% market` : null
           ].filter(Boolean).slice(0, 4),
+          shadowCalibration: mlShapeShadowCalibration,
           invalid: eventState.invalid,
           statusLabel: eventState.label,
           tone: eventState.tone,
@@ -3881,13 +4532,26 @@ function App() {
             valueGrade: shapeGrade,
             price: participant.americanOdds ?? null,
             marketPricePct,
+            marketEdgePct,
             confidence,
+            shadowCalibration: mlShapeShadowCalibration,
             source: publishedShape?.source || 'analysis.mlbProjection'
           }
         }
       })
       .filter(Boolean)
-      .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
+      .sort((left: AnyRecord, right: AnyRecord) => {
+        const leftMarketEdge =
+          Number.isFinite(Number(left.raw?.marketPricePct)) ? Number(left.confidence) - Number(left.raw.marketPricePct) : -Infinity
+        const rightMarketEdge =
+          Number.isFinite(Number(right.raw?.marketPricePct)) ? Number(right.confidence) - Number(right.raw.marketPricePct) : -Infinity
+        return (
+          sortByShadowCalibration(left, right) ||
+          Number(right.confidence || 0) - Number(left.confidence || 0) ||
+          rightMarketEdge - leftMarketEdge ||
+          Number(right.sortEdge || 0) - Number(left.sortEdge || 0)
+        )
+      })
 
     const sideRows = favoriteCatalogEntries
       .filter(
@@ -3903,8 +4567,7 @@ function App() {
         (entry: AnyRecord) =>
           entry.league === 'MLB' &&
           !entry.invalid &&
-          entry.raw?.phaseId === 'full' &&
-          (entry.raw?.valueGate === 'validated' || entry.raw?.valueGrade === 'Bet-grade value')
+          entry.raw?.phaseId === 'full'
       )
       .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
 
@@ -3949,18 +4612,87 @@ function App() {
       .filter(
         (entry: AnyRecord) =>
           entry.league === 'MLB' &&
-          !entry.invalid &&
+          (!entry.invalid || entry.raw?.valueBoardFilters?.actualTeamFullGameResult || entry.raw?.valueBoardFilters?.actualTeamFirst5Result) &&
           ['hits', 'rbi', 'hitRunRbi', 'hitsRunsRbis', 'runs', 'walks', 'singles'].includes(String(entry.raw?.propType || ''))
       )
       .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
 
+    const allHitRunRbiPropRows = propCatalogEntries
+      .filter(
+        (entry: AnyRecord) =>
+          entry.league === 'MLB' &&
+          ['hitRunRbi', 'hitsRunsRbis'].includes(String(entry.raw?.propType || ''))
+      )
+      .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
+
     const hitRunRbiRows = battingImpactRows.filter((entry: AnyRecord) =>
-      ['hits', 'rbi', 'hitRunRbi', 'hitsRunsRbis', 'runs'].includes(String(entry.raw?.propType || ''))
+      ['hitRunRbi', 'hitsRunsRbis'].includes(String(entry.raw?.propType || ''))
     )
+    const hitRows = battingImpactRows.filter((entry: AnyRecord) => String(entry.raw?.propType || '') === 'hits')
+    const runRows = battingImpactRows.filter((entry: AnyRecord) => String(entry.raw?.propType || '') === 'runs')
+    const rbiRows = battingImpactRows.filter((entry: AnyRecord) => String(entry.raw?.propType || '') === 'rbi')
 
     const battingImpactFallbackRows = battingImpactRows.filter((entry: AnyRecord) =>
       ['walks', 'singles'].includes(String(entry.raw?.propType || ''))
     )
+
+    const battingValueFilterByGamePlayer = new Map<string, AnyRecord>()
+    battingImpactRows.forEach((entry: AnyRecord) => {
+      const filters = entry.raw?.valueBoardFilters
+      const playerName = normalizeNameToken(entry.raw?.playerName || entry.title || '')
+      if (!filters || !entry.gameId || !playerName) return
+      battingValueFilterByGamePlayer.set(`${entry.gameId}:${playerName}`, filters)
+    })
+
+    const buildModeledHrrFilters = (game: AnyRecord, sideKey: 'away' | 'home', teamName: string, player: AnyRecord) => {
+      const teamContext = batterTeamPromotionContext(game, sideKey, teamName)
+      const opposingStarterName = opposingStarterNameForTeam(game, teamName)
+      const ficDailyMatchup = findFicDailyMatchup(activeFicDailyMatchupRows, player.name || '', opposingStarterName)
+      const ficHrrCleanPass = Boolean(ficDailyMatchup?.matchupPass)
+      const projectedTeamFullGameResult =
+        teamContext.teamMarketImpliedPct !== null &&
+        teamContext.opponentMarketImpliedPct !== null
+          ? teamContext.teamMarketImpliedPct < teamContext.opponentMarketImpliedPct
+            ? 'loss'
+            : 'win'
+          : null
+      const recentAtBats =
+        finiteValueOrNull(player.recent?.atBats) ??
+        finiteValueOrNull(player.split?.atBats) ??
+        finiteValueOrNull(player.season?.atBats) ??
+        null
+
+      return {
+        projectedTeamFullGameResult,
+        teamMarketImpliedPct: teamContext.teamMarketImpliedPct,
+        opponentMarketImpliedPct: teamContext.opponentMarketImpliedPct,
+        recentAtBats,
+        opposingStarterName,
+        ficDailyMatchup: ficDailyMatchup
+          ? {
+              playerName: ficDailyMatchup.playerName,
+              pitcherName: ficDailyMatchup.pitcherName,
+              recentOps: ficDailyMatchup.recentOps,
+              bvpAtBats: ficDailyMatchup.bvpAtBats,
+              bvpAvg: ficDailyMatchup.bvpAvg,
+              bvpObp: ficDailyMatchup.bvpObp,
+              bvpOps: ficDailyMatchup.bvpOps,
+              matchupPass: ficDailyMatchup.matchupPass
+            }
+          : null,
+        ficHrrCleanPass,
+        ficHrrCleanGateRequired: activeFicDailyMatchupRows.length > 0,
+        hrrCleanBoardFiltered:
+          projectedTeamFullGameResult !== 'win' ||
+          recentAtBats === null ||
+          recentAtBats < 30,
+        mikesBotdFiltered:
+          projectedTeamFullGameResult !== 'win' ||
+          recentAtBats === null ||
+          recentAtBats < 30 ||
+          (activeFicDailyMatchupRows.length > 0 && !ficHrrCleanPass)
+      }
+    }
 
     const battingProductionRows = mlbGames
       .flatMap((game: AnyRecord) => {
@@ -3978,6 +4710,28 @@ function App() {
           const teamContextWarnings = batterPropContextWarnings(game, team.teamName || '')
 
           return lineup.map((player: AnyRecord) => {
+            const valueBoardFilters =
+              battingValueFilterByGamePlayer.get(`${game.id}:${normalizeNameToken(player.name)}`) ||
+              buildModeledHrrFilters(game, sideKey, team.teamName || '', player)
+            const battingResult = battingResultFor({
+              title: player.name,
+              summary: game.title,
+              raw: { playerName: player.name, gameTitle: game.title }
+            })
+            const actualHrr = Number(battingResult?.hitRunRbi)
+            const hrrResult =
+              battingResult && Number.isFinite(actualHrr)
+                ? resultFromHit(actualHrr >= 2, {
+                    actualValue: actualHrr,
+                    actualScore: `${actualHrr} H+R+RBI (${Number(battingResult.hits || 0)} H, ${Number(battingResult.runs || 0)} R, ${Number(battingResult.rbi || 0)} RBI)`,
+                    lineThreshold: 1.5
+                  })
+                : null
+            const hrrFilterWarnings =
+              valueBoardFilters?.hrrCleanBoardFiltered
+                ? ['Clean H+R+RBI filter: requires projected ML win, 70%+ confidence, and 30+ AB']
+                : []
+            const combinedContextWarnings = [...teamContextWarnings, ...hrrFilterWarnings]
             const recentXops = computeXops(player.recent)
             const splitXops = computeXops(player.split)
             const seasonXops = computeXops(player.season)
@@ -4059,10 +4813,11 @@ function App() {
               league: 'MLB',
               title: `${player.name} H+R+RBI watch`,
               summary: summaryBits.join(' · '),
-              contextWarnings: teamContextWarnings,
+              contextWarnings: combinedContextWarnings,
               confidence: 0,
               sortConfidence: 0,
               sortEdge: productionScore,
+              result: hrrResult,
               priceLabel: `xB ${formatNumber(expectedBases, 2)} · Exp H ${formatNumber(expectedHits, 2)} · R ${formatNumber(expectedRuns, 2)} · RBI ${formatNumber(expectedRbis, 2)} · Total ${formatNumber(expectedHrr, 2)} · ${lineupStatus} order`,
               raw: {
                 propType: 'hitRunRbiModel',
@@ -4073,6 +4828,8 @@ function App() {
                 expectedRuns,
                 expectedRbis,
                 expectedHrr,
+                battingResult,
+                valueBoardFilters,
                 expectedBasesModel: {
                   expectedBases,
                   weightedTbRate,
@@ -4080,7 +4837,7 @@ function App() {
                   matchupPressure,
                   pitchFitPressure
                 },
-                contextWarnings: teamContextWarnings,
+                contextWarnings: combinedContextWarnings,
                 slot,
                 playerName: player.name
               }
@@ -4103,7 +4860,35 @@ function App() {
         }
       })
 
-    const displayHitRunRbiRows = hitRunRbiRows.length ? hitRunRbiRows : battingProductionRows
+    const passesCleanHrrBoard = (row: AnyRecord) => {
+      const filters = row.raw?.valueBoardFilters || row.valueBoardFilters || {}
+      return (
+        String(filters.projectedTeamFullGameResult || '').toLowerCase() === 'win' &&
+        Number(row.confidence) >= 70 &&
+        Number.isFinite(Number(filters.recentAtBats)) &&
+        Number(filters.recentAtBats) >= 30 &&
+        !filters.hrrCleanBoardFiltered
+      )
+    }
+    const passesMikesBotdBoard = (row: AnyRecord) => {
+      const filters = row.raw?.valueBoardFilters || row.valueBoardFilters || {}
+      const playerKey = normalizeNameToken(row.raw?.playerName || row.title || '')
+      const manualMikesBotdList = manuallyIdentifiedMikesBotdByDate[activeDayIsoDate] || []
+      const manualMikesBotd = manualMikesBotdList.includes(playerKey)
+      const requiresManualMikesBotd = manualMikesBotdList.length > 0
+      return (
+        String(filters.projectedTeamFullGameResult || '').toLowerCase() === 'win' &&
+        Number(row.confidence) >= 60 &&
+        Number.isFinite(Number(filters.recentAtBats)) &&
+        Number(filters.recentAtBats) >= 30 &&
+        filters.ficHrrCleanGateRequired === true &&
+        (requiresManualMikesBotd ? manualMikesBotd : filters.ficHrrCleanPass === true) &&
+        (!filters.mikesBotdFiltered || manualMikesBotd)
+      )
+    }
+    const cleanHitRunRbiRows = (hitRunRbiRows.length ? hitRunRbiRows : battingProductionRows).filter(passesCleanHrrBoard)
+    const displayHitRunRbiRows = cleanHitRunRbiRows
+    const mikesBotdRows = (allHitRunRbiPropRows.length ? allHitRunRbiPropRows : battingProductionRows).filter(passesMikesBotdBoard)
 
     const gameIdByTitle = Object.fromEntries(mlbGames.map((game: AnyRecord) => [game.title, game.id]))
     const homeRunPayloadRows = Array.isArray(activeHomeRunBoard?.picks) ? activeHomeRunBoard.picks : []
@@ -4152,8 +4937,190 @@ function App() {
     const viableHomeRunRows = homeRunRows.filter((row: AnyRecord) => String(row.scoreBand || '') === 'viable')
     const postedHomeRunRows = homeRunRows.filter((row: AnyRecord) => row.lineupStatus === 'posted')
 
-    const topRows = [...tbBackedRows, ...strikeoutRows, ...first5MoneylineRows, ...first5TotalRows, ...totalRows, ...sideRows, ...mlShapeRows]
-      .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
+    const annotateSettledResult = (row: AnyRecord) => {
+      if (row?.result?.hit === true || row?.result?.hit === false) return row
+      const game = row.raw?.game || mlbGames.find((entry: AnyRecord) => entry.id === row.gameId) || null
+      const moneylineResult = game ? marketResultFor(game, 'moneyline') : null
+      const fullGameResult = moneylineResult?.result || (game ? typedOutcomeResultFor(game) : null)
+      const category = String(row.category || row.raw?.marketType || '')
+      const rawMarket = String(row.raw?.marketType || '')
+      let settledResult = null
+
+      if (category === 'first5-ml' || rawMarket === 'F5 ML') {
+        if (fullGameResult?.actualFirst5Winner === 'Push') {
+          settledResult = resultFromPush({
+            actualWinner: 'Push',
+            actualScore: `${fullGameResult?.awayRunsFirst5 ?? '?'}-${fullGameResult?.homeRunsFirst5 ?? '?'} F5`
+          })
+        } else {
+        const first5Hit =
+          fullGameResult?.first5Hit ??
+          (
+            fullGameResult?.actualFirst5Winner && fullGameResult.actualFirst5Winner !== 'Push'
+              ? namesLikelyMatch(rowSelectionName(row), fullGameResult.actualFirst5Winner)
+              : null
+          )
+        settledResult = resultFromHit(first5Hit, {
+          actualWinner: fullGameResult?.actualFirst5Winner,
+          actualScore: `${fullGameResult?.awayRunsFirst5 ?? '?'}-${fullGameResult?.homeRunsFirst5 ?? '?'} F5`
+        })
+        }
+      } else if (
+        category === 'ml-shape' ||
+        rawMarket === 'ML shape' ||
+        category === 'favorite' ||
+        category === 'side' ||
+        row.actionKind === 'ticket'
+      ) {
+        const fullGameHit =
+          fullGameResult?.fullGameHit ??
+          (
+            fullGameResult?.actualWinner
+              ? namesLikelyMatch(rowSelectionName(row), fullGameResult.actualWinner)
+              : null
+          )
+        settledResult = resultFromHit(fullGameHit, {
+          actualWinner: fullGameResult?.actualWinner,
+          actualScore: `${fullGameResult?.awayRunsFinal ?? '?'}-${fullGameResult?.homeRunsFinal ?? '?'}`
+        })
+      } else if (category === 'first5-total' || rawMarket === 'F5 O/U') {
+        const first5Runs = Number(fullGameResult?.awayRunsFirst5) + Number(fullGameResult?.homeRunsFirst5)
+        const line = Number(row.raw?.line)
+        const selection = String(row.raw?.selection || '').toLowerCase()
+        if (Number.isFinite(first5Runs) && Number.isFinite(line) && selection) {
+          const hit = selection.includes('over') ? first5Runs > line : selection.includes('under') ? first5Runs < line : null
+          settledResult = resultFromHit(hit, { actualRuns: first5Runs, actualScore: `${first5Runs} F5 runs` })
+        }
+      } else if (category === 'total' || rawMarket === 'Full total') {
+        const finalRuns = Number(fullGameResult?.awayRunsFinal) + Number(fullGameResult?.homeRunsFinal)
+        const line = Number(row.raw?.line)
+        const selection = String(row.raw?.selection || row.title || '').toLowerCase()
+        if (Number.isFinite(finalRuns) && Number.isFinite(line) && selection) {
+          const hit = selection.includes('over') ? finalRuns > line : selection.includes('under') ? finalRuns < line : null
+          settledResult = resultFromHit(hit, { actualRuns: finalRuns, actualScore: `${finalRuns} final runs` })
+        }
+      } else if (category === 'team-total') {
+        const teamSide = namesLikelyMatch(row.raw?.teamName, game?.matchup?.[0]?.name) ? 'away' : namesLikelyMatch(row.raw?.teamName, game?.matchup?.[1]?.name) ? 'home' : ''
+        const windowKey = String(row.raw?.windowKey || '')
+        const line = Number(row.raw?.line)
+        const selection = String(row.raw?.selection || row.title || '').toLowerCase()
+        const actualRuns =
+          teamSide === 'away'
+            ? windowKey === 'first5'
+              ? Number(fullGameResult?.awayRunsFirst5)
+              : Number(fullGameResult?.awayRunsFinal)
+            : teamSide === 'home'
+              ? windowKey === 'first5'
+                ? Number(fullGameResult?.homeRunsFirst5)
+                : Number(fullGameResult?.homeRunsFinal)
+              : NaN
+        if (Number.isFinite(actualRuns) && Number.isFinite(line) && selection) {
+          const hit = selection.includes('over') ? actualRuns > line : selection.includes('under') ? actualRuns < line : null
+          settledResult = resultFromHit(hit, { actualRuns, actualScore: `${actualRuns} team runs` })
+        }
+      } else if (category === 'pitcher-er') {
+        const pitcherName = String(row.raw?.pitcherName || row.title || '').replace(/\s+(Over|Under)\s+.*$/i, '').trim()
+        const starter = (fullGameResult?.starterPitchers || []).find((pitcher: AnyRecord) =>
+          namesLikelyMatch(pitcher.pitcherName || '', pitcherName)
+        )
+        const actualEr = Number(starter?.earnedRuns)
+        const line = Number(row.raw?.line)
+        const selection = String(row.raw?.selection || row.title || '').toLowerCase()
+        if (Number.isFinite(actualEr) && Number.isFinite(line) && selection) {
+          const hit = selection.includes('over') ? actualEr > line : selection.includes('under') ? actualEr < line : null
+          settledResult = resultFromHit(hit, { actualValue: actualEr, actualScore: `${actualEr} ER` })
+        }
+      } else if (row.raw?.propType === 'pitcherStrikeouts' || row.category === 'props') {
+        const propResult = playerPropResultFor(row)
+        settledResult = resultFromHit(propResult?.result?.hit, {
+          actualValue: propResult?.result?.actualValue,
+          lineThreshold: propResult?.result?.lineThreshold
+        })
+      } else if (row.raw?.scoreBand || row.playerName) {
+        const battingResult = battingResultFor(row)
+        const actualHomeRuns = Number(battingResult?.homeRuns)
+        if (Number.isFinite(actualHomeRuns)) {
+          settledResult = resultFromHit(actualHomeRuns > 0, {
+            actualHomeRuns,
+            actualScore: `${actualHomeRuns} HR`
+          })
+        } else {
+          const hrResult = game ? marketResultFor(game, 'homeRun') : null
+          if (hrResult && normalizeNameToken(hrResult.predictedPick || '') === normalizeNameToken(row.playerName || row.raw?.playerName || row.title || '')) {
+          settledResult = resultFromHit(hrResult.result?.hit, {
+            actualHomeRuns: hrResult.result?.actualHomeRuns
+          })
+          }
+        }
+      }
+
+      return settledResult ? { ...row, result: settledResult } : row
+    }
+
+    const annotatedMlShapeRows = mlShapeRows.map(annotateSettledResult)
+    const annotatedSideRows = sideRows.map(annotateSettledResult)
+    const annotatedTotalRows = totalRows.map(annotateSettledResult)
+    const annotatedFirst5MoneylineRows = first5MoneylineRows.map(annotateSettledResult)
+    const annotatedFirst5TotalRows = first5TotalRows.map(annotateSettledResult)
+    const activeBackfilledTeamTotalRows = (mlbF5TeamTotalBackfillRows as AnyRecord[])
+      .filter((row: AnyRecord) => row.date === activeDayIsoDate)
+      .map((row: AnyRecord) => {
+        if (row.shadowCalibration || row.raw?.shadowCalibration) return row
+        const confidence = Number(row.sortConfidence ?? row.confidence ?? 0)
+        const promoted = confidence >= 65 || confidence < 60
+        const shadowCalibration = buildShadowCalibration({
+          tier: promoted ? 'promoted' : 'watch',
+          lane: 'f5-team-total',
+          modelConfidence: confidence,
+          calibratedScore: confidence + (promoted ? 6 : -2) + Math.min(Number(row.sortEdge || 0), 1.25) * 5,
+          reasons: promoted
+            ? [`Backfilled F5 team total: ${row.priceLabel || `${confidence}% confidence`} clears a promoted seed bucket.`]
+            : [`Backfilled F5 team total: ${row.priceLabel || `${confidence}% confidence`} stays watch-only in this confidence bucket.`],
+          evidence: {
+            bucket: promoted ? 'F5 team total promoted seed' : 'F5 team total 60-64 watch bucket',
+            record: promoted ? '21-11' : '4-6',
+            hitRatePct: promoted ? 65.6 : 40
+          }
+        })
+        return {
+          ...row,
+          tags: [promoted ? 'Promoted' : 'Watch', ...(row.tags || [])].filter(Boolean).slice(0, 4),
+          shadowCalibration,
+          raw: {
+            ...(row.raw || {}),
+            shadowCalibration
+          }
+        }
+      })
+      .sort(sortByShadowCalibration)
+    const annotatedTeamTotalRows = activeBackfilledTeamTotalRows.length
+      ? activeBackfilledTeamTotalRows
+      : teamTotalRows.map(annotateSettledResult)
+    const annotatedPitcherEarnedRunRows = pitcherEarnedRunRows.map(annotateSettledResult)
+    const annotatedTotalBaseRows = totalBaseRows.map(annotateSettledResult)
+    const annotatedTbBackedRows = tbBackedRows.map(annotateSettledResult)
+    const annotatedTbSoftHeatRows = tbSoftHeatRows.map(annotateSettledResult)
+    const annotatedStrikeoutRows = strikeoutRows.map(annotateSettledResult)
+    const annotatedStrikeoutOverRows = strikeoutOverRows.map(annotateSettledResult)
+    const annotatedStrikeoutUnderRows = strikeoutUnderRows.map(annotateSettledResult)
+    const annotatedHomeRunRows = homeRunRows.map(annotateSettledResult)
+    const annotatedPremiumHomeRunRows = premiumHomeRunRows.map(annotateSettledResult)
+    const annotatedStrongHomeRunRows = strongHomeRunRows.map(annotateSettledResult)
+    const annotatedViableHomeRunRows = viableHomeRunRows.map(annotateSettledResult)
+    const annotatedPostedHomeRunRows = postedHomeRunRows.map(annotateSettledResult)
+
+    const topRows = [
+      ...annotatedTbBackedRows,
+      ...annotatedStrikeoutRows,
+      ...annotatedPitcherEarnedRunRows,
+      ...annotatedTeamTotalRows,
+      ...annotatedFirst5MoneylineRows,
+      ...annotatedFirst5TotalRows,
+      ...annotatedTotalRows,
+      ...annotatedSideRows,
+      ...annotatedMlShapeRows
+    ]
+      .sort(sortByShadowCalibration)
       .slice(0, 12)
 
     return {
@@ -4161,30 +5128,37 @@ function App() {
       fullyPostedGames,
       partialGames,
       mappedKalshiGames: Object.keys(activeKalshiMlbMarketByGame).length,
-      mlShapeRows,
-      sideRows,
-      totalRows,
-      first5MoneylineRows,
-      first5TotalRows,
+      mlShapeRows: annotatedMlShapeRows,
+      sideRows: annotatedSideRows,
+      totalRows: annotatedTotalRows,
+      first5MoneylineRows: annotatedFirst5MoneylineRows,
+      first5TotalRows: annotatedFirst5TotalRows,
+      teamTotalRows: annotatedTeamTotalRows,
+      pitcherEarnedRunRows: annotatedPitcherEarnedRunRows,
       first5TotalResearchRows,
       first5TotalGateNote:
         'First-five MLB rows are generated from the M2 starter-window projection fields already packaged on each game.',
-      totalBaseRows,
-      tbBackedRows,
-      tbSoftHeatRows,
-      strikeoutRows,
-      strikeoutOverRows,
-      strikeoutUnderRows,
+      totalBaseRows: annotatedTotalBaseRows,
+      tbBackedRows: annotatedTbBackedRows,
+      tbSoftHeatRows: annotatedTbSoftHeatRows,
+      strikeoutRows: annotatedStrikeoutRows,
+      strikeoutOverRows: annotatedStrikeoutOverRows,
+      strikeoutUnderRows: annotatedStrikeoutUnderRows,
       battingImpactRows,
       hitRunRbiRows,
+      hitRows,
+      runRows,
+      rbiRows,
       battingProductionRows,
       displayHitRunRbiRows,
+      mikesBotdRows,
+      mikesBotdSourceActive: activeFicDailyMatchupRows.length > 0,
       battingImpactFallbackRows,
-      homeRunRows,
-      premiumHomeRunRows,
-      strongHomeRunRows,
-      viableHomeRunRows,
-      postedHomeRunRows,
+      homeRunRows: annotatedHomeRunRows,
+      premiumHomeRunRows: annotatedPremiumHomeRunRows,
+      strongHomeRunRows: annotatedStrongHomeRunRows,
+      viableHomeRunRows: annotatedViableHomeRunRows,
+      postedHomeRunRows: annotatedPostedHomeRunRows,
       topRows,
         note:
           fullyPostedGames === mlbGames.length
@@ -4195,6 +5169,7 @@ function App() {
     activeDayId,
     activeHomeRunBoard,
     activeKalshiMlbMarketByGame,
+    activeMlbResultRows,
     favoriteCatalogEntries,
     games,
     loadedGameDetailsByDay,
@@ -4206,6 +5181,33 @@ function App() {
   const mlbFirstInningValueSummary = useMemo(() => {
     const mlbGames = games.filter((game: AnyRecord) => game.league === 'MLB')
     if (!mlbGames.length) return null
+    const shadowSeedWindow = '2026-06-06..2026-06-08'
+    const buildFirstInningShadowCalibration = ({ tier, lane, modelConfidence, calibratedScore, reasons, evidence }: AnyRecord) => ({
+      mode: 'shadow',
+      tier,
+      lane,
+      potdEligible: tier === 'promoted',
+      calibratedScore: Math.round(Number(calibratedScore) || Number(modelConfidence) || 0),
+      modelConfidence: Math.round(Number(modelConfidence) || 0),
+      reasons: (reasons || []).filter(Boolean),
+      cautions: ['Small sample: June 6-8 seed window only.'].filter(Boolean),
+      evidence: {
+        seedWindow: shadowSeedWindow,
+        ...(evidence || {})
+      }
+    })
+    const firstInningTierRank = (row: AnyRecord) => {
+      const tier = String(row?.shadowCalibration?.tier || '').toLowerCase()
+      if (tier === 'promoted') return 3
+      if (tier === 'watch') return 2
+      if (tier === 'research') return 1
+      return 0
+    }
+    const sortFirstInningRows = (left: AnyRecord, right: AnyRecord) =>
+      firstInningTierRank(right) - firstInningTierRank(left) ||
+      Number(right.shadowCalibration?.calibratedScore || 0) - Number(left.shadowCalibration?.calibratedScore || 0) ||
+      Number(right.confidence || 0) - Number(left.confidence || 0) ||
+      Number(right.edge || 0) - Number(left.edge || 0)
 
     const rows = mlbGames
       .map((game: AnyRecord) => {
@@ -4239,6 +5241,45 @@ function App() {
           ? firstInningRuns > 0 ? 'YRFI' : 'NRFI'
           : ''
         const resultHit = actualPick ? actualPick === String(firstInning.pick || '').toUpperCase() : null
+        const pick = String(firstInning.pick || '').toUpperCase()
+        const shadowCalibration =
+          pick === 'NRFI'
+            ? buildFirstInningShadowCalibration({
+                tier: modelConfidence >= 60 ? 'promoted' : 'watch',
+                lane: 'nrfi',
+                modelConfidence,
+                calibratedScore: modelConfidence + (modelConfidence >= 60 ? 7 : 0),
+                reasons:
+                  modelConfidence >= 60
+                    ? [
+                        `NRFI model is ${formatNumber(noModel, 1)}%; away scores ${formatNumber(awayRunPct, 1)}% and home scores ${formatNumber(homeRunPct, 1)}%.`,
+                        'NRFI confidence >=60 is currently promotable in the seed window.'
+                      ]
+                    : [
+                        `NRFI model is ${formatNumber(noModel, 1)}%; away scores ${formatNumber(awayRunPct, 1)}% and home scores ${formatNumber(homeRunPct, 1)}%.`,
+                        'NRFI below 60 stays visible but is watch-only in the seed window.'
+                      ],
+                evidence: {
+                  bucket: modelConfidence >= 60 ? 'NRFI confidence >=60' : 'NRFI below 60',
+                  record: modelConfidence >= 60 ? '5-1' : '0-1',
+                  hitRatePct: modelConfidence >= 60 ? 83.3 : 0
+                }
+              })
+            : buildFirstInningShadowCalibration({
+                tier: 'research',
+                lane: 'yrfi',
+                modelConfidence,
+                calibratedScore: modelConfidence,
+                reasons: [
+                  `YRFI model is ${formatNumber(yesModel, 1)}%; away scores ${formatNumber(awayRunPct, 1)}% and home scores ${formatNumber(homeRunPct, 1)}%.`,
+                  'Keep visible for tracking, but do not use for POTD/top-board promotion.'
+                ],
+                evidence: {
+                  bucket: 'YRFI research-only seed',
+                  record: '10-12',
+                  hitRatePct: 45.5
+                }
+              })
 
         return {
           gameId: game.id,
@@ -4255,6 +5296,7 @@ function App() {
           homeRunPct,
           edge: Number(firstInning.edge) || 0,
           summary: firstInning.summary,
+          shadowCalibration,
           result: hasFirstInningResult
             ? {
                 source: resultRow.source || 'sql-mlb.db',
@@ -4277,21 +5319,11 @@ function App() {
 
     const yrfiRows = rows
       .filter((row: AnyRecord) => String(row.pick || '').toUpperCase() === 'YRFI')
-      .sort(
-        (left: AnyRecord, right: AnyRecord) =>
-          right.confidence - left.confidence ||
-          right.edge - left.edge ||
-          right.yesModel - left.yesModel
-      )
+      .sort(sortFirstInningRows)
 
     const nrfiRows = rows
       .filter((row: AnyRecord) => String(row.pick || '').toUpperCase() === 'NRFI')
-      .sort(
-        (left: AnyRecord, right: AnyRecord) =>
-          right.confidence - left.confidence ||
-          right.edge - left.edge ||
-          right.noModel - left.noModel
-      )
+      .sort(sortFirstInningRows)
 
     return {
       totalGames: mlbGames.length,
@@ -4656,9 +5688,10 @@ function App() {
     const scopes: Array<{ id: string; label: string }> = [{ id: 'all', label: 'All' }]
 
     if (tennisValueSummary) scopes.push({ id: 'tennis', label: 'Tennis' })
-    if (mlbValueSummary && (mlbValueSummary.mlShapeRows?.length || mlbValueSummary.sideRows.length || mlbValueSummary.totalRows.length)) {
-      scopes.push({ id: 'mlb-overview', label: 'Overview' })
+    if (mlbValueSummary?.mlShapeRows?.length) {
+      scopes.push({ id: 'mlb-overview', label: 'ML shape' })
     }
+    if (mlbValueSummary?.totalRows.length) scopes.push({ id: 'mlb-totals', label: 'Totals' })
     if (
       mlbValueSummary &&
       (mlbValueSummary.first5MoneylineRows?.length ||
@@ -4670,11 +5703,21 @@ function App() {
     if (mlbFirstInningValueSummary && (mlbFirstInningValueSummary.yrfiRows.length || mlbFirstInningValueSummary.nrfiRows.length)) {
       scopes.push({ id: 'mlb-first-inning', label: '1st inning' })
     }
+    if (mlbValueSummary?.teamTotalRows?.length) scopes.push({ id: 'mlb-team-totals', label: 'Team totals' })
     if (mlbValueSummary?.totalBaseRows.length) scopes.push({ id: 'mlb-tb', label: 'TB' })
+    if (mlbValueSummary?.pitcherEarnedRunRows?.length) scopes.push({ id: 'mlb-pitcher-er', label: 'Pitcher ER' })
     if (mlbValueSummary?.strikeoutRows.length) scopes.push({ id: 'mlb-strikeouts', label: 'K O/U' })
-    if (mlbValueSummary && (mlbValueSummary.hitRunRbiRows.length || mlbValueSummary.battingProductionRows.length)) {
-      scopes.push({ id: 'mlb-impact', label: 'H+R+RBI' })
+    if (
+      mlbValueSummary &&
+      (mlbValueSummary.hitRunRbiRows.length ||
+        mlbValueSummary.battingProductionRows.length ||
+        mlbValueSummary.hitRows?.length ||
+        mlbValueSummary.runRows?.length ||
+        mlbValueSummary.rbiRows?.length)
+    ) {
+      scopes.push({ id: 'mlb-impact', label: 'Batter H/R/RBI' })
     }
+    if (mlbValueSummary?.mikesBotdSourceActive) scopes.push({ id: 'mlb-mikes-botd', label: "Mike's BOTD" })
     if (mlbValueSummary?.homeRunRows.length) scopes.push({ id: 'mlb-hr', label: 'HR' })
     if (mlbScalpSummary?.scalpRows.length) scopes.push({ id: 'mlb-scalp', label: 'Scalp' })
 

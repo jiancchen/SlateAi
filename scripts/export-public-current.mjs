@@ -194,6 +194,13 @@ const copyMlbResultsIfPresent = async (slateId, targetPath) => {
       go.away_runs as awayRuns,
       go.home_runs as homeRuns,
       go.total_runs as totalRuns,
+      go.f5_away_runs as awayRunsFirst5,
+      go.f5_home_runs as homeRunsFirst5,
+      go.f5_total_runs as totalRunsFirst5,
+      go.away_first5_result as awayFirst5Result,
+      go.home_first5_result as homeFirst5Result,
+      go.away_full_game_result as awayFullGameResult,
+      go.home_full_game_result as homeFullGameResult,
       max(case when p.team_role='away' then p.runs_first1 end) as awayRunsFirst1,
       max(case when p.team_role='home' then p.runs_first1 end) as homeRunsFirst1,
       max(case when p.team_role='away' then p.won_first5_flag end) as awayWonFirst5,
@@ -212,11 +219,42 @@ const copyMlbResultsIfPresent = async (slateId, targetPath) => {
   const text = execFileSync('sqlite3', ['-json', sqliteDb, query], { encoding: 'utf8' })
   const rows = JSON.parse(text || '[]')
   if (!rows.length) return false
+  const pitcherQuery = `
+    select
+      g.game_id as sqlGameId,
+      g.mlb_game_pk as gamePk,
+      pa.team_role as teamRole,
+      p.name as pitcherName,
+      pa.earned_runs as earnedRuns,
+      pa.runs_allowed as runsAllowed,
+      pa.hits_allowed as hitsAllowed,
+      pa.strikeouts as strikeouts,
+      pa.outs_recorded as outsRecorded,
+      pa.is_starting_pitcher as isStartingPitcher
+    from pitcher_appearances pa
+    join games g on g.game_id=pa.game_id
+    join players p on p.player_id=pa.pitcher_id
+    where g.game_date='${slateId.replace(/'/g, "''")}'
+      and pa.is_starting_pitcher=1
+    order by g.start_time_utc, pa.team_role
+  `
+  const pitcherText = execFileSync('sqlite3', ['-json', sqliteDb, pitcherQuery], { encoding: 'utf8' })
+  const pitcherRows = JSON.parse(pitcherText || '[]')
+  const pitchersByGame = pitcherRows.reduce((byGame, pitcher) => {
+    const key = String(pitcher.sqlGameId || '')
+    if (!key) return byGame
+    byGame[key] = [...(byGame[key] || []), sanitizePublicPayload(pitcher)]
+    return byGame
+  }, {})
+  const rowsWithPitchers = rows.map((row) => ({
+    ...row,
+    starterPitchers: pitchersByGame[String(row.sqlGameId || '')] || []
+  }))
   await fs.mkdir(path.dirname(targetPath), { recursive: true })
   await writeJson(targetPath, {
     source: 'sql-mlb.db',
     date: slateId,
-    rows: sanitizePublicPayload(rows)
+    rows: sanitizePublicPayload(rowsWithPitchers)
   })
   return true
 }

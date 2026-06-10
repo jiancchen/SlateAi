@@ -1,0 +1,977 @@
+{
+  "generatedAt": "2026-06-08T19:10:26.908Z",
+  "model": "inning-expected-batters-shadow-v1",
+  "startDate": "2026-05-31",
+  "endDate": "2026-05-31",
+  "rows": 75,
+  "summary": {
+    "brier": 0.2481,
+    "baselineBrier": 0.2511,
+    "modelPicks": {
+      "rows": 57,
+      "hits": 33,
+      "misses": 24,
+      "hitRate": 57.9
+    },
+    "baselinePicks": {
+      "rows": 60,
+      "hits": 32,
+      "misses": 28,
+      "hitRate": 53.3
+    }
+  },
+  "thresholdSummary": [
+    {
+      "thresholdPct": 52,
+      "rows": 57,
+      "hits": 33,
+      "misses": 24,
+      "hitRate": 57.9,
+      "avgConfidencePct": 56.6
+    },
+    {
+      "thresholdPct": 55,
+      "rows": 32,
+      "hits": 18,
+      "misses": 14,
+      "hitRate": 56.3,
+      "avgConfidencePct": 59.1
+    },
+    {
+      "thresholdPct": 58,
+      "rows": 18,
+      "hits": 8,
+      "misses": 10,
+      "hitRate": 44.4,
+      "avgConfidencePct": 61.1
+    },
+    {
+      "thresholdPct": 60,
+      "rows": 12,
+      "hits": 6,
+      "misses": 6,
+      "hitRate": 50,
+      "avgConfidencePct": 62.2
+    }
+  ],
+  "coverage": {
+    "rowsWithAnyStatcast": 75,
+    "rowsWithFullStatcast": 66,
+    "rowsWithStarterForm": 70,
+    "rowsWithAnyTeamMarketAnchor": 0,
+    "rowsWithAnyPitcherMarketAnchor": 0,
+    "avgStatcastPct": 99.3,
+    "avgSplitPct": 49.4,
+    "avgMatchupPct": 100
+  },
+  "byInning": {
+    "1": {
+      "rows": 15,
+      "runRate": 60,
+      "brier": 0.2409,
+      "baselineBrier": 0.25,
+      "picks": {
+        "rows": 10,
+        "hits": 7,
+        "misses": 3,
+        "hitRate": 70
+      }
+    },
+    "2": {
+      "rows": 15,
+      "runRate": 53.3,
+      "brier": 0.2639,
+      "baselineBrier": 0.2614,
+      "picks": {
+        "rows": 15,
+        "hits": 7,
+        "misses": 8,
+        "hitRate": 46.7
+      }
+    },
+    "3": {
+      "rows": 15,
+      "runRate": 46.7,
+      "brier": 0.24,
+      "baselineBrier": 0.2494,
+      "picks": {
+        "rows": 11,
+        "hits": 7,
+        "misses": 4,
+        "hitRate": 63.6
+      }
+    },
+    "4": {
+      "rows": 15,
+      "runRate": 46.7,
+      "brier": 0.254,
+      "baselineBrier": 0.249,
+      "picks": {
+        "rows": 11,
+        "hits": 6,
+        "misses": 5,
+        "hitRate": 54.5
+      }
+    },
+    "5": {
+      "rows": 15,
+      "runRate": 40,
+      "brier": 0.2415,
+      "baselineBrier": 0.2456,
+      "picks": {
+        "rows": 10,
+        "hits": 6,
+        "misses": 4,
+        "hitRate": 60
+      }
+    }
+  },
+  "calibration": {
+    "40-49": {
+      "rows": 41,
+      "avgProbability": 45.9,
+      "actualRunRate": 41.5,
+      "brier": 0.2472
+    },
+    "<40": {
+      "rows": 12,
+      "avgProbability": 37.8,
+      "actualRunRate": 50,
+      "brier": 0.2556
+    },
+    "50-59": {
+      "rows": 22,
+      "avgProbability": 53.7,
+      "actualRunRate": 63.6,
+      "brier": 0.2456
+    }
+  },
+  "severeMisses": [
+    {
+      "date": "2026-05-31",
+      "title": "Minnesota Twins @ Pittsburgh Pirates",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 37.3,
+      "actualRuns": 2,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 36.6,
+      "homeBatterScore": 55.9,
+      "awayStarterRisk": 44,
+      "homeStarterRisk": 40.9
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Boston Red Sox @ Cleveland Guardians",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 37.3,
+      "actualRuns": 2,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 52.1,
+      "homeBatterScore": 36.1,
+      "awayStarterRisk": 52.9,
+      "homeStarterRisk": 37.7
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Miami Marlins @ New York Mets",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 39.3,
+      "actualRuns": 2,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 39.3,
+      "homeBatterScore": 42,
+      "awayStarterRisk": 62.5,
+      "homeStarterRisk": 50
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Toronto Blue Jays @ Baltimore Orioles",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 39.5,
+      "actualRuns": 1,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 45.3,
+      "homeBatterScore": 61.9,
+      "awayStarterRisk": 46.9,
+      "homeStarterRisk": 28
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Philadelphia Phillies @ Los Angeles Dodgers",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 39.6,
+      "actualRuns": 1,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 41.7,
+      "homeBatterScore": 43.2,
+      "awayStarterRisk": 49.9,
+      "homeStarterRisk": 58.5
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Milwaukee Brewers @ Houston Astros",
+      "inning": 4,
+      "pick": "No run",
+      "probabilityPct": 39.6,
+      "actualRuns": 2,
+      "awaySlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "homeSlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "awayBatterScore": 39.3,
+      "homeBatterScore": 47.7,
+      "awayStarterRisk": 45.7,
+      "homeStarterRisk": 28
+    },
+    {
+      "date": "2026-05-31",
+      "title": "San Diego Padres @ Washington Nationals",
+      "inning": 1,
+      "pick": "Run",
+      "probabilityPct": 59.8,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "awayBatterScore": 53.7,
+      "homeBatterScore": 69.1,
+      "awayStarterRisk": 66.7,
+      "homeStarterRisk": 59.7
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Minnesota Twins @ Pittsburgh Pirates",
+      "inning": 3,
+      "pick": "No run",
+      "probabilityPct": 41.2,
+      "actualRuns": 2,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "awayBatterScore": 37.7,
+      "homeBatterScore": 59.8,
+      "awayStarterRisk": 44,
+      "homeStarterRisk": 40.9
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Philadelphia Phillies @ Los Angeles Dodgers",
+      "inning": 1,
+      "pick": "Run",
+      "probabilityPct": 58.6,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "awayBatterScore": 64.5,
+      "homeBatterScore": 65.3,
+      "awayStarterRisk": 49.9,
+      "homeStarterRisk": 58.5
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Kansas City Royals @ Texas Rangers",
+      "inning": 4,
+      "pick": "No run",
+      "probabilityPct": 41.9,
+      "actualRuns": 2,
+      "awaySlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "homeSlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "awayBatterScore": 40.2,
+      "homeBatterScore": 43,
+      "awayStarterRisk": 51.6,
+      "homeStarterRisk": 40.3
+    }
+  ],
+  "sampleRows": [
+    {
+      "date": "2026-05-31",
+      "title": "Toronto Blue Jays @ Baltimore Orioles",
+      "inning": 1,
+      "probabilityPct": 49.7,
+      "baselineProbabilityPct": 50,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "awayBatterScore": 60.4,
+      "homeBatterScore": 54.7
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Toronto Blue Jays @ Baltimore Orioles",
+      "inning": 2,
+      "probabilityPct": 39.5,
+      "baselineProbabilityPct": 42.1,
+      "actualRuns": 1,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 45.3,
+      "homeBatterScore": 61.9
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Toronto Blue Jays @ Baltimore Orioles",
+      "inning": 3,
+      "probabilityPct": 43.6,
+      "baselineProbabilityPct": 44.5,
+      "actualRuns": 5,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "awayBatterScore": 55.4,
+      "homeBatterScore": 58
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Toronto Blue Jays @ Baltimore Orioles",
+      "inning": 4,
+      "probabilityPct": 45.9,
+      "baselineProbabilityPct": 47.8,
+      "actualRuns": 0,
+      "awaySlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "homeSlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "awayBatterScore": 48.5,
+      "homeBatterScore": 60.7
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Toronto Blue Jays @ Baltimore Orioles",
+      "inning": 5,
+      "probabilityPct": 46.1,
+      "baselineProbabilityPct": 47.5,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 52.2,
+      "homeBatterScore": 59
+    },
+    {
+      "date": "2026-05-31",
+      "title": "San Diego Padres @ Washington Nationals",
+      "inning": 1,
+      "probabilityPct": 59.8,
+      "baselineProbabilityPct": 50,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "awayBatterScore": 53.7,
+      "homeBatterScore": 69.1
+    },
+    {
+      "date": "2026-05-31",
+      "title": "San Diego Padres @ Washington Nationals",
+      "inning": 2,
+      "probabilityPct": 44.4,
+      "baselineProbabilityPct": 42.1,
+      "actualRuns": 0,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 41.6,
+      "homeBatterScore": 48.9
+    },
+    {
+      "date": "2026-05-31",
+      "title": "San Diego Padres @ Washington Nationals",
+      "inning": 3,
+      "probabilityPct": 50.6,
+      "baselineProbabilityPct": 44.5,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "awayBatterScore": 45.2,
+      "homeBatterScore": 60.7
+    },
+    {
+      "date": "2026-05-31",
+      "title": "San Diego Padres @ Washington Nationals",
+      "inning": 4,
+      "probabilityPct": 51.9,
+      "baselineProbabilityPct": 47.8,
+      "actualRuns": 1,
+      "awaySlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "homeSlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "awayBatterScore": 44.2,
+      "homeBatterScore": 54.1
+    },
+    {
+      "date": "2026-05-31",
+      "title": "San Diego Padres @ Washington Nationals",
+      "inning": 5,
+      "probabilityPct": 52.3,
+      "baselineProbabilityPct": 47.5,
+      "actualRuns": 2,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 43.8,
+      "homeBatterScore": 57.2
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Minnesota Twins @ Pittsburgh Pirates",
+      "inning": 1,
+      "probabilityPct": 50,
+      "baselineProbabilityPct": 50,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "awayBatterScore": 42,
+      "homeBatterScore": 67.4
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Minnesota Twins @ Pittsburgh Pirates",
+      "inning": 2,
+      "probabilityPct": 37.3,
+      "baselineProbabilityPct": 42.1,
+      "actualRuns": 2,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 36.6,
+      "homeBatterScore": 55.9
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Minnesota Twins @ Pittsburgh Pirates",
+      "inning": 3,
+      "probabilityPct": 41.2,
+      "baselineProbabilityPct": 44.5,
+      "actualRuns": 2,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "awayBatterScore": 37.7,
+      "homeBatterScore": 59.8
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Minnesota Twins @ Pittsburgh Pirates",
+      "inning": 4,
+      "probabilityPct": 44.6,
+      "baselineProbabilityPct": 47.8,
+      "actualRuns": 0,
+      "awaySlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "homeSlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "awayBatterScore": 39.1,
+      "homeBatterScore": 58.4
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Minnesota Twins @ Pittsburgh Pirates",
+      "inning": 5,
+      "probabilityPct": 44,
+      "baselineProbabilityPct": 47.5,
+      "actualRuns": 5,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 37.6,
+      "homeBatterScore": 58.8
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Los Angeles Angels @ Tampa Bay Rays",
+      "inning": 1,
+      "probabilityPct": 52.8,
+      "baselineProbabilityPct": 50,
+      "actualRuns": 1,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "awayBatterScore": 50.9,
+      "homeBatterScore": 57.6
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Los Angeles Angels @ Tampa Bay Rays",
+      "inning": 2,
+      "probabilityPct": 42.3,
+      "baselineProbabilityPct": 42.1,
+      "actualRuns": 1,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 53.1,
+      "homeBatterScore": 45.9
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Los Angeles Angels @ Tampa Bay Rays",
+      "inning": 3,
+      "probabilityPct": 45.6,
+      "baselineProbabilityPct": 44.5,
+      "actualRuns": 2,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "awayBatterScore": 52.4,
+      "homeBatterScore": 50
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Los Angeles Angels @ Tampa Bay Rays",
+      "inning": 4,
+      "probabilityPct": 48,
+      "baselineProbabilityPct": 47.8,
+      "actualRuns": 0,
+      "awaySlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "homeSlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "awayBatterScore": 51.8,
+      "homeBatterScore": 46.9
+    },
+    {
+      "date": "2026-05-31",
+      "title": "Los Angeles Angels @ Tampa Bay Rays",
+      "inning": 5,
+      "probabilityPct": 48.3,
+      "baselineProbabilityPct": 47.5,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 52.8,
+      "homeBatterScore": 48.4
+    }
+  ]
+}

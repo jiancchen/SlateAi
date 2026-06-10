@@ -15,41 +15,41 @@
     {
       "side": "Away",
       "name": "Orioles",
-      "detail": "Shane Baz (RHP) | 3-5 | 4.29 ERA | 63 SO | 1.37 WHIP | 71.1 IP"
+      "detail": "Shane Baz (RHP) | 3-6 | 4.09 ERA | 66 SO | 1.38 WHIP | 77.0 IP"
     },
     {
       "side": "Home",
       "name": "Blue Jays",
-      "detail": "Kevin Gausman (RHP) | 4-4 | 3.36 ERA | 74 SO | 1.09 WHIP | 75.0 IP"
+      "detail": "Kevin Gausman (RHP) | 4-4 | 3.60 ERA | 79 SO | 1.09 WHIP | 80.0 IP"
     }
   ],
   "summary": "Orioles @ Blue Jays with Shane Baz against Kevin Gausman.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Orioles +118 / Blue Jays -142 | o8 -119 / u8 -102 | Orioles +1.5 -181 / Blue Jays -1.5 +149 | F5 Orioles +114 / Blue Jays -145 / o4.5 +100 / u4.5 -130.",
+    "Current board: Orioles +118 / Blue Jays -143 | o8 -119 / u8 -102 | Orioles +1.5 -185 / Blue Jays -1.5 +152 | F5 Orioles +110 / Blue Jays -140 / o4.5 -105 / u4.5 -125.",
     "Shane Baz vs Kevin Gausman."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
   "teamContext": {
     "away": {
       "divisionLeader": false,
-      "divisionRank": "3",
-      "gamesBack": "8.0",
-      "losses": 34,
-      "runDifferential": -29,
-      "streakCode": "L1",
-      "winningPercentage": ".477",
+      "divisionRank": "4",
+      "gamesBack": "9.0",
+      "losses": 36,
+      "runDifferential": -34,
+      "streakCode": "L3",
+      "winningPercentage": ".463",
       "wins": 31
     },
     "home": {
       "divisionLeader": false,
-      "divisionRank": "4",
+      "divisionRank": "3",
       "gamesBack": "8.0",
-      "losses": 34,
-      "runDifferential": -15,
-      "streakCode": "W1",
-      "winningPercentage": ".477",
-      "wins": 31
+      "losses": 35,
+      "runDifferential": -16,
+      "streakCode": "L1",
+      "winningPercentage": ".478",
+      "wins": 32
     }
   },
   "parkContext": {
@@ -274,17 +274,17 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "home": {
         "playerName": "Kevin Gausman",
         "line": 6.5,
-        "overPrice": 107,
+        "overPrice": 115,
         "underPrice": -136,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -479,6 +479,255 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 824836,
+          "date": "2026-05-27",
+          "opponent": "Rays",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 11,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 694346,
+              "pitcherName": "Trey Gibson",
+              "teamName": "Baltimore Orioles",
+              "opponentName": "Tampa Bay Rays",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 571927,
+              "pitcherName": "Steven Matz",
+              "teamName": "Tampa Bay Rays",
+              "opponentName": "Baltimore Orioles",
+              "firstInningRunsAllowed": 5,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 5
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 1
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 2
+            },
+            {
+              "inning": 6,
+              "runs": 1
+            },
+            {
+              "inning": 7,
+              "runs": 2
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824834,
+          "date": "2026-05-28",
+          "opponent": "Blue Jays",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 1,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 605135,
+              "pitcherName": "Chris Bassitt",
+              "teamName": "Baltimore Orioles",
+              "opponentName": "Toronto Blue Jays",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 571578,
+              "pitcherName": "Patrick Corbin",
+              "teamName": "Toronto Blue Jays",
+              "opponentName": "Baltimore Orioles",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Lost late",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824835,
+          "date": "2026-05-29",
+          "opponent": "Blue Jays",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 5,
+          "runsAgainst": 6,
+          "starters": {
+            "team": {
+              "pitcherId": 669432,
+              "pitcherName": "Trevor Rogers",
+              "teamName": "Baltimore Orioles",
+              "opponentName": "Toronto Blue Jays",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 671936,
+              "pitcherName": "Adam Macko",
+              "teamName": "Toronto Blue Jays",
+              "opponentName": "Baltimore Orioles",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Blew",
+              "tone": "negative"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 2
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 2
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 824833,
           "date": "2026-05-30",
@@ -696,15 +945,15 @@
             },
             {
               "inning": 2,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 3,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
@@ -799,7 +1048,7 @@
             },
             {
               "inning": 7,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 8,
@@ -858,7 +1107,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 12
+              "runs": 6
             },
             {
               "inning": 2,
@@ -874,7 +1123,7 @@
             },
             {
               "inning": 5,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 6,
@@ -1034,6 +1283,255 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 822809,
+          "date": "2026-05-27",
+          "opponent": "Marlins",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 2,
+          "runsAgainst": 1,
+          "starters": {
+            "team": {
+              "pitcherId": 592332,
+              "pitcherName": "Kevin Gausman",
+              "teamName": "Toronto Blue Jays",
+              "opponentName": "Miami Marlins",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 691587,
+              "pitcherName": "Eury Pérez",
+              "teamName": "Miami Marlins",
+              "opponentName": "Toronto Blue Jays",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Won late",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 1
+            },
+            {
+              "inning": 6,
+              "runs": 1
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824834,
+          "date": "2026-05-28",
+          "opponent": "Orioles",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 2,
+          "runsAgainst": 1,
+          "starters": {
+            "team": {
+              "pitcherId": 571578,
+              "pitcherName": "Patrick Corbin",
+              "teamName": "Toronto Blue Jays",
+              "opponentName": "Baltimore Orioles",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 605135,
+              "pitcherName": "Chris Bassitt",
+              "teamName": "Baltimore Orioles",
+              "opponentName": "Toronto Blue Jays",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Mixed",
+              "tone": "info"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Won late",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 1
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 1
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824835,
+          "date": "2026-05-29",
+          "opponent": "Orioles",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 6,
+          "runsAgainst": 5,
+          "starters": {
+            "team": {
+              "pitcherId": 671936,
+              "pitcherName": "Adam Macko",
+              "teamName": "Toronto Blue Jays",
+              "opponentName": "Baltimore Orioles",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 669432,
+              "pitcherName": "Trevor Rogers",
+              "teamName": "Baltimore Orioles",
+              "opponentName": "Toronto Blue Jays",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Short",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "Rescued",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 4
+            },
+            {
+              "inning": 8,
+              "runs": 2
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 824833,
           "date": "2026-05-30",
@@ -1232,8 +1730,8 @@
               "tone": "warning"
             },
             "hitters": {
-              "label": "Stranded",
-              "tone": "warning"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Short",
@@ -1251,7 +1749,7 @@
             },
             {
               "inning": 2,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 3,
@@ -1267,7 +1765,7 @@
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
@@ -1315,8 +1813,8 @@
               "tone": "warning"
             },
             "hitters": {
-              "label": "Stranded",
-              "tone": "warning"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Cracked",
@@ -1330,7 +1828,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
@@ -1338,7 +1836,7 @@
             },
             {
               "inning": 3,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 4,
@@ -1362,7 +1860,7 @@
             },
             {
               "inning": 9,
-              "runs": 2
+              "runs": 1
             }
           ]
         },
@@ -1421,7 +1919,7 @@
             },
             {
               "inning": 3,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 4,
@@ -1445,7 +1943,7 @@
             },
             {
               "inning": 9,
-              "runs": 8
+              "runs": 4
             }
           ]
         },
@@ -2535,31 +3033,267 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-822807",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 92,
+          "noRunProbabilityPct": 8,
+          "awayRunProbabilityPct": 72,
+          "homeRunProbabilityPct": 72,
+          "lean": "Run",
+          "strength": "strong",
+          "sampleHalves": 130,
+          "caution": "Blue Jays starter is in the green this year (1.8 WAR) Blue Jays starter carried a real green season last year (4 WAR)",
+          "reason": "YRFI with a 92% modeled chance of at least one first-inning run. Orioles score 72% of the time and Blue Jays 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 34.3,
+          "noRunProbabilityPct": 65.7,
+          "awayRunProbabilityPct": 15.8,
+          "homeRunProbabilityPct": 18.5,
+          "lean": "No run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.3 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Orioles F5 runs 1.5; Blue Jays F5 runs 2.5; Kevin Gausman: HA 5.5, ER 2.5, win yes +162; Shane Baz: HA 5.5, ER 2.5, win yes +179; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 48.1,
+          "noRunProbabilityPct": 51.9,
+          "awayRunProbabilityPct": 25.1,
+          "homeRunProbabilityPct": 23,
+          "lean": "No run",
+          "strength": "m2-baseline",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.3 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Orioles F5 runs 1.5; Blue Jays F5 runs 2.5; Kevin Gausman: HA 5.5, ER 2.5, win yes +162; Shane Baz: HA 5.5, ER 2.5, win yes +179; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 44.8,
+          "noRunProbabilityPct": 55.2,
+          "awayRunProbabilityPct": 25.4,
+          "homeRunProbabilityPct": 19.4,
+          "lean": "No run",
+          "strength": "m2-baseline",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.3 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Orioles F5 runs 1.5; Blue Jays F5 runs 2.5; Kevin Gausman: HA 5.5, ER 2.5, win yes +162; Shane Baz: HA 5.5, ER 2.5, win yes +179; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 46.7,
+          "noRunProbabilityPct": 53.3,
+          "awayRunProbabilityPct": 23.1,
+          "homeRunProbabilityPct": 23.6,
+          "lean": "No run",
+          "strength": "m2-baseline",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.3 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Orioles F5 runs 1.5; Blue Jays F5 runs 2.5; Kevin Gausman: HA 5.5, ER 2.5, win yes +162; Shane Baz: HA 5.5, ER 2.5, win yes +179; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Orioles @ Blue Jays",
+      "mlbGamePk": 822807,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "blue-jays": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "orioles": {
+            "first3": {
+              "line": 0.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "kevin-gausman": {
+            "name": "Kevin Gausman",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": 105,
+              "underOdds": -140,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 5.5,
+              "overOdds": 120,
+              "underOdds": -160,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 162,
+              "noOdds": -227
+            }
+          },
+          "shane-baz": {
+            "name": "Shane Baz",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": -122,
+              "underOdds": -108,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 5.5,
+              "overOdds": -120,
+              "underOdds": -111,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 179,
+              "noOdds": -253
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "Orioles": {
-      "averageMatchupGrade": 2.16,
+      "averageMatchupGrade": 3.5,
       "trackedBatters": 9,
-      "starterThreatCount": 4,
+      "starterThreatCount": 5,
       "contactCount": 1,
       "powerCount": 3,
       "platoonCount": 7,
       "pitchTypeEdgeCount": 4,
-      "oppositeHandCount": 6,
-      "sameHandCount": 3,
-      "switchCount": 2,
+      "oppositeHandCount": 5,
+      "sameHandCount": 4,
+      "switchCount": 1,
       "topThirdSplitCount": 2,
       "topThirdArsenalCount": 0,
       "heaterCount": 4,
       "suppressorCount": 2,
-      "platoonPressureIndex": 91.8,
-      "pitchTypePressureIndex": 49.1,
+      "platoonPressureIndex": 86,
+      "pitchTypePressureIndex": 46.4,
       "bullpenPitchTypePressureIndex": null,
-      "starterPressureIndex": 84.9,
-      "overallPressureIndex": 84.9,
+      "starterPressureIndex": 92.7,
+      "overallPressureIndex": 92.7,
       "topThirdScore": 59.2,
-      "depthScore": 57.9,
+      "depthScore": 48.5,
       "bullpenOverperformHitters": []
     },
     "Blue Jays": {
@@ -2590,9 +3324,9 @@
   "lineupBoard": {
     "gameId": "orioles-blue-jays",
     "title": "Orioles @ Blue Jays",
-    "snapshot": "2026-06-07T15:20:45.576Z",
+    "snapshot": "2026-06-07T16:39:59.686Z",
     "status": {
-      "away": "partial",
+      "away": "posted",
       "home": "posted"
     },
     "weather": {
@@ -2605,13 +3339,13 @@
       "label": "Dome In Domed Stadium"
     },
     "marketWeatherContext": {
-      "line": "TOR -139",
+      "line": "TOR -135",
       "total": "8.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
       "teamName": "Orioles",
-      "lineupSource": "rotowire-supplement",
+      "lineupSource": "official-feed",
       "opposingStarter": {
         "id": 592332,
         "name": "Kevin Gausman",
@@ -3069,7 +3803,7 @@
           "playerId": 668939,
           "slot": 3,
           "name": "Adley Rutschman",
-          "position": "C",
+          "position": "DH",
           "bats": "S",
           "savant": {
             "playerId": 668939,
@@ -3510,7 +4244,7 @@
           "playerId": 694212,
           "slot": 5,
           "name": "Samuel Basallo",
-          "position": "DH",
+          "position": "C",
           "bats": "L",
           "savant": {
             "playerId": 694212,
@@ -3728,229 +4462,10 @@
           "matchupNote": "+5.69 vs Kevin Gausman"
         },
         {
-          "playerId": 665750,
-          "slot": 6,
-          "name": "Leody Taveras",
-          "position": "CF",
-          "bats": "S",
-          "savant": {
-            "playerId": 665750,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/leody-taveras-665750",
-            "statsSuffix": "r-hitting-mlb",
-            "season": 2026,
-            "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/leody-taveras-665750?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/leody-taveras-665750?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/leody-taveras-665750?stats=gamelogs-r-hitting-mlb&season=2026"
-            }
-          },
-          "season": {
-            "gamesPlayed": 54,
-            "hits": 42,
-            "singles": 30,
-            "doubles": 8,
-            "triples": 2,
-            "homeRuns": 2,
-            "walks": 22,
-            "totalBases": 60,
-            "atBats": 162,
-            "plateAppearances": 191,
-            "avg": 0.259,
-            "obp": 0.351,
-            "slg": 0.37,
-            "ops": 0.722,
-            "hitRate": 0.21989999999999998,
-            "singlesRate": 0.15710000000000002,
-            "hrRate": 0.0105,
-            "walkRate": 0.1152,
-            "totalBasesRate": 0.3141
-          },
-          "recent": {
-            "gamesPlayed": 10,
-            "hits": 4,
-            "singles": 4,
-            "doubles": 0,
-            "triples": 0,
-            "homeRuns": 0,
-            "walks": 2,
-            "totalBases": 4,
-            "atBats": 38,
-            "plateAppearances": 44,
-            "avg": 0.105,
-            "obp": 0.15,
-            "slg": 0.105,
-            "ops": 0.255,
-            "hitRate": 0.0909,
-            "singlesRate": 0.0909,
-            "hrRate": 0,
-            "walkRate": 0.0455,
-            "totalBasesRate": 0.0909
-          },
-          "split": {
-            "hits": 32,
-            "singles": 21,
-            "doubles": 7,
-            "triples": 2,
-            "homeRuns": 2,
-            "walks": 14,
-            "strikeouts": 26,
-            "totalBases": 49,
-            "atBats": 113,
-            "plateAppearances": 131,
-            "avg": 0.283,
-            "obp": 0.367,
-            "slg": 0.434,
-            "ops": 0.801,
-            "hitRate": 0.2443,
-            "singlesRate": 0.1603,
-            "hrRate": 0.015300000000000001,
-            "walkRate": 0.1069,
-            "kRate": 0.1985,
-            "totalBasesRate": 0.374
-          },
-          "metrics": {
-            "powerScore": 30.9,
-            "contactScore": 54.4,
-            "patienceScore": 62.1,
-            "formScore": 18,
-            "splitScore": 69,
-            "varianceScore": 92,
-            "pitchTypeFitScore": 39,
-            "pitchTypeGrade": -4.63,
-            "pitchTypeCoveragePct": 100,
-            "matchupScore": 18,
-            "matchupGrade": -8
-          },
-          "pitchType": {
-            "fitScore": 39,
-            "fitGrade": -4.63,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 53% / Split-Finger 38% / Slider 9% | fit -4.6",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 53.2,
-                "fitGrade": -4.42,
-                "batterFitScore": 34.5,
-                "qualityScore": 58.8
-              },
-              {
-                "pitchType": "FS",
-                "pitchName": "Split-Finger",
-                "pitchUsage": 38.2,
-                "fitGrade": -6.35,
-                "batterFitScore": 59.1,
-                "qualityScore": 94
-              },
-              {
-                "pitchType": "SL",
-                "pitchName": "Slider",
-                "pitchUsage": 8.7,
-                "fitGrade": 1.65,
-                "batterFitScore": 52.4,
-                "qualityScore": 43.3
-              }
-            ]
-          },
-          "statcastTrend": {
-            "sourceAsOfDate": "2026-06-06",
-            "gamesSample7": 5,
-            "paSample7": 22,
-            "bbeSample7": 26,
-            "recentStatcastGames": 5,
-            "recentStatcastPa": 22,
-            "recentStatcastAb": 19,
-            "recentStatcastHomeRuns": 0,
-            "recentBbeSample": 28,
-            "recentBarrels": 0,
-            "recentHardHit": 2,
-            "recentSweetSpot": 5,
-            "recentBarrelPct": 0,
-            "recentHardHitPct": 7.1,
-            "recentSweetSpotPct": 17.9,
-            "recentXobp": 0.17586363636363636,
-            "recentXslg": 0.16757894736842105,
-            "recentXops": 0.343,
-            "recentAvgExitVelocity": 72.04285714285714,
-            "recentAvgLaunchAngle": 0.6750000000000002,
-            "rolling7Xwoba": 0.215,
-            "rolling14Xwoba": 0.285,
-            "rolling30Xwoba": 0.257,
-            "rolling7Xba": 0.209,
-            "rolling14Xba": 0.259,
-            "rolling30Xba": 0.22,
-            "rolling7Xslg": 0.239,
-            "rolling14Xslg": 0.316,
-            "rolling30Xslg": 0.264,
-            "rolling7BarrelPct": 0,
-            "rolling14BarrelPct": 1.6,
-            "rolling30BarrelPct": 0.9,
-            "rolling7HardHitPct": 3.8,
-            "rolling14HardHitPct": 11.1,
-            "rolling30HardHitPct": 13.6,
-            "rolling7SweetSpotPct": 19.2,
-            "rolling14SweetSpotPct": 30.2,
-            "rolling30SweetSpotPct": 27.3,
-            "xwobaTrend": -0.042,
-            "barrelTrend": -0.9,
-            "hardHitTrend": -9.8,
-            "sweetSpotTrend": -8.1,
-            "trendSignal": "fading"
-          },
-          "opponentContext": null,
-          "careerProfile": {
-            "playerId": 665750,
-            "fullName": "Leody Taveras",
-            "seasonsSample": 7,
-            "debutYear": 2020,
-            "latestMlbYear": 2026,
-            "careerGames": 583,
-            "careerPlateAppearances": 2095,
-            "careerHits": 458,
-            "careerHomeRuns": 43,
-            "careerTotalBases": 703,
-            "careerWalks": 147,
-            "careerStrikeouts": 507,
-            "careerHitRate": 0.2186,
-            "careerAvg": 0.239,
-            "careerObp": 0.294,
-            "careerSlg": 0.367,
-            "careerOps": 0.661,
-            "careerTbPerPa": 0.33556085918854417,
-            "careerHrPerPa": 0.02052505966587112,
-            "careerKRate": 0.24200477326968975,
-            "careerBbRate": 0.07016706443914081,
-            "bestPowerYear": 2020,
-            "bestPowerHomeRuns": 4,
-            "bestPowerSlg": 0.3949579831932773,
-            "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 172,
-            "recentMlbHomeRuns": 2,
-            "recentMlbTbPerPa": 0.3372093023255814,
-            "careerPowerIndex": 37.46,
-            "contactRiskIndex": 48.87,
-            "roleStabilityIndex": 100,
-            "repeatabilityLabel": "baseline career profile",
-            "volatilityLabel": "stable enough",
-            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/665750?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-05-31T18:17:18Z"
-          },
-          "tags": [
-            "split edge",
-            "arsenal risk",
-            "cold",
-            "statcast fade"
-          ],
-          "primaryTag": "split edge",
-          "summary": ".259 AVG | .722 OPS | 42 H | 2 HR | 10g: .105 AVG | .255 OPS | 4 H | 0 HR | vs RHP: .283 AVG | .801 OPS | 2 HR | career 2095 PA | .661 OPS | 43 HR | baseline career profile | power 37 | 2026 sample ok | arsenal 4-Seam Fastball 53% / Split-Finger 38% / Slider 9% | fit -4.6 | -8.0 matchup grade in a in-zone lane",
-          "matchupNote": "-8.00 vs Kevin Gausman"
-        },
-        {
           "playerId": 681297,
-          "slot": 7,
+          "slot": 6,
           "name": "Colton Cowser",
-          "position": "RF",
+          "position": "CF",
           "bats": "L",
           "savant": {
             "playerId": 681297,
@@ -4167,219 +4682,228 @@
           "matchupNote": "+10.00 vs Kevin Gausman"
         },
         {
-          "playerId": 691723,
-          "slot": 8,
-          "name": "Coby Mayo",
-          "position": "3B",
+          "playerId": 641933,
+          "slot": 7,
+          "name": "Tyler O'Neill",
+          "position": "RF",
           "bats": "R",
           "savant": {
-            "playerId": 691723,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/coby-mayo-691723",
+            "playerId": 641933,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/tyler-o-neill-641933",
             "statsSuffix": "r-hitting-mlb",
             "season": 2026,
             "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/coby-mayo-691723?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/coby-mayo-691723?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/coby-mayo-691723?stats=gamelogs-r-hitting-mlb&season=2026"
+              "statcast": "https://baseballsavant.mlb.com/savant-player/tyler-o-neill-641933?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/tyler-o-neill-641933?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/tyler-o-neill-641933?stats=gamelogs-r-hitting-mlb&season=2026"
             }
           },
           "season": {
-            "gamesPlayed": 52,
-            "hits": 32,
-            "singles": 18,
-            "doubles": 6,
+            "gamesPlayed": 39,
+            "hits": 16,
+            "singles": 13,
+            "doubles": 1,
             "triples": 0,
-            "homeRuns": 8,
+            "homeRuns": 2,
             "walks": 13,
-            "totalBases": 62,
-            "atBats": 162,
-            "plateAppearances": 178,
-            "avg": 0.198,
-            "obp": 0.264,
-            "slg": 0.383,
-            "ops": 0.647,
-            "hitRate": 0.17980000000000002,
-            "singlesRate": 0.1011,
-            "hrRate": 0.0449,
-            "walkRate": 0.073,
-            "totalBasesRate": 0.3483
+            "totalBases": 23,
+            "atBats": 101,
+            "plateAppearances": 116,
+            "avg": 0.158,
+            "obp": 0.267,
+            "slg": 0.228,
+            "ops": 0.495,
+            "hitRate": 0.1379,
+            "singlesRate": 0.1121,
+            "hrRate": 0.0172,
+            "walkRate": 0.1121,
+            "totalBasesRate": 0.19829999999999998
           },
           "recent": {
-            "gamesPlayed": 10,
-            "hits": 8,
+            "gamesPlayed": 6,
+            "hits": 2,
             "singles": 2,
-            "doubles": 2,
+            "doubles": 0,
             "triples": 0,
-            "homeRuns": 4,
-            "walks": 0,
-            "totalBases": 22,
-            "atBats": 42,
-            "plateAppearances": 42,
-            "avg": 0.19,
-            "obp": 0.19,
-            "slg": 0.524,
-            "ops": 0.714,
-            "hitRate": 0.1905,
-            "singlesRate": 0.047599999999999996,
-            "hrRate": 0.09519999999999999,
-            "walkRate": 0,
-            "totalBasesRate": 0.5238
+            "homeRuns": 0,
+            "walks": 2,
+            "totalBases": 2,
+            "atBats": 12,
+            "plateAppearances": 14,
+            "avg": 0.167,
+            "obp": 0.286,
+            "slg": 0.167,
+            "ops": 0.452,
+            "hitRate": 0.1429,
+            "singlesRate": 0.1429,
+            "hrRate": 0,
+            "walkRate": 0.1429,
+            "totalBasesRate": 0.1429
           },
           "split": {
-            "hits": 17,
-            "singles": 12,
-            "doubles": 2,
+            "hits": 11,
+            "singles": 8,
+            "doubles": 1,
             "triples": 0,
-            "homeRuns": 3,
-            "walks": 9,
-            "strikeouts": 42,
-            "totalBases": 28,
-            "atBats": 112,
-            "plateAppearances": 124,
-            "avg": 0.152,
-            "obp": 0.226,
-            "slg": 0.25,
-            "ops": 0.476,
-            "hitRate": 0.1371,
-            "singlesRate": 0.0968,
-            "hrRate": 0.0242,
-            "walkRate": 0.0726,
-            "kRate": 0.3387,
-            "totalBasesRate": 0.22579999999999997
+            "homeRuns": 2,
+            "walks": 8,
+            "strikeouts": 9,
+            "totalBases": 18,
+            "atBats": 51,
+            "plateAppearances": 61,
+            "avg": 0.216,
+            "obp": 0.344,
+            "slg": 0.353,
+            "ops": 0.697,
+            "hitRate": 0.18030000000000002,
+            "singlesRate": 0.1311,
+            "hrRate": 0.032799999999999996,
+            "walkRate": 0.1311,
+            "kRate": 0.1475,
+            "totalBasesRate": 0.29510000000000003
           },
           "metrics": {
-            "powerScore": 47,
-            "contactScore": 22.8,
-            "patienceScore": 47.9,
-            "formScore": 92,
-            "splitScore": 18,
-            "varianceScore": 92,
-            "pitchTypeFitScore": 78.3,
-            "pitchTypeGrade": 3.14,
-            "pitchTypeCoveragePct": 61.8,
-            "matchupScore": 46.1,
-            "matchupGrade": -2.04
+            "powerScore": 29.4,
+            "contactScore": 30.2,
+            "patienceScore": 65,
+            "formScore": 26.3,
+            "splitScore": 92,
+            "varianceScore": 78.2,
+            "pitchTypeFitScore": 18,
+            "pitchTypeGrade": -7.26,
+            "pitchTypeCoveragePct": 100,
+            "matchupScore": 18,
+            "matchupGrade": -8
           },
           "pitchType": {
-            "fitScore": 78.3,
-            "fitGrade": 3.14,
-            "coveragePct": 61.8,
-            "summary": "4-Seam Fastball 53% / Slider 9% | fit +3.1",
+            "fitScore": 18,
+            "fitGrade": -7.26,
+            "coveragePct": 100,
+            "summary": "4-Seam Fastball 53% / Split-Finger 38% / Slider 9% | fit -7.3",
             "topPitches": [
               {
                 "pitchType": "FF",
                 "pitchName": "4-Seam Fastball",
                 "pitchUsage": 53.2,
-                "fitGrade": 3.22,
-                "batterFitScore": 76.5,
+                "fitGrade": -7.16,
+                "batterFitScore": 19.4,
                 "qualityScore": 58.8
+              },
+              {
+                "pitchType": "FS",
+                "pitchName": "Split-Finger",
+                "pitchUsage": 38.2,
+                "fitGrade": -8,
+                "batterFitScore": 18.8,
+                "qualityScore": 94
               },
               {
                 "pitchType": "SL",
                 "pitchName": "Slider",
                 "pitchUsage": 8.7,
-                "fitGrade": 2.65,
-                "batterFitScore": 57.9,
+                "fitGrade": -4.6,
+                "batterFitScore": 18,
                 "qualityScore": 43.3
               }
             ]
           },
           "statcastTrend": {
             "sourceAsOfDate": "2026-06-06",
-            "gamesSample7": 5,
-            "paSample7": 21,
-            "bbeSample7": 33,
-            "recentStatcastGames": 5,
-            "recentStatcastPa": 21,
-            "recentStatcastAb": 21,
-            "recentStatcastHomeRuns": 2,
-            "recentBbeSample": 31,
-            "recentBarrels": 2,
-            "recentHardHit": 7,
-            "recentSweetSpot": 8,
-            "recentBarrelPct": 6.5,
-            "recentHardHitPct": 22.6,
-            "recentSweetSpotPct": 25.8,
-            "recentXobp": 0.13128571428571428,
-            "recentXslg": 0.30242857142857144,
-            "recentXops": 0.434,
-            "recentAvgExitVelocity": 91.06451612903226,
-            "recentAvgLaunchAngle": 32.516129032258064,
-            "rolling7Xwoba": 0.261,
-            "rolling14Xwoba": 0.352,
-            "rolling30Xwoba": 0.343,
-            "rolling7Xba": 0.187,
-            "rolling14Xba": 0.248,
-            "rolling30Xba": 0.262,
-            "rolling7Xslg": 0.374,
-            "rolling14Xslg": 0.527,
-            "rolling30Xslg": 0.49,
-            "rolling7BarrelPct": 6.1,
-            "rolling14BarrelPct": 8.5,
-            "rolling30BarrelPct": 6.9,
-            "rolling7HardHitPct": 30.3,
-            "rolling14HardHitPct": 36.2,
-            "rolling30HardHitPct": 35.6,
-            "rolling7SweetSpotPct": 30.3,
-            "rolling14SweetSpotPct": 34,
-            "rolling30SweetSpotPct": 29.7,
-            "xwobaTrend": -0.082,
-            "barrelTrend": -0.8,
-            "hardHitTrend": -5.3,
-            "sweetSpotTrend": 0.6,
-            "trendSignal": "fading"
+            "gamesSample7": 2,
+            "paSample7": 6,
+            "bbeSample7": 9,
+            "recentStatcastGames": 3,
+            "recentStatcastPa": 7,
+            "recentStatcastAb": 6,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 9,
+            "recentBarrels": 0,
+            "recentHardHit": 0,
+            "recentSweetSpot": 1,
+            "recentBarrelPct": 0,
+            "recentHardHitPct": 0,
+            "recentSweetSpotPct": 11.1,
+            "recentXobp": 0.3136666666666667,
+            "recentXslg": 0.202,
+            "recentXops": 0.516,
+            "recentAvgExitVelocity": 77.78888888888888,
+            "recentAvgLaunchAngle": 60,
+            "rolling7Xwoba": 0.255,
+            "rolling14Xwoba": 0.255,
+            "rolling30Xwoba": 0.24,
+            "rolling7Xba": 0.176,
+            "rolling14Xba": 0.262,
+            "rolling30Xba": 0.199,
+            "rolling7Xslg": 0.202,
+            "rolling14Xslg": 0.336,
+            "rolling30Xslg": 0.322,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 0,
+            "rolling30BarrelPct": 2.6,
+            "rolling7HardHitPct": 0,
+            "rolling14HardHitPct": 18.2,
+            "rolling30HardHitPct": 18.2,
+            "rolling7SweetSpotPct": 11.1,
+            "rolling14SweetSpotPct": 22.7,
+            "rolling30SweetSpotPct": 19.5,
+            "xwobaTrend": 0.015,
+            "barrelTrend": -2.6,
+            "hardHitTrend": -18.2,
+            "sweetSpotTrend": -8.4,
+            "trendSignal": "improving"
           },
           "opponentContext": null,
           "careerProfile": {
-            "playerId": 691723,
-            "fullName": "Coby Mayo",
-            "seasonsSample": 3,
-            "debutYear": 2024,
+            "playerId": 641933,
+            "fullName": "Tyler O'Neill",
+            "seasonsSample": 9,
+            "debutYear": 2018,
             "latestMlbYear": 2026,
-            "careerGames": 149,
-            "careerPlateAppearances": 497,
-            "careerHits": 89,
-            "careerHomeRuns": 17,
-            "careerTotalBases": 157,
-            "careerWalks": 44,
-            "careerStrikeouts": 152,
-            "careerHitRate": 0.1791,
-            "careerAvg": 0.2,
-            "careerObp": 0.282,
-            "careerSlg": 0.353,
-            "careerOps": 0.635,
-            "careerTbPerPa": 0.3158953722334004,
-            "careerHrPerPa": 0.03420523138832998,
-            "careerKRate": 0.3058350100603622,
-            "careerBbRate": 0.08853118712273642,
-            "bestPowerYear": 2026,
-            "bestPowerHomeRuns": 6,
-            "bestPowerSlg": 0.3617021276595745,
+            "careerGames": 680,
+            "careerPlateAppearances": 2427,
+            "careerHits": 513,
+            "careerHomeRuns": 120,
+            "careerTotalBases": 973,
+            "careerWalks": 223,
+            "careerStrikeouts": 728,
+            "careerHitRate": 0.2114,
+            "careerAvg": 0.238,
+            "careerObp": 0.317,
+            "careerSlg": 0.452,
+            "careerOps": 0.769,
+            "careerTbPerPa": 0.4009064688916358,
+            "careerHrPerPa": 0.049443757725587144,
+            "careerKRate": 0.299958796868562,
+            "careerBbRate": 0.09188298310671611,
+            "bestPowerYear": 2024,
+            "bestPowerHomeRuns": 31,
+            "bestPowerSlg": 0.5109489051094891,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 157,
-            "recentMlbHomeRuns": 6,
-            "recentMlbTbPerPa": 0.3248407643312102,
-            "careerPowerIndex": 47.39,
-            "contactRiskIndex": 59.9,
-            "roleStabilityIndex": 96,
-            "repeatabilityLabel": "baseline career profile",
+            "recentMlbPlateAppearances": 109,
+            "recentMlbHomeRuns": 2,
+            "recentMlbTbPerPa": 0.2018348623853211,
+            "careerPowerIndex": 68.44,
+            "contactRiskIndex": 58.58,
+            "roleStabilityIndex": 100,
+            "repeatabilityLabel": "volatile career power",
             "volatilityLabel": "strikeout volatility",
-            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/691723?stats=statcast-r-hitting-mlb",
+            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/641933?stats=statcast-r-hitting-mlb",
             "fetchedAt": "2026-05-31T18:17:18Z"
           },
           "tags": [
-            "heater",
-            "arsenal edge",
+            "split edge",
+            "arsenal risk",
             "cold",
-            "statcast fade"
+            "statcast up",
+            "career power"
           ],
-          "primaryTag": "heater",
-          "summary": ".198 AVG | .647 OPS | 32 H | 8 HR | 10g: .190 AVG | .714 OPS | 8 H | 4 HR | vs RHP: .152 AVG | .476 OPS | 3 HR | career 497 PA | .635 OPS | 17 HR | baseline career profile | power 47 | 2026 sample ok | arsenal 4-Seam Fastball 53% / Slider 9% | fit +3.1 | -2.0 matchup grade in a in-zone lane",
-          "matchupNote": "-2.04 vs Kevin Gausman"
+          "primaryTag": "split edge",
+          "summary": ".158 AVG | .495 OPS | 16 H | 2 HR | 6g: .167 AVG | .452 OPS | 2 H | 0 HR | vs RHP: .216 AVG | .697 OPS | 2 HR | career 2427 PA | .769 OPS | 120 HR | volatile career power | power 68 | 2026 sample ok | arsenal 4-Seam Fastball 53% / Split-Finger 38% / Slider 9% | fit -7.3 | -8.0 matchup grade in a in-zone lane",
+          "matchupNote": "-8.00 vs Kevin Gausman"
         },
         {
           "playerId": 702616,
-          "slot": 9,
+          "slot": 8,
           "name": "Jackson Holliday",
           "position": "2B",
           "bats": "L",
@@ -4594,6 +5118,217 @@
           "primaryTag": "split edge",
           "summary": ".217 AVG | .684 OPS | 10 H | 2 HR | 10g: .125 AVG | .451 OPS | 4 H | 0 HR | vs RHP: .257 AVG | .814 OPS | 2 HR | career 895 PA | .665 OPS | 24 HR | baseline career profile | power 42 | shallow 2026 sample | arsenal 4-Seam Fastball 53% / Split-Finger 38% / Slider 9% | fit -0.3 | -4.2 matchup grade in a in-zone lane",
           "matchupNote": "-4.24 vs Kevin Gausman"
+        },
+        {
+          "playerId": 677942,
+          "slot": 9,
+          "name": "Blaze Alexander",
+          "position": "3B",
+          "bats": "R",
+          "savant": {
+            "playerId": 677942,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/blaze-alexander-677942",
+            "statsSuffix": "r-hitting-mlb",
+            "season": 2026,
+            "statsUrls": {
+              "statcast": "https://baseballsavant.mlb.com/savant-player/blaze-alexander-677942?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/blaze-alexander-677942?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/blaze-alexander-677942?stats=gamelogs-r-hitting-mlb&season=2026"
+            }
+          },
+          "season": {
+            "gamesPlayed": 54,
+            "hits": 36,
+            "singles": 27,
+            "doubles": 6,
+            "triples": 1,
+            "homeRuns": 2,
+            "walks": 10,
+            "totalBases": 50,
+            "atBats": 133,
+            "plateAppearances": 148,
+            "avg": 0.271,
+            "obp": 0.324,
+            "slg": 0.376,
+            "ops": 0.7,
+            "hitRate": 0.2432,
+            "singlesRate": 0.18239999999999998,
+            "hrRate": 0.013500000000000002,
+            "walkRate": 0.0676,
+            "totalBasesRate": 0.3378
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 8,
+            "singles": 6,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 2,
+            "walks": 4,
+            "totalBases": 14,
+            "atBats": 22,
+            "plateAppearances": 28,
+            "avg": 0.364,
+            "obp": 0.429,
+            "slg": 0.636,
+            "ops": 1.065,
+            "hitRate": 0.2857,
+            "singlesRate": 0.2143,
+            "hrRate": 0.07139999999999999,
+            "walkRate": 0.1429,
+            "totalBasesRate": 0.5
+          },
+          "split": {
+            "hits": 23,
+            "singles": 17,
+            "doubles": 5,
+            "triples": 0,
+            "homeRuns": 1,
+            "walks": 5,
+            "strikeouts": 24,
+            "totalBases": 31,
+            "atBats": 84,
+            "plateAppearances": 93,
+            "avg": 0.274,
+            "obp": 0.322,
+            "slg": 0.369,
+            "ops": 0.691,
+            "hitRate": 0.2473,
+            "singlesRate": 0.18280000000000002,
+            "hrRate": 0.0108,
+            "walkRate": 0.0538,
+            "kRate": 0.2581,
+            "totalBasesRate": 0.3333
+          },
+          "metrics": {
+            "powerScore": 30,
+            "contactScore": 47,
+            "patienceScore": 44,
+            "formScore": 92,
+            "splitScore": 46.7,
+            "varianceScore": 92,
+            "pitchTypeFitScore": 67.7,
+            "pitchTypeGrade": 1.61,
+            "pitchTypeCoveragePct": 61.8,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "pitchType": {
+            "fitScore": 67.7,
+            "fitGrade": 1.61,
+            "coveragePct": 61.8,
+            "summary": "4-Seam Fastball 53% / Slider 9% | fit +1.6",
+            "topPitches": [
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 53.2,
+                "fitGrade": 1.84,
+                "batterFitScore": 68.9,
+                "qualityScore": 58.8
+              },
+              {
+                "pitchType": "SL",
+                "pitchName": "Slider",
+                "pitchUsage": 8.7,
+                "fitGrade": 0.2,
+                "batterFitScore": 44.4,
+                "qualityScore": 43.3
+              }
+            ]
+          },
+          "statcastTrend": {
+            "sourceAsOfDate": "2026-06-06",
+            "gamesSample7": 3,
+            "paSample7": 10,
+            "bbeSample7": 29,
+            "recentStatcastGames": 4,
+            "recentStatcastPa": 14,
+            "recentStatcastAb": 11,
+            "recentStatcastHomeRuns": 1,
+            "recentBbeSample": 33,
+            "recentBarrels": 1,
+            "recentHardHit": 4,
+            "recentSweetSpot": 15,
+            "recentBarrelPct": 3,
+            "recentHardHitPct": 12.1,
+            "recentSweetSpotPct": 45.5,
+            "recentXobp": 0.4557142857142857,
+            "recentXslg": 0.6804545454545455,
+            "recentXops": 1.136,
+            "recentAvgExitVelocity": 85.44848484848485,
+            "recentAvgLaunchAngle": 9.290909090909091,
+            "rolling7Xwoba": 0.289,
+            "rolling14Xwoba": 0.357,
+            "rolling30Xwoba": 0.344,
+            "rolling7Xba": 0.282,
+            "rolling14Xba": 0.317,
+            "rolling30Xba": 0.289,
+            "rolling7Xslg": 0.33,
+            "rolling14Xslg": 0.542,
+            "rolling30Xslg": 0.493,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 1.5,
+            "rolling30BarrelPct": 3.4,
+            "rolling7HardHitPct": 6.9,
+            "rolling14HardHitPct": 16.9,
+            "rolling30HardHitPct": 18.4,
+            "rolling7SweetSpotPct": 44.8,
+            "rolling14SweetSpotPct": 47.7,
+            "rolling30SweetSpotPct": 46,
+            "xwobaTrend": -0.055,
+            "barrelTrend": -3.4,
+            "hardHitTrend": -11.5,
+            "sweetSpotTrend": -1.2,
+            "trendSignal": "fading"
+          },
+          "opponentContext": null,
+          "careerProfile": {
+            "playerId": 677942,
+            "fullName": "Blaze Alexander",
+            "seasonsSample": 3,
+            "debutYear": 2024,
+            "latestMlbYear": 2026,
+            "careerGames": 185,
+            "careerPlateAppearances": 588,
+            "careerHits": 127,
+            "careerHomeRuns": 11,
+            "careerTotalBases": 189,
+            "careerWalks": 46,
+            "careerStrikeouts": 171,
+            "careerHitRate": 0.21600000000000003,
+            "careerAvg": 0.244,
+            "careerObp": 0.322,
+            "careerSlg": 0.363,
+            "careerOps": 0.685,
+            "careerTbPerPa": 0.32142857142857145,
+            "careerHrPerPa": 0.01870748299319728,
+            "careerKRate": 0.29081632653061223,
+            "careerBbRate": 0.0782312925170068,
+            "bestPowerYear": 2025,
+            "bestPowerHomeRuns": 7,
+            "bestPowerSlg": 0.3826086956521739,
+            "recentMlbYear": 2026,
+            "recentMlbPlateAppearances": 137,
+            "recentMlbHomeRuns": 1,
+            "recentMlbTbPerPa": 0.32116788321167883,
+            "careerPowerIndex": 34.58,
+            "contactRiskIndex": 57.66,
+            "roleStabilityIndex": 96,
+            "repeatabilityLabel": "baseline career profile",
+            "volatilityLabel": "strikeout volatility",
+            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/677942?stats=statcast-r-hitting-mlb",
+            "fetchedAt": "2026-05-31T18:17:18Z"
+          },
+          "tags": [
+            "carry",
+            "heater",
+            "arsenal edge",
+            "statcast fade"
+          ],
+          "primaryTag": "carry",
+          "summary": ".271 AVG | .700 OPS | 36 H | 2 HR | 10g: .364 AVG | 1.065 OPS | 8 H | 2 HR | vs RHP: .274 AVG | .691 OPS | 1 HR | career 588 PA | .685 OPS | 11 HR | baseline career profile | power 35 | 2026 sample ok | arsenal 4-Seam Fastball 53% / Slider 9% | fit +1.6 | +10.0 matchup grade in a in-zone lane",
+          "matchupNote": "+10.00 vs Kevin Gausman"
         }
       ],
       "bvpHistory": {
@@ -4634,15 +5369,15 @@
             "summary": "3/18, 0 HR, 0 RBI, .433 OPS vs Kevin Gausman"
           },
           {
-            "name": "Leody Taveras",
-            "sample": "1/12",
-            "atBats": 12,
-            "avg": ".083",
-            "ops": ".417",
+            "name": "Tyler O'Neill",
+            "sample": "2/14",
+            "atBats": 14,
+            "avg": ".143",
+            "ops": ".635",
             "homeRuns": 1,
-            "rbi": 1,
+            "rbi": 3,
             "tone": "cold",
-            "summary": "1/12, 1 HR, 1 RBI, .417 OPS vs Kevin Gausman"
+            "summary": "2/14, 1 HR, 3 RBI, .635 OPS vs Kevin Gausman"
           },
           {
             "name": "Colton Cowser",
@@ -4659,27 +5394,27 @@
         "summary": "BvP sample is mixed: Taylor Ward owns the cleanest history, but Adley Rutschman shows the coldest prior lane."
       },
       "aggregate": {
-        "averageMatchupGrade": 2.16,
+        "averageMatchupGrade": 3.5,
         "trackedBatters": 9,
-        "starterThreatCount": 4,
+        "starterThreatCount": 5,
         "contactCount": 1,
         "powerCount": 3,
         "platoonCount": 7,
         "pitchTypeEdgeCount": 4,
-        "oppositeHandCount": 6,
-        "sameHandCount": 3,
-        "switchCount": 2,
+        "oppositeHandCount": 5,
+        "sameHandCount": 4,
+        "switchCount": 1,
         "topThirdSplitCount": 2,
         "topThirdArsenalCount": 0,
         "heaterCount": 4,
         "suppressorCount": 2,
-        "platoonPressureIndex": 91.8,
-        "pitchTypePressureIndex": 49.1,
+        "platoonPressureIndex": 86,
+        "pitchTypePressureIndex": 46.4,
         "bullpenPitchTypePressureIndex": null,
-        "starterPressureIndex": 84.9,
-        "overallPressureIndex": 84.9,
+        "starterPressureIndex": 92.7,
+        "overallPressureIndex": 92.7,
         "topThirdScore": 59.2,
-        "depthScore": 57.9,
+        "depthScore": 48.5,
         "bullpenOverperformHitters": []
       },
       "summary": {
@@ -4701,7 +5436,7 @@
         "bullpenOverperformHitters": [],
         "underperformHitters": [
           {
-            "name": "Leody Taveras",
+            "name": "Tyler O'Neill",
             "tag": "split edge | -8.00 vs Kevin Gausman"
           },
           {
@@ -4709,12 +5444,12 @@
             "tag": "split edge | -4.24 vs Kevin Gausman"
           }
         ],
-        "underperformNote": "Leody Taveras and Jackson Holliday carry the softer form or split fit into a strike-throwing lane.",
+        "underperformNote": "Tyler O'Neill and Jackson Holliday carry the softer form or split fit into a strike-throwing lane.",
         "overview": "Orioles can lean on Adley Rutschman, Pete Alonso, Colton Cowser to drive early pressure against Kevin Gausman.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
         "topThirdScore": 59.2,
-        "middleScore": 62.8,
-        "depthScore": 57.9,
+        "middleScore": 88.1,
+        "depthScore": 48.5,
         "bullpenPitchTypeSummary": null
       }
     },
@@ -6795,15 +7530,15 @@
       "fullName": "Shane Baz",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 5,
-      "era": "4.29",
-      "strikeOuts": 63,
-      "inningsPitched": "71.1",
-      "hitsAllowed": 69,
-      "walks": 29,
-      "homeRunsAllowed": 7,
-      "whip": "1.37",
-      "gamesStarted": 12,
+      "losses": 6,
+      "era": "4.09",
+      "strikeOuts": 66,
+      "inningsPitched": "77.0",
+      "hitsAllowed": 76,
+      "walks": 30,
+      "homeRunsAllowed": 8,
+      "whip": "1.38",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 669358,
@@ -6957,19 +7692,19 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/shane-baz-vs-blue-jays",
-        "answerText": "Shane Baz has a record of 4-0 with an ERA of 2.23 and 32 strikeouts in 6 appearances versus the Blue Jays in his career.",
+        "answerText": "Shane Baz is 4-0 with an ERA of 2.23 and 32 strikeouts in 6 appearances versus the Blue Jays in his career.",
         "pitcherName": "Shane Baz",
         "pitcherTeam": "Orioles",
         "opponentTeam": "Blue Jays",
         "appearances": 6,
         "gamesStarted": 6,
-        "wins": null,
-        "losses": null,
+        "wins": 4,
+        "losses": 0,
         "era": 2.23,
         "strikeouts": 32,
         "inningsPitched": "32.1",
@@ -7150,7 +7885,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:37.424Z"
+        "fetchedAt": "2026-06-07T16:38:51.136Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -12233,7 +12968,7 @@
           "Away split: 4.12 ERA / 4 HR allowed.",
           "vs. Left: .277 AVG / .796 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -12260,14 +12995,14 @@
       "pitchHand": "R",
       "wins": 4,
       "losses": 4,
-      "era": "3.36",
-      "strikeOuts": 74,
-      "inningsPitched": "75.0",
-      "hitsAllowed": 68,
+      "era": "3.60",
+      "strikeOuts": 79,
+      "inningsPitched": "80.0",
+      "hitsAllowed": 73,
       "walks": 14,
-      "homeRunsAllowed": 7,
+      "homeRunsAllowed": 9,
       "whip": "1.09",
-      "gamesStarted": 13,
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 592332,
@@ -12416,17 +13151,17 @@
       "strikeoutMarket": {
         "playerName": "Kevin Gausman",
         "line": 6.5,
-        "overPrice": 107,
+        "overPrice": 115,
         "underPrice": -136,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/kevin-gausman-vs-orioles",
-        "answerText": "Kevin Gausman has a 3-4 record with an ERA of 4.53 and 36 strikeouts in 8 appearances versus the Orioles in his career.",
+        "answerText": "Kevin Gausman is 3-4 with an ERA of 4.53 and 36 strikeouts in 8 appearances versus the Orioles in his career.",
         "pitcherName": "Kevin Gausman",
         "pitcherTeam": "Blue Jays",
         "opponentTeam": "Orioles",
@@ -12662,7 +13397,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:38.346Z"
+        "fetchedAt": "2026-06-07T16:38:52.247Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -17491,7 +18226,7 @@
           "vs. Left: .259 AVG / .679 OPS allowed.",
           "Rogers Centre: 2.90 ERA / .237 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -17540,7 +18275,7 @@
       {
         "label": "Spread",
         "book": "DraftKings typed MLB board",
-        "value": "Orioles +1.5 -181 / Blue Jays -1.5 +149"
+        "value": "Orioles +1.5 -185 / Blue Jays -1.5 +152"
       },
       {
         "label": "Total",
@@ -17550,17 +18285,17 @@
       {
         "label": "Moneyline",
         "book": "DraftKings typed MLB board",
-        "value": "Orioles +118 / Blue Jays -142"
+        "value": "Orioles +118 / Blue Jays -143"
       },
       {
         "label": "1st 5 ML",
         "book": "DraftKings typed MLB board",
-        "value": "Orioles +114 / Blue Jays -145"
+        "value": "Orioles +110 / Blue Jays -140"
       },
       {
         "label": "1st 5 Total",
         "book": "DraftKings typed MLB board",
-        "value": "o4.5 +100 / u4.5 -130"
+        "value": "o4.5 -105 / u4.5 -125"
       }
     ],
     "note": "Board snapshot plus model context.",
@@ -17572,7 +18307,7 @@
       "index": 0,
       "role": "Away",
       "name": "Orioles",
-      "detail": "Shane Baz (RHP) | 3-5 | 4.29 ERA | 63 SO | 1.37 WHIP | 71.1 IP",
+      "detail": "Shane Baz (RHP) | 3-6 | 4.09 ERA | 66 SO | 1.38 WHIP | 77.0 IP",
       "americanOdds": 118,
       "americanLabel": "+118",
       "decimalOdds": 2.1799999999999997,
@@ -17584,12 +18319,12 @@
       "index": 1,
       "role": "Home",
       "name": "Blue Jays",
-      "detail": "Kevin Gausman (RHP) | 4-4 | 3.36 ERA | 74 SO | 1.09 WHIP | 75.0 IP",
-      "americanOdds": -142,
-      "americanLabel": "-142",
-      "decimalOdds": 1.704225352112676,
-      "impliedProbability": 0.5867768595041323,
-      "impliedProbabilityLabel": "58.7%"
+      "detail": "Kevin Gausman (RHP) | 4-4 | 3.60 ERA | 79 SO | 1.09 WHIP | 80.0 IP",
+      "americanOdds": -143,
+      "americanLabel": "-143",
+      "decimalOdds": 1.6993006993006992,
+      "impliedProbability": 0.588477366255144,
+      "impliedProbabilityLabel": "58.8%"
     }
   ],
   "moneyline": {
@@ -17602,7 +18337,7 @@
         "index": 0,
         "role": "Away",
         "name": "Orioles",
-        "detail": "Shane Baz (RHP) | 3-5 | 4.29 ERA | 63 SO | 1.37 WHIP | 71.1 IP",
+        "detail": "Shane Baz (RHP) | 3-6 | 4.09 ERA | 66 SO | 1.38 WHIP | 77.0 IP",
         "americanOdds": 118,
         "americanLabel": "+118",
         "decimalOdds": 2.1799999999999997,
@@ -17614,12 +18349,12 @@
         "index": 1,
         "role": "Home",
         "name": "Blue Jays",
-        "detail": "Kevin Gausman (RHP) | 4-4 | 3.36 ERA | 74 SO | 1.09 WHIP | 75.0 IP",
-        "americanOdds": -142,
-        "americanLabel": "-142",
-        "decimalOdds": 1.704225352112676,
-        "impliedProbability": 0.5867768595041323,
-        "impliedProbabilityLabel": "58.7%"
+        "detail": "Kevin Gausman (RHP) | 4-4 | 3.60 ERA | 79 SO | 1.09 WHIP | 80.0 IP",
+        "americanOdds": -143,
+        "americanLabel": "-143",
+        "decimalOdds": 1.6993006993006992,
+        "impliedProbability": 0.588477366255144,
+        "impliedProbabilityLabel": "58.8%"
       }
     ]
   },
@@ -17631,58 +18366,58 @@
       "index": 1,
       "role": "Home",
       "name": "Blue Jays",
-      "detail": "Kevin Gausman (RHP) | 4-4 | 3.36 ERA | 74 SO | 1.09 WHIP | 75.0 IP",
-      "americanOdds": -142,
-      "americanLabel": "-142",
-      "decimalOdds": 1.704225352112676,
-      "impliedProbability": 0.5867768595041323,
-      "impliedProbabilityLabel": "58.7%"
+      "detail": "Kevin Gausman (RHP) | 4-4 | 3.60 ERA | 79 SO | 1.09 WHIP | 80.0 IP",
+      "americanOdds": -143,
+      "americanLabel": "-143",
+      "decimalOdds": 1.6993006993006992,
+      "impliedProbability": 0.588477366255144,
+      "impliedProbabilityLabel": "58.8%"
     },
     "opponent": {
       "id": "orioles-blue-jays:0",
       "index": 0,
       "role": "Away",
       "name": "Orioles",
-      "detail": "Shane Baz (RHP) | 3-5 | 4.29 ERA | 63 SO | 1.37 WHIP | 71.1 IP",
+      "detail": "Shane Baz (RHP) | 3-6 | 4.09 ERA | 66 SO | 1.38 WHIP | 77.0 IP",
       "americanOdds": 118,
       "americanLabel": "+118",
       "decimalOdds": 2.1799999999999997,
       "impliedProbability": 0.45871559633027525,
       "impliedProbabilityLabel": "45.9%"
     },
-    "lean": "Model pick: Blue Jays on market price and projected hit volume.",
-    "rationale": "Market price: Blue Jays (56.1% no-vig) vs Orioles (43.9% no-vig)",
-    "confidence": 70,
-    "volatility": 73,
-    "recommendationScore": 49,
-    "tier": "Strong",
+    "lean": "Model pick: Blue Jays on market price and standings profile.",
+    "rationale": "Market price: Blue Jays (56.2% no-vig) vs Orioles (43.8% no-vig)",
+    "confidence": 69,
+    "volatility": 74,
+    "recommendationScore": 48,
+    "tier": "Swingy",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 6.5,
-    "modelEdgeLabel": "6.5-point model edge",
-    "marketProbability": 0.5612444702298934,
-    "marketProbabilityLabel": "56.1%",
+    "modelEdge": 5.9,
+    "modelEdgeLabel": "5.9-point model edge",
+    "marketProbability": 0.5619569528067202,
+    "marketProbabilityLabel": "56.2%",
     "inputs": [
       {
         "label": "Market price",
-        "summary": "Market price: Blue Jays (56.1% no-vig) vs Orioles (43.9% no-vig)",
+        "summary": "Market price: Blue Jays (56.2% no-vig) vs Orioles (43.8% no-vig)",
         "source": "Moneyline board",
-        "margin": 12.2,
+        "margin": 12.4,
         "weight": 0.26
       },
       {
-        "label": "Projected hit volume",
-        "summary": "Projected hit volume: Blue Jays (10 hits | 29.1% efficiency) vs Orioles (7.2 hits | 20.8% efficiency)",
-        "source": "Composite offense vs starter and bullpen projection",
-        "margin": 11,
-        "weight": 0.19
+        "label": "Standings profile",
+        "summary": "Standings profile: Blue Jays (32-35, 3rd in division, -16 RD) vs Orioles (31-36, 4th in division, -34 RD)",
+        "source": "Standings context",
+        "margin": 10.6,
+        "weight": 0.14
       },
       {
-        "label": "Starter ERA",
-        "summary": "Starter ERA: Blue Jays (3.36 ERA) vs Orioles (4.29 ERA)",
+        "label": "Starter record",
+        "summary": "Starter record: Blue Jays (4-4) vs Orioles (3-6)",
         "source": "Listed probable starters",
-        "margin": 8.4,
-        "weight": 0.23
+        "margin": 7.7,
+        "weight": 0.16
       }
     ],
     "inputsUsed": 11,
@@ -17721,22 +18456,22 @@
       }
     ],
     "pickReasons": [
-      "Blue Jays own the cleaner full-game traffic script at 10 projected hits.",
-      "Blue Jays have the better starter-window lane with 5.5 projected first-five hits.",
+      "Blue Jays own the cleaner full-game traffic script at 10.3 projected hits.",
+      "Blue Jays have the better starter-window lane with 5.6 projected first-five hits.",
       "Blue Jays still hold the better bridge-and-finish script once the bullpens take over.",
       "Blue Jays can lean on Yohendrick Piñango, Ernie Clement, Brandon Valenzuela to drive early pressure against Shane Baz."
     ],
     "indicators": {
       "reliefPitchingRisk": 36,
       "coinflipPressure": 39,
-      "starterLeverageIndex": 63.5,
+      "starterLeverageIndex": 60.2,
       "lateInningStabilityIndex": 53.1,
       "pickBullpenScore": 63.5,
       "oppBullpenScore": 61.2,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 69.4,
-      "oppStarterScore": 62.5,
+      "pickStarterScore": 68.6,
+      "oppStarterScore": 62.7,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -17792,7 +18527,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 2.2,
+      "projectedHitEdgeForPick": 2.3,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
@@ -17815,12 +18550,11 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": 24,
+      "efficientFavoriteScore": 12,
       "efficientFavoriteTier": "Watch favorite",
       "efficientFavoriteReasons": [
         "moderateFavoritePrice",
-        "broadSupport",
-        "modelAgreement"
+        "broadSupport"
       ],
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
@@ -17833,7 +18567,7 @@
         "moderateFavoriteClean"
       ],
       "favoredSignalCount": 9,
-      "starterLateGap": 10.4,
+      "starterLateGap": 7.1,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 0,
       "gameShape": {
@@ -17841,8 +18575,8 @@
         "shapeLabel": "balanced traffic game",
         "category": "early_pressure_side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "categoryConfidence": 61.5,
-        "realityGapScore": 31.9,
+        "categoryConfidence": 61.7,
+        "realityGapScore": 32,
         "chaosScore": 38.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -17859,10 +18593,10 @@
           {
             "id": "pressure",
             "label": "Pressure",
-            "score": 30.1
+            "score": 30.7
           }
         ],
-        "rfImpactScore": 24.1
+        "rfImpactScore": 24.2
       }
     },
     "gameShape": {
@@ -17873,7 +18607,7 @@
         "slug": "early_pressure_side",
         "label": "Early-pressure side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "confidence": 61.5,
+        "confidence": 61.7,
         "reasons": [
           "The pick needs to cash the first traffic pocket.",
           "The best edge is timing, not late-game patience."
@@ -17917,10 +18651,10 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 2.2
+          "projectedHitEdge": 2.3
         }
       },
-      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 31.9/100. Main checks: Dome In Domed Stadium.",
+      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 32/100. Main checks: Dome In Domed Stadium.",
       "pickTeam": "Blue Jays",
       "opponentTeam": "Orioles",
       "scores": {
@@ -17928,9 +18662,9 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
         "bullpenFlipScore": 3.9,
-        "starterControlScore": 41.3,
-        "marketContradictionScore": 1.4,
-        "realityGapScore": 31.9
+        "starterControlScore": 36.5,
+        "marketContradictionScore": 2.3,
+        "realityGapScore": 32
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -17944,8 +18678,8 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 30.1,
-            "pickScore": 30.1,
+            "gameScore": 30.7,
+            "pickScore": 30.7,
             "opponentScore": 11.3
           },
           {
@@ -17994,7 +18728,7 @@
             "role": "pick",
             "team": "Blue Jays",
             "scores": {
-              "pressure": 30.1,
+              "pressure": 30.7,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
@@ -18002,7 +18736,7 @@
               "flow": 100
             },
             "polygon": [
-              30.1,
+              30.7,
               0,
               0,
               0,
@@ -18013,7 +18747,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 69.4,
+              "starterScore": 68.6,
               "bullpenScore": 63.5,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18046,7 +18780,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 62.5,
+              "starterScore": 62.7,
               "bullpenScore": 61.2,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18061,7 +18795,7 @@
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 30.1,
+            "pressure": 30.7,
             "chaos": 38.8,
             "freeze": 8.5,
             "air": 0,
@@ -18069,7 +18803,7 @@
             "flow": 100
           },
           "polygon": [
-            30.1,
+            30.7,
             38.8,
             8.5,
             0,
@@ -18090,7 +18824,7 @@
             {
               "id": "pressure",
               "label": "Pressure",
-              "score": 30.1
+              "score": 30.7
             }
           ]
         }
@@ -18150,13 +18884,13 @@
       "marketImplications": {
         "side": "Blue Jays is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
-        "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
+        "total": "No forced total edge. Wait for a line move or a clearer first-five total.",
         "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 92% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 24.1,
+        "impactScore": 24.2,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -18191,26 +18925,26 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 7.2,
-      "homeProjectedHits": 10,
-      "awayHitEfficiencyPct": 20.8,
-      "homeHitEfficiencyPct": 29.1,
-      "awayFirst5ProjectedHits": 4,
-      "homeFirst5ProjectedHits": 5.5,
-      "awayFirst5HitEfficiencyPct": 20.9,
-      "homeFirst5HitEfficiencyPct": 29,
-      "awayLateProjectedHits": 3.3,
-      "homeLateProjectedHits": 4.4,
-      "awayLateHitEfficiencyPct": 21,
-      "homeLateHitEfficiencyPct": 28.9,
+      "awayProjectedHits": 8,
+      "homeProjectedHits": 10.3,
+      "awayHitEfficiencyPct": 23.2,
+      "homeHitEfficiencyPct": 29.9,
+      "awayFirst5ProjectedHits": 4.5,
+      "homeFirst5ProjectedHits": 5.6,
+      "awayFirst5HitEfficiencyPct": 23.5,
+      "homeFirst5HitEfficiencyPct": 29.5,
+      "awayLateProjectedHits": 3.7,
+      "homeLateProjectedHits": 4.5,
+      "awayLateHitEfficiencyPct": 24,
+      "homeLateHitEfficiencyPct": 29,
       "awayBullpenChainScore": null,
       "homeBullpenChainScore": null,
       "edgeTeam": "Blue Jays",
-      "edgeHits": 2.8,
+      "edgeHits": 2.3,
       "first5EdgeTeam": "Blue Jays",
-      "first5EdgeHits": 1.5,
+      "first5EdgeHits": 1.1,
       "lateEdgeTeam": "Blue Jays",
-      "lateEdgeHits": 1.1,
+      "lateEdgeHits": 0.8,
       "bridgeEdgeTeam": "",
       "bridgeEdgeScore": null,
       "awayLikelyRelievers": [],
@@ -18222,21 +18956,21 @@
       "awayPitcherType": "Balanced righty",
       "homePitcherType": "Strike-throwing righty",
       "awayStarterHoldConfidence": 43.6,
-      "homeStarterHoldConfidence": 43.3,
-      "awayProjectedRuns": 3.2,
-      "homeProjectedRuns": 4.2,
-      "awayFirst5ProjectedRuns": 1.7,
-      "homeFirst5ProjectedRuns": 2.3,
-      "awayLateProjectedRuns": 1.5,
-      "homeLateProjectedRuns": 1.9,
+      "homeStarterHoldConfidence": 41.4,
+      "awayProjectedRuns": 3.5,
+      "homeProjectedRuns": 4.4,
+      "awayFirst5ProjectedRuns": 1.9,
+      "homeFirst5ProjectedRuns": 2.4,
+      "awayLateProjectedRuns": 1.6,
+      "homeLateProjectedRuns": 2,
       "postedTotal": 8,
       "totals": {
         "fullGame": {
-          "lean": "Under",
-          "edge": -0.6,
-          "strength": "Lean",
-          "label": "Under 8",
-          "summary": "Under lean with a 0.6-run edge against 8.",
+          "lean": "Pass",
+          "edge": -0.1,
+          "strength": "Thin",
+          "label": "Hold 8",
+          "summary": "Model projection 7.9 is essentially on the posted 8.",
           "chaosGate": {
             "phase": "full",
             "overChaosScore": 1,
@@ -18259,11 +18993,11 @@
           }
         },
         "first5": {
-          "lean": "Under",
-          "edge": -0.5,
-          "strength": "Lean",
-          "label": "Under 4.5",
-          "summary": "Under lean with a 0.5-run edge against 4.5.",
+          "lean": "Pass",
+          "edge": -0.2,
+          "strength": "Thin",
+          "label": "Hold 4.5",
+          "summary": "Model projection 4.3 is essentially on the posted 4.5.",
           "chaosGate": {
             "phase": "first5",
             "overChaosScore": 1,
@@ -18285,12 +19019,12 @@
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 4,
-            "adjustedProjectedRuns": 4,
-            "adjustedEdge": -0.5,
-            "marketExpression": "Under",
+            "baseProjectedRuns": 4.3,
+            "adjustedProjectedRuns": 4.3,
+            "adjustedEdge": -0.2,
+            "marketExpression": "Pass",
             "shape": "balanced",
-            "tailScore": 7,
+            "tailScore": 10.3,
             "strandScore": 0,
             "forkScore": 0,
             "tailLift": 0,
@@ -18304,7 +19038,7 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 9.5,
+              "totalFirst5ProjectedHits": 10.1,
               "weatherCarry": false,
               "weatherSuppress": false,
               "visibilityRisk": null
@@ -18313,10 +19047,10 @@
         },
         "late": {
           "lean": "Pass",
-          "edge": -0.1,
+          "edge": 0.1,
           "strength": "Thin",
           "label": "Hold 3.5",
-          "summary": "Model projection 3.4 is essentially on the posted 3.5.",
+          "summary": "Model projection 3.6 is essentially on the posted 3.5.",
           "chaosGate": {
             "phase": "late",
             "overChaosScore": 1,
@@ -18338,16 +19072,16 @@
             }
           }
         },
-        "projectedFullTotalRuns": 7.4,
-        "projectedFirst5TotalRuns": 4,
-        "tailAdjustedProjectedFirst5TotalRuns": 4,
+        "projectedFullTotalRuns": 7.9,
+        "projectedFirst5TotalRuns": 4.3,
+        "tailAdjustedProjectedFirst5TotalRuns": 4.3,
         "first5TailOverlay": {
-          "baseProjectedRuns": 4,
-          "adjustedProjectedRuns": 4,
-          "adjustedEdge": -0.5,
-          "marketExpression": "Under",
+          "baseProjectedRuns": 4.3,
+          "adjustedProjectedRuns": 4.3,
+          "adjustedEdge": -0.2,
+          "marketExpression": "Pass",
           "shape": "balanced",
-          "tailScore": 7,
+          "tailScore": 10.3,
           "strandScore": 0,
           "forkScore": 0,
           "tailLift": 0,
@@ -18361,16 +19095,16 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 9.5,
+            "totalFirst5ProjectedHits": 10.1,
             "weatherCarry": false,
             "weatherSuppress": false,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 3.4,
+        "projectedLateTotalRuns": 3.6,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 4.3,
+        "runShareFirst5TotalLine": 4.4,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 3.5,
         "bullpenExhaustionNote": "Dome In Domed Stadium. No major bridge-chain exhaustion flag has surfaced yet.",
@@ -18410,7 +19144,7 @@
       "teamScripts": [
         {
           "teamName": "Orioles",
-          "lineupStatus": "partial lineup",
+          "lineupStatus": "confirmed lineup",
           "overperformHitters": [
             {
               "name": "Adley Rutschman",
@@ -18427,7 +19161,7 @@
           ],
           "underperformHitters": [
             {
-              "name": "Leody Taveras",
+              "name": "Tyler O'Neill",
               "tag": "split edge | -8.00 vs Kevin Gausman"
             },
             {
@@ -18435,11 +19169,11 @@
               "tag": "split edge | -4.24 vs Kevin Gausman"
             }
           ],
-          "underperformNote": "Leody Taveras and Jackson Holliday carry the softer form or split fit into a strike-throwing lane.",
+          "underperformNote": "Tyler O'Neill and Jackson Holliday carry the softer form or split fit into a strike-throwing lane.",
           "overview": "Orioles can lean on Adley Rutschman, Pete Alonso, Colton Cowser to drive early pressure against Kevin Gausman.",
           "topThirdScore": 59.2,
-          "middleScore": 62.8,
-          "depthScore": 57.9,
+          "middleScore": 88.1,
+          "depthScore": 48.5,
           "bullpenOverperformHitters": [],
           "winPath": [
             "Orioles can lean on Adley Rutschman, Pete Alonso, Colton Cowser to drive early pressure against Kevin Gausman.",
@@ -18482,8 +19216,8 @@
           "depthScore": 48.8,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Blue Jays own the cleaner full-game traffic script at 10 projected hits.",
-            "Blue Jays have the better starter-window lane with 5.5 projected first-five hits.",
+            "Blue Jays own the cleaner full-game traffic script at 10.3 projected hits.",
+            "Blue Jays have the better starter-window lane with 5.6 projected first-five hits.",
             "Blue Jays still hold the better bridge-and-finish script once the bullpens take over.",
             "Blue Jays can lean on Yohendrick Piñango, Ernie Clement, Brandon Valenzuela to drive early pressure against Shane Baz.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -18498,19 +19232,19 @@
           {
             "label": "First 5",
             "edgeTeam": "Blue Jays",
-            "projection": "2.3 R",
+            "projection": "2.4 R",
             "note": "Blue Jays lean on Yohendrick Piñango, Ernie Clement to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
             "edgeTeam": "Blue Jays",
-            "projection": "1.9 R",
+            "projection": "2 R",
             "note": "Blue Jays keep more late scoring paths alive, with Yohendrick Piñango, Ernie Clement plus the stronger bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Blue Jays",
-            "projection": "10 H",
+            "projection": "10.3 H",
             "note": "Blue Jays finish with the stronger aggregate traffic path, anchored by Yohendrick Piñango, Ernie Clement."
           }
         ]
@@ -18534,17 +19268,17 @@
         "marketType": "ML shape",
         "selection": "Blue Jays",
         "opponent": "Orioles",
-        "pickProjectedRuns": 4.2,
-        "opponentProjectedRuns": 3.2,
-        "projectedTotalRuns": 7.4,
-        "runDiff": 1,
-        "absoluteRunDiff": 1,
-        "runDiffSharePct": 13.5,
-        "confidence": 70,
-        "marketProbabilityPct": 56.1,
+        "pickProjectedRuns": 4.4,
+        "opponentProjectedRuns": 3.5,
+        "projectedTotalRuns": 7.9,
+        "runDiff": 0.9,
+        "absoluteRunDiff": 0.9,
+        "runDiffSharePct": 11.4,
+        "confidence": 69,
+        "marketProbabilityPct": 56.2,
         "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Blue Jays projects 1 runs better in a 7.4-run environment."
+        "note": "Blue Jays projects 0.9 runs better in a 7.9-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -18554,7 +19288,7 @@
           "slug": "early_pressure_side",
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-          "confidence": 61.5,
+          "confidence": 61.7,
           "reasons": [
             "The pick needs to cash the first traffic pocket.",
             "The best edge is timing, not late-game patience."
@@ -18598,10 +19332,10 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 2.2
+            "projectedHitEdge": 2.3
           }
         },
-        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 31.9/100. Main checks: Dome In Domed Stadium.",
+        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 32/100. Main checks: Dome In Domed Stadium.",
         "pickTeam": "Blue Jays",
         "opponentTeam": "Orioles",
         "scores": {
@@ -18609,9 +19343,9 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
           "bullpenFlipScore": 3.9,
-          "starterControlScore": 41.3,
-          "marketContradictionScore": 1.4,
-          "realityGapScore": 31.9
+          "starterControlScore": 36.5,
+          "marketContradictionScore": 2.3,
+          "realityGapScore": 32
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -18625,8 +19359,8 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 30.1,
-              "pickScore": 30.1,
+              "gameScore": 30.7,
+              "pickScore": 30.7,
               "opponentScore": 11.3
             },
             {
@@ -18675,7 +19409,7 @@
               "role": "pick",
               "team": "Blue Jays",
               "scores": {
-                "pressure": 30.1,
+                "pressure": 30.7,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
@@ -18683,7 +19417,7 @@
                 "flow": 100
               },
               "polygon": [
-                30.1,
+                30.7,
                 0,
                 0,
                 0,
@@ -18694,7 +19428,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 69.4,
+                "starterScore": 68.6,
                 "bullpenScore": 63.5,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18727,7 +19461,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 62.5,
+                "starterScore": 62.7,
                 "bullpenScore": 61.2,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18742,7 +19476,7 @@
             "label": "Early-pressure side",
             "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 30.1,
+              "pressure": 30.7,
               "chaos": 38.8,
               "freeze": 8.5,
               "air": 0,
@@ -18750,7 +19484,7 @@
               "flow": 100
             },
             "polygon": [
-              30.1,
+              30.7,
               38.8,
               8.5,
               0,
@@ -18771,7 +19505,7 @@
               {
                 "id": "pressure",
                 "label": "Pressure",
-                "score": 30.1
+                "score": 30.7
               }
             ]
           }
@@ -18831,13 +19565,13 @@
         "marketImplications": {
           "side": "Blue Jays is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
-          "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
+          "total": "No forced total edge. Wait for a line move or a clearer first-five total.",
           "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 92% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 24.1,
+          "impactScore": 24.2,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -18874,12 +19608,12 @@
       "first5Moneyline": {
         "pickSide": "home",
         "pickTeam": "Blue Jays",
-        "awayProjectedRuns": 1.7,
-        "homeProjectedRuns": 2.3,
-        "awayLeadProbability": 28.6,
-        "homeLeadProbability": 51.5,
-        "pushProbability": 19.9,
-        "leadProbability": 51.5,
+        "awayProjectedRuns": 1.9,
+        "homeProjectedRuns": 2.4,
+        "awayLeadProbability": 31,
+        "homeLeadProbability": 49.6,
+        "pushProbability": 19.4,
+        "leadProbability": 49.6,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -18889,7 +19623,78 @@
     "targets": [],
     "featured": [
       {
-        "id": "orioles-blue-jays:678218:homeRun",
+        "id": "orioles-blue-jays:668939:homeRun",
+        "gameId": "orioles-blue-jays",
+        "gameTitle": "Orioles @ Blue Jays",
+        "league": "MLB",
+        "playerId": 668939,
+        "playerName": "Adley Rutschman",
+        "teamName": "Orioles",
+        "slot": 3,
+        "propType": "homeRun",
+        "propLabel": "HR",
+        "marketLabel": "Over 0.5 HR",
+        "confidence": 56,
+        "probability": 21.7,
+        "expectedValue": 0.2,
+        "statValueLabel": "0.25 exp HR",
+        "sample": {
+          "seasonGames": 47,
+          "seasonPlateAppearances": 200,
+          "recentGames": 12,
+          "recentPlateAppearances": 54,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 28,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 2337,
+          "seasonPa": 200,
+          "powerIndex": 54.67,
+          "contactRisk": 30.39,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 78.4,
+            "processScore": 18,
+            "careerWeight": 0.1,
+            "identityDelta": 7.1,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 200,
+            "careerPa": 2337
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 3 carry | contact-stable profile | process improving; approach 78.4/100 | hard-hit / barrel trend is live",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "carry-bat-live",
+          "process-improving",
+          "statcast-power-up",
+          "statcast-contact-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+10.00 vs Kevin Gausman",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".267 AVG | .839 OPS | 47 H | 8 HR | 12g: .348 AVG | 1.060 OPS | 16 H | 2 HR | vs RHP: .284 AVG | .899 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal 4-Seam Fastball 53% / Split-Finger 38% / Slider 9% | fit +1.2 | +10.0 matchup grade in a in-zone lane"
+      },
+      {
+        "id": "orioles-blue-jays:678218:rbi",
         "gameId": "orioles-blue-jays",
         "gameTitle": "Orioles @ Blue Jays",
         "league": "MLB",
@@ -18897,13 +19702,13 @@
         "playerName": "Brandon Valenzuela",
         "teamName": "Blue Jays",
         "slot": 6,
-        "propType": "homeRun",
-        "propLabel": "HR",
-        "marketLabel": "Over 0.5 HR",
-        "confidence": 55,
-        "probability": 29.3,
-        "expectedValue": 0.3,
-        "statValueLabel": "0.35 exp HR",
+        "propType": "rbi",
+        "propLabel": "RBI",
+        "marketLabel": "Over 0.5 RBI",
+        "confidence": 65,
+        "probability": 78.5,
+        "expectedValue": 1.5,
+        "statValueLabel": "1.54 exp RBI",
         "sample": {
           "seasonGames": 42,
           "seasonPlateAppearances": 131,
@@ -18943,7 +19748,7 @@
         "recommendationTier": "Lean",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 6 carry | baseline career profile | process improving; approach 72.8/100 | hard-hit / barrel trend is live",
+        "reason": "slot 6 carry | process improving; approach 72.8/100 | recent form up | split fit live",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
@@ -18962,7 +19767,7 @@
         "playerSummary": ".254 AVG | .795 OPS | 29 H | 6 HR | 10g: .313 AVG | 1.146 OPS | 10 H | 4 HR | vs RHP: .265 AVG | .795 OPS | 4 HR | career 116 PA | .716 OPS | 4 HR | baseline career profile | power 52 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +0.9 | +10.0 matchup grade in a neutral lane"
       },
       {
-        "id": "orioles-blue-jays:678218:rbi",
+        "id": "orioles-blue-jays:678218:runs",
         "gameId": "orioles-blue-jays",
         "gameTitle": "Orioles @ Blue Jays",
         "league": "MLB",
@@ -18970,13 +19775,13 @@
         "playerName": "Brandon Valenzuela",
         "teamName": "Blue Jays",
         "slot": 6,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 76,
-        "probability": 76.9,
-        "expectedValue": 1.5,
-        "statValueLabel": "1.47 exp RBI",
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 68,
+        "probability": 72.1,
+        "expectedValue": 1.3,
+        "statValueLabel": "1.28 exp runs",
         "sample": {
           "seasonGames": 42,
           "seasonPlateAppearances": 131,
@@ -19016,7 +19821,7 @@
         "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 6 carry | process improving; approach 72.8/100 | recent form up | split fit live",
+        "reason": "slot 6 carry | recent form up | split fit live",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
@@ -19035,6 +19840,79 @@
         "playerSummary": ".254 AVG | .795 OPS | 29 H | 6 HR | 10g: .313 AVG | 1.146 OPS | 10 H | 4 HR | vs RHP: .265 AVG | .795 OPS | 4 HR | career 116 PA | .716 OPS | 4 HR | baseline career profile | power 52 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +0.9 | +10.0 matchup grade in a neutral lane"
       },
       {
+        "id": "orioles-blue-jays:676391:hitRunRbi",
+        "gameId": "orioles-blue-jays",
+        "gameTitle": "Orioles @ Blue Jays",
+        "league": "MLB",
+        "playerId": 676391,
+        "playerName": "Ernie Clement",
+        "teamName": "Blue Jays",
+        "slot": 5,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
+        "confidence": 82,
+        "probability": 91.8,
+        "expectedValue": 4.1,
+        "statValueLabel": "2.33 H · 0.77 R · 1.03 RBI · 4.14 total",
+        "sample": {
+          "seasonGames": 64,
+          "seasonPlateAppearances": 257,
+          "recentGames": 12,
+          "recentPlateAppearances": 50,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 25,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1639,
+          "seasonPa": 257,
+          "powerIndex": 41.9,
+          "contactRisk": 24.43,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 67.2,
+            "processScore": 7,
+            "careerWeight": 0.1,
+            "identityDelta": 6.9,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 257,
+            "careerPa": 1639
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 5 carry | recent form up | combined hits/runs/RBI lane",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "combined-production-lane",
+          "statcast-power-up",
+          "statcast-contact-up"
+        ],
+        "matchupNote": "+10.00 vs Shane Baz",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".306 AVG | .791 OPS | 76 H | 6 HR | 12g: .400 AVG | 1.040 OPS | 20 H | 2 HR | vs RHP: .319 AVG | .804 OPS | 4 HR | career 1639 PA | .684 OPS | 30 HR | contact-stable profile | power 42 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +1.1 | +10.0 matchup grade in a neutral lane"
+      },
+      {
         "id": "orioles-blue-jays:624413:totalBases",
         "gameId": "orioles-blue-jays",
         "gameTitle": "Orioles @ Blue Jays",
@@ -19046,7 +19924,7 @@
         "propType": "totalBases",
         "propLabel": "TB",
         "marketLabel": "Over 1.5 total bases",
-        "confidence": 69,
+        "confidence": 73,
         "probability": 63.3,
         "expectedValue": 2.2,
         "statValueLabel": "2.15 exp TB",
@@ -19091,9 +19969,9 @@
         "shadowSupportLevel": "soft",
         "reason": "slot 4 carry | soft heat only: xSLG + opponent-strength support is still thin | rolling Statcast power is live | repeatable career power",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
-          "deep-lineup",
           "carry-bat-live",
           "power-lane",
           "career-power-backed",
@@ -19104,7 +19982,7 @@
         ],
         "matchupNote": "+10.00 vs Kevin Gausman",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".246 AVG | .777 OPS | 61 H | 13 HR | 12g: .375 AVG | 1.048 OPS | 18 H | 4 HR | vs RHP: .251 AVG | .820 OPS | 10 HR | career 4574 PA | .850 OPS | 275 HR | repeatable career power | power 94 | 2026 sample ok | arsenal 4-Seam Fastball 53% / Split-Finger 38% / Slider 9% | fit +2.7 | +10.0 matchup grade in a in-zone lane"
       },
       {
@@ -19119,10 +19997,10 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 70,
-        "probability": 65.6,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.25 exp hits",
+        "confidence": 72,
+        "probability": 67.7,
+        "expectedValue": 2.3,
+        "statValueLabel": "2.33 exp hits",
         "sample": {
           "seasonGames": 64,
           "seasonPlateAppearances": 257,
@@ -19180,77 +20058,74 @@
         "playerSummary": ".306 AVG | .791 OPS | 76 H | 6 HR | 12g: .400 AVG | 1.040 OPS | 20 H | 2 HR | vs RHP: .319 AVG | .804 OPS | 4 HR | career 1639 PA | .684 OPS | 30 HR | contact-stable profile | power 42 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +1.1 | +10.0 matchup grade in a neutral lane"
       },
       {
-        "id": "orioles-blue-jays:682818:walks",
+        "id": "orioles-blue-jays:624413:walks",
         "gameId": "orioles-blue-jays",
         "gameTitle": "Orioles @ Blue Jays",
         "league": "MLB",
-        "playerId": 682818,
-        "playerName": "Yohendrick Piñango",
-        "teamName": "Blue Jays",
-        "slot": 2,
+        "playerId": 624413,
+        "playerName": "Pete Alonso",
+        "teamName": "Orioles",
+        "slot": 4,
         "propType": "walks",
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
-        "confidence": 55,
-        "probability": 15.3,
-        "expectedValue": 0.2,
-        "statValueLabel": "0.17 exp walks",
+        "confidence": 56,
+        "probability": 35.9,
+        "expectedValue": 0.4,
+        "statValueLabel": "0.44 exp walks",
         "sample": {
-          "seasonGames": 33,
-          "seasonPlateAppearances": 104,
-          "recentGames": 10,
-          "recentPlateAppearances": 32,
-          "statcastGames": 5,
-          "statcastPlateAppearances": 16,
+          "seasonGames": 65,
+          "seasonPlateAppearances": 280,
+          "recentGames": 12,
+          "recentPlateAppearances": 52,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 27,
           "opponentContextGames": 0
         },
         "repeatability": {
-          "careerPa": 89,
-          "seasonPa": 104,
-          "powerIndex": 46.17,
-          "contactRisk": 54.29,
-          "roleStability": 36.12,
-          "label": "baseline career profile",
-          "volatilityLabel": "thin career sample",
-          "careerPowerBacked": false,
-          "careerVolatile": true,
-          "roleStable": false,
+          "careerPa": 4574,
+          "seasonPa": 280,
+          "powerIndex": 93.91,
+          "contactRisk": 44.57,
+          "roleStability": 100,
+          "label": "repeatable career power",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
           "approachState": {
-            "confidenceScore": 64.7,
-            "processScore": 14,
+            "confidenceScore": 58.7,
+            "processScore": 11,
             "careerWeight": 0.1,
-            "identityDelta": 2.7,
+            "identityDelta": -5.7,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 104,
-            "careerPa": 89
+            "approachLabel": "baseline approach",
+            "seasonPa": 280,
+            "careerPa": 4574
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
-          "reason": "baseline career profile"
+          "reason": "repeatable career power"
         },
         "recommendationTier": "Lean",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 2 carry | recent form up | split fit live | starter walk pressure",
+        "reason": "slot 4 carry | recent form up | split fit live",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
-          "traffic-lane-live",
-          "clean-conversion-lane",
           "carry-bat-live",
-          "starter-wildness-lane",
-          "process-improving",
+          "baseline-approach",
           "statcast-power-up",
           "statcast-fade"
         ],
-        "matchupNote": "+10.00 vs Shane Baz",
+        "matchupNote": "+10.00 vs Kevin Gausman",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".293 AVG | .751 OPS | 29 H | 3 HR | 10g: .375 AVG | .938 OPS | 12 H | 2 HR | vs RHP: .329 AVG | .843 OPS | 3 HR | career 89 PA | .731 OPS | 2 HR | baseline career profile | power 46 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +1.8 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".246 AVG | .777 OPS | 61 H | 13 HR | 12g: .375 AVG | 1.048 OPS | 18 H | 4 HR | vs RHP: .251 AVG | .820 OPS | 10 HR | career 4574 PA | .850 OPS | 275 HR | repeatable career power | power 94 | 2026 sample ok | arsenal 4-Seam Fastball 53% / Split-Finger 38% / Slider 9% | fit +2.7 | +10.0 matchup grade in a in-zone lane"
       },
       {
         "id": "orioles-blue-jays:676391:singles",
@@ -19264,10 +20139,10 @@
         "propType": "singles",
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
-        "confidence": 80,
-        "probability": 84.3,
+        "confidence": 81,
+        "probability": 85.4,
         "expectedValue": 1.9,
-        "statValueLabel": "1.85 exp singles",
+        "statValueLabel": "1.92 exp singles",
         "sample": {
           "seasonGames": 64,
           "seasonPlateAppearances": 257,
@@ -19324,160 +20199,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "posted",
         "playerSummary": ".306 AVG | .791 OPS | 76 H | 6 HR | 12g: .400 AVG | 1.040 OPS | 20 H | 2 HR | vs RHP: .319 AVG | .804 OPS | 4 HR | career 1639 PA | .684 OPS | 30 HR | contact-stable profile | power 42 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +1.1 | +10.0 matchup grade in a neutral lane"
-      },
-      {
-        "id": "orioles-blue-jays:682818:singles",
-        "gameId": "orioles-blue-jays",
-        "gameTitle": "Orioles @ Blue Jays",
-        "league": "MLB",
-        "playerId": 682818,
-        "playerName": "Yohendrick Piñango",
-        "teamName": "Blue Jays",
-        "slot": 2,
-        "propType": "singles",
-        "propLabel": "Singles",
-        "marketLabel": "Over 0.5 singles",
-        "confidence": 72,
-        "probability": 77.8,
-        "expectedValue": 1.5,
-        "statValueLabel": "1.51 exp singles",
-        "sample": {
-          "seasonGames": 33,
-          "seasonPlateAppearances": 104,
-          "recentGames": 10,
-          "recentPlateAppearances": 32,
-          "statcastGames": 5,
-          "statcastPlateAppearances": 16,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 89,
-          "seasonPa": 104,
-          "powerIndex": 46.17,
-          "contactRisk": 54.29,
-          "roleStability": 36.12,
-          "label": "baseline career profile",
-          "volatilityLabel": "thin career sample",
-          "careerPowerBacked": false,
-          "careerVolatile": true,
-          "roleStable": false,
-          "approachState": {
-            "confidenceScore": 64.7,
-            "processScore": 14,
-            "careerWeight": 0.1,
-            "identityDelta": 2.7,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 104,
-            "careerPa": 89
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "baseline career profile"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 2 carry | contact quality has cooled | recent form up | split fit live",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "middle-order-traffic",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "statcast-power-up",
-          "statcast-fade"
-        ],
-        "matchupNote": "+10.00 vs Shane Baz",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".293 AVG | .751 OPS | 29 H | 3 HR | 10g: .375 AVG | .938 OPS | 12 H | 2 HR | vs RHP: .329 AVG | .843 OPS | 3 HR | career 89 PA | .731 OPS | 2 HR | baseline career profile | power 46 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +1.8 | +10.0 matchup grade in a neutral lane"
-      },
-      {
-        "id": "orioles-blue-jays:676391:rbi",
-        "gameId": "orioles-blue-jays",
-        "gameTitle": "Orioles @ Blue Jays",
-        "league": "MLB",
-        "playerId": 676391,
-        "playerName": "Ernie Clement",
-        "teamName": "Blue Jays",
-        "slot": 5,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 71,
-        "probability": 69.8,
-        "expectedValue": 1.2,
-        "statValueLabel": "1.20 exp RBI",
-        "sample": {
-          "seasonGames": 64,
-          "seasonPlateAppearances": 257,
-          "recentGames": 12,
-          "recentPlateAppearances": 50,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 25,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 1639,
-          "seasonPa": 257,
-          "powerIndex": 41.9,
-          "contactRisk": 24.43,
-          "roleStability": 100,
-          "label": "contact-stable profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 67.2,
-            "processScore": 7,
-            "careerWeight": 0.1,
-            "identityDelta": 6.9,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 257,
-            "careerPa": 1639
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "contact-stable profile"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 5 carry | process improving; approach 67.2/100 | recent form up | run-production slot",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "middle-order-traffic",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "run-production-slot",
-          "statcast-power-up",
-          "statcast-contact-up"
-        ],
-        "matchupNote": "+10.00 vs Shane Baz",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".306 AVG | .791 OPS | 76 H | 6 HR | 12g: .400 AVG | 1.040 OPS | 20 H | 2 HR | vs RHP: .319 AVG | .804 OPS | 4 HR | career 1639 PA | .684 OPS | 30 HR | contact-stable profile | power 42 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +1.1 | +10.0 matchup grade in a neutral lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 29,
+    "candidateCount": 60,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Athletics",
-      "detail": "Gage Jump (LHP) | 1-1 | 3.75 ERA | 10 SO | 1.17 WHIP | 12.0 IP"
+      "detail": "Gage Jump (LHP) | 2-1 | 2.45 ERA | 13 SO | 1.09 WHIP | 18.1 IP"
     },
     {
       "side": "Home",
       "name": "Astros",
-      "detail": "Mike Burrows (RHP) | 3-7 | 5.66 ERA | 57 SO | 1.54 WHIP | 68.1 IP"
+      "detail": "Mike Burrows (RHP) | 3-8 | 5.77 ERA | 60 SO | 1.57 WHIP | 73.1 IP"
     }
   ],
   "summary": "Athletics @ Astros with Gage Jump against Mike Burrows.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Athletics -107 / Astros -112 | o9 -114 / u9 -105 | Athletics -1.5 +141 / Astros +1.5 -171 | F5 Athletics -120 / Astros -110 / o4.5 -140 / u4.5 +110.",
+    "Current board: Athletics -108 / Astros -112 | o9 -110 / u9 -109 | Athletics -1.5 +142 / Astros +1.5 -173 | F5 Athletics -120 / Astros -110 / o4.5 -135 / u4.5 +105.",
     "Gage Jump vs Mike Burrows."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -35,21 +35,21 @@
       "divisionLeader": false,
       "divisionRank": "3",
       "gamesBack": "3.5",
-      "losses": 34,
-      "runDifferential": -48,
-      "streakCode": "L3",
-      "winningPercentage": ".469",
-      "wins": 30
+      "losses": 35,
+      "runDifferential": -44,
+      "streakCode": "L1",
+      "winningPercentage": ".470",
+      "wins": 31
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "4",
       "gamesBack": "4.5",
-      "losses": 36,
-      "runDifferential": -24,
-      "streakCode": "W2",
-      "winningPercentage": ".455",
-      "wins": 30
+      "losses": 37,
+      "runDifferential": -28,
+      "streakCode": "W1",
+      "winningPercentage": ".456",
+      "wins": 31
     }
   },
   "parkContext": {
@@ -269,22 +269,22 @@
       "away": {
         "playerName": "Gage Jump",
         "line": 4.5,
-        "overPrice": -136,
+        "overPrice": -132,
         "underPrice": 107,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "home": {
         "playerName": "Mike Burrows",
         "line": 5.5,
-        "overPrice": 114,
+        "overPrice": 119,
         "underPrice": -145,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -479,6 +479,255 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 825004,
+          "date": "2026-05-26",
+          "opponent": "Mariners",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 1,
+          "runsAgainst": 4,
+          "starters": {
+            "team": {
+              "pitcherId": 695611,
+              "pitcherName": "Gage Jump",
+              "teamName": "Athletics",
+              "opponentName": "Seattle Mariners",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 676106,
+              "pitcherName": "Emerson Hancock",
+              "teamName": "Seattle Mariners",
+              "opponentName": "Athletics",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 1
+            }
+          ]
+        },
+        {
+          "gamePk": 825003,
+          "date": "2026-05-27",
+          "opponent": "Mariners",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 1,
+          "runsAgainst": 9,
+          "starters": {
+            "team": {
+              "pitcherId": 605488,
+              "pitcherName": "Jeffrey Springs",
+              "teamName": "Athletics",
+              "opponentName": "Seattle Mariners",
+              "firstInningRunsAllowed": 3,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 669302,
+              "pitcherName": "Logan Gilbert",
+              "teamName": "Seattle Mariners",
+              "opponentName": "Athletics",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 1
+            }
+          ]
+        },
+        {
+          "gamePk": 825002,
+          "date": "2026-05-29",
+          "opponent": "Yankees",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 2,
+          "runsAgainst": 8,
+          "starters": {
+            "team": {
+              "pitcherId": 622663,
+              "pitcherName": "Luis Severino",
+              "teamName": "Athletics",
+              "opponentName": "New York Yankees",
+              "firstInningRunsAllowed": 4,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 607074,
+              "pitcherName": "Carlos Rodón",
+              "teamName": "New York Yankees",
+              "opponentName": "Athletics",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Cracked",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 1
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 1
+            }
+          ]
+        },
         {
           "gamePk": 825000,
           "date": "2026-05-30",
@@ -677,8 +926,8 @@
               "tone": "positive"
             },
             "hitters": {
-              "label": "Stranded",
-              "tone": "warning"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Met",
@@ -700,11 +949,11 @@
             },
             {
               "inning": 3,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
@@ -775,11 +1024,11 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 3,
@@ -803,7 +1052,7 @@
             },
             {
               "inning": 8,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 9,
@@ -811,7 +1060,7 @@
             },
             {
               "inning": 10,
-              "runs": 2
+              "runs": 1
             }
           ]
         },
@@ -874,7 +1123,7 @@
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
@@ -882,11 +1131,11 @@
             },
             {
               "inning": 6,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 7,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 8,
@@ -1038,6 +1287,259 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 822897,
+          "date": "2026-05-27",
+          "opponent": "Rangers",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 4,
+          "runsAgainst": 3,
+          "starters": {
+            "team": {
+              "pitcherId": 681347,
+              "pitcherName": "Mike Burrows",
+              "teamName": "Houston Astros",
+              "opponentName": "Texas Rangers",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 594798,
+              "pitcherName": "Jacob deGrom",
+              "teamName": "Texas Rangers",
+              "opponentName": "Houston Astros",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Won late",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 2
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 822896,
+          "date": "2026-05-28",
+          "opponent": "Rangers",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 5,
+          "runsAgainst": 1,
+          "starters": {
+            "team": {
+              "pitcherId": 681293,
+              "pitcherName": "Spencer Arrighetti",
+              "teamName": "Houston Astros",
+              "opponentName": "Texas Rangers",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 543135,
+              "pitcherName": "Nathan Eovaldi",
+              "teamName": "Texas Rangers",
+              "opponentName": "Houston Astros",
+              "firstInningRunsAllowed": 3,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 3
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 2
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824191,
+          "date": "2026-05-29",
+          "opponent": "Brewers",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 4,
+          "runsAgainst": 5,
+          "starters": {
+            "team": {
+              "pitcherId": 678906,
+              "pitcherName": "Kai-Wei Teng",
+              "teamName": "Houston Astros",
+              "opponentName": "Milwaukee Brewers",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 689441,
+              "pitcherName": "Coleman Crow",
+              "teamName": "Milwaukee Brewers",
+              "opponentName": "Houston Astros",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Blew",
+              "tone": "negative"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 3
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            },
+            {
+              "inning": 10,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 824190,
           "date": "2026-05-30",
@@ -1251,7 +1753,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 2,
@@ -1259,11 +1761,11 @@
             },
             {
               "inning": 3,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
@@ -1283,7 +1785,7 @@
             },
             {
               "inning": 9,
-              "runs": 4
+              "runs": 2
             }
           ]
         },
@@ -1342,7 +1844,7 @@
             },
             {
               "inning": 3,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 4,
@@ -1350,7 +1852,7 @@
             },
             {
               "inning": 5,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 6,
@@ -1358,11 +1860,11 @@
             },
             {
               "inning": 7,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 8,
-              "runs": 12
+              "runs": 6
             },
             {
               "inning": 9,
@@ -1437,7 +1939,7 @@
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
@@ -2381,7 +2883,243 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-824183",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 77,
+          "noRunProbabilityPct": 23,
+          "awayRunProbabilityPct": 17.8,
+          "homeRunProbabilityPct": 72,
+          "lean": "Run",
+          "strength": "strong",
+          "sampleHalves": 130,
+          "caution": "",
+          "reason": "YRFI with a 77% modeled chance of at least one first-inning run. Athletics score 17.8% of the time and Astros 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 60.3,
+          "noRunProbabilityPct": 39.7,
+          "awayRunProbabilityPct": 32.1,
+          "homeRunProbabilityPct": 28.2,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.5 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Athletics F5 runs 2.5; Astros F5 runs 2.5; Mike Burrows: HA 5.5, ER 2.5, win yes +191; Gage Jump: HA 4.5, ER 2.5, win yes +167; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 67.6,
+          "noRunProbabilityPct": 32.4,
+          "awayRunProbabilityPct": 28.6,
+          "homeRunProbabilityPct": 39,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.5 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Athletics F5 runs 2.5; Astros F5 runs 2.5; Mike Burrows: HA 5.5, ER 2.5, win yes +191; Gage Jump: HA 4.5, ER 2.5, win yes +167; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 60.7,
+          "noRunProbabilityPct": 39.3,
+          "awayRunProbabilityPct": 31.8,
+          "homeRunProbabilityPct": 28.9,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.5 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Athletics F5 runs 2.5; Astros F5 runs 2.5; Mike Burrows: HA 5.5, ER 2.5, win yes +191; Gage Jump: HA 4.5, ER 2.5, win yes +167; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 70.3,
+          "noRunProbabilityPct": 29.7,
+          "awayRunProbabilityPct": 33.8,
+          "homeRunProbabilityPct": 36.5,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.5 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Athletics F5 runs 2.5; Astros F5 runs 2.5; Mike Burrows: HA 5.5, ER 2.5, win yes +191; Gage Jump: HA 4.5, ER 2.5, win yes +167; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Athletics @ Astros",
+      "mlbGamePk": 824183,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "astros": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "athletics": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "mike-burrows": {
+            "name": "Mike Burrows",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": -132,
+              "underOdds": -101,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 5.5,
+              "overOdds": -114,
+              "underOdds": -116,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 191,
+              "noOdds": -270
+            }
+          },
+          "gage-jump": {
+            "name": "Gage Jump",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": -104,
+              "underOdds": -128,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 4.5,
+              "overOdds": -169,
+              "underOdds": 127,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 167,
+              "noOdds": -232
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "Athletics": {
@@ -2436,7 +3174,7 @@
   "lineupBoard": {
     "gameId": "athletics-astros",
     "title": "Athletics @ Astros",
-    "snapshot": "2026-06-07T15:20:45.579Z",
+    "snapshot": "2026-06-07T16:39:59.688Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -6581,16 +7319,16 @@
       "id": 695611,
       "fullName": "Gage Jump",
       "pitchHand": "L",
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
-      "era": "3.75",
-      "strikeOuts": 10,
-      "inningsPitched": "12.0",
-      "hitsAllowed": 12,
-      "walks": 2,
+      "era": "2.45",
+      "strikeOuts": 13,
+      "inningsPitched": "18.1",
+      "hitsAllowed": 15,
+      "walks": 5,
       "homeRunsAllowed": 0,
-      "whip": "1.17",
-      "gamesStarted": 2,
+      "whip": "1.09",
+      "gamesStarted": 3,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 695611,
@@ -6661,12 +7399,12 @@
       "strikeoutMarket": {
         "playerName": "Gage Jump",
         "line": 4.5,
-        "overPrice": -136,
+        "overPrice": -132,
         "underPrice": 107,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
@@ -6690,7 +7428,7 @@
         "battersFaced": null,
         "totalRow": null,
         "gameRows": [],
-        "fetchedAt": "2026-06-07T15:16:43.620Z"
+        "fetchedAt": "2026-06-07T16:38:56.662Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -10072,13 +10810,13 @@
           "Away split: 1.29 ERA / 0 HR allowed.",
           "vs. Right: .267 AVG / .667 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
         "status": "new-look",
         "label": "New-look starter",
-        "note": "This is still a low-sample MLB starter look with only 2 starts on file, so innings expectation matters more than the raw ERA line.",
+        "note": "This is still a low-sample MLB starter look with only 3 starts on file, so innings expectation matters more than the raw ERA line.",
         "expectedInnings": 6,
         "daysSinceLastStart": 5,
         "startsLoaded": 2,
@@ -10098,15 +10836,15 @@
       "fullName": "Mike Burrows",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 7,
-      "era": "5.66",
-      "strikeOuts": 57,
-      "inningsPitched": "68.1",
-      "hitsAllowed": 79,
-      "walks": 26,
-      "homeRunsAllowed": 15,
-      "whip": "1.54",
-      "gamesStarted": 12,
+      "losses": 8,
+      "era": "5.77",
+      "strikeOuts": 60,
+      "inningsPitched": "73.1",
+      "hitsAllowed": 87,
+      "walks": 28,
+      "homeRunsAllowed": 17,
+      "whip": "1.57",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 681347,
@@ -10255,12 +10993,12 @@
       "strikeoutMarket": {
         "playerName": "Mike Burrows",
         "line": 5.5,
-        "overPrice": 114,
+        "overPrice": 119,
         "underPrice": -145,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
@@ -10309,7 +11047,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:44.395Z"
+        "fetchedAt": "2026-06-07T16:38:58.401Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -15137,7 +15875,7 @@
           "Away split: 4.34 ERA / 7 HR allowed.",
           "vs. Left: .329 AVG / 1.009 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -15186,17 +15924,17 @@
       {
         "label": "Spread",
         "book": "DraftKings typed MLB board",
-        "value": "Athletics -1.5 +141 / Astros +1.5 -171"
+        "value": "Athletics -1.5 +142 / Astros +1.5 -173"
       },
       {
         "label": "Total",
         "book": "DraftKings typed MLB board",
-        "value": "o9 -114 / u9 -105"
+        "value": "o9 -110 / u9 -109"
       },
       {
         "label": "Moneyline",
         "book": "DraftKings typed MLB board",
-        "value": "Athletics -107 / Astros -112"
+        "value": "Athletics -108 / Astros -112"
       },
       {
         "label": "1st 5 ML",
@@ -15206,7 +15944,7 @@
       {
         "label": "1st 5 Total",
         "book": "DraftKings typed MLB board",
-        "value": "o4.5 -140 / u4.5 +110"
+        "value": "o4.5 -135 / u4.5 +105"
       }
     ],
     "note": "Board snapshot plus model context.",
@@ -15218,19 +15956,19 @@
       "index": 0,
       "role": "Away",
       "name": "Athletics",
-      "detail": "Gage Jump (LHP) | 1-1 | 3.75 ERA | 10 SO | 1.17 WHIP | 12.0 IP",
-      "americanOdds": -107,
-      "americanLabel": "-107",
-      "decimalOdds": 1.9345794392523366,
-      "impliedProbability": 0.5169082125603864,
-      "impliedProbabilityLabel": "51.7%"
+      "detail": "Gage Jump (LHP) | 2-1 | 2.45 ERA | 13 SO | 1.09 WHIP | 18.1 IP",
+      "americanOdds": -108,
+      "americanLabel": "-108",
+      "decimalOdds": 1.925925925925926,
+      "impliedProbability": 0.5192307692307693,
+      "impliedProbabilityLabel": "51.9%"
     },
     {
       "id": "athletics-astros:1",
       "index": 1,
       "role": "Home",
       "name": "Astros",
-      "detail": "Mike Burrows (RHP) | 3-7 | 5.66 ERA | 57 SO | 1.54 WHIP | 68.1 IP",
+      "detail": "Mike Burrows (RHP) | 3-8 | 5.77 ERA | 60 SO | 1.57 WHIP | 73.1 IP",
       "americanOdds": -112,
       "americanLabel": "-112",
       "decimalOdds": 1.8928571428571428,
@@ -15248,19 +15986,19 @@
         "index": 0,
         "role": "Away",
         "name": "Athletics",
-        "detail": "Gage Jump (LHP) | 1-1 | 3.75 ERA | 10 SO | 1.17 WHIP | 12.0 IP",
-        "americanOdds": -107,
-        "americanLabel": "-107",
-        "decimalOdds": 1.9345794392523366,
-        "impliedProbability": 0.5169082125603864,
-        "impliedProbabilityLabel": "51.7%"
+        "detail": "Gage Jump (LHP) | 2-1 | 2.45 ERA | 13 SO | 1.09 WHIP | 18.1 IP",
+        "americanOdds": -108,
+        "americanLabel": "-108",
+        "decimalOdds": 1.925925925925926,
+        "impliedProbability": 0.5192307692307693,
+        "impliedProbabilityLabel": "51.9%"
       },
       {
         "id": "athletics-astros:1",
         "index": 1,
         "role": "Home",
         "name": "Astros",
-        "detail": "Mike Burrows (RHP) | 3-7 | 5.66 ERA | 57 SO | 1.54 WHIP | 68.1 IP",
+        "detail": "Mike Burrows (RHP) | 3-8 | 5.77 ERA | 60 SO | 1.57 WHIP | 73.1 IP",
         "americanOdds": -112,
         "americanLabel": "-112",
         "decimalOdds": 1.8928571428571428,
@@ -15277,19 +16015,19 @@
       "index": 0,
       "role": "Away",
       "name": "Athletics",
-      "detail": "Gage Jump (LHP) | 1-1 | 3.75 ERA | 10 SO | 1.17 WHIP | 12.0 IP",
-      "americanOdds": -107,
-      "americanLabel": "-107",
-      "decimalOdds": 1.9345794392523366,
-      "impliedProbability": 0.5169082125603864,
-      "impliedProbabilityLabel": "51.7%"
+      "detail": "Gage Jump (LHP) | 2-1 | 2.45 ERA | 13 SO | 1.09 WHIP | 18.1 IP",
+      "americanOdds": -108,
+      "americanLabel": "-108",
+      "decimalOdds": 1.925925925925926,
+      "impliedProbability": 0.5192307692307693,
+      "impliedProbabilityLabel": "51.9%"
     },
     "opponent": {
       "id": "athletics-astros:1",
       "index": 1,
       "role": "Home",
       "name": "Astros",
-      "detail": "Mike Burrows (RHP) | 3-7 | 5.66 ERA | 57 SO | 1.54 WHIP | 68.1 IP",
+      "detail": "Mike Burrows (RHP) | 3-8 | 5.77 ERA | 60 SO | 1.57 WHIP | 73.1 IP",
       "americanOdds": -112,
       "americanLabel": "-112",
       "decimalOdds": 1.8928571428571428,
@@ -15297,23 +16035,23 @@
       "impliedProbabilityLabel": "52.8%"
     },
     "lean": "Model pick: Athletics on starter era and hit-production baseline.",
-    "rationale": "Starter ERA: Athletics (3.75 ERA) vs Astros (5.66 ERA)",
+    "rationale": "Starter ERA: Athletics (2.45 ERA) vs Astros (5.77 ERA)",
     "confidence": 52,
     "volatility": 92,
     "recommendationScore": 34,
     "tier": "Swingy",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 3.4,
-    "modelEdgeLabel": "3.4-point model edge",
-    "marketProbability": 0.49454957704717883,
-    "marketProbabilityLabel": "49.5%",
+    "modelEdge": 8.4,
+    "modelEdgeLabel": "8.4-point model edge",
+    "marketProbability": 0.4956702459300312,
+    "marketProbabilityLabel": "49.6%",
     "inputs": [
       {
         "label": "Starter ERA",
-        "summary": "Starter ERA: Athletics (3.75 ERA) vs Astros (5.66 ERA)",
+        "summary": "Starter ERA: Athletics (2.45 ERA) vs Astros (5.77 ERA)",
         "source": "Listed probable starters",
-        "margin": 17.2,
+        "margin": 29.9,
         "weight": 0.23
       },
       {
@@ -15324,11 +16062,11 @@
         "weight": 0.14
       },
       {
-        "label": "Bullpen follow-through",
-        "summary": "Bullpen follow-through: Athletics (4.63 ERA | 1.43 WHIP | 152 SO / 73 BB) vs Astros (6.02 ERA | 1.62 WHIP | 174 SO / 106 BB)",
-        "source": "Covers bullpen stats",
-        "margin": 10.9,
-        "weight": 0.13
+        "label": "Starter record",
+        "summary": "Starter record: Athletics (2-1) vs Astros (3-8)",
+        "source": "Listed probable starters",
+        "margin": 12.1,
+        "weight": 0.16
       }
     ],
     "inputsUsed": 11,
@@ -15352,10 +16090,6 @@
       {
         "label": "Higher posted total",
         "delta": 5
-      },
-      {
-        "label": "At least one listed starter is still a shallow sample",
-        "delta": 7
       },
       {
         "label": "At least one listed starter profiles as traffic-risk",
@@ -15430,27 +16164,35 @@
         "delta": 3
       },
       {
+        "label": "A big paper edge is still sitting inside a noisy baseball script, so conviction should stay capped",
+        "delta": 3
+      },
+      {
+        "label": "Starter edge looks better than the late-inning hold profile; this reads cleaner for first five",
+        "delta": 5
+      },
+      {
         "label": "v1.1 market budget: this underdog call still needs cleaner starter, stability, and state support before it can be treated like a real market disagreement edge.",
         "delta": 5
       }
     ],
     "pickReasons": [
       "Athletics own the cleaner full-game traffic script at 11.9 projected hits.",
-      "Athletics have the better starter-window lane with 6.3 projected first-five hits.",
+      "Athletics have the better starter-window lane with 6.4 projected first-five hits.",
       "Athletics still hold the better bridge-and-finish script once the bullpens take over.",
       "Athletics can lean on Nick Kurtz, Tyler Soderstrom, Brent Rooker to drive early pressure against Mike Burrows."
     ],
     "indicators": {
-      "reliefPitchingRisk": 43,
-      "coinflipPressure": 55,
-      "starterLeverageIndex": 55.5,
+      "reliefPitchingRisk": 51,
+      "coinflipPressure": 57,
+      "starterLeverageIndex": 68.2,
       "lateInningStabilityIndex": 49.8,
       "pickBullpenScore": 55.6,
       "oppBullpenScore": 44.7,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 53,
-      "oppStarterScore": 55.7,
+      "pickStarterScore": 60.3,
+      "oppStarterScore": 55.1,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -15506,7 +16248,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 2,
+      "projectedHitEdgeForPick": 2.6,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": false,
       "pickIsMarketUnderdog": true,
@@ -15547,7 +16289,7 @@
         "underdogNeedsProof"
       ],
       "favoredSignalCount": 4,
-      "starterLateGap": 5.7,
+      "starterLateGap": 18.4,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 2.1,
       "gameShape": {
@@ -15555,7 +16297,7 @@
         "shapeLabel": "balanced traffic game",
         "category": "early_pressure_side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "categoryConfidence": 61.2,
+        "categoryConfidence": 62.2,
         "realityGapScore": 34.2,
         "chaosScore": 38.8,
         "deadEarlyScore": 8.5,
@@ -15573,7 +16315,7 @@
           {
             "id": "pressure",
             "label": "Pressure",
-            "score": 25.5
+            "score": 31.7
           }
         ],
         "rfImpactScore": 24.7
@@ -15587,7 +16329,7 @@
         "slug": "early_pressure_side",
         "label": "Early-pressure side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "confidence": 61.2,
+        "confidence": 62.2,
         "reasons": [
           "The pick needs to cash the first traffic pocket.",
           "The best edge is timing, not late-game patience."
@@ -15631,7 +16373,7 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 2
+          "projectedHitEdge": 2.6
         }
       },
       "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 34.2/100. Main checks: Dome In Domed Stadium.",
@@ -15641,9 +16383,9 @@
         "chaosScore": 38.8,
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
-        "bullpenFlipScore": 12.3,
-        "starterControlScore": 29.7,
-        "marketContradictionScore": 30,
+        "bullpenFlipScore": 21.9,
+        "starterControlScore": 41.1,
+        "marketContradictionScore": 30.1,
         "realityGapScore": 34.2
       },
       "radar": {
@@ -15658,9 +16400,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 25.5,
-            "pickScore": 25.5,
-            "opponentScore": 10
+            "gameScore": 31.7,
+            "pickScore": 31.7,
+            "opponentScore": 9.9
           },
           {
             "id": "chaos",
@@ -15690,7 +16432,7 @@
             "id": "bridge",
             "label": "Bridge",
             "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-            "gameScore": 12.3,
+            "gameScore": 21.9,
             "pickScore": 5.5,
             "opponentScore": 9.6
           },
@@ -15708,7 +16450,7 @@
             "role": "pick",
             "team": "Athletics",
             "scores": {
-              "pressure": 25.5,
+              "pressure": 31.7,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
@@ -15716,7 +16458,7 @@
               "flow": 100
             },
             "polygon": [
-              25.5,
+              31.7,
               0,
               0,
               0,
@@ -15727,7 +16469,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 53,
+              "starterScore": 60.3,
               "bullpenScore": 55.6,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -15741,7 +16483,7 @@
             "role": "opponent",
             "team": "Astros",
             "scores": {
-              "pressure": 10,
+              "pressure": 9.9,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
@@ -15749,7 +16491,7 @@
               "flow": 0
             },
             "polygon": [
-              10,
+              9.9,
               0,
               0,
               0,
@@ -15760,7 +16502,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 55.7,
+              "starterScore": 55.1,
               "bullpenScore": 44.7,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -15775,19 +16517,19 @@
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 25.5,
+            "pressure": 31.7,
             "chaos": 38.8,
             "freeze": 8.5,
             "air": 0,
-            "bridge": 12.3,
+            "bridge": 21.9,
             "flow": 100
           },
           "polygon": [
-            25.5,
+            31.7,
             38.8,
             8.5,
             0,
-            12.3,
+            21.9,
             100
           ],
           "dominantAxes": [
@@ -15804,7 +16546,7 @@
             {
               "id": "pressure",
               "label": "Pressure",
-              "score": 25.5
+              "score": 31.7
             }
           ]
         }
@@ -15906,25 +16648,25 @@
     },
     "mlbProjection": {
       "awayProjectedHits": 11.9,
-      "homeProjectedHits": 9.9,
-      "awayHitEfficiencyPct": 34.2,
-      "homeHitEfficiencyPct": 29,
-      "awayFirst5ProjectedHits": 6.3,
-      "homeFirst5ProjectedHits": 5.4,
-      "awayFirst5HitEfficiencyPct": 32.9,
-      "homeFirst5HitEfficiencyPct": 28.5,
-      "awayLateProjectedHits": 5.4,
-      "homeLateProjectedHits": 4.7,
-      "awayLateHitEfficiencyPct": 34.6,
-      "homeLateHitEfficiencyPct": 30.3,
+      "homeProjectedHits": 9.3,
+      "awayHitEfficiencyPct": 34.4,
+      "homeHitEfficiencyPct": 27,
+      "awayFirst5ProjectedHits": 6.4,
+      "homeFirst5ProjectedHits": 5.1,
+      "awayFirst5HitEfficiencyPct": 33.7,
+      "homeFirst5HitEfficiencyPct": 26.7,
+      "awayLateProjectedHits": 5.3,
+      "homeLateProjectedHits": 4.4,
+      "awayLateHitEfficiencyPct": 34.2,
+      "homeLateHitEfficiencyPct": 28.7,
       "awayBullpenChainScore": null,
       "homeBullpenChainScore": null,
       "edgeTeam": "Athletics",
-      "edgeHits": 2,
+      "edgeHits": 2.6,
       "first5EdgeTeam": "Athletics",
-      "first5EdgeHits": 0.9,
+      "first5EdgeHits": 1.3,
       "lateEdgeTeam": "Athletics",
-      "lateEdgeHits": 0.7,
+      "lateEdgeHits": 0.9,
       "bridgeEdgeTeam": "",
       "bridgeEdgeScore": null,
       "awayLikelyRelievers": [],
@@ -15933,24 +16675,24 @@
       "homeBullpenExhaustion": null,
       "awayBullpenExhaustionLabel": "unknown",
       "homeBullpenExhaustionLabel": "unknown",
-      "awayPitcherType": "Unknown sample lefty",
+      "awayPitcherType": "Craft lefty",
       "homePitcherType": "Traffic-risk righty",
       "awayStarterHoldConfidence": 40.9,
       "homeStarterHoldConfidence": 37.7,
-      "awayProjectedRuns": 5.7,
-      "homeProjectedRuns": 4.7,
-      "awayFirst5ProjectedRuns": 3.1,
-      "homeFirst5ProjectedRuns": 2.5,
+      "awayProjectedRuns": 5.8,
+      "homeProjectedRuns": 4.4,
+      "awayFirst5ProjectedRuns": 3.2,
+      "homeFirst5ProjectedRuns": 2.3,
       "awayLateProjectedRuns": 2.6,
-      "homeLateProjectedRuns": 2.2,
+      "homeLateProjectedRuns": 2.1,
       "postedTotal": 9,
       "totals": {
         "fullGame": {
           "lean": "Over",
-          "edge": 1.4,
+          "edge": 1.2,
           "strength": "Strong",
           "label": "Over 9",
-          "summary": "Over lean with a 1.4-run edge against 9.",
+          "summary": "Over lean with a 1.2-run edge against 9.",
           "chaosGate": {
             "phase": "full",
             "overChaosScore": 1,
@@ -15976,10 +16718,10 @@
         },
         "first5": {
           "lean": "Pass",
-          "edge": 1.1,
+          "edge": 1,
           "strength": "Unsupported over",
           "label": "Hold 4.5",
-          "summary": "Over lean with a 1.1-run edge against 4.5. Tail overlay removed the over because the point edge lacks run-explosion support.",
+          "summary": "Over lean with a 1.0-run edge against 4.5. Tail overlay removed the over because the point edge lacks run-explosion support.",
           "chaosGate": {
             "phase": "first5",
             "overChaosScore": 1,
@@ -16006,12 +16748,12 @@
           "originalStrength": "Clear",
           "originalLabel": "Over 4.5",
           "tailOverlay": {
-            "baseProjectedRuns": 5.6,
-            "adjustedProjectedRuns": 3.5,
-            "adjustedEdge": -1,
+            "baseProjectedRuns": 5.5,
+            "adjustedProjectedRuns": 3.4,
+            "adjustedEdge": -1.1,
             "marketExpression": "Under",
             "shape": "unsupported-over",
-            "tailScore": 18,
+            "tailScore": 17.8,
             "strandScore": 0,
             "forkScore": 0,
             "tailLift": 0,
@@ -16027,7 +16769,7 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 11.7,
+              "totalFirst5ProjectedHits": 11.5,
               "weatherCarry": false,
               "weatherSuppress": false,
               "visibilityRisk": null
@@ -16036,10 +16778,10 @@
         },
         "late": {
           "lean": "Pass",
-          "edge": 0.3,
+          "edge": 0.2,
           "strength": "Thin",
           "label": "Hold 4.5",
-          "summary": "Model projection 4.8 is essentially on the posted 4.5.",
+          "summary": "Model projection 4.7 is essentially on the posted 4.5.",
           "chaosGate": {
             "phase": "late",
             "overChaosScore": 1,
@@ -16063,16 +16805,16 @@
             }
           }
         },
-        "projectedFullTotalRuns": 10.4,
-        "projectedFirst5TotalRuns": 5.6,
-        "tailAdjustedProjectedFirst5TotalRuns": 3.5,
+        "projectedFullTotalRuns": 10.2,
+        "projectedFirst5TotalRuns": 5.5,
+        "tailAdjustedProjectedFirst5TotalRuns": 3.4,
         "first5TailOverlay": {
-          "baseProjectedRuns": 5.6,
-          "adjustedProjectedRuns": 3.5,
-          "adjustedEdge": -1,
+          "baseProjectedRuns": 5.5,
+          "adjustedProjectedRuns": 3.4,
+          "adjustedEdge": -1.1,
           "marketExpression": "Under",
           "shape": "unsupported-over",
-          "tailScore": 18,
+          "tailScore": 17.8,
           "strandScore": 0,
           "forkScore": 0,
           "tailLift": 0,
@@ -16088,16 +16830,16 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 11.7,
+            "totalFirst5ProjectedHits": 11.5,
             "weatherCarry": false,
             "weatherSuppress": false,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 4.8,
+        "projectedLateTotalRuns": 4.7,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 4.8,
+        "runShareFirst5TotalLine": 4.9,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 4.5,
         "bullpenExhaustionNote": "Dome In Domed Stadium. No major bridge-chain exhaustion flag has surfaced yet.",
@@ -16111,7 +16853,7 @@
         "edge": 27,
         "yesProbabilityPct": 77,
         "noProbabilityPct": 23,
-        "awayRunProbabilityPct": 17.7,
+        "awayRunProbabilityPct": 17.8,
         "homeRunProbabilityPct": 72,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
@@ -16129,7 +16871,7 @@
         "cautionStack": [],
         "projectedRuns": 1.3,
         "line": 0.5,
-        "summary": "YRFI with a 77% modeled chance of at least one first-inning run. Athletics score 17.7% of the time and Astros 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 77% modeled chance of at least one first-inning run. Athletics score 17.8% of the time and Astros 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
       },
       "teamScripts": [
         {
@@ -16167,7 +16909,7 @@
           "bullpenOverperformHitters": [],
           "winPath": [
             "Athletics own the cleaner full-game traffic script at 11.9 projected hits.",
-            "Athletics have the better starter-window lane with 6.3 projected first-five hits.",
+            "Athletics have the better starter-window lane with 6.4 projected first-five hits.",
             "Athletics still hold the better bridge-and-finish script once the bullpens take over.",
             "Athletics can lean on Nick Kurtz, Tyler Soderstrom, Brent Rooker to drive early pressure against Mike Burrows.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -16222,7 +16964,7 @@
           {
             "label": "First 5",
             "edgeTeam": "Athletics",
-            "projection": "3.1 R",
+            "projection": "3.2 R",
             "note": "Athletics lean on Nick Kurtz, Tyler Soderstrom to drive the early traffic lane against the listed starter."
           },
           {
@@ -16258,17 +17000,17 @@
         "marketType": "ML shape",
         "selection": "Athletics",
         "opponent": "Astros",
-        "pickProjectedRuns": 5.7,
-        "opponentProjectedRuns": 4.7,
-        "projectedTotalRuns": 10.4,
-        "runDiff": 1,
-        "absoluteRunDiff": 1,
-        "runDiffSharePct": 9.6,
+        "pickProjectedRuns": 5.8,
+        "opponentProjectedRuns": 4.4,
+        "projectedTotalRuns": 10.2,
+        "runDiff": 1.4,
+        "absoluteRunDiff": 1.4,
+        "runDiffSharePct": 13.7,
         "confidence": 52,
-        "marketProbabilityPct": 49.5,
-        "grade": "Thin ML shape",
+        "marketProbabilityPct": 49.6,
+        "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Athletics projects 1 runs better in a 10.4-run environment."
+        "note": "Athletics projects 1.4 runs better in a 10.2-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -16278,7 +17020,7 @@
           "slug": "early_pressure_side",
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-          "confidence": 61.2,
+          "confidence": 62.2,
           "reasons": [
             "The pick needs to cash the first traffic pocket.",
             "The best edge is timing, not late-game patience."
@@ -16322,7 +17064,7 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 2
+            "projectedHitEdge": 2.6
           }
         },
         "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 34.2/100. Main checks: Dome In Domed Stadium.",
@@ -16332,9 +17074,9 @@
           "chaosScore": 38.8,
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
-          "bullpenFlipScore": 12.3,
-          "starterControlScore": 29.7,
-          "marketContradictionScore": 30,
+          "bullpenFlipScore": 21.9,
+          "starterControlScore": 41.1,
+          "marketContradictionScore": 30.1,
           "realityGapScore": 34.2
         },
         "radar": {
@@ -16349,9 +17091,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 25.5,
-              "pickScore": 25.5,
-              "opponentScore": 10
+              "gameScore": 31.7,
+              "pickScore": 31.7,
+              "opponentScore": 9.9
             },
             {
               "id": "chaos",
@@ -16381,7 +17123,7 @@
               "id": "bridge",
               "label": "Bridge",
               "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-              "gameScore": 12.3,
+              "gameScore": 21.9,
               "pickScore": 5.5,
               "opponentScore": 9.6
             },
@@ -16399,7 +17141,7 @@
               "role": "pick",
               "team": "Athletics",
               "scores": {
-                "pressure": 25.5,
+                "pressure": 31.7,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
@@ -16407,7 +17149,7 @@
                 "flow": 100
               },
               "polygon": [
-                25.5,
+                31.7,
                 0,
                 0,
                 0,
@@ -16418,7 +17160,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 53,
+                "starterScore": 60.3,
                 "bullpenScore": 55.6,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -16432,7 +17174,7 @@
               "role": "opponent",
               "team": "Astros",
               "scores": {
-                "pressure": 10,
+                "pressure": 9.9,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
@@ -16440,7 +17182,7 @@
                 "flow": 0
               },
               "polygon": [
-                10,
+                9.9,
                 0,
                 0,
                 0,
@@ -16451,7 +17193,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 55.7,
+                "starterScore": 55.1,
                 "bullpenScore": 44.7,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -16466,19 +17208,19 @@
             "label": "Early-pressure side",
             "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 25.5,
+              "pressure": 31.7,
               "chaos": 38.8,
               "freeze": 8.5,
               "air": 0,
-              "bridge": 12.3,
+              "bridge": 21.9,
               "flow": 100
             },
             "polygon": [
-              25.5,
+              31.7,
               38.8,
               8.5,
               0,
-              12.3,
+              21.9,
               100
             ],
             "dominantAxes": [
@@ -16495,7 +17237,7 @@
               {
                 "id": "pressure",
                 "label": "Pressure",
-                "score": 25.5
+                "score": 31.7
               }
             ]
           }
@@ -16598,12 +17340,12 @@
       "first5Moneyline": {
         "pickSide": "away",
         "pickTeam": "Athletics",
-        "awayProjectedRuns": 3.1,
-        "homeProjectedRuns": 2.5,
-        "awayLeadProbability": 51.4,
-        "homeLeadProbability": 31.8,
-        "pushProbability": 16.8,
-        "leadProbability": 51.4,
+        "awayProjectedRuns": 3.2,
+        "homeProjectedRuns": 2.3,
+        "awayLeadProbability": 56.5,
+        "homeLeadProbability": 27.2,
+        "pushProbability": 16.3,
+        "leadProbability": 56.5,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -16625,7 +17367,7 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 57,
-        "probability": 46.8,
+        "probability": 46.6,
         "expectedValue": 0.6,
         "statValueLabel": "0.63 exp HR",
         "sample": {
@@ -16684,7 +17426,156 @@
         "playerSummary": ".316 AVG | 1.083 OPS | 74 H | 22 HR | 12g: .429 AVG | 1.300 OPS | 18 H | 4 HR | vs LHP: .324 AVG | 1.095 OPS | 8 HR | career 3125 PA | .969 OPS | 190 HR | repeatable career power | power 100 | 2026 sample ok | arsenal 4-Seam Fastball 50% / Slider 24% / Curveball 9% | fit +4.9 | +10.0 matchup grade in a neutral lane"
       },
       {
-        "id": "athletics-astros:670541:rbi",
+        "id": "athletics-astros:691016:rbi",
+        "gameId": "athletics-astros",
+        "gameTitle": "Athletics @ Astros",
+        "league": "MLB",
+        "playerId": 691016,
+        "playerName": "Tyler Soderstrom",
+        "teamName": "Athletics",
+        "slot": 4,
+        "propType": "rbi",
+        "propLabel": "RBI",
+        "marketLabel": "Over 0.5 RBI",
+        "confidence": 68,
+        "probability": 82.2,
+        "expectedValue": 1.7,
+        "statValueLabel": "1.73 exp RBI",
+        "sample": {
+          "seasonGames": 61,
+          "seasonPlateAppearances": 257,
+          "recentGames": 12,
+          "recentPlateAppearances": 46,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 24,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1209,
+          "seasonPa": 257,
+          "powerIndex": 61.68,
+          "contactRisk": 45.7,
+          "roleStability": 100,
+          "label": "baseline career profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 66.9,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": -1.5,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 257,
+            "careerPa": 1209
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "baseline career profile"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 4 carry | process improving; approach 66.9/100 | recent form up | split fit live",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "run-production-slot",
+          "statcast-power-up",
+          "statcast-contact-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+10.00 vs Mike Burrows",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".231 AVG | .754 OPS | 52 H | 8 HR | 12g: .316 AVG | .908 OPS | 12 H | 2 HR | vs RHP: .247 AVG | .800 OPS | 5 HR | career 1209 PA | .751 OPS | 44 HR | baseline career profile | power 62 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Changeup 26% / Slider 16% | fit +2.0 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "athletics-astros:691016:runs",
+        "gameId": "athletics-astros",
+        "gameTitle": "Athletics @ Astros",
+        "league": "MLB",
+        "playerId": 691016,
+        "playerName": "Tyler Soderstrom",
+        "teamName": "Athletics",
+        "slot": 4,
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 72,
+        "probability": 88.6,
+        "expectedValue": 2.2,
+        "statValueLabel": "2.17 exp runs",
+        "sample": {
+          "seasonGames": 61,
+          "seasonPlateAppearances": 257,
+          "recentGames": 12,
+          "recentPlateAppearances": 46,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 24,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1209,
+          "seasonPa": 257,
+          "powerIndex": 61.68,
+          "contactRisk": 45.7,
+          "roleStability": 100,
+          "label": "baseline career profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 66.9,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": -1.5,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 257,
+            "careerPa": 1209
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "baseline career profile"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 4 carry | recent form up | split fit live",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "statcast-power-up",
+          "statcast-contact-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+10.00 vs Mike Burrows",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".231 AVG | .754 OPS | 52 H | 8 HR | 12g: .316 AVG | .908 OPS | 12 H | 2 HR | vs RHP: .247 AVG | .800 OPS | 5 HR | career 1209 PA | .751 OPS | 44 HR | baseline career profile | power 62 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Changeup 26% / Slider 16% | fit +2.0 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "athletics-astros:670541:hitRunRbi",
         "gameId": "athletics-astros",
         "gameTitle": "Athletics @ Astros",
         "league": "MLB",
@@ -16692,13 +17583,13 @@
         "playerName": "Yordan Alvarez",
         "teamName": "Astros",
         "slot": 2,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 84.1,
-        "expectedValue": 1.8,
-        "statValueLabel": "1.84 exp RBI",
+        "probability": 93.7,
+        "expectedValue": 4.5,
+        "statValueLabel": "1.91 H · 1.14 R · 1.41 RBI · 4.47 total",
         "sample": {
           "seasonGames": 65,
           "seasonPlateAppearances": 284,
@@ -16738,7 +17629,7 @@
         "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 2 carry | process fading; approach 59.5/100 | recent form up | split fit live",
+        "reason": "slot 2 carry | recent form up | split fit live | combined hits/runs/RBI lane",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
@@ -16746,7 +17637,7 @@
           "clean-conversion-lane",
           "carry-bat-live",
           "process-fading",
-          "run-production-slot",
+          "combined-production-lane",
           "statcast-fade"
         ],
         "matchupNote": "+10.00 vs Gage Jump",
@@ -16839,10 +17730,10 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 72,
-        "probability": 60.8,
-        "expectedValue": 2.1,
-        "statValueLabel": "2.05 exp hits",
+        "confidence": 70,
+        "probability": 57,
+        "expectedValue": 1.9,
+        "statValueLabel": "1.91 exp hits",
         "sample": {
           "seasonGames": 65,
           "seasonPlateAppearances": 284,
@@ -16910,9 +17801,9 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 69,
-        "probability": 68.6,
+        "probability": 68.9,
         "expectedValue": 1.2,
-        "statValueLabel": "1.16 exp walks",
+        "statValueLabel": "1.17 exp walks",
         "sample": {
           "seasonGames": 63,
           "seasonPlateAppearances": 285,
@@ -16983,10 +17874,10 @@
         "propType": "singles",
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
-        "confidence": 75,
-        "probability": 69.5,
-        "expectedValue": 1.2,
-        "statValueLabel": "1.19 exp singles",
+        "confidence": 74,
+        "probability": 66.9,
+        "expectedValue": 1.1,
+        "statValueLabel": "1.11 exp singles",
         "sample": {
           "seasonGames": 65,
           "seasonPlateAppearances": 284,
@@ -17041,161 +17932,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "posted",
         "playerSummary": ".316 AVG | 1.083 OPS | 74 H | 22 HR | 12g: .429 AVG | 1.300 OPS | 18 H | 4 HR | vs LHP: .324 AVG | 1.095 OPS | 8 HR | career 3125 PA | .969 OPS | 190 HR | repeatable career power | power 100 | 2026 sample ok | arsenal 4-Seam Fastball 50% / Slider 24% / Curveball 9% | fit +4.9 | +10.0 matchup grade in a neutral lane"
-      },
-      {
-        "id": "athletics-astros:691016:rbi",
-        "gameId": "athletics-astros",
-        "gameTitle": "Athletics @ Astros",
-        "league": "MLB",
-        "playerId": 691016,
-        "playerName": "Tyler Soderstrom",
-        "teamName": "Athletics",
-        "slot": 4,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 79,
-        "probability": 81.7,
-        "expectedValue": 1.7,
-        "statValueLabel": "1.70 exp RBI",
-        "sample": {
-          "seasonGames": 61,
-          "seasonPlateAppearances": 257,
-          "recentGames": 12,
-          "recentPlateAppearances": 46,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 24,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 1209,
-          "seasonPa": 257,
-          "powerIndex": 61.68,
-          "contactRisk": 45.7,
-          "roleStability": 100,
-          "label": "baseline career profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 66.9,
-            "processScore": 15,
-            "careerWeight": 0.1,
-            "identityDelta": -1.5,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 257,
-            "careerPa": 1209
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "baseline career profile"
-        },
-        "recommendationTier": "Core",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 4 carry | process improving; approach 66.9/100 | recent form up | split fit live",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "middle-order-traffic",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "run-production-slot",
-          "statcast-power-up",
-          "statcast-contact-up",
-          "statcast-hr-carry"
-        ],
-        "matchupNote": "+10.00 vs Mike Burrows",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".231 AVG | .754 OPS | 52 H | 8 HR | 12g: .316 AVG | .908 OPS | 12 H | 2 HR | vs RHP: .247 AVG | .800 OPS | 5 HR | career 1209 PA | .751 OPS | 44 HR | baseline career profile | power 62 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Changeup 26% / Slider 16% | fit +2.0 | +10.0 matchup grade in a traffic-risk lane"
-      },
-      {
-        "id": "athletics-astros:665161:singles",
-        "gameId": "athletics-astros",
-        "gameTitle": "Athletics @ Astros",
-        "league": "MLB",
-        "playerId": 665161,
-        "playerName": "Jeremy Peña",
-        "teamName": "Astros",
-        "slot": 1,
-        "propType": "singles",
-        "propLabel": "Singles",
-        "marketLabel": "Over 0.5 singles",
-        "confidence": 73,
-        "probability": 75.3,
-        "expectedValue": 1.4,
-        "statValueLabel": "1.40 exp singles",
-        "sample": {
-          "seasonGames": 28,
-          "seasonPlateAppearances": 123,
-          "recentGames": 12,
-          "recentPlateAppearances": 54,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 27,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 2481,
-          "seasonPa": 123,
-          "powerIndex": 51.96,
-          "contactRisk": 40.89,
-          "roleStability": 100,
-          "label": "contact-stable profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 69.5,
-            "processScore": 15,
-            "careerWeight": 0.1,
-            "identityDelta": 1.2,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 123,
-            "careerPa": 2481
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "contact-stable profile"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 1 carry | recent form up | split fit live | clean traffic lane",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "contact-lane",
-          "statcast-power-up"
-        ],
-        "matchupNote": "+10.00 vs Gage Jump",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".306 AVG | .816 OPS | 34 H | 3 HR | 12g: .435 AVG | 1.084 OPS | 20 H | 0 HR | vs LHP: .375 AVG | 1.161 OPS | 1 HR | career 2481 PA | .737 OPS | 67 HR | contact-stable profile | power 52 | 2026 sample ok | arsenal 4-Seam Fastball 50% / Slider 24% / Curveball 9% | fit +1.1 | +10.0 matchup grade in a neutral lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 31,
+    "candidateCount": 44,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

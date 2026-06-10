@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Giants",
-      "detail": "Trevor McDonald (RHP) | 2-3 | 4.50 ERA | 31 SO | 1.15 WHIP | 34.0 IP"
+      "detail": "Trevor McDonald (RHP) | 2-3 | 4.15 ERA | 37 SO | 1.18 WHIP | 39.0 IP"
     },
     {
       "side": "Home",
       "name": "Cubs",
-      "detail": "Jameson Taillon (RHP) | 2-5 | 5.13 ERA | 57 SO | 1.26 WHIP | 66.2 IP"
+      "detail": "Jameson Taillon (RHP) | 2-5 | 5.19 ERA | 59 SO | 1.30 WHIP | 67.2 IP"
     }
   ],
   "summary": "Giants @ Cubs with Trevor McDonald against Jameson Taillon.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Giants +108 / Cubs -125 | o8 -105 / u8 -114 | +1.5 -195 / -1.5 +170 | F5 no F5 ML / no F5 total.",
+    "Current board:  |  |  | F5 no F5 ML / no F5 total.",
     "Trevor McDonald vs Jameson Taillon."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -34,21 +34,21 @@
     "away": {
       "divisionLeader": false,
       "divisionRank": "4",
-      "gamesBack": "16.0",
-      "losses": 39,
+      "gamesBack": "15.5",
+      "losses": 40,
       "runDifferential": -49,
       "streakCode": "L1",
-      "winningPercentage": ".400",
-      "wins": 26
+      "winningPercentage": ".403",
+      "wins": 27
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "4",
-      "gamesBack": "6.5",
-      "losses": 31,
-      "runDifferential": 4,
-      "streakCode": "W1",
-      "winningPercentage": ".523",
+      "gamesBack": "8.0",
+      "losses": 32,
+      "runDifferential": 3,
+      "streakCode": "L1",
+      "winningPercentage": ".515",
       "wins": 34
     }
   },
@@ -462,6 +462,255 @@
     "recentInningHistory": {
       "away": [
         {
+          "gamePk": 823217,
+          "date": "2026-05-27",
+          "opponent": "Diamondbacks",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 2,
+          "runsAgainst": 3,
+          "starters": {
+            "team": {
+              "pitcherId": 686790,
+              "pitcherName": "Trevor McDonald",
+              "teamName": "San Francisco Giants",
+              "opponentName": "Arizona Diamondbacks",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 647336,
+              "pitcherName": "Michael Soroka",
+              "teamName": "Arizona Diamondbacks",
+              "opponentName": "San Francisco Giants",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Mixed",
+              "tone": "info"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Blew",
+              "tone": "negative"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 2
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824353,
+          "date": "2026-05-29",
+          "opponent": "Rockies",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 6,
+          "runsAgainst": 8,
+          "starters": {
+            "team": {
+              "pitcherId": 657277,
+              "pitcherName": "Logan Webb",
+              "teamName": "San Francisco Giants",
+              "opponentName": "Colorado Rockies",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 547179,
+              "pitcherName": "Michael Lorenzen",
+              "teamName": "Colorado Rockies",
+              "opponentName": "San Francisco Giants",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Short",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "Blew",
+              "tone": "negative"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 1
+            },
+            {
+              "inning": 4,
+              "runs": 2
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 1
+            },
+            {
+              "inning": 9,
+              "runs": 2
+            }
+          ]
+        },
+        {
+          "gamePk": 824352,
+          "date": "2026-05-30",
+          "opponent": "Rockies",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 3,
+          "runsAgainst": 8,
+          "starters": {
+            "team": {
+              "pitcherId": 605288,
+              "pitcherName": "Adrian Houser",
+              "teamName": "San Francisco Giants",
+              "opponentName": "Colorado Rockies",
+              "firstInningRunsAllowed": 2,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 663372,
+              "pitcherName": "Ryan Feltner",
+              "teamName": "Colorado Rockies",
+              "opponentName": "San Francisco Giants",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Fav failed",
+              "tone": "negative"
+            },
+            "hitters": {
+              "label": "Stranded",
+              "tone": "negative"
+            },
+            "starter": {
+              "label": "Cracked",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 2
+            },
+            {
+              "inning": 9,
+              "runs": 1
+            }
+          ]
+        },
+        {
           "gamePk": 824354,
           "date": "2026-05-31",
           "opponent": "Rockies",
@@ -680,7 +929,7 @@
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
@@ -688,7 +937,7 @@
             },
             {
               "inning": 8,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 9,
@@ -759,7 +1008,7 @@
             },
             {
               "inning": 5,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 6,
@@ -826,7 +1075,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 2,
@@ -834,7 +1083,7 @@
             },
             {
               "inning": 3,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 4,
@@ -850,7 +1099,7 @@
             },
             {
               "inning": 7,
-              "runs": 12
+              "runs": 6
             },
             {
               "inning": 8,
@@ -1006,6 +1255,255 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 823376,
+          "date": "2026-05-27",
+          "opponent": "Pirates",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 10,
+          "runsAgainst": 4,
+          "starters": {
+            "team": {
+              "pitcherId": 592791,
+              "pitcherName": "Jameson Taillon",
+              "teamName": "Chicago Cubs",
+              "opponentName": "Pittsburgh Pirates",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 696149,
+              "pitcherName": "Bubba Chandler",
+              "teamName": "Pittsburgh Pirates",
+              "opponentName": "Chicago Cubs",
+              "firstInningRunsAllowed": 2,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Won late",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 2
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 6
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 823378,
+          "date": "2026-05-28",
+          "opponent": "Pirates",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 7,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 607067,
+              "pitcherName": "Colin Rea",
+              "teamName": "Chicago Cubs",
+              "opponentName": "Pittsburgh Pirates",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 694973,
+              "pitcherName": "Paul Skenes",
+              "teamName": "Pittsburgh Pirates",
+              "opponentName": "Chicago Cubs",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 2
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 3
+            },
+            {
+              "inning": 9,
+              "runs": 1
+            }
+          ]
+        },
+        {
+          "gamePk": 823055,
+          "date": "2026-05-29",
+          "opponent": "Cardinals",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 5,
+          "runsAgainst": 6,
+          "starters": {
+            "team": {
+              "pitcherId": 684007,
+              "pitcherName": "Shota Imanaga",
+              "teamName": "Chicago Cubs",
+              "opponentName": "St. Louis Cardinals",
+              "firstInningRunsAllowed": 3,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 669467,
+              "pitcherName": "Andre Pallante",
+              "teamName": "St. Louis Cardinals",
+              "opponentName": "Chicago Cubs",
+              "firstInningRunsAllowed": 3,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 3
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 1
+            }
+          ]
+        },
         {
           "gamePk": 823054,
           "date": "2026-05-30",
@@ -1219,7 +1717,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
@@ -1306,15 +1804,15 @@
             },
             {
               "inning": 2,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 3,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
@@ -1409,11 +1907,11 @@
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 8,
@@ -1421,7 +1919,7 @@
             },
             {
               "inning": 9,
-              "runs": 8
+              "runs": 4
             }
           ]
         },
@@ -1859,7 +2357,139 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-824670",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 60.4,
+          "noRunProbabilityPct": 39.6,
+          "awayRunProbabilityPct": 58.7,
+          "homeRunProbabilityPct": 4,
+          "lean": "Run",
+          "strength": "clear",
+          "sampleHalves": 129,
+          "caution": "Cubs have been dead early in this series",
+          "reason": "YRFI with a 60% modeled chance of at least one first-inning run. Giants score 58.7% of the time and Cubs 4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 53.6,
+          "noRunProbabilityPct": 46.4,
+          "awayRunProbabilityPct": 23.5,
+          "homeRunProbabilityPct": 30.1,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 129,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.2 projected first-five runs, with inning 2 weighted by early scoring shape.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 52,
+          "noRunProbabilityPct": 48,
+          "awayRunProbabilityPct": 28.7,
+          "homeRunProbabilityPct": 23.3,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 129,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.2 projected first-five runs, with inning 3 weighted by early scoring shape.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 57.5,
+          "noRunProbabilityPct": 42.5,
+          "awayRunProbabilityPct": 27.6,
+          "homeRunProbabilityPct": 29.9,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 129,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.2 projected first-five runs, with inning 4 weighted by early scoring shape.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 56.9,
+          "noRunProbabilityPct": 43.1,
+          "awayRunProbabilityPct": 29.5,
+          "homeRunProbabilityPct": 27.4,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 129,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.2 projected first-five runs, with inning 5 weighted by early scoring shape.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Giants @ Cubs",
+      "mlbGamePk": 824670,
+      "marketAnchors": null
+    }
   },
   "lineupContext": {
     "Giants": {
@@ -1914,7 +2544,7 @@
   "lineupBoard": {
     "gameId": "giants-cubs",
     "title": "Giants @ Cubs",
-    "snapshot": "2026-06-07T15:20:45.583Z",
+    "snapshot": "2026-06-07T16:39:59.693Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -1929,7 +2559,7 @@
       "label": "65°F | Wind 10 mph In | 21% precip"
     },
     "marketWeatherContext": {
-      "line": "CHC -126",
+      "line": "CHC -129",
       "total": "8.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -6105,14 +6735,14 @@
       "pitchHand": "R",
       "wins": 2,
       "losses": 3,
-      "era": "4.50",
-      "strikeOuts": 31,
-      "inningsPitched": "34.0",
-      "hitsAllowed": 30,
-      "walks": 9,
+      "era": "4.15",
+      "strikeOuts": 37,
+      "inningsPitched": "39.0",
+      "hitsAllowed": 34,
+      "walks": 12,
       "homeRunsAllowed": 3,
-      "whip": "1.15",
-      "gamesStarted": 6,
+      "whip": "1.18",
+      "gamesStarted": 7,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 686790,
@@ -6281,7 +6911,7 @@
         "battersFaced": null,
         "totalRow": null,
         "gameRows": [],
-        "fetchedAt": "2026-06-07T15:17:02.489Z"
+        "fetchedAt": "2026-06-07T16:39:18.648Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -10259,7 +10889,7 @@
           "Away split: 3.71 ERA / 2 HR allowed.",
           "vs. Left: .284 AVG / .841 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -10286,14 +10916,14 @@
       "pitchHand": "R",
       "wins": 2,
       "losses": 5,
-      "era": "5.13",
-      "strikeOuts": 57,
-      "inningsPitched": "66.2",
-      "hitsAllowed": 63,
-      "walks": 21,
+      "era": "5.19",
+      "strikeOuts": 59,
+      "inningsPitched": "67.2",
+      "hitsAllowed": 65,
+      "walks": 23,
       "homeRunsAllowed": 20,
-      "whip": "1.26",
-      "gamesStarted": 12,
+      "whip": "1.30",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 592791,
@@ -10443,14 +11073,14 @@
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/jameson-taillon-vs-giants",
-        "answerText": "Jameson Taillon has a record of 1-1 with an ERA of 6.88 and 14 strikeouts in 4 appearances against the Giants in his career.",
+        "answerText": "Jameson Taillon is 1-1 with an ERA of 6.88 and 14 strikeouts in 4 appearances against the Giants in his career.",
         "pitcherName": "Jameson Taillon",
         "pitcherTeam": "Cubs",
         "opponentTeam": "Giants",
         "appearances": 4,
         "gamesStarted": 4,
-        "wins": null,
-        "losses": null,
+        "wins": 1,
+        "losses": 1,
         "era": 6.88,
         "strikeouts": 14,
         "inningsPitched": "17.0",
@@ -10583,7 +11213,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:17:04.232Z"
+        "fetchedAt": "2026-06-07T16:39:20.631Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -15412,7 +16042,7 @@
           "vs. Left: .250 AVG / .916 OPS allowed.",
           "Wrigley Field: 4.05 ERA / .248 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -15443,7 +16073,7 @@
     ],
     "tagCount": 1,
     "hasSeriesBreakdown": false,
-    "hasMoneyline": true,
+    "hasMoneyline": false,
     "hasAnalysisPick": true,
     "hasStructuredInputs": true,
     "hasPlayerProps": true,
@@ -15457,23 +16087,7 @@
       0,
       1
     ],
-    "markets": [
-      {
-        "label": "Spread",
-        "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "+1.5 -195 / -1.5 +170"
-      },
-      {
-        "label": "Total",
-        "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "o8 -105 / u8 -114"
-      },
-      {
-        "label": "Moneyline",
-        "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "Giants +108 / Cubs -125"
-      }
-    ],
+    "markets": [],
     "note": "Board snapshot plus model context.",
     "provider": "Official MLB data + ScoresAndOdds live board"
   },
@@ -15483,96 +16097,71 @@
       "index": 0,
       "role": "Away",
       "name": "Giants",
-      "detail": "Trevor McDonald (RHP) | 2-3 | 4.50 ERA | 31 SO | 1.15 WHIP | 34.0 IP",
-      "americanOdds": 108,
-      "americanLabel": "+108",
-      "decimalOdds": 2.08,
-      "impliedProbability": 0.4807692307692308,
-      "impliedProbabilityLabel": "48.1%"
+      "detail": "Trevor McDonald (RHP) | 2-3 | 4.15 ERA | 37 SO | 1.18 WHIP | 39.0 IP",
+      "americanOdds": null,
+      "americanLabel": "N/A",
+      "decimalOdds": null,
+      "impliedProbability": null,
+      "impliedProbabilityLabel": "N/A"
     },
     {
       "id": "giants-cubs:1",
       "index": 1,
       "role": "Home",
       "name": "Cubs",
-      "detail": "Jameson Taillon (RHP) | 2-5 | 5.13 ERA | 57 SO | 1.26 WHIP | 66.2 IP",
-      "americanOdds": -125,
-      "americanLabel": "-125",
-      "decimalOdds": 1.8,
-      "impliedProbability": 0.5555555555555556,
-      "impliedProbabilityLabel": "55.6%"
+      "detail": "Jameson Taillon (RHP) | 2-5 | 5.19 ERA | 59 SO | 1.30 WHIP | 67.2 IP",
+      "americanOdds": null,
+      "americanLabel": "N/A",
+      "decimalOdds": null,
+      "impliedProbability": null,
+      "impliedProbabilityLabel": "N/A"
     }
   ],
   "moneyline": {
-    "available": true,
+    "available": false,
     "label": "Moneyline",
     "provider": "Official MLB data + ScoresAndOdds live board",
-    "participants": [
-      {
-        "id": "giants-cubs:0",
-        "index": 0,
-        "role": "Away",
-        "name": "Giants",
-        "detail": "Trevor McDonald (RHP) | 2-3 | 4.50 ERA | 31 SO | 1.15 WHIP | 34.0 IP",
-        "americanOdds": 108,
-        "americanLabel": "+108",
-        "decimalOdds": 2.08,
-        "impliedProbability": 0.4807692307692308,
-        "impliedProbabilityLabel": "48.1%"
-      },
-      {
-        "id": "giants-cubs:1",
-        "index": 1,
-        "role": "Home",
-        "name": "Cubs",
-        "detail": "Jameson Taillon (RHP) | 2-5 | 5.13 ERA | 57 SO | 1.26 WHIP | 66.2 IP",
-        "americanOdds": -125,
-        "americanLabel": "-125",
-        "decimalOdds": 1.8,
-        "impliedProbability": 0.5555555555555556,
-        "impliedProbabilityLabel": "55.6%"
-      }
-    ]
+    "participants": []
   },
   "analysis": {
-    "available": true,
+    "available": false,
     "participantId": "giants-cubs:0",
     "participant": {
       "id": "giants-cubs:0",
       "index": 0,
       "role": "Away",
       "name": "Giants",
-      "detail": "Trevor McDonald (RHP) | 2-3 | 4.50 ERA | 31 SO | 1.15 WHIP | 34.0 IP",
-      "americanOdds": 108,
-      "americanLabel": "+108",
-      "decimalOdds": 2.08,
-      "impliedProbability": 0.4807692307692308,
-      "impliedProbabilityLabel": "48.1%"
+      "detail": "Trevor McDonald (RHP) | 2-3 | 4.15 ERA | 37 SO | 1.18 WHIP | 39.0 IP",
+      "americanOdds": null,
+      "americanLabel": "N/A",
+      "decimalOdds": null,
+      "impliedProbability": null,
+      "impliedProbabilityLabel": "N/A"
     },
     "opponent": {
       "id": "giants-cubs:1",
       "index": 1,
       "role": "Home",
       "name": "Cubs",
-      "detail": "Jameson Taillon (RHP) | 2-5 | 5.13 ERA | 57 SO | 1.26 WHIP | 66.2 IP",
-      "americanOdds": -125,
-      "americanLabel": "-125",
-      "decimalOdds": 1.8,
-      "impliedProbability": 0.5555555555555556,
-      "impliedProbabilityLabel": "55.6%"
+      "detail": "Jameson Taillon (RHP) | 2-5 | 5.19 ERA | 59 SO | 1.30 WHIP | 67.2 IP",
+      "americanOdds": null,
+      "americanLabel": "N/A",
+      "decimalOdds": null,
+      "impliedProbability": null,
+      "impliedProbabilityLabel": "N/A"
     },
     "lean": "Model pick: Giants on hit-production baseline and lineup-vs-pitching fit.",
     "rationale": "Hit-production baseline: Giants (9.25 H/G | last 3 8.00 | away 9.26) vs Cubs (8.25 H/G | last 3 3.67 | home 8.83)",
-    "confidence": 52,
-    "volatility": 92,
-    "recommendationScore": 34,
+    "confidence": 60,
+    "volatility": 71,
+    "recommendationScore": 43,
     "tier": "Swingy",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 3.4,
-    "modelEdgeLabel": "3.4-point model edge",
-    "marketProbability": 0.46391752577319584,
-    "marketProbabilityLabel": "46.4%",
+    "modelEdge": 5,
+    "modelEdgeLabel": "5-point model edge",
+    "marketProbability": 0.5,
+    "marketProbabilityLabel": "50.0%",
     "inputs": [
       {
         "label": "Hit-production baseline",
@@ -15590,26 +16179,14 @@
       },
       {
         "label": "Starter ERA",
-        "summary": "Starter ERA: Giants (4.50 ERA) vs Cubs (5.13 ERA)",
+        "summary": "Starter ERA: Giants (4.15 ERA) vs Cubs (5.19 ERA)",
         "source": "Listed probable starters",
-        "margin": 5.7,
+        "margin": 9.4,
         "weight": 0.23
       }
     ],
-    "inputsUsed": 11,
+    "inputsUsed": 10,
     "volatilityNotes": [
-      {
-        "label": "The underdog owns the projected hit edge",
-        "delta": 6
-      },
-      {
-        "label": "The favorite is carrying a real traffic deficit despite the price",
-        "delta": 5
-      },
-      {
-        "label": "The underdog projects cleaner through the starter window",
-        "delta": 4
-      },
       {
         "label": "One lineup carries real platoon pressure versus the listed starter hand",
         "delta": 3
@@ -15620,14 +16197,6 @@
       },
       {
         "label": "One starter owns a larger swing-and-miss edge",
-        "delta": 3
-      },
-      {
-        "label": "The underdog lineup fits today’s starter better",
-        "delta": 5
-      },
-      {
-        "label": "The underdog hit-production trend is still live",
         "delta": 3
       },
       {
@@ -15643,39 +16212,27 @@
         "delta": 4
       },
       {
-        "label": "Overall baseball variance is still high enough that the side reads better as a watchlist edge than a clean conviction tag",
-        "delta": 3
-      },
-      {
         "label": "Projected hit edge is partially compressed because lineup certainty was still incomplete",
         "delta": 2
-      },
-      {
-        "label": "Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.",
-        "delta": 3
-      },
-      {
-        "label": "v1.1 market budget: this underdog call still needs cleaner starter, stability, and state support before it can be treated like a real market disagreement edge.",
-        "delta": 5
       }
     ],
     "pickReasons": [
-      "Giants own the cleaner full-game traffic script at 9.9 projected hits.",
+      "Giants own the cleaner full-game traffic script at 10 projected hits.",
       "Giants have the better starter-window lane with 5.5 projected first-five hits.",
       "Giants still hold the better bridge-and-finish script once the bullpens take over.",
       "Giants can lean on Willy Adames, Jung Hoo Lee, Matt Chapman to drive early pressure against Jameson Taillon."
     ],
     "indicators": {
-      "reliefPitchingRisk": 47.9,
-      "coinflipPressure": 55,
-      "starterLeverageIndex": 46.8,
-      "lateInningStabilityIndex": 32,
+      "reliefPitchingRisk": 40.9,
+      "coinflipPressure": 39,
+      "starterLeverageIndex": 51.2,
+      "lateInningStabilityIndex": 46.3,
       "pickBullpenScore": 60.4,
       "oppBullpenScore": 63.2,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 55.9,
-      "oppStarterScore": 57.1,
+      "pickStarterScore": 58.5,
+      "oppStarterScore": 56.9,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -15731,10 +16288,10 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 1.1,
+      "projectedHitEdgeForPick": 1.3,
       "hitEdgeAgainstPick": false,
-      "pickIsMarketFavorite": false,
-      "pickIsMarketUnderdog": true,
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
       "heavyFavoriteWeakLineupFlag": false,
       "heavyFavoriteNoisyBullpenFlag": false,
       "deadEarlyRiskFlag": false,
@@ -15754,37 +16311,31 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": -42,
+      "efficientFavoriteScore": -24,
       "efficientFavoriteTier": "Watch favorite",
       "efficientFavoriteReasons": [],
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
-        "stackedRisk",
-        "thinModelAgreement",
         "starterNotClean",
         "lateNotClean"
       ],
       "efficientFavoriteBlockers": [
-        "notMarketFavorite",
         "notPricedFavorite"
       ],
-      "tierOneRiskPoints": 3,
+      "tierOneRiskPoints": 0,
       "tierOnePassFlag": false,
-      "tierOneRiskFlags": [
-        "highRiskPoints",
-        "underdogNeedsProof"
-      ],
+      "tierOneRiskFlags": [],
       "favoredSignalCount": 5,
-      "starterLateGap": 14.8,
+      "starterLateGap": 4.9,
       "starterLeashGap": 0,
-      "edgeHaircutApplied": 2.9,
+      "edgeHaircutApplied": 0,
       "gameShape": {
         "label": "Early-pressure side",
         "shapeLabel": "balanced traffic game",
         "category": "early_pressure_side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "categoryConfidence": 59.8,
-        "realityGapScore": 39.1,
+        "categoryConfidence": 60.1,
+        "realityGapScore": 37.1,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -15801,10 +16352,10 @@
           {
             "id": "bridge",
             "label": "Bridge",
-            "score": 34.2
+            "score": 25.8
           }
         ],
-        "rfImpactScore": 30
+        "rfImpactScore": 29.5
       }
     },
     "gameShape": {
@@ -15815,7 +16366,7 @@
         "slug": "early_pressure_side",
         "label": "Early-pressure side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "confidence": 59.8,
+        "confidence": 60.1,
         "reasons": [
           "The pick needs to cash the first traffic pocket.",
           "The best edge is timing, not late-game patience."
@@ -15859,20 +16410,20 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 1.1
+          "projectedHitEdge": 1.3
         }
       },
-      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 39.1/100. Main checks: 65°F | Wind 10 mph In | 21% precip | weather suppresses carry.",
+      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.1/100. Main checks: 65°F | Wind 10 mph In | 21% precip | weather suppresses carry.",
       "pickTeam": "Giants",
       "opponentTeam": "Cubs",
       "scores": {
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
-        "bullpenFlipScore": 34.2,
-        "starterControlScore": 26.5,
-        "marketContradictionScore": 30,
-        "realityGapScore": 39.1
+        "bullpenFlipScore": 25.8,
+        "starterControlScore": 29.4,
+        "marketContradictionScore": 5,
+        "realityGapScore": 37.1
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -15886,9 +16437,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 18.9,
-            "pickScore": 18.9,
-            "opponentScore": 10.3
+            "gameScore": 20.9,
+            "pickScore": 20.9,
+            "opponentScore": 10.2
           },
           {
             "id": "chaos",
@@ -15918,7 +16469,7 @@
             "id": "bridge",
             "label": "Bridge",
             "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-            "gameScore": 34.2,
+            "gameScore": 25.8,
             "pickScore": 3.6,
             "opponentScore": 2.6
           },
@@ -15936,7 +16487,7 @@
             "role": "pick",
             "team": "Giants",
             "scores": {
-              "pressure": 18.9,
+              "pressure": 20.9,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -15944,7 +16495,7 @@
               "flow": 100
             },
             "polygon": [
-              18.9,
+              20.9,
               5,
               0,
               16,
@@ -15955,7 +16506,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 55.9,
+              "starterScore": 58.5,
               "bullpenScore": 60.4,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -15969,7 +16520,7 @@
             "role": "opponent",
             "team": "Cubs",
             "scores": {
-              "pressure": 10.3,
+              "pressure": 10.2,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -15977,7 +16528,7 @@
               "flow": 0
             },
             "polygon": [
-              10.3,
+              10.2,
               5,
               0,
               16,
@@ -15988,7 +16539,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 57.1,
+              "starterScore": 56.9,
               "bullpenScore": 63.2,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -16003,19 +16554,19 @@
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 18.9,
+            "pressure": 20.9,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
-            "bridge": 34.2,
+            "bridge": 25.8,
             "flow": 100
           },
           "polygon": [
-            18.9,
+            20.9,
             44.8,
             8.5,
             24.4,
-            34.2,
+            25.8,
             100
           ],
           "dominantAxes": [
@@ -16032,7 +16583,7 @@
             {
               "id": "bridge",
               "label": "Bridge",
-              "score": 34.2
+              "score": 25.8
             }
           ]
         }
@@ -16098,7 +16649,7 @@
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 30,
+        "impactScore": 29.5,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -16133,8 +16684,8 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 9.9,
-      "homeProjectedHits": 8,
+      "awayProjectedHits": 10,
+      "homeProjectedHits": 7.9,
       "awayHitEfficiencyPct": 28.8,
       "homeHitEfficiencyPct": 23.2,
       "awayFirst5ProjectedHits": 5.5,
@@ -16143,12 +16694,12 @@
       "homeFirst5HitEfficiencyPct": 23.6,
       "awayLateProjectedHits": 4.4,
       "homeLateProjectedHits": 3.5,
-      "awayLateHitEfficiencyPct": 28.3,
-      "homeLateHitEfficiencyPct": 22.8,
+      "awayLateHitEfficiencyPct": 28.5,
+      "homeLateHitEfficiencyPct": 22.9,
       "awayBullpenChainScore": null,
       "homeBullpenChainScore": null,
       "edgeTeam": "Giants",
-      "edgeHits": 1.9,
+      "edgeHits": 2.1,
       "first5EdgeTeam": "Giants",
       "first5EdgeHits": 1,
       "lateEdgeTeam": "Giants",
@@ -16385,7 +16936,7 @@
           "depthScore": 75.5,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Giants own the cleaner full-game traffic script at 9.9 projected hits.",
+            "Giants own the cleaner full-game traffic script at 10 projected hits.",
             "Giants have the better starter-window lane with 5.5 projected first-five hits.",
             "Giants still hold the better bridge-and-finish script once the bullpens take over.",
             "Giants can lean on Willy Adames, Jung Hoo Lee, Matt Chapman to drive early pressure against Jameson Taillon.",
@@ -16453,7 +17004,7 @@
           {
             "label": "Full game",
             "edgeTeam": "Giants",
-            "projection": "9.9 H",
+            "projection": "10 H",
             "note": "Giants finish with the stronger aggregate traffic path, anchored by Willy Adames, Jung Hoo Lee."
           }
         ]
@@ -16483,8 +17034,8 @@
         "runDiff": 1.1,
         "absoluteRunDiff": 1.1,
         "runDiffSharePct": 14.3,
-        "confidence": 52,
-        "marketProbabilityPct": 46.4,
+        "confidence": 60,
+        "marketProbabilityPct": null,
         "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
         "note": "Giants projects 1.1 runs better in a 7.7-run environment."
@@ -16497,7 +17048,7 @@
           "slug": "early_pressure_side",
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-          "confidence": 59.8,
+          "confidence": 60.1,
           "reasons": [
             "The pick needs to cash the first traffic pocket.",
             "The best edge is timing, not late-game patience."
@@ -16541,20 +17092,20 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 1.1
+            "projectedHitEdge": 1.3
           }
         },
-        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 39.1/100. Main checks: 65°F | Wind 10 mph In | 21% precip | weather suppresses carry.",
+        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.1/100. Main checks: 65°F | Wind 10 mph In | 21% precip | weather suppresses carry.",
         "pickTeam": "Giants",
         "opponentTeam": "Cubs",
         "scores": {
           "chaosScore": 44.8,
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
-          "bullpenFlipScore": 34.2,
-          "starterControlScore": 26.5,
-          "marketContradictionScore": 30,
-          "realityGapScore": 39.1
+          "bullpenFlipScore": 25.8,
+          "starterControlScore": 29.4,
+          "marketContradictionScore": 5,
+          "realityGapScore": 37.1
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -16568,9 +17119,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 18.9,
-              "pickScore": 18.9,
-              "opponentScore": 10.3
+              "gameScore": 20.9,
+              "pickScore": 20.9,
+              "opponentScore": 10.2
             },
             {
               "id": "chaos",
@@ -16600,7 +17151,7 @@
               "id": "bridge",
               "label": "Bridge",
               "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-              "gameScore": 34.2,
+              "gameScore": 25.8,
               "pickScore": 3.6,
               "opponentScore": 2.6
             },
@@ -16618,7 +17169,7 @@
               "role": "pick",
               "team": "Giants",
               "scores": {
-                "pressure": 18.9,
+                "pressure": 20.9,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -16626,7 +17177,7 @@
                 "flow": 100
               },
               "polygon": [
-                18.9,
+                20.9,
                 5,
                 0,
                 16,
@@ -16637,7 +17188,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 55.9,
+                "starterScore": 58.5,
                 "bullpenScore": 60.4,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -16651,7 +17202,7 @@
               "role": "opponent",
               "team": "Cubs",
               "scores": {
-                "pressure": 10.3,
+                "pressure": 10.2,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -16659,7 +17210,7 @@
                 "flow": 0
               },
               "polygon": [
-                10.3,
+                10.2,
                 5,
                 0,
                 16,
@@ -16670,7 +17221,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 57.1,
+                "starterScore": 56.9,
                 "bullpenScore": 63.2,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -16685,19 +17236,19 @@
             "label": "Early-pressure side",
             "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 18.9,
+              "pressure": 20.9,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
-              "bridge": 34.2,
+              "bridge": 25.8,
               "flow": 100
             },
             "polygon": [
-              18.9,
+              20.9,
               44.8,
               8.5,
               24.4,
-              34.2,
+              25.8,
               100
             ],
             "dominantAxes": [
@@ -16714,7 +17265,7 @@
               {
                 "id": "bridge",
                 "label": "Bridge",
-                "score": 34.2
+                "score": 25.8
               }
             ]
           }
@@ -16780,7 +17331,7 @@
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 30,
+          "impactScore": 29.5,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -16912,7 +17463,7 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
-        "confidence": 79,
+        "confidence": 67,
         "probability": 83.3,
         "expectedValue": 1.8,
         "statValueLabel": "1.79 exp RBI",
@@ -16952,7 +17503,7 @@
           "trackingPenalty": 18,
           "reason": "repeatable career power"
         },
-        "recommendationTier": "Core",
+        "recommendationTier": "Lean",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 4 carry | process improving; approach 70.3/100 | recent form up | split fit live",
@@ -16972,6 +17523,151 @@
         "teamScriptLabel": "",
         "lineupStatus": "partial",
         "playerSummary": ".246 AVG | .745 OPS | 63 H | 11 HR | 14g: .346 AVG | 1.298 OPS | 18 H | 8 HR | vs RHP: .271 AVG | .808 OPS | 9 HR | career 4545 PA | .758 OPS | 188 HR | repeatable career power | power 68 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Cutter 19% / Sweeper 17% | fit +4.2 | +10.0 matchup grade in a neutral lane"
+      },
+      {
+        "id": "giants-cubs:808982:runs",
+        "gameId": "giants-cubs",
+        "gameTitle": "Giants @ Cubs",
+        "league": "MLB",
+        "playerId": 808982,
+        "playerName": "Jung Hoo Lee",
+        "teamName": "Giants",
+        "slot": 5,
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 67,
+        "probability": 68.6,
+        "expectedValue": 1.2,
+        "statValueLabel": "1.16 exp runs",
+        "sample": {
+          "seasonGames": 57,
+          "seasonPlateAppearances": 231,
+          "recentGames": 14,
+          "recentPlateAppearances": 58,
+          "statcastGames": 7,
+          "statcastPlateAppearances": 29,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 983,
+          "seasonPa": 231,
+          "powerIndex": 38.18,
+          "contactRisk": 23.5,
+          "roleStability": 96,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 71.8,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": 3.7,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 231,
+            "careerPa": 983
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 5 carry | recent form up | split fit live",
+        "scriptTags": [
+          "top-third-pressure",
+          "middle-order-traffic",
+          "deep-lineup",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "statcast-power-up",
+          "statcast-contact-up"
+        ],
+        "matchupNote": "+10.00 vs Jameson Taillon",
+        "teamScriptLabel": "",
+        "lineupStatus": "partial",
+        "playerSummary": ".324 AVG | .808 OPS | 70 H | 3 HR | 14g: .571 AVG | 1.265 OPS | 32 H | 0 HR | vs RHP: .344 AVG | .868 OPS | 2 HR | career 983 PA | .728 OPS | 13 HR | contact-stable profile | power 38 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Cutter 19% / Sweeper 17% | fit +4.6 | +10.0 matchup grade in a neutral lane"
+      },
+      {
+        "id": "giants-cubs:808982:hitRunRbi",
+        "gameId": "giants-cubs",
+        "gameTitle": "Giants @ Cubs",
+        "league": "MLB",
+        "playerId": 808982,
+        "playerName": "Jung Hoo Lee",
+        "teamName": "Giants",
+        "slot": 5,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
+        "confidence": 82,
+        "probability": 94.9,
+        "expectedValue": 4.7,
+        "statValueLabel": "2.74 H · 0.99 R · 0.99 RBI · 4.71 total",
+        "sample": {
+          "seasonGames": 57,
+          "seasonPlateAppearances": 231,
+          "recentGames": 14,
+          "recentPlateAppearances": 58,
+          "statcastGames": 7,
+          "statcastPlateAppearances": 29,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 983,
+          "seasonPa": 231,
+          "powerIndex": 38.18,
+          "contactRisk": 23.5,
+          "roleStability": 96,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 71.8,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": 3.7,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 231,
+            "careerPa": 983
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 5 carry | recent form up | split fit live | combined hits/runs/RBI lane",
+        "scriptTags": [
+          "top-third-pressure",
+          "middle-order-traffic",
+          "deep-lineup",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "combined-production-lane",
+          "statcast-power-up",
+          "statcast-contact-up"
+        ],
+        "matchupNote": "+10.00 vs Jameson Taillon",
+        "teamScriptLabel": "",
+        "lineupStatus": "partial",
+        "playerSummary": ".324 AVG | .808 OPS | 70 H | 3 HR | 14g: .571 AVG | 1.265 OPS | 32 H | 0 HR | vs RHP: .344 AVG | .868 OPS | 2 HR | career 983 PA | .728 OPS | 13 HR | contact-stable profile | power 38 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Cutter 19% / Sweeper 17% | fit +4.6 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "giants-cubs:642715:totalBases",
@@ -17059,10 +17755,10 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 76,
-        "probability": 75.4,
+        "confidence": 77,
+        "probability": 75.8,
         "expectedValue": 2.7,
-        "statValueLabel": "2.72 exp hits",
+        "statValueLabel": "2.74 exp hits",
         "sample": {
           "seasonGames": 57,
           "seasonPlateAppearances": 231,
@@ -17132,9 +17828,9 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 57,
-        "probability": 28.2,
+        "probability": 29.3,
         "expectedValue": 0.3,
-        "statValueLabel": "0.33 exp walks",
+        "statValueLabel": "0.35 exp walks",
         "sample": {
           "seasonGames": 65,
           "seasonPlateAppearances": 272,
@@ -17201,9 +17897,9 @@
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
         "confidence": 82,
-        "probability": 92.1,
-        "expectedValue": 2.5,
-        "statValueLabel": "2.53 exp singles",
+        "probability": 92.2,
+        "expectedValue": 2.6,
+        "statValueLabel": "2.55 exp singles",
         "sample": {
           "seasonGames": 57,
           "seasonPlateAppearances": 231,
@@ -17260,160 +17956,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "partial",
         "playerSummary": ".324 AVG | .808 OPS | 70 H | 3 HR | 14g: .571 AVG | 1.265 OPS | 32 H | 0 HR | vs RHP: .344 AVG | .868 OPS | 2 HR | career 983 PA | .728 OPS | 13 HR | contact-stable profile | power 38 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Cutter 19% / Sweeper 17% | fit +4.6 | +10.0 matchup grade in a neutral lane"
-      },
-      {
-        "id": "giants-cubs:669477:rbi",
-        "gameId": "giants-cubs",
-        "gameTitle": "Giants @ Cubs",
-        "league": "MLB",
-        "playerId": 669477,
-        "playerName": "Casey Schmitt",
-        "teamName": "Giants",
-        "slot": 1,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 71,
-        "probability": 76.4,
-        "expectedValue": 1.4,
-        "statValueLabel": "1.44 exp RBI",
-        "sample": {
-          "seasonGames": 57,
-          "seasonPlateAppearances": 241,
-          "recentGames": 14,
-          "recentPlateAppearances": 72,
-          "statcastGames": 7,
-          "statcastPlateAppearances": 36,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 949,
-          "seasonPa": 241,
-          "powerIndex": 67.06,
-          "contactRisk": 46.92,
-          "roleStability": 100,
-          "label": "baseline career profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": true,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 76.4,
-            "processScore": 11,
-            "careerWeight": 0.1,
-            "identityDelta": 12,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 241,
-            "careerPa": 949
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "baseline career profile"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 1 carry | process improving; approach 76.4/100 | recent form up | run-production slot",
-        "scriptTags": [
-          "top-third-pressure",
-          "middle-order-traffic",
-          "deep-lineup",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "process-improving",
-          "run-production-slot",
-          "statcast-power-up",
-          "statcast-contact-up"
-        ],
-        "matchupNote": "+5.93 vs Jameson Taillon",
-        "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".288 AVG | .868 OPS | 65 H | 15 HR | 14g: .286 AVG | .821 OPS | 20 H | 6 HR | vs RHP: .252 AVG | .827 OPS | 12 HR | career 949 PA | .715 OPS | 35 HR | baseline career profile | power 67 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Cutter 19% / Sweeper 17% | fit +5.5 | +5.9 matchup grade in a neutral lane"
-      },
-      {
-        "id": "giants-cubs:808982:rbi",
-        "gameId": "giants-cubs",
-        "gameTitle": "Giants @ Cubs",
-        "league": "MLB",
-        "playerId": 808982,
-        "playerName": "Jung Hoo Lee",
-        "teamName": "Giants",
-        "slot": 5,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 71,
-        "probability": 70,
-        "expectedValue": 1.2,
-        "statValueLabel": "1.20 exp RBI",
-        "sample": {
-          "seasonGames": 57,
-          "seasonPlateAppearances": 231,
-          "recentGames": 14,
-          "recentPlateAppearances": 58,
-          "statcastGames": 7,
-          "statcastPlateAppearances": 29,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 983,
-          "seasonPa": 231,
-          "powerIndex": 38.18,
-          "contactRisk": 23.5,
-          "roleStability": 96,
-          "label": "contact-stable profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 71.8,
-            "processScore": 15,
-            "careerWeight": 0.1,
-            "identityDelta": 3.7,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 231,
-            "careerPa": 983
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "contact-stable profile"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 5 carry | process improving; approach 71.8/100 | recent form up | split fit live",
-        "scriptTags": [
-          "top-third-pressure",
-          "middle-order-traffic",
-          "deep-lineup",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "run-production-slot",
-          "statcast-power-up",
-          "statcast-contact-up"
-        ],
-        "matchupNote": "+10.00 vs Jameson Taillon",
-        "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".324 AVG | .808 OPS | 70 H | 3 HR | 14g: .571 AVG | 1.265 OPS | 32 H | 0 HR | vs RHP: .344 AVG | .868 OPS | 2 HR | career 983 PA | .728 OPS | 13 HR | contact-stable profile | power 38 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Cutter 19% / Sweeper 17% | fit +4.6 | +10.0 matchup grade in a neutral lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 34,
+    "candidateCount": 52,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

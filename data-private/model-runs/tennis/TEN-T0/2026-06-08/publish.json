@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "runId": "tennis-2026-06-08-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
+  "sport": "tennis",
+  "modelId": "TEN-T0",
+  "slateDate": "2026-06-08",
+  "status": "deployed",
+  "deployedAt": "2026-06-10T00:58:50.548Z",
+  "deploymentUrl": "https://slate-web-static-1-3rchg1f8m-jian-chens-projects-667dcf76.vercel.app",
+  "webRoot": "web",
+  "vercelProject": {
+    "projectId": "prj_wKTGUqaCcDzyat6fBENE0ROnBWFL",
+    "orgId": "team_SyeBVnlstCgOMT29GUYvbHdM",
+    "projectName": "slate-web-static-1",
+    "settings": {
+      "createdAt": 1780113450505,
+      "framework": "vite",
+      "devCommand": null,
+      "installCommand": null,
+      "buildCommand": "npm run build",
+      "outputDirectory": "dist",
+      "rootDirectory": null,
+      "directoryListing": false,
+      "nodeVersion": "24.x"
+    }
+  },
+  "staticArtifact": {
+    "root": "web/dist",
+    "files": 262,
+    "sha256": "6ca3a3d2594217c6532d3588a602711f3151a32e09a3a7d8c93daace485b3712"
+  },
+  "publicData": {
+    "currentSlate": {
+      "id": "2026-06-09",
+      "label": "June 9, 2026",
+      "status": "ready",
+      "slateMeta": {
+        "date": "June 9, 2026",
+        "isoDate": "2026-06-09"
+      },
+      "summary": {
+        "totalGames": 15,
+        "mlbGames": 15
+      }
+    },
+    "slates": [
+      {
+        "id": "2026-06-06",
+        "label": "June 6, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 6, 2026",
+          "isoDate": "2026-06-06"
+        },
+        "summary": {
+          "totalGames": 14,
+          "mlbGames": 14
+        }
+      },
+      {
+        "id": "2026-06-07",
+        "label": "June 7, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 7, 2026",
+          "isoDate": "2026-06-07"
+        },
+        "summary": {
+          "totalGames": 96,
+          "mlbGames": 15
+        }
+      },
+      {
+        "id": "2026-06-08",
+        "label": "June 8, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 8, 2026",
+          "isoDate": "2026-06-08"
+        },
+        "summary": {
+          "totalGames": 89,
+          "mlbGames": 8
+        }
+      },
+      {
+        "id": "2026-06-09",
+        "label": "June 9, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 9, 2026",
+          "isoDate": "2026-06-09"
+        },
+        "summary": {
+          "totalGames": 15,
+          "mlbGames": 15
+        }
+      }
+    ],
+    "modelHistory": true,
+    "nextSlateExpected": null
+  },
+  "checks": {
+    "rootIsWeb": true,
+    "currentSummaryPresent": true,
+    "publicModelHistoryPresent": true,
+    "privateReferenceScan": "passed"
+  }
+}

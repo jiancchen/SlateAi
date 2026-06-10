@@ -230,14 +230,92 @@ def sportsbook_level(league_name: str | None) -> str:
 
 
 def sportsbook_surface(league_name: str | None) -> str | None:
-    text = str(league_name or "").lower()
-    if any(token in text for token in ["french open", "roland garros", "foggia", "makarska", "modena", "prostejov", "heilbronn", "bratislava", "lyon", "cattolica", "perugia"]):
+    text = normalize_name(league_name)
+    if any(token in text for token in ["french open", "roland garros", "foggia", "makarska", "modena", "prostejov", "heilbronn", "bratislava", "lyon", "cattolica", "perugia", "san miguel de tucuman"]):
         return "Clay"
     if any(token in text for token in ["birmingham", "hertogenbosch", "london", "ilkley"]):
         return "Grass"
     if any(token in text for token in ["centurion", "tyler"]):
         return "Hard"
     return None
+
+
+def refresh_sportsbook_line_match_metadata(
+    resolver: TennisIdentityResolver,
+    match_id: str,
+    match_payload: dict[str, Any],
+    *,
+    date: str | None,
+    source_name: str,
+    source_snapshot_id: str | None,
+) -> None:
+    league_name = match_payload.get("leagueName") or "Sportsbook Tennis"
+    tour = sportsbook_tour(league_name)
+    surface = sportsbook_surface(league_name)
+    level = sportsbook_level(league_name)
+    tournament_id = f"{source_name}-tournament-{slug_token(league_name)}-{date or 'undated'}"
+    season = int(str(date or "0")[:4]) if date else None
+    con = resolver.con
+    con.execute(
+        """
+        insert into tournaments (tournament_id, name, tour, season, location, surface, level)
+        values (?, ?, ?, ?, null, ?, ?)
+        on conflict(tournament_id) do update set
+          name = excluded.name,
+          tour = excluded.tour,
+          surface = coalesce(nullif(tournaments.surface, ''), excluded.surface),
+          level = excluded.level
+        """,
+        (tournament_id, league_name, tour, season, surface, level),
+    )
+    con.execute(
+        """
+        update tournaments
+        set surface = coalesce(nullif(surface, ''), ?)
+        where tournament_id = (
+          select tournament_id
+          from matches
+          where match_id = ?
+        )
+        """,
+        (surface, match_id),
+    )
+    best_of = 5 if tour == "ATP" and level == "Grand Slam" else 3
+    start_time = ts_to_iso(match_payload.get("startEventDate") or match_payload.get("startIso"))
+    con.execute(
+        """
+        update matches
+        set
+          tournament_id = coalesce(tournament_id, ?),
+          match_date = coalesce(match_date, ?),
+          start_time_utc = coalesce(start_time_utc, ?),
+          round = coalesce(round, ?),
+          tour = coalesce(tour, ?),
+          surface = coalesce(nullif(surface, ''), ?),
+          best_of = coalesce(best_of, ?),
+          source_event_id = coalesce(source_event_id, ?),
+          source_snapshot_id = coalesce(source_snapshot_id, ?)
+        where match_id = ?
+        """,
+        (
+            tournament_id,
+            date,
+            start_time,
+            match_payload.get("round") or "Sportsbook board",
+            tour,
+            surface,
+            best_of,
+            match_payload.get("eventId"),
+            source_snapshot_id,
+            match_id,
+        ),
+    )
+    existing = resolver.matches.get(str(match_id))
+    if existing is not None:
+        existing["surface"] = existing.get("surface") or surface
+        existing["tour"] = existing.get("tour") or tour
+        existing["match_date"] = existing.get("match_date") or date
+        existing["start_time_utc"] = existing.get("start_time_utc") or start_time
 
 
 def upsert_sportsbook_line_match(
@@ -253,8 +331,6 @@ def upsert_sportsbook_line_match(
     if len(names) != 2:
         return None
     match_id = match_payload.get("syntheticSlateId") or f"{source_name}-{slug_token(raw_title)}-{date or 'undated'}"
-    if match_id in resolver.matches:
-        return str(match_id)
 
     league_name = match_payload.get("leagueName") or "Sportsbook Tennis"
     tour = sportsbook_tour(league_name)
@@ -409,8 +485,6 @@ def upsert_robinhood_supplement_match(
     players = [player for player in match_payload.get("players") or [] if player.get("name")]
     if not match_id or len(players) != 2:
         return None
-    if match_id in resolver.matches:
-        return str(match_id)
 
     tournament_name = match_payload.get("tournament") or "Robinhood Tennis"
     category = match_payload.get("category")
@@ -862,7 +936,16 @@ def parse_sportsbook_lines_payload(
         raw_title = match_payload.get("match") or ""
         names = [part.strip() for part in raw_title.split(" vs ") if part.strip()]
         match_id = match_id_for_names(resolver, date, names)
-        if not match_id:
+        if match_id:
+            refresh_sportsbook_line_match_metadata(
+                resolver,
+                match_id,
+                match_payload,
+                date=date,
+                source_name=source_name,
+                source_snapshot_id=source_snapshot_id,
+            )
+        else:
             match_id = upsert_sportsbook_line_match(
                 resolver,
                 match_payload,

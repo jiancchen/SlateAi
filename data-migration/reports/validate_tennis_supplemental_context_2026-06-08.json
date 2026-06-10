@@ -1,0 +1,23 @@
+{
+  "blocked_context_payloads": 0,
+  "blocked_player_payloads": 0,
+  "classification": "not_run",
+  "context_missing_snapshot_id": 0,
+  "context_missing_snapshot_link": 0,
+  "date": "2026-06-08",
+  "errors": [
+    "No supplemental source status row exists for this date."
+  ],
+  "generated_at": "2026-06-08T07:48:35.026531+00:00",
+  "match_context_snapshots": 0,
+  "ok": false,
+  "player_form_history_rows": 0,
+  "player_missing_snapshot_id": 0,
+  "player_missing_snapshot_link": 0,
+  "script": "data-migration/scripts/validate_tennis_supplemental_context.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_name": "tennis_supplemental_context",
+  "source_snapshots": 0,
+  "source_snapshots_with_url": 0,
+  "source_status": null
+}

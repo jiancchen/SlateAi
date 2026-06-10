@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Nationals",
-      "detail": "Cade Cavalli (RHP) | 3-3 | 3.62 ERA | 74 SO | 1.42 WHIP | 64.2 IP"
+      "detail": "Cade Cavalli (RHP) | 3-4 | 3.88 ERA | 76 SO | 1.44 WHIP | 69.2 IP"
     },
     {
       "side": "Home",
       "name": "Diamondbacks",
-      "detail": "Michael Soroka (RHP) | 7-3 | 3.49 ERA | 66 SO | 1.19 WHIP | 67.0 IP"
+      "detail": "Michael Soroka (RHP) | 8-3 | 3.28 ERA | 72 SO | 1.15 WHIP | 74.0 IP"
     }
   ],
   "summary": "Nationals @ Diamondbacks with Cade Cavalli against Michael Soroka.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Nationals +113 / Diamondbacks -136 | o8 -114 / u8 -105 | Nationals +1.5 -191 / Diamondbacks -1.5 +157 | F5 Nationals -105 / Diamondbacks -125 / o4.5 -105 / u4.5 -125.",
+    "Current board: Nationals +113 / Diamondbacks -136 | o8 -114 / u8 -105 | Nationals +1.5 -187 / Diamondbacks -1.5 +153 | F5 Nationals -105 / Diamondbacks -125 / o4.5 -105 / u4.5 -125.",
     "Cade Cavalli vs Michael Soroka."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -34,12 +34,12 @@
     "away": {
       "divisionLeader": false,
       "divisionRank": "3",
-      "gamesBack": "11.0",
-      "losses": 32,
-      "runDifferential": 8,
-      "streakCode": "W2",
-      "winningPercentage": ".508",
-      "wins": 33
+      "gamesBack": "11.5",
+      "losses": 33,
+      "runDifferential": 5,
+      "streakCode": "W1",
+      "winningPercentage": ".507",
+      "wins": 34
     },
     "home": null
   },
@@ -265,7 +265,7 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "home": {
         "playerName": "Michael Soroka",
@@ -275,7 +275,7 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -470,6 +470,172 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 824434,
+          "date": "2026-05-26",
+          "opponent": "Guardians",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 6,
+          "runsAgainst": 3,
+          "starters": {
+            "team": {
+              "pitcherId": 676917,
+              "pitcherName": "Cade Cavalli",
+              "teamName": "Washington Nationals",
+              "opponentName": "Cleveland Guardians",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 676282,
+              "pitcherName": "Joey Cantillo",
+              "teamName": "Cleveland Guardians",
+              "opponentName": "Washington Nationals",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 4
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 2
+            }
+          ]
+        },
+        {
+          "gamePk": 824432,
+          "date": "2026-05-27",
+          "opponent": "Guardians",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 2,
+          "runsAgainst": 3,
+          "starters": {
+            "team": {
+              "pitcherId": 676571,
+              "pitcherName": "PJ Poulin",
+              "teamName": "Washington Nationals",
+              "opponentName": "Cleveland Guardians",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 668909,
+              "pitcherName": "Gavin Williams",
+              "teamName": "Cleveland Guardians",
+              "opponentName": "Washington Nationals",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Mixed",
+              "tone": "info"
+            },
+            "starter": {
+              "label": "Short",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 1
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 1
+            }
+          ]
+        },
         {
           "gamePk": 822732,
           "date": "2026-05-29",
@@ -855,11 +1021,11 @@
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 8,
@@ -926,7 +1092,7 @@
             },
             {
               "inning": 3,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 4,
@@ -1094,6 +1260,259 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 823217,
+          "date": "2026-05-27",
+          "opponent": "Giants",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 3,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 647336,
+              "pitcherName": "Michael Soroka",
+              "teamName": "Arizona Diamondbacks",
+              "opponentName": "San Francisco Giants",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 686790,
+              "pitcherName": "Trevor McDonald",
+              "teamName": "San Francisco Giants",
+              "opponentName": "Arizona Diamondbacks",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Late cash",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "Rescued",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 2
+            },
+            {
+              "inning": 7,
+              "runs": 1
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 823135,
+          "date": "2026-05-29",
+          "opponent": "Mariners",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 6,
+          "runsAgainst": 7,
+          "starters": {
+            "team": {
+              "pitcherId": 668678,
+              "pitcherName": "Zac Gallen",
+              "teamName": "Arizona Diamondbacks",
+              "opponentName": "Seattle Mariners",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 669923,
+              "pitcherName": "George Kirby",
+              "teamName": "Seattle Mariners",
+              "opponentName": "Arizona Diamondbacks",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 4
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 1
+            },
+            {
+              "inning": 10,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 823132,
+          "date": "2026-05-30",
+          "opponent": "Mariners",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 1,
+          "runsAgainst": 5,
+          "starters": {
+            "team": {
+              "pitcherId": 669194,
+              "pitcherName": "Ryne Nelson",
+              "teamName": "Arizona Diamondbacks",
+              "opponentName": "Seattle Mariners",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 693433,
+              "pitcherName": "Bryan Woo",
+              "teamName": "Seattle Mariners",
+              "opponentName": "Arizona Diamondbacks",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Exp L",
+              "tone": "warning"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 1
+            }
+          ]
+        },
         {
           "gamePk": 823133,
           "date": "2026-05-31",
@@ -1305,7 +1724,7 @@
             },
             {
               "inning": 3,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 4,
@@ -1313,7 +1732,7 @@
             },
             {
               "inning": 5,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 6,
@@ -1321,7 +1740,7 @@
             },
             {
               "inning": 7,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 8,
@@ -1491,11 +1910,11 @@
             },
             {
               "inning": 8,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 9,
-              "runs": 2
+              "runs": 1
             }
           ]
         },
@@ -1921,7 +2340,243 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-825074",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 73.1,
+          "noRunProbabilityPct": 26.9,
+          "awayRunProbabilityPct": 72,
+          "homeRunProbabilityPct": 4,
+          "lean": "Run",
+          "strength": "strong",
+          "sampleHalves": 129,
+          "caution": "Nationals starter has stayed clean in the 1st across recent starts Diamondbacks have been dead early in this series",
+          "reason": "YRFI with a 73% modeled chance of at least one first-inning run. Nationals score 72% of the time and Diamondbacks 4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 57,
+          "noRunProbabilityPct": 43,
+          "awayRunProbabilityPct": 29,
+          "homeRunProbabilityPct": 28,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 129,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Nationals F5 runs 1.5; Diamondbacks F5 runs 1.5; Michael Soroka: HA 5.5, ER 2.5, win yes +175; Cade Cavalli: HA 5.5, ER 2.5, win yes +244; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 63,
+          "noRunProbabilityPct": 37,
+          "awayRunProbabilityPct": 34.1,
+          "homeRunProbabilityPct": 28.9,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 129,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Nationals F5 runs 1.5; Diamondbacks F5 runs 1.5; Michael Soroka: HA 5.5, ER 2.5, win yes +175; Cade Cavalli: HA 5.5, ER 2.5, win yes +244; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 57,
+          "noRunProbabilityPct": 43,
+          "awayRunProbabilityPct": 27,
+          "homeRunProbabilityPct": 30,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 129,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Nationals F5 runs 1.5; Diamondbacks F5 runs 1.5; Michael Soroka: HA 5.5, ER 2.5, win yes +175; Cade Cavalli: HA 5.5, ER 2.5, win yes +244; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 60.1,
+          "noRunProbabilityPct": 39.9,
+          "awayRunProbabilityPct": 30.1,
+          "homeRunProbabilityPct": 30,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 129,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Nationals F5 runs 1.5; Diamondbacks F5 runs 1.5; Michael Soroka: HA 5.5, ER 2.5, win yes +175; Cade Cavalli: HA 5.5, ER 2.5, win yes +244; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Nationals @ Diamondbacks",
+      "mlbGamePk": 825074,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "diamondbacks": {
+            "first3": {
+              "line": 0.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "nationals": {
+            "first3": {
+              "line": 0.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "michael-soroka": {
+            "name": "Michael Soroka",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": 117,
+              "underOdds": -156,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 5.5,
+              "overOdds": 122,
+              "underOdds": -163,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 175,
+              "noOdds": -243
+            }
+          },
+          "cade-cavalli": {
+            "name": "Cade Cavalli",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": 116,
+              "underOdds": -154,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 5.5,
+              "overOdds": 101,
+              "underOdds": -134,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 244,
+              "noOdds": -354
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "Nationals": {
@@ -1976,7 +2631,7 @@
   "lineupBoard": {
     "gameId": "nationals-diamondbacks",
     "title": "Nationals @ Diamondbacks",
-    "snapshot": "2026-06-07T15:20:45.581Z",
+    "snapshot": "2026-06-07T16:39:59.691Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -6114,15 +6769,15 @@
       "fullName": "Cade Cavalli",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 3,
-      "era": "3.62",
-      "strikeOuts": 74,
-      "inningsPitched": "64.2",
-      "hitsAllowed": 68,
-      "walks": 24,
-      "homeRunsAllowed": 3,
-      "whip": "1.42",
-      "gamesStarted": 13,
+      "losses": 4,
+      "era": "3.88",
+      "strikeOuts": 76,
+      "inningsPitched": "69.2",
+      "hitsAllowed": 75,
+      "walks": 25,
+      "homeRunsAllowed": 5,
+      "whip": "1.44",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 676917,
@@ -6276,7 +6931,7 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
@@ -6300,7 +6955,7 @@
         "battersFaced": null,
         "totalRow": null,
         "gameRows": [],
-        "fetchedAt": "2026-06-07T15:16:54.421Z"
+        "fetchedAt": "2026-06-07T16:39:10.961Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -11213,7 +11868,7 @@
           "Away split: 3.77 ERA / 1 HR allowed.",
           "vs. Left: .301 AVG / .785 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -11238,16 +11893,16 @@
       "id": 647336,
       "fullName": "Michael Soroka",
       "pitchHand": "R",
-      "wins": 7,
+      "wins": 8,
       "losses": 3,
-      "era": "3.49",
-      "strikeOuts": 66,
-      "inningsPitched": "67.0",
-      "hitsAllowed": 65,
-      "walks": 15,
-      "homeRunsAllowed": 5,
-      "whip": "1.19",
-      "gamesStarted": 12,
+      "era": "3.28",
+      "strikeOuts": 72,
+      "inningsPitched": "74.0",
+      "hitsAllowed": 68,
+      "walks": 17,
+      "homeRunsAllowed": 6,
+      "whip": "1.15",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 647336,
@@ -11401,12 +12056,12 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/michael-soroka-vs-nationals",
-        "answerText": "Michael Soroka has a 1-2 record with an ERA of 3.00 and 19 strikeouts in 5 appearances versus the Nationals in his career.",
+        "answerText": "Michael Soroka has a 1-2 record with an ERA of 3.00 and 19 strikeouts in 5 appearances against the Nationals in his career.",
         "pitcherName": "Michael Soroka",
         "pitcherTeam": "Diamondbacks",
         "opponentTeam": "Nationals",
@@ -11570,7 +12225,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:56.079Z"
+        "fetchedAt": "2026-06-07T16:39:12.653Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -16314,7 +16969,7 @@
           "vs. Left: .291 AVG / .780 OPS allowed.",
           "Chase Field: 2.23 ERA / .242 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -16363,7 +17018,7 @@
       {
         "label": "Spread",
         "book": "DraftKings typed MLB board",
-        "value": "Nationals +1.5 -191 / Diamondbacks -1.5 +157"
+        "value": "Nationals +1.5 -187 / Diamondbacks -1.5 +153"
       },
       {
         "label": "Total",
@@ -16395,7 +17050,7 @@
       "index": 0,
       "role": "Away",
       "name": "Nationals",
-      "detail": "Cade Cavalli (RHP) | 3-3 | 3.62 ERA | 74 SO | 1.42 WHIP | 64.2 IP",
+      "detail": "Cade Cavalli (RHP) | 3-4 | 3.88 ERA | 76 SO | 1.44 WHIP | 69.2 IP",
       "americanOdds": 113,
       "americanLabel": "+113",
       "decimalOdds": 2.13,
@@ -16407,7 +17062,7 @@
       "index": 1,
       "role": "Home",
       "name": "Diamondbacks",
-      "detail": "Michael Soroka (RHP) | 7-3 | 3.49 ERA | 66 SO | 1.19 WHIP | 67.0 IP",
+      "detail": "Michael Soroka (RHP) | 8-3 | 3.28 ERA | 72 SO | 1.15 WHIP | 74.0 IP",
       "americanOdds": -136,
       "americanLabel": "-136",
       "decimalOdds": 1.7352941176470589,
@@ -16425,7 +17080,7 @@
         "index": 0,
         "role": "Away",
         "name": "Nationals",
-        "detail": "Cade Cavalli (RHP) | 3-3 | 3.62 ERA | 74 SO | 1.42 WHIP | 64.2 IP",
+        "detail": "Cade Cavalli (RHP) | 3-4 | 3.88 ERA | 76 SO | 1.44 WHIP | 69.2 IP",
         "americanOdds": 113,
         "americanLabel": "+113",
         "decimalOdds": 2.13,
@@ -16437,7 +17092,7 @@
         "index": 1,
         "role": "Home",
         "name": "Diamondbacks",
-        "detail": "Michael Soroka (RHP) | 7-3 | 3.49 ERA | 66 SO | 1.19 WHIP | 67.0 IP",
+        "detail": "Michael Soroka (RHP) | 8-3 | 3.28 ERA | 72 SO | 1.15 WHIP | 74.0 IP",
         "americanOdds": -136,
         "americanLabel": "-136",
         "decimalOdds": 1.7352941176470589,
@@ -16454,7 +17109,7 @@
       "index": 0,
       "role": "Away",
       "name": "Nationals",
-      "detail": "Cade Cavalli (RHP) | 3-3 | 3.62 ERA | 74 SO | 1.42 WHIP | 64.2 IP",
+      "detail": "Cade Cavalli (RHP) | 3-4 | 3.88 ERA | 76 SO | 1.44 WHIP | 69.2 IP",
       "americanOdds": 113,
       "americanLabel": "+113",
       "decimalOdds": 2.13,
@@ -16466,7 +17121,7 @@
       "index": 1,
       "role": "Home",
       "name": "Diamondbacks",
-      "detail": "Michael Soroka (RHP) | 7-3 | 3.49 ERA | 66 SO | 1.19 WHIP | 67.0 IP",
+      "detail": "Michael Soroka (RHP) | 8-3 | 3.28 ERA | 72 SO | 1.15 WHIP | 74.0 IP",
       "americanOdds": -136,
       "americanLabel": "-136",
       "decimalOdds": 1.7352941176470589,
@@ -16477,12 +17132,12 @@
     "rationale": "Lineup-vs-pitching fit: Nationals (Grade +3.96 | platoon 8 | starter arsenal 83 | bridge arsenal 50 | pressure 94) vs Diamondbacks (Grade -2.40 | platoon 5 | starter arsenal 94 | bridge arsenal 50 | pressure 44)",
     "confidence": 52,
     "volatility": 92,
-    "recommendationScore": 34,
+    "recommendationScore": 33,
     "tier": "Swingy",
     "sourceLabel": "Moneyline + listed starter data + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 4,
-    "modelEdgeLabel": "4-point model edge",
+    "modelEdge": 0.5,
+    "modelEdgeLabel": "0.5-point model edge",
     "marketProbability": 0.44894232232536907,
     "marketProbabilityLabel": "44.9%",
     "inputs": [
@@ -16551,10 +17206,6 @@
         "delta": 4
       },
       {
-        "label": "Underdog enters with positive recent form",
-        "delta": 3
-      },
-      {
         "label": "Chase Field boosts run scoring (110 runs factor)",
         "delta": 5
       },
@@ -16567,6 +17218,10 @@
         "delta": 3
       },
       {
+        "label": "Late-inning hold risk is above average for this side",
+        "delta": 4
+      },
+      {
         "label": "Diamondbacks carry the cleaner bullpen profile",
         "delta": 3
       },
@@ -16575,27 +17230,31 @@
         "delta": 2
       },
       {
+        "label": "Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.",
+        "delta": 3
+      },
+      {
         "label": "v1.1 market budget: this underdog call still needs cleaner starter, stability, and state support before it can be treated like a real market disagreement edge.",
         "delta": 5
       }
     ],
     "pickReasons": [
-      "Nationals own the cleaner full-game traffic script at 9.5 projected hits.",
-      "Nationals have the better starter-window lane with 5.3 projected first-five hits.",
+      "Nationals own the cleaner full-game traffic script at 9.4 projected hits.",
+      "Nationals have the better starter-window lane with 5.2 projected first-five hits.",
       "Nationals still hold the better bridge-and-finish script once the bullpens take over.",
       "Nationals can lean on Luis Garcia, James Wood, CJ Abrams to drive early pressure against Michael Soroka."
     ],
     "indicators": {
-      "reliefPitchingRisk": 59.6,
-      "coinflipPressure": 42,
-      "starterLeverageIndex": 57.5,
+      "reliefPitchingRisk": 65.6,
+      "coinflipPressure": 48,
+      "starterLeverageIndex": 53.9,
       "lateInningStabilityIndex": 23,
       "pickBullpenScore": 53.6,
       "oppBullpenScore": 63.3,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 65.7,
-      "oppStarterScore": 69.6,
+      "pickStarterScore": 64.1,
+      "oppStarterScore": 70.6,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -16651,7 +17310,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 0.9,
+      "projectedHitEdgeForPick": 0.8,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": false,
       "pickIsMarketUnderdog": true,
@@ -16674,11 +17333,12 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": -30,
+      "efficientFavoriteScore": -42,
       "efficientFavoriteTier": "Watch favorite",
       "efficientFavoriteReasons": [],
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
+        "stackedRisk",
         "thinModelAgreement",
         "starterNotClean",
         "lateNotClean"
@@ -16687,22 +17347,23 @@
         "notMarketFavorite",
         "notPricedFavorite"
       ],
-      "tierOneRiskPoints": 2,
+      "tierOneRiskPoints": 3,
       "tierOnePassFlag": false,
       "tierOneRiskFlags": [
+        "highRiskPoints",
         "underdogNeedsProof"
       ],
       "favoredSignalCount": 4,
-      "starterLateGap": 34.5,
+      "starterLateGap": 30.9,
       "starterLeashGap": 0,
-      "edgeHaircutApplied": 2.1,
+      "edgeHaircutApplied": 2.9,
       "gameShape": {
         "label": "Starter-to-bullpen flip",
         "shapeLabel": "balanced traffic game",
         "category": "starter_to_bullpen_flip",
         "bestExpression": "Nationals first-five side",
-        "categoryConfidence": 48.2,
-        "realityGapScore": 37.1,
+        "categoryConfidence": 55.4,
+        "realityGapScore": 42.3,
         "chaosScore": 38.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -16714,7 +17375,7 @@
           {
             "id": "bridge",
             "label": "Bridge",
-            "score": 48.2
+            "score": 55.4
           },
           {
             "id": "chaos",
@@ -16722,7 +17383,7 @@
             "score": 38.8
           }
         ],
-        "rfImpactScore": 25.4
+        "rfImpactScore": 26.6
       }
     },
     "gameShape": {
@@ -16733,7 +17394,7 @@
         "slug": "starter_to_bullpen_flip",
         "label": "Starter-to-bullpen flip",
         "bestExpression": "Nationals first-five side",
-        "confidence": 48.2,
+        "confidence": 55.4,
         "reasons": [
           "The pick can own the starter window without owning the late game.",
           "Use the timing edge before bridge innings can flip it."
@@ -16777,20 +17438,20 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 0.9
+          "projectedHitEdge": 0.8
         }
       },
-      "summary": "Starter-to-bullpen flip: Nationals first-five side. Reality-gap 37.1/100. Main checks: Dome In Domed Stadium.",
+      "summary": "Starter-to-bullpen flip: Nationals first-five side. Reality-gap 42.3/100. Main checks: Dome In Domed Stadium.",
       "pickTeam": "Nationals",
       "opponentTeam": "Diamondbacks",
       "scores": {
         "chaosScore": 38.8,
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
-        "bullpenFlipScore": 48.2,
-        "starterControlScore": 30.6,
+        "bullpenFlipScore": 55.4,
+        "starterControlScore": 28.3,
         "marketContradictionScore": 30,
-        "realityGapScore": 37.1
+        "realityGapScore": 42.3
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -16804,9 +17465,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 19,
-            "pickScore": 19,
-            "opponentScore": 12.5
+            "gameScore": 17.9,
+            "pickScore": 17.9,
+            "opponentScore": 12.7
           },
           {
             "id": "chaos",
@@ -16836,7 +17497,7 @@
             "id": "bridge",
             "label": "Bridge",
             "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-            "gameScore": 48.2,
+            "gameScore": 55.4,
             "pickScore": 6.2,
             "opponentScore": 2.5
           },
@@ -16854,7 +17515,7 @@
             "role": "pick",
             "team": "Nationals",
             "scores": {
-              "pressure": 19,
+              "pressure": 17.9,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
@@ -16862,7 +17523,7 @@
               "flow": 100
             },
             "polygon": [
-              19,
+              17.9,
               0,
               0,
               0,
@@ -16873,7 +17534,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 65.7,
+              "starterScore": 64.1,
               "bullpenScore": 53.6,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -16887,7 +17548,7 @@
             "role": "opponent",
             "team": "Diamondbacks",
             "scores": {
-              "pressure": 12.5,
+              "pressure": 12.7,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
@@ -16895,7 +17556,7 @@
               "flow": 0
             },
             "polygon": [
-              12.5,
+              12.7,
               0,
               0,
               0,
@@ -16906,7 +17567,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 69.6,
+              "starterScore": 70.6,
               "bullpenScore": 63.3,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -16921,19 +17582,19 @@
           "label": "Starter-to-bullpen flip",
           "bestExpression": "Nationals first-five side",
           "scores": {
-            "pressure": 19,
+            "pressure": 17.9,
             "chaos": 38.8,
             "freeze": 8.5,
             "air": 0,
-            "bridge": 48.2,
+            "bridge": 55.4,
             "flow": 100
           },
           "polygon": [
-            19,
+            17.9,
             38.8,
             8.5,
             0,
-            48.2,
+            55.4,
             100
           ],
           "dominantAxes": [
@@ -16945,7 +17606,7 @@
             {
               "id": "bridge",
               "label": "Bridge",
-              "score": 48.2
+              "score": 55.4
             },
             {
               "id": "chaos",
@@ -17016,7 +17677,7 @@
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 25.4,
+        "impactScore": 26.6,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -17051,24 +17712,24 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 9.5,
-      "homeProjectedHits": 8,
-      "awayHitEfficiencyPct": 27.3,
-      "homeHitEfficiencyPct": 23.1,
-      "awayFirst5ProjectedHits": 5.3,
+      "awayProjectedHits": 9.4,
+      "homeProjectedHits": 8.1,
+      "awayHitEfficiencyPct": 27,
+      "homeHitEfficiencyPct": 23.3,
+      "awayFirst5ProjectedHits": 5.2,
       "homeFirst5ProjectedHits": 4.4,
-      "awayFirst5HitEfficiencyPct": 27.5,
-      "homeFirst5HitEfficiencyPct": 23.1,
+      "awayFirst5HitEfficiencyPct": 27,
+      "homeFirst5HitEfficiencyPct": 23.2,
       "awayLateProjectedHits": 4.2,
       "homeLateProjectedHits": 3.7,
-      "awayLateHitEfficiencyPct": 27.1,
-      "homeLateHitEfficiencyPct": 23.6,
+      "awayLateHitEfficiencyPct": 26.8,
+      "homeLateHitEfficiencyPct": 23.8,
       "awayBullpenChainScore": null,
       "homeBullpenChainScore": null,
       "edgeTeam": "Nationals",
-      "edgeHits": 1.5,
+      "edgeHits": 1.3,
       "first5EdgeTeam": "Nationals",
-      "first5EdgeHits": 0.9,
+      "first5EdgeHits": 0.8,
       "lateEdgeTeam": "Nationals",
       "lateEdgeHits": 0.5,
       "bridgeEdgeTeam": "",
@@ -17083,9 +17744,9 @@
       "homePitcherType": "Strike-throwing righty",
       "awayStarterHoldConfidence": 55.9,
       "homeStarterHoldConfidence": 37,
-      "awayProjectedRuns": 4.9,
+      "awayProjectedRuns": 4.8,
       "homeProjectedRuns": 3.7,
-      "awayFirst5ProjectedRuns": 2.7,
+      "awayFirst5ProjectedRuns": 2.6,
       "homeFirst5ProjectedRuns": 2,
       "awayLateProjectedRuns": 2.2,
       "homeLateProjectedRuns": 1.7,
@@ -17093,10 +17754,10 @@
       "totals": {
         "fullGame": {
           "lean": "Over",
-          "edge": 0.6,
+          "edge": 0.5,
           "strength": "Lean",
           "label": "Over 8",
-          "summary": "Over lean with a 0.6-run edge against 8.",
+          "summary": "Over lean with a 0.5-run edge against 8.",
           "chaosGate": {
             "phase": "full",
             "overChaosScore": 1,
@@ -17120,10 +17781,10 @@
         },
         "first5": {
           "lean": "Pass",
-          "edge": 0.2,
+          "edge": 0.1,
           "strength": "Thin",
           "label": "Hold 4.5",
-          "summary": "Model projection 4.7 is essentially on the posted 4.5.",
+          "summary": "Model projection 4.6 is essentially on the posted 4.5.",
           "chaosGate": {
             "phase": "first5",
             "overChaosScore": 1,
@@ -17145,12 +17806,12 @@
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 4.7,
-            "adjustedProjectedRuns": 2.3,
-            "adjustedEdge": -2.2,
+            "baseProjectedRuns": 4.6,
+            "adjustedProjectedRuns": 2.2,
+            "adjustedEdge": -2.3,
             "marketExpression": "Under",
             "shape": "unsupported-over",
-            "tailScore": 8.1,
+            "tailScore": 7.6,
             "strandScore": 0,
             "forkScore": 0,
             "tailLift": 0,
@@ -17166,7 +17827,7 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 9.7,
+              "totalFirst5ProjectedHits": 9.6,
               "weatherCarry": false,
               "weatherSuppress": false,
               "visibilityRisk": null
@@ -17200,16 +17861,16 @@
             }
           }
         },
-        "projectedFullTotalRuns": 8.6,
-        "projectedFirst5TotalRuns": 4.7,
-        "tailAdjustedProjectedFirst5TotalRuns": 2.3,
+        "projectedFullTotalRuns": 8.5,
+        "projectedFirst5TotalRuns": 4.6,
+        "tailAdjustedProjectedFirst5TotalRuns": 2.2,
         "first5TailOverlay": {
-          "baseProjectedRuns": 4.7,
-          "adjustedProjectedRuns": 2.3,
-          "adjustedEdge": -2.2,
+          "baseProjectedRuns": 4.6,
+          "adjustedProjectedRuns": 2.2,
+          "adjustedEdge": -2.3,
           "marketExpression": "Under",
           "shape": "unsupported-over",
-          "tailScore": 8.1,
+          "tailScore": 7.6,
           "strandScore": 0,
           "forkScore": 0,
           "tailLift": 0,
@@ -17225,7 +17886,7 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 9.7,
+            "totalFirst5ProjectedHits": 9.6,
             "weatherCarry": false,
             "weatherSuppress": false,
             "visibilityRisk": null
@@ -17234,7 +17895,7 @@
         "projectedLateTotalRuns": 3.9,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 4.4,
+        "runShareFirst5TotalLine": 4.3,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 3.5,
         "bullpenExhaustionNote": "Dome In Domed Stadium. No major bridge-chain exhaustion flag has surfaced yet.",
@@ -17305,8 +17966,8 @@
           "depthScore": 62.4,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Nationals own the cleaner full-game traffic script at 9.5 projected hits.",
-            "Nationals have the better starter-window lane with 5.3 projected first-five hits.",
+            "Nationals own the cleaner full-game traffic script at 9.4 projected hits.",
+            "Nationals have the better starter-window lane with 5.2 projected first-five hits.",
             "Nationals still hold the better bridge-and-finish script once the bullpens take over.",
             "Nationals can lean on Luis Garcia, James Wood, CJ Abrams to drive early pressure against Michael Soroka.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -17356,7 +18017,7 @@
           {
             "label": "First 5",
             "edgeTeam": "Nationals",
-            "projection": "2.7 R",
+            "projection": "2.6 R",
             "note": "Nationals lean on Luis Garcia, James Wood to drive the early traffic lane against the listed starter."
           },
           {
@@ -17368,7 +18029,7 @@
           {
             "label": "Full game",
             "edgeTeam": "Nationals",
-            "projection": "9.5 H",
+            "projection": "9.4 H",
             "note": "Nationals finish with the stronger aggregate traffic path, anchored by Luis Garcia, James Wood."
           }
         ]
@@ -17392,17 +18053,17 @@
         "marketType": "ML shape",
         "selection": "Nationals",
         "opponent": "Diamondbacks",
-        "pickProjectedRuns": 4.9,
+        "pickProjectedRuns": 4.8,
         "opponentProjectedRuns": 3.7,
-        "projectedTotalRuns": 8.6,
-        "runDiff": 1.2,
-        "absoluteRunDiff": 1.2,
-        "runDiffSharePct": 14,
+        "projectedTotalRuns": 8.5,
+        "runDiff": 1.1,
+        "absoluteRunDiff": 1.1,
+        "runDiffSharePct": 12.9,
         "confidence": 52,
         "marketProbabilityPct": 44.9,
         "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Nationals projects 1.2 runs better in a 8.6-run environment."
+        "note": "Nationals projects 1.1 runs better in a 8.5-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -17412,7 +18073,7 @@
           "slug": "starter_to_bullpen_flip",
           "label": "Starter-to-bullpen flip",
           "bestExpression": "Nationals first-five side",
-          "confidence": 48.2,
+          "confidence": 55.4,
           "reasons": [
             "The pick can own the starter window without owning the late game.",
             "Use the timing edge before bridge innings can flip it."
@@ -17456,20 +18117,20 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 0.9
+            "projectedHitEdge": 0.8
           }
         },
-        "summary": "Starter-to-bullpen flip: Nationals first-five side. Reality-gap 37.1/100. Main checks: Dome In Domed Stadium.",
+        "summary": "Starter-to-bullpen flip: Nationals first-five side. Reality-gap 42.3/100. Main checks: Dome In Domed Stadium.",
         "pickTeam": "Nationals",
         "opponentTeam": "Diamondbacks",
         "scores": {
           "chaosScore": 38.8,
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
-          "bullpenFlipScore": 48.2,
-          "starterControlScore": 30.6,
+          "bullpenFlipScore": 55.4,
+          "starterControlScore": 28.3,
           "marketContradictionScore": 30,
-          "realityGapScore": 37.1
+          "realityGapScore": 42.3
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -17483,9 +18144,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 19,
-              "pickScore": 19,
-              "opponentScore": 12.5
+              "gameScore": 17.9,
+              "pickScore": 17.9,
+              "opponentScore": 12.7
             },
             {
               "id": "chaos",
@@ -17515,7 +18176,7 @@
               "id": "bridge",
               "label": "Bridge",
               "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-              "gameScore": 48.2,
+              "gameScore": 55.4,
               "pickScore": 6.2,
               "opponentScore": 2.5
             },
@@ -17533,7 +18194,7 @@
               "role": "pick",
               "team": "Nationals",
               "scores": {
-                "pressure": 19,
+                "pressure": 17.9,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
@@ -17541,7 +18202,7 @@
                 "flow": 100
               },
               "polygon": [
-                19,
+                17.9,
                 0,
                 0,
                 0,
@@ -17552,7 +18213,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 65.7,
+                "starterScore": 64.1,
                 "bullpenScore": 53.6,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17566,7 +18227,7 @@
               "role": "opponent",
               "team": "Diamondbacks",
               "scores": {
-                "pressure": 12.5,
+                "pressure": 12.7,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
@@ -17574,7 +18235,7 @@
                 "flow": 0
               },
               "polygon": [
-                12.5,
+                12.7,
                 0,
                 0,
                 0,
@@ -17585,7 +18246,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 69.6,
+                "starterScore": 70.6,
                 "bullpenScore": 63.3,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17600,19 +18261,19 @@
             "label": "Starter-to-bullpen flip",
             "bestExpression": "Nationals first-five side",
             "scores": {
-              "pressure": 19,
+              "pressure": 17.9,
               "chaos": 38.8,
               "freeze": 8.5,
               "air": 0,
-              "bridge": 48.2,
+              "bridge": 55.4,
               "flow": 100
             },
             "polygon": [
-              19,
+              17.9,
               38.8,
               8.5,
               0,
-              48.2,
+              55.4,
               100
             ],
             "dominantAxes": [
@@ -17624,7 +18285,7 @@
               {
                 "id": "bridge",
                 "label": "Bridge",
-                "score": 48.2
+                "score": 55.4
               },
               {
                 "id": "chaos",
@@ -17695,7 +18356,7 @@
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 25.4,
+          "impactScore": 26.6,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -17732,12 +18393,12 @@
       "first5Moneyline": {
         "pickSide": "away",
         "pickTeam": "Nationals",
-        "awayProjectedRuns": 2.7,
+        "awayProjectedRuns": 2.6,
         "homeProjectedRuns": 2,
-        "awayLeadProbability": 53.3,
-        "homeLeadProbability": 28.6,
-        "pushProbability": 18.1,
-        "leadProbability": 53.3,
+        "awayLeadProbability": 51.5,
+        "homeLeadProbability": 30,
+        "pushProbability": 18.5,
+        "leadProbability": 51.5,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -17759,7 +18420,7 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 58,
-        "probability": 22.3,
+        "probability": 22.2,
         "expectedValue": 0.3,
         "statValueLabel": "0.25 exp HR",
         "sample": {
@@ -17831,10 +18492,156 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
-        "confidence": 79,
-        "probability": 76.2,
+        "confidence": 68,
+        "probability": 75.5,
         "expectedValue": 1.4,
-        "statValueLabel": "1.43 exp RBI",
+        "statValueLabel": "1.41 exp RBI",
+        "sample": {
+          "seasonGames": 59,
+          "seasonPlateAppearances": 204,
+          "recentGames": 12,
+          "recentPlateAppearances": 42,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 24,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 2485,
+          "seasonPa": 204,
+          "powerIndex": 51.11,
+          "contactRisk": 36.08,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 73,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": 4.6,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 204,
+            "careerPa": 2485
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 8 carry | process improving; approach 73/100 | recent form up | split fit live",
+        "scriptTags": [
+          "top-third-pressure",
+          "middle-order-traffic",
+          "deep-lineup",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "statcast-power-up",
+          "statcast-fade"
+        ],
+        "matchupNote": "+10.00 vs Michael Soroka",
+        "teamScriptLabel": "",
+        "lineupStatus": "partial",
+        "playerSummary": ".262 AVG | .740 OPS | 51 H | 7 HR | 12g: .211 AVG | 1.075 OPS | 8 H | 6 HR | vs RHP: .256 AVG | .723 OPS | 5 HR | career 2485 PA | .710 OPS | 63 HR | contact-stable profile | power 51 | 2026 sample ok | arsenal 4-Seam Fastball 33% / Cutter 12% / Changeup 12% | fit +7.9 | +10.0 matchup grade in a in-zone lane"
+      },
+      {
+        "id": "nationals-diamondbacks:695578:runs",
+        "gameId": "nationals-diamondbacks",
+        "gameTitle": "Nationals @ Diamondbacks",
+        "league": "MLB",
+        "playerId": 695578,
+        "playerName": "James Wood",
+        "teamName": "Nationals",
+        "slot": 1,
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 61,
+        "probability": 73.2,
+        "expectedValue": 1.3,
+        "statValueLabel": "1.32 exp runs",
+        "sample": {
+          "seasonGames": 65,
+          "seasonPlateAppearances": 304,
+          "recentGames": 12,
+          "recentPlateAppearances": 52,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 26,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1307,
+          "seasonPa": 304,
+          "powerIndex": 76.62,
+          "contactRisk": 57.12,
+          "roleStability": 96,
+          "label": "volatile career power",
+          "volatilityLabel": "strikeout volatility",
+          "careerPowerBacked": true,
+          "careerVolatile": true,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 55.7,
+            "processScore": -1,
+            "careerWeight": 0.1,
+            "identityDelta": 4.1,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process fading",
+            "seasonPa": 304,
+            "careerPa": 1307
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "volatile career power"
+        },
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 1 carry | split fit live | run-scoring slot",
+        "scriptTags": [
+          "top-third-pressure",
+          "middle-order-traffic",
+          "deep-lineup",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-fading",
+          "run-scoring-slot",
+          "statcast-fade"
+        ],
+        "matchupNote": "+8.16 vs Michael Soroka",
+        "teamScriptLabel": "",
+        "lineupStatus": "partial",
+        "playerSummary": ".267 AVG | .939 OPS | 66 H | 17 HR | 12g: .227 AVG | .846 OPS | 10 H | 4 HR | vs RHP: .278 AVG | .998 OPS | 13 HR | career 1307 PA | .841 OPS | 56 HR | volatile career power | power 77 | 2026 sample ok | arsenal 4-Seam Fastball 33% / Slurve 33% / Cutter 12% | fit +2.6 | +8.2 matchup grade in a in-zone lane"
+      },
+      {
+        "id": "nationals-diamondbacks:671277:hitRunRbi",
+        "gameId": "nationals-diamondbacks",
+        "gameTitle": "Nationals @ Diamondbacks",
+        "league": "MLB",
+        "playerId": 671277,
+        "playerName": "Luis Garcia",
+        "teamName": "Nationals",
+        "slot": 8,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
+        "confidence": 82,
+        "probability": 80.8,
+        "expectedValue": 3,
+        "statValueLabel": "1.21 H · 0.68 R · 1.15 RBI · 3.05 total",
         "sample": {
           "seasonGames": 59,
           "seasonPlateAppearances": 204,
@@ -17874,7 +18681,7 @@
         "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 8 carry | process improving; approach 73/100 | recent form up | split fit live",
+        "reason": "slot 8 carry | recent form up | split fit live | combined hits/runs/RBI lane",
         "scriptTags": [
           "top-third-pressure",
           "middle-order-traffic",
@@ -17884,6 +18691,7 @@
           "clean-conversion-lane",
           "carry-bat-live",
           "process-improving",
+          "combined-production-lane",
           "statcast-power-up",
           "statcast-fade"
         ],
@@ -17979,9 +18787,9 @@
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
         "confidence": 60,
-        "probability": 34.8,
+        "probability": 34.1,
         "expectedValue": 1.2,
-        "statValueLabel": "1.23 exp hits",
+        "statValueLabel": "1.21 exp hits",
         "sample": {
           "seasonGames": 59,
           "seasonPlateAppearances": 204,
@@ -18052,9 +18860,9 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 59,
-        "probability": 13.6,
+        "probability": 13.5,
         "expectedValue": 0.1,
-        "statValueLabel": "0.15 exp walks",
+        "statValueLabel": "0.14 exp walks",
         "sample": {
           "seasonGames": 59,
           "seasonPlateAppearances": 204,
@@ -18125,9 +18933,9 @@
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
         "confidence": 56,
-        "probability": 42.6,
-        "expectedValue": 0.6,
-        "statValueLabel": "0.56 exp singles",
+        "probability": 42.1,
+        "expectedValue": 0.5,
+        "statValueLabel": "0.55 exp singles",
         "sample": {
           "seasonGames": 59,
           "seasonPlateAppearances": 204,
@@ -18184,158 +18992,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "partial",
         "playerSummary": ".262 AVG | .740 OPS | 51 H | 7 HR | 12g: .211 AVG | 1.075 OPS | 8 H | 6 HR | vs RHP: .256 AVG | .723 OPS | 5 HR | career 2485 PA | .710 OPS | 63 HR | contact-stable profile | power 51 | 2026 sample ok | arsenal 4-Seam Fastball 33% / Cutter 12% / Changeup 12% | fit +7.9 | +10.0 matchup grade in a in-zone lane"
-      },
-      {
-        "id": "nationals-diamondbacks:695578:rbi",
-        "gameId": "nationals-diamondbacks",
-        "gameTitle": "Nationals @ Diamondbacks",
-        "league": "MLB",
-        "playerId": 695578,
-        "playerName": "James Wood",
-        "teamName": "Nationals",
-        "slot": 1,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 65,
-        "probability": 74.9,
-        "expectedValue": 1.4,
-        "statValueLabel": "1.38 exp RBI",
-        "sample": {
-          "seasonGames": 65,
-          "seasonPlateAppearances": 304,
-          "recentGames": 12,
-          "recentPlateAppearances": 52,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 26,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 1307,
-          "seasonPa": 304,
-          "powerIndex": 76.62,
-          "contactRisk": 57.12,
-          "roleStability": 96,
-          "label": "volatile career power",
-          "volatilityLabel": "strikeout volatility",
-          "careerPowerBacked": true,
-          "careerVolatile": true,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 55.7,
-            "processScore": -1,
-            "careerWeight": 0.1,
-            "identityDelta": 4.1,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process fading",
-            "seasonPa": 304,
-            "careerPa": 1307
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "volatile career power"
-        },
-        "recommendationTier": "Lean",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 1 carry | process fading; approach 55.7/100 | split fit live | run-production slot",
-        "scriptTags": [
-          "top-third-pressure",
-          "middle-order-traffic",
-          "deep-lineup",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-fading",
-          "run-production-slot",
-          "statcast-fade"
-        ],
-        "matchupNote": "+8.16 vs Michael Soroka",
-        "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".267 AVG | .939 OPS | 66 H | 17 HR | 12g: .227 AVG | .846 OPS | 10 H | 4 HR | vs RHP: .278 AVG | .998 OPS | 13 HR | career 1307 PA | .841 OPS | 56 HR | volatile career power | power 77 | 2026 sample ok | arsenal 4-Seam Fastball 33% / Slurve 33% / Cutter 12% | fit +2.6 | +8.2 matchup grade in a in-zone lane"
-      },
-      {
-        "id": "nationals-diamondbacks:682998:totalBases",
-        "gameId": "nationals-diamondbacks",
-        "gameTitle": "Nationals @ Diamondbacks",
-        "league": "MLB",
-        "playerId": 682998,
-        "playerName": "Corbin Carroll",
-        "teamName": "Diamondbacks",
-        "slot": 2,
-        "propType": "totalBases",
-        "propLabel": "TB",
-        "marketLabel": "Over 1.5 total bases",
-        "confidence": 63,
-        "probability": 63.3,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.15 exp TB",
-        "sample": {
-          "seasonGames": 61,
-          "seasonPlateAppearances": 260,
-          "recentGames": 14,
-          "recentPlateAppearances": 56,
-          "statcastGames": 7,
-          "statcastPlateAppearances": 28,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 2322,
-          "seasonPa": 260,
-          "powerIndex": 75.67,
-          "contactRisk": 41.29,
-          "roleStability": 100,
-          "label": "repeatable career power",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": true,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 65.3,
-            "processScore": 10,
-            "careerWeight": 0.1,
-            "identityDelta": 1.9,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 260,
-            "careerPa": 2322
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "repeatable career power"
-        },
-        "recommendationTier": "Lean",
-        "shadowSupportTag": "Soft heat",
-        "shadowSupportLevel": "soft",
-        "reason": "slot 2 carry | soft heat only: xSLG + opponent-strength support is still thin | repeatable career power | process improving; approach 65.3/100",
-        "scriptTags": [
-          "carry-bat-live",
-          "power-lane",
-          "career-power-backed",
-          "process-improving",
-          "soft-heat",
-          "statcast-hr-carry",
-          "statcast-fade"
-        ],
-        "matchupNote": "+4.86 vs Cade Cavalli",
-        "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".284 AVG | .915 OPS | 64 H | 9 HR | 14g: .259 AVG | .878 OPS | 14 H | 4 HR | vs RHP: .218 AVG | .792 OPS | 7 HR | career 2322 PA | .841 OPS | 89 HR | repeatable career power | power 76 | 2026 sample ok | arsenal 4-Seam Fastball 35% / Curveball 30% / Sinker 15% | fit +3.8 | +4.9 matchup grade in a whiff-variance lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 15,
+    "candidateCount": 20,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

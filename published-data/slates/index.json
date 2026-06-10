@@ -332,7 +332,8 @@
       "isoDate": "2026-06-06"
     },
     "summary": {
-      "totalGames": 15
+      "totalGames": 14,
+      "mlbGames": 14
     }
   },
   {
@@ -345,6 +346,32 @@
     },
     "summary": {
       "totalGames": 96,
+      "mlbGames": 15
+    }
+  },
+  {
+    "id": "2026-06-08",
+    "label": "June 8, 2026",
+    "status": "ready",
+    "slateMeta": {
+      "date": "June 8, 2026",
+      "isoDate": "2026-06-08"
+    },
+    "summary": {
+      "totalGames": 89,
+      "mlbGames": 8
+    }
+  },
+  {
+    "id": "2026-06-09",
+    "label": "June 9, 2026",
+    "status": "ready",
+    "slateMeta": {
+      "date": "June 9, 2026",
+      "isoDate": "2026-06-09"
+    },
+    "summary": {
+      "totalGames": 15,
       "mlbGames": 15
     }
   }

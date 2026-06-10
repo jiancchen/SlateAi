@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "runId": "tennis-2026-06-08-TEN-W1-TEN-F0-TEN-T0-TEN-E0",
+  "mode": "pregame",
+  "ok": true,
+  "command": "npm run data:health:tennis -- --date 2026-06-08 --pregame",
+  "exitCode": 0,
+  "checks": [
+    {
+      "name": "sourceFiles",
+      "status": "warning"
+    },
+    {
+      "name": "sourceFetch",
+      "status": "warning"
+    },
+    {
+      "name": "sourceParse",
+      "status": "warning"
+    },
+    {
+      "name": "matchContract",
+      "status": "ok"
+    },
+    {
+      "name": "rankings",
+      "status": "warning"
+    },
+    {
+      "name": "typedInsert",
+      "status": "warning"
+    },
+    {
+      "name": "slateLinkage",
+      "status": "warning"
+    },
+    {
+      "name": "tennisliveContext",
+      "status": "ok"
+    },
+    {
+      "name": "warehouse",
+      "status": "warning"
+    },
+    {
+      "name": "tennislive",
+      "status": "ok"
+    },
+    {
+      "name": "kalshi",
+      "status": "warning"
+    },
+    {
+      "name": "weather",
+      "status": "warning"
+    },
+    {
+      "name": "settlementReadiness",
+      "status": "not_applicable"
+    },
+    {
+      "name": "resultsTraining",
+      "status": "ok"
+    },
+    {
+      "name": "publishReadiness",
+      "status": "warning"
+    },
+    {
+      "name": "published",
+      "status": "warning"
+    },
+    {
+      "name": "valueBooks",
+      "status": "warning"
+    }
+  ],
+  "stdout": "\n> sports-trading-board-workspace@1.0.0 data:health:tennis\n> python3 pipeline/tennis/workflows/health.py --date 2026-06-08 --pregame\n\nTennis pipeline health PASS for 2026-06-08 (pregame)\n- sourceFiles: warning\n  optional source files missing: scoreboard, fanduelLines\n- sourceFetch: warning\n  one or more optional or diagnostically incomplete source fetch rows need attention\n- sourceParse: warning\n  source parse diagnostics include missing, empty, failed, or not-inserted rows\n- matchContract: ok\n- rankings: warning\n  one or more full-depth slate players are missing canonical ranking coverage\n- typedInsert: warning\n  typed rows are populated but incomplete for some slate players\n- slateLinkage: warning\n  typed data exists but some slate rows are linked through redirected player IDs\n- tennisliveContext: ok\n- warehouse: warning\n  full-depth warehouse rows are partial or linked through redirected player IDs\n- tennislive: ok\n- kalshi: warning\n  Kalshi/prediction-market lane is partial for this slate; sportsbook lines remain authoritative where present\n- weather: warning\n  no match weather attachment present for this slate; TennisLive/player/market coverage remains authoritative\n- settlementReadiness: not_applicable\n  settlement artifacts are not required in pregame mode\n- resultsTraining: ok\n- publishReadiness: warning\n  publish readiness has partial sections: published, valueBooks\n- published: warning\n  published tennis detail payload has partial warehouse context for one or more players\n- valueBooks: warning\n  summary/Kalshi aggregate lanes are partial; per-game value books were checked directly\n",
+  "stderr": ""
+}

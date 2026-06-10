@@ -729,5 +729,26 @@ export const mlbPropPerformanceByDate: Record<string, DailyPropSummary> = {
       "Anthony Kay Under 4.5 strikeouts",
       "Ryan Weathers Under 6.5 strikeouts"
     ]
+  },
+  "2026-06-06": {
+    "overall": {
+      "hits": 0,
+      "total": 14,
+      "hitRate": 0
+    },
+    "byType": {
+      "pitcherStrikeouts": {
+        "hits": 0,
+        "total": 14,
+        "hitRate": 0
+      }
+    },
+    "topHits": [],
+    "topMisses": [
+      "Braxton Ashcraft Over 5.5 strikeouts",
+      "Landen Roupp Over 4.5 strikeouts",
+      "Will Warren Over 4.5 strikeouts",
+      "Matthew Liberatore Under 5.5 strikeouts"
+    ]
   }
 }

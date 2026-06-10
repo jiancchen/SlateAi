@@ -1,0 +1,949 @@
+{
+  "generatedAt": "2026-06-08T19:10:09.779Z",
+  "model": "inning-expected-batters-shadow-v1",
+  "startDate": "2026-06-05",
+  "endDate": "2026-06-07",
+  "rows": 220,
+  "summary": {
+    "brier": 0.25,
+    "baselineBrier": 0.249,
+    "modelPicks": {
+      "rows": 134,
+      "hits": 65,
+      "misses": 69,
+      "hitRate": 48.5
+    },
+    "baselinePicks": {
+      "rows": 132,
+      "hits": 70,
+      "misses": 62,
+      "hitRate": 53
+    }
+  },
+  "thresholdSummary": [
+    {
+      "thresholdPct": 52,
+      "rows": 134,
+      "hits": 65,
+      "misses": 69,
+      "hitRate": 48.5,
+      "avgConfidencePct": 55
+    },
+    {
+      "thresholdPct": 55,
+      "rows": 49,
+      "hits": 30,
+      "misses": 19,
+      "hitRate": 61.2,
+      "avgConfidencePct": 58
+    },
+    {
+      "thresholdPct": 58,
+      "rows": 21,
+      "hits": 12,
+      "misses": 9,
+      "hitRate": 57.1,
+      "avgConfidencePct": 59.3
+    },
+    {
+      "thresholdPct": 60,
+      "rows": 5,
+      "hits": 2,
+      "misses": 3,
+      "hitRate": 40,
+      "avgConfidencePct": 62
+    }
+  ],
+  "coverage": {
+    "rowsWithAnyStatcast": 70,
+    "rowsWithFullStatcast": 65,
+    "rowsWithStarterForm": 0,
+    "rowsWithAnyTeamMarketAnchor": 0,
+    "rowsWithAnyPitcherMarketAnchor": 0,
+    "avgStatcastPct": 31.7,
+    "avgSplitPct": 0,
+    "avgMatchupPct": 100
+  },
+  "byInning": {
+    "1": {
+      "rows": 44,
+      "runRate": 56.8,
+      "brier": 0.2494,
+      "baselineBrier": 0.2499,
+      "picks": {
+        "rows": 17,
+        "hits": 7,
+        "misses": 10,
+        "hitRate": 41.2
+      }
+    },
+    "2": {
+      "rows": 44,
+      "runRate": 36.4,
+      "brier": 0.2375,
+      "baselineBrier": 0.2349,
+      "picks": {
+        "rows": 44,
+        "hits": 28,
+        "misses": 16,
+        "hitRate": 63.6
+      }
+    },
+    "3": {
+      "rows": 44,
+      "runRate": 59.1,
+      "brier": 0.258,
+      "baselineBrier": 0.2608,
+      "picks": {
+        "rows": 42,
+        "hits": 17,
+        "misses": 25,
+        "hitRate": 40.5
+      }
+    },
+    "4": {
+      "rows": 44,
+      "runRate": 34.1,
+      "brier": 0.2464,
+      "baselineBrier": 0.2438,
+      "picks": {
+        "rows": 16,
+        "hits": 10,
+        "misses": 6,
+        "hitRate": 62.5
+      }
+    },
+    "5": {
+      "rows": 44,
+      "runRate": 63.6,
+      "brier": 0.2585,
+      "baselineBrier": 0.2556,
+      "picks": {
+        "rows": 15,
+        "hits": 3,
+        "misses": 12,
+        "hitRate": 20
+      }
+    }
+  },
+  "calibration": {
+    "50-59": {
+      "rows": 48,
+      "avgProbability": 51.8,
+      "actualRunRate": 54.2,
+      "brier": 0.2502
+    },
+    "40-49": {
+      "rows": 167,
+      "avgProbability": 46.2,
+      "actualRunRate": 48.5,
+      "brier": 0.2489
+    },
+    "<40": {
+      "rows": 5,
+      "avgProbability": 38,
+      "actualRunRate": 60,
+      "brier": 0.2819
+    }
+  },
+  "severeMisses": [
+    {
+      "date": "2026-06-06",
+      "title": "Cincinnati Reds @ St. Louis Cardinals",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 37.8,
+      "actualRuns": 3,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 42.1,
+      "homeBatterScore": 42.3,
+      "awayStarterRisk": 50,
+      "homeStarterRisk": 50
+    },
+    {
+      "date": "2026-06-06",
+      "title": "Athletics @ Houston Astros",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 38.3,
+      "actualRuns": 5,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 47.1,
+      "homeBatterScore": 38.6,
+      "awayStarterRisk": 50,
+      "homeStarterRisk": 50
+    },
+    {
+      "date": "2026-06-06",
+      "title": "New York Mets @ San Diego Padres",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 39.6,
+      "actualRuns": 1,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 48.8,
+      "homeBatterScore": 41.7,
+      "awayStarterRisk": 50,
+      "homeStarterRisk": 50
+    },
+    {
+      "date": "2026-06-07",
+      "title": "Kansas City Royals @ Minnesota Twins",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 40.9,
+      "actualRuns": 1,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 47.4,
+      "homeBatterScore": 47.8,
+      "awayStarterRisk": 50,
+      "homeStarterRisk": 50
+    },
+    {
+      "date": "2026-06-07",
+      "title": "Milwaukee Brewers @ Colorado Rockies",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 41.4,
+      "actualRuns": 1,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 49.1,
+      "homeBatterScore": 48,
+      "awayStarterRisk": 50,
+      "homeStarterRisk": 50
+    },
+    {
+      "date": "2026-06-07",
+      "title": "New York Mets @ San Diego Padres",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 41.7,
+      "actualRuns": 1,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 50,
+      "homeBatterScore": 48,
+      "awayStarterRisk": 50,
+      "homeStarterRisk": 50
+    },
+    {
+      "date": "2026-06-05",
+      "title": "New York Mets @ San Diego Padres",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 41.8,
+      "actualRuns": 1,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 49.4,
+      "homeBatterScore": 48.9,
+      "awayStarterRisk": 50,
+      "homeStarterRisk": 50
+    },
+    {
+      "date": "2026-06-06",
+      "title": "Milwaukee Brewers @ Colorado Rockies",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 41.8,
+      "actualRuns": 1,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 46.3,
+      "homeBatterScore": 52.3,
+      "awayStarterRisk": 50,
+      "homeStarterRisk": 50
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Chicago White Sox @ Philadelphia Phillies",
+      "inning": 2,
+      "pick": "No run",
+      "probabilityPct": 42,
+      "actualRuns": 7,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 48.7,
+      "homeBatterScore": 50,
+      "awayStarterRisk": 50,
+      "homeStarterRisk": 50
+    }
+  ],
+  "sampleRows": [
+    {
+      "date": "2026-06-05",
+      "title": "San Francisco Giants @ Chicago Cubs",
+      "inning": 1,
+      "probabilityPct": 50.9,
+      "baselineProbabilityPct": 50.1,
+      "actualRuns": 2,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "awayBatterScore": 54,
+      "homeBatterScore": 48.9
+    },
+    {
+      "date": "2026-06-05",
+      "title": "San Francisco Giants @ Chicago Cubs",
+      "inning": 2,
+      "probabilityPct": 42.3,
+      "baselineProbabilityPct": 42.3,
+      "actualRuns": 0,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 51.8,
+      "homeBatterScore": 48.3
+    },
+    {
+      "date": "2026-06-05",
+      "title": "San Francisco Giants @ Chicago Cubs",
+      "inning": 3,
+      "probabilityPct": 45.7,
+      "baselineProbabilityPct": 45.1,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "awayBatterScore": 53.7,
+      "homeBatterScore": 48.4
+    },
+    {
+      "date": "2026-06-05",
+      "title": "San Francisco Giants @ Chicago Cubs",
+      "inning": 4,
+      "probabilityPct": 48.3,
+      "baselineProbabilityPct": 48.1,
+      "actualRuns": 6,
+      "awaySlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "homeSlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "awayBatterScore": 52.3,
+      "homeBatterScore": 48.5
+    },
+    {
+      "date": "2026-06-05",
+      "title": "San Francisco Giants @ Chicago Cubs",
+      "inning": 5,
+      "probabilityPct": 48.3,
+      "baselineProbabilityPct": 47.9,
+      "actualRuns": 1,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 53.1,
+      "homeBatterScore": 48.3
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Chicago White Sox @ Philadelphia Phillies",
+      "inning": 1,
+      "probabilityPct": 51.5,
+      "baselineProbabilityPct": 50.1,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "awayBatterScore": 52.9,
+      "homeBatterScore": 52.3
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Chicago White Sox @ Philadelphia Phillies",
+      "inning": 2,
+      "probabilityPct": 42,
+      "baselineProbabilityPct": 42.3,
+      "actualRuns": 7,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 48.7,
+      "homeBatterScore": 50
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Chicago White Sox @ Philadelphia Phillies",
+      "inning": 3,
+      "probabilityPct": 45.7,
+      "baselineProbabilityPct": 45.1,
+      "actualRuns": 1,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "awayBatterScore": 51.2,
+      "homeBatterScore": 51
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Chicago White Sox @ Philadelphia Phillies",
+      "inning": 4,
+      "probabilityPct": 48.3,
+      "baselineProbabilityPct": 48.1,
+      "actualRuns": 1,
+      "awaySlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "homeSlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "awayBatterScore": 50.1,
+      "homeBatterScore": 50.6
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Chicago White Sox @ Philadelphia Phillies",
+      "inning": 5,
+      "probabilityPct": 48.2,
+      "baselineProbabilityPct": 47.9,
+      "actualRuns": 1,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 50.5,
+      "homeBatterScore": 50.7
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Seattle Mariners @ Detroit Tigers",
+      "inning": 1,
+      "probabilityPct": 51.3,
+      "baselineProbabilityPct": 50.1,
+      "actualRuns": 1,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "awayBatterScore": 51.3,
+      "homeBatterScore": 53.4
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Seattle Mariners @ Detroit Tigers",
+      "inning": 2,
+      "probabilityPct": 41.6,
+      "baselineProbabilityPct": 42.3,
+      "actualRuns": 0,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 48.7,
+      "homeBatterScore": 48.9
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Seattle Mariners @ Detroit Tigers",
+      "inning": 3,
+      "probabilityPct": 45.7,
+      "baselineProbabilityPct": 45.1,
+      "actualRuns": 3,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "awayBatterScore": 51.5,
+      "homeBatterScore": 50.9
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Seattle Mariners @ Detroit Tigers",
+      "inning": 4,
+      "probabilityPct": 48,
+      "baselineProbabilityPct": 48.1,
+      "actualRuns": 0,
+      "awaySlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "homeSlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "awayBatterScore": 49.2,
+      "homeBatterScore": 50.4
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Seattle Mariners @ Detroit Tigers",
+      "inning": 5,
+      "probabilityPct": 48.2,
+      "baselineProbabilityPct": 47.9,
+      "actualRuns": 0,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 50.8,
+      "homeBatterScore": 50.1
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Boston Red Sox @ New York Yankees",
+      "inning": 1,
+      "probabilityPct": 51.6,
+      "baselineProbabilityPct": 50.1,
+      "actualRuns": 1,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "awayBatterScore": 52.7,
+      "homeBatterScore": 53
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Boston Red Sox @ New York Yankees",
+      "inning": 2,
+      "probabilityPct": 41.6,
+      "baselineProbabilityPct": 42.3,
+      "actualRuns": 0,
+      "awaySlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 50,
+      "homeBatterScore": 47.6
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Boston Red Sox @ New York Yankees",
+      "inning": 3,
+      "probabilityPct": 45.7,
+      "baselineProbabilityPct": 45.1,
+      "actualRuns": 2,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9
+      ],
+      "awayBatterScore": 51.5,
+      "homeBatterScore": 50.8
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Boston Red Sox @ New York Yankees",
+      "inning": 4,
+      "probabilityPct": 48.2,
+      "baselineProbabilityPct": 48.1,
+      "actualRuns": 2,
+      "awaySlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "homeSlots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "awayBatterScore": 51,
+      "homeBatterScore": 49.3
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Boston Red Sox @ New York Yankees",
+      "inning": 5,
+      "probabilityPct": 48.1,
+      "baselineProbabilityPct": 47.9,
+      "actualRuns": 3,
+      "awaySlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "homeSlots": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "awayBatterScore": 51,
+      "homeBatterScore": 49.8
+    }
+  ]
+}

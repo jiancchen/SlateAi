@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "modelId": "TEN-T0",
+  "date": "2026-06-08",
+  "cartridgeLock": {
+    "manifest": "models/tennis/cartridges/TEN-T0/manifest.json",
+    "sourceFiles": [
+      {
+        "role": "model-runner",
+        "path": "pipeline/tennis/publish/generate-day-module.mjs",
+        "expectedSha256": "babc713ec35396f399b076110a6b5dc5623fd4f8633e6b9f1e229f2aaf2a34f9",
+        "exists": true,
+        "sha256": "babc713ec35396f399b076110a6b5dc5623fd4f8633e6b9f1e229f2aaf2a34f9"
+      },
+      {
+        "role": "source-mapping-helper",
+        "path": "web/src/lib/tennis-source-mapping.js",
+        "expectedSha256": "4be3546a17e27ba9d8ebdca5d0d3788d5a0df77e8346f4f320c6765005b199b3",
+        "exists": true,
+        "sha256": "4be3546a17e27ba9d8ebdca5d0d3788d5a0df77e8346f4f320c6765005b199b3"
+      },
+      {
+        "role": "snapshot-verifier",
+        "path": "pipeline/tennis/workflows/verify-model-snapshot.mjs",
+        "expectedSha256": "b7a1e04d76858aeb003cde4dea67da2ee791066d9ad2b1bdd2d9f297c8bb3149",
+        "exists": true,
+        "sha256": "b7a1e04d76858aeb003cde4dea67da2ee791066d9ad2b1bdd2d9f297c8bb3149"
+      }
+    ],
+    "inputFiles": [
+      {
+        "path": "data-private/reference/tennis/espn-scoreboard-2026-06-08.json",
+        "exists": false,
+        "sha256": null
+      },
+      {
+        "path": "web/src/lib/day-2026-06-08-tennis-warehouse-context.generated.json",
+        "exists": true,
+        "sha256": "0a5f8f2d4c3724fd4ae2b8488bf48ca76372d4ad2e2d8dd9ee8eecd95649c2d1"
+      },
+      {
+        "path": "data-private/reference/tennis/draftkings-lines-2026-06-08.json",
+        "exists": true,
+        "sha256": "4dd088f6017fa1095a8fb2f20eb336668fc94f584182562e2adacc8cd02d6533"
+      },
+      {
+        "path": "data-private/reference/tennis/fanduel-lines-2026-06-08.json",
+        "exists": false,
+        "sha256": null
+      },
+      {
+        "path": "data-private/predictions/tennis/2026-06-08-multimodel-ensemble.json",
+        "exists": false,
+        "sha256": null
+      },
+      {
+        "path": "data-private/predictions/tennis/2026-06-08-derivative-markets.json",
+        "exists": false,
+        "sha256": null
+      },
+      {
+        "path": "data-private/reports/kalshi-tennis-spike-model-2026-06-08.json",
+        "exists": false,
+        "sha256": null
+      }
+    ]
+  },
+  "sourceReports": {
+    "multimodel": "data-private/reports/tennis-multimodel-backtest-through-2026-06-08.json",
+    "kalshi": "data-private/reports/kalshi-tennis-spike-model-2026-06-08.json",
+    "valueBacktest": null
+  },
+  "winnerModel": {
+    "generatedFrom": null,
+    "settledRows": null,
+    "deskBaseline": null,
+    "backtest": null,
+    "dataOnlyBacktest": null,
+    "valueGate": null,
+    "trainingCorpus": null
+  },
+  "valueBacktest": null,
+  "kalshiTradeToSell": {
+    "coverage": null,
+    "laneBacktest": null,
+    "modelBacktest": null
+  },
+  "notes": [
+    "TEN-T0 calibration is stored as a baseline for comparison only.",
+    "Future cartridges must report bucketed performance by ML, spread, match O-U, first-set O-U, set-win, and Kalshi trade-to-sell."
+  ]
+}

@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Mariners",
-      "detail": "Luis Castillo (RHP) | 2-5 | 5.53 ERA | 56 SO | 1.45 WHIP | 55.1 IP"
+      "detail": "Luis Castillo (RHP) | 2-5 | 5.16 ERA | 61 SO | 1.36 WHIP | 61.0 IP"
     },
     {
       "side": "Home",
       "name": "Tigers",
-      "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 70 SO | 1.60 WHIP | 57.2 IP"
+      "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 77 SO | 1.58 WHIP | 62.2 IP"
     }
   ],
   "summary": "Mariners @ Tigers with Luis Castillo against Jack Flaherty.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Mariners -105 / Tigers -114 | o8.5 -120 / u8.5 -101 | Mariners -1.5 +152 / Tigers +1.5 -185 | F5 Mariners -105 / Tigers -125 / o4.5 -125 / u4.5 -105.",
+    "Current board: Mariners -103 / Tigers -117 | o8.5 -117 / u8.5 -103 | Mariners -1.5 +157 / Tigers +1.5 -191 | F5 Mariners -105 / Tigers -125 / o4.5 -125 / u4.5 -105.",
     "Luis Castillo vs Jack Flaherty."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -35,21 +35,21 @@
       "divisionLeader": true,
       "divisionRank": "1",
       "gamesBack": "-",
-      "losses": 31,
-      "runDifferential": 30,
+      "losses": 32,
+      "runDifferential": 32,
       "streakCode": "W1",
-      "winningPercentage": ".523",
-      "wins": 34
+      "winningPercentage": ".522",
+      "wins": 35
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "4",
-      "gamesBack": "10.5",
+      "gamesBack": "9.0",
       "losses": 39,
-      "runDifferential": -25,
-      "streakCode": "L1",
-      "winningPercentage": ".400",
-      "wins": 26
+      "runDifferential": -24,
+      "streakCode": "W1",
+      "winningPercentage": ".409",
+      "wins": 27
     }
   },
   "parkContext": {
@@ -269,22 +269,22 @@
       "away": {
         "playerName": "Luis Castillo",
         "line": 4.5,
-        "overPrice": 106,
+        "overPrice": 110,
         "underPrice": -136,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "home": {
         "playerName": "Jack Flaherty",
         "line": 5.5,
-        "overPrice": -154,
+        "overPrice": -150,
         "underPrice": 121,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -479,6 +479,172 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 825004,
+          "date": "2026-05-26",
+          "opponent": "Athletics",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 4,
+          "runsAgainst": 1,
+          "starters": {
+            "team": {
+              "pitcherId": 676106,
+              "pitcherName": "Emerson Hancock",
+              "teamName": "Seattle Mariners",
+              "opponentName": "Athletics",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 695611,
+              "pitcherName": "Gage Jump",
+              "teamName": "Athletics",
+              "opponentName": "Seattle Mariners",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 3
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 825003,
+          "date": "2026-05-27",
+          "opponent": "Athletics",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 9,
+          "runsAgainst": 1,
+          "starters": {
+            "team": {
+              "pitcherId": 669302,
+              "pitcherName": "Logan Gilbert",
+              "teamName": "Seattle Mariners",
+              "opponentName": "Athletics",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 605488,
+              "pitcherName": "Jeffrey Springs",
+              "teamName": "Athletics",
+              "opponentName": "Seattle Mariners",
+              "firstInningRunsAllowed": 3,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 3
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 2
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 1
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 3
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 823135,
           "date": "2026-05-29",
@@ -849,7 +1015,7 @@
               "tone": "warning"
             },
             "relief": {
-              "label": "Won late",
+              "label": "Held",
               "tone": "positive"
             }
           },
@@ -860,23 +1026,23 @@
             },
             {
               "inning": 2,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 3,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
@@ -939,7 +1105,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
@@ -1115,6 +1281,172 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 824270,
+          "date": "2026-05-27",
+          "opponent": "Angels",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 4,
+          "runsAgainst": 0,
+          "starters": {
+            "team": {
+              "pitcherId": 663554,
+              "pitcherName": "Casey Mize",
+              "teamName": "Detroit Tigers",
+              "opponentName": "Los Angeles Angels",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 667755,
+              "pitcherName": "José Soriano",
+              "teamName": "Los Angeles Angels",
+              "opponentName": "Detroit Tigers",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Short",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 1
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 1
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 1
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824272,
+          "date": "2026-05-28",
+          "opponent": "Angels",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 1,
+          "runsAgainst": 7,
+          "starters": {
+            "team": {
+              "pitcherId": 656427,
+              "pitcherName": "Jack Flaherty",
+              "teamName": "Detroit Tigers",
+              "opponentName": "Los Angeles Angels",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 680570,
+              "pitcherName": "Grayson Rodriguez",
+              "teamName": "Los Angeles Angels",
+              "opponentName": "Detroit Tigers",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Quiet",
+              "tone": "negative"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 824594,
           "date": "2026-05-29",
@@ -1484,11 +1816,11 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 2,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 3,
@@ -1504,11 +1836,11 @@
             },
             {
               "inning": 6,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 7,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 8,
@@ -1560,26 +1892,26 @@
               "tone": "positive"
             },
             "relief": {
-              "label": "Won late",
+              "label": "Held",
               "tone": "positive"
             }
           },
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 3,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 4,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 5,
@@ -1599,7 +1931,7 @@
             },
             {
               "inning": 9,
-              "runs": 2
+              "runs": 1
             }
           ]
         },
@@ -2025,7 +2357,243 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-824268",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 56.8,
+          "noRunProbabilityPct": 43.2,
+          "awayRunProbabilityPct": 52.9,
+          "homeRunProbabilityPct": 8.3,
+          "lean": "Run",
+          "strength": "lean",
+          "sampleHalves": 130,
+          "caution": "Mariners starter carried a real green season last year (2.3 WAR)",
+          "reason": "YRFI with a 57% modeled chance of at least one first-inning run. Mariners score 52.9% of the time and Tigers 8.3% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 69.8,
+          "noRunProbabilityPct": 30.2,
+          "awayRunProbabilityPct": 41.3,
+          "homeRunProbabilityPct": 28.5,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.3 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Tigers F5 runs 2.5; Luis Castillo: HA 4.5, ER 2.5, win yes +216; Jack Flaherty: HA 4.5, ER 2.5, win yes +212; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 76.1,
+          "noRunProbabilityPct": 23.9,
+          "awayRunProbabilityPct": 39.4,
+          "homeRunProbabilityPct": 36.7,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.3 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Tigers F5 runs 2.5; Luis Castillo: HA 4.5, ER 2.5, win yes +216; Jack Flaherty: HA 4.5, ER 2.5, win yes +212; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 76.1,
+          "noRunProbabilityPct": 23.9,
+          "awayRunProbabilityPct": 42,
+          "homeRunProbabilityPct": 34.1,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.3 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Tigers F5 runs 2.5; Luis Castillo: HA 4.5, ER 2.5, win yes +216; Jack Flaherty: HA 4.5, ER 2.5, win yes +212; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 73.7,
+          "noRunProbabilityPct": 26.3,
+          "awayRunProbabilityPct": 38.9,
+          "homeRunProbabilityPct": 34.8,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.3 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Tigers F5 runs 2.5; Luis Castillo: HA 4.5, ER 2.5, win yes +216; Jack Flaherty: HA 4.5, ER 2.5, win yes +212; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Mariners @ Tigers",
+      "mlbGamePk": 824268,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "tigers": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "mariners": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "luis-castillo": {
+            "name": "Luis Castillo",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": 103,
+              "underOdds": -137,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 4.5,
+              "overOdds": -141,
+              "underOdds": 107,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 216,
+              "noOdds": -301
+            }
+          },
+          "jack-flaherty": {
+            "name": "Jack Flaherty",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": -102,
+              "underOdds": -130,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 4.5,
+              "overOdds": -117,
+              "underOdds": -113,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 212,
+              "noOdds": -303
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "Mariners": {
@@ -2080,7 +2648,7 @@
   "lineupBoard": {
     "gameId": "mariners-tigers",
     "title": "Mariners @ Tigers",
-    "snapshot": "2026-06-07T15:20:45.577Z",
+    "snapshot": "2026-06-07T16:39:59.686Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -2095,7 +2663,7 @@
       "label": "69°F | Wind 9 mph L-R | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "DET -111",
+      "line": "DET -114",
       "total": "8.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -6259,14 +6827,14 @@
       "pitchHand": "R",
       "wins": 2,
       "losses": 5,
-      "era": "5.53",
-      "strikeOuts": 56,
-      "inningsPitched": "55.1",
-      "hitsAllowed": 58,
-      "walks": 22,
-      "homeRunsAllowed": 7,
-      "whip": "1.45",
-      "gamesStarted": 10,
+      "era": "5.16",
+      "strikeOuts": 61,
+      "inningsPitched": "61.0",
+      "hitsAllowed": 60,
+      "walks": 23,
+      "homeRunsAllowed": 8,
+      "whip": "1.36",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 622491,
@@ -6415,24 +6983,24 @@
       "strikeoutMarket": {
         "playerName": "Luis Castillo",
         "line": 4.5,
-        "overPrice": 106,
+        "overPrice": 110,
         "underPrice": -136,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/luis-castillo-vs-tigers",
-        "answerText": "Luis Castillo has a 2-4 record with an ERA of 3.95 and 49 strikeouts in 7 appearances against the Tigers in his career.",
+        "answerText": "Luis Castillo has a record of 2-4 with an ERA of 3.95 and 49 strikeouts in 7 appearances against the Tigers in his career.",
         "pitcherName": "Luis Castillo",
         "pitcherTeam": "Mariners",
         "opponentTeam": "Tigers",
         "appearances": 7,
         "gamesStarted": 7,
-        "wins": 2,
-        "losses": 4,
+        "wins": null,
+        "losses": null,
         "era": 3.95,
         "strikeouts": 49,
         "inningsPitched": "41.0",
@@ -6637,7 +7205,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:39.935Z"
+        "fetchedAt": "2026-06-07T16:38:53.080Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -11295,7 +11863,7 @@
           "Away split: 5.86 ERA / 5 HR allowed.",
           "vs. Left: .259 AVG / .828 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -11323,13 +11891,13 @@
       "wins": 1,
       "losses": 7,
       "era": "5.31",
-      "strikeOuts": 70,
-      "inningsPitched": "57.2",
-      "hitsAllowed": 60,
-      "walks": 32,
+      "strikeOuts": 77,
+      "inningsPitched": "62.2",
+      "hitsAllowed": 66,
+      "walks": 33,
       "homeRunsAllowed": 8,
-      "whip": "1.60",
-      "gamesStarted": 13,
+      "whip": "1.58",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 656427,
@@ -11478,24 +12046,24 @@
       "strikeoutMarket": {
         "playerName": "Jack Flaherty",
         "line": 5.5,
-        "overPrice": -154,
+        "overPrice": -150,
         "underPrice": 121,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/jack-flaherty-vs-mariners",
-        "answerText": "Jack Flaherty is 2-0 with an ERA of 4.22 and 28 strikeouts in 4 appearances versus the Mariners in his career.",
+        "answerText": "Jack Flaherty has a record of 2-0 with an ERA of 4.22 and 28 strikeouts in 4 appearances against the Mariners in his career.",
         "pitcherName": "Jack Flaherty",
         "pitcherTeam": "Tigers",
         "opponentTeam": "Mariners",
         "appearances": 4,
         "gamesStarted": 4,
-        "wins": 2,
-        "losses": 0,
+        "wins": null,
+        "losses": null,
         "era": 4.22,
         "strikeouts": 28,
         "inningsPitched": "21.1",
@@ -11628,7 +12196,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:40.323Z"
+        "fetchedAt": "2026-06-07T16:38:53.898Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -16712,7 +17280,7 @@
           "vs. Left: .274 AVG / .836 OPS allowed.",
           "Comerica Park: 5.64 ERA / .216 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -16761,17 +17329,17 @@
       {
         "label": "Spread",
         "book": "DraftKings typed MLB board",
-        "value": "Mariners -1.5 +152 / Tigers +1.5 -185"
+        "value": "Mariners -1.5 +157 / Tigers +1.5 -191"
       },
       {
         "label": "Total",
         "book": "DraftKings typed MLB board",
-        "value": "o8.5 -120 / u8.5 -101"
+        "value": "o8.5 -117 / u8.5 -103"
       },
       {
         "label": "Moneyline",
         "book": "DraftKings typed MLB board",
-        "value": "Mariners -105 / Tigers -114"
+        "value": "Mariners -103 / Tigers -117"
       },
       {
         "label": "1st 5 ML",
@@ -16793,24 +17361,24 @@
       "index": 0,
       "role": "Away",
       "name": "Mariners",
-      "detail": "Luis Castillo (RHP) | 2-5 | 5.53 ERA | 56 SO | 1.45 WHIP | 55.1 IP",
-      "americanOdds": -105,
-      "americanLabel": "-105",
-      "decimalOdds": 1.9523809523809523,
-      "impliedProbability": 0.5121951219512195,
-      "impliedProbabilityLabel": "51.2%"
+      "detail": "Luis Castillo (RHP) | 2-5 | 5.16 ERA | 61 SO | 1.36 WHIP | 61.0 IP",
+      "americanOdds": -103,
+      "americanLabel": "-103",
+      "decimalOdds": 1.970873786407767,
+      "impliedProbability": 0.5073891625615764,
+      "impliedProbabilityLabel": "50.7%"
     },
     {
       "id": "mariners-tigers:1",
       "index": 1,
       "role": "Home",
       "name": "Tigers",
-      "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 70 SO | 1.60 WHIP | 57.2 IP",
-      "americanOdds": -114,
-      "americanLabel": "-114",
-      "decimalOdds": 1.8771929824561404,
-      "impliedProbability": 0.5327102803738317,
-      "impliedProbabilityLabel": "53.3%"
+      "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 77 SO | 1.58 WHIP | 62.2 IP",
+      "americanOdds": -117,
+      "americanLabel": "-117",
+      "decimalOdds": 1.8547008547008548,
+      "impliedProbability": 0.5391705069124424,
+      "impliedProbabilityLabel": "53.9%"
     }
   ],
   "moneyline": {
@@ -16823,24 +17391,24 @@
         "index": 0,
         "role": "Away",
         "name": "Mariners",
-        "detail": "Luis Castillo (RHP) | 2-5 | 5.53 ERA | 56 SO | 1.45 WHIP | 55.1 IP",
-        "americanOdds": -105,
-        "americanLabel": "-105",
-        "decimalOdds": 1.9523809523809523,
-        "impliedProbability": 0.5121951219512195,
-        "impliedProbabilityLabel": "51.2%"
+        "detail": "Luis Castillo (RHP) | 2-5 | 5.16 ERA | 61 SO | 1.36 WHIP | 61.0 IP",
+        "americanOdds": -103,
+        "americanLabel": "-103",
+        "decimalOdds": 1.970873786407767,
+        "impliedProbability": 0.5073891625615764,
+        "impliedProbabilityLabel": "50.7%"
       },
       {
         "id": "mariners-tigers:1",
         "index": 1,
         "role": "Home",
         "name": "Tigers",
-        "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 70 SO | 1.60 WHIP | 57.2 IP",
-        "americanOdds": -114,
-        "americanLabel": "-114",
-        "decimalOdds": 1.8771929824561404,
-        "impliedProbability": 0.5327102803738317,
-        "impliedProbabilityLabel": "53.3%"
+        "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 77 SO | 1.58 WHIP | 62.2 IP",
+        "americanOdds": -117,
+        "americanLabel": "-117",
+        "decimalOdds": 1.8547008547008548,
+        "impliedProbability": 0.5391705069124424,
+        "impliedProbabilityLabel": "53.9%"
       }
     ]
   },
@@ -16852,27 +17420,27 @@
       "index": 0,
       "role": "Away",
       "name": "Mariners",
-      "detail": "Luis Castillo (RHP) | 2-5 | 5.53 ERA | 56 SO | 1.45 WHIP | 55.1 IP",
-      "americanOdds": -105,
-      "americanLabel": "-105",
-      "decimalOdds": 1.9523809523809523,
-      "impliedProbability": 0.5121951219512195,
-      "impliedProbabilityLabel": "51.2%"
+      "detail": "Luis Castillo (RHP) | 2-5 | 5.16 ERA | 61 SO | 1.36 WHIP | 61.0 IP",
+      "americanOdds": -103,
+      "americanLabel": "-103",
+      "decimalOdds": 1.970873786407767,
+      "impliedProbability": 0.5073891625615764,
+      "impliedProbabilityLabel": "50.7%"
     },
     "opponent": {
       "id": "mariners-tigers:1",
       "index": 1,
       "role": "Home",
       "name": "Tigers",
-      "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 70 SO | 1.60 WHIP | 57.2 IP",
-      "americanOdds": -114,
-      "americanLabel": "-114",
-      "decimalOdds": 1.8771929824561404,
-      "impliedProbability": 0.5327102803738317,
-      "impliedProbabilityLabel": "53.3%"
+      "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 77 SO | 1.58 WHIP | 62.2 IP",
+      "americanOdds": -117,
+      "americanLabel": "-117",
+      "decimalOdds": 1.8547008547008548,
+      "impliedProbability": 0.5391705069124424,
+      "impliedProbabilityLabel": "53.9%"
     },
     "lean": "Model pick: Mariners on standings profile and hit-production baseline.",
-    "rationale": "Standings profile: Mariners (34-31, division leader, +30 RD) vs Tigers (26-39, 4th in division, -25 RD)",
+    "rationale": "Standings profile: Mariners (35-32, division leader, +32 RD) vs Tigers (27-39, 4th in division, -24 RD)",
     "confidence": 53,
     "volatility": 92,
     "recommendationScore": 34,
@@ -16881,14 +17449,14 @@
     "modelDesignation": "MLB-M2-game-shape-v0.1",
     "modelEdge": 3.8,
     "modelEdgeLabel": "3.8-point model edge",
-    "marketProbability": 0.49018324607329844,
-    "marketProbabilityLabel": "49.0%",
+    "marketProbability": 0.48481627695110846,
+    "marketProbabilityLabel": "48.5%",
     "inputs": [
       {
         "label": "Standings profile",
-        "summary": "Standings profile: Mariners (34-31, division leader, +30 RD) vs Tigers (26-39, 4th in division, -25 RD)",
+        "summary": "Standings profile: Mariners (35-32, division leader, +32 RD) vs Tigers (27-39, 4th in division, -24 RD)",
         "source": "Standings context",
-        "margin": 43.7,
+        "margin": 39.7,
         "weight": 0.14
       },
       {
@@ -16927,10 +17495,6 @@
       {
         "label": "Both listed ERAs carry damage risk",
         "delta": 5
-      },
-      {
-        "label": "At least one listed starter profiles as traffic-risk",
-        "delta": 4
       },
       {
         "label": "One lineup carries real platoon pressure versus the listed starter hand",
@@ -16992,19 +17556,19 @@
     "pickReasons": [
       "Mariners own the cleaner full-game traffic script at 11.6 projected hits.",
       "Mariners have the better starter-window lane with 6.8 projected first-five hits.",
-      "Mariners still hold the better bridge-and-finish script once the bullpens take over.",
-      "Mariners can lean on Dominic Canzone, Jhonny Pereda, Josh Naylor to drive early pressure against Jack Flaherty."
+      "Mariners can lean on Dominic Canzone, Jhonny Pereda, Josh Naylor to drive early pressure against Jack Flaherty.",
+      "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms."
     ],
     "indicators": {
       "reliefPitchingRisk": 43,
       "coinflipPressure": 55,
-      "starterLeverageIndex": 40.9,
+      "starterLeverageIndex": 42.6,
       "lateInningStabilityIndex": 47.8,
       "pickBullpenScore": 68,
       "oppBullpenScore": 58.7,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 55.6,
+      "pickStarterScore": 56.8,
       "oppStarterScore": 54.7,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
@@ -17084,9 +17648,11 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": -30,
+      "efficientFavoriteScore": -20,
       "efficientFavoriteTier": "Watch favorite",
-      "efficientFavoriteReasons": [],
+      "efficientFavoriteReasons": [
+        "broadSupport"
+      ],
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
         "thinModelAgreement",
@@ -17102,29 +17668,29 @@
       "tierOneRiskFlags": [
         "underdogNeedsProof"
       ],
-      "favoredSignalCount": 6,
-      "starterLateGap": -6.9,
+      "favoredSignalCount": 7,
+      "starterLateGap": -5.2,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 2.1,
       "gameShape": {
-        "label": "Clean phase stack",
-        "shapeLabel": "balanced traffic game",
-        "category": "clean_phase_stack",
-        "bestExpression": "Full-game side if price is fair",
-        "categoryConfidence": 68.5,
-        "realityGapScore": 34.2,
+        "label": "Starter-to-bullpen flip",
+        "shapeLabel": "starter/late split",
+        "category": "starter_to_bullpen_flip",
+        "bestExpression": "Mariners first-five side",
+        "categoryConfidence": 64,
+        "realityGapScore": 53.6,
         "chaosScore": 38.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
           {
-            "id": "flow",
-            "label": "Flow",
-            "score": 76
-          },
-          {
             "id": "chaos",
             "label": "Chaos",
             "score": 38.8
+          },
+          {
+            "id": "flow",
+            "label": "Flow",
+            "score": 36
           },
           {
             "id": "bridge",
@@ -17132,25 +17698,25 @@
             "score": 28.3
           }
         ],
-        "rfImpactScore": 26.9
+        "rfImpactScore": 31.6
       }
     },
     "gameShape": {
       "modelId": "MLB-M2",
-      "label": "Clean phase stack",
-      "shapeLabel": "balanced traffic game",
+      "label": "Starter-to-bullpen flip",
+      "shapeLabel": "starter/late split",
       "category": {
-        "slug": "clean_phase_stack",
-        "label": "Clean phase stack",
-        "bestExpression": "Full-game side if price is fair",
-        "confidence": 68.5,
+        "slug": "starter_to_bullpen_flip",
+        "label": "Starter-to-bullpen flip",
+        "bestExpression": "Mariners first-five side",
+        "confidence": 64,
         "reasons": [
-          "Full-game, first-five, and late phases mostly agree.",
-          "Moneyline can be considered if the price is not taxed."
+          "The pick can own the starter window without owning the late game.",
+          "Use the timing edge before bridge innings can flip it."
         ],
         "laneMap": {
-          "side": "Allowed if price is fair and lineup card is intact.",
-          "first5": "Use only if starter and top-order pressure agree.",
+          "side": "Secondary to the named lane.",
+          "first5": "Primary lane.",
           "total": "Needs line-specific EV.",
           "firstInning": "Advisory only.",
           "live": "Use price discipline."
@@ -17158,31 +17724,31 @@
         "inningMap": [
           {
             "innings": "1-2",
-            "expectation": "Mariners should create traffic without needing immediate chaos.",
-            "watch": "If the first six outs are empty, reduce side exposure."
+            "expectation": "Mariners can look right early even if full-game ML is fragile.",
+            "watch": "Entry belongs to F5 or live lead, not blind FG."
           },
           {
             "innings": "3-5",
-            "expectation": "Starter and lineup edges should still point the same way.",
-            "watch": "Any early starter command loss breaks the stack."
+            "expectation": "This is the main scoring window for the pick.",
+            "watch": "If the pick trails after five, the original read is mostly gone."
           },
           {
             "innings": "6-7",
-            "expectation": "Bridge should protect the original side.",
-            "watch": "Watch inherited traffic, not just runs."
+            "expectation": "Tigers can re-enter through the bridge.",
+            "watch": "Expect hedge or live reversal pressure here."
           },
           {
             "innings": "8-9",
-            "expectation": "Late bullpen should close without needing a comeback.",
-            "watch": "If the game is tied, price beats confidence."
+            "expectation": "Late innings are not aligned with the pregame side.",
+            "watch": "Do not confuse early control with full-game safety."
           }
         ],
         "diagnostics": {
           "pickOwnsFull": true,
           "pickOwnsFirst5": true,
-          "pickOwnsLate": true,
+          "pickOwnsLate": false,
           "pickOwnsBridge": false,
-          "pickPhaseCount": 3,
+          "pickPhaseCount": 2,
           "lowPickConversion": true,
           "quietPick": false,
           "lineupGap": 0,
@@ -17190,17 +17756,17 @@
           "projectedHitEdge": 0
         }
       },
-      "summary": "Clean phase stack: Full-game side if price is fair. Reality-gap 34.2/100. Main checks: 69°F | Wind 9 mph L-R | 0% precip.",
+      "summary": "Starter-to-bullpen flip: Mariners first-five side. Reality-gap 53.6/100. Main checks: 69°F | Wind 9 mph L-R | 0% precip.",
       "pickTeam": "Mariners",
       "opponentTeam": "Tigers",
       "scores": {
         "chaosScore": 38.8,
         "deadEarlyScore": 8.5,
-        "phaseSplitScore": 24,
+        "phaseSplitScore": 64,
         "bullpenFlipScore": 28.3,
-        "starterControlScore": 17.4,
+        "starterControlScore": 20.2,
         "marketContradictionScore": 29.6,
-        "realityGapScore": 34.2
+        "realityGapScore": 53.6
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -17214,8 +17780,8 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 10,
-            "pickScore": 10,
+            "gameScore": 10.2,
+            "pickScore": 10.2,
             "opponentScore": 9.8
           },
           {
@@ -17254,9 +17820,9 @@
             "id": "flow",
             "label": "Flow",
             "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-            "gameScore": 76,
-            "pickScore": 100,
-            "opponentScore": 0
+            "gameScore": 36,
+            "pickScore": 66.7,
+            "opponentScore": 33.3
           }
         ],
         "profiles": [
@@ -17264,26 +17830,26 @@
             "role": "pick",
             "team": "Mariners",
             "scores": {
-              "pressure": 10,
+              "pressure": 10.2,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
               "bridge": 0.8,
-              "flow": 100
+              "flow": 66.7
             },
             "polygon": [
-              10,
+              10.2,
               0,
               0,
               0,
               0.8,
-              100
+              66.7
             ],
-            "phaseOwnershipPct": 100,
+            "phaseOwnershipPct": 66.7,
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 55.6,
+              "starterScore": 56.8,
               "bullpenScore": 68,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17302,7 +17868,7 @@
               "freeze": 0,
               "air": 0,
               "bridge": 4.3,
-              "flow": 0
+              "flow": 33.3
             },
             "polygon": [
               9.8,
@@ -17310,9 +17876,9 @@
               0,
               0,
               4.3,
-              0
+              33.3
             ],
-            "phaseOwnershipPct": 0,
+            "phaseOwnershipPct": 33.3,
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
@@ -17328,34 +17894,34 @@
           }
         ],
         "gameProfile": {
-          "label": "Clean phase stack",
-          "bestExpression": "Full-game side if price is fair",
+          "label": "Starter-to-bullpen flip",
+          "bestExpression": "Mariners first-five side",
           "scores": {
-            "pressure": 10,
+            "pressure": 10.2,
             "chaos": 38.8,
             "freeze": 8.5,
             "air": 0,
             "bridge": 28.3,
-            "flow": 76
+            "flow": 36
           },
           "polygon": [
-            10,
+            10.2,
             38.8,
             8.5,
             0,
             28.3,
-            76
+            36
           ],
           "dominantAxes": [
-            {
-              "id": "flow",
-              "label": "Flow",
-              "score": 76
-            },
             {
               "id": "chaos",
               "label": "Chaos",
               "score": 38.8
+            },
+            {
+              "id": "flow",
+              "label": "Flow",
+              "score": 36
             },
             {
               "id": "bridge",
@@ -17368,10 +17934,10 @@
       "phaseMap": {
         "fullGameTraffic": "Mariners",
         "first5": "Mariners",
-        "late": "Mariners",
+        "late": "Tigers",
         "bridge": "",
-        "distinctPhaseTeams": 1,
-        "pickPhaseMisses": 0
+        "distinctPhaseTeams": 2,
+        "pickPhaseMisses": 1
       },
       "metrics": {
         "maxMistakeChaos": null,
@@ -17389,8 +17955,8 @@
         "69°F | Wind 9 mph L-R | 0% precip"
       ],
       "laneMap": {
-        "side": "Allowed if price is fair and lineup card is intact.",
-        "first5": "Use only if starter and top-order pressure agree.",
+        "side": "Secondary to the named lane.",
+        "first5": "Primary lane.",
         "total": "Needs line-specific EV.",
         "firstInning": "Advisory only.",
         "live": "Use price discipline."
@@ -17398,35 +17964,35 @@
       "inningMap": [
         {
           "innings": "1-2",
-          "expectation": "Mariners should create traffic without needing immediate chaos.",
-          "watch": "If the first six outs are empty, reduce side exposure."
+          "expectation": "Mariners can look right early even if full-game ML is fragile.",
+          "watch": "Entry belongs to F5 or live lead, not blind FG."
         },
         {
           "innings": "3-5",
-          "expectation": "Starter and lineup edges should still point the same way.",
-          "watch": "Any early starter command loss breaks the stack."
+          "expectation": "This is the main scoring window for the pick.",
+          "watch": "If the pick trails after five, the original read is mostly gone."
         },
         {
           "innings": "6-7",
-          "expectation": "Bridge should protect the original side.",
-          "watch": "Watch inherited traffic, not just runs."
+          "expectation": "Tigers can re-enter through the bridge.",
+          "watch": "Expect hedge or live reversal pressure here."
         },
         {
           "innings": "8-9",
-          "expectation": "Late bullpen should close without needing a comeback.",
-          "watch": "If the game is tied, price beats confidence."
+          "expectation": "Late innings are not aligned with the pregame side.",
+          "watch": "Do not confuse early control with full-game safety."
         }
       ],
       "marketImplications": {
-        "side": "Mariners is more coherent as a side because the game shape mostly agrees with the projection.",
-        "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
+        "side": "Do not treat Mariners as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
+        "first5": "First-five may be cleaner than full game if the starter-window edge is on the pick and the late edge flips.",
         "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 56.9% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 56.8% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 26.9,
+        "impactScore": 31.6,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -17466,21 +18032,21 @@
       "awayHitEfficiencyPct": 33.5,
       "homeHitEfficiencyPct": 33.8,
       "awayFirst5ProjectedHits": 6.8,
-      "homeFirst5ProjectedHits": 6.8,
+      "homeFirst5ProjectedHits": 6.6,
       "awayFirst5HitEfficiencyPct": 35.6,
-      "homeFirst5HitEfficiencyPct": 35.8,
+      "homeFirst5HitEfficiencyPct": 34.7,
       "awayLateProjectedHits": 4.8,
-      "homeLateProjectedHits": 4.8,
-      "awayLateHitEfficiencyPct": 30.6,
-      "homeLateHitEfficiencyPct": 31.6,
+      "homeLateProjectedHits": 5,
+      "awayLateHitEfficiencyPct": 30.7,
+      "homeLateHitEfficiencyPct": 32.5,
       "awayBullpenChainScore": null,
       "homeBullpenChainScore": null,
       "edgeTeam": "Mariners",
       "edgeHits": 0,
       "first5EdgeTeam": "Mariners",
-      "first5EdgeHits": 0,
-      "lateEdgeTeam": "Mariners",
-      "lateEdgeHits": 0,
+      "first5EdgeHits": 0.2,
+      "lateEdgeTeam": "Tigers",
+      "lateEdgeHits": 0.2,
       "bridgeEdgeTeam": "",
       "bridgeEdgeScore": null,
       "awayLikelyRelievers": [],
@@ -17489,24 +18055,24 @@
       "homeBullpenExhaustion": null,
       "awayBullpenExhaustionLabel": "unknown",
       "homeBullpenExhaustionLabel": "unknown",
-      "awayPitcherType": "Traffic-risk righty",
+      "awayPitcherType": "Balanced righty",
       "homePitcherType": "Volatile bat-misser",
-      "awayStarterHoldConfidence": 18,
+      "awayStarterHoldConfidence": 18.8,
       "homeStarterHoldConfidence": 18,
       "awayProjectedRuns": 5.7,
-      "homeProjectedRuns": 5.5,
+      "homeProjectedRuns": 5.4,
       "awayFirst5ProjectedRuns": 3.3,
-      "homeFirst5ProjectedRuns": 3.2,
+      "homeFirst5ProjectedRuns": 3,
       "awayLateProjectedRuns": 2.4,
-      "homeLateProjectedRuns": 2.3,
+      "homeLateProjectedRuns": 2.4,
       "postedTotal": 8.5,
       "totals": {
         "fullGame": {
           "lean": "Over",
-          "edge": 2.7,
+          "edge": 2.6,
           "strength": "Strong",
           "label": "Over 8.5",
-          "summary": "Over lean with a 2.7-run edge against 8.5.",
+          "summary": "Over lean with a 2.6-run edge against 8.5.",
           "chaosGate": {
             "phase": "full",
             "overChaosScore": 2,
@@ -17533,10 +18099,10 @@
         },
         "first5": {
           "lean": "Pass",
-          "edge": 2,
+          "edge": 1.8,
           "strength": "Unsupported over",
           "label": "Hold 4.5",
-          "summary": "Over lean with a 2.0-run edge against 4.5. Tail overlay removed the over because the point edge lacks run-explosion support.",
+          "summary": "Over lean with a 1.8-run edge against 4.5. Tail overlay removed the over because the point edge lacks run-explosion support.",
           "chaosGate": {
             "phase": "first5",
             "overChaosScore": 2,
@@ -17564,9 +18130,9 @@
           "originalStrength": "Strong",
           "originalLabel": "Over 4.5",
           "tailOverlay": {
-            "baseProjectedRuns": 6.5,
-            "adjustedProjectedRuns": 4.4,
-            "adjustedEdge": -0.1,
+            "baseProjectedRuns": 6.3,
+            "adjustedProjectedRuns": 4.2,
+            "adjustedEdge": -0.3,
             "marketExpression": "Pass",
             "shape": "unsupported-over",
             "tailScore": 18,
@@ -17585,7 +18151,7 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 13.6,
+              "totalFirst5ProjectedHits": 13.4,
               "weatherCarry": false,
               "weatherSuppress": false,
               "visibilityRisk": null
@@ -17594,10 +18160,10 @@
         },
         "late": {
           "lean": "Over",
-          "edge": 0.7,
+          "edge": 0.8,
           "strength": "Clear",
           "label": "Over 4",
-          "summary": "Over lean with a 0.7-run edge against 4.",
+          "summary": "Over lean with a 0.8-run edge against 4.",
           "chaosGate": {
             "phase": "late",
             "overChaosScore": 2,
@@ -17622,13 +18188,13 @@
             }
           }
         },
-        "projectedFullTotalRuns": 11.2,
-        "projectedFirst5TotalRuns": 6.5,
-        "tailAdjustedProjectedFirst5TotalRuns": 4.4,
+        "projectedFullTotalRuns": 11.1,
+        "projectedFirst5TotalRuns": 6.3,
+        "tailAdjustedProjectedFirst5TotalRuns": 4.2,
         "first5TailOverlay": {
-          "baseProjectedRuns": 6.5,
-          "adjustedProjectedRuns": 4.4,
-          "adjustedEdge": -0.1,
+          "baseProjectedRuns": 6.3,
+          "adjustedProjectedRuns": 4.2,
+          "adjustedEdge": -0.3,
           "marketExpression": "Pass",
           "shape": "unsupported-over",
           "tailScore": 18,
@@ -17647,16 +18213,16 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 13.6,
+            "totalFirst5ProjectedHits": 13.4,
             "weatherCarry": false,
             "weatherSuppress": false,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 4.7,
+        "projectedLateTotalRuns": 4.8,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 4.9,
+        "runShareFirst5TotalLine": 4.8,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 4,
         "bullpenExhaustionNote": "69°F | Wind 9 mph L-R | 0% precip. No major bridge-chain exhaustion flag has surfaced yet.",
@@ -17667,11 +18233,11 @@
         "pick": "YRFI",
         "strength": "Lean",
         "label": "YRFI",
-        "edge": 6.9,
-        "yesProbabilityPct": 56.9,
-        "noProbabilityPct": 43.1,
+        "edge": 6.8,
+        "yesProbabilityPct": 56.8,
+        "noProbabilityPct": 43.2,
         "awayRunProbabilityPct": 52.9,
-        "homeRunProbabilityPct": 8.5,
+        "homeRunProbabilityPct": 8.3,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 20,
@@ -17690,7 +18256,7 @@
         ],
         "projectedRuns": 0.9,
         "line": 0.5,
-        "summary": "YRFI with a 57% modeled chance of at least one first-inning run. Mariners score 52.9% of the time and Tigers 8.5% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 57% modeled chance of at least one first-inning run. Mariners score 52.9% of the time and Tigers 8.3% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
       },
       "teamScripts": [
         {
@@ -17729,7 +18295,6 @@
           "winPath": [
             "Mariners own the cleaner full-game traffic script at 11.6 projected hits.",
             "Mariners have the better starter-window lane with 6.8 projected first-five hits.",
-            "Mariners still hold the better bridge-and-finish script once the bullpens take over.",
             "Mariners can lean on Dominic Canzone, Jhonny Pereda, Josh Naylor to drive early pressure against Jack Flaherty.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
             "Mariners top third are live enough to pressure the starter before the bridge innings.",
@@ -17770,6 +18335,7 @@
           "depthScore": 44.7,
           "bullpenOverperformHitters": [],
           "winPath": [
+            "Tigers still hold the better bridge-and-finish script once the bullpens take over.",
             "Tigers can lean on Kerry Carpenter, Kevin McGonigle, Gleyber Torres to drive early pressure against Luis Castillo.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
             "Tigers top third are live enough to pressure the starter before the bridge innings.",
@@ -17778,7 +18344,7 @@
         }
       ],
       "lineupSimulation": {
-        "overview": "Mariners carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+        "overview": "Mariners rate cleaner through the starter window, but the bridge and finish script still move later in the game.",
         "phases": [
           {
             "label": "First 5",
@@ -17788,9 +18354,9 @@
           },
           {
             "label": "Bridge",
-            "edgeTeam": "Mariners",
+            "edgeTeam": "Tigers",
             "projection": "2.4 R",
-            "note": "Mariners keep more late scoring paths alive, with Dominic Canzone, Jhonny Pereda plus the stronger bridge chain shaping the middle innings."
+            "note": "Tigers keep more late scoring paths alive, with Kerry Carpenter, Kevin McGonigle plus the stronger bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
@@ -17820,33 +18386,33 @@
         "selection": "Mariners",
         "opponent": "Tigers",
         "pickProjectedRuns": 5.7,
-        "opponentProjectedRuns": 5.5,
-        "projectedTotalRuns": 11.2,
-        "runDiff": 0.2,
-        "absoluteRunDiff": 0.2,
-        "runDiffSharePct": 1.8,
+        "opponentProjectedRuns": 5.4,
+        "projectedTotalRuns": 11.1,
+        "runDiff": 0.3,
+        "absoluteRunDiff": 0.3,
+        "runDiffSharePct": 2.7,
         "confidence": 53,
-        "marketProbabilityPct": 49,
+        "marketProbabilityPct": 48.5,
         "grade": "Thin ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Mariners projects 0.2 runs better in a 11.2-run environment."
+        "note": "Mariners projects 0.3 runs better in a 11.1-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
-        "label": "Clean phase stack",
-        "shapeLabel": "balanced traffic game",
+        "label": "Starter-to-bullpen flip",
+        "shapeLabel": "starter/late split",
         "category": {
-          "slug": "clean_phase_stack",
-          "label": "Clean phase stack",
-          "bestExpression": "Full-game side if price is fair",
-          "confidence": 68.5,
+          "slug": "starter_to_bullpen_flip",
+          "label": "Starter-to-bullpen flip",
+          "bestExpression": "Mariners first-five side",
+          "confidence": 64,
           "reasons": [
-            "Full-game, first-five, and late phases mostly agree.",
-            "Moneyline can be considered if the price is not taxed."
+            "The pick can own the starter window without owning the late game.",
+            "Use the timing edge before bridge innings can flip it."
           ],
           "laneMap": {
-            "side": "Allowed if price is fair and lineup card is intact.",
-            "first5": "Use only if starter and top-order pressure agree.",
+            "side": "Secondary to the named lane.",
+            "first5": "Primary lane.",
             "total": "Needs line-specific EV.",
             "firstInning": "Advisory only.",
             "live": "Use price discipline."
@@ -17854,31 +18420,31 @@
           "inningMap": [
             {
               "innings": "1-2",
-              "expectation": "Mariners should create traffic without needing immediate chaos.",
-              "watch": "If the first six outs are empty, reduce side exposure."
+              "expectation": "Mariners can look right early even if full-game ML is fragile.",
+              "watch": "Entry belongs to F5 or live lead, not blind FG."
             },
             {
               "innings": "3-5",
-              "expectation": "Starter and lineup edges should still point the same way.",
-              "watch": "Any early starter command loss breaks the stack."
+              "expectation": "This is the main scoring window for the pick.",
+              "watch": "If the pick trails after five, the original read is mostly gone."
             },
             {
               "innings": "6-7",
-              "expectation": "Bridge should protect the original side.",
-              "watch": "Watch inherited traffic, not just runs."
+              "expectation": "Tigers can re-enter through the bridge.",
+              "watch": "Expect hedge or live reversal pressure here."
             },
             {
               "innings": "8-9",
-              "expectation": "Late bullpen should close without needing a comeback.",
-              "watch": "If the game is tied, price beats confidence."
+              "expectation": "Late innings are not aligned with the pregame side.",
+              "watch": "Do not confuse early control with full-game safety."
             }
           ],
           "diagnostics": {
             "pickOwnsFull": true,
             "pickOwnsFirst5": true,
-            "pickOwnsLate": true,
+            "pickOwnsLate": false,
             "pickOwnsBridge": false,
-            "pickPhaseCount": 3,
+            "pickPhaseCount": 2,
             "lowPickConversion": true,
             "quietPick": false,
             "lineupGap": 0,
@@ -17886,17 +18452,17 @@
             "projectedHitEdge": 0
           }
         },
-        "summary": "Clean phase stack: Full-game side if price is fair. Reality-gap 34.2/100. Main checks: 69°F | Wind 9 mph L-R | 0% precip.",
+        "summary": "Starter-to-bullpen flip: Mariners first-five side. Reality-gap 53.6/100. Main checks: 69°F | Wind 9 mph L-R | 0% precip.",
         "pickTeam": "Mariners",
         "opponentTeam": "Tigers",
         "scores": {
           "chaosScore": 38.8,
           "deadEarlyScore": 8.5,
-          "phaseSplitScore": 24,
+          "phaseSplitScore": 64,
           "bullpenFlipScore": 28.3,
-          "starterControlScore": 17.4,
+          "starterControlScore": 20.2,
           "marketContradictionScore": 29.6,
-          "realityGapScore": 34.2
+          "realityGapScore": 53.6
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -17910,8 +18476,8 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 10,
-              "pickScore": 10,
+              "gameScore": 10.2,
+              "pickScore": 10.2,
               "opponentScore": 9.8
             },
             {
@@ -17950,9 +18516,9 @@
               "id": "flow",
               "label": "Flow",
               "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-              "gameScore": 76,
-              "pickScore": 100,
-              "opponentScore": 0
+              "gameScore": 36,
+              "pickScore": 66.7,
+              "opponentScore": 33.3
             }
           ],
           "profiles": [
@@ -17960,26 +18526,26 @@
               "role": "pick",
               "team": "Mariners",
               "scores": {
-                "pressure": 10,
+                "pressure": 10.2,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
                 "bridge": 0.8,
-                "flow": 100
+                "flow": 66.7
               },
               "polygon": [
-                10,
+                10.2,
                 0,
                 0,
                 0,
                 0.8,
-                100
+                66.7
               ],
-              "phaseOwnershipPct": 100,
+              "phaseOwnershipPct": 66.7,
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 55.6,
+                "starterScore": 56.8,
                 "bullpenScore": 68,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17998,7 +18564,7 @@
                 "freeze": 0,
                 "air": 0,
                 "bridge": 4.3,
-                "flow": 0
+                "flow": 33.3
               },
               "polygon": [
                 9.8,
@@ -18006,9 +18572,9 @@
                 0,
                 0,
                 4.3,
-                0
+                33.3
               ],
-              "phaseOwnershipPct": 0,
+              "phaseOwnershipPct": 33.3,
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
@@ -18024,34 +18590,34 @@
             }
           ],
           "gameProfile": {
-            "label": "Clean phase stack",
-            "bestExpression": "Full-game side if price is fair",
+            "label": "Starter-to-bullpen flip",
+            "bestExpression": "Mariners first-five side",
             "scores": {
-              "pressure": 10,
+              "pressure": 10.2,
               "chaos": 38.8,
               "freeze": 8.5,
               "air": 0,
               "bridge": 28.3,
-              "flow": 76
+              "flow": 36
             },
             "polygon": [
-              10,
+              10.2,
               38.8,
               8.5,
               0,
               28.3,
-              76
+              36
             ],
             "dominantAxes": [
-              {
-                "id": "flow",
-                "label": "Flow",
-                "score": 76
-              },
               {
                 "id": "chaos",
                 "label": "Chaos",
                 "score": 38.8
+              },
+              {
+                "id": "flow",
+                "label": "Flow",
+                "score": 36
               },
               {
                 "id": "bridge",
@@ -18064,10 +18630,10 @@
         "phaseMap": {
           "fullGameTraffic": "Mariners",
           "first5": "Mariners",
-          "late": "Mariners",
+          "late": "Tigers",
           "bridge": "",
-          "distinctPhaseTeams": 1,
-          "pickPhaseMisses": 0
+          "distinctPhaseTeams": 2,
+          "pickPhaseMisses": 1
         },
         "metrics": {
           "maxMistakeChaos": null,
@@ -18085,8 +18651,8 @@
           "69°F | Wind 9 mph L-R | 0% precip"
         ],
         "laneMap": {
-          "side": "Allowed if price is fair and lineup card is intact.",
-          "first5": "Use only if starter and top-order pressure agree.",
+          "side": "Secondary to the named lane.",
+          "first5": "Primary lane.",
           "total": "Needs line-specific EV.",
           "firstInning": "Advisory only.",
           "live": "Use price discipline."
@@ -18094,35 +18660,35 @@
         "inningMap": [
           {
             "innings": "1-2",
-            "expectation": "Mariners should create traffic without needing immediate chaos.",
-            "watch": "If the first six outs are empty, reduce side exposure."
+            "expectation": "Mariners can look right early even if full-game ML is fragile.",
+            "watch": "Entry belongs to F5 or live lead, not blind FG."
           },
           {
             "innings": "3-5",
-            "expectation": "Starter and lineup edges should still point the same way.",
-            "watch": "Any early starter command loss breaks the stack."
+            "expectation": "This is the main scoring window for the pick.",
+            "watch": "If the pick trails after five, the original read is mostly gone."
           },
           {
             "innings": "6-7",
-            "expectation": "Bridge should protect the original side.",
-            "watch": "Watch inherited traffic, not just runs."
+            "expectation": "Tigers can re-enter through the bridge.",
+            "watch": "Expect hedge or live reversal pressure here."
           },
           {
             "innings": "8-9",
-            "expectation": "Late bullpen should close without needing a comeback.",
-            "watch": "If the game is tied, price beats confidence."
+            "expectation": "Late innings are not aligned with the pregame side.",
+            "watch": "Do not confuse early control with full-game safety."
           }
         ],
         "marketImplications": {
-          "side": "Mariners is more coherent as a side because the game shape mostly agrees with the projection.",
-          "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
+          "side": "Do not treat Mariners as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
+          "first5": "First-five may be cleaner than full game if the starter-window edge is on the pick and the late edge flips.",
           "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 56.9% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 56.8% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 26.9,
+          "impactScore": 31.6,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -18160,11 +18726,11 @@
         "pickSide": "away",
         "pickTeam": "Mariners",
         "awayProjectedRuns": 3.3,
-        "homeProjectedRuns": 3.2,
-        "awayLeadProbability": 43.5,
-        "homeLeadProbability": 40.5,
-        "pushProbability": 16,
-        "leadProbability": 43.5,
+        "homeProjectedRuns": 3,
+        "awayLeadProbability": 46.6,
+        "homeLeadProbability": 37.3,
+        "pushProbability": 16.1,
+        "leadProbability": 46.6,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -18259,10 +18825,10 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
-        "confidence": 82,
-        "probability": 90.9,
+        "confidence": 68,
+        "probability": 90.5,
         "expectedValue": 2.4,
-        "statValueLabel": "2.40 exp RBI",
+        "statValueLabel": "2.35 exp RBI",
         "sample": {
           "seasonGames": 42,
           "seasonPlateAppearances": 135,
@@ -18299,7 +18865,7 @@
           "trackingPenalty": 18,
           "reason": "repeatable career power"
         },
-        "recommendationTier": "Core",
+        "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 1 carry | process improving; approach 60.2/100 | recent form up | split fit live",
@@ -18319,6 +18885,154 @@
         "teamScriptLabel": "",
         "lineupStatus": "posted",
         "playerSummary": ".237 AVG | .811 OPS | 28 H | 8 HR | 10g: .375 AVG | 1.201 OPS | 12 H | 4 HR | vs RHP: .248 AVG | .847 OPS | 8 HR | career 1452 PA | .822 OPS | 76 HR | repeatable career power | power 86 | 2026 sample ok | arsenal 4-Seam Fastball 45% / Slider 26% / Sinker 17% | fit +4.0 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "mariners-tigers:650402:runs",
+        "gameId": "mariners-tigers",
+        "gameTitle": "Mariners @ Tigers",
+        "league": "MLB",
+        "playerId": 650402,
+        "playerName": "Gleyber Torres",
+        "teamName": "Tigers",
+        "slot": 3,
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 72,
+        "probability": 90.2,
+        "expectedValue": 2.3,
+        "statValueLabel": "2.33 exp runs",
+        "sample": {
+          "seasonGames": 36,
+          "seasonPlateAppearances": 162,
+          "recentGames": 8,
+          "recentPlateAppearances": 36,
+          "statcastGames": 3,
+          "statcastPlateAppearances": 14,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 4445,
+          "seasonPa": 162,
+          "powerIndex": 55.46,
+          "contactRisk": 38.27,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 53.4,
+            "processScore": 8,
+            "careerWeight": 0.1,
+            "identityDelta": -8,
+            "tbDelta": -0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "baseline approach",
+            "seasonPa": 162,
+            "careerPa": 4445
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 3 carry | recent form up | split fit live | run-scoring slot",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "baseline-approach",
+          "run-scoring-slot",
+          "statcast-power-up",
+          "statcast-contact-up"
+        ],
+        "matchupNote": "+10.00 vs Luis Castillo",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".278 AVG | .771 OPS | 37 H | 3 HR | 8g: .412 AVG | 1.150 OPS | 14 H | 2 HR | vs RHP: .327 AVG | .812 OPS | 2 HR | career 4445 PA | .769 OPS | 156 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal 4-Seam Fastball 45% / Slider 26% / Sinker 17% | fit +4.4 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "mariners-tigers:686527:hitRunRbi",
+        "gameId": "mariners-tigers",
+        "gameTitle": "Mariners @ Tigers",
+        "league": "MLB",
+        "playerId": 686527,
+        "playerName": "Dominic Canzone",
+        "teamName": "Mariners",
+        "slot": 6,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
+        "confidence": 82,
+        "probability": 95.9,
+        "expectedValue": 5,
+        "statValueLabel": "2.03 H · 1.05 R · 1.89 RBI · 4.97 total",
+        "sample": {
+          "seasonGames": 56,
+          "seasonPlateAppearances": 155,
+          "recentGames": 12,
+          "recentPlateAppearances": 36,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 18,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 780,
+          "seasonPa": 155,
+          "powerIndex": 70.14,
+          "contactRisk": 45.43,
+          "roleStability": 100,
+          "label": "repeatable career power",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 78.2,
+            "processScore": 18,
+            "careerWeight": 0.1,
+            "identityDelta": 6.9,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 155,
+            "careerPa": 780
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "repeatable career power"
+        },
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 6 carry | recent form up | split fit live | combined hits/runs/RBI lane",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "deep-lineup",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "combined-production-lane",
+          "statcast-power-up"
+        ],
+        "matchupNote": "+10.00 vs Jack Flaherty",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".275 AVG | .871 OPS | 38 H | 8 HR | 12g: .529 AVG | 1.497 OPS | 18 H | 4 HR | vs RHP: .287 AVG | .896 OPS | 8 HR | career 780 PA | .749 OPS | 32 HR | repeatable career power | power 70 | 2026 sample ok | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +9.6 | +10.0 matchup grade in a whiff-variance lane"
       },
       {
         "id": "mariners-tigers:686527:totalBases",
@@ -18409,9 +19123,9 @@
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
         "confidence": 77,
-        "probability": 68.1,
-        "expectedValue": 2.4,
-        "statValueLabel": "2.35 exp hits",
+        "probability": 67.7,
+        "expectedValue": 2.3,
+        "statValueLabel": "2.34 exp hits",
         "sample": {
           "seasonGames": 36,
           "seasonPlateAppearances": 162,
@@ -18481,10 +19195,10 @@
         "propType": "walks",
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
-        "confidence": 69,
-        "probability": 58.2,
-        "expectedValue": 0.9,
-        "statValueLabel": "0.87 exp walks",
+        "confidence": 68,
+        "probability": 56.9,
+        "expectedValue": 0.8,
+        "statValueLabel": "0.84 exp walks",
         "sample": {
           "seasonGames": 36,
           "seasonPlateAppearances": 162,
@@ -18618,162 +19332,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "posted",
         "playerSummary": ".295 AVG | .799 OPS | 13 H | 2 HR | 8g: .500 AVG | 1.248 OPS | 14 H | 2 HR | vs RHP: .294 AVG | .716 OPS | 1 HR | career 156 PA | .606 OPS | 1 HR | baseline career profile | power 14 | shallow 2026 sample | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +5.0 | +10.0 matchup grade in a whiff-variance lane"
-      },
-      {
-        "id": "mariners-tigers:686527:rbi",
-        "gameId": "mariners-tigers",
-        "gameTitle": "Mariners @ Tigers",
-        "league": "MLB",
-        "playerId": 686527,
-        "playerName": "Dominic Canzone",
-        "teamName": "Mariners",
-        "slot": 6,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 82,
-        "probability": 90,
-        "expectedValue": 2.3,
-        "statValueLabel": "2.31 exp RBI",
-        "sample": {
-          "seasonGames": 56,
-          "seasonPlateAppearances": 155,
-          "recentGames": 12,
-          "recentPlateAppearances": 36,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 18,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 780,
-          "seasonPa": 155,
-          "powerIndex": 70.14,
-          "contactRisk": 45.43,
-          "roleStability": 100,
-          "label": "repeatable career power",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": true,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 78.2,
-            "processScore": 18,
-            "careerWeight": 0.1,
-            "identityDelta": 6.9,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 155,
-            "careerPa": 780
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "repeatable career power"
-        },
-        "recommendationTier": "Core",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 6 carry | process improving; approach 78.2/100 | recent form up | split fit live",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "middle-order-traffic",
-          "deep-lineup",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "statcast-power-up"
-        ],
-        "matchupNote": "+10.00 vs Jack Flaherty",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".275 AVG | .871 OPS | 38 H | 8 HR | 12g: .529 AVG | 1.497 OPS | 18 H | 4 HR | vs RHP: .287 AVG | .896 OPS | 8 HR | career 780 PA | .749 OPS | 32 HR | repeatable career power | power 70 | 2026 sample ok | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +9.6 | +10.0 matchup grade in a whiff-variance lane"
-      },
-      {
-        "id": "mariners-tigers:693307:rbi",
-        "gameId": "mariners-tigers",
-        "gameTitle": "Mariners @ Tigers",
-        "league": "MLB",
-        "playerId": 693307,
-        "playerName": "Dillon Dingler",
-        "teamName": "Tigers",
-        "slot": 5,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 82,
-        "probability": 89.3,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.23 exp RBI",
-        "sample": {
-          "seasonGames": 58,
-          "seasonPlateAppearances": 239,
-          "recentGames": 10,
-          "recentPlateAppearances": 46,
-          "statcastGames": 5,
-          "statcastPlateAppearances": 23,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 773,
-          "seasonPa": 239,
-          "powerIndex": 58.19,
-          "contactRisk": 49.25,
-          "roleStability": 96,
-          "label": "baseline career profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 82.1,
-            "processScore": 21,
-            "careerWeight": 0.1,
-            "identityDelta": 8.1,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 239,
-            "careerPa": 773
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "baseline career profile"
-        },
-        "recommendationTier": "Core",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 5 carry | process improving; approach 82.1/100 | recent form up | split fit live",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "middle-order-traffic",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "process-improving",
-          "run-production-slot",
-          "statcast-power-up",
-          "statcast-contact-up",
-          "statcast-hr-carry"
-        ],
-        "matchupNote": "+10.00 vs Luis Castillo",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".238 AVG | .816 OPS | 50 H | 14 HR | 10g: .350 AVG | 1.241 OPS | 14 H | 6 HR | vs RHP: .268 AVG | .895 OPS | 11 HR | career 773 PA | .730 OPS | 25 HR | baseline career profile | power 58 | 2026 sample ok | arsenal 4-Seam Fastball 45% / Slider 26% / Sinker 17% | fit +7.6 | +10.0 matchup grade in a traffic-risk lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 64,
+    "candidateCount": 88,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

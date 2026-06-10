@@ -2415,7 +2415,7 @@ const buildSeriesEarlyPhaseByTeam = ({ date, games, lookbackDays = 5, limit = 3 
   )
 }
 
-const buildMatchupInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 12 }) => {
+const buildMatchupInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 15 }) => {
   const matchupPairs = [
     ...new Map(
       games
@@ -2443,7 +2443,7 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 10, maxInnings =
     `with matchup_pairs as (
       ${matchupPairRows}
     ),
-    ranked_games as (
+    base_games as (
       select
         mp.pair_key,
         g.mlb_game_pk as game_pk,
@@ -2452,11 +2452,7 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 10, maxInnings =
         away.name as away_team,
         home.name as home_team,
         go.away_runs as away_runs_final,
-        go.home_runs as home_runs_final,
-        row_number() over (
-          partition by mp.pair_key
-          order by coalesce(g.start_time_utc, g.game_date) desc, g.mlb_game_pk desc
-        ) as rn
+        go.home_runs as home_runs_final
       from matchup_pairs mp
       join games g on 1 = 1
       join teams away on away.team_id = g.away_team_id
@@ -2470,6 +2466,24 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 10, maxInnings =
           or
           (away.name = mp.team_b and home.name = mp.team_a)
         )
+      group by
+        mp.pair_key,
+        g.mlb_game_pk,
+        g.game_date,
+        g.start_time_utc,
+        away.name,
+        home.name,
+        go.away_runs,
+        go.home_runs
+    ),
+    ranked_games as (
+      select
+        *,
+        row_number() over (
+          partition by pair_key
+          order by coalesce(game_datetime, game_date) desc, game_pk desc
+        ) as rn
+      from base_games
     ),
     selected_games as (
       select *
@@ -2634,7 +2648,7 @@ const buildMatchupInningHistoryByTeam = ({ date, games, limit = 10, maxInnings =
   )
 }
 
-const buildRecentInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 12 }) => {
+const buildRecentInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 15 }) => {
   const teams = [...new Set(games.flatMap((game) => [game.away, game.home]).filter(Boolean))]
 
   if (!teams.length) return {}
@@ -2664,6 +2678,29 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 
       where team.name in (${quotedTeams})
         and tgs.game_date < '${date}'
     ),
+    base_team_games as (
+      select
+        game_pk,
+        game_date,
+        game_datetime,
+        team_name,
+        opponent_name,
+        venue_role,
+        runs_for,
+        runs_against,
+        result
+      from recent_team_games
+      group by
+        game_pk,
+        game_date,
+        game_datetime,
+        team_name,
+        opponent_name,
+        venue_role,
+        runs_for,
+        runs_against,
+        result
+    ),
     ranked_games as (
       select
         *,
@@ -2671,7 +2708,7 @@ const buildRecentInningHistoryByTeam = ({ date, games, limit = 10, maxInnings = 
           partition by team_name
           order by coalesce(game_datetime, game_date) desc, game_pk desc
         ) as rn
-      from recent_team_games
+      from base_team_games
     ),
     selected_games as (
       select *

@@ -37,8 +37,8 @@ This pass tests the exact hidden-edge idea that game-to-game state matters more 
 | Window | Predictions | Hit rate | Avg edge | Avg confidence |
 | --- | --- | --- | --- | --- |
 | Reserve (`05-10` to `05-15`) | 75 | 0.653 | 6.3 | 58.5 |
-| Current (`05-16` to `05-22`) | 93 | 0.581 | 6.6 | 57.4 |
-| Combined | 168 | 0.613 | 6.4 | 57.9 |
+| Current (`05-16` to `05-22`) | 93 | 0.613 | 3.4 | 54.1 |
+| Combined | 168 | 0.631 | 4.7 | 56.0 |
 
 ### Opponent snapback trap
 
@@ -47,8 +47,8 @@ Pass if `pointEdge >= 8 && opponent snapback >= 50 && opponent loss streak >= 2`
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
 | Reserve | 67 | 0.687 | 8 | 0.375 |
-| Current | 80 | 0.588 | 13 | 0.538 |
-| Combined | 147 | 0.633 | 21 | 0.476 |
+| Current | 89 | 0.629 | 4 | 0.250 |
+| Combined | 156 | 0.654 | 12 | 0.333 |
 
 Note: This tests the exact idea that the market/model may keep fading a team well past the point where bounceback pressure is real.
 
@@ -59,8 +59,8 @@ Pass if `pointEdge >= 8 && pick heat regression >= 45 && pick win streak >= 2`
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
 | Reserve | 73 | 0.671 | 2 | 0.000 |
-| Current | 85 | 0.565 | 8 | 0.750 |
-| Combined | 158 | 0.614 | 10 | 0.600 |
+| Current | 92 | 0.609 | 1 | 1.000 |
+| Combined | 165 | 0.636 | 3 | 0.333 |
 
 Note: This is the inverse: the model may keep buying a hot team after the carry profile is already starting to wobble.
 
@@ -71,8 +71,8 @@ Pass if `pointEdge >= 8 && pick top-6 pressure >= 40 && pick top-6 cold >= 45`
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
 | Reserve | 74 | 0.649 | 1 | 1.000 |
-| Current | 90 | 0.578 | 3 | 0.667 |
-| Combined | 164 | 0.610 | 4 | 0.750 |
+| Current | 91 | 0.615 | 2 | 0.500 |
+| Combined | 165 | 0.630 | 3 | 0.667 |
 
 Note: This checks whether strong-looking team edges are actually sitting on a stressed top of the order.
 
@@ -83,8 +83,8 @@ Pass if `pointEdge >= 10 && series game = 2 && pick form pressure >= 55`
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
 | Reserve | 75 | 0.653 | 0 | 0.000 |
-| Current | 93 | 0.581 | 0 | 0.000 |
-| Combined | 168 | 0.613 | 0 | 0.000 |
+| Current | 93 | 0.613 | 0 | 0.000 |
+| Combined | 168 | 0.631 | 0 | 0.000 |
 
 Note: This is the first direct attempt to catch the "same series, different state" problem.
 
@@ -95,8 +95,8 @@ Pass if snapback/regression pressure and batter/series pressure are both live
 | Window | Kept | Kept hit rate | Passed | Passed hit rate |
 | --- | --- | --- | --- | --- |
 | Reserve | 74 | 0.649 | 1 | 1.000 |
-| Current | 93 | 0.581 | 0 | 0.000 |
-| Combined | 167 | 0.611 | 1 | 1.000 |
+| Current | 93 | 0.613 | 0 | 0.000 |
+| Combined | 167 | 0.629 | 1 | 1.000 |
 
 Note: This is the multi-state version of the hidden edge idea: the numeric edge looks good, but the game-to-game state is against it.
 
@@ -104,12 +104,12 @@ Note: This is the multi-state version of the hidden edge idea: the numeric edge 
 
 | Edge cut | Confidence cut | Score | Reserve `10+` delta | Reserve `60+` delta | Current `10+` delta | Current `60+` delta | Combined `10+` delta | Combined `60+` delta |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| -5.0 | -10 | 0.190 | -0.024 | 0.022 | 0.107 | 0.013 | 0.037 | 0.018 |
-| -5.0 | -6 | 0.109 | -0.024 | 0.022 | 0.107 | 0.000 | 0.037 | 0.012 |
-| -5.0 | -8 | 0.109 | -0.024 | 0.022 | 0.107 | 0.000 | 0.037 | 0.012 |
-| -5.0 | -4 | 0.063 | -0.024 | 0.000 | 0.107 | 0.000 | 0.037 | 0.000 |
-| -3.0 | -10 | -0.034 | -0.029 | 0.022 | 0.050 | 0.013 | 0.000 | 0.018 |
-| -4.0 | -10 | -0.093 | -0.062 | 0.022 | 0.050 | 0.013 | -0.012 | 0.018 |
+| -5.0 | -10 | 0.193 | -0.024 | 0.022 | 0.114 | 0.041 | 0.023 | 0.029 |
+| -5.0 | -6 | 0.048 | -0.024 | 0.022 | 0.114 | 0.000 | 0.023 | 0.014 |
+| -5.0 | -8 | 0.048 | -0.024 | 0.022 | 0.114 | 0.000 | 0.023 | 0.014 |
+| -5.0 | -4 | -0.001 | -0.024 | 0.000 | 0.114 | 0.000 | 0.023 | 0.000 |
+| -2.0 | -10 | -0.108 | -0.029 | 0.022 | 0.025 | 0.041 | -0.012 | 0.029 |
+| -3.0 | -10 | -0.108 | -0.029 | 0.022 | 0.025 | 0.041 | -0.012 | 0.029 |
 
 ## Soft Haircut Grid For The Combined Stateful Trap
 

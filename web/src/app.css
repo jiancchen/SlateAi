@@ -4554,6 +4554,108 @@ h3 {
   color: var(--heading);
 }
 
+.inning-run-matrix-panel {
+  display: grid;
+  gap: 10px;
+}
+
+.inning-run-matrix-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.inning-run-matrix {
+  width: 100%;
+  min-width: 1180px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.inning-run-matrix th,
+.inning-run-matrix td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 9px 8px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.inning-run-matrix th:last-child,
+.inning-run-matrix td:last-child {
+  border-right: 0;
+}
+
+.inning-run-matrix tr:last-child th,
+.inning-run-matrix tr:last-child td {
+  border-bottom: 0;
+}
+
+.inning-run-matrix thead th,
+.inning-run-matrix tbody th {
+  width: 86px;
+  color: var(--heading);
+  background: rgba(10, 10, 11, 0.54);
+  font: 700 0.72rem/1.1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.inning-run-matrix thead th:not(:first-child) {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.inning-run-matrix td {
+  color: var(--text-soft);
+}
+
+.inning-run-matrix td strong {
+  display: block;
+  color: var(--heading);
+  font-size: 0.92rem;
+  line-height: 1.15;
+}
+
+.inning-run-matrix td small,
+.inning-run-matrix td span {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.inning-run-matrix td.hot {
+  background: rgba(82, 214, 179, 0.08);
+}
+
+.inning-run-matrix td.hot strong {
+  color: var(--accent);
+}
+
+.inning-run-matrix td.quiet {
+  background: rgba(128, 158, 255, 0.08);
+}
+
+.inning-run-matrix td.quiet strong {
+  color: #b8c6ff;
+}
+
+.inning-run-matrix td.strong {
+  box-shadow: inset 0 0 0 1px rgba(82, 214, 179, 0.22);
+}
+
+.inning-run-matrix td.reason {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.inning-run-matrix td.reason small {
+  color: #ffd38b;
+}
+
 .totals-card > span,
 .team-script-head span {
   color: var(--warning);
@@ -4648,6 +4750,52 @@ h3 {
   text-transform: uppercase;
 }
 
+.shadow-calibration-badge {
+  display: block;
+  flex: 1 0 100%;
+  order: 3;
+  margin-top: 7px;
+  padding-top: 7px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  color: var(--muted);
+  font-size: 0.66rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.tennis-value-row .shadow-calibration-badge span {
+  display: inline-flex;
+  width: auto;
+  min-width: 0;
+  margin-right: 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 6px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.035);
+  font: 800 0.58rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.shadow-calibration-badge.promoted span {
+  border-color: rgba(79, 210, 166, 0.5);
+  color: var(--accent);
+  background: rgba(79, 210, 166, 0.11);
+}
+
+.shadow-calibration-badge.watch span {
+  border-color: rgba(236, 179, 94, 0.46);
+  color: var(--warning);
+  background: rgba(236, 179, 94, 0.1);
+}
+
+.shadow-calibration-badge.research span {
+  border-color: rgba(123, 144, 170, 0.42);
+  color: #aeb8c6;
+  background: rgba(123, 144, 170, 0.1);
+}
+
 .tennis-value-pill-row {
   display: flex;
   flex-wrap: wrap;
@@ -4740,12 +4888,55 @@ h3 {
   color: inherit;
   text-align: left;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 
 .tennis-value-row:hover,
 .tennis-value-row:focus-visible {
   border-color: rgba(79, 210, 166, 0.35);
   outline: none;
+}
+
+.tennis-value-row.hit {
+  border-color: rgba(79, 210, 166, 0.6);
+  background: rgba(79, 210, 166, 0.13);
+}
+
+.tennis-value-row.hit strong {
+  color: #eafff8;
+}
+
+.tennis-value-row.miss {
+  border-color: rgba(224, 122, 95, 0.62);
+  background: rgba(224, 122, 95, 0.13);
+}
+
+.tennis-value-row.miss strong {
+  color: #fff0eb;
+}
+
+.tennis-value-row.push {
+  border-color: rgba(236, 179, 94, 0.45);
+  background: rgba(236, 179, 94, 0.1);
+}
+
+.value-row-result {
+  display: inline-block;
+  margin-top: 3px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.value-row-result.hit {
+  color: var(--accent);
+}
+
+.value-row-result.miss {
+  color: var(--danger);
+}
+
+.value-row-result.push {
+  color: var(--warning);
 }
 
 .tennis-value-row.muted {
@@ -4768,6 +4959,11 @@ h3 {
   gap: 3px;
 }
 
+.tennis-value-row > span:first-of-type {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
 .tennis-value-row strong {
   color: var(--heading);
   font-size: 0.82rem;
@@ -4779,7 +4975,8 @@ h3 {
   line-height: 1.3;
 }
 
-.tennis-value-row span:last-child {
+.tennis-value-row > span:last-of-type {
+  flex: 0 0 auto;
   min-width: 58px;
   text-align: right;
 }

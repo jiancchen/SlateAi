@@ -207,6 +207,94 @@ STATIC_VIEW_SQL = {
     left join players batter on batter.player_id = pa.batter_id
     left join players pitcher on pitcher.player_id = pa.pitcher_id;
     """,
+    "mlb_game_outcomes": """
+    create view "mlb_game_outcomes" as
+    select
+      g.mlb_game_pk as game_pk,
+      g.game_date,
+      away.name as away_team,
+      home.name as home_team,
+      go.away_runs as away_runs_final,
+      go.home_runs as home_runs_final,
+      go.away_hits as away_hits_final,
+      go.home_hits as home_hits_final,
+      go.away_home_runs as away_home_runs_final,
+      go.home_home_runs as home_home_runs_final,
+      go.f5_away_runs as away_runs_first5,
+      go.f5_home_runs as home_runs_first5,
+      go.away_hits_first5 as away_hits_first5,
+      go.home_hits_first5 as home_hits_first5,
+      go.away_home_runs_first5 as away_home_runs_first5,
+      go.home_home_runs_first5 as home_home_runs_first5,
+      go.home_full_game_result,
+      go.home_first5_result,
+      go.home_bullpen_run_diff,
+      go.total_runs as total_runs_final,
+      go.f5_total_runs as total_runs_first5,
+      case
+        when go.home_runs > go.away_runs then 1
+        when go.home_runs < go.away_runs then -1
+        else 0
+      end as home_full_game_run_diff,
+      case
+        when go.f5_home_runs > go.f5_away_runs then 1
+        when go.f5_home_runs < go.f5_away_runs then -1
+        else 0
+      end as home_first5_run_diff,
+      go.source_detail_json as raw_json,
+      go.source_pk as _legacy_source_pk,
+      g.game_date as _legacy_source_date,
+      null as _legacy_content_hash,
+      go.updated_at as _legacy_migrated_at
+    from game_outcomes go
+    join games g on g.game_id = go.game_id
+    join teams away on away.team_id = g.away_team_id
+    join teams home on home.team_id = g.home_team_id;
+    """,
+    "mlb_game_team_stats": """
+    create view "mlb_game_team_stats" as
+    select
+      g.mlb_game_pk as game_pk,
+      tgs.game_date,
+      team.name as team_name,
+      opponent.name as opponent_name,
+      tgs.team_role,
+      tgs.result as full_game_result,
+      tgs.first5_result,
+      tgs.runs_scored,
+      tgs.runs_allowed,
+      tgs.runs_scored_first5,
+      tgs.runs_allowed_first5,
+      coalesce(tgs.bullpen_runs_scored, 0) as bullpen_runs_scored,
+      coalesce(tgs.bullpen_runs_allowed, 0) as bullpen_runs_allowed,
+      tgs.hits,
+      tgs.hits_first5,
+      tgs.hits_allowed,
+      tgs.hits_allowed_first5,
+      tgs.home_runs,
+      tgs.home_runs_first5,
+      tgs.home_runs_allowed,
+      tgs.home_runs_allowed_first5,
+      tgs.at_bats,
+      tgs.at_bats_first5,
+      tgs.plate_appearances,
+      tgs.plate_appearances_first5,
+      tgs.walks,
+      tgs.walks_allowed,
+      tgs.strikeouts,
+      tgs.strikeouts_recorded,
+      tgs.total_bases,
+      tgs.left_on_base,
+      tgs.source_detail_json as raw_json,
+      tgs.source_pk as _legacy_source_pk,
+      tgs.game_date as _legacy_source_date,
+      null as _legacy_content_hash,
+      tgs.created_at as _legacy_migrated_at
+    from team_game_stats tgs
+    join games g on g.game_id = tgs.game_id
+    left join teams team on team.team_id = tgs.team_id
+    left join teams opponent on opponent.team_id = tgs.opponent_team_id;
+    """,
 }
 
 WRITABLE_LEGACY_TABLE_SQL = {

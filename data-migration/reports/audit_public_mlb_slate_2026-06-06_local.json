@@ -2,10 +2,10 @@
   "audit": "public-mlb-slate",
   "date": "2026-06-06",
   "baseUrl": null,
-  "generatedAt": "2026-06-06T16:45:49.733Z",
+  "generatedAt": "2026-06-09T21:05:40.883Z",
   "summary": {
-    "totalGames": 15,
-    "mlbGames": 15,
+    "totalGames": 14,
+    "mlbGames": 14,
     "nonMlbGames": 0
   },
   "games": [
@@ -22,8 +22,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -38,8 +38,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -55,8 +54,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -71,8 +70,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -88,8 +86,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -104,8 +102,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -121,8 +118,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -137,8 +134,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -154,8 +150,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -170,8 +166,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -187,8 +182,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -203,8 +198,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -220,8 +214,8 @@
       "pitchFits": 9,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -237,8 +231,7 @@
       "failures": [
         "missing-pitch-fit",
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -254,8 +247,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -270,8 +263,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -287,8 +279,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -303,8 +295,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -320,8 +311,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -336,8 +327,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -353,8 +343,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 17,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -369,41 +359,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
-      ]
-    },
-    {
-      "id": "red-sox-yankees",
-      "title": "Red Sox @ Yankees",
-      "players": 18,
-      "awayPlayers": 9,
-      "homePlayers": 9,
-      "summaries": 18,
-      "savantLinks": 18,
-      "matchupGrades": 18,
-      "splitRows": 18,
-      "pitchFits": 18,
-      "xwobaBubbles": 18,
-      "starterSplitStatuses": [
-        "",
-        ""
-      ],
-      "hasBridgeChain": false,
-      "hasRelieverShadow": false,
-      "hasParkContext": true,
-      "hasFirstFive": true,
-      "hasFirstFivePush": true,
-      "hasDraftKingsBoard": true,
-      "hasDraftKingsFullGameLines": true,
-      "hasDraftKingsFirstFiveLines": true,
-      "first5TotalLineSource": "posted",
-      "hasMoneylineShape": true,
-      "hasFirstInning": true,
-      "failures": [
-        "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -419,8 +375,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -435,8 +391,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -452,8 +407,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -468,8 +423,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     },
     {
@@ -485,8 +439,8 @@
       "pitchFits": 18,
       "xwobaBubbles": 18,
       "starterSplitStatuses": [
-        "",
-        ""
+        "fetched",
+        "fetched"
       ],
       "hasBridgeChain": false,
       "hasRelieverShadow": false,
@@ -501,8 +455,7 @@
       "hasFirstInning": true,
       "failures": [
         "missing-bridge-chain",
-        "missing-rp36-shadow",
-        "missing-espn-pitcher-splits"
+        "missing-rp36-shadow"
       ]
     }
   ],
@@ -528,21 +481,21 @@
     ]
   },
   "valueBoard": {
-    "moneylineRows": 15,
-    "first5MoneylineRows": 13,
-    "first5TotalRows": 15,
-    "firstInningRows": 15,
-    "fullGameTotalRows": 15,
+    "moneylineRows": 14,
+    "first5MoneylineRows": 9,
+    "first5TotalRows": 14,
+    "firstInningRows": 14,
+    "fullGameTotalRows": 14,
     "totalBaseRows": 67,
     "pitcherStrikeoutRows": 14,
-    "gameCount": 15
+    "gameCount": 14
   },
   "draftKingsLineCoverage": {
     "expectedGames": 12,
-    "boardGames": 12,
-    "fullGameLineGames": 12,
-    "firstFiveLineGames": 12,
-    "postedFirst5TotalGames": 12
+    "boardGames": 11,
+    "fullGameLineGames": 11,
+    "firstFiveLineGames": 11,
+    "postedFirst5TotalGames": 11
   },
   "hardFailures": [
     {
@@ -556,11 +509,6 @@
       "failure": "missing-rp36-shadow"
     },
     {
-      "gameId": "mariners-tigers",
-      "title": "Mariners @ Tigers",
-      "failure": "missing-espn-pitcher-splits"
-    },
-    {
       "gameId": "royals-twins",
       "title": "Royals @ Twins",
       "failure": "missing-bridge-chain"
@@ -569,11 +517,6 @@
       "gameId": "royals-twins",
       "title": "Royals @ Twins",
       "failure": "missing-rp36-shadow"
-    },
-    {
-      "gameId": "royals-twins",
-      "title": "Royals @ Twins",
-      "failure": "missing-espn-pitcher-splits"
     },
     {
       "gameId": "reds-cardinals",
@@ -586,11 +529,6 @@
       "failure": "missing-rp36-shadow"
     },
     {
-      "gameId": "reds-cardinals",
-      "title": "Reds @ Cardinals",
-      "failure": "missing-espn-pitcher-splits"
-    },
-    {
       "gameId": "giants-cubs",
       "title": "Giants @ Cubs",
       "failure": "missing-bridge-chain"
@@ -599,11 +537,6 @@
       "gameId": "giants-cubs",
       "title": "Giants @ Cubs",
       "failure": "missing-rp36-shadow"
-    },
-    {
-      "gameId": "giants-cubs",
-      "title": "Giants @ Cubs",
-      "failure": "missing-espn-pitcher-splits"
     },
     {
       "gameId": "orioles-blue-jays",
@@ -616,11 +549,6 @@
       "failure": "missing-rp36-shadow"
     },
     {
-      "gameId": "orioles-blue-jays",
-      "title": "Orioles @ Blue Jays",
-      "failure": "missing-espn-pitcher-splits"
-    },
-    {
       "gameId": "white-sox-phillies",
       "title": "White Sox @ Phillies",
       "failure": "missing-bridge-chain"
@@ -629,11 +557,6 @@
       "gameId": "white-sox-phillies",
       "title": "White Sox @ Phillies",
       "failure": "missing-rp36-shadow"
-    },
-    {
-      "gameId": "white-sox-phillies",
-      "title": "White Sox @ Phillies",
-      "failure": "missing-espn-pitcher-splits"
     },
     {
       "gameId": "athletics-astros",
@@ -651,11 +574,6 @@
       "failure": "missing-rp36-shadow"
     },
     {
-      "gameId": "athletics-astros",
-      "title": "Athletics @ Astros",
-      "failure": "missing-espn-pitcher-splits"
-    },
-    {
       "gameId": "nationals-diamondbacks",
       "title": "Nationals @ Diamondbacks",
       "failure": "missing-bridge-chain"
@@ -664,11 +582,6 @@
       "gameId": "nationals-diamondbacks",
       "title": "Nationals @ Diamondbacks",
       "failure": "missing-rp36-shadow"
-    },
-    {
-      "gameId": "nationals-diamondbacks",
-      "title": "Nationals @ Diamondbacks",
-      "failure": "missing-espn-pitcher-splits"
     },
     {
       "gameId": "pirates-braves",
@@ -681,11 +594,6 @@
       "failure": "missing-rp36-shadow"
     },
     {
-      "gameId": "pirates-braves",
-      "title": "Pirates @ Braves",
-      "failure": "missing-espn-pitcher-splits"
-    },
-    {
       "gameId": "rays-marlins",
       "title": "Rays @ Marlins",
       "failure": "missing-bridge-chain"
@@ -694,11 +602,6 @@
       "gameId": "rays-marlins",
       "title": "Rays @ Marlins",
       "failure": "missing-rp36-shadow"
-    },
-    {
-      "gameId": "rays-marlins",
-      "title": "Rays @ Marlins",
-      "failure": "missing-espn-pitcher-splits"
     },
     {
       "gameId": "guardians-rangers",
@@ -711,26 +614,6 @@
       "failure": "missing-rp36-shadow"
     },
     {
-      "gameId": "guardians-rangers",
-      "title": "Guardians @ Rangers",
-      "failure": "missing-espn-pitcher-splits"
-    },
-    {
-      "gameId": "red-sox-yankees",
-      "title": "Red Sox @ Yankees",
-      "failure": "missing-bridge-chain"
-    },
-    {
-      "gameId": "red-sox-yankees",
-      "title": "Red Sox @ Yankees",
-      "failure": "missing-rp36-shadow"
-    },
-    {
-      "gameId": "red-sox-yankees",
-      "title": "Red Sox @ Yankees",
-      "failure": "missing-espn-pitcher-splits"
-    },
-    {
       "gameId": "brewers-rockies",
       "title": "Brewers @ Rockies",
       "failure": "missing-bridge-chain"
@@ -739,11 +622,6 @@
       "gameId": "brewers-rockies",
       "title": "Brewers @ Rockies",
       "failure": "missing-rp36-shadow"
-    },
-    {
-      "gameId": "brewers-rockies",
-      "title": "Brewers @ Rockies",
-      "failure": "missing-espn-pitcher-splits"
     },
     {
       "gameId": "angels-dodgers",
@@ -756,11 +634,6 @@
       "failure": "missing-rp36-shadow"
     },
     {
-      "gameId": "angels-dodgers",
-      "title": "Angels @ Dodgers",
-      "failure": "missing-espn-pitcher-splits"
-    },
-    {
       "gameId": "mets-padres",
       "title": "Mets @ Padres",
       "failure": "missing-bridge-chain"
@@ -771,9 +644,20 @@
       "failure": "missing-rp36-shadow"
     },
     {
-      "gameId": "mets-padres",
-      "title": "Mets @ Padres",
-      "failure": "missing-espn-pitcher-splits"
+      "failure": "draftkings-full-game-line-coverage-short",
+      "expectedGames": 12,
+      "boardGames": 11,
+      "fullGameLineGames": 11,
+      "firstFiveLineGames": 11,
+      "postedFirst5TotalGames": 11
+    },
+    {
+      "failure": "draftkings-first-five-line-coverage-short",
+      "expectedGames": 12,
+      "boardGames": 11,
+      "fullGameLineGames": 11,
+      "firstFiveLineGames": 11,
+      "postedFirst5TotalGames": 11
     }
   ]
 }

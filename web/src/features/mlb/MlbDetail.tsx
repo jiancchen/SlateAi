@@ -503,6 +503,8 @@ export function MlbDetail(props: MlbDetailProps) {
           : [])
       ]
     : []
+  const inningRunMatrix = game.stateContext?.inningRunMatrix ?? projection?.inningRunMatrix ?? null
+  const inningRunRows = Array.isArray(inningRunMatrix?.rows) ? inningRunMatrix.rows.slice(0, 9) : []
   const gameFlowOverview = buildGameFlowOverview({
     projection,
     analysis: game.analysis,
@@ -1048,6 +1050,64 @@ export function MlbDetail(props: MlbDetailProps) {
                 <small>{kalshiSpread.rules}</small>
               </article>
             ) : null}
+          </div>
+        </section>
+      ) : null}
+
+      {inningRunRows.length ? (
+        <section className="detail-panel inning-run-matrix-panel">
+          <div className="detail-panel-header">
+            <p className="eyebrow">All-inning run map</p>
+            <span>{inningRunMatrix?.source || 'Warehouse inning scoring profile'}</span>
+          </div>
+          <div className="inning-run-matrix-scroll">
+            <table className="inning-run-matrix">
+              <thead>
+                <tr>
+                  <th>Read</th>
+                  {inningRunRows.map((row: AnyRecord) => (
+                    <th key={`${game.id}-inning-head-${row.inning}`}>{row.inning}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Run</th>
+                  {inningRunRows.map((row: AnyRecord) => (
+                    <td key={`${game.id}-inning-run-${row.inning}`} className={row.lean === 'Run' ? `hot ${row.strength || ''}` : ''}>
+                      {Number.isFinite(Number(row.runProbabilityPct)) ? (
+                        <>
+                          <strong>{formatNumber(row.runProbabilityPct, 0)}%</strong>
+                          <small>{awayTeam} {formatNumber(row.awayRunProbabilityPct, 0)} / {homeTeam} {formatNumber(row.homeRunProbabilityPct, 0)}</small>
+                        </>
+                      ) : null}
+                    </td>
+                  ))}
+                </tr>
+                <tr>
+                  <th>No run</th>
+                  {inningRunRows.map((row: AnyRecord) => (
+                    <td key={`${game.id}-inning-no-run-${row.inning}`} className={row.lean !== 'Run' ? `quiet ${row.strength || ''}` : ''}>
+                      {Number.isFinite(Number(row.noRunProbabilityPct)) ? (
+                        <>
+                          <strong>{formatNumber(row.noRunProbabilityPct, 0)}%</strong>
+                          <small>{row.phase || 'inning'}</small>
+                        </>
+                      ) : null}
+                    </td>
+                  ))}
+                </tr>
+                <tr>
+                  <th>Reason</th>
+                  {inningRunRows.map((row: AnyRecord) => (
+                    <td key={`${game.id}-inning-reason-${row.inning}`} className="reason">
+                      <span>{row.reason || 'Warehouse inning profile blended with league baseline.'}</span>
+                      {row.caution ? <small>{row.caution}</small> : null}
+                    </td>
+                  ))}
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
       ) : null}

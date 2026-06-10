@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Reds",
-      "detail": "Rhett Lowder (RHP) | 3-3 | 5.40 ERA | 27 SO | 1.41 WHIP | 38.1 IP"
+      "detail": "Rhett Lowder (RHP) | 3-3 | 5.01 ERA | 31 SO | 1.45 WHIP | 41.1 IP"
     },
     {
       "side": "Home",
       "name": "Cardinals",
-      "detail": "Michael McGreevy (RHP) | 3-5 | 2.98 ERA | 44 SO | 1.10 WHIP | 66.1 IP"
+      "detail": "Michael McGreevy (RHP) | 3-5 | 2.99 ERA | 49 SO | 1.08 WHIP | 72.1 IP"
     }
   ],
   "summary": "Reds @ Cardinals with Rhett Lowder against Michael McGreevy.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Reds +123 / Cardinals -149 | o9.5 +100 / u9.5 -120 | Reds +1.5 -163 / Cardinals -1.5 +135 | F5 Reds +114 / Cardinals -145 / o5.5 +105 / u5.5 -135.",
+    "Current board: Reds +129 / Cardinals -156 | o9.5 +100 / u9.5 -120 | Reds +1.5 -162 / Cardinals -1.5 +134 | F5 Reds +114 / Cardinals -145 / o5.5 +105 / u5.5 -135.",
     "Rhett Lowder vs Michael McGreevy."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -34,22 +34,22 @@
     "away": {
       "divisionLeader": false,
       "divisionRank": "5",
-      "gamesBack": "8.5",
-      "losses": 32,
-      "runDifferential": -49,
-      "streakCode": "L3",
-      "winningPercentage": ".492",
+      "gamesBack": "10.5",
+      "losses": 34,
+      "runDifferential": -55,
+      "streakCode": "L5",
+      "winningPercentage": ".477",
       "wins": 31
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "2",
-      "gamesBack": "5.0",
+      "gamesBack": "5.5",
       "losses": 28,
-      "runDifferential": -4,
-      "streakCode": "W3",
-      "winningPercentage": ".548",
-      "wins": 34
+      "runDifferential": -2,
+      "streakCode": "W4",
+      "winningPercentage": ".556",
+      "wins": 35
     }
   },
   "parkContext": {
@@ -274,17 +274,17 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "home": {
         "playerName": "Michael McGreevy",
         "line": 3.5,
         "overPrice": -157,
-        "underPrice": 123,
+        "underPrice": 127,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -479,6 +479,172 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 823624,
+          "date": "2026-05-26",
+          "opponent": "Mets",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 7,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 695505,
+              "pitcherName": "Chase Burns",
+              "teamName": "Cincinnati Reds",
+              "opponentName": "New York Mets",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 656849,
+              "pitcherName": "David Peterson",
+              "teamName": "New York Mets",
+              "opponentName": "Cincinnati Reds",
+              "firstInningRunsAllowed": 2,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 2
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 3
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 1
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 1
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 823626,
+          "date": "2026-05-27",
+          "opponent": "Mets",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 2,
+          "runsAgainst": 4,
+          "starters": {
+            "team": {
+              "pitcherId": 671096,
+              "pitcherName": "Andrew Abbott",
+              "teamName": "Cincinnati Reds",
+              "opponentName": "New York Mets",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 623211,
+              "pitcherName": "Huascar Brazobán",
+              "teamName": "New York Mets",
+              "opponentName": "Cincinnati Reds",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 1
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 1
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 824515,
           "date": "2026-05-29",
@@ -860,7 +1026,7 @@
             },
             {
               "inning": 5,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 6,
@@ -872,15 +1038,15 @@
             },
             {
               "inning": 8,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 9,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 10,
-              "runs": 2
+              "runs": 1
             }
           ]
         },
@@ -916,8 +1082,8 @@
               "tone": "negative"
             },
             "hitters": {
-              "label": "Stranded",
-              "tone": "warning"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Mixed",
@@ -947,7 +1113,7 @@
             },
             {
               "inning": 5,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 6,
@@ -1107,6 +1273,172 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 823785,
+          "date": "2026-05-26",
+          "opponent": "Brewers",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 0,
+          "runsAgainst": 6,
+          "starters": {
+            "team": {
+              "pitcherId": 700241,
+              "pitcherName": "Michael McGreevy",
+              "teamName": "St. Louis Cardinals",
+              "opponentName": "Milwaukee Brewers",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 690986,
+              "pitcherName": "Kyle Harrison",
+              "teamName": "Milwaukee Brewers",
+              "opponentName": "St. Louis Cardinals",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Cracked",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 823783,
+          "date": "2026-05-27",
+          "opponent": "Brewers",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 1,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 669160,
+              "pitcherName": "Dustin May",
+              "teamName": "St. Louis Cardinals",
+              "opponentName": "Milwaukee Brewers",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 694477,
+              "pitcherName": "Chad Patrick",
+              "teamName": "Milwaukee Brewers",
+              "opponentName": "St. Louis Cardinals",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Blew",
+              "tone": "negative"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 823055,
           "date": "2026-05-29",
@@ -1476,7 +1808,7 @@
             },
             {
               "inning": 2,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 3,
@@ -1484,7 +1816,7 @@
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
@@ -1496,7 +1828,7 @@
             },
             {
               "inning": 7,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 8,
@@ -1548,14 +1880,14 @@
               "tone": "warning"
             },
             "relief": {
-              "label": "Won late",
+              "label": "Held",
               "tone": "positive"
             }
           },
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
@@ -1563,7 +1895,7 @@
             },
             {
               "inning": 3,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 4,
@@ -1571,11 +1903,11 @@
             },
             {
               "inning": 5,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
@@ -2361,7 +2693,243 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-823047",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 84,
+          "noRunProbabilityPct": 16,
+          "awayRunProbabilityPct": 42.7,
+          "homeRunProbabilityPct": 72,
+          "lean": "Run",
+          "strength": "strong",
+          "sampleHalves": 125,
+          "caution": "Cardinals starter is in the green this year (1.7 WAR) Cardinals starter has improved sharply from last year (1.1 WAR delta)",
+          "reason": "YRFI with a 84% modeled chance of at least one first-inning run. Reds score 42.7% of the time and Cardinals 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 64,
+          "noRunProbabilityPct": 36,
+          "awayRunProbabilityPct": 34,
+          "homeRunProbabilityPct": 30,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 125,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.7 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Reds F5 runs 2.5; Cardinals F5 runs 2.5; Rhett Lowder: HA 4.5, ER 2.5, win yes +266; Michael McGreevy: HA 5.5, ER 2.5, win yes +167; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 67.5,
+          "noRunProbabilityPct": 32.5,
+          "awayRunProbabilityPct": 25.7,
+          "homeRunProbabilityPct": 41.8,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 125,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.7 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Reds F5 runs 2.5; Cardinals F5 runs 2.5; Rhett Lowder: HA 4.5, ER 2.5, win yes +266; Michael McGreevy: HA 5.5, ER 2.5, win yes +167; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 75.9,
+          "noRunProbabilityPct": 24.1,
+          "awayRunProbabilityPct": 40.7,
+          "homeRunProbabilityPct": 35.2,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 125,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.7 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Reds F5 runs 2.5; Cardinals F5 runs 2.5; Rhett Lowder: HA 4.5, ER 2.5, win yes +266; Michael McGreevy: HA 5.5, ER 2.5, win yes +167; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 76,
+          "noRunProbabilityPct": 24,
+          "awayRunProbabilityPct": 41.1,
+          "homeRunProbabilityPct": 34.9,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 125,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.7 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Reds F5 runs 2.5; Cardinals F5 runs 2.5; Rhett Lowder: HA 4.5, ER 2.5, win yes +266; Michael McGreevy: HA 5.5, ER 2.5, win yes +167; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Reds @ Cardinals",
+      "mlbGamePk": 823047,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "cardinals": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "reds": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "rhett-lowder": {
+            "name": "Rhett Lowder",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": -116,
+              "underOdds": -114,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 4.5,
+              "overOdds": -147,
+              "underOdds": 111,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 266,
+              "noOdds": -372
+            }
+          },
+          "michael-mcgreevy": {
+            "name": "Michael McGreevy",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": -110,
+              "underOdds": -121,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 5.5,
+              "overOdds": -115,
+              "underOdds": -115,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 167,
+              "noOdds": -236
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "Reds": {
@@ -2416,7 +2984,7 @@
   "lineupBoard": {
     "gameId": "reds-cardinals",
     "title": "Reds @ Cardinals",
-    "snapshot": "2026-06-07T15:20:45.580Z",
+    "snapshot": "2026-06-07T16:39:59.689Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -2431,7 +2999,7 @@
       "label": "87°F | Wind 10 mph R-L | 15% precip"
     },
     "marketWeatherContext": {
-      "line": "STL -144",
+      "line": "STL -149",
       "total": "9.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -6466,14 +7034,14 @@
       "pitchHand": "R",
       "wins": 3,
       "losses": 3,
-      "era": "5.40",
-      "strikeOuts": 27,
-      "inningsPitched": "38.1",
-      "hitsAllowed": 36,
-      "walks": 18,
+      "era": "5.01",
+      "strikeOuts": 31,
+      "inningsPitched": "41.1",
+      "hitsAllowed": 37,
+      "walks": 23,
       "homeRunsAllowed": 2,
-      "whip": "1.41",
-      "gamesStarted": 8,
+      "whip": "1.45",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 695076,
@@ -6627,12 +7195,12 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/rhett-lowder-vs-cardinals",
-        "answerText": "Rhett Lowder has not allowed any runs on 5 hits with 3 strikeouts in 5 innings against the Cardinals in his career. He has been credited with the win.",
+        "answerText": "Rhett Lowder has not allowed any runs on 5 hits with 3 strikeouts in 5 innings versus the Cardinals in his career. He has been credited with the win.",
         "pitcherName": "Rhett Lowder",
         "pitcherTeam": "Reds",
         "opponentTeam": "Cardinals",
@@ -6676,7 +7244,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:47.703Z"
+        "fetchedAt": "2026-06-07T16:39:03.057Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -10994,7 +11562,7 @@
           "Away split: 6.65 ERA / 1 HR allowed.",
           "vs. Left: .238 AVG / .740 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -11021,14 +11589,14 @@
       "pitchHand": "R",
       "wins": 3,
       "losses": 5,
-      "era": "2.98",
-      "strikeOuts": 44,
-      "inningsPitched": "66.1",
-      "hitsAllowed": 56,
+      "era": "2.99",
+      "strikeOuts": 49,
+      "inningsPitched": "72.1",
+      "hitsAllowed": 61,
       "walks": 17,
-      "homeRunsAllowed": 8,
-      "whip": "1.10",
-      "gamesStarted": 12,
+      "homeRunsAllowed": 10,
+      "whip": "1.08",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 700241,
@@ -11178,16 +11746,16 @@
         "playerName": "Michael McGreevy",
         "line": 3.5,
         "overPrice": -157,
-        "underPrice": 123,
+        "underPrice": 127,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/michael-mcgreevy-vs-reds",
-        "answerText": "Michael McGreevy has a 2-0 record with an ERA of 0.69 and 6 strikeouts in 2 appearances against the Reds in his career.",
+        "answerText": "Michael McGreevy has a 2-0 record with an ERA of 0.69 and 6 strikeouts in 2 appearances versus the Reds in his career.",
         "pitcherName": "Michael McGreevy",
         "pitcherTeam": "Cardinals",
         "opponentTeam": "Reds",
@@ -11279,7 +11847,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:49.353Z"
+        "fetchedAt": "2026-06-07T16:39:04.752Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -16107,7 +16675,7 @@
           "Away split: 3.90 ERA / 4 HR allowed.",
           "vs. Left: .223 AVG / .656 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -16156,7 +16724,7 @@
       {
         "label": "Spread",
         "book": "DraftKings typed MLB board",
-        "value": "Reds +1.5 -163 / Cardinals -1.5 +135"
+        "value": "Reds +1.5 -162 / Cardinals -1.5 +134"
       },
       {
         "label": "Total",
@@ -16166,7 +16734,7 @@
       {
         "label": "Moneyline",
         "book": "DraftKings typed MLB board",
-        "value": "Reds +123 / Cardinals -149"
+        "value": "Reds +129 / Cardinals -156"
       },
       {
         "label": "1st 5 ML",
@@ -16188,24 +16756,24 @@
       "index": 0,
       "role": "Away",
       "name": "Reds",
-      "detail": "Rhett Lowder (RHP) | 3-3 | 5.40 ERA | 27 SO | 1.41 WHIP | 38.1 IP",
-      "americanOdds": 123,
-      "americanLabel": "+123",
-      "decimalOdds": 2.23,
-      "impliedProbability": 0.4484304932735426,
-      "impliedProbabilityLabel": "44.8%"
+      "detail": "Rhett Lowder (RHP) | 3-3 | 5.01 ERA | 31 SO | 1.45 WHIP | 41.1 IP",
+      "americanOdds": 129,
+      "americanLabel": "+129",
+      "decimalOdds": 2.29,
+      "impliedProbability": 0.4366812227074236,
+      "impliedProbabilityLabel": "43.7%"
     },
     {
       "id": "reds-cardinals:1",
       "index": 1,
       "role": "Home",
       "name": "Cardinals",
-      "detail": "Michael McGreevy (RHP) | 3-5 | 2.98 ERA | 44 SO | 1.10 WHIP | 66.1 IP",
-      "americanOdds": -149,
-      "americanLabel": "-149",
-      "decimalOdds": 1.6711409395973154,
-      "impliedProbability": 0.5983935742971888,
-      "impliedProbabilityLabel": "59.8%"
+      "detail": "Michael McGreevy (RHP) | 3-5 | 2.99 ERA | 49 SO | 1.08 WHIP | 72.1 IP",
+      "americanOdds": -156,
+      "americanLabel": "-156",
+      "decimalOdds": 1.641025641025641,
+      "impliedProbability": 0.609375,
+      "impliedProbabilityLabel": "60.9%"
     }
   ],
   "moneyline": {
@@ -16218,24 +16786,24 @@
         "index": 0,
         "role": "Away",
         "name": "Reds",
-        "detail": "Rhett Lowder (RHP) | 3-3 | 5.40 ERA | 27 SO | 1.41 WHIP | 38.1 IP",
-        "americanOdds": 123,
-        "americanLabel": "+123",
-        "decimalOdds": 2.23,
-        "impliedProbability": 0.4484304932735426,
-        "impliedProbabilityLabel": "44.8%"
+        "detail": "Rhett Lowder (RHP) | 3-3 | 5.01 ERA | 31 SO | 1.45 WHIP | 41.1 IP",
+        "americanOdds": 129,
+        "americanLabel": "+129",
+        "decimalOdds": 2.29,
+        "impliedProbability": 0.4366812227074236,
+        "impliedProbabilityLabel": "43.7%"
       },
       {
         "id": "reds-cardinals:1",
         "index": 1,
         "role": "Home",
         "name": "Cardinals",
-        "detail": "Michael McGreevy (RHP) | 3-5 | 2.98 ERA | 44 SO | 1.10 WHIP | 66.1 IP",
-        "americanOdds": -149,
-        "americanLabel": "-149",
-        "decimalOdds": 1.6711409395973154,
-        "impliedProbability": 0.5983935742971888,
-        "impliedProbabilityLabel": "59.8%"
+        "detail": "Michael McGreevy (RHP) | 3-5 | 2.99 ERA | 49 SO | 1.08 WHIP | 72.1 IP",
+        "americanOdds": -156,
+        "americanLabel": "-156",
+        "decimalOdds": 1.641025641025641,
+        "impliedProbability": 0.609375,
+        "impliedProbabilityLabel": "60.9%"
       }
     ]
   },
@@ -16247,58 +16815,58 @@
       "index": 1,
       "role": "Home",
       "name": "Cardinals",
-      "detail": "Michael McGreevy (RHP) | 3-5 | 2.98 ERA | 44 SO | 1.10 WHIP | 66.1 IP",
-      "americanOdds": -149,
-      "americanLabel": "-149",
-      "decimalOdds": 1.6711409395973154,
-      "impliedProbability": 0.5983935742971888,
-      "impliedProbabilityLabel": "59.8%"
+      "detail": "Michael McGreevy (RHP) | 3-5 | 2.99 ERA | 49 SO | 1.08 WHIP | 72.1 IP",
+      "americanOdds": -156,
+      "americanLabel": "-156",
+      "decimalOdds": 1.641025641025641,
+      "impliedProbability": 0.609375,
+      "impliedProbabilityLabel": "60.9%"
     },
     "opponent": {
       "id": "reds-cardinals:0",
       "index": 0,
       "role": "Away",
       "name": "Reds",
-      "detail": "Rhett Lowder (RHP) | 3-3 | 5.40 ERA | 27 SO | 1.41 WHIP | 38.1 IP",
-      "americanOdds": 123,
-      "americanLabel": "+123",
-      "decimalOdds": 2.23,
-      "impliedProbability": 0.4484304932735426,
-      "impliedProbabilityLabel": "44.8%"
+      "detail": "Rhett Lowder (RHP) | 3-3 | 5.01 ERA | 31 SO | 1.45 WHIP | 41.1 IP",
+      "americanOdds": 129,
+      "americanLabel": "+129",
+      "decimalOdds": 2.29,
+      "impliedProbability": 0.4366812227074236,
+      "impliedProbabilityLabel": "43.7%"
     },
-    "lean": "Model pick: Cardinals on starter era and standings profile.",
-    "rationale": "Starter ERA: Cardinals (2.98 ERA) vs Reds (5.40 ERA)",
-    "confidence": 55,
+    "lean": "Model pick: Cardinals on standings profile and market price.",
+    "rationale": "Standings profile: Cardinals (35-28, 2nd in division, -2 RD) vs Reds (31-34, 5th in division, -55 RD)",
+    "confidence": 56,
     "volatility": 92,
     "recommendationScore": 36,
     "tier": "Pass",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 5.8,
-    "modelEdgeLabel": "5.8-point model edge",
-    "marketProbability": 0.5716276429198135,
-    "marketProbabilityLabel": "57.2%",
+    "modelEdge": 6.3,
+    "modelEdgeLabel": "6.3-point model edge",
+    "marketProbability": 0.5825451699171612,
+    "marketProbabilityLabel": "58.3%",
     "inputs": [
       {
-        "label": "Starter ERA",
-        "summary": "Starter ERA: Cardinals (2.98 ERA) vs Reds (5.40 ERA)",
-        "source": "Listed probable starters",
-        "margin": 21.8,
-        "weight": 0.23
-      },
-      {
         "label": "Standings profile",
-        "summary": "Standings profile: Cardinals (34-28, 2nd in division, -4 RD) vs Reds (31-32, 5th in division, -49 RD)",
+        "summary": "Standings profile: Cardinals (35-28, 2nd in division, -2 RD) vs Reds (31-34, 5th in division, -55 RD)",
         "source": "Standings context",
-        "margin": 31.1,
+        "margin": 38.8,
         "weight": 0.14
       },
       {
         "label": "Market price",
-        "summary": "Market price: Cardinals (57.2% no-vig) vs Reds (42.8% no-vig)",
+        "summary": "Market price: Cardinals (58.3% no-vig) vs Reds (41.7% no-vig)",
         "source": "Moneyline board",
-        "margin": 14.3,
+        "margin": 16.5,
         "weight": 0.26
+      },
+      {
+        "label": "Starter ERA",
+        "summary": "Starter ERA: Cardinals (2.99 ERA) vs Reds (5.01 ERA)",
+        "source": "Listed probable starters",
+        "margin": 18.2,
+        "weight": 0.23
       }
     ],
     "inputsUsed": 11,
@@ -16389,14 +16957,14 @@
     "indicators": {
       "reliefPitchingRisk": 61,
       "coinflipPressure": 58,
-      "starterLeverageIndex": 78.3,
+      "starterLeverageIndex": 77.1,
       "lateInningStabilityIndex": 37.6,
       "pickBullpenScore": 54.3,
       "oppBullpenScore": 52.8,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 66.7,
-      "oppStarterScore": 53.9,
+      "pickStarterScore": 67.9,
+      "oppStarterScore": 56.1,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -16475,11 +17043,10 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": 2,
+      "efficientFavoriteScore": -14,
       "efficientFavoriteTier": "Watch favorite",
       "efficientFavoriteReasons": [
         "moderateFavoritePrice",
-        "starterControl",
         "broadSupport"
       ],
       "efficientFavoritePenaltyFlags": [
@@ -16500,7 +17067,7 @@
         "highRiskPoints"
       ],
       "favoredSignalCount": 9,
-      "starterLateGap": 40.7,
+      "starterLateGap": 39.5,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 5,
       "gameShape": {
@@ -16595,8 +17162,8 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 48,
         "bullpenFlipScore": 49.9,
-        "starterControlScore": 54.7,
-        "marketContradictionScore": 16.7,
+        "starterControlScore": 53.7,
+        "marketContradictionScore": 16.5,
         "realityGapScore": 39.7
       },
       "radar": {
@@ -16611,9 +17178,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 28,
-            "pickScore": 28,
-            "opponentScore": 9.7
+            "gameScore": 28.2,
+            "pickScore": 28.2,
+            "opponentScore": 10.1
           },
           {
             "id": "chaos",
@@ -16661,7 +17228,7 @@
             "role": "pick",
             "team": "Cardinals",
             "scores": {
-              "pressure": 28,
+              "pressure": 28.2,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -16669,7 +17236,7 @@
               "flow": 66.7
             },
             "polygon": [
-              28,
+              28.2,
               5,
               0,
               16,
@@ -16680,7 +17247,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 66.7,
+              "starterScore": 67.9,
               "bullpenScore": 54.3,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -16694,7 +17261,7 @@
             "role": "opponent",
             "team": "Reds",
             "scores": {
-              "pressure": 9.7,
+              "pressure": 10.1,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -16702,7 +17269,7 @@
               "flow": 33.3
             },
             "polygon": [
-              9.7,
+              10.1,
               5,
               0,
               16,
@@ -16713,7 +17280,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 53.9,
+              "starterScore": 56.1,
               "bullpenScore": 52.8,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -16728,7 +17295,7 @@
           "label": "Starter-to-bullpen flip",
           "bestExpression": "Cardinals first-five side",
           "scores": {
-            "pressure": 28,
+            "pressure": 28.2,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
@@ -16736,7 +17303,7 @@
             "flow": 52
           },
           "polygon": [
-            28,
+            28.2,
             44.8,
             8.5,
             24.4,
@@ -16860,7 +17427,7 @@
     "mlbProjection": {
       "awayProjectedHits": 9.9,
       "homeProjectedHits": 11.9,
-      "awayHitEfficiencyPct": 28.7,
+      "awayHitEfficiencyPct": 28.8,
       "homeHitEfficiencyPct": 34.6,
       "awayFirst5ProjectedHits": 5.3,
       "homeFirst5ProjectedHits": 7.3,
@@ -16868,7 +17435,7 @@
       "homeFirst5HitEfficiencyPct": 38.2,
       "awayLateProjectedHits": 4.7,
       "homeLateProjectedHits": 4.5,
-      "awayLateHitEfficiencyPct": 30.4,
+      "awayLateHitEfficiencyPct": 30.3,
       "homeLateHitEfficiencyPct": 29.4,
       "awayBullpenChainScore": null,
       "homeBullpenChainScore": null,
@@ -17216,8 +17783,8 @@
         "runDiff": 1.2,
         "absoluteRunDiff": 1.2,
         "runDiffSharePct": 10.3,
-        "confidence": 55,
-        "marketProbabilityPct": 57.2,
+        "confidence": 56,
+        "marketProbabilityPct": 58.3,
         "grade": "Thin ML shape",
         "source": "MLB-M2 mlbProjection",
         "note": "Cardinals projects 1.2 runs better in a 11.6-run environment."
@@ -17285,8 +17852,8 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 48,
           "bullpenFlipScore": 49.9,
-          "starterControlScore": 54.7,
-          "marketContradictionScore": 16.7,
+          "starterControlScore": 53.7,
+          "marketContradictionScore": 16.5,
           "realityGapScore": 39.7
         },
         "radar": {
@@ -17301,9 +17868,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 28,
-              "pickScore": 28,
-              "opponentScore": 9.7
+              "gameScore": 28.2,
+              "pickScore": 28.2,
+              "opponentScore": 10.1
             },
             {
               "id": "chaos",
@@ -17351,7 +17918,7 @@
               "role": "pick",
               "team": "Cardinals",
               "scores": {
-                "pressure": 28,
+                "pressure": 28.2,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -17359,7 +17926,7 @@
                 "flow": 66.7
               },
               "polygon": [
-                28,
+                28.2,
                 5,
                 0,
                 16,
@@ -17370,7 +17937,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 66.7,
+                "starterScore": 67.9,
                 "bullpenScore": 54.3,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17384,7 +17951,7 @@
               "role": "opponent",
               "team": "Reds",
               "scores": {
-                "pressure": 9.7,
+                "pressure": 10.1,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -17392,7 +17959,7 @@
                 "flow": 33.3
               },
               "polygon": [
-                9.7,
+                10.1,
                 5,
                 0,
                 16,
@@ -17403,7 +17970,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 53.9,
+                "starterScore": 56.1,
                 "bullpenScore": 52.8,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17418,7 +17985,7 @@
             "label": "Starter-to-bullpen flip",
             "bestExpression": "Cardinals first-five side",
             "scores": {
-              "pressure": 28,
+              "pressure": 28.2,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
@@ -17426,7 +17993,7 @@
               "flow": 52
             },
             "polygon": [
-              28,
+              28.2,
               44.8,
               8.5,
               24.4,
@@ -17650,7 +18217,7 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
-        "confidence": 82,
+        "confidence": 68,
         "probability": 89.1,
         "expectedValue": 2.2,
         "statValueLabel": "2.21 exp RBI",
@@ -17690,7 +18257,7 @@
           "trackingPenalty": 18,
           "reason": "contact-stable profile"
         },
-        "recommendationTier": "Core",
+        "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 3 carry | process improving; approach 69.7/100 | recent form up | split fit live",
@@ -17704,6 +18271,156 @@
           "carry-bat-live",
           "process-improving",
           "run-production-slot",
+          "statcast-power-up",
+          "statcast-contact-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+10.00 vs Rhett Lowder",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".291 AVG | .814 OPS | 69 H | 8 HR | 12g: .391 AVG | 1.070 OPS | 18 H | 2 HR | vs RHP: .321 AVG | .926 OPS | 7 HR | career 1784 PA | .748 OPS | 55 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal Sinker 30% / Slider 25% / 4-Seam Fastball 24% | fit +6.9 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "reds-cardinals:676475:runs",
+        "gameId": "reds-cardinals",
+        "gameTitle": "Reds @ Cardinals",
+        "league": "MLB",
+        "playerId": 676475,
+        "playerName": "Alec Burleson",
+        "teamName": "Cardinals",
+        "slot": 3,
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 72,
+        "probability": 88,
+        "expectedValue": 2.1,
+        "statValueLabel": "2.12 exp runs",
+        "sample": {
+          "seasonGames": 61,
+          "seasonPlateAppearances": 265,
+          "recentGames": 12,
+          "recentPlateAppearances": 52,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 26,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1784,
+          "seasonPa": 265,
+          "powerIndex": 56.56,
+          "contactRisk": 29.24,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 69.7,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": 1.4,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 265,
+            "careerPa": 1784
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 3 carry | recent form up | split fit live | run-scoring slot",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "run-scoring-slot",
+          "statcast-power-up",
+          "statcast-contact-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+10.00 vs Rhett Lowder",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".291 AVG | .814 OPS | 69 H | 8 HR | 12g: .391 AVG | 1.070 OPS | 18 H | 2 HR | vs RHP: .321 AVG | .926 OPS | 7 HR | career 1784 PA | .748 OPS | 55 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal Sinker 30% / Slider 25% / 4-Seam Fastball 24% | fit +6.9 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "reds-cardinals:676475:hitRunRbi",
+        "gameId": "reds-cardinals",
+        "gameTitle": "Reds @ Cardinals",
+        "league": "MLB",
+        "playerId": 676475,
+        "playerName": "Alec Burleson",
+        "teamName": "Cardinals",
+        "slot": 3,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
+        "confidence": 82,
+        "probability": 97.8,
+        "expectedValue": 5.7,
+        "statValueLabel": "2.51 H · 1.40 R · 1.82 RBI · 5.73 total",
+        "sample": {
+          "seasonGames": 61,
+          "seasonPlateAppearances": 265,
+          "recentGames": 12,
+          "recentPlateAppearances": 52,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 26,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1784,
+          "seasonPa": 265,
+          "powerIndex": 56.56,
+          "contactRisk": 29.24,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 69.7,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": 1.4,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 265,
+            "careerPa": 1784
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 3 carry | recent form up | split fit live | combined hits/runs/RBI lane",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "combined-production-lane",
           "statcast-power-up",
           "statcast-contact-up",
           "statcast-hr-carry"
@@ -17874,10 +18591,10 @@
         "propType": "walks",
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
-        "confidence": 62,
-        "probability": 45.6,
-        "expectedValue": 0.6,
-        "statValueLabel": "0.61 exp walks",
+        "confidence": 63,
+        "probability": 47.9,
+        "expectedValue": 0.7,
+        "statValueLabel": "0.65 exp walks",
         "sample": {
           "seasonGames": 61,
           "seasonPlateAppearances": 265,
@@ -18011,163 +18728,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "posted",
         "playerSummary": ".291 AVG | .814 OPS | 69 H | 8 HR | 12g: .391 AVG | 1.070 OPS | 18 H | 2 HR | vs RHP: .321 AVG | .926 OPS | 7 HR | career 1784 PA | .748 OPS | 55 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal Sinker 30% / Slider 25% / 4-Seam Fastball 24% | fit +6.9 | +10.0 matchup grade in a traffic-risk lane"
-      },
-      {
-        "id": "reds-cardinals:691023:rbi",
-        "gameId": "reds-cardinals",
-        "gameTitle": "Reds @ Cardinals",
-        "league": "MLB",
-        "playerId": 691023,
-        "playerName": "Jordan Walker",
-        "teamName": "Cardinals",
-        "slot": 4,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 82,
-        "probability": 85.2,
-        "expectedValue": 1.9,
-        "statValueLabel": "1.91 exp RBI",
-        "sample": {
-          "seasonGames": 61,
-          "seasonPlateAppearances": 260,
-          "recentGames": 12,
-          "recentPlateAppearances": 52,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 26,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 1277,
-          "seasonPa": 260,
-          "powerIndex": 61.31,
-          "contactRisk": 52.83,
-          "roleStability": 100,
-          "label": "baseline career profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 72.3,
-            "processScore": 7,
-            "careerWeight": 0.1,
-            "identityDelta": 12,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 260,
-            "careerPa": 1277
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "baseline career profile"
-        },
-        "recommendationTier": "Core",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 4 carry | process improving; approach 72.3/100 | run-production slot",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "middle-order-traffic",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "run-production-slot",
-          "statcast-contact-up",
-          "statcast-fade"
-        ],
-        "matchupNote": "+10.00 vs Rhett Lowder",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".301 AVG | .921 OPS | 71 H | 16 HR | 12g: .385 AVG | .962 OPS | 20 H | 2 HR | vs RHP: .302 AVG | .902 OPS | 11 HR | career 1277 PA | .722 OPS | 42 HR | baseline career profile | power 61 | 2026 sample ok | arsenal Sinker 30% / Slider 25% / 4-Seam Fastball 24% | fit +8.1 | +10.0 matchup grade in a traffic-risk lane"
-      },
-      {
-        "id": "reds-cardinals:668715:rbi",
-        "gameId": "reds-cardinals",
-        "gameTitle": "Reds @ Cardinals",
-        "league": "MLB",
-        "playerId": 668715,
-        "playerName": "Spencer Steer",
-        "teamName": "Reds",
-        "slot": 5,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 77,
-        "probability": 78.6,
-        "expectedValue": 1.5,
-        "statValueLabel": "1.54 exp RBI",
-        "sample": {
-          "seasonGames": 61,
-          "seasonPlateAppearances": 244,
-          "recentGames": 12,
-          "recentPlateAppearances": 50,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 24,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 2220,
-          "seasonPa": 244,
-          "powerIndex": 57.91,
-          "contactRisk": 41.92,
-          "roleStability": 100,
-          "label": "contact-stable profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 70.8,
-            "processScore": 15,
-            "careerWeight": 0.1,
-            "identityDelta": 2.5,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 244,
-            "careerPa": 2220
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "contact-stable profile"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 5 carry | process improving; approach 70.8/100 | recent form up | run-production slot",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "middle-order-traffic",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "run-production-slot",
-          "statcast-power-up",
-          "statcast-contact-up"
-        ],
-        "matchupNote": "+10.00 vs Michael McGreevy",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".271 AVG | .806 OPS | 58 H | 9 HR | 12g: .333 AVG | 1.258 OPS | 12 H | 4 HR | vs RHP: .248 AVG | .696 OPS | 4 HR | career 2220 PA | .752 OPS | 73 HR | contact-stable profile | power 58 | 2026 sample ok | arsenal 4-Seam Fastball 24% / Changeup 21% / Sinker 17% | fit +0.8 | +10.0 matchup grade in a craft lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 33,
+    "candidateCount": 47,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

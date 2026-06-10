@@ -4,10 +4,10 @@
   "date": "2026-06-07",
   "dry_run": false,
   "errors": [],
-  "generated_at": "2026-06-07T15:20:41.467605+00:00",
+  "generated_at": "2026-06-07T16:39:56.141958+00:00",
   "ok": true,
-  "people": 270,
-  "player_count": 270,
+  "people": 272,
+  "player_count": 272,
   "raw_root": "data-private/raw/mlb-stats-api/hitter-career-profiles",
   "script": "pipeline/mlb/fetchers/fetch_mlb_hitter_career_profiles.py",
   "written_files": [
@@ -19,28 +19,28 @@
         506702,
         516782,
         518692,
-        521692,
-        543309,
+        542303,
         543760,
         543807,
         543877,
         545121,
         545361,
         547180,
+        553869,
         571448,
         571970,
         572233,
         573262,
         575929,
         592518,
+        592626,
         593428,
         596142,
         605137,
         605141,
-        605170,
         606115
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=502671,506702,516782,518692,521692,543309,543760,543807,543877,545121,545361,547180,571448,571970,572233,573262,575929,592518,593428,596142,605137,605141,605170,606115&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=502671,506702,516782,518692,542303,543760,543807,543877,545121,545361,547180,553869,571448,571970,572233,573262,575929,592518,592626,593428,596142,605137,605141,606115&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-2.json",
@@ -52,10 +52,8 @@
         608070,
         608324,
         608348,
-        608369,
         609280,
         620443,
-        621439,
         621493,
         621550,
         621566,
@@ -64,20 +62,21 @@
         624413,
         640902,
         641355,
+        641933,
         642086,
         642708,
         642715,
         643217,
         643289,
-        643446
+        643446,
+        645277
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=606466,607043,607208,608070,608324,608348,608369,609280,620443,621439,621493,621550,621566,622268,622761,624413,640902,641355,642086,642708,642715,643217,643289,643446&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=606466,607043,607208,608070,608324,608348,609280,620443,621493,621550,621566,622268,622761,624413,640902,641355,641933,642086,642708,642715,643217,643289,643446,645277&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-3.json",
       "people": 24,
       "player_ids": [
-        645277,
         645305,
         646240,
         647304,
@@ -87,6 +86,7 @@
         650490,
         650859,
         656305,
+        656577,
         656716,
         656775,
         656811,
@@ -102,7 +102,7 @@
         663457,
         663494
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=645277,645305,646240,647304,650333,650402,650489,650490,650859,656305,656716,656775,656811,656941,656976,657041,660271,660670,660688,660821,661388,663368,663457,663494&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=645305,646240,647304,650333,650402,650489,650490,650859,656305,656577,656716,656775,656811,656941,656976,657041,660271,660670,660688,660821,661388,663368,663457,663494&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-4.json",
@@ -118,7 +118,6 @@
         663993,
         664023,
         664034,
-        664040,
         664702,
         664761,
         664983,
@@ -128,20 +127,18 @@
         665489,
         665561,
         665742,
-        665750,
-        665833,
         665862,
-        665877
+        665877,
+        665926,
+        666018,
+        666023
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=663538,663586,663611,663656,663757,663886,663968,663993,664023,664034,664040,664702,664761,664983,665019,665161,665487,665489,665561,665742,665750,665833,665862,665877&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=663538,663586,663611,663656,663757,663886,663968,663993,664023,664034,664702,664761,664983,665019,665161,665487,665489,665561,665742,665862,665877,665926,666018,666023&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-5.json",
       "people": 24,
       "player_ids": [
-        665926,
-        666018,
-        666023,
         666126,
         666176,
         666181,
@@ -155,22 +152,24 @@
         668804,
         668885,
         668901,
+        668904,
         668930,
         668939,
         668952,
+        669003,
         669016,
         669065,
         669127,
         669257,
-        669357
+        669357,
+        669364
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=665926,666018,666023,666126,666176,666181,666182,666969,667670,668227,668709,668715,668723,668804,668885,668901,668930,668939,668952,669016,669065,669127,669257,669357&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=666126,666176,666181,666182,666969,667670,668227,668709,668715,668723,668804,668885,668901,668904,668930,668939,668952,669003,669016,669065,669127,669257,669357,669364&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-6.json",
       "people": 24,
       "player_ids": [
-        669364,
         669369,
         669394,
         669397,
@@ -193,15 +192,15 @@
         672695,
         672724,
         672761,
-        672960
+        672960,
+        673548
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=669364,669369,669394,669397,669477,669707,669743,670042,670541,670623,670764,671056,671277,671289,671732,671976,672275,672515,672580,672640,672695,672724,672761,672960&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=669369,669394,669397,669477,669707,669743,670042,670541,670623,670764,671056,671277,671289,671732,671976,672275,672515,672580,672640,672695,672724,672761,672960,673548&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-7.json",
       "people": 24,
       "player_ids": [
-        673548,
         673962,
         675961,
         676391,
@@ -215,6 +214,7 @@
         677594,
         677649,
         677800,
+        677942,
         677951,
         678011,
         678218,
@@ -226,7 +226,7 @@
         679822,
         679845
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=673548,673962,675961,676391,676439,676475,676609,676694,676724,677060,677587,677594,677649,677800,677951,678011,678218,678246,678554,678662,678882,679529,679822,679845&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=673962,675961,676391,676439,676475,676609,676694,676724,677060,677587,677594,677649,677800,677942,677951,678011,678218,678246,678554,678662,678882,679529,679822,679845&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-8.json",
@@ -237,6 +237,7 @@
         680737,
         680757,
         680776,
+        680779,
         680869,
         681082,
         681198,
@@ -249,20 +250,20 @@
         682177,
         682657,
         682818,
-        682848,
         682928,
         682985,
+        682997,
         682998,
         683002,
-        683011,
-        683083
+        683011
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=680574,680700,680737,680757,680776,680869,681082,681198,681297,681351,681481,681508,681624,681715,682177,682657,682818,682848,682928,682985,682998,683002,683011,683083&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=680574,680700,680737,680757,680776,680779,680869,681082,681198,681297,681351,681481,681508,681624,681715,682177,682657,682818,682928,682985,682997,682998,683002,683011&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-9.json",
       "people": 24,
       "player_ids": [
+        683083,
         683146,
         683357,
         683734,
@@ -274,6 +275,7 @@
         686469,
         686475,
         686527,
+        686555,
         686611,
         686797,
         687263,
@@ -282,25 +284,25 @@
         687462,
         687551,
         687749,
+        687859,
         689414,
-        690924,
-        690976,
-        690993,
-        691011
+        690924
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=683146,683357,683734,683737,683748,683953,685133,686217,686469,686475,686527,686611,686797,687263,687363,687401,687462,687551,687749,689414,690924,690976,690993,691011&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=683083,683146,683357,683734,683737,683748,683953,685133,686217,686469,686475,686527,686555,686611,686797,687263,687363,687401,687462,687551,687749,687859,689414,690924&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-10.json",
       "people": 24,
       "player_ids": [
+        690976,
+        690993,
+        691011,
         691016,
         691023,
         691406,
         691594,
         691718,
         691720,
-        691723,
         691740,
         691785,
         691788,
@@ -315,16 +317,16 @@
         694384,
         694671,
         694728,
-        695490,
-        695506,
-        695578
+        695490
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=691016,691023,691406,691594,691718,691720,691723,691740,691785,691788,693304,693307,694192,694208,694212,694362,694371,694378,694384,694671,694728,695490,695506,695578&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=690976,690993,691011,691016,691023,691406,691594,691718,691720,691740,691785,691788,693304,693307,694192,694208,694212,694362,694371,694378,694384,694671,694728,695490&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-11.json",
       "people": 24,
       "player_ids": [
+        695578,
+        695600,
         695657,
         695734,
         696100,
@@ -346,16 +348,16 @@
         803011,
         805300,
         805367,
-        805808,
-        805811,
-        805999
+        805808
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=695657,695734,696100,696285,699393,700250,700932,701358,701398,701538,701762,701807,702222,702284,702332,702616,800050,802139,803011,805300,805367,805808,805811,805999&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=695578,695600,695657,695734,696100,696285,699393,700250,700932,701358,701398,701538,701762,701807,702222,702284,702332,702616,800050,802139,803011,805300,805367,805808&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     },
     {
       "path": "data-private/raw/mlb-stats-api/hitter-career-profiles/2026-06-07/profiles-12.json",
-      "people": 6,
+      "people": 8,
       "player_ids": [
+        805811,
+        805999,
         806068,
         807712,
         807747,
@@ -363,7 +365,7 @@
         808982,
         814439
       ],
-      "url": "https://statsapi.mlb.com/api/v1/people?personIds=806068,807712,807747,807799,808982,814439&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
+      "url": "https://statsapi.mlb.com/api/v1/people?personIds=805811,805999,806068,807712,807747,807799,808982,814439&hydrate=stats(group=[hitting],type=[yearByYear,career],sportId=1)"
     }
   ]
 }

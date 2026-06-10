@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "White Sox",
-      "detail": "Tyler Gilbert (LHP) | 0-0 | 20.25 ERA | 2 SO | 2.63 WHIP | 2.2 IP"
+      "detail": "Tyler Gilbert (LHP) | 0-0 | 18.90 ERA | 3 SO | 2.70 WHIP | 3.1 IP"
     },
     {
       "side": "Home",
       "name": "Phillies",
-      "detail": "Aaron Nola (RHP) | 3-4 | 5.55 ERA | 64 SO | 1.39 WHIP | 61.2 IP"
+      "detail": "Aaron Nola (RHP) | 3-4 | 5.86 ERA | 68 SO | 1.45 WHIP | 66.0 IP"
     }
   ],
   "summary": "White Sox @ Phillies with Tyler Gilbert against Aaron Nola.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: White Sox +143 / Phillies -173 | o9 -114 / u9 -105 | White Sox +1.5 -143 / Phillies -1.5 +118 | F5 White Sox +130 / Phillies -166 / o4.5 -140 / u4.5 +110.",
+    "Current board: White Sox +143 / Phillies -173 | o9 -114 / u9 -106 | White Sox +1.5 -143 / Phillies -1.5 +118 | F5 White Sox +130 / Phillies -166 / o4.5 -140 / u4.5 +110.",
     "Tyler Gilbert vs Aaron Nola."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -34,22 +34,22 @@
     "away": {
       "divisionLeader": false,
       "divisionRank": "2",
-      "gamesBack": "2.0",
-      "losses": 30,
-      "runDifferential": 12,
-      "streakCode": "W1",
-      "winningPercentage": ".531",
+      "gamesBack": "1.5",
+      "losses": 31,
+      "runDifferential": 8,
+      "streakCode": "L1",
+      "winningPercentage": ".523",
       "wins": 34
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "2",
-      "gamesBack": "9.5",
+      "gamesBack": "9.0",
       "losses": 30,
-      "runDifferential": -23,
-      "streakCode": "L1",
-      "winningPercentage": ".531",
-      "wins": 34
+      "runDifferential": -16,
+      "streakCode": "W2",
+      "winningPercentage": ".545",
+      "wins": 36
     }
   },
   "parkContext": {
@@ -248,12 +248,12 @@
       "home": {
         "playerName": "Aaron Nola",
         "line": 5.5,
-        "overPrice": 101,
+        "overPrice": 105,
         "underPrice": -129,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -448,6 +448,172 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 824596,
+          "date": "2026-05-27",
+          "opponent": "Twins",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 15,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 689818,
+              "pitcherName": "David Sandlin",
+              "teamName": "Chicago White Sox",
+              "opponentName": "Minnesota Twins",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 687570,
+              "pitcherName": "Connor Prielipp",
+              "teamName": "Minnesota Twins",
+              "opponentName": "Chicago White Sox",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 2
+            },
+            {
+              "inning": 3,
+              "runs": 1
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 5
+            },
+            {
+              "inning": 6,
+              "runs": 1
+            },
+            {
+              "inning": 7,
+              "runs": 5
+            },
+            {
+              "inning": 8,
+              "runs": 1
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824595,
+          "date": "2026-05-28",
+          "opponent": "Twins",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 6,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 663436,
+              "pitcherName": "Davis Martin",
+              "teamName": "Chicago White Sox",
+              "opponentName": "Minnesota Twins",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 680573,
+              "pitcherName": "Simeon Woods Richardson",
+              "teamName": "Minnesota Twins",
+              "opponentName": "Chicago White Sox",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 1
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 4
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 824594,
           "date": "2026-05-29",
@@ -825,7 +991,7 @@
             },
             {
               "inning": 3,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 4,
@@ -841,7 +1007,7 @@
             },
             {
               "inning": 7,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 8,
@@ -900,7 +1066,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 8
+              "runs": 4
             },
             {
               "inning": 2,
@@ -920,7 +1086,7 @@
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
@@ -928,7 +1094,7 @@
             },
             {
               "inning": 8,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 9,
@@ -1076,6 +1242,255 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 823294,
+          "date": "2026-05-26",
+          "opponent": "Padres",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 4,
+          "runsAgainst": 3,
+          "starters": {
+            "team": {
+              "pitcherId": 605400,
+              "pitcherName": "Aaron Nola",
+              "teamName": "Philadelphia Phillies",
+              "opponentName": "San Diego Padres",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 681190,
+              "pitcherName": "Randy Vásquez",
+              "teamName": "San Diego Padres",
+              "opponentName": "Philadelphia Phillies",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 1
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 2
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 823295,
+          "date": "2026-05-27",
+          "opponent": "Padres",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 3,
+          "runsAgainst": 0,
+          "starters": {
+            "team": {
+              "pitcherId": 650911,
+              "pitcherName": "Cristopher Sánchez",
+              "teamName": "Philadelphia Phillies",
+              "opponentName": "San Diego Padres",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 621111,
+              "pitcherName": "Walker Buehler",
+              "teamName": "San Diego Padres",
+              "opponentName": "Philadelphia Phillies",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Late cash",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Won late",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 2
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 1
+            }
+          ]
+        },
+        {
+          "gamePk": 823946,
+          "date": "2026-05-29",
+          "opponent": "Dodgers",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 2,
+          "runsAgainst": 4,
+          "starters": {
+            "team": {
+              "pitcherId": 554430,
+              "pitcherName": "Zack Wheeler",
+              "teamName": "Philadelphia Phillies",
+              "opponentName": "Los Angeles Dodgers",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 680736,
+              "pitcherName": "Justin Wrobleski",
+              "teamName": "Los Angeles Dodgers",
+              "opponentName": "Philadelphia Phillies",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 1
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 1
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 823945,
           "date": "2026-05-30",
@@ -1274,15 +1689,15 @@
               "tone": "positive"
             },
             "hitters": {
-              "label": "Stranded",
-              "tone": "warning"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Met",
               "tone": "positive"
             },
             "relief": {
-              "label": "Won late",
+              "label": "Held",
               "tone": "positive"
             }
           },
@@ -1301,7 +1716,7 @@
             },
             {
               "inning": 4,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 5,
@@ -1309,7 +1724,7 @@
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
@@ -1357,8 +1772,8 @@
               "tone": "positive"
             },
             "hitters": {
-              "label": "Late cash",
-              "tone": "positive"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Met",
@@ -1388,7 +1803,7 @@
             },
             {
               "inning": 5,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 6,
@@ -1396,7 +1811,7 @@
             },
             {
               "inning": 7,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 8,
@@ -1467,11 +1882,11 @@
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 6,
@@ -1479,7 +1894,7 @@
             },
             {
               "inning": 7,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 8,
@@ -1913,7 +2328,219 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-823453",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 50.6,
+          "noRunProbabilityPct": 49.4,
+          "awayRunProbabilityPct": 48.5,
+          "homeRunProbabilityPct": 4,
+          "lean": "Run",
+          "strength": "thin",
+          "sampleHalves": 128,
+          "caution": "Phillies starter has stayed clean in the 1st across recent starts",
+          "reason": "YRFI with a 51% modeled chance of at least one first-inning run. White Sox score 48.5% of the time and Phillies 4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 70.9,
+          "noRunProbabilityPct": 29.1,
+          "awayRunProbabilityPct": 38,
+          "homeRunProbabilityPct": 32.9,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 128,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: White Sox F5 runs 1.5; Phillies F5 runs 2.5; Aaron Nola: HA 5.5, ER 2.5, win yes +120; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 81.1,
+          "noRunProbabilityPct": 18.9,
+          "awayRunProbabilityPct": 52,
+          "homeRunProbabilityPct": 29.1,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 128,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: White Sox F5 runs 1.5; Phillies F5 runs 2.5; Aaron Nola: HA 5.5, ER 2.5, win yes +120; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 77.3,
+          "noRunProbabilityPct": 22.7,
+          "awayRunProbabilityPct": 34.3,
+          "homeRunProbabilityPct": 43,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 128,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: White Sox F5 runs 1.5; Phillies F5 runs 2.5; Aaron Nola: HA 5.5, ER 2.5, win yes +120; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 78,
+          "noRunProbabilityPct": 22,
+          "awayRunProbabilityPct": 40.2,
+          "homeRunProbabilityPct": 37.8,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 128,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: White Sox F5 runs 1.5; Phillies F5 runs 2.5; Aaron Nola: HA 5.5, ER 2.5, win yes +120; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "White Sox @ Phillies",
+      "mlbGamePk": 823453,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "phillies": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "white-sox": {
+            "first3": {
+              "line": 0.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "aaron-nola": {
+            "name": "Aaron Nola",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": 111,
+              "underOdds": -148,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 5.5,
+              "overOdds": 103,
+              "underOdds": -137,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 120,
+              "noOdds": -164
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "White Sox": {
@@ -1968,7 +2595,7 @@
   "lineupBoard": {
     "gameId": "white-sox-phillies",
     "title": "White Sox @ Phillies",
-    "snapshot": "2026-06-07T15:20:45.575Z",
+    "snapshot": "2026-06-07T16:39:59.685Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -1983,7 +2610,7 @@
       "label": "85°F | Wind 13 mph L-R | 5% precip"
     },
     "marketWeatherContext": {
-      "line": "PHI -171",
+      "line": "PHI -169",
       "total": "9.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -6121,14 +6748,14 @@
       "pitchHand": "L",
       "wins": 0,
       "losses": 0,
-      "era": "20.25",
-      "strikeOuts": 2,
-      "inningsPitched": "2.2",
-      "hitsAllowed": 4,
+      "era": "18.90",
+      "strikeOuts": 3,
+      "inningsPitched": "3.1",
+      "hitsAllowed": 6,
       "walks": 3,
       "homeRunsAllowed": 2,
-      "whip": "2.63",
-      "gamesStarted": 0,
+      "whip": "2.70",
+      "gamesStarted": 1,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 656457,
@@ -6191,7 +6818,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:33.921Z"
+        "fetchedAt": "2026-06-07T16:38:47.872Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -9404,13 +10031,13 @@
           "Away split: 18.00 ERA / 1 HR allowed.",
           "vs. Right: .400 AVG / 1.700 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
-        "status": "debut-window",
-        "label": "Debut / opener watch",
-        "note": "No MLB starts are loaded yet, so this looks like a debut, opener, or fresh call-up lane with very little reliable innings history.",
+        "status": "tiny-sample",
+        "label": "Tiny MLB sample",
+        "note": "Only 1 MLB start are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 0,
         "daysSinceLastStart": null,
         "startsLoaded": 0,
@@ -9431,14 +10058,14 @@
       "pitchHand": "R",
       "wins": 3,
       "losses": 4,
-      "era": "5.55",
-      "strikeOuts": 64,
-      "inningsPitched": "61.2",
-      "hitsAllowed": 68,
-      "walks": 18,
+      "era": "5.86",
+      "strikeOuts": 68,
+      "inningsPitched": "66.0",
+      "hitsAllowed": 74,
+      "walks": 22,
       "homeRunsAllowed": 11,
-      "whip": "1.39",
-      "gamesStarted": 12,
+      "whip": "1.45",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 605400,
@@ -9587,24 +10214,24 @@
       "strikeoutMarket": {
         "playerName": "Aaron Nola",
         "line": 5.5,
-        "overPrice": 101,
+        "overPrice": 105,
         "underPrice": -129,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/aaron-nola-vs-white-sox",
-        "answerText": "Aaron Nola has a record of 2-0 with an ERA of 1.80 and 17 strikeouts in 2 appearances versus the White Sox in his career.",
+        "answerText": "Aaron Nola is 2-0 with an ERA of 1.80 and 17 strikeouts in 2 appearances versus the White Sox in his career.",
         "pitcherName": "Aaron Nola",
         "pitcherTeam": "Phillies",
         "opponentTeam": "White Sox",
         "appearances": 2,
         "gamesStarted": 2,
-        "wins": null,
-        "losses": null,
+        "wins": 2,
+        "losses": 0,
         "era": 1.8,
         "strikeouts": 17,
         "inningsPitched": "15.0",
@@ -9689,7 +10316,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:35.555Z"
+        "fetchedAt": "2026-06-07T16:38:49.465Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -14518,7 +15145,7 @@
           "vs. Left: .292 AVG / .864 OPS allowed.",
           "Citizens Bank Park: 5.47 ERA / .301 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -14572,7 +15199,7 @@
       {
         "label": "Total",
         "book": "DraftKings typed MLB board",
-        "value": "o9 -114 / u9 -105"
+        "value": "o9 -114 / u9 -106"
       },
       {
         "label": "Moneyline",
@@ -14599,7 +15226,7 @@
       "index": 0,
       "role": "Away",
       "name": "White Sox",
-      "detail": "Tyler Gilbert (LHP) | 0-0 | 20.25 ERA | 2 SO | 2.63 WHIP | 2.2 IP",
+      "detail": "Tyler Gilbert (LHP) | 0-0 | 18.90 ERA | 3 SO | 2.70 WHIP | 3.1 IP",
       "americanOdds": 143,
       "americanLabel": "+143",
       "decimalOdds": 2.4299999999999997,
@@ -14611,7 +15238,7 @@
       "index": 1,
       "role": "Home",
       "name": "Phillies",
-      "detail": "Aaron Nola (RHP) | 3-4 | 5.55 ERA | 64 SO | 1.39 WHIP | 61.2 IP",
+      "detail": "Aaron Nola (RHP) | 3-4 | 5.86 ERA | 68 SO | 1.45 WHIP | 66.0 IP",
       "americanOdds": -173,
       "americanLabel": "-173",
       "decimalOdds": 1.5780346820809248,
@@ -14629,7 +15256,7 @@
         "index": 0,
         "role": "Away",
         "name": "White Sox",
-        "detail": "Tyler Gilbert (LHP) | 0-0 | 20.25 ERA | 2 SO | 2.63 WHIP | 2.2 IP",
+        "detail": "Tyler Gilbert (LHP) | 0-0 | 18.90 ERA | 3 SO | 2.70 WHIP | 3.1 IP",
         "americanOdds": 143,
         "americanLabel": "+143",
         "decimalOdds": 2.4299999999999997,
@@ -14641,7 +15268,7 @@
         "index": 1,
         "role": "Home",
         "name": "Phillies",
-        "detail": "Aaron Nola (RHP) | 3-4 | 5.55 ERA | 64 SO | 1.39 WHIP | 61.2 IP",
+        "detail": "Aaron Nola (RHP) | 3-4 | 5.86 ERA | 68 SO | 1.45 WHIP | 66.0 IP",
         "americanOdds": -173,
         "americanLabel": "-173",
         "decimalOdds": 1.5780346820809248,
@@ -14658,7 +15285,7 @@
       "index": 1,
       "role": "Home",
       "name": "Phillies",
-      "detail": "Aaron Nola (RHP) | 3-4 | 5.55 ERA | 64 SO | 1.39 WHIP | 61.2 IP",
+      "detail": "Aaron Nola (RHP) | 3-4 | 5.86 ERA | 68 SO | 1.45 WHIP | 66.0 IP",
       "americanOdds": -173,
       "americanLabel": "-173",
       "decimalOdds": 1.5780346820809248,
@@ -14670,33 +15297,26 @@
       "index": 0,
       "role": "Away",
       "name": "White Sox",
-      "detail": "Tyler Gilbert (LHP) | 0-0 | 20.25 ERA | 2 SO | 2.63 WHIP | 2.2 IP",
+      "detail": "Tyler Gilbert (LHP) | 0-0 | 18.90 ERA | 3 SO | 2.70 WHIP | 3.1 IP",
       "americanOdds": 143,
       "americanLabel": "+143",
       "decimalOdds": 2.4299999999999997,
       "impliedProbability": 0.411522633744856,
       "impliedProbabilityLabel": "41.2%"
     },
-    "lean": "Model pick: Phillies on starter era and market price.",
-    "rationale": "Starter ERA: Phillies (5.55 ERA) vs White Sox (20.25 ERA)",
-    "confidence": 53,
+    "lean": "Model pick: Phillies on market price and starter era.",
+    "rationale": "Market price: Phillies (60.6% no-vig) vs White Sox (39.4% no-vig)",
+    "confidence": 54,
     "volatility": 92,
-    "recommendationScore": 34,
+    "recommendationScore": 35,
     "tier": "Swingy",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 4.9,
-    "modelEdgeLabel": "4.9-point model edge",
+    "modelEdge": 5.3,
+    "modelEdgeLabel": "5.3-point model edge",
     "marketProbability": 0.6062821788603816,
     "marketProbabilityLabel": "60.6%",
     "inputs": [
-      {
-        "label": "Starter ERA",
-        "summary": "Starter ERA: Phillies (5.55 ERA) vs White Sox (20.25 ERA)",
-        "source": "Listed probable starters",
-        "margin": 24.1,
-        "weight": 0.23
-      },
       {
         "label": "Market price",
         "summary": "Market price: Phillies (60.6% no-vig) vs White Sox (39.4% no-vig)",
@@ -14705,10 +15325,17 @@
         "weight": 0.26
       },
       {
-        "label": "Strikeout ceiling",
-        "summary": "Strikeout ceiling: Phillies (64 SO) vs White Sox (2 SO)",
+        "label": "Starter ERA",
+        "summary": "Starter ERA: Phillies (5.86 ERA) vs White Sox (18.90 ERA)",
         "source": "Listed probable starters",
-        "margin": 51.8,
+        "margin": 21.3,
+        "weight": 0.23
+      },
+      {
+        "label": "Strikeout ceiling",
+        "summary": "Strikeout ceiling: Phillies (68 SO) vs White Sox (3 SO)",
+        "source": "Listed probable starters",
+        "margin": 50.8,
         "weight": 0.09
       }
     ],
@@ -14835,14 +15462,14 @@
     "indicators": {
       "reliefPitchingRisk": 60,
       "coinflipPressure": 65,
-      "starterLeverageIndex": 67.1,
+      "starterLeverageIndex": 65.7,
       "lateInningStabilityIndex": 48.3,
       "pickBullpenScore": 64.4,
       "oppBullpenScore": 54.7,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 58,
-      "oppStarterScore": 35.7,
+      "pickStarterScore": 57,
+      "oppStarterScore": 35.9,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -14940,7 +15567,7 @@
         "moderateFavoriteClean"
       ],
       "favoredSignalCount": 6,
-      "starterLateGap": 18.8,
+      "starterLateGap": 17.4,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 1.6,
       "gameShape": {
@@ -14949,7 +15576,7 @@
         "category": "balanced_traffic",
         "bestExpression": "Wait for first real scoring pocket",
         "categoryConfidence": 50,
-        "realityGapScore": 49.7,
+        "realityGapScore": 49.6,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -15027,7 +15654,7 @@
           "projectedHitEdge": 0
         }
       },
-      "summary": "Balanced traffic game: Wait for first real scoring pocket. Reality-gap 49.7/100. Main checks: 85°F | Wind 13 mph L-R | 5% precip | weather helps carry.",
+      "summary": "Balanced traffic game: Wait for first real scoring pocket. Reality-gap 49.6/100. Main checks: 85°F | Wind 13 mph L-R | 5% precip | weather helps carry.",
       "pickTeam": "Phillies",
       "opponentTeam": "White Sox",
       "scores": {
@@ -15035,9 +15662,9 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 60,
         "bullpenFlipScore": 32.7,
-        "starterControlScore": 40.9,
-        "marketContradictionScore": 20.7,
-        "realityGapScore": 49.7
+        "starterControlScore": 39.6,
+        "marketContradictionScore": 20.3,
+        "realityGapScore": 49.6
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -15051,9 +15678,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 10.4,
-            "pickScore": 10.4,
-            "opponentScore": 6.4
+            "gameScore": 10.3,
+            "pickScore": 10.3,
+            "opponentScore": 6.5
           },
           {
             "id": "chaos",
@@ -15101,7 +15728,7 @@
             "role": "pick",
             "team": "Phillies",
             "scores": {
-              "pressure": 10.4,
+              "pressure": 10.3,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -15109,7 +15736,7 @@
               "flow": 0
             },
             "polygon": [
-              10.4,
+              10.3,
               5,
               0,
               16,
@@ -15120,7 +15747,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 58,
+              "starterScore": 57,
               "bullpenScore": 64.4,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -15134,7 +15761,7 @@
             "role": "opponent",
             "team": "White Sox",
             "scores": {
-              "pressure": 6.4,
+              "pressure": 6.5,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -15142,7 +15769,7 @@
               "flow": 100
             },
             "polygon": [
-              6.4,
+              6.5,
               5,
               0,
               16,
@@ -15153,7 +15780,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 35.7,
+              "starterScore": 35.9,
               "bullpenScore": 54.7,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -15168,7 +15795,7 @@
           "label": "Balanced traffic game",
           "bestExpression": "Wait for first real scoring pocket",
           "scores": {
-            "pressure": 10.4,
+            "pressure": 10.3,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
@@ -15176,7 +15803,7 @@
             "flow": 40
           },
           "polygon": [
-            10.4,
+            10.3,
             44.8,
             8.5,
             24.4,
@@ -15653,7 +16280,7 @@
         "runDiff": -0.8,
         "absoluteRunDiff": 0.8,
         "runDiffSharePct": 7.4,
-        "confidence": 53,
+        "confidence": 54,
         "marketProbabilityPct": 60.6,
         "grade": "Thin ML shape",
         "source": "MLB-M2 mlbProjection",
@@ -15714,7 +16341,7 @@
             "projectedHitEdge": 0
           }
         },
-        "summary": "Balanced traffic game: Wait for first real scoring pocket. Reality-gap 49.7/100. Main checks: 85°F | Wind 13 mph L-R | 5% precip | weather helps carry.",
+        "summary": "Balanced traffic game: Wait for first real scoring pocket. Reality-gap 49.6/100. Main checks: 85°F | Wind 13 mph L-R | 5% precip | weather helps carry.",
         "pickTeam": "Phillies",
         "opponentTeam": "White Sox",
         "scores": {
@@ -15722,9 +16349,9 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 60,
           "bullpenFlipScore": 32.7,
-          "starterControlScore": 40.9,
-          "marketContradictionScore": 20.7,
-          "realityGapScore": 49.7
+          "starterControlScore": 39.6,
+          "marketContradictionScore": 20.3,
+          "realityGapScore": 49.6
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -15738,9 +16365,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 10.4,
-              "pickScore": 10.4,
-              "opponentScore": 6.4
+              "gameScore": 10.3,
+              "pickScore": 10.3,
+              "opponentScore": 6.5
             },
             {
               "id": "chaos",
@@ -15788,7 +16415,7 @@
               "role": "pick",
               "team": "Phillies",
               "scores": {
-                "pressure": 10.4,
+                "pressure": 10.3,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -15796,7 +16423,7 @@
                 "flow": 0
               },
               "polygon": [
-                10.4,
+                10.3,
                 5,
                 0,
                 16,
@@ -15807,7 +16434,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 58,
+                "starterScore": 57,
                 "bullpenScore": 64.4,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -15821,7 +16448,7 @@
               "role": "opponent",
               "team": "White Sox",
               "scores": {
-                "pressure": 6.4,
+                "pressure": 6.5,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -15829,7 +16456,7 @@
                 "flow": 100
               },
               "polygon": [
-                6.4,
+                6.5,
                 5,
                 0,
                 16,
@@ -15840,7 +16467,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 35.7,
+                "starterScore": 35.9,
                 "bullpenScore": 54.7,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -15855,7 +16482,7 @@
             "label": "Balanced traffic game",
             "bestExpression": "Wait for first real scoring pocket",
             "scores": {
-              "pressure": 10.4,
+              "pressure": 10.3,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
@@ -15863,7 +16490,7 @@
               "flow": 40
             },
             "polygon": [
-              10.4,
+              10.3,
               44.8,
               8.5,
               24.4,
@@ -16087,7 +16714,7 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
-        "confidence": 82,
+        "confidence": 68,
         "probability": 89.3,
         "expectedValue": 2.2,
         "statValueLabel": "2.23 exp RBI",
@@ -16127,7 +16754,7 @@
           "trackingPenalty": 18,
           "reason": "contact-stable profile"
         },
-        "recommendationTier": "Core",
+        "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 2 carry | process improving; approach 78.3/100 | recent form up | run-production slot",
@@ -16141,6 +16768,154 @@
           "carry-bat-live",
           "process-improving",
           "run-production-slot",
+          "statcast-power-up",
+          "statcast-contact-up"
+        ],
+        "matchupNote": "+10.00 vs Aaron Nola",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".243 AVG | .869 OPS | 55 H | 15 HR | 12g: .304 AVG | 1.037 OPS | 14 H | 4 HR | vs RHP: .205 AVG | .730 OPS | 8 HR | career 1412 PA | .682 OPS | 42 HR | contact-stable profile | power 49 | 2026 sample ok | arsenal Curveball 34% / 4-Seam Fastball 26% / Sinker 20% | fit +2.6 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "white-sox-phillies:678246:runs",
+        "gameId": "white-sox-phillies",
+        "gameTitle": "White Sox @ Phillies",
+        "league": "MLB",
+        "playerId": 678246,
+        "playerName": "Miguel Vargas",
+        "teamName": "White Sox",
+        "slot": 2,
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 72,
+        "probability": 88.9,
+        "expectedValue": 2.2,
+        "statValueLabel": "2.20 exp runs",
+        "sample": {
+          "seasonGames": 63,
+          "seasonPlateAppearances": 277,
+          "recentGames": 12,
+          "recentPlateAppearances": 58,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 28,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1412,
+          "seasonPa": 277,
+          "powerIndex": 49.25,
+          "contactRisk": 37.35,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 78.3,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": 9.9,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 277,
+            "careerPa": 1412
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 2 carry | recent form up | run-scoring slot",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "run-scoring-slot",
+          "statcast-power-up",
+          "statcast-contact-up"
+        ],
+        "matchupNote": "+10.00 vs Aaron Nola",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".243 AVG | .869 OPS | 55 H | 15 HR | 12g: .304 AVG | 1.037 OPS | 14 H | 4 HR | vs RHP: .205 AVG | .730 OPS | 8 HR | career 1412 PA | .682 OPS | 42 HR | contact-stable profile | power 49 | 2026 sample ok | arsenal Curveball 34% / 4-Seam Fastball 26% / Sinker 20% | fit +2.6 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "white-sox-phillies:678246:hitRunRbi",
+        "gameId": "white-sox-phillies",
+        "gameTitle": "White Sox @ Phillies",
+        "league": "MLB",
+        "playerId": 678246,
+        "playerName": "Miguel Vargas",
+        "teamName": "White Sox",
+        "slot": 2,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
+        "confidence": 82,
+        "probability": 95.4,
+        "expectedValue": 4.8,
+        "statValueLabel": "1.48 H · 1.54 R · 1.83 RBI · 4.85 total",
+        "sample": {
+          "seasonGames": 63,
+          "seasonPlateAppearances": 277,
+          "recentGames": 12,
+          "recentPlateAppearances": 58,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 28,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1412,
+          "seasonPa": 277,
+          "powerIndex": 49.25,
+          "contactRisk": 37.35,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 78.3,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": 9.9,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 277,
+            "careerPa": 1412
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 2 carry | recent form up | combined hits/runs/RBI lane",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "combined-production-lane",
           "statcast-power-up",
           "statcast-contact-up"
         ],
@@ -16309,10 +17084,10 @@
         "propType": "walks",
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
-        "confidence": 70,
-        "probability": 63.9,
-        "expectedValue": 1,
-        "statValueLabel": "1.02 exp walks",
+        "confidence": 71,
+        "probability": 65.6,
+        "expectedValue": 1.1,
+        "statValueLabel": "1.07 exp walks",
         "sample": {
           "seasonGames": 63,
           "seasonPlateAppearances": 277,
@@ -16442,164 +17217,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "posted",
         "playerSummary": ".335 AVG | .870 OPS | 70 H | 7 HR | 12g: .435 AVG | 1.197 OPS | 20 H | 4 HR | vs LHP: .286 AVG | .770 OPS | 1 HR | career 2293 PA | .756 OPS | 57 HR | baseline career profile | power 53 | 2026 sample ok | arsenal Sinker 37% / Sweeper 33% / Cutter 19% | fit +3.0 | +10.0 matchup grade in a neutral lane"
-      },
-      {
-        "id": "white-sox-phillies:643217:rbi",
-        "gameId": "white-sox-phillies",
-        "gameTitle": "White Sox @ Phillies",
-        "league": "MLB",
-        "playerId": 643217,
-        "playerName": "Andrew Benintendi",
-        "teamName": "White Sox",
-        "slot": 3,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 82,
-        "probability": 85.7,
-        "expectedValue": 1.9,
-        "statValueLabel": "1.94 exp RBI",
-        "sample": {
-          "seasonGames": 57,
-          "seasonPlateAppearances": 204,
-          "recentGames": 12,
-          "recentPlateAppearances": 46,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 24,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 4960,
-          "seasonPa": 204,
-          "powerIndex": 47.97,
-          "contactRisk": 35.78,
-          "roleStability": 100,
-          "label": "contact-stable profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 72,
-            "processScore": 18,
-            "careerWeight": 0.1,
-            "identityDelta": 0.7,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 204,
-            "careerPa": 4960
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "contact-stable profile"
-        },
-        "recommendationTier": "Core",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 3 carry | process improving; approach 72/100 | recent form up | split fit live",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "middle-order-traffic",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "run-production-slot",
-          "statcast-power-up",
-          "statcast-hr-carry",
-          "statcast-fade"
-        ],
-        "matchupNote": "+10.00 vs Aaron Nola",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".239 AVG | .703 OPS | 44 H | 6 HR | 12g: .263 AVG | .970 OPS | 10 H | 4 HR | vs RHP: .247 AVG | .746 OPS | 6 HR | career 4960 PA | .751 OPS | 122 HR | contact-stable profile | power 48 | 2026 sample ok | arsenal Curveball 34% / 4-Seam Fastball 26% / Sinker 20% | fit +2.9 | +10.0 matchup grade in a traffic-risk lane"
-      },
-      {
-        "id": "white-sox-phillies:669016:rbi",
-        "gameId": "white-sox-phillies",
-        "gameTitle": "White Sox @ Phillies",
-        "league": "MLB",
-        "playerId": 669016,
-        "playerName": "Brandon Marsh",
-        "teamName": "Phillies",
-        "slot": 4,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 79,
-        "probability": 80.4,
-        "expectedValue": 1.6,
-        "statValueLabel": "1.63 exp RBI",
-        "sample": {
-          "seasonGames": 59,
-          "seasonPlateAppearances": 223,
-          "recentGames": 12,
-          "recentPlateAppearances": 48,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 22,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 2293,
-          "seasonPa": 223,
-          "powerIndex": 53.46,
-          "contactRisk": 59.85,
-          "roleStability": 100,
-          "label": "baseline career profile",
-          "volatilityLabel": "strikeout volatility",
-          "careerPowerBacked": false,
-          "careerVolatile": true,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 75.8,
-            "processScore": 15,
-            "careerWeight": 0.1,
-            "identityDelta": 8.1,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 223,
-            "careerPa": 2293
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "baseline career profile"
-        },
-        "recommendationTier": "Core",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 4 carry | process improving; approach 75.8/100 | recent form up | run-production slot",
-        "scriptTags": [
-          "posted-lineup",
-          "middle-order-traffic",
-          "deep-lineup",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "run-production-slot",
-          "statcast-power-up",
-          "statcast-contact-up"
-        ],
-        "matchupNote": "+10.00 vs Tyler Gilbert",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".335 AVG | .870 OPS | 70 H | 7 HR | 12g: .435 AVG | 1.197 OPS | 20 H | 4 HR | vs LHP: .286 AVG | .770 OPS | 1 HR | career 2293 PA | .756 OPS | 57 HR | baseline career profile | power 53 | 2026 sample ok | arsenal Sinker 37% / Sweeper 33% / Cutter 19% | fit +3.0 | +10.0 matchup grade in a neutral lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 46,
+    "candidateCount": 63,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

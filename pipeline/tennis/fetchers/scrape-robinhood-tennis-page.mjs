@@ -89,7 +89,7 @@ const isDoublesName = (value) => /[/&]/.test(String(value || ''))
 
 const SURFACE_BY_TOURNAMENT_TOKEN = [
   [/french open|roland garros/i, 'Clay', 'Grand Slam tournament surface'],
-  [/perugia|foggia|makarska|modena|bratislava|lyon|cattolica/i, 'Clay', 'ATP/WTA clay tournament surface'],
+  [/perugia|foggia|makarska|modena|bratislava|lyon|cattolica|san miguel de tucuman/i, 'Clay', 'ATP/WTA clay tournament surface'],
   [/prostejov/i, 'Clay', 'ATP Challenger Prostejov surface'],
   [/bad rappenau|heilbronn|neckarcup/i, 'Clay', 'ATP Challenger Bad Rappenau surface'],
   [/\b(birmingham|wimbledon|halle|queen|hertogenbosch|london|ilkley)\b/i, 'Grass', 'Grass tournament surface'],

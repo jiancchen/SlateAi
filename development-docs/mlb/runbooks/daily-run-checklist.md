@@ -27,6 +27,11 @@ Required prior-day checks:
 - the postmortem names the actual failure shape before any next-day model change is trusted.
 - if an MLB-M2-style branch is being evaluated, rerun the category/lane backtest and record whether the prior day was side, F5/timing, total, first-inning, live-only, or no-pregame-ML shape.
 - if the starter-split addendum is being evaluated, run it as shadow only and record source coverage plus YRFI/NRFI, F5 O/U, F5 side/tie, and F5 ML grading before trusting any confidence change.
+- run the shadow calibration addendum over the latest settled window before trusting POTD or top-board promotion. This is a promotion/ranking layer only; it must not delete model rows or change saved projections.
+
+```bash
+npm run data:research:mlb-shadow-calibration-addendum -- --dates RECENT-SETTLED-DATES
+```
 
 If the side rows are missing, do not start the new slate. Fix closeout first.
 
@@ -57,6 +62,7 @@ Run the full live refresh, not only a one-off exporter.
 
 ```bash
 npm run data:refresh:mlb-live -- --date YYYY-MM-DD
+npm run data:warehouse:mlb-fic-daily-matchups -- --date YYYY-MM-DD
 ```
 
 This should rebuild:
@@ -66,6 +72,7 @@ This should rebuild:
 - HR board
 - non-HR prop board
 - prop import/grading hooks
+- FantasyInfoCentral Daily Matchups warehouse rows for the same-day H+R+RBI clean-board gate
 
 ## 3. Verification Pass
 
@@ -143,6 +150,53 @@ Even if the verifier passes, manually inspect these:
 ### Props
 - Make sure the saved prop file exists.
 - Make sure props are not empty even if grading is still `0/x` because games have not finished.
+- Pregame value boards must use the current separated format:
+  - full-game ML / side rows
+  - first-five ML rows with tie/push risk visible
+  - first-five O/U rows only when the stored line is real and the final lane is actionable `Over` or `Under`; `Pass`, `Hold`, and `Unsupported over` rows belong in research-only, never in POTD or top-value promotion
+  - team-total rows from typed specialty market anchors, but show only first-five team totals on the value board
+  - pitcher earned-runs rows from typed specialty market anchors
+  - combined H+R+RBI rows
+  - separate Hits, Runs, and RBI component rows
+- Every MLB game should keep its market/model reads visible where data exists: ML shape, F5 ML, F5 O/U, F5 team totals, and YRFI/NRFI. The shadow calibration addendum should add `promoted`, `watch`, or `research` tiering plus reasons; it should not hide unpromoted rows.
+- POTD eligibility comes from the shadow calibration tier, not raw model confidence. If a lane has no `promoted` row, show no POTD candidate for that lane rather than reaching into `watch` or `research`.
+- ML shape promotion/sorting answers the `%confidence vs %diff/total` question this way: model confidence is the primary trust signal, edge versus market is second, and projected run-gap share is only margin support/tiebreak context. Do not sort ML shape primarily by `diff/total`; a lower-confidence big-margin row is a `watch` row unless the confidence bucket clears promotion.
+- ML shape explanation text must interpret metric conflicts, not just list the numbers. If confidence is high but margin support is thin, label it as a closer-score win profile. If margin support is high but confidence is low, explain that confidence is too low to promote. If both agree, say both confidence and margin support back the read.
+- Before games start, do not mark any current-day value-board row as `Hit` or `Miss`. Settlement styling belongs only to completed or started-and-finalized games with real result rows from the follow-up flow.
+- For completed past slates, value-board rows should show green/red settlement only when a trusted result source exists:
+  - full-game ML / side uses `fullGameHit`
+  - first-five ML uses `first5Hit`
+  - first-five O/U uses the stored first-five total result
+  - combined H+R+RBI uses actual player H+R+RBI from the MLB boxscore
+  - component Hits, Runs, and RBI must remain separate from the combined H+R+RBI lane
+- Combined H+R+RBI rows should retain the clean-board context fields without deleting the underlying prediction: projected full-game team result, recent AB, and actual full-game team result after settlement. The value-board filter is projected full-game ML win, 70%+ confidence, and 30+ AB; do not require F5 ML win/hold for H+R+RBI.
+- Combined H+R+RBI clean-board promotion also requires today's FantasyInfoCentral batter-vs-pitcher matchup check:
+  - source: `https://www.fantasyinfocentral.com/mlb/daily-matchups`
+  - command: `npm run data:warehouse:mlb-fic-daily-matchups -- --date YYYY-MM-DD`
+  - warehouse outputs: raw HTML under `data-private/raw/fantasyinfocentral/mlb/daily-matchups/`, normalized JSON under `data-private/warehouse/mlb/fantasyinfocentral-daily-matchups/`, SQLite rows in `mlb_fic_daily_matchups`, and public-safe rows in `web/src/lib/mlb-fic-daily-matchups.generated.js`
+  - hitter must be matched to today's listed opposing starter
+  - minimum 5 career AB vs that pitcher
+  - batter-vs-pitcher AVG over .300
+  - batter-vs-pitcher OPS over 1.000
+  - if the hitter's recent OPS is low, keep the row as watch/research even if broader model context likes the bat
+  - example failure shape: a player like Josh Naylor can clear broad HRR model context, but should not be clean-promoted if recent OPS/BvP strength does not satisfy the FIC gate
+- The HRR board should still show both combined H+R+RBI and separate Hits/Runs/RBI lanes. If the FIC gate removes a combined clean-board promotion, do not remove component prop rows unless their own component-specific filters fail.
+- After fetching DraftKings MLB markets, verify the specialty market anchors are normalized into SQL-MLB. These are required context for inning-by-inning improvements and should not live only in public JSON:
+
+```bash
+python3 data-migration/scripts/ingest_mlb_markets_props_raw_to_typed.py --date YYYY-MM-DD --report data-migration/reports/ingest_mlb_markets_props_raw_to_typed_YYYY-MM-DD_specialty_anchors.json
+sqlite3 data-private/warehouse/sports/mlb/sql-mlb.db "select market_type, count(*) from market_snapshots where captured_at like 'YYYY-MM-DD%' and source_name='draftkings' and market_type like 'teamTotal%' group by 1 order by 1;"
+sqlite3 data-private/warehouse/sports/mlb/sql-mlb.db "select market_type, count(*) from prop_market_snapshots where market_date='YYYY-MM-DD' and source_name='draftkings' and market_type in ('pitcher_hits_allowed','pitcher_earned_runs_allowed','pitcher_record_win') group by 1 order by 1;"
+```
+
+Expected specialty anchors, when DK offers them:
+- team total runs O/U, especially first 3 / first 5 / first 7 inning windows
+- team total hits O/U when available
+- pitcher hits allowed O/U
+- pitcher earned runs allowed O/U
+- pitcher to record a win, yes/no
+
+If team total hits are absent from DK, leave that anchor missing rather than backfilling from JSON or inventing a line. The inning model should read typed anchors through `loadMlbSpecialtyMarketAnchorsFromDb`, with raw sportsbook files used only as the ingest source.
 - Savant game logs are mostly redundant with the pitch/game warehouse. Use them as a player-page sanity check, not as the primary stored source, because `mlb_pitch_events`, `mlb_player_game_batting`, and `mlb_hitter_statcast_game_logs` should already preserve the underlying game data.
 - Savant hitter splits are not redundant. The lineup export now persists the daily handedness/platoon split rows into `mlb_hitter_split_snapshots`; keep that table fresh before trusting prop or hitter-fit writeups.
 - Required split warehouse shape:
@@ -237,16 +291,28 @@ If any of those fail, rerun or patch before trusting the board.
 Current hard rule:
 - First-five O/U rows are research-only after the May 31 failure. Do not publish them as bet-grade value until settled bucket calibration exists for line, ask, model probability, projected-run edge, chaos gate, and date-level walk-forward ROI.
 - The web value board must filter model-owned rows only. Do not add UI-side value math for F5 ML, F5 O/U, totals, scalp trades, or any new market. If a lane is not in the cartridge output, it is not a value-board lane yet.
-- First-five O/U display lines must come from the artifact's actual line fields, in this order: `postedFirst5TotalLine`, `derivedFirst5TotalLine`, then `runShareFirst5TotalLine`. Do not reconstruct a betting line from `projectedFirst5Total - edge`; tail overlays can change the projected runs and make that reconstruction invent fake lines.
+- First-five O/U display lines must come from the artifact's actual line fields, in this order: `postedFirst5TotalLine`, `derivedFirst5TotalLine`, then `runShareFirst5TotalLine`. Do not reconstruct a betting line from `projectedFirst5Total - edge`; tail overlays can change diagnostic edge fields and make that reconstruction invent fake lines.
 - Guard null and blank line candidates before number conversion. `Number(null)` becomes `0`, and a non-positive F5 total line is a hard presentation/data bug, not a fallback.
-- If the value board applies a tail-overlay adjusted projection, the displayed edge must be recalculated as adjusted projection minus the actual stored line. Preserve the raw/base edge only as diagnostic context.
-- Before deploy, audit value-board F5 O/U rows against the slate payload: displayed line, projected runs, edge, and lean must match stored fields and no row should show a synthetic value such as `F5 2.4` unless a sportsbook/source actually posted that number.
+- First-five O/U displayed projection, edge, probability, confidence, and ranking must use the real M2 starter-window run sum: `awayFirst5ProjectedRuns + homeFirst5ProjectedRuns`. Do not use `tailOverlay.adjustedProjectedRuns` as the public projection; preserve it only as diagnostic/gating context.
+- Before deploy, audit value-board F5 O/U rows against the slate payload: displayed line, projected runs, edge, and lean must match stored fields and no row should show a synthetic value such as `F5 2.4` unless a sportsbook/source actually posted that number. Any row whose final lean is `Pass`, `Hold`, or `Unsupported over` must be excluded from POTD/top-value promotion even if its raw model probability is high.
 - F5 ML confidence must account for push/tie risk. Games with a high modeled F5 tie probability, especially low projected F5 totals, should carry a confidence haircut or warning instead of ranking purely by side run edge.
 - F5 O/U confidence must account for edge quality. Thin projected edges, volatile unders, weather/park carry, and chaos tags should reduce displayed confidence even when the lean remains visible.
 - Sort/rank audits should explain why a row moved. For F5 ML, a team can rise because it owns the largest projected F5 run gap; that is a side-gap read, not automatic proof it is the safest value-board bet.
+- Shadow calibration sorting should put `promoted` rows first, then `watch`, then `research`. Within each tier, sort by calibrated score, model confidence, model edge, and market edge. The row must expose the reason, caution flags, and evidence window used by the shadow addendum.
+- For ML shape specifically, the public label should call run-gap share `margin support`, not `diff/total`, so users understand it explains cushion rather than overriding confidence.
+- For UI-only value-board or shadow-calibration refreshes on already generated slates, publish only the affected public dates. Example for the June 6-8, 2026 refresh:
+
+```bash
+npm run publish:site -- --date 2026-06-08 --only-dates=2026-06-06,2026-06-07,2026-06-08
+```
+
 - Pregame batter Statcast bubbles may use the latest `mlb_hitter_statcast_trend_snapshots` row with `as_of_date <= slate date` when same-day Statcast has not landed yet. The exported trend object should carry `sourceAsOfDate` so stale-but-valid context is auditable.
 
 ## 6. End-of-Day Archive Loop
+
+Use the standalone follow-up runbook for the full closeout sequence:
+
+- [MLB Follow-Up Runbook](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-followup-runbook.md:1)
 
 After games finish:
 
@@ -280,6 +346,7 @@ npm run data:research:mlb-m2-game-shape -- --start 2026-05-10 --end YYYY-MM-DD
 npm run data:research:mlb-m2-run-total-stories -- --post-date YYYY-MM-DD --today NEXT-YYYY-MM-DD
 npm run data:research:mlb-m2-state-formulas -- --start 2026-05-10 --end YYYY-MM-DD
 npm run data:research:mlb-starter-split-addendum -- --date YYYY-MM-DD
+node models/mlb/cartridges/MLB-M2/research/inning_expected_batters_shadow.mjs --start START-YYYY-MM-DD --end END-YYYY-MM-DD
 ```
 
 Starter-split shadow review must answer:
@@ -287,6 +354,12 @@ Starter-split shadow review must answer:
 - Did F5 O/U quality improve by avoiding severe misses, not merely by changing hit rate?
 - Did F5 side/tie and F5 ML grading improve, and were tie-risk flags attached to games where the push path was meaningfully elevated?
 - If a source row is missing from SQL-MLB, record the coverage gap. Do not use JSONL as a fallback.
+
+Inning expected-batters shadow review must answer:
+- Did the expected-batter inning model beat the simple league inning baseline on Brier score and calibrated hit rate?
+- Did confidence thresholds improve quality? Check 52%, 55%, 58%, and 60% thresholds rather than forcing every inning into Run/No Run.
+- Was the run better only when Statcast, starter-form, and market-anchor coverage was present? If coverage is partial, leave the model shadow-only and report the missing rows.
+- Did the model improve innings 1-5 without inventing a bridge/late-inning read? Innings 6-9 stay blank until reliever/bridge coverage is trustworthy.
 
 The postmortem should not stop at `risky`, `veto`, projection error, or average miss. It should first answer:
 

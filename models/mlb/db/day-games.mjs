@@ -374,6 +374,84 @@ const loadDbContext = (date) => {
     [date],
     { maxBuffer: 1024 * 1024 * 20 }
   )
+  const teamInningOffenseRows = querySqlite(
+    `
+    with inning_halves as (
+      select
+        pa.batting_team_id as team_id,
+        pa.inning,
+        pa.game_id,
+        sum(coalesce(pa.runs_scored, 0)) as runs
+      from plate_appearances pa
+      join games g on g.game_id = pa.game_id
+      where g.game_date < ?
+        and pa.inning between 1 and 9
+      group by pa.batting_team_id, pa.inning, pa.game_id
+    )
+    select
+      team_id,
+      inning,
+      count(*) as batting_halves,
+      sum(case when runs > 0 then 1 else 0 end) as scored_halves,
+      avg(case when runs > 0 then 1.0 else 0.0 end) as score_rate,
+      avg(runs) as runs_per_half
+    from inning_halves
+    group by team_id, inning
+    `,
+    [date],
+    { maxBuffer: 1024 * 1024 * 20 }
+  )
+  const teamInningDefenseRows = querySqlite(
+    `
+    with inning_halves as (
+      select
+        pa.pitching_team_id as team_id,
+        pa.inning,
+        pa.game_id,
+        sum(coalesce(pa.runs_scored, 0)) as runs_allowed
+      from plate_appearances pa
+      join games g on g.game_id = pa.game_id
+      where g.game_date < ?
+        and pa.inning between 1 and 9
+      group by pa.pitching_team_id, pa.inning, pa.game_id
+    )
+    select
+      team_id,
+      inning,
+      count(*) as pitching_halves,
+      sum(case when runs_allowed > 0 then 1 else 0 end) as allowed_halves,
+      avg(case when runs_allowed > 0 then 1.0 else 0.0 end) as allow_rate,
+      avg(runs_allowed) as runs_allowed_per_half
+    from inning_halves
+    group by team_id, inning
+    `,
+    [date],
+    { maxBuffer: 1024 * 1024 * 20 }
+  )
+  const leagueInningRows = querySqlite(
+    `
+    with inning_halves as (
+      select
+        pa.inning,
+        pa.batting_team_id as team_id,
+        pa.game_id,
+        sum(coalesce(pa.runs_scored, 0)) as runs
+      from plate_appearances pa
+      join games g on g.game_id = pa.game_id
+      where g.game_date < ?
+        and pa.inning between 1 and 9
+      group by pa.inning, pa.batting_team_id, pa.game_id
+    )
+    select
+      inning,
+      count(*) as halves,
+      avg(case when runs > 0 then 1.0 else 0.0 end) as score_rate,
+      avg(runs) as runs_per_half
+    from inning_halves
+    group by inning
+    `,
+    [date]
+  )
 
   return {
     pitcherSeasonById: indexBy(pitcherSeasonRows, (row) => row.pitcher_id),
@@ -393,7 +471,10 @@ const loadDbContext = (date) => {
     bullpenShapeByTeamId: groupBy(bullpenShapeRows, (row) => row.team_id),
     teamStateByTeamId: indexBy(teamStateRows, (row) => row.team_id),
     sunByGameId: indexBy(sunRows, (row) => row.game_id),
-    espnPitcherSplitsByGamePitcher: indexBy(espnPitcherSplitRows, (row) => `${row.game_id}:${row.pitcher_id}`)
+    espnPitcherSplitsByGamePitcher: indexBy(espnPitcherSplitRows, (row) => `${row.game_id}:${row.pitcher_id}`),
+    inningOffenseByTeamInning: indexBy(teamInningOffenseRows, (row) => `${row.team_id}:${row.inning}`),
+    inningDefenseByTeamInning: indexBy(teamInningDefenseRows, (row) => `${row.team_id}:${row.inning}`),
+    leagueInningByInning: indexBy(leagueInningRows, (row) => Number(row.inning))
   }
 }
 
@@ -696,7 +777,15 @@ const buildTeamOffenseContext = (teamId, role, context) => {
 
 const buildTeamBullpenContext = (teamId, context) => {
   const row = bestWindowRow(context.bullpenShapeByTeamId.get(teamId) || [], [10, 5, 15, 30])
-  if (!row) return null
+  if (!row) {
+    return {
+      era: 4.2,
+      whip: 1.31,
+      strikeouts: 100,
+      walks: 38,
+      staleFeed: true
+    }
+  }
   const runs = num(row.total_relief_runs_allowed_avg_last10 ?? row.total_relief_runs_allowed_avg_last5, 1.4)
   const outs = num(row.total_relief_outs_avg_last10 ?? row.total_relief_outs_avg_last5, 9)
   const era = outs > 0 ? (runs * 27) / outs : 4.2
@@ -754,7 +843,103 @@ const buildStoryContext = (teamId, context) => {
   }
 }
 
-const buildStateContext = (game, context, awayTeamId, homeTeamId) => ({
+const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
+
+const weightedRate = (offenseRow, defenseRow, leagueRow) => {
+  const offenseRate = num(offenseRow?.score_rate, null)
+  const defenseRate = num(defenseRow?.allow_rate, null)
+  const leagueRate = num(leagueRow?.score_rate, 0.26)
+  const offenseSample = num(offenseRow?.batting_halves, 0)
+  const defenseSample = num(defenseRow?.pitching_halves, 0)
+  const offenseWeight = offenseSample >= 30 ? 0.5 : offenseSample >= 12 ? 0.38 : 0.22
+  const defenseWeight = defenseSample >= 30 ? 0.34 : defenseSample >= 12 ? 0.27 : 0.16
+  const leagueWeight = Math.max(0.16, 1 - offenseWeight - defenseWeight)
+  return clamp(
+    (Number.isFinite(offenseRate) ? offenseRate : leagueRate) * offenseWeight +
+      (Number.isFinite(defenseRate) ? defenseRate : leagueRate) * defenseWeight +
+      leagueRate * leagueWeight,
+    0.04,
+    0.72
+  )
+}
+
+const inningPhaseLabel = (inning) => {
+  if (inning === 1) return 'starter open'
+  if (inning <= 3) return 'early order'
+  if (inning <= 5) return 'turnover'
+  if (inning === 6) return 'bridge'
+  return 'late leverage'
+}
+
+const buildInningReason = ({ inning, awayName, homeName, awayRate, homeRate, awayOffense, homeOffense, awayDefense, homeDefense, leagueRow, awayPitcher, homePitcher }) => {
+  const phase = inningPhaseLabel(inning)
+  const leader = awayRate >= homeRate ? awayName : homeName
+  const leaderRate = Math.max(awayRate, homeRate)
+  const leaguePct = Math.round(num(leagueRow?.score_rate, 0.26) * 100)
+  const samples = [
+    awayOffense?.batting_halves ? `${awayName} bat ${awayOffense.batting_halves}` : '',
+    homeOffense?.batting_halves ? `${homeName} bat ${homeOffense.batting_halves}` : '',
+    awayDefense?.pitching_halves ? `${awayName} allow ${awayDefense.pitching_halves}` : '',
+    homeDefense?.pitching_halves ? `${homeName} allow ${homeDefense.pitching_halves}` : ''
+  ].filter(Boolean)
+  const espnStarterNote =
+    inning <= 5 && (awayPitcher?.espnSplits?.sourceStatus === 'fetched' || homePitcher?.espnSplits?.sourceStatus === 'fetched')
+      ? ' ESPN starter splits attached.'
+      : ''
+  return `${phase}: ${leader} carry the higher inning score pressure at ${Math.round(leaderRate * 100)}% vs league ${leaguePct}%. ${samples.slice(0, 2).join(' | ') || 'League fallback sample used.'}.${espnStarterNote}`
+}
+
+const buildInningRunMatrix = ({ game, context, awayTeamId, homeTeamId, awayName, homeName, awayPitcher, homePitcher }) => {
+  const innings = Array.from({ length: 9 }, (_, index) => index + 1)
+  const rows = innings.map((inning) => {
+    const leagueRow = context.leagueInningByInning.get(inning) || {}
+    const awayOffense = context.inningOffenseByTeamInning.get(`${awayTeamId}:${inning}`) || null
+    const homeOffense = context.inningOffenseByTeamInning.get(`${homeTeamId}:${inning}`) || null
+    const awayDefense = context.inningDefenseByTeamInning.get(`${awayTeamId}:${inning}`) || null
+    const homeDefense = context.inningDefenseByTeamInning.get(`${homeTeamId}:${inning}`) || null
+    const awayRate = weightedRate(awayOffense, homeDefense, leagueRow)
+    const homeRate = weightedRate(homeOffense, awayDefense, leagueRow)
+    const runProbabilityPct = round((1 - (1 - awayRate) * (1 - homeRate)) * 100, 1)
+    const noRunProbabilityPct = round(100 - runProbabilityPct, 1)
+    const sampleHalves = num(awayOffense?.batting_halves, 0) + num(homeOffense?.batting_halves, 0)
+    const caution = inning === 9 ? 'Bottom ninth is conditional on score state.' : sampleHalves < 40 ? 'Thin team inning sample; league baseline carries more weight.' : ''
+    return {
+      inning,
+      phase: inningPhaseLabel(inning),
+      runProbabilityPct,
+      noRunProbabilityPct,
+      awayRunProbabilityPct: round(awayRate * 100, 1),
+      homeRunProbabilityPct: round(homeRate * 100, 1),
+      lean: runProbabilityPct >= 52 ? 'Run' : 'No run',
+      strength: runProbabilityPct >= 62 || noRunProbabilityPct >= 58 ? 'strong' : runProbabilityPct >= 55 || noRunProbabilityPct >= 53 ? 'lean' : 'thin',
+      sampleHalves,
+      caution,
+      reason: buildInningReason({
+        inning,
+        awayName,
+        homeName,
+        awayRate,
+        homeRate,
+        awayOffense,
+        homeOffense,
+        awayDefense,
+        homeDefense,
+        leagueRow,
+        awayPitcher,
+        homePitcher
+      })
+    }
+  })
+
+  return {
+    source: 'sql-mlb.db plate_appearances + ESPN starter splits',
+    sourceStatus: rows.some((row) => row.sampleHalves > 0) ? 'warehouse' : 'league-fallback',
+    gameId: game.game_id,
+    rows
+  }
+}
+
+const buildStateContext = (game, context, awayTeamId, homeTeamId, awayName, homeName, awayPitcher, homePitcher) => ({
   sunVisibility: context.sunByGameId.get(game.game_id) || null,
   teamState: {
     away: context.teamStateByTeamId.get(awayTeamId) || null,
@@ -771,7 +956,8 @@ const buildStateContext = (game, context, awayTeamId, homeTeamId) => ({
   lineupConversion: {
     away: bestWindowRow(context.lineupShapeByTeamType.get(`${awayTeamId}:conversion`) || [], [10, 8, 15, 30]) || null,
     home: bestWindowRow(context.lineupShapeByTeamType.get(`${homeTeamId}:conversion`) || [], [10, 8, 15, 30]) || null
-  }
+  },
+  inningRunMatrix: buildInningRunMatrix({ game, context, awayTeamId, homeTeamId, awayName, homeName, awayPitcher, homePitcher })
 })
 
 const buildMoneyline = (markets, awayTeamId, homeTeamId) => {
@@ -866,7 +1052,7 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
     [awayName]: awaySide.matchupContext,
     [homeName]: homeSide.matchupContext
   }
-  const stateContext = buildStateContext(game, context, awayTeamId, homeTeamId)
+  const stateContext = buildStateContext(game, context, awayTeamId, homeTeamId, awayName, homeName, awayPitcher, homePitcher)
 
   const baseGame = {
     id: `${slugify(awayName)}-${slugify(homeName)}`,
@@ -966,4 +1152,154 @@ export const loadMlbDayGamesFromDb = async (date) => {
     (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-reliever-shadow.js`))) ?? {}
   const relieverShadowByTeam = relieverShadowModule.relieverShadowByTeam ?? {}
   return board.games.map((game) => buildDbGame(game, context, relieverShadowByTeam))
+}
+
+export const loadMlbInningRunMatricesFromDb = async (date) => {
+  const board = currentDayBoardForDate(date)
+  if (!board.games.length) return {}
+  const context = loadDbContext(date)
+  const entries = board.games.map((game) => {
+    const awayName = shortTeamName(game.away_team)
+    const homeName = shortTeamName(game.home_team)
+    const awayTeamId = game.away_team_id || game.lineups && Object.values(game.lineups).find((lineup) => lineup.team_name === game.away_team)?.team_id
+    const homeTeamId = game.home_team_id || game.lineups && Object.values(game.lineups).find((lineup) => lineup.team_name === game.home_team)?.team_id
+    const startersByTeam = Object.fromEntries((game.starters || []).map((starter) => [starter.team_id, buildPitcher(starter, context)]))
+    const awayPitcher = startersByTeam[awayTeamId] || buildPitcher({}, context)
+    const homePitcher = startersByTeam[homeTeamId] || buildPitcher({}, context)
+    const matrix = buildInningRunMatrix({ game, context, awayTeamId, homeTeamId, awayName, homeName, awayPitcher, homePitcher })
+    return [
+      `${slugify(awayName)}-${slugify(homeName)}`,
+      {
+        ...matrix,
+        title: `${awayName} @ ${homeName}`,
+        mlbGamePk: num(game.mlb_game_pk, null)
+      }
+    ]
+  })
+  return Object.fromEntries(entries)
+}
+
+const propPairFromRows = (rows = []) => {
+  const over = rows.find((row) => /^over$/i.test(row.selection || ''))
+  const under = rows.find((row) => /^under$/i.test(row.selection || ''))
+  const yes = rows.find((row) => /^yes$/i.test(row.selection || ''))
+  const no = rows.find((row) => /^no$/i.test(row.selection || ''))
+  return {
+    line: num(over?.line_value ?? under?.line_value, null),
+    overOdds: num(over?.american_odds, null),
+    underOdds: num(under?.american_odds, null),
+    yesOdds: num(yes?.american_odds, null),
+    noOdds: num(no?.american_odds, null)
+  }
+}
+
+export const loadMlbSpecialtyMarketAnchorsFromDb = async (date) => {
+  const board = currentDayBoardForDate(date)
+  if (!board.games.length) return {}
+  const gameMetaById = new Map()
+  const pitcherMetaById = new Map()
+  for (const game of board.games) {
+    const awayName = shortTeamName(game.away_team)
+    const homeName = shortTeamName(game.home_team)
+    const gameSlug = `${slugify(awayName)}-${slugify(homeName)}`
+    gameMetaById.set(game.game_id, {
+      slug: gameSlug,
+      teamsById: new Map([
+        [game.away_team_id, slugify(awayName)],
+        [game.home_team_id, slugify(homeName)]
+      ])
+    })
+    for (const starter of game.starters || []) {
+      if (starter.pitcher_id) pitcherMetaById.set(starter.pitcher_id, { gameSlug, name: starter.pitcher_name })
+    }
+  }
+
+  const output = Object.fromEntries(
+    Array.from(gameMetaById.values()).map((game) => [
+      game.slug,
+      {
+        source: 'sql-mlb.db typed market anchors',
+        teamRuns: {},
+        teamHits: {},
+        pitchers: {},
+        missing: []
+      }
+    ])
+  )
+
+  const teamRows = querySqlite(
+    `
+    select game_id, team_id, market_type, line_value
+    from market_contracts
+    where source_name = 'draftkings'
+      and market_type in ('teamTotalRuns', 'teamTotalRunsFirst3', 'teamTotalRunsFirst5', 'teamTotalRunsFirst7', 'teamTotalHits')
+      and source_pk like ?
+    `,
+    [`%${date}-draftkings-mlb-lines.json%`]
+  )
+  const windowByMarketType = {
+    teamTotalRuns: 'fullGame',
+    teamTotalRunsFirst3: 'first3',
+    teamTotalRunsFirst5: 'first5',
+    teamTotalRunsFirst7: 'first7',
+    teamTotalHits: 'fullGame'
+  }
+  for (const row of teamRows) {
+    const gameMeta = gameMetaById.get(row.game_id)
+    if (!gameMeta) continue
+    const anchor = output[gameMeta.slug]
+    const teamKey = gameMeta.teamsById.get(row.team_id)
+    if (!teamKey) continue
+    const target = row.market_type === 'teamTotalHits' ? anchor.teamHits : anchor.teamRuns
+    const windowKey = windowByMarketType[row.market_type] || 'fullGame'
+    target[teamKey] = {
+      ...(target[teamKey] || {}),
+      [windowKey]: {
+        line: num(row.line_value, null),
+        overOdds: null,
+        underOdds: null,
+        yesOdds: null,
+        noOdds: null
+      }
+    }
+  }
+
+  const propRows = querySqlite(
+    `
+    select game_id, player_id, player_name, market_type, selection, line_value, american_odds
+    from prop_market_snapshots
+    where source_name = 'draftkings'
+      and market_date = ?
+      and market_type in ('pitcher_hits_allowed', 'pitcher_earned_runs_allowed', 'pitcher_record_win')
+    order by game_id, player_id, market_type, selection
+    `,
+    [date]
+  )
+  const grouped = groupBy(propRows, (row) => `${row.game_id}:${row.player_id}:${row.market_type}`)
+  for (const [key, rows] of grouped) {
+    const [gameId, playerId, marketType] = key.split(':')
+    const gameMeta = gameMetaById.get(gameId)
+    if (!gameMeta) continue
+    const anchor = output[gameMeta.slug]
+    const pitcherKeyValue = slugify(rows[0]?.player_name || pitcherMetaById.get(playerId)?.name || playerId)
+    anchor.pitchers[pitcherKeyValue] = {
+      ...(anchor.pitchers[pitcherKeyValue] || {}),
+      name: rows[0]?.player_name || pitcherMetaById.get(playerId)?.name || playerId
+    }
+    const pair = propPairFromRows(rows)
+    if (marketType === 'pitcher_hits_allowed') anchor.pitchers[pitcherKeyValue].hitsAllowed = pair
+    if (marketType === 'pitcher_earned_runs_allowed') anchor.pitchers[pitcherKeyValue].earnedRunsAllowed = pair
+    if (marketType === 'pitcher_record_win') anchor.pitchers[pitcherKeyValue].recordWin = pair
+  }
+
+  for (const anchor of Object.values(output)) {
+    if (!Object.keys(anchor.teamHits || {}).length) anchor.missing.push('team total hits')
+  }
+  return Object.fromEntries(
+    Object.entries(output).filter(([, anchor]) =>
+      Object.keys(anchor.teamRuns || {}).length ||
+      Object.keys(anchor.teamHits || {}).length ||
+      Object.keys(anchor.pitchers || {}).length
+    )
+  )
 }

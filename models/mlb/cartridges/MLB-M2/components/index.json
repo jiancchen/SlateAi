@@ -85,6 +85,13 @@
       "owns": ["ESPN starter splits", "StatMuse starter-vs-opponent context", "shadow YRFI/NRFI and F5 adjustments"],
       "entrypoints": ["models/mlb/cartridges/MLB-M2/research/starter_split_addendum_shadow.mjs"],
       "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/starter-split-addendum.js", "models/mlb/cartridges/MLB-M2/components/starter-split-addendum/README.md"]
+    },
+    {
+      "id": "shadow-calibration-addendum",
+      "name": "Shadow Calibration Addendum",
+      "owns": ["value-board promotion tiers", "POTD eligibility", "lane bucket calibration", "promotion reasoning"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/research/shadow_calibration_addendum_report.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M2/components/shadow-calibration-addendum/README.md"]
     }
   ]
 }

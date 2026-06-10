@@ -81,10 +81,48 @@ export function BoardView(props: BoardViewProps) {
     openMobileDetailForGame(nextGameId)
   }
 
+  const valueRowResultClass = (row: AnyRecord) =>
+    row?.result?.hit === true ? ' hit' : row?.result?.hit === false ? ' miss' : row?.result?.tone === 'push' ? ' push' : ''
+
+  const renderValueRowResult = (row: AnyRecord) =>
+    row?.result?.label ? (
+      <small className={`value-row-result ${row.result.hit === true ? 'hit' : row.result.hit === false ? 'miss' : row.result.tone === 'push' ? 'push' : ''}`}>
+        {row.result.label}
+        {row.result.actualScore
+          ? ` | ${row.result.actualScore}`
+          : row.result.actualValue !== undefined && row.result.actualValue !== null
+            ? ` | Actual ${row.result.actualValue}`
+            : ''}
+      </small>
+    ) : null
+
   const renderMlbRowTime = (row: AnyRecord) => {
     const start = row?.start || row?.raw?.start || row?.game?.start || ''
     if (!start) return null
     return <small className="mlb-value-row-time">Time {start}</small>
+  }
+
+  const shadowTierRank = (row: AnyRecord) => {
+    const tier = String(row?.shadowCalibration?.tier || row?.raw?.shadowCalibration?.tier || '').toLowerCase()
+    if (tier === 'promoted') return 3
+    if (tier === 'watch') return 2
+    if (tier === 'research') return 1
+    return 0
+  }
+
+  const renderShadowCalibration = (row: AnyRecord) => {
+    const shadow = row?.shadowCalibration || row?.raw?.shadowCalibration
+    if (!shadow?.tier) return null
+    const tier = String(shadow.tier).toLowerCase()
+    const label = tier === 'promoted' ? 'Promoted' : tier === 'research' ? 'Research' : 'Watch'
+    const reason = Array.isArray(shadow.reasons) ? shadow.reasons[0] : ''
+    const evidence = shadow.evidence?.record ? `Seed ${shadow.evidence.record}` : ''
+    return (
+      <small className={`shadow-calibration-badge ${tier}`}>
+        <span>{label}</span>
+        {[reason, evidence].filter(Boolean).join(' | ')}
+      </small>
+    )
   }
 
   const renderTennisValueRows = (sectionLabel: string, rows: AnyRecord[] = []) => {
@@ -116,7 +154,7 @@ export function BoardView(props: BoardViewProps) {
             <button
               key={`${row.game.id}-${sectionLabel}-${row.marketType || row.label}-${row.selection || row.lean || row.line || 'row'}`}
               type="button"
-              className="tennis-value-row"
+              className={`tennis-value-row${valueRowResultClass(row)}`}
               onClick={() => openBoardGame(row.game.id)}
             >
               <span>
@@ -540,16 +578,27 @@ export function BoardView(props: BoardViewProps) {
     )
   }
   const selectedMiniLineupOrder = selectedGame?.league === 'MLB' ? renderMiniLineupOrder(selectedGame) : null
-  const mlbOverviewBoardRows = (() => {
+  const compareMlbShapeRows = (left: AnyRecord, right: AnyRecord) => {
+    const leftConfidence = Number(left.sortConfidence ?? left.confidence ?? 0)
+    const rightConfidence = Number(right.sortConfidence ?? right.confidence ?? 0)
+    const leftEdge = Number(left.sortEdge ?? 0)
+    const rightEdge = Number(right.sortEdge ?? 0)
+    const tierDelta = shadowTierRank(right) - shadowTierRank(left)
+    if (tierDelta) return tierDelta
+    const calibrationDelta =
+      Number(right.shadowCalibration?.calibratedScore || right.raw?.shadowCalibration?.calibratedScore || 0) -
+      Number(left.shadowCalibration?.calibratedScore || left.raw?.shadowCalibration?.calibratedScore || 0)
+    if (calibrationDelta) return calibrationDelta
+    const leftMarketEdge =
+      Number.isFinite(Number(left.raw?.marketPricePct)) ? Number(leftConfidence) - Number(left.raw.marketPricePct) : -Infinity
+    const rightMarketEdge =
+      Number.isFinite(Number(right.raw?.marketPricePct)) ? Number(rightConfidence) - Number(right.raw.marketPricePct) : -Infinity
+    return rightConfidence - leftConfidence || rightMarketEdge - leftMarketEdge || rightEdge - leftEdge
+  }
+  const mlbMlShapeBoardRows = (() => {
     if (!mlbValueSummary) return []
     const maxRows = Math.min(10, Number(mlbValueSummary.totalGames || 0))
-    const rankedRows = [
-      ...(mlbValueSummary.mlShapeRows || []),
-      ...(mlbValueSummary.sideRows || []),
-      ...(mlbValueSummary.totalRows || []),
-      ...(mlbValueSummary.first5MoneylineRows || [])
-    ]
-      .sort((left: AnyRecord, right: AnyRecord) => right.sortEdge - left.sortEdge || right.confidence - left.confidence)
+    const rankedRows = [...(mlbValueSummary.mlShapeRows || [])].sort(compareMlbShapeRows)
     const rowsByGame = new Map<string, AnyRecord>()
     rankedRows.forEach((row: AnyRecord) => {
       const gameId = String(row.gameId || '')
@@ -712,7 +761,7 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.game.id}-${row.label}-${row.value}`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.game.id)}
                           >
                             <span>
@@ -813,66 +862,93 @@ export function BoardView(props: BoardViewProps) {
                     ) : null}
                   </section>
                 ) : null}
-                {mlbValueSummary && shouldShowValueScope('mlb-overview') ? (
+                {mlbValueSummary && shouldShowValueScope('mlb-overview') && mlbValueSummary.mlShapeRows?.length ? (
                   <section className="tennis-value-slate-card">
                     <div className="tennis-value-slate-head">
                       <div>
-                        <p className="eyebrow">MLB value center</p>
-                        <h3>{activeDayIsoDate} board map</h3>
+                        <p className="eyebrow">MLB ML shape board</p>
+                        <h3>{activeDayIsoDate} moneyline shape</h3>
                       </div>
-                      <span>{mlbValueSummary.fullyPostedGames}/{mlbValueSummary.totalGames} fully posted</span>
+                      <span>{mlbValueSummary.mlShapeRows.length} rows</span>
                     </div>
-                    <p>{mlbValueSummary.note}</p>
+                    <p>Full-game moneyline shape only. F5 ML, F5 O/U, full-game totals, and team totals stay on their own boards.</p>
                     <div className="tennis-value-pill-row">
-                      <span>Side {mlbValueSummary.sideRows.length}</span>
                       <span>ML shape {mlbValueSummary.mlShapeRows?.length || 0}</span>
-                      <span>Totals {mlbValueSummary.totalRows.length}</span>
-                      <span>F5 ML {mlbValueSummary.first5MoneylineRows?.length || 0}</span>
-                      <span>F5 O/U {mlbValueSummary.first5TotalRows?.length || 0}</span>
-                      <span>TB {mlbValueSummary.totalBaseRows.length}</span>
-                      <span>K O/U {mlbValueSummary.strikeoutRows.length}</span>
-                      <span>H+R+RBI {mlbValueSummary.displayHitRunRbiRows.length}</span>
-                      <span>HR {mlbValueSummary.homeRunRows.length}</span>
-                      <span>Scalp {mlbScalpSummary?.scalpRows.length || 0}</span>
                       <span>Kalshi {mlbValueSummary.mappedKalshiGames}</span>
                       <span>Posted {mlbValueSummary.fullyPostedGames}</span>
                       <span>Partial {mlbValueSummary.partialGames}</span>
                     </div>
-                    {mlbValueSummary.mlShapeRows?.length ||
-                    mlbValueSummary.sideRows.length ||
-                    mlbValueSummary.totalRows.length ||
-                    mlbValueSummary.first5MoneylineRows?.length ||
-                    mlbValueSummary.first5TotalRows?.length ? (
+                    {mlbMlShapeBoardRows.length ? (
                       <div className="tennis-value-list">
-                        <div className="tennis-value-section-label">ML shape + side + totals + 1st 5 board</div>
-                        {mlbOverviewBoardRows.map((row: AnyRecord) => (
+                        <div className="tennis-value-section-label">ML shape rows</div>
+                        {mlbMlShapeBoardRows.map((row: AnyRecord) => (
                             <button
                               key={`${row.id}-mlb-value`}
                               type="button"
-                              className="tennis-value-row"
+                              className={`tennis-value-row${valueRowResultClass(row)}`}
                               onClick={() => openBoardGame(row.gameId)}
                             >
                               <span>
                                 <strong>{row.title}</strong>
                                 <small>{row.subtitle} | {row.priceLabel || row.metaLabel}</small>
+                                {renderValueRowResult(row)}
                                 {renderMlbRowTime(row)}
                               </span>
                               <span>
-                                <strong>
-                                  {row.evCents != null && Number.isFinite(Number(row.evCents))
-                                    ? `${formatSignedNumber(row.evCents, 1)}c`
-                                    : `${row.confidence}%`}
-                                </strong>
-                                <small>
-                                  {row.evCents != null && Number.isFinite(Number(row.evCents))
-                                    ? `${row.confidence}% model | ${row.priceLabel || 'priced'}`
-                                    : row.tags?.join(' | ') || row.metaLabel}
-                                </small>
-                              </span>
+                              <strong>
+                                {row.evCents != null && Number.isFinite(Number(row.evCents))
+                                  ? `${formatSignedNumber(row.evCents, 1)}c`
+                                  : `${row.confidence}%`}
+                              </strong>
+                              <small>
+                                {row.evCents != null && Number.isFinite(Number(row.evCents))
+                                  ? `${row.confidence}% model | ${row.priceLabel || 'priced'}`
+                                  : row.tags?.filter((tag: string) => !/^(promoted|watch|research)$/i.test(String(tag))).join(' | ') || row.metaLabel}
+                              </small>
+                            </span>
+                            {renderShadowCalibration(row)}
                             </button>
                           ))}
                       </div>
                     ) : null}
+                  </section>
+                ) : null}
+                {mlbValueSummary && shouldShowValueScope('mlb-totals') && mlbValueSummary.totalRows.length ? (
+                  <section className="tennis-value-slate-card">
+                    <div className="tennis-value-slate-head">
+                      <div>
+                        <p className="eyebrow">MLB full-game totals board</p>
+                        <h3>{activeDayIsoDate} O/U runs</h3>
+                      </div>
+                      <span>{mlbValueSummary.totalRows.length} rows</span>
+                    </div>
+                    <p>Full-game O/U rows are separated from ML shape and first-five starter-window rows.</p>
+                    <div className="tennis-value-list">
+                      {mlbValueSummary.totalRows.slice(0, 12).map((row: AnyRecord) => (
+                        <button
+                          key={`${row.id}-full-total-board`}
+                          type="button"
+                          className={`tennis-value-row${valueRowResultClass(row)}`}
+                          onClick={() => openBoardGame(row.gameId)}
+                        >
+                          <span>
+                            <strong>{row.title}</strong>
+                            <small>{row.subtitle} | {row.metaLabel || row.summary}</small>
+                            {renderValueRowResult(row)}
+                            {renderMlbRowTime(row)}
+                          </span>
+                          <span>
+                            <strong>
+                              {row.evCents != null && Number.isFinite(Number(row.evCents))
+                                ? `${formatSignedNumber(row.evCents, 1)}c`
+                                : `${row.confidence}%`}
+                            </strong>
+                            <small>{row.priceLabel}</small>
+                          </span>
+                          {renderShadowCalibration(row)}
+                        </button>
+                      ))}
+                    </div>
                   </section>
                 ) : null}
                 {mlbValueSummary &&
@@ -910,12 +986,13 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.id}-first5-ml-board`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.subtitle} | {row.metaLabel}</small>
+                              {renderValueRowResult(row)}
                               {renderMlbRowTime(row)}
                             </span>
                             <span>
@@ -926,6 +1003,7 @@ export function BoardView(props: BoardViewProps) {
                               </strong>
                               <small>{row.priceLabel}</small>
                             </span>
+                            {renderShadowCalibration(row)}
                           </button>
                         ))}
                       </div>
@@ -937,12 +1015,13 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.id}-first5-total-board`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.subtitle} | {row.metaLabel}</small>
+                              {renderValueRowResult(row)}
                               {renderMlbRowTime(row)}
                             </span>
                             <span>
@@ -953,6 +1032,7 @@ export function BoardView(props: BoardViewProps) {
                               </strong>
                               <small>{row.priceLabel}</small>
                             </span>
+                            {renderShadowCalibration(row)}
                           </button>
                         ))}
                       </div>
@@ -968,7 +1048,7 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.id}-first5-total-research`}
                             type="button"
-                            className="tennis-value-row muted"
+                            className={`tennis-value-row muted${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
@@ -980,10 +1060,45 @@ export function BoardView(props: BoardViewProps) {
                               <strong>Research</strong>
                               <small>{(row.raw?.gateReasons || []).slice(0, 2).join(' | ')}</small>
                             </span>
+                            {renderShadowCalibration(row)}
                           </button>
                         ))}
                       </div>
                     ) : null}
+                  </section>
+                ) : null}
+                {mlbValueSummary && shouldShowValueScope('mlb-team-totals') && mlbValueSummary.teamTotalRows?.length ? (
+                  <section className="tennis-value-slate-card">
+                    <div className="tennis-value-slate-head">
+                      <div>
+                        <p className="eyebrow">MLB team totals value board</p>
+                        <h3>{activeDayIsoDate} team run totals</h3>
+                      </div>
+                      <span>{mlbValueSummary.teamTotalRows.length} rows</span>
+                    </div>
+                    <p>Posted F5 team-total lines from the typed DK anchors, compared against the M2 first-five team-run projection.</p>
+                    <div className="tennis-value-list">
+                      {mlbValueSummary.teamTotalRows.slice(0, 12).map((row: AnyRecord) => (
+                        <button
+                          key={`${row.id}-team-total-board`}
+                          type="button"
+                          className={`tennis-value-row${valueRowResultClass(row)}`}
+                          onClick={() => openBoardGame(row.gameId)}
+                        >
+                          <span>
+                            <strong>{row.title}</strong>
+                            <small>{row.subtitle} | {row.metaLabel}</small>
+                            {renderValueRowResult(row)}
+                            {renderMlbRowTime(row)}
+                          </span>
+                          <span>
+                            <strong>{row.confidence}%</strong>
+                            <small>{row.priceLabel}</small>
+                          </span>
+                          {renderShadowCalibration(row)}
+                        </button>
+                      ))}
+                    </div>
                   </section>
                 ) : null}
                 {mlbFirstInningValueSummary && shouldShowValueScope('mlb-first-inning') ? (
@@ -1014,7 +1129,7 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.gameId}-yrfi-value`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
@@ -1032,6 +1147,7 @@ export function BoardView(props: BoardViewProps) {
                                 {row.hasKalshi ? ` · ask ${formatNumber(row.yesAsk, 1)}c` : ''}
                               </small>
                             </span>
+                            {renderShadowCalibration(row)}
                           </button>
                         ))}
                       </div>
@@ -1043,7 +1159,7 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.gameId}-nrfi-value`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
@@ -1061,6 +1177,7 @@ export function BoardView(props: BoardViewProps) {
                                 {row.hasKalshi ? ` · ask ${formatNumber(row.noAsk, 1)}c` : ''}
                               </small>
                             </span>
+                            {renderShadowCalibration(row)}
                           </button>
                         ))}
                       </div>
@@ -1088,7 +1205,7 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.id}-tb-board`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
@@ -1116,6 +1233,39 @@ export function BoardView(props: BoardViewProps) {
                     ) : null}
                   </section>
                 ) : null}
+                {mlbValueSummary && shouldShowValueScope('mlb-pitcher-er') && mlbValueSummary.pitcherEarnedRunRows?.length ? (
+                  <section className="tennis-value-slate-card">
+                    <div className="tennis-value-slate-head">
+                      <div>
+                        <p className="eyebrow">MLB pitcher ER value board</p>
+                        <h3>{activeDayIsoDate} earned runs allowed</h3>
+                      </div>
+                      <span>{mlbValueSummary.pitcherEarnedRunRows.length} rows</span>
+                    </div>
+                    <p>Earned-runs allowed rows use posted DK pitcher ER lines, recent starter ER shape, and opponent first-five run pressure.</p>
+                    <div className="tennis-value-list">
+                      {mlbValueSummary.pitcherEarnedRunRows.slice(0, 12).map((row: AnyRecord) => (
+                        <button
+                          key={`${row.id}-pitcher-er-board`}
+                          type="button"
+                          className={`tennis-value-row${valueRowResultClass(row)}`}
+                          onClick={() => openBoardGame(row.gameId)}
+                        >
+                          <span>
+                            <strong>{row.title}</strong>
+                            <small>{row.summary}</small>
+                            {renderValueRowResult(row)}
+                            {renderMlbRowTime(row)}
+                          </span>
+                          <span>
+                            <strong>{row.confidence}%</strong>
+                            <small>{`${row.priceLabel} | ${row.metaLabel}`}</small>
+                          </span>
+                        </button>
+                      ))}
+                    </div>
+                  </section>
+                ) : null}
                 {mlbValueSummary && shouldShowValueScope('mlb-strikeouts') ? (
                   <section className="tennis-value-slate-card">
                     <div className="tennis-value-slate-head">
@@ -1138,14 +1288,15 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.id}-k-over-board`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
-                            <span>
-                              <strong>{row.title}</strong>
-                              <small>{row.summary}</small>
-                              {renderMlbRowTime(row)}
-                            </span>
+                          <span>
+                            <strong>{row.title}</strong>
+                            <small>{row.summary}</small>
+                            {renderValueRowResult(row)}
+                            {renderMlbRowTime(row)}
+                          </span>
                             <span>
                               <strong>{row.confidence}%</strong>
                               <small>{`${row.priceLabel} | ${row.raw?.lineupStatus || 'partial'} order`}</small>
@@ -1161,12 +1312,13 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.id}-k-under-board`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderValueRowResult(row)}
                               {renderMlbRowTime(row)}
                             </span>
                             <span>
@@ -1179,38 +1331,114 @@ export function BoardView(props: BoardViewProps) {
                     ) : null}
                   </section>
                 ) : null}
-                {mlbValueSummary && shouldShowValueScope('mlb-impact') ? (
+                {mlbValueSummary && shouldShowValueScope('mlb-mikes-botd') ? (
                   <section className="tennis-value-slate-card">
                     <div className="tennis-value-slate-head">
                       <div>
-                        <p className="eyebrow">MLB H+R+RBI value board</p>
-                        <h3>{activeDayIsoDate} batting-impact lanes</h3>
+                        <p className="eyebrow">Mike&apos;s BOTD</p>
+                        <h3>{activeDayIsoDate} all-game H+R+RBI screen</h3>
                       </div>
-                      <span>
-                        {mlbValueSummary.hitRunRbiRows.length
-                          ? `${mlbValueSummary.hitRunRbiRows.length} exported`
-                          : `${mlbValueSummary.battingProductionRows.length} model`}
-                      </span>
+                      <span>{mlbValueSummary.mikesBotdRows?.length || 0} BOTD rows</span>
                     </div>
                     <p>
-                      This board is meant to surface combined hitting production, not singles/walks. If a true H+R+RBI market is exported we show it directly;
-                      otherwise we rank hitters with a batting-production ladder built from XOPS, xwOBA, slot, matchup, and pitch-fit context.
+                      This lane is separate from the normal H+R+RBI board. It promotes Mike-screened HRR rows with projected full-game ML win, 60%+ confidence, 30+ AB, and same-day FIC batter-vs-starter support.
                     </p>
-                    {mlbValueSummary.displayHitRunRbiRows.length ? (
+                    <div className="tennis-value-pill-row">
+                      <span>Mike screen</span>
+                      <span>FIC support</span>
+                      <span>AVG &gt; .300</span>
+                      <span>OPS &gt; 1.000</span>
+                      <span>All today</span>
+                    </div>
+                    {mlbValueSummary.mikesBotdRows?.length ? (
                       <div className="tennis-value-list">
-                        <div className="tennis-value-section-label">
-                          {mlbValueSummary.hitRunRbiRows.length ? 'Live H+R+RBI style props' : 'Modeled H+R+RBI production ladder'}
-                        </div>
-                        {mlbValueSummary.displayHitRunRbiRows.slice(0, 8).map((row: AnyRecord) => (
+                        <div className="tennis-value-section-label">Mike&apos;s BOTD candidates</div>
+                        {mlbValueSummary.mikesBotdRows.slice(0, 8).map((row: AnyRecord) => (
                           <button
-                            key={`${row.id}-impact-board`}
+                            key={`${row.id}-mikes-botd`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderMlbRowTime(row)}
+                            </span>
+                            <span>
+                              <strong>{row.confidence}%</strong>
+                              <small>{row.priceLabel}</small>
+                              {row.raw?.valueBoardFilters?.ficDailyMatchup ? (
+                                <small className="tennis-value-warning inline">
+                                  {[
+                                    `FIC ${row.raw.valueBoardFilters.ficDailyMatchup.bvpAtBats} AB`,
+                                    `AVG ${row.raw.valueBoardFilters.ficDailyMatchup.bvpAvg}`,
+                                    `OPS ${row.raw.valueBoardFilters.ficDailyMatchup.bvpOps}`
+                                  ].join(' | ')}
+                                </small>
+                              ) : null}
+                            </span>
+                          </button>
+                        ))}
+                      </div>
+                    ) : (
+                      <small className="tennis-value-warning">
+                        No H+R+RBI row currently clears Mike&apos;s BOTD: Mike screen, projected ML win, 60%+ confidence, 30+ AB, and same-day FIC batter-vs-starter support.
+                      </small>
+                    )}
+                  </section>
+                ) : null}
+                {mlbValueSummary && shouldShowValueScope('mlb-impact') ? (
+                  <section className="tennis-value-slate-card">
+                    <div className="tennis-value-slate-head">
+                      <div>
+                        <p className="eyebrow">MLB batter value boards</p>
+                        <h3>{activeDayIsoDate} H+R+RBI, hits, runs, RBI</h3>
+                      </div>
+                      <span>
+                        {mlbValueSummary.displayHitRunRbiRows.length} HRR · {(mlbValueSummary.hitRows?.length || 0) + (mlbValueSummary.runRows?.length || 0) + (mlbValueSummary.rbiRows?.length || 0)} component
+                      </span>
+                    </div>
+                    <p>
+                      Combined H+R+RBI stays as its own clean-board lane. Hits, runs, and RBI stay visible below as separate component prop lanes.
+                    </p>
+                    <div className="tennis-value-pill-row">
+                      <span>H+R+RBI {mlbValueSummary.displayHitRunRbiRows.length}</span>
+                      <span>Hits {mlbValueSummary.hitRows?.length || 0}</span>
+                      <span>Runs {mlbValueSummary.runRows?.length || 0}</span>
+                      <span>RBI {mlbValueSummary.rbiRows?.length || 0}</span>
+                    </div>
+                    {mlbValueSummary.displayHitRunRbiRows.length ? (
+                      <div className="tennis-value-list">
+                        <div className="tennis-value-section-label">
+                          Combined H+R+RBI clean board
+                        </div>
+                        {mlbValueSummary.displayHitRunRbiRows.slice(0, 8).map((row: AnyRecord) => (
+                          <button
+                            key={`${row.id}-impact-board`}
+                            type="button"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
+                            onClick={() => openBoardGame(row.gameId)}
+                          >
+                            <span>
+                              <strong>{row.title}</strong>
+                              <small>{row.summary}</small>
+                              {renderValueRowResult(row)}
+                              {row.raw?.valueBoardFilters ? (
+                                <small>
+                                  {[
+                                    row.raw.valueBoardFilters.projectedTeamFullGameResult
+                                      ? `ML PROJ ${String(row.raw.valueBoardFilters.projectedTeamFullGameResult).toUpperCase()}`
+                                      : null,
+                                    row.raw.valueBoardFilters.actualTeamFullGameResult
+                                      ? `ML ${String(row.raw.valueBoardFilters.actualTeamFullGameResult).toUpperCase()}`
+                                      : null,
+                                    Number.isFinite(Number(row.raw.valueBoardFilters.recentAtBats))
+                                      ? `AB ${Number(row.raw.valueBoardFilters.recentAtBats)}`
+                                      : null
+                                  ].filter(Boolean).join(' | ')}
+                                </small>
+                              ) : null}
                               {renderMlbRowTime(row)}
                             </span>
                             <span>
@@ -1227,8 +1455,42 @@ export function BoardView(props: BoardViewProps) {
                       </div>
                     ) : (
                       <small className="tennis-value-warning">
-                        No H+R+RBI ladder is available yet. Open this scope once the MLB game-detail payloads finish loading.
+                        No combined H+R+RBI rows pass the clean-board filter yet: projected full-game ML win, 70%+ confidence, and 30+ AB.
                       </small>
+                    )}
+                    {[
+                      ['Hits props', mlbValueSummary.hitRows || []],
+                      ['Runs props', mlbValueSummary.runRows || []],
+                      ['RBI props', mlbValueSummary.rbiRows || []]
+                    ].map(([label, rows]: [string, AnyRecord[]]) =>
+                      rows.length ? (
+                        <div className="tennis-value-list" key={`mlb-impact-${label}`}>
+                          <div className="tennis-value-section-label">{label}</div>
+                          {rows.slice(0, 5).map((row: AnyRecord) => (
+                            <button
+                              key={`${row.id}-${label}-impact-board`}
+                              type="button"
+                              className={`tennis-value-row${valueRowResultClass(row)}`}
+                              onClick={() => openBoardGame(row.gameId)}
+                            >
+                              <span>
+                                <strong>{row.title}</strong>
+                                <small>{row.summary}</small>
+                                {renderMlbRowTime(row)}
+                              </span>
+                              <span>
+                                <strong>{row.confidence}%</strong>
+                                <small>{row.priceLabel}</small>
+                                {(row.contextWarnings?.length || row.raw?.contextWarnings?.length) ? (
+                                  <small className="tennis-value-warning inline">
+                                    {(row.contextWarnings || row.raw?.contextWarnings).join(' | ')}
+                                  </small>
+                                ) : null}
+                              </span>
+                            </button>
+                          ))}
+                        </div>
+                      ) : null
                     )}
                   </section>
                 ) : null}
@@ -1347,13 +1609,14 @@ export function BoardView(props: BoardViewProps) {
                             <button
                               key={`${row.gameId}-${row.playerId ?? row.playerName}-hr-board`}
                               type="button"
-                              className="tennis-value-row hr-value-row"
+                              className={`tennis-value-row hr-value-row${valueRowResultClass(row)}`}
                               onClick={() => openBoardGame(row.gameId)}
                             >
                               <div className="hr-value-top">
                                 <div className="hr-value-title-block">
                                   <strong>#{row.rank || '?'} {row.playerName}</strong>
                                   <small>{row.teamName} | {row.gameTitle}</small>
+                                  {renderValueRowResult(row)}
                                   {renderMlbRowTime(row)}
                                 </div>
                                 <div className="hr-value-score-block">
@@ -1405,12 +1668,13 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.id}-generic50`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderValueRowResult(row)}
                               {renderMlbRowTime(row)}
                             </span>
                             <span>
@@ -1428,12 +1692,13 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.id}-cheap`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
                               <strong>{row.title}</strong>
                               <small>{row.summary}</small>
+                              {renderValueRowResult(row)}
                               {renderMlbRowTime(row)}
                             </span>
                             <span>
@@ -1451,14 +1716,15 @@ export function BoardView(props: BoardViewProps) {
                           <button
                             key={`${row.id}-take70`}
                             type="button"
-                            className="tennis-value-row"
+                            className={`tennis-value-row${valueRowResultClass(row)}`}
                             onClick={() => openBoardGame(row.gameId)}
                           >
                             <span>
-                              <strong>{row.title}</strong>
-                              <small>{row.summary}</small>
-                              {renderMlbRowTime(row)}
-                            </span>
+                                <strong>{row.title}</strong>
+                                <small>{row.summary}</small>
+                                {renderValueRowResult(row)}
+                                {renderMlbRowTime(row)}
+                              </span>
                             <span>
                               <strong>{`${formatNumber(row.postScorelessTopNoPct, 1)}c fair`}</strong>
                               <small>{row.detail}</small>

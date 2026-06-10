@@ -1,0 +1,685 @@
+{
+  "audit": "public-mlb-slate",
+  "date": "2026-06-09",
+  "baseUrl": null,
+  "generatedAt": "2026-06-09T21:28:44.999Z",
+  "summary": {
+    "totalGames": 15,
+    "mlbGames": 15,
+    "nonMlbGames": 0
+  },
+  "games": [
+    {
+      "id": "mariners-orioles",
+      "title": "Mariners @ Orioles",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 17,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "diamondbacks-marlins",
+      "title": "Diamondbacks @ Marlins",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 17,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "dodgers-pirates",
+      "title": "Dodgers @ Pirates",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "red-sox-rays",
+      "title": "Red Sox @ Rays",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "twins-tigers",
+      "title": "Twins @ Tigers",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "yankees-guardians",
+      "title": "Yankees @ Guardians",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "phillies-blue-jays",
+      "title": "Phillies @ Blue Jays",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "cardinals-mets",
+      "title": "Cardinals @ Mets",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 17,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "braves-white-sox",
+      "title": "Braves @ White Sox",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 17,
+      "pitchFits": 17,
+      "xwobaBubbles": 16,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "rangers-royals",
+      "title": "Rangers @ Royals",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 17,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "cubs-rockies",
+      "title": "Cubs @ Rockies",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "astros-angels",
+      "title": "Astros @ Angels",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 17,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "reds-padres",
+      "title": "Reds @ Padres",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "nationals-giants",
+      "title": "Nationals @ Giants",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "id": "brewers-athletics",
+      "title": "Brewers @ Athletics",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 17,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": false,
+      "hasRelieverShadow": false,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "failures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    }
+  ],
+  "props": {
+    "total": 511,
+    "byType": {
+      "pitcherStrikeouts": 14,
+      "hitRunRbi": 99,
+      "singles": 72,
+      "walks": 41,
+      "totalBases": 80,
+      "hits": 66,
+      "runs": 75,
+      "rbi": 64
+    },
+    "pitcherStrikeoutDraftKings": 14,
+    "sources": [
+      "typed MLB DB day-game loader",
+      "models/mlb/app-model.js",
+      "sql-mlb.db prop_market_snapshots"
+    ],
+    "mergedFrom": [
+      "mlb-player-props",
+      "mlb-player-props-legacy"
+    ]
+  },
+  "valueBoard": {
+    "moneylineRows": 15,
+    "first5MoneylineRows": 13,
+    "first5TotalRows": 15,
+    "firstInningRows": 15,
+    "fullGameTotalRows": 15,
+    "totalBaseRows": 80,
+    "pitcherStrikeoutRows": 14,
+    "gameCount": 15
+  },
+  "draftKingsLineCoverage": {
+    "expectedGames": 10,
+    "boardGames": 10,
+    "fullGameLineGames": 10,
+    "firstFiveLineGames": 10,
+    "postedFirst5TotalGames": 10
+  },
+  "hardFailures": [
+    {
+      "gameId": "mariners-orioles",
+      "title": "Mariners @ Orioles",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "mariners-orioles",
+      "title": "Mariners @ Orioles",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "diamondbacks-marlins",
+      "title": "Diamondbacks @ Marlins",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "diamondbacks-marlins",
+      "title": "Diamondbacks @ Marlins",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "dodgers-pirates",
+      "title": "Dodgers @ Pirates",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "dodgers-pirates",
+      "title": "Dodgers @ Pirates",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "red-sox-rays",
+      "title": "Red Sox @ Rays",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "red-sox-rays",
+      "title": "Red Sox @ Rays",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "twins-tigers",
+      "title": "Twins @ Tigers",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "twins-tigers",
+      "title": "Twins @ Tigers",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "yankees-guardians",
+      "title": "Yankees @ Guardians",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "yankees-guardians",
+      "title": "Yankees @ Guardians",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "phillies-blue-jays",
+      "title": "Phillies @ Blue Jays",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "phillies-blue-jays",
+      "title": "Phillies @ Blue Jays",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "cardinals-mets",
+      "title": "Cardinals @ Mets",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "cardinals-mets",
+      "title": "Cardinals @ Mets",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "braves-white-sox",
+      "title": "Braves @ White Sox",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "braves-white-sox",
+      "title": "Braves @ White Sox",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "rangers-royals",
+      "title": "Rangers @ Royals",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "rangers-royals",
+      "title": "Rangers @ Royals",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "cubs-rockies",
+      "title": "Cubs @ Rockies",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "cubs-rockies",
+      "title": "Cubs @ Rockies",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "astros-angels",
+      "title": "Astros @ Angels",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "astros-angels",
+      "title": "Astros @ Angels",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "reds-padres",
+      "title": "Reds @ Padres",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "reds-padres",
+      "title": "Reds @ Padres",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "nationals-giants",
+      "title": "Nationals @ Giants",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "nationals-giants",
+      "title": "Nationals @ Giants",
+      "failure": "missing-rp36-shadow"
+    },
+    {
+      "gameId": "brewers-athletics",
+      "title": "Brewers @ Athletics",
+      "failure": "missing-bridge-chain"
+    },
+    {
+      "gameId": "brewers-athletics",
+      "title": "Brewers @ Athletics",
+      "failure": "missing-rp36-shadow"
+    }
+  ]
+}

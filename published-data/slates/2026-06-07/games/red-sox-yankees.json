@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Red Sox",
-      "detail": "Ranger Suarez (LHP) | 2-3 | 3.38 ERA | 57 SO | 1.16 WHIP | 58.2 IP"
+      "detail": "Ranger Suarez (LHP) | 2-3 | 3.18 ERA | 63 SO | 1.14 WHIP | 65.0 IP"
     },
     {
       "side": "Home",
       "name": "Yankees",
-      "detail": "Cam Schlittler (RHP) | 7-3 | 1.89 ERA | 84 SO | 0.86 WHIP | 76.1 IP"
+      "detail": "Cam Schlittler (RHP) | 7-3 | 1.87 ERA | 89 SO | 0.87 WHIP | 82.0 IP"
     }
   ],
   "summary": "Red Sox @ Yankees with Ranger Suarez against Cam Schlittler.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Red Sox +129 / Yankees -156 | o8 -117 / u8 -103 | Red Sox +1.5 -167 / Yankees -1.5 +138 | F5 Red Sox +124 / Yankees -160 / o4.5 +110 / u4.5 -140.",
+    "Current board: Red Sox +124 / Yankees -149 | o8 -114 / u8 -105 | Red Sox +1.5 -170 / Yankees -1.5 +140 | F5 Red Sox +124 / Yankees -160 / o4.5 +110 / u4.5 -140.",
     "Ranger Suarez vs Cam Schlittler."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -34,22 +34,22 @@
     "away": {
       "divisionLeader": false,
       "divisionRank": "5",
-      "gamesBack": "10.5",
-      "losses": 35,
-      "runDifferential": -4,
-      "streakCode": "W1",
-      "winningPercentage": ".435",
+      "gamesBack": "11.5",
+      "losses": 37,
+      "runDifferential": -11,
+      "streakCode": "L2",
+      "winningPercentage": ".422",
       "wins": 27
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "2",
-      "gamesBack": "1.0",
+      "gamesBack": "-",
       "losses": 26,
-      "runDifferential": 91,
-      "streakCode": "L1",
-      "winningPercentage": ".587",
-      "wins": 37
+      "runDifferential": 98,
+      "streakCode": "W2",
+      "winningPercentage": ".600",
+      "wins": 39
     }
   },
   "parkContext": {
@@ -269,12 +269,12 @@
       "away": {
         "playerName": "Ranger Suarez",
         "line": 5.5,
-        "overPrice": 122,
+        "overPrice": 128,
         "underPrice": -156,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "home": {
         "playerName": "Cam Schlittler",
@@ -284,7 +284,7 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -479,6 +479,255 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 824758,
+          "date": "2026-05-26",
+          "opponent": "Braves",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 6,
+          "runsAgainst": 7,
+          "starters": {
+            "team": {
+              "pitcherId": 624133,
+              "pitcherName": "Ranger Suarez",
+              "teamName": "Boston Red Sox",
+              "opponentName": "Atlanta Braves",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 675911,
+              "pitcherName": "Spencer Strider",
+              "teamName": "Atlanta Braves",
+              "opponentName": "Boston Red Sox",
+              "firstInningRunsAllowed": 2,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Lost late",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 2
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 1
+            },
+            {
+              "inning": 7,
+              "runs": 1
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 2
+            }
+          ]
+        },
+        {
+          "gamePk": 824756,
+          "date": "2026-05-27",
+          "opponent": "Braves",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 8,
+          "runsAgainst": 0,
+          "starters": {
+            "team": {
+              "pitcherId": 813349,
+              "pitcherName": "Connelly Early",
+              "teamName": "Boston Red Sox",
+              "opponentName": "Atlanta Braves",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 693821,
+              "pitcherName": "Bryce Elder",
+              "teamName": "Atlanta Braves",
+              "opponentName": "Boston Red Sox",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 6
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 1
+            },
+            {
+              "inning": 8,
+              "runs": 1
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824757,
+          "date": "2026-05-28",
+          "opponent": "Braves",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 2,
+          "runsAgainst": 10,
+          "starters": {
+            "team": {
+              "pitcherId": 801139,
+              "pitcherName": "Payton Tolle",
+              "teamName": "Boston Red Sox",
+              "opponentName": "Atlanta Braves",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 519242,
+              "pitcherName": "Chris Sale",
+              "teamName": "Atlanta Braves",
+              "opponentName": "Boston Red Sox",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Short",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "Lost late",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 2
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 824433,
           "date": "2026-05-29",
@@ -760,8 +1009,8 @@
               "tone": "negative"
             },
             "hitters": {
-              "label": "Stranded",
-              "tone": "warning"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Short",
@@ -775,7 +1024,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
@@ -791,7 +1040,7 @@
             },
             {
               "inning": 5,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 6,
@@ -858,7 +1107,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
@@ -866,7 +1115,7 @@
             },
             {
               "inning": 3,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 4,
@@ -874,7 +1123,7 @@
             },
             {
               "inning": 5,
-              "runs": 10
+              "runs": 5
             },
             {
               "inning": 6,
@@ -961,7 +1210,7 @@
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
@@ -973,7 +1222,7 @@
             },
             {
               "inning": 9,
-              "runs": 2
+              "runs": 1
             }
           ]
         },
@@ -1048,6 +1297,255 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 824107,
+          "date": "2026-05-25",
+          "opponent": "Royals",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 4,
+          "runsAgainst": 3,
+          "starters": {
+            "team": {
+              "pitcherId": 701542,
+              "pitcherName": "Will Warren",
+              "teamName": "New York Yankees",
+              "opponentName": "Kansas City Royals",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 608379,
+              "pitcherName": "Michael Wacha",
+              "teamName": "Kansas City Royals",
+              "opponentName": "New York Yankees",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Fav held",
+              "tone": "positive"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 2
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 2
+            }
+          ]
+        },
+        {
+          "gamePk": 824106,
+          "date": "2026-05-26",
+          "opponent": "Royals",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 15,
+          "runsAgainst": 1,
+          "starters": {
+            "team": {
+              "pitcherId": 693645,
+              "pitcherName": "Cam Schlittler",
+              "teamName": "New York Yankees",
+              "opponentName": "Kansas City Royals",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 663559,
+              "pitcherName": "Bailey Falter",
+              "teamName": "Kansas City Royals",
+              "opponentName": "New York Yankees",
+              "firstInningRunsAllowed": 4,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 4
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 4
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 1
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 1
+            },
+            {
+              "inning": 8,
+              "runs": 2
+            },
+            {
+              "inning": 9,
+              "runs": 2
+            }
+          ]
+        },
+        {
+          "gamePk": 824104,
+          "date": "2026-05-27",
+          "opponent": "Royals",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 7,
+          "runsAgainst": 0,
+          "starters": {
+            "team": {
+              "pitcherId": 543037,
+              "pitcherName": "Gerrit Cole",
+              "teamName": "New York Yankees",
+              "opponentName": "Kansas City Royals",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 702070,
+              "pitcherName": "Noah Cameron",
+              "teamName": "Kansas City Royals",
+              "opponentName": "New York Yankees",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 2
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 3
+            },
+            {
+              "inning": 8,
+              "runs": 2
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 825002,
           "date": "2026-05-29",
@@ -1352,11 +1850,11 @@
             },
             {
               "inning": 3,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 4,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 5,
@@ -1431,7 +1929,7 @@
             },
             {
               "inning": 2,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 3,
@@ -1439,7 +1937,7 @@
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
@@ -1447,7 +1945,7 @@
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
@@ -1459,7 +1957,7 @@
             },
             {
               "inning": 9,
-              "runs": 2
+              "runs": 1
             }
           ]
         },
@@ -1522,7 +2020,7 @@
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
@@ -1534,7 +2032,7 @@
             },
             {
               "inning": 7,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 8,
@@ -2259,7 +2757,243 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-823537",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 36.8,
+          "noRunProbabilityPct": 63.2,
+          "awayRunProbabilityPct": 4,
+          "homeRunProbabilityPct": 34.2,
+          "lean": "No run",
+          "strength": "strong",
+          "sampleHalves": 124,
+          "caution": "Yankees top order is driving early pressure (77.1) Red Sox starter has real season 1st-inning damage (27% run games, 0.5/start)",
+          "reason": "NRFI with a 63% modeled chance that the first inning stays scoreless. Red Sox score 4% of the time and Yankees 34.2% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 43.7,
+          "noRunProbabilityPct": 56.3,
+          "awayRunProbabilityPct": 19.6,
+          "homeRunProbabilityPct": 24.1,
+          "lean": "No run",
+          "strength": "m2-baseline",
+          "sampleHalves": 124,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.1 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Red Sox F5 runs 1.5; Yankees F5 runs 2.5; Ranger Suarez: HA 5.5, ER 2.5, win yes +202; Cam Schlittler: HA 4.5, ER 2.5, win yes +145; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 47,
+          "noRunProbabilityPct": 53,
+          "awayRunProbabilityPct": 21,
+          "homeRunProbabilityPct": 26,
+          "lean": "No run",
+          "strength": "m2-baseline",
+          "sampleHalves": 124,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.1 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Red Sox F5 runs 1.5; Yankees F5 runs 2.5; Ranger Suarez: HA 5.5, ER 2.5, win yes +202; Cam Schlittler: HA 4.5, ER 2.5, win yes +145; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 51.2,
+          "noRunProbabilityPct": 48.8,
+          "awayRunProbabilityPct": 28.8,
+          "homeRunProbabilityPct": 22.4,
+          "lean": "No run",
+          "strength": "m2-baseline",
+          "sampleHalves": 124,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.1 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Red Sox F5 runs 1.5; Yankees F5 runs 2.5; Ranger Suarez: HA 5.5, ER 2.5, win yes +202; Cam Schlittler: HA 4.5, ER 2.5, win yes +145; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 49,
+          "noRunProbabilityPct": 51,
+          "awayRunProbabilityPct": 21.6,
+          "homeRunProbabilityPct": 27.4,
+          "lean": "No run",
+          "strength": "m2-baseline",
+          "sampleHalves": 124,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.1 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Red Sox F5 runs 1.5; Yankees F5 runs 2.5; Ranger Suarez: HA 5.5, ER 2.5, win yes +202; Cam Schlittler: HA 4.5, ER 2.5, win yes +145; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Red Sox @ Yankees",
+      "mlbGamePk": 823537,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "yankees": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "red-sox": {
+            "first3": {
+              "line": 0.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "ranger-suarez": {
+            "name": "Ranger Suarez",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": 102,
+              "underOdds": -135,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 5.5,
+              "overOdds": 103,
+              "underOdds": -137,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 202,
+              "noOdds": -291
+            }
+          },
+          "cam-schlittler": {
+            "name": "Cam Schlittler",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": 127,
+              "underOdds": -169,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 4.5,
+              "overOdds": -150,
+              "underOdds": 113,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 145,
+              "noOdds": -203
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "Red Sox": {
@@ -2314,7 +3048,7 @@
   "lineupBoard": {
     "gameId": "red-sox-yankees",
     "title": "Red Sox @ Yankees",
-    "snapshot": "2026-06-07T15:20:45.574Z",
+    "snapshot": "2026-06-07T16:39:59.684Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -2329,7 +3063,7 @@
       "label": "82°F | Wind 14 mph Out | 3% precip"
     },
     "marketWeatherContext": {
-      "line": "NYY -154",
+      "line": "NYY -152",
       "total": "8.0 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -6227,14 +6961,14 @@
       "pitchHand": "L",
       "wins": 2,
       "losses": 3,
-      "era": "3.38",
-      "strikeOuts": 57,
-      "inningsPitched": "58.2",
-      "hitsAllowed": 49,
+      "era": "3.18",
+      "strikeOuts": 63,
+      "inningsPitched": "65.0",
+      "hitsAllowed": 55,
       "walks": 19,
       "homeRunsAllowed": 4,
-      "whip": "1.16",
-      "gamesStarted": 11,
+      "whip": "1.14",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 624133,
@@ -6410,24 +7144,24 @@
       "strikeoutMarket": {
         "playerName": "Ranger Suarez",
         "line": 5.5,
-        "overPrice": 122,
+        "overPrice": 128,
         "underPrice": -156,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/ranger-suarez-vs-yankees",
-        "answerText": "Ranger Suarez has a record of 1-2 with an ERA of 4.38 and 12 strikeouts in 4 appearances against the Yankees in his career.",
+        "answerText": "Ranger Suarez is 1-2 with an ERA of 4.38 and 12 strikeouts in 4 appearances against the Yankees in his career.",
         "pitcherName": "Ranger Suarez",
         "pitcherTeam": "Red Sox",
         "opponentTeam": "Yankees",
         "appearances": 2,
         "gamesStarted": 2,
-        "wins": null,
-        "losses": null,
+        "wins": 1,
+        "losses": 2,
         "era": 4.38,
         "strikeouts": 12,
         "inningsPitched": "12.1",
@@ -6560,7 +7294,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:30.524Z"
+        "fetchedAt": "2026-06-07T16:38:44.583Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -11303,7 +12037,7 @@
           "Away split: 2.93 ERA / 2 HR allowed.",
           "vs. Left: .273 AVG / .770 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -11330,14 +12064,14 @@
       "pitchHand": "R",
       "wins": 7,
       "losses": 3,
-      "era": "1.89",
-      "strikeOuts": 84,
-      "inningsPitched": "76.1",
-      "hitsAllowed": 53,
-      "walks": 13,
+      "era": "1.87",
+      "strikeOuts": 89,
+      "inningsPitched": "82.0",
+      "hitsAllowed": 57,
+      "walks": 14,
       "homeRunsAllowed": 4,
-      "whip": "0.86",
-      "gamesStarted": 13,
+      "whip": "0.87",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 693645,
@@ -11518,12 +12252,12 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/cam-schlittler-vs-red-sox",
-        "answerText": "Cam Schlittler has allowed 2 runs on 4 hits with 1 walk and 5 strikeouts in 8 innings against the Red Sox in his career. He has been credited with the win.",
+        "answerText": "Cam Schlittler has given up 2 runs on 4 hits with 1 walk and 5 strikeouts in 8 innings against the Red Sox in his career. He has been credited with the win.",
         "pitcherName": "Cam Schlittler",
         "pitcherTeam": "Yankees",
         "opponentTeam": "Red Sox",
@@ -11567,7 +12301,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:32.167Z"
+        "fetchedAt": "2026-06-07T16:38:46.248Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -16651,7 +17385,7 @@
           "vs. Left: .220 AVG / .588 OPS allowed.",
           "Yankee Stadium: 3.33 ERA / .269 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -16700,17 +17434,17 @@
       {
         "label": "Spread",
         "book": "DraftKings typed MLB board",
-        "value": "Red Sox +1.5 -167 / Yankees -1.5 +138"
+        "value": "Red Sox +1.5 -170 / Yankees -1.5 +140"
       },
       {
         "label": "Total",
         "book": "DraftKings typed MLB board",
-        "value": "o8 -117 / u8 -103"
+        "value": "o8 -114 / u8 -105"
       },
       {
         "label": "Moneyline",
         "book": "DraftKings typed MLB board",
-        "value": "Red Sox +129 / Yankees -156"
+        "value": "Red Sox +124 / Yankees -149"
       },
       {
         "label": "1st 5 ML",
@@ -16732,24 +17466,24 @@
       "index": 0,
       "role": "Away",
       "name": "Red Sox",
-      "detail": "Ranger Suarez (LHP) | 2-3 | 3.38 ERA | 57 SO | 1.16 WHIP | 58.2 IP",
-      "americanOdds": 129,
-      "americanLabel": "+129",
-      "decimalOdds": 2.29,
-      "impliedProbability": 0.4366812227074236,
-      "impliedProbabilityLabel": "43.7%"
+      "detail": "Ranger Suarez (LHP) | 2-3 | 3.18 ERA | 63 SO | 1.14 WHIP | 65.0 IP",
+      "americanOdds": 124,
+      "americanLabel": "+124",
+      "decimalOdds": 2.24,
+      "impliedProbability": 0.44642857142857145,
+      "impliedProbabilityLabel": "44.6%"
     },
     {
       "id": "red-sox-yankees:1",
       "index": 1,
       "role": "Home",
       "name": "Yankees",
-      "detail": "Cam Schlittler (RHP) | 7-3 | 1.89 ERA | 84 SO | 0.86 WHIP | 76.1 IP",
-      "americanOdds": -156,
-      "americanLabel": "-156",
-      "decimalOdds": 1.641025641025641,
-      "impliedProbability": 0.609375,
-      "impliedProbabilityLabel": "60.9%"
+      "detail": "Cam Schlittler (RHP) | 7-3 | 1.87 ERA | 89 SO | 0.87 WHIP | 82.0 IP",
+      "americanOdds": -149,
+      "americanLabel": "-149",
+      "decimalOdds": 1.6711409395973154,
+      "impliedProbability": 0.5983935742971888,
+      "impliedProbabilityLabel": "59.8%"
     }
   ],
   "moneyline": {
@@ -16762,24 +17496,24 @@
         "index": 0,
         "role": "Away",
         "name": "Red Sox",
-        "detail": "Ranger Suarez (LHP) | 2-3 | 3.38 ERA | 57 SO | 1.16 WHIP | 58.2 IP",
-        "americanOdds": 129,
-        "americanLabel": "+129",
-        "decimalOdds": 2.29,
-        "impliedProbability": 0.4366812227074236,
-        "impliedProbabilityLabel": "43.7%"
+        "detail": "Ranger Suarez (LHP) | 2-3 | 3.18 ERA | 63 SO | 1.14 WHIP | 65.0 IP",
+        "americanOdds": 124,
+        "americanLabel": "+124",
+        "decimalOdds": 2.24,
+        "impliedProbability": 0.44642857142857145,
+        "impliedProbabilityLabel": "44.6%"
       },
       {
         "id": "red-sox-yankees:1",
         "index": 1,
         "role": "Home",
         "name": "Yankees",
-        "detail": "Cam Schlittler (RHP) | 7-3 | 1.89 ERA | 84 SO | 0.86 WHIP | 76.1 IP",
-        "americanOdds": -156,
-        "americanLabel": "-156",
-        "decimalOdds": 1.641025641025641,
-        "impliedProbability": 0.609375,
-        "impliedProbabilityLabel": "60.9%"
+        "detail": "Cam Schlittler (RHP) | 7-3 | 1.87 ERA | 89 SO | 0.87 WHIP | 82.0 IP",
+        "americanOdds": -149,
+        "americanLabel": "-149",
+        "decimalOdds": 1.6711409395973154,
+        "impliedProbability": 0.5983935742971888,
+        "impliedProbabilityLabel": "59.8%"
       }
     ]
   },
@@ -16791,43 +17525,43 @@
       "index": 1,
       "role": "Home",
       "name": "Yankees",
-      "detail": "Cam Schlittler (RHP) | 7-3 | 1.89 ERA | 84 SO | 0.86 WHIP | 76.1 IP",
-      "americanOdds": -156,
-      "americanLabel": "-156",
-      "decimalOdds": 1.641025641025641,
-      "impliedProbability": 0.609375,
-      "impliedProbabilityLabel": "60.9%"
+      "detail": "Cam Schlittler (RHP) | 7-3 | 1.87 ERA | 89 SO | 0.87 WHIP | 82.0 IP",
+      "americanOdds": -149,
+      "americanLabel": "-149",
+      "decimalOdds": 1.6711409395973154,
+      "impliedProbability": 0.5983935742971888,
+      "impliedProbabilityLabel": "59.8%"
     },
     "opponent": {
       "id": "red-sox-yankees:0",
       "index": 0,
       "role": "Away",
       "name": "Red Sox",
-      "detail": "Ranger Suarez (LHP) | 2-3 | 3.38 ERA | 57 SO | 1.16 WHIP | 58.2 IP",
-      "americanOdds": 129,
-      "americanLabel": "+129",
-      "decimalOdds": 2.29,
-      "impliedProbability": 0.4366812227074236,
-      "impliedProbabilityLabel": "43.7%"
+      "detail": "Ranger Suarez (LHP) | 2-3 | 3.18 ERA | 63 SO | 1.14 WHIP | 65.0 IP",
+      "americanOdds": 124,
+      "americanLabel": "+124",
+      "decimalOdds": 2.24,
+      "impliedProbability": 0.44642857142857145,
+      "impliedProbabilityLabel": "44.6%"
     },
     "lean": "Model pick: Yankees on standings profile and projected hit volume.",
-    "rationale": "Standings profile: Yankees (37-26, 2nd in division, +91 RD) vs Red Sox (27-35, 5th in division, -4 RD)",
-    "confidence": 70,
+    "rationale": "Standings profile: Yankees (39-26, 2nd in division, +98 RD) vs Red Sox (27-37, 5th in division, -11 RD)",
+    "confidence": 71,
     "volatility": 80,
-    "recommendationScore": 48,
+    "recommendationScore": 49,
     "tier": "Strong",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 10.6,
-    "modelEdgeLabel": "10.6-point model edge",
-    "marketProbability": 0.5825451699171612,
-    "marketProbabilityLabel": "58.3%",
+    "modelEdge": 11.1,
+    "modelEdgeLabel": "11.1-point model edge",
+    "marketProbability": 0.5727229047978585,
+    "marketProbabilityLabel": "57.3%",
     "inputs": [
       {
         "label": "Standings profile",
-        "summary": "Standings profile: Yankees (37-26, 2nd in division, +91 RD) vs Red Sox (27-35, 5th in division, -4 RD)",
+        "summary": "Standings profile: Yankees (39-26, 2nd in division, +98 RD) vs Red Sox (27-37, 5th in division, -11 RD)",
         "source": "Standings context",
-        "margin": 39.5,
+        "margin": 51.2,
         "weight": 0.14
       },
       {
@@ -16838,11 +17572,11 @@
         "weight": 0.19
       },
       {
-        "label": "Market price",
-        "summary": "Market price: Yankees (58.3% no-vig) vs Red Sox (41.7% no-vig)",
-        "source": "Moneyline board",
-        "margin": 16.5,
-        "weight": 0.26
+        "label": "Lineup-vs-pitching fit",
+        "summary": "Lineup-vs-pitching fit: Yankees (Grade +0.70 | platoon 6 | starter arsenal 79 | bridge arsenal 50 | pressure 81) vs Red Sox (Grade -2.81 | platoon 6 | starter arsenal 26 | bridge arsenal 50 | pressure 18)",
+        "source": "Official lineup + handedness + starter arsenal + likely reliever arsenal fit",
+        "margin": 29.8,
+        "weight": 0.14
       }
     ],
     "inputsUsed": 11,
@@ -16897,14 +17631,14 @@
     "indicators": {
       "reliefPitchingRisk": 49.4,
       "coinflipPressure": 28,
-      "starterLeverageIndex": 98.6,
+      "starterLeverageIndex": 97.9,
       "lateInningStabilityIndex": 47.1,
       "pickBullpenScore": 66.9,
       "oppBullpenScore": 67.1,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 77.5,
-      "oppStarterScore": 66.8,
+      "pickStarterScore": 77.6,
+      "oppStarterScore": 67.5,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -16997,14 +17731,14 @@
         "lateNotClean"
       ],
       "efficientFavoriteBlockers": [],
-      "tierOneRiskPoints": 1,
+      "tierOneRiskPoints": 2,
       "tierOnePassFlag": false,
       "tierOneRiskFlags": [
         "starterLateFragility",
         "moderateFavoriteClean"
       ],
       "favoredSignalCount": 7,
-      "starterLateGap": 51.5,
+      "starterLateGap": 50.8,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 1.2,
       "gameShape": {
@@ -17013,7 +17747,7 @@
         "category": "early_pressure_side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
         "categoryConfidence": 63.1,
-        "realityGapScore": 37.2,
+        "realityGapScore": 37.1,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -17091,7 +17825,7 @@
           "projectedHitEdge": 3.2
         }
       },
-      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.2/100. Main checks: 82°F | Wind 14 mph Out | 3% precip | weather helps carry.",
+      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.1/100. Main checks: 82°F | Wind 14 mph Out | 3% precip | weather helps carry.",
       "pickTeam": "Yankees",
       "opponentTeam": "Red Sox",
       "scores": {
@@ -17099,9 +17833,9 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
         "bullpenFlipScore": 36,
-        "starterControlScore": 60.6,
-        "marketContradictionScore": 5.7,
-        "realityGapScore": 37.2
+        "starterControlScore": 60,
+        "marketContradictionScore": 5.1,
+        "realityGapScore": 37.1
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -17117,7 +17851,7 @@
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
             "gameScore": 38,
             "pickScore": 38,
-            "opponentScore": 12
+            "opponentScore": 12.2
           },
           {
             "id": "chaos",
@@ -17184,7 +17918,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 77.5,
+              "starterScore": 77.6,
               "bullpenScore": 66.9,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17198,7 +17932,7 @@
             "role": "opponent",
             "team": "Red Sox",
             "scores": {
-              "pressure": 12,
+              "pressure": 12.2,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17206,7 +17940,7 @@
               "flow": 0
             },
             "polygon": [
-              12,
+              12.2,
               5,
               0,
               16,
@@ -17217,7 +17951,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 66.8,
+              "starterScore": 67.5,
               "bullpenScore": 67.1,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17709,8 +18443,8 @@
         "runDiff": 0.7,
         "absoluteRunDiff": 0.7,
         "runDiffSharePct": 11.9,
-        "confidence": 70,
-        "marketProbabilityPct": 58.3,
+        "confidence": 71,
+        "marketProbabilityPct": 57.3,
         "grade": "Thin ML shape",
         "source": "MLB-M2 mlbProjection",
         "note": "Yankees projects 0.7 runs better in a 5.9-run environment."
@@ -17770,7 +18504,7 @@
             "projectedHitEdge": 3.2
           }
         },
-        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.2/100. Main checks: 82°F | Wind 14 mph Out | 3% precip | weather helps carry.",
+        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.1/100. Main checks: 82°F | Wind 14 mph Out | 3% precip | weather helps carry.",
         "pickTeam": "Yankees",
         "opponentTeam": "Red Sox",
         "scores": {
@@ -17778,9 +18512,9 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
           "bullpenFlipScore": 36,
-          "starterControlScore": 60.6,
-          "marketContradictionScore": 5.7,
-          "realityGapScore": 37.2
+          "starterControlScore": 60,
+          "marketContradictionScore": 5.1,
+          "realityGapScore": 37.1
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -17796,7 +18530,7 @@
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
               "gameScore": 38,
               "pickScore": 38,
-              "opponentScore": 12
+              "opponentScore": 12.2
             },
             {
               "id": "chaos",
@@ -17863,7 +18597,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 77.5,
+                "starterScore": 77.6,
                 "bullpenScore": 66.9,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17877,7 +18611,7 @@
               "role": "opponent",
               "team": "Red Sox",
               "scores": {
-                "pressure": 12,
+                "pressure": 12.2,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -17885,7 +18619,7 @@
                 "flow": 0
               },
               "polygon": [
-                12,
+                12.2,
                 5,
                 0,
                 16,
@@ -17896,7 +18630,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 66.8,
+                "starterScore": 67.5,
                 "bullpenScore": 67.1,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18139,7 +18873,7 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
-        "confidence": 70,
+        "confidence": 61,
         "probability": 59.1,
         "expectedValue": 0.9,
         "statValueLabel": "0.89 exp RBI",
@@ -18179,7 +18913,7 @@
           "trackingPenalty": 18,
           "reason": "repeatable career power"
         },
-        "recommendationTier": "Strong",
+        "recommendationTier": "Lean",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 4 carry | process improving; approach 77.6/100 | recent form up | run-production slot",
@@ -18188,6 +18922,143 @@
           "carry-bat-live",
           "process-improving",
           "run-production-slot",
+          "statcast-power-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+10.00 vs Cam Schlittler",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".299 AVG | .934 OPS | 63 H | 13 HR | 10g: .467 AVG | 1.529 OPS | 14 H | 4 HR | vs RHP: .292 AVG | .874 OPS | 8 HR | career 4507 PA | .815 OPS | 183 HR | repeatable career power | power 72 | 2026 sample ok | arsenal 4-Seam Fastball 45% / Cutter 26% / Sinker 19% | fit -3.3 | +10.0 matchup grade in a contact-suppressor lane"
+      },
+      {
+        "id": "red-sox-yankees:575929:runs",
+        "gameId": "red-sox-yankees",
+        "gameTitle": "Red Sox @ Yankees",
+        "league": "MLB",
+        "playerId": 575929,
+        "playerName": "Willson Contreras",
+        "teamName": "Red Sox",
+        "slot": 4,
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 64,
+        "probability": 68.8,
+        "expectedValue": 1.2,
+        "statValueLabel": "1.17 exp runs",
+        "sample": {
+          "seasonGames": 60,
+          "seasonPlateAppearances": 249,
+          "recentGames": 10,
+          "recentPlateAppearances": 34,
+          "statcastGames": 5,
+          "statcastPlateAppearances": 22,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 4507,
+          "seasonPa": 249,
+          "powerIndex": 71.91,
+          "contactRisk": 47.29,
+          "roleStability": 100,
+          "label": "repeatable career power",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 77.6,
+            "processScore": 18,
+            "careerWeight": 0.1,
+            "identityDelta": 6.2,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 249,
+            "careerPa": 4507
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "repeatable career power"
+        },
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 4 carry | recent form up",
+        "scriptTags": [
+          "posted-lineup",
+          "carry-bat-live",
+          "process-improving",
+          "statcast-power-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+10.00 vs Cam Schlittler",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".299 AVG | .934 OPS | 63 H | 13 HR | 10g: .467 AVG | 1.529 OPS | 14 H | 4 HR | vs RHP: .292 AVG | .874 OPS | 8 HR | career 4507 PA | .815 OPS | 183 HR | repeatable career power | power 72 | 2026 sample ok | arsenal 4-Seam Fastball 45% / Cutter 26% / Sinker 19% | fit -3.3 | +10.0 matchup grade in a contact-suppressor lane"
+      },
+      {
+        "id": "red-sox-yankees:575929:hitRunRbi",
+        "gameId": "red-sox-yankees",
+        "gameTitle": "Red Sox @ Yankees",
+        "league": "MLB",
+        "playerId": 575929,
+        "playerName": "Willson Contreras",
+        "teamName": "Red Sox",
+        "slot": 4,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
+        "confidence": 70,
+        "probability": 67,
+        "expectedValue": 2.3,
+        "statValueLabel": "0.94 H · 0.63 R · 0.73 RBI · 2.30 total",
+        "sample": {
+          "seasonGames": 60,
+          "seasonPlateAppearances": 249,
+          "recentGames": 10,
+          "recentPlateAppearances": 34,
+          "statcastGames": 5,
+          "statcastPlateAppearances": 22,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 4507,
+          "seasonPa": 249,
+          "powerIndex": 71.91,
+          "contactRisk": 47.29,
+          "roleStability": 100,
+          "label": "repeatable career power",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 77.6,
+            "processScore": 18,
+            "careerWeight": 0.1,
+            "identityDelta": 6.2,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 249,
+            "careerPa": 4507
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "repeatable career power"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 4 carry | recent form up | combined hits/runs/RBI lane",
+        "scriptTags": [
+          "posted-lineup",
+          "carry-bat-live",
+          "process-improving",
+          "combined-production-lane",
           "statcast-power-up",
           "statcast-hr-carry"
         ],
@@ -18350,9 +19221,9 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 57,
-        "probability": 28.7,
+        "probability": 27.9,
         "expectedValue": 0.3,
-        "statValueLabel": "0.34 exp walks",
+        "statValueLabel": "0.33 exp walks",
         "sample": {
           "seasonGames": 58,
           "seasonPlateAppearances": 246,
@@ -18474,158 +19345,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "posted",
         "playerSummary": ".305 AVG | 1.051 OPS | 64 H | 18 HR | 10g: .316 AVG | 1.093 OPS | 12 H | 2 HR | vs LHP: .302 AVG | .992 OPS | 5 HR | career 932 PA | .844 OPS | 50 HR | repeatable career power | power 95 | 2026 sample ok | arsenal Sinker 27% / Cutter 21% / 4-Seam Fastball 19% | fit +4.5 | +10.0 matchup grade in a neutral lane"
-      },
-      {
-        "id": "red-sox-yankees:575929:totalBases",
-        "gameId": "red-sox-yankees",
-        "gameTitle": "Red Sox @ Yankees",
-        "league": "MLB",
-        "playerId": 575929,
-        "playerName": "Willson Contreras",
-        "teamName": "Red Sox",
-        "slot": 4,
-        "propType": "totalBases",
-        "propLabel": "TB",
-        "marketLabel": "Over 1.5 total bases",
-        "confidence": 76,
-        "probability": 63.3,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.15 exp TB",
-        "sample": {
-          "seasonGames": 60,
-          "seasonPlateAppearances": 249,
-          "recentGames": 10,
-          "recentPlateAppearances": 34,
-          "statcastGames": 5,
-          "statcastPlateAppearances": 22,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 4507,
-          "seasonPa": 249,
-          "powerIndex": 71.91,
-          "contactRisk": 47.29,
-          "roleStability": 100,
-          "label": "repeatable career power",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": true,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 77.6,
-            "processScore": 18,
-            "careerWeight": 0.1,
-            "identityDelta": 6.2,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 249,
-            "careerPa": 4507
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "repeatable career power"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": "Soft heat",
-        "shadowSupportLevel": "soft",
-        "reason": "slot 4 carry | soft heat only: xSLG + hard-hit support is still thin | rolling Statcast power is live | repeatable career power",
-        "scriptTags": [
-          "posted-lineup",
-          "carry-bat-live",
-          "power-lane",
-          "career-power-backed",
-          "process-improving",
-          "soft-heat",
-          "statcast-power-up",
-          "statcast-hr-carry"
-        ],
-        "matchupNote": "+10.00 vs Cam Schlittler",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".299 AVG | .934 OPS | 63 H | 13 HR | 10g: .467 AVG | 1.529 OPS | 14 H | 4 HR | vs RHP: .292 AVG | .874 OPS | 8 HR | career 4507 PA | .815 OPS | 183 HR | repeatable career power | power 72 | 2026 sample ok | arsenal 4-Seam Fastball 45% / Cutter 26% / Sinker 19% | fit -3.3 | +10.0 matchup grade in a contact-suppressor lane"
-      },
-      {
-        "id": "red-sox-yankees:502671:totalBases",
-        "gameId": "red-sox-yankees",
-        "gameTitle": "Red Sox @ Yankees",
-        "league": "MLB",
-        "playerId": 502671,
-        "playerName": "Paul Goldschmidt",
-        "teamName": "Yankees",
-        "slot": 1,
-        "propType": "totalBases",
-        "propLabel": "TB",
-        "marketLabel": "Over 1.5 total bases",
-        "confidence": 65,
-        "probability": 63.3,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.15 exp TB",
-        "sample": {
-          "seasonGames": 38,
-          "seasonPlateAppearances": 143,
-          "recentGames": 10,
-          "recentPlateAppearances": 42,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 25,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 8948,
-          "seasonPa": 143,
-          "powerIndex": 79.56,
-          "contactRisk": 42.24,
-          "roleStability": 100,
-          "label": "repeatable career power",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": true,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 63,
-            "processScore": 7,
-            "careerWeight": 0.1,
-            "identityDelta": 2.6,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 143,
-            "careerPa": 8948
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "repeatable career power"
-        },
-        "recommendationTier": "Lean",
-        "shadowSupportTag": "Soft heat",
-        "shadowSupportLevel": "soft",
-        "reason": "slot 1 carry | soft heat only: xSLG + hard-hit support is still thin | Statcast contact is fading | repeatable career power",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "carry-bat-live",
-          "power-lane",
-          "career-power-backed",
-          "process-improving",
-          "soft-heat",
-          "statcast-contact-up",
-          "statcast-fade"
-        ],
-        "matchupNote": "+10.00 vs Ranger Suarez",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".268 AVG | .861 OPS | 34 H | 7 HR | 10g: .286 AVG | .810 OPS | 12 H | 2 HR | vs LHP: .385 AVG | 1.292 OPS | 5 HR | career 8948 PA | .882 OPS | 378 HR | repeatable career power | power 80 | 2026 sample ok | arsenal Sinker 27% / Cutter 21% / 4-Seam Fastball 19% | fit -1.4 | +10.0 matchup grade in a neutral lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 19,
+    "candidateCount": 23,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

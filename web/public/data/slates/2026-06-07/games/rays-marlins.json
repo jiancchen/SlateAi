@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Rays",
-      "detail": "Griffin Jax (RHP) | 1-4 | 4.76 ERA | 32 SO | 1.47 WHIP | 34.0 IP"
+      "detail": "Griffin Jax (RHP) | 1-4 | 4.15 ERA | 36 SO | 1.41 WHIP | 39.0 IP"
     },
     {
       "side": "Home",
       "name": "Marlins",
-      "detail": "Sandy Alcantara (RHP) | 4-4 | 4.59 ERA | 57 SO | 1.30 WHIP | 82.1 IP"
+      "detail": "Sandy Alcantara (RHP) | 5-4 | 4.33 ERA | 64 SO | 1.26 WHIP | 89.1 IP"
     }
   ],
   "summary": "Rays @ Marlins with Griffin Jax against Sandy Alcantara.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Rays -109 / Marlins -111 | o7.5 -117 / u7.5 -103 | Rays -1.5 +153 / Marlins +1.5 -186 | F5 Rays -110 / Marlins -120 / o4.5 +114 / u4.5 -145.",
+    "Current board: Rays -109 / Marlins -111 | o7.5 -117 / u7.5 -103 | Rays -1.5 +153 / Marlins +1.5 -186 | F5 Rays -115 / Marlins -115 / o4.5 +114 / u4.5 -145.",
     "Griffin Jax vs Sandy Alcantara."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -35,21 +35,21 @@
       "divisionLeader": true,
       "divisionRank": "1",
       "gamesBack": "-",
-      "losses": 24,
-      "runDifferential": 10,
-      "streakCode": "L1",
-      "winningPercentage": ".607",
-      "wins": 37
+      "losses": 25,
+      "runDifferential": 9,
+      "streakCode": "W1",
+      "winningPercentage": ".603",
+      "wins": 38
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "4",
       "gamesBack": "14.0",
       "losses": 35,
-      "runDifferential": -23,
-      "streakCode": "W1",
-      "winningPercentage": ".462",
-      "wins": 30
+      "runDifferential": -20,
+      "streakCode": "W2",
+      "winningPercentage": ".470",
+      "wins": 31
     }
   },
   "parkContext": {
@@ -270,21 +270,21 @@
         "playerName": "Griffin Jax",
         "line": 4.5,
         "overPrice": 113,
-        "underPrice": -144,
+        "underPrice": -139,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "home": {
         "playerName": "Sandy Alcantara",
         "line": 4.5,
         "overPrice": 100,
-        "underPrice": -117,
+        "underPrice": -111,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -479,6 +479,172 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 824837,
+          "date": "2026-05-26",
+          "opponent": "Orioles",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 1,
+          "runsAgainst": 6,
+          "starters": {
+            "team": {
+              "pitcherId": 643377,
+              "pitcherName": "Griffin Jax",
+              "teamName": "Tampa Bay Rays",
+              "opponentName": "Baltimore Orioles",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 669358,
+              "pitcherName": "Shane Baz",
+              "teamName": "Baltimore Orioles",
+              "opponentName": "Tampa Bay Rays",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Stranded",
+              "tone": "negative"
+            },
+            "starter": {
+              "label": "Cracked",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 1
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824836,
+          "date": "2026-05-27",
+          "opponent": "Orioles",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 2,
+          "runsAgainst": 11,
+          "starters": {
+            "team": {
+              "pitcherId": 571927,
+              "pitcherName": "Steven Matz",
+              "teamName": "Tampa Bay Rays",
+              "opponentName": "Baltimore Orioles",
+              "firstInningRunsAllowed": 5,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 694346,
+              "pitcherName": "Trey Gibson",
+              "teamName": "Baltimore Orioles",
+              "opponentName": "Tampa Bay Rays",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Stranded",
+              "tone": "negative"
+            },
+            "starter": {
+              "label": "Cracked",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 1
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 1
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 822978,
           "date": "2026-05-29",
@@ -912,8 +1078,8 @@
               "tone": "negative"
             },
             "hitters": {
-              "label": "Stranded",
-              "tone": "warning"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Cracked",
@@ -927,11 +1093,11 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 3,
@@ -1103,6 +1269,172 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 822811,
+          "date": "2026-05-26",
+          "opponent": "Blue Jays",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 1,
+          "runsAgainst": 8,
+          "starters": {
+            "team": {
+              "pitcherId": 645261,
+              "pitcherName": "Sandy Alcantara",
+              "teamName": "Miami Marlins",
+              "opponentName": "Toronto Blue Jays",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 680755,
+              "pitcherName": "Braydon Fisher",
+              "teamName": "Toronto Blue Jays",
+              "opponentName": "Miami Marlins",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 1
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 822809,
+          "date": "2026-05-27",
+          "opponent": "Blue Jays",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 1,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 691587,
+              "pitcherName": "Eury Pérez",
+              "teamName": "Miami Marlins",
+              "opponentName": "Toronto Blue Jays",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 592332,
+              "pitcherName": "Kevin Gausman",
+              "teamName": "Toronto Blue Jays",
+              "opponentName": "Miami Marlins",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Stranded",
+              "tone": "negative"
+            },
+            "starter": {
+              "label": "Short",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "Lost late",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 1
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 823623,
           "date": "2026-05-29",
@@ -1488,7 +1820,7 @@
             },
             {
               "inning": 5,
-              "runs": 8
+              "runs": 4
             },
             {
               "inning": 6,
@@ -1504,7 +1836,7 @@
             },
             {
               "inning": 9,
-              "runs": 6
+              "runs": 3
             }
           ]
         },
@@ -1559,7 +1891,7 @@
             },
             {
               "inning": 2,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 3,
@@ -1583,11 +1915,11 @@
             },
             {
               "inning": 8,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 9,
-              "runs": 2
+              "runs": 1
             }
           ]
         },
@@ -2519,7 +2851,243 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-823857",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 69,
+          "noRunProbabilityPct": 31,
+          "awayRunProbabilityPct": 67.7,
+          "homeRunProbabilityPct": 4,
+          "lean": "Run",
+          "strength": "strong",
+          "sampleHalves": 126,
+          "caution": "Marlins have been dead early in this series",
+          "reason": "YRFI with a 69% modeled chance of at least one first-inning run. Rays score 67.7% of the time and Marlins 4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 63.5,
+          "noRunProbabilityPct": 36.5,
+          "awayRunProbabilityPct": 28.7,
+          "homeRunProbabilityPct": 34.8,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 126,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.3 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Rays F5 runs 1.5; Marlins F5 runs 1.5; Griffin Jax: HA 4.5, ER 1.5, win yes +188; Sandy Alcantara: HA 5.5, ER 2.5, win yes +173; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 64.4,
+          "noRunProbabilityPct": 35.6,
+          "awayRunProbabilityPct": 33,
+          "homeRunProbabilityPct": 31.4,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 126,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.3 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Rays F5 runs 1.5; Marlins F5 runs 1.5; Griffin Jax: HA 4.5, ER 1.5, win yes +188; Sandy Alcantara: HA 5.5, ER 2.5, win yes +173; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 63.7,
+          "noRunProbabilityPct": 36.3,
+          "awayRunProbabilityPct": 33.8,
+          "homeRunProbabilityPct": 29.9,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 126,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.3 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Rays F5 runs 1.5; Marlins F5 runs 1.5; Griffin Jax: HA 4.5, ER 1.5, win yes +188; Sandy Alcantara: HA 5.5, ER 2.5, win yes +173; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 68.3,
+          "noRunProbabilityPct": 31.7,
+          "awayRunProbabilityPct": 33.6,
+          "homeRunProbabilityPct": 34.7,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 126,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.3 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Rays F5 runs 1.5; Marlins F5 runs 1.5; Griffin Jax: HA 4.5, ER 1.5, win yes +188; Sandy Alcantara: HA 5.5, ER 2.5, win yes +173; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Rays @ Marlins",
+      "mlbGamePk": 823857,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "marlins": {
+            "first3": {
+              "line": 0.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "rays": {
+            "first3": {
+              "line": 0.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "griffin-jax": {
+            "name": "Griffin Jax",
+            "earnedRunsAllowed": {
+              "line": 1.5,
+              "overOdds": -137,
+              "underOdds": 103,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 4.5,
+              "overOdds": 108,
+              "underOdds": -144,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 188,
+              "noOdds": -274
+            }
+          },
+          "sandy-alcantara": {
+            "name": "Sandy Alcantara",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": -103,
+              "underOdds": -129,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 5.5,
+              "overOdds": -140,
+              "underOdds": 106,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 173,
+              "noOdds": -240
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "Rays": {
@@ -2574,7 +3142,7 @@
   "lineupBoard": {
     "gameId": "rays-marlins",
     "title": "Rays @ Marlins",
-    "snapshot": "2026-06-07T15:20:45.577Z",
+    "snapshot": "2026-06-07T16:39:59.687Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -2589,7 +3157,7 @@
       "label": "Dome In Domed Stadium"
     },
     "marketWeatherContext": {
-      "line": "TB -113",
+      "line": "TB -112",
       "total": "7.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -6721,14 +7289,14 @@
       "pitchHand": "R",
       "wins": 1,
       "losses": 4,
-      "era": "4.76",
-      "strikeOuts": 32,
-      "inningsPitched": "34.0",
-      "hitsAllowed": 34,
-      "walks": 16,
+      "era": "4.15",
+      "strikeOuts": 36,
+      "inningsPitched": "39.0",
+      "hitsAllowed": 37,
+      "walks": 18,
       "homeRunsAllowed": 7,
-      "whip": "1.47",
-      "gamesStarted": 7,
+      "whip": "1.41",
+      "gamesStarted": 8,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 643377,
@@ -6878,16 +7446,16 @@
         "playerName": "Griffin Jax",
         "line": 4.5,
         "overPrice": 113,
-        "underPrice": -144,
+        "underPrice": -139,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/griffin-jax-vs-marlins",
-        "answerText": "Griffin Jax has a 1-1 record with an ERA of 4.91 and 6 strikeouts in 4 appearances against the Marlins in his career.",
+        "answerText": "Griffin Jax is 1-1 with an ERA of 4.91 and 6 strikeouts in 4 appearances against the Marlins in his career.",
         "pitcherName": "Griffin Jax",
         "pitcherTeam": "Rays",
         "opponentTeam": "Marlins",
@@ -7027,7 +7595,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:41.110Z"
+        "fetchedAt": "2026-06-07T16:38:54.925Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -12280,7 +12848,7 @@
           "Away split: 4.67 ERA / 2 HR allowed.",
           "vs. Left: .293 AVG / .841 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -12305,16 +12873,16 @@
       "id": 645261,
       "fullName": "Sandy Alcantara",
       "pitchHand": "R",
-      "wins": 4,
+      "wins": 5,
       "losses": 4,
-      "era": "4.59",
-      "strikeOuts": 57,
-      "inningsPitched": "82.1",
-      "hitsAllowed": 86,
-      "walks": 21,
+      "era": "4.33",
+      "strikeOuts": 64,
+      "inningsPitched": "89.1",
+      "hitsAllowed": 91,
+      "walks": 22,
       "homeRunsAllowed": 10,
-      "whip": "1.30",
-      "gamesStarted": 13,
+      "whip": "1.26",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 645261,
@@ -12491,23 +13059,23 @@
         "playerName": "Sandy Alcantara",
         "line": 4.5,
         "overPrice": 100,
-        "underPrice": -117,
+        "underPrice": -111,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/sandy-alcantara-vs-rays",
-        "answerText": "Sandy Alcantara is 2-4 with an ERA of 3.40 and 43 strikeouts in 8 appearances versus the Rays in his career.",
+        "answerText": "Sandy Alcantara has a record of 2-4 with an ERA of 3.40 and 43 strikeouts in 8 appearances against the Rays in his career.",
         "pitcherName": "Sandy Alcantara",
         "pitcherTeam": "Marlins",
         "opponentTeam": "Rays",
         "appearances": 8,
         "gamesStarted": 8,
-        "wins": 2,
-        "losses": 4,
+        "wins": null,
+        "losses": null,
         "era": 3.4,
         "strikeouts": 43,
         "inningsPitched": "47.2",
@@ -12736,7 +13304,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:42.817Z"
+        "fetchedAt": "2026-06-07T16:38:55.740Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -17819,7 +18387,7 @@
           "Away split: 5.65 ERA / 7 HR allowed.",
           "vs. Left: .278 AVG / .792 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -17883,7 +18451,7 @@
       {
         "label": "1st 5 ML",
         "book": "DraftKings typed MLB board",
-        "value": "Rays -110 / Marlins -120"
+        "value": "Rays -115 / Marlins -115"
       },
       {
         "label": "1st 5 Total",
@@ -17900,7 +18468,7 @@
       "index": 0,
       "role": "Away",
       "name": "Rays",
-      "detail": "Griffin Jax (RHP) | 1-4 | 4.76 ERA | 32 SO | 1.47 WHIP | 34.0 IP",
+      "detail": "Griffin Jax (RHP) | 1-4 | 4.15 ERA | 36 SO | 1.41 WHIP | 39.0 IP",
       "americanOdds": -109,
       "americanLabel": "-109",
       "decimalOdds": 1.9174311926605505,
@@ -17912,7 +18480,7 @@
       "index": 1,
       "role": "Home",
       "name": "Marlins",
-      "detail": "Sandy Alcantara (RHP) | 4-4 | 4.59 ERA | 57 SO | 1.30 WHIP | 82.1 IP",
+      "detail": "Sandy Alcantara (RHP) | 5-4 | 4.33 ERA | 64 SO | 1.26 WHIP | 89.1 IP",
       "americanOdds": -111,
       "americanLabel": "-111",
       "decimalOdds": 1.900900900900901,
@@ -17930,7 +18498,7 @@
         "index": 0,
         "role": "Away",
         "name": "Rays",
-        "detail": "Griffin Jax (RHP) | 1-4 | 4.76 ERA | 32 SO | 1.47 WHIP | 34.0 IP",
+        "detail": "Griffin Jax (RHP) | 1-4 | 4.15 ERA | 36 SO | 1.41 WHIP | 39.0 IP",
         "americanOdds": -109,
         "americanLabel": "-109",
         "decimalOdds": 1.9174311926605505,
@@ -17942,7 +18510,7 @@
         "index": 1,
         "role": "Home",
         "name": "Marlins",
-        "detail": "Sandy Alcantara (RHP) | 4-4 | 4.59 ERA | 57 SO | 1.30 WHIP | 82.1 IP",
+        "detail": "Sandy Alcantara (RHP) | 5-4 | 4.33 ERA | 64 SO | 1.26 WHIP | 89.1 IP",
         "americanOdds": -111,
         "americanLabel": "-111",
         "decimalOdds": 1.900900900900901,
@@ -17959,7 +18527,7 @@
       "index": 0,
       "role": "Away",
       "name": "Rays",
-      "detail": "Griffin Jax (RHP) | 1-4 | 4.76 ERA | 32 SO | 1.47 WHIP | 34.0 IP",
+      "detail": "Griffin Jax (RHP) | 1-4 | 4.15 ERA | 36 SO | 1.41 WHIP | 39.0 IP",
       "americanOdds": -109,
       "americanLabel": "-109",
       "decimalOdds": 1.9174311926605505,
@@ -17971,7 +18539,7 @@
       "index": 1,
       "role": "Home",
       "name": "Marlins",
-      "detail": "Sandy Alcantara (RHP) | 4-4 | 4.59 ERA | 57 SO | 1.30 WHIP | 82.1 IP",
+      "detail": "Sandy Alcantara (RHP) | 5-4 | 4.33 ERA | 64 SO | 1.26 WHIP | 89.1 IP",
       "americanOdds": -111,
       "americanLabel": "-111",
       "decimalOdds": 1.900900900900901,
@@ -17986,8 +18554,8 @@
     "tier": "Pass",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 5.5,
-    "modelEdgeLabel": "5.5-point model edge",
+    "modelEdge": 6.3,
+    "modelEdgeLabel": "6.3-point model edge",
     "marketProbability": 0.49783540413004895,
     "marketProbabilityLabel": "49.8%",
     "inputs": [
@@ -18000,9 +18568,9 @@
       },
       {
         "label": "Standings profile",
-        "summary": "Standings profile: Rays (37-24, division leader, +10 RD) vs Marlins (30-35, 4th in division, -23 RD)",
+        "summary": "Standings profile: Rays (38-25, division leader, +9 RD) vs Marlins (31-35, 4th in division, -20 RD)",
         "source": "Standings context",
-        "margin": 38.5,
+        "margin": 38.2,
         "weight": 0.14
       },
       {
@@ -18021,10 +18589,6 @@
       },
       {
         "label": "The favorite is carrying a real traffic deficit despite the price",
-        "delta": 5
-      },
-      {
-        "label": "Both offenses project to create real traffic",
         "delta": 5
       },
       {
@@ -18068,14 +18632,6 @@
         "delta": 3
       },
       {
-        "label": "Favorite profile is carrying a shakier starter despite the price",
-        "delta": 4
-      },
-      {
-        "label": "Favorite still leans on a traffic-risk starter type",
-        "delta": 4
-      },
-      {
         "label": "Opposing starter hold is shakier than the season line alone suggests",
         "delta": -2
       },
@@ -18100,31 +18656,27 @@
         "delta": 6
       },
       {
-        "label": "Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.",
-        "delta": 3
-      },
-      {
         "label": "v1.1 market budget: this underdog call still needs cleaner starter, stability, and state support before it can be treated like a real market disagreement edge.",
         "delta": 5
       }
     ],
     "pickReasons": [
-      "Rays own the cleaner full-game traffic script at 11.7 projected hits.",
-      "Rays have the better starter-window lane with 6.6 projected first-five hits.",
+      "Rays own the cleaner full-game traffic script at 11.5 projected hits.",
+      "Rays have the better starter-window lane with 6.5 projected first-five hits.",
       "Rays still hold the better bridge-and-finish script once the bullpens take over.",
       "Rays can lean on Yandy Díaz, Junior Caminero, Ryan Vilade to drive early pressure against Sandy Alcantara."
     ],
     "indicators": {
       "reliefPitchingRisk": 50.6,
       "coinflipPressure": 47,
-      "starterLeverageIndex": 40.3,
+      "starterLeverageIndex": 39.9,
       "lateInningStabilityIndex": 29.9,
       "pickBullpenScore": 60.8,
       "oppBullpenScore": 65.3,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 52,
-      "oppStarterScore": 62.4,
+      "pickStarterScore": 54.9,
+      "oppStarterScore": 63.8,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -18203,12 +18755,11 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": -42,
+      "efficientFavoriteScore": -30,
       "efficientFavoriteTier": "Watch favorite",
       "efficientFavoriteReasons": [],
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
-        "stackedRisk",
         "thinModelAgreement",
         "starterNotClean",
         "lateNotClean"
@@ -18218,17 +18769,16 @@
         "tierOnePass",
         "notPricedFavorite"
       ],
-      "tierOneRiskPoints": 3,
+      "tierOneRiskPoints": 2,
       "tierOnePassFlag": true,
       "tierOneRiskFlags": [
         "highVolatilityEdgePass",
-        "highRiskPoints",
         "underdogNeedsProof"
       ],
-      "favoredSignalCount": 3,
-      "starterLateGap": 10.4,
+      "favoredSignalCount": 4,
+      "starterLateGap": 10,
       "starterLeashGap": 0,
-      "edgeHaircutApplied": 5.5,
+      "edgeHaircutApplied": 5.1,
       "gameShape": {
         "label": "Early-pressure side",
         "shapeLabel": "balanced traffic game",
@@ -18321,7 +18871,7 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
         "bullpenFlipScore": 37.4,
-        "starterControlScore": 27.8,
+        "starterControlScore": 27.6,
         "marketContradictionScore": 30,
         "realityGapScore": 34.2
       },
@@ -18337,9 +18887,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 30.2,
-            "pickScore": 30.2,
-            "opponentScore": 11.2
+            "gameScore": 30.7,
+            "pickScore": 30.7,
+            "opponentScore": 11.5
           },
           {
             "id": "chaos",
@@ -18387,7 +18937,7 @@
             "role": "pick",
             "team": "Rays",
             "scores": {
-              "pressure": 30.2,
+              "pressure": 30.7,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
@@ -18395,7 +18945,7 @@
               "flow": 100
             },
             "polygon": [
-              30.2,
+              30.7,
               0,
               0,
               0,
@@ -18406,7 +18956,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 52,
+              "starterScore": 54.9,
               "bullpenScore": 60.8,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18420,7 +18970,7 @@
             "role": "opponent",
             "team": "Marlins",
             "scores": {
-              "pressure": 11.2,
+              "pressure": 11.5,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
@@ -18428,7 +18978,7 @@
               "flow": 0
             },
             "polygon": [
-              11.2,
+              11.5,
               0,
               0,
               0,
@@ -18439,7 +18989,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 62.4,
+              "starterScore": 63.8,
               "bullpenScore": 65.3,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18454,7 +19004,7 @@
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 30.2,
+            "pressure": 30.7,
             "chaos": 38.8,
             "freeze": 8.5,
             "air": 0,
@@ -18462,7 +19012,7 @@
             "flow": 100
           },
           "polygon": [
-            30.2,
+            30.7,
             38.8,
             8.5,
             0,
@@ -18544,7 +19094,7 @@
         "side": "Rays is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 69.3% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 69% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
@@ -18584,18 +19134,18 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 11.7,
-      "homeProjectedHits": 9.1,
-      "awayHitEfficiencyPct": 33.9,
-      "homeHitEfficiencyPct": 26.4,
-      "awayFirst5ProjectedHits": 6.6,
-      "homeFirst5ProjectedHits": 5,
-      "awayFirst5HitEfficiencyPct": 34.4,
-      "homeFirst5HitEfficiencyPct": 26.5,
-      "awayLateProjectedHits": 5,
-      "homeLateProjectedHits": 4.2,
-      "awayLateHitEfficiencyPct": 32.1,
-      "homeLateHitEfficiencyPct": 27.4,
+      "awayProjectedHits": 11.5,
+      "homeProjectedHits": 8.9,
+      "awayHitEfficiencyPct": 33.3,
+      "homeHitEfficiencyPct": 25.8,
+      "awayFirst5ProjectedHits": 6.5,
+      "homeFirst5ProjectedHits": 4.9,
+      "awayFirst5HitEfficiencyPct": 33.8,
+      "homeFirst5HitEfficiencyPct": 26,
+      "awayLateProjectedHits": 4.9,
+      "homeLateProjectedHits": 4.1,
+      "awayLateHitEfficiencyPct": 31.8,
+      "homeLateHitEfficiencyPct": 26.9,
       "awayBullpenChainScore": null,
       "homeBullpenChainScore": null,
       "edgeTeam": "Rays",
@@ -18613,12 +19163,12 @@
       "awayBullpenExhaustionLabel": "unknown",
       "homeBullpenExhaustionLabel": "unknown",
       "awayPitcherType": "Traffic-risk righty",
-      "homePitcherType": "Traffic-risk righty",
+      "homePitcherType": "Balanced righty",
       "awayStarterHoldConfidence": 18,
-      "homeStarterHoldConfidence": 37.7,
-      "awayProjectedRuns": 5.9,
+      "homeStarterHoldConfidence": 43.7,
+      "awayProjectedRuns": 5.6,
       "homeProjectedRuns": 4,
-      "awayFirst5ProjectedRuns": 3.4,
+      "awayFirst5ProjectedRuns": 3.1,
       "homeFirst5ProjectedRuns": 2.2,
       "awayLateProjectedRuns": 2.5,
       "homeLateProjectedRuns": 1.8,
@@ -18626,10 +19176,10 @@
       "totals": {
         "fullGame": {
           "lean": "Over",
-          "edge": 2.4,
+          "edge": 2.1,
           "strength": "Strong",
           "label": "Over 7.5",
-          "summary": "Over lean with a 2.4-run edge against 7.5.",
+          "summary": "Over lean with a 2.1-run edge against 7.5.",
           "chaosGate": {
             "phase": "full",
             "overChaosScore": 1,
@@ -18655,10 +19205,10 @@
         },
         "first5": {
           "lean": "Pass",
-          "edge": 1.1,
+          "edge": 0.8,
           "strength": "Unsupported over",
           "label": "Hold 4.5",
-          "summary": "Over lean with a 1.1-run edge against 4.5. Tail overlay removed the over because the point edge lacks run-explosion support.",
+          "summary": "Over lean with a 0.8-run edge against 4.5. Tail overlay removed the over because the point edge lacks run-explosion support.",
           "chaosGate": {
             "phase": "first5",
             "overChaosScore": 1,
@@ -18685,12 +19235,12 @@
           "originalStrength": "Clear",
           "originalLabel": "Over 4.5",
           "tailOverlay": {
-            "baseProjectedRuns": 5.6,
-            "adjustedProjectedRuns": 3.5,
-            "adjustedEdge": -1,
+            "baseProjectedRuns": 5.3,
+            "adjustedProjectedRuns": 3.2,
+            "adjustedEdge": -1.3,
             "marketExpression": "Under",
             "shape": "unsupported-over",
-            "tailScore": 18,
+            "tailScore": 17.3,
             "strandScore": 0,
             "forkScore": 0,
             "tailLift": 0,
@@ -18706,7 +19256,7 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 11.6,
+              "totalFirst5ProjectedHits": 11.4,
               "weatherCarry": false,
               "weatherSuppress": false,
               "visibilityRisk": null
@@ -18742,16 +19292,16 @@
             }
           }
         },
-        "projectedFullTotalRuns": 9.9,
-        "projectedFirst5TotalRuns": 5.6,
-        "tailAdjustedProjectedFirst5TotalRuns": 3.5,
+        "projectedFullTotalRuns": 9.6,
+        "projectedFirst5TotalRuns": 5.3,
+        "tailAdjustedProjectedFirst5TotalRuns": 3.2,
         "first5TailOverlay": {
-          "baseProjectedRuns": 5.6,
-          "adjustedProjectedRuns": 3.5,
-          "adjustedEdge": -1,
+          "baseProjectedRuns": 5.3,
+          "adjustedProjectedRuns": 3.2,
+          "adjustedEdge": -1.3,
           "marketExpression": "Under",
           "shape": "unsupported-over",
-          "tailScore": 18,
+          "tailScore": 17.3,
           "strandScore": 0,
           "forkScore": 0,
           "tailLift": 0,
@@ -18767,7 +19317,7 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 11.6,
+            "totalFirst5ProjectedHits": 11.4,
             "weatherCarry": false,
             "weatherSuppress": false,
             "visibilityRisk": null
@@ -18776,7 +19326,7 @@
         "projectedLateTotalRuns": 4.3,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 4.2,
+        "runShareFirst5TotalLine": 4.1,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 3,
         "bullpenExhaustionNote": "Dome In Domed Stadium. No major bridge-chain exhaustion flag has surfaced yet.",
@@ -18787,10 +19337,10 @@
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 19.3,
-        "yesProbabilityPct": 69.3,
-        "noProbabilityPct": 30.7,
-        "awayRunProbabilityPct": 68,
+        "edge": 19,
+        "yesProbabilityPct": 69,
+        "noProbabilityPct": 31,
+        "awayRunProbabilityPct": 67.7,
         "homeRunProbabilityPct": 4,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
@@ -18810,7 +19360,7 @@
         ],
         "projectedRuns": 1.1,
         "line": 0.5,
-        "summary": "YRFI with a 69% modeled chance of at least one first-inning run. Rays score 68% of the time and Marlins 4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 69% modeled chance of at least one first-inning run. Rays score 67.7% of the time and Marlins 4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
       },
       "teamScripts": [
         {
@@ -18847,8 +19397,8 @@
           "depthScore": 59.2,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Rays own the cleaner full-game traffic script at 11.7 projected hits.",
-            "Rays have the better starter-window lane with 6.6 projected first-five hits.",
+            "Rays own the cleaner full-game traffic script at 11.5 projected hits.",
+            "Rays have the better starter-window lane with 6.5 projected first-five hits.",
             "Rays still hold the better bridge-and-finish script once the bullpens take over.",
             "Rays can lean on Yandy Díaz, Junior Caminero, Ryan Vilade to drive early pressure against Sandy Alcantara.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -18903,7 +19453,7 @@
           {
             "label": "First 5",
             "edgeTeam": "Rays",
-            "projection": "3.4 R",
+            "projection": "3.1 R",
             "note": "Rays lean on Yandy Díaz, Junior Caminero to drive the early traffic lane against the listed starter."
           },
           {
@@ -18915,7 +19465,7 @@
           {
             "label": "Full game",
             "edgeTeam": "Rays",
-            "projection": "11.7 H",
+            "projection": "11.5 H",
             "note": "Rays finish with the stronger aggregate traffic path, anchored by Yandy Díaz, Junior Caminero."
           }
         ]
@@ -18939,17 +19489,17 @@
         "marketType": "ML shape",
         "selection": "Rays",
         "opponent": "Marlins",
-        "pickProjectedRuns": 5.9,
+        "pickProjectedRuns": 5.6,
         "opponentProjectedRuns": 4,
-        "projectedTotalRuns": 9.9,
-        "runDiff": 1.9,
-        "absoluteRunDiff": 1.9,
-        "runDiffSharePct": 19.2,
+        "projectedTotalRuns": 9.6,
+        "runDiff": 1.6,
+        "absoluteRunDiff": 1.6,
+        "runDiffSharePct": 16.7,
         "confidence": 52,
         "marketProbabilityPct": 49.8,
-        "grade": "Separated ML shape",
+        "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Rays projects 1.9 runs better in a 9.9-run environment."
+        "note": "Rays projects 1.6 runs better in a 9.6-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -19014,7 +19564,7 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
           "bullpenFlipScore": 37.4,
-          "starterControlScore": 27.8,
+          "starterControlScore": 27.6,
           "marketContradictionScore": 30,
           "realityGapScore": 34.2
         },
@@ -19030,9 +19580,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 30.2,
-              "pickScore": 30.2,
-              "opponentScore": 11.2
+              "gameScore": 30.7,
+              "pickScore": 30.7,
+              "opponentScore": 11.5
             },
             {
               "id": "chaos",
@@ -19080,7 +19630,7 @@
               "role": "pick",
               "team": "Rays",
               "scores": {
-                "pressure": 30.2,
+                "pressure": 30.7,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
@@ -19088,7 +19638,7 @@
                 "flow": 100
               },
               "polygon": [
-                30.2,
+                30.7,
                 0,
                 0,
                 0,
@@ -19099,7 +19649,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 52,
+                "starterScore": 54.9,
                 "bullpenScore": 60.8,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -19113,7 +19663,7 @@
               "role": "opponent",
               "team": "Marlins",
               "scores": {
-                "pressure": 11.2,
+                "pressure": 11.5,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
@@ -19121,7 +19671,7 @@
                 "flow": 0
               },
               "polygon": [
-                11.2,
+                11.5,
                 0,
                 0,
                 0,
@@ -19132,7 +19682,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 62.4,
+                "starterScore": 63.8,
                 "bullpenScore": 65.3,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -19147,7 +19697,7 @@
             "label": "Early-pressure side",
             "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 30.2,
+              "pressure": 30.7,
               "chaos": 38.8,
               "freeze": 8.5,
               "air": 0,
@@ -19155,7 +19705,7 @@
               "flow": 100
             },
             "polygon": [
-              30.2,
+              30.7,
               38.8,
               8.5,
               0,
@@ -19237,7 +19787,7 @@
           "side": "Rays is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 69.3% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 69% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
@@ -19279,12 +19829,12 @@
       "first5Moneyline": {
         "pickSide": "away",
         "pickTeam": "Rays",
-        "awayProjectedRuns": 3.4,
+        "awayProjectedRuns": 3.1,
         "homeProjectedRuns": 2.2,
-        "awayLeadProbability": 61.4,
-        "homeLeadProbability": 23.2,
-        "pushProbability": 15.4,
-        "leadProbability": 61.4,
+        "awayLeadProbability": 56.6,
+        "homeLeadProbability": 26.8,
+        "pushProbability": 16.6,
+        "leadProbability": 56.6,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -19306,7 +19856,7 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 58,
-        "probability": 27.5,
+        "probability": 27.3,
         "expectedValue": 0.3,
         "statValueLabel": "0.32 exp HR",
         "sample": {
@@ -19381,10 +19931,161 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
+        "confidence": 68,
+        "probability": 85.3,
+        "expectedValue": 1.9,
+        "statValueLabel": "1.92 exp RBI",
+        "sample": {
+          "seasonGames": 61,
+          "seasonPlateAppearances": 270,
+          "recentGames": 12,
+          "recentPlateAppearances": 56,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 28,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1113,
+          "seasonPa": 270,
+          "powerIndex": 93.36,
+          "contactRisk": 38.03,
+          "roleStability": 100,
+          "label": "repeatable career power",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 68.4,
+            "processScore": 18,
+            "careerWeight": 0.1,
+            "identityDelta": -2.9,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 270,
+            "careerPa": 1113
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "repeatable career power"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 4 carry | process improving; approach 68.4/100 | recent form up | run-production slot",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "deep-lineup",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "run-production-slot",
+          "statcast-power-up",
+          "statcast-contact-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+10.00 vs Sandy Alcantara",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".281 AVG | .888 OPS | 65 H | 14 HR | 12g: .364 AVG | 1.091 OPS | 16 H | 2 HR | vs RHP: .280 AVG | .870 OPS | 11 HR | career 1113 PA | .826 OPS | 65 HR | repeatable career power | power 93 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +4.4 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "rays-marlins:691406:runs",
+        "gameId": "rays-marlins",
+        "gameTitle": "Rays @ Marlins",
+        "league": "MLB",
+        "playerId": 691406,
+        "playerName": "Junior Caminero",
+        "teamName": "Rays",
+        "slot": 4,
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 72,
+        "probability": 85,
+        "expectedValue": 1.9,
+        "statValueLabel": "1.90 exp runs",
+        "sample": {
+          "seasonGames": 61,
+          "seasonPlateAppearances": 270,
+          "recentGames": 12,
+          "recentPlateAppearances": 56,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 28,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1113,
+          "seasonPa": 270,
+          "powerIndex": 93.36,
+          "contactRisk": 38.03,
+          "roleStability": 100,
+          "label": "repeatable career power",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 68.4,
+            "processScore": 18,
+            "careerWeight": 0.1,
+            "identityDelta": -2.9,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 270,
+            "careerPa": 1113
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "repeatable career power"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 4 carry | recent form up",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "deep-lineup",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "statcast-power-up",
+          "statcast-contact-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+10.00 vs Sandy Alcantara",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".281 AVG | .888 OPS | 65 H | 14 HR | 12g: .364 AVG | 1.091 OPS | 16 H | 2 HR | vs RHP: .280 AVG | .870 OPS | 11 HR | career 1113 PA | .826 OPS | 65 HR | repeatable career power | power 93 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +4.4 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "rays-marlins:691406:hitRunRbi",
+        "gameId": "rays-marlins",
+        "gameTitle": "Rays @ Marlins",
+        "league": "MLB",
+        "playerId": 691406,
+        "playerName": "Junior Caminero",
+        "teamName": "Rays",
+        "slot": 4,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 86.8,
-        "expectedValue": 2,
-        "statValueLabel": "2.02 exp RBI",
+        "probability": 93.8,
+        "expectedValue": 4.5,
+        "statValueLabel": "1.64 H · 1.27 R · 1.57 RBI · 4.49 total",
         "sample": {
           "seasonGames": 61,
           "seasonPlateAppearances": 270,
@@ -19424,7 +20125,7 @@
         "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 4 carry | process improving; approach 68.4/100 | recent form up | run-production slot",
+        "reason": "slot 4 carry | recent form up | combined hits/runs/RBI lane",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
@@ -19435,7 +20136,7 @@
           "clean-conversion-lane",
           "carry-bat-live",
           "process-improving",
-          "run-production-slot",
+          "combined-production-lane",
           "statcast-power-up",
           "statcast-contact-up",
           "statcast-hr-carry"
@@ -19535,10 +20236,10 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 63,
-        "probability": 49.8,
-        "expectedValue": 1.7,
-        "statValueLabel": "1.67 exp hits",
+        "confidence": 62,
+        "probability": 48.8,
+        "expectedValue": 1.6,
+        "statValueLabel": "1.64 exp hits",
         "sample": {
           "seasonGames": 61,
           "seasonPlateAppearances": 270,
@@ -19611,9 +20312,9 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 62,
-        "probability": 51.6,
+        "probability": 50.8,
         "expectedValue": 0.7,
-        "statValueLabel": "0.73 exp walks",
+        "statValueLabel": "0.71 exp walks",
         "sample": {
           "seasonGames": 61,
           "seasonPlateAppearances": 270,
@@ -19686,9 +20387,9 @@
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
         "confidence": 71,
-        "probability": 65.8,
+        "probability": 65.1,
         "expectedValue": 1.1,
-        "statValueLabel": "1.07 exp singles",
+        "statValueLabel": "1.05 exp singles",
         "sample": {
           "seasonGames": 61,
           "seasonPlateAppearances": 270,
@@ -19748,163 +20449,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "posted",
         "playerSummary": ".281 AVG | .888 OPS | 65 H | 14 HR | 12g: .364 AVG | 1.091 OPS | 16 H | 2 HR | vs RHP: .280 AVG | .870 OPS | 11 HR | career 1113 PA | .826 OPS | 65 HR | repeatable career power | power 93 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +4.4 | +10.0 matchup grade in a traffic-risk lane"
-      },
-      {
-        "id": "rays-marlins:668723:rbi",
-        "gameId": "rays-marlins",
-        "gameTitle": "Rays @ Marlins",
-        "league": "MLB",
-        "playerId": 668723,
-        "playerName": "Ryan Vilade",
-        "teamName": "Rays",
-        "slot": 7,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 78,
-        "probability": 82.2,
-        "expectedValue": 1.7,
-        "statValueLabel": "1.73 exp RBI",
-        "sample": {
-          "seasonGames": 36,
-          "seasonPlateAppearances": 101,
-          "recentGames": 6,
-          "recentPlateAppearances": 24,
-          "statcastGames": 4,
-          "statcastPlateAppearances": 15,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 160,
-          "seasonPa": 101,
-          "powerIndex": 29.97,
-          "contactRisk": 49.47,
-          "roleStability": 65,
-          "label": "baseline career profile",
-          "volatilityLabel": "thin career sample",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 68,
-            "processScore": 7,
-            "careerWeight": 0.1,
-            "identityDelta": 10.4,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 101,
-            "careerPa": 160
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "baseline career profile"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 7 carry | process improving; approach 68/100 | recent form up",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "middle-order-traffic",
-          "deep-lineup",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "statcast-hr-carry",
-          "statcast-fade"
-        ],
-        "matchupNote": "+8.89 vs Sandy Alcantara",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".284 AVG | .805 OPS | 25 H | 3 HR | 6g: .333 AVG | 1.000 OPS | 8 H | 2 HR | vs RHP: .250 AVG | .778 OPS | 2 HR | career 160 PA | .599 OPS | 3 HR | baseline career profile | power 30 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +1.8 | +8.9 matchup grade in a traffic-risk lane"
-      },
-      {
-        "id": "rays-marlins:650490:singles",
-        "gameId": "rays-marlins",
-        "gameTitle": "Rays @ Marlins",
-        "league": "MLB",
-        "playerId": 650490,
-        "playerName": "Yandy Díaz",
-        "teamName": "Rays",
-        "slot": 1,
-        "propType": "singles",
-        "propLabel": "Singles",
-        "marketLabel": "Over 0.5 singles",
-        "confidence": 70,
-        "probability": 63.5,
-        "expectedValue": 1,
-        "statValueLabel": "1.01 exp singles",
-        "sample": {
-          "seasonGames": 58,
-          "seasonPlateAppearances": 254,
-          "recentGames": 12,
-          "recentPlateAppearances": 54,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 27,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 3987,
-          "seasonPa": 254,
-          "powerIndex": 60.02,
-          "contactRisk": 28.65,
-          "roleStability": 100,
-          "label": "contact-stable profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 76.5,
-            "processScore": 15,
-            "careerWeight": 0.1,
-            "identityDelta": 8.2,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 254,
-            "careerPa": 3987
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "contact-stable profile"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 1 carry | clean traffic lane",
-        "scriptTags": [
-          "posted-lineup",
-          "top-third-pressure",
-          "middle-order-traffic",
-          "deep-lineup",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "contact-lane",
-          "statcast-power-up"
-        ],
-        "matchupNote": "+10.00 vs Sandy Alcantara",
-        "teamScriptLabel": "",
-        "lineupStatus": "posted",
-        "playerSummary": ".326 AVG | .933 OPS | 73 H | 11 HR | 12g: .400 AVG | .924 OPS | 20 H | 0 HR | vs RHP: .323 AVG | .932 OPS | 8 HR | career 3987 PA | .820 OPS | 111 HR | contact-stable profile | power 60 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +6.6 | +10.0 matchup grade in a traffic-risk lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 27,
+    "candidateCount": 42,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

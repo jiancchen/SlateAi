@@ -39,7 +39,7 @@ Morning production run for a specific slate:
 npm run data:run:mlb-morning -- --date YYYY-MM-DD --deploy
 ```
 
-This runner is the default way to make MLB predictions. It closes the prior day, refreshes live MLB data, pulls/warehouses supplemental pitcher context, regenerates predictions and props, publishes only the rich MLB slate while preserving non-MLB games, audits local data, deploys when requested, then audits live data.
+This runner is the default way to make MLB predictions. It closes the prior day, pre-seeds the prediction day with raw MLB schedule/feed data and the DraftKings game-line board, refreshes live MLB data, pulls/warehouses supplemental pitcher context, regenerates predictions and props, publishes only the rich MLB slate while preserving non-MLB games, audits local data, deploys when requested, then audits live data.
 
 Cron example for a 6:30 AM Pacific run:
 
@@ -88,24 +88,33 @@ npm run data:audit:mlb-public -- --date YYYY-MM-DD --base https://slate-web-stat
 ## Clean Run Order
 
 1. Close and grade the prior MLB day.
-2. Refresh official schedule, probables, game feeds, weather, park, typed market snapshots, and model lanes.
-3. Pull and warehouse the line sources before predictions:
+2. Fetch raw official MLB schedule/game-feed files for the prediction date.
+3. Fetch the DraftKings MLB game-line board before `data:refresh:mlb-live`; typed prepare consumes the local raw market file during refresh.
+4. Refresh official schedule, probables, game feeds, weather, park, typed market snapshots, and model lanes.
+5. Pull and warehouse the line sources before predictions:
    - MLB official lineups first.
    - Rotowire daily lineups as the fallback for missing posted players.
    - DraftKings pitcher strikeouts from `data-private/raw/odds/draftkings/mlb/pitcher-strikeouts/YYYY-MM-DD/`.
    - Typed `prop_market_snapshots` must contain `source_name=draftkings` rows for pitcher strikeouts before K O/U rows are trusted.
-4. Warehouse supplemental model context:
+6. Warehouse supplemental model context:
    - ESPN pitcher splits.
    - StatMuse starter-vs-team year-by-year history.
+   - FantasyInfoCentral Daily Matchups with `npm run data:warehouse:mlb-fic-daily-matchups -- --date YYYY-MM-DD` so H+R+RBI clean-board promotions have same-day BvP AB/AVG/OPS context. The fetch URL must include the date parameter, `https://www.fantasyinfocentral.com/mlb/daily-matchups?date=YYYY-MM-DD`; do not warehouse today's page under a prior slate date.
    - RP36 reliever shadow and bridge-chain context.
    - hitter lineup split snapshots after the generated lineup board exists.
-5. Generate the M2 day files and prop artifacts.
-6. Publish MLB from the rich generated source with `MLB_DAY_GAMES_DISABLE_DB=1`.
-7. Preserve existing non-MLB slate entries, especially tennis.
-8. Export `/web/public/data/current`.
-9. Run `data:audit:mlb-public`.
-10. Build/deploy only after the audit passes.
-11. Run the same audit against the live URL.
+7. Generate the M2 day files and prop artifacts.
+   - Audit `stateContext.recentInningHistory` and `stateContext.matchupInningHistory` before publish: for every row, the sum of inning cells must equal `runsFor`, and no single inning cell can exceed `runsFor`. If this fails, fix the M2 history builder before exporting public JSON.
+8. Publish MLB from the rich generated source with `MLB_DAY_GAMES_DISABLE_DB=1`.
+9. Preserve existing non-MLB slate entries, especially tennis.
+10. Export `/web/public/data/current`.
+11. Run `data:audit:mlb-public`.
+12. Build/deploy only after the audit passes or only known allowed failures remain.
+13. Run the same audit against the live URL.
+
+Known allowed audit failures while the reliever model remains shadow/broken:
+- `missing-bridge-chain`
+- `missing-rp36-shadow`
+- `pitcher-strikeout-props-missing-draftkings-lineage`
 
 `--refresh` on the clean publisher now runs the full M2 live-refresh workflow, ingests the generated hitter lineup splits, warehouses ESPN pitcher splits, publishes from the rich M2 files, exports public data, and audits.
 
@@ -133,10 +142,12 @@ The audit fails the run if any MLB game is missing core public-page fields:
 - pitcher strikeout props without DraftKings lineage
 - missing feed data for value-board sections: ML, first 5 ML, first 5 O/U, first inning, total bases, and pitcher K O/U
 - first-five O/U value-board rows that invent presentation lines instead of using stored line fields. Display line source order is `postedFirst5TotalLine`, then `derivedFirst5TotalLine`, then `runShareFirst5TotalLine`; null, blank, zero, or negative F5 total lines are hard failures.
-- first-five O/U rows whose displayed edge is stale after a tail-overlay adjustment. The public edge must equal displayed projection minus the actual stored line; raw/base edge may appear only as diagnostic metadata.
+- first-five O/U rows whose displayed projection is sourced from `tailOverlay.adjustedProjectedRuns`. Public projection, edge, probability, confidence, and ranking must use `awayFirst5ProjectedRuns + homeFirst5ProjectedRuns`; tail overlay fields may appear only as diagnostic/gating metadata.
+- first-five O/U rows with a final `Pass`, `Hold`, or `Unsupported over` lean appearing as bet-grade value rows, POTD candidates, or top-value promoted rows. They may appear only in research-only buckets.
 - first-five O/U rows whose displayed confidence ignores edge quality. Thin edges, volatile unders, weather/park carry, and chaos tags should reduce confidence or add a warning.
 - first-five ML rows whose displayed confidence ignores tie/push risk. Low-scoring games with elevated modeled F5 tie probability need a haircut or tie-risk warning before promotion.
 - first-five ML rows that rise in ranking only because of projected run gap. Confirm the board explains the move as side-gap strength, and do not treat it as safer than a lower-risk row without confidence support.
+- per-inning history rows whose inning cells do not reconcile to the displayed `R` total. Historical inning rows must be built from de-duplicated game records before joining plate appearances, and extra-inning games must not be truncated before the final scoring inning.
 - Batter Board presentation with HR, xOPS / LA, and Barrel / EV columns intact
 - HR likely and Hot Hitters feature lanes that respect team scoring context: market underdogs, low projected team totals, or weak implied scoring environments must be suppressed from top promotion unless the artifact carries an explicit exception note
 
@@ -166,6 +177,9 @@ Keep these sources attached or named in the public slate metadata:
 - Rotowire daily lineups fallback
 - DraftKings MLB props, including pitcher strikeouts
 - Baseball Savant hitter and pitcher pages
+- FantasyInfoCentral MLB Daily Matchups for same-day batter-vs-pitcher checks: `https://www.fantasyinfocentral.com/mlb/daily-matchups`
+  - warehouse command: `npm run data:warehouse:mlb-fic-daily-matchups -- --date YYYY-MM-DD`
+  - historical backfill uses the same command one date at a time. Do not run multiple FIC warehouse jobs in parallel against `sql-mlb.db`; SQLite locks can leave raw/artifact writes ahead of database/web-module writes.
 - ESPN pitcher splits pages
 - StatMuse starter-vs-opponent history
 - RP36 reliever shadow model artifacts
@@ -176,17 +190,40 @@ Keep these sources attached or named in the public slate metadata:
 Run this audit whenever the value board changes, when line-source plumbing changes, or when republishing a slate after a model refresh:
 
 - First-five O/U rows must show the actual posted or derived F5 total line from the artifact. Do not derive the visible line from projection and edge.
-- A tail-overlay adjusted projection must also adjust the displayed edge. If the UI shows `Proj X | edge Y`, then `X - line = Y` within rounding tolerance.
+- First-five O/U rows must show the real M2 F5 game-total projection from `awayFirst5ProjectedRuns + homeFirst5ProjectedRuns`. If the UI shows `Proj X | edge Y`, then `X - line = Y` within rounding tolerance. `tailOverlay.adjustedProjectedRuns` is a gate/diagnostic field, not the public projection.
+- POTD and promoted value sections must skip any F5 O/U row whose final lean is not actionable `Over` or `Under`, regardless of raw probability.
 - Null or blank candidates must be rejected before number conversion. A displayed `0`, negative, or implausibly tiny F5 total line should stop the deploy.
 - First-five O/U rows must expose confidence that is consistent with margin quality. A close miss should not look like a clean-hit profile, and severe-miss patterns from prior grading should trigger caution before promotion.
 - First-five ML rows must expose push/tie risk when the modeled F5 tie probability is elevated. Check both the visible warning and the machine-readable value metadata.
-- Ranking checks should compare `sortEdge` and `sortConfidence`. If a row jumps because the run-gap edge is largest, confirm that confidence and warnings still tell the correct story.
+- Ranking checks should compare `promotionTier`, `sortConfidence`, market edge, and margin support. If a row jumps because the run-gap edge/share is largest, confirm that confidence and warnings still tell the correct story. Do not demote a strong F5 ML edge merely because it exceeds a narrow historical seed bucket; confidence is primary, push/tie risk is the control, and run gap is support.
+- ML shape rows must not rank primarily by `diff/total`. Public copy should label that number as `margin support`; confidence is the primary ML trust signal, market edge is the value confirmation, and margin support is the tiebreak/context field.
+- ML shape row copy must explain disagreements between confidence and margin support: high-confidence/low-margin is a thinner-score win read, while high-margin/low-confidence is watch-only because the model does not trust the win side enough.
+- Shadow calibration tiering must be visible for game-line rows when enabled. Public sorting should put `promoted` rows above `watch` and `research`, and POTD sections must only pull from `promoted` rows with a visible reason/evidence window.
+- Batter value-board lanes are additive, not interchangeable. The board must keep these lanes separate and visible when rows exist:
+  - combined H+R+RBI clean board
+  - Hits props
+  - Runs props
+  - RBI props
+  - Mike's BOTD as a separate screen, not a replacement for any of the above
+- Combined H+R+RBI clean-board promotion must include current team/game context: projected full-game ML win, 70%+ model confidence, and 30+ recent AB/PA. Rows that fail the clean filter should not be deleted from model artifacts; they should be demoted or omitted only from the clean promoted lane.
+- Mike's BOTD is a separate H+R+RBI screen. For normal same-day operation, it uses projected full-game ML win, 60%+ confidence, 30+ recent AB/PA, and same-day FantasyInfoCentral batter-vs-probable-pitcher support. The FIC support gate is at least 5 career AB against today's listed starter, batter-vs-pitcher AVG over .300, and batter-vs-pitcher OPS over 1.000. If a manual Mike screen exists for the date, that manual list is the admission gate and FIC becomes support/context; do not let every strict FIC pass auto-enter the manual BOTD lane.
+- H+R+RBI rows sourced from modeled lineup production must carry the same `ficHrrCleanGateRequired`, `ficHrrCleanPass`, `ficDailyMatchup`, and `mikesBotdFiltered` fields as direct posted `hitRunRbi` prop rows. Historical slates often lack direct `hitRunRbi` exports, so the modeled fallback must still be eligible for Mike's BOTD and result grading.
+- If a batter has weak current quality, especially low recent xwOBA/xOPS or fading Statcast trend, do not let BvP alone promote the row. Keep the row visible only as watch/research unless the manual screen explicitly includes it and the reason is documented.
+- Bad player/team identity rows are hard excludes from value-board promotion. Example failure class: a player attached to the wrong team/game in the prop feed can bypass the ML-win filter because the UI evaluates the wrong team's market line. Add a scoped invalid-identity guard rather than treating the row as a valid market disagreement.
 - The public audit should sample both posted-line rows and fallback-line rows, because those are different failure modes.
 - If a slate is already generated and only the public board needs repair, republish scoped dates instead of exporting every historical slate:
 
 ```bash
 npm run publish:site -- --date YYYY-MM-DD --only-dates=YYYY-MM-DD,PRIOR-YYYY-MM-DD
 ```
+
+For the June 6-8, 2026 value-board/shadow-calibration refresh, use the scoped production publish rather than a raw Vercel deploy:
+
+```bash
+npm run publish:site -- --date 2026-06-08 --only-dates=2026-06-06,2026-06-07,2026-06-08
+```
+
+After a scoped publish, verify `web/public/data/meta.json` lists only the intended dates and that each `web/public/data/slates/YYYY-MM-DD/summary.json` exists. The current `scripts/audit-public-mlb-slate.mjs` reads `/data/current`, so running it with a historical `--date` can produce a `current-summary-date-mismatch` even when the historical slate file exists. Treat that as an audit-tool limitation until the audit script is made slate-path aware; keep known bridge/RP36 failures separate from scoped-publish correctness.
 
 ## Current Production Blockers
 

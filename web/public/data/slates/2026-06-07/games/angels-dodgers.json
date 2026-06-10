@@ -15,12 +15,12 @@
     {
       "side": "Away",
       "name": "Angels",
-      "detail": "José Soriano (RHP) | 6-4 | 2.72 ERA | 85 SO | 1.21 WHIP | 76.0 IP"
+      "detail": "José Soriano (RHP) | 7-4 | 2.96 ERA | 87 SO | 1.24 WHIP | 82.0 IP"
     },
     {
       "side": "Home",
       "name": "Dodgers",
-      "detail": "Emmet Sheehan (RHP) | 3-2 | 4.50 ERA | 62 SO | 1.16 WHIP | 58.0 IP"
+      "detail": "Emmet Sheehan (RHP) | 3-3 | 4.70 ERA | 64 SO | 1.21 WHIP | 59.1 IP"
     }
   ],
   "summary": "Angels @ Dodgers with José Soriano against Emmet Sheehan.",
@@ -35,20 +35,20 @@
       "divisionLeader": false,
       "divisionRank": "5",
       "gamesBack": "10.0",
-      "losses": 41,
-      "runDifferential": -59,
-      "streakCode": "L2",
-      "winningPercentage": ".369",
-      "wins": 24
+      "losses": 42,
+      "runDifferential": -52,
+      "streakCode": "L1",
+      "winningPercentage": ".373",
+      "wins": 25
     },
     "home": {
       "divisionLeader": true,
       "divisionRank": "1",
       "gamesBack": "-",
-      "losses": 23,
-      "runDifferential": 141,
-      "streakCode": "W2",
-      "winningPercentage": ".646",
+      "losses": 24,
+      "runDifferential": 133,
+      "streakCode": "L1",
+      "winningPercentage": ".636",
       "wins": 42
     }
   },
@@ -274,7 +274,7 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "home": {
         "playerName": "Emmet Sheehan",
@@ -284,7 +284,7 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -479,6 +479,172 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 824270,
+          "date": "2026-05-27",
+          "opponent": "Tigers",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 0,
+          "runsAgainst": 4,
+          "starters": {
+            "team": {
+              "pitcherId": 667755,
+              "pitcherName": "José Soriano",
+              "teamName": "Los Angeles Angels",
+              "opponentName": "Detroit Tigers",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 663554,
+              "pitcherName": "Casey Mize",
+              "teamName": "Detroit Tigers",
+              "opponentName": "Los Angeles Angels",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824272,
+          "date": "2026-05-28",
+          "opponent": "Tigers",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 7,
+          "runsAgainst": 1,
+          "starters": {
+            "team": {
+              "pitcherId": 680570,
+              "pitcherName": "Grayson Rodriguez",
+              "teamName": "Los Angeles Angels",
+              "opponentName": "Detroit Tigers",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 656427,
+              "pitcherName": "Jack Flaherty",
+              "teamName": "Detroit Tigers",
+              "opponentName": "Los Angeles Angels",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 3
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 2
+            },
+            {
+              "inning": 9,
+              "runs": 2
+            }
+          ]
+        },
         {
           "gamePk": 822978,
           "date": "2026-05-29",
@@ -829,8 +995,8 @@
               "tone": "negative"
             },
             "hitters": {
-              "label": "Stranded",
-              "tone": "warning"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Cracked",
@@ -860,7 +1026,7 @@
             },
             {
               "inning": 5,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 6,
@@ -931,7 +1097,7 @@
             },
             {
               "inning": 2,
-              "runs": 12
+              "runs": 6
             },
             {
               "inning": 3,
@@ -939,15 +1105,15 @@
             },
             {
               "inning": 4,
-              "runs": 4
-            },
-            {
-              "inning": 5,
               "runs": 2
             },
             {
+              "inning": 5,
+              "runs": 1
+            },
+            {
               "inning": 6,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 7,
@@ -1103,6 +1269,255 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 823947,
+          "date": "2026-05-27",
+          "opponent": "Rockies",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 4,
+          "runsAgainst": 1,
+          "starters": {
+            "team": {
+              "pitcherId": 660271,
+              "pitcherName": "Shohei Ohtani",
+              "teamName": "Los Angeles Dodgers",
+              "opponentName": "Colorado Rockies",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 608372,
+              "pitcherName": "Tomoyuki Sugano",
+              "teamName": "Colorado Rockies",
+              "opponentName": "Los Angeles Dodgers",
+              "firstInningRunsAllowed": 2,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 2
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 1
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 823946,
+          "date": "2026-05-29",
+          "opponent": "Phillies",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 4,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 680736,
+              "pitcherName": "Justin Wrobleski",
+              "teamName": "Los Angeles Dodgers",
+              "opponentName": "Philadelphia Phillies",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 554430,
+              "pitcherName": "Zack Wheeler",
+              "teamName": "Philadelphia Phillies",
+              "opponentName": "Los Angeles Dodgers",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 1
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 1
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 1
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 823945,
+          "date": "2026-05-30",
+          "opponent": "Phillies",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 3,
+          "runsAgainst": 4,
+          "starters": {
+            "team": {
+              "pitcherId": 808963,
+              "pitcherName": "Roki Sasaki",
+              "teamName": "Los Angeles Dodgers",
+              "opponentName": "Philadelphia Phillies",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 666200,
+              "pitcherName": "Jesús Luzardo",
+              "teamName": "Philadelphia Phillies",
+              "opponentName": "Los Angeles Dodgers",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Fav failed",
+              "tone": "negative"
+            },
+            "hitters": {
+              "label": "Stranded",
+              "tone": "negative"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Blew",
+              "tone": "negative"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 1
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 823944,
           "date": "2026-05-31",
@@ -1302,11 +1717,11 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 2,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 3,
@@ -1326,7 +1741,7 @@
             },
             {
               "inning": 7,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 8,
@@ -1389,11 +1804,11 @@
             },
             {
               "inning": 2,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 3,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 4,
@@ -1409,7 +1824,7 @@
             },
             {
               "inning": 7,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 8,
@@ -1484,7 +1899,7 @@
             },
             {
               "inning": 5,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 6,
@@ -2424,7 +2839,243 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-823941",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 88.6,
+          "noRunProbabilityPct": 11.4,
+          "awayRunProbabilityPct": 59.2,
+          "homeRunProbabilityPct": 72,
+          "lean": "Run",
+          "strength": "strong",
+          "sampleHalves": 130,
+          "caution": "Angels starter is in the green this year (2.3 WAR)",
+          "reason": "YRFI with a 89% modeled chance of at least one first-inning run. Angels score 59.2% of the time and Dodgers 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 35.8,
+          "noRunProbabilityPct": 64.2,
+          "awayRunProbabilityPct": 14.2,
+          "homeRunProbabilityPct": 21.6,
+          "lean": "No run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.8 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Angels F5 runs 1.5; Dodgers F5 runs 2.5; Jose Soriano: HA 5.5, ER 2.5, win yes +336; Emmet Sheehan: HA 4.5, ER 1.5, win yes +127; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 38.8,
+          "noRunProbabilityPct": 61.2,
+          "awayRunProbabilityPct": 17.6,
+          "homeRunProbabilityPct": 21.2,
+          "lean": "No run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.8 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Angels F5 runs 1.5; Dodgers F5 runs 2.5; Jose Soriano: HA 5.5, ER 2.5, win yes +336; Emmet Sheehan: HA 4.5, ER 1.5, win yes +127; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 39.8,
+          "noRunProbabilityPct": 60.2,
+          "awayRunProbabilityPct": 19.3,
+          "homeRunProbabilityPct": 20.5,
+          "lean": "No run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.8 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Angels F5 runs 1.5; Dodgers F5 runs 2.5; Jose Soriano: HA 5.5, ER 2.5, win yes +336; Emmet Sheehan: HA 4.5, ER 1.5, win yes +127; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 36.7,
+          "noRunProbabilityPct": 63.3,
+          "awayRunProbabilityPct": 17.6,
+          "homeRunProbabilityPct": 19.1,
+          "lean": "No run",
+          "strength": "m2-strong",
+          "sampleHalves": 130,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.8 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Angels F5 runs 1.5; Dodgers F5 runs 2.5; Jose Soriano: HA 5.5, ER 2.5, win yes +336; Emmet Sheehan: HA 4.5, ER 1.5, win yes +127; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Angels @ Dodgers",
+      "mlbGamePk": 823941,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "dodgers": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "angels": {
+            "first3": {
+              "line": 0.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "jose-soriano": {
+            "name": "Jose Soriano",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": -108,
+              "underOdds": -123,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 5.5,
+              "overOdds": 124,
+              "underOdds": -165,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 336,
+              "noOdds": -507
+            }
+          },
+          "emmet-sheehan": {
+            "name": "Emmet Sheehan",
+            "earnedRunsAllowed": {
+              "line": 1.5,
+              "overOdds": -140,
+              "underOdds": 106,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 4.5,
+              "overOdds": -104,
+              "underOdds": -128,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 127,
+              "noOdds": -176
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "Angels": {
@@ -2479,7 +3130,7 @@
   "lineupBoard": {
     "gameId": "angels-dodgers",
     "title": "Angels @ Dodgers",
-    "snapshot": "2026-06-07T15:20:45.582Z",
+    "snapshot": "2026-06-07T16:39:59.691Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -2494,7 +3145,7 @@
       "label": "75°F | Wind 7 mph Out | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "LAD -219",
+      "line": "LAD -221",
       "total": "8.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -6611,16 +7262,16 @@
       "id": 667755,
       "fullName": "José Soriano",
       "pitchHand": "R",
-      "wins": 6,
+      "wins": 7,
       "losses": 4,
-      "era": "2.72",
-      "strikeOuts": 85,
-      "inningsPitched": "76.0",
-      "hitsAllowed": 54,
-      "walks": 38,
-      "homeRunsAllowed": 7,
-      "whip": "1.21",
-      "gamesStarted": 13,
+      "era": "2.96",
+      "strikeOuts": 87,
+      "inningsPitched": "82.0",
+      "hitsAllowed": 62,
+      "walks": 40,
+      "homeRunsAllowed": 9,
+      "whip": "1.24",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 667755,
@@ -6801,12 +7452,12 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/jose-soriano-vs-dodgers",
-        "answerText": "José Soriano is 1-1 with an ERA of 5.25 and 13 strikeouts in 3 appearances versus the Dodgers in his career.",
+        "answerText": "José Soriano has a 1-1 record with an ERA of 5.25 and 13 strikeouts in 3 appearances versus the Dodgers in his career.",
         "pitcherName": "José Soriano",
         "pitcherTeam": "Angels",
         "opponentTeam": "Dodgers",
@@ -6922,7 +7573,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:56.808Z"
+        "fetchedAt": "2026-06-07T16:39:13.039Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -11920,7 +12571,7 @@
           "Away split: 1.72 ERA / 3 HR allowed.",
           "vs. Left: .234 AVG / .698 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -11946,15 +12597,15 @@
       "fullName": "Emmet Sheehan",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 2,
-      "era": "4.50",
-      "strikeOuts": 62,
-      "inningsPitched": "58.0",
-      "hitsAllowed": 53,
-      "walks": 14,
+      "losses": 3,
+      "era": "4.70",
+      "strikeOuts": 64,
+      "inningsPitched": "59.1",
+      "hitsAllowed": 56,
+      "walks": 16,
       "homeRunsAllowed": 11,
-      "whip": "1.16",
-      "gamesStarted": 11,
+      "whip": "1.21",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 686218,
@@ -12108,7 +12759,7 @@
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
@@ -12157,7 +12808,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:58.407Z"
+        "fetchedAt": "2026-06-07T16:39:14.671Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -16815,7 +17466,7 @@
           "Away split: 5.61 ERA / 7 HR allowed.",
           "vs. Left: .244 AVG / .793 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -16896,7 +17547,7 @@
       "index": 0,
       "role": "Away",
       "name": "Angels",
-      "detail": "José Soriano (RHP) | 6-4 | 2.72 ERA | 85 SO | 1.21 WHIP | 76.0 IP",
+      "detail": "José Soriano (RHP) | 7-4 | 2.96 ERA | 87 SO | 1.24 WHIP | 82.0 IP",
       "americanOdds": 178,
       "americanLabel": "+178",
       "decimalOdds": 2.7800000000000002,
@@ -16908,7 +17559,7 @@
       "index": 1,
       "role": "Home",
       "name": "Dodgers",
-      "detail": "Emmet Sheehan (RHP) | 3-2 | 4.50 ERA | 62 SO | 1.16 WHIP | 58.0 IP",
+      "detail": "Emmet Sheehan (RHP) | 3-3 | 4.70 ERA | 64 SO | 1.21 WHIP | 59.1 IP",
       "americanOdds": -218,
       "americanLabel": "-218",
       "decimalOdds": 1.4587155963302751,
@@ -16926,7 +17577,7 @@
         "index": 0,
         "role": "Away",
         "name": "Angels",
-        "detail": "José Soriano (RHP) | 6-4 | 2.72 ERA | 85 SO | 1.21 WHIP | 76.0 IP",
+        "detail": "José Soriano (RHP) | 7-4 | 2.96 ERA | 87 SO | 1.24 WHIP | 82.0 IP",
         "americanOdds": 178,
         "americanLabel": "+178",
         "decimalOdds": 2.7800000000000002,
@@ -16938,7 +17589,7 @@
         "index": 1,
         "role": "Home",
         "name": "Dodgers",
-        "detail": "Emmet Sheehan (RHP) | 3-2 | 4.50 ERA | 62 SO | 1.16 WHIP | 58.0 IP",
+        "detail": "Emmet Sheehan (RHP) | 3-3 | 4.70 ERA | 64 SO | 1.21 WHIP | 59.1 IP",
         "americanOdds": -218,
         "americanLabel": "-218",
         "decimalOdds": 1.4587155963302751,
@@ -16955,7 +17606,7 @@
       "index": 1,
       "role": "Home",
       "name": "Dodgers",
-      "detail": "Emmet Sheehan (RHP) | 3-2 | 4.50 ERA | 62 SO | 1.16 WHIP | 58.0 IP",
+      "detail": "Emmet Sheehan (RHP) | 3-3 | 4.70 ERA | 64 SO | 1.21 WHIP | 59.1 IP",
       "americanOdds": -218,
       "americanLabel": "-218",
       "decimalOdds": 1.4587155963302751,
@@ -16967,7 +17618,7 @@
       "index": 0,
       "role": "Away",
       "name": "Angels",
-      "detail": "José Soriano (RHP) | 6-4 | 2.72 ERA | 85 SO | 1.21 WHIP | 76.0 IP",
+      "detail": "José Soriano (RHP) | 7-4 | 2.96 ERA | 87 SO | 1.24 WHIP | 82.0 IP",
       "americanOdds": 178,
       "americanLabel": "+178",
       "decimalOdds": 2.7800000000000002,
@@ -16975,23 +17626,23 @@
       "impliedProbabilityLabel": "36.0%"
     },
     "lean": "Model pick: Dodgers on standings profile and market price.",
-    "rationale": "Standings profile: Dodgers (42-23, division leader, +141 RD) vs Angels (24-41, 5th in division, -59 RD)",
-    "confidence": 74,
+    "rationale": "Standings profile: Dodgers (42-24, division leader, +133 RD) vs Angels (25-42, 5th in division, -52 RD)",
+    "confidence": 73,
     "volatility": 78,
-    "recommendationScore": 52,
+    "recommendationScore": 51,
     "tier": "Strong",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 12.8,
-    "modelEdgeLabel": "12.8-point model edge",
+    "modelEdge": 12.2,
+    "modelEdgeLabel": "12.2-point model edge",
     "marketProbability": 0.655859053720618,
     "marketProbabilityLabel": "65.6%",
     "inputs": [
       {
         "label": "Standings profile",
-        "summary": "Standings profile: Dodgers (42-23, division leader, +141 RD) vs Angels (24-41, 5th in division, -59 RD)",
+        "summary": "Standings profile: Dodgers (42-24, division leader, +133 RD) vs Angels (25-42, 5th in division, -52 RD)",
         "source": "Standings context",
-        "margin": 66.5,
+        "margin": 63.7,
         "weight": 0.14
       },
       {
@@ -17045,7 +17696,7 @@
       }
     ],
     "pickReasons": [
-      "Dodgers own the cleaner full-game traffic script at 8.5 projected hits.",
+      "Dodgers own the cleaner full-game traffic script at 8.6 projected hits.",
       "Dodgers have the better starter-window lane with 4.6 projected first-five hits.",
       "Dodgers still hold the better bridge-and-finish script once the bullpens take over.",
       "Dodgers can lean on Shohei Ohtani, Freddie Freeman, Alex Freeland to drive early pressure against José Soriano."
@@ -17053,14 +17704,14 @@
     "indicators": {
       "reliefPitchingRisk": 40,
       "coinflipPressure": 27,
-      "starterLeverageIndex": 50.2,
+      "starterLeverageIndex": 48.8,
       "lateInningStabilityIndex": 68.8,
       "pickBullpenScore": 67.5,
       "oppBullpenScore": 50.5,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 63.2,
-      "oppStarterScore": 72.8,
+      "pickStarterScore": 61.9,
+      "oppStarterScore": 72.4,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -17116,7 +17767,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 0.6,
+      "projectedHitEdgeForPick": 0.7,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
@@ -17155,7 +17806,7 @@
       "tierOnePassFlag": false,
       "tierOneRiskFlags": [],
       "favoredSignalCount": 6,
-      "starterLateGap": -18.6,
+      "starterLateGap": -20,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 0,
       "gameShape": {
@@ -17164,7 +17815,7 @@
         "category": "false_favorite_conversion_trap",
         "bestExpression": "No taxed ML; require early conversion or better live price",
         "categoryConfidence": 12.1,
-        "realityGapScore": 37.7,
+        "realityGapScore": 37.8,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -17239,10 +17890,10 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 0.6
+          "projectedHitEdge": 0.7
         }
       },
-      "summary": "Favorite conversion trap: No taxed ML; require early conversion or better live price. Reality-gap 37.7/100. Main checks: 75°F | Wind 7 mph Out | 0% precip | weather helps carry.",
+      "summary": "Favorite conversion trap: No taxed ML; require early conversion or better live price. Reality-gap 37.8/100. Main checks: 75°F | Wind 7 mph Out | 0% precip | weather helps carry.",
       "pickTeam": "Dodgers",
       "opponentTeam": "Angels",
       "scores": {
@@ -17250,9 +17901,9 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
         "bullpenFlipScore": 8.7,
-        "starterControlScore": 24.6,
-        "marketContradictionScore": 12.6,
-        "realityGapScore": 37.7
+        "starterControlScore": 23.2,
+        "marketContradictionScore": 12.8,
+        "realityGapScore": 37.8
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -17266,9 +17917,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 16.2,
-            "pickScore": 16.2,
-            "opponentScore": 13.1
+            "gameScore": 16.7,
+            "pickScore": 16.7,
+            "opponentScore": 13
           },
           {
             "id": "chaos",
@@ -17316,7 +17967,7 @@
             "role": "pick",
             "team": "Dodgers",
             "scores": {
-              "pressure": 16.2,
+              "pressure": 16.7,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17324,7 +17975,7 @@
               "flow": 100
             },
             "polygon": [
-              16.2,
+              16.7,
               5,
               0,
               16,
@@ -17335,7 +17986,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 63.2,
+              "starterScore": 61.9,
               "bullpenScore": 67.5,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17349,7 +18000,7 @@
             "role": "opponent",
             "team": "Angels",
             "scores": {
-              "pressure": 13.1,
+              "pressure": 13,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17357,7 +18008,7 @@
               "flow": 0
             },
             "polygon": [
-              13.1,
+              13,
               5,
               0,
               16,
@@ -17368,7 +18019,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 72.8,
+              "starterScore": 72.4,
               "bullpenScore": 50.5,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17383,7 +18034,7 @@
           "label": "Favorite conversion trap",
           "bestExpression": "No taxed ML; require early conversion or better live price",
           "scores": {
-            "pressure": 16.2,
+            "pressure": 16.7,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
@@ -17391,7 +18042,7 @@
             "flow": 100
           },
           "polygon": [
-            16.2,
+            16.7,
             44.8,
             8.5,
             24.4,
@@ -17473,7 +18124,7 @@
         "side": "Dodgers is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 88.5% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 88.6% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
@@ -17514,23 +18165,23 @@
     },
     "mlbProjection": {
       "awayProjectedHits": 7.5,
-      "homeProjectedHits": 8.5,
+      "homeProjectedHits": 8.6,
       "awayHitEfficiencyPct": 21.5,
-      "homeHitEfficiencyPct": 24.8,
-      "awayFirst5ProjectedHits": 4.1,
+      "homeHitEfficiencyPct": 25.1,
+      "awayFirst5ProjectedHits": 4.2,
       "homeFirst5ProjectedHits": 4.6,
-      "awayFirst5HitEfficiencyPct": 21.4,
+      "awayFirst5HitEfficiencyPct": 21.9,
       "homeFirst5HitEfficiencyPct": 24.2,
-      "awayLateProjectedHits": 3.3,
-      "homeLateProjectedHits": 3.9,
-      "awayLateHitEfficiencyPct": 21.3,
-      "homeLateHitEfficiencyPct": 25.6,
+      "awayLateProjectedHits": 3.4,
+      "homeLateProjectedHits": 4,
+      "awayLateHitEfficiencyPct": 21.5,
+      "homeLateHitEfficiencyPct": 25.8,
       "awayBullpenChainScore": null,
       "homeBullpenChainScore": null,
       "edgeTeam": "Dodgers",
-      "edgeHits": 1,
+      "edgeHits": 1.1,
       "first5EdgeTeam": "Dodgers",
-      "first5EdgeHits": 0.5,
+      "first5EdgeHits": 0.4,
       "lateEdgeTeam": "Dodgers",
       "lateEdgeHits": 0.6,
       "bridgeEdgeTeam": "",
@@ -17541,24 +18192,24 @@
       "homeBullpenExhaustion": null,
       "awayBullpenExhaustionLabel": "unknown",
       "homeBullpenExhaustionLabel": "unknown",
-      "awayPitcherType": "Volatile bat-misser",
-      "homePitcherType": "Strike-throwing righty",
-      "awayStarterHoldConfidence": 41,
+      "awayPitcherType": "Balanced righty",
+      "homePitcherType": "Balanced righty",
+      "awayStarterHoldConfidence": 44,
       "homeStarterHoldConfidence": 63.1,
-      "awayProjectedRuns": 3.3,
+      "awayProjectedRuns": 3.5,
       "homeProjectedRuns": 3.7,
-      "awayFirst5ProjectedRuns": 1.8,
-      "homeFirst5ProjectedRuns": 2,
-      "awayLateProjectedRuns": 1.5,
-      "homeLateProjectedRuns": 1.7,
+      "awayFirst5ProjectedRuns": 1.9,
+      "homeFirst5ProjectedRuns": 1.9,
+      "awayLateProjectedRuns": 1.6,
+      "homeLateProjectedRuns": 1.8,
       "postedTotal": 8.5,
       "totals": {
         "fullGame": {
           "lean": "Under",
-          "edge": -1.5,
+          "edge": -1.3,
           "strength": "Strong",
           "label": "Under 8.5",
-          "summary": "Under lean with a 1.5-run edge against 8.5.",
+          "summary": "Under lean with a 1.3-run edge against 8.5.",
           "chaosGate": {
             "phase": "full",
             "overChaosScore": 2,
@@ -17616,7 +18267,7 @@
             "adjustedEdge": -0.7,
             "marketExpression": "Under",
             "shape": "balanced",
-            "tailScore": 16.7,
+            "tailScore": 17.2,
             "strandScore": 0,
             "forkScore": 0,
             "tailLift": 0,
@@ -17630,7 +18281,7 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 8.7,
+              "totalFirst5ProjectedHits": 8.8,
               "weatherCarry": true,
               "weatherSuppress": false,
               "visibilityRisk": null
@@ -17639,10 +18290,10 @@
         },
         "late": {
           "lean": "Under",
-          "edge": -0.8,
-          "strength": "Clear",
+          "edge": -0.6,
+          "strength": "Lean",
           "label": "Under 4",
-          "summary": "Under lean with a 0.8-run edge against 4.",
+          "summary": "Under lean with a 0.6-run edge against 4.",
           "chaosGate": {
             "phase": "late",
             "overChaosScore": 2,
@@ -17666,7 +18317,7 @@
             }
           }
         },
-        "projectedFullTotalRuns": 7,
+        "projectedFullTotalRuns": 7.2,
         "projectedFirst5TotalRuns": 3.8,
         "tailAdjustedProjectedFirst5TotalRuns": 3.8,
         "first5TailOverlay": {
@@ -17675,7 +18326,7 @@
           "adjustedEdge": -0.7,
           "marketExpression": "Under",
           "shape": "balanced",
-          "tailScore": 16.7,
+          "tailScore": 17.2,
           "strandScore": 0,
           "forkScore": 0,
           "tailLift": 0,
@@ -17689,16 +18340,16 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 8.7,
+            "totalFirst5ProjectedHits": 8.8,
             "weatherCarry": true,
             "weatherSuppress": false,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 3.2,
+        "projectedLateTotalRuns": 3.4,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 4.6,
+        "runShareFirst5TotalLine": 4.5,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 4,
         "bullpenExhaustionNote": "75°F | Wind 7 mph Out | 0% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
@@ -17709,10 +18360,10 @@
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 38.5,
-        "yesProbabilityPct": 88.5,
-        "noProbabilityPct": 11.5,
-        "awayRunProbabilityPct": 59.1,
+        "edge": 38.6,
+        "yesProbabilityPct": 88.6,
+        "noProbabilityPct": 11.4,
+        "awayRunProbabilityPct": 59.2,
         "homeRunProbabilityPct": 72,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
@@ -17732,7 +18383,7 @@
         ],
         "projectedRuns": 1.9,
         "line": 0.5,
-        "summary": "YRFI with a 89% modeled chance of at least one first-inning run. Angels score 59.1% of the time and Dodgers 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 89% modeled chance of at least one first-inning run. Angels score 59.2% of the time and Dodgers 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
       },
       "teamScripts": [
         {
@@ -17804,7 +18455,7 @@
           "depthScore": 55.7,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Dodgers own the cleaner full-game traffic script at 8.5 projected hits.",
+            "Dodgers own the cleaner full-game traffic script at 8.6 projected hits.",
             "Dodgers have the better starter-window lane with 4.6 projected first-five hits.",
             "Dodgers still hold the better bridge-and-finish script once the bullpens take over.",
             "Dodgers can lean on Shohei Ohtani, Freddie Freeman, Alex Freeland to drive early pressure against José Soriano.",
@@ -17820,19 +18471,19 @@
           {
             "label": "First 5",
             "edgeTeam": "Dodgers",
-            "projection": "2 R",
+            "projection": "1.9 R",
             "note": "Dodgers lean on Shohei Ohtani, Freddie Freeman to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
             "edgeTeam": "Dodgers",
-            "projection": "1.7 R",
+            "projection": "1.8 R",
             "note": "Dodgers keep more late scoring paths alive, with Shohei Ohtani, Freddie Freeman plus the stronger bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Dodgers",
-            "projection": "8.5 H",
+            "projection": "8.6 H",
             "note": "Dodgers finish with the stronger aggregate traffic path, anchored by Shohei Ohtani, Freddie Freeman."
           }
         ]
@@ -17857,16 +18508,16 @@
         "selection": "Dodgers",
         "opponent": "Angels",
         "pickProjectedRuns": 3.7,
-        "opponentProjectedRuns": 3.3,
-        "projectedTotalRuns": 7,
-        "runDiff": 0.4,
-        "absoluteRunDiff": 0.4,
-        "runDiffSharePct": 5.7,
-        "confidence": 74,
+        "opponentProjectedRuns": 3.5,
+        "projectedTotalRuns": 7.2,
+        "runDiff": 0.2,
+        "absoluteRunDiff": 0.2,
+        "runDiffSharePct": 2.8,
+        "confidence": 73,
         "marketProbabilityPct": 65.6,
         "grade": "Thin ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Dodgers projects 0.4 runs better in a 7-run environment."
+        "note": "Dodgers projects 0.2 runs better in a 7.2-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -17920,10 +18571,10 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 0.6
+            "projectedHitEdge": 0.7
           }
         },
-        "summary": "Favorite conversion trap: No taxed ML; require early conversion or better live price. Reality-gap 37.7/100. Main checks: 75°F | Wind 7 mph Out | 0% precip | weather helps carry.",
+        "summary": "Favorite conversion trap: No taxed ML; require early conversion or better live price. Reality-gap 37.8/100. Main checks: 75°F | Wind 7 mph Out | 0% precip | weather helps carry.",
         "pickTeam": "Dodgers",
         "opponentTeam": "Angels",
         "scores": {
@@ -17931,9 +18582,9 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
           "bullpenFlipScore": 8.7,
-          "starterControlScore": 24.6,
-          "marketContradictionScore": 12.6,
-          "realityGapScore": 37.7
+          "starterControlScore": 23.2,
+          "marketContradictionScore": 12.8,
+          "realityGapScore": 37.8
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -17947,9 +18598,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 16.2,
-              "pickScore": 16.2,
-              "opponentScore": 13.1
+              "gameScore": 16.7,
+              "pickScore": 16.7,
+              "opponentScore": 13
             },
             {
               "id": "chaos",
@@ -17997,7 +18648,7 @@
               "role": "pick",
               "team": "Dodgers",
               "scores": {
-                "pressure": 16.2,
+                "pressure": 16.7,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -18005,7 +18656,7 @@
                 "flow": 100
               },
               "polygon": [
-                16.2,
+                16.7,
                 5,
                 0,
                 16,
@@ -18016,7 +18667,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 63.2,
+                "starterScore": 61.9,
                 "bullpenScore": 67.5,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18030,7 +18681,7 @@
               "role": "opponent",
               "team": "Angels",
               "scores": {
-                "pressure": 13.1,
+                "pressure": 13,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -18038,7 +18689,7 @@
                 "flow": 0
               },
               "polygon": [
-                13.1,
+                13,
                 5,
                 0,
                 16,
@@ -18049,7 +18700,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 72.8,
+                "starterScore": 72.4,
                 "bullpenScore": 50.5,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18064,7 +18715,7 @@
             "label": "Favorite conversion trap",
             "bestExpression": "No taxed ML; require early conversion or better live price",
             "scores": {
-              "pressure": 16.2,
+              "pressure": 16.7,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
@@ -18072,7 +18723,7 @@
               "flow": 100
             },
             "polygon": [
-              16.2,
+              16.7,
               44.8,
               8.5,
               24.4,
@@ -18154,7 +18805,7 @@
           "side": "Dodgers is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 88.5% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 88.6% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
@@ -18196,12 +18847,12 @@
       "first5Moneyline": {
         "pickSide": "home",
         "pickTeam": "Dodgers",
-        "awayProjectedRuns": 1.8,
-        "homeProjectedRuns": 2,
-        "awayLeadProbability": 35.5,
-        "homeLeadProbability": 43.3,
-        "pushProbability": 21.2,
-        "leadProbability": 43.3,
+        "awayProjectedRuns": 1.9,
+        "homeProjectedRuns": 1.9,
+        "awayLeadProbability": 39.4,
+        "homeLeadProbability": 39.4,
+        "pushProbability": 21.3,
+        "leadProbability": 39.4,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -18292,7 +18943,7 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
-        "confidence": 74,
+        "confidence": 63,
         "probability": 73.1,
         "expectedValue": 1.3,
         "statValueLabel": "1.31 exp RBI",
@@ -18332,7 +18983,7 @@
           "trackingPenalty": 18,
           "reason": "repeatable career power"
         },
-        "recommendationTier": "Strong",
+        "recommendationTier": "Lean",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 1 carry | baseline approach; approach 58.2/100 | recent form up | split fit live",
@@ -18342,6 +18993,146 @@
           "carry-bat-live",
           "baseline-approach",
           "run-production-slot",
+          "statcast-power-up",
+          "statcast-contact-up"
+        ],
+        "matchupNote": "+10.00 vs José Soriano",
+        "teamScriptLabel": "",
+        "lineupStatus": "partial",
+        "playerSummary": ".300 AVG | .941 OPS | 68 H | 11 HR | 12g: .480 AVG | 1.312 OPS | 24 H | 2 HR | vs RHP: .301 AVG | .962 OPS | 7 HR | career 4584 PA | .954 OPS | 290 HR | repeatable career power | power 100 | 2026 sample ok | arsenal Sinker 28% / Curveball 26% / 4-Seam Fastball 23% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
+      },
+      {
+        "id": "angels-dodgers:660271:runs",
+        "gameId": "angels-dodgers",
+        "gameTitle": "Angels @ Dodgers",
+        "league": "MLB",
+        "playerId": 660271,
+        "playerName": "Shohei Ohtani",
+        "teamName": "Dodgers",
+        "slot": 1,
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 71,
+        "probability": 80,
+        "expectedValue": 1.6,
+        "statValueLabel": "1.61 exp runs",
+        "sample": {
+          "seasonGames": 63,
+          "seasonPlateAppearances": 279,
+          "recentGames": 12,
+          "recentPlateAppearances": 58,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 29,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 4584,
+          "seasonPa": 279,
+          "powerIndex": 100,
+          "contactRisk": 47.67,
+          "roleStability": 100,
+          "label": "repeatable career power",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 58.2,
+            "processScore": 14,
+            "careerWeight": 0.1,
+            "identityDelta": -9.2,
+            "tbDelta": -0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "baseline approach",
+            "seasonPa": 279,
+            "careerPa": 4584
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "repeatable career power"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 1 carry | recent form up | split fit live | run-scoring slot",
+        "scriptTags": [
+          "top-third-pressure",
+          "middle-order-traffic",
+          "carry-bat-live",
+          "baseline-approach",
+          "run-scoring-slot",
+          "statcast-power-up",
+          "statcast-contact-up"
+        ],
+        "matchupNote": "+10.00 vs José Soriano",
+        "teamScriptLabel": "",
+        "lineupStatus": "partial",
+        "playerSummary": ".300 AVG | .941 OPS | 68 H | 11 HR | 12g: .480 AVG | 1.312 OPS | 24 H | 2 HR | vs RHP: .301 AVG | .962 OPS | 7 HR | career 4584 PA | .954 OPS | 290 HR | repeatable career power | power 100 | 2026 sample ok | arsenal Sinker 28% / Curveball 26% / 4-Seam Fastball 23% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
+      },
+      {
+        "id": "angels-dodgers:660271:hitRunRbi",
+        "gameId": "angels-dodgers",
+        "gameTitle": "Angels @ Dodgers",
+        "league": "MLB",
+        "playerId": 660271,
+        "playerName": "Shohei Ohtani",
+        "teamName": "Dodgers",
+        "slot": 1,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
+        "confidence": 82,
+        "probability": 88.1,
+        "expectedValue": 3.7,
+        "statValueLabel": "1.59 H · 1.00 R · 1.08 RBI · 3.67 total",
+        "sample": {
+          "seasonGames": 63,
+          "seasonPlateAppearances": 279,
+          "recentGames": 12,
+          "recentPlateAppearances": 58,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 29,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 4584,
+          "seasonPa": 279,
+          "powerIndex": 100,
+          "contactRisk": 47.67,
+          "roleStability": 100,
+          "label": "repeatable career power",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 58.2,
+            "processScore": 14,
+            "careerWeight": 0.1,
+            "identityDelta": -9.2,
+            "tbDelta": -0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "baseline approach",
+            "seasonPa": 279,
+            "careerPa": 4584
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "repeatable career power"
+        },
+        "recommendationTier": "Core",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 1 carry | recent form up | split fit live | combined hits/runs/RBI lane",
+        "scriptTags": [
+          "top-third-pressure",
+          "middle-order-traffic",
+          "carry-bat-live",
+          "baseline-approach",
+          "combined-production-lane",
           "statcast-power-up",
           "statcast-contact-up"
         ],
@@ -18435,9 +19226,9 @@
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
         "confidence": 58,
-        "probability": 42.4,
-        "expectedValue": 1.4,
-        "statValueLabel": "1.45 exp hits",
+        "probability": 42.8,
+        "expectedValue": 1.5,
+        "statValueLabel": "1.46 exp hits",
         "sample": {
           "seasonGames": 62,
           "seasonPlateAppearances": 269,
@@ -18477,7 +19268,7 @@
         "recommendationTier": "Lean",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 3 carry | recent form up | split fit live",
+        "reason": "slot 3 carry | recent form up | split fit live | clean traffic lane",
         "scriptTags": [
           "top-third-pressure",
           "middle-order-traffic",
@@ -18503,7 +19294,7 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 68,
-        "probability": 67.2,
+        "probability": 67.1,
         "expectedValue": 1.1,
         "statValueLabel": "1.11 exp walks",
         "sample": {
@@ -18573,9 +19364,9 @@
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
         "confidence": 70,
-        "probability": 66.2,
+        "probability": 66.5,
         "expectedValue": 1.1,
-        "statValueLabel": "1.08 exp singles",
+        "statValueLabel": "1.09 exp singles",
         "sample": {
           "seasonGames": 63,
           "seasonPlateAppearances": 279,
@@ -18628,154 +19419,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "partial",
         "playerSummary": ".300 AVG | .941 OPS | 68 H | 11 HR | 12g: .480 AVG | 1.312 OPS | 24 H | 2 HR | vs RHP: .301 AVG | .962 OPS | 7 HR | career 4584 PA | .954 OPS | 290 HR | repeatable career power | power 100 | 2026 sample ok | arsenal Sinker 28% / Curveball 26% / 4-Seam Fastball 23% | fit +3.1 | +10.0 matchup grade in a whiff-variance lane"
-      },
-      {
-        "id": "angels-dodgers:518692:rbi",
-        "gameId": "angels-dodgers",
-        "gameTitle": "Angels @ Dodgers",
-        "league": "MLB",
-        "playerId": 518692,
-        "playerName": "Freddie Freeman",
-        "teamName": "Dodgers",
-        "slot": 3,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 72,
-        "probability": 74.3,
-        "expectedValue": 1.4,
-        "statValueLabel": "1.36 exp RBI",
-        "sample": {
-          "seasonGames": 62,
-          "seasonPlateAppearances": 269,
-          "recentGames": 14,
-          "recentPlateAppearances": 60,
-          "statcastGames": 7,
-          "statcastPlateAppearances": 32,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 9607,
-          "seasonPa": 269,
-          "powerIndex": 75.6,
-          "contactRisk": 35.93,
-          "roleStability": 100,
-          "label": "repeatable career power",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": true,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 43.3,
-            "processScore": -8,
-            "careerWeight": 0.1,
-            "identityDelta": -2.1,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process fading",
-            "seasonPa": 269,
-            "careerPa": 9607
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "repeatable career power"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 3 carry | process fading; approach 43.3/100 | recent form up | split fit live",
-        "scriptTags": [
-          "top-third-pressure",
-          "middle-order-traffic",
-          "carry-bat-live",
-          "process-fading",
-          "run-production-slot",
-          "statcast-fade"
-        ],
-        "matchupNote": "+10.00 vs José Soriano",
-        "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".278 AVG | .839 OPS | 65 H | 10 HR | 14g: .333 AVG | .889 OPS | 18 H | 4 HR | vs RHP: .295 AVG | .894 OPS | 8 HR | career 9607 PA | .895 OPS | 375 HR | repeatable career power | power 76 | 2026 sample ok | arsenal Sinker 28% / Curveball 26% / 4-Seam Fastball 23% | fit +2.6 | +10.0 matchup grade in a whiff-variance lane"
-      },
-      {
-        "id": "angels-dodgers:518692:totalBases",
-        "gameId": "angels-dodgers",
-        "gameTitle": "Angels @ Dodgers",
-        "league": "MLB",
-        "playerId": 518692,
-        "playerName": "Freddie Freeman",
-        "teamName": "Dodgers",
-        "slot": 3,
-        "propType": "totalBases",
-        "propLabel": "TB",
-        "marketLabel": "Over 1.5 total bases",
-        "confidence": 63,
-        "probability": 63.3,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.15 exp TB",
-        "sample": {
-          "seasonGames": 62,
-          "seasonPlateAppearances": 269,
-          "recentGames": 14,
-          "recentPlateAppearances": 60,
-          "statcastGames": 7,
-          "statcastPlateAppearances": 32,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 9607,
-          "seasonPa": 269,
-          "powerIndex": 75.6,
-          "contactRisk": 35.93,
-          "roleStability": 100,
-          "label": "repeatable career power",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": true,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 43.3,
-            "processScore": -8,
-            "careerWeight": 0.1,
-            "identityDelta": -2.1,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process fading",
-            "seasonPa": 269,
-            "careerPa": 9607
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "repeatable career power"
-        },
-        "recommendationTier": "Lean",
-        "shadowSupportTag": "Soft heat",
-        "shadowSupportLevel": "soft",
-        "reason": "slot 3 carry | soft heat only: xSLG + hard-hit support is still thin | Statcast contact is fading | repeatable career power",
-        "scriptTags": [
-          "top-third-pressure",
-          "middle-order-traffic",
-          "carry-bat-live",
-          "career-power-backed",
-          "process-fading",
-          "soft-heat",
-          "statcast-fade"
-        ],
-        "matchupNote": "+10.00 vs José Soriano",
-        "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".278 AVG | .839 OPS | 65 H | 10 HR | 14g: .333 AVG | .889 OPS | 18 H | 4 HR | vs RHP: .295 AVG | .894 OPS | 8 HR | career 9607 PA | .895 OPS | 375 HR | repeatable career power | power 76 | 2026 sample ok | arsenal Sinker 28% / Curveball 26% / 4-Seam Fastball 23% | fit +2.6 | +10.0 matchup grade in a whiff-variance lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 19,
+    "candidateCount": 27,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

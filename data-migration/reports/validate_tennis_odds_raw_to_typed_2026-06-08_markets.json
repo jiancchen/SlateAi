@@ -1,0 +1,52 @@
+{
+  "date": "2026-06-08",
+  "draftkings_snapshots": 320,
+  "duplicate_contracts": 0,
+  "duplicate_snapshots": 0,
+  "duplicate_ticks": 0,
+  "errors": [],
+  "fanduel_market_types": [],
+  "fanduel_snapshots": 0,
+  "generated_at": "2026-06-08T07:58:15.708296+00:00",
+  "health_check": {
+    "actual_count": 476,
+    "check_name": "tennis_odds_raw_to_typed:2026-06-08",
+    "checked_at": "2026-06-08T07:58:05.457467+00:00",
+    "details_json": "{\"after_counts\":{\"market_contracts\":1188,\"market_price_ticks\":131612,\"market_snapshots\":2608,\"unresolved_entities\":451},\"before_counts\":{\"market_contracts\":1188,\"market_price_ticks\":131612,\"market_snapshots\":2608,\"unresolved_entities\":451},\"date\":\"2026-06-08\",\"deleted_stale_rows\":{\"market_contracts\":156,\"market_price_ticks\":156,\"market_snapshots\":476,\"match_aliases\":40,\"match_players\":80,\"matches\":40},\"dry_run\":false,\"generated_at\":\"2026-06-08T07:58:05.456817+00:00\",\"inserted_contracts\":156,\"inserted_snapshots\":476,\"inserted_ticks\":156,\"ok\":true,\"parsed_contracts\":156,\"parsed_snapshots\":476,\"parsed_ticks\":156,\"parser_module\":\"pipeline/sources/tennis/normalization/markets.py\",\"row_count_delta\":{\"market_contracts\":0,\"market_price_ticks\":0,\"market_snapshots\":0,\"unresolved_entities\":0},\"sample_source_snapshots\":[\"tennis-b217e11070751fc166795a29dff684b1\",\"tennis-c5cbc248e28e308ee931911140bffeef\"],\"script\":\"data-migration/scripts/ingest_tennis_odds_raw_to_typed.py\",\"source_db\":\"data-private/warehouse/sports/tennis/sql-tennis.db\",\"source_files\":2,\"source_name\":\"tennis_odds\",\"source_rows\":476,\"source_snapshot_rows\":2,\"unparsed_rows\":0,\"unresolved_rows_added\":0}",
+    "expected_count": 2,
+    "health_check_id": "tennis-odds-raw-to-typed:2026-06-08",
+    "model_run_id": null,
+    "status": "ok"
+  },
+  "ok": true,
+  "open_odds_unresolved": 0,
+  "orphan_snapshots": 0,
+  "robinhood_contracts_for_date": 156,
+  "robinhood_ticks": 156,
+  "script": "data-migration/scripts/validate_tennis_odds_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_fetch_status": {
+    "actual_item_count": 2,
+    "cache_valid_until": "2026-06-08 08:58:05",
+    "expected_item_count": null,
+    "last_attempt_at": "2026-06-08T07:58:05.456852+00:00",
+    "last_completeness_status": "unknown",
+    "last_fetch_run_id": "source-fetch-tennis_odds-2026-06-08-2026-06-08T07-58-05-456852+00-00",
+    "last_status": "success",
+    "last_success_at": "2026-06-08T07:58:05.456852+00:00",
+    "missing_item_count": null,
+    "notes": "{\"adapter\":\"tennis_odds_raw_to_typed\",\"dry_run\":false,\"note\":\"Typed parse run for tennis odds raw archive. This does not perform network fetch.\",\"parsed_snapshots\":476,\"report_path\":\"data-migration/reports/ingest_tennis_odds_raw_to_typed_2026-06-08_markets.json\",\"source_files\":2,\"unresolved_added\":0}",
+    "source_date": "2026-06-08",
+    "source_family": "markets",
+    "source_fetch_status_id": "tennis:tennis_odds:2026-06-08",
+    "source_name": "tennis_odds",
+    "sport": "tennis",
+    "unresolved_count": 0,
+    "updated_at": "2026-06-08T07:58:05.456852+00:00"
+  },
+  "source_files": 2,
+  "source_linked_market_snapshots": 476,
+  "warnings": [
+    "No FanDuel market snapshots linked to dated source snapshots."
+  ]
+}

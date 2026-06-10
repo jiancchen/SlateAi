@@ -1,0 +1,148 @@
+{
+  "date": "2026-06-08",
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "dry_run": false,
+  "include_lineups": true,
+  "include_markets": true,
+  "include_player_context": true,
+  "lookback_days": 3,
+  "lookback_start_date": "2026-06-05",
+  "mode": "prepare_mlb_day",
+  "ok": true,
+  "results": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+        "--date",
+        "2026-06-05",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-05.json"
+      ],
+      "date": "2026-06-05",
+      "family": "schedule_game_feed",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-05.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-06-05\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 15,\n  \"feed\": {\n    \"game_outcomes\": 15,\n    \"games\": 15,\n    \"missing_schedule_games\": 0,\n    \"phase_outcomes\": 30,\n    \"pitch_events\": 5056,\n    \"pitcher_appearances\": 119,\n    \"plate_appearances\": 1136,\n    \"players\": 780,\n    \"source_files\": 15,\n    \"starting_pitchers\": 30,\n    \"team_game_stats\": 30\n  },\n  \"feed_file_count\": 15,\n  \"generated_at\": \"2026-06-08T22:12:00.949825+00:00\",\n  \"ok\": true,\n  \"raw_root\": \"data-private/raw/mlb\",\n  \"row_count_delta\": {\n    \"game_outcomes\": 0,\n    \"games\": 0,\n    \"pitch_events\": 0,\n    \"plate_appearances\": 0,\n    \"players\": 0,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 0,\n    \"starting_pitchers\": 0,\n    \"teams\": 0,\n    \"venues\": 0\n  },\n  \"schedule\": {\n    \"games\": 15,\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-e177e37d32626567d4dbbe811684a39b\",\n    \"starting_pitchers\": 30,\n    \"teams\": 30,\n    \"venues\": 15\n  },\n  \"schedule_path\": \"data-private/raw/mlb/2026-06-05/schedule.json\",\n  \"script\": \"data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+        "--date",
+        "2026-06-06",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-06.json"
+      ],
+      "date": "2026-06-06",
+      "family": "schedule_game_feed",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-06.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-06-06\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 15,\n  \"feed\": {\n    \"game_outcomes\": 14,\n    \"games\": 15,\n    \"missing_schedule_games\": 0,\n    \"phase_outcomes\": 28,\n    \"pitch_events\": 4789,\n    \"pitcher_appearances\": 113,\n    \"plate_appearances\": 1035,\n    \"players\": 780,\n    \"source_files\": 15,\n    \"starting_pitchers\": 30,\n    \"team_game_stats\": 28\n  },\n  \"feed_file_count\": 15,\n  \"generated_at\": \"2026-06-08T22:12:02.418138+00:00\",\n  \"ok\": true,\n  \"raw_root\": \"data-private/raw/mlb\",\n  \"row_count_delta\": {\n    \"game_outcomes\": 0,\n    \"games\": 0,\n    \"pitch_events\": 0,\n    \"plate_appearances\": 0,\n    \"players\": 0,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 0,\n    \"starting_pitchers\": 0,\n    \"teams\": 0,\n    \"venues\": 0\n  },\n  \"schedule\": {\n    \"games\": 15,\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-b778140efb1c3ebe535ddf02208335c3\",\n    \"starting_pitchers\": 30,\n    \"teams\": 30,\n    \"venues\": 15\n  },\n  \"schedule_path\": \"data-private/raw/mlb/2026-06-06/schedule.json\",\n  \"script\": \"data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+        "--date",
+        "2026-06-07",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-07.json"
+      ],
+      "date": "2026-06-07",
+      "family": "schedule_game_feed",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-07.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-06-07\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 15,\n  \"feed\": {\n    \"game_outcomes\": 15,\n    \"games\": 15,\n    \"missing_schedule_games\": 0,\n    \"phase_outcomes\": 30,\n    \"pitch_events\": 5310,\n    \"pitcher_appearances\": 135,\n    \"plate_appearances\": 1133,\n    \"players\": 780,\n    \"source_files\": 15,\n    \"starting_pitchers\": 30,\n    \"team_game_stats\": 30\n  },\n  \"feed_file_count\": 15,\n  \"generated_at\": \"2026-06-08T22:12:02.847282+00:00\",\n  \"ok\": true,\n  \"raw_root\": \"data-private/raw/mlb\",\n  \"row_count_delta\": {\n    \"game_outcomes\": 0,\n    \"games\": 0,\n    \"pitch_events\": 0,\n    \"plate_appearances\": 0,\n    \"players\": 0,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 0,\n    \"starting_pitchers\": 0,\n    \"teams\": 0,\n    \"venues\": 0\n  },\n  \"schedule\": {\n    \"games\": 15,\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-f3be0e0be4c1fe70e223655fe9789c8b\",\n    \"starting_pitchers\": 30,\n    \"teams\": 30,\n    \"venues\": 15\n  },\n  \"schedule_path\": \"data-private/raw/mlb/2026-06-07/schedule.json\",\n  \"script\": \"data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py",
+        "--date",
+        "2026-06-08",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-08.json"
+      ],
+      "date": "2026-06-08",
+      "family": "schedule_game_feed",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-08.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-06-08\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 8,\n  \"feed\": {\n    \"game_outcomes\": 0,\n    \"games\": 8,\n    \"missing_schedule_games\": 0,\n    \"phase_outcomes\": 0,\n    \"pitch_events\": 0,\n    \"pitcher_appearances\": 0,\n    \"plate_appearances\": 0,\n    \"players\": 417,\n    \"source_files\": 8,\n    \"starting_pitchers\": 16,\n    \"team_game_stats\": 0\n  },\n  \"feed_file_count\": 8,\n  \"generated_at\": \"2026-06-08T22:12:03.358958+00:00\",\n  \"ok\": true,\n  \"raw_root\": \"data-private/raw/mlb\",\n  \"row_count_delta\": {\n    \"game_outcomes\": 0,\n    \"games\": 0,\n    \"pitch_events\": 0,\n    \"plate_appearances\": 0,\n    \"players\": 0,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 0,\n    \"starting_pitchers\": 0,\n    \"teams\": 0,\n    \"venues\": 0\n  },\n  \"schedule\": {\n    \"games\": 8,\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-de64fb43dc45345ae06ce15ec526f501\",\n    \"starting_pitchers\": 16,\n    \"teams\": 16,\n    \"venues\": 8\n  },\n  \"schedule_path\": \"data-private/raw/mlb/2026-06-08/schedule.json\",\n  \"script\": \"data-migration/scripts/ingest_mlb_schedule_game_feed_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_lineups_raw_to_typed.py",
+        "--date",
+        "2026-06-08",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_lineups_2026-06-08.json"
+      ],
+      "date": "2026-06-08",
+      "family": "lineups",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_lineups_2026-06-08.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"board_path\": \"data-private/lineups/mlb/2026-06-08-lineup-board.json\",\n  \"date\": \"2026-06-08\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 8,\n  \"expected_lineup_slot_count\": 144,\n  \"generated_at\": \"2026-06-08T22:12:03.430426+00:00\",\n  \"lineup_board\": {\n    \"games\": 8,\n    \"lineup_matchup_snapshots\": 142,\n    \"lineup_slots\": 142,\n    \"lineups\": 16,\n    \"players\": 142,\n    \"probable_pitchers\": 16,\n    \"probables_source_snapshot_id\": \"mlb-a260c3be2aed46a836b6872b65a6024b\",\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-e62c5c7308ed4170ffd9f3ec34ce5a11\",\n    \"unresolved_games\": 0,\n    \"unresolved_players\": 0\n  },\n  \"lineup_file\": null,\n  \"lineup_root\": \"data-private/lineups/mlb\",\n  \"ok\": true,\n  \"row_count_delta\": {\n    \"health_checks\": 0,\n    \"lineup_matchup_snapshots\": 0,\n    \"lineup_slots\": 0,\n    \"lineups\": 0,\n    \"players\": 0,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 0,\n    \"starting_pitchers\": 0,\n    \"unresolved_entities\": 0\n  },\n  \"script\": \"data-migration/scripts/ingest_mlb_lineups_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_markets_props_raw_to_typed.py",
+        "--date",
+        "2026-06-08",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_markets_props_2026-06-08.json"
+      ],
+      "date": "2026-06-08",
+      "family": "markets_props",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_markets_props_2026-06-08.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"date\":\"2026-06-08\",\"dry_run\":false,\"ok\":true,\"parsed_prop_snapshots\":48,\"parsed_snapshots\":112,\"prop_market_snapshots_for_date\":48,\"source_files\":1}\n"
+    },
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py",
+        "--date",
+        "2026-06-08",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_player_context_2026-06-08.json"
+      ],
+      "date": "2026-06-08",
+      "family": "player_context",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_player_context_2026-06-08.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"date\": \"2026-06-08\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_context_items\": 142,\n  \"generated_at\": \"2026-06-08T22:12:03.708223+00:00\",\n  \"ok\": true,\n  \"player_context\": {\n    \"career_profiles\": 142,\n    \"identity_profiles\": 142,\n    \"people\": 142,\n    \"source_files\": 6,\n    \"source_snapshot_ids\": [\n      \"mlb-26aeac53b751a2d1667ca643ba90f975\",\n      \"mlb-f244c7954eaff01a89ccb551ff089282\",\n      \"mlb-c5c7bf326cab151c7813d4f6ff817c8b\",\n      \"mlb-ad296f5851df8b2a65038f06ebb1518c\",\n      \"mlb-28322be849dc809f748bbabe2d082c82\",\n      \"mlb-d2b328fc9bb16dadf5e4f9998b4eca3b\"\n    ],\n    \"unresolved\": 0\n  },\n  \"row_count_delta\": {\n    \"health_checks\": 0,\n    \"player_career_profiles\": 0,\n    \"player_identity_profiles\": 0,\n    \"player_statcast_game_logs\": 0,\n    \"players\": 0,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 0,\n    \"unresolved_entities\": 0\n  },\n  \"savant\": {\n    \"details_rows\": 0,\n    \"game_logs\": 0,\n    \"grouped_rows\": 0,\n    \"players\": 0,\n    \"source_files\": 0,\n    \"source_snapshot_ids\": [],\n    \"unresolved\": 0\n  },\n  \"script\": \"data-migration/scripts/ingest_mlb_player_context_raw_to_typed.py\",\n  \"skip_player_context\": false,\n  \"skip_savant\": false,\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    }
+  ],
+  "version": "1.0.0"
+}

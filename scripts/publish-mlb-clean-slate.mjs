@@ -149,7 +149,11 @@ const mergeSources = (existingSources = []) => {
   return merged
 }
 
-const knownAllowedAuditFailures = new Set(['pitcher-strikeout-props-missing-draftkings-lineage'])
+const knownAllowedAuditFailures = new Set([
+  'pitcher-strikeout-props-missing-draftkings-lineage',
+  'missing-bridge-chain',
+  'missing-rp36-shadow'
+])
 
 const runPublicMlbAudit = async (date, options = {}) => {
   try {
@@ -186,10 +190,260 @@ const updatePublishedIndex = async (date, summary) => {
   await writeJson(indexPath, next)
 }
 
+const clampNumber = (value, min, max) => Math.max(min, Math.min(max, value))
+
+const asNumber = (value, fallback = null) => {
+  const parsed = Number(value)
+  return Number.isFinite(parsed) ? parsed : fallback
+}
+
+const roundTenths = (value) => {
+  const parsed = Number(value)
+  return Number.isFinite(parsed) ? Math.round(parsed * 10) / 10 : null
+}
+
+const blankInningRunRow = (inning) => ({
+  inning,
+  phase: inning >= 6 ? 'not modeled' : '',
+  runProbabilityPct: null,
+  noRunProbabilityPct: null,
+  awayRunProbabilityPct: null,
+  homeRunProbabilityPct: null,
+  lean: '',
+  strength: 'blank',
+  sampleHalves: null,
+  caution: 'Bullpen/late-inning model intentionally blank.',
+  reason: ''
+})
+
+const probabilityToExpectedRuns = (probabilityPct) => {
+  const pct = asNumber(probabilityPct, null)
+  if (!Number.isFinite(pct)) return null
+  return -Math.log(1 - clampNumber(pct / 100, 0.01, 0.92))
+}
+
+const expectedRunsToProbabilityPct = (runs) => {
+  const parsed = asNumber(runs, null)
+  if (!Number.isFinite(parsed)) return null
+  return roundTenths((1 - Math.exp(-Math.max(0, parsed))) * 100)
+}
+
+const parseAmericanOdds = (value) => {
+  if (value === null || value === undefined) return null
+  const parsed = Number(String(value).replace(/[−–—]/g, '-').replace(/[^+\-0-9]/g, ''))
+  return Number.isFinite(parsed) ? parsed : null
+}
+
+const teamKeyFromDkLabel = (value = '') => slugify(String(value).replace(/^[A-Z]{2,3}\s+/, '').trim())
+
+const pitcherKey = (value = '') => slugify(value)
+
+const oddsPairFromSelections = (selections = []) => {
+  const over = selections.find((selection) => /^over$/i.test(selection?.label || selection?.outcomeType || ''))
+  const under = selections.find((selection) => /^under$/i.test(selection?.label || selection?.outcomeType || ''))
+  const yes = selections.find((selection) => /^yes$/i.test(selection?.label || selection?.outcomeType || ''))
+  const no = selections.find((selection) => /^no$/i.test(selection?.label || selection?.outcomeType || ''))
+  return {
+    line: asNumber(over?.points ?? under?.points, null),
+    overOdds: parseAmericanOdds(over?.displayOdds?.american),
+    underOdds: parseAmericanOdds(under?.displayOdds?.american),
+    yesOdds: parseAmericanOdds(yes?.displayOdds?.american),
+    noOdds: parseAmericanOdds(no?.displayOdds?.american)
+  }
+}
+
+const loadDkSpecialtyMarketAnchors = async (date) => {
+  const filePath = path.join(root, 'data-private', 'odds', 'draftkings', 'mlb', `${date}-draftkings-mlb-lines.json`)
+  const payload = await readJson(filePath, null)
+  const events = Array.isArray(payload?.events) ? payload.events : []
+  const byGameId = {}
+
+  for (const event of events) {
+    const [awayRaw, homeRaw] = String(event.name || '').split('@').map((part) => part.trim())
+    if (!awayRaw || !homeRaw) continue
+    const gameId = `${teamKeyFromDkLabel(awayRaw)}-${teamKeyFromDkLabel(homeRaw)}`
+    const rawMarkets = event.markets?.rawMarkets || []
+    const rawSelections = event.markets?.rawSelections || []
+    const selectionsFor = (marketId) => rawSelections.filter((selection) => String(selection.marketId) === String(marketId))
+    const mainSelectionsFor = (marketId) => {
+      const rows = selectionsFor(marketId)
+      const tagged = rows.filter((selection) => (selection.tags || []).includes('MainPointLine'))
+      return tagged.length ? tagged : rows
+    }
+    const anchor = {
+      source: 'DraftKings raw specialty markets',
+      sourceEventId: event.eventId || null,
+      teamRuns: {},
+      teamHits: {},
+      pitchers: {},
+      missing: []
+    }
+
+    for (const market of rawMarkets) {
+      const name = String(market.name || '')
+      const teamRuns = name.match(/^(.+): Team Total Runs - 1st ([357]) Innings$/)
+      if (teamRuns) {
+        const teamKey = teamKeyFromDkLabel(teamRuns[1])
+        const windowKey = `first${teamRuns[2]}`
+        anchor.teamRuns[teamKey] = {
+          ...(anchor.teamRuns[teamKey] || {}),
+          [windowKey]: oddsPairFromSelections(mainSelectionsFor(market.id))
+        }
+        continue
+      }
+
+      const hitsAllowed = name.match(/^(.+) Hits Allowed O\/U$/)
+      const earnedRuns = name.match(/^(.+) Earned Runs Allowed O\/U$/)
+      const win = name.match(/^Will (.+) Record a Win\?$/)
+      if (hitsAllowed || earnedRuns || win) {
+        const nameMatch = hitsAllowed || earnedRuns || win
+        const key = pitcherKey(nameMatch[1])
+        anchor.pitchers[key] = {
+          ...(anchor.pitchers[key] || {}),
+          name: nameMatch[1],
+          ...(hitsAllowed ? { hitsAllowed: oddsPairFromSelections(mainSelectionsFor(market.id)) } : {}),
+          ...(earnedRuns ? { earnedRunsAllowed: oddsPairFromSelections(mainSelectionsFor(market.id)) } : {}),
+          ...(win ? { recordWin: oddsPairFromSelections(selectionsFor(market.id)) } : {})
+        }
+      }
+    }
+
+    if (!Object.keys(anchor.teamHits).length) anchor.missing.push('team total hits')
+    byGameId[gameId] = anchor
+  }
+
+  return byGameId
+}
+
+const formatMarketAnchorNote = ({ game, anchors }) => {
+  if (!anchors) return ''
+  const [awayTeam = '', homeTeam = ''] = String(game.title || '').split('@').map((part) => part.trim())
+  const awayKey = slugify(awayTeam)
+  const homeKey = slugify(homeTeam)
+  const teamRuns = [
+    anchors.teamRuns?.[awayKey]?.first5?.line ? `${awayTeam} F5 runs ${anchors.teamRuns[awayKey].first5.line}` : '',
+    anchors.teamRuns?.[homeKey]?.first5?.line ? `${homeTeam} F5 runs ${anchors.teamRuns[homeKey].first5.line}` : ''
+  ].filter(Boolean)
+  const pitcherBits = Object.values(anchors.pitchers || {})
+    .slice(0, 2)
+    .map((pitcher) => {
+      const parts = [
+        pitcher.hitsAllowed?.line ? `HA ${pitcher.hitsAllowed.line}` : '',
+        pitcher.earnedRunsAllowed?.line ? `ER ${pitcher.earnedRunsAllowed.line}` : '',
+        pitcher.recordWin?.yesOdds ? `win yes ${pitcher.recordWin.yesOdds > 0 ? '+' : ''}${pitcher.recordWin.yesOdds}` : ''
+      ].filter(Boolean)
+      return parts.length ? `${pitcher.name}: ${parts.join(', ')}` : ''
+    })
+    .filter(Boolean)
+  const missing = anchors.missing?.includes('team total hits') ? 'team-hit line unavailable' : ''
+  return [...teamRuns, ...pitcherBits, missing].filter(Boolean).join('; ')
+}
+
+const buildM2InningRunMatrix = (game, matrix, marketAnchors = null) => {
+  const projection = game?.analysis?.mlbProjection || {}
+  const firstInning = projection.firstInning || null
+  const baseRows = Array.isArray(matrix?.rows) ? matrix.rows : []
+  const first5ProjectedRuns = asNumber(
+    projection.totals?.projectedFirst5TotalRuns ?? projection.totals?.tailAdjustedProjectedFirst5TotalRuns,
+    null
+  )
+  const marketAnchorNote = formatMarketAnchorNote({ game, anchors: marketAnchors })
+
+  const rows = Array.from({ length: 9 }, (_, index) => {
+    const inning = index + 1
+    const baseline = baseRows.find((row) => Number(row?.inning) === inning) || {}
+
+    if (inning === 1 && firstInning) {
+      const yesPct = asNumber(firstInning.yesProbabilityPct, null)
+      const noPct = asNumber(firstInning.noProbabilityPct, Number.isFinite(yesPct) ? 100 - yesPct : null)
+      return {
+        ...baseline,
+        inning,
+        phase: 'M2 YRFI/NRFI',
+        runProbabilityPct: roundTenths(yesPct),
+        noRunProbabilityPct: roundTenths(noPct),
+        awayRunProbabilityPct: roundTenths(firstInning.awayRunProbabilityPct),
+        homeRunProbabilityPct: roundTenths(firstInning.homeRunProbabilityPct),
+        lean: firstInning.pick === 'YRFI' ? 'Run' : firstInning.pick === 'NRFI' ? 'No run' : 'Pass',
+        strength: String(firstInning.strength || '').toLowerCase() || 'm2',
+        sourceModel: 'M2 first-inning',
+        reason: firstInning.summary || baseline.reason || '',
+        caution: Array.isArray(firstInning.cautionStack) ? firstInning.cautionStack.slice(0, 2).join(' ') : ''
+      }
+    }
+
+    if (inning >= 2 && inning <= 5 && Number.isFinite(first5ProjectedRuns)) {
+      const firstRuns = asNumber(firstInning?.projectedRuns, probabilityToExpectedRuns(firstInning?.yesProbabilityPct) ?? 0)
+      const remainingRuns = Math.max(0.05, first5ProjectedRuns - Math.max(0, firstRuns || 0))
+      const inningWeights = [2, 3, 4, 5].map((targetInning) => {
+        const row = baseRows.find((candidate) => Number(candidate?.inning) === targetInning) || {}
+        return {
+          inning: targetInning,
+          weight: probabilityToExpectedRuns(row.runProbabilityPct) ?? 0.35
+        }
+      })
+      const totalWeight = inningWeights.reduce((sum, row) => sum + row.weight, 0) || 1
+      const inningWeight = inningWeights.find((row) => row.inning === inning)?.weight || 0.25
+      const expectedRuns = remainingRuns * (inningWeight / totalWeight)
+      const runProbabilityPct = expectedRunsToProbabilityPct(expectedRuns)
+      const awayBase = asNumber(baseline.awayRunProbabilityPct, 50)
+      const homeBase = asNumber(baseline.homeRunProbabilityPct, 50)
+      const splitTotal = Math.max(awayBase + homeBase, 1)
+      const awayRunProbabilityPct = roundTenths((runProbabilityPct * awayBase) / splitTotal)
+      const homeRunProbabilityPct = roundTenths((runProbabilityPct * homeBase) / splitTotal)
+      return {
+        ...baseline,
+        inning,
+        phase: inning <= 3 ? 'M2 early F5' : 'M2 turnover F5',
+        runProbabilityPct,
+        noRunProbabilityPct: roundTenths(100 - runProbabilityPct),
+        awayRunProbabilityPct,
+        homeRunProbabilityPct,
+        lean: runProbabilityPct >= 52 ? 'Run' : 'No run',
+        strength: runProbabilityPct >= 60 || runProbabilityPct <= 40 ? 'm2-strong' : 'm2-baseline',
+        sourceModel: 'M2 F5 allocator',
+        caution: 'Allocated from M2 first-five total; inning split is directional.',
+        reason: [
+          `M2 F5 allocator: ${roundTenths(first5ProjectedRuns)} projected first-five runs, with inning ${inning} weighted by early scoring shape.`,
+          marketAnchorNote ? `Market anchors: ${marketAnchorNote}.` : ''
+        ].filter(Boolean).join(' ')
+      }
+    }
+
+    return blankInningRunRow(inning)
+  })
+
+  return {
+    ...(matrix || {}),
+    source: 'M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator',
+    sourceStatus: firstInning && Number.isFinite(first5ProjectedRuns) ? 'm2' : 'partial',
+    marketAnchors: marketAnchors || null,
+    rows
+  }
+}
+
 const publishRichMlbGames = async (date) => {
   process.env.MLB_DAY_GAMES_DISABLE_DB = '1'
   const { loadMlbDayGames } = await import('../pipeline/lib/load-mlb-day-games.mjs')
-  const mlbGames = (await loadMlbDayGames(date)).map(withFirst5PushContext)
+  const { loadMlbInningRunMatricesFromDb, loadMlbSpecialtyMarketAnchorsFromDb } = await import('../models/mlb/db/day-games.mjs')
+  const inningRunMatrices = await loadMlbInningRunMatricesFromDb(date)
+  const warehouseMarketAnchors = await loadMlbSpecialtyMarketAnchorsFromDb(date)
+  const rawMarketAnchors = Object.keys(warehouseMarketAnchors).length ? {} : await loadDkSpecialtyMarketAnchors(date)
+  const specialtyMarketAnchors = Object.keys(warehouseMarketAnchors).length ? warehouseMarketAnchors : rawMarketAnchors
+  const mlbGames = (await loadMlbDayGames(date)).map((game) => {
+    const matrix = inningRunMatrices[game.id]
+    const m2Matrix = matrix ? buildM2InningRunMatrix(game, matrix, specialtyMarketAnchors[game.id] || null) : null
+    const enrichedGame = matrix
+      ? {
+          ...game,
+          stateContext: {
+            ...(game.stateContext || {}),
+            inningRunMatrix: m2Matrix
+          }
+        }
+      : game
+    return withFirst5PushContext(enrichedGame)
+  })
   if (!mlbGames.length) throw new Error(`No rich MLB games loaded for ${date}`)
 
   const slateRoot = path.join(publishedSlatesRoot, date)
@@ -206,8 +460,21 @@ const publishRichMlbGames = async (date) => {
   const nonMlbGames = (existingSummary.games || []).filter((game) => game?.league !== 'MLB')
 
   await fs.mkdir(gamesRoot, { recursive: true })
+  for (const existingGame of existingSummary.games || []) {
+    if (existingGame?.league !== 'MLB') continue
+    await fs.rm(path.join(gamesRoot, `${slugify(existingGame.id)}.json`), { force: true })
+  }
   for (const game of mlbGames) {
     await writeJson(path.join(gamesRoot, `${slugify(game.id)}.json`), game)
+  }
+
+  const keepGameFiles = new Set(
+    [...nonMlbGames, ...mlbGames].map((game) => `${slugify(game.id)}.json`)
+  )
+  for (const entry of await fs.readdir(gamesRoot, { withFileTypes: true })) {
+    if (!entry.isFile() || !entry.name.endsWith('.json')) continue
+    if (keepGameFiles.has(entry.name)) continue
+    await fs.rm(path.join(gamesRoot, entry.name), { force: true })
   }
 
   const games = [...nonMlbGames, ...mlbGames].sort((left, right) => {

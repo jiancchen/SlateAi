@@ -1,15 +1,15 @@
 # MLB Offline Veto Engine
 
-This pass uses graded MLB moneyline data from `2026-05-10` through `2026-05-31` (`293` rows across `22` slate days) to turn the new chaos labels into **research-only veto logic**. The goal is not broader pick tuning; it is to identify when the board should have stopped itself.
+This pass uses graded MLB moneyline data from `2026-05-10` through `2026-06-07` (`383` rows across `29` slate days) to turn the new chaos labels into **research-only veto logic**. The goal is not broader pick tuning; it is to identify when the board should have stopped itself.
 
 ## Selected Negative Flags
 
 | Flag | Games | Hit rate |
 | --- | --- | --- |
-| heavy_favorite_weak_lineup | 9 | 0.333 |
-| heavy_favorite_noisy_bullpen | 20 | 0.450 |
-| dead_early_risk | 56 | 0.518 |
-| cluster_bullpen_trap | 45 | 0.622 |
+| heavy_favorite_weak_lineup | 8 | 0.375 |
+| heavy_favorite_noisy_bullpen | 19 | 0.632 |
+| dead_early_risk | 57 | 0.544 |
+| cluster_bullpen_trap | 49 | 0.551 |
 
 ## Label-Specific Failure Modeling
 
@@ -17,18 +17,18 @@ This pass uses graded MLB moneyline data from `2026-05-10` through `2026-05-31` 
 
 | Rule | Games | Precision | Recall |
 | --- | --- | --- | --- |
-| Starter command <= 24 | 36 | 0.111 | 0.182 |
-| Starter command <= 24 + scoreless first 3 >= 50% | 14 | 0.071 | 0.045 |
-| Starter command <= 24 + lineup idx <= 40 | 23 | 0.087 | 0.091 |
-| Starter command <= 24 + bullpen chaos >= 45 | 27 | 0.111 | 0.136 |
+| Starter command <= 24 | 71 | 0.056 | 0.118 |
+| Starter command <= 24 + scoreless first 3 >= 50% | 23 | 0.043 | 0.029 |
+| Starter command <= 24 + lineup idx <= 40 | 33 | 0.061 | 0.059 |
+| Starter command <= 24 + bullpen chaos >= 45 | 49 | 0.041 | 0.059 |
 
 ### Dead Early Loss
 
 | Rule | Games | Precision | Recall |
 | --- | --- | --- | --- |
-| Lineup idx <= 35 | 117 | 0.171 | 0.392 |
-| Lineup idx <= 35 + scoreless first 3 >= 50% | 66 | 0.136 | 0.176 |
-| Lineup idx <= 35 + dead-bat traffic >= 30% | 56 | 0.179 | 0.196 |
+| Lineup idx <= 35 | 142 | 0.099 | 0.280 |
+| Lineup idx <= 35 + scoreless first 3 >= 50% | 88 | 0.091 | 0.160 |
+| Lineup idx <= 35 + dead-bat traffic >= 30% | 57 | 0.105 | 0.120 |
 | Lineup idx <= 35 + traffic-no-conversion >= 35% | 0 | 0.000 | 0.000 |
 
 ## Market Veto Checks
@@ -37,43 +37,43 @@ This pass uses graded MLB moneyline data from `2026-05-10` through `2026-05-31` 
 
 | Rule | Games | Precision | Recall |
 | --- | --- | --- | --- |
-| Heavy favorite baseline | 59 | 0.407 | 1.000 |
-| Heavy favorite + lineup idx <= 25 | 9 | 0.667 | 0.250 |
-| Heavy favorite + bullpen chaos >= 50 | 20 | 0.550 | 0.458 |
-| Heavy favorite + selected negative flag | 35 | 0.486 | 0.708 |
+| Heavy favorite baseline | 54 | 0.352 | 1.000 |
+| Heavy favorite + lineup idx <= 25 | 8 | 0.625 | 0.263 |
+| Heavy favorite + bullpen chaos >= 50 | 19 | 0.368 | 0.368 |
+| Heavy favorite + selected negative flag | 32 | 0.406 | 0.684 |
 
 ### Protected Market Dog Lane
 
 | Rule | Games | Precision | Recall |
 | --- | --- | --- | --- |
-| Market dog baseline | 79 | 0.519 | 1.000 |
-| Dog + opponent chaos gap >= 8 | 21 | 0.762 | 0.390 |
-| Dog + opponent snapback gap >= 10 | 35 | 0.543 | 0.463 |
-| Dog + opponent bullpen gap >= 8 | 22 | 0.591 | 0.317 |
+| Market dog baseline | 94 | 0.543 | 1.000 |
+| Dog + opponent chaos gap >= 8 | 24 | 0.833 | 0.392 |
+| Dog + opponent snapback gap >= 10 | 40 | 0.625 | 0.490 |
+| Dog + opponent bullpen gap >= 8 | 22 | 0.591 | 0.255 |
 
 ## Combined Offline Engine
 
 | Bucket | Games | Baseline hit | Vetoed | Veto hit | Kept | Kept hit |
 | --- | --- | --- | --- | --- | --- | --- |
-| All picks | 293 | 0.580 | 114 | 0.553 | 179 | 0.598 |
-| 8+ edge | 90 | 0.633 | 34 | 0.618 | 56 | 0.643 |
-| 60+ confidence | 95 | 0.632 | 41 | 0.585 | 54 | 0.667 |
-| 8+ edge and 60+ confidence | 55 | 0.655 | 24 | 0.583 | 31 | 0.710 |
+| All picks | 383 | 0.564 | 121 | 0.562 | 262 | 0.565 |
+| 8+ edge | 52 | 0.596 | 17 | 0.647 | 35 | 0.571 |
+| 60+ confidence | 53 | 0.604 | 19 | 0.684 | 34 | 0.559 |
+| 8+ edge and 60+ confidence | 35 | 0.629 | 14 | 0.714 | 21 | 0.571 |
 
 ### 8+ Edge By Split
 
 | Split | Games | Baseline hit | Vetoed | Veto hit | Kept | Kept hit |
 | --- | --- | --- | --- | --- | --- | --- |
-| current | 67 | 0.672 | 23 | 0.652 | 44 | 0.682 |
-| reserve | 23 | 0.522 | 11 | 0.545 | 12 | 0.500 |
+| current | 52 | 0.596 | 17 | 0.647 | 35 | 0.571 |
+| reserve | 0 | 0.000 | 0 | 0.000 | 0 | 0.000 |
 
 ### Protected Dog Performance
 
 | Bucket | Games | Hit rate |
 | --- | --- | --- |
-| All market dogs | 79 | 0.519 |
-| Protected dog lane | 21 | 0.762 |
-| Other market dogs | 58 | 0.431 |
+| All market dogs | 94 | 0.543 |
+| Protected dog lane | 24 | 0.833 |
+| Other market dogs | 70 | 0.443 |
 
 ## Read
 

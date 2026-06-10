@@ -45,6 +45,9 @@ const fullTeamNames = {
 }
 
 const propThresholdByType = {
+  hitRunRbi: 1.5,
+  hitsRunsRbis: 1.5,
+  runs: 0.5,
   rbi: 0.5,
   totalBases: 1.5,
   hits: 1.5,

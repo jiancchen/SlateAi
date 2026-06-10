@@ -15,8 +15,8 @@ This is not asking “who wins more often.” It is asking:
 | Split | Picks | Hit rate | Flat-unit ROI |
 | --- | --- | --- | --- |
 | Reserve (05-10 to 05-15) | 75 | 0.653 | 0.202 |
-| Current (05-16 to 05-22) | 93 | 0.581 | 0.062 |
-| Combined | 168 | 0.613 | 0.124 |
+| Current (05-16 to 05-22) | 93 | 0.613 | 0.148 |
+| Combined | 168 | 0.631 | 0.172 |
 
 ## Price Buckets
 
@@ -35,40 +35,40 @@ This is not asking “who wins more often.” It is asking:
 
 | Market price bucket | Picks | Hit rate | Flat-unit ROI |
 | --- | --- | --- | --- |
-| <45% | 6 | 1.0 | 1.332 |
-| 45-49.9% | 10 | 0.4 | -0.144 |
-| 50-54.9% | 30 | 0.6 | 0.077 |
+| <45% | 8 | 0.875 | 1.087 |
+| 45-49.9% | 10 | 0.5 | 0.066 |
+| 50-54.9% | 28 | 0.679 | 0.287 |
 | 55-59.9% | 29 | 0.552 | -0.036 |
-| 60-64.9% | 16 | 0.5 | -0.194 |
-| 65%+ | 2 | 1.0 | 0.513 |
+| 60-64.9% | 15 | 0.533 | -0.14 |
+| 65%+ | 1 | 1.0 | 0.515 |
 
 ### Combined
 
 | Market price bucket | Picks | Hit rate | Flat-unit ROI |
 | --- | --- | --- | --- |
-| <45% | 12 | 0.917 | 1.141 |
-| 45-49.9% | 23 | 0.522 | 0.099 |
-| 50-54.9% | 47 | 0.596 | 0.089 |
+| <45% | 14 | 0.857 | 1.029 |
+| 45-49.9% | 23 | 0.565 | 0.19 |
+| 50-54.9% | 45 | 0.644 | 0.22 |
 | 55-59.9% | 49 | 0.612 | 0.071 |
-| 60-64.9% | 30 | 0.533 | -0.142 |
-| 65%+ | 7 | 0.857 | 0.214 |
+| 60-64.9% | 29 | 0.552 | -0.113 |
+| 65%+ | 6 | 0.833 | 0.165 |
 
 ## Candidate Market Lanes
 
 | Lane | Reserve n | Reserve hit | Reserve ROI | Current n | Current hit | Current ROI | Combined n | Combined hit | Combined ROI |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Moderate favorite clean | 19 | 0.632 | 0.097 | 28 | 0.607 | 0.059 | 47 | 0.617 | 0.075 |
-| Heavy favorite danger | 4 | 0.75 | 0.101 | 4 | 0.5 | -0.244 | 8 | 0.625 | -0.071 |
-| Market underdog bets | 23 | 0.652 | 0.403 | 22 | 0.591 | 0.297 | 45 | 0.622 | 0.351 |
-| 70+ confidence | 8 | 0.625 | -0.036 | 9 | 0.667 | 0.119 | 17 | 0.647 | 0.046 |
+| Moderate favorite clean | 19 | 0.632 | 0.097 | 19 | 0.684 | 0.192 | 38 | 0.658 | 0.145 |
+| Heavy favorite danger | 4 | 0.75 | 0.101 | 0 | 0.0 | n/a | 4 | 0.75 | 0.101 |
+| Market underdog bets | 23 | 0.652 | 0.403 | 24 | 0.667 | 0.473 | 47 | 0.66 | 0.438 |
+| 70+ confidence | 8 | 0.625 | -0.036 | 5 | 0.6 | 0.005 | 13 | 0.615 | -0.02 |
 | 70+ confidence market dogs | 0 | 0.0 | n/a | 0 | 0.0 | n/a | 0 | 0.0 | n/a |
 
 ## High-Confidence Context
 
 `70+` confidence combined:
-- picks: `17`
-- hit rate: `0.647`
-- flat-unit ROI: `0.046`
+- picks: `13`
+- hit rate: `0.615`
+- flat-unit ROI: `-0.02`
 
 ## Read
 

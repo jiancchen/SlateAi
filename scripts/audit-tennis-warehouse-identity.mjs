@@ -30,6 +30,15 @@ const isSportsbookBacked = (game) => {
   return /draftkings|fanduel|robinhood|sportsbook|prediction market/i.test(text)
 }
 
+const isMarketOnlyRow = (game) => {
+  const text = [
+    ...(game?.tags || []),
+    game?.analysis?.tier,
+    game?.lean
+  ].filter(Boolean).join(' ')
+  return /market only|no model edge/i.test(text)
+}
+
 const hasRecentRows = (warehouseStats) => {
   const recent = warehouseStats?.recentFormMetrics?.matches || warehouseStats?.recentMatches || []
   return Array.isArray(recent) && recent.length > 0
@@ -66,7 +75,7 @@ const audit = async ({ date, allowPartialMarketContext }) => {
     for (const participant of game.tennisContext?.players || []) {
       playerCount += 1
       const stats = participant?.warehouseStats
-      const marketContextAllowed = allowPartialMarketContext && isSportsbookBacked(game) && Boolean(stats)
+      const marketContextAllowed = allowPartialMarketContext && isSportsbookBacked(game) && (Boolean(stats) || isMarketOnlyRow(game))
       const profile = stats?.profile || stats?.playerProfile || null
       const rank = profile?.rank ?? profile?.currentRanking ?? profile?.current_ranking ?? stats?.ranking?.rank ?? participant?.rank ?? null
       const row = {

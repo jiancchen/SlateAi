@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Brewers",
-      "detail": "Shane Drohan (LHP) | 2-1 | 2.87 ERA | 33 SO | 1.15 WHIP | 31.1 IP"
+      "detail": "Shane Drohan (LHP) | 3-1 | 3.11 ERA | 37 SO | 1.12 WHIP | 37.2 IP"
     },
     {
       "side": "Home",
       "name": "Rockies",
-      "detail": "Kyle Freeland (LHP) | 1-6 | 8.06 ERA | 43 SO | 1.71 WHIP | 48.0 IP"
+      "detail": "Kyle Freeland (LHP) | 1-6 | 7.81 ERA | 45 SO | 1.70 WHIP | 53.0 IP"
     }
   ],
   "summary": "Brewers @ Rockies with Shane Drohan against Kyle Freeland.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Brewers -191 / Rockies +157 | o11.5 -112 / u11.5 -108 | Brewers -1.5 -126 / Rockies +1.5 +105 | F5 Brewers -166 / Rockies +130 / o6.5 +105 / u6.5 -135.",
+    "Current board: Brewers -186 / Rockies +153 | o11.5 -111 / u11.5 -108 | Brewers -1.5 -126 / Rockies +1.5 +105 | F5 Brewers -160 / Rockies +124 / o6.5 +110 / u6.5 -140.",
     "Shane Drohan vs Kyle Freeland."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -36,19 +36,19 @@
       "divisionRank": "1",
       "gamesBack": "-",
       "losses": 23,
-      "runDifferential": 97,
-      "streakCode": "W2",
-      "winningPercentage": ".629",
-      "wins": 39
+      "runDifferential": 106,
+      "streakCode": "W4",
+      "winningPercentage": ".641",
+      "wins": 41
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "5",
       "gamesBack": "18.0",
-      "losses": 41,
-      "runDifferential": -91,
-      "streakCode": "L3",
-      "winningPercentage": ".369",
+      "losses": 42,
+      "runDifferential": -99,
+      "streakCode": "L4",
+      "winningPercentage": ".364",
       "wins": 24
     }
   },
@@ -268,23 +268,23 @@
     "pitcherStrikeoutMarket": {
       "away": {
         "playerName": "Shane Drohan",
-        "line": 3.5,
-        "overPrice": -162,
-        "underPrice": 127,
+        "line": 4.5,
+        "overPrice": 126,
+        "underPrice": -162,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "home": {
         "playerName": "Kyle Freeland",
         "line": 3.5,
         "overPrice": -116,
-        "underPrice": -110,
+        "underPrice": 101,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -479,6 +479,259 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 823783,
+          "date": "2026-05-27",
+          "opponent": "Cardinals",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 2,
+          "runsAgainst": 1,
+          "starters": {
+            "team": {
+              "pitcherId": 694477,
+              "pitcherName": "Chad Patrick",
+              "teamName": "Milwaukee Brewers",
+              "opponentName": "St. Louis Cardinals",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 669160,
+              "pitcherName": "Dustin May",
+              "teamName": "St. Louis Cardinals",
+              "opponentName": "Milwaukee Brewers",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Short",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "Rescued",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 2
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 824191,
+          "date": "2026-05-29",
+          "opponent": "Astros",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 5,
+          "runsAgainst": 4,
+          "starters": {
+            "team": {
+              "pitcherId": 689441,
+              "pitcherName": "Coleman Crow",
+              "teamName": "Milwaukee Brewers",
+              "opponentName": "Houston Astros",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 678906,
+              "pitcherName": "Kai-Wei Teng",
+              "teamName": "Houston Astros",
+              "opponentName": "Milwaukee Brewers",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Short",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "Rescued",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 1
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 2
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 1
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            },
+            {
+              "inning": 10,
+              "runs": 1
+            }
+          ]
+        },
+        {
+          "gamePk": 824190,
+          "date": "2026-05-30",
+          "opponent": "Astros",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 2,
+          "runsAgainst": 9,
+          "starters": {
+            "team": {
+              "pitcherId": 687075,
+              "pitcherName": "Brandon Sproat",
+              "teamName": "Milwaukee Brewers",
+              "opponentName": "Houston Astros",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 663567,
+              "pitcherName": "Peter Lambert",
+              "teamName": "Houston Astros",
+              "opponentName": "Milwaukee Brewers",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Fav failed",
+              "tone": "negative"
+            },
+            "hitters": {
+              "label": "Mixed",
+              "tone": "info"
+            },
+            "starter": {
+              "label": "Cracked",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 1
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 1
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 824187,
           "date": "2026-05-31",
@@ -678,7 +931,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 2,
@@ -702,11 +955,11 @@
             },
             {
               "inning": 7,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 8,
-              "runs": 8
+              "runs": 4
             },
             {
               "inning": 9,
@@ -844,7 +1097,7 @@
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
@@ -860,7 +1113,7 @@
             },
             {
               "inning": 5,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 6,
@@ -868,15 +1121,15 @@
             },
             {
               "inning": 7,
-              "runs": 4
-            },
-            {
-              "inning": 8,
               "runs": 2
             },
             {
+              "inning": 8,
+              "runs": 1
+            },
+            {
               "inning": 9,
-              "runs": 6
+              "runs": 3
             }
           ]
         },
@@ -1024,6 +1277,172 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 823949,
+          "date": "2026-05-26",
+          "opponent": "Dodgers",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 6,
+          "runsAgainst": 15,
+          "starters": {
+            "team": {
+              "pitcherId": 607536,
+              "pitcherName": "Kyle Freeland",
+              "teamName": "Colorado Rockies",
+              "opponentName": "Los Angeles Dodgers",
+              "firstInningRunsAllowed": 2,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 641778,
+              "pitcherName": "Eric Lauer",
+              "teamName": "Los Angeles Dodgers",
+              "opponentName": "Colorado Rockies",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Cracked",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 5
+            }
+          ]
+        },
+        {
+          "gamePk": 823947,
+          "date": "2026-05-27",
+          "opponent": "Dodgers",
+          "venueRole": "road",
+          "result": "L",
+          "runsFor": 1,
+          "runsAgainst": 4,
+          "starters": {
+            "team": {
+              "pitcherId": 608372,
+              "pitcherName": "Tomoyuki Sugano",
+              "teamName": "Colorado Rockies",
+              "opponentName": "Los Angeles Dodgers",
+              "firstInningRunsAllowed": 2,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 660271,
+              "pitcherName": "Shohei Ohtani",
+              "teamName": "Los Angeles Dodgers",
+              "opponentName": "Colorado Rockies",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Short",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 1
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 824353,
           "date": "2026-05-29",
@@ -1393,7 +1812,7 @@
             },
             {
               "inning": 2,
-              "runs": 6
+              "runs": 3
             },
             {
               "inning": 3,
@@ -1401,7 +1820,7 @@
             },
             {
               "inning": 4,
-              "runs": 10
+              "runs": 5
             },
             {
               "inning": 5,
@@ -1484,11 +1903,11 @@
             },
             {
               "inning": 4,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 5,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 6,
@@ -1500,7 +1919,7 @@
             },
             {
               "inning": 8,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 9,
@@ -1942,11 +2361,247 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-824349",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 84,
+          "noRunProbabilityPct": 16,
+          "awayRunProbabilityPct": 72,
+          "homeRunProbabilityPct": 42.8,
+          "lean": "Run",
+          "strength": "strong",
+          "sampleHalves": 127,
+          "caution": "",
+          "reason": "YRFI with a 84% modeled chance of at least one first-inning run. Brewers score 72% of the time and Rockies 42.8% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 59.8,
+          "noRunProbabilityPct": 40.2,
+          "awayRunProbabilityPct": 34.5,
+          "homeRunProbabilityPct": 25.3,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 127,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.6 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Brewers F5 runs 3.5; Rockies F5 runs 2.5; Kyle Freeland: HA 6.5, ER 3.5, win yes +254; Shane Drohan: HA 4.5, ER 2.5, win yes +262; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 55.3,
+          "noRunProbabilityPct": 44.7,
+          "awayRunProbabilityPct": 31.2,
+          "homeRunProbabilityPct": 24.1,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 127,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.6 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Brewers F5 runs 3.5; Rockies F5 runs 2.5; Kyle Freeland: HA 6.5, ER 3.5, win yes +254; Shane Drohan: HA 4.5, ER 2.5, win yes +262; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 72.7,
+          "noRunProbabilityPct": 27.3,
+          "awayRunProbabilityPct": 35.3,
+          "homeRunProbabilityPct": 37.4,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 127,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.6 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Brewers F5 runs 3.5; Rockies F5 runs 2.5; Kyle Freeland: HA 6.5, ER 3.5, win yes +254; Shane Drohan: HA 4.5, ER 2.5, win yes +262; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 62.8,
+          "noRunProbabilityPct": 37.2,
+          "awayRunProbabilityPct": 33.9,
+          "homeRunProbabilityPct": 28.9,
+          "lean": "Run",
+          "strength": "m2-strong",
+          "sampleHalves": 127,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 5.6 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Brewers F5 runs 3.5; Rockies F5 runs 2.5; Kyle Freeland: HA 6.5, ER 3.5, win yes +254; Shane Drohan: HA 4.5, ER 2.5, win yes +262; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Brewers @ Rockies",
+      "mlbGamePk": 824349,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "rockies": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "brewers": {
+            "first3": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 3.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 4.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "kyle-freeland": {
+            "name": "Kyle Freeland",
+            "earnedRunsAllowed": {
+              "line": 3.5,
+              "overOdds": -121,
+              "underOdds": -109,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 6.5,
+              "overOdds": -157,
+              "underOdds": 118,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 254,
+              "noOdds": -357
+            }
+          },
+          "shane-drohan": {
+            "name": "Shane Drohan",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": 129,
+              "underOdds": -172,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 4.5,
+              "overOdds": -112,
+              "underOdds": -118,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 262,
+              "noOdds": -381
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "Brewers": {
-      "averageMatchupGrade": 4.96,
+      "averageMatchupGrade": 5,
       "trackedBatters": 9,
       "starterThreatCount": 7,
       "contactCount": 2,
@@ -1958,7 +2613,7 @@
       "switchCount": 2,
       "topThirdSplitCount": 2,
       "topThirdArsenalCount": 3,
-      "heaterCount": 4,
+      "heaterCount": 3,
       "suppressorCount": 2,
       "platoonPressureIndex": 94,
       "pitchTypePressureIndex": 94,
@@ -1966,41 +2621,41 @@
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
       "topThirdScore": 83.9,
-      "depthScore": 58.2,
+      "depthScore": 46.4,
       "bullpenOverperformHitters": []
     },
     "Rockies": {
-      "averageMatchupGrade": 0.54,
+      "averageMatchupGrade": -1.3,
       "trackedBatters": 9,
-      "starterThreatCount": 4,
-      "contactCount": 3,
+      "starterThreatCount": 3,
+      "contactCount": 2,
       "powerCount": 1,
-      "platoonCount": 7,
+      "platoonCount": 6,
       "pitchTypeEdgeCount": 1,
-      "oppositeHandCount": 7,
-      "sameHandCount": 2,
+      "oppositeHandCount": 6,
+      "sameHandCount": 3,
       "switchCount": 1,
       "topThirdSplitCount": 2,
       "topThirdArsenalCount": 1,
-      "heaterCount": 4,
+      "heaterCount": 3,
       "suppressorCount": 2,
-      "platoonPressureIndex": 87.4,
-      "pitchTypePressureIndex": 47.5,
+      "platoonPressureIndex": 73,
+      "pitchTypePressureIndex": 43.7,
       "bullpenPitchTypePressureIndex": null,
-      "starterPressureIndex": 68.9,
-      "overallPressureIndex": 68.9,
-      "topThirdScore": 64.8,
-      "depthScore": 28.9,
+      "starterPressureIndex": 32,
+      "overallPressureIndex": 32,
+      "topThirdScore": 39.5,
+      "depthScore": 18,
       "bullpenOverperformHitters": []
     }
   },
   "lineupBoard": {
     "gameId": "brewers-rockies",
     "title": "Brewers @ Rockies",
-    "snapshot": "2026-06-07T15:20:45.581Z",
+    "snapshot": "2026-06-07T16:39:59.690Z",
     "status": {
-      "away": "partial",
-      "home": "partial"
+      "away": "posted",
+      "home": "posted"
     },
     "weather": {
       "icon": "partly-cloudy-day",
@@ -2012,13 +2667,13 @@
       "label": "93°F | Wind 6 mph L-R | 3% precip"
     },
     "marketWeatherContext": {
-      "line": "MIL -185",
+      "line": "MIL -186",
       "total": "11.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
       "teamName": "Brewers",
-      "lineupSource": "rotowire-supplement",
+      "lineupSource": "official-feed",
       "opposingStarter": {
         "id": 607536,
         "name": "Kyle Freeland",
@@ -2478,7 +3133,7 @@
           "playerId": 661388,
           "slot": 3,
           "name": "William Contreras",
-          "position": "C",
+          "position": "DH",
           "bats": "R",
           "savant": {
             "playerId": 661388,
@@ -2695,229 +3350,8 @@
           "matchupNote": "+3.06 vs Kyle Freeland"
         },
         {
-          "playerId": 596142,
-          "slot": 4,
-          "name": "Gary Sanchez",
-          "position": "DH",
-          "bats": "R",
-          "savant": {
-            "playerId": 596142,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/gary-sanchez-596142",
-            "statsSuffix": "r-hitting-mlb",
-            "season": 2026,
-            "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/gary-sanchez-596142?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/gary-sanchez-596142?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/gary-sanchez-596142?stats=gamelogs-r-hitting-mlb&season=2026"
-            }
-          },
-          "season": {
-            "gamesPlayed": 37,
-            "hits": 19,
-            "singles": 10,
-            "doubles": 3,
-            "triples": 1,
-            "homeRuns": 5,
-            "walks": 22,
-            "totalBases": 39,
-            "atBats": 97,
-            "plateAppearances": 121,
-            "avg": 0.196,
-            "obp": 0.355,
-            "slg": 0.402,
-            "ops": 0.757,
-            "hitRate": 0.157,
-            "singlesRate": 0.08259999999999999,
-            "hrRate": 0.041299999999999996,
-            "walkRate": 0.1818,
-            "totalBasesRate": 0.3223
-          },
-          "recent": {
-            "gamesPlayed": 8,
-            "hits": 2,
-            "singles": 2,
-            "doubles": 0,
-            "triples": 0,
-            "homeRuns": 0,
-            "walks": 2,
-            "totalBases": 2,
-            "atBats": 12,
-            "plateAppearances": 14,
-            "avg": 0.167,
-            "obp": 0.286,
-            "slg": 0.167,
-            "ops": 0.452,
-            "hitRate": 0.1429,
-            "singlesRate": 0.1429,
-            "hrRate": 0,
-            "walkRate": 0.1429,
-            "totalBasesRate": 0.1429
-          },
-          "split": {
-            "hits": 11,
-            "singles": 7,
-            "doubles": 1,
-            "triples": 1,
-            "homeRuns": 2,
-            "walks": 9,
-            "strikeouts": 9,
-            "totalBases": 20,
-            "atBats": 32,
-            "plateAppearances": 41,
-            "avg": 0.344,
-            "obp": 0.488,
-            "slg": 0.625,
-            "ops": 1.113,
-            "hitRate": 0.2683,
-            "singlesRate": 0.1707,
-            "hrRate": 0.048799999999999996,
-            "walkRate": 0.2195,
-            "kRate": 0.2195,
-            "totalBasesRate": 0.4878
-          },
-          "metrics": {
-            "powerScore": 63.4,
-            "contactScore": 50.8,
-            "patienceScore": 91,
-            "formScore": 18,
-            "splitScore": 92,
-            "varianceScore": 92,
-            "pitchTypeFitScore": 85.6,
-            "pitchTypeGrade": 8.03,
-            "pitchTypeCoveragePct": 100,
-            "matchupScore": 94,
-            "matchupGrade": 10
-          },
-          "pitchType": {
-            "fitScore": 85.6,
-            "fitGrade": 8.03,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +8.0",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 26.6,
-                "fitGrade": 10,
-                "batterFitScore": 94,
-                "qualityScore": 18
-              },
-              {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
-                "pitchUsage": 21.8,
-                "fitGrade": 10,
-                "batterFitScore": 76.6,
-                "qualityScore": 18
-              },
-              {
-                "pitchType": "FC",
-                "pitchName": "Cutter",
-                "pitchUsage": 17.3,
-                "fitGrade": 10,
-                "batterFitScore": 94,
-                "qualityScore": 20.4
-              }
-            ]
-          },
-          "statcastTrend": {
-            "sourceAsOfDate": "2026-06-06",
-            "gamesSample7": 5,
-            "paSample7": 8,
-            "bbeSample7": 11,
-            "recentStatcastGames": 4,
-            "recentStatcastPa": 7,
-            "recentStatcastAb": 6,
-            "recentStatcastHomeRuns": 0,
-            "recentBbeSample": 10,
-            "recentBarrels": 0,
-            "recentHardHit": 1,
-            "recentSweetSpot": 1,
-            "recentBarrelPct": 0,
-            "recentHardHitPct": 10,
-            "recentSweetSpotPct": 10,
-            "recentXobp": 0.26157142857142857,
-            "recentXslg": 0.1535,
-            "recentXops": 0.415,
-            "recentAvgExitVelocity": 93.63333333333334,
-            "recentAvgLaunchAngle": -12.5,
-            "rolling7Xwoba": 0.184,
-            "rolling14Xwoba": 0.227,
-            "rolling30Xwoba": 0.261,
-            "rolling7Xba": 0.139,
-            "rolling14Xba": 0.162,
-            "rolling30Xba": 0.194,
-            "rolling7Xslg": 0.153,
-            "rolling14Xslg": 0.189,
-            "rolling30Xslg": 0.233,
-            "rolling7BarrelPct": 0,
-            "rolling14BarrelPct": 0,
-            "rolling30BarrelPct": 0,
-            "rolling7HardHitPct": 9.1,
-            "rolling14HardHitPct": 6.2,
-            "rolling30HardHitPct": 13.3,
-            "rolling7SweetSpotPct": 9.1,
-            "rolling14SweetSpotPct": 6.2,
-            "rolling30SweetSpotPct": 13.3,
-            "xwobaTrend": -0.077,
-            "barrelTrend": 0,
-            "hardHitTrend": -4.2,
-            "sweetSpotTrend": -4.2,
-            "trendSignal": "fading"
-          },
-          "opponentContext": null,
-          "careerProfile": {
-            "playerId": 596142,
-            "fullName": "Gary Sánchez",
-            "seasonsSample": 12,
-            "debutYear": 2015,
-            "latestMlbYear": 2026,
-            "careerGames": 894,
-            "careerPlateAppearances": 3430,
-            "careerHits": 675,
-            "careerHomeRuns": 194,
-            "careerTotalBases": 1388,
-            "careerWalks": 333,
-            "careerStrikeouts": 913,
-            "careerHitRate": 0.1968,
-            "careerAvg": 0.223,
-            "careerObp": 0.31,
-            "careerSlg": 0.459,
-            "careerOps": 0.769,
-            "careerTbPerPa": 0.40466472303206996,
-            "careerHrPerPa": 0.0565597667638484,
-            "careerKRate": 0.2661807580174927,
-            "careerBbRate": 0.09708454810495627,
-            "bestPowerYear": 2016,
-            "bestPowerHomeRuns": 20,
-            "bestPowerSlg": 0.6567164179104478,
-            "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 117,
-            "recentMlbHomeRuns": 5,
-            "recentMlbTbPerPa": 0.3247863247863248,
-            "careerPowerIndex": 81.29,
-            "contactRiskIndex": 51.85,
-            "roleStabilityIndex": 100,
-            "repeatabilityLabel": "repeatable career power",
-            "volatilityLabel": "stable enough",
-            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/596142?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-06-01T22:44:40Z"
-          },
-          "tags": [
-            "carry",
-            "split edge",
-            "arsenal edge",
-            "cold",
-            "statcast fade",
-            "career power"
-          ],
-          "primaryTag": "carry",
-          "summary": ".196 AVG | .757 OPS | 19 H | 5 HR | 8g: .167 AVG | .452 OPS | 2 H | 0 HR | vs LHP: .344 AVG | 1.113 OPS | 2 HR | career 3430 PA | .769 OPS | 194 HR | repeatable career power | power 81 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +8.0 | +10.0 matchup grade in a traffic-risk lane",
-          "matchupNote": "+10.00 vs Kyle Freeland"
-        },
-        {
           "playerId": 683734,
-          "slot": 5,
+          "slot": 4,
           "name": "Andrew Vaughn",
           "position": "1B",
           "bats": "R",
@@ -3137,8 +3571,447 @@
           "matchupNote": "+10.00 vs Kyle Freeland"
         },
         {
-          "playerId": 650859,
+          "playerId": 596142,
+          "slot": 5,
+          "name": "Gary Sánchez",
+          "position": "C",
+          "bats": "R",
+          "savant": {
+            "playerId": 596142,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/gary-sanchez-596142",
+            "statsSuffix": "r-hitting-mlb",
+            "season": 2026,
+            "statsUrls": {
+              "statcast": "https://baseballsavant.mlb.com/savant-player/gary-sanchez-596142?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/gary-sanchez-596142?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/gary-sanchez-596142?stats=gamelogs-r-hitting-mlb&season=2026"
+            }
+          },
+          "season": {
+            "gamesPlayed": 37,
+            "hits": 19,
+            "singles": 10,
+            "doubles": 3,
+            "triples": 1,
+            "homeRuns": 5,
+            "walks": 22,
+            "totalBases": 39,
+            "atBats": 97,
+            "plateAppearances": 121,
+            "avg": 0.196,
+            "obp": 0.355,
+            "slg": 0.402,
+            "ops": 0.757,
+            "hitRate": 0.157,
+            "singlesRate": 0.08259999999999999,
+            "hrRate": 0.041299999999999996,
+            "walkRate": 0.1818,
+            "totalBasesRate": 0.3223
+          },
+          "recent": {
+            "gamesPlayed": 8,
+            "hits": 2,
+            "singles": 2,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "walks": 2,
+            "totalBases": 2,
+            "atBats": 12,
+            "plateAppearances": 14,
+            "avg": 0.167,
+            "obp": 0.286,
+            "slg": 0.167,
+            "ops": 0.452,
+            "hitRate": 0.1429,
+            "singlesRate": 0.1429,
+            "hrRate": 0,
+            "walkRate": 0.1429,
+            "totalBasesRate": 0.1429
+          },
+          "split": {
+            "hits": 11,
+            "singles": 7,
+            "doubles": 1,
+            "triples": 1,
+            "homeRuns": 2,
+            "walks": 9,
+            "strikeouts": 9,
+            "totalBases": 20,
+            "atBats": 32,
+            "plateAppearances": 41,
+            "avg": 0.344,
+            "obp": 0.488,
+            "slg": 0.625,
+            "ops": 1.113,
+            "hitRate": 0.2683,
+            "singlesRate": 0.1707,
+            "hrRate": 0.048799999999999996,
+            "walkRate": 0.2195,
+            "kRate": 0.2195,
+            "totalBasesRate": 0.4878
+          },
+          "metrics": {
+            "powerScore": 63.4,
+            "contactScore": 50.8,
+            "patienceScore": 91,
+            "formScore": 18,
+            "splitScore": 92,
+            "varianceScore": 92,
+            "pitchTypeFitScore": 85.6,
+            "pitchTypeGrade": 8.03,
+            "pitchTypeCoveragePct": 100,
+            "matchupScore": 94,
+            "matchupGrade": 10
+          },
+          "pitchType": {
+            "fitScore": 85.6,
+            "fitGrade": 8.03,
+            "coveragePct": 100,
+            "summary": "4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +8.0",
+            "topPitches": [
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 26.6,
+                "fitGrade": 10,
+                "batterFitScore": 94,
+                "qualityScore": 18
+              },
+              {
+                "pitchType": "CU",
+                "pitchName": "Curveball",
+                "pitchUsage": 21.8,
+                "fitGrade": 10,
+                "batterFitScore": 76.6,
+                "qualityScore": 18
+              },
+              {
+                "pitchType": "FC",
+                "pitchName": "Cutter",
+                "pitchUsage": 17.3,
+                "fitGrade": 10,
+                "batterFitScore": 94,
+                "qualityScore": 20.4
+              }
+            ]
+          },
+          "statcastTrend": {
+            "sourceAsOfDate": "2026-06-06",
+            "gamesSample7": 5,
+            "paSample7": 8,
+            "bbeSample7": 11,
+            "recentStatcastGames": 4,
+            "recentStatcastPa": 7,
+            "recentStatcastAb": 6,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 10,
+            "recentBarrels": 0,
+            "recentHardHit": 1,
+            "recentSweetSpot": 1,
+            "recentBarrelPct": 0,
+            "recentHardHitPct": 10,
+            "recentSweetSpotPct": 10,
+            "recentXobp": 0.26157142857142857,
+            "recentXslg": 0.1535,
+            "recentXops": 0.415,
+            "recentAvgExitVelocity": 93.63333333333334,
+            "recentAvgLaunchAngle": -12.5,
+            "rolling7Xwoba": 0.184,
+            "rolling14Xwoba": 0.227,
+            "rolling30Xwoba": 0.261,
+            "rolling7Xba": 0.139,
+            "rolling14Xba": 0.162,
+            "rolling30Xba": 0.194,
+            "rolling7Xslg": 0.153,
+            "rolling14Xslg": 0.189,
+            "rolling30Xslg": 0.233,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 0,
+            "rolling30BarrelPct": 0,
+            "rolling7HardHitPct": 9.1,
+            "rolling14HardHitPct": 6.2,
+            "rolling30HardHitPct": 13.3,
+            "rolling7SweetSpotPct": 9.1,
+            "rolling14SweetSpotPct": 6.2,
+            "rolling30SweetSpotPct": 13.3,
+            "xwobaTrend": -0.077,
+            "barrelTrend": 0,
+            "hardHitTrend": -4.2,
+            "sweetSpotTrend": -4.2,
+            "trendSignal": "fading"
+          },
+          "opponentContext": null,
+          "careerProfile": {
+            "playerId": 596142,
+            "fullName": "Gary Sánchez",
+            "seasonsSample": 12,
+            "debutYear": 2015,
+            "latestMlbYear": 2026,
+            "careerGames": 894,
+            "careerPlateAppearances": 3430,
+            "careerHits": 675,
+            "careerHomeRuns": 194,
+            "careerTotalBases": 1388,
+            "careerWalks": 333,
+            "careerStrikeouts": 913,
+            "careerHitRate": 0.1968,
+            "careerAvg": 0.223,
+            "careerObp": 0.31,
+            "careerSlg": 0.459,
+            "careerOps": 0.769,
+            "careerTbPerPa": 0.40466472303206996,
+            "careerHrPerPa": 0.0565597667638484,
+            "careerKRate": 0.2661807580174927,
+            "careerBbRate": 0.09708454810495627,
+            "bestPowerYear": 2016,
+            "bestPowerHomeRuns": 20,
+            "bestPowerSlg": 0.6567164179104478,
+            "recentMlbYear": 2026,
+            "recentMlbPlateAppearances": 117,
+            "recentMlbHomeRuns": 5,
+            "recentMlbTbPerPa": 0.3247863247863248,
+            "careerPowerIndex": 81.29,
+            "contactRiskIndex": 51.85,
+            "roleStabilityIndex": 100,
+            "repeatabilityLabel": "repeatable career power",
+            "volatilityLabel": "stable enough",
+            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/596142?stats=statcast-r-hitting-mlb",
+            "fetchedAt": "2026-06-01T22:44:40Z"
+          },
+          "tags": [
+            "carry",
+            "split edge",
+            "arsenal edge",
+            "cold",
+            "statcast fade",
+            "career power"
+          ],
+          "primaryTag": "carry",
+          "summary": ".196 AVG | .757 OPS | 19 H | 5 HR | 8g: .167 AVG | .452 OPS | 2 H | 0 HR | vs LHP: .344 AVG | 1.113 OPS | 2 HR | career 3430 PA | .769 OPS | 194 HR | repeatable career power | power 81 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +8.0 | +10.0 matchup grade in a traffic-risk lane",
+          "matchupNote": "+10.00 vs Kyle Freeland"
+        },
+        {
+          "playerId": 669003,
           "slot": 6,
+          "name": "Garrett Mitchell",
+          "position": "CF",
+          "bats": "L",
+          "savant": {
+            "playerId": 669003,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/garrett-mitchell-669003",
+            "statsSuffix": "r-hitting-mlb",
+            "season": 2026,
+            "statsUrls": {
+              "statcast": "https://baseballsavant.mlb.com/savant-player/garrett-mitchell-669003?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/garrett-mitchell-669003?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/garrett-mitchell-669003?stats=gamelogs-r-hitting-mlb&season=2026"
+            }
+          },
+          "season": {
+            "gamesPlayed": 53,
+            "hits": 37,
+            "singles": 23,
+            "doubles": 10,
+            "triples": 1,
+            "homeRuns": 3,
+            "walks": 28,
+            "totalBases": 58,
+            "atBats": 159,
+            "plateAppearances": 191,
+            "avg": 0.233,
+            "obp": 0.353,
+            "slg": 0.365,
+            "ops": 0.717,
+            "hitRate": 0.1937,
+            "singlesRate": 0.1204,
+            "hrRate": 0.015700000000000002,
+            "walkRate": 0.1466,
+            "totalBasesRate": 0.3037
+          },
+          "recent": {
+            "gamesPlayed": 10,
+            "hits": 6,
+            "singles": 4,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 0,
+            "walks": 4,
+            "totalBases": 8,
+            "atBats": 30,
+            "plateAppearances": 34,
+            "avg": 0.2,
+            "obp": 0.294,
+            "slg": 0.267,
+            "ops": 0.561,
+            "hitRate": 0.1765,
+            "singlesRate": 0.1176,
+            "hrRate": 0,
+            "walkRate": 0.1176,
+            "totalBasesRate": 0.2353
+          },
+          "split": {
+            "hits": 9,
+            "singles": 8,
+            "doubles": 0,
+            "triples": 1,
+            "homeRuns": 0,
+            "walks": 6,
+            "strikeouts": 14,
+            "totalBases": 11,
+            "atBats": 33,
+            "plateAppearances": 43,
+            "avg": 0.273,
+            "obp": 0.405,
+            "slg": 0.333,
+            "ops": 0.738,
+            "hitRate": 0.20929999999999999,
+            "singlesRate": 0.18600000000000003,
+            "hrRate": 0,
+            "walkRate": 0.13949999999999999,
+            "kRate": 0.3256,
+            "totalBasesRate": 0.25579999999999997
+          },
+          "metrics": {
+            "powerScore": 26.7,
+            "contactScore": 30.7,
+            "patienceScore": 75.9,
+            "formScore": 18,
+            "splitScore": 44.1,
+            "varianceScore": 86.1,
+            "pitchTypeFitScore": 74.8,
+            "pitchTypeGrade": 7.02,
+            "pitchTypeCoveragePct": 100,
+            "matchupScore": 61.7,
+            "matchupGrade": 3.26
+          },
+          "pitchType": {
+            "fitScore": 74.8,
+            "fitGrade": 7.02,
+            "coveragePct": 100,
+            "summary": "4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +7.0",
+            "topPitches": [
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 26.6,
+                "fitGrade": 6.89,
+                "batterFitScore": 55.9,
+                "qualityScore": 18
+              },
+              {
+                "pitchType": "CU",
+                "pitchName": "Curveball",
+                "pitchUsage": 21.8,
+                "fitGrade": 10,
+                "batterFitScore": 93.5,
+                "qualityScore": 18
+              },
+              {
+                "pitchType": "FC",
+                "pitchName": "Cutter",
+                "pitchUsage": 17.3,
+                "fitGrade": 10,
+                "batterFitScore": 86.9,
+                "qualityScore": 20.4
+              }
+            ]
+          },
+          "statcastTrend": {
+            "sourceAsOfDate": "2026-06-06",
+            "gamesSample7": 6,
+            "paSample7": 21,
+            "bbeSample7": 26,
+            "recentStatcastGames": 5,
+            "recentStatcastPa": 17,
+            "recentStatcastAb": 15,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 22,
+            "recentBarrels": 0,
+            "recentHardHit": 4,
+            "recentSweetSpot": 3,
+            "recentBarrelPct": 0,
+            "recentHardHitPct": 18.2,
+            "recentSweetSpotPct": 13.6,
+            "recentXobp": 0.31923529411764706,
+            "recentXslg": 0.3,
+            "recentXops": 0.619,
+            "recentAvgExitVelocity": 91.93333333333332,
+            "recentAvgLaunchAngle": 8.952380952380953,
+            "rolling7Xwoba": 0.257,
+            "rolling14Xwoba": 0.31,
+            "rolling30Xwoba": 0.31,
+            "rolling7Xba": 0.245,
+            "rolling14Xba": 0.243,
+            "rolling30Xba": 0.239,
+            "rolling7Xslg": 0.3,
+            "rolling14Xslg": 0.389,
+            "rolling30Xslg": 0.41,
+            "rolling7BarrelPct": 0,
+            "rolling14BarrelPct": 2.3,
+            "rolling30BarrelPct": 5.2,
+            "rolling7HardHitPct": 15.4,
+            "rolling14HardHitPct": 16.3,
+            "rolling30HardHitPct": 26,
+            "rolling7SweetSpotPct": 23.1,
+            "rolling14SweetSpotPct": 30.2,
+            "rolling30SweetSpotPct": 29.9,
+            "xwobaTrend": -0.053,
+            "barrelTrend": -5.2,
+            "hardHitTrend": -10.6,
+            "sweetSpotTrend": -6.8,
+            "trendSignal": "fading"
+          },
+          "opponentContext": null,
+          "careerProfile": {
+            "playerId": 669003,
+            "fullName": "Garrett Mitchell",
+            "seasonsSample": 5,
+            "debutYear": 2022,
+            "latestMlbYear": 2026,
+            "careerGames": 190,
+            "careerPlateAppearances": 621,
+            "careerHits": 133,
+            "careerHomeRuns": 16,
+            "careerTotalBases": 223,
+            "careerWalks": 71,
+            "careerStrikeouts": 216,
+            "careerHitRate": 0.21420000000000003,
+            "careerAvg": 0.247,
+            "careerObp": 0.338,
+            "careerSlg": 0.414,
+            "careerOps": 0.752,
+            "careerTbPerPa": 0.35909822866344604,
+            "careerHrPerPa": 0.02576489533011272,
+            "careerKRate": 0.34782608695652173,
+            "careerBbRate": 0.1143317230273752,
+            "bestPowerYear": 2023,
+            "bestPowerHomeRuns": 3,
+            "bestPowerSlg": 0.4461538461538462,
+            "recentMlbYear": 2026,
+            "recentMlbPlateAppearances": 178,
+            "recentMlbHomeRuns": 3,
+            "recentMlbTbPerPa": 0.30337078651685395,
+            "careerPowerIndex": 46.76,
+            "contactRiskIndex": 66.33,
+            "roleStabilityIndex": 100,
+            "repeatabilityLabel": "baseline career profile",
+            "volatilityLabel": "strikeout volatility",
+            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/669003?stats=statcast-r-hitting-mlb",
+            "fetchedAt": "2026-06-01T22:44:40Z"
+          },
+          "tags": [
+            "arsenal edge",
+            "cold",
+            "statcast fade"
+          ],
+          "primaryTag": "arsenal edge",
+          "summary": ".233 AVG | .717 OPS | 37 H | 3 HR | 10g: .200 AVG | .561 OPS | 6 H | 0 HR | vs LHP: .273 AVG | .738 OPS | 0 HR | career 621 PA | .752 OPS | 16 HR | baseline career profile | power 47 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +7.0 | +3.3 matchup grade in a traffic-risk lane",
+          "matchupNote": "+3.26 vs Kyle Freeland"
+        },
+        {
+          "playerId": 650859,
+          "slot": 7,
           "name": "Luis Rengifo",
           "position": "3B",
           "bats": "S",
@@ -3227,8 +4100,8 @@
             "pitchTypeFitScore": 39.8,
             "pitchTypeGrade": 3.09,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 26.9,
-            "matchupGrade": -4.42
+            "matchupScore": 24.8,
+            "matchupGrade": -4.92
           },
           "pitchType": {
             "fitScore": 39.8,
@@ -3352,232 +4225,14 @@
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".200 AVG | .518 OPS | 34 H | 0 HR | 10g: .188 AVG | .503 OPS | 6 H | 0 HR | vs LHP: .136 AVG | .372 OPS | 0 HR | career 2673 PA | .677 OPS | 62 HR | contact-stable profile | power 36 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +3.1 | -4.4 matchup grade in a traffic-risk lane",
-          "matchupNote": "-4.42 vs Kyle Freeland"
-        },
-        {
-          "playerId": 686217,
-          "slot": 7,
-          "name": "Sal Frelick",
-          "position": "RF",
-          "bats": "L",
-          "savant": {
-            "playerId": 686217,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/sal-frelick-686217",
-            "statsSuffix": "r-hitting-mlb",
-            "season": 2026,
-            "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/sal-frelick-686217?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/sal-frelick-686217?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/sal-frelick-686217?stats=gamelogs-r-hitting-mlb&season=2026"
-            }
-          },
-          "season": {
-            "gamesPlayed": 59,
-            "hits": 44,
-            "singles": 33,
-            "doubles": 8,
-            "triples": 0,
-            "homeRuns": 3,
-            "walks": 21,
-            "totalBases": 61,
-            "atBats": 195,
-            "plateAppearances": 225,
-            "avg": 0.226,
-            "obp": 0.3,
-            "slg": 0.313,
-            "ops": 0.613,
-            "hitRate": 0.1956,
-            "singlesRate": 0.1467,
-            "hrRate": 0.013300000000000001,
-            "walkRate": 0.0933,
-            "totalBasesRate": 0.2711
-          },
-          "recent": {
-            "gamesPlayed": 14,
-            "hits": 14,
-            "singles": 8,
-            "doubles": 6,
-            "triples": 0,
-            "homeRuns": 0,
-            "walks": 8,
-            "totalBases": 20,
-            "atBats": 50,
-            "plateAppearances": 58,
-            "avg": 0.28,
-            "obp": 0.379,
-            "slg": 0.4,
-            "ops": 0.779,
-            "hitRate": 0.2414,
-            "singlesRate": 0.1379,
-            "hrRate": 0,
-            "walkRate": 0.1379,
-            "totalBasesRate": 0.3448
-          },
-          "split": {
-            "hits": 7,
-            "singles": 5,
-            "doubles": 1,
-            "triples": 0,
-            "homeRuns": 1,
-            "walks": 3,
-            "strikeouts": 8,
-            "totalBases": 11,
-            "atBats": 55,
-            "plateAppearances": 60,
-            "avg": 0.127,
-            "obp": 0.183,
-            "slg": 0.2,
-            "ops": 0.383,
-            "hitRate": 0.1167,
-            "singlesRate": 0.0833,
-            "hrRate": 0.0167,
-            "walkRate": 0.05,
-            "kRate": 0.1333,
-            "totalBasesRate": 0.1833
-          },
-          "metrics": {
-            "powerScore": 24.5,
-            "contactScore": 53.6,
-            "patienceScore": 54.1,
-            "formScore": 63.2,
-            "splitScore": 18,
-            "varianceScore": 86.7,
-            "pitchTypeFitScore": 66.8,
-            "pitchTypeGrade": 6.19,
-            "pitchTypeCoveragePct": 100,
-            "matchupScore": 60.2,
-            "matchupGrade": 2.41
-          },
-          "pitchType": {
-            "fitScore": 66.8,
-            "fitGrade": 6.19,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +6.2",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 26.6,
-                "fitGrade": 1.33,
-                "batterFitScore": 25.3,
-                "qualityScore": 18
-              },
-              {
-                "pitchType": "CU",
-                "pitchName": "Curveball",
-                "pitchUsage": 21.8,
-                "fitGrade": 10,
-                "batterFitScore": 94,
-                "qualityScore": 18
-              },
-              {
-                "pitchType": "FC",
-                "pitchName": "Cutter",
-                "pitchUsage": 17.3,
-                "fitGrade": 7.87,
-                "batterFitScore": 63.7,
-                "qualityScore": 20.4
-              }
-            ]
-          },
-          "statcastTrend": {
-            "sourceAsOfDate": "2026-06-06",
-            "gamesSample7": 6,
-            "paSample7": 24,
-            "bbeSample7": 29,
-            "recentStatcastGames": 7,
-            "recentStatcastPa": 29,
-            "recentStatcastAb": 25,
-            "recentStatcastHomeRuns": 0,
-            "recentBbeSample": 36,
-            "recentBarrels": 0,
-            "recentHardHit": 11,
-            "recentSweetSpot": 17,
-            "recentBarrelPct": 0,
-            "recentHardHitPct": 30.6,
-            "recentSweetSpotPct": 47.2,
-            "recentXobp": 0.3593448275862069,
-            "recentXslg": 0.32572,
-            "recentXops": 0.685,
-            "recentAvgExitVelocity": 87.13333333333334,
-            "recentAvgLaunchAngle": 6.4944444444444445,
-            "rolling7Xwoba": 0.34,
-            "rolling14Xwoba": 0.307,
-            "rolling30Xwoba": 0.253,
-            "rolling7Xba": 0.294,
-            "rolling14Xba": 0.274,
-            "rolling30Xba": 0.239,
-            "rolling7Xslg": 0.375,
-            "rolling14Xslg": 0.339,
-            "rolling30Xslg": 0.293,
-            "rolling7BarrelPct": 0,
-            "rolling14BarrelPct": 0,
-            "rolling30BarrelPct": 0,
-            "rolling7HardHitPct": 34.5,
-            "rolling14HardHitPct": 25,
-            "rolling30HardHitPct": 19.8,
-            "rolling7SweetSpotPct": 48.3,
-            "rolling14SweetSpotPct": 33.9,
-            "rolling30SweetSpotPct": 28.9,
-            "xwobaTrend": 0.087,
-            "barrelTrend": 0,
-            "hardHitTrend": 14.7,
-            "sweetSpotTrend": 19.4,
-            "trendSignal": "improving"
-          },
-          "opponentContext": null,
-          "careerProfile": {
-            "playerId": 686217,
-            "fullName": "Sal Frelick",
-            "seasonsSample": 4,
-            "debutYear": 2023,
-            "latestMlbYear": 2026,
-            "careerGames": 397,
-            "careerPlateAppearances": 1540,
-            "careerHits": 359,
-            "careerHomeRuns": 20,
-            "careerTotalBases": 491,
-            "careerWalks": 131,
-            "careerStrikeouts": 216,
-            "careerHitRate": 0.23309999999999997,
-            "careerAvg": 0.263,
-            "careerObp": 0.33,
-            "careerSlg": 0.359,
-            "careerOps": 0.689,
-            "careerTbPerPa": 0.31883116883116885,
-            "careerHrPerPa": 0.012987012987012988,
-            "careerKRate": 0.14025974025974025,
-            "careerBbRate": 0.08506493506493507,
-            "bestPowerYear": 2025,
-            "bestPowerHomeRuns": 12,
-            "bestPowerSlg": 0.4053030303030303,
-            "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 199,
-            "recentMlbHomeRuns": 3,
-            "recentMlbTbPerPa": 0.2562814070351759,
-            "careerPowerIndex": 25.99,
-            "contactRiskIndex": 28.65,
-            "roleStabilityIndex": 100,
-            "repeatabilityLabel": "contact-stable profile",
-            "volatilityLabel": "stable enough",
-            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/686217?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-06-01T22:44:40Z"
-          },
-          "tags": [
-            "heater",
-            "arsenal edge",
-            "statcast up"
-          ],
-          "primaryTag": "heater",
-          "summary": ".226 AVG | .613 OPS | 44 H | 3 HR | 14g: .280 AVG | .779 OPS | 14 H | 0 HR | vs LHP: .127 AVG | .383 OPS | 1 HR | career 1540 PA | .689 OPS | 20 HR | contact-stable profile | power 26 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +6.2 | +2.4 matchup grade in a traffic-risk lane",
-          "matchupNote": "+2.41 vs Kyle Freeland"
+          "summary": ".200 AVG | .518 OPS | 34 H | 0 HR | 10g: .188 AVG | .503 OPS | 6 H | 0 HR | vs LHP: .136 AVG | .372 OPS | 0 HR | career 2673 PA | .677 OPS | 62 HR | contact-stable profile | power 36 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +3.1 | -4.9 matchup grade in a traffic-risk lane",
+          "matchupNote": "-4.92 vs Kyle Freeland"
         },
         {
           "playerId": 663368,
           "slot": 8,
           "name": "Blake Perkins",
-          "position": "CF",
+          "position": "RF",
           "bats": "S",
           "savant": {
             "playerId": 663368,
@@ -4042,7 +4697,7 @@
         "summary": "BvP sample is mixed: William Contreras owns the cleanest history, but Gary Sanchez shows the coldest prior lane."
       },
       "aggregate": {
-        "averageMatchupGrade": 4.96,
+        "averageMatchupGrade": 5,
         "trackedBatters": 9,
         "starterThreatCount": 7,
         "contactCount": 2,
@@ -4054,7 +4709,7 @@
         "switchCount": 2,
         "topThirdSplitCount": 2,
         "topThirdArsenalCount": 3,
-        "heaterCount": 4,
+        "heaterCount": 3,
         "suppressorCount": 2,
         "platoonPressureIndex": 94,
         "pitchTypePressureIndex": 94,
@@ -4062,7 +4717,7 @@
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
         "topThirdScore": 83.9,
-        "depthScore": 58.2,
+        "depthScore": 46.4,
         "bullpenOverperformHitters": []
       },
       "summary": {
@@ -4077,7 +4732,7 @@
             "tag": "carry | +10.00 vs Kyle Freeland"
           },
           {
-            "name": "Gary Sanchez",
+            "name": "Andrew Vaughn",
             "tag": "carry | +10.00 vs Kyle Freeland"
           }
         ],
@@ -4085,7 +4740,7 @@
         "underperformHitters": [
           {
             "name": "Luis Rengifo",
-            "tag": "split edge | -4.42 vs Kyle Freeland"
+            "tag": "split edge | -4.92 vs Kyle Freeland"
           },
           {
             "name": "Blake Perkins",
@@ -4093,17 +4748,17 @@
           }
         ],
         "underperformNote": "Luis Rengifo and Blake Perkins carry the softer form or split fit into a traffic-risk lane.",
-        "overview": "Brewers can lean on Jackson Chourio, Brice Turang, Gary Sanchez to drive early pressure against Kyle Freeland.",
+        "overview": "Brewers can lean on Jackson Chourio, Brice Turang, Andrew Vaughn to drive early pressure against Kyle Freeland.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
         "topThirdScore": 83.9,
-        "middleScore": 71.6,
-        "depthScore": 58.2,
+        "middleScore": 83.2,
+        "depthScore": 46.4,
         "bullpenPitchTypeSummary": null
       }
     },
     "home": {
       "teamName": "Rockies",
-      "lineupSource": "rotowire-supplement",
+      "lineupSource": "official-feed",
       "opposingStarter": {
         "id": 675660,
         "name": "Shane Drohan",
@@ -4340,102 +4995,102 @@
           "matchupNote": "+6.69 vs Shane Drohan"
         },
         {
-          "playerId": 671289,
+          "playerId": 678662,
           "slot": 2,
-          "name": "Tyler Freeman",
-          "position": "RF",
+          "name": "Ezequiel Tovar",
+          "position": "SS",
           "bats": "R",
           "savant": {
-            "playerId": 671289,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/tyler-freeman-671289",
+            "playerId": 678662,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/ezequiel-tovar-678662",
             "statsSuffix": "r-hitting-mlb",
             "season": 2026,
             "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/tyler-freeman-671289?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/tyler-freeman-671289?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/tyler-freeman-671289?stats=gamelogs-r-hitting-mlb&season=2026"
+              "statcast": "https://baseballsavant.mlb.com/savant-player/ezequiel-tovar-678662?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/ezequiel-tovar-678662?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/ezequiel-tovar-678662?stats=gamelogs-r-hitting-mlb&season=2026"
             }
           },
           "season": {
-            "gamesPlayed": 43,
-            "hits": 39,
-            "singles": 31,
-            "doubles": 5,
+            "gamesPlayed": 62,
+            "hits": 45,
+            "singles": 29,
+            "doubles": 12,
             "triples": 0,
-            "homeRuns": 3,
-            "walks": 8,
-            "totalBases": 53,
-            "atBats": 143,
-            "plateAppearances": 165,
-            "avg": 0.273,
-            "obp": 0.354,
-            "slg": 0.371,
-            "ops": 0.725,
-            "hitRate": 0.2364,
-            "singlesRate": 0.18789999999999998,
-            "hrRate": 0.0182,
-            "walkRate": 0.048499999999999995,
-            "totalBasesRate": 0.3212
+            "homeRuns": 4,
+            "walks": 14,
+            "totalBases": 69,
+            "atBats": 216,
+            "plateAppearances": 235,
+            "avg": 0.208,
+            "obp": 0.26,
+            "slg": 0.319,
+            "ops": 0.579,
+            "hitRate": 0.19149999999999998,
+            "singlesRate": 0.1234,
+            "hrRate": 0.017,
+            "walkRate": 0.0596,
+            "totalBasesRate": 0.29359999999999997
           },
           "recent": {
             "gamesPlayed": 10,
-            "hits": 12,
-            "singles": 8,
+            "hits": 4,
+            "singles": 2,
             "doubles": 2,
             "triples": 0,
-            "homeRuns": 2,
-            "walks": 6,
-            "totalBases": 20,
-            "atBats": 36,
+            "homeRuns": 0,
+            "walks": 2,
+            "totalBases": 6,
+            "atBats": 40,
             "plateAppearances": 44,
-            "avg": 0.333,
-            "obp": 0.455,
-            "slg": 0.556,
-            "ops": 1.01,
-            "hitRate": 0.2727,
-            "singlesRate": 0.1818,
-            "hrRate": 0.0455,
-            "walkRate": 0.1364,
-            "totalBasesRate": 0.4545
+            "avg": 0.1,
+            "obp": 0.136,
+            "slg": 0.15,
+            "ops": 0.286,
+            "hitRate": 0.0909,
+            "singlesRate": 0.0455,
+            "hrRate": 0,
+            "walkRate": 0.0455,
+            "totalBasesRate": 0.1364
           },
           "split": {
-            "hits": 9,
-            "singles": 6,
-            "doubles": 1,
+            "hits": 11,
+            "singles": 8,
+            "doubles": 3,
             "triples": 0,
-            "homeRuns": 2,
-            "walks": 1,
-            "strikeouts": 8,
-            "totalBases": 16,
-            "atBats": 38,
-            "plateAppearances": 42,
-            "avg": 0.237,
-            "obp": 0.293,
-            "slg": 0.421,
-            "ops": 0.714,
-            "hitRate": 0.2143,
-            "singlesRate": 0.1429,
-            "hrRate": 0.047599999999999996,
-            "walkRate": 0.023799999999999998,
-            "kRate": 0.1905,
-            "totalBasesRate": 0.381
+            "homeRuns": 0,
+            "walks": 4,
+            "strikeouts": 18,
+            "totalBases": 14,
+            "atBats": 49,
+            "plateAppearances": 54,
+            "avg": 0.224,
+            "obp": 0.296,
+            "slg": 0.286,
+            "ops": 0.582,
+            "hitRate": 0.20370000000000002,
+            "singlesRate": 0.1481,
+            "hrRate": 0,
+            "walkRate": 0.0741,
+            "kRate": 0.3333,
+            "totalBasesRate": 0.2593
           },
           "metrics": {
-            "powerScore": 44.9,
-            "contactScore": 67.7,
-            "patienceScore": 44.1,
-            "formScore": 92,
-            "splitScore": 71.6,
-            "varianceScore": 77.7,
-            "pitchTypeFitScore": 61.1,
-            "pitchTypeGrade": -0.05,
+            "powerScore": 22.9,
+            "contactScore": 38,
+            "patienceScore": 40.7,
+            "formScore": 18,
+            "splitScore": 36.3,
+            "varianceScore": 92,
+            "pitchTypeFitScore": 46.4,
+            "pitchTypeGrade": -0.13,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 94,
-            "matchupGrade": 10
+            "matchupScore": 18,
+            "matchupGrade": -8
           },
           "pitchType": {
-            "fitScore": 61.1,
-            "fitGrade": -0.05,
+            "fitScore": 46.4,
+            "fitGrade": -0.13,
             "coveragePct": 100,
             "summary": "4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit -0.1",
             "topPitches": [
@@ -4443,24 +5098,24 @@
                 "pitchType": "FF",
                 "pitchName": "4-Seam Fastball",
                 "pitchUsage": 28.8,
-                "fitGrade": -2.55,
-                "batterFitScore": 80,
+                "fitGrade": -8,
+                "batterFitScore": 18,
                 "qualityScore": 94
               },
               {
                 "pitchType": "SI",
                 "pitchName": "Sinker",
                 "pitchUsage": 18.9,
-                "fitGrade": 5.29,
-                "batterFitScore": 49.9,
+                "fitGrade": 10,
+                "batterFitScore": 79.5,
                 "qualityScore": 20.8
               },
               {
                 "pitchType": "SL",
                 "pitchName": "Slider",
                 "pitchUsage": 18.1,
-                "fitGrade": -1.71,
-                "batterFitScore": 84.6,
+                "fitGrade": -8,
+                "batterFitScore": 18,
                 "qualityScore": 94
               }
             ]
@@ -4468,96 +5123,94 @@
           "statcastTrend": {
             "sourceAsOfDate": "2026-06-06",
             "gamesSample7": 5,
-            "paSample7": 20,
-            "bbeSample7": 27,
+            "paSample7": 23,
+            "bbeSample7": 39,
             "recentStatcastGames": 5,
             "recentStatcastPa": 22,
-            "recentStatcastAb": 18,
-            "recentStatcastHomeRuns": 1,
-            "recentBbeSample": 28,
-            "recentBarrels": 2,
-            "recentHardHit": 8,
-            "recentSweetSpot": 6,
-            "recentBarrelPct": 7.1,
-            "recentHardHitPct": 28.6,
-            "recentSweetSpotPct": 21.4,
-            "recentXobp": 0.419,
-            "recentXslg": 0.4676666666666666,
-            "recentXops": 0.887,
-            "recentAvgExitVelocity": 89.45357142857144,
-            "recentAvgLaunchAngle": 1.8464285714285715,
-            "rolling7Xwoba": 0.4,
-            "rolling14Xwoba": 0.365,
-            "rolling30Xwoba": 0.315,
-            "rolling7Xba": 0.31,
-            "rolling14Xba": 0.302,
-            "rolling30Xba": 0.274,
-            "rolling7Xslg": 0.499,
-            "rolling14Xslg": 0.426,
-            "rolling30Xslg": 0.369,
-            "rolling7BarrelPct": 7.4,
-            "rolling14BarrelPct": 3,
-            "rolling30BarrelPct": 1.6,
-            "rolling7HardHitPct": 29.6,
-            "rolling14HardHitPct": 25.8,
-            "rolling30HardHitPct": 19.5,
-            "rolling7SweetSpotPct": 22.2,
-            "rolling14SweetSpotPct": 28.8,
-            "rolling30SweetSpotPct": 29.3,
-            "xwobaTrend": 0.085,
-            "barrelTrend": 5.8,
-            "hardHitTrend": 10.1,
-            "sweetSpotTrend": -7.1,
-            "trendSignal": "improving"
+            "recentStatcastAb": 20,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 37,
+            "recentBarrels": 1,
+            "recentHardHit": 3,
+            "recentSweetSpot": 10,
+            "recentBarrelPct": 2.7,
+            "recentHardHitPct": 8.1,
+            "recentSweetSpotPct": 27,
+            "recentXobp": 0.21623529411764705,
+            "recentXslg": 0.30193333333333333,
+            "recentXops": 0.518,
+            "recentAvgExitVelocity": 88.62758620689655,
+            "recentAvgLaunchAngle": 31.837931034482757,
+            "rolling7Xwoba": 0.203,
+            "rolling14Xwoba": 0.346,
+            "rolling30Xwoba": 0.321,
+            "rolling7Xba": 0.184,
+            "rolling14Xba": 0.273,
+            "rolling30Xba": 0.26,
+            "rolling7Xslg": 0.406,
+            "rolling14Xslg": 0.596,
+            "rolling30Xslg": 0.462,
+            "rolling7BarrelPct": 5.1,
+            "rolling14BarrelPct": 7.4,
+            "rolling30BarrelPct": 3.8,
+            "rolling7HardHitPct": 12.8,
+            "rolling14HardHitPct": 17.6,
+            "rolling30HardHitPct": 20,
+            "rolling7SweetSpotPct": 20.5,
+            "rolling14SweetSpotPct": 23.5,
+            "rolling30SweetSpotPct": 27.7,
+            "xwobaTrend": -0.118,
+            "barrelTrend": 1.3,
+            "hardHitTrend": -7.2,
+            "sweetSpotTrend": -7.2,
+            "trendSignal": "fading"
           },
           "opponentContext": null,
           "careerProfile": {
-            "playerId": 671289,
-            "fullName": "Tyler Freeman",
+            "playerId": 678662,
+            "fullName": "Ezequiel Tovar",
             "seasonsSample": 5,
             "debutYear": 2022,
             "latestMlbYear": 2026,
-            "careerGames": 355,
-            "careerPlateAppearances": 1213,
-            "careerHits": 267,
-            "careerHomeRuns": 15,
-            "careerTotalBases": 367,
-            "careerWalks": 82,
-            "careerStrikeouts": 162,
-            "careerHitRate": 0.22010000000000002,
-            "careerAvg": 0.25,
-            "careerObp": 0.328,
-            "careerSlg": 0.344,
-            "careerOps": 0.672,
-            "careerTbPerPa": 0.302555647155812,
-            "careerHrPerPa": 0.01236603462489695,
-            "careerKRate": 0.13355317394888705,
-            "careerBbRate": 0.06760098928276999,
-            "bestPowerYear": 2023,
-            "bestPowerHomeRuns": 4,
-            "bestPowerSlg": 0.3660130718954248,
+            "careerGames": 472,
+            "careerPlateAppearances": 1951,
+            "careerHits": 465,
+            "careerHomeRuns": 55,
+            "careerTotalBases": 766,
+            "careerWalks": 84,
+            "careerStrikeouts": 528,
+            "careerHitRate": 0.23829999999999998,
+            "careerAvg": 0.254,
+            "careerObp": 0.289,
+            "careerSlg": 0.419,
+            "careerOps": 0.708,
+            "careerTbPerPa": 0.3926191696565864,
+            "careerHrPerPa": 0.028190671450538187,
+            "careerKRate": 0.2706304459251666,
+            "careerBbRate": 0.043054843669912864,
+            "bestPowerYear": 2024,
+            "bestPowerHomeRuns": 26,
+            "bestPowerSlg": 0.4687022900763359,
             "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 148,
-            "recentMlbHomeRuns": 2,
-            "recentMlbTbPerPa": 0.31756756756756754,
-            "careerPowerIndex": 26.24,
-            "contactRiskIndex": 28.42,
+            "recentMlbPlateAppearances": 216,
+            "recentMlbHomeRuns": 4,
+            "recentMlbTbPerPa": 0.3101851851851852,
+            "careerPowerIndex": 49.9,
+            "contactRiskIndex": 55.94,
             "roleStabilityIndex": 100,
-            "repeatabilityLabel": "contact-stable profile",
-            "volatilityLabel": "stable enough",
-            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/671289?stats=statcast-r-hitting-mlb",
+            "repeatabilityLabel": "baseline career profile",
+            "volatilityLabel": "strikeout volatility",
+            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/678662?stats=statcast-r-hitting-mlb",
             "fetchedAt": "2026-06-01T22:44:40Z"
           },
           "tags": [
-            "carry",
-            "heater",
             "split edge",
-            "traffic",
-            "statcast up"
+            "cold",
+            "statcast fade"
           ],
-          "primaryTag": "carry",
-          "summary": ".273 AVG | .725 OPS | 39 H | 3 HR | 10g: .333 AVG | 1.010 OPS | 12 H | 2 HR | vs LHP: .237 AVG | .714 OPS | 2 HR | career 1213 PA | .672 OPS | 15 HR | contact-stable profile | power 26 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit -0.1 | +10.0 matchup grade in a neutral lane",
-          "matchupNote": "+10.00 vs Shane Drohan"
+          "primaryTag": "split edge",
+          "summary": ".208 AVG | .579 OPS | 45 H | 4 HR | 10g: .100 AVG | .286 OPS | 4 H | 0 HR | vs LHP: .224 AVG | .582 OPS | 0 HR | career 1951 PA | .708 OPS | 55 HR | baseline career profile | power 50 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit -0.1 | -8.0 matchup grade in a neutral lane",
+          "matchupNote": "-8.00 vs Shane Drohan"
         },
         {
           "playerId": 681198,
@@ -4999,226 +5652,8 @@
           "matchupNote": "+10.00 vs Shane Drohan"
         },
         {
-          "playerId": 678662,
-          "slot": 5,
-          "name": "Ezequiel Tovar",
-          "position": "SS",
-          "bats": "R",
-          "savant": {
-            "playerId": 678662,
-            "playerUrl": "https://baseballsavant.mlb.com/savant-player/ezequiel-tovar-678662",
-            "statsSuffix": "r-hitting-mlb",
-            "season": 2026,
-            "statsUrls": {
-              "statcast": "https://baseballsavant.mlb.com/savant-player/ezequiel-tovar-678662?stats=statcast-r-hitting-mlb&season=2026",
-              "splits": "https://baseballsavant.mlb.com/savant-player/ezequiel-tovar-678662?stats=splits-r-hitting-mlb&season=2026",
-              "gamelogs": "https://baseballsavant.mlb.com/savant-player/ezequiel-tovar-678662?stats=gamelogs-r-hitting-mlb&season=2026"
-            }
-          },
-          "season": {
-            "gamesPlayed": 62,
-            "hits": 45,
-            "singles": 29,
-            "doubles": 12,
-            "triples": 0,
-            "homeRuns": 4,
-            "walks": 14,
-            "totalBases": 69,
-            "atBats": 216,
-            "plateAppearances": 235,
-            "avg": 0.208,
-            "obp": 0.26,
-            "slg": 0.319,
-            "ops": 0.579,
-            "hitRate": 0.19149999999999998,
-            "singlesRate": 0.1234,
-            "hrRate": 0.017,
-            "walkRate": 0.0596,
-            "totalBasesRate": 0.29359999999999997
-          },
-          "recent": {
-            "gamesPlayed": 10,
-            "hits": 4,
-            "singles": 2,
-            "doubles": 2,
-            "triples": 0,
-            "homeRuns": 0,
-            "walks": 2,
-            "totalBases": 6,
-            "atBats": 40,
-            "plateAppearances": 44,
-            "avg": 0.1,
-            "obp": 0.136,
-            "slg": 0.15,
-            "ops": 0.286,
-            "hitRate": 0.0909,
-            "singlesRate": 0.0455,
-            "hrRate": 0,
-            "walkRate": 0.0455,
-            "totalBasesRate": 0.1364
-          },
-          "split": {
-            "hits": 11,
-            "singles": 8,
-            "doubles": 3,
-            "triples": 0,
-            "homeRuns": 0,
-            "walks": 4,
-            "strikeouts": 18,
-            "totalBases": 14,
-            "atBats": 49,
-            "plateAppearances": 54,
-            "avg": 0.224,
-            "obp": 0.296,
-            "slg": 0.286,
-            "ops": 0.582,
-            "hitRate": 0.20370000000000002,
-            "singlesRate": 0.1481,
-            "hrRate": 0,
-            "walkRate": 0.0741,
-            "kRate": 0.3333,
-            "totalBasesRate": 0.2593
-          },
-          "metrics": {
-            "powerScore": 22.9,
-            "contactScore": 38,
-            "patienceScore": 40.7,
-            "formScore": 18,
-            "splitScore": 36.3,
-            "varianceScore": 92,
-            "pitchTypeFitScore": 46.4,
-            "pitchTypeGrade": -0.13,
-            "pitchTypeCoveragePct": 100,
-            "matchupScore": 18,
-            "matchupGrade": -8
-          },
-          "pitchType": {
-            "fitScore": 46.4,
-            "fitGrade": -0.13,
-            "coveragePct": 100,
-            "summary": "4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit -0.1",
-            "topPitches": [
-              {
-                "pitchType": "FF",
-                "pitchName": "4-Seam Fastball",
-                "pitchUsage": 28.8,
-                "fitGrade": -8,
-                "batterFitScore": 18,
-                "qualityScore": 94
-              },
-              {
-                "pitchType": "SI",
-                "pitchName": "Sinker",
-                "pitchUsage": 18.9,
-                "fitGrade": 10,
-                "batterFitScore": 79.5,
-                "qualityScore": 20.8
-              },
-              {
-                "pitchType": "SL",
-                "pitchName": "Slider",
-                "pitchUsage": 18.1,
-                "fitGrade": -8,
-                "batterFitScore": 18,
-                "qualityScore": 94
-              }
-            ]
-          },
-          "statcastTrend": {
-            "sourceAsOfDate": "2026-06-06",
-            "gamesSample7": 5,
-            "paSample7": 23,
-            "bbeSample7": 39,
-            "recentStatcastGames": 5,
-            "recentStatcastPa": 22,
-            "recentStatcastAb": 20,
-            "recentStatcastHomeRuns": 0,
-            "recentBbeSample": 37,
-            "recentBarrels": 1,
-            "recentHardHit": 3,
-            "recentSweetSpot": 10,
-            "recentBarrelPct": 2.7,
-            "recentHardHitPct": 8.1,
-            "recentSweetSpotPct": 27,
-            "recentXobp": 0.21623529411764705,
-            "recentXslg": 0.30193333333333333,
-            "recentXops": 0.518,
-            "recentAvgExitVelocity": 88.62758620689655,
-            "recentAvgLaunchAngle": 31.837931034482757,
-            "rolling7Xwoba": 0.203,
-            "rolling14Xwoba": 0.346,
-            "rolling30Xwoba": 0.321,
-            "rolling7Xba": 0.184,
-            "rolling14Xba": 0.273,
-            "rolling30Xba": 0.26,
-            "rolling7Xslg": 0.406,
-            "rolling14Xslg": 0.596,
-            "rolling30Xslg": 0.462,
-            "rolling7BarrelPct": 5.1,
-            "rolling14BarrelPct": 7.4,
-            "rolling30BarrelPct": 3.8,
-            "rolling7HardHitPct": 12.8,
-            "rolling14HardHitPct": 17.6,
-            "rolling30HardHitPct": 20,
-            "rolling7SweetSpotPct": 20.5,
-            "rolling14SweetSpotPct": 23.5,
-            "rolling30SweetSpotPct": 27.7,
-            "xwobaTrend": -0.118,
-            "barrelTrend": 1.3,
-            "hardHitTrend": -7.2,
-            "sweetSpotTrend": -7.2,
-            "trendSignal": "fading"
-          },
-          "opponentContext": null,
-          "careerProfile": {
-            "playerId": 678662,
-            "fullName": "Ezequiel Tovar",
-            "seasonsSample": 5,
-            "debutYear": 2022,
-            "latestMlbYear": 2026,
-            "careerGames": 472,
-            "careerPlateAppearances": 1951,
-            "careerHits": 465,
-            "careerHomeRuns": 55,
-            "careerTotalBases": 766,
-            "careerWalks": 84,
-            "careerStrikeouts": 528,
-            "careerHitRate": 0.23829999999999998,
-            "careerAvg": 0.254,
-            "careerObp": 0.289,
-            "careerSlg": 0.419,
-            "careerOps": 0.708,
-            "careerTbPerPa": 0.3926191696565864,
-            "careerHrPerPa": 0.028190671450538187,
-            "careerKRate": 0.2706304459251666,
-            "careerBbRate": 0.043054843669912864,
-            "bestPowerYear": 2024,
-            "bestPowerHomeRuns": 26,
-            "bestPowerSlg": 0.4687022900763359,
-            "recentMlbYear": 2026,
-            "recentMlbPlateAppearances": 216,
-            "recentMlbHomeRuns": 4,
-            "recentMlbTbPerPa": 0.3101851851851852,
-            "careerPowerIndex": 49.9,
-            "contactRiskIndex": 55.94,
-            "roleStabilityIndex": 100,
-            "repeatabilityLabel": "baseline career profile",
-            "volatilityLabel": "strikeout volatility",
-            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/678662?stats=statcast-r-hitting-mlb",
-            "fetchedAt": "2026-06-01T22:44:40Z"
-          },
-          "tags": [
-            "split edge",
-            "cold",
-            "statcast fade"
-          ],
-          "primaryTag": "split edge",
-          "summary": ".208 AVG | .579 OPS | 45 H | 4 HR | 10g: .100 AVG | .286 OPS | 4 H | 0 HR | vs LHP: .224 AVG | .582 OPS | 0 HR | career 1951 PA | .708 OPS | 55 HR | baseline career profile | power 50 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit -0.1 | -8.0 matchup grade in a neutral lane",
-          "matchupNote": "-8.00 vs Shane Drohan"
-        },
-        {
           "playerId": 691720,
-          "slot": 6,
+          "slot": 5,
           "name": "Kyle Karros",
           "position": "3B",
           "bats": "R",
@@ -5437,7 +5872,7 @@
         },
         {
           "playerId": 664983,
-          "slot": 7,
+          "slot": 6,
           "name": "Jake McCarthy",
           "position": "CF",
           "bats": "L",
@@ -5526,8 +5961,8 @@
             "pitchTypeFitScore": 48.3,
             "pitchTypeGrade": -1.49,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 50.7,
-            "matchupGrade": 0.13
+            "matchupScore": 52.8,
+            "matchupGrade": 0.63
           },
           "pitchType": {
             "fitScore": 48.3,
@@ -5650,12 +6085,12 @@
             "statcast up"
           ],
           "primaryTag": "traffic",
-          "summary": ".283 AVG | .784 OPS | 47 H | 4 HR | 12g: .259 AVG | .781 OPS | 14 H | 2 HR | vs LHP: .344 AVG | .813 OPS | 0 HR | career 1611 PA | .711 OPS | 27 HR | contact-stable profile | power 39 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit -1.5 | +0.1 matchup grade in a neutral lane",
-          "matchupNote": "+0.13 vs Shane Drohan"
+          "summary": ".283 AVG | .784 OPS | 47 H | 4 HR | 12g: .259 AVG | .781 OPS | 14 H | 2 HR | vs LHP: .344 AVG | .813 OPS | 0 HR | career 1611 PA | .711 OPS | 27 HR | contact-stable profile | power 39 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit -1.5 | +0.6 matchup grade in a neutral lane",
+          "matchupNote": "+0.63 vs Shane Drohan"
         },
         {
           "playerId": 690924,
-          "slot": 8,
+          "slot": 7,
           "name": "Braxton Fulford",
           "position": "DH",
           "bats": "R",
@@ -5874,7 +6309,7 @@
         },
         {
           "playerId": 677060,
-          "slot": 9,
+          "slot": 8,
           "name": "Chad Stevens",
           "position": "2B",
           "bats": "R",
@@ -6090,6 +6525,222 @@
           "primaryTag": "split edge",
           "summary": ".048 AVG | .270 OPS | 1 H | 0 HR | 12g: .000 AVG | .300 OPS | 0 H | 0 HR | vs LHP: .000 AVG | .273 OPS | 0 HR | career 35 PA | .309 OPS | 0 HR | unproven MLB sample | power 0 | shallow 2026 sample | arsenal 4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit -5.2 | -8.0 matchup grade in a neutral lane",
           "matchupNote": "-8.00 vs Shane Drohan"
+        },
+        {
+          "playerId": 687859,
+          "slot": 9,
+          "name": "Troy Johnston",
+          "position": "RF",
+          "bats": "L",
+          "savant": {
+            "playerId": 687859,
+            "playerUrl": "https://baseballsavant.mlb.com/savant-player/troy-johnston-687859",
+            "statsSuffix": "r-hitting-mlb",
+            "season": 2026,
+            "statsUrls": {
+              "statcast": "https://baseballsavant.mlb.com/savant-player/troy-johnston-687859?stats=statcast-r-hitting-mlb&season=2026",
+              "splits": "https://baseballsavant.mlb.com/savant-player/troy-johnston-687859?stats=splits-r-hitting-mlb&season=2026",
+              "gamelogs": "https://baseballsavant.mlb.com/savant-player/troy-johnston-687859?stats=gamelogs-r-hitting-mlb&season=2026"
+            }
+          },
+          "season": {
+            "gamesPlayed": 60,
+            "hits": 64,
+            "singles": 45,
+            "doubles": 17,
+            "triples": 0,
+            "homeRuns": 2,
+            "walks": 17,
+            "totalBases": 87,
+            "atBats": 205,
+            "plateAppearances": 225,
+            "avg": 0.312,
+            "obp": 0.371,
+            "slg": 0.424,
+            "ops": 0.795,
+            "hitRate": 0.2844,
+            "singlesRate": 0.2,
+            "hrRate": 0.0089,
+            "walkRate": 0.0756,
+            "totalBasesRate": 0.38670000000000004
+          },
+          "recent": {
+            "gamesPlayed": 12,
+            "hits": 18,
+            "singles": 12,
+            "doubles": 6,
+            "triples": 0,
+            "homeRuns": 0,
+            "walks": 4,
+            "totalBases": 24,
+            "atBats": 52,
+            "plateAppearances": 56,
+            "avg": 0.346,
+            "obp": 0.393,
+            "slg": 0.462,
+            "ops": 0.854,
+            "hitRate": 0.3214,
+            "singlesRate": 0.2143,
+            "hrRate": 0,
+            "walkRate": 0.07139999999999999,
+            "totalBasesRate": 0.4286
+          },
+          "split": {
+            "hits": 6,
+            "singles": 5,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "walks": 2,
+            "strikeouts": 5,
+            "totalBases": 7,
+            "atBats": 38,
+            "plateAppearances": 41,
+            "avg": 0.158,
+            "obp": 0.2,
+            "slg": 0.184,
+            "ops": 0.384,
+            "hitRate": 0.1463,
+            "singlesRate": 0.122,
+            "hrRate": 0,
+            "walkRate": 0.048799999999999996,
+            "kRate": 0.122,
+            "totalBasesRate": 0.1707
+          },
+          "metrics": {
+            "powerScore": 31.4,
+            "contactScore": 54.3,
+            "patienceScore": 46.7,
+            "formScore": 52.7,
+            "splitScore": 18,
+            "varianceScore": 92,
+            "pitchTypeFitScore": 51.9,
+            "pitchTypeGrade": -1.38,
+            "pitchTypeCoveragePct": 100,
+            "matchupScore": 18,
+            "matchupGrade": -7.02
+          },
+          "pitchType": {
+            "fitScore": 51.9,
+            "fitGrade": -1.38,
+            "coveragePct": 100,
+            "summary": "4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit -1.4",
+            "topPitches": [
+              {
+                "pitchType": "FF",
+                "pitchName": "4-Seam Fastball",
+                "pitchUsage": 28.8,
+                "fitGrade": -5.75,
+                "batterFitScore": 62.4,
+                "qualityScore": 94
+              },
+              {
+                "pitchType": "SI",
+                "pitchName": "Sinker",
+                "pitchUsage": 18.9,
+                "fitGrade": 1.78,
+                "batterFitScore": 30.6,
+                "qualityScore": 20.8
+              },
+              {
+                "pitchType": "SL",
+                "pitchName": "Slider",
+                "pitchUsage": 18.1,
+                "fitGrade": -0.65,
+                "batterFitScore": 90.4,
+                "qualityScore": 94
+              }
+            ]
+          },
+          "statcastTrend": {
+            "sourceAsOfDate": "2026-06-06",
+            "gamesSample7": 6,
+            "paSample7": 29,
+            "bbeSample7": 42,
+            "recentStatcastGames": 6,
+            "recentStatcastPa": 28,
+            "recentStatcastAb": 26,
+            "recentStatcastHomeRuns": 0,
+            "recentBbeSample": 43,
+            "recentBarrels": 1,
+            "recentHardHit": 7,
+            "recentSweetSpot": 12,
+            "recentBarrelPct": 2.3,
+            "recentHardHitPct": 16.3,
+            "recentSweetSpotPct": 27.9,
+            "recentXobp": 0.35996428571428574,
+            "recentXslg": 0.43546153846153846,
+            "recentXops": 0.795,
+            "recentAvgExitVelocity": 90.21395348837208,
+            "recentAvgLaunchAngle": 11.167441860465116,
+            "rolling7Xwoba": 0.34,
+            "rolling14Xwoba": 0.331,
+            "rolling30Xwoba": 0.339,
+            "rolling7Xba": 0.302,
+            "rolling14Xba": 0.292,
+            "rolling30Xba": 0.32,
+            "rolling7Xslg": 0.459,
+            "rolling14Xslg": 0.404,
+            "rolling30Xslg": 0.414,
+            "rolling7BarrelPct": 4.8,
+            "rolling14BarrelPct": 2.7,
+            "rolling30BarrelPct": 1.5,
+            "rolling7HardHitPct": 19,
+            "rolling14HardHitPct": 20,
+            "rolling30HardHitPct": 18.2,
+            "rolling7SweetSpotPct": 31,
+            "rolling14SweetSpotPct": 28,
+            "rolling30SweetSpotPct": 32.6,
+            "xwobaTrend": 0.001,
+            "barrelTrend": 3.3,
+            "hardHitTrend": 0.8,
+            "sweetSpotTrend": -1.6,
+            "trendSignal": "flat"
+          },
+          "opponentContext": null,
+          "careerProfile": {
+            "playerId": 687859,
+            "fullName": "Troy Johnston",
+            "seasonsSample": 2,
+            "debutYear": 2025,
+            "latestMlbYear": 2026,
+            "careerGames": 99,
+            "careerPlateAppearances": 323,
+            "careerHits": 88,
+            "careerHomeRuns": 6,
+            "careerTotalBases": 125,
+            "careerWalks": 23,
+            "careerStrikeouts": 68,
+            "careerHitRate": 0.2724,
+            "careerAvg": 0.297,
+            "careerObp": 0.354,
+            "careerSlg": 0.422,
+            "careerOps": 0.776,
+            "careerTbPerPa": 0.38699690402476783,
+            "careerHrPerPa": 0.018575851393188854,
+            "careerKRate": 0.21052631578947367,
+            "careerBbRate": 0.07120743034055728,
+            "bestPowerYear": 2025,
+            "bestPowerHomeRuns": 4,
+            "bestPowerSlg": 0.41964285714285715,
+            "recentMlbYear": 2026,
+            "recentMlbPlateAppearances": 202,
+            "recentMlbHomeRuns": 2,
+            "recentMlbTbPerPa": 0.38613861386138615,
+            "careerPowerIndex": 45.05,
+            "contactRiskIndex": 42.83,
+            "roleStabilityIndex": 73.38,
+            "repeatabilityLabel": "baseline career profile",
+            "volatilityLabel": "stable enough",
+            "sourceUrl": "https://baseballsavant.mlb.com/savant-player/687859?stats=statcast-r-hitting-mlb",
+            "fetchedAt": "2026-06-01T22:44:40Z"
+          },
+          "tags": [
+            "cold"
+          ],
+          "primaryTag": "cold",
+          "summary": ".312 AVG | .795 OPS | 64 H | 2 HR | 12g: .346 AVG | .854 OPS | 18 H | 0 HR | vs LHP: .158 AVG | .384 OPS | 0 HR | career 323 PA | .776 OPS | 6 HR | baseline career profile | power 45 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit -1.4 | -7.0 matchup grade in a neutral lane",
+          "matchupNote": "-7.02 vs Shane Drohan"
         }
       ],
       "bvpHistory": {
@@ -6098,36 +6749,32 @@
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 0.54,
+        "averageMatchupGrade": -1.3,
         "trackedBatters": 9,
-        "starterThreatCount": 4,
-        "contactCount": 3,
+        "starterThreatCount": 3,
+        "contactCount": 2,
         "powerCount": 1,
-        "platoonCount": 7,
+        "platoonCount": 6,
         "pitchTypeEdgeCount": 1,
-        "oppositeHandCount": 7,
-        "sameHandCount": 2,
+        "oppositeHandCount": 6,
+        "sameHandCount": 3,
         "switchCount": 1,
         "topThirdSplitCount": 2,
         "topThirdArsenalCount": 1,
-        "heaterCount": 4,
+        "heaterCount": 3,
         "suppressorCount": 2,
-        "platoonPressureIndex": 87.4,
-        "pitchTypePressureIndex": 47.5,
+        "platoonPressureIndex": 73,
+        "pitchTypePressureIndex": 43.7,
         "bullpenPitchTypePressureIndex": null,
-        "starterPressureIndex": 68.9,
-        "overallPressureIndex": 68.9,
-        "topThirdScore": 64.8,
-        "depthScore": 28.9,
+        "starterPressureIndex": 32,
+        "overallPressureIndex": 32,
+        "topThirdScore": 39.5,
+        "depthScore": 18,
         "bullpenOverperformHitters": []
       },
       "summary": {
         "pressureLabel": "carry bats live",
         "overperformHitters": [
-          {
-            "name": "Tyler Freeman",
-            "tag": "carry | +10.00 vs Shane Drohan"
-          },
           {
             "name": "Hunter Goodman",
             "tag": "carry | +10.00 vs Shane Drohan"
@@ -6135,25 +6782,29 @@
           {
             "name": "Kyle Karros",
             "tag": "carry | +10.00 vs Shane Drohan"
+          },
+          {
+            "name": "Willi Castro",
+            "tag": "carry | +6.69 vs Shane Drohan"
           }
         ],
         "bullpenOverperformHitters": [],
         "underperformHitters": [
           {
-            "name": "TJ Rumfield",
-            "tag": "arsenal edge | -8.00 vs Shane Drohan"
-          },
-          {
             "name": "Ezequiel Tovar",
             "tag": "split edge | -8.00 vs Shane Drohan"
+          },
+          {
+            "name": "TJ Rumfield",
+            "tag": "arsenal edge | -8.00 vs Shane Drohan"
           }
         ],
-        "underperformNote": "TJ Rumfield and Ezequiel Tovar carry the softer form or split fit into a balanced lane.",
-        "overview": "Rockies can lean on Tyler Freeman, Hunter Goodman, Kyle Karros to drive early pressure against Shane Drohan.",
+        "underperformNote": "Ezequiel Tovar and TJ Rumfield carry the softer form or split fit into a balanced lane.",
+        "overview": "Rockies can lean on Hunter Goodman, Kyle Karros, Willi Castro to drive early pressure against Shane Drohan.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-        "topThirdScore": 64.8,
-        "middleScore": 68.7,
-        "depthScore": 28.9,
+        "topThirdScore": 39.5,
+        "middleScore": 80.3,
+        "depthScore": 18,
         "bullpenPitchTypeSummary": null
       }
     }
@@ -6163,16 +6814,16 @@
       "id": 675660,
       "fullName": "Shane Drohan",
       "pitchHand": "L",
-      "wins": 2,
+      "wins": 3,
       "losses": 1,
-      "era": "2.87",
-      "strikeOuts": 33,
-      "inningsPitched": "31.1",
-      "hitsAllowed": 26,
-      "walks": 10,
+      "era": "3.11",
+      "strikeOuts": 37,
+      "inningsPitched": "37.2",
+      "hitsAllowed": 31,
+      "walks": 11,
       "homeRunsAllowed": 2,
-      "whip": "1.15",
-      "gamesStarted": 2,
+      "whip": "1.12",
+      "gamesStarted": 3,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 675660,
@@ -6216,13 +6867,13 @@
       "opponentHistoryThisSeason": [],
       "strikeoutMarket": {
         "playerName": "Shane Drohan",
-        "line": 3.5,
-        "overPrice": -162,
-        "underPrice": 127,
+        "line": 4.5,
+        "overPrice": 126,
+        "underPrice": -162,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
@@ -6246,7 +6897,7 @@
         "battersFaced": null,
         "totalRow": null,
         "gameRows": [],
-        "fetchedAt": "2026-06-07T15:16:52.696Z"
+        "fetchedAt": "2026-06-07T16:39:08.332Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -10649,13 +11300,13 @@
           "Away split: 4.32 ERA / 0 HR allowed.",
           "vs. Left: .250 AVG / .676 OPS allowed."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
         "status": "tiny-sample",
         "label": "Tiny MLB sample",
-        "note": "Only 2 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
+        "note": "Only 3 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 2.67,
         "daysSinceLastStart": 60,
         "startsLoaded": 1,
@@ -10676,14 +11327,14 @@
       "pitchHand": "L",
       "wins": 1,
       "losses": 6,
-      "era": "8.06",
-      "strikeOuts": 43,
-      "inningsPitched": "48.0",
-      "hitsAllowed": 67,
-      "walks": 15,
+      "era": "7.81",
+      "strikeOuts": 45,
+      "inningsPitched": "53.0",
+      "hitsAllowed": 74,
+      "walks": 16,
       "homeRunsAllowed": 13,
-      "whip": "1.71",
-      "gamesStarted": 10,
+      "whip": "1.70",
+      "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 607536,
@@ -10833,16 +11484,16 @@
         "playerName": "Kyle Freeland",
         "line": 3.5,
         "overPrice": -116,
-        "underPrice": -110,
+        "underPrice": 101,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/kyle-freeland-vs-brewers",
-        "answerText": "Kyle Freeland has a 5-4 record with an ERA of 3.39 and 51 strikeouts in 10 appearances versus the Brewers in his career.",
+        "answerText": "Kyle Freeland has a 5-4 record with an ERA of 3.39 and 51 strikeouts in 10 appearances against the Brewers in his career.",
         "pitcherName": "Kyle Freeland",
         "pitcherTeam": "Rockies",
         "opponentTeam": "Brewers",
@@ -11126,7 +11777,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:53.590Z"
+        "fetchedAt": "2026-06-07T16:39:10.197Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -16040,7 +16691,7 @@
           "vs. Right: .320 AVG / .958 OPS allowed.",
           "Coors Field: 8.05 ERA / .321 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -16094,22 +16745,22 @@
       {
         "label": "Total",
         "book": "DraftKings typed MLB board",
-        "value": "o11.5 -112 / u11.5 -108"
+        "value": "o11.5 -111 / u11.5 -108"
       },
       {
         "label": "Moneyline",
         "book": "DraftKings typed MLB board",
-        "value": "Brewers -191 / Rockies +157"
+        "value": "Brewers -186 / Rockies +153"
       },
       {
         "label": "1st 5 ML",
         "book": "DraftKings typed MLB board",
-        "value": "Brewers -166 / Rockies +130"
+        "value": "Brewers -160 / Rockies +124"
       },
       {
         "label": "1st 5 Total",
         "book": "DraftKings typed MLB board",
-        "value": "o6.5 +105 / u6.5 -135"
+        "value": "o6.5 +110 / u6.5 -140"
       }
     ],
     "note": "Board snapshot plus model context.",
@@ -16121,24 +16772,24 @@
       "index": 0,
       "role": "Away",
       "name": "Brewers",
-      "detail": "Shane Drohan (LHP) | 2-1 | 2.87 ERA | 33 SO | 1.15 WHIP | 31.1 IP",
-      "americanOdds": -191,
-      "americanLabel": "-191",
-      "decimalOdds": 1.5235602094240837,
-      "impliedProbability": 0.6563573883161512,
-      "impliedProbabilityLabel": "65.6%"
+      "detail": "Shane Drohan (LHP) | 3-1 | 3.11 ERA | 37 SO | 1.12 WHIP | 37.2 IP",
+      "americanOdds": -186,
+      "americanLabel": "-186",
+      "decimalOdds": 1.5376344086021505,
+      "impliedProbability": 0.6503496503496503,
+      "impliedProbabilityLabel": "65.0%"
     },
     {
       "id": "brewers-rockies:1",
       "index": 1,
       "role": "Home",
       "name": "Rockies",
-      "detail": "Kyle Freeland (LHP) | 1-6 | 8.06 ERA | 43 SO | 1.71 WHIP | 48.0 IP",
-      "americanOdds": 157,
-      "americanLabel": "+157",
-      "decimalOdds": 2.5700000000000003,
-      "impliedProbability": 0.38910505836575876,
-      "impliedProbabilityLabel": "38.9%"
+      "detail": "Kyle Freeland (LHP) | 1-6 | 7.81 ERA | 45 SO | 1.70 WHIP | 53.0 IP",
+      "americanOdds": 153,
+      "americanLabel": "+153",
+      "decimalOdds": 2.5300000000000002,
+      "impliedProbability": 0.3952569169960474,
+      "impliedProbabilityLabel": "39.5%"
     }
   ],
   "moneyline": {
@@ -16151,24 +16802,24 @@
         "index": 0,
         "role": "Away",
         "name": "Brewers",
-        "detail": "Shane Drohan (LHP) | 2-1 | 2.87 ERA | 33 SO | 1.15 WHIP | 31.1 IP",
-        "americanOdds": -191,
-        "americanLabel": "-191",
-        "decimalOdds": 1.5235602094240837,
-        "impliedProbability": 0.6563573883161512,
-        "impliedProbabilityLabel": "65.6%"
+        "detail": "Shane Drohan (LHP) | 3-1 | 3.11 ERA | 37 SO | 1.12 WHIP | 37.2 IP",
+        "americanOdds": -186,
+        "americanLabel": "-186",
+        "decimalOdds": 1.5376344086021505,
+        "impliedProbability": 0.6503496503496503,
+        "impliedProbabilityLabel": "65.0%"
       },
       {
         "id": "brewers-rockies:1",
         "index": 1,
         "role": "Home",
         "name": "Rockies",
-        "detail": "Kyle Freeland (LHP) | 1-6 | 8.06 ERA | 43 SO | 1.71 WHIP | 48.0 IP",
-        "americanOdds": 157,
-        "americanLabel": "+157",
-        "decimalOdds": 2.5700000000000003,
-        "impliedProbability": 0.38910505836575876,
-        "impliedProbabilityLabel": "38.9%"
+        "detail": "Kyle Freeland (LHP) | 1-6 | 7.81 ERA | 45 SO | 1.70 WHIP | 53.0 IP",
+        "americanOdds": 153,
+        "americanLabel": "+153",
+        "decimalOdds": 2.5300000000000002,
+        "impliedProbability": 0.3952569169960474,
+        "impliedProbabilityLabel": "39.5%"
       }
     ]
   },
@@ -16180,57 +16831,57 @@
       "index": 0,
       "role": "Away",
       "name": "Brewers",
-      "detail": "Shane Drohan (LHP) | 2-1 | 2.87 ERA | 33 SO | 1.15 WHIP | 31.1 IP",
-      "americanOdds": -191,
-      "americanLabel": "-191",
-      "decimalOdds": 1.5235602094240837,
-      "impliedProbability": 0.6563573883161512,
-      "impliedProbabilityLabel": "65.6%"
+      "detail": "Shane Drohan (LHP) | 3-1 | 3.11 ERA | 37 SO | 1.12 WHIP | 37.2 IP",
+      "americanOdds": -186,
+      "americanLabel": "-186",
+      "decimalOdds": 1.5376344086021505,
+      "impliedProbability": 0.6503496503496503,
+      "impliedProbabilityLabel": "65.0%"
     },
     "opponent": {
       "id": "brewers-rockies:1",
       "index": 1,
       "role": "Home",
       "name": "Rockies",
-      "detail": "Kyle Freeland (LHP) | 1-6 | 8.06 ERA | 43 SO | 1.71 WHIP | 48.0 IP",
-      "americanOdds": 157,
-      "americanLabel": "+157",
-      "decimalOdds": 2.5700000000000003,
-      "impliedProbability": 0.38910505836575876,
-      "impliedProbabilityLabel": "38.9%"
+      "detail": "Kyle Freeland (LHP) | 1-6 | 7.81 ERA | 45 SO | 1.70 WHIP | 53.0 IP",
+      "americanOdds": 153,
+      "americanLabel": "+153",
+      "decimalOdds": 2.5300000000000002,
+      "impliedProbability": 0.3952569169960474,
+      "impliedProbabilityLabel": "39.5%"
     },
-    "lean": "Model pick: Brewers on starter era and standings profile.",
-    "rationale": "Starter ERA: Brewers (2.87 ERA) vs Rockies (8.06 ERA)",
-    "confidence": 82,
-    "volatility": 82,
-    "recommendationScore": 57,
+    "lean": "Model pick: Brewers on standings profile and starter era.",
+    "rationale": "Standings profile: Brewers (41-23, division leader, +106 RD) vs Rockies (24-42, 5th in division, -99 RD)",
+    "confidence": 85,
+    "volatility": 75,
+    "recommendationScore": 60,
     "tier": "Strong",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 20.4,
-    "modelEdgeLabel": "20.4-point model edge",
-    "marketProbability": 0.62781536572576,
-    "marketProbabilityLabel": "62.8%",
+    "modelEdge": 22,
+    "modelEdgeLabel": "22-point model edge",
+    "marketProbability": 0.6219831346321605,
+    "marketProbabilityLabel": "62.2%",
     "inputs": [
       {
-        "label": "Starter ERA",
-        "summary": "Starter ERA: Brewers (2.87 ERA) vs Rockies (8.06 ERA)",
-        "source": "Listed probable starters",
-        "margin": 46.7,
-        "weight": 0.23
-      },
-      {
         "label": "Standings profile",
-        "summary": "Standings profile: Brewers (39-23, division leader, +97 RD) vs Rockies (24-41, 5th in division, -91 RD)",
+        "summary": "Standings profile: Brewers (41-23, division leader, +106 RD) vs Rockies (24-42, 5th in division, -99 RD)",
         "source": "Standings context",
         "margin": 76,
         "weight": 0.14
       },
       {
+        "label": "Starter ERA",
+        "summary": "Starter ERA: Brewers (3.11 ERA) vs Rockies (7.81 ERA)",
+        "source": "Listed probable starters",
+        "margin": 42.3,
+        "weight": 0.23
+      },
+      {
         "label": "Market price",
-        "summary": "Market price: Brewers (62.8% no-vig) vs Rockies (37.2% no-vig)",
+        "summary": "Market price: Brewers (62.2% no-vig) vs Rockies (37.8% no-vig)",
         "source": "Moneyline board",
-        "margin": 25.6,
+        "margin": 24.4,
         "weight": 0.26
       }
     ],
@@ -16273,35 +16924,27 @@
         "delta": 4
       },
       {
-        "label": "Opponent lineup has real split and top-order pressure against this starter",
-        "delta": 4
-      },
-      {
-        "label": "Projected hit edge is partially compressed because lineup certainty was still incomplete",
-        "delta": 2
-      },
-      {
         "label": "v1.1 market lane: this sits in the healthier moderate-favorite range with a cleaner state/risk profile than the average board favorite.",
         "delta": -2
       }
     ],
     "pickReasons": [
-      "Brewers own the cleaner full-game traffic script at 10.2 projected hits.",
-      "Brewers have the better starter-window lane with 5.8 projected first-five hits.",
+      "Brewers own the cleaner full-game traffic script at 11.9 projected hits.",
+      "Brewers have the better starter-window lane with 7.2 projected first-five hits.",
       "Brewers still hold the better bridge-and-finish script once the bullpens take over.",
-      "Brewers can lean on Jackson Chourio, Brice Turang, Gary Sanchez to drive early pressure against Kyle Freeland."
+      "Brewers can lean on Jackson Chourio, Brice Turang, Andrew Vaughn to drive early pressure against Kyle Freeland."
     ],
     "indicators": {
       "reliefPitchingRisk": 45,
-      "coinflipPressure": 31,
-      "starterLeverageIndex": 76.6,
-      "lateInningStabilityIndex": 52.1,
+      "coinflipPressure": 24,
+      "starterLeverageIndex": 100,
+      "lateInningStabilityIndex": 52.7,
       "pickBullpenScore": 64.4,
       "oppBullpenScore": 60.8,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 63.7,
-      "oppStarterScore": 43.6,
+      "pickStarterScore": 65.2,
+      "oppStarterScore": 44.9,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -16357,7 +17000,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 0.9,
+      "projectedHitEdgeForPick": 4.2,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
@@ -16379,11 +17022,12 @@
         "vetoReasons": [],
         "protectedMarketDogFlag": false
       },
-      "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": 32,
-      "efficientFavoriteTier": "Watch favorite",
+      "efficientFavoriteCandidateFlag": true,
+      "efficientFavoriteScore": 48,
+      "efficientFavoriteTier": "Efficient favorite",
       "efficientFavoriteReasons": [
         "moderateFavoritePrice",
+        "starterControl",
         "broadSupport",
         "modelAgreement"
       ],
@@ -16391,21 +17035,21 @@
         "highVolatility"
       ],
       "efficientFavoriteBlockers": [],
-      "tierOneRiskPoints": 1,
+      "tierOneRiskPoints": 2,
       "tierOnePassFlag": false,
       "tierOneRiskFlags": [
         "moderateFavoriteClean"
       ],
-      "favoredSignalCount": 7,
-      "starterLateGap": 24.5,
+      "favoredSignalCount": 8,
+      "starterLateGap": 47.3,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 0,
       "gameShape": {
         "label": "Favorite conversion trap",
-        "shapeLabel": "balanced traffic game",
+        "shapeLabel": "starter-control lane",
         "category": "false_favorite_conversion_trap",
         "bestExpression": "No taxed ML; require early conversion or better live price",
-        "categoryConfidence": 9.3,
+        "categoryConfidence": 8.7,
         "realityGapScore": 37.5,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
@@ -16421,9 +17065,9 @@
             "score": 44.8
           },
           {
-            "id": "air",
-            "label": "Air",
-            "score": 24.4
+            "id": "pressure",
+            "label": "Pressure",
+            "score": 35.7
           }
         ],
         "rfImpactScore": 34
@@ -16432,12 +17076,12 @@
     "gameShape": {
       "modelId": "MLB-M2",
       "label": "Favorite conversion trap",
-      "shapeLabel": "balanced traffic game",
+      "shapeLabel": "starter-control lane",
       "category": {
         "slug": "false_favorite_conversion_trap",
         "label": "Favorite conversion trap",
         "bestExpression": "No taxed ML; require early conversion or better live price",
-        "confidence": 9.3,
+        "confidence": 8.7,
         "reasons": [
           "The favorite price is ahead of the lineup conversion profile.",
           "Do not pay for runs the first cycle has not shown yet."
@@ -16481,7 +17125,7 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 0.9
+          "projectedHitEdge": 4.2
         }
       },
       "summary": "Favorite conversion trap: No taxed ML; require early conversion or better live price. Reality-gap 37.5/100. Main checks: 93°F | Wind 6 mph L-R | 3% precip | weather helps carry.",
@@ -16492,8 +17136,8 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
         "bullpenFlipScore": 14.7,
-        "starterControlScore": 51,
-        "marketContradictionScore": 10.1,
+        "starterControlScore": 74.9,
+        "marketContradictionScore": 9.9,
         "realityGapScore": 37.5
       },
       "radar": {
@@ -16508,9 +17152,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 18.7,
-            "pickScore": 18.7,
-            "opponentScore": 7.8
+            "gameScore": 35.7,
+            "pickScore": 35.7,
+            "opponentScore": 8.1
           },
           {
             "id": "chaos",
@@ -16558,7 +17202,7 @@
             "role": "pick",
             "team": "Brewers",
             "scores": {
-              "pressure": 18.7,
+              "pressure": 35.7,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -16566,7 +17210,7 @@
               "flow": 100
             },
             "polygon": [
-              18.7,
+              35.7,
               5,
               0,
               16,
@@ -16577,7 +17221,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 63.7,
+              "starterScore": 65.2,
               "bullpenScore": 64.4,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -16591,7 +17235,7 @@
             "role": "opponent",
             "team": "Rockies",
             "scores": {
-              "pressure": 7.8,
+              "pressure": 8.1,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -16599,7 +17243,7 @@
               "flow": 0
             },
             "polygon": [
-              7.8,
+              8.1,
               5,
               0,
               16,
@@ -16610,7 +17254,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 43.6,
+              "starterScore": 44.9,
               "bullpenScore": 60.8,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -16625,7 +17269,7 @@
           "label": "Favorite conversion trap",
           "bestExpression": "No taxed ML; require early conversion or better live price",
           "scores": {
-            "pressure": 18.7,
+            "pressure": 35.7,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
@@ -16633,7 +17277,7 @@
             "flow": 100
           },
           "polygon": [
-            18.7,
+            35.7,
             44.8,
             8.5,
             24.4,
@@ -16652,9 +17296,9 @@
               "score": 44.8
             },
             {
-              "id": "air",
-              "label": "Air",
-              "score": 24.4
+              "id": "pressure",
+              "label": "Pressure",
+              "score": 35.7
             }
           ]
         }
@@ -16715,7 +17359,7 @@
         "side": "Brewers is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 85.6% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 84% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
@@ -16755,26 +17399,26 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 10.2,
-      "homeProjectedHits": 8.7,
-      "awayHitEfficiencyPct": 29.6,
-      "homeHitEfficiencyPct": 25.2,
-      "awayFirst5ProjectedHits": 5.8,
-      "homeFirst5ProjectedHits": 4.8,
-      "awayFirst5HitEfficiencyPct": 30.4,
-      "homeFirst5HitEfficiencyPct": 25.2,
-      "awayLateProjectedHits": 4.4,
-      "homeLateProjectedHits": 3.9,
-      "awayLateHitEfficiencyPct": 28.6,
-      "homeLateHitEfficiencyPct": 25.4,
+      "awayProjectedHits": 11.9,
+      "homeProjectedHits": 7.7,
+      "awayHitEfficiencyPct": 34.4,
+      "homeHitEfficiencyPct": 22.4,
+      "awayFirst5ProjectedHits": 7.2,
+      "homeFirst5ProjectedHits": 4.3,
+      "awayFirst5HitEfficiencyPct": 37.7,
+      "homeFirst5HitEfficiencyPct": 22.6,
+      "awayLateProjectedHits": 4.5,
+      "homeLateProjectedHits": 3.6,
+      "awayLateHitEfficiencyPct": 29,
+      "homeLateHitEfficiencyPct": 23.7,
       "awayBullpenChainScore": null,
       "homeBullpenChainScore": null,
       "edgeTeam": "Brewers",
-      "edgeHits": 1.5,
+      "edgeHits": 4.2,
       "first5EdgeTeam": "Brewers",
-      "first5EdgeHits": 1,
+      "first5EdgeHits": 2.9,
       "lateEdgeTeam": "Brewers",
-      "lateEdgeHits": 0.5,
+      "lateEdgeHits": 0.9,
       "bridgeEdgeTeam": "",
       "bridgeEdgeScore": null,
       "awayLikelyRelievers": [],
@@ -16785,22 +17429,22 @@
       "homeBullpenExhaustionLabel": "unknown",
       "awayPitcherType": "Balanced lefty",
       "homePitcherType": "Traffic-risk lefty",
-      "awayStarterHoldConfidence": 21.4,
+      "awayStarterHoldConfidence": 40.3,
       "homeStarterHoldConfidence": 18,
-      "awayProjectedRuns": 4.9,
-      "homeProjectedRuns": 4.3,
-      "awayFirst5ProjectedRuns": 2.8,
-      "homeFirst5ProjectedRuns": 2.3,
-      "awayLateProjectedRuns": 2.1,
-      "homeLateProjectedRuns": 2,
+      "awayProjectedRuns": 5.7,
+      "homeProjectedRuns": 3.9,
+      "awayFirst5ProjectedRuns": 3.5,
+      "homeFirst5ProjectedRuns": 2.1,
+      "awayLateProjectedRuns": 2.2,
+      "homeLateProjectedRuns": 1.8,
       "postedTotal": 11.5,
       "totals": {
         "fullGame": {
           "lean": "Under",
-          "edge": -2.3,
+          "edge": -1.9,
           "strength": "Strong",
           "label": "Under 11.5",
-          "summary": "Under lean with a 2.3-run edge against 11.5.",
+          "summary": "Under lean with a 1.9-run edge against 11.5.",
           "chaosGate": {
             "phase": "full",
             "overChaosScore": 4,
@@ -16809,8 +17453,7 @@
             "vetoed": false,
             "vetoReason": "",
             "notes": [
-              "93°F | Wind 6 mph L-R | 3% precip | weather helps carry",
-              "both offenses project traffic"
+              "93°F | Wind 6 mph L-R | 3% precip | weather helps carry"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -16827,10 +17470,10 @@
         },
         "first5": {
           "lean": "Under",
-          "edge": -1.4,
-          "strength": "Strong",
+          "edge": -0.9,
+          "strength": "Clear",
           "label": "Under 6.5",
-          "summary": "Under lean with a 1.4-run edge against 6.5.",
+          "summary": "Under lean with a 0.9-run edge against 6.5.",
           "chaosGate": {
             "phase": "first5",
             "overChaosScore": 3,
@@ -16839,8 +17482,7 @@
             "vetoed": false,
             "vetoReason": "",
             "notes": [
-              "93°F | Wind 6 mph L-R | 3% precip | weather helps carry",
-              "both offenses project traffic"
+              "93°F | Wind 6 mph L-R | 3% precip | weather helps carry"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -16855,12 +17497,12 @@
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 5.1,
-            "adjustedProjectedRuns": 5.1,
-            "adjustedEdge": -1.4,
+            "baseProjectedRuns": 5.6,
+            "adjustedProjectedRuns": 5.6,
+            "adjustedEdge": -0.9,
             "marketExpression": "Under",
             "shape": "balanced",
-            "tailScore": 27,
+            "tailScore": 31.8,
             "strandScore": 0,
             "forkScore": 0,
             "tailLift": 0,
@@ -16874,7 +17516,7 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 10.6,
+              "totalFirst5ProjectedHits": 11.5,
               "weatherCarry": true,
               "weatherSuppress": false,
               "visibilityRisk": null
@@ -16883,10 +17525,10 @@
         },
         "late": {
           "lean": "Under",
-          "edge": -0.9,
+          "edge": -1,
           "strength": "Clear",
           "label": "Under 5",
-          "summary": "Under lean with a 0.9-run edge against 5.",
+          "summary": "Under lean with a 1.0-run edge against 5.",
           "chaosGate": {
             "phase": "late",
             "overChaosScore": 3,
@@ -16895,8 +17537,7 @@
             "vetoed": false,
             "vetoReason": "",
             "notes": [
-              "93°F | Wind 6 mph L-R | 3% precip | weather helps carry",
-              "both offenses project traffic"
+              "93°F | Wind 6 mph L-R | 3% precip | weather helps carry"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -16911,16 +17552,16 @@
             }
           }
         },
-        "projectedFullTotalRuns": 9.2,
-        "projectedFirst5TotalRuns": 5.1,
-        "tailAdjustedProjectedFirst5TotalRuns": 5.1,
+        "projectedFullTotalRuns": 9.6,
+        "projectedFirst5TotalRuns": 5.6,
+        "tailAdjustedProjectedFirst5TotalRuns": 5.6,
         "first5TailOverlay": {
-          "baseProjectedRuns": 5.1,
-          "adjustedProjectedRuns": 5.1,
-          "adjustedEdge": -1.4,
+          "baseProjectedRuns": 5.6,
+          "adjustedProjectedRuns": 5.6,
+          "adjustedEdge": -0.9,
           "marketExpression": "Under",
           "shape": "balanced",
-          "tailScore": 27,
+          "tailScore": 31.8,
           "strandScore": 0,
           "forkScore": 0,
           "tailLift": 0,
@@ -16934,16 +17575,16 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 10.6,
+            "totalFirst5ProjectedHits": 11.5,
             "weatherCarry": true,
             "weatherSuppress": false,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 4.1,
+        "projectedLateTotalRuns": 4,
         "derivedFirst5TotalLine": 6.5,
         "postedFirst5TotalLine": 6.5,
-        "runShareFirst5TotalLine": 6.4,
+        "runShareFirst5TotalLine": 6.7,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 5,
         "bullpenExhaustionNote": "93°F | Wind 6 mph L-R | 3% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
@@ -16954,11 +17595,11 @@
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 35.6,
-        "yesProbabilityPct": 85.6,
-        "noProbabilityPct": 14.4,
+        "edge": 34,
+        "yesProbabilityPct": 84,
+        "noProbabilityPct": 16,
         "awayRunProbabilityPct": 72,
-        "homeRunProbabilityPct": 48.6,
+        "homeRunProbabilityPct": 42.8,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 40,
@@ -16975,12 +17616,12 @@
         "cautionStack": [],
         "projectedRuns": 1.6,
         "line": 0.5,
-        "summary": "YRFI with a 86% modeled chance of at least one first-inning run. Brewers score 72% of the time and Rockies 48.6% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 84% modeled chance of at least one first-inning run. Brewers score 72% of the time and Rockies 42.8% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
       },
       "teamScripts": [
         {
           "teamName": "Brewers",
-          "lineupStatus": "partial lineup",
+          "lineupStatus": "confirmed lineup",
           "overperformHitters": [
             {
               "name": "Jackson Chourio",
@@ -16991,14 +17632,14 @@
               "tag": "carry | +10.00 vs Kyle Freeland"
             },
             {
-              "name": "Gary Sanchez",
+              "name": "Andrew Vaughn",
               "tag": "carry | +10.00 vs Kyle Freeland"
             }
           ],
           "underperformHitters": [
             {
               "name": "Luis Rengifo",
-              "tag": "split edge | -4.42 vs Kyle Freeland"
+              "tag": "split edge | -4.92 vs Kyle Freeland"
             },
             {
               "name": "Blake Perkins",
@@ -17006,29 +17647,25 @@
             }
           ],
           "underperformNote": "Luis Rengifo and Blake Perkins carry the softer form or split fit into a traffic-risk lane.",
-          "overview": "Brewers can lean on Jackson Chourio, Brice Turang, Gary Sanchez to drive early pressure against Kyle Freeland.",
+          "overview": "Brewers can lean on Jackson Chourio, Brice Turang, Andrew Vaughn to drive early pressure against Kyle Freeland.",
           "topThirdScore": 83.9,
-          "middleScore": 71.6,
-          "depthScore": 58.2,
+          "middleScore": 83.2,
+          "depthScore": 46.4,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Brewers own the cleaner full-game traffic script at 10.2 projected hits.",
-            "Brewers have the better starter-window lane with 5.8 projected first-five hits.",
+            "Brewers own the cleaner full-game traffic script at 11.9 projected hits.",
+            "Brewers have the better starter-window lane with 7.2 projected first-five hits.",
             "Brewers still hold the better bridge-and-finish script once the bullpens take over.",
-            "Brewers can lean on Jackson Chourio, Brice Turang, Gary Sanchez to drive early pressure against Kyle Freeland.",
+            "Brewers can lean on Jackson Chourio, Brice Turang, Andrew Vaughn to drive early pressure against Kyle Freeland.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
             "Brewers top third are live enough to pressure the starter before the bridge innings.",
-            "Jackson Chourio and Brice Turang and Gary Sanchez are the best current carry bats in this lineup."
+            "Jackson Chourio and Brice Turang and Andrew Vaughn are the best current carry bats in this lineup."
           ]
         },
         {
           "teamName": "Rockies",
-          "lineupStatus": "partial lineup",
+          "lineupStatus": "confirmed lineup",
           "overperformHitters": [
-            {
-              "name": "Tyler Freeman",
-              "tag": "carry | +10.00 vs Shane Drohan"
-            },
             {
               "name": "Hunter Goodman",
               "tag": "carry | +10.00 vs Shane Drohan"
@@ -17036,29 +17673,32 @@
             {
               "name": "Kyle Karros",
               "tag": "carry | +10.00 vs Shane Drohan"
+            },
+            {
+              "name": "Willi Castro",
+              "tag": "carry | +6.69 vs Shane Drohan"
             }
           ],
           "underperformHitters": [
             {
-              "name": "TJ Rumfield",
-              "tag": "arsenal edge | -8.00 vs Shane Drohan"
-            },
-            {
               "name": "Ezequiel Tovar",
               "tag": "split edge | -8.00 vs Shane Drohan"
+            },
+            {
+              "name": "TJ Rumfield",
+              "tag": "arsenal edge | -8.00 vs Shane Drohan"
             }
           ],
-          "underperformNote": "TJ Rumfield and Ezequiel Tovar carry the softer form or split fit into a balanced lane.",
-          "overview": "Rockies can lean on Tyler Freeman, Hunter Goodman, Kyle Karros to drive early pressure against Shane Drohan.",
-          "topThirdScore": 64.8,
-          "middleScore": 68.7,
-          "depthScore": 28.9,
+          "underperformNote": "Ezequiel Tovar and TJ Rumfield carry the softer form or split fit into a balanced lane.",
+          "overview": "Rockies can lean on Hunter Goodman, Kyle Karros, Willi Castro to drive early pressure against Shane Drohan.",
+          "topThirdScore": 39.5,
+          "middleScore": 80.3,
+          "depthScore": 18,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Rockies can lean on Tyler Freeman, Hunter Goodman, Kyle Karros to drive early pressure against Shane Drohan.",
+            "Rockies can lean on Hunter Goodman, Kyle Karros, Willi Castro to drive early pressure against Shane Drohan.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-            "Rockies top third are live enough to pressure the starter before the bridge innings.",
-            "Tyler Freeman and Hunter Goodman and Kyle Karros are the best current carry bats in this lineup."
+            "Hunter Goodman and Kyle Karros and Willi Castro are the best current carry bats in this lineup."
           ]
         }
       ],
@@ -17068,19 +17708,19 @@
           {
             "label": "First 5",
             "edgeTeam": "Brewers",
-            "projection": "2.8 R",
+            "projection": "3.5 R",
             "note": "Brewers lean on Jackson Chourio, Brice Turang to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
             "edgeTeam": "Brewers",
-            "projection": "2.1 R",
+            "projection": "2.2 R",
             "note": "Brewers keep more late scoring paths alive, with Jackson Chourio, Brice Turang plus the stronger bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Brewers",
-            "projection": "10.2 H",
+            "projection": "11.9 H",
             "note": "Brewers finish with the stronger aggregate traffic path, anchored by Jackson Chourio, Brice Turang."
           }
         ]
@@ -17104,27 +17744,27 @@
         "marketType": "ML shape",
         "selection": "Brewers",
         "opponent": "Rockies",
-        "pickProjectedRuns": 4.9,
-        "opponentProjectedRuns": 4.3,
-        "projectedTotalRuns": 9.2,
-        "runDiff": 0.6,
-        "absoluteRunDiff": 0.6,
-        "runDiffSharePct": 6.5,
-        "confidence": 82,
-        "marketProbabilityPct": 62.8,
-        "grade": "Thin ML shape",
+        "pickProjectedRuns": 5.7,
+        "opponentProjectedRuns": 3.9,
+        "projectedTotalRuns": 9.6,
+        "runDiff": 1.8,
+        "absoluteRunDiff": 1.8,
+        "runDiffSharePct": 18.8,
+        "confidence": 85,
+        "marketProbabilityPct": 62.2,
+        "grade": "Separated ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Brewers projects 0.6 runs better in a 9.2-run environment."
+        "note": "Brewers projects 1.8 runs better in a 9.6-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
         "label": "Favorite conversion trap",
-        "shapeLabel": "balanced traffic game",
+        "shapeLabel": "starter-control lane",
         "category": {
           "slug": "false_favorite_conversion_trap",
           "label": "Favorite conversion trap",
           "bestExpression": "No taxed ML; require early conversion or better live price",
-          "confidence": 9.3,
+          "confidence": 8.7,
           "reasons": [
             "The favorite price is ahead of the lineup conversion profile.",
             "Do not pay for runs the first cycle has not shown yet."
@@ -17168,7 +17808,7 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 0.9
+            "projectedHitEdge": 4.2
           }
         },
         "summary": "Favorite conversion trap: No taxed ML; require early conversion or better live price. Reality-gap 37.5/100. Main checks: 93°F | Wind 6 mph L-R | 3% precip | weather helps carry.",
@@ -17179,8 +17819,8 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
           "bullpenFlipScore": 14.7,
-          "starterControlScore": 51,
-          "marketContradictionScore": 10.1,
+          "starterControlScore": 74.9,
+          "marketContradictionScore": 9.9,
           "realityGapScore": 37.5
         },
         "radar": {
@@ -17195,9 +17835,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 18.7,
-              "pickScore": 18.7,
-              "opponentScore": 7.8
+              "gameScore": 35.7,
+              "pickScore": 35.7,
+              "opponentScore": 8.1
             },
             {
               "id": "chaos",
@@ -17245,7 +17885,7 @@
               "role": "pick",
               "team": "Brewers",
               "scores": {
-                "pressure": 18.7,
+                "pressure": 35.7,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -17253,7 +17893,7 @@
                 "flow": 100
               },
               "polygon": [
-                18.7,
+                35.7,
                 5,
                 0,
                 16,
@@ -17264,7 +17904,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 63.7,
+                "starterScore": 65.2,
                 "bullpenScore": 64.4,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17278,7 +17918,7 @@
               "role": "opponent",
               "team": "Rockies",
               "scores": {
-                "pressure": 7.8,
+                "pressure": 8.1,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -17286,7 +17926,7 @@
                 "flow": 0
               },
               "polygon": [
-                7.8,
+                8.1,
                 5,
                 0,
                 16,
@@ -17297,7 +17937,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 43.6,
+                "starterScore": 44.9,
                 "bullpenScore": 60.8,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17312,7 +17952,7 @@
             "label": "Favorite conversion trap",
             "bestExpression": "No taxed ML; require early conversion or better live price",
             "scores": {
-              "pressure": 18.7,
+              "pressure": 35.7,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
@@ -17320,7 +17960,7 @@
               "flow": 100
             },
             "polygon": [
-              18.7,
+              35.7,
               44.8,
               8.5,
               24.4,
@@ -17339,9 +17979,9 @@
                 "score": 44.8
               },
               {
-                "id": "air",
-                "label": "Air",
-                "score": 24.4
+                "id": "pressure",
+                "label": "Pressure",
+                "score": 35.7
               }
             ]
           }
@@ -17402,7 +18042,7 @@
           "side": "Brewers is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 85.6% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 84% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
@@ -17444,12 +18084,12 @@
       "first5Moneyline": {
         "pickSide": "away",
         "pickTeam": "Brewers",
-        "awayProjectedRuns": 2.8,
-        "homeProjectedRuns": 2.3,
-        "awayLeadProbability": 49.7,
-        "homeLeadProbability": 32.6,
-        "pushProbability": 17.8,
-        "leadProbability": 49.7,
+        "awayProjectedRuns": 3.5,
+        "homeProjectedRuns": 2.1,
+        "awayLeadProbability": 64.6,
+        "homeLeadProbability": 20.7,
+        "pushProbability": 14.7,
+        "leadProbability": 64.6,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -17470,8 +18110,8 @@
         "propType": "homeRun",
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
-        "confidence": 63,
-        "probability": 16.6,
+        "confidence": 67,
+        "probability": 16.8,
         "expectedValue": 0.2,
         "statValueLabel": "0.18 exp HR",
         "sample": {
@@ -17515,9 +18155,9 @@
         "shadowSupportLevel": null,
         "reason": "slot 2 carry | contact-stable profile | process improving; approach 67.3/100 | recent form up",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
-          "deep-lineup",
           "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
@@ -17528,7 +18168,7 @@
         ],
         "matchupNote": "+10.00 vs Kyle Freeland",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".282 AVG | .891 OPS | 61 H | 9 HR | 14g: .385 AVG | 1.236 OPS | 20 H | 4 HR | vs LHP: .186 AVG | .542 OPS | 0 HR | career 1966 PA | .709 OPS | 38 HR | contact-stable profile | power 38 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +9.7 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
@@ -17543,10 +18183,158 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
+        "confidence": 68,
+        "probability": 85.5,
+        "expectedValue": 1.9,
+        "statValueLabel": "1.93 exp RBI",
+        "sample": {
+          "seasonGames": 28,
+          "seasonPlateAppearances": 128,
+          "recentGames": 12,
+          "recentPlateAppearances": 54,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 26,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1263,
+          "seasonPa": 128,
+          "powerIndex": 64.05,
+          "contactRisk": 44.26,
+          "roleStability": 96,
+          "label": "baseline career profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": true,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 67.2,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": -0.9,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 128,
+            "careerPa": 1263
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "baseline career profile"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 1 carry | process improving; approach 67.2/100 | recent form up | split fit live",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "run-production-slot",
+          "statcast-power-up",
+          "statcast-contact-up"
+        ],
+        "matchupNote": "+10.00 vs Kyle Freeland",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".282 AVG | .805 OPS | 33 H | 4 HR | 12g: .348 AVG | 1.140 OPS | 16 H | 4 HR | vs LHP: .269 AVG | .706 OPS | 1 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +5.1 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "brewers-rockies:668930:runs",
+        "gameId": "brewers-rockies",
+        "gameTitle": "Brewers @ Rockies",
+        "league": "MLB",
+        "playerId": 668930,
+        "playerName": "Brice Turang",
+        "teamName": "Brewers",
+        "slot": 2,
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 72,
+        "probability": 90.1,
+        "expectedValue": 2.3,
+        "statValueLabel": "2.32 exp runs",
+        "sample": {
+          "seasonGames": 59,
+          "seasonPlateAppearances": 266,
+          "recentGames": 14,
+          "recentPlateAppearances": 60,
+          "statcastGames": 7,
+          "statcastPlateAppearances": 29,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 1966,
+          "seasonPa": 266,
+          "powerIndex": 38.31,
+          "contactRisk": 40.36,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 67.3,
+            "processScore": 7,
+            "careerWeight": 0.1,
+            "identityDelta": 6.9,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 266,
+            "careerPa": 1966
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Strong",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 2 carry | recent form up | run-scoring slot",
+        "scriptTags": [
+          "posted-lineup",
+          "top-third-pressure",
+          "middle-order-traffic",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
+          "carry-bat-live",
+          "process-improving",
+          "run-scoring-slot",
+          "statcast-power-up",
+          "statcast-fade"
+        ],
+        "matchupNote": "+10.00 vs Kyle Freeland",
+        "teamScriptLabel": "",
+        "lineupStatus": "posted",
+        "playerSummary": ".282 AVG | .891 OPS | 61 H | 9 HR | 14g: .385 AVG | 1.236 OPS | 20 H | 4 HR | vs LHP: .186 AVG | .542 OPS | 0 HR | career 1966 PA | .709 OPS | 38 HR | contact-stable profile | power 38 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +9.7 | +10.0 matchup grade in a traffic-risk lane"
+      },
+      {
+        "id": "brewers-rockies:694192:hitRunRbi",
+        "gameId": "brewers-rockies",
+        "gameTitle": "Brewers @ Rockies",
+        "league": "MLB",
+        "playerId": 694192,
+        "playerName": "Jackson Chourio",
+        "teamName": "Brewers",
+        "slot": 1,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 79.8,
-        "expectedValue": 1.6,
-        "statValueLabel": "1.60 exp RBI",
+        "probability": 96.1,
+        "expectedValue": 5,
+        "statValueLabel": "1.99 H · 1.47 R · 1.59 RBI · 5.05 total",
         "sample": {
           "seasonGames": 28,
           "seasonPlateAppearances": 128,
@@ -17586,23 +18374,23 @@
         "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 1 carry | process improving; approach 67.2/100 | recent form up | split fit live",
+        "reason": "slot 1 carry | recent form up | split fit live | combined hits/runs/RBI lane",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
-          "deep-lineup",
           "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
           "process-improving",
-          "run-production-slot",
+          "combined-production-lane",
           "statcast-power-up",
           "statcast-contact-up"
         ],
         "matchupNote": "+10.00 vs Kyle Freeland",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".282 AVG | .805 OPS | 33 H | 4 HR | 12g: .348 AVG | 1.140 OPS | 16 H | 4 HR | vs LHP: .269 AVG | .706 OPS | 1 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +5.1 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
@@ -17617,7 +18405,7 @@
         "propType": "totalBases",
         "propLabel": "TB",
         "marketLabel": "Over 1.5 total bases",
-        "confidence": 76,
+        "confidence": 80,
         "probability": 63.3,
         "expectedValue": 2.2,
         "statValueLabel": "2.15 exp TB",
@@ -17657,14 +18445,14 @@
           "trackingPenalty": 18,
           "reason": "baseline career profile"
         },
-        "recommendationTier": "Strong",
+        "recommendationTier": "Core",
         "shadowSupportTag": "Soft heat",
         "shadowSupportLevel": "soft",
         "reason": "slot 1 carry | soft heat only: xSLG + hard-hit support is still thin | rolling Statcast power is live | baseline career profile",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
-          "deep-lineup",
           "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
@@ -17677,158 +18465,11 @@
         ],
         "matchupNote": "+10.00 vs Kyle Freeland",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".282 AVG | .805 OPS | 33 H | 4 HR | 12g: .348 AVG | 1.140 OPS | 16 H | 4 HR | vs LHP: .269 AVG | .706 OPS | 1 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +5.1 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
-        "id": "brewers-rockies:668930:hits",
-        "gameId": "brewers-rockies",
-        "gameTitle": "Brewers @ Rockies",
-        "league": "MLB",
-        "playerId": 668930,
-        "playerName": "Brice Turang",
-        "teamName": "Brewers",
-        "slot": 2,
-        "propType": "hits",
-        "propLabel": "Hits",
-        "marketLabel": "Over 1.5 hits",
-        "confidence": 65,
-        "probability": 42.3,
-        "expectedValue": 1.4,
-        "statValueLabel": "1.44 exp hits",
-        "sample": {
-          "seasonGames": 59,
-          "seasonPlateAppearances": 266,
-          "recentGames": 14,
-          "recentPlateAppearances": 60,
-          "statcastGames": 7,
-          "statcastPlateAppearances": 29,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 1966,
-          "seasonPa": 266,
-          "powerIndex": 38.31,
-          "contactRisk": 40.36,
-          "roleStability": 100,
-          "label": "contact-stable profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 67.3,
-            "processScore": 7,
-            "careerWeight": 0.1,
-            "identityDelta": 6.9,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 266,
-            "careerPa": 1966
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "contact-stable profile"
-        },
-        "recommendationTier": "Lean",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 2 carry | recent form up | clean traffic lane",
-        "scriptTags": [
-          "top-third-pressure",
-          "middle-order-traffic",
-          "deep-lineup",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "process-improving",
-          "statcast-power-up",
-          "statcast-fade"
-        ],
-        "matchupNote": "+10.00 vs Kyle Freeland",
-        "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".282 AVG | .891 OPS | 61 H | 9 HR | 14g: .385 AVG | 1.236 OPS | 20 H | 4 HR | vs LHP: .186 AVG | .542 OPS | 0 HR | career 1966 PA | .709 OPS | 38 HR | contact-stable profile | power 38 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +9.7 | +10.0 matchup grade in a traffic-risk lane"
-      },
-      {
-        "id": "brewers-rockies:668930:walks",
-        "gameId": "brewers-rockies",
-        "gameTitle": "Brewers @ Rockies",
-        "league": "MLB",
-        "playerId": 668930,
-        "playerName": "Brice Turang",
-        "teamName": "Brewers",
-        "slot": 2,
-        "propType": "walks",
-        "propLabel": "Walks",
-        "marketLabel": "Over 0.5 walks",
-        "confidence": 75,
-        "probability": 66.1,
-        "expectedValue": 1.1,
-        "statValueLabel": "1.08 exp walks",
-        "sample": {
-          "seasonGames": 59,
-          "seasonPlateAppearances": 266,
-          "recentGames": 14,
-          "recentPlateAppearances": 60,
-          "statcastGames": 7,
-          "statcastPlateAppearances": 29,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 1966,
-          "seasonPa": 266,
-          "powerIndex": 38.31,
-          "contactRisk": 40.36,
-          "roleStability": 100,
-          "label": "contact-stable profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 67.3,
-            "processScore": 7,
-            "careerWeight": 0.1,
-            "identityDelta": 6.9,
-            "tbDelta": 0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 266,
-            "careerPa": 1966
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "contact-stable profile"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 2 carry | recent form up | starter walk pressure",
-        "scriptTags": [
-          "top-third-pressure",
-          "middle-order-traffic",
-          "deep-lineup",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
-          "carry-bat-live",
-          "starter-wildness-lane",
-          "process-improving",
-          "statcast-power-up",
-          "statcast-fade"
-        ],
-        "matchupNote": "+10.00 vs Kyle Freeland",
-        "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".282 AVG | .891 OPS | 61 H | 9 HR | 14g: .385 AVG | 1.236 OPS | 20 H | 4 HR | vs LHP: .186 AVG | .542 OPS | 0 HR | career 1966 PA | .709 OPS | 38 HR | contact-stable profile | power 38 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +9.7 | +10.0 matchup grade in a traffic-risk lane"
-      },
-      {
-        "id": "brewers-rockies:694192:singles",
+        "id": "brewers-rockies:694192:hits",
         "gameId": "brewers-rockies",
         "gameTitle": "Brewers @ Rockies",
         "league": "MLB",
@@ -17836,13 +18477,13 @@
         "playerName": "Jackson Chourio",
         "teamName": "Brewers",
         "slot": 1,
-        "propType": "singles",
-        "propLabel": "Singles",
-        "marketLabel": "Over 0.5 singles",
-        "confidence": 73,
-        "probability": 66,
-        "expectedValue": 1.1,
-        "statValueLabel": "1.08 exp singles",
+        "propType": "hits",
+        "propLabel": "Hits",
+        "marketLabel": "Over 1.5 hits",
+        "confidence": 72,
+        "probability": 59.1,
+        "expectedValue": 2,
+        "statValueLabel": "1.99 exp hits",
         "sample": {
           "seasonGames": 28,
           "seasonPlateAppearances": 128,
@@ -17882,11 +18523,11 @@
         "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 1 carry | sweet-spot contact is live | recent form up | split fit live",
+        "reason": "slot 1 carry | recent form up | split fit live | clean traffic lane",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
-          "deep-lineup",
           "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
@@ -17897,11 +18538,11 @@
         ],
         "matchupNote": "+10.00 vs Kyle Freeland",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".282 AVG | .805 OPS | 33 H | 4 HR | 12g: .348 AVG | 1.140 OPS | 16 H | 4 HR | vs LHP: .269 AVG | .706 OPS | 1 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +5.1 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
-        "id": "brewers-rockies:668930:rbi",
+        "id": "brewers-rockies:668930:walks",
         "gameId": "brewers-rockies",
         "gameTitle": "Brewers @ Rockies",
         "league": "MLB",
@@ -17909,13 +18550,13 @@
         "playerName": "Brice Turang",
         "teamName": "Brewers",
         "slot": 2,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 82,
-        "probability": 74.6,
-        "expectedValue": 1.4,
-        "statValueLabel": "1.37 exp RBI",
+        "propType": "walks",
+        "propLabel": "Walks",
+        "marketLabel": "Over 0.5 walks",
+        "confidence": 79,
+        "probability": 66.4,
+        "expectedValue": 1.1,
+        "statValueLabel": "1.09 exp walks",
         "sample": {
           "seasonGames": 59,
           "seasonPlateAppearances": 266,
@@ -17955,103 +18596,108 @@
         "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 2 carry | process improving; approach 67.3/100 | recent form up | run-production slot",
+        "reason": "slot 2 carry | recent form up | starter walk pressure",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
-          "deep-lineup",
           "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
+          "starter-wildness-lane",
           "process-improving",
-          "run-production-slot",
           "statcast-power-up",
           "statcast-fade"
         ],
         "matchupNote": "+10.00 vs Kyle Freeland",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
+        "lineupStatus": "posted",
         "playerSummary": ".282 AVG | .891 OPS | 61 H | 9 HR | 14g: .385 AVG | 1.236 OPS | 20 H | 4 HR | vs LHP: .186 AVG | .542 OPS | 0 HR | career 1966 PA | .709 OPS | 38 HR | contact-stable profile | power 38 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +9.7 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
-        "id": "brewers-rockies:696100:rbi",
+        "id": "brewers-rockies:694192:singles",
         "gameId": "brewers-rockies",
         "gameTitle": "Brewers @ Rockies",
         "league": "MLB",
-        "playerId": 696100,
-        "playerName": "Hunter Goodman",
-        "teamName": "Rockies",
-        "slot": 4,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 78,
-        "probability": 84.3,
-        "expectedValue": 1.9,
-        "statValueLabel": "1.85 exp RBI",
+        "playerId": 694192,
+        "playerName": "Jackson Chourio",
+        "teamName": "Brewers",
+        "slot": 1,
+        "propType": "singles",
+        "propLabel": "Singles",
+        "marketLabel": "Over 0.5 singles",
+        "confidence": 80,
+        "probability": 71.6,
+        "expectedValue": 1.3,
+        "statValueLabel": "1.26 exp singles",
         "sample": {
-          "seasonGames": 59,
-          "seasonPlateAppearances": 248,
+          "seasonGames": 28,
+          "seasonPlateAppearances": 128,
           "recentGames": 12,
-          "recentPlateAppearances": 56,
+          "recentPlateAppearances": 54,
           "statcastGames": 6,
-          "statcastPlateAppearances": 29,
+          "statcastPlateAppearances": 26,
           "opponentContextGames": 0
         },
         "repeatability": {
-          "careerPa": 1104,
-          "seasonPa": 248,
-          "powerIndex": 85.4,
-          "contactRisk": 58.51,
-          "roleStability": 100,
-          "label": "volatile career power",
-          "volatilityLabel": "strikeout volatility",
+          "careerPa": 1263,
+          "seasonPa": 128,
+          "powerIndex": 64.05,
+          "contactRisk": 44.26,
+          "roleStability": 96,
+          "label": "baseline career profile",
+          "volatilityLabel": "stable enough",
           "careerPowerBacked": true,
-          "careerVolatile": true,
+          "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 73.6,
-            "processScore": 18,
+            "confidenceScore": 67.2,
+            "processScore": 15,
             "careerWeight": 0.1,
-            "identityDelta": 2.8,
+            "identityDelta": -0.9,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 248,
-            "careerPa": 1104
+            "seasonPa": 128,
+            "careerPa": 1263
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
-          "reason": "volatile career power"
+          "reason": "baseline career profile"
         },
-        "recommendationTier": "Strong",
+        "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 4 carry | process improving; approach 73.6/100 | recent form up | split fit live",
+        "reason": "slot 1 carry | sweet-spot contact is live | recent form up | split fit live",
         "scriptTags": [
+          "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
+          "run-ceiling-live",
+          "traffic-lane-live",
+          "clean-conversion-lane",
           "carry-bat-live",
           "process-improving",
-          "run-production-slot",
           "statcast-power-up",
-          "statcast-hr-carry"
+          "statcast-contact-up"
         ],
-        "matchupNote": "+10.00 vs Shane Drohan",
+        "matchupNote": "+10.00 vs Kyle Freeland",
         "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".242 AVG | .821 OPS | 54 H | 16 HR | 12g: .227 AVG | 1.084 OPS | 10 H | 6 HR | vs LHP: .238 AVG | .776 OPS | 4 HR | career 1104 PA | .775 OPS | 58 HR | volatile career power | power 85 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Sinker 19% / Slider 18% | fit +1.0 | +10.0 matchup grade in a neutral lane"
+        "lineupStatus": "posted",
+        "playerSummary": ".282 AVG | .805 OPS | 33 H | 4 HR | 12g: .348 AVG | 1.140 OPS | 16 H | 4 HR | vs LHP: .269 AVG | .706 OPS | 1 HR | career 1263 PA | .776 OPS | 44 HR | baseline career profile | power 64 | 2026 sample ok | arsenal 4-Seam Fastball 27% / Curveball 22% / Cutter 17% | fit +5.1 | +10.0 matchup grade in a traffic-risk lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 34,
+    "candidateCount": 59,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

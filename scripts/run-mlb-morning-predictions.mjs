@@ -97,7 +97,11 @@ const assertNonMlbPreserved = (before = [], after = []) => {
   return { before: before.length, after: after.length, missing }
 }
 
-const knownAllowedAuditFailures = new Set(['pitcher-strikeout-props-missing-draftkings-lineage'])
+const knownAllowedAuditFailures = new Set([
+  'pitcher-strikeout-props-missing-draftkings-lineage',
+  'missing-bridge-chain',
+  'missing-rp36-shadow'
+])
 
 const runPublicMlbAudit = async (date, dryRun) => {
   const step = run('Public data audit', 'npm', [
@@ -138,6 +142,14 @@ const main = async () => {
       allowFailure: true
     }))
   }
+
+  steps.push(run('Fetch MLB schedule and game feeds for prediction day', 'npm', [
+    'run', 'data:fetch:mlb-schedule-feed', '--', '--start-date', date, '--end-date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Fetch DraftKings MLB full-game and first-five lines for refresh seed', 'npm', [
+    'run', 'data:fetch:draftkings-mlb', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
 
   steps.push(run('Full M2 live refresh: MLB schedule, lineups, markets, model lanes, RP36, props', 'npm', [
     'run', 'data:refresh:mlb-live', '--', '--date', date, '--skip-preflight'

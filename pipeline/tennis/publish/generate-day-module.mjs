@@ -222,8 +222,8 @@ const splitEventName = (name) => String(name || '').split(/\s+vs\s+/i).map((part
 
 const SURFACE_BY_TOURNAMENT_TOKEN = [
   [/french open|roland garros|paris/i, 'Clay'],
-  [/perugia|prostejov|bad rappenau|heilbronn|neckarcup|foggia|makarska/i, 'Clay'],
-  [/\b(birmingham|wimbledon|halle|queen)\b/i, 'Grass'],
+  [/perugia|prostejov|bad rappenau|heilbronn|neckarcup|foggia|makarska|modena|bratislava|lyon|cattolica|san miguel de tucuman/i, 'Clay'],
+  [/\b(birmingham|wimbledon|halle|queen|hertogenbosch|london|ilkley)\b/i, 'Grass'],
   [/tyler|centurion/i, 'Hard']
 ]
 
@@ -924,15 +924,17 @@ const valueGrade = ({ edgePct, ev, marketType, odds, modelPct }) => {
     if (edge >= 3 && value > 0) return 'Raw positive EV'
   }
   if (type === 'ml' && price < -400) return 'Favorite tax trap'
-  if (type === 'ml' && issue === 'Validated ML candidate') return 'Bet-grade value'
-  if (type === 'ml' && value > 0 && issue !== 'Validated ML candidate') return issue
+  if (type === 'ml' && issue === 'Validated ML candidate') return 'ML watch only'
+  if (type === 'ml' && value > 0 && issue !== 'Validated ML candidate') return `${issue} - watch only`
   if (edge >= 3 && value > 0) return 'Thin value'
   if (edge <= -4 || value < -4) return 'Negative EV'
   return 'Near fair'
 }
 
-const isBetGradeValue = ({ marketType, edgePct, ev, odds, modelPct }) =>
-  valueGrade({ marketType, edgePct, ev, odds, modelPct }) === 'Bet-grade value'
+const isBetGradeValue = ({ marketType, edgePct, ev, odds, modelPct }) => {
+  if (String(marketType || '').toLowerCase() === 'ml') return false
+  return valueGrade({ marketType, edgePct, ev, odds, modelPct }) === 'Bet-grade value'
+}
 
 const edgeVsOdds = (modelPct, odds) => {
   const impliedPct = americanToImpliedPct(odds)
@@ -953,7 +955,7 @@ const priceBandFor = (impliedPct) => {
 const predictionMarketGrade = (edgePct) => {
   const edge = Number(edgePct)
   if (!Number.isFinite(edge)) return 'No prediction-market price'
-  if (edge >= 7) return 'Prediction-market value'
+  if (edge >= 7) return 'Prediction-market watch'
   if (edge >= 4) return 'Prediction-market watch'
   if (edge > 0) return 'Thin prediction-market edge'
   if (edge <= -7) return 'Prediction-market fade'
@@ -1705,7 +1707,7 @@ const buildValueBoard = ({ marketData, pickName, confidence, volatility, weaknes
         feePer100: null,
         valueIssue: valueIssueText,
         valueGrade: valueGradeText,
-        betGrade: valueGradeText === 'Prediction-market value'
+        betGrade: false
       },
       spread: {
         marketType: 'Spread',
@@ -2205,12 +2207,9 @@ const buildSupplementGame = (match, rankings, warehouse, sportsbookIndex) => {
   const qualityB = mergeWarehouseExpectedStats(b.name, null, warehouseB)
   const depthA = warehouseDepthSummary(warehouseA)
   const depthB = warehouseDepthSummary(warehouseB)
-  const hasWarehouseDepth = hasExpectedStats(qualityA)
-    || hasExpectedStats(qualityB)
-    || depthA.recentRows > 0
-    || depthB.recentRows > 0
-    || depthA.recentMatches > 0
-    || depthB.recentMatches > 0
+  const hasDepthA = hasExpectedStats(qualityA) || depthA.recentRows > 0 || depthA.recentMatches > 0
+  const hasDepthB = hasExpectedStats(qualityB) || depthB.recentRows > 0 || depthB.recentMatches > 0
+  const hasWarehouseDepth = hasDepthA && hasDepthB
   const scoreA = hasWarehouseDepth ? playerScore(rankA, qualityA, isAtp, surface) : 0
   const scoreB = hasWarehouseDepth ? playerScore(rankB, qualityB, isAtp, surface) : 0
   const basePickA = scoreA >= scoreB

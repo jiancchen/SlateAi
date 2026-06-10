@@ -231,14 +231,48 @@ def _draftkings_event_game(resolver: MlbIdentityResolver, event: dict[str, Any],
 
 
 def _draftkings_market_type(name: str) -> str | None:
-    return {
+    direct = {
         "Moneyline": "winner",
         "Run Line": "spread",
         "Total": "total",
         "1st 5 Innings": "first5Winner",
         "Run Line - 1st 5 Innings": "first5Spread",
         "Total Runs - 1st 5 Innings": "first5Total",
+        "Total Runs - 1st 3 Innings": "first3Total",
+        "Total Runs - 1st 7 Innings": "first7Total",
     }.get(name)
+    if direct:
+        return direct
+    market_type = name.split(":", 1)[-1].strip()
+    return {
+        "Team Total Runs": "teamTotalRuns",
+        "Team Total Runs - 1st 3 Innings": "teamTotalRunsFirst3",
+        "Team Total Runs - 1st 5 Innings": "teamTotalRunsFirst5",
+        "Team Total Runs - 1st 7 Innings": "teamTotalRunsFirst7",
+        "Team Total Hits": "teamTotalHits",
+        "Team Hits O/U": "teamTotalHits",
+        "Hits Allowed O/U": "pitcher_hits_allowed",
+        "Earned Runs Allowed O/U": "pitcher_earned_runs_allowed",
+        "Win Probability": "pitcher_record_win",
+    }.get(market_type)
+
+
+def _draftkings_market_type_for_market(market: dict[str, Any]) -> str | None:
+    market_type_name = str((market.get("marketType") or {}).get("name") or "")
+    detected = _draftkings_market_type(str(market.get("name") or ""))
+    if detected:
+        return detected
+    detected = _draftkings_market_type(market_type_name)
+    if detected:
+        return detected
+    market_name = str(market.get("name") or "")
+    if market_name.endswith(" Hits Allowed O/U"):
+        return "pitcher_hits_allowed"
+    if market_name.endswith(" Earned Runs Allowed O/U"):
+        return "pitcher_earned_runs_allowed"
+    if market_name.startswith("Will ") and market_name.endswith(" Record a Win?"):
+        return "pitcher_record_win"
+    return None
 
 
 def _draftkings_is_pitcher_strikeout_prop(market: dict[str, Any]) -> bool:
@@ -254,7 +288,7 @@ def _draftkings_is_pitcher_strikeout_prop(market: dict[str, Any]) -> bool:
 
 
 def _draftkings_market_selections(event: dict[str, Any], market: dict[str, Any], market_type: str) -> list[dict[str, Any]]:
-    if market_type in {"spread", "total", "first5Spread", "first5Total"}:
+    if market_type in {"spread", "total", "first5Spread", "first5Total", "first3Total", "first7Total", "teamTotalRuns", "teamTotalRunsFirst3", "teamTotalRunsFirst5", "teamTotalRunsFirst7", "teamTotalHits", "pitcher_hits_allowed", "pitcher_earned_runs_allowed"}:
         return _draftkings_main_point_selections(event, market)
     return _draftkings_selections_for(event, market)
 
@@ -272,6 +306,24 @@ def _draftkings_role_from_player(player: dict[str, Any]) -> str | None:
         return "home"
     if venue_role.startswith("away"):
         return "away"
+    return None
+
+
+def _draftkings_market_team_id(resolver: MlbIdentityResolver, game_id: str | None, market: dict[str, Any], selection: dict[str, Any]) -> str | None:
+    for participant in selection.get("participants") or []:
+        if not isinstance(participant, dict) or str(participant.get("type") or "").lower() != "team":
+            continue
+        role = str(participant.get("venueRole") or "").lower()
+        if role in {"away", "awayteam"}:
+            return resolver.team_id_for_game_role(game_id, "Away")
+        if role in {"home", "hometeam"}:
+            return resolver.team_id_for_game_role(game_id, "Home")
+        team_id = _team_id_for_draftkings_name(resolver, participant.get("name"))
+        if team_id:
+            return team_id
+    market_name = str(market.get("name") or "")
+    if ":" in market_name:
+        return _team_id_for_draftkings_name(resolver, market_name.split(":", 1)[0])
     return None
 
 
@@ -536,15 +588,25 @@ def parse_draftkings_payload(
 
         for market in _draftkings_all_markets(event):
             market_name = str(market.get("name") or "")
-            market_type = _draftkings_market_type(market_name)
-            if _draftkings_is_pitcher_strikeout_prop(market):
+            market_type = _draftkings_market_type_for_market(market)
+            if _draftkings_is_pitcher_strikeout_prop(market) or market_type in {"pitcher_hits_allowed", "pitcher_earned_runs_allowed", "pitcher_record_win"}:
                 for selection in _draftkings_main_point_selections(event, market):
                     odds_american = _draftkings_american_odds(selection)
                     line_value = to_float(selection.get("points"))
-                    if odds_american is None or line_value is None:
+                    if odds_american is None:
+                        continue
+                    if market_type != "pitcher_record_win" and line_value is None:
                         continue
                     player = _draftkings_selection_player(selection)
-                    player_name = player.get("name") or str(market_name).replace(" Strikeouts Thrown O/U", "")
+                    player_name = (
+                        player.get("name")
+                        or str(market_name)
+                        .replace(" Strikeouts Thrown O/U", "")
+                        .replace(" Hits Allowed O/U", "")
+                        .replace(" Earned Runs Allowed O/U", "")
+                        .replace("Will ", "")
+                        .replace(" Record a Win?", "")
+                    )
                     player_id = resolver.player_id_by_name("draftkings", player_name)
                     if not player_id:
                         counts["unmapped_prop_players"] += 1
@@ -552,7 +614,11 @@ def parse_draftkings_payload(
                     team_id = resolver.team_id_for_game_role(game_id, role)
                     opponent_team_id = resolver.opponent_team_id_for_game_role(game_id, role)
                     selection_name = str(selection.get("outcomeType") or selection.get("label") or "").title()
-                    if selection_name not in {"Over", "Under"}:
+                    prop_market_type = market_type if market_type in {"pitcher_hits_allowed", "pitcher_earned_runs_allowed", "pitcher_record_win"} else "pitcher_strikeouts"
+                    if prop_market_type == "pitcher_record_win":
+                        if selection_name not in {"Yes", "No"}:
+                            continue
+                    elif selection_name not in {"Over", "Under"}:
                         continue
                     counts["source_prop_rows"] += 1
                     source_pk = f"{local_path}:{event.get('eventId')}:{market.get('id')}:{selection.get('id')}"
@@ -581,8 +647,8 @@ def parse_draftkings_payload(
                             "opponent_team_id": opponent_team_id,
                             "source_name": "draftkings",
                             "sportsbook": "DraftKings Sportsbook",
-                            "market_type": "pitcher_strikeouts",
-                            "market_key": "pitcher_strikeouts",
+                            "market_type": prop_market_type,
+                            "market_key": prop_market_type,
                             "selection": selection_name,
                             "line_value": line_value,
                             "american_odds": odds_american,
@@ -590,7 +656,7 @@ def parse_draftkings_payload(
                             "market_date": date,
                             "commence_time": event.get("startEventDate"),
                             "captured_at": captured_at,
-                            "outcome_description": f"{player_name} Strikeouts Thrown O/U",
+                            "outcome_description": market_name,
                             "source_event_id": str(event.get("eventId") or ""),
                             "source_path": local_path,
                             "source_table": "raw_draftkings_mlb_pitcher_props",
@@ -599,6 +665,8 @@ def parse_draftkings_payload(
                             "created_at": utc_now(),
                         }
                     )
+            if market_type in {"pitcher_hits_allowed", "pitcher_earned_runs_allowed", "pitcher_record_win"}:
+                continue
             if not market_type:
                 continue
             for selection in _draftkings_market_selections(event, market, market_type):
@@ -610,6 +678,8 @@ def parse_draftkings_payload(
                 team_id = None
                 if market_type in {"winner", "spread", "first5Winner", "first5Spread"}:
                     team_id = resolver.team_id_for_game_role(game_id, role) or _team_id_for_draftkings_name(resolver, selection.get("label"))
+                elif market_type in {"teamTotalRuns", "teamTotalRunsFirst3", "teamTotalRunsFirst5", "teamTotalRunsFirst7", "teamTotalHits"}:
+                    team_id = _draftkings_market_team_id(resolver, game_id, market, selection)
                 team_abbrev = resolver.teams_by_id.get(team_id, {}).get("abbreviation") if team_id else None
                 selection_name = str(selection.get("label") or role or selection.get("id"))
                 selection_code = team_abbrev or role or selection_name

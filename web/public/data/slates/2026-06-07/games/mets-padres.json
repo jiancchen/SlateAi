@@ -15,12 +15,12 @@
     {
       "side": "Away",
       "name": "Mets",
-      "detail": "Huascar Brazobán (RHP) | 3-1 | 2.25 ERA | 26 SO | 1.00 WHIP | 32.0 IP"
+      "detail": "Huascar Brazobán (RHP) | 3-1 | 2.18 ERA | 26 SO | 1.03 WHIP | 33.0 IP"
     },
     {
       "side": "Home",
       "name": "Padres",
-      "detail": "Randy Vásquez (RHP) | 5-3 | 3.31 ERA | 50 SO | 1.22 WHIP | 65.1 IP"
+      "detail": "Randy Vásquez (RHP) | 5-4 | 3.63 ERA | 53 SO | 1.30 WHIP | 69.1 IP"
     }
   ],
   "summary": "Mets @ Padres with Huascar Brazobán against Randy Vásquez.",
@@ -36,20 +36,20 @@
       "divisionRank": "5",
       "gamesBack": "15.5",
       "losses": 36,
-      "runDifferential": -9,
-      "streakCode": "L1",
-      "winningPercentage": ".438",
-      "wins": 28
+      "runDifferential": -5,
+      "streakCode": "W1",
+      "winningPercentage": ".446",
+      "wins": 29
     },
     "home": {
       "divisionLeader": false,
-      "divisionRank": "2",
-      "gamesBack": "8.0",
-      "losses": 30,
+      "divisionRank": "3",
+      "gamesBack": "7.5",
+      "losses": 31,
       "runDifferential": -14,
       "streakCode": "W1",
-      "winningPercentage": ".524",
-      "wins": 33
+      "winningPercentage": ".523",
+      "wins": 34
     }
   },
   "parkContext": {
@@ -270,12 +270,12 @@
       "home": {
         "playerName": "Randy Vasquez",
         "line": 3.5,
-        "overPrice": -133,
+        "overPrice": -128,
         "underPrice": 104,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       }
     },
     "seriesEarlyPhase": {
@@ -470,6 +470,172 @@
     },
     "recentInningHistory": {
       "away": [
+        {
+          "gamePk": 823624,
+          "date": "2026-05-26",
+          "opponent": "Reds",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 2,
+          "runsAgainst": 7,
+          "starters": {
+            "team": {
+              "pitcherId": 656849,
+              "pitcherName": "David Peterson",
+              "teamName": "New York Mets",
+              "opponentName": "Cincinnati Reds",
+              "firstInningRunsAllowed": 2,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 695505,
+              "pitcherName": "Chase Burns",
+              "teamName": "Cincinnati Reds",
+              "opponentName": "New York Mets",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 2
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 823626,
+          "date": "2026-05-27",
+          "opponent": "Reds",
+          "venueRole": "home",
+          "result": "W",
+          "runsFor": 4,
+          "runsAgainst": 2,
+          "starters": {
+            "team": {
+              "pitcherId": 623211,
+              "pitcherName": "Huascar Brazobán",
+              "teamName": "New York Mets",
+              "opponentName": "Cincinnati Reds",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 671096,
+              "pitcherName": "Andrew Abbott",
+              "teamName": "Cincinnati Reds",
+              "opponentName": "New York Mets",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Short",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "Held",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 1
+            },
+            {
+              "inning": 2,
+              "runs": 1
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 1
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 1
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 823623,
           "date": "2026-05-29",
@@ -828,8 +994,8 @@
               "tone": "warning"
             },
             "hitters": {
-              "label": "Stranded",
-              "tone": "warning"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Cracked",
@@ -851,7 +1017,7 @@
             },
             {
               "inning": 3,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 4,
@@ -863,7 +1029,7 @@
             },
             {
               "inning": 6,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 7,
@@ -919,14 +1085,14 @@
               "tone": "positive"
             },
             "relief": {
-              "label": "Won late",
+              "label": "Held",
               "tone": "positive"
             }
           },
           "innings": [
             {
               "inning": 1,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 2,
@@ -938,11 +1104,11 @@
             },
             {
               "inning": 4,
-              "runs": 8
+              "runs": 4
             },
             {
               "inning": 5,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 6,
@@ -954,7 +1120,7 @@
             },
             {
               "inning": 8,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 9,
@@ -1102,6 +1268,255 @@
         }
       ],
       "home": [
+        {
+          "gamePk": 823294,
+          "date": "2026-05-26",
+          "opponent": "Phillies",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 3,
+          "runsAgainst": 4,
+          "starters": {
+            "team": {
+              "pitcherId": 681190,
+              "pitcherName": "Randy Vásquez",
+              "teamName": "San Diego Padres",
+              "opponentName": "Philadelphia Phillies",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 605400,
+              "pitcherName": "Aaron Nola",
+              "teamName": "Philadelphia Phillies",
+              "opponentName": "San Diego Padres",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Mixed",
+              "tone": "info"
+            },
+            "starter": {
+              "label": "Mixed",
+              "tone": "warning"
+            },
+            "relief": {
+              "label": "No rescue",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 2
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 1
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 823295,
+          "date": "2026-05-27",
+          "opponent": "Phillies",
+          "venueRole": "home",
+          "result": "L",
+          "runsFor": 0,
+          "runsAgainst": 3,
+          "starters": {
+            "team": {
+              "pitcherId": 621111,
+              "pitcherName": "Walker Buehler",
+              "teamName": "San Diego Padres",
+              "opponentName": "Philadelphia Phillies",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            },
+            "opponent": {
+              "pitcherId": 650911,
+              "pitcherName": "Cristopher Sánchez",
+              "teamName": "Philadelphia Phillies",
+              "opponentName": "San Diego Padres",
+              "firstInningRunsAllowed": 0,
+              "firstInningOutcome": "NRFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Lost",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Flat",
+              "tone": "warning"
+            },
+            "starter": {
+              "label": "Met",
+              "tone": "positive"
+            },
+            "relief": {
+              "label": "Lost late",
+              "tone": "warning"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 0
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 0
+            },
+            {
+              "inning": 4,
+              "runs": 0
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 0
+            },
+            {
+              "inning": 7,
+              "runs": 0
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
+        {
+          "gamePk": 822732,
+          "date": "2026-05-29",
+          "opponent": "Nationals",
+          "venueRole": "road",
+          "result": "W",
+          "runsFor": 7,
+          "runsAgainst": 5,
+          "starters": {
+            "team": {
+              "pitcherId": 608337,
+              "pitcherName": "Lucas Giolito",
+              "teamName": "San Diego Padres",
+              "opponentName": "Washington Nationals",
+              "firstInningRunsAllowed": 2,
+              "firstInningOutcome": "RFI"
+            },
+            "opponent": {
+              "pitcherId": 687606,
+              "pitcherName": "Paxton Schultz",
+              "teamName": "Washington Nationals",
+              "opponentName": "San Diego Padres",
+              "firstInningRunsAllowed": 1,
+              "firstInningOutcome": "RFI"
+            }
+          },
+          "storyAxes": {
+            "market": {
+              "label": "Won",
+              "tone": "info"
+            },
+            "hitters": {
+              "label": "Cashed",
+              "tone": "positive"
+            },
+            "starter": {
+              "label": "Cracked",
+              "tone": "negative"
+            },
+            "relief": {
+              "label": "Rescued",
+              "tone": "positive"
+            }
+          },
+          "innings": [
+            {
+              "inning": 1,
+              "runs": 1
+            },
+            {
+              "inning": 2,
+              "runs": 0
+            },
+            {
+              "inning": 3,
+              "runs": 1
+            },
+            {
+              "inning": 4,
+              "runs": 2
+            },
+            {
+              "inning": 5,
+              "runs": 0
+            },
+            {
+              "inning": 6,
+              "runs": 1
+            },
+            {
+              "inning": 7,
+              "runs": 2
+            },
+            {
+              "inning": 8,
+              "runs": 0
+            },
+            {
+              "inning": 9,
+              "runs": 0
+            }
+          ]
+        },
         {
           "gamePk": 822731,
           "date": "2026-05-30",
@@ -1300,8 +1715,8 @@
               "tone": "warning"
             },
             "hitters": {
-              "label": "Stranded",
-              "tone": "warning"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Short",
@@ -1323,7 +1738,7 @@
             },
             {
               "inning": 3,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 4,
@@ -1383,8 +1798,8 @@
               "tone": "warning"
             },
             "hitters": {
-              "label": "Late cash",
-              "tone": "positive"
+              "label": "Mixed",
+              "tone": "info"
             },
             "starter": {
               "label": "Short",
@@ -1422,11 +1837,11 @@
             },
             {
               "inning": 7,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 8,
-              "runs": 2
+              "runs": 1
             },
             {
               "inning": 9,
@@ -1505,7 +1920,7 @@
             },
             {
               "inning": 7,
-              "runs": 4
+              "runs": 2
             },
             {
               "inning": 8,
@@ -1513,7 +1928,7 @@
             },
             {
               "inning": 9,
-              "runs": 4
+              "runs": 2
             }
           ]
         },
@@ -1939,7 +2354,219 @@
         }
       ]
     },
-    "sunVisibility": null
+    "sunVisibility": null,
+    "inningRunMatrix": {
+      "source": "M2 inning run map: inning 1 YRFI/NRFI, innings 2-5 F5 allocator",
+      "sourceStatus": "m2",
+      "gameId": "mlb-823291",
+      "rows": [
+        {
+          "inning": 1,
+          "phase": "M2 YRFI/NRFI",
+          "runProbabilityPct": 8,
+          "noRunProbabilityPct": 92,
+          "awayRunProbabilityPct": 4,
+          "homeRunProbabilityPct": 4,
+          "lean": "No run",
+          "strength": "strong",
+          "sampleHalves": 127,
+          "caution": "Mets top order is driving early pressure (76.8) Padres starter has leaked 1st-inning runs in 40% of recent starts",
+          "reason": "NRFI with a 92% modeled chance that the first inning stays scoreless. Mets score 4% of the time and Padres 4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "sourceModel": "M2 first-inning"
+        },
+        {
+          "inning": 2,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 57.3,
+          "noRunProbabilityPct": 42.7,
+          "awayRunProbabilityPct": 33.7,
+          "homeRunProbabilityPct": 23.6,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 127,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.5 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Mets F5 runs 1.5; Padres F5 runs 1.5; Randy Vasquez: HA 4.5, ER 2.5, win yes +255; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 3,
+          "phase": "M2 early F5",
+          "runProbabilityPct": 53.9,
+          "noRunProbabilityPct": 46.1,
+          "awayRunProbabilityPct": 23.8,
+          "homeRunProbabilityPct": 30.1,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 127,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.5 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Mets F5 runs 1.5; Padres F5 runs 1.5; Randy Vasquez: HA 4.5, ER 2.5, win yes +255; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 4,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 57.2,
+          "noRunProbabilityPct": 42.8,
+          "awayRunProbabilityPct": 29.3,
+          "homeRunProbabilityPct": 27.9,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 127,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.5 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Mets F5 runs 1.5; Padres F5 runs 1.5; Randy Vasquez: HA 4.5, ER 2.5, win yes +255; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 5,
+          "phase": "M2 turnover F5",
+          "runProbabilityPct": 56.1,
+          "noRunProbabilityPct": 43.9,
+          "awayRunProbabilityPct": 29.7,
+          "homeRunProbabilityPct": 26.4,
+          "lean": "Run",
+          "strength": "m2-baseline",
+          "sampleHalves": 127,
+          "caution": "Allocated from M2 first-five total; inning split is directional.",
+          "reason": "M2 F5 allocator: 3.5 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Mets F5 runs 1.5; Padres F5 runs 1.5; Randy Vasquez: HA 4.5, ER 2.5, win yes +255; team-hit line unavailable.",
+          "sourceModel": "M2 F5 allocator"
+        },
+        {
+          "inning": 6,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 7,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 8,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        },
+        {
+          "inning": 9,
+          "phase": "not modeled",
+          "runProbabilityPct": null,
+          "noRunProbabilityPct": null,
+          "awayRunProbabilityPct": null,
+          "homeRunProbabilityPct": null,
+          "lean": "",
+          "strength": "blank",
+          "sampleHalves": null,
+          "caution": "Bullpen/late-inning model intentionally blank.",
+          "reason": ""
+        }
+      ],
+      "title": "Mets @ Padres",
+      "mlbGamePk": 823291,
+      "marketAnchors": {
+        "source": "sql-mlb.db typed market anchors",
+        "teamRuns": {
+          "padres": {
+            "first3": {
+              "line": 0.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          },
+          "mets": {
+            "first3": {
+              "line": 0.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first5": {
+              "line": 1.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "first7": {
+              "line": 2.5,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": null,
+              "noOdds": null
+            }
+          }
+        },
+        "teamHits": {},
+        "pitchers": {
+          "randy-vasquez": {
+            "name": "Randy Vasquez",
+            "earnedRunsAllowed": {
+              "line": 2.5,
+              "overOdds": 107,
+              "underOdds": -142,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "hitsAllowed": {
+              "line": 4.5,
+              "overOdds": -165,
+              "underOdds": 124,
+              "yesOdds": null,
+              "noOdds": null
+            },
+            "recordWin": {
+              "line": null,
+              "overOdds": null,
+              "underOdds": null,
+              "yesOdds": 255,
+              "noOdds": -371
+            }
+          }
+        },
+        "missing": [
+          "team total hits"
+        ]
+      }
+    }
   },
   "lineupContext": {
     "Mets": {
@@ -1994,7 +2621,7 @@
   "lineupBoard": {
     "gameId": "mets-padres",
     "title": "Mets @ Padres",
-    "snapshot": "2026-06-07T15:20:45.582Z",
+    "snapshot": "2026-06-07T16:39:59.692Z",
     "status": {
       "away": "partial",
       "home": "partial"
@@ -6078,14 +6705,14 @@
       "pitchHand": "R",
       "wins": 3,
       "losses": 1,
-      "era": "2.25",
+      "era": "2.18",
       "strikeOuts": 26,
-      "inningsPitched": "32.0",
+      "inningsPitched": "33.0",
       "hitsAllowed": 19,
-      "walks": 13,
+      "walks": 15,
       "homeRunsAllowed": 2,
-      "whip": "1.00",
-      "gamesStarted": 5,
+      "whip": "1.03",
+      "gamesStarted": 6,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 623211,
@@ -6235,7 +6862,7 @@
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/huascar-brazoban-vs-padres",
-        "answerText": "Huascar Brazobán with an ERA of 4.70 and 6 strikeouts in 6 appearances versus the Padres in his career.",
+        "answerText": "Huascar Brazobán with an ERA of 4.70 and 6 strikeouts in 6 appearances against the Padres in his career.",
         "pitcherName": "Huascar Brazobán",
         "pitcherTeam": "Mets",
         "opponentTeam": "Padres",
@@ -6423,7 +7050,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:16:59.992Z"
+        "fetchedAt": "2026-06-07T16:39:16.279Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -12272,7 +12899,7 @@
           "vs. Left: .196 AVG / .593 OPS allowed.",
           "PETCO Park: 0.00 ERA / .000 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -12298,15 +12925,15 @@
       "fullName": "Randy Vásquez",
       "pitchHand": "R",
       "wins": 5,
-      "losses": 3,
-      "era": "3.31",
-      "strikeOuts": 50,
-      "inningsPitched": "65.1",
-      "hitsAllowed": 62,
-      "walks": 18,
-      "homeRunsAllowed": 9,
-      "whip": "1.22",
-      "gamesStarted": 12,
+      "losses": 4,
+      "era": "3.63",
+      "strikeOuts": 53,
+      "inningsPitched": "69.1",
+      "hitsAllowed": 70,
+      "walks": 20,
+      "homeRunsAllowed": 10,
+      "whip": "1.30",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 681190,
@@ -12455,17 +13082,17 @@
       "strikeoutMarket": {
         "playerName": "Randy Vasquez",
         "line": 3.5,
-        "overPrice": -133,
+        "overPrice": -128,
         "underPrice": 104,
         "sportsbook": "DraftKings Sportsbook",
         "sourceName": "draftkings",
         "sourcePath": "https://sportsbook.draftkings.com/leagues/baseball/mlb",
-        "capturedAt": "2026-06-07T15:15:16.401Z"
+        "capturedAt": "2026-06-07T16:37:48.630Z"
       },
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/randy-vasquez-vs-mets",
-        "answerText": "Randy Vásquez has given up 4 runs on 4 hits with 1 walk and 3 strikeouts in 2.1 innings against the Mets in his career. He has been charged with the loss.",
+        "answerText": "Randy Vásquez has allowed 4 runs on 4 hits with 1 walk and 3 strikeouts in 2.1 innings versus the Mets in his career. He has been charged with the loss.",
         "pitcherName": "Randy Vásquez",
         "pitcherTeam": "Padres",
         "opponentTeam": "Mets",
@@ -12509,7 +13136,7 @@
             "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-07T15:17:01.690Z"
+        "fetchedAt": "2026-06-07T16:39:17.835Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -17168,7 +17795,7 @@
           "vs. Left: .266 AVG / .759 OPS allowed.",
           "PETCO Park: 4.54 ERA / .279 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-07T15:17:04.982Z"
+        "fetchedAt": "2026-06-07T16:39:21.344Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -17249,7 +17876,7 @@
       "index": 0,
       "role": "Away",
       "name": "Mets",
-      "detail": "Huascar Brazobán (RHP) | 3-1 | 2.25 ERA | 26 SO | 1.00 WHIP | 32.0 IP",
+      "detail": "Huascar Brazobán (RHP) | 3-1 | 2.18 ERA | 26 SO | 1.03 WHIP | 33.0 IP",
       "americanOdds": -110,
       "americanLabel": "-110",
       "decimalOdds": 1.9090909090909092,
@@ -17261,7 +17888,7 @@
       "index": 1,
       "role": "Home",
       "name": "Padres",
-      "detail": "Randy Vásquez (RHP) | 5-3 | 3.31 ERA | 50 SO | 1.22 WHIP | 65.1 IP",
+      "detail": "Randy Vásquez (RHP) | 5-4 | 3.63 ERA | 53 SO | 1.30 WHIP | 69.1 IP",
       "americanOdds": -110,
       "americanLabel": "-110",
       "decimalOdds": 1.9090909090909092,
@@ -17279,7 +17906,7 @@
         "index": 0,
         "role": "Away",
         "name": "Mets",
-        "detail": "Huascar Brazobán (RHP) | 3-1 | 2.25 ERA | 26 SO | 1.00 WHIP | 32.0 IP",
+        "detail": "Huascar Brazobán (RHP) | 3-1 | 2.18 ERA | 26 SO | 1.03 WHIP | 33.0 IP",
         "americanOdds": -110,
         "americanLabel": "-110",
         "decimalOdds": 1.9090909090909092,
@@ -17291,7 +17918,7 @@
         "index": 1,
         "role": "Home",
         "name": "Padres",
-        "detail": "Randy Vásquez (RHP) | 5-3 | 3.31 ERA | 50 SO | 1.22 WHIP | 65.1 IP",
+        "detail": "Randy Vásquez (RHP) | 5-4 | 3.63 ERA | 53 SO | 1.30 WHIP | 69.1 IP",
         "americanOdds": -110,
         "americanLabel": "-110",
         "decimalOdds": 1.9090909090909092,
@@ -17308,7 +17935,7 @@
       "index": 0,
       "role": "Away",
       "name": "Mets",
-      "detail": "Huascar Brazobán (RHP) | 3-1 | 2.25 ERA | 26 SO | 1.00 WHIP | 32.0 IP",
+      "detail": "Huascar Brazobán (RHP) | 3-1 | 2.18 ERA | 26 SO | 1.03 WHIP | 33.0 IP",
       "americanOdds": -110,
       "americanLabel": "-110",
       "decimalOdds": 1.9090909090909092,
@@ -17320,7 +17947,7 @@
       "index": 1,
       "role": "Home",
       "name": "Padres",
-      "detail": "Randy Vásquez (RHP) | 5-3 | 3.31 ERA | 50 SO | 1.22 WHIP | 65.1 IP",
+      "detail": "Randy Vásquez (RHP) | 5-4 | 3.63 ERA | 53 SO | 1.30 WHIP | 69.1 IP",
       "americanOdds": -110,
       "americanLabel": "-110",
       "decimalOdds": 1.9090909090909092,
@@ -17329,14 +17956,14 @@
     },
     "lean": "Model pick: Mets on lineup-vs-pitching fit and hit-production baseline.",
     "rationale": "Lineup-vs-pitching fit: Mets (Grade +4.85 | platoon 5 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs Padres (Grade -6.84 | platoon 3 | starter arsenal 18 | bridge arsenal 50 | pressure 18)",
-    "confidence": 64,
+    "confidence": 65,
     "volatility": 72,
-    "recommendationScore": 46,
+    "recommendationScore": 47,
     "tier": "Swingy",
     "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + Statcast contact quality + daily lineup matchup context + weather context",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 7.2,
-    "modelEdgeLabel": "7.2-point model edge",
+    "modelEdge": 8.6,
+    "modelEdgeLabel": "8.6-point model edge",
     "marketProbability": 0.5,
     "marketProbabilityLabel": "50.0%",
     "inputs": [
@@ -17356,9 +17983,9 @@
       },
       {
         "label": "Projected hit volume",
-        "summary": "Projected hit volume: Mets (8.4 hits | 24.4% efficiency) vs Padres (6.4 hits | 18.6% efficiency)",
+        "summary": "Projected hit volume: Mets (8.6 hits | 25% efficiency) vs Padres (6.4 hits | 18.7% efficiency)",
         "source": "Composite offense vs starter and bullpen projection",
-        "margin": 17,
+        "margin": 17.6,
         "weight": 0.19
       }
     ],
@@ -17402,22 +18029,22 @@
       }
     ],
     "pickReasons": [
-      "Mets own the cleaner full-game traffic script at 8.4 projected hits.",
-      "Mets have the better starter-window lane with 4.6 projected first-five hits.",
+      "Mets own the cleaner full-game traffic script at 8.6 projected hits.",
+      "Mets have the better starter-window lane with 4.7 projected first-five hits.",
       "Mets still hold the better bridge-and-finish script once the bullpens take over.",
       "Mets can lean on Marcus Semien, Luis Torrens, Jared Young to drive early pressure against Randy Vásquez."
     ],
     "indicators": {
       "reliefPitchingRisk": 45.1,
-      "coinflipPressure": 36,
-      "starterLeverageIndex": 60.8,
+      "coinflipPressure": 28,
+      "starterLeverageIndex": 63.7,
       "lateInningStabilityIndex": 49.2,
       "pickBullpenScore": 67,
       "oppBullpenScore": 67.7,
       "pickBullpenChainScore": null,
       "oppBullpenChainScore": null,
-      "pickStarterScore": 67.2,
-      "oppStarterScore": 69.9,
+      "pickStarterScore": 67.4,
+      "oppStarterScore": 68.1,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -17473,7 +18100,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 1.2,
+      "projectedHitEdgeForPick": 1.3,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
@@ -17512,7 +18139,7 @@
       "tierOnePassFlag": false,
       "tierOneRiskFlags": [],
       "favoredSignalCount": 6,
-      "starterLateGap": 11.6,
+      "starterLateGap": 14.5,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 0,
       "gameShape": {
@@ -17520,7 +18147,7 @@
         "shapeLabel": "balanced traffic game",
         "category": "early_pressure_side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "categoryConfidence": 59.9,
+        "categoryConfidence": 60.1,
         "realityGapScore": 37,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
@@ -17552,7 +18179,7 @@
         "slug": "early_pressure_side",
         "label": "Early-pressure side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "confidence": 59.9,
+        "confidence": 60.1,
         "reasons": [
           "The pick needs to cash the first traffic pocket.",
           "The best edge is timing, not late-game patience."
@@ -17596,7 +18223,7 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 1.2
+          "projectedHitEdge": 1.3
         }
       },
       "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37/100. Main checks: 68°F | Wind 9 mph Out | 0% precip | weather helps carry.",
@@ -17607,8 +18234,8 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
         "bullpenFlipScore": 14.8,
-        "starterControlScore": 33.5,
-        "marketContradictionScore": 3.6,
+        "starterControlScore": 35.5,
+        "marketContradictionScore": 3.4,
         "realityGapScore": 37
       },
       "radar": {
@@ -17623,9 +18250,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 21.7,
-            "pickScore": 21.7,
-            "opponentScore": 12.6
+            "gameScore": 22.5,
+            "pickScore": 22.5,
+            "opponentScore": 12.3
           },
           {
             "id": "chaos",
@@ -17673,7 +18300,7 @@
             "role": "pick",
             "team": "Mets",
             "scores": {
-              "pressure": 21.7,
+              "pressure": 22.5,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17681,7 +18308,7 @@
               "flow": 100
             },
             "polygon": [
-              21.7,
+              22.5,
               5,
               0,
               16,
@@ -17692,7 +18319,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 67.2,
+              "starterScore": 67.4,
               "bullpenScore": 67,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17706,7 +18333,7 @@
             "role": "opponent",
             "team": "Padres",
             "scores": {
-              "pressure": 12.6,
+              "pressure": 12.3,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17714,7 +18341,7 @@
               "flow": 0
             },
             "polygon": [
-              12.6,
+              12.3,
               5,
               0,
               16,
@@ -17725,7 +18352,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 69.9,
+              "starterScore": 68.1,
               "bullpenScore": 67.7,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17740,7 +18367,7 @@
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 21.7,
+            "pressure": 22.5,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
@@ -17748,7 +18375,7 @@
             "flow": 100
           },
           "polygon": [
-            21.7,
+            22.5,
             44.8,
             8.5,
             24.4,
@@ -17870,26 +18497,26 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 8.4,
+      "awayProjectedHits": 8.6,
       "homeProjectedHits": 6.4,
-      "awayHitEfficiencyPct": 24.4,
-      "homeHitEfficiencyPct": 18.6,
-      "awayFirst5ProjectedHits": 4.6,
+      "awayHitEfficiencyPct": 25,
+      "homeHitEfficiencyPct": 18.7,
+      "awayFirst5ProjectedHits": 4.7,
       "homeFirst5ProjectedHits": 3.5,
-      "awayFirst5HitEfficiencyPct": 24.4,
-      "homeFirst5HitEfficiencyPct": 18.3,
-      "awayLateProjectedHits": 3.8,
+      "awayFirst5HitEfficiencyPct": 24.9,
+      "homeFirst5HitEfficiencyPct": 18.4,
+      "awayLateProjectedHits": 3.9,
       "homeLateProjectedHits": 2.9,
-      "awayLateHitEfficiencyPct": 24.7,
+      "awayLateHitEfficiencyPct": 25,
       "homeLateHitEfficiencyPct": 18.8,
       "awayBullpenChainScore": null,
       "homeBullpenChainScore": null,
       "edgeTeam": "Mets",
-      "edgeHits": 2,
+      "edgeHits": 2.2,
       "first5EdgeTeam": "Mets",
-      "first5EdgeHits": 1.1,
+      "first5EdgeHits": 1.2,
       "lateEdgeTeam": "Mets",
-      "lateEdgeHits": 0.9,
+      "lateEdgeHits": 1,
       "bridgeEdgeTeam": "",
       "bridgeEdgeScore": null,
       "awayLikelyRelievers": [],
@@ -17899,7 +18526,7 @@
       "awayBullpenExhaustionLabel": "unknown",
       "homeBullpenExhaustionLabel": "unknown",
       "awayPitcherType": "Contact suppressor",
-      "homePitcherType": "Craft righty",
+      "homePitcherType": "Balanced righty",
       "awayStarterHoldConfidence": 57.4,
       "homeStarterHoldConfidence": 38.3,
       "awayProjectedRuns": 3.9,
@@ -17974,8 +18601,8 @@
             "marketExpression": "Under",
             "shape": "balanced",
             "tailScore": 14,
-            "strandScore": 1.4,
-            "forkScore": 1.4,
+            "strandScore": 1.1,
+            "forkScore": 1.1,
             "tailLift": 0,
             "strandDrag": 0,
             "notes": [],
@@ -17987,7 +18614,7 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 8.1,
+              "totalFirst5ProjectedHits": 8.2,
               "weatherCarry": true,
               "weatherSuppress": false,
               "visibilityRisk": null
@@ -18033,8 +18660,8 @@
           "marketExpression": "Under",
           "shape": "balanced",
           "tailScore": 14,
-          "strandScore": 1.4,
-          "forkScore": 1.4,
+          "strandScore": 1.1,
+          "forkScore": 1.1,
           "tailLift": 0,
           "strandDrag": 0,
           "notes": [],
@@ -18046,7 +18673,7 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 8.1,
+            "totalFirst5ProjectedHits": 8.2,
             "weatherCarry": true,
             "weatherSuppress": false,
             "visibilityRisk": null
@@ -18128,8 +18755,8 @@
           "depthScore": 73.8,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Mets own the cleaner full-game traffic script at 8.4 projected hits.",
-            "Mets have the better starter-window lane with 4.6 projected first-five hits.",
+            "Mets own the cleaner full-game traffic script at 8.6 projected hits.",
+            "Mets have the better starter-window lane with 4.7 projected first-five hits.",
             "Mets still hold the better bridge-and-finish script once the bullpens take over.",
             "Mets can lean on Marcus Semien, Luis Torrens, Jared Young to drive early pressure against Randy Vásquez.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -18182,7 +18809,7 @@
           {
             "label": "Full game",
             "edgeTeam": "Mets",
-            "projection": "8.4 H",
+            "projection": "8.6 H",
             "note": "Mets finish with the stronger aggregate traffic path, anchored by Marcus Semien, Luis Torrens."
           }
         ]
@@ -18212,7 +18839,7 @@
         "runDiff": 1.3,
         "absoluteRunDiff": 1.3,
         "runDiffSharePct": 20,
-        "confidence": 64,
+        "confidence": 65,
         "marketProbabilityPct": 50,
         "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
@@ -18226,7 +18853,7 @@
           "slug": "early_pressure_side",
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-          "confidence": 59.9,
+          "confidence": 60.1,
           "reasons": [
             "The pick needs to cash the first traffic pocket.",
             "The best edge is timing, not late-game patience."
@@ -18270,7 +18897,7 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 1.2
+            "projectedHitEdge": 1.3
           }
         },
         "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37/100. Main checks: 68°F | Wind 9 mph Out | 0% precip | weather helps carry.",
@@ -18281,8 +18908,8 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
           "bullpenFlipScore": 14.8,
-          "starterControlScore": 33.5,
-          "marketContradictionScore": 3.6,
+          "starterControlScore": 35.5,
+          "marketContradictionScore": 3.4,
           "realityGapScore": 37
         },
         "radar": {
@@ -18297,9 +18924,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 21.7,
-              "pickScore": 21.7,
-              "opponentScore": 12.6
+              "gameScore": 22.5,
+              "pickScore": 22.5,
+              "opponentScore": 12.3
             },
             {
               "id": "chaos",
@@ -18347,7 +18974,7 @@
               "role": "pick",
               "team": "Mets",
               "scores": {
-                "pressure": 21.7,
+                "pressure": 22.5,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -18355,7 +18982,7 @@
                 "flow": 100
               },
               "polygon": [
-                21.7,
+                22.5,
                 5,
                 0,
                 16,
@@ -18366,7 +18993,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 67.2,
+                "starterScore": 67.4,
                 "bullpenScore": 67,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18380,7 +19007,7 @@
               "role": "opponent",
               "team": "Padres",
               "scores": {
-                "pressure": 12.6,
+                "pressure": 12.3,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -18388,7 +19015,7 @@
                 "flow": 0
               },
               "polygon": [
-                12.6,
+                12.3,
                 5,
                 0,
                 16,
@@ -18399,7 +19026,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 69.9,
+                "starterScore": 68.1,
                 "bullpenScore": 67.7,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18414,7 +19041,7 @@
             "label": "Early-pressure side",
             "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 21.7,
+              "pressure": 22.5,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
@@ -18422,7 +19049,7 @@
               "flow": 100
             },
             "polygon": [
-              21.7,
+              22.5,
               44.8,
               8.5,
               24.4,
@@ -18632,7 +19259,77 @@
         "playerSummary": ".226 AVG | .620 OPS | 24 H | 1 HR | 12g: .375 AVG | 1.099 OPS | 12 H | 2 HR | vs RHP: .221 AVG | .628 OPS | 1 HR | career 1323 PA | .636 OPS | 27 HR | baseline career profile | power 32 | 2026 sample ok | arsenal 4-Seam Fastball 31% / Cutter 24% / Sinker 13% | fit +4.1 | +10.0 matchup grade in a craft lane"
       },
       {
-        "id": "mets-padres:676724:rbi",
+        "id": "mets-padres:543760:rbi",
+        "gameId": "mets-padres",
+        "gameTitle": "Mets @ Padres",
+        "league": "MLB",
+        "playerId": 543760,
+        "playerName": "Marcus Semien",
+        "teamName": "Mets",
+        "slot": 8,
+        "propType": "rbi",
+        "propLabel": "RBI",
+        "marketLabel": "Over 0.5 RBI",
+        "confidence": 60,
+        "probability": 63.5,
+        "expectedValue": 1,
+        "statValueLabel": "1.01 exp RBI",
+        "sample": {
+          "seasonGames": 64,
+          "seasonPlateAppearances": 252,
+          "recentGames": 12,
+          "recentPlateAppearances": 46,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 23,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 7306,
+          "seasonPa": 252,
+          "powerIndex": 57.75,
+          "contactRisk": 36.92,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 62,
+            "processScore": 15,
+            "careerWeight": 0.1,
+            "identityDelta": -6.3,
+            "tbDelta": -0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 252,
+            "careerPa": 7306
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "contact-stable profile"
+        },
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 8 carry | process improving; approach 62/100 | recent form up",
+        "scriptTags": [
+          "top-third-pressure",
+          "middle-order-traffic",
+          "deep-lineup",
+          "carry-bat-live",
+          "process-improving",
+          "statcast-power-up",
+          "statcast-contact-up"
+        ],
+        "matchupNote": "+10.00 vs Randy Vásquez",
+        "teamScriptLabel": "",
+        "lineupStatus": "partial",
+        "playerSummary": ".222 AVG | .623 OPS | 51 H | 7 HR | 12g: .250 AVG | 1.048 OPS | 10 H | 6 HR | vs RHP: .215 AVG | .612 OPS | 6 HR | career 7306 PA | .752 OPS | 258 HR | contact-stable profile | power 58 | 2026 sample ok | arsenal 4-Seam Fastball 31% / Cutter 24% / Sinker 13% | fit +4.8 | +10.0 matchup grade in a craft lane"
+      },
+      {
+        "id": "mets-padres:676724:runs",
         "gameId": "mets-padres",
         "gameTitle": "Mets @ Padres",
         "league": "MLB",
@@ -18640,13 +19337,84 @@
         "playerName": "Jared Young",
         "teamName": "Mets",
         "slot": 4,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 70,
-        "probability": 73.3,
-        "expectedValue": 1.3,
-        "statValueLabel": "1.32 exp RBI",
+        "propType": "runs",
+        "propLabel": "Runs",
+        "marketLabel": "Over 0.5 runs",
+        "confidence": 58,
+        "probability": 59.8,
+        "expectedValue": 0.9,
+        "statValueLabel": "0.91 exp runs",
+        "sample": {
+          "seasonGames": 21,
+          "seasonPlateAppearances": 59,
+          "recentGames": 12,
+          "recentPlateAppearances": 50,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 25,
+          "opponentContextGames": 0
+        },
+        "repeatability": {
+          "careerPa": 155,
+          "seasonPa": 59,
+          "powerIndex": 74.45,
+          "contactRisk": 66,
+          "roleStability": 57.12,
+          "label": "volatile career power",
+          "volatilityLabel": "thin career sample",
+          "careerPowerBacked": false,
+          "careerVolatile": true,
+          "roleStable": true,
+          "approachState": {
+            "confidenceScore": 69.4,
+            "processScore": 18,
+            "careerWeight": 0.28,
+            "identityDelta": 4.6,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role still forming",
+            "approachLabel": "process improving",
+            "seasonPa": 59,
+            "careerPa": 155
+          },
+          "canCarryTinySample": false,
+          "trackingPenalty": 18,
+          "reason": "volatile career power"
+        },
+        "recommendationTier": "Lean",
+        "shadowSupportTag": null,
+        "shadowSupportLevel": null,
+        "reason": "slot 4 carry | recent form up | split fit live",
+        "scriptTags": [
+          "top-third-pressure",
+          "middle-order-traffic",
+          "deep-lineup",
+          "carry-bat-live",
+          "process-improving",
+          "statcast-power-up",
+          "statcast-contact-up",
+          "statcast-hr-carry"
+        ],
+        "matchupNote": "+9.41 vs Randy Vásquez",
+        "teamScriptLabel": "",
+        "lineupStatus": "partial",
+        "playerSummary": ".288 AVG | .875 OPS | 15 H | 3 HR | 12g: .217 AVG | .802 OPS | 10 H | 4 HR | vs RHP: .326 AVG | .983 OPS | 3 HR | career 155 PA | .754 OPS | 7 HR | volatile career power | power 74 | shallow 2026 sample | arsenal 4-Seam Fastball 31% / Cutter 24% / Sinker 13% | fit +3.6 | +9.4 matchup grade in a craft lane"
+      },
+      {
+        "id": "mets-padres:676724:hitRunRbi",
+        "gameId": "mets-padres",
+        "gameTitle": "Mets @ Padres",
+        "league": "MLB",
+        "playerId": 676724,
+        "playerName": "Jared Young",
+        "teamName": "Mets",
+        "slot": 4,
+        "propType": "hitRunRbi",
+        "propLabel": "H+R+RBI",
+        "marketLabel": "Over 1.5 H+R+RBI",
+        "confidence": 74,
+        "probability": 75.8,
+        "expectedValue": 2.7,
+        "statValueLabel": "0.86 H · 0.80 R · 1.08 RBI · 2.74 total",
         "sample": {
           "seasonGames": 21,
           "seasonPlateAppearances": 59,
@@ -18686,14 +19454,14 @@
         "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 4 carry | process improving; approach 69.4/100 | recent form up | split fit live",
+        "reason": "slot 4 carry | recent form up | split fit live | combined hits/runs/RBI lane",
         "scriptTags": [
           "top-third-pressure",
           "middle-order-traffic",
           "deep-lineup",
           "carry-bat-live",
           "process-improving",
-          "run-production-slot",
+          "combined-production-lane",
           "statcast-power-up",
           "statcast-contact-up",
           "statcast-hr-carry"
@@ -18787,9 +19555,9 @@
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
         "confidence": 58,
-        "probability": 22.4,
+        "probability": 22.9,
         "expectedValue": 0.9,
-        "statValueLabel": "0.89 exp hits",
+        "statValueLabel": "0.91 exp hits",
         "sample": {
           "seasonGames": 40,
           "seasonPlateAppearances": 116,
@@ -18829,7 +19597,7 @@
         "recommendationTier": "Lean",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 9 carry | recent form up",
+        "reason": "slot 9 carry | recent form up | clean traffic lane",
         "scriptTags": [
           "top-third-pressure",
           "middle-order-traffic",
@@ -18858,9 +19626,9 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 55,
-        "probability": 23.5,
+        "probability": 24.1,
         "expectedValue": 0.3,
-        "statValueLabel": "0.27 exp walks",
+        "statValueLabel": "0.28 exp walks",
         "sample": {
           "seasonGames": 64,
           "seasonPlateAppearances": 252,
@@ -18928,9 +19696,9 @@
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
         "confidence": 61,
-        "probability": 52.7,
-        "expectedValue": 0.7,
-        "statValueLabel": "0.75 exp singles",
+        "probability": 53.3,
+        "expectedValue": 0.8,
+        "statValueLabel": "0.76 exp singles",
         "sample": {
           "seasonGames": 61,
           "seasonPlateAppearances": 238,
@@ -18984,156 +19752,17 @@
         "teamScriptLabel": "",
         "lineupStatus": "partial",
         "playerSummary": ".248 AVG | .682 OPS | 54 H | 6 HR | 12g: .208 AVG | .853 OPS | 10 H | 6 HR | vs RHP: .232 AVG | .646 OPS | 5 HR | career 217 PA | .677 OPS | 4 HR | baseline career profile | power 34 | 2026 sample ok | arsenal 4-Seam Fastball 31% / Cutter 24% / Sinker 13% | fit +3.7 | +8.4 matchup grade in a craft lane"
-      },
-      {
-        "id": "mets-padres:543760:rbi",
-        "gameId": "mets-padres",
-        "gameTitle": "Mets @ Padres",
-        "league": "MLB",
-        "playerId": 543760,
-        "playerName": "Marcus Semien",
-        "teamName": "Mets",
-        "slot": 8,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 70,
-        "probability": 63.5,
-        "expectedValue": 1,
-        "statValueLabel": "1.01 exp RBI",
-        "sample": {
-          "seasonGames": 64,
-          "seasonPlateAppearances": 252,
-          "recentGames": 12,
-          "recentPlateAppearances": 46,
-          "statcastGames": 6,
-          "statcastPlateAppearances": 23,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 7306,
-          "seasonPa": 252,
-          "powerIndex": 57.75,
-          "contactRisk": 36.92,
-          "roleStability": 100,
-          "label": "contact-stable profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 62,
-            "processScore": 15,
-            "careerWeight": 0.1,
-            "identityDelta": -6.3,
-            "tbDelta": -0.1,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 252,
-            "careerPa": 7306
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "contact-stable profile"
-        },
-        "recommendationTier": "Strong",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 8 carry | process improving; approach 62/100 | recent form up",
-        "scriptTags": [
-          "top-third-pressure",
-          "middle-order-traffic",
-          "deep-lineup",
-          "carry-bat-live",
-          "process-improving",
-          "statcast-power-up",
-          "statcast-contact-up"
-        ],
-        "matchupNote": "+10.00 vs Randy Vásquez",
-        "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".222 AVG | .623 OPS | 51 H | 7 HR | 12g: .250 AVG | 1.048 OPS | 10 H | 6 HR | vs RHP: .215 AVG | .612 OPS | 6 HR | career 7306 PA | .752 OPS | 258 HR | contact-stable profile | power 58 | 2026 sample ok | arsenal 4-Seam Fastball 31% / Cutter 24% / Sinker 13% | fit +4.8 | +10.0 matchup grade in a craft lane"
-      },
-      {
-        "id": "mets-padres:620443:rbi",
-        "gameId": "mets-padres",
-        "gameTitle": "Mets @ Padres",
-        "league": "MLB",
-        "playerId": 620443,
-        "playerName": "Luis Torrens",
-        "teamName": "Mets",
-        "slot": 9,
-        "propType": "rbi",
-        "propLabel": "RBI",
-        "marketLabel": "Over 0.5 RBI",
-        "confidence": 64,
-        "probability": 54.1,
-        "expectedValue": 0.8,
-        "statValueLabel": "0.78 exp RBI",
-        "sample": {
-          "seasonGames": 40,
-          "seasonPlateAppearances": 116,
-          "recentGames": 12,
-          "recentPlateAppearances": 34,
-          "statcastGames": 4,
-          "statcastPlateAppearances": 14,
-          "opponentContextGames": 0
-        },
-        "repeatability": {
-          "careerPa": 1323,
-          "seasonPa": 116,
-          "powerIndex": 31.63,
-          "contactRisk": 47.89,
-          "roleStability": 100,
-          "label": "baseline career profile",
-          "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
-          "careerVolatile": false,
-          "roleStable": true,
-          "approachState": {
-            "confidenceScore": 68.7,
-            "processScore": 18,
-            "careerWeight": 0.1,
-            "identityDelta": -2.6,
-            "tbDelta": 0,
-            "hrDelta": 0,
-            "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 116,
-            "careerPa": 1323
-          },
-          "canCarryTinySample": false,
-          "trackingPenalty": 18,
-          "reason": "baseline career profile"
-        },
-        "recommendationTier": "Lean",
-        "shadowSupportTag": null,
-        "shadowSupportLevel": null,
-        "reason": "slot 9 carry | process improving; approach 68.7/100 | recent form up",
-        "scriptTags": [
-          "top-third-pressure",
-          "middle-order-traffic",
-          "deep-lineup",
-          "carry-bat-live",
-          "process-improving",
-          "statcast-power-up",
-          "statcast-contact-up",
-          "statcast-hr-carry"
-        ],
-        "matchupNote": "+10.00 vs Randy Vásquez",
-        "teamScriptLabel": "",
-        "lineupStatus": "partial",
-        "playerSummary": ".226 AVG | .620 OPS | 24 H | 1 HR | 12g: .375 AVG | 1.099 OPS | 12 H | 2 HR | vs RHP: .221 AVG | .628 OPS | 1 HR | career 1323 PA | .636 OPS | 27 HR | baseline career profile | power 32 | 2026 sample ok | arsenal 4-Seam Fastball 31% / Cutter 24% / Sinker 13% | fit +4.1 | +10.0 matchup grade in a craft lane"
       }
     ],
     "byType": {
       "totalBases": [],
       "singles": [],
       "walks": [],
-      "rbi": []
+      "rbi": [],
+      "runs": [],
+      "hitRunRbi": []
     },
-    "candidateCount": 24,
+    "candidateCount": 34,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

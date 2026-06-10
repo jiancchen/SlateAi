@@ -1,0 +1,37 @@
+{
+  "after_counts": {
+    "rankings": 4113,
+    "unresolved_entities": 451
+  },
+  "alias_rows": 308,
+  "before_counts": {
+    "rankings": 3813,
+    "unresolved_entities": 451
+  },
+  "date": "2026-06-08",
+  "dry_run": false,
+  "generated_at": "2026-06-08T07:31:36.267214+00:00",
+  "inserted_rankings": 300,
+  "ok": true,
+  "parsed_rankings": 300,
+  "parser_module": "pipeline/sources/tennis/normalization/rankings.py",
+  "rankings_by_tour": {
+    "ATP": 150,
+    "WTA": 150
+  },
+  "row_count_delta": {
+    "rankings": 300,
+    "unresolved_entities": 0
+  },
+  "sample_source_snapshots": [
+    "tennis-0adcc2a84520e6200d07ab6d7c84a4d8"
+  ],
+  "script": "data-migration/scripts/ingest_tennis_rankings_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source_files": 1,
+  "source_name": "tennis_rankings",
+  "source_rows": 300,
+  "source_snapshot_rows": 1,
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}
