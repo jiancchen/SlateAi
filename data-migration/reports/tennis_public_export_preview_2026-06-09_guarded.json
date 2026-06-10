@@ -1,0 +1,23 @@
+{
+  "blocking_reasons": [
+    "missing_model_run",
+    "required_source_freshness_blocked"
+  ],
+  "contract": "data-migration/contracts/tennis_public_export_contract.md",
+  "date": "2026-06-09",
+  "dry_run": true,
+  "export_manifest_id": null,
+  "export_status": "blocked",
+  "games": 14,
+  "generated_at": "2026-06-10T08:31:35.010089+00:00",
+  "model": "TEN-T0",
+  "ok": false,
+  "out_dir": "/tmp/tennis-db-public-export-2026-06-09-guarded",
+  "prediction_rows": 0,
+  "publish_allowed": false,
+  "resolved_model": null,
+  "script": "data-migration/scripts/export_tennis_public_from_db.py",
+  "source_db": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "summary_path": "/tmp/tennis-db-public-export-2026-06-09-guarded/summary.json",
+  "value_rows": 0
+}

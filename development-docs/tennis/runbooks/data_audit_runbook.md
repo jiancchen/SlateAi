@@ -274,6 +274,7 @@ As of 2026-06-10:
 - Entity resolution found 15 players missing registry rows, 41 duplicate match-player side groups globally, and 8 duplicate side groups in the Jun 7-9 scope.
 - Global settlement readiness found 776 prediction rows, 0 settled rows, and 0 settlement-ready rows.
 - Jun 7-9 quarantine queues contain 154 non-TennisLive matches, 72 prediction rows without a DB match, 68 TEN-T0 market-only prediction rows, 184 market identity gaps, and 56 duplicate market groups.
+- Guarded DB export previews block Jun 7, Jun 8, and Jun 9 from public publish; Jun 7/8 fail TEN-T0/value/source gates, and Jun 9 has no model run plus blocked source freshness.
 - The DB-derived public export now reports `blocked` instead of `ready` when model status, prediction/value shape, source freshness, or market-only rows fail readiness.
 
 ## Review Gates
