@@ -202,6 +202,14 @@ npm run data:audit:tennis-settlement-readiness -- \
   --markdown data-migration/reports/tennis_settlement_readiness_YYYY-MM-DD.md
 ```
 
+Run source freshness readiness:
+
+```bash
+npm run data:audit:tennis-source-freshness -- \
+  --out data-migration/reports/tennis_source_freshness_YYYY-MM-DD.json \
+  --markdown data-migration/reports/tennis_source_freshness_YYYY-MM-DD.md
+```
+
 Export quarantine/review queues:
 
 ```bash
@@ -254,6 +262,7 @@ As of 2026-06-10:
 - Whole-warehouse date readiness found 91 tennis dates: 0 usable, 71 usable with warnings, and 20 blocked.
 - Date sanity blockers include 1 invalid date value and 2 far-future sentinel-like date values.
 - Jun 7-9 readiness found 3 dates: Jun 7 and Jun 8 blocked, Jun 9 usable only with warnings.
+- Source freshness found 0 current-publish-ready dates across 91 dates, with 438 missing required date/source slots and 17 stale required source slots.
 - Global settlement readiness found 776 prediction rows, 0 settled rows, and 0 settlement-ready rows.
 - Jun 7-9 quarantine queues contain 154 non-TennisLive matches, 72 prediction rows without a DB match, 68 TEN-T0 market-only prediction rows, 184 market identity gaps, and 56 duplicate market groups.
 - The DB-derived public export now reports `blocked` instead of `ready` when model status, prediction/value shape, source freshness, or market-only rows fail readiness.

@@ -1,0 +1,337 @@
+{
+  "dates": [
+    {
+      "blockers": [
+        "required_source_status_missing",
+        "required_source_stale_for_current_publish"
+      ],
+      "date": "2026-06-07",
+      "failedSources": [],
+      "freshSources": 0,
+      "incompleteSources": [],
+      "missingSources": [
+        "tennis_flashscore_stats",
+        "tennis_player_context"
+      ],
+      "okForCurrentPublish": false,
+      "requiredSources": 5,
+      "sources": [
+        {
+          "actualItemCount": null,
+          "cacheValidUntil": null,
+          "lastCompletenessStatus": null,
+          "lastStatus": null,
+          "lastSuccessAt": null,
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "match-stats",
+          "sourceName": "tennis_flashscore_stats",
+          "statusClass": "missing_status",
+          "unresolvedCount": null
+        },
+        {
+          "actualItemCount": 2,
+          "cacheValidUntil": "2026-06-07 08:26:34",
+          "lastCompletenessStatus": "unknown",
+          "lastStatus": "success",
+          "lastSuccessAt": "2026-06-07T07:26:34.789694+00:00",
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "markets",
+          "sourceName": "tennis_odds",
+          "statusClass": "stale_success",
+          "unresolvedCount": 0
+        },
+        {
+          "actualItemCount": null,
+          "cacheValidUntil": null,
+          "lastCompletenessStatus": null,
+          "lastStatus": null,
+          "lastSuccessAt": null,
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "player-context",
+          "sourceName": "tennis_player_context",
+          "statusClass": "missing_status",
+          "unresolvedCount": null
+        },
+        {
+          "actualItemCount": 1,
+          "cacheValidUntil": "2026-06-08 07:03:40",
+          "lastCompletenessStatus": "unknown",
+          "lastStatus": "success",
+          "lastSuccessAt": "2026-06-07T07:03:40.500858+00:00",
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "rankings",
+          "sourceName": "tennis_rankings",
+          "statusClass": "stale_success",
+          "unresolvedCount": 0
+        },
+        {
+          "actualItemCount": 1,
+          "cacheValidUntil": "2026-06-07 18:03:42",
+          "lastCompletenessStatus": "complete",
+          "lastStatus": "success",
+          "lastSuccessAt": "2026-06-07T06:03:42.120585+00:00",
+          "missingItemCount": 0,
+          "requiredForPrediction": true,
+          "sourceFamily": "player-context",
+          "sourceName": "tennislive",
+          "statusClass": "stale_success",
+          "unresolvedCount": 0
+        }
+      ],
+      "staleSources": [
+        "tennis_odds",
+        "tennis_rankings",
+        "tennislive"
+      ],
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "required_source_status_missing",
+        "required_source_stale_for_current_publish"
+      ],
+      "date": "2026-06-08",
+      "failedSources": [],
+      "freshSources": 0,
+      "incompleteSources": [],
+      "missingSources": [
+        "tennis_flashscore_stats",
+        "tennis_player_context"
+      ],
+      "okForCurrentPublish": false,
+      "requiredSources": 5,
+      "sources": [
+        {
+          "actualItemCount": null,
+          "cacheValidUntil": null,
+          "lastCompletenessStatus": null,
+          "lastStatus": null,
+          "lastSuccessAt": null,
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "match-stats",
+          "sourceName": "tennis_flashscore_stats",
+          "statusClass": "missing_status",
+          "unresolvedCount": null
+        },
+        {
+          "actualItemCount": 2,
+          "cacheValidUntil": "2026-06-08 08:58:05",
+          "lastCompletenessStatus": "unknown",
+          "lastStatus": "success",
+          "lastSuccessAt": "2026-06-08T07:58:05.456852+00:00",
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "markets",
+          "sourceName": "tennis_odds",
+          "statusClass": "stale_success",
+          "unresolvedCount": 0
+        },
+        {
+          "actualItemCount": null,
+          "cacheValidUntil": null,
+          "lastCompletenessStatus": null,
+          "lastStatus": null,
+          "lastSuccessAt": null,
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "player-context",
+          "sourceName": "tennis_player_context",
+          "statusClass": "missing_status",
+          "unresolvedCount": null
+        },
+        {
+          "actualItemCount": 1,
+          "cacheValidUntil": "2026-06-09 07:31:36",
+          "lastCompletenessStatus": "unknown",
+          "lastStatus": "success",
+          "lastSuccessAt": "2026-06-08T07:31:36.267258+00:00",
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "rankings",
+          "sourceName": "tennis_rankings",
+          "statusClass": "stale_success",
+          "unresolvedCount": 0
+        },
+        {
+          "actualItemCount": 22,
+          "cacheValidUntil": "2026-06-09 19:09:37",
+          "lastCompletenessStatus": "complete",
+          "lastStatus": "success",
+          "lastSuccessAt": "2026-06-09T07:09:37.987413+00:00",
+          "missingItemCount": 0,
+          "requiredForPrediction": true,
+          "sourceFamily": "player-context",
+          "sourceName": "tennislive",
+          "statusClass": "stale_success",
+          "unresolvedCount": 0
+        }
+      ],
+      "staleSources": [
+        "tennis_odds",
+        "tennis_rankings",
+        "tennislive"
+      ],
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "required_source_status_missing",
+        "required_source_stale_for_current_publish"
+      ],
+      "date": "2026-06-09",
+      "failedSources": [],
+      "freshSources": 0,
+      "incompleteSources": [],
+      "missingSources": [
+        "tennis_flashscore_stats",
+        "tennis_odds",
+        "tennis_player_context",
+        "tennislive"
+      ],
+      "okForCurrentPublish": false,
+      "requiredSources": 5,
+      "sources": [
+        {
+          "actualItemCount": null,
+          "cacheValidUntil": null,
+          "lastCompletenessStatus": null,
+          "lastStatus": null,
+          "lastSuccessAt": null,
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "match-stats",
+          "sourceName": "tennis_flashscore_stats",
+          "statusClass": "missing_status",
+          "unresolvedCount": null
+        },
+        {
+          "actualItemCount": null,
+          "cacheValidUntil": null,
+          "lastCompletenessStatus": null,
+          "lastStatus": null,
+          "lastSuccessAt": null,
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "markets",
+          "sourceName": "tennis_odds",
+          "statusClass": "missing_status",
+          "unresolvedCount": null
+        },
+        {
+          "actualItemCount": null,
+          "cacheValidUntil": null,
+          "lastCompletenessStatus": null,
+          "lastStatus": null,
+          "lastSuccessAt": null,
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "player-context",
+          "sourceName": "tennis_player_context",
+          "statusClass": "missing_status",
+          "unresolvedCount": null
+        },
+        {
+          "actualItemCount": 1,
+          "cacheValidUntil": "2026-06-10 07:55:34",
+          "lastCompletenessStatus": "unknown",
+          "lastStatus": "success",
+          "lastSuccessAt": "2026-06-09T07:55:34.160072+00:00",
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "rankings",
+          "sourceName": "tennis_rankings",
+          "statusClass": "stale_success",
+          "unresolvedCount": 0
+        },
+        {
+          "actualItemCount": null,
+          "cacheValidUntil": null,
+          "lastCompletenessStatus": null,
+          "lastStatus": null,
+          "lastSuccessAt": null,
+          "missingItemCount": null,
+          "requiredForPrediction": true,
+          "sourceFamily": "player-context",
+          "sourceName": "tennislive",
+          "statusClass": "missing_status",
+          "unresolvedCount": null
+        }
+      ],
+      "staleSources": [
+        "tennis_rankings"
+      ],
+      "warnings": []
+    }
+  ],
+  "db_path": "data-private/warehouse/sports/tennis/sql-tennis.db",
+  "generated_at": "2026-06-10T08:26:20.573781+00:00",
+  "include_optional": false,
+  "scope": {
+    "end_date": "2026-06-09",
+    "start_date": "2026-06-07"
+  },
+  "script": "data-migration/scripts/audit_tennis_source_freshness.py",
+  "sources": [
+    {
+      "datesMissingStatus": 3,
+      "datesWithFailedStatus": 0,
+      "datesWithFreshSuccess": 0,
+      "datesWithStaleSuccess": 0,
+      "requiredForPrediction": true,
+      "sourceFamily": "match-stats",
+      "sourceName": "tennis_flashscore_stats"
+    },
+    {
+      "datesMissingStatus": 1,
+      "datesWithFailedStatus": 0,
+      "datesWithFreshSuccess": 0,
+      "datesWithStaleSuccess": 2,
+      "requiredForPrediction": true,
+      "sourceFamily": "markets",
+      "sourceName": "tennis_odds"
+    },
+    {
+      "datesMissingStatus": 3,
+      "datesWithFailedStatus": 0,
+      "datesWithFreshSuccess": 0,
+      "datesWithStaleSuccess": 0,
+      "requiredForPrediction": true,
+      "sourceFamily": "player-context",
+      "sourceName": "tennis_player_context"
+    },
+    {
+      "datesMissingStatus": 0,
+      "datesWithFailedStatus": 0,
+      "datesWithFreshSuccess": 0,
+      "datesWithStaleSuccess": 3,
+      "requiredForPrediction": true,
+      "sourceFamily": "rankings",
+      "sourceName": "tennis_rankings"
+    },
+    {
+      "datesMissingStatus": 1,
+      "datesWithFailedStatus": 0,
+      "datesWithFreshSuccess": 0,
+      "datesWithStaleSuccess": 2,
+      "requiredForPrediction": true,
+      "sourceFamily": "player-context",
+      "sourceName": "tennislive"
+    }
+  ],
+  "summary": {
+    "dateSourceSlots": 15,
+    "dates": 3,
+    "datesBlockedForCurrentPublish": 3,
+    "datesCurrentPublishReady": 0,
+    "failedSourceSlots": 0,
+    "freshSourceSlots": 0,
+    "missingSourceSlots": 8,
+    "sourcesPerDate": 5,
+    "staleSourceSlots": 7
+  }
+}
