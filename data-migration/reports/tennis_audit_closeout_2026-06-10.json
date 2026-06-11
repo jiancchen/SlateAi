@@ -1,0 +1,92 @@
+{
+  "audit_closeout_date": "2026-06-10",
+  "status": "audit_phase_ready_for_model_ideation_not_model_build",
+  "db_mutation_status": "no_cleanup_or_mutation_applied_by_this_audit",
+  "replacement_model_status": "not_created",
+  "source_reports": {
+    "runbook": "development-docs/tennis/runbooks/data_audit_runbook.md",
+    "data_shape_global": "data-migration/reports/tennis_data_shape_audit_2026-06-10.json",
+    "data_shape_jun_7_9": "data-migration/reports/tennis_data_shape_audit_2026-06-07_2026-06-09.json",
+    "date_readiness_global": "data-migration/reports/tennis_date_readiness_2026-06-10.json",
+    "date_readiness_jun_7_9": "data-migration/reports/tennis_date_readiness_2026-06-07_2026-06-09.json",
+    "source_freshness_global": "data-migration/reports/tennis_source_freshness_2026-06-10.json",
+    "source_freshness_jun_7_9": "data-migration/reports/tennis_source_freshness_2026-06-07_2026-06-09.json",
+    "entity_resolution_global": "data-migration/reports/tennis_entity_resolution_2026-06-10.json",
+    "entity_resolution_jun_7_9": "data-migration/reports/tennis_entity_resolution_2026-06-07_2026-06-09.json",
+    "context_coverage_global": "data-migration/reports/tennis_context_coverage_2026-06-10.json",
+    "context_coverage_jun_7_9": "data-migration/reports/tennis_context_coverage_2026-06-07_2026-06-09.json",
+    "settlement_global": "data-migration/reports/tennis_settlement_readiness_2026-06-10.json",
+    "settlement_jun_7_9": "data-migration/reports/tennis_settlement_readiness_2026-06-07_2026-06-09.json",
+    "quarantine_queues_jun_7_9": "data-migration/reports/tennis_quarantine_candidates_2026-06-07_2026-06-09.json",
+    "guarded_export_jun_7": "data-migration/reports/tennis_public_export_preview_2026-06-07_guarded.json",
+    "guarded_export_jun_8": "data-migration/reports/tennis_public_export_preview_2026-06-08_guarded.json",
+    "guarded_export_jun_9": "data-migration/reports/tennis_public_export_preview_2026-06-09_guarded.json"
+  },
+  "headline_findings": {
+    "date_readiness": {
+      "dates": 91,
+      "usable": 0,
+      "usable_with_warnings": 71,
+      "blocked": 20,
+      "invalid_date_values": 1,
+      "far_future_date_values": 2
+    },
+    "canonical_shape": {
+      "canonical_tennislive_matches": 1173,
+      "non_tennislive_quarantine_matches": 544
+    },
+    "source_freshness": {
+      "current_publish_ready_dates": 0,
+      "blocked_current_publish_dates": 91,
+      "missing_required_source_slots": 438,
+      "stale_required_source_slots": 17
+    },
+    "settlement": {
+      "prediction_rows": 776,
+      "settled_rows": 0,
+      "settlement_ready_rows": 0,
+      "quarantine_prediction_rows": 468,
+      "pending_prediction_rows": 308,
+      "missing_match_prediction_rows": 289,
+      "ten_t0_prediction_rows": 251,
+      "market_only_prediction_rows": 72
+    },
+    "entity_resolution": {
+      "players": 5577,
+      "players_missing_registry": 15,
+      "duplicate_match_player_side_groups": 41,
+      "market_rows_missing_player_id": 507,
+      "match_player_rows_without_active_tennislive_source": 1493
+    },
+    "context_coverage": {
+      "canonical_matches": 1173,
+      "with_summaries": 1173,
+      "with_result_summaries": 1093,
+      "with_replay_points": 1067,
+      "with_h2h_pair_rows": 1006,
+      "with_stat_rows": 1065,
+      "with_form_for_both_players": 224
+    },
+    "jun_7_to_9_review_queues": {
+      "non_tennislive_matches": 154,
+      "participant_anomalies": 7,
+      "prediction_rows_without_match": 72,
+      "ten_t0_market_only_predictions": 68,
+      "market_identity_gaps": 184,
+      "duplicate_market_groups": 56,
+      "duplicate_stat_groups": 0
+    }
+  },
+  "hard_gates_before_model_build": [
+    "Define canonical match/player/market/result contracts.",
+    "Run cleanup on a copied DB before any production DB mutation.",
+    "Remove or isolate non-TennisLive match shapes from candidate model-input surfaces.",
+    "Resolve duplicate participant side groups and missing player registry rows.",
+    "Separate market-watch rows from prediction rows.",
+    "Backfill or define settlement/result provenance before performance claims.",
+    "Require source freshness/readiness for any current-publish workflow.",
+    "Block public exports unless exportReadiness.publishAllowed is true."
+  ],
+  "model_ideation_allowed": true,
+  "model_build_allowed": false
+}
