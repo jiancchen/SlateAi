@@ -20,12 +20,17 @@ import {
 } from './lib/mlb-model-utils.mjs'
 
 export const modelId = 'MLB-RP2'
-export const modelVersion = 'MLB-RP2.2026-06-12.v2'
+export const modelVersion = 'MLB-RP2.2026-06-12.v3'
 
 const FIRST_UP_HISTORY_DAYS = 60
+const PITCHER_SPLIT_HISTORY_DAYS = 365
 const MODERATE_REST_PITCHES = 20
 const HEAVY_REST_PITCHES = 30
 const EXTREME_REST_PITCHES = 40
+const MIN_SPLIT_PA_PER_SIDE = 8
+const MIN_LINEUP_BATTERS = 7
+const LINEUP_MATCHUP_MAX_BOOST = 2.2
+const LINEUP_MATCHUP_MAX_PENALTY = 1.4
 
 const toNumber = (value, fallback = null) => {
   if (value === null || value === undefined || value === '') return fallback
@@ -213,6 +218,78 @@ where as_of_date < ${sqlQuote(date)}
 order by as_of_date desc, cast(window_starts as integer) desc;
 `, dbPath)
 
+const loadLineupHandednessRows = (date, dbPath) =>
+  sqliteJson(`
+with latest_lineups as (
+  select
+    l.*,
+    g.game_date,
+    cast(g.mlb_game_pk as integer) as game_pk,
+    teams.name as team_name,
+    row_number() over (
+      partition by l.game_id, l.team_id
+      order by l.captured_at desc, l.lineup_id desc
+    ) as latest_rank
+  from lineups l
+  join games g on g.game_id = l.game_id
+  join teams on teams.team_id = l.team_id
+  where g.game_date = ${sqlQuote(date)}
+)
+select
+  game_date,
+  game_pk,
+  team_id,
+  team_name,
+  lineup_status,
+  captured_at,
+  cast(lineup_slots.batting_order as integer) as batting_order,
+  players.name as player_name,
+  players.bats
+from latest_lineups
+join lineup_slots on lineup_slots.lineup_id = latest_lineups.lineup_id
+join players on players.player_id = lineup_slots.player_id
+where latest_rank = 1
+order by game_pk, team_name, cast(lineup_slots.batting_order as integer);
+`, dbPath)
+
+const loadPitcherBatterSideSplitRows = (date, dbPath) =>
+  sqliteJson(`
+select
+  g.game_date,
+  pitcher_players.player_id as pitcher_player_id,
+  cast(pitcher_players.mlb_player_id as integer) as pitcher_id,
+  pitcher_players.name as pitcher_name,
+  pitcher_players.throws as pitcher_throws,
+  batter_players.bats as batter_side,
+  count(*) as plate_appearances,
+  sum(case when plate_appearances.event_type in ('single', 'double', 'triple', 'home_run') then 1 else 0 end) as hits,
+  sum(case
+    when plate_appearances.event_type = 'single' then 1
+    when plate_appearances.event_type = 'double' then 2
+    when plate_appearances.event_type = 'triple' then 3
+    when plate_appearances.event_type = 'home_run' then 4
+    else 0
+  end) as total_bases,
+  sum(case when plate_appearances.event_type = 'home_run' then 1 else 0 end) as home_runs,
+  sum(case when plate_appearances.event_type in ('walk', 'intent_walk') then 1 else 0 end) as walks,
+  sum(case when plate_appearances.event_type = 'hit_by_pitch' then 1 else 0 end) as hit_by_pitch
+from plate_appearances
+join games g on g.game_id = plate_appearances.game_id
+join players pitcher_players on pitcher_players.player_id = plate_appearances.pitcher_id
+join players batter_players on batter_players.player_id = plate_appearances.batter_id
+where g.game_date < ${sqlQuote(date)}
+  and g.game_date >= date(${sqlQuote(date)}, '-${PITCHER_SPLIT_HISTORY_DAYS} day')
+  and coalesce(batter_players.bats, '') in ('R', 'L')
+group by
+  g.game_date,
+  pitcher_players.player_id,
+  pitcher_players.mlb_player_id,
+  pitcher_players.name,
+  pitcher_players.throws,
+  batter_players.bats
+order by g.game_date, pitcher_players.name, batter_players.bats;
+`, dbPath)
+
 const roleRank = (role) => {
   const key = String(role || '').toUpperCase()
   if (key === 'CL') return 1
@@ -247,6 +324,163 @@ const highLeverageRole = (role) => {
   return key === 'CL' || key.startsWith('SU')
 }
 
+const normalizeHand = (value) => {
+  const key = String(value || '').trim().toUpperCase()
+  if (key.startsWith('R')) return 'R'
+  if (key.startsWith('L')) return 'L'
+  return null
+}
+
+const batterSideAgainstPitcher = (bats, pitcherThrows) => {
+  const batSide = normalizeHand(bats)
+  if (batSide) return batSide
+  const switchHitter = String(bats || '').trim().toUpperCase().startsWith('S')
+  const pitcherHand = normalizeHand(pitcherThrows)
+  if (switchHitter && pitcherHand === 'R') return 'L'
+  if (switchHitter && pitcherHand === 'L') return 'R'
+  return null
+}
+
+const lineupContextAgainstPitcher = (lineup = null, pitcherThrows = null) => {
+  const batters = lineup?.batters || []
+  const counts = { R: 0, L: 0, unknown: 0 }
+  batters.forEach((batter) => {
+    const side = batterSideAgainstPitcher(batter.bats, pitcherThrows)
+    if (side === 'R' || side === 'L') counts[side] += 1
+    else counts.unknown += 1
+  })
+  const knownBatters = counts.R + counts.L
+  const dominantSide =
+    knownBatters < MIN_LINEUP_BATTERS || counts.R === counts.L
+      ? null
+      : counts.R > counts.L
+        ? 'R'
+        : 'L'
+  const oppositeSide = dominantSide === 'R' ? 'L' : dominantSide === 'L' ? 'R' : null
+  const dominantCount = dominantSide ? counts[dominantSide] : 0
+  const oppositeCount = oppositeSide ? counts[oppositeSide] : 0
+  return {
+    status: lineup?.status || 'missing',
+    opponentTeamName: lineup?.teamName || null,
+    battersCount: batters.length,
+    rightHandedBatters: counts.R,
+    leftHandedBatters: counts.L,
+    unknownBatters: counts.unknown,
+    rawRightHandedBatters: lineup?.rawCounts?.R ?? null,
+    rawLeftHandedBatters: lineup?.rawCounts?.L ?? null,
+    rawSwitchHitters: lineup?.rawCounts?.S ?? null,
+    dominantSide,
+    dominantSideShare: knownBatters ? round(dominantCount / knownBatters, 3) : null,
+    dominantSideEdge: dominantSide ? dominantCount - oppositeCount : 0
+  }
+}
+
+const splitDamageAllowed = (side = {}) => {
+  const pa = toNumber(side.plateAppearances, 0)
+  if (!pa) return null
+  const totalBases = toNumber(side.totalBases, 0)
+  const walks = toNumber(side.walks, 0)
+  const hitByPitch = toNumber(side.hitByPitch, 0)
+  const homeRuns = toNumber(side.homeRuns, 0)
+  return (totalBases + walks * 0.7 + hitByPitch * 0.7 + homeRuns * 0.35) / pa
+}
+
+const buildLineupContexts = (lineupRows = []) => {
+  const grouped = groupBy(lineupRows, (row) => `${toInt(row.game_pk, null)}|${normalizeTeam(canonicalTeamName(row.team_name))}`)
+  const byGameTeam = new Map()
+  const byDateTeam = new Map()
+  grouped.forEach((rows, key) => {
+    const rawCounts = rows.reduce((acc, row) => {
+      const key = String(row.bats || '').trim().toUpperCase() || 'unknown'
+      if (key === 'R' || key === 'L' || key === 'S') acc[key] += 1
+      else acc.unknown += 1
+      return acc
+    }, { R: 0, L: 0, S: 0, unknown: 0 })
+    const context = {
+      gamePk: toInt(rows[0]?.game_pk, null),
+      gameDate: rows[0]?.game_date || null,
+      teamName: canonicalTeamName(rows[0]?.team_name || ''),
+      status: rows[0]?.lineup_status || 'unknown',
+      capturedAt: rows[0]?.captured_at || null,
+      rawCounts,
+      batters: rows
+        .sort((left, right) => toInt(left.batting_order, 99) - toInt(right.batting_order, 99))
+        .map((row) => ({
+          battingOrder: toInt(row.batting_order, null),
+          playerName: row.player_name || null,
+          bats: row.bats || null
+        }))
+    }
+    byGameTeam.set(key, context)
+    byDateTeam.set(`${context.gameDate}|${normalizeTeam(context.teamName)}`, context)
+  })
+  return { byGameTeam, byDateTeam }
+}
+
+const buildPitcherSplitProfiles = (rows = [], date) => {
+  const earliest = Date.parse(`${date}T12:00:00Z`) - PITCHER_SPLIT_HISTORY_DAYS * 86400000
+  const grouped = new Map()
+  rows.forEach((row) => {
+    const gameDate = Date.parse(`${row.game_date}T12:00:00Z`)
+    if (row.game_date >= date || !Number.isFinite(gameDate) || gameDate < earliest) return
+    const side = normalizeHand(row.batter_side)
+    if (side !== 'R' && side !== 'L') return
+    const pitcherId = toInt(row.pitcher_id, null)
+    const key = pitcherId !== null ? `id:${pitcherId}` : `name:${normalizePerson(row.pitcher_name)}`
+    if (!grouped.has(key)) {
+      grouped.set(key, {
+        pitcherId,
+        pitcherName: row.pitcher_name || null,
+        pitcherThrows: normalizeHand(row.pitcher_throws),
+        sides: {
+          R: { plateAppearances: 0, hits: 0, totalBases: 0, homeRuns: 0, walks: 0, hitByPitch: 0 },
+          L: { plateAppearances: 0, hits: 0, totalBases: 0, homeRuns: 0, walks: 0, hitByPitch: 0 }
+        }
+      })
+    }
+    const split = grouped.get(key).sides[side]
+    split.plateAppearances += toNumber(row.plate_appearances, 0) || 0
+    split.hits += toNumber(row.hits, 0) || 0
+    split.totalBases += toNumber(row.total_bases, 0) || 0
+    split.homeRuns += toNumber(row.home_runs, 0) || 0
+    split.walks += toNumber(row.walks, 0) || 0
+    split.hitByPitch += toNumber(row.hit_by_pitch, 0) || 0
+  })
+
+  const profiles = []
+  grouped.forEach((profile) => {
+    const rightDamage = splitDamageAllowed(profile.sides.R)
+    const leftDamage = splitDamageAllowed(profile.sides.L)
+    const rightPa = profile.sides.R.plateAppearances
+    const leftPa = profile.sides.L.plateAppearances
+    const hasSplitSample = rightPa >= MIN_SPLIT_PA_PER_SIDE && leftPa >= MIN_SPLIT_PA_PER_SIDE
+    const betterSide = !hasSplitSample || !Number.isFinite(rightDamage) || !Number.isFinite(leftDamage)
+      ? null
+      : rightDamage < leftDamage
+        ? 'R'
+        : leftDamage < rightDamage
+          ? 'L'
+          : null
+    profiles.push({
+      ...profile,
+      rightDamageAllowed: Number.isFinite(rightDamage) ? round(rightDamage, 3) : null,
+      leftDamageAllowed: Number.isFinite(leftDamage) ? round(leftDamage, 3) : null,
+      splitEdge: hasSplitSample && Number.isFinite(rightDamage) && Number.isFinite(leftDamage)
+        ? round(Math.abs(rightDamage - leftDamage), 3)
+        : null,
+      betterSide,
+      hasSplitSample
+    })
+  })
+
+  const byIdentity = new Map()
+  profiles.forEach((profile) => {
+    const row = { pitcherId: profile.pitcherId, pitcherName: profile.pitcherName }
+    identityKeys(row).forEach((key) => byIdentity.set(key, profile))
+  })
+  return byIdentity
+}
+
 const identityKeys = (row = {}) => {
   const keys = []
   const numericId = toInt(row.pitcherId ?? row.pitcher_id, null)
@@ -277,6 +511,91 @@ const lookupByIdentity = (map, row) => {
 }
 
 const gameKey = (row) => `${row.game_date}|${row.game_pk}|${normalizeTeam(canonicalTeamName(row.team_name))}`
+
+const lineupMatchupAdjustment = (candidate, firstUpContext) => {
+  const splitProfile = lookupByIdentity(firstUpContext?.pitcherSplitByIdentity || new Map(), candidate) || null
+  const pitcherThrows = normalizeHand(candidate.throws || splitProfile?.pitcherThrows)
+  const lineup = lineupContextAgainstPitcher(firstUpContext?.opponentLineup || null, pitcherThrows)
+  const availability = toNumber(candidate.availabilityScore, 0)
+  const freshnessMultiplier = availability >= 82 ? 1 : availability >= 72 ? 0.65 : 0
+
+  const baseContext = {
+    opponentTeamName: lineup.opponentTeamName,
+    lineupStatus: lineup.status,
+    pitcherThrows,
+    battersCount: lineup.battersCount,
+    rightHandedBatters: lineup.rightHandedBatters,
+    leftHandedBatters: lineup.leftHandedBatters,
+    rawRightHandedBatters: lineup.rawRightHandedBatters,
+    rawLeftHandedBatters: lineup.rawLeftHandedBatters,
+    rawSwitchHitters: lineup.rawSwitchHitters,
+    dominantBatterSide: lineup.dominantSide,
+    dominantBatterSideShare: lineup.dominantSideShare,
+    dominantSideEdge: lineup.dominantSideEdge,
+    pitcherBetterSide: splitProfile?.betterSide || null,
+    pitcherSplitSample: splitProfile
+      ? {
+          rightPa: splitProfile.sides.R.plateAppearances,
+          leftPa: splitProfile.sides.L.plateAppearances,
+          rightDamageAllowed: splitProfile.rightDamageAllowed,
+          leftDamageAllowed: splitProfile.leftDamageAllowed,
+          splitEdge: splitProfile.splitEdge
+        }
+      : null,
+    freshnessEligible: freshnessMultiplier > 0
+  }
+
+  if (!lineup.dominantSide) {
+    return {
+      adjustment: 0,
+      context: {
+        ...baseContext,
+        reason: lineup.battersCount
+          ? 'Opponent lineup has no clear handedness lean.'
+          : 'Opponent lineup handedness is unavailable.'
+      }
+    }
+  }
+  if (!splitProfile?.hasSplitSample || !splitProfile.betterSide || !Number.isFinite(splitProfile.splitEdge)) {
+    return {
+      adjustment: 0,
+      context: {
+        ...baseContext,
+        reason: 'Pitcher split sample is too thin for a handedness adjustment.'
+      }
+    }
+  }
+  if (!freshnessMultiplier) {
+    return {
+      adjustment: 0,
+      context: {
+        ...baseContext,
+        reason: 'Pitcher is not fresh enough for lineup-fit to boost first-up likelihood.'
+      }
+    }
+  }
+
+  const lineupPressure = clamp(lineup.dominantSideEdge / 4, 0.2, 1)
+  const splitStrength = clamp(splitProfile.splitEdge / 0.18, 0.2, 1)
+  const fit = lineup.dominantSide === splitProfile.betterSide
+  const magnitude = fit
+    ? LINEUP_MATCHUP_MAX_BOOST * lineupPressure * splitStrength * freshnessMultiplier
+    : LINEUP_MATCHUP_MAX_PENALTY * lineupPressure * splitStrength * freshnessMultiplier
+  const adjustment = fit ? magnitude : -magnitude
+
+  return {
+    adjustment: round(adjustment, 3),
+    context: {
+      ...baseContext,
+      lineupPressure: round(lineupPressure, 3),
+      splitStrength: round(splitStrength, 3),
+      fit,
+      reason: fit
+        ? `Fresh reliever split fits ${lineup.dominantSide}-heavy opponent pocket.`
+        : `Opponent pocket leans ${lineup.dominantSide}, away from pitcher better split side ${splitProfile.betterSide}.`
+    }
+  }
+}
 
 const buildHistoricalGameFacts = (appearanceRows, date) => {
   const earliest = Date.parse(`${date}T12:00:00Z`) - FIRST_UP_HISTORY_DAYS * 86400000
@@ -413,12 +732,14 @@ const applyFirstUpContext = (candidate, firstUpContext) => {
   const starterAdj = hasRecentFirstUpTrend ? 0 : starterRoleAdjustment(candidate, firstUpContext?.starter)
   const trendAdj = trendAdjustment(trend, sameStarter)
   const penalty = restPenalty(rest)
+  const lineupMatchup = lineupMatchupAdjustment(candidate, firstUpContext)
   const baseScore = toNumber(candidate.score, 0)
-  const score = baseScore + trendAdj + starterAdj - penalty
+  const score = baseScore + trendAdj + starterAdj + lineupMatchup.adjustment - penalty
   return {
     ...candidate,
     firstUpBaseScore: round(baseScore, 3),
     firstUpTrendAdjustment: round(trendAdj, 3),
+    firstUpLineupMatchupAdjustment: round(lineupMatchup.adjustment, 3),
     firstUpRestPenalty: round(penalty, 3),
     starterLeashAdjustment: round(starterAdj, 3),
     firstUpTrend: trend
@@ -451,6 +772,7 @@ const applyFirstUpContext = (candidate, firstUpContext) => {
         }
       : null,
     starterLeashContext: firstUpContext?.starter || null,
+    lineupMatchupContext: lineupMatchup.context,
     score: round(score, 3)
   }
 }
@@ -460,9 +782,13 @@ const buildFirstUpContexts = ({ date, dbPath, preloaded, teamSides }) => {
   const currentStarterRows = preloaded?.currentStarterRowsByDate?.get(date) || loadCurrentStarters(date, dbPath)
   const leashRows = preloaded?.starterLeashRows || loadStarterLeashProfiles(date, dbPath)
   const formRows = preloaded?.starterRollingFormRows || loadStarterRollingForms(date, dbPath)
+  const lineupRows = preloaded?.lineupHandednessRowsByDate?.get(date) || loadLineupHandednessRows(date, dbPath)
+  const pitcherSplitRows = preloaded?.pitcherBatterSideSplitRows || loadPitcherBatterSideSplitRows(date, dbPath)
   const facts = buildHistoricalGameFacts(appearanceRows, date)
   const factsByTeam = groupBy(facts, (row) => row.teamKey)
   factsByTeam.forEach((rows) => rows.sort((left, right) => right.gameDate.localeCompare(left.gameDate) || Number(right.gamePk) - Number(left.gamePk)))
+  const lineupContexts = buildLineupContexts(lineupRows)
+  const pitcherSplitByIdentity = buildPitcherSplitProfiles(pitcherSplitRows, date)
 
   const currentStarterByGameTeam = indexBy(
     currentStarterRows,
@@ -479,6 +805,11 @@ const buildFirstUpContexts = ({ date, dbPath, preloaded, teamSides }) => {
   teamSides.forEach((teamSide) => {
     const teamKey = normalizeTeam(teamSide.teamName)
     if (contexts.has(teamKey)) return
+    const opponentKey = normalizeTeam(teamSide.opponentName)
+    const opponentLineup =
+      lineupContexts.byGameTeam.get(`${toInt(teamSide.gamePk, null)}|${opponentKey}`) ||
+      lineupContexts.byDateTeam.get(`${date}|${opponentKey}`) ||
+      null
     const currentStarter =
       currentStarterByGameTeam.get(`${toInt(teamSide.gamePk, null)}|${teamKey}`) ||
       currentStarterByDateTeam.get(`${date}|${teamKey}`) ||
@@ -561,6 +892,8 @@ const buildFirstUpContexts = ({ date, dbPath, preloaded, teamSides }) => {
       trendByIdentity,
       sameStarterByIdentity,
       restByIdentity,
+      pitcherSplitByIdentity,
+      opponentLineup,
       recentFirstRelieverNames: recentFacts.slice(0, 5).map((fact) => fact.firstReliever.pitcher_name).filter(Boolean)
     })
   })
@@ -852,6 +1185,14 @@ export const buildReliefRows = ({ date, dbPath = mlbDbPath, recentByTeamOverride
       firstUpContext: firstUpContext
         ? {
             starter: firstUpContext.starter,
+            opponentLineup: firstUpContext.opponentLineup
+              ? {
+                  teamName: firstUpContext.opponentLineup.teamName,
+                  status: firstUpContext.opponentLineup.status,
+                  rawCounts: firstUpContext.opponentLineup.rawCounts,
+                  battersCount: firstUpContext.opponentLineup.batters.length
+                }
+              : null,
             recentFirstRelieverNames: firstUpContext.recentFirstRelieverNames
           }
         : null,

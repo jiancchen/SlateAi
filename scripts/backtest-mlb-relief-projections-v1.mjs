@@ -210,6 +210,39 @@ where g.game_date between ${sqlQuote(startDate)} and ${sqlQuote(endDate)}
 order by g.game_date, g.start_time_utc, teams.name;
 `, dbPath), 'game_date')
 
+const lineupHandednessRowsByDate = rowsByDate(sqliteJson(`
+with latest_lineups as (
+  select
+    l.*,
+    g.game_date,
+    cast(g.mlb_game_pk as integer) as game_pk,
+    teams.name as team_name,
+    row_number() over (
+      partition by l.game_id, l.team_id
+      order by l.captured_at desc, l.lineup_id desc
+    ) as latest_rank
+  from lineups l
+  join games g on g.game_id = l.game_id
+  join teams on teams.team_id = l.team_id
+  where g.game_date between ${sqlQuote(startDate)} and ${sqlQuote(endDate)}
+)
+select
+  game_date,
+  game_pk,
+  team_id,
+  team_name,
+  lineup_status,
+  captured_at,
+  cast(lineup_slots.batting_order as integer) as batting_order,
+  players.name as player_name,
+  players.bats
+from latest_lineups
+join lineup_slots on lineup_slots.lineup_id = latest_lineups.lineup_id
+join players on players.player_id = lineup_slots.player_id
+where latest_rank = 1
+order by game_date, game_pk, team_name, cast(lineup_slots.batting_order as integer);
+`, dbPath), 'game_date')
+
 const pitcherAppearanceRows = sqliteJson(`
 select
   game_date,
@@ -226,6 +259,43 @@ where game_date < ${sqlQuote(endDate)}
   and game_date >= date(${sqlQuote(startDate)}, '-60 day')
   and pitcher_role in ('starter', 'reliever')
 order by game_date, game_pk, team_name, cast(entry_order as integer), cast(pitcher_id as integer);
+`, dbPath)
+
+const pitcherBatterSideSplitRows = sqliteJson(`
+select
+  g.game_date,
+  pitcher_players.player_id as pitcher_player_id,
+  cast(pitcher_players.mlb_player_id as integer) as pitcher_id,
+  pitcher_players.name as pitcher_name,
+  pitcher_players.throws as pitcher_throws,
+  batter_players.bats as batter_side,
+  count(*) as plate_appearances,
+  sum(case when plate_appearances.event_type in ('single', 'double', 'triple', 'home_run') then 1 else 0 end) as hits,
+  sum(case
+    when plate_appearances.event_type = 'single' then 1
+    when plate_appearances.event_type = 'double' then 2
+    when plate_appearances.event_type = 'triple' then 3
+    when plate_appearances.event_type = 'home_run' then 4
+    else 0
+  end) as total_bases,
+  sum(case when plate_appearances.event_type = 'home_run' then 1 else 0 end) as home_runs,
+  sum(case when plate_appearances.event_type in ('walk', 'intent_walk') then 1 else 0 end) as walks,
+  sum(case when plate_appearances.event_type = 'hit_by_pitch' then 1 else 0 end) as hit_by_pitch
+from plate_appearances
+join games g on g.game_id = plate_appearances.game_id
+join players pitcher_players on pitcher_players.player_id = plate_appearances.pitcher_id
+join players batter_players on batter_players.player_id = plate_appearances.batter_id
+where g.game_date < ${sqlQuote(endDate)}
+  and g.game_date >= date(${sqlQuote(startDate)}, '-365 day')
+  and coalesce(batter_players.bats, '') in ('R', 'L')
+group by
+  g.game_date,
+  pitcher_players.player_id,
+  pitcher_players.mlb_player_id,
+  pitcher_players.name,
+  pitcher_players.throws,
+  batter_players.bats
+order by g.game_date, pitcher_players.name, batter_players.bats;
 `, dbPath)
 
 const starterLeashRows = sqliteJson(`
@@ -252,7 +322,9 @@ const preloaded = {
   fgDepthRowsByDate,
   fgUsageRowsByDate,
   currentStarterRowsByDate,
+  lineupHandednessRowsByDate,
   pitcherAppearanceRows,
+  pitcherBatterSideSplitRows,
   starterLeashRows,
   starterRollingFormRows
 }

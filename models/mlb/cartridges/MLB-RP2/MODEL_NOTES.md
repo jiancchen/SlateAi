@@ -20,6 +20,8 @@ RP36 mostly exported a first-up reliever shadow board. RP2 keeps the first-up cl
 - scheduled starters through `starting_pitchers`
 - starter leash and rolling form through `mlb_starter_leash_profiles` and `mlb_starting_pitcher_rolling_form`
 - FanGraphs/RosterResource bullpen depth, usage, and team RP rankings
+- current lineup handedness from typed `lineups` / `lineup_slots`
+- prior pitcher outcomes by batter side from typed `plate_appearances`
 
 ## First-Up Scoring
 
@@ -29,6 +31,7 @@ The first-up layer is no longer a role-only freshness sort. Candidate ranking st
 - recent team first-up trend context over the prior 10 team games
 - same-starter first-reliever history when available
 - starter leash role context, used mainly when no recent first-up trend exists
+- small lineup-handedness fit adjustment: a fresh reliever gets a capped boost when the opponent lineup leans toward the batter side he has suppressed better; he can get a smaller penalty when the pocket leans away from his better split
 
 The pitch-count rest penalty is calibrated from backtest results. It is strong enough to push down a likely reliever after a 20-40+ pitch outing, but it does not hard-zero the pitcher because depleted bullpens still reuse arms.
 
@@ -51,13 +54,13 @@ The backtest grades:
 - relievers-used MAE
 - first-up exact / top-2 / top-3 coverage
 
-Current `MLB-RP2.2026-06-12.v2` backtest over 2026-03-27 to 2026-06-05:
+Current `MLB-RP2.2026-06-12.v3` backtest over 2026-03-27 to 2026-06-05:
 
 - relief-runs MAE: 1.713 vs 1.764 baseline
 - relief-runs MAE lift: 2.9%
 - first-up exact: 19.4%
-- first-up top-2: 34.6%
-- first-up top-3: 47.6%
+- first-up top-2: 35.0%
+- first-up top-3: 47.5%
 
 ## Promotion Rule
 

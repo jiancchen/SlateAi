@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-12T21:02:12.749Z",
+  "generatedAt": "2026-06-12T22:56:56.356Z",
   "modelId": "MLB-RP2",
-  "modelVersion": "MLB-RP2.2026-06-12.v2",
+  "modelVersion": "MLB-RP2.2026-06-12.v3",
   "window": {
     "startDate": "2026-03-27",
     "endDate": "2026-06-05"
@@ -21,24 +21,24 @@
     "reliefRunsMae": 1.713,
     "baselineReliefRunsMae": 1.764,
     "reliefRunsMaeLiftPct": 2.9,
-    "reliefRunsRmse": 2.344,
+    "reliefRunsRmse": 2.345,
     "baselineReliefRunsRmse": 2.347,
     "reliefOutsMae": 3.619,
     "relieversUsedMae": 1.058,
     "firstUpExactPct": 19.4,
-    "firstUpTop2Pct": 34.6,
-    "firstUpTop3Pct": 47.6
+    "firstUpTop2Pct": 35,
+    "firstUpTop3Pct": 47.5
   },
   "buckets": {
     "runRiskTier": [
       {
         "bucket": "fresh_bridge",
-        "samples": 1273,
-        "avgPredictedRuns": 1.286,
-        "avgActualRuns": 1.914,
-        "reliefRunsMae": 1.663,
-        "firstUpExactPct": 19.6,
-        "firstUpTop3Pct": 48.9
+        "samples": 1279,
+        "avgPredictedRuns": 1.288,
+        "avgActualRuns": 1.913,
+        "reliefRunsMae": 1.667,
+        "firstUpExactPct": 19.4,
+        "firstUpTop3Pct": 48.8
       },
       {
         "bucket": "taxed_bridge",
@@ -51,43 +51,43 @@
       },
       {
         "bucket": "stable_bridge",
-        "samples": 450,
-        "avgPredictedRuns": 2.259,
-        "avgActualRuns": 1.887,
-        "reliefRunsMae": 1.71,
-        "firstUpExactPct": 18.7,
-        "firstUpTop3Pct": 43.8
+        "samples": 444,
+        "avgPredictedRuns": 2.262,
+        "avgActualRuns": 1.899,
+        "reliefRunsMae": 1.707,
+        "firstUpExactPct": 19.4,
+        "firstUpTop3Pct": 43.9
       },
       {
         "bucket": "watch_bridge",
         "samples": 111,
-        "avgPredictedRuns": 3.029,
-        "avgActualRuns": 2.288,
-        "reliefRunsMae": 2.251,
+        "avgPredictedRuns": 3.035,
+        "avgActualRuns": 2.252,
+        "reliefRunsMae": 2.219,
         "firstUpExactPct": 18.9,
-        "firstUpTop3Pct": 48.6
+        "firstUpTop3Pct": 47.7
       }
     ],
     "sourceMode": [
       {
         "bucket": "legacy_typed_bullpen_usage",
         "samples": 1843,
-        "avgPredictedRuns": 1.64,
+        "avgPredictedRuns": 1.639,
         "avgActualRuns": 1.929,
         "reliefRunsMae": 1.713,
         "firstUpExactPct": 19.4,
-        "firstUpTop3Pct": 47.6
+        "firstUpTop3Pct": 47.5
       }
     ],
     "bridgeStress": [
       {
         "bucket": "0-34 fresh",
-        "samples": 1276,
-        "avgPredictedRuns": 1.288,
-        "avgActualRuns": 1.91,
-        "reliefRunsMae": 1.664,
-        "firstUpExactPct": 19.6,
-        "firstUpTop3Pct": 49
+        "samples": 1282,
+        "avgPredictedRuns": 1.29,
+        "avgActualRuns": 1.909,
+        "reliefRunsMae": 1.667,
+        "firstUpExactPct": 19.4,
+        "firstUpTop3Pct": 48.8
       },
       {
         "bucket": "70+ taxed",
@@ -100,21 +100,21 @@
       },
       {
         "bucket": "35-53 stable",
-        "samples": 447,
-        "avgPredictedRuns": 2.261,
-        "avgActualRuns": 1.899,
-        "reliefRunsMae": 1.708,
-        "firstUpExactPct": 18.6,
-        "firstUpTop3Pct": 43.6
+        "samples": 441,
+        "avgPredictedRuns": 2.264,
+        "avgActualRuns": 1.912,
+        "reliefRunsMae": 1.706,
+        "firstUpExactPct": 19.3,
+        "firstUpTop3Pct": 43.8
       },
       {
         "bucket": "54-69 watch",
         "samples": 111,
-        "avgPredictedRuns": 3.029,
-        "avgActualRuns": 2.288,
-        "reliefRunsMae": 2.251,
+        "avgPredictedRuns": 3.035,
+        "avgActualRuns": 2.252,
+        "reliefRunsMae": 2.219,
         "firstUpExactPct": 18.9,
-        "firstUpTop3Pct": 48.6
+        "firstUpTop3Pct": 47.7
       }
     ]
   },
