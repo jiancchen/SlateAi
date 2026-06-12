@@ -1,50 +1,60 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-06-12T20:18:12.698Z",
+  "generatedAt": "2026-06-12T21:34:07.092Z",
   "modelId": "MLB-ENV1",
-  "modelVersion": "MLB-ENV1.2026-06-12.v1",
+  "modelVersion": "MLB-ENV1.2026-06-12.v2",
   "window": {
     "startDate": "2026-03-26",
     "endDate": "2026-06-11"
   },
   "coverage": {
     "dates": 78,
-    "projectionRows": 1021,
-    "matchedGames": 1012,
+    "projectionRows": 1020,
+    "matchedGames": 1016,
     "withFicWeather": 0,
     "withExactUmpire": 14,
-    "withParkContext": 1012
+    "withParkContext": 1016,
+    "withLocalStartContext": 1016,
+    "lateLocalStarts": 0
   },
   "headline": {
-    "totalMae": 3.6,
-    "baselineTotalMae": 3.611,
+    "totalMae": 3.598,
+    "baselineTotalMae": 3.609,
     "maeLiftPct": 0.3,
     "directional": {
-      "samples": 274,
-      "hitPct": 58
+      "samples": 275,
+      "hitPct": 58.2
     }
   },
   "buckets": {
     "runEnvironmentSignal": [
       {
         "bucket": "neutral_run_environment",
-        "samples": 805,
+        "samples": 809,
         "avgExpectedDelta": 0.031,
-        "avgActualDelta": 0.243,
-        "avgActualTotal": 9.109,
-        "totalMae": 3.613,
-        "baselineMae": 3.612,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": 0.01,
+        "avgActualDelta": 0.249,
+        "avgActualTotal": 9.119,
+        "avgActualHits": 16.485,
+        "avgActualHr": 2.282,
+        "totalMae": 3.61,
+        "baselineMae": 3.61,
         "directional": {
-          "samples": 67,
-          "hitPct": 55.2
+          "samples": 68,
+          "hitPct": 55.9
         }
       },
       {
         "bucket": "lower_run_environment",
         "samples": 104,
         "avgExpectedDelta": -0.24,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.018,
         "avgActualDelta": -0.617,
         "avgActualTotal": 8.298,
+        "avgActualHits": 15.481,
+        "avgActualHr": 1.856,
         "totalMae": 3.499,
         "baselineMae": 3.561,
         "directional": {
@@ -56,8 +66,12 @@
         "bucket": "higher_run_environment",
         "samples": 72,
         "avgExpectedDelta": 0.359,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.051,
         "avgActualDelta": -0.033,
         "avgActualTotal": 8.889,
+        "avgActualHits": 16.194,
+        "avgActualHr": 2,
         "totalMae": 3.718,
         "baselineMae": 3.678,
         "directional": {
@@ -68,10 +82,14 @@
       {
         "bucket": "suppressing_run_environment",
         "samples": 31,
-        "avgExpectedDelta": -0.597,
+        "avgExpectedDelta": -0.6,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.144,
         "avgActualDelta": -2.005,
         "avgActualTotal": 6.903,
-        "totalMae": 3.331,
+        "avgActualHits": 14.129,
+        "avgActualHr": 2.032,
+        "totalMae": 3.328,
         "baselineMae": 3.578,
         "directional": {
           "samples": 31,
@@ -84,8 +102,12 @@
         "bucket": "park_runs_95_98",
         "samples": 98,
         "avgExpectedDelta": -0.134,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.037,
         "avgActualDelta": -0.07,
         "avgActualTotal": 8.735,
+        "avgActualHits": 15.959,
+        "avgActualHr": 2.112,
         "totalMae": 3.347,
         "baselineMae": 3.356,
         "directional": {
@@ -96,9 +118,13 @@
       {
         "bucket": "park_runs_94_below",
         "samples": 133,
-        "avgExpectedDelta": -0.324,
+        "avgExpectedDelta": -0.325,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.047,
         "avgActualDelta": -0.9,
         "avgActualTotal": 8,
+        "avgActualHits": 15.18,
+        "avgActualHr": 1.91,
         "totalMae": 3.465,
         "baselineMae": 3.569,
         "directional": {
@@ -108,12 +134,16 @@
       },
       {
         "bucket": "park_runs_neutral",
-        "samples": 473,
+        "samples": 476,
         "avgExpectedDelta": 0,
-        "avgActualDelta": 0.348,
-        "avgActualTotal": 9.241,
-        "totalMae": 3.692,
-        "baselineMae": 3.693,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.05,
+        "avgActualDelta": 0.353,
+        "avgActualTotal": 9.25,
+        "avgActualHits": 16.706,
+        "avgActualHr": 2.237,
+        "totalMae": 3.691,
+        "baselineMae": 3.692,
         "directional": {
           "samples": 3,
           "hitPct": 100
@@ -121,23 +151,31 @@
       },
       {
         "bucket": "park_runs_106_plus",
-        "samples": 137,
+        "samples": 138,
         "avgExpectedDelta": 0.302,
-        "avgActualDelta": 0.392,
-        "avgActualTotal": 9.241,
-        "totalMae": 3.573,
-        "baselineMae": 3.564,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": 0.069,
+        "avgActualDelta": 0.406,
+        "avgActualTotal": 9.261,
+        "avgActualHits": 16.5,
+        "avgActualHr": 2.362,
+        "totalMae": 3.562,
+        "baselineMae": 3.556,
         "directional": {
-          "samples": 137,
-          "hitPct": 51.1
+          "samples": 138,
+          "hitPct": 51.4
         }
       },
       {
         "bucket": "park_runs_102_105",
         "samples": 171,
         "avgExpectedDelta": 0.129,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": 0.131,
         "avgActualDelta": -0.144,
         "avgActualTotal": 8.731,
+        "avgActualHits": 16.012,
+        "avgActualHr": 2.304,
         "totalMae": 3.615,
         "baselineMae": 3.598,
         "directional": {
@@ -149,15 +187,38 @@
     "hrForceSignal": [
       {
         "bucket": "missing",
-        "samples": 1012,
+        "samples": 1016,
         "avgExpectedDelta": 0.007,
-        "avgActualDelta": 0.066,
-        "avgActualTotal": 8.943,
-        "totalMae": 3.6,
-        "baselineMae": 3.611,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.002,
+        "avgActualDelta": 0.071,
+        "avgActualTotal": 8.951,
+        "avgActualHits": 16.289,
+        "avgActualHr": 2.211,
+        "totalMae": 3.598,
+        "baselineMae": 3.609,
         "directional": {
-          "samples": 274,
-          "hitPct": 58
+          "samples": 275,
+          "hitPct": 58.2
+        }
+      }
+    ],
+    "visibilitySignal": [
+      {
+        "bucket": "normal_start_visibility",
+        "samples": 1016,
+        "avgExpectedDelta": 0.007,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.002,
+        "avgActualDelta": 0.071,
+        "avgActualTotal": 8.951,
+        "avgActualHits": 16.289,
+        "avgActualHr": 2.211,
+        "totalMae": 3.598,
+        "baselineMae": 3.609,
+        "directional": {
+          "samples": 275,
+          "hitPct": 58.2
         }
       }
     ]

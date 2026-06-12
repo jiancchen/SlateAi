@@ -83,8 +83,14 @@ const importMaybeFresh = async (absolutePath) => {
 }
 
 const num = (value, fallback = null) => {
+  if (value === null || value === undefined || value === '') return fallback
   const parsed = Number(value)
   return Number.isFinite(parsed) ? parsed : fallback
+}
+
+const nullableNum = (value) => {
+  if (value === null || value === undefined || value === '') return null
+  return num(value, null)
 }
 
 const round = (value, digits = 2) => {
@@ -1100,8 +1106,25 @@ const buildEnvironmentAdjustmentContext = (row = null) => {
       strikeoutsDelta: num(row.umpire_k_delta, 0),
       walksDelta: num(row.umpire_walk_delta, 0)
     },
+    visibility: {
+      startTimeUtc: row.start_time_utc || null,
+      localStartDate: row.local_start_date || null,
+      localStartTime: row.local_start_time || null,
+      localStartHour: nullableNum(row.local_start_hour),
+      localStartMinute: nullableNum(row.local_start_minute),
+      localTimezone: row.local_timezone || null,
+      lateLocalStart: num(row.late_local_start_flag, 0) === 1,
+      signal: row.visibility_signal || null,
+      hitsMultiplier: num(row.visibility_hits_multiplier, 1),
+      hrMultiplier: num(row.visibility_hr_multiplier, 1),
+      runsMultiplier: num(row.visibility_runs_multiplier, 1),
+      hitsDelta: num(row.visibility_hits_delta, 0),
+      runsDelta: num(row.visibility_runs_delta, 0),
+      hrDelta: num(row.visibility_hr_delta, 0)
+    },
     expected: {
       totalRunsDelta: num(row.expected_total_runs_delta, 0),
+      hitsDelta: num(row.expected_hits_delta, 0),
       hrDelta: num(row.expected_hr_delta, 0),
       strikeoutsDelta: num(row.expected_k_delta, 0),
       walksDelta: num(row.expected_walk_delta, 0)
@@ -1204,6 +1227,7 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
       indexWoba: environmentAdjustmentContext.park.indexWoba,
       source: 'MLB-ENV1',
       expectedTotalRunsDelta: environmentAdjustmentContext.expected.totalRunsDelta,
+      expectedHitsDelta: environmentAdjustmentContext.expected.hitsDelta,
       expectedHrDelta: environmentAdjustmentContext.expected.hrDelta,
       runEnvironmentSignal: environmentAdjustmentContext.signal
     }

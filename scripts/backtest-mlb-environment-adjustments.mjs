@@ -50,6 +50,7 @@ select
   away_team,
   home_team,
   cast(total_runs_final as real) as total_runs_final,
+  cast(away_hits_final as real) + cast(home_hits_final as real) as total_hits,
   cast(away_home_runs_final as real) + cast(home_home_runs_final as real) as total_home_runs
 from mlb_game_outcomes
 where game_date between ${sqlQuote(startDate)} and ${sqlQuote(endDate)}
@@ -103,8 +104,12 @@ const bucketRows = (rows, bucketFn) => {
     bucket,
     samples: bucketItems.length,
     avgExpectedDelta: round(avg(bucketItems.map((row) => row.expectedTotalRunsDelta)), 3),
+    avgExpectedHitsDelta: round(avg(bucketItems.map((row) => row.expectedHitsDelta)), 3),
+    avgExpectedHrDelta: round(avg(bucketItems.map((row) => row.expectedHrDelta)), 3),
     avgActualDelta: round(avg(bucketItems.map((row) => row.actualDelta)), 3),
     avgActualTotal: round(avg(bucketItems.map((row) => row.actual.total_runs_final)), 3),
+    avgActualHits: round(avg(bucketItems.map((row) => row.actual.total_hits)), 3),
+    avgActualHr: round(avg(bucketItems.map((row) => row.actual.total_home_runs)), 3),
     totalMae: round(mae(bucketItems, (row) => row.projectedTotal, (row) => row.actual.total_runs_final), 3),
     baselineMae: round(mae(bucketItems, (row) => row.baselineTotal, (row) => row.actual.total_runs_final), 3),
     directional: directionalAccuracy(bucketItems)
@@ -126,7 +131,9 @@ const report = {
     matchedGames: matched.length,
     withFicWeather: matched.filter((row) => row.sourceFlags.hasFicWeather).length,
     withExactUmpire: matched.filter((row) => row.sourceFlags.hasExactUmpireAssignment).length,
-    withParkContext: matched.filter((row) => row.sourceFlags.hasParkContext).length
+    withParkContext: matched.filter((row) => row.sourceFlags.hasParkContext).length,
+    withLocalStartContext: matched.filter((row) => row.sourceFlags.hasLocalStartContext).length,
+    lateLocalStarts: matched.filter((row) => row.sourceFlags.isLateLocalStart).length
   },
   headline: {
     totalMae: round(totalMae, 3),
@@ -146,7 +153,8 @@ const report = {
       if (index <= 98) return 'park_runs_95_98'
       return 'park_runs_neutral'
     }),
-    hrForceSignal: bucketRows(matched, (row) => row.hrForceRunSignal || 'missing')
+    hrForceSignal: bucketRows(matched, (row) => row.hrForceRunSignal || 'missing'),
+    visibilitySignal: bucketRows(matched, (row) => row.visibilitySignal || 'missing')
   },
   promotionGate: {
     status: matched.length >= 300 && totalMae < baselineMae && matched.filter((row) => row.sourceFlags.hasFicWeather).length >= 100
@@ -176,6 +184,8 @@ Window: \`${startDate}\` to \`${endDate}\`
 - matched settled games: \`${report.coverage.matchedGames}\`
 - matched FIC weather games: \`${report.coverage.withFicWeather}\`
 - exact umpire games: \`${report.coverage.withExactUmpire}\`
+- local start context games: \`${report.coverage.withLocalStartContext}\`
+- late local starts: \`${report.coverage.lateLocalStarts}\`
 - promotion status: \`${report.promotionGate.status}\`
 
 ## Headline
@@ -202,6 +212,23 @@ ${markdownTable(
     `${row.totalMae}`,
     `${row.baselineMae}`,
     `${row.directional.hitPct}%/${row.directional.samples}`
+  ])
+)}
+
+## Visibility Buckets
+
+${markdownTable(
+  ['Bucket', 'Samples', 'Exp Runs', 'Actual Delta', 'Actual Total', 'Exp Hits', 'Actual Hits', 'Exp HR', 'Actual HR'],
+  report.buckets.visibilitySignal.map((row) => [
+    row.bucket,
+    `${row.samples}`,
+    `${row.avgExpectedDelta}`,
+    `${row.avgActualDelta}`,
+    `${row.avgActualTotal}`,
+    `${row.avgExpectedHitsDelta}`,
+    `${row.avgActualHits}`,
+    `${row.avgExpectedHrDelta}`,
+    `${row.avgActualHr}`
   ])
 )}
 

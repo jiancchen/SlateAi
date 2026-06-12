@@ -4,15 +4,18 @@ Owns full-game, first-five, and late scoring-total projections after starter, bu
 
 ## Environment Addendum
 
-`MLB-ENV1` is the new modular run-environment layer. It writes `mlb_game_environment_adjustments_daily` with separate park, FIC weather/HRForce, and exact-umpire deltas:
+`MLB-ENV1` is the new modular run-environment layer. It writes `mlb_game_environment_adjustments_daily` with separate park, FIC weather/HRForce, late local start visibility, and exact-umpire deltas:
 
 - `expected_total_runs_delta`
+- `expected_hits_delta`
 - `expected_hr_delta`
 - `expected_k_delta`
 - `expected_walk_delta`
+- `visibility_hits_multiplier`
+- `visibility_hr_multiplier`
 - `run_environment_signal`
 
-M2 totals may consume ENV1 as a shadow adjustment while it is `shadow-candidate`. Umpire deltas are only valid when the assignment row is an exact game/date match; unresolved or stale umpire rows must remain zero-adjustment context.
+M2 totals may consume ENV1 as a shadow adjustment while it is `shadow-candidate`. Umpire deltas are only valid when the assignment row is an exact game/date match; unresolved or stale umpire rows must remain zero-adjustment context. Late local starts at or after 8:00 PM ballpark time carry the visibility prior as raw multipliers plus additive deltas until the backtest calibrates the weights.
 
 Posted total source order:
 

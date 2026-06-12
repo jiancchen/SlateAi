@@ -23,7 +23,7 @@ import {
 } from './lib/mlb-model-utils.mjs'
 
 export const modelId = 'MLB-ENV1'
-export const modelVersion = 'MLB-ENV1.2026-06-12.v1'
+export const modelVersion = 'MLB-ENV1.2026-06-12.v2'
 const date = getArg('--date', new Date().toISOString().slice(0, 10))
 const dbPath = getArg('--db', mlbDbPath)
 const outPath = getArg(
@@ -32,8 +32,117 @@ const outPath = getArg(
 )
 
 const toNumber = (value, fallback = null) => {
+  if (value === null || value === undefined || value === '') return fallback
   const parsed = Number(value)
   return Number.isFinite(parsed) ? parsed : fallback
+}
+
+const lateLocalStartHour = 20
+const lateLocalStartPrior = {
+  hitsMultiplier: 0.9,
+  hrMultiplier: 0.8,
+  runsMultiplier: 0.95,
+  hitsDelta: -1.6,
+  hrDelta: -0.4,
+  runsDelta: -0.4
+}
+
+const homeTeamTimezones = {
+  Angels: 'America/Los_Angeles',
+  Athletics: 'America/Los_Angeles',
+  Dodgers: 'America/Los_Angeles',
+  Giants: 'America/Los_Angeles',
+  Mariners: 'America/Los_Angeles',
+  Padres: 'America/Los_Angeles',
+  Diamondbacks: 'America/Phoenix',
+  Rockies: 'America/Denver',
+  Astros: 'America/Chicago',
+  Brewers: 'America/Chicago',
+  Cardinals: 'America/Chicago',
+  Cubs: 'America/Chicago',
+  'White Sox': 'America/Chicago',
+  Royals: 'America/Chicago',
+  Rangers: 'America/Chicago',
+  Twins: 'America/Chicago',
+  Braves: 'America/New_York',
+  Orioles: 'America/New_York',
+  'Red Sox': 'America/New_York',
+  Guardians: 'America/New_York',
+  Reds: 'America/New_York',
+  Tigers: 'America/New_York',
+  Marlins: 'America/New_York',
+  Mets: 'America/New_York',
+  Yankees: 'America/New_York',
+  Phillies: 'America/New_York',
+  Pirates: 'America/New_York',
+  Rays: 'America/New_York',
+  Nationals: 'America/New_York',
+  'Blue Jays': 'America/Toronto'
+}
+
+const timezoneForHomeTeam = (homeTeam) => homeTeamTimezones[shortTeamName(canonicalTeamName(homeTeam))] || null
+
+const localStartContext = (game) => {
+  const startTimeUtc = game.startTimeUtc || null
+  const localTimezone = timezoneForHomeTeam(game.homeTeam)
+  if (!startTimeUtc || !localTimezone) {
+    return {
+      startTimeUtc,
+      localTimezone,
+      localStartDate: null,
+      localStartTime: null,
+      localStartHour: null,
+      localStartMinute: null,
+      localStartMinuteOfDay: null,
+      hasLocalStartContext: false
+    }
+  }
+  const startDate = new Date(startTimeUtc)
+  if (Number.isNaN(startDate.getTime())) {
+    return {
+      startTimeUtc,
+      localTimezone,
+      localStartDate: null,
+      localStartTime: null,
+      localStartHour: null,
+      localStartMinute: null,
+      localStartMinuteOfDay: null,
+      hasLocalStartContext: false
+    }
+  }
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat('en-US', {
+      timeZone: localTimezone,
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true,
+      timeZoneName: 'short'
+    })
+      .formatToParts(startDate)
+      .filter((part) => part.type !== 'literal')
+      .map((part) => [part.type, part.value])
+  )
+  const hour12 = Number(parts.hour || 0)
+  const minute = Number(parts.minute || 0)
+  const dayPeriod = `${parts.dayPeriod || ''}`.toUpperCase()
+  const localStartHour = dayPeriod === 'PM' && hour12 !== 12
+    ? hour12 + 12
+    : dayPeriod === 'AM' && hour12 === 12
+      ? 0
+      : hour12
+  return {
+    startTimeUtc,
+    localTimezone,
+    localStartDate: `${parts.year}-${parts.month}-${parts.day}`,
+    localStartTime: `${hour12}:${String(minute).padStart(2, '0')} ${dayPeriod} ${parts.timeZoneName || localTimezone}`,
+    localStartHour,
+    localStartMinute: minute,
+    localStartMinuteOfDay: localStartHour * 60 + minute,
+    hasLocalStartContext: Number.isFinite(localStartHour) && Number.isFinite(minute)
+  }
 }
 
 const indexBy = (rows, keyFn) =>
@@ -154,6 +263,51 @@ const weatherDelta = (weather) => {
   }
 }
 
+const visibilityDelta = (game) => {
+  const localStart = localStartContext(game)
+  if (!localStart.hasLocalStartContext) {
+    return {
+      ...localStart,
+      lateLocalStartFlag: false,
+      visibilitySignal: 'missing_start_time',
+      visibilityHitsMultiplier: 1,
+      visibilityHrMultiplier: 1,
+      visibilityRunsMultiplier: 1,
+      visibilityHitsDelta: 0,
+      visibilityRunsDelta: 0,
+      visibilityHrDelta: 0,
+      reason: 'No schedule start_time_utc and ballpark timezone pair was available; late-start visibility prior is neutral.'
+    }
+  }
+  const lateLocalStartFlag = localStart.localStartMinuteOfDay >= lateLocalStartHour * 60
+  if (!lateLocalStartFlag) {
+    return {
+      ...localStart,
+      lateLocalStartFlag: false,
+      visibilitySignal: 'normal_start_visibility',
+      visibilityHitsMultiplier: 1,
+      visibilityHrMultiplier: 1,
+      visibilityRunsMultiplier: 1,
+      visibilityHitsDelta: 0,
+      visibilityRunsDelta: 0,
+      visibilityHrDelta: 0,
+      reason: `Local first pitch ${localStart.localStartTime} is before the ${lateLocalStartHour}:00 late-light threshold.`
+    }
+  }
+  return {
+    ...localStart,
+    lateLocalStartFlag: true,
+    visibilitySignal: 'late_lights_suppressed_contact',
+    visibilityHitsMultiplier: lateLocalStartPrior.hitsMultiplier,
+    visibilityHrMultiplier: lateLocalStartPrior.hrMultiplier,
+    visibilityRunsMultiplier: lateLocalStartPrior.runsMultiplier,
+    visibilityHitsDelta: lateLocalStartPrior.hitsDelta,
+    visibilityRunsDelta: lateLocalStartPrior.runsDelta,
+    visibilityHrDelta: lateLocalStartPrior.hrDelta,
+    reason: `Local first pitch ${localStart.localStartTime} is at/after ${lateLocalStartHour}:00; applying user-provided late-light prior of 10% fewer hits and 20% fewer HR pending backtest calibration.`
+  }
+}
+
 const exactUmpireAssignment = (assignments = []) =>
   assignments.find((row) => row.date_match_status === 'exact' && row.game_pk !== null && row.game_pk !== undefined) || null
 
@@ -232,17 +386,47 @@ const signalFor = (delta) => {
   return 'neutral_run_environment'
 }
 
-const confidenceFor = ({ weather, park, assignment, profile, game }) =>
+const confidenceFor = ({ weather, park, assignment, profile, game, visibility }) =>
   clamp(
     20 +
       (game?.gamePk ? 10 : 0) +
       (park?.yearRange && park.yearRange !== 'missing-neutral' ? 20 : 8) +
       (weather ? 25 : 0) +
+      (visibility?.hasLocalStartContext ? 5 : 0) +
       (assignment ? 12 : 0) +
       (profile ? 8 : 0),
     0,
     95
   )
+
+const environmentColumnMigrations = [
+  ['start_time_utc', 'text'],
+  ['local_start_date', 'text'],
+  ['local_start_time', 'text'],
+  ['local_start_hour', 'integer'],
+  ['local_start_minute', 'integer'],
+  ['local_timezone', 'text'],
+  ['late_local_start_flag', 'integer'],
+  ['visibility_signal', 'text'],
+  ['visibility_hits_multiplier', 'real'],
+  ['visibility_hr_multiplier', 'real'],
+  ['visibility_runs_multiplier', 'real'],
+  ['visibility_hits_delta', 'real'],
+  ['visibility_runs_delta', 'real'],
+  ['visibility_hr_delta', 'real'],
+  ['expected_hits_delta', 'real']
+]
+
+const ensureEnvironmentColumns = (targetDbPath) => {
+  const existingColumns = new Set(
+    sqliteJson('pragma table_info(mlb_game_environment_adjustments_daily);', targetDbPath).map((row) => row.name)
+  )
+  environmentColumnMigrations.forEach(([name, type]) => {
+    if (!existingColumns.has(name)) {
+      sqliteExec(`alter table mlb_game_environment_adjustments_daily add column ${name} ${type};`, targetDbPath)
+    }
+  })
+}
 
 const createTable = (targetDate, targetDbPath) => {
   sqliteExec(`
@@ -253,6 +437,12 @@ create table if not exists mlb_game_environment_adjustments_daily (
   game_pk integer,
   away_team text,
   home_team text,
+  start_time_utc text,
+  local_start_date text,
+  local_start_time text,
+  local_start_hour integer,
+  local_start_minute integer,
+  local_timezone text,
   venue_name text,
   park_year_range text,
   park_run_index real,
@@ -266,6 +456,14 @@ create table if not exists mlb_game_environment_adjustments_daily (
   weather_hr_delta real,
   park_run_delta real,
   park_hr_delta real,
+  late_local_start_flag integer,
+  visibility_signal text,
+  visibility_hits_multiplier real,
+  visibility_hr_multiplier real,
+  visibility_runs_multiplier real,
+  visibility_hits_delta real,
+  visibility_runs_delta real,
+  visibility_hr_delta real,
   umpire_name text,
   umpire_assignment_status text,
   umpire_favors_code text,
@@ -275,6 +473,7 @@ create table if not exists mlb_game_environment_adjustments_daily (
   umpire_k_delta real,
   umpire_walk_delta real,
   expected_total_runs_delta real,
+  expected_hits_delta real,
   expected_hr_delta real,
   expected_k_delta real,
   expected_walk_delta real,
@@ -287,6 +486,9 @@ create table if not exists mlb_game_environment_adjustments_daily (
   primary key (source_date, matchup_key, model_version)
 );
 create index if not exists idx_mlb_env_adj_date_game on mlb_game_environment_adjustments_daily(source_date, game_pk);
+`, targetDbPath)
+  ensureEnvironmentColumns(targetDbPath)
+  sqliteExec(`
 delete from mlb_game_environment_adjustments_daily
 where source_date = ${sqlQuote(targetDate)}
   and model_version = ${sqlQuote(modelVersion)};
@@ -297,14 +499,20 @@ const insertRows = (rows, targetDbPath) => {
   if (!rows.length) return
   const values = rows.map((row) => `(
     ${sqlQuote(row.sourceDate)}, ${sqlQuote(row.modelVersion)}, ${sqlQuote(row.matchupKey)}, ${sqlQuote(row.gamePk)},
-    ${sqlQuote(row.awayTeam)}, ${sqlQuote(row.homeTeam)}, ${sqlQuote(row.venueName)}, ${sqlQuote(row.parkYearRange)},
+    ${sqlQuote(row.awayTeam)}, ${sqlQuote(row.homeTeam)}, ${sqlQuote(row.startTimeUtc)}, ${sqlQuote(row.localStartDate)},
+    ${sqlQuote(row.localStartTime)}, ${sqlQuote(row.localStartHour)}, ${sqlQuote(row.localStartMinute)},
+    ${sqlQuote(row.localTimezone)}, ${sqlQuote(row.venueName)}, ${sqlQuote(row.parkYearRange)},
     ${sqlQuote(row.parkRunIndex)}, ${sqlQuote(row.parkHrIndex)}, ${sqlQuote(row.parkWobaIndex)},
     ${sqlQuote(row.weatherMatchStatus)}, ${sqlQuote(row.hrForce)}, ${sqlQuote(row.effectiveHrForce)},
     ${sqlQuote(row.hrForceRunSignal)}, ${sqlQuote(row.weatherRunDelta)}, ${sqlQuote(row.weatherHrDelta)},
-    ${sqlQuote(row.parkRunDelta)}, ${sqlQuote(row.parkHrDelta)}, ${sqlQuote(row.umpireName)},
+    ${sqlQuote(row.parkRunDelta)}, ${sqlQuote(row.parkHrDelta)}, ${sqlQuote(row.lateLocalStartFlag ? 1 : 0)},
+    ${sqlQuote(row.visibilitySignal)}, ${sqlQuote(row.visibilityHitsMultiplier)}, ${sqlQuote(row.visibilityHrMultiplier)},
+    ${sqlQuote(row.visibilityRunsMultiplier)}, ${sqlQuote(row.visibilityHitsDelta)}, ${sqlQuote(row.visibilityRunsDelta)},
+    ${sqlQuote(row.visibilityHrDelta)}, ${sqlQuote(row.umpireName)},
     ${sqlQuote(row.umpireAssignmentStatus)}, ${sqlQuote(row.umpireFavorsCode)}, ${sqlQuote(row.umpireTotalScorePerGame)},
     ${sqlQuote(row.umpireZoneFactor)}, ${sqlQuote(row.umpireRunsDelta)}, ${sqlQuote(row.umpireKDelta)},
-    ${sqlQuote(row.umpireWalkDelta)}, ${sqlQuote(row.expectedTotalRunsDelta)}, ${sqlQuote(row.expectedHrDelta)},
+    ${sqlQuote(row.umpireWalkDelta)}, ${sqlQuote(row.expectedTotalRunsDelta)}, ${sqlQuote(row.expectedHitsDelta)},
+    ${sqlQuote(row.expectedHrDelta)},
     ${sqlQuote(row.expectedKDelta)}, ${sqlQuote(row.expectedWalkDelta)}, ${sqlQuote(row.runEnvironmentSignal)},
     ${sqlQuote(row.confidenceScore)}, ${sqlQuote(JSON.stringify(row.sourceFlags))}, ${sqlQuote(JSON.stringify(row.reasons))},
     ${sqlQuote(JSON.stringify(row.featureSnapshot))}, ${sqlQuote(row.generatedAt)}
@@ -312,11 +520,14 @@ const insertRows = (rows, targetDbPath) => {
 
   sqliteExec(`
 insert or replace into mlb_game_environment_adjustments_daily (
-  source_date, model_version, matchup_key, game_pk, away_team, home_team, venue_name, park_year_range,
+  source_date, model_version, matchup_key, game_pk, away_team, home_team, start_time_utc, local_start_date,
+  local_start_time, local_start_hour, local_start_minute, local_timezone, venue_name, park_year_range,
   park_run_index, park_hr_index, park_woba_index, weather_match_status, hr_force, effective_hr_force,
-  hr_force_run_signal, weather_run_delta, weather_hr_delta, park_run_delta, park_hr_delta, umpire_name,
+  hr_force_run_signal, weather_run_delta, weather_hr_delta, park_run_delta, park_hr_delta, late_local_start_flag,
+  visibility_signal, visibility_hits_multiplier, visibility_hr_multiplier, visibility_runs_multiplier,
+  visibility_hits_delta, visibility_runs_delta, visibility_hr_delta, umpire_name,
   umpire_assignment_status, umpire_favors_code, umpire_total_score_per_game, umpire_zone_factor,
-  umpire_runs_delta, umpire_k_delta, umpire_walk_delta, expected_total_runs_delta, expected_hr_delta,
+  umpire_runs_delta, umpire_k_delta, umpire_walk_delta, expected_total_runs_delta, expected_hits_delta, expected_hr_delta,
   expected_k_delta, expected_walk_delta, run_environment_signal, confidence_score, source_flags_json,
   reasons_json, feature_snapshot_json, generated_at
 ) values ${values};
@@ -338,17 +549,26 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
     const assignment = exactUmpireAssignment(assignments)
     const parkParts = parkDelta(park)
     const weatherParts = weatherDelta(weather)
+    const visibilityParts = visibilityDelta(game)
     const umpireParts = umpireDelta({ assignment, ficProfiles })
     const expectedTotalRunsDelta = clamp(
-      parkParts.parkRunDelta + weatherParts.weatherRunDelta + umpireParts.umpireRunsDelta,
+      parkParts.parkRunDelta + weatherParts.weatherRunDelta + visibilityParts.visibilityRunsDelta + umpireParts.umpireRunsDelta,
       -1.4,
       1.6
     )
-    const expectedHrDelta = clamp(parkParts.parkHrDelta + weatherParts.weatherHrDelta, -0.75, 0.9)
-    const confidenceScore = confidenceFor({ weather, park, assignment, profile: umpireParts.profile, game })
+    const expectedHrDelta = clamp(
+      parkParts.parkHrDelta + weatherParts.weatherHrDelta + visibilityParts.visibilityHrDelta,
+      -0.9,
+      0.9
+    )
+    const expectedHitsDelta = clamp(visibilityParts.visibilityHitsDelta, -2.5, 1.5)
+    const confidenceScore = confidenceFor({ weather, park, assignment, profile: umpireParts.profile, game, visibility: visibilityParts })
     const sourceFlags = {
       gameSource: game.source,
       hasMlbGamePk: Boolean(game.gamePk),
+      hasStartTimeUtc: Boolean(game.startTimeUtc),
+      hasLocalStartContext: Boolean(visibilityParts.hasLocalStartContext),
+      isLateLocalStart: Boolean(visibilityParts.lateLocalStartFlag),
       hasParkContext: Boolean(park?.yearRange && park.yearRange !== 'missing-neutral'),
       hasFicWeather: Boolean(weather),
       hasExactUmpireAssignment: Boolean(assignment),
@@ -358,6 +578,7 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
     const reasons = [
       `${park.venueName || shortTeamName(game.homeTeam)} park runs ${park.indexRuns || 100}, HR ${park.indexHr || 100}.`,
       weatherParts.reason,
+      visibilityParts.reason,
       umpireParts.reason
     ].filter(Boolean)
     const featureSnapshot = {
@@ -378,7 +599,24 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
         bbPerGame: assignment.bb_per_game,
         nrfiPct: assignment.nrfi_pct
       } : null,
-      umpireProfile: umpireParts.profile
+      umpireProfile: umpireParts.profile,
+      visibility: {
+        startTimeUtc: visibilityParts.startTimeUtc,
+        localTimezone: visibilityParts.localTimezone,
+        localStartDate: visibilityParts.localStartDate,
+        localStartTime: visibilityParts.localStartTime,
+        localStartHour: visibilityParts.localStartHour,
+        localStartMinute: visibilityParts.localStartMinute,
+        lateLocalStartFlag: visibilityParts.lateLocalStartFlag,
+        signal: visibilityParts.visibilitySignal,
+        hitsMultiplier: visibilityParts.visibilityHitsMultiplier,
+        hrMultiplier: visibilityParts.visibilityHrMultiplier,
+        runsMultiplier: visibilityParts.visibilityRunsMultiplier,
+        hitsDelta: visibilityParts.visibilityHitsDelta,
+        runsDelta: visibilityParts.visibilityRunsDelta,
+        hrDelta: visibilityParts.visibilityHrDelta,
+        ruleSource: 'user_prior_pending_backtest'
+      }
     }
 
     return {
@@ -389,6 +627,12 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
       gamePk: game.gamePk ?? weather?.game_pk ?? assignment?.game_pk ?? null,
       awayTeam: canonicalTeamName(game.awayTeam),
       homeTeam: canonicalTeamName(game.homeTeam),
+      startTimeUtc: visibilityParts.startTimeUtc,
+      localStartDate: visibilityParts.localStartDate,
+      localStartTime: visibilityParts.localStartTime,
+      localStartHour: visibilityParts.localStartHour,
+      localStartMinute: visibilityParts.localStartMinute,
+      localTimezone: visibilityParts.localTimezone,
       venueName: park.venueName || '',
       parkYearRange: park.yearRange || '',
       parkRunIndex: toNumber(park.indexRuns, 100),
@@ -402,6 +646,14 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
       weatherHrDelta: round(weatherParts.weatherHrDelta, 3),
       parkRunDelta: round(parkParts.parkRunDelta, 3),
       parkHrDelta: round(parkParts.parkHrDelta, 3),
+      lateLocalStartFlag: visibilityParts.lateLocalStartFlag,
+      visibilitySignal: visibilityParts.visibilitySignal,
+      visibilityHitsMultiplier: round(visibilityParts.visibilityHitsMultiplier, 3),
+      visibilityHrMultiplier: round(visibilityParts.visibilityHrMultiplier, 3),
+      visibilityRunsMultiplier: round(visibilityParts.visibilityRunsMultiplier, 3),
+      visibilityHitsDelta: round(visibilityParts.visibilityHitsDelta, 3),
+      visibilityRunsDelta: round(visibilityParts.visibilityRunsDelta, 3),
+      visibilityHrDelta: round(visibilityParts.visibilityHrDelta, 3),
       umpireName: assignment?.umpire_name || null,
       umpireAssignmentStatus: umpireParts.assignmentStatus,
       umpireFavorsCode: umpireParts.profile?.favors_code || null,
@@ -411,6 +663,7 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
       umpireKDelta: round(umpireParts.umpireKDelta, 3),
       umpireWalkDelta: round(umpireParts.umpireWalkDelta, 3),
       expectedTotalRunsDelta: round(expectedTotalRunsDelta, 3),
+      expectedHitsDelta: round(expectedHitsDelta, 3),
       expectedHrDelta: round(expectedHrDelta, 3),
       expectedKDelta: round(umpireParts.umpireKDelta, 3),
       expectedWalkDelta: round(umpireParts.umpireWalkDelta, 3),
@@ -429,8 +682,12 @@ const summarize = (rows) => ({
   withGamePk: rows.filter((row) => row.gamePk).length,
   withFicWeather: rows.filter((row) => row.sourceFlags.hasFicWeather).length,
   withExactUmpire: rows.filter((row) => row.sourceFlags.hasExactUmpireAssignment).length,
+  withLocalStartContext: rows.filter((row) => row.sourceFlags.hasLocalStartContext).length,
+  lateLocalStarts: rows.filter((row) => row.lateLocalStartFlag).length,
   higherRunSignals: rows.filter((row) => row.expectedTotalRunsDelta >= 0.25).length,
   lowerRunSignals: rows.filter((row) => row.expectedTotalRunsDelta <= -0.18).length,
+  avgExpectedHitsDelta: round(avg(rows.map((row) => row.expectedHitsDelta)), 3),
+  avgExpectedHrDelta: round(avg(rows.map((row) => row.expectedHrDelta)), 3),
   avgExpectedTotalRunsDelta: round(avg(rows.map((row) => row.expectedTotalRunsDelta)), 3),
   maxExpectedTotalRunsDelta: round(Math.max(...rows.map((row) => row.expectedTotalRunsDelta)), 3),
   minExpectedTotalRunsDelta: round(Math.min(...rows.map((row) => row.expectedTotalRunsDelta)), 3)

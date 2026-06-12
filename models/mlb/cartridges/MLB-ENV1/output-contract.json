@@ -17,6 +17,7 @@
     "away_team",
     "home_team",
     "expected_total_runs_delta",
+    "expected_hits_delta",
     "expected_hr_delta",
     "expected_k_delta",
     "expected_walk_delta",
@@ -39,6 +40,23 @@
       "weather_run_delta",
       "weather_hr_delta"
     ],
+    "visibility": [
+      "start_time_utc",
+      "local_start_date",
+      "local_start_time",
+      "local_start_hour",
+      "local_start_minute",
+      "local_timezone",
+      "late_local_start_flag",
+      "visibility_signal",
+      "visibility_hits_multiplier",
+      "visibility_hr_multiplier",
+      "visibility_runs_multiplier",
+      "visibility_hits_delta",
+      "visibility_runs_delta",
+      "visibility_hr_delta",
+      "expected_hits_delta"
+    ],
     "umpire": [
       "umpire_name",
       "umpire_assignment_status",
@@ -49,5 +67,5 @@
       "umpire_walk_delta"
     ]
   },
-  "usageRule": "M2 may consume expected deltas as context only while status is shadow-candidate. Umpire deltas must remain zero unless the assignment row is exact."
+  "usageRule": "M2 may consume expected deltas and visibility multipliers as context only while status is shadow-candidate. Umpire deltas must remain zero unless the assignment row is exact; late-start visibility remains a user-prior feature until backtest-calibrated."
 }
