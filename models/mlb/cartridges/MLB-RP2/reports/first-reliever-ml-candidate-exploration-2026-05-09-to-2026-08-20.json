@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-12T21:19:20Z",
+  "window": {
+    "startDate": "2026-05-09",
+    "endDate": "2026-08-20"
+  },
+  "dbPath": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "audit": {
+    "team_games": 887,
+    "candidate_rows": 7267,
+    "positive_rows": 887,
+    "avg_candidates_per_team_game": 8.19,
+    "actual_first_in_prior_pool": 716,
+    "actual_first_forced_into_pool": 171,
+    "actual_first_prior_pool_pct": 80.7,
+    "missing_entry_state_games": 0
+  },
+  "training": {
+    "available": true,
+    "splitDate": "2026-06-02",
+    "trainRows": 5029,
+    "testRows": 2238,
+    "trainGames": 613,
+    "testGames": 256,
+    "baselines": {
+      "pool_usage_score": {
+        "games": 256,
+        "top1": 17.6,
+        "top2": 32.0,
+        "top3": 43.4
+      },
+      "first_up_recency": {
+        "games": 256,
+        "top1": 15.6,
+        "top2": 30.1,
+        "top3": 38.7
+      }
+    },
+    "models": {
+      "gradient_boosting": {
+        "topk": {
+          "games": 256,
+          "top1": 35.5,
+          "top2": 48.0,
+          "top3": 66.4
+        },
+        "topFeatures": [
+          {
+            "feature": "pool_usage_score",
+            "importance": 0.35082
+          },
+          {
+            "feature": "candidate_pitches_yesterday",
+            "importance": 0.09872
+          },
+          {
+            "feature": "candidate_rest_days",
+            "importance": 0.07332
+          },
+          {
+            "feature": "candidate_pitches_last2",
+            "importance": 0.04301
+          },
+          {
+            "feature": "candidate_avg_entry_order_last10",
+            "importance": 0.04103
+          },
+          {
+            "feature": "candidate_appearances_last7",
+            "importance": 0.04068
+          },
+          {
+            "feature": "candidate_avg_runs_allowed_last10",
+            "importance": 0.03393
+          },
+          {
+            "feature": "candidate_rest_penalty_flag",
+            "importance": 0.03311
+          },
+          {
+            "feature": "candidate_avg_outs_last10",
+            "importance": 0.02848
+          },
+          {
+            "feature": "candidate_avg_pitches_last10",
+            "importance": 0.02825
+          },
+          {
+            "feature": "candidate_same_starter_out_bucket_first_up_count",
+            "importance": 0.02563
+          },
+          {
+            "feature": "candidate_pitches_last3",
+            "importance": 0.02427
+          },
+          {
+            "feature": "starter_pitches",
+            "importance": 0.02238
+          },
+          {
+            "feature": "candidate_same_score_state_first_up_count",
+            "importance": 0.02026
+          },
+          {
+            "feature": "candidate_same_starter_first_up_count",
+            "importance": 0.01584
+          },
+          {
+            "feature": "entry_score_margin",
+            "importance": 0.01287
+          },
+          {
+            "feature": "candidate_appearances_last30",
+            "importance": 0.01257
+          },
+          {
+            "feature": "starter_outs",
+            "importance": 0.01182
+          },
+          {
+            "feature": "starter_runs",
+            "importance": 0.00982
+          },
+          {
+            "feature": "entry_base_state_3B",
+            "importance": 0.00651
+          }
+        ]
+      },
+      "random_forest": {
+        "topk": {
+          "games": 256,
+          "top1": 38.7,
+          "top2": 50.0,
+          "top3": 64.8
+        },
+        "topFeatures": [
+          {
+            "feature": "pool_usage_score",
+            "importance": 0.06963
+          },
+          {
+            "feature": "candidate_rest_days",
+            "importance": 0.06642
+          },
+          {
+            "feature": "candidate_avg_pitches_last10",
+            "importance": 0.05085
+          },
+          {
+            "feature": "candidate_avg_entry_order_last10",
+            "importance": 0.04733
+          },
+          {
+            "feature": "candidate_avg_outs_last10",
+            "importance": 0.04538
+          },
+          {
+            "feature": "candidate_pitches_last2",
+            "importance": 0.04335
+          },
+          {
+            "feature": "candidate_pitches_last3",
+            "importance": 0.04277
+          },
+          {
+            "feature": "candidate_pitches_yesterday",
+            "importance": 0.04244
+          },
+          {
+            "feature": "starter_pitches",
+            "importance": 0.04169
+          },
+          {
+            "feature": "candidate_avg_runs_allowed_last10",
+            "importance": 0.03812
+          },
+          {
+            "feature": "candidate_first_up_recency_score",
+            "importance": 0.03428
+          },
+          {
+            "feature": "candidate_first_up_last10",
+            "importance": 0.03398
+          },
+          {
+            "feature": "candidate_appearances_last7",
+            "importance": 0.03388
+          },
+          {
+            "feature": "candidate_appearances_last30",
+            "importance": 0.03303
+          },
+          {
+            "feature": "candidate_appearances_last14",
+            "importance": 0.02654
+          },
+          {
+            "feature": "candidate_same_starter_out_bucket_first_up_count",
+            "importance": 0.02601
+          },
+          {
+            "feature": "entry_score_margin",
+            "importance": 0.02518
+          },
+          {
+            "feature": "candidate_first_up_last5",
+            "importance": 0.02417
+          },
+          {
+            "feature": "starter_outs",
+            "importance": 0.0237
+          },
+          {
+            "feature": "starter_runs",
+            "importance": 0.02231
+          }
+        ]
+      }
+    }
+  },
+  "featureGroups": {
+    "gameState": [
+      "entry_inning",
+      "entry_score_margin",
+      "entry_base_state",
+      "entry_outs_before",
+      "entry_batter_side"
+    ],
+    "starter": [
+      "starter_outs",
+      "starter_pitches",
+      "starter_runs",
+      "starter_out_bucket"
+    ],
+    "candidateRest": [
+      "candidate_pitches_yesterday",
+      "candidate_pitches_last2",
+      "candidate_pitches_last3",
+      "candidate_rest_days"
+    ],
+    "candidateUsage": [
+      "candidate_appearances_last7",
+      "candidate_first_up_last10",
+      "candidate_avg_entry_order_last10"
+    ],
+    "stateAffinity": [
+      "candidate_same_score_state_first_up_count",
+      "candidate_same_starter_out_bucket_first_up_count"
+    ]
+  }
+}
