@@ -1,0 +1,38 @@
+{
+  "id": "MLB-RP2",
+  "sport": "mlb",
+  "name": "MLB-RP2 relief pitcher projection addendum",
+  "status": "shadow-candidate",
+  "role": "relief_addendum",
+  "replaces": "MLB-RP36",
+  "consumedBy": [
+    "MLB-M2"
+  ],
+  "createdForMigration": "2026-06-12",
+  "entrypoint": "models/mlb/cartridges/MLB-RP2/runner.mjs",
+  "outputContract": "models/mlb/cartridges/MLB-RP2/output-contract.json",
+  "modelNotes": "models/mlb/cartridges/MLB-RP2/MODEL_NOTES.md",
+  "sourceFiles": [
+    {
+      "role": "daily-materializer",
+      "path": "scripts/build-mlb-relief-projections-v1.mjs"
+    },
+    {
+      "role": "backtest",
+      "path": "scripts/backtest-mlb-relief-projections-v1.mjs"
+    },
+    {
+      "role": "team-and-sql-utils",
+      "path": "scripts/lib/mlb-model-utils.mjs"
+    },
+    {
+      "role": "legacy-rp36",
+      "path": "models/mlb/cartridges/MLB-RP36/exporter.py"
+    },
+    {
+      "role": "fangraphs-bullpen-warehouse",
+      "path": "scripts/warehouse-mlb-fangraphs-bullpen-depth.mjs"
+    }
+  ],
+  "description": "Point-in-time team-side relief projection model for expected relief runs, bridge stress, relievers used, relief outs, and first-up cluster context."
+}

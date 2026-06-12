@@ -83,10 +83,15 @@ const parseRow = (row, capturedAt, sourceSnapshotId) => {
   const pitcherHand = pitcherMatch?.[2]?.trim() || ''
   if (!pitcherName) return null
   const textCells = cells.map(stripTags)
+  const gameContext = textCells[3] || null
+  const hrForce = numberOrNull(textCells[4])
+  const qualityAbPct = numberOrNull(textCells[5])
+  const hardHitPct = numberOrNull(textCells[6])
   const bvpAtBats = numberOrNull(textCells[7])
   const bvpHits = numberOrNull(textCells[8])
-  const bvpHr = numberOrNull(textCells[9])
-  const bvpRbi = numberOrNull(textCells[10])
+  const bvpXbhNonHr = numberOrNull(textCells[9])
+  const bvpHr = numberOrNull(textCells[10])
+  const bvpRbi = null
   const bvpBb = numberOrNull(textCells[11])
   const bvpAvg = numberOrNull(textCells[12])
   const bvpObp = numberOrNull(textCells[13])
@@ -94,7 +99,7 @@ const parseRow = (row, capturedAt, sourceSnapshotId) => {
   const matchupPass =
     Number(bvpAtBats) >= 5 &&
     Number(bvpAvg) > 0.3 &&
-    Number(bvpOps) > 1
+    Number(bvpOps) > 0.8
 
   const playerParts = nameParts(playerName)
   const pitcherParts = nameParts(pitcherName)
@@ -112,8 +117,13 @@ const parseRow = (row, capturedAt, sourceSnapshotId) => {
     pitcherLastName: pitcherParts.lastName,
     pitcherHand,
     recentOps,
+    gameContext,
+    hrForce,
+    qualityAbPct,
+    hardHitPct,
     bvpAtBats,
     bvpHits,
+    bvpXbhNonHr,
     bvpHr,
     bvpRbi,
     bvpBb,
@@ -150,7 +160,16 @@ const writeWebModule = async (dateKey, payload) => {
     pitcherLastName: row.pitcherLastName,
     pitcherHand: row.pitcherHand,
     recentOps: row.recentOps,
+    gameContext: row.gameContext,
+    hrForce: row.hrForce,
+    qualityAbPct: row.qualityAbPct,
+    hardHitPct: row.hardHitPct,
     bvpAtBats: row.bvpAtBats,
+    bvpHits: row.bvpHits,
+    bvpXbhNonHr: row.bvpXbhNonHr,
+    bvpHr: row.bvpHr,
+    bvpRbi: row.bvpRbi,
+    bvpBb: row.bvpBb,
     bvpAvg: row.bvpAvg,
     bvpObp: row.bvpObp,
     bvpOps: row.bvpOps,
@@ -175,8 +194,13 @@ create table if not exists mlb_fic_daily_matchups (
   pitcher_last_name text,
   pitcher_hand text,
   recent_ops real,
+  game_context text,
+  hr_force real,
+  quality_ab_pct real,
+  hard_hit_pct real,
   bvp_ab integer,
   bvp_hits integer,
+  bvp_xbh_non_hr integer,
   bvp_hr integer,
   bvp_rbi integer,
   bvp_bb integer,
@@ -188,8 +212,23 @@ create table if not exists mlb_fic_daily_matchups (
   captured_at text,
   primary key (source_date, player_key, pitcher_key)
 );
-delete from mlb_fic_daily_matchups where source_date = ${sqlQuote(date)};
 `)
+
+  const existingColumns = sqliteExec(`pragma table_info(mlb_fic_daily_matchups);`)
+    .trim()
+    .split('\n')
+    .filter(Boolean)
+    .map((line) => line.split('|')[1])
+  const addColumn = (name, type) => {
+    if (!existingColumns.includes(name)) sqliteExec(`alter table mlb_fic_daily_matchups add column ${name} ${type};`)
+  }
+  addColumn('game_context', 'text')
+  addColumn('hr_force', 'real')
+  addColumn('quality_ab_pct', 'real')
+  addColumn('hard_hit_pct', 'real')
+  addColumn('bvp_xbh_non_hr', 'integer')
+
+  sqliteExec(`delete from mlb_fic_daily_matchups where source_date = ${sqlQuote(date)};`)
 
   const values = rows.map((row) => `(
     ${sqlQuote(row.sourceDate)},
@@ -204,8 +243,13 @@ delete from mlb_fic_daily_matchups where source_date = ${sqlQuote(date)};
     ${sqlQuote(row.pitcherLastName)},
     ${sqlQuote(row.pitcherHand)},
     ${sqlQuote(row.recentOps)},
+    ${sqlQuote(row.gameContext)},
+    ${sqlQuote(row.hrForce)},
+    ${sqlQuote(row.qualityAbPct)},
+    ${sqlQuote(row.hardHitPct)},
     ${sqlQuote(row.bvpAtBats)},
     ${sqlQuote(row.bvpHits)},
+    ${sqlQuote(row.bvpXbhNonHr)},
     ${sqlQuote(row.bvpHr)},
     ${sqlQuote(row.bvpRbi)},
     ${sqlQuote(row.bvpBb)},
@@ -221,7 +265,8 @@ delete from mlb_fic_daily_matchups where source_date = ${sqlQuote(date)};
     sqliteExec(`insert or replace into mlb_fic_daily_matchups (
       source_date, player_name, player_key, player_initial, player_last_name, position, batter_hand,
       pitcher_name, pitcher_key, pitcher_last_name, pitcher_hand, recent_ops,
-      bvp_ab, bvp_hits, bvp_hr, bvp_rbi, bvp_bb, bvp_avg, bvp_obp, bvp_ops,
+      game_context, hr_force, quality_ab_pct, hard_hit_pct,
+      bvp_ab, bvp_hits, bvp_xbh_non_hr, bvp_hr, bvp_rbi, bvp_bb, bvp_avg, bvp_obp, bvp_ops,
       matchup_pass, source_snapshot_id, captured_at
     ) values ${values};`)
   }
@@ -302,7 +347,7 @@ const main = async () => {
     contentHash,
     sourceSnapshotId,
     rule: {
-      cleanHrrGate: 'BvP AB >= 5, BvP AVG > .300, BvP OPS > 1.000. Recent OPS is stored as context.'
+      cleanHrrGate: 'BvP AB >= 5, BvP AVG > .300, BvP OPS > .800. Recent OPS, HRForce, qAB%, HH%, 2B/3B, HR, and BB are stored as context.'
     },
     rows
   }
@@ -323,9 +368,15 @@ const main = async () => {
       player: row.playerName,
       pitcher: row.pitcherName,
       ab: row.bvpAtBats,
+      hits: row.bvpHits,
+      xbhNonHr: row.bvpXbhNonHr,
+      hr: row.bvpHr,
       avg: row.bvpAvg,
       ops: row.bvpOps,
-      recentOps: row.recentOps
+      recentOps: row.recentOps,
+      hrForce: row.hrForce,
+      qualityAbPct: row.qualityAbPct,
+      hardHitPct: row.hardHitPct
     }))
   }, null, 2))
 }

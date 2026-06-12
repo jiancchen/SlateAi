@@ -2,6 +2,18 @@
 
 Owns full-game, first-five, and late scoring-total projections after starter, bullpen, lineup, park, and weather context are joined.
 
+## Environment Addendum
+
+`MLB-ENV1` is the new modular run-environment layer. It writes `mlb_game_environment_adjustments_daily` with separate park, FIC weather/HRForce, and exact-umpire deltas:
+
+- `expected_total_runs_delta`
+- `expected_hr_delta`
+- `expected_k_delta`
+- `expected_walk_delta`
+- `run_environment_signal`
+
+M2 totals may consume ENV1 as a shadow adjustment while it is `shadow-candidate`. Umpire deltas are only valid when the assignment row is an exact game/date match; unresolved or stale umpire rows must remain zero-adjustment context.
+
 Posted total source order:
 
 - sportsbook total market from `game.odds.markets`

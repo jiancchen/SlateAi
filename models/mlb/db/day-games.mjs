@@ -53,6 +53,18 @@ const slugify = (value = '') =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '')
 
+const normalizeTeam = (value = '') =>
+  String(value)
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\bst\b/g, 'saint')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+
+const matchupKey = (awayTeam = '', homeTeam = '') => `${normalizeTeam(awayTeam)}|${normalizeTeam(homeTeam)}`
+
 const parseJson = (value) => {
   if (!value) return null
   try {
@@ -100,6 +112,15 @@ const indexBy = (rows = [], keyFn) =>
     acc.set(keyFn(row), row)
     return acc
   }, new Map())
+
+const queryOptional = (sql, params = [], options = {}) => {
+  try {
+    return querySqlite(sql, params, options)
+  } catch (error) {
+    if (/no such table/i.test(error.message || '')) return []
+    throw error
+  }
+}
 
 const toPtStart = (iso = '') => {
   const date = new Date(iso)
@@ -374,6 +395,34 @@ const loadDbContext = (date) => {
     [date],
     { maxBuffer: 1024 * 1024 * 20 }
   )
+  const environmentAdjustmentRows = queryOptional(
+    `
+    select *
+    from mlb_game_environment_adjustments_daily
+    where source_date = ?
+      and model_version = (
+        select max(model_version)
+        from mlb_game_environment_adjustments_daily
+        where source_date = ?
+      )
+    `,
+    [date, date],
+    { maxBuffer: 1024 * 1024 * 20 }
+  )
+  const reliefProjectionRows = queryOptional(
+    `
+    select *
+    from mlb_relief_pitcher_projection_v1_daily
+    where source_date = ?
+      and model_version = (
+        select max(model_version)
+        from mlb_relief_pitcher_projection_v1_daily
+        where source_date = ?
+      )
+    `,
+    [date, date],
+    { maxBuffer: 1024 * 1024 * 20 }
+  )
   const teamInningOffenseRows = querySqlite(
     `
     with inning_halves as (
@@ -472,6 +521,16 @@ const loadDbContext = (date) => {
     teamStateByTeamId: indexBy(teamStateRows, (row) => row.team_id),
     sunByGameId: indexBy(sunRows, (row) => row.game_id),
     espnPitcherSplitsByGamePitcher: indexBy(espnPitcherSplitRows, (row) => `${row.game_id}:${row.pitcher_id}`),
+    environmentByGamePk: indexBy(environmentAdjustmentRows.filter((row) => row.game_pk), (row) => Number(row.game_pk)),
+    environmentByMatchupKey: indexBy(environmentAdjustmentRows, (row) => matchupKey(row.away_team, row.home_team)),
+    reliefProjectionByGameTeam: indexBy(
+      reliefProjectionRows.filter((row) => row.game_pk),
+      (row) => `${Number(row.game_pk)}:${normalizeTeam(row.team_name)}`
+    ),
+    reliefProjectionByDateTeam: indexBy(
+      reliefProjectionRows,
+      (row) => `${row.source_date}:${normalizeTeam(row.team_name)}`
+    ),
     inningOffenseByTeamInning: indexBy(teamInningOffenseRows, (row) => `${row.team_id}:${row.inning}`),
     inningDefenseByTeamInning: indexBy(teamInningDefenseRows, (row) => `${row.team_id}:${row.inning}`),
     leagueInningByInning: indexBy(leagueInningRows, (row) => Number(row.inning))
@@ -1012,6 +1071,74 @@ const buildSpread = (markets) => {
 const formatPitcherDetail = (pitcher = {}) =>
   `${pitcher.fullName} (${pitcher.pitchHand || '?'}HP) | ${pitcher.era || '-'} ERA | ${pitcher.strikeOuts || 0} SO | ${pitcher.whip || '-'} WHIP | ${pitcher.inningsPitched || '0.0'} IP`
 
+const buildEnvironmentAdjustmentContext = (row = null) => {
+  if (!row) return null
+  return {
+    modelVersion: row.model_version,
+    venueName: row.venue_name || '',
+    park: {
+      indexRuns: num(row.park_run_index, 100),
+      indexHr: num(row.park_hr_index, 100),
+      indexWoba: num(row.park_woba_index, 100),
+      runDelta: num(row.park_run_delta, 0),
+      hrDelta: num(row.park_hr_delta, 0)
+    },
+    weather: {
+      matchStatus: row.weather_match_status,
+      hrForce: num(row.hr_force, null),
+      effectiveHrForce: num(row.effective_hr_force, null),
+      signal: row.hr_force_run_signal,
+      runDelta: num(row.weather_run_delta, 0),
+      hrDelta: num(row.weather_hr_delta, 0)
+    },
+    umpire: {
+      name: row.umpire_name || null,
+      assignmentStatus: row.umpire_assignment_status,
+      favorsCode: row.umpire_favors_code || null,
+      zoneFactor: num(row.umpire_zone_factor, null),
+      runsDelta: num(row.umpire_runs_delta, 0),
+      strikeoutsDelta: num(row.umpire_k_delta, 0),
+      walksDelta: num(row.umpire_walk_delta, 0)
+    },
+    expected: {
+      totalRunsDelta: num(row.expected_total_runs_delta, 0),
+      hrDelta: num(row.expected_hr_delta, 0),
+      strikeoutsDelta: num(row.expected_k_delta, 0),
+      walksDelta: num(row.expected_walk_delta, 0)
+    },
+    signal: row.run_environment_signal,
+    confidenceScore: num(row.confidence_score, null),
+    sourceFlags: parseJson(row.source_flags_json) || {},
+    reasons: parseJson(row.reasons_json) || []
+  }
+}
+
+const buildReliefProjectionContext = (row = null) => {
+  if (!row) return null
+  return {
+    modelVersion: row.model_version,
+    sourceMode: row.source_mode,
+    projectedReliefRunsAllowed: num(row.projected_relief_runs_allowed, null),
+    projectedReliefOuts: num(row.projected_relief_outs, null),
+    projectedRelieversUsed: num(row.projected_relievers_used, null),
+    bridgeStressScore: num(row.bridge_stress_score, null),
+    leverageAvailabilityScore: num(row.leverage_availability_score, null),
+    fatigueScore: num(row.fatigue_score, null),
+    qualityScore: num(row.quality_score, null),
+    runRiskTier: row.run_risk_tier,
+    topTwoSharePct: num(row.top_two_share_pct, null),
+    lead: {
+      pitcherName: row.lead_pitcher_name || null,
+      pitcherId: num(row.lead_pitcher_id, null),
+      expectedOuts: num(row.lead_expected_outs, null),
+      availabilityScore: num(row.lead_availability_score, null)
+    },
+    candidates: parseJson(row.candidates_json) || [],
+    reasons: parseJson(row.reasons_json) || [],
+    confidenceScore: num(row.confidence_score, null)
+  }
+}
+
 const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
   const awayName = shortTeamName(game.away_team)
   const homeName = shortTeamName(game.home_team)
@@ -1053,10 +1180,38 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
     [homeName]: homeSide.matchupContext
   }
   const stateContext = buildStateContext(game, context, awayTeamId, homeTeamId, awayName, homeName, awayPitcher, homePitcher)
+  const gamePk = num(game.mlb_game_pk, null)
+  const environmentAdjustmentContext = buildEnvironmentAdjustmentContext(
+    (gamePk ? context.environmentByGamePk.get(gamePk) : null) ||
+      context.environmentByMatchupKey.get(matchupKey(game.away_team, game.home_team)) ||
+      null
+  )
+  const awayReliefProjectionContext = buildReliefProjectionContext(
+    (gamePk ? context.reliefProjectionByGameTeam.get(`${gamePk}:${normalizeTeam(game.away_team)}`) : null) ||
+      context.reliefProjectionByDateTeam.get(`${game.game_date?.slice(0, 10)}:${normalizeTeam(game.away_team)}`) ||
+      null
+  )
+  const homeReliefProjectionContext = buildReliefProjectionContext(
+    (gamePk ? context.reliefProjectionByGameTeam.get(`${gamePk}:${normalizeTeam(game.home_team)}`) : null) ||
+      context.reliefProjectionByDateTeam.get(`${game.game_date?.slice(0, 10)}:${normalizeTeam(game.home_team)}`) ||
+      null
+  )
+  const parkContext = environmentAdjustmentContext
+    ? {
+      venueName: environmentAdjustmentContext.venueName,
+      indexRuns: environmentAdjustmentContext.park.indexRuns,
+      indexHr: environmentAdjustmentContext.park.indexHr,
+      indexWoba: environmentAdjustmentContext.park.indexWoba,
+      source: 'MLB-ENV1',
+      expectedTotalRunsDelta: environmentAdjustmentContext.expected.totalRunsDelta,
+      expectedHrDelta: environmentAdjustmentContext.expected.hrDelta,
+      runEnvironmentSignal: environmentAdjustmentContext.signal
+    }
+    : null
 
   const baseGame = {
     id: `${slugify(awayName)}-${slugify(homeName)}`,
-    gamePk: num(game.mlb_game_pk, null),
+    gamePk,
     slateDate: game.game_date?.slice(0, 10),
     league: 'MLB',
     title: `${awayName} @ ${homeName}`,
@@ -1074,7 +1229,8 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
     factors: [`Current board: ${moneyline || 'no ML'} | ${total || 'no total'} | ${spread || 'no spread'} | F5 ${first5Moneyline || 'no F5 ML'} / ${first5Total || 'no F5 total'}.`, `${awayPitcher.fullName || 'Away starter'} vs ${homePitcher.fullName || 'Home starter'}.`],
     swingFactor: 'Swing factor: whether the starter edge survives the bridge innings.',
     teamContext: { away: null, home: null },
-    parkContext: null,
+    parkContext,
+    environmentAdjustmentContext,
     offenseContext: {
       away: buildTeamOffenseContext(awayTeamId, 'Away', context),
       home: buildTeamOffenseContext(homeTeamId, 'Home', context)
@@ -1090,6 +1246,10 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
     relieverShadowContext: {
       away: relieverShadowByTeam[awayName] ?? null,
       home: relieverShadowByTeam[homeName] ?? null
+    },
+    reliefProjectionContext: {
+      away: awayReliefProjectionContext,
+      home: homeReliefProjectionContext
     },
     savantContext: {
       away: buildTeamSavantContext(awayTeamId, context),
@@ -1114,7 +1274,11 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
       inputSource: 'sql-mlb.db',
       dbInputAdapter: 'models/mlb/db/day-games.mjs',
       compatibilityLayer: true,
-      remainingGaps: ['parkContext', 'weatherContext', 'standingsContext']
+      remainingGaps: [
+        ...(parkContext ? [] : ['parkContext']),
+        ...(environmentAdjustmentContext?.weather?.signal ? [] : ['weatherContext']),
+        'standingsContext'
+      ]
     },
     odds: makeBoardOdds({
       spread,

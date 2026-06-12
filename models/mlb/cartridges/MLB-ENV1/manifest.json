@@ -1,0 +1,33 @@
+{
+  "id": "MLB-ENV1",
+  "sport": "mlb",
+  "name": "MLB-ENV1 game environment adjustment addendum",
+  "status": "shadow-candidate",
+  "role": "run_environment_addendum",
+  "consumedBy": [
+    "MLB-M2"
+  ],
+  "createdForMigration": "2026-06-12",
+  "entrypoint": "models/mlb/cartridges/MLB-ENV1/runner.mjs",
+  "outputContract": "models/mlb/cartridges/MLB-ENV1/output-contract.json",
+  "modelNotes": "models/mlb/cartridges/MLB-ENV1/MODEL_NOTES.md",
+  "sourceFiles": [
+    {
+      "role": "daily-materializer",
+      "path": "scripts/build-mlb-environment-adjustments.mjs"
+    },
+    {
+      "role": "backtest",
+      "path": "scripts/backtest-mlb-environment-adjustments.mjs"
+    },
+    {
+      "role": "team-and-sql-utils",
+      "path": "scripts/lib/mlb-model-utils.mjs"
+    },
+    {
+      "role": "park-factor-context",
+      "path": "web/src/lib/mlb-park-context.js"
+    }
+  ],
+  "description": "Game-level park, weather/HRForce, and exact-umpire run-environment adjustment layer for M2 totals, HR, K, and walk context."
+}

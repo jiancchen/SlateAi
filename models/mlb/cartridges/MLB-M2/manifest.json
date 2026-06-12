@@ -27,6 +27,8 @@
     "market-context",
     "game-shape",
     "rf-reality-check",
+    "MLB-ENV1",
+    "MLB-RP2",
     "MLB-RP36"
   ],
   "goldenSnapshots": [

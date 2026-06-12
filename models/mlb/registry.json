@@ -7,6 +7,8 @@
     "features": "MLB-F0",
     "model": "MLB-M2",
     "reliefAddendum": "MLB-RP36",
+    "reliefReplacementCandidate": "MLB-RP2",
+    "environmentAddendum": "MLB-ENV1",
     "evaluator": "MLB-E0"
   },
   "runner": {
@@ -90,6 +92,38 @@
       ],
       "notes": "Promoted by operator request on 2026-06-01 so the live slate can inspect game-shape/reality-gap output. Risky sublanes remain diagnostic unless cartridge-owned value gates approve them.",
       "basedOn": "MLB-M0"
+    },
+    {
+      "modelId": "MLB-ENV1",
+      "role": "run_environment_addendum",
+      "targetPath": "./cartridges/MLB-ENV1",
+      "status": "shadow-candidate",
+      "consumedBy": [
+        "MLB-M2"
+      ],
+      "lanes": [
+        "totals",
+        "home_runs",
+        "pitcher_strikeouts",
+        "walks"
+      ],
+      "notes": "Game-level park, FIC weather/HRForce, and exact-umpire adjustment layer. Umpire deltas remain zero unless assignment match is exact."
+    },
+    {
+      "modelId": "MLB-RP2",
+      "role": "relief_addendum",
+      "targetPath": "./cartridges/MLB-RP2",
+      "status": "shadow-candidate",
+      "replaces": "MLB-RP36",
+      "consumedBy": [
+        "MLB-M2"
+      ],
+      "lanes": [
+        "totals",
+        "sides",
+        "props"
+      ],
+      "notes": "Team-side relief projection replacement candidate for RP36. It must pass the relief-runs and first-up backtest gate before becoming the active relief addendum."
     }
   ]
 }

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-12T20:18:12.698Z",
+  "modelId": "MLB-ENV1",
+  "modelVersion": "MLB-ENV1.2026-06-12.v1",
+  "window": {
+    "startDate": "2026-03-26",
+    "endDate": "2026-06-11"
+  },
+  "coverage": {
+    "dates": 78,
+    "projectionRows": 1021,
+    "matchedGames": 1012,
+    "withFicWeather": 0,
+    "withExactUmpire": 14,
+    "withParkContext": 1012
+  },
+  "headline": {
+    "totalMae": 3.6,
+    "baselineTotalMae": 3.611,
+    "maeLiftPct": 0.3,
+    "directional": {
+      "samples": 274,
+      "hitPct": 58
+    }
+  },
+  "buckets": {
+    "runEnvironmentSignal": [
+      {
+        "bucket": "neutral_run_environment",
+        "samples": 805,
+        "avgExpectedDelta": 0.031,
+        "avgActualDelta": 0.243,
+        "avgActualTotal": 9.109,
+        "totalMae": 3.613,
+        "baselineMae": 3.612,
+        "directional": {
+          "samples": 67,
+          "hitPct": 55.2
+        }
+      },
+      {
+        "bucket": "lower_run_environment",
+        "samples": 104,
+        "avgExpectedDelta": -0.24,
+        "avgActualDelta": -0.617,
+        "avgActualTotal": 8.298,
+        "totalMae": 3.499,
+        "baselineMae": 3.561,
+        "directional": {
+          "samples": 104,
+          "hitPct": 63.5
+        }
+      },
+      {
+        "bucket": "higher_run_environment",
+        "samples": 72,
+        "avgExpectedDelta": 0.359,
+        "avgActualDelta": -0.033,
+        "avgActualTotal": 8.889,
+        "totalMae": 3.718,
+        "baselineMae": 3.678,
+        "directional": {
+          "samples": 72,
+          "hitPct": 47.2
+        }
+      },
+      {
+        "bucket": "suppressing_run_environment",
+        "samples": 31,
+        "avgExpectedDelta": -0.597,
+        "avgActualDelta": -2.005,
+        "avgActualTotal": 6.903,
+        "totalMae": 3.331,
+        "baselineMae": 3.578,
+        "directional": {
+          "samples": 31,
+          "hitPct": 71
+        }
+      }
+    ],
+    "parkRunIndex": [
+      {
+        "bucket": "park_runs_95_98",
+        "samples": 98,
+        "avgExpectedDelta": -0.134,
+        "avgActualDelta": -0.07,
+        "avgActualTotal": 8.735,
+        "totalMae": 3.347,
+        "baselineMae": 3.356,
+        "directional": {
+          "samples": 0,
+          "hitPct": 0
+        }
+      },
+      {
+        "bucket": "park_runs_94_below",
+        "samples": 133,
+        "avgExpectedDelta": -0.324,
+        "avgActualDelta": -0.9,
+        "avgActualTotal": 8,
+        "totalMae": 3.465,
+        "baselineMae": 3.569,
+        "directional": {
+          "samples": 133,
+          "hitPct": 64.7
+        }
+      },
+      {
+        "bucket": "park_runs_neutral",
+        "samples": 473,
+        "avgExpectedDelta": 0,
+        "avgActualDelta": 0.348,
+        "avgActualTotal": 9.241,
+        "totalMae": 3.692,
+        "baselineMae": 3.693,
+        "directional": {
+          "samples": 3,
+          "hitPct": 100
+        }
+      },
+      {
+        "bucket": "park_runs_106_plus",
+        "samples": 137,
+        "avgExpectedDelta": 0.302,
+        "avgActualDelta": 0.392,
+        "avgActualTotal": 9.241,
+        "totalMae": 3.573,
+        "baselineMae": 3.564,
+        "directional": {
+          "samples": 137,
+          "hitPct": 51.1
+        }
+      },
+      {
+        "bucket": "park_runs_102_105",
+        "samples": 171,
+        "avgExpectedDelta": 0.129,
+        "avgActualDelta": -0.144,
+        "avgActualTotal": 8.731,
+        "totalMae": 3.615,
+        "baselineMae": 3.598,
+        "directional": {
+          "samples": 1,
+          "hitPct": 0
+        }
+      }
+    ],
+    "hrForceSignal": [
+      {
+        "bucket": "missing",
+        "samples": 1012,
+        "avgExpectedDelta": 0.007,
+        "avgActualDelta": 0.066,
+        "avgActualTotal": 8.943,
+        "totalMae": 3.6,
+        "baselineMae": 3.611,
+        "directional": {
+          "samples": 274,
+          "hitPct": 58
+        }
+      }
+    ]
+  },
+  "promotionGate": {
+    "status": "shadow_only",
+    "reasons": [
+      "Needs at least 100 settled FIC weather/HRForce games before validating HRForce weights."
+    ]
+  }
+}

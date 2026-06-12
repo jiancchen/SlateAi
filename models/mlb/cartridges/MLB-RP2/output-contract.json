@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-RP2",
+  "sport": "mlb",
+  "status": "shadow-candidate",
+  "outputKind": "relief-pitcher-projection",
+  "warehouseTable": "mlb_relief_pitcher_projection_v1_daily",
+  "primaryKey": [
+    "source_date",
+    "team_name",
+    "model_version"
+  ],
+  "requiredFields": [
+    "source_date",
+    "model_version",
+    "team_name",
+    "opponent_name",
+    "projected_relief_runs_allowed",
+    "projected_relief_outs",
+    "projected_relievers_used",
+    "bridge_stress_score",
+    "run_risk_tier",
+    "lead_pitcher_name",
+    "candidates_json",
+    "feature_snapshot_json",
+    "confidence_score"
+  ],
+  "teamSideFields": [
+    "source_mode",
+    "quality_score",
+    "leverage_availability_score",
+    "fatigue_score",
+    "top_two_share_pct",
+    "lead_expected_outs",
+    "lead_availability_score"
+  ],
+  "candidateFields": [
+    "pitcherId",
+    "pitcherName",
+    "role",
+    "availabilityScore",
+    "bridgeScore",
+    "fatigueScore",
+    "firstRelieverLikelihood",
+    "firstUpBaseScore",
+    "firstUpTrendAdjustment",
+    "firstUpRestPenalty",
+    "starterLeashAdjustment",
+    "firstUpTrend",
+    "restContext",
+    "starterLeashContext",
+    "expectedOuts",
+    "shadowSharePct",
+    "source"
+  ],
+  "usageRule": "MLB-RP2 replaces RP36 only after its backtest gate is candidate or better. Until then M2 may consume it as a shadow addendum for bridge-stress and relief-runs context."
+}

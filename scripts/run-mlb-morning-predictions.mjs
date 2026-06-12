@@ -192,6 +192,42 @@ const main = async () => {
     'scripts/warehouse-mlb-espn-pitcher-splits.mjs', '--date', date
   ], { dryRun }))
 
+  steps.push(run('Warehouse FantasyInfoCentral Weather/HRForce', 'npm', [
+    'run', 'data:warehouse:mlb-fic-weather', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Warehouse FantasyInfoCentral daily BvP matchups', 'npm', [
+    'run', 'data:warehouse:mlb-fic-daily-matchups', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Warehouse FantasyInfoCentral umpire factors', 'npm', [
+    'run', 'data:warehouse:mlb-fic-umpire-factors', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Warehouse TheCapper MLB umpire context', 'npm', [
+    'run', 'data:warehouse:mlb-umpires', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Audit TheCapper MLB umpire warehouse', 'npm', [
+    'run', 'data:audit:mlb-umpires', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Build MLB-ENV1 environment adjustments', 'npm', [
+    'run', 'data:build:mlb-env1', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Warehouse FanGraphs/RosterResource bullpen context', 'npm', [
+    'run', 'data:warehouse:mlb-fangraphs-bullpen-depth', '--', '--date', date, '--team', 'all'
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Build MLB-RP2 relief pitcher projections', 'npm', [
+    'run', 'data:build:mlb-rp2', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Generate relief/K shadow addendums', 'npm', [
+    'run', 'data:generate:mlb-shadow-addendums', '--', '--dates', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
   steps.push(run('Regenerate M2 day files after supplemental sources', 'npm', [
     'run', 'data:generate:mlb-day', '--', '--date', date, '--skip-preflight'
   ], { dryRun }))

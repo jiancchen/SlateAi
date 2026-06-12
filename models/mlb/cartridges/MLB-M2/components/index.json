@@ -19,9 +19,9 @@
     {
       "id": "totals",
       "name": "Run Totals",
-      "owns": ["full-game total", "first-five total", "late scoring shape"],
-      "entrypoints": ["models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs"],
-      "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/mlb-simulation.js"]
+      "owns": ["full-game total", "first-five total", "late scoring shape", "ENV1 run-environment adjustment consumption"],
+      "entrypoints": ["models/mlb/cartridges/MLB-M2/lanes/generate-day-files.mjs", "models/mlb/cartridges/MLB-ENV1/runner.mjs"],
+      "coreFiles": ["models/mlb/cartridges/MLB-M2/lib/mlb-simulation.js", "scripts/build-mlb-environment-adjustments.mjs"]
     },
     {
       "id": "props",
@@ -75,9 +75,9 @@
     {
       "id": "relief-addendum",
       "name": "Relief Addendum",
-      "owns": ["MLB-RP36 bridge risk", "first-up reliever clusters", "bullpen path warnings"],
-      "entrypoints": ["models/mlb/cartridges/MLB-RP36/runner.py"],
-      "coreFiles": ["models/mlb/cartridges/MLB-RP36/exporter.py"]
+      "owns": ["MLB-RP2 relief-run projection", "bridge stress", "first-up reliever clusters", "bullpen path warnings", "legacy MLB-RP36 comparison"],
+      "entrypoints": ["models/mlb/cartridges/MLB-RP2/runner.mjs", "models/mlb/cartridges/MLB-RP36/runner.py"],
+      "coreFiles": ["scripts/build-mlb-relief-projections-v1.mjs", "scripts/backtest-mlb-relief-projections-v1.mjs", "models/mlb/cartridges/MLB-RP36/exporter.py"]
     },
     {
       "id": "starter-split-addendum",

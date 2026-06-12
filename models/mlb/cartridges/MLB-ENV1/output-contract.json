@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-ENV1",
+  "sport": "mlb",
+  "status": "shadow-candidate",
+  "outputKind": "game-environment-adjustments",
+  "warehouseTable": "mlb_game_environment_adjustments_daily",
+  "primaryKey": [
+    "source_date",
+    "matchup_key",
+    "model_version"
+  ],
+  "requiredFields": [
+    "source_date",
+    "model_version",
+    "matchup_key",
+    "away_team",
+    "home_team",
+    "expected_total_runs_delta",
+    "expected_hr_delta",
+    "expected_k_delta",
+    "expected_walk_delta",
+    "run_environment_signal",
+    "confidence_score",
+    "feature_snapshot_json"
+  ],
+  "featureGroups": {
+    "park": [
+      "venue_name",
+      "park_run_index",
+      "park_hr_index",
+      "park_run_delta",
+      "park_hr_delta"
+    ],
+    "weather": [
+      "hr_force",
+      "effective_hr_force",
+      "hr_force_run_signal",
+      "weather_run_delta",
+      "weather_hr_delta"
+    ],
+    "umpire": [
+      "umpire_name",
+      "umpire_assignment_status",
+      "umpire_favors_code",
+      "umpire_zone_factor",
+      "umpire_runs_delta",
+      "umpire_k_delta",
+      "umpire_walk_delta"
+    ]
+  },
+  "usageRule": "M2 may consume expected deltas as context only while status is shadow-candidate. Umpire deltas must remain zero unless the assignment row is exact."
+}
