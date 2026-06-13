@@ -1,0 +1,83 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "date": "2026-06-11",
+  "started_at": "2026-06-11T10:10:07.907129+00:00",
+  "finished_at": "2026-06-11T10:11:31.651665+00:00",
+  "player_urls": [
+    "https://www.tennislive.net/atp/zhizhen-zhang/",
+    "https://www.tennislive.net/wta/greetje-minnen/",
+    "https://www.tennislive.net/wta/mayar-sherif/",
+    "https://www.tennislive.net/wta/tatjana-malek/"
+  ],
+  "match_urls": [],
+  "max_links": 10,
+  "max_matches": 10,
+  "fetch_status": {
+    "run_id": "source-fetch-tennislive-2026-06-11-2026-06-11T10-11-31-649706+00-00",
+    "status": "success",
+    "completeness_status": "complete",
+    "player_attempts": 4,
+    "player_successes": 4,
+    "player_failures": 0,
+    "match_attempts": 37,
+    "match_successes": 37,
+    "match_failures": 0,
+    "attempted_pages": 41,
+    "successful_pages": 41,
+    "failed_pages": 0
+  },
+  "player_results": [
+    {
+      "status": "ok",
+      "player_id": "tennis-player-zhizhen-zhang",
+      "player": "Zhizhen Zhang",
+      "snapshot_already_seen": false,
+      "surface_records": 119,
+      "match_links": 10,
+      "recent_matches_upserted": 9,
+      "matches_fetched": 8,
+      "matches_skipped_existing": 1,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-greetje-minnen",
+      "player": "Greetje Minnen",
+      "snapshot_already_seen": false,
+      "surface_records": 112,
+      "match_links": 10,
+      "recent_matches_upserted": 10,
+      "matches_fetched": 7,
+      "matches_skipped_existing": 3,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-mayar-sherif",
+      "player": "Mayar Sherif",
+      "snapshot_already_seen": false,
+      "surface_records": 105,
+      "match_links": 10,
+      "recent_matches_upserted": 9,
+      "matches_fetched": 6,
+      "matches_skipped_existing": 3,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-tatjana-maria",
+      "player": "Tatjana Maria",
+      "snapshot_already_seen": false,
+      "surface_records": 182,
+      "match_links": 10,
+      "recent_matches_upserted": 9,
+      "matches_fetched": 5,
+      "matches_skipped_existing": 4,
+      "matches_failed": 0
+    }
+  ],
+  "match_results": [],
+  "failures": []
+}

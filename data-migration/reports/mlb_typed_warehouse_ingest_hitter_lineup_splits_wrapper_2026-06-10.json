@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-10",
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "dry_run": false,
+  "lineup_file": null,
+  "mode": "ingest_hitter_lineup_splits",
+  "ok": true,
+  "results": [
+    {
+      "command": [
+        "/Applications/Xcode.app/Contents/Developer/usr/bin/python3",
+        "data-migration/scripts/ingest_mlb_lineups_raw_to_typed.py",
+        "--date",
+        "2026-06-10",
+        "--source-db",
+        "data-private/warehouse/sports/mlb/sql-mlb.db",
+        "--report",
+        "data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-10.json"
+      ],
+      "date": "2026-06-10",
+      "family": "lineups",
+      "ok": true,
+      "report_path": "data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-10.json",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"board_path\": \"data-private/lineups/mlb/2026-06-10-lineup-board.json\",\n  \"date\": \"2026-06-10\",\n  \"dry_run\": false,\n  \"errors\": [],\n  \"expected_game_count\": 15,\n  \"expected_lineup_slot_count\": 270,\n  \"generated_at\": \"2026-06-10T23:13:05.816326+00:00\",\n  \"lineup_board\": {\n    \"games\": 15,\n    \"lineup_matchup_snapshots\": 270,\n    \"lineup_slots\": 270,\n    \"lineups\": 30,\n    \"players\": 270,\n    \"probable_pitchers\": 30,\n    \"probables_source_snapshot_id\": \"mlb-4168e7f6228a8e8b64f95f835cecd2c6\",\n    \"source_files\": 1,\n    \"source_snapshot_id\": \"mlb-5d972024769f6100dc9e70bf86c4b24b\",\n    \"unresolved_games\": 0,\n    \"unresolved_players\": 0\n  },\n  \"lineup_file\": null,\n  \"lineup_root\": \"data-private/lineups/mlb\",\n  \"ok\": true,\n  \"row_count_delta\": {\n    \"health_checks\": 0,\n    \"lineup_matchup_snapshots\": 0,\n    \"lineup_slots\": 0,\n    \"lineups\": 0,\n    \"players\": 0,\n    \"source_fetch_runs\": 2,\n    \"source_fetch_status\": 0,\n    \"source_snapshots\": 0,\n    \"starting_pitchers\": 0,\n    \"unresolved_entities\": 0\n  },\n  \"script\": \"data-migration/scripts/ingest_mlb_lineups_raw_to_typed.py\",\n  \"source_db\": \"data-private/warehouse/sports/mlb/sql-mlb.db\"\n}\n"
+    }
+  ],
+  "version": "1.0.0"
+}

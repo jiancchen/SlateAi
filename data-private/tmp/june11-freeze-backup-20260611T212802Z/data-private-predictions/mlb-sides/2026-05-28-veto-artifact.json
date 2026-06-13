@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-05-29T14:57:12.449Z",
+  "predictionDate": "2026-05-28",
+  "picks": [
+    {
+      "predictionDate": "2026-05-28",
+      "gameId": "angels-tigers",
+      "gameTitle": "Angels @ Tigers",
+      "predictedTeam": "Tigers",
+      "predictedSide": "home",
+      "confidence": 52,
+      "modelEdge": 4,
+      "marketProbability": 0.5,
+      "marketProbabilityLabel": "50.0%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 1,
+      "vetoReasons": [
+        "deadEarlyRisk"
+      ],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 25.7,
+        "pickDeadBatTrafficRate": 0.3,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 51.3,
+        "oppBullpenMistakeChaos": 54.8,
+        "pickTeamRunClustering": 57.2,
+        "pickTeamMistakeChaos": 51.6,
+        "oppTeamMistakeChaos": 58.5
+      }
+    },
+    {
+      "predictionDate": "2026-05-28",
+      "gameId": "twins-white-sox",
+      "gameTitle": "Twins @ White Sox",
+      "predictedTeam": "White Sox",
+      "predictedSide": "home",
+      "confidence": 63,
+      "modelEdge": 19.4,
+      "marketProbability": 0.5,
+      "marketProbabilityLabel": "50.0%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 0,
+      "vetoReasons": [],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Eligible",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 47.5,
+        "pickDeadBatTrafficRate": 0.1,
+        "pickTrafficNoConversionRate": 0.1,
+        "pickBullpenMistakeChaos": 61.3,
+        "oppBullpenMistakeChaos": 41.5,
+        "pickTeamRunClustering": 84.3,
+        "pickTeamMistakeChaos": 62.2,
+        "oppTeamMistakeChaos": 57.2
+      }
+    },
+    {
+      "predictionDate": "2026-05-28",
+      "gameId": "braves-red-sox",
+      "gameTitle": "Braves @ Red Sox",
+      "predictedTeam": "Braves",
+      "predictedSide": "away",
+      "confidence": 62,
+      "modelEdge": 6.6,
+      "marketProbability": 0.5,
+      "marketProbabilityLabel": "50.0%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 1,
+      "vetoReasons": [
+        "deadEarlyRisk"
+      ],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 35,
+        "pickDeadBatTrafficRate": 0.3,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 44.4,
+        "oppBullpenMistakeChaos": 54.9,
+        "pickTeamRunClustering": 63.7,
+        "pickTeamMistakeChaos": 56.3,
+        "oppTeamMistakeChaos": 57.2
+      }
+    },
+    {
+      "predictionDate": "2026-05-28",
+      "gameId": "blue-jays-orioles",
+      "gameTitle": "Blue Jays @ Orioles",
+      "predictedTeam": "Blue Jays",
+      "predictedSide": "away",
+      "confidence": 52,
+      "modelEdge": 2.8,
+      "marketProbability": 0.5,
+      "marketProbabilityLabel": "50.0%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 1,
+      "vetoReasons": [
+        "deadEarlyRisk"
+      ],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Pass",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 3.5,
+        "pickDeadBatTrafficRate": 0.6,
+        "pickTrafficNoConversionRate": 0.1,
+        "pickBullpenMistakeChaos": 44.3,
+        "oppBullpenMistakeChaos": 51.3,
+        "pickTeamRunClustering": 69.9,
+        "pickTeamMistakeChaos": 52.2,
+        "oppTeamMistakeChaos": 56.9
+      }
+    },
+    {
+      "predictionDate": "2026-05-28",
+      "gameId": "cubs-pirates",
+      "gameTitle": "Cubs @ Pirates",
+      "predictedTeam": "Pirates",
+      "predictedSide": "home",
+      "confidence": 64,
+      "modelEdge": 11.5,
+      "marketProbability": 0.5,
+      "marketProbabilityLabel": "50.0%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 0,
+      "vetoReasons": [],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Eligible",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 44.5,
+        "pickDeadBatTrafficRate": 0.4,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 55.2,
+        "oppBullpenMistakeChaos": 42.7,
+        "pickTeamRunClustering": 68.8,
+        "pickTeamMistakeChaos": 54.4,
+        "oppTeamMistakeChaos": 69.4
+      }
+    },
+    {
+      "predictionDate": "2026-05-28",
+      "gameId": "astros-rangers",
+      "gameTitle": "Astros @ Rangers",
+      "predictedTeam": "Rangers",
+      "predictedSide": "home",
+      "confidence": 62,
+      "modelEdge": 1.4,
+      "marketProbability": 0.574468085106383,
+      "marketProbabilityLabel": "57.4%",
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
+      "vetoCount": 0,
+      "vetoReasons": [],
+      "protectedMarketDogFlag": false,
+      "recommendedAction": "Eligible",
+      "keyMetrics": {
+        "pickLineupConversionIndex": 58.1,
+        "pickDeadBatTrafficRate": 0.1,
+        "pickTrafficNoConversionRate": 0,
+        "pickBullpenMistakeChaos": 53.1,
+        "oppBullpenMistakeChaos": 39.9,
+        "pickTeamRunClustering": 72.8,
+        "pickTeamMistakeChaos": 59.7,
+        "oppTeamMistakeChaos": 49.9
+      }
+    }
+  ]
+}

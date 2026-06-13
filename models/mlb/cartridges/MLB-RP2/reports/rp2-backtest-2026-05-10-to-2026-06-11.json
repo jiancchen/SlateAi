@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-12T22:16:44.080Z",
+  "modelId": "MLB-RP2",
+  "modelVersion": "MLB-RP2.2026-06-12.v2",
+  "window": {
+    "startDate": "2026-05-10",
+    "endDate": "2026-06-11"
+  },
+  "coverage": {
+    "dates": 33,
+    "projectionRows": 868,
+    "matchedTeamSides": 841,
+    "usableTeamSides": 737,
+    "identityUsableTeamSides": 693,
+    "sourceModes": {
+      "legacy_typed_bullpen_usage": 693,
+      "fangraphs_roster_resource": 44
+    }
+  },
+  "headline": {
+    "reliefRunsMae": 1.701,
+    "baselineReliefRunsMae": 1.728,
+    "reliefRunsMaeLiftPct": 1.6,
+    "reliefRunsRmse": 2.414,
+    "baselineReliefRunsRmse": 2.372,
+    "reliefOutsMae": 3.813,
+    "relieversUsedMae": 1.106,
+    "firstUpExactPct": 18,
+    "firstUpTop2Pct": 33,
+    "firstUpTop3Pct": 45.6
+  },
+  "buckets": {
+    "runRiskTier": [
+      {
+        "bucket": "fresh_bridge",
+        "samples": 554,
+        "avgPredictedRuns": 1.244,
+        "avgActualRuns": 1.931,
+        "reliefRunsMae": 1.685,
+        "firstUpExactPct": 18.4,
+        "firstUpTop3Pct": 44.4
+      },
+      {
+        "bucket": "watch_bridge",
+        "samples": 16,
+        "avgPredictedRuns": 2.766,
+        "avgActualRuns": 2,
+        "reliefRunsMae": 1.88,
+        "firstUpExactPct": 12.5,
+        "firstUpTop3Pct": 43.8
+      },
+      {
+        "bucket": "stable_bridge",
+        "samples": 165,
+        "avgPredictedRuns": 2.284,
+        "avgActualRuns": 1.848,
+        "reliefRunsMae": 1.743,
+        "firstUpExactPct": 12.7,
+        "firstUpTop3Pct": 38.2
+      },
+      {
+        "bucket": "taxed_bridge",
+        "samples": 2,
+        "avgPredictedRuns": 3.467,
+        "avgActualRuns": 3,
+        "reliefRunsMae": 1.133,
+        "firstUpExactPct": 0,
+        "firstUpTop3Pct": 0
+      }
+    ],
+    "sourceMode": [
+      {
+        "bucket": "legacy_typed_bullpen_usage",
+        "samples": 693,
+        "avgPredictedRuns": 1.481,
+        "avgActualRuns": 1.898,
+        "reliefRunsMae": 1.697,
+        "firstUpExactPct": 18,
+        "firstUpTop3Pct": 45.6
+      },
+      {
+        "bucket": "fangraphs_roster_resource",
+        "samples": 44,
+        "avgPredictedRuns": 2.063,
+        "avgActualRuns": 2.227,
+        "reliefRunsMae": 1.755,
+        "firstUpExactPct": 0,
+        "firstUpTop3Pct": 0
+      }
+    ],
+    "bridgeStress": [
+      {
+        "bucket": "0-34 fresh",
+        "samples": 556,
+        "avgPredictedRuns": 1.247,
+        "avgActualRuns": 1.924,
+        "reliefRunsMae": 1.687,
+        "firstUpExactPct": 18.5,
+        "firstUpTop3Pct": 44.6
+      },
+      {
+        "bucket": "54-69 watch",
+        "samples": 16,
+        "avgPredictedRuns": 2.766,
+        "avgActualRuns": 2,
+        "reliefRunsMae": 1.88,
+        "firstUpExactPct": 12.5,
+        "firstUpTop3Pct": 43.8
+      },
+      {
+        "bucket": "35-53 stable",
+        "samples": 163,
+        "avgPredictedRuns": 2.286,
+        "avgActualRuns": 1.871,
+        "reliefRunsMae": 1.738,
+        "firstUpExactPct": 12.3,
+        "firstUpTop3Pct": 37.4
+      },
+      {
+        "bucket": "70+ taxed",
+        "samples": 2,
+        "avgPredictedRuns": 3.467,
+        "avgActualRuns": 3,
+        "reliefRunsMae": 1.133,
+        "firstUpExactPct": 0,
+        "firstUpTop3Pct": 0
+      }
+    ]
+  },
+  "promotionGate": {
+    "status": "shadow_only",
+    "reasons": [
+      "First-up top-3 coverage must be at least 50% before replacing RP36 identity use."
+    ]
+  }
+}

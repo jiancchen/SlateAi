@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T05:59:37.244Z",
+  "generated_at": "2026-06-10T23:07:28.488Z",
   "script": "data-migration/scripts/prediction_preflight.mjs",
   "sport": "mlb",
   "source_date": "2026-06-09",
@@ -21,13 +21,13 @@
         "source_date": "2026-06-09",
         "last_status": "success",
         "last_completeness_status": "complete",
-        "last_success_at": "2026-06-10T05:58:06.874644+00:00",
-        "cache_valid_until": "2026-06-10T11:58:06.874644+00:00",
+        "last_success_at": "2026-06-10T21:06:21.058473+00:00",
+        "cache_valid_until": "2026-06-11T03:06:21.058473+00:00",
         "expected_item_count": 15,
         "actual_item_count": 15,
         "missing_item_count": 0,
         "unresolved_count": 0,
-        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"feed_file_count\":15,\"missing_schedule_games\":0,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_mlb_day_schedule_game_feed_2026-06-09.json\"}"
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"feed_file_count\":15,\"missing_schedule_games\":0,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-09.json\"}"
       },
       "stale": false,
       "errors": [],
@@ -65,13 +65,13 @@
         "source_date": "2026-06-09",
         "last_status": "success",
         "last_completeness_status": "complete",
-        "last_success_at": "2026-06-10T05:58:06.874038+00:00",
-        "cache_valid_until": "2026-06-10T11:58:06.874038+00:00",
+        "last_success_at": "2026-06-10T21:06:21.058319+00:00",
+        "cache_valid_until": "2026-06-11T03:06:21.058319+00:00",
         "expected_item_count": 15,
         "actual_item_count": 15,
         "missing_item_count": 0,
         "unresolved_count": 0,
-        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_mlb_day_schedule_game_feed_2026-06-09.json\",\"schedule_path\":\"data-private/raw/mlb/2026-06-09/schedule.json\"}"
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-09.json\",\"schedule_path\":\"data-private/raw/mlb/2026-06-09/schedule.json\"}"
       },
       "stale": false,
       "errors": [],

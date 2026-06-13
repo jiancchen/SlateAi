@@ -1,0 +1,25 @@
+{
+  "audit": "mlb-morning-contracts",
+  "date": "2026-06-12",
+  "generatedAt": "2026-06-12T21:10:50.761Z",
+  "gameCount": 15,
+  "propCount": 632,
+  "failures": [
+    {
+      "failure": "statmuse-db-row-count-low",
+      "expected": 30,
+      "actual": 29
+    },
+    {
+      "failure": "statmuse-public-missing",
+      "gameId": "rockies-athletics",
+      "starter": ""
+    },
+    {
+      "failure": "espn-splits-not-fetched",
+      "gameId": "rockies-athletics",
+      "starter": "",
+      "status": "missing"
+    }
+  ]
+}

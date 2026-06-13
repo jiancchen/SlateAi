@@ -42,6 +42,106 @@ const formatPitcherMetric = (value, suffix = '') => {
   return Number.isFinite(parsed) ? `${parsed.toFixed(2)}${suffix}` : `${value || '-'}${suffix}`
 }
 
+const numericOrNull = (value) => {
+  if (value === null || value === undefined || value === '') return null
+  const parsed = Number(value)
+  return Number.isFinite(parsed) ? parsed : null
+}
+
+const boolValue = (value) => value === true || value === 'true' || value === 1 || value === '1'
+
+const hasTopRelievers = (profile) => Array.isArray(profile?.topRelievers) && profile.topRelievers.length > 0
+
+const buildRp2BullpenChainContext = (teamName, reliefProjectionContext = null) => {
+  if (!reliefProjectionContext) return null
+
+  const candidates = Array.isArray(reliefProjectionContext.candidates)
+    ? reliefProjectionContext.candidates
+    : []
+  const topRelievers = candidates
+    .slice(0, 4)
+    .map((candidate, index) => {
+      const name = candidate?.name || candidate?.pitcherName
+      if (!name) return null
+      return {
+        name,
+        pitcherName: name,
+        pitcherId: numericOrNull(candidate.pitcherId),
+        role: candidate.role || (index === 0 ? 'lead bridge' : 'bridge'),
+        throws: candidate.throws || null,
+        expectedOuts: numericOrNull(candidate.expectedOuts),
+        availabilityScore: numericOrNull(candidate.availabilityScore),
+        bridgeScore: numericOrNull(candidate.bridgeScore),
+        fatigueScore: numericOrNull(candidate.fatigueScore),
+        firstRelieverLikelihood: numericOrNull(candidate.firstRelieverLikelihood),
+        workedYesterday: boolValue(candidate.workedYesterday),
+        backToBack: boolValue(candidate.backToBack),
+        pitchesLast3: numericOrNull(candidate.pitchesLast3),
+        pitchesLast6: numericOrNull(candidate.pitchesLast6),
+        usedDaysLast3: numericOrNull(candidate.usedDaysLast3),
+        usedDaysLast6: numericOrNull(candidate.usedDaysLast6),
+        unavailable: boolValue(candidate.unavailable),
+        shadowSharePct: numericOrNull(candidate.shadowSharePct),
+        source: 'MLB-RP2',
+        projectionSource: candidate.source || reliefProjectionContext.sourceMode || 'MLB-RP2',
+        identityConfidence: 'low',
+        projectionOnly: true
+      }
+    })
+    .filter(Boolean)
+
+  if (!topRelievers.length) return null
+
+  const projectedRuns = numericOrNull(reliefProjectionContext.projectedReliefRunsAllowed)
+  const projectedOuts = numericOrNull(reliefProjectionContext.projectedReliefOuts)
+  const bridgeStress = numericOrNull(reliefProjectionContext.bridgeStressScore)
+  const riskLabel = reliefProjectionContext.runRiskTier
+    ? String(reliefProjectionContext.runRiskTier).replace(/_/g, ' ')
+    : 'bridge projection'
+  const summaryParts = [
+    `RP2 ${riskLabel}`,
+    Number.isFinite(projectedRuns) ? `${projectedRuns.toFixed(2)} projected relief runs` : null,
+    Number.isFinite(projectedOuts) ? `${projectedOuts.toFixed(1)} projected outs` : null,
+    Number.isFinite(bridgeStress) ? `bridge stress ${bridgeStress.toFixed(1)}` : null
+  ].filter(Boolean)
+
+  return {
+    teamName,
+    source: 'MLB-RP2',
+    chainSource: 'MLB-RP2',
+    modelVersion: reliefProjectionContext.modelVersion || null,
+    sourceMode: reliefProjectionContext.sourceMode || null,
+    projectionOnly: true,
+    identityConfidence: 'low',
+    topRelievers,
+    recentBullpenSummary: null,
+    projectedReliefRunsAllowed: projectedRuns,
+    projectedReliefOuts: projectedOuts,
+    projectedRelieversUsed: numericOrNull(reliefProjectionContext.projectedRelieversUsed),
+    bridgeStressScore: bridgeStress,
+    leverageAvailabilityScore: numericOrNull(reliefProjectionContext.leverageAvailabilityScore),
+    fatigueScore: numericOrNull(reliefProjectionContext.fatigueScore),
+    qualityScore: numericOrNull(reliefProjectionContext.qualityScore),
+    runRiskTier: reliefProjectionContext.runRiskTier || null,
+    topTwoSharePct: numericOrNull(reliefProjectionContext.topTwoSharePct),
+    lead: reliefProjectionContext.lead || null,
+    reasons: Array.isArray(reliefProjectionContext.reasons) ? reliefProjectionContext.reasons : [],
+    summaryLine: summaryParts.join(' | '),
+    note: 'RP2 team-side bridge projection; exact first-up reliever identity remains shadow-only.'
+  }
+}
+
+const resolveBullpenChainContext = ({ raw, side, teamName, bullpenChainByTeam }) => {
+  const chainContext = bullpenChainByTeam[teamName] ?? null
+  if (hasTopRelievers(chainContext)) return chainContext
+
+  const sideProjection =
+    raw.reliefProjectionContext?.[side] ??
+    raw[`${side}ReliefProjectionContext`] ??
+    null
+  return buildRp2BullpenChainContext(teamName, sideProjection)
+}
+
 const pitcherDetail = (pitcher) =>
   `${pitcher.fullName} (${pitcher.pitchHand || '?'}HP) | ${pitcher.wins}-${pitcher.losses} | ${pitcher.era} ERA | ${pitcher.strikeOuts} SO | ${formatPitcherMetric(pitcher.whip, ' WHIP')} | ${pitcher.inningsPitched} IP`
 
@@ -104,7 +204,8 @@ const buildGenericMlbGame = (
       away: standingsContextByTeam[raw.away] ?? null,
       home: standingsContextByTeam[raw.home] ?? null
     },
-    parkContext: parkContextByHomeTeam[raw.home] ?? null,
+    parkContext: raw.parkContext ?? parkContextByHomeTeam[raw.home] ?? null,
+    environmentAdjustmentContext: raw.environmentAdjustmentContext ?? null,
     offenseContext: {
       away: teamOffenseContextByTeam[raw.away] ?? null,
       home: teamOffenseContextByTeam[raw.home] ?? null
@@ -114,13 +215,14 @@ const buildGenericMlbGame = (
       home: teamBullpenContextByTeam[raw.home] ?? null
     },
     bullpenChainContext: {
-      away: bullpenChainByTeam[raw.away] ?? null,
-      home: bullpenChainByTeam[raw.home] ?? null
+      away: resolveBullpenChainContext({ raw, side: 'away', teamName: raw.away, bullpenChainByTeam }),
+      home: resolveBullpenChainContext({ raw, side: 'home', teamName: raw.home, bullpenChainByTeam })
     },
     relieverShadowContext: {
       away: relieverShadowByTeam[raw.away] ?? null,
       home: relieverShadowByTeam[raw.home] ?? null
     },
+    reliefProjectionContext: raw.reliefProjectionContext ?? null,
     savantContext: {
       away: teamSavantContextByTeam[raw.away] ?? null,
       home: teamSavantContextByTeam[raw.home] ?? null

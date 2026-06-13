@@ -1162,6 +1162,144 @@ const buildReliefProjectionContext = (row = null) => {
   }
 }
 
+const boolValue = (value) => value === true || value === 'true' || value === 1 || value === '1'
+
+const hasTopRelievers = (profile) => Array.isArray(profile?.topRelievers) && profile.topRelievers.length > 0
+
+const buildRp2BullpenChainContext = (teamName, reliefProjectionContext = null) => {
+  if (!reliefProjectionContext) return null
+  const candidates = Array.isArray(reliefProjectionContext.candidates)
+    ? reliefProjectionContext.candidates
+    : []
+  const topRelievers = candidates
+    .slice(0, 4)
+    .map((candidate, index) => {
+      const name = candidate?.name || candidate?.pitcherName
+      if (!name) return null
+      return {
+        name,
+        pitcherName: name,
+        pitcherId: num(candidate.pitcherId, null),
+        role: candidate.role || (index === 0 ? 'lead bridge' : 'bridge'),
+        throws: candidate.throws || null,
+        expectedOuts: num(candidate.expectedOuts, null),
+        availabilityScore: num(candidate.availabilityScore, null),
+        bridgeScore: num(candidate.bridgeScore, null),
+        fatigueScore: num(candidate.fatigueScore, null),
+        firstRelieverLikelihood: num(candidate.firstRelieverLikelihood, null),
+        workedYesterday: boolValue(candidate.workedYesterday),
+        backToBack: boolValue(candidate.backToBack),
+        pitchesLast3: num(candidate.pitchesLast3, null),
+        pitchesLast6: num(candidate.pitchesLast6, null),
+        usedDaysLast3: num(candidate.usedDaysLast3, null),
+        usedDaysLast6: num(candidate.usedDaysLast6, null),
+        unavailable: boolValue(candidate.unavailable),
+        shadowSharePct: num(candidate.shadowSharePct, null),
+        source: 'MLB-RP2',
+        projectionSource: candidate.source || reliefProjectionContext.sourceMode || 'MLB-RP2',
+        identityConfidence: 'low',
+        projectionOnly: true
+      }
+    })
+    .filter(Boolean)
+
+  if (!topRelievers.length) return null
+
+  const projectedRuns = num(reliefProjectionContext.projectedReliefRunsAllowed, null)
+  const projectedOuts = num(reliefProjectionContext.projectedReliefOuts, null)
+  const bridgeStress = num(reliefProjectionContext.bridgeStressScore, null)
+  const riskLabel = reliefProjectionContext.runRiskTier
+    ? String(reliefProjectionContext.runRiskTier).replace(/_/g, ' ')
+    : 'bridge projection'
+  const summaryParts = [
+    `RP2 ${riskLabel}`,
+    Number.isFinite(projectedRuns) ? `${projectedRuns.toFixed(2)} projected relief runs` : null,
+    Number.isFinite(projectedOuts) ? `${projectedOuts.toFixed(1)} projected outs` : null,
+    Number.isFinite(bridgeStress) ? `bridge stress ${bridgeStress.toFixed(1)}` : null
+  ].filter(Boolean)
+
+  return {
+    teamName,
+    source: 'MLB-RP2',
+    chainSource: 'MLB-RP2',
+    modelVersion: reliefProjectionContext.modelVersion || null,
+    sourceMode: reliefProjectionContext.sourceMode || null,
+    projectionOnly: true,
+    identityConfidence: 'low',
+    topRelievers,
+    recentBullpenSummary: null,
+    projectedReliefRunsAllowed: projectedRuns,
+    projectedReliefOuts: projectedOuts,
+    projectedRelieversUsed: num(reliefProjectionContext.projectedRelieversUsed, null),
+    bridgeStressScore: bridgeStress,
+    leverageAvailabilityScore: num(reliefProjectionContext.leverageAvailabilityScore, null),
+    fatigueScore: num(reliefProjectionContext.fatigueScore, null),
+    qualityScore: num(reliefProjectionContext.qualityScore, null),
+    runRiskTier: reliefProjectionContext.runRiskTier || null,
+    topTwoSharePct: num(reliefProjectionContext.topTwoSharePct, null),
+    lead: reliefProjectionContext.lead || null,
+    reasons: Array.isArray(reliefProjectionContext.reasons) ? reliefProjectionContext.reasons : [],
+    summaryLine: summaryParts.join(' | '),
+    note: 'RP2 team-side bridge projection; exact first-up reliever identity remains shadow-only.'
+  }
+}
+
+const buildBullpenChainWithFallback = (teamId, teamName, context, reliefProjectionContext = null) => {
+  const chainContext = buildBullpenChain(teamId, context)
+  return hasTopRelievers(chainContext)
+    ? chainContext
+    : buildRp2BullpenChainContext(teamName, reliefProjectionContext)
+}
+
+const buildParkContextFromEnvironment = (environmentAdjustmentContext = null) =>
+  environmentAdjustmentContext
+    ? {
+        venueName: environmentAdjustmentContext.venueName,
+        indexRuns: environmentAdjustmentContext.park.indexRuns,
+        indexHr: environmentAdjustmentContext.park.indexHr,
+        indexWoba: environmentAdjustmentContext.park.indexWoba,
+        source: 'MLB-ENV1',
+        expectedTotalRunsDelta: environmentAdjustmentContext.expected.totalRunsDelta,
+        expectedHitsDelta: environmentAdjustmentContext.expected.hitsDelta,
+        expectedHrDelta: environmentAdjustmentContext.expected.hrDelta,
+        runEnvironmentSignal: environmentAdjustmentContext.signal
+      }
+    : null
+
+const buildDbAddendumContext = (game, context) => {
+  const awayName = shortTeamName(game.away_team)
+  const homeName = shortTeamName(game.home_team)
+  const gamePk = num(game.mlb_game_pk, null)
+  const environmentAdjustmentContext = buildEnvironmentAdjustmentContext(
+    (gamePk ? context.environmentByGamePk.get(gamePk) : null) ||
+      context.environmentByMatchupKey.get(matchupKey(game.away_team, game.home_team)) ||
+      null
+  )
+  const awayReliefProjectionContext = buildReliefProjectionContext(
+    (gamePk ? context.reliefProjectionByGameTeam.get(`${gamePk}:${normalizeTeam(game.away_team)}`) : null) ||
+      context.reliefProjectionByDateTeam.get(`${game.game_date?.slice(0, 10)}:${normalizeTeam(game.away_team)}`) ||
+      null
+  )
+  const homeReliefProjectionContext = buildReliefProjectionContext(
+    (gamePk ? context.reliefProjectionByGameTeam.get(`${gamePk}:${normalizeTeam(game.home_team)}`) : null) ||
+      context.reliefProjectionByDateTeam.get(`${game.game_date?.slice(0, 10)}:${normalizeTeam(game.home_team)}`) ||
+      null
+  )
+
+  return {
+    id: `${slugify(awayName)}-${slugify(homeName)}`,
+    gamePk,
+    awayTeam: awayName,
+    homeTeam: homeName,
+    parkContext: buildParkContextFromEnvironment(environmentAdjustmentContext),
+    environmentAdjustmentContext,
+    reliefProjectionContext: {
+      away: awayReliefProjectionContext,
+      home: homeReliefProjectionContext
+    }
+  }
+}
+
 const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
   const awayName = shortTeamName(game.away_team)
   const homeName = shortTeamName(game.home_team)
@@ -1203,35 +1341,12 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
     [homeName]: homeSide.matchupContext
   }
   const stateContext = buildStateContext(game, context, awayTeamId, homeTeamId, awayName, homeName, awayPitcher, homePitcher)
-  const gamePk = num(game.mlb_game_pk, null)
-  const environmentAdjustmentContext = buildEnvironmentAdjustmentContext(
-    (gamePk ? context.environmentByGamePk.get(gamePk) : null) ||
-      context.environmentByMatchupKey.get(matchupKey(game.away_team, game.home_team)) ||
-      null
-  )
-  const awayReliefProjectionContext = buildReliefProjectionContext(
-    (gamePk ? context.reliefProjectionByGameTeam.get(`${gamePk}:${normalizeTeam(game.away_team)}`) : null) ||
-      context.reliefProjectionByDateTeam.get(`${game.game_date?.slice(0, 10)}:${normalizeTeam(game.away_team)}`) ||
-      null
-  )
-  const homeReliefProjectionContext = buildReliefProjectionContext(
-    (gamePk ? context.reliefProjectionByGameTeam.get(`${gamePk}:${normalizeTeam(game.home_team)}`) : null) ||
-      context.reliefProjectionByDateTeam.get(`${game.game_date?.slice(0, 10)}:${normalizeTeam(game.home_team)}`) ||
-      null
-  )
-  const parkContext = environmentAdjustmentContext
-    ? {
-      venueName: environmentAdjustmentContext.venueName,
-      indexRuns: environmentAdjustmentContext.park.indexRuns,
-      indexHr: environmentAdjustmentContext.park.indexHr,
-      indexWoba: environmentAdjustmentContext.park.indexWoba,
-      source: 'MLB-ENV1',
-      expectedTotalRunsDelta: environmentAdjustmentContext.expected.totalRunsDelta,
-      expectedHitsDelta: environmentAdjustmentContext.expected.hitsDelta,
-      expectedHrDelta: environmentAdjustmentContext.expected.hrDelta,
-      runEnvironmentSignal: environmentAdjustmentContext.signal
-    }
-    : null
+  const {
+    gamePk,
+    parkContext,
+    environmentAdjustmentContext,
+    reliefProjectionContext
+  } = buildDbAddendumContext(game, context)
 
   const baseGame = {
     id: `${slugify(awayName)}-${slugify(homeName)}`,
@@ -1264,17 +1379,14 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
       home: buildTeamBullpenContext(homeTeamId, context)
     },
     bullpenChainContext: {
-      away: buildBullpenChain(awayTeamId, context),
-      home: buildBullpenChain(homeTeamId, context)
+      away: buildBullpenChainWithFallback(awayTeamId, awayName, context, reliefProjectionContext?.away),
+      home: buildBullpenChainWithFallback(homeTeamId, homeName, context, reliefProjectionContext?.home)
     },
     relieverShadowContext: {
       away: relieverShadowByTeam[awayName] ?? null,
       home: relieverShadowByTeam[homeName] ?? null
     },
-    reliefProjectionContext: {
-      away: awayReliefProjectionContext,
-      home: homeReliefProjectionContext
-    },
+    reliefProjectionContext,
     savantContext: {
       away: buildTeamSavantContext(awayTeamId, context),
       home: buildTeamSavantContext(homeTeamId, context)
@@ -1330,6 +1442,24 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
       slateDate: baseGame.metadata.slateDate
     }
   }
+}
+
+export const loadMlbAddendumContextsFromDb = async (date) => {
+  const board = currentDayBoardForDate(date)
+  if (!board.games.length) return { byGamePk: {}, byGameId: {} }
+  const context = loadDbContext(date)
+  const byGamePk = {}
+  const byGameId = {}
+
+  board.games.forEach((game) => {
+    const addendumContext = buildDbAddendumContext(game, context)
+    if (Number.isFinite(Number(addendumContext.gamePk))) {
+      byGamePk[String(Number(addendumContext.gamePk))] = addendumContext
+    }
+    byGameId[addendumContext.id] = addendumContext
+  })
+
+  return { byGamePk, byGameId }
 }
 
 export const loadMlbDayGamesFromDb = async (date) => {

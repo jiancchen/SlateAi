@@ -99,7 +99,13 @@ npm run data:audit:mlb-public -- --date YYYY-MM-DD --base https://slate-web-stat
 6. Warehouse supplemental model context:
    - ESPN pitcher splits.
    - StatMuse starter-vs-team year-by-year history.
+   - FantasyInfoCentral Weather/HRForce with `npm run data:warehouse:mlb-fic-weather -- --date YYYY-MM-DD` so HR, O/U, and team-total reads have same-day park/weather carry context. The source is `https://www.fantasyinfocentral.com/mlb/weather/`; store it before model generation. Treat HRForce >= 1.4 as support/warning, not a standalone promotion reason.
    - FantasyInfoCentral Daily Matchups with `npm run data:warehouse:mlb-fic-daily-matchups -- --date YYYY-MM-DD` so H+R+RBI clean-board promotions have same-day BvP AB/AVG/OPS context. The fetch URL must include the date parameter, `https://www.fantasyinfocentral.com/mlb/daily-matchups?date=YYYY-MM-DD`; do not warehouse today's page under a prior slate date.
+     - The FIC matchup warehouse also stores same-row HRF, qAB%, HH%, hits, 2B/3B, HR, BB, AVG, OBP, and OPS. Only apply BvP adjustment pressure when the hitter has at least 5 career AB against the listed pitcher.
+   - FantasyInfoCentral Umpire Factors with `npm run data:warehouse:mlb-fic-umpire-factors -- --date YYYY-MM-DD`. This stores historical umpire favors, games, Hits/G, BB/G, SO/G, score environment, home advantage, BA, OBP, and OPS. It is profile context only until joined to an exact home-plate assignment.
+   - TheCapper MLB home-plate umpire context with `npm run data:warehouse:mlb-umpires -- --date YYYY-MM-DD`, then audit it with `npm run data:audit:mlb-umpires -- --date YYYY-MM-DD`. This writes a raw page snapshot, daily umpire profiles, and game-level assignment rows. Only rows with `date_match_status='exact'` may be used for game/pitcher-K adjustments; if TheCapper serves stale matchups, keep the fetch as `partial` and treat it as a source coverage gap.
+   - FanGraphs/RosterResource reliever context with `npm run data:warehouse:mlb-fangraphs-bullpen-depth -- --date YYYY-MM-DD --team all`. This stores the daily bullpen role ladder, structured recent usage, enriched RP roster rows, team RP rankings, recent transactions, closer-depth hierarchy, and closer-page leverage usage. Use it as bullpen availability/role context first; do not promote it into RP36 scoring until it has been backtested against actual reliever usage. See [mlb-reliever-daily-warehouse-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-reliever-daily-warehouse-runbook.md:1).
+   - Generate the additive relief/K shadow addendum after bullpen and umpire warehousing with `npm run data:generate:mlb-shadow-addendums -- --dates YYYY-MM-DD`. The addendum may annotate, rank, and explain ML shape and pitcher K rows, but it must not remove picks from the value board. Umpire adjustments require exact date/game matches; bullpen context may be used when all teams are covered.
    - RP36 reliever shadow and bridge-chain context.
    - hitter lineup split snapshots after the generated lineup board exists.
 7. Generate the M2 day files and prop artifacts.
@@ -177,9 +183,32 @@ Keep these sources attached or named in the public slate metadata:
 - Rotowire daily lineups fallback
 - DraftKings MLB props, including pitcher strikeouts
 - Baseball Savant hitter and pitcher pages
+- FantasyInfoCentral MLB Weather/HRForce for same-day weather-adjusted HR/run-environment context: `https://www.fantasyinfocentral.com/mlb/weather/`
+  - warehouse command: `npm run data:warehouse:mlb-fic-weather -- --date YYYY-MM-DD`
+  - use current and hourly HRForce. HRForce >= 1.4 should downgrade fragile unders and support HR/over lanes only when other baseball evidence agrees.
+  - HRForce below 1.4 is lower HR/run-environment pressure. HRForce N/A is normally dome/no-weather-impact context and should be treated as lower weather carry, not as a hidden high-run signal.
 - FantasyInfoCentral MLB Daily Matchups for same-day batter-vs-pitcher checks: `https://www.fantasyinfocentral.com/mlb/daily-matchups`
   - warehouse command: `npm run data:warehouse:mlb-fic-daily-matchups -- --date YYYY-MM-DD`
+  - use BvP only at 5+ AB. Store hits, 2B/3B, HR, BB, AVG, OBP, OPS, qAB%, HH%, and same-row HRF for hitter props and pitcher hits/earned-run risk context.
   - historical backfill uses the same command one date at a time. Do not run multiple FIC warehouse jobs in parallel against `sql-mlb.db`; SQLite locks can leave raw/artifact writes ahead of database/web-module writes.
+- TheCapper MLB Umpires for home-plate zone/K/walk/NRFI context: `https://thecapper.io/mlb/umpires/`
+  - warehouse command: `npm run data:warehouse:mlb-umpires -- --date YYYY-MM-DD`
+  - audit command: `npm run data:audit:mlb-umpires -- --date YYYY-MM-DD`
+  - impact report command: `npm run data:research:mlb-umpire-impact -- --start-date YYYY-MM-DD --end-date YYYY-MM-DD`
+  - use only exact date/game matches for model features. Store stale or mismatched fetches, but do not attach them to today's games.
+  - audit warnings `no-exact-umpire-game-matches`, `capture-date-differs-from-source-date`, or `unresolved-or-stale-assignment-rows` mean the source is captured but unavailable for model features on that slate.
+- FantasyInfoCentral MLB Umpire Factors for historical profile/cross-check context: `https://www.fantasyinfocentral.com/mlb/umpires`
+  - warehouse command: `npm run data:warehouse:mlb-fic-umpire-factors -- --date YYYY-MM-DD`
+  - table: `mlb_fic_umpire_factors_daily`
+  - not an assignment source. Join to games only through an exact TheCapper or equivalent home-plate assignment by normalized umpire name.
+- FanGraphs/RosterResource reliever context for role, workload, roster, transaction, closer, and team RP ranking context:
+  - example source: `https://www.fangraphs.com/roster-resource/depth-charts/reds`
+  - closer source: `https://www.fangraphs.com/roster-resource/closer-depth-chart`
+  - warehouse command: `npm run data:warehouse:mlb-fangraphs-bullpen-depth -- --date YYYY-MM-DD --team all`
+  - dedicated runbook: [mlb-reliever-daily-warehouse-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-reliever-daily-warehouse-runbook.md:1)
+  - generated board addendum: `npm run data:generate:mlb-shadow-addendums -- --dates YYYY-MM-DD`
+  - stores typed daily tables for visible bullpen depth/usage, enriched RP roster rows, structured usage events, team-page transactions, team RP rankings, closer depth, and closer usage with leverage index.
+  - the shadow addendum is additive: it can tag ML shape rows with relief support/risk and tag pitcher K rows with bullpen-leash/umpire context, but it cannot delete rows or override the base model.
 - ESPN pitcher splits pages
 - StatMuse starter-vs-opponent history
 - RP36 reliever shadow model artifacts
@@ -194,6 +223,10 @@ Run this audit whenever the value board changes, when line-source plumbing chang
 - POTD and promoted value sections must skip any F5 O/U row whose final lean is not actionable `Over` or `Under`, regardless of raw probability.
 - Null or blank candidates must be rejected before number conversion. A displayed `0`, negative, or implausibly tiny F5 total line should stop the deploy.
 - First-five O/U rows must expose confidence that is consistent with margin quality. A close miss should not look like a clean-hit profile, and severe-miss patterns from prior grading should trigger caution before promotion.
+- F5 team-total rows must use discrete run thresholds for public cushion, sorting, and promotion. `Over 1.5` needs `2+` runs, so a `2.6` projection has only `+0.6` threshold cushion even though raw `projection - line` is `+1.1`. `Under 2.5` needs `2 or fewer`, so cushion is `2 - projection`, not `line - projection`.
+- Public F5 team-total copy should label this as `cushion`, not generic `edge`. Raw projection-vs-line gap may stay in diagnostics, but POTD/promoted tiers must not use it as the primary margin.
+- F5 team-total promoted rows need at least `0.75` runs of discrete threshold cushion unless the shadow report explicitly records a different active seed window.
+- Full-game team-total rows must appear on the team-total value board when either a direct `teamTotalRuns/fullGame` anchor exists or a safe derived line can be built from posted game total plus M2 team-run share. Derived rows must be labeled `Derived FG line`, use discrete hit-threshold cushion, and require at least `1.0` run of threshold cushion before promotion.
 - First-five ML rows must expose push/tie risk when the modeled F5 tie probability is elevated. Check both the visible warning and the machine-readable value metadata.
 - Ranking checks should compare `promotionTier`, `sortConfidence`, market edge, and margin support. If a row jumps because the run-gap edge/share is largest, confirm that confidence and warnings still tell the correct story. Do not demote a strong F5 ML edge merely because it exceeds a narrow historical seed bucket; confidence is primary, push/tie risk is the control, and run gap is support.
 - ML shape rows must not rank primarily by `diff/total`. Public copy should label that number as `margin support`; confidence is the primary ML trust signal, market edge is the value confirmation, and margin support is the tiebreak/context field.
@@ -206,7 +239,7 @@ Run this audit whenever the value board changes, when line-source plumbing chang
   - RBI props
   - Mike's BOTD as a separate screen, not a replacement for any of the above
 - Combined H+R+RBI clean-board promotion must include current team/game context: projected full-game ML win, 70%+ model confidence, and 30+ recent AB/PA. Rows that fail the clean filter should not be deleted from model artifacts; they should be demoted or omitted only from the clean promoted lane.
-- Mike's BOTD is a separate H+R+RBI screen. For normal same-day operation, it uses projected full-game ML win, 60%+ confidence, 30+ recent AB/PA, and same-day FantasyInfoCentral batter-vs-probable-pitcher support. The FIC support gate is at least 5 career AB against today's listed starter, batter-vs-pitcher AVG over .300, and batter-vs-pitcher OPS over 1.000. If a manual Mike screen exists for the date, that manual list is the admission gate and FIC becomes support/context; do not let every strict FIC pass auto-enter the manual BOTD lane.
+- Mike's BOTD is a separate H+R+RBI screen. For normal same-day operation, it uses projected full-game ML win, 60%+ confidence, 30+ recent AB/PA, and same-day FantasyInfoCentral batter-vs-probable-pitcher support. The FIC support gate is at least 5 career AB against today's listed starter, batter-vs-pitcher AVG over .300, and batter-vs-pitcher OPS over .800. If a manual Mike screen exists for the date, that manual list is the admission gate and FIC becomes support/context; do not let every strict FIC pass auto-enter the manual BOTD lane.
 - H+R+RBI rows sourced from modeled lineup production must carry the same `ficHrrCleanGateRequired`, `ficHrrCleanPass`, `ficDailyMatchup`, and `mikesBotdFiltered` fields as direct posted `hitRunRbi` prop rows. Historical slates often lack direct `hitRunRbi` exports, so the modeled fallback must still be eligible for Mike's BOTD and result grading.
 - If a batter has weak current quality, especially low recent xwOBA/xOPS or fading Statcast trend, do not let BvP alone promote the row. Keep the row visible only as watch/research unless the manual screen explicitly includes it and the reason is documented.
 - Bad player/team identity rows are hard excludes from value-board promotion. Example failure class: a player attached to the wrong team/game in the prop feed can bypass the ML-win filter because the UI evaluates the wrong team's market line. Add a scoped invalid-identity guard rather than treating the row as a valid market disagreement.

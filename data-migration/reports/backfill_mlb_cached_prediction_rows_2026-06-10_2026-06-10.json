@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-06-11T15:52:08.101Z",
+  "script": "data-migration/scripts/backfill_mlb_cached_prediction_rows.mjs",
+  "db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "start": "2026-06-10",
+  "end": "2026-06-10",
+  "dry_run": false,
+  "dates": [
+    {
+      "date": "2026-06-10",
+      "rows": 84,
+      "lane_counts": {
+        "ml_shape": 15,
+        "first_inning": 15,
+        "first5_ml": 12,
+        "full_total": 8,
+        "first5_total": 6,
+        "player_prop": 16,
+        "home_run": 12
+      },
+      "game_artifacts": 15,
+      "prop_rows": 16,
+      "prop_sources": [
+        "web/public/data/slates/2026-06-10/props.json"
+      ],
+      "home_run_rows": 12,
+      "home_run_sources": [
+        "web/public/data/slates/2026-06-10/home-runs.json"
+      ]
+    }
+  ],
+  "planned_prediction_rows": 84,
+  "lane_counts": {
+    "ml_shape": 15,
+    "first_inning": 15,
+    "first5_ml": 12,
+    "full_total": 8,
+    "first5_total": 6,
+    "player_prop": 16,
+    "home_run": 12
+  },
+  "final_prediction_rows": 84,
+  "before_prediction_rows": 13883,
+  "after_prediction_rows": 13899,
+  "sample_rows": [
+    {
+      "prediction_row_id": "pred-54ee8837fdcc50434eea7d41dcf31a44",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Astros",
+      "confidence": 52
+    },
+    {
+      "prediction_row_id": "pred-323e4e06bb905a600a55bdf36fbf0b1b",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "NRFI",
+      "confidence": 57.5
+    },
+    {
+      "prediction_row_id": "pred-5f80db34099b1a26752e05104241f1b4",
+      "lane": "first5_ml",
+      "market_type": "first5_moneyline",
+      "selection": "Astros",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-15d2e251d300eb1011d1606d4aa93eb0",
+      "lane": "full_total",
+      "market_type": "game_total",
+      "selection": "Under 8.5",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-df56f21034309ac63563a5beb26787aa",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Braves",
+      "confidence": 62
+    },
+    {
+      "prediction_row_id": "pred-f63feeb934d1711a2fedfd2a4e7437df",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "NRFI",
+      "confidence": 50.7
+    },
+    {
+      "prediction_row_id": "pred-e7b97bcfa9e790fd212fc61e25dc84ef",
+      "lane": "first5_ml",
+      "market_type": "first5_moneyline",
+      "selection": "White Sox",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-a306aba7dffae70860980fe184109af6",
+      "lane": "full_total",
+      "market_type": "game_total",
+      "selection": "Over 7",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-c4d47db559877a859d1be73d86a2aa91",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Brewers",
+      "confidence": 52
+    },
+    {
+      "prediction_row_id": "pred-1ba8c84fef5051a77ca22edfcf5ab81d",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 70.9
+    },
+    {
+      "prediction_row_id": "pred-ea4a0d57366e46b659d7f311338aa513",
+      "lane": "first5_ml",
+      "market_type": "first5_moneyline",
+      "selection": "Athletics",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-edd3832afa82798e0b34251d7a6b1fe2",
+      "lane": "first5_total",
+      "market_type": "first5_total",
+      "selection": "Under 8.4",
+      "confidence": null
+    }
+  ],
+  "ok": true
+}

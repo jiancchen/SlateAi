@@ -13,6 +13,47 @@ const argValue = (name, fallback = '') => {
 }
 
 const supplementalByDate = {
+  '2026-06-11': [
+    {
+      gameId: 'dodgers-pirates',
+      side: 'home',
+      teamName: 'Pirates',
+      slot: 5,
+      playerId: 663968,
+      name: 'Jake Mangum',
+      position: 'RF',
+      bats: 'S',
+      statcastTrend: {
+        sourceAsOfDate: '2026-06-06',
+        gamesSample7: 4,
+        paSample7: 18,
+        bbeSample7: 36,
+        rolling7Xwoba: 0.334,
+        rolling14Xwoba: 0.312,
+        rolling30Xwoba: 0.28,
+        rolling7Xba: 0.293,
+        rolling14Xba: 0.272,
+        rolling30Xba: 0.256,
+        rolling7Xslg: 0.471,
+        rolling14Xslg: 0.4,
+        rolling30Xslg: 0.354,
+        rolling7BarrelPct: 2.8,
+        rolling14BarrelPct: 1.8,
+        rolling30BarrelPct: 1.2,
+        rolling7HardHitPct: 16.7,
+        rolling14HardHitPct: 12.7,
+        rolling30HardHitPct: 11.2,
+        rolling7SweetSpotPct: 44.4,
+        rolling14SweetSpotPct: 36.4,
+        rolling30SweetSpotPct: 36.2,
+        xwobaTrend: 0.054,
+        barrelTrend: 1.6,
+        hardHitTrend: 5.5,
+        sweetSpotTrend: 8.2,
+        trendSignal: 'improving'
+      }
+    }
+  ],
   '2026-06-05': [
     {
       gameId: 'red-sox-yankees',

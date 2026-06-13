@@ -1,0 +1,58 @@
+{
+  "date": "2026-06-10",
+  "families": {
+    "mlb_bullpen_features": {
+      "actual_item_count": 0,
+      "source_name": "mlb_bullpen_features",
+      "status": "missing",
+      "table_counts": {
+        "bullpen_mistake_shape_snapshots": 0,
+        "bullpen_usage_snapshots": 0,
+        "likely_relief_chains": 0,
+        "reliever_command_profiles": 0,
+        "team_bullpen_shape_snapshots": 0
+      }
+    },
+    "mlb_environment": {
+      "actual_item_count": 0,
+      "source_name": "mlb_environment",
+      "status": "missing",
+      "table_counts": {
+        "game_sun_visibility_snapshots": 0,
+        "game_visibility_outcomes": 0
+      }
+    },
+    "mlb_pitcher_features": {
+      "actual_item_count": 0,
+      "source_name": "mlb_pitcher_features",
+      "status": "missing",
+      "table_counts": {
+        "pitcher_first_inning_profiles": 0,
+        "pitcher_mistake_shape_snapshots": 0,
+        "pitcher_pitch_mix_snapshots": 0,
+        "starter_leash_profiles": 0,
+        "starter_third_time_penalty_profiles": 0,
+        "starting_pitcher_form_snapshots": 0
+      }
+    },
+    "mlb_team_features": {
+      "actual_item_count": 0,
+      "source_name": "mlb_team_features",
+      "status": "missing",
+      "table_counts": {
+        "team_first_inning_profiles": 0,
+        "team_form_carryover_profiles": 0,
+        "team_lead_surrender_profiles": 0,
+        "team_mistake_shape_snapshots": 0,
+        "team_opponent_quality_snapshots": 0,
+        "team_rolling_form_snapshots": 0,
+        "team_state_snapshots": 0,
+        "team_whiff_persistence_profiles": 0
+      }
+    }
+  },
+  "generated_at": "2026-06-11T15:55:44.473228+00:00",
+  "ok": false,
+  "script": "data-migration/scripts/refresh_mlb_feature_source_status.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db"
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-06-11",
+  "dkMatches": 0,
+  "robinhoodMatches": 66,
+  "sourceMatches": 66,
+  "playerTargets": 132,
+  "matchTargets": 66,
+  "playerOutput": "data-migration/reports/tennislive_slate_player_urls_2026-06-11.txt",
+  "matchOutput": "data-migration/reports/tennislive_slate_match_urls_2026-06-11.txt",
+  "tournaments": [
+    "ATP Challenger Bratislava",
+    "ATP Challenger Cattolica",
+    "ATP Challenger Ilkley",
+    "ATP Challenger Lyon",
+    "ATP Challenger San Miguel de Tucuman",
+    "ATP S-Hertogenbosch",
+    "ATP Stuttgart",
+    "Davis Cup 2026 Group III Europe",
+    "WTA 125K Ilkley",
+    "WTA 125K Modena",
+    "WTA London",
+    "WTA S-Hertogenbosch"
+  ],
+  "generatedAt": "2026-06-11T09:17:40.015Z"
+}

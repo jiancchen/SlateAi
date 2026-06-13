@@ -22,6 +22,22 @@ const round = (value, digits = 1) => {
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
+const discreteTotalEdge = (projectedRunsInput, lineInput, leanInput) => {
+  const projectedRuns = Number(projectedRunsInput)
+  const line = Number(lineInput)
+  if (!Number.isFinite(projectedRuns) || !Number.isFinite(line)) return null
+  const lean = String(leanInput || '').toLowerCase()
+  if (lean.startsWith('over')) {
+    const winThreshold = Math.floor(line) + 1
+    return { thresholdCushion: projectedRuns - winThreshold, winThreshold }
+  }
+  if (lean.startsWith('under')) {
+    const winThreshold = Math.ceil(line) - 1
+    return { thresholdCushion: winThreshold - projectedRuns, winThreshold }
+  }
+  return null
+}
+
 const sqlString = (value) => String(value).replace(/'/g, "''")
 
 const sqliteJson = (sql) => {
@@ -492,10 +508,12 @@ const buildRows = (dates) => {
     const line = Number(contract.line_value)
     if (!Number.isFinite(projectedRuns) || !Number.isFinite(line)) return
     const lean = projectedRuns >= line ? 'Over' : 'Under'
-    const edge = projectedRuns - line
-    if (Math.abs(edge) < 0.25) return
+    const edgeState = discreteTotalEdge(projectedRuns, line, lean)
+    if (!edgeState) return
+    const edge = edgeState.thresholdCushion
+    if (edge < 0.25) return
     const probability = totalProbabilityPct(projectedRuns, line, lean)
-    const confidence = clamp(Math.round(Number(probability)) - (Math.abs(edge) < 0.5 ? 4 : 0), 50, 80)
+    const confidence = clamp(Math.round(Number(probability)) - (edge < 0.75 ? 6 : edge < 1 ? 3 : 0), 50, 80)
     const actualRuns = side === 'away' ? Number(outcome.f5_away_runs) : Number(outcome.f5_home_runs)
     lanes.teamtotal.push({
       date,
@@ -503,7 +521,8 @@ const buildRows = (dates) => {
       game: title,
       pick: `${nickname(contract.team_name)} ${lean} ${line}`,
       confidence,
-      edge: Math.abs(edge),
+      edge,
+      thresholdCushion: edge,
       side: lean,
       hit: /over/i.test(lean) ? actualRuns > line : actualRuns < line
     })
@@ -644,7 +663,7 @@ const report = {
       'High margin support does not override low confidence; high confidence with thin margin is a closer-score win profile.',
     promotedF5Ml: 'F5 ML confidence-first promotion: edge >=0.5, lead confidence >=52, tiePct <20; edge >=1.5 is strong-edge support, not a demotion',
     promotedNrfi: 'NRFI confidence >=60',
-    promotedTeamTotal: 'F5 team total confidence >=65 or <60 seed; watch 60-64',
+    promotedTeamTotal: 'F5 team total confidence >=65 or <60 seed only when discrete hit-threshold cushion >=0.75 runs; watch thin threshold cushions even when raw line edge looks large',
     researchOnly: ['YRFI', 'F5 O/U', 'F5 O/U Pass/Hold/Unsupported over']
   }
 }

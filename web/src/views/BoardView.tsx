@@ -310,30 +310,34 @@ export function BoardView(props: BoardViewProps) {
       sideKey === 'away'
         ? projection.awayLikelyRelievers
         : projection.homeLikelyRelievers
+    const chainContext = game.bullpenChainContext?.[sideKey] ?? null
+    const chainSource = String(chainContext?.chainSource || chainContext?.source || '')
+    const sourceLabel = /RP2/i.test(chainSource) ? 'RP2 bridge' : 'Bridge chain'
     const relievers = [
       ...(Array.isArray(projectedRelievers) ? projectedRelievers : []),
-      ...(Array.isArray(game.bullpenChainContext?.[sideKey]?.topRelievers) ? game.bullpenChainContext[sideKey].topRelievers : []),
+      ...(Array.isArray(chainContext?.topRelievers) ? chainContext.topRelievers : []),
       ...(Array.isArray(team?.summary?.bullpenPitchTypeSummary?.relievers) ? team.summary.bullpenPitchTypeSummary.relievers : [])
     ]
     const uniqueRelievers = relievers.filter((reliever: AnyRecord, index: number, all: AnyRecord[]) =>
       reliever?.name && all.findIndex((entry: AnyRecord) => entry?.name === reliever.name) === index
     )
-    const recent = game.bullpenChainContext?.[sideKey]?.recentBullpenSummary ?? null
+    const recent = chainContext?.recentBullpenSummary ?? null
     const score = sideKey === 'away' ? projection.awayBullpenChainScore : projection.homeBullpenChainScore
     const workload = sideKey === 'away' ? projection.awayBullpenExhaustionLabel : projection.homeBullpenExhaustionLabel
     const chainLabel = uniqueRelievers.length
       ? uniqueRelievers.slice(0, 2).map((reliever: AnyRecord) => reliever.name).join(' -> ')
-      : 'No RP36 reliever cluster stored'
+      : 'No reliever cluster stored'
     const context = [
       Number.isFinite(Number(score)) ? `score ${formatNumber(score, 1)}` : null,
       workload && workload !== 'unknown' ? workload : null,
+      chainContext?.summaryLine || null,
       recent && Number(recent.gamesSample || 0) > 0
         ? `last ${Number(recent.gamesSample || 0)} BP games ${formatNumber(recent.era, 2)} ERA / ${formatNumber(recent.whip, 2)} WHIP`
         : null
     ].filter(Boolean)
     return {
-      label: `Bridge chain (RP36): ${chainLabel}`,
-      detail: context.length ? context.join(' | ') : 'RP36 reliever-shadow output is sparse for this game.'
+      label: `${sourceLabel}: ${chainLabel}`,
+      detail: context.length ? context.join(' | ') : 'Bridge-chain output is sparse for this game.'
     }
   }
   const getBoardTeamLogoUrl = (league: string, teamName: string) => mlbDetailProps?.getTeamLogoUrl?.(league, teamName) || ''
@@ -1347,7 +1351,7 @@ export function BoardView(props: BoardViewProps) {
                       <span>Mike screen</span>
                       <span>FIC support</span>
                       <span>AVG &gt; .300</span>
-                      <span>OPS &gt; 1.000</span>
+                      <span>OPS &gt; .800</span>
                       <span>All today</span>
                     </div>
                     {mlbValueSummary.mikesBotdRows?.length ? (

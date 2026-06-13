@@ -1,0 +1,4517 @@
+{
+  "modelName": "board-moneyline-v2-may16",
+  "generatedAt": "2026-05-23T17:57:49.396Z",
+  "startDate": "2026-05-16",
+  "endDate": "2026-05-16",
+  "picks": [
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "blue-jays-tigers",
+      "gameTitle": "Blue Jays @ Tigers",
+      "awayTeam": "Toronto Blue Jays",
+      "homeTeam": "Detroit Tigers",
+      "predictedTeam": "Detroit Tigers",
+      "predictedSide": "home",
+      "confidence": 57,
+      "volatility": 86,
+      "modelEdge": 6.2,
+      "marketAmericanOdds": -115,
+      "marketProbability": 0.5348837209302325,
+      "marketProbabilityLabel": "53.5%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context",
+      "inputLabels": [
+        "Starter ERA",
+        "Projected hit volume",
+        "Hit-production baseline"
+      ],
+      "projection": {
+        "awayProjectedHits": 5.6,
+        "homeProjectedHits": 8.1,
+        "awayHitEfficiencyPct": 16.2,
+        "homeHitEfficiencyPct": 23.6,
+        "awayFirst5ProjectedHits": 3.6,
+        "homeFirst5ProjectedHits": 4.8,
+        "awayFirst5HitEfficiencyPct": 18.7,
+        "homeFirst5HitEfficiencyPct": 25.4,
+        "awayLateProjectedHits": 2.2,
+        "homeLateProjectedHits": 3.1,
+        "awayLateHitEfficiencyPct": 14.3,
+        "homeLateHitEfficiencyPct": 19.9,
+        "awayBullpenChainScore": 80.7,
+        "homeBullpenChainScore": 82.6,
+        "edgeTeam": "Tigers",
+        "edgeHits": 2.5,
+        "first5EdgeTeam": "Tigers",
+        "first5EdgeHits": 1.2,
+        "lateEdgeTeam": "Tigers",
+        "lateEdgeHits": 0.9,
+        "bridgeEdgeTeam": "Tigers",
+        "bridgeEdgeScore": 1.9,
+        "awayLikelyRelievers": [
+          {
+            "name": "Louis Varland",
+            "role": "bridge",
+            "firstRelieverLikelihood": 78,
+            "availabilityScore": 70.8,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Braydon Fisher",
+            "role": "bridge",
+            "firstRelieverLikelihood": 73,
+            "availabilityScore": 56.7,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Kyle Finnegan",
+            "role": "bridge",
+            "firstRelieverLikelihood": 80.1,
+            "availabilityScore": 72.4,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Tyler Holton",
+            "role": "middle",
+            "firstRelieverLikelihood": 71.5,
+            "availabilityScore": 81.2,
+            "bridgeScore": 73.7,
+            "expectedOuts": 1,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          }
+        ],
+        "awayBullpenExhaustion": 32,
+        "homeBullpenExhaustion": 17.9,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Unknown sample lefty",
+        "homePitcherType": "Balanced righty",
+        "awayStarterHoldConfidence": 92,
+        "homeStarterHoldConfidence": 55.8,
+        "awayProjectedRuns": 2.5,
+        "homeProjectedRuns": 3.8,
+        "awayFirst5ProjectedRuns": 1.5,
+        "homeFirst5ProjectedRuns": 2.2,
+        "awayLateProjectedRuns": 1,
+        "homeLateProjectedRuns": 1.6,
+        "postedTotal": 8.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -2.2,
+            "strength": "Strong",
+            "label": "Under 8.5",
+            "summary": "Under lean with a 2.2-run edge against 8.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.3,
+            "strength": "Strong",
+            "label": "Under 5",
+            "summary": "Under lean with a 1.3-run edge against 5."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.9,
+            "strength": "Clear",
+            "label": "Under 3.5",
+            "summary": "Under lean with a 0.9-run edge against 3.5."
+          },
+          "projectedFullTotalRuns": 6.3,
+          "projectedFirst5TotalRuns": 3.7,
+          "projectedLateTotalRuns": 2.6,
+          "derivedFirst5TotalLine": 5,
+          "derivedLateTotalLine": 3.5,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Blue Jays",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Brandon Valenzuela",
+                "tag": "carry | +10.00 vs Casey Mize"
+              },
+              {
+                "name": "Ernie Clement",
+                "tag": "carry | +7.90 vs Casey Mize"
+              },
+              {
+                "name": "Daulton Varsho",
+                "tag": "heater | +2.11 vs Casey Mize"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Vladimir Guerrero Jr.",
+                "tag": "traffic | -8.00 vs Casey Mize"
+              },
+              {
+                "name": "Lenyn Sosa",
+                "tag": "cold | -8.00 vs Casey Mize"
+              }
+            ],
+            "underperformNote": "Vladimir Guerrero Jr. and Lenyn Sosa carry the softer form or split fit into a balanced lane.",
+            "overview": "Blue Jays can lean on Brandon Valenzuela, Ernie Clement, Daulton Varsho to drive early pressure against Casey Mize.",
+            "topThirdScore": 22.9,
+            "middleScore": 43.1,
+            "depthScore": 66.7,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Blue Jays can lean on Brandon Valenzuela, Ernie Clement, Daulton Varsho to drive early pressure against Casey Mize.",
+              "Brandon Valenzuela and Ernie Clement and Daulton Varsho are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Tigers",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Gage Workman",
+                "tag": "carry | +10.00 vs Mason Fluharty"
+              },
+              {
+                "name": "Riley Greene",
+                "tag": "carry | +10.00 vs Mason Fluharty"
+              },
+              {
+                "name": "Dillon Dingler",
+                "tag": "carry | +7.50 vs Mason Fluharty"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Spencer Torkelson",
+                "tag": "split edge | -8.00 vs Mason Fluharty"
+              },
+              {
+                "name": "Zach McKinstry",
+                "tag": "cold | -8.00 vs Mason Fluharty"
+              }
+            ],
+            "underperformNote": "Spencer Torkelson and Zach McKinstry carry the softer form or split fit into a unknown sample lane.",
+            "overview": "Tigers can lean on Gage Workman, Riley Greene, Dillon Dingler to drive early pressure against Mason Fluharty.",
+            "topThirdScore": 68.3,
+            "middleScore": 46.3,
+            "depthScore": 20.8,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Tigers own the cleaner full-game traffic script at 8.1 projected hits.",
+              "Tigers have the better starter-window lane with 4.8 projected first-five hits.",
+              "Tigers still hold the better bridge-and-finish script once the bullpens take over.",
+              "Tigers also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Tigers can lean on Gage Workman, Riley Greene, Dillon Dingler to drive early pressure against Mason Fluharty.",
+              "Tigers top third are live enough to pressure the starter before the bridge innings.",
+              "Gage Workman and Riley Greene and Dillon Dingler are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Tigers carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Tigers",
+              "projection": "2.2 R",
+              "note": "Tigers lean on Gage Workman, Riley Greene to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Tigers",
+              "projection": "1.6 R",
+              "note": "Tigers keep more late scoring paths alive, with Gage Workman, Riley Greene plus the Tigers bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Tigers",
+              "projection": "8.1 H",
+              "note": "Tigers finish with the stronger aggregate traffic path, anchored by Gage Workman, Riley Greene."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 63.2,
+        "lateInningStabilityIndex": 37.9,
+        "reliefPitchingRisk": 65.3,
+        "coinflipPressure": 51,
+        "pickBullpenScore": 58.7,
+        "oppBullpenScore": 63.5,
+        "pickStarterScore": 65.6,
+        "oppStarterScore": 56.2,
+        "projectedHitEdgeForPick": 2.5,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 3,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [
+          "highRiskPoints"
+        ],
+        "favoredSignalCount": 10,
+        "starterLateGap": 25.3,
+        "edgeHaircutApplied": 0.8,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -115,
+        "marketProbability": 0.5348837209302325,
+        "marketProbabilityLabel": "53.5%",
+        "opponentMarketAmericanOdds": -105,
+        "opponentMarketProbability": 0.5121951219512195,
+        "opponentMarketProbabilityLabel": "51.2%",
+        "marketFavoriteTeam": "Detroit Tigers",
+        "marketFavoriteProbability": 0.5348837209302325,
+        "marketFavoriteProbabilityLabel": "53.5%",
+        "marketFavoriteAmericanOdds": -115,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.023
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "royals-cardinals",
+      "gameTitle": "Royals @ Cardinals",
+      "awayTeam": "Kansas City Royals",
+      "homeTeam": "St. Louis Cardinals",
+      "predictedTeam": "St. Louis Cardinals",
+      "predictedSide": "home",
+      "confidence": 58,
+      "volatility": 92,
+      "modelEdge": 6.4,
+      "marketAmericanOdds": -120,
+      "marketProbability": 0.5454545454545454,
+      "marketProbabilityLabel": "54.5%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context",
+      "inputLabels": [
+        "Hit-production baseline",
+        "Standings profile",
+        "Starter ERA"
+      ],
+      "projection": {
+        "awayProjectedHits": 8.8,
+        "homeProjectedHits": 10.1,
+        "awayHitEfficiencyPct": 25.4,
+        "homeHitEfficiencyPct": 29.5,
+        "awayFirst5ProjectedHits": 4.9,
+        "homeFirst5ProjectedHits": 6,
+        "awayFirst5HitEfficiencyPct": 25.4,
+        "homeFirst5HitEfficiencyPct": 31.8,
+        "awayLateProjectedHits": 4.1,
+        "homeLateProjectedHits": 4.1,
+        "awayLateHitEfficiencyPct": 26.3,
+        "homeLateHitEfficiencyPct": 26.4,
+        "awayBullpenChainScore": 84.4,
+        "homeBullpenChainScore": 60.3,
+        "edgeTeam": "Cardinals",
+        "edgeHits": 1.3,
+        "first5EdgeTeam": "Cardinals",
+        "first5EdgeHits": 1.1,
+        "lateEdgeTeam": "Royals",
+        "lateEdgeHits": 0,
+        "bridgeEdgeTeam": "Royals",
+        "bridgeEdgeScore": 24,
+        "awayLikelyRelievers": [
+          {
+            "name": "Luinder Avila",
+            "role": "bridge",
+            "firstRelieverLikelihood": 72.4,
+            "availabilityScore": 61.5,
+            "bridgeScore": 87.9,
+            "expectedOuts": 6,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Daniel Lynch IV",
+            "role": "bridge",
+            "firstRelieverLikelihood": 71.4,
+            "availabilityScore": 52.2,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "George Soriano",
+            "role": "middle",
+            "firstRelieverLikelihood": 65.9,
+            "availabilityScore": 58.8,
+            "bridgeScore": 77.9,
+            "expectedOuts": 2,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          },
+          {
+            "name": "Justin Bruihl",
+            "role": "middle",
+            "firstRelieverLikelihood": 62.4,
+            "availabilityScore": 79.5,
+            "bridgeScore": 58.3,
+            "expectedOuts": 1,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          }
+        ],
+        "awayBullpenExhaustion": 42.3,
+        "homeBullpenExhaustion": 28.6,
+        "awayBullpenExhaustionLabel": "elevated",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Traffic-risk lefty",
+        "homePitcherType": "Traffic-risk righty",
+        "awayStarterHoldConfidence": 49.3,
+        "homeStarterHoldConfidence": 48.3,
+        "awayProjectedRuns": 4.4,
+        "homeProjectedRuns": 5.6,
+        "awayFirst5ProjectedRuns": 2.3,
+        "homeFirst5ProjectedRuns": 3.2,
+        "awayLateProjectedRuns": 2.1,
+        "homeLateProjectedRuns": 2.4,
+        "postedTotal": 9,
+        "totals": {
+          "fullGame": {
+            "lean": "Over",
+            "edge": 1,
+            "strength": "Clear",
+            "label": "Over 9",
+            "summary": "Over lean with a 1.0-run edge against 9."
+          },
+          "first5": {
+            "lean": "Over",
+            "edge": 0.5,
+            "strength": "Lean",
+            "label": "Over 5",
+            "summary": "Over lean with a 0.5-run edge against 5."
+          },
+          "late": {
+            "lean": "Over",
+            "edge": 0.5,
+            "strength": "Lean",
+            "label": "Over 4",
+            "summary": "Over lean with a 0.5-run edge against 4."
+          },
+          "projectedFullTotalRuns": 10,
+          "projectedFirst5TotalRuns": 5.5,
+          "projectedLateTotalRuns": 4.5,
+          "derivedFirst5TotalLine": 5,
+          "derivedLateTotalLine": 4,
+          "bullpenExhaustionNote": "Royals elevated bridge arms are carrying heavier recent workload stress, which matters more once the game gets past the starter window.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Royals",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Bobby Witt Jr.",
+                "tag": "carry | +10.00 vs Kyle Leahy"
+              },
+              {
+                "name": "Carter Jensen",
+                "tag": "carry | +10.00 vs Kyle Leahy"
+              },
+              {
+                "name": "Vinnie Pasquantino",
+                "tag": "split edge | +3.18 vs Kyle Leahy"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Kyle Isbel",
+                "tag": "split edge | -6.20 vs Kyle Leahy"
+              },
+              {
+                "name": "Isaac Collins",
+                "tag": "split edge | -5.79 vs Kyle Leahy"
+              }
+            ],
+            "underperformNote": "Kyle Isbel and Isaac Collins carry the softer form or split fit into a traffic-risk lane.",
+            "overview": "Royals can lean on Bobby Witt Jr., Carter Jensen, Vinnie Pasquantino to drive early pressure against Kyle Leahy.",
+            "topThirdScore": 63.4,
+            "middleScore": 57,
+            "depthScore": 25.9,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Royals still hold the better bridge-and-finish script once the bullpens take over.",
+              "Royals also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Royals can lean on Bobby Witt Jr., Carter Jensen, Vinnie Pasquantino to drive early pressure against Kyle Leahy.",
+              "Royals top third are live enough to pressure the starter before the bridge innings.",
+              "Bobby Witt Jr. and Carter Jensen and Vinnie Pasquantino are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Cardinals",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Jordan Walker",
+                "tag": "carry | +10.00 vs Noah Cameron"
+              },
+              {
+                "name": "José Fermín",
+                "tag": "carry | +7.01 vs Noah Cameron"
+              },
+              {
+                "name": "Masyn Winn",
+                "tag": "split edge | +3.65 vs Noah Cameron"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Thomas Saggese",
+                "tag": "split edge | -8.00 vs Noah Cameron"
+              },
+              {
+                "name": "Pedro Pagés",
+                "tag": "heater | -8.00 vs Noah Cameron"
+              }
+            ],
+            "underperformNote": "Thomas Saggese and Pedro Pagés carry the softer form or split fit into a traffic-risk lane.",
+            "overview": "Cardinals can lean on Jordan Walker, José Fermín, Masyn Winn to drive early pressure against Noah Cameron.",
+            "topThirdScore": 67,
+            "middleScore": 38.7,
+            "depthScore": 32.1,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Cardinals own the cleaner full-game traffic script at 10.1 projected hits.",
+              "Cardinals have the better starter-window lane with 6 projected first-five hits.",
+              "Cardinals can lean on Jordan Walker, José Fermín, Masyn Winn to drive early pressure against Noah Cameron.",
+              "Cardinals top third are live enough to pressure the starter before the bridge innings.",
+              "Jordan Walker and José Fermín and Masyn Winn are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Cardinals rate cleaner through the starter window, but the bridge and finish script still move later in the game.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Cardinals",
+              "projection": "3.2 R",
+              "note": "Cardinals lean on Jordan Walker, José Fermín to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Royals",
+              "projection": "2.1 R",
+              "note": "Royals keep more late scoring paths alive, with Bobby Witt Jr., Carter Jensen plus the Royals bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Cardinals",
+              "projection": "10.1 H",
+              "note": "Cardinals finish with the stronger aggregate traffic path, anchored by Jordan Walker, José Fermín."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 65.4,
+        "lateInningStabilityIndex": 58.8,
+        "reliefPitchingRisk": 77.6,
+        "coinflipPressure": 50,
+        "pickBullpenScore": 54.3,
+        "oppBullpenScore": 54.1,
+        "pickStarterScore": 61.2,
+        "oppStarterScore": 54.2,
+        "projectedHitEdgeForPick": 1.3,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 3,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [
+          "highRiskPoints"
+        ],
+        "favoredSignalCount": 9,
+        "starterLateGap": 6.6,
+        "edgeHaircutApplied": 0.8,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -120,
+        "marketProbability": 0.5454545454545454,
+        "marketProbabilityLabel": "54.5%",
+        "opponentMarketAmericanOdds": 100,
+        "opponentMarketProbability": 0.5,
+        "opponentMarketProbabilityLabel": "50.0%",
+        "marketFavoriteTeam": "St. Louis Cardinals",
+        "marketFavoriteProbability": 0.5454545454545454,
+        "marketFavoriteProbabilityLabel": "54.5%",
+        "marketFavoriteAmericanOdds": -120,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.045
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "diamondbacks-rockies",
+      "gameTitle": "Diamondbacks @ Rockies",
+      "awayTeam": "Arizona Diamondbacks",
+      "homeTeam": "Colorado Rockies",
+      "predictedTeam": "Arizona Diamondbacks",
+      "predictedSide": "away",
+      "confidence": 65,
+      "volatility": 84,
+      "modelEdge": 6.8,
+      "marketAmericanOdds": -140,
+      "marketProbability": 0.5833333333333334,
+      "marketProbabilityLabel": "58.3%",
+      "sourceLabel": "Moneyline + listed starter data + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context",
+      "inputLabels": [
+        "Starter ERA",
+        "Market price",
+        "Starter record"
+      ],
+      "projection": {
+        "awayProjectedHits": 6.7,
+        "homeProjectedHits": 6.4,
+        "awayHitEfficiencyPct": 19.4,
+        "homeHitEfficiencyPct": 18.6,
+        "awayFirst5ProjectedHits": 4.1,
+        "homeFirst5ProjectedHits": 4,
+        "awayFirst5HitEfficiencyPct": 21.5,
+        "homeFirst5HitEfficiencyPct": 21,
+        "awayLateProjectedHits": 2.6,
+        "homeLateProjectedHits": 2.4,
+        "awayLateHitEfficiencyPct": 16.7,
+        "homeLateHitEfficiencyPct": 15.7,
+        "awayBullpenChainScore": 78.4,
+        "homeBullpenChainScore": 81.5,
+        "edgeTeam": "Diamondbacks",
+        "edgeHits": 0.3,
+        "first5EdgeTeam": "Diamondbacks",
+        "first5EdgeHits": 0.1,
+        "lateEdgeTeam": "Diamondbacks",
+        "lateEdgeHits": 0.2,
+        "bridgeEdgeTeam": "Rockies",
+        "bridgeEdgeScore": 3,
+        "awayLikelyRelievers": [
+          {
+            "name": "Kevin Ginkel",
+            "role": "bridge",
+            "firstRelieverLikelihood": 79.4,
+            "availabilityScore": 74.9,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Paul Sewald",
+            "role": "middle",
+            "firstRelieverLikelihood": 62.7,
+            "availabilityScore": 73.8,
+            "bridgeScore": 62.5,
+            "expectedOuts": 2,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Jaden Hill",
+            "role": "middle",
+            "firstRelieverLikelihood": 65.7,
+            "availabilityScore": 75.8,
+            "bridgeScore": 66.7,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Antonio Senzatela",
+            "role": "bridge",
+            "firstRelieverLikelihood": 64.9,
+            "availabilityScore": 59.9,
+            "bridgeScore": 75.3,
+            "expectedOuts": 9,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          }
+        ],
+        "awayBullpenExhaustion": 17.4,
+        "homeBullpenExhaustion": 33.4,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Craft lefty",
+        "homePitcherType": "Craft righty",
+        "awayStarterHoldConfidence": 61.6,
+        "homeStarterHoldConfidence": 56.4,
+        "awayProjectedRuns": 3.1,
+        "homeProjectedRuns": 3.1,
+        "awayFirst5ProjectedRuns": 1.8,
+        "homeFirst5ProjectedRuns": 1.9,
+        "awayLateProjectedRuns": 1.3,
+        "homeLateProjectedRuns": 1.2,
+        "postedTotal": 11.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -5.3,
+            "strength": "Strong",
+            "label": "Under 11.5",
+            "summary": "Under lean with a 5.3-run edge against 11.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -3.2,
+            "strength": "Strong",
+            "label": "Under 6.9",
+            "summary": "Under lean with a 3.2-run edge against 6.9."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -2.1,
+            "strength": "Strong",
+            "label": "Under 4.6",
+            "summary": "Under lean with a 2.1-run edge against 4.6."
+          },
+          "projectedFullTotalRuns": 6.2,
+          "projectedFirst5TotalRuns": 3.7,
+          "projectedLateTotalRuns": 2.5,
+          "derivedFirst5TotalLine": 6.9,
+          "derivedLateTotalLine": 4.6,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Diamondbacks",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Nolan Arenado",
+                "tag": "carry | +10.00 vs Tomoyuki Sugano"
+              },
+              {
+                "name": "James McCann",
+                "tag": "heater | +2.05 vs Tomoyuki Sugano"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Lourdes Gurriel Jr.",
+                "tag": "cold | -8.00 vs Tomoyuki Sugano"
+              },
+              {
+                "name": "Jose Fernandez",
+                "tag": "split edge | -8.00 vs Tomoyuki Sugano"
+              }
+            ],
+            "underperformNote": "Lourdes Gurriel Jr. and Jose Fernandez carry the softer form or split fit into a craft lane.",
+            "overview": "Diamondbacks can lean on Nolan Arenado, James McCann to drive early pressure against Tomoyuki Sugano.",
+            "topThirdScore": 41,
+            "middleScore": 51.1,
+            "depthScore": 33.7,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Diamondbacks own the cleaner full-game traffic script at 6.7 projected hits.",
+              "Diamondbacks have the better starter-window lane with 4.1 projected first-five hits.",
+              "Diamondbacks still hold the better bridge-and-finish script once the bullpens take over.",
+              "Diamondbacks can lean on Nolan Arenado, James McCann to drive early pressure against Tomoyuki Sugano.",
+              "Nolan Arenado and James McCann are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Rockies",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Ezequiel Tovar",
+                "tag": "carry | +9.77 vs Eduardo Rodriguez"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Willi Castro",
+                "tag": "split edge | -8.00 vs Eduardo Rodriguez"
+              },
+              {
+                "name": "Brenton Doyle",
+                "tag": "split edge | -8.00 vs Eduardo Rodriguez"
+              }
+            ],
+            "underperformNote": "Willi Castro and Brenton Doyle carry the softer form or split fit into a craft lane.",
+            "overview": "Rockies can lean on Ezequiel Tovar to drive early pressure against Eduardo Rodriguez.",
+            "topThirdScore": 24.9,
+            "middleScore": 48.8,
+            "depthScore": 25.7,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Rockies also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Rockies can lean on Ezequiel Tovar to drive early pressure against Eduardo Rodriguez.",
+              "Ezequiel Tovar is the best current carry bat in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Diamondbacks carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Diamondbacks",
+              "projection": "1.8 R",
+              "note": "Diamondbacks lean on Nolan Arenado, James McCann to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Diamondbacks",
+              "projection": "1.3 R",
+              "note": "Diamondbacks keep more late scoring paths alive, with Nolan Arenado, James McCann plus the Rockies bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Diamondbacks",
+              "projection": "6.7 H",
+              "note": "Diamondbacks finish with the stronger aggregate traffic path, anchored by Nolan Arenado, James McCann."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 71.2,
+        "lateInningStabilityIndex": 50.4,
+        "reliefPitchingRisk": 60.5,
+        "coinflipPressure": 45,
+        "pickBullpenScore": 63.3,
+        "oppBullpenScore": 60.8,
+        "pickStarterScore": 74,
+        "oppStarterScore": 58.8,
+        "projectedHitEdgeForPick": 0.3,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 0,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [],
+        "favoredSignalCount": 7,
+        "starterLateGap": 20.8,
+        "edgeHaircutApplied": 0,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -140,
+        "marketProbability": 0.5833333333333334,
+        "marketProbabilityLabel": "58.3%",
+        "opponentMarketAmericanOdds": 120,
+        "opponentMarketProbability": 0.45454545454545453,
+        "opponentMarketProbabilityLabel": "45.5%",
+        "marketFavoriteTeam": "Arizona Diamondbacks",
+        "marketFavoriteProbability": 0.5833333333333334,
+        "marketFavoriteProbabilityLabel": "58.3%",
+        "marketFavoriteAmericanOdds": -140,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.129
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "orioles-nationals",
+      "gameTitle": "Orioles @ Nationals",
+      "awayTeam": "Baltimore Orioles",
+      "homeTeam": "Washington Nationals",
+      "predictedTeam": "Washington Nationals",
+      "predictedSide": "home",
+      "confidence": 52,
+      "volatility": 92,
+      "modelEdge": 12.4,
+      "marketAmericanOdds": -110,
+      "marketProbability": 0.5238095238095238,
+      "marketProbabilityLabel": "52.4%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context",
+      "inputLabels": [
+        "Lineup-vs-pitching fit",
+        "Hit-production baseline",
+        "Projected hit volume"
+      ],
+      "projection": {
+        "awayProjectedHits": 6.7,
+        "homeProjectedHits": 10.9,
+        "awayHitEfficiencyPct": 19.4,
+        "homeHitEfficiencyPct": 31.8,
+        "awayFirst5ProjectedHits": 3.8,
+        "homeFirst5ProjectedHits": 6.7,
+        "awayFirst5HitEfficiencyPct": 19.9,
+        "homeFirst5HitEfficiencyPct": 35.3,
+        "awayLateProjectedHits": 2.7,
+        "homeLateProjectedHits": 4.4,
+        "awayLateHitEfficiencyPct": 17.2,
+        "homeLateHitEfficiencyPct": 28.6,
+        "awayBullpenChainScore": 81.5,
+        "homeBullpenChainScore": 84.7,
+        "edgeTeam": "Nationals",
+        "edgeHits": 4.2,
+        "first5EdgeTeam": "Nationals",
+        "first5EdgeHits": 2.9,
+        "lateEdgeTeam": "Nationals",
+        "lateEdgeHits": 1.7,
+        "bridgeEdgeTeam": "Nationals",
+        "bridgeEdgeScore": 3.2,
+        "awayLikelyRelievers": [
+          {
+            "name": "Keegan Akin",
+            "role": "bridge",
+            "firstRelieverLikelihood": 79.1,
+            "availabilityScore": 74,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Josh Walker",
+            "role": "bridge",
+            "firstRelieverLikelihood": 73.2,
+            "availabilityScore": 57.1,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Zak Kent",
+            "role": "bridge",
+            "firstRelieverLikelihood": 65.2,
+            "availabilityScore": 54.3,
+            "bridgeScore": 79.5,
+            "expectedOuts": 8,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Joey Wiemer",
+            "role": "middle",
+            "firstRelieverLikelihood": 63.8,
+            "availabilityScore": 70.4,
+            "bridgeScore": 66.7,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          }
+        ],
+        "awayBullpenExhaustion": 30.9,
+        "homeBullpenExhaustion": 34.8,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Traffic-risk righty",
+        "homePitcherType": "Volatile bat-misser",
+        "awayStarterHoldConfidence": 51.6,
+        "homeStarterHoldConfidence": 48,
+        "awayProjectedRuns": 2.9,
+        "homeProjectedRuns": 5.9,
+        "awayFirst5ProjectedRuns": 1.6,
+        "homeFirst5ProjectedRuns": 3.5,
+        "awayLateProjectedRuns": 1.3,
+        "homeLateProjectedRuns": 2.4,
+        "postedTotal": 10,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -1.2,
+            "strength": "Strong",
+            "label": "Under 10",
+            "summary": "Under lean with a 1.2-run edge against 10."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -0.7,
+            "strength": "Clear",
+            "label": "Under 5.8",
+            "summary": "Under lean with a 0.7-run edge against 5.8."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.5,
+            "strength": "Lean",
+            "label": "Under 4.2",
+            "summary": "Under lean with a 0.5-run edge against 4.2."
+          },
+          "projectedFullTotalRuns": 8.8,
+          "projectedFirst5TotalRuns": 5.1,
+          "projectedLateTotalRuns": 3.7,
+          "derivedFirst5TotalLine": 5.8,
+          "derivedLateTotalLine": 4.2,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Orioles",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Samuel Basallo",
+                "tag": "carry | +7.19 vs Cade Cavalli"
+              },
+              {
+                "name": "Tyler O'Neill",
+                "tag": "split edge | +4.01 vs Cade Cavalli"
+              },
+              {
+                "name": "Taylor Ward",
+                "tag": "cold | +2.45 vs Cade Cavalli"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Pete Alonso",
+                "tag": "whiff risk | -8.00 vs Cade Cavalli"
+              },
+              {
+                "name": "Jeremiah Jackson",
+                "tag": "cold | -7.65 vs Cade Cavalli"
+              }
+            ],
+            "underperformNote": "Pete Alonso and Jeremiah Jackson carry the softer form or split fit into a volatile bat-misser lane.",
+            "overview": "Orioles can lean on Samuel Basallo, Tyler O'Neill, Taylor Ward to drive early pressure against Cade Cavalli.",
+            "topThirdScore": 35.1,
+            "middleScore": 55.1,
+            "depthScore": 33.3,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Orioles can lean on Samuel Basallo, Tyler O'Neill, Taylor Ward to drive early pressure against Cade Cavalli.",
+              "Samuel Basallo and Tyler O'Neill and Taylor Ward are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Nationals",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "James Wood",
+                "tag": "carry | +10.00 vs Chris Bassitt"
+              },
+              {
+                "name": "Luis García Jr.",
+                "tag": "carry | +10.00 vs Chris Bassitt"
+              },
+              {
+                "name": "Daylen Lile",
+                "tag": "carry | +10.00 vs Chris Bassitt"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Nasim Nuñez",
+                "tag": "split edge | -8.00 vs Chris Bassitt"
+              },
+              {
+                "name": "Jacob Young",
+                "tag": "cold | -8.00 vs Chris Bassitt"
+              }
+            ],
+            "underperformNote": "Nasim Nuñez and Jacob Young carry the softer form or split fit into a traffic-risk lane.",
+            "overview": "Nationals can lean on James Wood, Luis García Jr., Daylen Lile to drive early pressure against Chris Bassitt.",
+            "topThirdScore": 78.5,
+            "middleScore": 63.9,
+            "depthScore": 51.7,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Nationals own the cleaner full-game traffic script at 10.9 projected hits.",
+              "Nationals have the better starter-window lane with 6.7 projected first-five hits.",
+              "Nationals still hold the better bridge-and-finish script once the bullpens take over.",
+              "Nationals also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Nationals can lean on James Wood, Luis García Jr., Daylen Lile to drive early pressure against Chris Bassitt.",
+              "Nationals top third are live enough to pressure the starter before the bridge innings.",
+              "James Wood and Luis García Jr. and Daylen Lile are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Nationals carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Nationals",
+              "projection": "3.5 R",
+              "note": "Nationals lean on James Wood, Luis García Jr. to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Nationals",
+              "projection": "2.4 R",
+              "note": "Nationals keep more late scoring paths alive, with James Wood, Luis García Jr. plus the Nationals bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Nationals",
+              "projection": "10.9 H",
+              "note": "Nationals finish with the stronger aggregate traffic path, anchored by James Wood, Luis García Jr.."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 80.4,
+        "lateInningStabilityIndex": 22.7,
+        "reliefPitchingRisk": 73,
+        "coinflipPressure": 57,
+        "pickBullpenScore": 53.6,
+        "oppBullpenScore": 61.2,
+        "pickStarterScore": 61.2,
+        "oppStarterScore": 55.6,
+        "projectedHitEdgeForPick": 4.2,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 5,
+        "tierOnePassFlag": true,
+        "tierOneRiskFlags": [
+          "highVolatilityEdgePass",
+          "starterLateFragility",
+          "negativeLeashGapBigEdge",
+          "highRiskPoints"
+        ],
+        "favoredSignalCount": 9,
+        "starterLateGap": 57.7,
+        "edgeHaircutApplied": 5.5,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -110,
+        "marketProbability": 0.5238095238095238,
+        "marketProbabilityLabel": "52.4%",
+        "opponentMarketAmericanOdds": -110,
+        "opponentMarketProbability": 0.5238095238095238,
+        "opponentMarketProbabilityLabel": "52.4%",
+        "marketFavoriteTeam": "Baltimore Orioles",
+        "marketFavoriteProbability": 0.5238095238095238,
+        "marketFavoriteProbabilityLabel": "52.4%",
+        "marketFavoriteAmericanOdds": -110,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "phillies-pirates",
+      "gameTitle": "Phillies @ Pirates",
+      "awayTeam": "Philadelphia Phillies",
+      "homeTeam": "Pittsburgh Pirates",
+      "predictedTeam": "Pittsburgh Pirates",
+      "predictedSide": "home",
+      "confidence": 52,
+      "volatility": 92,
+      "modelEdge": 4.2,
+      "marketAmericanOdds": 145,
+      "marketProbability": 0.40816326530612246,
+      "marketProbabilityLabel": "40.8%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context",
+      "inputLabels": [
+        "Hit-production baseline",
+        "Projected hit volume",
+        "Standings profile"
+      ],
+      "projection": {
+        "awayProjectedHits": 6.7,
+        "homeProjectedHits": 9.1,
+        "awayHitEfficiencyPct": 19.2,
+        "homeHitEfficiencyPct": 26.7,
+        "awayFirst5ProjectedHits": 4,
+        "homeFirst5ProjectedHits": 5.3,
+        "awayFirst5HitEfficiencyPct": 21.2,
+        "homeFirst5HitEfficiencyPct": 27.7,
+        "awayLateProjectedHits": 2.7,
+        "homeLateProjectedHits": 3.7,
+        "awayLateHitEfficiencyPct": 17.7,
+        "homeLateHitEfficiencyPct": 24,
+        "awayBullpenChainScore": 70.2,
+        "homeBullpenChainScore": 78.7,
+        "edgeTeam": "Pirates",
+        "edgeHits": 2.4,
+        "first5EdgeTeam": "Pirates",
+        "first5EdgeHits": 1.3,
+        "lateEdgeTeam": "Pirates",
+        "lateEdgeHits": 1,
+        "bridgeEdgeTeam": "Pirates",
+        "bridgeEdgeScore": 8.5,
+        "awayLikelyRelievers": [
+          {
+            "name": "Tanner Banks",
+            "role": "middle",
+            "firstRelieverLikelihood": 72.4,
+            "availabilityScore": 77.4,
+            "bridgeScore": 77.9,
+            "expectedOuts": 2,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Brad Keller",
+            "role": "middle",
+            "firstRelieverLikelihood": 61.5,
+            "availabilityScore": 48,
+            "bridgeScore": 76.7,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Evan Sisk",
+            "role": "bridge",
+            "firstRelieverLikelihood": 73.5,
+            "availabilityScore": 46.4,
+            "bridgeScore": 95,
+            "expectedOuts": 3.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Mason Montgomery",
+            "role": "bridge",
+            "firstRelieverLikelihood": 73.2,
+            "availabilityScore": 52.9,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "awayBullpenExhaustion": 24.6,
+        "homeBullpenExhaustion": 43.7,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "elevated",
+        "awayPitcherType": "Volatile bat-misser",
+        "homePitcherType": "Traffic-risk righty",
+        "awayStarterHoldConfidence": 59.6,
+        "homeStarterHoldConfidence": 47.7,
+        "awayProjectedRuns": 3,
+        "homeProjectedRuns": 4.4,
+        "awayFirst5ProjectedRuns": 1.7,
+        "homeFirst5ProjectedRuns": 2.5,
+        "awayLateProjectedRuns": 1.3,
+        "homeLateProjectedRuns": 1.9,
+        "postedTotal": 8.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -1.1,
+            "strength": "Clear",
+            "label": "Under 8.5",
+            "summary": "Under lean with a 1.1-run edge against 8.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -0.6,
+            "strength": "Lean",
+            "label": "Under 4.8",
+            "summary": "Under lean with a 0.6-run edge against 4.8."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.5,
+            "strength": "Lean",
+            "label": "Under 3.7",
+            "summary": "Under lean with a 0.5-run edge against 3.7."
+          },
+          "projectedFullTotalRuns": 7.4,
+          "projectedFirst5TotalRuns": 4.2,
+          "projectedLateTotalRuns": 3.2,
+          "derivedFirst5TotalLine": 4.8,
+          "derivedLateTotalLine": 3.7,
+          "bullpenExhaustionNote": "Pirates elevated bridge arms are carrying heavier recent workload stress, which matters more once the game gets past the starter window.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Phillies",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Kyle Schwarber",
+                "tag": "carry | +10.00 vs Bubba Chandler"
+              },
+              {
+                "name": "Alec Bohm",
+                "tag": "carry | +10.00 vs Bubba Chandler"
+              },
+              {
+                "name": "Bryce Harper",
+                "tag": "carry | +5.72 vs Bubba Chandler"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Adolis García",
+                "tag": "cold | -8.00 vs Bubba Chandler"
+              },
+              {
+                "name": "J.T. Realmuto",
+                "tag": "cold | -8.00 vs Bubba Chandler"
+              }
+            ],
+            "underperformNote": "Adolis García and J.T. Realmuto carry the softer form or split fit into a traffic-risk lane.",
+            "overview": "Phillies can lean on Kyle Schwarber, Alec Bohm, Bryce Harper to drive early pressure against Bubba Chandler.",
+            "topThirdScore": 67.4,
+            "middleScore": 55.3,
+            "depthScore": 42.4,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Phillies can lean on Kyle Schwarber, Alec Bohm, Bryce Harper to drive early pressure against Bubba Chandler.",
+              "Phillies top third are live enough to pressure the starter before the bridge innings.",
+              "Kyle Schwarber and Alec Bohm and Bryce Harper are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Pirates",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Jared Triolo",
+                "tag": "carry | +10.00 vs Cristopher Sánchez"
+              },
+              {
+                "name": "Oneil Cruz",
+                "tag": "carry | +8.86 vs Cristopher Sánchez"
+              },
+              {
+                "name": "Marcell Ozuna",
+                "tag": "carry | +8.40 vs Cristopher Sánchez"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Henry Davis",
+                "tag": "split edge | -8.00 vs Cristopher Sánchez"
+              },
+              {
+                "name": "Brandon Lowe",
+                "tag": "cold | -7.01 vs Cristopher Sánchez"
+              }
+            ],
+            "underperformNote": "Henry Davis and Brandon Lowe carry the softer form or split fit into a volatile bat-misser lane.",
+            "overview": "Pirates can lean on Jared Triolo, Oneil Cruz, Marcell Ozuna to drive early pressure against Cristopher Sánchez.",
+            "topThirdScore": 66.8,
+            "middleScore": 61.9,
+            "depthScore": 43.3,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Pirates own the cleaner full-game traffic script at 9.1 projected hits.",
+              "Pirates have the better starter-window lane with 5.3 projected first-five hits.",
+              "Pirates still hold the better bridge-and-finish script once the bullpens take over.",
+              "Pirates also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Pirates can lean on Jared Triolo, Oneil Cruz, Marcell Ozuna to drive early pressure against Cristopher Sánchez.",
+              "Pirates top third are live enough to pressure the starter before the bridge innings.",
+              "Jared Triolo and Oneil Cruz and Marcell Ozuna are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Pirates carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Pirates",
+              "projection": "2.5 R",
+              "note": "Pirates lean on Jared Triolo, Oneil Cruz to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Pirates",
+              "projection": "1.9 R",
+              "note": "Pirates keep more late scoring paths alive, with Jared Triolo, Oneil Cruz plus the Pirates bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Pirates",
+              "projection": "9.1 H",
+              "note": "Pirates finish with the stronger aggregate traffic path, anchored by Jared Triolo, Oneil Cruz."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 35.7,
+        "lateInningStabilityIndex": 22.2,
+        "reliefPitchingRisk": 60.1,
+        "coinflipPressure": 54,
+        "pickBullpenScore": 60.2,
+        "oppBullpenScore": 64.4,
+        "pickStarterScore": 55.2,
+        "oppStarterScore": 76.6,
+        "projectedHitEdgeForPick": 2.4,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 3,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [
+          "highRiskPoints"
+        ],
+        "favoredSignalCount": 6,
+        "starterLateGap": 13.5,
+        "edgeHaircutApplied": 0.8,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 145,
+        "marketProbability": 0.40816326530612246,
+        "marketProbabilityLabel": "40.8%",
+        "opponentMarketAmericanOdds": -170,
+        "opponentMarketProbability": 0.6296296296296297,
+        "opponentMarketProbabilityLabel": "63.0%",
+        "marketFavoriteTeam": "Philadelphia Phillies",
+        "marketFavoriteProbability": 0.6296296296296297,
+        "marketFavoriteProbabilityLabel": "63.0%",
+        "marketFavoriteAmericanOdds": -170,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.221
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "marlins-rays",
+      "gameTitle": "Marlins @ Rays",
+      "awayTeam": "Miami Marlins",
+      "homeTeam": "Tampa Bay Rays",
+      "predictedTeam": "Tampa Bay Rays",
+      "predictedSide": "home",
+      "confidence": 71,
+      "volatility": 65,
+      "modelEdge": 14.6,
+      "marketAmericanOdds": -140,
+      "marketProbability": 0.5833333333333334,
+      "marketProbabilityLabel": "58.3%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context",
+      "inputLabels": [
+        "Standings profile",
+        "Hit-production baseline",
+        "Starter ERA"
+      ],
+      "projection": {
+        "awayProjectedHits": 5.7,
+        "homeProjectedHits": 9.1,
+        "awayHitEfficiencyPct": 16.5,
+        "homeHitEfficiencyPct": 26.5,
+        "awayFirst5ProjectedHits": 3.6,
+        "homeFirst5ProjectedHits": 5.7,
+        "awayFirst5HitEfficiencyPct": 18.9,
+        "homeFirst5HitEfficiencyPct": 29.9,
+        "awayLateProjectedHits": 2.4,
+        "homeLateProjectedHits": 3.1,
+        "awayLateHitEfficiencyPct": 15.3,
+        "homeLateHitEfficiencyPct": 20.4,
+        "awayBullpenChainScore": 91.7,
+        "homeBullpenChainScore": 77.1,
+        "edgeTeam": "Rays",
+        "edgeHits": 3.4,
+        "first5EdgeTeam": "Rays",
+        "first5EdgeHits": 2.1,
+        "lateEdgeTeam": "Rays",
+        "lateEdgeHits": 0.7,
+        "bridgeEdgeTeam": "Marlins",
+        "bridgeEdgeScore": 14.6,
+        "awayLikelyRelievers": [
+          {
+            "name": "Tyler Phillips",
+            "role": "bridge",
+            "firstRelieverLikelihood": 80.4,
+            "availabilityScore": 73.3,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Calvin Faucher",
+            "role": "bridge",
+            "firstRelieverLikelihood": 76.7,
+            "availabilityScore": 67.2,
+            "bridgeScore": 92.1,
+            "expectedOuts": 5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Hunter Bigge",
+            "role": "bridge",
+            "firstRelieverLikelihood": 79.1,
+            "availabilityScore": 74,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Garrett Cleavinger",
+            "role": "middle",
+            "firstRelieverLikelihood": 63.2,
+            "availabilityScore": 81.7,
+            "bridgeScore": 58.3,
+            "expectedOuts": 1,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          }
+        ],
+        "awayBullpenExhaustion": 25.9,
+        "homeBullpenExhaustion": 15.2,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Balanced righty",
+        "homePitcherType": "Craft righty",
+        "awayStarterHoldConfidence": 64.5,
+        "homeStarterHoldConfidence": 61.3,
+        "awayProjectedRuns": 2.6,
+        "homeProjectedRuns": 4.3,
+        "awayFirst5ProjectedRuns": 1.5,
+        "homeFirst5ProjectedRuns": 2.7,
+        "awayLateProjectedRuns": 1.1,
+        "homeLateProjectedRuns": 1.6,
+        "postedTotal": 7.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -0.6,
+            "strength": "Lean",
+            "label": "Under 7.5",
+            "summary": "Under lean with a 0.6-run edge against 7.5."
+          },
+          "first5": {
+            "lean": "Pass",
+            "edge": -0.4,
+            "strength": "Thin",
+            "label": "Hold 4.6",
+            "summary": "Model projection 4.2 is essentially on the posted 4.6."
+          },
+          "late": {
+            "lean": "Pass",
+            "edge": -0.2,
+            "strength": "Thin",
+            "label": "Hold 2.9",
+            "summary": "Model projection 2.7 is essentially on the posted 2.9."
+          },
+          "projectedFullTotalRuns": 6.9,
+          "projectedFirst5TotalRuns": 4.2,
+          "projectedLateTotalRuns": 2.7,
+          "derivedFirst5TotalLine": 4.6,
+          "derivedLateTotalLine": 2.9,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Marlins",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Jakob Marsee",
+                "tag": "carry | +9.57 vs Nick Martinez"
+              },
+              {
+                "name": "Owen Caissie",
+                "tag": "carry | +6.67 vs Nick Martinez"
+              },
+              {
+                "name": "Connor Norby",
+                "tag": "heater | +4.91 vs Nick Martinez"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Javier Sanoja",
+                "tag": "cold | -8.00 vs Nick Martinez"
+              },
+              {
+                "name": "Otto Lopez",
+                "tag": "traffic | -6.92 vs Nick Martinez"
+              }
+            ],
+            "underperformNote": "Javier Sanoja and Otto Lopez carry the softer form or split fit into a craft lane.",
+            "overview": "Marlins can lean on Jakob Marsee, Owen Caissie, Connor Norby to drive early pressure against Nick Martinez.",
+            "topThirdScore": 34.8,
+            "middleScore": 82.3,
+            "depthScore": 50.7,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Marlins also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Marlins can lean on Jakob Marsee, Owen Caissie, Connor Norby to drive early pressure against Nick Martinez.",
+              "Jakob Marsee and Owen Caissie and Connor Norby are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Rays",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Jonathan Aranda",
+                "tag": "carry | +10.00 vs Sandy Alcantara"
+              },
+              {
+                "name": "Richie Palacios",
+                "tag": "carry | +10.00 vs Sandy Alcantara"
+              },
+              {
+                "name": "Cedric Mullins",
+                "tag": "carry | +10.00 vs Sandy Alcantara"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Yandy Díaz",
+                "tag": "traffic | -6.48 vs Sandy Alcantara"
+              },
+              {
+                "name": "Junior Caminero",
+                "tag": "cold | -3.99 vs Sandy Alcantara"
+              }
+            ],
+            "underperformNote": "Yandy Díaz and Junior Caminero carry the softer form or split fit into a balanced lane.",
+            "overview": "Rays can lean on Jonathan Aranda, Richie Palacios, Cedric Mullins to drive early pressure against Sandy Alcantara.",
+            "topThirdScore": 66.2,
+            "middleScore": 68.9,
+            "depthScore": 64.6,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Rays own the cleaner full-game traffic script at 9.1 projected hits.",
+              "Rays have the better starter-window lane with 5.7 projected first-five hits.",
+              "Rays still hold the better bridge-and-finish script once the bullpens take over.",
+              "Rays can lean on Jonathan Aranda, Richie Palacios, Cedric Mullins to drive early pressure against Sandy Alcantara.",
+              "Rays top third are live enough to pressure the starter before the bridge innings.",
+              "Jonathan Aranda and Richie Palacios and Cedric Mullins are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Rays carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Rays",
+              "projection": "2.7 R",
+              "note": "Rays lean on Jonathan Aranda, Richie Palacios to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Rays",
+              "projection": "1.6 R",
+              "note": "Rays keep more late scoring paths alive, with Jonathan Aranda, Richie Palacios plus the Marlins bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Rays",
+              "projection": "9.1 H",
+              "note": "Rays finish with the stronger aggregate traffic path, anchored by Jonathan Aranda, Richie Palacios."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 79.5,
+        "lateInningStabilityIndex": 58.1,
+        "reliefPitchingRisk": 72.4,
+        "coinflipPressure": 26,
+        "pickBullpenScore": 60.8,
+        "oppBullpenScore": 65.3,
+        "pickStarterScore": 73.6,
+        "oppStarterScore": 64.7,
+        "projectedHitEdgeForPick": 3.4,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 2,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [],
+        "favoredSignalCount": 8,
+        "starterLateGap": 21.4,
+        "edgeHaircutApplied": 0,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -140,
+        "marketProbability": 0.5833333333333334,
+        "marketProbabilityLabel": "58.3%",
+        "opponentMarketAmericanOdds": 120,
+        "opponentMarketProbability": 0.45454545454545453,
+        "opponentMarketProbabilityLabel": "45.5%",
+        "marketFavoriteTeam": "Tampa Bay Rays",
+        "marketFavoriteProbability": 0.5833333333333334,
+        "marketFavoriteProbabilityLabel": "58.3%",
+        "marketFavoriteAmericanOdds": -140,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.129
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "reds-guardians",
+      "gameTitle": "Reds @ Guardians",
+      "awayTeam": "Cincinnati Reds",
+      "homeTeam": "Cleveland Guardians",
+      "predictedTeam": "Cincinnati Reds",
+      "predictedSide": "away",
+      "confidence": 52,
+      "volatility": 92,
+      "modelEdge": 2.8,
+      "marketAmericanOdds": 135,
+      "marketProbability": 0.425531914893617,
+      "marketProbabilityLabel": "42.6%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context",
+      "inputLabels": [
+        "Hit-production baseline",
+        "Lineup-vs-pitching fit",
+        "Projected hit volume"
+      ],
+      "projection": {
+        "awayProjectedHits": 10.3,
+        "homeProjectedHits": 6.5,
+        "awayHitEfficiencyPct": 29.8,
+        "homeHitEfficiencyPct": 19,
+        "awayFirst5ProjectedHits": 5.8,
+        "homeFirst5ProjectedHits": 3.9,
+        "awayFirst5HitEfficiencyPct": 30.3,
+        "homeFirst5HitEfficiencyPct": 20.9,
+        "awayLateProjectedHits": 4.2,
+        "homeLateProjectedHits": 2.9,
+        "awayLateHitEfficiencyPct": 27.4,
+        "homeLateHitEfficiencyPct": 18.9,
+        "awayBullpenChainScore": 80.7,
+        "homeBullpenChainScore": 60.5,
+        "edgeTeam": "Reds",
+        "edgeHits": 3.8,
+        "first5EdgeTeam": "Reds",
+        "first5EdgeHits": 1.9,
+        "lateEdgeTeam": "Reds",
+        "lateEdgeHits": 1.3,
+        "bridgeEdgeTeam": "Reds",
+        "bridgeEdgeScore": 20.2,
+        "awayLikelyRelievers": [
+          {
+            "name": "Sam Moll",
+            "role": "bridge",
+            "firstRelieverLikelihood": 79.5,
+            "availabilityScore": 75.3,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Pierce Johnson",
+            "role": "bridge",
+            "firstRelieverLikelihood": 70.6,
+            "availabilityScore": 50,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Matt Festa",
+            "role": "middle",
+            "firstRelieverLikelihood": 68.6,
+            "availabilityScore": 43.9,
+            "bridgeScore": 87.7,
+            "expectedOuts": 1,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          },
+          {
+            "name": "Erik Sabrowski",
+            "role": "middle",
+            "firstRelieverLikelihood": 64.1,
+            "availabilityScore": 71.3,
+            "bridgeScore": 66.7,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          }
+        ],
+        "awayBullpenExhaustion": 32.7,
+        "homeBullpenExhaustion": 35.8,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Traffic-risk righty",
+        "homePitcherType": "Balanced lefty",
+        "awayStarterHoldConfidence": 49.4,
+        "homeStarterHoldConfidence": 54.9,
+        "awayProjectedRuns": 5.2,
+        "homeProjectedRuns": 3,
+        "awayFirst5ProjectedRuns": 2.9,
+        "homeFirst5ProjectedRuns": 1.7,
+        "awayLateProjectedRuns": 2.3,
+        "homeLateProjectedRuns": 1.3,
+        "postedTotal": 8.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Pass",
+            "edge": -0.3,
+            "strength": "Thin",
+            "label": "Hold 8.5",
+            "summary": "Model projection 8.2 is essentially on the posted 8.5."
+          },
+          "first5": {
+            "lean": "Pass",
+            "edge": -0.2,
+            "strength": "Thin",
+            "label": "Hold 4.8",
+            "summary": "Model projection 4.6 is essentially on the posted 4.8."
+          },
+          "late": {
+            "lean": "Pass",
+            "edge": -0.1,
+            "strength": "Thin",
+            "label": "Hold 3.7",
+            "summary": "Model projection 3.6 is essentially on the posted 3.7."
+          },
+          "projectedFullTotalRuns": 8.2,
+          "projectedFirst5TotalRuns": 4.6,
+          "projectedLateTotalRuns": 3.6,
+          "derivedFirst5TotalLine": 4.8,
+          "derivedLateTotalLine": 3.7,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Reds",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Elly De La Cruz",
+                "tag": "carry | +10.00 vs Joey Cantillo"
+              },
+              {
+                "name": "Spencer Steer",
+                "tag": "carry | +10.00 vs Joey Cantillo"
+              },
+              {
+                "name": "Matt McLain",
+                "tag": "carry | +10.00 vs Joey Cantillo"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Blake Dunn",
+                "tag": "split edge | -8.00 vs Joey Cantillo"
+              },
+              {
+                "name": "Jose Trevino",
+                "tag": "split edge | -6.48 vs Joey Cantillo"
+              }
+            ],
+            "underperformNote": "Blake Dunn and Jose Trevino carry the softer form or split fit into a balanced lane.",
+            "overview": "Reds can lean on Elly De La Cruz, Spencer Steer, Matt McLain to drive early pressure against Joey Cantillo.",
+            "topThirdScore": 74,
+            "middleScore": 90.8,
+            "depthScore": 46.4,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Reds own the cleaner full-game traffic script at 10.3 projected hits.",
+              "Reds have the better starter-window lane with 5.8 projected first-five hits.",
+              "Reds still hold the better bridge-and-finish script once the bullpens take over.",
+              "Reds also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Reds can lean on Elly De La Cruz, Spencer Steer, Matt McLain to drive early pressure against Joey Cantillo.",
+              "Reds top third are live enough to pressure the starter before the bridge innings.",
+              "Elly De La Cruz and Spencer Steer and Matt McLain are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Guardians",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Kyle Manzardo",
+                "tag": "carry | +7.73 vs Chris Paddack"
+              },
+              {
+                "name": "Angel Martínez",
+                "tag": "heater | +4.68 vs Chris Paddack"
+              },
+              {
+                "name": "Travis Bazzana",
+                "tag": "split edge | +3.27 vs Chris Paddack"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Steven Kwan",
+                "tag": "split edge | -8.00 vs Chris Paddack"
+              },
+              {
+                "name": "Austin Hedges",
+                "tag": "cold | -8.00 vs Chris Paddack"
+              }
+            ],
+            "underperformNote": "Steven Kwan and Austin Hedges carry the softer form or split fit into a traffic-risk lane.",
+            "overview": "Guardians can lean on Kyle Manzardo, Angel Martínez, Travis Bazzana to drive early pressure against Chris Paddack.",
+            "topThirdScore": 31.1,
+            "middleScore": 54.8,
+            "depthScore": 45.7,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Guardians can lean on Kyle Manzardo, Angel Martínez, Travis Bazzana to drive early pressure against Chris Paddack.",
+              "Kyle Manzardo and Angel Martínez and Travis Bazzana are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Reds carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Reds",
+              "projection": "2.9 R",
+              "note": "Reds lean on Elly De La Cruz, Spencer Steer to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Reds",
+              "projection": "2.3 R",
+              "note": "Reds keep more late scoring paths alive, with Elly De La Cruz, Spencer Steer plus the Reds bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Reds",
+              "projection": "10.3 H",
+              "note": "Reds finish with the stronger aggregate traffic path, anchored by Elly De La Cruz, Spencer Steer."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 34.4,
+        "lateInningStabilityIndex": 2,
+        "reliefPitchingRisk": 67.9,
+        "coinflipPressure": 48,
+        "pickBullpenScore": 52.8,
+        "oppBullpenScore": 64,
+        "pickStarterScore": 38.6,
+        "oppStarterScore": 70.3,
+        "projectedHitEdgeForPick": 3.8,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 3,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [
+          "highRiskPoints"
+        ],
+        "favoredSignalCount": 5,
+        "starterLateGap": 32.4,
+        "edgeHaircutApplied": 0.8,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 135,
+        "marketProbability": 0.425531914893617,
+        "marketProbabilityLabel": "42.6%",
+        "opponentMarketAmericanOdds": -160,
+        "opponentMarketProbability": 0.6153846153846154,
+        "opponentMarketProbabilityLabel": "61.5%",
+        "marketFavoriteTeam": "Cleveland Guardians",
+        "marketFavoriteProbability": 0.6153846153846154,
+        "marketFavoriteProbabilityLabel": "61.5%",
+        "marketFavoriteAmericanOdds": -160,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.19
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "rangers-astros",
+      "gameTitle": "Rangers @ Astros",
+      "awayTeam": "Texas Rangers",
+      "homeTeam": "Houston Astros",
+      "predictedTeam": "Texas Rangers",
+      "predictedSide": "away",
+      "confidence": 62,
+      "volatility": 92,
+      "modelEdge": 8.4,
+      "marketAmericanOdds": -150,
+      "marketProbability": 0.6,
+      "marketProbabilityLabel": "60.0%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context",
+      "inputLabels": [
+        "Market price",
+        "Starter record",
+        "Bullpen follow-through"
+      ],
+      "projection": {
+        "awayProjectedHits": 7.2,
+        "homeProjectedHits": 6.3,
+        "awayHitEfficiencyPct": 20.6,
+        "homeHitEfficiencyPct": 18.5,
+        "awayFirst5ProjectedHits": 4.1,
+        "homeFirst5ProjectedHits": 3.8,
+        "awayFirst5HitEfficiencyPct": 21.5,
+        "homeFirst5HitEfficiencyPct": 19.9,
+        "awayLateProjectedHits": 2.9,
+        "homeLateProjectedHits": 2.7,
+        "awayLateHitEfficiencyPct": 18.9,
+        "homeLateHitEfficiencyPct": 17.4,
+        "awayBullpenChainScore": 62,
+        "homeBullpenChainScore": 85.6,
+        "edgeTeam": "Rangers",
+        "edgeHits": 0.9,
+        "first5EdgeTeam": "Rangers",
+        "first5EdgeHits": 0.3,
+        "lateEdgeTeam": "Rangers",
+        "lateEdgeHits": 0.2,
+        "bridgeEdgeTeam": "Astros",
+        "bridgeEdgeScore": 23.6,
+        "awayLikelyRelievers": [
+          {
+            "name": "Cole Winn",
+            "role": "bridge",
+            "firstRelieverLikelihood": 66.9,
+            "availabilityScore": 27.6,
+            "bridgeScore": 95,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          },
+          {
+            "name": "Jalen Beeks",
+            "role": "middle",
+            "firstRelieverLikelihood": 60.5,
+            "availabilityScore": 74,
+            "bridgeScore": 58.3,
+            "expectedOuts": 1,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Steven Okert",
+            "role": "bridge",
+            "firstRelieverLikelihood": 79.8,
+            "availabilityScore": 71.5,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Enyel De Los Santos",
+            "role": "middle",
+            "firstRelieverLikelihood": 67.5,
+            "availabilityScore": 74.2,
+            "bridgeScore": 70.9,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          }
+        ],
+        "awayBullpenExhaustion": 40,
+        "homeBullpenExhaustion": 22.3,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Power righty",
+        "homePitcherType": "Contact suppressor",
+        "awayStarterHoldConfidence": 62.7,
+        "homeStarterHoldConfidence": 92,
+        "awayProjectedRuns": 3.2,
+        "homeProjectedRuns": 3.1,
+        "awayFirst5ProjectedRuns": 1.8,
+        "homeFirst5ProjectedRuns": 1.7,
+        "awayLateProjectedRuns": 1.4,
+        "homeLateProjectedRuns": 1.4,
+        "postedTotal": 8,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -1.7,
+            "strength": "Strong",
+            "label": "Under 8",
+            "summary": "Under lean with a 1.7-run edge against 8."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -0.9,
+            "strength": "Clear",
+            "label": "Under 4.4",
+            "summary": "Under lean with a 0.9-run edge against 4.4."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.8,
+            "strength": "Clear",
+            "label": "Under 3.6",
+            "summary": "Under lean with a 0.8-run edge against 3.6."
+          },
+          "projectedFullTotalRuns": 6.3,
+          "projectedFirst5TotalRuns": 3.5,
+          "projectedLateTotalRuns": 2.8,
+          "derivedFirst5TotalLine": 4.4,
+          "derivedLateTotalLine": 3.6,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Rangers",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Jake Burger",
+                "tag": "carry | +10.00 vs Kai-Wei Teng"
+              },
+              {
+                "name": "Josh Jung",
+                "tag": "heater | +4.69 vs Kai-Wei Teng"
+              },
+              {
+                "name": "Joc Pederson",
+                "tag": "heater | +4.31 vs Kai-Wei Teng"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Danny Jansen",
+                "tag": "cold | -8.00 vs Kai-Wei Teng"
+              },
+              {
+                "name": "Brandon Nimmo",
+                "tag": "split edge | -5.73 vs Kai-Wei Teng"
+              }
+            ],
+            "underperformNote": "Danny Jansen and Brandon Nimmo carry the softer form or split fit into a contact suppressor lane.",
+            "overview": "Rangers can lean on Jake Burger, Josh Jung, Joc Pederson to drive early pressure against Kai-Wei Teng.",
+            "topThirdScore": 56.8,
+            "middleScore": 35.9,
+            "depthScore": 50.8,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Rangers own the cleaner full-game traffic script at 7.2 projected hits.",
+              "Rangers have the better starter-window lane with 4.1 projected first-five hits.",
+              "Rangers still hold the better bridge-and-finish script once the bullpens take over.",
+              "Rangers can lean on Jake Burger, Josh Jung, Joc Pederson to drive early pressure against Kai-Wei Teng.",
+              "Jake Burger and Josh Jung and Joc Pederson are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Astros",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Braden Shewmake",
+                "tag": "carry | +9.43 vs Jacob deGrom"
+              },
+              {
+                "name": "Yordan Alvarez",
+                "tag": "carry | +8.67 vs Jacob deGrom"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Brice Matthews",
+                "tag": "whiff risk | -8.00 vs Jacob deGrom"
+              },
+              {
+                "name": "Zach Dezenzo",
+                "tag": "whiff risk | -8.00 vs Jacob deGrom"
+              }
+            ],
+            "underperformNote": "Brice Matthews and Zach Dezenzo carry the softer form or split fit into a power lane.",
+            "overview": "Astros can lean on Braden Shewmake, Yordan Alvarez to drive early pressure against Jacob deGrom.",
+            "topThirdScore": 52.8,
+            "middleScore": 42.2,
+            "depthScore": 23.2,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Astros also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Astros can lean on Braden Shewmake, Yordan Alvarez to drive early pressure against Jacob deGrom.",
+              "Braden Shewmake and Yordan Alvarez are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Rangers carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Rangers",
+              "projection": "1.8 R",
+              "note": "Rangers lean on Jake Burger, Josh Jung to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Rangers",
+              "projection": "1.4 R",
+              "note": "Rangers keep more late scoring paths alive, with Jake Burger, Josh Jung plus the Astros bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Rangers",
+              "projection": "7.2 H",
+              "note": "Rangers finish with the stronger aggregate traffic path, anchored by Jake Burger, Josh Jung."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 62.6,
+        "lateInningStabilityIndex": 90.5,
+        "reliefPitchingRisk": 87.2,
+        "coinflipPressure": 41,
+        "pickBullpenScore": 65.6,
+        "oppBullpenScore": 44.7,
+        "pickStarterScore": 73.1,
+        "oppStarterScore": 57.9,
+        "projectedHitEdgeForPick": 0.9,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 2,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [],
+        "favoredSignalCount": 9,
+        "starterLateGap": -27.9,
+        "edgeHaircutApplied": 0,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -150,
+        "marketProbability": 0.6,
+        "marketProbabilityLabel": "60.0%",
+        "opponentMarketAmericanOdds": 125,
+        "opponentMarketProbability": 0.4444444444444444,
+        "opponentMarketProbabilityLabel": "44.4%",
+        "marketFavoriteTeam": "Texas Rangers",
+        "marketFavoriteProbability": 0.6,
+        "marketFavoriteProbabilityLabel": "60.0%",
+        "marketFavoriteAmericanOdds": -150,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.156
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "cubs-white-sox",
+      "gameTitle": "Cubs @ White Sox",
+      "awayTeam": "Chicago Cubs",
+      "homeTeam": "Chicago White Sox",
+      "predictedTeam": "Chicago White Sox",
+      "predictedSide": "home",
+      "confidence": 52,
+      "volatility": 92,
+      "modelEdge": 5.3,
+      "marketAmericanOdds": -115,
+      "marketProbability": 0.5348837209302325,
+      "marketProbabilityLabel": "53.5%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Hit-production baseline",
+        "Starter ERA",
+        "Projected hit volume"
+      ],
+      "projection": {
+        "awayProjectedHits": 5.9,
+        "homeProjectedHits": 7.9,
+        "awayHitEfficiencyPct": 17,
+        "homeHitEfficiencyPct": 23.2,
+        "awayFirst5ProjectedHits": 3.4,
+        "homeFirst5ProjectedHits": 4.9,
+        "awayFirst5HitEfficiencyPct": 17.8,
+        "homeFirst5HitEfficiencyPct": 26,
+        "awayLateProjectedHits": 2.6,
+        "homeLateProjectedHits": 2.9,
+        "awayLateHitEfficiencyPct": 16.6,
+        "homeLateHitEfficiencyPct": 19,
+        "awayBullpenChainScore": 84,
+        "homeBullpenChainScore": 73,
+        "edgeTeam": "White Sox",
+        "edgeHits": 2,
+        "first5EdgeTeam": "White Sox",
+        "first5EdgeHits": 1.5,
+        "lateEdgeTeam": "White Sox",
+        "lateEdgeHits": 0.3,
+        "bridgeEdgeTeam": "Cubs",
+        "bridgeEdgeScore": 11,
+        "awayLikelyRelievers": [
+          {
+            "name": "Phil Maton",
+            "role": "bridge",
+            "firstRelieverLikelihood": 74.2,
+            "availabilityScore": 48.5,
+            "bridgeScore": 95,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Hoby Milner",
+            "role": "bridge",
+            "firstRelieverLikelihood": 73.7,
+            "availabilityScore": 65.2,
+            "bridgeScore": 87.9,
+            "expectedOuts": 6,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Tyler Davis",
+            "role": "bridge",
+            "firstRelieverLikelihood": 72.9,
+            "availabilityScore": 44.8,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Trevor Richards",
+            "role": "middle",
+            "firstRelieverLikelihood": 66.2,
+            "availabilityScore": 59.6,
+            "bridgeScore": 77.9,
+            "expectedOuts": 2,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "awayBullpenExhaustion": 34.3,
+        "homeBullpenExhaustion": 41.1,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Contact suppressor",
+        "homePitcherType": "Contact suppressor",
+        "awayStarterHoldConfidence": 63.6,
+        "homeStarterHoldConfidence": 67.4,
+        "awayProjectedRuns": 2.5,
+        "homeProjectedRuns": 3.7,
+        "awayFirst5ProjectedRuns": 1.3,
+        "homeFirst5ProjectedRuns": 2.2,
+        "awayLateProjectedRuns": 1.2,
+        "homeLateProjectedRuns": 1.5,
+        "postedTotal": 8.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -2.3,
+            "strength": "Strong",
+            "label": "Under 8.5",
+            "summary": "Under lean with a 2.3-run edge against 8.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.3,
+            "strength": "Strong",
+            "label": "Under 4.8",
+            "summary": "Under lean with a 1.3-run edge against 4.8."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -1,
+            "strength": "Clear",
+            "label": "Under 3.7",
+            "summary": "Under lean with a 1.0-run edge against 3.7."
+          },
+          "projectedFullTotalRuns": 6.2,
+          "projectedFirst5TotalRuns": 3.5,
+          "projectedLateTotalRuns": 2.7,
+          "derivedFirst5TotalLine": 4.8,
+          "derivedLateTotalLine": 3.7,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Cubs",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Ian Happ",
+                "tag": "thin | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Cubs also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted away lineup yet.",
+              "Ian Happ is the best current carry bat in this lineup."
+            ]
+          },
+          {
+            "teamName": "White Sox",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Miguel Vargas",
+                "tag": "carry | +10.00 vs Jameson Taillon"
+              },
+              {
+                "name": "Colson Montgomery",
+                "tag": "carry | +10.00 vs Jameson Taillon"
+              },
+              {
+                "name": "Sam Antonacci",
+                "tag": "split edge | +3.44 vs Jameson Taillon"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Andrew Benintendi",
+                "tag": "split edge | -8.00 vs Jameson Taillon"
+              },
+              {
+                "name": "Munetaka Murakami",
+                "tag": "split edge | -6.68 vs Jameson Taillon"
+              }
+            ],
+            "underperformNote": "Andrew Benintendi and Munetaka Murakami carry the softer form or split fit into a contact suppressor lane.",
+            "overview": "White Sox can lean on Miguel Vargas, Colson Montgomery, Sam Antonacci to drive early pressure against Jameson Taillon.",
+            "topThirdScore": 59.1,
+            "middleScore": 55.3,
+            "depthScore": 45,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "White Sox own the cleaner full-game traffic script at 7.9 projected hits.",
+              "White Sox have the better starter-window lane with 4.9 projected first-five hits.",
+              "White Sox still hold the better bridge-and-finish script once the bullpens take over.",
+              "White Sox can lean on Miguel Vargas, Colson Montgomery, Sam Antonacci to drive early pressure against Jameson Taillon.",
+              "White Sox top third are live enough to pressure the starter before the bridge innings.",
+              "Miguel Vargas and Colson Montgomery and Sam Antonacci are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "White Sox carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "White Sox",
+              "projection": "2.2 R",
+              "note": "White Sox lean on Miguel Vargas, Colson Montgomery to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "White Sox",
+              "projection": "1.5 R",
+              "note": "White Sox keep more late scoring paths alive, with Miguel Vargas, Colson Montgomery plus the Cubs bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "White Sox",
+              "projection": "7.9 H",
+              "note": "White Sox finish with the stronger aggregate traffic path, anchored by Miguel Vargas, Colson Montgomery."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 82.4,
+        "lateInningStabilityIndex": 40.3,
+        "reliefPitchingRisk": 95,
+        "coinflipPressure": 60,
+        "pickBullpenScore": 54.7,
+        "oppBullpenScore": 63.2,
+        "pickStarterScore": 80.6,
+        "oppStarterScore": 63,
+        "projectedHitEdgeForPick": 2,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 4,
+        "tierOnePassFlag": true,
+        "tierOneRiskFlags": [
+          "starterLateFragility",
+          "highRiskPoints"
+        ],
+        "favoredSignalCount": 8,
+        "starterLateGap": 42.1,
+        "edgeHaircutApplied": 2,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -115,
+        "marketProbability": 0.5348837209302325,
+        "marketProbabilityLabel": "53.5%",
+        "opponentMarketAmericanOdds": -105,
+        "opponentMarketProbability": 0.5121951219512195,
+        "opponentMarketProbabilityLabel": "51.2%",
+        "marketFavoriteTeam": "Chicago White Sox",
+        "marketFavoriteProbability": 0.5348837209302325,
+        "marketFavoriteProbabilityLabel": "53.5%",
+        "marketFavoriteAmericanOdds": -115,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.023
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "brewers-twins",
+      "gameTitle": "Brewers @ Twins",
+      "awayTeam": "Milwaukee Brewers",
+      "homeTeam": "Minnesota Twins",
+      "predictedTeam": "Milwaukee Brewers",
+      "predictedSide": "away",
+      "confidence": 59,
+      "volatility": 92,
+      "modelEdge": 3.6,
+      "marketAmericanOdds": -125,
+      "marketProbability": 0.5555555555555556,
+      "marketProbabilityLabel": "55.6%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Standings profile",
+        "Hit-production baseline",
+        "Projected hit volume"
+      ],
+      "projection": {
+        "awayProjectedHits": 7.7,
+        "homeProjectedHits": 5.8,
+        "awayHitEfficiencyPct": 22,
+        "homeHitEfficiencyPct": 16.9,
+        "awayFirst5ProjectedHits": 4.4,
+        "homeFirst5ProjectedHits": 3.7,
+        "awayFirst5HitEfficiencyPct": 22.9,
+        "homeFirst5HitEfficiencyPct": 19.4,
+        "awayLateProjectedHits": 3.1,
+        "homeLateProjectedHits": 2.3,
+        "awayLateHitEfficiencyPct": 20,
+        "homeLateHitEfficiencyPct": 14.7,
+        "awayBullpenChainScore": 80.3,
+        "homeBullpenChainScore": 83.3,
+        "edgeTeam": "Brewers",
+        "edgeHits": 1.9,
+        "first5EdgeTeam": "Brewers",
+        "first5EdgeHits": 0.7,
+        "lateEdgeTeam": "Brewers",
+        "lateEdgeHits": 0.8,
+        "bridgeEdgeTeam": "Twins",
+        "bridgeEdgeScore": 3,
+        "awayLikelyRelievers": [
+          {
+            "name": "DL Hall",
+            "role": "bridge",
+            "firstRelieverLikelihood": 78.7,
+            "availabilityScore": 73.1,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Grant Anderson",
+            "role": "middle",
+            "firstRelieverLikelihood": 65.1,
+            "availabilityScore": 74,
+            "bridgeScore": 66.7,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Kendry Rojas",
+            "role": "bridge",
+            "firstRelieverLikelihood": 71.1,
+            "availabilityScore": 58,
+            "bridgeScore": 87.9,
+            "expectedOuts": 6,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Taylor Rogers",
+            "role": "bridge",
+            "firstRelieverLikelihood": 71,
+            "availabilityScore": 50.9,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "awayBullpenExhaustion": 17.9,
+        "homeBullpenExhaustion": 43.7,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "elevated",
+        "awayPitcherType": "Unknown sample righty",
+        "homePitcherType": "Contact suppressor",
+        "awayStarterHoldConfidence": 49.9,
+        "homeStarterHoldConfidence": 56.9,
+        "awayProjectedRuns": 3.5,
+        "homeProjectedRuns": 2.7,
+        "awayFirst5ProjectedRuns": 1.9,
+        "homeFirst5ProjectedRuns": 1.6,
+        "awayLateProjectedRuns": 1.6,
+        "homeLateProjectedRuns": 1.1,
+        "postedTotal": 8.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -2.3,
+            "strength": "Strong",
+            "label": "Under 8.5",
+            "summary": "Under lean with a 2.3-run edge against 8.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.3,
+            "strength": "Strong",
+            "label": "Under 4.8",
+            "summary": "Under lean with a 1.3-run edge against 4.8."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -1,
+            "strength": "Clear",
+            "label": "Under 3.7",
+            "summary": "Under lean with a 1.0-run edge against 3.7."
+          },
+          "projectedFullTotalRuns": 6.2,
+          "projectedFirst5TotalRuns": 3.5,
+          "projectedLateTotalRuns": 2.7,
+          "derivedFirst5TotalLine": 4.8,
+          "derivedLateTotalLine": 3.7,
+          "bullpenExhaustionNote": "Twins elevated bridge arms are carrying heavier recent workload stress, which matters more once the game gets past the starter window.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Brewers",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Brewers own the cleaner full-game traffic script at 7.7 projected hits.",
+              "Brewers have the better starter-window lane with 4.4 projected first-five hits.",
+              "Brewers still hold the better bridge-and-finish script once the bullpens take over.",
+              "No posted away lineup yet.",
+              "Brewers look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          },
+          {
+            "teamName": "Twins",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Kody Clemens",
+                "tag": "carry | +10.00 vs Logan Henderson"
+              },
+              {
+                "name": "James Outman",
+                "tag": "carry | +10.00 vs Logan Henderson"
+              },
+              {
+                "name": "Ryan Jeffers",
+                "tag": "split edge | +3.33 vs Logan Henderson"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Brooks Lee",
+                "tag": "split edge | -8.00 vs Logan Henderson"
+              },
+              {
+                "name": "Josh Bell",
+                "tag": "split edge | -8.00 vs Logan Henderson"
+              }
+            ],
+            "underperformNote": "Brooks Lee and Josh Bell carry the softer form or split fit into a unknown sample lane.",
+            "overview": "Twins can lean on Kody Clemens, James Outman, Ryan Jeffers to drive early pressure against Logan Henderson.",
+            "topThirdScore": 40.9,
+            "middleScore": 55.8,
+            "depthScore": 45.1,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Twins also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Twins can lean on Kody Clemens, James Outman, Ryan Jeffers to drive early pressure against Logan Henderson.",
+              "Kody Clemens and James Outman and Ryan Jeffers are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Brewers carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Brewers",
+              "projection": "1.9 R",
+              "note": "Brewers still own the cleaner starter-phase traffic lane."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Brewers",
+              "projection": "1.6 R",
+              "note": "Brewers look cleaner once the game turns over to the bridge relievers."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Brewers",
+              "projection": "7.7 H",
+              "note": "Brewers finish with the stronger full-game hit and conversion path."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 44.2,
+        "lateInningStabilityIndex": 60.5,
+        "reliefPitchingRisk": 52.5,
+        "coinflipPressure": 48,
+        "pickBullpenScore": 64.4,
+        "oppBullpenScore": 48.5,
+        "pickStarterScore": 46.8,
+        "oppStarterScore": 58.6,
+        "projectedHitEdgeForPick": 1.9,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 1,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [],
+        "favoredSignalCount": 5,
+        "starterLateGap": -16.3,
+        "edgeHaircutApplied": 0,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -125,
+        "marketProbability": 0.5555555555555556,
+        "marketProbabilityLabel": "55.6%",
+        "opponentMarketAmericanOdds": 105,
+        "opponentMarketProbability": 0.4878048780487805,
+        "opponentMarketProbabilityLabel": "48.8%",
+        "marketFavoriteTeam": "Milwaukee Brewers",
+        "marketFavoriteProbability": 0.5555555555555556,
+        "marketFavoriteProbabilityLabel": "55.6%",
+        "marketFavoriteAmericanOdds": -125,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.068
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "padres-mariners",
+      "gameTitle": "Padres @ Mariners",
+      "awayTeam": "San Diego Padres",
+      "homeTeam": "Seattle Mariners",
+      "predictedTeam": "Seattle Mariners",
+      "predictedSide": "home",
+      "confidence": 74,
+      "volatility": 66,
+      "modelEdge": 12.8,
+      "marketAmericanOdds": -170,
+      "marketProbability": 0.6296296296296297,
+      "marketProbabilityLabel": "63.0%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context",
+      "inputLabels": [
+        "Market price",
+        "Projected hit volume",
+        "Hit-production baseline"
+      ],
+      "projection": {
+        "awayProjectedHits": 5.2,
+        "homeProjectedHits": 8.6,
+        "awayHitEfficiencyPct": 15,
+        "homeHitEfficiencyPct": 25.1,
+        "awayFirst5ProjectedHits": 2.9,
+        "homeFirst5ProjectedHits": 5.4,
+        "awayFirst5HitEfficiencyPct": 15.2,
+        "homeFirst5HitEfficiencyPct": 28.4,
+        "awayLateProjectedHits": 2.4,
+        "homeLateProjectedHits": 3.1,
+        "awayLateHitEfficiencyPct": 15.8,
+        "homeLateHitEfficiencyPct": 20,
+        "awayBullpenChainScore": 84.1,
+        "homeBullpenChainScore": 72.7,
+        "edgeTeam": "Mariners",
+        "edgeHits": 3.4,
+        "first5EdgeTeam": "Mariners",
+        "first5EdgeHits": 2.5,
+        "lateEdgeTeam": "Mariners",
+        "lateEdgeHits": 0.7,
+        "bridgeEdgeTeam": "Padres",
+        "bridgeEdgeScore": 11.4,
+        "awayLikelyRelievers": [
+          {
+            "name": "Jeremiah Estrada",
+            "role": "bridge",
+            "firstRelieverLikelihood": 80.2,
+            "availabilityScore": 72.8,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Adrian Morejon",
+            "role": "bridge",
+            "firstRelieverLikelihood": 72.1,
+            "availabilityScore": 54,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Nick Davila",
+            "role": "bridge",
+            "firstRelieverLikelihood": 72.9,
+            "availabilityScore": 44.6,
+            "bridgeScore": 95,
+            "expectedOuts": 3.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Cooper Criswell",
+            "role": "bridge",
+            "firstRelieverLikelihood": 67.9,
+            "availabilityScore": 30.5,
+            "bridgeScore": 95,
+            "expectedOuts": 2.5,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "awayBullpenExhaustion": 34.2,
+        "homeBullpenExhaustion": 49.2,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "elevated",
+        "awayPitcherType": "Balanced righty",
+        "homePitcherType": "Strike-throwing righty",
+        "awayStarterHoldConfidence": 51.4,
+        "homeStarterHoldConfidence": 58.5,
+        "awayProjectedRuns": 2.4,
+        "homeProjectedRuns": 4.3,
+        "awayFirst5ProjectedRuns": 1.2,
+        "homeFirst5ProjectedRuns": 2.6,
+        "awayLateProjectedRuns": 1.2,
+        "homeLateProjectedRuns": 1.7,
+        "postedTotal": 7,
+        "totals": {
+          "fullGame": {
+            "lean": "Pass",
+            "edge": -0.3,
+            "strength": "Thin",
+            "label": "Hold 7",
+            "summary": "Model projection 6.7 is essentially on the posted 7."
+          },
+          "first5": {
+            "lean": "Pass",
+            "edge": -0.2,
+            "strength": "Thin",
+            "label": "Hold 4",
+            "summary": "Model projection 3.8 is essentially on the posted 4."
+          },
+          "late": {
+            "lean": "Pass",
+            "edge": -0.1,
+            "strength": "Thin",
+            "label": "Hold 3",
+            "summary": "Model projection 2.9 is essentially on the posted 3."
+          },
+          "projectedFullTotalRuns": 6.7,
+          "projectedFirst5TotalRuns": 3.8,
+          "projectedLateTotalRuns": 2.9,
+          "derivedFirst5TotalLine": 4,
+          "derivedLateTotalLine": 3,
+          "bullpenExhaustionNote": "Mariners elevated bridge arms are carrying heavier recent workload stress, which matters more once the game gets past the starter window.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Padres",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Gavin Sheets",
+                "tag": "carry | +9.43 vs Logan Gilbert"
+              },
+              {
+                "name": "Miguel Andujar",
+                "tag": "carry | +5.82 vs Logan Gilbert"
+              },
+              {
+                "name": "Nick Castellanos",
+                "tag": "heater | +4.91 vs Logan Gilbert"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Jackson Merrill",
+                "tag": "split edge | -8.00 vs Logan Gilbert"
+              },
+              {
+                "name": "Manny Machado",
+                "tag": "cold | -8.00 vs Logan Gilbert"
+              }
+            ],
+            "underperformNote": "Jackson Merrill and Manny Machado carry the softer form or split fit into a strike-throwing lane.",
+            "overview": "Padres can lean on Gavin Sheets, Miguel Andujar, Nick Castellanos to drive early pressure against Logan Gilbert.",
+            "topThirdScore": 18.3,
+            "middleScore": 67.7,
+            "depthScore": 40.1,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Padres also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Padres can lean on Gavin Sheets, Miguel Andujar, Nick Castellanos to drive early pressure against Logan Gilbert.",
+              "Gavin Sheets and Miguel Andujar and Nick Castellanos are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Mariners",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Randy Arozarena",
+                "tag": "carry | +10.00 vs Walker Buehler"
+              },
+              {
+                "name": "Luke Raley",
+                "tag": "carry | +10.00 vs Walker Buehler"
+              },
+              {
+                "name": "Mitch Garver",
+                "tag": "carry | +8.43 vs Walker Buehler"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Cole Young",
+                "tag": "split edge | -7.14 vs Walker Buehler"
+              },
+              {
+                "name": "Julio Rodríguez",
+                "tag": "cold | -2.37 vs Walker Buehler"
+              }
+            ],
+            "underperformNote": "Cole Young and Julio Rodríguez carry the softer form or split fit into a balanced lane.",
+            "overview": "Mariners can lean on Randy Arozarena, Luke Raley, Mitch Garver to drive early pressure against Walker Buehler.",
+            "topThirdScore": 47.2,
+            "middleScore": 79.3,
+            "depthScore": 52.9,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Mariners own the cleaner full-game traffic script at 8.6 projected hits.",
+              "Mariners have the better starter-window lane with 5.4 projected first-five hits.",
+              "Mariners still hold the better bridge-and-finish script once the bullpens take over.",
+              "Mariners can lean on Randy Arozarena, Luke Raley, Mitch Garver to drive early pressure against Walker Buehler.",
+              "Randy Arozarena and Luke Raley and Mitch Garver are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Mariners carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Mariners",
+              "projection": "2.6 R",
+              "note": "Mariners lean on Randy Arozarena, Luke Raley to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Mariners",
+              "projection": "1.7 R",
+              "note": "Mariners keep more late scoring paths alive, with Randy Arozarena, Luke Raley plus the Padres bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Mariners",
+              "projection": "8.6 H",
+              "note": "Mariners finish with the stronger aggregate traffic path, anchored by Randy Arozarena, Luke Raley."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 85.1,
+        "lateInningStabilityIndex": 61.2,
+        "reliefPitchingRisk": 61.1,
+        "coinflipPressure": 26,
+        "pickBullpenScore": 68,
+        "oppBullpenScore": 67.7,
+        "pickStarterScore": 65.9,
+        "oppStarterScore": 55.3,
+        "projectedHitEdgeForPick": 3.4,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 2,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [],
+        "favoredSignalCount": 9,
+        "starterLateGap": 23.9,
+        "edgeHaircutApplied": 0,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -170,
+        "marketProbability": 0.6296296296296297,
+        "marketProbabilityLabel": "63.0%",
+        "opponentMarketAmericanOdds": 145,
+        "opponentMarketProbability": 0.40816326530612246,
+        "opponentMarketProbabilityLabel": "40.8%",
+        "marketFavoriteTeam": "Seattle Mariners",
+        "marketFavoriteProbability": 0.6296296296296297,
+        "marketFavoriteProbabilityLabel": "63.0%",
+        "marketFavoriteAmericanOdds": -170,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.221
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "red-sox-braves",
+      "gameTitle": "Red Sox @ Braves",
+      "awayTeam": "Boston Red Sox",
+      "homeTeam": "Atlanta Braves",
+      "predictedTeam": "Atlanta Braves",
+      "predictedSide": "home",
+      "confidence": 69,
+      "volatility": 81,
+      "modelEdge": 10.8,
+      "marketAmericanOdds": -130,
+      "marketProbability": 0.5652173913043478,
+      "marketProbabilityLabel": "56.5%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality + daily lineup matchup context",
+      "inputLabels": [
+        "Standings profile",
+        "Starter record",
+        "Strikeout ceiling"
+      ],
+      "projection": {
+        "awayProjectedHits": 5.6,
+        "homeProjectedHits": 5.6,
+        "awayHitEfficiencyPct": 16.2,
+        "homeHitEfficiencyPct": 16.3,
+        "awayFirst5ProjectedHits": 3.6,
+        "homeFirst5ProjectedHits": 3.6,
+        "awayFirst5HitEfficiencyPct": 18.8,
+        "homeFirst5HitEfficiencyPct": 18.9,
+        "awayLateProjectedHits": 2,
+        "homeLateProjectedHits": 2,
+        "awayLateHitEfficiencyPct": 12.9,
+        "homeLateHitEfficiencyPct": 13.1,
+        "awayBullpenChainScore": 78.1,
+        "homeBullpenChainScore": 85.4,
+        "edgeTeam": "Red Sox",
+        "edgeHits": 0,
+        "first5EdgeTeam": "Red Sox",
+        "first5EdgeHits": 0,
+        "lateEdgeTeam": "Red Sox",
+        "lateEdgeHits": 0,
+        "bridgeEdgeTeam": "Braves",
+        "bridgeEdgeScore": 7.3,
+        "awayLikelyRelievers": [
+          {
+            "name": "Justin Slaten",
+            "role": "bridge",
+            "firstRelieverLikelihood": 76.2,
+            "availabilityScore": 54.1,
+            "bridgeScore": 95,
+            "expectedOuts": 2.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Greg Weissert",
+            "role": "bridge",
+            "firstRelieverLikelihood": 73.6,
+            "availabilityScore": 53.8,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Reynaldo López",
+            "role": "bridge",
+            "firstRelieverLikelihood": 75.4,
+            "availabilityScore": 63.6,
+            "bridgeScore": 92.1,
+            "expectedOuts": 5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Aaron Bummer",
+            "role": "middle",
+            "firstRelieverLikelihood": 67.2,
+            "availabilityScore": 73.3,
+            "bridgeScore": 70.9,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          }
+        ],
+        "awayBullpenExhaustion": 40.1,
+        "homeBullpenExhaustion": 27.1,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Power lefty",
+        "homePitcherType": "Contact suppressor",
+        "awayStarterHoldConfidence": 63.3,
+        "homeStarterHoldConfidence": 66.1,
+        "awayProjectedRuns": 2.6,
+        "homeProjectedRuns": 2.5,
+        "awayFirst5ProjectedRuns": 1.6,
+        "homeFirst5ProjectedRuns": 1.5,
+        "awayLateProjectedRuns": 1,
+        "homeLateProjectedRuns": 1,
+        "postedTotal": 7.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -2.4,
+            "strength": "Strong",
+            "label": "Under 7.5",
+            "summary": "Under lean with a 2.4-run edge against 7.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.5,
+            "strength": "Strong",
+            "label": "Under 4.6",
+            "summary": "Under lean with a 1.5-run edge against 4.6."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.9,
+            "strength": "Clear",
+            "label": "Under 2.9",
+            "summary": "Under lean with a 0.9-run edge against 2.9."
+          },
+          "projectedFullTotalRuns": 5.1,
+          "projectedFirst5TotalRuns": 3.1,
+          "projectedLateTotalRuns": 2,
+          "derivedFirst5TotalLine": 4.6,
+          "derivedLateTotalLine": 2.9,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Red Sox",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Andruw Monasterio",
+                "tag": "carry | +10.00 vs Bryce Elder"
+              },
+              {
+                "name": "Mickey Gasper",
+                "tag": "split edge | +4.37 vs Bryce Elder"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Jarren Duran",
+                "tag": "split edge | -8.00 vs Bryce Elder"
+              },
+              {
+                "name": "Willson Contreras",
+                "tag": "cold | -8.00 vs Bryce Elder"
+              }
+            ],
+            "underperformNote": "Jarren Duran and Willson Contreras carry the softer form or split fit into a contact suppressor lane.",
+            "overview": "Red Sox can lean on Andruw Monasterio, Mickey Gasper to drive early pressure against Bryce Elder.",
+            "topThirdScore": 37.4,
+            "middleScore": 32.6,
+            "depthScore": 51.5,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Red Sox own the cleaner full-game traffic script at 5.6 projected hits.",
+              "Red Sox have the better starter-window lane with 3.6 projected first-five hits.",
+              "Red Sox still hold the better bridge-and-finish script once the bullpens take over.",
+              "Red Sox can lean on Andruw Monasterio, Mickey Gasper to drive early pressure against Bryce Elder.",
+              "Andruw Monasterio and Mickey Gasper are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Braves",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Drake Baldwin",
+                "tag": "carry | +10.00 vs Payton Tolle"
+              },
+              {
+                "name": "Sandy León",
+                "tag": "split edge | +4.60 vs Payton Tolle"
+              },
+              {
+                "name": "Austin Riley",
+                "tag": "heater | +4.12 vs Payton Tolle"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Ha-Seong Kim",
+                "tag": "split edge | -8.00 vs Payton Tolle"
+              },
+              {
+                "name": "Ozzie Albies",
+                "tag": "split edge | -7.60 vs Payton Tolle"
+              }
+            ],
+            "underperformNote": "Ha-Seong Kim and Ozzie Albies carry the softer form or split fit into a power lane.",
+            "overview": "Braves can lean on Drake Baldwin, Sandy León, Austin Riley to drive early pressure against Payton Tolle.",
+            "topThirdScore": 43.4,
+            "middleScore": 36,
+            "depthScore": 50.9,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Braves also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Braves can lean on Drake Baldwin, Sandy León, Austin Riley to drive early pressure against Payton Tolle.",
+              "Drake Baldwin and Sandy León and Austin Riley are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Red Sox carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Red Sox",
+              "projection": "1.6 R",
+              "note": "Red Sox lean on Andruw Monasterio, Mickey Gasper to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Red Sox",
+              "projection": "1 R",
+              "note": "Red Sox keep more late scoring paths alive, with Andruw Monasterio, Mickey Gasper plus the Braves bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Red Sox",
+              "projection": "5.6 H",
+              "note": "Red Sox finish with the stronger aggregate traffic path, anchored by Andruw Monasterio, Mickey Gasper."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 68,
+        "lateInningStabilityIndex": 44.3,
+        "reliefPitchingRisk": 57,
+        "coinflipPressure": 37,
+        "pickBullpenScore": 71.1,
+        "oppBullpenScore": 67.1,
+        "pickStarterScore": 78.9,
+        "oppStarterScore": 64.1,
+        "projectedHitEdgeForPick": 0,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 1,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [],
+        "favoredSignalCount": 11,
+        "starterLateGap": 23.7,
+        "edgeHaircutApplied": 0,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -130,
+        "marketProbability": 0.5652173913043478,
+        "marketProbabilityLabel": "56.5%",
+        "opponentMarketAmericanOdds": 110,
+        "opponentMarketProbability": 0.47619047619047616,
+        "opponentMarketProbabilityLabel": "47.6%",
+        "marketFavoriteTeam": "Atlanta Braves",
+        "marketFavoriteProbability": 0.5652173913043478,
+        "marketFavoriteProbabilityLabel": "56.5%",
+        "marketFavoriteAmericanOdds": -130,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.089
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "yankees-mets",
+      "gameTitle": "Yankees @ Mets",
+      "awayTeam": "New York Yankees",
+      "homeTeam": "New York Mets",
+      "predictedTeam": "New York Mets",
+      "predictedSide": "home",
+      "confidence": 52,
+      "volatility": 92,
+      "modelEdge": 6.5,
+      "marketAmericanOdds": 105,
+      "marketProbability": 0.4878048780487805,
+      "marketProbabilityLabel": "48.8%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Starter ERA",
+        "Hit-production baseline",
+        "Starter record"
+      ],
+      "projection": {
+        "awayProjectedHits": 5.8,
+        "homeProjectedHits": 7,
+        "awayHitEfficiencyPct": 16.9,
+        "homeHitEfficiencyPct": 20.3,
+        "awayFirst5ProjectedHits": 3.1,
+        "homeFirst5ProjectedHits": 4.4,
+        "awayFirst5HitEfficiencyPct": 16,
+        "homeFirst5HitEfficiencyPct": 23.5,
+        "awayLateProjectedHits": 2.7,
+        "homeLateProjectedHits": 2.5,
+        "awayLateHitEfficiencyPct": 17.7,
+        "homeLateHitEfficiencyPct": 16.4,
+        "awayBullpenChainScore": 82.8,
+        "homeBullpenChainScore": 88.1,
+        "edgeTeam": "Mets",
+        "edgeHits": 1.2,
+        "first5EdgeTeam": "Mets",
+        "first5EdgeHits": 1.3,
+        "lateEdgeTeam": "Yankees",
+        "lateEdgeHits": 0.2,
+        "bridgeEdgeTeam": "Mets",
+        "bridgeEdgeScore": 5.3,
+        "awayLikelyRelievers": [
+          {
+            "name": "Fernando Cruz",
+            "role": "bridge",
+            "firstRelieverLikelihood": 73.2,
+            "availabilityScore": 52.9,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          },
+          {
+            "name": "Paul Blackburn",
+            "role": "bridge",
+            "firstRelieverLikelihood": 71.9,
+            "availabilityScore": 60.2,
+            "bridgeScore": 87.9,
+            "expectedOuts": 6,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Huascar Brazobán",
+            "role": "bridge",
+            "firstRelieverLikelihood": 70.8,
+            "availabilityScore": 63.5,
+            "bridgeScore": 83.7,
+            "expectedOuts": 7,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Austin Warren",
+            "role": "bridge",
+            "firstRelieverLikelihood": 68.3,
+            "availabilityScore": 43.1,
+            "bridgeScore": 92.1,
+            "expectedOuts": 5,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "awayBullpenExhaustion": 44.4,
+        "homeBullpenExhaustion": 50.5,
+        "awayBullpenExhaustionLabel": "elevated",
+        "homeBullpenExhaustionLabel": "elevated",
+        "awayPitcherType": "Unknown sample lefty",
+        "homePitcherType": "Contact suppressor",
+        "awayStarterHoldConfidence": 49.9,
+        "homeStarterHoldConfidence": 92,
+        "awayProjectedRuns": 2.4,
+        "homeProjectedRuns": 3.3,
+        "awayFirst5ProjectedRuns": 1.2,
+        "homeFirst5ProjectedRuns": 2,
+        "awayLateProjectedRuns": 1.2,
+        "homeLateProjectedRuns": 1.3,
+        "postedTotal": 8.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -2.8,
+            "strength": "Strong",
+            "label": "Under 8.5",
+            "summary": "Under lean with a 2.8-run edge against 8.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.6,
+            "strength": "Strong",
+            "label": "Under 4.8",
+            "summary": "Under lean with a 1.6-run edge against 4.8."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -1.2,
+            "strength": "Strong",
+            "label": "Under 3.7",
+            "summary": "Under lean with a 1.2-run edge against 3.7."
+          },
+          "projectedFullTotalRuns": 5.7,
+          "projectedFirst5TotalRuns": 3.2,
+          "projectedLateTotalRuns": 2.5,
+          "derivedFirst5TotalLine": 4.8,
+          "derivedLateTotalLine": 3.7,
+          "bullpenExhaustionNote": "Yankees elevated and Mets elevated bridge arms are carrying heavier recent workload stress, which matters more once the game gets past the starter window.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Yankees",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Ben Rice",
+                "tag": "live | active"
+              },
+              {
+                "name": "Aaron Judge",
+                "tag": "thin | watch"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Yankees still hold the better bridge-and-finish script once the bullpens take over.",
+              "No posted away lineup yet.",
+              "Ben Rice and Aaron Judge are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Mets",
+            "lineupStatus": "confirmed lineup",
+            "overperformHitters": [
+              {
+                "name": "Brett Baty",
+                "tag": "carry | +10.00 vs Carlos Rodón"
+              },
+              {
+                "name": "Luis Torrens",
+                "tag": "carry | +10.00 vs Carlos Rodón"
+              },
+              {
+                "name": "A.J. Ewing",
+                "tag": "carry | +7.11 vs Carlos Rodón"
+              }
+            ],
+            "underperformHitters": [
+              {
+                "name": "Austin Slater",
+                "tag": "split edge | -8.00 vs Carlos Rodón"
+              },
+              {
+                "name": "Bo Bichette",
+                "tag": "split edge | -7.97 vs Carlos Rodón"
+              }
+            ],
+            "underperformNote": "Austin Slater and Bo Bichette carry the softer form or split fit into a unknown sample lane.",
+            "overview": "Mets can lean on Brett Baty, Luis Torrens, A.J. Ewing to drive early pressure against Carlos Rodón.",
+            "topThirdScore": 30.6,
+            "middleScore": 65.9,
+            "depthScore": 68.7,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Mets own the cleaner full-game traffic script at 7 projected hits.",
+              "Mets have the better starter-window lane with 4.4 projected first-five hits.",
+              "Mets also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "Mets can lean on Brett Baty, Luis Torrens, A.J. Ewing to drive early pressure against Carlos Rodón.",
+              "Brett Baty and Luis Torrens and A.J. Ewing are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Mets rate cleaner through the starter window, but the bridge and finish script still move later in the game.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Mets",
+              "projection": "2 R",
+              "note": "Mets lean on Brett Baty, Luis Torrens to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Yankees",
+              "projection": "1.2 R",
+              "note": "Yankees keep more late scoring paths alive, with Ben Rice, Aaron Judge plus the Mets bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Mets",
+              "projection": "7 H",
+              "note": "Mets finish with the stronger aggregate traffic path, anchored by Brett Baty, Luis Torrens."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 98.5,
+        "lateInningStabilityIndex": 30.8,
+        "reliefPitchingRisk": 65,
+        "coinflipPressure": 51,
+        "pickBullpenScore": 67,
+        "oppBullpenScore": 66.9,
+        "pickStarterScore": 64.5,
+        "oppStarterScore": 40.8,
+        "projectedHitEdgeForPick": 1.2,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 5,
+        "tierOnePassFlag": true,
+        "tierOneRiskFlags": [
+          "highVolatilityEdgePass",
+          "starterLateFragility",
+          "highRiskPoints"
+        ],
+        "favoredSignalCount": 9,
+        "starterLateGap": 67.7,
+        "edgeHaircutApplied": 5,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": 105,
+        "marketProbability": 0.4878048780487805,
+        "marketProbabilityLabel": "48.8%",
+        "opponentMarketAmericanOdds": -125,
+        "opponentMarketProbability": 0.5555555555555556,
+        "opponentMarketProbabilityLabel": "55.6%",
+        "marketFavoriteTeam": "New York Yankees",
+        "marketFavoriteProbability": 0.5555555555555556,
+        "marketFavoriteProbabilityLabel": "55.6%",
+        "marketFavoriteAmericanOdds": -125,
+        "pickIsMarketFavorite": false,
+        "pickIsMarketUnderdog": true,
+        "marketPriceGap": -0.068
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "dodgers-angels",
+      "gameTitle": "Dodgers @ Angels",
+      "awayTeam": "Los Angeles Dodgers",
+      "homeTeam": "Los Angeles Angels",
+      "predictedTeam": "Los Angeles Dodgers",
+      "predictedSide": "away",
+      "confidence": 61,
+      "volatility": 92,
+      "modelEdge": 7.8,
+      "marketAmericanOdds": -140,
+      "marketProbability": 0.5833333333333334,
+      "marketProbabilityLabel": "58.3%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Standings profile",
+        "Hit-production baseline",
+        "Market price"
+      ],
+      "projection": {
+        "awayProjectedHits": 7.7,
+        "homeProjectedHits": 6.3,
+        "awayHitEfficiencyPct": 22.2,
+        "homeHitEfficiencyPct": 18.5,
+        "awayFirst5ProjectedHits": 4.5,
+        "homeFirst5ProjectedHits": 3.6,
+        "awayFirst5HitEfficiencyPct": 23.3,
+        "homeFirst5HitEfficiencyPct": 19.2,
+        "awayLateProjectedHits": 3.1,
+        "homeLateProjectedHits": 2.8,
+        "awayLateHitEfficiencyPct": 20.3,
+        "homeLateHitEfficiencyPct": 18,
+        "awayBullpenChainScore": 60,
+        "homeBullpenChainScore": 83.9,
+        "edgeTeam": "Dodgers",
+        "edgeHits": 1.4,
+        "first5EdgeTeam": "Dodgers",
+        "first5EdgeHits": 0.9,
+        "lateEdgeTeam": "Dodgers",
+        "lateEdgeHits": 0.3,
+        "bridgeEdgeTeam": "Angels",
+        "bridgeEdgeScore": 23.9,
+        "awayLikelyRelievers": [
+          {
+            "name": "Tanner Scott",
+            "role": "middle",
+            "firstRelieverLikelihood": 62.9,
+            "availabilityScore": 52,
+            "bridgeScore": 76.7,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Edgardo Henriquez",
+            "role": "bridge",
+            "firstRelieverLikelihood": 62.5,
+            "availabilityScore": 15.1,
+            "bridgeScore": 95,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": true,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Sam Bachman",
+            "role": "bridge",
+            "firstRelieverLikelihood": 79.5,
+            "availabilityScore": 70.6,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Kirby Yates",
+            "role": "bridge",
+            "firstRelieverLikelihood": 72.8,
+            "availabilityScore": 56.2,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "awayBullpenExhaustion": 64.9,
+        "homeBullpenExhaustion": 34.2,
+        "awayBullpenExhaustionLabel": "heavy",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Contact suppressor",
+        "homePitcherType": "Contact suppressor",
+        "awayStarterHoldConfidence": 75.7,
+        "homeStarterHoldConfidence": 65.9,
+        "awayProjectedRuns": 3.4,
+        "homeProjectedRuns": 2.8,
+        "awayFirst5ProjectedRuns": 1.9,
+        "homeFirst5ProjectedRuns": 1.4,
+        "awayLateProjectedRuns": 1.5,
+        "homeLateProjectedRuns": 1.4,
+        "postedTotal": 8.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -2.3,
+            "strength": "Strong",
+            "label": "Under 8.5",
+            "summary": "Under lean with a 2.3-run edge against 8.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -1.2,
+            "strength": "Strong",
+            "label": "Under 4.5",
+            "summary": "Under lean with a 1.2-run edge against 4.5."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -1.1,
+            "strength": "Clear",
+            "label": "Under 4",
+            "summary": "Under lean with a 1.1-run edge against 4."
+          },
+          "projectedFullTotalRuns": 6.2,
+          "projectedFirst5TotalRuns": 3.3,
+          "projectedLateTotalRuns": 2.9,
+          "derivedFirst5TotalLine": 4.5,
+          "derivedLateTotalLine": 4,
+          "bullpenExhaustionNote": "Dodgers heavy bridge arms are carrying heavier recent workload stress, which matters more once the game gets past the starter window.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Dodgers",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Max Muncy",
+                "tag": "strong | carry"
+              },
+              {
+                "name": "Andy Pages",
+                "tag": "thin | active"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Dodgers own the cleaner full-game traffic script at 7.7 projected hits.",
+              "Dodgers have the better starter-window lane with 4.5 projected first-five hits.",
+              "Dodgers still hold the better bridge-and-finish script once the bullpens take over.",
+              "No posted away lineup yet.",
+              "Max Muncy and Andy Pages are the best current carry bats in this lineup."
+            ]
+          },
+          {
+            "teamName": "Angels",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Angels also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted home lineup yet.",
+              "Angels look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Dodgers carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Dodgers",
+              "projection": "1.9 R",
+              "note": "Dodgers lean on Max Muncy, Andy Pages to drive the early traffic lane against the listed starter."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Dodgers",
+              "projection": "1.5 R",
+              "note": "Dodgers keep more late scoring paths alive, with Max Muncy, Andy Pages plus the Angels bridge chain shaping the middle innings."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Dodgers",
+              "projection": "7.7 H",
+              "note": "Dodgers finish with the stronger aggregate traffic path, anchored by Max Muncy, Andy Pages."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 48.1,
+        "lateInningStabilityIndex": 85.7,
+        "reliefPitchingRisk": 74.5,
+        "coinflipPressure": 43,
+        "pickBullpenScore": 67.5,
+        "oppBullpenScore": 50.5,
+        "pickStarterScore": 69,
+        "oppStarterScore": 79.4,
+        "projectedHitEdgeForPick": 1.4,
+        "hitEdgeAgainstPick": false,
+        "tierOneRiskPoints": 2,
+        "tierOnePassFlag": false,
+        "tierOneRiskFlags": [],
+        "favoredSignalCount": 6,
+        "starterLateGap": -37.6,
+        "edgeHaircutApplied": 0,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -140,
+        "marketProbability": 0.5833333333333334,
+        "marketProbabilityLabel": "58.3%",
+        "opponentMarketAmericanOdds": 120,
+        "opponentMarketProbability": 0.45454545454545453,
+        "opponentMarketProbabilityLabel": "45.5%",
+        "marketFavoriteTeam": "Los Angeles Dodgers",
+        "marketFavoriteProbability": 0.5833333333333334,
+        "marketFavoriteProbabilityLabel": "58.3%",
+        "marketFavoriteAmericanOdds": -140,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.129
+      }
+    },
+    {
+      "predictionDate": "2026-05-16",
+      "modelName": "board-moneyline-v2-may16",
+      "gameId": "giants-athletics",
+      "gameTitle": "Giants @ Athletics",
+      "awayTeam": "San Francisco Giants",
+      "homeTeam": "Athletics",
+      "predictedTeam": "Athletics",
+      "predictedSide": "home",
+      "confidence": 52,
+      "volatility": 92,
+      "modelEdge": 2.5,
+      "marketAmericanOdds": -135,
+      "marketProbability": 0.574468085106383,
+      "marketProbabilityLabel": "57.4%",
+      "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + bullpen workload + likely reliever chain + Statcast contact quality",
+      "inputLabels": [
+        "Standings profile",
+        "Strikeout ceiling",
+        "Market price"
+      ],
+      "projection": {
+        "awayProjectedHits": 8.8,
+        "homeProjectedHits": 8.1,
+        "awayHitEfficiencyPct": 25.6,
+        "homeHitEfficiencyPct": 23.5,
+        "awayFirst5ProjectedHits": 5,
+        "homeFirst5ProjectedHits": 4.8,
+        "awayFirst5HitEfficiencyPct": 26.1,
+        "homeFirst5HitEfficiencyPct": 25.3,
+        "awayLateProjectedHits": 3.8,
+        "homeLateProjectedHits": 3.2,
+        "awayLateHitEfficiencyPct": 24.2,
+        "homeLateHitEfficiencyPct": 21,
+        "awayBullpenChainScore": 84.7,
+        "homeBullpenChainScore": 75.4,
+        "edgeTeam": "Giants",
+        "edgeHits": 0.7,
+        "first5EdgeTeam": "Giants",
+        "first5EdgeHits": 0.2,
+        "lateEdgeTeam": "Giants",
+        "lateEdgeHits": 0.6,
+        "bridgeEdgeTeam": "Giants",
+        "bridgeEdgeScore": 9.3,
+        "awayLikelyRelievers": [
+          {
+            "name": "Joel Peguero",
+            "role": "bridge",
+            "firstRelieverLikelihood": 80.7,
+            "availabilityScore": 74.2,
+            "bridgeScore": 95,
+            "expectedOuts": 4,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-13"
+          },
+          {
+            "name": "Sam Hentges",
+            "role": "bridge",
+            "firstRelieverLikelihood": 72.5,
+            "availabilityScore": 55.4,
+            "bridgeScore": 92.1,
+            "expectedOuts": 3,
+            "workedYesterday": true,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-15"
+          }
+        ],
+        "homeLikelyRelievers": [
+          {
+            "name": "Justin Sterner",
+            "role": "bridge",
+            "firstRelieverLikelihood": 75.9,
+            "availabilityScore": 53.2,
+            "bridgeScore": 95,
+            "expectedOuts": 2.5,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          },
+          {
+            "name": "Mark Leiter Jr.",
+            "role": "middle",
+            "firstRelieverLikelihood": 65.2,
+            "availabilityScore": 74.5,
+            "bridgeScore": 66.7,
+            "expectedOuts": 3,
+            "workedYesterday": false,
+            "backToBack": false,
+            "lastAppearanceDate": "2026-05-14"
+          }
+        ],
+        "awayBullpenExhaustion": 33.3,
+        "homeBullpenExhaustion": 23.9,
+        "awayBullpenExhaustionLabel": "fresh",
+        "homeBullpenExhaustionLabel": "fresh",
+        "awayPitcherType": "Unknown sample righty",
+        "homePitcherType": "Traffic-risk righty",
+        "awayStarterHoldConfidence": 62.8,
+        "homeStarterHoldConfidence": 51.5,
+        "awayProjectedRuns": 4.3,
+        "homeProjectedRuns": 3.9,
+        "awayFirst5ProjectedRuns": 2.4,
+        "homeFirst5ProjectedRuns": 2.2,
+        "awayLateProjectedRuns": 1.9,
+        "homeLateProjectedRuns": 1.7,
+        "postedTotal": 9.5,
+        "totals": {
+          "fullGame": {
+            "lean": "Under",
+            "edge": -1.3,
+            "strength": "Strong",
+            "label": "Under 9.5",
+            "summary": "Under lean with a 1.3-run edge against 9.5."
+          },
+          "first5": {
+            "lean": "Under",
+            "edge": -0.7,
+            "strength": "Clear",
+            "label": "Under 5.3",
+            "summary": "Under lean with a 0.7-run edge against 5.3."
+          },
+          "late": {
+            "lean": "Under",
+            "edge": -0.6,
+            "strength": "Lean",
+            "label": "Under 4.2",
+            "summary": "Under lean with a 0.6-run edge against 4.2."
+          },
+          "projectedFullTotalRuns": 8.2,
+          "projectedFirst5TotalRuns": 4.6,
+          "projectedLateTotalRuns": 3.6,
+          "derivedFirst5TotalLine": 5.3,
+          "derivedLateTotalLine": 4.2,
+          "bullpenExhaustionNote": "No major bridge-chain exhaustion flag has surfaced yet.",
+          "weatherNote": ""
+        },
+        "teamScripts": [
+          {
+            "teamName": "Giants",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted away lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "Giants own the cleaner full-game traffic script at 8.8 projected hits.",
+              "Giants have the better starter-window lane with 5 projected first-five hits.",
+              "Giants still hold the better bridge-and-finish script once the bullpens take over.",
+              "Giants also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+              "No posted away lineup yet.",
+              "Giants look more like a broad traffic lineup than a single-bat carry script right now."
+            ]
+          },
+          {
+            "teamName": "Athletics",
+            "lineupStatus": "lineup pending",
+            "overperformHitters": [
+              {
+                "name": "Nick Kurtz",
+                "tag": "strong | watch"
+              },
+              {
+                "name": "Shea Langeliers",
+                "tag": "live | carry"
+              }
+            ],
+            "underperformHitters": [],
+            "underperformNote": "Official batting order is still pending.",
+            "overview": "No posted home lineup yet.",
+            "topThirdScore": 50,
+            "middleScore": 50,
+            "depthScore": 50,
+            "bullpenOverperformHitters": [],
+            "winPath": [
+              "No posted home lineup yet.",
+              "Nick Kurtz and Shea Langeliers are the best current carry bats in this lineup."
+            ]
+          }
+        ],
+        "lineupSimulation": {
+          "overview": "Giants carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+          "phases": [
+            {
+              "label": "First 5",
+              "edgeTeam": "Giants",
+              "projection": "2.4 R",
+              "note": "Giants still own the cleaner starter-phase traffic lane."
+            },
+            {
+              "label": "Bridge",
+              "edgeTeam": "Giants",
+              "projection": "1.9 R",
+              "note": "Giants look cleaner once the game turns over to the bridge relievers."
+            },
+            {
+              "label": "Full game",
+              "edgeTeam": "Giants",
+              "projection": "8.8 H",
+              "note": "Giants finish with the stronger full-game hit and conversion path."
+            }
+          ]
+        },
+        "weather": null
+      },
+      "indicators": {
+        "starterLeverageIndex": 42.7,
+        "lateInningStabilityIndex": 32.3,
+        "reliefPitchingRisk": 90.8,
+        "coinflipPressure": 74,
+        "pickBullpenScore": 55.6,
+        "oppBullpenScore": 60.4,
+        "pickStarterScore": 63.6,
+        "oppStarterScore": 63.3,
+        "projectedHitEdgeForPick": -0.7,
+        "hitEdgeAgainstPick": true,
+        "tierOneRiskPoints": 4,
+        "tierOnePassFlag": true,
+        "tierOneRiskFlags": [
+          "highRiskPoints"
+        ],
+        "favoredSignalCount": 5,
+        "starterLateGap": 10.4,
+        "edgeHaircutApplied": 0.8,
+        "pickSnapbackPressure": null,
+        "oppSnapbackPressure": null,
+        "pickHeatRegression": null,
+        "oppHeatRegression": null,
+        "pickFormPressure": null,
+        "oppFormPressure": null,
+        "pickTop6Pressure": null,
+        "oppTop6Pressure": null,
+        "pickTop6Cold": null,
+        "oppTop6Cold": null,
+        "pickTop6Heat": null,
+        "oppTop6Heat": null,
+        "pickStateSeriesGameNumber": null,
+        "oppStateSeriesGameNumber": null,
+        "pickStreakDirection": null,
+        "oppStreakDirection": null,
+        "pickStreakLength": 0,
+        "oppStreakLength": 0,
+        "statefulOpponentSnapbackTrapFlag": false,
+        "statefulHeatRegressionTrapFlag": false,
+        "statefulTopOrderPressureTrapFlag": false,
+        "statefulSeriesCarryoverTrapFlag": false,
+        "statefulSuggestedEdgeHaircut": 0,
+        "statefulSuggestedConfidenceHaircut": 0,
+        "pickRelieverCommandRisk": null,
+        "oppRelieverCommandRisk": null,
+        "relieverCommandGap": null,
+        "pickThirdTimePenalty": null,
+        "oppThirdTimePenalty": null,
+        "tierThreeBullpenCommandMismatchFlag": false,
+        "tierThreeSuggestedEdgeHaircut": 0,
+        "tierThreeSuggestedConfidenceHaircut": 0,
+        "marketAmericanOdds": -135,
+        "marketProbability": 0.574468085106383,
+        "marketProbabilityLabel": "57.4%",
+        "opponentMarketAmericanOdds": 115,
+        "opponentMarketProbability": 0.46511627906976744,
+        "opponentMarketProbabilityLabel": "46.5%",
+        "marketFavoriteTeam": "Athletics",
+        "marketFavoriteProbability": 0.574468085106383,
+        "marketFavoriteProbabilityLabel": "57.4%",
+        "marketFavoriteAmericanOdds": -135,
+        "pickIsMarketFavorite": true,
+        "pickIsMarketUnderdog": false,
+        "marketPriceGap": 0.109
+      }
+    }
+  ]
+}

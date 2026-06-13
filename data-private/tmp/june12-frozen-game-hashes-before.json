@@ -1,0 +1,29 @@
+{
+  "published-data/slates/2026-06-12/games": {
+    "marlins-pirates": "9963db70c2ac5c64ec0fba158acfd1974108025ddc7ff9d0f3989c95d6884e9b",
+    "mariners-nationals": "2cc2282f8887128b14c6b01fa974b3a69d3df4c355cea634b2d3c16f07a9679c",
+    "padres-orioles": "71e348247195739b88959638a90a0bfc36bbc6d673f6c347bb98106c04ef3d81",
+    "rangers-red-sox": "12e0d7c482b467860572549d95822fe5a9376e79e93afcd0005c515134864f59",
+    "tigers-guardians": "9e0e854d602c67e75e694d4445fd52b0341424dc294ee742d0cd0c285e3c43ee",
+    "braves-mets": "cbe31e49f42f060b796662b9009367fda05eef532a6e2a95de10fd701f0820d5",
+    "diamondbacks-reds": "d6fdb920f8b2a4b7ce2fe57717dfd833ee1804179c455e4aadbe0f8abf0b0b02"
+  },
+  "web/public/data/current/games": {
+    "marlins-pirates": "9963db70c2ac5c64ec0fba158acfd1974108025ddc7ff9d0f3989c95d6884e9b",
+    "mariners-nationals": "2cc2282f8887128b14c6b01fa974b3a69d3df4c355cea634b2d3c16f07a9679c",
+    "padres-orioles": "71e348247195739b88959638a90a0bfc36bbc6d673f6c347bb98106c04ef3d81",
+    "rangers-red-sox": "12e0d7c482b467860572549d95822fe5a9376e79e93afcd0005c515134864f59",
+    "tigers-guardians": "9e0e854d602c67e75e694d4445fd52b0341424dc294ee742d0cd0c285e3c43ee",
+    "braves-mets": "cbe31e49f42f060b796662b9009367fda05eef532a6e2a95de10fd701f0820d5",
+    "diamondbacks-reds": "d6fdb920f8b2a4b7ce2fe57717dfd833ee1804179c455e4aadbe0f8abf0b0b02"
+  },
+  "web/public/data/slates/2026-06-12/games": {
+    "marlins-pirates": "9963db70c2ac5c64ec0fba158acfd1974108025ddc7ff9d0f3989c95d6884e9b",
+    "mariners-nationals": "2cc2282f8887128b14c6b01fa974b3a69d3df4c355cea634b2d3c16f07a9679c",
+    "padres-orioles": "71e348247195739b88959638a90a0bfc36bbc6d673f6c347bb98106c04ef3d81",
+    "rangers-red-sox": "12e0d7c482b467860572549d95822fe5a9376e79e93afcd0005c515134864f59",
+    "tigers-guardians": "9e0e854d602c67e75e694d4445fd52b0341424dc294ee742d0cd0c285e3c43ee",
+    "braves-mets": "cbe31e49f42f060b796662b9009367fda05eef532a6e2a95de10fd701f0820d5",
+    "diamondbacks-reds": "d6fdb920f8b2a4b7ce2fe57717dfd833ee1804179c455e4aadbe0f8abf0b0b02"
+  }
+}

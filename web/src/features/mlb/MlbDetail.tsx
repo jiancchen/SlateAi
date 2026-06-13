@@ -224,6 +224,12 @@ export function MlbDetail(props: MlbDetailProps) {
     : Number(homeSummary?.bullpenPitchTypeSummary?.pressureIndex)
   const awayRecentBullpenSummary = game.bullpenChainContext?.away?.recentBullpenSummary ?? null
   const homeRecentBullpenSummary = game.bullpenChainContext?.home?.recentBullpenSummary ?? null
+  const getBridgeSourceLabel = (context: AnyRecord | null | undefined) =>
+    /RP2/i.test(String(context?.chainSource || context?.source || ''))
+      ? 'RP2 bridge projection'
+      : 'bridge chain'
+  const awayBridgeSourceLabel = getBridgeSourceLabel(game.bullpenChainContext?.away)
+  const homeBridgeSourceLabel = getBridgeSourceLabel(game.bullpenChainContext?.home)
   const awaySeasonBullpenSummary = game.bullpenContext?.away ?? null
   const homeSeasonBullpenSummary = game.bullpenContext?.home ?? null
   const awayRelieverShadow = game.relieverShadowContext?.away ?? null
@@ -461,6 +467,20 @@ export function MlbDetail(props: MlbDetailProps) {
   const kalshiFirstInning = kalshiContext?.firstInning ?? null
   const kalshiFirst5Total = kalshiContext?.first5Total?.selected ?? null
   const kalshiSpread = kalshiContext?.spread?.selected ?? null
+  const totalAddendumChips = (lean: AnyRecord | null | undefined) => {
+    const metrics = lean?.chaosGate?.metrics || lean?.tailOverlay?.metrics || {}
+    return [
+      Number(metrics.hrForce) >= 1.4 ? `HRF ${formatNumber(metrics.hrForce, 1)}` : null,
+      Number.isFinite(Number(metrics.envRunDelta)) && Math.abs(Number(metrics.envRunDelta)) >= 0.2
+        ? `ENV ${formatSignedNumber(metrics.envRunDelta, 1)}R`
+        : null,
+      metrics.rp2LateRunRisk && Number.isFinite(Number(metrics.maxRp2BridgeStress))
+        ? `RP2 bridge ${formatNumber(metrics.maxRp2BridgeStress, 0)}`
+        : null,
+      lean?.chaosGate?.vetoKind === 'addendum' ? 'ENV/RP2 veto' : null,
+      lean?.chaosGate?.warning && lean?.chaosGate?.vetoKind !== 'addendum' ? 'Addendum warning' : null
+    ].filter(Boolean).slice(0, 4)
+  }
   const totalsCards = totals
     ? [
         {
@@ -542,6 +562,155 @@ export function MlbDetail(props: MlbDetailProps) {
     sidePickName && projection?.edgeTeam && sidePickName !== projection.edgeTeam && game.analysis?.tier === 'Pass'
   const awayPitcherTypeLabel = buildPitcherTypeLabel(game.starterContext?.away ?? {}, projection?.awayPitcherType)
   const homePitcherTypeLabel = buildPitcherTypeLabel(game.starterContext?.home ?? {}, projection?.homePitcherType)
+  const buildLeanWriteup = () => {
+    if (!projection || !sidePickName || sidePickName === 'Pass') return null
+
+    const numberOrNull = (value: unknown) => {
+      const parsed = Number(value)
+      return Number.isFinite(parsed) ? parsed : null
+    }
+    const fmt = (value: unknown, digits = 1) => {
+      const parsed = numberOrNull(value)
+      return parsed === null ? 'n/a' : formatNumber(parsed, digits)
+    }
+    const sideForTeam = (teamName: string) => teamName === awayTeam ? 'away' : teamName === homeTeam ? 'home' : null
+    const pickSide = sideForTeam(sidePickName)
+    const oppSide = pickSide === 'away' ? 'home' : pickSide === 'home' ? 'away' : null
+    if (!pickSide || !oppSide) return null
+
+    const pickTeam = pickSide === 'away' ? awayTeam : homeTeam
+    const oppTeam = oppSide === 'away' ? awayTeam : homeTeam
+    const pickStarter = pickSide === 'away' ? game.starterContext?.away : game.starterContext?.home
+    const oppStarter = oppSide === 'away' ? game.starterContext?.away : game.starterContext?.home
+    const pickLineup = pickSide === 'away' ? awaySummary : homeSummary
+    const oppLineup = oppSide === 'away' ? awaySummary : homeSummary
+    const pickRelief = projection.reliefProjection?.[pickSide] ?? game.reliefProjectionContext?.[pickSide] ?? null
+    const oppRelief = projection.reliefProjection?.[oppSide] ?? game.reliefProjectionContext?.[oppSide] ?? null
+    const pickBridge = pickSide === 'away' ? awayBridgeScore : homeBridgeScore
+    const oppBridge = oppSide === 'away' ? awayBridgeScore : homeBridgeScore
+    const indicators = game.analysis?.indicators ?? {}
+    const participant = game.analysis?.participant ?? {}
+    const oddsLabel = participant.americanLabel || (
+      Number.isFinite(Number(participant.americanOdds))
+        ? Number(participant.americanOdds) > 0
+          ? `+${participant.americanOdds}`
+          : `${participant.americanOdds}`
+        : ''
+    )
+    const metricForSide = (side: string, metric: string) => projection?.[`${side}${metric}`]
+    const pickHits = metricForSide(pickSide, 'ProjectedHits')
+    const oppHits = metricForSide(oppSide, 'ProjectedHits')
+    const pickFirst5Hits = metricForSide(pickSide, 'First5ProjectedHits')
+    const oppFirst5Hits = metricForSide(oppSide, 'First5ProjectedHits')
+    const pickLateHits = metricForSide(pickSide, 'LateProjectedHits')
+    const oppLateHits = metricForSide(oppSide, 'LateProjectedHits')
+    const pickMiddle = numberOrNull(pickLineup?.middleScore)
+    const oppMiddle = numberOrNull(oppLineup?.middleScore)
+    const pickDepth = numberOrNull(pickLineup?.depthScore)
+    const oppDepth = numberOrNull(oppLineup?.depthScore)
+    const pickTop = numberOrNull(pickLineup?.topThirdScore)
+    const oppTop = numberOrNull(oppLineup?.topThirdScore)
+    const pickStarterScore = numberOrNull(indicators.pickStarterScore)
+    const oppStarterScore = numberOrNull(indicators.oppStarterScore)
+    const pickBullpenScore = numberOrNull(indicators.pickBullpenScore)
+    const oppBullpenScore = numberOrNull(indicators.oppBullpenScore)
+    const pickReliefRuns = numberOrNull(pickRelief?.projectedReliefRunsAllowed)
+    const oppReliefRuns = numberOrNull(oppRelief?.projectedReliefRunsAllowed)
+    const pickWhip = numberOrNull(pickStarter?.whip)
+    const oppWhip = numberOrNull(oppStarter?.whip)
+    const oppStarterHistoryEra = numberOrNull(oppStarter?.statmuseVsOpponent?.era)
+    const pickMarketShape = indicators.pickIsMarketFavorite
+      ? `${pickSide === 'home' ? 'home/' : ''}favorite market shape`
+      : indicators.pickIsMarketUnderdog
+        ? 'underdog price protection'
+        : 'market shape'
+    const passGrade = /pass/i.test(String(game.analysis?.tier || ''))
+    const pickLabel = `${pickTeam}${oddsLabel ? ` ${oddsLabel}` : ''}`
+    const modelEdgeNumber = numberOrNull(game.analysis?.modelEdge)
+    const modelEdgeValue = `${game.analysis?.modelEdgeLabel || 'n/a'}${
+      modelEdgeNumber !== null && modelEdgeNumber < 2.5
+        ? ', so pretty thin'
+        : modelEdgeNumber !== null && modelEdgeNumber < 4
+          ? ', modest'
+          : ''
+    }`
+    const trafficVerb = Number(pickHits) > Number(oppHits) || Number(pickFirst5Hits) > Number(oppFirst5Hits)
+      ? 'winning the traffic script'
+      : 'getting the cleaner phase blend'
+    const lede = passGrade
+      ? `It's only a pass-grade lean toward ${pickLabel} because the model has them ${trafficVerb}, not because it thinks this is a clean bet.`
+      : `It's leaning ${pickLabel} because the model has them ${trafficVerb}, not because it thinks this is a clean smash.`
+    const metrics = [
+      { label: passGrade ? 'Pass-grade lean' : 'Pick', value: pickLabel },
+      { label: 'Tier', value: game.analysis?.tier || 'n/a' },
+      { label: 'Confidence', value: game.analysis?.confidence != null ? fmt(game.analysis.confidence, 0) : 'n/a' },
+      { label: 'Model edge', value: modelEdgeValue },
+      { label: 'Projected hits', value: `${pickTeam} ${fmt(pickHits, 1)} vs ${oppTeam} ${fmt(oppHits, 1)}` },
+      { label: 'First 5 hits', value: `${pickTeam} ${fmt(pickFirst5Hits, 1)} vs ${oppTeam} ${fmt(oppFirst5Hits, 1)}` },
+      { label: 'Late hits', value: `${pickTeam} ${fmt(pickLateHits, 1)} vs ${oppTeam} ${fmt(oppLateHits, 1)}` },
+      { label: 'Bridge chain score', value: `${pickTeam} ${fmt(pickBridge, 1)} vs ${oppTeam} ${fmt(oppBridge, 1)}` }
+    ]
+
+    const lineupParagraph = (() => {
+      const pickMiddleDepth = (pickMiddle ?? 0) + (pickDepth ?? 0)
+      const oppMiddleDepth = (oppMiddle ?? 0) + (oppDepth ?? 0)
+      if (pickMiddle !== null && oppMiddle !== null && pickDepth !== null && oppDepth !== null && pickMiddleDepth >= oppMiddleDepth + 5) {
+        const topPocket = oppTop !== null && pickTop !== null && oppTop > pickTop + 3
+          ? `${oppTeam} have a stronger top-third pocket, but `
+          : ''
+        return `The model likes ${pickTeam} because their lineup grades better across the middle/depth of the order against ${oppStarter?.fullName || 'the opposing starter'}. ${topPocket}${pickTeam} have the broader lineup shape: ${pickTeam} middle score ${fmt(pickMiddle, 1)} vs ${oppTeam} ${fmt(oppMiddle, 1)}, depth ${fmt(pickDepth, 1)} vs ${fmt(oppDepth, 1)}.`
+      }
+      if (pickTop !== null && oppTop !== null && pickTop >= oppTop + 5) {
+        return `The model likes ${pickTeam} because their top-third pocket is the cleaner early-pressure lane against ${oppStarter?.fullName || 'the opposing starter'}: ${pickTeam} top third ${fmt(pickTop, 1)} vs ${oppTeam} ${fmt(oppTop, 1)}.`
+      }
+      return `The model likes ${pickTeam} because their projected contact lane is cleaner: ${pickTeam} are at ${fmt(pickHits, 1)} projected hits with ${fmt(pickFirst5Hits, 1)} in the starter window, while ${oppTeam} sit at ${fmt(oppHits, 1)} and ${fmt(oppFirst5Hits, 1)}.`
+    })()
+
+    const starterNotes = []
+    if (pickStarterScore !== null && oppStarterScore !== null) {
+      if (oppStarterScore > pickStarterScore + 0.5) {
+        starterNotes.push(`${oppStarter?.fullName || `${oppTeam} starter`} actually has the slightly better raw starter score`)
+      } else if (pickStarterScore > oppStarterScore + 0.5) {
+        starterNotes.push(`${pickStarter?.fullName || `${pickTeam} starter`} owns the cleaner raw starter score`)
+      } else {
+        starterNotes.push('the raw starter scores are basically even')
+      }
+    }
+    if (Number(pickHits) > Number(oppHits) || Number(pickFirst5Hits) > Number(oppFirst5Hits)) {
+      starterNotes.push(`${pickTeam} hitters project for more contact/traffic against ${oppStarter?.fullName || 'the opposing starter'}`)
+    }
+    if (oppStarterHistoryEra !== null && oppStarterHistoryEra >= 5) {
+      starterNotes.push(`${oppStarter?.fullName || `${oppTeam} starter`}'s ${pickTeam} history is ugly: ${fmt(oppStarterHistoryEra, 2)} ERA vs ${pickTeam}`)
+    }
+    if (pickWhip !== null && oppWhip !== null && pickWhip < oppWhip - 0.03) {
+      starterNotes.push(`${pickStarter?.fullName || `${pickTeam} starter`} has the cleaner season WHIP: ${fmt(pickWhip, 2)} vs ${fmt(oppWhip, 2)}`)
+    }
+    const starterParagraph = starterNotes.length
+      ? `The starter read is not one-note. ${starterNotes.join(', and ')}.`
+      : `The starter read is mixed enough that ${pickTeam} still need the lineup traffic and bridge shape to hold.`
+
+    const counterweights = []
+    if (oppBullpenScore !== null && pickBullpenScore !== null && oppBullpenScore > pickBullpenScore + 1) {
+      counterweights.push(`season bullpen score favors ${oppTeam} ${fmt(oppBullpenScore, 1)} vs ${fmt(pickBullpenScore, 1)}`)
+    }
+    if (oppReliefRuns !== null && pickReliefRuns !== null && oppReliefRuns < pickReliefRuns - 0.15) {
+      counterweights.push(`RP2 relief runs favor ${oppTeam} ${fmt(oppReliefRuns, 2)} vs ${fmt(pickReliefRuns, 2)}`)
+    }
+    if (Number.isFinite(oppBridge) && Number.isFinite(pickBridge) && oppBridge > pickBridge + 1) {
+      counterweights.push(`bridge chain score favors ${oppTeam} ${fmt(oppBridge, 1)} vs ${fmt(pickBridge, 1)}`)
+    }
+    const counterweightParagraph = counterweights.length
+      ? `The counterweight: ${oppTeam} are better in some bullpen/context pockets. ${counterweights.join(', and ')}. That's why this is ${game.analysis?.tier || 'not a blank-check'} rather than a high-conviction play. In plain English: ${pickTeam} lean because of projected lineup traffic and ${pickMarketShape}, but ${oppTeam}'s counterweights are real reasons not to overstate it.`
+      : `The counterweight: the edge is still only ${game.analysis?.modelEdgeLabel || 'modest'} with a ${game.analysis?.tier || 'measured'} tag. In plain English: ${pickTeam} lean because of projected lineup traffic and ${pickMarketShape}, but the price and game-shape noise are reasons not to overstate it.`
+
+    return {
+      pickTeam,
+      lede,
+      metrics,
+      paragraphs: [lineupParagraph, starterParagraph, counterweightParagraph]
+    }
+  }
+  const leanWriteup = buildLeanWriteup()
   const renderBridgeChainCard = (
     teamName: string,
     relievers: AnyRecord[],
@@ -550,7 +719,8 @@ export function MlbDetail(props: MlbDetailProps) {
     advantage: boolean,
     recentBullpenSummary: AnyRecord | null,
     seasonBullpenSummary: AnyRecord | null,
-    shadowContext: AnyRecord | null
+    shadowContext: AnyRecord | null,
+    sourceLabel: string
   ) => (
     <article className={`bridge-chain-card-react ${advantage ? 'advantage' : ''}`}>
       <div className="bridge-chain-card-head">
@@ -559,7 +729,11 @@ export function MlbDetail(props: MlbDetailProps) {
           <strong>{Number.isFinite(chainScore) ? `${chainScore.toFixed(1)} score` : 'No chain score'}</strong>
         </div>
         <span className={`builder-status-pill ${workloadLabel === 'unknown' ? 'invalid' : 'open'}`}>
-          {workloadLabel === 'unknown' ? 'Unknown workload' : workloadLabel}
+          {sourceLabel === 'bridge chain'
+            ? workloadLabel === 'unknown'
+              ? 'Unknown workload'
+              : workloadLabel
+            : sourceLabel}
         </span>
       </div>
       {recentBullpenSummary && Number(recentBullpenSummary.gamesSample || 0) > 0 ? (
@@ -626,6 +800,7 @@ export function MlbDetail(props: MlbDetailProps) {
               <div>
                 <strong>{reliever.name}</strong>
                 <small>{reliever.role || 'middle'} | {formatNumber(reliever.expectedOuts, 2)} outs</small>
+                {reliever.projectionOnly ? <small>Team-side projection; identity confidence low.</small> : null}
                 {Number(reliever.recentTeamGamesSample || 0) > 0 ? (
                   <small>
                     First up in {Number(reliever.recentFirstRelieverCountLast5Games || 0)}/{Number(reliever.recentTeamGamesSample || 0)} recent team games
@@ -679,6 +854,30 @@ export function MlbDetail(props: MlbDetailProps) {
           ))}
         </div>
       </section>
+
+      {leanWriteup ? (
+        <section className="detail-panel lean-writeup-panel">
+          <div className="detail-panel-header">
+            <p className="eyebrow">Why this lean</p>
+            <span>{leanWriteup.pickTeam} read</span>
+          </div>
+          <p className="lean-writeup-lede">{leanWriteup.lede}</p>
+          <p className="react-section-copy">For {game.title}, the live file has:</p>
+          <ul className="lean-writeup-metrics">
+            {leanWriteup.metrics.map((metric) => (
+              <li key={`${game.id}-lean-writeup-${metric.label}`}>
+                <span>{metric.label}</span>
+                <strong>{metric.value}</strong>
+              </li>
+            ))}
+          </ul>
+          <div className="lean-writeup-body">
+            {leanWriteup.paragraphs.map((paragraph, index) => (
+              <p key={`${game.id}-lean-writeup-paragraph-${index}`}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       {m2GameShape || m2StateFormula || m2PlayerIdentity || m2PitcherBatterKernel || m2ValueProof ? (
         <section className="detail-panel game-story-panel">
@@ -1247,6 +1446,13 @@ export function MlbDetail(props: MlbDetailProps) {
                   <span>{card.lean?.strength || 'Pass'}</span>
                 </div>
                 <small>{card.lean?.summary || 'No totals edge stored for this phase.'}</small>
+                {totalAddendumChips(card.lean).length ? (
+                  <div className="totals-addendum-chip-row">
+                    {totalAddendumChips(card.lean).map((chip) => (
+                      <span key={`${game.id}-${card.id}-${chip}`}>{chip}</span>
+                    ))}
+                  </div>
+                ) : null}
                 <span>{card.projectedLabel}</span>
                 <small>Line: {card.lineLabel}</small>
                 <small>{card.splitLabel}</small>
@@ -1294,7 +1500,8 @@ export function MlbDetail(props: MlbDetailProps) {
               projection.bridgeEdgeTeam === awayTeam,
               awayRecentBullpenSummary,
               awaySeasonBullpenSummary,
-              awayRelieverShadow
+              awayRelieverShadow,
+              awayBridgeSourceLabel
             )}
             {renderBridgeChainCard(
               homeTeam,
@@ -1304,7 +1511,8 @@ export function MlbDetail(props: MlbDetailProps) {
               projection.bridgeEdgeTeam === homeTeam,
               homeRecentBullpenSummary,
               homeSeasonBullpenSummary,
-              homeRelieverShadow
+              homeRelieverShadow,
+              homeBridgeSourceLabel
             )}
           </div>
         </section>

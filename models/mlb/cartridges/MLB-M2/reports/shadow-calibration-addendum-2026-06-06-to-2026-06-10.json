@@ -1,0 +1,1558 @@
+{
+  "schemaVersion": 1,
+  "modelId": "MLB-M2",
+  "componentId": "shadow-calibration-addendum",
+  "mode": "shadow",
+  "dates": [
+    "2026-06-06",
+    "2026-06-07",
+    "2026-06-08",
+    "2026-06-09",
+    "2026-06-10"
+  ],
+  "records": {
+    "baselineAll": {
+      "wins": 133,
+      "losses": 111,
+      "total": 244,
+      "hitRatePct": 54.5,
+      "label": "133-111"
+    },
+    "trustedCore": {
+      "wins": 80,
+      "losses": 55,
+      "total": 135,
+      "hitRatePct": 59.3,
+      "label": "80-55"
+    },
+    "bucketFilteredCore": {
+      "wins": 3,
+      "losses": 0,
+      "total": 3,
+      "hitRatePct": 100,
+      "label": "3-0"
+    },
+    "mlShapeConfidence65Plus": {
+      "wins": 2,
+      "losses": 0,
+      "total": 2,
+      "hitRatePct": 100,
+      "label": "2-0"
+    },
+    "mlShapeBelow65": {
+      "wins": 39,
+      "losses": 26,
+      "total": 65,
+      "hitRatePct": 60,
+      "label": "39-26"
+    },
+    "f5MlPromotedNonLoss": {
+      "wins": 0,
+      "losses": 0,
+      "total": 0,
+      "hitRatePct": null,
+      "label": "0-0"
+    },
+    "nrfiConfidence60Plus": {
+      "wins": 0,
+      "losses": 0,
+      "total": 0,
+      "hitRatePct": null,
+      "label": "0-0"
+    },
+    "teamTotalsPromotedSeed": {
+      "wins": 1,
+      "losses": 0,
+      "total": 1,
+      "hitRatePct": 100,
+      "label": "1-0"
+    }
+  },
+  "buckets": {
+    "mlShapeByConfidence": [
+      {
+        "bucket": "<60",
+        "wins": 32,
+        "losses": 20,
+        "total": 52,
+        "hitRatePct": 61.5,
+        "label": "32-20"
+      },
+      {
+        "bucket": "60-64",
+        "wins": 7,
+        "losses": 6,
+        "total": 13,
+        "hitRatePct": 53.8,
+        "label": "7-6"
+      },
+      {
+        "bucket": "65-69",
+        "wins": 2,
+        "losses": 0,
+        "total": 2,
+        "hitRatePct": 100,
+        "label": "2-0"
+      }
+    ],
+    "mlShapeByMetricConflict": [
+      {
+        "bucket": "watch-low-confidence",
+        "wins": 39,
+        "losses": 26,
+        "total": 65,
+        "hitRatePct": 60,
+        "label": "39-26"
+      },
+      {
+        "bucket": "high-confidence-thin-margin",
+        "wins": 2,
+        "losses": 0,
+        "total": 2,
+        "hitRatePct": 100,
+        "label": "2-0"
+      }
+    ],
+    "f5MlByConfidenceNonLoss": [
+      {
+        "bucket": "<60",
+        "wins": 38,
+        "losses": 29,
+        "total": 67,
+        "hitRatePct": 56.7,
+        "label": "38-29"
+      }
+    ],
+    "f5MlByEdgeNonLoss": [
+      {
+        "bucket": "<0.5",
+        "wins": 38,
+        "losses": 29,
+        "total": 67,
+        "hitRatePct": 56.7,
+        "label": "38-29"
+      }
+    ],
+    "f5OuByConfidence": [
+      {
+        "bucket": "60-64",
+        "wins": 16,
+        "losses": 17,
+        "total": 33,
+        "hitRatePct": 48.5,
+        "label": "16-17"
+      },
+      {
+        "bucket": "75-79",
+        "wins": 4,
+        "losses": 5,
+        "total": 9,
+        "hitRatePct": 44.4,
+        "label": "4-5"
+      }
+    ],
+    "nrfiByConfidence": [],
+    "yrfiByConfidence": [
+      {
+        "bucket": "<60",
+        "wins": 33,
+        "losses": 34,
+        "total": 67,
+        "hitRatePct": 49.3,
+        "label": "33-34"
+      }
+    ],
+    "teamTotalsByConfidence": [
+      {
+        "bucket": "80+",
+        "wins": 1,
+        "losses": 0,
+        "total": 1,
+        "hitRatePct": 100,
+        "label": "1-0"
+      }
+    ],
+    "teamTotalsByEdge": [
+      {
+        "bucket": "1-1.49",
+        "wins": 1,
+        "losses": 0,
+        "total": 1,
+        "hitRatePct": 100,
+        "label": "1-0"
+      }
+    ]
+  },
+  "samples": {
+    "mlShapeConflictSamples": [
+      {
+        "date": "2026-06-06",
+        "game": "Giants @ Cubs",
+        "pick": "Cubs",
+        "hit": true,
+        "confidence": 65,
+        "marketEdge": 3,
+        "marginSupportPct": 0,
+        "tier": "promoted",
+        "metricConflict": "high-confidence-thin-margin",
+        "reason": "Cubs: Confidence is carrying this ML read; 0.0% margin support is thin, so this is a closer-score win profile. +3.0 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Reds @ Padres",
+        "pick": "Padres",
+        "hit": true,
+        "confidence": 65,
+        "marketEdge": 2.3,
+        "marginSupportPct": 0,
+        "tier": "promoted",
+        "metricConflict": "high-confidence-thin-margin",
+        "reason": "Padres: Confidence is carrying this ML read; 0.0% margin support is thin, so this is a closer-score win profile. +2.3 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Royals @ Twins",
+        "pick": "Twins",
+        "hit": false,
+        "confidence": 64,
+        "marketEdge": 2.9,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Twins: 64% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +2.9 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Angels @ Dodgers",
+        "pick": "Dodgers",
+        "hit": false,
+        "confidence": 64,
+        "marketEdge": -4.6,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Dodgers: 64% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -4.6 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Red Sox @ Rays",
+        "pick": "Rays",
+        "hit": true,
+        "confidence": 64,
+        "marketEdge": 2.2,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Rays: 64% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +2.2 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Dodgers @ Pirates",
+        "pick": "Dodgers",
+        "hit": false,
+        "confidence": 64,
+        "marketEdge": -2.7,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Dodgers: 64% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -2.7 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Red Sox @ Yankees",
+        "pick": "Yankees",
+        "hit": true,
+        "confidence": 63,
+        "marketEdge": 3.2,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Yankees: 63% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +3.2 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Orioles @ Blue Jays",
+        "pick": "Blue Jays",
+        "hit": true,
+        "confidence": 63,
+        "marketEdge": 4.2,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Blue Jays: 63% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +4.2 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Guardians @ Rangers",
+        "pick": "Rangers",
+        "hit": true,
+        "confidence": 63,
+        "marketEdge": 4,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Rangers: 63% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +4.0 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Braves @ White Sox",
+        "pick": "Braves",
+        "hit": false,
+        "confidence": 63,
+        "marketEdge": 3.2,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Braves: 63% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +3.2 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Rays @ Marlins",
+        "pick": "Rays",
+        "hit": false,
+        "confidence": 62,
+        "marketEdge": 3.2,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Rays: 62% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +3.2 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Brewers @ Rockies",
+        "pick": "Brewers",
+        "hit": true,
+        "confidence": 62,
+        "marketEdge": 62,
+        "marginSupportPct": 7.5,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Brewers: 62% model confidence is the primary ML signal; 7.5% margin support is only tiebreak context. +62.0 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Nationals @ Diamondbacks",
+        "pick": "Diamondbacks",
+        "hit": true,
+        "confidence": 62,
+        "marketEdge": 4.4,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Diamondbacks: 62% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +4.4 pts market edge."
+      },
+      {
+        "date": "2026-06-08",
+        "game": "Phillies @ Blue Jays",
+        "pick": "Phillies",
+        "hit": true,
+        "confidence": 62,
+        "marketEdge": -1.6,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Phillies: 62% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -1.6 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Cardinals @ Mets",
+        "pick": "Mets",
+        "hit": false,
+        "confidence": 62,
+        "marketEdge": 4.4,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Mets: 62% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +4.4 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Nationals @ Diamondbacks",
+        "pick": "Diamondbacks",
+        "hit": false,
+        "confidence": 59,
+        "marketEdge": -1.8,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Diamondbacks: 59% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -1.8 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Pirates @ Braves",
+        "pick": "Braves",
+        "hit": true,
+        "confidence": 59,
+        "marketEdge": -2.7,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Braves: 59% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -2.7 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Reds @ Cardinals",
+        "pick": "Cardinals",
+        "hit": true,
+        "confidence": 59,
+        "marketEdge": -1.9,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Cardinals: 59% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -1.9 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Braves @ White Sox",
+        "pick": "Braves",
+        "hit": false,
+        "confidence": 59,
+        "marketEdge": -2.1,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Braves: 59% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -2.1 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Guardians @ Rangers",
+        "pick": "Rangers",
+        "hit": false,
+        "confidence": 58,
+        "marketEdge": 3.9,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Rangers: 58% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +3.9 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Brewers @ Rockies",
+        "pick": "Brewers",
+        "hit": true,
+        "confidence": 58,
+        "marketEdge": -7,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Brewers: 58% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -7.0 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Yankees @ Guardians",
+        "pick": "Guardians",
+        "hit": false,
+        "confidence": 58,
+        "marketEdge": 3.7,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Guardians: 58% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +3.7 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Twins @ Tigers",
+        "pick": "Tigers",
+        "hit": false,
+        "confidence": 58,
+        "marketEdge": -6.3,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Tigers: 58% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -6.3 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Reds @ Cardinals",
+        "pick": "Cardinals",
+        "hit": true,
+        "confidence": 57,
+        "marketEdge": 0.3,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Cardinals: 57% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.3 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "White Sox @ Phillies",
+        "pick": "Phillies",
+        "hit": false,
+        "confidence": 57,
+        "marketEdge": -0.6,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Phillies: 57% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -0.6 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "White Sox @ Phillies",
+        "pick": "Phillies",
+        "hit": true,
+        "confidence": 57,
+        "marketEdge": -6.4,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Phillies: 57% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -6.4 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Rays @ Marlins",
+        "pick": "Marlins",
+        "hit": true,
+        "confidence": 57,
+        "marketEdge": 4.4,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Marlins: 57% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +4.4 pts market edge."
+      },
+      {
+        "date": "2026-06-08",
+        "game": "Yankees @ Guardians",
+        "pick": "Guardians",
+        "hit": false,
+        "confidence": 57,
+        "marketEdge": 0.3,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Guardians: 57% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.3 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Diamondbacks @ Marlins",
+        "pick": "Marlins",
+        "hit": true,
+        "confidence": 57,
+        "marketEdge": 0.1,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Marlins: 57% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.1 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Red Sox @ Rays",
+        "pick": "Red Sox",
+        "hit": false,
+        "confidence": 57,
+        "marketEdge": 3.3,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Red Sox: 57% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +3.3 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Twins @ Tigers",
+        "pick": "Tigers",
+        "hit": true,
+        "confidence": 57,
+        "marketEdge": 0.1,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Tigers: 57% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.1 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Phillies @ Blue Jays",
+        "pick": "Blue Jays",
+        "hit": true,
+        "confidence": 57,
+        "marketEdge": 4.6,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Blue Jays: 57% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +4.6 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Cardinals @ Mets",
+        "pick": "Mets",
+        "hit": false,
+        "confidence": 57,
+        "marketEdge": 0.3,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Mets: 57% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.3 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Mariners @ Tigers",
+        "pick": "Mariners",
+        "hit": true,
+        "confidence": 56,
+        "marketEdge": -0.9,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Mariners: 56% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -0.9 pts market edge."
+      },
+      {
+        "date": "2026-06-08",
+        "game": "Mariners @ Orioles",
+        "pick": "Mariners",
+        "hit": true,
+        "confidence": 56,
+        "marketEdge": 0.2,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Mariners: 56% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.2 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Rangers @ Royals",
+        "pick": "Rangers",
+        "hit": false,
+        "confidence": 56,
+        "marketEdge": 0.2,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Rangers: 56% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.2 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Phillies @ Blue Jays",
+        "pick": "Phillies",
+        "hit": true,
+        "confidence": 56,
+        "marketEdge": -0.9,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Phillies: 56% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -0.9 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Athletics @ Astros",
+        "pick": "Astros",
+        "hit": true,
+        "confidence": 55,
+        "marketEdge": 0.5,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Astros: 55% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.5 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Pirates @ Braves",
+        "pick": "Braves",
+        "hit": true,
+        "confidence": 55,
+        "marketEdge": 1.5,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Braves: 55% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +1.5 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Mariners @ Tigers",
+        "pick": "Tigers",
+        "hit": true,
+        "confidence": 55,
+        "marketEdge": 1.1,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Tigers: 55% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +1.1 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Athletics @ Astros",
+        "pick": "Astros",
+        "hit": false,
+        "confidence": 55,
+        "marketEdge": 2.2,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Astros: 55% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +2.2 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Royals @ Twins",
+        "pick": "Royals",
+        "hit": true,
+        "confidence": 55,
+        "marketEdge": 0,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Royals: 55% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.0 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Mariners @ Orioles",
+        "pick": "Mariners",
+        "hit": true,
+        "confidence": 55,
+        "marketEdge": -0.4,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Mariners: 55% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -0.4 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Dodgers @ Pirates",
+        "pick": "Pirates",
+        "hit": false,
+        "confidence": 55,
+        "marketEdge": 0.9,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Pirates: 55% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.9 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Yankees @ Guardians",
+        "pick": "Yankees",
+        "hit": true,
+        "confidence": 55,
+        "marketEdge": 0,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Yankees: 55% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.0 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Rangers @ Royals",
+        "pick": "Rangers",
+        "hit": true,
+        "confidence": 55,
+        "marketEdge": 0.5,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Rangers: 55% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.5 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Angels @ Dodgers",
+        "pick": "Dodgers",
+        "hit": true,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Dodgers: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Mets @ Padres",
+        "pick": "Padres",
+        "hit": true,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Padres: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Giants @ Cubs",
+        "pick": "Cubs",
+        "hit": false,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Cubs: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-08",
+        "game": "Red Sox @ Rays",
+        "pick": "Red Sox",
+        "hit": false,
+        "confidence": 54,
+        "marketEdge": 0.7,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Red Sox: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.7 pts market edge."
+      },
+      {
+        "date": "2026-06-08",
+        "game": "Astros @ Angels",
+        "pick": "Astros",
+        "hit": true,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 2.8,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Astros: 54% model confidence is the primary ML signal; 2.8% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-08",
+        "game": "Reds @ Padres",
+        "pick": "Padres",
+        "hit": true,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Padres: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-08",
+        "game": "Nationals @ Giants",
+        "pick": "Giants",
+        "hit": false,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Giants: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-08",
+        "game": "Brewers @ Athletics",
+        "pick": "Athletics",
+        "hit": false,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Athletics: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Cubs @ Rockies",
+        "pick": "Rockies",
+        "hit": true,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Rockies: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Astros @ Angels",
+        "pick": "Angels",
+        "hit": true,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Angels: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Reds @ Padres",
+        "pick": "Padres",
+        "hit": false,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Padres: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Nationals @ Giants",
+        "pick": "Giants",
+        "hit": false,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Giants: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-09",
+        "game": "Brewers @ Athletics",
+        "pick": "Athletics",
+        "hit": true,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Athletics: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Diamondbacks @ Marlins",
+        "pick": "Diamondbacks",
+        "hit": false,
+        "confidence": 54,
+        "marketEdge": 0.5,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Diamondbacks: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.5 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Cubs @ Rockies",
+        "pick": "Rockies",
+        "hit": true,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Rockies: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Brewers @ Athletics",
+        "pick": "Athletics",
+        "hit": true,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Athletics: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Astros @ Angels",
+        "pick": "Angels",
+        "hit": true,
+        "confidence": 54,
+        "marketEdge": 54,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Angels: 54% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +54.0 pts market edge."
+      },
+      {
+        "date": "2026-06-06",
+        "game": "Orioles @ Blue Jays",
+        "pick": "Blue Jays",
+        "hit": true,
+        "confidence": 52,
+        "marketEdge": -0.4,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Blue Jays: 52% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -0.4 pts market edge."
+      },
+      {
+        "date": "2026-06-07",
+        "game": "Mets @ Padres",
+        "pick": "Padres",
+        "hit": false,
+        "confidence": 52,
+        "marketEdge": -0.4,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Padres: 52% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -0.4 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Nationals @ Giants",
+        "pick": "Giants",
+        "hit": true,
+        "confidence": 52,
+        "marketEdge": 0.1,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Giants: 52% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. +0.1 pts market edge."
+      },
+      {
+        "date": "2026-06-10",
+        "game": "Mariners @ Orioles",
+        "pick": "Orioles",
+        "hit": true,
+        "confidence": 52,
+        "marketEdge": -0.4,
+        "marginSupportPct": 0,
+        "tier": "watch",
+        "metricConflict": "watch-low-confidence",
+        "reason": "Orioles: 52% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -0.4 pts market edge."
+      }
+    ]
+  },
+  "potdSummary": [
+    {
+      "date": "2026-06-06",
+      "raw": {
+        "picks": [
+          {
+            "section": "shape",
+            "row": {
+              "date": "2026-06-06",
+              "lane": "ml-shape",
+              "game": "Brewers @ Rockies",
+              "pick": "Brewers",
+              "confidence": 62,
+              "edge": 7.5,
+              "runDiff": 0.6,
+              "marketEdge": 62,
+              "hit": true,
+              "shadowCalibration": {
+                "mode": "shadow",
+                "tier": "watch",
+                "potdEligible": false,
+                "calibratedScore": 84.8,
+                "modelConfidence": 62,
+                "lane": "ml-shape",
+                "primarySignal": "modelConfidence",
+                "secondarySignal": "marketEdge",
+                "tiebreakSignal": "marginSupport",
+                "metricConflict": "watch-low-confidence",
+                "reasons": [
+                  "Brewers: 62% model confidence is the primary ML signal; 7.5% margin support is only tiebreak context. +62.0 pts market edge.",
+                  "ML shape below 65% is watch-only; confidence remains the primary ML trust signal."
+                ],
+                "cautions": [
+                  "Small sample: June 6-8 seed window only."
+                ],
+                "evidence": {
+                  "seedWindow": "2026-06-06..2026-06-08",
+                  "bucket": "ML shape below 65",
+                  "record": "12-10",
+                  "hitRatePct": 54.5
+                }
+              }
+            }
+          },
+          {
+            "section": "f5ml",
+            "row": {
+              "date": "2026-06-06",
+              "lane": "f5-ml",
+              "game": "Brewers @ Rockies",
+              "pick": "Brewers",
+              "confidence": 50,
+              "edge": 0.3999999999999999,
+              "tiePct": 19.3,
+              "tieRisk": "low",
+              "hit": true,
+              "push": false,
+              "nonLoss": true
+            }
+          },
+          {
+            "section": "f5ou",
+            "row": {
+              "date": "2026-06-06",
+              "lane": "f5-ou",
+              "game": "Reds @ Cardinals",
+              "pick": "Under 5.5",
+              "confidence": 78,
+              "edge": 1.5,
+              "side": "Under",
+              "hit": false
+            }
+          }
+        ],
+        "wins": 2,
+        "losses": 1,
+        "total": 3,
+        "hitRatePct": 66.7,
+        "label": "2-1"
+      },
+      "calibrated": {
+        "picks": [
+          {
+            "section": "shape",
+            "row": {
+              "date": "2026-06-06",
+              "lane": "ml-shape",
+              "game": "Giants @ Cubs",
+              "pick": "Cubs",
+              "confidence": 65,
+              "edge": 0,
+              "runDiff": 0,
+              "marketEdge": 3.0228136882129277,
+              "hit": true,
+              "shadowCalibration": {
+                "mode": "shadow",
+                "tier": "promoted",
+                "potdEligible": true,
+                "calibratedScore": 74.1,
+                "modelConfidence": 65,
+                "lane": "ml-shape",
+                "primarySignal": "modelConfidence",
+                "secondarySignal": "marketEdge",
+                "tiebreakSignal": "marginSupport",
+                "metricConflict": "high-confidence-thin-margin",
+                "reasons": [
+                  "Cubs: Confidence is carrying this ML read; 0.0% margin support is thin, so this is a closer-score win profile. +3.0 pts market edge.",
+                  "ML shape confidence >=65 is the current promoted seed bucket."
+                ],
+                "cautions": [
+                  "Small sample: June 6-8 seed window only."
+                ],
+                "evidence": {
+                  "seedWindow": "2026-06-06..2026-06-08",
+                  "bucket": "ML shape confidence >=65",
+                  "record": "12-3",
+                  "hitRatePct": 80
+                }
+              }
+            }
+          }
+        ],
+        "wins": 1,
+        "losses": 0,
+        "total": 1,
+        "hitRatePct": 100,
+        "label": "1-0"
+      }
+    },
+    {
+      "date": "2026-06-07",
+      "raw": {
+        "picks": [
+          {
+            "section": "shape",
+            "row": {
+              "date": "2026-06-07",
+              "lane": "ml-shape",
+              "game": "Angels @ Dodgers",
+              "pick": "Dodgers",
+              "confidence": 64,
+              "edge": 0,
+              "runDiff": 0,
+              "marketEdge": -4.55345911949685,
+              "hit": false,
+              "shadowCalibration": {
+                "mode": "shadow",
+                "tier": "watch",
+                "potdEligible": false,
+                "calibratedScore": 64,
+                "modelConfidence": 64,
+                "lane": "ml-shape",
+                "primarySignal": "modelConfidence",
+                "secondarySignal": "marketEdge",
+                "tiebreakSignal": "marginSupport",
+                "metricConflict": "watch-low-confidence",
+                "reasons": [
+                  "Dodgers: 64% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -4.6 pts market edge.",
+                  "ML shape below 65% is watch-only; confidence remains the primary ML trust signal."
+                ],
+                "cautions": [
+                  "Small sample: June 6-8 seed window only."
+                ],
+                "evidence": {
+                  "seedWindow": "2026-06-06..2026-06-08",
+                  "bucket": "ML shape below 65",
+                  "record": "12-10",
+                  "hitRatePct": 54.5
+                }
+              }
+            }
+          },
+          {
+            "section": "f5ml",
+            "row": {
+              "date": "2026-06-07",
+              "lane": "f5-ml",
+              "game": "Red Sox @ Yankees",
+              "pick": "Yankees",
+              "confidence": 50,
+              "edge": 0,
+              "tiePct": 20.7,
+              "tieRisk": "low",
+              "hit": true,
+              "push": false,
+              "nonLoss": true
+            }
+          },
+          {
+            "section": "f5ou",
+            "row": {
+              "date": "2026-06-07",
+              "lane": "f5-ou",
+              "game": "Brewers @ Rockies",
+              "pick": "Under 6.5",
+              "confidence": 78,
+              "edge": 2.5,
+              "side": "Under",
+              "hit": true
+            }
+          },
+          {
+            "section": "teamtotal",
+            "row": {
+              "date": "2026-06-07",
+              "lane": "team-total-f5",
+              "game": "Brewers @ Rockies",
+              "pick": "Brewers Under 3.5",
+              "confidence": 80,
+              "edge": 1,
+              "thresholdCushion": 1,
+              "side": "Under",
+              "hit": true
+            }
+          }
+        ],
+        "wins": 3,
+        "losses": 1,
+        "total": 4,
+        "hitRatePct": 75,
+        "label": "3-1"
+      },
+      "calibrated": {
+        "picks": [
+          {
+            "section": "teamtotal",
+            "row": {
+              "date": "2026-06-07",
+              "lane": "team-total-f5",
+              "game": "Brewers @ Rockies",
+              "pick": "Brewers Under 3.5",
+              "confidence": 80,
+              "edge": 1,
+              "thresholdCushion": 1,
+              "side": "Under",
+              "hit": true
+            }
+          }
+        ],
+        "wins": 1,
+        "losses": 0,
+        "total": 1,
+        "hitRatePct": 100,
+        "label": "1-0"
+      }
+    },
+    {
+      "date": "2026-06-08",
+      "raw": {
+        "picks": [
+          {
+            "section": "shape",
+            "row": {
+              "date": "2026-06-08",
+              "lane": "ml-shape",
+              "game": "Astros @ Angels",
+              "pick": "Astros",
+              "confidence": 54,
+              "edge": 2.8,
+              "runDiff": 0.2,
+              "marketEdge": 54,
+              "hit": true,
+              "shadowCalibration": {
+                "mode": "shadow",
+                "tier": "watch",
+                "potdEligible": false,
+                "calibratedScore": 73.3,
+                "modelConfidence": 54,
+                "lane": "ml-shape",
+                "primarySignal": "modelConfidence",
+                "secondarySignal": "marketEdge",
+                "tiebreakSignal": "marginSupport",
+                "metricConflict": "watch-low-confidence",
+                "reasons": [
+                  "Astros: 54% model confidence is the primary ML signal; 2.8% margin support is only tiebreak context. +54.0 pts market edge.",
+                  "ML shape below 65% is watch-only; confidence remains the primary ML trust signal."
+                ],
+                "cautions": [
+                  "Small sample: June 6-8 seed window only."
+                ],
+                "evidence": {
+                  "seedWindow": "2026-06-06..2026-06-08",
+                  "bucket": "ML shape below 65",
+                  "record": "12-10",
+                  "hitRatePct": 54.5
+                }
+              }
+            }
+          },
+          {
+            "section": "f5ml",
+            "row": {
+              "date": "2026-06-08",
+              "lane": "f5-ml",
+              "game": "Astros @ Angels",
+              "pick": "Astros",
+              "confidence": 50,
+              "edge": 0.10000000000000009,
+              "tiePct": 21,
+              "tieRisk": "low",
+              "hit": false,
+              "push": false,
+              "nonLoss": false
+            }
+          },
+          {
+            "section": "f5ou",
+            "row": {
+              "date": "2026-06-08",
+              "lane": "f5-ou",
+              "game": "Mariners @ Orioles",
+              "pick": "Under 4.5",
+              "confidence": 60,
+              "edge": 0.5,
+              "side": "Under",
+              "hit": false
+            }
+          }
+        ],
+        "wins": 1,
+        "losses": 2,
+        "total": 3,
+        "hitRatePct": 33.3,
+        "label": "1-2"
+      },
+      "calibrated": {
+        "picks": [],
+        "wins": 0,
+        "losses": 0,
+        "total": 0,
+        "hitRatePct": null,
+        "label": "0-0"
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "raw": {
+        "picks": [
+          {
+            "section": "shape",
+            "row": {
+              "date": "2026-06-09",
+              "lane": "ml-shape",
+              "game": "Braves @ White Sox",
+              "pick": "Braves",
+              "confidence": 59,
+              "edge": 0,
+              "runDiff": 0,
+              "marketEdge": -2.0894941634241277,
+              "hit": false,
+              "shadowCalibration": {
+                "mode": "shadow",
+                "tier": "watch",
+                "potdEligible": false,
+                "calibratedScore": 59,
+                "modelConfidence": 59,
+                "lane": "ml-shape",
+                "primarySignal": "modelConfidence",
+                "secondarySignal": "marketEdge",
+                "tiebreakSignal": "marginSupport",
+                "metricConflict": "watch-low-confidence",
+                "reasons": [
+                  "Braves: 59% model confidence is the primary ML signal; 0.0% margin support is only tiebreak context. -2.1 pts market edge.",
+                  "ML shape below 65% is watch-only; confidence remains the primary ML trust signal."
+                ],
+                "cautions": [
+                  "Small sample: June 6-8 seed window only."
+                ],
+                "evidence": {
+                  "seedWindow": "2026-06-06..2026-06-08",
+                  "bucket": "ML shape below 65",
+                  "record": "12-10",
+                  "hitRatePct": 54.5
+                }
+              }
+            }
+          },
+          {
+            "section": "f5ml",
+            "row": {
+              "date": "2026-06-09",
+              "lane": "f5-ml",
+              "game": "Mariners @ Orioles",
+              "pick": "Orioles",
+              "confidence": 50,
+              "edge": 0,
+              "tiePct": 20.7,
+              "tieRisk": "low",
+              "hit": false,
+              "push": false,
+              "nonLoss": false
+            }
+          },
+          {
+            "section": "f5ou",
+            "row": {
+              "date": "2026-06-09",
+              "lane": "f5-ou",
+              "game": "Braves @ White Sox",
+              "pick": "Under 5.5",
+              "confidence": 78,
+              "edge": 1.5,
+              "side": "Under",
+              "hit": false
+            }
+          }
+        ],
+        "wins": 0,
+        "losses": 3,
+        "total": 3,
+        "hitRatePct": 0,
+        "label": "0-3"
+      },
+      "calibrated": {
+        "picks": [],
+        "wins": 0,
+        "losses": 0,
+        "total": 0,
+        "hitRatePct": null,
+        "label": "0-0"
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "raw": {
+        "picks": [
+          {
+            "section": "shape",
+            "row": {
+              "date": "2026-06-10",
+              "lane": "ml-shape",
+              "game": "Reds @ Padres",
+              "pick": "Padres",
+              "confidence": 65,
+              "edge": 0,
+              "runDiff": 0,
+              "marketEdge": 2.3134328358208904,
+              "hit": true,
+              "shadowCalibration": {
+                "mode": "shadow",
+                "tier": "promoted",
+                "potdEligible": true,
+                "calibratedScore": 73.8,
+                "modelConfidence": 65,
+                "lane": "ml-shape",
+                "primarySignal": "modelConfidence",
+                "secondarySignal": "marketEdge",
+                "tiebreakSignal": "marginSupport",
+                "metricConflict": "high-confidence-thin-margin",
+                "reasons": [
+                  "Padres: Confidence is carrying this ML read; 0.0% margin support is thin, so this is a closer-score win profile. +2.3 pts market edge.",
+                  "ML shape confidence >=65 is the current promoted seed bucket."
+                ],
+                "cautions": [
+                  "Small sample: June 6-8 seed window only."
+                ],
+                "evidence": {
+                  "seedWindow": "2026-06-06..2026-06-08",
+                  "bucket": "ML shape confidence >=65",
+                  "record": "12-3",
+                  "hitRatePct": 80
+                }
+              }
+            }
+          },
+          {
+            "section": "f5ml",
+            "row": {
+              "date": "2026-06-10",
+              "lane": "f5-ml",
+              "game": "Red Sox @ Rays",
+              "pick": "Rays",
+              "confidence": 50,
+              "edge": 0,
+              "tiePct": 20.7,
+              "tieRisk": "low",
+              "hit": true,
+              "push": false,
+              "nonLoss": true
+            }
+          },
+          {
+            "section": "f5ou",
+            "row": {
+              "date": "2026-06-10",
+              "lane": "f5-ou",
+              "game": "Twins @ Tigers",
+              "pick": "Under 5.5",
+              "confidence": 78,
+              "edge": 1.5,
+              "side": "Under",
+              "hit": false
+            }
+          }
+        ],
+        "wins": 2,
+        "losses": 1,
+        "total": 3,
+        "hitRatePct": 66.7,
+        "label": "2-1"
+      },
+      "calibrated": {
+        "picks": [
+          {
+            "section": "shape",
+            "row": {
+              "date": "2026-06-10",
+              "lane": "ml-shape",
+              "game": "Reds @ Padres",
+              "pick": "Padres",
+              "confidence": 65,
+              "edge": 0,
+              "runDiff": 0,
+              "marketEdge": 2.3134328358208904,
+              "hit": true,
+              "shadowCalibration": {
+                "mode": "shadow",
+                "tier": "promoted",
+                "potdEligible": true,
+                "calibratedScore": 73.8,
+                "modelConfidence": 65,
+                "lane": "ml-shape",
+                "primarySignal": "modelConfidence",
+                "secondarySignal": "marketEdge",
+                "tiebreakSignal": "marginSupport",
+                "metricConflict": "high-confidence-thin-margin",
+                "reasons": [
+                  "Padres: Confidence is carrying this ML read; 0.0% margin support is thin, so this is a closer-score win profile. +2.3 pts market edge.",
+                  "ML shape confidence >=65 is the current promoted seed bucket."
+                ],
+                "cautions": [
+                  "Small sample: June 6-8 seed window only."
+                ],
+                "evidence": {
+                  "seedWindow": "2026-06-06..2026-06-08",
+                  "bucket": "ML shape confidence >=65",
+                  "record": "12-3",
+                  "hitRatePct": 80
+                }
+              }
+            }
+          }
+        ],
+        "wins": 1,
+        "losses": 0,
+        "total": 1,
+        "hitRatePct": 100,
+        "label": "1-0"
+      }
+    }
+  ],
+  "rules": {
+    "promotedShape": "ML shape confidence >=65",
+    "mlShapeSignalPriority": "promotion tier -> model confidence -> market edge -> margin support",
+    "mlShapeConflictPolicy": "High margin support does not override low confidence; high confidence with thin margin is a closer-score win profile.",
+    "promotedF5Ml": "F5 ML confidence-first promotion: edge >=0.5, lead confidence >=52, tiePct <20; edge >=1.5 is strong-edge support, not a demotion",
+    "promotedNrfi": "NRFI confidence >=60",
+    "promotedTeamTotal": "F5 team total confidence >=65 or <60 seed only when discrete hit-threshold cushion >=0.75 runs; watch thin threshold cushions even when raw line edge looks large",
+    "researchOnly": [
+      "YRFI",
+      "F5 O/U",
+      "F5 O/U Pass/Hold/Unsupported over"
+    ]
+  }
+}

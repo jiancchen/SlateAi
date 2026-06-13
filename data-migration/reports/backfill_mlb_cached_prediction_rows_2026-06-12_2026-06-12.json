@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-06-12T21:20:21.603Z",
+  "script": "data-migration/scripts/backfill_mlb_cached_prediction_rows.mjs",
+  "db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "start": "2026-06-12",
+  "end": "2026-06-12",
+  "dry_run": false,
+  "dates": [
+    {
+      "date": "2026-06-12",
+      "rows": 681,
+      "lane_counts": {
+        "ml_shape": 14,
+        "first_inning": 14,
+        "full_total": 9,
+        "first5_ml": 13,
+        "first5_total": 8,
+        "player_prop": 611,
+        "home_run": 12
+      },
+      "game_artifacts": 14,
+      "prop_rows": 611,
+      "prop_sources": [
+        "web/public/data/slates/2026-06-12/props.json"
+      ],
+      "home_run_rows": 12,
+      "home_run_sources": [
+        "web/public/data/slates/2026-06-12/home-runs.json"
+      ]
+    }
+  ],
+  "planned_prediction_rows": 681,
+  "lane_counts": {
+    "ml_shape": 14,
+    "first_inning": 14,
+    "full_total": 9,
+    "first5_ml": 13,
+    "first5_total": 8,
+    "player_prop": 611,
+    "home_run": 12
+  },
+  "final_prediction_rows": 0,
+  "before_prediction_rows": 15923,
+  "after_prediction_rows": 15923,
+  "sample_rows": [
+    {
+      "prediction_row_id": "pred-915e9a62fe911857a4dac205943d8b43",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Royals",
+      "confidence": 52
+    },
+    {
+      "prediction_row_id": "pred-0af71602c46d4eeb21d972892a6a977b",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 81.1
+    },
+    {
+      "prediction_row_id": "pred-dc3238e468dbd51831dda4e6a89cb88f",
+      "lane": "full_total",
+      "market_type": "game_total",
+      "selection": "Over 9.5",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-cbfc2a6a5794b1add7371ea9144111ba",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Braves",
+      "confidence": 52
+    },
+    {
+      "prediction_row_id": "pred-07ece5c20b2ff28ed4ec1c75b55a7ba9",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 78.7
+    },
+    {
+      "prediction_row_id": "pred-dd5cc5316ce711e1709e167c6c6ebce0",
+      "lane": "first5_ml",
+      "market_type": "first5_moneyline",
+      "selection": "Mets",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-e90136d0135dc89b53d96420c723374a",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Cardinals",
+      "confidence": 52
+    },
+    {
+      "prediction_row_id": "pred-95e1435612301051fe4510e2dfee0589",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 50.1
+    },
+    {
+      "prediction_row_id": "pred-d02311b679a2ee5a3e9c0f09148b644a",
+      "lane": "first5_ml",
+      "market_type": "first5_moneyline",
+      "selection": "Twins",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-ce7987c00ee878e2de42f36520e434f6",
+      "lane": "first5_total",
+      "market_type": "first5_total",
+      "selection": "Over 4.9",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-6a6e2030a22dedcf20bf76ddbe87f0ae",
+      "lane": "full_total",
+      "market_type": "game_total",
+      "selection": "Over 9",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-2fafdfa5ab3122897de385bcb9aea575",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Giants",
+      "confidence": 64
+    }
+  ],
+  "ok": true
+}

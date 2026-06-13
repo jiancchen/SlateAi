@@ -3,6 +3,8 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+import { loadMlbAddendumContextsFromDb } from '../../../db/day-games.mjs'
+
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
@@ -162,6 +164,27 @@ const buildDeskGameId = ({ awayDesk, homeDesk, gamePk = null, forceUnique = fals
     return `${baseId}-${Number(gamePk)}`
   }
   return `${baseId}-2`
+}
+
+const emptyAddendumContexts = () => ({ byGamePk: {}, byGameId: {} })
+
+const loadAddendumContextsForDate = async (date) => {
+  try {
+    return await loadMlbAddendumContextsFromDb(date)
+  } catch (error) {
+    console.warn(`[generate-day-files] MLB addendum context unavailable for ${date}: ${error.message}`)
+    return emptyAddendumContexts()
+  }
+}
+
+const findAddendumContextForGame = (game, addendumContexts = emptyAddendumContexts()) => {
+  const gamePk = Number(game?.gamePk)
+  if (Number.isFinite(gamePk)) {
+    const byGamePk = addendumContexts.byGamePk?.[String(gamePk)]
+    if (byGamePk) return byGamePk
+  }
+
+  return addendumContexts.byGameId?.[game?.id] ?? null
 }
 
 const formatPtStart = (isoString) => {
@@ -3492,6 +3515,7 @@ const main = async () => {
   }
 
   rawGames.sort((left, right) => left.startMinutes - right.startMinutes || left.id.localeCompare(right.id))
+  const addendumContexts = await loadAddendumContextsForDate(options.date)
 
   const bullpenChainByTeam = buildBullpenChainByTeam({ date: options.date, games: rawGames })
   const recentBullpenTrendByTeam = buildRecentBullpenTrendByTeam({ date: options.date, games: rawGames })
@@ -3526,9 +3550,23 @@ const main = async () => {
   const tierThreeBullpenProfilesByTeam = buildTierThreeBullpenProfilesByTeam({ date: options.date, games: rawGames })
   const starterThirdTimePenaltyByPitcherId = buildStarterThirdTimePenaltyByPitcherId({ date: options.date, games: rawGames })
   const standingsContextByTeam = buildStandingsContext(standings.records || [])
-  const enrichedRawGames = rawGames.map((game) => ({
-    ...game,
-    awayPitcher: {
+  const enrichedRawGames = rawGames.map((game) => {
+    const addendumContext = findAddendumContextForGame(game, addendumContexts)
+    const hasReliefProjection =
+      Boolean(addendumContext?.reliefProjectionContext?.away) ||
+      Boolean(addendumContext?.reliefProjectionContext?.home)
+
+    return {
+      ...game,
+      parkContext: addendumContext?.parkContext ?? game.parkContext ?? null,
+      environmentAdjustmentContext: addendumContext?.environmentAdjustmentContext ?? game.environmentAdjustmentContext ?? null,
+      reliefProjectionContext: addendumContext?.reliefProjectionContext ?? game.reliefProjectionContext ?? null,
+      metadata: {
+        ...(game.metadata || {}),
+        ...(addendumContext?.environmentAdjustmentContext ? { environmentAddendum: 'MLB-ENV1' } : {}),
+        ...(hasReliefProjection ? { reliefProjectionAddendum: 'MLB-RP2' } : {})
+      },
+      awayPitcher: {
       ...game.awayPitcher,
       startHistoryLast5: Number.isFinite(game.awayPitcher?.id)
         ? (pitcherStartHistoryByPitcherId[game.awayPitcher.id] ?? []).slice(0, 5)
@@ -3662,7 +3700,8 @@ const main = async () => {
         home: Number.isFinite(game.homePitcher?.id) ? starterThirdTimePenaltyByPitcherId[game.homePitcher.id] ?? null : null
       }
     }
-  }))
+    }
+  })
 
   const dayDataModule = `export const rawGames = ${JSON.stringify(enrichedRawGames, null, 2)}\n\nexport const bullpenChainByTeam = ${JSON.stringify(bullpenChainByTeam, null, 2)}\n`
   const dayContextModule = `import {\n  teamOffenseContextByTeam,\n  teamBullpenContextByTeam,\n  teamSavantContextByTeam\n} from './mlb-context-${options.baselineContextDate}.js'\n\nexport const standingsContextByTeam = ${JSON.stringify(standingsContextByTeam, null, 2)}\n\nexport { teamOffenseContextByTeam, teamBullpenContextByTeam, teamSavantContextByTeam }\n`

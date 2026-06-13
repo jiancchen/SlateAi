@@ -253,6 +253,211 @@ const buildMlbBullpenChainScore = (profile = {}) => {
   return clamp(score, 18, 96)
 }
 
+const numberOrNull = (value) => {
+  const number = Number(value)
+  return Number.isFinite(number) ? number : null
+}
+
+const formatSignedTenths = (value) => {
+  const number = Number(value)
+  if (!Number.isFinite(number)) return '0.0'
+  const rounded = roundToTenths(number)
+  return `${rounded >= 0 ? '+' : ''}${rounded.toFixed(1)}`
+}
+
+const buildEnvironmentTotalContext = (environmentAdjustmentContext = null, weatherProfile = null) => {
+  if (!environmentAdjustmentContext) return null
+
+  const rawHrForce = numberOrNull(environmentAdjustmentContext.weather?.hrForce)
+  const effectiveHrForce = numberOrNull(environmentAdjustmentContext.weather?.effectiveHrForce)
+  const hrForce = effectiveHrForce ?? rawHrForce
+  const signal = `${environmentAdjustmentContext.weather?.signal || environmentAdjustmentContext.signal || ''}`.toLowerCase()
+  const isDome =
+    Boolean(weatherProfile?.isDome) ||
+    /dome|closed|n\/a|not.?applicable/.test(signal)
+  const expectedTotalRunsDelta = numberOrNull(environmentAdjustmentContext.expected?.totalRunsDelta) ?? 0
+  const expectedHitsDelta = numberOrNull(environmentAdjustmentContext.expected?.hitsDelta) ?? 0
+  const expectedHrDelta = numberOrNull(environmentAdjustmentContext.expected?.hrDelta) ?? 0
+  const weatherRunDelta = numberOrNull(environmentAdjustmentContext.weather?.runDelta) ?? 0
+  const weatherHrDelta = numberOrNull(environmentAdjustmentContext.weather?.hrDelta) ?? 0
+  const runsMultiplier = numberOrNull(environmentAdjustmentContext.visibility?.runsMultiplier) ?? 1
+  const hitsMultiplier = numberOrNull(environmentAdjustmentContext.visibility?.hitsMultiplier) ?? 1
+  const hrMultiplier = numberOrNull(environmentAdjustmentContext.visibility?.hrMultiplier) ?? 1
+  const highHrForce = Number.isFinite(hrForce) && hrForce >= 1.4 && !isDome
+  const lowerWeatherCarry =
+    isDome ||
+    !Number.isFinite(hrForce) ||
+    hrForce < 1.4
+  const runLift =
+    expectedTotalRunsDelta >= 0.35 ||
+    weatherRunDelta >= 0.25 ||
+    runsMultiplier >= 1.04
+  const runDrag =
+    expectedTotalRunsDelta <= -0.35 ||
+    weatherRunDelta <= -0.25 ||
+    runsMultiplier <= 0.96
+  const hrLift =
+    highHrForce ||
+    expectedHrDelta >= 0.18 ||
+    weatherHrDelta >= 0.12 ||
+    hrMultiplier >= 1.08
+
+  return {
+    modelVersion: environmentAdjustmentContext.modelVersion || null,
+    signal: environmentAdjustmentContext.signal || null,
+    isDome,
+    hrForce,
+    effectiveHrForce,
+    highHrForce,
+    lowerWeatherCarry,
+    runLift,
+    runDrag,
+    hrLift,
+    expectedTotalRunsDelta,
+    expectedHitsDelta,
+    expectedHrDelta,
+    weatherRunDelta,
+    weatherHrDelta,
+    runsMultiplier,
+    hitsMultiplier,
+    hrMultiplier
+  }
+}
+
+const buildEnvironmentFirstInningContext = (environmentAdjustmentContext = null, weatherProfile = null) => {
+  const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+  if (!envTotalContext) return null
+
+  const hrForce = envTotalContext.hrForce
+  const highHrForce = Boolean(envTotalContext.highHrForce)
+  const carryLift =
+    highHrForce && Number.isFinite(hrForce)
+      ? clamp((hrForce - 1.35) * 0.12, 0.018, 0.06)
+      : envTotalContext.runLift || envTotalContext.hrLift
+        ? 0.014
+        : 0
+  const runDeltaLift = clamp(Number(envTotalContext.expectedTotalRunsDelta || 0) * 0.018, -0.012, 0.018)
+  const visibilityLift = clamp((Number(envTotalContext.runsMultiplier || 1) - 1) * 0.12, -0.018, 0.018)
+  const probabilityLift = clamp(carryLift + runDeltaLift + visibilityLift, -0.02, 0.075)
+  const projectedRunsLift = clamp(probabilityLift * 0.9 + Number(envTotalContext.expectedTotalRunsDelta || 0) * 0.012, -0.025, 0.085)
+  const reason =
+    highHrForce && Number.isFinite(hrForce)
+      ? `ENV1 HRForce ${roundToTenths(hrForce)} raises YRFI carry`
+      : envTotalContext.runLift
+        ? `ENV1 run environment adds first-inning carry`
+        : envTotalContext.runDrag
+          ? `ENV1 run environment suppresses first-inning carry`
+          : null
+
+  return {
+    ...envTotalContext,
+    probabilityLift,
+    projectedRunsLift,
+    reason
+  }
+}
+
+const buildReliefProjectionTotalContext = (reliefProjectionContexts = []) => {
+  const sides = reliefProjectionContexts
+    .filter(Boolean)
+    .map((context) => {
+      const projectedReliefRunsAllowed = numberOrNull(context.projectedReliefRunsAllowed)
+      const projectedReliefOuts = numberOrNull(context.projectedReliefOuts)
+      const bridgeStressScore = numberOrNull(context.bridgeStressScore)
+      const fatigueScore = numberOrNull(context.fatigueScore)
+      const leverageAvailabilityScore = numberOrNull(context.leverageAvailabilityScore)
+      const qualityScore = numberOrNull(context.qualityScore)
+
+      return {
+        teamName: context.teamName || null,
+        projectedReliefRunsAllowed,
+        projectedReliefOuts,
+        bridgeStressScore,
+        fatigueScore,
+        leverageAvailabilityScore,
+        qualityScore,
+        runRiskTier: context.runRiskTier || null
+      }
+    })
+
+  if (!sides.length) return null
+
+  const projectedRuns = sides
+    .map((side) => side.projectedReliefRunsAllowed)
+    .filter(Number.isFinite)
+  const projectedOuts = sides
+    .map((side) => side.projectedReliefOuts)
+    .filter(Number.isFinite)
+  const bridgeStress = sides
+    .map((side) => side.bridgeStressScore)
+    .filter(Number.isFinite)
+  const fatigueScores = sides
+    .map((side) => side.fatigueScore)
+    .filter(Number.isFinite)
+  const qualityScores = sides
+    .map((side) => side.qualityScore)
+    .filter(Number.isFinite)
+  const taxedBridgeCount = sides.filter((side) => /taxed|watch/i.test(side.runRiskTier || '')).length
+  const maxProjectedReliefRunsAllowed = projectedRuns.length ? Math.max(...projectedRuns) : null
+  const combinedProjectedReliefRunsAllowed = projectedRuns.length ? projectedRuns.reduce((sum, value) => sum + value, 0) : null
+  const maxProjectedReliefOuts = projectedOuts.length ? Math.max(...projectedOuts) : null
+  const maxBridgeStressScore = bridgeStress.length ? Math.max(...bridgeStress) : null
+  const maxFatigueScore = fatigueScores.length ? Math.max(...fatigueScores) : null
+  const minQualityScore = qualityScores.length ? Math.min(...qualityScores) : null
+  const highLateRunRisk =
+    (Number.isFinite(maxBridgeStressScore) && maxBridgeStressScore >= 64) ||
+    (Number.isFinite(maxProjectedReliefRunsAllowed) && maxProjectedReliefRunsAllowed >= 2.25) ||
+    (Number.isFinite(combinedProjectedReliefRunsAllowed) && combinedProjectedReliefRunsAllowed >= 4.25) ||
+    taxedBridgeCount > 0
+  const watchLateRunRisk =
+    highLateRunRisk ||
+    (Number.isFinite(maxBridgeStressScore) && maxBridgeStressScore >= 56) ||
+    (Number.isFinite(maxProjectedReliefRunsAllowed) && maxProjectedReliefRunsAllowed >= 2.0) ||
+    (Number.isFinite(maxFatigueScore) && maxFatigueScore >= 62) ||
+    (Number.isFinite(minQualityScore) && minQualityScore <= 42)
+
+  return {
+    sides,
+    maxProjectedReliefRunsAllowed,
+    combinedProjectedReliefRunsAllowed,
+    maxProjectedReliefOuts,
+    maxBridgeStressScore,
+    maxFatigueScore,
+    minQualityScore,
+    taxedBridgeCount,
+    highLateRunRisk,
+    watchLateRunRisk
+  }
+}
+
+const buildRp2LateRunConversionDelta = (context = null) => {
+  if (!context) return 0
+
+  const projectedReliefRunsAllowed = numberOrNull(context.projectedReliefRunsAllowed)
+  const bridgeStressScore = numberOrNull(context.bridgeStressScore)
+  const fatigueScore = numberOrNull(context.fatigueScore)
+  const qualityScore = numberOrNull(context.qualityScore)
+  const runRiskTier = `${context.runRiskTier || ''}`.toLowerCase()
+  let delta = 0
+
+  if (Number.isFinite(projectedReliefRunsAllowed)) {
+    delta += (projectedReliefRunsAllowed - 1.75) * 0.009
+  }
+  if (Number.isFinite(bridgeStressScore)) {
+    delta += (bridgeStressScore - 52) * 0.00045
+  }
+  if (Number.isFinite(fatigueScore)) {
+    delta += (fatigueScore - 50) * 0.00028
+  }
+  if (Number.isFinite(qualityScore)) {
+    delta -= (qualityScore - 55) * 0.00024
+  }
+  if (/taxed/.test(runRiskTier)) delta += 0.006
+  else if (/fresh/.test(runRiskTier)) delta -= 0.004
+
+  return clamp(delta, -0.016, 0.024)
+}
+
 const buildMlbBullpenChainSignal = (game, participants) => {
   const awayContext = game.bullpenChainContext?.away
   const homeContext = game.bullpenChainContext?.home
@@ -508,7 +713,9 @@ const buildProjectedHitProfile = ({
   opposingBullpenChain = null,
   parkContext = null,
   weatherProfile = null,
-  sunVisibilityProfile = null
+  sunVisibilityProfile = null,
+  environmentAdjustmentContext = null,
+  opposingReliefProjectionContext = null
 }) => {
   const offenseFeedStale = Boolean(offenseProfile?.staleFeed)
   const splitHits = /home/i.test(role)
@@ -707,6 +914,42 @@ const buildProjectedHitProfile = ({
       Math.abs(Number(weatherProfile.hitBoostLate || 0)) >= 0.04
     ) {
       qualityNotes.push('weather lane')
+    }
+  }
+
+  const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+  if (envTotalContext) {
+    const envHitLift = clamp(
+      Number(envTotalContext.expectedHitsDelta || 0) * 0.42 +
+        (Number(envTotalContext.hitsMultiplier || 1) - 1) * 7.2 +
+        (envTotalContext.hrLift ? 0.08 : 0) -
+        (envTotalContext.runDrag ? 0.07 : 0),
+      -0.32,
+      0.42
+    )
+
+    if (Math.abs(envHitLift) >= 0.04) {
+      starterPhaseProjection += envHitLift * 0.56
+      bullpenAdjustment += envHitLift * 0.44
+      qualityNotes.push('ENV1 hit environment')
+    }
+  }
+
+  if (opposingReliefProjectionContext) {
+    const projectedReliefRunsAllowed = numberOrNull(opposingReliefProjectionContext.projectedReliefRunsAllowed)
+    const bridgeStressScore = numberOrNull(opposingReliefProjectionContext.bridgeStressScore)
+    const qualityScore = numberOrNull(opposingReliefProjectionContext.qualityScore)
+    const rp2HitAdjustment = clamp(
+      (Number.isFinite(projectedReliefRunsAllowed) ? (projectedReliefRunsAllowed - 1.75) * 0.14 : 0) +
+        (Number.isFinite(bridgeStressScore) ? (bridgeStressScore - 52) * 0.006 : 0) -
+        (Number.isFinite(qualityScore) ? (qualityScore - 55) * 0.004 : 0),
+      -0.26,
+      0.36
+    )
+
+    if (Math.abs(rp2HitAdjustment) >= 0.04) {
+      bullpenAdjustment += rp2HitAdjustment
+      qualityNotes.push('RP2 relief run projection')
     }
   }
 
@@ -979,6 +1222,8 @@ const buildRunConversionRate = ({
   parkContext,
   opposingStarter,
   opposingBullpenExhaustion,
+  opposingReliefProjectionContext = null,
+  environmentAdjustmentContext = null,
   lineupProfile = null,
   weatherProfile = null,
   phase = 'full'
@@ -1022,6 +1267,11 @@ const buildRunConversionRate = ({
     if (weatherProfile) {
       rate += Number(weatherProfile.runBoostFirst5 || 0)
     }
+
+    const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+    if (envTotalContext?.highHrForce) rate += 0.0035
+    if (envTotalContext?.runLift) rate += 0.0025
+    if (envTotalContext?.runDrag) rate -= 0.0025
   }
 
   if (phase === 'late') {
@@ -1035,9 +1285,16 @@ const buildRunConversionRate = ({
       rate += Math.max(lineupProfile.bullpenPitchTypePressureIndex - 50, 0) * 0.00065
     }
 
+    rate += buildRp2LateRunConversionDelta(opposingReliefProjectionContext)
+
     if (weatherProfile) {
       rate += Number(weatherProfile.runBoostLate || 0)
     }
+
+    const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+    if (envTotalContext?.highHrForce) rate += 0.004
+    if (envTotalContext?.runLift) rate += 0.003
+    if (envTotalContext?.runDrag) rate -= 0.003
   }
 
   if (phase === 'full' && weatherProfile) {
@@ -1083,8 +1340,12 @@ const buildFirst5TailOverlay = ({
   lineupConversionShapes = [],
   bullpenMistakeShapes = [],
   weatherProfile = null,
-  sunVisibilityProfile = null
+  sunVisibilityProfile = null,
+  environmentAdjustmentContext = null,
+  reliefProjectionContexts = []
 }) => {
+  const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+  const reliefTotalContext = buildReliefProjectionTotalContext(reliefProjectionContexts)
   const weatherLabel = `${weatherProfile?.label || ''}`.toLowerCase()
   const temperatureF = Number(weatherProfile?.temperatureF)
   const windDirection = `${weatherProfile?.windDirection || ''}`.toLowerCase()
@@ -1094,12 +1355,15 @@ const buildFirst5TailOverlay = ({
       /helps carry|wind .*out/.test(weatherLabel) ||
       /out/.test(windDirection) ||
       Number(weatherProfile?.runBoostFirst5 || 0) >= 0.008 ||
-      (Number.isFinite(temperatureF) && temperatureF >= 80)
+      (Number.isFinite(temperatureF) && temperatureF >= 80) ||
+      envTotalContext?.highHrForce ||
+      envTotalContext?.runLift
     )
   const weatherSuppress =
     /suppresses carry|wind .*in/.test(weatherLabel) ||
     /in/.test(windDirection) ||
-    Number(weatherProfile?.runBoostFirst5 || 0) <= -0.008
+    Number(weatherProfile?.runBoostFirst5 || 0) <= -0.008 ||
+    envTotalContext?.runDrag
   const maxMistakeChaos = maxMetric(teamMistakeShapes, 'mistakeChaosIndex')
   const maxRunClustering = maxMetric(teamMistakeShapes, 'runClusteringIndex')
   const maxEarlyMultiRunAllowed = maxMetric(teamMistakeShapes, 'earlyMultiRunAllowedRate')
@@ -1131,6 +1395,11 @@ const buildFirst5TailOverlay = ({
     clamp((Number(maxBullpenMeltdown || 0) - 0.18) * 32, 0, 7)
 
   if (weatherCarry) tailScore += 14
+  if (envTotalContext?.highHrForce) tailScore += 12
+  else if (envTotalContext?.runLift || envTotalContext?.hrLift) tailScore += 6
+  if (reliefTotalContext?.watchLateRunRisk && Number(reliefTotalContext.maxProjectedReliefOuts || 0) >= 11) {
+    tailScore += reliefTotalContext.highLateRunRisk ? 7 : 4
+  }
   if (Number.isFinite(visibilityRisk)) tailScore += clamp((visibilityRisk - 24) * 0.55, 0, 12)
 
   let strandScore =
@@ -1206,6 +1475,10 @@ const buildFirst5TailOverlay = ({
     )
     notes.push('fat-tail run environment')
     if (weatherCarry) notes.push('carry/weather turns ordinary contact into extra-base risk')
+    if (envTotalContext?.highHrForce) notes.push(`ENV1 HRForce ${roundToTenths(envTotalContext.hrForce)}`)
+    if (reliefTotalContext?.watchLateRunRisk && Number(reliefTotalContext.maxProjectedReliefOuts || 0) >= 11) {
+      notes.push('RP2 bridge can enter the first-five window')
+    }
     if (maxBigInningRate >= 0.58) notes.push('one-inning damage risk')
   }
 
@@ -1272,6 +1545,19 @@ const buildFirst5TailOverlay = ({
       totalFirst5ProjectedHits: roundToTenths(totalFirst5Hits),
       weatherCarry,
       weatherSuppress,
+      envRunDelta: envTotalContext ? roundToTenths(envTotalContext.expectedTotalRunsDelta) : null,
+      envHitsDelta: envTotalContext ? roundToTenths(envTotalContext.expectedHitsDelta) : null,
+      envHrDelta: envTotalContext ? roundToTenths(envTotalContext.expectedHrDelta) : null,
+      hrForce: envTotalContext?.hrForce != null ? roundToTenths(envTotalContext.hrForce) : null,
+      highHrForce: Boolean(envTotalContext?.highHrForce),
+      lowerWeatherCarry: Boolean(envTotalContext?.lowerWeatherCarry),
+      maxRp2BridgeStress: reliefTotalContext?.maxBridgeStressScore != null
+        ? roundToTenths(reliefTotalContext.maxBridgeStressScore)
+        : null,
+      maxRp2ReliefRuns: reliefTotalContext?.maxProjectedReliefRunsAllowed != null
+        ? roundToTenths(reliefTotalContext.maxProjectedReliefRunsAllowed)
+        : null,
+      rp2LateRunRisk: Boolean(reliefTotalContext?.watchLateRunRisk),
       visibilityRisk: Number.isFinite(visibilityRisk) ? roundToTenths(visibilityRisk) : null
     }
   }
@@ -1323,8 +1609,12 @@ const buildTotalChaosGate = ({
   teamMistakeShapes = [],
   lineupConversionShapes = [],
   bullpenMistakeShapes = [],
-  weatherProfile = null
+  weatherProfile = null,
+  environmentAdjustmentContext = null,
+  reliefProjectionContexts = []
 }) => {
+  const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+  const reliefTotalContext = buildReliefProjectionTotalContext(reliefProjectionContexts)
   const lean = totalLean?.lean
   const edge = Number(totalLean?.edge)
   const absEdge = Math.abs(edge)
@@ -1338,12 +1628,15 @@ const buildTotalChaosGate = ({
       /helps carry|wind .*out/.test(weatherLabel) ||
       /out/.test(windDirection) ||
       Number(weatherProfile?.runBoostFirst5 || 0) + Number(weatherProfile?.runBoostLate || 0) >= 0.008 ||
-      (Number.isFinite(temperatureF) && temperatureF >= 80)
+      (Number.isFinite(temperatureF) && temperatureF >= 80) ||
+      envTotalContext?.highHrForce ||
+      envTotalContext?.runLift
     )
   const weatherSuppress =
     /suppresses carry|wind .*in/.test(weatherLabel) ||
     /in/.test(windDirection) ||
-    Number(weatherProfile?.runBoostFirst5 || 0) + Number(weatherProfile?.runBoostLate || 0) <= -0.008
+    Number(weatherProfile?.runBoostFirst5 || 0) + Number(weatherProfile?.runBoostLate || 0) <= -0.008 ||
+    envTotalContext?.runDrag
   const crosswindVolatility =
     Number.isFinite(windMph) &&
     windMph >= 6 &&
@@ -1412,6 +1705,34 @@ const buildTotalChaosGate = ({
     notes.push(weatherProfile?.label || 'weather carry')
   }
 
+  if (envTotalContext?.highHrForce) {
+    overChaosScore += 2
+    notes.push(`ENV1 HRForce ${roundToTenths(envTotalContext.hrForce)}`)
+  } else if (envTotalContext?.runLift || envTotalContext?.hrLift) {
+    overChaosScore += 1
+    notes.push(`ENV1 run env ${formatSignedTenths(envTotalContext.expectedTotalRunsDelta)} R`)
+  }
+
+  if (envTotalContext?.runDrag) {
+    underDragScore += 1
+    notes.push(`ENV1 run env ${formatSignedTenths(envTotalContext.expectedTotalRunsDelta)} R`)
+  }
+
+  if (reliefTotalContext?.highLateRunRisk && phase !== 'first5') {
+    overChaosScore += 2
+    notes.push(`RP2 bridge stress ${roundToTenths(reliefTotalContext.maxBridgeStressScore || 0)}`)
+  } else if (reliefTotalContext?.watchLateRunRisk && phase !== 'first5') {
+    overChaosScore += 1
+    notes.push(`RP2 relief runs ${roundToTenths(reliefTotalContext.maxProjectedReliefRunsAllowed || 0)}`)
+  } else if (
+    reliefTotalContext?.watchLateRunRisk &&
+    phase === 'first5' &&
+    Number(reliefTotalContext.maxProjectedReliefOuts || 0) >= 11
+  ) {
+    overChaosScore += 1
+    notes.push('RP2 bridge can enter early')
+  }
+
   if (crosswindVolatility) {
     overChaosScore += 1
     notes.push(weatherProfile?.label || 'crosswind volatility')
@@ -1476,10 +1797,25 @@ const buildTotalChaosGate = ({
   const fullGameUnderLimit = overChaosScore >= 6 ? 1.8 : overChaosScore >= 4 ? 1.45 : 1.05
   const fullGameOverLimit = underDragScore >= 6 ? 1.6 : underDragScore >= 4 ? 1.25 : 0.9
   const first5Limit = phase === 'first5' ? 0.85 : 0.75
+  const envUnderConflict =
+    lean === 'Under' &&
+    Number.isFinite(absEdge) &&
+    (
+      envTotalContext?.highHrForce ||
+      envTotalContext?.runLift ||
+      envTotalContext?.hrLift
+    ) &&
+    absEdge <= (phase === 'full' ? 1.35 : phase === 'first5' ? 0.9 : 0.8)
+  const rp2UnderConflict =
+    lean === 'Under' &&
+    Number.isFinite(absEdge) &&
+    reliefTotalContext?.watchLateRunRisk &&
+    absEdge <= (phase === 'full' ? 1.25 : phase === 'late' ? 0.9 : 0.7) &&
+    (phase !== 'first5' || Number(reliefTotalContext.maxProjectedReliefOuts || 0) >= 11)
   const underVeto =
     lean === 'Under' &&
     Number.isFinite(absEdge) &&
-    overChaosScore >= 4 &&
+    (overChaosScore >= 4 || envUnderConflict || rp2UnderConflict) &&
     absEdge <= (phase === 'full' ? fullGameUnderLimit : first5Limit)
   const overVeto =
     lean === 'Over' &&
@@ -1488,10 +1824,16 @@ const buildTotalChaosGate = ({
     absEdge <= (phase === 'full' ? fullGameOverLimit : first5Limit)
   const warning =
     lean === 'Under'
-      ? overChaosScore >= 3
+      ? overChaosScore >= 3 || envUnderConflict || rp2UnderConflict
       : lean === 'Over'
         ? underDragScore >= 3
         : overChaosScore >= 3 || underDragScore >= 3
+  const vetoKind =
+    underVeto && (envUnderConflict || rp2UnderConflict)
+      ? 'addendum'
+      : underVeto || overVeto
+        ? 'chaos'
+        : null
 
   return {
     phase,
@@ -1499,8 +1841,13 @@ const buildTotalChaosGate = ({
     underDragScore,
     warning,
     vetoed: underVeto || overVeto,
+    vetoKind,
     vetoReason:
-      underVeto
+      underVeto && envUnderConflict
+        ? 'ENV1 HR/run carry conflicts with a fragile under'
+        : underVeto && rp2UnderConflict
+          ? 'RP2 bridge stress leaves late-scoring risk against a fragile under'
+          : underVeto
         ? 'under exposed to mistake-chaos and one-big-inning risk'
         : overVeto
           ? 'over exposed to quiet-start and traffic-without-conversion risk'
@@ -1517,7 +1864,20 @@ const buildTotalChaosGate = ({
         : null,
       minLineupConversion: Number.isFinite(minLineupConversion) ? roundToTenths(minLineupConversion) : null,
       weatherCarry,
-      weatherSuppress
+      weatherSuppress,
+      envRunDelta: envTotalContext ? roundToTenths(envTotalContext.expectedTotalRunsDelta) : null,
+      envHitsDelta: envTotalContext ? roundToTenths(envTotalContext.expectedHitsDelta) : null,
+      envHrDelta: envTotalContext ? roundToTenths(envTotalContext.expectedHrDelta) : null,
+      hrForce: envTotalContext?.hrForce != null ? roundToTenths(envTotalContext.hrForce) : null,
+      highHrForce: Boolean(envTotalContext?.highHrForce),
+      lowerWeatherCarry: Boolean(envTotalContext?.lowerWeatherCarry),
+      maxRp2BridgeStress: reliefTotalContext?.maxBridgeStressScore != null
+        ? roundToTenths(reliefTotalContext.maxBridgeStressScore)
+        : null,
+      maxRp2ReliefRuns: reliefTotalContext?.maxProjectedReliefRunsAllowed != null
+        ? roundToTenths(reliefTotalContext.maxProjectedReliefRunsAllowed)
+        : null,
+      rp2LateRunRisk: Boolean(reliefTotalContext?.watchLateRunRisk)
     }
   }
 }
@@ -1538,9 +1898,9 @@ const applyTotalChaosGate = (totalLean, inputs = {}) => {
   return {
     ...totalLean,
     lean: 'Pass',
-    strength: 'Chaos veto',
+    strength: gate.vetoKind === 'addendum' ? 'ENV/RP2 veto' : 'Chaos veto',
     label: Number.isFinite(line) ? `Hold ${line}` : 'Hold total',
-    summary: `${totalLean.summary} Chaos gate veto: ${gate.vetoReason}${noteText}.`,
+    summary: `${totalLean.summary} ${gate.vetoKind === 'addendum' ? 'ENV/RP2 addendum' : 'Chaos gate'} veto: ${gate.vetoReason}${noteText}.`,
     originalLean: totalLean.lean,
     originalStrength: totalLean.strength,
     originalLabel: totalLean.label,
@@ -1563,7 +1923,8 @@ const buildFirstInningRunProfile = ({
   opposingPitcherFirstInningProfile = null,
   opposingPitcherFirstInningSeasonProfile = null,
   opposingPitcherWarProfile = null,
-  weatherProfile = null
+  weatherProfile = null,
+  environmentAdjustmentContext = null
 }) => {
   if (!projectedRunProfile && !teamFirstInningProfile && !opposingPitcherFirstInningProfile) {
     return {
@@ -1643,6 +2004,10 @@ const buildFirstInningRunProfile = ({
   const projectedBaselineProbability = Number.isFinite(projectedBaselineRuns)
     ? 1 - Math.exp(-projectedBaselineRuns)
     : null
+  const envFirstInningContext = buildEnvironmentFirstInningContext(
+    environmentAdjustmentContext,
+    weatherProfile
+  )
 
   let projectedRunsNumerator = 0
   let projectedRunsWeight = 0
@@ -1823,6 +2188,13 @@ const buildFirstInningRunProfile = ({
   if (Number.isFinite(weatherProfile?.runBoostFirst5) && Number(weatherProfile.runBoostFirst5) >= 0.05) {
     supportingReasons.push(`weather is adding early run carry`)
   }
+  if (envFirstInningContext?.reason) {
+    if (Number(envFirstInningContext.probabilityLift || 0) >= 0) {
+      supportingReasons.push(envFirstInningContext.reason)
+    } else {
+      suppressingReasons.push(envFirstInningContext.reason)
+    }
+  }
 
   runProbability += Math.max(topThirdScore - 50, 0) * 0.0015
   runProbability += Math.max(starterPressureIndex - 50, 0) * 0.001
@@ -1925,6 +2297,10 @@ const buildFirstInningRunProfile = ({
   if (weatherProfile) {
     projectedRuns *= 1 + (Number(weatherProfile.runBoostFirst5 || 0) * 1.4)
   }
+  if (envFirstInningContext) {
+    runProbability += Number(envFirstInningContext.probabilityLift || 0)
+    projectedRuns += Number(envFirstInningContext.projectedRunsLift || 0)
+  }
 
   runProbability = clamp(runProbability, 0.04, 0.72)
   const impliedRunsFromProbability = -Math.log(1 - clamp(runProbability, 0.01, 0.92))
@@ -1954,7 +2330,17 @@ const buildFirstInningRunProfile = ({
       ? roundToTenths(opposingPitcherSeasonRunGameRate * 100)
       : null,
     supportReasons: supportingReasons,
-    suppressReasons: suppressingReasons
+    suppressReasons: suppressingReasons,
+    environmentAddendum: envFirstInningContext
+      ? {
+          hrForce: envFirstInningContext.hrForce != null ? roundToTenths(envFirstInningContext.hrForce) : null,
+          highHrForce: Boolean(envFirstInningContext.highHrForce),
+          expectedTotalRunsDelta: roundToTenths(Number(envFirstInningContext.expectedTotalRunsDelta || 0)),
+          probabilityLiftPct: roundToTenths(Number(envFirstInningContext.probabilityLift || 0) * 100),
+          projectedRunsLift: roundToTenths(Number(envFirstInningContext.projectedRunsLift || 0)),
+          reason: envFirstInningContext.reason
+        }
+      : null
   }
 }
 
@@ -2029,6 +2415,11 @@ const buildFirstInningLean = ({ awayTeam, homeTeam, awayProfile, homeProfile }) 
     pick === 'YRFI'
       ? buildReasonStack(suppressProfiles, 'suppressReasons').slice(0, 3)
       : buildReasonStack(supportProfiles, 'supportReasons').slice(0, 3)
+  const environmentAddendums = [awayProfile.environmentAddendum, homeProfile.environmentAddendum].filter(Boolean)
+  const highHrForceAddendum = environmentAddendums.find((entry) => entry.highHrForce && Number.isFinite(Number(entry.hrForce)))
+  const firstInningAddendumNote = highHrForceAddendum
+    ? ` ENV1 HRForce ${roundToTenths(Number(highHrForceAddendum.hrForce))} is embedded in the first-inning run probability.`
+    : ''
 
   return {
     pick,
@@ -2047,14 +2438,27 @@ const buildFirstInningLean = ({ awayTeam, homeTeam, awayProfile, homeProfile }) 
     homeProjectedRuns: homeProfile.projectedRuns,
     reasonStack,
     cautionStack,
+    environmentAddendum: environmentAddendums.length
+      ? {
+          hrForce: highHrForceAddendum?.hrForce ?? environmentAddendums[0]?.hrForce ?? null,
+          highHrForce: Boolean(highHrForceAddendum),
+          maxProbabilityLiftPct: roundToTenths(
+            Math.max(...environmentAddendums.map((entry) => Number(entry.probabilityLiftPct || 0)))
+          ),
+          maxProjectedRunsLift: roundToTenths(
+            Math.max(...environmentAddendums.map((entry) => Number(entry.projectedRunsLift || 0)))
+          ),
+          reasons: [...new Set(environmentAddendums.map((entry) => entry.reason).filter(Boolean))]
+        }
+      : null,
     projectedRuns: roundToTenths(
       (Number(awayProfile.projectedRuns) || 0) + (Number(homeProfile.projectedRuns) || 0)
     ),
     line: 0.5,
     summary:
       pick === 'YRFI'
-        ? `${pick} with a ${Math.round(pickedProbability * 100)}% modeled chance of at least one first-inning run. ${awayTeam} score ${awayProfile.runProbability}% of the time and ${homeTeam} ${homeProfile.runProbability}% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.`
-        : `${pick} with a ${Math.round(pickedProbability * 100)}% modeled chance that the first inning stays scoreless. ${awayTeam} score ${awayProfile.runProbability}% of the time and ${homeTeam} ${homeProfile.runProbability}% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.`
+        ? `${pick} with a ${Math.round(pickedProbability * 100)}% modeled chance of at least one first-inning run. ${awayTeam} score ${awayProfile.runProbability}% of the time and ${homeTeam} ${homeProfile.runProbability}% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.${firstInningAddendumNote}`
+        : `${pick} with a ${Math.round(pickedProbability * 100)}% modeled chance that the first inning stays scoreless. ${awayTeam} score ${awayProfile.runProbability}% of the time and ${homeTeam} ${homeProfile.runProbability}% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.${firstInningAddendumNote}`
   }
 }
 
@@ -2383,6 +2787,95 @@ const buildMlbLineupMatchupSignal = (game, participants) => {
   )
 }
 
+const summarizeEnvironmentAdjustmentContext = (context = null) => {
+  if (!context) return null
+  const exactUmpire = `${context.umpire?.assignmentStatus || ''}`.toLowerCase() === 'exact'
+
+  return {
+    modelVersion: context.modelVersion || null,
+    venueName: context.venueName || '',
+    signal: context.signal || null,
+    confidenceScore: Number.isFinite(Number(context.confidenceScore)) ? Number(context.confidenceScore) : null,
+    expected: {
+      totalRunsDelta: Number(context.expected?.totalRunsDelta || 0),
+      hitsDelta: Number(context.expected?.hitsDelta || 0),
+      hrDelta: Number(context.expected?.hrDelta || 0),
+      strikeoutsDelta: Number(context.expected?.strikeoutsDelta || 0),
+      walksDelta: Number(context.expected?.walksDelta || 0)
+    },
+    park: {
+      indexRuns: Number.isFinite(Number(context.park?.indexRuns)) ? Number(context.park.indexRuns) : null,
+      indexHr: Number.isFinite(Number(context.park?.indexHr)) ? Number(context.park.indexHr) : null,
+      runDelta: Number(context.park?.runDelta || 0),
+      hrDelta: Number(context.park?.hrDelta || 0)
+    },
+    weather: {
+      hrForce: Number.isFinite(Number(context.weather?.hrForce)) ? Number(context.weather.hrForce) : null,
+      effectiveHrForce: Number.isFinite(Number(context.weather?.effectiveHrForce)) ? Number(context.weather.effectiveHrForce) : null,
+      signal: context.weather?.signal || null,
+      runDelta: Number(context.weather?.runDelta || 0),
+      hrDelta: Number(context.weather?.hrDelta || 0)
+    },
+    umpire: {
+      name: context.umpire?.name || null,
+      assignmentStatus: context.umpire?.assignmentStatus || null,
+      exactAssignment: exactUmpire,
+      favorsCode: context.umpire?.favorsCode || null,
+      zoneFactor: Number.isFinite(Number(context.umpire?.zoneFactor)) ? Number(context.umpire.zoneFactor) : null,
+      runsDelta: Number(context.umpire?.runsDelta || 0),
+      strikeoutsDelta: Number(context.umpire?.strikeoutsDelta || 0),
+      walksDelta: Number(context.umpire?.walksDelta || 0)
+    },
+    visibility: {
+      lateLocalStart: Boolean(context.visibility?.lateLocalStart),
+      signal: context.visibility?.signal || null,
+      hitsMultiplier: Number(context.visibility?.hitsMultiplier || 1),
+      hrMultiplier: Number(context.visibility?.hrMultiplier || 1),
+      runsMultiplier: Number(context.visibility?.runsMultiplier || 1)
+    }
+  }
+}
+
+const summarizeTeamReliefProjectionContext = (teamName = '', context = null) => {
+  if (!context) return null
+
+  return {
+    teamName,
+    modelVersion: context.modelVersion || null,
+    projectedReliefRunsAllowed: Number.isFinite(Number(context.projectedReliefRunsAllowed))
+      ? Number(context.projectedReliefRunsAllowed)
+      : null,
+    projectedReliefOuts: Number.isFinite(Number(context.projectedReliefOuts))
+      ? Number(context.projectedReliefOuts)
+      : null,
+    projectedRelieversUsed: Number.isFinite(Number(context.projectedRelieversUsed))
+      ? Number(context.projectedRelieversUsed)
+      : null,
+    bridgeStressScore: Number.isFinite(Number(context.bridgeStressScore))
+      ? Number(context.bridgeStressScore)
+      : null,
+    leverageAvailabilityScore: Number.isFinite(Number(context.leverageAvailabilityScore))
+      ? Number(context.leverageAvailabilityScore)
+      : null,
+    fatigueScore: Number.isFinite(Number(context.fatigueScore)) ? Number(context.fatigueScore) : null,
+    qualityScore: Number.isFinite(Number(context.qualityScore)) ? Number(context.qualityScore) : null,
+    runRiskTier: context.runRiskTier || null,
+    topTwoSharePct: Number.isFinite(Number(context.topTwoSharePct)) ? Number(context.topTwoSharePct) : null,
+    lead: {
+      pitcherName: context.lead?.pitcherName || null,
+      expectedOuts: Number.isFinite(Number(context.lead?.expectedOuts)) ? Number(context.lead.expectedOuts) : null,
+      availabilityScore: Number.isFinite(Number(context.lead?.availabilityScore))
+        ? Number(context.lead.availabilityScore)
+        : null
+    }
+  }
+}
+
+const summarizeReliefProjectionContexts = (participants = [], reliefProjectionContexts = []) => ({
+  away: summarizeTeamReliefProjectionContext(participants[0]?.name || 'Away', reliefProjectionContexts[0]),
+  home: summarizeTeamReliefProjectionContext(participants[1]?.name || 'Home', reliefProjectionContexts[1])
+})
+
 const buildMlbParkModifiers = (game, starters = []) => {
   const park = game.parkContext
 
@@ -2454,6 +2947,11 @@ const buildMlbAnalysisContext = (game, participants) => {
   ]
   const weatherProfile = buildMlbWeatherProfile(game.lineupBoard)
   const sunVisibilityProfile = game.stateContext?.sunVisibility ?? null
+  const environmentAdjustmentContext = game.environmentAdjustmentContext ?? null
+  const reliefProjectionContexts = [
+    game.reliefProjectionContext?.away ?? null,
+    game.reliefProjectionContext?.home ?? null
+  ]
   const offenseScores = offenseProfiles.map((profile, index) =>
     profile ? buildMlbOffenseScore(profile, participants[index]?.role) : null
   )
@@ -2483,7 +2981,9 @@ const buildMlbAnalysisContext = (game, participants) => {
       opposingBullpenChain: bullpenChainProfiles[1],
       parkContext: game.parkContext,
       weatherProfile,
-      sunVisibilityProfile
+      sunVisibilityProfile,
+      environmentAdjustmentContext,
+      opposingReliefProjectionContext: reliefProjectionContexts[1]
     }),
     buildProjectedHitProfile({
       role: participants[1]?.role,
@@ -2496,7 +2996,9 @@ const buildMlbAnalysisContext = (game, participants) => {
       opposingBullpenChain: bullpenChainProfiles[0],
       parkContext: game.parkContext,
       weatherProfile,
-      sunVisibilityProfile
+      sunVisibilityProfile,
+      environmentAdjustmentContext,
+      opposingReliefProjectionContext: reliefProjectionContexts[0]
     })
   ]
   const starterHoldConfidence = [
@@ -2563,7 +3065,13 @@ const buildMlbAnalysisContext = (game, participants) => {
     sourceParts.push('bullpen quality')
   }
   if (game.bullpenChainContext?.away && game.bullpenChainContext?.home) {
-    sourceParts.push('bullpen workload + likely reliever chain')
+    const chainSources = [
+      game.bullpenChainContext.away.chainSource || game.bullpenChainContext.away.source,
+      game.bullpenChainContext.home.chainSource || game.bullpenChainContext.home.source
+    ]
+    sourceParts.push(chainSources.some((source) => /RP2/i.test(String(source || '')))
+      ? 'RP2 bullpen bridge chain'
+      : 'bullpen workload + likely reliever chain')
   }
   if (game.savantContext?.away && game.savantContext?.home) sourceParts.push('Statcast contact quality')
   if (game.storyContext?.away && game.storyContext?.home) sourceParts.push('daily team story context')
@@ -2573,6 +3081,8 @@ const buildMlbAnalysisContext = (game, participants) => {
   if (starters.some((starter) => starter?.recentForm)) sourceParts.push('recent starter form')
   if (weatherProfile?.label) sourceParts.push('weather context')
   if (Number(sunVisibilityProfile?.visibilityRiskScore) >= 18) sourceParts.push('sun-position visibility')
+  if (environmentAdjustmentContext) sourceParts.push('ENV1 run environment')
+  if (reliefProjectionContexts.some(Boolean)) sourceParts.push('RP2 relief projection')
 
   if (starters.every(Boolean)) {
     const starterScores = starters.map((starter) => starterScore(starter))
@@ -2693,6 +3203,8 @@ const buildMlbAnalysisContext = (game, participants) => {
           parkContext: game.parkContext,
           opposingStarter: starters[index === 0 ? 1 : 0],
           opposingBullpenExhaustion: bullpenExhaustionScores[index === 0 ? 1 : 0],
+          opposingReliefProjectionContext: reliefProjectionContexts[index === 0 ? 1 : 0],
+          environmentAdjustmentContext,
           lineupProfile: lineupProfiles[index],
           weatherProfile,
           phase: 'first5'
@@ -2703,6 +3215,8 @@ const buildMlbAnalysisContext = (game, participants) => {
           parkContext: game.parkContext,
           opposingStarter: starters[index === 0 ? 1 : 0],
           opposingBullpenExhaustion: bullpenExhaustionScores[index === 0 ? 1 : 0],
+          opposingReliefProjectionContext: reliefProjectionContexts[index === 0 ? 1 : 0],
+          environmentAdjustmentContext,
           lineupProfile: lineupProfiles[index],
           weatherProfile,
           phase: 'late'
@@ -2756,7 +3270,9 @@ const buildMlbAnalysisContext = (game, participants) => {
           game.stateContext?.bullpenMistake?.home ?? null
         ],
         weatherProfile,
-        sunVisibilityProfile
+        sunVisibilityProfile,
+        environmentAdjustmentContext,
+        reliefProjectionContexts
       }
       const first5TailOverlay = buildFirst5TailOverlay({
         baseProjectedRuns: projectedFirst5TotalRuns,
@@ -2936,7 +3452,8 @@ const buildMlbAnalysisContext = (game, participants) => {
               : game.stateContext?.firstInningPitcherSeason?.away,
           opposingPitcherWarProfile:
             index === 0 ? game.stateContext?.pitcherWar?.home : game.stateContext?.pitcherWar?.away,
-          weatherProfile
+          weatherProfile,
+          environmentAdjustmentContext
         })
       )
       const firstInningLean = buildFirstInningLean({
@@ -3014,6 +3531,8 @@ const buildMlbAnalysisContext = (game, participants) => {
         lineupSimulation,
         weather: weatherProfile,
         sunVisibility: sunVisibilityProfile,
+        environmentAdjustment: summarizeEnvironmentAdjustmentContext(environmentAdjustmentContext),
+        reliefProjection: summarizeReliefProjectionContexts(participants, reliefProjectionContexts),
         visibilityNote: sunVisibilityNote
       }
 
@@ -3462,7 +3981,9 @@ const buildMlbAnalysisContext = (game, participants) => {
       offenseScores,
       bullpenScores,
       bullpenChainScores,
+      reliefProjectionContexts,
       savantScores,
+      environmentAdjustmentContext,
       weatherProfile,
       lineupProfiles,
       lineupScores,

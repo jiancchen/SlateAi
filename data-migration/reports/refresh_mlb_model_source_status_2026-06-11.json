@@ -1,0 +1,34 @@
+{
+  "date": "2026-06-11",
+  "generated_at": "2026-06-12T21:02:06.835191+00:00",
+  "ok": false,
+  "script": "data-migration/scripts/refresh_mlb_model_source_status.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "sources": {
+    "mlb_game_shape": {
+      "actual_item_count": 0,
+      "source_name": "mlb_game_shape",
+      "status": "missing",
+      "table_counts": {
+        "component_settlement_rows": 0,
+        "side_backtest_rows": 0,
+        "state_formula_backtests": 0,
+        "state_formula_training_rows": 0
+      }
+    },
+    "mlb_model_artifacts": {
+      "actual_item_count": 1357,
+      "source_name": "mlb_model_artifacts",
+      "status": "success",
+      "table_counts": {
+        "model_artifacts": 13,
+        "model_run_artifacts": 0,
+        "model_run_lanes": 0,
+        "model_runs": 1,
+        "prediction_rows": 1343,
+        "prop_backtest_rows": 0,
+        "settlement_rows": 0
+      }
+    }
+  }
+}

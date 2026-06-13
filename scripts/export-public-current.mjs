@@ -126,12 +126,52 @@ const copyIfPresent = async (sourcePath, targetPath) => {
   return true
 }
 
-const copyMlbPropsIfPresent = async (slateId, targetPath) => {
+const filterMlbGameRows = (rows = [], allowedGameIds = null) => {
+  if (!allowedGameIds || !allowedGameIds.size) return rows
+  return rows.filter((row) => {
+    const keys = [row?.gameId, row?.id, row?.gamePk, row?.sqlGameId].map((value) => String(value || '')).filter(Boolean)
+    return !keys.length || keys.some((key) => allowedGameIds.has(key))
+  })
+}
+
+const recalcPropSummary = (picks = [], summary = {}) => ({
+  ...summary,
+  totalPicks: picks.length,
+  byType: picks.reduce((acc, pick) => {
+    const type = pick?.propType || 'unknown'
+    acc[type] = (acc[type] || 0) + 1
+    return acc
+  }, {})
+})
+
+const filterMlbPropsPayload = (payload, allowedGameIds = null) => {
+  if (!allowedGameIds || !allowedGameIds.size || !Array.isArray(payload?.picks)) return payload
+  const picks = filterMlbGameRows(payload.picks, allowedGameIds)
+  return {
+    ...payload,
+    summary: recalcPropSummary(picks, payload.summary || {}),
+    picks
+  }
+}
+
+const filterMlbHomeRunsPayload = (payload, allowedGameIds = null) => {
+  if (!allowedGameIds || !allowedGameIds.size) return payload
+  const next = { ...payload }
+  for (const key of ['picks', 'candidates', 'homeRuns']) {
+    if (Array.isArray(next[key])) next[key] = filterMlbGameRows(next[key], allowedGameIds)
+  }
+  return next
+}
+
+const copyMlbPropsIfPresent = async (slateId, targetPath, allowedGameIds = null) => {
   const primarySource = path.join(root, 'data-private', 'predictions', 'mlb-player-props', `${slateId}-player-props.json`)
   const legacySource = path.join(root, 'data-private', 'predictions', 'mlb-player-props-legacy', `${slateId}-player-props-legacy.json`)
 
   if (!fsSync.existsSync(primarySource)) {
-    return copyIfPresent(legacySource, targetPath)
+    if (!fsSync.existsSync(legacySource)) return false
+    const legacyPayload = filterMlbPropsPayload(await readJson(legacySource), allowedGameIds)
+    await writeJson(targetPath, sanitizePublicPayload(legacyPayload))
+    return true
   }
 
   const primaryPayload = await readJson(primarySource)
@@ -140,7 +180,7 @@ const copyMlbPropsIfPresent = async (slateId, targetPath) => {
     const legacyPayload = await readJson(legacySource)
     const legacyPicks = Array.isArray(legacyPayload?.picks) ? legacyPayload.picks : []
     const seen = new Set()
-    const picks = [...primaryPicks, ...legacyPicks].filter((pick) => {
+    const picks = filterMlbGameRows([...primaryPicks, ...legacyPicks], allowedGameIds).filter((pick) => {
       const key = pick.id || `${pick.gameId}:${pick.playerName}:${pick.propType}:${pick.marketLabel}`
       if (seen.has(key)) return false
       seen.add(key)
@@ -168,20 +208,20 @@ const copyMlbPropsIfPresent = async (slateId, targetPath) => {
 
   if (primaryPicks.length > 0 || !fsSync.existsSync(legacySource)) {
     await fs.mkdir(path.dirname(targetPath), { recursive: true })
-    await writeJson(targetPath, sanitizePublicPayload(primaryPayload))
+    await writeJson(targetPath, sanitizePublicPayload(filterMlbPropsPayload(primaryPayload, allowedGameIds)))
     return true
   }
 
   const legacyPayload = await readJson(legacySource)
   await writeJson(targetPath, sanitizePublicPayload({
-    ...legacyPayload,
+    ...filterMlbPropsPayload(legacyPayload, allowedGameIds),
     fallbackFrom: 'mlb-player-props-legacy',
     fallbackReason: 'Primary MLB player-props board had no picks for this slate.'
   }))
   return true
 }
 
-const copyMlbResultsIfPresent = async (slateId, targetPath) => {
+const copyMlbResultsIfPresent = async (slateId, targetPath, allowedGameIds = null) => {
   const sqliteDb = path.join(root, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
   if (!fsSync.existsSync(sqliteDb)) return false
   const query = `
@@ -250,11 +290,12 @@ const copyMlbResultsIfPresent = async (slateId, targetPath) => {
     ...row,
     starterPitchers: pitchersByGame[String(row.sqlGameId || '')] || []
   }))
+  const filteredRows = filterMlbGameRows(rowsWithPitchers, allowedGameIds)
   await fs.mkdir(path.dirname(targetPath), { recursive: true })
   await writeJson(targetPath, {
     source: 'sql-mlb.db',
     date: slateId,
-    rows: sanitizePublicPayload(rowsWithPitchers)
+    rows: sanitizePublicPayload(filteredRows)
   })
   return true
 }
@@ -484,16 +525,27 @@ const exportSlateBundle = async (slate, targetRoot) => {
   await fs.mkdir(path.join(targetRoot, 'games'), { recursive: true })
   await fs.cp(sourceGamesRoot, path.join(targetRoot, 'games'), { recursive: true })
   await fs.copyFile(sourceSummaryPath, path.join(targetRoot, 'summary.json'))
+  const summary = await readJson(path.join(targetRoot, 'summary.json'))
+  const allowedGameIds = new Set(
+    (Array.isArray(summary.games) ? summary.games : [])
+      .flatMap((game) => [game?.id, game?.gamePk, game?.sqlGameId])
+      .map((value) => String(value || ''))
+      .filter(Boolean)
+  )
 
   const homeRunsSource = path.join(root, 'data-private', 'predictions', 'mlb-home-runs', `${slate.id}-statcast-prototype.json`)
   const propsTarget = path.join(targetRoot, 'props.json')
   const homeRunsTarget = path.join(targetRoot, 'home-runs.json')
   const resultsTarget = path.join(targetRoot, 'mlb-results.json')
-  const hasProps = await copyMlbPropsIfPresent(slate.id, propsTarget)
-  const hasHomeRuns = await copyIfPresent(homeRunsSource, homeRunsTarget)
-  const hasMlbResults = await copyMlbResultsIfPresent(slate.id, resultsTarget)
+  const hasProps = await copyMlbPropsIfPresent(slate.id, propsTarget, allowedGameIds)
+  let hasHomeRuns = false
+  if (fsSync.existsSync(homeRunsSource)) {
+    const homeRunsPayload = filterMlbHomeRunsPayload(await readJson(homeRunsSource), allowedGameIds)
+    await writeJson(homeRunsTarget, sanitizePublicPayload(homeRunsPayload))
+    hasHomeRuns = true
+  }
+  const hasMlbResults = await copyMlbResultsIfPresent(slate.id, resultsTarget, allowedGameIds)
 
-  const summary = await readJson(path.join(targetRoot, 'summary.json'))
   const searchIndex = await buildSearchIndex(slate, summary, propsTarget, homeRunsTarget)
   await writeJson(path.join(targetRoot, 'search.json'), searchIndex)
   return { slate, summary, searchIndex, hasProps, hasHomeRuns, hasMlbResults }

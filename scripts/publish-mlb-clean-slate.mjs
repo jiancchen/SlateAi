@@ -252,6 +252,46 @@ const oddsPairFromSelections = (selections = []) => {
   }
 }
 
+const starterClearsPublicContext = (starter = null) => {
+  if (!starter) return false
+  if (starter.usageContext?.status === 'starter-tbd') return false
+  if (!starter.fullName && !Number.isFinite(Number(starter.id))) return false
+  return true
+}
+
+const array = (value) => (Array.isArray(value) ? value : [])
+const isFiniteNumber = (value) => Number.isFinite(Number(value))
+const playerHasPitchFit = (player) => String(player?.pitchType?.summary || '').trim().length > 0
+const starterSplitStatus = (starter) => {
+  const status = starter?.espnSplits?.sourceStatus
+  if (status === 'fetched' || status === 'missing-espn-athlete') return status
+  return ''
+}
+
+const starterDependentPublicContextFailures = (game = null) => {
+  const awayLineup = array(game?.lineupBoard?.away?.lineup)
+  const homeLineup = array(game?.lineupBoard?.home?.lineup)
+  const players = [...awayLineup, ...homeLineup]
+  const failures = []
+
+  if (!starterClearsPublicContext(game?.starterContext?.away) || !starterClearsPublicContext(game?.starterContext?.home)) {
+    failures.push('starter-incomplete')
+  }
+  if (awayLineup.length < 9 || homeLineup.length < 9) failures.push('lineup-below-9-per-side')
+  if (players.filter(playerHasPitchFit).length < 16) failures.push('missing-pitch-fit')
+  if (![game?.starterContext?.away, game?.starterContext?.home].every((starter) => starterSplitStatus(starter))) {
+    failures.push('missing-espn-pitcher-splits')
+  }
+  if (!game?.parkContext?.venueName) failures.push('missing-park-context')
+  if (!isFiniteNumber(game?.analysis?.mlbProjection?.totals?.derivedFirst5TotalLine)) failures.push('missing-first-five-context')
+  if (!game?.analysis?.mlbProjection?.firstInning) failures.push('missing-first-inning-context')
+
+  return failures
+}
+
+const gameClearsStarterDependentPublicContext = (game = null) =>
+  starterDependentPublicContextFailures(game).length === 0
+
 const loadDkSpecialtyMarketAnchors = async (date) => {
   const filePath = path.join(root, 'data-private', 'odds', 'draftkings', 'mlb', `${date}-draftkings-mlb-lines.json`)
   const payload = await readJson(filePath, null)
@@ -339,6 +379,45 @@ const formatMarketAnchorNote = ({ game, anchors }) => {
   return [...teamRuns, ...pitcherBits, missing].filter(Boolean).join('; ')
 }
 
+const pacificDateParts = (date = new Date()) =>
+  Object.fromEntries(
+    new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/Los_Angeles',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    }).formatToParts(date).map((part) => [part.type, part.value])
+  )
+
+const pacificToday = () => {
+  const parts = pacificDateParts()
+  return `${parts.year}-${parts.month}-${parts.day}`
+}
+
+const pacificNowMinutes = () => {
+  const parts = pacificDateParts()
+  const hour = Number(parts.hour === '24' ? 0 : parts.hour)
+  const minute = Number(parts.minute)
+  return (Number.isFinite(hour) ? hour : 0) * 60 + (Number.isFinite(minute) ? minute : 0)
+}
+
+const parseStartedCutoffMinutes = (value = '') => {
+  if (!value) return null
+  if (/^\d+$/.test(String(value).trim())) return Number(value)
+  const match = String(value).trim().match(/^(\d{1,2}):(\d{2})$/)
+  if (!match) return null
+  return Number(match[1]) * 60 + Number(match[2])
+}
+
+const gameStartedByCutoff = (game = {}, cutoffMinutes = null) => {
+  if (!Number.isFinite(Number(cutoffMinutes))) return false
+  const startMinutes = Number(game.startMinutes)
+  return Number.isFinite(startMinutes) && startMinutes <= Number(cutoffMinutes)
+}
+
 const buildM2InningRunMatrix = (game, matrix, marketAnchors = null) => {
   const projection = game?.analysis?.mlbProjection || {}
   const firstInning = projection.firstInning || null
@@ -422,7 +501,7 @@ const buildM2InningRunMatrix = (game, matrix, marketAnchors = null) => {
   }
 }
 
-const publishRichMlbGames = async (date) => {
+const publishRichMlbGames = async (date, options = {}) => {
   process.env.MLB_DAY_GAMES_DISABLE_DB = '1'
   const { loadMlbDayGames } = await import('../pipeline/lib/load-mlb-day-games.mjs')
   const { loadMlbInningRunMatricesFromDb, loadMlbSpecialtyMarketAnchorsFromDb } = await import('../models/mlb/db/day-games.mjs')
@@ -430,7 +509,7 @@ const publishRichMlbGames = async (date) => {
   const warehouseMarketAnchors = await loadMlbSpecialtyMarketAnchorsFromDb(date)
   const rawMarketAnchors = Object.keys(warehouseMarketAnchors).length ? {} : await loadDkSpecialtyMarketAnchors(date)
   const specialtyMarketAnchors = Object.keys(warehouseMarketAnchors).length ? warehouseMarketAnchors : rawMarketAnchors
-  const mlbGames = (await loadMlbDayGames(date)).map((game) => {
+  const loadedMlbGames = (await loadMlbDayGames(date)).map((game) => {
     const matrix = inningRunMatrices[game.id]
     const m2Matrix = matrix ? buildM2InningRunMatrix(game, matrix, specialtyMarketAnchors[game.id] || null) : null
     const enrichedGame = matrix
@@ -444,6 +523,17 @@ const publishRichMlbGames = async (date) => {
       : game
     return withFirst5PushContext(enrichedGame)
   })
+  const omittedMlbGames = loadedMlbGames
+    .filter((game) => !gameClearsStarterDependentPublicContext(game))
+    .map((game) => ({
+      id: game.id,
+      title: game.title,
+      reason: 'starter-dependent-public-context-incomplete',
+      failures: starterDependentPublicContextFailures(game),
+      awayStarterStatus: game.starterContext?.away?.usageContext?.status || null,
+      homeStarterStatus: game.starterContext?.home?.usageContext?.status || null
+    }))
+  const mlbGames = loadedMlbGames.filter(gameClearsStarterDependentPublicContext)
   if (!mlbGames.length) throw new Error(`No rich MLB games loaded for ${date}`)
 
   const slateRoot = path.join(publishedSlatesRoot, date)
@@ -458,18 +548,31 @@ const publishRichMlbGames = async (date) => {
     sources: []
   })
   const nonMlbGames = (existingSummary.games || []).filter((game) => game?.league !== 'MLB')
+  const preserveStarted = Boolean(options.preserveStarted)
+  const startedCutoffMinutes = Number.isFinite(Number(options.startedCutoffMinutes))
+    ? Number(options.startedCutoffMinutes)
+    : date === pacificToday()
+      ? pacificNowMinutes()
+      : null
+  const existingStartedMlbGames = preserveStarted
+    ? (existingSummary.games || [])
+        .filter((game) => game?.league === 'MLB' && gameStartedByCutoff(game, startedCutoffMinutes))
+    : []
+  const preservedStartedIds = new Set(existingStartedMlbGames.map((game) => game.id).filter(Boolean))
+  const publishableMlbGames = mlbGames.filter((game) => !preservedStartedIds.has(game.id))
 
   await fs.mkdir(gamesRoot, { recursive: true })
   for (const existingGame of existingSummary.games || []) {
     if (existingGame?.league !== 'MLB') continue
+    if (preservedStartedIds.has(existingGame.id)) continue
     await fs.rm(path.join(gamesRoot, `${slugify(existingGame.id)}.json`), { force: true })
   }
-  for (const game of mlbGames) {
+  for (const game of publishableMlbGames) {
     await writeJson(path.join(gamesRoot, `${slugify(game.id)}.json`), game)
   }
 
   const keepGameFiles = new Set(
-    [...nonMlbGames, ...mlbGames].map((game) => `${slugify(game.id)}.json`)
+    [...nonMlbGames, ...existingStartedMlbGames, ...publishableMlbGames].map((game) => `${slugify(game.id)}.json`)
   )
   for (const entry of await fs.readdir(gamesRoot, { withFileTypes: true })) {
     if (!entry.isFile() || !entry.name.endsWith('.json')) continue
@@ -477,7 +580,7 @@ const publishRichMlbGames = async (date) => {
     await fs.rm(path.join(gamesRoot, entry.name), { force: true })
   }
 
-  const games = [...nonMlbGames, ...mlbGames].sort((left, right) => {
+  const games = [...nonMlbGames, ...existingStartedMlbGames, ...publishableMlbGames].sort((left, right) => {
     const startDelta = Number(left.startMinutes ?? 99999) - Number(right.startMinutes ?? 99999)
     if (Number.isFinite(startDelta) && startDelta !== 0) return startDelta
     return String(left.title || '').localeCompare(String(right.title || ''))
@@ -488,11 +591,28 @@ const publishRichMlbGames = async (date) => {
     id: date,
     label: existingSummary.label || labelForDate(date),
     status: 'ready',
-    slateMeta: existingSummary.slateMeta || { date: existingSummary.label || labelForDate(date), isoDate: date },
+    slateMeta: {
+      ...(existingSummary.slateMeta || { date: existingSummary.label || labelForDate(date), isoDate: date }),
+      ...(omittedMlbGames.length ? { omittedMlbGames } : {}),
+      ...(preserveStarted
+        ? {
+            preservedStartedMlbGames: existingStartedMlbGames.map((game) => ({
+              id: game.id,
+              title: game.title,
+              start: game.start,
+              startMinutes: game.startMinutes
+            })),
+            startedPreservationCutoffMinutes: startedCutoffMinutes
+          }
+        : {})
+    },
     summary: {
       ...(existingSummary.summary || {}),
       totalGames: games.length,
-      mlbGames: mlbGames.length
+      mlbGames: existingStartedMlbGames.length + publishableMlbGames.length,
+      ...(preserveStarted ? { preservedStartedMlbGames: existingStartedMlbGames.length } : {}),
+      ...(preserveStarted ? { refreshedMlbGames: publishableMlbGames.length } : {}),
+      ...(omittedMlbGames.length ? { omittedMlbGames: omittedMlbGames.length } : {})
     },
     filters: Array.from(new Set([...(existingSummary.filters || ['All']), 'Tennis', 'MLB'])),
     sources: mergeSources(existingSummary.sources || []),
@@ -503,7 +623,7 @@ const publishRichMlbGames = async (date) => {
   await writeJson(summaryPath, summary)
   await updatePublishedIndex(date, summary)
   console.log(
-    `[publish-mlb-clean-slate] published ${mlbGames.length} MLB games and preserved ${nonMlbGames.length} non-MLB games`
+    `[publish-mlb-clean-slate] published ${publishableMlbGames.length} MLB games, preserved ${existingStartedMlbGames.length} started MLB games, omitted ${omittedMlbGames.length} starter-context games, and preserved ${nonMlbGames.length} non-MLB games`
   )
 }
 
@@ -520,6 +640,8 @@ const main = async () => {
   const skipEspn = hasFlag('--skip-espn')
   const skipGenerate = hasFlag('--skip-generate')
   const preservePublicSlates = hasFlag('--preserve-public-slates')
+  const preserveStarted = hasFlag('--preserve-started')
+  const startedCutoffMinutes = parseStartedCutoffMinutes(argValue('--started-cutoff-minutes') || argValue('--started-cutoff'))
   const allowKnownAuditFailures = hasFlag('--allow-known-audit-failures') || hasFlag('--allow-audit-failures')
   const liveBase = argValue('--live-base')
 
@@ -531,7 +653,7 @@ const main = async () => {
     run('node', ['scripts/warehouse-mlb-espn-pitcher-splits.mjs', '--date', date])
   }
 
-  await publishRichMlbGames(date)
+  await publishRichMlbGames(date, { preserveStarted, startedCutoffMinutes })
 
   const publicExportArgs = ['run', 'data:export:public-current', '--', '--date', date]
   const publicExportOptions = preservePublicSlates ? {} : { env: { PUBLIC_SLATE_SCOPE: 'current-window' } }

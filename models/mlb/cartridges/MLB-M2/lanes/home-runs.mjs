@@ -246,7 +246,7 @@ const buildMatchupMap = (games) => {
     const homeTeam = game.participants[1].name
     const awayAbbr = teamToAbbr[awayTeam]
     const homeAbbr = teamToAbbr[homeTeam]
-    const parkContext = parkContextByHomeTeam[homeTeam] || {}
+    const parkContext = game.parkContext || parkContextByHomeTeam[homeTeam] || {}
     const awayPitcher = game.starterContext?.away || {}
     const homePitcher = game.starterContext?.home || {}
 

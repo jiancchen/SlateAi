@@ -18,6 +18,7 @@ import { mlbPropPerformanceByDate } from './lib/history-prop-performance.generat
 import { mlbBattingResultsRows } from './lib/mlb-batting-results.generated'
 import { mlbF5TeamTotalBackfillRows } from './lib/mlb-f5-team-total-backfill.generated'
 import { mlbFicDailyMatchupsByDate } from './lib/mlb-fic-daily-matchups.generated'
+import { mlbShadowAddendumsByDate } from './lib/mlb-shadow-addendums.generated'
 import {
   loadHistoryArchiveData,
   loadModelHistoryData,
@@ -206,6 +207,37 @@ const buildTotalProbabilityPct = (projectedRunsInput: number, lineInput: number,
   if (lean.startsWith('over')) return roundToTenths(overProbability * 100)
   if (lean.startsWith('under')) return roundToTenths(underProbability * 100)
   return roundToTenths(Math.max(overProbability, underProbability) * 100)
+}
+
+const buildDiscreteTotalEdge = (projectedRunsInput: number, lineInput: number, leanInput: string) => {
+  const projectedRuns = Number(projectedRunsInput)
+  const line = Number(lineInput)
+  if (!Number.isFinite(projectedRuns) || !Number.isFinite(line)) return null
+  const lean = String(leanInput || '').toLowerCase()
+  if (lean.startsWith('over')) {
+    const winThreshold = Math.floor(line) + 1
+    return {
+      winThreshold,
+      thresholdCushion: projectedRuns - winThreshold,
+      rawEdge: projectedRuns - line,
+      thresholdLabel: `${winThreshold}+ runs`
+    }
+  }
+  if (lean.startsWith('under')) {
+    const winThreshold = Math.ceil(line) - 1
+    return {
+      winThreshold,
+      thresholdCushion: winThreshold - projectedRuns,
+      rawEdge: line - projectedRuns,
+      thresholdLabel: `${winThreshold} or fewer runs`
+    }
+  }
+  return null
+}
+
+const roundToNearestHalf = (valueInput: number) => {
+  const value = Number(valueInput)
+  return Number.isFinite(value) ? Math.round(value * 2) / 2 : null
 }
 
 const impliedPctFromAmericanOdds = (oddsInput: any) => {
@@ -569,6 +601,14 @@ const findFicDailyMatchup = (rows: AnyRecord[], playerName = '', pitcherName = '
 
   return playerMatches.length === 1 ? playerMatches[0] : null
 }
+
+const ficMikesBotdSupportPass = (row: AnyRecord | null | undefined) =>
+  Boolean(
+    row &&
+    Number(row.bvpAtBats) >= 5 &&
+    Number(row.bvpAvg) > 0.3 &&
+    Number(row.bvpOps) > 0.8
+  )
 
 const manuallyIdentifiedMikesBotdByDate: Record<string, string[]> = {
   '2026-06-09': ['randy arozarena', 'trent grisham', 'otto lopez']
@@ -2110,7 +2150,7 @@ const buildGameHighlights = (game: AnyRecord) => {
     if (projection.totals?.fullGame?.chaosGate?.vetoed) {
       chips.push({
         tone: 'danger',
-        label: 'Total chaos veto'
+        label: projection.totals.fullGame.chaosGate?.vetoKind === 'addendum' ? 'Total ENV/RP2 veto' : 'Total chaos veto'
       })
     } else if (projection.totals?.fullGame?.lean && projection.totals.fullGame.lean !== 'Pass') {
       chips.push({
@@ -3070,6 +3110,10 @@ function App() {
     () => (Array.isArray((mlbFicDailyMatchupsByDate as AnyRecord)[activeDayIsoDate]) ? (mlbFicDailyMatchupsByDate as AnyRecord)[activeDayIsoDate] as AnyRecord[] : []),
     [activeDayIsoDate]
   )
+  const activeMlbShadowAddendum = useMemo(
+    () => ((mlbShadowAddendumsByDate as AnyRecord)[activeDayIsoDate] || null) as AnyRecord | null,
+    [activeDayIsoDate]
+  )
   const mlbPlayerProps = useMemo(() => {
     const fromApi = Object.values(activePropBoardByGame).flatMap((board: AnyRecord) => board?.targets ?? [])
     if (fromApi.length) {
@@ -3225,6 +3269,25 @@ function App() {
               const savedId = `${game.id}:total:${phase.id}`
               const modelPct = buildTotalProbabilityPct(phase.projectedRuns, phase.line, phase.lean.lean)
               const confidence = Number.isFinite(Number(modelPct)) ? Math.round(Number(modelPct)) : 0
+              const gateMetrics = phase.lean.chaosGate?.metrics || {}
+              const addendumTags = [
+                Number(gateMetrics.hrForce) >= 1.4 ? `HRF ${formatNumber(gateMetrics.hrForce, 1)}` : null,
+                Number.isFinite(Number(gateMetrics.envRunDelta)) && Math.abs(Number(gateMetrics.envRunDelta)) >= 0.2
+                  ? `ENV ${formatSignedNumber(gateMetrics.envRunDelta, 1)}R`
+                  : null,
+                gateMetrics.rp2LateRunRisk && Number.isFinite(Number(gateMetrics.maxRp2BridgeStress))
+                  ? `RP2 bridge ${formatNumber(gateMetrics.maxRp2BridgeStress, 0)}`
+                  : null
+              ].filter(Boolean)
+              const gateTag =
+                phase.lean.chaosGate?.vetoKind === 'addendum'
+                  ? 'ENV/RP2 veto'
+                  : phase.lean.chaosGate?.warning
+                    ? 'Addendum checked'
+                    : null
+              const summaryAddendum = addendumTags.length
+                ? ` Addendum check: ${addendumTags.join(' | ')}.`
+                : ''
 
               return {
                 id: savedId,
@@ -3241,12 +3304,13 @@ function App() {
                 sortConfidence: confidence,
                 sortEdge: Math.abs(Number(phase.lean.edge) || 0),
                 priceLabel: phase.projectedLabel,
-                metaLabel: `${phase.lean.strength || 'Model'} | ${confidence}% model`,
-                summary: phase.lean.summary,
+                metaLabel: [phase.lean.strength || 'Model', `${confidence}% model`, ...addendumTags.slice(0, 2)].join(' | '),
+                summary: `${phase.lean.summary}${summaryAddendum}`,
                 tags: [
                   phase.label,
                   `${confidence}% model`,
-                  phase.lean.chaosGate?.warning ? 'Chaos checked' : null,
+                  gateTag,
+                  ...addendumTags,
                   totals.bullpenExhaustionNote ? 'Bullpen live' : 'Model total'
                 ].filter(Boolean).slice(0, 3),
                 invalid: eventState.invalid,
@@ -3267,6 +3331,7 @@ function App() {
                   summary: phase.lean.summary,
                   strength: phase.lean.strength,
                   chaosGate: phase.lean.chaosGate ?? null,
+                  addendumTags,
                   projectedLabel: phase.projectedLabel
                 }
               }
@@ -3442,7 +3507,7 @@ function App() {
           isCombinedHrrProp
             ? findFicDailyMatchup(activeFicDailyMatchupRows, prop.playerName || prop.title || '', opposingStarterName)
             : null
-        const ficHrrCleanPass = Boolean(ficDailyMatchup?.matchupPass)
+        const ficHrrCleanPass = ficMikesBotdSupportPass(ficDailyMatchup)
         const derivedHrrFilters = isCombinedHrrProp
           ? (() => {
               const sideKey = teamSideForName(prop.game, prop.teamName || prop.teamNameFull || prop.team || '')
@@ -3478,7 +3543,7 @@ function App() {
                       bvpAvg: ficDailyMatchup.bvpAvg,
                       bvpObp: ficDailyMatchup.bvpObp,
                       bvpOps: ficDailyMatchup.bvpOps,
-                      matchupPass: ficDailyMatchup.matchupPass
+                      matchupPass: ficHrrCleanPass
                     }
                   : null,
                 ficHrrCleanPass,
@@ -3816,6 +3881,129 @@ function App() {
         ...(evidence || {})
       }
     })
+    const shadowGameContextFor = (game: AnyRecord) => {
+      const exact =
+        activeMlbShadowAddendum?.gamesById?.[game?.id] ||
+        activeMlbShadowAddendum?.gamesById?.[`${slugify(game?.matchup?.[0]?.name || '')}-${slugify(game?.matchup?.[1]?.name || '')}`]
+      if (exact) return exact
+      const awayName = game?.matchup?.[0]?.name || ''
+      const homeName = game?.matchup?.[1]?.name || ''
+      return (
+        Object.values(activeMlbShadowAddendum?.gamesById || {}).find((context: AnyRecord) =>
+          namesLikelyMatch(awayName, context.awayTeam || '') && namesLikelyMatch(homeName, context.homeTeam || '')
+        ) || null
+      )
+    }
+    const teamBullpenContextFor = (game: AnyRecord, teamName: string) => {
+      const context = shadowGameContextFor(game)
+      if (!context) return null
+      if (namesLikelyMatch(teamName, context.awayTeam || game?.matchup?.[0]?.name || '')) return context.away?.bullpen || null
+      if (namesLikelyMatch(teamName, context.homeTeam || game?.matchup?.[1]?.name || '')) return context.home?.bullpen || null
+      const lookup = activeMlbShadowAddendum?.bullpenByTeamName || {}
+      return lookup[normalizeNameToken(teamName)] || null
+    }
+    const reliefShadowLabel = (bullpen: AnyRecord | null | undefined) => {
+      if (!bullpen) return ''
+      const stress = Number(bullpen.stressScore)
+      return `${bullpen.teamAbbr || bullpen.teamName || 'team'} ${bullpen.tag || 'relief'}${Number.isFinite(stress) ? ` ${Math.round(stress)}` : ''}`
+    }
+    const reliefShadowDelta = (pickBullpen: AnyRecord | null | undefined, opponentBullpen: AnyRecord | null | undefined) => {
+      const pickStress = Number(pickBullpen?.stressScore)
+      const opponentStress = Number(opponentBullpen?.stressScore)
+      if (!Number.isFinite(pickStress) || !Number.isFinite(opponentStress)) return 0
+      return clamp((opponentStress - pickStress) / 8, -5, 5)
+    }
+    const reliefShadowReason = (pickName: string, pickBullpen: AnyRecord | null | undefined, opponentBullpen: AnyRecord | null | undefined) => {
+      if (!pickBullpen && !opponentBullpen) return ''
+      const pickLabel = reliefShadowLabel(pickBullpen)
+      const opponentLabel = reliefShadowLabel(opponentBullpen)
+      const delta = reliefShadowDelta(pickBullpen, opponentBullpen)
+      const direction =
+        delta >= 2
+          ? 'supports the full-game side'
+          : delta <= -2
+            ? 'adds late-inning risk'
+            : 'is mostly neutral'
+      return `Relief shadow for ${pickName}: ${pickLabel || 'no team read'} vs ${opponentLabel || 'no opponent read'} ${direction}.`
+    }
+    const kUmpireDelta = (umpire: AnyRecord | null | undefined) => {
+      if (!umpire?.exactMatch) return 0
+      const zone = Number(umpire.zoneFactor)
+      const kPerGame = Number(umpire.kPerGame)
+      let delta = 0
+      if (Number.isFinite(zone)) delta += zone >= 1.05 ? 2 : zone <= 0.95 ? -2 : 0
+      if (Number.isFinite(kPerGame)) delta += kPerGame >= 18.5 ? 2 : kPerGame <= 15.5 ? -2 : 0
+      return clamp(delta, -4, 4)
+    }
+    const kBullpenLeashDelta = (row: AnyRecord) => {
+      const market = String(row.raw?.marketLabel || row.title || '').toLowerCase()
+      const isOver = market.includes('over')
+      const teamBullpen = teamBullpenContextFor(row.raw?.game, row.raw?.teamNameFull || row.raw?.teamName || '')
+      const stress = Number(teamBullpen?.stressScore)
+      if (!Number.isFinite(stress)) return 0
+      if (stress >= 70) return isOver ? 3 : -3
+      if (stress >= 55) return isOver ? 1.5 : -1.5
+      if (stress <= 34) return isOver ? -1.5 : 1.5
+      return 0
+    }
+    const annotateStrikeoutShadow = (row: AnyRecord) => {
+      if (row.shadowCalibration || row.raw?.shadowCalibration) return row
+      const gameContext = shadowGameContextFor(row.raw?.game)
+      const teamBullpen = teamBullpenContextFor(row.raw?.game, row.raw?.teamNameFull || row.raw?.teamName || '')
+      const umpire = gameContext?.umpire || null
+      const bullpenDelta = kBullpenLeashDelta(row)
+      const umpireDelta = kUmpireDelta(umpire)
+      const delta = bullpenDelta + umpireDelta
+      const baseConfidence = Number(row.sortConfidence ?? row.confidence ?? 0)
+      const market = String(row.raw?.marketLabel || row.title || '')
+      const isOver = /over/i.test(market)
+      const bullpenReason = teamBullpen
+        ? `${teamBullpen.teamAbbr || teamBullpen.teamName} bullpen is ${teamBullpen.tag} (${teamBullpen.stressScore} stress), which ${bullpenDelta > 0 ? 'supports starter leash/K over' : bullpenDelta < 0 ? 'caps starter leash/K over' : 'is neutral for starter leash'}.`
+        : ''
+      const umpireReason = umpire?.exactMatch
+        ? `${umpire.umpireName} exact plate assignment: ${umpire.zoneFactor ?? 'n/a'} zone factor, ${umpire.kPerGame ?? 'n/a'} K/game.`
+        : 'No exact umpire assignment attached for this game.'
+      const reasons = [[bullpenReason, umpireReason].filter(Boolean).join(' ')].filter(Boolean)
+      const shadowCalibration = buildShadowCalibration({
+        tier: delta >= 2 ? 'promoted' : delta <= -2 ? 'watch' : 'research',
+        lane: 'pitcher-k-shadow',
+        modelConfidence: baseConfidence,
+        calibratedScore: baseConfidence + delta,
+        reasons,
+        cautions: [
+          'Relief/K shadow is additive only; base pitcher K model and posted line are unchanged.',
+          !umpire?.exactMatch ? 'Umpire rows require exact date/game match before use.' : null
+        ].filter(Boolean),
+        evidence: {
+          bullpenDelta,
+          umpireDelta,
+          marketSide: isOver ? 'over' : /under/i.test(market) ? 'under' : 'unknown',
+          bullpenStress: teamBullpen?.stressScore ?? null,
+          umpireExact: Boolean(umpire?.exactMatch)
+        }
+      })
+      return {
+        ...row,
+        sortConfidence: baseConfidence + delta,
+        tags: [
+          delta >= 2 ? 'K shadow +' : delta <= -2 ? 'K caution' : 'K shadow',
+          ...(row.tags || [])
+        ].filter(Boolean).slice(0, 4),
+        summary: [row.summary, reasons[0]].filter(Boolean).join(' | '),
+        shadowCalibration,
+        raw: {
+          ...(row.raw || {}),
+          shadowCalibration,
+          strikeoutShadowAddendum: {
+            bullpen: teamBullpen,
+            umpire,
+            bullpenDelta,
+            umpireDelta,
+            delta
+          }
+        }
+      }
+    }
     const shadowTierRank = (row: AnyRecord) => {
       const tier = String(row?.shadowCalibration?.tier || row?.raw?.shadowCalibration?.tier || '').toLowerCase()
       if (tier === 'promoted') return 3
@@ -3971,7 +4159,19 @@ function App() {
       const matrixAnchors = game.stateContext?.inningRunMatrix?.marketAnchors ?? null
       const teamRunAnchors = matrixAnchors?.teamRuns ?? {}
       const pitcherAnchors = matrixAnchors?.pitchers ?? {}
-      const leadProbabilities = buildFirst5LeadProbabilities(awayFirst5Runs, homeFirst5Runs)
+      const baseLeadProbabilities = buildFirst5LeadProbabilities(awayFirst5Runs, homeFirst5Runs)
+      const publishedFirst5Moneyline = projection.first5Moneyline ?? null
+      const leadProbabilities = {
+        awayWinPct: Number.isFinite(Number(publishedFirst5Moneyline?.awayLeadProbability))
+          ? roundToTenths(Number(publishedFirst5Moneyline.awayLeadProbability))
+          : baseLeadProbabilities.awayWinPct,
+        homeWinPct: Number.isFinite(Number(publishedFirst5Moneyline?.homeLeadProbability))
+          ? roundToTenths(Number(publishedFirst5Moneyline.homeLeadProbability))
+          : baseLeadProbabilities.homeWinPct,
+        tiePct: Number.isFinite(Number(publishedFirst5Moneyline?.pushProbability))
+          ? roundToTenths(Number(publishedFirst5Moneyline.pushProbability))
+          : baseLeadProbabilities.tiePct
+      }
       const pickIndex = homeFirst5Runs >= awayFirst5Runs ? 1 : 0
       const participant =
         participants.find((entry: AnyRecord) => Number(entry.index) === pickIndex) ??
@@ -4040,8 +4240,8 @@ function App() {
           confidence: f5Confidence,
           sortConfidence: f5Confidence,
           sortEdge: Math.abs(runEdge),
-          priceLabel: `Lead ${formatNumber(leadPct, 1)}% | Push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
-          metaLabel: `Proj F5 ${formatNumber(awayFirst5Runs, 1)}-${formatNumber(homeFirst5Runs, 1)} | edge ${formatSignedNumber(runEdge, 1)} | push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
+          priceLabel: `F5 lead ${formatNumber(leadPct, 1)}% | Push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
+          metaLabel: `F5 proj ${formatNumber(awayFirst5Runs, 1)}-${formatNumber(homeFirst5Runs, 1)} | F5 run edge ${formatSignedNumber(runEdge, 1)}`,
           summary: [
             `${participant.name} projects ${formatSignedNumber(runEdge, 1)} first-five runs better in the M2 starter window.`,
             tieRiskLabel ? `${tieRiskLabel}; confidence haircut applied.` : null
@@ -4052,7 +4252,7 @@ function App() {
             `${formatNumber(leadPct, 1)}% lead`,
             `push ${formatNumber(leadProbabilities.tiePct, 1)}%`,
             tieRiskLabel,
-            projection.first5EdgeTeam ? `edge ${projection.first5EdgeTeam}` : null
+            projection.first5EdgeTeam ? `F5 edge ${projection.first5EdgeTeam}` : null
           ].filter(Boolean).slice(0, 4),
           shadowCalibration: f5MlShadowCalibration,
           invalid: eventState.invalid,
@@ -4108,10 +4308,21 @@ function App() {
       const totalProbability = buildTotalProbabilityPct(projectedFirst5Total, first5Line, first5Lean)
       if (first5Lean && Number.isFinite(first5DisplayEdge) && Number.isFinite(first5Line)) {
         const first5ChaosMetrics = first5Total?.chaosGate?.metrics || first5Total?.tailOverlay?.metrics || {}
+        const first5AddendumWarnings = [
+          Number(first5ChaosMetrics.hrForce) >= 1.4 ? `HRF ${formatNumber(first5ChaosMetrics.hrForce, 1)}` : null,
+          Number.isFinite(Number(first5ChaosMetrics.envRunDelta)) && Math.abs(Number(first5ChaosMetrics.envRunDelta)) >= 0.2
+            ? `ENV ${formatSignedNumber(first5ChaosMetrics.envRunDelta, 1)}R`
+            : null,
+          first5ChaosMetrics.rp2LateRunRisk && Number.isFinite(Number(first5ChaosMetrics.maxRp2BridgeStress))
+            ? `RP2 bridge ${formatNumber(first5ChaosMetrics.maxRp2BridgeStress, 0)}`
+            : null
+        ].filter(Boolean)
         const underVolatilityRisk =
           first5Lean === 'Under' &&
           (Boolean(first5Total?.chaosGate?.warning) ||
             Boolean(first5ChaosMetrics.weatherCarry) ||
+            Boolean(first5ChaosMetrics.highHrForce) ||
+            Boolean(first5ChaosMetrics.rp2LateRunRisk) ||
             Number(first5ChaosMetrics.maxMistakeChaos) >= 55 ||
             Number(first5ChaosMetrics.maxRunClustering) >= 65)
         const thinTotalEdgeRisk = Math.abs(first5DisplayEdge) < 0.8
@@ -4120,7 +4331,8 @@ function App() {
         const confidence = clamp(baseConfidence - f5TotalHaircut, 50, 78)
         const f5TotalWarnings = [
           underVolatilityRisk ? 'F5 under volatility' : null,
-          thinTotalEdgeRisk ? 'Thin F5 edge' : null
+          thinTotalEdgeRisk ? 'Thin F5 edge' : null,
+          ...first5AddendumWarnings
         ].filter(Boolean)
         const f5TotalShadowCalibration = buildShadowCalibration({
           tier: 'research',
@@ -4152,8 +4364,12 @@ function App() {
           sortConfidence: confidence,
           sortEdge: Math.abs(first5DisplayEdge),
           priceLabel: `Proj ${formatNumber(projectedFirst5Total, 1)} | edge ${formatSignedNumber(first5DisplayEdge, 1)}`,
-          metaLabel: `${first5Total?.strength || 'Model'} | ${formatNumber(Number(totalProbability), 1)}% model`,
-          summary: first5Total?.summary || `${first5Lean} first-five total with ${formatSignedNumber(first5Edge, 1)} M2 run edge.`,
+          metaLabel: [
+            first5Total?.strength || 'Model',
+            `${formatNumber(Number(totalProbability), 1)}% model`,
+            ...first5AddendumWarnings.slice(0, 2)
+          ].join(' | '),
+          summary: `${first5Total?.summary || `${first5Lean} first-five total with ${formatSignedNumber(first5Edge, 1)} M2 run edge.`}${first5AddendumWarnings.length ? ` Addendum check: ${first5AddendumWarnings.join(' | ')}.` : ''}`,
           tags: [
             'Research',
             'M2 F5 O/U',
@@ -4182,6 +4398,7 @@ function App() {
             confidenceWarnings: f5TotalWarnings,
             strength: first5Total?.strength || '',
             probability: totalProbability,
+            addendumWarnings: first5AddendumWarnings,
             shadowCalibration: f5TotalShadowCalibration,
             valueGate: 'model-owned',
             hasMarket: false,
@@ -4209,8 +4426,25 @@ function App() {
 
       const projectedTeamRunsForWindow = (teamSide: 'away' | 'home', windowKey: string) => {
         const first5Runs = teamSide === 'away' ? awayFirst5Runs : homeFirst5Runs
+        const fullGameRuns = teamSide === 'away' ? awayFullRuns : homeFullRuns
         if (windowKey === 'first5') return { runs: first5Runs, source: 'M2 F5 team runs' }
+        if (windowKey === 'fullGame') return { runs: fullGameRuns, source: 'M2 full-game team runs' }
         return { runs: null, source: 'No team-run projection' }
+      }
+
+      const derivedFullGameTeamTotalAnchor = (teamSide: 'away' | 'home') => {
+        const postedTotal = Number(projection.postedTotal ?? projection.totals?.postedFullGameTotalLine ?? projection.totals?.derivedFullGameTotalLine)
+        const teamRuns = teamSide === 'away' ? awayFullRuns : homeFullRuns
+        const opponentRuns = teamSide === 'away' ? homeFullRuns : awayFullRuns
+        const projectedTotal = teamRuns + opponentRuns
+        if (!Number.isFinite(postedTotal) || !Number.isFinite(teamRuns) || !Number.isFinite(projectedTotal) || projectedTotal <= 0) return null
+        const derivedLine = roundToNearestHalf(postedTotal * (teamRuns / projectedTotal))
+        if (!Number.isFinite(Number(derivedLine))) return null
+        return {
+          line: Number(derivedLine),
+          derived: true,
+          source: 'derived from posted game total and M2 team-run share'
+        }
       }
 
       const teamEntries = [
@@ -4218,12 +4452,17 @@ function App() {
         { key: 'home', teamKey: slugify(game.matchup?.[1]?.name || ''), name: game.matchup?.[1]?.name || 'Home' }
       ] as Array<{ key: 'away' | 'home'; teamKey: string; name: string }>
       const windowLabels: Record<string, string> = {
+        fullGame: 'Full game',
         first5: '1st 5'
       }
       teamEntries.forEach((team) => {
         const anchors = teamRunAnchors?.[team.teamKey] || {}
-        Object.entries(anchors).forEach(([windowKey, anchorValue]) => {
-          if (windowKey !== 'first5') return
+        const fullGameAnchor = anchors.fullGame || derivedFullGameTeamTotalAnchor(team.key)
+        const teamTotalWindowEntries = [
+          fullGameAnchor ? ['fullGame', fullGameAnchor] : null,
+          anchors.first5 ? ['first5', anchors.first5] : null
+        ].filter(Boolean) as Array<[string, AnyRecord]>
+        teamTotalWindowEntries.forEach(([windowKey, anchorValue]) => {
           const anchor = anchorValue as AnyRecord
           const line = Number(anchor?.line)
           const projected = projectedTeamRunsForWindow(team.key, windowKey)
@@ -4231,29 +4470,43 @@ function App() {
           if (!Number.isFinite(line) || !Number.isFinite(projectedRuns)) return
           const lean = projectedRuns >= line ? 'Over' : 'Under'
           const probability = buildTotalProbabilityPct(projectedRuns, line, lean)
-          const edge = projectedRuns - line
-          if (!Number.isFinite(Number(probability)) || Math.abs(edge) < 0.25) return
-          const thinEdgeHaircut = Math.abs(edge) < 0.5 ? 4 : 0
+          const discreteEdge = buildDiscreteTotalEdge(projectedRuns, line, lean)
+          if (!discreteEdge) return
+          const edge = discreteEdge.thresholdCushion
+          const rawLineEdge = discreteEdge.rawEdge
+          if (!Number.isFinite(Number(probability)) || edge < 0.25) return
+          const thinEdgeHaircut = edge < 0.75 ? 6 : edge < 1 ? 3 : 0
           const confidence = clamp(Math.round(Number(probability)) - thinEdgeHaircut, 50, 80)
-          const teamTotalPromoted = confidence >= 65 || confidence < 60
+          const isDerivedLine = Boolean(anchor?.derived)
+          const teamTotalPromoted = (confidence >= 65 || confidence < 60) && edge >= (isDerivedLine ? 1 : 0.75)
           const teamTotalShadowCalibration = buildShadowCalibration({
             tier: teamTotalPromoted ? 'promoted' : 'watch',
-            lane: 'f5-team-total',
+            lane: windowKey === 'first5' ? 'f5-team-total' : 'full-game-team-total',
             modelConfidence: confidence,
-            calibratedScore: confidence + (teamTotalPromoted ? 6 : -2) + Math.min(Math.abs(edge), 1.25) * 5,
+            calibratedScore: confidence + (teamTotalPromoted ? 6 : -2) + Math.min(edge, 1.25) * 5,
             reasons: teamTotalPromoted
               ? [
-                  `${team.name} projects ${formatNumber(projectedRuns, 1)} F5 runs vs ${formatNumber(line, 1)} line (${formatSignedNumber(edge, 1)} edge).`,
-                  'Confidence bucket is currently promotable for F5 team totals.'
+                  `${team.name} projects ${formatNumber(projectedRuns, 1)} ${windowLabels[windowKey]} runs; ${lean} ${formatNumber(line, 1)} needs ${discreteEdge.thresholdLabel}, leaving ${formatSignedNumber(edge, 1)} threshold cushion.`,
+                  `Raw projection-vs-line gap is ${formatSignedNumber(rawLineEdge, 1)}, but promotion uses the discrete hit threshold.`
                 ]
               : [
-                  `${team.name} projects ${formatNumber(projectedRuns, 1)} F5 runs vs ${formatNumber(line, 1)} line (${formatSignedNumber(edge, 1)} edge).`,
-                  'The 60-64 confidence bucket is watch-only in the current seed.'
+                  `${team.name} projects ${formatNumber(projectedRuns, 1)} ${windowLabels[windowKey]} runs; ${lean} ${formatNumber(line, 1)} needs ${discreteEdge.thresholdLabel}, leaving ${formatSignedNumber(edge, 1)} threshold cushion.`,
+                  edge < 0.75
+                    ? 'Threshold cushion is too thin to promote even if the model probability looks playable.'
+                    : isDerivedLine
+                      ? 'Derived full-game team-total lines need at least +1.0 threshold cushion before promotion.'
+                      : 'The confidence bucket is watch-only in the current seed.'
                 ],
             evidence: {
-              bucket: teamTotalPromoted ? 'F5 team total promoted seed' : 'F5 team total 60-64 watch bucket',
-              record: teamTotalPromoted ? '21-11' : '4-6',
-              hitRatePct: teamTotalPromoted ? 65.6 : 40
+              bucket: teamTotalPromoted
+                ? windowKey === 'first5'
+                  ? 'F5 team total promoted seed'
+                  : 'Full-game team total promoted seed'
+                : windowKey === 'first5'
+                  ? 'F5 team total 60-64 watch bucket'
+                  : 'Full-game team total watch bucket',
+              record: windowKey === 'first5' ? (teamTotalPromoted ? '21-11' : '4-6') : 'new lane',
+              hitRatePct: windowKey === 'first5' ? (teamTotalPromoted ? 65.6 : 40) : null
             }
           })
           teamTotalRows.push({
@@ -4269,16 +4522,16 @@ function App() {
             subtitle: `${game.title} | ${windowLabels[windowKey] || windowKey}`,
             confidence,
             sortConfidence: confidence,
-            sortEdge: Math.abs(edge),
-            priceLabel: `Proj ${formatNumber(projectedRuns, 1)} | edge ${formatSignedNumber(edge, 1)}`,
-            metaLabel: `${formatNumber(Number(probability), 1)}% model | ${projected.source}`,
-            summary: `${team.name} projects ${formatNumber(projectedRuns, 1)} runs against a posted ${windowLabels[windowKey] || windowKey} team-total line of ${formatNumber(line, 1)}.`,
+            sortEdge: edge,
+            priceLabel: `Proj ${formatNumber(projectedRuns, 1)} | cushion ${formatSignedNumber(edge, 1)}`,
+            metaLabel: `${formatNumber(Number(probability), 1)}% model | ${isDerivedLine ? 'derived line' : projected.source}`,
+            summary: `${team.name} projects ${formatNumber(projectedRuns, 1)} ${windowLabels[windowKey]} runs; ${lean} ${formatNumber(line, 1)} needs ${discreteEdge.thresholdLabel}, so threshold cushion is ${formatSignedNumber(edge, 1)}.`,
             tags: [
               teamTotalShadowCalibration.tier === 'promoted' ? 'Promoted' : 'Watch',
               'Team total',
               windowLabels[windowKey] || windowKey,
               `${formatNumber(Number(probability), 1)}% raw`,
-              'direct F5 window'
+              isDerivedLine ? 'Derived FG line' : windowKey === 'first5' ? 'direct F5 window' : 'direct FG window'
             ].filter(Boolean).slice(0, 4),
             shadowCalibration: teamTotalShadowCalibration,
             invalid: eventState.invalid,
@@ -4293,8 +4546,14 @@ function App() {
               teamKey: team.teamKey,
               windowKey,
               line,
+              lineSource: isDerivedLine ? anchor?.source || 'derived' : matrixAnchors?.source || 'stateContext.inningRunMatrix.marketAnchors',
+              derivedLine: isDerivedLine,
               projectedRuns,
               edge,
+              thresholdCushion: edge,
+              rawLineEdge,
+              winThreshold: discreteEdge.winThreshold,
+              thresholdLabel: discreteEdge.thresholdLabel,
               probability,
               confidence,
               confidenceHaircut: thinEdgeHaircut,
@@ -4449,6 +4708,11 @@ function App() {
         const first5Team = projection.first5EdgeTeam ? `F5 edge ${projection.first5EdgeTeam}` : null
         const bridgeTeam = projection.bridgeEdgeTeam ? `Bridge ${projection.bridgeEdgeTeam}` : null
         const mlShapePromoted = confidence >= 65
+        const gameShadowContext = shadowGameContextFor(game)
+        const pickBullpen = participantIndex === 0 ? gameShadowContext?.away?.bullpen : gameShadowContext?.home?.bullpen
+        const opponentBullpen = participantIndex === 0 ? gameShadowContext?.home?.bullpen : gameShadowContext?.away?.bullpen
+        const reliefDelta = reliefShadowDelta(pickBullpen, opponentBullpen)
+        const reliefReason = reliefShadowReason(participant.name, pickBullpen, opponentBullpen)
         const marketEdgeLabel = Number.isFinite(Number(marketEdgePct))
           ? `${formatSignedNumber(Number(marketEdgePct), 1)} pts market edge`
           : 'no priced market edge'
@@ -4469,20 +4733,26 @@ function App() {
             confidence +
             (mlShapePromoted ? 8 : 0) +
             Math.max(Number(marketEdgePct) || 0, 0) * 0.35 +
-            Math.min(Number(runDiffShare) || 0, 20) * 0.15,
+            Math.min(Number(runDiffShare) || 0, 20) * 0.15 +
+            reliefDelta,
           reasons: mlShapePromoted
             ? [
-                `${participant.name}: ${confidenceVsMarginRead} ${marketEdgeLabel}.`,
+                `${participant.name}: ${confidenceVsMarginRead} ${marketEdgeLabel}.${reliefReason ? ` ${reliefReason}` : ''}`,
+                reliefReason,
                 'ML shape confidence >=65 is the current promoted seed bucket.'
-              ]
+              ].filter(Boolean)
             : [
-                `${participant.name}: ${confidenceVsMarginRead} ${marketEdgeLabel}.`,
+                `${participant.name}: ${confidenceVsMarginRead} ${marketEdgeLabel}.${reliefReason ? ` ${reliefReason}` : ''}`,
+                reliefReason,
                 'ML shape below 65% is watch-only; confidence remains the primary ML trust signal.'
-              ],
+              ].filter(Boolean),
           evidence: {
             bucket: mlShapePromoted ? 'ML shape confidence >=65' : 'ML shape below 65',
             record: mlShapePromoted ? '12-3' : '12-10',
-            hitRatePct: mlShapePromoted ? 80 : 54.5
+            hitRatePct: mlShapePromoted ? 80 : 54.5,
+            reliefDelta,
+            pickBullpenStress: pickBullpen?.stressScore ?? null,
+            opponentBullpenStress: opponentBullpen?.stressScore ?? null
           }
         })
         return {
@@ -4499,16 +4769,18 @@ function App() {
           confidence,
           sortConfidence: confidence,
           sortEdge: runDiffShare,
-          priceLabel: `Proj ${formatNumber(pickRuns, 1)}-${formatNumber(opponentRuns, 1)} | diff ${formatSignedNumber(runDiff, 1)} of ${formatNumber(projectedTotal, 1)}`,
+          priceLabel: `Full-game proj ${formatNumber(pickRuns, 1)}-${formatNumber(opponentRuns, 1)} | margin support ${formatSignedNumber(runDiff, 1)} of ${formatNumber(projectedTotal, 1)}`,
           metaLabel: `Margin support ${formatNumber(runDiffShare, 1)}% | ${participant.americanLabel || 'ML price N/A'}`,
           summary: [
             `${participant.name} projects ${formatSignedNumber(runDiff, 1)} runs better in a ${formatNumber(projectedTotal, 1)}-run environment.`,
             first5Team,
-            bridgeTeam
+            bridgeTeam,
+            reliefReason
           ].filter(Boolean).join(' '),
           tags: [
             mlShapeShadowCalibration.tier === 'promoted' ? 'Promoted' : 'Watch',
             shapeGrade,
+            reliefDelta >= 2 ? 'Relief +' : reliefDelta <= -2 ? 'Relief risk' : null,
             `${formatNumber(runDiffShare, 1)}% margin support`,
             `${confidence}% model`,
             Number.isFinite(Number(marketPricePct)) ? `${formatNumber(Number(marketPricePct), 1)}% market` : null
@@ -4535,6 +4807,11 @@ function App() {
             marketEdgePct,
             confidence,
             shadowCalibration: mlShapeShadowCalibration,
+            reliefShadowAddendum: {
+              pickBullpen,
+              opponentBullpen,
+              reliefDelta
+            },
             source: publishedShape?.source || 'analysis.mlbProjection'
           }
         }
@@ -4603,7 +4880,8 @@ function App() {
           entry.raw?.propType === 'pitcherStrikeouts' &&
           Number(entry.confidence) >= 60
       )
-      .sort((left: AnyRecord, right: AnyRecord) => right.sortConfidence - left.sortConfidence || right.sortEdge - left.sortEdge)
+      .map(annotateStrikeoutShadow)
+      .sort(sortByShadowCalibration)
 
     const strikeoutOverRows = strikeoutRows.filter((entry: AnyRecord) => /over/i.test(String(entry.raw?.marketLabel || entry.title || '')))
     const strikeoutUnderRows = strikeoutRows.filter((entry: AnyRecord) => /under/i.test(String(entry.raw?.marketLabel || entry.title || '')))
@@ -4648,7 +4926,7 @@ function App() {
       const teamContext = batterTeamPromotionContext(game, sideKey, teamName)
       const opposingStarterName = opposingStarterNameForTeam(game, teamName)
       const ficDailyMatchup = findFicDailyMatchup(activeFicDailyMatchupRows, player.name || '', opposingStarterName)
-      const ficHrrCleanPass = Boolean(ficDailyMatchup?.matchupPass)
+      const ficHrrCleanPass = ficMikesBotdSupportPass(ficDailyMatchup)
       const projectedTeamFullGameResult =
         teamContext.teamMarketImpliedPct !== null &&
         teamContext.opponentMarketImpliedPct !== null
@@ -4677,7 +4955,7 @@ function App() {
               bvpAvg: ficDailyMatchup.bvpAvg,
               bvpObp: ficDailyMatchup.bvpObp,
               bvpOps: ficDailyMatchup.bvpOps,
-              matchupPass: ficDailyMatchup.matchupPass
+              matchupPass: ficHrrCleanPass
             }
           : null,
         ficHrrCleanPass,
@@ -5063,19 +5341,24 @@ function App() {
     const annotatedFirst5MoneylineRows = first5MoneylineRows.map(annotateSettledResult)
     const annotatedFirst5TotalRows = first5TotalRows.map(annotateSettledResult)
     const activeBackfilledTeamTotalRows = (mlbF5TeamTotalBackfillRows as AnyRecord[])
-      .filter((row: AnyRecord) => row.date === activeDayIsoDate)
+      .filter((row: AnyRecord) => row.date === activeDayIsoDate && activeDayIsoDate < pacificClock.isoDate)
       .map((row: AnyRecord) => {
         if (row.shadowCalibration || row.raw?.shadowCalibration) return row
         const confidence = Number(row.sortConfidence ?? row.confidence ?? 0)
-        const promoted = confidence >= 65 || confidence < 60
+        const thresholdCushion = Number(row.raw?.thresholdCushion ?? row.sortEdge ?? row.raw?.edge)
+        const promoted = (confidence >= 65 || confidence < 60) && Number.isFinite(thresholdCushion) && thresholdCushion >= 0.75
         const shadowCalibration = buildShadowCalibration({
           tier: promoted ? 'promoted' : 'watch',
           lane: 'f5-team-total',
           modelConfidence: confidence,
-          calibratedScore: confidence + (promoted ? 6 : -2) + Math.min(Number(row.sortEdge || 0), 1.25) * 5,
+          calibratedScore: confidence + (promoted ? 6 : -2) + Math.min(Number.isFinite(thresholdCushion) ? thresholdCushion : 0, 1.25) * 5,
           reasons: promoted
-            ? [`Backfilled F5 team total: ${row.priceLabel || `${confidence}% confidence`} clears a promoted seed bucket.`]
-            : [`Backfilled F5 team total: ${row.priceLabel || `${confidence}% confidence`} stays watch-only in this confidence bucket.`],
+            ? [`Backfilled F5 team total: ${row.priceLabel || `${confidence}% confidence`} clears the promoted seed bucket with threshold cushion >=0.75.`]
+            : [
+                Number.isFinite(thresholdCushion) && thresholdCushion < 0.75
+                  ? `Backfilled F5 team total: ${row.priceLabel || `${confidence}% confidence`} is watch-only because threshold cushion is below 0.75.`
+                  : `Backfilled F5 team total: ${row.priceLabel || `${confidence}% confidence`} stays watch-only in this confidence bucket.`
+              ],
           evidence: {
             bucket: promoted ? 'F5 team total promoted seed' : 'F5 team total 60-64 watch bucket',
             record: promoted ? '21-11' : '4-6',
@@ -5093,9 +5376,10 @@ function App() {
         }
       })
       .sort(sortByShadowCalibration)
-    const annotatedTeamTotalRows = activeBackfilledTeamTotalRows.length
-      ? activeBackfilledTeamTotalRows
+    const liveNonBackfilledTeamTotalRows = activeBackfilledTeamTotalRows.length
+      ? teamTotalRows.filter((row) => String(row.raw?.windowKey || '') !== 'first5').map(annotateSettledResult)
       : teamTotalRows.map(annotateSettledResult)
+    const annotatedTeamTotalRows = [...activeBackfilledTeamTotalRows, ...liveNonBackfilledTeamTotalRows].sort(sortByShadowCalibration)
     const annotatedPitcherEarnedRunRows = pitcherEarnedRunRows.map(annotateSettledResult)
     const annotatedTotalBaseRows = totalBaseRows.map(annotateSettledResult)
     const annotatedTbBackedRows = tbBackedRows.map(annotateSettledResult)
@@ -5167,8 +5451,11 @@ function App() {
       }
   }, [
     activeDayId,
+    activeDayIsoDate,
+    activeFicDailyMatchupRows,
     activeHomeRunBoard,
     activeKalshiMlbMarketByGame,
+    activeMlbShadowAddendum,
     activeMlbResultRows,
     favoriteCatalogEntries,
     games,

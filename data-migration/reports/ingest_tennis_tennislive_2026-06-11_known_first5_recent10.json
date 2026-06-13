@@ -1,0 +1,96 @@
+{
+  "ok": true,
+  "script": "data-migration/scripts/ingest_tennis_tennislive_to_typed.py",
+  "source_db": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "date": "2026-06-11",
+  "started_at": "2026-06-11T09:18:45.759790+00:00",
+  "finished_at": "2026-06-11T09:19:37.001881+00:00",
+  "player_urls": [
+    "https://www.tennislive.net/atp/august-holmgren/",
+    "https://www.tennislive.net/atp/billy-harris/",
+    "https://www.tennislive.net/atp/bu-yunchaokete/",
+    "https://www.tennislive.net/atp/carlos-sanchez-jover/",
+    "https://www.tennislive.net/atp/daniel-rincon/"
+  ],
+  "match_urls": [],
+  "max_links": 10,
+  "max_matches": 10,
+  "fetch_status": {
+    "run_id": "source-fetch-tennislive-2026-06-11-2026-06-11T09-19-37-000681+00-00",
+    "status": "success",
+    "completeness_status": "complete",
+    "player_attempts": 5,
+    "player_successes": 5,
+    "player_failures": 0,
+    "match_attempts": 46,
+    "match_successes": 46,
+    "match_failures": 0,
+    "attempted_pages": 51,
+    "successful_pages": 51,
+    "failed_pages": 0
+  },
+  "player_results": [
+    {
+      "status": "ok",
+      "player_id": "tennis-player-august-holmgren",
+      "player": "August Holmgren",
+      "snapshot_already_seen": false,
+      "surface_records": 98,
+      "match_links": 10,
+      "recent_matches_upserted": 9,
+      "matches_fetched": 3,
+      "matches_skipped_existing": 6,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-billy-harris",
+      "player": "Billy Harris",
+      "snapshot_already_seen": false,
+      "surface_records": 112,
+      "match_links": 10,
+      "recent_matches_upserted": 9,
+      "matches_fetched": 4,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-yunchaokete-bu",
+      "player": "Bu Yunchaokete",
+      "snapshot_already_seen": false,
+      "surface_records": 84,
+      "match_links": 10,
+      "recent_matches_upserted": 9,
+      "matches_fetched": 3,
+      "matches_skipped_existing": 6,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-carlos-sanchez-jover",
+      "player": "Carlos Sanchez Jover",
+      "snapshot_already_seen": false,
+      "surface_records": 98,
+      "match_links": 10,
+      "recent_matches_upserted": 9,
+      "matches_fetched": 2,
+      "matches_skipped_existing": 7,
+      "matches_failed": 0
+    },
+    {
+      "status": "ok",
+      "player_id": "tennis-player-daniel-rincon",
+      "player": "Daniel Rincon",
+      "snapshot_already_seen": false,
+      "surface_records": 70,
+      "match_links": 10,
+      "recent_matches_upserted": 10,
+      "matches_fetched": 5,
+      "matches_skipped_existing": 5,
+      "matches_failed": 0
+    }
+  ],
+  "match_results": [],
+  "failures": []
+}

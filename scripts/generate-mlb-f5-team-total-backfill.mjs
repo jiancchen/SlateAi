@@ -108,6 +108,32 @@ const totalProbabilityPct = (projectedRunsInput, lineInput, leanInput) => {
   return roundToTenths(Math.max(overProbability, underProbability) * 100)
 }
 
+const discreteTotalEdge = (projectedRunsInput, lineInput, leanInput) => {
+  const projectedRuns = Number(projectedRunsInput)
+  const line = Number(lineInput)
+  if (!Number.isFinite(projectedRuns) || !Number.isFinite(line)) return null
+  const lean = String(leanInput || '').toLowerCase()
+  if (lean.startsWith('over')) {
+    const winThreshold = Math.floor(line) + 1
+    return {
+      winThreshold,
+      thresholdCushion: projectedRuns - winThreshold,
+      rawLineEdge: projectedRuns - line,
+      thresholdLabel: `${winThreshold}+ runs`
+    }
+  }
+  if (lean.startsWith('under')) {
+    const winThreshold = Math.ceil(line) - 1
+    return {
+      winThreshold,
+      thresholdCushion: winThreshold - projectedRuns,
+      rawLineEdge: line - projectedRuns,
+      thresholdLabel: `${winThreshold} or fewer runs`
+    }
+  }
+  return null
+}
+
 const sqliteJson = (sql) => {
   const output = execFileSync('sqlite3', ['-json', dbPath, sql], {
     encoding: 'utf8',
@@ -217,20 +243,26 @@ dates.forEach((date) => {
       skippedNoProjection += 1
       return
     }
-    const edge = projectedRuns - line
-    if (Math.abs(edge) < 0.25) {
+    const lean = projectedRuns >= line ? 'Over' : 'Under'
+    const edgeState = discreteTotalEdge(projectedRuns, line, lean)
+    if (!edgeState) {
+      skippedNoProjection += 1
+      return
+    }
+    const edge = edgeState.thresholdCushion
+    if (edge < 0.25) {
       skippedThinEdge += 1
       return
     }
-    const lean = projectedRuns >= line ? 'Over' : 'Under'
     const probability = totalProbabilityPct(projectedRuns, line, lean)
     if (!Number.isFinite(Number(probability))) {
       skippedNoProjection += 1
       return
     }
-    const thinEdgeHaircut = Math.abs(edge) < 0.5 ? 4 : 0
+    const thinEdgeHaircut = edge < 0.75 ? 6 : edge < 1 ? 3 : 0
     const confidence = clamp(Math.round(Number(probability)) - thinEdgeHaircut, 50, 80)
-    const actualRuns = side === 'away' ? Number(contract.f5_away_runs) : Number(contract.f5_home_runs)
+    const actualRunsRaw = side === 'away' ? contract.f5_away_runs : contract.f5_home_runs
+    const actualRuns = actualRunsRaw === null || actualRunsRaw === undefined || actualRunsRaw === '' ? NaN : Number(actualRunsRaw)
     const teamName = teamNickname(contract.team_name)
     const result = rowResult(lean, line, actualRuns)
     rows.push({
@@ -247,10 +279,10 @@ dates.forEach((date) => {
       subtitle: `${game.title} | backfill as-of ${asOfDate}`,
       confidence,
       sortConfidence: confidence,
-      sortEdge: Math.abs(edge),
-      priceLabel: `Proj ${roundToTenths(projectedRuns)} | edge ${edge >= 0 ? '+' : ''}${roundToTenths(edge)}`,
+      sortEdge: edge,
+      priceLabel: `Proj ${roundToTenths(projectedRuns)} | cushion ${edge >= 0 ? '+' : ''}${roundToTenths(edge)}`,
       metaLabel: `${roundToTenths(probability)}% model | data through ${asOfDate}`,
-      summary: `${teamName} projected ${roundToTenths(projectedRuns)} first-five runs against a posted F5 team-total line of ${roundToTenths(line)} using the ${date} pregame slate read.`,
+      summary: `${teamName} projected ${roundToTenths(projectedRuns)} first-five runs; ${lean} ${roundToTenths(line)} needs ${edgeState.thresholdLabel}, leaving ${edge >= 0 ? '+' : ''}${roundToTenths(edge)} threshold cushion.`,
       tags: ['Team total', '1st 5', `${roundToTenths(probability)}% raw`, `as-of ${asOfDate}`],
       invalid: false,
       statusLabel: '',
@@ -266,6 +298,10 @@ dates.forEach((date) => {
         line,
         projectedRuns,
         edge,
+        thresholdCushion: edge,
+        rawLineEdge: edgeState.rawLineEdge,
+        winThreshold: edgeState.winThreshold,
+        thresholdLabel: edgeState.thresholdLabel,
         probability,
         confidence,
         confidenceHaircut: thinEdgeHaircut,

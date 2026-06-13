@@ -1,0 +1,161 @@
+{
+  "run": "mlb-morning-predictions",
+  "date": "2026-06-11",
+  "priorDate": "2026-06-10",
+  "statcastStartDate": "2026-06-04",
+  "generatedAt": "2026-06-11T16:10:34.188Z",
+  "deploy": false,
+  "allowSourceGaps": false,
+  "nonMlbPreservation": {
+    "before": 0,
+    "after": 0,
+    "missing": []
+  },
+  "steps": [
+    {
+      "label": "Fetch MLB schedule and game feeds for prediction day",
+      "command": "npm run data:fetch:mlb-schedule-feed -- --start-date 2026-06-11 --end-date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:02:31.784Z",
+      "finishedAt": "2026-06-11T16:02:33.849Z"
+    },
+    {
+      "label": "Fetch DraftKings MLB full-game and first-five lines for refresh seed",
+      "command": "npm run data:fetch:draftkings-mlb -- --date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:02:33.849Z",
+      "finishedAt": "2026-06-11T16:02:41.866Z"
+    },
+    {
+      "label": "Full M2 live refresh: MLB schedule, lineups, markets, model lanes, RP36, props",
+      "command": "npm run data:refresh:mlb-live -- --date 2026-06-11 --skip-preflight",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:02:41.866Z",
+      "finishedAt": "2026-06-11T16:07:56.471Z"
+    },
+    {
+      "label": "Fetch DraftKings MLB full-game and first-five lines",
+      "command": "npm run data:fetch:draftkings-mlb -- --date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:07:56.472Z",
+      "finishedAt": "2026-06-11T16:08:07.082Z"
+    },
+    {
+      "label": "Warehouse DraftKings MLB game lines into typed market tables",
+      "command": "python3 data-migration/scripts/ingest_mlb_markets_props_raw_to_typed.py --date 2026-06-11 --report data-migration/reports/ingest_mlb_markets_props_raw_to_typed_2026-06-11_draftkings.json",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:08:07.082Z",
+      "finishedAt": "2026-06-11T16:08:14.202Z"
+    },
+    {
+      "label": "Validate DraftKings MLB full-game and first-five market coverage",
+      "command": "python3 data-migration/scripts/validate_mlb_markets_props_raw_to_typed.py --date 2026-06-11 --report data-migration/reports/validate_mlb_markets_props_raw_to_typed_2026-06-11_draftkings.json",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:08:14.202Z",
+      "finishedAt": "2026-06-11T16:08:14.597Z"
+    },
+    {
+      "label": "Refresh Baseball Savant hitter xwOBA game logs",
+      "command": "node models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs ingest-hitter-statcast-range --start-date 2026-06-04 --end-date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:08:14.597Z",
+      "finishedAt": "2026-06-11T16:09:21.578Z"
+    },
+    {
+      "label": "Rebuild hitter xwOBA 7-game and 30-day trend snapshots",
+      "command": "node models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs derive-hitter-statcast-trends --as-of-date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:09:21.578Z",
+      "finishedAt": "2026-06-11T16:09:21.825Z"
+    },
+    {
+      "label": "Fetch StatMuse starter-vs-team history",
+      "command": "node data-migration/scripts/fetch-mlb-starter-vs-team-statmuse.mjs --date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:09:21.825Z",
+      "finishedAt": "2026-06-11T16:09:40.111Z"
+    },
+    {
+      "label": "Warehouse ESPN pitcher splits",
+      "command": "node scripts/warehouse-mlb-espn-pitcher-splits.mjs --date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:09:40.111Z",
+      "finishedAt": "2026-06-11T16:09:51.760Z"
+    },
+    {
+      "label": "Regenerate M2 day files after supplemental sources",
+      "command": "npm run data:generate:mlb-day -- --date 2026-06-11 --skip-preflight",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:09:51.760Z",
+      "finishedAt": "2026-06-11T16:10:05.977Z"
+    },
+    {
+      "label": "Regenerate lineup board after supplemental sources",
+      "command": "npm run data:export:mlb-lineups -- --date 2026-06-11 --skip-preflight",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:10:05.977Z",
+      "finishedAt": "2026-06-11T16:10:13.043Z"
+    },
+    {
+      "label": "Repair known supplemental lineup slots",
+      "command": "node scripts/repair-mlb-lineup-supplements.mjs --date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:10:13.043Z",
+      "finishedAt": "2026-06-11T16:10:13.162Z"
+    },
+    {
+      "label": "Ingest generated hitter lineup splits",
+      "command": "npm run data:ingest:hitter-lineup-splits -- --date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:10:13.162Z",
+      "finishedAt": "2026-06-11T16:10:13.760Z"
+    },
+    {
+      "label": "Regenerate player props with market lineage",
+      "command": "npm run data:export:mlb-props -- --date 2026-06-11 --skip-preflight",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:10:13.761Z",
+      "finishedAt": "2026-06-11T16:10:14.504Z"
+    },
+    {
+      "label": "Publish rich MLB slate and preserve non-MLB games",
+      "command": "npm run data:publish:mlb-clean:vercel-safe -- --date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:10:14.504Z",
+      "finishedAt": "2026-06-11T16:10:33.197Z"
+    },
+    {
+      "label": "Public data audit",
+      "command": "npm run data:audit:mlb-public -- --date 2026-06-11",
+      "status": "allowed_failure",
+      "startedAt": "2026-06-11T16:10:33.228Z",
+      "finishedAt": "2026-06-11T16:10:33.644Z",
+      "error": "Command failed: npm run data:audit:mlb-public -- --date 2026-06-11",
+      "allowedKnownFailures": [
+        "missing-bridge-chain",
+        "missing-rp36-shadow",
+        "missing-bridge-chain",
+        "missing-rp36-shadow",
+        "missing-bridge-chain",
+        "missing-rp36-shadow",
+        "missing-bridge-chain",
+        "missing-rp36-shadow",
+        "missing-bridge-chain",
+        "missing-rp36-shadow",
+        "missing-bridge-chain",
+        "missing-rp36-shadow",
+        "missing-bridge-chain",
+        "missing-rp36-shadow",
+        "missing-bridge-chain",
+        "missing-rp36-shadow"
+      ]
+    },
+    {
+      "label": "Hard source-contract audit",
+      "command": "npm run data:audit:mlb-morning-contracts -- --date 2026-06-11",
+      "status": "passed",
+      "startedAt": "2026-06-11T16:10:33.645Z",
+      "finishedAt": "2026-06-11T16:10:34.188Z"
+    }
+  ]
+}

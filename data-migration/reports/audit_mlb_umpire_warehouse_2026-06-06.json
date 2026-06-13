@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-12T19:09:04.337Z",
+  "window": {
+    "startDate": "2026-06-06",
+    "endDate": "2026-06-06"
+  },
+  "sourceName": "thecapper_mlb_umpires",
+  "sourceUrl": "https://thecapper.io/mlb/umpires/",
+  "allowMissingSource": false,
+  "modelUsePolicy": {
+    "assignmentRule": "Only mlb_umpire_assignments_daily rows with date_match_status='exact' may attach to game/model features.",
+    "stalePageRule": "TheCapper umpire page is a current-slate page. Historical backfills are source gaps unless the raw capture was actually made on that slate day.",
+    "featureBoundary": "Umpire context is additive scout context for pitcher K, walk/run environment, and NRFI/YRFI review; it must not delete or override base M2 rows."
+  },
+  "hardFailures": [],
+  "warnings": [
+    "2026-06-06:unresolved-or-stale-assignment-rows",
+    "2026-06-06:capture-date-differs-from-source-date",
+    "2026-06-06:assignment-metrics-missing-for-some-rows"
+  ],
+  "dates": [
+    {
+      "sourceDate": "2026-06-06",
+      "sourceStatus": {
+        "lastStatus": "success",
+        "completenessStatus": "partial",
+        "expectedItemCount": 15,
+        "actualItemCount": 14,
+        "missingItemCount": 1,
+        "unresolvedCount": 1,
+        "updatedAt": "2026-06-10T22:18:15.163Z"
+      },
+      "mlbGames": 14,
+      "assignments": 15,
+      "exactMatches": 14,
+      "unresolvedRows": 1,
+      "profiles": 77,
+      "todayFlagProfiles": 14,
+      "capturedDates": [
+        "2026-06-10"
+      ],
+      "capturedOutsideSourceDate": [
+        "2026-06-10"
+      ],
+      "missingAssignmentMetrics": {
+        "zoneFactor": 1,
+        "kPerGame": 1,
+        "bbPerGame": 1,
+        "nrfiPct": 1,
+        "sampleGames": 1
+      },
+      "missingProfileMetrics": {
+        "zoneFactor": 0,
+        "kPerGame": 0,
+        "bbPerGame": 0,
+        "nrfiPct": 77,
+        "kFactor": 0
+      },
+      "duplicateExactGamePks": [],
+      "exactWrongDate": [],
+      "unresolvedExamples": [
+        {
+          "matchup": "Boston Red Sox @ New York Yankees",
+          "umpireName": "D.J. Reyburn",
+          "dateMatchStatus": "matchup_other_date",
+          "bestAvailableGameDate": "2026-06-05"
+        }
+      ],
+      "warnings": [
+        "unresolved-or-stale-assignment-rows",
+        "capture-date-differs-from-source-date",
+        "assignment-metrics-missing-for-some-rows"
+      ],
+      "hardFailures": []
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "after_counts": {
+    "market_contracts": 2612,
+    "market_price_ticks": 4211,
+    "market_snapshots": 5929,
+    "prop_market_snapshots": 4005,
+    "source_snapshots": 3232,
+    "unresolved_entities": 10
+  },
+  "before_counts": {
+    "market_contracts": 2589,
+    "market_price_ticks": 4072,
+    "market_snapshots": 5790,
+    "prop_market_snapshots": 3925,
+    "source_snapshots": 3232,
+    "unresolved_entities": 10
+  },
+  "by_file": {
+    "data-private/odds/draftkings/mlb/2026-06-11-draftkings-mlb-lines.json": {
+      "parsed_contracts": 139,
+      "parsed_prop_snapshots": 80,
+      "parsed_snapshots": 139,
+      "parsed_ticks": 139,
+      "source_games": 5,
+      "source_prop_rows": 80,
+      "source_rows": 139,
+      "unmapped_games": 0,
+      "unmapped_prop_players": 0
+    }
+  },
+  "date": "2026-06-11",
+  "direct_market_snapshots_for_date": 0,
+  "dry_run": false,
+  "generated_at": "2026-06-11T21:29:57.249077+00:00",
+  "inserted": {
+    "market_contracts": 139,
+    "market_price_ticks": 139,
+    "market_snapshots": 139,
+    "prop_market_snapshots": 80
+  },
+  "odds_completeness": "complete",
+  "odds_status": "success",
+  "ok": true,
+  "parsed_contracts": 139,
+  "parsed_prop_snapshots": 80,
+  "parsed_snapshots": 139,
+  "parsed_ticks": 139,
+  "parser_module": "pipeline/sources/mlb/normalization/market_raw_context.py",
+  "prop_market_snapshots_for_date": 332,
+  "props_completeness": "complete",
+  "props_status": "success",
+  "row_count_delta": {
+    "market_contracts": 23,
+    "market_price_ticks": 139,
+    "market_snapshots": 139,
+    "prop_market_snapshots": 80,
+    "source_snapshots": 0,
+    "unresolved_entities": 0
+  },
+  "sample_source_snapshots": [
+    "mlb-23069a0e3cfe4d1b9ba75178d7fe025d"
+  ],
+  "script": "data-migration/scripts/ingest_mlb_markets_props_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_files": 1,
+  "source_games": 5,
+  "source_prop_rows": 80,
+  "source_rows": 139,
+  "source_snapshot_rows": 1,
+  "unmapped_games": 0,
+  "unmapped_prop_players": 0
+}

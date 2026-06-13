@@ -62,7 +62,12 @@ Run the full live refresh, not only a one-off exporter.
 
 ```bash
 npm run data:refresh:mlb-live -- --date YYYY-MM-DD
+npm run data:warehouse:mlb-fic-weather -- --date YYYY-MM-DD
 npm run data:warehouse:mlb-fic-daily-matchups -- --date YYYY-MM-DD
+npm run data:warehouse:mlb-fic-umpire-factors -- --date YYYY-MM-DD
+npm run data:warehouse:mlb-umpires -- --date YYYY-MM-DD
+npm run data:audit:mlb-umpires -- --date YYYY-MM-DD
+npm run data:warehouse:mlb-fangraphs-bullpen-depth -- --date YYYY-MM-DD --team all
 ```
 
 This should rebuild:
@@ -72,7 +77,11 @@ This should rebuild:
 - HR board
 - non-HR prop board
 - prop import/grading hooks
+- FantasyInfoCentral Weather/HRForce warehouse rows for same-day park/weather HR and run-environment context
 - FantasyInfoCentral Daily Matchups warehouse rows for the same-day H+R+RBI clean-board gate
+- FantasyInfoCentral Umpire Factors warehouse rows for historical umpire run/K/walk profile context
+- TheCapper home-plate umpire assignment rows plus an exact-match audit before any K/NRFI/run-environment usage
+- FanGraphs/RosterResource reliever context for bullpen role, workload, closer hierarchy, injuries, roster status, and recent transactions; see [mlb-reliever-daily-warehouse-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-reliever-daily-warehouse-runbook.md:1)
 
 ## 3. Verification Pass
 
@@ -177,9 +186,31 @@ Even if the verifier passes, manually inspect these:
   - hitter must be matched to today's listed opposing starter
   - minimum 5 career AB vs that pitcher
   - batter-vs-pitcher AVG over .300
-  - batter-vs-pitcher OPS over 1.000
+  - batter-vs-pitcher OPS over .800
+  - FIC row context now stores same-row HRF, qAB%, HH%, hits, 2B/3B, HR, BB, AVG, OBP, and OPS. Use the 5+ AB threshold before applying BvP to hits, total bases, HR, RBI/H+R+RBI, pitcher hits allowed, or pitcher earned-run risk.
   - if the hitter's recent OPS is low, keep the row as watch/research even if broader model context likes the bat
   - example failure shape: a player like Josh Naylor can clear broad HRR model context, but should not be clean-promoted if recent OPS/BvP strength does not satisfy the FIC gate
+- FantasyInfoCentral Weather/HRForce should be present for the slate:
+  - source: `https://www.fantasyinfocentral.com/mlb/weather/`
+  - command: `npm run data:warehouse:mlb-fic-weather -- --date YYYY-MM-DD`
+  - warehouse outputs: raw HTML under `data-private/raw/fantasyinfocentral/mlb/weather/`, normalized JSON under `data-private/warehouse/mlb/fantasyinfocentral-weather/`, SQLite rows in `mlb_fic_weather_daily`, and hourly rows in `mlb_fic_weather_hourly_daily`
+  - HRForce >= 1.4 should raise HR/run-environment support and make unders prove more, especially when the hourly forecast also stays >= 1.4
+  - HRForce below 1.4 should be treated as lower HR/run-environment pressure
+  - HRForce N/A usually means a dome/no-weather-impact ballpark; store it as `lower_runs_dome_na` rather than a missing high-carry signal
+  - HRForce must not be the only reason to promote an HR, over, or team-total over; it needs contact, starter, bullpen, lineup, price, or park support
+- TheCapper umpire assignment context should be present and audited:
+  - source: `https://thecapper.io/mlb/umpires/`
+  - command: `npm run data:warehouse:mlb-umpires -- --date YYYY-MM-DD`
+  - audit: `npm run data:audit:mlb-umpires -- --date YYYY-MM-DD`
+  - warehouse outputs: raw HTML under `data-private/raw/thecapper/mlb/umpires/`, normalized JSON under `data-private/warehouse/mlb/thecapper-umpires/`, daily profiles in `mlb_umpire_profiles_daily`, game assignments in `mlb_umpire_assignments_daily`, and source status rows under `thecapper_mlb_umpires`
+  - only rows with `date_match_status='exact'` may influence pitcher K, walk/run environment, or NRFI/YRFI context
+  - if the audit reports `no-exact-umpire-game-matches`, `capture-date-differs-from-source-date`, or `unresolved-or-stale-assignment-rows`, keep the raw capture but treat umpire context as unavailable for that slate
+- FantasyInfoCentral Umpire Factors should also be present as the profile/factor source:
+  - source: `https://www.fantasyinfocentral.com/mlb/umpires`
+  - command: `npm run data:warehouse:mlb-fic-umpire-factors -- --date YYYY-MM-DD`
+  - warehouse outputs: raw HTML under `data-private/raw/fantasyinfocentral/mlb/umpires/`, normalized JSON under `data-private/warehouse/mlb/fantasyinfocentral-umpire-factors/`, SQLite rows in `mlb_fic_umpire_factors_daily`, and source status rows under `fantasyinfocentral_umpire_factors`
+  - store `favors`, `games`, `Hits/G`, `BB/G`, `SO/G`, visitor/home score, home advantage, BA, OBP, and OPS
+  - this is not an assignment source. It should join to a game only through an exact TheCapper or equivalent home-plate assignment by normalized umpire name.
 - The HRR board should still show both combined H+R+RBI and separate Hits/Runs/RBI lanes. If the FIC gate removes a combined clean-board promotion, do not remove component prop rows unless their own component-specific filters fail.
 - After fetching DraftKings MLB markets, verify the specialty market anchors are normalized into SQL-MLB. These are required context for inning-by-inning improvements and should not live only in public JSON:
 

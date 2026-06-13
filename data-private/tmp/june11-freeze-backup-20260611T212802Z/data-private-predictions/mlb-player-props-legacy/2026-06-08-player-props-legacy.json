@@ -1,0 +1,16 @@
+{
+  "modelName": "mlb-player-props-v1-legacy",
+  "date": "2026-06-08",
+  "generatedAt": "2026-06-08T22:14:20.318Z",
+  "sources": [
+    "typed MLB DB day-game loader",
+    "models/mlb/app-model.js",
+    "sql-mlb.db prop_market_snapshots"
+  ],
+  "summary": {
+    "totalGames": 8,
+    "totalPicks": 0,
+    "byType": {}
+  },
+  "picks": []
+}

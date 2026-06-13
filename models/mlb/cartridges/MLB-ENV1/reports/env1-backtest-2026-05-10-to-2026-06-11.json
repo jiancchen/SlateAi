@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-12T22:16:41.935Z",
+  "modelId": "MLB-ENV1",
+  "modelVersion": "MLB-ENV1.2026-06-12.v2",
+  "window": {
+    "startDate": "2026-05-10",
+    "endDate": "2026-06-11"
+  },
+  "coverage": {
+    "dates": 33,
+    "projectionRows": 432,
+    "matchedGames": 430,
+    "withFicWeather": 0,
+    "withExactUmpire": 14,
+    "withParkContext": 430,
+    "withLocalStartContext": 430,
+    "lateLocalStarts": 0
+  },
+  "headline": {
+    "totalMae": 3.546,
+    "baselineTotalMae": 3.543,
+    "maeLiftPct": -0.1,
+    "directional": {
+      "samples": 117,
+      "hitPct": 54.7
+    }
+  },
+  "buckets": {
+    "runEnvironmentSignal": [
+      {
+        "bucket": "neutral_run_environment",
+        "samples": 342,
+        "avgExpectedDelta": 0.029,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": 0.01,
+        "avgActualDelta": 0.557,
+        "avgActualTotal": 9.146,
+        "avgActualHits": 16.553,
+        "avgActualHr": 2.389,
+        "totalMae": 3.566,
+        "baselineMae": 3.563,
+        "directional": {
+          "samples": 29,
+          "hitPct": 58.6
+        }
+      },
+      {
+        "bucket": "lower_run_environment",
+        "samples": 42,
+        "avgExpectedDelta": -0.24,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.004,
+        "avgActualDelta": -0.617,
+        "avgActualTotal": 8.19,
+        "avgActualHits": 15.81,
+        "avgActualHr": 1.952,
+        "totalMae": 3.725,
+        "baselineMae": 3.794,
+        "directional": {
+          "samples": 42,
+          "hitPct": 64.3
+        }
+      },
+      {
+        "bucket": "suppressing_run_environment",
+        "samples": 14,
+        "avgExpectedDelta": -0.6,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.144,
+        "avgActualDelta": 0.03,
+        "avgActualTotal": 8.429,
+        "avgActualHits": 14.857,
+        "avgActualHr": 2.571,
+        "totalMae": 3.513,
+        "baselineMae": 3.427,
+        "directional": {
+          "samples": 14,
+          "hitPct": 42.9
+        }
+      },
+      {
+        "bucket": "higher_run_environment",
+        "samples": 32,
+        "avgExpectedDelta": 0.358,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.046,
+        "avgActualDelta": -0.603,
+        "avgActualTotal": 8.156,
+        "avgActualHits": 15.813,
+        "avgActualHr": 1.969,
+        "totalMae": 3.104,
+        "baselineMae": 3.05,
+        "directional": {
+          "samples": 32,
+          "hitPct": 43.8
+        }
+      }
+    ],
+    "parkRunIndex": [
+      {
+        "bucket": "park_runs_neutral",
+        "samples": 198,
+        "avgExpectedDelta": 0,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.048,
+        "avgActualDelta": 0.531,
+        "avgActualTotal": 9.232,
+        "avgActualHits": 16.813,
+        "avgActualHr": 2.364,
+        "totalMae": 3.743,
+        "baselineMae": 3.744,
+        "directional": {
+          "samples": 3,
+          "hitPct": 100
+        }
+      },
+      {
+        "bucket": "park_runs_102_105",
+        "samples": 72,
+        "avgExpectedDelta": 0.129,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": 0.13,
+        "avgActualDelta": -0.06,
+        "avgActualTotal": 8.486,
+        "avgActualHits": 15.611,
+        "avgActualHr": 2.361,
+        "totalMae": 3.436,
+        "baselineMae": 3.421,
+        "directional": {
+          "samples": 1,
+          "hitPct": 0
+        }
+      },
+      {
+        "bucket": "park_runs_106_plus",
+        "samples": 59,
+        "avgExpectedDelta": 0.303,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": 0.063,
+        "avgActualDelta": 0.278,
+        "avgActualTotal": 8.864,
+        "avgActualHits": 16.119,
+        "avgActualHr": 2.271,
+        "totalMae": 3.224,
+        "baselineMae": 3.216,
+        "directional": {
+          "samples": 59,
+          "hitPct": 50.8
+        }
+      },
+      {
+        "bucket": "park_runs_95_98",
+        "samples": 47,
+        "avgExpectedDelta": -0.134,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.037,
+        "avgActualDelta": 1.012,
+        "avgActualTotal": 9.362,
+        "avgActualHits": 16.851,
+        "avgActualHr": 2.34,
+        "totalMae": 3.119,
+        "baselineMae": 3.093,
+        "directional": {
+          "samples": 0,
+          "hitPct": 0
+        }
+      },
+      {
+        "bucket": "park_runs_94_below",
+        "samples": 54,
+        "avgExpectedDelta": -0.335,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.039,
+        "avgActualDelta": -0.35,
+        "avgActualTotal": 8.315,
+        "avgActualHits": 15.611,
+        "avgActualHr": 2.148,
+        "totalMae": 3.693,
+        "baselineMae": 3.717,
+        "directional": {
+          "samples": 54,
+          "hitPct": 57.4
+        }
+      }
+    ],
+    "hrForceSignal": [
+      {
+        "bucket": "missing",
+        "samples": 430,
+        "avgExpectedDelta": 0.006,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.001,
+        "avgActualDelta": 0.339,
+        "avgActualTotal": 8.956,
+        "avgActualHits": 16.37,
+        "avgActualHr": 2.321,
+        "totalMae": 3.546,
+        "baselineMae": 3.543,
+        "directional": {
+          "samples": 117,
+          "hitPct": 54.7
+        }
+      }
+    ],
+    "visibilitySignal": [
+      {
+        "bucket": "normal_start_visibility",
+        "samples": 430,
+        "avgExpectedDelta": 0.006,
+        "avgExpectedHitsDelta": 0,
+        "avgExpectedHrDelta": -0.001,
+        "avgActualDelta": 0.339,
+        "avgActualTotal": 8.956,
+        "avgActualHits": 16.37,
+        "avgActualHr": 2.321,
+        "totalMae": 3.546,
+        "baselineMae": 3.543,
+        "directional": {
+          "samples": 117,
+          "hitPct": 54.7
+        }
+      }
+    ]
+  },
+  "promotionGate": {
+    "status": "shadow_only",
+    "reasons": [
+      "Environment-adjusted total baseline must beat rolling league baseline MAE.",
+      "Needs at least 100 settled FIC weather/HRForce games before validating HRForce weights."
+    ]
+  }
+}

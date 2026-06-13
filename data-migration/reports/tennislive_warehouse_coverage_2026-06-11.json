@@ -1,0 +1,353 @@
+{
+  "ok": true,
+  "date": "2026-06-11",
+  "generatedAt": "2026-06-11T10:15:19.157Z",
+  "sourceDb": "/Users/jcchen/Documents/New project/data-private/warehouse/sports/tennis/sql-tennis.db",
+  "source": "TennisLive.net player and match pages plus existing Robinhood slate market rows",
+  "baselineCapturedBeforeRun": {
+    "source_snapshots": 4881,
+    "tennislive_player_profiles": 831,
+    "tennislive_player_match_links": 7344,
+    "recent_matches": 12110,
+    "player_form_snapshots": 3580,
+    "tennislive_match_summaries": 1245,
+    "match_stat_rows": 17520,
+    "tennislive_form_chart_points": 62395,
+    "replay_games": 24715,
+    "tennislive_match_replay_points": 169668
+  },
+  "finalCounts": {
+    "source_snapshots": 5949,
+    "tennislive_player_profiles": 962,
+    "tennislive_player_match_links": 8323,
+    "recent_matches": 13168,
+    "player_form_snapshots": 3683,
+    "tennislive_match_summaries": 2158,
+    "match_stat_rows": 30816,
+    "tennislive_form_chart_points": 116775,
+    "replay_games": 43946,
+    "tennislive_match_replay_points": 368348
+  },
+  "deltas": {
+    "source_snapshots": 1068,
+    "tennislive_player_profiles": 131,
+    "tennislive_player_match_links": 979,
+    "recent_matches": 1058,
+    "player_form_snapshots": 103,
+    "tennislive_match_summaries": 913,
+    "match_stat_rows": 13296,
+    "tennislive_form_chart_points": 54380,
+    "replay_games": 19231,
+    "tennislive_match_replay_points": 198680
+  },
+  "robinhoodSlateCoverageSameId": {
+    "rh_players": 132,
+    "with_source_same_id": 124,
+    "with_profile_same_id": 124,
+    "with_10_links_same_id": 124,
+    "with_9plus_recent_same_id": 124,
+    "with_10_recent_same_id": 35
+  },
+  "todayTennisLiveMatchPages": {
+    "discovered_today_match_pages": 36,
+    "today_pages_with_replay": 8,
+    "today_form_chart_points": 2155,
+    "today_replay_games": 63,
+    "today_replay_points": 356,
+    "today_stat_rows": 0
+  },
+  "sameIdGaps": [
+    {
+      "tour": "ATP",
+      "name": "Arklon Huertas Del Pino Cordova",
+      "player_id": "tennis-player-arklon-huertas-del-pino-cordova"
+    },
+    {
+      "tour": "ATP",
+      "name": "Doni Gashi",
+      "player_id": "tennis-player-doni-gashi"
+    },
+    {
+      "tour": "ATP",
+      "name": "Ilia Snitari",
+      "player_id": "tennis-player-ilia-snitari"
+    },
+    {
+      "tour": "ATP",
+      "name": "Johan Alexander Rodriguez Rodriguez",
+      "player_id": "tennis-player-johan-alexander-rodriguez-rodriguez"
+    },
+    {
+      "tour": "ATP",
+      "name": "Pedro Martinez",
+      "player_id": "tennis-player-pedro-martinez"
+    },
+    {
+      "tour": "ATP",
+      "name": "Taylor Fritz",
+      "player_id": "tennis-player-taylor-fritz"
+    },
+    {
+      "tour": "WTA",
+      "name": "Greet Minnen",
+      "player_id": "tennis-player-greet-minnen"
+    },
+    {
+      "tour": "WTA",
+      "name": "Maiar Sherif Ahmed Abdelaziz",
+      "player_id": "tennis-player-maiar-sherif-ahmed-abdelaziz"
+    }
+  ],
+  "variantMatchesAlreadyFetched": [
+    {
+      "player_id": "tlp-216397e7e82b5277377d6e5c",
+      "name": "Arklon Huertas Del Pino",
+      "source_player_url": "https://www.tennislive.net/atp/arklon-huertas-del-pino/",
+      "current_ranking": 769,
+      "points": 38
+    },
+    {
+      "player_id": "tennis-player-greetje-minnen",
+      "name": "Greetje Minnen",
+      "source_player_url": "https://www.tennislive.net/wta/greetje-minnen/",
+      "current_ranking": 202,
+      "points": 361
+    },
+    {
+      "player_id": "tennis-player-ilya-snitari",
+      "name": "Ilya Snitari",
+      "source_player_url": "https://www.tennislive.net/atp/ilya-snitari/",
+      "current_ranking": 900,
+      "points": 24
+    },
+    {
+      "player_id": "tennis-player-johan-alexander-rodriguez",
+      "name": "Johan Alexander Rodriguez",
+      "source_player_url": "https://www.tennislive.net/atp/johan-alexander-rodriguez-rodriguez/",
+      "current_ranking": 693,
+      "points": 47
+    },
+    {
+      "player_id": "tennis-player-mayar-sherif",
+      "name": "Mayar Sherif",
+      "source_player_url": "https://www.tennislive.net/wta/mayar-sherif/",
+      "current_ranking": 118,
+      "points": 681
+    },
+    {
+      "player_id": "tennis-player-pedro-martinez-portero",
+      "name": "Pedro Martinez Portero",
+      "source_player_url": "https://www.tennislive.net/atp/pedro-martinez-portero/",
+      "current_ranking": 139,
+      "points": 444
+    },
+    {
+      "player_id": "tennis-player-tatjana-maria",
+      "name": "Tatjana Maria",
+      "source_player_url": "https://www.tennislive.net/wta/tatjana-malek/",
+      "current_ranking": 52,
+      "points": 1111
+    },
+    {
+      "player_id": "tlp-f8ca21ac321e6cf1e18a2159",
+      "name": "Taylor Harry Fritz",
+      "source_player_url": "https://www.tennislive.net/atp/taylor-harry-fritz/",
+      "current_ranking": 9,
+      "points": 3720
+    },
+    {
+      "player_id": "tennis-player-zhizhen-zhang",
+      "name": "Zhizhen Zhang",
+      "source_player_url": "https://www.tennislive.net/atp/zhizhen-zhang/",
+      "current_ranking": 214,
+      "points": 269
+    }
+  ],
+  "trueOpenSourceGaps": [
+    {
+      "tour": "ATP",
+      "name": "Doni Gashi",
+      "player_id": "tennis-player-doni-gashi"
+    }
+  ],
+  "identityRepairCandidates": [
+    {
+      "tour": "ATP",
+      "name": "Arklon Huertas Del Pino Cordova",
+      "player_id": "tennis-player-arklon-huertas-del-pino-cordova"
+    },
+    {
+      "tour": "ATP",
+      "name": "Ilia Snitari",
+      "player_id": "tennis-player-ilia-snitari"
+    },
+    {
+      "tour": "ATP",
+      "name": "Johan Alexander Rodriguez Rodriguez",
+      "player_id": "tennis-player-johan-alexander-rodriguez-rodriguez"
+    },
+    {
+      "tour": "ATP",
+      "name": "Pedro Martinez",
+      "player_id": "tennis-player-pedro-martinez"
+    },
+    {
+      "tour": "ATP",
+      "name": "Taylor Fritz",
+      "player_id": "tennis-player-taylor-fritz"
+    },
+    {
+      "tour": "WTA",
+      "name": "Greet Minnen",
+      "player_id": "tennis-player-greet-minnen"
+    },
+    {
+      "tour": "WTA",
+      "name": "Maiar Sherif Ahmed Abdelaziz",
+      "player_id": "tennis-player-maiar-sherif-ahmed-abdelaziz"
+    }
+  ],
+  "runReports": [
+    {
+      "file": "ingest_tennis_tennislive_2026-06-11_known_first5_recent10.json",
+      "fetchStatus": {
+        "run_id": "source-fetch-tennislive-2026-06-11-2026-06-11T09-19-37-000681+00-00",
+        "status": "success",
+        "completeness_status": "complete",
+        "player_attempts": 5,
+        "player_successes": 5,
+        "player_failures": 0,
+        "match_attempts": 46,
+        "match_successes": 46,
+        "match_failures": 0,
+        "attempted_pages": 51,
+        "successful_pages": 51,
+        "failed_pages": 0
+      }
+    },
+    {
+      "file": "ingest_tennis_tennislive_2026-06-11_known_remaining37_recent10.json",
+      "fetchStatus": {
+        "run_id": "source-fetch-tennislive-2026-06-11-2026-06-11T09-31-15-085723+00-00",
+        "status": "success",
+        "completeness_status": "complete",
+        "player_attempts": 37,
+        "player_successes": 37,
+        "player_failures": 0,
+        "match_attempts": 339,
+        "match_successes": 339,
+        "match_failures": 0,
+        "attempted_pages": 376,
+        "successful_pages": 376,
+        "failed_pages": 0
+      }
+    },
+    {
+      "file": "ingest_tennis_tennislive_2026-06-11_discovered_today_matches.json",
+      "fetchStatus": {
+        "run_id": "source-fetch-tennislive-2026-06-11-2026-06-11T09-33-55-920364+00-00",
+        "status": "success",
+        "completeness_status": "complete",
+        "player_attempts": 0,
+        "player_successes": 0,
+        "player_failures": 0,
+        "match_attempts": 34,
+        "match_successes": 34,
+        "match_failures": 0,
+        "attempted_pages": 34,
+        "successful_pages": 34,
+        "failed_pages": 0
+      }
+    },
+    {
+      "file": "ingest_tennis_tennislive_2026-06-11_missing_first15_recent10.json",
+      "fetchStatus": {
+        "run_id": "source-fetch-tennislive-2026-06-11-2026-06-11T09-41-09-483472+00-00",
+        "status": "partial",
+        "completeness_status": "partial",
+        "player_attempts": 15,
+        "player_successes": 14,
+        "player_failures": 1,
+        "match_attempts": 132,
+        "match_successes": 132,
+        "match_failures": 0,
+        "attempted_pages": 147,
+        "successful_pages": 146,
+        "failed_pages": 1
+      }
+    },
+    {
+      "file": "ingest_tennis_tennislive_2026-06-11_missing_chunk2_recent10.json",
+      "fetchStatus": {
+        "run_id": "source-fetch-tennislive-2026-06-11-2026-06-11T09-49-54-768706+00-00",
+        "status": "partial",
+        "completeness_status": "partial",
+        "player_attempts": 26,
+        "player_successes": 24,
+        "player_failures": 2,
+        "match_attempts": 220,
+        "match_successes": 220,
+        "match_failures": 0,
+        "attempted_pages": 246,
+        "successful_pages": 244,
+        "failed_pages": 2
+      }
+    },
+    {
+      "file": "ingest_tennis_tennislive_2026-06-11_missing_chunk3_recent10.json",
+      "fetchStatus": {
+        "run_id": "source-fetch-tennislive-2026-06-11-2026-06-11T10-00-00-606683+00-00",
+        "status": "partial",
+        "completeness_status": "partial",
+        "player_attempts": 26,
+        "player_successes": 24,
+        "player_failures": 2,
+        "match_attempts": 225,
+        "match_successes": 225,
+        "match_failures": 0,
+        "attempted_pages": 251,
+        "successful_pages": 249,
+        "failed_pages": 2
+      }
+    },
+    {
+      "file": "ingest_tennis_tennislive_2026-06-11_missing_chunk4_recent10.json",
+      "fetchStatus": {
+        "run_id": "source-fetch-tennislive-2026-06-11-2026-06-11T10-09-43-160941+00-00",
+        "status": "partial",
+        "completeness_status": "partial",
+        "player_attempts": 27,
+        "player_successes": 23,
+        "player_failures": 4,
+        "match_attempts": 211,
+        "match_successes": 211,
+        "match_failures": 0,
+        "attempted_pages": 238,
+        "successful_pages": 234,
+        "failed_pages": 4
+      }
+    },
+    {
+      "file": "ingest_tennis_tennislive_2026-06-11_missing_corrections_final_recent10.json",
+      "fetchStatus": {
+        "run_id": "source-fetch-tennislive-2026-06-11-2026-06-11T10-11-31-649706+00-00",
+        "status": "success",
+        "completeness_status": "complete",
+        "player_attempts": 4,
+        "player_successes": 4,
+        "player_failures": 0,
+        "match_attempts": 37,
+        "match_successes": 37,
+        "match_failures": 0,
+        "attempted_pages": 41,
+        "successful_pages": 41,
+        "failed_pages": 0
+      }
+    }
+  ],
+  "notes": [
+    "Same-ID coverage is intentionally conservative; several TennisLive pages use fuller or alternate names and should be identity-repaired before model consumption.",
+    "Canonical ranking archive remains asOf 2026-06-09; TennisLive profile ranks/points are fresh from this 2026-06-11 pull.",
+    "Today match pages yielded form charts and some replay rows; TennisLive had not published match stat rows for those direct June 11 pages at fetch time."
+  ]
+}

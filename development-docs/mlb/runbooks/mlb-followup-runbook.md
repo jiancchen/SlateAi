@@ -94,6 +94,36 @@ npm run data:warehouse:mlb-fic-daily-matchups -- --date YYYY-MM-DD
 
 Use one date per command. The FIC warehouse writes raw HTML, normalized JSON, SQLite rows, and `web/src/lib/mlb-fic-daily-matchups.generated.js`; running several dates in parallel can lock `sql-mlb.db` and leave the generated module incomplete. Confirm the dated source URL is `https://www.fantasyinfocentral.com/mlb/daily-matchups?date=YYYY-MM-DD`.
 
+If a same-day follow-up or postmortem depends on HRForce/weather carry, warehouse FantasyInfoCentral Weather before analysis:
+
+```bash
+npm run data:warehouse:mlb-fic-weather -- --date YYYY-MM-DD
+```
+
+The FIC weather page is a current slate page, not a reliable historical date-parameter feed. Use it as a point-in-time source captured during the slate day, and do not backfill old dates from today's weather page.
+
+For FIC HRForce review, treat effective HRForce >= 1.4 as higher HR/run-environment pressure. Treat effective HRForce below 1.4 as lower pressure. HRForce N/A usually means dome/no-weather-impact context, so it belongs in the lower weather-carry bucket unless another non-weather source explains a run boost.
+
+If a follow-up or postmortem wants umpire context for run environment, NRFI/YRFI, or pitcher strikeouts, warehouse TheCapper MLB umpire data before analysis:
+
+```bash
+npm run data:warehouse:mlb-fic-umpire-factors -- --date YYYY-MM-DD
+npm run data:warehouse:mlb-umpires -- --date YYYY-MM-DD
+npm run data:audit:mlb-umpires -- --date YYYY-MM-DD
+npm run data:research:mlb-umpire-impact -- --start-date YYYY-MM-DD --end-date YYYY-MM-DD
+```
+
+The FIC Umpire Factors page is a profile/factor snapshot, not a game assignment source. Store it daily in `mlb_fic_umpire_factors_daily`, then join to games only through exact home-plate assignments. The TheCapper page does not expose a reliable historical date parameter. Store the raw fetch every day, but only use `mlb_umpire_assignments_daily` rows where `date_match_status='exact'` for game-level conclusions. Rows marked `matchup_other_date` or `unmatched` are source coverage gaps, not usable game assignments. If `data:audit:mlb-umpires` reports `capture-date-differs-from-source-date`, treat that date as point-in-time suspect unless the raw capture was intentionally made on slate day and documented. Run TheCapper/FIC warehouse commands one date at a time; concurrent writes can lock `sql-mlb.db`.
+
+If bullpen usage or bridge-reliever availability is part of the follow-up, warehouse the FanGraphs/RosterResource bullpen depth source before analysis:
+
+```bash
+npm run data:warehouse:mlb-fangraphs-bullpen-depth -- --date YYYY-MM-DD --team all
+npm run data:generate:mlb-shadow-addendums -- --dates YYYY-MM-DD
+```
+
+This stores daily role ladders, visible and structured workload, enriched RP roster rows, team-page transactions, team RP rankings, closer-depth hierarchy, and closer-page leverage usage before exporting the additive board addendum to `web/src/lib/mlb-shadow-addendums.generated.js`. See [mlb-reliever-daily-warehouse-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-reliever-daily-warehouse-runbook.md:1) for validation queries and remaining source backlog. Use this to audit which high-leverage arms were probably unavailable, overworked, recently optioned/overridden, or in closer/setup/middle/long-relief lanes. It is source context until backtested; do not let it directly override RP36 or remove value-board rows. For follow-up grading, compare the shadow tags against actual late-inning scoring, ML misses caused by bullpen collapse, and pitcher K misses caused by early hooks or extended leash.
+
 ## 2. Freeze Cached Prediction Rows
 
 Cached page predictions must become immutable once the game has started or finished.
@@ -172,11 +202,12 @@ After grading, audit the value-board presentation against the settled slate befo
   - Mike's BOTD as an additive screen only
 - Do not remove component Hits/Runs/RBI lanes when adding or repairing combined H+R+RBI or Mike's BOTD. If a lane has zero rows, show zero rows; do not rewrite the board into a combined-only view.
 - For combined H+R+RBI, audit whether every promoted clean-board row satisfied projected full-game ML win, 70%+ model confidence, and 30+ recent AB/PA. Misses that fail this source gate should be classified as promotion failures, not as evidence that the entire HRR model row should be deleted.
-- For Mike's BOTD, audit the separate 60%+ confidence screen with same-day FIC support: at least 5 career AB against the listed starter, AVG over .300, OPS over 1.000, projected full-game ML win, and 30+ recent AB/PA. If a manual Mike screen exists for the slate, only the manual names should enter BOTD; FIC strict-pass rows that were not manually selected stay out unless the rule is explicitly changed.
+- For Mike's BOTD, audit the separate 60%+ confidence screen with same-day FIC support: at least 5 career AB against the listed starter, AVG over .300, OPS over .800, projected full-game ML win, and 30+ recent AB/PA. If a manual Mike screen exists for the slate, only the manual names should enter BOTD; FIC strict-pass rows that were not manually selected stay out unless the rule is explicitly changed.
 - For historical slates without direct exported `hitRunRbi` props, Mike's BOTD and combined HRR can be rebuilt from the modeled lineup-production ladder. Those modeled rows must carry FIC fields and should be graded with `mlb-batting-results.generated.js` using H+R+RBI >= 2 as the displayed hit condition for the 1.5-style modeled ladder.
 - When settled games are available, every value-board row that has a trusted result source should show green/red/push status. Gray rows are acceptable only for unresolved games, rows without a defined market/result mapping, or research-only rows that intentionally have no grade.
 - Bad player/team identity rows discovered during follow-up should be invalidated at prop-catalog level with a date-scoped guard, then recorded in the postmortem. Do not rely on team market filters to catch an identity row attached to the wrong team.
 - Per-inning history must reconcile before publish: for every `stateContext.recentInningHistory` and `stateContext.matchupInningHistory` row, `sum(innings[].runs)` must equal `runsFor`, and `max(innings[].runs)` must be less than or equal to `runsFor`. If this fails, check for duplicate `team_game_stats`/`game_outcomes` rows being joined to plate appearances, and check extra-inning truncation.
+- Umpire-impact claims must come from exact date/game matches only. The first-pass report groups by zone bucket and joins to final game runs, first-five runs, starter strikeouts, and total pitcher strikeouts; treat any window under 30 exact settled games as directional context, not a promotion rule.
 
 Run the shadow calibration addendum over the newly settled window before publishing POTD or lane-promotion claims:
 
@@ -202,6 +233,13 @@ F5 ML follow-up must also separate confidence from margin support:
 - Public F5 ML sorting should be `promotion tier -> lead confidence -> push/tie risk -> run-gap support`.
 - A narrow historical seed window must not demote a stronger F5 ML edge by itself. If the lead confidence is acceptable and push/tie risk is controlled, an edge above the seed window is strong-edge support, not a reason to fall below weaker promoted rows.
 - Promotion copy should explain the tradeoff directly: lead confidence is the primary signal, push/tie risk is the control, and projected run gap is supporting evidence.
+
+F5 team-total follow-up must use hit-threshold cushion, not raw projection-vs-line gap:
+
+- For overs, cushion is `projected runs - (floor(line) + 1)` because the bet only hits at the next integer. Example: `Over 1.5` needs `2+`; a `2.6` projection is `+0.6` cushion, not `+1.1`.
+- For unders, cushion is `(ceil(line) - 1) - projected runs` because the bet must stay at or below the last winning integer.
+- Public sorting/promotion should use `promotion tier -> confidence -> threshold cushion`; raw line edge is diagnostic only.
+- Treat threshold cushion below `0.75` as watch-only unless a newer shadow report proves that thin threshold bucket is profitable.
 
 The addendum must not delete rows or rewrite the original model pick.
 
