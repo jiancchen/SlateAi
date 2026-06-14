@@ -13,6 +13,10 @@ The point is to stop treating the starter as one flat ERA/WHIP object. The same 
 
 SP1 should be built shadow-first the same way ENV1 and RP2 were introduced. It may explain and audit before it is allowed to change public pick confidence.
 
+Before implementation or backtests begin, complete the checklist in:
+
+- `models/mlb/cartridges/MLB-SP1/IMPLEMENTATION_CHECKLIST.md`
+
 ## What SP1 Owns
 
 SP1 owns the pitcher side of today's offensive environment:

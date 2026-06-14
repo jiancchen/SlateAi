@@ -11,6 +11,7 @@
   "plannedEntrypoint": "scripts/build-mlb-starter-profile-addendum.mjs",
   "outputContract": "models/mlb/cartridges/MLB-SP1/output-contract.json",
   "modelNotes": "models/mlb/cartridges/MLB-SP1/MODEL_NOTES.md",
+  "implementationChecklist": "models/mlb/cartridges/MLB-SP1/IMPLEMENTATION_CHECKLIST.md",
   "changelog": "models/mlb/cartridges/MLB-SP1/CHANGELOG.md",
   "sourceFiles": [
     {

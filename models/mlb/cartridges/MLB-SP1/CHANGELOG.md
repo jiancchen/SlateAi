@@ -1,5 +1,13 @@
 # MLB-SP1 Changelog
 
+## MLB-SP1.2026-06-14.checklist
+
+Status: pre-implementation checklist.
+
+Added `IMPLEMENTATION_CHECKLIST.md` as the required gate before materializer implementation or shadow backtests.
+
+The checklist covers source inventory, role resolution, warehouse contract, feature engineering, score/delta design, lane consumers, side/tail coherence gates, UI story requirements, implementation preflight, backtest preflight, metrics, promotion gates, and definitions of done.
+
 ## MLB-SP1.2026-06-14.design
 
 Status: design-scaffold.

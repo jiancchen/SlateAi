@@ -23,6 +23,10 @@ npm run data:generate:mlb-day -- --date YYYY-MM-DD
 
 Until `data:build:mlb-sp1` exists, use this runbook as the contract for implementation and audit.
 
+Before implementation or backtests begin, complete:
+
+- [models/mlb/cartridges/MLB-SP1/IMPLEMENTATION_CHECKLIST.md](/Users/jcchen/Documents/New%20project/models/mlb/cartridges/MLB-SP1/IMPLEMENTATION_CHECKLIST.md:1)
+
 ## Required Sources
 
 - MLB official schedule, probable pitchers, game feeds, and opener identity.
