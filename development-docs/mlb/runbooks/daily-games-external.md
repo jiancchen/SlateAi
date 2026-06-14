@@ -52,6 +52,17 @@ https://www.mlb.com/probable-pitchers
 ## Probable Pitchers Stats
 https://baseballsavant.mlb.com/probable-pitchers
 
+## Starter Pitch-Mix / Weather Archetype
+Primary source path: typed `pitcher_pitch_mix_snapshots`, using the latest snapshot on or before the slate date.
+
+Ingestion rules:
+- Preserve structured pitch-mix rows, not only a display summary: pitch type, pitch share, and sample pitches when available.
+- Carry forward the latest available pitch-mix snapshot when the exact slate date is missing; expose it as archetype context, not a new same-day measurement.
+- Classify starters into fastball-heavy, fastball-leaning, spin-heavy, offspeed-heavy, balanced, or unknown.
+- High HRForce and hot outdoor weather must be crossed with the starter archetype. Spin-heavy pitchers get a grip/shape damage tax; fastball-heavy and fastball-leaning pitchers can receive a warm-up/velocity protection credit; dome/stable games are neutral.
+- This adjustment belongs in moneyline, first-five moneyline, YRFI/NRFI, pitcher expected hits/runs, batter expected production, first-five/full totals, team totals, and HR lanes.
+- HRForce is not an under predictor by itself. High HRForce is an over-tail and under-fragility signal, but fastball-heavy starter fit, weak handedness splits, or strong available bullpen context can still suppress early scoring.
+
 ## MLB Park Factors
 https://baseballsavant.mlb.com/leaderboard/statcast-park-factors
 Use this for field-level run environment context, including how much a park boosts or suppresses offense and certain batted-ball outcomes.
@@ -61,6 +72,122 @@ https://www.ballparkpal.com/Matchups.php
 Use this for daily game-level context that static park-factor pages do not fully capture, especially weather-adjusted run environment, park interaction, and matchup framing.
 This is one of the best inputs for deciding when a park should matter more or less on a specific day rather than only in the long-run average.
 If a direct fetch tool gets blocked, start with this link in a browser session anyway because it is still a strong manual-review source.
+
+## FantasyInfoCentral Weather / HRForce
+https://www.fantasyinfocentral.com/mlb/weather/
+Use this as the daily HR/run-carry ingest source.
+
+Local command:
+
+```bash
+npm run data:warehouse:mlb-fic-weather -- --date YYYY-MM-DD
+```
+
+Expected local outputs:
+- raw HTML under `data-private/raw/fantasyinfocentral/mlb/weather/`
+- normalized JSON under `data-private/warehouse/mlb/fantasyinfocentral-weather/`
+- SQLite rows in `mlb_fic_weather_daily` and `mlb_fic_weather_hourly_daily`
+
+Ingestion rules:
+- HRForce >= 1.4 is a higher HR/run-carry signal.
+- HRForce >= 1.5 is material carry and must be available to pitcher expected lines, batter expected production, YRFI, F5/full totals, team totals, and HR lanes.
+- HRForce >= 1.7 is extreme carry and should make unders prove much more.
+- HRForce below 1.4, N/A, or dome/no-weather-impact means lower weather carry; store it cleanly rather than treating it as a failed fetch.
+- HRForce does not promote an over or HR by itself; it amplifies the starter, lineup, bullpen, contact, park, and market context already in the game.
+- For evening/night starts, check FIC hourly rows before promotion. If daily/current HRForce is high but first-pitch or early-game hourly HRForce is below 1.4, treat it as weak carry persistence: downgrade YRFI/over/HR promotion to watch unless lineup, starter, bullpen, and market context independently support it. If first-pitch HRForce is high but fades below 1.4 during the game window, keep the signal mostly in YRFI/first-five and do not use it as a full-game or late-over promotion reason.
+- Cross HRForce with starter pitch-mix archetype before changing ML, F5 ML, or YRFI/NRFI. Hot/carry weather can tax spin-heavy arms while giving fastball-heavy arms some first-five protection.
+
+## FantasyInfoCentral Daily Matchups
+https://www.fantasyinfocentral.com/mlb/daily-matchups
+Use this for same-day batter-vs-listed-pitcher BvP, HRForce, qAB%, hard-hit, and clean-board context.
+
+Local command:
+
+```bash
+npm run data:warehouse:mlb-fic-daily-matchups -- --date YYYY-MM-DD
+```
+
+Expected local outputs:
+- raw HTML under `data-private/raw/fantasyinfocentral/mlb/daily-matchups/`
+- normalized JSON under `data-private/warehouse/mlb/fantasyinfocentral-daily-matchups/`
+- SQLite rows in `mlb_fic_daily_matchups`
+- public-safe rows in `web/src/lib/mlb-fic-daily-matchups.generated.js`
+
+Ingestion rules:
+- Match rows to today's listed opposing starter.
+- Preserve at-bats, AVG, OBP, OPS, hits, doubles/triples, HR, BB, qAB%, HH%, and same-row HRForce.
+- Use BvP as context only after the 5+ AB gate; do not let one tiny row override the lineup, starter, or environment model.
+- If FIC row HRForce is high but weather HRForce is missing, keep the FIC signal visible and force the prediction writeup to explain the conflict.
+
+## Hitter Handedness / Platoon Splits
+Primary source path: posted lineup export plus current-season hitter split snapshots, with ESPN hitter split pages as the explicit right/left corroboration source.
+
+ESPN hitter page pattern:
+`https://www.espn.com/mlb/player/splits/_/id/{espn_athlete_id}/{player-slug}`
+
+ESPN API pattern:
+`https://site.web.api.espn.com/apis/common/v3/sports/baseball/mlb/athletes/{espn_athlete_id}/splits`
+
+Local commands:
+
+```bash
+npm run data:ingest:hitter-lineup-splits -- --date YYYY-MM-DD
+sqlite3 data-private/warehouse/sports.db "select snapshot_date, split_key, count(*) from mlb_hitter_split_snapshots where snapshot_date='YYYY-MM-DD' group by 1,2;"
+```
+
+Ingestion rules:
+- Every posted lineup hitter should carry current-season split rows for today's opposing starter hand when available.
+- ESPN hitter `byBreakdown` rows for `vs. Left` and `vs. Right` should be parsed when the ESPN athlete ID can be resolved. These are batter production rows versus opposing pitcher throwing hand, not batter-side rows.
+- Preserve `plate_appearances`, AVG, OBP, SLG, OPS, hits, HR, BB, K, total bases, and source payload.
+- Preserve ESPN AB, H, 2B/3B, HR, BB, HBP, SO, AVG, OBP, SLG, OPS, source status, source URL, and ESPN athlete ID in the hitter detail payload.
+- OPS values above `1.000` are valid OPS values and must not be divided by 1000.
+- Store enough context to replay the exact pregame matchup: game, team, lineup slot, batter handedness, opposing starter, and opposing starter hand.
+- Prediction use is team-side and player-side: strong/weak split pockets affect expected hits, pitcher expected hits/runs, YRFI, F5/full totals, team totals, ML/F5 ML shape, HR, hits, total bases, and H+R+RBI confidence.
+
+## Starter / Batter Matchup Kernel
+Primary source path: posted lineup export, Savant pitch-arsenal leaderboard CSVs, ESPN hitter `byBreakdown` splits, ESPN pitcher `Right / Left` splits, hitter split snapshots, and recent Statcast trend snapshots.
+
+Ingestion rules:
+- For each posted hitter, preserve the effective batting side against the starter. Switch hitters should be evaluated as the side they are expected to use against that starter hand.
+- For each posted hitter, preserve ESPN hitter `byBreakdown` split rows for `vs. Left` and `vs. Right`. Choose the row by today's starter throwing hand and blend it into the hitter score as an explicit `espnHitterSplit` component.
+- For each listed starter, preserve ESPN `byRightLeft` allowed split rows for `vs. Left` and `vs. Right`: AB, H, HR, BB, SO, AVG, OBP, SLG, OPS, and source status.
+- Keep the semantics separate: hitter `vs. Left/Right` means pitcher hand; starter allowed `vs. Left/Right` means batter side faced.
+- For each pitch type in the starter mix, preserve the hitter's Savant pitch-type xBA, xSLG, xwOBA, hard-hit%, whiff%, and K% plus the league-average values for that pitch type.
+- Keep Statcast expected stats at three decimals.
+- Current form dominates the blend. If recent OPS/xwOBA/process is poor, old BvP or career production cannot promote the hitter by itself.
+- BvP must be dated within the last 3 seasons and have at least 5 AB before it can affect scoring. Undated aggregate or career-only BvP can appear in writeups, but must carry `scoreImpact: 0`.
+- Prediction use is game-wide and player-side: `starterMatchupKernelIndex` should move projected hits, run conversion, starter damage risk, ML/F5 ML shape, totals, YRFI/NRFI, HR, hits, total bases, and H+R+RBI confidence.
+
+## MLB-SP1 Starter Profile Addendum Source Contract
+The starter/batter matchup, handedness, pitch-mix, repeat-opponent, day/night, and HRForce rules above now belong to the planned MLB-SP1 addendum contract.
+
+SP1 should materialize one row per projection pitcher and feed the same deltas into:
+- full-game ML and F5 ML confidence
+- full-game, F5, and team totals
+- YRFI/NRFI
+- pitcher expected hits, earned runs, walks, strikeouts, outs, and leash
+- batter hits, total bases, HR, and H+R+RBI confidence
+- public game-story copy and side/tail contradiction audits
+
+Source priorities:
+- Rotowire primary/bulk pitcher controls the projection pitcher when MLB lists an opener.
+- MLB official opener remains first-inning/YRFI/NRFI context.
+- ESPN pitcher `Right / Left` split rows define allowed production by batter side.
+- ESPN hitter `vs. Left` / `vs. Right` rows define batter production by opposing pitcher hand.
+- Baseball Savant pitch-type rows define hitter damage/whiff fit against the starter pitch mix.
+- FIC HRForce defines same-day carry pressure and must be checked against hourly game-window persistence for night/evening games.
+- Same-season repeat-opponent starts and recent StatMuse game rows define repeat tax. Old career BvP is context-only.
+
+Until `npm run data:build:mlb-sp1 -- --date YYYY-MM-DD` exists, treat [mlb-starter-profile-addendum-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-starter-profile-addendum-runbook.md:1) as the implementation checklist.
+
+## Starter vs Opponent Repeat History
+Primary source path: official MLB game feeds for same-season starts, then recent StatMuse career-vs-opponent game rows as a fallback.
+
+Ingestion rules:
+- Preserve same-season pitcher starts against today's opponent with date, IP/outs, R, ER, H, BB, SO, HR, pitches, first-inning runs, and quality/short-start flags.
+- Preserve recent StatMuse game rows, but do not let old career totals hide a recent damage row.
+- Prediction tax triggers include 4+ R/ER, 7+ H, first-inning damage, HR damage, or a short start against the same opponent.
+- Clean prior suppression can support an under only when paired with current lineup split weakness, low HRForce, and available bullpen quality.
 
 ## Sun Position / Field Visibility
 Sun position is not the same as weather. Use this as a separate run-environment and defensive-mistake factor for outdoor day or late-afternoon games.
@@ -209,10 +336,21 @@ For each new slate day, gather data in this order:
 For an MLB prediction day, the minimum reliable pull is now:
 1. `schedule + probable pitchers` for the target date from the MLB schedule API
 2. `feed/live` for the previous 3 days plus the target date so bullpen usage, likely first 2 relievers, and any posted batting orders can be derived
-3. team offense / contact-quality context from TeamRankings + Baseball Savant
-4. bullpen quality from Covers
-5. current odds from ScoresAndOdds or Covers
-6. the official MLB starting lineups page as a visual fallback or quick confirmation source when the structured lineup pull is partial
+3. same-season starter-vs-opponent game logs from official feeds, plus recent StatMuse game rows when same-season rows are absent
+4. current posted lineups plus hitter handedness/platoon split snapshots for today's opposing starter hand
+5. FantasyInfoCentral Weather/HRForce and Daily Matchups
+6. team offense / contact-quality context from TeamRankings + Baseball Savant
+7. bullpen quality, RP2 available-bullpen projection, and FanGraphs/RosterResource role/workload context
+8. current odds from ScoresAndOdds or Covers
+9. the official MLB starting lineups page as a visual fallback or quick confirmation source when the structured lineup pull is partial
+
+Before producing M2 day files, run the current shadow addendum build chain:
+
+```bash
+npm run data:build:mlb-env1 -- --date YYYY-MM-DD
+npm run data:build:mlb-rp2 -- --date YYYY-MM-DD
+npm run data:generate:mlb-day -- --date YYYY-MM-DD
+```
 
 ## Daily Log Template
 

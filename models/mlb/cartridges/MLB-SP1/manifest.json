@@ -1,0 +1,34 @@
+{
+  "id": "MLB-SP1",
+  "sport": "mlb",
+  "name": "MLB-SP1 starter pitcher profile addendum",
+  "status": "design-scaffold",
+  "role": "starter_profile_addendum",
+  "consumedBy": [
+    "MLB-M2"
+  ],
+  "createdForMigration": "2026-06-14",
+  "plannedEntrypoint": "scripts/build-mlb-starter-profile-addendum.mjs",
+  "outputContract": "models/mlb/cartridges/MLB-SP1/output-contract.json",
+  "modelNotes": "models/mlb/cartridges/MLB-SP1/MODEL_NOTES.md",
+  "changelog": "models/mlb/cartridges/MLB-SP1/CHANGELOG.md",
+  "sourceFiles": [
+    {
+      "role": "lineup-and-primary-pitcher-context",
+      "path": "models/mlb/cartridges/MLB-M2/lanes/lineups.mjs"
+    },
+    {
+      "role": "starter-context-utils",
+      "path": "models/mlb/cartridges/MLB-M2/lib/mlb-starter-utils.js"
+    },
+    {
+      "role": "analysis-consumer",
+      "path": "models/mlb/cartridges/MLB-M2/lib/analysis-model.js"
+    },
+    {
+      "role": "environment-addendum",
+      "path": "models/mlb/cartridges/MLB-ENV1/output-contract.json"
+    }
+  ],
+  "description": "Point-in-time starter or bulk-primary pitcher profile addendum for platoon splits, day/night splits, pitch mix, weather fragility, repeat-opponent tax, opener/bulk role handling, and first-inning risk."
+}

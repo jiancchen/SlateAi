@@ -9,6 +9,7 @@
     "reliefAddendum": "MLB-RP36",
     "reliefReplacementCandidate": "MLB-RP2",
     "environmentAddendum": "MLB-ENV1",
+    "starterProfileAddendumCandidate": "MLB-SP1",
     "evaluator": "MLB-E0"
   },
   "runner": {
@@ -80,7 +81,10 @@
       "targetPath": "./cartridges/MLB-M2",
       "status": "active-inspection",
       "components": [
-        "MLB-RP36"
+        "MLB-RP36",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1"
       ],
       "lanes": [
         "moneyline",
@@ -124,6 +128,24 @@
         "props"
       ],
       "notes": "Team-side relief projection replacement candidate for RP36. It must pass the relief-runs and first-up backtest gate before becoming the active relief addendum."
+    },
+    {
+      "modelId": "MLB-SP1",
+      "role": "starter_profile_addendum",
+      "targetPath": "./cartridges/MLB-SP1",
+      "status": "design-scaffold",
+      "consumedBy": [
+        "MLB-M2"
+      ],
+      "lanes": [
+        "moneyline",
+        "first5",
+        "totals",
+        "first_inning",
+        "props",
+        "home_runs"
+      ],
+      "notes": "Planned starter/bulk-primary pitcher profile addendum for platoon splits, pitch mix, day/night, weather/HRForce fragility, repeat-opponent tax, opener/bulk role handling, and side/tail coherence gates."
     }
   ]
 }

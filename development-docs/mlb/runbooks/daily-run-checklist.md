@@ -74,6 +74,7 @@ This should rebuild:
 - day data
 - lineup boards
 - hitter identity/career profiles for the actual slate bats
+- hitter handedness/platoon split snapshots for the actual posted lineup bats
 - HR board
 - non-HR prop board
 - prop import/grading hooks
@@ -82,6 +83,15 @@ This should rebuild:
 - FantasyInfoCentral Umpire Factors warehouse rows for historical umpire run/K/walk profile context
 - TheCapper home-plate umpire assignment rows plus an exact-match audit before any K/NRFI/run-environment usage
 - FanGraphs/RosterResource reliever context for bullpen role, workload, closer hierarchy, injuries, roster status, and recent transactions; see [mlb-reliever-daily-warehouse-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-reliever-daily-warehouse-runbook.md:1)
+- MLB-ENV1 and MLB-RP2 shadow addendums before the M2 day files:
+
+```bash
+npm run data:build:mlb-env1 -- --date YYYY-MM-DD
+npm run data:build:mlb-rp2 -- --date YYYY-MM-DD
+# planned once MLB-SP1 materializer is implemented:
+# npm run data:build:mlb-sp1 -- --date YYYY-MM-DD
+npm run data:generate:mlb-day -- --date YYYY-MM-DD
+```
 
 ## 3. Verification Pass
 
@@ -96,10 +106,14 @@ Expected checks:
 - postponed games removed from active slate
 - lineup boards generated for each active game
 - hitter career profiles are joined into lineup batters, especially tiny-current-sample players
+- hitter handedness split rows are joined into lineup batters and exposed in the detail adjustment checklist
+- ESPN hitter `vs. Left` / `vs. Right` split rows are joined into lineup batters as explicit `espnHitterSplit` context
 - weather attached to every lineup board
 - park context attached to every MLB game
 - weather profile attached to every MLB projection
 - bridge reliever coverage attached to every MLB game
+- RP2 available-bullpen context attached to every MLB game where source coverage exists
+- MLB-SP1 starter profile context is attached when the materializer is available; until then, inspect the starter/batter kernel fields manually for the SP1-required source-status items
 - HR board generated
 - non-HR prop board generated
 
@@ -114,6 +128,33 @@ Warnings to review manually:
 - partial lineups remain
 - bridge coverage missing on some games
 - weather or park context missing
+
+## 3A. Late Not-Started Refresh And Side-Coherence Audit
+
+When republishing after first pitch on a slate day, preserve already-started games and refresh only games that have not started yet.
+
+```bash
+npm run data:refresh:mlb-live -- --date YYYY-MM-DD
+npm run data:warehouse:mlb-fic-weather -- --date YYYY-MM-DD
+npm run data:build:mlb-env1 -- --date YYYY-MM-DD
+npm run data:build:mlb-rp2 -- --date YYYY-MM-DD
+# planned once MLB-SP1 materializer is implemented:
+# npm run data:build:mlb-sp1 -- --date YYYY-MM-DD
+npm run data:generate:mlb-day -- --date YYYY-MM-DD --skip-preflight
+npm run data:publish:mlb-clean -- --date YYYY-MM-DD --preserve-started --allow-known-audit-failures
+npm run data:audit:mlb-not-started-side-coherence -- --date YYYY-MM-DD
+```
+
+Side-confidence hard stops:
+- A not-started full-game ML side with separated ML shape, positive run differential, a real hit edge, and ownership of full-game/F5/late/bridge phases must not remain `Pass` or `52`.
+- A side that projects behind on runs with a thin full-game edge and a timing/live best expression must be demoted to a side pass.
+- A side that requires starter suppression must be demoted when HRForce, handedness, pitch-fit, repeat-opponent, or first-inning risk create an over-tail that SP1 cannot explain away.
+- `analysis.confidence` and `analysis.mlbProjection.moneylineShape.confidence` must match after any side-coherence promotion or demotion.
+- Public `tierOnePassFlag` must clear when a side is intentionally restored by the side-coherence gate; keep `tierOneRawPassFlag` for audit visibility.
+
+Warnings to review manually:
+- `Swingy 52` means the side is playable only as a thin/watchlist lane. It is not the same bug as a separated all-phase edge stuck at `52`.
+- Thin ML shapes can own all phases and still stay as passes when the run edge is small, the favorite is taxed, or bullpen/late stability remains ugly.
 
 ## 4. Manual Spot Checks
 
@@ -135,6 +176,15 @@ Even if the verifier passes, manually inspect these:
 - Look at all games still marked `partial`.
 - Confirm MLB itself still has them as `TBD` or not fully posted.
 - If MLB now has the full order, rerun the refresh.
+- Spot-check at least one lefty/righty-sensitive hitter in the detail payload. The hitter should expose both the MLB split row and the ESPN `espnHitterSplit` row for today's opposing starter hand; if ESPN is missing, the matchup kernel should show a source-status reason rather than silently pretending the split was neutral.
+
+### Pitcher / batter handedness
+- Separate the two right/left meanings:
+  - hitter ESPN split: batter production `vs. Left` / `vs. Right` means opposing pitcher throwing hand
+  - starter ESPN split: pitcher allowed `vs. Left` / `vs. Right` means batter side faced
+- The starter matchup kernel must blend current form, hitter split versus starter hand, starter allowed split versus effective batter side, pitch-type fit versus league average, and recent Statcast trend. Do not let old BvP override a cold current hitter.
+- Strong hitter platoon splits should affect projected hits/runs, pitcher expected hits/runs, ML/F5 ML shape, YRFI/NRFI, totals, team totals, HR lanes, hits, total bases, and H+R+RBI confidence.
+- Starter profile checks belong in MLB-SP1 once the materializer exists. Until then, manually verify the same pieces in the detail payload: projection pitcher role, ESPN pitcher right/left allowed split, hitter ESPN split, pitch-fit, repeat-opponent context, day/night split when meaningful, HRForce/weather archetype, and first-inning risk.
 
 ### Bridge chains
 - Make sure games are not showing `0.0 score / unknown workload` unless the warehouse truly has no current usage context.
@@ -142,6 +192,13 @@ Even if the verifier passes, manually inspect these:
 ### Weather / park
 - Check that the displayed venue and weather make sense for outdoor games.
 - Weather is usually a secondary factor, but missing weather or missing park context is still a pipeline miss.
+- HRForce is a run-carry input, not just an HR-prop decoration:
+  - HRForce >= 1.4 is higher HR/run-environment pressure.
+  - HRForce >= 1.5 is material carry and should affect pitcher expected hits/runs, batter production, YRFI probability, F5/full totals, team totals, and HR lanes.
+  - HRForce >= 1.7 is extreme carry and should block casual unders unless the under has strong, explicit counterweights.
+  - HRForce below 1.4, N/A, or dome/no-weather-impact is lower weather carry, but it is not by itself a strong under signal.
+  - For evening starts at/after 6:00 PM local and night starts at/after 7:00 PM local, use FIC hourly game-window HRForce before promoting a weather-backed YRFI, over, HR, pitcher damage, or batter-production boost. If daily/current HRForce is high but game-time or early-game hourly HRForce is below 1.4, downgrade the weather piece to weak carry persistence/watch. If game-time HRForce starts high but the hourly window fades below 1.4 (`early_carry_fades` / `early_only_carry`), keep credit mostly to YRFI/first-five and haircut full-game/late-game totals.
+  - If a game has high HRForce and the model still shows an under, inspect the chaos gate. The final row should usually be `Hold` unless the under is backed by starter suppression, weak split rows, low conversion, and bullpen quality together.
 
 ### Sun position / visibility
 - Treat sun position as separate from weather. Weather is temperature, wind, precip, roof/open-air state; sun visibility is game-time geometry.
@@ -195,8 +252,11 @@ Even if the verifier passes, manually inspect these:
   - command: `npm run data:warehouse:mlb-fic-weather -- --date YYYY-MM-DD`
   - warehouse outputs: raw HTML under `data-private/raw/fantasyinfocentral/mlb/weather/`, normalized JSON under `data-private/warehouse/mlb/fantasyinfocentral-weather/`, SQLite rows in `mlb_fic_weather_daily`, and hourly rows in `mlb_fic_weather_hourly_daily`
   - HRForce >= 1.4 should raise HR/run-environment support and make unders prove more, especially when the hourly forecast also stays >= 1.4
+  - HRForce >= 1.5 must be embedded into pitcher expected lines and batter expected production, not only displayed as a chip
+  - HRForce >= 1.7 materially raises YRFI and over-tail probability when the lineup/starter/bullpen context is not suppressive
   - HRForce below 1.4 should be treated as lower HR/run-environment pressure
   - HRForce N/A usually means a dome/no-weather-impact ballpark; store it as `lower_runs_dome_na` rather than a missing high-carry signal
+  - Evening/night games need game-window persistence: `game_time_hr_force` or `early_game_max_hr_force` should stay >= 1.4 before HRForce can promote YRFI, over, HR, pitcher damage, or batter production. If the persistence signal is `early_carry_fades` or `early_only_carry`, do not let HRForce be the reason to upgrade full-game or late-game overs.
   - HRForce must not be the only reason to promote an HR, over, or team-total over; it needs contact, starter, bullpen, lineup, price, or park support
 - TheCapper umpire assignment context should be present and audited:
   - source: `https://thecapper.io/mlb/umpires/`
@@ -230,6 +290,29 @@ Expected specialty anchors, when DK offers them:
 If team total hits are absent from DK, leave that anchor missing rather than backfilling from JSON or inventing a line. The inning model should read typed anchors through `loadMlbSpecialtyMarketAnchorsFromDb`, with raw sportsbook files used only as the ingest source.
 - Savant game logs are mostly redundant with the pitch/game warehouse. Use them as a player-page sanity check, not as the primary stored source, because `mlb_pitch_events`, `mlb_player_game_batting`, and `mlb_hitter_statcast_game_logs` should already preserve the underlying game data.
 - Savant hitter splits are not redundant. The lineup export now persists the daily handedness/platoon split rows into `mlb_hitter_split_snapshots`; keep that table fresh before trusting prop or hitter-fit writeups.
+- M2 uses lineup handedness splits as a game-level prediction adjustment, not just a hitter-card note:
+  - count strong and weak split bats against today's listed starter hand
+  - treat top-third and top-six split pockets as early-scoring/F5 inputs
+  - some hitters cannot hit one side; do not let broad season OPS hide a weak same-day split row
+  - strong split pockets should lift projected hits, run conversion, starter damage risk, YRFI pressure, and batter props
+  - weak split pockets should lower projected hits/conversion and can support unders only when HRForce, bullpen, and repeat-matchup risk do not conflict
+  - OPS values above `1.000` are valid OPS values, not batting-average thousandths; do not rescale them down during ingest or model parsing
+- M2 uses the starter/batter matchup kernel as a game-level prediction adjustment:
+  - current form comes first; recent cold form caps old BvP/history lift
+  - batter split vs today's starter hand is required context for every posted hitter
+  - pitcher ESPN `Right / Left` allowed splits must be read by the hitter's effective batting side, including switch hitters
+  - Savant pitch-arsenal fit must compare hitter xBA, xSLG, xwOBA, hard-hit, whiff, and K profile against league average for the pitch types in the starter mix
+  - keep xBA/xSLG/xwOBA at three decimals; rounding to hundredths hides the actual pitch-type edge
+  - aggregate `starterMatchupKernelIndex` affects projected hits, run conversion, starter damage risk, ML/F5 ML shape, totals, YRFI/NRFI, and batter prop confidence
+  - BvP is not a scoring input unless it is dated within the last 3 seasons and has at least 5 AB; undated/career aggregate BvP is context-only
+- M2 uses starter pitch-mix weather archetype as a game-level prediction adjustment, not just a pitcher-card note:
+  - read `pitcher_pitch_mix_snapshots` from the latest snapshot on or before the slate date when no exact-date snapshot exists
+  - classify each starter as fastball-heavy, fastball-leaning, spin-heavy, offspeed-heavy, balanced, or unknown
+  - cross the archetype with temperature, outdoor/dome status, ENV1 HRForce, and FIC HRForce
+  - hot/high-HRForce outdoor games tax spin-heavy arsenals for grip/shape risk and can credit fastball-heavy or fastball-leaning arsenals for warm-up/velocity fit
+  - cold weather can trim fastball benefit and modestly support spin-heavy pitch shape
+  - apply the adjustment to projected starter-window hits, first-five runs, run conversion, starter hold confidence, ML/F5 ML shape, and YRFI/NRFI probability
+  - never use HRForce as a clean under signal; low/N/A HRForce only removes weather carry, while high HRForce creates over-tail and under-fragility unless pitcher fit, split weakness, and bullpen availability explain the suppression
 - Required split warehouse shape:
   - `snapshot_date`, `game_id`, `player_id`, `season`, `split_type`, `split_key`, `plate_appearances`, slash line, K/BB when present, `source_url`, source hash, and raw payload.
   - opposing pitcher hand and game context so the exact pregame matchup can be replayed.
@@ -248,6 +331,12 @@ npm run data:grade:mlb-props -- --date YYYY-MM-DD --model-name mlb-player-props-
 ```
 
 - Use the Savant splits page for current-season batter context when evaluating prop confidence, especially small-sample hitters, platoon bats, role-pressure bats, and total-bases/HR lanes.
+- Repeat starter-vs-opponent history is a mandatory pitcher checklist item:
+  - check `opponentHistoryThisSeason` first, then recent StatMuse game rows when same-season rows are missing
+  - if the starter already faced this opponent and allowed 4+ R/ER, 7+ H, first-inning damage, HR damage, or a short start, tax starter hold, projected hits allowed, first-five runs, and run conversion
+  - if both listed starters recently leaked damage to the same opponent, do not trust a clean under without a visible explanation of why today's lineup/weather/bullpen context is different
+  - suppression credit is allowed for a clean 6+ IP, <=1 R, <=5 H prior matchup, but it should be smaller than a damage tax because repeat exposure can still reduce novelty
+  - the writeup should say whether repeat damage is active, neutral, or suppressive; hiding it behind a generic career-vs-team stat is not enough
 - Spot-check any prop driven by fewer than 24 current-season PA. It must show a career repeatability story, not just a hot current box score.
 - Treat career stats as a low-weight baseline, not a bet trigger. The useful question is whether current process, role, pitch fit, and recent contact shape make the old profile repeatable today.
 - Log material MLB-M0 model/warehouse changes in `models/mlb/cartridges/MLB-M0/MLB-M0_log.md` before treating them as part of the cartridge.
@@ -314,7 +403,7 @@ Only treat the day as ready when:
 - no postponed games remain in the slate
 - partial lineups are understood, not accidental
 - tiny-sample player props are explained by career profile or suppressed
-- bridge, weather, park, sun-position visibility, HR, and props are visibly present
+- bridge, weather, park, starter pitch-mix/weather archetype, sun-position visibility, HR, and props are visibly present
 - value-board rows are separated by trust level: validated rows can be promoted, research-only rows can be displayed, and uncalibrated rows cannot be ranked as value
 
 If any of those fail, rerun or patch before trusting the board.

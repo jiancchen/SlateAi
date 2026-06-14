@@ -106,6 +106,26 @@ Minimum proof before full promotion:
 - Postmortem settlement proves high reality-gap labels correlate with bad full-game ML, better F5/total/first-inning expressions, or clean passes.
 - Value rows remain model-owned and gated; the UI may filter, but must not transform raw projections into value picks.
 
+## 2026-06-14 v0.3 Side/Tail Coherence Plan
+
+The recent YRFI lane has been strong enough to treat first-inning pressure, top-order fit, and run-carry as real signal. The next problem is not to dilute that lane; it is to stop full-game sides from ignoring the same signal.
+
+M2 now has a documented next addendum:
+
+- `MLB-SP1`: starter or bulk-primary pitcher profile addendum.
+
+SP1 should turn the scattered starter checks into one daily pitcher-profile object: projection pitcher role, opener/bulk handling, season identity, recent form, day/night split, handedness allowed splits, posted-lineup handedness pressure, pitch mix versus hitter pitch-type response, repeat-opponent tax, HRForce/weather archetype, first-inning risk, leash, and source status.
+
+Side/tail coherence rules for the next build:
+
+- A side that depends on starter suppression is capped or demoted when HRForce, handedness fit, pitch mix, repeat-opponent familiarity, or first-inning risk create an over-tail that the starter profile cannot explain away.
+- HRForce >= 1.5 must affect pitcher expected hits/runs/HR and batter expected production when game-window carry persists.
+- HRForce >= 1.7 is a strong YRFI/over-tail warning and blocks casual unders unless starter, lineup, bullpen, park, and market context all provide explicit counterweights.
+- Full-game side, F5 side, late side, bridge edge, projected runs, and total tail must reconcile before public confidence can be promoted.
+- `52` is acceptable for true watch/pass rows. It is not acceptable for separated all-phase edges with positive run differential and real hit support.
+
+No production scoring override is promoted by this note. The next implementation step is to materialize SP1 as a shadow addendum and settle it by YRFI/NRFI, F5 O/U, F5 side/tie, pitcher lines, batter props, repeat-opponent games, and high-HRForce games.
+
 ## Known Gaps
 
 - The RF lens uses documented research baselines, not a serialized production RF artifact yet.

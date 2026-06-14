@@ -924,3 +924,63 @@ Validation target:
 - `npm run data:check:mlb-m2-value-gates`
 - `npm --prefix web run test -- BoardView`
 - `npm run data:export:published`
+
+## 2026-06-14 - Live Starter/Batter Kernel Wiring
+
+Added a lightweight live lineup kernel on top of the research pitcher-batter substrate.
+
+Implemented:
+
+- Hitter `matchupKernel` in `lanes/lineups.mjs`.
+- Team `starterMatchupKernelIndex`, top kernel bats, and suppressive kernel pockets.
+- ESPN starter `Right / Left` allowed split parsing by effective batter side.
+- Baseball Savant pitch-type fit versus league-average xBA, xSLG, xwOBA, hard-hit, whiff, and K baselines.
+- BvP policy: undated/career aggregate rows are context-only; scoring requires 5+ AB and last-3-seasons recency proof.
+- Downstream M2 reads the kernel in projected hits, first-inning probability, lineup-fit score, volatility flags, and the projection adjustment checklist.
+
+Current trust level:
+
+- Active as a bounded lineup-context adjustment.
+- Deep pitch-event warehouse kernel remains research-only until calibrated by date/line/sample buckets.
+
+## 2026-06-14 - ESPN Hitter Handedness Split Wiring
+
+Added ESPN hitter right/left split context to the live starter/batter kernel.
+
+Implemented:
+
+- ESPN hitter ID resolution through ESPN search for posted lineup batters.
+- ESPN hitter split parsing from the `byBreakdown` `vs. Left` / `vs. Right` rows.
+- Hitter-level `espnHitterSplit` output with AB, H, HR, BB/HBP, SO, AVG, OBP, SLG, OPS, source URL, and source status.
+- Starter matchup kernel component `espnHitterHandednessSplit`.
+- Split-aware scoring blend into power, contact, split score, matchup grade, batting pressure, and starter pressure.
+- Detail-page adjustment checklist now surfaces ESPN split edge/risk counts inside the starter matchup kernel card.
+
+Rules clarified:
+
+- ESPN hitter `vs. Left/Right` means the opposing pitcher throwing hand.
+- ESPN starter `vs. Left/Right` means batter side faced.
+- ESPN hitter split is a corroborating scoring input when MLB split rows already exist, and a stronger fallback input when MLB split rows are missing.
+
+## 2026-06-14 - MLB-SP1 Starter Profile Addendum Scaffold
+
+Documented the next M2 build-chain step as a dedicated starter/bulk-primary pitcher profile addendum.
+
+Added:
+
+- `models/mlb/cartridges/MLB-SP1/manifest.json`
+- `models/mlb/cartridges/MLB-SP1/output-contract.json`
+- `models/mlb/cartridges/MLB-SP1/MODEL_NOTES.md`
+- `models/mlb/cartridges/MLB-SP1/CHANGELOG.md`
+- `development-docs/mlb/runbooks/mlb-starter-profile-addendum-runbook.md`
+- `models/mlb/cartridges/MLB-M2/CHANGELOG.md`
+
+Core rule:
+
+SP1 must feed the same pitcher-profile deltas into ML, F5 ML, totals, team totals, YRFI/NRFI, pitcher expected lines, batter production, HR lanes, and public game-story copy. It is specifically meant to catch side/tail contradictions where the side pick needs starter suppression but HRForce, handedness, pitch fit, repeat-opponent, or recent-form context says the game is more likely to become a run-tail lane.
+
+Current trust level:
+
+- Design scaffold only.
+- Not a production scoring override.
+- Next step is `data:build:mlb-sp1` materialization plus shadow settlement.

@@ -6,6 +6,51 @@ M2 totals are failing when the model treats offense, starter form, and bullpen s
 
 This is not a direct O/U formula. It is a story-bucket input for `components/totals` and `components/game-shape`.
 
+## Current Live Implementation
+
+The deep pitch-event warehouse kernel below remains research-only until calibrated, but M2 now has a lightweight daily lineup kernel in `models/mlb/cartridges/MLB-M2/lanes/lineups.mjs`.
+
+Live inputs:
+
+- posted lineup hitter season/recent stats
+- current-season hitter handedness split vs today's starter hand
+- ESPN hitter `byBreakdown` split rows for `vs. Left` and `vs. Right`, selected by today's starter throwing hand
+- ESPN starter `Right / Left` allowed splits by effective batter side
+- Baseball Savant pitch-arsenal rows for hitter xBA, xSLG, xwOBA, hard-hit, whiff, and K profile by pitch type
+- league-average Savant pitch-type baselines for the same pitch types
+- hitter Statcast recent trend snapshots
+
+Live output fields:
+
+- hitter-level `matchupKernel`
+- team-level `starterMatchupKernelIndex`
+- team-level `starterMatchupKernelHitters` and `starterMatchupKernelRisks`
+- pitch-type `vsLeague` deltas inside hitter `pitchType`
+
+Rules:
+
+- Current form dominates the blend; recent cold form caps old BvP/history lift.
+- Keep ESPN right/left semantics separate: hitter rows are batter production versus pitcher hand; starter rows are allowed production versus batter side.
+- Pitch-type fit must compare the hitter to league average for the starter's pitch mix, not only raw hitter production.
+- BvP is context-only unless the sample is dated within the last 3 seasons and has at least 5 AB.
+- `starterMatchupKernelIndex` is allowed to move projected hits, run conversion, first-inning probability, ML/F5 ML shape, totals, and hitter prop confidence.
+
+## MLB-SP1 Handoff
+
+The live kernel is now the hitter/lineup half of the planned MLB-SP1 starter profile addendum.
+
+SP1 should preserve this kernel but add the pitcher-profile half that the current live reads still scatter across cards and writeups:
+
+- projection pitcher role from Rotowire primary/bulk vs MLB opener
+- pitcher day/night, home/away, and venue splits when source/sample supports them
+- pitcher handedness-allowed split by posted lineup side
+- pitcher pitch-mix weather archetype against HRForce, temperature, wind, and roof state
+- repeat-opponent tax for same-season and last-three-season starts
+- first-inning/opener risk for YRFI/NRFI
+- pitcher expected hits, runs, HR, walks, strikeouts, outs, and leash deltas
+
+The key usage rule is side/tail coherence. If the kernel and SP1 say a starter is fragile, M2 should not keep a full-game side promoted just because the side model is barely positive. The cleaner lane may be YRFI, over, team total, F5, live-only, or pass.
+
 ## Source Intake
 
 Useful ideas pulled from the review pass:
