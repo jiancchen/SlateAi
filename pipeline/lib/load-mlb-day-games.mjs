@@ -152,6 +152,20 @@ const getWindowLabel = (startMinutes = 0) => {
   return 'Evening MLB Board'
 }
 
+const withValidatedMlbPredictionEligibility = (games = [], options = {}) =>
+  games.map((game) => withMlbPredictionEligibility(game, {
+    requireAddendums: Boolean(options.requireAddendums)
+  }))
+
+const invalidPredictionGames = (games = []) =>
+  games.filter((game) => !game.predictionEligibility?.eligible)
+
+const summarizeInvalidPredictionGames = (games = []) =>
+  games
+    .slice(0, 6)
+    .map((game) => `${game.id || game.title || 'unknown'}: ${(game.predictionEligibility?.hardFailures || []).join(', ')}`)
+    .join('; ')
+
 const buildGenericMlbGame = (
   raw,
   {
@@ -256,7 +270,16 @@ export const loadMlbDayGames = async (date) => {
   if (process.env.MLB_DAY_GAMES_DISABLE_DB !== '1') {
     try {
       const dbGames = await loadMlbDayGamesFromDb(date)
-      if (dbGames.length) return dbGames.map((game) => withMlbPredictionEligibility(game))
+      if (dbGames.length) {
+        const validatedDbGames = withValidatedMlbPredictionEligibility(dbGames, { requireAddendums: true })
+        const invalidDbGames = invalidPredictionGames(validatedDbGames)
+        if (!invalidDbGames.length) return validatedDbGames
+        const detail = summarizeInvalidPredictionGames(invalidDbGames)
+        if (process.env.MLB_DAY_GAMES_STRICT_DB === '1') {
+          throw new Error(`DB MLB day games failed prediction eligibility for ${date}: ${detail}`)
+        }
+        console.warn(`[loadMlbDayGames] DB input failed prediction eligibility for ${date}; falling back to generated files: ${detail}`)
+      }
     } catch (error) {
       if (process.env.MLB_DAY_GAMES_STRICT_DB === '1') {
         throw error
@@ -301,7 +324,7 @@ export const loadMlbDayGames = async (date) => {
             : baseId
       const game = buildGenericMlbGame(raw, { ...dependencies, uniqueId })
       const adapter = resolveMlbAppAdapter(game.metadata?.modelCartridge)
-      return withMlbPredictionEligibility(adapter.createSportsMatchModel(game, oddsProvider))
+      return withMlbPredictionEligibility(adapter.createSportsMatchModel(game, oddsProvider), { requireAddendums: true })
     })
   }
 
@@ -309,7 +332,7 @@ export const loadMlbDayGames = async (date) => {
   const wrappedDay = await importMaybeFresh(dayWrapperPath)
   if (wrappedDay?.games) {
     const wrappedMlbGames = wrappedDay.games.filter((game) => game.league === 'MLB')
-    if (wrappedMlbGames.length) return wrappedMlbGames.map((game) => withMlbPredictionEligibility(game))
+    if (wrappedMlbGames.length) return withValidatedMlbPredictionEligibility(wrappedMlbGames, { requireAddendums: true })
   }
 
   return []
