@@ -266,14 +266,6 @@ const main = async () => {
     '--as-of-date', date
   ], { dryRun, allowFailure: allowSourceGaps }))
 
-  steps.push(run('Fetch StatMuse starter-vs-team history', 'node', [
-    'data-migration/scripts/fetch-mlb-starter-vs-team-statmuse.mjs', '--date', date
-  ], { dryRun, allowFailure: allowSourceGaps }))
-
-  steps.push(run('Warehouse ESPN pitcher splits', 'node', [
-    'scripts/warehouse-mlb-espn-pitcher-splits.mjs', '--date', date
-  ], { dryRun }))
-
   steps.push(run('Warehouse FantasyInfoCentral Weather/HRForce', 'npm', [
     'run', 'data:warehouse:mlb-fic-weather', '--', '--date', date
   ], { dryRun, allowFailure: allowSourceGaps }))
@@ -320,6 +312,14 @@ const main = async () => {
 
   steps.push(run('Ingest generated hitter lineup splits', 'npm', [
     'run', 'data:ingest:hitter-lineup-splits', '--', '--date', date
+  ], { dryRun }))
+
+  steps.push(run('Fetch StatMuse starter-vs-team history after lineup pitcher sync', 'node', [
+    'data-migration/scripts/fetch-mlb-starter-vs-team-statmuse.mjs', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Warehouse ESPN pitcher splits after lineup pitcher sync', 'node', [
+    'scripts/warehouse-mlb-espn-pitcher-splits.mjs', '--date', date
   ], { dryRun }))
 
   steps.push(run('Warehouse canonical hitter/pitcher split families', 'npm', [

@@ -49,12 +49,19 @@ const num = (value, fallback = null) => {
 const main = () => {
   fs.mkdirSync(reportsRoot, { recursive: true })
   const board = currentDayBoardForDate(date)
-  const expectedProfiles = board.games.length * 2
   const expectedKeys = []
+  const missingProjectionStarters = []
   for (const game of board.games) {
-    expectedKeys.push(`${game.game_id}:away`)
-    expectedKeys.push(`${game.game_id}:home`)
+    const startersByTeamId = new Map((game.starters || []).map((starter) => [starter.team_id, starter]))
+    const awayStarter = startersByTeamId.get(game.away_team_id)
+    const homeStarter = startersByTeamId.get(game.home_team_id)
+    if (awayStarter) expectedKeys.push(`${game.game_id}:away`)
+    else missingProjectionStarters.push(`${game.game_id}:away`)
+    if (homeStarter) expectedKeys.push(`${game.game_id}:home`)
+    else missingProjectionStarters.push(`${game.game_id}:home`)
   }
+  const expectedGameSides = board.games.length * 2
+  const expectedProfiles = expectedKeys.length
 
   const tableRows = queryOptional(
     `
@@ -74,7 +81,8 @@ const main = () => {
   const hardFailures = []
   const warnings = []
   const missing = expectedKeys.filter((key) => !rowsByKey.has(key))
-  if (!tableRows.length) hardFailures.push('missing-sp1-profile-rows')
+  if (expectedProfiles && !tableRows.length) hardFailures.push('missing-sp1-profile-rows')
+  if (!expectedProfiles) hardFailures.push('no-projection-starters-for-sp1')
   if (missing.length) hardFailures.push(`missing-sp1-game-side-profiles:${missing.slice(0, 12).join(',')}`)
 
   const incompleteRows = []
@@ -106,14 +114,17 @@ const main = () => {
   if (missingDeltas.length) hardFailures.push(`sp1-deltas-missing:${missingDeltas.slice(0, 12).join(',')}`)
   if (incompleteRows.length) warnings.push(`partial-sp1-source-status:${incompleteRows.slice(0, 12).join(',')}`)
   if (thinRows.length) warnings.push(`thin-sp1-confidence:${thinRows.slice(0, 12).join(',')}`)
+  if (missingProjectionStarters.length) warnings.push(`projection-starter-missing:${missingProjectionStarters.slice(0, 12).join(',')}`)
 
   const report = {
     audit: 'mlb-sp1-starter-profile',
     date,
     generatedAt: new Date().toISOString(),
     table: 'mlb_starting_pitcher_profile_v1_daily',
+    expectedGameSides,
     expectedProfiles,
     actualProfiles: tableRows.length,
+    missingProjectionStarters,
     hardFailures,
     warnings,
     rows: tableRows.map((row) => ({
