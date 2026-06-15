@@ -121,7 +121,8 @@ export const canonicalTeamName = (value = '') => {
 export const matchupKey = (awayTeam = '', homeTeam = '') =>
   `${normalizeTeam(canonicalTeamName(awayTeam))}|${normalizeTeam(canonicalTeamName(homeTeam))}`
 
-export const collectGamesForDate = (date, dbPath = mlbDbPath) => {
+export const collectGamesForDate = (date, dbPath = mlbDbPath, options = {}) => {
+  const { includeSourceOnlyGames = false } = options
   const scheduledGames = sqliteJson(`
 select
   cast(game_pk as integer) as game_pk,
@@ -149,6 +150,7 @@ order by start_time_utc, game_pk;
       source: 'mlb_games'
     })
   })
+  const allowSourceOnlyGames = includeSourceOnlyGames || scheduledGames.length === 0
 
   const weatherRows = sqliteJson(`
 select distinct
@@ -166,7 +168,7 @@ order by game_time_et, matchup;
     const awayTeam = canonicalTeamName(row.away_team)
     const homeTeam = canonicalTeamName(row.home_team)
     const key = matchupKey(awayTeam, homeTeam)
-    if (!gamesByKey.has(key)) {
+    if (!gamesByKey.has(key) && allowSourceOnlyGames) {
       gamesByKey.set(key, {
         gamePk: row.game_pk === null || row.game_pk === undefined ? null : Number(row.game_pk),
         gameDate: date,
@@ -197,7 +199,7 @@ order by game_time_et, matchup;
     const awayTeam = canonicalTeamName(row.away_team)
     const homeTeam = canonicalTeamName(row.home_team)
     const key = matchupKey(awayTeam, homeTeam)
-    if (!gamesByKey.has(key)) {
+    if (!gamesByKey.has(key) && allowSourceOnlyGames) {
       gamesByKey.set(key, {
         gamePk: row.game_pk === null || row.game_pk === undefined ? null : Number(row.game_pk),
         gameDate: date,

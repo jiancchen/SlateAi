@@ -18,6 +18,7 @@ import {
   sqliteExec,
   sqliteJson
 } from './lib/mlb-model-utils.mjs'
+import { writeMlbSourceStatus } from './lib/mlb-source-status.mjs'
 
 export const modelId = 'MLB-RP2'
 export const modelVersion = 'MLB-RP2.2026-06-12.v3'
@@ -1308,15 +1309,22 @@ const summarize = (rows) => {
   }
 }
 
+const statusForBuild = ({ expectedRows, actualRows, degradedRows }) => {
+  if (actualRows <= 0) return { status: 'missing', completenessStatus: 'missing' }
+  if (actualRows < expectedRows || degradedRows > 0) return { status: 'success', completenessStatus: 'partial' }
+  return { status: 'success', completenessStatus: 'complete' }
+}
+
 export const writeReliefProjectionArtifact = async ({ date, dbPath = mlbDbPath, outPath }) => {
   const rows = buildReliefRows({ date, dbPath })
   createTable(dbPath, date)
   insertRows(dbPath, rows)
+  const generatedAt = new Date().toISOString()
   const artifact = {
     schemaVersion: 1,
     modelId,
     modelVersion,
-    generatedAt: new Date().toISOString(),
+    generatedAt,
     date,
     dbPath: path.relative(rootDir, dbPath),
     table: 'mlb_relief_pitcher_projection_v1_daily',
@@ -1325,6 +1333,36 @@ export const writeReliefProjectionArtifact = async ({ date, dbPath = mlbDbPath, 
   }
   await fs.mkdir(path.dirname(outPath), { recursive: true })
   await fs.writeFile(outPath, `${JSON.stringify(artifact, null, 2)}\n`)
+
+  const expectedRows = collectGamesForDate(date, dbPath).length * 2
+  const actualRows = rows.length
+  const coverageMissingRows = Math.max(expectedRows - actualRows, 0)
+  const degradedRows = artifact.summary.missingRows || 0
+  const sourceStatus = statusForBuild({ expectedRows, actualRows, degradedRows })
+  writeMlbSourceStatus({
+    dbPath,
+    sourceName: 'mlb_rp2',
+    sourceFamily: 'bullpen-addendum',
+    sourceDate: date,
+    runReason: 'daily-relief-projection-build',
+    cacheStatus: 'generated',
+    cacheTtlHours: 12,
+    status: sourceStatus.status,
+    completenessStatus: sourceStatus.completenessStatus,
+    expectedItemCount: expectedRows,
+    actualItemCount: actualRows,
+    missingItemCount: coverageMissingRows + degradedRows,
+    unresolvedCount: degradedRows,
+    startedAt: generatedAt,
+    finishedAt: generatedAt,
+    notes: {
+      modelId,
+      modelVersion,
+      artifactPath: path.relative(rootDir, outPath),
+      table: artifact.table,
+      summary: artifact.summary
+    }
+  })
   return artifact
 }
 

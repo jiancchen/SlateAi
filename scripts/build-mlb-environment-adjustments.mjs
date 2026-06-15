@@ -21,6 +21,7 @@ import {
   sqliteExec,
   sqliteJson
 } from './lib/mlb-model-utils.mjs'
+import { writeMlbSourceStatus } from './lib/mlb-source-status.mjs'
 
 export const modelId = 'MLB-ENV1'
 export const modelVersion = 'MLB-ENV1.2026-06-13.v3'
@@ -948,16 +949,23 @@ const summarize = (rows) => ({
   minExpectedTotalRunsDelta: round(Math.min(...rows.map((row) => row.expectedTotalRunsDelta)), 3)
 })
 
+const statusForBuild = ({ expectedRows, actualRows, unresolvedCount }) => {
+  if (actualRows <= 0) return { status: 'missing', completenessStatus: 'missing' }
+  if (actualRows < expectedRows || unresolvedCount > 0) return { status: 'success', completenessStatus: 'partial' }
+  return { status: 'success', completenessStatus: 'complete' }
+}
+
 export const writeEnvironmentArtifact = async ({ date: targetDate = date, dbPath: targetDbPath = dbPath, outPath: targetOutPath = outPath } = {}) => {
   createTable(targetDate, targetDbPath)
   const rows = buildEnvironmentRows({ date: targetDate, dbPath: targetDbPath })
   insertRows(rows, targetDbPath)
 
+  const generatedAt = new Date().toISOString()
   const artifact = {
     schemaVersion: 1,
     modelId,
     modelVersion,
-    generatedAt: new Date().toISOString(),
+    generatedAt,
     date: targetDate,
     dbPath: path.relative(rootDir, targetDbPath),
     table: 'mlb_game_environment_adjustments_daily',
@@ -966,6 +974,36 @@ export const writeEnvironmentArtifact = async ({ date: targetDate = date, dbPath
   }
   await fs.mkdir(path.dirname(targetOutPath), { recursive: true })
   await fs.writeFile(targetOutPath, `${JSON.stringify(artifact, null, 2)}\n`)
+
+  const expectedRows = collectGamesForDate(targetDate, targetDbPath).length
+  const actualRows = rows.length
+  const missingRows = Math.max(expectedRows - actualRows, 0)
+  const unresolvedCount = rows.filter((row) => !row.sourceFlags.hasFicWeather).length
+  const sourceStatus = statusForBuild({ expectedRows, actualRows, unresolvedCount })
+  writeMlbSourceStatus({
+    dbPath: targetDbPath,
+    sourceName: 'mlb_env1',
+    sourceFamily: 'environment-addendum',
+    sourceDate: targetDate,
+    runReason: 'daily-environment-addendum-build',
+    cacheStatus: 'generated',
+    cacheTtlHours: 12,
+    status: sourceStatus.status,
+    completenessStatus: sourceStatus.completenessStatus,
+    expectedItemCount: expectedRows,
+    actualItemCount: actualRows,
+    missingItemCount: missingRows,
+    unresolvedCount,
+    startedAt: generatedAt,
+    finishedAt: generatedAt,
+    notes: {
+      modelId,
+      modelVersion,
+      artifactPath: path.relative(rootDir, targetOutPath),
+      table: artifact.table,
+      summary: artifact.summary
+    }
+  })
   return artifact
 }
 

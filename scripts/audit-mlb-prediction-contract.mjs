@@ -75,7 +75,7 @@ const auditArtifacts = (date) => {
 
 const auditSourceStatus = (date) => {
   const rows = sqliteJson(`
-    select source_name, last_status, actual_item_count, expected_item_count, missing_item_count, cache_valid_until
+    select source_name, last_status, last_completeness_status, actual_item_count, expected_item_count, missing_item_count, cache_valid_until
     from source_fetch_status
     where sport='mlb'
       and source_date=${sqlText(date)}
@@ -91,7 +91,9 @@ const auditSourceStatus = (date) => {
     'fantasyinfocentral_weather',
     'fantasyinfocentral_daily_matchups',
     'fantasyinfocentral_umpire_factors',
-    'fangraphs_roster_resource_bullpen_depth'
+    'fangraphs_roster_resource_bullpen_depth',
+    'mlb_env1',
+    'mlb_rp2'
   ]
   const legacyFeatureSources = [
     'mlb_pitcher_features',
@@ -120,6 +122,16 @@ const auditSourceStatus = (date) => {
       warnings.push({
         warning: 'source-status-partial',
         sourceName,
+        actual: Number(row.actual_item_count || 0),
+        expected: Number(row.expected_item_count || 0),
+        missing: Number(row.missing_item_count || 0)
+      })
+    }
+    if (row.last_completeness_status && row.last_completeness_status !== 'complete') {
+      warnings.push({
+        warning: 'source-completeness-partial',
+        sourceName,
+        completenessStatus: row.last_completeness_status,
         actual: Number(row.actual_item_count || 0),
         expected: Number(row.expected_item_count || 0),
         missing: Number(row.missing_item_count || 0)
