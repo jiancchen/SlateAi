@@ -1296,7 +1296,12 @@ const buildMlbPlayerProps = (game, analysis) => {
 
 const rankMlbPlayerPropCandidatesLegacy = (games) =>
   games
-    .filter((game) => game.league === 'MLB' && game.analysis?.mlbProjection && game.lineupBoard)
+    .filter((game) =>
+      game.league === 'MLB' &&
+      game.predictionEligibility?.eligible !== false &&
+      game.analysis?.mlbProjection &&
+      game.lineupBoard
+    )
     .flatMap((game) => buildLegacyMlbPlayerProps(game, game.analysis).targets.map((target) => ({ ...target, game })))
     .sort((left, right) => {
       if (right.confidence !== left.confidence) return right.confidence - left.confidence
@@ -1309,7 +1314,7 @@ const rankMlbPlayerPropCandidatesLegacy = (games) =>
 
 const rankMlbPlayerProps = (games) =>
   games
-    .filter((game) => game.playerProps?.available)
+    .filter((game) => game.predictionEligibility?.eligible !== false && game.playerProps?.available)
     .flatMap((game) => game.playerProps.targets.map((target) => ({ ...target, game })))
     .sort((left, right) => {
       const rightScore = Number.isFinite(right.trackingScore) ? right.trackingScore : right.confidence

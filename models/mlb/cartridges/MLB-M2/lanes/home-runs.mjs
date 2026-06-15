@@ -912,7 +912,7 @@ const scoreCandidateDetails = async (candidate, detailRows, season, targetDate, 
 }
 
 const scoreCandidates = async ({ date, season, top, scanLimit, teamLimit }) => {
-  const games = await loadDayGames(date)
+  const games = (await loadDayGames(date)).filter((game) => game.predictionEligibility?.eligible !== false)
   const matchupByAbbr = buildMatchupMap(games)
   const lineupBoardsByGameId = buildLineupBoardsFromGames(games)
   const lineupLookup = buildLineupLookup(lineupBoardsByGameId)
