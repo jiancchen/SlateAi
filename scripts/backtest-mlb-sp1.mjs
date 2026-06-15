@@ -97,6 +97,48 @@ const hrForceBucket = (value) => {
 }
 
 const rows = query(`
+  with pa as (
+    select
+      game_date,
+      game_pk,
+      team_role,
+      pitcher_id,
+      pitcher_name,
+      max(pitcher_role) as pitcher_role,
+      max(runs_allowed) as runs_allowed,
+      max(earned_runs) as earned_runs,
+      max(hits_allowed) as hits_allowed,
+      max(home_runs_allowed) as home_runs_allowed,
+      max(walks_allowed) as walks_allowed,
+      max(strikeouts) as strikeouts,
+      max(outs_recorded) as outs_recorded,
+      max(pitches_thrown) as pitches_thrown
+    from mlb_pitcher_appearances
+    group by game_date, game_pk, team_role, pitcher_id, pitcher_name
+  ),
+  opp as (
+    select
+      game_date,
+      game_pk,
+      team_role,
+      max(runs_scored) as runs_scored,
+      max(runs_scored_first5) as runs_scored_first5,
+      max(hits) as hits,
+      max(hits_first5) as hits_first5,
+      max(home_runs) as home_runs,
+      max(home_runs_first5) as home_runs_first5
+    from mlb_game_team_stats
+    group by game_date, game_pk, team_role
+  ),
+  go as (
+    select
+      game_date,
+      game_pk,
+      max(total_runs_final) as total_runs_final,
+      max(total_runs_first5) as total_runs_first5
+    from mlb_game_outcomes
+    group by game_date, game_pk
+  )
   select
     sp1.source_date,
     sp1.model_version,
@@ -149,7 +191,7 @@ const rows = query(`
     go.total_runs_final,
     go.total_runs_first5
   from mlb_starting_pitcher_profile_v1_daily sp1
-  left join mlb_pitcher_appearances pa
+  left join pa
     on pa.game_date = sp1.source_date
    and pa.game_pk = sp1.game_pk
    and pa.team_role = sp1.team_role
@@ -157,11 +199,11 @@ const rows = query(`
       cast(pa.pitcher_id as text) = cast(sp1.mlb_player_id as text)
       or lower(pa.pitcher_name) = lower(sp1.pitcher_name)
    )
-  left join mlb_game_team_stats opp
+  left join opp
     on opp.game_date = sp1.source_date
    and opp.game_pk = sp1.game_pk
    and opp.team_role = case when sp1.team_role = 'away' then 'home' else 'away' end
-  left join mlb_game_outcomes go
+  left join go
     on go.game_date = sp1.source_date
    and go.game_pk = sp1.game_pk
   where sp1.source_date between ${sqlQuote(startDate)} and ${sqlQuote(endDate)}
