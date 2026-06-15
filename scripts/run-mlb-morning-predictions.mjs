@@ -276,12 +276,20 @@ const main = async () => {
     'run', 'data:audit:mlb-morning-contracts', '--', '--date', date
   ], { dryRun, allowFailure: allowSourceGaps }))
 
+  steps.push(run('Capture started-game locks before public publish', 'npm', [
+    'run', 'data:audit:mlb-started-game-locks', '--', '--date', date, '--mode', 'capture', '--source', 'slate'
+  ], { dryRun }))
+
   steps.push(run('Publish rich MLB slate and preserve non-MLB games', 'npm', [
     'run', 'data:publish:mlb-clean:vercel-safe', '--', '--date', date
   ], { dryRun }))
 
   const afterNonMlbIds = dryRun ? beforeNonMlbIds : await nonMlbIdsForCurrent()
   const preservation = assertNonMlbPreserved(beforeNonMlbIds, afterNonMlbIds)
+
+  steps.push(run('Audit started-game locks after public publish', 'npm', [
+    'run', 'data:audit:mlb-started-game-locks', '--', '--date', date, '--mode', 'audit', '--source', 'slate'
+  ], { dryRun }))
 
   steps.push(await runPublicMlbAudit(date, dryRun))
 
