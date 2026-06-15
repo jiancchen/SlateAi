@@ -15,6 +15,7 @@ What changed:
 - Generated-vs-DB parity audit now separates blocking mismatches from warning-level drift. It blocks on missing games, eligibility gaps, lineup counts, starter identity/split status, and addendum coverage; it reports source-label, usage-status, StatMuse-context, and analysis differences as drift.
 - Morning runner now refreshes/repairs/ingests final lineup context and refreshes/warehouses final DraftKings lines before strict M2 day-file generation. Final M2 day-file generation then runs through prediction preflight before publish gates.
 - Morning runner now captures started-game locks immediately before public MLB publish and audits those locks immediately after publish, preventing already-started game public summary/detail payloads from being rewritten during lineup/odds refreshes.
+- MLB pick-ranking, side, veto, home-run, player-prop, clean H+R+RBI, and Mike's BOTD surfaces now require `predictionEligibility.eligible === true`; missing eligibility is no longer treated as acceptable for MLB picks.
 
 Verification:
 
@@ -25,6 +26,10 @@ Verification:
 - `npm run data:audit:mlb-started-game-locks -- --date 2026-06-14 --mode capture --source slate` captures 14 started-game locks.
 - `npm run data:audit:mlb-started-game-locks -- --date 2026-06-14 --mode audit --source slate` passes against the captured lock snapshot.
 - `npm run data:run:mlb-morning -- --date 2026-06-14 --dry-run --skip-prior-close` confirms final lineups/odds now precede strict day-file generation, and strict audits run before publish.
+- `node models/mlb/cartridges/MLB-M2/lanes/sides.mjs --start-date 2026-06-14 --end-date 2026-06-14 --out /tmp/mlb-sides-eligibility-smoke.json` exports 14 side rows after strict eligibility gating.
+- `node models/mlb/cartridges/MLB-M2/lanes/veto.mjs --date 2026-06-14 --out /tmp/mlb-veto-eligibility-smoke.json` exports 14 veto rows after strict eligibility gating.
+- `node models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs --date 2026-06-14 --top 3 --scan-limit 6 --team-limit 1 --out /tmp/mlb-hr-eligibility-smoke.json --module-out /tmp/mlb-hr-eligibility-smoke.js` exports 3 smoke-test HR rows after strict eligibility gating.
+- `npm --prefix web run build` passes.
 
 ## MLB-M2.2026-06-15.v0.4 - Prediction Contract Cleanup
 

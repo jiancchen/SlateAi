@@ -43,7 +43,7 @@ const buildRecommendedAction = ({ vetoCount = 0, protectedMarketDogFlag = false 
   return 'Eligible'
 }
 
-const predictionEligible = (game) => game.predictionEligibility?.eligible !== false
+const predictionEligible = (game) => game?.predictionEligibility?.eligible === true
 
 const buildEntry = (game, date) => {
   const analysis = game.analysis ?? {}

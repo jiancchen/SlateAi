@@ -5203,9 +5203,23 @@ function App() {
         }
       })
 
+    const gameIdByTitle = Object.fromEntries(mlbGames.map((game: AnyRecord) => [game.title, game.id]))
+    const gamePredictionEligibilityById = new Map(
+      mlbGames.map((game: AnyRecord) => [game.id, game.predictionEligibility?.eligible === true])
+    )
+    const rowClearsGamePredictionEligibility = (row: AnyRecord) => {
+      const rowGameId =
+        row.gameId ||
+        row.raw?.gameId ||
+        row.game?.id ||
+        gameIdByTitle[row.gameTitle || row.raw?.gameTitle || row.game?.title || '']
+      return Boolean(rowGameId && gamePredictionEligibilityById.get(rowGameId) === true)
+    }
+
     const passesCleanHrrBoard = (row: AnyRecord) => {
       const filters = row.raw?.valueBoardFilters || row.valueBoardFilters || {}
       return (
+        rowClearsGamePredictionEligibility(row) &&
         String(filters.projectedTeamFullGameResult || '').toLowerCase() === 'win' &&
         Number(row.confidence) >= 70 &&
         Number.isFinite(Number(filters.recentAtBats)) &&
@@ -5220,6 +5234,7 @@ function App() {
       const manualMikesBotd = manualMikesBotdList.includes(playerKey)
       const requiresManualMikesBotd = manualMikesBotdList.length > 0
       return (
+        rowClearsGamePredictionEligibility(row) &&
         String(filters.projectedTeamFullGameResult || '').toLowerCase() === 'win' &&
         Number(row.confidence) >= 60 &&
         Number.isFinite(Number(filters.recentAtBats)) &&
@@ -5233,7 +5248,6 @@ function App() {
     const displayHitRunRbiRows = cleanHitRunRbiRows
     const mikesBotdRows = (allHitRunRbiPropRows.length ? allHitRunRbiPropRows : battingProductionRows).filter(passesMikesBotdBoard)
 
-    const gameIdByTitle = Object.fromEntries(mlbGames.map((game: AnyRecord) => [game.title, game.id]))
     const homeRunPayloadRows = Array.isArray(activeHomeRunBoard?.picks) ? activeHomeRunBoard.picks : []
     const fallbackPerGameRows = mlbGames.flatMap((game: AnyRecord) => {
       const groupedTargets = [

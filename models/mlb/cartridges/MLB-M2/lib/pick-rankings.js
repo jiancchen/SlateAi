@@ -4,7 +4,10 @@ import {
   roundToTenths
 } from '../../../../shared/sports-core/core-utils.js'
 
-const predictionEligible = (game) => game.predictionEligibility?.eligible !== false
+const predictionEligible = (game) =>
+  game?.league === 'MLB'
+    ? game.predictionEligibility?.eligible === true
+    : game?.predictionEligibility?.eligible !== false
 
 export const rankAnalysisPicks = (games) =>
   games

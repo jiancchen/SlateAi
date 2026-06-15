@@ -387,7 +387,7 @@ const buildIndicators = (game, predictedSide) => {
   }
 }
 
-const predictionEligible = (game) => game.predictionEligibility?.eligible !== false
+const predictionEligible = (game) => game?.predictionEligibility?.eligible === true
 
 const exportPredictions = async ({ startDate, endDate, out, modelName }) => {
   const picks = []

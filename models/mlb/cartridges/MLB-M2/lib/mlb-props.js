@@ -3,6 +3,8 @@ import { clamp, normalizeText, roundToTenths } from '../../../../shared/sports-c
 import { parseBaseballInnings } from './mlb-starter-utils.js'
 import { teamNamesMatch } from './team-utils.js'
 
+const predictionEligible = (game) => game?.predictionEligibility?.eligible === true
+
 const mlbPropTypeConfig = {
   homeRun: {
     label: 'HR',
@@ -1298,7 +1300,7 @@ const rankMlbPlayerPropCandidatesLegacy = (games) =>
   games
     .filter((game) =>
       game.league === 'MLB' &&
-      game.predictionEligibility?.eligible !== false &&
+      predictionEligible(game) &&
       game.analysis?.mlbProjection &&
       game.lineupBoard
     )
@@ -1314,7 +1316,7 @@ const rankMlbPlayerPropCandidatesLegacy = (games) =>
 
 const rankMlbPlayerProps = (games) =>
   games
-    .filter((game) => game.predictionEligibility?.eligible !== false && game.playerProps?.available)
+    .filter((game) => predictionEligible(game) && game.playerProps?.available)
     .flatMap((game) => game.playerProps.targets.map((target) => ({ ...target, game })))
     .sort((left, right) => {
       const rightScore = Number.isFinite(right.trackingScore) ? right.trackingScore : right.confidence
