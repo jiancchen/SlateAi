@@ -151,8 +151,8 @@ const main = async () => {
     'run', 'data:fetch:draftkings-mlb', '--', '--date', date
   ], { dryRun, allowFailure: allowSourceGaps }))
 
-  steps.push(run('Full M2 live refresh: MLB schedule, lineups, markets, model lanes, RP36, props', 'npm', [
-    'run', 'data:refresh:mlb-live', '--', '--date', date, '--skip-preflight'
+  steps.push(run('Refresh M2 source/feature prep without generating board artifacts', 'npm', [
+    'run', 'data:refresh:mlb-live', '--', '--date', date, '--skip-preflight', '--prep-only'
   ], { dryRun }))
 
   steps.push(run('Fetch DraftKings MLB full-game and first-five lines', 'npm', [
@@ -260,9 +260,37 @@ const main = async () => {
     'run', 'data:generate:mlb-day', '--', '--date', date
   ], { dryRun }))
 
+  steps.push(run('Regenerate RP36 reliever shadow after final day files', 'npm', [
+    'run', 'data:export:mlb-reliever-shadow', '--', '--date', date, '--skip-preflight'
+  ], { dryRun }))
+
+  steps.push(run('Regenerate veto artifact after final day files', 'npm', [
+    'run', 'data:export:mlb-veto-artifact', '--', '--date', date, '--skip-preflight'
+  ], { dryRun }))
+
+  steps.push(run('Regenerate home-run board after final day files', 'npm', [
+    'run', 'data:export:hr', '--', '--date', date, '--skip-preflight'
+  ], { dryRun }))
+
   steps.push(run('Regenerate player props with market lineage', 'npm', [
     'run', 'data:export:mlb-props', '--', '--date', date, '--skip-preflight'
   ], { dryRun, env: { MLB_DAY_GAMES_DISABLE_DB: '1' } }))
+
+  steps.push(run('Import regenerated MLB player props into prediction warehouse', 'node', [
+    'models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs',
+    'import-prop-predictions',
+    '--file',
+    `data-private/predictions/mlb-player-props/${date}-player-props.json`
+  ], { dryRun }))
+
+  steps.push(run('Grade MLB player props when boxscores are available', 'node', [
+    'models/mlb/cartridges/MLB-M2/workflows/archive-m2/legacy-warehouse.mjs',
+    'grade-prop-picks',
+    '--date',
+    date,
+    '--model-name',
+    'mlb-player-props-v2'
+  ], { dryRun, allowFailure: true }))
 
   steps.push(run('Prediction eligibility and addendum contract audit', 'npm', [
     'run', 'data:audit:mlb-prediction-contract', '--', '--date', date

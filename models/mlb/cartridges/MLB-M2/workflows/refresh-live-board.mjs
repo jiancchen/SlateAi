@@ -21,13 +21,15 @@ const parseArgs = () => {
   const args = process.argv.slice(2)
   const options = {
     date: null,
-    baselineContextDate: null
+    baselineContextDate: null,
+    prepOnly: false
   }
 
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index]
     if (arg === '--date') options.date = args[++index]
     else if (arg === '--baseline-context-date') options.baselineContextDate = args[++index]
+    else if (arg === '--prep-only') options.prepOnly = true
   }
 
   if (!options.date) {
@@ -112,6 +114,10 @@ const main = () => {
   runPythonWarehouse('derive-tier3-features', ['--as-of-date', options.date])
   // Capture today's FanDuel pitcher strikeout lines before we build the slate and prop board.
   runPythonFile('pipeline/mlb/fetchers/fetch_fanduel_research_mlb.py', ['--start-date', options.date, '--end-date', options.date, '--markets', 'strikeouts'])
+  if (options.prepOnly) {
+    console.log(`[refresh-live-board] prep-only complete for ${options.date}; skipped board artifact generation.`)
+    return
+  }
   runMlbCartridge('lane:generate-day-files', generateArgs)
   runMlbCartridge('lane:lineups', ['--date', options.date])
   // Keep the bullpen upgrade path in shadow mode on real game cards before promoting it into live picks.
