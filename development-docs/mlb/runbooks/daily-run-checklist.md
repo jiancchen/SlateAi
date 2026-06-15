@@ -88,8 +88,10 @@ This should rebuild:
 ```bash
 npm run data:build:mlb-env1 -- --date YYYY-MM-DD
 npm run data:build:mlb-rp2 -- --date YYYY-MM-DD
-# planned once MLB-SP1 materializer is implemented:
-# npm run data:build:mlb-sp1 -- --date YYYY-MM-DD
+npm run data:warehouse:mlb-player-split-families -- --date YYYY-MM-DD
+npm run data:audit:mlb-player-split-families -- --date YYYY-MM-DD
+npm run data:build:mlb-sp1 -- --date YYYY-MM-DD
+npm run data:audit:mlb-sp1 -- --date YYYY-MM-DD
 npm run data:generate:mlb-day -- --date YYYY-MM-DD
 ```
 
@@ -113,7 +115,7 @@ Expected checks:
 - weather profile attached to every MLB projection
 - bridge reliever coverage attached to every MLB game
 - RP2 available-bullpen context attached to every MLB game where source coverage exists
-- MLB-SP1 starter profile context is attached when the materializer is available; until then, inspect the starter/batter kernel fields manually for the SP1-required source-status items
+- MLB-SP1 starter profile context is attached for both team sides, sourced from canonical hitter/pitcher split families, and present in the causal ledger
 - HR board generated
 - non-HR prop board generated
 
@@ -138,8 +140,10 @@ npm run data:refresh:mlb-live -- --date YYYY-MM-DD
 npm run data:warehouse:mlb-fic-weather -- --date YYYY-MM-DD
 npm run data:build:mlb-env1 -- --date YYYY-MM-DD
 npm run data:build:mlb-rp2 -- --date YYYY-MM-DD
-# planned once MLB-SP1 materializer is implemented:
-# npm run data:build:mlb-sp1 -- --date YYYY-MM-DD
+npm run data:warehouse:mlb-player-split-families -- --date YYYY-MM-DD
+npm run data:audit:mlb-player-split-families -- --date YYYY-MM-DD
+npm run data:build:mlb-sp1 -- --date YYYY-MM-DD
+npm run data:audit:mlb-sp1 -- --date YYYY-MM-DD
 npm run data:generate:mlb-day -- --date YYYY-MM-DD --skip-preflight
 npm run data:publish:mlb-clean -- --date YYYY-MM-DD --preserve-started --allow-known-audit-failures
 npm run data:audit:mlb-not-started-side-coherence -- --date YYYY-MM-DD
@@ -184,7 +188,7 @@ Even if the verifier passes, manually inspect these:
   - starter ESPN split: pitcher allowed `vs. Left` / `vs. Right` means batter side faced
 - The starter matchup kernel must blend current form, hitter split versus starter hand, starter allowed split versus effective batter side, pitch-type fit versus league average, and recent Statcast trend. Do not let old BvP override a cold current hitter.
 - Strong hitter platoon splits should affect projected hits/runs, pitcher expected hits/runs, ML/F5 ML shape, YRFI/NRFI, totals, team totals, HR lanes, hits, total bases, and H+R+RBI confidence.
-- Starter profile checks belong in MLB-SP1 once the materializer exists. Until then, manually verify the same pieces in the detail payload: projection pitcher role, ESPN pitcher right/left allowed split, hitter ESPN split, pitch-fit, repeat-opponent context, day/night split when meaningful, HRForce/weather archetype, and first-inning risk.
+- MLB-SP1 should show the same pieces in the detail payload and causal ledger: projection pitcher role, ESPN pitcher right/left allowed split, hitter ESPN split, pitch-fit, repeat-opponent context, day/night split when meaningful, HRForce/weather archetype, and first-inning risk.
 
 ### Bridge chains
 - Make sure games are not showing `0.0 score / unknown workload` unless the warehouse truly has no current usage context.

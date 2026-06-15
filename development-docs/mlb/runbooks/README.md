@@ -7,4 +7,4 @@ Daily MLB workflows, source checks, model-run procedures, and deployment checkli
 - [clean-public-slate-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/clean-public-slate-runbook.md:1): guarded public publish workflow.
 - [mlb-followup-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-followup-runbook.md:1): post-slate settlement and grading workflow.
 - [mlb-reliever-daily-warehouse-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-reliever-daily-warehouse-runbook.md:1): FanGraphs/RosterResource reliever context warehouse workflow and backlog.
-- [mlb-starter-profile-addendum-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-starter-profile-addendum-runbook.md:1): planned MLB-SP1 starter/bulk-primary pitcher profile addendum workflow.
+- [mlb-starter-profile-addendum-runbook.md](/Users/jcchen/Documents/New%20project/development-docs/mlb/runbooks/mlb-starter-profile-addendum-runbook.md:1): MLB-SP1 starter/bulk-primary pitcher profile addendum build, audit, and promotion workflow.

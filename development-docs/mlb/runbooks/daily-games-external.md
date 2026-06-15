@@ -159,7 +159,7 @@ Ingestion rules:
 - Prediction use is game-wide and player-side: `starterMatchupKernelIndex` should move projected hits, run conversion, starter damage risk, ML/F5 ML shape, totals, YRFI/NRFI, HR, hits, total bases, and H+R+RBI confidence.
 
 ## MLB-SP1 Starter Profile Addendum Source Contract
-The starter/batter matchup, handedness, pitch-mix, repeat-opponent, day/night, and HRForce rules above now belong to the planned MLB-SP1 addendum contract.
+The starter/batter matchup, handedness, pitch-mix, repeat-opponent, day/night, and HRForce rules above now belong to the MLB-SP1 addendum contract.
 
 SP1 should materialize one row per projection pitcher and feed the same deltas into:
 - full-game ML and F5 ML confidence

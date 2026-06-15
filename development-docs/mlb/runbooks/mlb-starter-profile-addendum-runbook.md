@@ -1,6 +1,6 @@
 # MLB Starter Profile Addendum Runbook
 
-Use this when building or auditing the planned MLB-SP1 starter pitcher profile addendum.
+Use this when building or auditing the MLB-SP1 starter pitcher profile addendum.
 
 SP1 is the starter or bulk-primary pitcher layer for M2. It should explain how today's pitcher profile changes ML, F5 ML, totals, team totals, YRFI/NRFI, pitcher expected lines, batter production, HR lanes, and game-story copy.
 

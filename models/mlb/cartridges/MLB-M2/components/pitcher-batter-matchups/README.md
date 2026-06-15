@@ -35,11 +35,11 @@ Rules:
 - BvP is context-only unless the sample is dated within the last 3 seasons and has at least 5 AB.
 - `starterMatchupKernelIndex` is allowed to move projected hits, run conversion, first-inning probability, ML/F5 ML shape, totals, and hitter prop confidence.
 
-## MLB-SP1 Handoff
+## MLB-SP1 Integration
 
-The live kernel is now the hitter/lineup half of the planned MLB-SP1 starter profile addendum.
+The live kernel is the hitter/lineup half of the MLB-SP1 starter profile addendum.
 
-SP1 should preserve this kernel but add the pitcher-profile half that the current live reads still scatter across cards and writeups:
+SP1 preserves this kernel and materializes the pitcher-profile half that used to be scattered across cards and writeups:
 
 - projection pitcher role from Rotowire primary/bulk vs MLB opener
 - pitcher day/night, home/away, and venue splits when source/sample supports them
