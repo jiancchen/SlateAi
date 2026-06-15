@@ -106,6 +106,7 @@ const summarizeGame = (game) => {
     starterSplitStatuses: starterStatuses,
     hasBridgeChain: Boolean(game?.bullpenChainContext?.away && game?.bullpenChainContext?.home),
     hasRelieverShadow: Boolean(game?.relieverShadowContext?.away && game?.relieverShadowContext?.home),
+    hasReliefProjection: Boolean(game?.reliefProjectionContext?.away && game?.reliefProjectionContext?.home),
     hasParkContext: Boolean(game?.parkContext?.venueName),
     hasFirstFive: projectionHasFirstFive(projection),
     hasFirstFivePush: projectionHasPushContext(projection),
@@ -132,7 +133,7 @@ const hardFailuresForGame = (gameReport) => {
   if (gameReport.pitchFits < 16) failures.push('missing-pitch-fit')
   if (gameReport.xwobaBubbles < 14) failures.push('missing-batter-xwoba-bubbles')
   if (!gameReport.hasBridgeChain) failures.push('missing-bridge-chain')
-  if (!gameReport.hasRelieverShadow) failures.push('missing-rp36-shadow')
+  if (!gameReport.hasRelieverShadow && !gameReport.hasReliefProjection) failures.push('missing-bullpen-shadow-context')
   if (!gameReport.hasParkContext) failures.push('missing-park-context')
   if (!gameReport.hasFirstFive) failures.push('missing-first-five-context')
   if (!gameReport.hasFirstFivePush) failures.push('missing-first-five-push-context')
