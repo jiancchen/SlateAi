@@ -1,5 +1,27 @@
 # MLB-M2 Changelog
 
+## MLB-M2.2026-06-15.v0.7 - Player Split Family Warehouse
+
+Status: warehouse scaffold and coverage gate. No scoring coefficients were promoted in this entry.
+
+What changed:
+
+- Added `mlb_player_split_family_snapshots`, a canonical daily table for player split families across hitter and pitcher contexts.
+- Hitter rows now warehouse ESPN handedness splits from the final lineup board as `handedness/vs_lhp` and `handedness/vs_rhp`.
+- Pitcher rows now warehouse ESPN starter split categories as `handedness/vs_lhb`, `handedness/vs_rhb`, `day_night/day`, `day_night/night`, `home_away/home`, and `home_away/away`.
+- Added `data:warehouse:mlb-player-split-families` and `data:audit:mlb-player-split-families`.
+- Morning runner now warehouses and audits canonical split-family coverage after final lineup split ingestion and before final odds/preflight.
+
+Verification:
+
+- `node --check scripts/warehouse-mlb-player-split-families.mjs`
+- `node --check scripts/audit-mlb-player-split-families.mjs`
+- `node --check scripts/run-mlb-morning-predictions.mjs`
+- `npm run data:warehouse:mlb-player-split-families -- --date 2026-06-14` inserts 693 rows.
+- `npm run data:audit:mlb-player-split-families -- --date 2026-06-14` passes with 0 hard failures.
+- June 14 split-family counts: hitters 501 handedness rows; pitchers 64 handedness, 64 day/night, and 64 home/away rows.
+- `npm run data:run:mlb-morning -- --date 2026-06-14 --dry-run --skip-prior-close` confirms the warehouse and audit run before final odds/preflight.
+
 ## MLB-M2.2026-06-15.v0.6 - Causal Ledger Receipts
 
 Status: read-only observability and pipeline gate. No scoring coefficients were promoted in this entry.

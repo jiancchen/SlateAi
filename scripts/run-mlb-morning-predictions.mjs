@@ -224,6 +224,14 @@ const main = async () => {
     'run', 'data:ingest:hitter-lineup-splits', '--', '--date', date
   ], { dryRun }))
 
+  steps.push(run('Warehouse canonical hitter/pitcher split families', 'npm', [
+    'run', 'data:warehouse:mlb-player-split-families', '--', '--date', date
+  ], { dryRun }))
+
+  steps.push(run('Audit canonical hitter/pitcher split family coverage', 'npm', [
+    'run', 'data:audit:mlb-player-split-families', '--', '--date', date
+  ], { dryRun }))
+
   steps.push(run('Refresh DraftKings MLB lines before final preflight', 'npm', [
     'run', 'data:fetch:draftkings-mlb', '--', '--date', date
   ], { dryRun }))
