@@ -1,5 +1,23 @@
 # MLB-M2 Changelog
 
+## MLB-M2.2026-06-15.v0.5 - DB Parity And Morning Gate Cleanup
+
+Status: pipeline hardening. No scoring coefficients were promoted in this entry.
+
+What changed:
+
+- DB slate loading now hydrates hitter matchup rows from `lineup_matchup_snapshots.source_detail_json`, restoring pitch-fit summaries, batter projection metrics, ESPN hitter L/R splits, matchup kernel context, tags, and matchup notes.
+- DB starter selection no longer requires `source_name = 'mlb_probables'`. It ranks projection pitchers by source/role so primary-bulk pitcher rows win over MLB-listed openers, while normal MLB feed starters still populate when no primary row exists.
+- ESPN pitcher split warehousing now preserves known-good cached raw/artifact/DB split categories when ESPN transiently returns 5xx or empty split payloads.
+- Generated-vs-DB parity audit now separates blocking mismatches from warning-level drift. It blocks on missing games, eligibility gaps, lineup counts, starter identity/split status, and addendum coverage; it reports source-label, usage-status, StatMuse-context, and analysis differences as drift.
+- Morning runner now gates publish on prediction contract, generated-vs-DB parity, and hard source-contract audits before rewriting the public MLB slate.
+
+Verification:
+
+- `npm run data:audit:mlb-prediction-contract -- --date 2026-06-14` passes with 14/14 eligible games.
+- `npm run data:audit:mlb-generated-db-parity -- --date 2026-06-14` passes with 14 generated games, 14 DB games, 14/14 eligible in both paths, 0 blocking mismatches, and 14 warning-level drift rows.
+- `npm run data:run:mlb-morning -- --date 2026-06-14 --dry-run --skip-prior-close` confirms strict audits now run before publish.
+
 ## MLB-M2.2026-06-15.v0.4 - Prediction Contract Cleanup
 
 Status: governance and pipeline cleanup. No scoring coefficients were promoted in this entry.
