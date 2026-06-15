@@ -51,13 +51,20 @@ const writeJson = async (filePath, payload) => {
   await fs.writeFile(filePath, `${JSON.stringify(payload, null, 2)}\n`, 'utf8')
 }
 
+const writeText = async (filePath, text) => {
+  await fs.mkdir(path.dirname(filePath), { recursive: true })
+  await fs.writeFile(filePath, text, 'utf8')
+}
+
 const run = (label, command, args = [], options = {}) => {
-  const startedAt = new Date().toISOString()
+  const startedMs = Date.now()
+  const startedAt = new Date(startedMs).toISOString()
   const rendered = [command, ...args].join(' ')
   console.log(`\n[mlb-morning] ${label}`)
   console.log(`[mlb-morning] $ ${rendered}`)
   if (options.dryRun) {
-    return { label, command: rendered, status: 'dry_run', startedAt, finishedAt: new Date().toISOString() }
+    const finishedMs = Date.now()
+    return { label, command: rendered, status: 'dry_run', startedAt, finishedAt: new Date(finishedMs).toISOString(), durationMs: finishedMs - startedMs }
   }
   try {
     execFileSync(command, args, {
@@ -65,15 +72,18 @@ const run = (label, command, args = [], options = {}) => {
       stdio: 'inherit',
       env: { ...process.env, ...(options.env || {}) }
     })
-    return { label, command: rendered, status: 'passed', startedAt, finishedAt: new Date().toISOString() }
+    const finishedMs = Date.now()
+    return { label, command: rendered, status: 'passed', startedAt, finishedAt: new Date(finishedMs).toISOString(), durationMs: finishedMs - startedMs }
   } catch (error) {
+    const finishedMs = Date.now()
     if (options.allowFailure) {
       return {
         label,
         command: rendered,
         status: 'allowed_failure',
         startedAt,
-        finishedAt: new Date().toISOString(),
+        finishedAt: new Date(finishedMs).toISOString(),
+        durationMs: finishedMs - startedMs,
         error: error.message
       }
     }
@@ -103,6 +113,93 @@ const runPublicMlbAudit = async (date, dryRun) => {
   ], { dryRun })
 }
 
+const statusCounts = (steps = []) =>
+  steps.reduce((acc, step) => {
+    acc[step.status] = (acc[step.status] || 0) + 1
+    return acc
+  }, {})
+
+const seconds = (ms = 0) => `${(Number(ms || 0) / 1000).toFixed(1)}s`
+
+const maybeReport = async (relativePath, fallback = null) => readJson(path.join(root, relativePath), fallback)
+
+const changelogLine = (label, value) => `- ${label}: ${value}`
+
+const buildChangelog = async (report) => {
+  const splitAudit = await maybeReport(`data-migration/reports/audit_mlb_player_split_families_${report.date}.json`)
+  const sp1Build = await maybeReport(`data-migration/reports/build_mlb_sp1_${report.date}.json`)
+  const sp1Audit = await maybeReport(`data-migration/reports/audit_mlb_sp1_${report.date}.json`)
+  const contractAudit = await maybeReport(`data-migration/reports/audit_mlb_morning_contracts_${report.date}.json`)
+  const causalAudit = await maybeReport(`data-migration/reports/audit_mlb_causal_ledger_${report.date}.json`)
+  const publicAudit = await maybeReport(`data-migration/reports/audit_public_mlb_slate_${report.date}_local.json`)
+  const counts = statusCounts(report.steps)
+  const failedSteps = report.steps.filter((step) => step.status !== 'passed' && step.status !== 'dry_run')
+  const lines = [
+    `# MLB Morning Changelog ${report.date}`,
+    '',
+    changelogLine('Run ID', report.runId),
+    changelogLine('Generated', report.generatedAt),
+    changelogLine('Deploy requested', report.deploy ? 'yes' : 'no'),
+    changelogLine('Source gaps allowed', report.allowSourceGaps ? 'yes' : 'no'),
+    changelogLine('Prior closeout date', report.priorDate),
+    changelogLine('Step status counts', Object.entries(counts).map(([key, value]) => `${key}=${value}`).join(', ') || 'none'),
+    changelogLine('Non-MLB preservation', `${report.nonMlbPreservation.before} before / ${report.nonMlbPreservation.after} after / ${report.nonMlbPreservation.missing.length} missing`),
+    '',
+    '## Source Gates',
+    '',
+    changelogLine(
+      'Split families',
+      splitAudit
+        ? `${splitAudit.status}; hitter L/R ${splitAudit.counts?.hitterHandednessRows ?? 'n/a'}, pitcher L/R ${splitAudit.counts?.pitcherHandednessRows ?? 'n/a'}, day/night ${splitAudit.counts?.pitcherDayNightRows ?? 'n/a'}, home/away ${splitAudit.counts?.pitcherHomeAwayRows ?? 'n/a'}`
+        : 'report missing'
+    ),
+    changelogLine(
+      'SP1 build',
+      sp1Build
+        ? `${sp1Build.insertedProfiles}/${sp1Build.expectedProfiles} profiles; status ${sp1Build.sourceStatus}`
+        : 'report missing'
+    ),
+    changelogLine(
+      'SP1 audit',
+      sp1Audit
+        ? `${sp1Audit.status}; hard failures ${(sp1Audit.hardFailures || []).length}`
+        : 'report missing'
+    ),
+    changelogLine(
+      'Morning contracts',
+      contractAudit
+        ? `${contractAudit.failures?.length ? 'failed' : 'passed'}; failures ${(contractAudit.failures || []).length}`
+        : 'report missing'
+    ),
+    changelogLine(
+      'Causal ledger',
+      causalAudit
+        ? `${causalAudit.status}; hard failures ${(causalAudit.hardFailures || causalAudit.failures || []).length}`
+        : 'report missing'
+    ),
+    changelogLine(
+      'Public audit',
+      publicAudit
+        ? `${publicAudit.status || (publicAudit.failures?.length ? 'failed' : 'passed')}; failures ${(publicAudit.failures || publicAudit.hardFailures || []).length}`
+        : 'report missing'
+    ),
+    '',
+    '## Step Timings',
+    '',
+    '| Step | Status | Duration |',
+    '| --- | --- | --- |',
+    ...report.steps.map((step) => `| ${step.label.replaceAll('|', '/')} | ${step.status} | ${seconds(step.durationMs)} |`)
+  ]
+  if (failedSteps.length) {
+    lines.push('', '## Non-Passing Steps', '')
+    for (const step of failedSteps) {
+      lines.push(`- ${step.label}: ${step.status}${step.error ? ` (${step.error})` : ''}`)
+    }
+  }
+  lines.push('')
+  return `${lines.join('\n')}\n`
+}
+
 const main = async () => {
   const date = argValue('--date', pacificToday())
   const deploy = hasFlag('--deploy')
@@ -113,6 +210,7 @@ const main = async () => {
   const priorDate = argValue('--prior-date', addDays(date, -1))
   const statcastStartDate = argValue('--statcast-start-date', addDays(date, -7))
   const steps = []
+  const runId = `mlb-morning-${date}-${new Date().toISOString().replace(/[-:.TZ]/g, '').slice(0, 14)}`
   const beforeNonMlbIds = await nonMlbIdsForCurrent()
 
   console.log(`[mlb-morning] date=${date}`)
@@ -340,6 +438,7 @@ const main = async () => {
 
   const report = {
     run: 'mlb-morning-predictions',
+    runId,
     date,
     priorDate,
     statcastStartDate,
@@ -350,9 +449,12 @@ const main = async () => {
     steps
   }
   const reportPath = path.join(reportsRoot, `mlb_morning_predictions_${date}.json`)
+  const changelogPath = path.join(reportsRoot, `mlb_morning_changelog_${date}.md`)
   if (!dryRun) await writeJson(reportPath, report)
+  if (!dryRun) await writeText(changelogPath, await buildChangelog(report))
   console.log(`\n[mlb-morning] complete ${date}`)
   console.log(`[mlb-morning] report=${dryRun ? 'dry-run-not-written' : path.relative(root, reportPath)}`)
+  console.log(`[mlb-morning] changelog=${dryRun ? 'dry-run-not-written' : path.relative(root, changelogPath)}`)
   if (allowSourceGaps) {
     console.log('[mlb-morning] source gaps were allowed; do not treat this as production-green.')
   }
