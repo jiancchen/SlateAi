@@ -4,9 +4,11 @@ import {
   roundToTenths
 } from '../../../../shared/sports-core/core-utils.js'
 
+const predictionEligible = (game) => game.predictionEligibility?.eligible !== false
+
 export const rankAnalysisPicks = (games) =>
   games
-    .filter((game) => game.analysis?.available)
+    .filter((game) => predictionEligible(game) && game.analysis?.available)
     .map((game) => {
       const analysis = game.analysis ?? {}
       const indicatorSet = analysis.indicators ?? {}
@@ -164,7 +166,7 @@ const efficientFavoriteReasonText = {
 
 export const rankEfficientFavoritePicks = (games) =>
   games
-    .filter((game) => game.analysis?.available && game.moneyline?.available)
+    .filter((game) => predictionEligible(game) && game.analysis?.available && game.moneyline?.available)
     .map((game) => {
       const analysis = game.analysis ?? {}
       const indicatorSet = analysis.indicators ?? {}
@@ -267,7 +269,7 @@ const getUnderdogRangeBonus = (americanOdds) => {
 
 export const rankFlipRiskPicks = (games) =>
   games
-    .filter((game) => game.analysis?.available && game.moneyline?.available)
+    .filter((game) => predictionEligible(game) && game.analysis?.available && game.moneyline?.available)
     .map((game) => {
       const favoriteAndDog = getFavoriteAndUnderdog(game)
 

@@ -43,6 +43,8 @@ const buildRecommendedAction = ({ vetoCount = 0, protectedMarketDogFlag = false 
   return 'Eligible'
 }
 
+const predictionEligible = (game) => game.predictionEligibility?.eligible !== false
+
 const buildEntry = (game, date) => {
   const analysis = game.analysis ?? {}
   const indicators = analysis.indicators ?? {}
@@ -96,7 +98,7 @@ const main = async () => {
   const options = parseArgs()
   const slateGames = await loadMlbDayGames(options.date)
   const picks = slateGames
-    .filter((game) => game.league === 'MLB' && game.analysis?.participant?.name)
+    .filter((game) => predictionEligible(game) && game.league === 'MLB' && game.analysis?.participant?.name)
     .map((game) => buildEntry(game, options.date))
 
   const payload = {

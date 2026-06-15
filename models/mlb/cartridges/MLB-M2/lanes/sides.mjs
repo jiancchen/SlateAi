@@ -387,13 +387,17 @@ const buildIndicators = (game, predictedSide) => {
   }
 }
 
+const predictionEligible = (game) => game.predictionEligibility?.eligible !== false
+
 const exportPredictions = async ({ startDate, endDate, out, modelName }) => {
   const picks = []
   const dates = buildDateSequence(startDate, endDate)
 
   for (const date of dates) {
     const slateGames = await loadMlbDayGames(date)
-    for (const game of slateGames.filter((entry) => entry.league === 'MLB' && entry.analysis?.participant?.name)) {
+    for (const game of slateGames.filter((entry) =>
+      predictionEligible(entry) && entry.league === 'MLB' && entry.analysis?.participant?.name
+    )) {
       const predictedTeam = game.analysis.participant.name
       const predictedSide = predictedTeam === game.participants[0].name ? 'away' : 'home'
       const indicators = buildIndicators(game, predictedSide)
