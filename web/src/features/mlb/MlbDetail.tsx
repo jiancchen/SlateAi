@@ -135,6 +135,7 @@ export function MlbDetail(props: MlbDetailProps) {
   const homeTeam = game.matchup?.[1]?.name ?? 'Home'
   const awayLineup = game.lineupBoard?.away
   const homeLineup = game.lineupBoard?.home
+  const causalLedger = game.causalLedgerContext ?? null
   const statMuseSeasonRows = (history: AnyRecord | null | undefined) =>
     Array.isArray(history?.seasons)
       ? history.seasons.filter((season: AnyRecord) => String(season?.year || '').trim())
@@ -1109,6 +1110,102 @@ export function MlbDetail(props: MlbDetailProps) {
     </article>
   )
 
+  const formatLedgerNumber = (value: unknown, digits = 1) => {
+    const numeric = Number(value)
+    if (!Number.isFinite(numeric)) return 'N/A'
+    return formatNumber(numeric, digits)
+  }
+  const formatLedgerSigned = (value: unknown, digits = 1) => {
+    const numeric = Number(value)
+    if (!Number.isFinite(numeric)) return 'N/A'
+    return formatSignedNumber(numeric, digits)
+  }
+  const ledgerToneClass = (value: unknown) => {
+    const numeric = Number(value)
+    if (!Number.isFinite(numeric)) return 'neutral'
+    if (numeric >= 2.5) return 'positive'
+    if (numeric <= -2.5) return 'danger'
+    if (Math.abs(numeric) >= 1) return 'warning'
+    return 'neutral'
+  }
+  const renderLedgerPill = (label: string, value: unknown, toneValue: unknown = value, digits = 1) => (
+    <span className={`game-highlight-chip ${ledgerToneClass(toneValue)}`}>
+      {label} {typeof value === 'string' ? value : formatLedgerSigned(value, digits)}
+    </span>
+  )
+  const renderLedgerPlayer = (player: AnyRecord, prefix: string) => (
+    <div key={`${prefix}-${player.name}-${player.slot || 'x'}`} className="causal-ledger-player">
+      <div>
+        <strong>{player.slot ? `${player.slot}. ` : ''}{player.name}</strong>
+        <small>{[player.primaryTag, player.starterKernelLabel].filter(Boolean).join(' | ') || 'lineup factor'}</small>
+      </div>
+      <div className="causal-ledger-player-metrics">
+        <span>Kernel {formatLedgerNumber(player.starterKernelScore, 1)}</span>
+        <span>Split OPS {formatLedgerNumber(player.selectedSplitOps, 3)}</span>
+        {player.bvpH2h ? (
+          <span>BvP {player.bvpH2h.atBats ?? '?'} AB / OPS {formatLedgerNumber(player.bvpH2h.ops, 3)}</span>
+        ) : null}
+      </div>
+    </div>
+  )
+  const renderCausalTeamLedger = (side: 'away' | 'home', teamName: string) => {
+    const deltas = causalLedger?.teamDeltas?.[side]
+    const coverage = causalLedger?.coverage?.[side]
+    const positives = side === 'away' ? causalLedger?.topFactors?.awayPositive : causalLedger?.topFactors?.homePositive
+    const risks = side === 'away' ? causalLedger?.topFactors?.awayRisks : causalLedger?.topFactors?.homeRisks
+    if (!deltas) return null
+    return (
+      <article className="causal-ledger-team-card">
+        <div className="causal-ledger-team-head">
+          <div>
+            <small>{teamName}</small>
+            <strong>{formatLedgerNumber(coverage?.playerFactors, 0)} batter receipts</strong>
+          </div>
+          <span>{formatLedgerNumber(coverage?.playersWithBvpH2h, 0)} BvP</span>
+        </div>
+        <div className="react-pill-row">
+          {renderLedgerPill('Lineup', deltas.lineup?.delta)}
+          {renderLedgerPill('L/R', deltas.handednessSplits?.delta)}
+          {renderLedgerPill('Pitch fit', deltas.pitchFit?.delta)}
+          {renderLedgerPill('BvP', deltas.bvpH2h?.contextDelta)}
+          {renderLedgerPill('HRF', deltas.hrForce?.delta)}
+          {renderLedgerPill('RP2 hold', deltas.rp2?.sideHoldDelta)}
+          {renderLedgerPill('Late run', deltas.rp2?.offenseLateScoringDelta)}
+          {Number(deltas.openerPrimary?.delta) !== 0 ? renderLedgerPill('Opener', deltas.openerPrimary?.delta) : null}
+        </div>
+        <div className="causal-ledger-mini-grid">
+          <span>
+            <small>Split coverage</small>
+            <strong>{formatLedgerNumber(coverage?.playersWithSelectedSplits, 0)}/9</strong>
+          </span>
+          <span>
+            <small>Pitch-fit coverage</small>
+            <strong>{formatLedgerNumber(coverage?.playersWithPitchFit, 0)}/9</strong>
+          </span>
+          <span>
+            <small>Max HRForce</small>
+            <strong>{formatLedgerNumber(deltas.hrForce?.maxHrForce, 2)}</strong>
+          </span>
+          <span>
+            <small>Opp RP2 runs</small>
+            <strong>{formatLedgerNumber(deltas.rp2?.opposingBullpen?.projectedReliefRunsAllowed, 2)}</strong>
+          </span>
+        </div>
+        {deltas.bvpH2h?.summary ? <p className="react-section-copy">{deltas.bvpH2h.summary}</p> : null}
+        <div className="causal-ledger-player-grid">
+          <div>
+            <small className="causal-ledger-subhead">Top factors</small>
+            {(positives || []).slice(0, 3).map((player: AnyRecord) => renderLedgerPlayer(player, `${side}-positive`))}
+          </div>
+          <div>
+            <small className="causal-ledger-subhead">Risk factors</small>
+            {(risks || []).slice(0, 2).map((player: AnyRecord) => renderLedgerPlayer(player, `${side}-risk`))}
+          </div>
+        </div>
+      </article>
+    )
+  }
+
   return (
     <>
       <section className="detail-panel game-story-panel">
@@ -1140,6 +1237,53 @@ export function MlbDetail(props: MlbDetailProps) {
           ))}
         </div>
       </section>
+
+      {causalLedger ? (
+        <section className="detail-panel causal-ledger-panel">
+          <div className="detail-panel-header">
+            <p className="eyebrow">Causal ledger</p>
+            <span>{causalLedger.version || 'MLB causal receipt'}</span>
+          </div>
+          <div className="causal-ledger-game-grid">
+            <article className="game-story-card accent">
+              <small>ENV1</small>
+              <p>
+                Runs {formatLedgerSigned(causalLedger.gameDeltas?.env1?.expectedTotalRunsDelta, 2)} · Hits {formatLedgerSigned(causalLedger.gameDeltas?.env1?.expectedHitsDelta, 2)} · HR {formatLedgerSigned(causalLedger.gameDeltas?.env1?.expectedHrDelta, 2)}
+              </p>
+            </article>
+            <article className="game-story-card warning">
+              <small>Market</small>
+              <p>
+                ML {causalLedger.gameDeltas?.market?.moneyline?.raw || 'N/A'} · Total {causalLedger.gameDeltas?.market?.total?.raw || 'N/A'} · F5 {causalLedger.gameDeltas?.market?.first5Total?.raw || 'N/A'}
+              </p>
+            </article>
+            <article className="game-story-card">
+              <small>ML / F5</small>
+              <p>
+                Full {awayTeam} {formatLedgerNumber(causalLedger.gameDeltas?.projections?.moneyline?.awayProjectedRuns, 1)} - {homeTeam} {formatLedgerNumber(causalLedger.gameDeltas?.projections?.moneyline?.homeProjectedRuns, 1)} · F5 {formatLedgerSigned(causalLedger.gameDeltas?.projections?.firstFive?.runDiffAwayMinusHome, 1)} away diff
+              </p>
+            </article>
+            <article className="game-story-card">
+              <small>YRFI / total</small>
+              <p>
+                {causalLedger.gameDeltas?.projections?.yrfi?.pick || 'Pass'} {formatLedgerNumber(causalLedger.gameDeltas?.projections?.yrfi?.yesProbabilityPct, 1)}% · Full {causalLedger.gameDeltas?.projections?.totals?.fullGameLean || 'Pass'} {formatLedgerSigned(causalLedger.gameDeltas?.projections?.totals?.fullGameEdge, 1)}
+              </p>
+            </article>
+          </div>
+          <div className="causal-ledger-team-grid">
+            {renderCausalTeamLedger('away', awayTeam)}
+            {renderCausalTeamLedger('home', homeTeam)}
+          </div>
+          {causalLedger.scoringPolicy ? (
+            <div className="causal-ledger-policy">
+              <span>{causalLedger.scoringPolicy.splits}</span>
+              <span>{causalLedger.scoringPolicy.bvpH2h}</span>
+              <span>{causalLedger.scoringPolicy.hrForce}</span>
+              <span>{causalLedger.scoringPolicy.rp2}</span>
+            </div>
+          ) : null}
+        </section>
+      ) : null}
 
       {leanWriteup ? (
         <section className="detail-panel lean-writeup-panel">

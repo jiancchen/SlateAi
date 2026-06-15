@@ -4203,6 +4203,140 @@ h3 {
   background: rgba(255, 106, 122, 0.06);
 }
 
+.causal-ledger-panel {
+  display: grid;
+  gap: 12px;
+}
+
+.causal-ledger-game-grid,
+.causal-ledger-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.causal-ledger-team-card {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.causal-ledger-team-head,
+.causal-ledger-player,
+.causal-ledger-player-metrics {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.causal-ledger-team-head div,
+.causal-ledger-player div:first-child {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.causal-ledger-team-head small,
+.causal-ledger-subhead,
+.causal-ledger-mini-grid small,
+.causal-ledger-player small {
+  color: var(--muted);
+  font: 600 0.62rem/1 var(--mono);
+  text-transform: uppercase;
+}
+
+.causal-ledger-team-head strong,
+.causal-ledger-player strong,
+.causal-ledger-mini-grid strong {
+  color: var(--heading);
+}
+
+.causal-ledger-team-head > span {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font: 700 0.72rem/1 var(--mono);
+}
+
+.causal-ledger-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.causal-ledger-mini-grid span {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  background: rgba(8, 14, 18, 0.35);
+}
+
+.causal-ledger-player-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.causal-ledger-player-grid > div {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.causal-ledger-player {
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.causal-ledger-player-metrics {
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 52%;
+  color: var(--muted);
+  font: 600 0.64rem/1.25 var(--mono);
+  text-align: right;
+}
+
+.causal-ledger-policy {
+  display: grid;
+  gap: 6px;
+  padding-top: 2px;
+}
+
+.causal-ledger-policy span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 720px) {
+  .causal-ledger-mini-grid,
+  .causal-ledger-player-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .causal-ledger-player {
+    display: grid;
+  }
+
+  .causal-ledger-player-metrics {
+    max-width: none;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
 .lean-writeup-panel {
   display: grid;
   gap: 10px;
