@@ -43,6 +43,13 @@ const sqlText = (value = '') => `'${String(value).replaceAll("'", "''")}'`
 const array = (value) => (Array.isArray(value) ? value : [])
 const fail = (failures, failure, detail = {}) => failures.push({ failure, ...detail })
 const hasLineage = (row = {}) => Boolean(row.sportsbook && row.sourceName && row.sourcePath && row.marketCapturedAt)
+const tableExists = (tableName) =>
+  sqliteJson(`
+    select name
+    from sqlite_master
+    where type='table'
+      and name=${sqlText(tableName)}
+  `).length > 0
 
 const pitcherRows = (games = []) =>
   games.flatMap((game) =>
@@ -281,6 +288,90 @@ const auditModernAddendumCoverage = (date, games, failures) => {
   }
 }
 
+const auditCanonicalSplitFamilies = (date, games, failures) => {
+  const expectedLineupPlayers = games.reduce(
+    (sum, game) =>
+      sum +
+      array(game.lineupBoard?.away?.lineup).length +
+      array(game.lineupBoard?.home?.lineup).length,
+    0
+  )
+  const expectedPitchers = games.length * 2
+  if (!tableExists('mlb_player_split_family_snapshots')) {
+    fail(failures, 'split-family-table-missing', { table: 'mlb_player_split_family_snapshots' })
+    return
+  }
+  const rows = sqliteJson(`
+    select player_role, split_family, split_key, count(*) as rows
+    from mlb_player_split_family_snapshots
+    where snapshot_date=${sqlText(date)}
+    group by player_role, split_family, split_key
+  `)
+  const countFor = (role, family) =>
+    rows
+      .filter((row) => row.player_role === role && row.split_family === family)
+      .reduce((sum, row) => sum + Number(row.rows || 0), 0)
+  const counts = {
+    hitterHandednessRows: countFor('hitter', 'handedness'),
+    pitcherHandednessRows: countFor('pitcher', 'handedness'),
+    pitcherDayNightRows: countFor('pitcher', 'day_night'),
+    pitcherHomeAwayRows: countFor('pitcher', 'home_away')
+  }
+  if (expectedLineupPlayers && counts.hitterHandednessRows < expectedLineupPlayers) {
+    fail(failures, 'split-family-hitter-handedness-coverage-low', {
+      expectedAtLeast: expectedLineupPlayers,
+      actualRows: counts.hitterHandednessRows
+    })
+  }
+  for (const [key, actualRows] of Object.entries({
+    pitcherHandednessRows: counts.pitcherHandednessRows,
+    pitcherDayNightRows: counts.pitcherDayNightRows,
+    pitcherHomeAwayRows: counts.pitcherHomeAwayRows
+  })) {
+    const expectedAtLeast = expectedPitchers * 2
+    if (expectedAtLeast && actualRows < expectedAtLeast) {
+      fail(failures, `split-family-${key.replace(/Rows$/, '')}-coverage-low`, {
+        expectedAtLeast,
+        actualRows
+      })
+    }
+  }
+}
+
+const auditSp1Coverage = (date, games, failures) => {
+  const expectedTeamSides = games.length * 2
+  if (!tableExists('mlb_starting_pitcher_profile_v1_daily')) {
+    fail(failures, 'sp1-table-missing', { table: 'mlb_starting_pitcher_profile_v1_daily' })
+    return
+  }
+  const row = sqliteJson(`
+    select
+      count(*) as rows,
+      count(distinct game_id) as games,
+      count(distinct game_id || ':' || team_role) as team_sides,
+      min(confidence_score) as min_confidence,
+      sum(case when source_status in ('complete', 'partial') then 1 else 0 end) as usable_rows
+    from mlb_starting_pitcher_profile_v1_daily
+    where source_date=${sqlText(date)}
+  `)[0] || {}
+  const teamSides = Number(row.team_sides || 0)
+  const usableRows = Number(row.usable_rows || 0)
+  if (expectedTeamSides && teamSides < expectedTeamSides) {
+    fail(failures, 'sp1-team-side-coverage-low', {
+      expectedAtLeast: expectedTeamSides,
+      actualTeamSides: teamSides,
+      rows: Number(row.rows || 0)
+    })
+  }
+  if (expectedTeamSides && usableRows < expectedTeamSides) {
+    fail(failures, 'sp1-usable-row-coverage-low', {
+      expectedAtLeast: expectedTeamSides,
+      actualUsableRows: usableRows,
+      minConfidence: Number(row.min_confidence || 0)
+    })
+  }
+}
+
 const writeReport = async (date, report) => {
   await fs.mkdir(reportsRoot, { recursive: true })
   const filePath = path.join(reportsRoot, `audit_mlb_morning_contracts_${date}.json`)
@@ -301,6 +392,8 @@ const main = async () => {
   auditPublicSchema(games, failures)
   auditPredictionEligibility(games, failures)
   auditModernAddendumCoverage(date, games, failures)
+  auditCanonicalSplitFamilies(date, games, failures)
+  auditSp1Coverage(date, games, failures)
   auditDraftKingsMarkets(date, games, failures)
   auditRotowireProof(games, failures)
   auditStatMuse(date, games, failures)
