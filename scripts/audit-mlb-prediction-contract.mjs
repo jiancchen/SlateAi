@@ -94,6 +94,7 @@ const auditSourceStatus = (date) => {
     'fantasyinfocentral_daily_matchups',
     'fantasyinfocentral_umpire_factors',
     'fangraphs_roster_resource_bullpen_depth',
+    'espn_pitcher_splits',
     'mlb_env1',
     'mlb_rp2'
   ]

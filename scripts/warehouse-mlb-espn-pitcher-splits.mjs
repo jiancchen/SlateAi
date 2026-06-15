@@ -3,6 +3,8 @@ import path from 'node:path'
 import { execFileSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 
+import { writeMlbSourceStatus } from './lib/mlb-source-status.mjs'
+
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dbPath = path.join(rootDir, 'data-private/warehouse/sports/mlb/sql-mlb.db')
 const date = process.argv.includes('--date') ? process.argv[process.argv.indexOf('--date') + 1] : '2026-06-04'
@@ -218,6 +220,7 @@ sqliteExec(`
     primary key (snapshot_date, game_id, pitcher_id)
   )
 `)
+sqliteExec(`delete from mlb_pitcher_espn_splits where snapshot_date = ${sqlQuote(date)}`)
 
 mkdirp(rawDir)
 mkdirp(path.dirname(artifactPath))
@@ -310,5 +313,37 @@ fs.writeFileSync(
     2
   )}\n`
 )
+
+const statusCounts = rows.reduce((acc, row) => {
+  const key = row.sourceStatus || 'unknown'
+  acc[key] = (acc[key] || 0) + 1
+  return acc
+}, {})
+const fetchedStarters = rows.filter((row) => row.sourceStatus === 'fetched').length
+const missingStarters = Math.max(rows.length - fetchedStarters, 0)
+writeMlbSourceStatus({
+  dbPath,
+  sourceName: 'espn_pitcher_splits',
+  sourceFamily: 'pitcher-splits',
+  sourceDate: date,
+  runReason: 'daily-espn-pitcher-splits-warehouse',
+  requestedUrl: 'https://site.web.api.espn.com/apis/common/v3/sports/baseball/mlb/athletes/{espnId}/splits',
+  cacheStatus: 'network',
+  cacheTtlHours: 12,
+  status: fetchedStarters > 0 ? 'success' : 'missing',
+  completenessStatus: missingStarters > 0 ? (fetchedStarters > 0 ? 'partial' : 'missing') : 'complete',
+  expectedItemCount: rows.length,
+  actualItemCount: fetchedStarters,
+  missingItemCount: missingStarters,
+  unresolvedCount: missingStarters,
+  startedAt: fetchedAt,
+  finishedAt: new Date().toISOString(),
+  notes: {
+    artifactPath: path.relative(rootDir, artifactPath),
+    totalStarters: rows.length,
+    fetchedStarters,
+    statusCounts
+  }
+})
 
 console.log(`wrote ${path.relative(rootDir, artifactPath)}`)
