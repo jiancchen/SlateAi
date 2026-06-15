@@ -62,6 +62,14 @@ const sqlite = (sql) =>
 
 const sqliteExec = (sql) => execFileSync('sqlite3', [dbPath, sql], { encoding: 'utf8', maxBuffer: 1024 * 1024 * 60 })
 
+const parseJsonArray = (text) => {
+  const trimmed = String(text || '').trim()
+  if (!trimmed) return []
+  return JSON.parse(trimmed)
+}
+
+const sqliteJson = (sql) => parseJsonArray(sqlite(sql))
+
 const readJsonIfExists = (filePath) => {
   if (!filePath || !fs.existsSync(filePath)) return null
   try {
@@ -198,8 +206,31 @@ const priorArtifactRows = new Map(
 
 let priorDbRows = new Map()
 
-const starters = JSON.parse(
-  sqlite(`
+const starterPrioritySql = `
+  case
+    when sp.source_name = 'rotowire_primary' then 0
+    when sp.source_name = 'rotowire' and lower(coalesce(sp.confirmation_status, '')) like '%primary%' then 0
+    when sp.source_name = 'mlb_probables' and sp.confirmation_status = 'lineup_board_opposing_starter' then 1
+    when sp.source_name = 'mlb_game_feed' and sp.confirmation_status = 'probable' then 2
+    when sp.source_name = 'mlb_probables' then 3
+    when sp.source_name = 'sports.db:mlb_starting_pitchers' then 4
+    else 9
+  end
+`
+
+const starters = sqliteJson(`
+    with ranked_starters as (
+      select
+        sp.*,
+        row_number() over (
+          partition by sp.game_id, sp.team_id
+          order by
+            ${starterPrioritySql},
+            coalesce(sp.updated_at, '') desc,
+            sp.pitcher_id
+        ) as starter_rank
+      from starting_pitchers sp
+    )
     select
       g.game_id,
       g.game_date,
@@ -214,7 +245,7 @@ const starters = JSON.parse(
       p.mlb_player_id,
       p.player_id,
       sp.team_id
-    from starting_pitchers sp
+    from ranked_starters sp
     join games g on g.game_id = sp.game_id
     join teams away on away.team_id = g.away_team_id
     join teams home on home.team_id = g.home_team_id
@@ -223,9 +254,9 @@ const starters = JSON.parse(
     left join venues v on v.venue_id = g.venue_id
     join players p on p.player_id = sp.pitcher_id
     where g.game_date = ${sqlQuote(date)}
+      and sp.starter_rank = 1
     order by g.start_time_utc, p.name
   `)
-)
 
 sqliteExec(`
   create table if not exists mlb_pitcher_espn_splits (
@@ -247,14 +278,12 @@ sqliteExec(`
   )
 `)
 priorDbRows = new Map(
-  JSON.parse(
-    sqlite(`
+  sqliteJson(`
       select *
       from mlb_pitcher_espn_splits
       where snapshot_date = ${sqlQuote(date)}
         and source_status = 'fetched'
-    `)
-  ).map((row) => [
+    `).map((row) => [
     `${row.game_id}:${row.pitcher_id}`,
     {
       gameId: row.game_id,
