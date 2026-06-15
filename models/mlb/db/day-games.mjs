@@ -3,6 +3,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { activeMlbAppModelId, resolveMlbAppAdapter } from '../app-model.js'
 import { withMlbCausalLedgerContext } from '../lib/causal-ledger.mjs'
+import { loadMlbStarterProfileContextsFromDb } from '../lib/starter-profile-context.mjs'
 import { currentDayBoardForDate } from './queries.mjs'
 import { querySqlite } from './sqlite.mjs'
 
@@ -556,6 +557,7 @@ const loadDbContext = (date) => {
     [date],
     { maxBuffer: 1024 * 1024 * 30 }
   )
+  const starterProfileContexts = loadMlbStarterProfileContextsFromDb(date)
   const teamInningOffenseRows = querySqlite(
     `
     with inning_halves as (
@@ -682,6 +684,8 @@ const loadDbContext = (date) => {
       reliefProjectionRows,
       (row) => `${row.source_date}:${normalizeTeam(row.team_name)}`
     ),
+    starterProfileByGameId: starterProfileContexts.byGameId,
+    starterProfileByGamePk: starterProfileContexts.byGamePk,
     ficDailyMatchupRows,
     inningOffenseByTeamInning: indexBy(teamInningOffenseRows, (row) => `${row.team_id}:${row.inning}`),
     inningDefenseByTeamInning: indexBy(teamInningDefenseRows, (row) => `${row.team_id}:${row.inning}`),
@@ -1954,9 +1958,16 @@ const buildDbAddendumContext = (game, context, awayPitcher = null, homePitcher =
       context.reliefProjectionByDateTeam.get(`${game.game_date?.slice(0, 10)}:${normalizeTeam(game.home_team)}`) ||
       null
   )
+  const publicGameId = `${slugify(awayName)}-${slugify(homeName)}`
+  const starterProfileContext =
+    (gamePk ? context.starterProfileByGamePk?.[String(gamePk)] : null) ||
+    context.starterProfileByGameId?.[game.game_id] ||
+    context.starterProfileByGameId?.[publicGameId] ||
+    context.starterProfileByGameId?.[`${normalizeTeam(game.away_team)}|${normalizeTeam(game.home_team)}`] ||
+    null
 
   return {
-    id: `${slugify(awayName)}-${slugify(homeName)}`,
+    id: publicGameId,
     gamePk,
     awayTeam: awayName,
     homeTeam: homeName,
@@ -1973,7 +1984,8 @@ const buildDbAddendumContext = (game, context, awayPitcher = null, homePitcher =
     reliefProjectionContext: {
       away: awayReliefProjectionContext,
       home: homeReliefProjectionContext
-    }
+    },
+    starterProfileContext
   }
 }
 
@@ -2032,7 +2044,8 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
     parkContext,
     environmentAdjustmentContext,
     ficDailyMatchupContext,
-    reliefProjectionContext
+    reliefProjectionContext,
+    starterProfileContext
   } = buildDbAddendumContext(game, context, awayPitcher, homePitcher)
 
   const baseGame = {
@@ -2075,6 +2088,7 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
       home: relieverShadowByTeam[homeName] ?? null
     },
     reliefProjectionContext,
+    starterProfileContext,
     savantContext: {
       away: buildTeamSavantContext(awayTeamId, context),
       home: buildTeamSavantContext(homeTeamId, context)

@@ -2,7 +2,7 @@
   "id": "MLB-SP1",
   "sport": "mlb",
   "name": "MLB-SP1 starter pitcher profile addendum",
-  "status": "design-scaffold",
+  "status": "shadow-materialized",
   "role": "starter_profile_addendum",
   "consumedBy": [
     "MLB-M2"

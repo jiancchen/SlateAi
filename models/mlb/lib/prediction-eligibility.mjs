@@ -112,6 +112,7 @@ const addendumContext = (game = {}) => {
     environment: Boolean(game.environmentAdjustmentContext),
     ficDailyMatchups: Boolean(game.ficDailyMatchupContext),
     rp2: Boolean(game.reliefProjectionContext?.away && game.reliefProjectionContext?.home),
+    sp1: Boolean(game.starterProfileContext?.away && game.starterProfileContext?.home),
     bridgeChain: Boolean(game.bullpenChainContext?.away && game.bullpenChainContext?.home),
     relieverShadow: Boolean(game.relieverShadowContext?.away && game.relieverShadowContext?.home),
     firstFive: isFiniteNumber(totals.derivedFirst5TotalLine) ||
@@ -176,6 +177,7 @@ export const buildMlbPredictionEligibility = (game = {}, options = {}) => {
     if (!addendums.ficDailyMatchups) warnings.push('fic-daily-matchups-missing')
     if (!addendums.rp2) warnings.push('rp2-context-missing')
   }
+  if (!addendums.sp1) warnings.push('sp1-starter-profile-context-missing')
 
   const eligible = hardFailures.length === 0
   const status = eligible

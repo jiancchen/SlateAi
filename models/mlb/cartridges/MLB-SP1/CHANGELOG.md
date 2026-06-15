@@ -1,5 +1,22 @@
 # MLB-SP1 Changelog
 
+## MLB-SP1.2026-06-15.v0.1
+
+Status: shadow-materialized.
+
+Added the first daily SP1 materializer and audit gate.
+
+- New table: `mlb_starting_pitcher_profile_v1_daily`.
+- New build script: `npm run data:build:mlb-sp1 -- --date YYYY-MM-DD`.
+- New audit script: `npm run data:audit:mlb-sp1 -- --date YYYY-MM-DD`.
+- Morning runner now builds and audits SP1 immediately after canonical split-family warehousing.
+- SP1 now reads `mlb_player_split_family_snapshots` in both directions: pitcher allowed L/R splits versus the posted lineup handedness, and hitter L/R splits versus the projection pitcher's hand.
+- Profile scores include collapse risk, handedness fragility, day/night fragility, home/away fragility, weather/HRForce fragility, pitch-fit pressure, repeat-opponent tax, recent form, leash, command, first-inning risk, and shadow deltas for runs/hits/HR/walks/K/outs/YRFI.
+- M2 game objects now receive `starterProfileContext` from the DB read path and generated-file loader boundary.
+- Causal ledger now surfaces SP1 as `sp1StarterProfile`, using the opposing starter as the offense-side pressure signal.
+
+Promotion note: this version remains shadow/context. It does not directly override ML, F5, totals, YRFI/NRFI, props, or HR picks until the SP1 deltas are backtested and calibrated.
+
 ## MLB-SP1.2026-06-14.checklist
 
 Status: pre-implementation checklist.

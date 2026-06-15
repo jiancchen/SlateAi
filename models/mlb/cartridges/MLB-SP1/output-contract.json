@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "modelId": "MLB-SP1",
   "sport": "mlb",
-  "status": "design-scaffold",
+  "status": "shadow-materialized",
   "outputKind": "starter-pitcher-profile-addendum",
   "plannedWarehouseTable": "mlb_starting_pitcher_profile_v1_daily",
   "primaryKey": [

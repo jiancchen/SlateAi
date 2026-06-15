@@ -6,6 +6,7 @@ import { activeMlbAppModelId, resolveMlbAppAdapter } from '../../models/mlb/app-
 import { loadMlbDayGamesFromDb } from '../../models/mlb/db/day-games.mjs'
 import { withMlbCausalLedgerContext } from '../../models/mlb/lib/causal-ledger.mjs'
 import { withMlbPredictionEligibility } from '../../models/mlb/lib/prediction-eligibility.mjs'
+import { loadMlbStarterProfileContextsFromDb } from '../../models/mlb/lib/starter-profile-context.mjs'
 import { parkContextByHomeTeam } from '../../web/src/lib/day-2026-05-13-mlb-data.js'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -179,7 +180,9 @@ const buildGenericMlbGame = (
     bullpenChainByTeam,
     relieverShadowByTeam,
     lineupBoardsByGameId,
-    lineupMatchupContextByGameId
+    lineupMatchupContextByGameId,
+    starterProfileContextsByGameId,
+    starterProfileContextsByGamePk
   }
 ) => {
   const slateDate = raw.slateDate ?? raw.metadata?.slateDate ?? null
@@ -240,6 +243,11 @@ const buildGenericMlbGame = (
       home: relieverShadowByTeam[raw.home] ?? null
     },
     reliefProjectionContext: raw.reliefProjectionContext ?? null,
+    starterProfileContext:
+      raw.starterProfileContext ??
+      (Number.isFinite(Number(raw.gamePk)) ? starterProfileContextsByGamePk?.[String(Number(raw.gamePk))] : null) ??
+      starterProfileContextsByGameId?.[raw.id] ??
+      null,
     savantContext: {
       away: teamSavantContextByTeam[raw.away] ?? null,
       home: teamSavantContextByTeam[raw.home] ?? null
@@ -298,6 +306,7 @@ export const loadMlbDayGames = async (date) => {
       (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-reliever-shadow.js`))) ?? {}
     const storyModule =
       (await importMaybeFresh(path.join(rootDir, 'web', 'src', 'lib', `mlb-story-context-${date}.js`))) ?? {}
+    const starterProfileContexts = loadMlbStarterProfileContextsFromDb(date)
 
     const rawGames = dataModule.rawGames ?? []
     const dependencies = {
@@ -309,7 +318,9 @@ export const loadMlbDayGames = async (date) => {
       bullpenChainByTeam: dataModule.bullpenChainByTeam ?? {},
       relieverShadowByTeam: relieverShadowModule.relieverShadowByTeam ?? {},
       lineupBoardsByGameId: lineupModule.lineupBoardsByGameId ?? {},
-      lineupMatchupContextByGameId: lineupModule.lineupMatchupContextByGameId ?? {}
+      lineupMatchupContextByGameId: lineupModule.lineupMatchupContextByGameId ?? {},
+      starterProfileContextsByGameId: starterProfileContexts.byGameId ?? {},
+      starterProfileContextsByGamePk: starterProfileContexts.byGamePk ?? {}
     }
 
     const rawIdCounts = new Map()

@@ -232,6 +232,14 @@ const main = async () => {
     'run', 'data:audit:mlb-player-split-families', '--', '--date', date
   ], { dryRun }))
 
+  steps.push(run('Build MLB-SP1 starter-collapse profiles from canonical splits', 'npm', [
+    'run', 'data:build:mlb-sp1', '--', '--date', date
+  ], { dryRun }))
+
+  steps.push(run('Audit MLB-SP1 starter-collapse profile coverage', 'npm', [
+    'run', 'data:audit:mlb-sp1', '--', '--date', date
+  ], { dryRun }))
+
   steps.push(run('Refresh DraftKings MLB lines before final preflight', 'npm', [
     'run', 'data:fetch:draftkings-mlb', '--', '--date', date
   ], { dryRun }))

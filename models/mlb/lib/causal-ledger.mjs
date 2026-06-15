@@ -513,6 +513,71 @@ const buildOpenerPrimaryDelta = ({ game = {}, side = 'away' }) => {
   }
 }
 
+const buildSp1Delta = ({ game = {}, side = 'away' }) => {
+  const pitcherSide = opponentSide(side)
+  const profile = game.starterProfileContext?.[pitcherSide] || null
+  if (!profile) {
+    return {
+      source: 'MLB-SP1',
+      sourceStatus: 'missing',
+      note: 'No SP1 starter profile attached for the opposing projection pitcher.'
+    }
+  }
+
+  const scores = profile.scores || {}
+  const deltas = profile.expectedDeltas || {}
+  return {
+    source: 'MLB-SP1',
+    sourceStatus: profile.sourceStatus || 'present',
+    modelVersion: profile.modelVersion || '',
+    mode: 'shadow',
+    offenseReadsOpposingPitcherSide: pitcherSide,
+    pitcherName: profile.pitcherName || '',
+    pitcherTeam: profile.teamName || '',
+    pitcherThrows: profile.pitcherThrows || '',
+    pitcherRole: profile.pitcherRole || '',
+    collapseRiskScore: round(scores.collapseRisk, 1),
+    starterProfileScore: round(scores.starterProfile, 1),
+    handednessFragilityScore: round(scores.handednessFragility, 1),
+    weatherFragilityScore: round(scores.weatherFragility, 1),
+    pitchMixFitScore: round(scores.pitchMixFit, 1),
+    firstInningRiskScore: round(scores.firstInningRisk, 1),
+    repeatOpponentTaxScore: round(scores.repeatOpponentTax, 1),
+    offenseRunDelta: round(deltas.runsAllowed, 2),
+    offenseHitDelta: round(deltas.hitsAllowed, 2),
+    offenseHrDelta: round(deltas.hrAllowed, 2),
+    yrfiProbabilityDelta: round(deltas.yrfiProbabilityPct, 2),
+    expectedOutsDeltaForPitcher: round(deltas.outs, 2),
+    splitSummary: profile.splitProfile
+      ? {
+          weightedHitterSplitOps: round(profile.splitProfile.weightedHitterSplitOps, 3),
+          weightedPitcherAllowedOps: round(profile.splitProfile.weightedPitcherAllowedOps, 3),
+          topThirdHitterSplitOps: round(profile.splitProfile.topThirdHitterSplitOps, 3),
+          lineupCounts: profile.splitProfile.lineupCounts || null,
+          strongSplitBats: array(profile.splitProfile.strongSplitBats).slice(0, 3),
+          weakSplitBats: array(profile.splitProfile.weakSplitBats).slice(0, 3)
+        }
+      : null,
+    weatherProfile: profile.weatherProfile
+      ? {
+          hrForce: round(profile.weatherProfile.hrForce, 2),
+          note: profile.weatherProfile.note || '',
+          runEnvironmentSignal: profile.weatherProfile.runEnvironmentSignal || ''
+        }
+      : null,
+    dayNightProfile: profile.dayNightProfile
+      ? {
+          selectedKey: profile.dayNightProfile.selectedKey || '',
+          selected: profile.dayNightProfile.selected || null,
+          fragilityScore: round(profile.dayNightProfile.fragilityScore, 1)
+        }
+      : null,
+    reasons: array(profile.reasons).slice(0, 5),
+    flags: array(profile.flags),
+    note: 'SP1 reads the opposing starter as an offense pressure/collapse signal. It is shadow context until promoted by backtest.'
+  }
+}
+
 const buildMarketDelta = (game = {}) => {
   const moneylineValue = findMarketValue(game, /^Moneyline$/i)
   const moneylineOdds = parseMoneylinePair(moneylineValue)
@@ -616,6 +681,7 @@ const buildTeamLedger = ({ game = {}, side = 'away', envDelta = null }) => {
   const hrForceDelta = buildHrForceDelta({ game, side })
   const rp2Delta = buildRp2Delta({ game, side })
   const openerPrimaryDelta = buildOpenerPrimaryDelta({ game, side })
+  const sp1Delta = buildSp1Delta({ game, side })
 
   return {
     side,
@@ -628,7 +694,8 @@ const buildTeamLedger = ({ game = {}, side = 'away', envDelta = null }) => {
       hrForce: hrForceDelta,
       env1: envDelta,
       rp2: rp2Delta,
-      openerPrimary: openerPrimaryDelta
+      openerPrimary: openerPrimaryDelta,
+      sp1StarterProfile: sp1Delta
     },
     topPositiveFactors: playerFactors
       .filter((player) => Number.isFinite(num(player.matchupScore, null)))
@@ -664,6 +731,7 @@ export const buildMlbCausalLedgerContext = (game = {}) => {
     game.ficDailyMatchupContext ? 'FantasyInfoCentral Daily Matchups' : null,
     game.environmentAdjustmentContext ? 'MLB-ENV1' : null,
     game.reliefProjectionContext?.away || game.reliefProjectionContext?.home ? 'MLB-RP2' : null,
+    game.starterProfileContext?.away || game.starterProfileContext?.home ? 'MLB-SP1' : null,
     game.odds ? 'market board' : null,
     game.analysis?.mlbProjection ? 'MLB-M2 projection' : null
   ].filter(Boolean)
@@ -680,7 +748,8 @@ export const buildMlbCausalLedgerContext = (game = {}) => {
       splits: 'Handedness split OPS/AVG sharpens the existing batter-starter kernel; it does not replace recent form, season baseline, pitch fit, or BvP context.',
       bvpH2h: 'BvP/H2H remains a separate lane. Undated aggregate rows are context-only with scoreImpact 0 until dated recent samples are available.',
       hrForce: 'HRForce feeds carry, total/YRFI, and pitcher-collapse pressure; high HRForce is not a reliable under-support signal.',
-      rp2: 'RP2 is a team-side bullpen path projection. Use for late scoring risk, bridge stress, and bullpen-path warnings, not exact first reliever identity.'
+      rp2: 'RP2 is a team-side bullpen path projection. Use for late scoring risk, bridge stress, and bullpen-path warnings, not exact first reliever identity.',
+      sp1: 'SP1 is the starter or bulk-primary pitcher-collapse profile. It blends canonical L/R splits, day/night, home/away, pitch fit, repeat opponent, recent form, and ENV1 carry as shadow deltas until promoted by backtest.'
     },
     gameDeltas: {
       env1: envDelta,
@@ -710,6 +779,7 @@ export const buildMlbCausalLedgerContext = (game = {}) => {
       hasBvpH2hLedger: away.coverage.playersWithBvpH2h > 0 || home.coverage.playersWithBvpH2h > 0,
       hasEnv1Ledger: envDelta.sourceStatus === 'present',
       hasRp2Ledger: Boolean(game.reliefProjectionContext?.away && game.reliefProjectionContext?.home),
+      hasSp1Ledger: Boolean(game.starterProfileContext?.away && game.starterProfileContext?.home),
       hasProjectionLedger: Boolean(game.analysis?.mlbProjection)
     }
   }

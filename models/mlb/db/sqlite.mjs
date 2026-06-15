@@ -30,7 +30,7 @@ export const bindSql = (sql, params = []) => {
 export const querySqlite = (sql, params = [], options = {}) => {
   const dbPath = options.dbPath || mlbSqlitePath
   const boundSql = bindSql(sql, params)
-  const raw = execFileSync('sqlite3', ['-json', dbPath, boundSql], {
+  const raw = execFileSync('sqlite3', ['-json', '-cmd', '.timeout 30000', dbPath, boundSql], {
     cwd: rootDir,
     encoding: 'utf8',
     maxBuffer: options.maxBuffer || 1024 * 1024 * 20
@@ -49,4 +49,3 @@ export const sqliteTableCount = (tableName, options = {}) => {
   const row = queryOneSqlite(`select count(*) as count from ${safeName}`, [], options)
   return Number(row?.count || 0)
 }
-
