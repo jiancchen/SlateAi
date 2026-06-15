@@ -999,8 +999,17 @@ const buildCareerProfile = (row = {}) =>
       }
     : null
 
-const buildLineupPlayer = (row, context) => {
-  const raw = parseJson(row.split_source_detail_json)?.raw_json || {}
+const richLineupRawFromMatchup = (row = null) => {
+  if (!row) return {}
+  const sourceDetail = parseJson(row.source_detail_json) || {}
+  const details = parseJson(row.details_json) || {}
+  return sourceDetail.source_payload || sourceDetail.raw_json || details.source_payload || details.raw_json || {}
+}
+
+const buildLineupPlayer = (row, context, matchupRow = null) => {
+  const splitRaw = parseJson(row.split_source_detail_json)?.raw_json || {}
+  const richRaw = richLineupRawFromMatchup(matchupRow)
+  const raw = Object.keys(richRaw).length ? richRaw : splitRaw
   const split = raw.split || splitObjectFromRow(row)
   const classic = context.classicByPlayerId.get(row.player_id)
   const batterSeason = context.batterSeasonByPlayerId.get(row.player_id)
@@ -1021,12 +1030,19 @@ const buildLineupPlayer = (row, context) => {
     season,
     recent,
     split,
+    espnHitterSplit: raw.espnHitterSplit || null,
+    espnHitterSplits: raw.espnHitterSplits || null,
     metrics: raw.metrics || {},
     pitchType: raw.pitchType || null,
+    matchupKernel: raw.matchupKernel || null,
     statcastTrend: raw.statcastTrend || buildStatcastTrend(statcast),
     careerProfile: raw.careerProfile || buildCareerProfile(career),
     approachState: buildApproachState(deviations),
-    summary: raw.summary || ''
+    opponentContext: raw.opponentContext || null,
+    tags: raw.tags || [],
+    primaryTag: raw.primaryTag || null,
+    summary: raw.summary || '',
+    matchupNote: raw.matchupNote || ''
   }
 }
 
@@ -1315,7 +1331,8 @@ const buildLineupBoardSide = ({ game, teamId, opponentPitcher, opponentTeamId, c
   const matchupRows = context.lineupMatchupsByGameTeam.get(`${game.game_id}:${teamId}`) || []
   const firstRow = lineupRows[0]
   const reliefRows = context.reliefByTeamId.get(opponentTeamId) || []
-  const lineup = lineupRows.map((row) => buildLineupPlayer(row, context))
+  const matchupByHitterId = new Map(matchupRows.map((row) => [String(row.hitter_id), row]))
+  const lineup = lineupRows.map((row) => buildLineupPlayer(row, context, matchupByHitterId.get(String(row.player_id)) || null))
   return {
     teamName: shortTeamName(firstRow?.team_name || ''),
     lineupSource: 'typed-db',

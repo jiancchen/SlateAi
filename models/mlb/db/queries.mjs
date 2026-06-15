@@ -165,6 +165,35 @@ export const marketCoverageForDate = (date) => {
 export const startingPitchersForDate = (date) => {
   return querySqlite(
     `
+    with ranked_starters as (
+      select
+        sp.*,
+        case
+          when sp.source_name = 'rotowire_primary' then 0
+          when sp.source_name = 'rotowire' and lower(coalesce(sp.confirmation_status, '')) like '%primary%' then 0
+          when sp.source_name = 'mlb_probables' and sp.confirmation_status = 'lineup_board_opposing_starter' then 1
+          when sp.source_name = 'mlb_game_feed' and sp.confirmation_status = 'probable' then 2
+          when sp.source_name = 'mlb_probables' then 3
+          when sp.source_name = 'sports.db:mlb_starting_pitchers' then 4
+          else 9
+        end as source_priority,
+        row_number() over (
+          partition by sp.game_id, sp.team_id
+          order by
+            case
+              when sp.source_name = 'rotowire_primary' then 0
+              when sp.source_name = 'rotowire' and lower(coalesce(sp.confirmation_status, '')) like '%primary%' then 0
+              when sp.source_name = 'mlb_probables' and sp.confirmation_status = 'lineup_board_opposing_starter' then 1
+              when sp.source_name = 'mlb_game_feed' and sp.confirmation_status = 'probable' then 2
+              when sp.source_name = 'mlb_probables' then 3
+              when sp.source_name = 'sports.db:mlb_starting_pitchers' then 4
+              else 9
+            end,
+            coalesce(sp.updated_at, '') desc,
+            sp.pitcher_id
+        ) as starter_rank
+      from starting_pitchers sp
+    )
     select
       sp.game_id,
       sp.team_id,
@@ -175,13 +204,19 @@ export const startingPitchersForDate = (date) => {
       players.throws,
       sp.confirmation_status,
       sp.source_name,
+      sp.source_priority,
+      case
+        when sp.source_priority <= 1 then 'primary-bulk'
+        when sp.source_name = 'mlb_game_feed' then 'mlb-listed-starter'
+        else coalesce(sp.confirmation_status, 'probable')
+      end as starter_role,
       sp.updated_at
-    from starting_pitchers sp
+    from ranked_starters sp
     join games g on g.game_id = sp.game_id
     join teams on teams.team_id = sp.team_id
     join players on players.player_id = sp.pitcher_id
     where g.game_date like ?
-      and sp.source_name = 'mlb_probables'
+      and sp.starter_rank = 1
     order by g.start_time_utc, teams.name
     `,
     [`${date}%`]
