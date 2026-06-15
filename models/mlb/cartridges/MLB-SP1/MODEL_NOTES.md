@@ -11,9 +11,11 @@ The point is to stop treating the starter as one flat ERA/WHIP object. The same 
 - Warehouse target: `mlb_starting_pitcher_profile_v1_daily`
 - Promotion state: not active as a scoring override yet
 
-SP1 v0.1 is built by `npm run data:build:mlb-sp1 -- --date YYYY-MM-DD` and audited by `npm run data:audit:mlb-sp1 -- --date YYYY-MM-DD`.
+SP1 v0.1 is built by `npm run data:build:mlb-sp1 -- --date YYYY-MM-DD`, audited by `npm run data:audit:mlb-sp1 -- --date YYYY-MM-DD`, and shadow-backtested by `npm run data:backtest:mlb-sp1 -- --date YYYY-MM-DD`.
 
 The materialized context is attached to M2 game objects as `starterProfileContext` and to the causal ledger as `sp1StarterProfile`. It explains and audits starter-collapse pressure before it is allowed to change public pick confidence directly.
+
+First one-day shadow backtest, June 14: 28/28 starter/profile rows matched to actual pitcher appearances. HR delta direction was 15/21, but collapse risk was 4/8, runs delta was 6/16, and hits delta was 6/19. Treat that as a promotion block, not a verdict. SP1 needs a larger settled window and lane-specific calibration before it can move confidence or picks directly.
 
 Before promotion or backtests begin, use the checklist in:
 
@@ -84,3 +86,9 @@ Run SP1 shadow over settled slates before promotion:
 - High-HRForce games where the board promoted unders.
 
 Promotion requires a bucketed improvement without damaging the low-HRForce/starter-duel bucket that is already useful.
+
+Current promotion read:
+
+- Keep SP1 shadow-only until at least a multi-slate settled sample is available.
+- Promote HR-related deltas first only if the larger sample preserves the June 14 HR signal.
+- Do not promote collapse risk, run delta, or hit delta until low-risk collapse misses and high-risk survival misses are explained by role, leash, weather persistence, and lineup context.
