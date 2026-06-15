@@ -94,6 +94,7 @@ const auditSourceStatus = (date) => {
     'fantasyinfocentral_daily_matchups',
     'fantasyinfocentral_umpire_factors',
     'fangraphs_roster_resource_bullpen_depth',
+    'statmuse_starter_vs_team',
     'espn_pitcher_splits',
     'mlb_env1',
     'mlb_rp2'
@@ -182,6 +183,10 @@ const auditAddendumCoverage = (date, gameCount) => {
     from mlb_fic_daily_matchups
     where source_date=${sqlText(date)}
     union all
+    select 'statmuse_starter_vs_team' as source, count(*) as rows
+    from mlb_starter_vs_team_statmuse
+    where snapshot_date=${sqlText(date)}
+    union all
     select 'espn_pitcher_splits' as source, count(*) as rows
     from mlb_pitcher_espn_splits
     where snapshot_date=${sqlText(date)}
@@ -192,6 +197,7 @@ const auditAddendumCoverage = (date, gameCount) => {
     rp2: teamSideCount,
     fic_weather: gameCount,
     fic_daily_matchups: gameCount,
+    statmuse_starter_vs_team: teamSideCount,
     espn_pitcher_splits: teamSideCount
   }
   const hardFailures = []
