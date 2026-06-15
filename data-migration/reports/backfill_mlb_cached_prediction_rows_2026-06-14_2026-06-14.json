@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-06-15T04:05:51.488Z",
+  "script": "data-migration/scripts/backfill_mlb_cached_prediction_rows.mjs",
+  "db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "start": "2026-06-14",
+  "end": "2026-06-14",
+  "dry_run": false,
+  "dates": [
+    {
+      "date": "2026-06-14",
+      "rows": 761,
+      "lane_counts": {
+        "ml_shape": 14,
+        "first_inning": 14,
+        "first5_ml": 12,
+        "first5_total": 9,
+        "full_total": 9,
+        "player_prop": 691,
+        "home_run": 12
+      },
+      "game_artifacts": 14,
+      "prop_rows": 691,
+      "prop_sources": [
+        "web/public/data/slates/2026-06-14/props.json"
+      ],
+      "home_run_rows": 12,
+      "home_run_sources": [
+        "web/public/data/slates/2026-06-14/home-runs.json"
+      ]
+    }
+  ],
+  "planned_prediction_rows": 761,
+  "lane_counts": {
+    "ml_shape": 14,
+    "first_inning": 14,
+    "first5_ml": 12,
+    "first5_total": 9,
+    "full_total": 9,
+    "player_prop": 691,
+    "home_run": 12
+  },
+  "final_prediction_rows": 760,
+  "before_prediction_rows": 19677,
+  "after_prediction_rows": 20438,
+  "sample_rows": [
+    {
+      "prediction_row_id": "pred-b9a7b75902793219bed2c649d91135d7",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Astros",
+      "confidence": 64
+    },
+    {
+      "prediction_row_id": "pred-3f115288975274ca651aed07a63d65b0",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "NRFI",
+      "confidence": 69.4
+    },
+    {
+      "prediction_row_id": "pred-845445f44db82198e5134c3b3916c2a0",
+      "lane": "first5_ml",
+      "market_type": "first5_moneyline",
+      "selection": "Astros",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-e380d3e5f19f72bb6d4bdbae5ac90dc0",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Braves",
+      "confidence": 63
+    },
+    {
+      "prediction_row_id": "pred-6bdd1cb55ae51b2bad0c7af4d0cb0732",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "NRFI",
+      "confidence": 53.3
+    },
+    {
+      "prediction_row_id": "pred-5386d0361a4b5190ffde5b4dd38e1c8f",
+      "lane": "first5_ml",
+      "market_type": "first5_moneyline",
+      "selection": "Braves",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-814fcd3afd532ed1a9c42237ccc034cc",
+      "lane": "first5_total",
+      "market_type": "first5_total",
+      "selection": "Over 4.5",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-e1d113d0bf79aa0f236ea46ab53db09a",
+      "lane": "ml_shape",
+      "market_type": "moneyline",
+      "selection": "Cardinals",
+      "confidence": 65
+    },
+    {
+      "prediction_row_id": "pred-eb7167f9ff603ae15717e1e4ad53967f",
+      "lane": "first_inning",
+      "market_type": "yrfi_nrfi",
+      "selection": "YRFI",
+      "confidence": 84.2
+    },
+    {
+      "prediction_row_id": "pred-99ba6be5823f5d98ae1580b88f3e6dbc",
+      "lane": "first5_ml",
+      "market_type": "first5_moneyline",
+      "selection": "Cardinals",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-595207aad273a2389b4f37737cdb3770",
+      "lane": "first5_total",
+      "market_type": "first5_total",
+      "selection": "Over 5.5",
+      "confidence": null
+    },
+    {
+      "prediction_row_id": "pred-9c3795147a00ee62c0075bd4b903667b",
+      "lane": "full_total",
+      "market_type": "game_total",
+      "selection": "Over 9.5",
+      "confidence": null
+    }
+  ],
+  "ok": true
+}

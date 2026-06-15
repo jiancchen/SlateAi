@@ -1,0 +1,207 @@
+{
+  "audit": "mlb-not-started-side-coherence",
+  "date": "2026-06-14",
+  "base": "https://slate-web-static-1.vercel.app",
+  "generatedAt": "2026-06-14T18:25:27.653Z",
+  "cutoffMinutes": 675,
+  "gamesAudited": 4,
+  "status": "pass",
+  "hardFailures": [],
+  "warnings": [],
+  "games": [
+    {
+      "gameId": "rockies-athletics",
+      "title": "Rockies @ Athletics",
+      "start": "12:05 PM PT",
+      "startMinutes": 725,
+      "pick": "Athletics",
+      "tier": "Swingy",
+      "confidence": 65,
+      "modelEdge": 6.2,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Thin ML shape",
+        "runDiff": 0.9,
+        "projectedTotalRuns": 11.5,
+        "confidence": 65
+      },
+      "projectedRuns": {
+        "away": 5.3,
+        "home": 6.2
+      },
+      "projectedHits": {
+        "away": 9.9,
+        "home": 11.9
+      },
+      "phases": {
+        "full": "Athletics",
+        "first5": "Athletics",
+        "late": "Athletics",
+        "bridge": "Athletics"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": false,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "No taxed ML; require early conversion or better live price",
+        "reasons": []
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": false,
+      "tierOnePassFlag": false,
+      "tierOneRawPassFlag": false,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "gameId": "cubs-giants",
+      "title": "Cubs @ Giants",
+      "start": "12:10 PM PT",
+      "startMinutes": 730,
+      "pick": "Giants",
+      "tier": "Pass",
+      "confidence": 52,
+      "modelEdge": 0.1,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Playable ML shape",
+        "runDiff": 1.3,
+        "projectedTotalRuns": 10.1,
+        "confidence": 52
+      },
+      "projectedRuns": {
+        "away": 4.4,
+        "home": 5.7
+      },
+      "projectedHits": {
+        "away": 8.7,
+        "home": 12
+      },
+      "phases": {
+        "full": "Giants",
+        "first5": "Giants",
+        "late": "Giants",
+        "bridge": "Cubs"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": true,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "Giants first-five side",
+        "reasons": [
+          "best expression is Giants first-five side",
+          "Giants is still sitting at the confidence floor",
+          "full-game model edge is thin (2.3)"
+        ]
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": true,
+      "tierOnePassFlag": false,
+      "tierOneRawPassFlag": false,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "gameId": "rays-angels",
+      "title": "Rays @ Angels",
+      "start": "1:07 PM PT",
+      "startMinutes": 787,
+      "pick": "Rays",
+      "tier": "Swingy",
+      "confidence": 63,
+      "modelEdge": 9.9,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Separated ML shape",
+        "runDiff": 2.1,
+        "projectedTotalRuns": 8.7,
+        "confidence": 63
+      },
+      "projectedRuns": {
+        "away": 5.4,
+        "home": 3.3
+      },
+      "projectedHits": {
+        "away": 10.5,
+        "home": 7
+      },
+      "phases": {
+        "full": "Rays",
+        "first5": "Rays",
+        "late": "Rays",
+        "bridge": "Rays"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": false,
+        "promoteFullGameSide": true,
+        "confidenceFloor": 63,
+        "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
+        "reasons": [
+          "Rays owns full game, first five, late, and bridge phases",
+          "Rays projects 2.1 runs better",
+          "Rays owns a 2.8-hit edge"
+        ]
+      },
+      "sideCoherencePromoteFlag": true,
+      "sideCoherencePassFlag": false,
+      "tierOnePassFlag": false,
+      "tierOneRawPassFlag": true,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": [
+        "separated-all-phase-side-promoted"
+      ]
+    },
+    {
+      "gameId": "rangers-red-sox",
+      "title": "Rangers @ Red Sox",
+      "start": "4:20 PM PT",
+      "startMinutes": 980,
+      "pick": "Rangers",
+      "tier": "Pass",
+      "confidence": 52,
+      "modelEdge": 0.1,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Playable ML shape",
+        "runDiff": 0.9,
+        "projectedTotalRuns": 7.9,
+        "confidence": 52
+      },
+      "projectedRuns": {
+        "away": 4.4,
+        "home": 3.5
+      },
+      "projectedHits": {
+        "away": 8.5,
+        "home": 7.2
+      },
+      "phases": {
+        "full": "Rangers",
+        "first5": "Rangers",
+        "late": "Rangers",
+        "bridge": "Rangers"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": true,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
+        "reasons": [
+          "best expression is Full-game side only if early traffic appears; live entry preferred",
+          "Rangers is still sitting at the confidence floor",
+          "full-game model edge is thin (1.7)"
+        ]
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": true,
+      "tierOnePassFlag": false,
+      "tierOneRawPassFlag": false,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": []
+    }
+  ]
+}

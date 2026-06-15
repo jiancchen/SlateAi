@@ -15,41 +15,41 @@
     {
       "side": "Away",
       "name": "Rangers",
-      "detail": "Jack Leiter (RHP) | 3-5 | 4.69 ERA | 76 SO | 1.37 WHIP | 71.0 IP"
+      "detail": "Jack Leiter (RHP) | 3-6 | 4.97 ERA | 79 SO | 1.41 WHIP | 76.0 IP"
     },
     {
       "side": "Home",
       "name": "Red Sox",
-      "detail": "Sonny Gray (RHP) | 7-1 | 3.20 ERA | 44 SO | 1.24 WHIP | 56.1 IP"
+      "detail": "Sonny Gray (RHP) | 8-1 | 3.03 ERA | 51 SO | 1.20 WHIP | 62.1 IP"
     }
   ],
   "summary": "Rangers @ Red Sox with Jack Leiter against Sonny Gray.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Rangers +116 / Red Sox -140 | o8.5 -108 / u8.5 -112 | Rangers +1.5 -187 / Red Sox -1.5 +154 | F5 Rangers -110 / Red Sox -120 / o4.5 -110 / u4.5 -120.",
+    "Current board: Rangers -118 / Red Sox -110 | o9.5 +102 / u9.5 -133 | Rangers -1.5 +137 / Red Sox +1.5 -180 | F5 Rangers -110 / Red Sox -120 / o4.5 -110 / u4.5 -120.",
     "Jack Leiter vs Sonny Gray."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
   "teamContext": {
     "away": {
       "divisionLeader": false,
-      "divisionRank": "2",
-      "gamesBack": "1.0",
-      "losses": 34,
-      "runDifferential": 16,
-      "streakCode": "W2",
-      "winningPercentage": ".500",
+      "divisionRank": "3",
+      "gamesBack": "2.0",
+      "losses": 35,
+      "runDifferential": 7,
+      "streakCode": "L1",
+      "winningPercentage": ".493",
       "wins": 34
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "5",
-      "gamesBack": "13.5",
+      "gamesBack": "12.5",
       "losses": 39,
-      "runDifferential": -14,
-      "streakCode": "L4",
-      "winningPercentage": ".409",
-      "wins": 27
+      "runDifferential": -5,
+      "streakCode": "W1",
+      "winningPercentage": ".418",
+      "wins": 28
     }
   },
   "parkContext": {
@@ -134,6 +134,156 @@
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
   },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Rangers @ Red Sox",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "TEX",
+    "homeTeamCode": "BOS",
+    "label": "Rangers @ Red Sox",
+    "sourceStatus": "warehouse",
+    "rowCount": 16,
+    "pitcherName": "S. Gray",
+    "gameContexts": [
+      "@ 1 TEX BOS"
+    ],
+    "averageHrForce": 1.5,
+    "maxHrForce": 1.5,
+    "highHrForceRows": 16,
+    "extremeHrForceRows": 0,
+    "highHrForceSharePct": 100,
+    "qualityAbPct": 28.4,
+    "hardHitPct": 10.7,
+    "matchupPassRows": 2,
+    "topRows": [
+      {
+        "playerName": "K. Higashioka",
+        "pitcherName": "S. Gray",
+        "position": "C",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 50,
+        "hardHitPct": 33,
+        "recentOps": 0.817,
+        "bvpAtBats": 6,
+        "bvpAvg": 0.333,
+        "bvpOps": 0.833,
+        "matchupPass": true
+      },
+      {
+        "playerName": "C. Seager",
+        "pitcherName": "S. Gray",
+        "position": "SS",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 64,
+        "hardHitPct": 29,
+        "recentOps": 0.797,
+        "bvpAtBats": 12,
+        "bvpAvg": 0.25,
+        "bvpOps": 0.69,
+        "matchupPass": false
+      },
+      {
+        "playerName": "B. Nimmo",
+        "pitcherName": "S. Gray",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 47,
+        "hardHitPct": 27,
+        "recentOps": 0.955,
+        "bvpAtBats": 13,
+        "bvpAvg": 0.385,
+        "bvpOps": 0.852,
+        "matchupPass": true
+      },
+      {
+        "playerName": "C. Rafaela",
+        "pitcherName": "J. Leiter",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 50,
+        "hardHitPct": 25,
+        "recentOps": 0.688,
+        "bvpAtBats": 3,
+        "bvpAvg": 0.333,
+        "bvpOps": 1.167,
+        "matchupPass": false
+      },
+      {
+        "playerName": "W. Abreu",
+        "pitcherName": "J. Leiter",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 40,
+        "hardHitPct": 20,
+        "recentOps": 0.313,
+        "bvpAtBats": 4,
+        "bvpAvg": 0.25,
+        "bvpOps": 0.65,
+        "matchupPass": false
+      },
+      {
+        "playerName": "E. Duran",
+        "pitcherName": "S. Gray",
+        "position": "3B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 20,
+        "hardHitPct": 20,
+        "recentOps": 0.929,
+        "bvpAtBats": 5,
+        "bvpAvg": 0.2,
+        "bvpOps": 0.4,
+        "matchupPass": false
+      }
+    ],
+    "awayOffense": {
+      "label": "Rangers hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "Red Sox hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
+  },
   "offenseContext": {
     "away": {
       "hitsPerGame": 7.67442,
@@ -177,7 +327,7 @@
       "teamName": "Rangers",
       "source": "MLB-RP2",
       "chainSource": "MLB-RP2",
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectionOnly": true,
       "identityConfidence": "low",
@@ -201,6 +351,30 @@
           "usedDaysLast6": 2,
           "unavailable": false,
           "shadowSharePct": 21.2,
+          "source": "MLB-RP2",
+          "projectionSource": "fangraphs_roster_resource",
+          "identityConfidence": "low",
+          "projectionOnly": true
+        },
+        {
+          "name": "Cal Quantrill",
+          "pitcherName": "Cal Quantrill",
+          "pitcherId": null,
+          "role": "LR",
+          "throws": "R",
+          "expectedOuts": 4.6,
+          "availabilityScore": 88.4,
+          "bridgeScore": 75.2,
+          "fatigueScore": 11.6,
+          "firstRelieverLikelihood": 67.9,
+          "workedYesterday": false,
+          "backToBack": false,
+          "pitchesLast3": 0,
+          "pitchesLast6": 39,
+          "usedDaysLast3": 0,
+          "usedDaysLast6": 1,
+          "unavailable": false,
+          "shadowSharePct": 20.4,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -231,30 +405,6 @@
           "projectionOnly": true
         },
         {
-          "name": "Cal Quantrill",
-          "pitcherName": "Cal Quantrill",
-          "pitcherId": null,
-          "role": "LR",
-          "throws": "R",
-          "expectedOuts": 4.6,
-          "availabilityScore": 88.4,
-          "bridgeScore": 75.2,
-          "fatigueScore": 11.6,
-          "firstRelieverLikelihood": 67.9,
-          "workedYesterday": false,
-          "backToBack": false,
-          "pitchesLast3": 0,
-          "pitchesLast6": 39,
-          "usedDaysLast3": 0,
-          "usedDaysLast6": 1,
-          "unavailable": false,
-          "shadowSharePct": 20.2,
-          "source": "MLB-RP2",
-          "projectionSource": "fangraphs_roster_resource",
-          "identityConfidence": "low",
-          "projectionOnly": true
-        },
-        {
           "name": "Peyton Gray",
           "pitcherName": "Peyton Gray",
           "pitcherId": null,
@@ -272,7 +422,7 @@
           "usedDaysLast3": 1,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "shadowSharePct": 20.1,
+          "shadowSharePct": 20,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -288,7 +438,7 @@
       "fatigueScore": 32.6,
       "qualityScore": 83.4,
       "runRiskTier": "fresh_bridge",
-      "topTwoSharePct": 41.5,
+      "topTwoSharePct": 41.6,
       "lead": {
         "pitcherName": "Tyler Alexander",
         "pitcherId": null,
@@ -308,7 +458,7 @@
       "teamName": "Red Sox",
       "source": "MLB-RP2",
       "chainSource": "MLB-RP2",
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectionOnly": true,
       "identityConfidence": "low",
@@ -331,7 +481,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 1,
           "unavailable": false,
-          "shadowSharePct": 22.1,
+          "shadowSharePct": 22,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -355,7 +505,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "shadowSharePct": 21.8,
+          "shadowSharePct": 21.9,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -379,7 +529,7 @@
           "usedDaysLast3": 1,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "shadowSharePct": 20.4,
+          "shadowSharePct": 20.3,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -442,7 +592,7 @@
   },
   "reliefProjectionContext": {
     "away": {
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectedReliefRunsAllowed": 0.642,
       "projectedReliefOuts": 10.37,
@@ -452,7 +602,7 @@
       "fatigueScore": 32.6,
       "qualityScore": 83.4,
       "runRiskTier": "fresh_bridge",
-      "topTwoSharePct": 41.5,
+      "topTwoSharePct": 41.6,
       "lead": {
         "pitcherName": "Tyler Alexander",
         "pitcherId": null,
@@ -482,6 +632,7 @@
           "score": 71.717,
           "firstUpBaseScore": 71.707,
           "firstUpTrendAdjustment": 0.01,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -511,7 +662,104 @@
             "sixPlusRate": 0.4,
             "startsSample": 10
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Boston Red Sox",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 6,
+            "leftHandedBatters": 3,
+            "rawRightHandedBatters": 5,
+            "rawLeftHandedBatters": 3,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 60,
+              "leftPa": 55,
+              "rightDamageAllowed": 0.443,
+              "leftDamageAllowed": 0.403,
+              "splitEdge": 0.04
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 21.2
+        },
+        {
+          "pitcherId": null,
+          "pitcherName": "Cal Quantrill",
+          "playerKey": "fg:19312",
+          "role": "LR",
+          "source": "fangraphs_roster_resource",
+          "throws": "R",
+          "availabilityScore": 88.4,
+          "bridgeScore": 75.2,
+          "fatigueScore": 11.6,
+          "firstRelieverLikelihood": 67.9,
+          "expectedOuts": 4.6,
+          "workedYesterday": false,
+          "backToBack": false,
+          "pitchesLast3": 0,
+          "pitchesLast6": 39,
+          "usedDaysLast3": 0,
+          "usedDaysLast6": 1,
+          "unavailable": false,
+          "score": 69.017,
+          "firstUpBaseScore": 67.931,
+          "firstUpTrendAdjustment": 0.56,
+          "firstUpLineupMatchupAdjustment": 0.526,
+          "firstUpRestPenalty": 0,
+          "starterLeashAdjustment": 0,
+          "firstUpTrend": {
+            "firstUpLast3": 0,
+            "firstUpLast5": 1,
+            "firstUpLast10": 1,
+            "firstUpRecencyScore": 0.6,
+            "lastFirstUpDate": "2026-06-06",
+            "sameStarterFirstUps": 1
+          },
+          "restContext": null,
+          "starterLeashContext": {
+            "status": "standard_leash",
+            "pitcherId": 683004,
+            "pitcherName": "Jack Leiter",
+            "expectedStarterOuts": 16.4,
+            "shortStartRate": 0.2,
+            "leashScore": 60.3,
+            "sixPlusRate": 0.4,
+            "startsSample": 10
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Boston Red Sox",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 5,
+            "rawLeftHandedBatters": 3,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 48,
+              "leftPa": 40,
+              "rightDamageAllowed": 0.266,
+              "leftDamageAllowed": 0.438,
+              "splitEdge": 0.172
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.25,
+            "splitStrength": 0.956,
+            "fit": true,
+            "reason": "Fresh reliever split fits R-heavy opponent pocket."
+          },
+          "shadowSharePct": 20.4
         },
         {
           "pitcherId": null,
@@ -535,6 +783,7 @@
           "score": 68.716,
           "firstUpBaseScore": 68.676,
           "firstUpTrendAdjustment": 0.04,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -556,52 +805,31 @@
             "sixPlusRate": 0.4,
             "startsSample": 10
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Boston Red Sox",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 5,
+            "rawLeftHandedBatters": 3,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 17,
+              "leftPa": 13,
+              "rightDamageAllowed": 0.726,
+              "leftDamageAllowed": 0.542,
+              "splitEdge": 0.184
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 20.3
-        },
-        {
-          "pitcherId": null,
-          "pitcherName": "Cal Quantrill",
-          "playerKey": "fg:19312",
-          "role": "LR",
-          "source": "fangraphs_roster_resource",
-          "throws": "R",
-          "availabilityScore": 88.4,
-          "bridgeScore": 75.2,
-          "fatigueScore": 11.6,
-          "firstRelieverLikelihood": 67.9,
-          "expectedOuts": 4.6,
-          "workedYesterday": false,
-          "backToBack": false,
-          "pitchesLast3": 0,
-          "pitchesLast6": 39,
-          "usedDaysLast3": 0,
-          "usedDaysLast6": 1,
-          "unavailable": false,
-          "score": 68.491,
-          "firstUpBaseScore": 67.931,
-          "firstUpTrendAdjustment": 0.56,
-          "firstUpRestPenalty": 0,
-          "starterLeashAdjustment": 0,
-          "firstUpTrend": {
-            "firstUpLast3": 0,
-            "firstUpLast5": 1,
-            "firstUpLast10": 1,
-            "firstUpRecencyScore": 0.6,
-            "lastFirstUpDate": "2026-06-06",
-            "sameStarterFirstUps": 1
-          },
-          "restContext": null,
-          "starterLeashContext": {
-            "status": "standard_leash",
-            "pitcherId": 683004,
-            "pitcherName": "Jack Leiter",
-            "expectedStarterOuts": 16.4,
-            "shortStartRate": 0.2,
-            "leashScore": 60.3,
-            "sixPlusRate": 0.4,
-            "startsSample": 10
-          },
-          "shadowSharePct": 20.2
         },
         {
           "pitcherId": null,
@@ -625,6 +853,7 @@
           "score": 67.941,
           "firstUpBaseScore": 67.531,
           "firstUpTrendAdjustment": 0.41,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -654,7 +883,31 @@
             "sixPlusRate": 0.4,
             "startsSample": 10
           },
-          "shadowSharePct": 20.1
+          "lineupMatchupContext": {
+            "opponentTeamName": "Boston Red Sox",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 5,
+            "rawLeftHandedBatters": 3,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 49,
+              "leftPa": 32,
+              "rightDamageAllowed": 0.424,
+              "leftDamageAllowed": 0.297,
+              "splitEdge": 0.128
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
+          "shadowSharePct": 20
         },
         {
           "pitcherId": null,
@@ -678,6 +931,7 @@
           "score": 61.689,
           "firstUpBaseScore": 61.689,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": null,
@@ -700,6 +954,30 @@
             "sixPlusRate": 0.4,
             "startsSample": 10
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Boston Red Sox",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 5,
+            "rawLeftHandedBatters": 3,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 56,
+              "leftPa": 41,
+              "rightDamageAllowed": 0.182,
+              "leftDamageAllowed": 0.334,
+              "splitEdge": 0.152
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 18.2
         }
       ],
@@ -712,7 +990,7 @@
       "confidenceScore": 90
     },
     "home": {
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectedReliefRunsAllowed": 0.833,
       "projectedReliefOuts": 8.97,
@@ -749,9 +1027,10 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 1,
           "unavailable": false,
-          "score": 80.238,
+          "score": 79.888,
           "firstUpBaseScore": 79.678,
           "firstUpTrendAdjustment": 0.56,
+          "firstUpLineupMatchupAdjustment": -0.35,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -773,7 +1052,34 @@
             "sixPlusRate": 0.444,
             "startsSample": 9
           },
-          "shadowSharePct": 22.1
+          "lineupMatchupContext": {
+            "opponentTeamName": "Texas Rangers",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 5,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 18,
+              "leftPa": 27,
+              "rightDamageAllowed": 0.503,
+              "leftDamageAllowed": 0.315,
+              "splitEdge": 0.188
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.25,
+            "splitStrength": 1,
+            "fit": false,
+            "reason": "Opponent pocket leans R, away from pitcher better split side L."
+          },
+          "shadowSharePct": 22
         },
         {
           "pitcherId": null,
@@ -794,9 +1100,10 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "score": 79.141,
+          "score": 79.691,
           "firstUpBaseScore": 78.281,
           "firstUpTrendAdjustment": 0.86,
+          "firstUpLineupMatchupAdjustment": 0.55,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -818,7 +1125,34 @@
             "sixPlusRate": 0.444,
             "startsSample": 9
           },
-          "shadowSharePct": 21.8
+          "lineupMatchupContext": {
+            "opponentTeamName": "Texas Rangers",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 5,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 16,
+              "leftPa": 10,
+              "rightDamageAllowed": 0.313,
+              "leftDamageAllowed": 0.605,
+              "splitEdge": 0.293
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.25,
+            "splitStrength": 1,
+            "fit": true,
+            "reason": "Fresh reliever split fits R-heavy opponent pocket."
+          },
+          "shadowSharePct": 21.9
         },
         {
           "pitcherId": null,
@@ -839,9 +1173,10 @@
           "usedDaysLast3": 1,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "score": 73.962,
+          "score": 73.904,
           "firstUpBaseScore": 73.932,
           "firstUpTrendAdjustment": 0.03,
+          "firstUpLineupMatchupAdjustment": -0.058,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -871,7 +1206,34 @@
             "sixPlusRate": 0.444,
             "startsSample": 9
           },
-          "shadowSharePct": 20.4
+          "lineupMatchupContext": {
+            "opponentTeamName": "Texas Rangers",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 5,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 76,
+              "leftPa": 27,
+              "rightDamageAllowed": 0.472,
+              "leftDamageAllowed": 0.426,
+              "splitEdge": 0.046
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.25,
+            "splitStrength": 0.256,
+            "fit": false,
+            "reason": "Opponent pocket leans R, away from pitcher better split side L."
+          },
+          "shadowSharePct": 20.3
         },
         {
           "pitcherId": null,
@@ -895,6 +1257,7 @@
           "score": 72.242,
           "firstUpBaseScore": 71.952,
           "firstUpTrendAdjustment": 0.29,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -924,6 +1287,30 @@
             "sixPlusRate": 0.444,
             "startsSample": 9
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Texas Rangers",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 5,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": null,
+            "pitcherSplitSample": {
+              "rightPa": 6,
+              "leftPa": 5,
+              "rightDamageAllowed": 0.5,
+              "leftDamageAllowed": 0.48,
+              "splitEdge": null
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher split sample is too thin for a handedness adjustment."
+          },
           "shadowSharePct": 19.9
         },
         {
@@ -948,6 +1335,7 @@
           "score": 57.663,
           "firstUpBaseScore": 57.663,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": null,
@@ -969,6 +1357,30 @@
             "leashScore": 41.4,
             "sixPlusRate": 0.444,
             "startsSample": 9
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Texas Rangers",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 5,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 30,
+              "leftPa": 19,
+              "rightDamageAllowed": 0.683,
+              "leftDamageAllowed": 0.616,
+              "splitEdge": 0.068
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
           },
           "shadowSharePct": 15.9
         }
@@ -2849,71 +3261,71 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 68,
-          "noRunProbabilityPct": 32,
-          "awayRunProbabilityPct": 52.3,
-          "homeRunProbabilityPct": 32.9,
+          "runProbabilityPct": 73.7,
+          "noRunProbabilityPct": 26.3,
+          "awayRunProbabilityPct": 57,
+          "homeRunProbabilityPct": 38.8,
           "lean": "Run",
           "strength": "strong",
           "sampleHalves": 134,
           "caution": "",
-          "reason": "YRFI with a 68% modeled chance of at least one first-inning run. Rangers score 52.3% of the time and Red Sox 32.9% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "reason": "YRFI with a 74% modeled chance of at least one first-inning run. Rangers score 57% of the time and Red Sox 38.8% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.5 is embedded in the first-inning run probability.",
           "sourceModel": "M2 first-inning"
         },
         {
           "inning": 2,
           "phase": "M2 early F5",
-          "runProbabilityPct": 46.5,
-          "noRunProbabilityPct": 53.5,
-          "awayRunProbabilityPct": 24,
-          "homeRunProbabilityPct": 22.5,
+          "runProbabilityPct": 48.5,
+          "noRunProbabilityPct": 51.5,
+          "awayRunProbabilityPct": 25,
+          "homeRunProbabilityPct": 23.5,
           "lean": "No run",
           "strength": "m2-baseline",
           "sampleHalves": 134,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 4.3 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Rangers F5 runs 1.5; Red Sox F5 runs 2.5; Sonny Gray: HA 5.5, ER 2.5, win yes +189; Jack Leiter: HA 5.5, ER 2.5, win yes +178; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Rangers F5 runs 1.5; Red Sox F5 runs 2.5; Sonny Gray: HA 5.5, ER 2.5, win yes +189; Jack Leiter: HA 5.5, ER 2.5, win yes +178; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 3,
           "phase": "M2 early F5",
-          "runProbabilityPct": 54.9,
-          "noRunProbabilityPct": 45.1,
-          "awayRunProbabilityPct": 30.2,
-          "homeRunProbabilityPct": 24.7,
+          "runProbabilityPct": 57,
+          "noRunProbabilityPct": 43,
+          "awayRunProbabilityPct": 31.4,
+          "homeRunProbabilityPct": 25.6,
           "lean": "Run",
           "strength": "m2-baseline",
           "sampleHalves": 134,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 4.3 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Rangers F5 runs 1.5; Red Sox F5 runs 2.5; Sonny Gray: HA 5.5, ER 2.5, win yes +189; Jack Leiter: HA 5.5, ER 2.5, win yes +178; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Rangers F5 runs 1.5; Red Sox F5 runs 2.5; Sonny Gray: HA 5.5, ER 2.5, win yes +189; Jack Leiter: HA 5.5, ER 2.5, win yes +178; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 4,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 58.8,
-          "noRunProbabilityPct": 41.2,
-          "awayRunProbabilityPct": 27.6,
-          "homeRunProbabilityPct": 31.2,
+          "runProbabilityPct": 60.9,
+          "noRunProbabilityPct": 39.1,
+          "awayRunProbabilityPct": 28.6,
+          "homeRunProbabilityPct": 32.3,
           "lean": "Run",
-          "strength": "m2-baseline",
+          "strength": "m2-strong",
           "sampleHalves": 134,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 4.3 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Rangers F5 runs 1.5; Red Sox F5 runs 2.5; Sonny Gray: HA 5.5, ER 2.5, win yes +189; Jack Leiter: HA 5.5, ER 2.5, win yes +178; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Rangers F5 runs 1.5; Red Sox F5 runs 2.5; Sonny Gray: HA 5.5, ER 2.5, win yes +189; Jack Leiter: HA 5.5, ER 2.5, win yes +178; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 5,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 62.9,
-          "noRunProbabilityPct": 37.1,
-          "awayRunProbabilityPct": 34.9,
-          "homeRunProbabilityPct": 28,
+          "runProbabilityPct": 65.1,
+          "noRunProbabilityPct": 34.9,
+          "awayRunProbabilityPct": 36.1,
+          "homeRunProbabilityPct": 29,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 134,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 4.3 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Rangers F5 runs 1.5; Red Sox F5 runs 2.5; Sonny Gray: HA 5.5, ER 2.5, win yes +189; Jack Leiter: HA 5.5, ER 2.5, win yes +178; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Rangers F5 runs 1.5; Red Sox F5 runs 2.5; Sonny Gray: HA 5.5, ER 2.5, win yes +189; Jack Leiter: HA 5.5, ER 2.5, win yes +178; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -3080,7 +3492,7 @@
   },
   "lineupContext": {
     "Rangers": {
-      "averageMatchupGrade": 3.35,
+      "averageMatchupGrade": 3.3,
       "trackedBatters": 9,
       "starterThreatCount": 5,
       "contactCount": 1,
@@ -3094,17 +3506,17 @@
       "topThirdArsenalCount": 3,
       "heaterCount": 3,
       "suppressorCount": 2,
-      "platoonPressureIndex": 66.7,
+      "platoonPressureIndex": 66.9,
       "pitchTypePressureIndex": 94,
       "bullpenPitchTypePressureIndex": null,
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
-      "topThirdScore": 65.5,
+      "topThirdScore": 65.2,
       "depthScore": 80.2,
       "bullpenOverperformHitters": []
     },
     "Red Sox": {
-      "averageMatchupGrade": -1.48,
+      "averageMatchupGrade": -1.49,
       "trackedBatters": 9,
       "starterThreatCount": 3,
       "contactCount": 1,
@@ -3118,12 +3530,12 @@
       "topThirdArsenalCount": 0,
       "heaterCount": 2,
       "suppressorCount": 2,
-      "platoonPressureIndex": 50.3,
+      "platoonPressureIndex": 50.2,
       "pitchTypePressureIndex": 43.6,
       "bullpenPitchTypePressureIndex": null,
-      "starterPressureIndex": 21,
-      "overallPressureIndex": 21,
-      "topThirdScore": 23.8,
+      "starterPressureIndex": 20.8,
+      "overallPressureIndex": 20.8,
+      "topThirdScore": 23.6,
       "depthScore": 60.8,
       "bullpenOverperformHitters": []
     }
@@ -3131,7 +3543,7 @@
   "lineupBoard": {
     "gameId": "rangers-red-sox",
     "title": "Rangers @ Red Sox",
-    "snapshot": "2026-06-12T22:28:25.552Z",
+    "snapshot": "2026-06-12T23:24:53.075Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -3146,8 +3558,8 @@
       "label": "80°F | Wind 3 mph In | 11% precip"
     },
     "marketWeatherContext": {
-      "line": "BOS -134",
-      "total": "8.5 Runs",
+      "line": "TEX -139",
+      "total": "9.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -3158,9 +3570,9 @@
         "name": "Sonny Gray",
         "hand": "R",
         "type": "Balanced",
-        "inningsPitched": 56.333333333333336,
+        "inningsPitched": 57.333333333333336,
         "homeRunsAllowed": 6,
-        "homeRunsPerNine": 0.96,
+        "homeRunsPerNine": 0.94,
         "recentHomeRunsAllowed": 1,
         "recentHomeRunsAllowedPerStart": 0.2,
         "recentHomeRunsPerNine": 0.33,
@@ -3187,25 +3599,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 63,
-            "hits": 40,
-            "singles": 23,
+            "gamesPlayed": 64,
+            "hits": 41,
+            "singles": 24,
             "doubles": 7,
             "triples": 2,
             "homeRuns": 8,
             "walks": 28,
-            "totalBases": 75,
-            "atBats": 170,
-            "plateAppearances": 204,
-            "avg": 0.235,
-            "obp": 0.345,
-            "slg": 0.441,
-            "ops": 0.786,
-            "hitRate": 0.1961,
-            "singlesRate": 0.1127,
-            "hrRate": 0.0392,
-            "walkRate": 0.1373,
-            "totalBasesRate": 0.3676
+            "totalBases": 76,
+            "atBats": 171,
+            "plateAppearances": 205,
+            "avg": 0.24,
+            "obp": 0.348,
+            "slg": 0.444,
+            "ops": 0.792,
+            "hitRate": 0.2,
+            "singlesRate": 0.11710000000000001,
+            "hrRate": 0.039,
+            "walkRate": 0.1366,
+            "totalBasesRate": 0.37070000000000003
           },
           "recent": {
             "gamesPlayed": 10,
@@ -3251,11 +3663,11 @@
             "totalBasesRate": 0.3439
           },
           "metrics": {
-            "powerScore": 61,
-            "contactScore": 47.9,
-            "patienceScore": 71.9,
+            "powerScore": 61.3,
+            "contactScore": 48.4,
+            "patienceScore": 71.5,
             "formScore": 18,
-            "splitScore": 43.8,
+            "splitScore": 42.4,
             "varianceScore": 92,
             "pitchTypeFitScore": 65.3,
             "pitchTypeGrade": 3.2,
@@ -3386,7 +3798,7 @@
             "career power"
           ],
           "primaryTag": "split edge",
-          "summary": ".235 AVG | .786 OPS | 40 H | 8 HR | 10g: .067 AVG | .325 OPS | 2 H | 0 HR | vs RHP: .234 AVG | .755 OPS | 7 HR | career 4785 PA | .798 OPS | 226 HR | repeatable career power | power 75 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +3.2 | -8.0 matchup grade in a neutral lane",
+          "summary": ".240 AVG | .792 OPS | 41 H | 8 HR | 10g: .067 AVG | .325 OPS | 2 H | 0 HR | vs RHP: .234 AVG | .755 OPS | 7 HR | career 4785 PA | .798 OPS | 226 HR | repeatable career power | power 75 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +3.2 | -8.0 matchup grade in a neutral lane",
           "matchupNote": "-8.00 vs Sonny Gray"
         },
         {
@@ -3407,25 +3819,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 63,
-            "hits": 75,
-            "singles": 51,
+            "gamesPlayed": 64,
+            "hits": 76,
+            "singles": 52,
             "doubles": 16,
             "triples": 0,
             "homeRuns": 8,
             "walks": 19,
-            "totalBases": 115,
-            "atBats": 243,
-            "plateAppearances": 267,
-            "avg": 0.309,
-            "obp": 0.363,
-            "slg": 0.473,
-            "ops": 0.837,
-            "hitRate": 0.2809,
-            "singlesRate": 0.191,
-            "hrRate": 0.03,
-            "walkRate": 0.0712,
-            "totalBasesRate": 0.4307
+            "totalBases": 116,
+            "atBats": 244,
+            "plateAppearances": 268,
+            "avg": 0.311,
+            "obp": 0.366,
+            "slg": 0.475,
+            "ops": 0.841,
+            "hitRate": 0.2836,
+            "singlesRate": 0.19399999999999998,
+            "hrRate": 0.029900000000000003,
+            "walkRate": 0.0709,
+            "totalBasesRate": 0.4328
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3471,17 +3883,17 @@
             "totalBasesRate": 0.436
           },
           "metrics": {
-            "powerScore": 57.1,
-            "contactScore": 73.2,
-            "patienceScore": 44.4,
-            "formScore": 57.9,
-            "splitScore": 47.7,
-            "varianceScore": 38.1,
+            "powerScore": 57.4,
+            "contactScore": 73.4,
+            "patienceScore": 44.3,
+            "formScore": 57,
+            "splitScore": 46.8,
+            "varianceScore": 39.5,
             "pitchTypeFitScore": 88.2,
             "pitchTypeGrade": 5.78,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 84.4,
-            "matchupGrade": 7.12
+            "matchupScore": 83.5,
+            "matchupGrade": 6.94
           },
           "pitchType": {
             "fitScore": 88.2,
@@ -3605,8 +4017,8 @@
             "statcast fade"
           ],
           "primaryTag": "carry",
-          "summary": ".309 AVG | .837 OPS | 75 H | 8 HR | 12g: .320 AVG | .810 OPS | 16 H | 2 HR | vs RHP: .309 AVG | .830 OPS | 6 HR | career 1542 PA | .745 OPS | 56 HR | baseline career profile | power 66 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +5.8 | +7.1 matchup grade in a neutral lane",
-          "matchupNote": "+7.12 vs Sonny Gray"
+          "summary": ".311 AVG | .841 OPS | 76 H | 8 HR | 12g: .320 AVG | .810 OPS | 16 H | 2 HR | vs RHP: .309 AVG | .830 OPS | 6 HR | career 1542 PA | .745 OPS | 56 HR | baseline career profile | power 66 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +5.8 | +6.9 matchup grade in a neutral lane",
+          "matchupNote": "+6.94 vs Sonny Gray"
         },
         {
           "playerId": 607043,
@@ -3626,7 +4038,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 66,
+            "gamesPlayed": 67,
             "hits": 66,
             "singles": 44,
             "doubles": 13,
@@ -3634,17 +4046,17 @@
             "homeRuns": 7,
             "walks": 24,
             "totalBases": 104,
-            "atBats": 255,
-            "plateAppearances": 287,
-            "avg": 0.259,
-            "obp": 0.334,
-            "slg": 0.408,
-            "ops": 0.742,
-            "hitRate": 0.23,
-            "singlesRate": 0.1533,
-            "hrRate": 0.024399999999999998,
-            "walkRate": 0.0836,
-            "totalBasesRate": 0.3624
+            "atBats": 256,
+            "plateAppearances": 288,
+            "avg": 0.258,
+            "obp": 0.333,
+            "slg": 0.406,
+            "ops": 0.74,
+            "hitRate": 0.22920000000000001,
+            "singlesRate": 0.1528,
+            "hrRate": 0.024300000000000002,
+            "walkRate": 0.0833,
+            "totalBasesRate": 0.3611
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3690,12 +4102,12 @@
             "totalBasesRate": 0.3697
           },
           "metrics": {
-            "powerScore": 47.1,
-            "contactScore": 58.6,
-            "patienceScore": 53,
-            "formScore": 42.2,
-            "splitScore": 56.6,
-            "varianceScore": 54.3,
+            "powerScore": 46.9,
+            "contactScore": 57.9,
+            "patienceScore": 52.9,
+            "formScore": 42.8,
+            "splitScore": 57.2,
+            "varianceScore": 55.5,
             "pitchTypeFitScore": 90.2,
             "pitchTypeGrade": 6.91,
             "pitchTypeCoveragePct": 100,
@@ -3824,7 +4236,7 @@
             "statcast fade"
           ],
           "primaryTag": "carry",
-          "summary": ".259 AVG | .742 OPS | 66 H | 7 HR | 12g: .318 AVG | .830 OPS | 14 H | 0 HR | vs RHP: .262 AVG | .758 OPS | 6 HR | career 4615 PA | .799 OPS | 142 HR | baseline career profile | power 57 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +6.9 | +10.0 matchup grade in a neutral lane",
+          "summary": ".258 AVG | .740 OPS | 66 H | 7 HR | 12g: .318 AVG | .830 OPS | 14 H | 0 HR | vs RHP: .262 AVG | .758 OPS | 6 HR | career 4615 PA | .799 OPS | 142 HR | baseline career profile | power 57 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +6.9 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Sonny Gray"
         },
         {
@@ -3845,25 +4257,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 26,
-            "hits": 22,
-            "singles": 14,
+            "gamesPlayed": 27,
+            "hits": 23,
+            "singles": 15,
             "doubles": 4,
             "triples": 2,
             "homeRuns": 2,
             "walks": 6,
-            "totalBases": 36,
-            "atBats": 103,
-            "plateAppearances": 109,
-            "avg": 0.214,
-            "obp": 0.257,
-            "slg": 0.35,
-            "ops": 0.606,
-            "hitRate": 0.2018,
-            "singlesRate": 0.1284,
-            "hrRate": 0.0183,
-            "walkRate": 0.055,
-            "totalBasesRate": 0.33030000000000004
+            "totalBases": 37,
+            "atBats": 104,
+            "plateAppearances": 110,
+            "avg": 0.221,
+            "obp": 0.264,
+            "slg": 0.356,
+            "ops": 0.619,
+            "hitRate": 0.2091,
+            "singlesRate": 0.1364,
+            "hrRate": 0.0182,
+            "walkRate": 0.0545,
+            "totalBasesRate": 0.33640000000000003
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3909,17 +4321,17 @@
             "totalBasesRate": 0.33770000000000006
           },
           "metrics": {
-            "powerScore": 31.6,
-            "contactScore": 46.9,
-            "patienceScore": 39.2,
-            "formScore": 48.1,
-            "splitScore": 55,
-            "varianceScore": 66.4,
+            "powerScore": 32.3,
+            "contactScore": 47.7,
+            "patienceScore": 38.9,
+            "formScore": 45.4,
+            "splitScore": 52.2,
+            "varianceScore": 66.5,
             "pitchTypeFitScore": 61.8,
             "pitchTypeGrade": 2.05,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 41.4,
-            "matchupGrade": -2.4
+            "matchupScore": 38.6,
+            "matchupGrade": -2.92
           },
           "pitchType": {
             "fitScore": 61.8,
@@ -3961,8 +4373,8 @@
             "cold"
           ],
           "primaryTag": "arsenal edge",
-          "summary": ".214 AVG | .606 OPS | 22 H | 2 HR | 12g: .130 AVG | .504 OPS | 6 H | 2 HR | vs RHP: .247 AVG | .642 OPS | 1 HR | Career profile pending | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +2.0 | -2.4 matchup grade in a neutral lane",
-          "matchupNote": "-2.40 vs Sonny Gray"
+          "summary": ".221 AVG | .619 OPS | 23 H | 2 HR | 12g: .130 AVG | .504 OPS | 6 H | 2 HR | vs RHP: .247 AVG | .642 OPS | 1 HR | Career profile pending | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +2.0 | -2.9 matchup grade in a neutral lane",
+          "matchupNote": "-2.92 vs Sonny Gray"
         },
         {
           "playerId": 677649,
@@ -3982,7 +4394,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 60,
+            "gamesPlayed": 61,
             "hits": 58,
             "singles": 37,
             "doubles": 15,
@@ -3990,17 +4402,17 @@
             "homeRuns": 4,
             "walks": 16,
             "totalBases": 89,
-            "atBats": 196,
-            "plateAppearances": 216,
-            "avg": 0.296,
-            "obp": 0.349,
-            "slg": 0.454,
-            "ops": 0.803,
-            "hitRate": 0.2685,
-            "singlesRate": 0.17129999999999998,
-            "hrRate": 0.018500000000000003,
-            "walkRate": 0.0741,
-            "totalBasesRate": 0.41200000000000003
+            "atBats": 197,
+            "plateAppearances": 217,
+            "avg": 0.294,
+            "obp": 0.347,
+            "slg": 0.452,
+            "ops": 0.799,
+            "hitRate": 0.2673,
+            "singlesRate": 0.1705,
+            "hrRate": 0.0184,
+            "walkRate": 0.0737,
+            "totalBasesRate": 0.41009999999999996
           },
           "recent": {
             "gamesPlayed": 12,
@@ -4046,17 +4458,17 @@
             "totalBasesRate": 0.41859999999999997
           },
           "metrics": {
-            "powerScore": 43.8,
-            "contactScore": 58.4,
-            "patienceScore": 44.7,
-            "formScore": 48.8,
-            "splitScore": 46.8,
-            "varianceScore": 54.9,
+            "powerScore": 43.5,
+            "contactScore": 57.6,
+            "patienceScore": 44.6,
+            "formScore": 49.7,
+            "splitScore": 47.6,
+            "varianceScore": 55.4,
             "pitchTypeFitScore": 35.2,
             "pitchTypeGrade": -1.05,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 60.2,
-            "matchupGrade": 2.89
+            "matchupScore": 61,
+            "matchupGrade": 3.05
           },
           "pitchType": {
             "fitScore": 35.2,
@@ -4177,8 +4589,8 @@
             "statcast up"
           ],
           "primaryTag": "statcast up",
-          "summary": ".296 AVG | .803 OPS | 58 H | 4 HR | 12g: .364 AVG | .871 OPS | 16 H | 0 HR | vs RHP: .296 AVG | .786 OPS | 3 HR | career 1343 PA | .683 OPS | 26 HR | baseline career profile | power 42 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit -1.1 | +2.9 matchup grade in a neutral lane",
-          "matchupNote": "+2.89 vs Sonny Gray"
+          "summary": ".294 AVG | .799 OPS | 58 H | 4 HR | 12g: .364 AVG | .871 OPS | 16 H | 0 HR | vs RHP: .296 AVG | .786 OPS | 3 HR | career 1343 PA | .683 OPS | 26 HR | baseline career profile | power 42 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit -1.1 | +3.0 matchup grade in a neutral lane",
+          "matchupNote": "+3.05 vs Sonny Gray"
         },
         {
           "playerId": 694497,
@@ -4198,7 +4610,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 65,
+            "gamesPlayed": 66,
             "hits": 34,
             "singles": 20,
             "doubles": 6,
@@ -4206,17 +4618,17 @@
             "homeRuns": 6,
             "walks": 29,
             "totalBases": 62,
-            "atBats": 191,
-            "plateAppearances": 227,
-            "avg": 0.178,
-            "obp": 0.295,
-            "slg": 0.325,
-            "ops": 0.619,
-            "hitRate": 0.14980000000000002,
-            "singlesRate": 0.08810000000000001,
-            "hrRate": 0.0264,
-            "walkRate": 0.1278,
-            "totalBasesRate": 0.2731
+            "atBats": 192,
+            "plateAppearances": 228,
+            "avg": 0.177,
+            "obp": 0.293,
+            "slg": 0.323,
+            "ops": 0.616,
+            "hitRate": 0.1491,
+            "singlesRate": 0.0877,
+            "hrRate": 0.0263,
+            "walkRate": 0.1272,
+            "totalBasesRate": 0.27190000000000003
           },
           "recent": {
             "gamesPlayed": 12,
@@ -4262,17 +4674,17 @@
             "totalBasesRate": 0.31120000000000003
           },
           "metrics": {
-            "powerScore": 38.5,
-            "contactScore": 36.2,
-            "patienceScore": 70.7,
-            "formScore": 28.7,
-            "splitScore": 67.4,
-            "varianceScore": 57.3,
+            "powerScore": 38.3,
+            "contactScore": 35.6,
+            "patienceScore": 70.5,
+            "formScore": 29.4,
+            "splitScore": 68.1,
+            "varianceScore": 57.7,
             "pitchTypeFitScore": 49.7,
             "pitchTypeGrade": 1.04,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 52,
-            "matchupGrade": 0.67
+            "matchupScore": 52.6,
+            "matchupGrade": 0.79
           },
           "pitchType": {
             "fitScore": 49.7,
@@ -4395,8 +4807,8 @@
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".178 AVG | .619 OPS | 34 H | 6 HR | 12g: .250 AVG | .583 OPS | 8 H | 0 HR | vs RHP: .201 AVG | .692 OPS | 6 HR | career 656 PA | .715 OPS | 21 HR | baseline career profile | power 50 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +1.0 | +0.7 matchup grade in a neutral lane",
-          "matchupNote": "+0.67 vs Sonny Gray"
+          "summary": ".177 AVG | .616 OPS | 34 H | 6 HR | 12g: .250 AVG | .583 OPS | 8 H | 0 HR | vs RHP: .201 AVG | .692 OPS | 6 HR | career 656 PA | .715 OPS | 21 HR | baseline career profile | power 50 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +1.0 | +0.8 matchup grade in a neutral lane",
+          "matchupNote": "+0.79 vs Sonny Gray"
         },
         {
           "playerId": 669394,
@@ -4416,7 +4828,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 66,
+            "gamesPlayed": 67,
             "hits": 61,
             "singles": 38,
             "doubles": 12,
@@ -4481,7 +4893,7 @@
           },
           "metrics": {
             "powerScore": 60,
-            "contactScore": 47.1,
+            "contactScore": 46.8,
             "patienceScore": 45.7,
             "formScore": 92,
             "splitScore": 33.6,
@@ -4636,7 +5048,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 35,
+            "gamesPlayed": 36,
             "hits": 25,
             "singles": 18,
             "doubles": 3,
@@ -4701,11 +5113,11 @@
           },
           "metrics": {
             "powerScore": 47.3,
-            "contactScore": 38.2,
+            "contactScore": 37.8,
             "patienceScore": 56.3,
             "formScore": 85.1,
             "splitScore": 39.4,
-            "varianceScore": 57.2,
+            "varianceScore": 57.3,
             "pitchTypeFitScore": 49.3,
             "pitchTypeGrade": 1.25,
             "pitchTypeCoveragePct": 100,
@@ -4853,7 +5265,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 30,
+            "gamesPlayed": 32,
             "hits": 20,
             "singles": 16,
             "doubles": 2,
@@ -4918,7 +5330,7 @@
           },
           "metrics": {
             "powerScore": 34,
-            "contactScore": 49.3,
+            "contactScore": 48.5,
             "patienceScore": 38.8,
             "formScore": 82.3,
             "splitScore": 51.3,
@@ -5097,7 +5509,7 @@
         "summary": "BvP sample is mixed: Brandon Nimmo owns the cleanest history, but Nicky Lopez shows the coldest prior lane."
       },
       "aggregate": {
-        "averageMatchupGrade": 3.35,
+        "averageMatchupGrade": 3.3,
         "trackedBatters": 9,
         "starterThreatCount": 5,
         "contactCount": 1,
@@ -5111,12 +5523,12 @@
         "topThirdArsenalCount": 3,
         "heaterCount": 3,
         "suppressorCount": 2,
-        "platoonPressureIndex": 66.7,
+        "platoonPressureIndex": 66.9,
         "pitchTypePressureIndex": 94,
         "bullpenPitchTypePressureIndex": null,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
-        "topThirdScore": 65.5,
+        "topThirdScore": 65.2,
         "depthScore": 80.2,
         "bullpenOverperformHitters": []
       },
@@ -5144,14 +5556,14 @@
           },
           {
             "name": "Wyatt Langford",
-            "tag": "arsenal edge | -2.40 vs Sonny Gray"
+            "tag": "arsenal edge | -2.92 vs Sonny Gray"
           }
         ],
         "underperformNote": "Joc Pederson and Wyatt Langford carry the softer form or split fit into a balanced lane.",
         "overview": "Rangers can lean on Brandon Nimmo, Jake Burger, Nicky Lopez to drive early pressure against Sonny Gray.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-        "topThirdScore": 65.5,
-        "middleScore": 51.2,
+        "topThirdScore": 65.2,
+        "middleScore": 50.7,
         "depthScore": 80.2,
         "bullpenPitchTypeSummary": null
       }
@@ -5193,25 +5605,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 24,
+            "gamesPlayed": 25,
             "hits": 21,
             "singles": 17,
             "doubles": 3,
             "triples": 1,
             "homeRuns": 0,
-            "walks": 5,
+            "walks": 6,
             "totalBases": 26,
             "atBats": 77,
-            "plateAppearances": 85,
+            "plateAppearances": 86,
             "avg": 0.273,
-            "obp": 0.321,
+            "obp": 0.329,
             "slg": 0.338,
-            "ops": 0.659,
-            "hitRate": 0.24710000000000001,
-            "singlesRate": 0.2,
+            "ops": 0.667,
+            "hitRate": 0.24420000000000003,
+            "singlesRate": 0.1977,
             "hrRate": 0,
-            "walkRate": 0.0588,
-            "totalBasesRate": 0.3059
+            "walkRate": 0.0698,
+            "totalBasesRate": 0.3023
           },
           "recent": {
             "gamesPlayed": 10,
@@ -5258,16 +5670,16 @@
           },
           "metrics": {
             "powerScore": 18,
-            "contactScore": 58.8,
-            "patienceScore": 41.1,
+            "contactScore": 58.5,
+            "patienceScore": 45.2,
             "formScore": 18,
-            "splitScore": 69.7,
+            "splitScore": 68.7,
             "varianceScore": 92,
             "pitchTypeFitScore": 53.2,
             "pitchTypeGrade": 0.22,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 18.5,
-            "matchupGrade": -7.13
+            "matchupScore": 18,
+            "matchupGrade": -7.23
           },
           "pitchType": {
             "fitScore": 53.2,
@@ -5390,8 +5802,8 @@
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".273 AVG | .659 OPS | 21 H | 0 HR | 10g: .105 AVG | .255 OPS | 4 H | 0 HR | vs RHP: .311 AVG | .761 OPS | 0 HR | career 185 PA | .551 OPS | 2 HR | baseline career profile | power 17 | 2026 sample ok | arsenal 4-Seam Fastball 39% / Changeup 18% / Slider 17% | fit +0.2 | -7.1 matchup grade in a whiff-variance lane",
-          "matchupNote": "-7.13 vs Jack Leiter"
+          "summary": ".273 AVG | .667 OPS | 21 H | 0 HR | 10g: .105 AVG | .255 OPS | 4 H | 0 HR | vs RHP: .311 AVG | .761 OPS | 0 HR | career 185 PA | .551 OPS | 2 HR | baseline career profile | power 17 | 2026 sample ok | arsenal 4-Seam Fastball 39% / Changeup 18% / Slider 17% | fit +0.2 | -7.2 matchup grade in a whiff-variance lane",
+          "matchupNote": "-7.23 vs Jack Leiter"
         },
         {
           "playerId": 678882,
@@ -5411,7 +5823,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 63,
+            "gamesPlayed": 64,
             "hits": 63,
             "singles": 43,
             "doubles": 12,
@@ -5476,7 +5888,7 @@
           },
           "metrics": {
             "powerScore": 46.2,
-            "contactScore": 59.6,
+            "contactScore": 59.3,
             "patienceScore": 41.4,
             "formScore": 50.1,
             "splitScore": 40.3,
@@ -5628,7 +6040,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 65,
+            "gamesPlayed": 66,
             "hits": 69,
             "singles": 48,
             "doubles": 13,
@@ -5693,7 +6105,7 @@
           },
           "metrics": {
             "powerScore": 50.7,
-            "contactScore": 56.6,
+            "contactScore": 56.3,
             "patienceScore": 50,
             "formScore": 18,
             "splitScore": 37,
@@ -5846,7 +6258,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 64,
+            "gamesPlayed": 65,
             "hits": 64,
             "singles": 40,
             "doubles": 9,
@@ -5911,7 +6323,7 @@
           },
           "metrics": {
             "powerScore": 73.3,
-            "contactScore": 54.9,
+            "contactScore": 54.6,
             "patienceScore": 58.7,
             "formScore": 18,
             "splitScore": 33.8,
@@ -6066,7 +6478,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 61,
+            "gamesPlayed": 62,
             "hits": 52,
             "singles": 31,
             "doubles": 9,
@@ -6131,7 +6543,7 @@
           },
           "metrics": {
             "powerScore": 54.7,
-            "contactScore": 35.7,
+            "contactScore": 35.4,
             "patienceScore": 44.7,
             "formScore": 18,
             "splitScore": 58.2,
@@ -6285,7 +6697,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 60,
+            "gamesPlayed": 61,
             "hits": 39,
             "singles": 22,
             "doubles": 13,
@@ -6350,7 +6762,7 @@
           },
           "metrics": {
             "powerScore": 25.4,
-            "contactScore": 52.6,
+            "contactScore": 52.5,
             "patienceScore": 42.2,
             "formScore": 92,
             "splitScore": 45.6,
@@ -6503,7 +6915,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 41,
+            "gamesPlayed": 42,
             "hits": 26,
             "singles": 21,
             "doubles": 4,
@@ -6568,7 +6980,7 @@
           },
           "metrics": {
             "powerScore": 18.9,
-            "contactScore": 65.7,
+            "contactScore": 65.4,
             "patienceScore": 51.8,
             "formScore": 18,
             "splitScore": 63.6,
@@ -6723,7 +7135,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 59,
+            "gamesPlayed": 60,
             "hits": 38,
             "singles": 28,
             "doubles": 7,
@@ -6788,7 +7200,7 @@
           },
           "metrics": {
             "powerScore": 23,
-            "contactScore": 48.3,
+            "contactScore": 48.1,
             "patienceScore": 43.7,
             "formScore": 92,
             "splitScore": 31.9,
@@ -6942,7 +7354,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 26,
+            "gamesPlayed": 27,
             "hits": 19,
             "singles": 11,
             "doubles": 8,
@@ -7007,7 +7419,7 @@
           },
           "metrics": {
             "powerScore": 22,
-            "contactScore": 54.1,
+            "contactScore": 53.7,
             "patienceScore": 48.5,
             "formScore": 58.8,
             "splitScore": 71.8,
@@ -7149,7 +7561,7 @@
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": -1.48,
+        "averageMatchupGrade": -1.49,
         "trackedBatters": 9,
         "starterThreatCount": 3,
         "contactCount": 1,
@@ -7163,12 +7575,12 @@
         "topThirdArsenalCount": 0,
         "heaterCount": 2,
         "suppressorCount": 2,
-        "platoonPressureIndex": 50.3,
+        "platoonPressureIndex": 50.2,
         "pitchTypePressureIndex": 43.6,
         "bullpenPitchTypePressureIndex": null,
-        "starterPressureIndex": 21,
-        "overallPressureIndex": 21,
-        "topThirdScore": 23.8,
+        "starterPressureIndex": 20.8,
+        "overallPressureIndex": 20.8,
+        "topThirdScore": 23.6,
         "depthScore": 60.8,
         "bullpenOverperformHitters": []
       },
@@ -7202,7 +7614,7 @@
         "underperformNote": "Wilyer Abreu and Jarren Duran carry the softer form or split fit into a volatile bat-misser lane.",
         "overview": "Red Sox can lean on Caleb Durbin, Marcelo Mayer, Connor Wong to drive early pressure against Jack Leiter.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-        "topThirdScore": 23.8,
+        "topThirdScore": 23.6,
         "middleScore": 47.7,
         "depthScore": 60.8,
         "bullpenPitchTypeSummary": null
@@ -7215,15 +7627,15 @@
       "fullName": "Jack Leiter",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 5,
-      "era": "4.69",
-      "strikeOuts": 76,
-      "inningsPitched": "71.0",
-      "hitsAllowed": 66,
-      "walks": 31,
-      "homeRunsAllowed": 11,
-      "whip": "1.37",
-      "gamesStarted": 13,
+      "losses": 6,
+      "era": "4.97",
+      "strikeOuts": 79,
+      "inningsPitched": "76.0",
+      "hitsAllowed": 74,
+      "walks": 33,
+      "homeRunsAllowed": 12,
+      "whip": "1.41",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 683004,
@@ -12327,16 +12739,16 @@
       "id": 543243,
       "fullName": "Sonny Gray",
       "pitchHand": "R",
-      "wins": 7,
+      "wins": 8,
       "losses": 1,
-      "era": "3.20",
-      "strikeOuts": 44,
-      "inningsPitched": "56.1",
-      "hitsAllowed": 54,
+      "era": "3.03",
+      "strikeOuts": 51,
+      "inningsPitched": "62.1",
+      "hitsAllowed": 59,
       "walks": 16,
       "homeRunsAllowed": 6,
-      "whip": "1.24",
-      "gamesStarted": 11,
+      "whip": "1.20",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 543243,
@@ -17788,17 +18200,17 @@
       {
         "label": "Spread",
         "book": "DraftKings typed MLB board",
-        "value": "Rangers +1.5 -187 / Red Sox -1.5 +154"
+        "value": "Rangers -1.5 +137 / Red Sox +1.5 -180"
       },
       {
         "label": "Total",
         "book": "DraftKings typed MLB board",
-        "value": "o8.5 -108 / u8.5 -112"
+        "value": "o9.5 +102 / u9.5 -133"
       },
       {
         "label": "Moneyline",
         "book": "DraftKings typed MLB board",
-        "value": "Rangers +116 / Red Sox -140"
+        "value": "Rangers -118 / Red Sox -110"
       },
       {
         "label": "1st 5 ML",
@@ -17820,24 +18232,24 @@
       "index": 0,
       "role": "Away",
       "name": "Rangers",
-      "detail": "Jack Leiter (RHP) | 3-5 | 4.69 ERA | 76 SO | 1.37 WHIP | 71.0 IP",
-      "americanOdds": 116,
-      "americanLabel": "+116",
-      "decimalOdds": 2.16,
-      "impliedProbability": 0.46296296296296297,
-      "impliedProbabilityLabel": "46.3%"
+      "detail": "Jack Leiter (RHP) | 3-6 | 4.97 ERA | 79 SO | 1.41 WHIP | 76.0 IP",
+      "americanOdds": -118,
+      "americanLabel": "-118",
+      "decimalOdds": 1.847457627118644,
+      "impliedProbability": 0.5412844036697247,
+      "impliedProbabilityLabel": "54.1%"
     },
     {
       "id": "rangers-red-sox:1",
       "index": 1,
       "role": "Home",
       "name": "Red Sox",
-      "detail": "Sonny Gray (RHP) | 7-1 | 3.20 ERA | 44 SO | 1.24 WHIP | 56.1 IP",
-      "americanOdds": -140,
-      "americanLabel": "-140",
-      "decimalOdds": 1.7142857142857144,
-      "impliedProbability": 0.5833333333333334,
-      "impliedProbabilityLabel": "58.3%"
+      "detail": "Sonny Gray (RHP) | 8-1 | 3.03 ERA | 51 SO | 1.20 WHIP | 62.1 IP",
+      "americanOdds": -110,
+      "americanLabel": "-110",
+      "decimalOdds": 1.9090909090909092,
+      "impliedProbability": 0.5238095238095238,
+      "impliedProbabilityLabel": "52.4%"
     }
   ],
   "moneyline": {
@@ -17850,24 +18262,24 @@
         "index": 0,
         "role": "Away",
         "name": "Rangers",
-        "detail": "Jack Leiter (RHP) | 3-5 | 4.69 ERA | 76 SO | 1.37 WHIP | 71.0 IP",
-        "americanOdds": 116,
-        "americanLabel": "+116",
-        "decimalOdds": 2.16,
-        "impliedProbability": 0.46296296296296297,
-        "impliedProbabilityLabel": "46.3%"
+        "detail": "Jack Leiter (RHP) | 3-6 | 4.97 ERA | 79 SO | 1.41 WHIP | 76.0 IP",
+        "americanOdds": -118,
+        "americanLabel": "-118",
+        "decimalOdds": 1.847457627118644,
+        "impliedProbability": 0.5412844036697247,
+        "impliedProbabilityLabel": "54.1%"
       },
       {
         "id": "rangers-red-sox:1",
         "index": 1,
         "role": "Home",
         "name": "Red Sox",
-        "detail": "Sonny Gray (RHP) | 7-1 | 3.20 ERA | 44 SO | 1.24 WHIP | 56.1 IP",
-        "americanOdds": -140,
-        "americanLabel": "-140",
-        "decimalOdds": 1.7142857142857144,
-        "impliedProbability": 0.5833333333333334,
-        "impliedProbabilityLabel": "58.3%"
+        "detail": "Sonny Gray (RHP) | 8-1 | 3.03 ERA | 51 SO | 1.20 WHIP | 62.1 IP",
+        "americanOdds": -110,
+        "americanLabel": "-110",
+        "decimalOdds": 1.9090909090909092,
+        "impliedProbability": 0.5238095238095238,
+        "impliedProbabilityLabel": "52.4%"
       }
     ]
   },
@@ -17879,77 +18291,77 @@
       "index": 0,
       "role": "Away",
       "name": "Rangers",
-      "detail": "Jack Leiter (RHP) | 3-5 | 4.69 ERA | 76 SO | 1.37 WHIP | 71.0 IP",
-      "americanOdds": 116,
-      "americanLabel": "+116",
-      "decimalOdds": 2.16,
-      "impliedProbability": 0.46296296296296297,
-      "impliedProbabilityLabel": "46.3%"
+      "detail": "Jack Leiter (RHP) | 3-6 | 4.97 ERA | 79 SO | 1.41 WHIP | 76.0 IP",
+      "americanOdds": -118,
+      "americanLabel": "-118",
+      "decimalOdds": 1.847457627118644,
+      "impliedProbability": 0.5412844036697247,
+      "impliedProbabilityLabel": "54.1%"
     },
     "opponent": {
       "id": "rangers-red-sox:1",
       "index": 1,
       "role": "Home",
       "name": "Red Sox",
-      "detail": "Sonny Gray (RHP) | 7-1 | 3.20 ERA | 44 SO | 1.24 WHIP | 56.1 IP",
-      "americanOdds": -140,
-      "americanLabel": "-140",
-      "decimalOdds": 1.7142857142857144,
-      "impliedProbability": 0.5833333333333334,
-      "impliedProbabilityLabel": "58.3%"
+      "detail": "Sonny Gray (RHP) | 8-1 | 3.03 ERA | 51 SO | 1.20 WHIP | 62.1 IP",
+      "americanOdds": -110,
+      "americanLabel": "-110",
+      "decimalOdds": 1.9090909090909092,
+      "impliedProbability": 0.5238095238095238,
+      "impliedProbabilityLabel": "52.4%"
     },
-    "lean": "Model pick: Rangers on standings profile and projected hit volume.",
-    "rationale": "Standings profile: Rangers (34-34, 2nd in division, +16 RD) vs Red Sox (27-39, 5th in division, -14 RD)",
+    "lean": "Model pick: Rangers on projected hit volume and lineup-vs-pitching fit.",
+    "rationale": "Projected hit volume: Rangers (9.7 hits | 27.9% efficiency) vs Red Sox (5.8 hits | 17% efficiency)",
     "confidence": 52,
     "volatility": 92,
-    "recommendationScore": 34,
-    "tier": "Swingy",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "recommendationScore": 33,
+    "tier": "Pass",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 4.7,
-    "modelEdgeLabel": "4.7-point model edge",
-    "marketProbability": 0.4424778761061947,
-    "marketProbabilityLabel": "44.2%",
+    "modelEdge": 1,
+    "modelEdgeLabel": "1-point model edge",
+    "marketProbability": 0.5082034454470877,
+    "marketProbabilityLabel": "50.8%",
     "inputs": [
       {
-        "label": "Standings profile",
-        "summary": "Standings profile: Rangers (34-34, 2nd in division, +16 RD) vs Red Sox (27-39, 5th in division, -14 RD)",
-        "source": "Standings context",
-        "margin": 37.3,
-        "weight": 0.14
-      },
-      {
         "label": "Projected hit volume",
-        "summary": "Projected hit volume: Rangers (9.9 hits | 28.4% efficiency) vs Red Sox (5.7 hits | 16.4% efficiency)",
+        "summary": "Projected hit volume: Rangers (9.7 hits | 27.9% efficiency) vs Red Sox (5.8 hits | 17% efficiency)",
         "source": "Composite offense vs starter and bullpen projection",
-        "margin": 23.8,
+        "margin": 22.6,
         "weight": 0.19
       },
       {
         "label": "Lineup-vs-pitching fit",
-        "summary": "Lineup-vs-pitching fit: Rangers (Grade +3.35 | platoon 4 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs Red Sox (Grade -1.48 | platoon 6 | starter arsenal 44 | bridge arsenal 50 | pressure 21)",
+        "summary": "Lineup-vs-pitching fit: Rangers (Grade +3.30 | platoon 4 | .300 bats 0 | bat pressure 50 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs Red Sox (Grade -1.49 | platoon 6 | .300 bats 0 | bat pressure 50 | starter arsenal 44 | bridge arsenal 50 | pressure 21)",
         "source": "Official lineup + handedness + starter arsenal + likely reliever arsenal fit",
-        "margin": 28.6,
+        "margin": 28.5,
+        "weight": 0.14
+      },
+      {
+        "label": "Standings profile",
+        "summary": "Standings profile: Rangers (34-35, 3rd in division, +7 RD) vs Red Sox (28-39, 5th in division, -5 RD)",
+        "source": "Standings context",
+        "margin": 18.6,
         "weight": 0.14
       }
     ],
     "inputsUsed": 12,
     "volatilityNotes": [
       {
-        "label": "The underdog owns the projected hit edge",
-        "delta": 6
-      },
-      {
-        "label": "The favorite is carrying a real traffic deficit despite the price",
+        "label": "Higher posted total",
         "delta": 5
       },
       {
-        "label": "The underdog projects cleaner through the starter window",
+        "label": "At least one listed starter profiles as traffic-risk",
         "delta": 4
       },
       {
         "label": "One lineup carries real platoon pressure versus the listed starter hand",
         "delta": 3
+      },
+      {
+        "label": "Repeat-opponent starter damage tax is live",
+        "delta": 4
       },
       {
         "label": "One lineup specifically fits the listed starter arsenal",
@@ -17960,24 +18372,12 @@
         "delta": 3
       },
       {
-        "label": "The underdog lineup fits today’s starter better",
-        "delta": 5
-      },
-      {
-        "label": "The underdog hit-production trend is still live",
-        "delta": 3
-      },
-      {
-        "label": "Favorite enters on a live losing streak",
+        "label": "The underdog owns the cleaner Statcast contact profile",
         "delta": 4
       },
       {
-        "label": "Favorite skid is now long enough to question market trust",
-        "delta": 3
-      },
-      {
-        "label": "Underdog enters with positive recent form",
-        "delta": 3
+        "label": "Favorite still leans on a traffic-risk starter type",
+        "delta": 4
       },
       {
         "label": "Fenway Park suppresses home-run carry (84 HR factor)",
@@ -17992,51 +18392,39 @@
         "delta": 3
       },
       {
-        "label": "A big paper edge is still sitting inside a noisy baseball script, so conviction should stay capped",
-        "delta": 3
+        "label": "Coin-flip pressure is elevated for this full-game side",
+        "delta": 4
       },
       {
-        "label": "Relief-pitching risk is elevated if the game flips after the starter phase",
-        "delta": 6
+        "label": "Late-inning hold risk is above average for this side",
+        "delta": 4
       },
       {
         "label": "Starter edge looks better than the late-inning hold profile; this reads cleaner for first five",
         "delta": 5
       },
       {
-        "label": "Red Sox are likelier to hand the middle innings to a fresher bridge chain",
-        "delta": 3
-      },
-      {
-        "label": "Tier 1 starter-vs-late split: the starter edge is outrunning the late-inning hold profile, which makes the full-game side less trustworthy than the first-five read.",
-        "delta": 4
-      },
-      {
         "label": "Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.",
         "delta": 3
-      },
-      {
-        "label": "v1.1 market budget: this underdog call still needs cleaner starter, stability, and state support before it can be treated like a real market disagreement edge.",
-        "delta": 5
       }
     ],
     "pickReasons": [
-      "Rangers own the cleaner full-game traffic script at 9.9 projected hits.",
-      "Rangers have the better starter-window lane with 5.9 projected first-five hits.",
+      "Rangers own the cleaner full-game traffic script at 9.7 projected hits.",
+      "Rangers have the better starter-window lane with 5.8 projected first-five hits.",
       "Rangers still hold the better bridge-and-finish script once the bullpens take over.",
       "Rangers can lean on Brandon Nimmo, Jake Burger, Nicky Lopez to drive early pressure against Sonny Gray."
     ],
     "indicators": {
-      "reliefPitchingRisk": 79.3,
-      "coinflipPressure": 59,
-      "starterLeverageIndex": 75.2,
-      "lateInningStabilityIndex": 45.1,
+      "reliefPitchingRisk": 67.2,
+      "coinflipPressure": 62,
+      "starterLeverageIndex": 65,
+      "lateInningStabilityIndex": 39.7,
       "pickBullpenScore": 65.6,
       "oppBullpenScore": 67.1,
-      "pickBullpenChainScore": 69.8,
+      "pickBullpenChainScore": 76.8,
       "oppBullpenChainScore": 81.7,
-      "pickStarterScore": 60.3,
-      "oppStarterScore": 70.3,
+      "pickStarterScore": 58.1,
+      "oppStarterScore": 73.7,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -18092,10 +18480,10 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 4.2,
+      "projectedHitEdgeForPick": 3.9,
       "hitEdgeAgainstPick": false,
-      "pickIsMarketFavorite": false,
-      "pickIsMarketUnderdog": true,
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
       "heavyFavoriteWeakLineupFlag": false,
       "heavyFavoriteNoisyBullpenFlag": false,
       "deadEarlyRiskFlag": false,
@@ -18121,39 +18509,37 @@
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
         "stackedRisk",
-        "lateFragility",
         "thinModelAgreement",
+        "starterNotClean",
         "lateNotClean"
       ],
       "efficientFavoriteBlockers": [
-        "notMarketFavorite",
+        "tierOnePass",
         "notPricedFavorite"
       ],
-      "tierOneRiskPoints": 3,
-      "tierOnePassFlag": false,
+      "tierOneRiskPoints": 4,
+      "tierOnePassFlag": true,
       "tierOneRiskFlags": [
-        "starterLateFragility",
-        "highRiskPoints",
-        "underdogNeedsProof"
+        "highRiskPoints"
       ],
       "favoredSignalCount": 5,
-      "starterLateGap": 30.1,
+      "starterLateGap": 25.3,
       "starterLeashGap": 0,
-      "edgeHaircutApplied": 4.1,
+      "edgeHaircutApplied": 0.8,
       "gameShape": {
         "label": "Starter-to-bullpen flip",
         "shapeLabel": "bullpen-flip game",
         "category": "starter_to_bullpen_flip",
         "bestExpression": "Rangers first-five side",
-        "categoryConfidence": 85,
-        "realityGapScore": 67.6,
+        "categoryConfidence": 62.7,
+        "realityGapScore": 46.6,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
           {
             "id": "bridge",
             "label": "Bridge",
-            "score": 85
+            "score": 62.7
           },
           {
             "id": "flow",
@@ -18166,7 +18552,7 @@
             "score": 44.8
           }
         ],
-        "rfImpactScore": 36.8
+        "rfImpactScore": 53
       }
     },
     "gameShape": {
@@ -18177,7 +18563,7 @@
         "slug": "starter_to_bullpen_flip",
         "label": "Starter-to-bullpen flip",
         "bestExpression": "Rangers first-five side",
-        "confidence": 85,
+        "confidence": 62.7,
         "reasons": [
           "The pick can own the starter window without owning the late game.",
           "Use the timing edge before bridge innings can flip it."
@@ -18221,20 +18607,20 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 4.2
+          "projectedHitEdge": 3.9
         }
       },
-      "summary": "Starter-to-bullpen flip: Rangers first-five side. Reality-gap 67.6/100. Main checks: 80°F | Wind 3 mph In | 11% precip | weather helps carry.",
+      "summary": "Starter-to-bullpen flip: Rangers first-five side. Reality-gap 46.6/100. Main checks: 80°F | Wind 3 mph In | 11% precip | weather helps carry.",
       "pickTeam": "Rangers",
       "opponentTeam": "Red Sox",
       "scores": {
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 40,
-        "bullpenFlipScore": 85,
-        "starterControlScore": 49.1,
-        "marketContradictionScore": 30,
-        "realityGapScore": 67.6
+        "bullpenFlipScore": 62.7,
+        "starterControlScore": 41.7,
+        "marketContradictionScore": 18,
+        "realityGapScore": 46.6
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -18248,9 +18634,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 34.9,
-            "pickScore": 34.9,
-            "opponentScore": 12.7
+            "gameScore": 34.5,
+            "pickScore": 34.5,
+            "opponentScore": 13.3
           },
           {
             "id": "chaos",
@@ -18280,7 +18666,7 @@
             "id": "bridge",
             "label": "Bridge",
             "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-            "gameScore": 85,
+            "gameScore": 62.7,
             "pickScore": 1.7,
             "opponentScore": 1.1
           },
@@ -18298,7 +18684,7 @@
             "role": "pick",
             "team": "Rangers",
             "scores": {
-              "pressure": 34.9,
+              "pressure": 34.5,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -18306,7 +18692,7 @@
               "flow": 75
             },
             "polygon": [
-              34.9,
+              34.5,
               5,
               0,
               16,
@@ -18317,7 +18703,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 60.3,
+              "starterScore": 58.1,
               "bullpenScore": 65.6,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18331,7 +18717,7 @@
             "role": "opponent",
             "team": "Red Sox",
             "scores": {
-              "pressure": 12.7,
+              "pressure": 13.3,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -18339,7 +18725,7 @@
               "flow": 25
             },
             "polygon": [
-              12.7,
+              13.3,
               5,
               0,
               16,
@@ -18350,7 +18736,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 70.3,
+              "starterScore": 73.7,
               "bullpenScore": 67.1,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18365,26 +18751,26 @@
           "label": "Starter-to-bullpen flip",
           "bestExpression": "Rangers first-five side",
           "scores": {
-            "pressure": 34.9,
+            "pressure": 34.5,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
-            "bridge": 85,
+            "bridge": 62.7,
             "flow": 60
           },
           "polygon": [
-            34.9,
+            34.5,
             44.8,
             8.5,
             24.4,
-            85,
+            62.7,
             60
           ],
           "dominantAxes": [
             {
               "id": "bridge",
               "label": "Bridge",
-              "score": 85
+              "score": 62.7
             },
             {
               "id": "flow",
@@ -18452,15 +18838,15 @@
         }
       ],
       "marketImplications": {
-        "side": "Do not treat Rangers as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
+        "side": "Rangers is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
-        "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 68% YRFI."
+        "total": "Totals need chaos-gate respect; raw run projection is not enough when one-bad-inning or warm-carry risk is live.",
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 73.7% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 36.8,
+        "impactScore": 53,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -18488,35 +18874,35 @@
           }
         },
         "trustedUse": "Use RF as a nonlinear totals/game-shape check first. Do not let it pick ML/F5 by itself yet.",
-        "totalsRead": "RF totals baseline can be used as a second check on the posted total.",
+        "totalsRead": "RF totals baseline supports treating the raw total as shape-sensitive, not automatic.",
         "moneylineRead": "RF moneyline history is not deployable; it can only flag disagreement for review.",
         "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
         "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 9.9,
-      "homeProjectedHits": 5.7,
-      "awayHitEfficiencyPct": 28.4,
-      "homeHitEfficiencyPct": 16.4,
-      "awayFirst5ProjectedHits": 5.9,
-      "homeFirst5ProjectedHits": 3.5,
-      "awayFirst5HitEfficiencyPct": 30.9,
-      "homeFirst5HitEfficiencyPct": 18.3,
-      "awayLateProjectedHits": 3.7,
-      "homeLateProjectedHits": 2.4,
-      "awayLateHitEfficiencyPct": 23.8,
-      "homeLateHitEfficiencyPct": 15.6,
-      "awayBullpenChainScore": 69.8,
+      "awayProjectedHits": 9.7,
+      "homeProjectedHits": 5.8,
+      "awayHitEfficiencyPct": 27.9,
+      "homeHitEfficiencyPct": 17,
+      "awayFirst5ProjectedHits": 5.8,
+      "homeFirst5ProjectedHits": 3.8,
+      "awayFirst5HitEfficiencyPct": 30.3,
+      "homeFirst5HitEfficiencyPct": 19.9,
+      "awayLateProjectedHits": 3.6,
+      "homeLateProjectedHits": 2.3,
+      "awayLateHitEfficiencyPct": 23,
+      "homeLateHitEfficiencyPct": 15.2,
+      "awayBullpenChainScore": 76.8,
       "homeBullpenChainScore": 81.7,
       "edgeTeam": "Rangers",
-      "edgeHits": 4.2,
+      "edgeHits": 3.9,
       "first5EdgeTeam": "Rangers",
-      "first5EdgeHits": 2.4,
+      "first5EdgeHits": 2,
       "lateEdgeTeam": "Rangers",
       "lateEdgeHits": 1.3,
       "bridgeEdgeTeam": "Red Sox",
-      "bridgeEdgeScore": 11.9,
+      "bridgeEdgeScore": 4.9,
       "awayLikelyRelievers": [
         {
           "name": "Tyler Alexander",
@@ -18543,24 +18929,24 @@
           "projectionOnly": true
         },
         {
-          "name": "Luis Curvelo",
-          "pitcherName": "Luis Curvelo",
+          "name": "Cal Quantrill",
+          "pitcherName": "Cal Quantrill",
           "pitcherId": null,
-          "role": "MID",
+          "role": "LR",
           "throws": "R",
-          "expectedOuts": 3.4,
-          "availabilityScore": 61.6,
-          "bridgeScore": 58.3,
-          "fatigueScore": 38.4,
-          "firstRelieverLikelihood": 68.7,
+          "expectedOuts": 4.6,
+          "availabilityScore": 88.4,
+          "bridgeScore": 75.2,
+          "fatigueScore": 11.6,
+          "firstRelieverLikelihood": 67.9,
           "workedYesterday": false,
           "backToBack": false,
           "pitchesLast3": 0,
-          "pitchesLast6": 20,
+          "pitchesLast6": 39,
           "usedDaysLast3": 0,
-          "usedDaysLast6": 2,
-          "unavailable": true,
-          "shadowSharePct": 20.3,
+          "usedDaysLast6": 1,
+          "unavailable": false,
+          "shadowSharePct": 20.4,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -18586,7 +18972,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 1,
           "unavailable": false,
-          "shadowSharePct": 22.1,
+          "shadowSharePct": 22,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -18610,44 +18996,51 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "shadowSharePct": 21.8,
+          "shadowSharePct": 21.9,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
           "projectionOnly": true
         }
       ],
-      "awayBullpenExhaustion": 24.3,
+      "awayBullpenExhaustion": 18.4,
       "homeBullpenExhaustion": 9.1,
       "awayBullpenExhaustionLabel": "fresh",
       "homeBullpenExhaustionLabel": "fresh",
-      "awayPitcherType": "Volatile bat-misser",
+      "awayPitcherType": "Traffic-risk righty",
       "homePitcherType": "Balanced righty",
-      "awayStarterHoldConfidence": 68.3,
-      "homeStarterHoldConfidence": 35.5,
-      "awayProjectedRuns": 4.5,
-      "homeProjectedRuns": 2.8,
-      "awayFirst5ProjectedRuns": 2.7,
-      "homeFirst5ProjectedRuns": 1.6,
-      "awayLateProjectedRuns": 1.8,
-      "homeLateProjectedRuns": 1.2,
-      "postedTotal": 8.5,
+      "awayStarterHoldConfidence": 65.8,
+      "homeStarterHoldConfidence": 38.6,
+      "awayProjectedRuns": 4.2,
+      "homeProjectedRuns": 3.2,
+      "awayFirst5ProjectedRuns": 2.5,
+      "homeFirst5ProjectedRuns": 2.1,
+      "awayLateProjectedRuns": 1.7,
+      "homeLateProjectedRuns": 1.1,
+      "postedTotal": 9.5,
       "totals": {
         "fullGame": {
-          "lean": "Under",
-          "edge": -1.2,
-          "strength": "Strong",
-          "label": "Under 8.5",
-          "summary": "Under lean with a 1.2-run edge against 8.5.",
+          "lean": "Pass",
+          "edge": -2.1,
+          "strength": "ENV/RP2 veto",
+          "label": "Hold 9.5",
+          "summary": "Under lean with a 2.1-run edge against 9.5. ENV/RP2 addendum veto: ENV1/FIC HR-run carry conflicts with a fragile under (80°F | Wind 3 mph In | 11% precip | weather helps carry; ENV1 HRForce 1.5; FIC HRForce 1.5; material HRForce 1.5).",
+          "originalLean": "Under",
+          "originalStrength": "Strong",
+          "originalLabel": "Under 9.5",
           "chaosGate": {
             "phase": "full",
-            "overChaosScore": 2,
+            "overChaosScore": 8,
             "underDragScore": 2,
-            "warning": false,
-            "vetoed": false,
-            "vetoReason": "",
+            "warning": true,
+            "vetoed": true,
+            "vetoKind": "addendum",
+            "vetoReason": "ENV1/FIC HR-run carry conflicts with a fragile under",
             "notes": [
-              "80°F | Wind 3 mph In | 11% precip | weather helps carry"
+              "80°F | Wind 3 mph In | 11% precip | weather helps carry",
+              "ENV1 HRForce 1.5",
+              "FIC HRForce 1.5",
+              "material HRForce 1.5"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -18658,25 +19051,46 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": true
+              "weatherSuppress": true,
+              "envRunDelta": 0.5,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.5,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.5,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 25.2,
+              "maxRp2ReliefRuns": 0.7,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.2,
+              "maxRepeatOpponentHitTax": 0.2
             }
           }
         },
         "first5": {
-          "lean": "Pass",
-          "edge": -0.2,
-          "strength": "Thin",
-          "label": "Hold 4.5",
-          "summary": "Model projection 4.3 is essentially on the posted 4.5.",
+          "lean": "Over",
+          "edge": 0.1,
+          "strength": "Tail validated",
+          "label": "Over 4.5",
+          "summary": "Model projection 4.6 is essentially on the posted 4.5. Tail overlay keeps the over alive because the failure mode is an actual run-explosion path, not a clean under.",
           "chaosGate": {
             "phase": "first5",
-            "overChaosScore": 2,
+            "overChaosScore": 7,
             "underDragScore": 2,
-            "warning": false,
+            "warning": true,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
-              "80°F | Wind 3 mph In | 11% precip | weather helps carry"
+              "80°F | Wind 3 mph In | 11% precip | weather helps carry",
+              "ENV1 HRForce 1.5",
+              "FIC HRForce 1.5",
+              "material HRForce 1.5"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -18687,21 +19101,46 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": true
+              "weatherSuppress": true,
+              "envRunDelta": 0.5,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.5,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.5,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 25.2,
+              "maxRp2ReliefRuns": 0.7,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.2,
+              "maxRepeatOpponentHitTax": 0.2
             }
           },
+          "originalLean": "Pass",
+          "originalStrength": "Thin",
+          "originalLabel": "Hold 4.5",
           "tailOverlay": {
-            "baseProjectedRuns": 4.3,
-            "adjustedProjectedRuns": 4.3,
-            "adjustedEdge": -0.2,
-            "marketExpression": "Pass",
-            "shape": "balanced",
-            "tailScore": 20.5,
+            "baseProjectedRuns": 4.6,
+            "adjustedProjectedRuns": 6.8,
+            "adjustedEdge": 2.3,
+            "marketExpression": "Over",
+            "shape": "over-tail",
+            "tailScore": 52.6,
             "strandScore": 10,
             "forkScore": 10,
-            "tailLift": 0,
+            "tailLift": 2.2,
             "strandDrag": 0,
-            "notes": [],
+            "notes": [
+              "fat-tail run environment",
+              "carry/weather turns ordinary contact into extra-base risk",
+              "ENV1 HRForce 1.5",
+              "FIC HRForce 1.5"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -18710,28 +19149,48 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 9.4,
+              "totalFirst5ProjectedHits": 9.6,
               "weatherCarry": true,
               "weatherSuppress": true,
+              "envRunDelta": 0.5,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.5,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.5,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 25.2,
+              "maxRp2ReliefRuns": 0.7,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.2,
               "visibilityRisk": null
             }
           }
         },
         "late": {
           "lean": "Under",
-          "edge": -1,
-          "strength": "Clear",
-          "label": "Under 4",
-          "summary": "Under lean with a 1.0-run edge against 4.",
+          "edge": -2.2,
+          "strength": "Strong",
+          "label": "Under 5",
+          "summary": "Under lean with a 2.2-run edge against 5.",
           "chaosGate": {
             "phase": "late",
-            "overChaosScore": 2,
+            "overChaosScore": 7,
             "underDragScore": 2,
-            "warning": false,
+            "warning": true,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
-              "80°F | Wind 3 mph In | 11% precip | weather helps carry"
+              "80°F | Wind 3 mph In | 11% precip | weather helps carry",
+              "ENV1 HRForce 1.5",
+              "FIC HRForce 1.5",
+              "material HRForce 1.5"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -18742,25 +19201,47 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": true
+              "weatherSuppress": true,
+              "envRunDelta": 0.5,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.5,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.5,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 25.2,
+              "maxRp2ReliefRuns": 0.7,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.2,
+              "maxRepeatOpponentHitTax": 0.2
             }
           }
         },
-        "projectedFullTotalRuns": 7.3,
-        "projectedFirst5TotalRuns": 4.3,
-        "tailAdjustedProjectedFirst5TotalRuns": 4.3,
+        "projectedFullTotalRuns": 7.4,
+        "projectedFirst5TotalRuns": 4.6,
+        "tailAdjustedProjectedFirst5TotalRuns": 6.8,
         "first5TailOverlay": {
-          "baseProjectedRuns": 4.3,
-          "adjustedProjectedRuns": 4.3,
-          "adjustedEdge": -0.2,
-          "marketExpression": "Pass",
-          "shape": "balanced",
-          "tailScore": 20.5,
+          "baseProjectedRuns": 4.6,
+          "adjustedProjectedRuns": 6.8,
+          "adjustedEdge": 2.3,
+          "marketExpression": "Over",
+          "shape": "over-tail",
+          "tailScore": 52.6,
           "strandScore": 10,
           "forkScore": 10,
-          "tailLift": 0,
+          "tailLift": 2.2,
           "strandDrag": 0,
-          "notes": [],
+          "notes": [
+            "fat-tail run environment",
+            "carry/weather turns ordinary contact into extra-base risk",
+            "ENV1 HRForce 1.5",
+            "FIC HRForce 1.5"
+          ],
           "metrics": {
             "maxMistakeChaos": null,
             "maxRunClustering": null,
@@ -18769,18 +19250,34 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 9.4,
+            "totalFirst5ProjectedHits": 9.6,
             "weatherCarry": true,
             "weatherSuppress": true,
+            "envRunDelta": 0.5,
+            "envHitsDelta": 0,
+            "envHrDelta": -0.1,
+            "hrForce": 1.5,
+            "highHrForce": true,
+            "lowerWeatherCarry": false,
+            "ficHrForce": 1.5,
+            "ficHighHrForce": true,
+            "materialHrForce": true,
+            "extremeHrForce": false,
+            "carryMultiplier": 1.18,
+            "ficHighHrForceSharePct": 100,
+            "maxRp2BridgeStress": 25.2,
+            "maxRp2ReliefRuns": 0.7,
+            "rp2LateRunRisk": false,
+            "maxRepeatOpponentFirst5Tax": 0.2,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 3,
+        "projectedLateTotalRuns": 2.8,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 5,
+        "runShareFirst5TotalLine": 5.9,
         "first5TotalLineSource": "posted",
-        "derivedLateTotalLine": 4,
+        "derivedLateTotalLine": 5,
         "bullpenExhaustionNote": "80°F | Wind 3 mph In | 11% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
         "weatherNote": "80°F | Wind 3 mph In | 11% precip | weather helps carry.",
         "sunVisibilityNote": ""
@@ -18789,27 +19286,37 @@
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 18,
-        "yesProbabilityPct": 68,
-        "noProbabilityPct": 32,
-        "awayRunProbabilityPct": 52.3,
-        "homeRunProbabilityPct": 32.9,
+        "edge": 23.7,
+        "yesProbabilityPct": 73.7,
+        "noProbabilityPct": 26.3,
+        "awayRunProbabilityPct": 57,
+        "homeRunProbabilityPct": 38.8,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 40,
         "homeOppPitcherAllowedRatePct": 20,
-        "awayProjectedRuns": 0.6,
+        "awayProjectedRuns": 0.7,
         "homeProjectedRuns": 0.4,
         "reasonStack": [
-          "Rangers top order is driving early pressure (65.5)",
+          "Rangers top order is driving early pressure (65.2)",
           "Red Sox starter has leaked 1st-inning runs in 40% of recent starts",
           "Red Sox starter has real season 1st-inning damage (40% run games, 0.5/start)",
+          "ENV1 HRForce 1.5 raises YRFI carry",
           "Rangers starter has real season 1st-inning damage (33% run games, 0.6/start)"
         ],
         "cautionStack": [],
-        "projectedRuns": 1,
+        "environmentAddendum": {
+          "hrForce": 1.5,
+          "highHrForce": true,
+          "maxProbabilityLiftPct": 4.6,
+          "maxProjectedRunsLift": 0,
+          "reasons": [
+            "ENV1 HRForce 1.5 raises YRFI carry"
+          ]
+        },
+        "projectedRuns": 1.1,
         "line": 0.5,
-        "summary": "YRFI with a 68% modeled chance of at least one first-inning run. Rangers score 52.3% of the time and Red Sox 32.9% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 74% modeled chance of at least one first-inning run. Rangers score 57% of the time and Red Sox 38.8% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.5 is embedded in the first-inning run probability."
       },
       "teamScripts": [
         {
@@ -18836,18 +19343,18 @@
             },
             {
               "name": "Wyatt Langford",
-              "tag": "arsenal edge | -2.40 vs Sonny Gray"
+              "tag": "arsenal edge | -2.92 vs Sonny Gray"
             }
           ],
           "underperformNote": "Joc Pederson and Wyatt Langford carry the softer form or split fit into a balanced lane.",
           "overview": "Rangers can lean on Brandon Nimmo, Jake Burger, Nicky Lopez to drive early pressure against Sonny Gray.",
-          "topThirdScore": 65.5,
-          "middleScore": 51.2,
+          "topThirdScore": 65.2,
+          "middleScore": 50.7,
           "depthScore": 80.2,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Rangers own the cleaner full-game traffic script at 9.9 projected hits.",
-            "Rangers have the better starter-window lane with 5.9 projected first-five hits.",
+            "Rangers own the cleaner full-game traffic script at 9.7 projected hits.",
+            "Rangers have the better starter-window lane with 5.8 projected first-five hits.",
             "Rangers still hold the better bridge-and-finish script once the bullpens take over.",
             "Rangers can lean on Brandon Nimmo, Jake Burger, Nicky Lopez to drive early pressure against Sonny Gray.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -18884,7 +19391,7 @@
           ],
           "underperformNote": "Wilyer Abreu and Jarren Duran carry the softer form or split fit into a volatile bat-misser lane.",
           "overview": "Red Sox can lean on Caleb Durbin, Marcelo Mayer, Connor Wong to drive early pressure against Jack Leiter.",
-          "topThirdScore": 23.8,
+          "topThirdScore": 23.6,
           "middleScore": 47.7,
           "depthScore": 60.8,
           "bullpenOverperformHitters": [],
@@ -18902,19 +19409,19 @@
           {
             "label": "First 5",
             "edgeTeam": "Rangers",
-            "projection": "2.7 R",
+            "projection": "2.5 R",
             "note": "Rangers lean on Brandon Nimmo, Jake Burger to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
             "edgeTeam": "Rangers",
-            "projection": "1.8 R",
+            "projection": "1.7 R",
             "note": "Rangers keep more late scoring paths alive, with Brandon Nimmo, Jake Burger plus the Red Sox bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Rangers",
-            "projection": "9.9 H",
+            "projection": "9.7 H",
             "note": "Rangers finish with the stronger aggregate traffic path, anchored by Brandon Nimmo, Jake Burger."
           }
         ]
@@ -18976,10 +19483,54 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Rangers @ Red Sox",
+        "gameContextMatch": "team-code",
+        "rowCount": 16,
+        "averageHrForce": 1.5,
+        "maxHrForce": 1.5,
+        "highHrForceRows": 16,
+        "extremeHrForceRows": 0,
+        "highHrForceSharePct": 100,
+        "qualityAbPct": 28.4,
+        "hardHitPct": 10.7,
+        "matchupPassRows": 2,
+        "awayOffense": {
+          "label": "Rangers hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "Red Sox hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Rangers",
-          "modelVersion": "MLB-RP2.2026-06-12.v2",
+          "modelVersion": "MLB-RP2.2026-06-12.v3",
           "projectedReliefRunsAllowed": 0.642,
           "projectedReliefOuts": 10.37,
           "projectedRelieversUsed": 3.23,
@@ -18988,7 +19539,7 @@
           "fatigueScore": 32.6,
           "qualityScore": 83.4,
           "runRiskTier": "fresh_bridge",
-          "topTwoSharePct": 41.5,
+          "topTwoSharePct": 41.6,
           "lead": {
             "pitcherName": "Tyler Alexander",
             "expectedOuts": 3.4,
@@ -18997,7 +19548,7 @@
         },
         "home": {
           "teamName": "Red Sox",
-          "modelVersion": "MLB-RP2.2026-06-12.v2",
+          "modelVersion": "MLB-RP2.2026-06-12.v3",
           "projectedReliefRunsAllowed": 0.833,
           "projectedReliefOuts": 8.97,
           "projectedRelieversUsed": 3.03,
@@ -19014,22 +19565,377 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "high-HRForce carry is active",
+          "handedness split adjustment is active",
+          "repeat-opponent starter tax is active"
+        ],
+        "environment": {
+          "hrForce": 1.5,
+          "envHrForce": 1.5,
+          "ficHrForce": 1.5,
+          "materialHrForce": true,
+          "extremeHrForce": false,
+          "carryMultiplier": 1.18,
+          "hitDelta": 0.7,
+          "runDelta": 0.7,
+          "conversionDelta": 0.023732999999999994,
+          "firstInningProbabilityLiftPct": 6,
+          "underFragilityRuns": 2.2,
+          "flags": [
+            "Material HRForce 1.5: pitcher damage and batter production lifted"
+          ],
+          "reasons": [
+            "HRForce 1.5 applies material carry to pitcher damage and batter production",
+            "weather/park carry is favorable for flight",
+            "FIC batter-vs-pitcher pockets show HRForce carry"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Rangers",
+            "pitcherName": "Jack Leiter",
+            "gamesStarted": 14,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Traffic-risk righty",
+            "expectedInnings": 5.53,
+            "opponentHistory": {
+              "label": "repeat opponent damage tax",
+              "source": "StatMuse vs opponent",
+              "starts": 2,
+              "innings": 10.3,
+              "projectedHitsDelta": 0.2,
+              "first5RunsDelta": 0.2,
+              "runConversionDelta": 0.0017932295913978492,
+              "repeatOpponentUnderWarning": true,
+              "repeatOpponentHitTax": 0.2,
+              "repeatOpponentFirst5Tax": 0.2,
+              "lastOpponentStartSummary": "5/8/2025 | 5.3 IP | 4 R | 4 ER | 3 H",
+              "repeatOpponentFlags": [
+                "repeat opponent run damage"
+              ]
+            },
+            "flags": [
+              "repeat opponent damage tax vs Red Sox",
+              "repeat-opponent tax: 5/8/2025 | 5.3 IP | 4 R | 4 ER | 3 H",
+              "traffic-risk starter type"
+            ]
+          },
+          {
+            "teamName": "Red Sox",
+            "pitcherName": "Sonny Gray",
+            "gamesStarted": 12,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Balanced righty",
+            "expectedInnings": 5,
+            "opponentHistory": {
+              "label": "starter has suppressed this opponent",
+              "source": "StatMuse vs opponent",
+              "starts": 18,
+              "innings": 119,
+              "projectedHitsDelta": -0.2,
+              "first5RunsDelta": -0.2,
+              "runConversionDelta": -0.003246719999999998,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": -0.2,
+              "repeatOpponentFirst5Tax": -0.1,
+              "lastOpponentStartSummary": "5/31/2025 | 7 IP | 0 R | 0 ER | 4 H",
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "starter has suppressed this opponent vs Rangers"
+            ]
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Rangers",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 43.8,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.252,
+            "splitOpsAverage": 0.729,
+            "topSixSplitAvgAverage": 0.259,
+            "topSixSplitOpsAverage": 0.752,
+            "strongSplitCount": 2,
+            "weakSplitCount": 3,
+            "severeWeakSplitCount": 0,
+            "topSixStrongSplitCount": 2,
+            "topSixWeakSplitCount": 2,
+            "topThirdStrongSplitCount": 1,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": -0.2,
+            "runConversionDelta": -0.0029900000000000013,
+            "strongSplitBats": [
+              {
+                "name": "Josh Jung",
+                "slot": 2,
+                "bats": "R",
+                "plateAppearances": 211,
+                "avg": 0.309,
+                "ops": 0.83,
+                "seasonAvg": 0.311,
+                "seasonOps": 0.841,
+                "recentAvg": 0.32,
+                "recentOps": 0.81
+              },
+              {
+                "name": "Ezequiel Duran",
+                "slot": 5,
+                "bats": "R",
+                "plateAppearances": 172,
+                "avg": 0.296,
+                "ops": 0.786,
+                "seasonAvg": 0.294,
+                "seasonOps": 0.799,
+                "recentAvg": 0.364,
+                "recentOps": 0.871
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Wyatt Langford",
+                "slot": 4,
+                "bats": "R",
+                "plateAppearances": 77,
+                "avg": 0.247,
+                "ops": 0.642,
+                "seasonAvg": 0.221,
+                "seasonOps": 0.619,
+                "recentAvg": 0.13,
+                "recentOps": 0.504
+              },
+              {
+                "name": "Kyle Higashioka",
+                "slot": 8,
+                "bats": "R",
+                "plateAppearances": 99,
+                "avg": 0.216,
+                "ops": 0.644,
+                "seasonAvg": 0.231,
+                "seasonOps": 0.684,
+                "recentAvg": 0.167,
+                "recentOps": 0.702
+              },
+              {
+                "name": "Evan Carter",
+                "slot": 6,
+                "bats": "L",
+                "plateAppearances": 196,
+                "avg": 0.201,
+                "ops": 0.692,
+                "seasonAvg": 0.177,
+                "seasonOps": 0.616,
+                "recentAvg": 0.25,
+                "recentOps": 0.583
+              }
+            ],
+            "flags": [
+              "Josh Jung 0.830 OPS vs R",
+              "Ezequiel Duran 0.786 OPS vs R",
+              "Wyatt Langford 0.642 OPS vs R",
+              "3 lineup bats carry weak split rows"
+            ]
+          },
+          {
+            "teamName": "Red Sox",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 42.7,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.246,
+            "splitOpsAverage": 0.692,
+            "topSixSplitAvgAverage": 0.242,
+            "topSixSplitOpsAverage": 0.7,
+            "strongSplitCount": 4,
+            "weakSplitCount": 3,
+            "severeWeakSplitCount": 2,
+            "topSixStrongSplitCount": 2,
+            "topSixWeakSplitCount": 2,
+            "topThirdStrongSplitCount": 1,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": -0.2,
+            "runConversionDelta": -0.003499999999999998,
+            "strongSplitBats": [
+              {
+                "name": "Willson Contreras",
+                "slot": 4,
+                "bats": "R",
+                "plateAppearances": 193,
+                "avg": 0.277,
+                "ops": 0.839,
+                "seasonAvg": 0.284,
+                "seasonOps": 0.897,
+                "recentAvg": 0.167,
+                "recentOps": 0.639
+              },
+              {
+                "name": "Connor Wong",
+                "slot": 9,
+                "bats": "R",
+                "plateAppearances": 58,
+                "avg": 0.3,
+                "ops": 0.835,
+                "seasonAvg": 0.264,
+                "seasonOps": 0.713,
+                "recentAvg": 0.333,
+                "recentOps": 0.667
+              },
+              {
+                "name": "Isiah Kiner-Falefa",
+                "slot": 7,
+                "bats": "R",
+                "plateAppearances": 69,
+                "avg": 0.323,
+                "ops": 0.769,
+                "seasonAvg": 0.265,
+                "seasonOps": 0.67,
+                "recentAvg": 0.154,
+                "recentOps": 0.497
+              },
+              {
+                "name": "Mickey Gasper",
+                "slot": 1,
+                "bats": "S",
+                "plateAppearances": 68,
+                "avg": 0.311,
+                "ops": 0.761,
+                "seasonAvg": 0.273,
+                "seasonOps": 0.667,
+                "recentAvg": 0.105,
+                "recentOps": 0.255
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Marcelo Mayer",
+                "slot": 8,
+                "bats": "L",
+                "plateAppearances": 174,
+                "avg": 0.212,
+                "ops": 0.553,
+                "seasonAvg": 0.224,
+                "seasonOps": 0.6,
+                "recentAvg": 0.25,
+                "recentOps": 1
+              },
+              {
+                "name": "Caleb Durbin",
+                "slot": 6,
+                "bats": "R",
+                "plateAppearances": 156,
+                "avg": 0.199,
+                "ops": 0.579,
+                "seasonAvg": 0.204,
+                "seasonOps": 0.594,
+                "recentAvg": 0.313,
+                "recentOps": 1.04
+              },
+              {
+                "name": "Jarren Duran",
+                "slot": 5,
+                "bats": "L",
+                "plateAppearances": 200,
+                "avg": 0.202,
+                "ops": 0.664,
+                "seasonAvg": 0.21,
+                "seasonOps": 0.652,
+                "recentAvg": 0.15,
+                "recentOps": 0.3
+              }
+            ],
+            "flags": [
+              "4 strong split bats vs R",
+              "Willson Contreras 0.839 OPS vs R",
+              "Connor Wong 0.835 OPS vs R",
+              "Marcelo Mayer 0.553 OPS vs R",
+              "3 lineup bats carry weak split rows"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Rangers",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "Red Sox",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Rangers",
+            "projectedReliefRunsAllowed": 0.6,
+            "adjustedProjectedReliefRunsAllowed": 0.7,
+            "projectedReliefOuts": 10.4,
+            "leverageAvailabilityScore": 67.4,
+            "leadAvailabilityScore": 70,
+            "bridgeStressScore": 25.2,
+            "runDelta": -0.3,
+            "hitDelta": -0.2,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 0.6 -> 0.7"
+            ]
+          },
+          {
+            "teamName": "Red Sox",
+            "projectedReliefRunsAllowed": 0.8,
+            "adjustedProjectedReliefRunsAllowed": 0.7,
+            "projectedReliefOuts": 9,
+            "leverageAvailabilityScore": 75.9,
+            "leadAvailabilityScore": 92.2,
+            "bridgeStressScore": 18.1,
+            "runDelta": -0.3,
+            "hitDelta": -0.2,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 0.8 -> 0.7"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 4.2,
+          "home": 3.2
+        },
+        "projectedHitTotals": {
+          "away": 9.7,
+          "home": 5.8
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
         "selection": "Rangers",
         "opponent": "Red Sox",
-        "pickProjectedRuns": 4.5,
-        "opponentProjectedRuns": 2.8,
-        "projectedTotalRuns": 7.3,
-        "runDiff": 1.7,
-        "absoluteRunDiff": 1.7,
-        "runDiffSharePct": 23.3,
+        "pickProjectedRuns": 4.2,
+        "opponentProjectedRuns": 3.2,
+        "projectedTotalRuns": 7.4,
+        "runDiff": 1,
+        "absoluteRunDiff": 1,
+        "runDiffSharePct": 13.5,
         "confidence": 52,
-        "marketProbabilityPct": 44.2,
-        "grade": "Separated ML shape",
+        "marketProbabilityPct": 50.8,
+        "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Rangers projects 1.7 runs better in a 7.3-run environment."
+        "note": "Rangers projects 1 runs better in a 7.4-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -19039,7 +19945,7 @@
           "slug": "starter_to_bullpen_flip",
           "label": "Starter-to-bullpen flip",
           "bestExpression": "Rangers first-five side",
-          "confidence": 85,
+          "confidence": 62.7,
           "reasons": [
             "The pick can own the starter window without owning the late game.",
             "Use the timing edge before bridge innings can flip it."
@@ -19083,20 +19989,20 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 4.2
+            "projectedHitEdge": 3.9
           }
         },
-        "summary": "Starter-to-bullpen flip: Rangers first-five side. Reality-gap 67.6/100. Main checks: 80°F | Wind 3 mph In | 11% precip | weather helps carry.",
+        "summary": "Starter-to-bullpen flip: Rangers first-five side. Reality-gap 46.6/100. Main checks: 80°F | Wind 3 mph In | 11% precip | weather helps carry.",
         "pickTeam": "Rangers",
         "opponentTeam": "Red Sox",
         "scores": {
           "chaosScore": 44.8,
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 40,
-          "bullpenFlipScore": 85,
-          "starterControlScore": 49.1,
-          "marketContradictionScore": 30,
-          "realityGapScore": 67.6
+          "bullpenFlipScore": 62.7,
+          "starterControlScore": 41.7,
+          "marketContradictionScore": 18,
+          "realityGapScore": 46.6
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -19110,9 +20016,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 34.9,
-              "pickScore": 34.9,
-              "opponentScore": 12.7
+              "gameScore": 34.5,
+              "pickScore": 34.5,
+              "opponentScore": 13.3
             },
             {
               "id": "chaos",
@@ -19142,7 +20048,7 @@
               "id": "bridge",
               "label": "Bridge",
               "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-              "gameScore": 85,
+              "gameScore": 62.7,
               "pickScore": 1.7,
               "opponentScore": 1.1
             },
@@ -19160,7 +20066,7 @@
               "role": "pick",
               "team": "Rangers",
               "scores": {
-                "pressure": 34.9,
+                "pressure": 34.5,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -19168,7 +20074,7 @@
                 "flow": 75
               },
               "polygon": [
-                34.9,
+                34.5,
                 5,
                 0,
                 16,
@@ -19179,7 +20085,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 60.3,
+                "starterScore": 58.1,
                 "bullpenScore": 65.6,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -19193,7 +20099,7 @@
               "role": "opponent",
               "team": "Red Sox",
               "scores": {
-                "pressure": 12.7,
+                "pressure": 13.3,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -19201,7 +20107,7 @@
                 "flow": 25
               },
               "polygon": [
-                12.7,
+                13.3,
                 5,
                 0,
                 16,
@@ -19212,7 +20118,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 70.3,
+                "starterScore": 73.7,
                 "bullpenScore": 67.1,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -19227,26 +20133,26 @@
             "label": "Starter-to-bullpen flip",
             "bestExpression": "Rangers first-five side",
             "scores": {
-              "pressure": 34.9,
+              "pressure": 34.5,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
-              "bridge": 85,
+              "bridge": 62.7,
               "flow": 60
             },
             "polygon": [
-              34.9,
+              34.5,
               44.8,
               8.5,
               24.4,
-              85,
+              62.7,
               60
             ],
             "dominantAxes": [
               {
                 "id": "bridge",
                 "label": "Bridge",
-                "score": 85
+                "score": 62.7
               },
               {
                 "id": "flow",
@@ -19314,15 +20220,15 @@
           }
         ],
         "marketImplications": {
-          "side": "Do not treat Rangers as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
+          "side": "Rangers is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
-          "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 68% YRFI."
+          "total": "Totals need chaos-gate respect; raw run projection is not enough when one-bad-inning or warm-carry risk is live.",
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 73.7% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 36.8,
+          "impactScore": 53,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -19350,7 +20256,7 @@
             }
           },
           "trustedUse": "Use RF as a nonlinear totals/game-shape check first. Do not let it pick ML/F5 by itself yet.",
-          "totalsRead": "RF totals baseline can be used as a second check on the posted total.",
+          "totalsRead": "RF totals baseline supports treating the raw total as shape-sensitive, not automatic.",
           "moneylineRead": "RF moneyline history is not deployable; it can only flag disagreement for review.",
           "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
           "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
@@ -19359,12 +20265,12 @@
       "first5Moneyline": {
         "pickSide": "away",
         "pickTeam": "Rangers",
-        "awayProjectedRuns": 2.7,
-        "homeProjectedRuns": 1.6,
-        "awayLeadProbability": 61,
-        "homeLeadProbability": 21.4,
-        "pushProbability": 17.6,
-        "leadProbability": 61,
+        "awayProjectedRuns": 2.5,
+        "homeProjectedRuns": 2.1,
+        "awayLeadProbability": 47.7,
+        "homeLeadProbability": 33.4,
+        "pushProbability": 18.9,
+        "leadProbability": 47.7,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -19386,11 +20292,11 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 55,
-        "probability": 16.5,
+        "probability": 16.4,
         "expectedValue": 0.2,
         "statValueLabel": "0.18 exp HR",
         "sample": {
-          "seasonGames": 66,
+          "seasonGames": 67,
           "seasonPlateAppearances": 267,
           "recentGames": 12,
           "recentPlateAppearances": 44,
@@ -19458,12 +20364,12 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
-        "confidence": 63,
-        "probability": 71.9,
-        "expectedValue": 1.3,
-        "statValueLabel": "1.27 exp RBI",
+        "confidence": 62,
+        "probability": 69.3,
+        "expectedValue": 1.2,
+        "statValueLabel": "1.18 exp RBI",
         "sample": {
-          "seasonGames": 66,
+          "seasonGames": 67,
           "seasonPlateAppearances": 267,
           "recentGames": 12,
           "recentPlateAppearances": 44,
@@ -19530,13 +20436,13 @@
         "propType": "runs",
         "propLabel": "Runs",
         "marketLabel": "Over 0.5 runs",
-        "confidence": 64,
-        "probability": 58.1,
-        "expectedValue": 0.9,
-        "statValueLabel": "0.87 exp runs",
+        "confidence": 63,
+        "probability": 55.5,
+        "expectedValue": 0.8,
+        "statValueLabel": "0.81 exp runs",
         "sample": {
-          "seasonGames": 66,
-          "seasonPlateAppearances": 287,
+          "seasonGames": 67,
+          "seasonPlateAppearances": 288,
           "recentGames": 12,
           "recentPlateAppearances": 48,
           "statcastGames": 6,
@@ -19545,7 +20451,7 @@
         },
         "repeatability": {
           "careerPa": 4615,
-          "seasonPa": 287,
+          "seasonPa": 288,
           "powerIndex": 57.16,
           "contactRisk": 42.24,
           "roleStability": 100,
@@ -19555,15 +20461,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 43.4,
+            "confidenceScore": 43.3,
             "processScore": -8,
             "careerWeight": 0.1,
-            "identityDelta": -1.9,
+            "identityDelta": -2,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process fading",
-            "seasonPa": 287,
+            "seasonPa": 288,
             "careerPa": 4615
           },
           "canCarryTinySample": false,
@@ -19588,7 +20494,7 @@
         "matchupNote": "+10.00 vs Sonny Gray",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".259 AVG | .742 OPS | 66 H | 7 HR | 12g: .318 AVG | .830 OPS | 14 H | 0 HR | vs RHP: .262 AVG | .758 OPS | 6 HR | career 4615 PA | .799 OPS | 142 HR | baseline career profile | power 57 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +6.9 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".258 AVG | .740 OPS | 66 H | 7 HR | 12g: .318 AVG | .830 OPS | 14 H | 0 HR | vs RHP: .262 AVG | .758 OPS | 6 HR | career 4615 PA | .799 OPS | 142 HR | baseline career profile | power 57 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +6.9 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "rangers-red-sox:669394:hitRunRbi",
@@ -19602,12 +20508,12 @@
         "propType": "hitRunRbi",
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
-        "confidence": 82,
-        "probability": 78.9,
-        "expectedValue": 2.9,
-        "statValueLabel": "1.22 H · 0.66 R · 1.04 RBI · 2.92 total",
+        "confidence": 81,
+        "probability": 76,
+        "expectedValue": 2.7,
+        "statValueLabel": "1.17 H · 0.61 R · 0.97 RBI · 2.75 total",
         "sample": {
-          "seasonGames": 66,
+          "seasonGames": 67,
           "seasonPlateAppearances": 267,
           "recentGames": 12,
           "recentPlateAppearances": 44,
@@ -19680,7 +20586,7 @@
         "expectedValue": 1.9,
         "statValueLabel": "1.89 exp TB",
         "sample": {
-          "seasonGames": 66,
+          "seasonGames": 67,
           "seasonPlateAppearances": 267,
           "recentGames": 12,
           "recentPlateAppearances": 44,
@@ -19750,11 +20656,11 @@
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
         "confidence": 60,
-        "probability": 34.6,
+        "probability": 32.6,
         "expectedValue": 1.2,
-        "statValueLabel": "1.22 exp hits",
+        "statValueLabel": "1.17 exp hits",
         "sample": {
-          "seasonGames": 66,
+          "seasonGames": 67,
           "seasonPlateAppearances": 267,
           "recentGames": 12,
           "recentPlateAppearances": 44,
@@ -19822,12 +20728,12 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 58,
-        "probability": 24.2,
+        "probability": 23.5,
         "expectedValue": 0.3,
-        "statValueLabel": "0.28 exp walks",
+        "statValueLabel": "0.27 exp walks",
         "sample": {
-          "seasonGames": 66,
-          "seasonPlateAppearances": 287,
+          "seasonGames": 67,
+          "seasonPlateAppearances": 288,
           "recentGames": 12,
           "recentPlateAppearances": 48,
           "statcastGames": 6,
@@ -19836,7 +20742,7 @@
         },
         "repeatability": {
           "careerPa": 4615,
-          "seasonPa": 287,
+          "seasonPa": 288,
           "powerIndex": 57.16,
           "contactRisk": 42.24,
           "roleStability": 100,
@@ -19846,15 +20752,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 43.4,
+            "confidenceScore": 43.3,
             "processScore": -8,
             "careerWeight": 0.1,
-            "identityDelta": -1.9,
+            "identityDelta": -2,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process fading",
-            "seasonPa": 287,
+            "seasonPa": 288,
             "careerPa": 4615
           },
           "canCarryTinySample": false,
@@ -19878,7 +20784,7 @@
         "matchupNote": "+10.00 vs Sonny Gray",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".259 AVG | .742 OPS | 66 H | 7 HR | 12g: .318 AVG | .830 OPS | 14 H | 0 HR | vs RHP: .262 AVG | .758 OPS | 6 HR | career 4615 PA | .799 OPS | 142 HR | baseline career profile | power 57 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +6.9 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".258 AVG | .740 OPS | 66 H | 7 HR | 12g: .318 AVG | .830 OPS | 14 H | 0 HR | vs RHP: .262 AVG | .758 OPS | 6 HR | career 4615 PA | .799 OPS | 142 HR | baseline career profile | power 57 | 2026 sample ok | arsenal Cutter 21% / 4-Seam Fastball 21% / Curveball 19% | fit +6.9 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "rangers-red-sox:669394:singles",
@@ -19892,12 +20798,12 @@
         "propType": "singles",
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
-        "confidence": 69,
-        "probability": 58.5,
-        "expectedValue": 0.9,
-        "statValueLabel": "0.88 exp singles",
+        "confidence": 68,
+        "probability": 56.9,
+        "expectedValue": 0.8,
+        "statValueLabel": "0.84 exp singles",
         "sample": {
-          "seasonGames": 66,
+          "seasonGames": 67,
           "seasonPlateAppearances": 267,
           "recentGames": 12,
           "recentPlateAppearances": 44,
@@ -19961,7 +20867,7 @@
       "runs": [],
       "hitRunRbi": []
     },
-    "candidateCount": 31,
+    "candidateCount": 29,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

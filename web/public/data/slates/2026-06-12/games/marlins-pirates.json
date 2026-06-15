@@ -15,40 +15,40 @@
     {
       "side": "Away",
       "name": "Marlins",
-      "detail": "Sandy Alcantara (RHP) | 5-4 | 4.33 ERA | 64 SO | 1.26 WHIP | 89.1 IP"
+      "detail": "Sandy Alcantara (RHP) | 6-4 | 4.25 ERA | 71 SO | 1.22 WHIP | 97.1 IP"
     },
     {
       "side": "Home",
       "name": "Pirates",
-      "detail": "Braxton Ashcraft (RHP) | 5-3 | 3.28 ERA | 86 SO | 1.08 WHIP | 79.2 IP"
+      "detail": "Braxton Ashcraft (RHP) | 5-3 | 3.30 ERA | 90 SO | 1.10 WHIP | 84.2 IP"
     }
   ],
   "summary": "Marlins @ Pirates with Sandy Alcantara against Braxton Ashcraft.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Marlins +119 / Pirates -143 | o8.5 -121 / u8.5 +100 | Marlins +1.5 -172 / Pirates -1.5 +142 | F5 Marlins +120 / Pirates -154 / o4.5 -110 / u4.5 -120.",
+    "Current board: Marlins +150 / Pirates -197 | o6.5 -132 / u6.5 +102 | Marlins +1.5 -157 / Pirates -1.5 +120 | F5 Marlins +120 / Pirates -154 / o4.5 -110 / u4.5 -120.",
     "Sandy Alcantara vs Braxton Ashcraft."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
   "teamContext": {
     "away": {
       "divisionLeader": false,
-      "divisionRank": "4",
-      "gamesBack": "11.5",
+      "divisionRank": "3",
+      "gamesBack": "10.5",
       "losses": 35,
-      "runDifferential": -6,
-      "streakCode": "W5",
-      "winningPercentage": ".493",
-      "wins": 34
+      "runDifferential": -1,
+      "streakCode": "W6",
+      "winningPercentage": ".500",
+      "wins": 35
     },
     "home": {
       "divisionLeader": false,
-      "divisionRank": "3",
-      "gamesBack": "7.5",
-      "losses": 34,
-      "runDifferential": 20,
-      "streakCode": "L1",
-      "winningPercentage": ".507",
+      "divisionRank": "4",
+      "gamesBack": "8.5",
+      "losses": 35,
+      "runDifferential": 15,
+      "streakCode": "L2",
+      "winningPercentage": ".500",
       "wins": 35
     }
   },
@@ -134,6 +134,156 @@
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
   },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Marlins @ Pirates",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "MIA",
+    "homeTeamCode": "PIT",
+    "label": "Marlins @ Pirates",
+    "sourceStatus": "warehouse",
+    "rowCount": 8,
+    "pitcherName": "S. Alcantara",
+    "gameContexts": [
+      "@ 10 MIA PIT"
+    ],
+    "averageHrForce": 1.5,
+    "maxHrForce": 1.5,
+    "highHrForceRows": 8,
+    "extremeHrForceRows": 0,
+    "highHrForceSharePct": 100,
+    "qualityAbPct": 50,
+    "hardHitPct": 6.1,
+    "matchupPassRows": 2,
+    "topRows": [
+      {
+        "playerName": "R. O'Hearn",
+        "pitcherName": "S. Alcantara",
+        "position": "1B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 57,
+        "hardHitPct": 29,
+        "recentOps": 0.762,
+        "bvpAtBats": 6,
+        "bvpAvg": 0.333,
+        "bvpOps": 0.929,
+        "matchupPass": true
+      },
+      {
+        "playerName": "B. Lowe",
+        "pitcherName": "S. Alcantara",
+        "position": "2B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 50,
+        "hardHitPct": 20,
+        "recentOps": 0.561,
+        "bvpAtBats": 16,
+        "bvpAvg": 0.375,
+        "bvpOps": 1.125,
+        "matchupPass": true
+      },
+      {
+        "playerName": "C. Norby",
+        "pitcherName": "B. Ashcraft",
+        "position": "3B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 100,
+        "hardHitPct": 0,
+        "recentOps": 0.708,
+        "bvpAtBats": 1,
+        "bvpAvg": 1,
+        "bvpOps": 2,
+        "matchupPass": false
+      },
+      {
+        "playerName": "L. Hicks",
+        "pitcherName": "B. Ashcraft",
+        "position": "C",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 100,
+        "hardHitPct": 0,
+        "recentOps": 0.623,
+        "bvpAtBats": 0,
+        "bvpAvg": 0,
+        "bvpOps": 1,
+        "matchupPass": false
+      },
+      {
+        "playerName": "O. Cruz",
+        "pitcherName": "S. Alcantara",
+        "position": "SS",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 29,
+        "hardHitPct": 0,
+        "recentOps": 1.191,
+        "bvpAtBats": 6,
+        "bvpAvg": 0.167,
+        "bvpOps": 0.953,
+        "matchupPass": false
+      },
+      {
+        "playerName": "B. Reynolds",
+        "pitcherName": "S. Alcantara",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.5,
+        "qualityAbPct": 31,
+        "hardHitPct": 0,
+        "recentOps": 0.818,
+        "bvpAtBats": 13,
+        "bvpAvg": 0.077,
+        "bvpOps": 0.327,
+        "matchupPass": false
+      }
+    ],
+    "awayOffense": {
+      "label": "Marlins hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "Pirates hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
+  },
   "offenseContext": {
     "away": {
       "hitsPerGame": 8.02273,
@@ -177,7 +327,7 @@
       "teamName": "Marlins",
       "source": "MLB-RP2",
       "chainSource": "MLB-RP2",
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectionOnly": true,
       "identityConfidence": "low",
@@ -308,7 +458,7 @@
       "teamName": "Pirates",
       "source": "MLB-RP2",
       "chainSource": "MLB-RP2",
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectionOnly": true,
       "identityConfidence": "low",
@@ -331,7 +481,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "shadowSharePct": 25.4,
+          "shadowSharePct": 25.5,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -419,7 +569,7 @@
       "fatigueScore": 41.4,
       "qualityScore": 65,
       "runRiskTier": "stable_bridge",
-      "topTwoSharePct": 49.4,
+      "topTwoSharePct": 49.5,
       "lead": {
         "pitcherName": "Mason Montgomery",
         "pitcherId": null,
@@ -442,7 +592,7 @@
   },
   "reliefProjectionContext": {
     "away": {
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectedReliefRunsAllowed": 1.552,
       "projectedReliefOuts": 11.67,
@@ -479,9 +629,10 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 1,
           "unavailable": false,
-          "score": 82.133,
+          "score": 82.063,
           "firstUpBaseScore": 81.103,
           "firstUpTrendAdjustment": 0.03,
+          "firstUpLineupMatchupAdjustment": -0.07,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 1,
           "firstUpTrend": {
@@ -502,6 +653,33 @@
             "leashScore": 72.5,
             "sixPlusRate": 0.8,
             "startsSample": 10
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Pittsburgh Pirates",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 2,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 3,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 34,
+              "leftPa": 53,
+              "rightDamageAllowed": 0.349,
+              "leftDamageAllowed": 0.319,
+              "splitEdge": 0.03
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.25,
+            "splitStrength": 0.2,
+            "fit": false,
+            "reason": "Opponent pocket leans R, away from pitcher better split side L."
           },
           "shadowSharePct": 24.1
         },
@@ -527,6 +705,7 @@
           "score": 72.952,
           "firstUpBaseScore": 71.952,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 1,
           "firstUpTrend": null,
@@ -548,6 +727,30 @@
             "leashScore": 72.5,
             "sixPlusRate": 0.8,
             "startsSample": 10
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Pittsburgh Pirates",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 2,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 3,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 22,
+              "leftPa": 20,
+              "rightDamageAllowed": 0.491,
+              "leftDamageAllowed": 0.587,
+              "splitEdge": 0.097
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
           },
           "shadowSharePct": 21.4
         },
@@ -573,6 +776,7 @@
           "score": 65.241,
           "firstUpBaseScore": 64.241,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 1,
           "firstUpTrend": null,
@@ -594,6 +798,30 @@
             "leashScore": 72.5,
             "sixPlusRate": 0.8,
             "startsSample": 10
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Pittsburgh Pirates",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 2,
+            "leftHandedBatters": 7,
+            "rawRightHandedBatters": 2,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 3,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.778,
+            "dominantSideEdge": 5,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 12,
+              "leftPa": 9,
+              "rightDamageAllowed": 0.308,
+              "leftDamageAllowed": 0.078,
+              "splitEdge": 0.231
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
           },
           "shadowSharePct": 19.1
         },
@@ -619,6 +847,7 @@
           "score": 60.451,
           "firstUpBaseScore": 60.151,
           "firstUpTrendAdjustment": 0.3,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -648,6 +877,30 @@
             "sixPlusRate": 0.8,
             "startsSample": 10
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Pittsburgh Pirates",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 2,
+            "leftHandedBatters": 7,
+            "rawRightHandedBatters": 2,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 3,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.778,
+            "dominantSideEdge": 5,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 68,
+              "leftPa": 59,
+              "rightDamageAllowed": 0.346,
+              "leftDamageAllowed": 0.475,
+              "splitEdge": 0.128
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 17.7
         },
         {
@@ -672,6 +925,7 @@
           "score": 60.349,
           "firstUpBaseScore": 59.309,
           "firstUpTrendAdjustment": 0.04,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 1,
           "firstUpTrend": {
@@ -701,6 +955,30 @@
             "sixPlusRate": 0.8,
             "startsSample": 10
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Pittsburgh Pirates",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 2,
+            "leftHandedBatters": 7,
+            "rawRightHandedBatters": 2,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 3,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.778,
+            "dominantSideEdge": 5,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 52,
+              "leftPa": 59,
+              "rightDamageAllowed": 0.354,
+              "leftDamageAllowed": 0.32,
+              "splitEdge": 0.034
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 17.7
         }
       ],
@@ -713,7 +991,7 @@
       "confidenceScore": 90
     },
     "home": {
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectedReliefRunsAllowed": 3.7,
       "projectedReliefOuts": 12.07,
@@ -723,7 +1001,7 @@
       "fatigueScore": 41.4,
       "qualityScore": 65,
       "runRiskTier": "stable_bridge",
-      "topTwoSharePct": 49.4,
+      "topTwoSharePct": 49.5,
       "lead": {
         "pitcherName": "Mason Montgomery",
         "pitcherId": null,
@@ -750,9 +1028,10 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "score": 77.776,
+          "score": 78.121,
           "firstUpBaseScore": 76.776,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0.345,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 1,
           "firstUpTrend": null,
@@ -767,7 +1046,34 @@
             "sixPlusRate": 0.7,
             "startsSample": 10
           },
-          "shadowSharePct": 25.4
+          "lineupMatchupContext": {
+            "opponentTeamName": "Miami Marlins",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 4,
+            "leftHandedBatters": 5,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 5,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 61,
+              "leftPa": 39,
+              "rightDamageAllowed": 0.479,
+              "leftDamageAllowed": 0.365,
+              "splitEdge": 0.113
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.25,
+            "splitStrength": 0.628,
+            "fit": true,
+            "reason": "Fresh reliever split fits L-heavy opponent pocket."
+          },
+          "shadowSharePct": 25.5
         },
         {
           "pitcherId": null,
@@ -791,6 +1097,7 @@
           "score": 73.42,
           "firstUpBaseScore": 72.42,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 1,
           "firstUpTrend": null,
@@ -804,6 +1111,24 @@
             "leashScore": 71.1,
             "sixPlusRate": 0.7,
             "startsSample": 10
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Miami Marlins",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 5,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": null,
+            "pitcherSplitSample": null,
+            "freshnessEligible": true,
+            "reason": "Pitcher split sample is too thin for a handedness adjustment."
           },
           "shadowSharePct": 24
         },
@@ -829,6 +1154,7 @@
           "score": 56.711,
           "firstUpBaseScore": 56.411,
           "firstUpTrendAdjustment": 0.3,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -858,6 +1184,30 @@
             "sixPlusRate": 0.7,
             "startsSample": 10
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Miami Marlins",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 5,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 33,
+              "leftPa": 28,
+              "rightDamageAllowed": 0.488,
+              "leftDamageAllowed": 0.279,
+              "splitEdge": 0.209
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 18.5
         },
         {
@@ -882,6 +1232,7 @@
           "score": 49.883,
           "firstUpBaseScore": 49.553,
           "firstUpTrendAdjustment": 0.33,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -911,6 +1262,30 @@
             "sixPlusRate": 0.7,
             "startsSample": 10
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Miami Marlins",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 5,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 113,
+              "leftPa": 135,
+              "rightDamageAllowed": 0.324,
+              "leftDamageAllowed": 0.495,
+              "splitEdge": 0.17
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 16.3
         },
         {
@@ -935,6 +1310,7 @@
           "score": 48.162,
           "firstUpBaseScore": 48.162,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": null,
@@ -956,6 +1332,30 @@
             "leashScore": 71.1,
             "sixPlusRate": 0.7,
             "startsSample": 10
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Miami Marlins",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 4,
+            "leftHandedBatters": 5,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 5,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 67,
+              "leftPa": 37,
+              "rightDamageAllowed": 0.282,
+              "leftDamageAllowed": 0.419,
+              "splitEdge": 0.137
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
           },
           "shadowSharePct": 15.7
         }
@@ -2818,71 +3218,71 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 64.6,
-          "noRunProbabilityPct": 35.4,
-          "awayRunProbabilityPct": 4,
-          "homeRunProbabilityPct": 63.1,
+          "runProbabilityPct": 74,
+          "noRunProbabilityPct": 26,
+          "awayRunProbabilityPct": 9,
+          "homeRunProbabilityPct": 71.4,
           "lean": "Run",
           "strength": "strong",
           "sampleHalves": 138,
           "caution": "Pirates starter has stayed clean in the 1st across recent starts Pirates starter season line is clean early (0% run games, 0/start)",
-          "reason": "YRFI with a 65% modeled chance of at least one first-inning run. Marlins score 4% of the time and Pirates 63.1% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "reason": "YRFI with a 74% modeled chance of at least one first-inning run. Marlins score 9% of the time and Pirates 71.4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.6 is embedded in the first-inning run probability.",
           "sourceModel": "M2 first-inning"
         },
         {
           "inning": 2,
           "phase": "M2 early F5",
-          "runProbabilityPct": 54.7,
-          "noRunProbabilityPct": 45.3,
-          "awayRunProbabilityPct": 28.6,
-          "homeRunProbabilityPct": 26.1,
+          "runProbabilityPct": 53.8,
+          "noRunProbabilityPct": 46.2,
+          "awayRunProbabilityPct": 28.2,
+          "homeRunProbabilityPct": 25.6,
           "lean": "Run",
           "strength": "m2-baseline",
           "sampleHalves": 138,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Marlins F5 runs 1.5; Pirates F5 runs 2.5; Sandy Alcantara: HA 6.5, ER 2.5, win yes +198; Braxton Ashcraft: HA 5.5, ER 2.5, win yes +146; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.8 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Marlins F5 runs 1.5; Pirates F5 runs 2.5; Sandy Alcantara: HA 6.5, ER 2.5, win yes +198; Braxton Ashcraft: HA 5.5, ER 2.5, win yes +146; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 3,
           "phase": "M2 early F5",
-          "runProbabilityPct": 57.2,
-          "noRunProbabilityPct": 42.8,
-          "awayRunProbabilityPct": 28.7,
-          "homeRunProbabilityPct": 28.5,
+          "runProbabilityPct": 56.2,
+          "noRunProbabilityPct": 43.8,
+          "awayRunProbabilityPct": 28.2,
+          "homeRunProbabilityPct": 28,
           "lean": "Run",
           "strength": "m2-baseline",
           "sampleHalves": 138,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Marlins F5 runs 1.5; Pirates F5 runs 2.5; Sandy Alcantara: HA 6.5, ER 2.5, win yes +198; Braxton Ashcraft: HA 5.5, ER 2.5, win yes +146; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.8 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Marlins F5 runs 1.5; Pirates F5 runs 2.5; Sandy Alcantara: HA 6.5, ER 2.5, win yes +198; Braxton Ashcraft: HA 5.5, ER 2.5, win yes +146; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 4,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 61.9,
-          "noRunProbabilityPct": 38.1,
-          "awayRunProbabilityPct": 34.6,
-          "homeRunProbabilityPct": 27.3,
+          "runProbabilityPct": 60.8,
+          "noRunProbabilityPct": 39.2,
+          "awayRunProbabilityPct": 34,
+          "homeRunProbabilityPct": 26.8,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 138,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Marlins F5 runs 1.5; Pirates F5 runs 2.5; Sandy Alcantara: HA 6.5, ER 2.5, win yes +198; Braxton Ashcraft: HA 5.5, ER 2.5, win yes +146; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.8 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Marlins F5 runs 1.5; Pirates F5 runs 2.5; Sandy Alcantara: HA 6.5, ER 2.5, win yes +198; Braxton Ashcraft: HA 5.5, ER 2.5, win yes +146; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 5,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 66.5,
-          "noRunProbabilityPct": 33.5,
-          "awayRunProbabilityPct": 31.2,
-          "homeRunProbabilityPct": 35.3,
+          "runProbabilityPct": 65.5,
+          "noRunProbabilityPct": 34.5,
+          "awayRunProbabilityPct": 30.7,
+          "homeRunProbabilityPct": 34.8,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 138,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Marlins F5 runs 1.5; Pirates F5 runs 2.5; Sandy Alcantara: HA 6.5, ER 2.5, win yes +198; Braxton Ashcraft: HA 5.5, ER 2.5, win yes +146; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.8 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Marlins F5 runs 1.5; Pirates F5 runs 2.5; Sandy Alcantara: HA 6.5, ER 2.5, win yes +198; Braxton Ashcraft: HA 5.5, ER 2.5, win yes +146; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -3049,7 +3449,7 @@
   },
   "lineupContext": {
     "Marlins": {
-      "averageMatchupGrade": 0,
+      "averageMatchupGrade": 0.03,
       "trackedBatters": 9,
       "starterThreatCount": 2,
       "contactCount": 4,
@@ -3063,21 +3463,21 @@
       "topThirdArsenalCount": 2,
       "heaterCount": 3,
       "suppressorCount": 2,
-      "platoonPressureIndex": 64.1,
+      "platoonPressureIndex": 64,
       "pitchTypePressureIndex": 62.5,
       "bullpenPitchTypePressureIndex": null,
-      "starterPressureIndex": 61.3,
-      "overallPressureIndex": 61.3,
-      "topThirdScore": 70,
-      "depthScore": 53.6,
+      "starterPressureIndex": 61.4,
+      "overallPressureIndex": 61.4,
+      "topThirdScore": 69.8,
+      "depthScore": 53.9,
       "bullpenOverperformHitters": []
     },
     "Pirates": {
-      "averageMatchupGrade": 1.55,
+      "averageMatchupGrade": 1.63,
       "trackedBatters": 9,
       "starterThreatCount": 5,
       "contactCount": 5,
-      "powerCount": 4,
+      "powerCount": 3,
       "platoonCount": 8,
       "pitchTypeEdgeCount": 7,
       "oppositeHandCount": 7,
@@ -3092,31 +3492,31 @@
       "bullpenPitchTypePressureIndex": null,
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
-      "topThirdScore": 73.2,
-      "depthScore": 46.4,
+      "topThirdScore": 73.6,
+      "depthScore": 46.8,
       "bullpenOverperformHitters": []
     }
   },
   "lineupBoard": {
     "gameId": "marlins-pirates",
     "title": "Marlins @ Pirates",
-    "snapshot": "2026-06-12T22:28:25.547Z",
+    "snapshot": "2026-06-12T23:24:53.068Z",
     "status": {
       "away": "posted",
       "home": "posted"
     },
     "weather": {
       "icon": "partly-cloudy-day",
-      "summary": "0% 78° Wind 10 mph Out",
+      "summary": "0% 77° Wind 9 mph Out",
       "precipitationPct": 0,
-      "temperatureF": 78,
-      "windMph": 10,
+      "temperatureF": 77,
+      "windMph": 9,
       "windDirection": "Out",
-      "label": "78°F | Wind 10 mph Out | 0% precip"
+      "label": "77°F | Wind 9 mph Out | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "PIT -145",
-      "total": "8.5 Runs",
+      "line": "PIT -167",
+      "total": "6.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -3127,9 +3527,9 @@
         "name": "Braxton Ashcraft",
         "hand": "R",
         "type": "Strike-throwing",
-        "inningsPitched": 79.66666666666667,
+        "inningsPitched": 82.66666666666667,
         "homeRunsAllowed": 8,
-        "homeRunsPerNine": 0.9,
+        "homeRunsPerNine": 0.87,
         "recentHomeRunsAllowed": 4,
         "recentHomeRunsAllowedPerStart": 0.8,
         "recentHomeRunsPerNine": 1.09,
@@ -3156,25 +3556,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 66,
-            "hits": 58,
-            "singles": 39,
+            "gamesPlayed": 67,
+            "hits": 59,
+            "singles": 40,
             "doubles": 6,
             "triples": 1,
             "homeRuns": 12,
             "walks": 25,
-            "totalBases": 102,
-            "atBats": 219,
-            "plateAppearances": 254,
-            "avg": 0.265,
-            "obp": 0.346,
+            "totalBases": 103,
+            "atBats": 221,
+            "plateAppearances": 256,
+            "avg": 0.267,
+            "obp": 0.348,
             "slg": 0.466,
-            "ops": 0.812,
-            "hitRate": 0.22829999999999998,
-            "singlesRate": 0.1535,
-            "hrRate": 0.0472,
-            "walkRate": 0.0984,
-            "totalBasesRate": 0.40159999999999996
+            "ops": 0.814,
+            "hitRate": 0.2305,
+            "singlesRate": 0.1563,
+            "hrRate": 0.046900000000000004,
+            "walkRate": 0.0977,
+            "totalBasesRate": 0.4023
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3220,17 +3620,17 @@
             "totalBasesRate": 0.43810000000000004
           },
           "metrics": {
-            "powerScore": 68.7,
-            "contactScore": 74,
-            "patienceScore": 57.2,
+            "powerScore": 68.6,
+            "contactScore": 74.3,
+            "patienceScore": 56.8,
             "formScore": 18,
-            "splitScore": 64.8,
+            "splitScore": 64.6,
             "varianceScore": 57.1,
             "pitchTypeFitScore": 77.9,
             "pitchTypeGrade": 1.98,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 69.1,
-            "matchupGrade": 4.46
+            "matchupScore": 69,
+            "matchupGrade": 4.42
           },
           "pitchType": {
             "fitScore": 77.9,
@@ -3355,8 +3755,8 @@
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".265 AVG | .812 OPS | 58 H | 12 HR | 12g: .238 AVG | .673 OPS | 10 H | 0 HR | vs RHP: .282 AVG | .865 OPS | 11 HR | career 608 PA | .736 OPS | 17 HR | contact-stable profile | power 50 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit +2.0 | +4.5 matchup grade in a in-zone lane",
-          "matchupNote": "+4.46 vs Braxton Ashcraft"
+          "summary": ".267 AVG | .814 OPS | 59 H | 12 HR | 12g: .238 AVG | .673 OPS | 10 H | 0 HR | vs RHP: .282 AVG | .865 OPS | 11 HR | career 608 PA | .736 OPS | 17 HR | contact-stable profile | power 50 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit +2.0 | +4.4 matchup grade in a in-zone lane",
+          "matchupNote": "+4.42 vs Braxton Ashcraft"
         },
         {
           "playerId": 672640,
@@ -3376,7 +3776,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 68,
+            "gamesPlayed": 69,
             "hits": 93,
             "singles": 67,
             "doubles": 18,
@@ -3384,17 +3784,17 @@
             "homeRuns": 5,
             "walks": 10,
             "totalBases": 132,
-            "atBats": 270,
-            "plateAppearances": 288,
-            "avg": 0.344,
-            "obp": 0.372,
-            "slg": 0.489,
-            "ops": 0.86,
-            "hitRate": 0.32289999999999996,
-            "singlesRate": 0.23260000000000003,
-            "hrRate": 0.0174,
-            "walkRate": 0.0347,
-            "totalBasesRate": 0.4583
+            "atBats": 272,
+            "plateAppearances": 290,
+            "avg": 0.342,
+            "obp": 0.369,
+            "slg": 0.485,
+            "ops": 0.854,
+            "hitRate": 0.3207,
+            "singlesRate": 0.231,
+            "hrRate": 0.0172,
+            "walkRate": 0.0345,
+            "totalBasesRate": 0.45520000000000005
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3440,12 +3840,12 @@
             "totalBasesRate": 0.40369999999999995
           },
           "metrics": {
-            "powerScore": 47.8,
-            "contactScore": 80.6,
-            "patienceScore": 30.9,
-            "formScore": 64.5,
-            "splitScore": 31.6,
-            "varianceScore": 75.3,
+            "powerScore": 47.4,
+            "contactScore": 80.2,
+            "patienceScore": 30.8,
+            "formScore": 65.8,
+            "splitScore": 32.9,
+            "varianceScore": 75.4,
             "pitchTypeFitScore": 78.4,
             "pitchTypeGrade": 3.24,
             "pitchTypeCoveragePct": 100,
@@ -3575,7 +3975,7 @@
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".344 AVG | .860 OPS | 93 H | 5 HR | 12g: .423 AVG | 1.038 OPS | 22 H | 0 HR | vs RHP: .300 AVG | .768 OPS | 4 HR | career 1286 PA | .710 OPS | 25 HR | contact-stable profile | power 43 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit +3.2 | +10.0 matchup grade in a in-zone lane",
+          "summary": ".342 AVG | .854 OPS | 93 H | 5 HR | 12g: .423 AVG | 1.038 OPS | 22 H | 0 HR | vs RHP: .300 AVG | .768 OPS | 4 HR | career 1286 PA | .710 OPS | 25 HR | contact-stable profile | power 43 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit +3.2 | +10.0 matchup grade in a in-zone lane",
           "matchupNote": "+10.00 vs Braxton Ashcraft"
         },
         {
@@ -3596,25 +3996,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 46,
-            "hits": 36,
-            "singles": 19,
+            "gamesPlayed": 47,
+            "hits": 37,
+            "singles": 20,
             "doubles": 11,
             "triples": 1,
             "homeRuns": 5,
             "walks": 18,
-            "totalBases": 64,
-            "atBats": 169,
-            "plateAppearances": 192,
-            "avg": 0.213,
-            "obp": 0.298,
-            "slg": 0.379,
-            "ops": 0.677,
-            "hitRate": 0.1875,
-            "singlesRate": 0.099,
-            "hrRate": 0.026000000000000002,
-            "walkRate": 0.09380000000000001,
-            "totalBasesRate": 0.3333
+            "totalBases": 65,
+            "atBats": 171,
+            "plateAppearances": 194,
+            "avg": 0.216,
+            "obp": 0.301,
+            "slg": 0.38,
+            "ops": 0.681,
+            "hitRate": 0.1907,
+            "singlesRate": 0.10310000000000001,
+            "hrRate": 0.0258,
+            "walkRate": 0.0928,
+            "totalBasesRate": 0.33509999999999995
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3661,16 +4061,16 @@
           },
           "metrics": {
             "powerScore": 47.2,
-            "contactScore": 35.3,
-            "patienceScore": 56.3,
-            "formScore": 49,
-            "splitScore": 66.3,
-            "varianceScore": 68.2,
+            "contactScore": 35.9,
+            "patienceScore": 55.8,
+            "formScore": 48.2,
+            "splitScore": 65.5,
+            "varianceScore": 67.7,
             "pitchTypeFitScore": 51.2,
             "pitchTypeGrade": -1.76,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 46.8,
-            "matchupGrade": -1.16
+            "matchupScore": 46.3,
+            "matchupGrade": -1.24
           },
           "pitchType": {
             "fitScore": 51.2,
@@ -3793,8 +4193,8 @@
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".213 AVG | .677 OPS | 36 H | 5 HR | 12g: .150 AVG | .630 OPS | 6 H | 2 HR | vs RHP: .223 AVG | .733 OPS | 5 HR | career 949 PA | .758 OPS | 34 HR | baseline career profile | power 60 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit -1.8 | -1.2 matchup grade in a in-zone lane",
-          "matchupNote": "-1.16 vs Braxton Ashcraft"
+          "summary": ".216 AVG | .681 OPS | 37 H | 5 HR | 12g: .150 AVG | .630 OPS | 6 H | 2 HR | vs RHP: .223 AVG | .733 OPS | 5 HR | career 949 PA | .758 OPS | 34 HR | baseline career profile | power 60 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit -1.8 | -1.2 matchup grade in a in-zone lane",
+          "matchupNote": "-1.24 vs Braxton Ashcraft"
         },
         {
           "playerId": 669364,
@@ -3814,25 +4214,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 69,
-            "hits": 77,
-            "singles": 56,
+            "gamesPlayed": 70,
+            "hits": 78,
+            "singles": 57,
             "doubles": 11,
             "triples": 4,
             "homeRuns": 6,
             "walks": 36,
-            "totalBases": 114,
-            "atBats": 253,
-            "plateAppearances": 292,
-            "avg": 0.304,
-            "obp": 0.388,
+            "totalBases": 115,
+            "atBats": 255,
+            "plateAppearances": 294,
+            "avg": 0.306,
+            "obp": 0.389,
             "slg": 0.451,
-            "ops": 0.839,
-            "hitRate": 0.2637,
-            "singlesRate": 0.1918,
-            "hrRate": 0.020499999999999997,
-            "walkRate": 0.1233,
-            "totalBasesRate": 0.39039999999999997
+            "ops": 0.84,
+            "hitRate": 0.26530000000000004,
+            "singlesRate": 0.19390000000000002,
+            "hrRate": 0.0204,
+            "walkRate": 0.12240000000000001,
+            "totalBasesRate": 0.3912
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3879,16 +4279,16 @@
           },
           "metrics": {
             "powerScore": 39,
-            "contactScore": 78.2,
-            "patienceScore": 63.2,
+            "contactScore": 78,
+            "patienceScore": 62.9,
             "formScore": 18,
-            "splitScore": 33.7,
-            "varianceScore": 85.4,
+            "splitScore": 33.4,
+            "varianceScore": 86.1,
             "pitchTypeFitScore": 57.1,
             "pitchTypeGrade": 0.15,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 25.2,
-            "matchupGrade": -4.77
+            "matchupScore": 25,
+            "matchupGrade": -4.82
           },
           "pitchType": {
             "fitScore": 57.1,
@@ -4012,8 +4412,8 @@
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".304 AVG | .839 OPS | 77 H | 6 HR | 12g: .222 AVG | .527 OPS | 8 H | 0 HR | vs RHP: .299 AVG | .809 OPS | 2 HR | career 1261 PA | .759 OPS | 10 HR | contact-stable profile | power 33 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit +0.1 | -4.8 matchup grade in a in-zone lane",
-          "matchupNote": "-4.77 vs Braxton Ashcraft"
+          "summary": ".306 AVG | .840 OPS | 78 H | 6 HR | 12g: .222 AVG | .527 OPS | 8 H | 0 HR | vs RHP: .299 AVG | .809 OPS | 2 HR | career 1261 PA | .759 OPS | 10 HR | contact-stable profile | power 33 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit +0.1 | -4.8 matchup grade in a in-zone lane",
+          "matchupNote": "-4.82 vs Braxton Ashcraft"
         },
         {
           "playerId": 681715,
@@ -4033,7 +4433,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 42,
+            "gamesPlayed": 43,
             "hits": 27,
             "singles": 21,
             "doubles": 0,
@@ -4041,17 +4441,17 @@
             "homeRuns": 5,
             "walks": 12,
             "totalBases": 44,
-            "atBats": 119,
-            "plateAppearances": 133,
-            "avg": 0.227,
-            "obp": 0.301,
-            "slg": 0.37,
-            "ops": 0.67,
-            "hitRate": 0.203,
-            "singlesRate": 0.15789999999999998,
-            "hrRate": 0.037599999999999995,
-            "walkRate": 0.0902,
-            "totalBasesRate": 0.3308
+            "atBats": 121,
+            "plateAppearances": 135,
+            "avg": 0.223,
+            "obp": 0.296,
+            "slg": 0.364,
+            "ops": 0.66,
+            "hitRate": 0.2,
+            "singlesRate": 0.15560000000000002,
+            "hrRate": 0.037000000000000005,
+            "walkRate": 0.0889,
+            "totalBasesRate": 0.3259
           },
           "recent": {
             "gamesPlayed": 8,
@@ -4097,17 +4497,17 @@
             "totalBasesRate": 0.3014
           },
           "metrics": {
-            "powerScore": 45,
-            "contactScore": 44.2,
-            "patienceScore": 53.6,
+            "powerScore": 44.2,
+            "contactScore": 43.2,
+            "patienceScore": 53.2,
             "formScore": 18,
-            "splitScore": 39.8,
-            "varianceScore": 54.8,
+            "splitScore": 42.4,
+            "varianceScore": 52,
             "pitchTypeFitScore": 69.4,
             "pitchTypeGrade": 1.93,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 40.9,
-            "matchupGrade": -1.47
+            "matchupScore": 42.3,
+            "matchupGrade": -1.2
           },
           "pitchType": {
             "fitScore": 69.4,
@@ -4230,8 +4630,8 @@
             "statcast fade"
           ],
           "primaryTag": "arsenal edge",
-          "summary": ".227 AVG | .670 OPS | 27 H | 5 HR | 8g: .308 AVG | .615 OPS | 8 H | 0 HR | vs RHP: .242 AVG | .648 OPS | 2 HR | career 402 PA | .727 OPS | 12 HR | baseline career profile | power 46 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit +1.9 | -1.5 matchup grade in a in-zone lane",
-          "matchupNote": "-1.47 vs Braxton Ashcraft"
+          "summary": ".223 AVG | .660 OPS | 27 H | 5 HR | 8g: .308 AVG | .615 OPS | 8 H | 0 HR | vs RHP: .242 AVG | .648 OPS | 2 HR | career 402 PA | .727 OPS | 12 HR | baseline career profile | power 46 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit +1.9 | -1.2 matchup grade in a in-zone lane",
+          "matchupNote": "-1.20 vs Braxton Ashcraft"
         },
         {
           "playerId": 683357,
@@ -4251,7 +4651,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 59,
+            "gamesPlayed": 60,
             "hits": 35,
             "singles": 20,
             "doubles": 9,
@@ -4259,17 +4659,17 @@
             "homeRuns": 6,
             "walks": 14,
             "totalBases": 62,
-            "atBats": 163,
-            "plateAppearances": 184,
-            "avg": 0.215,
-            "obp": 0.277,
-            "slg": 0.38,
-            "ops": 0.658,
-            "hitRate": 0.1902,
-            "singlesRate": 0.10869999999999999,
-            "hrRate": 0.0326,
-            "walkRate": 0.0761,
-            "totalBasesRate": 0.337
+            "atBats": 164,
+            "plateAppearances": 185,
+            "avg": 0.213,
+            "obp": 0.276,
+            "slg": 0.378,
+            "ops": 0.654,
+            "hitRate": 0.1892,
+            "singlesRate": 0.1081,
+            "hrRate": 0.032400000000000005,
+            "walkRate": 0.0757,
+            "totalBasesRate": 0.33509999999999995
           },
           "recent": {
             "gamesPlayed": 10,
@@ -4315,11 +4715,11 @@
             "totalBasesRate": 0.35259999999999997
           },
           "metrics": {
-            "powerScore": 49.8,
+            "powerScore": 49.5,
             "contactScore": 18.8,
-            "patienceScore": 47.5,
-            "formScore": 28.6,
-            "splitScore": 58.4,
+            "patienceScore": 47.4,
+            "formScore": 29.5,
+            "splitScore": 59.3,
             "varianceScore": 92,
             "pitchTypeFitScore": 28.7,
             "pitchTypeGrade": -3.96,
@@ -4449,7 +4849,7 @@
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".215 AVG | .658 OPS | 35 H | 6 HR | 10g: .071 AVG | .352 OPS | 2 H | 2 HR | vs RHP: .217 AVG | .674 OPS | 6 HR | career 187 PA | .672 OPS | 6 HR | baseline career profile | power 53 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit -4.0 | -8.0 matchup grade in a in-zone lane",
+          "summary": ".213 AVG | .654 OPS | 35 H | 6 HR | 10g: .071 AVG | .352 OPS | 2 H | 2 HR | vs RHP: .217 AVG | .674 OPS | 6 HR | career 187 PA | .672 OPS | 6 HR | baseline career profile | power 53 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit -4.0 | -8.0 matchup grade in a in-zone lane",
           "matchupNote": "-8.00 vs Braxton Ashcraft"
         },
         {
@@ -4470,25 +4870,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 67,
+            "gamesPlayed": 68,
             "hits": 47,
             "singles": 33,
             "doubles": 8,
             "triples": 3,
             "homeRuns": 3,
-            "walks": 39,
+            "walks": 40,
             "totalBases": 70,
             "atBats": 229,
-            "plateAppearances": 277,
+            "plateAppearances": 278,
             "avg": 0.205,
-            "obp": 0.337,
+            "obp": 0.339,
             "slg": 0.306,
-            "ops": 0.643,
-            "hitRate": 0.1697,
-            "singlesRate": 0.1191,
+            "ops": 0.645,
+            "hitRate": 0.1691,
+            "singlesRate": 0.11869999999999999,
             "hrRate": 0.0108,
-            "walkRate": 0.1408,
-            "totalBasesRate": 0.2527
+            "walkRate": 0.1439,
+            "totalBasesRate": 0.2518
           },
           "recent": {
             "gamesPlayed": 12,
@@ -4535,16 +4935,16 @@
           },
           "metrics": {
             "powerScore": 21.3,
-            "contactScore": 43.6,
-            "patienceScore": 76.5,
-            "formScore": 84.1,
-            "splitScore": 48.6,
-            "varianceScore": 83.3,
+            "contactScore": 43.5,
+            "patienceScore": 77.6,
+            "formScore": 83.9,
+            "splitScore": 48.4,
+            "varianceScore": 83.1,
             "pitchTypeFitScore": 31.4,
             "pitchTypeGrade": -4.68,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 55.4,
-            "matchupGrade": 0.78
+            "matchupScore": 55,
+            "matchupGrade": 0.7
           },
           "pitchType": {
             "fitScore": 31.4,
@@ -4668,8 +5068,8 @@
             "statcast fade"
           ],
           "primaryTag": "heater",
-          "summary": ".205 AVG | .643 OPS | 47 H | 3 HR | 12g: .308 AVG | .885 OPS | 8 H | 0 HR | vs RHP: .215 AVG | .629 OPS | 2 HR | career 482 PA | .732 OPS | 8 HR | baseline career profile | power 33 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit -4.7 | +0.8 matchup grade in a in-zone lane",
-          "matchupNote": "+0.78 vs Braxton Ashcraft"
+          "summary": ".205 AVG | .645 OPS | 47 H | 3 HR | 12g: .308 AVG | .885 OPS | 8 H | 0 HR | vs RHP: .215 AVG | .629 OPS | 2 HR | career 482 PA | .732 OPS | 8 HR | baseline career profile | power 33 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit -4.7 | +0.7 matchup grade in a in-zone lane",
+          "matchupNote": "+0.70 vs Braxton Ashcraft"
         },
         {
           "playerId": 691788,
@@ -4689,7 +5089,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 29,
+            "gamesPlayed": 30,
             "hits": 22,
             "singles": 17,
             "doubles": 4,
@@ -4697,17 +5097,17 @@
             "homeRuns": 1,
             "walks": 5,
             "totalBases": 29,
-            "atBats": 90,
-            "plateAppearances": 97,
-            "avg": 0.244,
-            "obp": 0.284,
-            "slg": 0.322,
-            "ops": 0.606,
-            "hitRate": 0.2268,
-            "singlesRate": 0.1753,
-            "hrRate": 0.0103,
-            "walkRate": 0.051500000000000004,
-            "totalBasesRate": 0.299
+            "atBats": 91,
+            "plateAppearances": 98,
+            "avg": 0.242,
+            "obp": 0.281,
+            "slg": 0.319,
+            "ops": 0.6,
+            "hitRate": 0.2245,
+            "singlesRate": 0.17350000000000002,
+            "hrRate": 0.0102,
+            "walkRate": 0.051,
+            "totalBasesRate": 0.2959
           },
           "recent": {
             "gamesPlayed": 10,
@@ -4753,17 +5153,17 @@
             "totalBasesRate": 0.3194
           },
           "metrics": {
-            "powerScore": 26,
-            "contactScore": 39.9,
-            "patienceScore": 37.6,
-            "formScore": 52,
-            "splitScore": 57.5,
-            "varianceScore": 64.6,
+            "powerScore": 25.6,
+            "contactScore": 38.4,
+            "patienceScore": 37.5,
+            "formScore": 53.4,
+            "splitScore": 58.9,
+            "varianceScore": 67.4,
             "pitchTypeFitScore": 58.4,
             "pitchTypeGrade": -0.05,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 48.6,
-            "matchupGrade": -0.76
+            "matchupScore": 49.5,
+            "matchupGrade": -0.63
           },
           "pitchType": {
             "fitScore": 58.4,
@@ -4885,8 +5285,8 @@
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".244 AVG | .606 OPS | 22 H | 1 HR | 10g: .294 AVG | .647 OPS | 10 H | 0 HR | vs RHP: .250 AVG | .630 OPS | 1 HR | career 68 PA | .500 OPS | 0 HR | unproven MLB sample | power 26 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit -0.0 | -0.8 matchup grade in a in-zone lane",
-          "matchupNote": "-0.76 vs Braxton Ashcraft"
+          "summary": ".242 AVG | .600 OPS | 22 H | 1 HR | 10g: .294 AVG | .647 OPS | 10 H | 0 HR | vs RHP: .250 AVG | .630 OPS | 1 HR | career 68 PA | .500 OPS | 0 HR | unproven MLB sample | power 26 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit -0.0 | -0.6 matchup grade in a in-zone lane",
+          "matchupNote": "-0.63 vs Braxton Ashcraft"
         },
         {
           "playerId": 691594,
@@ -4906,7 +5306,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 52,
+            "gamesPlayed": 53,
             "hits": 38,
             "singles": 26,
             "doubles": 10,
@@ -4914,17 +5314,17 @@
             "homeRuns": 2,
             "walks": 10,
             "totalBases": 54,
-            "atBats": 146,
-            "plateAppearances": 157,
-            "avg": 0.26,
-            "obp": 0.308,
-            "slg": 0.37,
-            "ops": 0.678,
-            "hitRate": 0.242,
-            "singlesRate": 0.1656,
+            "atBats": 147,
+            "plateAppearances": 158,
+            "avg": 0.259,
+            "obp": 0.306,
+            "slg": 0.367,
+            "ops": 0.673,
+            "hitRate": 0.24050000000000002,
+            "singlesRate": 0.1646,
             "hrRate": 0.0127,
-            "walkRate": 0.0637,
-            "totalBasesRate": 0.3439
+            "walkRate": 0.0633,
+            "totalBasesRate": 0.3418
           },
           "recent": {
             "gamesPlayed": 12,
@@ -4970,17 +5370,17 @@
             "totalBasesRate": 0.3084
           },
           "metrics": {
-            "powerScore": 24.7,
-            "contactScore": 66.4,
-            "patienceScore": 41.5,
+            "powerScore": 24.4,
+            "contactScore": 66.1,
+            "patienceScore": 41.3,
             "formScore": 92,
-            "splitScore": 33.6,
-            "varianceScore": 59,
+            "splitScore": 34.5,
+            "varianceScore": 59.1,
             "pitchTypeFitScore": 43.3,
             "pitchTypeGrade": -1.84,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 56.7,
-            "matchupGrade": 0.95
+            "matchupScore": 57.3,
+            "matchupGrade": 1.07
           },
           "pitchType": {
             "fitScore": 43.3,
@@ -5104,8 +5504,8 @@
             "statcast fade"
           ],
           "primaryTag": "heater",
-          "summary": ".260 AVG | .678 OPS | 38 H | 2 HR | 12g: .333 AVG | .833 OPS | 12 H | 2 HR | vs RHP: .263 AVG | .645 OPS | 0 HR | career 512 PA | .672 OPS | 7 HR | contact-stable profile | power 33 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit -1.8 | +0.9 matchup grade in a in-zone lane",
-          "matchupNote": "+0.95 vs Braxton Ashcraft"
+          "summary": ".259 AVG | .673 OPS | 38 H | 2 HR | 12g: .333 AVG | .833 OPS | 12 H | 2 HR | vs RHP: .263 AVG | .645 OPS | 0 HR | career 512 PA | .672 OPS | 7 HR | contact-stable profile | power 33 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit -1.8 | +1.1 matchup grade in a in-zone lane",
+          "matchupNote": "+1.07 vs Braxton Ashcraft"
         }
       ],
       "bvpHistory": {
@@ -5114,7 +5514,7 @@
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 0,
+        "averageMatchupGrade": 0.03,
         "trackedBatters": 9,
         "starterThreatCount": 2,
         "contactCount": 4,
@@ -5128,13 +5528,13 @@
         "topThirdArsenalCount": 2,
         "heaterCount": 3,
         "suppressorCount": 2,
-        "platoonPressureIndex": 64.1,
+        "platoonPressureIndex": 64,
         "pitchTypePressureIndex": 62.5,
         "bullpenPitchTypePressureIndex": null,
-        "starterPressureIndex": 61.3,
-        "overallPressureIndex": 61.3,
-        "topThirdScore": 70,
-        "depthScore": 53.6,
+        "starterPressureIndex": 61.4,
+        "overallPressureIndex": 61.4,
+        "topThirdScore": 69.8,
+        "depthScore": 53.9,
         "bullpenOverperformHitters": []
       },
       "summary": {
@@ -5146,7 +5546,7 @@
           },
           {
             "name": "Liam Hicks",
-            "tag": "split edge | +4.46 vs Braxton Ashcraft"
+            "tag": "split edge | +4.42 vs Braxton Ashcraft"
           }
         ],
         "bullpenOverperformHitters": [],
@@ -5157,15 +5557,15 @@
           },
           {
             "name": "Xavier Edwards",
-            "tag": "split edge | -4.77 vs Braxton Ashcraft"
+            "tag": "split edge | -4.82 vs Braxton Ashcraft"
           }
         ],
         "underperformNote": "Owen Caissie and Xavier Edwards carry the softer form or split fit into a strike-throwing lane.",
         "overview": "Marlins can lean on Otto Lopez, Liam Hicks to drive early pressure against Braxton Ashcraft.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-        "topThirdScore": 70,
-        "middleScore": 28,
-        "depthScore": 53.6,
+        "topThirdScore": 69.8,
+        "middleScore": 28.4,
+        "depthScore": 53.9,
         "bullpenPitchTypeSummary": null
       }
     },
@@ -5177,9 +5577,9 @@
         "name": "Sandy Alcantara",
         "hand": "R",
         "type": "Balanced",
-        "inningsPitched": 89.33333333333333,
+        "inningsPitched": 91.33333333333333,
         "homeRunsAllowed": 10,
-        "homeRunsPerNine": 1.01,
+        "homeRunsPerNine": 0.99,
         "recentHomeRunsAllowed": 5,
         "recentHomeRunsAllowedPerStart": 1,
         "recentHomeRunsPerNine": 1.61,
@@ -5206,7 +5606,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 63,
+            "gamesPlayed": 64,
             "hits": 60,
             "singles": 42,
             "doubles": 8,
@@ -5214,17 +5614,17 @@
             "homeRuns": 9,
             "walks": 33,
             "totalBases": 97,
-            "atBats": 206,
-            "plateAppearances": 245,
-            "avg": 0.291,
-            "obp": 0.388,
-            "slg": 0.471,
-            "ops": 0.859,
-            "hitRate": 0.24489999999999998,
-            "singlesRate": 0.1714,
-            "hrRate": 0.036699999999999997,
-            "walkRate": 0.13470000000000001,
-            "totalBasesRate": 0.39590000000000003
+            "atBats": 207,
+            "plateAppearances": 246,
+            "avg": 0.29,
+            "obp": 0.386,
+            "slg": 0.469,
+            "ops": 0.855,
+            "hitRate": 0.2439,
+            "singlesRate": 0.1707,
+            "hrRate": 0.0366,
+            "walkRate": 0.1341,
+            "totalBasesRate": 0.3943
           },
           "recent": {
             "gamesPlayed": 10,
@@ -5270,12 +5670,12 @@
             "totalBasesRate": 0.4208
           },
           "metrics": {
-            "powerScore": 62.2,
-            "contactScore": 72.6,
-            "patienceScore": 68.9,
+            "powerScore": 61.9,
+            "contactScore": 72.3,
+            "patienceScore": 68.7,
             "formScore": 92,
-            "splitScore": 57.8,
-            "varianceScore": 67.6,
+            "splitScore": 58.7,
+            "varianceScore": 68.7,
             "pitchTypeFitScore": 74.9,
             "pitchTypeGrade": 4.99,
             "pitchTypeCoveragePct": 100,
@@ -5406,7 +5806,7 @@
             "statcast fade"
           ],
           "primaryTag": "carry",
-          "summary": ".291 AVG | .859 OPS | 60 H | 9 HR | 10g: .350 AVG | 1.059 OPS | 14 H | 4 HR | vs RHP: .298 AVG | .888 OPS | 8 HR | career 1041 PA | .798 OPS | 31 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +5.0 | +10.0 matchup grade in a neutral lane",
+          "summary": ".290 AVG | .855 OPS | 60 H | 9 HR | 10g: .350 AVG | 1.059 OPS | 14 H | 4 HR | vs RHP: .298 AVG | .888 OPS | 8 HR | career 1041 PA | .798 OPS | 31 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +5.0 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Sandy Alcantara"
         },
         {
@@ -5427,7 +5827,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 63,
+            "gamesPlayed": 64,
             "hits": 60,
             "singles": 27,
             "doubles": 16,
@@ -5435,17 +5835,17 @@
             "homeRuns": 16,
             "walks": 30,
             "totalBases": 126,
-            "atBats": 241,
-            "plateAppearances": 275,
-            "avg": 0.249,
-            "obp": 0.335,
-            "slg": 0.523,
-            "ops": 0.857,
-            "hitRate": 0.2182,
-            "singlesRate": 0.09820000000000001,
-            "hrRate": 0.0582,
-            "walkRate": 0.1091,
-            "totalBasesRate": 0.4582
+            "atBats": 242,
+            "plateAppearances": 276,
+            "avg": 0.248,
+            "obp": 0.333,
+            "slg": 0.521,
+            "ops": 0.854,
+            "hitRate": 0.21739999999999998,
+            "singlesRate": 0.0978,
+            "hrRate": 0.057999999999999996,
+            "walkRate": 0.10869999999999999,
+            "totalBasesRate": 0.45649999999999996
           },
           "recent": {
             "gamesPlayed": 12,
@@ -5491,17 +5891,17 @@
             "totalBasesRate": 0.5181
           },
           "metrics": {
-            "powerScore": 87.6,
-            "contactScore": 52.2,
-            "patienceScore": 60.2,
+            "powerScore": 87.3,
+            "contactScore": 51.6,
+            "patienceScore": 60.1,
             "formScore": 18,
-            "splitScore": 72.4,
+            "splitScore": 73.2,
             "varianceScore": 92,
             "pitchTypeFitScore": 72.8,
             "pitchTypeGrade": 3.27,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 66,
-            "matchupGrade": 3.64
+            "matchupScore": 66.6,
+            "matchupGrade": 3.78
           },
           "pitchType": {
             "fitScore": 72.8,
@@ -5626,8 +6026,8 @@
             "career power"
           ],
           "primaryTag": "split edge",
-          "summary": ".249 AVG | .857 OPS | 60 H | 16 HR | 12g: .158 AVG | .682 OPS | 6 H | 2 HR | vs RHP: .275 AVG | .967 OPS | 12 HR | career 3227 PA | .812 OPS | 171 HR | repeatable career power | power 88 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +3.3 | +3.6 matchup grade in a neutral lane",
-          "matchupNote": "+3.64 vs Sandy Alcantara"
+          "summary": ".248 AVG | .854 OPS | 60 H | 16 HR | 12g: .158 AVG | .682 OPS | 6 H | 2 HR | vs RHP: .275 AVG | .967 OPS | 12 HR | career 3227 PA | .812 OPS | 171 HR | repeatable career power | power 88 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +3.3 | +3.8 matchup grade in a neutral lane",
+          "matchupNote": "+3.78 vs Sandy Alcantara"
         },
         {
           "playerId": 668804,
@@ -5647,7 +6047,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 69,
+            "gamesPlayed": 70,
             "hits": 65,
             "singles": 42,
             "doubles": 14,
@@ -5655,17 +6055,17 @@
             "homeRuns": 7,
             "walks": 46,
             "totalBases": 104,
-            "atBats": 245,
-            "plateAppearances": 298,
-            "avg": 0.265,
-            "obp": 0.389,
-            "slg": 0.424,
-            "ops": 0.814,
-            "hitRate": 0.2181,
-            "singlesRate": 0.1409,
-            "hrRate": 0.0235,
-            "walkRate": 0.15439999999999998,
-            "totalBasesRate": 0.349
+            "atBats": 246,
+            "plateAppearances": 299,
+            "avg": 0.264,
+            "obp": 0.388,
+            "slg": 0.423,
+            "ops": 0.811,
+            "hitRate": 0.21739999999999998,
+            "singlesRate": 0.1405,
+            "hrRate": 0.023399999999999997,
+            "walkRate": 0.15380000000000002,
+            "totalBasesRate": 0.3478
           },
           "recent": {
             "gamesPlayed": 12,
@@ -5711,17 +6111,17 @@
             "totalBasesRate": 0.2929
           },
           "metrics": {
-            "powerScore": 44.1,
-            "contactScore": 53.7,
-            "patienceScore": 78,
-            "formScore": 50.5,
-            "splitScore": 27,
-            "varianceScore": 62,
+            "powerScore": 43.9,
+            "contactScore": 53.4,
+            "patienceScore": 77.8,
+            "formScore": 51.2,
+            "splitScore": 27.6,
+            "varianceScore": 60.9,
             "pitchTypeFitScore": 72.3,
             "pitchTypeGrade": 3.96,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 59.6,
-            "matchupGrade": 2.28
+            "matchupScore": 60.2,
+            "matchupGrade": 2.4
           },
           "pitchType": {
             "fitScore": 72.3,
@@ -5844,8 +6244,8 @@
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".265 AVG | .814 OPS | 65 H | 7 HR | 12g: .217 AVG | .742 OPS | 10 H | 2 HR | vs RHP: .237 AVG | .736 OPS | 3 HR | career 4254 PA | .807 OPS | 144 HR | baseline career profile | power 62 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +4.0 | +2.3 matchup grade in a neutral lane",
-          "matchupNote": "+2.28 vs Sandy Alcantara"
+          "summary": ".264 AVG | .811 OPS | 65 H | 7 HR | 12g: .217 AVG | .742 OPS | 10 H | 2 HR | vs RHP: .237 AVG | .736 OPS | 3 HR | career 4254 PA | .807 OPS | 144 HR | baseline career profile | power 62 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +4.0 | +2.4 matchup grade in a neutral lane",
+          "matchupNote": "+2.40 vs Sandy Alcantara"
         },
         {
           "playerId": 656811,
@@ -5865,7 +6265,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 54,
+            "gamesPlayed": 55,
             "hits": 55,
             "singles": 39,
             "doubles": 6,
@@ -5873,17 +6273,17 @@
             "homeRuns": 10,
             "walks": 20,
             "totalBases": 91,
-            "atBats": 194,
-            "plateAppearances": 218,
-            "avg": 0.284,
-            "obp": 0.353,
-            "slg": 0.469,
-            "ops": 0.822,
-            "hitRate": 0.2523,
-            "singlesRate": 0.1789,
-            "hrRate": 0.045899999999999996,
-            "walkRate": 0.0917,
-            "totalBasesRate": 0.4174
+            "atBats": 195,
+            "plateAppearances": 219,
+            "avg": 0.282,
+            "obp": 0.352,
+            "slg": 0.467,
+            "ops": 0.818,
+            "hitRate": 0.2511,
+            "singlesRate": 0.17809999999999998,
+            "hrRate": 0.045700000000000005,
+            "walkRate": 0.0913,
+            "totalBasesRate": 0.4155
           },
           "recent": {
             "gamesPlayed": 12,
@@ -5929,17 +6329,17 @@
             "totalBasesRate": 0.43670000000000003
           },
           "metrics": {
-            "powerScore": 69.7,
-            "contactScore": 61.6,
-            "patienceScore": 53,
+            "powerScore": 69.4,
+            "contactScore": 61.3,
+            "patienceScore": 52.9,
             "formScore": 18,
-            "splitScore": 66,
+            "splitScore": 67,
             "varianceScore": 92,
             "pitchTypeFitScore": 70.3,
             "pitchTypeGrade": 2.91,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 37,
-            "matchupGrade": -3.05
+            "matchupScore": 37.8,
+            "matchupGrade": -2.89
           },
           "pitchType": {
             "fitScore": 70.3,
@@ -6063,8 +6463,8 @@
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".284 AVG | .822 OPS | 55 H | 10 HR | 12g: .190 AVG | .524 OPS | 8 H | 2 HR | vs RHP: .299 AVG | .890 OPS | 8 HR | career 2660 PA | .750 OPS | 92 HR | baseline career profile | power 61 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +2.9 | -3.0 matchup grade in a neutral lane",
-          "matchupNote": "-3.05 vs Sandy Alcantara"
+          "summary": ".282 AVG | .818 OPS | 55 H | 10 HR | 12g: .190 AVG | .524 OPS | 8 H | 2 HR | vs RHP: .299 AVG | .890 OPS | 8 HR | career 2660 PA | .750 OPS | 92 HR | baseline career profile | power 61 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +2.9 | -2.9 matchup grade in a neutral lane",
+          "matchupNote": "-2.89 vs Sandy Alcantara"
         },
         {
           "playerId": 693304,
@@ -6084,7 +6484,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 63,
+            "gamesPlayed": 64,
             "hits": 71,
             "singles": 58,
             "doubles": 11,
@@ -6092,17 +6492,17 @@
             "homeRuns": 2,
             "walks": 16,
             "totalBases": 88,
-            "atBats": 235,
-            "plateAppearances": 255,
-            "avg": 0.302,
-            "obp": 0.353,
-            "slg": 0.374,
-            "ops": 0.727,
-            "hitRate": 0.2784,
-            "singlesRate": 0.2275,
+            "atBats": 236,
+            "plateAppearances": 256,
+            "avg": 0.301,
+            "obp": 0.352,
+            "slg": 0.373,
+            "ops": 0.724,
+            "hitRate": 0.2773,
+            "singlesRate": 0.2266,
             "hrRate": 0.0078000000000000005,
-            "walkRate": 0.06269999999999999,
-            "totalBasesRate": 0.34509999999999996
+            "walkRate": 0.0625,
+            "totalBasesRate": 0.34380000000000005
           },
           "recent": {
             "gamesPlayed": 12,
@@ -6148,17 +6548,17 @@
             "totalBasesRate": 0.39770000000000005
           },
           "metrics": {
-            "powerScore": 28,
-            "contactScore": 72.8,
-            "patienceScore": 41.6,
+            "powerScore": 27.8,
+            "contactScore": 72.5,
+            "patienceScore": 41.5,
             "formScore": 18,
-            "splitScore": 66.3,
-            "varianceScore": 84,
+            "splitScore": 66.9,
+            "varianceScore": 83.9,
             "pitchTypeFitScore": 53.4,
             "pitchTypeGrade": 1.23,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 24.1,
-            "matchupGrade": -5.71
+            "matchupScore": 24.7,
+            "matchupGrade": -5.59
           },
           "pitchType": {
             "fitScore": 53.4,
@@ -6282,8 +6682,8 @@
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".302 AVG | .727 OPS | 71 H | 2 HR | 12g: .208 AVG | .490 OPS | 10 H | 0 HR | vs RHP: .327 AVG | .794 OPS | 2 HR | career 1136 PA | .680 OPS | 14 HR | contact-stable profile | power 30 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +1.2 | -5.7 matchup grade in a neutral lane",
-          "matchupNote": "-5.71 vs Sandy Alcantara"
+          "summary": ".301 AVG | .724 OPS | 71 H | 2 HR | 12g: .208 AVG | .490 OPS | 10 H | 0 HR | vs RHP: .327 AVG | .794 OPS | 2 HR | career 1136 PA | .680 OPS | 14 HR | contact-stable profile | power 30 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +1.2 | -5.6 matchup grade in a neutral lane",
+          "matchupNote": "-5.59 vs Sandy Alcantara"
         },
         {
           "playerId": 682997,
@@ -6303,7 +6703,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 8,
+            "gamesPlayed": 9,
             "hits": 5,
             "singles": 0,
             "doubles": 2,
@@ -6311,17 +6711,17 @@
             "homeRuns": 2,
             "walks": 6,
             "totalBases": 15,
-            "atBats": 13,
-            "plateAppearances": 19,
-            "avg": 0.385,
-            "obp": 0.579,
-            "slg": 1.154,
-            "ops": 1.733,
-            "hitRate": 0.2632,
+            "atBats": 14,
+            "plateAppearances": 20,
+            "avg": 0.357,
+            "obp": 0.55,
+            "slg": 1.071,
+            "ops": 1.621,
+            "hitRate": 0.25,
             "singlesRate": 0,
-            "hrRate": 0.10529999999999999,
-            "walkRate": 0.31579999999999997,
-            "totalBasesRate": 0.7895
+            "hrRate": 0.1,
+            "walkRate": 0.3,
+            "totalBasesRate": 0.75
           },
           "recent": {
             "gamesPlayed": 8,
@@ -6368,11 +6768,11 @@
           },
           "metrics": {
             "powerScore": 92,
-            "contactScore": 81.7,
+            "contactScore": 73.4,
             "patienceScore": 92,
             "formScore": 92,
-            "splitScore": 67.4,
-            "varianceScore": 68.5,
+            "splitScore": 91.5,
+            "varianceScore": 92,
             "pitchTypeFitScore": 94,
             "pitchTypeGrade": 7.95,
             "pitchTypeCoveragePct": 100,
@@ -6504,7 +6904,7 @@
             "small-sample story"
           ],
           "primaryTag": "carry",
-          "summary": ".385 AVG | 1.733 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane",
+          "summary": ".357 AVG | 1.621 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Sandy Alcantara"
         },
         {
@@ -6525,25 +6925,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 18,
-            "hits": 10,
+            "gamesPlayed": 19,
+            "hits": 11,
             "singles": 7,
-            "doubles": 2,
+            "doubles": 3,
             "triples": 0,
             "homeRuns": 1,
             "walks": 12,
-            "totalBases": 15,
-            "atBats": 46,
-            "plateAppearances": 59,
-            "avg": 0.217,
-            "obp": 0.379,
-            "slg": 0.326,
-            "ops": 0.705,
-            "hitRate": 0.16949999999999998,
-            "singlesRate": 0.1186,
-            "hrRate": 0.0169,
-            "walkRate": 0.2034,
-            "totalBasesRate": 0.25420000000000004
+            "totalBases": 17,
+            "atBats": 47,
+            "plateAppearances": 60,
+            "avg": 0.234,
+            "obp": 0.39,
+            "slg": 0.362,
+            "ops": 0.752,
+            "hitRate": 0.1833,
+            "singlesRate": 0.1167,
+            "hrRate": 0.0167,
+            "walkRate": 0.2,
+            "totalBasesRate": 0.2833
           },
           "recent": {
             "gamesPlayed": 10,
@@ -6589,11 +6989,11 @@
             "totalBasesRate": 0.2778
           },
           "metrics": {
-            "powerScore": 24,
-            "contactScore": 41.3,
+            "powerScore": 27.9,
+            "contactScore": 43.2,
             "patienceScore": 92,
             "formScore": 18,
-            "splitScore": 61.3,
+            "splitScore": 52.8,
             "varianceScore": 92,
             "pitchTypeFitScore": 56.2,
             "pitchTypeGrade": 1.64,
@@ -6723,7 +7123,7 @@
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".217 AVG | .705 OPS | 10 H | 1 HR | 10g: .091 AVG | .182 OPS | 2 H | 0 HR | vs RHP: .238 AVG | .753 OPS | 1 HR | career 299 PA | .613 OPS | 3 HR | baseline career profile | power 18 | shallow 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +1.6 | -8.0 matchup grade in a neutral lane",
+          "summary": ".234 AVG | .752 OPS | 11 H | 1 HR | 10g: .091 AVG | .182 OPS | 2 H | 0 HR | vs RHP: .238 AVG | .753 OPS | 1 HR | career 299 PA | .613 OPS | 3 HR | baseline career profile | power 18 | shallow 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +1.6 | -8.0 matchup grade in a neutral lane",
           "matchupNote": "-8.00 vs Sandy Alcantara"
         },
         {
@@ -6744,7 +7144,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 49,
+            "gamesPlayed": 50,
             "hits": 38,
             "singles": 32,
             "doubles": 5,
@@ -6752,17 +7152,17 @@
             "homeRuns": 1,
             "walks": 9,
             "totalBases": 46,
-            "atBats": 129,
-            "plateAppearances": 144,
-            "avg": 0.295,
-            "obp": 0.348,
-            "slg": 0.357,
-            "ops": 0.704,
-            "hitRate": 0.2639,
-            "singlesRate": 0.22219999999999998,
+            "atBats": 130,
+            "plateAppearances": 145,
+            "avg": 0.292,
+            "obp": 0.345,
+            "slg": 0.354,
+            "ops": 0.699,
+            "hitRate": 0.2621,
+            "singlesRate": 0.2207,
             "hrRate": 0.0069,
-            "walkRate": 0.0625,
-            "totalBasesRate": 0.3194
+            "walkRate": 0.0621,
+            "totalBasesRate": 0.3172
           },
           "recent": {
             "gamesPlayed": 10,
@@ -6808,17 +7208,17 @@
             "totalBasesRate": 0.3333
           },
           "metrics": {
-            "powerScore": 24.3,
-            "contactScore": 64.2,
-            "patienceScore": 42,
-            "formScore": 66.5,
-            "splitScore": 59.6,
-            "varianceScore": 61.9,
+            "powerScore": 24,
+            "contactScore": 63.9,
+            "patienceScore": 41.8,
+            "formScore": 67.6,
+            "splitScore": 60.7,
+            "varianceScore": 63.4,
             "pitchTypeFitScore": 39.1,
             "pitchTypeGrade": -0.08,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 73.9,
-            "matchupGrade": 5.26
+            "matchupScore": 75.1,
+            "matchupGrade": 5.47
           },
           "pitchType": {
             "fitScore": 39.1,
@@ -6943,8 +7343,8 @@
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".295 AVG | .704 OPS | 38 H | 1 HR | 10g: .353 AVG | .824 OPS | 12 H | 0 HR | vs RHP: .303 AVG | .746 OPS | 1 HR | career 543 PA | .692 OPS | 4 HR | contact-stable profile | power 22 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit -0.1 | +5.3 matchup grade in a neutral lane",
-          "matchupNote": "+5.26 vs Sandy Alcantara"
+          "summary": ".292 AVG | .699 OPS | 38 H | 1 HR | 10g: .353 AVG | .824 OPS | 12 H | 0 HR | vs RHP: .303 AVG | .746 OPS | 1 HR | career 543 PA | .692 OPS | 4 HR | contact-stable profile | power 22 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit -0.1 | +5.5 matchup grade in a neutral lane",
+          "matchupNote": "+5.47 vs Sandy Alcantara"
         },
         {
           "playerId": 669707,
@@ -6964,7 +7364,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 37,
+            "gamesPlayed": 38,
             "hits": 25,
             "singles": 21,
             "doubles": 4,
@@ -7029,7 +7429,7 @@
           },
           "metrics": {
             "powerScore": 18,
-            "contactScore": 38.3,
+            "contactScore": 38,
             "patienceScore": 48.2,
             "formScore": 72.3,
             "splitScore": 33.3,
@@ -7194,11 +7594,11 @@
         "summary": "BvP sample is mixed: Brandon Lowe owns the cleanest history, but Bryan Reynolds shows the coldest prior lane."
       },
       "aggregate": {
-        "averageMatchupGrade": 1.55,
+        "averageMatchupGrade": 1.63,
         "trackedBatters": 9,
         "starterThreatCount": 5,
         "contactCount": 5,
-        "powerCount": 4,
+        "powerCount": 3,
         "platoonCount": 8,
         "pitchTypeEdgeCount": 7,
         "oppositeHandCount": 7,
@@ -7213,8 +7613,8 @@
         "bullpenPitchTypePressureIndex": null,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
-        "topThirdScore": 73.2,
-        "depthScore": 46.4,
+        "topThirdScore": 73.6,
+        "depthScore": 46.8,
         "bullpenOverperformHitters": []
       },
       "summary": {
@@ -7230,7 +7630,7 @@
           },
           {
             "name": "Jake Mangum",
-            "tag": "carry | +5.26 vs Sandy Alcantara"
+            "tag": "carry | +5.47 vs Sandy Alcantara"
           }
         ],
         "bullpenOverperformHitters": [],
@@ -7241,15 +7641,15 @@
           },
           {
             "name": "Nick Gonzales",
-            "tag": "split edge | -5.71 vs Sandy Alcantara"
+            "tag": "split edge | -5.59 vs Sandy Alcantara"
           }
         ],
         "underperformNote": "Endy Rodríguez and Nick Gonzales carry the softer form or split fit into a balanced lane.",
         "overview": "Pirates can lean on Spencer Horwitz, Tyler Callihan, Jake Mangum to drive early pressure against Sandy Alcantara.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-        "topThirdScore": 73.2,
-        "middleScore": 51.7,
-        "depthScore": 46.4,
+        "topThirdScore": 73.6,
+        "middleScore": 52.2,
+        "depthScore": 46.8,
         "bullpenPitchTypeSummary": null
       }
     }
@@ -7259,16 +7659,16 @@
       "id": 645261,
       "fullName": "Sandy Alcantara",
       "pitchHand": "R",
-      "wins": 5,
+      "wins": 6,
       "losses": 4,
-      "era": "4.33",
-      "strikeOuts": 64,
-      "inningsPitched": "89.1",
-      "hitsAllowed": 91,
-      "walks": 22,
-      "homeRunsAllowed": 10,
-      "whip": "1.26",
-      "gamesStarted": 14,
+      "era": "4.25",
+      "strikeOuts": 71,
+      "inningsPitched": "97.1",
+      "hitsAllowed": 96,
+      "walks": 23,
+      "homeRunsAllowed": 12,
+      "whip": "1.22",
+      "gamesStarted": 15,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 645261,
@@ -12773,14 +13173,14 @@
       "pitchHand": "R",
       "wins": 5,
       "losses": 3,
-      "era": "3.28",
-      "strikeOuts": 86,
-      "inningsPitched": "79.2",
-      "hitsAllowed": 69,
-      "walks": 17,
+      "era": "3.30",
+      "strikeOuts": 90,
+      "inningsPitched": "84.2",
+      "hitsAllowed": 74,
+      "walks": 19,
       "homeRunsAllowed": 8,
-      "whip": "1.08",
-      "gamesStarted": 13,
+      "whip": "1.10",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 677952,
@@ -17776,17 +18176,17 @@
       {
         "label": "Spread",
         "book": "DraftKings typed MLB board",
-        "value": "Marlins +1.5 -172 / Pirates -1.5 +142"
+        "value": "Marlins +1.5 -157 / Pirates -1.5 +120"
       },
       {
         "label": "Total",
         "book": "DraftKings typed MLB board",
-        "value": "o8.5 -121 / u8.5 +100"
+        "value": "o6.5 -132 / u6.5 +102"
       },
       {
         "label": "Moneyline",
         "book": "DraftKings typed MLB board",
-        "value": "Marlins +119 / Pirates -143"
+        "value": "Marlins +150 / Pirates -197"
       },
       {
         "label": "1st 5 ML",
@@ -17808,24 +18208,24 @@
       "index": 0,
       "role": "Away",
       "name": "Marlins",
-      "detail": "Sandy Alcantara (RHP) | 5-4 | 4.33 ERA | 64 SO | 1.26 WHIP | 89.1 IP",
-      "americanOdds": 119,
-      "americanLabel": "+119",
-      "decimalOdds": 2.19,
-      "impliedProbability": 0.45662100456621,
-      "impliedProbabilityLabel": "45.7%"
+      "detail": "Sandy Alcantara (RHP) | 6-4 | 4.25 ERA | 71 SO | 1.22 WHIP | 97.1 IP",
+      "americanOdds": 150,
+      "americanLabel": "+150",
+      "decimalOdds": 2.5,
+      "impliedProbability": 0.4,
+      "impliedProbabilityLabel": "40.0%"
     },
     {
       "id": "marlins-pirates:1",
       "index": 1,
       "role": "Home",
       "name": "Pirates",
-      "detail": "Braxton Ashcraft (RHP) | 5-3 | 3.28 ERA | 86 SO | 1.08 WHIP | 79.2 IP",
-      "americanOdds": -143,
-      "americanLabel": "-143",
-      "decimalOdds": 1.6993006993006992,
-      "impliedProbability": 0.588477366255144,
-      "impliedProbabilityLabel": "58.8%"
+      "detail": "Braxton Ashcraft (RHP) | 5-3 | 3.30 ERA | 90 SO | 1.10 WHIP | 84.2 IP",
+      "americanOdds": -197,
+      "americanLabel": "-197",
+      "decimalOdds": 1.5076142131979695,
+      "impliedProbability": 0.6632996632996633,
+      "impliedProbabilityLabel": "66.3%"
     }
   ],
   "moneyline": {
@@ -17838,24 +18238,24 @@
         "index": 0,
         "role": "Away",
         "name": "Marlins",
-        "detail": "Sandy Alcantara (RHP) | 5-4 | 4.33 ERA | 64 SO | 1.26 WHIP | 89.1 IP",
-        "americanOdds": 119,
-        "americanLabel": "+119",
-        "decimalOdds": 2.19,
-        "impliedProbability": 0.45662100456621,
-        "impliedProbabilityLabel": "45.7%"
+        "detail": "Sandy Alcantara (RHP) | 6-4 | 4.25 ERA | 71 SO | 1.22 WHIP | 97.1 IP",
+        "americanOdds": 150,
+        "americanLabel": "+150",
+        "decimalOdds": 2.5,
+        "impliedProbability": 0.4,
+        "impliedProbabilityLabel": "40.0%"
       },
       {
         "id": "marlins-pirates:1",
         "index": 1,
         "role": "Home",
         "name": "Pirates",
-        "detail": "Braxton Ashcraft (RHP) | 5-3 | 3.28 ERA | 86 SO | 1.08 WHIP | 79.2 IP",
-        "americanOdds": -143,
-        "americanLabel": "-143",
-        "decimalOdds": 1.6993006993006992,
-        "impliedProbability": 0.588477366255144,
-        "impliedProbabilityLabel": "58.8%"
+        "detail": "Braxton Ashcraft (RHP) | 5-3 | 3.30 ERA | 90 SO | 1.10 WHIP | 84.2 IP",
+        "americanOdds": -197,
+        "americanLabel": "-197",
+        "decimalOdds": 1.5076142131979695,
+        "impliedProbability": 0.6632996632996633,
+        "impliedProbabilityLabel": "66.3%"
       }
     ]
   },
@@ -17867,38 +18267,45 @@
       "index": 1,
       "role": "Home",
       "name": "Pirates",
-      "detail": "Braxton Ashcraft (RHP) | 5-3 | 3.28 ERA | 86 SO | 1.08 WHIP | 79.2 IP",
-      "americanOdds": -143,
-      "americanLabel": "-143",
-      "decimalOdds": 1.6993006993006992,
-      "impliedProbability": 0.588477366255144,
-      "impliedProbabilityLabel": "58.8%"
+      "detail": "Braxton Ashcraft (RHP) | 5-3 | 3.30 ERA | 90 SO | 1.10 WHIP | 84.2 IP",
+      "americanOdds": -197,
+      "americanLabel": "-197",
+      "decimalOdds": 1.5076142131979695,
+      "impliedProbability": 0.6632996632996633,
+      "impliedProbabilityLabel": "66.3%"
     },
     "opponent": {
       "id": "marlins-pirates:0",
       "index": 0,
       "role": "Away",
       "name": "Marlins",
-      "detail": "Sandy Alcantara (RHP) | 5-4 | 4.33 ERA | 64 SO | 1.26 WHIP | 89.1 IP",
-      "americanOdds": 119,
-      "americanLabel": "+119",
-      "decimalOdds": 2.19,
-      "impliedProbability": 0.45662100456621,
-      "impliedProbabilityLabel": "45.7%"
+      "detail": "Sandy Alcantara (RHP) | 6-4 | 4.25 ERA | 71 SO | 1.22 WHIP | 97.1 IP",
+      "americanOdds": 150,
+      "americanLabel": "+150",
+      "decimalOdds": 2.5,
+      "impliedProbability": 0.4,
+      "impliedProbabilityLabel": "40.0%"
     },
-    "lean": "Model pick: Pirates on hit-production baseline and market price.",
-    "rationale": "Hit-production baseline: Pirates (8.68 H/G | last 3 9.00 | home 9.70) vs Marlins (8.02 H/G | last 3 6.00 | away 7.50)",
-    "confidence": 68,
-    "volatility": 76,
-    "recommendationScore": 48,
+    "lean": "Model pick: Pirates on market price and hit-production baseline.",
+    "rationale": "Market price: Pirates (62.4% no-vig) vs Marlins (37.6% no-vig)",
+    "confidence": 65,
+    "volatility": 78,
+    "recommendationScore": 45,
     "tier": "Swingy",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 8.5,
-    "modelEdgeLabel": "8.5-point model edge",
-    "marketProbability": 0.5630832299476779,
-    "marketProbabilityLabel": "56.3%",
+    "modelEdge": 6.6,
+    "modelEdgeLabel": "6.6-point model edge",
+    "marketProbability": 0.6238125395820139,
+    "marketProbabilityLabel": "62.4%",
     "inputs": [
+      {
+        "label": "Market price",
+        "summary": "Market price: Pirates (62.4% no-vig) vs Marlins (37.6% no-vig)",
+        "source": "Moneyline board",
+        "margin": 24.8,
+        "weight": 0.26
+      },
       {
         "label": "Hit-production baseline",
         "summary": "Hit-production baseline: Pirates (8.68 H/G | last 3 9.00 | home 9.70) vs Marlins (8.02 H/G | last 3 6.00 | away 7.50)",
@@ -17907,24 +18314,25 @@
         "weight": 0.14
       },
       {
-        "label": "Market price",
-        "summary": "Market price: Pirates (56.3% no-vig) vs Marlins (43.7% no-vig)",
-        "source": "Moneyline board",
-        "margin": 12.6,
-        "weight": 0.26
-      },
-      {
-        "label": "Projected hit volume",
-        "summary": "Projected hit volume: Pirates (10.8 hits | 31.5% efficiency) vs Marlins (6.6 hits | 19.1% efficiency)",
-        "source": "Composite offense vs starter and bullpen projection",
-        "margin": 16.1,
-        "weight": 0.19
+        "label": "Lineup-vs-pitching fit",
+        "summary": "Lineup-vs-pitching fit: Pirates (Grade +1.63 | platoon 8 | .300 bats 0 | bat pressure 50 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs Marlins (Grade +0.03 | platoon 6 | .300 bats 0 | bat pressure 50 | starter arsenal 63 | bridge arsenal 50 | pressure 61)",
+        "source": "Official lineup + handedness + starter arsenal + likely reliever arsenal fit",
+        "margin": 19.8,
+        "weight": 0.14
       }
     ],
     "inputsUsed": 12,
     "volatilityNotes": [
       {
+        "label": "Lower posted total",
+        "delta": -4
+      },
+      {
         "label": "One lineup carries real platoon pressure versus the listed starter hand",
+        "delta": 3
+      },
+      {
+        "label": "Handedness split rows are moving the offensive shape",
         "delta": 3
       },
       {
@@ -17938,6 +18346,10 @@
       {
         "label": "At least one lineup is entering with a hotter recent hit profile",
         "delta": 3
+      },
+      {
+        "label": "Favorite enters on a live losing streak",
+        "delta": 4
       },
       {
         "label": "Underdog enters with positive recent form",
@@ -17960,27 +18372,31 @@
         "delta": 4
       },
       {
+        "label": "v1.1 market budget: this favorite is already expensive on the board, so the model only gets a small disagreement budget unless the state and late-game profile stay clean.",
+        "delta": 4
+      },
+      {
         "label": "v1.1 market lane: this sits in the healthier moderate-favorite range with a cleaner state/risk profile than the average board favorite.",
         "delta": -2
       }
     ],
     "pickReasons": [
-      "Pirates own the cleaner full-game traffic script at 10.8 projected hits.",
-      "Pirates have the better starter-window lane with 6.6 projected first-five hits.",
+      "Pirates own the cleaner full-game traffic script at 11.6 projected hits.",
+      "Pirates have the better starter-window lane with 6.7 projected first-five hits.",
       "Pirates still hold the better bridge-and-finish script once the bullpens take over.",
       "Pirates can lean on Spencer Horwitz, Tyler Callihan, Jake Mangum to drive early pressure against Sandy Alcantara."
     ],
     "indicators": {
       "reliefPitchingRisk": 56.6,
       "coinflipPressure": 28,
-      "starterLeverageIndex": 91.2,
-      "lateInningStabilityIndex": 46.7,
+      "starterLeverageIndex": 90.4,
+      "lateInningStabilityIndex": 46,
       "pickBullpenScore": 60.2,
       "oppBullpenScore": 65.3,
       "pickBullpenChainScore": 76.1,
       "oppBullpenChainScore": 79.6,
-      "pickStarterScore": 70.9,
-      "oppStarterScore": 63.8,
+      "pickStarterScore": 70.8,
+      "oppStarterScore": 66.3,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -18059,7 +18475,7 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": 32,
+      "efficientFavoriteScore": 22,
       "efficientFavoriteTier": "Watch favorite",
       "efficientFavoriteReasons": [
         "moderateFavoritePrice",
@@ -18070,6 +18486,7 @@
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
         "lateFragility",
+        "expensiveFavorite",
         "lateNotClean"
       ],
       "efficientFavoriteBlockers": [],
@@ -18077,19 +18494,20 @@
       "tierOnePassFlag": false,
       "tierOneRiskFlags": [
         "starterLateFragility",
+        "expensiveFavoriteDanger",
         "moderateFavoriteClean"
       ],
-      "favoredSignalCount": 8,
-      "starterLateGap": 44.5,
+      "favoredSignalCount": 7,
+      "starterLateGap": 44.4,
       "starterLeashGap": 0,
-      "edgeHaircutApplied": 1.2,
+      "edgeHaircutApplied": 2.8,
       "gameShape": {
-        "label": "Starter-to-bullpen flip",
+        "label": "Favorite conversion trap",
         "shapeLabel": "balanced traffic game",
-        "category": "starter_to_bullpen_flip",
-        "bestExpression": "Pirates first-five side",
-        "categoryConfidence": 48.4,
-        "realityGapScore": 37,
+        "category": "false_favorite_conversion_trap",
+        "bestExpression": "No taxed ML; require early conversion or better live price",
+        "categoryConfidence": 8.9,
+        "realityGapScore": 37.6,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -18109,49 +18527,49 @@
             "score": 44.8
           }
         ],
-        "rfImpactScore": 31.7
+        "rfImpactScore": 47.2
       }
     },
     "gameShape": {
       "modelId": "MLB-M2",
-      "label": "Starter-to-bullpen flip",
+      "label": "Favorite conversion trap",
       "shapeLabel": "balanced traffic game",
       "category": {
-        "slug": "starter_to_bullpen_flip",
-        "label": "Starter-to-bullpen flip",
-        "bestExpression": "Pirates first-five side",
-        "confidence": 48.4,
+        "slug": "false_favorite_conversion_trap",
+        "label": "Favorite conversion trap",
+        "bestExpression": "No taxed ML; require early conversion or better live price",
+        "confidence": 8.9,
         "reasons": [
-          "The pick can own the starter window without owning the late game.",
-          "Use the timing edge before bridge innings can flip it."
+          "The favorite price is ahead of the lineup conversion profile.",
+          "Do not pay for runs the first cycle has not shown yet."
         ],
         "laneMap": {
-          "side": "Secondary to the named lane.",
-          "first5": "Primary lane.",
+          "side": "No blind pregame ML; require visible conversion.",
+          "first5": "Use only if starter and top-order pressure agree.",
           "total": "Needs line-specific EV.",
           "firstInning": "Advisory only.",
-          "live": "Use price discipline."
+          "live": "Enter only after a converted traffic pocket or a much better price."
         },
         "inningMap": [
           {
             "innings": "1-2",
-            "expectation": "Pirates can look right early even if full-game ML is fragile.",
-            "watch": "Entry belongs to F5 or live lead, not blind FG."
+            "expectation": "Favorite price is asking to be paid before the lineup converts.",
+            "watch": "No first-cycle damage means the price is too expensive."
           },
           {
             "innings": "3-5",
-            "expectation": "This is the main scoring window for the pick.",
-            "watch": "If the pick trails after five, the original read is mostly gone."
+            "expectation": "The favorite must turn traffic into runs before the underdog gets a cheap inning.",
+            "watch": "Avoid laying tax into dead contact."
           },
           {
             "innings": "6-7",
-            "expectation": "Marlins can re-enter through the bridge.",
-            "watch": "Expect hedge or live reversal pressure here."
+            "expectation": "If still close, the favorite edge is mostly market inertia.",
+            "watch": "Look for hedge/live underdog price instead."
           },
           {
             "innings": "8-9",
-            "expectation": "Late innings are not aligned with the pregame side.",
-            "watch": "Do not confuse early control with full-game safety."
+            "expectation": "Late favorite bailout is not the base case.",
+            "watch": "Do not compound if the bridge is stressed."
           }
         ],
         "diagnostics": {
@@ -18167,7 +18585,7 @@
           "projectedHitEdge": 4.2
         }
       },
-      "summary": "Starter-to-bullpen flip: Pirates first-five side. Reality-gap 37/100. Main checks: 78°F | Wind 10 mph Out | 0% precip | weather helps carry.",
+      "summary": "Favorite conversion trap: No taxed ML; require early conversion or better live price. Reality-gap 37.6/100. Main checks: 77°F | Wind 9 mph Out | 0% precip | weather helps carry.",
       "pickTeam": "Pirates",
       "opponentTeam": "Marlins",
       "scores": {
@@ -18175,9 +18593,9 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 40,
         "bullpenFlipScore": 48.4,
-        "starterControlScore": 64.4,
-        "marketContradictionScore": 3.8,
-        "realityGapScore": 37
+        "starterControlScore": 61.9,
+        "marketContradictionScore": 11.1,
+        "realityGapScore": 37.6
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -18191,9 +18609,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 36.8,
-            "pickScore": 36.8,
-            "opponentScore": 11.5
+            "gameScore": 36.7,
+            "pickScore": 36.7,
+            "opponentScore": 11.9
           },
           {
             "id": "chaos",
@@ -18241,7 +18659,7 @@
             "role": "pick",
             "team": "Pirates",
             "scores": {
-              "pressure": 36.8,
+              "pressure": 36.7,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -18249,7 +18667,7 @@
               "flow": 75
             },
             "polygon": [
-              36.8,
+              36.7,
               5,
               0,
               16,
@@ -18260,7 +18678,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 70.9,
+              "starterScore": 70.8,
               "bullpenScore": 60.2,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18274,7 +18692,7 @@
             "role": "opponent",
             "team": "Marlins",
             "scores": {
-              "pressure": 11.5,
+              "pressure": 11.9,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -18282,7 +18700,7 @@
               "flow": 25
             },
             "polygon": [
-              11.5,
+              11.9,
               5,
               0,
               16,
@@ -18293,7 +18711,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 63.8,
+              "starterScore": 66.3,
               "bullpenScore": 65.3,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18305,10 +18723,10 @@
           }
         ],
         "gameProfile": {
-          "label": "Starter-to-bullpen flip",
-          "bestExpression": "Pirates first-five side",
+          "label": "Favorite conversion trap",
+          "bestExpression": "No taxed ML; require early conversion or better live price",
           "scores": {
-            "pressure": 36.8,
+            "pressure": 36.7,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
@@ -18316,7 +18734,7 @@
             "flow": 60
           },
           "polygon": [
-            36.8,
+            36.7,
             44.8,
             8.5,
             24.4,
@@ -18363,47 +18781,47 @@
         "sunVisibilityChaosBoost": 0
       },
       "metricNotes": [
-        "78°F | Wind 10 mph Out | 0% precip | weather helps carry"
+        "77°F | Wind 9 mph Out | 0% precip | weather helps carry"
       ],
       "laneMap": {
-        "side": "Secondary to the named lane.",
-        "first5": "Primary lane.",
+        "side": "No blind pregame ML; require visible conversion.",
+        "first5": "Use only if starter and top-order pressure agree.",
         "total": "Needs line-specific EV.",
         "firstInning": "Advisory only.",
-        "live": "Use price discipline."
+        "live": "Enter only after a converted traffic pocket or a much better price."
       },
       "inningMap": [
         {
           "innings": "1-2",
-          "expectation": "Pirates can look right early even if full-game ML is fragile.",
-          "watch": "Entry belongs to F5 or live lead, not blind FG."
+          "expectation": "Favorite price is asking to be paid before the lineup converts.",
+          "watch": "No first-cycle damage means the price is too expensive."
         },
         {
           "innings": "3-5",
-          "expectation": "This is the main scoring window for the pick.",
-          "watch": "If the pick trails after five, the original read is mostly gone."
+          "expectation": "The favorite must turn traffic into runs before the underdog gets a cheap inning.",
+          "watch": "Avoid laying tax into dead contact."
         },
         {
           "innings": "6-7",
-          "expectation": "Marlins can re-enter through the bridge.",
-          "watch": "Expect hedge or live reversal pressure here."
+          "expectation": "If still close, the favorite edge is mostly market inertia.",
+          "watch": "Look for hedge/live underdog price instead."
         },
         {
           "innings": "8-9",
-          "expectation": "Late innings are not aligned with the pregame side.",
-          "watch": "Do not confuse early control with full-game safety."
+          "expectation": "Late favorite bailout is not the base case.",
+          "watch": "Do not compound if the bridge is stressed."
         }
       ],
       "marketImplications": {
         "side": "Pirates is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
-        "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 64.6% YRFI."
+        "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 74% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 31.7,
+        "impactScore": 47.2,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -18431,33 +18849,33 @@
           }
         },
         "trustedUse": "Use RF as a nonlinear totals/game-shape check first. Do not let it pick ML/F5 by itself yet.",
-        "totalsRead": "RF totals baseline has little to add when the line and projection are nearly equal.",
+        "totalsRead": "RF totals baseline can be used as a second check on the posted total.",
         "moneylineRead": "RF moneyline history is not deployable; it can only flag disagreement for review.",
         "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
         "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 6.6,
-      "homeProjectedHits": 10.8,
-      "awayHitEfficiencyPct": 19.1,
-      "homeHitEfficiencyPct": 31.5,
-      "awayFirst5ProjectedHits": 3.6,
-      "homeFirst5ProjectedHits": 6.6,
-      "awayFirst5HitEfficiencyPct": 19.1,
-      "homeFirst5HitEfficiencyPct": 34.5,
-      "awayLateProjectedHits": 2.7,
-      "homeLateProjectedHits": 4.4,
-      "awayLateHitEfficiencyPct": 17.6,
-      "homeLateHitEfficiencyPct": 28.6,
+      "awayProjectedHits": 7.4,
+      "homeProjectedHits": 11.6,
+      "awayHitEfficiencyPct": 21.4,
+      "homeHitEfficiencyPct": 33.8,
+      "awayFirst5ProjectedHits": 3.8,
+      "homeFirst5ProjectedHits": 6.7,
+      "awayFirst5HitEfficiencyPct": 19.9,
+      "homeFirst5HitEfficiencyPct": 35.3,
+      "awayLateProjectedHits": 3.8,
+      "homeLateProjectedHits": 4.6,
+      "awayLateHitEfficiencyPct": 24.8,
+      "homeLateHitEfficiencyPct": 29.6,
       "awayBullpenChainScore": 79.6,
       "homeBullpenChainScore": 76.1,
       "edgeTeam": "Pirates",
       "edgeHits": 4.2,
       "first5EdgeTeam": "Pirates",
-      "first5EdgeHits": 3,
+      "first5EdgeHits": 2.9,
       "lateEdgeTeam": "Pirates",
-      "lateEdgeHits": 1.7,
+      "lateEdgeHits": 0.8,
       "bridgeEdgeTeam": "Marlins",
       "bridgeEdgeScore": 3.4,
       "awayLikelyRelievers": [
@@ -18529,7 +18947,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "shadowSharePct": 25.4,
+          "shadowSharePct": 25.5,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -18566,31 +18984,36 @@
       "homeBullpenExhaustionLabel": "fresh",
       "awayPitcherType": "Balanced righty",
       "homePitcherType": "Strike-throwing righty",
-      "awayStarterHoldConfidence": 37.6,
-      "homeStarterHoldConfidence": 62.7,
-      "awayProjectedRuns": 2.7,
-      "homeProjectedRuns": 5.3,
-      "awayFirst5ProjectedRuns": 1.5,
+      "awayStarterHoldConfidence": 32.7,
+      "homeStarterHoldConfidence": 63.8,
+      "awayProjectedRuns": 3.6,
+      "homeProjectedRuns": 5.5,
+      "awayFirst5ProjectedRuns": 1.7,
       "homeFirst5ProjectedRuns": 3.1,
-      "awayLateProjectedRuns": 1.2,
-      "homeLateProjectedRuns": 2.2,
-      "postedTotal": 8.5,
+      "awayLateProjectedRuns": 1.9,
+      "homeLateProjectedRuns": 2.4,
+      "postedTotal": 6.5,
       "totals": {
         "fullGame": {
-          "lean": "Under",
-          "edge": -0.5,
-          "strength": "Lean",
-          "label": "Under 8.5",
-          "summary": "Under lean with a 0.5-run edge against 8.5.",
+          "lean": "Over",
+          "edge": 2.6,
+          "strength": "Strong",
+          "label": "Over 6.5",
+          "summary": "Over lean with a 2.6-run edge against 6.5.",
           "chaosGate": {
             "phase": "full",
-            "overChaosScore": 3,
+            "overChaosScore": 10,
             "underDragScore": 0,
-            "warning": true,
+            "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
-              "78°F | Wind 10 mph Out | 0% precip | weather helps carry"
+              "77°F | Wind 9 mph Out | 0% precip | weather helps carry",
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.5",
+              "material HRForce 1.6",
+              "RP2 bridge stress 41.5"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -18601,25 +19024,47 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.5,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 41.5,
+              "maxRp2ReliefRuns": 3.4,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
         "first5": {
-          "lean": "Pass",
-          "edge": 0.1,
-          "strength": "Thin",
-          "label": "Hold 4.5",
-          "summary": "Model projection 4.6 is essentially on the posted 4.5.",
+          "lean": "Over",
+          "edge": 0.3,
+          "strength": "Tail validated",
+          "label": "Over 4.5",
+          "summary": "Model projection 4.8 is essentially on the posted 4.5. Tail overlay keeps the over alive because the failure mode is an actual run-explosion path, not a clean under.",
           "chaosGate": {
             "phase": "first5",
-            "overChaosScore": 3,
+            "overChaosScore": 9,
             "underDragScore": 0,
             "warning": true,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
-              "78°F | Wind 10 mph Out | 0% precip | weather helps carry"
+              "77°F | Wind 9 mph Out | 0% precip | weather helps carry",
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.5",
+              "material HRForce 1.6",
+              "RP2 bridge can enter early"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -18630,21 +19075,46 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.5,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 41.5,
+              "maxRp2ReliefRuns": 3.4,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           },
+          "originalLean": "Pass",
+          "originalStrength": "Thin",
+          "originalLabel": "Hold 4.5",
           "tailOverlay": {
-            "baseProjectedRuns": 4.6,
-            "adjustedProjectedRuns": 4.6,
-            "adjustedEdge": 0.1,
-            "marketExpression": "Pass",
-            "shape": "balanced",
-            "tailScore": 24.8,
+            "baseProjectedRuns": 4.8,
+            "adjustedProjectedRuns": 7.5,
+            "adjustedEdge": 3,
+            "marketExpression": "Over",
+            "shape": "over-tail",
+            "tailScore": 64.4,
             "strandScore": 0,
             "forkScore": 0,
-            "tailLift": 0,
+            "tailLift": 2.7,
             "strandDrag": 0,
-            "notes": [],
+            "notes": [
+              "fat-tail run environment",
+              "carry/weather turns ordinary contact into extra-base risk",
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.5"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -18653,28 +19123,49 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 10.2,
+              "totalFirst5ProjectedHits": 10.5,
               "weatherCarry": true,
               "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.5,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 41.5,
+              "maxRp2ReliefRuns": 3.4,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
               "visibilityRisk": null
             }
           }
         },
         "late": {
-          "lean": "Under",
-          "edge": -0.6,
-          "strength": "Lean",
-          "label": "Under 4",
-          "summary": "Under lean with a 0.6-run edge against 4.",
+          "lean": "Over",
+          "edge": 2.3,
+          "strength": "Strong",
+          "label": "Over 2",
+          "summary": "Over lean with a 2.3-run edge against 2.",
           "chaosGate": {
             "phase": "late",
-            "overChaosScore": 3,
+            "overChaosScore": 10,
             "underDragScore": 0,
-            "warning": true,
+            "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
-              "78°F | Wind 10 mph Out | 0% precip | weather helps carry"
+              "77°F | Wind 9 mph Out | 0% precip | weather helps carry",
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.5",
+              "material HRForce 1.6",
+              "RP2 bridge stress 41.5"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -18685,25 +19176,47 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.5,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 41.5,
+              "maxRp2ReliefRuns": 3.4,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
-        "projectedFullTotalRuns": 8,
-        "projectedFirst5TotalRuns": 4.6,
-        "tailAdjustedProjectedFirst5TotalRuns": 4.6,
+        "projectedFullTotalRuns": 9.1,
+        "projectedFirst5TotalRuns": 4.8,
+        "tailAdjustedProjectedFirst5TotalRuns": 7.5,
         "first5TailOverlay": {
-          "baseProjectedRuns": 4.6,
-          "adjustedProjectedRuns": 4.6,
-          "adjustedEdge": 0.1,
-          "marketExpression": "Pass",
-          "shape": "balanced",
-          "tailScore": 24.8,
+          "baseProjectedRuns": 4.8,
+          "adjustedProjectedRuns": 7.5,
+          "adjustedEdge": 3,
+          "marketExpression": "Over",
+          "shape": "over-tail",
+          "tailScore": 64.4,
           "strandScore": 0,
           "forkScore": 0,
-          "tailLift": 0,
+          "tailLift": 2.7,
           "strandDrag": 0,
-          "notes": [],
+          "notes": [
+            "fat-tail run environment",
+            "carry/weather turns ordinary contact into extra-base risk",
+            "ENV1 HRForce 1.6",
+            "FIC HRForce 1.5"
+          ],
           "metrics": {
             "maxMistakeChaos": null,
             "maxRunClustering": null,
@@ -18712,52 +19225,77 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 10.2,
+            "totalFirst5ProjectedHits": 10.5,
             "weatherCarry": true,
             "weatherSuppress": false,
+            "envRunDelta": 0.3,
+            "envHitsDelta": 0,
+            "envHrDelta": -0.1,
+            "hrForce": 1.6,
+            "highHrForce": true,
+            "lowerWeatherCarry": false,
+            "ficHrForce": 1.5,
+            "ficHighHrForce": true,
+            "materialHrForce": true,
+            "extremeHrForce": false,
+            "carryMultiplier": 1.18,
+            "ficHighHrForceSharePct": 100,
+            "maxRp2BridgeStress": 41.5,
+            "maxRp2ReliefRuns": 3.4,
+            "rp2LateRunRisk": true,
+            "maxRepeatOpponentFirst5Tax": null,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 3.4,
+        "projectedLateTotalRuns": 4.3,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 4.9,
+        "runShareFirst5TotalLine": 3.4,
         "first5TotalLineSource": "posted",
-        "derivedLateTotalLine": 4,
-        "bullpenExhaustionNote": "78°F | Wind 10 mph Out | 0% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
-        "weatherNote": "78°F | Wind 10 mph Out | 0% precip | weather helps carry.",
+        "derivedLateTotalLine": 2,
+        "bullpenExhaustionNote": "77°F | Wind 9 mph Out | 0% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
+        "weatherNote": "77°F | Wind 9 mph Out | 0% precip | weather helps carry.",
         "sunVisibilityNote": ""
       },
       "firstInning": {
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 14.6,
-        "yesProbabilityPct": 64.6,
-        "noProbabilityPct": 35.4,
-        "awayRunProbabilityPct": 4,
-        "homeRunProbabilityPct": 63.1,
+        "edge": 24,
+        "yesProbabilityPct": 74,
+        "noProbabilityPct": 26,
+        "awayRunProbabilityPct": 9,
+        "homeRunProbabilityPct": 71.4,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 0,
         "homeOppPitcherAllowedRatePct": 40,
-        "awayProjectedRuns": 0,
-        "homeProjectedRuns": 0.9,
+        "awayProjectedRuns": 0.1,
+        "homeProjectedRuns": 1.1,
         "reasonStack": [
-          "Pirates top order is driving early pressure (73.2)",
+          "Pirates top order is driving early pressure (73.6)",
+          "Pirates handedness splits fit the starter (69.3)",
+          "Pirates top third has multiple strong split bats",
           "Marlins starter has leaked 1st-inning runs in 40% of recent starts",
-          "Marlins starter has real season 1st-inning damage (25% run games, 0.7/start)",
-          "Marlins starter did not carry positive WAR last year",
-          "Marlins top order is driving early pressure (70)"
+          "Marlins starter has real season 1st-inning damage (25% run games, 0.7/start)"
         ],
         "cautionStack": [
           "Pirates starter has stayed clean in the 1st across recent starts",
           "Pirates starter season line is clean early (0% run games, 0/start)",
           "Pirates starter is in the green this year (2.1 WAR)"
         ],
-        "projectedRuns": 0.9,
+        "environmentAddendum": {
+          "hrForce": 1.6,
+          "highHrForce": true,
+          "maxProbabilityLiftPct": 6,
+          "maxProjectedRunsLift": 0.1,
+          "reasons": [
+            "ENV1 HRForce 1.6 raises YRFI carry"
+          ]
+        },
+        "projectedRuns": 1.2,
         "line": 0.5,
-        "summary": "YRFI with a 65% modeled chance of at least one first-inning run. Marlins score 4% of the time and Pirates 63.1% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 74% modeled chance of at least one first-inning run. Marlins score 9% of the time and Pirates 71.4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.6 is embedded in the first-inning run probability."
       },
       "teamScripts": [
         {
@@ -18770,7 +19308,7 @@
             },
             {
               "name": "Liam Hicks",
-              "tag": "split edge | +4.46 vs Braxton Ashcraft"
+              "tag": "split edge | +4.42 vs Braxton Ashcraft"
             }
           ],
           "underperformHitters": [
@@ -18780,14 +19318,14 @@
             },
             {
               "name": "Xavier Edwards",
-              "tag": "split edge | -4.77 vs Braxton Ashcraft"
+              "tag": "split edge | -4.82 vs Braxton Ashcraft"
             }
           ],
           "underperformNote": "Owen Caissie and Xavier Edwards carry the softer form or split fit into a strike-throwing lane.",
           "overview": "Marlins can lean on Otto Lopez, Liam Hicks to drive early pressure against Braxton Ashcraft.",
-          "topThirdScore": 70,
-          "middleScore": 28,
-          "depthScore": 53.6,
+          "topThirdScore": 69.8,
+          "middleScore": 28.4,
+          "depthScore": 53.9,
           "bullpenOverperformHitters": [],
           "winPath": [
             "Marlins also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
@@ -18811,7 +19349,7 @@
             },
             {
               "name": "Jake Mangum",
-              "tag": "carry | +5.26 vs Sandy Alcantara"
+              "tag": "carry | +5.47 vs Sandy Alcantara"
             }
           ],
           "underperformHitters": [
@@ -18821,18 +19359,18 @@
             },
             {
               "name": "Nick Gonzales",
-              "tag": "split edge | -5.71 vs Sandy Alcantara"
+              "tag": "split edge | -5.59 vs Sandy Alcantara"
             }
           ],
           "underperformNote": "Endy Rodríguez and Nick Gonzales carry the softer form or split fit into a balanced lane.",
           "overview": "Pirates can lean on Spencer Horwitz, Tyler Callihan, Jake Mangum to drive early pressure against Sandy Alcantara.",
-          "topThirdScore": 73.2,
-          "middleScore": 51.7,
-          "depthScore": 46.4,
+          "topThirdScore": 73.6,
+          "middleScore": 52.2,
+          "depthScore": 46.8,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Pirates own the cleaner full-game traffic script at 10.8 projected hits.",
-            "Pirates have the better starter-window lane with 6.6 projected first-five hits.",
+            "Pirates own the cleaner full-game traffic script at 11.6 projected hits.",
+            "Pirates have the better starter-window lane with 6.7 projected first-five hits.",
             "Pirates still hold the better bridge-and-finish script once the bullpens take over.",
             "Pirates can lean on Spencer Horwitz, Tyler Callihan, Jake Mangum to drive early pressure against Sandy Alcantara.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -18853,28 +19391,28 @@
           {
             "label": "Bridge",
             "edgeTeam": "Pirates",
-            "projection": "2.2 R",
+            "projection": "2.4 R",
             "note": "Pirates keep more late scoring paths alive, with Spencer Horwitz, Tyler Callihan plus the Marlins bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Pirates",
-            "projection": "10.8 H",
+            "projection": "11.6 H",
             "note": "Pirates finish with the stronger aggregate traffic path, anchored by Spencer Horwitz, Tyler Callihan."
           }
         ]
       },
       "weather": {
-        "label": "78°F | Wind 10 mph Out | 0% precip | weather helps carry",
-        "temperatureF": 78,
-        "windMph": 10,
+        "label": "77°F | Wind 9 mph Out | 0% precip | weather helps carry",
+        "temperatureF": 77,
+        "windMph": 9,
         "windDirection": "Out",
         "precipitationPct": 0,
         "isDome": false,
-        "hitBoostFirst5": 0.12,
-        "hitBoostLate": 0.15,
-        "runBoostFirst5": 0.009,
-        "runBoostLate": 0.011000000000000001,
+        "hitBoostFirst5": 0.108,
+        "hitBoostLate": 0.135,
+        "runBoostFirst5": 0.0081,
+        "runBoostLate": 0.0099,
         "volatilityDelta": 0
       },
       "sunVisibility": null,
@@ -18921,10 +19459,54 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Marlins @ Pirates",
+        "gameContextMatch": "team-code",
+        "rowCount": 8,
+        "averageHrForce": 1.5,
+        "maxHrForce": 1.5,
+        "highHrForceRows": 8,
+        "extremeHrForceRows": 0,
+        "highHrForceSharePct": 100,
+        "qualityAbPct": 50,
+        "hardHitPct": 6.1,
+        "matchupPassRows": 2,
+        "awayOffense": {
+          "label": "Marlins hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "Pirates hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Marlins",
-          "modelVersion": "MLB-RP2.2026-06-12.v2",
+          "modelVersion": "MLB-RP2.2026-06-12.v3",
           "projectedReliefRunsAllowed": 1.552,
           "projectedReliefOuts": 11.67,
           "projectedRelieversUsed": 3.67,
@@ -18942,7 +19524,7 @@
         },
         "home": {
           "teamName": "Pirates",
-          "modelVersion": "MLB-RP2.2026-06-12.v2",
+          "modelVersion": "MLB-RP2.2026-06-12.v3",
           "projectedReliefRunsAllowed": 3.7,
           "projectedReliefOuts": 12.07,
           "projectedRelieversUsed": 3.03,
@@ -18951,7 +19533,7 @@
           "fatigueScore": 41.4,
           "qualityScore": 65,
           "runRiskTier": "stable_bridge",
-          "topTwoSharePct": 49.4,
+          "topTwoSharePct": 49.5,
           "lead": {
             "pitcherName": "Mason Montgomery",
             "expectedOuts": 3.4,
@@ -18959,63 +19541,401 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "high-HRForce carry is active",
+          "available-bullpen damage adjustment is active",
+          "handedness split adjustment is active"
+        ],
+        "environment": {
+          "hrForce": 1.6,
+          "envHrForce": 1.6,
+          "ficHrForce": 1.5,
+          "materialHrForce": true,
+          "extremeHrForce": false,
+          "carryMultiplier": 1.18,
+          "hitDelta": 0.8,
+          "runDelta": 0.7,
+          "conversionDelta": 0.023375999999999994,
+          "firstInningProbabilityLiftPct": 5.9,
+          "underFragilityRuns": 2.2,
+          "flags": [
+            "Material HRForce 1.6: pitcher damage and batter production lifted"
+          ],
+          "reasons": [
+            "HRForce 1.6 applies material carry to pitcher damage and batter production",
+            "weather/park carry is favorable for flight",
+            "FIC batter-vs-pitcher pockets show HRForce carry"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Marlins",
+            "pitcherName": "Sandy Alcantara",
+            "gamesStarted": 15,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Balanced righty",
+            "expectedInnings": 6.28,
+            "opponentHistory": {
+              "label": "starter has suppressed this opponent",
+              "source": "StatMuse vs opponent",
+              "starts": 7,
+              "innings": 44.7,
+              "projectedHitsDelta": -0.3,
+              "first5RunsDelta": -0.2,
+              "runConversionDelta": -0.004447078208955222,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": -0.2,
+              "repeatOpponentFirst5Tax": -0.1,
+              "lastOpponentStartSummary": "6/10/2025 | 6 IP | 0 R | 0 ER | 3 H",
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "starter has suppressed this opponent vs Pirates"
+            ]
+          },
+          {
+            "teamName": "Pirates",
+            "pitcherName": "Braxton Ashcraft",
+            "gamesStarted": 14,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Strike-throwing righty",
+            "expectedInnings": 6.22,
+            "opponentHistory": null,
+            "flags": []
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Marlins",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 44.9,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.255,
+            "splitOpsAverage": 0.722,
+            "topSixSplitAvgAverage": 0.262,
+            "topSixSplitOpsAverage": 0.758,
+            "strongSplitCount": 3,
+            "weakSplitCount": 5,
+            "severeWeakSplitCount": 0,
+            "topSixStrongSplitCount": 3,
+            "topSixWeakSplitCount": 2,
+            "topThirdStrongSplitCount": 2,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": -0.2,
+            "runConversionDelta": -0.0024900000000000005,
+            "strongSplitBats": [
+              {
+                "name": "Liam Hicks",
+                "slot": 1,
+                "bats": "L",
+                "plateAppearances": 210,
+                "avg": 0.282,
+                "ops": 0.865,
+                "seasonAvg": 0.267,
+                "seasonOps": 0.814,
+                "recentAvg": 0.238,
+                "recentOps": 0.673
+              },
+              {
+                "name": "Xavier Edwards",
+                "slot": 4,
+                "bats": "S",
+                "plateAppearances": 225,
+                "avg": 0.299,
+                "ops": 0.809,
+                "seasonAvg": 0.306,
+                "seasonOps": 0.84,
+                "recentAvg": 0.222,
+                "recentOps": 0.527
+              },
+              {
+                "name": "Otto Lopez",
+                "slot": 2,
+                "bats": "R",
+                "plateAppearances": 218,
+                "avg": 0.3,
+                "ops": 0.768,
+                "seasonAvg": 0.342,
+                "seasonOps": 0.854,
+                "recentAvg": 0.423,
+                "recentOps": 1.038
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Jakob Marsee",
+                "slot": 7,
+                "bats": "L",
+                "plateAppearances": 213,
+                "avg": 0.215,
+                "ops": 0.629,
+                "seasonAvg": 0.205,
+                "seasonOps": 0.645,
+                "recentAvg": 0.308,
+                "recentOps": 0.885
+              },
+              {
+                "name": "Joe Mack",
+                "slot": 8,
+                "bats": "L",
+                "plateAppearances": 72,
+                "avg": 0.25,
+                "ops": 0.63,
+                "seasonAvg": 0.242,
+                "seasonOps": 0.6,
+                "recentAvg": 0.294,
+                "recentOps": 0.647
+              },
+              {
+                "name": "Javier Sanoja",
+                "slot": 9,
+                "bats": "R",
+                "plateAppearances": 107,
+                "avg": 0.263,
+                "ops": 0.645,
+                "seasonAvg": 0.259,
+                "seasonOps": 0.673,
+                "recentAvg": 0.333,
+                "recentOps": 0.833
+              },
+              {
+                "name": "Heriberto Hernández",
+                "slot": 5,
+                "bats": "R",
+                "plateAppearances": 73,
+                "avg": 0.242,
+                "ops": 0.648,
+                "seasonAvg": 0.223,
+                "seasonOps": 0.66,
+                "recentAvg": 0.308,
+                "recentOps": 0.615
+              }
+            ],
+            "flags": [
+              "5 weak split bats vs R",
+              "top-third split pressure",
+              "Liam Hicks 0.865 OPS vs R",
+              "Xavier Edwards 0.809 OPS vs R",
+              "Jakob Marsee 0.629 OPS vs R",
+              "5 lineup bats carry weak split rows"
+            ]
+          },
+          {
+            "teamName": "Pirates",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 69.3,
+            "label": "strong handedness split lane",
+            "splitAvgAverage": 0.279,
+            "splitOpsAverage": 0.82,
+            "topSixSplitAvgAverage": 0.289,
+            "topSixSplitOpsAverage": 0.875,
+            "strongSplitCount": 5,
+            "weakSplitCount": 1,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 4,
+            "topSixWeakSplitCount": 0,
+            "topThirdStrongSplitCount": 2,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": 0.4,
+            "runConversionDelta": 0.009907499999999998,
+            "strongSplitBats": [
+              {
+                "name": "Brandon Lowe",
+                "slot": 2,
+                "bats": "L",
+                "plateAppearances": 193,
+                "avg": 0.275,
+                "ops": 0.967,
+                "seasonAvg": 0.248,
+                "seasonOps": 0.854,
+                "recentAvg": 0.158,
+                "recentOps": 0.682
+              },
+              {
+                "name": "Ryan O'Hearn",
+                "slot": 4,
+                "bats": "L",
+                "plateAppearances": 158,
+                "avg": 0.299,
+                "ops": 0.89,
+                "seasonAvg": 0.282,
+                "seasonOps": 0.818,
+                "recentAvg": 0.19,
+                "recentOps": 0.524
+              },
+              {
+                "name": "Spencer Horwitz",
+                "slot": 1,
+                "bats": "L",
+                "plateAppearances": 202,
+                "avg": 0.298,
+                "ops": 0.888,
+                "seasonAvg": 0.29,
+                "seasonOps": 0.855,
+                "recentAvg": 0.35,
+                "recentOps": 1.059
+              },
+              {
+                "name": "Nick Gonzales",
+                "slot": 5,
+                "bats": "R",
+                "plateAppearances": 176,
+                "avg": 0.327,
+                "ops": 0.794,
+                "seasonAvg": 0.301,
+                "seasonOps": 0.724,
+                "recentAvg": 0.208,
+                "recentOps": 0.49
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Jared Triolo",
+                "slot": 9,
+                "bats": "R",
+                "plateAppearances": 84,
+                "avg": 0.189,
+                "ops": 0.485,
+                "seasonAvg": 0.229,
+                "seasonOps": 0.56,
+                "recentAvg": 0.263,
+                "recentOps": 0.702
+              }
+            ],
+            "flags": [
+              "5 strong split bats vs R",
+              "top-third split pressure",
+              "Brandon Lowe 0.967 OPS vs R",
+              "Ryan O'Hearn 0.890 OPS vs R",
+              "Jared Triolo 0.485 OPS vs R"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Marlins",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "Pirates",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Marlins",
+            "projectedReliefRunsAllowed": 1.6,
+            "adjustedProjectedReliefRunsAllowed": 1.3,
+            "projectedReliefOuts": 11.7,
+            "leverageAvailabilityScore": 57.9,
+            "leadAvailabilityScore": 96.1,
+            "bridgeStressScore": 32.9,
+            "runDelta": -0.3,
+            "hitDelta": 0,
+            "expectedEarlyBridge": true,
+            "flags": [
+              "RP2 available-pen runs 1.6 -> 1.3"
+            ]
+          },
+          {
+            "teamName": "Pirates",
+            "projectedReliefRunsAllowed": 3.7,
+            "adjustedProjectedReliefRunsAllowed": 3.4,
+            "projectedReliefOuts": 12.1,
+            "leverageAvailabilityScore": 58.6,
+            "leadAvailabilityScore": 84.1,
+            "bridgeStressScore": 41.5,
+            "runDelta": 0.5,
+            "hitDelta": 0.6,
+            "expectedEarlyBridge": true,
+            "flags": [
+              "RP2 available-pen runs 3.7 -> 3.4"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 3.6,
+          "home": 5.5
+        },
+        "projectedHitTotals": {
+          "away": 7.4,
+          "home": 11.6
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
         "selection": "Pirates",
         "opponent": "Marlins",
-        "pickProjectedRuns": 5.3,
-        "opponentProjectedRuns": 2.7,
-        "projectedTotalRuns": 8,
-        "runDiff": 2.6,
-        "absoluteRunDiff": 2.6,
-        "runDiffSharePct": 32.5,
-        "confidence": 68,
-        "marketProbabilityPct": 56.3,
+        "pickProjectedRuns": 5.5,
+        "opponentProjectedRuns": 3.6,
+        "projectedTotalRuns": 9.1,
+        "runDiff": 1.9,
+        "absoluteRunDiff": 1.9,
+        "runDiffSharePct": 20.9,
+        "confidence": 65,
+        "marketProbabilityPct": 62.4,
         "grade": "Separated ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Pirates projects 2.6 runs better in a 8-run environment."
+        "note": "Pirates projects 1.9 runs better in a 9.1-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
-        "label": "Starter-to-bullpen flip",
+        "label": "Favorite conversion trap",
         "shapeLabel": "balanced traffic game",
         "category": {
-          "slug": "starter_to_bullpen_flip",
-          "label": "Starter-to-bullpen flip",
-          "bestExpression": "Pirates first-five side",
-          "confidence": 48.4,
+          "slug": "false_favorite_conversion_trap",
+          "label": "Favorite conversion trap",
+          "bestExpression": "No taxed ML; require early conversion or better live price",
+          "confidence": 8.9,
           "reasons": [
-            "The pick can own the starter window without owning the late game.",
-            "Use the timing edge before bridge innings can flip it."
+            "The favorite price is ahead of the lineup conversion profile.",
+            "Do not pay for runs the first cycle has not shown yet."
           ],
           "laneMap": {
-            "side": "Secondary to the named lane.",
-            "first5": "Primary lane.",
+            "side": "No blind pregame ML; require visible conversion.",
+            "first5": "Use only if starter and top-order pressure agree.",
             "total": "Needs line-specific EV.",
             "firstInning": "Advisory only.",
-            "live": "Use price discipline."
+            "live": "Enter only after a converted traffic pocket or a much better price."
           },
           "inningMap": [
             {
               "innings": "1-2",
-              "expectation": "Pirates can look right early even if full-game ML is fragile.",
-              "watch": "Entry belongs to F5 or live lead, not blind FG."
+              "expectation": "Favorite price is asking to be paid before the lineup converts.",
+              "watch": "No first-cycle damage means the price is too expensive."
             },
             {
               "innings": "3-5",
-              "expectation": "This is the main scoring window for the pick.",
-              "watch": "If the pick trails after five, the original read is mostly gone."
+              "expectation": "The favorite must turn traffic into runs before the underdog gets a cheap inning.",
+              "watch": "Avoid laying tax into dead contact."
             },
             {
               "innings": "6-7",
-              "expectation": "Marlins can re-enter through the bridge.",
-              "watch": "Expect hedge or live reversal pressure here."
+              "expectation": "If still close, the favorite edge is mostly market inertia.",
+              "watch": "Look for hedge/live underdog price instead."
             },
             {
               "innings": "8-9",
-              "expectation": "Late innings are not aligned with the pregame side.",
-              "watch": "Do not confuse early control with full-game safety."
+              "expectation": "Late favorite bailout is not the base case.",
+              "watch": "Do not compound if the bridge is stressed."
             }
           ],
           "diagnostics": {
@@ -19031,7 +19951,7 @@
             "projectedHitEdge": 4.2
           }
         },
-        "summary": "Starter-to-bullpen flip: Pirates first-five side. Reality-gap 37/100. Main checks: 78°F | Wind 10 mph Out | 0% precip | weather helps carry.",
+        "summary": "Favorite conversion trap: No taxed ML; require early conversion or better live price. Reality-gap 37.6/100. Main checks: 77°F | Wind 9 mph Out | 0% precip | weather helps carry.",
         "pickTeam": "Pirates",
         "opponentTeam": "Marlins",
         "scores": {
@@ -19039,9 +19959,9 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 40,
           "bullpenFlipScore": 48.4,
-          "starterControlScore": 64.4,
-          "marketContradictionScore": 3.8,
-          "realityGapScore": 37
+          "starterControlScore": 61.9,
+          "marketContradictionScore": 11.1,
+          "realityGapScore": 37.6
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -19055,9 +19975,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 36.8,
-              "pickScore": 36.8,
-              "opponentScore": 11.5
+              "gameScore": 36.7,
+              "pickScore": 36.7,
+              "opponentScore": 11.9
             },
             {
               "id": "chaos",
@@ -19105,7 +20025,7 @@
               "role": "pick",
               "team": "Pirates",
               "scores": {
-                "pressure": 36.8,
+                "pressure": 36.7,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -19113,7 +20033,7 @@
                 "flow": 75
               },
               "polygon": [
-                36.8,
+                36.7,
                 5,
                 0,
                 16,
@@ -19124,7 +20044,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 70.9,
+                "starterScore": 70.8,
                 "bullpenScore": 60.2,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -19138,7 +20058,7 @@
               "role": "opponent",
               "team": "Marlins",
               "scores": {
-                "pressure": 11.5,
+                "pressure": 11.9,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -19146,7 +20066,7 @@
                 "flow": 25
               },
               "polygon": [
-                11.5,
+                11.9,
                 5,
                 0,
                 16,
@@ -19157,7 +20077,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 63.8,
+                "starterScore": 66.3,
                 "bullpenScore": 65.3,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -19169,10 +20089,10 @@
             }
           ],
           "gameProfile": {
-            "label": "Starter-to-bullpen flip",
-            "bestExpression": "Pirates first-five side",
+            "label": "Favorite conversion trap",
+            "bestExpression": "No taxed ML; require early conversion or better live price",
             "scores": {
-              "pressure": 36.8,
+              "pressure": 36.7,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
@@ -19180,7 +20100,7 @@
               "flow": 60
             },
             "polygon": [
-              36.8,
+              36.7,
               44.8,
               8.5,
               24.4,
@@ -19227,47 +20147,47 @@
           "sunVisibilityChaosBoost": 0
         },
         "metricNotes": [
-          "78°F | Wind 10 mph Out | 0% precip | weather helps carry"
+          "77°F | Wind 9 mph Out | 0% precip | weather helps carry"
         ],
         "laneMap": {
-          "side": "Secondary to the named lane.",
-          "first5": "Primary lane.",
+          "side": "No blind pregame ML; require visible conversion.",
+          "first5": "Use only if starter and top-order pressure agree.",
           "total": "Needs line-specific EV.",
           "firstInning": "Advisory only.",
-          "live": "Use price discipline."
+          "live": "Enter only after a converted traffic pocket or a much better price."
         },
         "inningMap": [
           {
             "innings": "1-2",
-            "expectation": "Pirates can look right early even if full-game ML is fragile.",
-            "watch": "Entry belongs to F5 or live lead, not blind FG."
+            "expectation": "Favorite price is asking to be paid before the lineup converts.",
+            "watch": "No first-cycle damage means the price is too expensive."
           },
           {
             "innings": "3-5",
-            "expectation": "This is the main scoring window for the pick.",
-            "watch": "If the pick trails after five, the original read is mostly gone."
+            "expectation": "The favorite must turn traffic into runs before the underdog gets a cheap inning.",
+            "watch": "Avoid laying tax into dead contact."
           },
           {
             "innings": "6-7",
-            "expectation": "Marlins can re-enter through the bridge.",
-            "watch": "Expect hedge or live reversal pressure here."
+            "expectation": "If still close, the favorite edge is mostly market inertia.",
+            "watch": "Look for hedge/live underdog price instead."
           },
           {
             "innings": "8-9",
-            "expectation": "Late innings are not aligned with the pregame side.",
-            "watch": "Do not confuse early control with full-game safety."
+            "expectation": "Late favorite bailout is not the base case.",
+            "watch": "Do not compound if the bridge is stressed."
           }
         ],
         "marketImplications": {
           "side": "Pirates is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
-          "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 64.6% YRFI."
+          "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 74% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 31.7,
+          "impactScore": 47.2,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -19295,7 +20215,7 @@
             }
           },
           "trustedUse": "Use RF as a nonlinear totals/game-shape check first. Do not let it pick ML/F5 by itself yet.",
-          "totalsRead": "RF totals baseline has little to add when the line and projection are nearly equal.",
+          "totalsRead": "RF totals baseline can be used as a second check on the posted total.",
           "moneylineRead": "RF moneyline history is not deployable; it can only flag disagreement for review.",
           "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
           "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
@@ -19304,12 +20224,12 @@
       "first5Moneyline": {
         "pickSide": "home",
         "pickTeam": "Pirates",
-        "awayProjectedRuns": 1.5,
+        "awayProjectedRuns": 1.7,
         "homeProjectedRuns": 3.1,
-        "awayLeadProbability": 15.7,
-        "homeLeadProbability": 69.4,
-        "pushProbability": 14.9,
-        "leadProbability": 69.4,
+        "awayLeadProbability": 18.7,
+        "homeLeadProbability": 65.7,
+        "pushProbability": 15.6,
+        "leadProbability": 65.7,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -19331,12 +20251,12 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 62,
-        "probability": 56.7,
+        "probability": 56.2,
         "expectedValue": 0.8,
-        "statValueLabel": "0.84 exp HR",
+        "statValueLabel": "0.83 exp HR",
         "sample": {
-          "seasonGames": 8,
-          "seasonPlateAppearances": 19,
+          "seasonGames": 9,
+          "seasonPlateAppearances": 20,
           "recentGames": 8,
           "recentPlateAppearances": 28,
           "statcastGames": 1,
@@ -19345,7 +20265,7 @@
         },
         "repeatability": {
           "careerPa": 11,
-          "seasonPa": 19,
+          "seasonPa": 20,
           "powerIndex": 38.66,
           "contactRisk": 23.46,
           "roleStability": 18.62,
@@ -19363,7 +20283,7 @@
             "hrDelta": 0.1,
             "rolePressure": "audition pressure",
             "approachLabel": "career-story confidence spike",
-            "seasonPa": 19,
+            "seasonPa": 20,
             "careerPa": 11
           },
           "canCarryTinySample": false,
@@ -19389,7 +20309,7 @@
         "matchupNote": "+10.00 vs Sandy Alcantara",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".385 AVG | 1.733 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".357 AVG | 1.621 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "marlins-pirates:682997:rbi",
@@ -19404,12 +20324,12 @@
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
         "confidence": 68,
-        "probability": 89.5,
+        "probability": 90.5,
         "expectedValue": 2.3,
-        "statValueLabel": "2.26 exp RBI",
+        "statValueLabel": "2.35 exp RBI",
         "sample": {
-          "seasonGames": 8,
-          "seasonPlateAppearances": 19,
+          "seasonGames": 9,
+          "seasonPlateAppearances": 20,
           "recentGames": 8,
           "recentPlateAppearances": 28,
           "statcastGames": 1,
@@ -19418,7 +20338,7 @@
         },
         "repeatability": {
           "careerPa": 11,
-          "seasonPa": 19,
+          "seasonPa": 20,
           "powerIndex": 38.66,
           "contactRisk": 23.46,
           "roleStability": 18.62,
@@ -19436,7 +20356,7 @@
             "hrDelta": 0.1,
             "rolePressure": "audition pressure",
             "approachLabel": "career-story confidence spike",
-            "seasonPa": 19,
+            "seasonPa": 20,
             "careerPa": 11
           },
           "canCarryTinySample": false,
@@ -19462,7 +20382,7 @@
         "matchupNote": "+10.00 vs Sandy Alcantara",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".385 AVG | 1.733 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".357 AVG | 1.621 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "marlins-pirates:687462:runs",
@@ -19477,12 +20397,12 @@
         "propLabel": "Runs",
         "marketLabel": "Over 0.5 runs",
         "confidence": 72,
-        "probability": 88.7,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.18 exp runs",
+        "probability": 89.6,
+        "expectedValue": 2.3,
+        "statValueLabel": "2.27 exp runs",
         "sample": {
-          "seasonGames": 63,
-          "seasonPlateAppearances": 245,
+          "seasonGames": 64,
+          "seasonPlateAppearances": 246,
           "recentGames": 10,
           "recentPlateAppearances": 44,
           "statcastGames": 6,
@@ -19491,7 +20411,7 @@
         },
         "repeatability": {
           "careerPa": 1041,
-          "seasonPa": 245,
+          "seasonPa": 246,
           "powerIndex": 57.05,
           "contactRisk": 32.91,
           "roleStability": 100,
@@ -19501,15 +20421,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 50.8,
+            "confidenceScore": 50.7,
             "processScore": -5,
             "careerWeight": 0.1,
-            "identityDelta": 2.5,
+            "identityDelta": 2.3,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process fading",
-            "seasonPa": 245,
+            "seasonPa": 246,
             "careerPa": 1041
           },
           "canCarryTinySample": false,
@@ -19534,7 +20454,7 @@
         "matchupNote": "+10.00 vs Sandy Alcantara",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".291 AVG | .859 OPS | 60 H | 9 HR | 10g: .350 AVG | 1.059 OPS | 14 H | 4 HR | vs RHP: .298 AVG | .888 OPS | 8 HR | career 1041 PA | .798 OPS | 31 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +5.0 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".290 AVG | .855 OPS | 60 H | 9 HR | 10g: .350 AVG | 1.059 OPS | 14 H | 4 HR | vs RHP: .298 AVG | .888 OPS | 8 HR | career 1041 PA | .798 OPS | 31 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +5.0 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "marlins-pirates:682997:hitRunRbi",
@@ -19549,12 +20469,12 @@
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 96.3,
-        "expectedValue": 5.1,
-        "statValueLabel": "2.01 H · 1.23 R · 1.85 RBI · 5.10 total",
+        "probability": 96.5,
+        "expectedValue": 5.2,
+        "statValueLabel": "1.97 H · 1.27 R · 1.93 RBI · 5.16 total",
         "sample": {
-          "seasonGames": 8,
-          "seasonPlateAppearances": 19,
+          "seasonGames": 9,
+          "seasonPlateAppearances": 20,
           "recentGames": 8,
           "recentPlateAppearances": 28,
           "statcastGames": 1,
@@ -19563,7 +20483,7 @@
         },
         "repeatability": {
           "careerPa": 11,
-          "seasonPa": 19,
+          "seasonPa": 20,
           "powerIndex": 38.66,
           "contactRisk": 23.46,
           "roleStability": 18.62,
@@ -19581,7 +20501,7 @@
             "hrDelta": 0.1,
             "rolePressure": "audition pressure",
             "approachLabel": "career-story confidence spike",
-            "seasonPa": 19,
+            "seasonPa": 20,
             "careerPa": 11
           },
           "canCarryTinySample": false,
@@ -19608,17 +20528,17 @@
         "matchupNote": "+10.00 vs Sandy Alcantara",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".385 AVG | 1.733 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".357 AVG | 1.621 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane"
       },
       {
-        "id": "marlins-pirates:682997:totalBases",
+        "id": "marlins-pirates:672640:totalBases",
         "gameId": "marlins-pirates",
         "gameTitle": "Marlins @ Pirates",
         "league": "MLB",
-        "playerId": 682997,
-        "playerName": "Tyler Callihan",
-        "teamName": "Pirates",
-        "slot": 6,
+        "playerId": 672640,
+        "playerName": "Otto Lopez",
+        "teamName": "Marlins",
+        "slot": 2,
         "propType": "totalBases",
         "propLabel": "TB",
         "marketLabel": "Over 1.5 total bases",
@@ -19627,120 +20547,114 @@
         "expectedValue": 1.8,
         "statValueLabel": "1.75 exp TB",
         "sample": {
-          "seasonGames": 8,
-          "seasonPlateAppearances": 19,
-          "recentGames": 8,
-          "recentPlateAppearances": 28,
-          "statcastGames": 1,
-          "statcastPlateAppearances": 2,
+          "seasonGames": 69,
+          "seasonPlateAppearances": 290,
+          "recentGames": 12,
+          "recentPlateAppearances": 52,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 27,
           "opponentContextGames": 0
         },
         "repeatability": {
-          "careerPa": 11,
-          "seasonPa": 19,
-          "powerIndex": 38.66,
-          "contactRisk": 23.46,
-          "roleStability": 18.62,
-          "label": "unproven MLB sample",
-          "volatilityLabel": "thin career sample",
+          "careerPa": 1286,
+          "seasonPa": 290,
+          "powerIndex": 43.43,
+          "contactRisk": 32.82,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
           "careerPowerBacked": false,
           "careerVolatile": false,
-          "roleStable": false,
+          "roleStable": true,
           "approachState": {
-            "confidenceScore": 68,
-            "processScore": 11,
-            "careerWeight": 0.28,
-            "identityDelta": 12,
-            "tbDelta": 0.5,
-            "hrDelta": 0.1,
-            "rolePressure": "audition pressure",
-            "approachLabel": "career-story confidence spike",
-            "seasonPa": 19,
-            "careerPa": 11
+            "confidenceScore": 66.6,
+            "processScore": 7,
+            "careerWeight": 0.1,
+            "identityDelta": 6.3,
+            "tbDelta": 0.1,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process improving",
+            "seasonPa": 290,
+            "careerPa": 1286
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
-          "reason": "tiny 2026 sample without enough career support"
+          "reason": "contact-stable profile"
         },
         "recommendationTier": "Lean",
         "shadowSupportTag": "Soft heat",
         "shadowSupportLevel": "soft",
-        "reason": "slot 6 carry | soft heat only: xSLG + hard-hit support is still thin | rolling Statcast power is live | tiny 2026 sample without enough career support",
+        "reason": "slot 2 carry | soft heat only: xSLG + hard-hit support is still thin | rolling Statcast power is live | contact-stable profile",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
-          "run-ceiling-live",
-          "traffic-lane-live",
-          "clean-conversion-lane",
           "carry-bat-live",
-          "power-lane",
-          "tiny-current-sample",
-          "career-story-confidence-spike",
+          "process-improving",
           "soft-heat",
-          "statcast-power-up",
-          "statcast-contact-up"
+          "statcast-power-up"
         ],
-        "matchupNote": "+10.00 vs Sandy Alcantara",
+        "matchupNote": "+10.00 vs Braxton Ashcraft",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".385 AVG | 1.733 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".342 AVG | .854 OPS | 93 H | 5 HR | 12g: .423 AVG | 1.038 OPS | 22 H | 0 HR | vs RHP: .300 AVG | .768 OPS | 4 HR | career 1286 PA | .710 OPS | 25 HR | contact-stable profile | power 43 | 2026 sample ok | arsenal 4-Seam Fastball 32% / Curveball 24% / Slider 24% | fit +3.2 | +10.0 matchup grade in a in-zone lane"
       },
       {
-        "id": "marlins-pirates:682997:hits",
+        "id": "marlins-pirates:687462:hits",
         "gameId": "marlins-pirates",
         "gameTitle": "Marlins @ Pirates",
         "league": "MLB",
-        "playerId": 682997,
-        "playerName": "Tyler Callihan",
+        "playerId": 687462,
+        "playerName": "Spencer Horwitz",
         "teamName": "Pirates",
-        "slot": 6,
+        "slot": 1,
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
         "confidence": 77,
-        "probability": 59.8,
-        "expectedValue": 2,
-        "statValueLabel": "2.01 exp hits",
+        "probability": 66.2,
+        "expectedValue": 2.3,
+        "statValueLabel": "2.27 exp hits",
         "sample": {
-          "seasonGames": 8,
-          "seasonPlateAppearances": 19,
-          "recentGames": 8,
-          "recentPlateAppearances": 28,
-          "statcastGames": 1,
-          "statcastPlateAppearances": 2,
+          "seasonGames": 64,
+          "seasonPlateAppearances": 246,
+          "recentGames": 10,
+          "recentPlateAppearances": 44,
+          "statcastGames": 6,
+          "statcastPlateAppearances": 28,
           "opponentContextGames": 0
         },
         "repeatability": {
-          "careerPa": 11,
-          "seasonPa": 19,
-          "powerIndex": 38.66,
-          "contactRisk": 23.46,
-          "roleStability": 18.62,
-          "label": "unproven MLB sample",
-          "volatilityLabel": "thin career sample",
+          "careerPa": 1041,
+          "seasonPa": 246,
+          "powerIndex": 57.05,
+          "contactRisk": 32.91,
+          "roleStability": 100,
+          "label": "contact-stable profile",
+          "volatilityLabel": "stable enough",
           "careerPowerBacked": false,
           "careerVolatile": false,
-          "roleStable": false,
+          "roleStable": true,
           "approachState": {
-            "confidenceScore": 68,
-            "processScore": 11,
-            "careerWeight": 0.28,
-            "identityDelta": 12,
-            "tbDelta": 0.5,
-            "hrDelta": 0.1,
-            "rolePressure": "audition pressure",
-            "approachLabel": "career-story confidence spike",
-            "seasonPa": 19,
-            "careerPa": 11
+            "confidenceScore": 50.7,
+            "processScore": -5,
+            "careerWeight": 0.1,
+            "identityDelta": 2.3,
+            "tbDelta": 0,
+            "hrDelta": 0,
+            "rolePressure": "role established",
+            "approachLabel": "process fading",
+            "seasonPa": 246,
+            "careerPa": 1041
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
-          "reason": "tiny 2026 sample without enough career support"
+          "reason": "contact-stable profile"
         },
         "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 6 carry | recent form up | split fit live | clean traffic lane",
+        "reason": "slot 1 carry | recent form up | split fit live | clean traffic lane",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
@@ -19748,15 +20662,13 @@
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
-          "tiny-current-sample",
-          "career-story-confidence-spike",
-          "statcast-power-up",
-          "statcast-contact-up"
+          "process-fading",
+          "statcast-fade"
         ],
         "matchupNote": "+10.00 vs Sandy Alcantara",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".385 AVG | 1.733 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".290 AVG | .855 OPS | 60 H | 9 HR | 10g: .350 AVG | 1.059 OPS | 14 H | 4 HR | vs RHP: .298 AVG | .888 OPS | 8 HR | career 1041 PA | .798 OPS | 31 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +5.0 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "marlins-pirates:682997:walks",
@@ -19771,12 +20683,12 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 82,
-        "probability": 82.4,
+        "probability": 81.2,
         "expectedValue": 1.7,
-        "statValueLabel": "1.74 exp walks",
+        "statValueLabel": "1.67 exp walks",
         "sample": {
-          "seasonGames": 8,
-          "seasonPlateAppearances": 19,
+          "seasonGames": 9,
+          "seasonPlateAppearances": 20,
           "recentGames": 8,
           "recentPlateAppearances": 28,
           "statcastGames": 1,
@@ -19785,7 +20697,7 @@
         },
         "repeatability": {
           "careerPa": 11,
-          "seasonPa": 19,
+          "seasonPa": 20,
           "powerIndex": 38.66,
           "contactRisk": 23.46,
           "roleStability": 18.62,
@@ -19803,7 +20715,7 @@
             "hrDelta": 0.1,
             "rolePressure": "audition pressure",
             "approachLabel": "career-story confidence spike",
-            "seasonPa": 19,
+            "seasonPa": 20,
             "careerPa": 11
           },
           "canCarryTinySample": false,
@@ -19829,7 +20741,7 @@
         "matchupNote": "+10.00 vs Sandy Alcantara",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".385 AVG | 1.733 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".357 AVG | 1.621 OPS | 5 H | 2 HR | 8g: .400 AVG | 1.871 OPS | 8 H | 4 HR | vs RHP: .364 AVG | 1.744 OPS | 2 HR | career 11 PA | .697 OPS | 0 HR | unproven MLB sample | power 39 | tiny 2026 sample | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +8.0 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "marlins-pirates:687462:singles",
@@ -19843,13 +20755,13 @@
         "propType": "singles",
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
-        "confidence": 76,
-        "probability": 74,
-        "expectedValue": 1.3,
-        "statValueLabel": "1.35 exp singles",
+        "confidence": 77,
+        "probability": 76.1,
+        "expectedValue": 1.4,
+        "statValueLabel": "1.43 exp singles",
         "sample": {
-          "seasonGames": 63,
-          "seasonPlateAppearances": 245,
+          "seasonGames": 64,
+          "seasonPlateAppearances": 246,
           "recentGames": 10,
           "recentPlateAppearances": 44,
           "statcastGames": 6,
@@ -19858,7 +20770,7 @@
         },
         "repeatability": {
           "careerPa": 1041,
-          "seasonPa": 245,
+          "seasonPa": 246,
           "powerIndex": 57.05,
           "contactRisk": 32.91,
           "roleStability": 100,
@@ -19868,15 +20780,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 50.8,
+            "confidenceScore": 50.7,
             "processScore": -5,
             "careerWeight": 0.1,
-            "identityDelta": 2.5,
+            "identityDelta": 2.3,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process fading",
-            "seasonPa": 245,
+            "seasonPa": 246,
             "careerPa": 1041
           },
           "canCarryTinySample": false,
@@ -19901,7 +20813,7 @@
         "matchupNote": "+10.00 vs Sandy Alcantara",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".291 AVG | .859 OPS | 60 H | 9 HR | 10g: .350 AVG | 1.059 OPS | 14 H | 4 HR | vs RHP: .298 AVG | .888 OPS | 8 HR | career 1041 PA | .798 OPS | 31 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +5.0 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".290 AVG | .855 OPS | 60 H | 9 HR | 10g: .350 AVG | 1.059 OPS | 14 H | 4 HR | vs RHP: .298 AVG | .888 OPS | 8 HR | career 1041 PA | .798 OPS | 31 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal Sinker 23% / Changeup 23% / 4-Seam Fastball 20% | fit +5.0 | +10.0 matchup grade in a neutral lane"
       }
     ],
     "byType": {
@@ -19912,7 +20824,7 @@
       "runs": [],
       "hitRunRbi": []
     },
-    "candidateCount": 29,
+    "candidateCount": 31,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

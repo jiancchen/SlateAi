@@ -451,6 +451,8 @@ def upsert_lineup_board(
                     "savant": player.get("savant"),
                     "opponentContext": player.get("opponentContext"),
                     "opposingStarter": pitcher,
+                    "openerContext": side_payload.get("openerContext"),
+                    "starterRoleContext": side_payload.get("starterRoleContext"),
                     "opposingRelievers": side_payload.get("opposingRelievers"),
                     "lineupSource": side_payload.get("lineupSource"),
                 }

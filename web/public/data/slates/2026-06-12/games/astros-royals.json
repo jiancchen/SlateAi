@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Astros",
-      "detail": "Tatsuya Imai (RHP) | 3-3 | 5.24 ERA | 36 SO | 1.40 WHIP | 34.1 IP"
+      "detail": "Tatsuya Imai (RHP) | 3-3 | 6.43 ERA | 37 SO | 1.51 WHIP | 35.0 IP"
     },
     {
       "side": "Home",
       "name": "Royals",
-      "detail": "Luinder Avila (RHP) | 1-2 | 4.02 ERA | 28 SO | 1.60 WHIP | 31.1 IP"
+      "detail": "Luinder Avila (RHP) | 1-3 | 6.19 ERA | 28 SO | 1.81 WHIP | 32.0 IP"
     }
   ],
   "summary": "Astros @ Royals with Tatsuya Imai against Luinder Avila.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Astros -114 / Royals +102 | o9.5 -103 / u9.5 -110 | -1.5 +137 / +1.5 -159 | F5 no F5 ML / no F5 total.",
+    "Current board: Astros +110 / Royals -125 | o9.5 even / u9.5 -114 | +1.5 -185 / -1.5 +160 | F5 no F5 ML / no F5 total.",
     "Tatsuya Imai vs Luinder Avila."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -36,19 +36,19 @@
       "divisionRank": "4",
       "gamesBack": "5.0",
       "losses": 39,
-      "runDifferential": -38,
-      "streakCode": "L2",
-      "winningPercentage": ".443",
-      "wins": 31
+      "runDifferential": -36,
+      "streakCode": "W1",
+      "winningPercentage": ".451",
+      "wins": 32
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "5",
-      "gamesBack": "9.0",
-      "losses": 41,
-      "runDifferential": -50,
-      "streakCode": "L2",
-      "winningPercentage": ".406",
+      "gamesBack": "10.0",
+      "losses": 42,
+      "runDifferential": -52,
+      "streakCode": "L3",
+      "winningPercentage": ".400",
       "wins": 28
     }
   },
@@ -133,6 +133,81 @@
       "Local first pitch 7:10 PM CDT is before the 20:00 late-light threshold.",
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
+  },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Astros @ Royals",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "HOU",
+    "homeTeamCode": "KCA",
+    "label": "Astros @ Royals",
+    "sourceStatus": "warehouse",
+    "rowCount": 1,
+    "pitcherName": "L. Avila",
+    "gameContexts": [
+      "@ 6 HOU KCA"
+    ],
+    "averageHrForce": 1.4,
+    "maxHrForce": 1.4,
+    "highHrForceRows": 1,
+    "extremeHrForceRows": 0,
+    "highHrForceSharePct": 100,
+    "qualityAbPct": 0,
+    "hardHitPct": 0,
+    "matchupPassRows": 0,
+    "topRows": [
+      {
+        "playerName": "J. Loperfido",
+        "pitcherName": "L. Avila",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.4,
+        "qualityAbPct": 0,
+        "hardHitPct": 0,
+        "recentOps": null,
+        "bvpAtBats": 1,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      }
+    ],
+    "awayOffense": {
+      "label": "Astros hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "Royals hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
   },
   "offenseContext": {
     "away": {
@@ -3075,71 +3150,71 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 81,
-          "noRunProbabilityPct": 19,
+          "runProbabilityPct": 82,
+          "noRunProbabilityPct": 18,
           "awayRunProbabilityPct": 72,
-          "homeRunProbabilityPct": 32.2,
+          "homeRunProbabilityPct": 35.6,
           "lean": "Run",
           "strength": "strong",
           "sampleHalves": 139,
-          "caution": "",
-          "reason": "YRFI with a 81% modeled chance of at least one first-inning run. Astros score 72% of the time and Royals 32.2% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "caution": "Royals handedness splits are weak against the starter (29.1)",
+          "reason": "YRFI with a 82% modeled chance of at least one first-inning run. Astros score 72% of the time and Royals 35.6% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.5 is embedded in the first-inning run probability.",
           "sourceModel": "M2 first-inning"
         },
         {
           "inning": 2,
           "phase": "M2 early F5",
-          "runProbabilityPct": 62.3,
-          "noRunProbabilityPct": 37.7,
-          "awayRunProbabilityPct": 33.5,
-          "homeRunProbabilityPct": 28.8,
+          "runProbabilityPct": 67.3,
+          "noRunProbabilityPct": 32.7,
+          "awayRunProbabilityPct": 36.2,
+          "homeRunProbabilityPct": 31.1,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 6 projected first-five runs, with inning 2 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 2 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 3,
           "phase": "M2 early F5",
-          "runProbabilityPct": 61,
-          "noRunProbabilityPct": 39,
-          "awayRunProbabilityPct": 35.2,
-          "homeRunProbabilityPct": 25.8,
+          "runProbabilityPct": 66,
+          "noRunProbabilityPct": 34,
+          "awayRunProbabilityPct": 38,
+          "homeRunProbabilityPct": 28,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 6 projected first-five runs, with inning 3 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 3 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 4,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 64.5,
-          "noRunProbabilityPct": 35.5,
-          "awayRunProbabilityPct": 29,
-          "homeRunProbabilityPct": 35.5,
+          "runProbabilityPct": 69.5,
+          "noRunProbabilityPct": 30.5,
+          "awayRunProbabilityPct": 31.3,
+          "homeRunProbabilityPct": 38.2,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 6 projected first-five runs, with inning 4 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 4 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 5,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 68.3,
-          "noRunProbabilityPct": 31.7,
-          "awayRunProbabilityPct": 36.6,
-          "homeRunProbabilityPct": 31.7,
+          "runProbabilityPct": 73.2,
+          "noRunProbabilityPct": 26.8,
+          "awayRunProbabilityPct": 39.2,
+          "homeRunProbabilityPct": 34,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 6 projected first-five runs, with inning 5 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 5 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -7223,14 +7298,14 @@
       "pitchHand": "R",
       "wins": 3,
       "losses": 3,
-      "era": "5.24",
-      "strikeOuts": 36,
-      "inningsPitched": "34.1",
-      "hitsAllowed": 25,
-      "walks": 23,
+      "era": "6.43",
+      "strikeOuts": 37,
+      "inningsPitched": "35.0",
+      "hitsAllowed": 29,
+      "walks": 24,
       "homeRunsAllowed": 5,
-      "whip": "1.40",
-      "gamesStarted": 8,
+      "whip": "1.51",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 837227,
@@ -11573,15 +11648,15 @@
       "fullName": "Luinder Avila",
       "pitchHand": "R",
       "wins": 1,
-      "losses": 2,
-      "era": "4.02",
+      "losses": 3,
+      "era": "6.19",
       "strikeOuts": 28,
-      "inningsPitched": "31.1",
-      "hitsAllowed": 31,
-      "walks": 19,
-      "homeRunsAllowed": 2,
-      "whip": "1.60",
-      "gamesStarted": 3,
+      "inningsPitched": "32.0",
+      "hitsAllowed": 36,
+      "walks": 22,
+      "homeRunsAllowed": 4,
+      "whip": "1.81",
+      "gamesStarted": 4,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 679883,
@@ -16481,7 +16556,7 @@
       "usageContext": {
         "status": "tiny-sample",
         "label": "Tiny MLB sample",
-        "note": "Only 3 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
+        "note": "Only 4 MLB starts are loaded, so the board should assume a shorter leash and higher variance.",
         "expectedInnings": 3,
         "daysSinceLastStart": 69,
         "startsLoaded": 1,
@@ -16524,17 +16599,17 @@
       {
         "label": "Spread",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "-1.5 +137 / +1.5 -159"
+        "value": "+1.5 -185 / -1.5 +160"
       },
       {
         "label": "Total",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "o9.5 -103 / u9.5 -110"
+        "value": "o9.5 even / u9.5 -114"
       },
       {
         "label": "Moneyline",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "Astros -114 / Royals +102"
+        "value": "Astros +110 / Royals -125"
       }
     ],
     "note": "Board snapshot plus model context.",
@@ -16546,24 +16621,24 @@
       "index": 0,
       "role": "Away",
       "name": "Astros",
-      "detail": "Tatsuya Imai (RHP) | 3-3 | 5.24 ERA | 36 SO | 1.40 WHIP | 34.1 IP",
-      "americanOdds": -114,
-      "americanLabel": "-114",
-      "decimalOdds": 1.8771929824561404,
-      "impliedProbability": 0.5327102803738317,
-      "impliedProbabilityLabel": "53.3%"
+      "detail": "Tatsuya Imai (RHP) | 3-3 | 6.43 ERA | 37 SO | 1.51 WHIP | 35.0 IP",
+      "americanOdds": 110,
+      "americanLabel": "+110",
+      "decimalOdds": 2.1,
+      "impliedProbability": 0.47619047619047616,
+      "impliedProbabilityLabel": "47.6%"
     },
     {
       "id": "astros-royals:1",
       "index": 1,
       "role": "Home",
       "name": "Royals",
-      "detail": "Luinder Avila (RHP) | 1-2 | 4.02 ERA | 28 SO | 1.60 WHIP | 31.1 IP",
-      "americanOdds": 102,
-      "americanLabel": "+102",
-      "decimalOdds": 2.02,
-      "impliedProbability": 0.49504950495049505,
-      "impliedProbabilityLabel": "49.5%"
+      "detail": "Luinder Avila (RHP) | 1-3 | 6.19 ERA | 28 SO | 1.81 WHIP | 32.0 IP",
+      "americanOdds": -125,
+      "americanLabel": "-125",
+      "decimalOdds": 1.8,
+      "impliedProbability": 0.5555555555555556,
+      "impliedProbabilityLabel": "55.6%"
     }
   ],
   "moneyline": {
@@ -16576,24 +16651,24 @@
         "index": 0,
         "role": "Away",
         "name": "Astros",
-        "detail": "Tatsuya Imai (RHP) | 3-3 | 5.24 ERA | 36 SO | 1.40 WHIP | 34.1 IP",
-        "americanOdds": -114,
-        "americanLabel": "-114",
-        "decimalOdds": 1.8771929824561404,
-        "impliedProbability": 0.5327102803738317,
-        "impliedProbabilityLabel": "53.3%"
+        "detail": "Tatsuya Imai (RHP) | 3-3 | 6.43 ERA | 37 SO | 1.51 WHIP | 35.0 IP",
+        "americanOdds": 110,
+        "americanLabel": "+110",
+        "decimalOdds": 2.1,
+        "impliedProbability": 0.47619047619047616,
+        "impliedProbabilityLabel": "47.6%"
       },
       {
         "id": "astros-royals:1",
         "index": 1,
         "role": "Home",
         "name": "Royals",
-        "detail": "Luinder Avila (RHP) | 1-2 | 4.02 ERA | 28 SO | 1.60 WHIP | 31.1 IP",
-        "americanOdds": 102,
-        "americanLabel": "+102",
-        "decimalOdds": 2.02,
-        "impliedProbability": 0.49504950495049505,
-        "impliedProbabilityLabel": "49.5%"
+        "detail": "Luinder Avila (RHP) | 1-3 | 6.19 ERA | 28 SO | 1.81 WHIP | 32.0 IP",
+        "americanOdds": -125,
+        "americanLabel": "-125",
+        "decimalOdds": 1.8,
+        "impliedProbability": 0.5555555555555556,
+        "impliedProbabilityLabel": "55.6%"
       }
     ]
   },
@@ -16605,51 +16680,51 @@
       "index": 0,
       "role": "Away",
       "name": "Astros",
-      "detail": "Tatsuya Imai (RHP) | 3-3 | 5.24 ERA | 36 SO | 1.40 WHIP | 34.1 IP",
-      "americanOdds": -114,
-      "americanLabel": "-114",
-      "decimalOdds": 1.8771929824561404,
-      "impliedProbability": 0.5327102803738317,
-      "impliedProbabilityLabel": "53.3%"
+      "detail": "Tatsuya Imai (RHP) | 3-3 | 6.43 ERA | 37 SO | 1.51 WHIP | 35.0 IP",
+      "americanOdds": 110,
+      "americanLabel": "+110",
+      "decimalOdds": 2.1,
+      "impliedProbability": 0.47619047619047616,
+      "impliedProbabilityLabel": "47.6%"
     },
     "opponent": {
       "id": "astros-royals:1",
       "index": 1,
       "role": "Home",
       "name": "Royals",
-      "detail": "Luinder Avila (RHP) | 1-2 | 4.02 ERA | 28 SO | 1.60 WHIP | 31.1 IP",
-      "americanOdds": 102,
-      "americanLabel": "+102",
-      "decimalOdds": 2.02,
-      "impliedProbability": 0.49504950495049505,
-      "impliedProbabilityLabel": "49.5%"
+      "detail": "Luinder Avila (RHP) | 1-3 | 6.19 ERA | 28 SO | 1.81 WHIP | 32.0 IP",
+      "americanOdds": -125,
+      "americanLabel": "-125",
+      "decimalOdds": 1.8,
+      "impliedProbability": 0.5555555555555556,
+      "impliedProbabilityLabel": "55.6%"
     },
-    "lean": "Model pick: Astros on starter record and standings profile.",
-    "rationale": "Starter record: Astros (3-3) vs Royals (1-2)",
+    "lean": "Model pick: Astros on standings profile and starter record.",
+    "rationale": "Standings profile: Astros (32-39, 4th in division, -36 RD) vs Royals (28-42, 5th in division, -52 RD)",
     "confidence": 52,
     "volatility": 92,
-    "recommendationScore": 33,
+    "recommendationScore": 34,
     "tier": "Pass",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 1.7,
-    "modelEdgeLabel": "1.7-point model edge",
-    "marketProbability": 0.5183217790582515,
-    "marketProbabilityLabel": "51.8%",
+    "modelEdge": 6.3,
+    "modelEdgeLabel": "6.3-point model edge",
+    "marketProbability": 0.4615384615384615,
+    "marketProbabilityLabel": "46.2%",
     "inputs": [
       {
-        "label": "Starter record",
-        "summary": "Starter record: Astros (3-3) vs Royals (1-2)",
-        "source": "Listed probable starters",
-        "margin": 13.7,
-        "weight": 0.16
+        "label": "Standings profile",
+        "summary": "Standings profile: Astros (32-39, 4th in division, -36 RD) vs Royals (28-42, 5th in division, -52 RD)",
+        "source": "Standings context",
+        "margin": 17.9,
+        "weight": 0.14
       },
       {
-        "label": "Standings profile",
-        "summary": "Standings profile: Astros (31-39, 4th in division, -38 RD) vs Royals (28-41, 5th in division, -50 RD)",
-        "source": "Standings context",
-        "margin": 10.7,
-        "weight": 0.14
+        "label": "Starter record",
+        "summary": "Starter record: Astros (3-3) vs Royals (1-3)",
+        "source": "Listed probable starters",
+        "margin": 15.5,
+        "weight": 0.16
       },
       {
         "label": "Likely bridge chain",
@@ -16662,11 +16737,27 @@
     "inputsUsed": 12,
     "volatilityNotes": [
       {
+        "label": "The underdog owns the projected hit edge",
+        "delta": 6
+      },
+      {
+        "label": "The favorite is carrying a real traffic deficit despite the price",
+        "delta": 5
+      },
+      {
         "label": "Both offenses project to create real traffic",
         "delta": 5
       },
       {
+        "label": "The underdog projects cleaner through the starter window",
+        "delta": 4
+      },
+      {
         "label": "Higher posted total",
+        "delta": 5
+      },
+      {
+        "label": "Both listed ERAs carry damage risk",
         "delta": 5
       },
       {
@@ -16675,6 +16766,10 @@
       },
       {
         "label": "One lineup carries real platoon pressure versus the listed starter hand",
+        "delta": 3
+      },
+      {
+        "label": "Handedness split rows are moving the offensive shape",
         "delta": 3
       },
       {
@@ -16698,12 +16793,24 @@
         "delta": 4
       },
       {
-        "label": "The underdog owns the stronger bullpen escape hatch",
+        "label": "The underdog owns the fresher likely bridge chain",
         "delta": 5
+      },
+      {
+        "label": "The underdog lineup fits today’s starter better",
+        "delta": 5
+      },
+      {
+        "label": "The underdog hit-production trend is still live",
+        "delta": 3
       },
       {
         "label": "Favorite enters on a live losing streak",
         "delta": 4
+      },
+      {
+        "label": "Favorite still needs a shakier late bullpen to protect only a thin offense edge",
+        "delta": 3
       },
       {
         "label": "Favorite profile is carrying a shakier starter despite the price",
@@ -16734,12 +16841,16 @@
         "delta": 3
       },
       {
-        "label": "Coin-flip pressure is elevated for this full-game side",
-        "delta": 4
+        "label": "A big paper edge is still sitting inside a noisy baseball script, so conviction should stay capped",
+        "delta": 3
       },
       {
         "label": "Late-inning hold risk is above average for this side",
         "delta": 4
+      },
+      {
+        "label": "Starter edge looks better than the late-inning hold profile; this reads cleaner for first five",
+        "delta": 5
       },
       {
         "label": "Royals carry the cleaner bullpen profile",
@@ -16748,25 +16859,29 @@
       {
         "label": "Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.",
         "delta": 3
+      },
+      {
+        "label": "v1.1 market budget: this underdog call still needs cleaner starter, stability, and state support before it can be treated like a real market disagreement edge.",
+        "delta": 5
       }
     ],
     "pickReasons": [
-      "Astros own the cleaner full-game traffic script at 11.4 projected hits.",
-      "Astros have the better starter-window lane with 6.4 projected first-five hits.",
+      "Astros own the cleaner full-game traffic script at 11.9 projected hits.",
+      "Astros have the better starter-window lane with 7.1 projected first-five hits.",
       "Astros still hold the better bridge-and-finish script once the bullpens take over.",
       "Astros also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late."
     ],
     "indicators": {
-      "reliefPitchingRisk": 65,
-      "coinflipPressure": 61,
-      "starterLeverageIndex": 53.9,
+      "reliefPitchingRisk": 67,
+      "coinflipPressure": 57,
+      "starterLeverageIndex": 65.7,
       "lateInningStabilityIndex": 11.7,
       "pickBullpenScore": 44.7,
       "oppBullpenScore": 54.1,
       "pickBullpenChainScore": 82.1,
       "oppBullpenChainScore": 69.7,
-      "pickStarterScore": 56.3,
-      "oppStarterScore": 55.1,
+      "pickStarterScore": 52.6,
+      "oppStarterScore": 47.6,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -16822,10 +16937,10 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 1.8,
+      "projectedHitEdgeForPick": 2.6,
       "hitEdgeAgainstPick": false,
-      "pickIsMarketFavorite": true,
-      "pickIsMarketUnderdog": false,
+      "pickIsMarketFavorite": false,
+      "pickIsMarketUnderdog": true,
       "heavyFavoriteWeakLineupFlag": false,
       "heavyFavoriteNoisyBullpenFlag": false,
       "deadEarlyRiskFlag": false,
@@ -16858,25 +16973,27 @@
         "lateNotClean"
       ],
       "efficientFavoriteBlockers": [
+        "notMarketFavorite",
         "tierOnePass",
         "notPricedFavorite"
       ],
       "tierOneRiskPoints": 4,
       "tierOnePassFlag": true,
       "tierOneRiskFlags": [
-        "highRiskPoints"
+        "highRiskPoints",
+        "underdogNeedsProof"
       ],
-      "favoredSignalCount": 8,
-      "starterLateGap": 42.2,
+      "favoredSignalCount": 7,
+      "starterLateGap": 54,
       "starterLeashGap": 0,
-      "edgeHaircutApplied": 0.8,
+      "edgeHaircutApplied": 2.9,
       "gameShape": {
         "label": "Early-pressure side",
         "shapeLabel": "bullpen-flip game",
         "category": "early_pressure_side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "categoryConfidence": 60.9,
-        "realityGapScore": 54.6,
+        "categoryConfidence": 62.2,
+        "realityGapScore": 57.3,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -16888,7 +17005,7 @@
           {
             "id": "bridge",
             "label": "Bridge",
-            "score": 68.3
+            "score": 70.7
           },
           {
             "id": "chaos",
@@ -16896,7 +17013,7 @@
             "score": 44.8
           }
         ],
-        "rfImpactScore": 38.1
+        "rfImpactScore": 54.2
       }
     },
     "gameShape": {
@@ -16907,7 +17024,7 @@
         "slug": "early_pressure_side",
         "label": "Early-pressure side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "confidence": 60.9,
+        "confidence": 62.2,
         "reasons": [
           "The pick needs to cash the first traffic pocket.",
           "The best edge is timing, not late-game patience."
@@ -16951,20 +17068,20 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 1.8
+          "projectedHitEdge": 2.6
         }
       },
-      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 54.6/100. Main checks: 82°F | Wind 7 mph R-L | 0% precip | weather helps carry.",
+      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 57.3/100. Main checks: 82°F | Wind 7 mph R-L | 0% precip | weather helps carry.",
       "pickTeam": "Astros",
       "opponentTeam": "Royals",
       "scores": {
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
-        "bullpenFlipScore": 68.3,
-        "starterControlScore": 30.4,
-        "marketContradictionScore": 18,
-        "realityGapScore": 54.6
+        "bullpenFlipScore": 70.7,
+        "starterControlScore": 42,
+        "marketContradictionScore": 30,
+        "realityGapScore": 57.3
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -16978,9 +17095,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 24.5,
-            "pickScore": 24.5,
-            "opponentScore": 9.9
+            "gameScore": 30.3,
+            "pickScore": 30.3,
+            "opponentScore": 8.6
           },
           {
             "id": "chaos",
@@ -17010,7 +17127,7 @@
             "id": "bridge",
             "label": "Bridge",
             "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-            "gameScore": 68.3,
+            "gameScore": 70.7,
             "pickScore": 9.6,
             "opponentScore": 6
           },
@@ -17028,7 +17145,7 @@
             "role": "pick",
             "team": "Astros",
             "scores": {
-              "pressure": 24.5,
+              "pressure": 30.3,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17036,7 +17153,7 @@
               "flow": 100
             },
             "polygon": [
-              24.5,
+              30.3,
               5,
               0,
               16,
@@ -17047,7 +17164,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 56.3,
+              "starterScore": 52.6,
               "bullpenScore": 44.7,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17061,7 +17178,7 @@
             "role": "opponent",
             "team": "Royals",
             "scores": {
-              "pressure": 9.9,
+              "pressure": 8.6,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17069,7 +17186,7 @@
               "flow": 0
             },
             "polygon": [
-              9.9,
+              8.6,
               5,
               0,
               16,
@@ -17080,7 +17197,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 55.1,
+              "starterScore": 47.6,
               "bullpenScore": 54.1,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17095,19 +17212,19 @@
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 24.5,
+            "pressure": 30.3,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
-            "bridge": 68.3,
+            "bridge": 70.7,
             "flow": 100
           },
           "polygon": [
-            24.5,
+            30.3,
             44.8,
             8.5,
             24.4,
-            68.3,
+            70.7,
             100
           ],
           "dominantAxes": [
@@ -17119,7 +17236,7 @@
             {
               "id": "bridge",
               "label": "Bridge",
-              "score": 68.3
+              "score": 70.7
             },
             {
               "id": "chaos",
@@ -17185,12 +17302,12 @@
         "side": "Astros is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 81% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 82% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 38.1,
+        "impactScore": 54.2,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -17225,24 +17342,24 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 11.4,
-      "homeProjectedHits": 9.6,
-      "awayHitEfficiencyPct": 33,
-      "homeHitEfficiencyPct": 27.9,
-      "awayFirst5ProjectedHits": 6.4,
-      "homeFirst5ProjectedHits": 5.4,
-      "awayFirst5HitEfficiencyPct": 33.3,
-      "homeFirst5HitEfficiencyPct": 28.6,
-      "awayLateProjectedHits": 4.9,
-      "homeLateProjectedHits": 4.3,
-      "awayLateHitEfficiencyPct": 31.9,
-      "homeLateHitEfficiencyPct": 28,
+      "awayProjectedHits": 11.9,
+      "homeProjectedHits": 9.3,
+      "awayHitEfficiencyPct": 34.4,
+      "homeHitEfficiencyPct": 27.1,
+      "awayFirst5ProjectedHits": 7.1,
+      "homeFirst5ProjectedHits": 5.5,
+      "awayFirst5HitEfficiencyPct": 37.3,
+      "homeFirst5HitEfficiencyPct": 28.8,
+      "awayLateProjectedHits": 4.6,
+      "homeLateProjectedHits": 4,
+      "awayLateHitEfficiencyPct": 29.8,
+      "homeLateHitEfficiencyPct": 26.3,
       "awayBullpenChainScore": 82.1,
       "homeBullpenChainScore": 69.7,
       "edgeTeam": "Astros",
-      "edgeHits": 1.8,
+      "edgeHits": 2.6,
       "first5EdgeTeam": "Astros",
-      "first5EdgeHits": 1,
+      "first5EdgeHits": 1.6,
       "lateEdgeTeam": "Astros",
       "lateEdgeHits": 0.6,
       "bridgeEdgeTeam": "Astros",
@@ -17353,32 +17470,36 @@
       "homeBullpenExhaustionLabel": "fresh",
       "awayPitcherType": "Traffic-risk righty",
       "homePitcherType": "Traffic-risk righty",
-      "awayStarterHoldConfidence": 18.3,
-      "homeStarterHoldConfidence": 20.5,
-      "awayProjectedRuns": 5.9,
+      "awayStarterHoldConfidence": 23.2,
+      "homeStarterHoldConfidence": 18,
+      "awayProjectedRuns": 6.5,
       "homeProjectedRuns": 4.8,
-      "awayFirst5ProjectedRuns": 3.3,
-      "homeFirst5ProjectedRuns": 2.7,
-      "awayLateProjectedRuns": 2.6,
-      "homeLateProjectedRuns": 2.1,
+      "awayFirst5ProjectedRuns": 3.8,
+      "homeFirst5ProjectedRuns": 2.8,
+      "awayLateProjectedRuns": 2.7,
+      "homeLateProjectedRuns": 2,
       "postedTotal": 9.5,
       "totals": {
         "fullGame": {
           "lean": "Over",
-          "edge": 1.2,
+          "edge": 1.8,
           "strength": "Strong",
           "label": "Over 9.5",
-          "summary": "Over lean with a 1.2-run edge against 9.5.",
+          "summary": "Over lean with a 1.8-run edge against 9.5.",
           "chaosGate": {
             "phase": "full",
-            "overChaosScore": 4,
+            "overChaosScore": 11,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "82°F | Wind 7 mph R-L | 0% precip | weather helps carry",
-              "both offenses project traffic"
+              "ENV1 HRForce 1.5",
+              "FIC HRForce 1.4",
+              "material HRForce 1.5",
+              "RP2 bridge stress 56.9"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -17389,25 +17510,46 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.5,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.4,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 56.9,
+              "maxRp2ReliefRuns": 2.6,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
         "first5": {
           "lean": "Over",
-          "edge": 0.7,
+          "edge": 1.1,
           "strength": "Clear",
-          "label": "Over 5.3",
-          "summary": "Over lean with a 0.7-run edge against 5.3.",
+          "label": "Over 5.5",
+          "summary": "Over lean with a 1.1-run edge against 5.5.",
           "chaosGate": {
             "phase": "first5",
-            "overChaosScore": 3,
+            "overChaosScore": 8,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "82°F | Wind 7 mph R-L | 0% precip | weather helps carry",
+              "ENV1 HRForce 1.5",
+              "FIC HRForce 1.4",
+              "material HRForce 1.5",
               "both offenses project traffic"
             ],
             "metrics": {
@@ -17419,21 +17561,43 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.5,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.4,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 56.9,
+              "maxRp2ReliefRuns": 2.6,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 6,
-            "adjustedProjectedRuns": 6,
-            "adjustedEdge": 0.7,
+            "baseProjectedRuns": 6.6,
+            "adjustedProjectedRuns": 9,
+            "adjustedEdge": 3.5,
             "marketExpression": "Over",
-            "shape": "balanced",
-            "tailScore": 32,
+            "shape": "over-tail",
+            "tailScore": 63,
             "strandScore": 0,
             "forkScore": 0,
-            "tailLift": 0,
+            "tailLift": 2.4,
             "strandDrag": 0,
-            "notes": [],
+            "notes": [
+              "fat-tail run environment",
+              "carry/weather turns ordinary contact into extra-base risk",
+              "ENV1 HRForce 1.5",
+              "FIC HRForce 1.4"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -17442,29 +17606,49 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 11.8,
+              "totalFirst5ProjectedHits": 12.6,
               "weatherCarry": true,
               "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.5,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.4,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 56.9,
+              "maxRp2ReliefRuns": 2.6,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
               "visibilityRisk": null
             }
           }
         },
         "late": {
           "lean": "Over",
-          "edge": 0.5,
-          "strength": "Lean",
-          "label": "Over 4.2",
-          "summary": "Over lean with a 0.5-run edge against 4.2.",
+          "edge": 0.7,
+          "strength": "Clear",
+          "label": "Over 4",
+          "summary": "Over lean with a 0.7-run edge against 4.",
           "chaosGate": {
             "phase": "late",
-            "overChaosScore": 3,
+            "overChaosScore": 10,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "82°F | Wind 7 mph R-L | 0% precip | weather helps carry",
-              "both offenses project traffic"
+              "ENV1 HRForce 1.5",
+              "FIC HRForce 1.4",
+              "material HRForce 1.5",
+              "RP2 bridge stress 56.9"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -17475,25 +17659,47 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.5,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.4,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 56.9,
+              "maxRp2ReliefRuns": 2.6,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
-        "projectedFullTotalRuns": 10.7,
-        "projectedFirst5TotalRuns": 6,
-        "tailAdjustedProjectedFirst5TotalRuns": 6,
+        "projectedFullTotalRuns": 11.3,
+        "projectedFirst5TotalRuns": 6.6,
+        "tailAdjustedProjectedFirst5TotalRuns": 9,
         "first5TailOverlay": {
-          "baseProjectedRuns": 6,
-          "adjustedProjectedRuns": 6,
-          "adjustedEdge": 0.7,
+          "baseProjectedRuns": 6.6,
+          "adjustedProjectedRuns": 9,
+          "adjustedEdge": 3.5,
           "marketExpression": "Over",
-          "shape": "balanced",
-          "tailScore": 32,
+          "shape": "over-tail",
+          "tailScore": 63,
           "strandScore": 0,
           "forkScore": 0,
-          "tailLift": 0,
+          "tailLift": 2.4,
           "strandDrag": 0,
-          "notes": [],
+          "notes": [
+            "fat-tail run environment",
+            "carry/weather turns ordinary contact into extra-base risk",
+            "ENV1 HRForce 1.5",
+            "FIC HRForce 1.4"
+          ],
           "metrics": {
             "maxMistakeChaos": null,
             "maxRunClustering": null,
@@ -17502,18 +17708,34 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 11.8,
+            "totalFirst5ProjectedHits": 12.6,
             "weatherCarry": true,
             "weatherSuppress": false,
+            "envRunDelta": 0.3,
+            "envHitsDelta": 0,
+            "envHrDelta": -0.1,
+            "hrForce": 1.5,
+            "highHrForce": true,
+            "lowerWeatherCarry": false,
+            "ficHrForce": 1.4,
+            "ficHighHrForce": true,
+            "materialHrForce": true,
+            "extremeHrForce": false,
+            "carryMultiplier": 1.18,
+            "ficHighHrForceSharePct": 100,
+            "maxRp2BridgeStress": 56.9,
+            "maxRp2ReliefRuns": 2.6,
+            "rp2LateRunRisk": true,
+            "maxRepeatOpponentFirst5Tax": null,
             "visibilityRisk": null
           }
         },
         "projectedLateTotalRuns": 4.7,
-        "derivedFirst5TotalLine": 5.3,
+        "derivedFirst5TotalLine": 5.5,
         "postedFirst5TotalLine": null,
-        "runShareFirst5TotalLine": 5.3,
+        "runShareFirst5TotalLine": 5.5,
         "first5TotalLineSource": "full-game-derived",
-        "derivedLateTotalLine": 4.2,
+        "derivedLateTotalLine": 4,
         "bullpenExhaustionNote": "82°F | Wind 7 mph R-L | 0% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
         "weatherNote": "82°F | Wind 7 mph R-L | 0% precip | weather helps carry.",
         "sunVisibilityNote": ""
@@ -17522,11 +17744,11 @@
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 31,
-        "yesProbabilityPct": 81,
-        "noProbabilityPct": 19,
+        "edge": 32,
+        "yesProbabilityPct": 82,
+        "noProbabilityPct": 18,
         "awayRunProbabilityPct": 72,
-        "homeRunProbabilityPct": 32.2,
+        "homeRunProbabilityPct": 35.6,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 100,
@@ -17535,12 +17757,25 @@
         "homeProjectedRuns": 0.5,
         "reasonStack": [
           "Astros top order is driving early pressure (69)",
+          "Astros top third has multiple strong split bats",
+          "ENV1 HRForce 1.5 raises YRFI carry",
           "Royals top order is driving early pressure (66.6)"
         ],
-        "cautionStack": [],
+        "cautionStack": [
+          "Royals handedness splits are weak against the starter (29.1)"
+        ],
+        "environmentAddendum": {
+          "hrForce": 1.5,
+          "highHrForce": true,
+          "maxProbabilityLiftPct": 4.3,
+          "maxProjectedRunsLift": 0,
+          "reasons": [
+            "ENV1 HRForce 1.5 raises YRFI carry"
+          ]
+        },
         "projectedRuns": 1.9,
         "line": 0.5,
-        "summary": "YRFI with a 81% modeled chance of at least one first-inning run. Astros score 72% of the time and Royals 32.2% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 82% modeled chance of at least one first-inning run. Astros score 72% of the time and Royals 35.6% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.5 is embedded in the first-inning run probability."
       },
       "teamScripts": [
         {
@@ -17577,8 +17812,8 @@
           "depthScore": 42,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Astros own the cleaner full-game traffic script at 11.4 projected hits.",
-            "Astros have the better starter-window lane with 6.4 projected first-five hits.",
+            "Astros own the cleaner full-game traffic script at 11.9 projected hits.",
+            "Astros have the better starter-window lane with 7.1 projected first-five hits.",
             "Astros still hold the better bridge-and-finish script once the bullpens take over.",
             "Astros also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
             "Astros can lean on Yordan Alvarez, Christian Walker, Cam Smith to drive early pressure against Luinder Avila.",
@@ -17634,19 +17869,19 @@
           {
             "label": "First 5",
             "edgeTeam": "Astros",
-            "projection": "3.3 R",
+            "projection": "3.8 R",
             "note": "Astros lean on Yordan Alvarez, Christian Walker to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
             "edgeTeam": "Astros",
-            "projection": "2.6 R",
+            "projection": "2.7 R",
             "note": "Astros keep more late scoring paths alive, with Yordan Alvarez, Christian Walker plus the Astros bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Astros",
-            "projection": "11.4 H",
+            "projection": "11.9 H",
             "note": "Astros finish with the stronger aggregate traffic path, anchored by Yordan Alvarez, Christian Walker."
           }
         ]
@@ -17708,6 +17943,50 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Astros @ Royals",
+        "gameContextMatch": "team-code",
+        "rowCount": 1,
+        "averageHrForce": 1.4,
+        "maxHrForce": 1.4,
+        "highHrForceRows": 1,
+        "extremeHrForceRows": 0,
+        "highHrForceSharePct": 100,
+        "qualityAbPct": 0,
+        "hardHitPct": 0,
+        "matchupPassRows": 0,
+        "awayOffense": {
+          "label": "Astros hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "Royals hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Astros",
@@ -17746,22 +18025,324 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "high-HRForce carry is active",
+          "available-bullpen damage adjustment is active",
+          "handedness split adjustment is active"
+        ],
+        "environment": {
+          "hrForce": 1.5,
+          "envHrForce": 1.5,
+          "ficHrForce": 1.4,
+          "materialHrForce": true,
+          "extremeHrForce": false,
+          "carryMultiplier": 1.18,
+          "hitDelta": 0.7,
+          "runDelta": 0.7,
+          "conversionDelta": 0.02280099999999999,
+          "firstInningProbabilityLiftPct": 5.7,
+          "underFragilityRuns": 2.2,
+          "flags": [
+            "Material HRForce 1.5: pitcher damage and batter production lifted"
+          ],
+          "reasons": [
+            "HRForce 1.5 applies material carry to pitcher damage and batter production",
+            "weather/park carry is favorable for flight",
+            "FIC batter-vs-pitcher pockets show HRForce carry"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Astros",
+            "pitcherName": "Tatsuya Imai",
+            "gamesStarted": 9,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Traffic-risk righty",
+            "expectedInnings": 4.19,
+            "opponentHistory": null,
+            "flags": [
+              "traffic-risk starter type"
+            ]
+          },
+          {
+            "teamName": "Royals",
+            "pitcherName": "Luinder Avila",
+            "gamesStarted": 4,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Traffic-risk righty",
+            "expectedInnings": 3,
+            "opponentHistory": null,
+            "flags": [
+              "traffic-risk starter type"
+            ]
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Astros",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 61.6,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.257,
+            "splitOpsAverage": 0.772,
+            "topSixSplitAvgAverage": 0.266,
+            "topSixSplitOpsAverage": 0.818,
+            "strongSplitCount": 4,
+            "weakSplitCount": 2,
+            "severeWeakSplitCount": 0,
+            "topSixStrongSplitCount": 3,
+            "topSixWeakSplitCount": 0,
+            "topThirdStrongSplitCount": 2,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": 0.3,
+            "runConversionDelta": 0.006060000000000001,
+            "strongSplitBats": [
+              {
+                "name": "Yordan Alvarez",
+                "slot": 2,
+                "bats": "L",
+                "plateAppearances": 217,
+                "avg": 0.316,
+                "ops": 1.068,
+                "seasonAvg": 0.316,
+                "seasonOps": 1.066,
+                "recentAvg": 0.316,
+                "recentOps": 0.932
+              },
+              {
+                "name": "Christian Walker",
+                "slot": 3,
+                "bats": "R",
+                "plateAppearances": 221,
+                "avg": 0.266,
+                "ops": 0.848,
+                "seasonAvg": 0.249,
+                "seasonOps": 0.813,
+                "recentAvg": 0.273,
+                "recentOps": 0.833
+              },
+              {
+                "name": "Joey Loperfido",
+                "slot": 6,
+                "bats": "L",
+                "plateAppearances": 61,
+                "avg": 0.294,
+                "ops": 0.786,
+                "seasonAvg": 0.258,
+                "seasonOps": 0.686,
+                "recentAvg": null,
+                "recentOps": 0.333
+              },
+              {
+                "name": "Taylor Trammell",
+                "slot": 8,
+                "bats": "L",
+                "plateAppearances": 65,
+                "avg": 0.288,
+                "ops": 0.71,
+                "seasonAvg": 0.275,
+                "seasonOps": 0.696,
+                "recentAvg": 0.111,
+                "recentOps": 0.311
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Christian Vázquez",
+                "slot": 9,
+                "bats": "R",
+                "plateAppearances": 117,
+                "avg": 0.229,
+                "ops": 0.645,
+                "seasonAvg": 0.234,
+                "seasonOps": 0.656,
+                "recentAvg": 0.125,
+                "recentOps": 0.313
+              },
+              {
+                "name": "Cam Smith",
+                "slot": 7,
+                "bats": "R",
+                "plateAppearances": 195,
+                "avg": 0.218,
+                "ops": 0.662,
+                "seasonAvg": 0.22,
+                "seasonOps": 0.675,
+                "recentAvg": 0.263,
+                "recentOps": 0.86
+              }
+            ],
+            "flags": [
+              "4 strong split bats vs R",
+              "top-third split pressure",
+              "Yordan Alvarez 1.068 OPS vs R",
+              "Christian Walker 0.848 OPS vs R",
+              "Christian Vázquez 0.645 OPS vs R"
+            ]
+          },
+          {
+            "teamName": "Royals",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 29.1,
+            "label": "weak handedness split lane",
+            "splitAvgAverage": 0.238,
+            "splitOpsAverage": 0.7,
+            "topSixSplitAvgAverage": 0.237,
+            "topSixSplitOpsAverage": 0.696,
+            "strongSplitCount": 1,
+            "weakSplitCount": 3,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 1,
+            "topSixWeakSplitCount": 3,
+            "topThirdStrongSplitCount": 0,
+            "topThirdWeakSplitCount": 1,
+            "hitDelta": -0.5,
+            "runConversionDelta": -0.010157499999999998,
+            "strongSplitBats": [
+              {
+                "name": "Jac Caglianone",
+                "slot": 5,
+                "bats": "L",
+                "plateAppearances": 167,
+                "avg": 0.272,
+                "ops": 0.801,
+                "seasonAvg": 0.279,
+                "seasonOps": 0.807,
+                "recentAvg": 0.688,
+                "recentOps": 1.91
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Salvador Perez",
+                "slot": 6,
+                "bats": "R",
+                "plateAppearances": 197,
+                "avg": 0.179,
+                "ops": 0.512,
+                "seasonAvg": 0.197,
+                "seasonOps": 0.577,
+                "recentAvg": null,
+                "recentOps": null
+              },
+              {
+                "name": "Maikel Garcia",
+                "slot": 4,
+                "bats": "R",
+                "plateAppearances": 213,
+                "avg": 0.241,
+                "ops": 0.634,
+                "seasonAvg": 0.261,
+                "seasonOps": 0.701,
+                "recentAvg": 0.176,
+                "recentOps": 0.557
+              },
+              {
+                "name": "Carter Jensen",
+                "slot": 1,
+                "bats": "L",
+                "plateAppearances": 177,
+                "avg": 0.208,
+                "ops": 0.692,
+                "seasonAvg": 0.215,
+                "seasonOps": 0.67,
+                "recentAvg": 0.222,
+                "recentOps": 0.7
+              }
+            ],
+            "flags": [
+              "top-six split drag",
+              "Jac Caglianone 0.801 OPS vs R",
+              "Salvador Perez 0.512 OPS vs R",
+              "3 lineup bats carry weak split rows"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Astros",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "Royals",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Astros",
+            "projectedReliefRunsAllowed": 1.1,
+            "adjustedProjectedReliefRunsAllowed": 0.9,
+            "projectedReliefOuts": 11,
+            "leverageAvailabilityScore": 74.3,
+            "leadAvailabilityScore": 89.7,
+            "bridgeStressScore": 33.2,
+            "runDelta": -0.3,
+            "hitDelta": -0.1,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 1.1 -> 0.9"
+            ]
+          },
+          {
+            "teamName": "Royals",
+            "projectedReliefRunsAllowed": 2.3,
+            "adjustedProjectedReliefRunsAllowed": 2.6,
+            "projectedReliefOuts": 10.7,
+            "leverageAvailabilityScore": 52.5,
+            "leadAvailabilityScore": 72,
+            "bridgeStressScore": 56.9,
+            "runDelta": 0.4,
+            "hitDelta": 0.4,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 2.3 -> 2.6",
+              "run-risk tier watch_bridge"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 6.5,
+          "home": 4.8
+        },
+        "projectedHitTotals": {
+          "away": 11.9,
+          "home": 9.3
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
         "selection": "Astros",
         "opponent": "Royals",
-        "pickProjectedRuns": 5.9,
+        "pickProjectedRuns": 6.5,
         "opponentProjectedRuns": 4.8,
-        "projectedTotalRuns": 10.7,
-        "runDiff": 1.1,
-        "absoluteRunDiff": 1.1,
-        "runDiffSharePct": 10.3,
+        "projectedTotalRuns": 11.3,
+        "runDiff": 1.7,
+        "absoluteRunDiff": 1.7,
+        "runDiffSharePct": 15,
         "confidence": 52,
-        "marketProbabilityPct": 51.8,
-        "grade": "Thin ML shape",
+        "marketProbabilityPct": 46.2,
+        "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Astros projects 1.1 runs better in a 10.7-run environment."
+        "note": "Astros projects 1.7 runs better in a 11.3-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -17771,7 +18352,7 @@
           "slug": "early_pressure_side",
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-          "confidence": 60.9,
+          "confidence": 62.2,
           "reasons": [
             "The pick needs to cash the first traffic pocket.",
             "The best edge is timing, not late-game patience."
@@ -17815,20 +18396,20 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 1.8
+            "projectedHitEdge": 2.6
           }
         },
-        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 54.6/100. Main checks: 82°F | Wind 7 mph R-L | 0% precip | weather helps carry.",
+        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 57.3/100. Main checks: 82°F | Wind 7 mph R-L | 0% precip | weather helps carry.",
         "pickTeam": "Astros",
         "opponentTeam": "Royals",
         "scores": {
           "chaosScore": 44.8,
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
-          "bullpenFlipScore": 68.3,
-          "starterControlScore": 30.4,
-          "marketContradictionScore": 18,
-          "realityGapScore": 54.6
+          "bullpenFlipScore": 70.7,
+          "starterControlScore": 42,
+          "marketContradictionScore": 30,
+          "realityGapScore": 57.3
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -17842,9 +18423,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 24.5,
-              "pickScore": 24.5,
-              "opponentScore": 9.9
+              "gameScore": 30.3,
+              "pickScore": 30.3,
+              "opponentScore": 8.6
             },
             {
               "id": "chaos",
@@ -17874,7 +18455,7 @@
               "id": "bridge",
               "label": "Bridge",
               "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-              "gameScore": 68.3,
+              "gameScore": 70.7,
               "pickScore": 9.6,
               "opponentScore": 6
             },
@@ -17892,7 +18473,7 @@
               "role": "pick",
               "team": "Astros",
               "scores": {
-                "pressure": 24.5,
+                "pressure": 30.3,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -17900,7 +18481,7 @@
                 "flow": 100
               },
               "polygon": [
-                24.5,
+                30.3,
                 5,
                 0,
                 16,
@@ -17911,7 +18492,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 56.3,
+                "starterScore": 52.6,
                 "bullpenScore": 44.7,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17925,7 +18506,7 @@
               "role": "opponent",
               "team": "Royals",
               "scores": {
-                "pressure": 9.9,
+                "pressure": 8.6,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -17933,7 +18514,7 @@
                 "flow": 0
               },
               "polygon": [
-                9.9,
+                8.6,
                 5,
                 0,
                 16,
@@ -17944,7 +18525,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 55.1,
+                "starterScore": 47.6,
                 "bullpenScore": 54.1,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17959,19 +18540,19 @@
             "label": "Early-pressure side",
             "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 24.5,
+              "pressure": 30.3,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
-              "bridge": 68.3,
+              "bridge": 70.7,
               "flow": 100
             },
             "polygon": [
-              24.5,
+              30.3,
               44.8,
               8.5,
               24.4,
-              68.3,
+              70.7,
               100
             ],
             "dominantAxes": [
@@ -17983,7 +18564,7 @@
               {
                 "id": "bridge",
                 "label": "Bridge",
-                "score": 68.3
+                "score": 70.7
               },
               {
                 "id": "chaos",
@@ -18049,12 +18630,12 @@
           "side": "Astros is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 81% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 82% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 38.1,
+          "impactScore": 54.2,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -18091,12 +18672,12 @@
       "first5Moneyline": {
         "pickSide": "away",
         "pickTeam": "Astros",
-        "awayProjectedRuns": 3.3,
-        "homeProjectedRuns": 2.7,
-        "awayLeadProbability": 51.4,
-        "homeLeadProbability": 32.4,
-        "pushProbability": 16.2,
-        "leadProbability": 51.4,
+        "awayProjectedRuns": 3.8,
+        "homeProjectedRuns": 2.8,
+        "awayLeadProbability": 57.5,
+        "homeLeadProbability": 27.7,
+        "pushProbability": 14.8,
+        "leadProbability": 57.5,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -18335,9 +18916,9 @@
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 90.1,
+        "probability": 89.8,
         "expectedValue": 3.9,
-        "statValueLabel": "1.73 H · 1.10 R · 1.08 RBI · 3.91 total",
+        "statValueLabel": "1.69 H · 1.10 R · 1.08 RBI · 3.87 total",
         "sample": {
           "seasonGames": 63,
           "seasonPlateAppearances": 231,
@@ -18481,10 +19062,10 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 66,
-        "probability": 51.5,
+        "confidence": 65,
+        "probability": 50.3,
         "expectedValue": 1.7,
-        "statValueLabel": "1.73 exp hits",
+        "statValueLabel": "1.69 exp hits",
         "sample": {
           "seasonGames": 63,
           "seasonPlateAppearances": 231,
@@ -18626,10 +19207,10 @@
         "propType": "singles",
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
-        "confidence": 78,
-        "probability": 71.6,
-        "expectedValue": 1.3,
-        "statValueLabel": "1.26 exp singles",
+        "confidence": 77,
+        "probability": 70.7,
+        "expectedValue": 1.2,
+        "statValueLabel": "1.23 exp singles",
         "sample": {
           "seasonGames": 63,
           "seasonPlateAppearances": 231,

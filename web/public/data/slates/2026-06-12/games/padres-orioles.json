@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Padres",
-      "detail": "Griffin Canning (RHP) | 0-4 | 6.34 ERA | 33 SO | 1.47 WHIP | 32.2 IP"
+      "detail": "Griffin Canning (RHP) | 0-5 | 7.17 ERA | 39 SO | 1.57 WHIP | 37.2 IP"
     },
     {
       "side": "Home",
       "name": "Orioles",
-      "detail": "Shane Baz (RHP) | 3-6 | 4.09 ERA | 66 SO | 1.38 WHIP | 77.0 IP"
+      "detail": "Shane Baz (RHP) | 4-6 | 4.06 ERA | 67 SO | 1.39 WHIP | 82.0 IP"
     }
   ],
   "summary": "Padres @ Orioles with Griffin Canning against Shane Baz.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Padres +108 / Orioles -131 | o9.5 -105 / u9.5 -114 | Padres +1.5 -180 / Orioles -1.5 +148 | F5 Padres +110 / Orioles -140 / o5.5 -110 / u5.5 -120.",
+    "Current board: Padres +122 / Orioles -160 | o11.5 +106 / u11.5 -137 | Padres +1.5 -159 / Orioles -1.5 +122 | F5 Padres +110 / Orioles -140 / o5.5 -110 / u5.5 -120.",
     "Griffin Canning vs Shane Baz."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -35,21 +35,21 @@
       "divisionLeader": false,
       "divisionRank": "2",
       "gamesBack": "8.0",
-      "losses": 32,
-      "runDifferential": -15,
-      "streakCode": "W1",
-      "winningPercentage": ".522",
+      "losses": 33,
+      "runDifferential": -19,
+      "streakCode": "L1",
+      "winningPercentage": ".515",
       "wins": 35
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "4",
-      "gamesBack": "9.5",
+      "gamesBack": "8.5",
       "losses": 37,
-      "runDifferential": -28,
-      "streakCode": "W2",
-      "winningPercentage": ".471",
-      "wins": 33
+      "runDifferential": -24,
+      "streakCode": "W3",
+      "winningPercentage": ".479",
+      "wins": 34
     }
   },
   "parkContext": {
@@ -134,6 +134,156 @@
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
   },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Padres @ Orioles",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "SDN",
+    "homeTeamCode": "BAL",
+    "label": "Padres @ Orioles",
+    "sourceStatus": "warehouse",
+    "rowCount": 14,
+    "pitcherName": "G. Canning",
+    "gameContexts": [
+      "@ 5 SDN BAL"
+    ],
+    "averageHrForce": 1.6,
+    "maxHrForce": 1.6,
+    "highHrForceRows": 14,
+    "extremeHrForceRows": 0,
+    "highHrForceSharePct": 100,
+    "qualityAbPct": 30.8,
+    "hardHitPct": 8.4,
+    "matchupPassRows": 5,
+    "topRows": [
+      {
+        "playerName": "M. Andujar",
+        "pitcherName": "S. Baz",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 33,
+        "hardHitPct": 33,
+        "recentOps": 0.444,
+        "bvpAtBats": 3,
+        "bvpAvg": 0.333,
+        "bvpOps": 0.666,
+        "matchupPass": false
+      },
+      {
+        "playerName": "A. Rutschman",
+        "pitcherName": "G. Canning",
+        "position": "C",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 44,
+        "hardHitPct": 22,
+        "recentOps": 1.155,
+        "bvpAtBats": 9,
+        "bvpAvg": 0.444,
+        "bvpOps": 1,
+        "matchupPass": true
+      },
+      {
+        "playerName": "T. O'Neill",
+        "pitcherName": "G. Canning",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 33,
+        "hardHitPct": 17,
+        "recentOps": 0.545,
+        "bvpAtBats": 6,
+        "bvpAvg": 0.333,
+        "bvpOps": 1.166,
+        "matchupPass": true
+      },
+      {
+        "playerName": "F. Fermin",
+        "pitcherName": "S. Baz",
+        "position": "C",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 67,
+        "hardHitPct": 17,
+        "recentOps": 1.176,
+        "bvpAtBats": 5,
+        "bvpAvg": 0.4,
+        "bvpOps": 1.1,
+        "matchupPass": true
+      },
+      {
+        "playerName": "P. Alonso",
+        "pitcherName": "G. Canning",
+        "position": "1B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 17,
+        "hardHitPct": 17,
+        "recentOps": 0.761,
+        "bvpAtBats": 6,
+        "bvpAvg": 0.167,
+        "bvpOps": 0.334,
+        "matchupPass": false
+      },
+      {
+        "playerName": "G. Henderson",
+        "pitcherName": "G. Canning",
+        "position": "SS",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 56,
+        "hardHitPct": 11,
+        "recentOps": 0.415,
+        "bvpAtBats": 8,
+        "bvpAvg": 0.5,
+        "bvpOps": 1.569,
+        "matchupPass": true
+      }
+    ],
+    "awayOffense": {
+      "label": "Padres hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "Orioles hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
+  },
   "offenseContext": {
     "away": {
       "hitsPerGame": 7.27907,
@@ -177,7 +327,7 @@
       "teamName": "Padres",
       "source": "MLB-RP2",
       "chainSource": "MLB-RP2",
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectionOnly": true,
       "identityConfidence": "low",
@@ -308,7 +458,7 @@
       "teamName": "Orioles",
       "source": "MLB-RP2",
       "chainSource": "MLB-RP2",
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectionOnly": true,
       "identityConfidence": "low",
@@ -331,7 +481,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 1,
           "unavailable": false,
-          "shadowSharePct": 23.8,
+          "shadowSharePct": 23.9,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -403,7 +553,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "shadowSharePct": 18.6,
+          "shadowSharePct": 18.5,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -419,7 +569,7 @@
       "fatigueScore": 34.3,
       "qualityScore": 58.7,
       "runRiskTier": "stable_bridge",
-      "topTwoSharePct": 44.7,
+      "topTwoSharePct": 44.8,
       "lead": {
         "pitcherName": "Anthony Nunez",
         "pitcherId": null,
@@ -442,7 +592,7 @@
   },
   "reliefProjectionContext": {
     "away": {
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectedReliefRunsAllowed": 1.458,
       "projectedReliefOuts": 11.7,
@@ -482,6 +632,7 @@
           "score": 71.101,
           "firstUpBaseScore": 69.101,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 2,
           "firstUpTrend": null,
@@ -503,6 +654,30 @@
             "leashScore": 32.1,
             "sixPlusRate": 0.2,
             "startsSample": 5
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Baltimore Orioles",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 4,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 56,
+              "leftPa": 71,
+              "rightDamageAllowed": 0.41,
+              "leftDamageAllowed": 0.479,
+              "splitEdge": 0.069
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
           },
           "shadowSharePct": 21.6
         },
@@ -528,6 +703,7 @@
           "score": 69.879,
           "firstUpBaseScore": 69.259,
           "firstUpTrendAdjustment": 0.62,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -557,6 +733,30 @@
             "sixPlusRate": 0.2,
             "startsSample": 5
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Baltimore Orioles",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 4,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 28,
+              "leftPa": 44,
+              "rightDamageAllowed": 0.373,
+              "leftDamageAllowed": 0.423,
+              "splitEdge": 0.05
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 21.2
         },
         {
@@ -581,6 +781,7 @@
           "score": 67.151,
           "firstUpBaseScore": 66.811,
           "firstUpTrendAdjustment": 0.34,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -610,6 +811,30 @@
             "sixPlusRate": 0.2,
             "startsSample": 5
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Baltimore Orioles",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 4,
+            "leftHandedBatters": 5,
+            "rawRightHandedBatters": 4,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 47,
+              "leftPa": 29,
+              "rightDamageAllowed": 0.51,
+              "leftDamageAllowed": 0.547,
+              "splitEdge": 0.037
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 20.4
         },
         {
@@ -634,6 +859,7 @@
           "score": 67.12,
           "firstUpBaseScore": 66.84,
           "firstUpTrendAdjustment": 0.28,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -663,6 +889,30 @@
             "sixPlusRate": 0.2,
             "startsSample": 5
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Baltimore Orioles",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 4,
+            "leftHandedBatters": 5,
+            "rawRightHandedBatters": 4,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 64,
+              "leftPa": 55,
+              "rightDamageAllowed": 0.43,
+              "leftDamageAllowed": 0.202,
+              "splitEdge": 0.229
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 20.3
         },
         {
@@ -687,6 +937,7 @@
           "score": 54.616,
           "firstUpBaseScore": 54.316,
           "firstUpTrendAdjustment": 0.3,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -716,6 +967,30 @@
             "sixPlusRate": 0.2,
             "startsSample": 5
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Baltimore Orioles",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 4,
+            "leftHandedBatters": 5,
+            "rawRightHandedBatters": 4,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 71,
+              "leftPa": 64,
+              "rightDamageAllowed": 0.494,
+              "leftDamageAllowed": 0.39,
+              "splitEdge": 0.105
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 16.6
         }
       ],
@@ -728,7 +1003,7 @@
       "confidenceScore": 90
     },
     "home": {
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectedReliefRunsAllowed": 1.717,
       "projectedReliefOuts": 10.43,
@@ -738,7 +1013,7 @@
       "fatigueScore": 34.3,
       "qualityScore": 58.7,
       "runRiskTier": "stable_bridge",
-      "topTwoSharePct": 44.7,
+      "topTwoSharePct": 44.8,
       "lead": {
         "pitcherName": "Anthony Nunez",
         "pitcherId": null,
@@ -765,9 +1040,10 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 1,
           "unavailable": false,
-          "score": 78.876,
+          "score": 79.279,
           "firstUpBaseScore": 78.806,
           "firstUpTrendAdjustment": 0.07,
+          "firstUpLineupMatchupAdjustment": 0.403,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -789,7 +1065,34 @@
             "sixPlusRate": 0.5,
             "startsSample": 10
           },
-          "shadowSharePct": 23.8
+          "lineupMatchupContext": {
+            "opponentTeamName": "San Diego Padres",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 6,
+            "leftHandedBatters": 3,
+            "rawRightHandedBatters": 6,
+            "rawLeftHandedBatters": 3,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 64,
+              "leftPa": 67,
+              "rightDamageAllowed": 0.457,
+              "leftDamageAllowed": 0.501,
+              "splitEdge": 0.044
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.75,
+            "splitStrength": 0.244,
+            "fit": true,
+            "reason": "Fresh reliever split fits R-heavy opponent pocket."
+          },
+          "shadowSharePct": 23.9
         },
         {
           "pitcherId": null,
@@ -813,6 +1116,7 @@
           "score": 69.287,
           "firstUpBaseScore": 68.237,
           "firstUpTrendAdjustment": 0.05,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 1,
           "firstUpTrend": {
@@ -842,6 +1146,30 @@
             "sixPlusRate": 0.5,
             "startsSample": 10
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "San Diego Padres",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 6,
+            "leftHandedBatters": 3,
+            "rawRightHandedBatters": 6,
+            "rawLeftHandedBatters": 3,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 38,
+              "leftPa": 37,
+              "rightDamageAllowed": 0.591,
+              "leftDamageAllowed": 0.443,
+              "splitEdge": 0.148
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 20.9
         },
         {
@@ -866,6 +1194,7 @@
           "score": 61.644,
           "firstUpBaseScore": 61.054,
           "firstUpTrendAdjustment": 0.59,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -895,6 +1224,30 @@
             "sixPlusRate": 0.5,
             "startsSample": 10
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "San Diego Padres",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 6,
+            "leftHandedBatters": 3,
+            "rawRightHandedBatters": 6,
+            "rawLeftHandedBatters": 3,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 54,
+              "leftPa": 28,
+              "rightDamageAllowed": 0.193,
+              "leftDamageAllowed": 0.43,
+              "splitEdge": 0.238
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 18.6
         },
         {
@@ -916,9 +1269,10 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "score": 61.574,
+          "score": 61.293,
           "firstUpBaseScore": 64.554,
           "firstUpTrendAdjustment": 0.02,
+          "firstUpLineupMatchupAdjustment": -0.281,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": -3,
           "firstUpTrend": {
@@ -940,7 +1294,34 @@
             "sixPlusRate": 0.5,
             "startsSample": 10
           },
-          "shadowSharePct": 18.6
+          "lineupMatchupContext": {
+            "opponentTeamName": "San Diego Padres",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 6,
+            "leftHandedBatters": 3,
+            "rawRightHandedBatters": 6,
+            "rawLeftHandedBatters": 3,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 57,
+              "leftPa": 49,
+              "rightDamageAllowed": 0.466,
+              "leftDamageAllowed": 0.392,
+              "splitEdge": 0.074
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.75,
+            "splitStrength": 0.411,
+            "fit": false,
+            "reason": "Opponent pocket leans R, away from pitcher better split side L."
+          },
+          "shadowSharePct": 18.5
         },
         {
           "pitcherId": null,
@@ -964,6 +1345,7 @@
           "score": 60.409,
           "firstUpBaseScore": 60.079,
           "firstUpTrendAdjustment": 0.33,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -992,6 +1374,30 @@
             "leashScore": 73.8,
             "sixPlusRate": 0.5,
             "startsSample": 10
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "San Diego Padres",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 6,
+            "leftHandedBatters": 3,
+            "rawRightHandedBatters": 6,
+            "rawLeftHandedBatters": 3,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 25,
+              "leftPa": 46,
+              "rightDamageAllowed": 0.588,
+              "leftDamageAllowed": 0.459,
+              "splitEdge": 0.129
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
           },
           "shadowSharePct": 18.2
         }
@@ -2866,71 +3272,71 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 91.1,
-          "noRunProbabilityPct": 8.9,
-          "awayRunProbabilityPct": 68.2,
+          "runProbabilityPct": 92,
+          "noRunProbabilityPct": 8,
+          "awayRunProbabilityPct": 72,
           "homeRunProbabilityPct": 72,
           "lean": "Run",
           "strength": "strong",
           "sampleHalves": 137,
-          "caution": "",
-          "reason": "YRFI with a 91% modeled chance of at least one first-inning run. Padres score 68.2% of the time and Orioles 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "caution": "Padres handedness splits are weak against the starter (18) Padres top third carries weak split rows",
+          "reason": "YRFI with a 92% modeled chance of at least one first-inning run. Padres score 72% of the time and Orioles 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.7 is embedded in the first-inning run probability.",
           "sourceModel": "M2 first-inning"
         },
         {
           "inning": 2,
           "phase": "M2 early F5",
-          "runProbabilityPct": 45.8,
-          "noRunProbabilityPct": 54.2,
-          "awayRunProbabilityPct": 21.1,
-          "homeRunProbabilityPct": 24.7,
+          "runProbabilityPct": 51,
+          "noRunProbabilityPct": 49,
+          "awayRunProbabilityPct": 23.5,
+          "homeRunProbabilityPct": 27.5,
           "lean": "No run",
           "strength": "m2-baseline",
           "sampleHalves": 137,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Padres F5 runs 2.5; Orioles F5 runs 2.5; Griffin Canning: HA 4.5, ER 2.5, win yes +268; Shane Baz: HA 5.5, ER 2.5, win yes +154; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 5.6 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Padres F5 runs 2.5; Orioles F5 runs 2.5; Griffin Canning: HA 4.5, ER 2.5, win yes +268; Shane Baz: HA 5.5, ER 2.5, win yes +154; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 3,
           "phase": "M2 early F5",
-          "runProbabilityPct": 51.8,
-          "noRunProbabilityPct": 48.2,
-          "awayRunProbabilityPct": 24.1,
-          "homeRunProbabilityPct": 27.7,
-          "lean": "No run",
+          "runProbabilityPct": 57.4,
+          "noRunProbabilityPct": 42.6,
+          "awayRunProbabilityPct": 26.8,
+          "homeRunProbabilityPct": 30.6,
+          "lean": "Run",
           "strength": "m2-baseline",
           "sampleHalves": 137,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Padres F5 runs 2.5; Orioles F5 runs 2.5; Griffin Canning: HA 4.5, ER 2.5, win yes +268; Shane Baz: HA 5.5, ER 2.5, win yes +154; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 5.6 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Padres F5 runs 2.5; Orioles F5 runs 2.5; Griffin Canning: HA 4.5, ER 2.5, win yes +268; Shane Baz: HA 5.5, ER 2.5, win yes +154; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 4,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 54.6,
-          "noRunProbabilityPct": 45.4,
-          "awayRunProbabilityPct": 25.9,
-          "homeRunProbabilityPct": 28.7,
+          "runProbabilityPct": 60.2,
+          "noRunProbabilityPct": 39.8,
+          "awayRunProbabilityPct": 28.5,
+          "homeRunProbabilityPct": 31.7,
           "lean": "Run",
-          "strength": "m2-baseline",
+          "strength": "m2-strong",
           "sampleHalves": 137,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Padres F5 runs 2.5; Orioles F5 runs 2.5; Griffin Canning: HA 4.5, ER 2.5, win yes +268; Shane Baz: HA 5.5, ER 2.5, win yes +154; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 5.6 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Padres F5 runs 2.5; Orioles F5 runs 2.5; Griffin Canning: HA 4.5, ER 2.5, win yes +268; Shane Baz: HA 5.5, ER 2.5, win yes +154; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 5,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 58,
-          "noRunProbabilityPct": 42,
-          "awayRunProbabilityPct": 29.2,
-          "homeRunProbabilityPct": 28.8,
+          "runProbabilityPct": 63.7,
+          "noRunProbabilityPct": 36.3,
+          "awayRunProbabilityPct": 32.1,
+          "homeRunProbabilityPct": 31.6,
           "lean": "Run",
-          "strength": "m2-baseline",
+          "strength": "m2-strong",
           "sampleHalves": 137,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Padres F5 runs 2.5; Orioles F5 runs 2.5; Griffin Canning: HA 4.5, ER 2.5, win yes +268; Shane Baz: HA 5.5, ER 2.5, win yes +154; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 5.6 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Padres F5 runs 2.5; Orioles F5 runs 2.5; Griffin Canning: HA 4.5, ER 2.5, win yes +268; Shane Baz: HA 5.5, ER 2.5, win yes +154; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -3111,17 +3517,17 @@
       "topThirdArsenalCount": 2,
       "heaterCount": 3,
       "suppressorCount": 2,
-      "platoonPressureIndex": 53.1,
+      "platoonPressureIndex": 53.2,
       "pitchTypePressureIndex": 88.8,
       "bullpenPitchTypePressureIndex": null,
-      "starterPressureIndex": 76.7,
-      "overallPressureIndex": 76.7,
-      "topThirdScore": 47.5,
+      "starterPressureIndex": 76.8,
+      "overallPressureIndex": 76.8,
+      "topThirdScore": 47.7,
       "depthScore": 68.2,
       "bullpenOverperformHitters": []
     },
     "Orioles": {
-      "averageMatchupGrade": 4.95,
+      "averageMatchupGrade": 4.94,
       "trackedBatters": 9,
       "starterThreatCount": 6,
       "contactCount": 1,
@@ -3140,7 +3546,7 @@
       "bullpenPitchTypePressureIndex": null,
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
-      "topThirdScore": 78.3,
+      "topThirdScore": 78.1,
       "depthScore": 86.9,
       "bullpenOverperformHitters": []
     }
@@ -3148,7 +3554,7 @@
   "lineupBoard": {
     "gameId": "padres-orioles",
     "title": "Padres @ Orioles",
-    "snapshot": "2026-06-12T22:28:25.550Z",
+    "snapshot": "2026-06-12T23:24:53.073Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -3163,8 +3569,8 @@
       "label": "88°F | Wind 11 mph L-R | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "BAL -131",
-      "total": "9.5 Runs",
+      "line": "BAL -129",
+      "total": "10.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -3175,9 +3581,9 @@
         "name": "Shane Baz",
         "hand": "R",
         "type": "Balanced",
-        "inningsPitched": 77,
+        "inningsPitched": 78,
         "homeRunsAllowed": 8,
-        "homeRunsPerNine": 0.94,
+        "homeRunsPerNine": 0.92,
         "recentHomeRunsAllowed": 3,
         "recentHomeRunsAllowedPerStart": 0.6,
         "recentHomeRunsPerNine": 0.85,
@@ -3204,7 +3610,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 66,
+            "gamesPlayed": 67,
             "hits": 71,
             "singles": 59,
             "doubles": 9,
@@ -3212,17 +3618,17 @@
             "homeRuns": 2,
             "walks": 26,
             "totalBases": 88,
-            "atBats": 253,
-            "plateAppearances": 286,
-            "avg": 0.281,
-            "obp": 0.347,
-            "slg": 0.348,
-            "ops": 0.695,
-            "hitRate": 0.2483,
-            "singlesRate": 0.20629999999999998,
+            "atBats": 254,
+            "plateAppearances": 287,
+            "avg": 0.28,
+            "obp": 0.346,
+            "slg": 0.346,
+            "ops": 0.693,
+            "hitRate": 0.24739999999999998,
+            "singlesRate": 0.20559999999999998,
             "hrRate": 0.006999999999999999,
-            "walkRate": 0.0909,
-            "totalBasesRate": 0.3077
+            "walkRate": 0.0906,
+            "totalBasesRate": 0.3066
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3268,11 +3674,11 @@
             "totalBasesRate": 0.27190000000000003
           },
           "metrics": {
-            "powerScore": 28.9,
-            "contactScore": 60.6,
-            "patienceScore": 52.6,
+            "powerScore": 28.8,
+            "contactScore": 60.4,
+            "patienceScore": 52.5,
             "formScore": 92,
-            "splitScore": 38.7,
+            "splitScore": 39.3,
             "varianceScore": 92,
             "pitchTypeFitScore": 63.2,
             "pitchTypeGrade": 3.39,
@@ -3404,7 +3810,7 @@
             "barrel lane"
           ],
           "primaryTag": "carry",
-          "summary": ".281 AVG | .695 OPS | 71 H | 2 HR | 12g: .370 AVG | .969 OPS | 20 H | 2 HR | vs RHP: .269 AVG | .643 OPS | 1 HR | career 3182 PA | .852 OPS | 153 HR | repeatable career power | power 77 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +3.4 | +10.0 matchup grade in a neutral lane",
+          "summary": ".280 AVG | .693 OPS | 71 H | 2 HR | 12g: .370 AVG | .969 OPS | 20 H | 2 HR | vs RHP: .269 AVG | .643 OPS | 1 HR | career 3182 PA | .852 OPS | 153 HR | repeatable career power | power 77 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +3.4 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Shane Baz"
         },
         {
@@ -3425,7 +3831,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 64,
+            "gamesPlayed": 65,
             "hits": 50,
             "singles": 31,
             "doubles": 12,
@@ -3433,17 +3839,17 @@
             "homeRuns": 6,
             "walks": 22,
             "totalBases": 82,
-            "atBats": 242,
-            "plateAppearances": 267,
-            "avg": 0.207,
-            "obp": 0.275,
-            "slg": 0.339,
-            "ops": 0.614,
-            "hitRate": 0.1873,
-            "singlesRate": 0.1161,
-            "hrRate": 0.0225,
-            "walkRate": 0.0824,
-            "totalBasesRate": 0.3071
+            "atBats": 243,
+            "plateAppearances": 268,
+            "avg": 0.206,
+            "obp": 0.274,
+            "slg": 0.337,
+            "ops": 0.612,
+            "hitRate": 0.1866,
+            "singlesRate": 0.1157,
+            "hrRate": 0.022400000000000003,
+            "walkRate": 0.0821,
+            "totalBasesRate": 0.306
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3489,17 +3895,17 @@
             "totalBasesRate": 0.2727
           },
           "metrics": {
-            "powerScore": 36.5,
-            "contactScore": 39.9,
-            "patienceScore": 49.9,
+            "powerScore": 36.3,
+            "contactScore": 39.8,
+            "patienceScore": 49.8,
             "formScore": 18,
-            "splitScore": 39.2,
-            "varianceScore": 59.7,
+            "splitScore": 39.8,
+            "varianceScore": 58.8,
             "pitchTypeFitScore": 37.7,
             "pitchTypeGrade": -0.3,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 30.6,
-            "matchupGrade": -3.15
+            "matchupScore": 31.1,
+            "matchupGrade": -3.05
           },
           "pitchType": {
             "fitScore": 37.7,
@@ -3622,8 +4028,8 @@
             "statcast up"
           ],
           "primaryTag": "split edge",
-          "summary": ".207 AVG | .614 OPS | 50 H | 6 HR | 12g: .200 AVG | .551 OPS | 10 H | 0 HR | vs RHP: .191 AVG | .569 OPS | 4 HR | career 1302 PA | .768 OPS | 45 HR | baseline career profile | power 59 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit -0.3 | -3.1 matchup grade in a neutral lane",
-          "matchupNote": "-3.15 vs Shane Baz"
+          "summary": ".206 AVG | .612 OPS | 50 H | 6 HR | 12g: .200 AVG | .551 OPS | 10 H | 0 HR | vs RHP: .191 AVG | .569 OPS | 4 HR | career 1302 PA | .768 OPS | 45 HR | baseline career profile | power 59 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit -0.3 | -3.1 matchup grade in a neutral lane",
+          "matchupNote": "-3.05 vs Shane Baz"
         },
         {
           "playerId": 592518,
@@ -3643,7 +4049,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 65,
+            "gamesPlayed": 66,
             "hits": 41,
             "singles": 22,
             "doubles": 8,
@@ -3651,17 +4057,17 @@
             "homeRuns": 11,
             "walks": 27,
             "totalBases": 82,
-            "atBats": 238,
-            "plateAppearances": 270,
+            "atBats": 239,
+            "plateAppearances": 271,
             "avg": 0.172,
-            "obp": 0.253,
-            "slg": 0.345,
-            "ops": 0.597,
-            "hitRate": 0.1519,
-            "singlesRate": 0.0815,
-            "hrRate": 0.0407,
-            "walkRate": 0.1,
-            "totalBasesRate": 0.3037
+            "obp": 0.252,
+            "slg": 0.343,
+            "ops": 0.595,
+            "hitRate": 0.15130000000000002,
+            "singlesRate": 0.0812,
+            "hrRate": 0.0406,
+            "walkRate": 0.09960000000000001,
+            "totalBasesRate": 0.30260000000000004
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3707,17 +4113,17 @@
             "totalBasesRate": 0.267
           },
           "metrics": {
-            "powerScore": 51.9,
-            "contactScore": 34.7,
-            "patienceScore": 56.7,
+            "powerScore": 51.7,
+            "contactScore": 34.6,
+            "patienceScore": 56.6,
             "formScore": 18,
-            "splitScore": 37.5,
-            "varianceScore": 87.3,
+            "splitScore": 38.1,
+            "varianceScore": 86.5,
             "pitchTypeFitScore": 57.7,
             "pitchTypeGrade": 2.59,
             "pitchTypeCoveragePct": 100,
             "matchupScore": 18,
-            "matchupGrade": -7.47
+            "matchupGrade": -7.38
           },
           "pitchType": {
             "fitScore": 57.7,
@@ -3841,8 +4247,8 @@
             "career power"
           ],
           "primaryTag": "arsenal edge",
-          "summary": ".172 AVG | .597 OPS | 41 H | 11 HR | 12g: .160 AVG | .400 OPS | 8 H | 0 HR | vs RHP: .150 AVG | .545 OPS | 8 HR | career 8425 PA | .819 OPS | 379 HR | repeatable career power | power 73 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +2.6 | -7.5 matchup grade in a neutral lane",
-          "matchupNote": "-7.47 vs Shane Baz"
+          "summary": ".172 AVG | .595 OPS | 41 H | 11 HR | 12g: .160 AVG | .400 OPS | 8 H | 0 HR | vs RHP: .150 AVG | .545 OPS | 8 HR | career 8425 PA | .819 OPS | 379 HR | repeatable career power | power 73 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +2.6 | -7.4 matchup grade in a neutral lane",
+          "matchupNote": "-7.38 vs Shane Baz"
         },
         {
           "playerId": 593428,
@@ -3862,25 +4268,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 63,
-            "hits": 52,
-            "singles": 40,
+            "gamesPlayed": 64,
+            "hits": 53,
+            "singles": 41,
             "doubles": 4,
             "triples": 0,
             "homeRuns": 8,
             "walks": 23,
-            "totalBases": 80,
-            "atBats": 225,
-            "plateAppearances": 251,
-            "avg": 0.231,
-            "obp": 0.303,
-            "slg": 0.356,
-            "ops": 0.658,
-            "hitRate": 0.2072,
-            "singlesRate": 0.1594,
-            "hrRate": 0.0319,
-            "walkRate": 0.0916,
-            "totalBasesRate": 0.3187
+            "totalBases": 81,
+            "atBats": 226,
+            "plateAppearances": 252,
+            "avg": 0.235,
+            "obp": 0.306,
+            "slg": 0.358,
+            "ops": 0.664,
+            "hitRate": 0.21030000000000001,
+            "singlesRate": 0.16269999999999998,
+            "hrRate": 0.0317,
+            "walkRate": 0.0913,
+            "totalBasesRate": 0.3214
           },
           "recent": {
             "gamesPlayed": 8,
@@ -3926,17 +4332,17 @@
             "totalBasesRate": 0.3211
           },
           "metrics": {
-            "powerScore": 46.9,
-            "contactScore": 53.6,
-            "patienceScore": 53.2,
+            "powerScore": 47.2,
+            "contactScore": 54,
+            "patienceScore": 53,
             "formScore": 18,
-            "splitScore": 55.3,
-            "varianceScore": 47.6,
+            "splitScore": 54.1,
+            "varianceScore": 47.7,
             "pitchTypeFitScore": 51.9,
             "pitchTypeGrade": 1.75,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 42.9,
-            "matchupGrade": -0.94
+            "matchupScore": 41.9,
+            "matchupGrade": -1.16
           },
           "pitchType": {
             "fitScore": 51.9,
@@ -4059,8 +4465,8 @@
             "statcast up"
           ],
           "primaryTag": "arsenal edge",
-          "summary": ".231 AVG | .658 OPS | 52 H | 8 HR | 8g: .231 AVG | .593 OPS | 6 H | 0 HR | vs RHP: .226 AVG | .668 OPS | 7 HR | career 7291 PA | .793 OPS | 205 HR | contact-stable profile | power 54 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +1.8 | -0.9 matchup grade in a neutral lane",
-          "matchupNote": "-0.94 vs Shane Baz"
+          "summary": ".235 AVG | .664 OPS | 53 H | 8 HR | 8g: .231 AVG | .593 OPS | 6 H | 0 HR | vs RHP: .226 AVG | .668 OPS | 7 HR | career 7291 PA | .793 OPS | 205 HR | contact-stable profile | power 54 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +1.8 | -1.2 matchup grade in a neutral lane",
+          "matchupNote": "-1.16 vs Shane Baz"
         },
         {
           "playerId": 657757,
@@ -4080,25 +4486,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 61,
-            "hits": 43,
+            "gamesPlayed": 62,
+            "hits": 44,
             "singles": 21,
-            "doubles": 12,
+            "doubles": 13,
             "triples": 0,
             "homeRuns": 10,
             "walks": 23,
-            "totalBases": 85,
-            "atBats": 192,
-            "plateAppearances": 217,
-            "avg": 0.224,
-            "obp": 0.313,
-            "slg": 0.443,
-            "ops": 0.756,
-            "hitRate": 0.19820000000000002,
-            "singlesRate": 0.0968,
-            "hrRate": 0.0461,
-            "walkRate": 0.106,
-            "totalBasesRate": 0.3917
+            "totalBases": 87,
+            "atBats": 193,
+            "plateAppearances": 218,
+            "avg": 0.228,
+            "obp": 0.317,
+            "slg": 0.451,
+            "ops": 0.767,
+            "hitRate": 0.2018,
+            "singlesRate": 0.09630000000000001,
+            "hrRate": 0.045899999999999996,
+            "walkRate": 0.10550000000000001,
+            "totalBasesRate": 0.39909999999999995
           },
           "recent": {
             "gamesPlayed": 10,
@@ -4144,11 +4550,11 @@
             "totalBasesRate": 0.4326
           },
           "metrics": {
-            "powerScore": 68.7,
-            "contactScore": 45.3,
-            "patienceScore": 59.8,
+            "powerScore": 69.6,
+            "contactScore": 45.7,
+            "patienceScore": 59.5,
             "formScore": 18,
-            "splitScore": 71.1,
+            "splitScore": 69.2,
             "varianceScore": 92,
             "pitchTypeFitScore": 74.3,
             "pitchTypeGrade": 5,
@@ -4278,7 +4684,7 @@
             "statcast fade"
           ],
           "primaryTag": "split edge",
-          "summary": ".224 AVG | .756 OPS | 43 H | 10 HR | 10g: .100 AVG | .300 OPS | 4 H | 0 HR | vs RHP: .237 AVG | .825 OPS | 10 HR | career 2161 PA | .708 OPS | 74 HR | contact-stable profile | power 58 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +5.0 | -8.0 matchup grade in a neutral lane",
+          "summary": ".228 AVG | .767 OPS | 44 H | 10 HR | 10g: .100 AVG | .300 OPS | 4 H | 0 HR | vs RHP: .237 AVG | .825 OPS | 10 HR | career 2161 PA | .708 OPS | 74 HR | contact-stable profile | power 58 | 2026 sample ok | arsenal 4-Seam Fastball 34% / Curveball 34% / Cutter 18% | fit +5.0 | -8.0 matchup grade in a neutral lane",
           "matchupNote": "-8.00 vs Shane Baz"
         },
         {
@@ -4299,7 +4705,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "hits": 5,
             "singles": 4,
             "doubles": 1,
@@ -4307,17 +4713,17 @@
             "homeRuns": 0,
             "walks": 3,
             "totalBases": 6,
-            "atBats": 15,
-            "plateAppearances": 19,
-            "avg": 0.333,
-            "obp": 0.444,
-            "slg": 0.4,
-            "ops": 0.844,
-            "hitRate": 0.2632,
-            "singlesRate": 0.21050000000000002,
+            "atBats": 16,
+            "plateAppearances": 20,
+            "avg": 0.313,
+            "obp": 0.421,
+            "slg": 0.375,
+            "ops": 0.796,
+            "hitRate": 0.25,
+            "singlesRate": 0.2,
             "hrRate": 0,
-            "walkRate": 0.15789999999999998,
-            "totalBasesRate": 0.31579999999999997
+            "walkRate": 0.15,
+            "totalBasesRate": 0.3
           },
           "recent": {
             "gamesPlayed": 8,
@@ -4363,11 +4769,11 @@
             "totalBasesRate": 0.35710000000000003
           },
           "metrics": {
-            "powerScore": 26.6,
-            "contactScore": 51.8,
-            "patienceScore": 76.1,
-            "formScore": 73.1,
-            "splitScore": 64.4,
+            "powerScore": 23.8,
+            "contactScore": 49.7,
+            "patienceScore": 73.7,
+            "formScore": 82.6,
+            "splitScore": 74.2,
             "varianceScore": 92,
             "pitchTypeFitScore": 69.8,
             "pitchTypeGrade": 5.57,
@@ -4461,7 +4867,7 @@
             "arsenal edge"
           ],
           "primaryTag": "carry",
-          "summary": ".333 AVG | .844 OPS | 5 H | 0 HR | 8g: .385 AVG | .962 OPS | 10 H | 0 HR | vs RHP: .364 AVG | .916 OPS | 0 HR | Career profile pending | arsenal 4-Seam Fastball 34% / Cutter 18% / Changeup 8% | fit +5.6 | +10.0 matchup grade in a neutral lane",
+          "summary": ".313 AVG | .796 OPS | 5 H | 0 HR | 8g: .385 AVG | .962 OPS | 10 H | 0 HR | vs RHP: .364 AVG | .916 OPS | 0 HR | Career profile pending | arsenal 4-Seam Fastball 34% / Cutter 18% / Changeup 8% | fit +5.6 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Shane Baz"
         },
         {
@@ -4482,7 +4888,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 47,
+            "gamesPlayed": 48,
             "hits": 34,
             "singles": 21,
             "doubles": 5,
@@ -4547,7 +4953,7 @@
           },
           "metrics": {
             "powerScore": 69.6,
-            "contactScore": 49,
+            "contactScore": 48.7,
             "patienceScore": 40.1,
             "formScore": 18,
             "splitScore": 57.5,
@@ -4700,7 +5106,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 2,
+            "gamesPlayed": 3,
             "hits": 3,
             "singles": 2,
             "doubles": 1,
@@ -4839,7 +5245,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 49,
+            "gamesPlayed": 50,
             "hits": 18,
             "singles": 10,
             "doubles": 5,
@@ -4904,7 +5310,7 @@
           },
           "metrics": {
             "powerScore": 20.1,
-            "contactScore": 28,
+            "contactScore": 27.8,
             "patienceScore": 54.6,
             "formScore": 92,
             "splitScore": 18,
@@ -5060,12 +5466,12 @@
         "topThirdArsenalCount": 2,
         "heaterCount": 3,
         "suppressorCount": 2,
-        "platoonPressureIndex": 53.1,
+        "platoonPressureIndex": 53.2,
         "pitchTypePressureIndex": 88.8,
         "bullpenPitchTypePressureIndex": null,
-        "starterPressureIndex": 76.7,
-        "overallPressureIndex": 76.7,
-        "topThirdScore": 47.5,
+        "starterPressureIndex": 76.8,
+        "overallPressureIndex": 76.8,
+        "topThirdScore": 47.7,
         "depthScore": 68.2,
         "bullpenOverperformHitters": []
       },
@@ -5099,8 +5505,8 @@
         "underperformNote": "Gavin Sheets and Ty France carry the softer form or split fit into a balanced lane.",
         "overview": "Padres can lean on Fernando Tatis Jr., Samad Taylor, Will Wagner to drive early pressure against Shane Baz.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-        "topThirdScore": 47.5,
-        "middleScore": 51.6,
+        "topThirdScore": 47.7,
+        "middleScore": 51.3,
         "depthScore": 68.2,
         "bullpenPitchTypeSummary": null
       }
@@ -5113,9 +5519,9 @@
         "name": "Griffin Canning",
         "hand": "R",
         "type": "Traffic-risk",
-        "inningsPitched": 32.666666666666664,
+        "inningsPitched": 33,
         "homeRunsAllowed": 6,
-        "homeRunsPerNine": 1.65,
+        "homeRunsPerNine": 1.64,
         "recentHomeRunsAllowed": 5,
         "recentHomeRunsAllowedPerStart": 1,
         "recentHomeRunsPerNine": 1.99,
@@ -5142,25 +5548,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 69,
+            "gamesPlayed": 70,
             "hits": 66,
             "singles": 47,
             "doubles": 16,
             "triples": 0,
             "homeRuns": 3,
-            "walks": 61,
+            "walks": 62,
             "totalBases": 91,
             "atBats": 251,
-            "plateAppearances": 317,
+            "plateAppearances": 318,
             "avg": 0.263,
-            "obp": 0.41,
+            "obp": 0.412,
             "slg": 0.363,
-            "ops": 0.773,
-            "hitRate": 0.2082,
-            "singlesRate": 0.1483,
-            "hrRate": 0.0095,
-            "walkRate": 0.1924,
-            "totalBasesRate": 0.2871
+            "ops": 0.774,
+            "hitRate": 0.2075,
+            "singlesRate": 0.1478,
+            "hrRate": 0.009399999999999999,
+            "walkRate": 0.195,
+            "totalBasesRate": 0.2862
           },
           "recent": {
             "gamesPlayed": 14,
@@ -5207,11 +5613,11 @@
           },
           "metrics": {
             "powerScore": 30.1,
-            "contactScore": 57.7,
-            "patienceScore": 91.6,
+            "contactScore": 57.5,
+            "patienceScore": 92,
             "formScore": 92,
-            "splitScore": 48.3,
-            "varianceScore": 57.2,
+            "splitScore": 48.1,
+            "varianceScore": 57,
             "pitchTypeFitScore": 65.5,
             "pitchTypeGrade": 3.74,
             "pitchTypeCoveragePct": 100,
@@ -5340,7 +5746,7 @@
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".263 AVG | .773 OPS | 66 H | 3 HR | 14g: .292 AVG | .885 OPS | 14 H | 2 HR | vs RHP: .262 AVG | .767 OPS | 2 HR | career 3102 PA | .764 OPS | 115 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +3.7 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".263 AVG | .774 OPS | 66 H | 3 HR | 14g: .292 AVG | .885 OPS | 14 H | 2 HR | vs RHP: .262 AVG | .767 OPS | 2 HR | career 3102 PA | .764 OPS | 115 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +3.7 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Griffin Canning"
         },
         {
@@ -5361,25 +5767,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 69,
-            "hits": 63,
-            "singles": 36,
+            "gamesPlayed": 70,
+            "hits": 64,
+            "singles": 37,
             "doubles": 13,
             "triples": 1,
             "homeRuns": 13,
             "walks": 24,
-            "totalBases": 117,
-            "atBats": 289,
-            "plateAppearances": 317,
-            "avg": 0.218,
-            "obp": 0.284,
-            "slg": 0.405,
-            "ops": 0.689,
-            "hitRate": 0.19870000000000002,
-            "singlesRate": 0.11359999999999999,
-            "hrRate": 0.040999999999999995,
-            "walkRate": 0.0757,
-            "totalBasesRate": 0.3691
+            "totalBases": 118,
+            "atBats": 290,
+            "plateAppearances": 318,
+            "avg": 0.221,
+            "obp": 0.286,
+            "slg": 0.407,
+            "ops": 0.693,
+            "hitRate": 0.20129999999999998,
+            "singlesRate": 0.1164,
+            "hrRate": 0.0409,
+            "walkRate": 0.0755,
+            "totalBasesRate": 0.3711
           },
           "recent": {
             "gamesPlayed": 14,
@@ -5425,17 +5831,17 @@
             "totalBasesRate": 0.3422
           },
           "metrics": {
-            "powerScore": 55,
-            "contactScore": 44.9,
-            "patienceScore": 48.7,
+            "powerScore": 55.2,
+            "contactScore": 45.1,
+            "patienceScore": 48.5,
             "formScore": 18,
-            "splitScore": 37.8,
-            "varianceScore": 63.5,
+            "splitScore": 36.9,
+            "varianceScore": 64.7,
             "pitchTypeFitScore": 44.7,
             "pitchTypeGrade": 1.1,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 46.9,
-            "matchupGrade": 0.59
+            "matchupScore": 46.2,
+            "matchupGrade": 0.45
           },
           "pitchType": {
             "fitScore": 44.7,
@@ -5559,8 +5965,8 @@
             "career power"
           ],
           "primaryTag": "split edge",
-          "summary": ".218 AVG | .689 OPS | 63 H | 13 HR | 14g: .231 AVG | .606 OPS | 12 H | 0 HR | vs RHP: .221 AVG | .666 OPS | 7 HR | career 2394 PA | .816 OPS | 99 HR | repeatable career power | power 73 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +1.1 | +0.6 matchup grade in a traffic-risk lane",
-          "matchupNote": "+0.59 vs Griffin Canning"
+          "summary": ".221 AVG | .693 OPS | 64 H | 13 HR | 14g: .231 AVG | .606 OPS | 12 H | 0 HR | vs RHP: .221 AVG | .666 OPS | 7 HR | career 2394 PA | .816 OPS | 99 HR | repeatable career power | power 73 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +1.1 | +0.5 matchup grade in a traffic-risk lane",
+          "matchupNote": "+0.45 vs Griffin Canning"
         },
         {
           "playerId": 668939,
@@ -5580,7 +5986,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 49,
+            "gamesPlayed": 50,
             "hits": 50,
             "singles": 26,
             "doubles": 15,
@@ -5589,16 +5995,16 @@
             "walks": 22,
             "totalBases": 91,
             "atBats": 183,
-            "plateAppearances": 208,
+            "plateAppearances": 209,
             "avg": 0.273,
-            "obp": 0.351,
+            "obp": 0.349,
             "slg": 0.497,
-            "ops": 0.848,
-            "hitRate": 0.2404,
-            "singlesRate": 0.125,
-            "hrRate": 0.0385,
-            "walkRate": 0.1058,
-            "totalBasesRate": 0.4375
+            "ops": 0.847,
+            "hitRate": 0.23920000000000002,
+            "singlesRate": 0.1244,
+            "hrRate": 0.0383,
+            "walkRate": 0.10529999999999999,
+            "totalBasesRate": 0.4354
           },
           "recent": {
             "gamesPlayed": 8,
@@ -5645,10 +6051,10 @@
           },
           "metrics": {
             "powerScore": 64.6,
-            "contactScore": 70.9,
-            "patienceScore": 58.6,
+            "contactScore": 70.7,
+            "patienceScore": 58.2,
             "formScore": 92,
-            "splitScore": 59,
+            "splitScore": 59.4,
             "varianceScore": 92,
             "pitchTypeFitScore": 82.5,
             "pitchTypeGrade": 5.5,
@@ -5780,7 +6186,7 @@
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".273 AVG | .848 OPS | 50 H | 8 HR | 8g: .467 AVG | 1.396 OPS | 14 H | 2 HR | vs RHP: .287 AVG | .901 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane",
+          "summary": ".273 AVG | .847 OPS | 50 H | 8 HR | 8g: .467 AVG | 1.396 OPS | 14 H | 2 HR | vs RHP: .287 AVG | .901 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane",
           "matchupNote": "+10.00 vs Griffin Canning"
         },
         {
@@ -5801,7 +6207,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 70,
+            "gamesPlayed": 71,
             "hits": 65,
             "singles": 38,
             "doubles": 12,
@@ -5866,11 +6272,11 @@
           },
           "metrics": {
             "powerScore": 76,
-            "contactScore": 51.8,
+            "contactScore": 51.6,
             "patienceScore": 56.4,
             "formScore": 92,
             "splitScore": 62.3,
-            "varianceScore": 62.4,
+            "varianceScore": 62.5,
             "pitchTypeFitScore": 83,
             "pitchTypeGrade": 5.2,
             "pitchTypeCoveragePct": 100,
@@ -6022,7 +6428,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 57,
+            "gamesPlayed": 58,
             "hits": 47,
             "singles": 28,
             "doubles": 9,
@@ -6087,7 +6493,7 @@
           },
           "metrics": {
             "powerScore": 69.6,
-            "contactScore": 48.2,
+            "contactScore": 48,
             "patienceScore": 50.8,
             "formScore": 18,
             "splitScore": 66.8,
@@ -6242,7 +6648,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 55,
+            "gamesPlayed": 56,
             "hits": 34,
             "singles": 19,
             "doubles": 6,
@@ -6307,7 +6713,7 @@
           },
           "metrics": {
             "powerScore": 47.3,
-            "contactScore": 22.3,
+            "contactScore": 22.1,
             "patienceScore": 48.1,
             "formScore": 92,
             "splitScore": 18,
@@ -6461,7 +6867,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 60,
+            "gamesPlayed": 61,
             "hits": 32,
             "singles": 22,
             "doubles": 3,
@@ -6526,7 +6932,7 @@
           },
           "metrics": {
             "powerScore": 59.3,
-            "contactScore": 34.4,
+            "contactScore": 34.3,
             "patienceScore": 60.3,
             "formScore": 92,
             "splitScore": 63.5,
@@ -6681,7 +7087,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 42,
+            "gamesPlayed": 43,
             "hits": 20,
             "singles": 14,
             "doubles": 4,
@@ -6746,7 +7152,7 @@
           },
           "metrics": {
             "powerScore": 30.8,
-            "contactScore": 32.7,
+            "contactScore": 32.5,
             "patienceScore": 63,
             "formScore": 92,
             "splitScore": 91.8,
@@ -6901,7 +7307,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 21,
+            "gamesPlayed": 22,
             "hits": 14,
             "singles": 9,
             "doubles": 1,
@@ -6966,11 +7372,11 @@
           },
           "metrics": {
             "powerScore": 58.8,
-            "contactScore": 40.2,
+            "contactScore": 39.6,
             "patienceScore": 65.4,
             "formScore": 48.5,
             "splitScore": 76.2,
-            "varianceScore": 71,
+            "varianceScore": 71.2,
             "pitchTypeFitScore": 34.6,
             "pitchTypeGrade": -0.65,
             "pitchTypeCoveragePct": 100,
@@ -7108,7 +7514,7 @@
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 4.95,
+        "averageMatchupGrade": 4.94,
         "trackedBatters": 9,
         "starterThreatCount": 6,
         "contactCount": 1,
@@ -7127,7 +7533,7 @@
         "bullpenPitchTypePressureIndex": null,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
-        "topThirdScore": 78.3,
+        "topThirdScore": 78.1,
         "depthScore": 86.9,
         "bullpenOverperformHitters": []
       },
@@ -7161,7 +7567,7 @@
         "underperformNote": "Samuel Basallo and Coby Mayo carry the softer form or split fit into a traffic-risk lane.",
         "overview": "Orioles can lean on Taylor Ward, Adley Rutschman, Pete Alonso to drive early pressure against Griffin Canning.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-        "topThirdScore": 78.3,
+        "topThirdScore": 78.1,
         "middleScore": 51.1,
         "depthScore": 86.9,
         "bullpenPitchTypeSummary": null
@@ -7174,15 +7580,15 @@
       "fullName": "Griffin Canning",
       "pitchHand": "R",
       "wins": 0,
-      "losses": 4,
-      "era": "6.34",
-      "strikeOuts": 33,
-      "inningsPitched": "32.2",
-      "hitsAllowed": 31,
-      "walks": 17,
-      "homeRunsAllowed": 6,
-      "whip": "1.47",
-      "gamesStarted": 7,
+      "losses": 5,
+      "era": "7.17",
+      "strikeOuts": 39,
+      "inningsPitched": "37.2",
+      "hitsAllowed": 37,
+      "walks": 22,
+      "homeRunsAllowed": 8,
+      "whip": "1.57",
+      "gamesStarted": 8,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 656288,
@@ -11532,16 +11938,16 @@
       "id": 669358,
       "fullName": "Shane Baz",
       "pitchHand": "R",
-      "wins": 3,
+      "wins": 4,
       "losses": 6,
-      "era": "4.09",
-      "strikeOuts": 66,
-      "inningsPitched": "77.0",
-      "hitsAllowed": 76,
-      "walks": 30,
+      "era": "4.06",
+      "strikeOuts": 67,
+      "inningsPitched": "82.0",
+      "hitsAllowed": 82,
+      "walks": 32,
       "homeRunsAllowed": 8,
-      "whip": "1.38",
-      "gamesStarted": 13,
+      "whip": "1.39",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 669358,
@@ -17094,17 +17500,17 @@
       {
         "label": "Spread",
         "book": "DraftKings typed MLB board",
-        "value": "Padres +1.5 -180 / Orioles -1.5 +148"
+        "value": "Padres +1.5 -159 / Orioles -1.5 +122"
       },
       {
         "label": "Total",
         "book": "DraftKings typed MLB board",
-        "value": "o9.5 -105 / u9.5 -114"
+        "value": "o11.5 +106 / u11.5 -137"
       },
       {
         "label": "Moneyline",
         "book": "DraftKings typed MLB board",
-        "value": "Padres +108 / Orioles -131"
+        "value": "Padres +122 / Orioles -160"
       },
       {
         "label": "1st 5 ML",
@@ -17126,24 +17532,24 @@
       "index": 0,
       "role": "Away",
       "name": "Padres",
-      "detail": "Griffin Canning (RHP) | 0-4 | 6.34 ERA | 33 SO | 1.47 WHIP | 32.2 IP",
-      "americanOdds": 108,
-      "americanLabel": "+108",
-      "decimalOdds": 2.08,
-      "impliedProbability": 0.4807692307692308,
-      "impliedProbabilityLabel": "48.1%"
+      "detail": "Griffin Canning (RHP) | 0-5 | 7.17 ERA | 39 SO | 1.57 WHIP | 37.2 IP",
+      "americanOdds": 122,
+      "americanLabel": "+122",
+      "decimalOdds": 2.2199999999999998,
+      "impliedProbability": 0.45045045045045046,
+      "impliedProbabilityLabel": "45.0%"
     },
     {
       "id": "padres-orioles:1",
       "index": 1,
       "role": "Home",
       "name": "Orioles",
-      "detail": "Shane Baz (RHP) | 3-6 | 4.09 ERA | 66 SO | 1.38 WHIP | 77.0 IP",
-      "americanOdds": -131,
-      "americanLabel": "-131",
-      "decimalOdds": 1.7633587786259541,
-      "impliedProbability": 0.5670995670995671,
-      "impliedProbabilityLabel": "56.7%"
+      "detail": "Shane Baz (RHP) | 4-6 | 4.06 ERA | 67 SO | 1.39 WHIP | 82.0 IP",
+      "americanOdds": -160,
+      "americanLabel": "-160",
+      "decimalOdds": 1.625,
+      "impliedProbability": 0.6153846153846154,
+      "impliedProbabilityLabel": "61.5%"
     }
   ],
   "moneyline": {
@@ -17156,24 +17562,24 @@
         "index": 0,
         "role": "Away",
         "name": "Padres",
-        "detail": "Griffin Canning (RHP) | 0-4 | 6.34 ERA | 33 SO | 1.47 WHIP | 32.2 IP",
-        "americanOdds": 108,
-        "americanLabel": "+108",
-        "decimalOdds": 2.08,
-        "impliedProbability": 0.4807692307692308,
-        "impliedProbabilityLabel": "48.1%"
+        "detail": "Griffin Canning (RHP) | 0-5 | 7.17 ERA | 39 SO | 1.57 WHIP | 37.2 IP",
+        "americanOdds": 122,
+        "americanLabel": "+122",
+        "decimalOdds": 2.2199999999999998,
+        "impliedProbability": 0.45045045045045046,
+        "impliedProbabilityLabel": "45.0%"
       },
       {
         "id": "padres-orioles:1",
         "index": 1,
         "role": "Home",
         "name": "Orioles",
-        "detail": "Shane Baz (RHP) | 3-6 | 4.09 ERA | 66 SO | 1.38 WHIP | 77.0 IP",
-        "americanOdds": -131,
-        "americanLabel": "-131",
-        "decimalOdds": 1.7633587786259541,
-        "impliedProbability": 0.5670995670995671,
-        "impliedProbabilityLabel": "56.7%"
+        "detail": "Shane Baz (RHP) | 4-6 | 4.06 ERA | 67 SO | 1.39 WHIP | 82.0 IP",
+        "americanOdds": -160,
+        "americanLabel": "-160",
+        "decimalOdds": 1.625,
+        "impliedProbability": 0.6153846153846154,
+        "impliedProbabilityLabel": "61.5%"
       }
     ]
   },
@@ -17185,58 +17591,58 @@
       "index": 1,
       "role": "Home",
       "name": "Orioles",
-      "detail": "Shane Baz (RHP) | 3-6 | 4.09 ERA | 66 SO | 1.38 WHIP | 77.0 IP",
-      "americanOdds": -131,
-      "americanLabel": "-131",
-      "decimalOdds": 1.7633587786259541,
-      "impliedProbability": 0.5670995670995671,
-      "impliedProbabilityLabel": "56.7%"
+      "detail": "Shane Baz (RHP) | 4-6 | 4.06 ERA | 67 SO | 1.39 WHIP | 82.0 IP",
+      "americanOdds": -160,
+      "americanLabel": "-160",
+      "decimalOdds": 1.625,
+      "impliedProbability": 0.6153846153846154,
+      "impliedProbabilityLabel": "61.5%"
     },
     "opponent": {
       "id": "padres-orioles:0",
       "index": 0,
       "role": "Away",
       "name": "Padres",
-      "detail": "Griffin Canning (RHP) | 0-4 | 6.34 ERA | 33 SO | 1.47 WHIP | 32.2 IP",
-      "americanOdds": 108,
-      "americanLabel": "+108",
-      "decimalOdds": 2.08,
-      "impliedProbability": 0.4807692307692308,
-      "impliedProbabilityLabel": "48.1%"
+      "detail": "Griffin Canning (RHP) | 0-5 | 7.17 ERA | 39 SO | 1.57 WHIP | 37.2 IP",
+      "americanOdds": 122,
+      "americanLabel": "+122",
+      "decimalOdds": 2.2199999999999998,
+      "impliedProbability": 0.45045045045045046,
+      "impliedProbabilityLabel": "45.0%"
     },
-    "lean": "Model pick: Orioles on starter era and starter record.",
-    "rationale": "Starter ERA: Orioles (4.09 ERA) vs Padres (6.34 ERA)",
-    "confidence": 59,
+    "lean": "Model pick: Orioles on starter era and market price.",
+    "rationale": "Starter ERA: Orioles (4.06 ERA) vs Padres (7.17 ERA)",
+    "confidence": 54,
     "volatility": 92,
-    "recommendationScore": 38,
+    "recommendationScore": 35,
     "tier": "Pass",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 7.4,
-    "modelEdgeLabel": "7.4-point model edge",
-    "marketProbability": 0.541193294669103,
-    "marketProbabilityLabel": "54.1%",
+    "modelEdge": 6.7,
+    "modelEdgeLabel": "6.7-point model edge",
+    "marketProbability": 0.577373211963589,
+    "marketProbabilityLabel": "57.7%",
     "inputs": [
       {
         "label": "Starter ERA",
-        "summary": "Starter ERA: Orioles (4.09 ERA) vs Padres (6.34 ERA)",
+        "summary": "Starter ERA: Orioles (4.06 ERA) vs Padres (7.17 ERA)",
         "source": "Listed probable starters",
-        "margin": 20.3,
+        "margin": 28,
         "weight": 0.23
       },
       {
-        "label": "Starter record",
-        "summary": "Starter record: Orioles (3-6) vs Padres (0-4)",
-        "source": "Listed probable starters",
-        "margin": 19.3,
-        "weight": 0.16
+        "label": "Market price",
+        "summary": "Market price: Orioles (57.7% no-vig) vs Padres (42.3% no-vig)",
+        "source": "Moneyline board",
+        "margin": 15.5,
+        "weight": 0.26
       },
       {
-        "label": "Lineup-vs-pitching fit",
-        "summary": "Lineup-vs-pitching fit: Orioles (Grade +4.95 | platoon 7 | starter arsenal 88 | bridge arsenal 50 | pressure 94) vs Padres (Grade +1.38 | platoon 4 | starter arsenal 89 | bridge arsenal 50 | pressure 77)",
-        "source": "Official lineup + handedness + starter arsenal + likely reliever arsenal fit",
-        "margin": 22.1,
-        "weight": 0.14
+        "label": "Starter record",
+        "summary": "Starter record: Orioles (4-6) vs Padres (0-5)",
+        "source": "Listed probable starters",
+        "margin": 20.4,
+        "weight": 0.16
       }
     ],
     "inputsUsed": 12,
@@ -17251,6 +17657,10 @@
       },
       {
         "label": "One lineup carries real platoon pressure versus the listed starter hand",
+        "delta": 3
+      },
+      {
+        "label": "Handedness split rows are moving the offensive shape",
         "delta": 3
       },
       {
@@ -17278,6 +17688,10 @@
         "delta": 4
       },
       {
+        "label": "Overall baseball variance is still high enough that the side reads better as a watchlist edge than a clean conviction tag",
+        "delta": 3
+      },
+      {
         "label": "Relief-pitching risk is elevated if the game flips after the starter phase",
         "delta": 6
       },
@@ -17290,6 +17704,10 @@
         "delta": 3
       },
       {
+        "label": "Tier 1 edge control: a double-digit edge is still sitting in a high-volatility baseball script, so this should grade as a pass until the game proves cleaner.",
+        "delta": 6
+      },
+      {
         "label": "Tier 1 starter-vs-late split: the starter edge is outrunning the late-inning hold profile, which makes the full-game side less trustworthy than the first-five read.",
         "delta": 4
       },
@@ -17299,8 +17717,8 @@
       }
     ],
     "pickReasons": [
-      "Orioles own the cleaner full-game traffic script at 11.6 projected hits.",
-      "Orioles have the better starter-window lane with 6.5 projected first-five hits.",
+      "Orioles own the cleaner full-game traffic script at 11.9 projected hits.",
+      "Orioles have the better starter-window lane with 7.2 projected first-five hits.",
       "Orioles still hold the better bridge-and-finish script once the bullpens take over.",
       "Orioles also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late."
     ],
@@ -17308,13 +17726,13 @@
       "reliefPitchingRisk": 73,
       "coinflipPressure": 51,
       "starterLeverageIndex": 100,
-      "lateInningStabilityIndex": 25.7,
+      "lateInningStabilityIndex": 25.1,
       "pickBullpenScore": 61.2,
       "oppBullpenScore": 67.7,
       "pickBullpenChainScore": 75.6,
       "oppBullpenChainScore": 67.9,
-      "pickStarterScore": 62.7,
-      "oppStarterScore": 45.1,
+      "pickStarterScore": 65.9,
+      "oppStarterScore": 40.2,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -17370,7 +17788,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 4,
+      "projectedHitEdgeForPick": 4.2,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
@@ -17413,20 +17831,21 @@
       "tierOneRiskPoints": 5,
       "tierOnePassFlag": true,
       "tierOneRiskFlags": [
+        "highVolatilityEdgePass",
         "starterLateFragility",
         "highRiskPoints"
       ],
       "favoredSignalCount": 9,
-      "starterLateGap": 74.3,
+      "starterLateGap": 74.9,
       "starterLeashGap": 0,
-      "edgeHaircutApplied": 2,
+      "edgeHaircutApplied": 5,
       "gameShape": {
         "label": "Early-pressure side",
         "shapeLabel": "bullpen-flip game",
         "category": "early_pressure_side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "categoryConfidence": 64.4,
-        "realityGapScore": 57.7,
+        "categoryConfidence": 64.7,
+        "realityGapScore": 57.8,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -17446,7 +17865,7 @@
             "score": 44.8
           }
         ],
-        "rfImpactScore": 46.9
+        "rfImpactScore": 60.1
       }
     },
     "gameShape": {
@@ -17457,7 +17876,7 @@
         "slug": "early_pressure_side",
         "label": "Early-pressure side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "confidence": 64.4,
+        "confidence": 64.7,
         "reasons": [
           "The pick needs to cash the first traffic pocket.",
           "The best edge is timing, not late-game patience."
@@ -17501,10 +17920,10 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 4
+          "projectedHitEdge": 4.2
         }
       },
-      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 57.7/100. Main checks: 88°F | Wind 11 mph L-R | 0% precip | weather helps carry.",
+      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 57.8/100. Main checks: 88°F | Wind 11 mph L-R | 0% precip | weather helps carry.",
       "pickTeam": "Orioles",
       "opponentTeam": "Padres",
       "scores": {
@@ -17512,9 +17931,9 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
         "bullpenFlipScore": 72.9,
-        "starterControlScore": 67.2,
-        "marketContradictionScore": 14.9,
-        "realityGapScore": 57.7
+        "starterControlScore": 77.9,
+        "marketContradictionScore": 17.1,
+        "realityGapScore": 57.8
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -17528,9 +17947,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 35.3,
-            "pickScore": 35.3,
-            "opponentScore": 8.1
+            "gameScore": 35.9,
+            "pickScore": 35.9,
+            "opponentScore": 7.2
           },
           {
             "id": "chaos",
@@ -17578,7 +17997,7 @@
             "role": "pick",
             "team": "Orioles",
             "scores": {
-              "pressure": 35.3,
+              "pressure": 35.9,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17586,7 +18005,7 @@
               "flow": 100
             },
             "polygon": [
-              35.3,
+              35.9,
               5,
               0,
               16,
@@ -17597,7 +18016,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 62.7,
+              "starterScore": 65.9,
               "bullpenScore": 61.2,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17611,7 +18030,7 @@
             "role": "opponent",
             "team": "Padres",
             "scores": {
-              "pressure": 8.1,
+              "pressure": 7.2,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17619,7 +18038,7 @@
               "flow": 0
             },
             "polygon": [
-              8.1,
+              7.2,
               5,
               0,
               16,
@@ -17630,7 +18049,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 45.1,
+              "starterScore": 40.2,
               "bullpenScore": 67.7,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17645,7 +18064,7 @@
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 35.3,
+            "pressure": 35.9,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
@@ -17653,7 +18072,7 @@
             "flow": 100
           },
           "polygon": [
-            35.3,
+            35.9,
             44.8,
             8.5,
             24.4,
@@ -17735,12 +18154,12 @@
         "side": "Orioles is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Totals need chaos-gate respect; raw run projection is not enough when one-bad-inning or warm-carry risk is live.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 91.1% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 92% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 46.9,
+        "impactScore": 60.1,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -17775,26 +18194,26 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 7.6,
-      "homeProjectedHits": 11.6,
-      "awayHitEfficiencyPct": 21.8,
-      "homeHitEfficiencyPct": 33.7,
-      "awayFirst5ProjectedHits": 4.5,
-      "homeFirst5ProjectedHits": 6.5,
-      "awayFirst5HitEfficiencyPct": 23.3,
-      "homeFirst5HitEfficiencyPct": 34.3,
+      "awayProjectedHits": 7.7,
+      "homeProjectedHits": 11.9,
+      "awayHitEfficiencyPct": 22,
+      "homeHitEfficiencyPct": 34.3,
+      "awayFirst5ProjectedHits": 4.3,
+      "homeFirst5ProjectedHits": 7.2,
+      "awayFirst5HitEfficiencyPct": 22.4,
+      "homeFirst5HitEfficiencyPct": 37.9,
       "awayLateProjectedHits": 3.4,
-      "homeLateProjectedHits": 4.8,
-      "awayLateHitEfficiencyPct": 21.7,
-      "homeLateHitEfficiencyPct": 31.1,
+      "homeLateProjectedHits": 4.6,
+      "awayLateHitEfficiencyPct": 21.9,
+      "homeLateHitEfficiencyPct": 29.6,
       "awayBullpenChainScore": 67.9,
       "homeBullpenChainScore": 75.6,
       "edgeTeam": "Orioles",
-      "edgeHits": 4,
+      "edgeHits": 4.2,
       "first5EdgeTeam": "Orioles",
-      "first5EdgeHits": 2,
+      "first5EdgeHits": 2.9,
       "lateEdgeTeam": "Orioles",
-      "lateEdgeHits": 1.4,
+      "lateEdgeHits": 1.2,
       "bridgeEdgeTeam": "Orioles",
       "bridgeEdgeScore": 7.8,
       "awayLikelyRelievers": [
@@ -17866,7 +18285,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 1,
           "unavailable": false,
-          "shadowSharePct": 23.8,
+          "shadowSharePct": 23.9,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -17904,33 +18323,37 @@
       "awayPitcherType": "Traffic-risk righty",
       "homePitcherType": "Balanced righty",
       "awayStarterHoldConfidence": 18,
-      "homeStarterHoldConfidence": 53.2,
-      "awayProjectedRuns": 3.5,
-      "homeProjectedRuns": 5.5,
-      "awayFirst5ProjectedRuns": 1.9,
-      "homeFirst5ProjectedRuns": 3.1,
+      "homeStarterHoldConfidence": 64.6,
+      "awayProjectedRuns": 3.1,
+      "homeProjectedRuns": 6.5,
+      "awayFirst5ProjectedRuns": 1.5,
+      "homeFirst5ProjectedRuns": 4.1,
       "awayLateProjectedRuns": 1.6,
       "homeLateProjectedRuns": 2.4,
-      "postedTotal": 9.5,
+      "postedTotal": 11.5,
       "totals": {
         "fullGame": {
           "lean": "Pass",
-          "edge": -0.5,
-          "strength": "Chaos veto",
-          "label": "Hold 9.5",
-          "summary": "Under lean with a 0.5-run edge against 9.5. Chaos gate veto: under exposed to mistake-chaos and one-big-inning risk (88°F | Wind 11 mph L-R | 0% precip | weather helps carry).",
+          "edge": -1.9,
+          "strength": "ENV/RP2 veto",
+          "label": "Hold 11.5",
+          "summary": "Under lean with a 1.9-run edge against 11.5. ENV/RP2 addendum veto: ENV1/FIC HR-run carry conflicts with a fragile under (88°F | Wind 11 mph L-R | 0% precip | weather helps carry; ENV1 HRForce 1.7; FIC HRForce 1.6; material HRForce 1.7).",
           "originalLean": "Under",
-          "originalStrength": "Lean",
-          "originalLabel": "Under 9.5",
+          "originalStrength": "Strong",
+          "originalLabel": "Under 11.5",
           "chaosGate": {
             "phase": "full",
-            "overChaosScore": 4,
+            "overChaosScore": 10,
             "underDragScore": 0,
             "warning": true,
             "vetoed": true,
-            "vetoReason": "under exposed to mistake-chaos and one-big-inning risk",
+            "vetoKind": "addendum",
+            "vetoReason": "ENV1/FIC HR-run carry conflicts with a fragile under",
             "notes": [
-              "88°F | Wind 11 mph L-R | 0% precip | weather helps carry"
+              "88°F | Wind 11 mph L-R | 0% precip | weather helps carry",
+              "ENV1 HRForce 1.7",
+              "FIC HRForce 1.6",
+              "material HRForce 1.7"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -17941,25 +18364,46 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.6,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.3,
+              "hrForce": 1.7,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.6,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": true,
+              "carryMultiplier": 1.25,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 38,
+              "maxRp2ReliefRuns": 1.4,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
         "first5": {
-          "lean": "Under",
-          "edge": -0.5,
-          "strength": "Lean",
-          "label": "Under 5.5",
-          "summary": "Under lean with a 0.5-run edge against 5.5.",
+          "lean": "Over",
+          "edge": 0.1,
+          "strength": "Tail validated",
+          "label": "Over 5.5",
+          "summary": "Model projection 5.6 is essentially on the posted 5.5. Tail overlay keeps the over alive because the failure mode is an actual run-explosion path, not a clean under.",
           "chaosGate": {
             "phase": "first5",
-            "overChaosScore": 3,
+            "overChaosScore": 9,
             "underDragScore": 0,
             "warning": true,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
-              "88°F | Wind 11 mph L-R | 0% precip | weather helps carry"
+              "88°F | Wind 11 mph L-R | 0% precip | weather helps carry",
+              "ENV1 HRForce 1.7",
+              "FIC HRForce 1.6",
+              "material HRForce 1.7"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -17970,21 +18414,46 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.6,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.3,
+              "hrForce": 1.7,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.6,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": true,
+              "carryMultiplier": 1.25,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 38,
+              "maxRp2ReliefRuns": 1.4,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           },
+          "originalLean": "Pass",
+          "originalStrength": "Thin",
+          "originalLabel": "Hold 5.5",
           "tailOverlay": {
-            "baseProjectedRuns": 5,
-            "adjustedProjectedRuns": 5,
-            "adjustedEdge": -0.5,
-            "marketExpression": "Under",
-            "shape": "balanced",
-            "tailScore": 29.1,
+            "baseProjectedRuns": 5.6,
+            "adjustedProjectedRuns": 8.5,
+            "adjustedEdge": 3,
+            "marketExpression": "Over",
+            "shape": "over-tail",
+            "tailScore": 67.8,
             "strandScore": 0,
             "forkScore": 0,
-            "tailLift": 0,
+            "tailLift": 2.9,
             "strandDrag": 0,
-            "notes": [],
+            "notes": [
+              "fat-tail run environment",
+              "carry/weather turns ordinary contact into extra-base risk",
+              "ENV1 HRForce 1.7",
+              "FIC HRForce 1.6"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -17993,28 +18462,48 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 11,
+              "totalFirst5ProjectedHits": 11.5,
               "weatherCarry": true,
               "weatherSuppress": false,
+              "envRunDelta": 0.6,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.3,
+              "hrForce": 1.7,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.6,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": true,
+              "carryMultiplier": 1.25,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 38,
+              "maxRp2ReliefRuns": 1.4,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": null,
               "visibilityRisk": null
             }
           }
         },
         "late": {
-          "lean": "Pass",
-          "edge": 0,
-          "strength": "Thin",
-          "label": "Hold 4",
-          "summary": "Model projection 4 is essentially on the posted 4.",
+          "lean": "Under",
+          "edge": -2,
+          "strength": "Strong",
+          "label": "Under 6",
+          "summary": "Under lean with a 2.0-run edge against 6.",
           "chaosGate": {
             "phase": "late",
-            "overChaosScore": 3,
+            "overChaosScore": 9,
             "underDragScore": 0,
             "warning": true,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
-              "88°F | Wind 11 mph L-R | 0% precip | weather helps carry"
+              "88°F | Wind 11 mph L-R | 0% precip | weather helps carry",
+              "ENV1 HRForce 1.7",
+              "FIC HRForce 1.6",
+              "material HRForce 1.7"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -18025,25 +18514,47 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.6,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.3,
+              "hrForce": 1.7,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.6,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": true,
+              "carryMultiplier": 1.25,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 38,
+              "maxRp2ReliefRuns": 1.4,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
-        "projectedFullTotalRuns": 9,
-        "projectedFirst5TotalRuns": 5,
-        "tailAdjustedProjectedFirst5TotalRuns": 5,
+        "projectedFullTotalRuns": 9.6,
+        "projectedFirst5TotalRuns": 5.6,
+        "tailAdjustedProjectedFirst5TotalRuns": 8.5,
         "first5TailOverlay": {
-          "baseProjectedRuns": 5,
-          "adjustedProjectedRuns": 5,
-          "adjustedEdge": -0.5,
-          "marketExpression": "Under",
-          "shape": "balanced",
-          "tailScore": 29.1,
+          "baseProjectedRuns": 5.6,
+          "adjustedProjectedRuns": 8.5,
+          "adjustedEdge": 3,
+          "marketExpression": "Over",
+          "shape": "over-tail",
+          "tailScore": 67.8,
           "strandScore": 0,
           "forkScore": 0,
-          "tailLift": 0,
+          "tailLift": 2.9,
           "strandDrag": 0,
-          "notes": [],
+          "notes": [
+            "fat-tail run environment",
+            "carry/weather turns ordinary contact into extra-base risk",
+            "ENV1 HRForce 1.7",
+            "FIC HRForce 1.6"
+          ],
           "metrics": {
             "maxMistakeChaos": null,
             "maxRunClustering": null,
@@ -18052,18 +18563,34 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 11,
+            "totalFirst5ProjectedHits": 11.5,
             "weatherCarry": true,
             "weatherSuppress": false,
+            "envRunDelta": 0.6,
+            "envHitsDelta": 0,
+            "envHrDelta": 0.3,
+            "hrForce": 1.7,
+            "highHrForce": true,
+            "lowerWeatherCarry": false,
+            "ficHrForce": 1.6,
+            "ficHighHrForce": true,
+            "materialHrForce": true,
+            "extremeHrForce": true,
+            "carryMultiplier": 1.25,
+            "ficHighHrForceSharePct": 100,
+            "maxRp2BridgeStress": 38,
+            "maxRp2ReliefRuns": 1.4,
+            "rp2LateRunRisk": false,
+            "maxRepeatOpponentFirst5Tax": null,
             "visibilityRisk": null
           }
         },
         "projectedLateTotalRuns": 4,
         "derivedFirst5TotalLine": 5.5,
         "postedFirst5TotalLine": 5.5,
-        "runShareFirst5TotalLine": 5.3,
+        "runShareFirst5TotalLine": 6.7,
         "first5TotalLineSource": "posted",
-        "derivedLateTotalLine": 4,
+        "derivedLateTotalLine": 6,
         "bullpenExhaustionNote": "88°F | Wind 11 mph L-R | 0% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
         "weatherNote": "88°F | Wind 11 mph L-R | 0% precip | weather helps carry.",
         "sunVisibilityNote": ""
@@ -18072,28 +18599,40 @@
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 41.1,
-        "yesProbabilityPct": 91.1,
-        "noProbabilityPct": 8.9,
-        "awayRunProbabilityPct": 68.2,
+        "edge": 42,
+        "yesProbabilityPct": 92,
+        "noProbabilityPct": 8,
+        "awayRunProbabilityPct": 72,
         "homeRunProbabilityPct": 72,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 60,
         "homeOppPitcherAllowedRatePct": 60,
-        "awayProjectedRuns": 0.8,
+        "awayProjectedRuns": 0.9,
         "homeProjectedRuns": 1.2,
         "reasonStack": [
-          "Orioles top order is driving early pressure (78.3)",
-          "Padres starter has leaked 1st-inning runs in 60% of recent starts",
-          "Padres starter has real season 1st-inning damage (50% run games, 1/start)",
-          "Padres starter is underwater this year (-0.5 WAR)",
-          "Padres starter has slipped hard from last year (-1.8 WAR delta)"
+          "Orioles starter has leaked 1st-inning runs in 60% of recent starts",
+          "Orioles starter has real season 1st-inning damage (42% run games, 0.6/start)",
+          "ENV1 HRForce 1.7 raises YRFI carry",
+          "Orioles top order is driving early pressure (78.1)",
+          "Padres starter has leaked 1st-inning runs in 60% of recent starts"
         ],
-        "cautionStack": [],
-        "projectedRuns": 2,
+        "cautionStack": [
+          "Padres handedness splits are weak against the starter (18)",
+          "Padres top third carries weak split rows"
+        ],
+        "environmentAddendum": {
+          "hrForce": 1.7,
+          "highHrForce": true,
+          "maxProbabilityLiftPct": 8.2,
+          "maxProjectedRunsLift": 0.1,
+          "reasons": [
+            "ENV1 HRForce 1.7 raises YRFI carry"
+          ]
+        },
+        "projectedRuns": 2.1,
         "line": 0.5,
-        "summary": "YRFI with a 91% modeled chance of at least one first-inning run. Padres score 68.2% of the time and Orioles 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 92% modeled chance of at least one first-inning run. Padres score 72% of the time and Orioles 72% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.7 is embedded in the first-inning run probability."
       },
       "teamScripts": [
         {
@@ -18125,8 +18664,8 @@
           ],
           "underperformNote": "Gavin Sheets and Ty France carry the softer form or split fit into a balanced lane.",
           "overview": "Padres can lean on Fernando Tatis Jr., Samad Taylor, Will Wagner to drive early pressure against Shane Baz.",
-          "topThirdScore": 47.5,
-          "middleScore": 51.6,
+          "topThirdScore": 47.7,
+          "middleScore": 51.3,
           "depthScore": 68.2,
           "bullpenOverperformHitters": [],
           "winPath": [
@@ -18164,13 +18703,13 @@
           ],
           "underperformNote": "Samuel Basallo and Coby Mayo carry the softer form or split fit into a traffic-risk lane.",
           "overview": "Orioles can lean on Taylor Ward, Adley Rutschman, Pete Alonso to drive early pressure against Griffin Canning.",
-          "topThirdScore": 78.3,
+          "topThirdScore": 78.1,
           "middleScore": 51.1,
           "depthScore": 86.9,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Orioles own the cleaner full-game traffic script at 11.6 projected hits.",
-            "Orioles have the better starter-window lane with 6.5 projected first-five hits.",
+            "Orioles own the cleaner full-game traffic script at 11.9 projected hits.",
+            "Orioles have the better starter-window lane with 7.2 projected first-five hits.",
             "Orioles still hold the better bridge-and-finish script once the bullpens take over.",
             "Orioles also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
             "Orioles can lean on Taylor Ward, Adley Rutschman, Pete Alonso to drive early pressure against Griffin Canning.",
@@ -18186,7 +18725,7 @@
           {
             "label": "First 5",
             "edgeTeam": "Orioles",
-            "projection": "3.1 R",
+            "projection": "4.1 R",
             "note": "Orioles lean on Taylor Ward, Adley Rutschman to drive the early traffic lane against the listed starter."
           },
           {
@@ -18198,7 +18737,7 @@
           {
             "label": "Full game",
             "edgeTeam": "Orioles",
-            "projection": "11.6 H",
+            "projection": "11.9 H",
             "note": "Orioles finish with the stronger aggregate traffic path, anchored by Taylor Ward, Adley Rutschman."
           }
         ]
@@ -18260,10 +18799,54 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Padres @ Orioles",
+        "gameContextMatch": "team-code",
+        "rowCount": 14,
+        "averageHrForce": 1.6,
+        "maxHrForce": 1.6,
+        "highHrForceRows": 14,
+        "extremeHrForceRows": 0,
+        "highHrForceSharePct": 100,
+        "qualityAbPct": 30.8,
+        "hardHitPct": 8.4,
+        "matchupPassRows": 5,
+        "awayOffense": {
+          "label": "Padres hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "Orioles hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Padres",
-          "modelVersion": "MLB-RP2.2026-06-12.v2",
+          "modelVersion": "MLB-RP2.2026-06-12.v3",
           "projectedReliefRunsAllowed": 1.458,
           "projectedReliefOuts": 11.7,
           "projectedRelieversUsed": 3.67,
@@ -18281,7 +18864,7 @@
         },
         "home": {
           "teamName": "Orioles",
-          "modelVersion": "MLB-RP2.2026-06-12.v2",
+          "modelVersion": "MLB-RP2.2026-06-12.v3",
           "projectedReliefRunsAllowed": 1.717,
           "projectedReliefOuts": 10.43,
           "projectedRelieversUsed": 3.27,
@@ -18290,7 +18873,7 @@
           "fatigueScore": 34.3,
           "qualityScore": 58.7,
           "runRiskTier": "stable_bridge",
-          "topTwoSharePct": 44.7,
+          "topTwoSharePct": 44.8,
           "lead": {
             "pitcherName": "Anthony Nunez",
             "expectedOuts": 3.4,
@@ -18298,22 +18881,349 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "high-HRForce carry is active",
+          "handedness split adjustment is active"
+        ],
+        "environment": {
+          "hrForce": 1.7,
+          "envHrForce": 1.7,
+          "ficHrForce": 1.6,
+          "materialHrForce": true,
+          "extremeHrForce": true,
+          "carryMultiplier": 1.25,
+          "hitDelta": 1,
+          "runDelta": 1,
+          "conversionDelta": 0.032281,
+          "firstInningProbabilityLiftPct": 8.1,
+          "underFragilityRuns": 3,
+          "flags": [
+            "Material HRForce 1.7: pitcher damage and batter production lifted"
+          ],
+          "reasons": [
+            "HRForce 1.7 applies material carry to pitcher damage and batter production",
+            "weather/park carry is favorable for flight",
+            "FIC batter-vs-pitcher pockets show HRForce carry"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Padres",
+            "pitcherName": "Griffin Canning",
+            "gamesStarted": 8,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Traffic-risk righty",
+            "expectedInnings": 4.61,
+            "opponentHistory": {
+              "label": "opponent has hit this starter",
+              "source": "StatMuse vs opponent",
+              "starts": 5,
+              "innings": 24.7,
+              "projectedHitsDelta": 0.5,
+              "first5RunsDelta": 0.4,
+              "runConversionDelta": 0.01112,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": 0.1,
+              "repeatOpponentFirst5Tax": 0.1,
+              "lastOpponentStartSummary": "4/23/2024 | 5 IP | 3 R | 3 ER | 5 H",
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "opponent has hit this starter vs Orioles",
+              "traffic-risk starter type"
+            ]
+          },
+          {
+            "teamName": "Orioles",
+            "pitcherName": "Shane Baz",
+            "gamesStarted": 14,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Balanced righty",
+            "expectedInnings": 5.94,
+            "opponentHistory": {
+              "label": "starter has suppressed this opponent",
+              "source": "StatMuse vs opponent",
+              "starts": 2,
+              "innings": 12,
+              "projectedHitsDelta": -0.3,
+              "first5RunsDelta": -0.3,
+              "runConversionDelta": -0.00655272,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": -0.2,
+              "repeatOpponentFirst5Tax": -0.1,
+              "lastOpponentStartSummary": "4/25/2025 | 7 IP | 0 R | 0 ER | 4 H",
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "starter has suppressed this opponent vs Padres"
+            ]
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Padres",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 18,
+            "label": "weak handedness split lane",
+            "splitAvgAverage": 0.209,
+            "splitOpsAverage": 0.638,
+            "topSixSplitAvgAverage": 0.218,
+            "topSixSplitOpsAverage": 0.655,
+            "strongSplitCount": 1,
+            "weakSplitCount": 4,
+            "severeWeakSplitCount": 3,
+            "topSixStrongSplitCount": 1,
+            "topSixWeakSplitCount": 3,
+            "topThirdStrongSplitCount": 0,
+            "topThirdWeakSplitCount": 3,
+            "hitDelta": -0.6,
+            "runConversionDelta": -0.014,
+            "strongSplitBats": [
+              {
+                "name": "Gavin Sheets",
+                "slot": 5,
+                "bats": "L",
+                "plateAppearances": 178,
+                "avg": 0.237,
+                "ops": 0.825,
+                "seasonAvg": 0.228,
+                "seasonOps": 0.767,
+                "recentAvg": 0.1,
+                "recentOps": 0.3
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Freddy Fermin",
+                "slot": 9,
+                "bats": "R",
+                "plateAppearances": 106,
+                "avg": 0.121,
+                "ops": 0.398,
+                "seasonAvg": 0.154,
+                "seasonOps": 0.514,
+                "recentAvg": 0.357,
+                "recentOps": 1.429
+              },
+              {
+                "name": "Manny Machado",
+                "slot": 3,
+                "bats": "R",
+                "plateAppearances": 206,
+                "avg": 0.15,
+                "ops": 0.545,
+                "seasonAvg": 0.172,
+                "seasonOps": 0.595,
+                "recentAvg": 0.16,
+                "recentOps": 0.4
+              },
+              {
+                "name": "Jackson Merrill",
+                "slot": 2,
+                "bats": "L",
+                "plateAppearances": 198,
+                "avg": 0.191,
+                "ops": 0.569,
+                "seasonAvg": 0.206,
+                "seasonOps": 0.612,
+                "recentAvg": 0.2,
+                "recentOps": 0.551
+              },
+              {
+                "name": "Fernando Tatis Jr.",
+                "slot": 1,
+                "bats": "R",
+                "plateAppearances": 228,
+                "avg": 0.269,
+                "ops": 0.643,
+                "seasonAvg": 0.28,
+                "seasonOps": 0.693,
+                "recentAvg": 0.37,
+                "recentOps": 0.969
+              }
+            ],
+            "flags": [
+              "4 weak split bats vs R",
+              "top-six split drag",
+              "Gavin Sheets 0.825 OPS vs R",
+              "Freddy Fermin 0.398 OPS vs R",
+              "4 lineup bats carry weak split rows"
+            ]
+          },
+          {
+            "teamName": "Orioles",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 52.9,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.239,
+            "splitOpsAverage": 0.749,
+            "topSixSplitAvgAverage": 0.238,
+            "topSixSplitOpsAverage": 0.743,
+            "strongSplitCount": 4,
+            "weakSplitCount": 1,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 3,
+            "topSixWeakSplitCount": 1,
+            "topThirdStrongSplitCount": 1,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": 0.1,
+            "runConversionDelta": 0.0018374999999999993,
+            "strongSplitBats": [
+              {
+                "name": "Adley Rutschman",
+                "slot": 3,
+                "bats": "S",
+                "plateAppearances": 130,
+                "avg": 0.287,
+                "ops": 0.901,
+                "seasonAvg": 0.273,
+                "seasonOps": 0.847,
+                "recentAvg": 0.467,
+                "recentOps": 1.396
+              },
+              {
+                "name": "Samuel Basallo",
+                "slot": 5,
+                "bats": "L",
+                "plateAppearances": 154,
+                "avg": 0.263,
+                "ops": 0.849,
+                "seasonAvg": 0.257,
+                "seasonOps": 0.785,
+                "recentAvg": null,
+                "recentOps": null
+              },
+              {
+                "name": "Jackson Holliday",
+                "slot": 9,
+                "bats": "L",
+                "plateAppearances": 60,
+                "avg": 0.255,
+                "ops": 0.84,
+                "seasonAvg": 0.226,
+                "seasonOps": 0.739,
+                "recentAvg": 0.217,
+                "recentOps": 0.758
+              },
+              {
+                "name": "Pete Alonso",
+                "slot": 4,
+                "bats": "R",
+                "plateAppearances": 217,
+                "avg": 0.249,
+                "ops": 0.819,
+                "seasonAvg": 0.243,
+                "seasonOps": 0.775,
+                "recentAvg": 0.214,
+                "recentOps": 0.817
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Coby Mayo",
+                "slot": 6,
+                "bats": "R",
+                "plateAppearances": 135,
+                "avg": 0.148,
+                "ops": 0.46,
+                "seasonAvg": 0.197,
+                "seasonOps": 0.65,
+                "recentAvg": 0.15,
+                "recentOps": 0.64
+              }
+            ],
+            "flags": [
+              "4 strong split bats vs R",
+              "Adley Rutschman 0.901 OPS vs R",
+              "Samuel Basallo 0.849 OPS vs R",
+              "Coby Mayo 0.460 OPS vs R"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Padres",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "Orioles",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Padres",
+            "projectedReliefRunsAllowed": 1.5,
+            "adjustedProjectedReliefRunsAllowed": 1.2,
+            "projectedReliefOuts": 11.7,
+            "leverageAvailabilityScore": 57.9,
+            "leadAvailabilityScore": 62.8,
+            "bridgeStressScore": 30.2,
+            "runDelta": -0.3,
+            "hitDelta": -0.1,
+            "expectedEarlyBridge": true,
+            "flags": [
+              "RP2 available-pen runs 1.5 -> 1.2"
+            ]
+          },
+          {
+            "teamName": "Orioles",
+            "projectedReliefRunsAllowed": 1.7,
+            "adjustedProjectedReliefRunsAllowed": 1.4,
+            "projectedReliefOuts": 10.4,
+            "leverageAvailabilityScore": 65.7,
+            "leadAvailabilityScore": 89.7,
+            "bridgeStressScore": 38,
+            "runDelta": -0.2,
+            "hitDelta": 0,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 1.7 -> 1.4"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 3.1,
+          "home": 6.5
+        },
+        "projectedHitTotals": {
+          "away": 7.7,
+          "home": 11.9
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
         "selection": "Orioles",
         "opponent": "Padres",
-        "pickProjectedRuns": 5.5,
-        "opponentProjectedRuns": 3.5,
-        "projectedTotalRuns": 9,
-        "runDiff": 2,
-        "absoluteRunDiff": 2,
-        "runDiffSharePct": 22.2,
-        "confidence": 59,
-        "marketProbabilityPct": 54.1,
+        "pickProjectedRuns": 6.5,
+        "opponentProjectedRuns": 3.1,
+        "projectedTotalRuns": 9.6,
+        "runDiff": 3.4,
+        "absoluteRunDiff": 3.4,
+        "runDiffSharePct": 35.4,
+        "confidence": 54,
+        "marketProbabilityPct": 57.7,
         "grade": "Separated ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Orioles projects 2 runs better in a 9-run environment."
+        "note": "Orioles projects 3.4 runs better in a 9.6-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -18323,7 +19233,7 @@
           "slug": "early_pressure_side",
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-          "confidence": 64.4,
+          "confidence": 64.7,
           "reasons": [
             "The pick needs to cash the first traffic pocket.",
             "The best edge is timing, not late-game patience."
@@ -18367,10 +19277,10 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 4
+            "projectedHitEdge": 4.2
           }
         },
-        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 57.7/100. Main checks: 88°F | Wind 11 mph L-R | 0% precip | weather helps carry.",
+        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 57.8/100. Main checks: 88°F | Wind 11 mph L-R | 0% precip | weather helps carry.",
         "pickTeam": "Orioles",
         "opponentTeam": "Padres",
         "scores": {
@@ -18378,9 +19288,9 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
           "bullpenFlipScore": 72.9,
-          "starterControlScore": 67.2,
-          "marketContradictionScore": 14.9,
-          "realityGapScore": 57.7
+          "starterControlScore": 77.9,
+          "marketContradictionScore": 17.1,
+          "realityGapScore": 57.8
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -18394,9 +19304,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 35.3,
-              "pickScore": 35.3,
-              "opponentScore": 8.1
+              "gameScore": 35.9,
+              "pickScore": 35.9,
+              "opponentScore": 7.2
             },
             {
               "id": "chaos",
@@ -18444,7 +19354,7 @@
               "role": "pick",
               "team": "Orioles",
               "scores": {
-                "pressure": 35.3,
+                "pressure": 35.9,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -18452,7 +19362,7 @@
                 "flow": 100
               },
               "polygon": [
-                35.3,
+                35.9,
                 5,
                 0,
                 16,
@@ -18463,7 +19373,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 62.7,
+                "starterScore": 65.9,
                 "bullpenScore": 61.2,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18477,7 +19387,7 @@
               "role": "opponent",
               "team": "Padres",
               "scores": {
-                "pressure": 8.1,
+                "pressure": 7.2,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -18485,7 +19395,7 @@
                 "flow": 0
               },
               "polygon": [
-                8.1,
+                7.2,
                 5,
                 0,
                 16,
@@ -18496,7 +19406,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 45.1,
+                "starterScore": 40.2,
                 "bullpenScore": 67.7,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18511,7 +19421,7 @@
             "label": "Early-pressure side",
             "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 35.3,
+              "pressure": 35.9,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
@@ -18519,7 +19429,7 @@
               "flow": 100
             },
             "polygon": [
-              35.3,
+              35.9,
               44.8,
               8.5,
               24.4,
@@ -18601,12 +19511,12 @@
           "side": "Orioles is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Totals need chaos-gate respect; raw run projection is not enough when one-bad-inning or warm-carry risk is live.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 91.1% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 92% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 46.9,
+          "impactScore": 60.1,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -18643,12 +19553,12 @@
       "first5Moneyline": {
         "pickSide": "home",
         "pickTeam": "Orioles",
-        "awayProjectedRuns": 1.9,
-        "homeProjectedRuns": 3.1,
-        "awayLeadProbability": 21.9,
-        "homeLeadProbability": 62,
-        "pushProbability": 16.1,
-        "leadProbability": 62,
+        "awayProjectedRuns": 1.5,
+        "homeProjectedRuns": 4.1,
+        "awayLeadProbability": 8.6,
+        "homeLeadProbability": 81.6,
+        "pushProbability": 9.7,
+        "leadProbability": 81.6,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -18670,12 +19580,12 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 65,
-        "probability": 26.3,
+        "probability": 26.8,
         "expectedValue": 0.3,
         "statValueLabel": "0.31 exp HR",
         "sample": {
-          "seasonGames": 49,
-          "seasonPlateAppearances": 208,
+          "seasonGames": 50,
+          "seasonPlateAppearances": 209,
           "recentGames": 8,
           "recentPlateAppearances": 34,
           "statcastGames": 6,
@@ -18684,7 +19594,7 @@
         },
         "repeatability": {
           "careerPa": 2337,
-          "seasonPa": 208,
+          "seasonPa": 209,
           "powerIndex": 54.67,
           "contactRisk": 30.39,
           "roleStability": 100,
@@ -18694,15 +19604,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 78.3,
+            "confidenceScore": 78.2,
             "processScore": 18,
             "careerWeight": 0.1,
-            "identityDelta": 7,
+            "identityDelta": 6.8,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 208,
+            "seasonPa": 209,
             "careerPa": 2337
           },
           "canCarryTinySample": false,
@@ -18712,7 +19622,7 @@
         "recommendationTier": "Lean",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 3 carry | contact-stable profile | process improving; approach 78.3/100 | hard-hit / barrel trend is live",
+        "reason": "slot 3 carry | contact-stable profile | process improving; approach 78.2/100 | hard-hit / barrel trend is live",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
@@ -18729,7 +19639,7 @@
         "matchupNote": "+10.00 vs Griffin Canning",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".273 AVG | .848 OPS | 50 H | 8 HR | 8g: .467 AVG | 1.396 OPS | 14 H | 2 HR | vs RHP: .287 AVG | .901 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane"
+        "playerSummary": ".273 AVG | .847 OPS | 50 H | 8 HR | 8g: .467 AVG | 1.396 OPS | 14 H | 2 HR | vs RHP: .287 AVG | .901 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
         "id": "padres-orioles:624413:rbi",
@@ -18744,11 +19654,11 @@
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
         "confidence": 68,
-        "probability": 88.5,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.17 exp RBI",
+        "probability": 92.3,
+        "expectedValue": 2.6,
+        "statValueLabel": "2.56 exp RBI",
         "sample": {
-          "seasonGames": 70,
+          "seasonGames": 71,
           "seasonPlateAppearances": 303,
           "recentGames": 14,
           "recentPlateAppearances": 64,
@@ -18818,12 +19728,12 @@
         "propLabel": "Runs",
         "marketLabel": "Over 0.5 runs",
         "confidence": 72,
-        "probability": 89.2,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.22 exp runs",
+        "probability": 91.7,
+        "expectedValue": 2.5,
+        "statValueLabel": "2.49 exp runs",
         "sample": {
-          "seasonGames": 69,
-          "seasonPlateAppearances": 317,
+          "seasonGames": 70,
+          "seasonPlateAppearances": 318,
           "recentGames": 14,
           "recentPlateAppearances": 64,
           "statcastGames": 6,
@@ -18832,7 +19742,7 @@
         },
         "repeatability": {
           "careerPa": 3102,
-          "seasonPa": 317,
+          "seasonPa": 318,
           "powerIndex": 57.87,
           "contactRisk": 46.11,
           "roleStability": 100,
@@ -18845,12 +19755,12 @@
             "confidenceScore": 49.1,
             "processScore": 7,
             "careerWeight": 0.1,
-            "identityDelta": -11.2,
+            "identityDelta": -11.3,
             "tbDelta": -0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "baseline approach",
-            "seasonPa": 317,
+            "seasonPa": 318,
             "careerPa": 3102
           },
           "canCarryTinySample": false,
@@ -18877,7 +19787,7 @@
         "matchupNote": "+10.00 vs Griffin Canning",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".263 AVG | .773 OPS | 66 H | 3 HR | 14g: .292 AVG | .885 OPS | 14 H | 2 HR | vs RHP: .262 AVG | .767 OPS | 2 HR | career 3102 PA | .764 OPS | 115 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +3.7 | +10.0 matchup grade in a traffic-risk lane"
+        "playerSummary": ".263 AVG | .774 OPS | 66 H | 3 HR | 14g: .292 AVG | .885 OPS | 14 H | 2 HR | vs RHP: .262 AVG | .767 OPS | 2 HR | career 3102 PA | .764 OPS | 115 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +3.7 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
         "id": "padres-orioles:668939:hitRunRbi",
@@ -18892,12 +19802,12 @@
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 96.7,
-        "expectedValue": 5.3,
-        "statValueLabel": "2.36 H · 1.34 R · 1.55 RBI · 5.25 total",
+        "probability": 97.9,
+        "expectedValue": 5.8,
+        "statValueLabel": "2.43 H · 1.51 R · 1.83 RBI · 5.76 total",
         "sample": {
-          "seasonGames": 49,
-          "seasonPlateAppearances": 208,
+          "seasonGames": 50,
+          "seasonPlateAppearances": 209,
           "recentGames": 8,
           "recentPlateAppearances": 34,
           "statcastGames": 6,
@@ -18906,7 +19816,7 @@
         },
         "repeatability": {
           "careerPa": 2337,
-          "seasonPa": 208,
+          "seasonPa": 209,
           "powerIndex": 54.67,
           "contactRisk": 30.39,
           "roleStability": 100,
@@ -18916,15 +19826,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 78.3,
+            "confidenceScore": 78.2,
             "processScore": 18,
             "careerWeight": 0.1,
-            "identityDelta": 7,
+            "identityDelta": 6.8,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 208,
+            "seasonPa": 209,
             "careerPa": 2337
           },
           "canCarryTinySample": false,
@@ -18952,7 +19862,7 @@
         "matchupNote": "+10.00 vs Griffin Canning",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".273 AVG | .848 OPS | 50 H | 8 HR | 8g: .467 AVG | 1.396 OPS | 14 H | 2 HR | vs RHP: .287 AVG | .901 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane"
+        "playerSummary": ".273 AVG | .847 OPS | 50 H | 8 HR | 8g: .467 AVG | 1.396 OPS | 14 H | 2 HR | vs RHP: .287 AVG | .901 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
         "id": "padres-orioles:624413:totalBases",
@@ -18971,7 +19881,7 @@
         "expectedValue": 2.2,
         "statValueLabel": "2.15 exp TB",
         "sample": {
-          "seasonGames": 70,
+          "seasonGames": 71,
           "seasonPlateAppearances": 303,
           "recentGames": 14,
           "recentPlateAppearances": 64,
@@ -19042,13 +19952,13 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 80,
-        "probability": 68.3,
+        "confidence": 81,
+        "probability": 69.8,
         "expectedValue": 2.4,
-        "statValueLabel": "2.36 exp hits",
+        "statValueLabel": "2.43 exp hits",
         "sample": {
-          "seasonGames": 49,
-          "seasonPlateAppearances": 208,
+          "seasonGames": 50,
+          "seasonPlateAppearances": 209,
           "recentGames": 8,
           "recentPlateAppearances": 34,
           "statcastGames": 6,
@@ -19057,7 +19967,7 @@
         },
         "repeatability": {
           "careerPa": 2337,
-          "seasonPa": 208,
+          "seasonPa": 209,
           "powerIndex": 54.67,
           "contactRisk": 30.39,
           "roleStability": 100,
@@ -19067,15 +19977,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 78.3,
+            "confidenceScore": 78.2,
             "processScore": 18,
             "careerWeight": 0.1,
-            "identityDelta": 7,
+            "identityDelta": 6.8,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 208,
+            "seasonPa": 209,
             "careerPa": 2337
           },
           "canCarryTinySample": false,
@@ -19102,7 +20012,7 @@
         "matchupNote": "+10.00 vs Griffin Canning",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".273 AVG | .848 OPS | 50 H | 8 HR | 8g: .467 AVG | 1.396 OPS | 14 H | 2 HR | vs RHP: .287 AVG | .901 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane"
+        "playerSummary": ".273 AVG | .847 OPS | 50 H | 8 HR | 8g: .467 AVG | 1.396 OPS | 14 H | 2 HR | vs RHP: .287 AVG | .901 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
         "id": "padres-orioles:621493:walks",
@@ -19117,12 +20027,12 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 80,
-        "probability": 80,
-        "expectedValue": 1.6,
-        "statValueLabel": "1.61 exp walks",
+        "probability": 81.7,
+        "expectedValue": 1.7,
+        "statValueLabel": "1.70 exp walks",
         "sample": {
-          "seasonGames": 69,
-          "seasonPlateAppearances": 317,
+          "seasonGames": 70,
+          "seasonPlateAppearances": 318,
           "recentGames": 14,
           "recentPlateAppearances": 64,
           "statcastGames": 6,
@@ -19131,7 +20041,7 @@
         },
         "repeatability": {
           "careerPa": 3102,
-          "seasonPa": 317,
+          "seasonPa": 318,
           "powerIndex": 57.87,
           "contactRisk": 46.11,
           "roleStability": 100,
@@ -19144,12 +20054,12 @@
             "confidenceScore": 49.1,
             "processScore": 7,
             "careerWeight": 0.1,
-            "identityDelta": -11.2,
+            "identityDelta": -11.3,
             "tbDelta": -0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "baseline approach",
-            "seasonPa": 317,
+            "seasonPa": 318,
             "careerPa": 3102
           },
           "canCarryTinySample": false,
@@ -19176,7 +20086,7 @@
         "matchupNote": "+10.00 vs Griffin Canning",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".263 AVG | .773 OPS | 66 H | 3 HR | 14g: .292 AVG | .885 OPS | 14 H | 2 HR | vs RHP: .262 AVG | .767 OPS | 2 HR | career 3102 PA | .764 OPS | 115 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +3.7 | +10.0 matchup grade in a traffic-risk lane"
+        "playerSummary": ".263 AVG | .774 OPS | 66 H | 3 HR | 14g: .292 AVG | .885 OPS | 14 H | 2 HR | vs RHP: .262 AVG | .767 OPS | 2 HR | career 3102 PA | .764 OPS | 115 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +3.7 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
         "id": "padres-orioles:668939:singles",
@@ -19191,12 +20101,12 @@
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
         "confidence": 80,
-        "probability": 70.2,
+        "probability": 71.3,
         "expectedValue": 1.2,
-        "statValueLabel": "1.21 exp singles",
+        "statValueLabel": "1.25 exp singles",
         "sample": {
-          "seasonGames": 49,
-          "seasonPlateAppearances": 208,
+          "seasonGames": 50,
+          "seasonPlateAppearances": 209,
           "recentGames": 8,
           "recentPlateAppearances": 34,
           "statcastGames": 6,
@@ -19205,7 +20115,7 @@
         },
         "repeatability": {
           "careerPa": 2337,
-          "seasonPa": 208,
+          "seasonPa": 209,
           "powerIndex": 54.67,
           "contactRisk": 30.39,
           "roleStability": 100,
@@ -19215,15 +20125,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 78.3,
+            "confidenceScore": 78.2,
             "processScore": 18,
             "careerWeight": 0.1,
-            "identityDelta": 7,
+            "identityDelta": 6.8,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 208,
+            "seasonPa": 209,
             "careerPa": 2337
           },
           "canCarryTinySample": false,
@@ -19251,7 +20161,7 @@
         "matchupNote": "+10.00 vs Griffin Canning",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".273 AVG | .848 OPS | 50 H | 8 HR | 8g: .467 AVG | 1.396 OPS | 14 H | 2 HR | vs RHP: .287 AVG | .901 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane"
+        "playerSummary": ".273 AVG | .847 OPS | 50 H | 8 HR | 8g: .467 AVG | 1.396 OPS | 14 H | 2 HR | vs RHP: .287 AVG | .901 OPS | 5 HR | career 2337 PA | .759 OPS | 68 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Changeup 27% / 4-Seam Fastball 25% / Slider 23% | fit +5.5 | +10.0 matchup grade in a traffic-risk lane"
       }
     ],
     "byType": {
@@ -19262,7 +20172,7 @@
       "runs": [],
       "hitRunRbi": []
     },
-    "candidateCount": 63,
+    "candidateCount": 64,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

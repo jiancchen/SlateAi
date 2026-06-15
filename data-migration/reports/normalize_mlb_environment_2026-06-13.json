@@ -1,0 +1,17 @@
+{
+  "date": "2026-06-13",
+  "dry_run": false,
+  "family": "mlb_environment",
+  "generated_at": "2026-06-14T16:16:09.553169+00:00",
+  "inserted": {},
+  "ok": true,
+  "parsed_rows": 0,
+  "parser_module": "pipeline/sources/mlb/normalization/environment.py",
+  "script": "data-migration/scripts/normalize_mlb_environment.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 0,
+  "source_tables": {},
+  "targets": {},
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}

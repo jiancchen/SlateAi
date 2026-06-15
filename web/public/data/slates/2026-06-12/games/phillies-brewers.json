@@ -15,12 +15,12 @@
     {
       "side": "Away",
       "name": "Phillies",
-      "detail": "Tanner Banks (LHP) | 0-3 | 6.08 ERA | 27 SO | 1.90 WHIP | 23.2 IP"
+      "detail": "Tanner Banks (LHP) | 0-4 | 6.20 ERA | 29 SO | 1.95 WHIP | 24.2 IP"
     },
     {
       "side": "Home",
       "name": "Brewers",
-      "detail": "Jacob Misiorowski (RHP) | 7-2 | 1.50 ERA | 116 SO | 0.81 WHIP | 78.0 IP"
+      "detail": "Jacob Misiorowski (RHP) | 8-2 | 1.34 ERA | 131 SO | 0.74 WHIP | 87.0 IP"
     }
   ],
   "summary": "Phillies @ Brewers with Tanner Banks against Jacob Misiorowski.",
@@ -35,10 +35,10 @@
       "divisionLeader": false,
       "divisionRank": "2",
       "gamesBack": "8.0",
-      "losses": 31,
-      "runDifferential": -14,
-      "streakCode": "W1",
-      "winningPercentage": ".544",
+      "losses": 32,
+      "runDifferential": -20,
+      "streakCode": "L1",
+      "winningPercentage": ".536",
       "wins": 37
     },
     "home": {
@@ -46,10 +46,10 @@
       "divisionRank": "1",
       "gamesBack": "-",
       "losses": 25,
-      "runDifferential": 103,
-      "streakCode": "L2",
-      "winningPercentage": ".621",
-      "wins": 41
+      "runDifferential": 109,
+      "streakCode": "W1",
+      "winningPercentage": ".627",
+      "wins": 42
     }
   },
   "parkContext": {
@@ -133,6 +133,156 @@
       "Local first pitch 6:40 PM CDT is before the 20:00 late-light threshold.",
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
+  },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Phillies @ Brewers",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "PHI",
+    "homeTeamCode": "MIL",
+    "label": "Phillies @ Brewers",
+    "sourceStatus": "warehouse",
+    "rowCount": 6,
+    "pitcherName": "J. Misiorowski",
+    "gameContexts": [
+      "@ 12 PHI MIL"
+    ],
+    "averageHrForce": 0,
+    "maxHrForce": null,
+    "highHrForceRows": 0,
+    "extremeHrForceRows": 0,
+    "highHrForceSharePct": 0,
+    "qualityAbPct": 52.8,
+    "hardHitPct": 36.2,
+    "matchupPassRows": 0,
+    "topRows": [
+      {
+        "playerName": "T. Turner",
+        "pitcherName": "J. Misiorowski",
+        "position": "SS",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": null,
+        "qualityAbPct": 67,
+        "hardHitPct": 67,
+        "recentOps": 0.638,
+        "bvpAtBats": 3,
+        "bvpAvg": 0.333,
+        "bvpOps": 1.333,
+        "matchupPass": false
+      },
+      {
+        "playerName": "B. Marsh",
+        "pitcherName": "J. Misiorowski",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": null,
+        "qualityAbPct": 50,
+        "hardHitPct": 50,
+        "recentOps": 1.048,
+        "bvpAtBats": 2,
+        "bvpAvg": 0.5,
+        "bvpOps": 1,
+        "matchupPass": false
+      },
+      {
+        "playerName": "B. Stott",
+        "pitcherName": "J. Misiorowski",
+        "position": "2B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": null,
+        "qualityAbPct": 50,
+        "hardHitPct": 50,
+        "recentOps": 0.947,
+        "bvpAtBats": 2,
+        "bvpAvg": 0.5,
+        "bvpOps": 1,
+        "matchupPass": false
+      },
+      {
+        "playerName": "J. Realmuto",
+        "pitcherName": "J. Misiorowski",
+        "position": "C",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": null,
+        "qualityAbPct": 50,
+        "hardHitPct": 50,
+        "recentOps": 0.313,
+        "bvpAtBats": 2,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      },
+      {
+        "playerName": "B. Harper",
+        "pitcherName": "J. Misiorowski",
+        "position": "1B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": null,
+        "qualityAbPct": 100,
+        "hardHitPct": 0,
+        "recentOps": 1.043,
+        "bvpAtBats": 2,
+        "bvpAvg": 1,
+        "bvpOps": 3.5,
+        "matchupPass": false
+      },
+      {
+        "playerName": "K. Schwarber",
+        "pitcherName": "J. Misiorowski",
+        "position": "DH",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": null,
+        "qualityAbPct": 0,
+        "hardHitPct": 0,
+        "recentOps": 0.649,
+        "bvpAtBats": 2,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      }
+    ],
+    "awayOffense": {
+      "label": "Phillies hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "Brewers hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
   },
   "offenseContext": {
     "away": {
@@ -3082,15 +3232,15 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 49.5,
-          "noRunProbabilityPct": 50.5,
-          "awayRunProbabilityPct": 7.4,
-          "homeRunProbabilityPct": 45.5,
+          "runProbabilityPct": 47.5,
+          "noRunProbabilityPct": 52.5,
+          "awayRunProbabilityPct": 6.9,
+          "homeRunProbabilityPct": 43.6,
           "lean": "No run",
           "strength": "thin",
           "sampleHalves": 134,
-          "caution": "",
-          "reason": "NRFI with a 50% modeled chance that the first inning stays scoreless. Phillies score 7.4% of the time and Brewers 45.5% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "caution": "Phillies top third has multiple strong split bats",
+          "reason": "NRFI with a 53% modeled chance that the first inning stays scoreless. Phillies score 6.9% of the time and Brewers 43.6% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
           "sourceModel": "M2 first-inning"
         },
         {
@@ -3104,7 +3254,7 @@
           "strength": "m2-baseline",
           "sampleHalves": 134,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 3.9 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Phillies F5 runs 1.5; Brewers F5 runs 2.5; Jacob Misiorowski: HA 3.5, ER 1.5, win yes -105; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 3.8 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Phillies F5 runs 1.5; Brewers F5 runs 2.5; Jacob Misiorowski: HA 3.5, ER 1.5, win yes -105; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -3118,7 +3268,7 @@
           "strength": "m2-baseline",
           "sampleHalves": 134,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 3.9 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Phillies F5 runs 1.5; Brewers F5 runs 2.5; Jacob Misiorowski: HA 3.5, ER 1.5, win yes -105; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 3.8 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Phillies F5 runs 1.5; Brewers F5 runs 2.5; Jacob Misiorowski: HA 3.5, ER 1.5, win yes -105; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -3132,7 +3282,7 @@
           "strength": "m2-baseline",
           "sampleHalves": 134,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 3.9 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Phillies F5 runs 1.5; Brewers F5 runs 2.5; Jacob Misiorowski: HA 3.5, ER 1.5, win yes -105; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 3.8 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Phillies F5 runs 1.5; Brewers F5 runs 2.5; Jacob Misiorowski: HA 3.5, ER 1.5, win yes -105; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -3146,7 +3296,7 @@
           "strength": "m2-baseline",
           "sampleHalves": 134,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 3.9 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Phillies F5 runs 1.5; Brewers F5 runs 2.5; Jacob Misiorowski: HA 3.5, ER 1.5, win yes -105; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 3.8 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Phillies F5 runs 1.5; Brewers F5 runs 2.5; Jacob Misiorowski: HA 3.5, ER 1.5, win yes -105; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -7312,15 +7462,15 @@
       "fullName": "Tanner Banks",
       "pitchHand": "L",
       "wins": 0,
-      "losses": 3,
-      "era": "6.08",
-      "strikeOuts": 27,
-      "inningsPitched": "23.2",
-      "hitsAllowed": 34,
-      "walks": 11,
+      "losses": 4,
+      "era": "6.20",
+      "strikeOuts": 29,
+      "inningsPitched": "24.2",
+      "hitsAllowed": 35,
+      "walks": 13,
       "homeRunsAllowed": 1,
-      "whip": "1.90",
-      "gamesStarted": 0,
+      "whip": "1.95",
+      "gamesStarted": 1,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 621383,
@@ -12908,8 +13058,8 @@
       "usageContext": {
         "status": "warehouse-gap",
         "label": "Warehouse sample incomplete",
-        "note": "The season line shows 23.2 MLB innings, but only 0 logged starts cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
-        "expectedInnings": 4.6,
+        "note": "The season line shows 24.2 MLB innings, but only 1 logged start cleared the warehouse on this pass, so trust the starter lane more than the thin rolling sample.",
+        "expectedInnings": 5.2,
         "daysSinceLastStart": null,
         "startsLoaded": 0,
         "shortLeashRisk": 0,
@@ -12920,23 +13070,23 @@
         "fivePlusInningRate": null,
         "sixPlusInningRate": null,
         "ninetyPitchRate": null,
-        "workloadLabel": "Short leash"
+        "workloadLabel": "5-inning lane"
       }
     },
     "home": {
       "id": 694819,
       "fullName": "Jacob Misiorowski",
       "pitchHand": "R",
-      "wins": 7,
+      "wins": 8,
       "losses": 2,
-      "era": "1.50",
-      "strikeOuts": 116,
-      "inningsPitched": "78.0",
-      "hitsAllowed": 41,
+      "era": "1.34",
+      "strikeOuts": 131,
+      "inningsPitched": "87.0",
+      "hitsAllowed": 42,
       "walks": 22,
       "homeRunsAllowed": 4,
-      "whip": "0.81",
-      "gamesStarted": 13,
+      "whip": "0.74",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 694819,
@@ -18303,7 +18453,7 @@
       "index": 0,
       "role": "Away",
       "name": "Phillies",
-      "detail": "Tanner Banks (LHP) | 0-3 | 6.08 ERA | 27 SO | 1.90 WHIP | 23.2 IP",
+      "detail": "Tanner Banks (LHP) | 0-4 | 6.20 ERA | 29 SO | 1.95 WHIP | 24.2 IP",
       "americanOdds": 209,
       "americanLabel": "+209",
       "decimalOdds": 3.09,
@@ -18315,7 +18465,7 @@
       "index": 1,
       "role": "Home",
       "name": "Brewers",
-      "detail": "Jacob Misiorowski (RHP) | 7-2 | 1.50 ERA | 116 SO | 0.81 WHIP | 78.0 IP",
+      "detail": "Jacob Misiorowski (RHP) | 8-2 | 1.34 ERA | 131 SO | 0.74 WHIP | 87.0 IP",
       "americanOdds": -259,
       "americanLabel": "-259",
       "decimalOdds": 1.3861003861003862,
@@ -18333,7 +18483,7 @@
         "index": 0,
         "role": "Away",
         "name": "Phillies",
-        "detail": "Tanner Banks (LHP) | 0-3 | 6.08 ERA | 27 SO | 1.90 WHIP | 23.2 IP",
+        "detail": "Tanner Banks (LHP) | 0-4 | 6.20 ERA | 29 SO | 1.95 WHIP | 24.2 IP",
         "americanOdds": 209,
         "americanLabel": "+209",
         "decimalOdds": 3.09,
@@ -18345,7 +18495,7 @@
         "index": 1,
         "role": "Home",
         "name": "Brewers",
-        "detail": "Jacob Misiorowski (RHP) | 7-2 | 1.50 ERA | 116 SO | 0.81 WHIP | 78.0 IP",
+        "detail": "Jacob Misiorowski (RHP) | 8-2 | 1.34 ERA | 131 SO | 0.74 WHIP | 87.0 IP",
         "americanOdds": -259,
         "americanLabel": "-259",
         "decimalOdds": 1.3861003861003862,
@@ -18362,7 +18512,7 @@
       "index": 1,
       "role": "Home",
       "name": "Brewers",
-      "detail": "Jacob Misiorowski (RHP) | 7-2 | 1.50 ERA | 116 SO | 0.81 WHIP | 78.0 IP",
+      "detail": "Jacob Misiorowski (RHP) | 8-2 | 1.34 ERA | 131 SO | 0.74 WHIP | 87.0 IP",
       "americanOdds": -259,
       "americanLabel": "-259",
       "decimalOdds": 1.3861003861003862,
@@ -18374,26 +18524,33 @@
       "index": 0,
       "role": "Away",
       "name": "Phillies",
-      "detail": "Tanner Banks (LHP) | 0-3 | 6.08 ERA | 27 SO | 1.90 WHIP | 23.2 IP",
+      "detail": "Tanner Banks (LHP) | 0-4 | 6.20 ERA | 29 SO | 1.95 WHIP | 24.2 IP",
       "americanOdds": 209,
       "americanLabel": "+209",
       "decimalOdds": 3.09,
       "impliedProbability": 0.32362459546925565,
       "impliedProbabilityLabel": "32.4%"
     },
-    "lean": "Model pick: Brewers on market price and starter era.",
-    "rationale": "Market price: Brewers (69.0% no-vig) vs Phillies (31.0% no-vig)",
-    "confidence": 88,
-    "volatility": 57,
-    "recommendationScore": 67,
+    "lean": "Model pick: Brewers on starter era and market price.",
+    "rationale": "Starter ERA: Brewers (1.34 ERA) vs Phillies (6.20 ERA)",
+    "confidence": 89,
+    "volatility": 56,
+    "recommendationScore": 68,
     "tier": "Strong",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 24.7,
-    "modelEdgeLabel": "24.7-point model edge",
+    "modelEdge": 25.5,
+    "modelEdgeLabel": "25.5-point model edge",
     "marketProbability": 0.6903330429307089,
     "marketProbabilityLabel": "69.0%",
     "inputs": [
+      {
+        "label": "Starter ERA",
+        "summary": "Starter ERA: Brewers (1.34 ERA) vs Phillies (6.20 ERA)",
+        "source": "Listed probable starters",
+        "margin": 43.7,
+        "weight": 0.23
+      },
       {
         "label": "Market price",
         "summary": "Market price: Brewers (69.0% no-vig) vs Phillies (31.0% no-vig)",
@@ -18402,17 +18559,10 @@
         "weight": 0.26
       },
       {
-        "label": "Starter ERA",
-        "summary": "Starter ERA: Brewers (1.50 ERA) vs Phillies (6.08 ERA)",
-        "source": "Listed probable starters",
-        "margin": 41.2,
-        "weight": 0.23
-      },
-      {
         "label": "Starter record",
-        "summary": "Starter record: Brewers (7-2) vs Phillies (0-3)",
+        "summary": "Starter record: Brewers (8-2) vs Phillies (0-4)",
         "source": "Listed probable starters",
-        "margin": 41.8,
+        "margin": 40.8,
         "weight": 0.16
       }
     ],
@@ -18428,6 +18578,10 @@
       },
       {
         "label": "One lineup carries real platoon pressure versus the listed starter hand",
+        "delta": 3
+      },
+      {
+        "label": "Handedness split rows are moving the offensive shape",
         "delta": 3
       },
       {
@@ -18447,10 +18601,6 @@
         "delta": 4
       },
       {
-        "label": "Favorite enters on a live losing streak",
-        "delta": 4
-      },
-      {
         "label": "American Family Field suppresses run scoring (94 runs factor)",
         "delta": -4
       },
@@ -18460,7 +18610,7 @@
       }
     ],
     "pickReasons": [
-      "Brewers own the cleaner full-game traffic script at 9.9 projected hits.",
+      "Brewers own the cleaner full-game traffic script at 9.6 projected hits.",
       "Brewers have the better starter-window lane with 5.9 projected first-five hits.",
       "Brewers still hold the better bridge-and-finish script once the bullpens take over.",
       "Brewers can lean on Jake Bauers, Andrew Vaughn, Jackson Chourio to drive early pressure against Tanner Banks."
@@ -18474,8 +18624,8 @@
       "oppBullpenScore": 64.4,
       "pickBullpenChainScore": 78.5,
       "oppBullpenChainScore": 81.4,
-      "pickStarterScore": 79.1,
-      "oppStarterScore": 44.5,
+      "pickStarterScore": 79.9,
+      "oppStarterScore": 45,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -18595,10 +18745,10 @@
           {
             "id": "pressure",
             "label": "Pressure",
-            "score": 38.2
+            "score": 38.4
           }
         ],
-        "rfImpactScore": 24.5
+        "rfImpactScore": 26.7
       }
     },
     "gameShape": {
@@ -18664,8 +18814,8 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 40,
         "bullpenFlipScore": 22,
-        "starterControlScore": 82.8,
-        "marketContradictionScore": 19.1,
+        "starterControlScore": 83,
+        "marketContradictionScore": 19.4,
         "realityGapScore": 33.5
       },
       "radar": {
@@ -18680,9 +18830,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 38.2,
-            "pickScore": 38.2,
-            "opponentScore": 8
+            "gameScore": 38.4,
+            "pickScore": 38.4,
+            "opponentScore": 8.1
           },
           {
             "id": "chaos",
@@ -18730,7 +18880,7 @@
             "role": "pick",
             "team": "Brewers",
             "scores": {
-              "pressure": 38.2,
+              "pressure": 38.4,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
@@ -18738,7 +18888,7 @@
               "flow": 75
             },
             "polygon": [
-              38.2,
+              38.4,
               0,
               0,
               0,
@@ -18749,7 +18899,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 79.1,
+              "starterScore": 79.9,
               "bullpenScore": 64.4,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18763,7 +18913,7 @@
             "role": "opponent",
             "team": "Phillies",
             "scores": {
-              "pressure": 8,
+              "pressure": 8.1,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
@@ -18771,7 +18921,7 @@
               "flow": 25
             },
             "polygon": [
-              8,
+              8.1,
               0,
               0,
               0,
@@ -18782,7 +18932,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 44.5,
+              "starterScore": 45,
               "bullpenScore": 64.4,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18797,7 +18947,7 @@
           "label": "Favorite conversion trap",
           "bestExpression": "No taxed ML; require early conversion or better live price",
           "scores": {
-            "pressure": 38.2,
+            "pressure": 38.4,
             "chaos": 38.8,
             "freeze": 8.5,
             "air": 0,
@@ -18805,7 +18955,7 @@
             "flow": 60
           },
           "polygon": [
-            38.2,
+            38.4,
             38.8,
             8.5,
             0,
@@ -18826,7 +18976,7 @@
             {
               "id": "pressure",
               "label": "Pressure",
-              "score": 38.2
+              "score": 38.4
             }
           ]
         }
@@ -18887,12 +19037,12 @@
         "side": "Brewers is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "NRFI is the timing lane to compare against the side; modeled chance 49.5% YRFI."
+        "firstInning": "NRFI is the timing lane to compare against the side; modeled chance 47.5% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 24.5,
+        "impactScore": 26.7,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -18920,25 +19070,25 @@
           }
         },
         "trustedUse": "Use RF as a nonlinear totals/game-shape check first. Do not let it pick ML/F5 by itself yet.",
-        "totalsRead": "RF totals baseline has little to add when the line and projection are nearly equal.",
+        "totalsRead": "RF totals baseline can be used as a second check on the posted total.",
         "moneylineRead": "RF moneyline history is not deployable; it can only flag disagreement for review.",
         "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
         "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 5.7,
-      "homeProjectedHits": 9.9,
-      "awayHitEfficiencyPct": 16.5,
-      "homeHitEfficiencyPct": 28.9,
+      "awayProjectedHits": 5.4,
+      "homeProjectedHits": 9.6,
+      "awayHitEfficiencyPct": 15.5,
+      "homeHitEfficiencyPct": 27.9,
       "awayFirst5ProjectedHits": 3,
       "homeFirst5ProjectedHits": 5.9,
-      "awayFirst5HitEfficiencyPct": 15.8,
-      "homeFirst5HitEfficiencyPct": 31.2,
+      "awayFirst5HitEfficiencyPct": 15.5,
+      "homeFirst5HitEfficiencyPct": 31,
       "awayLateProjectedHits": 2.6,
-      "homeLateProjectedHits": 4,
+      "homeLateProjectedHits": 3.5,
       "awayLateHitEfficiencyPct": 16.9,
-      "homeLateHitEfficiencyPct": 26.4,
+      "homeLateHitEfficiencyPct": 23.2,
       "awayBullpenChainScore": 81.4,
       "homeBullpenChainScore": 78.5,
       "edgeTeam": "Brewers",
@@ -18946,7 +19096,7 @@
       "first5EdgeTeam": "Brewers",
       "first5EdgeHits": 2.9,
       "lateEdgeTeam": "Brewers",
-      "lateEdgeHits": 1.4,
+      "lateEdgeHits": 0.9,
       "bridgeEdgeTeam": "Phillies",
       "bridgeEdgeScore": 2.9,
       "awayLikelyRelievers": [
@@ -19055,30 +19205,33 @@
       "homeBullpenExhaustionLabel": "fresh",
       "awayPitcherType": "Volatile bat-misser",
       "homePitcherType": "Power righty",
-      "awayStarterHoldConfidence": 30.5,
-      "homeStarterHoldConfidence": 68.4,
+      "awayStarterHoldConfidence": 37.6,
+      "homeStarterHoldConfidence": 71.4,
       "awayProjectedRuns": 2.3,
-      "homeProjectedRuns": 4.6,
+      "homeProjectedRuns": 4.2,
       "awayFirst5ProjectedRuns": 1.2,
-      "homeFirst5ProjectedRuns": 2.7,
+      "homeFirst5ProjectedRuns": 2.6,
       "awayLateProjectedRuns": 1.1,
-      "homeLateProjectedRuns": 1.9,
+      "homeLateProjectedRuns": 1.6,
       "postedTotal": 7.5,
       "totals": {
         "fullGame": {
           "lean": "Under",
-          "edge": -0.6,
-          "strength": "Lean",
+          "edge": -1,
+          "strength": "Clear",
           "label": "Under 7.5",
-          "summary": "Under lean with a 0.6-run edge against 7.5.",
+          "summary": "Under lean with a 1.0-run edge against 7.5.",
           "chaosGate": {
             "phase": "full",
-            "overChaosScore": 1,
+            "overChaosScore": 2,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
-            "notes": [],
+            "notes": [
+              "FIC matchup contact carry"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -19088,24 +19241,44 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": false,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": -0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": 0,
+              "hrForce": 0,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 0,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 23.7,
+              "maxRp2ReliefRuns": 1.7,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
         "first5": {
           "lean": "Under",
-          "edge": -0.6,
-          "strength": "Lean",
+          "edge": -0.7,
+          "strength": "Clear",
           "label": "Under 4.5",
-          "summary": "Under lean with a 0.6-run edge against 4.5.",
+          "summary": "Under lean with a 0.7-run edge against 4.5.",
           "chaosGate": {
             "phase": "first5",
-            "overChaosScore": 1,
+            "overChaosScore": 2,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
-            "notes": [],
+            "notes": [
+              "FIC matchup contact carry"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -19115,16 +19288,33 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": false,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": -0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": 0,
+              "hrForce": 0,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 0,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 23.7,
+              "maxRp2ReliefRuns": 1.7,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 3.9,
-            "adjustedProjectedRuns": 3.9,
-            "adjustedEdge": -0.6,
+            "baseProjectedRuns": 3.8,
+            "adjustedProjectedRuns": 3.8,
+            "adjustedEdge": -0.7,
             "marketExpression": "Under",
             "shape": "balanced",
-            "tailScore": 3.8,
+            "tailScore": 7.8,
             "strandScore": 0,
             "forkScore": 0,
             "tailLift": 0,
@@ -19141,24 +19331,43 @@
               "totalFirst5ProjectedHits": 8.9,
               "weatherCarry": false,
               "weatherSuppress": false,
+              "envRunDelta": -0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": 0,
+              "hrForce": 0,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 0,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 23.7,
+              "maxRp2ReliefRuns": 1.7,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": null,
               "visibilityRisk": null
             }
           }
         },
         "late": {
           "lean": "Pass",
-          "edge": 0,
+          "edge": -0.3,
           "strength": "Thin",
           "label": "Hold 3",
-          "summary": "Model projection 3 is essentially on the posted 3.",
+          "summary": "Model projection 2.7 is essentially on the posted 3.",
           "chaosGate": {
             "phase": "late",
-            "overChaosScore": 1,
+            "overChaosScore": 2,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
-            "notes": [],
+            "notes": [
+              "FIC matchup contact carry"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -19168,20 +19377,37 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": false,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": -0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": 0,
+              "hrForce": 0,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 0,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 23.7,
+              "maxRp2ReliefRuns": 1.7,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
-        "projectedFullTotalRuns": 6.9,
-        "projectedFirst5TotalRuns": 3.9,
-        "tailAdjustedProjectedFirst5TotalRuns": 3.9,
+        "projectedFullTotalRuns": 6.5,
+        "projectedFirst5TotalRuns": 3.8,
+        "tailAdjustedProjectedFirst5TotalRuns": 3.8,
         "first5TailOverlay": {
-          "baseProjectedRuns": 3.9,
-          "adjustedProjectedRuns": 3.9,
-          "adjustedEdge": -0.6,
+          "baseProjectedRuns": 3.8,
+          "adjustedProjectedRuns": 3.8,
+          "adjustedEdge": -0.7,
           "marketExpression": "Under",
           "shape": "balanced",
-          "tailScore": 3.8,
+          "tailScore": 7.8,
           "strandScore": 0,
           "forkScore": 0,
           "tailLift": 0,
@@ -19198,13 +19424,29 @@
             "totalFirst5ProjectedHits": 8.9,
             "weatherCarry": false,
             "weatherSuppress": false,
+            "envRunDelta": -0.3,
+            "envHitsDelta": 0,
+            "envHrDelta": 0,
+            "hrForce": 0,
+            "highHrForce": false,
+            "lowerWeatherCarry": true,
+            "ficHrForce": 0,
+            "ficHighHrForce": false,
+            "materialHrForce": false,
+            "extremeHrForce": false,
+            "carryMultiplier": 1,
+            "ficHighHrForceSharePct": 0,
+            "maxRp2BridgeStress": 23.7,
+            "maxRp2ReliefRuns": 1.7,
+            "rp2LateRunRisk": false,
+            "maxRepeatOpponentFirst5Tax": null,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 3,
+        "projectedLateTotalRuns": 2.7,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 4.2,
+        "runShareFirst5TotalLine": 4.4,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 3,
         "bullpenExhaustionNote": "Dome In Domed Stadium. No major bridge-chain exhaustion flag has surfaced yet.",
@@ -19215,26 +19457,37 @@
         "pick": "NRFI",
         "strength": "Thin",
         "label": "NRFI",
-        "edge": 0.5,
-        "yesProbabilityPct": 49.5,
-        "noProbabilityPct": 50.5,
-        "awayRunProbabilityPct": 7.4,
-        "homeRunProbabilityPct": 45.5,
+        "edge": 2.5,
+        "yesProbabilityPct": 47.5,
+        "noProbabilityPct": 52.5,
+        "awayRunProbabilityPct": 6.9,
+        "homeRunProbabilityPct": 43.6,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 0,
         "homeOppPitcherAllowedRatePct": null,
         "awayProjectedRuns": 0.1,
-        "homeProjectedRuns": 0.6,
+        "homeProjectedRuns": 0.5,
         "reasonStack": [
+          "Brewers handedness splits are weak against the starter (39.5)",
+          "Phillies handedness splits are weak against the starter (39.6)",
           "Brewers starter has stayed clean in the 1st across recent starts",
           "Brewers starter is in the green this year (2.9 WAR)",
           "Brewers starter has improved sharply from last year (2.4 WAR delta)"
         ],
-        "cautionStack": [],
-        "projectedRuns": 0.7,
+        "cautionStack": [
+          "Phillies top third has multiple strong split bats"
+        ],
+        "environmentAddendum": {
+          "hrForce": 0,
+          "highHrForce": false,
+          "maxProbabilityLiftPct": -0.6,
+          "maxProjectedRunsLift": 0,
+          "reasons": []
+        },
+        "projectedRuns": 0.6,
         "line": 0.5,
-        "summary": "NRFI with a 50% modeled chance that the first inning stays scoreless. Phillies score 7.4% of the time and Brewers 45.5% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "NRFI with a 53% modeled chance that the first inning stays scoreless. Phillies score 6.9% of the time and Brewers 43.6% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
       },
       "teamScripts": [
         {
@@ -19312,7 +19565,7 @@
           "depthScore": 48.3,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Brewers own the cleaner full-game traffic script at 9.9 projected hits.",
+            "Brewers own the cleaner full-game traffic script at 9.6 projected hits.",
             "Brewers have the better starter-window lane with 5.9 projected first-five hits.",
             "Brewers still hold the better bridge-and-finish script once the bullpens take over.",
             "Brewers can lean on Jake Bauers, Andrew Vaughn, Jackson Chourio to drive early pressure against Tanner Banks.",
@@ -19327,19 +19580,19 @@
           {
             "label": "First 5",
             "edgeTeam": "Brewers",
-            "projection": "2.7 R",
+            "projection": "2.6 R",
             "note": "Brewers lean on Jake Bauers, Andrew Vaughn to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
             "edgeTeam": "Brewers",
-            "projection": "1.9 R",
+            "projection": "1.6 R",
             "note": "Brewers keep more late scoring paths alive, with Jake Bauers, Andrew Vaughn plus the Phillies bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Brewers",
-            "projection": "9.9 H",
+            "projection": "9.6 H",
             "note": "Brewers finish with the stronger aggregate traffic path, anchored by Jake Bauers, Andrew Vaughn."
           }
         ]
@@ -19401,6 +19654,50 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Phillies @ Brewers",
+        "gameContextMatch": "team-code",
+        "rowCount": 6,
+        "averageHrForce": 0,
+        "maxHrForce": 0,
+        "highHrForceRows": 0,
+        "extremeHrForceRows": 0,
+        "highHrForceSharePct": 0,
+        "qualityAbPct": 52.8,
+        "hardHitPct": 36.2,
+        "matchupPassRows": 0,
+        "awayOffense": {
+          "label": "Phillies hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "Brewers hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Phillies",
@@ -19439,22 +19736,372 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "handedness split adjustment is active",
+          "shallow starter sample flag is active"
+        ],
+        "environment": {
+          "hrForce": 0,
+          "envHrForce": 0,
+          "ficHrForce": 0,
+          "materialHrForce": false,
+          "extremeHrForce": false,
+          "carryMultiplier": 1,
+          "hitDelta": 0,
+          "runDelta": 0,
+          "conversionDelta": 0,
+          "firstInningProbabilityLiftPct": 0,
+          "underFragilityRuns": 0,
+          "flags": [
+            "Dome/weather N/A: weather carry not treated as wind/heat lift",
+            "Low/N/A HRForce cannot be used as a strong under signal"
+          ],
+          "reasons": [
+            "dome/weather N/A keeps weather carry neutral",
+            "weather carry is low or unavailable, so it cannot support an under by itself"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Phillies",
+            "pitcherName": "Tanner Banks",
+            "gamesStarted": 1,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Volatile bat-misser",
+            "expectedInnings": 5.2,
+            "opponentHistory": {
+              "label": "neutral starter-vs-opponent history",
+              "source": "StatMuse vs opponent",
+              "starts": 4,
+              "innings": 5.3,
+              "projectedHitsDelta": 0,
+              "first5RunsDelta": 0,
+              "runConversionDelta": 0.00009828000000000014,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": 0,
+              "repeatOpponentFirst5Tax": 0,
+              "lastOpponentStartSummary": null,
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "shallow starter sample",
+              "neutral starter-vs-opponent history vs Brewers"
+            ]
+          },
+          {
+            "teamName": "Brewers",
+            "pitcherName": "Jacob Misiorowski",
+            "gamesStarted": 14,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Power righty",
+            "expectedInnings": 5.92,
+            "opponentHistory": null,
+            "flags": []
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Phillies",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 39.6,
+            "label": "weak handedness split lane",
+            "splitAvgAverage": 0.248,
+            "splitOpsAverage": 0.747,
+            "topSixSplitAvgAverage": 0.255,
+            "topSixSplitOpsAverage": 0.781,
+            "strongSplitCount": 3,
+            "weakSplitCount": 5,
+            "severeWeakSplitCount": 0,
+            "topSixStrongSplitCount": 3,
+            "topSixWeakSplitCount": 4,
+            "topThirdStrongSplitCount": 2,
+            "topThirdWeakSplitCount": 2,
+            "hitDelta": -0.4,
+            "runConversionDelta": -0.005365,
+            "strongSplitBats": [
+              {
+                "name": "Bryce Harper",
+                "slot": 3,
+                "bats": "L",
+                "plateAppearances": 175,
+                "avg": 0.293,
+                "ops": 1.011,
+                "seasonAvg": 0.267,
+                "seasonOps": 0.893,
+                "recentAvg": 0.35,
+                "recentOps": 1.1
+              },
+              {
+                "name": "Kyle Schwarber",
+                "slot": 1,
+                "bats": "L",
+                "plateAppearances": 184,
+                "avg": 0.219,
+                "ops": 0.897,
+                "seasonAvg": 0.239,
+                "seasonOps": 0.933,
+                "recentAvg": 0.292,
+                "recentOps": 0.83
+              },
+              {
+                "name": "Brandon Marsh",
+                "slot": 4,
+                "bats": "L",
+                "plateAppearances": 184,
+                "avg": 0.337,
+                "ops": 0.893,
+                "seasonAvg": 0.326,
+                "seasonOps": 0.865,
+                "recentAvg": 0.261,
+                "recentOps": 1.085
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Alec Bohm",
+                "slot": 5,
+                "bats": "R",
+                "plateAppearances": 180,
+                "avg": 0.22,
+                "ops": 0.601,
+                "seasonAvg": 0.226,
+                "seasonOps": 0.649,
+                "recentAvg": 0.348,
+                "recentOps": 1.096
+              },
+              {
+                "name": "J.T. Realmuto",
+                "slot": 8,
+                "bats": "R",
+                "plateAppearances": 126,
+                "avg": 0.207,
+                "ops": 0.618,
+                "seasonAvg": 0.2,
+                "seasonOps": 0.571,
+                "recentAvg": 0.063,
+                "recentOps": 0.313
+              },
+              {
+                "name": "Bryson Stott",
+                "slot": 6,
+                "bats": "L",
+                "plateAppearances": 192,
+                "avg": 0.218,
+                "ops": 0.636,
+                "seasonAvg": 0.23,
+                "seasonOps": 0.671,
+                "recentAvg": 0.333,
+                "recentOps": 0.899
+              },
+              {
+                "name": "Trea Turner",
+                "slot": 2,
+                "bats": "R",
+                "plateAppearances": 200,
+                "avg": 0.241,
+                "ops": 0.647,
+                "seasonAvg": 0.225,
+                "seasonOps": 0.619,
+                "recentAvg": 0.2,
+                "recentOps": 0.566
+              }
+            ],
+            "flags": [
+              "5 weak split bats vs R",
+              "top-third split pressure",
+              "top-six split drag",
+              "Bryce Harper 1.011 OPS vs R",
+              "Kyle Schwarber 0.897 OPS vs R",
+              "Alec Bohm 0.601 OPS vs R"
+            ]
+          },
+          {
+            "teamName": "Brewers",
+            "opposingStarterHand": "L",
+            "handednessSplitIndex": 39.5,
+            "label": "weak handedness split lane",
+            "splitAvgAverage": 0.269,
+            "splitOpsAverage": 0.751,
+            "topSixSplitAvgAverage": 0.29,
+            "topSixSplitOpsAverage": 0.829,
+            "strongSplitCount": 2,
+            "weakSplitCount": 4,
+            "severeWeakSplitCount": 2,
+            "topSixStrongSplitCount": 2,
+            "topSixWeakSplitCount": 1,
+            "topThirdStrongSplitCount": 1,
+            "topThirdWeakSplitCount": 1,
+            "hitDelta": -0.3,
+            "runConversionDelta": -0.0053625,
+            "strongSplitBats": [
+              {
+                "name": "Andrew Vaughn",
+                "slot": 6,
+                "bats": "R",
+                "plateAppearances": 37,
+                "avg": 0.548,
+                "ops": 1.557,
+                "seasonAvg": 0.37,
+                "seasonOps": 0.98,
+                "recentAvg": 0.55,
+                "recentOps": 1.471
+              },
+              {
+                "name": "Jackson Chourio",
+                "slot": 2,
+                "bats": "R",
+                "plateAppearances": 36,
+                "avg": 0.382,
+                "ops": 0.946,
+                "seasonAvg": 0.304,
+                "seasonOps": 0.872,
+                "recentAvg": 0.29,
+                "recentOps": 0.851
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Joey Ortiz",
+                "slot": 9,
+                "bats": "R",
+                "plateAppearances": 56,
+                "avg": 0.191,
+                "ops": 0.488,
+                "seasonAvg": 0.2,
+                "seasonOps": 0.551,
+                "recentAvg": 0.267,
+                "recentOps": 0.686
+              },
+              {
+                "name": "Brice Turang",
+                "slot": 3,
+                "bats": "L",
+                "plateAppearances": 79,
+                "avg": 0.176,
+                "ops": 0.547,
+                "seasonAvg": 0.267,
+                "seasonOps": 0.852,
+                "recentAvg": 0.172,
+                "recentOps": 0.709
+              },
+              {
+                "name": "David Hamilton",
+                "slot": 8,
+                "bats": "L",
+                "plateAppearances": 35,
+                "avg": 0.241,
+                "ops": 0.594,
+                "seasonAvg": 0.237,
+                "seasonOps": 0.657,
+                "recentAvg": 0.294,
+                "recentOps": 0.898
+              },
+              {
+                "name": "Garrett Mitchell",
+                "slot": 7,
+                "bats": "L",
+                "plateAppearances": 49,
+                "avg": 0.231,
+                "ops": 0.636,
+                "seasonAvg": 0.247,
+                "seasonOps": 0.758,
+                "recentAvg": 0.35,
+                "recentOps": 1
+              }
+            ],
+            "flags": [
+              "4 weak split bats vs L",
+              "Andrew Vaughn 1.557 OPS vs L",
+              "Jackson Chourio 0.946 OPS vs L",
+              "Joey Ortiz 0.488 OPS vs L",
+              "4 lineup bats carry weak split rows"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Phillies",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "Brewers",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Phillies",
+            "projectedReliefRunsAllowed": 0.9,
+            "adjustedProjectedReliefRunsAllowed": 0.7,
+            "projectedReliefOuts": 9.7,
+            "leverageAvailabilityScore": 71,
+            "leadAvailabilityScore": 91.1,
+            "bridgeStressScore": 23.7,
+            "runDelta": -0.3,
+            "hitDelta": -0.2,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 0.9 -> 0.7"
+            ]
+          },
+          {
+            "teamName": "Brewers",
+            "projectedReliefRunsAllowed": 2,
+            "adjustedProjectedReliefRunsAllowed": 1.7,
+            "projectedReliefOuts": 11.5,
+            "leverageAvailabilityScore": 75.4,
+            "leadAvailabilityScore": 84.8,
+            "bridgeStressScore": 19.5,
+            "runDelta": -0.1,
+            "hitDelta": 0.1,
+            "expectedEarlyBridge": true,
+            "flags": [
+              "RP2 available-pen runs 2 -> 1.7"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 2.3,
+          "home": 4.2
+        },
+        "projectedHitTotals": {
+          "away": 5.4,
+          "home": 9.6
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
         "selection": "Brewers",
         "opponent": "Phillies",
-        "pickProjectedRuns": 4.6,
+        "pickProjectedRuns": 4.2,
         "opponentProjectedRuns": 2.3,
-        "projectedTotalRuns": 6.9,
-        "runDiff": 2.3,
-        "absoluteRunDiff": 2.3,
-        "runDiffSharePct": 33.3,
-        "confidence": 88,
+        "projectedTotalRuns": 6.5,
+        "runDiff": 1.9,
+        "absoluteRunDiff": 1.9,
+        "runDiffSharePct": 29.2,
+        "confidence": 89,
         "marketProbabilityPct": 69,
         "grade": "Separated ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Brewers projects 2.3 runs better in a 6.9-run environment."
+        "note": "Brewers projects 1.9 runs better in a 6.5-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -19519,8 +20166,8 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 40,
           "bullpenFlipScore": 22,
-          "starterControlScore": 82.8,
-          "marketContradictionScore": 19.1,
+          "starterControlScore": 83,
+          "marketContradictionScore": 19.4,
           "realityGapScore": 33.5
         },
         "radar": {
@@ -19535,9 +20182,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 38.2,
-              "pickScore": 38.2,
-              "opponentScore": 8
+              "gameScore": 38.4,
+              "pickScore": 38.4,
+              "opponentScore": 8.1
             },
             {
               "id": "chaos",
@@ -19585,7 +20232,7 @@
               "role": "pick",
               "team": "Brewers",
               "scores": {
-                "pressure": 38.2,
+                "pressure": 38.4,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
@@ -19593,7 +20240,7 @@
                 "flow": 75
               },
               "polygon": [
-                38.2,
+                38.4,
                 0,
                 0,
                 0,
@@ -19604,7 +20251,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 79.1,
+                "starterScore": 79.9,
                 "bullpenScore": 64.4,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -19618,7 +20265,7 @@
               "role": "opponent",
               "team": "Phillies",
               "scores": {
-                "pressure": 8,
+                "pressure": 8.1,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
@@ -19626,7 +20273,7 @@
                 "flow": 25
               },
               "polygon": [
-                8,
+                8.1,
                 0,
                 0,
                 0,
@@ -19637,7 +20284,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 44.5,
+                "starterScore": 45,
                 "bullpenScore": 64.4,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -19652,7 +20299,7 @@
             "label": "Favorite conversion trap",
             "bestExpression": "No taxed ML; require early conversion or better live price",
             "scores": {
-              "pressure": 38.2,
+              "pressure": 38.4,
               "chaos": 38.8,
               "freeze": 8.5,
               "air": 0,
@@ -19660,7 +20307,7 @@
               "flow": 60
             },
             "polygon": [
-              38.2,
+              38.4,
               38.8,
               8.5,
               0,
@@ -19681,7 +20328,7 @@
               {
                 "id": "pressure",
                 "label": "Pressure",
-                "score": 38.2
+                "score": 38.4
               }
             ]
           }
@@ -19742,12 +20389,12 @@
           "side": "Brewers is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "NRFI is the timing lane to compare against the side; modeled chance 49.5% YRFI."
+          "firstInning": "NRFI is the timing lane to compare against the side; modeled chance 47.5% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 24.5,
+          "impactScore": 26.7,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -19775,7 +20422,7 @@
             }
           },
           "trustedUse": "Use RF as a nonlinear totals/game-shape check first. Do not let it pick ML/F5 by itself yet.",
-          "totalsRead": "RF totals baseline has little to add when the line and projection are nearly equal.",
+          "totalsRead": "RF totals baseline can be used as a second check on the posted total.",
           "moneylineRead": "RF moneyline history is not deployable; it can only flag disagreement for review.",
           "first5Read": "RF first-five history is not deployable; use it as a timing warning, not a pick.",
           "firstInningRead": "RF first-inning history is not deployable; keep it behind explicit early-run features."
@@ -19785,11 +20432,11 @@
         "pickSide": "home",
         "pickTeam": "Brewers",
         "awayProjectedRuns": 1.2,
-        "homeProjectedRuns": 2.7,
-        "awayLeadProbability": 14.6,
-        "homeLeadProbability": 69.1,
-        "pushProbability": 16.2,
-        "leadProbability": 69.1,
+        "homeProjectedRuns": 2.6,
+        "awayLeadProbability": 15.6,
+        "homeLeadProbability": 67.4,
+        "pushProbability": 17,
+        "leadProbability": 67.4,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -19811,7 +20458,7 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 57,
-        "probability": 27,
+        "probability": 26.7,
         "expectedValue": 0.3,
         "statValueLabel": "0.31 exp HR",
         "sample": {
@@ -19881,10 +20528,10 @@
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
-        "confidence": 68,
-        "probability": 78.9,
-        "expectedValue": 1.6,
-        "statValueLabel": "1.56 exp RBI",
+        "confidence": 67,
+        "probability": 75.8,
+        "expectedValue": 1.4,
+        "statValueLabel": "1.42 exp RBI",
         "sample": {
           "seasonGames": 58,
           "seasonPlateAppearances": 234,
@@ -19921,7 +20568,7 @@
           "trackingPenalty": 18,
           "reason": "baseline career profile"
         },
-        "recommendationTier": "Strong",
+        "recommendationTier": "Lean",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 5 carry | process improving; approach 82.9/100 | recent form up | run-production slot",
@@ -19954,9 +20601,9 @@
         "propLabel": "Runs",
         "marketLabel": "Over 0.5 runs",
         "confidence": 72,
-        "probability": 79.3,
-        "expectedValue": 1.6,
-        "statValueLabel": "1.58 exp runs",
+        "probability": 76,
+        "expectedValue": 1.4,
+        "statValueLabel": "1.43 exp runs",
         "sample": {
           "seasonGames": 58,
           "seasonPlateAppearances": 234,
@@ -20025,9 +20672,9 @@
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 95.4,
-        "expectedValue": 4.9,
-        "statValueLabel": "2.85 H · 0.78 R · 1.23 RBI · 4.85 total",
+        "probability": 94,
+        "expectedValue": 4.5,
+        "statValueLabel": "2.69 H · 0.70 R · 1.12 RBI · 4.51 total",
         "sample": {
           "seasonGames": 29,
           "seasonPlateAppearances": 101,
@@ -20168,10 +20815,10 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 80,
-        "probability": 77.7,
-        "expectedValue": 2.8,
-        "statValueLabel": "2.85 exp hits",
+        "confidence": 78,
+        "probability": 75,
+        "expectedValue": 2.7,
+        "statValueLabel": "2.69 exp hits",
         "sample": {
           "seasonGames": 29,
           "seasonPlateAppearances": 101,
@@ -20208,7 +20855,7 @@
           "trackingPenalty": 18,
           "reason": "contact-stable profile"
         },
-        "recommendationTier": "Core",
+        "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 6 carry | recent form up | split fit live | clean traffic lane",
@@ -20239,9 +20886,9 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 71,
-        "probability": 65.5,
+        "probability": 65.2,
         "expectedValue": 1.1,
-        "statValueLabel": "1.07 exp walks",
+        "statValueLabel": "1.05 exp walks",
         "sample": {
           "seasonGames": 58,
           "seasonPlateAppearances": 234,
@@ -20310,10 +20957,10 @@
         "propType": "singles",
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
-        "confidence": 75,
-        "probability": 80.1,
-        "expectedValue": 1.6,
-        "statValueLabel": "1.62 exp singles",
+        "confidence": 74,
+        "probability": 78.3,
+        "expectedValue": 1.5,
+        "statValueLabel": "1.53 exp singles",
         "sample": {
           "seasonGames": 29,
           "seasonPlateAppearances": 101,
@@ -20378,7 +21025,7 @@
       "runs": [],
       "hitRunRbi": []
     },
-    "candidateCount": 34,
+    "candidateCount": 33,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

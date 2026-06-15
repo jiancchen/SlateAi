@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Cardinals",
-      "detail": "Kyle Leahy (RHP) | 5-3 | 4.42 ERA | 47 SO | 1.58 WHIP | 59.0 IP"
+      "detail": "Kyle Leahy (RHP) | 5-3 | 4.64 ERA | 52 SO | 1.59 WHIP | 64.0 IP"
     },
     {
       "side": "Home",
       "name": "Twins",
-      "detail": "Joe Ryan (RHP) | 4-3 | 3.07 ERA | 84 SO | 1.00 WHIP | 76.1 IP"
+      "detail": "Joe Ryan (RHP) | 4-3 | 3.17 ERA | 92 SO | 1.00 WHIP | 82.1 IP"
     }
   ],
   "summary": "Cardinals @ Twins with Kyle Leahy against Joe Ryan.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Cardinals +120 / Twins -140 | o9 -105 / u9 -110 | +1.5 -170 / -1.5 +145 | F5 no F5 ML / no F5 total.",
+    "Current board: Cardinals -114 / Twins even | o9 -110 / u9 -105 | +1.5 -220 / +1.5 -167 | F5 no F5 ML / no F5 total.",
     "Kyle Leahy vs Joe Ryan."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -34,11 +34,11 @@
     "away": {
       "divisionLeader": false,
       "divisionRank": "2",
-      "gamesBack": "4.0",
-      "losses": 29,
-      "runDifferential": 11,
-      "streakCode": "L1",
-      "winningPercentage": ".561",
+      "gamesBack": "5.0",
+      "losses": 30,
+      "runDifferential": 10,
+      "streakCode": "L2",
+      "winningPercentage": ".552",
       "wins": 37
     },
     "home": {
@@ -46,10 +46,10 @@
       "divisionRank": "3",
       "gamesBack": "6.5",
       "losses": 39,
-      "runDifferential": -41,
-      "streakCode": "L1",
-      "winningPercentage": ".443",
-      "wins": 31
+      "runDifferential": -40,
+      "streakCode": "W1",
+      "winningPercentage": ".451",
+      "wins": 32
     }
   },
   "parkContext": {
@@ -133,6 +133,156 @@
       "Local first pitch 7:10 PM CDT is before the 20:00 late-light threshold.",
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
+  },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Cardinals @ Twins",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "SLN",
+    "homeTeamCode": "MIN",
+    "label": "Cardinals @ Twins",
+    "sourceStatus": "warehouse",
+    "rowCount": 13,
+    "pitcherName": "J. Ryan",
+    "gameContexts": [
+      "@ 8 SLN MIN"
+    ],
+    "averageHrForce": 1.4,
+    "maxHrForce": 1.4,
+    "highHrForceRows": 13,
+    "extremeHrForceRows": 0,
+    "highHrForceSharePct": 100,
+    "qualityAbPct": 48.7,
+    "hardHitPct": 12.8,
+    "matchupPassRows": 1,
+    "topRows": [
+      {
+        "playerName": "T. Gray",
+        "pitcherName": "K. Leahy",
+        "position": null,
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.4,
+        "qualityAbPct": 100,
+        "hardHitPct": 100,
+        "recentOps": 0.445,
+        "bvpAtBats": 1,
+        "bvpAvg": 1,
+        "bvpOps": 2,
+        "matchupPass": false
+      },
+      {
+        "playerName": "J. Walker",
+        "pitcherName": "J. Ryan",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.4,
+        "qualityAbPct": 75,
+        "hardHitPct": 50,
+        "recentOps": 1.043,
+        "bvpAtBats": 3,
+        "bvpAvg": 1,
+        "bvpOps": 3,
+        "matchupPass": false
+      },
+      {
+        "playerName": "L. Nootbaar",
+        "pitcherName": "J. Ryan",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.4,
+        "qualityAbPct": 50,
+        "hardHitPct": 17,
+        "recentOps": 0.72,
+        "bvpAtBats": 5,
+        "bvpAvg": 0.6,
+        "bvpOps": 1.867,
+        "matchupPass": true
+      },
+      {
+        "playerName": "A. Burleson",
+        "pitcherName": "J. Ryan",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.4,
+        "qualityAbPct": 25,
+        "hardHitPct": 0,
+        "recentOps": 1.157,
+        "bvpAtBats": 4,
+        "bvpAvg": 0.25,
+        "bvpOps": 1.25,
+        "matchupPass": false
+      },
+      {
+        "playerName": "T. Larnach",
+        "pitcherName": "K. Leahy",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.4,
+        "qualityAbPct": 100,
+        "hardHitPct": 0,
+        "recentOps": 0.369,
+        "bvpAtBats": 0,
+        "bvpAvg": 0,
+        "bvpOps": 1,
+        "matchupPass": false
+      },
+      {
+        "playerName": "V. Scott",
+        "pitcherName": "J. Ryan",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.4,
+        "qualityAbPct": 50,
+        "hardHitPct": 0,
+        "recentOps": 0.822,
+        "bvpAtBats": 2,
+        "bvpAvg": 0.5,
+        "bvpOps": 1,
+        "matchupPass": false
+      }
+    ],
+    "awayOffense": {
+      "label": "Cardinals hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "Twins hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
   },
   "offenseContext": {
     "away": {
@@ -3064,71 +3214,71 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 50.1,
-          "noRunProbabilityPct": 49.9,
-          "awayRunProbabilityPct": 34.9,
-          "homeRunProbabilityPct": 23.3,
+          "runProbabilityPct": 56,
+          "noRunProbabilityPct": 44,
+          "awayRunProbabilityPct": 39.5,
+          "homeRunProbabilityPct": 27.3,
           "lean": "Run",
-          "strength": "thin",
+          "strength": "lean",
           "sampleHalves": 136,
           "caution": "Cardinals starter has stayed clean in the 1st across recent starts Cardinals starter season line is clean early (9% run games, 0.1/start)",
-          "reason": "YRFI with a 50% modeled chance of at least one first-inning run. Cardinals score 34.9% of the time and Twins 23.3% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "reason": "YRFI with a 56% modeled chance of at least one first-inning run. Cardinals score 39.5% of the time and Twins 27.3% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.4 is embedded in the first-inning run probability.",
           "sourceModel": "M2 first-inning"
         },
         {
           "inning": 2,
           "phase": "M2 early F5",
-          "runProbabilityPct": 64.8,
-          "noRunProbabilityPct": 35.2,
-          "awayRunProbabilityPct": 29.6,
-          "homeRunProbabilityPct": 35.2,
+          "runProbabilityPct": 69.4,
+          "noRunProbabilityPct": 30.6,
+          "awayRunProbabilityPct": 31.7,
+          "homeRunProbabilityPct": 37.7,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 136,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.9 projected first-five runs, with inning 2 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 2 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 3,
           "phase": "M2 early F5",
-          "runProbabilityPct": 72.3,
-          "noRunProbabilityPct": 27.7,
-          "awayRunProbabilityPct": 40.5,
-          "homeRunProbabilityPct": 31.8,
+          "runProbabilityPct": 76.6,
+          "noRunProbabilityPct": 23.4,
+          "awayRunProbabilityPct": 42.9,
+          "homeRunProbabilityPct": 33.7,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 136,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.9 projected first-five runs, with inning 3 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 3 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 4,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 76.7,
-          "noRunProbabilityPct": 23.3,
-          "awayRunProbabilityPct": 39.4,
-          "homeRunProbabilityPct": 37.3,
+          "runProbabilityPct": 80.8,
+          "noRunProbabilityPct": 19.2,
+          "awayRunProbabilityPct": 41.5,
+          "homeRunProbabilityPct": 39.3,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 136,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.9 projected first-five runs, with inning 4 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 4 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 5,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 78,
-          "noRunProbabilityPct": 22,
-          "awayRunProbabilityPct": 36.3,
-          "homeRunProbabilityPct": 41.7,
+          "runProbabilityPct": 82,
+          "noRunProbabilityPct": 18,
+          "awayRunProbabilityPct": 38.2,
+          "homeRunProbabilityPct": 43.8,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 136,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.9 projected first-five runs, with inning 5 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 6.6 projected first-five runs, with inning 5 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -7124,14 +7274,14 @@
       "pitchHand": "R",
       "wins": 5,
       "losses": 3,
-      "era": "4.42",
-      "strikeOuts": 47,
-      "inningsPitched": "59.0",
-      "hitsAllowed": 69,
-      "walks": 24,
-      "homeRunsAllowed": 8,
-      "whip": "1.58",
-      "gamesStarted": 12,
+      "era": "4.64",
+      "strikeOuts": 52,
+      "inningsPitched": "64.0",
+      "hitsAllowed": 77,
+      "walks": 25,
+      "homeRunsAllowed": 9,
+      "whip": "1.59",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 681517,
@@ -12313,14 +12463,14 @@
       "pitchHand": "R",
       "wins": 4,
       "losses": 3,
-      "era": "3.07",
-      "strikeOuts": 84,
-      "inningsPitched": "76.1",
-      "hitsAllowed": 60,
+      "era": "3.17",
+      "strikeOuts": 92,
+      "inningsPitched": "82.1",
+      "hitsAllowed": 66,
       "walks": 16,
-      "homeRunsAllowed": 7,
+      "homeRunsAllowed": 8,
       "whip": "1.00",
-      "gamesStarted": 14,
+      "gamesStarted": 15,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 657746,
@@ -17610,17 +17760,17 @@
       {
         "label": "Spread",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "+1.5 -170 / -1.5 +145"
+        "value": "+1.5 -220 / +1.5 -167"
       },
       {
         "label": "Total",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "o9 -105 / u9 -110"
+        "value": "o9 -110 / u9 -105"
       },
       {
         "label": "Moneyline",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "Cardinals +120 / Twins -140"
+        "value": "Cardinals -114 / Twins even"
       }
     ],
     "note": "Board snapshot plus model context.",
@@ -17632,24 +17782,24 @@
       "index": 0,
       "role": "Away",
       "name": "Cardinals",
-      "detail": "Kyle Leahy (RHP) | 5-3 | 4.42 ERA | 47 SO | 1.58 WHIP | 59.0 IP",
-      "americanOdds": 120,
-      "americanLabel": "+120",
-      "decimalOdds": 2.2,
-      "impliedProbability": 0.45454545454545453,
-      "impliedProbabilityLabel": "45.5%"
+      "detail": "Kyle Leahy (RHP) | 5-3 | 4.64 ERA | 52 SO | 1.59 WHIP | 64.0 IP",
+      "americanOdds": -114,
+      "americanLabel": "-114",
+      "decimalOdds": 1.8771929824561404,
+      "impliedProbability": 0.5327102803738317,
+      "impliedProbabilityLabel": "53.3%"
     },
     {
       "id": "cardinals-twins:1",
       "index": 1,
       "role": "Home",
       "name": "Twins",
-      "detail": "Joe Ryan (RHP) | 4-3 | 3.07 ERA | 84 SO | 1.00 WHIP | 76.1 IP",
-      "americanOdds": -140,
-      "americanLabel": "-140",
-      "decimalOdds": 1.7142857142857144,
-      "impliedProbability": 0.5833333333333334,
-      "impliedProbabilityLabel": "58.3%"
+      "detail": "Joe Ryan (RHP) | 4-3 | 3.17 ERA | 92 SO | 1.00 WHIP | 82.1 IP",
+      "americanOdds": 100,
+      "americanLabel": "+100",
+      "decimalOdds": 2,
+      "impliedProbability": 0.5,
+      "impliedProbabilityLabel": "50.0%"
     }
   ],
   "moneyline": {
@@ -17662,98 +17812,102 @@
         "index": 0,
         "role": "Away",
         "name": "Cardinals",
-        "detail": "Kyle Leahy (RHP) | 5-3 | 4.42 ERA | 47 SO | 1.58 WHIP | 59.0 IP",
-        "americanOdds": 120,
-        "americanLabel": "+120",
-        "decimalOdds": 2.2,
-        "impliedProbability": 0.45454545454545453,
-        "impliedProbabilityLabel": "45.5%"
+        "detail": "Kyle Leahy (RHP) | 5-3 | 4.64 ERA | 52 SO | 1.59 WHIP | 64.0 IP",
+        "americanOdds": -114,
+        "americanLabel": "-114",
+        "decimalOdds": 1.8771929824561404,
+        "impliedProbability": 0.5327102803738317,
+        "impliedProbabilityLabel": "53.3%"
       },
       {
         "id": "cardinals-twins:1",
         "index": 1,
         "role": "Home",
         "name": "Twins",
-        "detail": "Joe Ryan (RHP) | 4-3 | 3.07 ERA | 84 SO | 1.00 WHIP | 76.1 IP",
-        "americanOdds": -140,
-        "americanLabel": "-140",
-        "decimalOdds": 1.7142857142857144,
-        "impliedProbability": 0.5833333333333334,
-        "impliedProbabilityLabel": "58.3%"
+        "detail": "Joe Ryan (RHP) | 4-3 | 3.17 ERA | 92 SO | 1.00 WHIP | 82.1 IP",
+        "americanOdds": 100,
+        "americanLabel": "+100",
+        "decimalOdds": 2,
+        "impliedProbability": 0.5,
+        "impliedProbabilityLabel": "50.0%"
       }
     ]
   },
   "analysis": {
     "available": true,
-    "participantId": "cardinals-twins:0",
+    "participantId": "cardinals-twins:1",
     "participant": {
-      "id": "cardinals-twins:0",
-      "index": 0,
-      "role": "Away",
-      "name": "Cardinals",
-      "detail": "Kyle Leahy (RHP) | 5-3 | 4.42 ERA | 47 SO | 1.58 WHIP | 59.0 IP",
-      "americanOdds": 120,
-      "americanLabel": "+120",
-      "decimalOdds": 2.2,
-      "impliedProbability": 0.45454545454545453,
-      "impliedProbabilityLabel": "45.5%"
-    },
-    "opponent": {
       "id": "cardinals-twins:1",
       "index": 1,
       "role": "Home",
       "name": "Twins",
-      "detail": "Joe Ryan (RHP) | 4-3 | 3.07 ERA | 84 SO | 1.00 WHIP | 76.1 IP",
-      "americanOdds": -140,
-      "americanLabel": "-140",
-      "decimalOdds": 1.7142857142857144,
-      "impliedProbability": 0.5833333333333334,
-      "impliedProbabilityLabel": "58.3%"
+      "detail": "Joe Ryan (RHP) | 4-3 | 3.17 ERA | 92 SO | 1.00 WHIP | 82.1 IP",
+      "americanOdds": 100,
+      "americanLabel": "+100",
+      "decimalOdds": 2,
+      "impliedProbability": 0.5,
+      "impliedProbabilityLabel": "50.0%"
     },
-    "lean": "Model pick: Cardinals on hit-production baseline and standings profile.",
-    "rationale": "Hit-production baseline: Cardinals (8.07 H/G | last 3 10.67 | away 8.04) vs Twins (7.89 H/G | last 3 7.00 | home 8.17)",
+    "opponent": {
+      "id": "cardinals-twins:0",
+      "index": 0,
+      "role": "Away",
+      "name": "Cardinals",
+      "detail": "Kyle Leahy (RHP) | 5-3 | 4.64 ERA | 52 SO | 1.59 WHIP | 64.0 IP",
+      "americanOdds": -114,
+      "americanLabel": "-114",
+      "decimalOdds": 1.8771929824561404,
+      "impliedProbability": 0.5327102803738317,
+      "impliedProbabilityLabel": "53.3%"
+    },
+    "lean": "Model pick: Twins on lineup-vs-pitching fit and starter era.",
+    "rationale": "Lineup-vs-pitching fit: Twins (Grade +5.50 | platoon 7 | .300 bats 0 | bat pressure 50 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs Cardinals (Grade +0.42 | platoon 5 | .300 bats 0 | bat pressure 50 | starter arsenal 68 | bridge arsenal 50 | pressure 63)",
     "confidence": 52,
     "volatility": 92,
     "recommendationScore": 33,
     "tier": "Pass",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
     "modelEdge": 0,
     "modelEdgeLabel": "0-point model edge",
-    "marketProbability": 0.4379562043795621,
-    "marketProbabilityLabel": "43.8%",
+    "marketProbability": 0.4841628959276018,
+    "marketProbabilityLabel": "48.4%",
     "inputs": [
       {
-        "label": "Hit-production baseline",
-        "summary": "Hit-production baseline: Cardinals (8.07 H/G | last 3 10.67 | away 8.04) vs Twins (7.89 H/G | last 3 7.00 | home 8.17)",
-        "source": "TeamRankings team offense",
-        "margin": 28.8,
+        "label": "Lineup-vs-pitching fit",
+        "summary": "Lineup-vs-pitching fit: Twins (Grade +5.50 | platoon 7 | .300 bats 0 | bat pressure 50 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs Cardinals (Grade +0.42 | platoon 5 | .300 bats 0 | bat pressure 50 | starter arsenal 68 | bridge arsenal 50 | pressure 63)",
+        "source": "Official lineup + handedness + starter arsenal + likely reliever arsenal fit",
+        "margin": 27.7,
         "weight": 0.14
       },
       {
-        "label": "Standings profile",
-        "summary": "Standings profile: Cardinals (37-29, 2nd in division, +11 RD) vs Twins (31-39, 3rd in division, -41 RD)",
-        "source": "Standings context",
-        "margin": 22,
-        "weight": 0.14
+        "label": "Starter ERA",
+        "summary": "Starter ERA: Twins (3.17 ERA) vs Cardinals (4.64 ERA)",
+        "source": "Listed probable starters",
+        "margin": 13.2,
+        "weight": 0.23
       },
       {
-        "label": "Statcast contact quality",
-        "summary": "Statcast contact quality: Cardinals (BA 0.254 | xBA 0.270 | hard-hit 44.4%) vs Twins (BA 0.247 | xBA 0.244 | hard-hit 38.6%)",
-        "source": "Baseball Savant team hitting",
-        "margin": 19.8,
-        "weight": 0.1
+        "label": "Venue edge",
+        "summary": "Venue edge: Twins (Home environment) vs Cardinals (Road spot)",
+        "source": "Location context",
+        "margin": 6,
+        "weight": 0.07
       }
     ],
     "inputsUsed": 12,
     "volatilityNotes": [
       {
+        "label": "The underdog owns the projected hit edge",
+        "delta": 6
+      },
+      {
         "label": "Both offenses project to create real traffic",
         "delta": 5
       },
       {
-        "label": "Late-game traffic projection is nearly even once the bridge begins",
-        "delta": 3
+        "label": "The underdog projects cleaner through the starter window",
+        "delta": 4
       },
       {
         "label": "Higher posted total",
@@ -17792,32 +17946,28 @@
         "delta": 4
       },
       {
-        "label": "The underdog owns the fresher likely bridge chain",
+        "label": "The underdog lineup fits today’s starter better",
         "delta": 5
       },
       {
-        "label": "The underdog hit-production trend is still live",
-        "delta": 3
-      },
-      {
-        "label": "The underdog owns the cleaner Statcast contact profile",
+        "label": "Favorite enters on a live losing streak",
         "delta": 4
       },
       {
-        "label": "Favorite still needs a shakier late bullpen to protect only a thin offense edge",
-        "delta": 3
+        "label": "Favorite still leans on a traffic-risk starter type",
+        "delta": 4
       },
       {
         "label": "Target Field boosts run scoring (108 runs factor)",
         "delta": 5
       },
       {
-        "label": "Pick still leans on a starter with shaky innings hold confidence",
+        "label": "A hitter-friendlier park meets at least one shakier listed ERA",
         "delta": 4
       },
       {
-        "label": "Opponent lineup has real split and top-order pressure against this starter",
-        "delta": 4
+        "label": "Opposing starter hold is shakier than the season line alone suggests",
+        "delta": -2
       },
       {
         "label": "Overall baseball variance is still high enough that the side reads better as a watchlist edge than a clean conviction tag",
@@ -17828,16 +17978,16 @@
         "delta": 4
       },
       {
-        "label": "Late-inning hold risk is above average for this side",
-        "delta": 4
+        "label": "Relief-pitching risk is elevated if the game flips after the starter phase",
+        "delta": 6
       },
       {
-        "label": "Twins also own the projected hit edge",
+        "label": "Starter edge looks better than the late-inning hold profile; this reads cleaner for first five",
+        "delta": 5
+      },
+      {
+        "label": "Cardinals are likelier to hand the middle innings to a fresher bridge chain",
         "delta": 3
-      },
-      {
-        "label": "Twins own the cleaner projected traffic profile by more than a full hit",
-        "delta": 4
       },
       {
         "label": "Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.",
@@ -17849,22 +17999,22 @@
       }
     ],
     "pickReasons": [
-      "Cardinals also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
-      "Cardinals can lean on Alec Burleson, Jordan Walker, Lars Nootbaar to drive early pressure against Joe Ryan.",
-      "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-      "Cardinals top third are live enough to pressure the starter before the bridge innings."
+      "Twins own the cleaner full-game traffic script at 11.8 projected hits.",
+      "Twins have the better starter-window lane with 7.2 projected first-five hits.",
+      "Twins can lean on Byron Buxton, Kody Clemens, Josh Bell to drive early pressure against Kyle Leahy.",
+      "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms."
     ],
     "indicators": {
-      "reliefPitchingRisk": 70,
-      "coinflipPressure": 86,
-      "starterLeverageIndex": 1.1,
-      "lateInningStabilityIndex": 26.6,
-      "pickBullpenScore": 54.3,
-      "oppBullpenScore": 48.5,
-      "pickBullpenChainScore": 75.2,
-      "oppBullpenChainScore": 63.9,
-      "pickStarterScore": 63.5,
-      "oppStarterScore": 71.1,
+      "reliefPitchingRisk": 93.9,
+      "coinflipPressure": 77,
+      "starterLeverageIndex": 73.5,
+      "lateInningStabilityIndex": 38.8,
+      "pickBullpenScore": 48.5,
+      "oppBullpenScore": 54.3,
+      "pickBullpenChainScore": 63.9,
+      "oppBullpenChainScore": 75.2,
+      "pickStarterScore": 68.1,
+      "oppStarterScore": 61.9,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -17920,8 +18070,8 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": -2.7,
-      "hitEdgeAgainstPick": true,
+      "projectedHitEdgeForPick": 1,
+      "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": false,
       "pickIsMarketUnderdog": true,
       "heavyFavoriteWeakLineupFlag": false,
@@ -17943,14 +18093,13 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": -42,
+      "efficientFavoriteScore": -34,
       "efficientFavoriteTier": "Watch favorite",
       "efficientFavoriteReasons": [],
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
         "stackedRisk",
         "thinModelAgreement",
-        "starterNotClean",
         "lateNotClean"
       ],
       "efficientFavoriteBlockers": [
@@ -17958,111 +18107,111 @@
         "tierOnePass",
         "notPricedFavorite"
       ],
-      "tierOneRiskPoints": 4,
+      "tierOneRiskPoints": 5,
       "tierOnePassFlag": true,
       "tierOneRiskFlags": [
         "highRiskPoints",
         "underdogNeedsProof"
       ],
-      "favoredSignalCount": 6,
-      "starterLateGap": -25.5,
+      "favoredSignalCount": 3,
+      "starterLateGap": 34.7,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 2.9,
       "gameShape": {
-        "label": "Late-rescue side",
-        "shapeLabel": "starter/late split",
-        "category": "late_rescue_side",
-        "bestExpression": "Live side after starter exit",
-        "categoryConfidence": 72,
-        "realityGapScore": 68,
+        "label": "Starter-to-bullpen flip",
+        "shapeLabel": "bullpen-flip game",
+        "category": "starter_to_bullpen_flip",
+        "bestExpression": "Twins first-five side",
+        "categoryConfidence": 100,
+        "realityGapScore": 78.4,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
           {
             "id": "bridge",
             "label": "Bridge",
-            "score": 73.1
+            "score": 100
+          },
+          {
+            "id": "flow",
+            "label": "Flow",
+            "score": 48
           },
           {
             "id": "chaos",
             "label": "Chaos",
             "score": 44.8
-          },
-          {
-            "id": "flow",
-            "label": "Flow",
-            "score": 28
           }
         ],
-        "rfImpactScore": 41.3
+        "rfImpactScore": 54.8
       }
     },
     "gameShape": {
       "modelId": "MLB-M2",
-      "label": "Late-rescue side",
-      "shapeLabel": "starter/late split",
+      "label": "Starter-to-bullpen flip",
+      "shapeLabel": "bullpen-flip game",
       "category": {
-        "slug": "late_rescue_side",
-        "label": "Late-rescue side",
-        "bestExpression": "Live side after starter exit",
-        "confidence": 72,
+        "slug": "starter_to_bullpen_flip",
+        "label": "Starter-to-bullpen flip",
+        "bestExpression": "Twins first-five side",
+        "confidence": 100,
         "reasons": [
-          "The edge is late/bridge, not early comfort.",
-          "F5 side is weaker than a live entry after the starter turns over."
+          "The pick can own the starter window without owning the late game.",
+          "Use the timing edge before bridge innings can flip it."
         ],
         "laneMap": {
-          "side": "Prefer live entry after starter exit.",
-          "first5": "Use only if starter and top-order pressure agree.",
+          "side": "Secondary to the named lane.",
+          "first5": "Primary lane.",
           "total": "Needs line-specific EV.",
           "firstInning": "Advisory only.",
-          "live": "Best entry is after the opponent starter leaves."
+          "live": "Use price discipline."
         },
         "inningMap": [
           {
             "innings": "1-2",
-            "expectation": "Cardinals does not need to win the first inning.",
-            "watch": "Avoid panic if early contact is decent."
+            "expectation": "Twins can look right early even if full-game ML is fragile.",
+            "watch": "Entry belongs to F5 or live lead, not blind FG."
           },
           {
             "innings": "3-5",
-            "expectation": "Starter window may be neutral or ugly.",
-            "watch": "F5 side is weaker than full-game/live."
+            "expectation": "This is the main scoring window for the pick.",
+            "watch": "If the pick trails after five, the original read is mostly gone."
           },
           {
             "innings": "6-7",
-            "expectation": "Bridge/late edge is the planned entry point.",
-            "watch": "Look for opponent starter exit or first reliever traffic."
+            "expectation": "Cardinals can re-enter through the bridge.",
+            "watch": "Expect hedge or live reversal pressure here."
           },
           {
             "innings": "8-9",
-            "expectation": "Cardinals needs pressure after the starter turns over.",
-            "watch": "This is a live-side shape, not a pregame comfort shape."
+            "expectation": "Late innings are not aligned with the pregame side.",
+            "watch": "Do not confuse early control with full-game safety."
           }
         ],
         "diagnostics": {
-          "pickOwnsFull": false,
-          "pickOwnsFirst5": false,
+          "pickOwnsFull": true,
+          "pickOwnsFirst5": true,
           "pickOwnsLate": false,
-          "pickOwnsBridge": true,
-          "pickPhaseCount": 1,
+          "pickOwnsBridge": false,
+          "pickPhaseCount": 2,
           "lowPickConversion": true,
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": -2.7
+          "projectedHitEdge": 1
         }
       },
-      "summary": "Late-rescue side: Live side after starter exit. Reality-gap 68/100. Main checks: 79°F | Wind 11 mph Out | 7% precip | weather helps carry.",
-      "pickTeam": "Cardinals",
-      "opponentTeam": "Twins",
+      "summary": "Starter-to-bullpen flip: Twins first-five side. Reality-gap 78.4/100. Main checks: 79°F | Wind 11 mph Out | 7% precip | weather helps carry.",
+      "pickTeam": "Twins",
+      "opponentTeam": "Cardinals",
       "scores": {
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
-        "phaseSplitScore": 72,
-        "bullpenFlipScore": 73.1,
-        "starterControlScore": 15.1,
+        "phaseSplitScore": 52,
+        "bullpenFlipScore": 100,
+        "starterControlScore": 48.3,
         "marketContradictionScore": 30,
-        "realityGapScore": 68
+        "realityGapScore": 78.4
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -18076,9 +18225,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 24.8,
-            "pickScore": 0,
-            "opponentScore": 24.8
+            "gameScore": 20.3,
+            "pickScore": 20.3,
+            "opponentScore": 11.1
           },
           {
             "id": "chaos",
@@ -18108,45 +18257,45 @@
             "id": "bridge",
             "label": "Bridge",
             "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-            "gameScore": 73.1,
-            "pickScore": 6,
-            "opponentScore": 8.2
+            "gameScore": 100,
+            "pickScore": 8.2,
+            "opponentScore": 6
           },
           {
             "id": "flow",
             "label": "Flow",
             "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-            "gameScore": 28,
-            "pickScore": 25,
-            "opponentScore": 75
+            "gameScore": 48,
+            "pickScore": 50,
+            "opponentScore": 50
           }
         ],
         "profiles": [
           {
             "role": "pick",
-            "team": "Cardinals",
+            "team": "Twins",
             "scores": {
-              "pressure": 0,
+              "pressure": 20.3,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
-              "bridge": 6,
-              "flow": 25
+              "bridge": 8.2,
+              "flow": 50
             },
             "polygon": [
-              0,
+              20.3,
               5,
               0,
               16,
-              6,
-              25
+              8.2,
+              50
             ],
-            "phaseOwnershipPct": 25,
+            "phaseOwnershipPct": 50,
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 63.5,
-              "bullpenScore": 54.3,
+              "starterScore": 68.1,
+              "bullpenScore": 48.5,
               "mistakeChaos": 0,
               "runClustering": 0,
               "bullpenChaos": 0,
@@ -18157,29 +18306,29 @@
           },
           {
             "role": "opponent",
-            "team": "Twins",
+            "team": "Cardinals",
             "scores": {
-              "pressure": 24.8,
+              "pressure": 11.1,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
-              "bridge": 8.2,
-              "flow": 75
+              "bridge": 6,
+              "flow": 50
             },
             "polygon": [
-              24.8,
+              11.1,
               5,
               0,
               16,
-              8.2,
-              75
+              6,
+              50
             ],
-            "phaseOwnershipPct": 75,
+            "phaseOwnershipPct": 50,
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 71.1,
-              "bullpenScore": 48.5,
+              "starterScore": 61.9,
+              "bullpenScore": 54.3,
               "mistakeChaos": 0,
               "runClustering": 0,
               "bullpenChaos": 0,
@@ -18190,39 +18339,39 @@
           }
         ],
         "gameProfile": {
-          "label": "Late-rescue side",
-          "bestExpression": "Live side after starter exit",
+          "label": "Starter-to-bullpen flip",
+          "bestExpression": "Twins first-five side",
           "scores": {
-            "pressure": 24.8,
+            "pressure": 20.3,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
-            "bridge": 73.1,
-            "flow": 28
+            "bridge": 100,
+            "flow": 48
           },
           "polygon": [
-            24.8,
+            20.3,
             44.8,
             8.5,
             24.4,
-            73.1,
-            28
+            100,
+            48
           ],
           "dominantAxes": [
             {
               "id": "bridge",
               "label": "Bridge",
-              "score": 73.1
+              "score": 100
+            },
+            {
+              "id": "flow",
+              "label": "Flow",
+              "score": 48
             },
             {
               "id": "chaos",
               "label": "Chaos",
               "score": 44.8
-            },
-            {
-              "id": "flow",
-              "label": "Flow",
-              "score": 28
             }
           ]
         }
@@ -18230,10 +18379,10 @@
       "phaseMap": {
         "fullGameTraffic": "Twins",
         "first5": "Twins",
-        "late": "Twins",
+        "late": "Cardinals",
         "bridge": "Cardinals",
         "distinctPhaseTeams": 2,
-        "pickPhaseMisses": 3
+        "pickPhaseMisses": 2
       },
       "metrics": {
         "maxMistakeChaos": null,
@@ -18251,44 +18400,44 @@
         "79°F | Wind 11 mph Out | 7% precip | weather helps carry"
       ],
       "laneMap": {
-        "side": "Prefer live entry after starter exit.",
-        "first5": "Use only if starter and top-order pressure agree.",
+        "side": "Secondary to the named lane.",
+        "first5": "Primary lane.",
         "total": "Needs line-specific EV.",
         "firstInning": "Advisory only.",
-        "live": "Best entry is after the opponent starter leaves."
+        "live": "Use price discipline."
       },
       "inningMap": [
         {
           "innings": "1-2",
-          "expectation": "Cardinals does not need to win the first inning.",
-          "watch": "Avoid panic if early contact is decent."
+          "expectation": "Twins can look right early even if full-game ML is fragile.",
+          "watch": "Entry belongs to F5 or live lead, not blind FG."
         },
         {
           "innings": "3-5",
-          "expectation": "Starter window may be neutral or ugly.",
-          "watch": "F5 side is weaker than full-game/live."
+          "expectation": "This is the main scoring window for the pick.",
+          "watch": "If the pick trails after five, the original read is mostly gone."
         },
         {
           "innings": "6-7",
-          "expectation": "Bridge/late edge is the planned entry point.",
-          "watch": "Look for opponent starter exit or first reliever traffic."
+          "expectation": "Cardinals can re-enter through the bridge.",
+          "watch": "Expect hedge or live reversal pressure here."
         },
         {
           "innings": "8-9",
-          "expectation": "Cardinals needs pressure after the starter turns over.",
-          "watch": "This is a live-side shape, not a pregame comfort shape."
+          "expectation": "Late innings are not aligned with the pregame side.",
+          "watch": "Do not confuse early control with full-game safety."
         }
       ],
       "marketImplications": {
-        "side": "Do not treat Cardinals as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
-        "first5": "First-five may be cleaner than full game if the starter-window edge is on the pick and the late edge flips.",
+        "side": "Do not treat Twins as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
+        "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 50.1% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 56% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 41.3,
+        "impactScore": 54.8,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -18323,26 +18472,26 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 9.3,
-      "homeProjectedHits": 12,
-      "awayHitEfficiencyPct": 26.7,
-      "homeHitEfficiencyPct": 34.8,
-      "awayFirst5ProjectedHits": 4.9,
+      "awayProjectedHits": 10.8,
+      "homeProjectedHits": 11.8,
+      "awayHitEfficiencyPct": 31.1,
+      "homeHitEfficiencyPct": 34.2,
+      "awayFirst5ProjectedHits": 5.3,
       "homeFirst5ProjectedHits": 7.2,
-      "awayFirst5HitEfficiencyPct": 25.7,
-      "homeFirst5HitEfficiencyPct": 37.5,
-      "awayLateProjectedHits": 4.5,
-      "homeLateProjectedHits": 4.7,
-      "awayLateHitEfficiencyPct": 29,
-      "homeLateHitEfficiencyPct": 30.5,
+      "awayFirst5HitEfficiencyPct": 27.4,
+      "homeFirst5HitEfficiencyPct": 37.9,
+      "awayLateProjectedHits": 5.5,
+      "homeLateProjectedHits": 4.6,
+      "awayLateHitEfficiencyPct": 35.4,
+      "homeLateHitEfficiencyPct": 30,
       "awayBullpenChainScore": 75.2,
       "homeBullpenChainScore": 63.9,
       "edgeTeam": "Twins",
-      "edgeHits": 2.7,
+      "edgeHits": 1,
       "first5EdgeTeam": "Twins",
-      "first5EdgeHits": 2.3,
-      "lateEdgeTeam": "Twins",
-      "lateEdgeHits": 0.2,
+      "first5EdgeHits": 1.9,
+      "lateEdgeTeam": "Cardinals",
+      "lateEdgeHits": 0.9,
       "bridgeEdgeTeam": "Cardinals",
       "bridgeEdgeScore": 11.3,
       "awayLikelyRelievers": [
@@ -18451,31 +18600,35 @@
       "homeBullpenExhaustionLabel": "fresh",
       "awayPitcherType": "Traffic-risk righty",
       "homePitcherType": "Contact suppressor",
-      "awayStarterHoldConfidence": 18.9,
-      "homeStarterHoldConfidence": 58.3,
-      "awayProjectedRuns": 5.2,
-      "homeProjectedRuns": 5.8,
-      "awayFirst5ProjectedRuns": 2.5,
-      "homeFirst5ProjectedRuns": 3.4,
-      "awayLateProjectedRuns": 2.7,
-      "homeLateProjectedRuns": 2.4,
+      "awayStarterHoldConfidence": 18.2,
+      "homeStarterHoldConfidence": 51.8,
+      "awayProjectedRuns": 6.6,
+      "homeProjectedRuns": 5.9,
+      "awayFirst5ProjectedRuns": 3,
+      "homeFirst5ProjectedRuns": 3.6,
+      "awayLateProjectedRuns": 3.6,
+      "homeLateProjectedRuns": 2.3,
       "postedTotal": 9,
       "totals": {
         "fullGame": {
           "lean": "Over",
-          "edge": 2,
+          "edge": 3.5,
           "strength": "Strong",
           "label": "Over 9",
-          "summary": "Over lean with a 2.0-run edge against 9.",
+          "summary": "Over lean with a 3.5-run edge against 9.",
           "chaosGate": {
             "phase": "full",
-            "overChaosScore": 4,
+            "overChaosScore": 9,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "79°F | Wind 11 mph Out | 7% precip | weather helps carry",
+              "ENV1 HRForce 1.4",
+              "FIC HRForce 1.4",
+              "RP2 bridge stress 62.2",
               "both offenses project traffic"
             ],
             "metrics": {
@@ -18487,25 +18640,46 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.6,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.4,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.4,
+              "ficHighHrForce": true,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.08,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 62.2,
+              "maxRp2ReliefRuns": 3.7,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
         "first5": {
           "lean": "Over",
-          "edge": 1.1,
-          "strength": "Clear",
+          "edge": 1.8,
+          "strength": "Strong",
           "label": "Over 4.8",
-          "summary": "Over lean with a 1.1-run edge against 4.8.",
+          "summary": "Over lean with a 1.8-run edge against 4.8.",
           "chaosGate": {
             "phase": "first5",
-            "overChaosScore": 3,
+            "overChaosScore": 7,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "79°F | Wind 11 mph Out | 7% precip | weather helps carry",
+              "ENV1 HRForce 1.4",
+              "FIC HRForce 1.4",
+              "RP2 bridge can enter early",
               "both offenses project traffic"
             ],
             "metrics": {
@@ -18517,16 +18691,33 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.6,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.4,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.4,
+              "ficHighHrForce": true,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.08,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 62.2,
+              "maxRp2ReliefRuns": 3.7,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 5.9,
-            "adjustedProjectedRuns": 5.9,
-            "adjustedEdge": 1.1,
+            "baseProjectedRuns": 6.6,
+            "adjustedProjectedRuns": 6.6,
+            "adjustedEdge": 1.8,
             "marketExpression": "Over",
             "shape": "balanced",
-            "tailScore": 32,
+            "tailScore": 59,
             "strandScore": 0,
             "forkScore": 0,
             "tailLift": 0,
@@ -18540,28 +18731,48 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 12.1,
+              "totalFirst5ProjectedHits": 12.5,
               "weatherCarry": true,
               "weatherSuppress": false,
+              "envRunDelta": 0.6,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.4,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.4,
+              "ficHighHrForce": true,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.08,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 62.2,
+              "maxRp2ReliefRuns": 3.7,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
               "visibilityRisk": null
             }
           }
         },
         "late": {
           "lean": "Over",
-          "edge": 0.9,
-          "strength": "Clear",
+          "edge": 1.7,
+          "strength": "Strong",
           "label": "Over 4.2",
-          "summary": "Over lean with a 0.9-run edge against 4.2.",
+          "summary": "Over lean with a 1.7-run edge against 4.2.",
           "chaosGate": {
             "phase": "late",
-            "overChaosScore": 3,
+            "overChaosScore": 8,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "79°F | Wind 11 mph Out | 7% precip | weather helps carry",
+              "ENV1 HRForce 1.4",
+              "FIC HRForce 1.4",
+              "RP2 bridge stress 62.2",
               "both offenses project traffic"
             ],
             "metrics": {
@@ -18573,20 +18784,37 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.6,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.4,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.4,
+              "ficHighHrForce": true,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.08,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 62.2,
+              "maxRp2ReliefRuns": 3.7,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
-        "projectedFullTotalRuns": 11,
-        "projectedFirst5TotalRuns": 5.9,
-        "tailAdjustedProjectedFirst5TotalRuns": 5.9,
+        "projectedFullTotalRuns": 12.5,
+        "projectedFirst5TotalRuns": 6.6,
+        "tailAdjustedProjectedFirst5TotalRuns": 6.6,
         "first5TailOverlay": {
-          "baseProjectedRuns": 5.9,
-          "adjustedProjectedRuns": 5.9,
-          "adjustedEdge": 1.1,
+          "baseProjectedRuns": 6.6,
+          "adjustedProjectedRuns": 6.6,
+          "adjustedEdge": 1.8,
           "marketExpression": "Over",
           "shape": "balanced",
-          "tailScore": 32,
+          "tailScore": 59,
           "strandScore": 0,
           "forkScore": 0,
           "tailLift": 0,
@@ -18600,13 +18828,29 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 12.1,
+            "totalFirst5ProjectedHits": 12.5,
             "weatherCarry": true,
             "weatherSuppress": false,
+            "envRunDelta": 0.6,
+            "envHitsDelta": 0,
+            "envHrDelta": 0.1,
+            "hrForce": 1.4,
+            "highHrForce": true,
+            "lowerWeatherCarry": false,
+            "ficHrForce": 1.4,
+            "ficHighHrForce": true,
+            "materialHrForce": false,
+            "extremeHrForce": false,
+            "carryMultiplier": 1.08,
+            "ficHighHrForceSharePct": 100,
+            "maxRp2BridgeStress": 62.2,
+            "maxRp2ReliefRuns": 3.7,
+            "rp2LateRunRisk": true,
+            "maxRepeatOpponentFirst5Tax": null,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 5.1,
+        "projectedLateTotalRuns": 5.9,
         "derivedFirst5TotalLine": 4.8,
         "postedFirst5TotalLine": null,
         "runShareFirst5TotalLine": 4.8,
@@ -18618,13 +18862,13 @@
       },
       "firstInning": {
         "pick": "YRFI",
-        "strength": "Thin",
+        "strength": "Lean",
         "label": "YRFI",
-        "edge": 0.1,
-        "yesProbabilityPct": 50.1,
-        "noProbabilityPct": 49.9,
-        "awayRunProbabilityPct": 34.9,
-        "homeRunProbabilityPct": 23.3,
+        "edge": 6,
+        "yesProbabilityPct": 56,
+        "noProbabilityPct": 44,
+        "awayRunProbabilityPct": 39.5,
+        "homeRunProbabilityPct": 27.3,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 20,
@@ -18634,16 +18878,27 @@
         "reasonStack": [
           "Twins starter has real season 1st-inning damage (25% run games, 0.5/start)",
           "Twins starter has slipped hard from last year (-2.8 WAR delta)",
-          "Twins top order is driving early pressure (81)"
+          "ENV1 HRForce 1.4 raises YRFI carry",
+          "Twins top order is driving early pressure (81)",
+          "Twins top third has multiple strong split bats"
         ],
         "cautionStack": [
           "Cardinals starter has stayed clean in the 1st across recent starts",
           "Cardinals starter season line is clean early (9% run games, 0.1/start)",
           "Twins starter is in the green this year (1.7 WAR)"
         ],
+        "environmentAddendum": {
+          "hrForce": 1.4,
+          "highHrForce": true,
+          "maxProbabilityLiftPct": 2.8,
+          "maxProjectedRunsLift": 0,
+          "reasons": [
+            "ENV1 HRForce 1.4 raises YRFI carry"
+          ]
+        },
         "projectedRuns": 0.6,
         "line": 0.5,
-        "summary": "YRFI with a 50% modeled chance of at least one first-inning run. Cardinals score 34.9% of the time and Twins 23.3% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 56% modeled chance of at least one first-inning run. Cardinals score 39.5% of the time and Twins 27.3% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.4 is embedded in the first-inning run probability."
       },
       "teamScripts": [
         {
@@ -18680,6 +18935,7 @@
           "depthScore": 34.3,
           "bullpenOverperformHitters": [],
           "winPath": [
+            "Cardinals still hold the better bridge-and-finish script once the bullpens take over.",
             "Cardinals also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
             "Cardinals can lean on Alec Burleson, Jordan Walker, Lars Nootbaar to drive early pressure against Joe Ryan.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -18721,9 +18977,8 @@
           "depthScore": 58.6,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Twins own the cleaner full-game traffic script at 12 projected hits.",
+            "Twins own the cleaner full-game traffic script at 11.8 projected hits.",
             "Twins have the better starter-window lane with 7.2 projected first-five hits.",
-            "Twins still hold the better bridge-and-finish script once the bullpens take over.",
             "Twins can lean on Byron Buxton, Kody Clemens, Josh Bell to drive early pressure against Kyle Leahy.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
             "Twins top third are live enough to pressure the starter before the bridge innings.",
@@ -18732,24 +18987,24 @@
         }
       ],
       "lineupSimulation": {
-        "overview": "Twins carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+        "overview": "Twins rate cleaner through the starter window, but the bridge and finish script still move later in the game.",
         "phases": [
           {
             "label": "First 5",
             "edgeTeam": "Twins",
-            "projection": "3.4 R",
+            "projection": "3.6 R",
             "note": "Twins lean on Byron Buxton, Kody Clemens to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
-            "edgeTeam": "Twins",
-            "projection": "2.4 R",
-            "note": "Twins keep more late scoring paths alive, with Byron Buxton, Kody Clemens plus the Cardinals bridge chain shaping the middle innings."
+            "edgeTeam": "Cardinals",
+            "projection": "3.6 R",
+            "note": "Cardinals keep more late scoring paths alive, with Alec Burleson, Jordan Walker plus the Cardinals bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Twins",
-            "projection": "12 H",
+            "projection": "11.8 H",
             "note": "Twins finish with the stronger aggregate traffic path, anchored by Byron Buxton, Kody Clemens."
           }
         ]
@@ -18811,6 +19066,50 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Cardinals @ Twins",
+        "gameContextMatch": "team-code",
+        "rowCount": 13,
+        "averageHrForce": 1.4,
+        "maxHrForce": 1.4,
+        "highHrForceRows": 13,
+        "extremeHrForceRows": 0,
+        "highHrForceSharePct": 100,
+        "qualityAbPct": 48.7,
+        "hardHitPct": 12.8,
+        "matchupPassRows": 1,
+        "awayOffense": {
+          "label": "Cardinals hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "Twins hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Cardinals",
@@ -18849,89 +19148,418 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "available-bullpen damage adjustment is active",
+          "handedness split adjustment is active"
+        ],
+        "environment": {
+          "hrForce": 1.4,
+          "envHrForce": 1.4,
+          "ficHrForce": 1.4,
+          "materialHrForce": false,
+          "extremeHrForce": false,
+          "carryMultiplier": 1.08,
+          "hitDelta": 0.5,
+          "runDelta": 0.5,
+          "conversionDelta": 0.012718000000000007,
+          "firstInningProbabilityLiftPct": 3.4,
+          "underFragilityRuns": 1.35,
+          "flags": [
+            "HRForce 1.4 adds carry risk"
+          ],
+          "reasons": [
+            "HRForce 1.4 adds carry risk",
+            "weather/park carry is favorable for flight",
+            "FIC batter-vs-pitcher pockets show HRForce carry"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Cardinals",
+            "pitcherName": "Kyle Leahy",
+            "gamesStarted": 13,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Traffic-risk righty",
+            "expectedInnings": 5,
+            "opponentHistory": {
+              "label": "opponent has hit this starter",
+              "source": "StatMuse vs opponent",
+              "starts": 2,
+              "innings": 1.7,
+              "projectedHitsDelta": 0.2,
+              "first5RunsDelta": 0.1,
+              "runConversionDelta": 0.004736666666666666,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": 0,
+              "repeatOpponentFirst5Tax": 0,
+              "lastOpponentStartSummary": null,
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "opponent has hit this starter vs Twins",
+              "traffic-risk starter type"
+            ]
+          },
+          {
+            "teamName": "Twins",
+            "pitcherName": "Joe Ryan",
+            "gamesStarted": 15,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Contact suppressor",
+            "expectedInnings": 5.36,
+            "opponentHistory": {
+              "label": "opponent has hit this starter",
+              "source": "StatMuse vs opponent",
+              "starts": 2,
+              "innings": 9,
+              "projectedHitsDelta": 0.3,
+              "first5RunsDelta": 0.2,
+              "runConversionDelta": 0.00777608948148148,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": 0,
+              "repeatOpponentFirst5Tax": 0,
+              "lastOpponentStartSummary": "3/29/2025 | 5 IP | 1 R | 1 ER | 5 H",
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "opponent has hit this starter vs Cardinals"
+            ]
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Cardinals",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 56.8,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.262,
+            "splitOpsAverage": 0.781,
+            "topSixSplitAvgAverage": 0.268,
+            "topSixSplitOpsAverage": 0.8,
+            "strongSplitCount": 3,
+            "weakSplitCount": 2,
+            "severeWeakSplitCount": 0,
+            "topSixStrongSplitCount": 3,
+            "topSixWeakSplitCount": 1,
+            "topThirdStrongSplitCount": 1,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": 0.2,
+            "runConversionDelta": 0.0034499999999999986,
+            "strongSplitBats": [
+              {
+                "name": "Alec Burleson",
+                "slot": 3,
+                "bats": "L",
+                "plateAppearances": 201,
+                "avg": 0.328,
+                "ops": 0.985,
+                "seasonAvg": 0.29,
+                "seasonOps": 0.842,
+                "recentAvg": 0.32,
+                "recentOps": 1.273
+              },
+              {
+                "name": "Jordan Walker",
+                "slot": 4,
+                "bats": "R",
+                "plateAppearances": 211,
+                "avg": 0.306,
+                "ops": 0.899,
+                "seasonAvg": 0.302,
+                "seasonOps": 0.919,
+                "recentAvg": 0.393,
+                "recentOps": 1.143
+              },
+              {
+                "name": "Lars Nootbaar",
+                "slot": 5,
+                "bats": "L",
+                "plateAppearances": 20,
+                "avg": 0.235,
+                "ops": 0.879,
+                "seasonAvg": 0.227,
+                "seasonOps": 0.937,
+                "recentAvg": 0.227,
+                "recentOps": 0.937
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Jimmy Crooks",
+                "slot": 7,
+                "bats": "L",
+                "plateAppearances": 21,
+                "avg": 0.158,
+                "ops": 0.554,
+                "seasonAvg": 0.182,
+                "seasonOps": 0.614,
+                "recentAvg": 0.077,
+                "recentOps": 0.508
+              },
+              {
+                "name": "Masyn Winn",
+                "slot": 6,
+                "bats": "R",
+                "plateAppearances": 187,
+                "avg": 0.207,
+                "ops": 0.587,
+                "seasonAvg": 0.232,
+                "seasonOps": 0.632,
+                "recentAvg": 0.211,
+                "recentOps": 0.611
+              }
+            ],
+            "flags": [
+              "Alec Burleson 0.985 OPS vs R",
+              "Jordan Walker 0.899 OPS vs R",
+              "Jimmy Crooks 0.554 OPS vs R"
+            ]
+          },
+          {
+            "teamName": "Twins",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 41.2,
+            "label": "weak handedness split lane",
+            "splitAvgAverage": 0.243,
+            "splitOpsAverage": 0.724,
+            "topSixSplitAvgAverage": 0.239,
+            "topSixSplitOpsAverage": 0.741,
+            "strongSplitCount": 2,
+            "weakSplitCount": 3,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 2,
+            "topSixWeakSplitCount": 2,
+            "topThirdStrongSplitCount": 2,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": -0.2,
+            "runConversionDelta": -0.0041674999999999985,
+            "strongSplitBats": [
+              {
+                "name": "Byron Buxton",
+                "slot": 2,
+                "bats": "R",
+                "plateAppearances": 189,
+                "avg": 0.25,
+                "ops": 0.928,
+                "seasonAvg": 0.256,
+                "seasonOps": 0.877,
+                "recentAvg": 0.231,
+                "recentOps": 0.978
+              },
+              {
+                "name": "Kody Clemens",
+                "slot": 3,
+                "bats": "L",
+                "plateAppearances": 171,
+                "avg": 0.247,
+                "ops": 0.805,
+                "seasonAvg": 0.245,
+                "seasonOps": 0.786,
+                "recentAvg": 0.318,
+                "recentOps": 0.909
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Victor Caratini",
+                "slot": 6,
+                "bats": "S",
+                "plateAppearances": 121,
+                "avg": 0.223,
+                "ops": 0.592,
+                "seasonAvg": 0.213,
+                "seasonOps": 0.607,
+                "recentAvg": 0.3,
+                "recentOps": 0.862
+              },
+              {
+                "name": "Royce Lewis",
+                "slot": 5,
+                "bats": "R",
+                "plateAppearances": 101,
+                "avg": 0.191,
+                "ops": 0.603,
+                "seasonAvg": 0.187,
+                "seasonOps": 0.596,
+                "recentAvg": 0.316,
+                "recentOps": 0.907
+              },
+              {
+                "name": "Luke Keaschall",
+                "slot": 9,
+                "bats": "R",
+                "plateAppearances": 174,
+                "avg": 0.235,
+                "ops": 0.623,
+                "seasonAvg": 0.247,
+                "seasonOps": 0.636,
+                "recentAvg": 0.267,
+                "recentOps": 0.62
+              }
+            ],
+            "flags": [
+              "top-third split pressure",
+              "Byron Buxton 0.928 OPS vs R",
+              "Kody Clemens 0.805 OPS vs R",
+              "Victor Caratini 0.592 OPS vs R",
+              "3 lineup bats carry weak split rows"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Cardinals",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "Twins",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Cardinals",
+            "projectedReliefRunsAllowed": 0.9,
+            "adjustedProjectedReliefRunsAllowed": 0.7,
+            "projectedReliefOuts": 10.2,
+            "leverageAvailabilityScore": 67.6,
+            "leadAvailabilityScore": 90.7,
+            "bridgeStressScore": 33.7,
+            "runDelta": -0.3,
+            "hitDelta": -0.2,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 0.9 -> 0.7"
+            ]
+          },
+          {
+            "teamName": "Twins",
+            "projectedReliefRunsAllowed": 3.7,
+            "adjustedProjectedReliefRunsAllowed": 3.7,
+            "projectedReliefOuts": 11.5,
+            "leverageAvailabilityScore": 45.4,
+            "leadAvailabilityScore": 55.8,
+            "bridgeStressScore": 62.2,
+            "runDelta": 0.9,
+            "hitDelta": 0.7,
+            "expectedEarlyBridge": true,
+            "flags": [
+              "RP2 available-pen runs 3.7 -> 3.7",
+              "leverage availability 45.4/100",
+              "bridge stress 62.2",
+              "run-risk tier watch_bridge"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 6.6,
+          "home": 5.9
+        },
+        "projectedHitTotals": {
+          "away": 10.8,
+          "home": 11.8
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
-        "selection": "Cardinals",
-        "opponent": "Twins",
-        "pickProjectedRuns": 5.2,
-        "opponentProjectedRuns": 5.8,
-        "projectedTotalRuns": 11,
-        "runDiff": -0.6,
-        "absoluteRunDiff": 0.6,
-        "runDiffSharePct": 5.5,
+        "selection": "Twins",
+        "opponent": "Cardinals",
+        "pickProjectedRuns": 5.9,
+        "opponentProjectedRuns": 6.6,
+        "projectedTotalRuns": 12.5,
+        "runDiff": -0.7,
+        "absoluteRunDiff": 0.7,
+        "runDiffSharePct": 5.6,
         "confidence": 52,
-        "marketProbabilityPct": 43.8,
+        "marketProbabilityPct": 48.4,
         "grade": "Thin ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Cardinals projects -0.6 runs better in a 11-run environment."
+        "note": "Twins projects -0.7 runs better in a 12.5-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
-        "label": "Late-rescue side",
-        "shapeLabel": "starter/late split",
+        "label": "Starter-to-bullpen flip",
+        "shapeLabel": "bullpen-flip game",
         "category": {
-          "slug": "late_rescue_side",
-          "label": "Late-rescue side",
-          "bestExpression": "Live side after starter exit",
-          "confidence": 72,
+          "slug": "starter_to_bullpen_flip",
+          "label": "Starter-to-bullpen flip",
+          "bestExpression": "Twins first-five side",
+          "confidence": 100,
           "reasons": [
-            "The edge is late/bridge, not early comfort.",
-            "F5 side is weaker than a live entry after the starter turns over."
+            "The pick can own the starter window without owning the late game.",
+            "Use the timing edge before bridge innings can flip it."
           ],
           "laneMap": {
-            "side": "Prefer live entry after starter exit.",
-            "first5": "Use only if starter and top-order pressure agree.",
+            "side": "Secondary to the named lane.",
+            "first5": "Primary lane.",
             "total": "Needs line-specific EV.",
             "firstInning": "Advisory only.",
-            "live": "Best entry is after the opponent starter leaves."
+            "live": "Use price discipline."
           },
           "inningMap": [
             {
               "innings": "1-2",
-              "expectation": "Cardinals does not need to win the first inning.",
-              "watch": "Avoid panic if early contact is decent."
+              "expectation": "Twins can look right early even if full-game ML is fragile.",
+              "watch": "Entry belongs to F5 or live lead, not blind FG."
             },
             {
               "innings": "3-5",
-              "expectation": "Starter window may be neutral or ugly.",
-              "watch": "F5 side is weaker than full-game/live."
+              "expectation": "This is the main scoring window for the pick.",
+              "watch": "If the pick trails after five, the original read is mostly gone."
             },
             {
               "innings": "6-7",
-              "expectation": "Bridge/late edge is the planned entry point.",
-              "watch": "Look for opponent starter exit or first reliever traffic."
+              "expectation": "Cardinals can re-enter through the bridge.",
+              "watch": "Expect hedge or live reversal pressure here."
             },
             {
               "innings": "8-9",
-              "expectation": "Cardinals needs pressure after the starter turns over.",
-              "watch": "This is a live-side shape, not a pregame comfort shape."
+              "expectation": "Late innings are not aligned with the pregame side.",
+              "watch": "Do not confuse early control with full-game safety."
             }
           ],
           "diagnostics": {
-            "pickOwnsFull": false,
-            "pickOwnsFirst5": false,
+            "pickOwnsFull": true,
+            "pickOwnsFirst5": true,
             "pickOwnsLate": false,
-            "pickOwnsBridge": true,
-            "pickPhaseCount": 1,
+            "pickOwnsBridge": false,
+            "pickPhaseCount": 2,
             "lowPickConversion": true,
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": -2.7
+            "projectedHitEdge": 1
           }
         },
-        "summary": "Late-rescue side: Live side after starter exit. Reality-gap 68/100. Main checks: 79°F | Wind 11 mph Out | 7% precip | weather helps carry.",
-        "pickTeam": "Cardinals",
-        "opponentTeam": "Twins",
+        "summary": "Starter-to-bullpen flip: Twins first-five side. Reality-gap 78.4/100. Main checks: 79°F | Wind 11 mph Out | 7% precip | weather helps carry.",
+        "pickTeam": "Twins",
+        "opponentTeam": "Cardinals",
         "scores": {
           "chaosScore": 44.8,
           "deadEarlyScore": 8.5,
-          "phaseSplitScore": 72,
-          "bullpenFlipScore": 73.1,
-          "starterControlScore": 15.1,
+          "phaseSplitScore": 52,
+          "bullpenFlipScore": 100,
+          "starterControlScore": 48.3,
           "marketContradictionScore": 30,
-          "realityGapScore": 68
+          "realityGapScore": 78.4
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -18945,9 +19573,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 24.8,
-              "pickScore": 0,
-              "opponentScore": 24.8
+              "gameScore": 20.3,
+              "pickScore": 20.3,
+              "opponentScore": 11.1
             },
             {
               "id": "chaos",
@@ -18977,45 +19605,45 @@
               "id": "bridge",
               "label": "Bridge",
               "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-              "gameScore": 73.1,
-              "pickScore": 6,
-              "opponentScore": 8.2
+              "gameScore": 100,
+              "pickScore": 8.2,
+              "opponentScore": 6
             },
             {
               "id": "flow",
               "label": "Flow",
               "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-              "gameScore": 28,
-              "pickScore": 25,
-              "opponentScore": 75
+              "gameScore": 48,
+              "pickScore": 50,
+              "opponentScore": 50
             }
           ],
           "profiles": [
             {
               "role": "pick",
-              "team": "Cardinals",
+              "team": "Twins",
               "scores": {
-                "pressure": 0,
+                "pressure": 20.3,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
-                "bridge": 6,
-                "flow": 25
+                "bridge": 8.2,
+                "flow": 50
               },
               "polygon": [
-                0,
+                20.3,
                 5,
                 0,
                 16,
-                6,
-                25
+                8.2,
+                50
               ],
-              "phaseOwnershipPct": 25,
+              "phaseOwnershipPct": 50,
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 63.5,
-                "bullpenScore": 54.3,
+                "starterScore": 68.1,
+                "bullpenScore": 48.5,
                 "mistakeChaos": 0,
                 "runClustering": 0,
                 "bullpenChaos": 0,
@@ -19026,29 +19654,29 @@
             },
             {
               "role": "opponent",
-              "team": "Twins",
+              "team": "Cardinals",
               "scores": {
-                "pressure": 24.8,
+                "pressure": 11.1,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
-                "bridge": 8.2,
-                "flow": 75
+                "bridge": 6,
+                "flow": 50
               },
               "polygon": [
-                24.8,
+                11.1,
                 5,
                 0,
                 16,
-                8.2,
-                75
+                6,
+                50
               ],
-              "phaseOwnershipPct": 75,
+              "phaseOwnershipPct": 50,
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 71.1,
-                "bullpenScore": 48.5,
+                "starterScore": 61.9,
+                "bullpenScore": 54.3,
                 "mistakeChaos": 0,
                 "runClustering": 0,
                 "bullpenChaos": 0,
@@ -19059,39 +19687,39 @@
             }
           ],
           "gameProfile": {
-            "label": "Late-rescue side",
-            "bestExpression": "Live side after starter exit",
+            "label": "Starter-to-bullpen flip",
+            "bestExpression": "Twins first-five side",
             "scores": {
-              "pressure": 24.8,
+              "pressure": 20.3,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
-              "bridge": 73.1,
-              "flow": 28
+              "bridge": 100,
+              "flow": 48
             },
             "polygon": [
-              24.8,
+              20.3,
               44.8,
               8.5,
               24.4,
-              73.1,
-              28
+              100,
+              48
             ],
             "dominantAxes": [
               {
                 "id": "bridge",
                 "label": "Bridge",
-                "score": 73.1
+                "score": 100
+              },
+              {
+                "id": "flow",
+                "label": "Flow",
+                "score": 48
               },
               {
                 "id": "chaos",
                 "label": "Chaos",
                 "score": 44.8
-              },
-              {
-                "id": "flow",
-                "label": "Flow",
-                "score": 28
               }
             ]
           }
@@ -19099,10 +19727,10 @@
         "phaseMap": {
           "fullGameTraffic": "Twins",
           "first5": "Twins",
-          "late": "Twins",
+          "late": "Cardinals",
           "bridge": "Cardinals",
           "distinctPhaseTeams": 2,
-          "pickPhaseMisses": 3
+          "pickPhaseMisses": 2
         },
         "metrics": {
           "maxMistakeChaos": null,
@@ -19120,44 +19748,44 @@
           "79°F | Wind 11 mph Out | 7% precip | weather helps carry"
         ],
         "laneMap": {
-          "side": "Prefer live entry after starter exit.",
-          "first5": "Use only if starter and top-order pressure agree.",
+          "side": "Secondary to the named lane.",
+          "first5": "Primary lane.",
           "total": "Needs line-specific EV.",
           "firstInning": "Advisory only.",
-          "live": "Best entry is after the opponent starter leaves."
+          "live": "Use price discipline."
         },
         "inningMap": [
           {
             "innings": "1-2",
-            "expectation": "Cardinals does not need to win the first inning.",
-            "watch": "Avoid panic if early contact is decent."
+            "expectation": "Twins can look right early even if full-game ML is fragile.",
+            "watch": "Entry belongs to F5 or live lead, not blind FG."
           },
           {
             "innings": "3-5",
-            "expectation": "Starter window may be neutral or ugly.",
-            "watch": "F5 side is weaker than full-game/live."
+            "expectation": "This is the main scoring window for the pick.",
+            "watch": "If the pick trails after five, the original read is mostly gone."
           },
           {
             "innings": "6-7",
-            "expectation": "Bridge/late edge is the planned entry point.",
-            "watch": "Look for opponent starter exit or first reliever traffic."
+            "expectation": "Cardinals can re-enter through the bridge.",
+            "watch": "Expect hedge or live reversal pressure here."
           },
           {
             "innings": "8-9",
-            "expectation": "Cardinals needs pressure after the starter turns over.",
-            "watch": "This is a live-side shape, not a pregame comfort shape."
+            "expectation": "Late innings are not aligned with the pregame side.",
+            "watch": "Do not confuse early control with full-game safety."
           }
         ],
         "marketImplications": {
-          "side": "Do not treat Cardinals as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
-          "first5": "First-five may be cleaner than full game if the starter-window edge is on the pick and the late edge flips.",
+          "side": "Do not treat Twins as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
+          "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 50.1% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 56% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 41.3,
+          "impactScore": 54.8,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -19194,12 +19822,12 @@
       "first5Moneyline": {
         "pickSide": "home",
         "pickTeam": "Twins",
-        "awayProjectedRuns": 2.5,
-        "homeProjectedRuns": 3.4,
-        "awayLeadProbability": 27.9,
-        "homeLeadProbability": 56.3,
-        "pushProbability": 15.8,
-        "leadProbability": 56.3,
+        "awayProjectedRuns": 3,
+        "homeProjectedRuns": 3.6,
+        "awayLeadProbability": 33.2,
+        "homeLeadProbability": 51.3,
+        "pushProbability": 15.5,
+        "leadProbability": 51.3,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -19221,7 +19849,7 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 68,
-        "probability": 24.7,
+        "probability": 24.8,
         "expectedValue": 0.3,
         "statValueLabel": "0.28 exp HR",
         "sample": {
@@ -19284,78 +19912,78 @@
         "playerSummary": ".245 AVG | .786 OPS | 48 H | 9 HR | 12g: .318 AVG | .909 OPS | 14 H | 2 HR | vs RHP: .247 AVG | .805 OPS | 7 HR | career 964 PA | .681 OPS | 39 HR | baseline career profile | power 63 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Curveball 16% / Slider 16% | fit +8.7 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
-        "id": "cardinals-twins:621439:rbi",
+        "id": "cardinals-twins:691023:rbi",
         "gameId": "cardinals-twins",
         "gameTitle": "Cardinals @ Twins",
         "league": "MLB",
-        "playerId": 621439,
-        "playerName": "Byron Buxton",
-        "teamName": "Twins",
-        "slot": 2,
+        "playerId": 691023,
+        "playerName": "Jordan Walker",
+        "teamName": "Cardinals",
+        "slot": 4,
         "propType": "rbi",
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
         "confidence": 68,
-        "probability": 93.3,
+        "probability": 93.1,
         "expectedValue": 2.7,
-        "statValueLabel": "2.70 exp RBI",
+        "statValueLabel": "2.67 exp RBI",
         "sample": {
-          "seasonGames": 58,
-          "seasonPlateAppearances": 261,
-          "recentGames": 8,
-          "recentPlateAppearances": 28,
+          "seasonGames": 65,
+          "seasonPlateAppearances": 279,
+          "recentGames": 12,
+          "recentPlateAppearances": 56,
           "statcastGames": 6,
-          "statcastPlateAppearances": 24,
+          "statcastPlateAppearances": 26,
           "opponentContextGames": 0
         },
         "repeatability": {
-          "careerPa": 3646,
-          "seasonPa": 261,
-          "powerIndex": 88.72,
-          "contactRisk": 57.11,
+          "careerPa": 1277,
+          "seasonPa": 279,
+          "powerIndex": 61.31,
+          "contactRisk": 52.83,
           "roleStability": 100,
-          "label": "volatile career power",
-          "volatilityLabel": "strikeout volatility",
-          "careerPowerBacked": true,
-          "careerVolatile": true,
+          "label": "baseline career profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 54,
-            "processScore": -8,
+            "confidenceScore": 72.3,
+            "processScore": 7,
             "careerWeight": 0.1,
-            "identityDelta": 9.1,
+            "identityDelta": 12,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "process fading",
-            "seasonPa": 261,
-            "careerPa": 3646
+            "approachLabel": "process improving",
+            "seasonPa": 279,
+            "careerPa": 1277
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
-          "reason": "volatile career power"
+          "reason": "baseline career profile"
         },
         "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 2 carry | process fading; approach 54/100 | recent form up | split fit live",
+        "reason": "slot 4 carry | process improving; approach 72.3/100 | recent form up | run-production slot",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
-          "deep-lineup",
           "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
-          "process-fading",
+          "process-improving",
           "run-production-slot",
+          "statcast-contact-up",
           "statcast-fade"
         ],
-        "matchupNote": "+10.00 vs Kyle Leahy",
+        "matchupNote": "+10.00 vs Joe Ryan",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".256 AVG | .877 OPS | 61 H | 20 HR | 8g: .231 AVG | .978 OPS | 6 H | 4 HR | vs RHP: .250 AVG | .928 OPS | 18 HR | career 3646 PA | .801 OPS | 185 HR | volatile career power | power 89 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Curveball 16% / Slider 16% | fit +8.5 | +10.0 matchup grade in a traffic-risk lane"
+        "playerSummary": ".302 AVG | .919 OPS | 77 H | 17 HR | 12g: .393 AVG | 1.143 OPS | 22 H | 4 HR | vs RHP: .306 AVG | .899 OPS | 11 HR | career 1277 PA | .722 OPS | 42 HR | baseline career profile | power 61 | 2026 sample ok | arsenal 4-Seam Fastball 45% / Sweeper 14% / Curveball 13% | fit +1.6 | +10.0 matchup grade in a contact-suppressor lane"
       },
       {
         "id": "cardinals-twins:676475:runs",
@@ -19370,9 +19998,9 @@
         "propLabel": "Runs",
         "marketLabel": "Over 0.5 runs",
         "confidence": 72,
-        "probability": 80.7,
-        "expectedValue": 1.6,
-        "statValueLabel": "1.65 exp runs",
+        "probability": 86.1,
+        "expectedValue": 2,
+        "statValueLabel": "1.97 exp runs",
         "sample": {
           "seasonGames": 65,
           "seasonPlateAppearances": 284,
@@ -19433,78 +20061,78 @@
         "playerSummary": ".290 AVG | .842 OPS | 74 H | 11 HR | 12g: .320 AVG | 1.273 OPS | 16 H | 8 HR | vs RHP: .328 AVG | .985 OPS | 10 HR | career 1784 PA | .748 OPS | 55 HR | contact-stable profile | power 57 | 2026 sample ok | arsenal 4-Seam Fastball 45% / Sweeper 14% / Curveball 13% | fit +2.3 | +10.0 matchup grade in a contact-suppressor lane"
       },
       {
-        "id": "cardinals-twins:621439:hitRunRbi",
+        "id": "cardinals-twins:691023:hitRunRbi",
         "gameId": "cardinals-twins",
         "gameTitle": "Cardinals @ Twins",
         "league": "MLB",
-        "playerId": 621439,
-        "playerName": "Byron Buxton",
-        "teamName": "Twins",
-        "slot": 2,
+        "playerId": 691023,
+        "playerName": "Jordan Walker",
+        "teamName": "Cardinals",
+        "slot": 4,
         "propType": "hitRunRbi",
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 96,
-        "expectedValue": 5,
-        "statValueLabel": "1.55 H · 1.23 R · 2.22 RBI · 5.00 total",
+        "probability": 97.5,
+        "expectedValue": 5.6,
+        "statValueLabel": "2.24 H · 1.12 R · 2.19 RBI · 5.55 total",
         "sample": {
-          "seasonGames": 58,
-          "seasonPlateAppearances": 261,
-          "recentGames": 8,
-          "recentPlateAppearances": 28,
+          "seasonGames": 65,
+          "seasonPlateAppearances": 279,
+          "recentGames": 12,
+          "recentPlateAppearances": 56,
           "statcastGames": 6,
-          "statcastPlateAppearances": 24,
+          "statcastPlateAppearances": 26,
           "opponentContextGames": 0
         },
         "repeatability": {
-          "careerPa": 3646,
-          "seasonPa": 261,
-          "powerIndex": 88.72,
-          "contactRisk": 57.11,
+          "careerPa": 1277,
+          "seasonPa": 279,
+          "powerIndex": 61.31,
+          "contactRisk": 52.83,
           "roleStability": 100,
-          "label": "volatile career power",
-          "volatilityLabel": "strikeout volatility",
-          "careerPowerBacked": true,
-          "careerVolatile": true,
+          "label": "baseline career profile",
+          "volatilityLabel": "stable enough",
+          "careerPowerBacked": false,
+          "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 54,
-            "processScore": -8,
+            "confidenceScore": 72.3,
+            "processScore": 7,
             "careerWeight": 0.1,
-            "identityDelta": 9.1,
+            "identityDelta": 12,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "process fading",
-            "seasonPa": 261,
-            "careerPa": 3646
+            "approachLabel": "process improving",
+            "seasonPa": 279,
+            "careerPa": 1277
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
-          "reason": "volatile career power"
+          "reason": "baseline career profile"
         },
         "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 2 carry | recent form up | split fit live | combined hits/runs/RBI lane",
+        "reason": "slot 4 carry | recent form up | combined hits/runs/RBI lane",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
-          "deep-lineup",
           "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
-          "process-fading",
+          "process-improving",
           "combined-production-lane",
+          "statcast-contact-up",
           "statcast-fade"
         ],
-        "matchupNote": "+10.00 vs Kyle Leahy",
+        "matchupNote": "+10.00 vs Joe Ryan",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".256 AVG | .877 OPS | 61 H | 20 HR | 8g: .231 AVG | .978 OPS | 6 H | 4 HR | vs RHP: .250 AVG | .928 OPS | 18 HR | career 3646 PA | .801 OPS | 185 HR | volatile career power | power 89 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Curveball 16% / Slider 16% | fit +8.5 | +10.0 matchup grade in a traffic-risk lane"
+        "playerSummary": ".302 AVG | .919 OPS | 77 H | 17 HR | 12g: .393 AVG | 1.143 OPS | 22 H | 4 HR | vs RHP: .306 AVG | .899 OPS | 11 HR | career 1277 PA | .722 OPS | 42 HR | baseline career profile | power 61 | 2026 sample ok | arsenal 4-Seam Fastball 45% / Sweeper 14% / Curveball 13% | fit +1.6 | +10.0 matchup grade in a contact-suppressor lane"
       },
       {
         "id": "cardinals-twins:665019:totalBases",
@@ -19594,10 +20222,10 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 68,
-        "probability": 56.7,
-        "expectedValue": 1.9,
-        "statValueLabel": "1.90 exp hits",
+        "confidence": 75,
+        "probability": 67.9,
+        "expectedValue": 2.3,
+        "statValueLabel": "2.34 exp hits",
         "sample": {
           "seasonGames": 65,
           "seasonPlateAppearances": 284,
@@ -19669,7 +20297,7 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 64,
-        "probability": 32.9,
+        "probability": 32.7,
         "expectedValue": 0.4,
         "statValueLabel": "0.40 exp walks",
         "sample": {
@@ -19731,35 +20359,35 @@
         "playerSummary": ".256 AVG | .877 OPS | 61 H | 20 HR | 8g: .231 AVG | .978 OPS | 6 H | 4 HR | vs RHP: .250 AVG | .928 OPS | 18 HR | career 3646 PA | .801 OPS | 185 HR | volatile career power | power 89 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Curveball 16% / Slider 16% | fit +8.5 | +10.0 matchup grade in a traffic-risk lane"
       },
       {
-        "id": "cardinals-twins:665019:singles",
+        "id": "cardinals-twins:691023:singles",
         "gameId": "cardinals-twins",
         "gameTitle": "Cardinals @ Twins",
         "league": "MLB",
-        "playerId": 665019,
-        "playerName": "Kody Clemens",
-        "teamName": "Twins",
-        "slot": 3,
+        "playerId": 691023,
+        "playerName": "Jordan Walker",
+        "teamName": "Cardinals",
+        "slot": 4,
         "propType": "singles",
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
-        "confidence": 73,
-        "probability": 53.9,
-        "expectedValue": 0.8,
-        "statValueLabel": "0.77 exp singles",
+        "confidence": 75,
+        "probability": 71.6,
+        "expectedValue": 1.3,
+        "statValueLabel": "1.26 exp singles",
         "sample": {
-          "seasonGames": 57,
-          "seasonPlateAppearances": 217,
+          "seasonGames": 65,
+          "seasonPlateAppearances": 279,
           "recentGames": 12,
-          "recentPlateAppearances": 44,
+          "recentPlateAppearances": 56,
           "statcastGames": 6,
-          "statcastPlateAppearances": 25,
+          "statcastPlateAppearances": 26,
           "opponentContextGames": 0
         },
         "repeatability": {
-          "careerPa": 964,
-          "seasonPa": 217,
-          "powerIndex": 63.14,
-          "contactRisk": 50.09,
+          "careerPa": 1277,
+          "seasonPa": 279,
+          "powerIndex": 61.31,
+          "contactRisk": 52.83,
           "roleStability": 100,
           "label": "baseline career profile",
           "volatilityLabel": "stable enough",
@@ -19767,16 +20395,16 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 78.4,
-            "processScore": 21,
+            "confidenceScore": 72.3,
+            "processScore": 7,
             "careerWeight": 0.1,
-            "identityDelta": 4,
+            "identityDelta": 12,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 217,
-            "careerPa": 964
+            "seasonPa": 279,
+            "careerPa": 1277
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
@@ -19785,25 +20413,23 @@
         "recommendationTier": "Strong",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 3 carry | sweet-spot contact is live | recent form up | split fit live",
+        "reason": "slot 4 carry | sweet-spot contact is live | recent form up | clean traffic lane",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
-          "deep-lineup",
           "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
           "process-improving",
-          "statcast-power-up",
           "statcast-contact-up",
-          "statcast-hr-carry"
+          "statcast-fade"
         ],
-        "matchupNote": "+10.00 vs Kyle Leahy",
+        "matchupNote": "+10.00 vs Joe Ryan",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".245 AVG | .786 OPS | 48 H | 9 HR | 12g: .318 AVG | .909 OPS | 14 H | 2 HR | vs RHP: .247 AVG | .805 OPS | 7 HR | career 964 PA | .681 OPS | 39 HR | baseline career profile | power 63 | 2026 sample ok | arsenal 4-Seam Fastball 29% / Curveball 16% / Slider 16% | fit +8.7 | +10.0 matchup grade in a traffic-risk lane"
+        "playerSummary": ".302 AVG | .919 OPS | 77 H | 17 HR | 12g: .393 AVG | 1.143 OPS | 22 H | 4 HR | vs RHP: .306 AVG | .899 OPS | 11 HR | career 1277 PA | .722 OPS | 42 HR | baseline career profile | power 61 | 2026 sample ok | arsenal 4-Seam Fastball 45% / Sweeper 14% / Curveball 13% | fit +1.6 | +10.0 matchup grade in a contact-suppressor lane"
       }
     ],
     "byType": {
@@ -19814,7 +20440,7 @@
       "runs": [],
       "hitRunRbi": []
     },
-    "candidateCount": 63,
+    "candidateCount": 64,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

@@ -96,10 +96,52 @@ export function BoardView(props: BoardViewProps) {
       </small>
     ) : null
 
+  const gameRailLeanLabel = (game: AnyRecord) => {
+    if (game.winnerName) return getGameResultLine(game)
+    const formatSidePassExpression = (value: string) => {
+      if (/full-game side only/i.test(value)) return 'live/early traffic'
+      if (/no taxed ml/i.test(value)) return 'better live price'
+      return value
+    }
+    const bestExpression =
+      game.analysis?.indicators?.sideCoherenceGate?.bestExpression ||
+      game.analysis?.gameShape?.category?.bestExpression ||
+      ''
+    if (game.league === 'MLB' && game.analysis?.tier === 'Pass' && bestExpression) {
+      return `Side pass · ${formatSidePassExpression(bestExpression)}`
+    }
+    if (game.league === 'MLB' && game.analysis?.indicators?.sideCoherencePassFlag) {
+      return 'Side pass'
+    }
+    return `${game.analysis?.participant?.name || 'Model'} lean`
+  }
+
   const renderMlbRowTime = (row: AnyRecord) => {
     const start = row?.start || row?.raw?.start || row?.game?.start || ''
     if (!start) return null
     return <small className="mlb-value-row-time">Time {start}</small>
+  }
+
+  const renderGameHrForceBadge = (row: AnyRecord) => {
+    const filters = row?.raw?.valueBoardFilters || row?.valueBoardFilters || {}
+    const rawHrForce = filters.gameHrForce
+    const hrForce =
+      rawHrForce !== null && rawHrForce !== undefined && rawHrForce !== ''
+        ? Number(rawHrForce)
+        : Number.NaN
+    const signal = String(filters.gameHrForceSignal || '').trim()
+    const source = String(filters.gameHrForceSource || '').trim()
+    if (!Number.isFinite(hrForce) && !signal && !source) return null
+    const material = filters.gameHrForceMaterial === true || (Number.isFinite(hrForce) && hrForce >= 1.4)
+    return (
+      <small className={`tennis-value-warning inline${material ? ' hot' : ''}`}>
+        {[
+          Number.isFinite(hrForce) ? `HRForce ${formatNumber(hrForce, 1)}` : 'HRForce N/A',
+          material ? 'carry' : signal || 'neutral',
+          source || null
+        ].filter(Boolean).join(' | ')}
+      </small>
+    )
   }
 
   const shadowTierRank = (row: AnyRecord) => {
@@ -1381,6 +1423,7 @@ export function BoardView(props: BoardViewProps) {
                                   ].join(' | ')}
                                 </small>
                               ) : null}
+                              {renderGameHrForceBadge(row)}
                             </span>
                           </button>
                         ))}
@@ -1779,11 +1822,7 @@ export function BoardView(props: BoardViewProps) {
                         {getCompetitorDisplayName(game, game.matchup?.[1], 1)}
                       </span>
                     </div>
-                    <small>
-                      {game.winnerName
-                        ? getGameResultLine(game)
-                        : `${game.analysis?.participant?.name} lean`}
-                    </small>
+                    <small>{gameRailLeanLabel(game)}</small>
                   </div>
                   <div className="game-rail-score mono">{game.analysis?.confidence}</div>
                 </div>

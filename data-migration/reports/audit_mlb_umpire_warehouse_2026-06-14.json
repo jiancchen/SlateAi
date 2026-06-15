@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-14T15:50:49.070Z",
+  "window": {
+    "startDate": "2026-06-14",
+    "endDate": "2026-06-14"
+  },
+  "sources": {
+    "assignments": {
+      "sourceName": "thecapper_mlb_umpires",
+      "sourceUrl": "https://thecapper.io/mlb/umpires/"
+    },
+    "factors": {
+      "sourceName": "fantasyinfocentral_umpire_factors",
+      "sourceUrl": "https://www.fantasyinfocentral.com/mlb/umpires"
+    }
+  },
+  "allowMissingSource": false,
+  "modelUsePolicy": {
+    "assignmentRule": "Only mlb_umpire_assignments_daily rows with date_match_status='exact' may attach to game/model features.",
+    "factorRule": "FIC umpire factors are historical profile context only. They become game context only after joining to an exact home-plate assignment by normalized umpire name.",
+    "stalePageRule": "TheCapper umpire page is a current-slate page. Historical backfills are source gaps unless the raw capture was actually made on that slate day.",
+    "featureBoundary": "Umpire context is additive scout context for pitcher K, walk/run environment, and NRFI/YRFI review; it must not delete or override base M2 rows."
+  },
+  "hardFailures": [],
+  "warnings": [
+    "2026-06-14:no-exact-umpire-game-matches",
+    "2026-06-14:unresolved-or-stale-assignment-rows",
+    "2026-06-14:assignment-metrics-missing-for-some-rows"
+  ],
+  "dates": [
+    {
+      "sourceDate": "2026-06-14",
+      "sourceStatus": {
+        "lastStatus": "success",
+        "completenessStatus": "partial",
+        "expectedItemCount": 15,
+        "actualItemCount": 0,
+        "missingItemCount": 15,
+        "unresolvedCount": 15,
+        "updatedAt": "2026-06-14T15:50:44.833Z"
+      },
+      "ficFactorStatus": {
+        "lastStatus": "success",
+        "completenessStatus": "complete",
+        "expectedItemCount": 157,
+        "actualItemCount": 157,
+        "missingItemCount": 0,
+        "unresolvedCount": 0,
+        "updatedAt": "2026-06-14T15:50:40.100Z"
+      },
+      "mlbGames": 15,
+      "assignments": 15,
+      "exactMatches": 0,
+      "unresolvedRows": 15,
+      "profiles": 77,
+      "ficFactors": 157,
+      "ficFactorFavors": {
+        "hitters": 20,
+        "pitchers": 65,
+        "neutral": 72
+      },
+      "todayFlagProfiles": 14,
+      "capturedDates": [
+        "2026-06-14"
+      ],
+      "capturedOutsideSourceDate": [],
+      "missingAssignmentMetrics": {
+        "zoneFactor": 1,
+        "kPerGame": 1,
+        "bbPerGame": 1,
+        "nrfiPct": 1,
+        "sampleGames": 1
+      },
+      "missingProfileMetrics": {
+        "zoneFactor": 0,
+        "kPerGame": 0,
+        "bbPerGame": 0,
+        "nrfiPct": 77,
+        "kFactor": 0
+      },
+      "missingFicFactorMetrics": {
+        "games": 0,
+        "hitsPerGame": 0,
+        "walksPerGame": 0,
+        "strikeoutsPerGame": 0,
+        "totalScorePerGame": 0,
+        "ops": 0
+      },
+      "duplicateExactGamePks": [],
+      "exactWrongDate": [],
+      "unresolvedExamples": [
+        {
+          "matchup": "Los Angeles Angels @ Los Angeles Dodgers",
+          "umpireName": "Jeremie Rehak",
+          "dateMatchStatus": "matchup_other_date",
+          "bestAvailableGameDate": "2026-06-07"
+        },
+        {
+          "matchup": "New York Mets @ San Diego Padres",
+          "umpireName": "Brian Walsh",
+          "dateMatchStatus": "matchup_other_date",
+          "bestAvailableGameDate": "2026-06-07"
+        },
+        {
+          "matchup": "Seattle Mariners @ Detroit Tigers",
+          "umpireName": "Chris Segal",
+          "dateMatchStatus": "matchup_other_date",
+          "bestAvailableGameDate": "2026-06-07"
+        },
+        {
+          "matchup": "Kansas City Royals @ Minnesota Twins",
+          "umpireName": "Mark Ripperger",
+          "dateMatchStatus": "matchup_other_date",
+          "bestAvailableGameDate": "2026-06-07"
+        },
+        {
+          "matchup": "Cincinnati Reds @ St. Louis Cardinals",
+          "umpireName": "Ben May",
+          "dateMatchStatus": "matchup_other_date",
+          "bestAvailableGameDate": "2026-06-07"
+        },
+        {
+          "matchup": "San Francisco Giants @ Chicago Cubs",
+          "umpireName": "Willie Traynor",
+          "dateMatchStatus": "matchup_other_date",
+          "bestAvailableGameDate": "2026-06-07"
+        },
+        {
+          "matchup": "Baltimore Orioles @ Toronto Blue Jays",
+          "umpireName": "Edwin Moscoso",
+          "dateMatchStatus": "matchup_other_date",
+          "bestAvailableGameDate": "2026-06-07"
+        },
+        {
+          "matchup": "Chicago White Sox @ Philadelphia Phillies",
+          "umpireName": "Jim Wolf",
+          "dateMatchStatus": "matchup_other_date",
+          "bestAvailableGameDate": "2026-06-07"
+        }
+      ],
+      "warnings": [
+        "no-exact-umpire-game-matches",
+        "unresolved-or-stale-assignment-rows",
+        "assignment-metrics-missing-for-some-rows"
+      ],
+      "hardFailures": []
+    }
+  ]
+}

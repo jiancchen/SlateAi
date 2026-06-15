@@ -29,6 +29,10 @@ This audit traces how every current M2 bet surface is calculated:
   - Home run prototype, Savant/lineup/park/weather/starter factors, HR board generation, and batter value-board row scoring.
 - `bet_audit_06_value_board_publication_and_gaps.md`
   - What is actually allowed onto the value board, what the UI filters, what is research-only, and what is still missing or shadow-only.
+- `bet_audit_07_relief_pitcher.md`
+  - Relief pitcher/RP2 audit: what bullpen and reliever data is active, where it affects sides/totals/props, and why exact first reliever is still shadow.
+- `bet_audit_08_starting_pitcher.md`
+  - Starting pitcher audit: active starter factors, starter-vs-team history status, and the current failure where past performance vs today's opponent is not live-weighted.
 
 ## High-level flow
 
@@ -125,4 +129,3 @@ For each bet type, the audit identifies:
 - `pipeline/lib/load-mlb-day-games.mjs`
 - `models/mlb/app-model.js`
 - `models/mlb/cartridges/MLB-M2/MODEL_NOTES.md`
-

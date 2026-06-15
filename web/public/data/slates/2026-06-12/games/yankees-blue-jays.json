@@ -15,12 +15,12 @@
     {
       "side": "Away",
       "name": "Yankees",
-      "detail": "Ryan Weathers (LHP) | 2-4 | 3.86 ERA | 79 SO | 1.16 WHIP | 70.0 IP"
+      "detail": "Ryan Weathers (LHP) | 2-5 | 4.36 ERA | 81 SO | 1.17 WHIP | 74.1 IP"
     },
     {
       "side": "Home",
       "name": "Blue Jays",
-      "detail": "Trey Yesavage (RHP) | 2-3 | 3.16 ERA | 44 SO | 1.17 WHIP | 42.2 IP"
+      "detail": "Trey Yesavage (RHP) | 3-3 | 3.78 ERA | 47 SO | 1.26 WHIP | 47.2 IP"
     }
   ],
   "summary": "Yankees @ Blue Jays with Ryan Weathers against Trey Yesavage.",
@@ -35,21 +35,21 @@
       "divisionLeader": false,
       "divisionRank": "2",
       "gamesBack": "-",
-      "losses": 26,
-      "runDifferential": 103,
-      "streakCode": "W4",
-      "winningPercentage": ".612",
+      "losses": 27,
+      "runDifferential": 100,
+      "streakCode": "L1",
+      "winningPercentage": ".603",
       "wins": 41
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "3",
-      "gamesBack": "9.0",
+      "gamesBack": "8.0",
       "losses": 36,
-      "runDifferential": -18,
-      "streakCode": "L1",
-      "winningPercentage": ".478",
-      "wins": 33
+      "runDifferential": -15,
+      "streakCode": "W1",
+      "winningPercentage": ".486",
+      "wins": 34
     }
   },
   "parkContext": {
@@ -133,6 +133,156 @@
       "Local first pitch 7:37 PM EDT is before the 20:00 late-light threshold.",
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
+  },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Yankees @ Blue Jays",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "NYA",
+    "homeTeamCode": "TOR",
+    "label": "Yankees @ Blue Jays",
+    "sourceStatus": "warehouse",
+    "rowCount": 6,
+    "pitcherName": "R. Weathers",
+    "gameContexts": [
+      "@ 12 NYA TOR"
+    ],
+    "averageHrForce": 1.2,
+    "maxHrForce": 1.2,
+    "highHrForceRows": 0,
+    "extremeHrForceRows": 0,
+    "highHrForceSharePct": 0,
+    "qualityAbPct": 38.8,
+    "hardHitPct": 5.5,
+    "matchupPassRows": 0,
+    "topRows": [
+      {
+        "playerName": "D. Schneider",
+        "pitcherName": "R. Weathers",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "L",
+        "hrForce": 1.2,
+        "qualityAbPct": 33,
+        "hardHitPct": 33,
+        "recentOps": 0.377,
+        "bvpAtBats": 5,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      },
+      {
+        "playerName": "E. Clement",
+        "pitcherName": "R. Weathers",
+        "position": "3B",
+        "batterHand": null,
+        "pitcherHand": "L",
+        "hrForce": 1.2,
+        "qualityAbPct": 0,
+        "hardHitPct": 0,
+        "recentOps": 1.07,
+        "bvpAtBats": 5,
+        "bvpAvg": 0.2,
+        "bvpOps": 1,
+        "matchupPass": false
+      },
+      {
+        "playerName": "A. Gimenez",
+        "pitcherName": "R. Weathers",
+        "position": "2B",
+        "batterHand": null,
+        "pitcherHand": "L",
+        "hrForce": 1.2,
+        "qualityAbPct": 33,
+        "hardHitPct": 0,
+        "recentOps": 0.921,
+        "bvpAtBats": 3,
+        "bvpAvg": 0.333,
+        "bvpOps": 0.666,
+        "matchupPass": false
+      },
+      {
+        "playerName": "M. Straw",
+        "pitcherName": "R. Weathers",
+        "position": null,
+        "batterHand": null,
+        "pitcherHand": "L",
+        "hrForce": 1.2,
+        "qualityAbPct": 100,
+        "hardHitPct": 0,
+        "recentOps": 0.849,
+        "bvpAtBats": 3,
+        "bvpAvg": 0.333,
+        "bvpOps": 0.666,
+        "matchupPass": false
+      },
+      {
+        "playerName": "V. Guerrero",
+        "pitcherName": "R. Weathers",
+        "position": "1B",
+        "batterHand": null,
+        "pitcherHand": "L",
+        "hrForce": 1.2,
+        "qualityAbPct": 67,
+        "hardHitPct": 0,
+        "recentOps": 0.349,
+        "bvpAtBats": 5,
+        "bvpAvg": 0.2,
+        "bvpOps": 0.533,
+        "matchupPass": false
+      },
+      {
+        "playerName": "D. Varsho",
+        "pitcherName": "R. Weathers",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "L",
+        "hrForce": 1.2,
+        "qualityAbPct": 0,
+        "hardHitPct": 0,
+        "recentOps": 0.376,
+        "bvpAtBats": 4,
+        "bvpAvg": 0.25,
+        "bvpOps": 0.5,
+        "matchupPass": false
+      }
+    ],
+    "awayOffense": {
+      "label": "Yankees hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "Blue Jays hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
   },
   "offenseContext": {
     "away": {
@@ -3795,71 +3945,71 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 57.2,
-          "noRunProbabilityPct": 42.8,
-          "awayRunProbabilityPct": 31.1,
-          "homeRunProbabilityPct": 37.9,
+          "runProbabilityPct": 57.7,
+          "noRunProbabilityPct": 42.3,
+          "awayRunProbabilityPct": 30.8,
+          "homeRunProbabilityPct": 38.9,
           "lean": "Run",
           "strength": "lean",
           "sampleHalves": 135,
-          "caution": "Blue Jays starter is in the green this year (1.4 WAR) Blue Jays starter has improved sharply from last year (1.1 WAR delta)",
-          "reason": "YRFI with a 57% modeled chance of at least one first-inning run. Yankees score 31.1% of the time and Blue Jays 37.9% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "caution": "Blue Jays handedness splits are weak against the starter (31.6) Blue Jays starter is in the green this year (1.4 WAR)",
+          "reason": "YRFI with a 58% modeled chance of at least one first-inning run. Yankees score 30.8% of the time and Blue Jays 38.9% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
           "sourceModel": "M2 first-inning"
         },
         {
           "inning": 2,
           "phase": "M2 early F5",
-          "runProbabilityPct": 38.3,
-          "noRunProbabilityPct": 61.7,
-          "awayRunProbabilityPct": 21.7,
-          "homeRunProbabilityPct": 16.6,
+          "runProbabilityPct": 41.9,
+          "noRunProbabilityPct": 58.1,
+          "awayRunProbabilityPct": 23.8,
+          "homeRunProbabilityPct": 18.1,
           "lean": "No run",
-          "strength": "m2-strong",
+          "strength": "m2-baseline",
           "sampleHalves": 135,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 3.2 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Yankees F5 runs 1.5; Blue Jays F5 runs 1.5; Ryan Weathers: HA 5.5, ER 2.5, win yes +178; Trey Yesavage: HA 4.5, ER 2.5, win yes +190; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 3.5 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Yankees F5 runs 1.5; Blue Jays F5 runs 1.5; Ryan Weathers: HA 5.5, ER 2.5, win yes +178; Trey Yesavage: HA 4.5, ER 2.5, win yes +190; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 3,
           "phase": "M2 early F5",
-          "runProbabilityPct": 51.3,
-          "noRunProbabilityPct": 48.7,
-          "awayRunProbabilityPct": 27.2,
-          "homeRunProbabilityPct": 24.1,
-          "lean": "No run",
+          "runProbabilityPct": 55.5,
+          "noRunProbabilityPct": 44.5,
+          "awayRunProbabilityPct": 29.5,
+          "homeRunProbabilityPct": 26,
+          "lean": "Run",
           "strength": "m2-baseline",
           "sampleHalves": 135,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 3.2 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Yankees F5 runs 1.5; Blue Jays F5 runs 1.5; Ryan Weathers: HA 5.5, ER 2.5, win yes +178; Trey Yesavage: HA 4.5, ER 2.5, win yes +190; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 3.5 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Yankees F5 runs 1.5; Blue Jays F5 runs 1.5; Ryan Weathers: HA 5.5, ER 2.5, win yes +178; Trey Yesavage: HA 4.5, ER 2.5, win yes +190; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 4,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 45.8,
-          "noRunProbabilityPct": 54.2,
-          "awayRunProbabilityPct": 23.8,
-          "homeRunProbabilityPct": 22,
+          "runProbabilityPct": 49.8,
+          "noRunProbabilityPct": 50.2,
+          "awayRunProbabilityPct": 25.9,
+          "homeRunProbabilityPct": 23.9,
           "lean": "No run",
           "strength": "m2-baseline",
           "sampleHalves": 135,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 3.2 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Yankees F5 runs 1.5; Blue Jays F5 runs 1.5; Ryan Weathers: HA 5.5, ER 2.5, win yes +178; Trey Yesavage: HA 4.5, ER 2.5, win yes +190; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 3.5 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Yankees F5 runs 1.5; Blue Jays F5 runs 1.5; Ryan Weathers: HA 5.5, ER 2.5, win yes +178; Trey Yesavage: HA 4.5, ER 2.5, win yes +190; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 5,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 44.2,
-          "noRunProbabilityPct": 55.8,
-          "awayRunProbabilityPct": 23.2,
-          "homeRunProbabilityPct": 21,
+          "runProbabilityPct": 48.2,
+          "noRunProbabilityPct": 51.8,
+          "awayRunProbabilityPct": 25.3,
+          "homeRunProbabilityPct": 22.9,
           "lean": "No run",
           "strength": "m2-baseline",
           "sampleHalves": 135,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 3.2 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Yankees F5 runs 1.5; Blue Jays F5 runs 1.5; Ryan Weathers: HA 5.5, ER 2.5, win yes +178; Trey Yesavage: HA 4.5, ER 2.5, win yes +190; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 3.5 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Yankees F5 runs 1.5; Blue Jays F5 runs 1.5; Ryan Weathers: HA 5.5, ER 2.5, win yes +178; Trey Yesavage: HA 4.5, ER 2.5, win yes +190; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -8090,15 +8240,15 @@
       "fullName": "Ryan Weathers",
       "pitchHand": "L",
       "wins": 2,
-      "losses": 4,
-      "era": "3.86",
-      "strikeOuts": 79,
-      "inningsPitched": "70.0",
-      "hitsAllowed": 61,
-      "walks": 20,
-      "homeRunsAllowed": 13,
-      "whip": "1.16",
-      "gamesStarted": 12,
+      "losses": 5,
+      "era": "4.36",
+      "strikeOuts": 81,
+      "inningsPitched": "74.1",
+      "hitsAllowed": 66,
+      "walks": 21,
+      "homeRunsAllowed": 15,
+      "whip": "1.17",
+      "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 677960,
@@ -13059,16 +13209,16 @@
       "id": 702056,
       "fullName": "Trey Yesavage",
       "pitchHand": "R",
-      "wins": 2,
+      "wins": 3,
       "losses": 3,
-      "era": "3.16",
-      "strikeOuts": 44,
-      "inningsPitched": "42.2",
-      "hitsAllowed": 31,
-      "walks": 19,
-      "homeRunsAllowed": 2,
-      "whip": "1.17",
-      "gamesStarted": 8,
+      "era": "3.78",
+      "strikeOuts": 47,
+      "inningsPitched": "47.2",
+      "hitsAllowed": 35,
+      "walks": 25,
+      "homeRunsAllowed": 3,
+      "whip": "1.26",
+      "gamesStarted": 9,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 702056,
@@ -17698,7 +17848,7 @@
       "index": 0,
       "role": "Away",
       "name": "Yankees",
-      "detail": "Ryan Weathers (LHP) | 2-4 | 3.86 ERA | 79 SO | 1.16 WHIP | 70.0 IP",
+      "detail": "Ryan Weathers (LHP) | 2-5 | 4.36 ERA | 81 SO | 1.17 WHIP | 74.1 IP",
       "americanOdds": 102,
       "americanLabel": "+102",
       "decimalOdds": 2.02,
@@ -17710,7 +17860,7 @@
       "index": 1,
       "role": "Home",
       "name": "Blue Jays",
-      "detail": "Trey Yesavage (RHP) | 2-3 | 3.16 ERA | 44 SO | 1.17 WHIP | 42.2 IP",
+      "detail": "Trey Yesavage (RHP) | 3-3 | 3.78 ERA | 47 SO | 1.26 WHIP | 47.2 IP",
       "americanOdds": -123,
       "americanLabel": "-123",
       "decimalOdds": 1.8130081300813008,
@@ -17728,7 +17878,7 @@
         "index": 0,
         "role": "Away",
         "name": "Yankees",
-        "detail": "Ryan Weathers (LHP) | 2-4 | 3.86 ERA | 79 SO | 1.16 WHIP | 70.0 IP",
+        "detail": "Ryan Weathers (LHP) | 2-5 | 4.36 ERA | 81 SO | 1.17 WHIP | 74.1 IP",
         "americanOdds": 102,
         "americanLabel": "+102",
         "decimalOdds": 2.02,
@@ -17740,7 +17890,7 @@
         "index": 1,
         "role": "Home",
         "name": "Blue Jays",
-        "detail": "Trey Yesavage (RHP) | 2-3 | 3.16 ERA | 44 SO | 1.17 WHIP | 42.2 IP",
+        "detail": "Trey Yesavage (RHP) | 3-3 | 3.78 ERA | 47 SO | 1.26 WHIP | 47.2 IP",
         "americanOdds": -123,
         "americanLabel": "-123",
         "decimalOdds": 1.8130081300813008,
@@ -17751,64 +17901,64 @@
   },
   "analysis": {
     "available": true,
-    "participantId": "yankees-blue-jays:0",
+    "participantId": "yankees-blue-jays:1",
     "participant": {
-      "id": "yankees-blue-jays:0",
-      "index": 0,
-      "role": "Away",
-      "name": "Yankees",
-      "detail": "Ryan Weathers (LHP) | 2-4 | 3.86 ERA | 79 SO | 1.16 WHIP | 70.0 IP",
-      "americanOdds": 102,
-      "americanLabel": "+102",
-      "decimalOdds": 2.02,
-      "impliedProbability": 0.49504950495049505,
-      "impliedProbabilityLabel": "49.5%"
-    },
-    "opponent": {
       "id": "yankees-blue-jays:1",
       "index": 1,
       "role": "Home",
       "name": "Blue Jays",
-      "detail": "Trey Yesavage (RHP) | 2-3 | 3.16 ERA | 44 SO | 1.17 WHIP | 42.2 IP",
+      "detail": "Trey Yesavage (RHP) | 3-3 | 3.78 ERA | 47 SO | 1.26 WHIP | 47.2 IP",
       "americanOdds": -123,
       "americanLabel": "-123",
       "decimalOdds": 1.8130081300813008,
       "impliedProbability": 0.5515695067264574,
       "impliedProbabilityLabel": "55.2%"
     },
-    "lean": "Model pick: Yankees on standings profile and lineup-vs-pitching fit.",
-    "rationale": "Standings profile: Yankees (41-26, 2nd in division, +103 RD) vs Blue Jays (33-36, 3rd in division, -18 RD)",
+    "opponent": {
+      "id": "yankees-blue-jays:0",
+      "index": 0,
+      "role": "Away",
+      "name": "Yankees",
+      "detail": "Ryan Weathers (LHP) | 2-5 | 4.36 ERA | 81 SO | 1.17 WHIP | 74.1 IP",
+      "americanOdds": 102,
+      "americanLabel": "+102",
+      "decimalOdds": 2.02,
+      "impliedProbability": 0.49504950495049505,
+      "impliedProbabilityLabel": "49.5%"
+    },
+    "lean": "Model pick: Blue Jays on projected hit volume and hit-production baseline.",
+    "rationale": "Projected hit volume: Blue Jays (6.9 hits | 20% efficiency) vs Yankees (5.8 hits | 16.8% efficiency)",
     "confidence": 52,
-    "volatility": 77,
-    "recommendationScore": 36,
-    "tier": "Swingy",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "volatility": 92,
+    "recommendationScore": 33,
+    "tier": "Pass",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 0,
-    "modelEdgeLabel": "0-point model edge",
-    "marketProbability": 0.4729987697789844,
-    "marketProbabilityLabel": "47.3%",
+    "modelEdge": 1,
+    "modelEdgeLabel": "1-point model edge",
+    "marketProbability": 0.5270012302210156,
+    "marketProbabilityLabel": "52.7%",
     "inputs": [
       {
-        "label": "Standings profile",
-        "summary": "Standings profile: Yankees (41-26, 2nd in division, +103 RD) vs Blue Jays (33-36, 3rd in division, -18 RD)",
-        "source": "Standings context",
-        "margin": 43.3,
+        "label": "Projected hit volume",
+        "summary": "Projected hit volume: Blue Jays (6.9 hits | 20% efficiency) vs Yankees (5.8 hits | 16.8% efficiency)",
+        "source": "Composite offense vs starter and bullpen projection",
+        "margin": 9.3,
+        "weight": 0.19
+      },
+      {
+        "label": "Hit-production baseline",
+        "summary": "Hit-production baseline: Blue Jays (8.30 H/G | last 3 6.00 | home 8.04) vs Yankees (7.64 H/G | last 3 5.00 | away 7.25)",
+        "source": "TeamRankings team offense",
+        "margin": 12.3,
         "weight": 0.14
       },
       {
-        "label": "Lineup-vs-pitching fit",
-        "summary": "Lineup-vs-pitching fit: Yankees (Grade +1.42 | platoon 7 | starter arsenal 39 | bridge arsenal 50 | pressure 77) vs Blue Jays (Grade -0.80 | platoon 7 | starter arsenal 57 | bridge arsenal 50 | pressure 49)",
-        "source": "Official lineup + handedness + starter arsenal + likely reliever arsenal fit",
-        "margin": 6.5,
-        "weight": 0.14
-      },
-      {
-        "label": "Strikeout ceiling",
-        "summary": "Strikeout ceiling: Yankees (79 SO) vs Blue Jays (44 SO)",
+        "label": "Starter record",
+        "summary": "Starter record: Blue Jays (3-3) vs Yankees (2-5)",
         "source": "Listed probable starters",
-        "margin": 6.5,
-        "weight": 0.09
+        "margin": 9.9,
+        "weight": 0.16
       }
     ],
     "inputsUsed": 12,
@@ -17826,6 +17976,14 @@
         "delta": 3
       },
       {
+        "label": "Handedness split rows are moving the offensive shape",
+        "delta": 3
+      },
+      {
+        "label": "Repeat-opponent starter damage tax is live",
+        "delta": 4
+      },
+      {
         "label": "Dome In Domed Stadium",
         "delta": -1
       },
@@ -17834,39 +17992,51 @@
         "delta": 3
       },
       {
-        "label": "Underdog enters with positive recent form",
-        "delta": 3
-      },
-      {
-        "label": "Opposing starter hold is shakier than the season line alone suggests",
-        "delta": -2
-      },
-      {
-        "label": "Blue Jays also own the projected hit edge",
-        "delta": 3
-      },
-      {
-        "label": "v1.1 market budget: this underdog call still needs cleaner starter, stability, and state support before it can be treated like a real market disagreement edge.",
+        "label": "The underdog lineup fits today’s starter better",
         "delta": 5
+      },
+      {
+        "label": "Opponent lineup has real split and top-order pressure against this starter",
+        "delta": 4
+      },
+      {
+        "label": "Overall baseball variance is still high enough that the side reads better as a watchlist edge than a clean conviction tag",
+        "delta": 3
+      },
+      {
+        "label": "Coin-flip pressure is elevated for this full-game side",
+        "delta": 4
+      },
+      {
+        "label": "Late-inning hold risk is above average for this side",
+        "delta": 4
+      },
+      {
+        "label": "Starter edge looks better than the late-inning hold profile; this reads cleaner for first five",
+        "delta": 5
+      },
+      {
+        "label": "Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.",
+        "delta": 3
       }
     ],
     "pickReasons": [
-      "Yankees still hold the better bridge-and-finish script once the bullpens take over.",
-      "Yankees also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
-      "Yankees can lean on Trent Grisham, Spencer Jones, Ryan McMahon to drive early pressure against Trey Yesavage.",
-      "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms."
+      "Blue Jays own the cleaner full-game traffic script at 6.9 projected hits.",
+      "Blue Jays have the better starter-window lane with 4.3 projected first-five hits.",
+      "Blue Jays still hold the better bridge-and-finish script once the bullpens take over.",
+      "Blue Jays can lean on Ernie Clement, Myles Straw to drive early pressure against Ryan Weathers."
     ],
     "indicators": {
-      "reliefPitchingRisk": 60,
-      "coinflipPressure": 57,
-      "starterLeverageIndex": 46.1,
-      "lateInningStabilityIndex": 42.5,
-      "pickBullpenScore": 66.9,
-      "oppBullpenScore": 63.5,
-      "pickBullpenChainScore": 72.7,
-      "oppBullpenChainScore": 70.7,
-      "pickStarterScore": 63.5,
-      "oppStarterScore": 67,
+      "reliefPitchingRisk": 69.1,
+      "coinflipPressure": 62,
+      "starterLeverageIndex": 60.3,
+      "lateInningStabilityIndex": 38.5,
+      "pickBullpenScore": 63.5,
+      "oppBullpenScore": 66.9,
+      "pickBullpenChainScore": 70.7,
+      "oppBullpenChainScore": 72.7,
+      "pickStarterScore": 69.1,
+      "oppStarterScore": 58.1,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -17922,10 +18092,10 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": -0.6,
-      "hitEdgeAgainstPick": true,
-      "pickIsMarketFavorite": false,
-      "pickIsMarketUnderdog": true,
+      "projectedHitEdgeForPick": 1.1,
+      "hitEdgeAgainstPick": false,
+      "pickIsMarketFavorite": true,
+      "pickIsMarketUnderdog": false,
       "heavyFavoriteWeakLineupFlag": false,
       "heavyFavoriteNoisyBullpenFlag": false,
       "deadEarlyRiskFlag": false,
@@ -17945,47 +18115,50 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": -30,
+      "efficientFavoriteScore": -32,
       "efficientFavoriteTier": "Watch favorite",
-      "efficientFavoriteReasons": [],
+      "efficientFavoriteReasons": [
+        "broadSupport"
+      ],
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
+        "stackedRisk",
         "thinModelAgreement",
         "starterNotClean",
         "lateNotClean"
       ],
       "efficientFavoriteBlockers": [
-        "notMarketFavorite",
+        "tierOnePass",
         "notPricedFavorite"
       ],
-      "tierOneRiskPoints": 2,
-      "tierOnePassFlag": false,
+      "tierOneRiskPoints": 4,
+      "tierOnePassFlag": true,
       "tierOneRiskFlags": [
-        "underdogNeedsProof"
+        "highRiskPoints"
       ],
-      "favoredSignalCount": 5,
-      "starterLateGap": 3.6,
+      "favoredSignalCount": 7,
+      "starterLateGap": 21.8,
       "starterLeashGap": 0,
-      "edgeHaircutApplied": 2.1,
+      "edgeHaircutApplied": 0.8,
       "gameShape": {
-        "label": "Late-rescue side",
-        "shapeLabel": "starter/late split",
-        "category": "late_rescue_side",
-        "bestExpression": "Live side after starter exit",
-        "categoryConfidence": 60,
-        "realityGapScore": 49.9,
+        "label": "Starter-to-bullpen flip",
+        "shapeLabel": "balanced traffic game",
+        "category": "starter_to_bullpen_flip",
+        "bestExpression": "Blue Jays first-five side",
+        "categoryConfidence": 61.8,
+        "realityGapScore": 46,
         "chaosScore": 38.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
           {
             "id": "bridge",
             "label": "Bridge",
-            "score": 50.9
+            "score": 61.8
           },
           {
             "id": "flow",
             "label": "Flow",
-            "score": 40
+            "score": 52
           },
           {
             "id": "chaos",
@@ -17993,75 +18166,75 @@
             "score": 38.8
           }
         ],
-        "rfImpactScore": 26.3
+        "rfImpactScore": 29.7
       }
     },
     "gameShape": {
       "modelId": "MLB-M2",
-      "label": "Late-rescue side",
-      "shapeLabel": "starter/late split",
+      "label": "Starter-to-bullpen flip",
+      "shapeLabel": "balanced traffic game",
       "category": {
-        "slug": "late_rescue_side",
-        "label": "Late-rescue side",
-        "bestExpression": "Live side after starter exit",
-        "confidence": 60,
+        "slug": "starter_to_bullpen_flip",
+        "label": "Starter-to-bullpen flip",
+        "bestExpression": "Blue Jays first-five side",
+        "confidence": 61.8,
         "reasons": [
-          "The edge is late/bridge, not early comfort.",
-          "F5 side is weaker than a live entry after the starter turns over."
+          "The pick can own the starter window without owning the late game.",
+          "Use the timing edge before bridge innings can flip it."
         ],
         "laneMap": {
-          "side": "Prefer live entry after starter exit.",
-          "first5": "Use only if starter and top-order pressure agree.",
+          "side": "Secondary to the named lane.",
+          "first5": "Primary lane.",
           "total": "Needs line-specific EV.",
           "firstInning": "Advisory only.",
-          "live": "Best entry is after the opponent starter leaves."
+          "live": "Use price discipline."
         },
         "inningMap": [
           {
             "innings": "1-2",
-            "expectation": "Yankees does not need to win the first inning.",
-            "watch": "Avoid panic if early contact is decent."
+            "expectation": "Blue Jays can look right early even if full-game ML is fragile.",
+            "watch": "Entry belongs to F5 or live lead, not blind FG."
           },
           {
             "innings": "3-5",
-            "expectation": "Starter window may be neutral or ugly.",
-            "watch": "F5 side is weaker than full-game/live."
+            "expectation": "This is the main scoring window for the pick.",
+            "watch": "If the pick trails after five, the original read is mostly gone."
           },
           {
             "innings": "6-7",
-            "expectation": "Bridge/late edge is the planned entry point.",
-            "watch": "Look for opponent starter exit or first reliever traffic."
+            "expectation": "Yankees can re-enter through the bridge.",
+            "watch": "Expect hedge or live reversal pressure here."
           },
           {
             "innings": "8-9",
-            "expectation": "Yankees needs pressure after the starter turns over.",
-            "watch": "This is a live-side shape, not a pregame comfort shape."
+            "expectation": "Late innings are not aligned with the pregame side.",
+            "watch": "Do not confuse early control with full-game safety."
           }
         ],
         "diagnostics": {
-          "pickOwnsFull": false,
-          "pickOwnsFirst5": false,
+          "pickOwnsFull": true,
+          "pickOwnsFirst5": true,
           "pickOwnsLate": true,
-          "pickOwnsBridge": true,
-          "pickPhaseCount": 2,
+          "pickOwnsBridge": false,
+          "pickPhaseCount": 3,
           "lowPickConversion": true,
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": -0.6
+          "projectedHitEdge": 1.1
         }
       },
-      "summary": "Late-rescue side: Live side after starter exit. Reality-gap 49.9/100. Main checks: Dome In Domed Stadium.",
-      "pickTeam": "Yankees",
-      "opponentTeam": "Blue Jays",
+      "summary": "Starter-to-bullpen flip: Blue Jays first-five side. Reality-gap 46/100. Main checks: Dome In Domed Stadium.",
+      "pickTeam": "Blue Jays",
+      "opponentTeam": "Yankees",
       "scores": {
         "chaosScore": 38.8,
         "deadEarlyScore": 8.5,
-        "phaseSplitScore": 60,
-        "bullpenFlipScore": 50.9,
-        "starterControlScore": 23.4,
-        "marketContradictionScore": 23.3,
-        "realityGapScore": 49.9
+        "phaseSplitScore": 48,
+        "bullpenFlipScore": 61.8,
+        "starterControlScore": 37.3,
+        "marketContradictionScore": 18,
+        "realityGapScore": 46
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -18075,9 +18248,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 24.1,
-            "pickScore": 6.6,
-            "opponentScore": 24.1
+            "gameScore": 21.2,
+            "pickScore": 21.2,
+            "opponentScore": 10.5
           },
           {
             "id": "chaos",
@@ -18107,45 +18280,45 @@
             "id": "bridge",
             "label": "Bridge",
             "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-            "gameScore": 50.9,
-            "pickScore": 1.2,
-            "opponentScore": 2.5
+            "gameScore": 61.8,
+            "pickScore": 2.5,
+            "opponentScore": 1.2
           },
           {
             "id": "flow",
             "label": "Flow",
             "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-            "gameScore": 40,
-            "pickScore": 50,
-            "opponentScore": 50
+            "gameScore": 52,
+            "pickScore": 75,
+            "opponentScore": 25
           }
         ],
         "profiles": [
           {
             "role": "pick",
-            "team": "Yankees",
+            "team": "Blue Jays",
             "scores": {
-              "pressure": 6.6,
+              "pressure": 21.2,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
-              "bridge": 1.2,
-              "flow": 50
+              "bridge": 2.5,
+              "flow": 75
             },
             "polygon": [
-              6.6,
+              21.2,
               0,
               0,
               0,
-              1.2,
-              50
+              2.5,
+              75
             ],
-            "phaseOwnershipPct": 50,
+            "phaseOwnershipPct": 75,
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 63.5,
-              "bullpenScore": 66.9,
+              "starterScore": 69.1,
+              "bullpenScore": 63.5,
               "mistakeChaos": 0,
               "runClustering": 0,
               "bullpenChaos": 0,
@@ -18156,29 +18329,29 @@
           },
           {
             "role": "opponent",
-            "team": "Blue Jays",
+            "team": "Yankees",
             "scores": {
-              "pressure": 24.1,
+              "pressure": 10.5,
               "chaos": 0,
               "freeze": 0,
               "air": 0,
-              "bridge": 2.5,
-              "flow": 50
+              "bridge": 1.2,
+              "flow": 25
             },
             "polygon": [
-              24.1,
+              10.5,
               0,
               0,
               0,
-              2.5,
-              50
+              1.2,
+              25
             ],
-            "phaseOwnershipPct": 50,
+            "phaseOwnershipPct": 25,
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 67,
-              "bullpenScore": 63.5,
+              "starterScore": 58.1,
+              "bullpenScore": 66.9,
               "mistakeChaos": 0,
               "runClustering": 0,
               "bullpenChaos": 0,
@@ -18189,34 +18362,34 @@
           }
         ],
         "gameProfile": {
-          "label": "Late-rescue side",
-          "bestExpression": "Live side after starter exit",
+          "label": "Starter-to-bullpen flip",
+          "bestExpression": "Blue Jays first-five side",
           "scores": {
-            "pressure": 24.1,
+            "pressure": 21.2,
             "chaos": 38.8,
             "freeze": 8.5,
             "air": 0,
-            "bridge": 50.9,
-            "flow": 40
+            "bridge": 61.8,
+            "flow": 52
           },
           "polygon": [
-            24.1,
+            21.2,
             38.8,
             8.5,
             0,
-            50.9,
-            40
+            61.8,
+            52
           ],
           "dominantAxes": [
             {
               "id": "bridge",
               "label": "Bridge",
-              "score": 50.9
+              "score": 61.8
             },
             {
               "id": "flow",
               "label": "Flow",
-              "score": 40
+              "score": 52
             },
             {
               "id": "chaos",
@@ -18229,10 +18402,10 @@
       "phaseMap": {
         "fullGameTraffic": "Blue Jays",
         "first5": "Blue Jays",
-        "late": "Yankees",
+        "late": "Blue Jays",
         "bridge": "Yankees",
         "distinctPhaseTeams": 2,
-        "pickPhaseMisses": 2
+        "pickPhaseMisses": 1
       },
       "metrics": {
         "maxMistakeChaos": null,
@@ -18250,44 +18423,44 @@
         "Dome In Domed Stadium"
       ],
       "laneMap": {
-        "side": "Prefer live entry after starter exit.",
-        "first5": "Use only if starter and top-order pressure agree.",
+        "side": "Secondary to the named lane.",
+        "first5": "Primary lane.",
         "total": "Needs line-specific EV.",
         "firstInning": "Advisory only.",
-        "live": "Best entry is after the opponent starter leaves."
+        "live": "Use price discipline."
       },
       "inningMap": [
         {
           "innings": "1-2",
-          "expectation": "Yankees does not need to win the first inning.",
-          "watch": "Avoid panic if early contact is decent."
+          "expectation": "Blue Jays can look right early even if full-game ML is fragile.",
+          "watch": "Entry belongs to F5 or live lead, not blind FG."
         },
         {
           "innings": "3-5",
-          "expectation": "Starter window may be neutral or ugly.",
-          "watch": "F5 side is weaker than full-game/live."
+          "expectation": "This is the main scoring window for the pick.",
+          "watch": "If the pick trails after five, the original read is mostly gone."
         },
         {
           "innings": "6-7",
-          "expectation": "Bridge/late edge is the planned entry point.",
-          "watch": "Look for opponent starter exit or first reliever traffic."
+          "expectation": "Yankees can re-enter through the bridge.",
+          "watch": "Expect hedge or live reversal pressure here."
         },
         {
           "innings": "8-9",
-          "expectation": "Yankees needs pressure after the starter turns over.",
-          "watch": "This is a live-side shape, not a pregame comfort shape."
+          "expectation": "Late innings are not aligned with the pregame side.",
+          "watch": "Do not confuse early control with full-game safety."
         }
       ],
       "marketImplications": {
-        "side": "Do not treat Yankees as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
-        "first5": "First-five may be cleaner than full game if the starter-window edge is on the pick and the late edge flips.",
+        "side": "Blue Jays is more coherent as a side because the game shape mostly agrees with the projection.",
+        "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 57.2% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 57.7% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 26.3,
+        "impactScore": 29.7,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -18322,26 +18495,26 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 6.2,
-      "homeProjectedHits": 6.8,
-      "awayHitEfficiencyPct": 17.8,
-      "homeHitEfficiencyPct": 19.9,
-      "awayFirst5ProjectedHits": 3.6,
-      "homeFirst5ProjectedHits": 4.2,
-      "awayFirst5HitEfficiencyPct": 19,
-      "homeFirst5HitEfficiencyPct": 22,
-      "awayLateProjectedHits": 2.6,
-      "homeLateProjectedHits": 2.6,
-      "awayLateHitEfficiencyPct": 16.6,
-      "homeLateHitEfficiencyPct": 17.1,
+      "awayProjectedHits": 5.8,
+      "homeProjectedHits": 6.9,
+      "awayHitEfficiencyPct": 16.8,
+      "homeHitEfficiencyPct": 20,
+      "awayFirst5ProjectedHits": 3.5,
+      "homeFirst5ProjectedHits": 4.3,
+      "awayFirst5HitEfficiencyPct": 18.3,
+      "homeFirst5HitEfficiencyPct": 22.6,
+      "awayLateProjectedHits": 2.4,
+      "homeLateProjectedHits": 2.5,
+      "awayLateHitEfficiencyPct": 15.2,
+      "homeLateHitEfficiencyPct": 16,
       "awayBullpenChainScore": 72.7,
       "homeBullpenChainScore": 70.7,
       "edgeTeam": "Blue Jays",
-      "edgeHits": 0.6,
+      "edgeHits": 1.1,
       "first5EdgeTeam": "Blue Jays",
-      "first5EdgeHits": 0.6,
-      "lateEdgeTeam": "Yankees",
-      "lateEdgeHits": 0,
+      "first5EdgeHits": 0.8,
+      "lateEdgeTeam": "Blue Jays",
+      "lateEdgeHits": 0.1,
       "bridgeEdgeTeam": "Yankees",
       "bridgeEdgeScore": 2,
       "awayLikelyRelievers": [
@@ -18449,31 +18622,34 @@
       "awayBullpenExhaustionLabel": "fresh",
       "homeBullpenExhaustionLabel": "fresh",
       "awayPitcherType": "Balanced lefty",
-      "homePitcherType": "Contact suppressor",
-      "awayStarterHoldConfidence": 56.4,
-      "homeStarterHoldConfidence": 46,
-      "awayProjectedRuns": 2.5,
-      "homeProjectedRuns": 3,
-      "awayFirst5ProjectedRuns": 1.4,
-      "homeFirst5ProjectedRuns": 1.8,
-      "awayLateProjectedRuns": 1.1,
-      "homeLateProjectedRuns": 1.2,
+      "homePitcherType": "Balanced righty",
+      "awayStarterHoldConfidence": 55.3,
+      "homeStarterHoldConfidence": 45.2,
+      "awayProjectedRuns": 2.2,
+      "homeProjectedRuns": 3.4,
+      "awayFirst5ProjectedRuns": 1.2,
+      "homeFirst5ProjectedRuns": 2.3,
+      "awayLateProjectedRuns": 1,
+      "homeLateProjectedRuns": 1.1,
       "postedTotal": 8,
       "totals": {
         "fullGame": {
           "lean": "Under",
-          "edge": -2.5,
+          "edge": -2.4,
           "strength": "Strong",
           "label": "Under 8",
-          "summary": "Under lean with a 2.5-run edge against 8.",
+          "summary": "Under lean with a 2.4-run edge against 8.",
           "chaosGate": {
             "phase": "full",
-            "overChaosScore": 0,
+            "overChaosScore": 2,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
-            "notes": [],
+            "notes": [
+              "repeat-opponent starter damage"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -18483,24 +18659,44 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": false,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.2,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 1.2,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 38.6,
+              "maxRp2ReliefRuns": 1.5,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.4,
+              "maxRepeatOpponentHitTax": 0.4
             }
           }
         },
         "first5": {
           "lean": "Under",
-          "edge": -1.3,
-          "strength": "Strong",
+          "edge": -1,
+          "strength": "Clear",
           "label": "Under 4.5",
-          "summary": "Under lean with a 1.3-run edge against 4.5.",
+          "summary": "Under lean with a 1.0-run edge against 4.5.",
           "chaosGate": {
             "phase": "first5",
-            "overChaosScore": 0,
+            "overChaosScore": 2,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
-            "notes": [],
+            "notes": [
+              "repeat-opponent starter damage"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -18510,18 +18706,35 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": false,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.2,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 1.2,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 38.6,
+              "maxRp2ReliefRuns": 1.5,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.4,
+              "maxRepeatOpponentHitTax": 0.4
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 3.2,
-            "adjustedProjectedRuns": 3.2,
-            "adjustedEdge": -1.3,
+            "baseProjectedRuns": 3.5,
+            "adjustedProjectedRuns": 3.5,
+            "adjustedEdge": -1,
             "marketExpression": "Under",
             "shape": "balanced",
-            "tailScore": 0,
-            "strandScore": 2.4,
-            "forkScore": 0,
+            "tailScore": 6.4,
+            "strandScore": 2.5,
+            "forkScore": 2.5,
             "tailLift": 0,
             "strandDrag": 0,
             "notes": [],
@@ -18536,24 +18749,43 @@
               "totalFirst5ProjectedHits": 7.8,
               "weatherCarry": false,
               "weatherSuppress": false,
+              "envRunDelta": 0,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.2,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 1.2,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 38.6,
+              "maxRp2ReliefRuns": 1.5,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.4,
               "visibilityRisk": null
             }
           }
         },
         "late": {
           "lean": "Under",
-          "edge": -1.2,
+          "edge": -1.4,
           "strength": "Strong",
           "label": "Under 3.5",
-          "summary": "Under lean with a 1.2-run edge against 3.5.",
+          "summary": "Under lean with a 1.4-run edge against 3.5.",
           "chaosGate": {
             "phase": "late",
-            "overChaosScore": 0,
+            "overChaosScore": 2,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
-            "notes": [],
+            "notes": [
+              "repeat-opponent starter damage"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -18563,22 +18795,39 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": false,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.2,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 1.2,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 38.6,
+              "maxRp2ReliefRuns": 1.5,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.4,
+              "maxRepeatOpponentHitTax": 0.4
             }
           }
         },
-        "projectedFullTotalRuns": 5.5,
-        "projectedFirst5TotalRuns": 3.2,
-        "tailAdjustedProjectedFirst5TotalRuns": 3.2,
+        "projectedFullTotalRuns": 5.6,
+        "projectedFirst5TotalRuns": 3.5,
+        "tailAdjustedProjectedFirst5TotalRuns": 3.5,
         "first5TailOverlay": {
-          "baseProjectedRuns": 3.2,
-          "adjustedProjectedRuns": 3.2,
-          "adjustedEdge": -1.3,
+          "baseProjectedRuns": 3.5,
+          "adjustedProjectedRuns": 3.5,
+          "adjustedEdge": -1,
           "marketExpression": "Under",
           "shape": "balanced",
-          "tailScore": 0,
-          "strandScore": 2.4,
-          "forkScore": 0,
+          "tailScore": 6.4,
+          "strandScore": 2.5,
+          "forkScore": 2.5,
           "tailLift": 0,
           "strandDrag": 0,
           "notes": [],
@@ -18593,13 +18842,29 @@
             "totalFirst5ProjectedHits": 7.8,
             "weatherCarry": false,
             "weatherSuppress": false,
+            "envRunDelta": 0,
+            "envHitsDelta": 0,
+            "envHrDelta": 0.1,
+            "hrForce": 1.2,
+            "highHrForce": false,
+            "lowerWeatherCarry": true,
+            "ficHrForce": 1.2,
+            "ficHighHrForce": false,
+            "materialHrForce": false,
+            "extremeHrForce": false,
+            "carryMultiplier": 1,
+            "ficHighHrForceSharePct": 0,
+            "maxRp2BridgeStress": 38.6,
+            "maxRp2ReliefRuns": 1.5,
+            "rp2LateRunRisk": false,
+            "maxRepeatOpponentFirst5Tax": 0.4,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 2.3,
+        "projectedLateTotalRuns": 2.1,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 4.7,
+        "runShareFirst5TotalLine": 5,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 3.5,
         "bullpenExhaustionNote": "Dome In Domed Stadium. No major bridge-chain exhaustion flag has surfaced yet.",
@@ -18610,11 +18875,11 @@
         "pick": "YRFI",
         "strength": "Lean",
         "label": "YRFI",
-        "edge": 7.2,
-        "yesProbabilityPct": 57.2,
-        "noProbabilityPct": 42.8,
-        "awayRunProbabilityPct": 31.1,
-        "homeRunProbabilityPct": 37.9,
+        "edge": 7.7,
+        "yesProbabilityPct": 57.7,
+        "noProbabilityPct": 42.3,
+        "awayRunProbabilityPct": 30.8,
+        "homeRunProbabilityPct": 38.9,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 20,
@@ -18626,12 +18891,20 @@
           "Blue Jays starter has real season 1st-inning damage (29% run games, 0.3/start)"
         ],
         "cautionStack": [
+          "Blue Jays handedness splits are weak against the starter (31.6)",
           "Blue Jays starter is in the green this year (1.4 WAR)",
           "Blue Jays starter has improved sharply from last year (1.1 WAR delta)"
         ],
+        "environmentAddendum": {
+          "hrForce": 1.2,
+          "highHrForce": false,
+          "maxProbabilityLiftPct": 0.1,
+          "maxProjectedRunsLift": 0,
+          "reasons": []
+        },
         "projectedRuns": 0.8,
         "line": 0.5,
-        "summary": "YRFI with a 57% modeled chance of at least one first-inning run. Yankees score 31.1% of the time and Blue Jays 37.9% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 58% modeled chance of at least one first-inning run. Yankees score 30.8% of the time and Blue Jays 38.9% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
       },
       "teamScripts": [
         {
@@ -18668,7 +18941,6 @@
           "depthScore": 41.9,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Yankees still hold the better bridge-and-finish script once the bullpens take over.",
             "Yankees also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
             "Yankees can lean on Trent Grisham, Spencer Jones, Ryan McMahon to drive early pressure against Trey Yesavage.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -18706,8 +18978,9 @@
           "depthScore": 48,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Blue Jays own the cleaner full-game traffic script at 6.8 projected hits.",
-            "Blue Jays have the better starter-window lane with 4.2 projected first-five hits.",
+            "Blue Jays own the cleaner full-game traffic script at 6.9 projected hits.",
+            "Blue Jays have the better starter-window lane with 4.3 projected first-five hits.",
+            "Blue Jays still hold the better bridge-and-finish script once the bullpens take over.",
             "Blue Jays can lean on Ernie Clement, Myles Straw to drive early pressure against Ryan Weathers.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
             "Ernie Clement and Myles Straw are the best current carry bats in this lineup."
@@ -18715,24 +18988,24 @@
         }
       ],
       "lineupSimulation": {
-        "overview": "Blue Jays rate cleaner through the starter window, but the bridge and finish script still move later in the game.",
+        "overview": "Blue Jays carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
         "phases": [
           {
             "label": "First 5",
             "edgeTeam": "Blue Jays",
-            "projection": "1.8 R",
+            "projection": "2.3 R",
             "note": "Blue Jays lean on Ernie Clement, Myles Straw to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
-            "edgeTeam": "Yankees",
+            "edgeTeam": "Blue Jays",
             "projection": "1.1 R",
-            "note": "Yankees keep more late scoring paths alive, with Trent Grisham, Spencer Jones plus the Yankees bridge chain shaping the middle innings."
+            "note": "Blue Jays keep more late scoring paths alive, with Ernie Clement, Myles Straw plus the Yankees bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Blue Jays",
-            "projection": "6.8 H",
+            "projection": "6.9 H",
             "note": "Blue Jays finish with the stronger aggregate traffic path, anchored by Ernie Clement, Myles Straw."
           }
         ]
@@ -18794,6 +19067,50 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Yankees @ Blue Jays",
+        "gameContextMatch": "team-code",
+        "rowCount": 6,
+        "averageHrForce": 1.2,
+        "maxHrForce": 1.2,
+        "highHrForceRows": 0,
+        "extremeHrForceRows": 0,
+        "highHrForceSharePct": 0,
+        "qualityAbPct": 38.8,
+        "hardHitPct": 5.5,
+        "matchupPassRows": 0,
+        "awayOffense": {
+          "label": "Yankees hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "Blue Jays hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Yankees",
@@ -18832,89 +19149,416 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "handedness split adjustment is active",
+          "repeat-opponent starter tax is active"
+        ],
+        "environment": {
+          "hrForce": 1.2,
+          "envHrForce": 1.2,
+          "ficHrForce": 1.2,
+          "materialHrForce": false,
+          "extremeHrForce": false,
+          "carryMultiplier": 1,
+          "hitDelta": 0,
+          "runDelta": 0,
+          "conversionDelta": 0.000105,
+          "firstInningProbabilityLiftPct": 0,
+          "underFragilityRuns": 0,
+          "flags": [
+            "Dome/weather N/A: weather carry not treated as wind/heat lift",
+            "Low/N/A HRForce cannot be used as a strong under signal"
+          ],
+          "reasons": [
+            "dome/weather N/A keeps weather carry neutral",
+            "weather carry is low or unavailable, so it cannot support an under by itself"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Yankees",
+            "pitcherName": "Ryan Weathers",
+            "gamesStarted": 13,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Balanced lefty",
+            "expectedInnings": 5.82,
+            "opponentHistory": {
+              "label": "repeat opponent damage tax",
+              "source": "same-season game logs",
+              "starts": 1,
+              "innings": 5.3,
+              "projectedHitsDelta": 0.5,
+              "first5RunsDelta": 0.5,
+              "runConversionDelta": 0.008374230666666666,
+              "repeatOpponentUnderWarning": true,
+              "repeatOpponentHitTax": 0.4,
+              "repeatOpponentFirst5Tax": 0.4,
+              "lastOpponentStartSummary": "2026-05-18 | 5.3 IP | 5 R | 5 ER | 7 H | 2 HR",
+              "repeatOpponentFlags": [
+                "repeat opponent run damage"
+              ]
+            },
+            "flags": [
+              "repeat opponent damage tax vs Blue Jays",
+              "repeat-opponent tax: 2026-05-18 | 5.3 IP | 5 R | 5 ER | 7 H | 2 HR"
+            ]
+          },
+          {
+            "teamName": "Blue Jays",
+            "pitcherName": "Trey Yesavage",
+            "gamesStarted": 9,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Balanced righty",
+            "expectedInnings": 5.29,
+            "opponentHistory": {
+              "label": "starter has suppressed this opponent",
+              "source": "same-season game logs",
+              "starts": 1,
+              "innings": 6,
+              "projectedHitsDelta": -0.3,
+              "first5RunsDelta": -0.2,
+              "runConversionDelta": -0.004894,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": -0.2,
+              "repeatOpponentFirst5Tax": -0.1,
+              "lastOpponentStartSummary": "2026-05-20 | 6 IP | 0 R | 0 ER | 2 H",
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "starter has suppressed this opponent vs Yankees"
+            ]
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Yankees",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 45.8,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.24,
+            "splitOpsAverage": 0.744,
+            "topSixSplitAvgAverage": 0.253,
+            "topSixSplitOpsAverage": 0.804,
+            "strongSplitCount": 3,
+            "weakSplitCount": 3,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 3,
+            "topSixWeakSplitCount": 1,
+            "topThirdStrongSplitCount": 1,
+            "topThirdWeakSplitCount": 1,
+            "hitDelta": -0.1,
+            "runConversionDelta": -0.0019375000000000013,
+            "strongSplitBats": [
+              {
+                "name": "Ben Rice",
+                "slot": 2,
+                "bats": "L",
+                "plateAppearances": 185,
+                "avg": 0.301,
+                "ops": 1.047,
+                "seasonAvg": 0.295,
+                "seasonOps": 1.005,
+                "recentAvg": 0.25,
+                "recentOps": 0.748
+              },
+              {
+                "name": "Cody Bellinger",
+                "slot": 4,
+                "bats": "L",
+                "plateAppearances": 194,
+                "avg": 0.273,
+                "ops": 0.846,
+                "seasonAvg": 0.272,
+                "seasonOps": 0.841,
+                "recentAvg": 0.263,
+                "recentOps": 0.837
+              },
+              {
+                "name": "Spencer Jones",
+                "slot": 6,
+                "bats": "L",
+                "plateAppearances": 33,
+                "avg": 0.323,
+                "ops": 0.815,
+                "seasonAvg": 0.278,
+                "seasonOps": 0.722,
+                "recentAvg": 0.5,
+                "recentOps": 1.333
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "J.C. Escarra",
+                "slot": 9,
+                "bats": "L",
+                "plateAppearances": 56,
+                "avg": 0.096,
+                "ops": 0.315,
+                "seasonAvg": 0.162,
+                "seasonOps": 0.452,
+                "recentAvg": null,
+                "recentOps": null
+              },
+              {
+                "name": "Paul Goldschmidt",
+                "slot": 3,
+                "bats": "R",
+                "plateAppearances": 91,
+                "avg": 0.212,
+                "ops": 0.617,
+                "seasonAvg": 0.287,
+                "seasonOps": 0.891,
+                "recentAvg": 0.35,
+                "recentOps": 0.909
+              },
+              {
+                "name": "Ryan McMahon",
+                "slot": 8,
+                "bats": "L",
+                "plateAppearances": 140,
+                "avg": 0.215,
+                "ops": 0.664,
+                "seasonAvg": 0.217,
+                "seasonOps": 0.641,
+                "recentAvg": 0.4,
+                "recentOps": 1.155
+              }
+            ],
+            "flags": [
+              "Ben Rice 1.047 OPS vs R",
+              "Cody Bellinger 0.846 OPS vs R",
+              "J.C. Escarra 0.315 OPS vs R",
+              "3 lineup bats carry weak split rows"
+            ]
+          },
+          {
+            "teamName": "Blue Jays",
+            "opposingStarterHand": "L",
+            "handednessSplitIndex": 31.6,
+            "label": "weak handedness split lane",
+            "splitAvgAverage": 0.228,
+            "splitOpsAverage": 0.686,
+            "topSixSplitAvgAverage": 0.265,
+            "topSixSplitOpsAverage": 0.787,
+            "strongSplitCount": 1,
+            "weakSplitCount": 3,
+            "severeWeakSplitCount": 2,
+            "topSixStrongSplitCount": 1,
+            "topSixWeakSplitCount": 0,
+            "topThirdStrongSplitCount": 1,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": -0.4,
+            "runConversionDelta": -0.008637499999999998,
+            "strongSplitBats": [
+              {
+                "name": "Vladimir Guerrero Jr.",
+                "slot": 3,
+                "bats": "R",
+                "plateAppearances": 62,
+                "avg": 0.327,
+                "ops": 0.941,
+                "seasonAvg": 0.282,
+                "seasonOps": 0.74,
+                "recentAvg": 0.095,
+                "recentOps": 0.295
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Andrés Giménez",
+                "slot": 9,
+                "bats": "L",
+                "plateAppearances": 59,
+                "avg": 0.151,
+                "ops": 0.451,
+                "seasonAvg": 0.22,
+                "seasonOps": 0.618,
+                "recentAvg": 0.316,
+                "recentOps": 0.771
+              },
+              {
+                "name": "Davis Schneider",
+                "slot": 8,
+                "bats": "R",
+                "plateAppearances": 50,
+                "avg": 0.108,
+                "ops": 0.475,
+                "seasonAvg": 0.127,
+                "seasonOps": 0.507,
+                "recentAvg": null,
+                "recentOps": null
+              },
+              {
+                "name": "Myles Straw",
+                "slot": 7,
+                "bats": "R",
+                "plateAppearances": 70,
+                "avg": 0.23,
+                "ops": 0.632,
+                "seasonAvg": 0.257,
+                "seasonOps": 0.677,
+                "recentAvg": 0.364,
+                "recentOps": 0.871
+              }
+            ],
+            "flags": [
+              "Vladimir Guerrero Jr. 0.941 OPS vs L",
+              "Andrés Giménez 0.451 OPS vs L",
+              "3 lineup bats carry weak split rows"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Yankees",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "Blue Jays",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Yankees",
+            "projectedReliefRunsAllowed": 0.7,
+            "adjustedProjectedReliefRunsAllowed": 0.7,
+            "projectedReliefOuts": 10.9,
+            "leverageAvailabilityScore": 63.7,
+            "leadAvailabilityScore": 71.8,
+            "bridgeStressScore": 31.2,
+            "runDelta": -0.3,
+            "hitDelta": -0.2,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 0.7 -> 0.7"
+            ]
+          },
+          {
+            "teamName": "Blue Jays",
+            "projectedReliefRunsAllowed": 1.7,
+            "adjustedProjectedReliefRunsAllowed": 1.5,
+            "projectedReliefOuts": 13.9,
+            "leverageAvailabilityScore": 56,
+            "leadAvailabilityScore": 51.5,
+            "bridgeStressScore": 38.6,
+            "runDelta": -0.2,
+            "hitDelta": 0,
+            "expectedEarlyBridge": true,
+            "flags": [
+              "RP2 available-pen runs 1.7 -> 1.5"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 2.2,
+          "home": 3.4
+        },
+        "projectedHitTotals": {
+          "away": 5.8,
+          "home": 6.9
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
-        "selection": "Yankees",
-        "opponent": "Blue Jays",
-        "pickProjectedRuns": 2.5,
-        "opponentProjectedRuns": 3,
-        "projectedTotalRuns": 5.5,
-        "runDiff": -0.5,
-        "absoluteRunDiff": 0.5,
-        "runDiffSharePct": 9.1,
+        "selection": "Blue Jays",
+        "opponent": "Yankees",
+        "pickProjectedRuns": 3.4,
+        "opponentProjectedRuns": 2.2,
+        "projectedTotalRuns": 5.6,
+        "runDiff": 1.2,
+        "absoluteRunDiff": 1.2,
+        "runDiffSharePct": 21.4,
         "confidence": 52,
-        "marketProbabilityPct": 47.3,
-        "grade": "Thin ML shape",
+        "marketProbabilityPct": 52.7,
+        "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Yankees projects -0.5 runs better in a 5.5-run environment."
+        "note": "Blue Jays projects 1.2 runs better in a 5.6-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
-        "label": "Late-rescue side",
-        "shapeLabel": "starter/late split",
+        "label": "Starter-to-bullpen flip",
+        "shapeLabel": "balanced traffic game",
         "category": {
-          "slug": "late_rescue_side",
-          "label": "Late-rescue side",
-          "bestExpression": "Live side after starter exit",
-          "confidence": 60,
+          "slug": "starter_to_bullpen_flip",
+          "label": "Starter-to-bullpen flip",
+          "bestExpression": "Blue Jays first-five side",
+          "confidence": 61.8,
           "reasons": [
-            "The edge is late/bridge, not early comfort.",
-            "F5 side is weaker than a live entry after the starter turns over."
+            "The pick can own the starter window without owning the late game.",
+            "Use the timing edge before bridge innings can flip it."
           ],
           "laneMap": {
-            "side": "Prefer live entry after starter exit.",
-            "first5": "Use only if starter and top-order pressure agree.",
+            "side": "Secondary to the named lane.",
+            "first5": "Primary lane.",
             "total": "Needs line-specific EV.",
             "firstInning": "Advisory only.",
-            "live": "Best entry is after the opponent starter leaves."
+            "live": "Use price discipline."
           },
           "inningMap": [
             {
               "innings": "1-2",
-              "expectation": "Yankees does not need to win the first inning.",
-              "watch": "Avoid panic if early contact is decent."
+              "expectation": "Blue Jays can look right early even if full-game ML is fragile.",
+              "watch": "Entry belongs to F5 or live lead, not blind FG."
             },
             {
               "innings": "3-5",
-              "expectation": "Starter window may be neutral or ugly.",
-              "watch": "F5 side is weaker than full-game/live."
+              "expectation": "This is the main scoring window for the pick.",
+              "watch": "If the pick trails after five, the original read is mostly gone."
             },
             {
               "innings": "6-7",
-              "expectation": "Bridge/late edge is the planned entry point.",
-              "watch": "Look for opponent starter exit or first reliever traffic."
+              "expectation": "Yankees can re-enter through the bridge.",
+              "watch": "Expect hedge or live reversal pressure here."
             },
             {
               "innings": "8-9",
-              "expectation": "Yankees needs pressure after the starter turns over.",
-              "watch": "This is a live-side shape, not a pregame comfort shape."
+              "expectation": "Late innings are not aligned with the pregame side.",
+              "watch": "Do not confuse early control with full-game safety."
             }
           ],
           "diagnostics": {
-            "pickOwnsFull": false,
-            "pickOwnsFirst5": false,
+            "pickOwnsFull": true,
+            "pickOwnsFirst5": true,
             "pickOwnsLate": true,
-            "pickOwnsBridge": true,
-            "pickPhaseCount": 2,
+            "pickOwnsBridge": false,
+            "pickPhaseCount": 3,
             "lowPickConversion": true,
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": -0.6
+            "projectedHitEdge": 1.1
           }
         },
-        "summary": "Late-rescue side: Live side after starter exit. Reality-gap 49.9/100. Main checks: Dome In Domed Stadium.",
-        "pickTeam": "Yankees",
-        "opponentTeam": "Blue Jays",
+        "summary": "Starter-to-bullpen flip: Blue Jays first-five side. Reality-gap 46/100. Main checks: Dome In Domed Stadium.",
+        "pickTeam": "Blue Jays",
+        "opponentTeam": "Yankees",
         "scores": {
           "chaosScore": 38.8,
           "deadEarlyScore": 8.5,
-          "phaseSplitScore": 60,
-          "bullpenFlipScore": 50.9,
-          "starterControlScore": 23.4,
-          "marketContradictionScore": 23.3,
-          "realityGapScore": 49.9
+          "phaseSplitScore": 48,
+          "bullpenFlipScore": 61.8,
+          "starterControlScore": 37.3,
+          "marketContradictionScore": 18,
+          "realityGapScore": 46
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -18928,9 +19572,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 24.1,
-              "pickScore": 6.6,
-              "opponentScore": 24.1
+              "gameScore": 21.2,
+              "pickScore": 21.2,
+              "opponentScore": 10.5
             },
             {
               "id": "chaos",
@@ -18960,45 +19604,45 @@
               "id": "bridge",
               "label": "Bridge",
               "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-              "gameScore": 50.9,
-              "pickScore": 1.2,
-              "opponentScore": 2.5
+              "gameScore": 61.8,
+              "pickScore": 2.5,
+              "opponentScore": 1.2
             },
             {
               "id": "flow",
               "label": "Flow",
               "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-              "gameScore": 40,
-              "pickScore": 50,
-              "opponentScore": 50
+              "gameScore": 52,
+              "pickScore": 75,
+              "opponentScore": 25
             }
           ],
           "profiles": [
             {
               "role": "pick",
-              "team": "Yankees",
+              "team": "Blue Jays",
               "scores": {
-                "pressure": 6.6,
+                "pressure": 21.2,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
-                "bridge": 1.2,
-                "flow": 50
+                "bridge": 2.5,
+                "flow": 75
               },
               "polygon": [
-                6.6,
+                21.2,
                 0,
                 0,
                 0,
-                1.2,
-                50
+                2.5,
+                75
               ],
-              "phaseOwnershipPct": 50,
+              "phaseOwnershipPct": 75,
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 63.5,
-                "bullpenScore": 66.9,
+                "starterScore": 69.1,
+                "bullpenScore": 63.5,
                 "mistakeChaos": 0,
                 "runClustering": 0,
                 "bullpenChaos": 0,
@@ -19009,29 +19653,29 @@
             },
             {
               "role": "opponent",
-              "team": "Blue Jays",
+              "team": "Yankees",
               "scores": {
-                "pressure": 24.1,
+                "pressure": 10.5,
                 "chaos": 0,
                 "freeze": 0,
                 "air": 0,
-                "bridge": 2.5,
-                "flow": 50
+                "bridge": 1.2,
+                "flow": 25
               },
               "polygon": [
-                24.1,
+                10.5,
                 0,
                 0,
                 0,
-                2.5,
-                50
+                1.2,
+                25
               ],
-              "phaseOwnershipPct": 50,
+              "phaseOwnershipPct": 25,
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 67,
-                "bullpenScore": 63.5,
+                "starterScore": 58.1,
+                "bullpenScore": 66.9,
                 "mistakeChaos": 0,
                 "runClustering": 0,
                 "bullpenChaos": 0,
@@ -19042,34 +19686,34 @@
             }
           ],
           "gameProfile": {
-            "label": "Late-rescue side",
-            "bestExpression": "Live side after starter exit",
+            "label": "Starter-to-bullpen flip",
+            "bestExpression": "Blue Jays first-five side",
             "scores": {
-              "pressure": 24.1,
+              "pressure": 21.2,
               "chaos": 38.8,
               "freeze": 8.5,
               "air": 0,
-              "bridge": 50.9,
-              "flow": 40
+              "bridge": 61.8,
+              "flow": 52
             },
             "polygon": [
-              24.1,
+              21.2,
               38.8,
               8.5,
               0,
-              50.9,
-              40
+              61.8,
+              52
             ],
             "dominantAxes": [
               {
                 "id": "bridge",
                 "label": "Bridge",
-                "score": 50.9
+                "score": 61.8
               },
               {
                 "id": "flow",
                 "label": "Flow",
-                "score": 40
+                "score": 52
               },
               {
                 "id": "chaos",
@@ -19082,10 +19726,10 @@
         "phaseMap": {
           "fullGameTraffic": "Blue Jays",
           "first5": "Blue Jays",
-          "late": "Yankees",
+          "late": "Blue Jays",
           "bridge": "Yankees",
           "distinctPhaseTeams": 2,
-          "pickPhaseMisses": 2
+          "pickPhaseMisses": 1
         },
         "metrics": {
           "maxMistakeChaos": null,
@@ -19103,44 +19747,44 @@
           "Dome In Domed Stadium"
         ],
         "laneMap": {
-          "side": "Prefer live entry after starter exit.",
-          "first5": "Use only if starter and top-order pressure agree.",
+          "side": "Secondary to the named lane.",
+          "first5": "Primary lane.",
           "total": "Needs line-specific EV.",
           "firstInning": "Advisory only.",
-          "live": "Best entry is after the opponent starter leaves."
+          "live": "Use price discipline."
         },
         "inningMap": [
           {
             "innings": "1-2",
-            "expectation": "Yankees does not need to win the first inning.",
-            "watch": "Avoid panic if early contact is decent."
+            "expectation": "Blue Jays can look right early even if full-game ML is fragile.",
+            "watch": "Entry belongs to F5 or live lead, not blind FG."
           },
           {
             "innings": "3-5",
-            "expectation": "Starter window may be neutral or ugly.",
-            "watch": "F5 side is weaker than full-game/live."
+            "expectation": "This is the main scoring window for the pick.",
+            "watch": "If the pick trails after five, the original read is mostly gone."
           },
           {
             "innings": "6-7",
-            "expectation": "Bridge/late edge is the planned entry point.",
-            "watch": "Look for opponent starter exit or first reliever traffic."
+            "expectation": "Yankees can re-enter through the bridge.",
+            "watch": "Expect hedge or live reversal pressure here."
           },
           {
             "innings": "8-9",
-            "expectation": "Yankees needs pressure after the starter turns over.",
-            "watch": "This is a live-side shape, not a pregame comfort shape."
+            "expectation": "Late innings are not aligned with the pregame side.",
+            "watch": "Do not confuse early control with full-game safety."
           }
         ],
         "marketImplications": {
-          "side": "Do not treat Yankees as a plain full-game ML. Price the starter window, bridge, and conversion risk separately.",
-          "first5": "First-five may be cleaner than full game if the starter-window edge is on the pick and the late edge flips.",
+          "side": "Blue Jays is more coherent as a side because the game shape mostly agrees with the projection.",
+          "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Under is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 57.2% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 57.7% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 26.3,
+          "impactScore": 29.7,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -19177,12 +19821,12 @@
       "first5Moneyline": {
         "pickSide": "home",
         "pickTeam": "Blue Jays",
-        "awayProjectedRuns": 1.4,
-        "homeProjectedRuns": 1.8,
-        "awayLeadProbability": 30,
-        "homeLeadProbability": 47,
-        "pushProbability": 22.9,
-        "leadProbability": 47,
+        "awayProjectedRuns": 1.2,
+        "homeProjectedRuns": 2.3,
+        "awayLeadProbability": 18.8,
+        "homeLeadProbability": 62,
+        "pushProbability": 19.2,
+        "leadProbability": 62,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -19204,9 +19848,9 @@
         "propLabel": "Runs",
         "marketLabel": "Over 0.5 runs",
         "confidence": 65,
-        "probability": 69.8,
+        "probability": 69.6,
         "expectedValue": 1.2,
-        "statValueLabel": "1.20 exp runs",
+        "statValueLabel": "1.19 exp runs",
         "sample": {
           "seasonGames": 65,
           "seasonPlateAppearances": 260,
@@ -19273,10 +19917,10 @@
         "propType": "hitRunRbi",
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
-        "confidence": 71,
-        "probability": 69.2,
-        "expectedValue": 2.4,
-        "statValueLabel": "1.24 H · 0.57 R · 0.59 RBI · 2.40 total",
+        "confidence": 73,
+        "probability": 72.9,
+        "expectedValue": 2.6,
+        "statValueLabel": "1.31 H · 0.60 R · 0.67 RBI · 2.58 total",
         "sample": {
           "seasonGames": 68,
           "seasonPlateAppearances": 274,
@@ -19412,9 +20056,9 @@
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
         "confidence": 56,
-        "probability": 35.3,
-        "expectedValue": 1.2,
-        "statValueLabel": "1.24 exp hits",
+        "probability": 37.7,
+        "expectedValue": 1.3,
+        "statValueLabel": "1.31 exp hits",
         "sample": {
           "seasonGames": 68,
           "seasonPlateAppearances": 274,
@@ -19479,10 +20123,10 @@
         "propType": "walks",
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
-        "confidence": 61,
-        "probability": 56.1,
-        "expectedValue": 0.8,
-        "statValueLabel": "0.82 exp walks",
+        "confidence": 63,
+        "probability": 58.6,
+        "expectedValue": 0.9,
+        "statValueLabel": "0.88 exp walks",
         "sample": {
           "seasonGames": 65,
           "seasonPlateAppearances": 260,
@@ -19549,10 +20193,10 @@
         "propType": "singles",
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
-        "confidence": 63,
-        "probability": 59.2,
+        "confidence": 64,
+        "probability": 61.1,
         "expectedValue": 0.9,
-        "statValueLabel": "0.90 exp singles",
+        "statValueLabel": "0.94 exp singles",
         "sample": {
           "seasonGames": 68,
           "seasonPlateAppearances": 274,
@@ -19618,10 +20262,10 @@
         "propType": "hitRunRbi",
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
-        "confidence": 67,
-        "probability": 61.6,
-        "expectedValue": 2.1,
-        "statValueLabel": "0.84 H · 0.71 R · 0.54 RBI · 2.08 total",
+        "confidence": 65,
+        "probability": 59,
+        "expectedValue": 2,
+        "statValueLabel": "0.80 H · 0.71 R · 0.47 RBI · 1.98 total",
         "sample": {
           "seasonGames": 65,
           "seasonPlateAppearances": 260,
@@ -19688,10 +20332,10 @@
         "propType": "hitRunRbi",
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
-        "confidence": 63,
-        "probability": 53.2,
-        "expectedValue": 1.8,
-        "statValueLabel": "0.79 H · 0.47 R · 0.53 RBI · 1.78 total",
+        "confidence": 61,
+        "probability": 50.2,
+        "expectedValue": 1.7,
+        "statValueLabel": "0.76 H · 0.47 R · 0.46 RBI · 1.69 total",
         "sample": {
           "seasonGames": 14,
           "seasonPlateAppearances": 39,
@@ -19755,7 +20399,7 @@
       "runs": [],
       "hitRunRbi": []
     },
-    "candidateCount": 16,
+    "candidateCount": 17,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

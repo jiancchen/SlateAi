@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-06-15T03:52:58.882Z",
+  "phase": "4",
+  "script": "data-migration/scripts/backfill_prediction_rows_from_artifacts.mjs",
+  "dry_run": false,
+  "sports": [
+    {
+      "sport": "mlb",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "dry_run": false,
+      "artifact_count": 149,
+      "planned_prediction_rows": 10617,
+      "zero_row_artifacts": [
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-fitness.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-catboost.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-corpus-dogs.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-corpus-favorites.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-lightgbm.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-moneyline-xgboost.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-totals-calibration.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-25-totals-candidates.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-market-fitness/2026-05-28-fitness.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-player-props-legacy/2026-06-03-player-props-legacy.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-player-props-legacy/2026-06-08-player-props-legacy.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-player-props-legacy/2026-06-10-player-props-legacy.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-05-29-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-05-30-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-05-31-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-01-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-03-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-04-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-05-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-06-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-07-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-08-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-09-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-10-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-11-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-12-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-13-reliever-shadow.json",
+          "error": null
+        },
+        {
+          "local_path": "data-private/predictions/mlb-reliever-shadow/2026-06-14-reliever-shadow.json",
+          "error": null
+        }
+      ],
+      "before_prediction_rows": 16552,
+      "after_prediction_rows": 19677,
+      "lane_counts": {
+        "home_run": 360,
+        "player_prop": 9434,
+        "ml": 823
+      },
+      "sample_rows": [
+        {
+          "prediction_row_id": "pred-11c8c210c30578498834f61e99b0f60d",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Schwarber, Kyle",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-6bed3e5b4c6bb20c15858bd6bff2a508",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Olson, Matt",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-439c494d04f66e9d861a309249e5c7e7",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Alvarez, Yordan",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-05dd62f421c4ac56949388c27b27d5ab",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Buxton, Byron",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-08891b06114e3578d22a401d5866465d",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Moniak, Mickey",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-569693e4cfef7432fbef80ded21a3206",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Murakami, Munetaka",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-5eea2fd2f54c4b8a05b832a65b17c6e2",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Judge, Aaron",
+          "confidence": null
+        },
+        {
+          "prediction_row_id": "pred-7ba0eb11c4ef2cd8e836e39c00f948f5",
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "lane": "home_run",
+          "market_type": "home_run",
+          "selection": "Wood, James",
+          "confidence": null
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "total_prediction_rows": 10617
+}

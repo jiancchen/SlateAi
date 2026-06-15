@@ -80,6 +80,88 @@ const buildMlbMoneylineShape = ({ mlbProjection, participants, winnerIndex, conf
   }
 }
 
+const buildMlbSideCoherenceGate = ({ gameShape, moneylineShape, participant, finalConfidence, finalModelEdge }) => {
+  const category = gameShape?.category || {}
+  const diagnostics = category.diagnostics || {}
+  const bestExpression = String(category.bestExpression || '')
+  const timingLane = /first[-\s]?five|f5|live(?:\s+side|\s+lead|\s+entry)?|after starter exit/i.test(
+    bestExpression
+  )
+  const pickLosesLateBridge = diagnostics.pickOwnsLate === false && diagnostics.pickOwnsBridge === false
+  const pickMissesMultiplePhases = Number(diagnostics.pickPhaseMisses || 0) >= 2
+  const runDiff = Number(moneylineShape?.runDiff)
+  const pickProjectsBehindOnRuns = Number.isFinite(runDiff) && runDiff < -0.1
+  const thinFullGameEdge = Number(finalModelEdge || 0) <= 3
+  const lowConfidenceThinSide =
+    Number(finalConfidence || 0) <= 52 &&
+    thinFullGameEdge &&
+    moneylineShape?.grade !== 'Separated ML shape' &&
+    (timingLane || (Number.isFinite(runDiff) && runDiff <= 1) || diagnostics.pickOwnsBridge === false)
+  const projectedHitEdge = Number(diagnostics.projectedHitEdge)
+  const pickPhaseCount = Number(diagnostics.pickPhaseCount || 0)
+  const pickOwnsEveryPhase =
+    diagnostics.pickOwnsFull === true &&
+    diagnostics.pickOwnsFirst5 === true &&
+    diagnostics.pickOwnsLate === true &&
+    diagnostics.pickOwnsBridge === true
+  const separatedMoneylineShape =
+    moneylineShape?.grade === 'Separated ML shape' &&
+    Number.isFinite(runDiff) &&
+    runDiff >= 1.4 &&
+    Number.isFinite(projectedHitEdge) &&
+    projectedHitEdge >= 1.5
+  const promoteFullGameSide =
+    !pickProjectsBehindOnRuns &&
+    separatedMoneylineShape &&
+    pickOwnsEveryPhase &&
+    pickPhaseCount >= 4 &&
+    Number(finalModelEdge || 0) >= 6
+  const confidenceFloor = promoteFullGameSide
+    ? Math.round(clamp(59 + runDiff * 1.3 + projectedHitEdge * 0.35, 60, 66))
+    : null
+  const demoteFullGameSide =
+    (timingLane &&
+      thinFullGameEdge &&
+      (pickLosesLateBridge || pickMissesMultiplePhases || pickProjectsBehindOnRuns)) ||
+    lowConfidenceThinSide
+
+  if (!demoteFullGameSide) {
+    return {
+      demoteFullGameSide: false,
+      promoteFullGameSide,
+      confidenceFloor,
+      bestExpression,
+      reasons: promoteFullGameSide
+        ? [
+            `${participant.name} owns full game, first five, late, and bridge phases`,
+            `${participant.name} projects ${roundToTenths(runDiff)} runs better`,
+            `${participant.name} owns a ${roundToTenths(projectedHitEdge)}-hit edge`
+          ]
+        : []
+    }
+  }
+
+  return {
+    demoteFullGameSide: true,
+    promoteFullGameSide: false,
+    confidenceFloor: null,
+    bestExpression,
+    reasons: [
+      bestExpression ? `best expression is ${bestExpression}` : 'best expression is not full-game ML',
+      pickLosesLateBridge ? `${participant.name} does not own late or bridge phases` : null,
+      pickProjectsBehindOnRuns ? `${participant.name} projects behind on runs (${roundToTenths(runDiff)})` : null,
+      lowConfidenceThinSide ? `${participant.name} is still sitting at the confidence floor` : null,
+      thinFullGameEdge ? `full-game model edge is thin (${roundToTenths(finalModelEdge)})` : null
+    ].filter(Boolean)
+  }
+}
+
+const formatMlbSidePassExpression = (value = '') => {
+  if (/full-game side only/i.test(value)) return 'live/early traffic'
+  if (/no taxed ml/i.test(value)) return 'better live price'
+  return value || 'timing lane'
+}
+
 const buildFallbackAnalysisModel = (game, participants, hasFullMoneyline) => {
   const providedAnalysis = game.analysis ?? {}
   const participant = findAnalysisParticipant(game.lean, participants)
@@ -462,22 +544,61 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           marketProbabilities
         })
       : null
+  const sideCoherenceGate =
+    game.league === 'MLB'
+      ? buildMlbSideCoherenceGate({
+          gameShape,
+          moneylineShape,
+          participant,
+          finalConfidence,
+          finalModelEdge
+      })
+      : null
+  const sideDemotedByCoherence = Boolean(sideCoherenceGate?.demoteFullGameSide)
+  const sidePromotedByCoherence =
+    !vetoPassFlag &&
+    !sideDemotedByCoherence &&
+    finalTier === 'Pass' &&
+    Boolean(sideCoherenceGate?.promoteFullGameSide)
+  const surfacedTier = sideDemotedByCoherence ? 'Pass' : sidePromotedByCoherence ? 'Swingy' : finalTier
+  const surfacedConfidence = sideDemotedByCoherence
+    ? Math.min(finalConfidence, 52)
+    : sidePromotedByCoherence
+      ? Math.max(finalConfidence, sideCoherenceGate?.confidenceFloor ?? 60)
+      : finalConfidence
+  const surfacedModelEdge = sideDemotedByCoherence ? Math.min(finalModelEdge, 0.1) : finalModelEdge
+  const surfacedRecommendationScore = sideDemotedByCoherence || sidePromotedByCoherence
+    ? Math.round(
+        surfacedConfidence * structuredRecommendationWeight.confidence +
+          (100 - finalVolatility) * structuredRecommendationWeight.stability +
+          surfacedModelEdge * structuredRecommendationWeight.edge
+      )
+    : finalRecommendationScore
+  const surfacedLean = sideDemotedByCoherence
+    ? `Side pass: ${formatMlbSidePassExpression(sideCoherenceGate.bestExpression)} is cleaner than ${participant.name} full-game ML.`
+    : lean
+  const surfacedMoneylineShape = moneylineShape
+    ? {
+        ...moneylineShape,
+        confidence: surfacedConfidence
+      }
+    : null
 
   return {
     available: Boolean(hasFullMoneyline && participant && Number.isFinite(participant.americanOdds)),
     participantId: participant.id,
     participant,
     opponent,
-    lean,
+    lean: surfacedLean,
     rationale: inputs[0]?.summary || game.factors?.[0] || game.summary,
-    confidence: finalConfidence,
+    confidence: surfacedConfidence,
     volatility: finalVolatility,
-    recommendationScore: finalRecommendationScore,
-    tier: finalTier,
+    recommendationScore: surfacedRecommendationScore,
+    tier: surfacedTier,
     sourceLabel: context.sourceLabel,
     modelDesignation: game.league === 'MLB' ? MLB_SIDE_MODEL_DESIGNATION : null,
-    modelEdge: roundToTenths(finalModelEdge),
-    modelEdgeLabel: `${roundToTenths(finalModelEdge)}-point model edge`,
+    modelEdge: roundToTenths(surfacedModelEdge),
+    modelEdgeLabel: `${roundToTenths(surfacedModelEdge)}-point model edge`,
     marketProbability: marketSupport,
     marketProbabilityLabel: formatProbability(marketSupport),
     inputs,
@@ -486,6 +607,12 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
       ...(context.volatilityModifiers || []),
       ...(mlbIndicators?.notes || []),
       ...(tierOneControls?.notes || []),
+      ...(sideDemotedByCoherence
+        ? [{ label: `Full-game ML demoted: ${sideCoherenceGate.reasons.join('; ')}.`, delta: 0 }]
+        : []),
+      ...(sidePromotedByCoherence
+        ? [{ label: `Full-game ML restored from pass cap: ${sideCoherenceGate.reasons.join('; ')}.`, delta: -6 }]
+        : []),
       ...(consensusOverrideNote ? [{ label: consensusOverrideNote, delta: 0 }] : [])
     ],
     pickReasons: pickScript?.winPath?.slice(0, 4) ?? [],
@@ -580,8 +707,12 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           efficientFavoritePenaltyFlags: efficientFavoriteLane?.penaltyFlags ?? [],
           efficientFavoriteBlockers: efficientFavoriteLane?.blockers ?? [],
           tierOneRiskPoints: tierOneControls?.riskPoints ?? 0,
-          tierOnePassFlag: Boolean(tierOneControls?.passFlag),
+          tierOnePassFlag: Boolean(tierOneControls?.passFlag) && !sidePromotedByCoherence,
+          tierOneRawPassFlag: Boolean(tierOneControls?.passFlag),
           tierOneRiskFlags: tierOneControls?.riskFlags ?? [],
+          sideCoherenceGate,
+          sideCoherencePassFlag: sideDemotedByCoherence,
+          sideCoherencePromoteFlag: sidePromotedByCoherence,
           favoredSignalCount,
           starterLateGap: tierOneControls?.starterLateGap ?? null,
           starterLeashGap: tierOneControls?.starterLeashGap ?? null,
@@ -606,7 +737,7 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
     mlbProjection: context.mlbProjection
       ? {
           ...context.mlbProjection,
-          moneylineShape,
+          moneylineShape: surfacedMoneylineShape,
           gameShape
         }
       : null

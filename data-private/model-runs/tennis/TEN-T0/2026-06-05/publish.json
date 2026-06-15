@@ -5,8 +5,8 @@
   "modelId": "TEN-T0",
   "slateDate": "2026-06-05",
   "status": "deployed",
-  "deployedAt": "2026-06-13T00:25:24.728Z",
-  "deploymentUrl": "https://slate-web-static-1-bolm00fz9-jian-chens-projects-667dcf76.vercel.app",
+  "deployedAt": "2026-06-14T18:28:56.635Z",
+  "deploymentUrl": "https://slate-web-static-1-27sqlpvl1-jian-chens-projects-667dcf76.vercel.app",
   "webRoot": "web",
   "vercelProject": {
     "projectId": "prj_wKTGUqaCcDzyat6fBENE0ROnBWFL",
@@ -26,105 +26,144 @@
   },
   "staticArtifact": {
     "root": "web/dist",
-    "files": 1232,
-    "sha256": "5293b0bf005062fb9c2a1ab9c54cc8a55e284811ee80a26ea64890894b2a6ab0"
+    "files": 1270,
+    "sha256": "7dbf2a74d0edc5a5dd576ac36de0fd3dbb46733ee09ae520e117bb281c620a0d"
   },
   "publicData": {
     "currentSlate": {
-      "id": "2026-06-12",
-      "label": "June 12, 2026",
+      "id": "2026-06-14",
+      "label": "June 14, 2026",
       "status": "ready",
       "slateMeta": {
-        "date": "June 12, 2026",
-        "isoDate": "2026-06-12",
-        "omittedMlbGames": [
-          {
-            "id": "rockies-athletics",
-            "title": "Rockies @ Athletics",
-            "reason": "starter-dependent-public-context-incomplete",
-            "failures": [
-              "missing-pitch-fit",
-              "missing-espn-pitcher-splits"
-            ],
-            "awayStarterStatus": "debut-window",
-            "homeStarterStatus": "new-look"
-          }
-        ],
+        "date": "June 14, 2026",
+        "isoDate": "2026-06-14",
+        "omittedMlbGames": [],
         "preservedStartedMlbGames": [
           {
             "id": "marlins-pirates",
             "title": "Marlins @ Pirates",
-            "start": "3:40 PM PT",
-            "startMinutes": 940
+            "start": "9:15 AM PT",
+            "startMinutes": 555
           },
           {
             "id": "mariners-nationals",
             "title": "Mariners @ Nationals",
-            "start": "3:45 PM PT",
-            "startMinutes": 945
+            "start": "10:35 AM PT",
+            "startMinutes": 635
           },
           {
             "id": "padres-orioles",
             "title": "Padres @ Orioles",
-            "start": "4:05 PM PT",
-            "startMinutes": 965
-          },
-          {
-            "id": "rangers-red-sox",
-            "title": "Rangers @ Red Sox",
-            "start": "4:10 PM PT",
-            "startMinutes": 970
-          },
-          {
-            "id": "tigers-guardians",
-            "title": "Tigers @ Guardians",
-            "start": "4:10 PM PT",
-            "startMinutes": 970
-          },
-          {
-            "id": "braves-mets",
-            "title": "Braves @ Mets",
-            "start": "4:15 PM PT",
-            "startMinutes": 975
-          },
-          {
-            "id": "diamondbacks-reds",
-            "title": "Diamondbacks @ Reds",
-            "start": "4:15 PM PT",
-            "startMinutes": 975
+            "start": "10:35 AM PT",
+            "startMinutes": 635
           },
           {
             "id": "yankees-blue-jays",
             "title": "Yankees @ Blue Jays",
-            "start": "4:37 PM PT",
-            "startMinutes": 997
+            "start": "10:37 AM PT",
+            "startMinutes": 637
           },
           {
-            "id": "dodgers-white-sox",
-            "title": "Dodgers @ White Sox",
-            "start": "4:40 PM PT",
-            "startMinutes": 1000
+            "id": "braves-mets",
+            "title": "Braves @ Mets",
+            "start": "10:40 AM PT",
+            "startMinutes": 640
           },
           {
-            "id": "phillies-brewers",
-            "title": "Phillies @ Brewers",
-            "start": "4:40 PM PT",
-            "startMinutes": 1000
+            "id": "diamondbacks-reds",
+            "title": "Diamondbacks @ Reds",
+            "start": "10:40 AM PT",
+            "startMinutes": 640
           },
           {
             "id": "astros-royals",
             "title": "Astros @ Royals",
-            "start": "5:10 PM PT",
-            "startMinutes": 1030
+            "start": "11:10 AM PT",
+            "startMinutes": 670
           },
           {
             "id": "cardinals-twins",
             "title": "Cardinals @ Twins",
-            "start": "5:10 PM PT",
-            "startMinutes": 1030
+            "start": "11:10 AM PT",
+            "startMinutes": 670
+          },
+          {
+            "id": "dodgers-white-sox",
+            "title": "Dodgers @ White Sox",
+            "start": "11:10 AM PT",
+            "startMinutes": 670
+          },
+          {
+            "id": "phillies-brewers",
+            "title": "Phillies @ Brewers",
+            "start": "11:10 AM PT",
+            "startMinutes": 670
           }
         ],
-        "startedPreservationCutoffMinutes": 1041
+        "startedPreservationCutoffMinutes": 675,
+        "restoredStartedFromLiveBeforeLatePublish": [
+          {
+            "id": "marlins-pirates",
+            "title": "Marlins @ Pirates",
+            "start": "9:15 AM PT",
+            "startMinutes": 555
+          },
+          {
+            "id": "mariners-nationals",
+            "title": "Mariners @ Nationals",
+            "start": "10:35 AM PT",
+            "startMinutes": 635
+          },
+          {
+            "id": "padres-orioles",
+            "title": "Padres @ Orioles",
+            "start": "10:35 AM PT",
+            "startMinutes": 635
+          },
+          {
+            "id": "yankees-blue-jays",
+            "title": "Yankees @ Blue Jays",
+            "start": "10:37 AM PT",
+            "startMinutes": 637
+          },
+          {
+            "id": "braves-mets",
+            "title": "Braves @ Mets",
+            "start": "10:40 AM PT",
+            "startMinutes": 640
+          },
+          {
+            "id": "diamondbacks-reds",
+            "title": "Diamondbacks @ Reds",
+            "start": "10:40 AM PT",
+            "startMinutes": 640
+          },
+          {
+            "id": "astros-royals",
+            "title": "Astros @ Royals",
+            "start": "11:10 AM PT",
+            "startMinutes": 670
+          },
+          {
+            "id": "cardinals-twins",
+            "title": "Cardinals @ Twins",
+            "start": "11:10 AM PT",
+            "startMinutes": 670
+          },
+          {
+            "id": "dodgers-white-sox",
+            "title": "Dodgers @ White Sox",
+            "start": "11:10 AM PT",
+            "startMinutes": 670
+          },
+          {
+            "id": "phillies-brewers",
+            "title": "Phillies @ Brewers",
+            "start": "11:10 AM PT",
+            "startMinutes": 670
+          }
+        ],
+        "restoredStartedCutoffMinutes": 675
       },
       "summary": {
         "totalGames": 14,
@@ -545,7 +584,7 @@
                 "missing-pitch-fit",
                 "missing-espn-pitcher-splits"
               ],
-              "awayStarterStatus": "debut-window",
+              "awayStarterStatus": "tiny-sample",
               "homeStarterStatus": "new-look"
             }
           ],
@@ -624,6 +663,247 @@
             }
           ],
           "startedPreservationCutoffMinutes": 1041
+        },
+        "summary": {
+          "totalGames": 14,
+          "mlbGames": 14
+        }
+      },
+      {
+        "id": "2026-06-13",
+        "label": "June 13, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 13, 2026",
+          "isoDate": "2026-06-13",
+          "omittedMlbGames": [
+            {
+              "id": "rockies-athletics",
+              "title": "Rockies @ Athletics",
+              "reason": "starter-dependent-public-context-incomplete",
+              "failures": [
+                "missing-pitch-fit",
+                "missing-espn-pitcher-splits"
+              ],
+              "awayStarterStatus": "season-only",
+              "homeStarterStatus": "debut-window"
+            }
+          ],
+          "preservedStartedMlbGames": [
+            {
+              "id": "cardinals-twins",
+              "title": "Cardinals @ Twins",
+              "start": "11:10 AM PT",
+              "startMinutes": 670
+            },
+            {
+              "id": "yankees-blue-jays",
+              "title": "Yankees @ Blue Jays",
+              "start": "12:07 PM PT",
+              "startMinutes": 727
+            },
+            {
+              "id": "mariners-nationals",
+              "title": "Mariners @ Nationals",
+              "start": "1:05 PM PT",
+              "startMinutes": 785
+            },
+            {
+              "id": "marlins-pirates",
+              "title": "Marlins @ Pirates",
+              "start": "1:05 PM PT",
+              "startMinutes": 785
+            },
+            {
+              "id": "padres-orioles",
+              "title": "Padres @ Orioles",
+              "start": "1:05 PM PT",
+              "startMinutes": 785
+            },
+            {
+              "id": "braves-mets",
+              "title": "Braves @ Mets",
+              "start": "1:10 PM PT",
+              "startMinutes": 790
+            },
+            {
+              "id": "diamondbacks-reds",
+              "title": "Diamondbacks @ Reds",
+              "start": "1:10 PM PT",
+              "startMinutes": 790
+            },
+            {
+              "id": "dodgers-white-sox",
+              "title": "Dodgers @ White Sox",
+              "start": "1:10 PM PT",
+              "startMinutes": 790
+            },
+            {
+              "id": "rangers-red-sox",
+              "title": "Rangers @ Red Sox",
+              "start": "1:10 PM PT",
+              "startMinutes": 790
+            },
+            {
+              "id": "tigers-guardians",
+              "title": "Tigers @ Guardians",
+              "start": "1:10 PM PT",
+              "startMinutes": 790
+            },
+            {
+              "id": "astros-royals",
+              "title": "Astros @ Royals",
+              "start": "4:10 PM PT",
+              "startMinutes": 970
+            },
+            {
+              "id": "phillies-brewers",
+              "title": "Phillies @ Brewers",
+              "start": "4:10 PM PT",
+              "startMinutes": 970
+            }
+          ],
+          "startedPreservationCutoffMinutes": 1068
+        },
+        "summary": {
+          "totalGames": 14,
+          "mlbGames": 14
+        }
+      },
+      {
+        "id": "2026-06-14",
+        "label": "June 14, 2026",
+        "status": "ready",
+        "slateMeta": {
+          "date": "June 14, 2026",
+          "isoDate": "2026-06-14",
+          "omittedMlbGames": [],
+          "preservedStartedMlbGames": [
+            {
+              "id": "marlins-pirates",
+              "title": "Marlins @ Pirates",
+              "start": "9:15 AM PT",
+              "startMinutes": 555
+            },
+            {
+              "id": "mariners-nationals",
+              "title": "Mariners @ Nationals",
+              "start": "10:35 AM PT",
+              "startMinutes": 635
+            },
+            {
+              "id": "padres-orioles",
+              "title": "Padres @ Orioles",
+              "start": "10:35 AM PT",
+              "startMinutes": 635
+            },
+            {
+              "id": "yankees-blue-jays",
+              "title": "Yankees @ Blue Jays",
+              "start": "10:37 AM PT",
+              "startMinutes": 637
+            },
+            {
+              "id": "braves-mets",
+              "title": "Braves @ Mets",
+              "start": "10:40 AM PT",
+              "startMinutes": 640
+            },
+            {
+              "id": "diamondbacks-reds",
+              "title": "Diamondbacks @ Reds",
+              "start": "10:40 AM PT",
+              "startMinutes": 640
+            },
+            {
+              "id": "astros-royals",
+              "title": "Astros @ Royals",
+              "start": "11:10 AM PT",
+              "startMinutes": 670
+            },
+            {
+              "id": "cardinals-twins",
+              "title": "Cardinals @ Twins",
+              "start": "11:10 AM PT",
+              "startMinutes": 670
+            },
+            {
+              "id": "dodgers-white-sox",
+              "title": "Dodgers @ White Sox",
+              "start": "11:10 AM PT",
+              "startMinutes": 670
+            },
+            {
+              "id": "phillies-brewers",
+              "title": "Phillies @ Brewers",
+              "start": "11:10 AM PT",
+              "startMinutes": 670
+            }
+          ],
+          "startedPreservationCutoffMinutes": 675,
+          "restoredStartedFromLiveBeforeLatePublish": [
+            {
+              "id": "marlins-pirates",
+              "title": "Marlins @ Pirates",
+              "start": "9:15 AM PT",
+              "startMinutes": 555
+            },
+            {
+              "id": "mariners-nationals",
+              "title": "Mariners @ Nationals",
+              "start": "10:35 AM PT",
+              "startMinutes": 635
+            },
+            {
+              "id": "padres-orioles",
+              "title": "Padres @ Orioles",
+              "start": "10:35 AM PT",
+              "startMinutes": 635
+            },
+            {
+              "id": "yankees-blue-jays",
+              "title": "Yankees @ Blue Jays",
+              "start": "10:37 AM PT",
+              "startMinutes": 637
+            },
+            {
+              "id": "braves-mets",
+              "title": "Braves @ Mets",
+              "start": "10:40 AM PT",
+              "startMinutes": 640
+            },
+            {
+              "id": "diamondbacks-reds",
+              "title": "Diamondbacks @ Reds",
+              "start": "10:40 AM PT",
+              "startMinutes": 640
+            },
+            {
+              "id": "astros-royals",
+              "title": "Astros @ Royals",
+              "start": "11:10 AM PT",
+              "startMinutes": 670
+            },
+            {
+              "id": "cardinals-twins",
+              "title": "Cardinals @ Twins",
+              "start": "11:10 AM PT",
+              "startMinutes": 670
+            },
+            {
+              "id": "dodgers-white-sox",
+              "title": "Dodgers @ White Sox",
+              "start": "11:10 AM PT",
+              "startMinutes": 670
+            },
+            {
+              "id": "phillies-brewers",
+              "title": "Phillies @ Brewers",
+              "start": "11:10 AM PT",
+              "startMinutes": 670
+            }
+          ],
+          "restoredStartedCutoffMinutes": 675
         },
         "summary": {
           "totalGames": 14,

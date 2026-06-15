@@ -15,12 +15,12 @@
     {
       "side": "Away",
       "name": "Mariners",
-      "detail": "Bryce Miller (RHP) | 2-0 | 1.33 ERA | 29 SO | 0.78 WHIP | 27.0 IP"
+      "detail": "Bryce Miller (RHP) | 3-0 | 1.54 ERA | 36 SO | 0.71 WHIP | 35.0 IP"
     },
     {
       "side": "Home",
       "name": "Nationals",
-      "detail": "Zack Littell (RHP) | 6-4 | 4.76 ERA | 39 SO | 1.31 WHIP | 64.1 IP"
+      "detail": "Zack Littell (RHP) | 6-5 | 5.32 ERA | 39 SO | 1.35 WHIP | 66.0 IP"
     }
   ],
   "summary": "Mariners @ Nationals with Bryce Miller against Zack Littell.",
@@ -36,19 +36,19 @@
       "divisionRank": "1",
       "gamesBack": "-",
       "losses": 34,
-      "runDifferential": 26,
-      "streakCode": "L2",
-      "winningPercentage": ".514",
-      "wins": 36
+      "runDifferential": 34,
+      "streakCode": "W1",
+      "winningPercentage": ".521",
+      "wins": 37
     },
     "home": {
       "divisionLeader": false,
-      "divisionRank": "3",
+      "divisionRank": "4",
       "gamesBack": "10.5",
-      "losses": 34,
-      "runDifferential": 7,
-      "streakCode": "L1",
-      "winningPercentage": ".507",
+      "losses": 35,
+      "runDifferential": -1,
+      "streakCode": "L2",
+      "winningPercentage": ".500",
       "wins": 35
     }
   },
@@ -134,6 +134,156 @@
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
   },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Mariners @ Nationals",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "SEA",
+    "homeTeamCode": "WAS",
+    "label": "Mariners @ Nationals",
+    "sourceStatus": "warehouse",
+    "rowCount": 6,
+    "pitcherName": "Z. Littell",
+    "gameContexts": [
+      "@ 7 SEA WAS"
+    ],
+    "averageHrForce": 1.6,
+    "maxHrForce": 1.6,
+    "highHrForceRows": 6,
+    "extremeHrForceRows": 0,
+    "highHrForceSharePct": 100,
+    "qualityAbPct": 23.7,
+    "hardHitPct": 17,
+    "matchupPassRows": 0,
+    "topRows": [
+      {
+        "playerName": "L. Raley",
+        "pitcherName": "Z. Littell",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 50,
+        "hardHitPct": 50,
+        "recentOps": 0.568,
+        "bvpAtBats": 2,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      },
+      {
+        "playerName": "J. Naylor",
+        "pitcherName": "Z. Littell",
+        "position": "1B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 63,
+        "hardHitPct": 38,
+        "recentOps": 0.824,
+        "bvpAtBats": 7,
+        "bvpAvg": 0.286,
+        "bvpOps": 0.661,
+        "matchupPass": false
+      },
+      {
+        "playerName": "J. Crawford",
+        "pitcherName": "Z. Littell",
+        "position": "SS",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 29,
+        "hardHitPct": 14,
+        "recentOps": 1.1,
+        "bvpAtBats": 6,
+        "bvpAvg": 0,
+        "bvpOps": 0.143,
+        "matchupPass": false
+      },
+      {
+        "playerName": "D. Canzone",
+        "pitcherName": "Z. Littell",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 0,
+        "hardHitPct": 0,
+        "recentOps": 1.327,
+        "bvpAtBats": 5,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      },
+      {
+        "playerName": "J. Rodriguez",
+        "pitcherName": "Z. Littell",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 0,
+        "hardHitPct": 0,
+        "recentOps": 0.504,
+        "bvpAtBats": 7,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      },
+      {
+        "playerName": "P. Wisdom",
+        "pitcherName": "Z. Littell",
+        "position": "1B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.6,
+        "qualityAbPct": 0,
+        "hardHitPct": 0,
+        "recentOps": 0.349,
+        "bvpAtBats": 2,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      }
+    ],
+    "awayOffense": {
+      "label": "Mariners hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "Nationals hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
+  },
   "offenseContext": {
     "away": {
       "hitsPerGame": 7.68889,
@@ -177,7 +327,7 @@
       "teamName": "Mariners",
       "source": "MLB-RP2",
       "chainSource": "MLB-RP2",
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectionOnly": true,
       "identityConfidence": "low",
@@ -248,30 +398,30 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 0,
           "unavailable": true,
-          "shadowSharePct": 20.6,
+          "shadowSharePct": 20.7,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
           "projectionOnly": true
         },
         {
-          "name": "Andrés Muñoz",
-          "pitcherName": "Andrés Muñoz",
+          "name": "Nick Davila",
+          "pitcherName": "Nick Davila",
           "pitcherId": null,
-          "role": "CL",
+          "role": "MID",
           "throws": "R",
-          "expectedOuts": 3,
-          "availabilityScore": 79.4,
-          "bridgeScore": 64.2,
-          "fatigueScore": 20.6,
-          "firstRelieverLikelihood": 50.9,
-          "workedYesterday": false,
-          "backToBack": false,
-          "pitchesLast3": 0,
-          "pitchesLast6": 39,
-          "usedDaysLast3": 0,
+          "expectedOuts": 3.4,
+          "availabilityScore": 11.4,
+          "bridgeScore": 41.7,
+          "fatigueScore": 88.6,
+          "firstRelieverLikelihood": 50.6,
+          "workedYesterday": true,
+          "backToBack": true,
+          "pitchesLast3": 32,
+          "pitchesLast6": 32,
+          "usedDaysLast3": 2,
           "usedDaysLast6": 2,
-          "unavailable": false,
+          "unavailable": true,
           "shadowSharePct": 16.9,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
@@ -308,7 +458,7 @@
       "teamName": "Nationals",
       "source": "MLB-RP2",
       "chainSource": "MLB-RP2",
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectionOnly": true,
       "identityConfidence": "low",
@@ -331,7 +481,7 @@
           "usedDaysLast3": 1,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "shadowSharePct": 22.5,
+          "shadowSharePct": 22.6,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -379,7 +529,7 @@
           "usedDaysLast3": 1,
           "usedDaysLast6": 3,
           "unavailable": false,
-          "shadowSharePct": 20.8,
+          "shadowSharePct": 20.7,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -419,7 +569,7 @@
       "fatigueScore": 40.1,
       "qualityScore": 42.7,
       "runRiskTier": "stable_bridge",
-      "topTwoSharePct": 43.6,
+      "topTwoSharePct": 43.7,
       "lead": {
         "pitcherName": "Richard Lovelady",
         "pitcherId": null,
@@ -442,7 +592,7 @@
   },
   "reliefProjectionContext": {
     "away": {
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectedReliefRunsAllowed": 2.181,
       "projectedReliefOuts": 9.63,
@@ -482,6 +632,7 @@
           "score": 68.676,
           "firstUpBaseScore": 68.676,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": null,
@@ -504,6 +655,30 @@
             "sixPlusRate": 0,
             "startsSample": 2
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Washington Nationals",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 4,
+            "leftHandedBatters": 5,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 5,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 36,
+              "leftPa": 32,
+              "rightDamageAllowed": 0.415,
+              "leftDamageAllowed": 0.303,
+              "splitEdge": 0.112
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 22.9
         },
         {
@@ -525,9 +700,10 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "score": 68.294,
+          "score": 68.063,
           "firstUpBaseScore": 68.204,
           "firstUpTrendAdjustment": 0.09,
+          "firstUpLineupMatchupAdjustment": -0.231,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -548,6 +724,33 @@
             "leashScore": 57.8,
             "sixPlusRate": 0,
             "startsSample": 2
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Washington Nationals",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 5,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 63,
+              "leftPa": 54,
+              "rightDamageAllowed": 0.388,
+              "leftDamageAllowed": 0.449,
+              "splitEdge": 0.061
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.75,
+            "splitStrength": 0.339,
+            "fit": false,
+            "reason": "Opponent pocket leans L, away from pitcher better split side R."
           },
           "shadowSharePct": 22.7
         },
@@ -573,6 +776,7 @@
           "score": 62.02,
           "firstUpBaseScore": 62.02,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": null,
@@ -587,45 +791,25 @@
             "sixPlusRate": 0,
             "startsSample": 2
           },
-          "shadowSharePct": 20.6
-        },
-        {
-          "pitcherId": null,
-          "pitcherName": "Andrés Muñoz",
-          "playerKey": "fg:20373",
-          "role": "CL",
-          "source": "fangraphs_roster_resource",
-          "throws": "R",
-          "availabilityScore": 79.4,
-          "bridgeScore": 64.2,
-          "fatigueScore": 20.6,
-          "firstRelieverLikelihood": 50.9,
-          "expectedOuts": 3,
-          "workedYesterday": false,
-          "backToBack": false,
-          "pitchesLast3": 0,
-          "pitchesLast6": 39,
-          "usedDaysLast3": 0,
-          "usedDaysLast6": 2,
-          "unavailable": false,
-          "score": 50.891,
-          "firstUpBaseScore": 50.891,
-          "firstUpTrendAdjustment": 0,
-          "firstUpRestPenalty": 0,
-          "starterLeashAdjustment": 0,
-          "firstUpTrend": null,
-          "restContext": null,
-          "starterLeashContext": {
-            "status": "standard_leash",
-            "pitcherId": 682243,
-            "pitcherName": "Bryce Miller",
-            "expectedStarterOuts": 16.5,
-            "shortStartRate": 0,
-            "leashScore": 57.8,
-            "sixPlusRate": 0,
-            "startsSample": 2
+          "lineupMatchupContext": {
+            "opponentTeamName": "Washington Nationals",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 5,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": null,
+            "pitcherSplitSample": null,
+            "freshnessEligible": true,
+            "reason": "Pitcher split sample is too thin for a handedness adjustment."
           },
-          "shadowSharePct": 16.9
+          "shadowSharePct": 20.7
         },
         {
           "pitcherId": null,
@@ -649,6 +833,7 @@
           "score": 50.59,
           "firstUpBaseScore": 50.59,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": null,
@@ -671,6 +856,96 @@
             "sixPlusRate": 0,
             "startsSample": 2
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Washington Nationals",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 5,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 21,
+              "leftPa": 14,
+              "rightDamageAllowed": 0.067,
+              "leftDamageAllowed": 0.486,
+              "splitEdge": 0.419
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
+          "shadowSharePct": 16.9
+        },
+        {
+          "pitcherId": null,
+          "pitcherName": "Andrés Muñoz",
+          "playerKey": "fg:20373",
+          "role": "CL",
+          "source": "fangraphs_roster_resource",
+          "throws": "R",
+          "availabilityScore": 79.4,
+          "bridgeScore": 64.2,
+          "fatigueScore": 20.6,
+          "firstRelieverLikelihood": 50.9,
+          "expectedOuts": 3,
+          "workedYesterday": false,
+          "backToBack": false,
+          "pitchesLast3": 0,
+          "pitchesLast6": 39,
+          "usedDaysLast3": 0,
+          "usedDaysLast6": 2,
+          "unavailable": false,
+          "score": 50.209,
+          "firstUpBaseScore": 50.891,
+          "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": -0.682,
+          "firstUpRestPenalty": 0,
+          "starterLeashAdjustment": 0,
+          "firstUpTrend": null,
+          "restContext": null,
+          "starterLeashContext": {
+            "status": "standard_leash",
+            "pitcherId": 682243,
+            "pitcherName": "Bryce Miller",
+            "expectedStarterOuts": 16.5,
+            "shortStartRate": 0,
+            "leashScore": 57.8,
+            "sixPlusRate": 0,
+            "startsSample": 2
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Washington Nationals",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 5,
+            "rawSwitchHitters": 1,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 53,
+              "leftPa": 48,
+              "rightDamageAllowed": 0.26,
+              "leftDamageAllowed": 0.638,
+              "splitEdge": 0.377
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.75,
+            "splitStrength": 1,
+            "fit": false,
+            "reason": "Opponent pocket leans L, away from pitcher better split side R."
+          },
           "shadowSharePct": 16.8
         }
       ],
@@ -683,7 +958,7 @@
       "confidenceScore": 90
     },
     "home": {
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectedReliefRunsAllowed": 3.113,
       "projectedReliefOuts": 11.83,
@@ -693,7 +968,7 @@
       "fatigueScore": 40.1,
       "qualityScore": 42.7,
       "runRiskTier": "stable_bridge",
-      "topTwoSharePct": 43.6,
+      "topTwoSharePct": 43.7,
       "lead": {
         "pitcherName": "Richard Lovelady",
         "pitcherId": null,
@@ -720,9 +995,10 @@
           "usedDaysLast3": 1,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "score": 75.802,
+          "score": 76.112,
           "firstUpBaseScore": 73.802,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0.31,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 2,
           "firstUpTrend": null,
@@ -745,7 +1021,34 @@
             "sixPlusRate": 0.143,
             "startsSample": 7
           },
-          "shadowSharePct": 22.5
+          "lineupMatchupContext": {
+            "opponentTeamName": "Seattle Mariners",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 6,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 53,
+              "leftPa": 59,
+              "rightDamageAllowed": 0.504,
+              "leftDamageAllowed": 0.452,
+              "splitEdge": 0.052
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.75,
+            "splitStrength": 0.289,
+            "fit": true,
+            "reason": "Fresh reliever split fits L-heavy opponent pocket."
+          },
+          "shadowSharePct": 22.6
         },
         {
           "pitcherId": null,
@@ -769,6 +1072,7 @@
           "score": 71.115,
           "firstUpBaseScore": 69.115,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 2,
           "firstUpTrend": null,
@@ -790,6 +1094,30 @@
             "leashScore": 42.1,
             "sixPlusRate": 0.143,
             "startsSample": 7
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Seattle Mariners",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 6,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 65,
+              "leftPa": 56,
+              "rightDamageAllowed": 0.557,
+              "leftDamageAllowed": 0.528,
+              "splitEdge": 0.029
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
           },
           "shadowSharePct": 21.1
         },
@@ -815,6 +1143,7 @@
           "score": 69.834,
           "firstUpBaseScore": 67.834,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 2,
           "firstUpTrend": null,
@@ -837,7 +1166,31 @@
             "sixPlusRate": 0.143,
             "startsSample": 7
           },
-          "shadowSharePct": 20.8
+          "lineupMatchupContext": {
+            "opponentTeamName": "Seattle Mariners",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 6,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 59,
+              "leftPa": 40,
+              "rightDamageAllowed": 0.42,
+              "leftDamageAllowed": 0.556,
+              "splitEdge": 0.136
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
+          "shadowSharePct": 20.7
         },
         {
           "pitcherId": null,
@@ -861,6 +1214,7 @@
           "score": 62.02,
           "firstUpBaseScore": 61.67,
           "firstUpTrendAdjustment": 0.35,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -890,6 +1244,30 @@
             "sixPlusRate": 0.143,
             "startsSample": 7
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Seattle Mariners",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 6,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 58,
+              "leftPa": 47,
+              "rightDamageAllowed": 0.497,
+              "leftDamageAllowed": 0.538,
+              "splitEdge": 0.042
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
           "shadowSharePct": 18.4
         },
         {
@@ -914,6 +1292,7 @@
           "score": 57.525,
           "firstUpBaseScore": 57.455,
           "firstUpTrendAdjustment": 0.07,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -934,6 +1313,30 @@
             "leashScore": 42.1,
             "sixPlusRate": 0.143,
             "startsSample": 7
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Seattle Mariners",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 6,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 10,
+              "leftPa": 10,
+              "rightDamageAllowed": 0.61,
+              "leftDamageAllowed": 0.38,
+              "splitEdge": 0.23
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
           },
           "shadowSharePct": 17.1
         }
@@ -2776,71 +3179,71 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 63.6,
-          "noRunProbabilityPct": 36.4,
-          "awayRunProbabilityPct": 55.1,
-          "homeRunProbabilityPct": 19,
+          "runProbabilityPct": 72.1,
+          "noRunProbabilityPct": 27.9,
+          "awayRunProbabilityPct": 62,
+          "homeRunProbabilityPct": 26.7,
           "lean": "Run",
           "strength": "strong",
           "sampleHalves": 139,
           "caution": "Mariners starter has stayed clean in the 1st across recent starts Mariners starter season line is clean early (0% run games, 0/start)",
-          "reason": "YRFI with a 64% modeled chance of at least one first-inning run. Mariners score 55.1% of the time and Nationals 19% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "reason": "YRFI with a 72% modeled chance of at least one first-inning run. Mariners score 62% of the time and Nationals 26.7% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.6 is embedded in the first-inning run probability.",
           "sourceModel": "M2 first-inning"
         },
         {
           "inning": 2,
           "phase": "M2 early F5",
-          "runProbabilityPct": 64.9,
-          "noRunProbabilityPct": 35.1,
-          "awayRunProbabilityPct": 37,
-          "homeRunProbabilityPct": 27.9,
+          "runProbabilityPct": 65.6,
+          "noRunProbabilityPct": 34.4,
+          "awayRunProbabilityPct": 37.4,
+          "homeRunProbabilityPct": 28.2,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.7 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Nationals F5 runs 2.5; Zack Littell: HA 5.5, ER 2.5; Bryce Miller: HA 5.5, ER 2.5; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 6 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Nationals F5 runs 2.5; Zack Littell: HA 5.5, ER 2.5; Bryce Miller: HA 5.5, ER 2.5; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 3,
           "phase": "M2 early F5",
-          "runProbabilityPct": 73.7,
-          "noRunProbabilityPct": 26.3,
-          "awayRunProbabilityPct": 34.7,
-          "homeRunProbabilityPct": 39,
+          "runProbabilityPct": 74.4,
+          "noRunProbabilityPct": 25.6,
+          "awayRunProbabilityPct": 35,
+          "homeRunProbabilityPct": 39.4,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.7 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Nationals F5 runs 2.5; Zack Littell: HA 5.5, ER 2.5; Bryce Miller: HA 5.5, ER 2.5; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 6 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Nationals F5 runs 2.5; Zack Littell: HA 5.5, ER 2.5; Bryce Miller: HA 5.5, ER 2.5; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 4,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 71.2,
-          "noRunProbabilityPct": 28.8,
-          "awayRunProbabilityPct": 37.9,
-          "homeRunProbabilityPct": 33.3,
+          "runProbabilityPct": 71.9,
+          "noRunProbabilityPct": 28.1,
+          "awayRunProbabilityPct": 38.3,
+          "homeRunProbabilityPct": 33.6,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.7 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Nationals F5 runs 2.5; Zack Littell: HA 5.5, ER 2.5; Bryce Miller: HA 5.5, ER 2.5; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 6 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Nationals F5 runs 2.5; Zack Littell: HA 5.5, ER 2.5; Bryce Miller: HA 5.5, ER 2.5; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 5,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 74.6,
-          "noRunProbabilityPct": 25.4,
-          "awayRunProbabilityPct": 39.9,
-          "homeRunProbabilityPct": 34.7,
+          "runProbabilityPct": 75.3,
+          "noRunProbabilityPct": 24.7,
+          "awayRunProbabilityPct": 40.2,
+          "homeRunProbabilityPct": 35.1,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.7 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Nationals F5 runs 2.5; Zack Littell: HA 5.5, ER 2.5; Bryce Miller: HA 5.5, ER 2.5; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 6 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Mariners F5 runs 2.5; Nationals F5 runs 2.5; Zack Littell: HA 5.5, ER 2.5; Bryce Miller: HA 5.5, ER 2.5; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -3044,22 +3447,22 @@
   "lineupBoard": {
     "gameId": "mariners-nationals",
     "title": "Mariners @ Nationals",
-    "snapshot": "2026-06-12T22:28:25.548Z",
+    "snapshot": "2026-06-12T23:24:53.070Z",
     "status": {
       "away": "posted",
       "home": "posted"
     },
     "weather": {
-      "icon": "rain",
-      "summary": "46% Rain 90° Wind 8 mph",
+      "icon": "partly-cloudy-day",
+      "summary": "0% 84° Wind 6 mph",
       "precipitationPct": 0,
-      "temperatureF": 90,
+      "temperatureF": 84,
       "windMph": null,
       "windDirection": "",
-      "label": "90°F | 0% precip"
+      "label": "84°F | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "SEA -148",
+      "line": "SEA -147",
       "total": "9.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
@@ -7110,16 +7513,16 @@
       "id": 682243,
       "fullName": "Bryce Miller",
       "pitchHand": "R",
-      "wins": 2,
+      "wins": 3,
       "losses": 0,
-      "era": "1.33",
-      "strikeOuts": 29,
-      "inningsPitched": "27.0",
-      "hitsAllowed": 16,
+      "era": "1.54",
+      "strikeOuts": 36,
+      "inningsPitched": "35.0",
+      "hitsAllowed": 20,
       "walks": 5,
-      "homeRunsAllowed": 2,
-      "whip": "0.78",
-      "gamesStarted": 4,
+      "homeRunsAllowed": 4,
+      "whip": "0.71",
+      "gamesStarted": 5,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 682243,
@@ -11229,7 +11632,7 @@
       "usageContext": {
         "status": "new-look",
         "label": "New-look starter",
-        "note": "This is still a low-sample MLB starter look with only 4 starts on file, so innings expectation matters more than the raw ERA line.",
+        "note": "This is still a low-sample MLB starter look with only 5 starts on file, so innings expectation matters more than the raw ERA line.",
         "expectedInnings": 5.33,
         "daysSinceLastStart": 12,
         "startsLoaded": 3,
@@ -11249,15 +11652,15 @@
       "fullName": "Zack Littell",
       "pitchHand": "R",
       "wins": 6,
-      "losses": 4,
-      "era": "4.76",
+      "losses": 5,
+      "era": "5.32",
       "strikeOuts": 39,
-      "inningsPitched": "64.1",
-      "hitsAllowed": 64,
-      "walks": 20,
-      "homeRunsAllowed": 15,
-      "whip": "1.31",
-      "gamesStarted": 9,
+      "inningsPitched": "66.0",
+      "hitsAllowed": 68,
+      "walks": 21,
+      "homeRunsAllowed": 16,
+      "whip": "1.35",
+      "gamesStarted": 10,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 641793,
@@ -16612,7 +17015,7 @@
       "index": 0,
       "role": "Away",
       "name": "Mariners",
-      "detail": "Bryce Miller (RHP) | 2-0 | 1.33 ERA | 29 SO | 0.78 WHIP | 27.0 IP",
+      "detail": "Bryce Miller (RHP) | 3-0 | 1.54 ERA | 36 SO | 0.71 WHIP | 35.0 IP",
       "americanOdds": -149,
       "americanLabel": "-149",
       "decimalOdds": 1.6711409395973154,
@@ -16624,7 +17027,7 @@
       "index": 1,
       "role": "Home",
       "name": "Nationals",
-      "detail": "Zack Littell (RHP) | 6-4 | 4.76 ERA | 39 SO | 1.31 WHIP | 64.1 IP",
+      "detail": "Zack Littell (RHP) | 6-5 | 5.32 ERA | 39 SO | 1.35 WHIP | 66.0 IP",
       "americanOdds": 123,
       "americanLabel": "+123",
       "decimalOdds": 2.23,
@@ -16642,7 +17045,7 @@
         "index": 0,
         "role": "Away",
         "name": "Mariners",
-        "detail": "Bryce Miller (RHP) | 2-0 | 1.33 ERA | 29 SO | 0.78 WHIP | 27.0 IP",
+        "detail": "Bryce Miller (RHP) | 3-0 | 1.54 ERA | 36 SO | 0.71 WHIP | 35.0 IP",
         "americanOdds": -149,
         "americanLabel": "-149",
         "decimalOdds": 1.6711409395973154,
@@ -16654,7 +17057,7 @@
         "index": 1,
         "role": "Home",
         "name": "Nationals",
-        "detail": "Zack Littell (RHP) | 6-4 | 4.76 ERA | 39 SO | 1.31 WHIP | 64.1 IP",
+        "detail": "Zack Littell (RHP) | 6-5 | 5.32 ERA | 39 SO | 1.35 WHIP | 66.0 IP",
         "americanOdds": 123,
         "americanLabel": "+123",
         "decimalOdds": 2.23,
@@ -16671,7 +17074,7 @@
       "index": 0,
       "role": "Away",
       "name": "Mariners",
-      "detail": "Bryce Miller (RHP) | 2-0 | 1.33 ERA | 29 SO | 0.78 WHIP | 27.0 IP",
+      "detail": "Bryce Miller (RHP) | 3-0 | 1.54 ERA | 36 SO | 0.71 WHIP | 35.0 IP",
       "americanOdds": -149,
       "americanLabel": "-149",
       "decimalOdds": 1.6711409395973154,
@@ -16683,32 +17086,39 @@
       "index": 1,
       "role": "Home",
       "name": "Nationals",
-      "detail": "Zack Littell (RHP) | 6-4 | 4.76 ERA | 39 SO | 1.31 WHIP | 64.1 IP",
+      "detail": "Zack Littell (RHP) | 6-5 | 5.32 ERA | 39 SO | 1.35 WHIP | 66.0 IP",
       "americanOdds": 123,
       "americanLabel": "+123",
       "decimalOdds": 2.23,
       "impliedProbability": 0.4484304932735426,
       "impliedProbabilityLabel": "44.8%"
     },
-    "lean": "Model pick: Mariners on starter era and market price.",
-    "rationale": "Starter ERA: Mariners (1.33 ERA) vs Nationals (4.76 ERA)",
-    "confidence": 68,
-    "volatility": 91,
-    "recommendationScore": 44,
+    "lean": "Model pick: Mariners on starter era and standings profile.",
+    "rationale": "Starter ERA: Mariners (1.54 ERA) vs Nationals (5.32 ERA)",
+    "confidence": 70,
+    "volatility": 90,
+    "recommendationScore": 46,
     "tier": "Pass",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 7.5,
-    "modelEdgeLabel": "7.5-point model edge",
+    "modelEdge": 9.5,
+    "modelEdgeLabel": "9.5-point model edge",
     "marketProbability": 0.5716276429198135,
     "marketProbabilityLabel": "57.2%",
     "inputs": [
       {
         "label": "Starter ERA",
-        "summary": "Starter ERA: Mariners (1.33 ERA) vs Nationals (4.76 ERA)",
+        "summary": "Starter ERA: Mariners (1.54 ERA) vs Nationals (5.32 ERA)",
         "source": "Listed probable starters",
-        "margin": 30.9,
+        "margin": 34,
         "weight": 0.23
+      },
+      {
+        "label": "Standings profile",
+        "summary": "Standings profile: Mariners (37-34, division leader, +34 RD) vs Nationals (35-35, 4th in division, -1 RD)",
+        "source": "Standings context",
+        "margin": 35.2,
+        "weight": 0.14
       },
       {
         "label": "Market price",
@@ -16716,13 +17126,6 @@
         "source": "Moneyline board",
         "margin": 14.3,
         "weight": 0.26
-      },
-      {
-        "label": "Standings profile",
-        "summary": "Standings profile: Mariners (36-34, division leader, +26 RD) vs Nationals (35-34, 3rd in division, +7 RD)",
-        "source": "Standings context",
-        "margin": 23.4,
-        "weight": 0.14
       }
     ],
     "inputsUsed": 12,
@@ -16748,11 +17151,11 @@
         "delta": 4
       },
       {
-        "label": "The underdog owns the cleaner Statcast contact profile",
+        "label": "At least one likely bridge reliever enters with recent workload stress",
         "delta": 4
       },
       {
-        "label": "Favorite enters on a live losing streak",
+        "label": "The underdog owns the cleaner Statcast contact profile",
         "delta": 4
       },
       {
@@ -16773,22 +17176,22 @@
       }
     ],
     "pickReasons": [
-      "Mariners own the cleaner full-game traffic script at 12.1 projected hits.",
-      "Mariners have the better starter-window lane with 6.7 projected first-five hits.",
+      "Mariners own the cleaner full-game traffic script at 12 projected hits.",
+      "Mariners have the better starter-window lane with 7 projected first-five hits.",
       "Mariners still hold the better bridge-and-finish script once the bullpens take over.",
       "Mariners can lean on Randy Arozarena, Dominic Canzone, Josh Naylor to drive early pressure against Zack Littell."
     ],
     "indicators": {
       "reliefPitchingRisk": 47.5,
       "coinflipPressure": 40,
-      "starterLeverageIndex": 80.5,
-      "lateInningStabilityIndex": 62.3,
+      "starterLeverageIndex": 79.5,
+      "lateInningStabilityIndex": 63,
       "pickBullpenScore": 68,
       "oppBullpenScore": 53.6,
       "pickBullpenChainScore": 69.6,
       "oppBullpenChainScore": 71.8,
-      "pickStarterScore": 69.6,
-      "oppStarterScore": 60.2,
+      "pickStarterScore": 71.1,
+      "oppStarterScore": 59.2,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -16844,7 +17247,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 3.8,
+      "projectedHitEdgeForPick": 3.2,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
@@ -16882,13 +17285,13 @@
       "efficientFavoriteBlockers": [
         "tierOnePass"
       ],
-      "tierOneRiskPoints": 1,
+      "tierOneRiskPoints": 2,
       "tierOnePassFlag": true,
       "tierOneRiskFlags": [
         "highVolatilityEdgePass"
       ],
-      "favoredSignalCount": 8,
-      "starterLateGap": 18.2,
+      "favoredSignalCount": 7,
+      "starterLateGap": 16.5,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 3,
       "gameShape": {
@@ -16896,8 +17299,8 @@
         "shapeLabel": "balanced traffic game",
         "category": "early_pressure_side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "categoryConfidence": 64.1,
-        "realityGapScore": 37.6,
+        "categoryConfidence": 63.1,
+        "realityGapScore": 37.5,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -16914,10 +17317,10 @@
           {
             "id": "pressure",
             "label": "Pressure",
-            "score": 36.5
+            "score": 36.8
           }
         ],
-        "rfImpactScore": 31.8
+        "rfImpactScore": 47.2
       }
     },
     "gameShape": {
@@ -16928,7 +17331,7 @@
         "slug": "early_pressure_side",
         "label": "Early-pressure side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "confidence": 64.1,
+        "confidence": 63.1,
         "reasons": [
           "The pick needs to cash the first traffic pocket.",
           "The best edge is timing, not late-game patience."
@@ -16972,10 +17375,10 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 3.8
+          "projectedHitEdge": 3.2
         }
       },
-      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.6/100. Main checks: 90°F | 0% precip | weather helps carry.",
+      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.5/100. Main checks: 84°F | 0% precip | weather helps carry.",
       "pickTeam": "Mariners",
       "opponentTeam": "Nationals",
       "scores": {
@@ -16983,9 +17386,9 @@
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 40,
         "bullpenFlipScore": 20.1,
-        "starterControlScore": 52.5,
-        "marketContradictionScore": 10.4,
-        "realityGapScore": 37.6
+        "starterControlScore": 54.8,
+        "marketContradictionScore": 9.5,
+        "realityGapScore": 37.5
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -16999,9 +17402,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 36.5,
-            "pickScore": 36.5,
-            "opponentScore": 10.8
+            "gameScore": 36.8,
+            "pickScore": 36.8,
+            "opponentScore": 10.7
           },
           {
             "id": "chaos",
@@ -17049,7 +17452,7 @@
             "role": "pick",
             "team": "Mariners",
             "scores": {
-              "pressure": 36.5,
+              "pressure": 36.8,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17057,7 +17460,7 @@
               "flow": 75
             },
             "polygon": [
-              36.5,
+              36.8,
               5,
               0,
               16,
@@ -17068,7 +17471,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 69.6,
+              "starterScore": 71.1,
               "bullpenScore": 68,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17082,7 +17485,7 @@
             "role": "opponent",
             "team": "Nationals",
             "scores": {
-              "pressure": 10.8,
+              "pressure": 10.7,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -17090,7 +17493,7 @@
               "flow": 25
             },
             "polygon": [
-              10.8,
+              10.7,
               5,
               0,
               16,
@@ -17101,7 +17504,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 60.2,
+              "starterScore": 59.2,
               "bullpenScore": 53.6,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17116,7 +17519,7 @@
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 36.5,
+            "pressure": 36.8,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
@@ -17124,7 +17527,7 @@
             "flow": 60
           },
           "polygon": [
-            36.5,
+            36.8,
             44.8,
             8.5,
             24.4,
@@ -17145,7 +17548,7 @@
             {
               "id": "pressure",
               "label": "Pressure",
-              "score": 36.5
+              "score": 36.8
             }
           ]
         }
@@ -17171,7 +17574,7 @@
         "sunVisibilityChaosBoost": 0
       },
       "metricNotes": [
-        "90°F | 0% precip | weather helps carry"
+        "84°F | 0% precip | weather helps carry"
       ],
       "laneMap": {
         "side": "Allowed after early traffic confirms the pressure read.",
@@ -17206,12 +17609,12 @@
         "side": "Mariners is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 63.6% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 72.1% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 31.8,
+        "impactScore": 47.2,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -17246,26 +17649,26 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 12.1,
-      "homeProjectedHits": 8.3,
+      "awayProjectedHits": 12,
+      "homeProjectedHits": 8.8,
       "awayHitEfficiencyPct": 34.8,
-      "homeHitEfficiencyPct": 24.3,
-      "awayFirst5ProjectedHits": 6.7,
-      "homeFirst5ProjectedHits": 4.9,
-      "awayFirst5HitEfficiencyPct": 34.9,
-      "homeFirst5HitEfficiencyPct": 26,
-      "awayLateProjectedHits": 5.1,
-      "homeLateProjectedHits": 3.7,
-      "awayLateHitEfficiencyPct": 32.8,
-      "homeLateHitEfficiencyPct": 24.2,
+      "homeHitEfficiencyPct": 25.6,
+      "awayFirst5ProjectedHits": 7,
+      "homeFirst5ProjectedHits": 5,
+      "awayFirst5HitEfficiencyPct": 36.6,
+      "homeFirst5HitEfficiencyPct": 26.4,
+      "awayLateProjectedHits": 4.8,
+      "homeLateProjectedHits": 4,
+      "awayLateHitEfficiencyPct": 30.7,
+      "homeLateHitEfficiencyPct": 26,
       "awayBullpenChainScore": 69.6,
       "homeBullpenChainScore": 71.8,
       "edgeTeam": "Mariners",
-      "edgeHits": 3.8,
+      "edgeHits": 3.2,
       "first5EdgeTeam": "Mariners",
-      "first5EdgeHits": 1.8,
+      "first5EdgeHits": 2,
       "lateEdgeTeam": "Mariners",
-      "lateEdgeHits": 1.4,
+      "lateEdgeHits": 0.8,
       "bridgeEdgeTeam": "Nationals",
       "bridgeEdgeScore": 2.2,
       "awayLikelyRelievers": [
@@ -17337,7 +17740,7 @@
           "usedDaysLast3": 1,
           "usedDaysLast6": 2,
           "unavailable": false,
-          "shadowSharePct": 22.5,
+          "shadowSharePct": 22.6,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -17374,31 +17777,36 @@
       "homeBullpenExhaustionLabel": "fresh",
       "awayPitcherType": "Contact suppressor",
       "homePitcherType": "Balanced righty",
-      "awayStarterHoldConfidence": 36.8,
-      "homeStarterHoldConfidence": 25.1,
-      "awayProjectedRuns": 6.1,
-      "homeProjectedRuns": 4.4,
-      "awayFirst5ProjectedRuns": 3.3,
-      "homeFirst5ProjectedRuns": 2.4,
+      "awayStarterHoldConfidence": 34.8,
+      "homeStarterHoldConfidence": 23.6,
+      "awayProjectedRuns": 6.3,
+      "homeProjectedRuns": 4.7,
+      "awayFirst5ProjectedRuns": 3.5,
+      "homeFirst5ProjectedRuns": 2.5,
       "awayLateProjectedRuns": 2.8,
-      "homeLateProjectedRuns": 2,
+      "homeLateProjectedRuns": 2.2,
       "postedTotal": 9.5,
       "totals": {
         "fullGame": {
           "lean": "Over",
-          "edge": 1,
-          "strength": "Clear",
+          "edge": 1.5,
+          "strength": "Strong",
           "label": "Over 9.5",
-          "summary": "Over lean with a 1.0-run edge against 9.5.",
+          "summary": "Over lean with a 1.5-run edge against 9.5.",
           "chaosGate": {
             "phase": "full",
-            "overChaosScore": 3,
+            "overChaosScore": 10,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
-              "90°F | 0% precip | weather helps carry"
+              "84°F | 0% precip | weather helps carry",
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.6",
+              "material HRForce 1.6",
+              "RP2 bridge stress 50.4"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -17409,25 +17817,47 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.6,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 50.4,
+              "maxRp2ReliefRuns": 3,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
         "first5": {
           "lean": "Over",
-          "edge": 1.2,
+          "edge": 1.5,
           "strength": "Strong",
           "label": "Over 4.5",
-          "summary": "Over lean with a 1.2-run edge against 4.5.",
+          "summary": "Over lean with a 1.5-run edge against 4.5.",
           "chaosGate": {
             "phase": "first5",
-            "overChaosScore": 2,
+            "overChaosScore": 8,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
-              "90°F | 0% precip | weather helps carry"
+              "84°F | 0% precip | weather helps carry",
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.6",
+              "material HRForce 1.6",
+              "RP2 bridge can enter early"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -17438,21 +17868,43 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.6,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 50.4,
+              "maxRp2ReliefRuns": 3,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 5.7,
-            "adjustedProjectedRuns": 5.7,
-            "adjustedEdge": 1.2,
+            "baseProjectedRuns": 6,
+            "adjustedProjectedRuns": 8.9,
+            "adjustedEdge": 4.4,
             "marketExpression": "Over",
-            "shape": "balanced",
-            "tailScore": 32,
+            "shape": "over-tail",
+            "tailScore": 70,
             "strandScore": 0,
             "forkScore": 0,
-            "tailLift": 0,
+            "tailLift": 2.9,
             "strandDrag": 0,
-            "notes": [],
+            "notes": [
+              "fat-tail run environment",
+              "carry/weather turns ordinary contact into extra-base risk",
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.6"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -17461,28 +17913,49 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 11.6,
+              "totalFirst5ProjectedHits": 12,
               "weatherCarry": true,
               "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.6,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 50.4,
+              "maxRp2ReliefRuns": 3,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
               "visibilityRisk": null
             }
           }
         },
         "late": {
           "lean": "Pass",
-          "edge": -0.2,
+          "edge": 0,
           "strength": "Thin",
           "label": "Hold 5",
-          "summary": "Model projection 4.8 is essentially on the posted 5.",
+          "summary": "Model projection 5 is essentially on the posted 5.",
           "chaosGate": {
             "phase": "late",
-            "overChaosScore": 2,
+            "overChaosScore": 9,
             "underDragScore": 0,
-            "warning": false,
+            "warning": true,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
-              "90°F | 0% precip | weather helps carry"
+              "84°F | 0% precip | weather helps carry",
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.6",
+              "material HRForce 1.6",
+              "RP2 bridge stress 50.4"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -17493,25 +17966,47 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.3,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.6,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": false,
+              "carryMultiplier": 1.18,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 50.4,
+              "maxRp2ReliefRuns": 3,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
-        "projectedFullTotalRuns": 10.5,
-        "projectedFirst5TotalRuns": 5.7,
-        "tailAdjustedProjectedFirst5TotalRuns": 5.7,
+        "projectedFullTotalRuns": 11,
+        "projectedFirst5TotalRuns": 6,
+        "tailAdjustedProjectedFirst5TotalRuns": 8.9,
         "first5TailOverlay": {
-          "baseProjectedRuns": 5.7,
-          "adjustedProjectedRuns": 5.7,
-          "adjustedEdge": 1.2,
+          "baseProjectedRuns": 6,
+          "adjustedProjectedRuns": 8.9,
+          "adjustedEdge": 4.4,
           "marketExpression": "Over",
-          "shape": "balanced",
-          "tailScore": 32,
+          "shape": "over-tail",
+          "tailScore": 70,
           "strandScore": 0,
           "forkScore": 0,
-          "tailLift": 0,
+          "tailLift": 2.9,
           "strandDrag": 0,
-          "notes": [],
+          "notes": [
+            "fat-tail run environment",
+            "carry/weather turns ordinary contact into extra-base risk",
+            "ENV1 HRForce 1.6",
+            "FIC HRForce 1.6"
+          ],
           "metrics": {
             "maxMistakeChaos": null,
             "maxRunClustering": null,
@@ -17520,52 +18015,77 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 11.6,
+            "totalFirst5ProjectedHits": 12,
             "weatherCarry": true,
             "weatherSuppress": false,
+            "envRunDelta": 0.3,
+            "envHitsDelta": 0,
+            "envHrDelta": 0.1,
+            "hrForce": 1.6,
+            "highHrForce": true,
+            "lowerWeatherCarry": false,
+            "ficHrForce": 1.6,
+            "ficHighHrForce": true,
+            "materialHrForce": true,
+            "extremeHrForce": false,
+            "carryMultiplier": 1.18,
+            "ficHighHrForceSharePct": 100,
+            "maxRp2BridgeStress": 50.4,
+            "maxRp2ReliefRuns": 3,
+            "rp2LateRunRisk": true,
+            "maxRepeatOpponentFirst5Tax": null,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 4.8,
+        "projectedLateTotalRuns": 5,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
         "runShareFirst5TotalLine": 5.2,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 5,
-        "bullpenExhaustionNote": "90°F | 0% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
-        "weatherNote": "90°F | 0% precip | weather helps carry.",
+        "bullpenExhaustionNote": "84°F | 0% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
+        "weatherNote": "84°F | 0% precip | weather helps carry.",
         "sunVisibilityNote": ""
       },
       "firstInning": {
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 13.6,
-        "yesProbabilityPct": 63.6,
-        "noProbabilityPct": 36.4,
-        "awayRunProbabilityPct": 55.1,
-        "homeRunProbabilityPct": 19,
+        "edge": 22.1,
+        "yesProbabilityPct": 72.1,
+        "noProbabilityPct": 27.9,
+        "awayRunProbabilityPct": 62,
+        "homeRunProbabilityPct": 26.7,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 40,
         "homeOppPitcherAllowedRatePct": 0,
-        "awayProjectedRuns": 0.6,
-        "homeProjectedRuns": 0.1,
+        "awayProjectedRuns": 0.7,
+        "homeProjectedRuns": 0.2,
         "reasonStack": [
           "Mariners top order is driving early pressure (75.1)",
           "Nationals starter has leaked 1st-inning runs in 40% of recent starts",
           "Nationals starter has real season 1st-inning damage (25% run games, 0.3/start)",
           "Nationals starter has slipped hard from last year (-3.6 WAR delta)",
-          "Nationals top order is driving early pressure (83.4)"
+          "ENV1 HRForce 1.6 raises YRFI carry"
         ],
         "cautionStack": [
           "Mariners starter has stayed clean in the 1st across recent starts",
           "Mariners starter season line is clean early (0% run games, 0/start)",
           "Nationals starter carried a real green season last year (3.3 WAR)"
         ],
-        "projectedRuns": 0.7,
+        "environmentAddendum": {
+          "hrForce": 1.6,
+          "highHrForce": true,
+          "maxProbabilityLiftPct": 6,
+          "maxProjectedRunsLift": 0.1,
+          "reasons": [
+            "ENV1 HRForce 1.6 raises YRFI carry"
+          ]
+        },
+        "projectedRuns": 0.9,
         "line": 0.5,
-        "summary": "YRFI with a 64% modeled chance of at least one first-inning run. Mariners score 55.1% of the time and Nationals 19% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 72% modeled chance of at least one first-inning run. Mariners score 62% of the time and Nationals 26.7% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.6 is embedded in the first-inning run probability."
       },
       "teamScripts": [
         {
@@ -17602,8 +18122,8 @@
           "depthScore": 39.6,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Mariners own the cleaner full-game traffic script at 12.1 projected hits.",
-            "Mariners have the better starter-window lane with 6.7 projected first-five hits.",
+            "Mariners own the cleaner full-game traffic script at 12 projected hits.",
+            "Mariners have the better starter-window lane with 7 projected first-five hits.",
             "Mariners still hold the better bridge-and-finish script once the bullpens take over.",
             "Mariners can lean on Randy Arozarena, Dominic Canzone, Josh Naylor to drive early pressure against Zack Littell.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -17659,7 +18179,7 @@
           {
             "label": "First 5",
             "edgeTeam": "Mariners",
-            "projection": "3.3 R",
+            "projection": "3.5 R",
             "note": "Mariners lean on Randy Arozarena, Dominic Canzone to drive the early traffic lane against the listed starter."
           },
           {
@@ -17671,22 +18191,22 @@
           {
             "label": "Full game",
             "edgeTeam": "Mariners",
-            "projection": "12.1 H",
+            "projection": "12 H",
             "note": "Mariners finish with the stronger aggregate traffic path, anchored by Randy Arozarena, Dominic Canzone."
           }
         ]
       },
       "weather": {
-        "label": "90°F | 0% precip | weather helps carry",
-        "temperatureF": 90,
+        "label": "84°F | 0% precip | weather helps carry",
+        "temperatureF": 84,
         "windMph": null,
         "windDirection": "",
         "precipitationPct": 0,
         "isDome": false,
-        "hitBoostFirst5": 0.18,
-        "hitBoostLate": 0.16,
-        "runBoostFirst5": 0.01,
-        "runBoostLate": 0.012,
+        "hitBoostFirst5": 0.08,
+        "hitBoostLate": 0.07,
+        "runBoostFirst5": 0.004,
+        "runBoostLate": 0.005,
         "volatilityDelta": 0
       },
       "sunVisibility": null,
@@ -17733,10 +18253,54 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Mariners @ Nationals",
+        "gameContextMatch": "team-code",
+        "rowCount": 6,
+        "averageHrForce": 1.6,
+        "maxHrForce": 1.6,
+        "highHrForceRows": 6,
+        "extremeHrForceRows": 0,
+        "highHrForceSharePct": 100,
+        "qualityAbPct": 23.7,
+        "hardHitPct": 17,
+        "matchupPassRows": 0,
+        "awayOffense": {
+          "label": "Mariners hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "Nationals hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Mariners",
-          "modelVersion": "MLB-RP2.2026-06-12.v2",
+          "modelVersion": "MLB-RP2.2026-06-12.v3",
           "projectedReliefRunsAllowed": 2.181,
           "projectedReliefOuts": 9.63,
           "projectedRelieversUsed": 3.07,
@@ -17754,7 +18318,7 @@
         },
         "home": {
           "teamName": "Nationals",
-          "modelVersion": "MLB-RP2.2026-06-12.v2",
+          "modelVersion": "MLB-RP2.2026-06-12.v3",
           "projectedReliefRunsAllowed": 3.113,
           "projectedReliefOuts": 11.83,
           "projectedRelieversUsed": 3.23,
@@ -17763,7 +18327,7 @@
           "fatigueScore": 40.1,
           "qualityScore": 42.7,
           "runRiskTier": "stable_bridge",
-          "topTwoSharePct": 43.6,
+          "topTwoSharePct": 43.7,
           "lead": {
             "pitcherName": "Richard Lovelady",
             "expectedOuts": 3.4,
@@ -17771,22 +18335,319 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "high-HRForce carry is active",
+          "available-bullpen damage adjustment is active",
+          "handedness split adjustment is active"
+        ],
+        "environment": {
+          "hrForce": 1.6,
+          "envHrForce": 1.6,
+          "ficHrForce": 1.6,
+          "materialHrForce": true,
+          "extremeHrForce": false,
+          "carryMultiplier": 1.18,
+          "hitDelta": 0.7,
+          "runDelta": 0.7,
+          "conversionDelta": 0.023537999999999996,
+          "firstInningProbabilityLiftPct": 5.9,
+          "underFragilityRuns": 2.2,
+          "flags": [
+            "Material HRForce 1.6: pitcher damage and batter production lifted"
+          ],
+          "reasons": [
+            "HRForce 1.6 applies material carry to pitcher damage and batter production",
+            "weather/park carry is favorable for flight",
+            "FIC batter-vs-pitcher pockets show HRForce carry"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Mariners",
+            "pitcherName": "Bryce Miller",
+            "gamesStarted": 5,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Contact suppressor",
+            "expectedInnings": 5.33,
+            "opponentHistory": null,
+            "flags": []
+          },
+          {
+            "teamName": "Nationals",
+            "pitcherName": "Zack Littell",
+            "gamesStarted": 10,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Balanced righty",
+            "expectedInnings": 4.96,
+            "opponentHistory": {
+              "label": "starter has suppressed this opponent",
+              "source": "StatMuse vs opponent",
+              "starts": 2,
+              "innings": 14,
+              "projectedHitsDelta": -0.1,
+              "first5RunsDelta": -0.1,
+              "runConversionDelta": -0.00460372,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": 0,
+              "repeatOpponentFirst5Tax": 0,
+              "lastOpponentStartSummary": "6/25/2024 | 5 IP | 2 R | 2 ER | 4 H | 1 HR",
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "starter has suppressed this opponent vs Mariners"
+            ]
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Mariners",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 61.5,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.27,
+            "splitOpsAverage": 0.791,
+            "topSixSplitAvgAverage": 0.269,
+            "topSixSplitOpsAverage": 0.791,
+            "strongSplitCount": 4,
+            "weakSplitCount": 0,
+            "severeWeakSplitCount": 0,
+            "topSixStrongSplitCount": 3,
+            "topSixWeakSplitCount": 0,
+            "topThirdStrongSplitCount": 0,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": 0.2,
+            "runConversionDelta": 0.005715,
+            "strongSplitBats": [
+              {
+                "name": "Colt Emerson",
+                "slot": 9,
+                "bats": "L",
+                "plateAppearances": 48,
+                "avg": 0.273,
+                "ops": 0.924,
+                "seasonAvg": 0.231,
+                "seasonOps": 0.838,
+                "recentAvg": 0.143,
+                "recentOps": 0.679
+              },
+              {
+                "name": "Dominic Canzone",
+                "slot": 6,
+                "bats": "L",
+                "plateAppearances": 157,
+                "avg": 0.287,
+                "ops": 0.897,
+                "seasonAvg": 0.276,
+                "seasonOps": 0.874,
+                "recentAvg": 0.333,
+                "recentOps": 1.078
+              },
+              {
+                "name": "Luke Raley",
+                "slot": 5,
+                "bats": "L",
+                "plateAppearances": 184,
+                "avg": 0.257,
+                "ops": 0.879,
+                "seasonAvg": 0.249,
+                "seasonOps": 0.835,
+                "recentAvg": 0.15,
+                "recentOps": 0.54
+              },
+              {
+                "name": "Randy Arozarena",
+                "slot": 4,
+                "bats": "R",
+                "plateAppearances": 224,
+                "avg": 0.301,
+                "ops": 0.854,
+                "seasonAvg": 0.29,
+                "seasonOps": 0.825,
+                "recentAvg": 0.37,
+                "recentOps": 1.024
+              }
+            ],
+            "weakSplitBats": [],
+            "flags": [
+              "4 strong split bats vs R",
+              "Colt Emerson 0.924 OPS vs R",
+              "Dominic Canzone 0.897 OPS vs R"
+            ]
+          },
+          {
+            "teamName": "Nationals",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 54.5,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.252,
+            "splitOpsAverage": 0.785,
+            "topSixSplitAvgAverage": 0.263,
+            "topSixSplitOpsAverage": 0.843,
+            "strongSplitCount": 3,
+            "weakSplitCount": 2,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 3,
+            "topSixWeakSplitCount": 1,
+            "topThirdStrongSplitCount": 2,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": 0.1,
+            "runConversionDelta": 0.0024075,
+            "strongSplitBats": [
+              {
+                "name": "James Wood",
+                "slot": 1,
+                "bats": "L",
+                "plateAppearances": 215,
+                "avg": 0.275,
+                "ops": 0.979,
+                "seasonAvg": 0.271,
+                "seasonOps": 0.941,
+                "recentAvg": 0.348,
+                "recentOps": 1.073
+              },
+              {
+                "name": "CJ Abrams",
+                "slot": 4,
+                "bats": "L",
+                "plateAppearances": 205,
+                "avg": 0.297,
+                "ops": 0.97,
+                "seasonAvg": 0.287,
+                "seasonOps": 0.905,
+                "recentAvg": 0.286,
+                "recentOps": 0.919
+              },
+              {
+                "name": "Curtis Mead",
+                "slot": 3,
+                "bats": "R",
+                "plateAppearances": 109,
+                "avg": 0.242,
+                "ops": 0.861,
+                "seasonAvg": 0.242,
+                "seasonOps": 0.834,
+                "recentAvg": 0.238,
+                "recentOps": 0.905
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Dylan Crews",
+                "slot": 5,
+                "bats": "R",
+                "plateAppearances": 51,
+                "avg": 0.188,
+                "ops": 0.485,
+                "seasonAvg": 0.183,
+                "seasonOps": 0.519,
+                "recentAvg": 0.13,
+                "recentOps": 0.461
+              },
+              {
+                "name": "Jorbit Vivas",
+                "slot": 8,
+                "bats": "L",
+                "plateAppearances": 129,
+                "avg": 0.225,
+                "ops": 0.622,
+                "seasonAvg": 0.238,
+                "seasonOps": 0.637,
+                "recentAvg": 0.286,
+                "recentOps": 0.69
+              }
+            ],
+            "flags": [
+              "top-third split pressure",
+              "James Wood 0.979 OPS vs R",
+              "CJ Abrams 0.970 OPS vs R",
+              "Dylan Crews 0.485 OPS vs R"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Mariners",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "Nationals",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Mariners",
+            "projectedReliefRunsAllowed": 2.2,
+            "adjustedProjectedReliefRunsAllowed": 1.9,
+            "projectedReliefOuts": 9.6,
+            "leverageAvailabilityScore": 61.2,
+            "leadAvailabilityScore": 61.6,
+            "bridgeStressScore": 34.9,
+            "runDelta": -0.1,
+            "hitDelta": 0.1,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 2.2 -> 1.9"
+            ]
+          },
+          {
+            "teamName": "Nationals",
+            "projectedReliefRunsAllowed": 3.1,
+            "adjustedProjectedReliefRunsAllowed": 3,
+            "projectedReliefOuts": 11.8,
+            "leverageAvailabilityScore": 59.9,
+            "leadAvailabilityScore": 75.8,
+            "bridgeStressScore": 50.4,
+            "runDelta": 0.4,
+            "hitDelta": 0.5,
+            "expectedEarlyBridge": true,
+            "flags": [
+              "RP2 available-pen runs 3.1 -> 3"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 6.3,
+          "home": 4.7
+        },
+        "projectedHitTotals": {
+          "away": 12,
+          "home": 8.8
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
         "selection": "Mariners",
         "opponent": "Nationals",
-        "pickProjectedRuns": 6.1,
-        "opponentProjectedRuns": 4.4,
-        "projectedTotalRuns": 10.5,
-        "runDiff": 1.7,
-        "absoluteRunDiff": 1.7,
-        "runDiffSharePct": 16.2,
-        "confidence": 68,
+        "pickProjectedRuns": 6.3,
+        "opponentProjectedRuns": 4.7,
+        "projectedTotalRuns": 11,
+        "runDiff": 1.6,
+        "absoluteRunDiff": 1.6,
+        "runDiffSharePct": 14.5,
+        "confidence": 70,
         "marketProbabilityPct": 57.2,
         "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Mariners projects 1.7 runs better in a 10.5-run environment."
+        "note": "Mariners projects 1.6 runs better in a 11-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -17796,7 +18657,7 @@
           "slug": "early_pressure_side",
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-          "confidence": 64.1,
+          "confidence": 63.1,
           "reasons": [
             "The pick needs to cash the first traffic pocket.",
             "The best edge is timing, not late-game patience."
@@ -17840,10 +18701,10 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 3.8
+            "projectedHitEdge": 3.2
           }
         },
-        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.6/100. Main checks: 90°F | 0% precip | weather helps carry.",
+        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.5/100. Main checks: 84°F | 0% precip | weather helps carry.",
         "pickTeam": "Mariners",
         "opponentTeam": "Nationals",
         "scores": {
@@ -17851,9 +18712,9 @@
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 40,
           "bullpenFlipScore": 20.1,
-          "starterControlScore": 52.5,
-          "marketContradictionScore": 10.4,
-          "realityGapScore": 37.6
+          "starterControlScore": 54.8,
+          "marketContradictionScore": 9.5,
+          "realityGapScore": 37.5
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -17867,9 +18728,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 36.5,
-              "pickScore": 36.5,
-              "opponentScore": 10.8
+              "gameScore": 36.8,
+              "pickScore": 36.8,
+              "opponentScore": 10.7
             },
             {
               "id": "chaos",
@@ -17917,7 +18778,7 @@
               "role": "pick",
               "team": "Mariners",
               "scores": {
-                "pressure": 36.5,
+                "pressure": 36.8,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -17925,7 +18786,7 @@
                 "flow": 75
               },
               "polygon": [
-                36.5,
+                36.8,
                 5,
                 0,
                 16,
@@ -17936,7 +18797,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 69.6,
+                "starterScore": 71.1,
                 "bullpenScore": 68,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17950,7 +18811,7 @@
               "role": "opponent",
               "team": "Nationals",
               "scores": {
-                "pressure": 10.8,
+                "pressure": 10.7,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -17958,7 +18819,7 @@
                 "flow": 25
               },
               "polygon": [
-                10.8,
+                10.7,
                 5,
                 0,
                 16,
@@ -17969,7 +18830,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 60.2,
+                "starterScore": 59.2,
                 "bullpenScore": 53.6,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -17984,7 +18845,7 @@
             "label": "Early-pressure side",
             "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 36.5,
+              "pressure": 36.8,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
@@ -17992,7 +18853,7 @@
               "flow": 60
             },
             "polygon": [
-              36.5,
+              36.8,
               44.8,
               8.5,
               24.4,
@@ -18013,7 +18874,7 @@
               {
                 "id": "pressure",
                 "label": "Pressure",
-                "score": 36.5
+                "score": 36.8
               }
             ]
           }
@@ -18039,7 +18900,7 @@
           "sunVisibilityChaosBoost": 0
         },
         "metricNotes": [
-          "90°F | 0% precip | weather helps carry"
+          "84°F | 0% precip | weather helps carry"
         ],
         "laneMap": {
           "side": "Allowed after early traffic confirms the pressure read.",
@@ -18074,12 +18935,12 @@
           "side": "Mariners is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 63.6% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 72.1% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 31.8,
+          "impactScore": 47.2,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -18116,12 +18977,12 @@
       "first5Moneyline": {
         "pickSide": "away",
         "pickTeam": "Mariners",
-        "awayProjectedRuns": 3.3,
-        "homeProjectedRuns": 2.4,
-        "awayLeadProbability": 56.4,
-        "homeLeadProbability": 27.6,
-        "pushProbability": 16,
-        "leadProbability": 56.4,
+        "awayProjectedRuns": 3.5,
+        "homeProjectedRuns": 2.5,
+        "awayLeadProbability": 57.9,
+        "homeLeadProbability": 26.7,
+        "pushProbability": 15.4,
+        "leadProbability": 57.9,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -18142,8 +19003,8 @@
         "propType": "homeRun",
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
-        "confidence": 66,
-        "probability": 34.8,
+        "confidence": 65,
+        "probability": 34.9,
         "expectedValue": 0.4,
         "statValueLabel": "0.43 exp HR",
         "sample": {
@@ -18216,9 +19077,9 @@
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
         "confidence": 68,
-        "probability": 92.5,
-        "expectedValue": 2.6,
-        "statValueLabel": "2.60 exp RBI",
+        "probability": 93.2,
+        "expectedValue": 2.7,
+        "statValueLabel": "2.68 exp RBI",
         "sample": {
           "seasonGames": 61,
           "seasonPlateAppearances": 170,
@@ -18288,9 +19149,9 @@
         "propLabel": "Runs",
         "marketLabel": "Over 0.5 runs",
         "confidence": 72,
-        "probability": 88.5,
+        "probability": 88.6,
         "expectedValue": 2.2,
-        "statValueLabel": "2.17 exp runs",
+        "statValueLabel": "2.18 exp runs",
         "sample": {
           "seasonGames": 70,
           "seasonPlateAppearances": 300,
@@ -18349,61 +19210,61 @@
         "playerSummary": ".290 AVG | .825 OPS | 75 H | 7 HR | 14g: .370 AVG | 1.024 OPS | 20 H | 2 HR | vs RHP: .301 AVG | .854 OPS | 5 HR | career 3614 PA | .781 OPS | 124 HR | baseline career profile | power 61 | 2026 sample ok | arsenal Slider 29% / 4-Seam Fastball 28% / Split-Finger 19% | fit +4.4 | +10.0 matchup grade in a neutral lane"
       },
       {
-        "id": "mariners-nationals:668227:hitRunRbi",
+        "id": "mariners-nationals:686527:hitRunRbi",
         "gameId": "mariners-nationals",
         "gameTitle": "Mariners @ Nationals",
         "league": "MLB",
-        "playerId": 668227,
-        "playerName": "Randy Arozarena",
+        "playerId": 686527,
+        "playerName": "Dominic Canzone",
         "teamName": "Mariners",
-        "slot": 4,
+        "slot": 6,
         "propType": "hitRunRbi",
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 95.5,
-        "expectedValue": 4.9,
-        "statValueLabel": "2.00 H · 1.30 R · 1.58 RBI · 4.88 total",
+        "probability": 96,
+        "expectedValue": 5,
+        "statValueLabel": "1.77 H · 1.03 R · 2.20 RBI · 5.00 total",
         "sample": {
-          "seasonGames": 70,
-          "seasonPlateAppearances": 300,
+          "seasonGames": 61,
+          "seasonPlateAppearances": 170,
           "recentGames": 14,
-          "recentPlateAppearances": 64,
+          "recentPlateAppearances": 44,
           "statcastGames": 6,
-          "statcastPlateAppearances": 27,
+          "statcastPlateAppearances": 18,
           "opponentContextGames": 0
         },
         "repeatability": {
-          "careerPa": 3614,
-          "seasonPa": 300,
-          "powerIndex": 61.18,
-          "contactRisk": 49.97,
+          "careerPa": 780,
+          "seasonPa": 170,
+          "powerIndex": 70.14,
+          "contactRisk": 45.43,
           "roleStability": 100,
-          "label": "baseline career profile",
+          "label": "repeatable career power",
           "volatilityLabel": "stable enough",
-          "careerPowerBacked": false,
+          "careerPowerBacked": true,
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 63,
-            "processScore": 11,
+            "confidenceScore": 78.9,
+            "processScore": 18,
             "careerWeight": 0.1,
-            "identityDelta": -1.3,
-            "tbDelta": 0,
+            "identityDelta": 7.5,
+            "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 300,
-            "careerPa": 3614
+            "seasonPa": 170,
+            "careerPa": 780
           },
           "canCarryTinySample": false,
           "trackingPenalty": 18,
-          "reason": "baseline career profile"
+          "reason": "repeatable career power"
         },
         "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
-        "reason": "slot 4 carry | recent form up | combined hits/runs/RBI lane",
+        "reason": "slot 6 carry | recent form up | split fit live | combined hits/runs/RBI lane",
         "scriptTags": [
           "posted-lineup",
           "top-third-pressure",
@@ -18414,13 +19275,12 @@
           "carry-bat-live",
           "process-improving",
           "combined-production-lane",
-          "statcast-power-up",
-          "statcast-contact-up"
+          "statcast-power-up"
         ],
         "matchupNote": "+10.00 vs Zack Littell",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".290 AVG | .825 OPS | 75 H | 7 HR | 14g: .370 AVG | 1.024 OPS | 20 H | 2 HR | vs RHP: .301 AVG | .854 OPS | 5 HR | career 3614 PA | .781 OPS | 124 HR | baseline career profile | power 61 | 2026 sample ok | arsenal Slider 29% / 4-Seam Fastball 28% / Split-Finger 19% | fit +4.4 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".276 AVG | .874 OPS | 42 H | 9 HR | 14g: .333 AVG | 1.078 OPS | 14 H | 4 HR | vs RHP: .287 AVG | .897 OPS | 9 HR | career 780 PA | .749 OPS | 32 HR | repeatable career power | power 70 | 2026 sample ok | arsenal Slider 29% / 4-Seam Fastball 28% / Split-Finger 19% | fit +6.9 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "mariners-nationals:686527:totalBases",
@@ -18509,10 +19369,10 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 71,
-        "probability": 59.4,
+        "confidence": 70,
+        "probability": 59.7,
         "expectedValue": 2,
-        "statValueLabel": "2.00 exp hits",
+        "statValueLabel": "2.01 exp hits",
         "sample": {
           "seasonGames": 70,
           "seasonPlateAppearances": 300,
@@ -18582,10 +19442,10 @@
         "propType": "walks",
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
-        "confidence": 66,
-        "probability": 66.1,
+        "confidence": 67,
+        "probability": 66.3,
         "expectedValue": 1.1,
-        "statValueLabel": "1.08 exp walks",
+        "statValueLabel": "1.09 exp walks",
         "sample": {
           "seasonGames": 69,
           "seasonPlateAppearances": 322,
@@ -18630,6 +19490,8 @@
           "posted-lineup",
           "top-third-pressure",
           "middle-order-traffic",
+          "traffic-lane-live",
+          "clean-conversion-lane",
           "carry-bat-live",
           "process-fading",
           "statcast-fade"
@@ -18652,9 +19514,9 @@
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
         "confidence": 82,
-        "probability": 77.9,
+        "probability": 78.1,
         "expectedValue": 1.5,
-        "statValueLabel": "1.51 exp singles",
+        "statValueLabel": "1.52 exp singles",
         "sample": {
           "seasonGames": 70,
           "seasonPlateAppearances": 300,

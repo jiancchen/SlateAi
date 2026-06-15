@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-06-15T03:52:57.921Z",
+  "phase": "4",
+  "script": "data-migration/scripts/backfill_model_artifacts.mjs",
+  "dry_run": false,
+  "selected_type": "predictions",
+  "sports": [
+    {
+      "sport": "mlb",
+      "target": "data-private/warehouse/sports/mlb/sql-mlb.db",
+      "dry_run": false,
+      "selected_type": "predictions",
+      "planned_model_runs": 149,
+      "planned_artifacts": 149,
+      "before": {
+        "model_runs": 268,
+        "model_artifacts": 283
+      },
+      "after": {
+        "model_runs": 301,
+        "model_artifacts": 316
+      },
+      "sample_model_runs": [
+        {
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-15-8a420f1584c8",
+          "model_id": "statcast-hr-prototype-v1",
+          "run_date": "2026-05-15",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-16-9dcde599c910",
+          "model_id": "statcast-hr-prototype-v3",
+          "run_date": "2026-05-16",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-17-000c4c6cf431",
+          "model_id": "statcast-hr-prototype-v3",
+          "run_date": "2026-05-17",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-18-016468707ec6",
+          "model_id": "statcast-hr-prototype-v3",
+          "run_date": "2026-05-18",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-19-2276bc8f3ac6",
+          "model_id": "statcast-hr-prototype-v3",
+          "run_date": "2026-05-19",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-20-434b33a251ed",
+          "model_id": "statcast-hr-prototype-v3",
+          "run_date": "2026-05-20",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-21-ef5d117c07a1",
+          "model_id": "statcast-hr-prototype-v3",
+          "run_date": "2026-05-21",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        },
+        {
+          "model_run_id": "legacy-mlb-mlb-home-runs-2026-05-22-9c1a74182138",
+          "model_id": "statcast-hr-prototype-v3",
+          "run_date": "2026-05-22",
+          "run_type": "legacy_prediction_artifact",
+          "artifacts": 1
+        }
+      ],
+      "ok": true
+    }
+  ],
+  "ok": true,
+  "total_model_runs": 149,
+  "total_artifacts": 149
+}

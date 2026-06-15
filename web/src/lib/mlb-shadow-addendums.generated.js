@@ -35180,6 +35180,24868 @@ export const mlbShadowAddendumsByDate = {
         ]
       }
     }
+  },
+  "2026-06-13": {
+    "generatedAt": "2026-06-13T20:15:40.245Z",
+    "date": "2026-06-13",
+    "source": "sql-mlb.db shadow addendums",
+    "coverage": {
+      "games": 15,
+      "teamsWithBullpen": 30,
+      "exactUmpireGames": 0
+    },
+    "gamesById": {
+      "st-louis-cardinals-minnesota-twins": {
+        "gamePk": 823694,
+        "gameDate": "2026-06-13",
+        "awayTeam": "St. Louis Cardinals",
+        "homeTeam": "Minnesota Twins",
+        "away": {
+          "bullpen": {
+            "teamSlug": "cardinals",
+            "teamAbbr": "STL",
+            "teamName": "St. Louis Cardinals",
+            "stressScore": 89,
+            "tag": "taxed",
+            "topPitchesLast3": 53,
+            "topPitchesLast6": 93,
+            "taxedArmCount": 2,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Riley O'Brien CL",
+              "George Soriano SU8 16p/3d 2 uses/3d",
+              "JoJo Romero SU7 37p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "St. Louis Cardinals leverage relief looks taxed: 53 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: George Soriano (SU8), JoJo Romero (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Riley O'Brien",
+                "playerKey": "fg:20348",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 13.8
+              },
+              {
+                "playerName": "George Soriano",
+                "playerKey": "fg:21863",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 51.1
+              },
+              {
+                "playerName": "JoJo Romero",
+                "playerKey": "fg:19574",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 37,
+                "pitchesLast6": 45,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 70.9
+              },
+              {
+                "playerName": "Gordon Graceffo",
+                "playerKey": "fg:29519",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 22,
+                "pitchesLast6": 22,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 43.1
+              },
+              {
+                "playerName": "Ryne Stanek",
+                "playerKey": "fg:15947",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 23,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W",
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 36.4
+              },
+              {
+                "playerName": "Matt Svanson",
+                "playerKey": "fg:29629",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 24,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 26.4
+              },
+              {
+                "playerName": "Justin Bruihl",
+                "playerKey": "fg:23779",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 10,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 25.8
+              },
+              {
+                "playerName": "Chris Roycroft",
+                "playerKey": "fg:31261",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "twins",
+            "teamAbbr": "MIN",
+            "teamName": "Minnesota Twins",
+            "stressScore": 100,
+            "tag": "taxed",
+            "topPitchesLast3": 160,
+            "topPitchesLast6": 202,
+            "taxedArmCount": 3,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Andrew Morris CL 48p/3d 2 uses/3d",
+              "Yoendrys Gómez CL 42p/3d 2 uses/3d",
+              "Anthony Banda CL 39p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "Minnesota Twins leverage relief looks taxed: 160 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Andrew Morris (CL), Yoendrys Gómez (CL), Anthony Banda (CL)."
+            ],
+            "players": [
+              {
+                "playerName": "Andrew Morris",
+                "playerKey": "fg:31891",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 48,
+                "pitchesLast6": 90,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 90.9
+              },
+              {
+                "playerName": "Yoendrys Gómez",
+                "playerKey": "fg:22872",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 42,
+                "pitchesLast6": 42,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 74.1
+              },
+              {
+                "playerName": "Anthony Banda",
+                "playerKey": "fg:14706",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 39,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 71
+              },
+              {
+                "playerName": "Travis Adams",
+                "playerKey": "fg:30180",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 31,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 52.6
+              },
+              {
+                "playerName": "Taylor Rogers",
+                "playerKey": "fg:13449",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 36,
+                "pitchesLast6": 53,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 62.1
+              },
+              {
+                "playerName": "Eric Orze",
+                "playerKey": "fg:27626",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 32.6
+              },
+              {
+                "playerName": "Justin Lawrence",
+                "playerKey": "fg:17639",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 9.5
+              },
+              {
+                "playerName": "Cody Laweryson",
+                "playerKey": "fg:26429",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 32,
+                "pitchesLast6": 80,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 55.6
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "new-york-yankees-toronto-blue-jays": {
+        "gamePk": 822802,
+        "gameDate": "2026-06-13",
+        "awayTeam": "New York Yankees",
+        "homeTeam": "Toronto Blue Jays",
+        "away": {
+          "bullpen": {
+            "teamSlug": "yankees",
+            "teamAbbr": "NYY",
+            "teamName": "New York Yankees",
+            "stressScore": 70,
+            "tag": "watch",
+            "topPitchesLast3": 47,
+            "topPitchesLast6": 147,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "David Bednar CL",
+              "Fernando Cruz SU8 23p/3d 1 uses/3d",
+              "Brent Headrick SU7 24p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "New York Yankees leverage relief is watch: 47 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Brent Headrick (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "David Bednar",
+                "playerKey": "fg:19569",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 19.5
+              },
+              {
+                "playerName": "Fernando Cruz",
+                "playerKey": "fg:7048",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 23,
+                "pitchesLast6": 59,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 53.2
+              },
+              {
+                "playerName": "Brent Headrick",
+                "playerKey": "fg:27702",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 24,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 4,
+                "flags": [],
+                "unavailable": false,
+                "stress": 61.7
+              },
+              {
+                "playerName": "Ryan Yarbrough",
+                "playerKey": "fg:16502",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 27,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 41.4
+              },
+              {
+                "playerName": "Jake Bird",
+                "playerKey": "fg:21267",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 20,
+                "pitchesLast6": 52,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 39
+              },
+              {
+                "playerName": "Camilo Doval",
+                "playerKey": "fg:21992",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 40,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 34.4
+              },
+              {
+                "playerName": "Tim Hill",
+                "playerKey": "fg:16814",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 23,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 5.8
+              },
+              {
+                "playerName": "Paul Blackburn",
+                "playerKey": "fg:14739",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 9.5
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "blue-jays",
+            "teamAbbr": "TOR",
+            "teamName": "Toronto Blue Jays",
+            "stressScore": 82,
+            "tag": "taxed",
+            "topPitchesLast3": 58,
+            "topPitchesLast6": 123,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Louis Varland CL 16p/3d 1 uses/3d",
+              "Tyler Rogers SU8 21p/3d 2 uses/3d",
+              "Jeff Hoffman SU7 21p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Toronto Blue Jays leverage relief looks taxed: 58 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Tyler Rogers (SU8)."
+            ],
+            "players": [
+              {
+                "playerName": "Louis Varland",
+                "playerKey": "fg:27691",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 49,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "W",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 45.1
+              },
+              {
+                "playerName": "Tyler Rogers",
+                "playerKey": "fg:15541",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 56.3
+              },
+              {
+                "playerName": "Jeff Hoffman",
+                "playerKey": "fg:17432",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 45.8
+              },
+              {
+                "playerName": "Braydon Fisher",
+                "playerKey": "fg:24609",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 53,
+                "pitchesLast6": 53,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 75.7
+              },
+              {
+                "playerName": "Tommy Nance",
+                "playerKey": "fg:19178",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": true,
+                "stress": 53.6
+              },
+              {
+                "playerName": "Mason Fluharty",
+                "playerKey": "fg:31553",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 30,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 53.5
+              },
+              {
+                "playerName": "Spencer Miles",
+                "playerKey": "fg:31621",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 17,
+                "pitchesLast6": 17,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 27.9
+              },
+              {
+                "playerName": "Simeon Woods Richardson",
+                "playerKey": "fg:24494",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 48,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 12
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "san-diego-padres-baltimore-orioles": {
+        "gamePk": 824828,
+        "gameDate": "2026-06-13",
+        "awayTeam": "San Diego Padres",
+        "homeTeam": "Baltimore Orioles",
+        "away": {
+          "bullpen": {
+            "teamSlug": "padres",
+            "teamAbbr": "SDP",
+            "teamName": "San Diego Padres",
+            "stressScore": 34,
+            "tag": "stable",
+            "topPitchesLast3": 0,
+            "topPitchesLast6": 124,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Mason Miller CL",
+              "Jason Adam SU8",
+              "Adrian Morejon SU7"
+            ],
+            "reasons": [
+              "San Diego Padres leverage relief is stable: 0 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Mason Miller",
+                "playerKey": "fg:31757",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 18.3
+              },
+              {
+                "playerName": "Jason Adam",
+                "playerKey": "fg:11861",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 21
+              },
+              {
+                "playerName": "Adrian Morejon",
+                "playerKey": "fg:20039",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 21.8
+              },
+              {
+                "playerName": "Wandy Peralta",
+                "playerKey": "fg:14295",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 44,
+                "pitchesLast6": 71,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 73
+              },
+              {
+                "playerName": "David Morgan",
+                "playerKey": "fg:31616",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 36.2
+              },
+              {
+                "playerName": "Yuki Matsui",
+                "playerKey": "fg:33826",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 9.8
+              },
+              {
+                "playerName": "Bradgley Rodriguez",
+                "playerKey": "fg:29107",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 34,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 8.5
+              },
+              {
+                "playerName": "Ron Marinaccio",
+                "playerKey": "fg:23488",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 24,
+                "pitchesLast6": 60,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 44.2
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "orioles",
+            "teamAbbr": "BAL",
+            "teamName": "Baltimore Orioles",
+            "stressScore": 85,
+            "tag": "taxed",
+            "topPitchesLast3": 60,
+            "topPitchesLast6": 117,
+            "taxedArmCount": 2,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Andrew Kittredge CL 15p/3d 2 uses/3d",
+              "Rico Garcia CL 16p/3d 1 uses/3d",
+              "Yennier Cano SU7 29p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "Baltimore Orioles leverage relief looks taxed: 60 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Andrew Kittredge (CL), Yennier Cano (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Andrew Kittredge",
+                "playerKey": "fg:12828",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 34,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 50.5
+              },
+              {
+                "playerName": "Rico Garcia",
+                "playerKey": "fg:20023",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "L",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 43.8
+              },
+              {
+                "playerName": "Yennier Cano",
+                "playerKey": "fg:25911",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 29,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 63
+              },
+              {
+                "playerName": "Tyler Wells",
+                "playerKey": "fg:20000",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 39,
+                "pitchesLast6": 54,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 54.7
+              },
+              {
+                "playerName": "Grant Wolfram",
+                "playerKey": "fg:21623",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 27,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 52.6
+              },
+              {
+                "playerName": "Anthony Nunez",
+                "playerKey": "fg:25796",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 54,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 40.3
+              },
+              {
+                "playerName": "Keegan Akin",
+                "playerKey": "fg:19362",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 12,
+                "pitchesLast6": 29,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 26.9
+              },
+              {
+                "playerName": "Albert Suárez",
+                "playerKey": "fg:6175",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 9.8
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "seattle-mariners-washington-nationals": {
+        "gamePk": 822725,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Seattle Mariners",
+        "homeTeam": "Washington Nationals",
+        "away": {
+          "bullpen": {
+            "teamSlug": "mariners",
+            "teamAbbr": "SEA",
+            "teamName": "Seattle Mariners",
+            "stressScore": 67,
+            "tag": "watch",
+            "topPitchesLast3": 0,
+            "topPitchesLast6": 130,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Andrés Muñoz CL",
+              "José A. Ferrer SU8",
+              "Eduard Bazardo SU7"
+            ],
+            "reasons": [
+              "Seattle Mariners leverage relief is watch: 0 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: José A. Ferrer (SU8)."
+            ],
+            "players": [
+              {
+                "playerName": "Andrés Muñoz",
+                "playerKey": "fg:20373",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "B",
+                  "L",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 19.8
+              },
+              {
+                "playerName": "José A. Ferrer",
+                "playerKey": "fg:24017",
+                "role": "SU8",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 61,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "B",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 25.3
+              },
+              {
+                "playerName": "Eduard Bazardo",
+                "playerKey": "fg:20997",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 30,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 17.5
+              },
+              {
+                "playerName": "Nick Davila",
+                "playerKey": "fg:27741",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": true,
+                "stress": 56.4
+              },
+              {
+                "playerName": "Alex Hoppe",
+                "playerKey": "fg:31880",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 28,
+                "pitchesLast6": 37,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 41.7
+              },
+              {
+                "playerName": "Gabe Speier",
+                "playerKey": "fg:17170",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 26,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 6.5
+              },
+              {
+                "playerName": "Michael Rucker",
+                "playerKey": "fg:19454",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 9,
+                "pitchesLast6": 9,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 43.5
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "nationals",
+            "teamAbbr": "WSN",
+            "teamName": "Washington Nationals",
+            "stressScore": 47,
+            "tag": "stable",
+            "topPitchesLast3": 10,
+            "topPitchesLast6": 109,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Clayton Beeter CL",
+              "Orlando Ribalta SU8 10p/3d 1 uses/3d",
+              "Brad Lord SU7"
+            ],
+            "reasons": [
+              "Washington Nationals leverage relief is stable: 10 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Clayton Beeter",
+                "playerKey": "fg:27494",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 16.8
+              },
+              {
+                "playerName": "Orlando Ribalta",
+                "playerKey": "fg:26247",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 10,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 34.3
+              },
+              {
+                "playerName": "Brad Lord",
+                "playerKey": "fg:31972",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 57,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 24.3
+              },
+              {
+                "playerName": "Gus Varland",
+                "playerKey": "fg:24737",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 28,
+                "pitchesLast6": 62,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 4,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 57.9
+              },
+              {
+                "playerName": "Mitchell Parker",
+                "playerKey": "fg:27636",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 8,
+                "pitchesLast6": 34,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS",
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 24.9
+              },
+              {
+                "playerName": "PJ Poulin",
+                "playerKey": "fg:23394",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              },
+              {
+                "playerName": "Richard Lovelady",
+                "playerKey": "fg:19337",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 18,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 4.5
+              },
+              {
+                "playerName": "Paxton Schultz",
+                "playerKey": "fg:25501",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 66,
+                "pitchesLast6": 66,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 89.3
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "miami-marlins-pittsburgh-pirates": {
+        "gamePk": 823369,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Miami Marlins",
+        "homeTeam": "Pittsburgh Pirates",
+        "away": {
+          "bullpen": {
+            "teamSlug": "marlins",
+            "teamAbbr": "MIA",
+            "teamName": "Miami Marlins",
+            "stressScore": 58,
+            "tag": "watch",
+            "topPitchesLast3": 46,
+            "topPitchesLast6": 148,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Pete Fairbanks CL 13p/3d 1 uses/3d",
+              "Anthony Bender SU8 19p/3d 1 uses/3d",
+              "Michael Petersen SU7 14p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Miami Marlins leverage relief is watch: 46 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Pete Fairbanks",
+                "playerKey": "fg:17998",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 37,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 39.7
+              },
+              {
+                "playerName": "Anthony Bender",
+                "playerKey": "fg:19742",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 19,
+                "pitchesLast6": 54,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 48.7
+              },
+              {
+                "playerName": "Michael Petersen",
+                "playerKey": "fg:20827",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 14,
+                "pitchesLast6": 57,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 45.5
+              },
+              {
+                "playerName": "Lake Bachar",
+                "playerKey": "fg:19222",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 36,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 47.8
+              },
+              {
+                "playerName": "William Kempner",
+                "playerKey": "fg:31615",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 36,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 47.8
+              },
+              {
+                "playerName": "John King",
+                "playerKey": "fg:22051",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 18,
+                "pitchesLast6": 18,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 28.9
+              },
+              {
+                "playerName": "Calvin Faucher",
+                "playerKey": "fg:20116",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 26.7
+              },
+              {
+                "playerName": "Cade Gibson",
+                "playerKey": "fg:31815",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 25.8
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "pirates",
+            "teamAbbr": "PIT",
+            "teamName": "Pittsburgh Pirates",
+            "stressScore": 84,
+            "tag": "taxed",
+            "topPitchesLast3": 63,
+            "topPitchesLast6": 120,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Gregory Soto CL 8p/3d 1 uses/3d",
+              "Dennis Santana SU8 16p/3d 1 uses/3d",
+              "Evan Sisk SU7 39p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "Pittsburgh Pirates leverage relief looks taxed: 63 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Evan Sisk (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Gregory Soto",
+                "playerKey": "fg:19677",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 8,
+                "pitchesLast6": 8,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 28.4
+              },
+              {
+                "playerName": "Dennis Santana",
+                "playerKey": "fg:17878",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 44.6
+              },
+              {
+                "playerName": "Evan Sisk",
+                "playerKey": "fg:24995",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 39,
+                "pitchesLast6": 65,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "BS",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 77.5
+              },
+              {
+                "playerName": "Brandan Bidois",
+                "playerKey": "fg:28052",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 29,
+                "pitchesLast6": 65,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 49.5
+              },
+              {
+                "playerName": "Yohan Ramírez",
+                "playerKey": "fg:19444",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 35,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 46.8
+              },
+              {
+                "playerName": "Isaac Mattson",
+                "playerKey": "fg:20385",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              },
+              {
+                "playerName": "Mason Montgomery",
+                "playerKey": "fg:29770",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 6.3
+              },
+              {
+                "playerName": "Carmen Mlodzinski",
+                "playerKey": "fg:27572",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 76,
+                "pitchesLast6": 76,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 89.8
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "arizona-diamondbacks-cincinnati-reds": {
+        "gamePk": 824508,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Arizona Diamondbacks",
+        "homeTeam": "Cincinnati Reds",
+        "away": {
+          "bullpen": {
+            "teamSlug": "diamondbacks",
+            "teamAbbr": "ARI",
+            "teamName": "Arizona Diamondbacks",
+            "stressScore": 66,
+            "tag": "watch",
+            "topPitchesLast3": 54,
+            "topPitchesLast6": 78,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Paul Sewald CL 29p/3d 2 uses/3d",
+              "Kevin Ginkel SU8 20p/3d 1 uses/3d",
+              "Juan Morillo SU7 5p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Arizona Diamondbacks leverage relief is watch: 54 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Paul Sewald (CL)."
+            ],
+            "players": [
+              {
+                "playerName": "Paul Sewald",
+                "playerKey": "fg:13892",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 29,
+                "pitchesLast6": 29,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 60.5
+              },
+              {
+                "playerName": "Kevin Ginkel",
+                "playerKey": "fg:19876",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 20,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 47
+              },
+              {
+                "playerName": "Juan Morillo",
+                "playerKey": "fg:21924",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 5,
+                "pitchesLast6": 5,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 25.3
+              },
+              {
+                "playerName": "Taylor Clarke",
+                "playerKey": "fg:17611",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 36,
+                "pitchesLast6": 66,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 55.3
+              },
+              {
+                "playerName": "Jonathan Loáisiga",
+                "playerKey": "fg:19753",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 17,
+                "pitchesLast6": 17,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 37.9
+              },
+              {
+                "playerName": "Ryan Thompson",
+                "playerKey": "fg:16647",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 31.2
+              },
+              {
+                "playerName": "Brandyn Garcia",
+                "playerKey": "fg:33568",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 30
+              },
+              {
+                "playerName": "Drey Jameson",
+                "playerKey": "fg:26260",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 28,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 39.4
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "reds",
+            "teamAbbr": "CIN",
+            "teamName": "Cincinnati Reds",
+            "stressScore": 61,
+            "tag": "watch",
+            "topPitchesLast3": 37,
+            "topPitchesLast6": 124,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Brock Burke CL 28p/3d 1 uses/3d",
+              "Tony Santillan CL 9p/3d 1 uses/3d",
+              "Sam Moll CL"
+            ],
+            "reasons": [
+              "Cincinnati Reds leverage relief is watch: 37 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Brock Burke",
+                "playerKey": "fg:17968",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 28,
+                "pitchesLast6": 56,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 56.4
+              },
+              {
+                "playerName": "Tony Santillan",
+                "playerKey": "fg:19926",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 9,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 37
+              },
+              {
+                "playerName": "Sam Moll",
+                "playerKey": "fg:14874",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 29,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 17.3
+              },
+              {
+                "playerName": "Zach Maxwell",
+                "playerKey": "fg:31610",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 56,
+                "pitchesLast6": 65,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 81.1
+              },
+              {
+                "playerName": "Chase Petty",
+                "playerKey": "fg:30170",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 17,
+                "pitchesLast6": 17,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": true,
+                "stress": 51.9
+              },
+              {
+                "playerName": "Tejay Antone",
+                "playerKey": "fg:16233",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "B",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 39.3
+              },
+              {
+                "playerName": "Caleb Ferguson",
+                "playerKey": "fg:19349",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 30.8
+              },
+              {
+                "playerName": "Chris Paddack",
+                "playerKey": "fg:20099",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 8.3
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "detroit-tigers-cleveland-guardians": {
+        "gamePk": 824426,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Detroit Tigers",
+        "homeTeam": "Cleveland Guardians",
+        "away": {
+          "bullpen": {
+            "teamSlug": "tigers",
+            "teamAbbr": "DET",
+            "teamName": "Detroit Tigers",
+            "stressScore": 59,
+            "tag": "watch",
+            "topPitchesLast3": 0,
+            "topPitchesLast6": 49,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Kenley Jansen CL override",
+              "Will Vest SU8",
+              "Kyle Finnegan SU7"
+            ],
+            "reasons": [
+              "Detroit Tigers leverage relief is watch: 0 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Kenley Jansen (CL)."
+            ],
+            "players": [
+              {
+                "playerName": "Kenley Jansen",
+                "playerKey": "fg:3096",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 34
+              },
+              {
+                "playerName": "Will Vest",
+                "playerKey": "fg:19769",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 10,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 12.5
+              },
+              {
+                "playerName": "Kyle Finnegan",
+                "playerKey": "fg:15009",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 19.8
+              },
+              {
+                "playerName": "Drew Sommers",
+                "playerKey": "fg:32026",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 32,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 56.6
+              },
+              {
+                "playerName": "Tyler Holton",
+                "playerKey": "fg:26231",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 25,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 42.5
+              },
+              {
+                "playerName": "Drew Anderson",
+                "playerKey": "fg:15130",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 54,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 40.3
+              },
+              {
+                "playerName": "Enmanuel De Jesus",
+                "playerKey": "fg:18554",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 3.8
+              },
+              {
+                "playerName": "Jacob Waguespack",
+                "playerKey": "fg:18318",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 20,
+                "pitchesLast6": 20,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 55
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "guardians",
+            "teamAbbr": "CLE",
+            "teamName": "Cleveland Guardians",
+            "stressScore": 53,
+            "tag": "watch",
+            "topPitchesLast3": 26,
+            "topPitchesLast6": 96,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Cade Smith CL 13p/3d 1 uses/3d",
+              "Hunter Gaddis SU8 13p/3d 1 uses/3d",
+              "Shawn Armstrong SU7"
+            ],
+            "reasons": [
+              "Cleveland Guardians leverage relief is watch: 26 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Cade Smith",
+                "playerKey": "fg:27867",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 39.2
+              },
+              {
+                "playerName": "Hunter Gaddis",
+                "playerKey": "fg:25636",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 39.4
+              },
+              {
+                "playerName": "Shawn Armstrong",
+                "playerKey": "fg:12857",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 16.3
+              },
+              {
+                "playerName": "Will Dion",
+                "playerKey": "fg:30061",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 31,
+                "pitchesLast6": 68,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 51.8
+              },
+              {
+                "playerName": "Daniel Espino",
+                "playerKey": "daniel espino",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              },
+              {
+                "playerName": "Tim Herrin",
+                "playerKey": "fg:25139",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 34,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 8.5
+              },
+              {
+                "playerName": "Colin Holderman",
+                "playerKey": "fg:22361",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 30,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 7.5
+              },
+              {
+                "playerName": "Matt Festa",
+                "playerKey": "fg:19330",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 30
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "texas-rangers-boston-red-sox": {
+        "gamePk": 824749,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Texas Rangers",
+        "homeTeam": "Boston Red Sox",
+        "away": {
+          "bullpen": {
+            "teamSlug": "rangers",
+            "teamAbbr": "TEX",
+            "teamName": "Texas Rangers",
+            "stressScore": 100,
+            "tag": "taxed",
+            "topPitchesLast3": 65,
+            "topPitchesLast6": 73,
+            "taxedArmCount": 2,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Jacob Latz CL 32p/3d 2 uses/3d",
+              "Jakob Junis SU8 21p/3d 1 uses/3d",
+              "Cole Winn SU7 12p/3d 1 uses/3d override"
+            ],
+            "reasons": [
+              "Texas Rangers leverage relief looks taxed: 65 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Jacob Latz (CL), Cole Winn (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Jacob Latz",
+                "playerKey": "fg:21306",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 32,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 63.6
+              },
+              {
+                "playerName": "Jakob Junis",
+                "playerKey": "fg:13619",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 21,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 42.1
+              },
+              {
+                "playerName": "Cole Winn",
+                "playerKey": "fg:22113",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 12,
+                "pitchesLast6": 20,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": true,
+                "stress": 58.6
+              },
+              {
+                "playerName": "Peyton Gray",
+                "playerKey": "fg:25310",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 20,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 35.8
+              },
+              {
+                "playerName": "Robby Ahlstrom",
+                "playerKey": "fg:30167",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 14,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 28.2
+              },
+              {
+                "playerName": "Joe Ross",
+                "playerKey": "fg:12972",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              },
+              {
+                "playerName": "Tyler Alexander",
+                "playerKey": "fg:17735",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 11,
+                "pitchesLast6": 19,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 23.6
+              },
+              {
+                "playerName": "Cal Quantrill",
+                "playerKey": "fg:19312",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 38,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 49.9
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "red-sox",
+            "teamAbbr": "BOS",
+            "teamName": "Boston Red Sox",
+            "stressScore": 59,
+            "tag": "watch",
+            "topPitchesLast3": 19,
+            "topPitchesLast6": 61,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Aroldis Chapman CL",
+              "Garrett Whitlock SU8 override",
+              "Justin Slaten SU7 19p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Boston Red Sox leverage relief is watch: 19 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Garrett Whitlock (SU8)."
+            ],
+            "players": [
+              {
+                "playerName": "Aroldis Chapman",
+                "playerKey": "fg:10233",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": false,
+                "stress": 10
+              },
+              {
+                "playerName": "Garrett Whitlock",
+                "playerKey": "fg:20191",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 17,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 38.3
+              },
+              {
+                "playerName": "Justin Slaten",
+                "playerKey": "fg:25648",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 19,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 46.2
+              },
+              {
+                "playerName": "Danny Coulombe",
+                "playerKey": "fg:13293",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 14,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 30.2
+              },
+              {
+                "playerName": "Tyron Guerrero",
+                "playerKey": "fg:11691",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 12,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 29.1
+              },
+              {
+                "playerName": "Tommy Kahnle",
+                "playerKey": "fg:11384",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 10,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 24.3
+              },
+              {
+                "playerName": "Greg Weissert",
+                "playerKey": "fg:20375",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 3,
+                "pitchesLast6": 20,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 17.4
+              },
+              {
+                "playerName": "Ryan Watson",
+                "playerKey": "fg:27853",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 35,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 46.8
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "atlanta-braves-new-york-mets": {
+        "gamePk": 823616,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Atlanta Braves",
+        "homeTeam": "New York Mets",
+        "away": {
+          "bullpen": {
+            "teamSlug": "braves",
+            "teamAbbr": "ATL",
+            "teamName": "Atlanta Braves",
+            "stressScore": 47,
+            "tag": "stable",
+            "topPitchesLast3": 3,
+            "topPitchesLast6": 34,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Raisel Iglesias CL",
+              "Robert Suarez SU8",
+              "Dylan Lee SU7 3p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Atlanta Braves leverage relief is stable: 3 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Raisel Iglesias",
+                "playerKey": "fg:17130",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 24,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 16
+              },
+              {
+                "playerName": "Robert Suarez",
+                "playerKey": "fg:30115",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 7,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 11.8
+              },
+              {
+                "playerName": "Dylan Lee",
+                "playerKey": "fg:19996",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 3,
+                "pitchesLast6": 3,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 23.2
+              },
+              {
+                "playerName": "James Karinchak",
+                "playerKey": "fg:20151",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 19,
+                "pitchesLast6": 19,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 54
+              },
+              {
+                "playerName": "Didier Fuentes",
+                "playerKey": "fg:30661",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 28.7
+              },
+              {
+                "playerName": "Dylan Dodd",
+                "playerKey": "fg:29928",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 7.8
+              },
+              {
+                "playerName": "Reynaldo López",
+                "playerKey": "fg:16400",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 6.8
+              },
+              {
+                "playerName": "Anthony Molina",
+                "playerKey": "fg:26952",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "mets",
+            "teamAbbr": "NYM",
+            "teamName": "New York Mets",
+            "stressScore": 100,
+            "tag": "taxed",
+            "topPitchesLast3": 102,
+            "topPitchesLast6": 154,
+            "taxedArmCount": 2,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Devin Williams CL 49p/3d 2 uses/3d",
+              "Luke Weaver SU8 11p/3d 1 uses/3d",
+              "Brooks Raley SU7 42p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "New York Mets leverage relief looks taxed: 102 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Devin Williams (CL), Brooks Raley (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Devin Williams",
+                "playerKey": "fg:15816",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 49,
+                "pitchesLast6": 69,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 86.5
+              },
+              {
+                "playerName": "Luke Weaver",
+                "playerKey": "fg:16918",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 11,
+                "pitchesLast6": 29,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 36.1
+              },
+              {
+                "playerName": "Brooks Raley",
+                "playerKey": "fg:10061",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 42,
+                "pitchesLast6": 56,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 77.6
+              },
+              {
+                "playerName": "Cionel Pérez",
+                "playerKey": "fg:19614",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 31,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 54.3
+              },
+              {
+                "playerName": "Austin Warren",
+                "playerKey": "fg:24937",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 33,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 44.7
+              },
+              {
+                "playerName": "Huascar Brazobán",
+                "playerKey": "fg:6107",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 19,
+                "pitchesLast6": 41,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 35.5
+              },
+              {
+                "playerName": "A.J. Minter",
+                "playerKey": "fg:18655",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 14,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 28
+              },
+              {
+                "playerName": "Daniel Duarte",
+                "playerKey": "fg:17480",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "los-angeles-dodgers-chicago-white-sox": {
+        "gamePk": 824587,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Los Angeles Dodgers",
+        "homeTeam": "Chicago White Sox",
+        "away": {
+          "bullpen": {
+            "teamSlug": "dodgers",
+            "teamAbbr": "LAD",
+            "teamName": "Los Angeles Dodgers",
+            "stressScore": 70,
+            "tag": "taxed",
+            "topPitchesLast3": 53,
+            "topPitchesLast6": 122,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Tanner Scott CL 18p/3d 1 uses/3d",
+              "Will Klein SU8 22p/3d 1 uses/3d",
+              "Alex Vesia SU7 13p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "Los Angeles Dodgers leverage relief looks taxed: 53 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Alex Vesia (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Tanner Scott",
+                "playerKey": "fg:17586",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 18,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 43.2
+              },
+              {
+                "playerName": "Will Klein",
+                "playerKey": "fg:27787",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 22,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 48.4
+              },
+              {
+                "playerName": "Alex Vesia",
+                "playerKey": "fg:25007",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 13,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 51.4
+              },
+              {
+                "playerName": "Edgardo Henriquez",
+                "playerKey": "fg:26944",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 31,
+                "pitchesLast6": 55,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 58.6
+              },
+              {
+                "playerName": "Jack Dreyer",
+                "playerKey": "fg:30249",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 27,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 52.6
+              },
+              {
+                "playerName": "Blake Treinen",
+                "playerKey": "fg:12572",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 69,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 40.1
+              },
+              {
+                "playerName": "Kyle Hurt",
+                "playerKey": "fg:27514",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 20,
+                "pitchesLast6": 42,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 36.5
+              },
+              {
+                "playerName": "Jonathan Hernández",
+                "playerKey": "fg:17464",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 46,
+                "pitchesLast6": 85,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 68.1
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "white-sox",
+            "teamAbbr": "CHW",
+            "teamName": "Chicago White Sox",
+            "stressScore": 95,
+            "tag": "taxed",
+            "topPitchesLast3": 64,
+            "topPitchesLast6": 123,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Bryan Hudson CL 23p/3d 2 uses/3d",
+              "Sean Newcomb CL 27p/3d 1 uses/3d",
+              "Seranthony Domínguez CL 14p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Chicago White Sox leverage relief looks taxed: 64 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Bryan Hudson (CL)."
+            ],
+            "players": [
+              {
+                "playerName": "Bryan Hudson",
+                "playerKey": "fg:19924",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 23,
+                "pitchesLast6": 48,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 60.4
+              },
+              {
+                "playerName": "Sean Newcomb",
+                "playerKey": "fg:16943",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 27,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 48.4
+              },
+              {
+                "playerName": "Seranthony Domínguez",
+                "playerKey": "fg:19249",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 14,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 38
+              },
+              {
+                "playerName": "Grant Taylor",
+                "playerKey": "fg:33927",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 21,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 15.3
+              },
+              {
+                "playerName": "Chris Murphy",
+                "playerKey": "fg:26214",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 14,
+                "pitchesLast6": 14,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 48.7
+              },
+              {
+                "playerName": "Joe Rock",
+                "playerKey": "fg:30016",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              },
+              {
+                "playerName": "Tyler Davis",
+                "playerKey": "fg:34847",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 30,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 7.5
+              },
+              {
+                "playerName": "Brandon Eisert",
+                "playerKey": "fg:27668",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 21,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 5.3
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "houston-astros-kansas-city-royals": {
+        "gamePk": 824100,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Houston Astros",
+        "homeTeam": "Kansas City Royals",
+        "away": {
+          "bullpen": {
+            "teamSlug": "astros",
+            "teamAbbr": "HOU",
+            "teamName": "Houston Astros",
+            "stressScore": 100,
+            "tag": "taxed",
+            "topPitchesLast3": 92,
+            "topPitchesLast6": 141,
+            "taxedArmCount": 3,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Josh Hader CL 31p/3d 2 uses/3d",
+              "Bryan King SU8 21p/3d 2 uses/3d",
+              "Enyel De Los Santos SU7 40p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "Houston Astros leverage relief looks taxed: 92 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Josh Hader (CL), Bryan King (SU8), Enyel De Los Santos (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Josh Hader",
+                "playerKey": "fg:14212",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 31,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 65.6
+              },
+              {
+                "playerName": "Bryan King",
+                "playerKey": "fg:25890",
+                "role": "SU8",
+                "throws": "L",
+                "pitchesLast3": 21,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 55.1
+              },
+              {
+                "playerName": "Enyel De Los Santos",
+                "playerKey": "fg:18403",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 40,
+                "pitchesLast6": 65,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 78.3
+              },
+              {
+                "playerName": "Steven Okert",
+                "playerKey": "fg:13580",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 28,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 42.2
+              },
+              {
+                "playerName": "Nate Pearson",
+                "playerKey": "fg:20160",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 48,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 34
+              },
+              {
+                "playerName": "Bryan Abreu",
+                "playerKey": "fg:16609",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 7,
+                "pitchesLast6": 24,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 21.6
+              },
+              {
+                "playerName": "Alimber Santa",
+                "playerKey": "fg:28846",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 6.8
+              },
+              {
+                "playerName": "AJ Blubaugh",
+                "playerKey": "fg:31764",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 38,
+                "pitchesLast6": 72,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 58.4
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "royals",
+            "teamAbbr": "KCR",
+            "teamName": "Kansas City Royals",
+            "stressScore": 100,
+            "tag": "taxed",
+            "topPitchesLast3": 108,
+            "topPitchesLast6": 155,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Alex Lange CL 32p/3d 1 uses/3d",
+              "Lucas Erceg SU8 59p/3d 2 uses/3d",
+              "Daniel Lynch IV SU7 17p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Kansas City Royals leverage relief looks taxed: 108 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Lucas Erceg (SU8)."
+            ],
+            "players": [
+              {
+                "playerName": "Alex Lange",
+                "playerKey": "fg:19883",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 32,
+                "pitchesLast6": 51,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 58.4
+              },
+              {
+                "playerName": "Lucas Erceg",
+                "playerKey": "fg:19360",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 59,
+                "pitchesLast6": 74,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 95.7
+              },
+              {
+                "playerName": "Daniel Lynch IV",
+                "playerKey": "fg:21537",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 17,
+                "pitchesLast6": 30,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 41.1
+              },
+              {
+                "playerName": "Steven Cruz",
+                "playerKey": "fg:23165",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 40,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 64.5
+              },
+              {
+                "playerName": "Matt Strahm",
+                "playerKey": "fg:13799",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 35,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 56.8
+              },
+              {
+                "playerName": "Eli Morgan",
+                "playerKey": "fg:20203",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 13,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 47.7
+              },
+              {
+                "playerName": "Beck Way",
+                "playerKey": "fg:27877",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 32,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 47.4
+              },
+              {
+                "playerName": "John Schreiber",
+                "playerKey": "fg:20020",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 33.2
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "philadelphia-phillies-milwaukee-brewers": {
+        "gamePk": 823776,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Philadelphia Phillies",
+        "homeTeam": "Milwaukee Brewers",
+        "away": {
+          "bullpen": {
+            "teamSlug": "phillies",
+            "teamAbbr": "PHI",
+            "teamName": "Philadelphia Phillies",
+            "stressScore": 38,
+            "tag": "stable",
+            "topPitchesLast3": 13,
+            "topPitchesLast6": 99,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Jhoan Duran CL 10p/3d 1 uses/3d",
+              "Brad Keller SU8 3p/3d 1 uses/3d",
+              "Orion Kerkering SU7"
+            ],
+            "reasons": [
+              "Philadelphia Phillies leverage relief is stable: 13 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Jhoan Duran",
+                "playerKey": "fg:21029",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 10,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "B",
+                  "L",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 34.8
+              },
+              {
+                "playerName": "Brad Keller",
+                "playerKey": "fg:15734",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 3,
+                "pitchesLast6": 23,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 28.2
+              },
+              {
+                "playerName": "Orion Kerkering",
+                "playerKey": "fg:31776",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 49,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 22.3
+              },
+              {
+                "playerName": "José Alvarado",
+                "playerKey": "fg:17780",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 19,
+                "pitchesLast6": 59,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 40
+              },
+              {
+                "playerName": "Tanner Banks",
+                "playerKey": "fg:16990",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 28,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 39.4
+              },
+              {
+                "playerName": "Tim Mayza",
+                "playerKey": "fg:15042",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 22,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 37.1
+              },
+              {
+                "playerName": "Jonathan Bowlan",
+                "playerKey": "fg:24607",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 4,
+                "pitchesLast6": 23,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 19
+              },
+              {
+                "playerName": "Chase Shugart",
+                "playerKey": "fg:21544",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 33,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 54.7
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "brewers",
+            "teamAbbr": "MIL",
+            "teamName": "Milwaukee Brewers",
+            "stressScore": 57,
+            "tag": "watch",
+            "topPitchesLast3": 37,
+            "topPitchesLast6": 88,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Trevor Megill CL 17p/3d 1 uses/3d",
+              "Abner Uribe SU8",
+              "Aaron Ashby SU7 20p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Milwaukee Brewers leverage relief is watch: 37 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Trevor Megill",
+                "playerKey": "fg:17722",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 17,
+                "pitchesLast6": 17,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 37.9
+              },
+              {
+                "playerName": "Abner Uribe",
+                "playerKey": "fg:25327",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 13.8
+              },
+              {
+                "playerName": "Aaron Ashby",
+                "playerKey": "fg:23550",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 20,
+                "pitchesLast6": 56,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 50
+              },
+              {
+                "playerName": "Chad Patrick",
+                "playerKey": "fg:30113",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 8,
+                "pitchesLast6": 37,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 25.7
+              },
+              {
+                "playerName": "Joel Kuhnel",
+                "playerKey": "fg:19995",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 10.8
+              },
+              {
+                "playerName": "Grant Anderson",
+                "playerKey": "fg:20546",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 7
+              },
+              {
+                "playerName": "Drew Rom",
+                "playerKey": "fg:24602",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 6.3
+              },
+              {
+                "playerName": "Craig Yoho",
+                "playerKey": "fg:33248",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 18,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 28.5
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "colorado-rockies-athletics": {
+        "gamePk": 824995,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Colorado Rockies",
+        "homeTeam": "Athletics",
+        "away": {
+          "bullpen": {
+            "teamSlug": "rockies",
+            "teamAbbr": "COL",
+            "teamName": "Colorado Rockies",
+            "stressScore": 61,
+            "tag": "watch",
+            "topPitchesLast3": 46,
+            "topPitchesLast6": 82,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Antonio Senzatela CL 14p/3d 1 uses/3d",
+              "Juan Mejia SU8 10p/3d 1 uses/3d",
+              "Seth Halvorsen SU7 22p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Colorado Rockies leverage relief is watch: 46 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Antonio Senzatela",
+                "playerKey": "fg:15488",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 14,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "B",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 40.2
+              },
+              {
+                "playerName": "Juan Mejia",
+                "playerKey": "fg:23237",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 10,
+                "pitchesLast6": 10,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 30.5
+              },
+              {
+                "playerName": "Seth Halvorsen",
+                "playerKey": "fg:33294",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 22,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 46.6
+              },
+              {
+                "playerName": "Jeff Criswell",
+                "playerKey": "fg:27608",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 49,
+                "pitchesLast6": 49,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": true,
+                "stress": 95.5
+              },
+              {
+                "playerName": "Zach Agnos",
+                "playerKey": "fg:31552",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 60,
+                "pitchesLast6": 60,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 73
+              },
+              {
+                "playerName": "Brennan Bernardino",
+                "playerKey": "fg:16835",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 24,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 48
+              },
+              {
+                "playerName": "Jaden Hill",
+                "playerKey": "fg:30250",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 9
+              },
+              {
+                "playerName": "Blas Castaño",
+                "playerKey": "fg:26117",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 46,
+                "pitchesLast6": 46,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 58.3
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "athletics",
+            "teamAbbr": "ATH",
+            "teamName": "Athletics",
+            "stressScore": 79,
+            "tag": "taxed",
+            "topPitchesLast3": 64,
+            "topPitchesLast6": 166,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Hogan Harris CL 38p/3d 2 uses/3d",
+              "Mason Barnett CL 12p/3d 1 uses/3d",
+              "Elvis Alvarado CL 14p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Athletics leverage relief looks taxed: 64 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Hogan Harris (CL)."
+            ],
+            "players": [
+              {
+                "playerName": "Hogan Harris",
+                "playerKey": "fg:21520",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 38,
+                "pitchesLast6": 89,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 4,
+                "flags": [
+                  "BS",
+                  "H",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 82.7
+              },
+              {
+                "playerName": "Mason Barnett",
+                "playerKey": "fg:31741",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 12,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 40.4
+              },
+              {
+                "playerName": "Elvis Alvarado",
+                "playerKey": "fg:21662",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 14,
+                "pitchesLast6": 34,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 39.7
+              },
+              {
+                "playerName": "Luis Medina",
+                "playerKey": "fg:21649",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 39.3
+              },
+              {
+                "playerName": "Justin Sterner",
+                "playerKey": "fg:27694",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 31.5
+              },
+              {
+                "playerName": "Scott Barlow",
+                "playerKey": "fg:14993",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 14,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 29.2
+              },
+              {
+                "playerName": "Mark Leiter Jr.",
+                "playerKey": "fg:15551",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 9.8
+              },
+              {
+                "playerName": "José Suarez",
+                "playerKey": "fg:19911",
+                "role": "LR",
+                "throws": "L",
+                "pitchesLast3": 12,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 29.4
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "chicago-cubs-san-francisco-giants": {
+        "gamePk": 823213,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Chicago Cubs",
+        "homeTeam": "San Francisco Giants",
+        "away": {
+          "bullpen": {
+            "teamSlug": "cubs",
+            "teamAbbr": "CHC",
+            "teamName": "Chicago Cubs",
+            "stressScore": 62,
+            "tag": "watch",
+            "topPitchesLast3": 50,
+            "topPitchesLast6": 73,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Daniel Palencia CL 18p/3d 1 uses/3d",
+              "Jacob Webb SU8 12p/3d 1 uses/3d",
+              "Caleb Thielbar SU7 20p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Chicago Cubs leverage relief is watch: 50 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Daniel Palencia",
+                "playerKey": "fg:27914",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 34,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 42.9
+              },
+              {
+                "playerName": "Jacob Webb",
+                "playerKey": "fg:19274",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 12,
+                "pitchesLast6": 19,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 34.4
+              },
+              {
+                "playerName": "Caleb Thielbar",
+                "playerKey": "fg:10078",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 20,
+                "pitchesLast6": 20,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 41
+              },
+              {
+                "playerName": "Hoby Milner",
+                "playerKey": "fg:13346",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 24,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 48.2
+              },
+              {
+                "playerName": "Trent Thornton",
+                "playerKey": "fg:17948",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 26,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 41.6
+              },
+              {
+                "playerName": "Phil Maton",
+                "playerKey": "fg:18064",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 20,
+                "pitchesLast6": 20,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 41
+              },
+              {
+                "playerName": "Ryan Rolison",
+                "playerKey": "fg:22200",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 17,
+                "pitchesLast6": 37,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 32.9
+              },
+              {
+                "playerName": "Ethan Roberts",
+                "playerKey": "fg:24930",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 16,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 28
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "giants",
+            "teamAbbr": "SFG",
+            "teamName": "San Francisco Giants",
+            "stressScore": 55,
+            "tag": "watch",
+            "topPitchesLast3": 9,
+            "topPitchesLast6": 86,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Caleb Kilian CL",
+              "Keaton Winn SU8",
+              "Erik Miller SU7 9p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "San Francisco Giants leverage relief is watch: 9 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Caleb Kilian",
+                "playerKey": "fg:26213",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 6,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 11.5
+              },
+              {
+                "playerName": "Keaton Winn",
+                "playerKey": "fg:23499",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 41,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W",
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 20.3
+              },
+              {
+                "playerName": "Erik Miller",
+                "playerKey": "fg:26252",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 9,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 37
+              },
+              {
+                "playerName": "Reiver Sanmartin",
+                "playerKey": "fg:19754",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 31,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": true,
+                "stress": 66.6
+              },
+              {
+                "playerName": "Ryan Walker",
+                "playerKey": "fg:20423",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 16,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 50.8
+              },
+              {
+                "playerName": "Sam Hentges",
+                "playerKey": "fg:18548",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 12,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 29.1
+              },
+              {
+                "playerName": "Dylan Smith",
+                "playerKey": "fg:30145",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 37,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 9.3
+              },
+              {
+                "playerName": "JT Brubaker",
+                "playerKey": "fg:17578",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 59,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 41.6
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "tampa-bay-rays-los-angeles-angels": {
+        "gamePk": 824019,
+        "gameDate": "2026-06-13",
+        "awayTeam": "Tampa Bay Rays",
+        "homeTeam": "Los Angeles Angels",
+        "away": {
+          "bullpen": {
+            "teamSlug": "rays",
+            "teamAbbr": "TBR",
+            "teamName": "Tampa Bay Rays",
+            "stressScore": 43,
+            "tag": "stable",
+            "topPitchesLast3": 23,
+            "topPitchesLast6": 106,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Bryan Baker CL",
+              "Kevin Kelly SU8",
+              "Garrett Cleavinger SU7 23p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Tampa Bay Rays leverage relief is stable: 23 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Bryan Baker",
+                "playerKey": "fg:19804",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 16.3
+              },
+              {
+                "playerName": "Kevin Kelly",
+                "playerKey": "fg:25679",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 22,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 15.5
+              },
+              {
+                "playerName": "Garrett Cleavinger",
+                "playerKey": "fg:17897",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 23,
+                "pitchesLast6": 59,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "B",
+                  "L",
+                  "H",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 53.2
+              },
+              {
+                "playerName": "Cole Sulser",
+                "playerKey": "fg:15256",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 32.7
+              },
+              {
+                "playerName": "Steven Matz",
+                "playerKey": "fg:13361",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 9,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 29
+              },
+              {
+                "playerName": "Casey Legumina",
+                "playerKey": "fg:25921",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 2,
+                "pitchesLast6": 14,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 15.1
+              },
+              {
+                "playerName": "Cam Booser",
+                "playerKey": "fg:16061",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 10,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 2.5
+              },
+              {
+                "playerName": "Mason Englert",
+                "playerKey": "fg:22288",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 65,
+                "pitchesLast6": 65,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 78.3
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "angels",
+            "teamAbbr": "LAA",
+            "teamName": "Los Angeles Angels",
+            "stressScore": 64,
+            "tag": "watch",
+            "topPitchesLast3": 40,
+            "topPitchesLast6": 121,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Kirby Yates CL",
+              "Sam Bachman SU8 9p/3d 1 uses/3d",
+              "Chase Silseth SU7 31p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "Los Angeles Angels leverage relief is watch: 40 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Chase Silseth (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Kirby Yates",
+                "playerKey": "fg:9073",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 19
+              },
+              {
+                "playerName": "Sam Bachman",
+                "playerKey": "fg:29754",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 9,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 35.5
+              },
+              {
+                "playerName": "Chase Silseth",
+                "playerKey": "fg:30074",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 31,
+                "pitchesLast6": 52,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "BS",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 67.8
+              },
+              {
+                "playerName": "Ryan Zeferjahn",
+                "playerKey": "fg:25420",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 30,
+                "pitchesLast6": 55,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 57.8
+              },
+              {
+                "playerName": "Brent Suter",
+                "playerKey": "fg:13942",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 8.8
+              },
+              {
+                "playerName": "Drew Pomeranz",
+                "playerKey": "fg:11426",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 26,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 6.5
+              },
+              {
+                "playerName": "Samy Natera Jr.",
+                "playerKey": "fg:31936",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 9,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 2.3
+              },
+              {
+                "playerName": "Mitch Farris",
+                "playerKey": "fg:33628",
+                "role": "LR",
+                "throws": "L",
+                "pitchesLast3": 48,
+                "pitchesLast6": 64,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 64.4
+              }
+            ]
+          }
+        },
+        "umpire": null
+      }
+    },
+    "bullpenByTeamName": {
+      "los angeles angels": {
+        "teamSlug": "angels",
+        "teamAbbr": "LAA",
+        "teamName": "Los Angeles Angels",
+        "stressScore": 64,
+        "tag": "watch",
+        "topPitchesLast3": 40,
+        "topPitchesLast6": 121,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Kirby Yates CL",
+          "Sam Bachman SU8 9p/3d 1 uses/3d",
+          "Chase Silseth SU7 31p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Los Angeles Angels leverage relief is watch: 40 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Chase Silseth (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Kirby Yates",
+            "playerKey": "fg:9073",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 19
+          },
+          {
+            "playerName": "Sam Bachman",
+            "playerKey": "fg:29754",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 35.5
+          },
+          {
+            "playerName": "Chase Silseth",
+            "playerKey": "fg:30074",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 52,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 67.8
+          },
+          {
+            "playerName": "Ryan Zeferjahn",
+            "playerKey": "fg:25420",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 30,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 57.8
+          },
+          {
+            "playerName": "Brent Suter",
+            "playerKey": "fg:13942",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 8.8
+          },
+          {
+            "playerName": "Drew Pomeranz",
+            "playerKey": "fg:11426",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 26,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.5
+          },
+          {
+            "playerName": "Samy Natera Jr.",
+            "playerKey": "fg:31936",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 9,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 2.3
+          },
+          {
+            "playerName": "Mitch Farris",
+            "playerKey": "fg:33628",
+            "role": "LR",
+            "throws": "L",
+            "pitchesLast3": 48,
+            "pitchesLast6": 64,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 64.4
+          }
+        ]
+      },
+      "laa": {
+        "teamSlug": "angels",
+        "teamAbbr": "LAA",
+        "teamName": "Los Angeles Angels",
+        "stressScore": 64,
+        "tag": "watch",
+        "topPitchesLast3": 40,
+        "topPitchesLast6": 121,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Kirby Yates CL",
+          "Sam Bachman SU8 9p/3d 1 uses/3d",
+          "Chase Silseth SU7 31p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Los Angeles Angels leverage relief is watch: 40 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Chase Silseth (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Kirby Yates",
+            "playerKey": "fg:9073",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 19
+          },
+          {
+            "playerName": "Sam Bachman",
+            "playerKey": "fg:29754",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 35.5
+          },
+          {
+            "playerName": "Chase Silseth",
+            "playerKey": "fg:30074",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 52,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 67.8
+          },
+          {
+            "playerName": "Ryan Zeferjahn",
+            "playerKey": "fg:25420",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 30,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 57.8
+          },
+          {
+            "playerName": "Brent Suter",
+            "playerKey": "fg:13942",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 8.8
+          },
+          {
+            "playerName": "Drew Pomeranz",
+            "playerKey": "fg:11426",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 26,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.5
+          },
+          {
+            "playerName": "Samy Natera Jr.",
+            "playerKey": "fg:31936",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 9,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 2.3
+          },
+          {
+            "playerName": "Mitch Farris",
+            "playerKey": "fg:33628",
+            "role": "LR",
+            "throws": "L",
+            "pitchesLast3": 48,
+            "pitchesLast6": 64,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 64.4
+          }
+        ]
+      },
+      "houston astros": {
+        "teamSlug": "astros",
+        "teamAbbr": "HOU",
+        "teamName": "Houston Astros",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 92,
+        "topPitchesLast6": 141,
+        "taxedArmCount": 3,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Josh Hader CL 31p/3d 2 uses/3d",
+          "Bryan King SU8 21p/3d 2 uses/3d",
+          "Enyel De Los Santos SU7 40p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Houston Astros leverage relief looks taxed: 92 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Josh Hader (CL), Bryan King (SU8), Enyel De Los Santos (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Josh Hader",
+            "playerKey": "fg:14212",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 65.6
+          },
+          {
+            "playerName": "Bryan King",
+            "playerKey": "fg:25890",
+            "role": "SU8",
+            "throws": "L",
+            "pitchesLast3": 21,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 55.1
+          },
+          {
+            "playerName": "Enyel De Los Santos",
+            "playerKey": "fg:18403",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 40,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 78.3
+          },
+          {
+            "playerName": "Steven Okert",
+            "playerKey": "fg:13580",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 42.2
+          },
+          {
+            "playerName": "Nate Pearson",
+            "playerKey": "fg:20160",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 34
+          },
+          {
+            "playerName": "Bryan Abreu",
+            "playerKey": "fg:16609",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 7,
+            "pitchesLast6": 24,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 21.6
+          },
+          {
+            "playerName": "Alimber Santa",
+            "playerKey": "fg:28846",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.8
+          },
+          {
+            "playerName": "AJ Blubaugh",
+            "playerKey": "fg:31764",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 38,
+            "pitchesLast6": 72,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.4
+          }
+        ]
+      },
+      "hou": {
+        "teamSlug": "astros",
+        "teamAbbr": "HOU",
+        "teamName": "Houston Astros",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 92,
+        "topPitchesLast6": 141,
+        "taxedArmCount": 3,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Josh Hader CL 31p/3d 2 uses/3d",
+          "Bryan King SU8 21p/3d 2 uses/3d",
+          "Enyel De Los Santos SU7 40p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Houston Astros leverage relief looks taxed: 92 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Josh Hader (CL), Bryan King (SU8), Enyel De Los Santos (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Josh Hader",
+            "playerKey": "fg:14212",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 65.6
+          },
+          {
+            "playerName": "Bryan King",
+            "playerKey": "fg:25890",
+            "role": "SU8",
+            "throws": "L",
+            "pitchesLast3": 21,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 55.1
+          },
+          {
+            "playerName": "Enyel De Los Santos",
+            "playerKey": "fg:18403",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 40,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 78.3
+          },
+          {
+            "playerName": "Steven Okert",
+            "playerKey": "fg:13580",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 42.2
+          },
+          {
+            "playerName": "Nate Pearson",
+            "playerKey": "fg:20160",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 34
+          },
+          {
+            "playerName": "Bryan Abreu",
+            "playerKey": "fg:16609",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 7,
+            "pitchesLast6": 24,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 21.6
+          },
+          {
+            "playerName": "Alimber Santa",
+            "playerKey": "fg:28846",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.8
+          },
+          {
+            "playerName": "AJ Blubaugh",
+            "playerKey": "fg:31764",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 38,
+            "pitchesLast6": 72,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.4
+          }
+        ]
+      },
+      "athletics": {
+        "teamSlug": "athletics",
+        "teamAbbr": "ATH",
+        "teamName": "Athletics",
+        "stressScore": 79,
+        "tag": "taxed",
+        "topPitchesLast3": 64,
+        "topPitchesLast6": 166,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Hogan Harris CL 38p/3d 2 uses/3d",
+          "Mason Barnett CL 12p/3d 1 uses/3d",
+          "Elvis Alvarado CL 14p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Athletics leverage relief looks taxed: 64 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Hogan Harris (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Hogan Harris",
+            "playerKey": "fg:21520",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 38,
+            "pitchesLast6": 89,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 4,
+            "flags": [
+              "BS",
+              "H",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 82.7
+          },
+          {
+            "playerName": "Mason Barnett",
+            "playerKey": "fg:31741",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 40.4
+          },
+          {
+            "playerName": "Elvis Alvarado",
+            "playerKey": "fg:21662",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.7
+          },
+          {
+            "playerName": "Luis Medina",
+            "playerKey": "fg:21649",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 39.3
+          },
+          {
+            "playerName": "Justin Sterner",
+            "playerKey": "fg:27694",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 31.5
+          },
+          {
+            "playerName": "Scott Barlow",
+            "playerKey": "fg:14993",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 29.2
+          },
+          {
+            "playerName": "Mark Leiter Jr.",
+            "playerKey": "fg:15551",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 9.8
+          },
+          {
+            "playerName": "José Suarez",
+            "playerKey": "fg:19911",
+            "role": "LR",
+            "throws": "L",
+            "pitchesLast3": 12,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 29.4
+          }
+        ]
+      },
+      "ath": {
+        "teamSlug": "athletics",
+        "teamAbbr": "ATH",
+        "teamName": "Athletics",
+        "stressScore": 79,
+        "tag": "taxed",
+        "topPitchesLast3": 64,
+        "topPitchesLast6": 166,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Hogan Harris CL 38p/3d 2 uses/3d",
+          "Mason Barnett CL 12p/3d 1 uses/3d",
+          "Elvis Alvarado CL 14p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Athletics leverage relief looks taxed: 64 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Hogan Harris (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Hogan Harris",
+            "playerKey": "fg:21520",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 38,
+            "pitchesLast6": 89,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 4,
+            "flags": [
+              "BS",
+              "H",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 82.7
+          },
+          {
+            "playerName": "Mason Barnett",
+            "playerKey": "fg:31741",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 40.4
+          },
+          {
+            "playerName": "Elvis Alvarado",
+            "playerKey": "fg:21662",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.7
+          },
+          {
+            "playerName": "Luis Medina",
+            "playerKey": "fg:21649",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 39.3
+          },
+          {
+            "playerName": "Justin Sterner",
+            "playerKey": "fg:27694",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 31.5
+          },
+          {
+            "playerName": "Scott Barlow",
+            "playerKey": "fg:14993",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 29.2
+          },
+          {
+            "playerName": "Mark Leiter Jr.",
+            "playerKey": "fg:15551",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 9.8
+          },
+          {
+            "playerName": "José Suarez",
+            "playerKey": "fg:19911",
+            "role": "LR",
+            "throws": "L",
+            "pitchesLast3": 12,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 29.4
+          }
+        ]
+      },
+      "toronto blue jays": {
+        "teamSlug": "blue-jays",
+        "teamAbbr": "TOR",
+        "teamName": "Toronto Blue Jays",
+        "stressScore": 82,
+        "tag": "taxed",
+        "topPitchesLast3": 58,
+        "topPitchesLast6": 123,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Louis Varland CL 16p/3d 1 uses/3d",
+          "Tyler Rogers SU8 21p/3d 2 uses/3d",
+          "Jeff Hoffman SU7 21p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Toronto Blue Jays leverage relief looks taxed: 58 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Tyler Rogers (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Louis Varland",
+            "playerKey": "fg:27691",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 45.1
+          },
+          {
+            "playerName": "Tyler Rogers",
+            "playerKey": "fg:15541",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 56.3
+          },
+          {
+            "playerName": "Jeff Hoffman",
+            "playerKey": "fg:17432",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 45.8
+          },
+          {
+            "playerName": "Braydon Fisher",
+            "playerKey": "fg:24609",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 53,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 75.7
+          },
+          {
+            "playerName": "Tommy Nance",
+            "playerKey": "fg:19178",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": true,
+            "stress": 53.6
+          },
+          {
+            "playerName": "Mason Fluharty",
+            "playerKey": "fg:31553",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 30,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 53.5
+          },
+          {
+            "playerName": "Spencer Miles",
+            "playerKey": "fg:31621",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 27.9
+          },
+          {
+            "playerName": "Simeon Woods Richardson",
+            "playerKey": "fg:24494",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 12
+          }
+        ]
+      },
+      "tor": {
+        "teamSlug": "blue-jays",
+        "teamAbbr": "TOR",
+        "teamName": "Toronto Blue Jays",
+        "stressScore": 82,
+        "tag": "taxed",
+        "topPitchesLast3": 58,
+        "topPitchesLast6": 123,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Louis Varland CL 16p/3d 1 uses/3d",
+          "Tyler Rogers SU8 21p/3d 2 uses/3d",
+          "Jeff Hoffman SU7 21p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Toronto Blue Jays leverage relief looks taxed: 58 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Tyler Rogers (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Louis Varland",
+            "playerKey": "fg:27691",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 45.1
+          },
+          {
+            "playerName": "Tyler Rogers",
+            "playerKey": "fg:15541",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 56.3
+          },
+          {
+            "playerName": "Jeff Hoffman",
+            "playerKey": "fg:17432",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 45.8
+          },
+          {
+            "playerName": "Braydon Fisher",
+            "playerKey": "fg:24609",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 53,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 75.7
+          },
+          {
+            "playerName": "Tommy Nance",
+            "playerKey": "fg:19178",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": true,
+            "stress": 53.6
+          },
+          {
+            "playerName": "Mason Fluharty",
+            "playerKey": "fg:31553",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 30,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 53.5
+          },
+          {
+            "playerName": "Spencer Miles",
+            "playerKey": "fg:31621",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 27.9
+          },
+          {
+            "playerName": "Simeon Woods Richardson",
+            "playerKey": "fg:24494",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 12
+          }
+        ]
+      },
+      "atlanta braves": {
+        "teamSlug": "braves",
+        "teamAbbr": "ATL",
+        "teamName": "Atlanta Braves",
+        "stressScore": 47,
+        "tag": "stable",
+        "topPitchesLast3": 3,
+        "topPitchesLast6": 34,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Raisel Iglesias CL",
+          "Robert Suarez SU8",
+          "Dylan Lee SU7 3p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Atlanta Braves leverage relief is stable: 3 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Raisel Iglesias",
+            "playerKey": "fg:17130",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 24,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 16
+          },
+          {
+            "playerName": "Robert Suarez",
+            "playerKey": "fg:30115",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 7,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 11.8
+          },
+          {
+            "playerName": "Dylan Lee",
+            "playerKey": "fg:19996",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 3,
+            "pitchesLast6": 3,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 23.2
+          },
+          {
+            "playerName": "James Karinchak",
+            "playerKey": "fg:20151",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 19,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 54
+          },
+          {
+            "playerName": "Didier Fuentes",
+            "playerKey": "fg:30661",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 28.7
+          },
+          {
+            "playerName": "Dylan Dodd",
+            "playerKey": "fg:29928",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7.8
+          },
+          {
+            "playerName": "Reynaldo López",
+            "playerKey": "fg:16400",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 6.8
+          },
+          {
+            "playerName": "Anthony Molina",
+            "playerKey": "fg:26952",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          }
+        ]
+      },
+      "atl": {
+        "teamSlug": "braves",
+        "teamAbbr": "ATL",
+        "teamName": "Atlanta Braves",
+        "stressScore": 47,
+        "tag": "stable",
+        "topPitchesLast3": 3,
+        "topPitchesLast6": 34,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Raisel Iglesias CL",
+          "Robert Suarez SU8",
+          "Dylan Lee SU7 3p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Atlanta Braves leverage relief is stable: 3 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Raisel Iglesias",
+            "playerKey": "fg:17130",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 24,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 16
+          },
+          {
+            "playerName": "Robert Suarez",
+            "playerKey": "fg:30115",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 7,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 11.8
+          },
+          {
+            "playerName": "Dylan Lee",
+            "playerKey": "fg:19996",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 3,
+            "pitchesLast6": 3,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 23.2
+          },
+          {
+            "playerName": "James Karinchak",
+            "playerKey": "fg:20151",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 19,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 54
+          },
+          {
+            "playerName": "Didier Fuentes",
+            "playerKey": "fg:30661",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 28.7
+          },
+          {
+            "playerName": "Dylan Dodd",
+            "playerKey": "fg:29928",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7.8
+          },
+          {
+            "playerName": "Reynaldo López",
+            "playerKey": "fg:16400",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 6.8
+          },
+          {
+            "playerName": "Anthony Molina",
+            "playerKey": "fg:26952",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          }
+        ]
+      },
+      "milwaukee brewers": {
+        "teamSlug": "brewers",
+        "teamAbbr": "MIL",
+        "teamName": "Milwaukee Brewers",
+        "stressScore": 57,
+        "tag": "watch",
+        "topPitchesLast3": 37,
+        "topPitchesLast6": 88,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Trevor Megill CL 17p/3d 1 uses/3d",
+          "Abner Uribe SU8",
+          "Aaron Ashby SU7 20p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Milwaukee Brewers leverage relief is watch: 37 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Trevor Megill",
+            "playerKey": "fg:17722",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37.9
+          },
+          {
+            "playerName": "Abner Uribe",
+            "playerKey": "fg:25327",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 13.8
+          },
+          {
+            "playerName": "Aaron Ashby",
+            "playerKey": "fg:23550",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 56,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 50
+          },
+          {
+            "playerName": "Chad Patrick",
+            "playerKey": "fg:30113",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 8,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 25.7
+          },
+          {
+            "playerName": "Joel Kuhnel",
+            "playerKey": "fg:19995",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 10.8
+          },
+          {
+            "playerName": "Grant Anderson",
+            "playerKey": "fg:20546",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7
+          },
+          {
+            "playerName": "Drew Rom",
+            "playerKey": "fg:24602",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.3
+          },
+          {
+            "playerName": "Craig Yoho",
+            "playerKey": "fg:33248",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 18,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 28.5
+          }
+        ]
+      },
+      "mil": {
+        "teamSlug": "brewers",
+        "teamAbbr": "MIL",
+        "teamName": "Milwaukee Brewers",
+        "stressScore": 57,
+        "tag": "watch",
+        "topPitchesLast3": 37,
+        "topPitchesLast6": 88,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Trevor Megill CL 17p/3d 1 uses/3d",
+          "Abner Uribe SU8",
+          "Aaron Ashby SU7 20p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Milwaukee Brewers leverage relief is watch: 37 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Trevor Megill",
+            "playerKey": "fg:17722",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37.9
+          },
+          {
+            "playerName": "Abner Uribe",
+            "playerKey": "fg:25327",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 13.8
+          },
+          {
+            "playerName": "Aaron Ashby",
+            "playerKey": "fg:23550",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 56,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 50
+          },
+          {
+            "playerName": "Chad Patrick",
+            "playerKey": "fg:30113",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 8,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 25.7
+          },
+          {
+            "playerName": "Joel Kuhnel",
+            "playerKey": "fg:19995",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 10.8
+          },
+          {
+            "playerName": "Grant Anderson",
+            "playerKey": "fg:20546",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7
+          },
+          {
+            "playerName": "Drew Rom",
+            "playerKey": "fg:24602",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.3
+          },
+          {
+            "playerName": "Craig Yoho",
+            "playerKey": "fg:33248",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 18,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 28.5
+          }
+        ]
+      },
+      "st louis cardinals": {
+        "teamSlug": "cardinals",
+        "teamAbbr": "STL",
+        "teamName": "St. Louis Cardinals",
+        "stressScore": 89,
+        "tag": "taxed",
+        "topPitchesLast3": 53,
+        "topPitchesLast6": 93,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Riley O'Brien CL",
+          "George Soriano SU8 16p/3d 2 uses/3d",
+          "JoJo Romero SU7 37p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "St. Louis Cardinals leverage relief looks taxed: 53 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: George Soriano (SU8), JoJo Romero (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Riley O'Brien",
+            "playerKey": "fg:20348",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 13.8
+          },
+          {
+            "playerName": "George Soriano",
+            "playerKey": "fg:21863",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 51.1
+          },
+          {
+            "playerName": "JoJo Romero",
+            "playerKey": "fg:19574",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 37,
+            "pitchesLast6": 45,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 70.9
+          },
+          {
+            "playerName": "Gordon Graceffo",
+            "playerKey": "fg:29519",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 43.1
+          },
+          {
+            "playerName": "Ryne Stanek",
+            "playerKey": "fg:15947",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 23,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 36.4
+          },
+          {
+            "playerName": "Matt Svanson",
+            "playerKey": "fg:29629",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 24,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 26.4
+          },
+          {
+            "playerName": "Justin Bruihl",
+            "playerKey": "fg:23779",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 10,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 25.8
+          },
+          {
+            "playerName": "Chris Roycroft",
+            "playerKey": "fg:31261",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          }
+        ]
+      },
+      "stl": {
+        "teamSlug": "cardinals",
+        "teamAbbr": "STL",
+        "teamName": "St. Louis Cardinals",
+        "stressScore": 89,
+        "tag": "taxed",
+        "topPitchesLast3": 53,
+        "topPitchesLast6": 93,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Riley O'Brien CL",
+          "George Soriano SU8 16p/3d 2 uses/3d",
+          "JoJo Romero SU7 37p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "St. Louis Cardinals leverage relief looks taxed: 53 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: George Soriano (SU8), JoJo Romero (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Riley O'Brien",
+            "playerKey": "fg:20348",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 13.8
+          },
+          {
+            "playerName": "George Soriano",
+            "playerKey": "fg:21863",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 51.1
+          },
+          {
+            "playerName": "JoJo Romero",
+            "playerKey": "fg:19574",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 37,
+            "pitchesLast6": 45,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 70.9
+          },
+          {
+            "playerName": "Gordon Graceffo",
+            "playerKey": "fg:29519",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 43.1
+          },
+          {
+            "playerName": "Ryne Stanek",
+            "playerKey": "fg:15947",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 23,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 36.4
+          },
+          {
+            "playerName": "Matt Svanson",
+            "playerKey": "fg:29629",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 24,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 26.4
+          },
+          {
+            "playerName": "Justin Bruihl",
+            "playerKey": "fg:23779",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 10,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 25.8
+          },
+          {
+            "playerName": "Chris Roycroft",
+            "playerKey": "fg:31261",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          }
+        ]
+      },
+      "chicago cubs": {
+        "teamSlug": "cubs",
+        "teamAbbr": "CHC",
+        "teamName": "Chicago Cubs",
+        "stressScore": 62,
+        "tag": "watch",
+        "topPitchesLast3": 50,
+        "topPitchesLast6": 73,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Daniel Palencia CL 18p/3d 1 uses/3d",
+          "Jacob Webb SU8 12p/3d 1 uses/3d",
+          "Caleb Thielbar SU7 20p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Chicago Cubs leverage relief is watch: 50 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Daniel Palencia",
+            "playerKey": "fg:27914",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 42.9
+          },
+          {
+            "playerName": "Jacob Webb",
+            "playerKey": "fg:19274",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 19,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 34.4
+          },
+          {
+            "playerName": "Caleb Thielbar",
+            "playerKey": "fg:10078",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 41
+          },
+          {
+            "playerName": "Hoby Milner",
+            "playerKey": "fg:13346",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 48.2
+          },
+          {
+            "playerName": "Trent Thornton",
+            "playerKey": "fg:17948",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 26,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 41.6
+          },
+          {
+            "playerName": "Phil Maton",
+            "playerKey": "fg:18064",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 41
+          },
+          {
+            "playerName": "Ryan Rolison",
+            "playerKey": "fg:22200",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 17,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 32.9
+          },
+          {
+            "playerName": "Ethan Roberts",
+            "playerKey": "fg:24930",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 16,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 28
+          }
+        ]
+      },
+      "chc": {
+        "teamSlug": "cubs",
+        "teamAbbr": "CHC",
+        "teamName": "Chicago Cubs",
+        "stressScore": 62,
+        "tag": "watch",
+        "topPitchesLast3": 50,
+        "topPitchesLast6": 73,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Daniel Palencia CL 18p/3d 1 uses/3d",
+          "Jacob Webb SU8 12p/3d 1 uses/3d",
+          "Caleb Thielbar SU7 20p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Chicago Cubs leverage relief is watch: 50 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Daniel Palencia",
+            "playerKey": "fg:27914",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 42.9
+          },
+          {
+            "playerName": "Jacob Webb",
+            "playerKey": "fg:19274",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 19,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 34.4
+          },
+          {
+            "playerName": "Caleb Thielbar",
+            "playerKey": "fg:10078",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 41
+          },
+          {
+            "playerName": "Hoby Milner",
+            "playerKey": "fg:13346",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 48.2
+          },
+          {
+            "playerName": "Trent Thornton",
+            "playerKey": "fg:17948",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 26,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 41.6
+          },
+          {
+            "playerName": "Phil Maton",
+            "playerKey": "fg:18064",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 41
+          },
+          {
+            "playerName": "Ryan Rolison",
+            "playerKey": "fg:22200",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 17,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 32.9
+          },
+          {
+            "playerName": "Ethan Roberts",
+            "playerKey": "fg:24930",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 16,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 28
+          }
+        ]
+      },
+      "arizona diamondbacks": {
+        "teamSlug": "diamondbacks",
+        "teamAbbr": "ARI",
+        "teamName": "Arizona Diamondbacks",
+        "stressScore": 66,
+        "tag": "watch",
+        "topPitchesLast3": 54,
+        "topPitchesLast6": 78,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Paul Sewald CL 29p/3d 2 uses/3d",
+          "Kevin Ginkel SU8 20p/3d 1 uses/3d",
+          "Juan Morillo SU7 5p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Arizona Diamondbacks leverage relief is watch: 54 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Paul Sewald (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Paul Sewald",
+            "playerKey": "fg:13892",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 60.5
+          },
+          {
+            "playerName": "Kevin Ginkel",
+            "playerKey": "fg:19876",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 47
+          },
+          {
+            "playerName": "Juan Morillo",
+            "playerKey": "fg:21924",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 5,
+            "pitchesLast6": 5,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 25.3
+          },
+          {
+            "playerName": "Taylor Clarke",
+            "playerKey": "fg:17611",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 36,
+            "pitchesLast6": 66,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 55.3
+          },
+          {
+            "playerName": "Jonathan Loáisiga",
+            "playerKey": "fg:19753",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37.9
+          },
+          {
+            "playerName": "Ryan Thompson",
+            "playerKey": "fg:16647",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 31.2
+          },
+          {
+            "playerName": "Brandyn Garcia",
+            "playerKey": "fg:33568",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 30
+          },
+          {
+            "playerName": "Drey Jameson",
+            "playerKey": "fg:26260",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 28,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 39.4
+          }
+        ]
+      },
+      "ari": {
+        "teamSlug": "diamondbacks",
+        "teamAbbr": "ARI",
+        "teamName": "Arizona Diamondbacks",
+        "stressScore": 66,
+        "tag": "watch",
+        "topPitchesLast3": 54,
+        "topPitchesLast6": 78,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Paul Sewald CL 29p/3d 2 uses/3d",
+          "Kevin Ginkel SU8 20p/3d 1 uses/3d",
+          "Juan Morillo SU7 5p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Arizona Diamondbacks leverage relief is watch: 54 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Paul Sewald (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Paul Sewald",
+            "playerKey": "fg:13892",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 60.5
+          },
+          {
+            "playerName": "Kevin Ginkel",
+            "playerKey": "fg:19876",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 47
+          },
+          {
+            "playerName": "Juan Morillo",
+            "playerKey": "fg:21924",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 5,
+            "pitchesLast6": 5,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 25.3
+          },
+          {
+            "playerName": "Taylor Clarke",
+            "playerKey": "fg:17611",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 36,
+            "pitchesLast6": 66,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 55.3
+          },
+          {
+            "playerName": "Jonathan Loáisiga",
+            "playerKey": "fg:19753",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37.9
+          },
+          {
+            "playerName": "Ryan Thompson",
+            "playerKey": "fg:16647",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 31.2
+          },
+          {
+            "playerName": "Brandyn Garcia",
+            "playerKey": "fg:33568",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 30
+          },
+          {
+            "playerName": "Drey Jameson",
+            "playerKey": "fg:26260",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 28,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 39.4
+          }
+        ]
+      },
+      "los angeles dodgers": {
+        "teamSlug": "dodgers",
+        "teamAbbr": "LAD",
+        "teamName": "Los Angeles Dodgers",
+        "stressScore": 70,
+        "tag": "taxed",
+        "topPitchesLast3": 53,
+        "topPitchesLast6": 122,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Tanner Scott CL 18p/3d 1 uses/3d",
+          "Will Klein SU8 22p/3d 1 uses/3d",
+          "Alex Vesia SU7 13p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Los Angeles Dodgers leverage relief looks taxed: 53 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Alex Vesia (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Tanner Scott",
+            "playerKey": "fg:17586",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 18,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 43.2
+          },
+          {
+            "playerName": "Will Klein",
+            "playerKey": "fg:27787",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 48.4
+          },
+          {
+            "playerName": "Alex Vesia",
+            "playerKey": "fg:25007",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 13,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 51.4
+          },
+          {
+            "playerName": "Edgardo Henriquez",
+            "playerKey": "fg:26944",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.6
+          },
+          {
+            "playerName": "Jack Dreyer",
+            "playerKey": "fg:30249",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 52.6
+          },
+          {
+            "playerName": "Blake Treinen",
+            "playerKey": "fg:12572",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 69,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 40.1
+          },
+          {
+            "playerName": "Kyle Hurt",
+            "playerKey": "fg:27514",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 36.5
+          },
+          {
+            "playerName": "Jonathan Hernández",
+            "playerKey": "fg:17464",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 46,
+            "pitchesLast6": 85,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 68.1
+          }
+        ]
+      },
+      "lad": {
+        "teamSlug": "dodgers",
+        "teamAbbr": "LAD",
+        "teamName": "Los Angeles Dodgers",
+        "stressScore": 70,
+        "tag": "taxed",
+        "topPitchesLast3": 53,
+        "topPitchesLast6": 122,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Tanner Scott CL 18p/3d 1 uses/3d",
+          "Will Klein SU8 22p/3d 1 uses/3d",
+          "Alex Vesia SU7 13p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Los Angeles Dodgers leverage relief looks taxed: 53 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Alex Vesia (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Tanner Scott",
+            "playerKey": "fg:17586",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 18,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 43.2
+          },
+          {
+            "playerName": "Will Klein",
+            "playerKey": "fg:27787",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 48.4
+          },
+          {
+            "playerName": "Alex Vesia",
+            "playerKey": "fg:25007",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 13,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 51.4
+          },
+          {
+            "playerName": "Edgardo Henriquez",
+            "playerKey": "fg:26944",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.6
+          },
+          {
+            "playerName": "Jack Dreyer",
+            "playerKey": "fg:30249",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 52.6
+          },
+          {
+            "playerName": "Blake Treinen",
+            "playerKey": "fg:12572",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 69,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 40.1
+          },
+          {
+            "playerName": "Kyle Hurt",
+            "playerKey": "fg:27514",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 36.5
+          },
+          {
+            "playerName": "Jonathan Hernández",
+            "playerKey": "fg:17464",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 46,
+            "pitchesLast6": 85,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 68.1
+          }
+        ]
+      },
+      "san francisco giants": {
+        "teamSlug": "giants",
+        "teamAbbr": "SFG",
+        "teamName": "San Francisco Giants",
+        "stressScore": 55,
+        "tag": "watch",
+        "topPitchesLast3": 9,
+        "topPitchesLast6": 86,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Caleb Kilian CL",
+          "Keaton Winn SU8",
+          "Erik Miller SU7 9p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "San Francisco Giants leverage relief is watch: 9 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Caleb Kilian",
+            "playerKey": "fg:26213",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 6,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 11.5
+          },
+          {
+            "playerName": "Keaton Winn",
+            "playerKey": "fg:23499",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 20.3
+          },
+          {
+            "playerName": "Erik Miller",
+            "playerKey": "fg:26252",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 9,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37
+          },
+          {
+            "playerName": "Reiver Sanmartin",
+            "playerKey": "fg:19754",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": true,
+            "stress": 66.6
+          },
+          {
+            "playerName": "Ryan Walker",
+            "playerKey": "fg:20423",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 16,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 50.8
+          },
+          {
+            "playerName": "Sam Hentges",
+            "playerKey": "fg:18548",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 12,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 29.1
+          },
+          {
+            "playerName": "Dylan Smith",
+            "playerKey": "fg:30145",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 9.3
+          },
+          {
+            "playerName": "JT Brubaker",
+            "playerKey": "fg:17578",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 59,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 41.6
+          }
+        ]
+      },
+      "sfg": {
+        "teamSlug": "giants",
+        "teamAbbr": "SFG",
+        "teamName": "San Francisco Giants",
+        "stressScore": 55,
+        "tag": "watch",
+        "topPitchesLast3": 9,
+        "topPitchesLast6": 86,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Caleb Kilian CL",
+          "Keaton Winn SU8",
+          "Erik Miller SU7 9p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "San Francisco Giants leverage relief is watch: 9 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Caleb Kilian",
+            "playerKey": "fg:26213",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 6,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 11.5
+          },
+          {
+            "playerName": "Keaton Winn",
+            "playerKey": "fg:23499",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 20.3
+          },
+          {
+            "playerName": "Erik Miller",
+            "playerKey": "fg:26252",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 9,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37
+          },
+          {
+            "playerName": "Reiver Sanmartin",
+            "playerKey": "fg:19754",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": true,
+            "stress": 66.6
+          },
+          {
+            "playerName": "Ryan Walker",
+            "playerKey": "fg:20423",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 16,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 50.8
+          },
+          {
+            "playerName": "Sam Hentges",
+            "playerKey": "fg:18548",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 12,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 29.1
+          },
+          {
+            "playerName": "Dylan Smith",
+            "playerKey": "fg:30145",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 9.3
+          },
+          {
+            "playerName": "JT Brubaker",
+            "playerKey": "fg:17578",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 59,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 41.6
+          }
+        ]
+      },
+      "cleveland guardians": {
+        "teamSlug": "guardians",
+        "teamAbbr": "CLE",
+        "teamName": "Cleveland Guardians",
+        "stressScore": 53,
+        "tag": "watch",
+        "topPitchesLast3": 26,
+        "topPitchesLast6": 96,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Cade Smith CL 13p/3d 1 uses/3d",
+          "Hunter Gaddis SU8 13p/3d 1 uses/3d",
+          "Shawn Armstrong SU7"
+        ],
+        "reasons": [
+          "Cleveland Guardians leverage relief is watch: 26 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Cade Smith",
+            "playerKey": "fg:27867",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.2
+          },
+          {
+            "playerName": "Hunter Gaddis",
+            "playerKey": "fg:25636",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 39.4
+          },
+          {
+            "playerName": "Shawn Armstrong",
+            "playerKey": "fg:12857",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 16.3
+          },
+          {
+            "playerName": "Will Dion",
+            "playerKey": "fg:30061",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 68,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 51.8
+          },
+          {
+            "playerName": "Daniel Espino",
+            "playerKey": "daniel espino",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Tim Herrin",
+            "playerKey": "fg:25139",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 8.5
+          },
+          {
+            "playerName": "Colin Holderman",
+            "playerKey": "fg:22361",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 30,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7.5
+          },
+          {
+            "playerName": "Matt Festa",
+            "playerKey": "fg:19330",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30
+          }
+        ]
+      },
+      "cle": {
+        "teamSlug": "guardians",
+        "teamAbbr": "CLE",
+        "teamName": "Cleveland Guardians",
+        "stressScore": 53,
+        "tag": "watch",
+        "topPitchesLast3": 26,
+        "topPitchesLast6": 96,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Cade Smith CL 13p/3d 1 uses/3d",
+          "Hunter Gaddis SU8 13p/3d 1 uses/3d",
+          "Shawn Armstrong SU7"
+        ],
+        "reasons": [
+          "Cleveland Guardians leverage relief is watch: 26 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Cade Smith",
+            "playerKey": "fg:27867",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.2
+          },
+          {
+            "playerName": "Hunter Gaddis",
+            "playerKey": "fg:25636",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 39.4
+          },
+          {
+            "playerName": "Shawn Armstrong",
+            "playerKey": "fg:12857",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 16.3
+          },
+          {
+            "playerName": "Will Dion",
+            "playerKey": "fg:30061",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 68,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 51.8
+          },
+          {
+            "playerName": "Daniel Espino",
+            "playerKey": "daniel espino",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Tim Herrin",
+            "playerKey": "fg:25139",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 8.5
+          },
+          {
+            "playerName": "Colin Holderman",
+            "playerKey": "fg:22361",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 30,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7.5
+          },
+          {
+            "playerName": "Matt Festa",
+            "playerKey": "fg:19330",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30
+          }
+        ]
+      },
+      "seattle mariners": {
+        "teamSlug": "mariners",
+        "teamAbbr": "SEA",
+        "teamName": "Seattle Mariners",
+        "stressScore": 67,
+        "tag": "watch",
+        "topPitchesLast3": 0,
+        "topPitchesLast6": 130,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Andrés Muñoz CL",
+          "José A. Ferrer SU8",
+          "Eduard Bazardo SU7"
+        ],
+        "reasons": [
+          "Seattle Mariners leverage relief is watch: 0 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: José A. Ferrer (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Andrés Muñoz",
+            "playerKey": "fg:20373",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "L",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 19.8
+          },
+          {
+            "playerName": "José A. Ferrer",
+            "playerKey": "fg:24017",
+            "role": "SU8",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 61,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 25.3
+          },
+          {
+            "playerName": "Eduard Bazardo",
+            "playerKey": "fg:20997",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 30,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 17.5
+          },
+          {
+            "playerName": "Nick Davila",
+            "playerKey": "fg:27741",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": true,
+            "stress": 56.4
+          },
+          {
+            "playerName": "Alex Hoppe",
+            "playerKey": "fg:31880",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 28,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 41.7
+          },
+          {
+            "playerName": "Gabe Speier",
+            "playerKey": "fg:17170",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 26,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 6.5
+          },
+          {
+            "playerName": "Michael Rucker",
+            "playerKey": "fg:19454",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 9,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 43.5
+          }
+        ]
+      },
+      "sea": {
+        "teamSlug": "mariners",
+        "teamAbbr": "SEA",
+        "teamName": "Seattle Mariners",
+        "stressScore": 67,
+        "tag": "watch",
+        "topPitchesLast3": 0,
+        "topPitchesLast6": 130,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Andrés Muñoz CL",
+          "José A. Ferrer SU8",
+          "Eduard Bazardo SU7"
+        ],
+        "reasons": [
+          "Seattle Mariners leverage relief is watch: 0 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: José A. Ferrer (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Andrés Muñoz",
+            "playerKey": "fg:20373",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "L",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 19.8
+          },
+          {
+            "playerName": "José A. Ferrer",
+            "playerKey": "fg:24017",
+            "role": "SU8",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 61,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 25.3
+          },
+          {
+            "playerName": "Eduard Bazardo",
+            "playerKey": "fg:20997",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 30,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 17.5
+          },
+          {
+            "playerName": "Nick Davila",
+            "playerKey": "fg:27741",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": true,
+            "stress": 56.4
+          },
+          {
+            "playerName": "Alex Hoppe",
+            "playerKey": "fg:31880",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 28,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 41.7
+          },
+          {
+            "playerName": "Gabe Speier",
+            "playerKey": "fg:17170",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 26,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 6.5
+          },
+          {
+            "playerName": "Michael Rucker",
+            "playerKey": "fg:19454",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 9,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 43.5
+          }
+        ]
+      },
+      "miami marlins": {
+        "teamSlug": "marlins",
+        "teamAbbr": "MIA",
+        "teamName": "Miami Marlins",
+        "stressScore": 58,
+        "tag": "watch",
+        "topPitchesLast3": 46,
+        "topPitchesLast6": 148,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Pete Fairbanks CL 13p/3d 1 uses/3d",
+          "Anthony Bender SU8 19p/3d 1 uses/3d",
+          "Michael Petersen SU7 14p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Miami Marlins leverage relief is watch: 46 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Pete Fairbanks",
+            "playerKey": "fg:17998",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.7
+          },
+          {
+            "playerName": "Anthony Bender",
+            "playerKey": "fg:19742",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 54,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 48.7
+          },
+          {
+            "playerName": "Michael Petersen",
+            "playerKey": "fg:20827",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 57,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 45.5
+          },
+          {
+            "playerName": "Lake Bachar",
+            "playerKey": "fg:19222",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 36,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 47.8
+          },
+          {
+            "playerName": "William Kempner",
+            "playerKey": "fg:31615",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 36,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 47.8
+          },
+          {
+            "playerName": "John King",
+            "playerKey": "fg:22051",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 18,
+            "pitchesLast6": 18,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 28.9
+          },
+          {
+            "playerName": "Calvin Faucher",
+            "playerKey": "fg:20116",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 26.7
+          },
+          {
+            "playerName": "Cade Gibson",
+            "playerKey": "fg:31815",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 25.8
+          }
+        ]
+      },
+      "mia": {
+        "teamSlug": "marlins",
+        "teamAbbr": "MIA",
+        "teamName": "Miami Marlins",
+        "stressScore": 58,
+        "tag": "watch",
+        "topPitchesLast3": 46,
+        "topPitchesLast6": 148,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Pete Fairbanks CL 13p/3d 1 uses/3d",
+          "Anthony Bender SU8 19p/3d 1 uses/3d",
+          "Michael Petersen SU7 14p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Miami Marlins leverage relief is watch: 46 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Pete Fairbanks",
+            "playerKey": "fg:17998",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.7
+          },
+          {
+            "playerName": "Anthony Bender",
+            "playerKey": "fg:19742",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 54,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 48.7
+          },
+          {
+            "playerName": "Michael Petersen",
+            "playerKey": "fg:20827",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 57,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 45.5
+          },
+          {
+            "playerName": "Lake Bachar",
+            "playerKey": "fg:19222",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 36,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 47.8
+          },
+          {
+            "playerName": "William Kempner",
+            "playerKey": "fg:31615",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 36,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 47.8
+          },
+          {
+            "playerName": "John King",
+            "playerKey": "fg:22051",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 18,
+            "pitchesLast6": 18,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 28.9
+          },
+          {
+            "playerName": "Calvin Faucher",
+            "playerKey": "fg:20116",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 26.7
+          },
+          {
+            "playerName": "Cade Gibson",
+            "playerKey": "fg:31815",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 25.8
+          }
+        ]
+      },
+      "new york mets": {
+        "teamSlug": "mets",
+        "teamAbbr": "NYM",
+        "teamName": "New York Mets",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 102,
+        "topPitchesLast6": 154,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Devin Williams CL 49p/3d 2 uses/3d",
+          "Luke Weaver SU8 11p/3d 1 uses/3d",
+          "Brooks Raley SU7 42p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "New York Mets leverage relief looks taxed: 102 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Devin Williams (CL), Brooks Raley (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Devin Williams",
+            "playerKey": "fg:15816",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 49,
+            "pitchesLast6": 69,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 86.5
+          },
+          {
+            "playerName": "Luke Weaver",
+            "playerKey": "fg:16918",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 36.1
+          },
+          {
+            "playerName": "Brooks Raley",
+            "playerKey": "fg:10061",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 42,
+            "pitchesLast6": 56,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 77.6
+          },
+          {
+            "playerName": "Cionel Pérez",
+            "playerKey": "fg:19614",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 54.3
+          },
+          {
+            "playerName": "Austin Warren",
+            "playerKey": "fg:24937",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 33,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 44.7
+          },
+          {
+            "playerName": "Huascar Brazobán",
+            "playerKey": "fg:6107",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35.5
+          },
+          {
+            "playerName": "A.J. Minter",
+            "playerKey": "fg:18655",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 28
+          },
+          {
+            "playerName": "Daniel Duarte",
+            "playerKey": "fg:17480",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          }
+        ]
+      },
+      "nym": {
+        "teamSlug": "mets",
+        "teamAbbr": "NYM",
+        "teamName": "New York Mets",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 102,
+        "topPitchesLast6": 154,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Devin Williams CL 49p/3d 2 uses/3d",
+          "Luke Weaver SU8 11p/3d 1 uses/3d",
+          "Brooks Raley SU7 42p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "New York Mets leverage relief looks taxed: 102 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Devin Williams (CL), Brooks Raley (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Devin Williams",
+            "playerKey": "fg:15816",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 49,
+            "pitchesLast6": 69,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 86.5
+          },
+          {
+            "playerName": "Luke Weaver",
+            "playerKey": "fg:16918",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 36.1
+          },
+          {
+            "playerName": "Brooks Raley",
+            "playerKey": "fg:10061",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 42,
+            "pitchesLast6": 56,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 77.6
+          },
+          {
+            "playerName": "Cionel Pérez",
+            "playerKey": "fg:19614",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 54.3
+          },
+          {
+            "playerName": "Austin Warren",
+            "playerKey": "fg:24937",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 33,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 44.7
+          },
+          {
+            "playerName": "Huascar Brazobán",
+            "playerKey": "fg:6107",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35.5
+          },
+          {
+            "playerName": "A.J. Minter",
+            "playerKey": "fg:18655",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 28
+          },
+          {
+            "playerName": "Daniel Duarte",
+            "playerKey": "fg:17480",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          }
+        ]
+      },
+      "washington nationals": {
+        "teamSlug": "nationals",
+        "teamAbbr": "WSN",
+        "teamName": "Washington Nationals",
+        "stressScore": 47,
+        "tag": "stable",
+        "topPitchesLast3": 10,
+        "topPitchesLast6": 109,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Clayton Beeter CL",
+          "Orlando Ribalta SU8 10p/3d 1 uses/3d",
+          "Brad Lord SU7"
+        ],
+        "reasons": [
+          "Washington Nationals leverage relief is stable: 10 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Clayton Beeter",
+            "playerKey": "fg:27494",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 16.8
+          },
+          {
+            "playerName": "Orlando Ribalta",
+            "playerKey": "fg:26247",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 10,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 34.3
+          },
+          {
+            "playerName": "Brad Lord",
+            "playerKey": "fg:31972",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 57,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 24.3
+          },
+          {
+            "playerName": "Gus Varland",
+            "playerKey": "fg:24737",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 28,
+            "pitchesLast6": 62,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 4,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 57.9
+          },
+          {
+            "playerName": "Mitchell Parker",
+            "playerKey": "fg:27636",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 8,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 24.9
+          },
+          {
+            "playerName": "PJ Poulin",
+            "playerKey": "fg:23394",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Richard Lovelady",
+            "playerKey": "fg:19337",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 18,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 4.5
+          },
+          {
+            "playerName": "Paxton Schultz",
+            "playerKey": "fg:25501",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 66,
+            "pitchesLast6": 66,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 89.3
+          }
+        ]
+      },
+      "wsn": {
+        "teamSlug": "nationals",
+        "teamAbbr": "WSN",
+        "teamName": "Washington Nationals",
+        "stressScore": 47,
+        "tag": "stable",
+        "topPitchesLast3": 10,
+        "topPitchesLast6": 109,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Clayton Beeter CL",
+          "Orlando Ribalta SU8 10p/3d 1 uses/3d",
+          "Brad Lord SU7"
+        ],
+        "reasons": [
+          "Washington Nationals leverage relief is stable: 10 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Clayton Beeter",
+            "playerKey": "fg:27494",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 16.8
+          },
+          {
+            "playerName": "Orlando Ribalta",
+            "playerKey": "fg:26247",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 10,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 34.3
+          },
+          {
+            "playerName": "Brad Lord",
+            "playerKey": "fg:31972",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 57,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 24.3
+          },
+          {
+            "playerName": "Gus Varland",
+            "playerKey": "fg:24737",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 28,
+            "pitchesLast6": 62,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 4,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 57.9
+          },
+          {
+            "playerName": "Mitchell Parker",
+            "playerKey": "fg:27636",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 8,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 24.9
+          },
+          {
+            "playerName": "PJ Poulin",
+            "playerKey": "fg:23394",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Richard Lovelady",
+            "playerKey": "fg:19337",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 18,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 4.5
+          },
+          {
+            "playerName": "Paxton Schultz",
+            "playerKey": "fg:25501",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 66,
+            "pitchesLast6": 66,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 89.3
+          }
+        ]
+      },
+      "baltimore orioles": {
+        "teamSlug": "orioles",
+        "teamAbbr": "BAL",
+        "teamName": "Baltimore Orioles",
+        "stressScore": 85,
+        "tag": "taxed",
+        "topPitchesLast3": 60,
+        "topPitchesLast6": 117,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Andrew Kittredge CL 15p/3d 2 uses/3d",
+          "Rico Garcia CL 16p/3d 1 uses/3d",
+          "Yennier Cano SU7 29p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Baltimore Orioles leverage relief looks taxed: 60 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Andrew Kittredge (CL), Yennier Cano (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Andrew Kittredge",
+            "playerKey": "fg:12828",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 50.5
+          },
+          {
+            "playerName": "Rico Garcia",
+            "playerKey": "fg:20023",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "L",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 43.8
+          },
+          {
+            "playerName": "Yennier Cano",
+            "playerKey": "fg:25911",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 63
+          },
+          {
+            "playerName": "Tyler Wells",
+            "playerKey": "fg:20000",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 39,
+            "pitchesLast6": 54,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 54.7
+          },
+          {
+            "playerName": "Grant Wolfram",
+            "playerKey": "fg:21623",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 52.6
+          },
+          {
+            "playerName": "Anthony Nunez",
+            "playerKey": "fg:25796",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 54,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 40.3
+          },
+          {
+            "playerName": "Keegan Akin",
+            "playerKey": "fg:19362",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 12,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 26.9
+          },
+          {
+            "playerName": "Albert Suárez",
+            "playerKey": "fg:6175",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 9.8
+          }
+        ]
+      },
+      "bal": {
+        "teamSlug": "orioles",
+        "teamAbbr": "BAL",
+        "teamName": "Baltimore Orioles",
+        "stressScore": 85,
+        "tag": "taxed",
+        "topPitchesLast3": 60,
+        "topPitchesLast6": 117,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Andrew Kittredge CL 15p/3d 2 uses/3d",
+          "Rico Garcia CL 16p/3d 1 uses/3d",
+          "Yennier Cano SU7 29p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Baltimore Orioles leverage relief looks taxed: 60 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Andrew Kittredge (CL), Yennier Cano (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Andrew Kittredge",
+            "playerKey": "fg:12828",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 50.5
+          },
+          {
+            "playerName": "Rico Garcia",
+            "playerKey": "fg:20023",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "L",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 43.8
+          },
+          {
+            "playerName": "Yennier Cano",
+            "playerKey": "fg:25911",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 63
+          },
+          {
+            "playerName": "Tyler Wells",
+            "playerKey": "fg:20000",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 39,
+            "pitchesLast6": 54,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 54.7
+          },
+          {
+            "playerName": "Grant Wolfram",
+            "playerKey": "fg:21623",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 52.6
+          },
+          {
+            "playerName": "Anthony Nunez",
+            "playerKey": "fg:25796",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 54,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 40.3
+          },
+          {
+            "playerName": "Keegan Akin",
+            "playerKey": "fg:19362",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 12,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 26.9
+          },
+          {
+            "playerName": "Albert Suárez",
+            "playerKey": "fg:6175",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 9.8
+          }
+        ]
+      },
+      "san diego padres": {
+        "teamSlug": "padres",
+        "teamAbbr": "SDP",
+        "teamName": "San Diego Padres",
+        "stressScore": 34,
+        "tag": "stable",
+        "topPitchesLast3": 0,
+        "topPitchesLast6": 124,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Mason Miller CL",
+          "Jason Adam SU8",
+          "Adrian Morejon SU7"
+        ],
+        "reasons": [
+          "San Diego Padres leverage relief is stable: 0 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Mason Miller",
+            "playerKey": "fg:31757",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 18.3
+          },
+          {
+            "playerName": "Jason Adam",
+            "playerKey": "fg:11861",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 21
+          },
+          {
+            "playerName": "Adrian Morejon",
+            "playerKey": "fg:20039",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 21.8
+          },
+          {
+            "playerName": "Wandy Peralta",
+            "playerKey": "fg:14295",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 44,
+            "pitchesLast6": 71,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 73
+          },
+          {
+            "playerName": "David Morgan",
+            "playerKey": "fg:31616",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 36.2
+          },
+          {
+            "playerName": "Yuki Matsui",
+            "playerKey": "fg:33826",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 9.8
+          },
+          {
+            "playerName": "Bradgley Rodriguez",
+            "playerKey": "fg:29107",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 8.5
+          },
+          {
+            "playerName": "Ron Marinaccio",
+            "playerKey": "fg:23488",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 24,
+            "pitchesLast6": 60,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 44.2
+          }
+        ]
+      },
+      "sdp": {
+        "teamSlug": "padres",
+        "teamAbbr": "SDP",
+        "teamName": "San Diego Padres",
+        "stressScore": 34,
+        "tag": "stable",
+        "topPitchesLast3": 0,
+        "topPitchesLast6": 124,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Mason Miller CL",
+          "Jason Adam SU8",
+          "Adrian Morejon SU7"
+        ],
+        "reasons": [
+          "San Diego Padres leverage relief is stable: 0 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Mason Miller",
+            "playerKey": "fg:31757",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 18.3
+          },
+          {
+            "playerName": "Jason Adam",
+            "playerKey": "fg:11861",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 21
+          },
+          {
+            "playerName": "Adrian Morejon",
+            "playerKey": "fg:20039",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 21.8
+          },
+          {
+            "playerName": "Wandy Peralta",
+            "playerKey": "fg:14295",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 44,
+            "pitchesLast6": 71,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 73
+          },
+          {
+            "playerName": "David Morgan",
+            "playerKey": "fg:31616",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 36.2
+          },
+          {
+            "playerName": "Yuki Matsui",
+            "playerKey": "fg:33826",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 9.8
+          },
+          {
+            "playerName": "Bradgley Rodriguez",
+            "playerKey": "fg:29107",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 8.5
+          },
+          {
+            "playerName": "Ron Marinaccio",
+            "playerKey": "fg:23488",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 24,
+            "pitchesLast6": 60,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 44.2
+          }
+        ]
+      },
+      "philadelphia phillies": {
+        "teamSlug": "phillies",
+        "teamAbbr": "PHI",
+        "teamName": "Philadelphia Phillies",
+        "stressScore": 38,
+        "tag": "stable",
+        "topPitchesLast3": 13,
+        "topPitchesLast6": 99,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Jhoan Duran CL 10p/3d 1 uses/3d",
+          "Brad Keller SU8 3p/3d 1 uses/3d",
+          "Orion Kerkering SU7"
+        ],
+        "reasons": [
+          "Philadelphia Phillies leverage relief is stable: 13 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Jhoan Duran",
+            "playerKey": "fg:21029",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 10,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "B",
+              "L",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 34.8
+          },
+          {
+            "playerName": "Brad Keller",
+            "playerKey": "fg:15734",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 3,
+            "pitchesLast6": 23,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 28.2
+          },
+          {
+            "playerName": "Orion Kerkering",
+            "playerKey": "fg:31776",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 22.3
+          },
+          {
+            "playerName": "José Alvarado",
+            "playerKey": "fg:17780",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 19,
+            "pitchesLast6": 59,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 40
+          },
+          {
+            "playerName": "Tanner Banks",
+            "playerKey": "fg:16990",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 39.4
+          },
+          {
+            "playerName": "Tim Mayza",
+            "playerKey": "fg:15042",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 22,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37.1
+          },
+          {
+            "playerName": "Jonathan Bowlan",
+            "playerKey": "fg:24607",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 4,
+            "pitchesLast6": 23,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 19
+          },
+          {
+            "playerName": "Chase Shugart",
+            "playerKey": "fg:21544",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 33,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 54.7
+          }
+        ]
+      },
+      "phi": {
+        "teamSlug": "phillies",
+        "teamAbbr": "PHI",
+        "teamName": "Philadelphia Phillies",
+        "stressScore": 38,
+        "tag": "stable",
+        "topPitchesLast3": 13,
+        "topPitchesLast6": 99,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Jhoan Duran CL 10p/3d 1 uses/3d",
+          "Brad Keller SU8 3p/3d 1 uses/3d",
+          "Orion Kerkering SU7"
+        ],
+        "reasons": [
+          "Philadelphia Phillies leverage relief is stable: 13 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Jhoan Duran",
+            "playerKey": "fg:21029",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 10,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "B",
+              "L",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 34.8
+          },
+          {
+            "playerName": "Brad Keller",
+            "playerKey": "fg:15734",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 3,
+            "pitchesLast6": 23,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 28.2
+          },
+          {
+            "playerName": "Orion Kerkering",
+            "playerKey": "fg:31776",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 22.3
+          },
+          {
+            "playerName": "José Alvarado",
+            "playerKey": "fg:17780",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 19,
+            "pitchesLast6": 59,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 40
+          },
+          {
+            "playerName": "Tanner Banks",
+            "playerKey": "fg:16990",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 39.4
+          },
+          {
+            "playerName": "Tim Mayza",
+            "playerKey": "fg:15042",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 22,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37.1
+          },
+          {
+            "playerName": "Jonathan Bowlan",
+            "playerKey": "fg:24607",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 4,
+            "pitchesLast6": 23,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 19
+          },
+          {
+            "playerName": "Chase Shugart",
+            "playerKey": "fg:21544",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 33,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 54.7
+          }
+        ]
+      },
+      "pittsburgh pirates": {
+        "teamSlug": "pirates",
+        "teamAbbr": "PIT",
+        "teamName": "Pittsburgh Pirates",
+        "stressScore": 84,
+        "tag": "taxed",
+        "topPitchesLast3": 63,
+        "topPitchesLast6": 120,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Gregory Soto CL 8p/3d 1 uses/3d",
+          "Dennis Santana SU8 16p/3d 1 uses/3d",
+          "Evan Sisk SU7 39p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Pittsburgh Pirates leverage relief looks taxed: 63 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Evan Sisk (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Gregory Soto",
+            "playerKey": "fg:19677",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 8,
+            "pitchesLast6": 8,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 28.4
+          },
+          {
+            "playerName": "Dennis Santana",
+            "playerKey": "fg:17878",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 44.6
+          },
+          {
+            "playerName": "Evan Sisk",
+            "playerKey": "fg:24995",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 39,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 77.5
+          },
+          {
+            "playerName": "Brandan Bidois",
+            "playerKey": "fg:28052",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 49.5
+          },
+          {
+            "playerName": "Yohan Ramírez",
+            "playerKey": "fg:19444",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 35,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 46.8
+          },
+          {
+            "playerName": "Isaac Mattson",
+            "playerKey": "fg:20385",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Mason Montgomery",
+            "playerKey": "fg:29770",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.3
+          },
+          {
+            "playerName": "Carmen Mlodzinski",
+            "playerKey": "fg:27572",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 76,
+            "pitchesLast6": 76,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 89.8
+          }
+        ]
+      },
+      "pit": {
+        "teamSlug": "pirates",
+        "teamAbbr": "PIT",
+        "teamName": "Pittsburgh Pirates",
+        "stressScore": 84,
+        "tag": "taxed",
+        "topPitchesLast3": 63,
+        "topPitchesLast6": 120,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Gregory Soto CL 8p/3d 1 uses/3d",
+          "Dennis Santana SU8 16p/3d 1 uses/3d",
+          "Evan Sisk SU7 39p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Pittsburgh Pirates leverage relief looks taxed: 63 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Evan Sisk (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Gregory Soto",
+            "playerKey": "fg:19677",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 8,
+            "pitchesLast6": 8,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 28.4
+          },
+          {
+            "playerName": "Dennis Santana",
+            "playerKey": "fg:17878",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 44.6
+          },
+          {
+            "playerName": "Evan Sisk",
+            "playerKey": "fg:24995",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 39,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 77.5
+          },
+          {
+            "playerName": "Brandan Bidois",
+            "playerKey": "fg:28052",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 49.5
+          },
+          {
+            "playerName": "Yohan Ramírez",
+            "playerKey": "fg:19444",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 35,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 46.8
+          },
+          {
+            "playerName": "Isaac Mattson",
+            "playerKey": "fg:20385",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Mason Montgomery",
+            "playerKey": "fg:29770",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.3
+          },
+          {
+            "playerName": "Carmen Mlodzinski",
+            "playerKey": "fg:27572",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 76,
+            "pitchesLast6": 76,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 89.8
+          }
+        ]
+      },
+      "texas rangers": {
+        "teamSlug": "rangers",
+        "teamAbbr": "TEX",
+        "teamName": "Texas Rangers",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 65,
+        "topPitchesLast6": 73,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Jacob Latz CL 32p/3d 2 uses/3d",
+          "Jakob Junis SU8 21p/3d 1 uses/3d",
+          "Cole Winn SU7 12p/3d 1 uses/3d override"
+        ],
+        "reasons": [
+          "Texas Rangers leverage relief looks taxed: 65 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Jacob Latz (CL), Cole Winn (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Jacob Latz",
+            "playerKey": "fg:21306",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 32,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 63.6
+          },
+          {
+            "playerName": "Jakob Junis",
+            "playerKey": "fg:13619",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 42.1
+          },
+          {
+            "playerName": "Cole Winn",
+            "playerKey": "fg:22113",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": true,
+            "stress": 58.6
+          },
+          {
+            "playerName": "Peyton Gray",
+            "playerKey": "fg:25310",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35.8
+          },
+          {
+            "playerName": "Robby Ahlstrom",
+            "playerKey": "fg:30167",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 28.2
+          },
+          {
+            "playerName": "Joe Ross",
+            "playerKey": "fg:12972",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Tyler Alexander",
+            "playerKey": "fg:17735",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 11,
+            "pitchesLast6": 19,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 23.6
+          },
+          {
+            "playerName": "Cal Quantrill",
+            "playerKey": "fg:19312",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 38,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 49.9
+          }
+        ]
+      },
+      "tex": {
+        "teamSlug": "rangers",
+        "teamAbbr": "TEX",
+        "teamName": "Texas Rangers",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 65,
+        "topPitchesLast6": 73,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Jacob Latz CL 32p/3d 2 uses/3d",
+          "Jakob Junis SU8 21p/3d 1 uses/3d",
+          "Cole Winn SU7 12p/3d 1 uses/3d override"
+        ],
+        "reasons": [
+          "Texas Rangers leverage relief looks taxed: 65 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Jacob Latz (CL), Cole Winn (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Jacob Latz",
+            "playerKey": "fg:21306",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 32,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 63.6
+          },
+          {
+            "playerName": "Jakob Junis",
+            "playerKey": "fg:13619",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 42.1
+          },
+          {
+            "playerName": "Cole Winn",
+            "playerKey": "fg:22113",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": true,
+            "stress": 58.6
+          },
+          {
+            "playerName": "Peyton Gray",
+            "playerKey": "fg:25310",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35.8
+          },
+          {
+            "playerName": "Robby Ahlstrom",
+            "playerKey": "fg:30167",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 28.2
+          },
+          {
+            "playerName": "Joe Ross",
+            "playerKey": "fg:12972",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Tyler Alexander",
+            "playerKey": "fg:17735",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 11,
+            "pitchesLast6": 19,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 23.6
+          },
+          {
+            "playerName": "Cal Quantrill",
+            "playerKey": "fg:19312",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 38,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 49.9
+          }
+        ]
+      },
+      "tampa bay rays": {
+        "teamSlug": "rays",
+        "teamAbbr": "TBR",
+        "teamName": "Tampa Bay Rays",
+        "stressScore": 43,
+        "tag": "stable",
+        "topPitchesLast3": 23,
+        "topPitchesLast6": 106,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Bryan Baker CL",
+          "Kevin Kelly SU8",
+          "Garrett Cleavinger SU7 23p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Tampa Bay Rays leverage relief is stable: 23 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Bryan Baker",
+            "playerKey": "fg:19804",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 16.3
+          },
+          {
+            "playerName": "Kevin Kelly",
+            "playerKey": "fg:25679",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 15.5
+          },
+          {
+            "playerName": "Garrett Cleavinger",
+            "playerKey": "fg:17897",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 23,
+            "pitchesLast6": 59,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "B",
+              "L",
+              "H",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 53.2
+          },
+          {
+            "playerName": "Cole Sulser",
+            "playerKey": "fg:15256",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 32.7
+          },
+          {
+            "playerName": "Steven Matz",
+            "playerKey": "fg:13361",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 9,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 29
+          },
+          {
+            "playerName": "Casey Legumina",
+            "playerKey": "fg:25921",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 2,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 15.1
+          },
+          {
+            "playerName": "Cam Booser",
+            "playerKey": "fg:16061",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 10,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 2.5
+          },
+          {
+            "playerName": "Mason Englert",
+            "playerKey": "fg:22288",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 65,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 78.3
+          }
+        ]
+      },
+      "tbr": {
+        "teamSlug": "rays",
+        "teamAbbr": "TBR",
+        "teamName": "Tampa Bay Rays",
+        "stressScore": 43,
+        "tag": "stable",
+        "topPitchesLast3": 23,
+        "topPitchesLast6": 106,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Bryan Baker CL",
+          "Kevin Kelly SU8",
+          "Garrett Cleavinger SU7 23p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Tampa Bay Rays leverage relief is stable: 23 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Bryan Baker",
+            "playerKey": "fg:19804",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 16.3
+          },
+          {
+            "playerName": "Kevin Kelly",
+            "playerKey": "fg:25679",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 15.5
+          },
+          {
+            "playerName": "Garrett Cleavinger",
+            "playerKey": "fg:17897",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 23,
+            "pitchesLast6": 59,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "B",
+              "L",
+              "H",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 53.2
+          },
+          {
+            "playerName": "Cole Sulser",
+            "playerKey": "fg:15256",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 32.7
+          },
+          {
+            "playerName": "Steven Matz",
+            "playerKey": "fg:13361",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 9,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 29
+          },
+          {
+            "playerName": "Casey Legumina",
+            "playerKey": "fg:25921",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 2,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 15.1
+          },
+          {
+            "playerName": "Cam Booser",
+            "playerKey": "fg:16061",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 10,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 2.5
+          },
+          {
+            "playerName": "Mason Englert",
+            "playerKey": "fg:22288",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 65,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 78.3
+          }
+        ]
+      },
+      "boston red sox": {
+        "teamSlug": "red-sox",
+        "teamAbbr": "BOS",
+        "teamName": "Boston Red Sox",
+        "stressScore": 59,
+        "tag": "watch",
+        "topPitchesLast3": 19,
+        "topPitchesLast6": 61,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Aroldis Chapman CL",
+          "Garrett Whitlock SU8 override",
+          "Justin Slaten SU7 19p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Boston Red Sox leverage relief is watch: 19 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Garrett Whitlock (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Aroldis Chapman",
+            "playerKey": "fg:10233",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": false,
+            "stress": 10
+          },
+          {
+            "playerName": "Garrett Whitlock",
+            "playerKey": "fg:20191",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 38.3
+          },
+          {
+            "playerName": "Justin Slaten",
+            "playerKey": "fg:25648",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 46.2
+          },
+          {
+            "playerName": "Danny Coulombe",
+            "playerKey": "fg:13293",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30.2
+          },
+          {
+            "playerName": "Tyron Guerrero",
+            "playerKey": "fg:11691",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 29.1
+          },
+          {
+            "playerName": "Tommy Kahnle",
+            "playerKey": "fg:11384",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 10,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 24.3
+          },
+          {
+            "playerName": "Greg Weissert",
+            "playerKey": "fg:20375",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 3,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 17.4
+          },
+          {
+            "playerName": "Ryan Watson",
+            "playerKey": "fg:27853",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 35,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 46.8
+          }
+        ]
+      },
+      "bos": {
+        "teamSlug": "red-sox",
+        "teamAbbr": "BOS",
+        "teamName": "Boston Red Sox",
+        "stressScore": 59,
+        "tag": "watch",
+        "topPitchesLast3": 19,
+        "topPitchesLast6": 61,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Aroldis Chapman CL",
+          "Garrett Whitlock SU8 override",
+          "Justin Slaten SU7 19p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Boston Red Sox leverage relief is watch: 19 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Garrett Whitlock (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Aroldis Chapman",
+            "playerKey": "fg:10233",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": false,
+            "stress": 10
+          },
+          {
+            "playerName": "Garrett Whitlock",
+            "playerKey": "fg:20191",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 38.3
+          },
+          {
+            "playerName": "Justin Slaten",
+            "playerKey": "fg:25648",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 46.2
+          },
+          {
+            "playerName": "Danny Coulombe",
+            "playerKey": "fg:13293",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30.2
+          },
+          {
+            "playerName": "Tyron Guerrero",
+            "playerKey": "fg:11691",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 29.1
+          },
+          {
+            "playerName": "Tommy Kahnle",
+            "playerKey": "fg:11384",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 10,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 24.3
+          },
+          {
+            "playerName": "Greg Weissert",
+            "playerKey": "fg:20375",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 3,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 17.4
+          },
+          {
+            "playerName": "Ryan Watson",
+            "playerKey": "fg:27853",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 35,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 46.8
+          }
+        ]
+      },
+      "cincinnati reds": {
+        "teamSlug": "reds",
+        "teamAbbr": "CIN",
+        "teamName": "Cincinnati Reds",
+        "stressScore": 61,
+        "tag": "watch",
+        "topPitchesLast3": 37,
+        "topPitchesLast6": 124,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Brock Burke CL 28p/3d 1 uses/3d",
+          "Tony Santillan CL 9p/3d 1 uses/3d",
+          "Sam Moll CL"
+        ],
+        "reasons": [
+          "Cincinnati Reds leverage relief is watch: 37 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Brock Burke",
+            "playerKey": "fg:17968",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 56,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 56.4
+          },
+          {
+            "playerName": "Tony Santillan",
+            "playerKey": "fg:19926",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 37
+          },
+          {
+            "playerName": "Sam Moll",
+            "playerKey": "fg:14874",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 17.3
+          },
+          {
+            "playerName": "Zach Maxwell",
+            "playerKey": "fg:31610",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 56,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 81.1
+          },
+          {
+            "playerName": "Chase Petty",
+            "playerKey": "fg:30170",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": true,
+            "stress": 51.9
+          },
+          {
+            "playerName": "Tejay Antone",
+            "playerKey": "fg:16233",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 39.3
+          },
+          {
+            "playerName": "Caleb Ferguson",
+            "playerKey": "fg:19349",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 30.8
+          },
+          {
+            "playerName": "Chris Paddack",
+            "playerKey": "fg:20099",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 8.3
+          }
+        ]
+      },
+      "cin": {
+        "teamSlug": "reds",
+        "teamAbbr": "CIN",
+        "teamName": "Cincinnati Reds",
+        "stressScore": 61,
+        "tag": "watch",
+        "topPitchesLast3": 37,
+        "topPitchesLast6": 124,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Brock Burke CL 28p/3d 1 uses/3d",
+          "Tony Santillan CL 9p/3d 1 uses/3d",
+          "Sam Moll CL"
+        ],
+        "reasons": [
+          "Cincinnati Reds leverage relief is watch: 37 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Brock Burke",
+            "playerKey": "fg:17968",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 56,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 56.4
+          },
+          {
+            "playerName": "Tony Santillan",
+            "playerKey": "fg:19926",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 37
+          },
+          {
+            "playerName": "Sam Moll",
+            "playerKey": "fg:14874",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 17.3
+          },
+          {
+            "playerName": "Zach Maxwell",
+            "playerKey": "fg:31610",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 56,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 81.1
+          },
+          {
+            "playerName": "Chase Petty",
+            "playerKey": "fg:30170",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": true,
+            "stress": 51.9
+          },
+          {
+            "playerName": "Tejay Antone",
+            "playerKey": "fg:16233",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 39.3
+          },
+          {
+            "playerName": "Caleb Ferguson",
+            "playerKey": "fg:19349",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 30.8
+          },
+          {
+            "playerName": "Chris Paddack",
+            "playerKey": "fg:20099",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 8.3
+          }
+        ]
+      },
+      "colorado rockies": {
+        "teamSlug": "rockies",
+        "teamAbbr": "COL",
+        "teamName": "Colorado Rockies",
+        "stressScore": 61,
+        "tag": "watch",
+        "topPitchesLast3": 46,
+        "topPitchesLast6": 82,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Antonio Senzatela CL 14p/3d 1 uses/3d",
+          "Juan Mejia SU8 10p/3d 1 uses/3d",
+          "Seth Halvorsen SU7 22p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Colorado Rockies leverage relief is watch: 46 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Antonio Senzatela",
+            "playerKey": "fg:15488",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 40.2
+          },
+          {
+            "playerName": "Juan Mejia",
+            "playerKey": "fg:23237",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 10,
+            "pitchesLast6": 10,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30.5
+          },
+          {
+            "playerName": "Seth Halvorsen",
+            "playerKey": "fg:33294",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 46.6
+          },
+          {
+            "playerName": "Jeff Criswell",
+            "playerKey": "fg:27608",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 49,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": true,
+            "stress": 95.5
+          },
+          {
+            "playerName": "Zach Agnos",
+            "playerKey": "fg:31552",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 60,
+            "pitchesLast6": 60,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 73
+          },
+          {
+            "playerName": "Brennan Bernardino",
+            "playerKey": "fg:16835",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 48
+          },
+          {
+            "playerName": "Jaden Hill",
+            "playerKey": "fg:30250",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 9
+          },
+          {
+            "playerName": "Blas Castaño",
+            "playerKey": "fg:26117",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 46,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.3
+          }
+        ]
+      },
+      "col": {
+        "teamSlug": "rockies",
+        "teamAbbr": "COL",
+        "teamName": "Colorado Rockies",
+        "stressScore": 61,
+        "tag": "watch",
+        "topPitchesLast3": 46,
+        "topPitchesLast6": 82,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Antonio Senzatela CL 14p/3d 1 uses/3d",
+          "Juan Mejia SU8 10p/3d 1 uses/3d",
+          "Seth Halvorsen SU7 22p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Colorado Rockies leverage relief is watch: 46 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Antonio Senzatela",
+            "playerKey": "fg:15488",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 40.2
+          },
+          {
+            "playerName": "Juan Mejia",
+            "playerKey": "fg:23237",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 10,
+            "pitchesLast6": 10,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30.5
+          },
+          {
+            "playerName": "Seth Halvorsen",
+            "playerKey": "fg:33294",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 46.6
+          },
+          {
+            "playerName": "Jeff Criswell",
+            "playerKey": "fg:27608",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 49,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": true,
+            "stress": 95.5
+          },
+          {
+            "playerName": "Zach Agnos",
+            "playerKey": "fg:31552",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 60,
+            "pitchesLast6": 60,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 73
+          },
+          {
+            "playerName": "Brennan Bernardino",
+            "playerKey": "fg:16835",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 48
+          },
+          {
+            "playerName": "Jaden Hill",
+            "playerKey": "fg:30250",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 9
+          },
+          {
+            "playerName": "Blas Castaño",
+            "playerKey": "fg:26117",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 46,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.3
+          }
+        ]
+      },
+      "kansas city royals": {
+        "teamSlug": "royals",
+        "teamAbbr": "KCR",
+        "teamName": "Kansas City Royals",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 108,
+        "topPitchesLast6": 155,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Alex Lange CL 32p/3d 1 uses/3d",
+          "Lucas Erceg SU8 59p/3d 2 uses/3d",
+          "Daniel Lynch IV SU7 17p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Kansas City Royals leverage relief looks taxed: 108 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Lucas Erceg (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Alex Lange",
+            "playerKey": "fg:19883",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 51,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 58.4
+          },
+          {
+            "playerName": "Lucas Erceg",
+            "playerKey": "fg:19360",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 59,
+            "pitchesLast6": 74,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 95.7
+          },
+          {
+            "playerName": "Daniel Lynch IV",
+            "playerKey": "fg:21537",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 17,
+            "pitchesLast6": 30,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 41.1
+          },
+          {
+            "playerName": "Steven Cruz",
+            "playerKey": "fg:23165",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 40,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 64.5
+          },
+          {
+            "playerName": "Matt Strahm",
+            "playerKey": "fg:13799",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 35,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 56.8
+          },
+          {
+            "playerName": "Eli Morgan",
+            "playerKey": "fg:20203",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 13,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 47.7
+          },
+          {
+            "playerName": "Beck Way",
+            "playerKey": "fg:27877",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 47.4
+          },
+          {
+            "playerName": "John Schreiber",
+            "playerKey": "fg:20020",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 33.2
+          }
+        ]
+      },
+      "kcr": {
+        "teamSlug": "royals",
+        "teamAbbr": "KCR",
+        "teamName": "Kansas City Royals",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 108,
+        "topPitchesLast6": 155,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Alex Lange CL 32p/3d 1 uses/3d",
+          "Lucas Erceg SU8 59p/3d 2 uses/3d",
+          "Daniel Lynch IV SU7 17p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Kansas City Royals leverage relief looks taxed: 108 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Lucas Erceg (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Alex Lange",
+            "playerKey": "fg:19883",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 51,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 58.4
+          },
+          {
+            "playerName": "Lucas Erceg",
+            "playerKey": "fg:19360",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 59,
+            "pitchesLast6": 74,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 95.7
+          },
+          {
+            "playerName": "Daniel Lynch IV",
+            "playerKey": "fg:21537",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 17,
+            "pitchesLast6": 30,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 41.1
+          },
+          {
+            "playerName": "Steven Cruz",
+            "playerKey": "fg:23165",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 40,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 64.5
+          },
+          {
+            "playerName": "Matt Strahm",
+            "playerKey": "fg:13799",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 35,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 56.8
+          },
+          {
+            "playerName": "Eli Morgan",
+            "playerKey": "fg:20203",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 13,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 47.7
+          },
+          {
+            "playerName": "Beck Way",
+            "playerKey": "fg:27877",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 47.4
+          },
+          {
+            "playerName": "John Schreiber",
+            "playerKey": "fg:20020",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 33.2
+          }
+        ]
+      },
+      "detroit tigers": {
+        "teamSlug": "tigers",
+        "teamAbbr": "DET",
+        "teamName": "Detroit Tigers",
+        "stressScore": 59,
+        "tag": "watch",
+        "topPitchesLast3": 0,
+        "topPitchesLast6": 49,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Kenley Jansen CL override",
+          "Will Vest SU8",
+          "Kyle Finnegan SU7"
+        ],
+        "reasons": [
+          "Detroit Tigers leverage relief is watch: 0 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Kenley Jansen (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Kenley Jansen",
+            "playerKey": "fg:3096",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 34
+          },
+          {
+            "playerName": "Will Vest",
+            "playerKey": "fg:19769",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 10,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 12.5
+          },
+          {
+            "playerName": "Kyle Finnegan",
+            "playerKey": "fg:15009",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 19.8
+          },
+          {
+            "playerName": "Drew Sommers",
+            "playerKey": "fg:32026",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 32,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 56.6
+          },
+          {
+            "playerName": "Tyler Holton",
+            "playerKey": "fg:26231",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 25,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 42.5
+          },
+          {
+            "playerName": "Drew Anderson",
+            "playerKey": "fg:15130",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 54,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 40.3
+          },
+          {
+            "playerName": "Enmanuel De Jesus",
+            "playerKey": "fg:18554",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 3.8
+          },
+          {
+            "playerName": "Jacob Waguespack",
+            "playerKey": "fg:18318",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 55
+          }
+        ]
+      },
+      "det": {
+        "teamSlug": "tigers",
+        "teamAbbr": "DET",
+        "teamName": "Detroit Tigers",
+        "stressScore": 59,
+        "tag": "watch",
+        "topPitchesLast3": 0,
+        "topPitchesLast6": 49,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Kenley Jansen CL override",
+          "Will Vest SU8",
+          "Kyle Finnegan SU7"
+        ],
+        "reasons": [
+          "Detroit Tigers leverage relief is watch: 0 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Kenley Jansen (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Kenley Jansen",
+            "playerKey": "fg:3096",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 34
+          },
+          {
+            "playerName": "Will Vest",
+            "playerKey": "fg:19769",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 10,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 12.5
+          },
+          {
+            "playerName": "Kyle Finnegan",
+            "playerKey": "fg:15009",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 19.8
+          },
+          {
+            "playerName": "Drew Sommers",
+            "playerKey": "fg:32026",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 32,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 56.6
+          },
+          {
+            "playerName": "Tyler Holton",
+            "playerKey": "fg:26231",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 25,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 42.5
+          },
+          {
+            "playerName": "Drew Anderson",
+            "playerKey": "fg:15130",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 54,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 40.3
+          },
+          {
+            "playerName": "Enmanuel De Jesus",
+            "playerKey": "fg:18554",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 3.8
+          },
+          {
+            "playerName": "Jacob Waguespack",
+            "playerKey": "fg:18318",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 55
+          }
+        ]
+      },
+      "minnesota twins": {
+        "teamSlug": "twins",
+        "teamAbbr": "MIN",
+        "teamName": "Minnesota Twins",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 160,
+        "topPitchesLast6": 202,
+        "taxedArmCount": 3,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Andrew Morris CL 48p/3d 2 uses/3d",
+          "Yoendrys Gómez CL 42p/3d 2 uses/3d",
+          "Anthony Banda CL 39p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Minnesota Twins leverage relief looks taxed: 160 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Andrew Morris (CL), Yoendrys Gómez (CL), Anthony Banda (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Andrew Morris",
+            "playerKey": "fg:31891",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 48,
+            "pitchesLast6": 90,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 90.9
+          },
+          {
+            "playerName": "Yoendrys Gómez",
+            "playerKey": "fg:22872",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 42,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 74.1
+          },
+          {
+            "playerName": "Anthony Banda",
+            "playerKey": "fg:14706",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 39,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 71
+          },
+          {
+            "playerName": "Travis Adams",
+            "playerKey": "fg:30180",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 52.6
+          },
+          {
+            "playerName": "Taylor Rogers",
+            "playerKey": "fg:13449",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 36,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 62.1
+          },
+          {
+            "playerName": "Eric Orze",
+            "playerKey": "fg:27626",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 32.6
+          },
+          {
+            "playerName": "Justin Lawrence",
+            "playerKey": "fg:17639",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 9.5
+          },
+          {
+            "playerName": "Cody Laweryson",
+            "playerKey": "fg:26429",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 80,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 55.6
+          }
+        ]
+      },
+      "min": {
+        "teamSlug": "twins",
+        "teamAbbr": "MIN",
+        "teamName": "Minnesota Twins",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 160,
+        "topPitchesLast6": 202,
+        "taxedArmCount": 3,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Andrew Morris CL 48p/3d 2 uses/3d",
+          "Yoendrys Gómez CL 42p/3d 2 uses/3d",
+          "Anthony Banda CL 39p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Minnesota Twins leverage relief looks taxed: 160 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Andrew Morris (CL), Yoendrys Gómez (CL), Anthony Banda (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Andrew Morris",
+            "playerKey": "fg:31891",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 48,
+            "pitchesLast6": 90,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 90.9
+          },
+          {
+            "playerName": "Yoendrys Gómez",
+            "playerKey": "fg:22872",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 42,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 74.1
+          },
+          {
+            "playerName": "Anthony Banda",
+            "playerKey": "fg:14706",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 39,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 71
+          },
+          {
+            "playerName": "Travis Adams",
+            "playerKey": "fg:30180",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 52.6
+          },
+          {
+            "playerName": "Taylor Rogers",
+            "playerKey": "fg:13449",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 36,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 62.1
+          },
+          {
+            "playerName": "Eric Orze",
+            "playerKey": "fg:27626",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 32.6
+          },
+          {
+            "playerName": "Justin Lawrence",
+            "playerKey": "fg:17639",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 9.5
+          },
+          {
+            "playerName": "Cody Laweryson",
+            "playerKey": "fg:26429",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 80,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 55.6
+          }
+        ]
+      },
+      "chicago white sox": {
+        "teamSlug": "white-sox",
+        "teamAbbr": "CHW",
+        "teamName": "Chicago White Sox",
+        "stressScore": 95,
+        "tag": "taxed",
+        "topPitchesLast3": 64,
+        "topPitchesLast6": 123,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Bryan Hudson CL 23p/3d 2 uses/3d",
+          "Sean Newcomb CL 27p/3d 1 uses/3d",
+          "Seranthony Domínguez CL 14p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Chicago White Sox leverage relief looks taxed: 64 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Bryan Hudson (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Bryan Hudson",
+            "playerKey": "fg:19924",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 23,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 60.4
+          },
+          {
+            "playerName": "Sean Newcomb",
+            "playerKey": "fg:16943",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 48.4
+          },
+          {
+            "playerName": "Seranthony Domínguez",
+            "playerKey": "fg:19249",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 38
+          },
+          {
+            "playerName": "Grant Taylor",
+            "playerKey": "fg:33927",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 15.3
+          },
+          {
+            "playerName": "Chris Murphy",
+            "playerKey": "fg:26214",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 48.7
+          },
+          {
+            "playerName": "Joe Rock",
+            "playerKey": "fg:30016",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Tyler Davis",
+            "playerKey": "fg:34847",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 30,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 7.5
+          },
+          {
+            "playerName": "Brandon Eisert",
+            "playerKey": "fg:27668",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 5.3
+          }
+        ]
+      },
+      "chw": {
+        "teamSlug": "white-sox",
+        "teamAbbr": "CHW",
+        "teamName": "Chicago White Sox",
+        "stressScore": 95,
+        "tag": "taxed",
+        "topPitchesLast3": 64,
+        "topPitchesLast6": 123,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Bryan Hudson CL 23p/3d 2 uses/3d",
+          "Sean Newcomb CL 27p/3d 1 uses/3d",
+          "Seranthony Domínguez CL 14p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Chicago White Sox leverage relief looks taxed: 64 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Bryan Hudson (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Bryan Hudson",
+            "playerKey": "fg:19924",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 23,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 60.4
+          },
+          {
+            "playerName": "Sean Newcomb",
+            "playerKey": "fg:16943",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 48.4
+          },
+          {
+            "playerName": "Seranthony Domínguez",
+            "playerKey": "fg:19249",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 38
+          },
+          {
+            "playerName": "Grant Taylor",
+            "playerKey": "fg:33927",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 15.3
+          },
+          {
+            "playerName": "Chris Murphy",
+            "playerKey": "fg:26214",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 48.7
+          },
+          {
+            "playerName": "Joe Rock",
+            "playerKey": "fg:30016",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Tyler Davis",
+            "playerKey": "fg:34847",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 30,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 7.5
+          },
+          {
+            "playerName": "Brandon Eisert",
+            "playerKey": "fg:27668",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 5.3
+          }
+        ]
+      },
+      "new york yankees": {
+        "teamSlug": "yankees",
+        "teamAbbr": "NYY",
+        "teamName": "New York Yankees",
+        "stressScore": 70,
+        "tag": "watch",
+        "topPitchesLast3": 47,
+        "topPitchesLast6": 147,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "David Bednar CL",
+          "Fernando Cruz SU8 23p/3d 1 uses/3d",
+          "Brent Headrick SU7 24p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "New York Yankees leverage relief is watch: 47 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Brent Headrick (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "David Bednar",
+            "playerKey": "fg:19569",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 19.5
+          },
+          {
+            "playerName": "Fernando Cruz",
+            "playerKey": "fg:7048",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 23,
+            "pitchesLast6": 59,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 53.2
+          },
+          {
+            "playerName": "Brent Headrick",
+            "playerKey": "fg:27702",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 4,
+            "flags": [],
+            "unavailable": false,
+            "stress": 61.7
+          },
+          {
+            "playerName": "Ryan Yarbrough",
+            "playerKey": "fg:16502",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 41.4
+          },
+          {
+            "playerName": "Jake Bird",
+            "playerKey": "fg:21267",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 52,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 39
+          },
+          {
+            "playerName": "Camilo Doval",
+            "playerKey": "fg:21992",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 40,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 34.4
+          },
+          {
+            "playerName": "Tim Hill",
+            "playerKey": "fg:16814",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 23,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 5.8
+          },
+          {
+            "playerName": "Paul Blackburn",
+            "playerKey": "fg:14739",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 9.5
+          }
+        ]
+      },
+      "nyy": {
+        "teamSlug": "yankees",
+        "teamAbbr": "NYY",
+        "teamName": "New York Yankees",
+        "stressScore": 70,
+        "tag": "watch",
+        "topPitchesLast3": 47,
+        "topPitchesLast6": 147,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "David Bednar CL",
+          "Fernando Cruz SU8 23p/3d 1 uses/3d",
+          "Brent Headrick SU7 24p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "New York Yankees leverage relief is watch: 47 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Brent Headrick (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "David Bednar",
+            "playerKey": "fg:19569",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 19.5
+          },
+          {
+            "playerName": "Fernando Cruz",
+            "playerKey": "fg:7048",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 23,
+            "pitchesLast6": 59,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 53.2
+          },
+          {
+            "playerName": "Brent Headrick",
+            "playerKey": "fg:27702",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 4,
+            "flags": [],
+            "unavailable": false,
+            "stress": 61.7
+          },
+          {
+            "playerName": "Ryan Yarbrough",
+            "playerKey": "fg:16502",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 41.4
+          },
+          {
+            "playerName": "Jake Bird",
+            "playerKey": "fg:21267",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 52,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 39
+          },
+          {
+            "playerName": "Camilo Doval",
+            "playerKey": "fg:21992",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 40,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 34.4
+          },
+          {
+            "playerName": "Tim Hill",
+            "playerKey": "fg:16814",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 23,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 5.8
+          },
+          {
+            "playerName": "Paul Blackburn",
+            "playerKey": "fg:14739",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 9.5
+          }
+        ]
+      }
+    }
+  },
+  "2026-06-14": {
+    "generatedAt": "2026-06-14T16:42:42.032Z",
+    "date": "2026-06-14",
+    "source": "sql-mlb.db shadow addendums",
+    "coverage": {
+      "games": 15,
+      "teamsWithBullpen": 30,
+      "exactUmpireGames": 0
+    },
+    "gamesById": {
+      "miami-marlins-pittsburgh-pirates": {
+        "gamePk": 823368,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Miami Marlins",
+        "homeTeam": "Pittsburgh Pirates",
+        "away": {
+          "bullpen": {
+            "teamSlug": "marlins",
+            "teamAbbr": "MIA",
+            "teamName": "Miami Marlins",
+            "stressScore": 100,
+            "tag": "taxed",
+            "topPitchesLast3": 102,
+            "topPitchesLast6": 163,
+            "taxedArmCount": 2,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Pete Fairbanks CL 13p/3d 1 uses/3d",
+              "Anthony Bender SU8 46p/3d 2 uses/3d",
+              "Michael Petersen SU7 43p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "Miami Marlins leverage relief looks taxed: 102 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Anthony Bender (SU8), Michael Petersen (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Pete Fairbanks",
+                "playerKey": "fg:17998",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 37,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 39.7
+              },
+              {
+                "playerName": "Anthony Bender",
+                "playerKey": "fg:19742",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 46,
+                "pitchesLast6": 57,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "H",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 81.1
+              },
+              {
+                "playerName": "Michael Petersen",
+                "playerKey": "fg:20827",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 43,
+                "pitchesLast6": 69,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 81.7
+              },
+              {
+                "playerName": "Lake Bachar",
+                "playerKey": "fg:19222",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 42,
+                "pitchesLast6": 78,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 63.1
+              },
+              {
+                "playerName": "Calvin Faucher",
+                "playerKey": "fg:20116",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 28,
+                "pitchesLast6": 40,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "BS",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 52.4
+              },
+              {
+                "playerName": "John King",
+                "playerKey": "fg:22051",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 29,
+                "pitchesLast6": 29,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 50.5
+              },
+              {
+                "playerName": "Cade Gibson",
+                "playerKey": "fg:31815",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 22,
+                "pitchesLast6": 37,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 36.9
+              },
+              {
+                "playerName": "William Kempner",
+                "playerKey": "fg:31615",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 9
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "pirates",
+            "teamAbbr": "PIT",
+            "teamName": "Pittsburgh Pirates",
+            "stressScore": 80,
+            "tag": "taxed",
+            "topPitchesLast3": 60,
+            "topPitchesLast6": 107,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Gregory Soto CL 13p/3d 1 uses/3d",
+              "Dennis Santana SU8 16p/3d 1 uses/3d",
+              "Evan Sisk SU7 31p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Pittsburgh Pirates leverage relief looks taxed: 60 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Gregory Soto",
+                "playerKey": "fg:19677",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 13,
+                "pitchesLast6": 21,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 35.7
+              },
+              {
+                "playerName": "Dennis Santana",
+                "playerKey": "fg:17878",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 44.6
+              },
+              {
+                "playerName": "Evan Sisk",
+                "playerKey": "fg:24995",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 31,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 54.6
+              },
+              {
+                "playerName": "Yohan Ramírez",
+                "playerKey": "fg:19444",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 58,
+                "pitchesLast6": 58,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 80.9
+              },
+              {
+                "playerName": "Brandan Bidois",
+                "playerKey": "fg:28052",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 29,
+                "pitchesLast6": 65,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": true,
+                "stress": 73.5
+              },
+              {
+                "playerName": "Mason Montgomery",
+                "playerKey": "fg:29770",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 25.8
+              },
+              {
+                "playerName": "Isaac Mattson",
+                "playerKey": "fg:20385",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              },
+              {
+                "playerName": "Carmen Mlodzinski",
+                "playerKey": "fg:27572",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 76,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 19
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "san-diego-padres-baltimore-orioles": {
+        "gamePk": 824823,
+        "gameDate": "2026-06-14",
+        "awayTeam": "San Diego Padres",
+        "homeTeam": "Baltimore Orioles",
+        "away": {
+          "bullpen": {
+            "teamSlug": "padres",
+            "teamAbbr": "SDP",
+            "teamName": "San Diego Padres",
+            "stressScore": 56,
+            "tag": "watch",
+            "topPitchesLast3": 18,
+            "topPitchesLast6": 142,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Mason Miller CL",
+              "Jason Adam SU8 16p/3d 1 uses/3d",
+              "Adrian Morejon SU7 2p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "San Diego Padres leverage relief is watch: 18 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Jason Adam (SU8)."
+            ],
+            "players": [
+              {
+                "playerName": "Mason Miller",
+                "playerKey": "fg:31757",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 18.3
+              },
+              {
+                "playerName": "Jason Adam",
+                "playerKey": "fg:11861",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 60,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 47.8
+              },
+              {
+                "playerName": "Adrian Morejon",
+                "playerKey": "fg:20039",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 2,
+                "pitchesLast6": 49,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 33.9
+              },
+              {
+                "playerName": "Wandy Peralta",
+                "playerKey": "fg:14295",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 30,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 45
+              },
+              {
+                "playerName": "David Morgan",
+                "playerKey": "fg:31616",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 36.2
+              },
+              {
+                "playerName": "Bradgley Rodriguez",
+                "playerKey": "fg:29107",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 35.3
+              },
+              {
+                "playerName": "Yuki Matsui",
+                "playerKey": "fg:33826",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 14,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 28.2
+              },
+              {
+                "playerName": "Ron Marinaccio",
+                "playerKey": "fg:23488",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 4,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 20.2
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "orioles",
+            "teamAbbr": "BAL",
+            "teamName": "Baltimore Orioles",
+            "stressScore": 65,
+            "tag": "watch",
+            "topPitchesLast3": 47,
+            "topPitchesLast6": 94,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Andrew Kittredge CL 15p/3d 2 uses/3d",
+              "Rico Garcia CL 16p/3d 1 uses/3d",
+              "Yennier Cano SU7 16p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Baltimore Orioles leverage relief is watch: 47 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Andrew Kittredge (CL)."
+            ],
+            "players": [
+              {
+                "playerName": "Andrew Kittredge",
+                "playerKey": "fg:12828",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 34,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 50.5
+              },
+              {
+                "playerName": "Rico Garcia",
+                "playerKey": "fg:20023",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 40.6
+              },
+              {
+                "playerName": "Yennier Cano",
+                "playerKey": "fg:25911",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 29,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 40.1
+              },
+              {
+                "playerName": "Tyler Wells",
+                "playerKey": "fg:20000",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 39,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 53
+              },
+              {
+                "playerName": "Keegan Akin",
+                "playerKey": "fg:19362",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 24,
+                "pitchesLast6": 41,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 49.5
+              },
+              {
+                "playerName": "Anthony Nunez",
+                "playerKey": "fg:25796",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 54,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 40.3
+              },
+              {
+                "playerName": "Grant Wolfram",
+                "playerKey": "fg:21623",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 7,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 22.4
+              },
+              {
+                "playerName": "Albert Suárez",
+                "playerKey": "fg:6175",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 38,
+                "pitchesLast6": 77,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 59.7
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "seattle-mariners-washington-nationals": {
+        "gamePk": 822722,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Seattle Mariners",
+        "homeTeam": "Washington Nationals",
+        "away": {
+          "bullpen": {
+            "teamSlug": "mariners",
+            "teamAbbr": "SEA",
+            "teamName": "Seattle Mariners",
+            "stressScore": 64,
+            "tag": "watch",
+            "topPitchesLast3": 25,
+            "topPitchesLast6": 106,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Andrés Muñoz CL",
+              "José A. Ferrer SU8 10p/3d 1 uses/3d",
+              "Eduard Bazardo SU7 15p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Seattle Mariners leverage relief is watch: 25 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Andrés Muñoz",
+                "playerKey": "fg:20373",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 20,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 15
+              },
+              {
+                "playerName": "José A. Ferrer",
+                "playerKey": "fg:24017",
+                "role": "SU8",
+                "throws": "L",
+                "pitchesLast3": 10,
+                "pitchesLast6": 53,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "B",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 41.3
+              },
+              {
+                "playerName": "Eduard Bazardo",
+                "playerKey": "fg:20997",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 40.3
+              },
+              {
+                "playerName": "Alex Hoppe",
+                "playerKey": "fg:31880",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 40,
+                "pitchesLast6": 49,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 64.3
+              },
+              {
+                "playerName": "Nick Davila",
+                "playerKey": "fg:27741",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": true,
+                "stress": 56.4
+              },
+              {
+                "playerName": "Gabe Speier",
+                "playerKey": "fg:17170",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 5,
+                "pitchesLast6": 17,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 18.3
+              },
+              {
+                "playerName": "Michael Rucker",
+                "playerKey": "fg:19454",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 9,
+                "pitchesLast6": 9,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 43.5
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "nationals",
+            "teamAbbr": "WSN",
+            "teamName": "Washington Nationals",
+            "stressScore": 74,
+            "tag": "taxed",
+            "topPitchesLast3": 34,
+            "topPitchesLast6": 143,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Clayton Beeter CL",
+              "Orlando Ribalta SU8 11p/3d 1 uses/3d",
+              "Brad Lord SU7 23p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Washington Nationals leverage relief looks taxed: 34 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Brad Lord (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Clayton Beeter",
+                "playerKey": "fg:27494",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 16.8
+              },
+              {
+                "playerName": "Orlando Ribalta",
+                "playerKey": "fg:26247",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 11,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 37.8
+              },
+              {
+                "playerName": "Brad Lord",
+                "playerKey": "fg:31972",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 23,
+                "pitchesLast6": 80,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 58.4
+              },
+              {
+                "playerName": "PJ Poulin",
+                "playerKey": "fg:23394",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": true,
+                "stress": 49.8
+              },
+              {
+                "playerName": "Richard Lovelady",
+                "playerKey": "fg:19337",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 20,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 35.5
+              },
+              {
+                "playerName": "Gus Varland",
+                "playerKey": "fg:24737",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 34.5
+              },
+              {
+                "playerName": "Mitchell Parker",
+                "playerKey": "fg:27636",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 34,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS",
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 8.5
+              },
+              {
+                "playerName": "Paxton Schultz",
+                "playerKey": "fg:25501",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 23,
+                "pitchesLast6": 66,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 44.9
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "new-york-yankees-toronto-blue-jays": {
+        "gamePk": 822801,
+        "gameDate": "2026-06-14",
+        "awayTeam": "New York Yankees",
+        "homeTeam": "Toronto Blue Jays",
+        "away": {
+          "bullpen": {
+            "teamSlug": "yankees",
+            "teamAbbr": "NYY",
+            "teamName": "New York Yankees",
+            "stressScore": 82,
+            "tag": "taxed",
+            "topPitchesLast3": 72,
+            "topPitchesLast6": 153,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "David Bednar CL 13p/3d 1 uses/3d",
+              "Fernando Cruz SU8 47p/3d 2 uses/3d",
+              "Brent Headrick SU7 12p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "New York Yankees leverage relief looks taxed: 72 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Fernando Cruz (SU8)."
+            ],
+            "players": [
+              {
+                "playerName": "David Bednar",
+                "playerKey": "fg:19569",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 40,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 40.4
+              },
+              {
+                "playerName": "Fernando Cruz",
+                "playerKey": "fg:7048",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 47,
+                "pitchesLast6": 72,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 85.6
+              },
+              {
+                "playerName": "Brent Headrick",
+                "playerKey": "fg:27702",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 12,
+                "pitchesLast6": 41,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 39.9
+              },
+              {
+                "playerName": "Jake Bird",
+                "playerKey": "fg:21267",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 20,
+                "pitchesLast6": 52,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 39
+              },
+              {
+                "playerName": "Camilo Doval",
+                "playerKey": "fg:21992",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 40,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 34.4
+              },
+              {
+                "playerName": "Ryan Yarbrough",
+                "playerKey": "fg:16502",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 9.8
+              },
+              {
+                "playerName": "Tim Hill",
+                "playerKey": "fg:16814",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 12,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 3
+              },
+              {
+                "playerName": "Paul Blackburn",
+                "playerKey": "fg:14739",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 9.5
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "blue-jays",
+            "teamAbbr": "TOR",
+            "teamName": "Toronto Blue Jays",
+            "stressScore": 85,
+            "tag": "taxed",
+            "topPitchesLast3": 58,
+            "topPitchesLast6": 124,
+            "taxedArmCount": 2,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Louis Varland CL 29p/3d 2 uses/3d",
+              "Tyler Rogers SU8 29p/3d 2 uses/3d",
+              "Jeff Hoffman SU7"
+            ],
+            "reasons": [
+              "Toronto Blue Jays leverage relief looks taxed: 58 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Louis Varland (CL), Tyler Rogers (SU8)."
+            ],
+            "players": [
+              {
+                "playerName": "Louis Varland",
+                "playerKey": "fg:27691",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 29,
+                "pitchesLast6": 45,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W",
+                  "Sv",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 64.5
+              },
+              {
+                "playerName": "Tyler Rogers",
+                "playerKey": "fg:15541",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 29,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 64
+              },
+              {
+                "playerName": "Jeff Hoffman",
+                "playerKey": "fg:17432",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 19
+              },
+              {
+                "playerName": "Braydon Fisher",
+                "playerKey": "fg:24609",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 26,
+                "pitchesLast6": 53,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 44.1
+              },
+              {
+                "playerName": "Mason Fluharty",
+                "playerKey": "fg:31553",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 13,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 29.9
+              },
+              {
+                "playerName": "Tommy Nance",
+                "playerKey": "fg:19178",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 6.8
+              },
+              {
+                "playerName": "Spencer Miles",
+                "playerKey": "fg:31621",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 17,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 4.3
+              },
+              {
+                "playerName": "Simeon Woods Richardson",
+                "playerKey": "fg:24494",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 48,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 12
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "arizona-diamondbacks-cincinnati-reds": {
+        "gamePk": 824506,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Arizona Diamondbacks",
+        "homeTeam": "Cincinnati Reds",
+        "away": {
+          "bullpen": {
+            "teamSlug": "diamondbacks",
+            "teamAbbr": "ARI",
+            "teamName": "Arizona Diamondbacks",
+            "stressScore": 71,
+            "tag": "taxed",
+            "topPitchesLast3": 64,
+            "topPitchesLast6": 77,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Paul Sewald CL 29p/3d 2 uses/3d",
+              "Kevin Ginkel SU8 20p/3d 1 uses/3d",
+              "Juan Morillo SU7 15p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Arizona Diamondbacks leverage relief looks taxed: 64 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Paul Sewald (CL)."
+            ],
+            "players": [
+              {
+                "playerName": "Paul Sewald",
+                "playerKey": "fg:13892",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 29,
+                "pitchesLast6": 29,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 60.5
+              },
+              {
+                "playerName": "Kevin Ginkel",
+                "playerKey": "fg:19876",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 20,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 43
+              },
+              {
+                "playerName": "Juan Morillo",
+                "playerKey": "fg:21924",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 20,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 37
+              },
+              {
+                "playerName": "Taylor Clarke",
+                "playerKey": "fg:17611",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 36,
+                "pitchesLast6": 58,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 53.3
+              },
+              {
+                "playerName": "Ryan Thompson",
+                "playerKey": "fg:16647",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 31.2
+              },
+              {
+                "playerName": "Brandyn Garcia",
+                "playerKey": "fg:33568",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 30
+              },
+              {
+                "playerName": "Jonathan Loáisiga",
+                "playerKey": "fg:19753",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 11,
+                "pitchesLast6": 17,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 23.1
+              },
+              {
+                "playerName": "Drey Jameson",
+                "playerKey": "fg:26260",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 7
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "reds",
+            "teamAbbr": "CIN",
+            "teamName": "Cincinnati Reds",
+            "stressScore": 73,
+            "tag": "taxed",
+            "topPitchesLast3": 63,
+            "topPitchesLast6": 131,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Tony Santillan CL 14p/3d 1 uses/3d",
+              "Brock Burke SU8 28p/3d 1 uses/3d",
+              "Tejay Antone SU7 21p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Cincinnati Reds leverage relief looks taxed: 63 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Tony Santillan",
+                "playerKey": "fg:19926",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 14,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "BS",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 41
+              },
+              {
+                "playerName": "Brock Burke",
+                "playerKey": "fg:17968",
+                "role": "SU8",
+                "throws": "L",
+                "pitchesLast3": 28,
+                "pitchesLast6": 42,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 52.9
+              },
+              {
+                "playerName": "Tejay Antone",
+                "playerKey": "fg:16233",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "B",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 49.3
+              },
+              {
+                "playerName": "Chase Petty",
+                "playerKey": "fg:30170",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 26,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L",
+                  "W"
+                ],
+                "unavailable": true,
+                "stress": 65.6
+              },
+              {
+                "playerName": "Zach Maxwell",
+                "playerKey": "fg:31610",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 32,
+                "pitchesLast6": 65,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 51.9
+              },
+              {
+                "playerName": "Caleb Ferguson",
+                "playerKey": "fg:19349",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 20,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 35.5
+              },
+              {
+                "playerName": "Sam Moll",
+                "playerKey": "fg:14874",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 13,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 3.3
+              },
+              {
+                "playerName": "Chris Paddack",
+                "playerKey": "fg:20099",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": false,
+                "stress": 0
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "detroit-tigers-cleveland-guardians": {
+        "gamePk": 824424,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Detroit Tigers",
+        "homeTeam": "Cleveland Guardians",
+        "away": {
+          "bullpen": {
+            "teamSlug": "tigers",
+            "teamAbbr": "DET",
+            "teamName": "Detroit Tigers",
+            "stressScore": 69,
+            "tag": "watch",
+            "topPitchesLast3": 24,
+            "topPitchesLast6": 46,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Kenley Jansen CL 9p/3d 1 uses/3d override",
+              "Will Vest SU8",
+              "Kyle Finnegan SU7 15p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Detroit Tigers leverage relief is watch: 24 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Kenley Jansen (CL)."
+            ],
+            "players": [
+              {
+                "playerName": "Kenley Jansen",
+                "playerKey": "fg:3096",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 9,
+                "pitchesLast6": 9,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 53.5
+              },
+              {
+                "playerName": "Will Vest",
+                "playerKey": "fg:19769",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": false,
+                "stress": 10
+              },
+              {
+                "playerName": "Kyle Finnegan",
+                "playerKey": "fg:15009",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 37,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 41.3
+              },
+              {
+                "playerName": "Tyler Holton",
+                "playerKey": "fg:26231",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 31,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 56.6
+              },
+              {
+                "playerName": "Drew Anderson",
+                "playerKey": "fg:15130",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 36.3
+              },
+              {
+                "playerName": "Drew Sommers",
+                "playerKey": "fg:32026",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 30
+              },
+              {
+                "playerName": "Enmanuel De Jesus",
+                "playerKey": "fg:18554",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 3.8
+              },
+              {
+                "playerName": "Jacob Waguespack",
+                "playerKey": "fg:18318",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 20,
+                "pitchesLast6": 20,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 55
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "guardians",
+            "teamAbbr": "CLE",
+            "teamName": "Cleveland Guardians",
+            "stressScore": 100,
+            "tag": "taxed",
+            "topPitchesLast3": 74,
+            "topPitchesLast6": 144,
+            "taxedArmCount": 2,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Cade Smith CL 44p/3d 2 uses/3d",
+              "Hunter Gaddis SU8 30p/3d 2 uses/3d",
+              "Shawn Armstrong SU7"
+            ],
+            "reasons": [
+              "Cleveland Guardians leverage relief looks taxed: 74 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Cade Smith (CL), Hunter Gaddis (SU8)."
+            ],
+            "players": [
+              {
+                "playerName": "Cade Smith",
+                "playerKey": "fg:27867",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 44,
+                "pitchesLast6": 66,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 81.7
+              },
+              {
+                "playerName": "Hunter Gaddis",
+                "playerKey": "fg:25636",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 30,
+                "pitchesLast6": 53,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "BS",
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 67.3
+              },
+              {
+                "playerName": "Shawn Armstrong",
+                "playerKey": "fg:12857",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 16.3
+              },
+              {
+                "playerName": "Colin Holderman",
+                "playerKey": "fg:22361",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 45,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 33.3
+              },
+              {
+                "playerName": "Tim Herrin",
+                "playerKey": "fg:25139",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 13,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "L",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 32.2
+              },
+              {
+                "playerName": "Daniel Espino",
+                "playerKey": "daniel espino",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              },
+              {
+                "playerName": "Will Dion",
+                "playerKey": "fg:30061",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 7.8
+              },
+              {
+                "playerName": "Matt Festa",
+                "playerKey": "fg:19330",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 8
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "atlanta-braves-new-york-mets": {
+        "gamePk": 823615,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Atlanta Braves",
+        "homeTeam": "New York Mets",
+        "away": {
+          "bullpen": {
+            "teamSlug": "braves",
+            "teamAbbr": "ATL",
+            "teamName": "Atlanta Braves",
+            "stressScore": 66,
+            "tag": "watch",
+            "topPitchesLast3": 37,
+            "topPitchesLast6": 71,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Raisel Iglesias CL 16p/3d 1 uses/3d",
+              "Robert Suarez SU8 14p/3d 1 uses/3d",
+              "Dylan Lee SU7 7p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Atlanta Braves leverage relief is watch: 37 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Raisel Iglesias",
+                "playerKey": "fg:17130",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 40,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 42.8
+              },
+              {
+                "playerName": "Robert Suarez",
+                "playerKey": "fg:30115",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 14,
+                "pitchesLast6": 21,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 36.5
+              },
+              {
+                "playerName": "Dylan Lee",
+                "playerKey": "fg:19996",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 7,
+                "pitchesLast6": 10,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 28.1
+              },
+              {
+                "playerName": "James Karinchak",
+                "playerKey": "fg:20151",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 19,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 28.8
+              },
+              {
+                "playerName": "Didier Fuentes",
+                "playerKey": "fg:30661",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 26,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 26.9
+              },
+              {
+                "playerName": "Dylan Dodd",
+                "playerKey": "fg:29928",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 7.8
+              },
+              {
+                "playerName": "Reynaldo López",
+                "playerKey": "fg:16400",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": false,
+                "stress": 0
+              },
+              {
+                "playerName": "Anthony Molina",
+                "playerKey": "fg:26952",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "mets",
+            "teamAbbr": "NYM",
+            "teamName": "New York Mets",
+            "stressScore": 100,
+            "tag": "taxed",
+            "topPitchesLast3": 102,
+            "topPitchesLast6": 102,
+            "taxedArmCount": 2,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Devin Williams CL 49p/3d 2 uses/3d",
+              "Luke Weaver SU8 11p/3d 1 uses/3d",
+              "Brooks Raley SU7 42p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "New York Mets leverage relief looks taxed: 102 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Devin Williams (CL), Brooks Raley (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Devin Williams",
+                "playerKey": "fg:15816",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 49,
+                "pitchesLast6": 49,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 81.5
+              },
+              {
+                "playerName": "Luke Weaver",
+                "playerKey": "fg:16918",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 11,
+                "pitchesLast6": 11,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 31.6
+              },
+              {
+                "playerName": "Brooks Raley",
+                "playerKey": "fg:10061",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 42,
+                "pitchesLast6": 42,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 74.1
+              },
+              {
+                "playerName": "Austin Warren",
+                "playerKey": "fg:24937",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 40,
+                "pitchesLast6": 73,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 60.3
+              },
+              {
+                "playerName": "Daniel Duarte",
+                "playerKey": "fg:17480",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 13,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 47.7
+              },
+              {
+                "playerName": "Cionel Pérez",
+                "playerKey": "fg:19614",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 31.5
+              },
+              {
+                "playerName": "Huascar Brazobán",
+                "playerKey": "fg:6107",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 19,
+                "pitchesLast6": 19,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 30
+              },
+              {
+                "playerName": "A.J. Minter",
+                "playerKey": "fg:18655",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 14,
+                "pitchesLast6": 14,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 24.7
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "houston-astros-kansas-city-royals": {
+        "gamePk": 824099,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Houston Astros",
+        "homeTeam": "Kansas City Royals",
+        "away": {
+          "bullpen": {
+            "teamSlug": "astros",
+            "teamAbbr": "HOU",
+            "teamName": "Houston Astros",
+            "stressScore": 77,
+            "tag": "taxed",
+            "topPitchesLast3": 65,
+            "topPitchesLast6": 141,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Josh Hader CL 20p/3d 1 uses/3d",
+              "Bryan King SU8 18p/3d 1 uses/3d",
+              "Enyel De Los Santos SU7 27p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Houston Astros leverage relief looks taxed: 65 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Enyel De Los Santos (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Josh Hader",
+                "playerKey": "fg:14212",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 20,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 46.8
+              },
+              {
+                "playerName": "Bryan King",
+                "playerKey": "fg:25890",
+                "role": "SU8",
+                "throws": "L",
+                "pitchesLast3": 18,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 42.7
+              },
+              {
+                "playerName": "Enyel De Los Santos",
+                "playerKey": "fg:18403",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 27,
+                "pitchesLast6": 65,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 57.9
+              },
+              {
+                "playerName": "Steven Okert",
+                "playerKey": "fg:13580",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 28,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 39.4
+              },
+              {
+                "playerName": "Nate Pearson",
+                "playerKey": "fg:20160",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 25.8
+              },
+              {
+                "playerName": "Alimber Santa",
+                "playerKey": "fg:28846",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 6.8
+              },
+              {
+                "playerName": "Bryan Abreu",
+                "playerKey": "fg:16609",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 3.8
+              },
+              {
+                "playerName": "AJ Blubaugh",
+                "playerKey": "fg:31764",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 38,
+                "pitchesLast6": 72,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 58.4
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "royals",
+            "teamAbbr": "KCR",
+            "teamName": "Kansas City Royals",
+            "stressScore": 100,
+            "tag": "taxed",
+            "topPitchesLast3": 87,
+            "topPitchesLast6": 184,
+            "taxedArmCount": 2,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Alex Lange CL 31p/3d 1 uses/3d",
+              "Lucas Erceg SU8 43p/3d 1 uses/3d",
+              "Daniel Lynch IV SU7 13p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Kansas City Royals leverage relief looks taxed: 87 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Alex Lange (CL), Lucas Erceg (SU8)."
+            ],
+            "players": [
+              {
+                "playerName": "Alex Lange",
+                "playerKey": "fg:19883",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 31,
+                "pitchesLast6": 82,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "L",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 65.3
+              },
+              {
+                "playerName": "Lucas Erceg",
+                "playerKey": "fg:19360",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 43,
+                "pitchesLast6": 59,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 69.2
+              },
+              {
+                "playerName": "Daniel Lynch IV",
+                "playerKey": "fg:21537",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 13,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "BS",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 41.2
+              },
+              {
+                "playerName": "Matt Strahm",
+                "playerKey": "fg:13799",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 22,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "BS",
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 48.4
+              },
+              {
+                "playerName": "Eli Morgan",
+                "playerKey": "fg:20203",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 13,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 47.7
+              },
+              {
+                "playerName": "John Schreiber",
+                "playerKey": "fg:20020",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 28,
+                "pitchesLast6": 56,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 46.4
+              },
+              {
+                "playerName": "Beck Way",
+                "playerKey": "fg:27877",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 32,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 43.6
+              },
+              {
+                "playerName": "Steven Cruz",
+                "playerKey": "fg:23165",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 39.3
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "st-louis-cardinals-minnesota-twins": {
+        "gamePk": 823693,
+        "gameDate": "2026-06-14",
+        "awayTeam": "St. Louis Cardinals",
+        "homeTeam": "Minnesota Twins",
+        "away": {
+          "bullpen": {
+            "teamSlug": "cardinals",
+            "teamAbbr": "STL",
+            "teamName": "St. Louis Cardinals",
+            "stressScore": 98,
+            "tag": "taxed",
+            "topPitchesLast3": 74,
+            "topPitchesLast6": 88,
+            "taxedArmCount": 2,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Riley O'Brien CL 31p/3d 1 uses/3d",
+              "George Soriano SU8 16p/3d 2 uses/3d",
+              "JoJo Romero SU7 27p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "St. Louis Cardinals leverage relief looks taxed: 74 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: George Soriano (SU8), JoJo Romero (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Riley O'Brien",
+                "playerKey": "fg:20348",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 31,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 52.6
+              },
+              {
+                "playerName": "George Soriano",
+                "playerKey": "fg:21863",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 16,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 46.8
+              },
+              {
+                "playerName": "JoJo Romero",
+                "playerKey": "fg:19574",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 27,
+                "pitchesLast6": 41,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 61.9
+              },
+              {
+                "playerName": "Ryne Stanek",
+                "playerKey": "fg:15947",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 32,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 53.6
+              },
+              {
+                "playerName": "Gordon Graceffo",
+                "playerKey": "fg:29519",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 22,
+                "pitchesLast6": 22,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 43.1
+              },
+              {
+                "playerName": "Matt Svanson",
+                "playerKey": "fg:29629",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 31.8
+              },
+              {
+                "playerName": "Justin Bruihl",
+                "playerKey": "fg:23779",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 10,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 25.8
+              },
+              {
+                "playerName": "Chris Roycroft",
+                "playerKey": "fg:31261",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 14,
+                "pitchesLast6": 14,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 48.7
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "twins",
+            "teamAbbr": "MIN",
+            "teamName": "Minnesota Twins",
+            "stressScore": 85,
+            "tag": "taxed",
+            "topPitchesLast3": 70,
+            "topPitchesLast6": 197,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Travis Adams CL 37p/3d 1 uses/3d",
+              "Yoendrys Gómez CL 15p/3d 1 uses/3d",
+              "Andrew Morris CL 9p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Minnesota Twins leverage relief looks taxed: 70 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Travis Adams (CL)."
+            ],
+            "players": [
+              {
+                "playerName": "Travis Adams",
+                "playerKey": "fg:30180",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 37,
+                "pitchesLast6": 68,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 66.6
+              },
+              {
+                "playerName": "Yoendrys Gómez",
+                "playerKey": "fg:22872",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 42,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 42.5
+              },
+              {
+                "playerName": "Andrew Morris",
+                "playerKey": "fg:31891",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 9,
+                "pitchesLast6": 48,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 39.2
+              },
+              {
+                "playerName": "Anthony Banda",
+                "playerKey": "fg:14706",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 9,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 37
+              },
+              {
+                "playerName": "Justin Lawrence",
+                "playerKey": "fg:17639",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 24,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 41.7
+              },
+              {
+                "playerName": "Taylor Rogers",
+                "playerKey": "fg:13449",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 22,
+                "pitchesLast6": 53,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 40.9
+              },
+              {
+                "playerName": "Eric Orze",
+                "playerKey": "fg:27626",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 32.6
+              },
+              {
+                "playerName": "Cody Laweryson",
+                "playerKey": "fg:26429",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 32,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 46.6
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "los-angeles-dodgers-chicago-white-sox": {
+        "gamePk": 824586,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Los Angeles Dodgers",
+        "homeTeam": "Chicago White Sox",
+        "away": {
+          "bullpen": {
+            "teamSlug": "dodgers",
+            "teamAbbr": "LAD",
+            "teamName": "Los Angeles Dodgers",
+            "stressScore": 67,
+            "tag": "watch",
+            "topPitchesLast3": 52,
+            "topPitchesLast6": 99,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Tanner Scott CL 18p/3d 1 uses/3d",
+              "Will Klein SU8 22p/3d 1 uses/3d",
+              "Alex Vesia SU7 12p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "Los Angeles Dodgers leverage relief is watch: 52 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Alex Vesia (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Tanner Scott",
+                "playerKey": "fg:17586",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 18,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 43.2
+              },
+              {
+                "playerName": "Will Klein",
+                "playerKey": "fg:27787",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 22,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 48.4
+              },
+              {
+                "playerName": "Alex Vesia",
+                "playerKey": "fg:25007",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 12,
+                "pitchesLast6": 21,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 44.9
+              },
+              {
+                "playerName": "Edgardo Henriquez",
+                "playerKey": "fg:26944",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 31,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 52.6
+              },
+              {
+                "playerName": "Blake Treinen",
+                "playerKey": "fg:12572",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 34.6
+              },
+              {
+                "playerName": "Jack Dreyer",
+                "playerKey": "fg:30249",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 11,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 25.6
+              },
+              {
+                "playerName": "Kyle Hurt",
+                "playerKey": "fg:27514",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 20,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 5
+              },
+              {
+                "playerName": "Jonathan Hernández",
+                "playerKey": "fg:17464",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 46,
+                "pitchesLast6": 46,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 58.3
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "white-sox",
+            "teamAbbr": "CHW",
+            "teamName": "Chicago White Sox",
+            "stressScore": 45,
+            "tag": "stable",
+            "topPitchesLast3": 7,
+            "topPitchesLast6": 98,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Bryan Hudson CL 7p/3d 1 uses/3d",
+              "Sean Newcomb CL",
+              "Seranthony Domínguez CL"
+            ],
+            "reasons": [
+              "Chicago White Sox leverage relief is stable: 7 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Bryan Hudson",
+                "playerKey": "fg:19924",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 7,
+                "pitchesLast6": 23,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 31.4
+              },
+              {
+                "playerName": "Sean Newcomb",
+                "playerKey": "fg:16943",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 16.8
+              },
+              {
+                "playerName": "Seranthony Domínguez",
+                "playerKey": "fg:19249",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 16.8
+              },
+              {
+                "playerName": "Grant Taylor",
+                "playerKey": "fg:33927",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 21,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 15.3
+              },
+              {
+                "playerName": "Joe Rock",
+                "playerKey": "fg:30016",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 60,
+                "pitchesLast6": 60,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 73
+              },
+              {
+                "playerName": "Chris Murphy",
+                "playerKey": "fg:26214",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 14,
+                "pitchesLast6": 14,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 48.7
+              },
+              {
+                "playerName": "Brandon Eisert",
+                "playerKey": "fg:27668",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 27,
+                "pitchesLast6": 48,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 43.6
+              },
+              {
+                "playerName": "Tyler Davis",
+                "playerKey": "fg:34847",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 9,
+                "pitchesLast6": 18,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 21.7
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "philadelphia-phillies-milwaukee-brewers": {
+        "gamePk": 823777,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Philadelphia Phillies",
+        "homeTeam": "Milwaukee Brewers",
+        "away": {
+          "bullpen": {
+            "teamSlug": "phillies",
+            "teamAbbr": "PHI",
+            "teamName": "Philadelphia Phillies",
+            "stressScore": 62,
+            "tag": "watch",
+            "topPitchesLast3": 60,
+            "topPitchesLast6": 132,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Jhoan Duran CL 11p/3d 1 uses/3d",
+              "Brad Keller SU8 32p/3d 1 uses/3d",
+              "Orion Kerkering SU7 17p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Philadelphia Phillies leverage relief is watch: 60 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Jhoan Duran",
+                "playerKey": "fg:21029",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 11,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 4,
+                "flags": [
+                  "Sv",
+                  "B",
+                  "L",
+                  "Sv",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 38.3
+              },
+              {
+                "playerName": "Brad Keller",
+                "playerKey": "fg:15734",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 32,
+                "pitchesLast6": 55,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 59.4
+              },
+              {
+                "playerName": "Orion Kerkering",
+                "playerKey": "fg:31776",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 17,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 43.4
+              },
+              {
+                "playerName": "Tim Mayza",
+                "playerKey": "fg:15042",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 27,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 48.4
+              },
+              {
+                "playerName": "Tanner Banks",
+                "playerKey": "fg:16990",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 28,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 39.4
+              },
+              {
+                "playerName": "José Alvarado",
+                "playerKey": "fg:17780",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 46,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 33.5
+              },
+              {
+                "playerName": "Jonathan Bowlan",
+                "playerKey": "fg:24607",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 4,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 1
+              },
+              {
+                "playerName": "Chase Shugart",
+                "playerKey": "fg:21544",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 12,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 27.9
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "brewers",
+            "teamAbbr": "MIL",
+            "teamName": "Milwaukee Brewers",
+            "stressScore": 50,
+            "tag": "stable",
+            "topPitchesLast3": 16,
+            "topPitchesLast6": 104,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Trevor Megill CL 16p/3d 1 uses/3d",
+              "Abner Uribe SU8",
+              "Aaron Ashby SU7"
+            ],
+            "reasons": [
+              "Milwaukee Brewers leverage relief is stable: 16 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Trevor Megill",
+                "playerKey": "fg:17722",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 33,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 41.1
+              },
+              {
+                "playerName": "Abner Uribe",
+                "playerKey": "fg:25327",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 13.8
+              },
+              {
+                "playerName": "Aaron Ashby",
+                "playerKey": "fg:23550",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 56,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 24
+              },
+              {
+                "playerName": "Drew Rom",
+                "playerKey": "fg:24602",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 32,
+                "pitchesLast6": 57,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 49.9
+              },
+              {
+                "playerName": "Joel Kuhnel",
+                "playerKey": "fg:19995",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 12,
+                "pitchesLast6": 55,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 33.4
+              },
+              {
+                "playerName": "Craig Yoho",
+                "playerKey": "fg:33248",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              },
+              {
+                "playerName": "Grant Anderson",
+                "playerKey": "fg:20546",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 7
+              },
+              {
+                "playerName": "Chad Patrick",
+                "playerKey": "fg:30113",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 39,
+                "pitchesLast6": 55,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "Sv",
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 55
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "colorado-rockies-athletics": {
+        "gamePk": 824994,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Colorado Rockies",
+        "homeTeam": "Athletics",
+        "away": {
+          "bullpen": {
+            "teamSlug": "rockies",
+            "teamAbbr": "COL",
+            "teamName": "Colorado Rockies",
+            "stressScore": 86,
+            "tag": "taxed",
+            "topPitchesLast3": 65,
+            "topPitchesLast6": 125,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Antonio Senzatela CL",
+              "Juan Mejia SU8 18p/3d 1 uses/3d",
+              "Seth Halvorsen SU7 47p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "Colorado Rockies leverage relief looks taxed: 65 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Seth Halvorsen (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Antonio Senzatela",
+                "playerKey": "fg:15488",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "B",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 19
+              },
+              {
+                "playerName": "Juan Mejia",
+                "playerKey": "fg:23237",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 18,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 41.4
+              },
+              {
+                "playerName": "Seth Halvorsen",
+                "playerKey": "fg:33294",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 47,
+                "pitchesLast6": 61,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 82.9
+              },
+              {
+                "playerName": "Zach Agnos",
+                "playerKey": "fg:31552",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 60,
+                "pitchesLast6": 60,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 73
+              },
+              {
+                "playerName": "Jaden Hill",
+                "playerKey": "fg:30250",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 30,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 30.3
+              },
+              {
+                "playerName": "Brennan Bernardino",
+                "playerKey": "fg:16835",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 9,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 26
+              },
+              {
+                "playerName": "Eiberson Castellano",
+                "playerKey": "eiberson castellano",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              },
+              {
+                "playerName": "Blas Castaño",
+                "playerKey": "fg:26117",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 46,
+                "pitchesLast6": 46,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 58.3
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "athletics",
+            "teamAbbr": "ATH",
+            "teamName": "Athletics",
+            "stressScore": 74,
+            "tag": "taxed",
+            "topPitchesLast3": 52,
+            "topPitchesLast6": 169,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Hogan Harris CL 21p/3d 1 uses/3d",
+              "Elvis Alvarado CL 19p/3d 1 uses/3d",
+              "Mason Barnett CL 12p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Athletics leverage relief looks taxed: 52 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Hogan Harris (CL)."
+            ],
+            "players": [
+              {
+                "playerName": "Hogan Harris",
+                "playerKey": "fg:21520",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 21,
+                "pitchesLast6": 73,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "BS",
+                  "H",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 55.1
+              },
+              {
+                "playerName": "Elvis Alvarado",
+                "playerKey": "fg:21662",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 19,
+                "pitchesLast6": 53,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "Sv",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 48.5
+              },
+              {
+                "playerName": "Mason Barnett",
+                "playerKey": "fg:31741",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 12,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 40.4
+              },
+              {
+                "playerName": "Scott Barlow",
+                "playerKey": "fg:14993",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 12,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 30.6
+              },
+              {
+                "playerName": "Mark Leiter Jr.",
+                "playerKey": "fg:15551",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 13,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 29.4
+              },
+              {
+                "playerName": "Justin Sterner",
+                "playerKey": "fg:27694",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 22,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 27.5
+              },
+              {
+                "playerName": "Luis Medina",
+                "playerKey": "fg:21649",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 50,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 12.5
+              },
+              {
+                "playerName": "José Suarez",
+                "playerKey": "fg:19911",
+                "role": "LR",
+                "throws": "L",
+                "pitchesLast3": 22,
+                "pitchesLast6": 61,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "L",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 42.9
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "chicago-cubs-san-francisco-giants": {
+        "gamePk": 823212,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Chicago Cubs",
+        "homeTeam": "San Francisco Giants",
+        "away": {
+          "bullpen": {
+            "teamSlug": "cubs",
+            "teamAbbr": "CHC",
+            "teamName": "Chicago Cubs",
+            "stressScore": 40,
+            "tag": "stable",
+            "topPitchesLast3": 23,
+            "topPitchesLast6": 73,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Daniel Palencia CL",
+              "Jacob Webb SU8",
+              "Caleb Thielbar SU7 23p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Chicago Cubs leverage relief is stable: 23 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Daniel Palencia",
+                "playerKey": "fg:27914",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 18,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 14.5
+              },
+              {
+                "playerName": "Jacob Webb",
+                "playerKey": "fg:19274",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 12,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 13
+              },
+              {
+                "playerName": "Caleb Thielbar",
+                "playerKey": "fg:10078",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 23,
+                "pitchesLast6": 43,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 49.2
+              },
+              {
+                "playerName": "Phil Maton",
+                "playerKey": "fg:18064",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 29,
+                "pitchesLast6": 41,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 53.5
+              },
+              {
+                "playerName": "Hoby Milner",
+                "playerKey": "fg:13346",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 24,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 48.2
+              },
+              {
+                "playerName": "Trent Thornton",
+                "playerKey": "fg:17948",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 26,
+                "pitchesLast6": 26,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 37.3
+              },
+              {
+                "playerName": "Ryan Rolison",
+                "playerKey": "fg:22200",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 17,
+                "pitchesLast6": 37,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 32.9
+              },
+              {
+                "playerName": "Ethan Roberts",
+                "playerKey": "fg:24930",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 20,
+                "pitchesLast6": 36,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 35
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "giants",
+            "teamAbbr": "SFG",
+            "teamName": "San Francisco Giants",
+            "stressScore": 59,
+            "tag": "watch",
+            "topPitchesLast3": 24,
+            "topPitchesLast6": 60,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 2,
+            "keyArms": [
+              "Caleb Kilian CL 15p/3d 1 uses/3d",
+              "Keaton Winn SU8",
+              "Erik Miller SU7 9p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "San Francisco Giants leverage relief is watch: 24 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Caleb Kilian",
+                "playerKey": "fg:26213",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 15,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 35.8
+              },
+              {
+                "playerName": "Keaton Winn",
+                "playerKey": "fg:23499",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 22,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "B",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 15.5
+              },
+              {
+                "playerName": "Erik Miller",
+                "playerKey": "fg:26252",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 9,
+                "pitchesLast6": 23,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 33
+              },
+              {
+                "playerName": "Reiver Sanmartin",
+                "playerKey": "fg:19754",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 30,
+                "pitchesLast6": 61,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": true,
+                "stress": 73.3
+              },
+              {
+                "playerName": "Ryan Walker",
+                "playerKey": "fg:20423",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 27,
+                "pitchesLast6": 27,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": true,
+                "stress": 72.4
+              },
+              {
+                "playerName": "Sam Hentges",
+                "playerKey": "fg:18548",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 29,
+                "pitchesLast6": 55,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 57
+              },
+              {
+                "playerName": "Dylan Smith",
+                "playerKey": "fg:30145",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 22,
+                "pitchesLast6": 48,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 39.6
+              },
+              {
+                "playerName": "JT Brubaker",
+                "playerKey": "fg:17578",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 21,
+                "pitchesLast6": 44,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 37.8
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "tampa-bay-rays-los-angeles-angels": {
+        "gamePk": 824021,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Tampa Bay Rays",
+        "homeTeam": "Los Angeles Angels",
+        "away": {
+          "bullpen": {
+            "teamSlug": "rays",
+            "teamAbbr": "TBR",
+            "teamName": "Tampa Bay Rays",
+            "stressScore": 46,
+            "tag": "stable",
+            "topPitchesLast3": 10,
+            "topPitchesLast6": 93,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Bryan Baker CL",
+              "Kevin Kelly SU8",
+              "Garrett Cleavinger SU7 10p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Tampa Bay Rays leverage relief is stable: 10 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Bryan Baker",
+                "playerKey": "fg:19804",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 16.3
+              },
+              {
+                "playerName": "Kevin Kelly",
+                "playerKey": "fg:25679",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 22,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 15.5
+              },
+              {
+                "playerName": "Garrett Cleavinger",
+                "playerKey": "fg:17897",
+                "role": "SU7",
+                "throws": "L",
+                "pitchesLast3": 10,
+                "pitchesLast6": 46,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 39.5
+              },
+              {
+                "playerName": "Cole Sulser",
+                "playerKey": "fg:15256",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 39,
+                "pitchesLast6": 57,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 55.5
+              },
+              {
+                "playerName": "Craig Kimbrel",
+                "playerKey": "fg:6655",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 17,
+                "pitchesLast6": 17,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": true,
+                "stress": 51.9
+              },
+              {
+                "playerName": "Cam Booser",
+                "playerKey": "fg:16061",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 24,
+                "pitchesLast6": 34,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 37.7
+              },
+              {
+                "playerName": "Casey Legumina",
+                "playerKey": "fg:25921",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 14,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 3.5
+              },
+              {
+                "playerName": "Ian Seymour",
+                "playerKey": "fg:27932",
+                "role": "LR",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 55,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 13.8
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "angels",
+            "teamAbbr": "LAA",
+            "teamName": "Los Angeles Angels",
+            "stressScore": 43,
+            "tag": "stable",
+            "topPitchesLast3": 25,
+            "topPitchesLast6": 101,
+            "taxedArmCount": 0,
+            "unavailableArmCount": 0,
+            "keyArms": [
+              "Kirby Yates CL 9p/3d 1 uses/3d",
+              "Sam Bachman SU8",
+              "Chase Silseth SU7 16p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Los Angeles Angels leverage relief is stable: 25 high-leverage pitches over the last 3 days."
+            ],
+            "players": [
+              {
+                "playerName": "Kirby Yates",
+                "playerKey": "fg:9073",
+                "role": "CL",
+                "throws": "R",
+                "pitchesLast3": 9,
+                "pitchesLast6": 45,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "BS"
+                ],
+                "unavailable": false,
+                "stress": 38.5
+              },
+              {
+                "playerName": "Sam Bachman",
+                "playerKey": "fg:29754",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 16.3
+              },
+              {
+                "playerName": "Chase Silseth",
+                "playerKey": "fg:30074",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 31,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "BS",
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 40.6
+              },
+              {
+                "playerName": "Samy Natera Jr.",
+                "playerKey": "fg:31936",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 29,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 42.7
+              },
+              {
+                "playerName": "Brent Suter",
+                "playerKey": "fg:13942",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 16,
+                "pitchesLast6": 51,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 35.6
+              },
+              {
+                "playerName": "Ryan Zeferjahn",
+                "playerKey": "fg:25420",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 9,
+                "pitchesLast6": 55,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "W",
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 31
+              },
+              {
+                "playerName": "Drew Pomeranz",
+                "playerKey": "fg:11426",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 6,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 1.5
+              },
+              {
+                "playerName": "Mitch Farris",
+                "playerKey": "fg:33628",
+                "role": "LR",
+                "throws": "L",
+                "pitchesLast3": 48,
+                "pitchesLast6": 48,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 60.4
+              }
+            ]
+          }
+        },
+        "umpire": null
+      },
+      "texas-rangers-boston-red-sox": {
+        "gamePk": 824751,
+        "gameDate": "2026-06-14",
+        "awayTeam": "Texas Rangers",
+        "homeTeam": "Boston Red Sox",
+        "away": {
+          "bullpen": {
+            "teamSlug": "rangers",
+            "teamAbbr": "TEX",
+            "teamName": "Texas Rangers",
+            "stressScore": 73,
+            "tag": "taxed",
+            "topPitchesLast3": 45,
+            "topPitchesLast6": 91,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Jacob Latz CL 15p/3d 1 uses/3d",
+              "Jakob Junis SU8",
+              "Cole Winn SU7 30p/3d 2 uses/3d"
+            ],
+            "reasons": [
+              "Texas Rangers leverage relief looks taxed: 45 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Cole Winn (SU7)."
+            ],
+            "players": [
+              {
+                "playerName": "Jacob Latz",
+                "playerKey": "fg:21306",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 32,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "Sv",
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 40
+              },
+              {
+                "playerName": "Jakob Junis",
+                "playerKey": "fg:13619",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 21,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": false,
+                "stress": 15.3
+              },
+              {
+                "playerName": "Cole Winn",
+                "playerKey": "fg:22113",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 30,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H",
+                  "L"
+                ],
+                "unavailable": false,
+                "stress": 63.5
+              },
+              {
+                "playerName": "Robby Ahlstrom",
+                "playerKey": "fg:30167",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 33,
+                "pitchesLast6": 47,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [],
+                "unavailable": false,
+                "stress": 58.2
+              },
+              {
+                "playerName": "Peyton Gray",
+                "playerKey": "fg:25310",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 19,
+                "pitchesLast6": 39,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 35
+              },
+              {
+                "playerName": "Joe Ross",
+                "playerKey": "fg:12972",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 0,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 0,
+                "flags": [],
+                "unavailable": true,
+                "stress": 24
+              },
+              {
+                "playerName": "Tyler Alexander",
+                "playerKey": "fg:17735",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 0,
+                "pitchesLast6": 11,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 2.8
+              },
+              {
+                "playerName": "Cal Quantrill",
+                "playerKey": "fg:19312",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 38,
+                "pitchesLast6": 38,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 49.9
+              }
+            ]
+          }
+        },
+        "home": {
+          "bullpen": {
+            "teamSlug": "red-sox",
+            "teamAbbr": "BOS",
+            "teamName": "Boston Red Sox",
+            "stressScore": 71,
+            "tag": "taxed",
+            "topPitchesLast3": 42,
+            "topPitchesLast6": 78,
+            "taxedArmCount": 1,
+            "unavailableArmCount": 1,
+            "keyArms": [
+              "Aroldis Chapman CL 15p/3d 1 uses/3d",
+              "Garrett Whitlock SU8 11p/3d 1 uses/3d override",
+              "Justin Slaten SU7 16p/3d 1 uses/3d"
+            ],
+            "reasons": [
+              "Boston Red Sox leverage relief looks taxed: 42 high-leverage pitches over the last 3 days.",
+              "Taxed/limited arms: Garrett Whitlock (SU8)."
+            ],
+            "players": [
+              {
+                "playerName": "Aroldis Chapman",
+                "playerKey": "fg:10233",
+                "role": "CL",
+                "throws": "L",
+                "pitchesLast3": 15,
+                "pitchesLast6": 15,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 1,
+                "flags": [
+                  "Sv"
+                ],
+                "unavailable": false,
+                "stress": 35.8
+              },
+              {
+                "playerName": "Garrett Whitlock",
+                "playerKey": "fg:20191",
+                "role": "SU8",
+                "throws": "R",
+                "pitchesLast3": 11,
+                "pitchesLast6": 28,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [
+                  "W"
+                ],
+                "unavailable": true,
+                "stress": 59.8
+              },
+              {
+                "playerName": "Justin Slaten",
+                "playerKey": "fg:25648",
+                "role": "SU7",
+                "throws": "R",
+                "pitchesLast3": 16,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 41.6
+              },
+              {
+                "playerName": "Tyron Guerrero",
+                "playerKey": "fg:11691",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 30,
+                "pitchesLast6": 46,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 55.5
+              },
+              {
+                "playerName": "Danny Coulombe",
+                "playerKey": "fg:13293",
+                "role": "MID",
+                "throws": "L",
+                "pitchesLast3": 20,
+                "pitchesLast6": 42,
+                "usedDaysLast3": 2,
+                "usedDaysLast6": 3,
+                "flags": [
+                  "H"
+                ],
+                "unavailable": false,
+                "stress": 46.5
+              },
+              {
+                "playerName": "Tommy Kahnle",
+                "playerKey": "fg:11384",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 10,
+                "pitchesLast6": 25,
+                "usedDaysLast3": 1,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 24.3
+              },
+              {
+                "playerName": "Greg Weissert",
+                "playerKey": "fg:20375",
+                "role": "MID",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 20,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 2,
+                "flags": [],
+                "unavailable": false,
+                "stress": 5
+              },
+              {
+                "playerName": "Ryan Watson",
+                "playerKey": "fg:27853",
+                "role": "LR",
+                "throws": "R",
+                "pitchesLast3": 0,
+                "pitchesLast6": 35,
+                "usedDaysLast3": 0,
+                "usedDaysLast6": 1,
+                "flags": [],
+                "unavailable": false,
+                "stress": 8.8
+              }
+            ]
+          }
+        },
+        "umpire": null
+      }
+    },
+    "bullpenByTeamName": {
+      "los angeles angels": {
+        "teamSlug": "angels",
+        "teamAbbr": "LAA",
+        "teamName": "Los Angeles Angels",
+        "stressScore": 43,
+        "tag": "stable",
+        "topPitchesLast3": 25,
+        "topPitchesLast6": 101,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Kirby Yates CL 9p/3d 1 uses/3d",
+          "Sam Bachman SU8",
+          "Chase Silseth SU7 16p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Los Angeles Angels leverage relief is stable: 25 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Kirby Yates",
+            "playerKey": "fg:9073",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 45,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 38.5
+          },
+          {
+            "playerName": "Sam Bachman",
+            "playerKey": "fg:29754",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 16.3
+          },
+          {
+            "playerName": "Chase Silseth",
+            "playerKey": "fg:30074",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 40.6
+          },
+          {
+            "playerName": "Samy Natera Jr.",
+            "playerKey": "fg:31936",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 29,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 42.7
+          },
+          {
+            "playerName": "Brent Suter",
+            "playerKey": "fg:13942",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 16,
+            "pitchesLast6": 51,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35.6
+          },
+          {
+            "playerName": "Ryan Zeferjahn",
+            "playerKey": "fg:25420",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 31
+          },
+          {
+            "playerName": "Drew Pomeranz",
+            "playerKey": "fg:11426",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 6,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 1.5
+          },
+          {
+            "playerName": "Mitch Farris",
+            "playerKey": "fg:33628",
+            "role": "LR",
+            "throws": "L",
+            "pitchesLast3": 48,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 60.4
+          }
+        ]
+      },
+      "laa": {
+        "teamSlug": "angels",
+        "teamAbbr": "LAA",
+        "teamName": "Los Angeles Angels",
+        "stressScore": 43,
+        "tag": "stable",
+        "topPitchesLast3": 25,
+        "topPitchesLast6": 101,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Kirby Yates CL 9p/3d 1 uses/3d",
+          "Sam Bachman SU8",
+          "Chase Silseth SU7 16p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Los Angeles Angels leverage relief is stable: 25 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Kirby Yates",
+            "playerKey": "fg:9073",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 45,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 38.5
+          },
+          {
+            "playerName": "Sam Bachman",
+            "playerKey": "fg:29754",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 16.3
+          },
+          {
+            "playerName": "Chase Silseth",
+            "playerKey": "fg:30074",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 40.6
+          },
+          {
+            "playerName": "Samy Natera Jr.",
+            "playerKey": "fg:31936",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 29,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 42.7
+          },
+          {
+            "playerName": "Brent Suter",
+            "playerKey": "fg:13942",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 16,
+            "pitchesLast6": 51,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35.6
+          },
+          {
+            "playerName": "Ryan Zeferjahn",
+            "playerKey": "fg:25420",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 31
+          },
+          {
+            "playerName": "Drew Pomeranz",
+            "playerKey": "fg:11426",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 6,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 1.5
+          },
+          {
+            "playerName": "Mitch Farris",
+            "playerKey": "fg:33628",
+            "role": "LR",
+            "throws": "L",
+            "pitchesLast3": 48,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 60.4
+          }
+        ]
+      },
+      "houston astros": {
+        "teamSlug": "astros",
+        "teamAbbr": "HOU",
+        "teamName": "Houston Astros",
+        "stressScore": 77,
+        "tag": "taxed",
+        "topPitchesLast3": 65,
+        "topPitchesLast6": 141,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Josh Hader CL 20p/3d 1 uses/3d",
+          "Bryan King SU8 18p/3d 1 uses/3d",
+          "Enyel De Los Santos SU7 27p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Houston Astros leverage relief looks taxed: 65 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Enyel De Los Santos (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Josh Hader",
+            "playerKey": "fg:14212",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 46.8
+          },
+          {
+            "playerName": "Bryan King",
+            "playerKey": "fg:25890",
+            "role": "SU8",
+            "throws": "L",
+            "pitchesLast3": 18,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 42.7
+          },
+          {
+            "playerName": "Enyel De Los Santos",
+            "playerKey": "fg:18403",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 27,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 57.9
+          },
+          {
+            "playerName": "Steven Okert",
+            "playerKey": "fg:13580",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 39.4
+          },
+          {
+            "playerName": "Nate Pearson",
+            "playerKey": "fg:20160",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 25.8
+          },
+          {
+            "playerName": "Alimber Santa",
+            "playerKey": "fg:28846",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.8
+          },
+          {
+            "playerName": "Bryan Abreu",
+            "playerKey": "fg:16609",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 3.8
+          },
+          {
+            "playerName": "AJ Blubaugh",
+            "playerKey": "fg:31764",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 38,
+            "pitchesLast6": 72,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.4
+          }
+        ]
+      },
+      "hou": {
+        "teamSlug": "astros",
+        "teamAbbr": "HOU",
+        "teamName": "Houston Astros",
+        "stressScore": 77,
+        "tag": "taxed",
+        "topPitchesLast3": 65,
+        "topPitchesLast6": 141,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Josh Hader CL 20p/3d 1 uses/3d",
+          "Bryan King SU8 18p/3d 1 uses/3d",
+          "Enyel De Los Santos SU7 27p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Houston Astros leverage relief looks taxed: 65 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Enyel De Los Santos (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Josh Hader",
+            "playerKey": "fg:14212",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 46.8
+          },
+          {
+            "playerName": "Bryan King",
+            "playerKey": "fg:25890",
+            "role": "SU8",
+            "throws": "L",
+            "pitchesLast3": 18,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 42.7
+          },
+          {
+            "playerName": "Enyel De Los Santos",
+            "playerKey": "fg:18403",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 27,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 57.9
+          },
+          {
+            "playerName": "Steven Okert",
+            "playerKey": "fg:13580",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 39.4
+          },
+          {
+            "playerName": "Nate Pearson",
+            "playerKey": "fg:20160",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 25.8
+          },
+          {
+            "playerName": "Alimber Santa",
+            "playerKey": "fg:28846",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.8
+          },
+          {
+            "playerName": "Bryan Abreu",
+            "playerKey": "fg:16609",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 3.8
+          },
+          {
+            "playerName": "AJ Blubaugh",
+            "playerKey": "fg:31764",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 38,
+            "pitchesLast6": 72,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.4
+          }
+        ]
+      },
+      "athletics": {
+        "teamSlug": "athletics",
+        "teamAbbr": "ATH",
+        "teamName": "Athletics",
+        "stressScore": 74,
+        "tag": "taxed",
+        "topPitchesLast3": 52,
+        "topPitchesLast6": 169,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Hogan Harris CL 21p/3d 1 uses/3d",
+          "Elvis Alvarado CL 19p/3d 1 uses/3d",
+          "Mason Barnett CL 12p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Athletics leverage relief looks taxed: 52 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Hogan Harris (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Hogan Harris",
+            "playerKey": "fg:21520",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 21,
+            "pitchesLast6": 73,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "H",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 55.1
+          },
+          {
+            "playerName": "Elvis Alvarado",
+            "playerKey": "fg:21662",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 48.5
+          },
+          {
+            "playerName": "Mason Barnett",
+            "playerKey": "fg:31741",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 40.4
+          },
+          {
+            "playerName": "Scott Barlow",
+            "playerKey": "fg:14993",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 30.6
+          },
+          {
+            "playerName": "Mark Leiter Jr.",
+            "playerKey": "fg:15551",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 29.4
+          },
+          {
+            "playerName": "Justin Sterner",
+            "playerKey": "fg:27694",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 27.5
+          },
+          {
+            "playerName": "Luis Medina",
+            "playerKey": "fg:21649",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 12.5
+          },
+          {
+            "playerName": "José Suarez",
+            "playerKey": "fg:19911",
+            "role": "LR",
+            "throws": "L",
+            "pitchesLast3": 22,
+            "pitchesLast6": 61,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "L",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 42.9
+          }
+        ]
+      },
+      "ath": {
+        "teamSlug": "athletics",
+        "teamAbbr": "ATH",
+        "teamName": "Athletics",
+        "stressScore": 74,
+        "tag": "taxed",
+        "topPitchesLast3": 52,
+        "topPitchesLast6": 169,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Hogan Harris CL 21p/3d 1 uses/3d",
+          "Elvis Alvarado CL 19p/3d 1 uses/3d",
+          "Mason Barnett CL 12p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Athletics leverage relief looks taxed: 52 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Hogan Harris (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Hogan Harris",
+            "playerKey": "fg:21520",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 21,
+            "pitchesLast6": 73,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "H",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 55.1
+          },
+          {
+            "playerName": "Elvis Alvarado",
+            "playerKey": "fg:21662",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 48.5
+          },
+          {
+            "playerName": "Mason Barnett",
+            "playerKey": "fg:31741",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 40.4
+          },
+          {
+            "playerName": "Scott Barlow",
+            "playerKey": "fg:14993",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 30.6
+          },
+          {
+            "playerName": "Mark Leiter Jr.",
+            "playerKey": "fg:15551",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 29.4
+          },
+          {
+            "playerName": "Justin Sterner",
+            "playerKey": "fg:27694",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 27.5
+          },
+          {
+            "playerName": "Luis Medina",
+            "playerKey": "fg:21649",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 12.5
+          },
+          {
+            "playerName": "José Suarez",
+            "playerKey": "fg:19911",
+            "role": "LR",
+            "throws": "L",
+            "pitchesLast3": 22,
+            "pitchesLast6": 61,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "L",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 42.9
+          }
+        ]
+      },
+      "toronto blue jays": {
+        "teamSlug": "blue-jays",
+        "teamAbbr": "TOR",
+        "teamName": "Toronto Blue Jays",
+        "stressScore": 85,
+        "tag": "taxed",
+        "topPitchesLast3": 58,
+        "topPitchesLast6": 124,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Louis Varland CL 29p/3d 2 uses/3d",
+          "Tyler Rogers SU8 29p/3d 2 uses/3d",
+          "Jeff Hoffman SU7"
+        ],
+        "reasons": [
+          "Toronto Blue Jays leverage relief looks taxed: 58 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Louis Varland (CL), Tyler Rogers (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Louis Varland",
+            "playerKey": "fg:27691",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 45,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "Sv",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 64.5
+          },
+          {
+            "playerName": "Tyler Rogers",
+            "playerKey": "fg:15541",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 64
+          },
+          {
+            "playerName": "Jeff Hoffman",
+            "playerKey": "fg:17432",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 19
+          },
+          {
+            "playerName": "Braydon Fisher",
+            "playerKey": "fg:24609",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 26,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 44.1
+          },
+          {
+            "playerName": "Mason Fluharty",
+            "playerKey": "fg:31553",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 13,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 29.9
+          },
+          {
+            "playerName": "Tommy Nance",
+            "playerKey": "fg:19178",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.8
+          },
+          {
+            "playerName": "Spencer Miles",
+            "playerKey": "fg:31621",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 4.3
+          },
+          {
+            "playerName": "Simeon Woods Richardson",
+            "playerKey": "fg:24494",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 12
+          }
+        ]
+      },
+      "tor": {
+        "teamSlug": "blue-jays",
+        "teamAbbr": "TOR",
+        "teamName": "Toronto Blue Jays",
+        "stressScore": 85,
+        "tag": "taxed",
+        "topPitchesLast3": 58,
+        "topPitchesLast6": 124,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Louis Varland CL 29p/3d 2 uses/3d",
+          "Tyler Rogers SU8 29p/3d 2 uses/3d",
+          "Jeff Hoffman SU7"
+        ],
+        "reasons": [
+          "Toronto Blue Jays leverage relief looks taxed: 58 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Louis Varland (CL), Tyler Rogers (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Louis Varland",
+            "playerKey": "fg:27691",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 45,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "Sv",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 64.5
+          },
+          {
+            "playerName": "Tyler Rogers",
+            "playerKey": "fg:15541",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 64
+          },
+          {
+            "playerName": "Jeff Hoffman",
+            "playerKey": "fg:17432",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 19
+          },
+          {
+            "playerName": "Braydon Fisher",
+            "playerKey": "fg:24609",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 26,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 44.1
+          },
+          {
+            "playerName": "Mason Fluharty",
+            "playerKey": "fg:31553",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 13,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 29.9
+          },
+          {
+            "playerName": "Tommy Nance",
+            "playerKey": "fg:19178",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 6.8
+          },
+          {
+            "playerName": "Spencer Miles",
+            "playerKey": "fg:31621",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 4.3
+          },
+          {
+            "playerName": "Simeon Woods Richardson",
+            "playerKey": "fg:24494",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 12
+          }
+        ]
+      },
+      "atlanta braves": {
+        "teamSlug": "braves",
+        "teamAbbr": "ATL",
+        "teamName": "Atlanta Braves",
+        "stressScore": 66,
+        "tag": "watch",
+        "topPitchesLast3": 37,
+        "topPitchesLast6": 71,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Raisel Iglesias CL 16p/3d 1 uses/3d",
+          "Robert Suarez SU8 14p/3d 1 uses/3d",
+          "Dylan Lee SU7 7p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Atlanta Braves leverage relief is watch: 37 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Raisel Iglesias",
+            "playerKey": "fg:17130",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 40,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 42.8
+          },
+          {
+            "playerName": "Robert Suarez",
+            "playerKey": "fg:30115",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 36.5
+          },
+          {
+            "playerName": "Dylan Lee",
+            "playerKey": "fg:19996",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 7,
+            "pitchesLast6": 10,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 28.1
+          },
+          {
+            "playerName": "James Karinchak",
+            "playerKey": "fg:20151",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 19,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 28.8
+          },
+          {
+            "playerName": "Didier Fuentes",
+            "playerKey": "fg:30661",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 26,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 26.9
+          },
+          {
+            "playerName": "Dylan Dodd",
+            "playerKey": "fg:29928",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7.8
+          },
+          {
+            "playerName": "Reynaldo López",
+            "playerKey": "fg:16400",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": false,
+            "stress": 0
+          },
+          {
+            "playerName": "Anthony Molina",
+            "playerKey": "fg:26952",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          }
+        ]
+      },
+      "atl": {
+        "teamSlug": "braves",
+        "teamAbbr": "ATL",
+        "teamName": "Atlanta Braves",
+        "stressScore": 66,
+        "tag": "watch",
+        "topPitchesLast3": 37,
+        "topPitchesLast6": 71,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Raisel Iglesias CL 16p/3d 1 uses/3d",
+          "Robert Suarez SU8 14p/3d 1 uses/3d",
+          "Dylan Lee SU7 7p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Atlanta Braves leverage relief is watch: 37 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Raisel Iglesias",
+            "playerKey": "fg:17130",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 40,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 42.8
+          },
+          {
+            "playerName": "Robert Suarez",
+            "playerKey": "fg:30115",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 36.5
+          },
+          {
+            "playerName": "Dylan Lee",
+            "playerKey": "fg:19996",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 7,
+            "pitchesLast6": 10,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 28.1
+          },
+          {
+            "playerName": "James Karinchak",
+            "playerKey": "fg:20151",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 19,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 28.8
+          },
+          {
+            "playerName": "Didier Fuentes",
+            "playerKey": "fg:30661",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 26,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 26.9
+          },
+          {
+            "playerName": "Dylan Dodd",
+            "playerKey": "fg:29928",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7.8
+          },
+          {
+            "playerName": "Reynaldo López",
+            "playerKey": "fg:16400",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": false,
+            "stress": 0
+          },
+          {
+            "playerName": "Anthony Molina",
+            "playerKey": "fg:26952",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          }
+        ]
+      },
+      "milwaukee brewers": {
+        "teamSlug": "brewers",
+        "teamAbbr": "MIL",
+        "teamName": "Milwaukee Brewers",
+        "stressScore": 50,
+        "tag": "stable",
+        "topPitchesLast3": 16,
+        "topPitchesLast6": 104,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Trevor Megill CL 16p/3d 1 uses/3d",
+          "Abner Uribe SU8",
+          "Aaron Ashby SU7"
+        ],
+        "reasons": [
+          "Milwaukee Brewers leverage relief is stable: 16 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Trevor Megill",
+            "playerKey": "fg:17722",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 41.1
+          },
+          {
+            "playerName": "Abner Uribe",
+            "playerKey": "fg:25327",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 13.8
+          },
+          {
+            "playerName": "Aaron Ashby",
+            "playerKey": "fg:23550",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 56,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 24
+          },
+          {
+            "playerName": "Drew Rom",
+            "playerKey": "fg:24602",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 32,
+            "pitchesLast6": 57,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 49.9
+          },
+          {
+            "playerName": "Joel Kuhnel",
+            "playerKey": "fg:19995",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 33.4
+          },
+          {
+            "playerName": "Craig Yoho",
+            "playerKey": "fg:33248",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Grant Anderson",
+            "playerKey": "fg:20546",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7
+          },
+          {
+            "playerName": "Chad Patrick",
+            "playerKey": "fg:30113",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 39,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 55
+          }
+        ]
+      },
+      "mil": {
+        "teamSlug": "brewers",
+        "teamAbbr": "MIL",
+        "teamName": "Milwaukee Brewers",
+        "stressScore": 50,
+        "tag": "stable",
+        "topPitchesLast3": 16,
+        "topPitchesLast6": 104,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Trevor Megill CL 16p/3d 1 uses/3d",
+          "Abner Uribe SU8",
+          "Aaron Ashby SU7"
+        ],
+        "reasons": [
+          "Milwaukee Brewers leverage relief is stable: 16 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Trevor Megill",
+            "playerKey": "fg:17722",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 41.1
+          },
+          {
+            "playerName": "Abner Uribe",
+            "playerKey": "fg:25327",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 13.8
+          },
+          {
+            "playerName": "Aaron Ashby",
+            "playerKey": "fg:23550",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 56,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 24
+          },
+          {
+            "playerName": "Drew Rom",
+            "playerKey": "fg:24602",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 32,
+            "pitchesLast6": 57,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 49.9
+          },
+          {
+            "playerName": "Joel Kuhnel",
+            "playerKey": "fg:19995",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 33.4
+          },
+          {
+            "playerName": "Craig Yoho",
+            "playerKey": "fg:33248",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Grant Anderson",
+            "playerKey": "fg:20546",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7
+          },
+          {
+            "playerName": "Chad Patrick",
+            "playerKey": "fg:30113",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 39,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 55
+          }
+        ]
+      },
+      "st louis cardinals": {
+        "teamSlug": "cardinals",
+        "teamAbbr": "STL",
+        "teamName": "St. Louis Cardinals",
+        "stressScore": 98,
+        "tag": "taxed",
+        "topPitchesLast3": 74,
+        "topPitchesLast6": 88,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Riley O'Brien CL 31p/3d 1 uses/3d",
+          "George Soriano SU8 16p/3d 2 uses/3d",
+          "JoJo Romero SU7 27p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "St. Louis Cardinals leverage relief looks taxed: 74 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: George Soriano (SU8), JoJo Romero (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Riley O'Brien",
+            "playerKey": "fg:20348",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 52.6
+          },
+          {
+            "playerName": "George Soriano",
+            "playerKey": "fg:21863",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 16,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 46.8
+          },
+          {
+            "playerName": "JoJo Romero",
+            "playerKey": "fg:19574",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 61.9
+          },
+          {
+            "playerName": "Ryne Stanek",
+            "playerKey": "fg:15947",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 53.6
+          },
+          {
+            "playerName": "Gordon Graceffo",
+            "playerKey": "fg:29519",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 43.1
+          },
+          {
+            "playerName": "Matt Svanson",
+            "playerKey": "fg:29629",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 31.8
+          },
+          {
+            "playerName": "Justin Bruihl",
+            "playerKey": "fg:23779",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 10,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 25.8
+          },
+          {
+            "playerName": "Chris Roycroft",
+            "playerKey": "fg:31261",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 48.7
+          }
+        ]
+      },
+      "stl": {
+        "teamSlug": "cardinals",
+        "teamAbbr": "STL",
+        "teamName": "St. Louis Cardinals",
+        "stressScore": 98,
+        "tag": "taxed",
+        "topPitchesLast3": 74,
+        "topPitchesLast6": 88,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Riley O'Brien CL 31p/3d 1 uses/3d",
+          "George Soriano SU8 16p/3d 2 uses/3d",
+          "JoJo Romero SU7 27p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "St. Louis Cardinals leverage relief looks taxed: 74 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: George Soriano (SU8), JoJo Romero (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Riley O'Brien",
+            "playerKey": "fg:20348",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 52.6
+          },
+          {
+            "playerName": "George Soriano",
+            "playerKey": "fg:21863",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 16,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 46.8
+          },
+          {
+            "playerName": "JoJo Romero",
+            "playerKey": "fg:19574",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 61.9
+          },
+          {
+            "playerName": "Ryne Stanek",
+            "playerKey": "fg:15947",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 53.6
+          },
+          {
+            "playerName": "Gordon Graceffo",
+            "playerKey": "fg:29519",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 43.1
+          },
+          {
+            "playerName": "Matt Svanson",
+            "playerKey": "fg:29629",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 31.8
+          },
+          {
+            "playerName": "Justin Bruihl",
+            "playerKey": "fg:23779",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 10,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 25.8
+          },
+          {
+            "playerName": "Chris Roycroft",
+            "playerKey": "fg:31261",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 48.7
+          }
+        ]
+      },
+      "chicago cubs": {
+        "teamSlug": "cubs",
+        "teamAbbr": "CHC",
+        "teamName": "Chicago Cubs",
+        "stressScore": 40,
+        "tag": "stable",
+        "topPitchesLast3": 23,
+        "topPitchesLast6": 73,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Daniel Palencia CL",
+          "Jacob Webb SU8",
+          "Caleb Thielbar SU7 23p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Chicago Cubs leverage relief is stable: 23 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Daniel Palencia",
+            "playerKey": "fg:27914",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 18,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 14.5
+          },
+          {
+            "playerName": "Jacob Webb",
+            "playerKey": "fg:19274",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 12,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 13
+          },
+          {
+            "playerName": "Caleb Thielbar",
+            "playerKey": "fg:10078",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 23,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 49.2
+          },
+          {
+            "playerName": "Phil Maton",
+            "playerKey": "fg:18064",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 53.5
+          },
+          {
+            "playerName": "Hoby Milner",
+            "playerKey": "fg:13346",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 48.2
+          },
+          {
+            "playerName": "Trent Thornton",
+            "playerKey": "fg:17948",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 26,
+            "pitchesLast6": 26,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37.3
+          },
+          {
+            "playerName": "Ryan Rolison",
+            "playerKey": "fg:22200",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 17,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 32.9
+          },
+          {
+            "playerName": "Ethan Roberts",
+            "playerKey": "fg:24930",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35
+          }
+        ]
+      },
+      "chc": {
+        "teamSlug": "cubs",
+        "teamAbbr": "CHC",
+        "teamName": "Chicago Cubs",
+        "stressScore": 40,
+        "tag": "stable",
+        "topPitchesLast3": 23,
+        "topPitchesLast6": 73,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Daniel Palencia CL",
+          "Jacob Webb SU8",
+          "Caleb Thielbar SU7 23p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Chicago Cubs leverage relief is stable: 23 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Daniel Palencia",
+            "playerKey": "fg:27914",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 18,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 14.5
+          },
+          {
+            "playerName": "Jacob Webb",
+            "playerKey": "fg:19274",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 12,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 13
+          },
+          {
+            "playerName": "Caleb Thielbar",
+            "playerKey": "fg:10078",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 23,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 49.2
+          },
+          {
+            "playerName": "Phil Maton",
+            "playerKey": "fg:18064",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 53.5
+          },
+          {
+            "playerName": "Hoby Milner",
+            "playerKey": "fg:13346",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 48.2
+          },
+          {
+            "playerName": "Trent Thornton",
+            "playerKey": "fg:17948",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 26,
+            "pitchesLast6": 26,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37.3
+          },
+          {
+            "playerName": "Ryan Rolison",
+            "playerKey": "fg:22200",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 17,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 32.9
+          },
+          {
+            "playerName": "Ethan Roberts",
+            "playerKey": "fg:24930",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35
+          }
+        ]
+      },
+      "arizona diamondbacks": {
+        "teamSlug": "diamondbacks",
+        "teamAbbr": "ARI",
+        "teamName": "Arizona Diamondbacks",
+        "stressScore": 71,
+        "tag": "taxed",
+        "topPitchesLast3": 64,
+        "topPitchesLast6": 77,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Paul Sewald CL 29p/3d 2 uses/3d",
+          "Kevin Ginkel SU8 20p/3d 1 uses/3d",
+          "Juan Morillo SU7 15p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Arizona Diamondbacks leverage relief looks taxed: 64 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Paul Sewald (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Paul Sewald",
+            "playerKey": "fg:13892",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 60.5
+          },
+          {
+            "playerName": "Kevin Ginkel",
+            "playerKey": "fg:19876",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 43
+          },
+          {
+            "playerName": "Juan Morillo",
+            "playerKey": "fg:21924",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 37
+          },
+          {
+            "playerName": "Taylor Clarke",
+            "playerKey": "fg:17611",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 36,
+            "pitchesLast6": 58,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 53.3
+          },
+          {
+            "playerName": "Ryan Thompson",
+            "playerKey": "fg:16647",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 31.2
+          },
+          {
+            "playerName": "Brandyn Garcia",
+            "playerKey": "fg:33568",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 30
+          },
+          {
+            "playerName": "Jonathan Loáisiga",
+            "playerKey": "fg:19753",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 23.1
+          },
+          {
+            "playerName": "Drey Jameson",
+            "playerKey": "fg:26260",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7
+          }
+        ]
+      },
+      "ari": {
+        "teamSlug": "diamondbacks",
+        "teamAbbr": "ARI",
+        "teamName": "Arizona Diamondbacks",
+        "stressScore": 71,
+        "tag": "taxed",
+        "topPitchesLast3": 64,
+        "topPitchesLast6": 77,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Paul Sewald CL 29p/3d 2 uses/3d",
+          "Kevin Ginkel SU8 20p/3d 1 uses/3d",
+          "Juan Morillo SU7 15p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Arizona Diamondbacks leverage relief looks taxed: 64 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Paul Sewald (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Paul Sewald",
+            "playerKey": "fg:13892",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 60.5
+          },
+          {
+            "playerName": "Kevin Ginkel",
+            "playerKey": "fg:19876",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 43
+          },
+          {
+            "playerName": "Juan Morillo",
+            "playerKey": "fg:21924",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 37
+          },
+          {
+            "playerName": "Taylor Clarke",
+            "playerKey": "fg:17611",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 36,
+            "pitchesLast6": 58,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 53.3
+          },
+          {
+            "playerName": "Ryan Thompson",
+            "playerKey": "fg:16647",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 31.2
+          },
+          {
+            "playerName": "Brandyn Garcia",
+            "playerKey": "fg:33568",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 30
+          },
+          {
+            "playerName": "Jonathan Loáisiga",
+            "playerKey": "fg:19753",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 23.1
+          },
+          {
+            "playerName": "Drey Jameson",
+            "playerKey": "fg:26260",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7
+          }
+        ]
+      },
+      "los angeles dodgers": {
+        "teamSlug": "dodgers",
+        "teamAbbr": "LAD",
+        "teamName": "Los Angeles Dodgers",
+        "stressScore": 67,
+        "tag": "watch",
+        "topPitchesLast3": 52,
+        "topPitchesLast6": 99,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Tanner Scott CL 18p/3d 1 uses/3d",
+          "Will Klein SU8 22p/3d 1 uses/3d",
+          "Alex Vesia SU7 12p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Los Angeles Dodgers leverage relief is watch: 52 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Alex Vesia (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Tanner Scott",
+            "playerKey": "fg:17586",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 18,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 43.2
+          },
+          {
+            "playerName": "Will Klein",
+            "playerKey": "fg:27787",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 48.4
+          },
+          {
+            "playerName": "Alex Vesia",
+            "playerKey": "fg:25007",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 12,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 44.9
+          },
+          {
+            "playerName": "Edgardo Henriquez",
+            "playerKey": "fg:26944",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 52.6
+          },
+          {
+            "playerName": "Blake Treinen",
+            "playerKey": "fg:12572",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 34.6
+          },
+          {
+            "playerName": "Jack Dreyer",
+            "playerKey": "fg:30249",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 11,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 25.6
+          },
+          {
+            "playerName": "Kyle Hurt",
+            "playerKey": "fg:27514",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 5
+          },
+          {
+            "playerName": "Jonathan Hernández",
+            "playerKey": "fg:17464",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 46,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.3
+          }
+        ]
+      },
+      "lad": {
+        "teamSlug": "dodgers",
+        "teamAbbr": "LAD",
+        "teamName": "Los Angeles Dodgers",
+        "stressScore": 67,
+        "tag": "watch",
+        "topPitchesLast3": 52,
+        "topPitchesLast6": 99,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Tanner Scott CL 18p/3d 1 uses/3d",
+          "Will Klein SU8 22p/3d 1 uses/3d",
+          "Alex Vesia SU7 12p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Los Angeles Dodgers leverage relief is watch: 52 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Alex Vesia (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Tanner Scott",
+            "playerKey": "fg:17586",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 18,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 43.2
+          },
+          {
+            "playerName": "Will Klein",
+            "playerKey": "fg:27787",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 48.4
+          },
+          {
+            "playerName": "Alex Vesia",
+            "playerKey": "fg:25007",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 12,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 44.9
+          },
+          {
+            "playerName": "Edgardo Henriquez",
+            "playerKey": "fg:26944",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 52.6
+          },
+          {
+            "playerName": "Blake Treinen",
+            "playerKey": "fg:12572",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 34.6
+          },
+          {
+            "playerName": "Jack Dreyer",
+            "playerKey": "fg:30249",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 11,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 25.6
+          },
+          {
+            "playerName": "Kyle Hurt",
+            "playerKey": "fg:27514",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 5
+          },
+          {
+            "playerName": "Jonathan Hernández",
+            "playerKey": "fg:17464",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 46,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.3
+          }
+        ]
+      },
+      "san francisco giants": {
+        "teamSlug": "giants",
+        "teamAbbr": "SFG",
+        "teamName": "San Francisco Giants",
+        "stressScore": 59,
+        "tag": "watch",
+        "topPitchesLast3": 24,
+        "topPitchesLast6": 60,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Caleb Kilian CL 15p/3d 1 uses/3d",
+          "Keaton Winn SU8",
+          "Erik Miller SU7 9p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "San Francisco Giants leverage relief is watch: 24 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Caleb Kilian",
+            "playerKey": "fg:26213",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35.8
+          },
+          {
+            "playerName": "Keaton Winn",
+            "playerKey": "fg:23499",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 15.5
+          },
+          {
+            "playerName": "Erik Miller",
+            "playerKey": "fg:26252",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 9,
+            "pitchesLast6": 23,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 33
+          },
+          {
+            "playerName": "Reiver Sanmartin",
+            "playerKey": "fg:19754",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 30,
+            "pitchesLast6": 61,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": true,
+            "stress": 73.3
+          },
+          {
+            "playerName": "Ryan Walker",
+            "playerKey": "fg:20423",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 27,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": true,
+            "stress": 72.4
+          },
+          {
+            "playerName": "Sam Hentges",
+            "playerKey": "fg:18548",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 29,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 57
+          },
+          {
+            "playerName": "Dylan Smith",
+            "playerKey": "fg:30145",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 39.6
+          },
+          {
+            "playerName": "JT Brubaker",
+            "playerKey": "fg:17578",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37.8
+          }
+        ]
+      },
+      "sfg": {
+        "teamSlug": "giants",
+        "teamAbbr": "SFG",
+        "teamName": "San Francisco Giants",
+        "stressScore": 59,
+        "tag": "watch",
+        "topPitchesLast3": 24,
+        "topPitchesLast6": 60,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Caleb Kilian CL 15p/3d 1 uses/3d",
+          "Keaton Winn SU8",
+          "Erik Miller SU7 9p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "San Francisco Giants leverage relief is watch: 24 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Caleb Kilian",
+            "playerKey": "fg:26213",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35.8
+          },
+          {
+            "playerName": "Keaton Winn",
+            "playerKey": "fg:23499",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 15.5
+          },
+          {
+            "playerName": "Erik Miller",
+            "playerKey": "fg:26252",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 9,
+            "pitchesLast6": 23,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 33
+          },
+          {
+            "playerName": "Reiver Sanmartin",
+            "playerKey": "fg:19754",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 30,
+            "pitchesLast6": 61,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": true,
+            "stress": 73.3
+          },
+          {
+            "playerName": "Ryan Walker",
+            "playerKey": "fg:20423",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 27,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": true,
+            "stress": 72.4
+          },
+          {
+            "playerName": "Sam Hentges",
+            "playerKey": "fg:18548",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 29,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 57
+          },
+          {
+            "playerName": "Dylan Smith",
+            "playerKey": "fg:30145",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 22,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 39.6
+          },
+          {
+            "playerName": "JT Brubaker",
+            "playerKey": "fg:17578",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 37.8
+          }
+        ]
+      },
+      "cleveland guardians": {
+        "teamSlug": "guardians",
+        "teamAbbr": "CLE",
+        "teamName": "Cleveland Guardians",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 74,
+        "topPitchesLast6": 144,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Cade Smith CL 44p/3d 2 uses/3d",
+          "Hunter Gaddis SU8 30p/3d 2 uses/3d",
+          "Shawn Armstrong SU7"
+        ],
+        "reasons": [
+          "Cleveland Guardians leverage relief looks taxed: 74 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Cade Smith (CL), Hunter Gaddis (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Cade Smith",
+            "playerKey": "fg:27867",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 44,
+            "pitchesLast6": 66,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 81.7
+          },
+          {
+            "playerName": "Hunter Gaddis",
+            "playerKey": "fg:25636",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 30,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 67.3
+          },
+          {
+            "playerName": "Shawn Armstrong",
+            "playerKey": "fg:12857",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 16.3
+          },
+          {
+            "playerName": "Colin Holderman",
+            "playerKey": "fg:22361",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 45,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 33.3
+          },
+          {
+            "playerName": "Tim Herrin",
+            "playerKey": "fg:25139",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 13,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "L",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 32.2
+          },
+          {
+            "playerName": "Daniel Espino",
+            "playerKey": "daniel espino",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Will Dion",
+            "playerKey": "fg:30061",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7.8
+          },
+          {
+            "playerName": "Matt Festa",
+            "playerKey": "fg:19330",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 8
+          }
+        ]
+      },
+      "cle": {
+        "teamSlug": "guardians",
+        "teamAbbr": "CLE",
+        "teamName": "Cleveland Guardians",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 74,
+        "topPitchesLast6": 144,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Cade Smith CL 44p/3d 2 uses/3d",
+          "Hunter Gaddis SU8 30p/3d 2 uses/3d",
+          "Shawn Armstrong SU7"
+        ],
+        "reasons": [
+          "Cleveland Guardians leverage relief looks taxed: 74 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Cade Smith (CL), Hunter Gaddis (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Cade Smith",
+            "playerKey": "fg:27867",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 44,
+            "pitchesLast6": 66,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 81.7
+          },
+          {
+            "playerName": "Hunter Gaddis",
+            "playerKey": "fg:25636",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 30,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 67.3
+          },
+          {
+            "playerName": "Shawn Armstrong",
+            "playerKey": "fg:12857",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 16.3
+          },
+          {
+            "playerName": "Colin Holderman",
+            "playerKey": "fg:22361",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 45,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 33.3
+          },
+          {
+            "playerName": "Tim Herrin",
+            "playerKey": "fg:25139",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 13,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "L",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 32.2
+          },
+          {
+            "playerName": "Daniel Espino",
+            "playerKey": "daniel espino",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Will Dion",
+            "playerKey": "fg:30061",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 7.8
+          },
+          {
+            "playerName": "Matt Festa",
+            "playerKey": "fg:19330",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 8
+          }
+        ]
+      },
+      "seattle mariners": {
+        "teamSlug": "mariners",
+        "teamAbbr": "SEA",
+        "teamName": "Seattle Mariners",
+        "stressScore": 64,
+        "tag": "watch",
+        "topPitchesLast3": 25,
+        "topPitchesLast6": 106,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Andrés Muñoz CL",
+          "José A. Ferrer SU8 10p/3d 1 uses/3d",
+          "Eduard Bazardo SU7 15p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Seattle Mariners leverage relief is watch: 25 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Andrés Muñoz",
+            "playerKey": "fg:20373",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 15
+          },
+          {
+            "playerName": "José A. Ferrer",
+            "playerKey": "fg:24017",
+            "role": "SU8",
+            "throws": "L",
+            "pitchesLast3": 10,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 41.3
+          },
+          {
+            "playerName": "Eduard Bazardo",
+            "playerKey": "fg:20997",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 40.3
+          },
+          {
+            "playerName": "Alex Hoppe",
+            "playerKey": "fg:31880",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 40,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 64.3
+          },
+          {
+            "playerName": "Nick Davila",
+            "playerKey": "fg:27741",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": true,
+            "stress": 56.4
+          },
+          {
+            "playerName": "Gabe Speier",
+            "playerKey": "fg:17170",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 5,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 18.3
+          },
+          {
+            "playerName": "Michael Rucker",
+            "playerKey": "fg:19454",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 9,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 43.5
+          }
+        ]
+      },
+      "sea": {
+        "teamSlug": "mariners",
+        "teamAbbr": "SEA",
+        "teamName": "Seattle Mariners",
+        "stressScore": 64,
+        "tag": "watch",
+        "topPitchesLast3": 25,
+        "topPitchesLast6": 106,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Andrés Muñoz CL",
+          "José A. Ferrer SU8 10p/3d 1 uses/3d",
+          "Eduard Bazardo SU7 15p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Seattle Mariners leverage relief is watch: 25 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Andrés Muñoz",
+            "playerKey": "fg:20373",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 15
+          },
+          {
+            "playerName": "José A. Ferrer",
+            "playerKey": "fg:24017",
+            "role": "SU8",
+            "throws": "L",
+            "pitchesLast3": 10,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 41.3
+          },
+          {
+            "playerName": "Eduard Bazardo",
+            "playerKey": "fg:20997",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 40.3
+          },
+          {
+            "playerName": "Alex Hoppe",
+            "playerKey": "fg:31880",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 40,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 64.3
+          },
+          {
+            "playerName": "Nick Davila",
+            "playerKey": "fg:27741",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": true,
+            "stress": 56.4
+          },
+          {
+            "playerName": "Gabe Speier",
+            "playerKey": "fg:17170",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 5,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 18.3
+          },
+          {
+            "playerName": "Michael Rucker",
+            "playerKey": "fg:19454",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 9,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 43.5
+          }
+        ]
+      },
+      "miami marlins": {
+        "teamSlug": "marlins",
+        "teamAbbr": "MIA",
+        "teamName": "Miami Marlins",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 102,
+        "topPitchesLast6": 163,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Pete Fairbanks CL 13p/3d 1 uses/3d",
+          "Anthony Bender SU8 46p/3d 2 uses/3d",
+          "Michael Petersen SU7 43p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Miami Marlins leverage relief looks taxed: 102 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Anthony Bender (SU8), Michael Petersen (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Pete Fairbanks",
+            "playerKey": "fg:17998",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.7
+          },
+          {
+            "playerName": "Anthony Bender",
+            "playerKey": "fg:19742",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 46,
+            "pitchesLast6": 57,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 81.1
+          },
+          {
+            "playerName": "Michael Petersen",
+            "playerKey": "fg:20827",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 43,
+            "pitchesLast6": 69,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 81.7
+          },
+          {
+            "playerName": "Lake Bachar",
+            "playerKey": "fg:19222",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 42,
+            "pitchesLast6": 78,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 63.1
+          },
+          {
+            "playerName": "Calvin Faucher",
+            "playerKey": "fg:20116",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 28,
+            "pitchesLast6": 40,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 52.4
+          },
+          {
+            "playerName": "John King",
+            "playerKey": "fg:22051",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 29,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 50.5
+          },
+          {
+            "playerName": "Cade Gibson",
+            "playerKey": "fg:31815",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 22,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 36.9
+          },
+          {
+            "playerName": "William Kempner",
+            "playerKey": "fg:31615",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 9
+          }
+        ]
+      },
+      "mia": {
+        "teamSlug": "marlins",
+        "teamAbbr": "MIA",
+        "teamName": "Miami Marlins",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 102,
+        "topPitchesLast6": 163,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Pete Fairbanks CL 13p/3d 1 uses/3d",
+          "Anthony Bender SU8 46p/3d 2 uses/3d",
+          "Michael Petersen SU7 43p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Miami Marlins leverage relief looks taxed: 102 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Anthony Bender (SU8), Michael Petersen (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Pete Fairbanks",
+            "playerKey": "fg:17998",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.7
+          },
+          {
+            "playerName": "Anthony Bender",
+            "playerKey": "fg:19742",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 46,
+            "pitchesLast6": 57,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 81.1
+          },
+          {
+            "playerName": "Michael Petersen",
+            "playerKey": "fg:20827",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 43,
+            "pitchesLast6": 69,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 81.7
+          },
+          {
+            "playerName": "Lake Bachar",
+            "playerKey": "fg:19222",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 42,
+            "pitchesLast6": 78,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 63.1
+          },
+          {
+            "playerName": "Calvin Faucher",
+            "playerKey": "fg:20116",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 28,
+            "pitchesLast6": 40,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 52.4
+          },
+          {
+            "playerName": "John King",
+            "playerKey": "fg:22051",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 29,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 50.5
+          },
+          {
+            "playerName": "Cade Gibson",
+            "playerKey": "fg:31815",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 22,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 36.9
+          },
+          {
+            "playerName": "William Kempner",
+            "playerKey": "fg:31615",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 9
+          }
+        ]
+      },
+      "new york mets": {
+        "teamSlug": "mets",
+        "teamAbbr": "NYM",
+        "teamName": "New York Mets",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 102,
+        "topPitchesLast6": 102,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Devin Williams CL 49p/3d 2 uses/3d",
+          "Luke Weaver SU8 11p/3d 1 uses/3d",
+          "Brooks Raley SU7 42p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "New York Mets leverage relief looks taxed: 102 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Devin Williams (CL), Brooks Raley (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Devin Williams",
+            "playerKey": "fg:15816",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 49,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 81.5
+          },
+          {
+            "playerName": "Luke Weaver",
+            "playerKey": "fg:16918",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 11,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 31.6
+          },
+          {
+            "playerName": "Brooks Raley",
+            "playerKey": "fg:10061",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 42,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 74.1
+          },
+          {
+            "playerName": "Austin Warren",
+            "playerKey": "fg:24937",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 40,
+            "pitchesLast6": 73,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 60.3
+          },
+          {
+            "playerName": "Daniel Duarte",
+            "playerKey": "fg:17480",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 13,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 47.7
+          },
+          {
+            "playerName": "Cionel Pérez",
+            "playerKey": "fg:19614",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 31.5
+          },
+          {
+            "playerName": "Huascar Brazobán",
+            "playerKey": "fg:6107",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 19,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30
+          },
+          {
+            "playerName": "A.J. Minter",
+            "playerKey": "fg:18655",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 24.7
+          }
+        ]
+      },
+      "nym": {
+        "teamSlug": "mets",
+        "teamAbbr": "NYM",
+        "teamName": "New York Mets",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 102,
+        "topPitchesLast6": 102,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Devin Williams CL 49p/3d 2 uses/3d",
+          "Luke Weaver SU8 11p/3d 1 uses/3d",
+          "Brooks Raley SU7 42p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "New York Mets leverage relief looks taxed: 102 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Devin Williams (CL), Brooks Raley (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Devin Williams",
+            "playerKey": "fg:15816",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 49,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 81.5
+          },
+          {
+            "playerName": "Luke Weaver",
+            "playerKey": "fg:16918",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 11,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 31.6
+          },
+          {
+            "playerName": "Brooks Raley",
+            "playerKey": "fg:10061",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 42,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 74.1
+          },
+          {
+            "playerName": "Austin Warren",
+            "playerKey": "fg:24937",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 40,
+            "pitchesLast6": 73,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 60.3
+          },
+          {
+            "playerName": "Daniel Duarte",
+            "playerKey": "fg:17480",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 13,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 47.7
+          },
+          {
+            "playerName": "Cionel Pérez",
+            "playerKey": "fg:19614",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 31.5
+          },
+          {
+            "playerName": "Huascar Brazobán",
+            "playerKey": "fg:6107",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 19,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30
+          },
+          {
+            "playerName": "A.J. Minter",
+            "playerKey": "fg:18655",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 24.7
+          }
+        ]
+      },
+      "washington nationals": {
+        "teamSlug": "nationals",
+        "teamAbbr": "WSN",
+        "teamName": "Washington Nationals",
+        "stressScore": 74,
+        "tag": "taxed",
+        "topPitchesLast3": 34,
+        "topPitchesLast6": 143,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Clayton Beeter CL",
+          "Orlando Ribalta SU8 11p/3d 1 uses/3d",
+          "Brad Lord SU7 23p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Washington Nationals leverage relief looks taxed: 34 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Brad Lord (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Clayton Beeter",
+            "playerKey": "fg:27494",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 16.8
+          },
+          {
+            "playerName": "Orlando Ribalta",
+            "playerKey": "fg:26247",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 37.8
+          },
+          {
+            "playerName": "Brad Lord",
+            "playerKey": "fg:31972",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 23,
+            "pitchesLast6": 80,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 58.4
+          },
+          {
+            "playerName": "PJ Poulin",
+            "playerKey": "fg:23394",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": true,
+            "stress": 49.8
+          },
+          {
+            "playerName": "Richard Lovelady",
+            "playerKey": "fg:19337",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 35.5
+          },
+          {
+            "playerName": "Gus Varland",
+            "playerKey": "fg:24737",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 34.5
+          },
+          {
+            "playerName": "Mitchell Parker",
+            "playerKey": "fg:27636",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 8.5
+          },
+          {
+            "playerName": "Paxton Schultz",
+            "playerKey": "fg:25501",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 23,
+            "pitchesLast6": 66,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 44.9
+          }
+        ]
+      },
+      "wsn": {
+        "teamSlug": "nationals",
+        "teamAbbr": "WSN",
+        "teamName": "Washington Nationals",
+        "stressScore": 74,
+        "tag": "taxed",
+        "topPitchesLast3": 34,
+        "topPitchesLast6": 143,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Clayton Beeter CL",
+          "Orlando Ribalta SU8 11p/3d 1 uses/3d",
+          "Brad Lord SU7 23p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Washington Nationals leverage relief looks taxed: 34 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Brad Lord (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Clayton Beeter",
+            "playerKey": "fg:27494",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 16.8
+          },
+          {
+            "playerName": "Orlando Ribalta",
+            "playerKey": "fg:26247",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 37.8
+          },
+          {
+            "playerName": "Brad Lord",
+            "playerKey": "fg:31972",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 23,
+            "pitchesLast6": 80,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 58.4
+          },
+          {
+            "playerName": "PJ Poulin",
+            "playerKey": "fg:23394",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": true,
+            "stress": 49.8
+          },
+          {
+            "playerName": "Richard Lovelady",
+            "playerKey": "fg:19337",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 35.5
+          },
+          {
+            "playerName": "Gus Varland",
+            "playerKey": "fg:24737",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 34.5
+          },
+          {
+            "playerName": "Mitchell Parker",
+            "playerKey": "fg:27636",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS",
+              "B",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 8.5
+          },
+          {
+            "playerName": "Paxton Schultz",
+            "playerKey": "fg:25501",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 23,
+            "pitchesLast6": 66,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 44.9
+          }
+        ]
+      },
+      "baltimore orioles": {
+        "teamSlug": "orioles",
+        "teamAbbr": "BAL",
+        "teamName": "Baltimore Orioles",
+        "stressScore": 65,
+        "tag": "watch",
+        "topPitchesLast3": 47,
+        "topPitchesLast6": 94,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Andrew Kittredge CL 15p/3d 2 uses/3d",
+          "Rico Garcia CL 16p/3d 1 uses/3d",
+          "Yennier Cano SU7 16p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Baltimore Orioles leverage relief is watch: 47 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Andrew Kittredge (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Andrew Kittredge",
+            "playerKey": "fg:12828",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 50.5
+          },
+          {
+            "playerName": "Rico Garcia",
+            "playerKey": "fg:20023",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 40.6
+          },
+          {
+            "playerName": "Yennier Cano",
+            "playerKey": "fg:25911",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 40.1
+          },
+          {
+            "playerName": "Tyler Wells",
+            "playerKey": "fg:20000",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 39,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 53
+          },
+          {
+            "playerName": "Keegan Akin",
+            "playerKey": "fg:19362",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 49.5
+          },
+          {
+            "playerName": "Anthony Nunez",
+            "playerKey": "fg:25796",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 54,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 40.3
+          },
+          {
+            "playerName": "Grant Wolfram",
+            "playerKey": "fg:21623",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 7,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 22.4
+          },
+          {
+            "playerName": "Albert Suárez",
+            "playerKey": "fg:6175",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 38,
+            "pitchesLast6": 77,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 59.7
+          }
+        ]
+      },
+      "bal": {
+        "teamSlug": "orioles",
+        "teamAbbr": "BAL",
+        "teamName": "Baltimore Orioles",
+        "stressScore": 65,
+        "tag": "watch",
+        "topPitchesLast3": 47,
+        "topPitchesLast6": 94,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Andrew Kittredge CL 15p/3d 2 uses/3d",
+          "Rico Garcia CL 16p/3d 1 uses/3d",
+          "Yennier Cano SU7 16p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Baltimore Orioles leverage relief is watch: 47 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Andrew Kittredge (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Andrew Kittredge",
+            "playerKey": "fg:12828",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 50.5
+          },
+          {
+            "playerName": "Rico Garcia",
+            "playerKey": "fg:20023",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 31,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 40.6
+          },
+          {
+            "playerName": "Yennier Cano",
+            "playerKey": "fg:25911",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 29,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 40.1
+          },
+          {
+            "playerName": "Tyler Wells",
+            "playerKey": "fg:20000",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 39,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 53
+          },
+          {
+            "playerName": "Keegan Akin",
+            "playerKey": "fg:19362",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 49.5
+          },
+          {
+            "playerName": "Anthony Nunez",
+            "playerKey": "fg:25796",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 54,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 40.3
+          },
+          {
+            "playerName": "Grant Wolfram",
+            "playerKey": "fg:21623",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 7,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 22.4
+          },
+          {
+            "playerName": "Albert Suárez",
+            "playerKey": "fg:6175",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 38,
+            "pitchesLast6": 77,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 59.7
+          }
+        ]
+      },
+      "san diego padres": {
+        "teamSlug": "padres",
+        "teamAbbr": "SDP",
+        "teamName": "San Diego Padres",
+        "stressScore": 56,
+        "tag": "watch",
+        "topPitchesLast3": 18,
+        "topPitchesLast6": 142,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Mason Miller CL",
+          "Jason Adam SU8 16p/3d 1 uses/3d",
+          "Adrian Morejon SU7 2p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "San Diego Padres leverage relief is watch: 18 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Jason Adam (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Mason Miller",
+            "playerKey": "fg:31757",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 18.3
+          },
+          {
+            "playerName": "Jason Adam",
+            "playerKey": "fg:11861",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 60,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 47.8
+          },
+          {
+            "playerName": "Adrian Morejon",
+            "playerKey": "fg:20039",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 2,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 33.9
+          },
+          {
+            "playerName": "Wandy Peralta",
+            "playerKey": "fg:14295",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 30,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 45
+          },
+          {
+            "playerName": "David Morgan",
+            "playerKey": "fg:31616",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 36.2
+          },
+          {
+            "playerName": "Bradgley Rodriguez",
+            "playerKey": "fg:29107",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35.3
+          },
+          {
+            "playerName": "Yuki Matsui",
+            "playerKey": "fg:33826",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 28.2
+          },
+          {
+            "playerName": "Ron Marinaccio",
+            "playerKey": "fg:23488",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 4,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 20.2
+          }
+        ]
+      },
+      "sdp": {
+        "teamSlug": "padres",
+        "teamAbbr": "SDP",
+        "teamName": "San Diego Padres",
+        "stressScore": 56,
+        "tag": "watch",
+        "topPitchesLast3": 18,
+        "topPitchesLast6": 142,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Mason Miller CL",
+          "Jason Adam SU8 16p/3d 1 uses/3d",
+          "Adrian Morejon SU7 2p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "San Diego Padres leverage relief is watch: 18 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Jason Adam (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Mason Miller",
+            "playerKey": "fg:31757",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 18.3
+          },
+          {
+            "playerName": "Jason Adam",
+            "playerKey": "fg:11861",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 60,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 47.8
+          },
+          {
+            "playerName": "Adrian Morejon",
+            "playerKey": "fg:20039",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 2,
+            "pitchesLast6": 49,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 33.9
+          },
+          {
+            "playerName": "Wandy Peralta",
+            "playerKey": "fg:14295",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 30,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 45
+          },
+          {
+            "playerName": "David Morgan",
+            "playerKey": "fg:31616",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 36.2
+          },
+          {
+            "playerName": "Bradgley Rodriguez",
+            "playerKey": "fg:29107",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35.3
+          },
+          {
+            "playerName": "Yuki Matsui",
+            "playerKey": "fg:33826",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 28.2
+          },
+          {
+            "playerName": "Ron Marinaccio",
+            "playerKey": "fg:23488",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 4,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 20.2
+          }
+        ]
+      },
+      "philadelphia phillies": {
+        "teamSlug": "phillies",
+        "teamAbbr": "PHI",
+        "teamName": "Philadelphia Phillies",
+        "stressScore": 62,
+        "tag": "watch",
+        "topPitchesLast3": 60,
+        "topPitchesLast6": 132,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Jhoan Duran CL 11p/3d 1 uses/3d",
+          "Brad Keller SU8 32p/3d 1 uses/3d",
+          "Orion Kerkering SU7 17p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Philadelphia Phillies leverage relief is watch: 60 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Jhoan Duran",
+            "playerKey": "fg:21029",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 4,
+            "flags": [
+              "Sv",
+              "B",
+              "L",
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 38.3
+          },
+          {
+            "playerName": "Brad Keller",
+            "playerKey": "fg:15734",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 59.4
+          },
+          {
+            "playerName": "Orion Kerkering",
+            "playerKey": "fg:31776",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 43.4
+          },
+          {
+            "playerName": "Tim Mayza",
+            "playerKey": "fg:15042",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 48.4
+          },
+          {
+            "playerName": "Tanner Banks",
+            "playerKey": "fg:16990",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 39.4
+          },
+          {
+            "playerName": "José Alvarado",
+            "playerKey": "fg:17780",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 33.5
+          },
+          {
+            "playerName": "Jonathan Bowlan",
+            "playerKey": "fg:24607",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 4,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 1
+          },
+          {
+            "playerName": "Chase Shugart",
+            "playerKey": "fg:21544",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 27.9
+          }
+        ]
+      },
+      "phi": {
+        "teamSlug": "phillies",
+        "teamAbbr": "PHI",
+        "teamName": "Philadelphia Phillies",
+        "stressScore": 62,
+        "tag": "watch",
+        "topPitchesLast3": 60,
+        "topPitchesLast6": 132,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Jhoan Duran CL 11p/3d 1 uses/3d",
+          "Brad Keller SU8 32p/3d 1 uses/3d",
+          "Orion Kerkering SU7 17p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Philadelphia Phillies leverage relief is watch: 60 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Jhoan Duran",
+            "playerKey": "fg:21029",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 4,
+            "flags": [
+              "Sv",
+              "B",
+              "L",
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 38.3
+          },
+          {
+            "playerName": "Brad Keller",
+            "playerKey": "fg:15734",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 59.4
+          },
+          {
+            "playerName": "Orion Kerkering",
+            "playerKey": "fg:31776",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 43.4
+          },
+          {
+            "playerName": "Tim Mayza",
+            "playerKey": "fg:15042",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 48.4
+          },
+          {
+            "playerName": "Tanner Banks",
+            "playerKey": "fg:16990",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 39.4
+          },
+          {
+            "playerName": "José Alvarado",
+            "playerKey": "fg:17780",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 33.5
+          },
+          {
+            "playerName": "Jonathan Bowlan",
+            "playerKey": "fg:24607",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 4,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 1
+          },
+          {
+            "playerName": "Chase Shugart",
+            "playerKey": "fg:21544",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 12,
+            "pitchesLast6": 33,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 27.9
+          }
+        ]
+      },
+      "pittsburgh pirates": {
+        "teamSlug": "pirates",
+        "teamAbbr": "PIT",
+        "teamName": "Pittsburgh Pirates",
+        "stressScore": 80,
+        "tag": "taxed",
+        "topPitchesLast3": 60,
+        "topPitchesLast6": 107,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Gregory Soto CL 13p/3d 1 uses/3d",
+          "Dennis Santana SU8 16p/3d 1 uses/3d",
+          "Evan Sisk SU7 31p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Pittsburgh Pirates leverage relief looks taxed: 60 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Gregory Soto",
+            "playerKey": "fg:19677",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 13,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 35.7
+          },
+          {
+            "playerName": "Dennis Santana",
+            "playerKey": "fg:17878",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 44.6
+          },
+          {
+            "playerName": "Evan Sisk",
+            "playerKey": "fg:24995",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 54.6
+          },
+          {
+            "playerName": "Yohan Ramírez",
+            "playerKey": "fg:19444",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 58,
+            "pitchesLast6": 58,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 80.9
+          },
+          {
+            "playerName": "Brandan Bidois",
+            "playerKey": "fg:28052",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": true,
+            "stress": 73.5
+          },
+          {
+            "playerName": "Mason Montgomery",
+            "playerKey": "fg:29770",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 25.8
+          },
+          {
+            "playerName": "Isaac Mattson",
+            "playerKey": "fg:20385",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Carmen Mlodzinski",
+            "playerKey": "fg:27572",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 76,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 19
+          }
+        ]
+      },
+      "pit": {
+        "teamSlug": "pirates",
+        "teamAbbr": "PIT",
+        "teamName": "Pittsburgh Pirates",
+        "stressScore": 80,
+        "tag": "taxed",
+        "topPitchesLast3": 60,
+        "topPitchesLast6": 107,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Gregory Soto CL 13p/3d 1 uses/3d",
+          "Dennis Santana SU8 16p/3d 1 uses/3d",
+          "Evan Sisk SU7 31p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Pittsburgh Pirates leverage relief looks taxed: 60 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Gregory Soto",
+            "playerKey": "fg:19677",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 13,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 35.7
+          },
+          {
+            "playerName": "Dennis Santana",
+            "playerKey": "fg:17878",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 44.6
+          },
+          {
+            "playerName": "Evan Sisk",
+            "playerKey": "fg:24995",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 54.6
+          },
+          {
+            "playerName": "Yohan Ramírez",
+            "playerKey": "fg:19444",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 58,
+            "pitchesLast6": 58,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 80.9
+          },
+          {
+            "playerName": "Brandan Bidois",
+            "playerKey": "fg:28052",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 29,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": true,
+            "stress": 73.5
+          },
+          {
+            "playerName": "Mason Montgomery",
+            "playerKey": "fg:29770",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 25.8
+          },
+          {
+            "playerName": "Isaac Mattson",
+            "playerKey": "fg:20385",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Carmen Mlodzinski",
+            "playerKey": "fg:27572",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 76,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 19
+          }
+        ]
+      },
+      "texas rangers": {
+        "teamSlug": "rangers",
+        "teamAbbr": "TEX",
+        "teamName": "Texas Rangers",
+        "stressScore": 73,
+        "tag": "taxed",
+        "topPitchesLast3": 45,
+        "topPitchesLast6": 91,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Jacob Latz CL 15p/3d 1 uses/3d",
+          "Jakob Junis SU8",
+          "Cole Winn SU7 30p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Texas Rangers leverage relief looks taxed: 45 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Cole Winn (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Jacob Latz",
+            "playerKey": "fg:21306",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 40
+          },
+          {
+            "playerName": "Jakob Junis",
+            "playerKey": "fg:13619",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 15.3
+          },
+          {
+            "playerName": "Cole Winn",
+            "playerKey": "fg:22113",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 30,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 63.5
+          },
+          {
+            "playerName": "Robby Ahlstrom",
+            "playerKey": "fg:30167",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 33,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.2
+          },
+          {
+            "playerName": "Peyton Gray",
+            "playerKey": "fg:25310",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35
+          },
+          {
+            "playerName": "Joe Ross",
+            "playerKey": "fg:12972",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Tyler Alexander",
+            "playerKey": "fg:17735",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 11,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 2.8
+          },
+          {
+            "playerName": "Cal Quantrill",
+            "playerKey": "fg:19312",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 38,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 49.9
+          }
+        ]
+      },
+      "tex": {
+        "teamSlug": "rangers",
+        "teamAbbr": "TEX",
+        "teamName": "Texas Rangers",
+        "stressScore": 73,
+        "tag": "taxed",
+        "topPitchesLast3": 45,
+        "topPitchesLast6": 91,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Jacob Latz CL 15p/3d 1 uses/3d",
+          "Jakob Junis SU8",
+          "Cole Winn SU7 30p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Texas Rangers leverage relief looks taxed: 45 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Cole Winn (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Jacob Latz",
+            "playerKey": "fg:21306",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 40
+          },
+          {
+            "playerName": "Jakob Junis",
+            "playerKey": "fg:13619",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 15.3
+          },
+          {
+            "playerName": "Cole Winn",
+            "playerKey": "fg:22113",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 30,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 63.5
+          },
+          {
+            "playerName": "Robby Ahlstrom",
+            "playerKey": "fg:30167",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 33,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.2
+          },
+          {
+            "playerName": "Peyton Gray",
+            "playerKey": "fg:25310",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 19,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 35
+          },
+          {
+            "playerName": "Joe Ross",
+            "playerKey": "fg:12972",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Tyler Alexander",
+            "playerKey": "fg:17735",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 11,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 2.8
+          },
+          {
+            "playerName": "Cal Quantrill",
+            "playerKey": "fg:19312",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 38,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 49.9
+          }
+        ]
+      },
+      "tampa bay rays": {
+        "teamSlug": "rays",
+        "teamAbbr": "TBR",
+        "teamName": "Tampa Bay Rays",
+        "stressScore": 46,
+        "tag": "stable",
+        "topPitchesLast3": 10,
+        "topPitchesLast6": 93,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Bryan Baker CL",
+          "Kevin Kelly SU8",
+          "Garrett Cleavinger SU7 10p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Tampa Bay Rays leverage relief is stable: 10 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Bryan Baker",
+            "playerKey": "fg:19804",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 16.3
+          },
+          {
+            "playerName": "Kevin Kelly",
+            "playerKey": "fg:25679",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 15.5
+          },
+          {
+            "playerName": "Garrett Cleavinger",
+            "playerKey": "fg:17897",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 10,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.5
+          },
+          {
+            "playerName": "Cole Sulser",
+            "playerKey": "fg:15256",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 39,
+            "pitchesLast6": 57,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 55.5
+          },
+          {
+            "playerName": "Craig Kimbrel",
+            "playerKey": "fg:6655",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 51.9
+          },
+          {
+            "playerName": "Cam Booser",
+            "playerKey": "fg:16061",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 37.7
+          },
+          {
+            "playerName": "Casey Legumina",
+            "playerKey": "fg:25921",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 3.5
+          },
+          {
+            "playerName": "Ian Seymour",
+            "playerKey": "fg:27932",
+            "role": "LR",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 13.8
+          }
+        ]
+      },
+      "tbr": {
+        "teamSlug": "rays",
+        "teamAbbr": "TBR",
+        "teamName": "Tampa Bay Rays",
+        "stressScore": 46,
+        "tag": "stable",
+        "topPitchesLast3": 10,
+        "topPitchesLast6": 93,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Bryan Baker CL",
+          "Kevin Kelly SU8",
+          "Garrett Cleavinger SU7 10p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Tampa Bay Rays leverage relief is stable: 10 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Bryan Baker",
+            "playerKey": "fg:19804",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 16.3
+          },
+          {
+            "playerName": "Kevin Kelly",
+            "playerKey": "fg:25679",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 22,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 15.5
+          },
+          {
+            "playerName": "Garrett Cleavinger",
+            "playerKey": "fg:17897",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 10,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.5
+          },
+          {
+            "playerName": "Cole Sulser",
+            "playerKey": "fg:15256",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 39,
+            "pitchesLast6": 57,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 55.5
+          },
+          {
+            "playerName": "Craig Kimbrel",
+            "playerKey": "fg:6655",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 17,
+            "pitchesLast6": 17,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 51.9
+          },
+          {
+            "playerName": "Cam Booser",
+            "playerKey": "fg:16061",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 24,
+            "pitchesLast6": 34,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 37.7
+          },
+          {
+            "playerName": "Casey Legumina",
+            "playerKey": "fg:25921",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 3.5
+          },
+          {
+            "playerName": "Ian Seymour",
+            "playerKey": "fg:27932",
+            "role": "LR",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 55,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 13.8
+          }
+        ]
+      },
+      "boston red sox": {
+        "teamSlug": "red-sox",
+        "teamAbbr": "BOS",
+        "teamName": "Boston Red Sox",
+        "stressScore": 71,
+        "tag": "taxed",
+        "topPitchesLast3": 42,
+        "topPitchesLast6": 78,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Aroldis Chapman CL 15p/3d 1 uses/3d",
+          "Garrett Whitlock SU8 11p/3d 1 uses/3d override",
+          "Justin Slaten SU7 16p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Boston Red Sox leverage relief looks taxed: 42 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Garrett Whitlock (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Aroldis Chapman",
+            "playerKey": "fg:10233",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 35.8
+          },
+          {
+            "playerName": "Garrett Whitlock",
+            "playerKey": "fg:20191",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": true,
+            "stress": 59.8
+          },
+          {
+            "playerName": "Justin Slaten",
+            "playerKey": "fg:25648",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 41.6
+          },
+          {
+            "playerName": "Tyron Guerrero",
+            "playerKey": "fg:11691",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 30,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 55.5
+          },
+          {
+            "playerName": "Danny Coulombe",
+            "playerKey": "fg:13293",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 46.5
+          },
+          {
+            "playerName": "Tommy Kahnle",
+            "playerKey": "fg:11384",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 10,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 24.3
+          },
+          {
+            "playerName": "Greg Weissert",
+            "playerKey": "fg:20375",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 5
+          },
+          {
+            "playerName": "Ryan Watson",
+            "playerKey": "fg:27853",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 8.8
+          }
+        ]
+      },
+      "bos": {
+        "teamSlug": "red-sox",
+        "teamAbbr": "BOS",
+        "teamName": "Boston Red Sox",
+        "stressScore": 71,
+        "tag": "taxed",
+        "topPitchesLast3": 42,
+        "topPitchesLast6": 78,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Aroldis Chapman CL 15p/3d 1 uses/3d",
+          "Garrett Whitlock SU8 11p/3d 1 uses/3d override",
+          "Justin Slaten SU7 16p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Boston Red Sox leverage relief looks taxed: 42 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Garrett Whitlock (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Aroldis Chapman",
+            "playerKey": "fg:10233",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 35.8
+          },
+          {
+            "playerName": "Garrett Whitlock",
+            "playerKey": "fg:20191",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 11,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W"
+            ],
+            "unavailable": true,
+            "stress": 59.8
+          },
+          {
+            "playerName": "Justin Slaten",
+            "playerKey": "fg:25648",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 41.6
+          },
+          {
+            "playerName": "Tyron Guerrero",
+            "playerKey": "fg:11691",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 30,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 55.5
+          },
+          {
+            "playerName": "Danny Coulombe",
+            "playerKey": "fg:13293",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 46.5
+          },
+          {
+            "playerName": "Tommy Kahnle",
+            "playerKey": "fg:11384",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 10,
+            "pitchesLast6": 25,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 24.3
+          },
+          {
+            "playerName": "Greg Weissert",
+            "playerKey": "fg:20375",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 5
+          },
+          {
+            "playerName": "Ryan Watson",
+            "playerKey": "fg:27853",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 8.8
+          }
+        ]
+      },
+      "cincinnati reds": {
+        "teamSlug": "reds",
+        "teamAbbr": "CIN",
+        "teamName": "Cincinnati Reds",
+        "stressScore": 73,
+        "tag": "taxed",
+        "topPitchesLast3": 63,
+        "topPitchesLast6": 131,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Tony Santillan CL 14p/3d 1 uses/3d",
+          "Brock Burke SU8 28p/3d 1 uses/3d",
+          "Tejay Antone SU7 21p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Cincinnati Reds leverage relief looks taxed: 63 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Tony Santillan",
+            "playerKey": "fg:19926",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 41
+          },
+          {
+            "playerName": "Brock Burke",
+            "playerKey": "fg:17968",
+            "role": "SU8",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 52.9
+          },
+          {
+            "playerName": "Tejay Antone",
+            "playerKey": "fg:16233",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 49.3
+          },
+          {
+            "playerName": "Chase Petty",
+            "playerKey": "fg:30170",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 26,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L",
+              "W"
+            ],
+            "unavailable": true,
+            "stress": 65.6
+          },
+          {
+            "playerName": "Zach Maxwell",
+            "playerKey": "fg:31610",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 51.9
+          },
+          {
+            "playerName": "Caleb Ferguson",
+            "playerKey": "fg:19349",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 35.5
+          },
+          {
+            "playerName": "Sam Moll",
+            "playerKey": "fg:14874",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 13,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 3.3
+          },
+          {
+            "playerName": "Chris Paddack",
+            "playerKey": "fg:20099",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": false,
+            "stress": 0
+          }
+        ]
+      },
+      "cin": {
+        "teamSlug": "reds",
+        "teamAbbr": "CIN",
+        "teamName": "Cincinnati Reds",
+        "stressScore": 73,
+        "tag": "taxed",
+        "topPitchesLast3": 63,
+        "topPitchesLast6": 131,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Tony Santillan CL 14p/3d 1 uses/3d",
+          "Brock Burke SU8 28p/3d 1 uses/3d",
+          "Tejay Antone SU7 21p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Cincinnati Reds leverage relief looks taxed: 63 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Tony Santillan",
+            "playerKey": "fg:19926",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 14,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 41
+          },
+          {
+            "playerName": "Brock Burke",
+            "playerKey": "fg:17968",
+            "role": "SU8",
+            "throws": "L",
+            "pitchesLast3": 28,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 52.9
+          },
+          {
+            "playerName": "Tejay Antone",
+            "playerKey": "fg:16233",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 49.3
+          },
+          {
+            "playerName": "Chase Petty",
+            "playerKey": "fg:30170",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 26,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L",
+              "W"
+            ],
+            "unavailable": true,
+            "stress": 65.6
+          },
+          {
+            "playerName": "Zach Maxwell",
+            "playerKey": "fg:31610",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 65,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 51.9
+          },
+          {
+            "playerName": "Caleb Ferguson",
+            "playerKey": "fg:19349",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 20,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 35.5
+          },
+          {
+            "playerName": "Sam Moll",
+            "playerKey": "fg:14874",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 13,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 3.3
+          },
+          {
+            "playerName": "Chris Paddack",
+            "playerKey": "fg:20099",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": false,
+            "stress": 0
+          }
+        ]
+      },
+      "colorado rockies": {
+        "teamSlug": "rockies",
+        "teamAbbr": "COL",
+        "teamName": "Colorado Rockies",
+        "stressScore": 86,
+        "tag": "taxed",
+        "topPitchesLast3": 65,
+        "topPitchesLast6": 125,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Antonio Senzatela CL",
+          "Juan Mejia SU8 18p/3d 1 uses/3d",
+          "Seth Halvorsen SU7 47p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Colorado Rockies leverage relief looks taxed: 65 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Seth Halvorsen (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Antonio Senzatela",
+            "playerKey": "fg:15488",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 19
+          },
+          {
+            "playerName": "Juan Mejia",
+            "playerKey": "fg:23237",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 41.4
+          },
+          {
+            "playerName": "Seth Halvorsen",
+            "playerKey": "fg:33294",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 47,
+            "pitchesLast6": 61,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 82.9
+          },
+          {
+            "playerName": "Zach Agnos",
+            "playerKey": "fg:31552",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 60,
+            "pitchesLast6": 60,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 73
+          },
+          {
+            "playerName": "Jaden Hill",
+            "playerKey": "fg:30250",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 30,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30.3
+          },
+          {
+            "playerName": "Brennan Bernardino",
+            "playerKey": "fg:16835",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 9,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 26
+          },
+          {
+            "playerName": "Eiberson Castellano",
+            "playerKey": "eiberson castellano",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Blas Castaño",
+            "playerKey": "fg:26117",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 46,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.3
+          }
+        ]
+      },
+      "col": {
+        "teamSlug": "rockies",
+        "teamAbbr": "COL",
+        "teamName": "Colorado Rockies",
+        "stressScore": 86,
+        "tag": "taxed",
+        "topPitchesLast3": 65,
+        "topPitchesLast6": 125,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Antonio Senzatela CL",
+          "Juan Mejia SU8 18p/3d 1 uses/3d",
+          "Seth Halvorsen SU7 47p/3d 2 uses/3d"
+        ],
+        "reasons": [
+          "Colorado Rockies leverage relief looks taxed: 65 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Seth Halvorsen (SU7)."
+        ],
+        "players": [
+          {
+            "playerName": "Antonio Senzatela",
+            "playerKey": "fg:15488",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 36,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "B",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 19
+          },
+          {
+            "playerName": "Juan Mejia",
+            "playerKey": "fg:23237",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 28,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 41.4
+          },
+          {
+            "playerName": "Seth Halvorsen",
+            "playerKey": "fg:33294",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 47,
+            "pitchesLast6": 61,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 82.9
+          },
+          {
+            "playerName": "Zach Agnos",
+            "playerKey": "fg:31552",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 60,
+            "pitchesLast6": 60,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 73
+          },
+          {
+            "playerName": "Jaden Hill",
+            "playerKey": "fg:30250",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 30,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30.3
+          },
+          {
+            "playerName": "Brennan Bernardino",
+            "playerKey": "fg:16835",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 9,
+            "pitchesLast6": 35,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 26
+          },
+          {
+            "playerName": "Eiberson Castellano",
+            "playerKey": "eiberson castellano",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": true,
+            "stress": 24
+          },
+          {
+            "playerName": "Blas Castaño",
+            "playerKey": "fg:26117",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 46,
+            "pitchesLast6": 46,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 58.3
+          }
+        ]
+      },
+      "kansas city royals": {
+        "teamSlug": "royals",
+        "teamAbbr": "KCR",
+        "teamName": "Kansas City Royals",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 87,
+        "topPitchesLast6": 184,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Alex Lange CL 31p/3d 1 uses/3d",
+          "Lucas Erceg SU8 43p/3d 1 uses/3d",
+          "Daniel Lynch IV SU7 13p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Kansas City Royals leverage relief looks taxed: 87 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Alex Lange (CL), Lucas Erceg (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Alex Lange",
+            "playerKey": "fg:19883",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 82,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "L",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 65.3
+          },
+          {
+            "playerName": "Lucas Erceg",
+            "playerKey": "fg:19360",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 43,
+            "pitchesLast6": 59,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 69.2
+          },
+          {
+            "playerName": "Daniel Lynch IV",
+            "playerKey": "fg:21537",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 13,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 41.2
+          },
+          {
+            "playerName": "Matt Strahm",
+            "playerKey": "fg:13799",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 22,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 48.4
+          },
+          {
+            "playerName": "Eli Morgan",
+            "playerKey": "fg:20203",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 13,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 47.7
+          },
+          {
+            "playerName": "John Schreiber",
+            "playerKey": "fg:20020",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 28,
+            "pitchesLast6": 56,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 46.4
+          },
+          {
+            "playerName": "Beck Way",
+            "playerKey": "fg:27877",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 43.6
+          },
+          {
+            "playerName": "Steven Cruz",
+            "playerKey": "fg:23165",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 39.3
+          }
+        ]
+      },
+      "kcr": {
+        "teamSlug": "royals",
+        "teamAbbr": "KCR",
+        "teamName": "Kansas City Royals",
+        "stressScore": 100,
+        "tag": "taxed",
+        "topPitchesLast3": 87,
+        "topPitchesLast6": 184,
+        "taxedArmCount": 2,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Alex Lange CL 31p/3d 1 uses/3d",
+          "Lucas Erceg SU8 43p/3d 1 uses/3d",
+          "Daniel Lynch IV SU7 13p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Kansas City Royals leverage relief looks taxed: 87 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Alex Lange (CL), Lucas Erceg (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "Alex Lange",
+            "playerKey": "fg:19883",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 31,
+            "pitchesLast6": 82,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "L",
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 65.3
+          },
+          {
+            "playerName": "Lucas Erceg",
+            "playerKey": "fg:19360",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 43,
+            "pitchesLast6": 59,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 69.2
+          },
+          {
+            "playerName": "Daniel Lynch IV",
+            "playerKey": "fg:21537",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 13,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H",
+              "BS",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 41.2
+          },
+          {
+            "playerName": "Matt Strahm",
+            "playerKey": "fg:13799",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 22,
+            "pitchesLast6": 43,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "BS",
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 48.4
+          },
+          {
+            "playerName": "Eli Morgan",
+            "playerKey": "fg:20203",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 13,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 47.7
+          },
+          {
+            "playerName": "John Schreiber",
+            "playerKey": "fg:20020",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 28,
+            "pitchesLast6": 56,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 46.4
+          },
+          {
+            "playerName": "Beck Way",
+            "playerKey": "fg:27877",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 43.6
+          },
+          {
+            "playerName": "Steven Cruz",
+            "playerKey": "fg:23165",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 39.3
+          }
+        ]
+      },
+      "detroit tigers": {
+        "teamSlug": "tigers",
+        "teamAbbr": "DET",
+        "teamName": "Detroit Tigers",
+        "stressScore": 69,
+        "tag": "watch",
+        "topPitchesLast3": 24,
+        "topPitchesLast6": 46,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Kenley Jansen CL 9p/3d 1 uses/3d override",
+          "Will Vest SU8",
+          "Kyle Finnegan SU7 15p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Detroit Tigers leverage relief is watch: 24 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Kenley Jansen (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Kenley Jansen",
+            "playerKey": "fg:3096",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 9,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 53.5
+          },
+          {
+            "playerName": "Will Vest",
+            "playerKey": "fg:19769",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": false,
+            "stress": 10
+          },
+          {
+            "playerName": "Kyle Finnegan",
+            "playerKey": "fg:15009",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 41.3
+          },
+          {
+            "playerName": "Tyler Holton",
+            "playerKey": "fg:26231",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 56.6
+          },
+          {
+            "playerName": "Drew Anderson",
+            "playerKey": "fg:15130",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 36.3
+          },
+          {
+            "playerName": "Drew Sommers",
+            "playerKey": "fg:32026",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30
+          },
+          {
+            "playerName": "Enmanuel De Jesus",
+            "playerKey": "fg:18554",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 3.8
+          },
+          {
+            "playerName": "Jacob Waguespack",
+            "playerKey": "fg:18318",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 55
+          }
+        ]
+      },
+      "det": {
+        "teamSlug": "tigers",
+        "teamAbbr": "DET",
+        "teamName": "Detroit Tigers",
+        "stressScore": 69,
+        "tag": "watch",
+        "topPitchesLast3": 24,
+        "topPitchesLast6": 46,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 2,
+        "keyArms": [
+          "Kenley Jansen CL 9p/3d 1 uses/3d override",
+          "Will Vest SU8",
+          "Kyle Finnegan SU7 15p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Detroit Tigers leverage relief is watch: 24 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Kenley Jansen (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Kenley Jansen",
+            "playerKey": "fg:3096",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 9,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 53.5
+          },
+          {
+            "playerName": "Will Vest",
+            "playerKey": "fg:19769",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 0,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 0,
+            "flags": [],
+            "unavailable": false,
+            "stress": 10
+          },
+          {
+            "playerName": "Kyle Finnegan",
+            "playerKey": "fg:15009",
+            "role": "SU7",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 37,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 41.3
+          },
+          {
+            "playerName": "Tyler Holton",
+            "playerKey": "fg:26231",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 31,
+            "pitchesLast6": 47,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 56.6
+          },
+          {
+            "playerName": "Drew Anderson",
+            "playerKey": "fg:15130",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 21,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 36.3
+          },
+          {
+            "playerName": "Drew Sommers",
+            "playerKey": "fg:32026",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 15,
+            "pitchesLast6": 32,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 30
+          },
+          {
+            "playerName": "Enmanuel De Jesus",
+            "playerKey": "fg:18554",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 15,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 3.8
+          },
+          {
+            "playerName": "Jacob Waguespack",
+            "playerKey": "fg:18318",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 20,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 55
+          }
+        ]
+      },
+      "minnesota twins": {
+        "teamSlug": "twins",
+        "teamAbbr": "MIN",
+        "teamName": "Minnesota Twins",
+        "stressScore": 85,
+        "tag": "taxed",
+        "topPitchesLast3": 70,
+        "topPitchesLast6": 197,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Travis Adams CL 37p/3d 1 uses/3d",
+          "Yoendrys Gómez CL 15p/3d 1 uses/3d",
+          "Andrew Morris CL 9p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Minnesota Twins leverage relief looks taxed: 70 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Travis Adams (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Travis Adams",
+            "playerKey": "fg:30180",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 37,
+            "pitchesLast6": 68,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 66.6
+          },
+          {
+            "playerName": "Yoendrys Gómez",
+            "playerKey": "fg:22872",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 42.5
+          },
+          {
+            "playerName": "Andrew Morris",
+            "playerKey": "fg:31891",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.2
+          },
+          {
+            "playerName": "Anthony Banda",
+            "playerKey": "fg:14706",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 9,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 37
+          },
+          {
+            "playerName": "Justin Lawrence",
+            "playerKey": "fg:17639",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 24,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 41.7
+          },
+          {
+            "playerName": "Taylor Rogers",
+            "playerKey": "fg:13449",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 22,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 40.9
+          },
+          {
+            "playerName": "Eric Orze",
+            "playerKey": "fg:27626",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 32.6
+          },
+          {
+            "playerName": "Cody Laweryson",
+            "playerKey": "fg:26429",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 46.6
+          }
+        ]
+      },
+      "min": {
+        "teamSlug": "twins",
+        "teamAbbr": "MIN",
+        "teamName": "Minnesota Twins",
+        "stressScore": 85,
+        "tag": "taxed",
+        "topPitchesLast3": 70,
+        "topPitchesLast6": 197,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "Travis Adams CL 37p/3d 1 uses/3d",
+          "Yoendrys Gómez CL 15p/3d 1 uses/3d",
+          "Andrew Morris CL 9p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "Minnesota Twins leverage relief looks taxed: 70 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Travis Adams (CL)."
+        ],
+        "players": [
+          {
+            "playerName": "Travis Adams",
+            "playerKey": "fg:30180",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 37,
+            "pitchesLast6": 68,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 66.6
+          },
+          {
+            "playerName": "Yoendrys Gómez",
+            "playerKey": "fg:22872",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 15,
+            "pitchesLast6": 42,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 42.5
+          },
+          {
+            "playerName": "Andrew Morris",
+            "playerKey": "fg:31891",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 39.2
+          },
+          {
+            "playerName": "Anthony Banda",
+            "playerKey": "fg:14706",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 9,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 37
+          },
+          {
+            "playerName": "Justin Lawrence",
+            "playerKey": "fg:17639",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 24,
+            "pitchesLast6": 50,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "L"
+            ],
+            "unavailable": false,
+            "stress": 41.7
+          },
+          {
+            "playerName": "Taylor Rogers",
+            "playerKey": "fg:13449",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 22,
+            "pitchesLast6": 53,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W",
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 40.9
+          },
+          {
+            "playerName": "Eric Orze",
+            "playerKey": "fg:27626",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 16,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 32.6
+          },
+          {
+            "playerName": "Cody Laweryson",
+            "playerKey": "fg:26429",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 32,
+            "pitchesLast6": 44,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 46.6
+          }
+        ]
+      },
+      "chicago white sox": {
+        "teamSlug": "white-sox",
+        "teamAbbr": "CHW",
+        "teamName": "Chicago White Sox",
+        "stressScore": 45,
+        "tag": "stable",
+        "topPitchesLast3": 7,
+        "topPitchesLast6": 98,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Bryan Hudson CL 7p/3d 1 uses/3d",
+          "Sean Newcomb CL",
+          "Seranthony Domínguez CL"
+        ],
+        "reasons": [
+          "Chicago White Sox leverage relief is stable: 7 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Bryan Hudson",
+            "playerKey": "fg:19924",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 7,
+            "pitchesLast6": 23,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 31.4
+          },
+          {
+            "playerName": "Sean Newcomb",
+            "playerKey": "fg:16943",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 16.8
+          },
+          {
+            "playerName": "Seranthony Domínguez",
+            "playerKey": "fg:19249",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 16.8
+          },
+          {
+            "playerName": "Grant Taylor",
+            "playerKey": "fg:33927",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 15.3
+          },
+          {
+            "playerName": "Joe Rock",
+            "playerKey": "fg:30016",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 60,
+            "pitchesLast6": 60,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 73
+          },
+          {
+            "playerName": "Chris Murphy",
+            "playerKey": "fg:26214",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 48.7
+          },
+          {
+            "playerName": "Brandon Eisert",
+            "playerKey": "fg:27668",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 43.6
+          },
+          {
+            "playerName": "Tyler Davis",
+            "playerKey": "fg:34847",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 18,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 21.7
+          }
+        ]
+      },
+      "chw": {
+        "teamSlug": "white-sox",
+        "teamAbbr": "CHW",
+        "teamName": "Chicago White Sox",
+        "stressScore": 45,
+        "tag": "stable",
+        "topPitchesLast3": 7,
+        "topPitchesLast6": 98,
+        "taxedArmCount": 0,
+        "unavailableArmCount": 1,
+        "keyArms": [
+          "Bryan Hudson CL 7p/3d 1 uses/3d",
+          "Sean Newcomb CL",
+          "Seranthony Domínguez CL"
+        ],
+        "reasons": [
+          "Chicago White Sox leverage relief is stable: 7 high-leverage pitches over the last 3 days."
+        ],
+        "players": [
+          {
+            "playerName": "Bryan Hudson",
+            "playerKey": "fg:19924",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 7,
+            "pitchesLast6": 23,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 31.4
+          },
+          {
+            "playerName": "Sean Newcomb",
+            "playerKey": "fg:16943",
+            "role": "CL",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 16.8
+          },
+          {
+            "playerName": "Seranthony Domínguez",
+            "playerKey": "fg:19249",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 27,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 16.8
+          },
+          {
+            "playerName": "Grant Taylor",
+            "playerKey": "fg:33927",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 21,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 1,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 15.3
+          },
+          {
+            "playerName": "Joe Rock",
+            "playerKey": "fg:30016",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 60,
+            "pitchesLast6": 60,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": false,
+            "stress": 73
+          },
+          {
+            "playerName": "Chris Murphy",
+            "playerKey": "fg:26214",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 14,
+            "pitchesLast6": 14,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 1,
+            "flags": [],
+            "unavailable": true,
+            "stress": 48.7
+          },
+          {
+            "playerName": "Brandon Eisert",
+            "playerKey": "fg:27668",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 27,
+            "pitchesLast6": 48,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 43.6
+          },
+          {
+            "playerName": "Tyler Davis",
+            "playerKey": "fg:34847",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 9,
+            "pitchesLast6": 18,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 21.7
+          }
+        ]
+      },
+      "new york yankees": {
+        "teamSlug": "yankees",
+        "teamAbbr": "NYY",
+        "teamName": "New York Yankees",
+        "stressScore": 82,
+        "tag": "taxed",
+        "topPitchesLast3": 72,
+        "topPitchesLast6": 153,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "David Bednar CL 13p/3d 1 uses/3d",
+          "Fernando Cruz SU8 47p/3d 2 uses/3d",
+          "Brent Headrick SU7 12p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "New York Yankees leverage relief looks taxed: 72 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Fernando Cruz (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "David Bednar",
+            "playerKey": "fg:19569",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 40,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 40.4
+          },
+          {
+            "playerName": "Fernando Cruz",
+            "playerKey": "fg:7048",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 47,
+            "pitchesLast6": 72,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 85.6
+          },
+          {
+            "playerName": "Brent Headrick",
+            "playerKey": "fg:27702",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 12,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 39.9
+          },
+          {
+            "playerName": "Jake Bird",
+            "playerKey": "fg:21267",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 52,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 39
+          },
+          {
+            "playerName": "Camilo Doval",
+            "playerKey": "fg:21992",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 40,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 34.4
+          },
+          {
+            "playerName": "Ryan Yarbrough",
+            "playerKey": "fg:16502",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 9.8
+          },
+          {
+            "playerName": "Tim Hill",
+            "playerKey": "fg:16814",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 12,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 3
+          },
+          {
+            "playerName": "Paul Blackburn",
+            "playerKey": "fg:14739",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 9.5
+          }
+        ]
+      },
+      "nyy": {
+        "teamSlug": "yankees",
+        "teamAbbr": "NYY",
+        "teamName": "New York Yankees",
+        "stressScore": 82,
+        "tag": "taxed",
+        "topPitchesLast3": 72,
+        "topPitchesLast6": 153,
+        "taxedArmCount": 1,
+        "unavailableArmCount": 0,
+        "keyArms": [
+          "David Bednar CL 13p/3d 1 uses/3d",
+          "Fernando Cruz SU8 47p/3d 2 uses/3d",
+          "Brent Headrick SU7 12p/3d 1 uses/3d"
+        ],
+        "reasons": [
+          "New York Yankees leverage relief looks taxed: 72 high-leverage pitches over the last 3 days.",
+          "Taxed/limited arms: Fernando Cruz (SU8)."
+        ],
+        "players": [
+          {
+            "playerName": "David Bednar",
+            "playerKey": "fg:19569",
+            "role": "CL",
+            "throws": "R",
+            "pitchesLast3": 13,
+            "pitchesLast6": 40,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 2,
+            "flags": [
+              "W",
+              "Sv"
+            ],
+            "unavailable": false,
+            "stress": 40.4
+          },
+          {
+            "playerName": "Fernando Cruz",
+            "playerKey": "fg:7048",
+            "role": "SU8",
+            "throws": "R",
+            "pitchesLast3": 47,
+            "pitchesLast6": 72,
+            "usedDaysLast3": 2,
+            "usedDaysLast6": 3,
+            "flags": [
+              "Sv",
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 85.6
+          },
+          {
+            "playerName": "Brent Headrick",
+            "playerKey": "fg:27702",
+            "role": "SU7",
+            "throws": "L",
+            "pitchesLast3": 12,
+            "pitchesLast6": 41,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [],
+            "unavailable": false,
+            "stress": 39.9
+          },
+          {
+            "playerName": "Jake Bird",
+            "playerKey": "fg:21267",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 20,
+            "pitchesLast6": 52,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "H"
+            ],
+            "unavailable": false,
+            "stress": 39
+          },
+          {
+            "playerName": "Camilo Doval",
+            "playerKey": "fg:21992",
+            "role": "MID",
+            "throws": "R",
+            "pitchesLast3": 18,
+            "pitchesLast6": 40,
+            "usedDaysLast3": 1,
+            "usedDaysLast6": 3,
+            "flags": [
+              "W"
+            ],
+            "unavailable": false,
+            "stress": 34.4
+          },
+          {
+            "playerName": "Ryan Yarbrough",
+            "playerKey": "fg:16502",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 39,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 9.8
+          },
+          {
+            "playerName": "Tim Hill",
+            "playerKey": "fg:16814",
+            "role": "MID",
+            "throws": "L",
+            "pitchesLast3": 0,
+            "pitchesLast6": 12,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [],
+            "unavailable": false,
+            "stress": 3
+          },
+          {
+            "playerName": "Paul Blackburn",
+            "playerKey": "fg:14739",
+            "role": "LR",
+            "throws": "R",
+            "pitchesLast3": 0,
+            "pitchesLast6": 38,
+            "usedDaysLast3": 0,
+            "usedDaysLast6": 2,
+            "flags": [
+              "BS"
+            ],
+            "unavailable": false,
+            "stress": 9.5
+          }
+        ]
+      }
+    }
   }
 }
 

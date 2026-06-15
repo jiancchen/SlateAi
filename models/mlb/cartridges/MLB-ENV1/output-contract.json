@@ -36,6 +36,10 @@
     "weather": [
       "hr_force",
       "effective_hr_force",
+      "game_time_hr_force",
+      "early_game_max_hr_force",
+      "late_game_max_hr_force",
+      "hr_force_persistence_signal",
       "hr_force_run_signal",
       "weather_run_delta",
       "weather_hr_delta"
@@ -47,6 +51,8 @@
       "local_start_hour",
       "local_start_minute",
       "local_timezone",
+      "evening_start_flag",
+      "night_start_flag",
       "late_local_start_flag",
       "visibility_signal",
       "visibility_hits_multiplier",
@@ -67,5 +73,5 @@
       "umpire_walk_delta"
     ]
   },
-  "usageRule": "M2 may consume expected deltas and visibility multipliers as context only while status is shadow-candidate. Umpire deltas must remain zero unless the assignment row is exact; late-start visibility remains a user-prior feature until backtest-calibrated."
+  "usageRule": "M2 may consume expected deltas, game-window HRForce persistence, and visibility multipliers as context only while status is shadow-candidate. For evening/night starts, HRForce promotion must use game-time or early-game hourly persistence rather than a stale current/max value. If persistence is early_carry_fades or early_only_carry, HRForce can support YRFI/first-five but should be clipped for full-game and late-game promotion. Umpire deltas must remain zero unless the assignment row is exact; late-start visibility remains a user-prior feature until backtest-calibrated."
 }

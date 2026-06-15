@@ -168,6 +168,54 @@ const buildDeskGameId = ({ awayDesk, homeDesk, gamePk = null, forceUnique = fals
 
 const emptyAddendumContexts = () => ({ byGamePk: {}, byGameId: {} })
 
+const loadLineupBoardPitcherContexts = async (date) => {
+  const boardPath = path.join(rootDir, 'data-private', 'lineups', 'mlb', `${date}-lineup-board.json`)
+  try {
+    const payload = JSON.parse(await readFile(boardPath, 'utf8'))
+    const boards = Object.values(payload.lineupBoardsByGameId || {})
+    return {
+      byTitle: new Map(boards.map((board) => [board.title, board])),
+      byGameId: new Map(boards.map((board) => [board.gameId, board]))
+    }
+  } catch {
+    return { byTitle: new Map(), byGameId: new Map() }
+  }
+}
+
+const buildRotoWirePrimaryPitcherSummary = async ({ sideContext = null, pitcherCache } = {}) => {
+  if (sideContext?.source !== 'rotowire-primary' || !Number.isFinite(Number(sideContext?.starter?.id))) return null
+  const person = await fetchPitcherPerson(Number(sideContext.starter.id), pitcherCache)
+  if (!person?.id) return null
+  return {
+    ...buildPitcherSummary(person),
+    probableSource: 'rotowire-primary',
+    statLine: sideContext.starter.statLine || '',
+    openerContext: sideContext.opener || null,
+    starterRoleContext: {
+      source: sideContext.source,
+      role: sideContext.role || 'primary',
+      roleLabel: sideContext.starter.roleLabel || '',
+      note: sideContext.note || ''
+    }
+  }
+}
+
+const withLineupBoardOpenerContext = (sideContext = null, opposingStarter = null) => {
+  if (!sideContext) return null
+  const opener = sideContext.opener || opposingStarter?.openerContext || null
+  const roleContext = opposingStarter?.starterRoleContext || {}
+  return {
+    ...sideContext,
+    opener,
+    role: sideContext.role || roleContext.role || sideContext.starter?.role || '',
+    note: sideContext.note || roleContext.note || opener?.note || '',
+    starter: {
+      ...(sideContext.starter || {}),
+      roleLabel: sideContext.starter?.roleLabel || roleContext.roleLabel || ''
+    }
+  }
+}
+
 const loadAddendumContextsForDate = async (date) => {
   try {
     return await loadMlbAddendumContextsFromDb(date)
@@ -2187,16 +2235,15 @@ const buildStarterVsTeamStatmuseByGameSide = ({ date, games }) => {
     const game = byGameId[row.game_id]
     if (!game) return
     const pitcherName = String(row.pitcher_name || '')
+    const rowPitcherKey = normalizeNameToken(pitcherName)
+    const awayPitcherKey = normalizeNameToken(game.awayPitcher?.fullName)
+    const homePitcherKey = normalizeNameToken(game.homePitcher?.fullName)
     const side =
-      pitcherName && pitcherName === game.awayPitcher?.fullName
+      rowPitcherKey && rowPitcherKey === awayPitcherKey
         ? 'away'
-        : pitcherName && pitcherName === game.homePitcher?.fullName
+        : rowPitcherKey && rowPitcherKey === homePitcherKey
           ? 'home'
-          : row.pitcher_team === game.away
-            ? 'away'
-            : row.pitcher_team === game.home
-              ? 'home'
-              : ''
+          : ''
     if (!side) return
 
     byGameSide[`${row.game_id}:${side}`] = {
@@ -3397,6 +3444,7 @@ const main = async () => {
   const standings = await fetchJson(standingsUrl)
   const rtSportsProbablesByMatchup = await fetchRtSportsProbables(options.date)
   const draftKingsEvents = await loadDraftKingsMlbLines(options.date)
+  const lineupBoardContexts = await loadLineupBoardPitcherContexts(options.date)
   const pitcherIds = new Set()
 
   for (const dateEntry of schedule.dates || []) {
@@ -3406,6 +3454,12 @@ const main = async () => {
       const homePitcherId = game.teams?.home?.probablePitcher?.id
       if (awayPitcherId) pitcherIds.add(awayPitcherId)
       if (homePitcherId) pitcherIds.add(homePitcherId)
+    }
+  }
+  for (const board of lineupBoardContexts.byTitle.values()) {
+    for (const side of ['away', 'home']) {
+      const pitcherId = board.pitcherSourceContext?.[side]?.starter?.id
+      if (Number.isFinite(Number(pitcherId))) pitcherIds.add(Number(pitcherId))
     }
   }
 
@@ -3458,7 +3512,7 @@ const main = async () => {
             })
           : null
 
-      const awayPitcher = awayProbable?.id
+      let awayPitcher = awayProbable?.id
         ? buildPitcherSummary(pitcherCache.get(awayProbable.id) || { fullName: awayProbable.fullName || '' })
         : awayFallbackPerson
           ? { ...buildPitcherSummary(awayFallbackPerson), probableSource: 'rtsports-fallback' }
@@ -3466,7 +3520,7 @@ const main = async () => {
               fullName: rtFallback?.awayStarter || awayProbable?.fullName || '',
               record: rtFallback?.awayStarterRecord || ''
             })
-      const homePitcher = homeProbable?.id
+      let homePitcher = homeProbable?.id
         ? buildPitcherSummary(pitcherCache.get(homeProbable.id) || { fullName: homeProbable.fullName || '' })
         : homeFallbackPerson
           ? { ...buildPitcherSummary(homeFallbackPerson), probableSource: 'rtsports-fallback' }
@@ -3474,6 +3528,32 @@ const main = async () => {
               fullName: rtFallback?.homeStarter || homeProbable?.fullName || '',
               record: rtFallback?.homeStarterRecord || ''
             })
+      const lineupBoardContext =
+        lineupBoardContexts.byTitle.get(`${awayDesk} @ ${homeDesk}`) ||
+        lineupBoardContexts.byGameId.get(`${slugifyDeskTeam(awayDesk)}-${slugifyDeskTeam(homeDesk)}`) ||
+        null
+      const boardPitcherContext = lineupBoardContext?.pitcherSourceContext
+        ? {
+            away: withLineupBoardOpenerContext(
+              lineupBoardContext.pitcherSourceContext.away,
+              lineupBoardContext.home?.opposingStarter
+            ),
+            home: withLineupBoardOpenerContext(
+              lineupBoardContext.pitcherSourceContext.home,
+              lineupBoardContext.away?.opposingStarter
+            )
+          }
+        : null
+      const awayPrimaryPitcher = await buildRotoWirePrimaryPitcherSummary({
+        sideContext: boardPitcherContext?.away,
+        pitcherCache
+      })
+      const homePrimaryPitcher = await buildRotoWirePrimaryPitcherSummary({
+        sideContext: boardPitcherContext?.home,
+        pitcherCache
+      })
+      if (awayPrimaryPitcher) awayPitcher = awayPrimaryPitcher
+      if (homePrimaryPitcher) homePitcher = homePrimaryPitcher
       const boardOdds = await parseMatchupOdds(awayDesk, homeDesk, { draftKingsEvents, date: options.date })
 
       const matchupKey = `${slugifyDeskTeam(awayDesk)}-${slugifyDeskTeam(homeDesk)}`
@@ -3496,6 +3576,7 @@ const main = async () => {
         startMinutes: getPtStartMinutes(game.gameDate),
         awayPitcher,
         homePitcher,
+        pitcherSourceContext: boardPitcherContext,
         spread: boardOdds.spread,
         total: boardOdds.total,
         moneyline: boardOdds.moneyline,
@@ -3560,10 +3641,12 @@ const main = async () => {
       ...game,
       parkContext: addendumContext?.parkContext ?? game.parkContext ?? null,
       environmentAdjustmentContext: addendumContext?.environmentAdjustmentContext ?? game.environmentAdjustmentContext ?? null,
+      ficDailyMatchupContext: addendumContext?.ficDailyMatchupContext ?? game.ficDailyMatchupContext ?? null,
       reliefProjectionContext: addendumContext?.reliefProjectionContext ?? game.reliefProjectionContext ?? null,
       metadata: {
         ...(game.metadata || {}),
         ...(addendumContext?.environmentAdjustmentContext ? { environmentAddendum: 'MLB-ENV1' } : {}),
+        ...(addendumContext?.ficDailyMatchupContext ? { ficDailyMatchupAddendum: 'FantasyInfoCentral Daily Matchups' } : {}),
         ...(hasReliefProjection ? { reliefProjectionAddendum: 'MLB-RP2' } : {})
       },
       awayPitcher: {

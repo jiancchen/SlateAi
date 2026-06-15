@@ -17,6 +17,7 @@ It writes `mlb_game_environment_adjustments_daily` and a dated JSON artifact und
 - HRForce `>= 1.4` is a higher run / HR carry signal.
 - HRForce `< 1.4` is lower run carry.
 - HRForce N/A in dome/no-weather-impact settings is treated as lower weather carry.
+- For evening starts at or after 6:00 PM local and night starts at or after 7:00 PM local, ENV1 stores game-window HRForce from FIC hourly rows. M2 should promote carry only when `game_time_hr_force` or `early_game_max_hr_force` remains `>= 1.4`; otherwise the daily/current HRForce becomes a caution/watch signal, not a YRFI/over/HR promotion. If `hr_force_persistence_signal` is `early_carry_fades` or `early_only_carry`, keep any HRForce credit mostly in first-inning/first-five logic and clip full-game/late-game carry promotion.
 - Games starting at or after 8:00 PM local ballpark time receive a shadow visibility prior: hits multiplier `0.90`, HR multiplier `0.80`, runs multiplier `0.95`, with additive deltas exposed separately for calibration.
 - Umpire adjustments are only applied when the assignment is an exact game/date match. Unresolved or stale assignment rows record zero umpire delta.
 
@@ -25,6 +26,7 @@ It writes `mlb_game_environment_adjustments_daily` and a dated JSON artifact und
 - `expected_total_runs_delta`
 - `expected_hits_delta`
 - `expected_hr_delta`
+- `game_time_hr_force`, `early_game_max_hr_force`, `late_game_max_hr_force`, and `hr_force_persistence_signal`
 - `expected_k_delta`
 - `expected_walk_delta`
 - `run_environment_signal`

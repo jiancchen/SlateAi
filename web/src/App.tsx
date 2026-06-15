@@ -139,6 +139,60 @@ const impliedPctFromParticipant = (participant: AnyRecord) => {
 const finiteValueOrNull = (value: unknown) =>
   value !== null && value !== undefined && value !== '' && Number.isFinite(Number(value)) ? Number(value) : null
 
+const gameHrForceContext = (game: AnyRecord | null | undefined) => {
+  const weather = game?.environmentAdjustmentContext?.weather || {}
+  const adjustment = game?.analysis?.mlbProjection?.adjustmentChecklist?.environment || {}
+  const fic = game?.ficDailyMatchupContext || {}
+  const candidates = [
+    adjustment.hrForce,
+    adjustment.ficHrForce,
+    adjustment.envHrForce,
+    weather.effectiveHrForce,
+    weather.gameTimeHrForce,
+    weather.hrForce,
+    fic.maxHrForce,
+    fic.averageHrForce
+  ]
+    .map(finiteValueOrNull)
+    .filter((value): value is number => value !== null && value > 0)
+  const hrForce = candidates.length ? Math.max(...candidates) : null
+  const ficRows = finiteValueOrNull(fic.highHrForceRows)
+  const domeOrNeutralNa = /dome|n\/a|missing_hourly_weather/i.test(
+    [
+      weather.signal,
+      weather.hrForcePersistenceSignal,
+      adjustment.flags?.join(' '),
+      adjustment.reasons?.join(' ')
+    ].filter(Boolean).join(' ')
+  )
+  const material =
+    Boolean(adjustment.materialHrForce) ||
+    (hrForce !== null && hrForce >= 1.4) ||
+    (ficRows !== null && ficRows > 0)
+  const sourceParts = [
+    weather.matchStatus || weather.signal || adjustment.envHrForce != null ? 'ENV1' : null,
+    fic.sourceStatus || fic.source ? 'FIC' : null
+  ].filter(Boolean)
+  return {
+    gameHrForce: hrForce,
+    gameHrForceMaterial: material,
+    gameHrForceSignal:
+      hrForce === null
+        ? domeOrNeutralNa
+          ? 'dome-or-neutral'
+          : 'missing'
+        : material
+          ? 'carry'
+          : /dome/i.test(String(weather.signal || fic.label || ''))
+            ? 'dome-or-neutral'
+            : 'neutral',
+    gameHrForceSource: sourceParts.length ? sourceParts.join('+') : '',
+    gameHrForceRunDelta: finiteValueOrNull(adjustment.runDelta ?? weather.runDelta),
+    gameHrForceRows: ficRows,
+    gameHrForceHighSharePct: finiteValueOrNull(fic.highHrForceSharePct)
+  }
+}
+
 const payoffIsPlayable = (entry: AnyRecord) => {
   if (/bet-grade value|thin value/i.test(String(entry.valueGrade || entry.payoffAction || ''))) return true
   if (Number.isFinite(Number(entry.evPer100)) && Number(entry.evPer100) >= 6) return true
@@ -2136,7 +2190,7 @@ const buildGameHighlights = (game: AnyRecord) => {
       chips.push({ tone: 'warning', label: `F5 ${projection.first5EdgeTeam}` })
     }
     if (projection.bridgeEdgeTeam && projection.bridgeEdgeTeam !== projection.edgeTeam) {
-      chips.push({ tone: 'danger', label: `Late ${projection.bridgeEdgeTeam}` })
+      chips.push({ tone: 'danger', label: `Bridge ${projection.bridgeEdgeTeam}` })
     }
     if (pressureLabel) {
       chips.push({
@@ -3271,7 +3325,9 @@ function App() {
               const confidence = Number.isFinite(Number(modelPct)) ? Math.round(Number(modelPct)) : 0
               const gateMetrics = phase.lean.chaosGate?.metrics || {}
               const addendumTags = [
-                Number(gateMetrics.hrForce) >= 1.4 ? `HRF ${formatNumber(gateMetrics.hrForce, 1)}` : null,
+                Number(gateMetrics.hrForce) >= 1.4 ? `ENV HRF ${formatNumber(gateMetrics.hrForce, 1)}` : null,
+                Number(gateMetrics.ficHrForce) >= 1.4 ? `FIC HRF ${formatNumber(gateMetrics.ficHrForce, 1)}` : null,
+                gateMetrics.materialHrForce ? 'Material HRF' : null,
                 Number.isFinite(Number(gateMetrics.envRunDelta)) && Math.abs(Number(gateMetrics.envRunDelta)) >= 0.2
                   ? `ENV ${formatSignedNumber(gateMetrics.envRunDelta, 1)}R`
                   : null,
@@ -3512,6 +3568,7 @@ function App() {
           ? (() => {
               const sideKey = teamSideForName(prop.game, prop.teamName || prop.teamNameFull || prop.team || '')
               if (!sideKey) return null
+              const hrForceContext = gameHrForceContext(prop.game)
               const teamContext = batterTeamPromotionContext(prop.game, sideKey, prop.teamName || prop.teamNameFull || prop.team || '')
               const projectedTeamFullGameResult =
                 teamContext.teamMarketImpliedPct !== null &&
@@ -3543,9 +3600,11 @@ function App() {
                       bvpAvg: ficDailyMatchup.bvpAvg,
                       bvpObp: ficDailyMatchup.bvpObp,
                       bvpOps: ficDailyMatchup.bvpOps,
+                      hrForce: ficDailyMatchup.hrForce,
                       matchupPass: ficHrrCleanPass
                     }
                   : null,
+                ...hrForceContext,
                 ficHrrCleanPass,
                 ficHrrCleanGateRequired: activeFicDailyMatchupRows.length > 0,
                 hrrCleanBoardFiltered:
@@ -3563,8 +3622,8 @@ function App() {
         const valueBoardFilters =
           isCombinedHrrProp
             ? {
-                ...(derivedHrrFilters || {}),
-                ...(prop.valueBoardFilters || {})
+                ...(prop.valueBoardFilters || {}),
+                ...(derivedHrrFilters || {})
               }
             : prop.valueBoardFilters
         const propContextWarnings =
@@ -4309,7 +4368,9 @@ function App() {
       if (first5Lean && Number.isFinite(first5DisplayEdge) && Number.isFinite(first5Line)) {
         const first5ChaosMetrics = first5Total?.chaosGate?.metrics || first5Total?.tailOverlay?.metrics || {}
         const first5AddendumWarnings = [
-          Number(first5ChaosMetrics.hrForce) >= 1.4 ? `HRF ${formatNumber(first5ChaosMetrics.hrForce, 1)}` : null,
+          Number(first5ChaosMetrics.hrForce) >= 1.4 ? `ENV HRF ${formatNumber(first5ChaosMetrics.hrForce, 1)}` : null,
+          Number(first5ChaosMetrics.ficHrForce) >= 1.4 ? `FIC HRF ${formatNumber(first5ChaosMetrics.ficHrForce, 1)}` : null,
+          first5ChaosMetrics.materialHrForce ? 'Material HRF' : null,
           Number.isFinite(Number(first5ChaosMetrics.envRunDelta)) && Math.abs(Number(first5ChaosMetrics.envRunDelta)) >= 0.2
             ? `ENV ${formatSignedNumber(first5ChaosMetrics.envRunDelta, 1)}R`
             : null,
@@ -4322,6 +4383,7 @@ function App() {
           (Boolean(first5Total?.chaosGate?.warning) ||
             Boolean(first5ChaosMetrics.weatherCarry) ||
             Boolean(first5ChaosMetrics.highHrForce) ||
+            Boolean(first5ChaosMetrics.ficHighHrForce) ||
             Boolean(first5ChaosMetrics.rp2LateRunRisk) ||
             Number(first5ChaosMetrics.maxMistakeChaos) >= 55 ||
             Number(first5ChaosMetrics.maxRunClustering) >= 65)
@@ -4927,6 +4989,7 @@ function App() {
       const opposingStarterName = opposingStarterNameForTeam(game, teamName)
       const ficDailyMatchup = findFicDailyMatchup(activeFicDailyMatchupRows, player.name || '', opposingStarterName)
       const ficHrrCleanPass = ficMikesBotdSupportPass(ficDailyMatchup)
+      const hrForceContext = gameHrForceContext(game)
       const projectedTeamFullGameResult =
         teamContext.teamMarketImpliedPct !== null &&
         teamContext.opponentMarketImpliedPct !== null
@@ -4955,9 +5018,11 @@ function App() {
               bvpAvg: ficDailyMatchup.bvpAvg,
               bvpObp: ficDailyMatchup.bvpObp,
               bvpOps: ficDailyMatchup.bvpOps,
+              hrForce: ficDailyMatchup.hrForce,
               matchupPass: ficHrrCleanPass
             }
           : null,
+        ...hrForceContext,
         ficHrrCleanPass,
         ficHrrCleanGateRequired: activeFicDailyMatchupRows.length > 0,
         hrrCleanBoardFiltered:
@@ -6480,6 +6545,16 @@ function App() {
 
   const renderMoneylinePanel = (game: AnyRecord, options: { embedded?: boolean } = {}) => {
     if (!game?.moneyline?.available) return null
+    const sideCoherenceGate = game.analysis?.indicators?.sideCoherenceGate || null
+    const formatSidePassExpression = (value = '') => {
+      if (/full-game side only/i.test(value)) return 'live/early traffic'
+      if (/no taxed ml/i.test(value)) return 'better live price'
+      return value
+    }
+    const ticketPickLabel =
+      game.league === 'MLB' && game.analysis?.indicators?.sideCoherencePassFlag
+        ? `Side pass${sideCoherenceGate?.bestExpression ? ` · ${formatSidePassExpression(sideCoherenceGate.bestExpression)}` : ''}`
+        : `My pick: ${game.analysis?.participant?.name}`
     return (
       <section className={`pick-panel ${options.embedded ? 'embedded' : ''}`} aria-label={`Parlay picks for ${game.title}`}>
         <div className="pick-heading">
@@ -6489,7 +6564,7 @@ function App() {
           </div>
           <div className="pick-side-meta">
             <span className="pick-source">{game.moneyline.provider}</span>
-            <strong className="pick-analysis-note">My pick: {game.analysis?.participant?.name}</strong>
+            <strong className="pick-analysis-note">{ticketPickLabel}</strong>
           </div>
         </div>
 

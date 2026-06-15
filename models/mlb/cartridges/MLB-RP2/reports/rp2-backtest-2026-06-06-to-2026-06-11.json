@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-13T05:52:31.493Z",
+  "modelId": "MLB-RP2",
+  "modelVersion": "MLB-RP2.2026-06-12.v3",
+  "window": {
+    "startDate": "2026-06-06",
+    "endDate": "2026-06-11"
+  },
+  "coverage": {
+    "dates": 6,
+    "projectionRows": 148,
+    "matchedTeamSides": 148,
+    "usableTeamSides": 148,
+    "identityUsableTeamSides": 148,
+    "sourceModes": {
+      "legacy_typed_bullpen_usage": 148
+    }
+  },
+  "headline": {
+    "reliefRunsMae": 1.73,
+    "baselineReliefRunsMae": 1.777,
+    "reliefRunsMaeLiftPct": 2.6,
+    "reliefRunsRmse": 2.342,
+    "baselineReliefRunsRmse": 2.34,
+    "reliefOutsMae": 4.223,
+    "relieversUsedMae": 1.104,
+    "firstUpExactPct": 18.9,
+    "firstUpTop2Pct": 33.1,
+    "firstUpTop3Pct": 50
+  },
+  "buckets": {
+    "runRiskTier": [
+      {
+        "bucket": "fresh_bridge",
+        "samples": 79,
+        "avgPredictedRuns": 1.48,
+        "avgActualRuns": 2.152,
+        "reliefRunsMae": 1.826,
+        "firstUpExactPct": 17.7,
+        "firstUpTop3Pct": 48.1
+      },
+      {
+        "bucket": "stable_bridge",
+        "samples": 54,
+        "avgPredictedRuns": 2.293,
+        "avgActualRuns": 2.13,
+        "reliefRunsMae": 1.534,
+        "firstUpExactPct": 18.5,
+        "firstUpTop3Pct": 55.6
+      },
+      {
+        "bucket": "watch_bridge",
+        "samples": 13,
+        "avgPredictedRuns": 3.092,
+        "avgActualRuns": 1.385,
+        "reliefRunsMae": 2.023,
+        "firstUpExactPct": 30.8,
+        "firstUpTop3Pct": 46.2
+      },
+      {
+        "bucket": "taxed_bridge",
+        "samples": 2,
+        "avgPredictedRuns": 3.258,
+        "avgActualRuns": 2,
+        "reliefRunsMae": 1.342,
+        "firstUpExactPct": 0,
+        "firstUpTop3Pct": 0
+      }
+    ],
+    "sourceMode": [
+      {
+        "bucket": "legacy_typed_bullpen_usage",
+        "samples": 148,
+        "avgPredictedRuns": 1.942,
+        "avgActualRuns": 2.074,
+        "reliefRunsMae": 1.73,
+        "firstUpExactPct": 18.9,
+        "firstUpTop3Pct": 50
+      }
+    ],
+    "bridgeStress": [
+      {
+        "bucket": "0-34 fresh",
+        "samples": 79,
+        "avgPredictedRuns": 1.48,
+        "avgActualRuns": 2.152,
+        "reliefRunsMae": 1.826,
+        "firstUpExactPct": 17.7,
+        "firstUpTop3Pct": 48.1
+      },
+      {
+        "bucket": "35-53 stable",
+        "samples": 54,
+        "avgPredictedRuns": 2.293,
+        "avgActualRuns": 2.13,
+        "reliefRunsMae": 1.534,
+        "firstUpExactPct": 18.5,
+        "firstUpTop3Pct": 55.6
+      },
+      {
+        "bucket": "54-69 watch",
+        "samples": 13,
+        "avgPredictedRuns": 3.092,
+        "avgActualRuns": 1.385,
+        "reliefRunsMae": 2.023,
+        "firstUpExactPct": 30.8,
+        "firstUpTop3Pct": 46.2
+      },
+      {
+        "bucket": "70+ taxed",
+        "samples": 2,
+        "avgPredictedRuns": 3.258,
+        "avgActualRuns": 2,
+        "reliefRunsMae": 1.342,
+        "firstUpExactPct": 0,
+        "firstUpTop3Pct": 0
+      }
+    ]
+  },
+  "promotionGate": {
+    "status": "shadow_only",
+    "reasons": [
+      "Needs at least 300 usable team-side samples; has 148."
+    ]
+  }
+}

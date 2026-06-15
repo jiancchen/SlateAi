@@ -59,6 +59,50 @@ const normalizeTeam = (value = '') =>
     .replace(/\s+/g, ' ')
     .trim()
 
+const officialToShortTeam = {
+  'Arizona Diamondbacks': 'Diamondbacks',
+  Athletics: 'Athletics',
+  'Atlanta Braves': 'Braves',
+  'Baltimore Orioles': 'Orioles',
+  'Boston Red Sox': 'Red Sox',
+  'Chicago Cubs': 'Cubs',
+  'Chicago White Sox': 'White Sox',
+  'Cincinnati Reds': 'Reds',
+  'Cleveland Guardians': 'Guardians',
+  'Colorado Rockies': 'Rockies',
+  'Detroit Tigers': 'Tigers',
+  'Houston Astros': 'Astros',
+  'Kansas City Royals': 'Royals',
+  'Los Angeles Angels': 'Angels',
+  'Los Angeles Dodgers': 'Dodgers',
+  'Miami Marlins': 'Marlins',
+  'Milwaukee Brewers': 'Brewers',
+  'Minnesota Twins': 'Twins',
+  'New York Mets': 'Mets',
+  'New York Yankees': 'Yankees',
+  'Philadelphia Phillies': 'Phillies',
+  'Pittsburgh Pirates': 'Pirates',
+  'San Diego Padres': 'Padres',
+  'San Francisco Giants': 'Giants',
+  'Seattle Mariners': 'Mariners',
+  'St. Louis Cardinals': 'Cardinals',
+  'Tampa Bay Rays': 'Rays',
+  'Texas Rangers': 'Rangers',
+  'Toronto Blue Jays': 'Blue Jays',
+  'Washington Nationals': 'Nationals'
+}
+
+const canonicalTeamName = (value = '') => {
+  const normalized = normalizeTeam(value)
+  const directOfficial = Object.keys(officialToShortTeam).find((team) => normalizeTeam(team) === normalized)
+  if (directOfficial) return directOfficial
+  const short = Object.entries(officialToShortTeam).find(([, shortName]) => normalizeTeam(shortName) === normalized)
+  return short?.[0] || value
+}
+
+const matchupKey = (awayTeam = '', homeTeam = '') =>
+  `${normalizeTeam(canonicalTeamName(awayTeam))}|${normalizeTeam(canonicalTeamName(homeTeam))}`
+
 const parsePercent = (value) => numberOrNull(value)
 const parseMph = (value) => numberOrNull(value)
 const parseHrForce = (value) => {
@@ -166,7 +210,7 @@ const parseWeatherBlocks = (html, capturedAt, sourceSnapshotId, sourceLastModifi
     const homeTeam = stripTags(teamMatch?.[4] || '') || null
     if (!awayTeam || !homeTeam) return null
 
-    const matchupKey = `${normalizeTeam(awayTeam)}|${normalizeTeam(homeTeam)}`
+    const matchupKey = `${normalizeTeam(canonicalTeamName(awayTeam))}|${normalizeTeam(canonicalTeamName(homeTeam))}`
     const gameTimeEt = stripTags(blockHtml.match(/<span class="sb_time">([\s\S]*?)<\/span>/i)?.[1] || '') || null
     const currentTitle = stripTags(blockHtml.match(/<div class="weather_title[^"]*"[\s\S]*?<img\b[^>]*title="([^"]*)"/i)?.[1] || '') || null
     const currentCondition = stripTags(blockHtml.match(/<div class="weather_title[^"]*">[\s\S]*?<span class="temp">[\s\S]*?<\/span>\s*<\/div>\s*<span>([\s\S]*?)<\/span>/i)?.[1] || '') || null
@@ -258,7 +302,7 @@ order by game_date, start_time_utc;
       homeTeam,
       status,
       startTimeUtc,
-      matchupKey: `${normalizeTeam(awayTeam)}|${normalizeTeam(homeTeam)}`
+      matchupKey: matchupKey(awayTeam, homeTeam)
     }
   })
 }

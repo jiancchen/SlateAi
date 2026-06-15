@@ -23,7 +23,7 @@ import {
 } from './lib/mlb-model-utils.mjs'
 
 export const modelId = 'MLB-ENV1'
-export const modelVersion = 'MLB-ENV1.2026-06-12.v2'
+export const modelVersion = 'MLB-ENV1.2026-06-13.v3'
 const date = getArg('--date', new Date().toISOString().slice(0, 10))
 const dbPath = getArg('--db', mlbDbPath)
 const outPath = getArg(
@@ -37,6 +37,8 @@ const toNumber = (value, fallback = null) => {
   return Number.isFinite(parsed) ? parsed : fallback
 }
 
+const eveningLocalStartHour = 18
+const nightLocalStartHour = 19
 const lateLocalStartHour = 20
 const lateLocalStartPrior = {
   hitsMultiplier: 0.9,
@@ -145,6 +147,156 @@ const localStartContext = (game) => {
   }
 }
 
+const easternStartMinuteOfDay = (startTimeUtc) => {
+  if (!startTimeUtc) return null
+  const startDate = new Date(startTimeUtc)
+  if (Number.isNaN(startDate.getTime())) return null
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/New_York',
+      hour: 'numeric',
+      minute: '2-digit',
+      hour12: true
+    })
+      .formatToParts(startDate)
+      .filter((part) => part.type !== 'literal')
+      .map((part) => [part.type, part.value])
+  )
+  const hour12 = Number(parts.hour || 0)
+  const minute = Number(parts.minute || 0)
+  const dayPeriod = `${parts.dayPeriod || ''}`.toUpperCase()
+  const hour = dayPeriod === 'PM' && hour12 !== 12
+    ? hour12 + 12
+    : dayPeriod === 'AM' && hour12 === 12
+      ? 0
+      : hour12
+  return Number.isFinite(hour) && Number.isFinite(minute) ? hour * 60 + minute : null
+}
+
+const parseHourLabelMinute = (hourLabel = '') => {
+  const match = String(hourLabel).trim().match(/^(\d{1,2})(?::(\d{2}))?\s*(am|pm)$/i)
+  if (!match) return null
+  const hour12 = Number(match[1])
+  const minute = Number(match[2] || 0)
+  const period = match[3].toLowerCase()
+  const hour = period === 'pm' && hour12 !== 12
+    ? hour12 + 12
+    : period === 'am' && hour12 === 12
+      ? 0
+      : hour12
+  return Number.isFinite(hour) && Number.isFinite(minute) ? hour * 60 + minute : null
+}
+
+const alignHourMinuteToStart = (hourMinute, startMinute) => {
+  if (!Number.isFinite(hourMinute) || !Number.isFinite(startMinute)) return null
+  const candidates = [hourMinute - 1440, hourMinute, hourMinute + 1440]
+  return candidates.reduce((best, candidate) =>
+    best === null || Math.abs(candidate - startMinute) < Math.abs(best - startMinute)
+      ? candidate
+      : best
+  , null)
+}
+
+const maxFinite = (values = []) => {
+  const numeric = values.map(Number).filter(Number.isFinite)
+  return numeric.length ? Math.max(...numeric) : null
+}
+
+const buildHourlyHrForceContext = ({ game, hourlyRows = [], weather = null, visibility = null }) => {
+  const startMinute = easternStartMinuteOfDay(game.startTimeUtc)
+  if (!Number.isFinite(startMinute) || !hourlyRows.length) {
+    return {
+      hasHourlyWeather: false,
+      gameTimeHrForce: null,
+      earlyGameMaxHrForce: null,
+      lateGameMaxHrForce: null,
+      hrForcePersistenceSignal: 'missing_hourly_weather',
+      reason: 'No FIC hourly weather rows were available for the first-pitch window.'
+    }
+  }
+
+  const alignedRows = hourlyRows
+    .map((row) => {
+      const hourMinute = parseHourLabelMinute(row.hour_label)
+      const alignedMinute = alignHourMinuteToStart(hourMinute, startMinute)
+      return {
+        ...row,
+        alignedMinute,
+        minutesFromStart: Number.isFinite(alignedMinute) ? alignedMinute - startMinute : null,
+        hrForce: toNumber(row.hr_force, null)
+      }
+    })
+    .filter((row) => Number.isFinite(row.alignedMinute))
+
+  if (!alignedRows.length) {
+    return {
+      hasHourlyWeather: false,
+      gameTimeHrForce: null,
+      earlyGameMaxHrForce: null,
+      lateGameMaxHrForce: null,
+      hrForcePersistenceSignal: 'missing_hourly_weather',
+      reason: 'FIC hourly weather rows were present but could not be aligned to first pitch.'
+    }
+  }
+
+  const nearest = alignedRows.reduce((best, row) =>
+    !best || Math.abs(row.minutesFromStart) < Math.abs(best.minutesFromStart) ? row : best
+  , null)
+  const gameWindowRows = alignedRows.filter((row) => row.minutesFromStart >= -45 && row.minutesFromStart <= 180)
+  const earlyRows = alignedRows.filter((row) => row.minutesFromStart >= -45 && row.minutesFromStart <= 120)
+  const lateRows = alignedRows.filter((row) => row.minutesFromStart > 120 && row.minutesFromStart <= 300)
+  const gameTimeHrForce = toNumber(nearest?.hrForce, null)
+  const gameWindowMaxHrForce = maxFinite(gameWindowRows.map((row) => row.hrForce))
+  const earlyGameMaxHrForce = maxFinite(earlyRows.map((row) => row.hrForce))
+  const lateGameMaxHrForce = maxFinite(lateRows.map((row) => row.hrForce))
+  const dailyEffectiveHrForce = toNumber(weather?.effective_hr_force, null)
+  const gameWindowCarryHrForce = earlyGameMaxHrForce ?? gameTimeHrForce ?? gameWindowMaxHrForce
+  const carryFadesInGameWindow =
+    Number.isFinite(gameTimeHrForce) &&
+    gameTimeHrForce >= 1.4 &&
+    gameWindowRows.some((row) => row.minutesFromStart >= 60 && Number(row.hrForce) < 1.4)
+  const eveningOrNight = Boolean(visibility?.eveningLocalStartFlag || visibility?.nightLocalStartFlag)
+  let hrForcePersistenceSignal = 'neutral_hourly_weather'
+
+  if (Number.isFinite(gameWindowCarryHrForce) && gameWindowCarryHrForce >= 1.4) {
+    hrForcePersistenceSignal =
+      carryFadesInGameWindow
+        ? 'early_carry_fades'
+        : Number.isFinite(lateGameMaxHrForce) && lateGameMaxHrForce < 1.4
+        ? 'early_only_carry'
+        : 'game_time_carry_persists'
+  } else if (
+    eveningOrNight &&
+    Number.isFinite(dailyEffectiveHrForce) &&
+    dailyEffectiveHrForce >= 1.4 &&
+    Number.isFinite(gameWindowCarryHrForce) &&
+    gameWindowCarryHrForce < 1.4
+  ) {
+    hrForcePersistenceSignal = 'weak_game_time_carry'
+  } else if (Number.isFinite(gameWindowCarryHrForce) && gameWindowCarryHrForce < 1.4) {
+    hrForcePersistenceSignal = 'low_game_time_carry'
+  }
+
+  return {
+    hasHourlyWeather: true,
+    gameTimeHrForce,
+    gameWindowMaxHrForce,
+    earlyGameMaxHrForce,
+    lateGameMaxHrForce,
+    hrForcePersistenceSignal,
+    reason:
+      hrForcePersistenceSignal === 'weak_game_time_carry'
+        ? `Daily/current HRForce is high, but the first-pitch hourly window is ${round(gameWindowCarryHrForce, 1)}. Treat as weak carry persistence.`
+        : hrForcePersistenceSignal === 'early_carry_fades'
+          ? `First-pitch hourly HRForce is ${round(gameWindowCarryHrForce, 1)}, but it fades below 1.4 inside the early game window.`
+        : hrForcePersistenceSignal === 'early_only_carry'
+          ? `First-pitch hourly HRForce is ${round(gameWindowCarryHrForce, 1)}, but later hourly carry drops below 1.4.`
+          : hrForcePersistenceSignal === 'game_time_carry_persists'
+            ? `First-pitch hourly HRForce stays high at ${round(gameWindowCarryHrForce, 1)}.`
+            : `First-pitch hourly HRForce is ${Number.isFinite(gameWindowCarryHrForce) ? round(gameWindowCarryHrForce, 1) : 'unavailable'}.`
+  }
+}
+
 const indexBy = (rows, keyFn) =>
   rows.reduce((acc, row) => {
     acc.set(keyFn(row), row)
@@ -157,8 +309,24 @@ select *
 from mlb_fic_weather_daily
 where source_date = ${sqlQuote(targetDate)}
 order by game_time_et, matchup;
-`, targetDbPath)
+	`, targetDbPath)
   return indexBy(rows, (row) => matchupKey(row.away_team, row.home_team))
+}
+
+const buildHourlyWeatherIndex = (targetDate, targetDbPath) => {
+  const rows = sqliteJson(`
+select *
+from mlb_fic_weather_hourly_daily
+where source_date = ${sqlQuote(targetDate)}
+order by game_time_et, matchup_key, hour_label;
+  `, targetDbPath)
+  return rows.reduce((acc, row) => {
+    const [awayTeam, homeTeam] = String(row.matchup_key || '').split('|')
+    const finalKey = awayTeam && homeTeam ? matchupKey(awayTeam, homeTeam) : row.matchup_key
+    if (!acc.has(finalKey)) acc.set(finalKey, [])
+    acc.get(finalKey).push(row)
+    return acc
+  }, new Map())
 }
 
 const buildUmpireAssignmentIndex = (targetDate, targetDbPath) => {
@@ -220,7 +388,7 @@ const parkDelta = (park) => {
   }
 }
 
-const weatherDelta = (weather) => {
+const weatherDelta = (weather, hourlyContext = null, visibility = null) => {
   if (!weather) {
     return {
       weatherRunDelta: 0,
@@ -231,12 +399,36 @@ const weatherDelta = (weather) => {
   }
   const effectiveHrForce = toNumber(weather.effective_hr_force, null)
   const signal = weather.hr_force_run_signal || 'unknown'
+  const gameWindowHrForce = toNumber(hourlyContext?.earlyGameMaxHrForce, null) ??
+    toNumber(hourlyContext?.gameTimeHrForce, null) ??
+    toNumber(hourlyContext?.gameWindowMaxHrForce, null)
+  const useGameWindowHrForce =
+    Boolean(visibility?.eveningLocalStartFlag || visibility?.nightLocalStartFlag) &&
+    Number.isFinite(gameWindowHrForce)
+  const carryHrForce = useGameWindowHrForce ? gameWindowHrForce : effectiveHrForce
+  const weakGameTimeCarry =
+    signal === 'higher_runs' &&
+    useGameWindowHrForce &&
+    Number.isFinite(effectiveHrForce) &&
+    effectiveHrForce >= 1.4 &&
+    Number.isFinite(gameWindowHrForce) &&
+    gameWindowHrForce < 1.4
   if (signal === 'higher_runs' && Number.isFinite(effectiveHrForce)) {
+    if (weakGameTimeCarry) {
+      return {
+        weatherRunDelta: clamp((gameWindowHrForce - 1.0) * 0.16, -0.04, 0.12),
+        weatherHrDelta: clamp((gameWindowHrForce - 1.0) * 0.06, -0.02, 0.04),
+        signal: 'weak_game_time_carry',
+        reason: hourlyContext?.reason || 'Daily/current HRForce is high, but hourly first-pitch carry is below 1.4.'
+      }
+    }
     return {
-      weatherRunDelta: clamp((effectiveHrForce - 1.0) * 0.58, 0.18, 0.85),
-      weatherHrDelta: clamp((effectiveHrForce - 1.0) * 0.24, 0.08, 0.45),
+      weatherRunDelta: clamp((carryHrForce - 1.0) * 0.58, 0.18, 0.85),
+      weatherHrDelta: clamp((carryHrForce - 1.0) * 0.24, 0.08, 0.45),
       signal,
-      reason: weather.hr_force_run_signal_reason || 'FIC HRForce points higher.'
+      reason: hourlyContext?.hrForcePersistenceSignal === 'early_only_carry'
+        ? hourlyContext.reason
+        : weather.hr_force_run_signal_reason || 'FIC HRForce points higher.'
     }
   }
   if (signal === 'lower_runs_dome_na') {
@@ -268,6 +460,8 @@ const visibilityDelta = (game) => {
   if (!localStart.hasLocalStartContext) {
     return {
       ...localStart,
+      eveningLocalStartFlag: false,
+      nightLocalStartFlag: false,
       lateLocalStartFlag: false,
       visibilitySignal: 'missing_start_time',
       visibilityHitsMultiplier: 1,
@@ -279,23 +473,37 @@ const visibilityDelta = (game) => {
       reason: 'No schedule start_time_utc and ballpark timezone pair was available; late-start visibility prior is neutral.'
     }
   }
+  const eveningLocalStartFlag = localStart.localStartMinuteOfDay >= eveningLocalStartHour * 60
+  const nightLocalStartFlag = localStart.localStartMinuteOfDay >= nightLocalStartHour * 60
   const lateLocalStartFlag = localStart.localStartMinuteOfDay >= lateLocalStartHour * 60
   if (!lateLocalStartFlag) {
     return {
       ...localStart,
+      eveningLocalStartFlag,
+      nightLocalStartFlag,
       lateLocalStartFlag: false,
-      visibilitySignal: 'normal_start_visibility',
+      visibilitySignal: nightLocalStartFlag
+        ? 'night_start_carry_review'
+        : eveningLocalStartFlag
+          ? 'evening_start_carry_review'
+          : 'normal_start_visibility',
       visibilityHitsMultiplier: 1,
       visibilityHrMultiplier: 1,
       visibilityRunsMultiplier: 1,
       visibilityHitsDelta: 0,
       visibilityRunsDelta: 0,
       visibilityHrDelta: 0,
-      reason: `Local first pitch ${localStart.localStartTime} is before the ${lateLocalStartHour}:00 late-light threshold.`
+      reason: nightLocalStartFlag
+        ? `Local first pitch ${localStart.localStartTime} is a night start before the ${lateLocalStartHour}:00 late-light threshold; require hourly HRForce persistence before promoting carry.`
+        : eveningLocalStartFlag
+          ? `Local first pitch ${localStart.localStartTime} is an evening start before the ${lateLocalStartHour}:00 late-light threshold; require hourly HRForce persistence before promoting carry.`
+          : `Local first pitch ${localStart.localStartTime} is before the ${lateLocalStartHour}:00 late-light threshold.`
     }
   }
   return {
     ...localStart,
+    eveningLocalStartFlag,
+    nightLocalStartFlag,
     lateLocalStartFlag: true,
     visibilitySignal: 'late_lights_suppressed_contact',
     visibilityHitsMultiplier: lateLocalStartPrior.hitsMultiplier,
@@ -406,6 +614,8 @@ const environmentColumnMigrations = [
   ['local_start_hour', 'integer'],
   ['local_start_minute', 'integer'],
   ['local_timezone', 'text'],
+  ['evening_start_flag', 'integer'],
+  ['night_start_flag', 'integer'],
   ['late_local_start_flag', 'integer'],
   ['visibility_signal', 'text'],
   ['visibility_hits_multiplier', 'real'],
@@ -414,6 +624,10 @@ const environmentColumnMigrations = [
   ['visibility_hits_delta', 'real'],
   ['visibility_runs_delta', 'real'],
   ['visibility_hr_delta', 'real'],
+  ['game_time_hr_force', 'real'],
+  ['early_game_max_hr_force', 'real'],
+  ['late_game_max_hr_force', 'real'],
+  ['hr_force_persistence_signal', 'text'],
   ['expected_hits_delta', 'real']
 ]
 
@@ -438,14 +652,16 @@ create table if not exists mlb_game_environment_adjustments_daily (
   away_team text,
   home_team text,
   start_time_utc text,
-  local_start_date text,
-  local_start_time text,
-  local_start_hour integer,
-  local_start_minute integer,
-  local_timezone text,
-  venue_name text,
-  park_year_range text,
-  park_run_index real,
+	  local_start_date text,
+	  local_start_time text,
+	  local_start_hour integer,
+	  local_start_minute integer,
+	  local_timezone text,
+	  evening_start_flag integer,
+	  night_start_flag integer,
+	  venue_name text,
+	  park_year_range text,
+	  park_run_index real,
   park_hr_index real,
   park_woba_index real,
   weather_match_status text,
@@ -453,10 +669,14 @@ create table if not exists mlb_game_environment_adjustments_daily (
   effective_hr_force real,
   hr_force_run_signal text,
   weather_run_delta real,
-  weather_hr_delta real,
-  park_run_delta real,
-  park_hr_delta real,
-  late_local_start_flag integer,
+	  weather_hr_delta real,
+	  park_run_delta real,
+	  park_hr_delta real,
+	  game_time_hr_force real,
+	  early_game_max_hr_force real,
+	  late_game_max_hr_force real,
+	  hr_force_persistence_signal text,
+	  late_local_start_flag integer,
   visibility_signal text,
   visibility_hits_multiplier real,
   visibility_hr_multiplier real,
@@ -501,11 +721,14 @@ const insertRows = (rows, targetDbPath) => {
     ${sqlQuote(row.sourceDate)}, ${sqlQuote(row.modelVersion)}, ${sqlQuote(row.matchupKey)}, ${sqlQuote(row.gamePk)},
     ${sqlQuote(row.awayTeam)}, ${sqlQuote(row.homeTeam)}, ${sqlQuote(row.startTimeUtc)}, ${sqlQuote(row.localStartDate)},
     ${sqlQuote(row.localStartTime)}, ${sqlQuote(row.localStartHour)}, ${sqlQuote(row.localStartMinute)},
-    ${sqlQuote(row.localTimezone)}, ${sqlQuote(row.venueName)}, ${sqlQuote(row.parkYearRange)},
+    ${sqlQuote(row.localTimezone)}, ${sqlQuote(row.eveningStartFlag ? 1 : 0)}, ${sqlQuote(row.nightStartFlag ? 1 : 0)},
+    ${sqlQuote(row.venueName)}, ${sqlQuote(row.parkYearRange)},
     ${sqlQuote(row.parkRunIndex)}, ${sqlQuote(row.parkHrIndex)}, ${sqlQuote(row.parkWobaIndex)},
     ${sqlQuote(row.weatherMatchStatus)}, ${sqlQuote(row.hrForce)}, ${sqlQuote(row.effectiveHrForce)},
     ${sqlQuote(row.hrForceRunSignal)}, ${sqlQuote(row.weatherRunDelta)}, ${sqlQuote(row.weatherHrDelta)},
-    ${sqlQuote(row.parkRunDelta)}, ${sqlQuote(row.parkHrDelta)}, ${sqlQuote(row.lateLocalStartFlag ? 1 : 0)},
+    ${sqlQuote(row.parkRunDelta)}, ${sqlQuote(row.parkHrDelta)}, ${sqlQuote(row.gameTimeHrForce)},
+    ${sqlQuote(row.earlyGameMaxHrForce)}, ${sqlQuote(row.lateGameMaxHrForce)}, ${sqlQuote(row.hrForcePersistenceSignal)},
+    ${sqlQuote(row.lateLocalStartFlag ? 1 : 0)},
     ${sqlQuote(row.visibilitySignal)}, ${sqlQuote(row.visibilityHitsMultiplier)}, ${sqlQuote(row.visibilityHrMultiplier)},
     ${sqlQuote(row.visibilityRunsMultiplier)}, ${sqlQuote(row.visibilityHitsDelta)}, ${sqlQuote(row.visibilityRunsDelta)},
     ${sqlQuote(row.visibilityHrDelta)}, ${sqlQuote(row.umpireName)},
@@ -521,9 +744,11 @@ const insertRows = (rows, targetDbPath) => {
   sqliteExec(`
 insert or replace into mlb_game_environment_adjustments_daily (
   source_date, model_version, matchup_key, game_pk, away_team, home_team, start_time_utc, local_start_date,
-  local_start_time, local_start_hour, local_start_minute, local_timezone, venue_name, park_year_range,
+  local_start_time, local_start_hour, local_start_minute, local_timezone, evening_start_flag, night_start_flag,
+  venue_name, park_year_range,
   park_run_index, park_hr_index, park_woba_index, weather_match_status, hr_force, effective_hr_force,
-  hr_force_run_signal, weather_run_delta, weather_hr_delta, park_run_delta, park_hr_delta, late_local_start_flag,
+  hr_force_run_signal, weather_run_delta, weather_hr_delta, park_run_delta, park_hr_delta, game_time_hr_force,
+  early_game_max_hr_force, late_game_max_hr_force, hr_force_persistence_signal, late_local_start_flag,
   visibility_signal, visibility_hits_multiplier, visibility_hr_multiplier, visibility_runs_multiplier,
   visibility_hits_delta, visibility_runs_delta, visibility_hr_delta, umpire_name,
   umpire_assignment_status, umpire_favors_code, umpire_total_score_per_game, umpire_zone_factor,
@@ -538,6 +763,7 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
   const generatedAt = new Date().toISOString()
   const games = collectGamesForDate(targetDate, targetDbPath)
   const weatherByKey = buildWeatherIndex(targetDate, targetDbPath)
+  const hourlyWeatherByKey = buildHourlyWeatherIndex(targetDate, targetDbPath)
   const umpireAssignmentsByKey = buildUmpireAssignmentIndex(targetDate, targetDbPath)
   const ficProfiles = loadFicUmpireProfiles(targetDate, targetDbPath)
 
@@ -545,11 +771,18 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
     const key = matchupKey(game.awayTeam, game.homeTeam)
     const park = parkForHomeTeam(game.homeTeam)
     const weather = weatherByKey.get(key) || null
+    const hourlyWeatherRows = hourlyWeatherByKey.get(key) || []
     const assignments = umpireAssignmentsByKey.get(key) || []
     const assignment = exactUmpireAssignment(assignments)
     const parkParts = parkDelta(park)
-    const weatherParts = weatherDelta(weather)
     const visibilityParts = visibilityDelta(game)
+    const hourlyHrForceContext = buildHourlyHrForceContext({
+      game,
+      hourlyRows: hourlyWeatherRows,
+      weather,
+      visibility: visibilityParts
+    })
+    const weatherParts = weatherDelta(weather, hourlyHrForceContext, visibilityParts)
     const umpireParts = umpireDelta({ assignment, ficProfiles })
     const expectedTotalRunsDelta = clamp(
       parkParts.parkRunDelta + weatherParts.weatherRunDelta + visibilityParts.visibilityRunsDelta + umpireParts.umpireRunsDelta,
@@ -568,9 +801,12 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
       hasMlbGamePk: Boolean(game.gamePk),
       hasStartTimeUtc: Boolean(game.startTimeUtc),
       hasLocalStartContext: Boolean(visibilityParts.hasLocalStartContext),
+      isEveningStart: Boolean(visibilityParts.eveningLocalStartFlag),
+      isNightStart: Boolean(visibilityParts.nightLocalStartFlag),
       isLateLocalStart: Boolean(visibilityParts.lateLocalStartFlag),
       hasParkContext: Boolean(park?.yearRange && park.yearRange !== 'missing-neutral'),
       hasFicWeather: Boolean(weather),
+      hasFicHourlyWeather: Boolean(hourlyHrForceContext.hasHourlyWeather),
       hasExactUmpireAssignment: Boolean(assignment),
       hasFicUmpireProfile: Boolean(umpireParts.profile),
       unresolvedUmpireRows: assignments.filter((row) => row.date_match_status !== 'exact').length
@@ -583,11 +819,15 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
     ].filter(Boolean)
     const featureSnapshot = {
       park,
-      weather: weather ? {
-        hrForce: weather.hr_force,
-        effectiveHrForce: weather.effective_hr_force,
-        hrForceRunSignal: weather.hr_force_run_signal,
-        roofStatus: weather.roof_status,
+	      weather: weather ? {
+	        hrForce: weather.hr_force,
+	        effectiveHrForce: weather.effective_hr_force,
+	        gameTimeHrForce: hourlyHrForceContext.gameTimeHrForce,
+	        earlyGameMaxHrForce: hourlyHrForceContext.earlyGameMaxHrForce,
+	        lateGameMaxHrForce: hourlyHrForceContext.lateGameMaxHrForce,
+	        hrForcePersistenceSignal: hourlyHrForceContext.hrForcePersistenceSignal,
+	        hrForceRunSignal: weather.hr_force_run_signal,
+	        roofStatus: weather.roof_status,
         gameTimeEt: weather.game_time_et,
         dateMatchStatus: weather.date_match_status
       } : null,
@@ -604,10 +844,12 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
         startTimeUtc: visibilityParts.startTimeUtc,
         localTimezone: visibilityParts.localTimezone,
         localStartDate: visibilityParts.localStartDate,
-        localStartTime: visibilityParts.localStartTime,
-        localStartHour: visibilityParts.localStartHour,
-        localStartMinute: visibilityParts.localStartMinute,
-        lateLocalStartFlag: visibilityParts.lateLocalStartFlag,
+	        localStartTime: visibilityParts.localStartTime,
+	        localStartHour: visibilityParts.localStartHour,
+	        localStartMinute: visibilityParts.localStartMinute,
+	        eveningLocalStartFlag: visibilityParts.eveningLocalStartFlag,
+	        nightLocalStartFlag: visibilityParts.nightLocalStartFlag,
+	        lateLocalStartFlag: visibilityParts.lateLocalStartFlag,
         signal: visibilityParts.visibilitySignal,
         hitsMultiplier: visibilityParts.visibilityHitsMultiplier,
         hrMultiplier: visibilityParts.visibilityHrMultiplier,
@@ -633,6 +875,8 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
       localStartHour: visibilityParts.localStartHour,
       localStartMinute: visibilityParts.localStartMinute,
       localTimezone: visibilityParts.localTimezone,
+      eveningStartFlag: visibilityParts.eveningLocalStartFlag,
+      nightStartFlag: visibilityParts.nightLocalStartFlag,
       venueName: park.venueName || '',
       parkYearRange: park.yearRange || '',
       parkRunIndex: toNumber(park.indexRuns, 100),
@@ -641,7 +885,11 @@ export const buildEnvironmentRows = ({ date: targetDate = date, dbPath: targetDb
       weatherMatchStatus: weather?.date_match_status || 'missing',
       hrForce: toNumber(weather?.hr_force, null),
       effectiveHrForce: toNumber(weather?.effective_hr_force, null),
-      hrForceRunSignal: weather?.hr_force_run_signal || 'missing',
+      gameTimeHrForce: hourlyHrForceContext.gameTimeHrForce,
+      earlyGameMaxHrForce: hourlyHrForceContext.earlyGameMaxHrForce,
+      lateGameMaxHrForce: hourlyHrForceContext.lateGameMaxHrForce,
+      hrForcePersistenceSignal: hourlyHrForceContext.hrForcePersistenceSignal,
+      hrForceRunSignal: weatherParts.signal || weather?.hr_force_run_signal || 'missing',
       weatherRunDelta: round(weatherParts.weatherRunDelta, 3),
       weatherHrDelta: round(weatherParts.weatherHrDelta, 3),
       parkRunDelta: round(parkParts.parkRunDelta, 3),
@@ -681,9 +929,16 @@ const summarize = (rows) => ({
   games: rows.length,
   withGamePk: rows.filter((row) => row.gamePk).length,
   withFicWeather: rows.filter((row) => row.sourceFlags.hasFicWeather).length,
+  withFicHourlyWeather: rows.filter((row) => row.sourceFlags.hasFicHourlyWeather).length,
   withExactUmpire: rows.filter((row) => row.sourceFlags.hasExactUmpireAssignment).length,
   withLocalStartContext: rows.filter((row) => row.sourceFlags.hasLocalStartContext).length,
+  eveningLocalStarts: rows.filter((row) => row.eveningStartFlag).length,
+  nightLocalStarts: rows.filter((row) => row.nightStartFlag).length,
   lateLocalStarts: rows.filter((row) => row.lateLocalStartFlag).length,
+  weakGameTimeCarrySignals: rows.filter((row) => row.hrForcePersistenceSignal === 'weak_game_time_carry').length,
+  fadingGameTimeCarrySignals: rows.filter((row) =>
+    ['early_carry_fades', 'early_only_carry'].includes(row.hrForcePersistenceSignal)
+  ).length,
   higherRunSignals: rows.filter((row) => row.expectedTotalRunsDelta >= 0.25).length,
   lowerRunSignals: rows.filter((row) => row.expectedTotalRunsDelta <= -0.18).length,
   avgExpectedHitsDelta: round(avg(rows.map((row) => row.expectedHitsDelta)), 3),

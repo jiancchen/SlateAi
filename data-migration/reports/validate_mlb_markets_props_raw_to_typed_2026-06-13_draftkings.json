@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-13",
+  "dated_contracts": 410,
+  "dated_market_snapshots": 3024,
+  "dated_ticks": 3024,
+  "direct_mapped_snapshot_games": 0,
+  "direct_market_snapshots": 0,
+  "draftkings_first5_games": 12,
+  "draftkings_game_line_games": 12,
+  "draftkings_pitcher_strikeout_prop_rows": 396,
+  "errors": [],
+  "generated_at": "2026-06-13T20:09:48.676566+00:00",
+  "mapped_draftkings_pitcher_strikeout_prop_players": 396,
+  "mapped_prop_players": 1532,
+  "mapped_snapshot_games": 3024,
+  "odds_status": {
+    "actual_item_count": 336,
+    "last_completeness_status": "complete",
+    "last_status": "success",
+    "missing_item_count": 0,
+    "notes": "{\"adapter\":\"mlb_markets_raw_to_typed\",\"by_file\":{\"data-private/odds/draftkings/mlb/2026-06-13-draftkings-mlb-lines.json\":{\"parsed_contracts\":336,\"parsed_prop_snapshots\":172,\"parsed_snapshots\":336,\"parsed_ticks\":336,\"source_games\":12,\"source_prop_rows\":172,\"source_rows\":336,\"unmapped_games\":0,\"unmapped_prop_players\":0}},\"parsed_contracts\":336,\"parsed_prop_snapshots\":172,\"parsed_snapshots\":336,\"parsed_ticks\":336,\"report_path\":\"data-migration/reports/ingest_mlb_markets_props_raw_to_typed_2026-06-13_draftkings.json\",\"source_files\":1,\"source_games\":12,\"source_prop_rows\":172,\"source_rows\":336,\"unmapped_games\":0,\"unmapped_prop_players\":0}",
+    "source_date": "2026-06-13",
+    "source_name": "mlb_odds",
+    "unresolved_count": 0
+  },
+  "ok": true,
+  "orphan_prop_players": 0,
+  "orphan_snapshot_games": 0,
+  "prop_rows": 1532,
+  "props_status": {
+    "actual_item_count": 1532,
+    "last_completeness_status": "complete",
+    "last_status": "success",
+    "missing_item_count": null,
+    "notes": "{\"adapter\":\"mlb_props_typed_status\",\"draftkings_prop_snapshots_parsed\":172,\"prop_market_snapshots_for_date\":1532,\"report_path\":\"data-migration/reports/ingest_mlb_markets_props_raw_to_typed_2026-06-13_draftkings.json\",\"unmapped_prop_players\":0}",
+    "source_date": "2026-06-13",
+    "source_name": "mlb_props",
+    "unresolved_count": 0
+  },
+  "script": "data-migration/scripts/validate_mlb_markets_props_raw_to_typed.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_snapshots": 1
+}

@@ -45,6 +45,46 @@ const shortTeamNameByOfficial = {
 
 const shortTeamName = (name = '') => shortTeamNameByOfficial[name] || name
 
+const ficDailyTeamCodeByShortName = {
+  Angels: 'ANA',
+  Astros: 'HOU',
+  Athletics: 'ATH',
+  'Blue Jays': 'TOR',
+  Braves: 'ATL',
+  Brewers: 'MIL',
+  Cardinals: 'SLN',
+  Cubs: 'CHN',
+  Diamondbacks: 'ARI',
+  Dodgers: 'LAN',
+  Giants: 'SFN',
+  Guardians: 'CLE',
+  Mariners: 'SEA',
+  Marlins: 'MIA',
+  Mets: 'NYN',
+  Nationals: 'WAS',
+  Orioles: 'BAL',
+  Padres: 'SDN',
+  Phillies: 'PHI',
+  Pirates: 'PIT',
+  Rangers: 'TEX',
+  Rays: 'TBA',
+  'Red Sox': 'BOS',
+  Reds: 'CIN',
+  Rockies: 'COL',
+  Royals: 'KCA',
+  Tigers: 'DET',
+  Twins: 'MIN',
+  'White Sox': 'CHA',
+  Yankees: 'NYA'
+}
+
+const ficDailyTeamCodes = (teamName = '') => {
+  const shortName = shortTeamName(teamName)
+  const primary = ficDailyTeamCodeByShortName[shortName]
+  if (shortName === 'Athletics') return ['ATH', 'OAK']
+  return primary ? [primary] : []
+}
+
 const slugify = (value = '') =>
   String(value)
     .toLowerCase()
@@ -62,6 +102,8 @@ const normalizeTeam = (value = '') =>
     .replace(/[^a-z0-9]+/g, ' ')
     .replace(/\s+/g, ' ')
     .trim()
+
+const teamKey = (value = '') => normalizeTeam(shortTeamName(value))
 
 const matchupKey = (awayTeam = '', homeTeam = '') => `${normalizeTeam(awayTeam)}|${normalizeTeam(homeTeam)}`
 
@@ -104,6 +146,8 @@ const average = (values = []) => {
   const numeric = values.map(Number).filter(Number.isFinite)
   return numeric.length ? numeric.reduce((sum, value) => sum + value, 0) / numeric.length : null
 }
+
+const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
 const groupBy = (rows = [], keyFn) =>
   rows.reduce((acc, row) => {
@@ -190,6 +234,7 @@ const parseBaseballInnings = (outs = 0) => {
 }
 
 const loadDbContext = (date) => {
+  const seasonStart = `${String(date).slice(0, 4)}-01-01`
   const pitcherSeasonRows = querySqlite(
     `
     select
@@ -222,8 +267,15 @@ const loadDbContext = (date) => {
     `
     select ppm.*, players.name as pitcher_name
     from pitcher_pitch_mix_snapshots ppm
+    join (
+      select pitcher_id, max(snapshot_date) as snapshot_date
+      from pitcher_pitch_mix_snapshots
+      where snapshot_date <= ?
+      group by pitcher_id
+    ) latest
+      on latest.pitcher_id = ppm.pitcher_id
+     and latest.snapshot_date = ppm.snapshot_date
     left join players on players.player_id = ppm.pitcher_id
-    where ppm.snapshot_date = ?
     order by ppm.pitcher_id, ppm.pitch_share desc
     `,
     [date]
@@ -271,11 +323,12 @@ const loadDbContext = (date) => {
       ps.walk_rate as split_walk_rate
     from lineups l
     join active_source src on src.source_snapshot_id = l.source_snapshot_id
+    join games g on g.game_id = l.game_id
     join teams on teams.team_id = l.team_id
     join lineup_slots s on s.lineup_id = l.lineup_id
     join players p on p.player_id = s.player_id
     left join player_split_snapshots ps on ps.game_id = l.game_id and ps.player_id = s.player_id
-    where l.captured_at like ?
+    where g.game_date like ?
     order by l.game_id, l.team_id, s.batting_order
     `,
     [date, `${date}%`],
@@ -288,6 +341,33 @@ const loadDbContext = (date) => {
     where snapshot_date = ?
     `,
     [date],
+    { maxBuffer: 1024 * 1024 * 40 }
+  )
+  const batterSeasonRows = queryOptional(
+    `
+    select
+      player_id,
+      count(distinct game_id) as games_played,
+      sum(plate_appearances) as plate_appearances,
+      sum(at_bats) as at_bats,
+      sum(hits) as hits,
+      sum(singles) as singles,
+      sum(doubles) as doubles,
+      sum(triples) as triples,
+      sum(home_runs) as home_runs,
+      sum(total_bases) as total_bases,
+      sum(walks) as walks,
+      sum(strikeouts) as strikeouts,
+      sum(runs) as runs,
+      sum(rbi) as rbi,
+      sum(hit_by_pitch) as hit_by_pitch,
+      sum(sac_flies) as sac_flies
+    from player_game_batting
+    where game_date < ?
+      and game_date >= ?
+    group by player_id
+    `,
+    [date, seasonStart],
     { maxBuffer: 1024 * 1024 * 40 }
   )
   const statcastRows = querySqlite(
@@ -401,6 +481,43 @@ const loadDbContext = (date) => {
     [date],
     { maxBuffer: 1024 * 1024 * 20 }
   )
+  const starterVsTeamStatmuseRows = queryOptional(
+    `
+    select *
+    from mlb_starter_vs_team_statmuse
+    where snapshot_date = ?
+    `,
+    [date],
+    { maxBuffer: 1024 * 1024 * 20 }
+  )
+  const starterGameLogRows = queryOptional(
+    `
+    select
+      game_pk,
+      game_date,
+      team_role,
+      team_name,
+      opponent_name,
+      pitcher_id,
+      pitcher_name,
+      pitch_hand,
+      innings_pitched,
+      outs_recorded,
+      runs_allowed,
+      earned_runs,
+      hits_allowed,
+      home_runs_allowed,
+      walks_allowed,
+      strikeouts,
+      pitches_thrown
+    from mlb_starting_pitcher_game_logs
+    where game_date < ?
+      and game_date >= ?
+    order by pitcher_id, game_date desc, game_pk desc
+    `,
+    [date, seasonStart],
+    { maxBuffer: 1024 * 1024 * 30 }
+  )
   const environmentAdjustmentRows = queryOptional(
     `
     select *
@@ -428,6 +545,15 @@ const loadDbContext = (date) => {
     `,
     [date, date],
     { maxBuffer: 1024 * 1024 * 20 }
+  )
+  const ficDailyMatchupRows = queryOptional(
+    `
+    select *
+    from mlb_fic_daily_matchups
+    where source_date = ?
+    `,
+    [date],
+    { maxBuffer: 1024 * 1024 * 30 }
   )
   const teamInningOffenseRows = querySqlite(
     `
@@ -514,6 +640,7 @@ const loadDbContext = (date) => {
     pitcherPitchMixById: groupBy(pitcherPitchMixRows, (row) => row.pitcher_id),
     lineupPlayersByGameTeam: groupBy(lineupPlayerRows, (row) => `${row.game_id}:${row.team_id}`),
     classicByPlayerId: indexBy(classicRows, (row) => row.player_id),
+    batterSeasonByPlayerId: indexBy(batterSeasonRows, (row) => row.player_id),
     statcastByPlayerId: indexBy(statcastRows, (row) => row.player_id),
     careerByPlayerId: indexBy(careerRows, (row) => row.player_id),
     deviationsByPlayerId: groupBy(currentDeviationRows, (row) => row.player_id),
@@ -527,6 +654,23 @@ const loadDbContext = (date) => {
     teamStateByTeamId: indexBy(teamStateRows, (row) => row.team_id),
     sunByGameId: indexBy(sunRows, (row) => row.game_id),
     espnPitcherSplitsByGamePitcher: indexBy(espnPitcherSplitRows, (row) => `${row.game_id}:${row.pitcher_id}`),
+    starterVsTeamByGameTeam: indexBy(
+      starterVsTeamStatmuseRows,
+      (row) => `${row.game_id}:${teamKey(row.pitcher_team)}`
+    ),
+    starterVsTeamByGamePitcherName: indexBy(
+      starterVsTeamStatmuseRows,
+      (row) => `${row.game_id}:${slugify(row.pitcher_name)}`
+    ),
+    starterVsTeamByTeamOpponent: indexBy(
+      starterVsTeamStatmuseRows,
+      (row) => `${teamKey(row.pitcher_team)}:${teamKey(row.opponent_team)}`
+    ),
+    starterVsTeamByPitcherOpponent: indexBy(
+      starterVsTeamStatmuseRows,
+      (row) => `${slugify(row.pitcher_name)}:${teamKey(row.opponent_team)}`
+    ),
+    starterHistoryByMlbPitcherId: groupBy(starterGameLogRows, (row) => Number(row.pitcher_id)),
     environmentByGamePk: indexBy(environmentAdjustmentRows.filter((row) => row.game_pk), (row) => Number(row.game_pk)),
     environmentByMatchupKey: indexBy(environmentAdjustmentRows, (row) => matchupKey(row.away_team, row.home_team)),
     reliefProjectionByGameTeam: indexBy(
@@ -537,6 +681,7 @@ const loadDbContext = (date) => {
       reliefProjectionRows,
       (row) => `${row.source_date}:${normalizeTeam(row.team_name)}`
     ),
+    ficDailyMatchupRows,
     inningOffenseByTeamInning: indexBy(teamInningOffenseRows, (row) => `${row.team_id}:${row.inning}`),
     inningDefenseByTeamInning: indexBy(teamInningDefenseRows, (row) => `${row.team_id}:${row.inning}`),
     leagueInningByInning: indexBy(leagueInningRows, (row) => Number(row.inning))
@@ -574,11 +719,79 @@ const buildEspnPitcherSplits = (row = {}) => {
   }
 }
 
-const buildPitcher = (starter = {}, context) => {
+const buildStarterVsTeamStatmuse = (row = null) => {
+  if (!row) return null
+  return {
+    source: 'StatMuse',
+    sourceUrl: row.statmuse_url || '',
+    answerText: row.answer_text || '',
+    pitcherName: row.pitcher_name || '',
+    pitcherTeam: row.pitcher_team || '',
+    opponentTeam: row.opponent_team || '',
+    appearances: num(row.appearances, 0),
+    gamesStarted: num(row.games_started, 0),
+    wins: nullableNum(row.wins),
+    losses: nullableNum(row.losses),
+    era: nullableNum(row.era),
+    strikeouts: nullableNum(row.strikeouts),
+    inningsPitched: row.innings_pitched || null,
+    hitsAllowed: nullableNum(row.hits_allowed),
+    earnedRuns: nullableNum(row.earned_runs),
+    runsAllowed: nullableNum(row.runs_allowed),
+    homeRunsAllowed: nullableNum(row.home_runs_allowed),
+    walks: nullableNum(row.walks),
+    battersFaced: nullableNum(row.batters_faced),
+    totalRow: parseJson(row.total_row_json) || null,
+    gameRows: parseJson(row.game_rows_json) || [],
+    fetchedAt: row.fetched_at || ''
+  }
+}
+
+const buildStarterStartHistory = (row = {}) => {
+  const innings = num(row.innings_pitched, null)
+  const earnedRuns = num(row.earned_runs, 0) || 0
+  return {
+    gamePk: num(row.game_pk, null),
+    date: row.game_date || '',
+    venueRole: row.team_role === 'home' ? 'home' : 'road',
+    teamName: shortTeamName(row.team_name || ''),
+    opponentName: shortTeamName(row.opponent_name || ''),
+    pitcherName: row.pitcher_name || '',
+    pitchHand: row.pitch_hand || '',
+    inningsPitched: round(innings, 1),
+    inningsPitchedLabel: Number.isFinite(innings) ? `${Math.floor(innings)}.${Math.round((innings % 1) * 3)}` : '-',
+    outsRecorded: num(row.outs_recorded, 0),
+    runsAllowed: num(row.runs_allowed, 0),
+    earnedRuns,
+    hitsAllowed: num(row.hits_allowed, 0),
+    walksAllowed: num(row.walks_allowed, 0),
+    strikeouts: num(row.strikeouts, 0),
+    homeRunsAllowed: num(row.home_runs_allowed, 0),
+    pitchesThrown: num(row.pitches_thrown, 0),
+    qualityStart: Number.isFinite(innings) && innings >= 6 && earnedRuns <= 3,
+    firstInningRunsAllowed: null,
+    firstInningOutcome: ''
+  }
+}
+
+const buildPitcher = (starter = {}, context, opponentTeam = '') => {
   const season = context.pitcherSeasonById.get(starter.player_id) || {}
   const form = bestWindowRow(context.pitcherFormById.get(starter.player_id) || [], [5, 10])
   const pitchMixRows = context.pitcherPitchMixById.get(starter.player_id) || []
   const espnSplits = buildEspnPitcherSplits(context.espnPitcherSplitsByGamePitcher.get(`${starter.game_id}:${starter.player_id}`))
+  const pitcherTeamKey = teamKey(starter.team_name)
+  const opponentTeamKey = teamKey(opponentTeam)
+  const statmuseVsOpponent = buildStarterVsTeamStatmuse(
+    context.starterVsTeamByGameTeam.get(`${starter.game_id}:${pitcherTeamKey}`) ||
+      context.starterVsTeamByGamePitcherName.get(`${starter.game_id}:${slugify(starter.pitcher_name)}`) ||
+      context.starterVsTeamByTeamOpponent.get(`${pitcherTeamKey}:${opponentTeamKey}`) ||
+      context.starterVsTeamByPitcherOpponent.get(`${slugify(starter.pitcher_name)}:${opponentTeamKey}`) ||
+      null
+  )
+  const startHistory = (context.starterHistoryByMlbPitcherId.get(Number(starter.mlb_player_id)) || []).map(buildStarterStartHistory)
+  const opponentHistoryThisSeason = opponentTeam
+    ? startHistory.filter((row) => teamKey(row.opponentName) === opponentTeamKey)
+    : []
   const outs = num(season.outs_recorded, 0)
   const innings = outs / 3
   const earnedRuns = num(season.earned_runs, null)
@@ -608,7 +821,15 @@ const buildPitcher = (starter = {}, context) => {
     gamesStarted: starts,
     probableSource: starter.source_name || 'typed-db',
     pitchMixSummary: buildPitchMixSummary(pitchMixRows),
+    pitchMix: pitchMixRows.map((row) => ({
+      pitchType: row.pitch_type || '',
+      pitchShare: round(num(row.pitch_share), 1) ?? null,
+      samplePitches: num(row.sample_pitches, null)
+    })),
     espnSplits,
+    statmuseVsOpponent,
+    startHistoryLast5: startHistory.slice(0, 5),
+    opponentHistoryThisSeason,
     recentForm: form
       ? {
           windowStarts: num(form.window_starts),
@@ -673,6 +894,49 @@ const recentObjectFromClassic = (row = {}) => {
   }
 }
 
+const seasonObjectFromBatting = (row = null) => {
+  if (!row) return null
+
+  const plateAppearances = num(row.plate_appearances, 0)
+  const atBats = num(row.at_bats, 0)
+  if (plateAppearances <= 0 && atBats <= 0) return null
+
+  const hits = num(row.hits, 0)
+  const walks = num(row.walks, 0)
+  const hitByPitch = num(row.hit_by_pitch, 0)
+  const sacFlies = num(row.sac_flies, 0)
+  const totalBases = num(row.total_bases, 0)
+  const obpDenominator = atBats + walks + hitByPitch + sacFlies
+  const avg = atBats > 0 ? hits / atBats : null
+  const obp = obpDenominator > 0 ? (hits + walks + hitByPitch) / obpDenominator : null
+  const slg = atBats > 0 ? totalBases / atBats : null
+
+  return {
+    gamesPlayed: num(row.games_played, 0),
+    plateAppearances,
+    atBats,
+    hits,
+    singles: num(row.singles, 0),
+    doubles: num(row.doubles, 0),
+    triples: num(row.triples, 0),
+    homeRuns: num(row.home_runs, 0),
+    walks,
+    strikeouts: num(row.strikeouts, 0),
+    runs: num(row.runs, 0),
+    rbi: num(row.rbi, 0),
+    totalBases,
+    avg: round(avg, 3),
+    obp: round(obp, 3),
+    slg: round(slg, 3),
+    ops: Number.isFinite(obp) && Number.isFinite(slg) ? round(obp + slg, 3) : null,
+    hitRate: plateAppearances > 0 ? round(hits / plateAppearances, 3) : null,
+    singlesRate: plateAppearances > 0 ? round(num(row.singles, 0) / plateAppearances, 3) : null,
+    hrRate: plateAppearances > 0 ? round(num(row.home_runs, 0) / plateAppearances, 3) : null,
+    walkRate: plateAppearances > 0 ? round(walks / plateAppearances, 3) : null,
+    totalBasesRate: plateAppearances > 0 ? round(totalBases / plateAppearances, 3) : null
+  }
+}
+
 const buildApproachState = (deviationRows = []) => {
   if (!deviationRows.length) return null
   const primary = deviationRows.find((row) => row.metric === 'total_bases_per_pa') || deviationRows[0]
@@ -720,11 +984,14 @@ const buildStatcastTrend = (row = {}) =>
 
 const buildCareerProfile = (row = {}) =>
   row
-    ? {
-        careerPlateAppearances: num(row.career_plate_appearances, 0),
-        careerOps: num(row.career_ops, null),
-        careerHomeRuns: num(row.career_home_runs, 0),
-        careerTbPerPa: num(row.career_tb_per_pa, null),
+      ? {
+          careerPlateAppearances: num(row.career_plate_appearances, 0),
+          careerAvg: num(row.career_avg, null),
+          careerObp: num(row.career_obp, null),
+          careerSlg: num(row.career_slg, null),
+          careerOps: num(row.career_ops, null),
+          careerHomeRuns: num(row.career_home_runs, 0),
+          careerTbPerPa: num(row.career_tb_per_pa, null),
         careerPowerIndex: num(row.career_power_index, null),
         contactRiskIndex: num(row.contact_risk_index, null),
         roleStabilityIndex: num(row.role_stability_index, null),
@@ -736,10 +1003,11 @@ const buildLineupPlayer = (row, context) => {
   const raw = parseJson(row.split_source_detail_json)?.raw_json || {}
   const split = raw.split || splitObjectFromRow(row)
   const classic = context.classicByPlayerId.get(row.player_id)
+  const batterSeason = context.batterSeasonByPlayerId.get(row.player_id)
   const statcast = context.statcastByPlayerId.get(row.player_id)
   const career = context.careerByPlayerId.get(row.player_id)
   const deviations = context.deviationsByPlayerId.get(row.player_id) || []
-  const season = raw.season || splitObjectFromRow(row)
+  const season = raw.season || seasonObjectFromBatting(batterSeason) || splitObjectFromRow(row)
   const recent = raw.recent || recentObjectFromClassic(classic)
 
   return {
@@ -762,17 +1030,283 @@ const buildLineupPlayer = (row, context) => {
   }
 }
 
-const buildLineupContext = (rows = []) => {
+const rateFrom = (value, { allowOpsScale = false } = {}) => {
+  const parsed = Number(value)
+  if (!Number.isFinite(parsed) || parsed <= 0) return null
+  if (parsed > 5) return parsed / 1000
+  if (parsed > 1 && !allowOpsScale) return parsed / 1000
+  return parsed
+}
+
+const weightedAverage = (items = [], valueKey = 'value', weightKey = 'weight') => {
+  const valid = items
+    .map((item) => ({
+      value: Number(item?.[valueKey]),
+      weight: Number(item?.[weightKey])
+    }))
+    .filter((item) => Number.isFinite(item.value) && Number.isFinite(item.weight) && item.weight > 0)
+
+  if (!valid.length) return null
+
+  return valid.reduce((sum, item) => sum + item.value * item.weight, 0) /
+    valid.reduce((sum, item) => sum + item.weight, 0)
+}
+
+const buildLineupBattingPressure = (lineup = []) => {
+  const entries = lineup
+    .map((entry) => {
+      const seasonAvg = rateFrom(entry.season?.avg)
+      const recentAvg = rateFrom(entry.recent?.avg ?? entry.recent?.hitRate)
+      const splitAvg = rateFrom(entry.split?.avg)
+      const careerAvg = rateFrom(entry.careerProfile?.careerAvg)
+      const seasonOps = rateFrom(entry.season?.ops, { allowOpsScale: true })
+      const recentOps = rateFrom(
+        entry.recent?.ops ??
+          (Number.isFinite(Number(entry.recent?.totalBasesRate)) || Number.isFinite(Number(entry.recent?.walkRate))
+            ? Number(entry.recent?.totalBasesRate || 0) + Number(entry.recent?.walkRate || 0)
+            : null),
+        { allowOpsScale: true }
+      )
+      const splitOps = rateFrom(entry.split?.ops, { allowOpsScale: true })
+      const careerOps = rateFrom(entry.careerProfile?.careerOps, { allowOpsScale: true })
+      const recentPa = num(entry.recent?.plateAppearances, 0)
+      const splitPa = num(entry.split?.plateAppearances, 0)
+      const careerPa = num(entry.careerProfile?.careerPlateAppearances, 0)
+      const avgParts = [
+        Number.isFinite(seasonAvg) ? { value: seasonAvg, weight: 0.42 } : null,
+        Number.isFinite(recentAvg) && recentPa >= 8 ? { value: recentAvg, weight: 0.33 } : null,
+        Number.isFinite(splitAvg) && splitPa >= 10 ? { value: splitAvg, weight: 0.25 } : null,
+        Number.isFinite(careerAvg) && careerPa >= 150 ? { value: careerAvg, weight: 0.14 } : null
+      ].filter(Boolean)
+      const opsParts = [
+        Number.isFinite(seasonOps) ? { value: seasonOps, weight: 0.42 } : null,
+        Number.isFinite(recentOps) && recentPa >= 8 ? { value: recentOps, weight: 0.33 } : null,
+        Number.isFinite(splitOps) && splitPa >= 10 ? { value: splitOps, weight: 0.25 } : null,
+        Number.isFinite(careerOps) && careerPa >= 150 ? { value: careerOps, weight: 0.14 } : null
+      ].filter(Boolean)
+      const weightedAvg = avgParts.length
+        ? avgParts.reduce((sum, part) => sum + part.value * part.weight, 0) / avgParts.reduce((sum, part) => sum + part.weight, 0)
+        : null
+      const weightedOps = opsParts.length
+        ? opsParts.reduce((sum, part) => sum + part.value * part.weight, 0) / opsParts.reduce((sum, part) => sum + part.weight, 0)
+        : null
+      return {
+        slot: num(entry.slot, 99),
+        name: entry.name,
+        weightedAvg,
+        weightedOps,
+        recentAvg,
+        recentPa,
+        splitAvg,
+        splitOps,
+        splitPa,
+        bats: entry.bats || ''
+      }
+    })
+    .filter((entry) => Number.isFinite(entry.weightedAvg) || Number.isFinite(entry.weightedOps))
+    .sort((left, right) => left.slot - right.slot)
+
+  if (!entries.length) {
+    return {
+      battingPressureIndex: 50,
+      highAverageCount: 0,
+      topSixHighAverageCount: 0,
+      highOpsCount: 0,
+      recentHotCount: 0,
+      lineupAverage: null,
+      topSixAverage: null,
+      lineupOps: null,
+      topSixOps: null,
+      battingPressureLabel: 'lineup batting pressure unknown',
+      battingPressureReasons: []
+    }
+  }
+
+  const topSix = entries.slice(0, 6)
+  const lineupAverage = average(entries.map((entry) => entry.weightedAvg))
+  const topSixAverage = average(topSix.map((entry) => entry.weightedAvg))
+  const lineupOps = average(entries.map((entry) => entry.weightedOps))
+  const topSixOps = average(topSix.map((entry) => entry.weightedOps))
+  const highAverageCount = entries.filter((entry) => Number(entry.weightedAvg) >= 0.3).length
+  const topSixHighAverageCount = topSix.filter((entry) => Number(entry.weightedAvg) >= 0.3).length
+  const highOpsCount = entries.filter((entry) => Number(entry.weightedOps) >= 0.84).length
+  const recentHotCount = entries.filter((entry) => Number(entry.recentAvg) >= 0.3 && Number(entry.recentPa) >= 8).length
+  const coldCount = entries.filter((entry) => Number(entry.weightedAvg) <= 0.22 && Number(entry.weightedOps) <= 0.64).length
+  const splitEntries = entries
+    .filter((entry) => Number(entry.splitPa || 0) >= 10 && (Number.isFinite(entry.splitAvg) || Number.isFinite(entry.splitOps)))
+    .map((entry) => ({
+      ...entry,
+      splitWeight: clamp(Number(entry.splitPa || 0), 10, 140),
+      splitReliability: clamp((Number(entry.splitPa || 0) - 8) / 42, 0.25, 1)
+    }))
+  const splitTopSix = splitEntries.filter((entry) => Number(entry.slot) <= 6)
+  const splitTopThird = splitEntries.filter((entry) => Number(entry.slot) <= 3)
+  const splitAvgAverage = weightedAverage(splitEntries, 'splitAvg', 'splitWeight')
+  const splitOpsAverage = weightedAverage(splitEntries, 'splitOps', 'splitWeight')
+  const topSixSplitAvgAverage = weightedAverage(splitTopSix, 'splitAvg', 'splitWeight')
+  const topSixSplitOpsAverage = weightedAverage(splitTopSix, 'splitOps', 'splitWeight')
+  const strongSplitEntries = splitEntries.filter(
+    (entry) =>
+      Number(entry.splitPa || 0) >= 20 &&
+      (Number(entry.splitOps) >= 0.8 || Number(entry.splitAvg) >= 0.285)
+  )
+  const weakSplitEntries = splitEntries.filter(
+    (entry) =>
+      Number(entry.splitPa || 0) >= 20 &&
+      (Number(entry.splitOps) <= 0.65 || Number(entry.splitAvg) <= 0.22)
+  )
+  const severeWeakSplitEntries = splitEntries.filter(
+    (entry) =>
+      Number(entry.splitPa || 0) >= 25 &&
+      (Number(entry.splitOps) <= 0.58 || Number(entry.splitAvg) <= 0.195)
+  )
+  const topSixStrongSplitCount = strongSplitEntries.filter((entry) => Number(entry.slot) <= 6).length
+  const topSixWeakSplitCount = weakSplitEntries.filter((entry) => Number(entry.slot) <= 6).length
+  const topThirdStrongSplitCount = strongSplitEntries.filter((entry) => Number(entry.slot) <= 3).length
+  const splitIndex =
+    splitEntries.length
+      ? clamp(
+          50 +
+            (Number(splitAvgAverage || 0.245) - 0.245) * 135 +
+            (Number(splitOpsAverage || 0.72) - 0.72) * 42 +
+            (strongSplitEntries.length - 3) * 3.1 +
+            (topSixStrongSplitCount - 2) * 2 +
+            topThirdStrongSplitCount * 1.4 -
+            Math.max(weakSplitEntries.length - 2, 0) * 2.8 -
+            topSixWeakSplitCount * 1.5 -
+            severeWeakSplitEntries.length * 2.5,
+          18,
+          96
+        )
+      : 50
+  const splitReasonRows = [
+    ...strongSplitEntries
+      .slice()
+      .sort((left, right) => Number(right.splitOps || 0) - Number(left.splitOps || 0))
+      .slice(0, 2)
+      .map((entry) => `${entry.name} ${Number(entry.splitOps).toFixed(3)} OPS split`),
+    ...weakSplitEntries
+      .slice()
+      .sort((left, right) => Number(left.splitOps || 0) - Number(right.splitOps || 0))
+      .slice(0, 2)
+      .map((entry) => `${entry.name} ${Number(entry.splitOps).toFixed(3)} OPS split`)
+  ]
+  const pressureIndex = clamp(
+    50 +
+      (Number(lineupAverage || 0.25) - 0.25) * 165 +
+      (Number(topSixAverage || 0.255) - 0.255) * 120 +
+      (highAverageCount - 3) * 3.2 +
+      (topSixHighAverageCount - 2) * 2.4 +
+      (highOpsCount - 2) * 2.7 +
+      (recentHotCount - 2) * 2 -
+      coldCount * 2.1,
+    18,
+    96
+  )
+  const battingPressureReasons = [
+    `${highAverageCount} projected bats at/above .300 blended AVG`,
+    Number.isFinite(lineupAverage) ? `lineup AVG ${lineupAverage.toFixed(3)}` : null,
+    Number.isFinite(topSixAverage) ? `top-six AVG ${topSixAverage.toFixed(3)}` : null,
+    highOpsCount >= 3 ? `${highOpsCount} bats at/above .840 OPS` : null,
+    recentHotCount >= 3 ? `${recentHotCount} recent hot bats` : null,
+    splitEntries.length
+      ? `${strongSplitEntries.length} strong / ${weakSplitEntries.length} weak handedness split bats`
+      : null
+  ].filter(Boolean)
+
+  return {
+    battingPressureIndex: round(pressureIndex, 1),
+    highAverageCount,
+    topSixHighAverageCount,
+    highOpsCount,
+    recentHotCount,
+    lineupAverage: round(lineupAverage, 3),
+    topSixAverage: round(topSixAverage, 3),
+    lineupOps: round(lineupOps, 3),
+    topSixOps: round(topSixOps, 3),
+    handednessSplitIndex: round(splitIndex, 1),
+    handednessSplitLabel:
+      splitIndex >= 62
+        ? 'strong handedness split lane'
+        : splitIndex <= 42
+          ? 'weak handedness split lane'
+          : 'mixed handedness split lane',
+    handednessSplitCount: splitEntries.length,
+    strongSplitCount: strongSplitEntries.length,
+    weakSplitCount: weakSplitEntries.length,
+    severeWeakSplitCount: severeWeakSplitEntries.length,
+    topSixStrongSplitCount,
+    topSixWeakSplitCount,
+    topThirdStrongSplitCount,
+    splitAvgAverage: round(splitAvgAverage, 3),
+    splitOpsAverage: round(splitOpsAverage, 3),
+    topSixSplitAvgAverage: round(topSixSplitAvgAverage, 3),
+    topSixSplitOpsAverage: round(topSixSplitOpsAverage, 3),
+    handednessSplitReasons: splitReasonRows,
+    handednessSplitProfile: {
+      index: round(splitIndex, 1),
+      label:
+        splitIndex >= 62
+          ? 'strong handedness split lane'
+          : splitIndex <= 42
+            ? 'weak handedness split lane'
+            : 'mixed handedness split lane',
+      splitCount: splitEntries.length,
+      strongSplitCount: strongSplitEntries.length,
+      weakSplitCount: weakSplitEntries.length,
+      severeWeakSplitCount: severeWeakSplitEntries.length,
+      topSixStrongSplitCount,
+      topSixWeakSplitCount,
+      topThirdStrongSplitCount,
+      splitAvgAverage: round(splitAvgAverage, 3),
+      splitOpsAverage: round(splitOpsAverage, 3),
+      topSixSplitAvgAverage: round(topSixSplitAvgAverage, 3),
+      topSixSplitOpsAverage: round(topSixSplitOpsAverage, 3),
+      strongSplitBats: strongSplitEntries.slice(0, 5).map((entry) => ({
+        name: entry.name,
+        slot: entry.slot,
+        bats: entry.bats,
+        plateAppearances: entry.splitPa,
+        avg: round(entry.splitAvg, 3),
+        ops: round(entry.splitOps, 3)
+      })),
+      weakSplitBats: weakSplitEntries.slice(0, 5).map((entry) => ({
+        name: entry.name,
+        slot: entry.slot,
+        bats: entry.bats,
+        plateAppearances: entry.splitPa,
+        avg: round(entry.splitAvg, 3),
+        ops: round(entry.splitOps, 3)
+      })),
+      reasons: splitReasonRows
+    },
+    battingPressureLabel:
+      highAverageCount >= 7
+        ? 'seven-plus .300 traffic bats'
+        : highAverageCount >= 5
+          ? 'stacked .300 traffic pocket'
+          : pressureIndex >= 62
+            ? 'strong batting-pressure lane'
+            : pressureIndex <= 42
+              ? 'soft batting-pressure lane'
+              : 'neutral batting-pressure lane',
+    battingPressureReasons
+  }
+}
+
+const buildLineupContext = (rows = [], lineup = []) => {
   const grades = rows.map((row) => num(row.matchup_grade ?? parseJson(row.source_detail_json)?.raw_json?.metrics?.matchupGrade)).filter(Number.isFinite)
   const pitchGrades = rows
     .map((row) => num(parseJson(row.source_detail_json)?.raw_json?.metrics?.pitchTypeGrade))
     .filter(Number.isFinite)
+  const battingPressure = buildLineupBattingPressure(lineup)
   return {
     averageMatchupGrade: round(average(grades), 2) ?? 0,
     platoonCount: 0,
     pitchTypePressureIndex: round(50 + (average(pitchGrades) ?? 0) * 5, 1) ?? 50,
     bullpenPitchTypePressureIndex: 50,
-    starterPressureIndex: round(50 + (average(grades) ?? 0) * 2, 1) ?? 50
+    starterPressureIndex: round(50 + (average(grades) ?? 0) * 2, 1) ?? 50,
+    ...battingPressure
   }
 }
 
@@ -781,6 +1315,7 @@ const buildLineupBoardSide = ({ game, teamId, opponentPitcher, opponentTeamId, c
   const matchupRows = context.lineupMatchupsByGameTeam.get(`${game.game_id}:${teamId}`) || []
   const firstRow = lineupRows[0]
   const reliefRows = context.reliefByTeamId.get(opponentTeamId) || []
+  const lineup = lineupRows.map((row) => buildLineupPlayer(row, context))
   return {
     teamName: shortTeamName(firstRow?.team_name || ''),
     lineupSource: 'typed-db',
@@ -798,8 +1333,8 @@ const buildLineupBoardSide = ({ game, teamId, opponentPitcher, opponentTeamId, c
       firstRelieverLikelihood: num(row.first_reliever_likelihood, null),
       bridgeScore: num(row.bridge_score, null)
     })),
-    lineup: lineupRows.map((row) => buildLineupPlayer(row, context)),
-    matchupContext: buildLineupContext(matchupRows)
+    lineup,
+    matchupContext: buildLineupContext(matchupRows, lineup)
   }
 }
 
@@ -907,8 +1442,6 @@ const buildStoryContext = (teamId, context) => {
     tags: [state.previous_result, state.division_matchup_flag ? 'division' : 'non-division'].filter(Boolean)
   }
 }
-
-const clamp = (value, min, max) => Math.max(min, Math.min(max, value))
 
 const weightedRate = (offenseRow, defenseRow, leagueRow) => {
   const offenseRate = num(offenseRow?.score_rate, null)
@@ -1093,6 +1626,10 @@ const buildEnvironmentAdjustmentContext = (row = null) => {
       matchStatus: row.weather_match_status,
       hrForce: num(row.hr_force, null),
       effectiveHrForce: num(row.effective_hr_force, null),
+      gameTimeHrForce: num(row.game_time_hr_force, null),
+      earlyGameMaxHrForce: num(row.early_game_max_hr_force, null),
+      lateGameMaxHrForce: num(row.late_game_max_hr_force, null),
+      hrForcePersistenceSignal: row.hr_force_persistence_signal || null,
       signal: row.hr_force_run_signal,
       runDelta: num(row.weather_run_delta, 0),
       hrDelta: num(row.weather_hr_delta, 0)
@@ -1113,6 +1650,8 @@ const buildEnvironmentAdjustmentContext = (row = null) => {
       localStartHour: nullableNum(row.local_start_hour),
       localStartMinute: nullableNum(row.local_start_minute),
       localTimezone: row.local_timezone || null,
+      eveningLocalStart: num(row.evening_start_flag, 0) === 1,
+      nightLocalStart: num(row.night_start_flag, 0) === 1,
       lateLocalStart: num(row.late_local_start_flag, 0) === 1,
       signal: row.visibility_signal || null,
       hitsMultiplier: num(row.visibility_hits_multiplier, 1),
@@ -1266,7 +1805,119 @@ const buildParkContextFromEnvironment = (environmentAdjustmentContext = null) =>
       }
     : null
 
-const buildDbAddendumContext = (game, context) => {
+const lastNameKey = (value = '') => {
+  const parts = normalizeTeam(value).split(' ').filter(Boolean)
+  return parts.at(-1) || ''
+}
+
+const ficDailyGameContextMatches = (gameContext = '', awayCodes = [], homeCodes = []) => {
+  const text = ` ${String(gameContext || '').toUpperCase().replace(/[^A-Z0-9]+/g, ' ')} `
+  return awayCodes.some((awayCode) =>
+    homeCodes.some((homeCode) => text.includes(` ${awayCode} ${homeCode} `))
+  )
+}
+
+const summarizeFicDailyMatchupRows = ({ rows = [], label = '', pitcher = null }) => {
+  const numericRows = rows.filter((row) => Number.isFinite(num(row.hr_force, null)))
+  const hrForces = numericRows.map((row) => num(row.hr_force, null)).filter(Number.isFinite)
+  const qualityAbs = rows.map((row) => num(row.quality_ab_pct, null)).filter(Number.isFinite)
+  const hardHits = rows.map((row) => num(row.hard_hit_pct, null)).filter(Number.isFinite)
+  const highHrForceRows = rows.filter((row) => Number(row.hr_force) >= 1.4)
+  const extremeHrForceRows = rows.filter((row) => Number(row.hr_force) >= 1.7)
+  const matchupPassRows = rows.filter((row) => num(row.matchup_pass, 0) === 1)
+  const topRows = [...rows]
+    .sort((left, right) =>
+      (num(right.hr_force, -1) - num(left.hr_force, -1)) ||
+      (num(right.hard_hit_pct, -1) - num(left.hard_hit_pct, -1)) ||
+      (num(right.bvp_ops, -1) - num(left.bvp_ops, -1))
+    )
+    .slice(0, 6)
+    .map((row) => ({
+      playerName: row.player_name,
+      pitcherName: row.pitcher_name,
+      position: row.position || null,
+      batterHand: row.batter_hand || null,
+      pitcherHand: row.pitcher_hand || null,
+      hrForce: num(row.hr_force, null),
+      qualityAbPct: num(row.quality_ab_pct, null),
+      hardHitPct: num(row.hard_hit_pct, null),
+      recentOps: num(row.recent_ops, null),
+      bvpAtBats: num(row.bvp_ab, null),
+      bvpAvg: num(row.bvp_avg, null),
+      bvpOps: num(row.bvp_ops, null),
+      matchupPass: num(row.matchup_pass, 0) === 1
+    }))
+
+  return {
+    label,
+    source: 'FantasyInfoCentral Daily Matchups',
+    sourceStatus: rows.length ? 'warehouse' : 'missing',
+    rowCount: rows.length,
+    pitcherName: pitcher?.fullName || rows.find((row) => row.pitcher_name)?.pitcher_name || null,
+    gameContexts: [...new Set(rows.map((row) => row.game_context).filter(Boolean))],
+    averageHrForce: round(average(hrForces), 2),
+    maxHrForce: hrForces.length ? round(Math.max(...hrForces), 2) : null,
+    highHrForceRows: highHrForceRows.length,
+    extremeHrForceRows: extremeHrForceRows.length,
+    highHrForceSharePct: rows.length ? round((highHrForceRows.length / rows.length) * 100, 1) : null,
+    qualityAbPct: round(average(qualityAbs), 1),
+    hardHitPct: round(average(hardHits), 1),
+    matchupPassRows: matchupPassRows.length,
+    topRows
+  }
+}
+
+const buildFicDailyMatchupContext = ({ game, context, awayName, homeName, awayPitcher = null, homePitcher = null }) => {
+  const rows = Array.isArray(context.ficDailyMatchupRows) ? context.ficDailyMatchupRows : []
+  if (!rows.length) return null
+
+  const sourceDate = game.game_date?.slice(0, 10)
+  const awayCodes = ficDailyTeamCodes(awayName)
+  const homeCodes = ficDailyTeamCodes(homeName)
+  const codeRows = rows.filter((row) =>
+    ficDailyGameContextMatches(row.game_context, awayCodes, homeCodes)
+  )
+  const awayStarterLast = lastNameKey(awayPitcher?.fullName)
+  const homeStarterLast = lastNameKey(homePitcher?.fullName)
+  const pitcherRows = rows.filter((row) => {
+    const pitcherLast = lastNameKey(row.pitcher_last_name || row.pitcher_name)
+    return pitcherLast && (pitcherLast === awayStarterLast || pitcherLast === homeStarterLast)
+  })
+  const gameRows = codeRows.length ? codeRows : pitcherRows
+  if (!gameRows.length) return null
+
+  const rowsForPitcher = (pitcher) => {
+    const pitcherLast = lastNameKey(pitcher?.fullName)
+    if (!pitcherLast) return []
+    return gameRows.filter((row) => lastNameKey(row.pitcher_last_name || row.pitcher_name) === pitcherLast)
+  }
+  const awayOffenseRows = rowsForPitcher(homePitcher)
+  const homeOffenseRows = rowsForPitcher(awayPitcher)
+  const summary = summarizeFicDailyMatchupRows({ rows: gameRows, label: `${awayName} @ ${homeName}` })
+
+  return {
+    source: 'FantasyInfoCentral Daily Matchups',
+    sourceDate,
+    sourceUrl: `https://www.fantasyinfocentral.com/mlb/daily-matchups?date=${sourceDate}`,
+    matchup: `${awayName} @ ${homeName}`,
+    gameContextMatch: codeRows.length ? 'team-code' : 'pitcher-last-name',
+    awayTeamCode: awayCodes[0] || null,
+    homeTeamCode: homeCodes[0] || null,
+    ...summary,
+    awayOffense: summarizeFicDailyMatchupRows({
+      rows: awayOffenseRows,
+      label: `${awayName} hitters vs ${homePitcher?.fullName || 'home starter'}`,
+      pitcher: homePitcher
+    }),
+    homeOffense: summarizeFicDailyMatchupRows({
+      rows: homeOffenseRows,
+      label: `${homeName} hitters vs ${awayPitcher?.fullName || 'away starter'}`,
+      pitcher: awayPitcher
+    })
+  }
+}
+
+const buildDbAddendumContext = (game, context, awayPitcher = null, homePitcher = null) => {
   const awayName = shortTeamName(game.away_team)
   const homeName = shortTeamName(game.home_team)
   const gamePk = num(game.mlb_game_pk, null)
@@ -1293,6 +1944,14 @@ const buildDbAddendumContext = (game, context) => {
     homeTeam: homeName,
     parkContext: buildParkContextFromEnvironment(environmentAdjustmentContext),
     environmentAdjustmentContext,
+    ficDailyMatchupContext: buildFicDailyMatchupContext({
+      game,
+      context,
+      awayName,
+      homeName,
+      awayPitcher,
+      homePitcher
+    }),
     reliefProjectionContext: {
       away: awayReliefProjectionContext,
       home: homeReliefProjectionContext
@@ -1305,7 +1964,16 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
   const homeName = shortTeamName(game.home_team)
   const awayTeamId = game.away_team_id || game.lineups && Object.values(game.lineups).find((lineup) => lineup.team_name === game.away_team)?.team_id
   const homeTeamId = game.home_team_id || game.lineups && Object.values(game.lineups).find((lineup) => lineup.team_name === game.home_team)?.team_id
-  const startersByTeam = Object.fromEntries((game.starters || []).map((starter) => [starter.team_id, buildPitcher(starter, context)]))
+  const opponentByTeamId = {
+    [awayTeamId]: homeName,
+    [homeTeamId]: awayName
+  }
+  const startersByTeam = Object.fromEntries(
+    (game.starters || []).map((starter) => [
+      starter.team_id,
+      buildPitcher(starter, context, opponentByTeamId[starter.team_id] || '')
+    ])
+  )
   const awayPitcher = startersByTeam[awayTeamId] || buildPitcher({}, context)
   const homePitcher = startersByTeam[homeTeamId] || buildPitcher({}, context)
   const start = toPtStart(game.start_time_utc)
@@ -1345,8 +2013,9 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
     gamePk,
     parkContext,
     environmentAdjustmentContext,
+    ficDailyMatchupContext,
     reliefProjectionContext
-  } = buildDbAddendumContext(game, context)
+  } = buildDbAddendumContext(game, context, awayPitcher, homePitcher)
 
   const baseGame = {
     id: `${slugify(awayName)}-${slugify(homeName)}`,
@@ -1370,6 +2039,7 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
     teamContext: { away: null, home: null },
     parkContext,
     environmentAdjustmentContext,
+    ficDailyMatchupContext,
     offenseContext: {
       away: buildTeamOffenseContext(awayTeamId, 'Away', context),
       home: buildTeamOffenseContext(homeTeamId, 'Home', context)
@@ -1481,7 +2151,16 @@ export const loadMlbInningRunMatricesFromDb = async (date) => {
     const homeName = shortTeamName(game.home_team)
     const awayTeamId = game.away_team_id || game.lineups && Object.values(game.lineups).find((lineup) => lineup.team_name === game.away_team)?.team_id
     const homeTeamId = game.home_team_id || game.lineups && Object.values(game.lineups).find((lineup) => lineup.team_name === game.home_team)?.team_id
-    const startersByTeam = Object.fromEntries((game.starters || []).map((starter) => [starter.team_id, buildPitcher(starter, context)]))
+    const opponentByTeamId = {
+      [awayTeamId]: homeName,
+      [homeTeamId]: awayName
+    }
+    const startersByTeam = Object.fromEntries(
+      (game.starters || []).map((starter) => [
+        starter.team_id,
+        buildPitcher(starter, context, opponentByTeamId[starter.team_id] || '')
+      ])
+    )
     const awayPitcher = startersByTeam[awayTeamId] || buildPitcher({}, context)
     const homePitcher = startersByTeam[homeTeamId] || buildPitcher({}, context)
     const matrix = buildInningRunMatrix({ game, context, awayTeamId, homeTeamId, awayName, homeName, awayPitcher, homePitcher })

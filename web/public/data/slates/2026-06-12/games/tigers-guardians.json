@@ -15,18 +15,18 @@
     {
       "side": "Away",
       "name": "Tigers",
-      "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 77 SO | 1.58 WHIP | 62.2 IP"
+      "detail": "Jack Flaherty (RHP) | 1-8 | 5.35 ERA | 78 SO | 1.57 WHIP | 65.2 IP"
     },
     {
       "side": "Home",
       "name": "Guardians",
-      "detail": "Tanner Bibee (RHP) | 1-7 | 4.09 ERA | 63 SO | 1.23 WHIP | 77.0 IP"
+      "detail": "Tanner Bibee (RHP) | 2-7 | 3.96 ERA | 71 SO | 1.18 WHIP | 84.0 IP"
     }
   ],
   "summary": "Tigers @ Guardians with Jack Flaherty against Tanner Bibee.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Tigers +105 / Guardians -126 | o8.5 -112 / u8.5 -107 | Tigers -1.5 +167 / Guardians +1.5 -204 | F5 Tigers -105 / Guardians -125 / o4.5 -125 / u4.5 -105.",
+    "Current board: Tigers +111 / Guardians -145 | o7.5 -109 / u7.5 -120 | Tigers +1.5 -204 / Guardians -1.5 +154 | F5 Tigers -105 / Guardians -125 / o4.5 -125 / u4.5 -105.",
     "Jack Flaherty vs Tanner Bibee."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
@@ -34,11 +34,11 @@
     "away": {
       "divisionLeader": false,
       "divisionRank": "4",
-      "gamesBack": "8.0",
-      "losses": 40,
-      "runDifferential": -9,
-      "streakCode": "W1",
-      "winningPercentage": ".420",
+      "gamesBack": "9.0",
+      "losses": 41,
+      "runDifferential": -10,
+      "streakCode": "L1",
+      "winningPercentage": ".414",
       "wins": 29
     },
     "home": {
@@ -46,10 +46,10 @@
       "divisionRank": "2",
       "gamesBack": "0.5",
       "losses": 33,
-      "runDifferential": -6,
-      "streakCode": "L4",
-      "winningPercentage": ".529",
-      "wins": 37
+      "runDifferential": -5,
+      "streakCode": "W1",
+      "winningPercentage": ".535",
+      "wins": 38
     }
   },
   "parkContext": {
@@ -134,6 +134,156 @@
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
   },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Tigers @ Guardians",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "DET",
+    "homeTeamCode": "CLE",
+    "label": "Tigers @ Guardians",
+    "sourceStatus": "warehouse",
+    "rowCount": 17,
+    "pitcherName": "J. Flaherty",
+    "gameContexts": [
+      "@ 8 DET CLE"
+    ],
+    "averageHrForce": 1.2,
+    "maxHrForce": 1.2,
+    "highHrForceRows": 0,
+    "extremeHrForceRows": 0,
+    "highHrForceSharePct": 0,
+    "qualityAbPct": 40.4,
+    "hardHitPct": 15.8,
+    "matchupPassRows": 1,
+    "topRows": [
+      {
+        "playerName": "Z. McKinstry",
+        "pitcherName": "T. Bibee",
+        "position": "SS",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.2,
+        "qualityAbPct": 43,
+        "hardHitPct": 33,
+        "recentOps": 1.3,
+        "bvpAtBats": 27,
+        "bvpAvg": 0.259,
+        "bvpOps": 0.777,
+        "matchupPass": false
+      },
+      {
+        "playerName": "D. Dingler",
+        "pitcherName": "T. Bibee",
+        "position": "C",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.2,
+        "qualityAbPct": 40,
+        "hardHitPct": 30,
+        "recentOps": 1.197,
+        "bvpAtBats": 14,
+        "bvpAvg": 0.214,
+        "bvpOps": 0.553,
+        "matchupPass": false
+      },
+      {
+        "playerName": "M. Vierling",
+        "pitcherName": "T. Bibee",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.2,
+        "qualityAbPct": 45,
+        "hardHitPct": 27,
+        "recentOps": 0.563,
+        "bvpAtBats": 15,
+        "bvpAvg": 0.2,
+        "bvpOps": 0.822,
+        "matchupPass": false
+      },
+      {
+        "playerName": "S. Torkelson",
+        "pitcherName": "T. Bibee",
+        "position": "1B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.2,
+        "qualityAbPct": 53,
+        "hardHitPct": 27,
+        "recentOps": 0.616,
+        "bvpAtBats": 17,
+        "bvpAvg": 0.235,
+        "bvpOps": 0.762,
+        "matchupPass": false
+      },
+      {
+        "playerName": "A. Martinez",
+        "pitcherName": "J. Flaherty",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.2,
+        "qualityAbPct": 33,
+        "hardHitPct": 22,
+        "recentOps": 0.879,
+        "bvpAtBats": 9,
+        "bvpAvg": 0.222,
+        "bvpOps": 0.778,
+        "matchupPass": false
+      },
+      {
+        "playerName": "C. Keith",
+        "pitcherName": "T. Bibee",
+        "position": "2B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.2,
+        "qualityAbPct": 50,
+        "hardHitPct": 21,
+        "recentOps": 0.783,
+        "bvpAtBats": 19,
+        "bvpAvg": 0.263,
+        "bvpOps": 0.785,
+        "matchupPass": false
+      }
+    ],
+    "awayOffense": {
+      "label": "Tigers hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "Guardians hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
+  },
   "offenseContext": {
     "away": {
       "hitsPerGame": 8.04545,
@@ -177,7 +327,7 @@
       "teamName": "Tigers",
       "source": "MLB-RP2",
       "chainSource": "MLB-RP2",
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectionOnly": true,
       "identityConfidence": "low",
@@ -200,7 +350,7 @@
           "usedDaysLast3": 1,
           "usedDaysLast6": 1,
           "unavailable": false,
-          "shadowSharePct": 20.8,
+          "shadowSharePct": 20.7,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -224,31 +374,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 0,
           "unavailable": true,
-          "shadowSharePct": 20.8,
-          "source": "MLB-RP2",
-          "projectionSource": "fangraphs_roster_resource",
-          "identityConfidence": "low",
-          "projectionOnly": true
-        },
-        {
-          "name": "Drew Anderson",
-          "pitcherName": "Drew Anderson",
-          "pitcherId": null,
-          "role": "MID",
-          "throws": "R",
-          "expectedOuts": 3.4,
-          "availabilityScore": 62.1,
-          "bridgeScore": 58.5,
-          "fatigueScore": 37.9,
-          "firstRelieverLikelihood": 68.9,
-          "workedYesterday": false,
-          "backToBack": false,
-          "pitchesLast3": 17,
-          "pitchesLast6": 33,
-          "usedDaysLast3": 1,
-          "usedDaysLast6": 2,
-          "unavailable": false,
-          "shadowSharePct": 19.8,
+          "shadowSharePct": 20.7,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -272,6 +398,30 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 1,
           "unavailable": false,
+          "shadowSharePct": 20.2,
+          "source": "MLB-RP2",
+          "projectionSource": "fangraphs_roster_resource",
+          "identityConfidence": "low",
+          "projectionOnly": true
+        },
+        {
+          "name": "Drew Anderson",
+          "pitcherName": "Drew Anderson",
+          "pitcherId": null,
+          "role": "MID",
+          "throws": "R",
+          "expectedOuts": 3.4,
+          "availabilityScore": 62.1,
+          "bridgeScore": 58.5,
+          "fatigueScore": 37.9,
+          "firstRelieverLikelihood": 68.9,
+          "workedYesterday": false,
+          "backToBack": false,
+          "pitchesLast3": 17,
+          "pitchesLast6": 33,
+          "usedDaysLast3": 1,
+          "usedDaysLast6": 2,
+          "unavailable": false,
           "shadowSharePct": 19.7,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
@@ -288,7 +438,7 @@
       "fatigueScore": 30.1,
       "qualityScore": 57.2,
       "runRiskTier": "stable_bridge",
-      "topTwoSharePct": 41.6,
+      "topTwoSharePct": 41.4,
       "lead": {
         "pitcherName": "Enmanuel De Jesus",
         "pitcherId": null,
@@ -308,7 +458,7 @@
       "teamName": "Guardians",
       "source": "MLB-RP2",
       "chainSource": "MLB-RP2",
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectionOnly": true,
       "identityConfidence": "low",
@@ -331,31 +481,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 0,
           "unavailable": true,
-          "shadowSharePct": 21.2,
-          "source": "MLB-RP2",
-          "projectionSource": "fangraphs_roster_resource",
-          "identityConfidence": "low",
-          "projectionOnly": true
-        },
-        {
-          "name": "Hunter Gaddis",
-          "pitcherName": "Hunter Gaddis",
-          "pitcherId": null,
-          "role": "SU8",
-          "throws": "R",
-          "expectedOuts": 3,
-          "availabilityScore": 85.9,
-          "bridgeScore": 66.4,
-          "fatigueScore": 14.1,
-          "firstRelieverLikelihood": 71.5,
-          "workedYesterday": false,
-          "backToBack": false,
-          "pitchesLast3": 0,
-          "pitchesLast6": 23,
-          "usedDaysLast3": 0,
-          "usedDaysLast6": 1,
-          "unavailable": false,
-          "shadowSharePct": 21,
+          "shadowSharePct": 21.3,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -378,6 +504,30 @@
           "pitchesLast6": 30,
           "usedDaysLast3": 1,
           "usedDaysLast6": 2,
+          "unavailable": false,
+          "shadowSharePct": 20.8,
+          "source": "MLB-RP2",
+          "projectionSource": "fangraphs_roster_resource",
+          "identityConfidence": "low",
+          "projectionOnly": true
+        },
+        {
+          "name": "Hunter Gaddis",
+          "pitcherName": "Hunter Gaddis",
+          "pitcherId": null,
+          "role": "SU8",
+          "throws": "R",
+          "expectedOuts": 3,
+          "availabilityScore": 85.9,
+          "bridgeScore": 66.4,
+          "fatigueScore": 14.1,
+          "firstRelieverLikelihood": 71.5,
+          "workedYesterday": false,
+          "backToBack": false,
+          "pitchesLast3": 0,
+          "pitchesLast6": 23,
+          "usedDaysLast3": 0,
+          "usedDaysLast6": 1,
           "unavailable": false,
           "shadowSharePct": 20.7,
           "source": "MLB-RP2",
@@ -403,7 +553,7 @@
           "usedDaysLast3": 1,
           "usedDaysLast6": 3,
           "unavailable": false,
-          "shadowSharePct": 18.9,
+          "shadowSharePct": 19,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -419,7 +569,7 @@
       "fatigueScore": 32,
       "qualityScore": 74.8,
       "runRiskTier": "fresh_bridge",
-      "topTwoSharePct": 42.2,
+      "topTwoSharePct": 42.1,
       "lead": {
         "pitcherName": "Daniel Espino",
         "pitcherId": null,
@@ -442,7 +592,7 @@
   },
   "reliefProjectionContext": {
     "away": {
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectedReliefRunsAllowed": 0.728,
       "projectedReliefOuts": 9.83,
@@ -452,7 +602,7 @@
       "fatigueScore": 30.1,
       "qualityScore": 57.2,
       "runRiskTier": "stable_bridge",
-      "topTwoSharePct": 41.6,
+      "topTwoSharePct": 41.4,
       "lead": {
         "pitcherName": "Enmanuel De Jesus",
         "pitcherId": null,
@@ -482,6 +632,7 @@
           "score": 74.482,
           "firstUpBaseScore": 71.952,
           "firstUpTrendAdjustment": 0.53,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 2,
           "firstUpTrend": {
@@ -511,7 +662,31 @@
             "sixPlusRate": 0.2,
             "startsSample": 10
           },
-          "shadowSharePct": 20.8
+          "lineupMatchupContext": {
+            "opponentTeamName": "Cleveland Guardians",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 1,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 4,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 46,
+              "leftPa": 55,
+              "rightDamageAllowed": 0.272,
+              "leftDamageAllowed": 0.409,
+              "splitEdge": 0.137
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
+          "shadowSharePct": 20.7
         },
         {
           "pitcherId": null,
@@ -535,6 +710,7 @@
           "score": 74.42,
           "firstUpBaseScore": 72.42,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 2,
           "firstUpTrend": null,
@@ -549,7 +725,91 @@
             "sixPlusRate": 0.2,
             "startsSample": 10
           },
-          "shadowSharePct": 20.8
+          "lineupMatchupContext": {
+            "opponentTeamName": "Cleveland Guardians",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 1,
+            "leftHandedBatters": 8,
+            "rawRightHandedBatters": 1,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 4,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.889,
+            "dominantSideEdge": 7,
+            "pitcherBetterSide": null,
+            "pitcherSplitSample": null,
+            "freshnessEligible": true,
+            "reason": "Pitcher split sample is too thin for a handedness adjustment."
+          },
+          "shadowSharePct": 20.7
+        },
+        {
+          "pitcherId": null,
+          "pitcherName": "Will Vest",
+          "playerKey": "fg:19769",
+          "role": "SU8",
+          "source": "fangraphs_roster_resource",
+          "throws": "R",
+          "availabilityScore": 88.8,
+          "bridgeScore": 67.3,
+          "fatigueScore": 11.2,
+          "firstRelieverLikelihood": 72.6,
+          "expectedOuts": 3,
+          "workedYesterday": false,
+          "backToBack": false,
+          "pitchesLast3": 0,
+          "pitchesLast6": 10,
+          "usedDaysLast3": 0,
+          "usedDaysLast6": 1,
+          "unavailable": false,
+          "score": 72.768,
+          "firstUpBaseScore": 72.568,
+          "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 2.2,
+          "firstUpRestPenalty": 0,
+          "starterLeashAdjustment": -2,
+          "firstUpTrend": null,
+          "restContext": null,
+          "starterLeashContext": {
+            "status": "short_leash",
+            "pitcherId": 656427,
+            "pitcherName": "Jack Flaherty",
+            "expectedStarterOuts": 13.3,
+            "shortStartRate": 0.5,
+            "leashScore": 34.5,
+            "sixPlusRate": 0.2,
+            "startsSample": 10
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Cleveland Guardians",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 1,
+            "leftHandedBatters": 8,
+            "rawRightHandedBatters": 1,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 4,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.889,
+            "dominantSideEdge": 7,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 42,
+              "leftPa": 36,
+              "rightDamageAllowed": 0.543,
+              "leftDamageAllowed": 0.272,
+              "splitEdge": 0.271
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 1,
+            "splitStrength": 1,
+            "fit": true,
+            "reason": "Fresh reliever split fits L-heavy opponent pocket."
+          },
+          "shadowSharePct": 20.2
         },
         {
           "pitcherId": null,
@@ -573,6 +833,7 @@
           "score": 70.98,
           "firstUpBaseScore": 68.87,
           "firstUpTrendAdjustment": 0.11,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 2,
           "firstUpTrend": {
@@ -602,43 +863,29 @@
             "sixPlusRate": 0.2,
             "startsSample": 10
           },
-          "shadowSharePct": 19.8
-        },
-        {
-          "pitcherId": null,
-          "pitcherName": "Will Vest",
-          "playerKey": "fg:19769",
-          "role": "SU8",
-          "source": "fangraphs_roster_resource",
-          "throws": "R",
-          "availabilityScore": 88.8,
-          "bridgeScore": 67.3,
-          "fatigueScore": 11.2,
-          "firstRelieverLikelihood": 72.6,
-          "expectedOuts": 3,
-          "workedYesterday": false,
-          "backToBack": false,
-          "pitchesLast3": 0,
-          "pitchesLast6": 10,
-          "usedDaysLast3": 0,
-          "usedDaysLast6": 1,
-          "unavailable": false,
-          "score": 70.568,
-          "firstUpBaseScore": 72.568,
-          "firstUpTrendAdjustment": 0,
-          "firstUpRestPenalty": 0,
-          "starterLeashAdjustment": -2,
-          "firstUpTrend": null,
-          "restContext": null,
-          "starterLeashContext": {
-            "status": "short_leash",
-            "pitcherId": 656427,
-            "pitcherName": "Jack Flaherty",
-            "expectedStarterOuts": 13.3,
-            "shortStartRate": 0.5,
-            "leashScore": 34.5,
-            "sixPlusRate": 0.2,
-            "startsSample": 10
+          "lineupMatchupContext": {
+            "opponentTeamName": "Cleveland Guardians",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 1,
+            "leftHandedBatters": 8,
+            "rawRightHandedBatters": 1,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 4,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.889,
+            "dominantSideEdge": 7,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 91,
+              "leftPa": 68,
+              "rightDamageAllowed": 0.47,
+              "leftDamageAllowed": 0.46,
+              "splitEdge": 0.01
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
           },
           "shadowSharePct": 19.7
         },
@@ -664,6 +911,7 @@
           "score": 67.312,
           "firstUpBaseScore": 66.682,
           "firstUpTrendAdjustment": 0.63,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -693,7 +941,31 @@
             "sixPlusRate": 0.2,
             "startsSample": 10
           },
-          "shadowSharePct": 18.8
+          "lineupMatchupContext": {
+            "opponentTeamName": "Cleveland Guardians",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 5,
+            "leftHandedBatters": 4,
+            "rawRightHandedBatters": 1,
+            "rawLeftHandedBatters": 4,
+            "rawSwitchHitters": 4,
+            "dominantBatterSide": "R",
+            "dominantBatterSideShare": 0.556,
+            "dominantSideEdge": 1,
+            "pitcherBetterSide": null,
+            "pitcherSplitSample": {
+              "rightPa": 7,
+              "leftPa": 8,
+              "rightDamageAllowed": 0.2,
+              "leftDamageAllowed": 0.175,
+              "splitEdge": null
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher split sample is too thin for a handedness adjustment."
+          },
+          "shadowSharePct": 18.7
         }
       ],
       "reasons": [
@@ -705,7 +977,7 @@
       "confidenceScore": 90
     },
     "home": {
-      "modelVersion": "MLB-RP2.2026-06-12.v2",
+      "modelVersion": "MLB-RP2.2026-06-12.v3",
       "sourceMode": "fangraphs_roster_resource",
       "projectedReliefRunsAllowed": 1.622,
       "projectedReliefOuts": 9.7,
@@ -715,7 +987,7 @@
       "fatigueScore": 32,
       "qualityScore": 74.8,
       "runRiskTier": "fresh_bridge",
-      "topTwoSharePct": 42.2,
+      "topTwoSharePct": 42.1,
       "lead": {
         "pitcherName": "Daniel Espino",
         "pitcherId": null,
@@ -745,6 +1017,7 @@
           "score": 73.42,
           "firstUpBaseScore": 72.42,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 1,
           "firstUpTrend": null,
@@ -759,45 +1032,25 @@
             "sixPlusRate": 0.5,
             "startsSample": 10
           },
-          "shadowSharePct": 21.2
-        },
-        {
-          "pitcherId": null,
-          "pitcherName": "Hunter Gaddis",
-          "playerKey": "fg:25636",
-          "role": "SU8",
-          "source": "fangraphs_roster_resource",
-          "throws": "R",
-          "availabilityScore": 85.9,
-          "bridgeScore": 66.4,
-          "fatigueScore": 14.1,
-          "firstRelieverLikelihood": 71.5,
-          "expectedOuts": 3,
-          "workedYesterday": false,
-          "backToBack": false,
-          "pitchesLast3": 0,
-          "pitchesLast6": 23,
-          "usedDaysLast3": 0,
-          "usedDaysLast6": 1,
-          "unavailable": false,
-          "score": 72.538,
-          "firstUpBaseScore": 71.538,
-          "firstUpTrendAdjustment": 0,
-          "firstUpRestPenalty": 0,
-          "starterLeashAdjustment": 1,
-          "firstUpTrend": null,
-          "restContext": null,
-          "starterLeashContext": {
-            "status": "long_leash",
-            "pitcherId": 676440,
-            "pitcherName": "Tanner Bibee",
-            "expectedStarterOuts": 16.2,
-            "shortStartRate": 0.4,
-            "leashScore": 50.9,
-            "sixPlusRate": 0.5,
-            "startsSample": 10
+          "lineupMatchupContext": {
+            "opponentTeamName": "Detroit Tigers",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 6,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": null,
+            "pitcherSplitSample": null,
+            "freshnessEligible": true,
+            "reason": "Pitcher split sample is too thin for a handedness adjustment."
           },
-          "shadowSharePct": 21
+          "shadowSharePct": 21.3
         },
         {
           "pitcherId": null,
@@ -821,6 +1074,7 @@
           "score": 71.648,
           "firstUpBaseScore": 70.548,
           "firstUpTrendAdjustment": 1.1,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -850,6 +1104,96 @@
             "sixPlusRate": 0.5,
             "startsSample": 10
           },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Detroit Tigers",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 6,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 44,
+              "leftPa": 40,
+              "rightDamageAllowed": 0.193,
+              "leftDamageAllowed": 0.286,
+              "splitEdge": 0.093
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
+          "shadowSharePct": 20.8
+        },
+        {
+          "pitcherId": null,
+          "pitcherName": "Hunter Gaddis",
+          "playerKey": "fg:25636",
+          "role": "SU8",
+          "source": "fangraphs_roster_resource",
+          "throws": "R",
+          "availabilityScore": 85.9,
+          "bridgeScore": 66.4,
+          "fatigueScore": 14.1,
+          "firstRelieverLikelihood": 71.5,
+          "expectedOuts": 3,
+          "workedYesterday": false,
+          "backToBack": false,
+          "pitchesLast3": 0,
+          "pitchesLast6": 23,
+          "usedDaysLast3": 0,
+          "usedDaysLast6": 1,
+          "unavailable": false,
+          "score": 71.488,
+          "firstUpBaseScore": 71.538,
+          "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": -1.05,
+          "firstUpRestPenalty": 0,
+          "starterLeashAdjustment": 1,
+          "firstUpTrend": null,
+          "restContext": null,
+          "starterLeashContext": {
+            "status": "long_leash",
+            "pitcherId": 676440,
+            "pitcherName": "Tanner Bibee",
+            "expectedStarterOuts": 16.2,
+            "shortStartRate": 0.4,
+            "leashScore": 50.9,
+            "sixPlusRate": 0.5,
+            "startsSample": 10
+          },
+          "lineupMatchupContext": {
+            "opponentTeamName": "Detroit Tigers",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 6,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 46,
+              "leftPa": 27,
+              "rightDamageAllowed": 0.285,
+              "leftDamageAllowed": 0.707,
+              "splitEdge": 0.423
+            },
+            "freshnessEligible": true,
+            "lineupPressure": 0.75,
+            "splitStrength": 1,
+            "fit": false,
+            "reason": "Opponent pocket leans L, away from pitcher better split side R."
+          },
           "shadowSharePct": 20.7
         },
         {
@@ -874,6 +1218,7 @@
           "score": 65.493,
           "firstUpBaseScore": 64.903,
           "firstUpTrendAdjustment": 0.59,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 0,
           "firstUpTrend": {
@@ -903,7 +1248,31 @@
             "sixPlusRate": 0.5,
             "startsSample": 10
           },
-          "shadowSharePct": 18.9
+          "lineupMatchupContext": {
+            "opponentTeamName": "Detroit Tigers",
+            "lineupStatus": "complete",
+            "pitcherThrows": "L",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 6,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "L",
+            "pitcherSplitSample": {
+              "rightPa": 48,
+              "leftPa": 47,
+              "rightDamageAllowed": 0.501,
+              "leftDamageAllowed": 0.359,
+              "splitEdge": 0.143
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
+          "shadowSharePct": 19
         },
         {
           "pitcherId": null,
@@ -927,6 +1296,7 @@
           "score": 63.048,
           "firstUpBaseScore": 62.048,
           "firstUpTrendAdjustment": 0,
+          "firstUpLineupMatchupAdjustment": 0,
           "firstUpRestPenalty": 0,
           "starterLeashAdjustment": 1,
           "firstUpTrend": null,
@@ -949,7 +1319,31 @@
             "sixPlusRate": 0.5,
             "startsSample": 10
           },
-          "shadowSharePct": 18.2
+          "lineupMatchupContext": {
+            "opponentTeamName": "Detroit Tigers",
+            "lineupStatus": "complete",
+            "pitcherThrows": "R",
+            "battersCount": 9,
+            "rightHandedBatters": 3,
+            "leftHandedBatters": 6,
+            "rawRightHandedBatters": 3,
+            "rawLeftHandedBatters": 6,
+            "rawSwitchHitters": 0,
+            "dominantBatterSide": "L",
+            "dominantBatterSideShare": 0.667,
+            "dominantSideEdge": 3,
+            "pitcherBetterSide": "R",
+            "pitcherSplitSample": {
+              "rightPa": 42,
+              "leftPa": 32,
+              "rightDamageAllowed": 0.338,
+              "leftDamageAllowed": 0.37,
+              "splitEdge": 0.032
+            },
+            "freshnessEligible": false,
+            "reason": "Pitcher is not fresh enough for lineup-fit to boost first-up likelihood."
+          },
+          "shadowSharePct": 18.3
         }
       ],
       "reasons": [
@@ -3488,71 +3882,71 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 82.7,
-          "noRunProbabilityPct": 17.3,
+          "runProbabilityPct": 82.2,
+          "noRunProbabilityPct": 17.8,
           "awayRunProbabilityPct": 72,
-          "homeRunProbabilityPct": 38.2,
+          "homeRunProbabilityPct": 36.4,
           "lean": "Run",
           "strength": "strong",
           "sampleHalves": 139,
-          "caution": "",
-          "reason": "YRFI with a 83% modeled chance of at least one first-inning run. Tigers score 72% of the time and Guardians 38.2% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "caution": "Guardians handedness splits are weak against the starter (20.4) Guardians top third carries weak split rows",
+          "reason": "YRFI with a 82% modeled chance of at least one first-inning run. Tigers score 72% of the time and Guardians 36.4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
           "sourceModel": "M2 first-inning"
         },
         {
           "inning": 2,
           "phase": "M2 early F5",
-          "runProbabilityPct": 51,
-          "noRunProbabilityPct": 49,
-          "awayRunProbabilityPct": 27,
-          "homeRunProbabilityPct": 24,
+          "runProbabilityPct": 49,
+          "noRunProbabilityPct": 51,
+          "awayRunProbabilityPct": 25.9,
+          "homeRunProbabilityPct": 23.1,
           "lean": "No run",
           "strength": "m2-baseline",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.2 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Tigers F5 runs 1.5; Guardians F5 runs 2.5; Jack Flaherty: HA 4.5, ER 2.5, win yes +219; Tanner Bibee: HA 4.5, ER 2.5, win yes +178; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.9 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Tigers F5 runs 1.5; Guardians F5 runs 2.5; Jack Flaherty: HA 4.5, ER 2.5, win yes +219; Tanner Bibee: HA 4.5, ER 2.5, win yes +178; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 3,
           "phase": "M2 early F5",
-          "runProbabilityPct": 61.8,
-          "noRunProbabilityPct": 38.2,
-          "awayRunProbabilityPct": 27.8,
-          "homeRunProbabilityPct": 34,
+          "runProbabilityPct": 59.7,
+          "noRunProbabilityPct": 40.3,
+          "awayRunProbabilityPct": 26.8,
+          "homeRunProbabilityPct": 32.9,
           "lean": "Run",
-          "strength": "m2-strong",
+          "strength": "m2-baseline",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.2 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Tigers F5 runs 1.5; Guardians F5 runs 2.5; Jack Flaherty: HA 4.5, ER 2.5, win yes +219; Tanner Bibee: HA 4.5, ER 2.5, win yes +178; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.9 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Tigers F5 runs 1.5; Guardians F5 runs 2.5; Jack Flaherty: HA 4.5, ER 2.5, win yes +219; Tanner Bibee: HA 4.5, ER 2.5, win yes +178; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 4,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 62.4,
-          "noRunProbabilityPct": 37.6,
-          "awayRunProbabilityPct": 32.9,
-          "homeRunProbabilityPct": 29.5,
+          "runProbabilityPct": 60.4,
+          "noRunProbabilityPct": 39.6,
+          "awayRunProbabilityPct": 31.8,
+          "homeRunProbabilityPct": 28.6,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.2 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Tigers F5 runs 1.5; Guardians F5 runs 2.5; Jack Flaherty: HA 4.5, ER 2.5, win yes +219; Tanner Bibee: HA 4.5, ER 2.5, win yes +178; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.9 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Tigers F5 runs 1.5; Guardians F5 runs 2.5; Jack Flaherty: HA 4.5, ER 2.5, win yes +219; Tanner Bibee: HA 4.5, ER 2.5, win yes +178; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 5,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 64.9,
-          "noRunProbabilityPct": 35.1,
-          "awayRunProbabilityPct": 31.3,
-          "homeRunProbabilityPct": 33.6,
+          "runProbabilityPct": 62.9,
+          "noRunProbabilityPct": 37.1,
+          "awayRunProbabilityPct": 30.3,
+          "homeRunProbabilityPct": 32.6,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 139,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.2 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Tigers F5 runs 1.5; Guardians F5 runs 2.5; Jack Flaherty: HA 4.5, ER 2.5, win yes +219; Tanner Bibee: HA 4.5, ER 2.5, win yes +178; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 4.9 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Tigers F5 runs 1.5; Guardians F5 runs 2.5; Jack Flaherty: HA 4.5, ER 2.5, win yes +219; Tanner Bibee: HA 4.5, ER 2.5, win yes +178; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -3719,7 +4113,7 @@
   },
   "lineupContext": {
     "Tigers": {
-      "averageMatchupGrade": 6.84,
+      "averageMatchupGrade": 6.83,
       "trackedBatters": 9,
       "starterThreatCount": 8,
       "contactCount": 2,
@@ -3738,12 +4132,12 @@
       "bullpenPitchTypePressureIndex": null,
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
-      "topThirdScore": 88.5,
+      "topThirdScore": 88.4,
       "depthScore": 68.9,
       "bullpenOverperformHitters": []
     },
     "Guardians": {
-      "averageMatchupGrade": 2.69,
+      "averageMatchupGrade": 2.71,
       "trackedBatters": 9,
       "starterThreatCount": 6,
       "contactCount": 5,
@@ -3762,7 +4156,7 @@
       "bullpenPitchTypePressureIndex": null,
       "starterPressureIndex": 94,
       "overallPressureIndex": 94,
-      "topThirdScore": 67.2,
+      "topThirdScore": 67.6,
       "depthScore": 62.1,
       "bullpenOverperformHitters": []
     }
@@ -3770,7 +4164,7 @@
   "lineupBoard": {
     "gameId": "tigers-guardians",
     "title": "Tigers @ Guardians",
-    "snapshot": "2026-06-12T22:28:25.554Z",
+    "snapshot": "2026-06-12T23:24:53.076Z",
     "status": {
       "away": "posted",
       "home": "posted"
@@ -3785,8 +4179,8 @@
       "label": "81°F | Wind 9 mph L-R | 0% precip"
     },
     "marketWeatherContext": {
-      "line": "CLE -124",
-      "total": "8.5 Runs",
+      "line": "CLE -161",
+      "total": "7.5 Runs",
       "source": "RotoWire daily lineups + weather"
     },
     "away": {
@@ -3797,9 +4191,9 @@
         "name": "Tanner Bibee",
         "hand": "R",
         "type": "Balanced",
-        "inningsPitched": 77,
+        "inningsPitched": 78,
         "homeRunsAllowed": 13,
-        "homeRunsPerNine": 1.52,
+        "homeRunsPerNine": 1.5,
         "recentHomeRunsAllowed": 7,
         "recentHomeRunsAllowedPerStart": 1.4,
         "recentHomeRunsPerNine": 2.12,
@@ -3826,7 +4220,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 66,
+            "gamesPlayed": 67,
             "hits": 70,
             "singles": 48,
             "doubles": 15,
@@ -3834,17 +4228,17 @@
             "homeRuns": 4,
             "walks": 42,
             "totalBases": 103,
-            "atBats": 247,
-            "plateAppearances": 291,
-            "avg": 0.283,
-            "obp": 0.392,
-            "slg": 0.417,
-            "ops": 0.809,
-            "hitRate": 0.24050000000000002,
-            "singlesRate": 0.1649,
+            "atBats": 248,
+            "plateAppearances": 292,
+            "avg": 0.282,
+            "obp": 0.39,
+            "slg": 0.415,
+            "ops": 0.806,
+            "hitRate": 0.2397,
+            "singlesRate": 0.16440000000000002,
             "hrRate": 0.0137,
-            "walkRate": 0.14429999999999998,
-            "totalBasesRate": 0.354
+            "walkRate": 0.1438,
+            "totalBasesRate": 0.3527
           },
           "recent": {
             "gamesPlayed": 12,
@@ -3890,12 +4284,12 @@
             "totalBasesRate": 0.3709
           },
           "metrics": {
-            "powerScore": 37.3,
-            "contactScore": 72.9,
-            "patienceScore": 73.1,
-            "formScore": 77.1,
-            "splitScore": 56.2,
-            "varianceScore": 50,
+            "powerScore": 37.1,
+            "contactScore": 72.2,
+            "patienceScore": 72.9,
+            "formScore": 77.7,
+            "splitScore": 56.8,
+            "varianceScore": 51.2,
             "pitchTypeFitScore": 85,
             "pitchTypeGrade": 6.02,
             "pitchTypeCoveragePct": 100,
@@ -4026,7 +4420,7 @@
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".283 AVG | .809 OPS | 70 H | 4 HR | 12g: .238 AVG | .884 OPS | 10 H | 2 HR | vs RHP: .291 AVG | .845 OPS | 3 HR | career 255 PA | .805 OPS | 3 HR | contact-stable profile | power 36 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +6.0 | +10.0 matchup grade in a neutral lane",
+          "summary": ".282 AVG | .806 OPS | 70 H | 4 HR | 12g: .238 AVG | .884 OPS | 10 H | 2 HR | vs RHP: .291 AVG | .845 OPS | 3 HR | career 255 PA | .805 OPS | 3 HR | contact-stable profile | power 36 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +6.0 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Tanner Bibee"
         },
         {
@@ -4047,25 +4441,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 40,
+            "gamesPlayed": 41,
             "hits": 42,
             "singles": 33,
             "doubles": 5,
             "triples": 0,
             "homeRuns": 4,
-            "walks": 27,
+            "walks": 28,
             "totalBases": 59,
             "atBats": 149,
-            "plateAppearances": 180,
+            "plateAppearances": 181,
             "avg": 0.282,
-            "obp": 0.394,
+            "obp": 0.398,
             "slg": 0.396,
-            "ops": 0.79,
-            "hitRate": 0.23329999999999998,
-            "singlesRate": 0.1833,
-            "hrRate": 0.0222,
-            "walkRate": 0.15,
-            "totalBasesRate": 0.32780000000000004
+            "ops": 0.794,
+            "hitRate": 0.23199999999999998,
+            "singlesRate": 0.18230000000000002,
+            "hrRate": 0.022099999999999998,
+            "walkRate": 0.1547,
+            "totalBasesRate": 0.326
           },
           "recent": {
             "gamesPlayed": 12,
@@ -4111,12 +4505,12 @@
             "totalBasesRate": 0.37229999999999996
           },
           "metrics": {
-            "powerScore": 42.7,
-            "contactScore": 70.2,
-            "patienceScore": 75,
+            "powerScore": 42.6,
+            "contactScore": 69.9,
+            "patienceScore": 76.7,
             "formScore": 92,
-            "splitScore": 63.8,
-            "varianceScore": 64.2,
+            "splitScore": 63.5,
+            "varianceScore": 63.1,
             "pitchTypeFitScore": 54.4,
             "pitchTypeGrade": 2.85,
             "pitchTypeCoveragePct": 100,
@@ -4246,7 +4640,7 @@
             "traffic"
           ],
           "primaryTag": "carry",
-          "summary": ".282 AVG | .790 OPS | 42 H | 4 HR | 12g: .333 AVG | .926 OPS | 16 H | 2 HR | vs RHP: .328 AVG | .837 OPS | 3 HR | career 4445 PA | .769 OPS | 156 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +2.9 | +10.0 matchup grade in a neutral lane",
+          "summary": ".282 AVG | .794 OPS | 42 H | 4 HR | 12g: .333 AVG | .926 OPS | 16 H | 2 HR | vs RHP: .328 AVG | .837 OPS | 3 HR | career 4445 PA | .769 OPS | 156 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +2.9 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Tanner Bibee"
         },
         {
@@ -4267,25 +4661,25 @@
             }
           },
           "season": {
-            "gamesPlayed": 69,
+            "gamesPlayed": 70,
             "hits": 75,
             "singles": 51,
             "doubles": 16,
             "triples": 0,
             "homeRuns": 8,
-            "walks": 36,
+            "walks": 37,
             "totalBases": 115,
             "atBats": 249,
-            "plateAppearances": 289,
+            "plateAppearances": 290,
             "avg": 0.301,
-            "obp": 0.391,
+            "obp": 0.393,
             "slg": 0.462,
-            "ops": 0.853,
-            "hitRate": 0.2595,
-            "singlesRate": 0.1765,
-            "hrRate": 0.0277,
-            "walkRate": 0.1246,
-            "totalBasesRate": 0.3979
+            "ops": 0.855,
+            "hitRate": 0.2586,
+            "singlesRate": 0.1759,
+            "hrRate": 0.0276,
+            "walkRate": 0.1276,
+            "totalBasesRate": 0.39659999999999995
           },
           "recent": {
             "gamesPlayed": 12,
@@ -4332,16 +4726,16 @@
           },
           "metrics": {
             "powerScore": 55.4,
-            "contactScore": 56.7,
-            "patienceScore": 64.6,
-            "formScore": 75.1,
-            "splitScore": 53.5,
-            "varianceScore": 63.9,
+            "contactScore": 56.5,
+            "patienceScore": 65.7,
+            "formScore": 75,
+            "splitScore": 53.3,
+            "varianceScore": 64.4,
             "pitchTypeFitScore": 77.4,
             "pitchTypeGrade": 5.56,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 77.6,
-            "matchupGrade": 5.12
+            "matchupScore": 77.2,
+            "matchupGrade": 5.04
           },
           "pitchType": {
             "fitScore": 77.4,
@@ -4466,8 +4860,8 @@
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".301 AVG | .853 OPS | 75 H | 8 HR | 12g: .190 AVG | .745 OPS | 8 H | 4 HR | vs RHP: .311 AVG | .852 OPS | 6 HR | career 2321 PA | .789 OPS | 80 HR | baseline career profile | power 62 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.6 | +5.1 matchup grade in a neutral lane",
-          "matchupNote": "+5.12 vs Tanner Bibee"
+          "summary": ".301 AVG | .855 OPS | 75 H | 8 HR | 12g: .190 AVG | .745 OPS | 8 H | 4 HR | vs RHP: .311 AVG | .852 OPS | 6 HR | career 2321 PA | .789 OPS | 80 HR | baseline career profile | power 62 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.6 | +5.0 matchup grade in a neutral lane",
+          "matchupNote": "+5.04 vs Tanner Bibee"
         },
         {
           "playerId": 693307,
@@ -4487,7 +4881,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 62,
+            "gamesPlayed": 63,
             "hits": 58,
             "singles": 28,
             "doubles": 14,
@@ -4495,17 +4889,17 @@
             "homeRuns": 16,
             "walks": 22,
             "totalBases": 120,
-            "atBats": 228,
-            "plateAppearances": 258,
-            "avg": 0.254,
-            "obp": 0.332,
-            "slg": 0.526,
-            "ops": 0.858,
-            "hitRate": 0.2248,
-            "singlesRate": 0.1085,
-            "hrRate": 0.062,
-            "walkRate": 0.08529999999999999,
-            "totalBasesRate": 0.46509999999999996
+            "atBats": 229,
+            "plateAppearances": 259,
+            "avg": 0.253,
+            "obp": 0.331,
+            "slg": 0.524,
+            "ops": 0.855,
+            "hitRate": 0.22390000000000002,
+            "singlesRate": 0.1081,
+            "hrRate": 0.061799999999999994,
+            "walkRate": 0.0849,
+            "totalBasesRate": 0.4633
           },
           "recent": {
             "gamesPlayed": 12,
@@ -4551,11 +4945,11 @@
             "totalBasesRate": 0.5085000000000001
           },
           "metrics": {
-            "powerScore": 87.4,
-            "contactScore": 58.7,
-            "patienceScore": 52.1,
+            "powerScore": 87.1,
+            "contactScore": 58,
+            "patienceScore": 52,
             "formScore": 92,
-            "splitScore": 69.5,
+            "splitScore": 70.3,
             "varianceScore": 92,
             "pitchTypeFitScore": 85.5,
             "pitchTypeGrade": 5.27,
@@ -4687,7 +5081,7 @@
             "barrel lane"
           ],
           "primaryTag": "carry",
-          "summary": ".254 AVG | .858 OPS | 58 H | 16 HR | 12g: .360 AVG | 1.087 OPS | 18 H | 4 HR | vs RHP: .285 AVG | .924 OPS | 12 HR | career 773 PA | .730 OPS | 25 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.3 | +10.0 matchup grade in a neutral lane",
+          "summary": ".253 AVG | .855 OPS | 58 H | 16 HR | 12g: .360 AVG | 1.087 OPS | 18 H | 4 HR | vs RHP: .285 AVG | .924 OPS | 12 HR | career 773 PA | .730 OPS | 25 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.3 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Tanner Bibee"
         },
         {
@@ -4708,7 +5102,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 46,
+            "gamesPlayed": 47,
             "hits": 31,
             "singles": 17,
             "doubles": 3,
@@ -4716,17 +5110,17 @@
             "homeRuns": 9,
             "walks": 13,
             "totalBases": 65,
-            "atBats": 131,
-            "plateAppearances": 150,
-            "avg": 0.237,
-            "obp": 0.313,
-            "slg": 0.496,
-            "ops": 0.81,
-            "hitRate": 0.20670000000000002,
-            "singlesRate": 0.1133,
-            "hrRate": 0.06,
-            "walkRate": 0.0867,
-            "totalBasesRate": 0.43329999999999996
+            "atBats": 132,
+            "plateAppearances": 151,
+            "avg": 0.235,
+            "obp": 0.311,
+            "slg": 0.492,
+            "ops": 0.804,
+            "hitRate": 0.2053,
+            "singlesRate": 0.11259999999999999,
+            "hrRate": 0.0596,
+            "walkRate": 0.0861,
+            "totalBasesRate": 0.4305
           },
           "recent": {
             "gamesPlayed": 12,
@@ -4772,12 +5166,12 @@
             "totalBasesRate": 0.46380000000000005
           },
           "metrics": {
-            "powerScore": 86.7,
-            "contactScore": 35.1,
-            "patienceScore": 52.3,
+            "powerScore": 86.2,
+            "contactScore": 34.2,
+            "patienceScore": 52.1,
             "formScore": 92,
-            "splitScore": 62,
-            "varianceScore": 88.7,
+            "splitScore": 63.5,
+            "varianceScore": 91.1,
             "pitchTypeFitScore": 85.9,
             "pitchTypeGrade": 5.4,
             "pitchTypeCoveragePct": 100,
@@ -4908,7 +5302,7 @@
             "career power"
           ],
           "primaryTag": "carry",
-          "summary": ".237 AVG | .810 OPS | 31 H | 9 HR | 12g: .222 AVG | .889 OPS | 8 H | 4 HR | vs RHP: .248 AVG | .848 OPS | 9 HR | career 1452 PA | .822 OPS | 76 HR | repeatable career power | power 86 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.4 | +10.0 matchup grade in a neutral lane",
+          "summary": ".235 AVG | .804 OPS | 31 H | 9 HR | 12g: .222 AVG | .889 OPS | 8 H | 4 HR | vs RHP: .248 AVG | .848 OPS | 9 HR | career 1452 PA | .822 OPS | 76 HR | repeatable career power | power 86 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.4 | +10.0 matchup grade in a neutral lane",
           "matchupNote": "+10.00 vs Tanner Bibee"
         },
         {
@@ -5798,7 +6192,7 @@
         "summary": "BvP sample is mixed: Spencer Torkelson owns the cleanest history, but Dillon Dingler shows the coldest prior lane."
       },
       "aggregate": {
-        "averageMatchupGrade": 6.84,
+        "averageMatchupGrade": 6.83,
         "trackedBatters": 9,
         "starterThreatCount": 8,
         "contactCount": 2,
@@ -5817,7 +6211,7 @@
         "bullpenPitchTypePressureIndex": null,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
-        "topThirdScore": 88.5,
+        "topThirdScore": 88.4,
         "depthScore": 68.9,
         "bullpenOverperformHitters": []
       },
@@ -5847,7 +6241,7 @@
         "underperformNote": "James Outman carry the softer form or split fit into a balanced lane.",
         "overview": "Tigers can lean on Kevin McGonigle, Gleyber Torres, Dillon Dingler to drive early pressure against Tanner Bibee.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-        "topThirdScore": 88.5,
+        "topThirdScore": 88.4,
         "middleScore": 88.3,
         "depthScore": 68.9,
         "bullpenPitchTypeSummary": null
@@ -5861,9 +6255,9 @@
         "name": "Jack Flaherty",
         "hand": "R",
         "type": "Volatile bat-misser",
-        "inningsPitched": 62.666666666666664,
+        "inningsPitched": 63,
         "homeRunsAllowed": 8,
-        "homeRunsPerNine": 1.15,
+        "homeRunsPerNine": 1.14,
         "recentHomeRunsAllowed": 3,
         "recentHomeRunsAllowedPerStart": 0.6,
         "recentHomeRunsPerNine": 1.14,
@@ -5890,7 +6284,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 39,
+            "gamesPlayed": 40,
             "hits": 37,
             "singles": 23,
             "doubles": 9,
@@ -5898,17 +6292,17 @@
             "homeRuns": 4,
             "walks": 19,
             "totalBases": 60,
-            "atBats": 144,
-            "plateAppearances": 166,
-            "avg": 0.257,
-            "obp": 0.349,
-            "slg": 0.417,
-            "ops": 0.766,
-            "hitRate": 0.2229,
-            "singlesRate": 0.1386,
-            "hrRate": 0.0241,
-            "walkRate": 0.11449999999999999,
-            "totalBasesRate": 0.3614
+            "atBats": 145,
+            "plateAppearances": 167,
+            "avg": 0.255,
+            "obp": 0.347,
+            "slg": 0.414,
+            "ops": 0.761,
+            "hitRate": 0.2216,
+            "singlesRate": 0.1377,
+            "hrRate": 0.024,
+            "walkRate": 0.11380000000000001,
+            "totalBasesRate": 0.3593
           },
           "recent": {
             "gamesPlayed": 12,
@@ -5954,17 +6348,17 @@
             "totalBasesRate": 0.42340000000000005
           },
           "metrics": {
-            "powerScore": 46.7,
-            "contactScore": 60.6,
-            "patienceScore": 62.6,
-            "formScore": 40.3,
-            "splitScore": 74.2,
-            "varianceScore": 69.3,
+            "powerScore": 46.4,
+            "contactScore": 60.2,
+            "patienceScore": 62.4,
+            "formScore": 41.4,
+            "splitScore": 75.3,
+            "varianceScore": 69,
             "pitchTypeFitScore": 61.2,
             "pitchTypeGrade": 3.9,
             "pitchTypeCoveragePct": 100,
-            "matchupScore": 92,
-            "matchupGrade": 9.43
+            "matchupScore": 93,
+            "matchupGrade": 9.61
           },
           "pitchType": {
             "fitScore": 61.2,
@@ -6089,8 +6483,8 @@
             "statcast up"
           ],
           "primaryTag": "carry",
-          "summary": ".257 AVG | .766 OPS | 37 H | 4 HR | 12g: .174 AVG | .688 OPS | 8 H | 2 HR | vs RHP: .295 AVG | .882 OPS | 3 HR | career 122 PA | .869 OPS | 3 HR | baseline career profile | power 57 | 2026 sample ok | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.9 | +9.4 matchup grade in a whiff-variance lane",
-          "matchupNote": "+9.43 vs Jack Flaherty"
+          "summary": ".255 AVG | .761 OPS | 37 H | 4 HR | 12g: .174 AVG | .688 OPS | 8 H | 2 HR | vs RHP: .295 AVG | .882 OPS | 3 HR | career 122 PA | .869 OPS | 3 HR | baseline career profile | power 57 | 2026 sample ok | arsenal 4-Seam Fastball 49% / Slider 25% / Curveball 20% | fit +3.9 | +9.6 matchup grade in a whiff-variance lane",
+          "matchupNote": "+9.61 vs Jack Flaherty"
         },
         {
           "playerId": 608070,
@@ -7428,7 +7822,7 @@
             }
           },
           "season": {
-            "gamesPlayed": 94,
+            "gamesPlayed": 96,
             "hits": 40,
             "singles": 28,
             "doubles": 6,
@@ -7493,7 +7887,7 @@
           },
           "metrics": {
             "powerScore": 18,
-            "contactScore": 25.7,
+            "contactScore": 25.6,
             "patienceScore": 43,
             "formScore": 58.5,
             "splitScore": 43.6,
@@ -7855,7 +8249,7 @@
         "summary": "No meaningful batter-vs-pitcher sample has surfaced for this lineup yet."
       },
       "aggregate": {
-        "averageMatchupGrade": 2.69,
+        "averageMatchupGrade": 2.71,
         "trackedBatters": 9,
         "starterThreatCount": 6,
         "contactCount": 5,
@@ -7874,7 +8268,7 @@
         "bullpenPitchTypePressureIndex": null,
         "starterPressureIndex": 94,
         "overallPressureIndex": 94,
-        "topThirdScore": 67.2,
+        "topThirdScore": 67.6,
         "depthScore": 62.1,
         "bullpenOverperformHitters": []
       },
@@ -7883,7 +8277,7 @@
         "overperformHitters": [
           {
             "name": "Travis Bazzana",
-            "tag": "carry | +9.43 vs Jack Flaherty"
+            "tag": "carry | +9.61 vs Jack Flaherty"
           },
           {
             "name": "Angel Martínez",
@@ -7908,7 +8302,7 @@
         "underperformNote": "Rhys Hoskins and Patrick Bailey carry the softer form or split fit into a volatile bat-misser lane.",
         "overview": "Guardians can lean on Travis Bazzana, Angel Martínez, Brayan Rocchio to drive early pressure against Jack Flaherty.",
         "bullpenOverview": "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
-        "topThirdScore": 67.2,
+        "topThirdScore": 67.6,
         "middleScore": 57.3,
         "depthScore": 62.1,
         "bullpenPitchTypeSummary": null
@@ -7921,15 +8315,15 @@
       "fullName": "Jack Flaherty",
       "pitchHand": "R",
       "wins": 1,
-      "losses": 7,
-      "era": "5.31",
-      "strikeOuts": 77,
-      "inningsPitched": "62.2",
-      "hitsAllowed": 66,
-      "walks": 33,
+      "losses": 8,
+      "era": "5.35",
+      "strikeOuts": 78,
+      "inningsPitched": "65.2",
+      "hitsAllowed": 69,
+      "walks": 34,
       "homeRunsAllowed": 8,
-      "whip": "1.58",
-      "gamesStarted": 14,
+      "whip": "1.57",
+      "gamesStarted": 15,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 656427,
@@ -13565,16 +13959,16 @@
       "id": 676440,
       "fullName": "Tanner Bibee",
       "pitchHand": "R",
-      "wins": 1,
+      "wins": 2,
       "losses": 7,
-      "era": "4.09",
-      "strikeOuts": 63,
-      "inningsPitched": "77.0",
-      "hitsAllowed": 71,
-      "walks": 24,
-      "homeRunsAllowed": 13,
-      "whip": "1.23",
-      "gamesStarted": 14,
+      "era": "3.96",
+      "strikeOuts": 71,
+      "inningsPitched": "84.0",
+      "hitsAllowed": 73,
+      "walks": 26,
+      "homeRunsAllowed": 15,
+      "whip": "1.18",
+      "gamesStarted": 15,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 676440,
@@ -19092,17 +19486,17 @@
       {
         "label": "Spread",
         "book": "DraftKings typed MLB board",
-        "value": "Tigers -1.5 +167 / Guardians +1.5 -204"
+        "value": "Tigers +1.5 -204 / Guardians -1.5 +154"
       },
       {
         "label": "Total",
         "book": "DraftKings typed MLB board",
-        "value": "o8.5 -112 / u8.5 -107"
+        "value": "o7.5 -109 / u7.5 -120"
       },
       {
         "label": "Moneyline",
         "book": "DraftKings typed MLB board",
-        "value": "Tigers +105 / Guardians -126"
+        "value": "Tigers +111 / Guardians -145"
       },
       {
         "label": "1st 5 ML",
@@ -19124,24 +19518,24 @@
       "index": 0,
       "role": "Away",
       "name": "Tigers",
-      "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 77 SO | 1.58 WHIP | 62.2 IP",
-      "americanOdds": 105,
-      "americanLabel": "+105",
-      "decimalOdds": 2.05,
-      "impliedProbability": 0.4878048780487805,
-      "impliedProbabilityLabel": "48.8%"
+      "detail": "Jack Flaherty (RHP) | 1-8 | 5.35 ERA | 78 SO | 1.57 WHIP | 65.2 IP",
+      "americanOdds": 111,
+      "americanLabel": "+111",
+      "decimalOdds": 2.1100000000000003,
+      "impliedProbability": 0.47393364928909953,
+      "impliedProbabilityLabel": "47.4%"
     },
     {
       "id": "tigers-guardians:1",
       "index": 1,
       "role": "Home",
       "name": "Guardians",
-      "detail": "Tanner Bibee (RHP) | 1-7 | 4.09 ERA | 63 SO | 1.23 WHIP | 77.0 IP",
-      "americanOdds": -126,
-      "americanLabel": "-126",
-      "decimalOdds": 1.7936507936507935,
-      "impliedProbability": 0.5575221238938053,
-      "impliedProbabilityLabel": "55.8%"
+      "detail": "Tanner Bibee (RHP) | 2-7 | 3.96 ERA | 71 SO | 1.18 WHIP | 84.0 IP",
+      "americanOdds": -145,
+      "americanLabel": "-145",
+      "decimalOdds": 1.6896551724137931,
+      "impliedProbability": 0.5918367346938775,
+      "impliedProbabilityLabel": "59.2%"
     }
   ],
   "moneyline": {
@@ -19154,24 +19548,24 @@
         "index": 0,
         "role": "Away",
         "name": "Tigers",
-        "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 77 SO | 1.58 WHIP | 62.2 IP",
-        "americanOdds": 105,
-        "americanLabel": "+105",
-        "decimalOdds": 2.05,
-        "impliedProbability": 0.4878048780487805,
-        "impliedProbabilityLabel": "48.8%"
+        "detail": "Jack Flaherty (RHP) | 1-8 | 5.35 ERA | 78 SO | 1.57 WHIP | 65.2 IP",
+        "americanOdds": 111,
+        "americanLabel": "+111",
+        "decimalOdds": 2.1100000000000003,
+        "impliedProbability": 0.47393364928909953,
+        "impliedProbabilityLabel": "47.4%"
       },
       {
         "id": "tigers-guardians:1",
         "index": 1,
         "role": "Home",
         "name": "Guardians",
-        "detail": "Tanner Bibee (RHP) | 1-7 | 4.09 ERA | 63 SO | 1.23 WHIP | 77.0 IP",
-        "americanOdds": -126,
-        "americanLabel": "-126",
-        "decimalOdds": 1.7936507936507935,
-        "impliedProbability": 0.5575221238938053,
-        "impliedProbabilityLabel": "55.8%"
+        "detail": "Tanner Bibee (RHP) | 2-7 | 3.96 ERA | 71 SO | 1.18 WHIP | 84.0 IP",
+        "americanOdds": -145,
+        "americanLabel": "-145",
+        "decimalOdds": 1.6896551724137931,
+        "impliedProbability": 0.5918367346938775,
+        "impliedProbabilityLabel": "59.2%"
       }
     ]
   },
@@ -19183,37 +19577,37 @@
       "index": 0,
       "role": "Away",
       "name": "Tigers",
-      "detail": "Jack Flaherty (RHP) | 1-7 | 5.31 ERA | 77 SO | 1.58 WHIP | 62.2 IP",
-      "americanOdds": 105,
-      "americanLabel": "+105",
-      "decimalOdds": 2.05,
-      "impliedProbability": 0.4878048780487805,
-      "impliedProbabilityLabel": "48.8%"
+      "detail": "Jack Flaherty (RHP) | 1-8 | 5.35 ERA | 78 SO | 1.57 WHIP | 65.2 IP",
+      "americanOdds": 111,
+      "americanLabel": "+111",
+      "decimalOdds": 2.1100000000000003,
+      "impliedProbability": 0.47393364928909953,
+      "impliedProbabilityLabel": "47.4%"
     },
     "opponent": {
       "id": "tigers-guardians:1",
       "index": 1,
       "role": "Home",
       "name": "Guardians",
-      "detail": "Tanner Bibee (RHP) | 1-7 | 4.09 ERA | 63 SO | 1.23 WHIP | 77.0 IP",
-      "americanOdds": -126,
-      "americanLabel": "-126",
-      "decimalOdds": 1.7936507936507935,
-      "impliedProbability": 0.5575221238938053,
-      "impliedProbabilityLabel": "55.8%"
+      "detail": "Tanner Bibee (RHP) | 2-7 | 3.96 ERA | 71 SO | 1.18 WHIP | 84.0 IP",
+      "americanOdds": -145,
+      "americanLabel": "-145",
+      "decimalOdds": 1.6896551724137931,
+      "impliedProbability": 0.5918367346938775,
+      "impliedProbabilityLabel": "59.2%"
     },
     "lean": "Model pick: Tigers on hit-production baseline and lineup-vs-pitching fit.",
     "rationale": "Hit-production baseline: Tigers (8.05 H/G | last 3 8.33 | away 8.04) vs Guardians (7.44 H/G | last 3 6.00 | home 7.05)",
     "confidence": 52,
     "volatility": 92,
     "recommendationScore": 33,
-    "tier": "Pass",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "tier": "Swingy",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 1.4,
-    "modelEdgeLabel": "1.4-point model edge",
-    "marketProbability": 0.4666529010943631,
-    "marketProbabilityLabel": "46.7%",
+    "modelEdge": 2.4,
+    "modelEdgeLabel": "2.4-point model edge",
+    "marketProbability": 0.4446864506761049,
+    "marketProbabilityLabel": "44.5%",
     "inputs": [
       {
         "label": "Hit-production baseline",
@@ -19224,9 +19618,9 @@
       },
       {
         "label": "Lineup-vs-pitching fit",
-        "summary": "Lineup-vs-pitching fit: Tigers (Grade +6.84 | platoon 8 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs Guardians (Grade +2.69 | platoon 8 | starter arsenal 94 | bridge arsenal 50 | pressure 94)",
+        "summary": "Lineup-vs-pitching fit: Tigers (Grade +6.83 | platoon 8 | .300 bats 0 | bat pressure 50 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs Guardians (Grade +2.71 | platoon 8 | .300 bats 0 | bat pressure 50 | starter arsenal 94 | bridge arsenal 50 | pressure 94)",
         "source": "Official lineup + handedness + starter arsenal + likely reliever arsenal fit",
-        "margin": 19.4,
+        "margin": 19.3,
         "weight": 0.14
       },
       {
@@ -19248,16 +19642,24 @@
         "delta": 5
       },
       {
-        "label": "Both offenses project to create real traffic",
-        "delta": 5
-      },
-      {
         "label": "The underdog projects cleaner through the starter window",
         "delta": 4
       },
       {
+        "label": "Lower posted total",
+        "delta": -4
+      },
+      {
         "label": "One lineup carries real platoon pressure versus the listed starter hand",
         "delta": 3
+      },
+      {
+        "label": "Handedness split rows are moving the offensive shape",
+        "delta": 3
+      },
+      {
+        "label": "Repeat-opponent starter damage tax is live",
+        "delta": 4
       },
       {
         "label": "One lineup specifically fits the listed starter arsenal",
@@ -19268,23 +19670,11 @@
         "delta": 2
       },
       {
-        "label": "One starter owns a larger swing-and-miss edge",
-        "delta": 3
-      },
-      {
         "label": "The underdog lineup fits today’s starter better",
         "delta": 5
       },
       {
         "label": "The underdog hit-production trend is still live",
-        "delta": 3
-      },
-      {
-        "label": "Favorite enters on a live losing streak",
-        "delta": 4
-      },
-      {
-        "label": "Favorite skid is now long enough to question market trust",
         "delta": 3
       },
       {
@@ -19304,10 +19694,6 @@
         "delta": 3
       },
       {
-        "label": "Coin-flip pressure is elevated for this full-game side",
-        "delta": 4
-      },
-      {
         "label": "Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.",
         "delta": 3
       },
@@ -19317,22 +19703,22 @@
       }
     ],
     "pickReasons": [
-      "Tigers own the cleaner full-game traffic script at 11.5 projected hits.",
-      "Tigers have the better starter-window lane with 6.5 projected first-five hits.",
+      "Tigers own the cleaner full-game traffic script at 11.3 projected hits.",
+      "Tigers have the better starter-window lane with 6.6 projected first-five hits.",
       "Tigers still hold the better bridge-and-finish script once the bullpens take over.",
-      "Tigers can lean on Kevin McGonigle, Gleyber Torres, Dillon Dingler to drive early pressure against Tanner Bibee."
+      "Tigers also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late."
     ],
     "indicators": {
-      "reliefPitchingRisk": 60.2,
-      "coinflipPressure": 61,
-      "starterLeverageIndex": 41.1,
-      "lateInningStabilityIndex": 30.6,
+      "reliefPitchingRisk": 52,
+      "coinflipPressure": 55,
+      "starterLeverageIndex": 44.5,
+      "lateInningStabilityIndex": 28.2,
       "pickBullpenScore": 58.7,
       "oppBullpenScore": 64,
       "pickBullpenChainScore": 72,
-      "oppBullpenChainScore": 73.8,
-      "pickStarterScore": 54.7,
-      "oppStarterScore": 60.3,
+      "oppBullpenChainScore": 71.4,
+      "pickStarterScore": 54.5,
+      "oppStarterScore": 63.8,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -19388,7 +19774,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 2,
+      "projectedHitEdgeForPick": 2.7,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": false,
       "pickIsMarketUnderdog": true,
@@ -19423,25 +19809,24 @@
       ],
       "efficientFavoriteBlockers": [
         "notMarketFavorite",
-        "tierOnePass",
         "notPricedFavorite"
       ],
-      "tierOneRiskPoints": 4,
-      "tierOnePassFlag": true,
+      "tierOneRiskPoints": 3,
+      "tierOnePassFlag": false,
       "tierOneRiskFlags": [
         "highRiskPoints",
         "underdogNeedsProof"
       ],
-      "favoredSignalCount": 3,
-      "starterLateGap": 10.5,
+      "favoredSignalCount": 4,
+      "starterLateGap": 16.3,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 2.9,
       "gameShape": {
-        "label": "Starter-to-bullpen flip",
+        "label": "Early-pressure side",
         "shapeLabel": "balanced traffic game",
-        "category": "starter_to_bullpen_flip",
-        "bestExpression": "Tigers first-five side",
-        "categoryConfidence": 51,
+        "category": "early_pressure_side",
+        "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
+        "categoryConfidence": 62.3,
         "realityGapScore": 39.1,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
@@ -19449,17 +19834,17 @@
           {
             "id": "flow",
             "label": "Flow",
-            "score": 60
-          },
-          {
-            "id": "bridge",
-            "label": "Bridge",
-            "score": 51
+            "score": 100
           },
           {
             "id": "chaos",
             "label": "Chaos",
             "score": 44.8
+          },
+          {
+            "id": "bridge",
+            "label": "Bridge",
+            "score": 39.8
           }
         ],
         "rfImpactScore": 32.2
@@ -19467,68 +19852,68 @@
     },
     "gameShape": {
       "modelId": "MLB-M2",
-      "label": "Starter-to-bullpen flip",
+      "label": "Early-pressure side",
       "shapeLabel": "balanced traffic game",
       "category": {
-        "slug": "starter_to_bullpen_flip",
-        "label": "Starter-to-bullpen flip",
-        "bestExpression": "Tigers first-five side",
-        "confidence": 51,
+        "slug": "early_pressure_side",
+        "label": "Early-pressure side",
+        "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
+        "confidence": 62.3,
         "reasons": [
-          "The pick can own the starter window without owning the late game.",
-          "Use the timing edge before bridge innings can flip it."
+          "The pick needs to cash the first traffic pocket.",
+          "The best edge is timing, not late-game patience."
         ],
         "laneMap": {
-          "side": "Secondary to the named lane.",
-          "first5": "Primary lane.",
+          "side": "Allowed after early traffic confirms the pressure read.",
+          "first5": "Only primary if the line is cheaper than full-game ML.",
           "total": "Needs line-specific EV.",
-          "firstInning": "Advisory only.",
+          "firstInning": "YRFI only if both top orders and starter leakage agree.",
           "live": "Use price discipline."
         },
         "inningMap": [
           {
             "innings": "1-2",
-            "expectation": "Tigers can look right early even if full-game ML is fragile.",
-            "watch": "Entry belongs to F5 or live lead, not blind FG."
+            "expectation": "Tigers needs the first traffic pocket.",
+            "watch": "No early baserunners means the edge decays quickly."
           },
           {
             "innings": "3-5",
-            "expectation": "This is the main scoring window for the pick.",
-            "watch": "If the pick trails after five, the original read is mostly gone."
+            "expectation": "First-five side is the cleanest expression.",
+            "watch": "Do not wait for late rescue if the starter edge is gone."
           },
           {
             "innings": "6-7",
-            "expectation": "Guardians can re-enter through the bridge.",
-            "watch": "Expect hedge or live reversal pressure here."
+            "expectation": "Only keep full-game exposure if the bridge is not leaking.",
+            "watch": "A bullpen mismatch turns this into a hedge spot."
           },
           {
             "innings": "8-9",
-            "expectation": "Late innings are not aligned with the pregame side.",
-            "watch": "Do not confuse early control with full-game safety."
+            "expectation": "Closeout depends on lead size more than raw team rating.",
+            "watch": "One-run late leads are not a free pass."
           }
         ],
         "diagnostics": {
           "pickOwnsFull": true,
           "pickOwnsFirst5": true,
           "pickOwnsLate": true,
-          "pickOwnsBridge": false,
-          "pickPhaseCount": 3,
+          "pickOwnsBridge": true,
+          "pickPhaseCount": 4,
           "lowPickConversion": true,
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 2
+          "projectedHitEdge": 2.7
         }
       },
-      "summary": "Starter-to-bullpen flip: Tigers first-five side. Reality-gap 39.1/100. Main checks: 81°F | Wind 9 mph L-R | 0% precip | weather helps carry.",
+      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 39.1/100. Main checks: 81°F | Wind 9 mph L-R | 0% precip | weather helps carry.",
       "pickTeam": "Tigers",
       "opponentTeam": "Guardians",
       "scores": {
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
-        "phaseSplitScore": 40,
-        "bullpenFlipScore": 51,
-        "starterControlScore": 24,
+        "phaseSplitScore": 0,
+        "bullpenFlipScore": 39.8,
+        "starterControlScore": 29,
         "marketContradictionScore": 30,
         "realityGapScore": 39.1
       },
@@ -19544,9 +19929,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 25.8,
-            "pickScore": 25.8,
-            "opponentScore": 10.9
+            "gameScore": 31.4,
+            "pickScore": 31.4,
+            "opponentScore": 11.5
           },
           {
             "id": "chaos",
@@ -19576,7 +19961,7 @@
             "id": "bridge",
             "label": "Bridge",
             "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-            "gameScore": 51,
+            "gameScore": 39.8,
             "pickScore": 4.3,
             "opponentScore": 2.3
           },
@@ -19584,9 +19969,9 @@
             "id": "flow",
             "label": "Flow",
             "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-            "gameScore": 60,
-            "pickScore": 75,
-            "opponentScore": 25
+            "gameScore": 100,
+            "pickScore": 100,
+            "opponentScore": 0
           }
         ],
         "profiles": [
@@ -19594,26 +19979,26 @@
             "role": "pick",
             "team": "Tigers",
             "scores": {
-              "pressure": 25.8,
+              "pressure": 31.4,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
               "bridge": 4.3,
-              "flow": 75
+              "flow": 100
             },
             "polygon": [
-              25.8,
+              31.4,
               5,
               0,
               16,
               4.3,
-              75
+              100
             ],
-            "phaseOwnershipPct": 75,
+            "phaseOwnershipPct": 100,
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 54.7,
+              "starterScore": 54.5,
               "bullpenScore": 58.7,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -19627,26 +20012,26 @@
             "role": "opponent",
             "team": "Guardians",
             "scores": {
-              "pressure": 10.9,
+              "pressure": 11.5,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
               "bridge": 2.3,
-              "flow": 25
+              "flow": 0
             },
             "polygon": [
-              10.9,
+              11.5,
               5,
               0,
               16,
               2.3,
-              25
+              0
             ],
-            "phaseOwnershipPct": 25,
+            "phaseOwnershipPct": 0,
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 60.3,
+              "starterScore": 63.8,
               "bullpenScore": 64,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -19658,39 +20043,39 @@
           }
         ],
         "gameProfile": {
-          "label": "Starter-to-bullpen flip",
-          "bestExpression": "Tigers first-five side",
+          "label": "Early-pressure side",
+          "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 25.8,
+            "pressure": 31.4,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
-            "bridge": 51,
-            "flow": 60
+            "bridge": 39.8,
+            "flow": 100
           },
           "polygon": [
-            25.8,
+            31.4,
             44.8,
             8.5,
             24.4,
-            51,
-            60
+            39.8,
+            100
           ],
           "dominantAxes": [
             {
               "id": "flow",
               "label": "Flow",
-              "score": 60
-            },
-            {
-              "id": "bridge",
-              "label": "Bridge",
-              "score": 51
+              "score": 100
             },
             {
               "id": "chaos",
               "label": "Chaos",
               "score": 44.8
+            },
+            {
+              "id": "bridge",
+              "label": "Bridge",
+              "score": 39.8
             }
           ]
         }
@@ -19699,9 +20084,9 @@
         "fullGameTraffic": "Tigers",
         "first5": "Tigers",
         "late": "Tigers",
-        "bridge": "Guardians",
-        "distinctPhaseTeams": 2,
-        "pickPhaseMisses": 1
+        "bridge": "Tigers",
+        "distinctPhaseTeams": 1,
+        "pickPhaseMisses": 0
       },
       "metrics": {
         "maxMistakeChaos": null,
@@ -19719,39 +20104,39 @@
         "81°F | Wind 9 mph L-R | 0% precip | weather helps carry"
       ],
       "laneMap": {
-        "side": "Secondary to the named lane.",
-        "first5": "Primary lane.",
+        "side": "Allowed after early traffic confirms the pressure read.",
+        "first5": "Only primary if the line is cheaper than full-game ML.",
         "total": "Needs line-specific EV.",
-        "firstInning": "Advisory only.",
+        "firstInning": "YRFI only if both top orders and starter leakage agree.",
         "live": "Use price discipline."
       },
       "inningMap": [
         {
           "innings": "1-2",
-          "expectation": "Tigers can look right early even if full-game ML is fragile.",
-          "watch": "Entry belongs to F5 or live lead, not blind FG."
+          "expectation": "Tigers needs the first traffic pocket.",
+          "watch": "No early baserunners means the edge decays quickly."
         },
         {
           "innings": "3-5",
-          "expectation": "This is the main scoring window for the pick.",
-          "watch": "If the pick trails after five, the original read is mostly gone."
+          "expectation": "First-five side is the cleanest expression.",
+          "watch": "Do not wait for late rescue if the starter edge is gone."
         },
         {
           "innings": "6-7",
-          "expectation": "Guardians can re-enter through the bridge.",
-          "watch": "Expect hedge or live reversal pressure here."
+          "expectation": "Only keep full-game exposure if the bridge is not leaking.",
+          "watch": "A bullpen mismatch turns this into a hedge spot."
         },
         {
           "innings": "8-9",
-          "expectation": "Late innings are not aligned with the pregame side.",
-          "watch": "Do not confuse early control with full-game safety."
+          "expectation": "Closeout depends on lead size more than raw team rating.",
+          "watch": "One-run late leads are not a free pass."
         }
       ],
       "marketImplications": {
         "side": "Tigers is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 82.7% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 82.2% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
@@ -19791,28 +20176,28 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 11.5,
-      "homeProjectedHits": 9.5,
-      "awayHitEfficiencyPct": 33.3,
-      "homeHitEfficiencyPct": 27.8,
-      "awayFirst5ProjectedHits": 6.5,
-      "homeFirst5ProjectedHits": 5.5,
-      "awayFirst5HitEfficiencyPct": 34.3,
-      "homeFirst5HitEfficiencyPct": 28.8,
-      "awayLateProjectedHits": 4.7,
-      "homeLateProjectedHits": 4.2,
-      "awayLateHitEfficiencyPct": 30.6,
-      "homeLateHitEfficiencyPct": 27.6,
+      "awayProjectedHits": 11.3,
+      "homeProjectedHits": 8.6,
+      "awayHitEfficiencyPct": 32.7,
+      "homeHitEfficiencyPct": 25.2,
+      "awayFirst5ProjectedHits": 6.6,
+      "homeFirst5ProjectedHits": 5.1,
+      "awayFirst5HitEfficiencyPct": 34.4,
+      "homeFirst5HitEfficiencyPct": 27.1,
+      "awayLateProjectedHits": 4.6,
+      "homeLateProjectedHits": 3.7,
+      "awayLateHitEfficiencyPct": 29.5,
+      "homeLateHitEfficiencyPct": 23.9,
       "awayBullpenChainScore": 72,
-      "homeBullpenChainScore": 73.8,
+      "homeBullpenChainScore": 71.4,
       "edgeTeam": "Tigers",
-      "edgeHits": 2,
+      "edgeHits": 2.7,
       "first5EdgeTeam": "Tigers",
-      "first5EdgeHits": 1,
+      "first5EdgeHits": 1.5,
       "lateEdgeTeam": "Tigers",
-      "lateEdgeHits": 0.5,
-      "bridgeEdgeTeam": "Guardians",
-      "bridgeEdgeScore": 1.9,
+      "lateEdgeHits": 0.9,
+      "bridgeEdgeTeam": "Tigers",
+      "bridgeEdgeScore": 0.6,
       "awayLikelyRelievers": [
         {
           "name": "Enmanuel De Jesus",
@@ -19832,7 +20217,7 @@
           "usedDaysLast3": 1,
           "usedDaysLast6": 1,
           "unavailable": false,
-          "shadowSharePct": 20.8,
+          "shadowSharePct": 20.7,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -19856,7 +20241,7 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 0,
           "unavailable": true,
-          "shadowSharePct": 20.8,
+          "shadowSharePct": 20.7,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -19882,31 +20267,31 @@
           "usedDaysLast3": 0,
           "usedDaysLast6": 0,
           "unavailable": true,
-          "shadowSharePct": 21.2,
+          "shadowSharePct": 21.3,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
           "projectionOnly": true
         },
         {
-          "name": "Hunter Gaddis",
-          "pitcherName": "Hunter Gaddis",
+          "name": "Colin Holderman",
+          "pitcherName": "Colin Holderman",
           "pitcherId": null,
-          "role": "SU8",
+          "role": "MID",
           "throws": "R",
-          "expectedOuts": 3,
-          "availabilityScore": 85.9,
-          "bridgeScore": 66.4,
-          "fatigueScore": 14.1,
-          "firstRelieverLikelihood": 71.5,
+          "expectedOuts": 3.4,
+          "availabilityScore": 66.8,
+          "bridgeScore": 60,
+          "fatigueScore": 33.2,
+          "firstRelieverLikelihood": 70.5,
           "workedYesterday": false,
           "backToBack": false,
-          "pitchesLast3": 0,
-          "pitchesLast6": 23,
-          "usedDaysLast3": 0,
-          "usedDaysLast6": 1,
+          "pitchesLast3": 12,
+          "pitchesLast6": 30,
+          "usedDaysLast3": 1,
+          "usedDaysLast6": 2,
           "unavailable": false,
-          "shadowSharePct": 21,
+          "shadowSharePct": 20.8,
           "source": "MLB-RP2",
           "projectionSource": "fangraphs_roster_resource",
           "identityConfidence": "low",
@@ -19914,33 +20299,34 @@
         }
       ],
       "awayBullpenExhaustion": 20.9,
-      "homeBullpenExhaustion": 15.4,
+      "homeBullpenExhaustion": 22.1,
       "awayBullpenExhaustionLabel": "fresh",
       "homeBullpenExhaustionLabel": "fresh",
       "awayPitcherType": "Volatile bat-misser",
       "homePitcherType": "Balanced righty",
-      "awayStarterHoldConfidence": 18,
-      "homeStarterHoldConfidence": 30.6,
-      "awayProjectedRuns": 5.2,
-      "homeProjectedRuns": 4.2,
-      "awayFirst5ProjectedRuns": 2.9,
-      "homeFirst5ProjectedRuns": 2.3,
-      "awayLateProjectedRuns": 2.3,
-      "homeLateProjectedRuns": 1.9,
-      "postedTotal": 8.5,
+      "awayStarterHoldConfidence": 24,
+      "homeStarterHoldConfidence": 26.6,
+      "awayProjectedRuns": 4.9,
+      "homeProjectedRuns": 3.8,
+      "awayFirst5ProjectedRuns": 2.7,
+      "homeFirst5ProjectedRuns": 2.2,
+      "awayLateProjectedRuns": 2.2,
+      "homeLateProjectedRuns": 1.6,
+      "postedTotal": 7.5,
       "totals": {
         "fullGame": {
           "lean": "Over",
-          "edge": 0.9,
-          "strength": "Clear",
-          "label": "Over 8.5",
-          "summary": "Over lean with a 0.9-run edge against 8.5.",
+          "edge": 1.2,
+          "strength": "Strong",
+          "label": "Over 7.5",
+          "summary": "Over lean with a 1.2-run edge against 7.5.",
           "chaosGate": {
             "phase": "full",
             "overChaosScore": 3,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "81°F | Wind 9 mph L-R | 0% precip | weather helps carry",
@@ -19955,22 +20341,40 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": -0.2,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.2,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 1.2,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 34.8,
+              "maxRp2ReliefRuns": 1.3,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.2,
+              "maxRepeatOpponentHitTax": 0.2
             }
           }
         },
         "first5": {
-          "lean": "Over",
-          "edge": 0.7,
-          "strength": "Clear",
-          "label": "Over 4.5",
-          "summary": "Over lean with a 0.7-run edge against 4.5.",
+          "lean": "Pass",
+          "edge": 0.4,
+          "strength": "Thin",
+          "label": "Hold 4.5",
+          "summary": "Model projection 4.9 is essentially on the posted 4.5.",
           "chaosGate": {
             "phase": "first5",
             "overChaosScore": 3,
             "underDragScore": 0,
-            "warning": false,
+            "warning": true,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "81°F | Wind 9 mph L-R | 0% precip | weather helps carry",
@@ -19985,14 +20389,31 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": -0.2,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.2,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 1.2,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 34.8,
+              "maxRp2ReliefRuns": 1.3,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.2,
+              "maxRepeatOpponentHitTax": 0.2
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 5.2,
-            "adjustedProjectedRuns": 5.2,
-            "adjustedEdge": 0.7,
-            "marketExpression": "Over",
+            "baseProjectedRuns": 4.9,
+            "adjustedProjectedRuns": 4.9,
+            "adjustedEdge": 0.4,
+            "marketExpression": "Pass",
             "shape": "balanced",
             "tailScore": 32,
             "strandScore": 0,
@@ -20008,25 +20429,42 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 12,
+              "totalFirst5ProjectedHits": 11.7,
               "weatherCarry": true,
               "weatherSuppress": false,
+              "envRunDelta": -0.2,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.2,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 1.2,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 34.8,
+              "maxRp2ReliefRuns": 1.3,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.2,
               "visibilityRisk": null
             }
           }
         },
         "late": {
-          "lean": "Pass",
-          "edge": 0.2,
-          "strength": "Thin",
-          "label": "Hold 4",
-          "summary": "Model projection 4.2 is essentially on the posted 4.",
+          "lean": "Over",
+          "edge": 0.8,
+          "strength": "Clear",
+          "label": "Over 3",
+          "summary": "Over lean with a 0.8-run edge against 3.",
           "chaosGate": {
             "phase": "late",
             "overChaosScore": 3,
             "underDragScore": 0,
-            "warning": true,
+            "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "81°F | Wind 9 mph L-R | 0% precip | weather helps carry",
@@ -20041,18 +20479,35 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": -0.2,
+              "envHitsDelta": 0,
+              "envHrDelta": -0.1,
+              "hrForce": 1.2,
+              "highHrForce": false,
+              "lowerWeatherCarry": true,
+              "ficHrForce": 1.2,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
+              "maxRp2BridgeStress": 34.8,
+              "maxRp2ReliefRuns": 1.3,
+              "rp2LateRunRisk": false,
+              "maxRepeatOpponentFirst5Tax": 0.2,
+              "maxRepeatOpponentHitTax": 0.2
             }
           }
         },
-        "projectedFullTotalRuns": 9.4,
-        "projectedFirst5TotalRuns": 5.2,
-        "tailAdjustedProjectedFirst5TotalRuns": 5.2,
+        "projectedFullTotalRuns": 8.7,
+        "projectedFirst5TotalRuns": 4.9,
+        "tailAdjustedProjectedFirst5TotalRuns": 4.9,
         "first5TailOverlay": {
-          "baseProjectedRuns": 5.2,
-          "adjustedProjectedRuns": 5.2,
-          "adjustedEdge": 0.7,
-          "marketExpression": "Over",
+          "baseProjectedRuns": 4.9,
+          "adjustedProjectedRuns": 4.9,
+          "adjustedEdge": 0.4,
+          "marketExpression": "Pass",
           "shape": "balanced",
           "tailScore": 32,
           "strandScore": 0,
@@ -20068,18 +20523,34 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 12,
+            "totalFirst5ProjectedHits": 11.7,
             "weatherCarry": true,
             "weatherSuppress": false,
+            "envRunDelta": -0.2,
+            "envHitsDelta": 0,
+            "envHrDelta": -0.1,
+            "hrForce": 1.2,
+            "highHrForce": false,
+            "lowerWeatherCarry": true,
+            "ficHrForce": 1.2,
+            "ficHighHrForce": false,
+            "materialHrForce": false,
+            "extremeHrForce": false,
+            "carryMultiplier": 1,
+            "ficHighHrForceSharePct": 0,
+            "maxRp2BridgeStress": 34.8,
+            "maxRp2ReliefRuns": 1.3,
+            "rp2LateRunRisk": false,
+            "maxRepeatOpponentFirst5Tax": 0.2,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 4.2,
+        "projectedLateTotalRuns": 3.8,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 4.7,
+        "runShareFirst5TotalLine": 4.2,
         "first5TotalLineSource": "posted",
-        "derivedLateTotalLine": 4,
+        "derivedLateTotalLine": 3,
         "bullpenExhaustionNote": "81°F | Wind 9 mph L-R | 0% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
         "weatherNote": "81°F | Wind 9 mph L-R | 0% precip | weather helps carry.",
         "sunVisibilityNote": ""
@@ -20088,28 +20559,38 @@
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 32.7,
-        "yesProbabilityPct": 82.7,
-        "noProbabilityPct": 17.3,
+        "edge": 32.2,
+        "yesProbabilityPct": 82.2,
+        "noProbabilityPct": 17.8,
         "awayRunProbabilityPct": 72,
-        "homeRunProbabilityPct": 38.2,
+        "homeRunProbabilityPct": 36.4,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 60,
         "homeOppPitcherAllowedRatePct": 20,
         "awayProjectedRuns": 1,
-        "homeProjectedRuns": 0.5,
+        "homeProjectedRuns": 0.4,
         "reasonStack": [
-          "Tigers top order is driving early pressure (88.5)",
+          "Tigers top order is driving early pressure (88.4)",
+          "Tigers handedness splits fit the starter (65.6)",
+          "Tigers top third has multiple strong split bats",
           "Guardians starter has leaked 1st-inning runs in 60% of recent starts",
-          "Guardians starter has real season 1st-inning damage (38% run games, 0.6/start)",
-          "Guardians top order is driving early pressure (67.2)",
-          "Tigers starter has real season 1st-inning damage (23% run games, 0.5/start)"
+          "Guardians starter has real season 1st-inning damage (38% run games, 0.6/start)"
         ],
-        "cautionStack": [],
-        "projectedRuns": 1.5,
+        "cautionStack": [
+          "Guardians handedness splits are weak against the starter (20.4)",
+          "Guardians top third carries weak split rows"
+        ],
+        "environmentAddendum": {
+          "hrForce": 1.2,
+          "highHrForce": false,
+          "maxProbabilityLiftPct": -0.4,
+          "maxProjectedRunsLift": 0,
+          "reasons": []
+        },
+        "projectedRuns": 1.4,
         "line": 0.5,
-        "summary": "YRFI with a 83% modeled chance of at least one first-inning run. Tigers score 72% of the time and Guardians 38.2% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 82% modeled chance of at least one first-inning run. Tigers score 72% of the time and Guardians 36.4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
       },
       "teamScripts": [
         {
@@ -20137,14 +20618,15 @@
           ],
           "underperformNote": "James Outman carry the softer form or split fit into a balanced lane.",
           "overview": "Tigers can lean on Kevin McGonigle, Gleyber Torres, Dillon Dingler to drive early pressure against Tanner Bibee.",
-          "topThirdScore": 88.5,
+          "topThirdScore": 88.4,
           "middleScore": 88.3,
           "depthScore": 68.9,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Tigers own the cleaner full-game traffic script at 11.5 projected hits.",
-            "Tigers have the better starter-window lane with 6.5 projected first-five hits.",
+            "Tigers own the cleaner full-game traffic script at 11.3 projected hits.",
+            "Tigers have the better starter-window lane with 6.6 projected first-five hits.",
             "Tigers still hold the better bridge-and-finish script once the bullpens take over.",
+            "Tigers also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
             "Tigers can lean on Kevin McGonigle, Gleyber Torres, Dillon Dingler to drive early pressure against Tanner Bibee.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
             "Tigers top third are live enough to pressure the starter before the bridge innings.",
@@ -20157,7 +20639,7 @@
           "overperformHitters": [
             {
               "name": "Travis Bazzana",
-              "tag": "carry | +9.43 vs Jack Flaherty"
+              "tag": "carry | +9.61 vs Jack Flaherty"
             },
             {
               "name": "Angel Martínez",
@@ -20180,12 +20662,11 @@
           ],
           "underperformNote": "Rhys Hoskins and Patrick Bailey carry the softer form or split fit into a volatile bat-misser lane.",
           "overview": "Guardians can lean on Travis Bazzana, Angel Martínez, Brayan Rocchio to drive early pressure against Jack Flaherty.",
-          "topThirdScore": 67.2,
+          "topThirdScore": 67.6,
           "middleScore": 57.3,
           "depthScore": 62.1,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Guardians also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
             "Guardians can lean on Travis Bazzana, Angel Martínez, Brayan Rocchio to drive early pressure against Jack Flaherty.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
             "Guardians top third are live enough to pressure the starter before the bridge innings.",
@@ -20199,19 +20680,19 @@
           {
             "label": "First 5",
             "edgeTeam": "Tigers",
-            "projection": "2.9 R",
+            "projection": "2.7 R",
             "note": "Tigers lean on Kevin McGonigle, Gleyber Torres to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
             "edgeTeam": "Tigers",
-            "projection": "2.3 R",
-            "note": "Tigers keep more late scoring paths alive, with Kevin McGonigle, Gleyber Torres plus the Guardians bridge chain shaping the middle innings."
+            "projection": "2.2 R",
+            "note": "Tigers keep more late scoring paths alive, with Kevin McGonigle, Gleyber Torres plus the Tigers bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Tigers",
-            "projection": "11.5 H",
+            "projection": "11.3 H",
             "note": "Tigers finish with the stronger aggregate traffic path, anchored by Kevin McGonigle, Gleyber Torres."
           }
         ]
@@ -20273,10 +20754,54 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Tigers @ Guardians",
+        "gameContextMatch": "team-code",
+        "rowCount": 17,
+        "averageHrForce": 1.2,
+        "maxHrForce": 1.2,
+        "highHrForceRows": 0,
+        "extremeHrForceRows": 0,
+        "highHrForceSharePct": 0,
+        "qualityAbPct": 40.4,
+        "hardHitPct": 15.8,
+        "matchupPassRows": 1,
+        "awayOffense": {
+          "label": "Tigers hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "Guardians hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Tigers",
-          "modelVersion": "MLB-RP2.2026-06-12.v2",
+          "modelVersion": "MLB-RP2.2026-06-12.v3",
           "projectedReliefRunsAllowed": 0.728,
           "projectedReliefOuts": 9.83,
           "projectedRelieversUsed": 3.2,
@@ -20285,7 +20810,7 @@
           "fatigueScore": 30.1,
           "qualityScore": 57.2,
           "runRiskTier": "stable_bridge",
-          "topTwoSharePct": 41.6,
+          "topTwoSharePct": 41.4,
           "lead": {
             "pitcherName": "Enmanuel De Jesus",
             "expectedOuts": 3.4,
@@ -20294,7 +20819,7 @@
         },
         "home": {
           "teamName": "Guardians",
-          "modelVersion": "MLB-RP2.2026-06-12.v2",
+          "modelVersion": "MLB-RP2.2026-06-12.v3",
           "projectedReliefRunsAllowed": 1.622,
           "projectedReliefOuts": 9.7,
           "projectedRelieversUsed": 3.2,
@@ -20303,7 +20828,7 @@
           "fatigueScore": 32,
           "qualityScore": 74.8,
           "runRiskTier": "fresh_bridge",
-          "topTwoSharePct": 42.2,
+          "topTwoSharePct": 42.1,
           "lead": {
             "pitcherName": "Daniel Espino",
             "expectedOuts": 3.4,
@@ -20311,87 +20836,453 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "handedness split adjustment is active",
+          "repeat-opponent starter tax is active"
+        ],
+        "environment": {
+          "hrForce": 1.2,
+          "envHrForce": 1.2,
+          "ficHrForce": 1.2,
+          "materialHrForce": false,
+          "extremeHrForce": false,
+          "carryMultiplier": 1,
+          "hitDelta": 0,
+          "runDelta": 0,
+          "conversionDelta": 0,
+          "firstInningProbabilityLiftPct": 0,
+          "underFragilityRuns": 0,
+          "flags": [
+            "Low/N/A HRForce cannot be used as a strong under signal"
+          ],
+          "reasons": [
+            "weather carry is low or unavailable, so it cannot support an under by itself"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Tigers",
+            "pitcherName": "Jack Flaherty",
+            "gamesStarted": 15,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Volatile bat-misser",
+            "expectedInnings": 4.44,
+            "opponentHistory": {
+              "label": "repeat opponent damage tax",
+              "source": "StatMuse vs opponent",
+              "starts": 10,
+              "innings": 57.3,
+              "projectedHitsDelta": 0.1,
+              "first5RunsDelta": 0.1,
+              "runConversionDelta": -0.0008654409302325571,
+              "repeatOpponentUnderWarning": true,
+              "repeatOpponentHitTax": 0.2,
+              "repeatOpponentFirst5Tax": 0.2,
+              "lastOpponentStartSummary": "9/24/2025 | 4.3 IP | 3 R | 3 ER | 5 H | 1 HR",
+              "repeatOpponentFlags": [
+                "repeat opponent short start"
+              ]
+            },
+            "flags": [
+              "repeat opponent damage tax vs Guardians",
+              "repeat-opponent tax: 9/24/2025 | 4.3 IP | 3 R | 3 ER | 5 H | 1 HR"
+            ]
+          },
+          {
+            "teamName": "Guardians",
+            "pitcherName": "Tanner Bibee",
+            "gamesStarted": 15,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Balanced righty",
+            "expectedInnings": 5.31,
+            "opponentHistory": {
+              "label": "starter has suppressed this opponent",
+              "source": "same-season game logs",
+              "starts": 1,
+              "innings": 8,
+              "projectedHitsDelta": -0.3,
+              "first5RunsDelta": -0.3,
+              "runConversionDelta": -0.005738,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": -0.2,
+              "repeatOpponentFirst5Tax": -0.1,
+              "lastOpponentStartSummary": "2026-05-20 | 8 IP | 1 R | 1 ER | 4 H",
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "starter has suppressed this opponent vs Tigers"
+            ]
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Tigers",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 65.6,
+            "label": "strong handedness split lane",
+            "splitAvgAverage": 0.263,
+            "splitOpsAverage": 0.769,
+            "topSixSplitAvgAverage": 0.289,
+            "topSixSplitOpsAverage": 0.829,
+            "strongSplitCount": 5,
+            "weakSplitCount": 3,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 5,
+            "topSixWeakSplitCount": 0,
+            "topThirdStrongSplitCount": 3,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": 0.4,
+            "runConversionDelta": 0.008439999999999998,
+            "strongSplitBats": [
+              {
+                "name": "Dillon Dingler",
+                "slot": 4,
+                "bats": "R",
+                "plateAppearances": 177,
+                "avg": 0.285,
+                "ops": 0.924,
+                "seasonAvg": 0.253,
+                "seasonOps": 0.855,
+                "recentAvg": 0.36,
+                "recentOps": 1.087
+              },
+              {
+                "name": "Riley Greene",
+                "slot": 3,
+                "bats": "L",
+                "plateAppearances": 203,
+                "avg": 0.311,
+                "ops": 0.852,
+                "seasonAvg": 0.301,
+                "seasonOps": 0.855,
+                "recentAvg": 0.19,
+                "recentOps": 0.745
+              },
+              {
+                "name": "Kerry Carpenter",
+                "slot": 5,
+                "bats": "L",
+                "plateAppearances": 138,
+                "avg": 0.248,
+                "ops": 0.848,
+                "seasonAvg": 0.235,
+                "seasonOps": 0.804,
+                "recentAvg": 0.222,
+                "recentOps": 0.889
+              },
+              {
+                "name": "Kevin McGonigle",
+                "slot": 1,
+                "bats": "L",
+                "plateAppearances": 213,
+                "avg": 0.291,
+                "ops": 0.845,
+                "seasonAvg": 0.282,
+                "seasonOps": 0.806,
+                "recentAvg": 0.238,
+                "recentOps": 0.884
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "James Outman",
+                "slot": 9,
+                "bats": "L",
+                "plateAppearances": 55,
+                "avg": 0.157,
+                "ops": 0.473,
+                "seasonAvg": 0.156,
+                "seasonOps": 0.479,
+                "recentAvg": null,
+                "recentOps": null
+              },
+              {
+                "name": "Zach McKinstry",
+                "slot": 8,
+                "bats": "L",
+                "plateAppearances": 133,
+                "avg": 0.207,
+                "ops": 0.59,
+                "seasonAvg": 0.185,
+                "seasonOps": 0.549,
+                "recentAvg": 0.375,
+                "recentOps": 1.188
+              },
+              {
+                "name": "Spencer Torkelson",
+                "slot": 7,
+                "bats": "R",
+                "plateAppearances": 200,
+                "avg": 0.205,
+                "ops": 0.699,
+                "seasonAvg": 0.211,
+                "seasonOps": 0.717,
+                "recentAvg": 0.19,
+                "recentOps": 0.737
+              }
+            ],
+            "flags": [
+              "5 strong split bats vs R",
+              "top-third split pressure",
+              "Dillon Dingler 0.924 OPS vs R",
+              "Riley Greene 0.852 OPS vs R",
+              "James Outman 0.473 OPS vs R",
+              "3 lineup bats carry weak split rows"
+            ]
+          },
+          {
+            "teamName": "Guardians",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 20.4,
+            "label": "weak handedness split lane",
+            "splitAvgAverage": 0.227,
+            "splitOpsAverage": 0.688,
+            "topSixSplitAvgAverage": 0.229,
+            "topSixSplitOpsAverage": 0.735,
+            "strongSplitCount": 2,
+            "weakSplitCount": 6,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 1,
+            "topSixWeakSplitCount": 4,
+            "topThirdStrongSplitCount": 1,
+            "topThirdWeakSplitCount": 2,
+            "hitDelta": -0.6,
+            "runConversionDelta": -0.014,
+            "strongSplitBats": [
+              {
+                "name": "Travis Bazzana",
+                "slot": 1,
+                "bats": "L",
+                "plateAppearances": 111,
+                "avg": 0.295,
+                "ops": 0.882,
+                "seasonAvg": 0.255,
+                "seasonOps": 0.761,
+                "recentAvg": 0.174,
+                "recentOps": 0.688
+              },
+              {
+                "name": "Brayan Rocchio",
+                "slot": 9,
+                "bats": "S",
+                "plateAppearances": 173,
+                "avg": 0.287,
+                "ops": 0.752,
+                "seasonAvg": 0.276,
+                "seasonOps": 0.754,
+                "recentAvg": 0.2,
+                "recentOps": 0.642
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Patrick Bailey",
+                "slot": 8,
+                "bats": "S",
+                "plateAppearances": 228,
+                "avg": 0.157,
+                "ops": 0.433,
+                "seasonAvg": 0.154,
+                "seasonOps": 0.446,
+                "recentAvg": 0.231,
+                "recentOps": 0.538
+              },
+              {
+                "name": "Steven Kwan",
+                "slot": 7,
+                "bats": "L",
+                "plateAppearances": 182,
+                "avg": 0.229,
+                "ops": 0.613,
+                "seasonAvg": 0.213,
+                "seasonOps": 0.586,
+                "recentAvg": 0.294,
+                "recentOps": 0.686
+              },
+              {
+                "name": "Chase DeLauter",
+                "slot": 3,
+                "bats": "L",
+                "plateAppearances": 185,
+                "avg": 0.215,
+                "ops": 0.677,
+                "seasonAvg": 0.254,
+                "seasonOps": 0.727,
+                "recentAvg": 0.227,
+                "recentOps": 0.488
+              },
+              {
+                "name": "José Ramírez",
+                "slot": 2,
+                "bats": "S",
+                "plateAppearances": 216,
+                "avg": 0.209,
+                "ops": 0.678,
+                "seasonAvg": 0.241,
+                "seasonOps": 0.765,
+                "recentAvg": 0.208,
+                "recentOps": 0.603
+              }
+            ],
+            "flags": [
+              "6 weak split bats vs R",
+              "top-six split drag",
+              "Travis Bazzana 0.882 OPS vs R",
+              "Brayan Rocchio 0.752 OPS vs R",
+              "Patrick Bailey 0.433 OPS vs R",
+              "6 lineup bats carry weak split rows"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Tigers",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "Guardians",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Tigers",
+            "projectedReliefRunsAllowed": 0.7,
+            "adjustedProjectedReliefRunsAllowed": 0.7,
+            "projectedReliefOuts": 9.8,
+            "leverageAvailabilityScore": 69.9,
+            "leadAvailabilityScore": 70.7,
+            "bridgeStressScore": 34.8,
+            "runDelta": -0.3,
+            "hitDelta": -0.2,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 0.7 -> 0.7"
+            ]
+          },
+          {
+            "teamName": "Guardians",
+            "projectedReliefRunsAllowed": 1.6,
+            "adjustedProjectedReliefRunsAllowed": 1.3,
+            "projectedReliefOuts": 9.7,
+            "leverageAvailabilityScore": 68,
+            "leadAvailabilityScore": 72,
+            "bridgeStressScore": 28.6,
+            "runDelta": -0.3,
+            "hitDelta": 0,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 1.6 -> 1.3"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 4.9,
+          "home": 3.8
+        },
+        "projectedHitTotals": {
+          "away": 11.3,
+          "home": 8.6
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
         "selection": "Tigers",
         "opponent": "Guardians",
-        "pickProjectedRuns": 5.2,
-        "opponentProjectedRuns": 4.2,
-        "projectedTotalRuns": 9.4,
-        "runDiff": 1,
-        "absoluteRunDiff": 1,
-        "runDiffSharePct": 10.6,
+        "pickProjectedRuns": 4.9,
+        "opponentProjectedRuns": 3.8,
+        "projectedTotalRuns": 8.7,
+        "runDiff": 1.1,
+        "absoluteRunDiff": 1.1,
+        "runDiffSharePct": 12.6,
         "confidence": 52,
-        "marketProbabilityPct": 46.7,
-        "grade": "Thin ML shape",
+        "marketProbabilityPct": 44.5,
+        "grade": "Playable ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Tigers projects 1 runs better in a 9.4-run environment."
+        "note": "Tigers projects 1.1 runs better in a 8.7-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
-        "label": "Starter-to-bullpen flip",
+        "label": "Early-pressure side",
         "shapeLabel": "balanced traffic game",
         "category": {
-          "slug": "starter_to_bullpen_flip",
-          "label": "Starter-to-bullpen flip",
-          "bestExpression": "Tigers first-five side",
-          "confidence": 51,
+          "slug": "early_pressure_side",
+          "label": "Early-pressure side",
+          "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
+          "confidence": 62.3,
           "reasons": [
-            "The pick can own the starter window without owning the late game.",
-            "Use the timing edge before bridge innings can flip it."
+            "The pick needs to cash the first traffic pocket.",
+            "The best edge is timing, not late-game patience."
           ],
           "laneMap": {
-            "side": "Secondary to the named lane.",
-            "first5": "Primary lane.",
+            "side": "Allowed after early traffic confirms the pressure read.",
+            "first5": "Only primary if the line is cheaper than full-game ML.",
             "total": "Needs line-specific EV.",
-            "firstInning": "Advisory only.",
+            "firstInning": "YRFI only if both top orders and starter leakage agree.",
             "live": "Use price discipline."
           },
           "inningMap": [
             {
               "innings": "1-2",
-              "expectation": "Tigers can look right early even if full-game ML is fragile.",
-              "watch": "Entry belongs to F5 or live lead, not blind FG."
+              "expectation": "Tigers needs the first traffic pocket.",
+              "watch": "No early baserunners means the edge decays quickly."
             },
             {
               "innings": "3-5",
-              "expectation": "This is the main scoring window for the pick.",
-              "watch": "If the pick trails after five, the original read is mostly gone."
+              "expectation": "First-five side is the cleanest expression.",
+              "watch": "Do not wait for late rescue if the starter edge is gone."
             },
             {
               "innings": "6-7",
-              "expectation": "Guardians can re-enter through the bridge.",
-              "watch": "Expect hedge or live reversal pressure here."
+              "expectation": "Only keep full-game exposure if the bridge is not leaking.",
+              "watch": "A bullpen mismatch turns this into a hedge spot."
             },
             {
               "innings": "8-9",
-              "expectation": "Late innings are not aligned with the pregame side.",
-              "watch": "Do not confuse early control with full-game safety."
+              "expectation": "Closeout depends on lead size more than raw team rating.",
+              "watch": "One-run late leads are not a free pass."
             }
           ],
           "diagnostics": {
             "pickOwnsFull": true,
             "pickOwnsFirst5": true,
             "pickOwnsLate": true,
-            "pickOwnsBridge": false,
-            "pickPhaseCount": 3,
+            "pickOwnsBridge": true,
+            "pickPhaseCount": 4,
             "lowPickConversion": true,
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 2
+            "projectedHitEdge": 2.7
           }
         },
-        "summary": "Starter-to-bullpen flip: Tigers first-five side. Reality-gap 39.1/100. Main checks: 81°F | Wind 9 mph L-R | 0% precip | weather helps carry.",
+        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 39.1/100. Main checks: 81°F | Wind 9 mph L-R | 0% precip | weather helps carry.",
         "pickTeam": "Tigers",
         "opponentTeam": "Guardians",
         "scores": {
           "chaosScore": 44.8,
           "deadEarlyScore": 8.5,
-          "phaseSplitScore": 40,
-          "bullpenFlipScore": 51,
-          "starterControlScore": 24,
+          "phaseSplitScore": 0,
+          "bullpenFlipScore": 39.8,
+          "starterControlScore": 29,
           "marketContradictionScore": 30,
           "realityGapScore": 39.1
         },
@@ -20407,9 +21298,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 25.8,
-              "pickScore": 25.8,
-              "opponentScore": 10.9
+              "gameScore": 31.4,
+              "pickScore": 31.4,
+              "opponentScore": 11.5
             },
             {
               "id": "chaos",
@@ -20439,7 +21330,7 @@
               "id": "bridge",
               "label": "Bridge",
               "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-              "gameScore": 51,
+              "gameScore": 39.8,
               "pickScore": 4.3,
               "opponentScore": 2.3
             },
@@ -20447,9 +21338,9 @@
               "id": "flow",
               "label": "Flow",
               "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-              "gameScore": 60,
-              "pickScore": 75,
-              "opponentScore": 25
+              "gameScore": 100,
+              "pickScore": 100,
+              "opponentScore": 0
             }
           ],
           "profiles": [
@@ -20457,26 +21348,26 @@
               "role": "pick",
               "team": "Tigers",
               "scores": {
-                "pressure": 25.8,
+                "pressure": 31.4,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
                 "bridge": 4.3,
-                "flow": 75
+                "flow": 100
               },
               "polygon": [
-                25.8,
+                31.4,
                 5,
                 0,
                 16,
                 4.3,
-                75
+                100
               ],
-              "phaseOwnershipPct": 75,
+              "phaseOwnershipPct": 100,
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 54.7,
+                "starterScore": 54.5,
                 "bullpenScore": 58.7,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -20490,26 +21381,26 @@
               "role": "opponent",
               "team": "Guardians",
               "scores": {
-                "pressure": 10.9,
+                "pressure": 11.5,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
                 "bridge": 2.3,
-                "flow": 25
+                "flow": 0
               },
               "polygon": [
-                10.9,
+                11.5,
                 5,
                 0,
                 16,
                 2.3,
-                25
+                0
               ],
-              "phaseOwnershipPct": 25,
+              "phaseOwnershipPct": 0,
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 60.3,
+                "starterScore": 63.8,
                 "bullpenScore": 64,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -20521,39 +21412,39 @@
             }
           ],
           "gameProfile": {
-            "label": "Starter-to-bullpen flip",
-            "bestExpression": "Tigers first-five side",
+            "label": "Early-pressure side",
+            "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 25.8,
+              "pressure": 31.4,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
-              "bridge": 51,
-              "flow": 60
+              "bridge": 39.8,
+              "flow": 100
             },
             "polygon": [
-              25.8,
+              31.4,
               44.8,
               8.5,
               24.4,
-              51,
-              60
+              39.8,
+              100
             ],
             "dominantAxes": [
               {
                 "id": "flow",
                 "label": "Flow",
-                "score": 60
-              },
-              {
-                "id": "bridge",
-                "label": "Bridge",
-                "score": 51
+                "score": 100
               },
               {
                 "id": "chaos",
                 "label": "Chaos",
                 "score": 44.8
+              },
+              {
+                "id": "bridge",
+                "label": "Bridge",
+                "score": 39.8
               }
             ]
           }
@@ -20562,9 +21453,9 @@
           "fullGameTraffic": "Tigers",
           "first5": "Tigers",
           "late": "Tigers",
-          "bridge": "Guardians",
-          "distinctPhaseTeams": 2,
-          "pickPhaseMisses": 1
+          "bridge": "Tigers",
+          "distinctPhaseTeams": 1,
+          "pickPhaseMisses": 0
         },
         "metrics": {
           "maxMistakeChaos": null,
@@ -20582,39 +21473,39 @@
           "81°F | Wind 9 mph L-R | 0% precip | weather helps carry"
         ],
         "laneMap": {
-          "side": "Secondary to the named lane.",
-          "first5": "Primary lane.",
+          "side": "Allowed after early traffic confirms the pressure read.",
+          "first5": "Only primary if the line is cheaper than full-game ML.",
           "total": "Needs line-specific EV.",
-          "firstInning": "Advisory only.",
+          "firstInning": "YRFI only if both top orders and starter leakage agree.",
           "live": "Use price discipline."
         },
         "inningMap": [
           {
             "innings": "1-2",
-            "expectation": "Tigers can look right early even if full-game ML is fragile.",
-            "watch": "Entry belongs to F5 or live lead, not blind FG."
+            "expectation": "Tigers needs the first traffic pocket.",
+            "watch": "No early baserunners means the edge decays quickly."
           },
           {
             "innings": "3-5",
-            "expectation": "This is the main scoring window for the pick.",
-            "watch": "If the pick trails after five, the original read is mostly gone."
+            "expectation": "First-five side is the cleanest expression.",
+            "watch": "Do not wait for late rescue if the starter edge is gone."
           },
           {
             "innings": "6-7",
-            "expectation": "Guardians can re-enter through the bridge.",
-            "watch": "Expect hedge or live reversal pressure here."
+            "expectation": "Only keep full-game exposure if the bridge is not leaking.",
+            "watch": "A bullpen mismatch turns this into a hedge spot."
           },
           {
             "innings": "8-9",
-            "expectation": "Late innings are not aligned with the pregame side.",
-            "watch": "Do not confuse early control with full-game safety."
+            "expectation": "Closeout depends on lead size more than raw team rating.",
+            "watch": "One-run late leads are not a free pass."
           }
         ],
         "marketImplications": {
           "side": "Tigers is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 82.7% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 82.2% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
@@ -20656,12 +21547,12 @@
       "first5Moneyline": {
         "pickSide": "away",
         "pickTeam": "Tigers",
-        "awayProjectedRuns": 2.9,
-        "homeProjectedRuns": 2.3,
-        "awayLeadProbability": 51.4,
-        "homeLeadProbability": 31.2,
-        "pushProbability": 17.4,
-        "leadProbability": 51.4,
+        "awayProjectedRuns": 2.7,
+        "homeProjectedRuns": 2.2,
+        "awayLeadProbability": 49.6,
+        "homeLeadProbability": 32.2,
+        "pushProbability": 18.1,
+        "leadProbability": 49.6,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -20683,12 +21574,12 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 64,
-        "probability": 42.5,
-        "expectedValue": 0.6,
+        "probability": 42.2,
+        "expectedValue": 0.5,
         "statValueLabel": "0.55 exp HR",
         "sample": {
-          "seasonGames": 62,
-          "seasonPlateAppearances": 258,
+          "seasonGames": 63,
+          "seasonPlateAppearances": 259,
           "recentGames": 12,
           "recentPlateAppearances": 54,
           "statcastGames": 5,
@@ -20697,7 +21588,7 @@
         },
         "repeatability": {
           "careerPa": 773,
-          "seasonPa": 258,
+          "seasonPa": 259,
           "powerIndex": 58.19,
           "contactRisk": 49.25,
           "roleStability": 96,
@@ -20710,12 +21601,12 @@
             "confidenceScore": 84,
             "processScore": 21,
             "careerWeight": 0.1,
-            "identityDelta": 10.8,
+            "identityDelta": 10.7,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 258,
+            "seasonPa": 259,
             "careerPa": 773
           },
           "canCarryTinySample": false,
@@ -20743,7 +21634,7 @@
         "matchupNote": "+10.00 vs Tanner Bibee",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".254 AVG | .858 OPS | 58 H | 16 HR | 12g: .360 AVG | 1.087 OPS | 18 H | 4 HR | vs RHP: .285 AVG | .924 OPS | 12 HR | career 773 PA | .730 OPS | 25 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.3 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".253 AVG | .855 OPS | 58 H | 16 HR | 12g: .360 AVG | 1.087 OPS | 18 H | 4 HR | vs RHP: .285 AVG | .924 OPS | 12 HR | career 773 PA | .730 OPS | 25 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.3 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "tigers-guardians:693307:rbi",
@@ -20758,12 +21649,12 @@
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
         "confidence": 68,
-        "probability": 92.5,
-        "expectedValue": 2.6,
-        "statValueLabel": "2.59 exp RBI",
+        "probability": 91.2,
+        "expectedValue": 2.4,
+        "statValueLabel": "2.43 exp RBI",
         "sample": {
-          "seasonGames": 62,
-          "seasonPlateAppearances": 258,
+          "seasonGames": 63,
+          "seasonPlateAppearances": 259,
           "recentGames": 12,
           "recentPlateAppearances": 54,
           "statcastGames": 5,
@@ -20772,7 +21663,7 @@
         },
         "repeatability": {
           "careerPa": 773,
-          "seasonPa": 258,
+          "seasonPa": 259,
           "powerIndex": 58.19,
           "contactRisk": 49.25,
           "roleStability": 96,
@@ -20785,12 +21676,12 @@
             "confidenceScore": 84,
             "processScore": 21,
             "careerWeight": 0.1,
-            "identityDelta": 10.8,
+            "identityDelta": 10.7,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 258,
+            "seasonPa": 259,
             "careerPa": 773
           },
           "canCarryTinySample": false,
@@ -20819,7 +21710,7 @@
         "matchupNote": "+10.00 vs Tanner Bibee",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".254 AVG | .858 OPS | 58 H | 16 HR | 12g: .360 AVG | 1.087 OPS | 18 H | 4 HR | vs RHP: .285 AVG | .924 OPS | 12 HR | career 773 PA | .730 OPS | 25 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.3 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".253 AVG | .855 OPS | 58 H | 16 HR | 12g: .360 AVG | 1.087 OPS | 18 H | 4 HR | vs RHP: .285 AVG | .924 OPS | 12 HR | career 773 PA | .730 OPS | 25 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.3 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "tigers-guardians:650402:runs",
@@ -20834,12 +21725,12 @@
         "propLabel": "Runs",
         "marketLabel": "Over 0.5 runs",
         "confidence": 72,
-        "probability": 87.3,
-        "expectedValue": 2.1,
-        "statValueLabel": "2.06 exp runs",
+        "probability": 85.5,
+        "expectedValue": 1.9,
+        "statValueLabel": "1.93 exp runs",
         "sample": {
-          "seasonGames": 40,
-          "seasonPlateAppearances": 180,
+          "seasonGames": 41,
+          "seasonPlateAppearances": 181,
           "recentGames": 12,
           "recentPlateAppearances": 52,
           "statcastGames": 3,
@@ -20848,7 +21739,7 @@
         },
         "repeatability": {
           "careerPa": 4445,
-          "seasonPa": 180,
+          "seasonPa": 181,
           "powerIndex": 55.46,
           "contactRisk": 38.27,
           "roleStability": 100,
@@ -20858,15 +21749,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 55.4,
+            "confidenceScore": 55.2,
             "processScore": 8,
             "careerWeight": 0.1,
-            "identityDelta": -6,
+            "identityDelta": -6.1,
             "tbDelta": -0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "baseline approach",
-            "seasonPa": 180,
+            "seasonPa": 181,
             "careerPa": 4445
           },
           "canCarryTinySample": false,
@@ -20894,7 +21785,7 @@
         "matchupNote": "+10.00 vs Tanner Bibee",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".282 AVG | .790 OPS | 42 H | 4 HR | 12g: .333 AVG | .926 OPS | 16 H | 2 HR | vs RHP: .328 AVG | .837 OPS | 3 HR | career 4445 PA | .769 OPS | 156 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +2.9 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".282 AVG | .794 OPS | 42 H | 4 HR | 12g: .333 AVG | .926 OPS | 16 H | 2 HR | vs RHP: .328 AVG | .837 OPS | 3 HR | career 4445 PA | .769 OPS | 156 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +2.9 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "tigers-guardians:693307:hitRunRbi",
@@ -20909,12 +21800,12 @@
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 96.5,
-        "expectedValue": 5.2,
-        "statValueLabel": "1.83 H · 1.23 R · 2.12 RBI · 5.18 total",
+        "probability": 95.6,
+        "expectedValue": 4.9,
+        "statValueLabel": "1.75 H · 1.15 R · 1.99 RBI · 4.89 total",
         "sample": {
-          "seasonGames": 62,
-          "seasonPlateAppearances": 258,
+          "seasonGames": 63,
+          "seasonPlateAppearances": 259,
           "recentGames": 12,
           "recentPlateAppearances": 54,
           "statcastGames": 5,
@@ -20923,7 +21814,7 @@
         },
         "repeatability": {
           "careerPa": 773,
-          "seasonPa": 258,
+          "seasonPa": 259,
           "powerIndex": 58.19,
           "contactRisk": 49.25,
           "roleStability": 96,
@@ -20936,12 +21827,12 @@
             "confidenceScore": 84,
             "processScore": 21,
             "careerWeight": 0.1,
-            "identityDelta": 10.8,
+            "identityDelta": 10.7,
             "tbDelta": 0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 258,
+            "seasonPa": 259,
             "careerPa": 773
           },
           "canCarryTinySample": false,
@@ -20970,7 +21861,7 @@
         "matchupNote": "+10.00 vs Tanner Bibee",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".254 AVG | .858 OPS | 58 H | 16 HR | 12g: .360 AVG | 1.087 OPS | 18 H | 4 HR | vs RHP: .285 AVG | .924 OPS | 12 HR | career 773 PA | .730 OPS | 25 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.3 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".253 AVG | .855 OPS | 58 H | 16 HR | 12g: .360 AVG | 1.087 OPS | 18 H | 4 HR | vs RHP: .285 AVG | .924 OPS | 12 HR | career 773 PA | .730 OPS | 25 HR | baseline career profile | power 58 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.3 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "tigers-guardians:681481:totalBases",
@@ -20989,8 +21880,8 @@
         "expectedValue": 2.2,
         "statValueLabel": "2.15 exp TB",
         "sample": {
-          "seasonGames": 46,
-          "seasonPlateAppearances": 150,
+          "seasonGames": 47,
+          "seasonPlateAppearances": 151,
           "recentGames": 12,
           "recentPlateAppearances": 42,
           "statcastGames": 4,
@@ -20999,7 +21890,7 @@
         },
         "repeatability": {
           "careerPa": 1452,
-          "seasonPa": 150,
+          "seasonPa": 151,
           "powerIndex": 86.09,
           "contactRisk": 51.84,
           "roleStability": 100,
@@ -21009,15 +21900,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 60.1,
+            "confidenceScore": 59.8,
             "processScore": 7,
             "careerWeight": 0.1,
-            "identityDelta": -0.3,
+            "identityDelta": -0.6,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
-            "approachLabel": "process improving",
-            "seasonPa": 150,
+            "approachLabel": "baseline approach",
+            "seasonPa": 151,
             "careerPa": 1452
           },
           "canCarryTinySample": false,
@@ -21038,14 +21929,14 @@
           "clean-conversion-lane",
           "power-lane",
           "career-power-backed",
-          "process-improving",
+          "baseline-approach",
           "soft-heat",
           "statcast-power-up"
         ],
         "matchupNote": "+10.00 vs Tanner Bibee",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".237 AVG | .810 OPS | 31 H | 9 HR | 12g: .222 AVG | .889 OPS | 8 H | 4 HR | vs RHP: .248 AVG | .848 OPS | 9 HR | career 1452 PA | .822 OPS | 76 HR | repeatable career power | power 86 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.4 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".235 AVG | .804 OPS | 31 H | 9 HR | 12g: .222 AVG | .889 OPS | 8 H | 4 HR | vs RHP: .248 AVG | .848 OPS | 9 HR | career 1452 PA | .822 OPS | 76 HR | repeatable career power | power 86 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +5.4 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "tigers-guardians:650402:hits",
@@ -21059,13 +21950,13 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 73,
-        "probability": 62.9,
-        "expectedValue": 2.1,
-        "statValueLabel": "2.13 exp hits",
+        "confidence": 71,
+        "probability": 60.7,
+        "expectedValue": 2,
+        "statValueLabel": "2.05 exp hits",
         "sample": {
-          "seasonGames": 40,
-          "seasonPlateAppearances": 180,
+          "seasonGames": 41,
+          "seasonPlateAppearances": 181,
           "recentGames": 12,
           "recentPlateAppearances": 52,
           "statcastGames": 3,
@@ -21074,7 +21965,7 @@
         },
         "repeatability": {
           "careerPa": 4445,
-          "seasonPa": 180,
+          "seasonPa": 181,
           "powerIndex": 55.46,
           "contactRisk": 38.27,
           "roleStability": 100,
@@ -21084,15 +21975,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 55.4,
+            "confidenceScore": 55.2,
             "processScore": 8,
             "careerWeight": 0.1,
-            "identityDelta": -6,
+            "identityDelta": -6.1,
             "tbDelta": -0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "baseline approach",
-            "seasonPa": 180,
+            "seasonPa": 181,
             "careerPa": 4445
           },
           "canCarryTinySample": false,
@@ -21119,7 +22010,7 @@
         "matchupNote": "+10.00 vs Tanner Bibee",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".282 AVG | .790 OPS | 42 H | 4 HR | 12g: .333 AVG | .926 OPS | 16 H | 2 HR | vs RHP: .328 AVG | .837 OPS | 3 HR | career 4445 PA | .769 OPS | 156 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +2.9 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".282 AVG | .794 OPS | 42 H | 4 HR | 12g: .333 AVG | .926 OPS | 16 H | 2 HR | vs RHP: .328 AVG | .837 OPS | 3 HR | career 4445 PA | .769 OPS | 156 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +2.9 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "tigers-guardians:805808:walks",
@@ -21134,12 +22025,12 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 71,
-        "probability": 61.2,
+        "probability": 60.5,
         "expectedValue": 0.9,
-        "statValueLabel": "0.95 exp walks",
+        "statValueLabel": "0.93 exp walks",
         "sample": {
-          "seasonGames": 66,
-          "seasonPlateAppearances": 291,
+          "seasonGames": 67,
+          "seasonPlateAppearances": 292,
           "recentGames": 12,
           "recentPlateAppearances": 54,
           "statcastGames": 5,
@@ -21148,7 +22039,7 @@
         },
         "repeatability": {
           "careerPa": 255,
-          "seasonPa": 291,
+          "seasonPa": 292,
           "powerIndex": 36.26,
           "contactRisk": 24.94,
           "roleStability": 56.88,
@@ -21158,15 +22049,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 61.3,
+            "confidenceScore": 61.2,
             "processScore": 11,
             "careerWeight": 0.1,
-            "identityDelta": 0.4,
+            "identityDelta": 0.3,
             "tbDelta": 0,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "process improving",
-            "seasonPa": 291,
+            "seasonPa": 292,
             "careerPa": 255
           },
           "canCarryTinySample": false,
@@ -21193,7 +22084,7 @@
         "matchupNote": "+10.00 vs Tanner Bibee",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".283 AVG | .809 OPS | 70 H | 4 HR | 12g: .238 AVG | .884 OPS | 10 H | 2 HR | vs RHP: .291 AVG | .845 OPS | 3 HR | career 255 PA | .805 OPS | 3 HR | contact-stable profile | power 36 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +6.0 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".282 AVG | .806 OPS | 70 H | 4 HR | 12g: .238 AVG | .884 OPS | 10 H | 2 HR | vs RHP: .291 AVG | .845 OPS | 3 HR | career 255 PA | .805 OPS | 3 HR | contact-stable profile | power 36 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +6.0 | +10.0 matchup grade in a neutral lane"
       },
       {
         "id": "tigers-guardians:650402:singles",
@@ -21208,12 +22099,12 @@
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
         "confidence": 82,
-        "probability": 83.7,
-        "expectedValue": 1.8,
-        "statValueLabel": "1.82 exp singles",
+        "probability": 82.5,
+        "expectedValue": 1.7,
+        "statValueLabel": "1.75 exp singles",
         "sample": {
-          "seasonGames": 40,
-          "seasonPlateAppearances": 180,
+          "seasonGames": 41,
+          "seasonPlateAppearances": 181,
           "recentGames": 12,
           "recentPlateAppearances": 52,
           "statcastGames": 3,
@@ -21222,7 +22113,7 @@
         },
         "repeatability": {
           "careerPa": 4445,
-          "seasonPa": 180,
+          "seasonPa": 181,
           "powerIndex": 55.46,
           "contactRisk": 38.27,
           "roleStability": 100,
@@ -21232,15 +22123,15 @@
           "careerVolatile": false,
           "roleStable": true,
           "approachState": {
-            "confidenceScore": 55.4,
+            "confidenceScore": 55.2,
             "processScore": 8,
             "careerWeight": 0.1,
-            "identityDelta": -6,
+            "identityDelta": -6.1,
             "tbDelta": -0.1,
             "hrDelta": 0,
             "rolePressure": "role established",
             "approachLabel": "baseline approach",
-            "seasonPa": 180,
+            "seasonPa": 181,
             "careerPa": 4445
           },
           "canCarryTinySample": false,
@@ -21268,7 +22159,7 @@
         "matchupNote": "+10.00 vs Tanner Bibee",
         "teamScriptLabel": "",
         "lineupStatus": "posted",
-        "playerSummary": ".282 AVG | .790 OPS | 42 H | 4 HR | 12g: .333 AVG | .926 OPS | 16 H | 2 HR | vs RHP: .328 AVG | .837 OPS | 3 HR | career 4445 PA | .769 OPS | 156 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +2.9 | +10.0 matchup grade in a neutral lane"
+        "playerSummary": ".282 AVG | .794 OPS | 42 H | 4 HR | 12g: .333 AVG | .926 OPS | 16 H | 2 HR | vs RHP: .328 AVG | .837 OPS | 3 HR | career 4445 PA | .769 OPS | 156 HR | contact-stable profile | power 55 | 2026 sample ok | arsenal Cutter 26% / 4-Seam Fastball 24% / Changeup 19% | fit +2.9 | +10.0 matchup grade in a neutral lane"
       }
     ],
     "byType": {
@@ -21279,7 +22170,7 @@
       "runs": [],
       "hitRunRbi": []
     },
-    "candidateCount": 73,
+    "candidateCount": 72,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

@@ -357,6 +357,123 @@ export function MlbDetail(props: MlbDetailProps) {
   }
   const espnSplitValue = (row: AnyRecord, label: string) =>
     row?.stats?.find((stat: AnyRecord) => stat.label === label || stat.name === label)?.value ?? ''
+  const formatSlashStat = (value: unknown) => {
+    const numeric = Number(value)
+    if (!Number.isFinite(numeric)) return String(value || 'n/a')
+    return numeric.toFixed(3).replace(/^(-?)0/, '$1')
+  }
+  const formatSignedSlashStat = (value: unknown) => {
+    const numeric = Number(value)
+    if (!Number.isFinite(numeric)) return ''
+    const absolute = Math.abs(numeric).toFixed(3).replace(/^0/, '.')
+    return `${numeric >= 0 ? '+' : '-'}${absolute}`
+  }
+  const pitcherRightLeftRows = (starter: AnyRecord) => {
+    const category = starter?.espnSplits?.categories?.find((entry: AnyRecord) => entry.key === 'byRightLeft')
+    if (!category || !Array.isArray(category.rows)) return []
+    return category.rows.map((row: AnyRecord) => ({
+      label: row.label,
+      atBats: espnSplitValue(row, 'AB'),
+      avg: espnSplitValue(row, 'AVG') || espnSplitValue(row, 'OBA'),
+      obp: espnSplitValue(row, 'OBP'),
+      slg: espnSplitValue(row, 'SLG'),
+      ops: espnSplitValue(row, 'OPS'),
+      hr: espnSplitValue(row, 'HR'),
+      bb: espnSplitValue(row, 'BB'),
+      so: espnSplitValue(row, 'SO') || espnSplitValue(row, 'K')
+    }))
+  }
+  const pitcherRightLeftStory = (starter: AnyRecord) => {
+    const rows = pitcherRightLeftRows(starter)
+    if (!rows.length) return ''
+    const pitcherName = starter?.headline?.replace(/\s*\([LR?]HP\)$/, '') || starter?.fullName || 'Starter'
+    return `${pitcherName}: ${rows
+      .map((row) =>
+        `${row.label.replace(/^vs\.\s*/i, 'vs ')} AVG ${row.avg || 'n/a'}${row.ops ? ` / OPS ${row.ops}` : ''}${row.hr ? ` / HR ${row.hr}` : ''}`
+      )
+      .join(' | ')}`
+  }
+  const renderPitcherRightLeftSummary = (starter: AnyRecord, teamName: string) => {
+    const rows = pitcherRightLeftRows(starter)
+    if (!rows.length) return null
+    return (
+      <div className="pitcher-lr-summary">
+        <div className="pitcher-lr-summary-head">
+          <strong>ESPN pitcher L/R split</strong>
+          {starter.espnSplits?.sourceUrl ? (
+            <a href={starter.espnSplits.sourceUrl} target="_blank" rel="noreferrer">
+              source
+            </a>
+          ) : null}
+        </div>
+        <div className="pitcher-lr-row-grid">
+          {rows.map((row) => (
+            <span key={`${teamName}-pitcher-lr-${row.label}`} className="pitcher-lr-row">
+              <small>{row.label}</small>
+              <strong>{row.avg || 'n/a'} AVG{row.ops ? ` / ${row.ops} OPS` : ''}</strong>
+              <em>{[row.atBats ? `${row.atBats} AB` : null, row.hr ? `${row.hr} HR` : null, row.so ? `${row.so} K` : null, row.bb ? `${row.bb} BB` : null].filter(Boolean).join(' | ')}</em>
+            </span>
+          ))}
+        </div>
+      </div>
+    )
+  }
+  const hitterSplitForHand = (player: AnyRecord, pitcherHand: unknown) => {
+    const hand = String(pitcherHand || player?.espnHitterSplit?.pitcherHand || '').toUpperCase().slice(0, 1)
+    const splits = player?.espnHitterSplits || {}
+    if (hand === 'L') return splits.vsLeft || player?.espnHitterSplit || null
+    if (hand === 'R') return splits.vsRight || player?.espnHitterSplit || null
+    return player?.espnHitterSplit || null
+  }
+  const renderHitterSplitLine = (split: AnyRecord | null | undefined) => {
+    if (!split) return 'n/a'
+    return [
+      `AVG ${formatSlashStat(split.avg)}`,
+      `OBP ${formatSlashStat(split.obp)}`,
+      `SLG ${formatSlashStat(split.slg)}`,
+      `OPS ${formatSlashStat(split.ops)}`
+    ].join(' / ')
+  }
+  const renderBatterSplitModule = (player: AnyRecord, opposingStarterHand: unknown) => {
+    const splits = player?.espnHitterSplits || {}
+    const currentSplit = hitterSplitForHand(player, opposingStarterHand)
+    const leftSplit = splits.vsLeft || null
+    const rightSplit = splits.vsRight || null
+    if (!currentSplit && !leftSplit && !rightSplit) return null
+    const pitcherHand = String(opposingStarterHand || currentSplit?.pitcherHand || '').toUpperCase().slice(0, 1)
+    const splitRows = [
+      { key: 'L', label: 'vs LHP', split: leftSplit },
+      { key: 'R', label: 'vs RHP', split: rightSplit }
+    ].filter((entry) => entry.split)
+    return (
+      <div className="batter-split-strip">
+        {currentSplit ? (
+          <div className="batter-split-pill primary">
+            <small>{currentSplit.label || (pitcherHand ? `vs ${pitcherHand}HP` : 'ESPN split')}</small>
+            <strong>{renderHitterSplitLine(currentSplit)}</strong>
+            <span>
+              {[
+                currentSplit.atBats != null ? `${currentSplit.atBats} AB` : null,
+                currentSplit.homeRuns != null ? `${currentSplit.homeRuns} HR` : null,
+                currentSplit.strikeouts != null ? `${currentSplit.strikeouts} K` : null,
+                currentSplit.opsDeltaVsSeason != null ? `OPS delta ${formatSignedSlashStat(currentSplit.opsDeltaVsSeason)}` : null
+              ].filter(Boolean).join(' | ')}
+            </span>
+          </div>
+        ) : null}
+        {splitRows.map((entry) => (
+          <span
+            key={`${player.playerId || player.name}-split-${entry.key}`}
+            className={`batter-split-pill${entry.key === pitcherHand ? ' active' : ''}`}
+          >
+            <small>{entry.label}</small>
+            <strong>AVG {formatSlashStat(entry.split.avg)} / OPS {formatSlashStat(entry.split.ops)}</strong>
+            <em>{[entry.split.atBats != null ? `${entry.split.atBats} AB` : null, entry.split.homeRuns != null ? `${entry.split.homeRuns} HR` : null].filter(Boolean).join(' | ')}</em>
+          </span>
+        ))}
+      </div>
+    )
+  }
   const renderEspnSplitTable = (starter: AnyRecord, teamName: string) => {
     const splitBlock = starter.espnSplits
     if (!splitBlock) return null
@@ -470,7 +587,9 @@ export function MlbDetail(props: MlbDetailProps) {
   const totalAddendumChips = (lean: AnyRecord | null | undefined) => {
     const metrics = lean?.chaosGate?.metrics || lean?.tailOverlay?.metrics || {}
     return [
-      Number(metrics.hrForce) >= 1.4 ? `HRF ${formatNumber(metrics.hrForce, 1)}` : null,
+      Number(metrics.hrForce) >= 1.4 ? `ENV HRF ${formatNumber(metrics.hrForce, 1)}` : null,
+      Number(metrics.ficHrForce) >= 1.4 ? `FIC HRF ${formatNumber(metrics.ficHrForce, 1)}` : null,
+      metrics.materialHrForce ? 'Material HRF' : null,
       Number.isFinite(Number(metrics.envRunDelta)) && Math.abs(Number(metrics.envRunDelta)) >= 0.2
         ? `ENV ${formatSignedNumber(metrics.envRunDelta, 1)}R`
         : null,
@@ -479,8 +598,159 @@ export function MlbDetail(props: MlbDetailProps) {
         : null,
       lean?.chaosGate?.vetoKind === 'addendum' ? 'ENV/RP2 veto' : null,
       lean?.chaosGate?.warning && lean?.chaosGate?.vetoKind !== 'addendum' ? 'Addendum warning' : null
-    ].filter(Boolean).slice(0, 4)
+    ].filter(Boolean).slice(0, 5)
   }
+  const adjustmentChecklist = projection?.adjustmentChecklist ?? null
+  const compactFlags = (items: Array<string | null | undefined>, limit = 3) =>
+    items
+      .map((item) => String(item || '').trim())
+      .filter(Boolean)
+      .slice(0, limit)
+  const adjustmentCards = adjustmentChecklist
+    ? [
+        adjustmentChecklist.environment
+          ? {
+              id: 'environment',
+              title: 'Environment carry',
+              value: adjustmentChecklist.environment.materialHrForce
+                ? `HRF ${formatNumber(adjustmentChecklist.environment.hrForce, 1)} material`
+                : adjustmentChecklist.environment.hrForce != null
+                  ? `HRF ${formatNumber(adjustmentChecklist.environment.hrForce, 1)}`
+                  : 'Neutral',
+              meta: [
+                `x${formatNumber(adjustmentChecklist.environment.carryMultiplier, 2)} carry`,
+                `${formatSignedNumber(adjustmentChecklist.environment.hitDelta, 1)} H`,
+                `${formatSignedNumber(adjustmentChecklist.environment.runDelta, 1)} R`
+              ].join(' | '),
+              flags: compactFlags([
+                ...(adjustmentChecklist.environment.flags ?? []),
+                ...(adjustmentChecklist.environment.reasons ?? [])
+              ], 4)
+            }
+          : null,
+        Array.isArray(adjustmentChecklist.relief) && adjustmentChecklist.relief.length
+          ? {
+              id: 'relief',
+              title: 'Available bullpen',
+              value: adjustmentChecklist.relief
+                .map((row: AnyRecord) =>
+                  `${row.teamName} ${formatNumber(row.projectedReliefRunsAllowed, 1)} -> ${formatNumber(row.adjustedProjectedReliefRunsAllowed, 1)} R`
+                )
+                .join(' / '),
+              meta: adjustmentChecklist.relief
+                .map((row: AnyRecord) =>
+                  `${row.teamName} avail ${row.leverageAvailabilityScore != null ? formatNumber(row.leverageAvailabilityScore, 0) : 'n/a'}`
+                )
+                .join(' | '),
+              flags: compactFlags(adjustmentChecklist.relief.flatMap((row: AnyRecord) => row.flags ?? []), 4)
+            }
+          : null,
+        Array.isArray(adjustmentChecklist.starters) && adjustmentChecklist.starters.length
+          ? {
+              id: 'starters',
+              title: 'Pitcher checklist',
+              value: adjustmentChecklist.starters
+                .map((row: AnyRecord) => `${row.pitcherName || row.teamName}: ${row.gamesStarted ?? 'n/a'} GS`)
+                .join(' / '),
+              meta: adjustmentChecklist.starters
+                .map((row: AnyRecord) => `${row.teamName} ${row.profileType || 'starter'}`)
+                .join(' | '),
+              flags: compactFlags(adjustmentChecklist.starters.flatMap((row: AnyRecord) => row.flags ?? []), 5)
+            }
+          : null,
+        Array.isArray(adjustmentChecklist.handednessSplits) && adjustmentChecklist.handednessSplits.length
+          ? {
+              id: 'handedness-splits',
+              title: 'Handedness splits',
+              value: adjustmentChecklist.handednessSplits
+                .map((row: AnyRecord) =>
+                  `${row.teamName} ${row.handednessSplitIndex != null ? formatNumber(row.handednessSplitIndex, 0) : 'n/a'} vs ${row.opposingStarterHand || 'SP'}`
+                )
+                .join(' / '),
+              meta: adjustmentChecklist.handednessSplits
+                .map((row: AnyRecord) =>
+                  `${row.teamName} ${formatSignedNumber(row.hitDelta, 1)} H / ${row.strongSplitCount ?? 0} strong, ${row.weakSplitCount ?? 0} weak`
+                )
+                .join(' | '),
+              flags: compactFlags(adjustmentChecklist.handednessSplits.flatMap((row: AnyRecord) => row.flags ?? []), 6)
+            }
+          : null,
+        Array.isArray(adjustmentChecklist.starterMatchupKernels) && adjustmentChecklist.starterMatchupKernels.length
+          ? {
+              id: 'starter-matchup-kernel',
+              title: 'Starter matchup kernel',
+              value: adjustmentChecklist.starterMatchupKernels
+                .map((row: AnyRecord) =>
+                  `${row.teamName} ${row.starterMatchupKernelIndex != null ? formatNumber(row.starterMatchupKernelIndex, 0) : 'n/a'} vs ${row.opposingStarter || 'SP'}`
+                )
+                .join(' / '),
+              meta: adjustmentChecklist.starterMatchupKernels
+                .map((row: AnyRecord) => {
+                  const topBat = Array.isArray(row.topHitters) && row.topHitters[0]?.name ? row.topHitters[0].name : 'no clear edge bat'
+                  const riskBat = Array.isArray(row.riskHitters) && row.riskHitters[0]?.name ? row.riskHitters[0].name : 'no clear risk bat'
+                  return `${row.teamName} ${row.favorableCount ?? 0} up, ${row.suppressedCount ?? 0} down, ESPN ${row.espnSplitEdgeCount ?? 0}/${row.espnSplitRiskCount ?? 0} | ${topBat} / ${riskBat}`
+                })
+                .join(' | '),
+              flags: compactFlags(adjustmentChecklist.starterMatchupKernels.flatMap((row: AnyRecord) => row.flags ?? []), 6)
+            }
+          : null,
+        Array.isArray(adjustmentChecklist.batters) && adjustmentChecklist.batters.length
+          ? {
+              id: 'batters',
+              title: 'Batter/BvP carry',
+              value: adjustmentChecklist.batters
+                .map((row: AnyRecord) => `${row.teamName} HRF ${row.maxHrForce != null ? formatNumber(row.maxHrForce, 1) : 'n/a'}`)
+                .join(' / '),
+              meta: adjustmentChecklist.batters
+                .map((row: AnyRecord) => `${row.teamName} ${formatSignedNumber(row.hitDelta, 1)} H / ${formatSignedNumber(row.runDelta, 1)} R`)
+                .join(' | '),
+              flags: compactFlags(adjustmentChecklist.batters.flatMap((row: AnyRecord) => row.flags ?? []), 4)
+            }
+          : null
+      ].filter(Boolean)
+    : []
+  const handednessStoryCards = adjustmentChecklist
+    ? [
+        Array.isArray(adjustmentChecklist.handednessSplits) && adjustmentChecklist.handednessSplits.length
+          ? {
+              label: 'RH/LH lineup fit',
+              tone: 'info',
+              body: adjustmentChecklist.handednessSplits
+                .map((row: AnyRecord) => {
+                  const ops = row.topSixSplitOpsAverage ?? row.splitOpsAverage
+                  const avg = row.topSixSplitAvgAverage ?? row.splitAvgAverage
+                  const flags = compactFlags(row.flags ?? [], 1)
+                  return `${row.teamName}: ${row.handednessSplitIndex != null ? formatNumber(row.handednessSplitIndex, 0) : 'n/a'}/100 vs ${row.opposingStarterHand || 'SP'}HP, AVG ${formatSlashStat(avg)}, OPS ${formatSlashStat(ops)}, ${row.strongSplitCount ?? 0} strong / ${row.weakSplitCount ?? 0} weak${flags.length ? ` (${flags[0]})` : ''}`
+                })
+                .join(' | ')
+            }
+          : null,
+        [pitcherRightLeftStory(awayStarter), pitcherRightLeftStory(homeStarter)].filter(Boolean).length
+          ? {
+              label: 'Starter L/R allowed',
+              tone: 'warning',
+              body: [pitcherRightLeftStory(awayStarter), pitcherRightLeftStory(homeStarter)].filter(Boolean).join(' | ')
+            }
+          : null,
+        Array.isArray(adjustmentChecklist.starterMatchupKernels) && adjustmentChecklist.starterMatchupKernels.length
+          ? {
+              label: 'Batter matchup kernel',
+              tone: 'accent',
+              body: adjustmentChecklist.starterMatchupKernels
+                .map((row: AnyRecord) => {
+                  const topHitters = Array.isArray(row.topHitters)
+                    ? row.topHitters.slice(0, 2).map((hitter: AnyRecord) => hitter.name).filter(Boolean).join(', ')
+                    : ''
+                  const riskHitters = Array.isArray(row.riskHitters)
+                    ? row.riskHitters.slice(0, 2).map((hitter: AnyRecord) => hitter.name).filter(Boolean).join(', ')
+                    : ''
+                  return `${row.teamName}: kernel ${row.starterMatchupKernelIndex != null ? formatNumber(row.starterMatchupKernelIndex, 0) : 'n/a'}/100 vs ${row.opposingStarter || 'SP'}, ${row.favorableCount ?? 0} favorable / ${row.suppressedCount ?? 0} suppressed, ESPN split edges ${row.espnSplitEdgeCount ?? 0}-${row.espnSplitRiskCount ?? 0}${topHitters ? `; bats up: ${topHitters}` : ''}${riskHitters ? `; risk: ${riskHitters}` : ''}`
+                })
+                .join(' | ')
+            }
+          : null
+      ].filter(Boolean)
+    : []
   const totalsCards = totals
     ? [
         {
@@ -686,7 +956,7 @@ export function MlbDetail(props: MlbDetailProps) {
       starterNotes.push(`${pickStarter?.fullName || `${pickTeam} starter`} has the cleaner season WHIP: ${fmt(pickWhip, 2)} vs ${fmt(oppWhip, 2)}`)
     }
     const starterParagraph = starterNotes.length
-      ? `The starter read is not one-note. ${starterNotes.join(', and ')}.`
+      ? `The starter read has a few moving parts. ${starterNotes.join(', and ')}.`
       : `The starter read is mixed enough that ${pickTeam} still need the lineup traffic and bridge shape to hold.`
 
     const counterweights = []
@@ -699,8 +969,18 @@ export function MlbDetail(props: MlbDetailProps) {
     if (Number.isFinite(oppBridge) && Number.isFinite(pickBridge) && oppBridge > pickBridge + 1) {
       counterweights.push(`bridge chain score favors ${oppTeam} ${fmt(oppBridge, 1)} vs ${fmt(pickBridge, 1)}`)
     }
+    const pickBridgeVsOppBullpenSplit =
+      Number.isFinite(pickBridge) &&
+      Number.isFinite(oppBridge) &&
+      Number.isFinite(oppBullpenScore) &&
+      Number.isFinite(pickBullpenScore) &&
+      pickBridge > oppBridge + 1 &&
+      oppBullpenScore > pickBullpenScore + 1
+    const bridgeVsBullpenNote = pickBridgeVsOppBullpenSplit
+      ? ` That is not a contradiction: bridge chain is today's likely available relief path, while season bullpen score is the broader full-pen quality read.`
+      : ''
     const counterweightParagraph = counterweights.length
-      ? `The counterweight: ${oppTeam} are better in some bullpen/context pockets. ${counterweights.join(', and ')}. That's why this is ${game.analysis?.tier || 'not a blank-check'} rather than a high-conviction play. In plain English: ${pickTeam} lean because of projected lineup traffic and ${pickMarketShape}, but ${oppTeam}'s counterweights are real reasons not to overstate it.`
+      ? `The counterweight: ${oppTeam} are better in some bullpen/context pockets. ${counterweights.join(', and ')}.${bridgeVsBullpenNote} That's why this is ${game.analysis?.tier || 'not a blank-check'} rather than a high-conviction play. In plain English: ${pickTeam} lean because of projected lineup traffic and ${pickMarketShape}, but ${oppTeam}'s counterweights are real reasons not to overstate it.`
       : `The counterweight: the edge is still only ${game.analysis?.modelEdgeLabel || 'modest'} with a ${game.analysis?.tier || 'measured'} tag. In plain English: ${pickTeam} lean because of projected lineup traffic and ${pickMarketShape}, but the price and game-shape noise are reasons not to overstate it.`
 
     return {
@@ -852,6 +1132,12 @@ export function MlbDetail(props: MlbDetailProps) {
               <p>{card.body}</p>
             </article>
           ))}
+          {handednessStoryCards.map((card: AnyRecord) => (
+            <article key={`${game.id}-handedness-story-${card.label}`} className={`game-story-card ${card.tone}`}>
+              <small>{card.label}</small>
+              <p>{card.body}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -874,6 +1160,31 @@ export function MlbDetail(props: MlbDetailProps) {
           <div className="lean-writeup-body">
             {leanWriteup.paragraphs.map((paragraph, index) => (
               <p key={`${game.id}-lean-writeup-paragraph-${index}`}>{paragraph}</p>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {adjustmentCards.length ? (
+        <section className="detail-panel projection-adjustment-panel">
+          <div className="detail-panel-header">
+            <p className="eyebrow">Projection adjustments</p>
+            <span>{adjustmentChecklist?.summary?.length ? adjustmentChecklist.summary.join(' | ') : 'Model checklist'}</span>
+          </div>
+          <div className="projection-adjustment-grid">
+            {adjustmentCards.map((card: AnyRecord) => (
+              <article key={`${game.id}-adjustment-${card.id}`} className="projection-adjustment-card">
+                <small>{card.title}</small>
+                <strong>{card.value}</strong>
+                <span>{card.meta}</span>
+                {card.flags?.length ? (
+                  <ul>
+                    {card.flags.map((flag: string, index: number) => (
+                      <li key={`${game.id}-adjustment-${card.id}-${index}`}>{flag}</li>
+                    ))}
+                  </ul>
+                ) : null}
+              </article>
             ))}
           </div>
         </section>
@@ -1042,6 +1353,7 @@ export function MlbDetail(props: MlbDetailProps) {
               `${awayStarter.headline.replace(/\s*\([LR?]HP\)$/, '')} has not started against ${homeTeam} this season.`
             )}
             {renderStatmuseMatchupPanel(awayStarter, awayTeam)}
+            {renderPitcherRightLeftSummary(awayStarter, awayTeam)}
             {renderEspnSplitTable(awayStarter, awayTeam)}
           </div>
           {awayStarter.recent ? <small>{awayStarter.recent}</small> : null}
@@ -1156,6 +1468,7 @@ export function MlbDetail(props: MlbDetailProps) {
               `${homeStarter.headline.replace(/\s*\([LR?]HP\)$/, '')} has not started against ${awayTeam} this season.`
             )}
             {renderStatmuseMatchupPanel(homeStarter, homeTeam)}
+            {renderPitcherRightLeftSummary(homeStarter, homeTeam)}
             {renderEspnSplitTable(homeStarter, homeTeam)}
           </div>
           {homeStarter.recent ? <small>{homeStarter.recent}</small> : null}
@@ -1563,6 +1876,15 @@ export function MlbDetail(props: MlbDetailProps) {
                       <strong>
                         Vs {lineupTeam.opposingStarter?.name} ({lineupTeam.opposingStarter?.hand}HP, {lineupTeam.opposingStarter?.type?.toLowerCase() || 'unknown lane'})
                       </strong>
+                      {lineupTeam.starterRoleContext?.note ? (
+                        <small>{lineupTeam.starterRoleContext.note}</small>
+                      ) : null}
+                      {lineupTeam.openerContext?.name ? (
+                        <small>
+                          MLB opener: {lineupTeam.openerContext.name}
+                          {lineupTeam.openerContext.hand ? ` (${lineupTeam.openerContext.hand}HP)` : ''}; bulk/projection arm above.
+                        </small>
+                      ) : null}
                       <small>Starter mix: {lineupTeam.opposingStarter?.pitchMixSummary || 'Pitch mix not stored'}</small>
                       {lineupTeam.summary?.bullpenPitchTypeSummary?.firstReliever?.pitchMixSummary ? (
                         <small>
@@ -1634,6 +1956,7 @@ export function MlbDetail(props: MlbDetailProps) {
                             Pitch fit {formatSignedNumber(player.metrics?.pitchTypeGrade, 1)}
                           </span>
                         </div>
+                        {renderBatterSplitModule(player, lineupTeam.opposingStarter?.hand)}
                         <span>{player.matchupNote} | {player.pitchType?.summary || player.summary}</span>
                         {buildLineupPlayerInspectionLine(player, lineupTeam.opposingStarter?.hand) ? (
                           <small className="react-lineup-player-inspection">

@@ -15,40 +15,40 @@
     {
       "side": "Away",
       "name": "Cubs",
-      "detail": "Javier Assad (RHP) | 3-1 | 4.73 ERA | 19 SO | 1.08 WHIP | 32.1 IP"
+      "detail": "Javier Assad (RHP) | 4-1 | 3.99 ERA | 24 SO | 1.02 WHIP | 38.1 IP"
     },
     {
       "side": "Home",
       "name": "Giants",
-      "detail": "Landen Roupp (RHP) | 5-6 | 4.00 ERA | 77 SO | 1.29 WHIP | 69.2 IP"
+      "detail": "Landen Roupp (RHP) | 5-7 | 4.24 ERA | 82 SO | 1.29 WHIP | 74.1 IP"
     }
   ],
   "summary": "Cubs @ Giants with Javier Assad against Landen Roupp.",
   "lean": "Lean on the modeled side, but respect the split between starter phase and late-game hold.",
   "factors": [
-    "Current board: Cubs +106 / Giants -124 | o8 -117 / u8.5 -115 | +1.5 -195 / +1.5 -210 | F5 no F5 ML / no F5 total.",
+    "Current board: Cubs -118 / Giants +106 | o7.5 -120 / u8 -112 | -1.5 +145 / +1.5 -162 | F5 no F5 ML / no F5 total.",
     "Javier Assad vs Landen Roupp."
   ],
   "swingFactor": "Swing factor: whether the starter edge survives the bridge innings.",
   "teamContext": {
     "away": {
       "divisionLeader": false,
-      "divisionRank": "4",
+      "divisionRank": "3",
       "gamesBack": "7.5",
       "losses": 34,
-      "runDifferential": 4,
-      "streakCode": "W1",
-      "winningPercentage": ".507",
-      "wins": 35
+      "runDifferential": 8,
+      "streakCode": "W2",
+      "winningPercentage": ".514",
+      "wins": 36
     },
     "home": {
       "divisionLeader": false,
       "divisionRank": "4",
       "gamesBack": "16.0",
-      "losses": 41,
-      "runDifferential": -51,
-      "streakCode": "W1",
-      "winningPercentage": ".406",
+      "losses": 42,
+      "runDifferential": -55,
+      "streakCode": "L1",
+      "winningPercentage": ".400",
       "wins": 28
     }
   },
@@ -133,6 +133,156 @@
       "Local first pitch 7:15 PM PDT is before the 20:00 late-light threshold.",
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
+  },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Cubs @ Giants",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "CHN",
+    "homeTeamCode": "SFN",
+    "label": "Cubs @ Giants",
+    "sourceStatus": "warehouse",
+    "rowCount": 12,
+    "pitcherName": "L. Roupp",
+    "gameContexts": [
+      "@ 9 CHN SFN"
+    ],
+    "averageHrForce": 1.3,
+    "maxHrForce": 1.3,
+    "highHrForceRows": 0,
+    "extremeHrForceRows": 0,
+    "highHrForceSharePct": 0,
+    "qualityAbPct": 49,
+    "hardHitPct": 27.2,
+    "matchupPassRows": 2,
+    "topRows": [
+      {
+        "playerName": "N. Hoerner",
+        "pitcherName": "L. Roupp",
+        "position": "2B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.3,
+        "qualityAbPct": 100,
+        "hardHitPct": 100,
+        "recentOps": 0.513,
+        "bvpAtBats": 4,
+        "bvpAvg": 0.25,
+        "bvpOps": 0.5,
+        "matchupPass": false
+      },
+      {
+        "playerName": "L. Arraez",
+        "pitcherName": "J. Assad",
+        "position": "1B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.3,
+        "qualityAbPct": 67,
+        "hardHitPct": 67,
+        "recentOps": 0.792,
+        "bvpAtBats": 5,
+        "bvpAvg": 0.4,
+        "bvpOps": 1,
+        "matchupPass": true
+      },
+      {
+        "playerName": "S. Suzuki",
+        "pitcherName": "L. Roupp",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.3,
+        "qualityAbPct": 67,
+        "hardHitPct": 67,
+        "recentOps": 0.65,
+        "bvpAtBats": 5,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      },
+      {
+        "playerName": "D. Swanson",
+        "pitcherName": "L. Roupp",
+        "position": "SS",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.3,
+        "qualityAbPct": 100,
+        "hardHitPct": 50,
+        "recentOps": 0.387,
+        "bvpAtBats": 2,
+        "bvpAvg": 1,
+        "bvpOps": 2.5,
+        "matchupPass": false
+      },
+      {
+        "playerName": "M. Chapman",
+        "pitcherName": "J. Assad",
+        "position": "3B",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.3,
+        "qualityAbPct": 38,
+        "hardHitPct": 25,
+        "recentOps": 1.748,
+        "bvpAtBats": 10,
+        "bvpAvg": 0.2,
+        "bvpOps": 0.4,
+        "matchupPass": false
+      },
+      {
+        "playerName": "W. Adames",
+        "pitcherName": "J. Assad",
+        "position": "SS",
+        "batterHand": null,
+        "pitcherHand": "R",
+        "hrForce": 1.3,
+        "qualityAbPct": 83,
+        "hardHitPct": 17,
+        "recentOps": 0.648,
+        "bvpAtBats": 6,
+        "bvpAvg": 0.167,
+        "bvpOps": 0.542,
+        "matchupPass": false
+      }
+    ],
+    "awayOffense": {
+      "label": "Cubs hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "Giants hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
   },
   "offenseContext": {
     "away": {
@@ -3548,71 +3698,71 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 71.2,
-          "noRunProbabilityPct": 28.8,
-          "awayRunProbabilityPct": 40.6,
-          "homeRunProbabilityPct": 51.5,
+          "runProbabilityPct": 71.9,
+          "noRunProbabilityPct": 28.1,
+          "awayRunProbabilityPct": 40.7,
+          "homeRunProbabilityPct": 52.6,
           "lean": "Run",
           "strength": "strong",
           "sampleHalves": 137,
           "caution": "",
-          "reason": "YRFI with a 71% modeled chance of at least one first-inning run. Cubs score 40.6% of the time and Giants 51.5% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "reason": "YRFI with a 72% modeled chance of at least one first-inning run. Cubs score 40.7% of the time and Giants 52.6% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
           "sourceModel": "M2 first-inning"
         },
         {
           "inning": 2,
           "phase": "M2 early F5",
-          "runProbabilityPct": 61.3,
-          "noRunProbabilityPct": 38.7,
-          "awayRunProbabilityPct": 34.1,
-          "homeRunProbabilityPct": 27.2,
+          "runProbabilityPct": 57.6,
+          "noRunProbabilityPct": 42.4,
+          "awayRunProbabilityPct": 32.1,
+          "homeRunProbabilityPct": 25.5,
           "lean": "Run",
-          "strength": "m2-strong",
+          "strength": "m2-baseline",
           "sampleHalves": 137,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5 projected first-five runs, with inning 2 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 2 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 3,
           "phase": "M2 early F5",
-          "runProbabilityPct": 62.5,
-          "noRunProbabilityPct": 37.5,
-          "awayRunProbabilityPct": 29.1,
-          "homeRunProbabilityPct": 33.4,
+          "runProbabilityPct": 58.7,
+          "noRunProbabilityPct": 41.3,
+          "awayRunProbabilityPct": 27.3,
+          "homeRunProbabilityPct": 31.4,
           "lean": "Run",
-          "strength": "m2-strong",
+          "strength": "m2-baseline",
           "sampleHalves": 137,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5 projected first-five runs, with inning 3 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 3 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 4,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 66.4,
-          "noRunProbabilityPct": 33.6,
-          "awayRunProbabilityPct": 35,
-          "homeRunProbabilityPct": 31.4,
+          "runProbabilityPct": 62.6,
+          "noRunProbabilityPct": 37.4,
+          "awayRunProbabilityPct": 33,
+          "homeRunProbabilityPct": 29.6,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 137,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5 projected first-five runs, with inning 4 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 4 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 5,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 66.1,
-          "noRunProbabilityPct": 33.9,
-          "awayRunProbabilityPct": 32.2,
-          "homeRunProbabilityPct": 33.9,
+          "runProbabilityPct": 62.3,
+          "noRunProbabilityPct": 37.7,
+          "awayRunProbabilityPct": 30.3,
+          "homeRunProbabilityPct": 32,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 137,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5 projected first-five runs, with inning 5 weighted by early scoring shape.",
+          "reason": "M2 F5 allocator: 4.6 projected first-five runs, with inning 5 weighted by early scoring shape.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -7876,16 +8026,16 @@
       "id": 665871,
       "fullName": "Javier Assad",
       "pitchHand": "R",
-      "wins": 3,
+      "wins": 4,
       "losses": 1,
-      "era": "4.73",
-      "strikeOuts": 19,
-      "inningsPitched": "32.1",
-      "hitsAllowed": 27,
-      "walks": 8,
+      "era": "3.99",
+      "strikeOuts": 24,
+      "inningsPitched": "38.1",
+      "hitsAllowed": 30,
+      "walks": 9,
       "homeRunsAllowed": 4,
-      "whip": "1.08",
-      "gamesStarted": 3,
+      "whip": "1.02",
+      "gamesStarted": 4,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 665871,
@@ -12698,15 +12848,15 @@
       "fullName": "Landen Roupp",
       "pitchHand": "R",
       "wins": 5,
-      "losses": 6,
-      "era": "4.00",
-      "strikeOuts": 77,
-      "inningsPitched": "69.2",
-      "hitsAllowed": 60,
-      "walks": 30,
+      "losses": 7,
+      "era": "4.24",
+      "strikeOuts": 82,
+      "inningsPitched": "74.1",
+      "hitsAllowed": 64,
+      "walks": 32,
       "homeRunsAllowed": 4,
       "whip": "1.29",
-      "gamesStarted": 13,
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 694738,
@@ -18080,17 +18230,17 @@
       {
         "label": "Spread",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "+1.5 -195 / +1.5 -210"
+        "value": "-1.5 +145 / +1.5 -162"
       },
       {
         "label": "Total",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "o8 -117 / u8.5 -115"
+        "value": "o7.5 -120 / u8 -112"
       },
       {
         "label": "Moneyline",
         "book": "Official MLB data + ScoresAndOdds live board",
-        "value": "Cubs +106 / Giants -124"
+        "value": "Cubs -118 / Giants +106"
       }
     ],
     "note": "Board snapshot plus model context.",
@@ -18102,24 +18252,24 @@
       "index": 0,
       "role": "Away",
       "name": "Cubs",
-      "detail": "Javier Assad (RHP) | 3-1 | 4.73 ERA | 19 SO | 1.08 WHIP | 32.1 IP",
-      "americanOdds": 106,
-      "americanLabel": "+106",
-      "decimalOdds": 2.06,
-      "impliedProbability": 0.4854368932038835,
-      "impliedProbabilityLabel": "48.5%"
+      "detail": "Javier Assad (RHP) | 4-1 | 3.99 ERA | 24 SO | 1.02 WHIP | 38.1 IP",
+      "americanOdds": -118,
+      "americanLabel": "-118",
+      "decimalOdds": 1.847457627118644,
+      "impliedProbability": 0.5412844036697247,
+      "impliedProbabilityLabel": "54.1%"
     },
     {
       "id": "cubs-giants:1",
       "index": 1,
       "role": "Home",
       "name": "Giants",
-      "detail": "Landen Roupp (RHP) | 5-6 | 4.00 ERA | 77 SO | 1.29 WHIP | 69.2 IP",
-      "americanOdds": -124,
-      "americanLabel": "-124",
-      "decimalOdds": 1.8064516129032258,
-      "impliedProbability": 0.5535714285714286,
-      "impliedProbabilityLabel": "55.4%"
+      "detail": "Landen Roupp (RHP) | 5-7 | 4.24 ERA | 82 SO | 1.29 WHIP | 74.1 IP",
+      "americanOdds": 106,
+      "americanLabel": "+106",
+      "decimalOdds": 2.06,
+      "impliedProbability": 0.4854368932038835,
+      "impliedProbabilityLabel": "48.5%"
     }
   ],
   "moneyline": {
@@ -18132,24 +18282,24 @@
         "index": 0,
         "role": "Away",
         "name": "Cubs",
-        "detail": "Javier Assad (RHP) | 3-1 | 4.73 ERA | 19 SO | 1.08 WHIP | 32.1 IP",
-        "americanOdds": 106,
-        "americanLabel": "+106",
-        "decimalOdds": 2.06,
-        "impliedProbability": 0.4854368932038835,
-        "impliedProbabilityLabel": "48.5%"
+        "detail": "Javier Assad (RHP) | 4-1 | 3.99 ERA | 24 SO | 1.02 WHIP | 38.1 IP",
+        "americanOdds": -118,
+        "americanLabel": "-118",
+        "decimalOdds": 1.847457627118644,
+        "impliedProbability": 0.5412844036697247,
+        "impliedProbabilityLabel": "54.1%"
       },
       {
         "id": "cubs-giants:1",
         "index": 1,
         "role": "Home",
         "name": "Giants",
-        "detail": "Landen Roupp (RHP) | 5-6 | 4.00 ERA | 77 SO | 1.29 WHIP | 69.2 IP",
-        "americanOdds": -124,
-        "americanLabel": "-124",
-        "decimalOdds": 1.8064516129032258,
-        "impliedProbability": 0.5535714285714286,
-        "impliedProbabilityLabel": "55.4%"
+        "detail": "Landen Roupp (RHP) | 5-7 | 4.24 ERA | 82 SO | 1.29 WHIP | 74.1 IP",
+        "americanOdds": 106,
+        "americanLabel": "+106",
+        "decimalOdds": 2.06,
+        "impliedProbability": 0.4854368932038835,
+        "impliedProbabilityLabel": "48.5%"
       }
     ]
   },
@@ -18161,37 +18311,37 @@
       "index": 1,
       "role": "Home",
       "name": "Giants",
-      "detail": "Landen Roupp (RHP) | 5-6 | 4.00 ERA | 77 SO | 1.29 WHIP | 69.2 IP",
-      "americanOdds": -124,
-      "americanLabel": "-124",
-      "decimalOdds": 1.8064516129032258,
-      "impliedProbability": 0.5535714285714286,
-      "impliedProbabilityLabel": "55.4%"
-    },
-    "opponent": {
-      "id": "cubs-giants:0",
-      "index": 0,
-      "role": "Away",
-      "name": "Cubs",
-      "detail": "Javier Assad (RHP) | 3-1 | 4.73 ERA | 19 SO | 1.08 WHIP | 32.1 IP",
+      "detail": "Landen Roupp (RHP) | 5-7 | 4.24 ERA | 82 SO | 1.29 WHIP | 74.1 IP",
       "americanOdds": 106,
       "americanLabel": "+106",
       "decimalOdds": 2.06,
       "impliedProbability": 0.4854368932038835,
       "impliedProbabilityLabel": "48.5%"
     },
+    "opponent": {
+      "id": "cubs-giants:0",
+      "index": 0,
+      "role": "Away",
+      "name": "Cubs",
+      "detail": "Javier Assad (RHP) | 4-1 | 3.99 ERA | 24 SO | 1.02 WHIP | 38.1 IP",
+      "americanOdds": -118,
+      "americanLabel": "-118",
+      "decimalOdds": 1.847457627118644,
+      "impliedProbability": 0.5412844036697247,
+      "impliedProbabilityLabel": "54.1%"
+    },
     "lean": "Model pick: Giants on hit-production baseline and lineup-vs-pitching fit.",
     "rationale": "Hit-production baseline: Giants (9.25 H/G | last 3 8.00 | home 9.24) vs Cubs (8.25 H/G | last 3 3.67 | away 7.62)",
-    "confidence": 65,
-    "volatility": 82,
-    "recommendationScore": 44,
-    "tier": "Swingy",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "confidence": 52,
+    "volatility": 92,
+    "recommendationScore": 34,
+    "tier": "Pass",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
     "modelEdge": 6.7,
     "modelEdgeLabel": "6.7-point model edge",
-    "marketProbability": 0.5327882529617888,
-    "marketProbabilityLabel": "53.3%",
+    "marketProbability": 0.4728029842977358,
+    "marketProbabilityLabel": "47.3%",
     "inputs": [
       {
         "label": "Hit-production baseline",
@@ -18202,23 +18352,43 @@
       },
       {
         "label": "Lineup-vs-pitching fit",
-        "summary": "Lineup-vs-pitching fit: Giants (Grade +5.87 | platoon 6 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs Cubs (Grade +1.41 | platoon 4 | starter arsenal 52 | bridge arsenal 50 | pressure 84)",
+        "summary": "Lineup-vs-pitching fit: Giants (Grade +5.87 | platoon 6 | .300 bats 0 | bat pressure 50 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs Cubs (Grade +1.41 | platoon 4 | .300 bats 0 | bat pressure 50 | starter arsenal 52 | bridge arsenal 50 | pressure 84)",
         "source": "Official lineup + handedness + starter arsenal + likely reliever arsenal fit",
         "margin": 29,
         "weight": 0.14
       },
       {
-        "label": "Strikeout ceiling",
-        "summary": "Strikeout ceiling: Giants (77 SO) vs Cubs (19 SO)",
-        "source": "Listed probable starters",
-        "margin": 33.5,
-        "weight": 0.09
+        "label": "Likely bridge chain",
+        "summary": "Likely bridge chain: Giants (Ryan Walker first up 72% | availability 72/100 | Sam Hentges first up 66% | availability 55/100) vs Cubs (Phil Maton first up 65% | availability 52/100 B2B | Hoby Milner first up 64% | availability 50/100 B2B)",
+        "source": "Warehouse bullpen workload + likely first two relievers",
+        "margin": 23.4,
+        "weight": 0.11
       }
     ],
     "inputsUsed": 12,
     "volatilityNotes": [
       {
+        "label": "The underdog owns the projected hit edge",
+        "delta": 6
+      },
+      {
+        "label": "The favorite is carrying a real traffic deficit despite the price",
+        "delta": 5
+      },
+      {
+        "label": "The underdog projects cleaner through the starter window",
+        "delta": 4
+      },
+      {
+        "label": "Lower posted total",
+        "delta": -4
+      },
+      {
         "label": "One lineup carries real platoon pressure versus the listed starter hand",
+        "delta": 3
+      },
+      {
+        "label": "Handedness split rows are moving the offensive shape",
         "delta": 3
       },
       {
@@ -18234,8 +18404,16 @@
         "delta": 4
       },
       {
-        "label": "The underdog owns the cleaner Statcast contact profile",
-        "delta": 4
+        "label": "The underdog owns the fresher likely bridge chain",
+        "delta": 5
+      },
+      {
+        "label": "The underdog lineup fits today’s starter better",
+        "delta": 5
+      },
+      {
+        "label": "The underdog hit-production trend is still live",
+        "delta": 3
       },
       {
         "label": "Oracle Park suppresses run scoring (94 runs factor)",
@@ -18258,31 +18436,47 @@
         "delta": 4
       },
       {
+        "label": "Overall baseball variance is still high enough that the side reads better as a watchlist edge than a clean conviction tag",
+        "delta": 3
+      },
+      {
+        "label": "A big paper edge is still sitting inside a noisy baseball script, so conviction should stay capped",
+        "delta": 3
+      },
+      {
         "label": "Starter edge looks better than the late-inning hold profile; this reads cleaner for first five",
         "delta": 5
       },
       {
-        "label": "Tier 1 starter-vs-late split: the starter edge is outrunning the late-inning hold profile, which makes the full-game side less trustworthy than the first-five read.",
-        "delta": 4
+        "label": "Tier 1 edge control: a double-digit edge is still sitting in a high-volatility baseball script, so this should grade as a pass until the game proves cleaner.",
+        "delta": 6
+      },
+      {
+        "label": "Tier 1 pass classifier: multiple risk buckets are stacked in the same game, so this read belongs closer to lean/watchlist territory than a clean conviction tier.",
+        "delta": 3
+      },
+      {
+        "label": "v1.1 market budget: this underdog call still needs cleaner starter, stability, and state support before it can be treated like a real market disagreement edge.",
+        "delta": 5
       }
     ],
     "pickReasons": [
-      "Giants own the cleaner full-game traffic script at 12 projected hits.",
+      "Giants own the cleaner full-game traffic script at 12.1 projected hits.",
       "Giants have the better starter-window lane with 6.7 projected first-five hits.",
       "Giants still hold the better bridge-and-finish script once the bullpens take over.",
       "Giants also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late."
     ],
     "indicators": {
-      "reliefPitchingRisk": 53.9,
-      "coinflipPressure": 56,
-      "starterLeverageIndex": 79.3,
-      "lateInningStabilityIndex": 24,
+      "reliefPitchingRisk": 55.9,
+      "coinflipPressure": 57,
+      "starterLeverageIndex": 70.2,
+      "lateInningStabilityIndex": 11,
       "pickBullpenScore": 60.4,
       "oppBullpenScore": 63.2,
       "pickBullpenChainScore": 69.2,
       "oppBullpenChainScore": 45.8,
-      "pickStarterScore": 63.4,
-      "oppStarterScore": 55.7,
+      "pickStarterScore": 62.1,
+      "oppStarterScore": 61.3,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -18338,10 +18532,10 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 4.2,
+      "projectedHitEdgeForPick": 4,
       "hitEdgeAgainstPick": false,
-      "pickIsMarketFavorite": true,
-      "pickIsMarketUnderdog": false,
+      "pickIsMarketFavorite": false,
+      "pickIsMarketUnderdog": true,
       "heavyFavoriteWeakLineupFlag": false,
       "heavyFavoriteNoisyBullpenFlag": false,
       "deadEarlyRiskFlag": false,
@@ -18361,37 +18555,38 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": 14,
+      "efficientFavoriteScore": -34,
       "efficientFavoriteTier": "Watch favorite",
-      "efficientFavoriteReasons": [
-        "starterControl",
-        "broadSupport",
-        "modelAgreement"
-      ],
+      "efficientFavoriteReasons": [],
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
-        "lateFragility",
+        "stackedRisk",
+        "thinModelAgreement",
         "lateNotClean"
       ],
       "efficientFavoriteBlockers": [
+        "notMarketFavorite",
+        "tierOnePass",
         "notPricedFavorite"
       ],
-      "tierOneRiskPoints": 2,
-      "tierOnePassFlag": false,
+      "tierOneRiskPoints": 4,
+      "tierOnePassFlag": true,
       "tierOneRiskFlags": [
-        "starterLateFragility"
+        "highVolatilityEdgePass",
+        "highRiskPoints",
+        "underdogNeedsProof"
       ],
-      "favoredSignalCount": 8,
-      "starterLateGap": 55.3,
+      "favoredSignalCount": 6,
+      "starterLateGap": 59.2,
       "starterLeashGap": 0,
-      "edgeHaircutApplied": 1.2,
+      "edgeHaircutApplied": 5.5,
       "gameShape": {
         "label": "Early-pressure side",
         "shapeLabel": "bullpen-flip game",
         "category": "early_pressure_side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "categoryConfidence": 64.7,
-        "realityGapScore": 52.9,
+        "categoryConfidence": 64.4,
+        "realityGapScore": 56.5,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
@@ -18403,7 +18598,7 @@
           {
             "id": "bridge",
             "label": "Bridge",
-            "score": 67.1
+            "score": 69.5
           },
           {
             "id": "chaos",
@@ -18411,7 +18606,7 @@
             "score": 44.8
           }
         ],
-        "rfImpactScore": 39.9
+        "rfImpactScore": 43
       }
     },
     "gameShape": {
@@ -18422,7 +18617,7 @@
         "slug": "early_pressure_side",
         "label": "Early-pressure side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "confidence": 64.7,
+        "confidence": 64.4,
         "reasons": [
           "The pick needs to cash the first traffic pocket.",
           "The best edge is timing, not late-game patience."
@@ -18466,20 +18661,20 @@
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 4.2
+          "projectedHitEdge": 4
         }
       },
-      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 52.9/100. Main checks: 65°F | Wind 9 mph Out | 0% precip | weather helps carry.",
+      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 56.5/100. Main checks: 65°F | Wind 9 mph Out | 0% precip | weather helps carry.",
       "pickTeam": "Giants",
       "opponentTeam": "Cubs",
       "scores": {
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "phaseSplitScore": 0,
-        "bullpenFlipScore": 67.1,
-        "starterControlScore": 54.5,
-        "marketContradictionScore": 7.7,
-        "realityGapScore": 52.9
+        "bullpenFlipScore": 69.5,
+        "starterControlScore": 47.3,
+        "marketContradictionScore": 30,
+        "realityGapScore": 56.5
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -18493,9 +18688,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 35.4,
-            "pickScore": 35.4,
-            "opponentScore": 10
+            "gameScore": 35.2,
+            "pickScore": 35.2,
+            "opponentScore": 11
           },
           {
             "id": "chaos",
@@ -18525,7 +18720,7 @@
             "id": "bridge",
             "label": "Bridge",
             "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-            "gameScore": 67.1,
+            "gameScore": 69.5,
             "pickScore": 3.6,
             "opponentScore": 2.6
           },
@@ -18543,7 +18738,7 @@
             "role": "pick",
             "team": "Giants",
             "scores": {
-              "pressure": 35.4,
+              "pressure": 35.2,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -18551,7 +18746,7 @@
               "flow": 100
             },
             "polygon": [
-              35.4,
+              35.2,
               5,
               0,
               16,
@@ -18562,7 +18757,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 63.4,
+              "starterScore": 62.1,
               "bullpenScore": 60.4,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18576,7 +18771,7 @@
             "role": "opponent",
             "team": "Cubs",
             "scores": {
-              "pressure": 10,
+              "pressure": 11,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
@@ -18584,7 +18779,7 @@
               "flow": 0
             },
             "polygon": [
-              10,
+              11,
               5,
               0,
               16,
@@ -18595,7 +18790,7 @@
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 55.7,
+              "starterScore": 61.3,
               "bullpenScore": 63.2,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -18610,19 +18805,19 @@
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 35.4,
+            "pressure": 35.2,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
-            "bridge": 67.1,
+            "bridge": 69.5,
             "flow": 100
           },
           "polygon": [
-            35.4,
+            35.2,
             44.8,
             8.5,
             24.4,
-            67.1,
+            69.5,
             100
           ],
           "dominantAxes": [
@@ -18634,7 +18829,7 @@
             {
               "id": "bridge",
               "label": "Bridge",
-              "score": 67.1
+              "score": 69.5
             },
             {
               "id": "chaos",
@@ -18700,12 +18895,12 @@
         "side": "Giants is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 71.2% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 71.9% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 39.9,
+        "impactScore": 43,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -18740,26 +18935,26 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 7.8,
-      "homeProjectedHits": 12,
-      "awayHitEfficiencyPct": 22.6,
-      "homeHitEfficiencyPct": 35.1,
-      "awayFirst5ProjectedHits": 4.4,
+      "awayProjectedHits": 8.1,
+      "homeProjectedHits": 12.1,
+      "awayHitEfficiencyPct": 23.5,
+      "homeHitEfficiencyPct": 35.3,
+      "awayFirst5ProjectedHits": 4.3,
       "homeFirst5ProjectedHits": 6.7,
-      "awayFirst5HitEfficiencyPct": 22.9,
+      "awayFirst5HitEfficiencyPct": 22.4,
       "homeFirst5HitEfficiencyPct": 35.7,
-      "awayLateProjectedHits": 3.7,
+      "awayLateProjectedHits": 4.2,
       "homeLateProjectedHits": 5.1,
-      "awayLateHitEfficiencyPct": 23.7,
-      "homeLateHitEfficiencyPct": 33.3,
+      "awayLateHitEfficiencyPct": 26.9,
+      "homeLateHitEfficiencyPct": 33.5,
       "awayBullpenChainScore": 45.8,
       "homeBullpenChainScore": 69.2,
       "edgeTeam": "Giants",
-      "edgeHits": 4.2,
+      "edgeHits": 4,
       "first5EdgeTeam": "Giants",
-      "first5EdgeHits": 2.3,
+      "first5EdgeHits": 2.4,
       "lateEdgeTeam": "Giants",
-      "lateEdgeHits": 1.4,
+      "lateEdgeHits": 0.9,
       "bridgeEdgeTeam": "Giants",
       "bridgeEdgeScore": 23.4,
       "awayLikelyRelievers": [
@@ -18866,27 +19061,27 @@
       "homeBullpenExhaustion": 25.6,
       "awayBullpenExhaustionLabel": "heavy",
       "homeBullpenExhaustionLabel": "fresh",
-      "awayPitcherType": "Balanced righty",
+      "awayPitcherType": "Contact suppressor",
       "homePitcherType": "Volatile bat-misser",
-      "awayStarterHoldConfidence": 27.1,
-      "homeStarterHoldConfidence": 33.9,
-      "awayProjectedRuns": 3.7,
-      "homeProjectedRuns": 6,
-      "awayFirst5ProjectedRuns": 1.9,
-      "homeFirst5ProjectedRuns": 3.1,
-      "awayLateProjectedRuns": 1.8,
+      "awayStarterHoldConfidence": 28.5,
+      "homeStarterHoldConfidence": 35.5,
+      "awayProjectedRuns": 3.9,
+      "homeProjectedRuns": 5.7,
+      "awayFirst5ProjectedRuns": 1.8,
+      "homeFirst5ProjectedRuns": 2.8,
+      "awayLateProjectedRuns": 2.1,
       "homeLateProjectedRuns": 2.9,
-      "postedTotal": 8,
+      "postedTotal": 7.5,
       "totals": {
         "fullGame": {
           "lean": "Over",
-          "edge": 1.7,
+          "edge": 2.1,
           "strength": "Strong",
-          "label": "Over 8",
-          "summary": "Over lean with a 1.7-run edge against 8.",
+          "label": "Over 7.5",
+          "summary": "Over lean with a 2.1-run edge against 7.5.",
           "chaosGate": {
             "phase": "full",
-            "overChaosScore": 5,
+            "overChaosScore": 6,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
@@ -18894,6 +19089,7 @@
             "vetoReason": "",
             "notes": [
               "65°F | Wind 9 mph Out | 0% precip | weather helps carry",
+              "FIC matchup contact carry",
               "RP2 bridge stress 54"
             ],
             "metrics": {
@@ -18912,21 +19108,29 @@
               "hrForce": 1.3,
               "highHrForce": false,
               "lowerWeatherCarry": true,
+              "ficHrForce": 1.3,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
               "maxRp2BridgeStress": 54,
-              "maxRp2ReliefRuns": 3.4,
-              "rp2LateRunRisk": true
+              "maxRp2ReliefRuns": 3.6,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
         "first5": {
           "lean": "Over",
-          "edge": 0.9,
+          "edge": 1,
           "strength": "Clear",
-          "label": "Over 4.1",
-          "summary": "Over lean with a 0.9-run edge against 4.1.",
+          "label": "Over 3.6",
+          "summary": "Over lean with a 1.0-run edge against 3.6.",
           "chaosGate": {
             "phase": "first5",
-            "overChaosScore": 4,
+            "overChaosScore": 5,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
@@ -18934,6 +19138,7 @@
             "vetoReason": "",
             "notes": [
               "65°F | Wind 9 mph Out | 0% precip | weather helps carry",
+              "FIC matchup contact carry",
               "RP2 bridge can enter early"
             ],
             "metrics": {
@@ -18952,18 +19157,26 @@
               "hrForce": 1.3,
               "highHrForce": false,
               "lowerWeatherCarry": true,
+              "ficHrForce": 1.3,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
               "maxRp2BridgeStress": 54,
-              "maxRp2ReliefRuns": 3.4,
-              "rp2LateRunRisk": true
+              "maxRp2ReliefRuns": 3.6,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 5,
-            "adjustedProjectedRuns": 5,
-            "adjustedEdge": 0.9,
+            "baseProjectedRuns": 4.6,
+            "adjustedProjectedRuns": 4.6,
+            "adjustedEdge": 1,
             "marketExpression": "Over",
             "shape": "balanced",
-            "tailScore": 36.7,
+            "tailScore": 40.1,
             "strandScore": 0,
             "forkScore": 0,
             "tailLift": 0,
@@ -18977,7 +19190,7 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 11.1,
+              "totalFirst5ProjectedHits": 11,
               "weatherCarry": true,
               "weatherSuppress": false,
               "envRunDelta": -0.3,
@@ -18986,22 +19199,29 @@
               "hrForce": 1.3,
               "highHrForce": false,
               "lowerWeatherCarry": true,
+              "ficHrForce": 1.3,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
               "maxRp2BridgeStress": 54,
-              "maxRp2ReliefRuns": 3.4,
+              "maxRp2ReliefRuns": 3.6,
               "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
               "visibilityRisk": null
             }
           }
         },
         "late": {
           "lean": "Over",
-          "edge": 0.8,
+          "edge": 1.1,
           "strength": "Clear",
           "label": "Over 3.9",
-          "summary": "Over lean with a 0.8-run edge against 3.9.",
+          "summary": "Over lean with a 1.1-run edge against 3.9.",
           "chaosGate": {
             "phase": "late",
-            "overChaosScore": 5,
+            "overChaosScore": 6,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
@@ -19009,6 +19229,7 @@
             "vetoReason": "",
             "notes": [
               "65°F | Wind 9 mph Out | 0% precip | weather helps carry",
+              "FIC matchup contact carry",
               "RP2 bridge stress 54"
             ],
             "metrics": {
@@ -19027,22 +19248,30 @@
               "hrForce": 1.3,
               "highHrForce": false,
               "lowerWeatherCarry": true,
+              "ficHrForce": 1.3,
+              "ficHighHrForce": false,
+              "materialHrForce": false,
+              "extremeHrForce": false,
+              "carryMultiplier": 1,
+              "ficHighHrForceSharePct": 0,
               "maxRp2BridgeStress": 54,
-              "maxRp2ReliefRuns": 3.4,
-              "rp2LateRunRisk": true
+              "maxRp2ReliefRuns": 3.6,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
-        "projectedFullTotalRuns": 9.7,
-        "projectedFirst5TotalRuns": 5,
-        "tailAdjustedProjectedFirst5TotalRuns": 5,
+        "projectedFullTotalRuns": 9.6,
+        "projectedFirst5TotalRuns": 4.6,
+        "tailAdjustedProjectedFirst5TotalRuns": 4.6,
         "first5TailOverlay": {
-          "baseProjectedRuns": 5,
-          "adjustedProjectedRuns": 5,
-          "adjustedEdge": 0.9,
+          "baseProjectedRuns": 4.6,
+          "adjustedProjectedRuns": 4.6,
+          "adjustedEdge": 1,
           "marketExpression": "Over",
           "shape": "balanced",
-          "tailScore": 36.7,
+          "tailScore": 40.1,
           "strandScore": 0,
           "forkScore": 0,
           "tailLift": 0,
@@ -19056,7 +19285,7 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 11.1,
+            "totalFirst5ProjectedHits": 11,
             "weatherCarry": true,
             "weatherSuppress": false,
             "envRunDelta": -0.3,
@@ -19065,16 +19294,23 @@
             "hrForce": 1.3,
             "highHrForce": false,
             "lowerWeatherCarry": true,
+            "ficHrForce": 1.3,
+            "ficHighHrForce": false,
+            "materialHrForce": false,
+            "extremeHrForce": false,
+            "carryMultiplier": 1,
+            "ficHighHrForceSharePct": 0,
             "maxRp2BridgeStress": 54,
-            "maxRp2ReliefRuns": 3.4,
+            "maxRp2ReliefRuns": 3.6,
             "rp2LateRunRisk": true,
+            "maxRepeatOpponentFirst5Tax": null,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 4.7,
-        "derivedFirst5TotalLine": 4.1,
+        "projectedLateTotalRuns": 5,
+        "derivedFirst5TotalLine": 3.6,
         "postedFirst5TotalLine": null,
-        "runShareFirst5TotalLine": 4.1,
+        "runShareFirst5TotalLine": 3.6,
         "first5TotalLineSource": "full-game-derived",
         "derivedLateTotalLine": 3.9,
         "bullpenExhaustionNote": "65°F | Wind 9 mph Out | 0% precip | weather helps carry. Cubs heavy bridge arms are carrying heavier recent workload stress, which matters more once the game gets past the starter window.",
@@ -19085,11 +19321,11 @@
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 21.2,
-        "yesProbabilityPct": 71.2,
-        "noProbabilityPct": 28.8,
-        "awayRunProbabilityPct": 40.6,
-        "homeRunProbabilityPct": 51.5,
+        "edge": 21.9,
+        "yesProbabilityPct": 71.9,
+        "noProbabilityPct": 28.1,
+        "awayRunProbabilityPct": 40.7,
+        "homeRunProbabilityPct": 52.6,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 40,
@@ -19098,9 +19334,10 @@
         "homeProjectedRuns": 0.5,
         "reasonStack": [
           "Giants top order is driving early pressure (81.2)",
+          "Giants handedness splits fit the starter (62.1)",
+          "Giants top third has multiple strong split bats",
           "Cubs starter has real season 1st-inning damage (33% run games, 0.3/start)",
-          "Cubs top order is driving early pressure (77)",
-          "Giants starter has leaked 1st-inning runs in 40% of recent starts"
+          "Cubs top order is driving early pressure (77)"
         ],
         "cautionStack": [],
         "environmentAddendum": {
@@ -19112,7 +19349,7 @@
         },
         "projectedRuns": 0.9,
         "line": 0.5,
-        "summary": "YRFI with a 71% modeled chance of at least one first-inning run. Cubs score 40.6% of the time and Giants 51.5% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 72% modeled chance of at least one first-inning run. Cubs score 40.7% of the time and Giants 52.6% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
       },
       "teamScripts": [
         {
@@ -19189,7 +19426,7 @@
           "depthScore": 58.1,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Giants own the cleaner full-game traffic script at 12 projected hits.",
+            "Giants own the cleaner full-game traffic script at 12.1 projected hits.",
             "Giants have the better starter-window lane with 6.7 projected first-five hits.",
             "Giants still hold the better bridge-and-finish script once the bullpens take over.",
             "Giants also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
@@ -19206,7 +19443,7 @@
           {
             "label": "First 5",
             "edgeTeam": "Giants",
-            "projection": "3.1 R",
+            "projection": "2.8 R",
             "note": "Giants lean on Bryce Eldridge, Rafael Devers to drive the early traffic lane against the listed starter."
           },
           {
@@ -19218,7 +19455,7 @@
           {
             "label": "Full game",
             "edgeTeam": "Giants",
-            "projection": "12 H",
+            "projection": "12.1 H",
             "note": "Giants finish with the stronger aggregate traffic path, anchored by Bryce Eldridge, Rafael Devers."
           }
         ]
@@ -19280,6 +19517,50 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Cubs @ Giants",
+        "gameContextMatch": "team-code",
+        "rowCount": 12,
+        "averageHrForce": 1.3,
+        "maxHrForce": 1.3,
+        "highHrForceRows": 0,
+        "extremeHrForceRows": 0,
+        "highHrForceSharePct": 0,
+        "qualityAbPct": 49,
+        "hardHitPct": 27.2,
+        "matchupPassRows": 2,
+        "awayOffense": {
+          "label": "Cubs hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "Giants hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Cubs",
@@ -19318,22 +19599,320 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "available-bullpen damage adjustment is active",
+          "handedness split adjustment is active"
+        ],
+        "environment": {
+          "hrForce": 1.3,
+          "envHrForce": 1.3,
+          "ficHrForce": 1.3,
+          "materialHrForce": false,
+          "extremeHrForce": false,
+          "carryMultiplier": 1,
+          "hitDelta": 0,
+          "runDelta": 0,
+          "conversionDelta": 0,
+          "firstInningProbabilityLiftPct": 0,
+          "underFragilityRuns": 0,
+          "flags": [
+            "Low/N/A HRForce cannot be used as a strong under signal"
+          ],
+          "reasons": [
+            "weather carry is low or unavailable, so it cannot support an under by itself"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Cubs",
+            "pitcherName": "Javier Assad",
+            "gamesStarted": 4,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Contact suppressor",
+            "expectedInnings": 5.22,
+            "opponentHistory": {
+              "label": "starter has suppressed this opponent",
+              "source": "StatMuse vs opponent",
+              "starts": 1,
+              "innings": 13.3,
+              "projectedHitsDelta": -0.1,
+              "first5RunsDelta": -0.1,
+              "runConversionDelta": -0.0027897333333333327,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": 0,
+              "repeatOpponentFirst5Tax": 0,
+              "lastOpponentStartSummary": "6/17/2024 | 5 IP | 1 R | 1 ER | 5 H",
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "starter has suppressed this opponent vs Giants"
+            ]
+          },
+          {
+            "teamName": "Giants",
+            "pitcherName": "Landen Roupp",
+            "gamesStarted": 14,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Volatile bat-misser",
+            "expectedInnings": 5.45,
+            "opponentHistory": {
+              "label": "neutral starter-vs-opponent history",
+              "source": "StatMuse vs opponent",
+              "starts": 2,
+              "innings": 10.7,
+              "projectedHitsDelta": 0,
+              "first5RunsDelta": 0,
+              "runConversionDelta": 0.00013582800000000027,
+              "repeatOpponentUnderWarning": false,
+              "repeatOpponentHitTax": 0.1,
+              "repeatOpponentFirst5Tax": 0.1,
+              "lastOpponentStartSummary": "6/6/2026 | 5.7 IP | 1 R | 1 ER | 3 H | 1 HR",
+              "repeatOpponentFlags": []
+            },
+            "flags": [
+              "neutral starter-vs-opponent history vs Cubs"
+            ]
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Cubs",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 41.4,
+            "label": "weak handedness split lane",
+            "splitAvgAverage": 0.241,
+            "splitOpsAverage": 0.73,
+            "topSixSplitAvgAverage": 0.249,
+            "topSixSplitOpsAverage": 0.768,
+            "strongSplitCount": 2,
+            "weakSplitCount": 3,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 2,
+            "topSixWeakSplitCount": 1,
+            "topThirdStrongSplitCount": 1,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": -0.2,
+            "runConversionDelta": -0.004070000000000001,
+            "strongSplitBats": [
+              {
+                "name": "Ian Happ",
+                "slot": 4,
+                "bats": "S",
+                "plateAppearances": 206,
+                "avg": 0.268,
+                "ops": 0.964,
+                "seasonAvg": 0.231,
+                "seasonOps": 0.836,
+                "recentAvg": 0.167,
+                "recentOps": 0.749
+              },
+              {
+                "name": "Michael Busch",
+                "slot": 3,
+                "bats": "L",
+                "plateAppearances": 210,
+                "avg": 0.257,
+                "ops": 0.805,
+                "seasonAvg": 0.251,
+                "seasonOps": 0.774,
+                "recentAvg": 0.304,
+                "recentOps": 0.842
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Carson Kelly",
+                "slot": 8,
+                "bats": "R",
+                "plateAppearances": 115,
+                "avg": 0.257,
+                "ops": 0.607,
+                "seasonAvg": 0.282,
+                "seasonOps": 0.731,
+                "recentAvg": 0.278,
+                "recentOps": 0.76
+              },
+              {
+                "name": "Dansby Swanson",
+                "slot": 9,
+                "bats": "R",
+                "plateAppearances": 172,
+                "avg": 0.179,
+                "ops": 0.612,
+                "seasonAvg": 0.178,
+                "seasonOps": 0.602,
+                "recentAvg": 0.077,
+                "recentOps": 0.354
+              },
+              {
+                "name": "Nico Hoerner",
+                "slot": 6,
+                "bats": "R",
+                "plateAppearances": 221,
+                "avg": 0.23,
+                "ops": 0.63,
+                "seasonAvg": 0.247,
+                "seasonOps": 0.675,
+                "recentAvg": 0.182,
+                "recentOps": 0.445
+              }
+            ],
+            "flags": [
+              "Ian Happ 0.964 OPS vs R",
+              "Michael Busch 0.805 OPS vs R",
+              "Carson Kelly 0.607 OPS vs R",
+              "3 lineup bats carry weak split rows"
+            ]
+          },
+          {
+            "teamName": "Giants",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 62.1,
+            "label": "strong handedness split lane",
+            "splitAvgAverage": 0.279,
+            "splitOpsAverage": 0.785,
+            "topSixSplitAvgAverage": 0.285,
+            "topSixSplitOpsAverage": 0.804,
+            "strongSplitCount": 3,
+            "weakSplitCount": 0,
+            "severeWeakSplitCount": 0,
+            "topSixStrongSplitCount": 3,
+            "topSixWeakSplitCount": 0,
+            "topThirdStrongSplitCount": 2,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": 0.2,
+            "runConversionDelta": 0.005985,
+            "strongSplitBats": [
+              {
+                "name": "Jung Hoo Lee",
+                "slot": 5,
+                "bats": "L",
+                "plateAppearances": 178,
+                "avg": 0.353,
+                "ops": 0.885,
+                "seasonAvg": 0.338,
+                "seasonOps": 0.829,
+                "recentAvg": 0.462,
+                "recentOps": 1.038
+              },
+              {
+                "name": "Bryce Eldridge",
+                "slot": 2,
+                "bats": "L",
+                "plateAppearances": 87,
+                "avg": 0.27,
+                "ops": 0.841,
+                "seasonAvg": 0.298,
+                "seasonOps": 0.907,
+                "recentAvg": 0.333,
+                "recentOps": 1.095
+              },
+              {
+                "name": "Luis Arraez",
+                "slot": 1,
+                "bats": "L",
+                "plateAppearances": 197,
+                "avg": 0.333,
+                "ops": 0.796,
+                "seasonAvg": 0.327,
+                "seasonOps": 0.802,
+                "recentAvg": 0.345,
+                "recentOps": 0.816
+              }
+            ],
+            "weakSplitBats": [],
+            "flags": [
+              "top-third split pressure",
+              "Jung Hoo Lee 0.885 OPS vs R",
+              "Bryce Eldridge 0.841 OPS vs R"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Cubs",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "Giants",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Cubs",
+            "projectedReliefRunsAllowed": 1.9,
+            "adjustedProjectedReliefRunsAllowed": 1.9,
+            "projectedReliefOuts": 12.6,
+            "leverageAvailabilityScore": 50.1,
+            "leadAvailabilityScore": 51.6,
+            "bridgeStressScore": 48.4,
+            "runDelta": 0.1,
+            "hitDelta": 0.2,
+            "expectedEarlyBridge": true,
+            "flags": [
+              "RP2 available-pen runs 1.9 -> 1.9"
+            ]
+          },
+          {
+            "teamName": "Giants",
+            "projectedReliefRunsAllowed": 3.4,
+            "adjustedProjectedReliefRunsAllowed": 3.6,
+            "projectedReliefOuts": 10.5,
+            "leverageAvailabilityScore": 51.7,
+            "leadAvailabilityScore": 72,
+            "bridgeStressScore": 54,
+            "runDelta": 0.7,
+            "hitDelta": 0.7,
+            "expectedEarlyBridge": false,
+            "flags": [
+              "RP2 available-pen runs 3.4 -> 3.6",
+              "run-risk tier watch_bridge"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 3.9,
+          "home": 5.7
+        },
+        "projectedHitTotals": {
+          "away": 8.1,
+          "home": 12.1
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
         "selection": "Giants",
         "opponent": "Cubs",
-        "pickProjectedRuns": 6,
-        "opponentProjectedRuns": 3.7,
-        "projectedTotalRuns": 9.7,
-        "runDiff": 2.3,
-        "absoluteRunDiff": 2.3,
-        "runDiffSharePct": 23.7,
-        "confidence": 65,
-        "marketProbabilityPct": 53.3,
+        "pickProjectedRuns": 5.7,
+        "opponentProjectedRuns": 3.9,
+        "projectedTotalRuns": 9.6,
+        "runDiff": 1.8,
+        "absoluteRunDiff": 1.8,
+        "runDiffSharePct": 18.8,
+        "confidence": 52,
+        "marketProbabilityPct": 47.3,
         "grade": "Separated ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Giants projects 2.3 runs better in a 9.7-run environment."
+        "note": "Giants projects 1.8 runs better in a 9.6-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -19343,7 +19922,7 @@
           "slug": "early_pressure_side",
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-          "confidence": 64.7,
+          "confidence": 64.4,
           "reasons": [
             "The pick needs to cash the first traffic pocket.",
             "The best edge is timing, not late-game patience."
@@ -19387,20 +19966,20 @@
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 4.2
+            "projectedHitEdge": 4
           }
         },
-        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 52.9/100. Main checks: 65°F | Wind 9 mph Out | 0% precip | weather helps carry.",
+        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 56.5/100. Main checks: 65°F | Wind 9 mph Out | 0% precip | weather helps carry.",
         "pickTeam": "Giants",
         "opponentTeam": "Cubs",
         "scores": {
           "chaosScore": 44.8,
           "deadEarlyScore": 8.5,
           "phaseSplitScore": 0,
-          "bullpenFlipScore": 67.1,
-          "starterControlScore": 54.5,
-          "marketContradictionScore": 7.7,
-          "realityGapScore": 52.9
+          "bullpenFlipScore": 69.5,
+          "starterControlScore": 47.3,
+          "marketContradictionScore": 30,
+          "realityGapScore": 56.5
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -19414,9 +19993,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 35.4,
-              "pickScore": 35.4,
-              "opponentScore": 10
+              "gameScore": 35.2,
+              "pickScore": 35.2,
+              "opponentScore": 11
             },
             {
               "id": "chaos",
@@ -19446,7 +20025,7 @@
               "id": "bridge",
               "label": "Bridge",
               "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-              "gameScore": 67.1,
+              "gameScore": 69.5,
               "pickScore": 3.6,
               "opponentScore": 2.6
             },
@@ -19464,7 +20043,7 @@
               "role": "pick",
               "team": "Giants",
               "scores": {
-                "pressure": 35.4,
+                "pressure": 35.2,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -19472,7 +20051,7 @@
                 "flow": 100
               },
               "polygon": [
-                35.4,
+                35.2,
                 5,
                 0,
                 16,
@@ -19483,7 +20062,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 63.4,
+                "starterScore": 62.1,
                 "bullpenScore": 60.4,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -19497,7 +20076,7 @@
               "role": "opponent",
               "team": "Cubs",
               "scores": {
-                "pressure": 10,
+                "pressure": 11,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
@@ -19505,7 +20084,7 @@
                 "flow": 0
               },
               "polygon": [
-                10,
+                11,
                 5,
                 0,
                 16,
@@ -19516,7 +20095,7 @@
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 55.7,
+                "starterScore": 61.3,
                 "bullpenScore": 63.2,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -19531,19 +20110,19 @@
             "label": "Early-pressure side",
             "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 35.4,
+              "pressure": 35.2,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
-              "bridge": 67.1,
+              "bridge": 69.5,
               "flow": 100
             },
             "polygon": [
-              35.4,
+              35.2,
               44.8,
               8.5,
               24.4,
-              67.1,
+              69.5,
               100
             ],
             "dominantAxes": [
@@ -19555,7 +20134,7 @@
               {
                 "id": "bridge",
                 "label": "Bridge",
-                "score": 67.1
+                "score": 69.5
               },
               {
                 "id": "chaos",
@@ -19621,12 +20200,12 @@
           "side": "Giants is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 71.2% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 71.9% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 39.9,
+          "impactScore": 43,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -19663,12 +20242,12 @@
       "first5Moneyline": {
         "pickSide": "home",
         "pickTeam": "Giants",
-        "awayProjectedRuns": 1.9,
-        "homeProjectedRuns": 3.1,
-        "awayLeadProbability": 21.9,
-        "homeLeadProbability": 62,
-        "pushProbability": 16.1,
-        "leadProbability": 62,
+        "awayProjectedRuns": 1.8,
+        "homeProjectedRuns": 2.8,
+        "awayLeadProbability": 23.7,
+        "homeLeadProbability": 58.9,
+        "pushProbability": 17.4,
+        "leadProbability": 58.9,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -19690,9 +20269,9 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 64,
-        "probability": 25.6,
+        "probability": 25.5,
         "expectedValue": 0.3,
-        "statValueLabel": "0.30 exp HR",
+        "statValueLabel": "0.29 exp HR",
         "sample": {
           "seasonGames": 28,
           "seasonPlateAppearances": 109,
@@ -19764,9 +20343,9 @@
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
         "confidence": 68,
-        "probability": 89.1,
-        "expectedValue": 2.2,
-        "statValueLabel": "2.22 exp RBI",
+        "probability": 87.8,
+        "expectedValue": 2.1,
+        "statValueLabel": "2.11 exp RBI",
         "sample": {
           "seasonGames": 28,
           "seasonPlateAppearances": 109,
@@ -19839,9 +20418,9 @@
         "propLabel": "Runs",
         "marketLabel": "Over 0.5 runs",
         "confidence": 72,
-        "probability": 91.2,
-        "expectedValue": 2.4,
-        "statValueLabel": "2.44 exp runs",
+        "probability": 90,
+        "expectedValue": 2.3,
+        "statValueLabel": "2.30 exp runs",
         "sample": {
           "seasonGames": 28,
           "seasonPlateAppearances": 109,
@@ -19914,9 +20493,9 @@
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 97.6,
-        "expectedValue": 5.6,
-        "statValueLabel": "3.01 H · 1.34 R · 1.27 RBI · 5.61 total",
+        "probability": 97.2,
+        "expectedValue": 5.5,
+        "statValueLabel": "2.98 H · 1.26 R · 1.20 RBI · 5.45 total",
         "sample": {
           "seasonGames": 61,
           "seasonPlateAppearances": 250,
@@ -20064,9 +20643,9 @@
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
         "confidence": 82,
-        "probability": 80.2,
+        "probability": 79.8,
         "expectedValue": 3,
-        "statValueLabel": "3.01 exp hits",
+        "statValueLabel": "2.98 exp hits",
         "sample": {
           "seasonGames": 61,
           "seasonPlateAppearances": 250,
@@ -20138,9 +20717,9 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 66,
-        "probability": 51.5,
+        "probability": 51,
         "expectedValue": 0.7,
-        "statValueLabel": "0.72 exp walks",
+        "statValueLabel": "0.71 exp walks",
         "sample": {
           "seasonGames": 28,
           "seasonPlateAppearances": 109,
@@ -20212,9 +20791,9 @@
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
         "confidence": 82,
-        "probability": 94.1,
+        "probability": 94,
         "expectedValue": 2.8,
-        "statValueLabel": "2.83 exp singles",
+        "statValueLabel": "2.81 exp singles",
         "sample": {
           "seasonGames": 61,
           "seasonPlateAppearances": 250,
@@ -20283,7 +20862,7 @@
       "runs": [],
       "hitRunRbi": []
     },
-    "candidateCount": 71,
+    "candidateCount": 72,
     "summary": "The broad prop universe surfaced candidates, but none survived the tighter script and volatility filters on this pass. Featured props still show the broader board for context."
   }
 }

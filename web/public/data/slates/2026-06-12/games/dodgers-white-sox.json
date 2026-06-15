@@ -15,12 +15,12 @@
     {
       "side": "Away",
       "name": "Dodgers",
-      "detail": "Roki Sasaki (RHP) | 3-3 | 4.03 ERA | 60 SO | 1.26 WHIP | 58.0 IP"
+      "detail": "Roki Sasaki (RHP) | 3-4 | 4.76 ERA | 64 SO | 1.33 WHIP | 62.1 IP"
     },
     {
       "side": "Home",
       "name": "White Sox",
-      "detail": "Anthony Kay (LHP) | 5-1 | 4.40 ERA | 46 SO | 1.45 WHIP | 61.1 IP"
+      "detail": "Anthony Kay (LHP) | 6-1 | 4.34 ERA | 53 SO | 1.42 WHIP | 66.1 IP"
     }
   ],
   "summary": "Dodgers @ White Sox with Roki Sasaki against Anthony Kay.",
@@ -35,10 +35,10 @@
       "divisionLeader": true,
       "divisionRank": "1",
       "gamesBack": "-",
-      "losses": 25,
-      "runDifferential": 143,
-      "streakCode": "W1",
-      "winningPercentage": ".638",
+      "losses": 26,
+      "runDifferential": 137,
+      "streakCode": "L1",
+      "winningPercentage": ".629",
       "wins": 44
     },
     "home": {
@@ -46,10 +46,10 @@
       "divisionRank": "1",
       "gamesBack": "-",
       "losses": 31,
-      "runDifferential": 10,
-      "streakCode": "W2",
-      "winningPercentage": ".537",
-      "wins": 36
+      "runDifferential": 16,
+      "streakCode": "W3",
+      "winningPercentage": ".544",
+      "wins": 37
     }
   },
   "parkContext": {
@@ -133,6 +133,111 @@
       "Local first pitch 6:40 PM CDT is before the 20:00 late-light threshold.",
       "No exact home-plate umpire assignment; model records zero umpire adjustment."
     ]
+  },
+  "ficDailyMatchupContext": {
+    "source": "FantasyInfoCentral Daily Matchups",
+    "sourceDate": "2026-06-12",
+    "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+    "matchup": "Dodgers @ White Sox",
+    "gameContextMatch": "team-code",
+    "awayTeamCode": "LAN",
+    "homeTeamCode": "CHA",
+    "label": "Dodgers @ White Sox",
+    "sourceStatus": "warehouse",
+    "rowCount": 3,
+    "pitcherName": "A. Kay",
+    "gameContexts": [
+      "@ 13 LAN CHA"
+    ],
+    "averageHrForce": 1.7,
+    "maxHrForce": 1.7,
+    "highHrForceRows": 3,
+    "extremeHrForceRows": 3,
+    "highHrForceSharePct": 100,
+    "qualityAbPct": 33.3,
+    "hardHitPct": 0,
+    "matchupPassRows": 0,
+    "topRows": [
+      {
+        "playerName": "K. Tucker",
+        "pitcherName": "A. Kay",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "L",
+        "hrForce": 1.7,
+        "qualityAbPct": 100,
+        "hardHitPct": 0,
+        "recentOps": 0.471,
+        "bvpAtBats": 2,
+        "bvpAvg": 0.5,
+        "bvpOps": 2.5,
+        "matchupPass": false
+      },
+      {
+        "playerName": "A. Call",
+        "pitcherName": "A. Kay",
+        "position": "OF",
+        "batterHand": null,
+        "pitcherHand": "L",
+        "hrForce": 1.7,
+        "qualityAbPct": 0,
+        "hardHitPct": 0,
+        "recentOps": 0.328,
+        "bvpAtBats": 1,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      },
+      {
+        "playerName": "F. Freeman",
+        "pitcherName": "A. Kay",
+        "position": "1B",
+        "batterHand": null,
+        "pitcherHand": "L",
+        "hrForce": 1.7,
+        "qualityAbPct": 0,
+        "hardHitPct": 0,
+        "recentOps": 1.022,
+        "bvpAtBats": 1,
+        "bvpAvg": 0,
+        "bvpOps": 0,
+        "matchupPass": false
+      }
+    ],
+    "awayOffense": {
+      "label": "Dodgers hitters vs home starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    },
+    "homeOffense": {
+      "label": "White Sox hitters vs away starter",
+      "source": "FantasyInfoCentral Daily Matchups",
+      "sourceStatus": "missing",
+      "rowCount": 0,
+      "pitcherName": null,
+      "gameContexts": [],
+      "averageHrForce": 0,
+      "maxHrForce": null,
+      "highHrForceRows": 0,
+      "extremeHrForceRows": 0,
+      "highHrForceSharePct": null,
+      "qualityAbPct": 0,
+      "hardHitPct": 0,
+      "matchupPassRows": 0,
+      "topRows": []
+    }
   },
   "offenseContext": {
     "away": {
@@ -3073,71 +3178,71 @@
         {
           "inning": 1,
           "phase": "M2 YRFI/NRFI",
-          "runProbabilityPct": 79.5,
-          "noRunProbabilityPct": 20.5,
+          "runProbabilityPct": 81.4,
+          "noRunProbabilityPct": 18.6,
           "awayRunProbabilityPct": 72,
-          "homeRunProbabilityPct": 26.9,
+          "homeRunProbabilityPct": 33.4,
           "lean": "Run",
           "strength": "strong",
           "sampleHalves": 136,
           "caution": "Dodgers starter season line is clean early (10% run games, 0.3/start)",
-          "reason": "YRFI with a 80% modeled chance of at least one first-inning run. Dodgers score 72% of the time and White Sox 26.9% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather.",
+          "reason": "YRFI with a 81% modeled chance of at least one first-inning run. Dodgers score 72% of the time and White Sox 33.4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.6 is embedded in the first-inning run probability.",
           "sourceModel": "M2 first-inning"
         },
         {
           "inning": 2,
           "phase": "M2 early F5",
-          "runProbabilityPct": 63.2,
-          "noRunProbabilityPct": 36.8,
-          "awayRunProbabilityPct": 34,
-          "homeRunProbabilityPct": 29.2,
+          "runProbabilityPct": 67,
+          "noRunProbabilityPct": 33,
+          "awayRunProbabilityPct": 36,
+          "homeRunProbabilityPct": 31,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 136,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.9 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Dodgers F5 runs 2.5; White Sox F5 runs 1.5; Anthony Kay: HA 5.5, ER 2.5, win yes +319; Roki Sasaki: HA 4.5, ER 2.5, win yes +111; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 6.5 projected first-five runs, with inning 2 weighted by early scoring shape. Market anchors: Dodgers F5 runs 2.5; White Sox F5 runs 1.5; Anthony Kay: HA 5.5, ER 2.5, win yes +319; Roki Sasaki: HA 4.5, ER 2.5, win yes +111; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 3,
           "phase": "M2 early F5",
-          "runProbabilityPct": 73.6,
-          "noRunProbabilityPct": 26.4,
-          "awayRunProbabilityPct": 34.8,
-          "homeRunProbabilityPct": 38.8,
+          "runProbabilityPct": 77.1,
+          "noRunProbabilityPct": 22.9,
+          "awayRunProbabilityPct": 36.4,
+          "homeRunProbabilityPct": 40.7,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 136,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.9 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Dodgers F5 runs 2.5; White Sox F5 runs 1.5; Anthony Kay: HA 5.5, ER 2.5, win yes +319; Roki Sasaki: HA 4.5, ER 2.5, win yes +111; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 6.5 projected first-five runs, with inning 3 weighted by early scoring shape. Market anchors: Dodgers F5 runs 2.5; White Sox F5 runs 1.5; Anthony Kay: HA 5.5, ER 2.5, win yes +319; Roki Sasaki: HA 4.5, ER 2.5, win yes +111; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 4,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 70.3,
-          "noRunProbabilityPct": 29.7,
-          "awayRunProbabilityPct": 43,
-          "homeRunProbabilityPct": 27.3,
+          "runProbabilityPct": 74,
+          "noRunProbabilityPct": 26,
+          "awayRunProbabilityPct": 45.2,
+          "homeRunProbabilityPct": 28.8,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 136,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.9 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Dodgers F5 runs 2.5; White Sox F5 runs 1.5; Anthony Kay: HA 5.5, ER 2.5, win yes +319; Roki Sasaki: HA 4.5, ER 2.5, win yes +111; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 6.5 projected first-five runs, with inning 4 weighted by early scoring shape. Market anchors: Dodgers F5 runs 2.5; White Sox F5 runs 1.5; Anthony Kay: HA 5.5, ER 2.5, win yes +319; Roki Sasaki: HA 4.5, ER 2.5, win yes +111; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
           "inning": 5,
           "phase": "M2 turnover F5",
-          "runProbabilityPct": 65.2,
-          "noRunProbabilityPct": 34.8,
-          "awayRunProbabilityPct": 33.3,
-          "homeRunProbabilityPct": 31.9,
+          "runProbabilityPct": 68.9,
+          "noRunProbabilityPct": 31.1,
+          "awayRunProbabilityPct": 35.2,
+          "homeRunProbabilityPct": 33.7,
           "lean": "Run",
           "strength": "m2-strong",
           "sampleHalves": 136,
           "caution": "Allocated from M2 first-five total; inning split is directional.",
-          "reason": "M2 F5 allocator: 5.9 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Dodgers F5 runs 2.5; White Sox F5 runs 1.5; Anthony Kay: HA 5.5, ER 2.5, win yes +319; Roki Sasaki: HA 4.5, ER 2.5, win yes +111; team-hit line unavailable.",
+          "reason": "M2 F5 allocator: 6.5 projected first-five runs, with inning 5 weighted by early scoring shape. Market anchors: Dodgers F5 runs 2.5; White Sox F5 runs 1.5; Anthony Kay: HA 5.5, ER 2.5, win yes +319; Roki Sasaki: HA 4.5, ER 2.5, win yes +111; team-hit line unavailable.",
           "sourceModel": "M2 F5 allocator"
         },
         {
@@ -7239,15 +7344,15 @@
       "fullName": "Roki Sasaki",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 3,
-      "era": "4.03",
-      "strikeOuts": 60,
-      "inningsPitched": "58.0",
-      "hitsAllowed": 52,
-      "walks": 21,
-      "homeRunsAllowed": 10,
-      "whip": "1.26",
-      "gamesStarted": 11,
+      "losses": 4,
+      "era": "4.76",
+      "strikeOuts": 64,
+      "inningsPitched": "62.1",
+      "hitsAllowed": 59,
+      "walks": 24,
+      "homeRunsAllowed": 11,
+      "whip": "1.33",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 808963,
@@ -12108,16 +12213,16 @@
       "id": 641743,
       "fullName": "Anthony Kay",
       "pitchHand": "L",
-      "wins": 5,
+      "wins": 6,
       "losses": 1,
-      "era": "4.40",
-      "strikeOuts": 46,
-      "inningsPitched": "61.1",
-      "hitsAllowed": 63,
-      "walks": 26,
+      "era": "4.34",
+      "strikeOuts": 53,
+      "inningsPitched": "66.1",
+      "hitsAllowed": 67,
+      "walks": 27,
       "homeRunsAllowed": 10,
-      "whip": "1.45",
-      "gamesStarted": 11,
+      "whip": "1.42",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 641743,
@@ -17289,7 +17394,7 @@
       "index": 0,
       "role": "Away",
       "name": "Dodgers",
-      "detail": "Roki Sasaki (RHP) | 3-3 | 4.03 ERA | 60 SO | 1.26 WHIP | 58.0 IP",
+      "detail": "Roki Sasaki (RHP) | 3-4 | 4.76 ERA | 64 SO | 1.33 WHIP | 62.1 IP",
       "americanOdds": -156,
       "americanLabel": "-156",
       "decimalOdds": 1.641025641025641,
@@ -17301,7 +17406,7 @@
       "index": 1,
       "role": "Home",
       "name": "White Sox",
-      "detail": "Anthony Kay (LHP) | 5-1 | 4.40 ERA | 46 SO | 1.45 WHIP | 61.1 IP",
+      "detail": "Anthony Kay (LHP) | 6-1 | 4.34 ERA | 53 SO | 1.42 WHIP | 66.1 IP",
       "americanOdds": 129,
       "americanLabel": "+129",
       "decimalOdds": 2.29,
@@ -17319,7 +17424,7 @@
         "index": 0,
         "role": "Away",
         "name": "Dodgers",
-        "detail": "Roki Sasaki (RHP) | 3-3 | 4.03 ERA | 60 SO | 1.26 WHIP | 58.0 IP",
+        "detail": "Roki Sasaki (RHP) | 3-4 | 4.76 ERA | 64 SO | 1.33 WHIP | 62.1 IP",
         "americanOdds": -156,
         "americanLabel": "-156",
         "decimalOdds": 1.641025641025641,
@@ -17331,7 +17436,7 @@
         "index": 1,
         "role": "Home",
         "name": "White Sox",
-        "detail": "Anthony Kay (LHP) | 5-1 | 4.40 ERA | 46 SO | 1.45 WHIP | 61.1 IP",
+        "detail": "Anthony Kay (LHP) | 6-1 | 4.34 ERA | 53 SO | 1.42 WHIP | 66.1 IP",
         "americanOdds": 129,
         "americanLabel": "+129",
         "decimalOdds": 2.29,
@@ -17348,7 +17453,7 @@
       "index": 0,
       "role": "Away",
       "name": "Dodgers",
-      "detail": "Roki Sasaki (RHP) | 3-3 | 4.03 ERA | 60 SO | 1.26 WHIP | 58.0 IP",
+      "detail": "Roki Sasaki (RHP) | 3-4 | 4.76 ERA | 64 SO | 1.33 WHIP | 62.1 IP",
       "americanOdds": -156,
       "americanLabel": "-156",
       "decimalOdds": 1.641025641025641,
@@ -17360,7 +17465,7 @@
       "index": 1,
       "role": "Home",
       "name": "White Sox",
-      "detail": "Anthony Kay (LHP) | 5-1 | 4.40 ERA | 46 SO | 1.45 WHIP | 61.1 IP",
+      "detail": "Anthony Kay (LHP) | 6-1 | 4.34 ERA | 53 SO | 1.42 WHIP | 66.1 IP",
       "americanOdds": 129,
       "americanLabel": "+129",
       "decimalOdds": 2.29,
@@ -17369,14 +17474,14 @@
     },
     "lean": "Model pick: Dodgers on market price and lineup-vs-pitching fit.",
     "rationale": "Market price: Dodgers (58.3% no-vig) vs White Sox (41.7% no-vig)",
-    "confidence": 57,
+    "confidence": 59,
     "volatility": 91,
-    "recommendationScore": 37,
+    "recommendationScore": 38,
     "tier": "Swingy",
-    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + RP2 relief projection",
+    "sourceLabel": "Moneyline + listed starter data + standings context + park factors + team hit production + bullpen quality + RP2 bullpen bridge chain + Statcast contact quality + daily lineup matchup context + weather context + ENV1 run environment + FIC Daily Matchups HRForce + RP2 relief projection",
     "modelDesignation": "MLB-M2-game-shape-v0.1",
-    "modelEdge": 4.5,
-    "modelEdgeLabel": "4.5-point model edge",
+    "modelEdge": 2.7,
+    "modelEdgeLabel": "2.7-point model edge",
     "marketProbability": 0.5825451699171612,
     "marketProbabilityLabel": "58.3%",
     "inputs": [
@@ -17389,17 +17494,17 @@
       },
       {
         "label": "Lineup-vs-pitching fit",
-        "summary": "Lineup-vs-pitching fit: Dodgers (Grade +5.43 | platoon 7 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs White Sox (Grade +2.00 | platoon 7 | starter arsenal 61 | bridge arsenal 50 | pressure 81)",
+        "summary": "Lineup-vs-pitching fit: Dodgers (Grade +5.43 | platoon 7 | .300 bats 0 | bat pressure 50 | starter arsenal 94 | bridge arsenal 50 | pressure 94) vs White Sox (Grade +2.00 | platoon 7 | .300 bats 0 | bat pressure 50 | starter arsenal 61 | bridge arsenal 50 | pressure 81)",
         "source": "Official lineup + handedness + starter arsenal + likely reliever arsenal fit",
         "margin": 22.3,
         "weight": 0.14
       },
       {
-        "label": "Standings profile",
-        "summary": "Standings profile: Dodgers (44-25, division leader, +143 RD) vs White Sox (36-31, division leader, +10 RD)",
-        "source": "Standings context",
-        "margin": 12.5,
-        "weight": 0.14
+        "label": "Bullpen follow-through",
+        "summary": "Bullpen follow-through: Dodgers (3.53 ERA | 1.20 WHIP | 142 SO / 46 BB) vs White Sox (4.55 ERA | 1.46 WHIP | 164 SO / 90 BB)",
+        "source": "Covers bullpen stats",
+        "margin": 12.8,
+        "weight": 0.13
       }
     ],
     "inputsUsed": 12,
@@ -17426,10 +17531,6 @@
       },
       {
         "label": "One lineup specifically fits the listed starter arsenal",
-        "delta": 3
-      },
-      {
-        "label": "One starter owns a larger swing-and-miss edge",
         "delta": 3
       },
       {
@@ -17469,31 +17570,27 @@
         "delta": 4
       },
       {
-        "label": "Starter edge looks better than the late-inning hold profile; this reads cleaner for first five",
-        "delta": 5
-      },
-      {
         "label": "v1.1 market lane: this sits in the healthier moderate-favorite range with a cleaner state/risk profile than the average board favorite.",
         "delta": -2
       }
     ],
     "pickReasons": [
-      "Dodgers own the cleaner full-game traffic script at 12 projected hits.",
-      "Dodgers have the better starter-window lane with 7.1 projected first-five hits.",
-      "Dodgers still hold the better bridge-and-finish script once the bullpens take over.",
-      "Dodgers also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late."
+      "Dodgers own the cleaner full-game traffic script at 11.8 projected hits.",
+      "Dodgers have the better starter-window lane with 7.3 projected first-five hits.",
+      "Dodgers also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
+      "Dodgers can lean on Andy Pages, Freddie Freeman, Max Muncy to drive early pressure against Anthony Kay."
     ],
     "indicators": {
-      "reliefPitchingRisk": 57,
-      "coinflipPressure": 71,
-      "starterLeverageIndex": 61.5,
+      "reliefPitchingRisk": 49,
+      "coinflipPressure": 61,
+      "starterLeverageIndex": 47.1,
       "lateInningStabilityIndex": 48.5,
       "pickBullpenScore": 67.5,
       "oppBullpenScore": 54.7,
       "pickBullpenChainScore": 76.5,
       "oppBullpenChainScore": 72.4,
-      "pickStarterScore": 64,
-      "oppStarterScore": 66.6,
+      "pickStarterScore": 60.9,
+      "oppStarterScore": 68,
       "pickStarterLeashScore": 0,
       "oppStarterLeashScore": 0,
       "pickStoryInstability": null,
@@ -17549,7 +17646,7 @@
       "tierThreeBullpenCommandMismatchFlag": false,
       "tierThreeSuggestedEdgeHaircut": 0,
       "tierThreeSuggestedConfidenceHaircut": 0,
-      "projectedHitEdgeForPick": 2.9,
+      "projectedHitEdgeForPick": 1.2,
       "hitEdgeAgainstPick": false,
       "pickIsMarketFavorite": true,
       "pickIsMarketUnderdog": false,
@@ -17572,11 +17669,10 @@
         "protectedMarketDogFlag": false
       },
       "efficientFavoriteCandidateFlag": false,
-      "efficientFavoriteScore": 6,
+      "efficientFavoriteScore": -4,
       "efficientFavoriteTier": "Watch favorite",
       "efficientFavoriteReasons": [
-        "moderateFavoritePrice",
-        "broadSupport"
+        "moderateFavoritePrice"
       ],
       "efficientFavoritePenaltyFlags": [
         "highVolatility",
@@ -17589,8 +17685,8 @@
       "tierOneRiskFlags": [
         "moderateFavoriteClean"
       ],
-      "favoredSignalCount": 7,
-      "starterLateGap": 13,
+      "favoredSignalCount": 5,
+      "starterLateGap": -1.4,
       "starterLeashGap": 0,
       "edgeHaircutApplied": 0,
       "gameShape": {
@@ -17598,15 +17694,15 @@
         "shapeLabel": "balanced traffic game",
         "category": "early_pressure_side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "categoryConfidence": 62.6,
-        "realityGapScore": 38,
+        "categoryConfidence": 59.9,
+        "realityGapScore": 37.9,
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
         "radarDominantAxes": [
           {
             "id": "flow",
             "label": "Flow",
-            "score": 100
+            "score": 60
           },
           {
             "id": "chaos",
@@ -17614,12 +17710,12 @@
             "score": 44.8
           },
           {
-            "id": "pressure",
-            "label": "Pressure",
-            "score": 34.7
+            "id": "air",
+            "label": "Air",
+            "score": 24.4
           }
         ],
-        "rfImpactScore": 34.1
+        "rfImpactScore": 53.9
       }
     },
     "gameShape": {
@@ -17630,7 +17726,7 @@
         "slug": "early_pressure_side",
         "label": "Early-pressure side",
         "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-        "confidence": 62.6,
+        "confidence": 59.9,
         "reasons": [
           "The pick needs to cash the first traffic pocket.",
           "The best edge is timing, not late-game patience."
@@ -17667,27 +17763,27 @@
         "diagnostics": {
           "pickOwnsFull": true,
           "pickOwnsFirst5": true,
-          "pickOwnsLate": true,
+          "pickOwnsLate": false,
           "pickOwnsBridge": true,
-          "pickPhaseCount": 4,
+          "pickPhaseCount": 3,
           "lowPickConversion": true,
           "quietPick": false,
           "lineupGap": 0,
           "opponentChaosGap": 0,
-          "projectedHitEdge": 2.9
+          "projectedHitEdge": 1.2
         }
       },
-      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 38/100. Main checks: 79°F | Wind 13 mph Out | 0% precip | weather helps carry.",
+      "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.9/100. Main checks: 79°F | Wind 13 mph Out | 0% precip | weather helps carry.",
       "pickTeam": "Dodgers",
       "opponentTeam": "White Sox",
       "scores": {
         "chaosScore": 44.8,
         "deadEarlyScore": 8.5,
-        "phaseSplitScore": 0,
-        "bullpenFlipScore": 33.6,
-        "starterControlScore": 38,
-        "marketContradictionScore": 15.6,
-        "realityGapScore": 38
+        "phaseSplitScore": 40,
+        "bullpenFlipScore": 24,
+        "starterControlScore": 30.9,
+        "marketContradictionScore": 14.7,
+        "realityGapScore": 37.9
       },
       "radar": {
         "version": "MLB-M2-game-shape-radar-v1",
@@ -17701,9 +17797,9 @@
             "id": "pressure",
             "label": "Pressure",
             "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-            "gameScore": 34.7,
-            "pickScore": 34.7,
-            "opponentScore": 12
+            "gameScore": 20.6,
+            "pickScore": 20.6,
+            "opponentScore": 12.2
           },
           {
             "id": "chaos",
@@ -17733,7 +17829,7 @@
             "id": "bridge",
             "label": "Bridge",
             "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-            "gameScore": 33.6,
+            "gameScore": 24,
             "pickScore": 1,
             "opponentScore": 5.8
           },
@@ -17741,9 +17837,9 @@
             "id": "flow",
             "label": "Flow",
             "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-            "gameScore": 100,
-            "pickScore": 100,
-            "opponentScore": 0
+            "gameScore": 60,
+            "pickScore": 75,
+            "opponentScore": 25
           }
         ],
         "profiles": [
@@ -17751,26 +17847,26 @@
             "role": "pick",
             "team": "Dodgers",
             "scores": {
-              "pressure": 34.7,
+              "pressure": 20.6,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
               "bridge": 1,
-              "flow": 100
+              "flow": 75
             },
             "polygon": [
-              34.7,
+              20.6,
               5,
               0,
               16,
               1,
-              100
+              75
             ],
-            "phaseOwnershipPct": 100,
+            "phaseOwnershipPct": 75,
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 64,
+              "starterScore": 60.9,
               "bullpenScore": 67.5,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17784,26 +17880,26 @@
             "role": "opponent",
             "team": "White Sox",
             "scores": {
-              "pressure": 12,
+              "pressure": 12.2,
               "chaos": 5,
               "freeze": 0,
               "air": 16,
               "bridge": 5.8,
-              "flow": 0
+              "flow": 25
             },
             "polygon": [
-              12,
+              12.2,
               5,
               0,
               16,
               5.8,
-              0
+              25
             ],
-            "phaseOwnershipPct": 0,
+            "phaseOwnershipPct": 25,
             "inputs": {
               "lineupConversion": 0,
               "topOrderPressure": 0,
-              "starterScore": 66.6,
+              "starterScore": 68,
               "bullpenScore": 54.7,
               "mistakeChaos": 0,
               "runClustering": 0,
@@ -17818,26 +17914,26 @@
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
           "scores": {
-            "pressure": 34.7,
+            "pressure": 20.6,
             "chaos": 44.8,
             "freeze": 8.5,
             "air": 24.4,
-            "bridge": 33.6,
-            "flow": 100
+            "bridge": 24,
+            "flow": 60
           },
           "polygon": [
-            34.7,
+            20.6,
             44.8,
             8.5,
             24.4,
-            33.6,
-            100
+            24,
+            60
           ],
           "dominantAxes": [
             {
               "id": "flow",
               "label": "Flow",
-              "score": 100
+              "score": 60
             },
             {
               "id": "chaos",
@@ -17845,9 +17941,9 @@
               "score": 44.8
             },
             {
-              "id": "pressure",
-              "label": "Pressure",
-              "score": 34.7
+              "id": "air",
+              "label": "Air",
+              "score": 24.4
             }
           ]
         }
@@ -17855,10 +17951,10 @@
       "phaseMap": {
         "fullGameTraffic": "Dodgers",
         "first5": "Dodgers",
-        "late": "Dodgers",
+        "late": "White Sox",
         "bridge": "Dodgers",
-        "distinctPhaseTeams": 1,
-        "pickPhaseMisses": 0
+        "distinctPhaseTeams": 2,
+        "pickPhaseMisses": 1
       },
       "metrics": {
         "maxMistakeChaos": null,
@@ -17908,12 +18004,12 @@
         "side": "Dodgers is more coherent as a side because the game shape mostly agrees with the projection.",
         "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
         "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 79.5% YRFI."
+        "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 81.4% YRFI."
       },
       "rfLens": {
         "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
         "mode": "research baseline lens",
-        "impactScore": 34.1,
+        "impactScore": 53.9,
         "laneBaselines": {
           "moneyline": {
             "model": "RandomForestClassifier",
@@ -17948,26 +18044,26 @@
       }
     },
     "mlbProjection": {
-      "awayProjectedHits": 12,
-      "homeProjectedHits": 9.1,
-      "awayHitEfficiencyPct": 34.7,
-      "homeHitEfficiencyPct": 26.7,
-      "awayFirst5ProjectedHits": 7.1,
-      "homeFirst5ProjectedHits": 5.4,
-      "awayFirst5HitEfficiencyPct": 37,
-      "homeFirst5HitEfficiencyPct": 28.8,
-      "awayLateProjectedHits": 4.7,
-      "homeLateProjectedHits": 3.9,
-      "awayLateHitEfficiencyPct": 30.7,
-      "homeLateHitEfficiencyPct": 25.4,
+      "awayProjectedHits": 11.8,
+      "homeProjectedHits": 10.6,
+      "awayHitEfficiencyPct": 34.2,
+      "homeHitEfficiencyPct": 31,
+      "awayFirst5ProjectedHits": 7.3,
+      "homeFirst5ProjectedHits": 5.7,
+      "awayFirst5HitEfficiencyPct": 38,
+      "homeFirst5HitEfficiencyPct": 30.4,
+      "awayLateProjectedHits": 4.5,
+      "homeLateProjectedHits": 4.9,
+      "awayLateHitEfficiencyPct": 29.1,
+      "homeLateHitEfficiencyPct": 32,
       "awayBullpenChainScore": 76.5,
       "homeBullpenChainScore": 72.4,
       "edgeTeam": "Dodgers",
-      "edgeHits": 2.9,
+      "edgeHits": 1.2,
       "first5EdgeTeam": "Dodgers",
-      "first5EdgeHits": 1.7,
-      "lateEdgeTeam": "Dodgers",
-      "lateEdgeHits": 0.8,
+      "first5EdgeHits": 1.6,
+      "lateEdgeTeam": "White Sox",
+      "lateEdgeHits": 0.4,
       "bridgeEdgeTeam": "Dodgers",
       "bridgeEdgeScore": 4.1,
       "awayLikelyRelievers": [
@@ -18076,32 +18172,36 @@
       "homeBullpenExhaustionLabel": "fresh",
       "awayPitcherType": "Balanced righty",
       "homePitcherType": "Traffic-risk lefty",
-      "awayStarterHoldConfidence": 33.4,
-      "homeStarterHoldConfidence": 23.3,
-      "awayProjectedRuns": 5.6,
-      "homeProjectedRuns": 4.7,
-      "awayFirst5ProjectedRuns": 3.3,
-      "homeFirst5ProjectedRuns": 2.6,
+      "awayStarterHoldConfidence": 32.2,
+      "homeStarterHoldConfidence": 19.2,
+      "awayProjectedRuns": 5.9,
+      "homeProjectedRuns": 5.7,
+      "awayFirst5ProjectedRuns": 3.6,
+      "homeFirst5ProjectedRuns": 2.9,
       "awayLateProjectedRuns": 2.3,
-      "homeLateProjectedRuns": 2.1,
+      "homeLateProjectedRuns": 2.8,
       "postedTotal": 9,
       "totals": {
         "fullGame": {
           "lean": "Over",
-          "edge": 1.3,
+          "edge": 2.6,
           "strength": "Strong",
           "label": "Over 9",
-          "summary": "Over lean with a 1.3-run edge against 9.",
+          "summary": "Over lean with a 2.6-run edge against 9.",
           "chaosGate": {
             "phase": "full",
-            "overChaosScore": 4,
+            "overChaosScore": 13,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "79°F | Wind 13 mph Out | 0% precip | weather helps carry",
-              "both offenses project traffic"
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.7",
+              "material HRForce 1.7",
+              "RP2 bridge stress 33.4"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -18112,26 +18212,47 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.2,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.7,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": true,
+              "carryMultiplier": 1.25,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 33.4,
+              "maxRp2ReliefRuns": 2.9,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
         "first5": {
           "lean": "Over",
-          "edge": 1.4,
+          "edge": 2,
           "strength": "Strong",
           "label": "Over 4.5",
-          "summary": "Over lean with a 1.4-run edge against 4.5.",
+          "summary": "Over lean with a 2.0-run edge against 4.5.",
           "chaosGate": {
             "phase": "first5",
-            "overChaosScore": 3,
+            "overChaosScore": 11,
             "underDragScore": 0,
             "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "79°F | Wind 13 mph Out | 0% precip | weather helps carry",
-              "both offenses project traffic"
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.7",
+              "material HRForce 1.7",
+              "RP2 bridge can enter early"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -18142,21 +18263,43 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.2,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.7,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": true,
+              "carryMultiplier": 1.25,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 33.4,
+              "maxRp2ReliefRuns": 2.9,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           },
           "tailOverlay": {
-            "baseProjectedRuns": 5.9,
-            "adjustedProjectedRuns": 5.9,
-            "adjustedEdge": 1.4,
+            "baseProjectedRuns": 6.5,
+            "adjustedProjectedRuns": 9.4,
+            "adjustedEdge": 4.9,
             "marketExpression": "Over",
-            "shape": "balanced",
-            "tailScore": 32,
+            "shape": "over-tail",
+            "tailScore": 79,
             "strandScore": 0,
             "forkScore": 0,
-            "tailLift": 0,
+            "tailLift": 2.9,
             "strandDrag": 0,
-            "notes": [],
+            "notes": [
+              "fat-tail run environment",
+              "carry/weather turns ordinary contact into extra-base risk",
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.7"
+            ],
             "metrics": {
               "maxMistakeChaos": null,
               "maxRunClustering": null,
@@ -18165,29 +18308,49 @@
               "maxDeadBatTraffic": 0,
               "maxTrafficNoConversion": 0,
               "minLineupConversion": null,
-              "totalFirst5ProjectedHits": 12.5,
+              "totalFirst5ProjectedHits": 13,
               "weatherCarry": true,
               "weatherSuppress": false,
+              "envRunDelta": 0.2,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.7,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": true,
+              "carryMultiplier": 1.25,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 33.4,
+              "maxRp2ReliefRuns": 2.9,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
               "visibilityRisk": null
             }
           }
         },
         "late": {
-          "lean": "Pass",
-          "edge": -0.1,
-          "strength": "Thin",
-          "label": "Hold 4.5",
-          "summary": "Model projection 4.4 is essentially on the posted 4.5.",
+          "lean": "Over",
+          "edge": 0.6,
+          "strength": "Lean",
+          "label": "Over 4.5",
+          "summary": "Over lean with a 0.6-run edge against 4.5.",
           "chaosGate": {
             "phase": "late",
-            "overChaosScore": 3,
+            "overChaosScore": 12,
             "underDragScore": 0,
-            "warning": true,
+            "warning": false,
             "vetoed": false,
+            "vetoKind": null,
             "vetoReason": "",
             "notes": [
               "79°F | Wind 13 mph Out | 0% precip | weather helps carry",
-              "both offenses project traffic"
+              "ENV1 HRForce 1.6",
+              "FIC HRForce 1.7",
+              "material HRForce 1.7",
+              "RP2 bridge stress 33.4"
             ],
             "metrics": {
               "maxMistakeChaos": null,
@@ -18198,25 +18361,47 @@
               "maxDeadBatTraffic": 0,
               "minLineupConversion": null,
               "weatherCarry": true,
-              "weatherSuppress": false
+              "weatherSuppress": false,
+              "envRunDelta": 0.2,
+              "envHitsDelta": 0,
+              "envHrDelta": 0.1,
+              "hrForce": 1.6,
+              "highHrForce": true,
+              "lowerWeatherCarry": false,
+              "ficHrForce": 1.7,
+              "ficHighHrForce": true,
+              "materialHrForce": true,
+              "extremeHrForce": true,
+              "carryMultiplier": 1.25,
+              "ficHighHrForceSharePct": 100,
+              "maxRp2BridgeStress": 33.4,
+              "maxRp2ReliefRuns": 2.9,
+              "rp2LateRunRisk": true,
+              "maxRepeatOpponentFirst5Tax": null,
+              "maxRepeatOpponentHitTax": null
             }
           }
         },
-        "projectedFullTotalRuns": 10.3,
-        "projectedFirst5TotalRuns": 5.9,
-        "tailAdjustedProjectedFirst5TotalRuns": 5.9,
+        "projectedFullTotalRuns": 11.6,
+        "projectedFirst5TotalRuns": 6.5,
+        "tailAdjustedProjectedFirst5TotalRuns": 9.4,
         "first5TailOverlay": {
-          "baseProjectedRuns": 5.9,
-          "adjustedProjectedRuns": 5.9,
-          "adjustedEdge": 1.4,
+          "baseProjectedRuns": 6.5,
+          "adjustedProjectedRuns": 9.4,
+          "adjustedEdge": 4.9,
           "marketExpression": "Over",
-          "shape": "balanced",
-          "tailScore": 32,
+          "shape": "over-tail",
+          "tailScore": 79,
           "strandScore": 0,
           "forkScore": 0,
-          "tailLift": 0,
+          "tailLift": 2.9,
           "strandDrag": 0,
-          "notes": [],
+          "notes": [
+            "fat-tail run environment",
+            "carry/weather turns ordinary contact into extra-base risk",
+            "ENV1 HRForce 1.6",
+            "FIC HRForce 1.7"
+          ],
           "metrics": {
             "maxMistakeChaos": null,
             "maxRunClustering": null,
@@ -18225,16 +18410,32 @@
             "maxDeadBatTraffic": 0,
             "maxTrafficNoConversion": 0,
             "minLineupConversion": null,
-            "totalFirst5ProjectedHits": 12.5,
+            "totalFirst5ProjectedHits": 13,
             "weatherCarry": true,
             "weatherSuppress": false,
+            "envRunDelta": 0.2,
+            "envHitsDelta": 0,
+            "envHrDelta": 0.1,
+            "hrForce": 1.6,
+            "highHrForce": true,
+            "lowerWeatherCarry": false,
+            "ficHrForce": 1.7,
+            "ficHighHrForce": true,
+            "materialHrForce": true,
+            "extremeHrForce": true,
+            "carryMultiplier": 1.25,
+            "ficHighHrForceSharePct": 100,
+            "maxRp2BridgeStress": 33.4,
+            "maxRp2ReliefRuns": 2.9,
+            "rp2LateRunRisk": true,
+            "maxRepeatOpponentFirst5Tax": null,
             "visibilityRisk": null
           }
         },
-        "projectedLateTotalRuns": 4.4,
+        "projectedLateTotalRuns": 5.1,
         "derivedFirst5TotalLine": 4.5,
         "postedFirst5TotalLine": 4.5,
-        "runShareFirst5TotalLine": 5.2,
+        "runShareFirst5TotalLine": 5,
         "first5TotalLineSource": "posted",
         "derivedLateTotalLine": 4.5,
         "bullpenExhaustionNote": "79°F | Wind 13 mph Out | 0% precip | weather helps carry. No major bridge-chain exhaustion flag has surfaced yet.",
@@ -18245,28 +18446,39 @@
         "pick": "YRFI",
         "strength": "Strong",
         "label": "YRFI",
-        "edge": 29.5,
-        "yesProbabilityPct": 79.5,
-        "noProbabilityPct": 20.5,
+        "edge": 31.4,
+        "yesProbabilityPct": 81.4,
+        "noProbabilityPct": 18.6,
         "awayRunProbabilityPct": 72,
-        "homeRunProbabilityPct": 26.9,
+        "homeRunProbabilityPct": 33.4,
         "awayTeamScoredRatePct": null,
         "homeTeamScoredRatePct": null,
         "awayOppPitcherAllowedRatePct": 60,
         "homeOppPitcherAllowedRatePct": 20,
         "awayProjectedRuns": 0.9,
-        "homeProjectedRuns": 0.4,
+        "homeProjectedRuns": 0.5,
         "reasonStack": [
           "Dodgers top order is driving early pressure (87.3)",
+          "Dodgers top third has multiple strong split bats",
           "White Sox starter has leaked 1st-inning runs in 60% of recent starts",
-          "White Sox starter has real season 1st-inning damage (50% run games, 0.6/start)"
+          "White Sox starter has real season 1st-inning damage (50% run games, 0.6/start)",
+          "ENV1 HRForce 1.6 raises YRFI carry"
         ],
         "cautionStack": [
           "Dodgers starter season line is clean early (10% run games, 0.3/start)"
         ],
-        "projectedRuns": 1.3,
+        "environmentAddendum": {
+          "hrForce": 1.6,
+          "highHrForce": true,
+          "maxProbabilityLiftPct": 5.7,
+          "maxProjectedRunsLift": 0.1,
+          "reasons": [
+            "ENV1 HRForce 1.6 raises YRFI carry"
+          ]
+        },
+        "projectedRuns": 1.4,
         "line": 0.5,
-        "summary": "YRFI with a 80% modeled chance of at least one first-inning run. Dodgers score 72% of the time and White Sox 26.9% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather."
+        "summary": "YRFI with a 81% modeled chance of at least one first-inning run. Dodgers score 72% of the time and White Sox 33.4% of the time in this matchup blend of lineup pressure, recent early scoring shape, opposing starter leakage, series carryover, and weather. ENV1 HRForce 1.6 is embedded in the first-inning run probability."
       },
       "teamScripts": [
         {
@@ -18303,9 +18515,8 @@
           "depthScore": 68.1,
           "bullpenOverperformHitters": [],
           "winPath": [
-            "Dodgers own the cleaner full-game traffic script at 12 projected hits.",
-            "Dodgers have the better starter-window lane with 7.1 projected first-five hits.",
-            "Dodgers still hold the better bridge-and-finish script once the bullpens take over.",
+            "Dodgers own the cleaner full-game traffic script at 11.8 projected hits.",
+            "Dodgers have the better starter-window lane with 7.3 projected first-five hits.",
             "Dodgers also profile for the cleaner likely first-two reliever chain, which matters if the game stays tight late.",
             "Dodgers can lean on Andy Pages, Freddie Freeman, Max Muncy to drive early pressure against Anthony Kay.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
@@ -18347,6 +18558,7 @@
           "depthScore": 68.7,
           "bullpenOverperformHitters": [],
           "winPath": [
+            "White Sox still hold the better bridge-and-finish script once the bullpens take over.",
             "White Sox can lean on Braden Montgomery, Jacob Gonzalez, Tristan Peters to drive early pressure against Roki Sasaki.",
             "No strong reliever-arsenal edge has surfaced yet for the likely bridge arms.",
             "Braden Montgomery and Jacob Gonzalez and Tristan Peters are the best current carry bats in this lineup."
@@ -18354,24 +18566,24 @@
         }
       ],
       "lineupSimulation": {
-        "overview": "Dodgers carry the cleaner starter, bridge, and full-game script once the posted batting orders are folded in.",
+        "overview": "Dodgers rate cleaner through the starter window, but the bridge and finish script still move later in the game.",
         "phases": [
           {
             "label": "First 5",
             "edgeTeam": "Dodgers",
-            "projection": "3.3 R",
+            "projection": "3.6 R",
             "note": "Dodgers lean on Andy Pages, Freddie Freeman to drive the early traffic lane against the listed starter."
           },
           {
             "label": "Bridge",
-            "edgeTeam": "Dodgers",
-            "projection": "2.3 R",
-            "note": "Dodgers keep more late scoring paths alive, with Andy Pages, Freddie Freeman plus the Dodgers bridge chain shaping the middle innings."
+            "edgeTeam": "White Sox",
+            "projection": "2.8 R",
+            "note": "White Sox keep more late scoring paths alive, with Braden Montgomery, Jacob Gonzalez plus the Dodgers bridge chain shaping the middle innings."
           },
           {
             "label": "Full game",
             "edgeTeam": "Dodgers",
-            "projection": "12 H",
+            "projection": "11.8 H",
             "note": "Dodgers finish with the stronger aggregate traffic path, anchored by Andy Pages, Freddie Freeman."
           }
         ]
@@ -18433,6 +18645,50 @@
           "runsMultiplier": 1
         }
       },
+      "ficDailyMatchup": {
+        "source": "FantasyInfoCentral Daily Matchups",
+        "sourceDate": "2026-06-12",
+        "sourceUrl": "https://www.fantasyinfocentral.com/mlb/daily-matchups?date=2026-06-12",
+        "matchup": "Dodgers @ White Sox",
+        "gameContextMatch": "team-code",
+        "rowCount": 3,
+        "averageHrForce": 1.7,
+        "maxHrForce": 1.7,
+        "highHrForceRows": 3,
+        "extremeHrForceRows": 3,
+        "highHrForceSharePct": 100,
+        "qualityAbPct": 33.3,
+        "hardHitPct": 0,
+        "matchupPassRows": 0,
+        "awayOffense": {
+          "label": "Dodgers hitters vs home starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        },
+        "homeOffense": {
+          "label": "White Sox hitters vs away starter",
+          "rowCount": 0,
+          "pitcherName": null,
+          "averageHrForce": 0,
+          "maxHrForce": 0,
+          "highHrForceRows": 0,
+          "extremeHrForceRows": 0,
+          "highHrForceSharePct": 0,
+          "qualityAbPct": 0,
+          "hardHitPct": 0,
+          "matchupPassRows": 0,
+          "topRows": []
+        }
+      },
       "reliefProjection": {
         "away": {
           "teamName": "Dodgers",
@@ -18471,22 +18727,345 @@
           }
         }
       },
+      "adjustmentChecklist": {
+        "summary": [
+          "high-HRForce carry is active",
+          "available-bullpen damage adjustment is active",
+          "handedness split adjustment is active"
+        ],
+        "environment": {
+          "hrForce": 1.7,
+          "envHrForce": 1.6,
+          "ficHrForce": 1.7,
+          "materialHrForce": true,
+          "extremeHrForce": true,
+          "carryMultiplier": 1.25,
+          "hitDelta": 0.9,
+          "runDelta": 1,
+          "conversionDelta": 0.031259999999999996,
+          "firstInningProbabilityLiftPct": 7.8,
+          "underFragilityRuns": 3,
+          "flags": [
+            "Material HRForce 1.7: pitcher damage and batter production lifted"
+          ],
+          "reasons": [
+            "HRForce 1.7 applies material carry to pitcher damage and batter production",
+            "weather/park carry is favorable for flight",
+            "FIC batter-vs-pitcher pockets show HRForce carry"
+          ]
+        },
+        "starters": [
+          {
+            "teamName": "Dodgers",
+            "pitcherName": "Roki Sasaki",
+            "gamesStarted": 12,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Balanced righty",
+            "expectedInnings": 5.1,
+            "opponentHistory": null,
+            "flags": []
+          },
+          {
+            "teamName": "White Sox",
+            "pitcherName": "Anthony Kay",
+            "gamesStarted": 12,
+            "recentStartsSample": null,
+            "sampleEstablished": true,
+            "profileType": "Traffic-risk lefty",
+            "expectedInnings": 5.03,
+            "opponentHistory": null,
+            "flags": [
+              "traffic-risk starter type"
+            ]
+          }
+        ],
+        "handednessSplits": [
+          {
+            "teamName": "Dodgers",
+            "opposingStarterHand": "L",
+            "handednessSplitIndex": 58.3,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.253,
+            "splitOpsAverage": 0.753,
+            "topSixSplitAvgAverage": 0.263,
+            "topSixSplitOpsAverage": 0.78,
+            "strongSplitCount": 4,
+            "weakSplitCount": 2,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 4,
+            "topSixWeakSplitCount": 1,
+            "topThirdStrongSplitCount": 2,
+            "topThirdWeakSplitCount": 0,
+            "hitDelta": 0.2,
+            "runConversionDelta": 0.004657499999999999,
+            "strongSplitBats": [
+              {
+                "name": "Alex Call",
+                "slot": 1,
+                "bats": "R",
+                "plateAppearances": 31,
+                "avg": 0.385,
+                "ops": 0.952,
+                "seasonAvg": 0.266,
+                "seasonOps": 0.708,
+                "recentAvg": 0.154,
+                "recentOps": 0.421
+              },
+              {
+                "name": "Andy Pages",
+                "slot": 2,
+                "bats": "R",
+                "plateAppearances": 68,
+                "avg": 0.27,
+                "ops": 0.833,
+                "seasonAvg": 0.282,
+                "seasonOps": 0.847,
+                "recentAvg": 0.25,
+                "recentOps": 0.769
+              },
+              {
+                "name": "Kyle Tucker",
+                "slot": 5,
+                "bats": "L",
+                "plateAppearances": 70,
+                "avg": 0.254,
+                "ops": 0.817,
+                "seasonAvg": 0.237,
+                "seasonOps": 0.714,
+                "recentAvg": 0.158,
+                "recentOps": 0.471
+              },
+              {
+                "name": "Miguel Rojas",
+                "slot": 6,
+                "bats": "R",
+                "plateAppearances": 60,
+                "avg": 0.296,
+                "ops": 0.774,
+                "seasonAvg": 0.253,
+                "seasonOps": 0.636,
+                "recentAvg": 0.2,
+                "recentOps": 0.508
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Santiago Espinal",
+                "slot": 8,
+                "bats": "R",
+                "plateAppearances": 34,
+                "avg": 0.161,
+                "ops": 0.44,
+                "seasonAvg": 0.25,
+                "seasonOps": 0.625,
+                "recentAvg": 0.429,
+                "recentOps": 0.857
+              },
+              {
+                "name": "Mookie Betts",
+                "slot": 4,
+                "bats": "R",
+                "plateAppearances": 40,
+                "avg": 0.2,
+                "ops": 0.704,
+                "seasonAvg": 0.185,
+                "seasonOps": 0.603,
+                "recentAvg": 0.2,
+                "recentOps": 0.554
+              }
+            ],
+            "flags": [
+              "4 strong split bats vs L",
+              "top-third split pressure",
+              "Alex Call 0.952 OPS vs L",
+              "Andy Pages 0.833 OPS vs L",
+              "Santiago Espinal 0.440 OPS vs L"
+            ]
+          },
+          {
+            "teamName": "White Sox",
+            "opposingStarterHand": "R",
+            "handednessSplitIndex": 52.7,
+            "label": "mixed handedness split lane",
+            "splitAvgAverage": 0.255,
+            "splitOpsAverage": 0.768,
+            "topSixSplitAvgAverage": 0.25,
+            "topSixSplitOpsAverage": 0.762,
+            "strongSplitCount": 4,
+            "weakSplitCount": 2,
+            "severeWeakSplitCount": 1,
+            "topSixStrongSplitCount": 2,
+            "topSixWeakSplitCount": 1,
+            "topThirdStrongSplitCount": 1,
+            "topThirdWeakSplitCount": 1,
+            "hitDelta": 0,
+            "runConversionDelta": 0.0014200000000000013,
+            "strongSplitBats": [
+              {
+                "name": "Jacob Gonzalez",
+                "slot": 7,
+                "bats": "L",
+                "plateAppearances": 21,
+                "avg": 0.368,
+                "ops": 0.955,
+                "seasonAvg": 0.308,
+                "seasonOps": 0.842,
+                "recentAvg": 0.333,
+                "recentOps": 1.05
+              },
+              {
+                "name": "Sam Antonacci",
+                "slot": 1,
+                "bats": "L",
+                "plateAppearances": 156,
+                "avg": 0.333,
+                "ops": 0.873,
+                "seasonAvg": 0.285,
+                "seasonOps": 0.762,
+                "recentAvg": 0.214,
+                "recentOps": 0.635
+              },
+              {
+                "name": "Tristan Peters",
+                "slot": 8,
+                "bats": "L",
+                "plateAppearances": 169,
+                "avg": 0.316,
+                "ops": 0.844,
+                "seasonAvg": 0.298,
+                "seasonOps": 0.79,
+                "recentAvg": 0.375,
+                "recentOps": 1.037
+              },
+              {
+                "name": "Colson Montgomery",
+                "slot": 4,
+                "bats": "L",
+                "plateAppearances": 192,
+                "avg": 0.228,
+                "ops": 0.813,
+                "seasonAvg": 0.225,
+                "seasonOps": 0.801,
+                "recentAvg": 0.273,
+                "recentOps": 1.065
+              }
+            ],
+            "weakSplitBats": [
+              {
+                "name": "Drew Romo",
+                "slot": 9,
+                "bats": "S",
+                "plateAppearances": 72,
+                "avg": 0.156,
+                "ops": 0.627,
+                "seasonAvg": 0.158,
+                "seasonOps": 0.669,
+                "recentAvg": null,
+                "recentOps": 0.091
+              },
+              {
+                "name": "Miguel Vargas",
+                "slot": 2,
+                "bats": "R",
+                "plateAppearances": 202,
+                "avg": 0.201,
+                "ops": 0.73,
+                "seasonAvg": 0.243,
+                "seasonOps": 0.863,
+                "recentAvg": 0.25,
+                "recentOps": 0.775
+              }
+            ],
+            "flags": [
+              "4 strong split bats vs R",
+              "Jacob Gonzalez 0.955 OPS vs R",
+              "Sam Antonacci 0.873 OPS vs R",
+              "Drew Romo 0.627 OPS vs R"
+            ]
+          }
+        ],
+        "batters": [
+          {
+            "teamName": "Dodgers",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          },
+          {
+            "teamName": "White Sox",
+            "rowCount": 0,
+            "maxHrForce": null,
+            "highHrForceRows": 0,
+            "materialHrForce": false,
+            "hitDelta": 0,
+            "runDelta": 0,
+            "bvpRows": [],
+            "flags": []
+          }
+        ],
+        "relief": [
+          {
+            "teamName": "Dodgers",
+            "projectedReliefRunsAllowed": 3.2,
+            "adjustedProjectedReliefRunsAllowed": 2.9,
+            "projectedReliefOuts": 10.1,
+            "leverageAvailabilityScore": 57.3,
+            "leadAvailabilityScore": 88.4,
+            "bridgeStressScore": 33.4,
+            "runDelta": 0.3,
+            "hitDelta": 0.4,
+            "expectedEarlyBridge": true,
+            "flags": [
+              "RP2 available-pen runs 3.2 -> 2.9"
+            ]
+          },
+          {
+            "teamName": "White Sox",
+            "projectedReliefRunsAllowed": 2.6,
+            "adjustedProjectedReliefRunsAllowed": 2.3,
+            "projectedReliefOuts": 14.8,
+            "leverageAvailabilityScore": 72.2,
+            "leadAvailabilityScore": 72,
+            "bridgeStressScore": 31.9,
+            "runDelta": 0.1,
+            "hitDelta": 0.3,
+            "expectedEarlyBridge": true,
+            "flags": [
+              "RP2 available-pen runs 2.6 -> 2.3"
+            ]
+          }
+        ],
+        "projectedRunTotals": {
+          "away": 5.9,
+          "home": 5.7
+        },
+        "projectedHitTotals": {
+          "away": 11.8,
+          "home": 10.6
+        }
+      },
       "visibilityNote": "",
       "moneylineShape": {
         "marketType": "ML shape",
         "selection": "Dodgers",
         "opponent": "White Sox",
-        "pickProjectedRuns": 5.6,
-        "opponentProjectedRuns": 4.7,
-        "projectedTotalRuns": 10.3,
-        "runDiff": 0.9,
-        "absoluteRunDiff": 0.9,
-        "runDiffSharePct": 8.7,
-        "confidence": 57,
+        "pickProjectedRuns": 5.9,
+        "opponentProjectedRuns": 5.7,
+        "projectedTotalRuns": 11.6,
+        "runDiff": 0.2,
+        "absoluteRunDiff": 0.2,
+        "runDiffSharePct": 1.7,
+        "confidence": 59,
         "marketProbabilityPct": 58.3,
         "grade": "Thin ML shape",
         "source": "MLB-M2 mlbProjection",
-        "note": "Dodgers projects 0.9 runs better in a 10.3-run environment."
+        "note": "Dodgers projects 0.2 runs better in a 11.6-run environment."
       },
       "gameShape": {
         "modelId": "MLB-M2",
@@ -18496,7 +19075,7 @@
           "slug": "early_pressure_side",
           "label": "Early-pressure side",
           "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
-          "confidence": 62.6,
+          "confidence": 59.9,
           "reasons": [
             "The pick needs to cash the first traffic pocket.",
             "The best edge is timing, not late-game patience."
@@ -18533,27 +19112,27 @@
           "diagnostics": {
             "pickOwnsFull": true,
             "pickOwnsFirst5": true,
-            "pickOwnsLate": true,
+            "pickOwnsLate": false,
             "pickOwnsBridge": true,
-            "pickPhaseCount": 4,
+            "pickPhaseCount": 3,
             "lowPickConversion": true,
             "quietPick": false,
             "lineupGap": 0,
             "opponentChaosGap": 0,
-            "projectedHitEdge": 2.9
+            "projectedHitEdge": 1.2
           }
         },
-        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 38/100. Main checks: 79°F | Wind 13 mph Out | 0% precip | weather helps carry.",
+        "summary": "Early-pressure side: Full-game side only if early traffic appears; live entry preferred. Reality-gap 37.9/100. Main checks: 79°F | Wind 13 mph Out | 0% precip | weather helps carry.",
         "pickTeam": "Dodgers",
         "opponentTeam": "White Sox",
         "scores": {
           "chaosScore": 44.8,
           "deadEarlyScore": 8.5,
-          "phaseSplitScore": 0,
-          "bullpenFlipScore": 33.6,
-          "starterControlScore": 38,
-          "marketContradictionScore": 15.6,
-          "realityGapScore": 38
+          "phaseSplitScore": 40,
+          "bullpenFlipScore": 24,
+          "starterControlScore": 30.9,
+          "marketContradictionScore": 14.7,
+          "realityGapScore": 37.9
         },
         "radar": {
           "version": "MLB-M2-game-shape-radar-v1",
@@ -18567,9 +19146,9 @@
               "id": "pressure",
               "label": "Pressure",
               "read": "Run creation pressure: lineup conversion, top-order pressure, starter-window support, and hit-edge pressure.",
-              "gameScore": 34.7,
-              "pickScore": 34.7,
-              "opponentScore": 12
+              "gameScore": 20.6,
+              "pickScore": 20.6,
+              "opponentScore": 12.2
             },
             {
               "id": "chaos",
@@ -18599,7 +19178,7 @@
               "id": "bridge",
               "label": "Bridge",
               "read": "Late-inning volatility: bullpen flip, reliever command risk, and middle-relief mistake exposure.",
-              "gameScore": 33.6,
+              "gameScore": 24,
               "pickScore": 1,
               "opponentScore": 5.8
             },
@@ -18607,9 +19186,9 @@
               "id": "flow",
               "label": "Flow",
               "read": "Phase agreement: whether full game, first five, late, and bridge point in the same direction.",
-              "gameScore": 100,
-              "pickScore": 100,
-              "opponentScore": 0
+              "gameScore": 60,
+              "pickScore": 75,
+              "opponentScore": 25
             }
           ],
           "profiles": [
@@ -18617,26 +19196,26 @@
               "role": "pick",
               "team": "Dodgers",
               "scores": {
-                "pressure": 34.7,
+                "pressure": 20.6,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
                 "bridge": 1,
-                "flow": 100
+                "flow": 75
               },
               "polygon": [
-                34.7,
+                20.6,
                 5,
                 0,
                 16,
                 1,
-                100
+                75
               ],
-              "phaseOwnershipPct": 100,
+              "phaseOwnershipPct": 75,
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 64,
+                "starterScore": 60.9,
                 "bullpenScore": 67.5,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18650,26 +19229,26 @@
               "role": "opponent",
               "team": "White Sox",
               "scores": {
-                "pressure": 12,
+                "pressure": 12.2,
                 "chaos": 5,
                 "freeze": 0,
                 "air": 16,
                 "bridge": 5.8,
-                "flow": 0
+                "flow": 25
               },
               "polygon": [
-                12,
+                12.2,
                 5,
                 0,
                 16,
                 5.8,
-                0
+                25
               ],
-              "phaseOwnershipPct": 0,
+              "phaseOwnershipPct": 25,
               "inputs": {
                 "lineupConversion": 0,
                 "topOrderPressure": 0,
-                "starterScore": 66.6,
+                "starterScore": 68,
                 "bullpenScore": 54.7,
                 "mistakeChaos": 0,
                 "runClustering": 0,
@@ -18684,26 +19263,26 @@
             "label": "Early-pressure side",
             "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
             "scores": {
-              "pressure": 34.7,
+              "pressure": 20.6,
               "chaos": 44.8,
               "freeze": 8.5,
               "air": 24.4,
-              "bridge": 33.6,
-              "flow": 100
+              "bridge": 24,
+              "flow": 60
             },
             "polygon": [
-              34.7,
+              20.6,
               44.8,
               8.5,
               24.4,
-              33.6,
-              100
+              24,
+              60
             ],
             "dominantAxes": [
               {
                 "id": "flow",
                 "label": "Flow",
-                "score": 100
+                "score": 60
               },
               {
                 "id": "chaos",
@@ -18711,9 +19290,9 @@
                 "score": 44.8
               },
               {
-                "id": "pressure",
-                "label": "Pressure",
-                "score": 34.7
+                "id": "air",
+                "label": "Air",
+                "score": 24.4
               }
             ]
           }
@@ -18721,10 +19300,10 @@
         "phaseMap": {
           "fullGameTraffic": "Dodgers",
           "first5": "Dodgers",
-          "late": "Dodgers",
+          "late": "White Sox",
           "bridge": "Dodgers",
-          "distinctPhaseTeams": 1,
-          "pickPhaseMisses": 0
+          "distinctPhaseTeams": 2,
+          "pickPhaseMisses": 1
         },
         "metrics": {
           "maxMistakeChaos": null,
@@ -18774,12 +19353,12 @@
           "side": "Dodgers is more coherent as a side because the game shape mostly agrees with the projection.",
           "first5": "First-five can stay live if starter hold and top-order pressure both agree.",
           "total": "Over is allowed only if RF/totals backtest agrees with the line bucket.",
-          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 79.5% YRFI."
+          "firstInning": "YRFI is the timing lane to compare against the side; modeled chance 81.4% YRFI."
         },
         "rfLens": {
           "source": "development-docs/mlb/research/mlb-ml-tech-stack-052526.md",
           "mode": "research baseline lens",
-          "impactScore": 34.1,
+          "impactScore": 53.9,
           "laneBaselines": {
             "moneyline": {
               "model": "RandomForestClassifier",
@@ -18816,12 +19395,12 @@
       "first5Moneyline": {
         "pickSide": "away",
         "pickTeam": "Dodgers",
-        "awayProjectedRuns": 3.3,
-        "homeProjectedRuns": 2.6,
-        "awayLeadProbability": 53,
-        "homeLeadProbability": 30.8,
-        "pushProbability": 16.2,
-        "leadProbability": 53,
+        "awayProjectedRuns": 3.6,
+        "homeProjectedRuns": 2.9,
+        "awayLeadProbability": 52.9,
+        "homeLeadProbability": 31.7,
+        "pushProbability": 15.4,
+        "leadProbability": 52.9,
         "source": "M2 first-five projected runs; tie is a first-five ML push"
       }
     }
@@ -18843,7 +19422,7 @@
         "propLabel": "HR",
         "marketLabel": "Over 0.5 HR",
         "confidence": 65,
-        "probability": 28.5,
+        "probability": 28.6,
         "expectedValue": 0.3,
         "statValueLabel": "0.34 exp HR",
         "sample": {
@@ -18917,9 +19496,9 @@
         "propLabel": "RBI",
         "marketLabel": "Over 0.5 RBI",
         "confidence": 68,
-        "probability": 86.2,
-        "expectedValue": 2,
-        "statValueLabel": "1.98 exp RBI",
+        "probability": 87.6,
+        "expectedValue": 2.1,
+        "statValueLabel": "2.09 exp RBI",
         "sample": {
           "seasonGames": 66,
           "seasonPlateAppearances": 290,
@@ -18991,9 +19570,9 @@
         "propLabel": "Runs",
         "marketLabel": "Over 0.5 runs",
         "confidence": 72,
-        "probability": 90.2,
-        "expectedValue": 2.3,
-        "statValueLabel": "2.33 exp runs",
+        "probability": 91.5,
+        "expectedValue": 2.5,
+        "statValueLabel": "2.47 exp runs",
         "sample": {
           "seasonGames": 66,
           "seasonPlateAppearances": 290,
@@ -19065,9 +19644,9 @@
         "propLabel": "H+R+RBI",
         "marketLabel": "Over 1.5 H+R+RBI",
         "confidence": 82,
-        "probability": 95.6,
-        "expectedValue": 4.9,
-        "statValueLabel": "2.03 H · 1.24 R · 1.62 RBI · 4.89 total",
+        "probability": 96.2,
+        "expectedValue": 5.1,
+        "statValueLabel": "2.04 H · 1.31 R · 1.71 RBI · 5.07 total",
         "sample": {
           "seasonGames": 66,
           "seasonPlateAppearances": 290,
@@ -19214,10 +19793,10 @@
         "propType": "hits",
         "propLabel": "Hits",
         "marketLabel": "Over 1.5 hits",
-        "confidence": 76,
-        "probability": 66.5,
-        "expectedValue": 2.3,
-        "statValueLabel": "2.28 exp hits",
+        "confidence": 82,
+        "probability": 76.2,
+        "expectedValue": 2.8,
+        "statValueLabel": "2.76 exp hits",
         "sample": {
           "seasonGames": 2,
           "seasonPlateAppearances": 9,
@@ -19254,7 +19833,7 @@
           "trackingPenalty": 18,
           "reason": "tiny 2026 sample without enough career support"
         },
-        "recommendationTier": "Strong",
+        "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 5 carry | split fit live | clean traffic lane",
@@ -19262,6 +19841,7 @@
           "posted-lineup",
           "middle-order-traffic",
           "deep-lineup",
+          "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",
@@ -19286,9 +19866,9 @@
         "propLabel": "Walks",
         "marketLabel": "Over 0.5 walks",
         "confidence": 67,
-        "probability": 56.8,
+        "probability": 56.4,
         "expectedValue": 0.8,
-        "statValueLabel": "0.84 exp walks",
+        "statValueLabel": "0.83 exp walks",
         "sample": {
           "seasonGames": 66,
           "seasonPlateAppearances": 290,
@@ -19359,10 +19939,10 @@
         "propType": "singles",
         "propLabel": "Singles",
         "marketLabel": "Over 0.5 singles",
-        "confidence": 76,
-        "probability": 70,
-        "expectedValue": 1.2,
-        "statValueLabel": "1.20 exp singles",
+        "confidence": 80,
+        "probability": 76.7,
+        "expectedValue": 1.5,
+        "statValueLabel": "1.46 exp singles",
         "sample": {
           "seasonGames": 9,
           "seasonPlateAppearances": 31,
@@ -19399,7 +19979,7 @@
           "trackingPenalty": 18,
           "reason": "unproven MLB sample"
         },
-        "recommendationTier": "Strong",
+        "recommendationTier": "Core",
         "shadowSupportTag": null,
         "shadowSupportLevel": null,
         "reason": "slot 7 carry | recent form up | split fit live | clean traffic lane",
@@ -19407,6 +19987,7 @@
           "posted-lineup",
           "middle-order-traffic",
           "deep-lineup",
+          "run-ceiling-live",
           "traffic-lane-live",
           "clean-conversion-lane",
           "carry-bat-live",

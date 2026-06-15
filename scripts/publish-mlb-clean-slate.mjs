@@ -549,7 +549,11 @@ const publishRichMlbGames = async (date, options = {}) => {
   })
   const nonMlbGames = (existingSummary.games || []).filter((game) => game?.league !== 'MLB')
   const preserveStarted = Boolean(options.preserveStarted)
-  const startedCutoffMinutes = Number.isFinite(Number(options.startedCutoffMinutes))
+  const hasExplicitStartedCutoff =
+    options.startedCutoffMinutes !== null &&
+    options.startedCutoffMinutes !== undefined &&
+    String(options.startedCutoffMinutes).trim() !== ''
+  const startedCutoffMinutes = hasExplicitStartedCutoff && Number.isFinite(Number(options.startedCutoffMinutes))
     ? Number(options.startedCutoffMinutes)
     : date === pacificToday()
       ? pacificNowMinutes()
@@ -593,7 +597,7 @@ const publishRichMlbGames = async (date, options = {}) => {
     status: 'ready',
     slateMeta: {
       ...(existingSummary.slateMeta || { date: existingSummary.label || labelForDate(date), isoDate: date }),
-      ...(omittedMlbGames.length ? { omittedMlbGames } : {}),
+      omittedMlbGames,
       ...(preserveStarted
         ? {
             preservedStartedMlbGames: existingStartedMlbGames.map((game) => ({
@@ -612,7 +616,7 @@ const publishRichMlbGames = async (date, options = {}) => {
       mlbGames: existingStartedMlbGames.length + publishableMlbGames.length,
       ...(preserveStarted ? { preservedStartedMlbGames: existingStartedMlbGames.length } : {}),
       ...(preserveStarted ? { refreshedMlbGames: publishableMlbGames.length } : {}),
-      ...(omittedMlbGames.length ? { omittedMlbGames: omittedMlbGames.length } : {})
+      omittedMlbGames: omittedMlbGames.length
     },
     filters: Array.from(new Set([...(existingSummary.filters || ['All']), 'Tennis', 'MLB'])),
     sources: mergeSources(existingSummary.sources || []),

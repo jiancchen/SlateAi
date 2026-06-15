@@ -146,6 +146,41 @@ Reference result from `2026-06-12` after the enriched fetch:
 
 Counts can move by date because rosters, IL rows, and RosterResource page shape change. Treat missing teams or zero rows as the hard stop, not exact historical counts.
 
+## Historical Backfill
+
+Use the throttled local reliever backfill when official MLB game feeds are already in the typed DB and the missing piece is reconstructed bullpen/RP feature rows:
+
+```bash
+npm run data:backfill:mlb-reliever-warehouse -- --dry-run --max-dates 6
+npm run data:backfill:mlb-reliever-warehouse -- --max-dates 6 --sleep-ms 1200
+```
+
+Default behavior:
+
+- Starts at the day after the latest `mlb_bullpen_usage.as_of_date`.
+- Stops at the latest `mlb_pitcher_appearances.game_date`.
+- Processes only dates that have reliever appearance labels.
+- Skips cold-start dates with no prior relief appearances in the typed DB unless `--include-cold-start` is passed.
+- Skips dates where `mlb_bullpen_usage`, `mlb_likely_relief_chains`, and `mlb_team_bullpen_shape_daily` already have rows unless `--force` is passed.
+- Sleeps between dates so long backfills stay resumable and low-risk.
+- Does not hit FanGraphs or MLB network endpoints unless `--fetch-raw` is explicitly passed.
+
+Opening Day can have official MLB reliever labels but no same-season relief history to build availability, fatigue, role, or bridge features from. Do not force that date into normal training features unless a prior-season seed exists or the model is explicitly testing a cold-start prior.
+
+If older official MLB raw feeds need to be fetched first, use a small chunk and keep request pacing on:
+
+```bash
+npm run data:backfill:mlb-reliever-warehouse -- \
+  --start-date YYYY-MM-DD \
+  --end-date YYYY-MM-DD \
+  --max-dates 3 \
+  --fetch-raw \
+  --raw-fetch-delay-ms 650 \
+  --sleep-ms 3000
+```
+
+Do not use current FanGraphs roster pages to fabricate historical observed snapshots. For old dates, use MLB game-feed truth plus reconstructed features. Store true FanGraphs/RosterResource snapshots only for dates actually captured.
+
 ## Model Usage Boundary
 
 FanGraphs/RosterResource is source context, not settlement truth.
@@ -171,12 +206,68 @@ Official MLB game feeds remain the label/outcome source.
 
 Adjacent run-environment sources should stay separate from this reliever module. For example, FantasyInfoCentral Weather/HRForce is warehoused by `npm run data:warehouse:mlb-fic-weather -- --date YYYY-MM-DD` into `mlb_fic_weather_daily` and `mlb_fic_weather_hourly_daily`. M2 can join that to bullpen fatigue/bridge risk later, but the FanGraphs reliever warehouse should not own weather, park, or HR carry calculations.
 
+## RP2 / Available-Bullpen Prediction Rule
+
+Full team bullpen ERA/WHIP is not enough for M2 predictions. The daily prediction read must use expected and available relievers whenever RP2 context exists.
+
+Required build step before M2 day files:
+
+```bash
+npm run data:build:mlb-rp2 -- --date YYYY-MM-DD
+```
+
+Warehouse table:
+
+```text
+mlb_relief_pitcher_projection_v1_daily
+```
+
+M2 game object fields:
+
+- `awayReliefProjectionContext`
+- `homeReliefProjectionContext`
+
+Important RP2 fields:
+
+- `projectedReliefRunsAllowed`
+- `projectedReliefOuts`
+- `projectedRelieversUsed`
+- `bridgeStressScore`
+- `leverageAvailabilityScore`
+- `fatigueScore`
+- `qualityScore`
+- `runRiskTier`
+- `topTwoSharePct`
+- `lead.pitcherName`
+- `lead.expectedOuts`
+- `lead.availabilityScore`
+
+Prediction usage:
+
+- Treat RP2 as a team-side available-bullpen projection first.
+- Use RP2 for full totals, late scoring risk, bridge stress, first-five spillover when projected relief outs are high, and bullpen-path warnings.
+- Do not fully replace RP36 yet, and do not overtrust exact first-reliever identity. Current first-up identity remains below promotion threshold.
+- When RP2 exists, discount generic season bullpen stats. The model should not keep using full bullpen ERA/WHIP as if the best available arms are guaranteed.
+- If `leverageAvailabilityScore` is low, `fatigueScore` is high, or `bridgeStressScore` is high, tax the late run path and reduce confidence in fragile unders.
+- If the lead/high-leverage reliever is unavailable or expected outs are high for lower-quality arms, show the bullpen warning in the game detail writeup.
+- Combine RP2 with HRForce: high HRForce plus bullpen availability stress is an over-tail/under-fragility signal. Low/N/A HRForce does not erase bullpen risk.
+
+Backtest reference from the current M2 handoff:
+
+- relief runs MAE: `1.713` vs `1.764` baseline
+- lift: `2.9%`
+- first-up exact: `19.4%`
+- first-up top-3: `47.6%`
+
+Because first-up identity is still weak, do not write a prediction as if the exact first reliever is certain. Write it as an available-bullpen path: projected relief runs, outs, bridge stress, leverage availability, and fatigue.
+
 ## Where This Fits In The Daily Run
 
 Run the reliever warehouse after official MLB schedule/probables are refreshed and before shadow addendums or M2/RP36 evaluation that needs relief context:
 
 ```bash
 npm run data:warehouse:mlb-fangraphs-bullpen-depth -- --date YYYY-MM-DD --team all
+npm run data:build:mlb-rp2 -- --date YYYY-MM-DD
 npm run data:generate:mlb-shadow-addendums -- --dates YYYY-MM-DD
 ```
 

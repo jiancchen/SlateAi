@@ -70,6 +70,25 @@ const sqlQuote = (value) => {
 
 const sqliteExec = (sql) => execFileSync('sqlite3', [dbPath, sql], { encoding: 'utf8', maxBuffer: 1024 * 1024 * 80 })
 
+const addDays = (isoDate, days) => {
+  const [year, month, day] = isoDate.split('-').map(Number)
+  const next = new Date(Date.UTC(year, month - 1, day + days))
+  return [
+    next.getUTCFullYear(),
+    `${next.getUTCMonth() + 1}`.padStart(2, '0'),
+    `${next.getUTCDate()}`.padStart(2, '0')
+  ].join('-')
+}
+
+const readJsonIfExists = async (filePath) => {
+  try {
+    return JSON.parse(await fs.readFile(filePath, 'utf8'))
+  } catch (error) {
+    if (error.code === 'ENOENT') return null
+    throw error
+  }
+}
+
 const stripTags = (value = '') =>
   String(value)
     .replace(/<script[\s\S]*?<\/script>/gi, '')
@@ -1112,6 +1131,128 @@ insert or replace into source_fetch_status (
 `)
 }
 
+const latestCachedTeamArtifact = async (team, maxLookbackDays = 7) => {
+  for (let offset = 1; offset <= maxLookbackDays; offset += 1) {
+    const fallbackDate = addDays(date, -offset)
+    const artifactPath = path.join(
+      rootDir,
+      'data-private/warehouse/mlb/fangraphs-bullpen-depth',
+      fallbackDate,
+      `${team.slug}.json`
+    )
+    const artifact = await readJsonIfExists(artifactPath)
+    if (artifact?.depthRows?.length) return { artifact, artifactPath, fallbackDate }
+  }
+  return null
+}
+
+const withTodaySource = (rows = [], sourceSnapshotId, capturedAt, idRewriter = null) =>
+  rows.map((row) => {
+    const next = {
+      ...row,
+      sourceDate: date,
+      teamSlug: row.teamSlug || row.team?.slug,
+      teamAbbr: row.teamAbbr || row.team?.abbr,
+      teamName: row.teamName || row.team?.name,
+      sourceSnapshotId,
+      capturedAt
+    }
+    if (idRewriter) idRewriter(next)
+    return next
+  })
+
+const loadCachedTeam = async (team, sourceUrl, fetchStatus) => {
+  const cached = await latestCachedTeamArtifact(team)
+  if (!cached) return null
+
+  const capturedAt = new Date().toISOString()
+  const sourceSnapshotId = `mlb-fangraphs-bullpen-${date}-${team.slug}-cached-${cached.fallbackDate}`
+  const artifactPath = path.join(rootDir, 'data-private/warehouse/mlb/fangraphs-bullpen-depth', date, `${team.slug}.json`)
+  await fs.mkdir(path.dirname(artifactPath), { recursive: true })
+
+  const depthRows = withTodaySource(cached.artifact.depthRows, sourceSnapshotId, capturedAt)
+  const usageRows = withTodaySource(cached.artifact.usageRows, sourceSnapshotId, capturedAt)
+  const reliefRosterRows = withTodaySource(cached.artifact.reliefRosterRows, sourceSnapshotId, capturedAt)
+  const structuredUsageRows = withTodaySource(
+    cached.artifact.structuredUsageRows,
+    sourceSnapshotId,
+    capturedAt,
+    (row) => {
+      if (typeof row.usageEventId === 'string') {
+        row.usageEventId = row.usageEventId.replace(/^fg-bp-use:[^:]+:/, `fg-bp-use:${date}:`)
+      }
+    }
+  )
+  const transactionRows = withTodaySource(
+    cached.artifact.transactionRows,
+    sourceSnapshotId,
+    capturedAt,
+    (row) => {
+      if (typeof row.transactionId === 'string') {
+        row.transactionId = row.transactionId.replace(/^fg-tx:[^:]+:/, `fg-tx:${date}:`)
+      }
+    }
+  )
+  const teamRankingRows = withTodaySource(cached.artifact.teamRankingRows, sourceSnapshotId, capturedAt)
+
+  await fs.writeFile(artifactPath, JSON.stringify({
+    ...cached.artifact,
+    sourceDate: date,
+    capturedAt,
+    sourceUrl,
+    sourceSnapshotId,
+    team,
+    cacheFallback: {
+      fromDate: cached.fallbackDate,
+      fromArtifactPath: path.relative(rootDir, cached.artifactPath),
+      reason: fetchStatus
+    },
+    depthRows,
+    usageRows,
+    reliefRosterRows,
+    structuredUsageRows,
+    transactionRows,
+    teamRankingRows
+  }, null, 2))
+
+  sqliteExec(`
+insert or replace into source_snapshots (
+  source_snapshot_id, source_name, sport, source_url, local_path, captured_at, source_date, content_hash, content_type, status, notes
+) values (
+  ${sqlQuote(sourceSnapshotId)}, ${sqlQuote(sourceName)}, 'mlb', ${sqlQuote(sourceUrl)},
+  ${sqlQuote(path.relative(rootDir, artifactPath))}, ${sqlQuote(capturedAt)}, ${sqlQuote(date)}, ${sqlQuote(cached.artifact.contentHash || null)},
+  'application/json', 'cached', ${sqlQuote(JSON.stringify({
+    team,
+    fallbackFromDate: cached.fallbackDate,
+    fallbackFromArtifactPath: path.relative(rootDir, cached.artifactPath),
+    reason: fetchStatus,
+    artifactPath: path.relative(rootDir, artifactPath)
+  }))}
+);
+`)
+
+  return {
+    team,
+    capturedAt,
+    sourceSnapshotId,
+    depthRows,
+    usageRows,
+    enrichedRows: {
+      sourceLoadedAt: cached.artifact.sourceLoadedAt,
+      rosterRows: reliefRosterRows,
+      structuredUsageRows,
+      transactionRows,
+      teamRankingRows
+    },
+    rawPath: cached.artifactPath,
+    artifactPath,
+    cacheFallback: {
+      fromDate: cached.fallbackDate,
+      reason: fetchStatus
+    }
+  }
+}
+
 const fetchTeam = async (team) => {
   const sourceUrl = `https://www.fangraphs.com/roster-resource/depth-charts/${team.slug}`
   const response = await fetch(sourceUrl, {
@@ -1120,7 +1261,12 @@ const fetchTeam = async (team) => {
       accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     }
   })
-  if (!response.ok) throw new Error(`FanGraphs fetch failed for ${team.slug}: ${response.status} ${response.statusText}`)
+  if (!response.ok) {
+    const fetchStatus = `${response.status} ${response.statusText}`.trim()
+    const cached = await loadCachedTeam(team, sourceUrl, fetchStatus)
+    if (cached) return cached
+    throw new Error(`FanGraphs fetch failed for ${team.slug}: ${fetchStatus}`)
+  }
   const html = await response.text()
   const capturedAt = new Date().toISOString()
   const contentHash = crypto.createHash('sha256').update(html).digest('hex')
@@ -1234,6 +1380,7 @@ const main = async () => {
   let totalStructuredUsageRows = 0
   let totalTransactionRows = 0
   let totalTeamRankingRows = 0
+  let cacheFallbackTeams = 0
   for (const team of selectedTeams) {
     const result = await fetchTeam(team)
     if (result.depthRows.length === 0) throw new Error(`No bullpen rows parsed for ${team.slug}`)
@@ -1249,10 +1396,12 @@ const main = async () => {
     totalStructuredUsageRows += result.enrichedRows.structuredUsageRows.length
     totalTransactionRows += result.enrichedRows.transactionRows.length
     totalTeamRankingRows += result.enrichedRows.teamRankingRows.length
+    if (result.cacheFallback) cacheFallbackTeams += 1
     teamSummaries.push({
       teamSlug: team.slug,
       teamAbbr: team.abbr,
       sourceLoadedAt: result.enrichedRows.sourceLoadedAt,
+      cacheFallback: result.cacheFallback || null,
       depthRows: result.depthRows.length,
       usageRows: result.usageRows.length,
       reliefRosterRows: result.enrichedRows.rosterRows.length,
@@ -1273,6 +1422,7 @@ const main = async () => {
     structuredUsageRows: totalStructuredUsageRows,
     transactionRows: totalTransactionRows,
     teamRankingRows: totalTeamRankingRows,
+    cacheFallbackTeams,
     closerRows: closerResult.closerRows.length,
     closerUsageRows: closerResult.closerUsageRows.length
   })
@@ -1296,13 +1446,16 @@ const main = async () => {
     structuredUsageRows: totalStructuredUsageRows,
     transactionRows: totalTransactionRows,
     teamRankingRows: totalTeamRankingRows,
+    cacheFallbackTeams,
     closerRows: closerResult.closerRows.length,
     closerUsageRows: closerResult.closerUsageRows.length,
     examples: teamSummaries.slice(0, 6)
   }, null, 2))
 }
 
-main().catch((error) => {
+main().then(() => {
+  process.exit(0)
+}).catch((error) => {
   console.error(error.stack || error.message)
   process.exit(1)
 })

@@ -206,6 +206,7 @@ const buildGenericMlbGame = (
     },
     parkContext: raw.parkContext ?? parkContextByHomeTeam[raw.home] ?? null,
     environmentAdjustmentContext: raw.environmentAdjustmentContext ?? null,
+    ficDailyMatchupContext: raw.ficDailyMatchupContext ?? null,
     offenseContext: {
       away: teamOffenseContextByTeam[raw.away] ?? null,
       home: teamOffenseContextByTeam[raw.home] ?? null

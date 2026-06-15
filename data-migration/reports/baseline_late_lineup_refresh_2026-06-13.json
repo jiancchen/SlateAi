@@ -1,0 +1,245 @@
+{
+  "createdAt": "2026-06-13T21:58:41.933Z",
+  "cutoffMinutes": 898,
+  "updatedAt": "2026-06-13T20:17:13.181Z",
+  "games": [
+    {
+      "id": "cardinals-twins",
+      "title": "Cardinals @ Twins",
+      "start": "11:10 AM PT",
+      "startMinutes": 670,
+      "locked": true,
+      "pick": "Cardinals",
+      "confidence": 66,
+      "tier": "Pass",
+      "fullTotal": "Hold 12.5",
+      "f5Total": "Over 5.5",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        7.1,
+        5.4
+      ]
+    },
+    {
+      "id": "yankees-blue-jays",
+      "title": "Yankees @ Blue Jays",
+      "start": "12:07 PM PT",
+      "startMinutes": 727,
+      "locked": true,
+      "pick": "Yankees",
+      "confidence": 54,
+      "tier": "Swingy",
+      "fullTotal": "Hold 6.5",
+      "f5Total": "Hold 3.5",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        2.3,
+        2.4
+      ]
+    },
+    {
+      "id": "mariners-nationals",
+      "title": "Mariners @ Nationals",
+      "start": "1:05 PM PT",
+      "startMinutes": 785,
+      "locked": true,
+      "pick": "Nationals",
+      "confidence": 52,
+      "tier": "Pass",
+      "fullTotal": "Over 8.5",
+      "f5Total": "Over 4.5",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        6.4,
+        6.3
+      ]
+    },
+    {
+      "id": "marlins-pirates",
+      "title": "Marlins @ Pirates",
+      "start": "1:05 PM PT",
+      "startMinutes": 785,
+      "locked": true,
+      "pick": "Marlins",
+      "confidence": 52,
+      "tier": "Swingy",
+      "fullTotal": "Hold 9.5",
+      "f5Total": "Over 4.5",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        5.4,
+        4
+      ]
+    },
+    {
+      "id": "padres-orioles",
+      "title": "Padres @ Orioles",
+      "start": "1:05 PM PT",
+      "startMinutes": 785,
+      "locked": true,
+      "pick": "Padres",
+      "confidence": 52,
+      "tier": "Pass",
+      "fullTotal": "Hold 12.5",
+      "f5Total": "Over 5.5",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        4.5,
+        6.5
+      ]
+    },
+    {
+      "id": "braves-mets",
+      "title": "Braves @ Mets",
+      "start": "1:10 PM PT",
+      "startMinutes": 790,
+      "locked": true,
+      "pick": "Braves",
+      "confidence": 52,
+      "tier": "Pass",
+      "fullTotal": "Over 8.5",
+      "f5Total": "Over 4.5",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        5.4,
+        4.4
+      ]
+    },
+    {
+      "id": "diamondbacks-reds",
+      "title": "Diamondbacks @ Reds",
+      "start": "1:10 PM PT",
+      "startMinutes": 790,
+      "locked": true,
+      "pick": "Reds",
+      "confidence": 52,
+      "tier": "Pass",
+      "fullTotal": "Over 9.5",
+      "f5Total": "Over 4.5",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        5.4,
+        6.3
+      ]
+    },
+    {
+      "id": "dodgers-white-sox",
+      "title": "Dodgers @ White Sox",
+      "start": "1:10 PM PT",
+      "startMinutes": 790,
+      "locked": true,
+      "pick": "Dodgers",
+      "confidence": 52,
+      "tier": "Swingy",
+      "fullTotal": "Over 8.5",
+      "f5Total": "Over 4.5",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        4.8,
+        5.2
+      ]
+    },
+    {
+      "id": "rangers-red-sox",
+      "title": "Rangers @ Red Sox",
+      "start": "1:10 PM PT",
+      "startMinutes": 790,
+      "locked": true,
+      "pick": "Rangers",
+      "confidence": 52,
+      "tier": "Pass",
+      "fullTotal": "Hold 7.5",
+      "f5Total": "Over 3.5",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        5.3,
+        2.6
+      ]
+    },
+    {
+      "id": "tigers-guardians",
+      "title": "Tigers @ Guardians",
+      "start": "1:10 PM PT",
+      "startMinutes": 790,
+      "locked": true,
+      "pick": "Tigers",
+      "confidence": 61,
+      "tier": "Swingy",
+      "fullTotal": "Hold 7.5",
+      "f5Total": "Hold 3.5",
+      "firstInning": "NRFI",
+      "projectedRuns": [
+        3.5,
+        2.3
+      ]
+    },
+    {
+      "id": "astros-royals",
+      "title": "Astros @ Royals",
+      "start": "4:10 PM PT",
+      "startMinutes": 970,
+      "locked": false,
+      "pick": "Royals",
+      "confidence": 52,
+      "tier": "Swingy",
+      "fullTotal": "Over 9.5",
+      "f5Total": "Over 5.5",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        6,
+        6
+      ]
+    },
+    {
+      "id": "phillies-brewers",
+      "title": "Phillies @ Brewers",
+      "start": "4:10 PM PT",
+      "startMinutes": 970,
+      "locked": false,
+      "pick": "Brewers",
+      "confidence": 65,
+      "tier": "Pass",
+      "fullTotal": "Hold 8.5",
+      "f5Total": "Hold 4.5",
+      "firstInning": "NRFI",
+      "projectedRuns": [
+        2.3,
+        5.7
+      ]
+    },
+    {
+      "id": "cubs-giants",
+      "title": "Cubs @ Giants",
+      "start": "7:05 PM PT",
+      "startMinutes": 1145,
+      "locked": false,
+      "pick": "Cubs",
+      "confidence": 60,
+      "tier": "Swingy",
+      "fullTotal": "Hold 7.5",
+      "f5Total": "Hold 3.8",
+      "firstInning": "NRFI",
+      "projectedRuns": [
+        3.2,
+        3.4
+      ]
+    },
+    {
+      "id": "rays-angels",
+      "title": "Rays @ Angels",
+      "start": "7:07 PM PT",
+      "startMinutes": 1147,
+      "locked": false,
+      "pick": "Rays",
+      "confidence": 56,
+      "tier": "Swingy",
+      "fullTotal": "Hold 8",
+      "f5Total": "Hold 4.9",
+      "firstInning": "YRFI",
+      "projectedRuns": [
+        5.1,
+        3.1
+      ]
+    }
+  ]
+}

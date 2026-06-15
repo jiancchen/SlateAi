@@ -265,12 +265,327 @@ const formatSignedTenths = (value) => {
   return `${rounded >= 0 ? '+' : ''}${rounded.toFixed(1)}`
 }
 
+const rateFrom = (value, { allowOpsScale = false } = {}) => {
+  const parsed = Number(value)
+  if (!Number.isFinite(parsed) || parsed <= 0) return null
+  if (parsed > 5) return parsed / 1000
+  if (parsed > 1 && !allowOpsScale) return parsed / 1000
+  return parsed
+}
+
+const weightedAverageBy = (items = [], valueKey = 'value', weightKey = 'weight') => {
+  const valid = items
+    .map((item) => ({
+      value: Number(item?.[valueKey]),
+      weight: Number(item?.[weightKey])
+    }))
+    .filter((item) => Number.isFinite(item.value) && Number.isFinite(item.weight) && item.weight > 0)
+
+  if (!valid.length) return null
+
+  return valid.reduce((sum, item) => sum + item.value * item.weight, 0) /
+    valid.reduce((sum, item) => sum + item.weight, 0)
+}
+
+const formatSplitRate = (value, digits = 3) => {
+  const parsed = Number(value)
+  return Number.isFinite(parsed) ? parsed.toFixed(digits) : 'n/a'
+}
+
+const buildLineupHandednessSplitProfile = ({
+  lineup = [],
+  teamName = '',
+  opposingStarterHand = ''
+} = {}) => {
+  const entries = lineup
+    .map((entry) => {
+      const splitAvg = rateFrom(entry?.split?.avg)
+      const splitOps = rateFrom(entry?.split?.ops, { allowOpsScale: true })
+      const splitPa = numberOrNull(entry?.split?.plateAppearances) ?? 0
+      const seasonAvg = rateFrom(entry?.season?.avg)
+      const seasonOps = rateFrom(entry?.season?.ops, { allowOpsScale: true })
+      const recentAvg = rateFrom(entry?.recent?.avg)
+      const recentOps = rateFrom(entry?.recent?.ops, { allowOpsScale: true })
+      const slot = numberOrNull(entry?.slot) ?? numberOrNull(entry?.battingOrder) ?? 99
+
+      return {
+        slot,
+        name: entry?.name || entry?.playerName || '',
+        bats: entry?.bats || '',
+        splitAvg,
+        splitOps,
+        splitPa,
+        seasonAvg,
+        seasonOps,
+        recentAvg,
+        recentOps
+      }
+    })
+    .filter((entry) => Number(entry.splitPa || 0) >= 10 && (Number.isFinite(entry.splitAvg) || Number.isFinite(entry.splitOps)))
+    .sort((left, right) => left.slot - right.slot)
+
+  if (!entries.length) return null
+
+  const weightedEntries = entries.map((entry) => ({
+    ...entry,
+    splitWeight: clamp(Number(entry.splitPa || 0), 10, 140),
+    splitReliability: clamp((Number(entry.splitPa || 0) - 8) / 42, 0.25, 1)
+  }))
+  const topSix = weightedEntries.filter((entry) => Number(entry.slot) <= 6)
+  const splitAvgAverage = weightedAverageBy(weightedEntries, 'splitAvg', 'splitWeight')
+  const splitOpsAverage = weightedAverageBy(weightedEntries, 'splitOps', 'splitWeight')
+  const topSixSplitAvgAverage = weightedAverageBy(topSix, 'splitAvg', 'splitWeight')
+  const topSixSplitOpsAverage = weightedAverageBy(topSix, 'splitOps', 'splitWeight')
+  const strongSplitBats = weightedEntries.filter(
+    (entry) =>
+      Number(entry.splitPa || 0) >= 20 &&
+      (Number(entry.splitOps) >= 0.8 || Number(entry.splitAvg) >= 0.285)
+  )
+  const weakSplitBats = weightedEntries.filter(
+    (entry) =>
+      Number(entry.splitPa || 0) >= 20 &&
+      (Number(entry.splitOps) <= 0.65 || Number(entry.splitAvg) <= 0.22)
+  )
+  const severeWeakSplitBats = weightedEntries.filter(
+    (entry) =>
+      Number(entry.splitPa || 0) >= 25 &&
+      (Number(entry.splitOps) <= 0.58 || Number(entry.splitAvg) <= 0.195)
+  )
+  const topSixStrongSplitCount = strongSplitBats.filter((entry) => Number(entry.slot) <= 6).length
+  const topSixWeakSplitCount = weakSplitBats.filter((entry) => Number(entry.slot) <= 6).length
+  const topThirdStrongSplitCount = strongSplitBats.filter((entry) => Number(entry.slot) <= 3).length
+  const topThirdWeakSplitCount = weakSplitBats.filter((entry) => Number(entry.slot) <= 3).length
+  const index = clamp(
+    50 +
+      (Number(splitAvgAverage || 0.245) - 0.245) * 135 +
+      (Number(splitOpsAverage || 0.72) - 0.72) * 42 +
+      (strongSplitBats.length - 3) * 3.1 +
+      (topSixStrongSplitCount - 2) * 2 +
+      topThirdStrongSplitCount * 1.4 -
+      Math.max(weakSplitBats.length - 2, 0) * 2.8 -
+      topSixWeakSplitCount * 1.5 -
+      topThirdWeakSplitCount * 1.2 -
+      severeWeakSplitBats.length * 2.5,
+    18,
+    96
+  )
+  const label =
+    index >= 62
+      ? 'strong handedness split lane'
+      : index <= 42
+        ? 'weak handedness split lane'
+        : 'mixed handedness split lane'
+  const mapBatter = (entry) => ({
+    name: entry.name,
+    slot: entry.slot,
+    bats: entry.bats,
+    plateAppearances: entry.splitPa,
+    avg: Number.isFinite(entry.splitAvg) ? Number(entry.splitAvg.toFixed(3)) : null,
+    ops: Number.isFinite(entry.splitOps) ? Number(entry.splitOps.toFixed(3)) : null,
+    seasonAvg: Number.isFinite(entry.seasonAvg) ? Number(entry.seasonAvg.toFixed(3)) : null,
+    seasonOps: Number.isFinite(entry.seasonOps) ? Number(entry.seasonOps.toFixed(3)) : null,
+    recentAvg: Number.isFinite(entry.recentAvg) ? Number(entry.recentAvg.toFixed(3)) : null,
+    recentOps: Number.isFinite(entry.recentOps) ? Number(entry.recentOps.toFixed(3)) : null
+  })
+  const strongRows = strongSplitBats
+    .slice()
+    .sort((left, right) => Number(right.splitOps || 0) - Number(left.splitOps || 0))
+  const weakRows = weakSplitBats
+    .slice()
+    .sort((left, right) => Number(left.splitOps || 0) - Number(right.splitOps || 0))
+  const reasons = [
+    strongRows[0]
+      ? `${strongRows[0].name} ${formatSplitRate(strongRows[0].ops ?? strongRows[0].splitOps)} OPS vs ${opposingStarterHand || 'starter hand'}`
+      : null,
+    strongRows[1]
+      ? `${strongRows[1].name} ${formatSplitRate(strongRows[1].ops ?? strongRows[1].splitOps)} OPS vs ${opposingStarterHand || 'starter hand'}`
+      : null,
+    weakRows[0]
+      ? `${weakRows[0].name} ${formatSplitRate(weakRows[0].ops ?? weakRows[0].splitOps)} OPS vs ${opposingStarterHand || 'starter hand'}`
+      : null,
+    weakRows.length >= 3 ? `${weakRows.length} lineup bats carry weak split rows` : null
+  ].filter(Boolean)
+
+  return {
+    source: 'lineup split rows',
+    teamName,
+    opposingStarterHand,
+    index: roundToTenths(index),
+    label,
+    splitCount: weightedEntries.length,
+    strongSplitCount: strongSplitBats.length,
+    weakSplitCount: weakSplitBats.length,
+    severeWeakSplitCount: severeWeakSplitBats.length,
+    topSixStrongSplitCount,
+    topSixWeakSplitCount,
+    topThirdStrongSplitCount,
+    topThirdWeakSplitCount,
+    splitAvgAverage: Number.isFinite(splitAvgAverage) ? Number(splitAvgAverage.toFixed(3)) : null,
+    splitOpsAverage: Number.isFinite(splitOpsAverage) ? Number(splitOpsAverage.toFixed(3)) : null,
+    topSixSplitAvgAverage: Number.isFinite(topSixSplitAvgAverage) ? Number(topSixSplitAvgAverage.toFixed(3)) : null,
+    topSixSplitOpsAverage: Number.isFinite(topSixSplitOpsAverage) ? Number(topSixSplitOpsAverage.toFixed(3)) : null,
+    strongSplitBats: strongRows.slice(0, 5).map(mapBatter),
+    weakSplitBats: weakRows.slice(0, 5).map(mapBatter),
+    reasons
+  }
+}
+
+const normalizeExistingHandednessSplitProfile = (lineupProfile = null) => {
+  const source = lineupProfile?.handednessSplitProfile ?? null
+  const index = numberOrNull(source?.index ?? lineupProfile?.handednessSplitIndex)
+  if (!Number.isFinite(index)) return null
+
+  return {
+    source: source?.source || 'lineup context',
+    teamName: source?.teamName || lineupProfile?.teamName || '',
+    opposingStarterHand: source?.opposingStarterHand || lineupProfile?.opposingStarterHand || '',
+    index,
+    label: source?.label || lineupProfile?.handednessSplitLabel || 'handedness split lane',
+    splitCount: numberOrNull(source?.splitCount ?? lineupProfile?.handednessSplitCount) ?? null,
+    strongSplitCount: numberOrNull(source?.strongSplitCount ?? lineupProfile?.strongSplitCount) ?? 0,
+    weakSplitCount: numberOrNull(source?.weakSplitCount ?? lineupProfile?.weakSplitCount) ?? 0,
+    severeWeakSplitCount: numberOrNull(source?.severeWeakSplitCount ?? lineupProfile?.severeWeakSplitCount) ?? 0,
+    topSixStrongSplitCount: numberOrNull(source?.topSixStrongSplitCount ?? lineupProfile?.topSixStrongSplitCount) ?? 0,
+    topSixWeakSplitCount: numberOrNull(source?.topSixWeakSplitCount ?? lineupProfile?.topSixWeakSplitCount) ?? 0,
+    topThirdStrongSplitCount: numberOrNull(source?.topThirdStrongSplitCount ?? lineupProfile?.topThirdStrongSplitCount) ?? 0,
+    topThirdWeakSplitCount: numberOrNull(source?.topThirdWeakSplitCount ?? lineupProfile?.topThirdWeakSplitCount) ?? 0,
+    splitAvgAverage: numberOrNull(source?.splitAvgAverage ?? lineupProfile?.splitAvgAverage),
+    splitOpsAverage: numberOrNull(source?.splitOpsAverage ?? lineupProfile?.splitOpsAverage),
+    topSixSplitAvgAverage: numberOrNull(source?.topSixSplitAvgAverage ?? lineupProfile?.topSixSplitAvgAverage),
+    topSixSplitOpsAverage: numberOrNull(source?.topSixSplitOpsAverage ?? lineupProfile?.topSixSplitOpsAverage),
+    strongSplitBats: Array.isArray(source?.strongSplitBats) ? source.strongSplitBats : [],
+    weakSplitBats: Array.isArray(source?.weakSplitBats) ? source.weakSplitBats : [],
+    reasons: Array.isArray(source?.reasons)
+      ? source.reasons
+      : Array.isArray(lineupProfile?.handednessSplitReasons)
+        ? lineupProfile.handednessSplitReasons
+        : []
+  }
+}
+
+const enrichLineupProfileWithHandednessSplits = ({
+  lineupProfile = null,
+  lineupBoardSide = null,
+  opposingStarter = null
+} = {}) => {
+  const boardProfile = buildLineupHandednessSplitProfile({
+    lineup: Array.isArray(lineupBoardSide?.lineup) ? lineupBoardSide.lineup : [],
+    teamName: lineupBoardSide?.teamName || lineupProfile?.teamName || '',
+    opposingStarterHand:
+      lineupBoardSide?.opposingStarter?.hand ||
+      lineupBoardSide?.opposingStarter?.handedness ||
+      opposingStarter?.handedness ||
+      ''
+  })
+  const existingProfile = normalizeExistingHandednessSplitProfile(lineupProfile)
+  const handednessSplitProfile = boardProfile || existingProfile
+
+  if (!lineupProfile && !handednessSplitProfile) return null
+  if (!handednessSplitProfile) return lineupProfile
+
+  return {
+    ...(lineupProfile || {}),
+    handednessSplitProfile,
+    handednessSplitIndex: handednessSplitProfile.index,
+    handednessSplitLabel: handednessSplitProfile.label,
+    handednessSplitCount: handednessSplitProfile.splitCount,
+    strongSplitCount: handednessSplitProfile.strongSplitCount,
+    weakSplitCount: handednessSplitProfile.weakSplitCount,
+    severeWeakSplitCount: handednessSplitProfile.severeWeakSplitCount,
+    topSixStrongSplitCount: handednessSplitProfile.topSixStrongSplitCount,
+    topSixWeakSplitCount: handednessSplitProfile.topSixWeakSplitCount,
+    topThirdStrongSplitCount: handednessSplitProfile.topThirdStrongSplitCount,
+    topThirdWeakSplitCount: handednessSplitProfile.topThirdWeakSplitCount,
+    splitAvgAverage: handednessSplitProfile.splitAvgAverage,
+    splitOpsAverage: handednessSplitProfile.splitOpsAverage,
+    topSixSplitAvgAverage: handednessSplitProfile.topSixSplitAvgAverage,
+    topSixSplitOpsAverage: handednessSplitProfile.topSixSplitOpsAverage,
+    handednessSplitReasons: handednessSplitProfile.reasons
+  }
+}
+
+const buildFicDailyMatchupTotalContext = (ficDailyMatchupContext = null) => {
+  if (!ficDailyMatchupContext) return null
+
+  const rowCount = numberOrNull(ficDailyMatchupContext.rowCount) ?? 0
+  if (!rowCount) return null
+
+  const maxHrForce = numberOrNull(ficDailyMatchupContext.maxHrForce)
+  const averageHrForce = numberOrNull(ficDailyMatchupContext.averageHrForce)
+  const hrForce = maxHrForce ?? averageHrForce
+  const highHrForceRows = numberOrNull(ficDailyMatchupContext.highHrForceRows) ?? 0
+  const extremeHrForceRows = numberOrNull(ficDailyMatchupContext.extremeHrForceRows) ?? 0
+  const highHrForceSharePct = numberOrNull(ficDailyMatchupContext.highHrForceSharePct)
+  const qualityAbPct = numberOrNull(ficDailyMatchupContext.qualityAbPct)
+  const hardHitPct = numberOrNull(ficDailyMatchupContext.hardHitPct)
+  const highHrForce =
+    Number.isFinite(hrForce) &&
+    hrForce >= 1.4 &&
+    (highHrForceRows >= 2 || Number(highHrForceSharePct || 0) >= 20 || rowCount <= 3)
+  const extremeHrForce = Number.isFinite(hrForce) && hrForce >= 1.7 && extremeHrForceRows >= 1
+  const runLift =
+    highHrForce ||
+    Number(qualityAbPct || 0) >= 44 ||
+    Number(hardHitPct || 0) >= 42
+  const matchupRunDelta = highHrForce
+    ? clamp(
+        (Number(hrForce || 1.4) - 1.35) * 0.62 +
+          Math.max(Number(highHrForceSharePct || 0) - 25, 0) * 0.004,
+        0.12,
+        extremeHrForce ? 0.55 : 0.42
+      )
+    : 0
+  const hitDelta = clamp(
+    (highHrForce ? 0.08 : 0) +
+      Math.max(Number(qualityAbPct || 0) - 40, 0) * 0.006 +
+      Math.max(Number(hardHitPct || 0) - 36, 0) * 0.004,
+    0,
+    0.26
+  )
+
+  return {
+    source: ficDailyMatchupContext.source || 'FantasyInfoCentral Daily Matchups',
+    sourceStatus: ficDailyMatchupContext.sourceStatus || 'warehouse',
+    rowCount,
+    hrForce,
+    maxHrForce,
+    averageHrForce,
+    highHrForce,
+    extremeHrForce,
+    highHrForceRows,
+    extremeHrForceRows,
+    highHrForceSharePct,
+    qualityAbPct,
+    hardHitPct,
+    runLift,
+    matchupRunDelta,
+    hitDelta,
+    reason: highHrForce && Number.isFinite(hrForce)
+      ? `FIC Daily Matchups HRForce ${roundToTenths(hrForce)} raises run carry`
+      : runLift
+        ? 'FIC Daily Matchups contact quality adds run carry'
+        : null
+  }
+}
+
 const buildEnvironmentTotalContext = (environmentAdjustmentContext = null, weatherProfile = null) => {
   if (!environmentAdjustmentContext) return null
 
   const rawHrForce = numberOrNull(environmentAdjustmentContext.weather?.hrForce)
   const effectiveHrForce = numberOrNull(environmentAdjustmentContext.weather?.effectiveHrForce)
-  const hrForce = effectiveHrForce ?? rawHrForce
+  const gameTimeHrForce = numberOrNull(environmentAdjustmentContext.weather?.gameTimeHrForce)
+  const earlyGameMaxHrForce = numberOrNull(environmentAdjustmentContext.weather?.earlyGameMaxHrForce)
+  const lateGameMaxHrForce = numberOrNull(environmentAdjustmentContext.weather?.lateGameMaxHrForce)
+  const hrForcePersistenceSignal = environmentAdjustmentContext.weather?.hrForcePersistenceSignal || null
+  const startsEveningOrNight = Boolean(
+    environmentAdjustmentContext.visibility?.eveningLocalStart ||
+      environmentAdjustmentContext.visibility?.nightLocalStart ||
+      Number(environmentAdjustmentContext.visibility?.localStartHour) >= 18
+  )
+  const gameWindowHrForce = earlyGameMaxHrForce ?? gameTimeHrForce
+  const hrForce = startsEveningOrNight && Number.isFinite(gameWindowHrForce)
+    ? gameWindowHrForce
+    : effectiveHrForce ?? rawHrForce
   const signal = `${environmentAdjustmentContext.weather?.signal || environmentAdjustmentContext.signal || ''}`.toLowerCase()
   const isDome =
     Boolean(weatherProfile?.isDome) ||
@@ -283,7 +598,15 @@ const buildEnvironmentTotalContext = (environmentAdjustmentContext = null, weath
   const runsMultiplier = numberOrNull(environmentAdjustmentContext.visibility?.runsMultiplier) ?? 1
   const hitsMultiplier = numberOrNull(environmentAdjustmentContext.visibility?.hitsMultiplier) ?? 1
   const hrMultiplier = numberOrNull(environmentAdjustmentContext.visibility?.hrMultiplier) ?? 1
-  const highHrForce = Number.isFinite(hrForce) && hrForce >= 1.4 && !isDome
+  const weakGameTimeCarry =
+    startsEveningOrNight &&
+    Number.isFinite(effectiveHrForce) &&
+    effectiveHrForce >= 1.4 &&
+    Number.isFinite(gameWindowHrForce) &&
+    gameWindowHrForce < 1.4
+  const carryFades = /early_carry_fades|early_only_carry/.test(String(hrForcePersistenceSignal))
+  const weakOrFadingGameTimeCarry = weakGameTimeCarry || carryFades
+  const highHrForce = Number.isFinite(hrForce) && hrForce >= 1.4 && !isDome && !weakGameTimeCarry
   const lowerWeatherCarry =
     isDome ||
     !Number.isFinite(hrForce) ||
@@ -307,7 +630,16 @@ const buildEnvironmentTotalContext = (environmentAdjustmentContext = null, weath
     signal: environmentAdjustmentContext.signal || null,
     isDome,
     hrForce,
+    rawHrForce,
     effectiveHrForce,
+    gameTimeHrForce,
+    earlyGameMaxHrForce,
+    lateGameMaxHrForce,
+    hrForcePersistenceSignal,
+    startsEveningOrNight,
+    weakGameTimeCarry,
+    carryFades,
+    weakOrFadingGameTimeCarry,
     highHrForce,
     lowerWeatherCarry,
     runLift,
@@ -324,36 +656,484 @@ const buildEnvironmentTotalContext = (environmentAdjustmentContext = null, weath
   }
 }
 
-const buildEnvironmentFirstInningContext = (environmentAdjustmentContext = null, weatherProfile = null) => {
+const buildEnvironmentFirstInningContext = (
+  environmentAdjustmentContext = null,
+  weatherProfile = null,
+  ficDailyMatchupContext = null
+) => {
   const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
-  if (!envTotalContext) return null
+  const ficTotalContext = buildFicDailyMatchupTotalContext(ficDailyMatchupContext)
+  if (!envTotalContext && !ficTotalContext) return null
 
-  const hrForce = envTotalContext.hrForce
-  const highHrForce = Boolean(envTotalContext.highHrForce)
+  const hrForce = Math.max(
+    numberOrNull(envTotalContext?.hrForce) ?? -Infinity,
+    numberOrNull(ficTotalContext?.hrForce) ?? -Infinity
+  )
+  const effectiveHrForce = Number.isFinite(hrForce) ? hrForce : null
+  const highHrForce = Boolean(envTotalContext?.highHrForce || (ficTotalContext?.highHrForce && !envTotalContext?.weakGameTimeCarry))
+  const materialHrForce = highHrForce && Number(effectiveHrForce || 0) >= 1.5
+  const extremeHrForce = highHrForce && Number(effectiveHrForce || 0) >= 1.7
   const carryLift =
-    highHrForce && Number.isFinite(hrForce)
-      ? clamp((hrForce - 1.35) * 0.12, 0.018, 0.06)
-      : envTotalContext.runLift || envTotalContext.hrLift
+    highHrForce && Number.isFinite(effectiveHrForce)
+      ? clamp(
+          (effectiveHrForce - 1.35) * 0.16 + (materialHrForce ? 0.014 : 0),
+          0.018,
+          extremeHrForce ? 0.115 : materialHrForce ? 0.085 : 0.06
+        )
+      : envTotalContext?.runLift || envTotalContext?.hrLift || ficTotalContext?.runLift
         ? 0.014
         : 0
-  const runDeltaLift = clamp(Number(envTotalContext.expectedTotalRunsDelta || 0) * 0.018, -0.012, 0.018)
-  const visibilityLift = clamp((Number(envTotalContext.runsMultiplier || 1) - 1) * 0.12, -0.018, 0.018)
-  const probabilityLift = clamp(carryLift + runDeltaLift + visibilityLift, -0.02, 0.075)
-  const projectedRunsLift = clamp(probabilityLift * 0.9 + Number(envTotalContext.expectedTotalRunsDelta || 0) * 0.012, -0.025, 0.085)
-  const reason =
-    highHrForce && Number.isFinite(hrForce)
-      ? `ENV1 HRForce ${roundToTenths(hrForce)} raises YRFI carry`
-      : envTotalContext.runLift
+  const runDeltaLift = clamp(Number(envTotalContext?.expectedTotalRunsDelta || 0) * 0.018, -0.012, 0.018)
+  const visibilityLift = clamp((Number(envTotalContext?.runsMultiplier || 1) - 1) * 0.12, -0.018, 0.018)
+  const ficLift = clamp(Number(ficTotalContext?.matchupRunDelta || 0) * 0.035, 0, 0.02)
+  const weakGameTimeCarryDrag = envTotalContext?.weakGameTimeCarry ? -0.018 : 0
+  const probabilityLift = clamp(
+    carryLift + runDeltaLift + visibilityLift + ficLift + weakGameTimeCarryDrag,
+    -0.02,
+    extremeHrForce ? 0.13 : materialHrForce ? 0.105 : 0.09
+  )
+  const projectedRunsLift = clamp(
+    probabilityLift * 0.9 +
+      Number(envTotalContext?.expectedTotalRunsDelta || 0) * 0.012 +
+      Number(ficTotalContext?.matchupRunDelta || 0) * 0.018 +
+      (envTotalContext?.weakGameTimeCarry ? -0.02 : 0),
+    -0.025,
+    extremeHrForce ? 0.18 : materialHrForce ? 0.14 : 0.105
+  )
+  const reasons = [
+    envTotalContext?.weakGameTimeCarry && Number.isFinite(envTotalContext.gameTimeHrForce ?? envTotalContext.earlyGameMaxHrForce)
+      ? `ENV1 game-time HRForce ${roundToTenths(envTotalContext.earlyGameMaxHrForce ?? envTotalContext.gameTimeHrForce)} weakens the daily carry signal for this evening start`
+      : null,
+    envTotalContext?.carryFades && Number.isFinite(envTotalContext.hrForce)
+      ? `ENV1 first-pitch HRForce ${roundToTenths(envTotalContext.hrForce)} is early carry only, so do not stretch it into a full-game signal`
+      : null,
+    envTotalContext?.highHrForce && Number.isFinite(envTotalContext.hrForce)
+      ? `ENV1 HRForce ${roundToTenths(envTotalContext.hrForce)} raises YRFI carry`
+      : envTotalContext?.runLift
         ? `ENV1 run environment adds first-inning carry`
-        : envTotalContext.runDrag
+        : envTotalContext?.runDrag
           ? `ENV1 run environment suppresses first-inning carry`
-          : null
+          : null,
+    ficTotalContext?.reason
+  ].filter(Boolean)
 
   return {
-    ...envTotalContext,
+    ...(envTotalContext || {}),
+    ficDailyMatchup: ficTotalContext,
+    hrForce: effectiveHrForce,
+    highHrForce,
+    materialHrForce,
+    extremeHrForce,
     probabilityLift,
     projectedRunsLift,
-    reason
+    reason: reasons[0] || null,
+    reasons
+  }
+}
+
+const buildCarryAdjustmentContext = ({
+  environmentAdjustmentContext = null,
+  weatherProfile = null,
+  ficDailyMatchupContext = null
+} = {}) => {
+  const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+  const ficTotalContext = buildFicDailyMatchupTotalContext(ficDailyMatchupContext)
+  if (!envTotalContext && !ficTotalContext) return null
+
+  const envHrForce = numberOrNull(envTotalContext?.hrForce)
+  const ficHrForce = numberOrNull(ficTotalContext?.hrForce)
+  const hrForce = Math.max(envHrForce ?? -Infinity, ficHrForce ?? -Infinity)
+  const effectiveHrForce = Number.isFinite(hrForce) ? hrForce : null
+  const isDome = Boolean(envTotalContext?.isDome || weatherProfile?.isDome)
+  const carryFades = Boolean(envTotalContext?.carryFades)
+  const environmentCarry = Boolean(envTotalContext?.highHrForce && !isDome && !carryFades)
+  const transientEnvironmentCarry = Boolean(envTotalContext?.highHrForce && !isDome && carryFades)
+  const matchupCarry = Boolean(ficTotalContext?.highHrForce && !envTotalContext?.weakOrFadingGameTimeCarry)
+  const highHrForce = environmentCarry || transientEnvironmentCarry || matchupCarry
+  const materialHrForce = highHrForce && Number(effectiveHrForce || 0) >= 1.5 && !carryFades
+  const extremeHrForce = highHrForce && Number(effectiveHrForce || 0) >= 1.7 && !carryFades
+  const weatherCarry =
+    !isDome &&
+    (
+      environmentCarry ||
+      Boolean(envTotalContext?.runLift || envTotalContext?.hrLift)
+    )
+  const lowerWeatherCarry = Boolean(envTotalContext?.lowerWeatherCarry && !matchupCarry)
+  const rawMultiplier =
+      extremeHrForce
+        ? 1.25
+        : materialHrForce
+          ? 1.18
+          : highHrForce
+          ? carryFades
+            ? 1.04
+            : 1.08
+          : envTotalContext?.runLift
+            ? 1.04
+            : 1
+  const carryMultiplier = clamp(rawMultiplier, 1, 1.25)
+  const envHitsDelta = Number(envTotalContext?.expectedHitsDelta || 0)
+  const envRunsDelta = Number(envTotalContext?.expectedTotalRunsDelta || 0)
+  const envHrDelta = Number(envTotalContext?.expectedHrDelta || 0)
+  const ficHitDelta = Number(ficTotalContext?.hitDelta || 0)
+  const ficRunDelta = Number(ficTotalContext?.matchupRunDelta || 0)
+  const ficCarryHitDelta = matchupCarry ? ficHitDelta : 0
+  const ficCarryRunDelta = matchupCarry ? ficRunDelta : 0
+  const multiplierLift = carryMultiplier - 1
+  const hitDelta = clamp(
+    multiplierLift * 3.2 +
+      Math.max(envHitsDelta, 0) * 0.22 +
+      Math.max(envHrDelta, 0) * 0.28 +
+      ficCarryHitDelta * 1.45,
+    envTotalContext?.runDrag && !highHrForce ? -0.22 : 0,
+    extremeHrForce ? 0.95 : materialHrForce ? 0.76 : 0.48
+  )
+  const runDelta = clamp(
+    multiplierLift * 2.15 +
+      Math.max(envRunsDelta, 0) * 0.26 +
+      Math.max(envHrDelta, 0) * 0.2 +
+      ficCarryRunDelta * 0.72,
+    envTotalContext?.runDrag && !highHrForce ? -0.18 : 0,
+    extremeHrForce ? 0.95 : materialHrForce ? 0.72 : 0.46
+  )
+  const conversionDelta = clamp(
+    multiplierLift * 0.11 +
+      Math.max(envRunsDelta, 0) * 0.0035 +
+      ficCarryRunDelta * 0.006,
+    envTotalContext?.runDrag && !highHrForce ? -0.006 : 0,
+    extremeHrForce ? 0.036 : materialHrForce ? 0.028 : 0.016
+  )
+  const firstInningProbabilityLift = clamp(
+    multiplierLift * 0.26 +
+      Math.max(envRunsDelta, 0) * 0.012 +
+      ficCarryRunDelta * 0.02,
+    envTotalContext?.runDrag && !highHrForce ? -0.012 : 0,
+    extremeHrForce ? 0.105 : materialHrForce ? 0.078 : 0.045
+  )
+  const underFragilityRuns = extremeHrForce ? 3 : materialHrForce ? 2.2 : highHrForce ? 1.35 : 0
+  const reasons = [
+    materialHrForce && effectiveHrForce
+      ? `HRForce ${roundToTenths(effectiveHrForce)} applies material carry to pitcher damage and batter production`
+      : highHrForce && effectiveHrForce
+        ? carryFades
+          ? `HRForce ${roundToTenths(effectiveHrForce)} is early carry only, so full-game damage is clipped`
+          : `HRForce ${roundToTenths(effectiveHrForce)} adds carry risk`
+        : null,
+    weatherCarry ? 'weather/park carry is favorable for flight' : null,
+    matchupCarry ? 'FIC batter-vs-pitcher pockets show HRForce carry' : null,
+    isDome && !matchupCarry ? 'dome/weather N/A keeps weather carry neutral' : null,
+    lowerWeatherCarry ? 'weather carry is low or unavailable, so it cannot support an under by itself' : null
+  ].filter(Boolean)
+
+  return {
+    envTotalContext,
+    ficTotalContext,
+    hrForce: effectiveHrForce,
+    envHrForce,
+    ficHrForce,
+    isDome,
+    carryFades,
+    highHrForce,
+    materialHrForce,
+    extremeHrForce,
+    weatherCarry,
+    matchupCarry,
+    lowerWeatherCarry,
+    carryMultiplier: Number(carryMultiplier.toFixed(2)),
+    pitcherDamageMultiplier: Number(carryMultiplier.toFixed(2)),
+    batterProductionMultiplier: Number(carryMultiplier.toFixed(2)),
+    hitDelta,
+    runDelta,
+    conversionDelta,
+    firstInningProbabilityLift,
+    underFragilityRuns,
+    reasons
+  }
+}
+
+const buildStarterWeatherAdjustment = ({
+  starter = null,
+  weatherProfile = null,
+  environmentAdjustmentContext = null,
+  ficDailyMatchupContext = null
+} = {}) => {
+  if (!starter) return null
+
+  const pitchMix = starter.pitchMixProfile || null
+  const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+  const ficTotalContext = buildFicDailyMatchupTotalContext(ficDailyMatchupContext)
+  const envHrForce = numberOrNull(envTotalContext?.hrForce)
+  const ficHrForce = numberOrNull(ficTotalContext?.hrForce)
+  const hrForce = Math.max(envHrForce ?? -Infinity, ficHrForce ?? -Infinity)
+  const effectiveHrForce = Number.isFinite(hrForce) ? hrForce : null
+  const temperatureF = numberOrNull(weatherProfile?.temperatureF)
+  const isDome = Boolean(envTotalContext?.isDome || weatherProfile?.isDome)
+  const carryFades = Boolean(envTotalContext?.carryFades)
+  const highHrForce = Boolean(envTotalContext?.highHrForce || (ficTotalContext?.highHrForce && !envTotalContext?.weakOrFadingGameTimeCarry))
+  const materialHrForce = highHrForce && Number(effectiveHrForce || 0) >= 1.5 && !carryFades
+  const extremeHrForce = highHrForce && Number(effectiveHrForce || 0) >= 1.7 && !carryFades
+  const weatherCarry = Boolean(!isDome && (envTotalContext?.runLift || envTotalContext?.hrLift || envTotalContext?.highHrForce))
+  const hotWeather = Number.isFinite(temperatureF)
+    ? temperatureF >= 84
+    : Boolean(weatherCarry && highHrForce)
+  const extremeHeat = Number.isFinite(temperatureF) && temperatureF >= 94
+  const coldWeather = Number.isFinite(temperatureF) && temperatureF <= 50 && !isDome
+  const archetype = pitchMix?.archetype || 'unknown'
+  const fastballShare = Number(pitchMix?.fastballShare)
+  const spinShare = Number(pitchMix?.spinDependencyShare)
+  const offspeedShare = Number(pitchMix?.offspeedShare)
+  const hrPerNine = Number(starter?.hrPerNine)
+  let hitDelta = 0
+  let runDelta = 0
+  let conversionDelta = 0
+  let firstInningProbabilityDelta = 0
+  let firstInningProjectedRunsDelta = 0
+  let holdDelta = 0
+  const reasons = []
+
+  if (!weatherProfile && !envTotalContext && !ficTotalContext) {
+    return {
+      active: false,
+      pitcherName: starter?.name || '',
+      archetype,
+      label: pitchMix?.label || 'Pitch mix unknown',
+      pitchMix,
+      temperatureF: null,
+      hrForce: effectiveHrForce,
+      isDome,
+      hitDelta: 0,
+      runDelta: 0,
+      conversionDelta: 0,
+      firstInningProbabilityDelta: 0,
+      firstInningProjectedRunsDelta: 0,
+      holdDelta: 0,
+      reasons: []
+    }
+  }
+
+  if (!isDome && (hotWeather || highHrForce)) {
+    let carrySeverity =
+      (hotWeather ? 1 : 0) +
+      (extremeHeat ? 0.35 : 0) +
+      (highHrForce ? 0.35 : 0) +
+      (materialHrForce ? 0.25 : 0) +
+      (extremeHrForce ? 0.25 : 0)
+    if (carryFades) {
+      carrySeverity *= 0.62
+      reasons.push('night-game carry fades after the early window')
+    }
+    if (archetype === 'spin-heavy') {
+      const spinLoad = Number.isFinite(spinShare) ? clamp((spinShare - 38) / 24, 0, 1) : 0.4
+      hitDelta += 0.16 * carrySeverity + spinLoad * 0.12
+      runDelta += 0.09 * carrySeverity + spinLoad * 0.08
+      conversionDelta += 0.0028 * carrySeverity + spinLoad * 0.0035
+      firstInningProbabilityDelta += 0.008 * carrySeverity + spinLoad * 0.009
+      firstInningProjectedRunsDelta += 0.025 * carrySeverity + spinLoad * 0.025
+      holdDelta -= 2.2 * carrySeverity + spinLoad * 2.4
+      reasons.push('spin-heavy arsenal gets a hot/carry grip-and-shape tax')
+    } else if (archetype === 'fastball-heavy' || archetype === 'fastball-leaning') {
+      const fastballLoad = Number.isFinite(fastballShare) ? clamp((fastballShare - 46) / 26, 0, 1) : 0.45
+      const recentHrLeak = Number.isFinite(hrPerNine) && hrPerNine >= 1.15
+      const benefit = recentHrLeak && extremeHrForce ? 0.25 : 1
+      hitDelta -= (0.07 * carrySeverity + fastballLoad * 0.06) * benefit
+      runDelta -= (0.035 * carrySeverity + fastballLoad * 0.035) * benefit
+      conversionDelta -= (0.0014 * carrySeverity + fastballLoad * 0.0015) * benefit
+      firstInningProbabilityDelta -= (0.004 * carrySeverity + fastballLoad * 0.004) * benefit
+      firstInningProjectedRunsDelta -= (0.012 * carrySeverity + fastballLoad * 0.012) * benefit
+      holdDelta += (1.2 * carrySeverity + fastballLoad * 1.4) * benefit
+      if (recentHrLeak && extremeHrForce) {
+        hitDelta += 0.06
+        runDelta += 0.04
+        conversionDelta += 0.001
+        firstInningProbabilityDelta += 0.003
+        holdDelta -= 0.8
+        reasons.push('fastball warm-weather benefit is capped by recent HR leakage in extreme carry')
+      } else {
+        reasons.push('fastball-heavy/leaning arsenal gets a warm-up/velocity weather credit')
+      }
+    } else if (archetype === 'offspeed-heavy') {
+      const offspeedLoad = Number.isFinite(offspeedShare) ? clamp((offspeedShare - 30) / 24, 0, 1) : 0.3
+      hitDelta += 0.035 * carrySeverity + offspeedLoad * 0.035
+      runDelta += 0.025 * carrySeverity + offspeedLoad * 0.025
+      conversionDelta += 0.001 * carrySeverity
+      firstInningProbabilityDelta += 0.003 * carrySeverity
+      holdDelta -= 0.8 * carrySeverity
+      reasons.push('offspeed-heavy arsenal gets a small carry-weather tax')
+    }
+  } else if (coldWeather) {
+    if (archetype === 'fastball-heavy' || archetype === 'fastball-leaning') {
+      hitDelta += 0.08
+      runDelta += 0.045
+      conversionDelta += 0.0015
+      firstInningProbabilityDelta += 0.005
+      firstInningProjectedRunsDelta += 0.015
+      holdDelta -= 1.5
+      reasons.push('cold weather trims the fastball warm-up edge')
+    } else if (archetype === 'spin-heavy') {
+      hitDelta -= 0.06
+      runDelta -= 0.035
+      conversionDelta -= 0.0012
+      firstInningProbabilityDelta -= 0.004
+      firstInningProjectedRunsDelta -= 0.012
+      holdDelta += 1.2
+      reasons.push('cold weather supports spin-heavy pitch shape')
+    }
+  } else if (isDome) {
+    reasons.push('dome/stable environment keeps pitcher-weather archetype neutral')
+  }
+
+  hitDelta = clamp(hitDelta, -0.34, 0.48)
+  runDelta = clamp(runDelta, -0.2, 0.34)
+  conversionDelta = clamp(conversionDelta, -0.006, 0.012)
+  firstInningProbabilityDelta = clamp(firstInningProbabilityDelta, -0.018, 0.04)
+  firstInningProjectedRunsDelta = clamp(firstInningProjectedRunsDelta, -0.045, 0.11)
+  holdDelta = clamp(holdDelta, -7, 5)
+  const active =
+    Math.abs(hitDelta) >= 0.035 ||
+    Math.abs(runDelta) >= 0.025 ||
+    Math.abs(conversionDelta) >= 0.001 ||
+    Math.abs(firstInningProbabilityDelta) >= 0.003 ||
+    Math.abs(holdDelta) >= 0.7
+
+  return {
+    active,
+    pitcherName: starter?.name || '',
+    archetype,
+    label: pitchMix?.label || 'Pitch mix unknown',
+    pitchMix,
+    temperatureF,
+    hrForce: effectiveHrForce,
+    highHrForce,
+    materialHrForce,
+    extremeHrForce,
+    isDome,
+    carryFades,
+    hotWeather,
+    coldWeather,
+    weatherCarry,
+    hitDelta,
+    runDelta,
+    conversionDelta,
+    firstInningProbabilityDelta,
+    firstInningProjectedRunsDelta,
+    holdDelta,
+    reasons
+  }
+}
+
+const buildAvailableReliefAdjustmentContext = (context = null) => {
+  if (!context) return null
+
+  const projectedReliefRunsAllowed = numberOrNull(context.projectedReliefRunsAllowed)
+  const projectedReliefOuts = numberOrNull(context.projectedReliefOuts)
+  const projectedRelieversUsed = numberOrNull(context.projectedRelieversUsed)
+  const bridgeStressScore = numberOrNull(context.bridgeStressScore)
+  const fatigueScore = numberOrNull(context.fatigueScore)
+  const leverageAvailabilityScore = numberOrNull(context.leverageAvailabilityScore)
+  const qualityScore = numberOrNull(context.qualityScore)
+  const topTwoSharePct = numberOrNull(context.topTwoSharePct)
+  const leadAvailabilityScore = numberOrNull(context.lead?.availabilityScore)
+  const leadExpectedOuts = numberOrNull(context.lead?.expectedOuts)
+  const runRiskTier = `${context.runRiskTier || ''}`.toLowerCase()
+  const expectedEarlyBridge = Number(projectedReliefOuts || 0) >= 11 || Number(leadExpectedOuts || 0) >= 4
+  const leverageAvailabilityPenalty = Number.isFinite(leverageAvailabilityScore)
+    ? clamp((58 - leverageAvailabilityScore) * 0.010, -0.16, 0.34)
+    : 0
+  const leadAvailabilityPenalty = Number.isFinite(leadAvailabilityScore)
+    ? clamp((58 - leadAvailabilityScore) * 0.006, -0.08, 0.24)
+    : 0
+  const fatiguePenalty = Number.isFinite(fatigueScore)
+    ? clamp((fatigueScore - 50) * 0.006, -0.1, 0.28)
+    : 0
+  const stressPenalty = Number.isFinite(bridgeStressScore)
+    ? clamp((bridgeStressScore - 52) * 0.009, -0.12, 0.32)
+    : 0
+  const qualityPenalty = Number.isFinite(qualityScore)
+    ? clamp((55 - qualityScore) * 0.008, -0.16, 0.28)
+    : 0
+  const topHeavyPenalty =
+    Number.isFinite(topTwoSharePct) && topTwoSharePct >= 62 && Number(leverageAvailabilityScore || 100) < 58
+      ? clamp((topTwoSharePct - 60) * 0.006, 0.02, 0.16)
+      : 0
+  const relieverCountPenalty = Number.isFinite(projectedRelieversUsed)
+    ? clamp((projectedRelieversUsed - 3) * 0.045, -0.08, 0.18)
+    : 0
+  const tierPenalty =
+    /taxed/.test(runRiskTier)
+      ? 0.22
+      : /watch/.test(runRiskTier)
+        ? 0.12
+        : /fresh/.test(runRiskTier)
+          ? -0.1
+          : 0
+  const availabilityRunDelta = clamp(
+    leverageAvailabilityPenalty +
+      leadAvailabilityPenalty +
+      fatiguePenalty +
+      stressPenalty +
+      qualityPenalty +
+      topHeavyPenalty +
+      relieverCountPenalty +
+      tierPenalty,
+    -0.28,
+    0.78
+  )
+  const adjustedProjectedReliefRunsAllowed = Number.isFinite(projectedReliefRunsAllowed)
+    ? clamp(projectedReliefRunsAllowed + availabilityRunDelta, 0.65, 3.65)
+    : null
+  const baseRunEdge = Number.isFinite(adjustedProjectedReliefRunsAllowed)
+    ? adjustedProjectedReliefRunsAllowed - 1.75
+    : availabilityRunDelta
+  const hitDelta = clamp(
+    baseRunEdge * 0.28 +
+      Math.max(bridgeStressScore ?? 52, 52) * 0.002 +
+      Math.max(58 - Number(leverageAvailabilityScore ?? 58), 0) * 0.006,
+    -0.28,
+    0.72
+  )
+  const runDelta = clamp(baseRunEdge * 0.36 + availabilityRunDelta * 0.45, -0.32, 0.9)
+  const conversionDelta = clamp(baseRunEdge * 0.012 + availabilityRunDelta * 0.01, -0.012, 0.04)
+  const highAvailableBullpenRisk =
+    Number(runDelta) >= 0.28 ||
+    Number(bridgeStressScore || 0) >= 64 ||
+    Number(leverageAvailabilityScore || 100) <= 42 ||
+    /taxed/.test(runRiskTier)
+  const reasons = [
+    Number.isFinite(projectedReliefRunsAllowed)
+      ? `RP2 available-pen runs ${roundToTenths(projectedReliefRunsAllowed)} -> ${adjustedProjectedReliefRunsAllowed != null ? roundToTenths(adjustedProjectedReliefRunsAllowed) : 'n/a'}`
+      : null,
+    Number.isFinite(leverageAvailabilityScore) && leverageAvailabilityScore <= 50
+      ? `leverage availability ${roundToTenths(leverageAvailabilityScore)}/100`
+      : null,
+    Number.isFinite(leadAvailabilityScore) && leadAvailabilityScore <= 50
+      ? `lead reliever availability ${roundToTenths(leadAvailabilityScore)}/100`
+      : null,
+    Number.isFinite(bridgeStressScore) && bridgeStressScore >= 60
+      ? `bridge stress ${roundToTenths(bridgeStressScore)}`
+      : null,
+    /taxed|watch/.test(runRiskTier) ? `run-risk tier ${context.runRiskTier}` : null
+  ].filter(Boolean)
+
+  return {
+    projectedReliefRunsAllowed,
+    adjustedProjectedReliefRunsAllowed,
+    projectedReliefOuts,
+    projectedRelieversUsed,
+    bridgeStressScore,
+    fatigueScore,
+    leverageAvailabilityScore,
+    qualityScore,
+    topTwoSharePct,
+    leadAvailabilityScore,
+    leadExpectedOuts,
+    runRiskTier: context.runRiskTier || null,
+    expectedEarlyBridge,
+    availabilityRunDelta,
+    hitDelta,
+    runDelta,
+    conversionDelta,
+    highAvailableBullpenRisk,
+    reasons
   }
 }
 
@@ -361,6 +1141,7 @@ const buildReliefProjectionTotalContext = (reliefProjectionContexts = []) => {
   const sides = reliefProjectionContexts
     .filter(Boolean)
     .map((context) => {
+      const availableRelief = buildAvailableReliefAdjustmentContext(context)
       const projectedReliefRunsAllowed = numberOrNull(context.projectedReliefRunsAllowed)
       const projectedReliefOuts = numberOrNull(context.projectedReliefOuts)
       const bridgeStressScore = numberOrNull(context.bridgeStressScore)
@@ -371,19 +1152,22 @@ const buildReliefProjectionTotalContext = (reliefProjectionContexts = []) => {
       return {
         teamName: context.teamName || null,
         projectedReliefRunsAllowed,
+        adjustedProjectedReliefRunsAllowed: availableRelief?.adjustedProjectedReliefRunsAllowed ?? projectedReliefRunsAllowed,
         projectedReliefOuts,
         bridgeStressScore,
         fatigueScore,
         leverageAvailabilityScore,
         qualityScore,
-        runRiskTier: context.runRiskTier || null
+        runRiskTier: context.runRiskTier || null,
+        availabilityRunDelta: availableRelief?.availabilityRunDelta ?? 0,
+        availableRelief
       }
     })
 
   if (!sides.length) return null
 
   const projectedRuns = sides
-    .map((side) => side.projectedReliefRunsAllowed)
+    .map((side) => side.adjustedProjectedReliefRunsAllowed ?? side.projectedReliefRunsAllowed)
     .filter(Number.isFinite)
   const projectedOuts = sides
     .map((side) => side.projectedReliefOuts)
@@ -397,24 +1181,31 @@ const buildReliefProjectionTotalContext = (reliefProjectionContexts = []) => {
   const qualityScores = sides
     .map((side) => side.qualityScore)
     .filter(Number.isFinite)
+  const availabilityScores = sides
+    .map((side) => side.leverageAvailabilityScore)
+    .filter(Number.isFinite)
   const taxedBridgeCount = sides.filter((side) => /taxed|watch/i.test(side.runRiskTier || '')).length
+  const highAvailableBullpenRiskCount = sides.filter((side) => side.availableRelief?.highAvailableBullpenRisk).length
   const maxProjectedReliefRunsAllowed = projectedRuns.length ? Math.max(...projectedRuns) : null
   const combinedProjectedReliefRunsAllowed = projectedRuns.length ? projectedRuns.reduce((sum, value) => sum + value, 0) : null
   const maxProjectedReliefOuts = projectedOuts.length ? Math.max(...projectedOuts) : null
   const maxBridgeStressScore = bridgeStress.length ? Math.max(...bridgeStress) : null
   const maxFatigueScore = fatigueScores.length ? Math.max(...fatigueScores) : null
   const minQualityScore = qualityScores.length ? Math.min(...qualityScores) : null
+  const minLeverageAvailabilityScore = availabilityScores.length ? Math.min(...availabilityScores) : null
   const highLateRunRisk =
     (Number.isFinite(maxBridgeStressScore) && maxBridgeStressScore >= 64) ||
     (Number.isFinite(maxProjectedReliefRunsAllowed) && maxProjectedReliefRunsAllowed >= 2.25) ||
     (Number.isFinite(combinedProjectedReliefRunsAllowed) && combinedProjectedReliefRunsAllowed >= 4.25) ||
-    taxedBridgeCount > 0
+    taxedBridgeCount > 0 ||
+    highAvailableBullpenRiskCount > 0
   const watchLateRunRisk =
     highLateRunRisk ||
     (Number.isFinite(maxBridgeStressScore) && maxBridgeStressScore >= 56) ||
     (Number.isFinite(maxProjectedReliefRunsAllowed) && maxProjectedReliefRunsAllowed >= 2.0) ||
     (Number.isFinite(maxFatigueScore) && maxFatigueScore >= 62) ||
-    (Number.isFinite(minQualityScore) && minQualityScore <= 42)
+    (Number.isFinite(minQualityScore) && minQualityScore <= 42) ||
+    (Number.isFinite(minLeverageAvailabilityScore) && minLeverageAvailabilityScore <= 48)
 
   return {
     sides,
@@ -424,7 +1215,9 @@ const buildReliefProjectionTotalContext = (reliefProjectionContexts = []) => {
     maxBridgeStressScore,
     maxFatigueScore,
     minQualityScore,
+    minLeverageAvailabilityScore,
     taxedBridgeCount,
+    highAvailableBullpenRiskCount,
     highLateRunRisk,
     watchLateRunRisk
   }
@@ -432,6 +1225,7 @@ const buildReliefProjectionTotalContext = (reliefProjectionContexts = []) => {
 
 const buildRp2LateRunConversionDelta = (context = null) => {
   if (!context) return 0
+  const availableRelief = buildAvailableReliefAdjustmentContext(context)
 
   const projectedReliefRunsAllowed = numberOrNull(context.projectedReliefRunsAllowed)
   const bridgeStressScore = numberOrNull(context.bridgeStressScore)
@@ -454,8 +1248,11 @@ const buildRp2LateRunConversionDelta = (context = null) => {
   }
   if (/taxed/.test(runRiskTier)) delta += 0.006
   else if (/fresh/.test(runRiskTier)) delta -= 0.004
+  if (availableRelief) {
+    delta += Number(availableRelief.conversionDelta || 0)
+  }
 
-  return clamp(delta, -0.016, 0.024)
+  return clamp(delta, -0.024, 0.046)
 }
 
 const buildMlbBullpenChainSignal = (game, participants) => {
@@ -702,6 +1499,154 @@ const lineupStatusConfidence = (status = '') => {
   return 0.2
 }
 
+const buildLineupBattingPressureAdjustment = (lineupProfile = null, lineupConfidence = 1) => {
+  if (!lineupProfile) {
+    return {
+      hitDelta: 0,
+      coverageDelta: 0,
+      runConversionDelta: 0,
+      holdDelta: 0,
+      scoreDelta: 0,
+      note: null
+    }
+  }
+
+  const battingPressureIndex = Number(lineupProfile.battingPressureIndex)
+  if (!Number.isFinite(battingPressureIndex)) {
+    return {
+      hitDelta: 0,
+      coverageDelta: 0,
+      runConversionDelta: 0,
+      holdDelta: 0,
+      scoreDelta: 0,
+      note: null
+    }
+  }
+
+  const highAverageCount = Number(lineupProfile.highAverageCount || 0)
+  const topSixHighAverageCount = Number(lineupProfile.topSixHighAverageCount || 0)
+  const highOpsCount = Number(lineupProfile.highOpsCount || 0)
+  const pressureGap = battingPressureIndex - 50
+  const stackBonus =
+    highAverageCount >= 7
+      ? 0.12
+      : highAverageCount >= 5
+        ? 0.07
+        : topSixHighAverageCount >= 4
+          ? 0.05
+          : 0
+  const opsBonus = highOpsCount >= 4 ? 0.05 : highOpsCount >= 3 ? 0.03 : 0
+  const hitDelta = clamp((pressureGap * 0.011 + stackBonus + opsBonus) * lineupConfidence, -0.22, 0.48)
+  const coverageDelta = clamp(
+    (-Math.max(battingPressureIndex - 58, 0) * 0.0019 - stackBonus * 0.08) * lineupConfidence,
+    -0.09,
+    0.03
+  )
+  const runConversionDelta = clamp((Math.max(battingPressureIndex - 55, 0) * 0.00032 + stackBonus * 0.004) * lineupConfidence, 0, 0.016)
+  const holdDelta = clamp((-Math.max(battingPressureIndex - 52, 0) * 0.2 - stackBonus * 11) * lineupConfidence, -10, 2)
+  const scoreDelta = clamp((pressureGap * 0.1 + highAverageCount * 0.45 + highOpsCount * 0.35) * lineupConfidence, -3.5, 8)
+
+  return {
+    hitDelta,
+    coverageDelta,
+    runConversionDelta,
+    holdDelta,
+    scoreDelta,
+    note:
+      highAverageCount >= 7
+        ? `${highAverageCount} .300-profile bats stress the starter`
+        : battingPressureIndex >= 62
+          ? lineupProfile.battingPressureLabel || 'lineup batting pressure'
+          : null
+  }
+}
+
+const buildHandednessSplitAdjustment = (lineupProfile = null, lineupConfidence = 1) => {
+  const splitProfile = lineupProfile?.handednessSplitProfile ?? lineupProfile
+  const splitIndex = Number(splitProfile?.index ?? lineupProfile?.handednessSplitIndex)
+  if (!Number.isFinite(splitIndex)) {
+    return {
+      hitDelta: 0,
+      coverageDelta: 0,
+      runConversionDelta: 0,
+      holdDelta: 0,
+      scoreDelta: 0,
+      note: null,
+      profile: null
+    }
+  }
+
+  const splitCount = Number(splitProfile?.splitCount ?? lineupProfile?.handednessSplitCount ?? 0)
+  const strongSplitCount = Number(splitProfile?.strongSplitCount ?? lineupProfile?.strongSplitCount ?? 0)
+  const weakSplitCount = Number(splitProfile?.weakSplitCount ?? lineupProfile?.weakSplitCount ?? 0)
+  const severeWeakSplitCount = Number(splitProfile?.severeWeakSplitCount ?? lineupProfile?.severeWeakSplitCount ?? 0)
+  const topSixStrongSplitCount = Number(splitProfile?.topSixStrongSplitCount ?? lineupProfile?.topSixStrongSplitCount ?? 0)
+  const topSixWeakSplitCount = Number(splitProfile?.topSixWeakSplitCount ?? lineupProfile?.topSixWeakSplitCount ?? 0)
+  const topThirdStrongSplitCount = Number(splitProfile?.topThirdStrongSplitCount ?? lineupProfile?.topThirdStrongSplitCount ?? 0)
+  const topThirdWeakSplitCount = Number(splitProfile?.topThirdWeakSplitCount ?? lineupProfile?.topThirdWeakSplitCount ?? 0)
+  const pressureGap = splitIndex - 50
+  const sampleConfidence = Number.isFinite(splitCount) && splitCount > 0 ? clamp(splitCount / 7, 0.5, 1) : 0.65
+  const confidence = lineupConfidence * sampleConfidence
+  const strongBonus =
+    Math.max(strongSplitCount - 3, 0) * 0.05 +
+    Math.max(topSixStrongSplitCount - 2, 0) * 0.04 +
+    topThirdStrongSplitCount * 0.025
+  const weakPenalty =
+    Math.max(weakSplitCount - 2, 0) * 0.055 +
+    Math.max(topSixWeakSplitCount - 1, 0) * 0.045 +
+    topThirdWeakSplitCount * 0.025 +
+    severeWeakSplitCount * 0.045
+  const hitDelta = clamp((pressureGap * 0.013 + strongBonus - weakPenalty) * confidence, -0.58, 0.7)
+  const coverageDelta = clamp(
+    (
+      -Math.max(pressureGap, 0) * 0.0021 -
+      strongBonus * 0.11 +
+      Math.max(-pressureGap, 0) * 0.0015 +
+      weakPenalty * 0.06
+    ) * confidence,
+    -0.11,
+    0.07
+  )
+  const runConversionDelta = clamp(
+    (pressureGap * 0.00045 + strongBonus * 0.006 - weakPenalty * 0.0035) * confidence,
+    -0.014,
+    0.022
+  )
+  const holdDelta = clamp(
+    (
+      -Math.max(pressureGap, 0) * 0.22 -
+      strongBonus * 15 +
+      Math.max(-pressureGap, 0) * 0.15 +
+      weakPenalty * 8
+    ) * confidence,
+    -11,
+    8
+  )
+  const scoreDelta = clamp(
+    (pressureGap * 0.08 + strongSplitCount * 0.45 - weakSplitCount * 0.35 - severeWeakSplitCount * 0.45) * confidence,
+    -5.5,
+    7.5
+  )
+  const note =
+    splitIndex >= 62
+      ? `${strongSplitCount} strong handedness split bats versus starter hand`
+      : splitIndex <= 42
+        ? `${weakSplitCount} weak handedness split bats versus starter hand`
+        : Math.abs(hitDelta) >= 0.08
+          ? splitProfile?.label || 'handedness split adjustment'
+          : null
+
+  return {
+    hitDelta,
+    coverageDelta,
+    runConversionDelta,
+    holdDelta,
+    scoreDelta,
+    note,
+    profile: splitProfile
+  }
+}
+
 const buildProjectedHitProfile = ({
   role = '',
   offenseProfile = {},
@@ -715,6 +1660,7 @@ const buildProjectedHitProfile = ({
   weatherProfile = null,
   sunVisibilityProfile = null,
   environmentAdjustmentContext = null,
+  ficDailyMatchupTeamContext = null,
   opposingReliefProjectionContext = null
 }) => {
   const offenseFeedStale = Boolean(offenseProfile?.staleFeed)
@@ -734,6 +1680,19 @@ const buildProjectedHitProfile = ({
   const runIndex = Number(parkContext?.indexRuns)
   const wobaIndex = Number(parkContext?.indexWoba)
   let bullpenAdjustment = 0
+  const availableReliefContext = buildAvailableReliefAdjustmentContext(opposingReliefProjectionContext)
+  const carryContext = buildCarryAdjustmentContext({
+    environmentAdjustmentContext,
+    weatherProfile,
+    ficDailyMatchupContext: ficDailyMatchupTeamContext
+  })
+  const starterWeatherAdjustment = buildStarterWeatherAdjustment({
+    starter: opposingStarter,
+    weatherProfile,
+    environmentAdjustmentContext,
+    ficDailyMatchupContext: ficDailyMatchupTeamContext
+  })
+  const handednessSplitAdjustment = buildHandednessSplitAdjustment(lineupProfile, lineupConfidence)
 
   if (offenseFeedStale) {
     qualityNotes.push('team offense feed stale')
@@ -773,6 +1732,10 @@ const buildProjectedHitProfile = ({
       starterPhaseProjection += (lineupProfile.pitchTypePressureIndex - 50) * 0.013 * lineupConfidence
     }
 
+    if (Number.isFinite(lineupProfile.starterMatchupKernelIndex)) {
+      starterPhaseProjection += (lineupProfile.starterMatchupKernelIndex - 50) * 0.012 * lineupConfidence
+    }
+
     if (Number.isFinite(lineupProfile.starterPressureIndex)) {
       starterPhaseProjection += (lineupProfile.starterPressureIndex - 50) * 0.014 * lineupConfidence
     }
@@ -784,6 +1747,17 @@ const buildProjectedHitProfile = ({
           ? 'partial lineup split pressure'
           : 'projected lineup split pressure'
     )
+
+    const battingPressureAdjustment = buildLineupBattingPressureAdjustment(lineupProfile, lineupConfidence)
+    if (Math.abs(battingPressureAdjustment.hitDelta) >= 0.04) {
+      starterPhaseProjection += battingPressureAdjustment.hitDelta
+      qualityNotes.push(battingPressureAdjustment.note || 'lineup batting pressure')
+    }
+
+    if (Math.abs(handednessSplitAdjustment.hitDelta) >= 0.04) {
+      starterPhaseProjection += handednessSplitAdjustment.hitDelta
+      qualityNotes.push(handednessSplitAdjustment.note || 'handedness split adjustment')
+    }
   }
 
   if (opposingStarter) {
@@ -801,6 +1775,15 @@ const buildProjectedHitProfile = ({
 
     if (Number.isFinite(opposingStarter.kPerNine)) {
       starterPhaseProjection -= (opposingStarter.kPerNine - 8.6) * 0.07
+    }
+
+    if (starterWeatherAdjustment?.active) {
+      starterPhaseProjection += Number(starterWeatherAdjustment.hitDelta || 0)
+      qualityNotes.push(
+        starterWeatherAdjustment.hitDelta >= 0
+          ? 'pitcher weather-archetype damage'
+          : 'pitcher weather-archetype protection'
+      )
     }
 
     if (!opposingStarter.sampleEstablished) {
@@ -873,12 +1856,23 @@ const buildProjectedHitProfile = ({
 
       qualityNotes.push('starter recent form')
     }
+
+    const vsTeamContext = opposingStarter.starterVsTeamContext
+    if (vsTeamContext && Number(vsTeamContext.sampleWeight || 0) >= 0.18) {
+      const vsTeamHitsDelta = Number(vsTeamContext.projectedHitsDelta || 0)
+      if (Math.abs(vsTeamHitsDelta) >= 0.04) {
+        starterPhaseProjection += vsTeamHitsDelta
+        qualityNotes.push(vsTeamContext.label || 'starter-vs-opponent history')
+      }
+    }
   }
 
   if (!opposingBullpen?.staleFeed && [Number(opposingBullpen.era), Number(opposingBullpen.whip)].every(Number.isFinite)) {
-    bullpenAdjustment += (Number(opposingBullpen.era) - 4.1) * 0.14
-    bullpenAdjustment += (Number(opposingBullpen.whip) - 1.31) * 0.9
-    qualityNotes.push('bullpen shape')
+    const seasonBullpenAdjustment =
+      (Number(opposingBullpen.era) - 4.1) * 0.14 +
+      (Number(opposingBullpen.whip) - 1.31) * 0.9
+    bullpenAdjustment += availableReliefContext ? seasonBullpenAdjustment * 0.55 : seasonBullpenAdjustment
+    qualityNotes.push(availableReliefContext ? 'season bullpen baseline adjusted by RP2 availability' : 'bullpen shape')
   } else if (opposingBullpen?.staleFeed) {
     qualityNotes.push('bullpen stat feed stale')
   }
@@ -935,21 +1929,51 @@ const buildProjectedHitProfile = ({
     }
   }
 
+  const ficTotalContext = buildFicDailyMatchupTotalContext(ficDailyMatchupTeamContext)
+  if (ficTotalContext && Number(ficTotalContext.hitDelta || 0) >= 0.04) {
+    starterPhaseProjection += Number(ficTotalContext.hitDelta || 0) * 0.62
+    bullpenAdjustment += Number(ficTotalContext.hitDelta || 0) * 0.38
+    qualityNotes.push(
+      ficTotalContext.highHrForce
+        ? `FIC matchup HRForce ${roundToTenths(ficTotalContext.hrForce)}`
+        : 'FIC matchup contact quality'
+    )
+  }
+
+  if (carryContext && Number(carryContext.hitDelta || 0) >= 0.04) {
+    const amplification = Number(carryContext.hitDelta || 0) * (carryContext.materialHrForce ? 0.74 : 0.42)
+    starterPhaseProjection += amplification * 0.58
+    bullpenAdjustment += amplification * 0.42
+    qualityNotes.push(
+      carryContext.materialHrForce
+        ? `material HRForce ${roundToTenths(carryContext.hrForce)} carry`
+        : 'weather/FIC carry adjustment'
+    )
+  }
+
   if (opposingReliefProjectionContext) {
     const projectedReliefRunsAllowed = numberOrNull(opposingReliefProjectionContext.projectedReliefRunsAllowed)
     const bridgeStressScore = numberOrNull(opposingReliefProjectionContext.bridgeStressScore)
     const qualityScore = numberOrNull(opposingReliefProjectionContext.qualityScore)
-    const rp2HitAdjustment = clamp(
+    const baseRp2HitAdjustment = clamp(
       (Number.isFinite(projectedReliefRunsAllowed) ? (projectedReliefRunsAllowed - 1.75) * 0.14 : 0) +
         (Number.isFinite(bridgeStressScore) ? (bridgeStressScore - 52) * 0.006 : 0) -
         (Number.isFinite(qualityScore) ? (qualityScore - 55) * 0.004 : 0),
       -0.26,
       0.36
     )
+    const availableReliefHitAdjustment = Number(availableReliefContext?.hitDelta || 0)
+    const rawRp2HitAdjustment = baseRp2HitAdjustment + availableReliefHitAdjustment
+    const carryAmplifier = rawRp2HitAdjustment > 0 && carryContext?.highHrForce
+      ? carryContext.materialHrForce
+        ? 1.22
+        : 1.1
+      : 1
+    const rp2HitAdjustment = clamp(rawRp2HitAdjustment * carryAmplifier, -0.34, 0.86)
 
     if (Math.abs(rp2HitAdjustment) >= 0.04) {
       bullpenAdjustment += rp2HitAdjustment
-      qualityNotes.push('RP2 relief run projection')
+      qualityNotes.push(availableReliefContext ? 'RP2 available-bullpen projection' : 'RP2 relief run projection')
     }
   }
 
@@ -1046,6 +2070,10 @@ const buildProjectedHitProfile = ({
       starterCoverageFirst5 -=
         Math.max(lineupProfile.pitchTypePressureIndex - 56, 0) * 0.0016 * lineupConfidence
     }
+
+    const battingPressureAdjustment = buildLineupBattingPressureAdjustment(lineupProfile, lineupConfidence)
+    starterCoverageFirst5 += battingPressureAdjustment.coverageDelta
+    starterCoverageFirst5 += handednessSplitAdjustment.coverageDelta
   }
 
   starterCoverageFirst5 = clamp(starterCoverageFirst5, 0.58, 1)
@@ -1106,14 +2134,82 @@ const buildProjectedHitProfile = ({
       ? roundToTenths(opposingBullpenChainScore)
       : null,
     sunVisibilityHitLift: roundToTenths(sunFirst5HitLift + sunLateHitLift),
+    carryAdjustment: carryContext
+      ? {
+          hrForce: carryContext.hrForce != null ? roundToTenths(carryContext.hrForce) : null,
+          materialHrForce: Boolean(carryContext.materialHrForce),
+          extremeHrForce: Boolean(carryContext.extremeHrForce),
+          carryMultiplier: carryContext.carryMultiplier,
+          hitDelta: roundToTenths(Number(carryContext.hitDelta || 0)),
+          runDelta: roundToTenths(Number(carryContext.runDelta || 0)),
+          reasons: carryContext.reasons
+      }
+      : null,
+    starterWeatherAdjustment: starterWeatherAdjustment
+      ? {
+          pitcherName: starterWeatherAdjustment.pitcherName,
+          archetype: starterWeatherAdjustment.archetype,
+          label: starterWeatherAdjustment.label,
+          active: Boolean(starterWeatherAdjustment.active),
+          temperatureF: starterWeatherAdjustment.temperatureF,
+          hrForce: starterWeatherAdjustment.hrForce != null ? roundToTenths(starterWeatherAdjustment.hrForce) : null,
+          hotWeather: Boolean(starterWeatherAdjustment.hotWeather),
+          coldWeather: Boolean(starterWeatherAdjustment.coldWeather),
+          hitDelta: roundToTenths(Number(starterWeatherAdjustment.hitDelta || 0)),
+          runDelta: roundToTenths(Number(starterWeatherAdjustment.runDelta || 0)),
+          conversionDelta: Number(starterWeatherAdjustment.conversionDelta || 0),
+          firstInningProbabilityLiftPct: roundToTenths(Number(starterWeatherAdjustment.firstInningProbabilityDelta || 0) * 100),
+          holdDelta: roundToTenths(Number(starterWeatherAdjustment.holdDelta || 0)),
+          reasons: starterWeatherAdjustment.reasons ?? []
+        }
+      : null,
+    handednessSplitAdjustment: handednessSplitAdjustment.profile
+      ? {
+          index: handednessSplitAdjustment.profile.index,
+          label: handednessSplitAdjustment.profile.label,
+          splitAvgAverage: handednessSplitAdjustment.profile.splitAvgAverage,
+          splitOpsAverage: handednessSplitAdjustment.profile.splitOpsAverage,
+          strongSplitCount: handednessSplitAdjustment.profile.strongSplitCount,
+          weakSplitCount: handednessSplitAdjustment.profile.weakSplitCount,
+          hitDelta: roundToTenths(Number(handednessSplitAdjustment.hitDelta || 0)),
+          runConversionDelta: handednessSplitAdjustment.runConversionDelta,
+          reasons: handednessSplitAdjustment.profile.reasons
+        }
+      : null,
+    availableReliefAdjustment: availableReliefContext
+      ? {
+          adjustedProjectedReliefRunsAllowed: availableReliefContext.adjustedProjectedReliefRunsAllowed != null
+            ? roundToTenths(availableReliefContext.adjustedProjectedReliefRunsAllowed)
+            : null,
+          leverageAvailabilityScore: availableReliefContext.leverageAvailabilityScore,
+          leadAvailabilityScore: availableReliefContext.leadAvailabilityScore,
+          runDelta: roundToTenths(Number(availableReliefContext.runDelta || 0)),
+          hitDelta: roundToTenths(Number(availableReliefContext.hitDelta || 0)),
+          expectedEarlyBridge: Boolean(availableReliefContext.expectedEarlyBridge),
+          highAvailableBullpenRisk: Boolean(availableReliefContext.highAvailableBullpenRisk),
+          reasons: availableReliefContext.reasons
+        }
+      : null,
     notes: qualityNotes
   }
 }
 
-const buildStarterHoldConfidence = ({ starter = null, lineupProfile = null }) => {
+const buildStarterHoldConfidence = ({
+  starter = null,
+  lineupProfile = null,
+  weatherProfile = null,
+  environmentAdjustmentContext = null,
+  ficDailyMatchupTeamContext = null
+}) => {
   if (!starter) return null
 
   let score = 56
+  const starterWeatherAdjustment = buildStarterWeatherAdjustment({
+    starter,
+    weatherProfile,
+    environmentAdjustmentContext,
+    ficDailyMatchupContext: ficDailyMatchupTeamContext
+  })
 
   const inningsAnchor = Number.isFinite(starter.expectedInnings)
     ? starter.expectedInnings
@@ -1173,6 +2269,17 @@ const buildStarterHoldConfidence = ({ starter = null, lineupProfile = null }) =>
     score += clamp(starter.warDelta, -3, 3) * 1.8
   }
 
+  if (
+    starter.starterVsTeamContext &&
+    Number(starter.starterVsTeamContext.sampleWeight || 0) >= 0.18
+  ) {
+    score += Number(starter.starterVsTeamContext.starterHoldAdjustment || 0)
+  }
+
+  if (starterWeatherAdjustment?.active) {
+    score += Number(starterWeatherAdjustment.holdDelta || 0)
+  }
+
   if (lineupProfile) {
     if (Number.isFinite(lineupProfile.starterPressureIndex)) {
       score -= (lineupProfile.starterPressureIndex - 50) * 0.42
@@ -1181,6 +2288,12 @@ const buildStarterHoldConfidence = ({ starter = null, lineupProfile = null }) =>
     if (Number.isFinite(lineupProfile.platoonPressureIndex)) {
       score -= (lineupProfile.platoonPressureIndex - 50) * 0.24
     }
+
+    const battingPressureAdjustment = buildLineupBattingPressureAdjustment(lineupProfile, 1)
+    score += battingPressureAdjustment.holdDelta
+
+    const handednessSplitAdjustment = buildHandednessSplitAdjustment(lineupProfile, 1)
+    score += handednessSplitAdjustment.holdDelta
   }
 
   return roundToTenths(clamp(score, 18, 92))
@@ -1224,18 +2337,33 @@ const buildRunConversionRate = ({
   opposingBullpenExhaustion,
   opposingReliefProjectionContext = null,
   environmentAdjustmentContext = null,
+  ficDailyMatchupTeamContext = null,
   lineupProfile = null,
   weatherProfile = null,
   phase = 'full'
 }) => {
   const runIndex = Number(parkContext?.indexRuns)
   let rate = 0.47
+  const carryContext = buildCarryAdjustmentContext({
+    environmentAdjustmentContext,
+    weatherProfile,
+    ficDailyMatchupContext: ficDailyMatchupTeamContext
+  })
+  const starterWeatherAdjustment = buildStarterWeatherAdjustment({
+    starter: opposingStarter,
+    weatherProfile,
+    environmentAdjustmentContext,
+    ficDailyMatchupContext: ficDailyMatchupTeamContext
+  })
+  const handednessSplitAdjustment = buildHandednessSplitAdjustment(lineupProfile, 1)
 
   if (Number.isFinite(offenseScore)) rate += (offenseScore - 56) * 0.0015
   if (Number.isFinite(savantScore)) rate += (savantScore - 56) * 0.0018
   if (Number.isFinite(runIndex)) rate += (runIndex - 100) * 0.0008
 
   if (phase === 'first5') {
+    const battingPressureAdjustment = buildLineupBattingPressureAdjustment(lineupProfile, 1)
+
     rate -= 0.008
 
     if (opposingStarter?.profileType === 'Traffic-risk') rate += 0.024
@@ -1264,14 +2392,40 @@ const buildRunConversionRate = ({
       }
     }
 
+    if (battingPressureAdjustment.runConversionDelta > 0) {
+      rate += battingPressureAdjustment.runConversionDelta
+    }
+
+    if (Math.abs(handednessSplitAdjustment.runConversionDelta) >= 0.001) {
+      rate += handednessSplitAdjustment.runConversionDelta
+    }
+
+    const vsTeamContext = opposingStarter?.starterVsTeamContext
+    if (vsTeamContext && Number(vsTeamContext.sampleWeight || 0) >= 0.18) {
+      rate += Number(vsTeamContext.runConversionDelta || 0)
+    }
+
     if (weatherProfile) {
       rate += Number(weatherProfile.runBoostFirst5 || 0)
     }
 
-    const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
-    if (envTotalContext?.highHrForce) rate += 0.0035
-    if (envTotalContext?.runLift) rate += 0.0025
-    if (envTotalContext?.runDrag) rate -= 0.0025
+	    const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+	    if (envTotalContext?.highHrForce) rate += envTotalContext?.carryFades ? 0.0017 : 0.0035
+	    if (envTotalContext?.runLift) rate += 0.0025
+	    if (envTotalContext?.runDrag) rate -= 0.0025
+
+	    const ficTotalContext = buildFicDailyMatchupTotalContext(ficDailyMatchupTeamContext)
+	    const ficCarryAllowed = !envTotalContext?.weakOrFadingGameTimeCarry
+	    if (ficCarryAllowed && ficTotalContext?.highHrForce) rate += ficTotalContext.extremeHrForce ? 0.005 : 0.0035
+	    else if (ficTotalContext?.runLift) rate += 0.0018
+
+    if (carryContext?.highHrForce) {
+      rate += Number(carryContext.conversionDelta || 0) * (carryContext.carryFades ? 0.42 : carryContext.materialHrForce ? 0.8 : 0.55)
+    }
+
+    if (starterWeatherAdjustment?.active) {
+      rate += Number(starterWeatherAdjustment.conversionDelta || 0)
+    }
   }
 
   if (phase === 'late') {
@@ -1291,14 +2445,39 @@ const buildRunConversionRate = ({
       rate += Number(weatherProfile.runBoostLate || 0)
     }
 
-    const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
-    if (envTotalContext?.highHrForce) rate += 0.004
-    if (envTotalContext?.runLift) rate += 0.003
-    if (envTotalContext?.runDrag) rate -= 0.003
+	    const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+	    if (envTotalContext?.highHrForce) rate += envTotalContext?.carryFades ? 0.001 : 0.004
+	    if (envTotalContext?.runLift) rate += 0.003
+	    if (envTotalContext?.runDrag) rate -= 0.003
+
+	    const ficTotalContext = buildFicDailyMatchupTotalContext(ficDailyMatchupTeamContext)
+	    const ficCarryAllowed = !envTotalContext?.weakOrFadingGameTimeCarry
+	    if (ficCarryAllowed && ficTotalContext?.highHrForce) rate += ficTotalContext.extremeHrForce ? 0.0045 : 0.003
+    else if (ficTotalContext?.runLift) rate += 0.0015
+
+    if (carryContext?.highHrForce) {
+      rate += Number(carryContext.conversionDelta || 0) * (carryContext.carryFades ? 0.25 : carryContext.materialHrForce ? 1 : 0.65)
+    }
+
+    if (Math.abs(handednessSplitAdjustment.runConversionDelta) >= 0.001) {
+      rate += handednessSplitAdjustment.runConversionDelta * 0.35
+    }
   }
 
   if (phase === 'full' && weatherProfile) {
     rate += (Number(weatherProfile.runBoostFirst5 || 0) + Number(weatherProfile.runBoostLate || 0)) * 0.5
+  }
+
+  if (phase === 'full' && carryContext?.highHrForce) {
+    rate += Number(carryContext.conversionDelta || 0) * (carryContext.carryFades ? 0.3 : carryContext.materialHrForce ? 0.9 : 0.5)
+  }
+
+  if (phase === 'full' && starterWeatherAdjustment?.active) {
+    rate += Number(starterWeatherAdjustment.conversionDelta || 0) * 0.72
+  }
+
+  if (phase === 'full' && Math.abs(handednessSplitAdjustment.runConversionDelta) >= 0.001) {
+    rate += handednessSplitAdjustment.runConversionDelta * 0.55
   }
 
   return clamp(rate, 0.39, 0.72)
@@ -1342,23 +2521,36 @@ const buildFirst5TailOverlay = ({
   weatherProfile = null,
   sunVisibilityProfile = null,
   environmentAdjustmentContext = null,
-  reliefProjectionContexts = []
+  ficDailyMatchupContext = null,
+  reliefProjectionContexts = [],
+  starterVsTeamContexts = []
 }) => {
   const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+  const ficTotalContext = buildFicDailyMatchupTotalContext(ficDailyMatchupContext)
   const reliefTotalContext = buildReliefProjectionTotalContext(reliefProjectionContexts)
-  const weatherLabel = `${weatherProfile?.label || ''}`.toLowerCase()
-  const temperatureF = Number(weatherProfile?.temperatureF)
-  const windDirection = `${weatherProfile?.windDirection || ''}`.toLowerCase()
-  const weatherCarry =
-    !weatherProfile?.isDome &&
-    (
+  const repeatDamageContexts = starterVsTeamContexts.filter((context) => context?.repeatOpponentUnderWarning)
+  const maxRepeatOpponentFirst5Tax = maxMetric(repeatDamageContexts, 'repeatOpponentFirst5Tax')
+  const carryContext = buildCarryAdjustmentContext({
+    environmentAdjustmentContext,
+    weatherProfile,
+    ficDailyMatchupContext
+  })
+	  const weatherLabel = `${weatherProfile?.label || ''}`.toLowerCase()
+	  const temperatureF = Number(weatherProfile?.temperatureF)
+	  const windDirection = `${weatherProfile?.windDirection || ''}`.toLowerCase()
+	  const ficCarryAllowed = !envTotalContext?.weakOrFadingGameTimeCarry
+	  const weatherCarry =
+	    !weatherProfile?.isDome &&
+	    (
       /helps carry|wind .*out/.test(weatherLabel) ||
       /out/.test(windDirection) ||
       Number(weatherProfile?.runBoostFirst5 || 0) >= 0.008 ||
-      (Number.isFinite(temperatureF) && temperatureF >= 80) ||
-      envTotalContext?.highHrForce ||
-      envTotalContext?.runLift
-    )
+	      (Number.isFinite(temperatureF) && temperatureF >= 80) ||
+	      envTotalContext?.highHrForce ||
+	      envTotalContext?.runLift ||
+	      (ficCarryAllowed && ficTotalContext?.highHrForce) ||
+	      carryContext?.materialHrForce
+	    )
   const weatherSuppress =
     /suppresses carry|wind .*in/.test(weatherLabel) ||
     /in/.test(windDirection) ||
@@ -1395,12 +2587,19 @@ const buildFirst5TailOverlay = ({
     clamp((Number(maxBullpenMeltdown || 0) - 0.18) * 32, 0, 7)
 
   if (weatherCarry) tailScore += 14
-  if (envTotalContext?.highHrForce) tailScore += 12
+  if (envTotalContext?.highHrForce) tailScore += envTotalContext?.carryFades ? 5 : 12
   else if (envTotalContext?.runLift || envTotalContext?.hrLift) tailScore += 6
+	  if (ficCarryAllowed && ficTotalContext?.highHrForce) tailScore += ficTotalContext.extremeHrForce ? 12 : 8
+	  else if (ficTotalContext?.runLift) tailScore += 4
+  if (carryContext?.materialHrForce) tailScore += carryContext.extremeHrForce ? 16 : 11
+  else if (carryContext?.carryFades && carryContext?.highHrForce) tailScore += 4
   if (reliefTotalContext?.watchLateRunRisk && Number(reliefTotalContext.maxProjectedReliefOuts || 0) >= 11) {
     tailScore += reliefTotalContext.highLateRunRisk ? 7 : 4
   }
   if (Number.isFinite(visibilityRisk)) tailScore += clamp((visibilityRisk - 24) * 0.55, 0, 12)
+  if (Number.isFinite(maxRepeatOpponentFirst5Tax) && maxRepeatOpponentFirst5Tax >= 0.25) {
+    tailScore += clamp(maxRepeatOpponentFirst5Tax * 16, 4, 10)
+  }
 
   let strandScore =
     clamp((Number(maxQuietFirst5 || 0) - 0.34) * 58, 0, 24) +
@@ -1420,15 +2619,22 @@ const buildFirst5TailOverlay = ({
     tailScore >= 66 &&
     (
       weatherCarry ||
+      carryContext?.materialHrForce ||
       maxBigInningRate >= 0.58 ||
       Number(maxRunClustering || 0) >= 76 ||
+      Number(maxRepeatOpponentFirst5Tax || 0) >= 0.35 ||
       Number(maxMistakeChaos || 0) >= 68
     )
   const weatherFalseUnderCandidate =
     weatherCarry &&
-    tailScore >= 54 &&
-    Number(maxMistakeChaos || 0) >= 60 &&
-    Number(maxRunClustering || 0) >= 70
+    tailScore >= (carryContext?.materialHrForce ? 48 : 54) &&
+    (
+      carryContext?.materialHrForce ||
+      (
+        Number(maxMistakeChaos || 0) >= 60 &&
+        Number(maxRunClustering || 0) >= 70
+      )
+    )
   const noWeatherTailNeedsMistake =
     !weatherCarry &&
     Number(maxMistakeChaos || 0) < 62 &&
@@ -1468,14 +2674,20 @@ const buildFirst5TailOverlay = ({
       (tailScore - 55) * 0.043 +
         (weatherCarry ? 0.42 : 0) +
         (weatherFalseUnderCandidate ? 1.1 : 0) +
+        (carryContext?.materialHrForce ? (carryContext.extremeHrForce ? 0.9 : 0.55) : 0) +
         (weatherCarry && minLineupConversionValue <= 25 ? 0.35 : 0) +
         (lowLine ? 0.2 : 0),
       0.45,
       2.9
     )
     notes.push('fat-tail run environment')
-    if (weatherCarry) notes.push('carry/weather turns ordinary contact into extra-base risk')
-    if (envTotalContext?.highHrForce) notes.push(`ENV1 HRForce ${roundToTenths(envTotalContext.hrForce)}`)
+	    if (weatherCarry) notes.push('carry/weather turns ordinary contact into extra-base risk')
+	    if (envTotalContext?.weakGameTimeCarry) notes.push('game-time HRForce weakens daily carry')
+	    if (envTotalContext?.carryFades) notes.push('HRForce carry fades after the early window')
+	    if (envTotalContext?.highHrForce) notes.push(`ENV1 HRForce ${roundToTenths(envTotalContext.hrForce)}`)
+	    if (ficCarryAllowed && ficTotalContext?.highHrForce) notes.push(`FIC HRForce ${roundToTenths(ficTotalContext.hrForce)}`)
+    if (carryContext?.materialHrForce) notes.push('material HRForce blocks casual under')
+    if (Number(maxRepeatOpponentFirst5Tax || 0) >= 0.25) notes.push('repeat-opponent starter damage tax')
     if (reliefTotalContext?.watchLateRunRisk && Number(reliefTotalContext.maxProjectedReliefOuts || 0) >= 11) {
       notes.push('RP2 bridge can enter the first-five window')
     }
@@ -1548,9 +2760,22 @@ const buildFirst5TailOverlay = ({
       envRunDelta: envTotalContext ? roundToTenths(envTotalContext.expectedTotalRunsDelta) : null,
       envHitsDelta: envTotalContext ? roundToTenths(envTotalContext.expectedHitsDelta) : null,
       envHrDelta: envTotalContext ? roundToTenths(envTotalContext.expectedHrDelta) : null,
-      hrForce: envTotalContext?.hrForce != null ? roundToTenths(envTotalContext.hrForce) : null,
-      highHrForce: Boolean(envTotalContext?.highHrForce),
-      lowerWeatherCarry: Boolean(envTotalContext?.lowerWeatherCarry),
+	      hrForce: envTotalContext?.hrForce != null ? roundToTenths(envTotalContext.hrForce) : null,
+	      gameTimeHrForce: envTotalContext?.gameTimeHrForce != null ? roundToTenths(envTotalContext.gameTimeHrForce) : null,
+	      earlyGameMaxHrForce: envTotalContext?.earlyGameMaxHrForce != null ? roundToTenths(envTotalContext.earlyGameMaxHrForce) : null,
+	      hrForcePersistenceSignal: envTotalContext?.hrForcePersistenceSignal || null,
+	      weakGameTimeCarry: Boolean(envTotalContext?.weakGameTimeCarry),
+	      carryFades: Boolean(envTotalContext?.carryFades),
+	      highHrForce: Boolean(envTotalContext?.highHrForce),
+	      lowerWeatherCarry: Boolean(envTotalContext?.lowerWeatherCarry),
+	      ficHrForce: ficTotalContext?.hrForce != null ? roundToTenths(ficTotalContext.hrForce) : null,
+	      ficHighHrForce: Boolean(ficCarryAllowed && ficTotalContext?.highHrForce),
+      materialHrForce: Boolean(carryContext?.materialHrForce),
+      extremeHrForce: Boolean(carryContext?.extremeHrForce),
+      carryMultiplier: carryContext?.carryMultiplier ?? null,
+      ficHighHrForceSharePct: ficTotalContext?.highHrForceSharePct != null
+        ? roundToTenths(ficTotalContext.highHrForceSharePct)
+        : null,
       maxRp2BridgeStress: reliefTotalContext?.maxBridgeStressScore != null
         ? roundToTenths(reliefTotalContext.maxBridgeStressScore)
         : null,
@@ -1558,6 +2783,9 @@ const buildFirst5TailOverlay = ({
         ? roundToTenths(reliefTotalContext.maxProjectedReliefRunsAllowed)
         : null,
       rp2LateRunRisk: Boolean(reliefTotalContext?.watchLateRunRisk),
+      maxRepeatOpponentFirst5Tax: Number.isFinite(maxRepeatOpponentFirst5Tax)
+        ? roundToTenths(maxRepeatOpponentFirst5Tax)
+        : null,
       visibilityRisk: Number.isFinite(visibilityRisk) ? roundToTenths(visibilityRisk) : null
     }
   }
@@ -1611,27 +2839,46 @@ const buildTotalChaosGate = ({
   bullpenMistakeShapes = [],
   weatherProfile = null,
   environmentAdjustmentContext = null,
-  reliefProjectionContexts = []
+  ficDailyMatchupContext = null,
+  reliefProjectionContexts = [],
+  starterVsTeamContexts = []
 }) => {
   const envTotalContext = buildEnvironmentTotalContext(environmentAdjustmentContext, weatherProfile)
+  const ficTotalContext = buildFicDailyMatchupTotalContext(ficDailyMatchupContext)
   const reliefTotalContext = buildReliefProjectionTotalContext(reliefProjectionContexts)
+  const repeatDamageContexts = starterVsTeamContexts.filter((context) => context?.repeatOpponentUnderWarning)
+  const maxRepeatOpponentFirst5Tax = maxMetric(repeatDamageContexts, 'repeatOpponentFirst5Tax')
+  const maxRepeatOpponentHitTax = maxMetric(repeatDamageContexts, 'repeatOpponentHitTax')
+  const repeatOpponentDamage = Math.max(Number(maxRepeatOpponentFirst5Tax || 0), Number(maxRepeatOpponentHitTax || 0))
+  const carryContext = buildCarryAdjustmentContext({
+    environmentAdjustmentContext,
+    weatherProfile,
+    ficDailyMatchupContext
+  })
   const lean = totalLean?.lean
   const edge = Number(totalLean?.edge)
   const absEdge = Math.abs(edge)
-  const weatherLabel = `${weatherProfile?.label || ''}`.toLowerCase()
-  const temperatureF = Number(weatherProfile?.temperatureF)
-  const windMph = Number(weatherProfile?.windMph)
-  const windDirection = `${weatherProfile?.windDirection || ''}`.toLowerCase()
-  const weatherCarry =
-    !weatherProfile?.isDome &&
-    (
+	  const weatherLabel = `${weatherProfile?.label || ''}`.toLowerCase()
+	  const temperatureF = Number(weatherProfile?.temperatureF)
+	  const windMph = Number(weatherProfile?.windMph)
+	  const windDirection = `${weatherProfile?.windDirection || ''}`.toLowerCase()
+	  const fullGameCarryAllowed = !envTotalContext?.weakOrFadingGameTimeCarry
+	  const ficCarryAllowed = fullGameCarryAllowed
+	  const weatherCarry =
+	    !weatherProfile?.isDome &&
+	    (
+	      fullGameCarryAllowed &&
+	      (
       /helps carry|wind .*out/.test(weatherLabel) ||
       /out/.test(windDirection) ||
       Number(weatherProfile?.runBoostFirst5 || 0) + Number(weatherProfile?.runBoostLate || 0) >= 0.008 ||
-      (Number.isFinite(temperatureF) && temperatureF >= 80) ||
-      envTotalContext?.highHrForce ||
-      envTotalContext?.runLift
-    )
+	        (Number.isFinite(temperatureF) && temperatureF >= 80) ||
+	        envTotalContext?.highHrForce
+	      ) ||
+	      envTotalContext?.runLift ||
+	      (ficCarryAllowed && ficTotalContext?.highHrForce) ||
+	      carryContext?.materialHrForce
+	    )
   const weatherSuppress =
     /suppresses carry|wind .*in/.test(weatherLabel) ||
     /in/.test(windDirection) ||
@@ -1705,12 +2952,37 @@ const buildTotalChaosGate = ({
     notes.push(weatherProfile?.label || 'weather carry')
   }
 
-  if (envTotalContext?.highHrForce) {
-    overChaosScore += 2
-    notes.push(`ENV1 HRForce ${roundToTenths(envTotalContext.hrForce)}`)
-  } else if (envTotalContext?.runLift || envTotalContext?.hrLift) {
+	  if (envTotalContext?.highHrForce && !envTotalContext?.carryFades) {
+	    overChaosScore += 2
+	    notes.push(`ENV1 HRForce ${roundToTenths(envTotalContext.hrForce)}`)
+	  } else if (envTotalContext?.weakGameTimeCarry) {
+	    notes.push('game-time HRForce weakens daily carry')
+	  } else if (envTotalContext?.carryFades) {
+	    notes.push('HRForce carry fades after the early window')
+	  } else if (envTotalContext?.runLift || envTotalContext?.hrLift) {
     overChaosScore += 1
     notes.push(`ENV1 run env ${formatSignedTenths(envTotalContext.expectedTotalRunsDelta)} R`)
+  }
+
+	  if (ficCarryAllowed && ficTotalContext?.highHrForce) {
+	    overChaosScore += ficTotalContext.extremeHrForce ? 2 : 1
+	    notes.push(`FIC HRForce ${roundToTenths(ficTotalContext.hrForce)}`)
+  } else if (ficTotalContext?.runLift) {
+    overChaosScore += 1
+    notes.push('FIC matchup contact carry')
+  }
+
+  if (carryContext?.materialHrForce) {
+    overChaosScore += carryContext.extremeHrForce ? 3 : 2
+    notes.push(`material HRForce ${roundToTenths(carryContext.hrForce)}`)
+  }
+
+  if (repeatOpponentDamage >= 0.35) {
+    overChaosScore += 2
+    notes.push('repeat-opponent starter damage')
+  } else if (repeatOpponentDamage >= 0.22) {
+    overChaosScore += 1
+    notes.push('repeat-opponent starter tax')
   }
 
   if (envTotalContext?.runDrag) {
@@ -1797,26 +3069,69 @@ const buildTotalChaosGate = ({
   const fullGameUnderLimit = overChaosScore >= 6 ? 1.8 : overChaosScore >= 4 ? 1.45 : 1.05
   const fullGameOverLimit = underDragScore >= 6 ? 1.6 : underDragScore >= 4 ? 1.25 : 0.9
   const first5Limit = phase === 'first5' ? 0.85 : 0.75
+  const carryUnderLimit =
+    carryContext?.extremeHrForce
+      ? phase === 'full'
+        ? 3
+        : 1.55
+      : carryContext?.materialHrForce
+        ? phase === 'full'
+          ? 2.2
+          : 1.25
+        : 0
+  const repeatUnderLimit =
+    repeatOpponentDamage >= 0.35
+      ? phase === 'full'
+        ? 1.45
+        : 0.95
+      : repeatOpponentDamage >= 0.22
+        ? phase === 'full'
+          ? 1.2
+          : 0.85
+        : 0
+  const underVetoLimit = phase === 'full'
+    ? Math.max(fullGameUnderLimit, carryUnderLimit, repeatUnderLimit)
+    : Math.max(first5Limit, carryUnderLimit, repeatUnderLimit)
   const envUnderConflict =
     lean === 'Under' &&
     Number.isFinite(absEdge) &&
     (
-      envTotalContext?.highHrForce ||
-      envTotalContext?.runLift ||
-      envTotalContext?.hrLift
+	      envTotalContext?.highHrForce ||
+	      envTotalContext?.runLift ||
+	      envTotalContext?.hrLift ||
+	      (ficCarryAllowed && ficTotalContext?.highHrForce)
     ) &&
-    absEdge <= (phase === 'full' ? 1.35 : phase === 'first5' ? 0.9 : 0.8)
+    absEdge <= (
+      carryContext?.extremeHrForce
+        ? phase === 'full'
+          ? 3
+          : 1.55
+        : carryContext?.materialHrForce
+          ? phase === 'full'
+            ? 2.2
+            : 1.25
+          : phase === 'full'
+            ? 1.35
+            : phase === 'first5'
+              ? 0.9
+              : 0.8
+    )
   const rp2UnderConflict =
     lean === 'Under' &&
     Number.isFinite(absEdge) &&
     reliefTotalContext?.watchLateRunRisk &&
     absEdge <= (phase === 'full' ? 1.25 : phase === 'late' ? 0.9 : 0.7) &&
     (phase !== 'first5' || Number(reliefTotalContext.maxProjectedReliefOuts || 0) >= 11)
+  const repeatOpponentUnderConflict =
+    lean === 'Under' &&
+    Number.isFinite(absEdge) &&
+    repeatOpponentDamage >= 0.22 &&
+    absEdge <= (phase === 'full' ? 1.35 : phase === 'first5' ? 0.85 : 0.75)
   const underVeto =
     lean === 'Under' &&
     Number.isFinite(absEdge) &&
-    (overChaosScore >= 4 || envUnderConflict || rp2UnderConflict) &&
-    absEdge <= (phase === 'full' ? fullGameUnderLimit : first5Limit)
+    (overChaosScore >= 4 || envUnderConflict || rp2UnderConflict || repeatOpponentUnderConflict) &&
+    absEdge <= underVetoLimit
   const overVeto =
     lean === 'Over' &&
     Number.isFinite(absEdge) &&
@@ -1824,12 +3139,12 @@ const buildTotalChaosGate = ({
     absEdge <= (phase === 'full' ? fullGameOverLimit : first5Limit)
   const warning =
     lean === 'Under'
-      ? overChaosScore >= 3 || envUnderConflict || rp2UnderConflict
+      ? overChaosScore >= 3 || envUnderConflict || rp2UnderConflict || repeatOpponentUnderConflict
       : lean === 'Over'
         ? underDragScore >= 3
         : overChaosScore >= 3 || underDragScore >= 3
   const vetoKind =
-    underVeto && (envUnderConflict || rp2UnderConflict)
+    underVeto && (envUnderConflict || rp2UnderConflict || repeatOpponentUnderConflict)
       ? 'addendum'
       : underVeto || overVeto
         ? 'chaos'
@@ -1844,10 +3159,14 @@ const buildTotalChaosGate = ({
     vetoKind,
     vetoReason:
       underVeto && envUnderConflict
-        ? 'ENV1 HR/run carry conflicts with a fragile under'
+	        ? ficCarryAllowed && ficTotalContext?.highHrForce && !(envTotalContext?.highHrForce || envTotalContext?.runLift || envTotalContext?.hrLift)
+          ? 'FIC matchup HR/run carry conflicts with a fragile under'
+          : 'ENV1/FIC HR-run carry conflicts with a fragile under'
         : underVeto && rp2UnderConflict
           ? 'RP2 bridge stress leaves late-scoring risk against a fragile under'
-          : underVeto
+        : underVeto && repeatOpponentUnderConflict
+          ? 'repeat-opponent starter damage conflicts with a fragile under'
+        : underVeto
         ? 'under exposed to mistake-chaos and one-big-inning risk'
         : overVeto
           ? 'over exposed to quiet-start and traffic-without-conversion risk'
@@ -1866,18 +3185,37 @@ const buildTotalChaosGate = ({
       weatherCarry,
       weatherSuppress,
       envRunDelta: envTotalContext ? roundToTenths(envTotalContext.expectedTotalRunsDelta) : null,
-      envHitsDelta: envTotalContext ? roundToTenths(envTotalContext.expectedHitsDelta) : null,
-      envHrDelta: envTotalContext ? roundToTenths(envTotalContext.expectedHrDelta) : null,
-      hrForce: envTotalContext?.hrForce != null ? roundToTenths(envTotalContext.hrForce) : null,
-      highHrForce: Boolean(envTotalContext?.highHrForce),
-      lowerWeatherCarry: Boolean(envTotalContext?.lowerWeatherCarry),
+	      envHitsDelta: envTotalContext ? roundToTenths(envTotalContext.expectedHitsDelta) : null,
+	      envHrDelta: envTotalContext ? roundToTenths(envTotalContext.expectedHrDelta) : null,
+	      hrForce: envTotalContext?.hrForce != null ? roundToTenths(envTotalContext.hrForce) : null,
+	      gameTimeHrForce: envTotalContext?.gameTimeHrForce != null ? roundToTenths(envTotalContext.gameTimeHrForce) : null,
+	      earlyGameMaxHrForce: envTotalContext?.earlyGameMaxHrForce != null ? roundToTenths(envTotalContext.earlyGameMaxHrForce) : null,
+	      hrForcePersistenceSignal: envTotalContext?.hrForcePersistenceSignal || null,
+	      weakGameTimeCarry: Boolean(envTotalContext?.weakGameTimeCarry),
+	      carryFades: Boolean(envTotalContext?.carryFades),
+	      highHrForce: Boolean(envTotalContext?.highHrForce),
+	      lowerWeatherCarry: Boolean(envTotalContext?.lowerWeatherCarry),
+	      ficHrForce: ficTotalContext?.hrForce != null ? roundToTenths(ficTotalContext.hrForce) : null,
+	      ficHighHrForce: Boolean(ficCarryAllowed && ficTotalContext?.highHrForce),
+      materialHrForce: Boolean(carryContext?.materialHrForce),
+      extremeHrForce: Boolean(carryContext?.extremeHrForce),
+      carryMultiplier: carryContext?.carryMultiplier ?? null,
+      ficHighHrForceSharePct: ficTotalContext?.highHrForceSharePct != null
+        ? roundToTenths(ficTotalContext.highHrForceSharePct)
+        : null,
       maxRp2BridgeStress: reliefTotalContext?.maxBridgeStressScore != null
         ? roundToTenths(reliefTotalContext.maxBridgeStressScore)
         : null,
       maxRp2ReliefRuns: reliefTotalContext?.maxProjectedReliefRunsAllowed != null
         ? roundToTenths(reliefTotalContext.maxProjectedReliefRunsAllowed)
         : null,
-      rp2LateRunRisk: Boolean(reliefTotalContext?.watchLateRunRisk)
+      rp2LateRunRisk: Boolean(reliefTotalContext?.watchLateRunRisk),
+      maxRepeatOpponentFirst5Tax: Number.isFinite(maxRepeatOpponentFirst5Tax)
+        ? roundToTenths(maxRepeatOpponentFirst5Tax)
+        : null,
+      maxRepeatOpponentHitTax: Number.isFinite(maxRepeatOpponentHitTax)
+        ? roundToTenths(maxRepeatOpponentHitTax)
+        : null
     }
   }
 }
@@ -1923,8 +3261,10 @@ const buildFirstInningRunProfile = ({
   opposingPitcherFirstInningProfile = null,
   opposingPitcherFirstInningSeasonProfile = null,
   opposingPitcherWarProfile = null,
+  opposingStarter = null,
   weatherProfile = null,
-  environmentAdjustmentContext = null
+  environmentAdjustmentContext = null,
+  ficDailyMatchupTeamContext = null
 }) => {
   if (!projectedRunProfile && !teamFirstInningProfile && !opposingPitcherFirstInningProfile) {
     return {
@@ -1938,7 +3278,15 @@ const buildFirstInningRunProfile = ({
   const starterPressureIndex = Number(lineupProfile?.starterPressureIndex ?? 50)
   const overallPressureIndex = Number(lineupProfile?.overallPressureIndex ?? 50)
   const pitchTypePressureIndex = Number(lineupProfile?.pitchTypePressureIndex ?? 50)
+  const starterMatchupKernelIndex = Number(lineupProfile?.starterMatchupKernelIndex ?? 50)
   const platoonPressureIndex = Number(lineupProfile?.platoonPressureIndex ?? 50)
+  const handednessSplitIndex = Number(lineupProfile?.handednessSplitIndex ?? lineupProfile?.handednessSplitProfile?.index ?? 50)
+  const topThirdStrongSplitCount = Number(
+    lineupProfile?.topThirdStrongSplitCount ?? lineupProfile?.handednessSplitProfile?.topThirdStrongSplitCount ?? 0
+  )
+  const topThirdWeakSplitCount = Number(
+    lineupProfile?.topThirdWeakSplitCount ?? lineupProfile?.handednessSplitProfile?.topThirdWeakSplitCount ?? 0
+  )
   const top6HeatIndex = Number(hitterState?.top6HeatIndex ?? 50)
   const top6PressureIndex = Number(hitterState?.top6PressureIndex ?? 50)
   const top6ColdIndex = Number(hitterState?.top6ColdIndex ?? 50)
@@ -2006,8 +3354,15 @@ const buildFirstInningRunProfile = ({
     : null
   const envFirstInningContext = buildEnvironmentFirstInningContext(
     environmentAdjustmentContext,
-    weatherProfile
+    weatherProfile,
+    ficDailyMatchupTeamContext
   )
+  const starterWeatherAdjustment = buildStarterWeatherAdjustment({
+    starter: opposingStarter,
+    weatherProfile,
+    environmentAdjustmentContext,
+    ficDailyMatchupContext: ficDailyMatchupTeamContext
+  })
 
   let projectedRunsNumerator = 0
   let projectedRunsWeight = 0
@@ -2101,6 +3456,21 @@ const buildFirstInningRunProfile = ({
   if (Number.isFinite(topThirdScore) && topThirdScore >= 62) {
     supportingReasons.push(`${teamName} top order is driving early pressure (${roundToTenths(topThirdScore)})`)
   }
+  if (Number.isFinite(handednessSplitIndex) && handednessSplitIndex >= 62) {
+    supportingReasons.push(`${teamName} handedness splits fit the starter (${roundToTenths(handednessSplitIndex)})`)
+  } else if (Number.isFinite(handednessSplitIndex) && handednessSplitIndex <= 40) {
+    suppressingReasons.push(`${teamName} handedness splits are weak against the starter (${roundToTenths(handednessSplitIndex)})`)
+  }
+  if (Number.isFinite(starterMatchupKernelIndex) && starterMatchupKernelIndex >= 62) {
+    supportingReasons.push(`${teamName} batter-vs-starter kernel fits (${roundToTenths(starterMatchupKernelIndex)})`)
+  } else if (Number.isFinite(starterMatchupKernelIndex) && starterMatchupKernelIndex <= 40) {
+    suppressingReasons.push(`${teamName} batter-vs-starter kernel is suppressive (${roundToTenths(starterMatchupKernelIndex)})`)
+  }
+  if (topThirdStrongSplitCount >= 2) {
+    supportingReasons.push(`${teamName} top third has multiple strong split bats`)
+  } else if (topThirdWeakSplitCount >= 2) {
+    suppressingReasons.push(`${teamName} top third carries weak split rows`)
+  }
   if (Number.isFinite(top6HeatIndex) && top6HeatIndex >= 58) {
     supportingReasons.push(`${teamName} top six bats are running hot (${roundToTenths(top6HeatIndex)})`)
   }
@@ -2188,11 +3558,22 @@ const buildFirstInningRunProfile = ({
   if (Number.isFinite(weatherProfile?.runBoostFirst5) && Number(weatherProfile.runBoostFirst5) >= 0.05) {
     supportingReasons.push(`weather is adding early run carry`)
   }
-  if (envFirstInningContext?.reason) {
+  if (envFirstInningContext?.reason || Array.isArray(envFirstInningContext?.reasons)) {
+    const envReasons = Array.isArray(envFirstInningContext?.reasons)
+      ? envFirstInningContext.reasons
+      : [envFirstInningContext.reason]
     if (Number(envFirstInningContext.probabilityLift || 0) >= 0) {
-      supportingReasons.push(envFirstInningContext.reason)
+      supportingReasons.push(...envReasons.filter(Boolean))
     } else {
-      suppressingReasons.push(envFirstInningContext.reason)
+      suppressingReasons.push(...envReasons.filter(Boolean))
+    }
+  }
+  if (starterWeatherAdjustment?.active && starterWeatherAdjustment.reasons?.length) {
+    const reason = `${opposingTeamName} starter weather fit: ${starterWeatherAdjustment.reasons[0]}`
+    if (Number(starterWeatherAdjustment.firstInningProbabilityDelta || 0) >= 0) {
+      supportingReasons.push(reason)
+    } else {
+      suppressingReasons.push(reason)
     }
   }
 
@@ -2200,7 +3581,13 @@ const buildFirstInningRunProfile = ({
   runProbability += Math.max(starterPressureIndex - 50, 0) * 0.001
   runProbability += Math.max(overallPressureIndex - 50, 0) * 0.00045
   runProbability += Math.max(pitchTypePressureIndex - 50, 0) * 0.00035
+  runProbability += Math.max(starterMatchupKernelIndex - 50, 0) * 0.0004
+  runProbability -= Math.max(50 - starterMatchupKernelIndex, 0) * 0.00025
   runProbability += Math.max(platoonPressureIndex - 50, 0) * 0.00035
+  runProbability += Math.max(handednessSplitIndex - 50, 0) * 0.00055
+  runProbability -= Math.max(50 - handednessSplitIndex, 0) * 0.00035
+  runProbability += topThirdStrongSplitCount * 0.006
+  runProbability -= topThirdWeakSplitCount * 0.004
   runProbability += Math.max(top6HeatIndex - 50, 0) * 0.0004
   runProbability += Math.max(top6PressureIndex - 50, 0) * 0.00045
   runProbability -= Math.max(top6ColdIndex - 50, 0) * 0.00075
@@ -2301,6 +3688,10 @@ const buildFirstInningRunProfile = ({
     runProbability += Number(envFirstInningContext.probabilityLift || 0)
     projectedRuns += Number(envFirstInningContext.projectedRunsLift || 0)
   }
+  if (starterWeatherAdjustment?.active) {
+    runProbability += Number(starterWeatherAdjustment.firstInningProbabilityDelta || 0)
+    projectedRuns += Number(starterWeatherAdjustment.firstInningProjectedRunsDelta || 0)
+  }
 
   runProbability = clamp(runProbability, 0.04, 0.72)
   const impliedRunsFromProbability = -Math.log(1 - clamp(runProbability, 0.01, 0.92))
@@ -2338,7 +3729,33 @@ const buildFirstInningRunProfile = ({
           expectedTotalRunsDelta: roundToTenths(Number(envFirstInningContext.expectedTotalRunsDelta || 0)),
           probabilityLiftPct: roundToTenths(Number(envFirstInningContext.probabilityLift || 0) * 100),
           projectedRunsLift: roundToTenths(Number(envFirstInningContext.projectedRunsLift || 0)),
-          reason: envFirstInningContext.reason
+          reason: envFirstInningContext.reason,
+	          ficHrForce: envFirstInningContext.ficDailyMatchup?.hrForce != null
+	            ? roundToTenths(envFirstInningContext.ficDailyMatchup.hrForce)
+	            : null,
+	          ficHighHrForce: Boolean(envFirstInningContext.ficDailyMatchup?.highHrForce && !envFirstInningContext.weakGameTimeCarry),
+	          gameTimeHrForce: envFirstInningContext.gameTimeHrForce != null
+	            ? roundToTenths(envFirstInningContext.gameTimeHrForce)
+	            : null,
+	          earlyGameMaxHrForce: envFirstInningContext.earlyGameMaxHrForce != null
+	            ? roundToTenths(envFirstInningContext.earlyGameMaxHrForce)
+	            : null,
+	          hrForcePersistenceSignal: envFirstInningContext.hrForcePersistenceSignal || null,
+	          weakGameTimeCarry: Boolean(envFirstInningContext.weakGameTimeCarry),
+	          carryFades: Boolean(envFirstInningContext.carryFades),
+	          reasons: Array.isArray(envFirstInningContext.reasons) ? envFirstInningContext.reasons : []
+	        }
+      : null,
+    starterWeatherAddendum: starterWeatherAdjustment
+      ? {
+          pitcherName: starterWeatherAdjustment.pitcherName,
+          archetype: starterWeatherAdjustment.archetype,
+          label: starterWeatherAdjustment.label,
+          active: Boolean(starterWeatherAdjustment.active),
+          probabilityLiftPct: roundToTenths(Number(starterWeatherAdjustment.firstInningProbabilityDelta || 0) * 100),
+          projectedRunsLift: roundToTenths(Number(starterWeatherAdjustment.firstInningProjectedRunsDelta || 0)),
+          holdDelta: roundToTenths(Number(starterWeatherAdjustment.holdDelta || 0)),
+          reasons: starterWeatherAdjustment.reasons ?? []
         }
       : null
   }
@@ -2723,6 +4140,8 @@ const buildMlbLineupMatchupScore = (profile = {}) => {
   const contactCount = Number(profile.contactCount)
   const pitchTypePressureIndex = Number(profile.pitchTypePressureIndex)
   const bullpenPitchTypePressureIndex = Number(profile.bullpenPitchTypePressureIndex)
+  const starterMatchupKernelIndex = Number(profile.starterMatchupKernelIndex)
+  const battingPressureIndex = Number(profile.battingPressureIndex)
 
   if (![grade, platoonCount, powerCount, contactCount].every(Number.isFinite)) return null
 
@@ -2735,6 +4154,10 @@ const buildMlbLineupMatchupScore = (profile = {}) => {
 
   if (Number.isFinite(pitchTypePressureIndex)) {
     score += (pitchTypePressureIndex - 50) * 0.24
+  }
+
+  if (Number.isFinite(starterMatchupKernelIndex)) {
+    score += (starterMatchupKernelIndex - 50) * 0.18
   }
 
   if (Number.isFinite(bullpenPitchTypePressureIndex)) {
@@ -2757,6 +4180,30 @@ const buildMlbLineupMatchupScore = (profile = {}) => {
     score += (Number(profile.depthScore) - 50) * 0.08
   }
 
+  if (Number.isFinite(battingPressureIndex)) {
+    score += (battingPressureIndex - 50) * 0.1
+  }
+
+  if (Number.isFinite(Number(profile.handednessSplitIndex))) {
+    score += (Number(profile.handednessSplitIndex) - 50) * 0.13
+  }
+
+  if (Number.isFinite(Number(profile.strongSplitCount))) {
+    score += Math.max(Number(profile.strongSplitCount) - 3, 0) * 0.85
+  }
+
+  if (Number.isFinite(Number(profile.weakSplitCount))) {
+    score -= Math.max(Number(profile.weakSplitCount) - 2, 0) * 0.65
+  }
+
+  if (Number.isFinite(Number(profile.highAverageCount))) {
+    score += Math.max(Number(profile.highAverageCount) - 4, 0) * 0.9
+  }
+
+  if (Number.isFinite(Number(profile.topSixHighAverageCount))) {
+    score += Math.max(Number(profile.topSixHighAverageCount) - 3, 0) * 0.75
+  }
+
   return clamp(score, 18, 92)
 }
 
@@ -2775,11 +4222,11 @@ const buildMlbLineupMatchupSignal = (game, participants) => {
     0.14,
     [
       {
-        label: `Grade ${awayContext.averageMatchupGrade >= 0 ? '+' : ''}${awayContext.averageMatchupGrade.toFixed(2)} | platoon ${awayContext.platoonCount} | starter arsenal ${Number(awayContext.pitchTypePressureIndex || 50).toFixed(0)} | bridge arsenal ${Number(awayContext.bullpenPitchTypePressureIndex || 50).toFixed(0)} | pressure ${Number(awayContext.starterPressureIndex || 50).toFixed(0)}`,
+        label: `Grade ${awayContext.averageMatchupGrade >= 0 ? '+' : ''}${awayContext.averageMatchupGrade.toFixed(2)} | platoon ${awayContext.platoonCount} | .300 bats ${Number(awayContext.highAverageCount || 0).toFixed(0)} | bat pressure ${Number(awayContext.battingPressureIndex || 50).toFixed(0)} | starter kernel ${Number(awayContext.starterMatchupKernelIndex || 50).toFixed(0)} | starter arsenal ${Number(awayContext.pitchTypePressureIndex || 50).toFixed(0)} | bridge arsenal ${Number(awayContext.bullpenPitchTypePressureIndex || 50).toFixed(0)} | pressure ${Number(awayContext.starterPressureIndex || 50).toFixed(0)}`,
         score: scores[0]
       },
       {
-        label: `Grade ${homeContext.averageMatchupGrade >= 0 ? '+' : ''}${homeContext.averageMatchupGrade.toFixed(2)} | platoon ${homeContext.platoonCount} | starter arsenal ${Number(homeContext.pitchTypePressureIndex || 50).toFixed(0)} | bridge arsenal ${Number(homeContext.bullpenPitchTypePressureIndex || 50).toFixed(0)} | pressure ${Number(homeContext.starterPressureIndex || 50).toFixed(0)}`,
+        label: `Grade ${homeContext.averageMatchupGrade >= 0 ? '+' : ''}${homeContext.averageMatchupGrade.toFixed(2)} | platoon ${homeContext.platoonCount} | .300 bats ${Number(homeContext.highAverageCount || 0).toFixed(0)} | bat pressure ${Number(homeContext.battingPressureIndex || 50).toFixed(0)} | starter kernel ${Number(homeContext.starterMatchupKernelIndex || 50).toFixed(0)} | starter arsenal ${Number(homeContext.pitchTypePressureIndex || 50).toFixed(0)} | bridge arsenal ${Number(homeContext.bullpenPitchTypePressureIndex || 50).toFixed(0)} | pressure ${Number(homeContext.starterPressureIndex || 50).toFixed(0)}`,
         score: scores[1]
       }
     ],
@@ -2836,6 +4283,45 @@ const summarizeEnvironmentAdjustmentContext = (context = null) => {
   }
 }
 
+const summarizeFicDailyMatchupContext = (context = null) => {
+  if (!context) return null
+  const summarizeSide = (side = null) => side
+    ? {
+        label: side.label || null,
+        rowCount: Number(side.rowCount || 0),
+        pitcherName: side.pitcherName || null,
+        averageHrForce: Number.isFinite(Number(side.averageHrForce)) ? Number(side.averageHrForce) : null,
+        maxHrForce: Number.isFinite(Number(side.maxHrForce)) ? Number(side.maxHrForce) : null,
+        highHrForceRows: Number(side.highHrForceRows || 0),
+        extremeHrForceRows: Number(side.extremeHrForceRows || 0),
+        highHrForceSharePct: Number.isFinite(Number(side.highHrForceSharePct)) ? Number(side.highHrForceSharePct) : null,
+        qualityAbPct: Number.isFinite(Number(side.qualityAbPct)) ? Number(side.qualityAbPct) : null,
+        hardHitPct: Number.isFinite(Number(side.hardHitPct)) ? Number(side.hardHitPct) : null,
+        matchupPassRows: Number(side.matchupPassRows || 0),
+        topRows: Array.isArray(side.topRows) ? side.topRows.slice(0, 4) : []
+      }
+    : null
+
+  return {
+    source: context.source || 'FantasyInfoCentral Daily Matchups',
+    sourceDate: context.sourceDate || null,
+    sourceUrl: context.sourceUrl || null,
+    matchup: context.matchup || null,
+    gameContextMatch: context.gameContextMatch || null,
+    rowCount: Number(context.rowCount || 0),
+    averageHrForce: Number.isFinite(Number(context.averageHrForce)) ? Number(context.averageHrForce) : null,
+    maxHrForce: Number.isFinite(Number(context.maxHrForce)) ? Number(context.maxHrForce) : null,
+    highHrForceRows: Number(context.highHrForceRows || 0),
+    extremeHrForceRows: Number(context.extremeHrForceRows || 0),
+    highHrForceSharePct: Number.isFinite(Number(context.highHrForceSharePct)) ? Number(context.highHrForceSharePct) : null,
+    qualityAbPct: Number.isFinite(Number(context.qualityAbPct)) ? Number(context.qualityAbPct) : null,
+    hardHitPct: Number.isFinite(Number(context.hardHitPct)) ? Number(context.hardHitPct) : null,
+    matchupPassRows: Number(context.matchupPassRows || 0),
+    awayOffense: summarizeSide(context.awayOffense),
+    homeOffense: summarizeSide(context.homeOffense)
+  }
+}
+
 const summarizeTeamReliefProjectionContext = (teamName = '', context = null) => {
   if (!context) return null
 
@@ -2875,6 +4361,310 @@ const summarizeReliefProjectionContexts = (participants = [], reliefProjectionCo
   away: summarizeTeamReliefProjectionContext(participants[0]?.name || 'Away', reliefProjectionContexts[0]),
   home: summarizeTeamReliefProjectionContext(participants[1]?.name || 'Home', reliefProjectionContexts[1])
 })
+
+const buildProjectionAdjustmentChecklist = ({
+  participants = [],
+  starters = [],
+  lineupProfiles = [],
+  projectedHitProfiles = [],
+  projectedRunProfiles = [],
+  environmentAdjustmentContext = null,
+  weatherProfile = null,
+  ficDailyMatchupContext = null,
+  reliefProjectionContexts = []
+} = {}) => {
+  const carryContext = buildCarryAdjustmentContext({
+    environmentAdjustmentContext,
+    weatherProfile,
+    ficDailyMatchupContext
+  })
+  const ficSides = [ficDailyMatchupContext?.awayOffense ?? null, ficDailyMatchupContext?.homeOffense ?? null]
+  const starterChecks = starters.map((starter, index) => {
+    const opponent = participants[index === 0 ? 1 : 0]?.name || 'opponent'
+    const weatherAdjustment = buildStarterWeatherAdjustment({
+      starter,
+      weatherProfile,
+      environmentAdjustmentContext,
+      ficDailyMatchupContext: ficSides[index === 0 ? 1 : 0]
+    })
+    const flags = []
+    const gamesStarted = Number(starter?.gamesStarted)
+    const recentStarts = Number(starter?.recentForm?.startsSample)
+    if (!starter?.sampleEstablished || (Number.isFinite(gamesStarted) && gamesStarted < 4)) {
+      flags.push('shallow starter sample')
+    }
+    if (/unknown sample/i.test(starter?.profileType || '')) {
+      flags.push('starter role/sample uncertainty')
+    }
+    if (starter?.starterVsTeamContext && Number(starter.starterVsTeamContext.sampleWeight || 0) >= 0.18) {
+      flags.push(`${starter.starterVsTeamContext.label} vs ${opponent}`)
+    }
+    if (starter?.starterVsTeamContext?.repeatOpponentUnderWarning) {
+      flags.push(
+        starter.starterVsTeamContext.lastOpponentStartSummary
+          ? `repeat-opponent tax: ${starter.starterVsTeamContext.lastOpponentStartSummary}`
+          : 'repeat-opponent damage tax'
+      )
+    }
+    if (Number.isFinite(recentStarts) && recentStarts < 4) {
+      flags.push('recent form below 4-start checklist')
+    }
+    if (starter?.profileType === 'Traffic-risk') flags.push('traffic-risk starter type')
+    if (starter?.recentForm && Number(starter.recentForm.homeRunsAllowedPerStart || 0) >= 1) {
+      flags.push('recent HR damage allowed')
+    }
+    if (weatherAdjustment?.active) {
+      flags.push(
+        weatherAdjustment.hitDelta >= 0
+          ? 'pitcher-weather archetype damage tax'
+          : 'pitcher-weather archetype protection credit'
+      )
+    }
+
+    return {
+      teamName: participants[index]?.name || (index === 0 ? 'Away' : 'Home'),
+      pitcherName: starter?.name || '',
+      gamesStarted: Number.isFinite(gamesStarted) ? gamesStarted : null,
+      recentStartsSample: Number.isFinite(recentStarts) ? recentStarts : null,
+      sampleEstablished: Boolean(starter?.sampleEstablished),
+      profileType: starter?.profileLabel || starter?.profileType || null,
+      expectedInnings: Number.isFinite(Number(starter?.expectedInnings))
+        ? Number(starter.expectedInnings)
+        : Number.isFinite(Number(starter?.avgInningsPerStart))
+          ? roundToTenths(Number(starter.avgInningsPerStart))
+          : null,
+      opponentHistory: starter?.starterVsTeamContext
+        ? {
+            label: starter.starterVsTeamContext.label,
+            source: starter.starterVsTeamContext.source,
+            starts: starter.starterVsTeamContext.starts,
+            innings: starter.starterVsTeamContext.innings,
+            projectedHitsDelta: starter.starterVsTeamContext.projectedHitsDelta,
+            first5RunsDelta: starter.starterVsTeamContext.first5RunsDelta,
+            runConversionDelta: starter.starterVsTeamContext.runConversionDelta,
+            repeatOpponentUnderWarning: Boolean(starter.starterVsTeamContext.repeatOpponentUnderWarning),
+            repeatOpponentHitTax: starter.starterVsTeamContext.repeatOpponentHitTax,
+            repeatOpponentFirst5Tax: starter.starterVsTeamContext.repeatOpponentFirst5Tax,
+            lastOpponentStartSummary: starter.starterVsTeamContext.lastOpponentStartSummary,
+            repeatOpponentFlags: starter.starterVsTeamContext.repeatOpponentFlags ?? []
+          }
+        : null,
+      pitchMix: starter?.pitchMixProfile
+        ? {
+            archetype: starter.pitchMixProfile.archetype,
+            label: starter.pitchMixProfile.label,
+            fastballShare: starter.pitchMixProfile.fastballShare,
+            breakingShare: starter.pitchMixProfile.breakingShare,
+            offspeedShare: starter.pitchMixProfile.offspeedShare,
+            spinDependencyShare: starter.pitchMixProfile.spinDependencyShare,
+            topPitchType: starter.pitchMixProfile.topPitchType,
+            topPitchShare: starter.pitchMixProfile.topPitchShare
+          }
+        : null,
+      weatherAdjustment: weatherAdjustment
+        ? {
+            active: Boolean(weatherAdjustment.active),
+            archetype: weatherAdjustment.archetype,
+            temperatureF: weatherAdjustment.temperatureF,
+            hrForce: weatherAdjustment.hrForce != null ? roundToTenths(weatherAdjustment.hrForce) : null,
+            hotWeather: Boolean(weatherAdjustment.hotWeather),
+            coldWeather: Boolean(weatherAdjustment.coldWeather),
+            hitDelta: roundToTenths(Number(weatherAdjustment.hitDelta || 0)),
+            runDelta: roundToTenths(Number(weatherAdjustment.runDelta || 0)),
+            conversionDelta: Number(weatherAdjustment.conversionDelta || 0),
+            firstInningProbabilityLiftPct: roundToTenths(Number(weatherAdjustment.firstInningProbabilityDelta || 0) * 100),
+            holdDelta: roundToTenths(Number(weatherAdjustment.holdDelta || 0)),
+            reasons: weatherAdjustment.reasons ?? []
+          }
+        : null,
+      flags
+    }
+  })
+  const handednessSplitChecks = lineupProfiles.map((profile, index) => {
+    const adjustment = buildHandednessSplitAdjustment(profile, 1)
+    const splitProfile = adjustment.profile
+    const flags = [
+      Number(splitProfile?.strongSplitCount || 0) >= 4
+        ? `${splitProfile.strongSplitCount} strong split bats vs ${splitProfile.opposingStarterHand || 'starter hand'}`
+        : null,
+      Number(splitProfile?.weakSplitCount || 0) >= 4
+        ? `${splitProfile.weakSplitCount} weak split bats vs ${splitProfile.opposingStarterHand || 'starter hand'}`
+        : null,
+      Number(splitProfile?.topThirdStrongSplitCount || 0) >= 2 ? 'top-third split pressure' : null,
+      Number(splitProfile?.topSixWeakSplitCount || 0) >= 3 ? 'top-six split drag' : null,
+      ...(Array.isArray(splitProfile?.reasons) ? splitProfile.reasons : [])
+    ].filter(Boolean)
+
+    return {
+      teamName: participants[index]?.name || (index === 0 ? 'Away' : 'Home'),
+      opposingStarterHand: splitProfile?.opposingStarterHand || starters[index === 0 ? 1 : 0]?.handedness || null,
+      handednessSplitIndex: splitProfile?.index ?? null,
+      label: splitProfile?.label || null,
+      splitAvgAverage: splitProfile?.splitAvgAverage ?? null,
+      splitOpsAverage: splitProfile?.splitOpsAverage ?? null,
+      topSixSplitAvgAverage: splitProfile?.topSixSplitAvgAverage ?? null,
+      topSixSplitOpsAverage: splitProfile?.topSixSplitOpsAverage ?? null,
+      strongSplitCount: splitProfile?.strongSplitCount ?? 0,
+      weakSplitCount: splitProfile?.weakSplitCount ?? 0,
+      severeWeakSplitCount: splitProfile?.severeWeakSplitCount ?? 0,
+      topSixStrongSplitCount: splitProfile?.topSixStrongSplitCount ?? 0,
+      topSixWeakSplitCount: splitProfile?.topSixWeakSplitCount ?? 0,
+      topThirdStrongSplitCount: splitProfile?.topThirdStrongSplitCount ?? 0,
+      topThirdWeakSplitCount: splitProfile?.topThirdWeakSplitCount ?? 0,
+      hitDelta: roundToTenths(Number(adjustment.hitDelta || 0)),
+      runConversionDelta: adjustment.runConversionDelta,
+      strongSplitBats: Array.isArray(splitProfile?.strongSplitBats) ? splitProfile.strongSplitBats.slice(0, 4) : [],
+      weakSplitBats: Array.isArray(splitProfile?.weakSplitBats) ? splitProfile.weakSplitBats.slice(0, 4) : [],
+      flags: flags.slice(0, 6)
+    }
+  })
+  const starterMatchupKernelChecks = lineupProfiles.map((profile, index) => {
+    const kernelIndex = numberOrNull(profile?.starterMatchupKernelIndex)
+    const favorableCount = numberOrNull(profile?.kernelFavorableCount) ?? 0
+    const suppressedCount = numberOrNull(profile?.kernelSuppressedCount) ?? 0
+    const espnSplitEdgeCount = numberOrNull(profile?.espnSplitEdgeCount) ?? 0
+    const espnSplitRiskCount = numberOrNull(profile?.espnSplitRiskCount) ?? 0
+    const topHitters = Array.isArray(profile?.starterMatchupKernelHitters)
+      ? profile.starterMatchupKernelHitters.slice(0, 3)
+      : []
+    const riskHitters = Array.isArray(profile?.starterMatchupKernelRisks)
+      ? profile.starterMatchupKernelRisks.slice(0, 2)
+      : []
+
+    return {
+      teamName: participants[index]?.name || (index === 0 ? 'Away' : 'Home'),
+      opposingStarter: starters[index === 0 ? 1 : 0]?.name || null,
+      starterMatchupKernelIndex: kernelIndex,
+      starterMatchupKernelScore: numberOrNull(profile?.starterMatchupKernelScore),
+      starterMatchupKernelConfidence: numberOrNull(profile?.starterMatchupKernelConfidence),
+      topThirdKernelScore: numberOrNull(profile?.topThirdKernelScore),
+      pitchTypeLeagueGrade: numberOrNull(profile?.pitchTypeLeagueGrade),
+      favorableCount,
+      suppressedCount,
+      espnSplitEdgeCount,
+      espnSplitRiskCount,
+      topHitters,
+      riskHitters,
+      flags: [
+        Number.isFinite(kernelIndex) && kernelIndex >= 62 ? 'batter-vs-starter kernel promotes offense' : null,
+        Number.isFinite(kernelIndex) && kernelIndex <= 40 ? 'batter-vs-starter kernel suppresses offense' : null,
+        favorableCount >= 3 ? `${favorableCount} favorable batter kernels` : null,
+        suppressedCount >= 3 ? `${suppressedCount} suppressed batter kernels` : null,
+        espnSplitEdgeCount >= 2 ? `${espnSplitEdgeCount} ESPN hitter split edges` : null,
+        espnSplitRiskCount >= 2 ? `${espnSplitRiskCount} ESPN hitter split risks` : null,
+        topHitters[0]?.name ? `${topHitters[0].name} top kernel bat` : null,
+        riskHitters[0]?.name ? `${riskHitters[0].name} top kernel risk` : null
+      ].filter(Boolean)
+    }
+  })
+  const batterChecks = ficSides.map((side, index) => {
+    const context = buildFicDailyMatchupTotalContext(side)
+    const topRows = Array.isArray(side?.topRows) ? side.topRows.slice(0, 4) : []
+    const bvpRows = topRows
+      .map((row) => ({
+        playerName: row.playerName || row.player || row.name || '',
+        pitcherName: row.pitcherName || row.pitcher || side?.pitcherName || '',
+        atBats: numberOrNull(row.atBats ?? row.ab ?? row.bvpAtBats),
+        avg: numberOrNull(row.avg ?? row.bvpAvg),
+        ops: numberOrNull(row.ops ?? row.bvpOps),
+        hrForce: numberOrNull(row.hrForce)
+      }))
+      .filter((row) => Number(row.atBats || 0) >= 5 || Number(row.hrForce || 0) >= 1.4)
+
+    return {
+      teamName: participants[index]?.name || (index === 0 ? 'Away' : 'Home'),
+      rowCount: Number(side?.rowCount || 0),
+      maxHrForce: context?.hrForce != null ? roundToTenths(context.hrForce) : null,
+      highHrForceRows: Number(side?.highHrForceRows || 0),
+      materialHrForce: Boolean(context?.hrForce != null && Number(context.hrForce) >= 1.5 && context.highHrForce),
+      hitDelta: context ? roundToTenths(Number(context.hitDelta || 0)) : 0,
+      runDelta: context ? roundToTenths(Number(context.matchupRunDelta || 0)) : 0,
+      bvpRows,
+      flags: [
+        context?.highHrForce ? `FIC HRForce ${roundToTenths(context.hrForce)} vs listed pitcher` : null,
+        bvpRows.some((row) => Number(row.atBats || 0) >= 5) ? 'BvP sample >= 5 AB present' : null
+      ].filter(Boolean)
+    }
+  })
+  const reliefChecks = reliefProjectionContexts.map((context, index) => {
+    const availableRelief = buildAvailableReliefAdjustmentContext(context)
+    return {
+      teamName: participants[index]?.name || (index === 0 ? 'Away' : 'Home'),
+      projectedReliefRunsAllowed: availableRelief?.projectedReliefRunsAllowed != null
+        ? roundToTenths(availableRelief.projectedReliefRunsAllowed)
+        : null,
+      adjustedProjectedReliefRunsAllowed: availableRelief?.adjustedProjectedReliefRunsAllowed != null
+        ? roundToTenths(availableRelief.adjustedProjectedReliefRunsAllowed)
+        : null,
+      projectedReliefOuts: availableRelief?.projectedReliefOuts != null
+        ? roundToTenths(availableRelief.projectedReliefOuts)
+        : null,
+      leverageAvailabilityScore: availableRelief?.leverageAvailabilityScore ?? null,
+      leadAvailabilityScore: availableRelief?.leadAvailabilityScore ?? null,
+      bridgeStressScore: availableRelief?.bridgeStressScore ?? null,
+      runDelta: availableRelief ? roundToTenths(Number(availableRelief.runDelta || 0)) : 0,
+      hitDelta: availableRelief ? roundToTenths(Number(availableRelief.hitDelta || 0)) : 0,
+      expectedEarlyBridge: Boolean(availableRelief?.expectedEarlyBridge),
+      flags: availableRelief?.reasons ?? []
+    }
+  })
+  const environmentFlags = carryContext
+    ? [
+        carryContext.materialHrForce
+          ? `Material HRForce ${roundToTenths(carryContext.hrForce)}: pitcher damage and batter production lifted`
+          : carryContext.highHrForce
+            ? `HRForce ${roundToTenths(carryContext.hrForce)} adds carry risk`
+            : null,
+        carryContext.isDome ? 'Dome/weather N/A: weather carry not treated as wind/heat lift' : null,
+        carryContext.lowerWeatherCarry ? 'Low/N/A HRForce cannot be used as a strong under signal' : null
+      ].filter(Boolean)
+    : []
+
+  return {
+    summary: [
+      carryContext?.materialHrForce ? 'high-HRForce carry is active' : null,
+      reliefChecks.some((check) => Number(check.runDelta || 0) >= 0.25) ? 'available-bullpen damage adjustment is active' : null,
+      handednessSplitChecks.some((check) => Math.abs(Number(check.hitDelta || 0)) >= 0.08) ? 'handedness split adjustment is active' : null,
+      starterMatchupKernelChecks.some((check) => Number(check.starterMatchupKernelIndex || 50) >= 62 || Number(check.starterMatchupKernelIndex || 50) <= 40)
+        ? 'batter-vs-starter kernel adjustment is active'
+        : null,
+      starterChecks.some((check) => check.opponentHistory?.repeatOpponentUnderWarning) ? 'repeat-opponent starter tax is active' : null,
+      starterChecks.some((check) => check.weatherAdjustment?.active) ? 'pitcher-weather archetype adjustment is active' : null,
+      starterChecks.some((check) => check.flags.includes('shallow starter sample')) ? 'shallow starter sample flag is active' : null,
+      batterChecks.some((check) => check.materialHrForce) ? 'BvP/FIC batter carry flag is active' : null
+    ].filter(Boolean),
+    environment: carryContext
+      ? {
+          hrForce: carryContext.hrForce != null ? roundToTenths(carryContext.hrForce) : null,
+          envHrForce: carryContext.envHrForce != null ? roundToTenths(carryContext.envHrForce) : null,
+          ficHrForce: carryContext.ficHrForce != null ? roundToTenths(carryContext.ficHrForce) : null,
+          materialHrForce: Boolean(carryContext.materialHrForce),
+          extremeHrForce: Boolean(carryContext.extremeHrForce),
+          carryMultiplier: carryContext.carryMultiplier,
+          hitDelta: roundToTenths(Number(carryContext.hitDelta || 0)),
+          runDelta: roundToTenths(Number(carryContext.runDelta || 0)),
+          conversionDelta: Number(carryContext.conversionDelta || 0),
+          firstInningProbabilityLiftPct: roundToTenths(Number(carryContext.firstInningProbabilityLift || 0) * 100),
+          underFragilityRuns: carryContext.underFragilityRuns,
+          flags: environmentFlags,
+          reasons: carryContext.reasons
+        }
+      : null,
+    starters: starterChecks,
+    handednessSplits: handednessSplitChecks,
+    starterMatchupKernels: starterMatchupKernelChecks,
+    batters: batterChecks,
+    relief: reliefChecks,
+    projectedRunTotals: {
+      away: projectedRunProfiles[0]?.fullRuns ?? null,
+      home: projectedRunProfiles[1]?.fullRuns ?? null
+    },
+    projectedHitTotals: {
+      away: projectedHitProfiles[0]?.projectedHits ?? null,
+      home: projectedHitProfiles[1]?.projectedHits ?? null
+    }
+  }
+}
 
 const buildMlbParkModifiers = (game, starters = []) => {
   const park = game.parkContext
@@ -2937,21 +4727,41 @@ const buildMlbAnalysisContext = (game, participants) => {
   const bullpenProfiles = [game.bullpenContext?.away, game.bullpenContext?.home]
   const bullpenChainProfiles = [game.bullpenChainContext?.away, game.bullpenChainContext?.home]
   const savantProfiles = [game.savantContext?.away, game.savantContext?.home]
-  const lineupProfiles = [
-    game.lineupContext?.[participants[0]?.name],
-    game.lineupContext?.[participants[1]?.name]
-  ]
   const lineupBoards = [
     findLineupBoardForTeam(game.lineupBoard, participants[0]?.name),
     findLineupBoardForTeam(game.lineupBoard, participants[1]?.name)
   ]
+  const rawLineupProfiles = [
+    game.lineupContext?.[participants[0]?.name],
+    game.lineupContext?.[participants[1]?.name]
+  ]
+  const lineupProfiles = rawLineupProfiles.map((lineupProfile, index) =>
+    enrichLineupProfileWithHandednessSplits({
+      lineupProfile,
+      lineupBoardSide: lineupBoards[index],
+      opposingStarter: starters[index === 0 ? 1 : 0]
+    })
+  )
   const weatherProfile = buildMlbWeatherProfile(game.lineupBoard)
   const sunVisibilityProfile = game.stateContext?.sunVisibility ?? null
   const environmentAdjustmentContext = game.environmentAdjustmentContext ?? null
+  const ficDailyMatchupContext = game.ficDailyMatchupContext ?? null
+  const ficDailyMatchupTeamContexts = [
+    ficDailyMatchupContext?.awayOffense ?? null,
+    ficDailyMatchupContext?.homeOffense ?? null
+  ]
   const reliefProjectionContexts = [
     game.reliefProjectionContext?.away ?? null,
     game.reliefProjectionContext?.home ?? null
   ]
+  const starterWeatherAdjustments = starters.map((starter, index) =>
+    buildStarterWeatherAdjustment({
+      starter,
+      weatherProfile,
+      environmentAdjustmentContext,
+      ficDailyMatchupContext: ficDailyMatchupTeamContexts[index === 0 ? 1 : 0]
+    })
+  )
   const offenseScores = offenseProfiles.map((profile, index) =>
     profile ? buildMlbOffenseScore(profile, participants[index]?.role) : null
   )
@@ -2983,6 +4793,7 @@ const buildMlbAnalysisContext = (game, participants) => {
       weatherProfile,
       sunVisibilityProfile,
       environmentAdjustmentContext,
+      ficDailyMatchupTeamContext: ficDailyMatchupTeamContexts[0],
       opposingReliefProjectionContext: reliefProjectionContexts[1]
     }),
     buildProjectedHitProfile({
@@ -2998,17 +4809,24 @@ const buildMlbAnalysisContext = (game, participants) => {
       weatherProfile,
       sunVisibilityProfile,
       environmentAdjustmentContext,
+      ficDailyMatchupTeamContext: ficDailyMatchupTeamContexts[1],
       opposingReliefProjectionContext: reliefProjectionContexts[0]
     })
   ]
   const starterHoldConfidence = [
     buildStarterHoldConfidence({
       starter: starters[0],
-      lineupProfile: lineupProfiles[1]
+      lineupProfile: lineupProfiles[1],
+      weatherProfile,
+      environmentAdjustmentContext,
+      ficDailyMatchupTeamContext: ficDailyMatchupTeamContexts[1]
     }),
     buildStarterHoldConfidence({
       starter: starters[1],
-      lineupProfile: lineupProfiles[0]
+      lineupProfile: lineupProfiles[0],
+      weatherProfile,
+      environmentAdjustmentContext,
+      ficDailyMatchupTeamContext: ficDailyMatchupTeamContexts[0]
     })
   ]
   const starterLeashScores = starters.map((starter) => deriveStarterLeashScore(starter))
@@ -3079,9 +4897,11 @@ const buildMlbAnalysisContext = (game, participants) => {
     sourceParts.push('daily lineup matchup context')
   }
   if (starters.some((starter) => starter?.recentForm)) sourceParts.push('recent starter form')
+  if (starters.some((starter) => starter?.pitchMixProfile?.pitchCount > 0)) sourceParts.push('pitcher weather archetype')
   if (weatherProfile?.label) sourceParts.push('weather context')
   if (Number(sunVisibilityProfile?.visibilityRiskScore) >= 18) sourceParts.push('sun-position visibility')
   if (environmentAdjustmentContext) sourceParts.push('ENV1 run environment')
+  if (ficDailyMatchupContext) sourceParts.push('FIC Daily Matchups HRForce')
   if (reliefProjectionContexts.some(Boolean)) sourceParts.push('RP2 relief projection')
 
   if (starters.every(Boolean)) {
@@ -3133,6 +4953,41 @@ const buildMlbAnalysisContext = (game, participants) => {
             score: Number.isFinite(starter?.recentFormScore) ? starter.recentFormScore : 50
           })),
           'Warehouse rolling pitcher form'
+        )
+      )
+    }
+
+    if (starterWeatherAdjustments.some((adjustment) => adjustment?.active)) {
+      const weatherFitScores = participants.map((participant, index) => {
+        const own = starterWeatherAdjustments[index]
+        const opposing = starterWeatherAdjustments[index === 0 ? 1 : 0]
+        const ownDamage =
+          Number(own?.hitDelta || 0) * 18 +
+          Number(own?.runDelta || 0) * 22 -
+          Number(own?.holdDelta || 0) * 0.65
+        const opposingDamage =
+          Number(opposing?.hitDelta || 0) * 18 +
+          Number(opposing?.runDelta || 0) * 22 -
+          Number(opposing?.holdDelta || 0) * 0.65
+        const weatherEdge = opposingDamage - ownDamage
+        const active = own?.active || opposing?.active
+        const ownLabel = own?.label || 'own starter unknown'
+        const opposingLabel = opposing?.label || 'opposing starter unknown'
+
+        return {
+          label: active
+            ? `${participant.name}: ${ownLabel} vs ${opposingLabel}`
+            : `${participant.name}: pitcher-weather neutral`,
+          score: clamp(50 + weatherEdge, 34, 68)
+        }
+      })
+
+      signals.push(
+        createSignal(
+          'Pitcher weather fit',
+          0.08,
+          weatherFitScores,
+          'Starter pitch mix + temperature/HRForce'
         )
       )
     }
@@ -3190,6 +5045,13 @@ const buildMlbAnalysisContext = (game, participants) => {
         buildBullpenExhaustionScore(profile)
       )
       const projectedRunProfiles = projectedHitProfiles.map((profile, index) => {
+        const opposingStarter = starters[index === 0 ? 1 : 0]
+        const opposingStarterVsTeamContext = opposingStarter?.starterVsTeamContext
+        const starterVsTeamFirst5RunDelta =
+          opposingStarterVsTeamContext &&
+          Number(opposingStarterVsTeamContext.sampleWeight || 0) >= 0.18
+            ? Number(opposingStarterVsTeamContext.first5RunsDelta || 0)
+            : 0
         const sunVisibilityRisk = Number(sunVisibilityProfile?.visibilityRiskScore)
         const sunFirst5RunLift = Number.isFinite(sunVisibilityRisk)
           ? clamp((sunVisibilityRisk - 38) * 0.0018, 0, 0.08)
@@ -3201,10 +5063,11 @@ const buildMlbAnalysisContext = (game, participants) => {
           offenseScore: offenseScores[index],
           savantScore: savantScores[index],
           parkContext: game.parkContext,
-          opposingStarter: starters[index === 0 ? 1 : 0],
+          opposingStarter,
           opposingBullpenExhaustion: bullpenExhaustionScores[index === 0 ? 1 : 0],
           opposingReliefProjectionContext: reliefProjectionContexts[index === 0 ? 1 : 0],
           environmentAdjustmentContext,
+          ficDailyMatchupTeamContext: ficDailyMatchupTeamContexts[index],
           lineupProfile: lineupProfiles[index],
           weatherProfile,
           phase: 'first5'
@@ -3213,15 +5076,21 @@ const buildMlbAnalysisContext = (game, participants) => {
           offenseScore: offenseScores[index],
           savantScore: savantScores[index],
           parkContext: game.parkContext,
-          opposingStarter: starters[index === 0 ? 1 : 0],
+          opposingStarter,
           opposingBullpenExhaustion: bullpenExhaustionScores[index === 0 ? 1 : 0],
           opposingReliefProjectionContext: reliefProjectionContexts[index === 0 ? 1 : 0],
           environmentAdjustmentContext,
+          ficDailyMatchupTeamContext: ficDailyMatchupTeamContexts[index],
           lineupProfile: lineupProfiles[index],
           weatherProfile,
           phase: 'late'
         })
-        const first5Runs = roundToTenths(profile.first5ProjectedHits * first5ConversionRate + sunFirst5RunLift)
+        const first5Runs = roundToTenths(
+          profile.first5ProjectedHits * first5ConversionRate +
+            sunFirst5RunLift +
+            starterVsTeamFirst5RunDelta +
+            Number(profile.starterWeatherAdjustment?.runDelta || 0)
+        )
         const lateRuns = roundToTenths(profile.lateProjectedHits * lateConversionRate + sunLateRunLift)
 
         return {
@@ -3272,7 +5141,9 @@ const buildMlbAnalysisContext = (game, participants) => {
         weatherProfile,
         sunVisibilityProfile,
         environmentAdjustmentContext,
-        reliefProjectionContexts
+        ficDailyMatchupContext,
+        reliefProjectionContexts,
+        starterVsTeamContexts: starters.map((starter) => starter?.starterVsTeamContext).filter(Boolean)
       }
       const first5TailOverlay = buildFirst5TailOverlay({
         baseProjectedRuns: projectedFirst5TotalRuns,
@@ -3452,8 +5323,10 @@ const buildMlbAnalysisContext = (game, participants) => {
               : game.stateContext?.firstInningPitcherSeason?.away,
           opposingPitcherWarProfile:
             index === 0 ? game.stateContext?.pitcherWar?.home : game.stateContext?.pitcherWar?.away,
+          opposingStarter: starters[index === 0 ? 1 : 0],
           weatherProfile,
-          environmentAdjustmentContext
+          environmentAdjustmentContext,
+          ficDailyMatchupTeamContext: ficDailyMatchupTeamContexts[index]
         })
       )
       const firstInningLean = buildFirstInningLean({
@@ -3461,6 +5334,17 @@ const buildMlbAnalysisContext = (game, participants) => {
         homeTeam: participants[1]?.name || 'Home team',
         awayProfile: firstInningProfiles[0],
         homeProfile: firstInningProfiles[1]
+      })
+      const adjustmentChecklist = buildProjectionAdjustmentChecklist({
+        participants,
+        starters,
+        lineupProfiles,
+        projectedHitProfiles,
+        projectedRunProfiles,
+        environmentAdjustmentContext,
+        weatherProfile,
+        ficDailyMatchupContext,
+        reliefProjectionContexts
       })
 
       mlbProjection = {
@@ -3532,7 +5416,9 @@ const buildMlbAnalysisContext = (game, participants) => {
         weather: weatherProfile,
         sunVisibility: sunVisibilityProfile,
         environmentAdjustment: summarizeEnvironmentAdjustmentContext(environmentAdjustmentContext),
+        ficDailyMatchup: summarizeFicDailyMatchupContext(ficDailyMatchupContext),
         reliefProjection: summarizeReliefProjectionContexts(participants, reliefProjectionContexts),
+        adjustmentChecklist,
         visibilityNote: sunVisibilityNote
       }
 
@@ -3748,6 +5634,38 @@ const buildMlbAnalysisContext = (game, participants) => {
       )
     ) {
       volatilityModifiers.push({ label: 'One lineup carries real platoon pressure versus the listed starter hand', delta: 3 })
+    }
+
+    if (
+      lineupProfiles.some(
+        (profile) =>
+          profile &&
+          Number.isFinite(profile.handednessSplitIndex) &&
+          (
+            profile.handednessSplitIndex >= 62 ||
+            profile.handednessSplitIndex <= 40
+          )
+      )
+    ) {
+      volatilityModifiers.push({ label: 'Handedness split rows are moving the offensive shape', delta: 3 })
+    }
+
+    if (starters.some((starter) => starter?.starterVsTeamContext?.repeatOpponentUnderWarning)) {
+      volatilityModifiers.push({ label: 'Repeat-opponent starter damage tax is live', delta: 4 })
+    }
+
+    if (
+      lineupProfiles.some(
+        (profile) =>
+          profile &&
+          Number.isFinite(profile.starterMatchupKernelIndex) &&
+          (
+            profile.starterMatchupKernelIndex >= 62 ||
+            profile.starterMatchupKernelIndex <= 40
+          )
+      )
+    ) {
+      volatilityModifiers.push({ label: 'Batter-vs-starter kernel is moving the offensive shape', delta: 3 })
     }
 
     if (
@@ -3984,6 +5902,7 @@ const buildMlbAnalysisContext = (game, participants) => {
       reliefProjectionContexts,
       savantScores,
       environmentAdjustmentContext,
+      ficDailyMatchupContext,
       weatherProfile,
       lineupProfiles,
       lineupScores,

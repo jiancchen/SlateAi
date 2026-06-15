@@ -10,7 +10,7 @@ Goal:
 
 Target slate:
 
-- date: `2026-06-12`
+- date: `2026-06-14`
 - team-side shadow cards: `0`
 - reliever candidates scored: `0`
 - conversion window: `8`
