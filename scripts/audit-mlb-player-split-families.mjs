@@ -86,12 +86,11 @@ const main = () => {
   }
 
   const pitcherRows = query(`
-    select count(*) as fetched_pitchers
+    select count(*) as pitcher_rows
     from mlb_pitcher_espn_splits
     where snapshot_date = ${sqlQuote(date)}
-      and source_status = 'fetched'
   `)
-  const expectedPitchers = Number(pitcherRows[0]?.fetched_pitchers || 0)
+  const expectedPitchers = Number(pitcherRows[0]?.pitcher_rows || 0)
   const rows = exists
     ? query(`
         select player_role, split_family, split_key, count(*) as rows

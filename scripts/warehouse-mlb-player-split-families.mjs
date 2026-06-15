@@ -413,7 +413,7 @@ const unavailablePitcherSplitRow = ({ pitcher, family, splitKey, splitLabel, fet
   splitKey,
   splitLabel,
   sourceName: 'ESPN pitcher splits',
-  sourceStatus: 'missing-split',
+  sourceStatus: pitcher.source_status && pitcher.source_status !== 'fetched' ? pitcher.source_status : 'missing-split',
   sourceUrl: pitcher.source_url || '',
   fetchedAt,
   raw: {
@@ -427,7 +427,9 @@ const unavailablePitcherSplitRow = ({ pitcher, family, splitKey, splitLabel, fet
     family,
     splitKey,
     splitLabel,
-    source: 'ESPN fetched payload without this split bucket'
+    source: pitcher.source_status && pitcher.source_status !== 'fetched'
+      ? 'ESPN pitcher split source unavailable for this starter'
+      : 'ESPN fetched payload without this split bucket'
   }
 })
 
@@ -446,7 +448,6 @@ const ingestPitcherSplits = ({ fetchedAt }) => {
       select *
       from mlb_pitcher_espn_splits
       where snapshot_date = ${sqlQuote(date)}
-        and source_status = 'fetched'
     `)
   )
   let rows = 0
