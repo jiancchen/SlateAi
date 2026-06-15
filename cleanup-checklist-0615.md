@@ -258,4 +258,89 @@ Deliverable:
 9. Public audit hardening.
 10. Runtime reports/changelog/versioning.
 
-That order matters: first stop bad games from publishing, then stop stale runs, then improve model quality. No code changes made yet.
+That order matters: first stop bad games from publishing, then stop stale runs, then improve model quality.
+
+**Implementation Status: 2026-06-15**
+
+Phase 1: substantially implemented.
+
+- `predictionEligibility` now hard-fails incomplete lineups, missing projection pitchers, starter TBDs, missing ESPN pitcher splits, missing required addendums, missing first-five/first-inning context, pitcher-in-lineup slots, and incomplete hitter context.
+- Hitter context is now strict: all hitters in a complete lineup need pitch fit, batter projection, and usable handedness split data.
+- Missing hitter context is exposed by player/side/slot so the failure can be fixed instead of guessed.
+- BOTD/best-pick ranking already excludes MLB games where `predictionEligibility.eligible !== true`.
+
+Phase 2: implemented as generated-first with parity audit still blocking DB promotion.
+
+- Prediction/public/site publish paths are forced through generated-file mode where starter/lineup/addendum context is richest.
+- `audit-mlb-generated-db-parity` exists to compare generated vs DB game shape before DB can become canonical again.
+- Remaining blocker: DB starter/role parity still needs repeated green slates before DB mode should be trusted.
+
+Phase 3: partially implemented.
+
+- `run-mlb-morning-predictions` is the single no-deploy-by-default command for the full source -> warehouse -> generate -> audit -> publish chain.
+- The command now includes ENV1, RP2, canonical split families, SP1, causal ledger audit, side/F5/late coherence audit, started-game locks, public audit, runtime JSON, and changelog output.
+- Remaining cleanup: remove older internal `--skip-preflight` calls only after their called lanes can pass the modern strict preflight without circular dependency.
+
+Phase 4: substantially implemented.
+
+- Strict prediction preflight now treats `mlb_player_split_families` and `mlb_sp1_starter_profile` as required prediction lane sources.
+- Strict/no-partial mode now fails on incomplete source completeness, missing source items, and unresolved rows.
+- `audit-mlb-morning-contracts` validates Rotowire proof, ESPN pitcher split categories, StatMuse starter rows, DraftKings market families, ENV1/RP2/FIC/ESPN coverage, canonical split families, SP1 coverage, prop lineage, and prediction eligibility.
+- Remaining blocker: a few player split/source gaps still need upstream repair/backfill.
+
+Phase 5: implemented for visibility and audit, still shadow for modeling.
+
+- `causalLedgerContext` is attached to public game detail data.
+- The ledger records lineup, handedness splits, pitch fit, BvP/H2H policy, HRForce, ENV1, RP2, SP1, market, and projection deltas.
+- `audit-mlb-causal-ledger` flags missing ledger coverage and major signal disconnects.
+- Remaining modeling move: promote calibrated ledger deltas into lane movement only after backtests are green.
+
+Phase 6: implemented as an audit/confidence guard, still needs more calibration.
+
+- `audit-mlb-not-started-side-coherence` checks side/F5/late contradictions on not-started games.
+- Side/F5/late explanations now have ledger fields available for UI and report inspection.
+- Remaining blocker: confidence math still needs calibration against actual outcomes so projected-run gaps and volatility caps feel less confusing.
+
+Phase 7: implemented as SP1 shadow addendum, not promoted.
+
+- `MLB-SP1` builds starter-collapse profiles from canonical L/R, day/night, home/away, pitch fit, repeat opponent, recent form, ENV1 carry, and role context.
+- SP1 is warehoused, audited, shown in game context, and included in the causal ledger.
+- Current backtest read: HR delta is promising; collapse, runs, and hits are not promotion-ready yet.
+- Remaining blocker: SP1 needs more dates and calibration before it can move ML/F5/totals/YRFI lanes materially.
+
+Phase 8: implemented.
+
+- `data:close:mlb-day` now points to a results-only closeout script.
+- The old broad followup workflow is preserved as `data:followup:mlb-day`.
+- Closeout now fetches finals, ingests typed game feeds, derives batter outcomes, and grades existing predictions without depending on today’s lineups.
+
+Phase 9: substantially implemented.
+
+- Public audit now recomputes prediction eligibility and fails on incomplete game context.
+- Public audit has explicit `status` and `failureCount`.
+- Publish now writes `publish_mlb_clean_slate_YYYY-MM-DD.json` with omitted games, started-game preservation, audit status, and any explicit known-failure waiver.
+- Remaining blocker: historical public artifacts may fail the stricter audit until regenerated or allowed as old snapshots.
+
+Phase 10: substantially implemented.
+
+- Morning runs produce runtime JSON and markdown changelog reports.
+- Publish runs now produce a waiver-aware publish report.
+- `data:test:mlb-prediction` provides a no-deploy test lane that runs the morning chain by default, recomputes current eligibility, lists blocked games with missing players, and ranks surfaced markets across ML, F5 ML, totals, and YRFI/NRFI.
+- Remaining blocker: add artifact hashes and a formal model-version changelog entry once the source coverage is green.
+
+**Current Blocking Items**
+
+- Fix remaining StatMuse/ESPN/split coverage gaps for players such as Raynel Delgado and Logan Porter in the June 14 test slate.
+- Keep generated-vs-DB parity green across multiple slates before considering DB mode canonical again.
+- Backtest SP1 on more completed dates before promoting it from shadow deltas into core lane movement.
+- Calibrate side/F5/late confidence after the stricter eligibility gate stops partial-game noise from entering the board.
+
+**Test Prediction Command**
+
+Run a no-deploy test slate with:
+
+`npm run data:test:mlb-prediction -- --date YYYY-MM-DD`
+
+Summarize existing current artifacts without rerunning the chain:
+
+`npm run data:test:mlb-prediction -- --date YYYY-MM-DD --skip-run --allow-source-gaps`
