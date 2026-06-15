@@ -248,6 +248,18 @@ const main = async () => {
     'run', 'data:export:mlb-props', '--', '--date', date, '--skip-preflight'
   ], { dryRun, env: { MLB_DAY_GAMES_DISABLE_DB: '1' } }))
 
+  steps.push(run('Prediction eligibility and addendum contract audit', 'npm', [
+    'run', 'data:audit:mlb-prediction-contract', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Generated-vs-DB parity blocking audit', 'npm', [
+    'run', 'data:audit:mlb-generated-db-parity', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Hard source-contract audit', 'npm', [
+    'run', 'data:audit:mlb-morning-contracts', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
   steps.push(run('Publish rich MLB slate and preserve non-MLB games', 'npm', [
     'run', 'data:publish:mlb-clean:vercel-safe', '--', '--date', date
   ], { dryRun }))
@@ -256,14 +268,6 @@ const main = async () => {
   const preservation = assertNonMlbPreserved(beforeNonMlbIds, afterNonMlbIds)
 
   steps.push(await runPublicMlbAudit(date, dryRun))
-
-  steps.push(run('Prediction eligibility and addendum contract audit', 'npm', [
-    'run', 'data:audit:mlb-prediction-contract', '--', '--date', date
-  ], { dryRun, allowFailure: allowSourceGaps }))
-
-  steps.push(run('Hard source-contract audit', 'npm', [
-    'run', 'data:audit:mlb-morning-contracts', '--', '--date', date
-  ], { dryRun, allowFailure: allowSourceGaps }))
 
   if (deploy) {
     steps.push(run('Build and deploy public site with hash/private-reference checks', 'npm', [
