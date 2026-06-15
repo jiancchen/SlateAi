@@ -14,6 +14,7 @@ What changed:
 - Preflight can derive freshness from `last_success_at + max_stale_hours` when older source receipts do not include `cache_valid_until`.
 - Generated-vs-DB parity audit now separates blocking mismatches from warning-level drift. It blocks on missing games, eligibility gaps, lineup counts, starter identity/split status, and addendum coverage; it reports source-label, usage-status, StatMuse-context, and analysis differences as drift.
 - Morning runner now refreshes/repairs/ingests final lineup context and refreshes/warehouses final DraftKings lines before strict M2 day-file generation. Final M2 day-file generation then runs through prediction preflight before publish gates.
+- Morning runner now runs the not-started side/F5/late coherence audit as a hard pre-publish gate.
 - Morning runner now captures started-game locks immediately before public MLB publish and audits those locks immediately after publish, preventing already-started game public summary/detail payloads from being rewritten during lineup/odds refreshes.
 - MLB pick-ranking, side, veto, home-run, player-prop, clean H+R+RBI, and Mike's BOTD surfaces now require `predictionEligibility.eligible === true`; missing eligibility is no longer treated as acceptable for MLB picks.
 
@@ -23,6 +24,7 @@ Verification:
 - `npm run data:audit:mlb-generated-db-parity -- --date 2026-06-14` passes with 14 generated games, 14 DB games, 14/14 eligible in both paths, 0 blocking mismatches, and 14 warning-level drift rows.
 - `node data-migration/scripts/fetch-mlb-starter-vs-team-statmuse.mjs --date 2026-06-14` writes 28/28 starter-history rows and source status for the current projection pitchers.
 - `node data-migration/scripts/prediction_preflight.mjs --sport mlb --date 2026-06-14 --lane prediction --degraded` checks 13 modern sources; the past-date probe only blocks on stale core schedule/feed/lineup/probable/odds timestamps.
+- `npm run data:audit:mlb-not-started-side-coherence -- --date 2026-06-14` passes with 14 games audited, 0 hard failures, and 0 warnings.
 - `npm run data:audit:mlb-started-game-locks -- --date 2026-06-14 --mode capture --source slate` captures 14 started-game locks.
 - `npm run data:audit:mlb-started-game-locks -- --date 2026-06-14 --mode audit --source slate` passes against the captured lock snapshot.
 - `npm run data:run:mlb-morning -- --date 2026-06-14 --dry-run --skip-prior-close` confirms final lineups/odds now precede strict day-file generation, and strict audits run before publish.

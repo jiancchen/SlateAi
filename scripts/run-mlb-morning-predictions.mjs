@@ -276,6 +276,10 @@ const main = async () => {
     'run', 'data:audit:mlb-morning-contracts', '--', '--date', date
   ], { dryRun, allowFailure: allowSourceGaps }))
 
+  steps.push(run('Not-started side/F5/late coherence audit', 'npm', [
+    'run', 'data:audit:mlb-not-started-side-coherence', '--', '--date', date
+  ], { dryRun }))
+
   steps.push(run('Capture started-game locks before public publish', 'npm', [
     'run', 'data:audit:mlb-started-game-locks', '--', '--date', date, '--mode', 'capture', '--source', 'slate'
   ], { dryRun }))
