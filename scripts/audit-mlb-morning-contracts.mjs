@@ -405,8 +405,10 @@ const main = async () => {
     audit: 'mlb-morning-contracts',
     date,
     generatedAt: new Date().toISOString(),
+    status: failures.length ? 'fail' : 'pass',
     gameCount: games.length,
     propCount: array(props?.picks).length,
+    failureCount: failures.length,
     failures
   }
   const reportPath = await writeReport(date, report)

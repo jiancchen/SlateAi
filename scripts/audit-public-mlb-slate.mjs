@@ -294,6 +294,7 @@ const main = async () => {
     date: slateDate,
     baseUrl: baseUrl || null,
     generatedAt: new Date().toISOString(),
+    status: hardFailures.length ? 'fail' : 'pass',
     summary: {
       totalGames: summaryGames.length,
       mlbGames: mlbSummaryGames.length,
@@ -303,6 +304,7 @@ const main = async () => {
     props: propSummary,
     valueBoard,
     draftKingsLineCoverage,
+    failureCount: hardFailures.length,
     hardFailures
   }
 
