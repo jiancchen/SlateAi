@@ -1,4 +1,5 @@
 import { execFileSync } from 'node:child_process'
+import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
@@ -72,6 +73,15 @@ const runSql = (sql) =>
     encoding: 'utf8',
     maxBuffer: 1024 * 1024 * 20
   })
+
+const queryJson = (sql) => {
+  const raw = execFileSync('sqlite3', ['-json', '-cmd', '.timeout 30000', dbPath, sql], {
+    cwd: rootDir,
+    encoding: 'utf8',
+    maxBuffer: 1024 * 1024 * 20
+  }).trim()
+  return raw ? JSON.parse(raw) : []
+}
 
 const ensureTable = () => {
   runSql(`
@@ -220,10 +230,109 @@ const fetchStatmuse = async ({ pitcherName, opponentTeam }) => {
   }
 }
 
-const loadGames = async () => {
+const loadGeneratedGames = async () => {
   const dataPath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}-data.js`)
+  if (!existsSync(dataPath)) return []
   const module = await import(`${pathToFileURL(dataPath).href}?t=${Date.now()}`)
   return module.rawGames || []
+}
+
+const starterPrioritySql = `
+  case
+    when sp.source_name = 'rotowire_primary' then 0
+    when sp.source_name = 'rotowire' and lower(coalesce(sp.confirmation_status, '')) like '%primary%' then 0
+    when sp.source_name = 'mlb_probables' and sp.confirmation_status = 'lineup_board_opposing_starter' then 1
+    when sp.source_name = 'mlb_game_feed' and sp.confirmation_status = 'probable' then 2
+    when sp.source_name = 'mlb_probables' then 3
+    when sp.source_name = 'sports.db:mlb_starting_pitchers' then 4
+    else 9
+  end
+`
+
+const loadTypedWarehouseGames = () => {
+  const rows = queryJson(`
+    with ranked_starters as (
+      select
+        sp.*,
+        ${starterPrioritySql} as source_priority,
+        row_number() over (
+          partition by sp.game_id, sp.team_id
+          order by
+            ${starterPrioritySql},
+            coalesce(sp.updated_at, '') desc,
+            sp.pitcher_id
+        ) as starter_rank
+      from starting_pitchers sp
+    )
+    select
+      g.game_id,
+      g.mlb_game_pk,
+      g.game_date,
+      g.start_time_utc,
+      g.away_team_id,
+      away.name as away_team,
+      g.home_team_id,
+      home.name as home_team,
+      sp.team_id as pitcher_team_id,
+      teams.name as pitcher_team,
+      players.player_id as pitcher_id,
+      players.mlb_player_id,
+      players.name as pitcher_name,
+      players.throws,
+      sp.confirmation_status,
+      sp.source_name,
+      sp.source_priority,
+      case
+        when sp.source_priority <= 1 then 'primary-bulk'
+        when sp.source_name = 'mlb_game_feed' then 'mlb-listed-starter'
+        else coalesce(sp.confirmation_status, 'probable')
+      end as starter_role
+    from games g
+    join teams away on away.team_id = g.away_team_id
+    join teams home on home.team_id = g.home_team_id
+    left join ranked_starters sp on sp.game_id = g.game_id and sp.starter_rank = 1
+    left join teams on teams.team_id = sp.team_id
+    left join players on players.player_id = sp.pitcher_id
+    where g.game_date = ${sqlText(date)}
+    order by coalesce(g.start_time_utc, g.game_date), g.game_id, sp.team_id;
+  `)
+  const gamesById = new Map()
+  for (const row of rows) {
+    const gameId = row.game_id || (row.mlb_game_pk ? `mlb-${row.mlb_game_pk}` : '')
+    if (!gameId) continue
+    if (!gamesById.has(gameId)) {
+      gamesById.set(gameId, {
+        id: gameId,
+        gamePk: row.mlb_game_pk || null,
+        away: row.away_team || '',
+        home: row.home_team || '',
+        awayPitcher: null,
+        homePitcher: null,
+        source: 'typed-warehouse'
+      })
+    }
+    if (!row.pitcher_name || !row.pitcher_team_id) continue
+    const game = gamesById.get(gameId)
+    const side = row.pitcher_team_id === row.away_team_id ? 'away' : row.pitcher_team_id === row.home_team_id ? 'home' : ''
+    if (!side) continue
+    game[`${side}Pitcher`] = {
+      id: row.pitcher_id || row.mlb_player_id || null,
+      mlbPlayerId: row.mlb_player_id || null,
+      name: row.pitcher_name,
+      fullName: row.pitcher_name,
+      throws: row.throws || '',
+      confirmationStatus: row.confirmation_status || '',
+      probableSource: row.source_name || 'typed-db',
+      starterRole: row.starter_role || ''
+    }
+  }
+  return Array.from(gamesById.values())
+}
+
+const loadGames = async () => {
+  const generatedGames = await loadGeneratedGames()
+  if (generatedGames.length) return generatedGames
+  return loadTypedWarehouseGames()
 }
 
 const starterRowsForGames = (games) => {
