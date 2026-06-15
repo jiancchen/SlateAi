@@ -98,13 +98,51 @@ const playerHasBatterProjection = (player) =>
     isFiniteNumber(player.metrics.starterMatchupKernelScore) ||
     isFiniteNumber(player.metrics.formScore))
 const playerHasHandednessSplit = (player) =>
-  Boolean(player?.espnHitterSplit?.sourceStatus || player?.espnHitterSplits?.sourceStatus) ||
+  isFiniteNumber(player?.espnHitterSplit?.ops) ||
+  isFiniteNumber(player?.espnHitterSplits?.vsLeft?.ops) ||
+  isFiniteNumber(player?.espnHitterSplits?.vsRight?.ops) ||
   isFiniteNumber(player?.split?.ops)
+
+const lineupPlayerLabel = (player = {}, index = 0, side = '') => ({
+  side,
+  slot: player.slot ?? player.battingOrder ?? index + 1,
+  playerId: player.playerId ?? player.id ?? player.mlbPlayerId ?? null,
+  name: player.name || player.fullName || '',
+  position: player.position || '',
+  bats: player.bats || player.battingHand || ''
+})
+
+const isPitcherLineupSlot = (player = {}) =>
+  /^P$/i.test(String(player.position || '').trim()) || /^pitcher$/i.test(String(player.positionName || '').trim())
+
+const missingPlayerRows = (players = [], side = '', predicate = () => false) =>
+  players
+    .map((player, index) => ({ player, index }))
+    .filter(({ player }) => !predicate(player))
+    .map(({ player, index }) => lineupPlayerLabel(player, index, side))
+
+const sideHitterContext = (players = [], side = '') => ({
+  totalHitters: players.length,
+  pitchFitHitters: players.filter(playerHasPitchFit).length,
+  batterProjectionHitters: players.filter(playerHasBatterProjection).length,
+  handednessSplitHitters: players.filter(playerHasHandednessSplit).length,
+  pitcherSlotHitters: players
+    .map((player, index) => ({ player, index }))
+    .filter(({ player }) => isPitcherLineupSlot(player))
+    .map(({ player, index }) => lineupPlayerLabel(player, index, side)),
+  missingPitchFitHitters: missingPlayerRows(players, side, playerHasPitchFit),
+  missingBatterProjectionHitters: missingPlayerRows(players, side, playerHasBatterProjection),
+  missingHandednessSplitHitters: missingPlayerRows(players, side, playerHasHandednessSplit)
+})
 
 const addendumContext = (game = {}) => {
   const awayLineup = array(game.lineupBoard?.away?.lineup)
   const homeLineup = array(game.lineupBoard?.home?.lineup)
   const players = [...awayLineup, ...homeLineup]
+  const hitterContext = {
+    away: sideHitterContext(awayLineup, 'away'),
+    home: sideHitterContext(homeLineup, 'home')
+  }
   const projection = game.analysis?.mlbProjection || {}
   const totals = projection.totals || {}
   return {
@@ -122,7 +160,18 @@ const addendumContext = (game = {}) => {
     pitchFitHitters: players.filter(playerHasPitchFit).length,
     batterProjectionHitters: players.filter(playerHasBatterProjection).length,
     handednessSplitHitters: players.filter(playerHasHandednessSplit).length,
-    totalHitters: players.length
+    totalHitters: players.length,
+    hitterContext,
+    pitcherSlotHitters: [...hitterContext.away.pitcherSlotHitters, ...hitterContext.home.pitcherSlotHitters],
+    missingPitchFitHitters: [...hitterContext.away.missingPitchFitHitters, ...hitterContext.home.missingPitchFitHitters],
+    missingBatterProjectionHitters: [
+      ...hitterContext.away.missingBatterProjectionHitters,
+      ...hitterContext.home.missingBatterProjectionHitters
+    ],
+    missingHandednessSplitHitters: [
+      ...hitterContext.away.missingHandednessSplitHitters,
+      ...hitterContext.home.missingHandednessSplitHitters
+    ]
   }
 }
 
@@ -146,6 +195,7 @@ export const buildMlbPredictionEligibility = (game = {}, options = {}) => {
     if (!lineup[side].complete) {
       hardFailures.push(`${side}-lineup-${lineup[side].hitterCount ? 'partial' : 'missing'}`)
     }
+    if (array(addendums.hitterContext?.[side]?.pitcherSlotHitters).length) hardFailures.push(`${side}-lineup-pitcher-slot`)
     if (!lineup[side].snapshot) warnings.push(`${side}-lineup-snapshot-missing`)
     if (!lineup[side].source) warnings.push(`${side}-lineup-source-missing`)
     if (!pitchers[side].complete) hardFailures.push(`${side}-projection-pitcher-missing`)
@@ -159,10 +209,10 @@ export const buildMlbPredictionEligibility = (game = {}, options = {}) => {
   }
 
   if (requirePublicModelContext) {
-    const minimumHitterContext = Math.min(16, addendums.totalHitters)
-    if (addendums.pitchFitHitters < minimumHitterContext) hardFailures.push('pitch-fit-hitters-missing')
-    if (addendums.batterProjectionHitters < minimumHitterContext) hardFailures.push('batter-projection-hitters-missing')
-    if (addendums.handednessSplitHitters < minimumHitterContext) hardFailures.push('hitter-handedness-splits-missing')
+    const expectedHitterContext = addendums.totalHitters
+    if (addendums.pitchFitHitters < expectedHitterContext) hardFailures.push('pitch-fit-hitters-missing')
+    if (addendums.batterProjectionHitters < expectedHitterContext) hardFailures.push('batter-projection-hitters-missing')
+    if (addendums.handednessSplitHitters < expectedHitterContext) hardFailures.push('hitter-handedness-splits-missing')
     if (!addendums.park) hardFailures.push('park-context-missing')
     if (!addendums.firstFive) hardFailures.push('first-five-context-missing')
     if (!addendums.firstInning) hardFailures.push('first-inning-context-missing')
