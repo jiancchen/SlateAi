@@ -2185,8 +2185,8 @@ export function MlbDetail(props: MlbDetailProps) {
                     ) : null}
                   </div>
                   <div className="react-lineup-list">
-                    {(lineupTeam.lineup ?? []).slice(0, 9).map((player: AnyRecord) => (
-                      <div key={`${teamName}-${player.playerId}-${player.slot}`} className="react-lineup-player">
+                    {(lineupTeam.lineup ?? []).slice(0, 9).map((player: AnyRecord, playerIndex: number) => (
+                      <div key={`${teamName}-${player.slot ?? playerIndex}-${player.playerId || player.name || 'player'}-${playerIndex}`} className="react-lineup-player">
                         <div>
                           <strong>{player.slot}. {player.name}</strong>
                           <small>{player.position} | {player.bats} | {player.primaryTag}</small>
