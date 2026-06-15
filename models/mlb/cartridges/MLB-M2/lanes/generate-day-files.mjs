@@ -2231,6 +2231,31 @@ const buildStarterVsTeamStatmuseByGameSide = ({ date, games }) => {
 
   const byGameId = Object.fromEntries(games.map((game) => [game.id, game]))
   const byGameSide = {}
+  const toStatmusePayload = (row) => ({
+    source: 'StatMuse',
+    sourceUrl: row.statmuse_url || '',
+    answerText: row.answer_text || '',
+    pitcherName: row.pitcher_name || '',
+    pitcherTeam: row.pitcher_team || '',
+    opponentTeam: row.opponent_team || '',
+    appearances: Number(row.appearances || 0) || 0,
+    gamesStarted: Number(row.games_started || 0) || 0,
+    wins: row.wins !== null && row.wins !== undefined && Number.isFinite(Number(row.wins)) ? Number(row.wins) : null,
+    losses: row.losses !== null && row.losses !== undefined && Number.isFinite(Number(row.losses)) ? Number(row.losses) : null,
+    era: row.era !== null && row.era !== undefined && Number.isFinite(Number(row.era)) ? roundMaybe(row.era) : null,
+    strikeouts: row.strikeouts !== null && row.strikeouts !== undefined && Number.isFinite(Number(row.strikeouts)) ? Number(row.strikeouts) : null,
+    inningsPitched: row.innings_pitched || null,
+    hitsAllowed: row.hits_allowed !== null && row.hits_allowed !== undefined && Number.isFinite(Number(row.hits_allowed)) ? Number(row.hits_allowed) : null,
+    earnedRuns: row.earned_runs !== null && row.earned_runs !== undefined && Number.isFinite(Number(row.earned_runs)) ? Number(row.earned_runs) : null,
+    runsAllowed: row.runs_allowed !== null && row.runs_allowed !== undefined && Number.isFinite(Number(row.runs_allowed)) ? Number(row.runs_allowed) : null,
+    homeRunsAllowed: row.home_runs_allowed !== null && row.home_runs_allowed !== undefined && Number.isFinite(Number(row.home_runs_allowed)) ? Number(row.home_runs_allowed) : null,
+    walks: row.walks !== null && row.walks !== undefined && Number.isFinite(Number(row.walks)) ? Number(row.walks) : null,
+    battersFaced: row.batters_faced !== null && row.batters_faced !== undefined && Number.isFinite(Number(row.batters_faced)) ? Number(row.batters_faced) : null,
+    totalRow: safeJsonParse(row.total_row_json, null),
+    gameRows: safeJsonParse(row.game_rows_json, []),
+    fetchedAt: row.fetched_at || ''
+  })
+
   rows.forEach((row) => {
     const game = byGameId[row.game_id]
     if (!game) return
@@ -2238,38 +2263,23 @@ const buildStarterVsTeamStatmuseByGameSide = ({ date, games }) => {
     const rowPitcherKey = normalizeNameToken(pitcherName)
     const awayPitcherKey = normalizeNameToken(game.awayPitcher?.fullName)
     const homePitcherKey = normalizeNameToken(game.homePitcher?.fullName)
+    const rowPitcherTeamKey = normalizeNameToken(row.pitcher_team)
+    const rowOpponentTeamKey = normalizeNameToken(row.opponent_team)
+    const awayTeamKey = normalizeNameToken(game.away)
+    const homeTeamKey = normalizeNameToken(game.home)
     const side =
       rowPitcherKey && rowPitcherKey === awayPitcherKey
         ? 'away'
         : rowPitcherKey && rowPitcherKey === homePitcherKey
           ? 'home'
-          : ''
+          : rowPitcherTeamKey === awayTeamKey && rowOpponentTeamKey === homeTeamKey
+            ? 'away'
+            : rowPitcherTeamKey === homeTeamKey && rowOpponentTeamKey === awayTeamKey
+              ? 'home'
+              : ''
     if (!side) return
 
-    byGameSide[`${row.game_id}:${side}`] = {
-      source: 'StatMuse',
-      sourceUrl: row.statmuse_url || '',
-      answerText: row.answer_text || '',
-      pitcherName: row.pitcher_name || '',
-      pitcherTeam: row.pitcher_team || '',
-      opponentTeam: row.opponent_team || '',
-      appearances: Number(row.appearances || 0) || 0,
-      gamesStarted: Number(row.games_started || 0) || 0,
-      wins: row.wins !== null && row.wins !== undefined && Number.isFinite(Number(row.wins)) ? Number(row.wins) : null,
-      losses: row.losses !== null && row.losses !== undefined && Number.isFinite(Number(row.losses)) ? Number(row.losses) : null,
-      era: row.era !== null && row.era !== undefined && Number.isFinite(Number(row.era)) ? roundMaybe(row.era) : null,
-      strikeouts: row.strikeouts !== null && row.strikeouts !== undefined && Number.isFinite(Number(row.strikeouts)) ? Number(row.strikeouts) : null,
-      inningsPitched: row.innings_pitched || null,
-      hitsAllowed: row.hits_allowed !== null && row.hits_allowed !== undefined && Number.isFinite(Number(row.hits_allowed)) ? Number(row.hits_allowed) : null,
-      earnedRuns: row.earned_runs !== null && row.earned_runs !== undefined && Number.isFinite(Number(row.earned_runs)) ? Number(row.earned_runs) : null,
-      runsAllowed: row.runs_allowed !== null && row.runs_allowed !== undefined && Number.isFinite(Number(row.runs_allowed)) ? Number(row.runs_allowed) : null,
-      homeRunsAllowed: row.home_runs_allowed !== null && row.home_runs_allowed !== undefined && Number.isFinite(Number(row.home_runs_allowed)) ? Number(row.home_runs_allowed) : null,
-      walks: row.walks !== null && row.walks !== undefined && Number.isFinite(Number(row.walks)) ? Number(row.walks) : null,
-      battersFaced: row.batters_faced !== null && row.batters_faced !== undefined && Number.isFinite(Number(row.batters_faced)) ? Number(row.batters_faced) : null,
-      totalRow: safeJsonParse(row.total_row_json, null),
-      gameRows: safeJsonParse(row.game_rows_json, []),
-      fetchedAt: row.fetched_at || ''
-    }
+    byGameSide[`${row.game_id}:${side}`] = toStatmusePayload(row)
   })
 
   return byGameSide
