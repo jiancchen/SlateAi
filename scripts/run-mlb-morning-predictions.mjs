@@ -228,10 +228,6 @@ const main = async () => {
     'run', 'data:generate:mlb-shadow-addendums', '--', '--dates', date
   ], { dryRun, allowFailure: allowSourceGaps }))
 
-  steps.push(run('Regenerate M2 day files after supplemental sources', 'npm', [
-    'run', 'data:generate:mlb-day', '--', '--date', date
-  ], { dryRun }))
-
   steps.push(run('Regenerate lineup board after supplemental sources', 'npm', [
     'run', 'data:export:mlb-lineups', '--', '--date', date, '--skip-preflight'
   ], { dryRun }))
@@ -242,6 +238,26 @@ const main = async () => {
 
   steps.push(run('Ingest generated hitter lineup splits', 'npm', [
     'run', 'data:ingest:hitter-lineup-splits', '--', '--date', date
+  ], { dryRun }))
+
+  steps.push(run('Refresh DraftKings MLB lines before final preflight', 'npm', [
+    'run', 'data:fetch:draftkings-mlb', '--', '--date', date
+  ], { dryRun }))
+
+  steps.push(run('Warehouse final DraftKings MLB lines before final preflight', 'python3', [
+    'data-migration/scripts/ingest_mlb_markets_props_raw_to_typed.py',
+    '--date', date,
+    '--report', `data-migration/reports/ingest_mlb_markets_props_raw_to_typed_${date}_draftkings_final.json`
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Validate final DraftKings MLB market coverage before final preflight', 'python3', [
+    'data-migration/scripts/validate_mlb_markets_props_raw_to_typed.py',
+    '--date', date,
+    '--report', `data-migration/reports/validate_mlb_markets_props_raw_to_typed_${date}_draftkings_final.json`
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
+  steps.push(run('Regenerate M2 day files after final lineups and addendums', 'npm', [
+    'run', 'data:generate:mlb-day', '--', '--date', date
   ], { dryRun }))
 
   steps.push(run('Regenerate player props with market lineage', 'npm', [
