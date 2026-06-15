@@ -62,6 +62,15 @@ const sqlite = (sql) =>
 
 const sqliteExec = (sql) => execFileSync('sqlite3', [dbPath, sql], { encoding: 'utf8', maxBuffer: 1024 * 1024 * 60 })
 
+const readJsonIfExists = (filePath) => {
+  if (!filePath || !fs.existsSync(filePath)) return null
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'))
+  } catch {
+    return null
+  }
+}
+
 const fetchJson = async (url) => {
   const res = await fetch(url, {
     headers: {
@@ -121,6 +130,14 @@ const normalizeCategory = (category, rootPayload) => {
   }
 }
 
+const normalizePayloadCategories = (payload = null) =>
+  payload
+    ? (payload.splitCategories || [])
+        .filter((category) => selectedCategories.has(category.name))
+        .map((category) => normalizeCategory(category, payload))
+        .filter((category) => category.rows.length)
+    : []
+
 const metricValue = (row, metric) => row?.stats?.find((stat) => stat.label === metric || stat.name === metric)?.value ?? ''
 const numericMetric = (row, metric) => {
   const parsed = Number(metricValue(row, metric))
@@ -172,6 +189,15 @@ const buildInsights = (categories, parkName, gameStart) => {
   return insights
 }
 
+const priorArtifact = readJsonIfExists(artifactPath)
+const priorArtifactRows = new Map(
+  (priorArtifact?.rows || [])
+    .filter((row) => row?.sourceStatus === 'fetched' && Array.isArray(row.categories) && row.categories.length)
+    .map((row) => [`${row.gameId}:${row.pitcherId}`, row])
+)
+
+let priorDbRows = new Map()
+
 const starters = JSON.parse(
   sqlite(`
     select
@@ -220,6 +246,27 @@ sqliteExec(`
     primary key (snapshot_date, game_id, pitcher_id)
   )
 `)
+priorDbRows = new Map(
+  JSON.parse(
+    sqlite(`
+      select *
+      from mlb_pitcher_espn_splits
+      where snapshot_date = ${sqlQuote(date)}
+        and source_status = 'fetched'
+    `)
+  ).map((row) => [
+    `${row.game_id}:${row.pitcher_id}`,
+    {
+      gameId: row.game_id,
+      pitcherId: row.pitcher_id,
+      espnAthleteId: row.espn_athlete_id,
+      sourceUrl: row.source_url,
+      categories: JSON.parse(row.categories_json || '[]'),
+      insights: JSON.parse(row.insights_json || '[]'),
+      fetchedAt: row.fetched_at
+    }
+  ])
+)
 sqliteExec(`delete from mlb_pitcher_espn_splits where snapshot_date = ${sqlQuote(date)}`)
 
 mkdirp(rawDir)
@@ -234,21 +281,38 @@ for (const starter of starters) {
   let sourceStatus = resolved.status
   let categories = []
   let rawPath = ''
+  let cacheFallback = ''
   let error = ''
   if (resolved.espnId) {
     const apiUrl = `https://site.web.api.espn.com/apis/common/v3/sports/baseball/mlb/athletes/${resolved.espnId}/splits`
+    rawPath = path.join(rawDir, `${slugify(starter.pitcher_name)}-${resolved.espnId}.json`)
     try {
       const payload = await fetchJson(apiUrl)
-      rawPath = path.join(rawDir, `${slugify(starter.pitcher_name)}-${resolved.espnId}.json`)
-      fs.writeFileSync(rawPath, `${JSON.stringify(payload, null, 2)}\n`)
-      categories = (payload.splitCategories || [])
-        .filter((category) => selectedCategories.has(category.name))
-        .map((category) => normalizeCategory(category, payload))
-        .filter((category) => category.rows.length)
+      categories = normalizePayloadCategories(payload)
+      if (categories.length) fs.writeFileSync(rawPath, `${JSON.stringify(payload, null, 2)}\n`)
       sourceStatus = categories.length ? 'fetched' : 'empty-splits'
+      if (!categories.length) error = 'empty ESPN splits payload'
     } catch (err) {
       sourceStatus = 'fetch-error'
       error = err.message
+    }
+    if (!categories.length) {
+      const cachedPayload = readJsonIfExists(rawPath)
+      const cachedCategories = normalizePayloadCategories(cachedPayload)
+      if (cachedCategories.length) {
+        categories = cachedCategories
+        sourceStatus = 'fetched'
+        cacheFallback = error ? 'raw-cache-after-fetch-error' : 'raw-cache-after-empty-splits'
+      }
+    }
+    if (!categories.length) {
+      const priorKey = `${starter.game_id}:${starter.player_id}`
+      const priorRow = priorArtifactRows.get(priorKey) || priorDbRows.get(priorKey)
+      if (Array.isArray(priorRow?.categories) && priorRow.categories.length) {
+        categories = priorRow.categories
+        sourceStatus = 'fetched'
+        cacheFallback = priorArtifactRows.has(priorKey) ? 'artifact-cache-after-fetch-error' : 'db-cache-after-fetch-error'
+      }
     }
   }
   const insights = buildInsights(categories, starter.venue_name, '')
@@ -267,6 +331,7 @@ for (const starter of starters) {
     categories,
     insights,
     rawPath: rawPath ? path.relative(rootDir, rawPath) : '',
+    cacheFallback,
     resolved,
     error,
     fetchedAt
