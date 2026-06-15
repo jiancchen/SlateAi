@@ -9,6 +9,7 @@ What changed:
 - DB slate loading now hydrates hitter matchup rows from `lineup_matchup_snapshots.source_detail_json`, restoring pitch-fit summaries, batter projection metrics, ESPN hitter L/R splits, matchup kernel context, tags, and matchup notes.
 - DB starter selection no longer requires `source_name = 'mlb_probables'`. It ranks projection pitchers by source/role so primary-bulk pitcher rows win over MLB-listed openers, while normal MLB feed starters still populate when no primary row exists.
 - ESPN pitcher split warehousing now preserves known-good cached raw/artifact/DB split categories when ESPN transiently returns 5xx or empty split payloads.
+- StatMuse starter-vs-team fetching now writes `source_fetch_runs` and `source_fetch_status` rows as `statmuse_starter_vs_team`, and the prediction contract checks that receipt plus minimum starter-history row coverage.
 - Generated-vs-DB parity audit now separates blocking mismatches from warning-level drift. It blocks on missing games, eligibility gaps, lineup counts, starter identity/split status, and addendum coverage; it reports source-label, usage-status, StatMuse-context, and analysis differences as drift.
 - Morning runner now gates publish on prediction contract, generated-vs-DB parity, and hard source-contract audits before rewriting the public MLB slate.
 
@@ -16,6 +17,7 @@ Verification:
 
 - `npm run data:audit:mlb-prediction-contract -- --date 2026-06-14` passes with 14/14 eligible games.
 - `npm run data:audit:mlb-generated-db-parity -- --date 2026-06-14` passes with 14 generated games, 14 DB games, 14/14 eligible in both paths, 0 blocking mismatches, and 14 warning-level drift rows.
+- `node data-migration/scripts/fetch-mlb-starter-vs-team-statmuse.mjs --date 2026-06-14` writes 28/28 starter-history rows and source status for the current projection pitchers.
 - `npm run data:run:mlb-morning -- --date 2026-06-14 --dry-run --skip-prior-close` confirms strict audits now run before publish.
 
 ## MLB-M2.2026-06-15.v0.4 - Prediction Contract Cleanup
