@@ -71,6 +71,8 @@ const SPORT_LANE_SOURCES = {
       'fangraphs_roster_resource_bullpen_depth',
       'statmuse_starter_vs_team',
       'espn_pitcher_splits',
+      'mlb_player_split_families',
+      'mlb_sp1_starter_profile',
       'mlb_env1',
       'mlb_rp2',
     ]),
@@ -116,6 +118,8 @@ const SYNTHETIC_POLICY_DEFAULTS = {
   fangraphs_roster_resource_bullpen_depth: { source_family: 'bullpen-depth', ttl: 12, max_stale: 24 },
   statmuse_starter_vs_team: { source_family: 'starter-history', ttl: 12, max_stale: 24 },
   espn_pitcher_splits: { source_family: 'pitcher-splits', ttl: 12, max_stale: 24 },
+  mlb_player_split_families: { source_family: 'player-splits', ttl: 12, max_stale: 24 },
+  mlb_sp1_starter_profile: { source_family: 'starter-profile', ttl: 12, max_stale: 24 },
   mlb_env1: { source_family: 'environment-addendum', ttl: 12, max_stale: 24 },
   mlb_rp2: { source_family: 'bullpen-addendum', ttl: 12, max_stale: 24 },
 };
@@ -253,6 +257,15 @@ function evaluateSource(policy, status, options, nowMs, laneRule) {
   if (!ACCEPTED_STATUSES.has(status.last_status)) errors.push(`Unexpected status: ${status.last_status}`);
   if (!options.allowPartial && status.last_status === 'partial') errors.push('Partial source is not allowed');
   if (status.last_status === 'partial') warnings.push(`Partial source: missing ${status.missing_item_count ?? 'unknown'} item(s)`);
+  if (!options.allowPartial && status.last_completeness_status && status.last_completeness_status !== 'complete') {
+    errors.push(`Incomplete source completeness: ${status.last_completeness_status}`);
+  }
+  if (!options.allowPartial && Number(status.missing_item_count ?? 0) > 0) {
+    errors.push(`Missing source items: ${status.missing_item_count}`);
+  }
+  if (!options.allowPartial && Number(status.unresolved_count ?? 0) > 0) {
+    errors.push(`Unresolved source rows: ${status.unresolved_count}`);
+  }
   if (stale) {
     const derivedLabel = derivedCacheUntilMs ? new Date(derivedCacheUntilMs).toISOString() : 'none';
     errors.push(`Stale or missing cache_valid_until: ${status.cache_valid_until || derivedLabel}`);
