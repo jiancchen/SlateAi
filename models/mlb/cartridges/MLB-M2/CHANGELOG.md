@@ -18,6 +18,7 @@ What changed:
 - Morning runner now regenerates RP36 reliever shadow, veto, HR, and player-prop artifacts only after final strict M2 day-file generation, then imports/grades player props.
 - Morning runner now runs the not-started side/F5/late coherence audit as a hard pre-publish gate.
 - Morning runner now captures started-game locks immediately before public MLB publish and audits those locks immediately after publish, preventing already-started game public summary/detail payloads from being rewritten during lineup/odds refreshes.
+- The default Vercel-safe MLB publish path no longer waives known public-audit failures; the morning runner's final public audit is strict.
 - MLB pick-ranking, side, veto, home-run, player-prop, clean H+R+RBI, and Mike's BOTD surfaces now require `predictionEligibility.eligible === true`; missing eligibility is no longer treated as acceptable for MLB picks.
 
 Verification:
@@ -29,7 +30,7 @@ Verification:
 - `npm run data:audit:mlb-not-started-side-coherence -- --date 2026-06-14` passes with 14 games audited, 0 hard failures, and 0 warnings.
 - `npm run data:audit:mlb-started-game-locks -- --date 2026-06-14 --mode capture --source slate` captures 14 started-game locks.
 - `npm run data:audit:mlb-started-game-locks -- --date 2026-06-14 --mode audit --source slate` passes against the captured lock snapshot.
-- `npm run data:run:mlb-morning -- --date 2026-06-14 --dry-run --skip-prior-close` confirms source/feature prep runs without early board artifact generation; final lineups/odds precede strict day-file generation; RP36/veto/HR/props regenerate after final day files; and strict audits run before publish.
+- `npm run data:run:mlb-morning -- --date 2026-06-14 --dry-run --skip-prior-close` confirms source/feature prep runs without early board artifact generation; final lineups/odds precede strict day-file generation; RP36/veto/HR/props regenerate after final day files; public audit waivers are absent from the default publish command; and strict audits run before publish.
 - `node models/mlb/cartridges/MLB-M2/lanes/sides.mjs --start-date 2026-06-14 --end-date 2026-06-14 --out /tmp/mlb-sides-eligibility-smoke.json` exports 14 side rows after strict eligibility gating.
 - `node models/mlb/cartridges/MLB-M2/lanes/veto.mjs --date 2026-06-14 --out /tmp/mlb-veto-eligibility-smoke.json` exports 14 veto rows after strict eligibility gating.
 - `node models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs --date 2026-06-14 --top 3 --scan-limit 6 --team-limit 1 --out /tmp/mlb-hr-eligibility-smoke.json --module-out /tmp/mlb-hr-eligibility-smoke.js` exports 3 smoke-test HR rows after strict eligibility gating.

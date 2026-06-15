@@ -42,7 +42,7 @@
     "data:build:mlb-rp2": "node scripts/build-mlb-relief-projections-v1.mjs",
     "data:backtest:mlb-rp2": "node scripts/backtest-mlb-relief-projections-v1.mjs",
     "data:publish:mlb-clean": "node scripts/publish-mlb-clean-slate.mjs",
-    "data:publish:mlb-clean:vercel-safe": "node scripts/publish-mlb-clean-slate.mjs --preserve-public-slates --allow-known-audit-failures",
+    "data:publish:mlb-clean:vercel-safe": "node scripts/publish-mlb-clean-slate.mjs --preserve-public-slates",
     "data:backfill:mlb-cached-predictions": "node data-migration/scripts/backfill_mlb_cached_prediction_rows.mjs",
     "data:run:mlb-morning": "node scripts/run-mlb-morning-predictions.mjs",
     "data:init": "python3 pipeline/mlb/warehouse/mlb_typed_warehouse.py init-db",

@@ -97,26 +97,10 @@ const assertNonMlbPreserved = (before = [], after = []) => {
   return { before: before.length, after: after.length, missing }
 }
 
-const knownAllowedAuditFailures = new Set([
-  'pitcher-strikeout-props-missing-draftkings-lineage',
-  'missing-bridge-chain',
-  'missing-rp36-shadow'
-])
-
 const runPublicMlbAudit = async (date, dryRun) => {
-  const step = run('Public data audit', 'npm', [
+  return run('Public data audit', 'npm', [
     'run', 'data:audit:mlb-public', '--', '--date', date
-  ], { dryRun, allowFailure: true })
-  if (dryRun || step.status !== 'allowed_failure') return step
-
-  const reportPath = path.join(reportsRoot, `audit_public_mlb_slate_${date}_local.json`)
-  const report = await readJson(reportPath, {})
-  const failures = (report.hardFailures || []).map((failure) => failure?.failure).filter(Boolean)
-  const unexpectedFailures = failures.filter((failure) => !knownAllowedAuditFailures.has(failure))
-  if (!failures.length || unexpectedFailures.length) {
-    throw new Error(`Public MLB audit has unexpected failures: ${unexpectedFailures.join(', ') || 'report missing failures'}`)
-  }
-  return { ...step, allowedKnownFailures: failures }
+  ], { dryRun })
 }
 
 const main = async () => {
