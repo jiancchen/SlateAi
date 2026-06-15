@@ -55,12 +55,12 @@ const sqlQuote = (value) => {
 }
 
 const sqlite = (sql) =>
-  execFileSync('sqlite3', ['-json', dbPath, sql], {
+  execFileSync('sqlite3', ['-json', '-cmd', '.timeout 30000', dbPath, sql], {
     encoding: 'utf8',
     maxBuffer: 1024 * 1024 * 60
   })
 
-const sqliteExec = (sql) => execFileSync('sqlite3', [dbPath, sql], { encoding: 'utf8', maxBuffer: 1024 * 1024 * 60 })
+const sqliteExec = (sql) => execFileSync('sqlite3', ['-cmd', '.timeout 30000', dbPath, sql], { encoding: 'utf8', maxBuffer: 1024 * 1024 * 60 })
 
 const parseJsonArray = (text) => {
   const trimmed = String(text || '').trim()
