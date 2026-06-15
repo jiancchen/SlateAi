@@ -8,6 +8,7 @@ import { withMlbCausalLedgerContext } from '../models/mlb/lib/causal-ledger.mjs'
 
 const root = path.resolve(import.meta.dirname, '..')
 const publishedSlatesRoot = path.join(root, 'published-data', 'slates')
+const reportsRoot = path.join(root, 'data-migration', 'reports')
 
 const argValue = (name, fallback = '') => {
   const prefix = `${name}=`
@@ -159,11 +160,20 @@ const knownAllowedAuditFailures = new Set([
 ])
 
 const runPublicMlbAudit = async (date, options = {}) => {
+  const reportPath = path.join(root, 'data-migration', 'reports', `audit_public_mlb_slate_${date}_local.json`)
   try {
     run('node', ['scripts/audit-public-mlb-slate.mjs', '--date', date])
+    const report = await readJson(reportPath, {})
+    return {
+      status: 'passed',
+      reportPath: path.relative(root, reportPath),
+      failures: (report.hardFailures || []).map((failure) => failure?.failure).filter(Boolean),
+      waiverUsed: false,
+      allowedFailures: [],
+      unexpectedFailures: []
+    }
   } catch (error) {
     if (!options.allowKnownFailures) throw error
-    const reportPath = path.join(root, 'data-migration', 'reports', `audit_public_mlb_slate_${date}_local.json`)
     const report = await readJson(reportPath, {})
     const failures = (report.hardFailures || []).map((failure) => failure?.failure).filter(Boolean)
     const unexpectedFailures = failures.filter((failure) => !knownAllowedAuditFailures.has(failure))
@@ -171,6 +181,14 @@ const runPublicMlbAudit = async (date, options = {}) => {
     console.warn(
       `[publish-mlb-clean-slate] warning: audit blocked only by allowed known failure(s): ${failures.join(', ')}`
     )
+    return {
+      status: 'waived_known_failures',
+      reportPath: path.relative(root, reportPath),
+      failures,
+      waiverUsed: true,
+      allowedFailures: failures,
+      unexpectedFailures
+    }
   }
 }
 
@@ -602,6 +620,23 @@ const publishRichMlbGames = async (date, options = {}) => {
   console.log(
     `[publish-mlb-clean-slate] published ${publishableMlbGames.length} MLB games, preserved ${existingStartedMlbGames.length} started MLB games, omitted ${omittedMlbGames.length} starter-context games, and preserved ${nonMlbGames.length} non-MLB games`
   )
+  return {
+    date,
+    publishedMlbGames: publishableMlbGames.length,
+    preservedStartedMlbGames: existingStartedMlbGames.length,
+    omittedMlbGames,
+    preservedNonMlbGames: nonMlbGames.length,
+    preserveStarted,
+    startedCutoffMinutes,
+    summaryPath: path.relative(root, summaryPath)
+  }
+}
+
+const writePublishReport = async (date, report) => {
+  await fs.mkdir(reportsRoot, { recursive: true })
+  const reportPath = path.join(reportsRoot, `publish_mlb_clean_slate_${date}.json`)
+  await writeJson(reportPath, report)
+  return reportPath
 }
 
 const main = async () => {
@@ -630,13 +665,37 @@ const main = async () => {
     run('node', ['scripts/warehouse-mlb-espn-pitcher-splits.mjs', '--date', date])
   }
 
-  await publishRichMlbGames(date, { preserveStarted, startedCutoffMinutes })
+  const publishResult = await publishRichMlbGames(date, { preserveStarted, startedCutoffMinutes })
 
   const publicExportArgs = ['run', 'data:export:public-current', '--', '--date', date]
   const publicExportOptions = preservePublicSlates ? {} : { env: { PUBLIC_SLATE_SCOPE: 'current-window' } }
   if (!preservePublicSlates) publicExportArgs.push('--current-window')
   run('npm', publicExportArgs, publicExportOptions)
-  await runPublicMlbAudit(date, { allowKnownFailures: allowKnownAuditFailures })
+  const auditResult = await runPublicMlbAudit(date, { allowKnownFailures: allowKnownAuditFailures })
+  const publishReportPath = await writePublishReport(date, {
+    run: 'publish-mlb-clean-slate',
+    date,
+    generatedAt: new Date().toISOString(),
+    options: {
+      refresh: shouldRefresh,
+      deploy,
+      skipEspn,
+      skipGenerate,
+      preservePublicSlates,
+      preserveStarted,
+      startedCutoffMinutes,
+      allowKnownAuditFailures,
+      liveBase: liveBase || null
+    },
+    publish: publishResult,
+    audit: auditResult,
+    waiverPolicy: {
+      knownAllowedAuditFailures: Array.from(knownAllowedAuditFailures),
+      waiverRequired: auditResult.waiverUsed,
+      waiverUsed: auditResult.waiverUsed
+    }
+  })
+  console.log(`[publish-mlb-clean-slate] report=${path.relative(root, publishReportPath)}`)
 
   if (deploy) {
     run('vercel', ['build', '--prod', '--yes'], {
