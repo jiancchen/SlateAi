@@ -4,11 +4,11 @@
   "sport": "mlb",
   "status": "shadow-materialized",
   "outputKind": "starter-pitcher-profile-addendum",
-  "plannedWarehouseTable": "mlb_starting_pitcher_profile_v1_daily",
+  "warehouseTable": "mlb_starting_pitcher_profile_v1_daily",
   "primaryKey": [
     "source_date",
-    "game_pk",
-    "team_name",
+    "game_id",
+    "team_role",
     "pitcher_id",
     "model_version"
   ],
@@ -182,5 +182,5 @@
     "over_tail_side_block_flag",
     "stale_or_missing_source_flag"
   ],
-  "usageRule": "MLB-SP1 is a starter or bulk-primary pitcher addendum, not a relief replacement. While design-scaffold or shadow, M2 may use its source/status plan and future deltas for diagnostics only. Once materialized and backtested, SP1 deltas should feed ML, F5 ML, totals, team totals, YRFI/NRFI, pitcher expected lines, batter production, HR lanes, and public game-story explanations. Rotowire primary/bulk pitcher is the projection pitcher; an MLB-listed opener is first-inning context unless the source role proves a true starter. BvP older than three seasons is context-only. HRForce >= 1.5 must tax fragile pitchers and lift supported batter/game run expectations; HRForce >= 1.7 should block casual unders unless starter, lineup, bullpen, park, and market context all explicitly support suppression."
+  "usageRule": "MLB-SP1 is a starter or bulk-primary pitcher addendum, not a relief replacement. In shadow-materialized mode, M2 attaches SP1 to starterProfileContext and the causal ledger for diagnostics, explanations, and audit gates; direct lane promotion still requires backtesting. Once calibrated, SP1 deltas should feed ML, F5 ML, totals, team totals, YRFI/NRFI, pitcher expected lines, batter production, HR lanes, and public game-story explanations. Rotowire primary/bulk pitcher is the projection pitcher; an MLB-listed opener is first-inning context unless the source role proves a true starter. BvP older than three seasons is context-only. HRForce >= 1.5 must tax fragile pitchers and lift supported batter/game run expectations; HRForce >= 1.7 should block casual unders unless starter, lineup, bullpen, park, and market context all explicitly support suppression."
 }

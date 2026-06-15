@@ -1,6 +1,8 @@
 # MLB-SP1 Implementation And Backtest Checklist
 
-Use this before writing the SP1 materializer or running SP1 backtests.
+Use this to audit the SP1 materializer and before running SP1 backtests.
+
+Status note, 2026-06-15: SP1 v0.1 is shadow-materialized. Unchecked items below remain implementation-hardening, backtest, and promotion work, not proof that the v0.1 table/build path is absent.
 
 SP1 should not start as a clever scoring tweak. It should start as a traceable addendum with source status, role handling, deltas, lane consumers, and backtest buckets that explain why the pitcher profile moved a game.
 

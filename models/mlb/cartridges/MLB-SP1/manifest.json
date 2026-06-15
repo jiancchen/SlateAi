@@ -8,7 +8,7 @@
     "MLB-M2"
   ],
   "createdForMigration": "2026-06-14",
-  "plannedEntrypoint": "scripts/build-mlb-starter-profile-addendum.mjs",
+  "entrypoint": "scripts/build-mlb-starter-profile-addendum.mjs",
   "outputContract": "models/mlb/cartridges/MLB-SP1/output-contract.json",
   "modelNotes": "models/mlb/cartridges/MLB-SP1/MODEL_NOTES.md",
   "implementationChecklist": "models/mlb/cartridges/MLB-SP1/IMPLEMENTATION_CHECKLIST.md",
@@ -29,6 +29,18 @@
     {
       "role": "environment-addendum",
       "path": "models/mlb/cartridges/MLB-ENV1/output-contract.json"
+    },
+    {
+      "role": "starter-profile-materializer",
+      "path": "scripts/build-mlb-starter-profile-addendum.mjs"
+    },
+    {
+      "role": "starter-profile-read-path",
+      "path": "models/mlb/lib/starter-profile-context.mjs"
+    },
+    {
+      "role": "causal-ledger-consumer",
+      "path": "models/mlb/lib/causal-ledger.mjs"
     }
   ],
   "description": "Point-in-time starter or bulk-primary pitcher profile addendum for platoon splits, day/night splits, pitch mix, weather fragility, repeat-opponent tax, opener/bulk role handling, and first-inning risk."

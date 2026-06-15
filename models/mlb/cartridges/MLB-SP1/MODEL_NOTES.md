@@ -1,19 +1,21 @@
 # MLB-SP1 Starter Pitcher Profile Addendum
 
-MLB-SP1 is the planned starter or bulk-primary pitcher profile addendum for MLB-M2.
+MLB-SP1 is the starter or bulk-primary pitcher profile addendum for MLB-M2.
 
 The point is to stop treating the starter as one flat ERA/WHIP object. The same pitcher can be strong overall and still be fragile today because of handedness, day/night split, pitch mix into the posted lineup, hot weather/HRForce, repeat-opponent familiarity, opener/bulk role, short leash, or recent command loss.
 
 ## Status
 
-- Current status: `design-scaffold`
+- Current status: `shadow-materialized`
 - Consumed by: `MLB-M2`
 - Warehouse target: `mlb_starting_pitcher_profile_v1_daily`
 - Promotion state: not active as a scoring override yet
 
-SP1 should be built shadow-first the same way ENV1 and RP2 were introduced. It may explain and audit before it is allowed to change public pick confidence.
+SP1 v0.1 is built by `npm run data:build:mlb-sp1 -- --date YYYY-MM-DD` and audited by `npm run data:audit:mlb-sp1 -- --date YYYY-MM-DD`.
 
-Before implementation or backtests begin, complete the checklist in:
+The materialized context is attached to M2 game objects as `starterProfileContext` and to the causal ledger as `sp1StarterProfile`. It explains and audits starter-collapse pressure before it is allowed to change public pick confidence directly.
+
+Before promotion or backtests begin, use the checklist in:
 
 - `models/mlb/cartridges/MLB-SP1/IMPLEMENTATION_CHECKLIST.md`
 
