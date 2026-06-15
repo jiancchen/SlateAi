@@ -2,6 +2,7 @@ import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { activeMlbAppModelId, resolveMlbAppAdapter } from '../app-model.js'
+import { withMlbCausalLedgerContext } from '../lib/causal-ledger.mjs'
 import { currentDayBoardForDate } from './queries.mjs'
 import { querySqlite } from './sqlite.mjs'
 
@@ -2114,7 +2115,7 @@ const buildDbGame = (game, context, relieverShadowByTeam = {}) => {
   }
 
   const adapter = resolveMlbAppAdapter(baseGame.metadata.modelCartridge)
-  const modeledGame = adapter.createSportsMatchModel(baseGame, oddsProvider)
+  const modeledGame = withMlbCausalLedgerContext(adapter.createSportsMatchModel(baseGame, oddsProvider))
   return {
     ...modeledGame,
     metadata: {

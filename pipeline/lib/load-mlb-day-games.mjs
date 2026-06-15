@@ -4,6 +4,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { activeMlbAppModelId, resolveMlbAppAdapter } from '../../models/mlb/app-model.js'
 import { loadMlbDayGamesFromDb } from '../../models/mlb/db/day-games.mjs'
+import { withMlbCausalLedgerContext } from '../../models/mlb/lib/causal-ledger.mjs'
 import { withMlbPredictionEligibility } from '../../models/mlb/lib/prediction-eligibility.mjs'
 import { parkContextByHomeTeam } from '../../web/src/lib/day-2026-05-13-mlb-data.js'
 
@@ -324,7 +325,10 @@ export const loadMlbDayGames = async (date) => {
             : baseId
       const game = buildGenericMlbGame(raw, { ...dependencies, uniqueId })
       const adapter = resolveMlbAppAdapter(game.metadata?.modelCartridge)
-      return withMlbPredictionEligibility(adapter.createSportsMatchModel(game, oddsProvider), { requireAddendums: true })
+      return withMlbPredictionEligibility(
+        withMlbCausalLedgerContext(adapter.createSportsMatchModel(game, oddsProvider)),
+        { requireAddendums: true }
+      )
     })
   }
 

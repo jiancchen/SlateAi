@@ -1,5 +1,28 @@
 # MLB-M2 Changelog
 
+## MLB-M2.2026-06-15.v0.6 - Causal Ledger Receipts
+
+Status: read-only observability and pipeline gate. No scoring coefficients were promoted in this entry.
+
+What changed:
+
+- Added `causalLedgerContext` to MLB games after M2 analysis is built, so each game now carries a receipt for lineup, L/R split, pitch fit, BvP/H2H, HRForce, ENV1, RP2, opener/primary, market, ML/F5/totals, and YRFI/NRFI inputs.
+- The ledger preserves the old batter-stack policy: handedness split OPS sharpens the existing batter-starter kernel, but does not replace recent form, season baseline, pitch fit, Statcast trend, or BvP/H2H context.
+- BvP/H2H is surfaced as a separate lane with `scoreImpact: 0` for undated aggregate rows, keeping old matchup samples visible without letting stale history directly score.
+- Generated-file and DB read paths both hydrate the same ledger, and public publish refreshes the ledger after first-five push context is attached.
+- Added `data:audit:mlb-causal-ledger` and wired it into the morning runner as a hard pre-publish gate.
+
+Verification:
+
+- `node --check models/mlb/lib/causal-ledger.mjs`
+- `node --check pipeline/lib/load-mlb-day-games.mjs`
+- `node --check models/mlb/db/day-games.mjs`
+- `node --check scripts/audit-mlb-causal-ledger.mjs`
+- `node --check scripts/publish-mlb-clean-slate.mjs`
+- `node --check scripts/run-mlb-morning-predictions.mjs`
+- `npm run data:audit:mlb-causal-ledger -- --date 2026-06-14` passes with 14 games and 0 hard failures.
+- `npm run data:run:mlb-morning -- --date 2026-06-14 --dry-run --skip-prior-close` confirms the causal ledger audit runs before publish.
+
 ## MLB-M2.2026-06-15.v0.5 - DB Parity And Morning Gate Cleanup
 
 Status: pipeline hardening. No scoring coefficients were promoted in this entry.

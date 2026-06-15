@@ -4,6 +4,7 @@ import fsSync from 'node:fs'
 import path from 'node:path'
 
 import { buildMlbPredictionEligibility, withMlbPredictionEligibility } from '../models/mlb/lib/prediction-eligibility.mjs'
+import { withMlbCausalLedgerContext } from '../models/mlb/lib/causal-ledger.mjs'
 
 const root = path.resolve(import.meta.dirname, '..')
 const publishedSlatesRoot = path.join(root, 'published-data', 'slates')
@@ -493,7 +494,7 @@ const publishRichMlbGames = async (date, options = {}) => {
           }
         }
       : game
-    return withMlbPredictionEligibility(withFirst5PushContext(enrichedGame), { requireAddendums: true })
+    return withMlbPredictionEligibility(withMlbCausalLedgerContext(withFirst5PushContext(enrichedGame)), { requireAddendums: true })
   })
   const omittedMlbGames = loadedMlbGames
     .filter((game) => !gameClearsStarterDependentPublicContext(game))
