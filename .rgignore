@@ -8,6 +8,14 @@ dist/
 # Local private warehouse artifacts
 data-private/raw/
 data-private/warehouse/
+data-private/predictions/
+data-private/reference/
+data-private/reports/
+data-private/tmp/
+data-private/locks/
+
+# Generated audit/run reports
+data-migration/reports/
 
 # Generated public/runtime payloads
 published-data/
@@ -20,4 +28,3 @@ web/src/lib/story-archive.generated.ts
 
 # Local editor/OS noise
 .DS_Store
-
