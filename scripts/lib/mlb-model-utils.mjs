@@ -19,7 +19,7 @@ export const sqlQuote = (value) => {
 }
 
 export const sqliteJson = (sql, dbPath = mlbDbPath) => {
-  const raw = execFileSync('sqlite3', ['-json', dbPath, sql], {
+  const raw = execFileSync('sqlite3', ['-json', '-cmd', '.timeout 30000', dbPath, sql], {
     encoding: 'utf8',
     maxBuffer: 1024 * 1024 * 120
   })
@@ -27,7 +27,7 @@ export const sqliteJson = (sql, dbPath = mlbDbPath) => {
 }
 
 export const sqliteExec = (sql, dbPath = mlbDbPath) =>
-  execFileSync('sqlite3', [dbPath, sql], {
+  execFileSync('sqlite3', ['-cmd', '.timeout 30000', dbPath, sql], {
     encoding: 'utf8',
     maxBuffer: 1024 * 1024 * 120
   })
