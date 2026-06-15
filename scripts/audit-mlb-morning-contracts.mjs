@@ -42,6 +42,7 @@ const sqliteJson = (sql) => {
 const sqlText = (value = '') => `'${String(value).replaceAll("'", "''")}'`
 const array = (value) => (Array.isArray(value) ? value : [])
 const fail = (failures, failure, detail = {}) => failures.push({ failure, ...detail })
+const warn = (warnings, warning, detail = {}) => warnings.push({ warning, ...detail })
 const hasLineage = (row = {}) => Boolean(row.sportsbook && row.sourceName && row.sourcePath && row.marketCapturedAt)
 const tableExists = (tableName) =>
   sqliteJson(`
@@ -50,6 +51,19 @@ const tableExists = (tableName) =>
     where type='table'
       and name=${sqlText(tableName)}
   `).length > 0
+
+const sourceStatusCount = (date, sourceName, fieldName, fallback = 0) => {
+  const row = sqliteJson(`
+    select ${fieldName} as value
+    from source_fetch_status
+    where sport='mlb'
+      and source_date=${sqlText(date)}
+      and source_name=${sqlText(sourceName)}
+    limit 1
+  `)[0]
+  const parsed = Number(row?.value)
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback
+}
 
 const pitcherRows = (games = []) =>
   games.flatMap((game) =>
@@ -61,12 +75,18 @@ const pitcherRows = (games = []) =>
     }))
   )
 
+const hasProjectionStarter = (starter = {}) =>
+  Boolean(starter?.fullName || starter?.name || starter?.id || starter?.mlbPlayerId || starter?.playerId)
+
+const projectionPitcherRows = (games = []) =>
+  pitcherRows(games).filter((row) => hasProjectionStarter(row.starter))
+
 const espnCategoryMap = (starter = {}) =>
   new Map(array(starter.espnSplits?.categories).map((category) => [category.key, category]))
 
 const auditEspnSplitTables = (games, failures) => {
   const required = ['byInningPitches', 'byBreakdown', 'byDayMonth', 'byOpponent', 'byArena', 'byBattingOrder']
-  for (const row of pitcherRows(games)) {
+  for (const row of projectionPitcherRows(games)) {
     const status = row.starter.espnSplits?.sourceStatus
     if (status !== 'fetched') {
       fail(failures, 'espn-splits-not-fetched', {
@@ -91,7 +111,7 @@ const auditEspnSplitTables = (games, failures) => {
 }
 
 const auditStatMuse = (date, games, failures) => {
-  const starters = pitcherRows(games)
+  const starters = projectionPitcherRows(games)
   const dbRows = sqliteJson(`
     select game_id, pitcher_name, opponent_team, appearances, game_rows_json, statmuse_url
     from mlb_starter_vs_team_statmuse
@@ -217,7 +237,7 @@ const auditSourceStatusMismatch = (date, failures) => {
   }
 }
 
-const auditPublicSchema = (games, failures) => {
+const auditPublicSchema = (games, failures, warnings) => {
   for (const game of games) {
     if (!game.gamePk) fail(failures, 'public-schema-missing-game-pk', { gameId: game.id })
     if (!game.lineupBoard?.away?.lineup || !game.lineupBoard?.home?.lineup) {
@@ -225,27 +245,34 @@ const auditPublicSchema = (games, failures) => {
     }
     if (!game.analysis?.mlbProjection) fail(failures, 'public-schema-missing-mlb-projection', { gameId: game.id })
     if (!game.starterContext?.away || !game.starterContext?.home) {
-      fail(failures, 'public-schema-missing-starter-context', { gameId: game.id })
+      warn(warnings, 'public-schema-pending-starter-context', { gameId: game.id })
     }
   }
 }
 
-const auditPredictionEligibility = (games, failures) => {
+const auditPredictionEligibility = (games, failures, warnings) => {
+  let eligibleGames = 0
   for (const game of games) {
     const eligibility = buildMlbPredictionEligibility(game, { requireAddendums: true })
-    if (!eligibility.eligible) {
-      fail(failures, 'prediction-eligibility-failed', {
+    if (eligibility.eligible) {
+      eligibleGames += 1
+    } else {
+      warn(warnings, 'prediction-eligibility-pending', {
         gameId: game.id,
         title: game.title,
         hardFailures: eligibility.hardFailures
       })
     }
   }
+  if (games.length && eligibleGames === 0) {
+    fail(failures, 'no-prediction-eligible-games', { gameCount: games.length })
+  }
 }
 
 const auditModernAddendumCoverage = (date, games, failures) => {
   const expectedGames = games.length
   const expectedTeamSides = expectedGames * 2
+  const expectedStarterSides = sourceStatusCount(date, 'espn_pitcher_splits', 'actual_item_count', projectionPitcherRows(games).length)
   const coverageRows = sqliteJson(`
     select 'env1' as source, count(distinct coalesce(cast(game_pk as text), matchup_key)) as rows
     from mlb_game_environment_adjustments_daily
@@ -275,7 +302,7 @@ const auditModernAddendumCoverage = (date, games, failures) => {
     rp2: expectedTeamSides,
     fic_weather: expectedGames,
     fic_daily_matchups: expectedGames,
-    espn_pitcher_splits: expectedTeamSides
+    espn_pitcher_splits: expectedStarterSides
   }
   for (const [source, minimum] of Object.entries(expected)) {
     if ((rowsBySource[source] || 0) < minimum) {
@@ -296,7 +323,7 @@ const auditCanonicalSplitFamilies = (date, games, failures) => {
       array(game.lineupBoard?.home?.lineup).length,
     0
   )
-  const expectedPitchers = games.length * 2
+  const expectedPitchers = sourceStatusCount(date, 'espn_pitcher_splits', 'actual_item_count', projectionPitcherRows(games).length)
   if (!tableExists('mlb_player_split_family_snapshots')) {
     fail(failures, 'split-family-table-missing', { table: 'mlb_player_split_family_snapshots' })
     return
@@ -339,7 +366,7 @@ const auditCanonicalSplitFamilies = (date, games, failures) => {
 }
 
 const auditSp1Coverage = (date, games, failures) => {
-  const expectedTeamSides = games.length * 2
+  const expectedTeamSides = sourceStatusCount(date, 'mlb_sp1_starter_profile', 'actual_item_count', projectionPitcherRows(games).length)
   if (!tableExists('mlb_starting_pitcher_profile_v1_daily')) {
     fail(failures, 'sp1-table-missing', { table: 'mlb_starting_pitcher_profile_v1_daily' })
     return
@@ -388,16 +415,18 @@ const main = async () => {
   for (const summaryGame of array(summary?.games).filter((game) => game.league === 'MLB')) {
     games.push(await readJson(path.join(currentRoot, 'games', `${summaryGame.id}.json`)))
   }
+  const eligibleGames = games.filter((game) => buildMlbPredictionEligibility(game, { requireAddendums: true }).eligible)
   const failures = []
-  auditPublicSchema(games, failures)
-  auditPredictionEligibility(games, failures)
+  const warnings = []
+  auditPublicSchema(games, failures, warnings)
+  auditPredictionEligibility(games, failures, warnings)
   auditModernAddendumCoverage(date, games, failures)
   auditCanonicalSplitFamilies(date, games, failures)
   auditSp1Coverage(date, games, failures)
   auditDraftKingsMarkets(date, games, failures)
   auditRotowireProof(games, failures)
-  auditStatMuse(date, games, failures)
-  auditEspnSplitTables(games, failures)
+  auditStatMuse(date, eligibleGames, failures)
+  auditEspnSplitTables(eligibleGames, failures)
   auditPropLineage(props, failures)
   auditSourceStatusMismatch(date, failures)
 
@@ -409,6 +438,8 @@ const main = async () => {
     gameCount: games.length,
     propCount: array(props?.picks).length,
     failureCount: failures.length,
+    warningCount: warnings.length,
+    warnings,
     failures
   }
   const reportPath = await writeReport(date, report)

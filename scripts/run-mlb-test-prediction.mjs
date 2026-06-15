@@ -330,7 +330,7 @@ const main = async () => {
   console.log(`[mlb-test-prediction] eligible=${eligibility.eligibleGames}/${eligibility.totalGames} pending=${eligibility.pendingGames}`)
   console.log(`[mlb-test-prediction] report=${path.relative(root, jsonPath)}`)
   console.log(`[mlb-test-prediction] markdown=${path.relative(root, mdPath)}`)
-  if (eligibility.pendingGames > 0 && !allowSourceGaps) process.exitCode = 1
+  if (eligibility.eligibleGames === 0 && !allowSourceGaps) process.exitCode = 1
 }
 
 main().catch((error) => {

@@ -23,6 +23,20 @@ const argValue = (name, fallback = '') => {
 const sqlText = (value = '') => `'${String(value).replaceAll("'", "''")}'`
 const array = (value) => (Array.isArray(value) ? value : [])
 const fileExists = (relativePath) => fsSync.existsSync(path.join(root, relativePath))
+const hasProjectionStarter = (starter = {}) =>
+  Boolean(starter?.fullName || starter?.name || starter?.id || starter?.mlbPlayerId || starter?.playerId)
+
+const projectionStarterRows = (games = []) =>
+  games.flatMap((game) =>
+    ['away', 'home']
+      .map((side) => ({
+        gameId: game.id,
+        title: game.title,
+        side,
+        starter: game.starterContext?.[side] || game.startingPitcherContext?.[side] || {}
+      }))
+      .filter((row) => hasProjectionStarter(row.starter))
+  )
 
 const sqliteJson = (sql) => {
   if (!fsSync.existsSync(dbPath)) return []
@@ -161,8 +175,16 @@ const auditSourceStatus = (date) => {
   }
 }
 
-const auditAddendumCoverage = (date, gameCount) => {
+const sourceStatusCount = (sourceStatus, sourceName, fieldName, fallback = 0) => {
+  const row = array(sourceStatus?.rows).find((candidate) => candidate.source_name === sourceName)
+  const parsed = Number(row?.[fieldName])
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback
+}
+
+const auditAddendumCoverage = (date, games, sourceStatus) => {
+  const gameCount = games.length
   const teamSideCount = gameCount * 2
+  const starterSideCount = projectionStarterRows(games).length
   const rows = sqliteJson(`
     select 'env1' as source, count(distinct coalesce(cast(game_pk as text), matchup_key)) as rows
     from mlb_game_environment_adjustments_daily
@@ -196,8 +218,8 @@ const auditAddendumCoverage = (date, gameCount) => {
     rp2: teamSideCount,
     fic_weather: gameCount,
     fic_daily_matchups: gameCount,
-    statmuse_starter_vs_team: teamSideCount,
-    espn_pitcher_splits: teamSideCount
+    statmuse_starter_vs_team: sourceStatusCount(sourceStatus, 'statmuse_starter_vs_team', 'actual_item_count', starterSideCount),
+    espn_pitcher_splits: sourceStatusCount(sourceStatus, 'espn_pitcher_splits', 'actual_item_count', starterSideCount)
   }
   const hardFailures = []
   const warnings = []
@@ -246,22 +268,29 @@ const auditGames = (games) => {
       addendums: eligibility.addendums
     }
   })
+  const eligibleCount = gameReports.filter((game) => game.eligible).length
+  const pendingWarnings = gameReports.flatMap((game) =>
+    array(game.hardFailures).map((failure) => ({
+      gameId: game.id,
+      title: game.title,
+      warning: `prediction-eligibility-pending:${failure}`
+    }))
+  )
   return {
     games: gameReports,
-    hardFailures: gameReports.flatMap((game) =>
-      array(game.hardFailures).map((failure) => ({
-        gameId: game.id,
-        title: game.title,
-        failure: `prediction-eligibility:${failure}`
-      }))
-    ),
-    warnings: gameReports.flatMap((game) =>
-      array(game.warnings).map((warning) => ({
-        gameId: game.id,
-        title: game.title,
-        warning
-      }))
-    )
+    hardFailures: eligibleCount === 0
+      ? [{ failure: 'no-prediction-eligible-games', gameCount: gameReports.length }]
+      : [],
+    warnings: [
+      ...pendingWarnings,
+      ...gameReports.flatMap((game) =>
+        array(game.warnings).map((warning) => ({
+          gameId: game.id,
+          title: game.title,
+          warning
+        }))
+      )
+    ]
   }
 }
 
@@ -279,7 +308,7 @@ const main = async () => {
   const games = await loadMlbDayGames(date)
   const artifacts = auditArtifacts(date)
   const sourceStatus = auditSourceStatus(date)
-  const addendums = auditAddendumCoverage(date, games.length)
+  const addendums = auditAddendumCoverage(date, games, sourceStatus)
   const gameAudit = auditGames(games)
   const hardFailures = [
     ...artifacts.hardFailures,

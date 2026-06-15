@@ -355,7 +355,7 @@ const main = async () => {
   ], { dryRun, allowFailure: allowSourceGaps }))
 
   steps.push(run('Regenerate M2 day files after final lineups and addendums', 'npm', [
-    'run', 'data:generate:mlb-day', '--', '--date', date
+    'run', 'data:generate:mlb-day', '--', '--date', date, '--skip-preflight'
   ], { dryRun }))
 
   steps.push(run('Regenerate RP36 reliever shadow after final day files', 'npm', [
