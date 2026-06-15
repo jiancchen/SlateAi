@@ -117,7 +117,7 @@ const main = () => {
   const totalRows = rows.reduce((sum, row) => sum + Number(row.rows || 0), 0)
   const hitterRows = exists
     ? query(`
-        select distinct game_id, team_role, player_id
+        select game_id, team_role, player_id, split_key, ops, source_status
         from mlb_player_split_family_snapshots
         where snapshot_date = ${sqlQuote(date)}
           and player_role = 'hitter'
@@ -125,8 +125,25 @@ const main = () => {
       `)
     : []
   const hitterRowKeys = new Set(hitterRows.map((row) => `${row.game_id}:${row.team_role}:${row.player_id}`))
+  const hitterRowsBySelectedKey = new Map(
+    hitterRows.map((row) => [`${row.game_id}:${row.team_role}:${row.player_id}:${row.split_key}`, row])
+  )
+  const selectedSplitKeyForHand = (hand = '') => {
+    if (/^l/i.test(String(hand))) return 'vs_lhp'
+    if (/^r/i.test(String(hand))) return 'vs_rhp'
+    return ''
+  }
   const missingHitterHandedness = expectedPlayers
     .filter((player) => !hitterRowKeys.has(`${player.gameId}:${player.teamRole}:${player.playerId}`))
+  const unusableSelectedHitterHandedness = expectedPlayers
+    .map((player) => ({
+      ...player,
+      selectedSplitKey: selectedSplitKeyForHand(player.opposingStarterHand),
+      selectedRow: hitterRowsBySelectedKey.get(
+        `${player.gameId}:${player.teamRole}:${player.playerId}:${selectedSplitKeyForHand(player.opposingStarterHand)}`
+      )
+    }))
+    .filter((player) => player.selectedSplitKey && (!player.selectedRow || !Number.isFinite(Number(player.selectedRow.ops))))
   const hitterPlayersWithHandedness = expectedLineupPlayers - missingHitterHandedness.length
   const pitcherListedAsHitter = expectedPlayers.filter((player) => String(player.position || '').toUpperCase() === 'P')
 
@@ -148,6 +165,9 @@ const main = () => {
   }
   if (!expectedLineupPlayers) warnings.push('lineup-board-not-found-or-empty')
   if (!expectedPitchers) warnings.push('no-fetched-espn-pitcher-splits')
+  if (unusableSelectedHitterHandedness.length) {
+    warnings.push(`selected-hitter-handedness-splits-unusable:${unusableSelectedHitterHandedness.length}`)
+  }
 
   const report = {
     audit: 'mlb-player-split-families',
@@ -167,6 +187,21 @@ const main = () => {
     },
     missing: {
       hitterHandedness: missingHitterHandedness.slice(0, 60),
+      unusableSelectedHitterHandedness: unusableSelectedHitterHandedness.slice(0, 60).map((player) => ({
+        gameId: player.gameId,
+        gameTitle: player.gameTitle,
+        teamRole: player.teamRole,
+        teamName: player.teamName,
+        playerId: player.playerId,
+        playerName: player.playerName,
+        battingOrder: player.battingOrder,
+        position: player.position,
+        bats: player.bats,
+        opposingStarter: player.opposingStarter,
+        opposingStarterHand: player.opposingStarterHand,
+        selectedSplitKey: player.selectedSplitKey,
+        sourceStatus: player.selectedRow?.source_status || 'missing-row'
+      })),
       pitcherListedAsHitter: pitcherListedAsHitter.slice(0, 60)
     },
     hardFailures: failures,
@@ -182,6 +217,9 @@ const main = () => {
   }
   for (const missing of missingHitterHandedness.slice(0, 12)) {
     console.error(`[audit-mlb-player-split-families] missing hitter split: ${missing.gameId}:${missing.teamRole}:${missing.playerName} vs ${missing.opposingStarterHand || '?'}HP ${missing.opposingStarter || ''}`.trim())
+  }
+  for (const missing of unusableSelectedHitterHandedness.slice(0, 12)) {
+    console.error(`[audit-mlb-player-split-families] unusable selected hitter split: ${missing.gameId}:${missing.teamRole}:${missing.playerName} ${missing.selectedSplitKey} vs ${missing.opposingStarterHand || '?'}HP ${missing.opposingStarter || ''}`.trim())
   }
   for (const badSlot of pitcherListedAsHitter.slice(0, 12)) {
     console.error(`[audit-mlb-player-split-families] pitcher listed in lineup: ${badSlot.gameId}:${badSlot.teamRole}:${badSlot.playerName} slot ${badSlot.battingOrder}`)

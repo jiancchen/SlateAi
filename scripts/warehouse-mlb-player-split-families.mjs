@@ -247,6 +247,32 @@ const hitterSplitRow = ({ board, teamRole, opponentTeam, player, split, splitKey
   raw: { player, split, splitKey, splitLabel, source: split.rawSource || 'lineup-board espnHitterSplits' }
 })
 
+const unavailableHitterSplit = ({ player, splits = {}, splitKey, splitLabel }) => ({
+  source: splits.source || 'ESPN player splits',
+  sourceStatus: splits.sourceStatus || 'missing-split',
+  sourceUrl: splits.sourceUrl || player.espnHitterSplit?.sourceUrl || '',
+  espnAthleteId: splits.espnAthleteId || player.espnHitterSplit?.espnAthleteId || '',
+  label: splitLabel,
+  plateAppearances: null,
+  atBats: null,
+  runs: null,
+  hits: null,
+  doubles: null,
+  triples: null,
+  homeRuns: null,
+  rbi: null,
+  walks: null,
+  strikeouts: null,
+  avg: null,
+  obp: null,
+  slg: null,
+  ops: null,
+  homeRunRate: null,
+  walkRate: null,
+  kRate: null,
+  rawSource: `lineup-board unavailable hitter ${splitKey} split`
+})
+
 const pitcherHandToHitterSplitKey = (hand = '') => {
   if (/^l/i.test(String(hand))) return { splitKey: 'vs_lhp', splitLabel: 'vs LHP' }
   if (/^r/i.test(String(hand))) return { splitKey: 'vs_rhp', splitLabel: 'vs RHP' }
@@ -276,6 +302,7 @@ const ingestHitterSplits = ({ fetchedAt }) => {
   const payload = readJson(lineupPath)
   let players = 0
   let rows = 0
+  let unavailableRows = 0
   for (const board of Object.values(payload.lineupBoardsByGameId || {})) {
     for (const teamRole of ['away', 'home']) {
       const teamBoard = board[teamRole] || {}
@@ -288,30 +315,18 @@ const ingestHitterSplits = ({ fetchedAt }) => {
           ['vs_lhp', 'vs LHP', splits.vsLeft],
           ['vs_rhp', 'vs RHP', splits.vsRight]
         ]
+        const fallback = selectedLegacyHitterSplit({ player, teamBoard })
         for (const [splitKey, splitLabel, split] of pairs) {
-          if (!split) continue
-          insertRow(hitterSplitRow({ board, teamRole, opponentTeam, player, split, splitKey, splitLabel, fetchedAt }))
+          const rowSplit = split || (fallback?.splitKey === splitKey ? fallback.split : null) || unavailableHitterSplit({ player, splits, splitKey, splitLabel })
+          insertRow(hitterSplitRow({ board, teamRole, opponentTeam, player, split: rowSplit, splitKey, splitLabel, fetchedAt }))
           insertedKeys.add(splitKey)
           rows += 1
-        }
-        const fallback = selectedLegacyHitterSplit({ player, teamBoard })
-        if (fallback && !insertedKeys.has(fallback.splitKey)) {
-          insertRow(hitterSplitRow({
-            board,
-            teamRole,
-            opponentTeam,
-            player,
-            split: fallback.split,
-            splitKey: fallback.splitKey,
-            splitLabel: fallback.splitLabel,
-            fetchedAt
-          }))
-          rows += 1
+          if (!split && fallback?.splitKey !== splitKey) unavailableRows += 1
         }
       }
     }
   }
-  return { players, rows }
+  return { players, rows, unavailableRows }
 }
 
 const pitcherFamilyKey = (categoryKey, rowLabel = '') => {

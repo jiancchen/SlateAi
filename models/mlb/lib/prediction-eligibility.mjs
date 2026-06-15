@@ -97,11 +97,30 @@ const playerHasBatterProjection = (player) =>
   (isFiniteNumber(player.metrics.matchupGrade) ||
     isFiniteNumber(player.metrics.starterMatchupKernelScore) ||
     isFiniteNumber(player.metrics.formScore))
-const playerHasHandednessSplit = (player) =>
-  isFiniteNumber(player?.espnHitterSplit?.ops) ||
-  isFiniteNumber(player?.espnHitterSplits?.vsLeft?.ops) ||
-  isFiniteNumber(player?.espnHitterSplits?.vsRight?.ops) ||
-  isFiniteNumber(player?.split?.ops)
+const normalizedPitcherHand = (value = '') => {
+  const hand = String(value || '').trim().toUpperCase()
+  if (hand.startsWith('L')) return 'L'
+  if (hand.startsWith('R')) return 'R'
+  return ''
+}
+
+const selectedHandednessSplit = (player = {}, pitcherHand = '') => {
+  const hand = normalizedPitcherHand(pitcherHand || player?.espnHitterSplit?.pitcherHand)
+  if (hand === 'L') return player?.espnHitterSplits?.vsLeft || null
+  if (hand === 'R') return player?.espnHitterSplits?.vsRight || null
+  return null
+}
+
+const selectedLegacySplitMatchesHand = (player = {}, pitcherHand = '') => {
+  const hand = normalizedPitcherHand(pitcherHand)
+  const selectedHand = normalizedPitcherHand(player?.espnHitterSplit?.pitcherHand)
+  if (hand && selectedHand && hand !== selectedHand) return false
+  return isFiniteNumber(player?.espnHitterSplit?.ops) || isFiniteNumber(player?.split?.ops)
+}
+
+const playerHasSelectedHandednessSplit = (player = {}, pitcherHand = '') =>
+  isFiniteNumber(selectedHandednessSplit(player, pitcherHand)?.ops) ||
+  selectedLegacySplitMatchesHand(player, pitcherHand)
 
 const lineupPlayerLabel = (player = {}, index = 0, side = '') => ({
   side,
@@ -121,27 +140,34 @@ const missingPlayerRows = (players = [], side = '', predicate = () => false) =>
     .filter(({ player }) => !predicate(player))
     .map(({ player, index }) => lineupPlayerLabel(player, index, side))
 
-const sideHitterContext = (players = [], side = '') => ({
-  totalHitters: players.length,
-  pitchFitHitters: players.filter(playerHasPitchFit).length,
-  batterProjectionHitters: players.filter(playerHasBatterProjection).length,
-  handednessSplitHitters: players.filter(playerHasHandednessSplit).length,
-  pitcherSlotHitters: players
-    .map((player, index) => ({ player, index }))
-    .filter(({ player }) => isPitcherLineupSlot(player))
-    .map(({ player, index }) => lineupPlayerLabel(player, index, side)),
-  missingPitchFitHitters: missingPlayerRows(players, side, playerHasPitchFit),
-  missingBatterProjectionHitters: missingPlayerRows(players, side, playerHasBatterProjection),
-  missingHandednessSplitHitters: missingPlayerRows(players, side, playerHasHandednessSplit)
-})
+const sideHitterContext = (players = [], side = '', teamBoard = {}) => {
+  const opposingStarterHand = teamBoard.opposingStarter?.hand || teamBoard.opposingStarter?.handedness || ''
+  const hasSelectedSplit = (player) => playerHasSelectedHandednessSplit(player, opposingStarterHand)
+  return {
+    totalHitters: players.length,
+    opposingStarterHand: normalizedPitcherHand(opposingStarterHand),
+    pitchFitHitters: players.filter(playerHasPitchFit).length,
+    batterProjectionHitters: players.filter(playerHasBatterProjection).length,
+    handednessSplitHitters: players.filter(hasSelectedSplit).length,
+    pitcherSlotHitters: players
+      .map((player, index) => ({ player, index }))
+      .filter(({ player }) => isPitcherLineupSlot(player))
+      .map(({ player, index }) => lineupPlayerLabel(player, index, side)),
+    missingPitchFitHitters: missingPlayerRows(players, side, playerHasPitchFit),
+    missingBatterProjectionHitters: missingPlayerRows(players, side, playerHasBatterProjection),
+    missingHandednessSplitHitters: missingPlayerRows(players, side, hasSelectedSplit)
+  }
+}
 
 const addendumContext = (game = {}) => {
-  const awayLineup = array(game.lineupBoard?.away?.lineup)
-  const homeLineup = array(game.lineupBoard?.home?.lineup)
+  const awayBoard = game.lineupBoard?.away || {}
+  const homeBoard = game.lineupBoard?.home || {}
+  const awayLineup = array(awayBoard.lineup)
+  const homeLineup = array(homeBoard.lineup)
   const players = [...awayLineup, ...homeLineup]
   const hitterContext = {
-    away: sideHitterContext(awayLineup, 'away'),
-    home: sideHitterContext(homeLineup, 'home')
+    away: sideHitterContext(awayLineup, 'away', awayBoard),
+    home: sideHitterContext(homeLineup, 'home', homeBoard)
   }
   const projection = game.analysis?.mlbProjection || {}
   const totals = projection.totals || {}
@@ -159,7 +185,7 @@ const addendumContext = (game = {}) => {
     firstInning: Boolean(projection.firstInning),
     pitchFitHitters: players.filter(playerHasPitchFit).length,
     batterProjectionHitters: players.filter(playerHasBatterProjection).length,
-    handednessSplitHitters: players.filter(playerHasHandednessSplit).length,
+    handednessSplitHitters: hitterContext.away.handednessSplitHitters + hitterContext.home.handednessSplitHitters,
     totalHitters: players.length,
     hitterContext,
     pitcherSlotHitters: [...hitterContext.away.pitcherSlotHitters, ...hitterContext.home.pitcherSlotHitters],
