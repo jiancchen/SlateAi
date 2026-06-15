@@ -555,9 +555,12 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
       })
       : null
   const sideDemotedByCoherence = Boolean(sideCoherenceGate?.demoteFullGameSide)
-  const sidePromotedByCoherence =
+  const sideSupportedByCoherence =
     !vetoPassFlag &&
     !sideDemotedByCoherence &&
+    Boolean(sideCoherenceGate?.promoteFullGameSide)
+  const sidePromotedByCoherence =
+    sideSupportedByCoherence &&
     finalTier === 'Pass' &&
     Boolean(sideCoherenceGate?.promoteFullGameSide)
   const surfacedTier = sideDemotedByCoherence ? 'Pass' : sidePromotedByCoherence ? 'Swingy' : finalTier
@@ -707,12 +710,12 @@ const buildStructuredAnalysisModel = (game, participants, hasFullMoneyline) => {
           efficientFavoritePenaltyFlags: efficientFavoriteLane?.penaltyFlags ?? [],
           efficientFavoriteBlockers: efficientFavoriteLane?.blockers ?? [],
           tierOneRiskPoints: tierOneControls?.riskPoints ?? 0,
-          tierOnePassFlag: Boolean(tierOneControls?.passFlag) && !sidePromotedByCoherence,
+          tierOnePassFlag: Boolean(tierOneControls?.passFlag) && !sideSupportedByCoherence,
           tierOneRawPassFlag: Boolean(tierOneControls?.passFlag),
           tierOneRiskFlags: tierOneControls?.riskFlags ?? [],
           sideCoherenceGate,
           sideCoherencePassFlag: sideDemotedByCoherence,
-          sideCoherencePromoteFlag: sidePromotedByCoherence,
+          sideCoherencePromoteFlag: sideSupportedByCoherence,
           favoredSignalCount,
           starterLateGap: tierOneControls?.starterLateGap ?? null,
           starterLeashGap: tierOneControls?.starterLeashGap ?? null,

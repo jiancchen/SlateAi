@@ -21,7 +21,6 @@ export function MlbDetail(props: MlbDetailProps) {
     game,
     activeDayId,
     activeKalshiMlbMarketByGame,
-    buildBullpenPulseLine,
     buildEdgeHeadline,
     buildGameFlowOverview,
     buildLineupPlayerInspectionLine,
@@ -225,14 +224,14 @@ export function MlbDetail(props: MlbDetailProps) {
     : Number(homeSummary?.bullpenPitchTypeSummary?.pressureIndex)
   const awayRecentBullpenSummary = game.bullpenChainContext?.away?.recentBullpenSummary ?? null
   const homeRecentBullpenSummary = game.bullpenChainContext?.home?.recentBullpenSummary ?? null
+  const awayReliefProjection = projection?.reliefProjection?.away ?? game.reliefProjectionContext?.away ?? null
+  const homeReliefProjection = projection?.reliefProjection?.home ?? game.reliefProjectionContext?.home ?? null
   const getBridgeSourceLabel = (context: AnyRecord | null | undefined) =>
     /RP2/i.test(String(context?.chainSource || context?.source || ''))
       ? 'RP2 bridge projection'
       : 'bridge chain'
   const awayBridgeSourceLabel = getBridgeSourceLabel(game.bullpenChainContext?.away)
   const homeBridgeSourceLabel = getBridgeSourceLabel(game.bullpenChainContext?.home)
-  const awaySeasonBullpenSummary = game.bullpenContext?.away ?? null
-  const homeSeasonBullpenSummary = game.bullpenContext?.home ?? null
   const awayRelieverShadow = game.relieverShadowContext?.away ?? null
   const homeRelieverShadow = game.relieverShadowContext?.home ?? null
   const awayStory = game.storyContext?.away?.summary
@@ -265,8 +264,21 @@ export function MlbDetail(props: MlbDetailProps) {
     recentGames: homeRecentGames,
     opponentName: awayTeam
   })
-  const awayBullpenPulse = buildBullpenPulseLine(awayRecentBullpenSummary, awaySeasonBullpenSummary)
-  const homeBullpenPulse = buildBullpenPulseLine(homeRecentBullpenSummary, homeSeasonBullpenSummary)
+  const buildAvailabilityBullpenPulse = (reliefProjection: AnyRecord | null, chainContext: AnyRecord | null | undefined) => {
+    const projectedRuns = Number(reliefProjection?.projectedReliefRunsAllowed ?? chainContext?.projectedReliefRunsAllowed)
+    const stress = Number(reliefProjection?.bridgeStressScore ?? chainContext?.bridgeStressScore)
+    const quality = Number(reliefProjection?.qualityScore ?? chainContext?.qualityScore)
+    const lead = reliefProjection?.lead?.pitcherName || chainContext?.lead?.pitcherName || chainContext?.topRelievers?.[0]?.name || ''
+    const parts = [
+      Number.isFinite(projectedRuns) ? `${formatNumber(projectedRuns, 2)} RP2 relief R` : null,
+      Number.isFinite(stress) ? `stress ${formatNumber(stress, 0)}` : null,
+      Number.isFinite(quality) ? `quality ${formatNumber(quality, 0)}` : null,
+      lead ? `lead ${lead}` : null
+    ].filter(Boolean)
+    return parts.length ? `Available bridge: ${parts.join(' / ')}` : ''
+  }
+  const awayBullpenPulse = buildAvailabilityBullpenPulse(awayReliefProjection, game.bullpenChainContext?.away)
+  const homeBullpenPulse = buildAvailabilityBullpenPulse(homeReliefProjection, game.bullpenChainContext?.home)
   const awayRecentInningHistory = game.stateContext?.recentInningHistory?.away ?? []
   const homeRecentInningHistory = game.stateContext?.recentInningHistory?.home ?? []
   const awayMatchupHistory = game.stateContext?.matchupInningHistory?.away ?? []
@@ -883,10 +895,12 @@ export function MlbDetail(props: MlbDetailProps) {
     const oppTop = numberOrNull(oppLineup?.topThirdScore)
     const pickStarterScore = numberOrNull(indicators.pickStarterScore)
     const oppStarterScore = numberOrNull(indicators.oppStarterScore)
-    const pickBullpenScore = numberOrNull(indicators.pickBullpenScore)
-    const oppBullpenScore = numberOrNull(indicators.oppBullpenScore)
     const pickReliefRuns = numberOrNull(pickRelief?.projectedReliefRunsAllowed)
     const oppReliefRuns = numberOrNull(oppRelief?.projectedReliefRunsAllowed)
+    const pickReliefStress = numberOrNull(pickRelief?.bridgeStressScore)
+    const oppReliefStress = numberOrNull(oppRelief?.bridgeStressScore)
+    const pickReliefQuality = numberOrNull(pickRelief?.qualityScore)
+    const oppReliefQuality = numberOrNull(oppRelief?.qualityScore)
     const pickWhip = numberOrNull(pickStarter?.whip)
     const oppWhip = numberOrNull(oppStarter?.whip)
     const oppStarterHistoryEra = numberOrNull(oppStarter?.statmuseVsOpponent?.era)
@@ -961,27 +975,20 @@ export function MlbDetail(props: MlbDetailProps) {
       : `The starter read is mixed enough that ${pickTeam} still need the lineup traffic and bridge shape to hold.`
 
     const counterweights = []
-    if (oppBullpenScore !== null && pickBullpenScore !== null && oppBullpenScore > pickBullpenScore + 1) {
-      counterweights.push(`season bullpen score favors ${oppTeam} ${fmt(oppBullpenScore, 1)} vs ${fmt(pickBullpenScore, 1)}`)
-    }
     if (oppReliefRuns !== null && pickReliefRuns !== null && oppReliefRuns < pickReliefRuns - 0.15) {
-      counterweights.push(`RP2 relief runs favor ${oppTeam} ${fmt(oppReliefRuns, 2)} vs ${fmt(pickReliefRuns, 2)}`)
+      counterweights.push(`RP2 projected relief runs favor ${oppTeam} ${fmt(oppReliefRuns, 2)} vs ${fmt(pickReliefRuns, 2)}`)
+    }
+    if (oppReliefStress !== null && pickReliefStress !== null && oppReliefStress < pickReliefStress - 4) {
+      counterweights.push(`RP2 bridge stress is cleaner for ${oppTeam} ${fmt(oppReliefStress, 0)} vs ${fmt(pickReliefStress, 0)}`)
+    }
+    if (oppReliefQuality !== null && pickReliefQuality !== null && oppReliefQuality > pickReliefQuality + 4) {
+      counterweights.push(`RP2 available-bullpen quality favors ${oppTeam} ${fmt(oppReliefQuality, 0)} vs ${fmt(pickReliefQuality, 0)}`)
     }
     if (Number.isFinite(oppBridge) && Number.isFinite(pickBridge) && oppBridge > pickBridge + 1) {
-      counterweights.push(`bridge chain score favors ${oppTeam} ${fmt(oppBridge, 1)} vs ${fmt(pickBridge, 1)}`)
+      counterweights.push(`available bridge-chain score favors ${oppTeam} ${fmt(oppBridge, 1)} vs ${fmt(pickBridge, 1)}`)
     }
-    const pickBridgeVsOppBullpenSplit =
-      Number.isFinite(pickBridge) &&
-      Number.isFinite(oppBridge) &&
-      Number.isFinite(oppBullpenScore) &&
-      Number.isFinite(pickBullpenScore) &&
-      pickBridge > oppBridge + 1 &&
-      oppBullpenScore > pickBullpenScore + 1
-    const bridgeVsBullpenNote = pickBridgeVsOppBullpenSplit
-      ? ` That is not a contradiction: bridge chain is today's likely available relief path, while season bullpen score is the broader full-pen quality read.`
-      : ''
     const counterweightParagraph = counterweights.length
-      ? `The counterweight: ${oppTeam} are better in some bullpen/context pockets. ${counterweights.join(', and ')}.${bridgeVsBullpenNote} That's why this is ${game.analysis?.tier || 'not a blank-check'} rather than a high-conviction play. In plain English: ${pickTeam} lean because of projected lineup traffic and ${pickMarketShape}, but ${oppTeam}'s counterweights are real reasons not to overstate it.`
+      ? `The counterweight: ${oppTeam} are better in some available-bullpen pockets. ${counterweights.join(', and ')}. That's why this is ${game.analysis?.tier || 'not a blank-check'} rather than a high-conviction play. In plain English: ${pickTeam} lean because of projected lineup traffic and ${pickMarketShape}, but ${oppTeam}'s RP2 bridge context is a real reason not to overstate it.`
       : `The counterweight: the edge is still only ${game.analysis?.modelEdgeLabel || 'modest'} with a ${game.analysis?.tier || 'measured'} tag. In plain English: ${pickTeam} lean because of projected lineup traffic and ${pickMarketShape}, but the price and game-shape noise are reasons not to overstate it.`
 
     return {
@@ -999,9 +1006,10 @@ export function MlbDetail(props: MlbDetailProps) {
     workloadLabel: string,
     advantage: boolean,
     recentBullpenSummary: AnyRecord | null,
-    seasonBullpenSummary: AnyRecord | null,
     shadowContext: AnyRecord | null,
-    sourceLabel: string
+    sourceLabel: string,
+    reliefProjection: AnyRecord | null,
+    chainContext: AnyRecord | null | undefined
   ) => (
     <article className={`bridge-chain-card-react ${advantage ? 'advantage' : ''}`}>
       <div className="bridge-chain-card-head">
@@ -1017,17 +1025,14 @@ export function MlbDetail(props: MlbDetailProps) {
             : sourceLabel}
         </span>
       </div>
-      {recentBullpenSummary && Number(recentBullpenSummary.gamesSample || 0) > 0 ? (
+      {reliefProjection || Number.isFinite(Number(chainScore)) ? (
+        <p className="react-section-copy">
+          {buildAvailabilityBullpenPulse(reliefProjection, chainContext) ||
+            `${sourceLabel}: ${Number.isFinite(chainScore) ? `${chainScore.toFixed(1)} available bridge score` : 'available bridge attached'}`}
+        </p>
+      ) : recentBullpenSummary && Number(recentBullpenSummary.gamesSample || 0) > 0 ? (
         <p className="react-section-copy">
           Last {Number(recentBullpenSummary.gamesSample || 0)} bullpen games: {formatNumber(recentBullpenSummary.era, 2)} ERA / {formatNumber(recentBullpenSummary.whip, 2)} WHIP
-          {seasonBullpenSummary && !seasonBullpenSummary.staleFeed
-            ? ` vs season ${formatNumber(seasonBullpenSummary.era, 2)} ERA / ${formatNumber(seasonBullpenSummary.whip, 2)} WHIP`
-            : ''}
-        </p>
-      ) : seasonBullpenSummary && !seasonBullpenSummary.staleFeed ? (
-        <p className="react-section-copy">
-          Season bullpen: {formatNumber(seasonBullpenSummary.era, 2)} ERA / {formatNumber(seasonBullpenSummary.whip, 2)} WHIP
-          {Number.isFinite(Number(seasonBullpenSummary.saves)) ? ` / ${Number(seasonBullpenSummary.saves)} SV` : ''}
         </p>
       ) : null}
       {shadowContext?.relievers?.length ? (
@@ -2056,9 +2061,10 @@ export function MlbDetail(props: MlbDetailProps) {
               projection.awayBullpenExhaustionLabel || 'unknown',
               projection.bridgeEdgeTeam === awayTeam,
               awayRecentBullpenSummary,
-              awaySeasonBullpenSummary,
               awayRelieverShadow,
-              awayBridgeSourceLabel
+              awayBridgeSourceLabel,
+              awayReliefProjection,
+              game.bullpenChainContext?.away
             )}
             {renderBridgeChainCard(
               homeTeam,
@@ -2067,9 +2073,10 @@ export function MlbDetail(props: MlbDetailProps) {
               projection.homeBullpenExhaustionLabel || 'unknown',
               projection.bridgeEdgeTeam === homeTeam,
               homeRecentBullpenSummary,
-              homeSeasonBullpenSummary,
               homeRelieverShadow,
-              homeBridgeSourceLabel
+              homeBridgeSourceLabel,
+              homeReliefProjection,
+              game.bullpenChainContext?.home
             )}
           </div>
         </section>

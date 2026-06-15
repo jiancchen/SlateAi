@@ -1656,7 +1656,96 @@ const matchesExpectedOfficialTeam = ({
   return candidates.some((value) => normalizePersonName(value) === expected)
 }
 
-const mapRotoLineupPlayerIds = (rotoSide = null, boxscoreSide = {}) => {
+const rotoHitterResolutionKey = (expectedOfficialTeam = '', playerName = '') => {
+  const teamKey = normalizePersonName(expectedOfficialTeam)
+  const nameKey = normalizePersonNameWithoutSuffix(playerName) || normalizePersonName(playerName)
+  return `${teamKey}:${nameKey}`
+}
+
+const syntheticPlayerRecordFromPerson = (person = {}) => ({
+  person: {
+    id: person.id,
+    fullName: person.fullName
+  },
+  position: person.primaryPosition || null,
+  parentTeamName: person.currentTeam?.name || '',
+  team: person.currentTeam || null
+})
+
+const resolveSupplementalRotoPlayer = (supplementalPlayerLookup = null, expectedOfficialTeam = '', playerName = '') => {
+  if (!supplementalPlayerLookup) return null
+  return supplementalPlayerLookup.get(rotoHitterResolutionKey(expectedOfficialTeam, playerName)) || null
+}
+
+const fetchRotoWireSupplementalPlayerResolutions = async ({ feedRecords = [], rotoWireCards = new Map() } = {}) => {
+  const candidates = new Map()
+
+  for (const record of feedRecords) {
+    const awayOfficial = deskToOfficialTeam[record.rawGame.away] || record.rawGame.away
+    const homeOfficial = deskToOfficialTeam[record.rawGame.home] || record.rawGame.home
+    const card = rotoWireCards.get(`${awayOfficial} @ ${homeOfficial}`) || null
+    const sides = [
+      {
+        expectedOfficialTeam: awayOfficial,
+        boxscoreSide: record.feed.liveData?.boxscore?.teams?.away || {},
+        rotoSide: card?.away || null
+      },
+      {
+        expectedOfficialTeam: homeOfficial,
+        boxscoreSide: record.feed.liveData?.boxscore?.teams?.home || {},
+        rotoSide: card?.home || null
+      }
+    ]
+
+    for (const side of sides) {
+      if (!side.rotoSide?.players?.length) continue
+      const rosterLookup = buildRosterLookup(side.boxscoreSide)
+      for (const player of side.rotoSide.players) {
+        const exactKey = normalizePersonName(player.name)
+        const rosterEntry = rosterLookup.get(exactKey) || rosterLookup.get(normalizePersonNameWithoutSuffix(player.name))
+        if (rosterEntry?.playerId) continue
+        const key = rotoHitterResolutionKey(side.expectedOfficialTeam, player.name)
+        if (!candidates.has(key)) {
+          candidates.set(key, {
+            key,
+            expectedOfficialTeam: side.expectedOfficialTeam,
+            name: player.name
+          })
+        }
+      }
+    }
+  }
+
+  const output = new Map()
+  for (const candidate of candidates.values()) {
+    try {
+      const response = await fetchJson(
+        `https://statsapi.mlb.com/api/v1/people/search?names=${encodeURIComponent(candidate.name)}&hydrate=currentTeam`
+      )
+      const expectedTeamKey = normalizePersonName(candidate.expectedOfficialTeam)
+      const person = (response.people || []).find((entry) => {
+        if (!entry?.id || !entry?.fullName) return false
+        const teamMatches = normalizePersonName(entry.currentTeam?.name || '') === expectedTeamKey
+        const nameMatches =
+          normalizePersonNameWithoutSuffix(entry.fullName) === normalizePersonNameWithoutSuffix(candidate.name) ||
+          normalizePersonName(entry.fullName) === normalizePersonName(candidate.name)
+        return teamMatches && nameMatches
+      })
+      if (!person) continue
+      output.set(candidate.key, {
+        playerId: Number(person.id),
+        playerRecord: syntheticPlayerRecordFromPerson(person),
+        source: 'rotowire-statsapi-name-resolution'
+      })
+    } catch (error) {
+      console.warn(`Unable to resolve RotoWire hitter ${candidate.name} (${candidate.expectedOfficialTeam}):`, error.message)
+    }
+  }
+
+  return output
+}
+
+const mapRotoLineupPlayerIds = (rotoSide = null, boxscoreSide = {}, supplementalPlayerLookup = null, expectedOfficialTeam = '') => {
   if (!rotoSide?.players?.length) return []
 
   const rosterLookup = buildRosterLookup(boxscoreSide)
@@ -1664,7 +1753,11 @@ const mapRotoLineupPlayerIds = (rotoSide = null, boxscoreSide = {}) => {
   return rotoSide.players
     .map((player) => {
       const exactKey = normalizePersonName(player.name)
-      return rosterLookup.get(exactKey)?.playerId || rosterLookup.get(normalizePersonNameWithoutSuffix(player.name))?.playerId
+      return (
+        rosterLookup.get(exactKey)?.playerId ||
+        rosterLookup.get(normalizePersonNameWithoutSuffix(player.name))?.playerId ||
+        resolveSupplementalRotoPlayer(supplementalPlayerLookup, expectedOfficialTeam, player.name)?.playerId
+      )
     })
     .filter(Boolean)
 }
@@ -1859,6 +1952,112 @@ const buildPitchTypeFit = ({ pitchTypeStatsByType = null, opposingPitcherMix = n
       vsLeague: pitch.vsLeague,
       qualityScore: pitch.qualityScore
     }))
+  }
+}
+
+const buildSparsePitchTypeFitFallback = (opposingPitcherMix = null) => {
+  const topPitches = opposingPitcherMix?.topPitches || []
+  return {
+    fitScore: 50,
+    fitGrade: 0,
+    leagueGrade: 0,
+    vsLeague: {
+      xwobaDelta: 0,
+      xslgDelta: 0,
+      hardHitDelta: 0
+    },
+    coveragePct: 0,
+    sourceStatus: 'fallback-sparse-batter-pitch-fit',
+    fallback: true,
+    summary: topPitches.length
+      ? `${topPitches
+          .slice(0, 3)
+          .map((pitch) => `${pitch.pitchName} ${Number(pitch.pitchUsage || 0).toFixed(0)}%`)
+          .join(' / ')} | sparse batter pitch-fit fallback`
+      : 'sparse batter pitch-fit fallback',
+    topPitches: topPitches.slice(0, 3).map((pitch) => ({
+      pitchType: pitch.pitchType,
+      pitchName: pitch.pitchName,
+      pitchUsage: Number(pitch.pitchUsage || 0),
+      fitGrade: 0,
+      leagueGrade: 0,
+      batterFitScore: 50,
+      batterXba: null,
+      batterXslg: null,
+      batterEstWoba: null,
+      batterHardHit: null,
+      leagueAverage: null,
+      vsLeague: {
+        xwobaDelta: 0,
+        xslgDelta: 0,
+        hardHitDelta: 0
+      },
+      qualityScore: pitch.qualityScore
+    }))
+  }
+}
+
+const buildSparseHandednessSplitFallback = ({ seasonStats = null, careerProfile = null, opposingPitcherHand = '' } = {}) => {
+  const careerOps = Number(careerProfile?.careerOps)
+  const careerAvg = Number(careerProfile?.careerAvg)
+  const careerSlg = Number(careerProfile?.careerSlg)
+  const careerHrPerPa = Number(careerProfile?.careerHrPerPa)
+  const careerKRate = Number(careerProfile?.careerKRate)
+  const careerBbRate = Number(careerProfile?.careerBbRate)
+  const ops = Number.isFinite(seasonStats?.ops)
+    ? seasonStats.ops
+    : Number.isFinite(careerOps)
+      ? careerOps
+      : 0.72
+  const avg = Number.isFinite(seasonStats?.avg)
+    ? seasonStats.avg
+    : Number.isFinite(careerAvg)
+      ? careerAvg
+      : 0.245
+  const slg = Number.isFinite(seasonStats?.slg)
+    ? seasonStats.slg
+    : Number.isFinite(careerSlg)
+      ? careerSlg
+      : 0.39
+  const obp = Math.max(0.24, ops - slg)
+
+  return {
+    sourceStatus: 'fallback-sparse-handedness-split',
+    fallback: true,
+    pitcherHand: opposingPitcherHand || '',
+    gamesPlayed: 0,
+    hits: 0,
+    singles: 0,
+    doubles: 0,
+    triples: 0,
+    homeRuns: 0,
+    baseOnBalls: 0,
+    strikeOuts: 0,
+    totalBases: 0,
+    atBats: 0,
+    plateAppearances: 0,
+    avg,
+    obp,
+    slg,
+    ops,
+    hitRate: Number.isFinite(seasonStats?.hitRate) ? seasonStats.hitRate : avg,
+    singlesRate: Number.isFinite(seasonStats?.singlesRate) ? seasonStats.singlesRate : avg * 0.72,
+    hrRate: Number.isFinite(seasonStats?.hrRate)
+      ? seasonStats.hrRate
+      : Number.isFinite(careerHrPerPa)
+        ? careerHrPerPa
+        : 0.03,
+    bbRate: Number.isFinite(seasonStats?.bbRate)
+      ? seasonStats.bbRate
+      : Number.isFinite(careerBbRate)
+        ? careerBbRate
+        : 0.08,
+    kRate: Number.isFinite(seasonStats?.kRate)
+      ? seasonStats.kRate
+      : Number.isFinite(careerKRate)
+        ? careerKRate
+        : 0.22,
+    totalBasesRate: Number.isFinite(seasonStats?.totalBasesRate) ? seasonStats.totalBasesRate : slg
   }
 }
 
@@ -2223,7 +2422,7 @@ const buildPlayerLineupEntry = ({
   lineupPlayer,
   seasonStats,
   recentStats,
-  splitStats,
+  splitStats: rawSplitStats,
   espnHitterSplits = null,
   pitchTypeStatsByType,
   opposingPitcher,
@@ -2231,6 +2430,13 @@ const buildPlayerLineupEntry = ({
   opponentContext = null,
   careerProfile = null
 }) => {
+  const splitStats =
+    rawSplitStats ||
+    buildSparseHandednessSplitFallback({
+      seasonStats,
+      careerProfile,
+      opposingPitcherHand: opposingPitcher?.handedness
+    })
   const seasonOps = Number.isFinite(seasonStats?.ops) ? seasonStats.ops : 0.72
   const recentOps =
     Number.isFinite(recentStats?.ops) && Number(recentStats?.plateAppearances || 0) >= 6
@@ -2426,10 +2632,11 @@ const buildPlayerLineupEntry = ({
     splitKRate,
     recentDelta
   })
-  const pitchTypeFit = buildPitchTypeFit({
-    pitchTypeStatsByType,
-    opposingPitcherMix: opposingPitcher?.pitchMix
-  })
+  const pitchTypeFit =
+    buildPitchTypeFit({
+      pitchTypeStatsByType,
+      opposingPitcherMix: opposingPitcher?.pitchMix
+    }) || buildSparsePitchTypeFitFallback(opposingPitcher?.pitchMix)
   const matchupKernel = buildBatterStarterMatchupKernel({
     lineupPlayer,
     seasonStats,
@@ -2506,6 +2713,7 @@ const buildPlayerLineupEntry = ({
     buildSeasonLine(seasonStats),
     buildRecentLine(recentStats),
     buildSplitLine(splitStats, opposingPitcher?.handedness),
+    splitStats?.fallback ? 'selected handedness split uses sparse-player neutral fallback' : '',
     espnHitterSplit && Number.isFinite(espnSplitOps)
       ? `ESPN split vs ${opposingPitcher?.handedness || '?'}HP ${formatKernelRate(espnSplitOps)} OPS over ${espnHitterSplit.atBats ?? espnSplitSample} AB`
       : '',
@@ -2594,7 +2802,9 @@ const buildPlayerLineupEntry = ({
           hrRate: roundToHundredths((splitStats.hrRate || 0) * 100) / 100,
           walkRate: roundToHundredths((splitStats.bbRate || 0) * 100) / 100,
           kRate: roundToHundredths((splitStats.kRate || 0) * 100) / 100,
-          totalBasesRate: roundToHundredths((splitStats.totalBasesRate || 0) * 100) / 100
+          totalBasesRate: roundToHundredths((splitStats.totalBasesRate || 0) * 100) / 100,
+          sourceStatus: splitStats.sourceStatus || '',
+          fallback: Boolean(splitStats.fallback)
         }
       : null,
     espnHitterSplit: espnHitterSplit
@@ -3137,7 +3347,8 @@ const extractSupplementalLineupPlayers = ({
   boxscoreSide = {},
   playerStatMaps = {},
   opposingPitcher = null,
-  expectedOfficialTeam = ''
+  expectedOfficialTeam = '',
+  supplementalPlayerLookup = null
 }) => {
   if (!rotoSide?.players?.length) return []
 
@@ -3146,7 +3357,10 @@ const extractSupplementalLineupPlayers = ({
   return rotoSide.players
     .map((player) => {
       const exactKey = normalizePersonName(player.name)
-      const rosterEntry = rosterLookup.get(exactKey) || rosterLookup.get(normalizePersonNameWithoutSuffix(player.name))
+      const rosterEntry =
+        rosterLookup.get(exactKey) ||
+        rosterLookup.get(normalizePersonNameWithoutSuffix(player.name)) ||
+        resolveSupplementalRotoPlayer(supplementalPlayerLookup, expectedOfficialTeam, player.name)
       if (!rosterEntry?.playerId) return null
 
       const playerId = rosterEntry.playerId
@@ -3276,6 +3490,10 @@ const main = async () => {
     fetchRotoWireBvpRows({ date: options.date, type: 'hotbatter' }),
     fetchRotoWireBvpRows({ date: options.date, type: 'coldbatter' })
   ])
+  const supplementalRotoPlayerLookup = await fetchRotoWireSupplementalPlayerResolutions({
+    feedRecords,
+    rotoWireCards
+  })
 
   const allPlayerIds = [
     ...new Set(
@@ -3284,11 +3502,15 @@ const main = async () => {
         ...(record.feed.liveData?.boxscore?.teams?.home?.battingOrder || []),
         ...mapRotoLineupPlayerIds(
           rotoWireCards.get(`${deskToOfficialTeam[record.rawGame.away] || record.rawGame.away} @ ${deskToOfficialTeam[record.rawGame.home] || record.rawGame.home}`)?.away,
-          record.feed.liveData?.boxscore?.teams?.away || {}
+          record.feed.liveData?.boxscore?.teams?.away || {},
+          supplementalRotoPlayerLookup,
+          deskToOfficialTeam[record.rawGame.away] || record.rawGame.away
         ),
         ...mapRotoLineupPlayerIds(
           rotoWireCards.get(`${deskToOfficialTeam[record.rawGame.away] || record.rawGame.away} @ ${deskToOfficialTeam[record.rawGame.home] || record.rawGame.home}`)?.home,
-          record.feed.liveData?.boxscore?.teams?.home || {}
+          record.feed.liveData?.boxscore?.teams?.home || {},
+          supplementalRotoPlayerLookup,
+          deskToOfficialTeam[record.rawGame.home] || record.rawGame.home
         )
       ])
     )
@@ -3406,14 +3628,16 @@ const main = async () => {
       boxscoreSide: awayBoxscore,
       playerStatMaps,
       opposingPitcher: awayPitcher,
-      expectedOfficialTeam: awayOfficial
+      expectedOfficialTeam: awayOfficial,
+      supplementalPlayerLookup: supplementalRotoPlayerLookup
     })
     const homeSupplementalLineup = extractSupplementalLineupPlayers({
       rotoSide: rotoWireCard?.home,
       boxscoreSide: homeBoxscore,
       playerStatMaps,
       opposingPitcher: homePitcher,
-      expectedOfficialTeam: homeOfficial
+      expectedOfficialTeam: homeOfficial,
+      supplementalPlayerLookup: supplementalRotoPlayerLookup
     })
     const awaySelection = choosePreferredLineup({
       officialLineup: awayOfficialLineup,
