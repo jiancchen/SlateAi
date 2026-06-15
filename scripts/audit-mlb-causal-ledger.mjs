@@ -58,6 +58,11 @@ const summarizeSide = (ledger = {}, side = 'away') => {
     bvpContextDelta: deltas.bvpH2h?.contextDelta ?? null,
     hrForceDelta: deltas.hrForce?.delta ?? null,
     maxHrForce: deltas.hrForce?.maxHrForce ?? null,
+    sp1PitcherName: deltas.sp1StarterProfile?.pitcherName ?? null,
+    sp1CollapseRiskScore: deltas.sp1StarterProfile?.collapseRiskScore ?? null,
+    sp1OffenseRunDelta: deltas.sp1StarterProfile?.offenseRunDelta ?? null,
+    sp1WeightedPitcherAllowedOps: deltas.sp1StarterProfile?.splitSummary?.weightedPitcherAllowedOps ?? null,
+    sp1WeightedHitterSplitOps: deltas.sp1StarterProfile?.splitSummary?.weightedHitterSplitOps ?? null,
     rp2SideHoldDelta: deltas.rp2?.sideHoldDelta ?? null,
     openerPrimaryDelta: deltas.openerPrimary?.delta ?? null
   }
@@ -85,6 +90,19 @@ const hardFailuresForGame = ({ game, ledger, eligibility }) => {
   if (ficRowCount > 0 && !ledger?.coverage?.hasBvpH2hLedger) failures.push('fic-bvp-present-but-not-attached-to-ledger')
   if (game.environmentAdjustmentContext && !ledger?.coverage?.hasEnv1Ledger) failures.push('env1-present-but-not-attached-to-ledger')
   if (game.reliefProjectionContext?.away && game.reliefProjectionContext?.home && !ledger?.coverage?.hasRp2Ledger) failures.push('rp2-present-but-not-attached-to-ledger')
+  if (!game.starterProfileContext?.away || !game.starterProfileContext?.home) failures.push('sp1-context-missing')
+  if (game.starterProfileContext?.away && game.starterProfileContext?.home && !ledger?.coverage?.hasSp1Ledger) failures.push('sp1-present-but-not-attached-to-ledger')
+  for (const side of ['away', 'home']) {
+    const sp1 = ledger?.teamDeltas?.[side]?.sp1StarterProfile || null
+    if (!sp1 || sp1.sourceStatus === 'missing') {
+      failures.push(`sp1-${side}-offense-delta-missing`)
+      continue
+    }
+    if (!Number.isFinite(num(sp1.collapseRiskScore, null))) failures.push(`sp1-${side}-collapse-score-missing`)
+    if (!Number.isFinite(num(sp1.offenseRunDelta, null))) failures.push(`sp1-${side}-run-delta-missing`)
+    if (!Number.isFinite(num(sp1.splitSummary?.weightedPitcherAllowedOps, null))) failures.push(`sp1-${side}-pitcher-split-ops-missing`)
+    if (!Number.isFinite(num(sp1.splitSummary?.weightedHitterSplitOps, null))) failures.push(`sp1-${side}-hitter-split-ops-missing`)
+  }
   if (game.analysis?.mlbProjection && !ledger?.coverage?.hasProjectionLedger) failures.push('projection-present-but-not-attached-to-ledger')
   if (maxHrForce >= 1.7) {
     const awaySignal = ledger?.teamDeltas?.away?.hrForce?.totalYrfiSignal

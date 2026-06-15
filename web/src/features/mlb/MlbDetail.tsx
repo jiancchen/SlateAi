@@ -1133,6 +1133,95 @@ export function MlbDetail(props: MlbDetailProps) {
       {label} {typeof value === 'string' ? value : formatLedgerSigned(value, digits)}
     </span>
   )
+  const sp1ToneClass = (value: unknown) => {
+    const numeric = Number(value)
+    if (!Number.isFinite(numeric)) return 'neutral'
+    if (numeric >= 64) return 'positive'
+    if (numeric >= 58) return 'warning'
+    if (numeric <= 44) return 'danger'
+    return 'neutral'
+  }
+  const renderSp1StarterProfile = (sp1: AnyRecord | null | undefined, side: 'away' | 'home') => {
+    if (!sp1 || sp1.sourceStatus === 'missing') return null
+    const split = sp1.splitSummary || {}
+    const weather = sp1.weatherProfile || {}
+    const dayNight = sp1.dayNightProfile || {}
+    const flags = Array.isArray(sp1.flags) ? sp1.flags.slice(0, 4) : []
+    const reasons = Array.isArray(sp1.reasons) ? sp1.reasons.slice(0, 2) : []
+    return (
+      <div className={`sp1-ledger-card ${sp1ToneClass(sp1.collapseRiskScore)}`}>
+        <div className="sp1-ledger-head">
+          <div>
+            <small>Starter collapse</small>
+            <strong>{sp1.pitcherName || 'Opposing starter'}</strong>
+          </div>
+          <span>{formatLedgerNumber(sp1.collapseRiskScore, 0)}/100</span>
+        </div>
+        <div className="react-pill-row">
+          {renderLedgerPill('Runs', sp1.offenseRunDelta, sp1.offenseRunDelta, 2)}
+          {renderLedgerPill('Hits', sp1.offenseHitDelta, sp1.offenseHitDelta, 2)}
+          {renderLedgerPill('HR', sp1.offenseHrDelta, sp1.offenseHrDelta, 2)}
+          {renderLedgerPill('YRFI', sp1.yrfiProbabilityDelta, sp1.yrfiProbabilityDelta, 2)}
+        </div>
+        <div className="sp1-ledger-metrics">
+          <span>
+            <small>Pitcher allowed OPS</small>
+            <strong>{formatLedgerNumber(split.weightedPitcherAllowedOps, 3)}</strong>
+          </span>
+          <span>
+            <small>Lineup split OPS</small>
+            <strong>{formatLedgerNumber(split.weightedHitterSplitOps, 3)}</strong>
+          </span>
+          <span>
+            <small>Top-third split OPS</small>
+            <strong>{formatLedgerNumber(split.topThirdHitterSplitOps, 3)}</strong>
+          </span>
+          <span>
+            <small>HRForce</small>
+            <strong>{formatLedgerNumber(weather.hrForce, 2)}</strong>
+          </span>
+        </div>
+        <div className="sp1-ledger-metrics sp1-ledger-metrics--compact">
+          <span>
+            <small>L/R count</small>
+            <strong>{split.lineupCounts?.left ?? 0}L / {split.lineupCounts?.right ?? 0}R</strong>
+          </span>
+          <span>
+            <small>Day/night</small>
+            <strong>{dayNight.selectedKey || 'N/A'} {formatLedgerNumber(dayNight.fragilityScore, 0)}</strong>
+          </span>
+          <span>
+            <small>Pitch fit</small>
+            <strong>{formatLedgerNumber(sp1.pitchMixFitScore, 0)}</strong>
+          </span>
+          <span>
+            <small>First inning</small>
+            <strong>{formatLedgerNumber(sp1.firstInningRiskScore, 0)}</strong>
+          </span>
+        </div>
+        {split.strongSplitBats?.length || split.weakSplitBats?.length ? (
+          <div className="sp1-ledger-bats">
+            {split.strongSplitBats?.length ? (
+              <small>Split up: {split.strongSplitBats.slice(0, 3).map((bat: AnyRecord) => `${bat.name} ${formatLedgerNumber(bat.ops, 3)}`).join(', ')}</small>
+            ) : null}
+            {split.weakSplitBats?.length ? (
+              <small>Split risk: {split.weakSplitBats.slice(0, 2).map((bat: AnyRecord) => `${bat.name} ${formatLedgerNumber(bat.ops, 3)}`).join(', ')}</small>
+            ) : null}
+          </div>
+        ) : null}
+        {flags.length ? (
+          <div className="react-pill-row">
+            {flags.map((flag: string) => (
+              <span key={`${side}-sp1-${flag}`} className="game-highlight-chip neutral">
+                {flag.replace(/_/g, ' ')}
+              </span>
+            ))}
+          </div>
+        ) : null}
+        {reasons.length ? <p className="react-section-copy">{reasons.join(' ')}</p> : null}
+      </div>
+    )
+  }
   const renderLedgerPlayer = (player: AnyRecord, prefix: string) => (
     <div key={`${prefix}-${player.name}-${player.slot || 'x'}`} className="causal-ledger-player">
       <div>
@@ -1169,6 +1258,7 @@ export function MlbDetail(props: MlbDetailProps) {
           {renderLedgerPill('Pitch fit', deltas.pitchFit?.delta)}
           {renderLedgerPill('BvP', deltas.bvpH2h?.contextDelta)}
           {renderLedgerPill('HRF', deltas.hrForce?.delta)}
+          {renderLedgerPill('SP1 runs', deltas.sp1StarterProfile?.offenseRunDelta, deltas.sp1StarterProfile?.offenseRunDelta, 2)}
           {renderLedgerPill('RP2 hold', deltas.rp2?.sideHoldDelta)}
           {renderLedgerPill('Late run', deltas.rp2?.offenseLateScoringDelta)}
           {Number(deltas.openerPrimary?.delta) !== 0 ? renderLedgerPill('Opener', deltas.openerPrimary?.delta) : null}
@@ -1190,7 +1280,16 @@ export function MlbDetail(props: MlbDetailProps) {
             <small>Opp RP2 runs</small>
             <strong>{formatLedgerNumber(deltas.rp2?.opposingBullpen?.projectedReliefRunsAllowed, 2)}</strong>
           </span>
+          <span>
+            <small>SP1 collapse</small>
+            <strong>{formatLedgerNumber(deltas.sp1StarterProfile?.collapseRiskScore, 0)}</strong>
+          </span>
+          <span>
+            <small>SP1 L/R OPS</small>
+            <strong>{formatLedgerNumber(deltas.sp1StarterProfile?.splitSummary?.weightedPitcherAllowedOps, 3)}</strong>
+          </span>
         </div>
+        {renderSp1StarterProfile(deltas.sp1StarterProfile, side)}
         {deltas.bvpH2h?.summary ? <p className="react-section-copy">{deltas.bvpH2h.summary}</p> : null}
         <div className="causal-ledger-player-grid">
           <div>
@@ -1280,6 +1379,7 @@ export function MlbDetail(props: MlbDetailProps) {
               <span>{causalLedger.scoringPolicy.bvpH2h}</span>
               <span>{causalLedger.scoringPolicy.hrForce}</span>
               <span>{causalLedger.scoringPolicy.rp2}</span>
+              {causalLedger.scoringPolicy.sp1 ? <span>{causalLedger.scoringPolicy.sp1}</span> : null}
             </div>
           ) : null}
         </section>
