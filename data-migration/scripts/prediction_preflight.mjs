@@ -64,10 +64,15 @@ const SPORT_LANE_SOURCES = {
       'mlb_game_feed',
       'mlb_lineups',
       'mlb_probables',
-      'mlb_pitcher_features',
-      'mlb_bullpen_features',
-      'mlb_team_features',
-      'mlb_environment',
+      'mlb_odds',
+      'fantasyinfocentral_weather',
+      'fantasyinfocentral_daily_matchups',
+      'fantasyinfocentral_umpire_factors',
+      'fangraphs_roster_resource_bullpen_depth',
+      'statmuse_starter_vs_team',
+      'espn_pitcher_splits',
+      'mlb_env1',
+      'mlb_rp2',
     ]),
     value: new Set([
       'mlb_schedule',
@@ -102,6 +107,17 @@ const SPORT_LANE_SOURCES = {
       'mlb_game_shape',
     ]),
   },
+};
+
+const SYNTHETIC_POLICY_DEFAULTS = {
+  fantasyinfocentral_weather: { source_family: 'weather-run-environment', ttl: 12, max_stale: 24 },
+  fantasyinfocentral_daily_matchups: { source_family: 'batter-vs-pitcher', ttl: 12, max_stale: 24 },
+  fantasyinfocentral_umpire_factors: { source_family: 'umpire-factor-profile', ttl: 12, max_stale: 24 },
+  fangraphs_roster_resource_bullpen_depth: { source_family: 'bullpen-depth', ttl: 12, max_stale: 24 },
+  statmuse_starter_vs_team: { source_family: 'starter-history', ttl: 12, max_stale: 24 },
+  espn_pitcher_splits: { source_family: 'pitcher-splits', ttl: 12, max_stale: 24 },
+  mlb_env1: { source_family: 'environment-addendum', ttl: 12, max_stale: 24 },
+  mlb_rp2: { source_family: 'bullpen-addendum', ttl: 12, max_stale: 24 },
 };
 
 function parseArgs(argv) {
@@ -154,6 +170,21 @@ function parseTime(value) {
   const normalized = String(value).includes('T') ? String(value) : `${String(value).replace(' ', 'T')}Z`;
   const parsed = Date.parse(normalized);
   return Number.isNaN(parsed) ? null : parsed;
+}
+
+function syntheticPolicy(sourceName, status = null, sport = 'mlb') {
+  const defaults = SYNTHETIC_POLICY_DEFAULTS[sourceName] || {};
+  return {
+    source_fetch_policy_id: `${sport}:${sourceName}:synthetic`,
+    sport,
+    source_name: sourceName,
+    source_family: status?.source_family || defaults.source_family || 'unknown',
+    run_rule: 'fetch_if_stale',
+    default_ttl_hours: defaults.ttl ?? 12,
+    max_stale_hours: defaults.max_stale ?? 24,
+    required_for_prediction: 1,
+    notes: 'Synthetic lane policy until source_fetch_policies is backfilled.',
+  };
 }
 
 function loadPolicies(dbPath, sport) {
@@ -210,12 +241,22 @@ function evaluateSource(policy, status, options, nowMs, laneRule) {
   }
 
   const cacheUntilMs = parseTime(status.cache_valid_until);
-  const stale = !cacheUntilMs || cacheUntilMs <= nowMs;
+  const lastSuccessMs = parseTime(status.last_success_at || status.updated_at || status.last_attempt_at);
+  const maxStaleHours = Number(policy.max_stale_hours ?? policy.default_ttl_hours);
+  const derivedCacheUntilMs =
+    !cacheUntilMs && Number.isFinite(maxStaleHours) && lastSuccessMs
+      ? lastSuccessMs + maxStaleHours * 60 * 60 * 1000
+      : null;
+  const effectiveCacheUntilMs = cacheUntilMs || derivedCacheUntilMs;
+  const stale = !effectiveCacheUntilMs || effectiveCacheUntilMs <= nowMs;
   if (BLOCKING_STATUSES.has(status.last_status)) errors.push(`Blocking status: ${status.last_status}`);
   if (!ACCEPTED_STATUSES.has(status.last_status)) errors.push(`Unexpected status: ${status.last_status}`);
   if (!options.allowPartial && status.last_status === 'partial') errors.push('Partial source is not allowed');
   if (status.last_status === 'partial') warnings.push(`Partial source: missing ${status.missing_item_count ?? 'unknown'} item(s)`);
-  if (stale) errors.push(`Stale or missing cache_valid_until: ${status.cache_valid_until || 'none'}`);
+  if (stale) {
+    const derivedLabel = derivedCacheUntilMs ? new Date(derivedCacheUntilMs).toISOString() : 'none';
+    errors.push(`Stale or missing cache_valid_until: ${status.cache_valid_until || derivedLabel}`);
+  }
   if (Number(status.actual_item_count ?? 0) <= 0) errors.push('No actual source items recorded');
   if (Number(status.unresolved_count ?? 0) > 0) warnings.push(`Unresolved source rows: ${status.unresolved_count}`);
 
@@ -255,7 +296,13 @@ function buildPreflight(options) {
   const laneRule = LANE_RULES[options.lane];
   const policies = loadPolicies(target.absoluteDbPath, options.sport);
   const statuses = loadStatuses(target.absoluteDbPath, options.sport, options.date);
-  const selectedPolicies = policies.filter((policy) => isPolicyInLane(policy, laneRule, options));
+  const sportLaneSources = SPORT_LANE_SOURCES[options.sport]?.[options.lane];
+  const policiesByName = new Map(policies.map((policy) => [policy.source_name, policy]));
+  const selectedPolicies = sportLaneSources
+    ? [...sportLaneSources].map((sourceName) =>
+        policiesByName.get(sourceName) || syntheticPolicy(sourceName, statuses.get(sourceName), options.sport),
+      )
+    : policies.filter((policy) => isPolicyInLane(policy, laneRule, options));
   const nowMs = Date.now();
   const sourceResults = selectedPolicies.map((policy) => evaluateSource(policy, statuses.get(policy.source_name), options, nowMs, laneRule));
   const laneErrors = evaluateRequireOneOf(sourceResults, laneRule);
