@@ -68,7 +68,7 @@ const sqlQuote = (value) => {
   return `'${String(value).replace(/'/g, "''")}'`
 }
 
-const sqliteExec = (sql) => execFileSync('sqlite3', [dbPath, sql], { encoding: 'utf8', maxBuffer: 1024 * 1024 * 80 })
+const sqliteExec = (sql) => execFileSync('sqlite3', ['-cmd', '.timeout 30000', dbPath, sql], { encoding: 'utf8', maxBuffer: 1024 * 1024 * 80 })
 
 const addDays = (isoDate, days) => {
   const [year, month, day] = isoDate.split('-').map(Number)
