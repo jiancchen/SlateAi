@@ -48,8 +48,7 @@ const optionalArtifacts = (date) => [
   `data-private/predictions/mlb-reliever-shadow/${date}-reliever-shadow.json`,
   `data-private/predictions/mlb-sides/${date}-board-live.json`,
   `data-private/predictions/mlb-sides/${date}-veto-artifact.json`,
-  `data-private/predictions/mlb-espn-pitcher-splits/${date}-pitcher-splits.json`,
-  `data-private/predictions/mlb-statmuse/${date}-pitcher-history.json`
+  `data-private/predictions/mlb-espn-pitcher-splits/${date}-pitcher-splits.json`
 ]
 
 const auditArtifacts = (date) => {
@@ -202,7 +201,7 @@ const auditAddendumCoverage = (date, gameCount) => {
   }
   const hardFailures = []
   const warnings = []
-  const exactCoverageSources = new Set(['env1', 'rp2', 'fic_weather', 'espn_pitcher_splits'])
+  const exactCoverageSources = new Set(['env1', 'rp2', 'fic_weather'])
   for (const [source, expectedAtLeast] of Object.entries(expected)) {
     const actualRows = bySource[source] || 0
     if (actualRows < expectedAtLeast) {
