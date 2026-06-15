@@ -4,6 +4,7 @@ import fsSync from 'node:fs'
 import path from 'node:path'
 
 import { buildMlbPredictionEligibility } from '../models/mlb/lib/prediction-eligibility.mjs'
+import { loadMlbDayGames } from '../pipeline/lib/load-mlb-day-games.mjs'
 import { modelVersion as env1ModelVersion } from './build-mlb-environment-adjustments.mjs'
 import { modelVersion as rp2ModelVersion } from './build-mlb-relief-projections-v1.mjs'
 
@@ -64,6 +65,22 @@ const sourceStatusCount = (date, sourceName, fieldName, fallback = 0) => {
   const parsed = Number(row?.value)
   return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback
 }
+
+const loadGeneratedSlateGames = async (date) => {
+  const previousDisableDb = process.env.MLB_DAY_GAMES_DISABLE_DB
+  process.env.MLB_DAY_GAMES_DISABLE_DB = '1'
+  try {
+    return await loadMlbDayGames(date)
+  } finally {
+    if (previousDisableDb === undefined) delete process.env.MLB_DAY_GAMES_DISABLE_DB
+    else process.env.MLB_DAY_GAMES_DISABLE_DB = previousDisableDb
+  }
+}
+
+const loadPropsForDate = async (date) =>
+  (await readJson(path.join(root, 'data-private', 'predictions', 'mlb-player-props', `${date}-player-props.json`), null)) ||
+  (await readJson(path.join(root, 'web', 'public', 'data', 'slates', date, 'props.json'), null)) ||
+  (await readJson(path.join(currentRoot, 'props.json'), { picks: [] }))
 
 const pitcherRows = (games = []) =>
   games.flatMap((game) =>
@@ -409,12 +426,8 @@ const writeReport = async (date, report) => {
 const main = async () => {
   const date = argValue('--date')
   if (!date) throw new Error('Usage: node scripts/audit-mlb-morning-contracts.mjs --date YYYY-MM-DD')
-  const summary = await readJson(path.join(currentRoot, 'summary.json'))
-  const props = await readJson(path.join(currentRoot, 'props.json'), { picks: [] })
-  const games = []
-  for (const summaryGame of array(summary?.games).filter((game) => game.league === 'MLB')) {
-    games.push(await readJson(path.join(currentRoot, 'games', `${summaryGame.id}.json`)))
-  }
+  const games = await loadGeneratedSlateGames(date)
+  const props = await loadPropsForDate(date)
   const eligibleGames = games.filter((game) => buildMlbPredictionEligibility(game, { requireAddendums: true }).eligible)
   const failures = []
   const warnings = []
@@ -424,7 +437,7 @@ const main = async () => {
   auditCanonicalSplitFamilies(date, games, failures)
   auditSp1Coverage(date, games, failures)
   auditDraftKingsMarkets(date, games, failures)
-  auditRotowireProof(games, failures)
+  auditRotowireProof(eligibleGames, failures)
   auditStatMuse(date, eligibleGames, failures)
   auditEspnSplitTables(eligibleGames, failures)
   auditPropLineage(props, failures)
