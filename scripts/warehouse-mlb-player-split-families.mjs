@@ -30,12 +30,12 @@ const sqlQuote = (value) => {
   return `'${String(value).replace(/'/g, "''")}'`
 }
 const sqlite = (sql) =>
-  execFileSync('sqlite3', ['-json', dbPath, sql], {
+  execFileSync('sqlite3', ['-cmd', '.timeout 10000', '-json', dbPath, sql], {
     encoding: 'utf8',
     maxBuffer: 1024 * 1024 * 80
   })
 const sqliteExec = (sql) =>
-  execFileSync('sqlite3', [dbPath, sql], {
+  execFileSync('sqlite3', ['-cmd', '.timeout 10000', dbPath, sql], {
     encoding: 'utf8',
     maxBuffer: 1024 * 1024 * 80
   })
@@ -239,13 +239,37 @@ const hitterSplitRow = ({ board, teamRole, opponentTeam, player, split, splitKey
   onBasePercentage: num(split.obp),
   sluggingPercentage: num(split.slg),
   ops: num(split.ops),
-  homeRunRate: num(split.homeRunRate),
+  homeRunRate: num(split.homeRunRate ?? split.hrRate),
   walkRate: num(split.walkRate),
   strikeoutRate: num(split.kRate),
   sourceUrl: split.sourceUrl || player.espnHitterSplits?.sourceUrl || '',
   fetchedAt,
-  raw: { player, split, splitKey, splitLabel, source: 'lineup-board espnHitterSplits' }
+  raw: { player, split, splitKey, splitLabel, source: split.rawSource || 'lineup-board espnHitterSplits' }
 })
+
+const pitcherHandToHitterSplitKey = (hand = '') => {
+  if (/^l/i.test(String(hand))) return { splitKey: 'vs_lhp', splitLabel: 'vs LHP' }
+  if (/^r/i.test(String(hand))) return { splitKey: 'vs_rhp', splitLabel: 'vs RHP' }
+  return { splitKey: '', splitLabel: '' }
+}
+
+const selectedLegacyHitterSplit = ({ player, teamBoard }) => {
+  const selected = player.espnHitterSplit || player.split || null
+  if (!selected) return null
+  const pitcherHand = selected.pitcherHand || teamBoard.opposingStarter?.hand || ''
+  const { splitKey, splitLabel } = pitcherHandToHitterSplitKey(pitcherHand)
+  if (!splitKey) return null
+  return {
+    splitKey,
+    splitLabel,
+    split: {
+      ...selected,
+      source: selected.source || 'legacy lineup selected split',
+      sourceStatus: selected.sourceStatus || 'legacy_selected',
+      rawSource: selected.rawSource || 'lineup-board selected hitter split'
+    }
+  }
+}
 
 const ingestHitterSplits = ({ fetchedAt }) => {
   if (!fs.existsSync(lineupPath)) throw new Error(`Lineup board not found: ${lineupPath}`)
@@ -259,6 +283,7 @@ const ingestHitterSplits = ({ fetchedAt }) => {
       for (const player of teamBoard.lineup || []) {
         players += 1
         const splits = player.espnHitterSplits || {}
+        const insertedKeys = new Set()
         const pairs = [
           ['vs_lhp', 'vs LHP', splits.vsLeft],
           ['vs_rhp', 'vs RHP', splits.vsRight]
@@ -266,6 +291,21 @@ const ingestHitterSplits = ({ fetchedAt }) => {
         for (const [splitKey, splitLabel, split] of pairs) {
           if (!split) continue
           insertRow(hitterSplitRow({ board, teamRole, opponentTeam, player, split, splitKey, splitLabel, fetchedAt }))
+          insertedKeys.add(splitKey)
+          rows += 1
+        }
+        const fallback = selectedLegacyHitterSplit({ player, teamBoard })
+        if (fallback && !insertedKeys.has(fallback.splitKey)) {
+          insertRow(hitterSplitRow({
+            board,
+            teamRole,
+            opponentTeam,
+            player,
+            split: fallback.split,
+            splitKey: fallback.splitKey,
+            splitLabel: fallback.splitLabel,
+            fetchedAt
+          }))
           rows += 1
         }
       }

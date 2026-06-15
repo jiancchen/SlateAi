@@ -294,6 +294,25 @@ const compactRow = (row) => ({
   flags: Array.isArray(row.flags) ? row.flags.slice(0, 4) : []
 })
 
+const compactMissingActualRow = (row) => ({
+  date: row.source_date,
+  gameId: row.game_id,
+  gamePk: row.game_pk,
+  teamRole: row.team_role,
+  team: row.team_name,
+  opponent: row.opponent_name,
+  projectedPitcher: row.pitcher_name,
+  projectedPitcherId: row.mlb_player_id || row.pitcher_id || null,
+  projectedRole: row.pitcher_role || '',
+  sourceStatus: row.source_status || '',
+  flags: Array.isArray(row.flags) ? row.flags.slice(0, 4) : []
+})
+
+const missingActualPitchers = enrichedRows
+  .filter((row) => !row.actual_pitcher_id && !row.actual_pitcher_name)
+  .slice(0, 20)
+  .map(compactMissingActualRow)
+
 const highRiskSurvivals = matchedRows
   .filter((row) => num(row.collapse_risk_score, 0) >= 64 && row.starterSurvived)
   .sort((a, b) => num(b.collapse_risk_score, 0) - num(a.collapse_risk_score, 0))
@@ -349,6 +368,7 @@ const report = {
     byHrForce: bucketSummary('hrForceBucket')
   },
   misses: {
+    missingActualPitchers,
     highRiskSurvivals,
     lowRiskCollapses,
     runDeltaMisses
@@ -399,6 +419,7 @@ const markdown = [
   `- High-risk survivals: ${highRiskSurvivals.length}`,
   `- Low-risk collapses: ${lowRiskCollapses.length}`,
   `- Run-delta misses: ${runDeltaMisses.length}`,
+  `- Missing actual pitcher matches: ${missingActualPitchers.length}`,
   '',
   'Promotion read: shadow only. Use a larger settled window before lane promotion.',
   ''

@@ -19,6 +19,12 @@ Added the first daily SP1 materializer and audit gate.
 
 First one-day read on June 14 matched all 28 starter/profile rows. HR delta was the only promising directional signal on that slate at 15/21. Collapse risk was 4/8, runs delta was 6/16, and hits delta was 6/19, so this version remains shadow/context. It does not directly override ML, F5, totals, YRFI/NRFI, props, or HR picks until the SP1 deltas are backtested across a larger settled window and calibrated by lane. Use the calibration runner for that settled-window pass so split-family inputs, SP1 profiles, audits, and backtest reports cannot drift apart.
 
+Follow-up calibration hardening:
+
+- Canonical split-family warehousing now falls back to the older lineup-board selected hitter split when full `espnHitterSplits.vsLeft/vsRight` rows are absent. This preserves historical SP1 backtests without inventing neutral player data.
+- Canonical split-family audit now checks distinct lineup-player coverage instead of only row totals, names missing hitter split rows, and hard-fails pitcher slots inside posted batting orders.
+- Diagnostic June 12-14 run was intentionally flagged dirty: June 12 has three missing hitter split rows, June 13 has a pitcher listed in the Guardians lineup, and June 14 has one missing hitter split row. The diagnostic SP1 read was 104 rows / 94 actual matches, with HR delta 46/71, hits delta 33/60, runs delta 20/39, and collapse risk 12/24. Keep SP1 shadow-only.
+
 ## MLB-SP1.2026-06-14.checklist
 
 Status: pre-implementation checklist.

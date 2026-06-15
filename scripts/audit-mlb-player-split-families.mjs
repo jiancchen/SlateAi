@@ -35,15 +35,33 @@ const query = (sql) => JSON.parse(sqlite(sql))
 
 const readJson = (filePath) => JSON.parse(fs.readFileSync(filePath, 'utf8'))
 
-const countLineupPlayers = () => {
-  if (!fs.existsSync(lineupPath)) return 0
+const lineupPlayers = () => {
+  if (!fs.existsSync(lineupPath)) return []
   const payload = readJson(lineupPath)
-  let count = 0
+  const players = []
   for (const board of Object.values(payload.lineupBoardsByGameId || {})) {
-    count += (board.away?.lineup || []).length
-    count += (board.home?.lineup || []).length
+    for (const teamRole of ['away', 'home']) {
+      const teamBoard = board[teamRole] || {}
+      for (const player of teamBoard.lineup || []) {
+        players.push({
+          gameId: board.gameId,
+          gameTitle: board.title || '',
+          teamRole,
+          teamName: teamBoard.teamName || '',
+          playerId: String(player.playerId || ''),
+          playerName: player.name || '',
+          battingOrder: player.slot ?? null,
+          position: player.position || '',
+          bats: player.bats || '',
+          opposingStarter: teamBoard.opposingStarter?.name || '',
+          opposingStarterHand: teamBoard.opposingStarter?.hand || '',
+          hasSelectedSplit: Boolean(player.espnHitterSplit || player.split),
+          hasFullEspnSplits: Boolean(player.espnHitterSplits?.vsLeft || player.espnHitterSplits?.vsRight)
+        })
+      }
+    }
   }
-  return count
+  return players
 }
 
 const tableExists = () => {
@@ -60,7 +78,8 @@ const main = () => {
   fs.mkdirSync(reportsRoot, { recursive: true })
   const failures = []
   const warnings = []
-  const expectedLineupPlayers = countLineupPlayers()
+  const expectedPlayers = lineupPlayers()
+  const expectedLineupPlayers = expectedPlayers.length
   const exists = tableExists()
   if (!exists) {
     failures.push('missing-player-split-family-table')
@@ -96,10 +115,27 @@ const main = () => {
   const pitcherDayNightRows = countFor('pitcher', 'day_night')
   const pitcherHomeAwayRows = countFor('pitcher', 'home_away')
   const totalRows = rows.reduce((sum, row) => sum + Number(row.rows || 0), 0)
+  const hitterRows = exists
+    ? query(`
+        select distinct game_id, team_role, player_id
+        from mlb_player_split_family_snapshots
+        where snapshot_date = ${sqlQuote(date)}
+          and player_role = 'hitter'
+          and split_family = 'handedness'
+      `)
+    : []
+  const hitterRowKeys = new Set(hitterRows.map((row) => `${row.game_id}:${row.team_role}:${row.player_id}`))
+  const missingHitterHandedness = expectedPlayers
+    .filter((player) => !hitterRowKeys.has(`${player.gameId}:${player.teamRole}:${player.playerId}`))
+  const hitterPlayersWithHandedness = expectedLineupPlayers - missingHitterHandedness.length
+  const pitcherListedAsHitter = expectedPlayers.filter((player) => String(player.position || '').toUpperCase() === 'P')
 
   if (!totalRows) failures.push('missing-player-split-family-rows')
-  if (expectedLineupPlayers && hitterHandednessRows < expectedLineupPlayers) {
-    failures.push(`hitter-handedness-coverage-low:${hitterHandednessRows}/${expectedLineupPlayers}`)
+  if (expectedLineupPlayers && missingHitterHandedness.length) {
+    failures.push(`hitter-handedness-player-coverage-low:${hitterPlayersWithHandedness}/${expectedLineupPlayers}`)
+  }
+  if (pitcherListedAsHitter.length) {
+    failures.push(`lineup-position-pitcher-slots:${pitcherListedAsHitter.slice(0, 8).map((player) => `${player.gameId}:${player.teamRole}:${player.playerName}`).join(',')}`)
   }
   if (expectedPitchers && pitcherHandednessRows < expectedPitchers * 2) {
     failures.push(`pitcher-handedness-coverage-low:${pitcherHandednessRows}/${expectedPitchers * 2}`)
@@ -123,10 +159,15 @@ const main = () => {
     counts: {
       totalRows,
       hitterHandednessRows,
+      hitterPlayersWithHandedness,
       pitcherHandednessRows,
       pitcherDayNightRows,
       pitcherHomeAwayRows,
       byFamily: rows
+    },
+    missing: {
+      hitterHandedness: missingHitterHandedness.slice(0, 60),
+      pitcherListedAsHitter: pitcherListedAsHitter.slice(0, 60)
     },
     hardFailures: failures,
     warnings,
@@ -138,6 +179,12 @@ const main = () => {
   console.log(`[audit-mlb-player-split-families] report=${path.relative(rootDir, reportPath)}`)
   for (const failure of failures.slice(0, 20)) {
     console.error(`[audit-mlb-player-split-families] ${failure}`)
+  }
+  for (const missing of missingHitterHandedness.slice(0, 12)) {
+    console.error(`[audit-mlb-player-split-families] missing hitter split: ${missing.gameId}:${missing.teamRole}:${missing.playerName} vs ${missing.opposingStarterHand || '?'}HP ${missing.opposingStarter || ''}`.trim())
+  }
+  for (const badSlot of pitcherListedAsHitter.slice(0, 12)) {
+    console.error(`[audit-mlb-player-split-families] pitcher listed in lineup: ${badSlot.gameId}:${badSlot.teamRole}:${badSlot.playerName} slot ${badSlot.battingOrder}`)
   }
   if (failures.length) process.exit(1)
 }

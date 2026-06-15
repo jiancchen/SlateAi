@@ -19,6 +19,8 @@ The materialized context is attached to M2 game objects as `starterProfileContex
 
 First one-day shadow backtest, June 14: 28/28 starter/profile rows matched to actual pitcher appearances. HR delta direction was 15/21, but collapse risk was 4/8, runs delta was 6/16, and hits delta was 6/19. Treat that as a promotion block, not a verdict. SP1 needs a larger settled window and lane-specific calibration before it can move confidence or picks directly.
 
+Diagnostic June 12-14 calibration, run with source failures allowed: 104 SP1 rows, 94 actual pitcher matches, HR delta 46/71, hits delta 33/60, runs delta 20/39, collapse risk 12/24. The sample is not clean enough for promotion because the split-family audit identified real lineup/source defects: missing hitter split rows on June 12 and June 14, plus a pitcher incorrectly listed in the June 13 Guardians batting order. Use this as a debugging read, not a promotion sample.
+
 Before promotion or backtests begin, use the checklist in:
 
 - `models/mlb/cartridges/MLB-SP1/IMPLEMENTATION_CHECKLIST.md`
@@ -99,3 +101,4 @@ Current promotion read:
 - Keep SP1 shadow-only until at least a multi-slate settled sample is available.
 - Promote HR-related deltas first only if the larger sample preserves the June 14 HR signal.
 - Do not promote collapse risk, run delta, or hit delta until low-risk collapse misses and high-risk survival misses are explained by role, leash, weather persistence, and lineup context.
+- Do not use a calibration window as promotion evidence if the split-family audit has missing hitter rows, pitcher lineup slots, or unmatched actual pitcher appearances.
