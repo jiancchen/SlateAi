@@ -13,6 +13,8 @@ The point is to stop treating the starter as one flat ERA/WHIP object. The same 
 
 SP1 v0.1 is built by `npm run data:build:mlb-sp1 -- --date YYYY-MM-DD`, audited by `npm run data:audit:mlb-sp1 -- --date YYYY-MM-DD`, and shadow-backtested by `npm run data:backtest:mlb-sp1 -- --date YYYY-MM-DD`.
 
+For repeatable calibration, run `npm run data:run:mlb-sp1-shadow-calibration -- --date YYYY-MM-DD` or `npm run data:run:mlb-sp1-shadow-calibration -- --start-date YYYY-MM-DD --end-date YYYY-MM-DD`. That runner warehouses canonical split families, audits them, builds SP1, audits SP1, then runs the SP1 backtest and writes a single calibration report. This is the preferred backtest path.
+
 The materialized context is attached to M2 game objects as `starterProfileContext` and to the causal ledger as `sp1StarterProfile`. It explains and audits starter-collapse pressure before it is allowed to change public pick confidence directly.
 
 First one-day shadow backtest, June 14: 28/28 starter/profile rows matched to actual pitcher appearances. HR delta direction was 15/21, but collapse risk was 4/8, runs delta was 6/16, and hits delta was 6/19. Treat that as a promotion block, not a verdict. SP1 needs a larger settled window and lane-specific calibration before it can move confidence or picks directly.
@@ -86,6 +88,11 @@ Run SP1 shadow over settled slates before promotion:
 - High-HRForce games where the board promoted unders.
 
 Promotion requires a bucketed improvement without damaging the low-HRForce/starter-duel bucket that is already useful.
+
+Preferred command:
+
+- Single date: `npm run data:run:mlb-sp1-shadow-calibration -- --date YYYY-MM-DD`
+- Range: `npm run data:run:mlb-sp1-shadow-calibration -- --start-date YYYY-MM-DD --end-date YYYY-MM-DD`
 
 Current promotion read:
 

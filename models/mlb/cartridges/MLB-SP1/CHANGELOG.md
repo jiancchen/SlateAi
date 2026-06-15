@@ -10,13 +10,14 @@ Added the first daily SP1 materializer and audit gate.
 - New build script: `npm run data:build:mlb-sp1 -- --date YYYY-MM-DD`.
 - New audit script: `npm run data:audit:mlb-sp1 -- --date YYYY-MM-DD`.
 - New shadow backtest script: `npm run data:backtest:mlb-sp1 -- --date YYYY-MM-DD`.
+- New calibration runner: `npm run data:run:mlb-sp1-shadow-calibration -- --date YYYY-MM-DD`, which chains canonical split-family warehousing/audit, SP1 build/audit, and SP1 shadow backtest.
 - Morning runner now builds and audits SP1 immediately after canonical split-family warehousing.
 - SP1 now reads `mlb_player_split_family_snapshots` in both directions: pitcher allowed L/R splits versus the posted lineup handedness, and hitter L/R splits versus the projection pitcher's hand.
 - Profile scores include collapse risk, handedness fragility, day/night fragility, home/away fragility, weather/HRForce fragility, pitch-fit pressure, repeat-opponent tax, recent form, leash, command, first-inning risk, and shadow deltas for runs/hits/HR/walks/K/outs/YRFI.
 - M2 game objects now receive `starterProfileContext` from the DB read path and generated-file loader boundary.
 - Causal ledger now surfaces SP1 as `sp1StarterProfile`, using the opposing starter as the offense-side pressure signal.
 
-First one-day read on June 14 matched all 28 starter/profile rows. HR delta was the only promising directional signal on that slate at 15/21. Collapse risk was 4/8, runs delta was 6/16, and hits delta was 6/19, so this version remains shadow/context. It does not directly override ML, F5, totals, YRFI/NRFI, props, or HR picks until the SP1 deltas are backtested across a larger settled window and calibrated by lane.
+First one-day read on June 14 matched all 28 starter/profile rows. HR delta was the only promising directional signal on that slate at 15/21. Collapse risk was 4/8, runs delta was 6/16, and hits delta was 6/19, so this version remains shadow/context. It does not directly override ML, F5, totals, YRFI/NRFI, props, or HR picks until the SP1 deltas are backtested across a larger settled window and calibrated by lane. Use the calibration runner for that settled-window pass so split-family inputs, SP1 profiles, audits, and backtest reports cannot drift apart.
 
 ## MLB-SP1.2026-06-14.checklist
 

@@ -47,6 +47,7 @@
     "data:backtest:mlb-rp2": "node scripts/backtest-mlb-relief-projections-v1.mjs",
     "data:build:mlb-sp1": "node scripts/build-mlb-starter-profile-addendum.mjs",
     "data:backtest:mlb-sp1": "node scripts/backtest-mlb-sp1.mjs",
+    "data:run:mlb-sp1-shadow-calibration": "node scripts/run-mlb-sp1-shadow-calibration.mjs",
     "data:publish:mlb-clean": "node scripts/publish-mlb-clean-slate.mjs",
     "data:publish:mlb-clean:vercel-safe": "node scripts/publish-mlb-clean-slate.mjs --preserve-public-slates",
     "data:backfill:mlb-cached-predictions": "node data-migration/scripts/backfill_mlb_cached_prediction_rows.mjs",
