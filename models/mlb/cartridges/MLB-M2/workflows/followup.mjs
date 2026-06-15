@@ -115,20 +115,13 @@ const main = () => {
   }
 
   runPythonWarehouse('grade-prop-picks', ['--date', options.date, '--model-name', options.propModelName])
-  runMlbCartridge('lane:veto', ['--date', options.date])
-  runMlbCartridge('lane:sides', [
-    '--start-date',
-    options.date,
-    '--end-date',
-    options.date,
-    '--out',
-    sidePredictionPath,
-    '--model-name',
-    options.sideModelName
-  ])
-  runPythonSideBacktest('import', ['--file', sidePredictionPath])
-  runPythonSideBacktest('grade', ['--model-name', options.sideModelName])
-  runMlbCartridge('lane:history-journal')
+  if (fs.existsSync(sidePredictionPath)) {
+    runPythonSideBacktest('import', ['--file', sidePredictionPath])
+    runPythonSideBacktest('grade', ['--model-name', options.sideModelName])
+  } else {
+    console.warn(`Skipping side import/grading for ${options.date}; missing file: ${sidePredictionPath}`)
+  }
+  runMlbCartridge('lane:history-journal', ['--skip-preflight'])
   runPythonWarehouse('derive-story-labels', ['--through-date', options.date])
   const postmortemPaths = buildPostmortemPaths(options.date)
   execFileSync(

@@ -19,6 +19,7 @@ What changed:
 - Morning runner now runs the not-started side/F5/late coherence audit as a hard pre-publish gate.
 - Morning runner now captures started-game locks immediately before public MLB publish and audits those locks immediately after publish, preventing already-started game public summary/detail payloads from being rewritten during lineup/odds refreshes.
 - The default Vercel-safe MLB publish path no longer waives known public-audit failures; the morning runner's final public audit is strict.
+- M2 closeout no longer regenerates side/veto prediction lanes during result grading; it imports/grades existing side artifacts when present and runs history journal without prediction preflight.
 - MLB pick-ranking, side, veto, home-run, player-prop, clean H+R+RBI, and Mike's BOTD surfaces now require `predictionEligibility.eligible === true`; missing eligibility is no longer treated as acceptable for MLB picks.
 
 Verification:
@@ -34,6 +35,7 @@ Verification:
 - `node models/mlb/cartridges/MLB-M2/lanes/sides.mjs --start-date 2026-06-14 --end-date 2026-06-14 --out /tmp/mlb-sides-eligibility-smoke.json` exports 14 side rows after strict eligibility gating.
 - `node models/mlb/cartridges/MLB-M2/lanes/veto.mjs --date 2026-06-14 --out /tmp/mlb-veto-eligibility-smoke.json` exports 14 veto rows after strict eligibility gating.
 - `node models/mlb/cartridges/MLB-M2/lanes/home-runs.mjs --date 2026-06-14 --top 3 --scan-limit 6 --team-limit 1 --out /tmp/mlb-hr-eligibility-smoke.json --module-out /tmp/mlb-hr-eligibility-smoke.js` exports 3 smoke-test HR rows after strict eligibility gating.
+- `node --check models/mlb/cartridges/MLB-M2/workflows/followup.mjs` passes after removing closeout-time side/veto regeneration.
 - `npm --prefix web run build` passes.
 
 ## MLB-M2.2026-06-15.v0.4 - Prediction Contract Cleanup
