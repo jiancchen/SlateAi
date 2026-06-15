@@ -3,6 +3,8 @@ import fs from 'node:fs/promises'
 import fsSync from 'node:fs'
 import path from 'node:path'
 
+import { buildMlbPredictionEligibility, withMlbPredictionEligibility } from '../models/mlb/lib/prediction-eligibility.mjs'
+
 const root = path.resolve(import.meta.dirname, '..')
 const publishedSlatesRoot = path.join(root, 'published-data', 'slates')
 
@@ -252,41 +254,11 @@ const oddsPairFromSelections = (selections = []) => {
   }
 }
 
-const starterClearsPublicContext = (starter = null) => {
-  if (!starter) return false
-  if (starter.usageContext?.status === 'starter-tbd') return false
-  if (!starter.fullName && !Number.isFinite(Number(starter.id))) return false
-  return true
-}
-
 const array = (value) => (Array.isArray(value) ? value : [])
-const isFiniteNumber = (value) => Number.isFinite(Number(value))
-const playerHasPitchFit = (player) => String(player?.pitchType?.summary || '').trim().length > 0
-const starterSplitStatus = (starter) => {
-  const status = starter?.espnSplits?.sourceStatus
-  if (status === 'fetched' || status === 'missing-espn-athlete') return status
-  return ''
-}
 
 const starterDependentPublicContextFailures = (game = null) => {
-  const awayLineup = array(game?.lineupBoard?.away?.lineup)
-  const homeLineup = array(game?.lineupBoard?.home?.lineup)
-  const players = [...awayLineup, ...homeLineup]
-  const failures = []
-
-  if (!starterClearsPublicContext(game?.starterContext?.away) || !starterClearsPublicContext(game?.starterContext?.home)) {
-    failures.push('starter-incomplete')
-  }
-  if (awayLineup.length < 9 || homeLineup.length < 9) failures.push('lineup-below-9-per-side')
-  if (players.filter(playerHasPitchFit).length < 16) failures.push('missing-pitch-fit')
-  if (![game?.starterContext?.away, game?.starterContext?.home].every((starter) => starterSplitStatus(starter))) {
-    failures.push('missing-espn-pitcher-splits')
-  }
-  if (!game?.parkContext?.venueName) failures.push('missing-park-context')
-  if (!isFiniteNumber(game?.analysis?.mlbProjection?.totals?.derivedFirst5TotalLine)) failures.push('missing-first-five-context')
-  if (!game?.analysis?.mlbProjection?.firstInning) failures.push('missing-first-inning-context')
-
-  return failures
+  const eligibility = game?.predictionEligibility || buildMlbPredictionEligibility(game, { requireAddendums: true })
+  return array(eligibility.hardFailures)
 }
 
 const gameClearsStarterDependentPublicContext = (game = null) =>
@@ -521,7 +493,7 @@ const publishRichMlbGames = async (date, options = {}) => {
           }
         }
       : game
-    return withFirst5PushContext(enrichedGame)
+    return withMlbPredictionEligibility(withFirst5PushContext(enrichedGame), { requireAddendums: true })
   })
   const omittedMlbGames = loadedMlbGames
     .filter((game) => !gameClearsStarterDependentPublicContext(game))

@@ -4,6 +4,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 
 import { activeMlbAppModelId, resolveMlbAppAdapter } from '../../models/mlb/app-model.js'
 import { loadMlbDayGamesFromDb } from '../../models/mlb/db/day-games.mjs'
+import { withMlbPredictionEligibility } from '../../models/mlb/lib/prediction-eligibility.mjs'
 import { parkContextByHomeTeam } from '../../web/src/lib/day-2026-05-13-mlb-data.js'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -255,7 +256,7 @@ export const loadMlbDayGames = async (date) => {
   if (process.env.MLB_DAY_GAMES_DISABLE_DB !== '1') {
     try {
       const dbGames = await loadMlbDayGamesFromDb(date)
-      if (dbGames.length) return dbGames
+      if (dbGames.length) return dbGames.map((game) => withMlbPredictionEligibility(game))
     } catch (error) {
       if (process.env.MLB_DAY_GAMES_STRICT_DB === '1') {
         throw error
@@ -300,7 +301,7 @@ export const loadMlbDayGames = async (date) => {
             : baseId
       const game = buildGenericMlbGame(raw, { ...dependencies, uniqueId })
       const adapter = resolveMlbAppAdapter(game.metadata?.modelCartridge)
-      return adapter.createSportsMatchModel(game, oddsProvider)
+      return withMlbPredictionEligibility(adapter.createSportsMatchModel(game, oddsProvider))
     })
   }
 
@@ -308,7 +309,7 @@ export const loadMlbDayGames = async (date) => {
   const wrappedDay = await importMaybeFresh(dayWrapperPath)
   if (wrappedDay?.games) {
     const wrappedMlbGames = wrappedDay.games.filter((game) => game.league === 'MLB')
-    if (wrappedMlbGames.length) return wrappedMlbGames
+    if (wrappedMlbGames.length) return wrappedMlbGames.map((game) => withMlbPredictionEligibility(game))
   }
 
   return []

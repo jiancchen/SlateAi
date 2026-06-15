@@ -2,6 +2,8 @@ import fs from 'node:fs/promises'
 import fsSync from 'node:fs'
 import path from 'node:path'
 
+import { buildMlbPredictionEligibility } from '../models/mlb/lib/prediction-eligibility.mjs'
+
 const root = path.resolve(import.meta.dirname, '..')
 const currentRoot = path.join(root, 'web', 'public', 'data', 'current')
 const reportsRoot = path.join(root, 'data-migration', 'reports')
@@ -87,6 +89,9 @@ const summarizeGame = (game) => {
     starterSplitStatus(game?.starterContext?.away),
     starterSplitStatus(game?.starterContext?.home)
   ]
+  const predictionEligibility =
+    game?.predictionEligibility ||
+    buildMlbPredictionEligibility(game, { requireAddendums: true })
 
   return {
     id: game?.id,
@@ -111,12 +116,16 @@ const summarizeGame = (game) => {
     hasDraftKingsFirstFiveLines: hasDraftKingsFirstFiveLines(game),
     first5TotalLineSource: projection?.totals?.first5TotalLineSource || '',
     hasMoneylineShape: Boolean(projection?.moneylineShape),
-    hasFirstInning: Boolean(projection?.firstInning)
+    hasFirstInning: Boolean(projection?.firstInning),
+    predictionEligibility
   }
 }
 
 const hardFailuresForGame = (gameReport) => {
   const failures = []
+  if (gameReport.predictionEligibility && !gameReport.predictionEligibility.eligible) {
+    failures.push(...gameReport.predictionEligibility.hardFailures.map((failure) => `prediction-eligibility:${failure}`))
+  }
   if (gameReport.awayPlayers < 9 || gameReport.homePlayers < 9) failures.push('lineup-below-9-per-side')
   if (gameReport.summaries < 16) failures.push('missing-batter-summaries')
   if (gameReport.savantLinks < 16) failures.push('missing-savant-links')

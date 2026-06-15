@@ -3,6 +3,8 @@ import fs from 'node:fs/promises'
 import fsSync from 'node:fs'
 import path from 'node:path'
 
+import { buildMlbPredictionEligibility } from '../models/mlb/lib/prediction-eligibility.mjs'
+
 const root = path.resolve(import.meta.dirname, '..')
 const dbPath = path.join(root, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
 const currentRoot = path.join(root, 'web', 'public', 'data', 'current')
@@ -219,6 +221,62 @@ const auditPublicSchema = (games, failures) => {
   }
 }
 
+const auditPredictionEligibility = (games, failures) => {
+  for (const game of games) {
+    const eligibility = game.predictionEligibility || buildMlbPredictionEligibility(game, { requireAddendums: true })
+    if (!eligibility.eligible) {
+      fail(failures, 'prediction-eligibility-failed', {
+        gameId: game.id,
+        title: game.title,
+        hardFailures: eligibility.hardFailures
+      })
+    }
+  }
+}
+
+const auditModernAddendumCoverage = (date, games, failures) => {
+  const expectedGames = games.length
+  const expectedTeamSides = expectedGames * 2
+  const coverageRows = sqliteJson(`
+    select 'env1' as source, count(*) as rows
+    from mlb_game_environment_adjustments_daily
+    where source_date=${sqlText(date)}
+    union all
+    select 'rp2' as source, count(*) as rows
+    from mlb_relief_pitcher_projection_v1_daily
+    where source_date=${sqlText(date)}
+    union all
+    select 'fic_weather' as source, count(*) as rows
+    from mlb_fic_weather_daily
+    where source_date=${sqlText(date)}
+    union all
+    select 'fic_daily_matchups' as source, count(*) as rows
+    from mlb_fic_daily_matchups
+    where source_date=${sqlText(date)}
+    union all
+    select 'espn_pitcher_splits' as source, count(*) as rows
+    from mlb_pitcher_espn_splits
+    where snapshot_date=${sqlText(date)}
+  `)
+  const rowsBySource = Object.fromEntries(coverageRows.map((row) => [row.source, Number(row.rows || 0)]))
+  const expected = {
+    env1: expectedGames,
+    rp2: expectedTeamSides,
+    fic_weather: expectedGames,
+    fic_daily_matchups: expectedGames,
+    espn_pitcher_splits: expectedTeamSides
+  }
+  for (const [source, minimum] of Object.entries(expected)) {
+    if ((rowsBySource[source] || 0) < minimum) {
+      fail(failures, 'modern-addendum-coverage-low', {
+        source,
+        expectedAtLeast: minimum,
+        actualRows: rowsBySource[source] || 0
+      })
+    }
+  }
+}
+
 const writeReport = async (date, report) => {
   await fs.mkdir(reportsRoot, { recursive: true })
   const filePath = path.join(reportsRoot, `audit_mlb_morning_contracts_${date}.json`)
@@ -237,6 +295,8 @@ const main = async () => {
   }
   const failures = []
   auditPublicSchema(games, failures)
+  auditPredictionEligibility(games, failures)
+  auditModernAddendumCoverage(date, games, failures)
   auditDraftKingsMarkets(date, games, failures)
   auditRotowireProof(games, failures)
   auditStatMuse(date, games, failures)
