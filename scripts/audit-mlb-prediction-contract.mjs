@@ -5,6 +5,8 @@ import path from 'node:path'
 
 import { loadMlbDayGames } from '../pipeline/lib/load-mlb-day-games.mjs'
 import { buildMlbPredictionEligibility } from '../models/mlb/lib/prediction-eligibility.mjs'
+import { modelVersion as env1ModelVersion } from './build-mlb-environment-adjustments.mjs'
+import { modelVersion as rp2ModelVersion } from './build-mlb-relief-projections-v1.mjs'
 
 const root = path.resolve(import.meta.dirname, '..')
 const dbPath = path.join(root, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
@@ -161,15 +163,17 @@ const auditSourceStatus = (date) => {
 const auditAddendumCoverage = (date, gameCount) => {
   const teamSideCount = gameCount * 2
   const rows = sqliteJson(`
-    select 'env1' as source, count(*) as rows
+    select 'env1' as source, count(distinct coalesce(cast(game_pk as text), matchup_key)) as rows
     from mlb_game_environment_adjustments_daily
     where source_date=${sqlText(date)}
+      and model_version=${sqlText(env1ModelVersion)}
     union all
-    select 'rp2' as source, count(*) as rows
+    select 'rp2' as source, count(distinct team_name || ':' || coalesce(team_side, '')) as rows
     from mlb_relief_pitcher_projection_v1_daily
     where source_date=${sqlText(date)}
+      and model_version=${sqlText(rp2ModelVersion)}
     union all
-    select 'fic_weather' as source, count(*) as rows
+    select 'fic_weather' as source, count(distinct coalesce(cast(game_pk as text), matchup_key)) as rows
     from mlb_fic_weather_daily
     where source_date=${sqlText(date)}
     union all
@@ -190,17 +194,28 @@ const auditAddendumCoverage = (date, gameCount) => {
     espn_pitcher_splits: teamSideCount
   }
   const hardFailures = []
+  const warnings = []
+  const exactCoverageSources = new Set(['env1', 'rp2', 'fic_weather', 'espn_pitcher_splits'])
   for (const [source, expectedAtLeast] of Object.entries(expected)) {
-    if ((bySource[source] || 0) < expectedAtLeast) {
+    const actualRows = bySource[source] || 0
+    if (actualRows < expectedAtLeast) {
       hardFailures.push({
         failure: 'addendum-coverage-low',
         source,
         expectedAtLeast,
-        actualRows: bySource[source] || 0
+        actualRows
+      })
+    }
+    if (exactCoverageSources.has(source) && actualRows > expectedAtLeast) {
+      warnings.push({
+        warning: 'addendum-coverage-extra',
+        source,
+        expected: expectedAtLeast,
+        actualRows
       })
     }
   }
-  return { rows: bySource, expected, hardFailures }
+  return { rows: bySource, expected, hardFailures, warnings }
 }
 
 const auditGames = (games) => {
@@ -269,6 +284,7 @@ const main = async () => {
   const warnings = [
     ...artifacts.warnings,
     ...sourceStatus.warnings,
+    ...addendums.warnings,
     ...gameAudit.warnings
   ]
   const report = {

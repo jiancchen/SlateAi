@@ -4,6 +4,8 @@ import fsSync from 'node:fs'
 import path from 'node:path'
 
 import { buildMlbPredictionEligibility } from '../models/mlb/lib/prediction-eligibility.mjs'
+import { modelVersion as env1ModelVersion } from './build-mlb-environment-adjustments.mjs'
+import { modelVersion as rp2ModelVersion } from './build-mlb-relief-projections-v1.mjs'
 
 const root = path.resolve(import.meta.dirname, '..')
 const dbPath = path.join(root, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
@@ -238,15 +240,17 @@ const auditModernAddendumCoverage = (date, games, failures) => {
   const expectedGames = games.length
   const expectedTeamSides = expectedGames * 2
   const coverageRows = sqliteJson(`
-    select 'env1' as source, count(*) as rows
+    select 'env1' as source, count(distinct coalesce(cast(game_pk as text), matchup_key)) as rows
     from mlb_game_environment_adjustments_daily
     where source_date=${sqlText(date)}
+      and model_version=${sqlText(env1ModelVersion)}
     union all
-    select 'rp2' as source, count(*) as rows
+    select 'rp2' as source, count(distinct team_name || ':' || coalesce(team_side, '')) as rows
     from mlb_relief_pitcher_projection_v1_daily
     where source_date=${sqlText(date)}
+      and model_version=${sqlText(rp2ModelVersion)}
     union all
-    select 'fic_weather' as source, count(*) as rows
+    select 'fic_weather' as source, count(distinct coalesce(cast(game_pk as text), matchup_key)) as rows
     from mlb_fic_weather_daily
     where source_date=${sqlText(date)}
     union all
