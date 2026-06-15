@@ -229,7 +229,7 @@ const main = async () => {
   ], { dryRun, allowFailure: allowSourceGaps }))
 
   steps.push(run('Regenerate M2 day files after supplemental sources', 'npm', [
-    'run', 'data:generate:mlb-day', '--', '--date', date, '--skip-preflight'
+    'run', 'data:generate:mlb-day', '--', '--date', date
   ], { dryRun }))
 
   steps.push(run('Regenerate lineup board after supplemental sources', 'npm', [
