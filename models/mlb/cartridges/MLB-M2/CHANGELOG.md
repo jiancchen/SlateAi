@@ -1,5 +1,28 @@
 # MLB-M2 Changelog
 
+## MLB-M2.2026-06-15.v0.4 - Prediction Contract Cleanup
+
+Status: governance and pipeline cleanup. No scoring coefficients were promoted in this entry.
+
+What changed:
+
+- Added `predictionEligibility` as the shared gate for MLB prediction games.
+- Full projected lineups remain valid, but missing or partial lineups, missing projection pitchers, missing required addendums, missing pitch-fit context, missing batter projection context, and missing hitter handedness splits now make a game pending instead of prediction-eligible.
+- DB-loaded games now validate the same contract; strict DB mode hard-fails, and normal mode falls back to generated files when DB games are incomplete.
+- M2 side, veto, HR, prop, and pick-ranking lanes skip ineligible games.
+- ENV1 and RP2 builders now write `source_fetch_runs` and `source_fetch_status` rows as `mlb_env1` and `mlb_rp2`.
+- ENV1/RP2 game collection now follows the MLB schedule when schedule rows exist, so FIC/umpire source-only rows cannot create extra model games.
+- Prediction contract audit now requires source status for ENV1/RP2, checks current addendum model coverage, and warns on exact-source overcoverage.
+- Morning runner now includes the prediction eligibility/addendum contract audit before the hard public/source contract audit.
+
+Verification:
+
+- `npm run data:build:mlb-env1 -- --date 2026-06-14`
+- `npm run data:build:mlb-rp2 -- --date 2026-06-14`
+- `npm run data:audit:mlb-prediction-contract -- --date 2026-06-14`
+- `npm run data:audit:mlb-morning-contracts -- --date 2026-06-14` still fails only on known missing StatMuse public starter histories.
+- Temporary side/veto exports and synthetic eligibility checks confirmed ineligible games are filtered.
+
 ## MLB-M2.2026-06-14.v0.3 - Side/Tail Coherence Plan
 
 Status: model documentation and addendum scaffold. No production scoring override is promoted by this changelog entry.
