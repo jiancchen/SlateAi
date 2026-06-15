@@ -395,6 +395,51 @@ const pitcherSplitRow = ({ pitcher, category, splitRow, family, splitKey, fetche
   }
 }
 
+const unavailablePitcherSplitRow = ({ pitcher, family, splitKey, splitLabel, fetchedAt }) => ({
+  snapshotDate: date,
+  season: Number(date.slice(0, 4)),
+  gameId: pitcher.game_id,
+  gameTitle: '',
+  teamRole: '',
+  teamName: pitcher.pitcher_team || '',
+  opponentTeam: pitcher.opponent_team || '',
+  playerRole: 'pitcher',
+  playerId: String(pitcher.pitcher_id || ''),
+  mlbPlayerId: intOrNull(pitcher.mlb_player_id),
+  espnAthleteId: pitcher.espn_athlete_id || '',
+  playerName: pitcher.pitcher_name || '',
+  handedness: '',
+  splitFamily: family,
+  splitKey,
+  splitLabel,
+  sourceName: 'ESPN pitcher splits',
+  sourceStatus: 'missing-split',
+  sourceUrl: pitcher.source_url || '',
+  fetchedAt,
+  raw: {
+    pitcher: {
+      game_id: pitcher.game_id,
+      pitcher_id: pitcher.pitcher_id,
+      pitcher_name: pitcher.pitcher_name,
+      espn_athlete_id: pitcher.espn_athlete_id,
+      source_status: pitcher.source_status
+    },
+    family,
+    splitKey,
+    splitLabel,
+    source: 'ESPN fetched payload without this split bucket'
+  }
+})
+
+const expectedPitcherSplitRows = [
+  { family: 'handedness', key: 'vs_rhb', label: 'vs RHB' },
+  { family: 'handedness', key: 'vs_lhb', label: 'vs LHB' },
+  { family: 'day_night', key: 'day', label: 'Day' },
+  { family: 'day_night', key: 'night', label: 'Night' },
+  { family: 'home_away', key: 'home', label: 'Home' },
+  { family: 'home_away', key: 'away', label: 'Away' }
+]
+
 const ingestPitcherSplits = ({ fetchedAt }) => {
   const pitchers = JSON.parse(
     sqlite(`
@@ -405,21 +450,37 @@ const ingestPitcherSplits = ({ fetchedAt }) => {
     `)
   )
   let rows = 0
+  let unavailableRows = 0
   const familyCounts = {}
   for (const pitcher of pitchers) {
     const categories = JSON.parse(pitcher.categories_json || '[]')
+    const insertedKeys = new Set()
     for (const category of categories) {
       if (!['byRightLeft', 'byBreakdown'].includes(category.key)) continue
       for (const splitRow of category.rows || []) {
         const { family, key } = pitcherFamilyKey(category.key, splitRow.label || '')
         if (!family || !key) continue
         insertRow(pitcherSplitRow({ pitcher, category, splitRow, family, splitKey: key, fetchedAt }))
+        insertedKeys.add(`${family}:${key}`)
         rows += 1
         familyCounts[family] = (familyCounts[family] || 0) + 1
       }
     }
+    for (const expected of expectedPitcherSplitRows) {
+      if (insertedKeys.has(`${expected.family}:${expected.key}`)) continue
+      insertRow(unavailablePitcherSplitRow({
+        pitcher,
+        family: expected.family,
+        splitKey: expected.key,
+        splitLabel: expected.label,
+        fetchedAt
+      }))
+      rows += 1
+      unavailableRows += 1
+      familyCounts[expected.family] = (familyCounts[expected.family] || 0) + 1
+    }
   }
-  return { pitchers: pitchers.length, rows, familyCounts }
+  return { pitchers: pitchers.length, rows, unavailableRows, familyCounts }
 }
 
 const main = () => {

@@ -115,6 +115,16 @@ const main = () => {
   const pitcherDayNightRows = countFor('pitcher', 'day_night')
   const pitcherHomeAwayRows = countFor('pitcher', 'home_away')
   const totalRows = rows.reduce((sum, row) => sum + Number(row.rows || 0), 0)
+  const pitcherUnavailableRows = exists
+    ? query(`
+        select count(*) as rows
+        from mlb_player_split_family_snapshots
+        where snapshot_date = ${sqlQuote(date)}
+          and player_role = 'pitcher'
+          and source_status != 'fetched'
+      `)
+    : []
+  const unavailablePitcherSplits = Number(pitcherUnavailableRows[0]?.rows || 0)
   const hitterRows = exists
     ? query(`
         select game_id, team_role, player_id, split_key, ops, source_status
@@ -168,6 +178,9 @@ const main = () => {
   if (unusableSelectedHitterHandedness.length) {
     warnings.push(`selected-hitter-handedness-splits-unusable:${unusableSelectedHitterHandedness.length}`)
   }
+  if (unavailablePitcherSplits) {
+    warnings.push(`pitcher-split-buckets-unavailable:${unavailablePitcherSplits}`)
+  }
 
   const report = {
     audit: 'mlb-player-split-families',
@@ -183,6 +196,7 @@ const main = () => {
       pitcherHandednessRows,
       pitcherDayNightRows,
       pitcherHomeAwayRows,
+      unavailablePitcherSplits,
       byFamily: rows
     },
     missing: {
