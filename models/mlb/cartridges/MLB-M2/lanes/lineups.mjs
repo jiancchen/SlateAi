@@ -4,6 +4,8 @@ import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
+import { loadMlbDayGamesFromDb } from '../../../db/day-games.mjs'
+
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
@@ -863,9 +865,44 @@ const buildPitchArsenalMaps = async ({ batterIds = [], pitcherIds = [], year }) 
   return { batterPitchTypeStatsByPlayerId, pitcherPitchMixByPlayerId }
 }
 
+const rawPitcherFromStarterContext = (starter = null) => {
+  if (!starter) return null
+  return {
+    ...starter,
+    id: starter.id || starter.mlbPlayerId || null,
+    fullName: starter.fullName || starter.name || '',
+    name: starter.name || starter.fullName || '',
+    pitchHand: starter.pitchHand || starter.throws || '',
+    probableSource: starter.probableSource || starter.sourceName || 'typed-db'
+  }
+}
+
+const rawGameFromDbGame = (game = {}) => {
+  const titleTeams = String(game.title || '').split(/\s+@\s+/)
+  const matchupTeams = Array.isArray(game.matchup) ? game.matchup : []
+  const away = matchupTeams.find((entry) => entry?.side === 'Away')?.name || titleTeams[0] || ''
+  const home = matchupTeams.find((entry) => entry?.side === 'Home')?.name || titleTeams[1] || ''
+  return {
+    id: game.id,
+    gamePk: game.gamePk,
+    away,
+    home,
+    awayPitcher: rawPitcherFromStarterContext(game.starterContext?.away),
+    homePitcher: rawPitcherFromStarterContext(game.starterContext?.home)
+  }
+}
+
 const loadDayData = async (date) => {
-  const modulePath = pathToFileURL(path.join(rootDir, 'web', 'src', 'lib', `day-${date}-data.js`)).href
-  return import(modulePath)
+  const dataPath = path.join(rootDir, 'web', 'src', 'lib', `day-${date}-data.js`)
+  if (existsSync(dataPath)) {
+    const modulePath = pathToFileURL(dataPath).href
+    return import(modulePath)
+  }
+  const dbGames = await loadMlbDayGamesFromDb(date)
+  return {
+    rawGames: dbGames.map(rawGameFromDbGame),
+    bullpenChainByTeam: {}
+  }
 }
 
 const normalizePitchHand = (value = '') => {
