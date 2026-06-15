@@ -1,5 +1,22 @@
 # MLB-M2 Changelog
 
+## MLB-M2.2026-06-15.v0.8 - Missing Hitter Hydration Receipts
+
+Status: lineup-ingestion hardening. No scoring coefficients were promoted in this entry.
+
+What changed:
+
+- RotoWire-only hitters now resolve by team/name before lineup construction, then flow through the same live MLB Stats API, ESPN split, Statcast pitch-arsenal, and career-profile hydration as normal lineup hitters.
+- Sparse lineup hitters with no usable MLB season/recent/L/R sample now get explicit `dataCoverage` receipts instead of silent neutral treatment.
+- Neutral handedness and pitch-fit fallbacks now say whether live sources were checked, whether a heavy Statcast trend backfill was attempted, and which source families are still missing.
+- The broad 30-day Savant trend backfill is opt-in through `MLB_LINEUPS_ALLOW_BROAD_SPARSE_STATCAST_REFRESH=1`, so one new/no-sample hitter does not slow the normal prediction path.
+
+Verification:
+
+- `npm run data:export:mlb-lineups -- --date 2026-06-15 --skip-preflight` writes 10 lineup boards, 180 lineup slots, and 0 unresolved players.
+- June 15 sparse hitter example: Kyler Fedko is marked `sparse-lineup-hitter-live-sources-checked`, with live hydration attempted and broad Statcast trend backfill deferred.
+- `npm run data:audit:mlb-prediction-contract -- --date 2026-06-15` passes with 10/10 eligible games.
+
 ## MLB-M2.2026-06-15.v0.7 - Player Split Family Warehouse
 
 Status: warehouse scaffold and coverage gate. No scoring coefficients were promoted in this entry.

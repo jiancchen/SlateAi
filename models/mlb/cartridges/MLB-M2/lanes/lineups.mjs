@@ -12,6 +12,16 @@ const rootDir = path.resolve(__dirname, '..', '..', '..', '..', '..')
 const season = 2026
 const mlbWarehousePath = path.join(rootDir, 'data-private', 'warehouse', 'sports.db')
 const typedWarehouseCliPath = path.join(rootDir, 'pipeline', 'mlb', 'warehouse', 'mlb_typed_warehouse.py')
+const legacyWarehouseCliPath = path.join(
+  rootDir,
+  'models',
+  'mlb',
+  'cartridges',
+  'MLB-M2',
+  'workflows',
+  'archive-m2',
+  'legacy-warehouse.mjs'
+)
 
 const deskToOfficialTeam = {
   Nationals: 'Washington Nationals',
@@ -445,6 +455,140 @@ const ingestHitterLineupSplits = (date, lineupPath) => {
       stdio: 'inherit'
     }
   )
+}
+
+const supplementalPlayerIdsFromLookup = (supplementalPlayerLookup = new Map()) => [
+  ...new Set(
+    [...supplementalPlayerLookup.values()]
+      .map((entry) => Number(entry?.playerId))
+      .filter(Number.isFinite)
+  )
+]
+
+const fetchTrendCoveragePlayerIds = (asOfDate, playerIds = []) => {
+  const normalizedIds = [...new Set(playerIds.map((value) => Number(value)).filter(Number.isFinite))]
+  if (!normalizedIds.length) return new Set()
+
+  try {
+    const [{ trend_as_of_date: trendAsOfDate } = {}] = runSqliteJson(`
+      select max(as_of_date) as trend_as_of_date
+      from mlb_hitter_statcast_trend_snapshots
+      where as_of_date <= ${quoteSqlText(asOfDate)}
+        and player_id in (${normalizedIds.join(',')})
+    `)
+    if (!trendAsOfDate) return new Set()
+
+    const rows = runSqliteJson(`
+      select distinct player_id
+      from mlb_hitter_statcast_trend_snapshots
+      where as_of_date = ${quoteSqlText(trendAsOfDate)}
+        and player_id in (${normalizedIds.join(',')})
+    `)
+
+    return new Set(rows.map((row) => Number(row.player_id)).filter(Number.isFinite))
+  } catch (error) {
+    console.warn(`Unable to inspect hitter Statcast trend coverage for ${asOfDate}:`, error.message)
+    return new Set()
+  }
+}
+
+const refreshSupplementalHitterStatcastContext = ({ date, playerIds = [] } = {}) => {
+  const normalizedIds = [...new Set(playerIds.map((value) => Number(value)).filter(Number.isFinite))]
+  if (!date || !normalizedIds.length) {
+    return {
+      attempted: false,
+      refreshedPlayerIds: [],
+      missingBefore: [],
+      ok: true,
+      reason: 'no supplemental or sparse lineup hitters'
+    }
+  }
+
+  const coveredBefore = fetchTrendCoveragePlayerIds(date, normalizedIds)
+  const missingBefore = normalizedIds.filter((playerId) => !coveredBefore.has(playerId))
+  if (!missingBefore.length) {
+    return {
+      attempted: false,
+      refreshedPlayerIds: [],
+      missingBefore: [],
+      ok: true,
+      reason: 'supplemental/sparse hitters already have Statcast trend coverage'
+    }
+  }
+
+  const startDate = shiftDate(date, -30)
+  if (process.env.MLB_LINEUPS_ALLOW_BROAD_SPARSE_STATCAST_REFRESH !== '1') {
+    return {
+      attempted: false,
+      deferred: true,
+      ok: true,
+      startDate,
+      endDate: date,
+      missingBefore,
+      refreshedPlayerIds: [],
+      stillMissing: missingBefore,
+      reason:
+        'broad 30-day Savant backfill deferred; live MLB/ESPN/Savant pitch/career hydration already ran for these hitters'
+    }
+  }
+
+  try {
+    console.warn(
+      `[lineups] Supplemental/sparse lineup hitters missing Statcast trends (${missingBefore.join(',')}); refreshing ${startDate}..${date}.`
+    )
+    execFileSync(
+      'node',
+      [
+        legacyWarehouseCliPath,
+        'ingest-hitter-statcast-range',
+        '--start-date',
+        startDate,
+        '--end-date',
+        date
+      ],
+      {
+        cwd: rootDir,
+        stdio: 'inherit'
+      }
+    )
+    execFileSync(
+      'node',
+      [
+        legacyWarehouseCliPath,
+        'derive-hitter-statcast-trends',
+        '--as-of-date',
+        date
+      ],
+      {
+        cwd: rootDir,
+        stdio: 'inherit'
+      }
+    )
+
+    const coveredAfter = fetchTrendCoveragePlayerIds(date, normalizedIds)
+    const refreshedPlayerIds = normalizedIds.filter((playerId) => coveredAfter.has(playerId))
+    return {
+      attempted: true,
+      ok: true,
+      startDate,
+      endDate: date,
+      missingBefore,
+      refreshedPlayerIds,
+      stillMissing: normalizedIds.filter((playerId) => !coveredAfter.has(playerId))
+    }
+  } catch (error) {
+    console.warn(`Unable to refresh supplemental/sparse hitter Statcast context for ${date}:`, error.message)
+    return {
+      attempted: true,
+      ok: false,
+      startDate,
+      endDate: date,
+      missingBefore,
+      refreshedPlayerIds: [],
+      stillMissing: missingBefore,
+      error: error.message
+    }
+  }
 }
 
 const fetchHitterCareerProfileMap = (playerIds = []) => {
@@ -1610,6 +1754,98 @@ const getStatRecord = (peopleMap, playerId) => {
   return aggregateStatSplits(person.stats?.[0]?.splits || [])
 }
 
+const hasUsableStatRecord = (peopleMap, playerId) =>
+  Number(getStatRecord(peopleMap, playerId)?.plateAppearances || 0) > 0 ||
+  Number(getStatRecord(peopleMap, playerId)?.atBats || 0) > 0
+
+const hasEspnHitterSplit = (splitContext = null) =>
+  Boolean(
+    splitContext &&
+      ((Number(splitContext.L?.plateAppearances || splitContext.L?.atBats || 0) > 0) ||
+        (Number(splitContext.R?.plateAppearances || splitContext.R?.atBats || 0) > 0))
+  )
+
+const buildHitterDataCoverageMap = ({
+  playerIds = [],
+  supplementalPlayerIds = [],
+  sparseLivePlayerIds = [],
+  supplementalRefreshReport = null,
+  playerStatMaps = {}
+} = {}) => {
+  const supplementalSet = new Set(supplementalPlayerIds.map((value) => Number(value)).filter(Number.isFinite))
+  const sparseLiveSet = new Set(sparseLivePlayerIds.map((value) => Number(value)).filter(Number.isFinite))
+  const refreshAttemptSet = new Set(
+    (supplementalRefreshReport?.missingBefore || []).map((value) => Number(value)).filter(Number.isFinite)
+  )
+  const refreshResolvedSet = new Set(
+    (supplementalRefreshReport?.refreshedPlayerIds || []).map((value) => Number(value)).filter(Number.isFinite)
+  )
+  const output = new Map()
+
+  for (const rawPlayerId of playerIds) {
+    const playerId = Number(rawPlayerId)
+    if (!Number.isFinite(playerId)) continue
+
+    const seasonStatsPresent = hasUsableStatRecord(playerStatMaps.season, playerId)
+    const recentStatsPresent = hasUsableStatRecord(playerStatMaps.recent, playerId)
+    const vsLeftPresent = hasUsableStatRecord(playerStatMaps.vsLeft, playerId)
+    const vsRightPresent = hasUsableStatRecord(playerStatMaps.vsRight, playerId)
+    const pitchArsenalPresent = Boolean(playerStatMaps.pitchArsenal?.get(playerId)?.size)
+    const espnSplitContext = playerStatMaps.espnHitterSplits?.get(playerId) || null
+    const careerProfile = playerStatMaps.careerProfiles?.get(playerId) || null
+    const statcastTrend = playerStatMaps.statcastTrends?.get(playerId) || null
+    const opponentContext = playerStatMaps.opponentContext?.get(playerId) || null
+    const presentSources = [
+      seasonStatsPresent ? 'mlb-season' : null,
+      recentStatsPresent ? 'mlb-recent' : null,
+      vsLeftPresent || vsRightPresent ? 'mlb-lr-splits' : null,
+      pitchArsenalPresent ? 'savant-pitch-arsenal' : null,
+      hasEspnHitterSplit(espnSplitContext) ? 'espn-lr-splits' : null,
+      careerProfile?.careerPlateAppearances ? 'mlb-career-profile' : null,
+      statcastTrend ? 'savant-statcast-trends' : null,
+      opponentContext ? 'opponent-context' : null
+    ].filter(Boolean)
+
+    output.set(playerId, {
+      playerId,
+      liveHydrationAttempted: true,
+      supplementalRotoWire: supplementalSet.has(playerId),
+      sparseLineupHitter: sparseLiveSet.has(playerId),
+      sourceStatus: supplementalSet.has(playerId)
+        ? 'rotowire-supplemental-resolved-and-hydrated'
+        : sparseLiveSet.has(playerId)
+          ? 'sparse-lineup-hitter-live-sources-checked'
+          : 'standard-lineup-hydrated',
+      refreshAttempted: Boolean(supplementalRefreshReport?.attempted && refreshAttemptSet.has(playerId)),
+      refreshResolved: refreshResolvedSet.has(playerId),
+      refreshDeferred: Boolean(supplementalRefreshReport?.deferred && refreshAttemptSet.has(playerId)),
+      refreshOk: supplementalRefreshReport?.attempted ? Boolean(supplementalRefreshReport.ok) : true,
+      presentSources,
+      missingSources: [
+        seasonStatsPresent ? null : 'mlb-season',
+        recentStatsPresent ? null : 'mlb-recent',
+        vsLeftPresent || vsRightPresent ? null : 'mlb-lr-splits',
+        pitchArsenalPresent ? null : 'savant-pitch-arsenal',
+        hasEspnHitterSplit(espnSplitContext) ? null : 'espn-lr-splits',
+        careerProfile?.careerPlateAppearances ? null : 'mlb-career-profile',
+        statcastTrend ? null : 'savant-statcast-trends',
+        opponentContext ? null : 'opponent-context'
+      ].filter(Boolean),
+      espnSplitStatus: espnSplitContext?.sourceStatus || '',
+      careerPlateAppearances: Number(careerProfile?.careerPlateAppearances || 0) || 0,
+      statcastTrendAsOfDate: statcastTrend?.sourceAsOfDate || '',
+      note:
+        supplementalSet.has(playerId) && !presentSources.length
+          ? 'RotoWire-only hitter was resolved, but public sources returned no usable MLB sample.'
+          : sparseLiveSet.has(playerId) && !presentSources.length
+            ? 'Lineup hitter was hydrated from public sources, but sources returned no usable MLB sample.'
+          : ''
+    })
+  }
+
+  return output
+}
+
 const buildBatterHandCode = (person = {}) => person?.batSide?.code || ''
 
 const buildRosterLookup = (boxscoreSide = {}) => {
@@ -1955,8 +2191,13 @@ const buildPitchTypeFit = ({ pitchTypeStatsByType = null, opposingPitcherMix = n
   }
 }
 
-const buildSparsePitchTypeFitFallback = (opposingPitcherMix = null) => {
+const buildSparsePitchTypeFitFallback = (opposingPitcherMix = null, dataCoverage = null) => {
   const topPitches = opposingPitcherMix?.topPitches || []
+  const refreshLabel = dataCoverage?.refreshAttempted
+    ? 'after Statcast refresh'
+    : dataCoverage?.liveHydrationAttempted
+      ? 'live sources checked'
+      : 'source unavailable'
   return {
     fitScore: 50,
     fitGrade: 0,
@@ -1969,12 +2210,15 @@ const buildSparsePitchTypeFitFallback = (opposingPitcherMix = null) => {
     coveragePct: 0,
     sourceStatus: 'fallback-sparse-batter-pitch-fit',
     fallback: true,
+    refreshAttempted: Boolean(dataCoverage?.refreshAttempted),
+    presentSources: dataCoverage?.presentSources || [],
+    missingSources: dataCoverage?.missingSources || [],
     summary: topPitches.length
       ? `${topPitches
           .slice(0, 3)
           .map((pitch) => `${pitch.pitchName} ${Number(pitch.pitchUsage || 0).toFixed(0)}%`)
-          .join(' / ')} | sparse batter pitch-fit fallback`
-      : 'sparse batter pitch-fit fallback',
+          .join(' / ')} | sparse batter pitch-fit fallback (${refreshLabel})`
+      : `sparse batter pitch-fit fallback (${refreshLabel})`,
     topPitches: topPitches.slice(0, 3).map((pitch) => ({
       pitchType: pitch.pitchType,
       pitchName: pitch.pitchName,
@@ -1997,7 +2241,12 @@ const buildSparsePitchTypeFitFallback = (opposingPitcherMix = null) => {
   }
 }
 
-const buildSparseHandednessSplitFallback = ({ seasonStats = null, careerProfile = null, opposingPitcherHand = '' } = {}) => {
+const buildSparseHandednessSplitFallback = ({
+  seasonStats = null,
+  careerProfile = null,
+  opposingPitcherHand = '',
+  dataCoverage = null
+} = {}) => {
   const careerOps = Number(careerProfile?.careerOps)
   const careerAvg = Number(careerProfile?.careerAvg)
   const careerSlg = Number(careerProfile?.careerSlg)
@@ -2024,6 +2273,9 @@ const buildSparseHandednessSplitFallback = ({ seasonStats = null, careerProfile 
   return {
     sourceStatus: 'fallback-sparse-handedness-split',
     fallback: true,
+    refreshAttempted: Boolean(dataCoverage?.refreshAttempted),
+    presentSources: dataCoverage?.presentSources || [],
+    missingSources: dataCoverage?.missingSources || [],
     pitcherHand: opposingPitcherHand || '',
     gamesPlayed: 0,
     hits: 0,
@@ -2428,14 +2680,16 @@ const buildPlayerLineupEntry = ({
   opposingPitcher,
   statcastTrend = null,
   opponentContext = null,
-  careerProfile = null
+  careerProfile = null,
+  dataCoverage = null
 }) => {
   const splitStats =
     rawSplitStats ||
     buildSparseHandednessSplitFallback({
       seasonStats,
       careerProfile,
-      opposingPitcherHand: opposingPitcher?.handedness
+      opposingPitcherHand: opposingPitcher?.handedness,
+      dataCoverage
     })
   const seasonOps = Number.isFinite(seasonStats?.ops) ? seasonStats.ops : 0.72
   const recentOps =
@@ -2636,7 +2890,7 @@ const buildPlayerLineupEntry = ({
     buildPitchTypeFit({
       pitchTypeStatsByType,
       opposingPitcherMix: opposingPitcher?.pitchMix
-    }) || buildSparsePitchTypeFitFallback(opposingPitcher?.pitchMix)
+    }) || buildSparsePitchTypeFitFallback(opposingPitcher?.pitchMix, dataCoverage)
   const matchupKernel = buildBatterStarterMatchupKernel({
     lineupPlayer,
     seasonStats,
@@ -2714,6 +2968,9 @@ const buildPlayerLineupEntry = ({
     buildRecentLine(recentStats),
     buildSplitLine(splitStats, opposingPitcher?.handedness),
     splitStats?.fallback ? 'selected handedness split uses sparse-player neutral fallback' : '',
+    dataCoverage?.supplementalRotoWire
+      ? `RotoWire-only hitter resolved; hydrated sources: ${dataCoverage.presentSources?.join(', ') || 'none'}`
+      : '',
     espnHitterSplit && Number.isFinite(espnSplitOps)
       ? `ESPN split vs ${opposingPitcher?.handedness || '?'}HP ${formatKernelRate(espnSplitOps)} OPS over ${espnHitterSplit.atBats ?? espnSplitSample} AB`
       : '',
@@ -2910,6 +3167,24 @@ const buildPlayerLineupEntry = ({
           barrelTrend: parseNumber(statcastTrend.barrelTrend),
           hardHitTrend: parseNumber(statcastTrend.hardHitTrend),
           sweetSpotTrend: parseNumber(statcastTrend.sweetSpotTrend)
+        }
+      : null,
+    dataCoverage: dataCoverage
+      ? {
+          sourceStatus: dataCoverage.sourceStatus || '',
+          liveHydrationAttempted: Boolean(dataCoverage.liveHydrationAttempted),
+          supplementalRotoWire: Boolean(dataCoverage.supplementalRotoWire),
+          sparseLineupHitter: Boolean(dataCoverage.sparseLineupHitter),
+          refreshAttempted: Boolean(dataCoverage.refreshAttempted),
+          refreshResolved: Boolean(dataCoverage.refreshResolved),
+          refreshDeferred: Boolean(dataCoverage.refreshDeferred),
+          refreshOk: Boolean(dataCoverage.refreshOk),
+          presentSources: dataCoverage.presentSources || [],
+          missingSources: dataCoverage.missingSources || [],
+          espnSplitStatus: dataCoverage.espnSplitStatus || '',
+          careerPlateAppearances: dataCoverage.careerPlateAppearances ?? null,
+          statcastTrendAsOfDate: dataCoverage.statcastTrendAsOfDate || '',
+          note: dataCoverage.note || ''
         }
       : null,
     opponentContext: opponentContext
@@ -3317,6 +3592,7 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
       const statcastTrend = playerStatMaps.statcastTrends?.get(playerId) || null
       const opponentContext = playerStatMaps.opponentContext?.get(playerId) || null
       const careerProfile = playerStatMaps.careerProfiles?.get(playerId) || null
+      const dataCoverage = playerStatMaps.dataCoverage?.get(Number(playerId)) || null
       const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
       const lineupPlayer = {
         playerId,
@@ -3336,7 +3612,8 @@ const extractLineupPlayers = (boxscoreSide = {}, playerStatMaps = {}, opposingPi
         opposingPitcher,
         statcastTrend,
         opponentContext,
-        careerProfile
+        careerProfile,
+        dataCoverage
       })
     })
     .filter(Boolean)
@@ -3376,6 +3653,7 @@ const extractSupplementalLineupPlayers = ({
       const statcastTrend = playerStatMaps.statcastTrends?.get(playerId) || null
       const opponentContext = playerStatMaps.opponentContext?.get(playerId) || null
       const careerProfile = playerStatMaps.careerProfiles?.get(playerId) || null
+      const dataCoverage = playerStatMaps.dataCoverage?.get(Number(playerId)) || null
       const playerDetails = playerStatMaps.season.get(playerId) || playerStatMaps.recent.get(playerId) || null
       if (!matchesExpectedOfficialTeam({ expectedOfficialTeam, playerRecord, playerDetails })) return null
       const lineupPlayer = {
@@ -3396,7 +3674,8 @@ const extractSupplementalLineupPlayers = ({
         opposingPitcher,
         statcastTrend,
         opponentContext,
-        careerProfile
+        careerProfile,
+        dataCoverage
       })
     })
     .filter(Boolean)
@@ -3494,6 +3773,7 @@ const main = async () => {
     feedRecords,
     rotoWireCards
   })
+  const supplementalRotoPlayerIds = supplementalPlayerIdsFromLookup(supplementalRotoPlayerLookup)
 
   const allPlayerIds = [
     ...new Set(
@@ -3562,6 +3842,16 @@ const main = async () => {
       `stats(group=[pitching],type=[season],season=${options.date.slice(0, 4)})`
     )
   ])
+  const sparseLivePlayerIds = allPlayerIds.filter(
+    (playerId) =>
+      !hasUsableStatRecord(seasonMap, playerId) &&
+      !hasUsableStatRecord(recentMap, playerId) &&
+      !hasUsableStatRecord(vsRightMap, playerId) &&
+      !hasUsableStatRecord(vsLeftMap, playerId)
+  )
+  const sourceRefreshPlayerIds = [
+    ...new Set([...supplementalRotoPlayerIds, ...sparseLivePlayerIds].map((value) => Number(value)).filter(Number.isFinite))
+  ]
 
   const [pitchArsenalMaps, espnHitterSplitMap] = await Promise.all([
     buildPitchArsenalMaps({
@@ -3573,6 +3863,10 @@ const main = async () => {
   ])
   const { batterPitchTypeStatsByPlayerId, pitcherPitchMixByPlayerId } = pitchArsenalMaps
   ingestHitterCareerProfiles(options.date, allPlayerIds)
+  const supplementalRefreshReport = refreshSupplementalHitterStatcastContext({
+    date: options.date,
+    playerIds: sourceRefreshPlayerIds
+  })
   const hitterStatcastTrendMap = fetchHitterStatcastTrendMap(options.date, allPlayerIds)
   const hitterOpponentContextMap = fetchHitterOpponentContextMap(options.date, allPlayerIds)
   const hitterCareerProfileMap = fetchHitterCareerProfileMap(allPlayerIds)
@@ -3588,6 +3882,13 @@ const main = async () => {
     opponentContext: hitterOpponentContextMap,
     careerProfiles: hitterCareerProfileMap
   }
+  playerStatMaps.dataCoverage = buildHitterDataCoverageMap({
+    playerIds: allPlayerIds,
+    supplementalPlayerIds: supplementalRotoPlayerIds,
+    sparseLivePlayerIds,
+    supplementalRefreshReport,
+    playerStatMaps
+  })
 
   const lineupBoardsByGameId = {}
   const lineupMatchupContextByGameId = {}
@@ -3886,6 +4187,14 @@ const main = async () => {
       },
       gameCount: Object.keys(lineupBoardsByGameId).length,
       playerCount: allPlayerIds.length,
+      supplementalRotoWireHitters: {
+        playerCount: supplementalRotoPlayerIds.length,
+        playerIds: supplementalRotoPlayerIds,
+        sparseLivePlayerCount: sparseLivePlayerIds.length,
+        sparseLivePlayerIds,
+        sourceRefreshPlayerIds,
+        statcastRefresh: supplementalRefreshReport
+      },
       sourceLabel:
         'Official MLB feed/live batting orders plus official player season, recent, handedness split, ESPN hitter L/R splits, ESPN pitcher L/R allowed splits, and Statcast pitch-arsenal vs league matchup data, supplemented by RotoWire daily lineups, RotoWire primary/bulk pitcher tags, opener addendums, and weather.'
     },
