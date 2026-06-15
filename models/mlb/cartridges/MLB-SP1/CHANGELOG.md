@@ -23,7 +23,7 @@ Follow-up calibration hardening:
 
 - Canonical split-family warehousing now falls back to the older lineup-board selected hitter split when full `espnHitterSplits.vsLeft/vsRight` rows are absent. This preserves historical SP1 backtests without inventing neutral player data.
 - Canonical split-family audit now checks distinct lineup-player coverage instead of only row totals, names missing hitter split rows, and hard-fails pitcher slots inside posted batting orders.
-- Diagnostic June 12-14 run was intentionally flagged dirty: June 12 has three missing hitter split rows, June 13 has a pitcher listed in the Guardians lineup, and June 14 has one missing hitter split row. After deduping actual team-stat joins, the diagnostic SP1 read was 88 rows / 78 actual matches, with HR delta 39/59, hits delta 25/50, runs delta 15/32, and collapse risk 10/20. Keep SP1 shadow-only.
+- Diagnostic June 12-14 run was intentionally flagged dirty: June 12 has three missing hitter split rows, June 13 has a pitcher listed in the Guardians lineup, and June 14 has one missing hitter split row. After filling June 13 actual feeds and deduping actual team-stat joins, the diagnostic SP1 read was 88 rows / 88 actual matches, with HR delta 43/66, hits delta 29/55, runs delta 17/35, and collapse risk 12/24. Keep SP1 shadow-only.
 
 ## MLB-SP1.2026-06-14.checklist
 
