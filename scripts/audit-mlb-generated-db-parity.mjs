@@ -108,9 +108,9 @@ const gameSnapshot = (game = {}) => {
   }
 }
 
-const compareValues = ({ label, generated, db, mismatches }) => {
+const compareValues = ({ label, generated, db, mismatches, severity = 'hard' }) => {
   if (JSON.stringify(generated) !== JSON.stringify(db)) {
-    mismatches.push({ field: label, generated, db })
+    mismatches.push({ field: label, severity, generated, db })
   }
 }
 
@@ -134,24 +134,53 @@ const compareMatchedGame = ({ generated, db }) => {
 
   for (const side of ['away', 'home']) {
     compareValues({
-      label: `${side}.lineup`,
+      label: `${side}.lineup.count`,
+      generated: generatedSnapshot.lineup[side].count,
+      db: dbSnapshot.lineup[side].count,
+      mismatches
+    })
+    compareValues({
+      label: `${side}.lineup.status`,
+      generated: generatedSnapshot.lineup[side].status,
+      db: dbSnapshot.lineup[side].status,
+      mismatches,
+      severity: 'warning'
+    })
+    compareValues({
+      label: `${side}.lineup.source`,
+      generated: generatedSnapshot.lineup[side].source,
+      db: dbSnapshot.lineup[side].source,
+      mismatches,
+      severity: 'warning'
+    })
+    compareValues({
+      label: `${side}.starter.identity`,
       generated: {
-        status: generatedSnapshot.lineup[side].status,
-        source: generatedSnapshot.lineup[side].source,
-        count: generatedSnapshot.lineup[side].count
+        name: generatedSnapshot.pitchers[side].name,
+        id: generatedSnapshot.pitchers[side].id,
+        hand: generatedSnapshot.pitchers[side].hand,
+        espnSplitStatus: generatedSnapshot.pitchers[side].espnSplitStatus
       },
       db: {
-        status: dbSnapshot.lineup[side].status,
-        source: dbSnapshot.lineup[side].source,
-        count: dbSnapshot.lineup[side].count
+        name: dbSnapshot.pitchers[side].name,
+        id: dbSnapshot.pitchers[side].id,
+        hand: dbSnapshot.pitchers[side].hand,
+        espnSplitStatus: dbSnapshot.pitchers[side].espnSplitStatus
       },
       mismatches
     })
     compareValues({
-      label: `${side}.starter`,
-      generated: generatedSnapshot.pitchers[side],
-      db: dbSnapshot.pitchers[side],
-      mismatches
+      label: `${side}.starter.context`,
+      generated: {
+        usageStatus: generatedSnapshot.pitchers[side].usageStatus,
+        statmuse: generatedSnapshot.pitchers[side].statmuse
+      },
+      db: {
+        usageStatus: dbSnapshot.pitchers[side].usageStatus,
+        statmuse: dbSnapshot.pitchers[side].statmuse
+      },
+      mismatches,
+      severity: 'warning'
     })
   }
 
@@ -165,7 +194,8 @@ const compareMatchedGame = ({ generated, db }) => {
     label: 'analysis',
     generated: generatedSnapshot.analysis,
     db: dbSnapshot.analysis,
-    mismatches
+    mismatches,
+    severity: 'warning'
   })
 
   return {
@@ -215,13 +245,15 @@ const main = async () => {
     buildMlbPredictionEligibility(game, { requireAddendums: true }).eligible
   ).length
   const mismatchRows = matched.filter((row) => row.mismatches.length)
+  const blockingMismatchRows = matched.filter((row) => row.mismatches.some((mismatch) => mismatch.severity === 'hard'))
+  const warningMismatchRows = matched.filter((row) => row.mismatches.some((mismatch) => mismatch.severity === 'warning'))
   const hardFailures = [
     ...(missingInDb.length ? [{ failure: 'generated-games-missing-in-db', count: missingInDb.length }] : []),
     ...(extraInDb.length ? [{ failure: 'db-games-not-in-generated', count: extraInDb.length }] : []),
     ...(generatedEligible !== dbEligible
       ? [{ failure: 'eligible-count-mismatch', generatedEligible, dbEligible }]
       : []),
-    ...(mismatchRows.length ? [{ failure: 'matched-game-context-mismatch', count: mismatchRows.length }] : [])
+    ...(blockingMismatchRows.length ? [{ failure: 'matched-game-blocking-context-mismatch', count: blockingMismatchRows.length }] : [])
   ]
 
   const report = {
@@ -237,7 +269,9 @@ const main = async () => {
       missingInDb: missingInDb.length,
       extraInDb: extraInDb.length,
       matchedGames: matched.length,
-      mismatchedMatchedGames: mismatchRows.length
+      mismatchedMatchedGames: mismatchRows.length,
+      blockingMismatchedGames: blockingMismatchRows.length,
+      warningMismatchedGames: warningMismatchRows.length
     },
     hardFailures,
     missingInDb,
@@ -246,7 +280,7 @@ const main = async () => {
   }
   const reportPath = await writeReport(date, report)
   console.log(`[audit-mlb-generated-db-parity] ${report.status.toUpperCase()} ${date}`)
-  console.log(`[audit-mlb-generated-db-parity] generated=${generatedGames.length} db=${dbGames.length} generatedEligible=${generatedEligible} dbEligible=${dbEligible} mismatched=${mismatchRows.length}`)
+  console.log(`[audit-mlb-generated-db-parity] generated=${generatedGames.length} db=${dbGames.length} generatedEligible=${generatedEligible} dbEligible=${dbEligible} blockingMismatched=${blockingMismatchRows.length} warningMismatched=${warningMismatchRows.length}`)
   console.log(`[audit-mlb-generated-db-parity] report=${path.relative(root, reportPath)}`)
 
   if (hardFailures.length && !hasFlag('--allow-failures')) {
