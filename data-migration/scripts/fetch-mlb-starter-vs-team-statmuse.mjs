@@ -2,6 +2,8 @@ import { execFileSync } from 'node:child_process'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 
+import { writeMlbSourceStatus } from '../../scripts/lib/mlb-source-status.mjs'
+
 const __filename = fileURLToPath(import.meta.url)
 const rootDir = path.resolve(path.dirname(__filename), '..', '..')
 const defaultDbPath = path.join(rootDir, 'data-private', 'warehouse', 'sports', 'mlb', 'sql-mlb.db')
@@ -270,6 +272,7 @@ const insertRows = (rows) => {
 const main = async () => {
   ensureTable()
   const starters = starterRowsForGames(await loadGames())
+  const startedAt = new Date().toISOString()
   const fetched = []
   const errors = []
   const noHistory = []
@@ -318,6 +321,32 @@ const main = async () => {
   }
 
   insertRows(fetched)
+  if (!dryRun) {
+    writeMlbSourceStatus({
+      dbPath,
+      sourceName: 'statmuse_starter_vs_team',
+      sourceFamily: 'starter-history',
+      sourceDate: date,
+      runReason: 'daily-starter-vs-team-statmuse',
+      requestedUrl: 'https://www.statmuse.com/mlb/ask/{pitcher}-vs-{opponent}',
+      cacheStatus: 'network',
+      cacheTtlHours: 12,
+      status: errors.length ? (fetched.length ? 'partial' : 'missing') : 'success',
+      completenessStatus: errors.length ? (fetched.length ? 'partial' : 'missing') : 'complete',
+      expectedItemCount: starters.length,
+      actualItemCount: fetched.length,
+      missingItemCount: errors.length,
+      unresolvedCount: errors.length,
+      startedAt,
+      finishedAt: new Date().toISOString(),
+      notes: {
+        starterCount: starters.length,
+        inserted: fetched.length,
+        noHistoryCount: noHistory.length,
+        errorCount: errors.length
+      }
+    })
+  }
   console.log(JSON.stringify({
     ok: errors.length === 0,
     date,
