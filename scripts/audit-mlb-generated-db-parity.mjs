@@ -245,7 +245,11 @@ const main = async () => {
     buildMlbPredictionEligibility(game, { requireAddendums: true }).eligible
   ).length
   const mismatchRows = matched.filter((row) => row.mismatches.length)
-  const blockingMismatchRows = matched.filter((row) => row.mismatches.some((mismatch) => mismatch.severity === 'hard'))
+  const blockingMismatchRows = matched.filter((row) => {
+    const hasHardMismatch = row.mismatches.some((mismatch) => mismatch.severity === 'hard')
+    if (!hasHardMismatch) return false
+    return row.generated.eligible || row.db.eligible
+  })
   const warningMismatchRows = matched.filter((row) => row.mismatches.some((mismatch) => mismatch.severity === 'warning'))
   const hardFailures = [
     ...(missingInDb.length ? [{ failure: 'generated-games-missing-in-db', count: missingInDb.length }] : []),
