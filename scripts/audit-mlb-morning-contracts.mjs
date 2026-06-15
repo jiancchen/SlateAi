@@ -223,7 +223,7 @@ const auditPublicSchema = (games, failures) => {
 
 const auditPredictionEligibility = (games, failures) => {
   for (const game of games) {
-    const eligibility = game.predictionEligibility || buildMlbPredictionEligibility(game, { requireAddendums: true })
+    const eligibility = buildMlbPredictionEligibility(game, { requireAddendums: true })
     if (!eligibility.eligible) {
       fail(failures, 'prediction-eligibility-failed', {
         gameId: game.id,

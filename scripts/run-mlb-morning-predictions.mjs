@@ -257,6 +257,10 @@ const main = async () => {
 
   steps.push(await runPublicMlbAudit(date, dryRun))
 
+  steps.push(run('Prediction eligibility and addendum contract audit', 'npm', [
+    'run', 'data:audit:mlb-prediction-contract', '--', '--date', date
+  ], { dryRun, allowFailure: allowSourceGaps }))
+
   steps.push(run('Hard source-contract audit', 'npm', [
     'run', 'data:audit:mlb-morning-contracts', '--', '--date', date
   ], { dryRun, allowFailure: allowSourceGaps }))

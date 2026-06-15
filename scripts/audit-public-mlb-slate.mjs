@@ -89,9 +89,7 @@ const summarizeGame = (game) => {
     starterSplitStatus(game?.starterContext?.away),
     starterSplitStatus(game?.starterContext?.home)
   ]
-  const predictionEligibility =
-    game?.predictionEligibility ||
-    buildMlbPredictionEligibility(game, { requireAddendums: true })
+  const predictionEligibility = buildMlbPredictionEligibility(game, { requireAddendums: true })
 
   return {
     id: game?.id,
