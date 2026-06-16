@@ -1,0 +1,485 @@
+{
+  "build": "mlb-starter-profile-addendum",
+  "modelVersion": "MLB-SP1.2026-06-15.v0.1",
+  "date": "2026-06-12",
+  "generatedAt": "2026-06-15T17:44:17.603Z",
+  "expectedProfiles": 30,
+  "insertedProfiles": 30,
+  "sourceStatus": "success",
+  "warnings": [],
+  "byGame": {
+    "mlb-823370": [
+      {
+        "teamRole": "away",
+        "teamName": "Miami Marlins",
+        "pitcherName": "Sandy Alcantara",
+        "collapseRiskScore": 60.5,
+        "starterProfileScore": 41.5,
+        "handednessFragilityScore": 61.4,
+        "weatherFragilityScore": 64.7,
+        "pitchMixFitScore": 59,
+        "confidenceScore": 95,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Pittsburgh Pirates",
+        "pitcherName": "Braxton Ashcraft",
+        "collapseRiskScore": 52.8,
+        "starterProfileScore": 49.6,
+        "handednessFragilityScore": 43.6,
+        "weatherFragilityScore": 69.3,
+        "pitchMixFitScore": 52.5,
+        "confidenceScore": 95,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag",
+          "weather_profile_conflict_flag"
+        ]
+      }
+    ],
+    "mlb-822726": [
+      {
+        "teamRole": "away",
+        "teamName": "Seattle Mariners",
+        "pitcherName": "Bryce Miller",
+        "collapseRiskScore": 49.5,
+        "starterProfileScore": 53.1,
+        "handednessFragilityScore": 33.1,
+        "weatherFragilityScore": 70.4,
+        "pitchMixFitScore": 53.4,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Washington Nationals",
+        "pitcherName": "Zack Littell",
+        "collapseRiskScore": 62.2,
+        "starterProfileScore": 38.6,
+        "handednessFragilityScore": 69.7,
+        "weatherFragilityScore": 70.7,
+        "pitchMixFitScore": 58.2,
+        "confidenceScore": 92.4,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag",
+          "handedness_mismatch_flag"
+        ]
+      }
+    ],
+    "mlb-824826": [
+      {
+        "teamRole": "away",
+        "teamName": "San Diego Padres",
+        "pitcherName": "Griffin Canning",
+        "collapseRiskScore": 65.4,
+        "starterProfileScore": 39.1,
+        "handednessFragilityScore": 60,
+        "weatherFragilityScore": 81.5,
+        "pitchMixFitScore": 59.8,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Baltimore Orioles",
+        "pitcherName": "Shane Baz",
+        "collapseRiskScore": 52.4,
+        "starterProfileScore": 51.4,
+        "handednessFragilityScore": 23.5,
+        "weatherFragilityScore": 79.8,
+        "pitchMixFitScore": 57.6,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      }
+    ],
+    "mlb-824425": [
+      {
+        "teamRole": "away",
+        "teamName": "Detroit Tigers",
+        "pitcherName": "Jack Flaherty",
+        "collapseRiskScore": 54,
+        "starterProfileScore": 48.7,
+        "handednessFragilityScore": 53.3,
+        "weatherFragilityScore": 43.4,
+        "pitchMixFitScore": 54.9,
+        "confidenceScore": 97.6,
+        "flags": []
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Cleveland Guardians",
+        "pitcherName": "Tanner Bibee",
+        "collapseRiskScore": 55,
+        "starterProfileScore": 45.3,
+        "handednessFragilityScore": 63.3,
+        "weatherFragilityScore": 43.4,
+        "pitchMixFitScore": 58,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "repeat_opponent_flag"
+        ]
+      }
+    ],
+    "mlb-824752": [
+      {
+        "teamRole": "away",
+        "teamName": "Texas Rangers",
+        "pitcherName": "Jack Leiter",
+        "collapseRiskScore": 53.2,
+        "starterProfileScore": 49.8,
+        "handednessFragilityScore": 40.7,
+        "weatherFragilityScore": 62,
+        "pitchMixFitScore": 55.6,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Boston Red Sox",
+        "pitcherName": "Sonny Gray",
+        "collapseRiskScore": 50.7,
+        "starterProfileScore": 50.6,
+        "handednessFragilityScore": 40.9,
+        "weatherFragilityScore": 63.4,
+        "pitchMixFitScore": 53,
+        "confidenceScore": 89.8,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-824507": [
+      {
+        "teamRole": "away",
+        "teamName": "Arizona Diamondbacks",
+        "pitcherName": "Eduardo Rodriguez",
+        "collapseRiskScore": 54.7,
+        "starterProfileScore": 45.2,
+        "handednessFragilityScore": 52.7,
+        "weatherFragilityScore": 76.6,
+        "pitchMixFitScore": 55.9,
+        "confidenceScore": 92.4,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Cincinnati Reds",
+        "pitcherName": "Nick Lodolo",
+        "collapseRiskScore": 69.6,
+        "starterProfileScore": 31.9,
+        "handednessFragilityScore": 84.6,
+        "weatherFragilityScore": 78.6,
+        "pitchMixFitScore": 62,
+        "confidenceScore": 95,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag",
+          "handedness_mismatch_flag",
+          "starter_collapse_risk_flag"
+        ]
+      }
+    ],
+    "mlb-823617": [
+      {
+        "teamRole": "away",
+        "teamName": "Atlanta Braves",
+        "pitcherName": "Spencer Strider",
+        "collapseRiskScore": 47.3,
+        "starterProfileScore": 53.8,
+        "handednessFragilityScore": 41.7,
+        "weatherFragilityScore": 46.5,
+        "pitchMixFitScore": 54.8,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "New York Mets",
+        "pitcherName": "Nolan McLean",
+        "collapseRiskScore": 48.1,
+        "starterProfileScore": 53.5,
+        "handednessFragilityScore": 41.9,
+        "weatherFragilityScore": 46.5,
+        "pitchMixFitScore": 53,
+        "confidenceScore": 89.8,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      }
+    ],
+    "mlb-822803": [
+      {
+        "teamRole": "away",
+        "teamName": "New York Yankees",
+        "pitcherName": "Ryan Weathers",
+        "collapseRiskScore": 53.9,
+        "starterProfileScore": 50.7,
+        "handednessFragilityScore": 40.7,
+        "weatherFragilityScore": 50.6,
+        "pitchMixFitScore": 55.5,
+        "confidenceScore": 95,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "repeat_opponent_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Toronto Blue Jays",
+        "pitcherName": "Trey Yesavage",
+        "collapseRiskScore": 51.1,
+        "starterProfileScore": 50.6,
+        "handednessFragilityScore": 48.1,
+        "weatherFragilityScore": 50.6,
+        "pitchMixFitScore": 52.2,
+        "confidenceScore": 92.4,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "repeat_opponent_flag"
+        ]
+      }
+    ],
+    "mlb-824588": [
+      {
+        "teamRole": "away",
+        "teamName": "Los Angeles Dodgers",
+        "pitcherName": "Roki Sasaki",
+        "collapseRiskScore": 56.5,
+        "starterProfileScore": 43.9,
+        "handednessFragilityScore": 59.6,
+        "weatherFragilityScore": 66.9,
+        "pitchMixFitScore": 60.3,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Chicago White Sox",
+        "pitcherName": "Anthony Kay",
+        "collapseRiskScore": 57.4,
+        "starterProfileScore": 43.9,
+        "handednessFragilityScore": 55.4,
+        "weatherFragilityScore": 64.8,
+        "pitchMixFitScore": 58.5,
+        "confidenceScore": 89.8,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-823778": [
+      {
+        "teamRole": "away",
+        "teamName": "Philadelphia Phillies",
+        "pitcherName": "Tanner Banks",
+        "collapseRiskScore": 55.6,
+        "starterProfileScore": 50.6,
+        "handednessFragilityScore": 42,
+        "weatherFragilityScore": 42.2,
+        "pitchMixFitScore": 49.8,
+        "confidenceScore": 95,
+        "flags": []
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Milwaukee Brewers",
+        "pitcherName": "Jacob Misiorowski",
+        "collapseRiskScore": 40.2,
+        "starterProfileScore": 61.8,
+        "handednessFragilityScore": 22.1,
+        "weatherFragilityScore": 42.2,
+        "pitchMixFitScore": 53.9,
+        "confidenceScore": 95,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      }
+    ],
+    "mlb-824102": [
+      {
+        "teamRole": "away",
+        "teamName": "Houston Astros",
+        "pitcherName": "Tatsuya Imai",
+        "collapseRiskScore": 51.7,
+        "starterProfileScore": 51.7,
+        "handednessFragilityScore": 35,
+        "weatherFragilityScore": 62.3,
+        "pitchMixFitScore": 54.2,
+        "confidenceScore": 92.4,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Kansas City Royals",
+        "pitcherName": "Luinder Avila",
+        "collapseRiskScore": 58,
+        "starterProfileScore": 43.5,
+        "handednessFragilityScore": 59.6,
+        "weatherFragilityScore": 61.7,
+        "pitchMixFitScore": 58.3,
+        "confidenceScore": 92.4,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-823695": [
+      {
+        "teamRole": "away",
+        "teamName": "St. Louis Cardinals",
+        "pitcherName": "Kyle Leahy",
+        "collapseRiskScore": 60.7,
+        "starterProfileScore": 40.5,
+        "handednessFragilityScore": 67.2,
+        "weatherFragilityScore": 64.6,
+        "pitchMixFitScore": 57.7,
+        "confidenceScore": 92.4,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "weather_profile_conflict_flag",
+          "handedness_mismatch_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Minnesota Twins",
+        "pitcherName": "Joe Ryan",
+        "collapseRiskScore": 51.9,
+        "starterProfileScore": 50.1,
+        "handednessFragilityScore": 42.3,
+        "weatherFragilityScore": 64.6,
+        "pitchMixFitScore": 56.4,
+        "confidenceScore": 89.8,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      }
+    ],
+    "mlb-824020": [
+      {
+        "teamRole": "away",
+        "teamName": "Tampa Bay Rays",
+        "pitcherName": "Shane McClanahan",
+        "collapseRiskScore": 54.9,
+        "starterProfileScore": 46,
+        "handednessFragilityScore": 51.4,
+        "weatherFragilityScore": 70.4,
+        "pitchMixFitScore": 59,
+        "confidenceScore": 95,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "repeat_opponent_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Los Angeles Angels",
+        "pitcherName": "Sam Aldegheri",
+        "collapseRiskScore": 44.2,
+        "starterProfileScore": 58.2,
+        "handednessFragilityScore": 17,
+        "weatherFragilityScore": 70.4,
+        "pitchMixFitScore": 46.6,
+        "confidenceScore": 95,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-824997": [
+      {
+        "teamRole": "away",
+        "teamName": "Colorado Rockies",
+        "pitcherName": "Sean Sullivan",
+        "collapseRiskScore": 49,
+        "starterProfileScore": 54.9,
+        "handednessFragilityScore": 12,
+        "weatherFragilityScore": 75.2,
+        "pitchMixFitScore": 61.9,
+        "confidenceScore": 69,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag",
+          "stale_or_missing_source_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Athletics",
+        "pitcherName": "Gage Jump",
+        "collapseRiskScore": 50.2,
+        "starterProfileScore": 55.1,
+        "handednessFragilityScore": 14.7,
+        "weatherFragilityScore": 74.2,
+        "pitchMixFitScore": 50.9,
+        "confidenceScore": 92.4,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      }
+    ],
+    "mlb-823211": [
+      {
+        "teamRole": "away",
+        "teamName": "Chicago Cubs",
+        "pitcherName": "Javier Assad",
+        "collapseRiskScore": 53.9,
+        "starterProfileScore": 47.3,
+        "handednessFragilityScore": 51.1,
+        "weatherFragilityScore": 42.1,
+        "pitchMixFitScore": 61.4,
+        "confidenceScore": 97.6,
+        "flags": []
+      },
+      {
+        "teamRole": "home",
+        "teamName": "San Francisco Giants",
+        "pitcherName": "Landen Roupp",
+        "collapseRiskScore": 49.4,
+        "starterProfileScore": 53,
+        "handednessFragilityScore": 41.3,
+        "weatherFragilityScore": 42.1,
+        "pitchMixFitScore": 54.5,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      }
+    ]
+  }
+}

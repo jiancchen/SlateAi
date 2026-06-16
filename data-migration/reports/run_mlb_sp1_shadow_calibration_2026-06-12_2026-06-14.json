@@ -1,0 +1,134 @@
+{
+  "run": "mlb-sp1-shadow-calibration",
+  "runId": "mlb-sp1-calibration-2026-06-12_2026-06-14-20260615174403",
+  "slug": "2026-06-12_2026-06-14",
+  "startDate": "2026-06-12",
+  "endDate": "2026-06-14",
+  "dates": [
+    "2026-06-12",
+    "2026-06-13",
+    "2026-06-14"
+  ],
+  "generatedAt": "2026-06-15T17:45:06.420Z",
+  "dryRun": false,
+  "continueOnError": true,
+  "skipped": {
+    "splits": false,
+    "splitAudit": false,
+    "build": false,
+    "sp1Audit": false,
+    "backtest": false
+  },
+  "backtestReport": "data-migration/reports/backtest_mlb_sp1_2026-06-12_2026-06-14.json",
+  "steps": [
+    {
+      "label": "Warehouse canonical split families 2026-06-12",
+      "command": "npm run data:warehouse:mlb-player-split-families -- --date 2026-06-12",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:44:03.600Z",
+      "finishedAt": "2026-06-15T17:44:14.710Z",
+      "durationMs": 11110
+    },
+    {
+      "label": "Audit canonical split families 2026-06-12",
+      "command": "npm run data:audit:mlb-player-split-families -- --date 2026-06-12",
+      "status": "failed_allowed",
+      "startedAt": "2026-06-15T17:44:14.710Z",
+      "finishedAt": "2026-06-15T17:44:14.879Z",
+      "durationMs": 169,
+      "error": "Command failed: npm run data:audit:mlb-player-split-families -- --date 2026-06-12"
+    },
+    {
+      "label": "Build MLB-SP1 profiles 2026-06-12",
+      "command": "npm run data:build:mlb-sp1 -- --date 2026-06-12",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:44:14.879Z",
+      "finishedAt": "2026-06-15T17:44:17.616Z",
+      "durationMs": 2737
+    },
+    {
+      "label": "Audit MLB-SP1 profiles 2026-06-12",
+      "command": "npm run data:audit:mlb-sp1 -- --date 2026-06-12",
+      "status": "failed_allowed",
+      "startedAt": "2026-06-15T17:44:17.616Z",
+      "finishedAt": "2026-06-15T17:44:18.015Z",
+      "durationMs": 399,
+      "error": "Command failed: npm run data:audit:mlb-sp1 -- --date 2026-06-12"
+    },
+    {
+      "label": "Warehouse canonical split families 2026-06-13",
+      "command": "npm run data:warehouse:mlb-player-split-families -- --date 2026-06-13",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:44:18.015Z",
+      "finishedAt": "2026-06-15T17:44:28.291Z",
+      "durationMs": 10276
+    },
+    {
+      "label": "Audit canonical split families 2026-06-13",
+      "command": "npm run data:audit:mlb-player-split-families -- --date 2026-06-13",
+      "status": "failed_allowed",
+      "startedAt": "2026-06-15T17:44:28.291Z",
+      "finishedAt": "2026-06-15T17:44:28.464Z",
+      "durationMs": 173,
+      "error": "Command failed: npm run data:audit:mlb-player-split-families -- --date 2026-06-13"
+    },
+    {
+      "label": "Build MLB-SP1 profiles 2026-06-13",
+      "command": "npm run data:build:mlb-sp1 -- --date 2026-06-13",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:44:28.464Z",
+      "finishedAt": "2026-06-15T17:44:33.938Z",
+      "durationMs": 5474
+    },
+    {
+      "label": "Audit MLB-SP1 profiles 2026-06-13",
+      "command": "npm run data:audit:mlb-sp1 -- --date 2026-06-13",
+      "status": "failed_allowed",
+      "startedAt": "2026-06-15T17:44:33.938Z",
+      "finishedAt": "2026-06-15T17:44:34.352Z",
+      "durationMs": 414,
+      "error": "Command failed: npm run data:audit:mlb-sp1 -- --date 2026-06-13"
+    },
+    {
+      "label": "Warehouse canonical split families 2026-06-14",
+      "command": "npm run data:warehouse:mlb-player-split-families -- --date 2026-06-14",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:44:34.352Z",
+      "finishedAt": "2026-06-15T17:44:51.648Z",
+      "durationMs": 17296
+    },
+    {
+      "label": "Audit canonical split families 2026-06-14",
+      "command": "npm run data:audit:mlb-player-split-families -- --date 2026-06-14",
+      "status": "failed_allowed",
+      "startedAt": "2026-06-15T17:44:51.648Z",
+      "finishedAt": "2026-06-15T17:44:52.257Z",
+      "durationMs": 609,
+      "error": "Command failed: npm run data:audit:mlb-player-split-families -- --date 2026-06-14"
+    },
+    {
+      "label": "Build MLB-SP1 profiles 2026-06-14",
+      "command": "npm run data:build:mlb-sp1 -- --date 2026-06-14",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:44:52.257Z",
+      "finishedAt": "2026-06-15T17:45:00.239Z",
+      "durationMs": 7982
+    },
+    {
+      "label": "Audit MLB-SP1 profiles 2026-06-14",
+      "command": "npm run data:audit:mlb-sp1 -- --date 2026-06-14",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:45:00.239Z",
+      "finishedAt": "2026-06-15T17:45:01.252Z",
+      "durationMs": 1013
+    },
+    {
+      "label": "Backtest MLB-SP1 shadow 2026-06-12_2026-06-14",
+      "command": "npm run data:backtest:mlb-sp1 -- --start-date 2026-06-12 --end-date 2026-06-14",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:45:01.252Z",
+      "finishedAt": "2026-06-15T17:45:06.418Z",
+      "durationMs": 5166
+    }
+  ]
+}

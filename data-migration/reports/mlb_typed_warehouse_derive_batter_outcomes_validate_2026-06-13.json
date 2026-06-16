@@ -1,0 +1,34 @@
+{
+  "date": "2026-06-13",
+  "errors": [],
+  "generated_at": "2026-06-15T17:51:09.337665+00:00",
+  "ok": true,
+  "orphan_checks": {
+    "batter_game_outcomes": 0,
+    "home_run_events": 0,
+    "phase_outcomes": 0,
+    "pitcher_appearances": 0,
+    "player_game_batting": 0,
+    "starting_pitcher_game_logs": 0,
+    "team_game_stats": 0
+  },
+  "parser_module": "pipeline/sources/mlb/normalization/results.py",
+  "script": "data-migration/scripts/validate_mlb_results_normalization.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 162,
+  "source_table_counts": {
+    "mlb_phase_outcomes_daily": 30,
+    "mlb_pitcher_appearances": 132
+  },
+  "target_counts": {
+    "batter_game_outcomes": 0,
+    "game_outcomes": 15,
+    "home_run_events": 0,
+    "phase_outcomes": 30,
+    "pitcher_appearances": 321,
+    "player_game_batting": 0,
+    "starting_pitcher_game_logs": 0,
+    "team_game_stats": 34
+  },
+  "unresolved_result_entities": 0
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-13",
+  "dry_run": false,
+  "family": "mlb_results",
+  "generated_at": "2026-06-15T17:51:09.177620+00:00",
+  "inserted": {
+    "phase_outcomes": 30,
+    "pitcher_appearances": 132
+  },
+  "ok": true,
+  "parsed_rows": 162,
+  "parser_module": "pipeline/sources/mlb/normalization/results.py",
+  "script": "data-migration/scripts/normalize_mlb_results.py",
+  "source_db": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "source_rows": 162,
+  "source_tables": {
+    "mlb_phase_outcomes_daily": 30,
+    "mlb_pitcher_appearances": 132
+  },
+  "targets": {
+    "phase_outcomes": 30,
+    "pitcher_appearances": 132
+  },
+  "unparsed_rows": 0,
+  "unresolved_rows_added": 0
+}

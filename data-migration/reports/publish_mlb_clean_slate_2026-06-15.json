@@ -1,0 +1,43 @@
+{
+  "run": "publish-mlb-clean-slate",
+  "date": "2026-06-15",
+  "generatedAt": "2026-06-15T21:53:49.839Z",
+  "options": {
+    "refresh": false,
+    "deploy": false,
+    "skipEspn": false,
+    "skipGenerate": false,
+    "preservePublicSlates": true,
+    "preserveStarted": false,
+    "startedCutoffMinutes": null,
+    "allowKnownAuditFailures": false,
+    "liveBase": null
+  },
+  "publish": {
+    "date": "2026-06-15",
+    "publishedMlbGames": 10,
+    "preservedStartedMlbGames": 0,
+    "omittedMlbGames": [],
+    "preservedNonMlbGames": 0,
+    "preserveStarted": false,
+    "startedCutoffMinutes": 893,
+    "summaryPath": "published-data/slates/2026-06-15/summary.json"
+  },
+  "audit": {
+    "status": "passed",
+    "reportPath": "data-migration/reports/audit_public_mlb_slate_2026-06-15_local.json",
+    "failures": [],
+    "waiverUsed": false,
+    "allowedFailures": [],
+    "unexpectedFailures": []
+  },
+  "waiverPolicy": {
+    "knownAllowedAuditFailures": [
+      "pitcher-strikeout-props-missing-draftkings-lineage",
+      "missing-bridge-chain",
+      "missing-rp36-shadow"
+    ],
+    "waiverRequired": false,
+    "waiverUsed": false
+  }
+}

@@ -1,0 +1,4091 @@
+{
+  "audit": "mlb-generated-db-parity",
+  "date": "2026-06-14",
+  "generatedAt": "2026-06-15T10:36:38.003Z",
+  "status": "pass",
+  "summary": {
+    "generatedGames": 14,
+    "dbGames": 14,
+    "generatedEligible": 14,
+    "dbEligible": 14,
+    "missingInDb": 0,
+    "extraInDb": 0,
+    "matchedGames": 14,
+    "mismatchedMatchedGames": 14,
+    "blockingMismatchedGames": 0,
+    "warningMismatchedGames": 14
+  },
+  "hardFailures": [],
+  "missingInDb": [],
+  "extraInDb": [],
+  "matched": [
+    {
+      "key": "pk:823368",
+      "id": "marlins-pirates",
+      "title": "Marlins @ Pirates",
+      "generated": {
+        "id": "marlins-pirates",
+        "gamePk": 823368,
+        "title": "Marlins @ Pirates",
+        "start": "9:15 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Marlins",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.310Z",
+            "sample": [
+              {
+                "name": "Liam Hicks",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Otto Lopez",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Kyle Stowers",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Pirates",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.310Z",
+            "sample": [
+              {
+                "name": "Spencer Horwitz",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Brandon Lowe",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Bryan Reynolds",
+                "bats": "S",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Max Meyer",
+            "id": 676974,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Paul Skenes",
+            "id": 694973,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Marlins",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "marlins-pirates",
+        "gamePk": 823368,
+        "title": "Marlins @ Pirates",
+        "start": "9:15 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Marlins",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.958Z",
+            "sample": [
+              {
+                "name": "Liam Hicks",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Otto Lopez",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Kyle Stowers",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Pirates",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.958Z",
+            "sample": [
+              {
+                "name": "Spencer Horwitz",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Brandon Lowe",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Bryan Reynolds",
+                "bats": "S",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Max Meyer",
+            "id": 676974,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Paul Skenes",
+            "id": 694973,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Pirates",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "analysis",
+          "severity": "warning",
+          "generated": {
+            "available": true,
+            "participant": "Marlins",
+            "confidence": 52,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          },
+          "db": {
+            "available": true,
+            "participant": "Pirates",
+            "confidence": 52,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:822722",
+      "id": "mariners-nationals",
+      "title": "Mariners @ Nationals",
+      "generated": {
+        "id": "mariners-nationals",
+        "gamePk": 822722,
+        "title": "Mariners @ Nationals",
+        "start": "10:35 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Mariners",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.311Z",
+            "sample": [
+              {
+                "name": "Cole Young",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Julio Rodríguez",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Josh Naylor",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Nationals",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.311Z",
+            "sample": [
+              {
+                "name": "James Wood",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Luis García Jr.",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Dylan Crews",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Emerson Hancock",
+            "id": 676106,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Miles Mikolas",
+            "id": 571945,
+            "hand": "R",
+            "usageStatus": "long-layoff",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Mariners",
+          "confidence": 63,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "mariners-nationals",
+        "gamePk": 822722,
+        "title": "Mariners @ Nationals",
+        "start": "10:35 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Mariners",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.968Z",
+            "sample": [
+              {
+                "name": "Cole Young",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Julio Rodríguez",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Josh Naylor",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Nationals",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.968Z",
+            "sample": [
+              {
+                "name": "James Wood",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Luis García Jr.",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Dylan Crews",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Emerson Hancock",
+            "id": 676106,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Miles Mikolas",
+            "id": 571945,
+            "hand": "R",
+            "usageStatus": "tiny-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Mariners",
+          "confidence": 55,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "long-layoff",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "tiny-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "analysis",
+          "severity": "warning",
+          "generated": {
+            "available": true,
+            "participant": "Mariners",
+            "confidence": 63,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          },
+          "db": {
+            "available": true,
+            "participant": "Mariners",
+            "confidence": 55,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:824823",
+      "id": "padres-orioles",
+      "title": "Padres @ Orioles",
+      "generated": {
+        "id": "padres-orioles",
+        "gamePk": 824823,
+        "title": "Padres @ Orioles",
+        "start": "10:35 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Padres",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.312Z",
+            "sample": [
+              {
+                "name": "Fernando Tatis Jr.",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Jackson Merrill",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Manny Machado",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Orioles",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.312Z",
+            "sample": [
+              {
+                "name": "Taylor Ward",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Gunnar Henderson",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Adley Rutschman",
+                "bats": "S",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Walker Buehler",
+            "id": 621111,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Trevor Rogers",
+            "id": 669432,
+            "hand": "L",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Padres",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "padres-orioles",
+        "gamePk": 824823,
+        "title": "Padres @ Orioles",
+        "start": "10:35 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Padres",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.963Z",
+            "sample": [
+              {
+                "name": "Fernando Tatis Jr.",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Jackson Merrill",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Manny Machado",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Orioles",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.963Z",
+            "sample": [
+              {
+                "name": "Taylor Ward",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Gunnar Henderson",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Adley Rutschman",
+                "bats": "S",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Walker Buehler",
+            "id": 621111,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Trevor Rogers",
+            "id": 669432,
+            "hand": "L",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Orioles",
+          "confidence": 58,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "analysis",
+          "severity": "warning",
+          "generated": {
+            "available": true,
+            "participant": "Padres",
+            "confidence": 52,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          },
+          "db": {
+            "available": true,
+            "participant": "Orioles",
+            "confidence": 58,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:822801",
+      "id": "yankees-blue-jays",
+      "title": "Yankees @ Blue Jays",
+      "generated": {
+        "id": "yankees-blue-jays",
+        "gamePk": 822801,
+        "title": "Yankees @ Blue Jays",
+        "start": "10:37 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Yankees",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.314Z",
+            "sample": [
+              {
+                "name": "Paul Goldschmidt",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Ben Rice",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Jasson Domínguez",
+                "bats": "S",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Blue Jays",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.314Z",
+            "sample": [
+              {
+                "name": "George Springer",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Nathan Lukes",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Alejandro Kirk",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Will Warren",
+            "id": 701542,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Patrick Corbin",
+            "id": 571578,
+            "hand": "L",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Yankees",
+          "confidence": 56,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "yankees-blue-jays",
+        "gamePk": 822801,
+        "title": "Yankees @ Blue Jays",
+        "start": "10:37 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Yankees",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.971Z",
+            "sample": [
+              {
+                "name": "Paul Goldschmidt",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Ben Rice",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Jasson Domínguez",
+                "bats": "S",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Blue Jays",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.971Z",
+            "sample": [
+              {
+                "name": "George Springer",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Nathan Lukes",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Alejandro Kirk",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Will Warren",
+            "id": 701542,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Patrick Corbin",
+            "id": 571578,
+            "hand": "L",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Yankees",
+          "confidence": 65,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "analysis",
+          "severity": "warning",
+          "generated": {
+            "available": true,
+            "participant": "Yankees",
+            "confidence": 56,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          },
+          "db": {
+            "available": true,
+            "participant": "Yankees",
+            "confidence": 65,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:823615",
+      "id": "braves-mets",
+      "title": "Braves @ Mets",
+      "generated": {
+        "id": "braves-mets",
+        "gamePk": 823615,
+        "title": "Braves @ Mets",
+        "start": "10:40 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Braves",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.315Z",
+            "sample": [
+              {
+                "name": "Michael Harris II",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Mauricio Dubón",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Matt Olson",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Mets",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.315Z",
+            "sample": [
+              {
+                "name": "Carson Benge",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Bo Bichette",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Juan Soto",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Bryce Elder",
+            "id": 693821,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Freddy Peralta",
+            "id": 642547,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Braves",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "braves-mets",
+        "gamePk": 823615,
+        "title": "Braves @ Mets",
+        "start": "10:40 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Braves",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.978Z",
+            "sample": [
+              {
+                "name": "Michael Harris II",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Mauricio Dubón",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Matt Olson",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Mets",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.978Z",
+            "sample": [
+              {
+                "name": "Carson Benge",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Bo Bichette",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Juan Soto",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Bryce Elder",
+            "id": 693821,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Freddy Peralta",
+            "id": 642547,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Braves",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:824506",
+      "id": "diamondbacks-reds",
+      "title": "Diamondbacks @ Reds",
+      "generated": {
+        "id": "diamondbacks-reds",
+        "gamePk": 824506,
+        "title": "Diamondbacks @ Reds",
+        "start": "10:40 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Diamondbacks",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.316Z",
+            "sample": [
+              {
+                "name": "Ketel Marte",
+                "bats": "S",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Corbin Carroll",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Gabriel Moreno",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Reds",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.316Z",
+            "sample": [
+              {
+                "name": "Blake Dunn",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "JJ Bleday",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Sal Stewart",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Zac Gallen",
+            "id": 668678,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Andrew Abbott",
+            "id": 671096,
+            "hand": "L",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Reds",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "diamondbacks-reds",
+        "gamePk": 824506,
+        "title": "Diamondbacks @ Reds",
+        "start": "10:40 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Diamondbacks",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.974Z",
+            "sample": [
+              {
+                "name": "Ketel Marte",
+                "bats": "S",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Corbin Carroll",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Gabriel Moreno",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Reds",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.974Z",
+            "sample": [
+              {
+                "name": "Blake Dunn",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "JJ Bleday",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Sal Stewart",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Zac Gallen",
+            "id": 668678,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Andrew Abbott",
+            "id": 671096,
+            "hand": "L",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Reds",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:824099",
+      "id": "astros-royals",
+      "title": "Astros @ Royals",
+      "generated": {
+        "id": "astros-royals",
+        "gamePk": 824099,
+        "title": "Astros @ Royals",
+        "start": "11:10 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Astros",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.318Z",
+            "sample": [
+              {
+                "name": "Jeremy Peña",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Yordan Alvarez",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Christian Walker",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Royals",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.318Z",
+            "sample": [
+              {
+                "name": "Carter Jensen",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Bobby Witt Jr.",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Jac Caglianone",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Spencer Arrighetti",
+            "id": 681293,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Stephen Kolek",
+            "id": 663568,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 17,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Astros",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "astros-royals",
+        "gamePk": 824099,
+        "title": "Astros @ Royals",
+        "start": "11:10 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Astros",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.981Z",
+            "sample": [
+              {
+                "name": "Jeremy Peña",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Yordan Alvarez",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Christian Walker",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Royals",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.981Z",
+            "sample": [
+              {
+                "name": "Carter Jensen",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Bobby Witt Jr.",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Jac Caglianone",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Spencer Arrighetti",
+            "id": 681293,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Stephen Kolek",
+            "id": 663568,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 17,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Astros",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:823693",
+      "id": "cardinals-twins",
+      "title": "Cardinals @ Twins",
+      "generated": {
+        "id": "cardinals-twins",
+        "gamePk": 823693,
+        "title": "Cardinals @ Twins",
+        "start": "11:10 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Cardinals",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.319Z",
+            "sample": [
+              {
+                "name": "JJ Wetherholt",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Iván Herrera",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Alec Burleson",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Twins",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.319Z",
+            "sample": [
+              {
+                "name": "Trevor Larnach",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Byron Buxton",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Kody Clemens",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Michael McGreevy",
+            "id": 700241,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Taj Bradley",
+            "id": 671737,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Cardinals",
+          "confidence": 65,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "cardinals-twins",
+        "gamePk": 823693,
+        "title": "Cardinals @ Twins",
+        "start": "11:10 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Cardinals",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.990Z",
+            "sample": [
+              {
+                "name": "JJ Wetherholt",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Iván Herrera",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Alec Burleson",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Twins",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.990Z",
+            "sample": [
+              {
+                "name": "Trevor Larnach",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Byron Buxton",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Kody Clemens",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Michael McGreevy",
+            "id": 700241,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Taj Bradley",
+            "id": 671737,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Cardinals",
+          "confidence": 64,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "analysis",
+          "severity": "warning",
+          "generated": {
+            "available": true,
+            "participant": "Cardinals",
+            "confidence": 65,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          },
+          "db": {
+            "available": true,
+            "participant": "Cardinals",
+            "confidence": 64,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:824586",
+      "id": "dodgers-white-sox",
+      "title": "Dodgers @ White Sox",
+      "generated": {
+        "id": "dodgers-white-sox",
+        "gamePk": 824586,
+        "title": "Dodgers @ White Sox",
+        "start": "11:10 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Dodgers",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.320Z",
+            "sample": [
+              {
+                "name": "Shohei Ohtani",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Andy Pages",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Freddie Freeman",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "White Sox",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.320Z",
+            "sample": [
+              {
+                "name": "Sam Antonacci",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Miguel Vargas",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Andrew Benintendi",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Emmet Sheehan",
+            "id": 686218,
+            "hand": "R",
+            "usageStatus": "long-layoff",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Erick Fedde",
+            "id": 607200,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Dodgers",
+          "confidence": 57,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "dodgers-white-sox",
+        "gamePk": 824586,
+        "title": "Dodgers @ White Sox",
+        "start": "11:10 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Dodgers",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.984Z",
+            "sample": [
+              {
+                "name": "Shohei Ohtani",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Andy Pages",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Freddie Freeman",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "White Sox",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.984Z",
+            "sample": [
+              {
+                "name": "Sam Antonacci",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Miguel Vargas",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Andrew Benintendi",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Emmet Sheehan",
+            "id": 686218,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Erick Fedde",
+            "id": 607200,
+            "hand": "R",
+            "usageStatus": "tiny-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Dodgers",
+          "confidence": 65,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "long-layoff",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "tiny-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "analysis",
+          "severity": "warning",
+          "generated": {
+            "available": true,
+            "participant": "Dodgers",
+            "confidence": 57,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          },
+          "db": {
+            "available": true,
+            "participant": "Dodgers",
+            "confidence": 65,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:823777",
+      "id": "phillies-brewers",
+      "title": "Phillies @ Brewers",
+      "generated": {
+        "id": "phillies-brewers",
+        "gamePk": 823777,
+        "title": "Phillies @ Brewers",
+        "start": "11:10 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Phillies",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.321Z",
+            "sample": [
+              {
+                "name": "Kyle Schwarber",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Trea Turner",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Bryce Harper",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Brewers",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.321Z",
+            "sample": [
+              {
+                "name": "Jackson Chourio",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Andrew Vaughn",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "William Contreras",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Cristopher Sánchez",
+            "id": 650911,
+            "hand": "L",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Kyle Harrison",
+            "id": 690986,
+            "hand": "L",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Brewers",
+          "confidence": 64,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "phillies-brewers",
+        "gamePk": 823777,
+        "title": "Phillies @ Brewers",
+        "start": "11:10 AM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Phillies",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.987Z",
+            "sample": [
+              {
+                "name": "Kyle Schwarber",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Trea Turner",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Bryce Harper",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Brewers",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.987Z",
+            "sample": [
+              {
+                "name": "Jackson Chourio",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Andrew Vaughn",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "William Contreras",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Cristopher Sánchez",
+            "id": 650911,
+            "hand": "L",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Kyle Harrison",
+            "id": 690986,
+            "hand": "L",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Phillies",
+          "confidence": 68,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "analysis",
+          "severity": "warning",
+          "generated": {
+            "available": true,
+            "participant": "Brewers",
+            "confidence": 64,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          },
+          "db": {
+            "available": true,
+            "participant": "Phillies",
+            "confidence": 68,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:824994",
+      "id": "rockies-athletics",
+      "title": "Rockies @ Athletics",
+      "generated": {
+        "id": "rockies-athletics",
+        "gamePk": 824994,
+        "title": "Rockies @ Athletics",
+        "start": "12:05 PM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Rockies",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.323Z",
+            "sample": [
+              {
+                "name": "Willi Castro",
+                "bats": "S",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Tyler Freeman",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "TJ Rumfield",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Athletics",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.323Z",
+            "sample": [
+              {
+                "name": "Lawrence Butler",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Nick Kurtz",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Tyler Soderstrom",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Tomoyuki Sugano",
+            "id": 608372,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Jeffrey Springs",
+            "id": 605488,
+            "hand": "L",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Athletics",
+          "confidence": 59,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "rockies-athletics",
+        "gamePk": 824994,
+        "title": "Rockies @ Athletics",
+        "start": "12:05 PM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Rockies",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.993Z",
+            "sample": [
+              {
+                "name": "Willi Castro",
+                "bats": "S",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Tyler Freeman",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "TJ Rumfield",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Athletics",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.993Z",
+            "sample": [
+              {
+                "name": "Lawrence Butler",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Nick Kurtz",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Tyler Soderstrom",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Tomoyuki Sugano",
+            "id": 608372,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Jeffrey Springs",
+            "id": 605488,
+            "hand": "L",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Athletics",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "analysis",
+          "severity": "warning",
+          "generated": {
+            "available": true,
+            "participant": "Athletics",
+            "confidence": 59,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          },
+          "db": {
+            "available": true,
+            "participant": "Athletics",
+            "confidence": 52,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:823212",
+      "id": "cubs-giants",
+      "title": "Cubs @ Giants",
+      "generated": {
+        "id": "cubs-giants",
+        "gamePk": 823212,
+        "title": "Cubs @ Giants",
+        "start": "12:10 PM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Cubs",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.324Z",
+            "sample": [
+              {
+                "name": "Pete Crow-Armstrong",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Alex Bregman",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Michael Busch",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Giants",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.324Z",
+            "sample": [
+              {
+                "name": "Matt Chapman",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Luis Arraez",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Bryce Eldridge",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Colin Rea",
+            "id": 607067,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Logan Webb",
+            "id": 657277,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Giants",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "cubs-giants",
+        "gamePk": 823212,
+        "title": "Cubs @ Giants",
+        "start": "12:10 PM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Cubs",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.996Z",
+            "sample": [
+              {
+                "name": "Pete Crow-Armstrong",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Alex Bregman",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Michael Busch",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Giants",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.996Z",
+            "sample": [
+              {
+                "name": "Matt Chapman",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Luis Arraez",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Bryce Eldridge",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Colin Rea",
+            "id": 607067,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Logan Webb",
+            "id": 657277,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Giants",
+          "confidence": 71,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "analysis",
+          "severity": "warning",
+          "generated": {
+            "available": true,
+            "participant": "Giants",
+            "confidence": 52,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          },
+          "db": {
+            "available": true,
+            "participant": "Giants",
+            "confidence": 71,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:824021",
+      "id": "rays-angels",
+      "title": "Rays @ Angels",
+      "generated": {
+        "id": "rays-angels",
+        "gamePk": 824021,
+        "title": "Rays @ Angels",
+        "start": "1:07 PM PT",
+        "eligible": true,
+        "status": "projected",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Rays",
+            "status": "partial",
+            "source": "rotowire-supplement",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.325Z",
+            "sample": [
+              {
+                "name": "Chandler Simpson",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Junior Caminero",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Jonathan Aranda",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Angels",
+            "status": "posted",
+            "source": "official-feed",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.325Z",
+            "sample": [
+              {
+                "name": "Zach Neto",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Mike Trout",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Wade Meckler",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Ian Seymour",
+            "id": 693855,
+            "hand": "L",
+            "usageStatus": "tiny-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Grayson Rodriguez",
+            "id": 680570,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 17,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Rays",
+          "confidence": 64,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "rays-angels",
+        "gamePk": 824021,
+        "title": "Rays @ Angels",
+        "start": "1:07 PM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Rays",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.998Z",
+            "sample": [
+              {
+                "name": "Chandler Simpson",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Junior Caminero",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Jonathan Aranda",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Angels",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:37.998Z",
+            "sample": [
+              {
+                "name": "Zach Neto",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Mike Trout",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Wade Meckler",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Ian Seymour",
+            "id": 693855,
+            "hand": "L",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Grayson Rodriguez",
+            "id": 680570,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 17,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Rays",
+          "confidence": 57,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.status",
+          "severity": "warning",
+          "generated": "partial",
+          "db": "posted"
+        },
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "rotowire-supplement",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "tiny-sample",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "official-feed",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "analysis",
+          "severity": "warning",
+          "generated": {
+            "available": true,
+            "participant": "Rays",
+            "confidence": 64,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          },
+          "db": {
+            "available": true,
+            "participant": "Rays",
+            "confidence": 57,
+            "hasProjection": true,
+            "hasFirst5Moneyline": false,
+            "hasTotals": true
+          }
+        }
+      ]
+    },
+    {
+      "key": "pk:824751",
+      "id": "rangers-red-sox",
+      "title": "Rangers @ Red Sox",
+      "generated": {
+        "id": "rangers-red-sox",
+        "gamePk": 824751,
+        "title": "Rangers @ Red Sox",
+        "start": "4:20 PM PT",
+        "eligible": true,
+        "status": "projected",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Rangers",
+            "status": "partial",
+            "source": "rotowire-supplement",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.326Z",
+            "sample": [
+              {
+                "name": "Wyatt Langford",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Corey Seager",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Josh Jung",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Red Sox",
+            "status": "partial",
+            "source": "rotowire-supplement",
+            "count": 9,
+            "snapshot": "2026-06-14T17:34:56.326Z",
+            "sample": [
+              {
+                "name": "Jarren Duran",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Ceddanne Rafaela",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Wilyer Abreu",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Nathan Eovaldi",
+            "id": 543135,
+            "hand": "R",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Connelly Early",
+            "id": 813349,
+            "hand": "L",
+            "usageStatus": "season-only",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Rangers",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "db": {
+        "id": "rangers-red-sox",
+        "gamePk": 824751,
+        "title": "Rangers @ Red Sox",
+        "start": "4:20 PM PT",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "teamName": "Rangers",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:38.001Z",
+            "sample": [
+              {
+                "name": "Wyatt Langford",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Corey Seager",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Josh Jung",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          },
+          "home": {
+            "teamName": "Red Sox",
+            "status": "posted",
+            "source": "typed-db",
+            "count": 9,
+            "snapshot": "2026-06-15T10:36:38.001Z",
+            "sample": [
+              {
+                "name": "Jarren Duran",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Ceddanne Rafaela",
+                "bats": "R",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              },
+              {
+                "name": "Wilyer Abreu",
+                "bats": "L",
+                "hasPitchFit": true,
+                "hasProjection": true,
+                "hasHandednessSplit": true
+              }
+            ]
+          }
+        },
+        "pitchers": {
+          "away": {
+            "name": "Nathan Eovaldi",
+            "id": 543135,
+            "hand": "R",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          },
+          "home": {
+            "name": "Connelly Early",
+            "id": 813349,
+            "hand": "L",
+            "usageStatus": "small-sample",
+            "espnSplitStatus": "fetched",
+            "statmuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18
+        },
+        "analysis": {
+          "available": true,
+          "participant": "Rangers",
+          "confidence": 52,
+          "hasProjection": true,
+          "hasFirst5Moneyline": false,
+          "hasTotals": true
+        },
+        "markets": {
+          "moneyline": true,
+          "oddsMarkets": 5
+        }
+      },
+      "mismatches": [
+        {
+          "field": "away.lineup.status",
+          "severity": "warning",
+          "generated": "partial",
+          "db": "posted"
+        },
+        {
+          "field": "away.lineup.source",
+          "severity": "warning",
+          "generated": "rotowire-supplement",
+          "db": "typed-db"
+        },
+        {
+          "field": "away.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        },
+        {
+          "field": "home.lineup.status",
+          "severity": "warning",
+          "generated": "partial",
+          "db": "posted"
+        },
+        {
+          "field": "home.lineup.source",
+          "severity": "warning",
+          "generated": "rotowire-supplement",
+          "db": "typed-db"
+        },
+        {
+          "field": "home.starter.context",
+          "severity": "warning",
+          "generated": {
+            "usageStatus": "season-only",
+            "statmuse": true
+          },
+          "db": {
+            "usageStatus": "small-sample",
+            "statmuse": true
+          }
+        }
+      ]
+    }
+  ]
+}

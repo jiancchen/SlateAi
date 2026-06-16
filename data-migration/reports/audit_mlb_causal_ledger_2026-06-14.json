@@ -1,0 +1,2306 @@
+{
+  "audit": "mlb-causal-ledger",
+  "date": "2026-06-14",
+  "generatedAt": "2026-06-15T17:01:58.202Z",
+  "strictEligibleOnly": true,
+  "games": [
+    {
+      "id": "marlins-pirates",
+      "title": "Marlins @ Pirates",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 4,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": -0.6,
+        "handednessSplitDelta": -1,
+        "pitchFitDelta": -24,
+        "bvpContextDelta": 1.2,
+        "hrForceDelta": 0,
+        "maxHrForce": 1.2,
+        "sp1PitcherName": "Paul Skenes",
+        "sp1CollapseRiskScore": 50.7,
+        "sp1OffenseRunDelta": 0.01,
+        "sp1WeightedPitcherAllowedOps": 0.571,
+        "sp1WeightedHitterSplitOps": 0.734,
+        "rp2SideHoldDelta": 8,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 3,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": -3.6,
+        "handednessSplitDelta": 6.6,
+        "pitchFitDelta": -11,
+        "bvpContextDelta": 0,
+        "hrForceDelta": 0,
+        "maxHrForce": 1.2,
+        "sp1PitcherName": "Max Meyer",
+        "sp1CollapseRiskScore": 48.6,
+        "sp1OffenseRunDelta": -0.03,
+        "sp1WeightedPitcherAllowedOps": 0.585,
+        "sp1WeightedHitterSplitOps": 0.794,
+        "rp2SideHoldDelta": -8,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0.41,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "higher_run_environment",
+          "expectedTotalRunsDelta": 0.41,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": -0.07,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": 0,
+          "parkHrDelta": -0.24,
+          "weatherHrForce": 1.5,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "+135 / -164",
+            "awayOdds": 135,
+            "homeOdds": -164,
+            "awayImpliedPct": 42.6,
+            "homeImpliedPct": 62.1
+          },
+          "first5Moneyline": {
+            "raw": "+135 / -175"
+          },
+          "total": {
+            "raw": "7.0 Runs",
+            "postedLine": 7
+          },
+          "first5Total": {
+            "raw": "3.5 Runs",
+            "postedLine": 3.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 3.9,
+            "homeProjectedRuns": 3.7,
+            "runDiffAwayMinusHome": 0.2,
+            "awayFirst5ProjectedRuns": 1.7,
+            "homeFirst5ProjectedRuns": 2.3,
+            "first5RunDiffAwayMinusHome": -0.6,
+            "edgeTeam": "Marlins",
+            "edgeHits": 1,
+            "modelEdge": 0,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Pirates",
+              "opponent": "Marlins",
+              "pickProjectedRuns": 3.7,
+              "opponentProjectedRuns": 3.9,
+              "projectedTotalRuns": 7.6,
+              "runDiff": -0.2,
+              "absoluteRunDiff": 0.2,
+              "runDiffSharePct": 2.6,
+              "confidence": 52,
+              "marketProbabilityPct": 59.3,
+              "grade": "Thin ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Pirates projects -0.2 runs better in a 7.6-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 1.7,
+            "homeProjectedRuns": 2.3,
+            "runDiffAwayMinusHome": -0.6,
+            "projectedTotalRuns": 4,
+            "marketLine": 3.5,
+            "lean": "Over"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 7.6,
+            "marketLine": null,
+            "fullGameLean": "Over",
+            "fullGameEdge": 0.6,
+            "first5Lean": "Over",
+            "first5Edge": 0.5
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 66.2,
+            "noProbabilityPct": 33.8,
+            "edge": 16.2,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 35.8,
+            "homeRunProbabilityPct": 47.3,
+            "projectedRuns": 1,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "padres-orioles",
+      "title": "Padres @ Orioles",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 3,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 24,
+        "handednessSplitDelta": -1.9,
+        "pitchFitDelta": 20.4,
+        "bvpContextDelta": 0,
+        "hrForceDelta": 5,
+        "maxHrForce": 1.6,
+        "sp1PitcherName": "Trevor Rogers",
+        "sp1CollapseRiskScore": 56.8,
+        "sp1OffenseRunDelta": 0.12,
+        "sp1WeightedPitcherAllowedOps": 0.79,
+        "sp1WeightedHitterSplitOps": 0.686,
+        "rp2SideHoldDelta": 1.5,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 5,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 26.2,
+        "handednessSplitDelta": 11.5,
+        "pitchFitDelta": 33,
+        "bvpContextDelta": 3.6,
+        "hrForceDelta": 6,
+        "maxHrForce": 1.6,
+        "sp1PitcherName": "Walker Buehler",
+        "sp1CollapseRiskScore": 58.9,
+        "sp1OffenseRunDelta": 0.16,
+        "sp1WeightedPitcherAllowedOps": 0.697,
+        "sp1WeightedHitterSplitOps": 0.791,
+        "rp2SideHoldDelta": -1.5,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0.59,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "higher_run_environment",
+          "expectedTotalRunsDelta": 0.59,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": 0.29,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": 0.24,
+          "parkHrDelta": 0.14,
+          "weatherHrForce": 1.6,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "+114 / -137",
+            "awayOdds": 114,
+            "homeOdds": -137,
+            "awayImpliedPct": 46.7,
+            "homeImpliedPct": 57.8
+          },
+          "first5Moneyline": {
+            "raw": "+120 / -154"
+          },
+          "total": {
+            "raw": "10.5 Runs",
+            "postedLine": 10.5
+          },
+          "first5Total": {
+            "raw": "5.5 Runs",
+            "postedLine": 5.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 4.2,
+            "homeProjectedRuns": 4.7,
+            "runDiffAwayMinusHome": -0.5,
+            "awayFirst5ProjectedRuns": 2.2,
+            "homeFirst5ProjectedRuns": 2.6,
+            "first5RunDiffAwayMinusHome": -0.4,
+            "edgeTeam": "Orioles",
+            "edgeHits": 0.3,
+            "modelEdge": 0,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Orioles",
+              "opponent": "Padres",
+              "pickProjectedRuns": 4.7,
+              "opponentProjectedRuns": 4.2,
+              "projectedTotalRuns": 8.9,
+              "runDiff": 0.5,
+              "absoluteRunDiff": 0.5,
+              "runDiffSharePct": 5.6,
+              "confidence": 58,
+              "marketProbabilityPct": 55.3,
+              "grade": "Thin ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Orioles projects 0.5 runs better in a 8.9-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 2.2,
+            "homeProjectedRuns": 2.6,
+            "runDiffAwayMinusHome": -0.4,
+            "projectedTotalRuns": 4.8,
+            "marketLine": 5.5,
+            "lean": "Over"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 8.9,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": -1.6,
+            "first5Lean": "Over",
+            "first5Edge": -0.7
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 69.6,
+            "noProbabilityPct": 30.4,
+            "edge": 19.6,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 41.3,
+            "homeRunProbabilityPct": 48.2,
+            "projectedRuns": 1.1,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "mariners-nationals",
+      "title": "Mariners @ Nationals",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 3,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 8.5,
+        "handednessSplitDelta": -1.4,
+        "pitchFitDelta": 24.5,
+        "bvpContextDelta": 2.4,
+        "hrForceDelta": 5.3,
+        "maxHrForce": 1.6,
+        "sp1PitcherName": "Miles Mikolas",
+        "sp1CollapseRiskScore": 65.2,
+        "sp1OffenseRunDelta": 0.27,
+        "sp1WeightedPitcherAllowedOps": 0.809,
+        "sp1WeightedHitterSplitOps": 0.77,
+        "rp2SideHoldDelta": 7.5,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 4,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 0.2,
+        "handednessSplitDelta": 1.6,
+        "pitchFitDelta": 1.5,
+        "bvpContextDelta": 0,
+        "hrForceDelta": 5.3,
+        "maxHrForce": 1.6,
+        "sp1PitcherName": "Emerson Hancock",
+        "sp1CollapseRiskScore": 50.7,
+        "sp1OffenseRunDelta": 0.01,
+        "sp1WeightedPitcherAllowedOps": 0.596,
+        "sp1WeightedHitterSplitOps": 0.745,
+        "rp2SideHoldDelta": -7.5,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0.46,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "higher_run_environment",
+          "expectedTotalRunsDelta": 0.46,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": 0.19,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": 0,
+          "parkHrDelta": 0,
+          "weatherHrForce": 1.8,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "-136 / +113",
+            "awayOdds": -136,
+            "homeOdds": 113,
+            "awayImpliedPct": 57.6,
+            "homeImpliedPct": 46.9
+          },
+          "first5Moneyline": {
+            "raw": "-135 / +105"
+          },
+          "total": {
+            "raw": "10.5 Runs",
+            "postedLine": 10.5
+          },
+          "first5Total": {
+            "raw": "5.5 Runs",
+            "postedLine": 5.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 5,
+            "homeProjectedRuns": 4.4,
+            "runDiffAwayMinusHome": 0.6,
+            "awayFirst5ProjectedRuns": 2.4,
+            "homeFirst5ProjectedRuns": 2.5,
+            "first5RunDiffAwayMinusHome": -0.1,
+            "edgeTeam": "Mariners",
+            "edgeHits": 2,
+            "modelEdge": 6.7,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Mariners",
+              "opponent": "Nationals",
+              "pickProjectedRuns": 5,
+              "opponentProjectedRuns": 4.4,
+              "projectedTotalRuns": 9.4,
+              "runDiff": 0.6,
+              "absoluteRunDiff": 0.6,
+              "runDiffSharePct": 6.4,
+              "confidence": 55,
+              "marketProbabilityPct": 55.1,
+              "grade": "Thin ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Mariners projects 0.6 runs better in a 9.4-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 2.4,
+            "homeProjectedRuns": 2.5,
+            "runDiffAwayMinusHome": -0.1,
+            "projectedTotalRuns": 4.9,
+            "marketLine": 5.5,
+            "lean": "Over"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 9.4,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": -1.1,
+            "first5Lean": "Over",
+            "first5Edge": -0.6
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 72.5,
+            "noProbabilityPct": 27.5,
+            "edge": 22.5,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 47.8,
+            "homeRunProbabilityPct": 47.4,
+            "projectedRuns": 1.2,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "yankees-blue-jays",
+      "title": "Yankees @ Blue Jays",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 6,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 9,
+        "handednessSplitDelta": 11.8,
+        "pitchFitDelta": 8.9,
+        "bvpContextDelta": 2.4,
+        "hrForceDelta": -4,
+        "maxHrForce": 0,
+        "sp1PitcherName": "Patrick Corbin",
+        "sp1CollapseRiskScore": 60.2,
+        "sp1OffenseRunDelta": 0.18,
+        "sp1WeightedPitcherAllowedOps": 0.762,
+        "sp1WeightedHitterSplitOps": 0.88,
+        "rp2SideHoldDelta": 2.3,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 4,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 4.3,
+        "handednessSplitDelta": 6.5,
+        "pitchFitDelta": 0.1,
+        "bvpContextDelta": 4,
+        "hrForceDelta": -4,
+        "maxHrForce": 0,
+        "sp1PitcherName": "Will Warren",
+        "sp1CollapseRiskScore": 48.5,
+        "sp1OffenseRunDelta": -0.03,
+        "sp1WeightedPitcherAllowedOps": 0.643,
+        "sp1WeightedHitterSplitOps": 0.753,
+        "rp2SideHoldDelta": -2.3,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "neutral_run_environment",
+          "expectedTotalRunsDelta": 0,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": 0.08,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": 0.08,
+          "parkHrDelta": 0.12,
+          "weatherHrForce": 0,
+          "weatherSignal": "lower_runs_dome_na",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "-130 / +108",
+            "awayOdds": -130,
+            "homeOdds": 108,
+            "awayImpliedPct": 56.5,
+            "homeImpliedPct": 48.1
+          },
+          "first5Moneyline": {
+            "raw": "-140 / +110"
+          },
+          "total": {
+            "raw": "8.5 Runs",
+            "postedLine": 8.5
+          },
+          "first5Total": {
+            "raw": "4.5 Runs",
+            "postedLine": 4.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 4.5,
+            "homeProjectedRuns": 3.3,
+            "runDiffAwayMinusHome": 1.2,
+            "awayFirst5ProjectedRuns": 3,
+            "homeFirst5ProjectedRuns": 2.1,
+            "first5RunDiffAwayMinusHome": 0.9,
+            "edgeTeam": "Yankees",
+            "edgeHits": 2,
+            "modelEdge": 7,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Yankees",
+              "opponent": "Blue Jays",
+              "pickProjectedRuns": 4.5,
+              "opponentProjectedRuns": 3.3,
+              "projectedTotalRuns": 7.8,
+              "runDiff": 1.2,
+              "absoluteRunDiff": 1.2,
+              "runDiffSharePct": 15.4,
+              "confidence": 65,
+              "marketProbabilityPct": 54,
+              "grade": "Playable ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Yankees projects 1.2 runs better in a 7.8-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 3,
+            "homeProjectedRuns": 2.1,
+            "runDiffAwayMinusHome": 0.9,
+            "projectedTotalRuns": 5.1,
+            "marketLine": 4.5,
+            "lean": "Pass"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 7.8,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": -0.7,
+            "first5Lean": "Pass",
+            "first5Edge": 0.6
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 65.4,
+            "noProbabilityPct": 34.6,
+            "edge": 15.4,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 47,
+            "homeRunProbabilityPct": 34.7,
+            "projectedRuns": 1,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "diamondbacks-reds",
+      "title": "Diamondbacks @ Reds",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 6,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 6.4,
+        "handednessSplitDelta": 11.6,
+        "pitchFitDelta": 13.4,
+        "bvpContextDelta": 1.2,
+        "hrForceDelta": 4.5,
+        "maxHrForce": 1.5,
+        "sp1PitcherName": "Andrew Abbott",
+        "sp1CollapseRiskScore": 61.6,
+        "sp1OffenseRunDelta": 0.21,
+        "sp1WeightedPitcherAllowedOps": 0.714,
+        "sp1WeightedHitterSplitOps": 0.856,
+        "rp2SideHoldDelta": 4.3,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 4,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 7.6,
+        "handednessSplitDelta": 2.8,
+        "pitchFitDelta": 15.1,
+        "bvpContextDelta": 0,
+        "hrForceDelta": 4.5,
+        "maxHrForce": 1.5,
+        "sp1PitcherName": "Zac Gallen",
+        "sp1CollapseRiskScore": 62,
+        "sp1OffenseRunDelta": 0.22,
+        "sp1WeightedPitcherAllowedOps": 0.833,
+        "sp1WeightedHitterSplitOps": 0.763,
+        "rp2SideHoldDelta": -4.3,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0.53,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "higher_run_environment",
+          "expectedTotalRunsDelta": 0.53,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": 0.38,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": 0.24,
+          "parkHrDelta": 0.26,
+          "weatherHrForce": 1.3,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "-111 / -109",
+            "awayOdds": -111,
+            "homeOdds": -109,
+            "awayImpliedPct": 52.6,
+            "homeImpliedPct": 52.2
+          },
+          "first5Moneyline": {
+            "raw": "-105 / -125"
+          },
+          "total": {
+            "raw": "10.0 Runs",
+            "postedLine": 10
+          },
+          "first5Total": {
+            "raw": "5.5 Runs",
+            "postedLine": 5.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 4.4,
+            "homeProjectedRuns": 4.8,
+            "runDiffAwayMinusHome": -0.4,
+            "awayFirst5ProjectedRuns": 2.4,
+            "homeFirst5ProjectedRuns": 2.8,
+            "first5RunDiffAwayMinusHome": -0.4,
+            "edgeTeam": "Reds",
+            "edgeHits": 0.7,
+            "modelEdge": 0.1,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Reds",
+              "opponent": "Diamondbacks",
+              "pickProjectedRuns": 4.8,
+              "opponentProjectedRuns": 4.4,
+              "projectedTotalRuns": 9.2,
+              "runDiff": 0.4,
+              "absoluteRunDiff": 0.4,
+              "runDiffSharePct": 4.3,
+              "confidence": 52,
+              "marketProbabilityPct": 49.8,
+              "grade": "Thin ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Reds projects 0.4 runs better in a 9.2-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 2.4,
+            "homeProjectedRuns": 2.8,
+            "runDiffAwayMinusHome": -0.4,
+            "projectedTotalRuns": 5.2,
+            "marketLine": 5.5,
+            "lean": "Over"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 9.2,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": -0.8,
+            "first5Lean": "Over",
+            "first5Edge": -0.3
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 71,
+            "noProbabilityPct": 29,
+            "edge": 21,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 44,
+            "homeRunProbabilityPct": 48.2,
+            "projectedRuns": 1.1,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "braves-mets",
+      "title": "Braves @ Mets",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 4,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": -3.1,
+        "handednessSplitDelta": 3.4,
+        "pitchFitDelta": 0.5,
+        "bvpContextDelta": 0,
+        "hrForceDelta": 10,
+        "maxHrForce": 1.7,
+        "sp1PitcherName": "Freddy Peralta",
+        "sp1CollapseRiskScore": 55.9,
+        "sp1OffenseRunDelta": 0.11,
+        "sp1WeightedPitcherAllowedOps": 0.703,
+        "sp1WeightedHitterSplitOps": 0.766,
+        "rp2SideHoldDelta": 5.7,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 5,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": -8.5,
+        "handednessSplitDelta": 4,
+        "pitchFitDelta": -3.8,
+        "bvpContextDelta": 0,
+        "hrForceDelta": 10,
+        "maxHrForce": 1.7,
+        "sp1PitcherName": "Bryce Elder",
+        "sp1CollapseRiskScore": 46.6,
+        "sp1OffenseRunDelta": -0.06,
+        "sp1WeightedPitcherAllowedOps": 0.574,
+        "sp1WeightedHitterSplitOps": 0.708,
+        "rp2SideHoldDelta": -5.7,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0.33,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "higher_run_environment",
+          "expectedTotalRunsDelta": 0.33,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": 0.19,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": -0.08,
+          "parkHrDelta": 0.02,
+          "weatherHrForce": 1.7,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "+108 / -131",
+            "awayOdds": 108,
+            "homeOdds": -131,
+            "awayImpliedPct": 48.1,
+            "homeImpliedPct": 56.7
+          },
+          "first5Moneyline": {
+            "raw": "+100 / -130"
+          },
+          "total": {
+            "raw": "8.5 Runs",
+            "postedLine": 8.5
+          },
+          "first5Total": {
+            "raw": "4.5 Runs",
+            "postedLine": 4.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 3.9,
+            "homeProjectedRuns": 3.7,
+            "runDiffAwayMinusHome": 0.2,
+            "awayFirst5ProjectedRuns": 2.2,
+            "homeFirst5ProjectedRuns": 2.5,
+            "first5RunDiffAwayMinusHome": -0.3,
+            "edgeTeam": "Braves",
+            "edgeHits": 1.8,
+            "modelEdge": 6.9,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Braves",
+              "opponent": "Mets",
+              "pickProjectedRuns": 3.9,
+              "opponentProjectedRuns": 3.7,
+              "projectedTotalRuns": 7.6,
+              "runDiff": 0.2,
+              "absoluteRunDiff": 0.2,
+              "runDiffSharePct": 2.6,
+              "confidence": 52,
+              "marketProbabilityPct": 45.9,
+              "grade": "Thin ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Braves projects 0.2 runs better in a 7.6-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 2.2,
+            "homeProjectedRuns": 2.5,
+            "runDiffAwayMinusHome": -0.3,
+            "projectedTotalRuns": 4.7,
+            "marketLine": 4.5,
+            "lean": "Over"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 7.6,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": -0.9,
+            "first5Lean": "Over",
+            "first5Edge": 0.2
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 70.1,
+            "noProbabilityPct": 29.9,
+            "edge": 20.1,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 44.9,
+            "homeRunProbabilityPct": 45.8,
+            "projectedRuns": 1.2,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "astros-royals",
+      "title": "Astros @ Royals",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 8,
+        "playersWithPitchFit": 8,
+        "playersWithBvpH2h": 1,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 6.1,
+        "handednessSplitDelta": 0,
+        "pitchFitDelta": 3.3,
+        "bvpContextDelta": 0,
+        "hrForceDelta": -1.6,
+        "maxHrForce": 1,
+        "sp1PitcherName": "Stephen Kolek",
+        "sp1CollapseRiskScore": 46.7,
+        "sp1OffenseRunDelta": -0.06,
+        "sp1WeightedPitcherAllowedOps": 0.702,
+        "sp1WeightedHitterSplitOps": 0.784,
+        "rp2SideHoldDelta": 3.9,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 3,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": -3.7,
+        "handednessSplitDelta": -2.4,
+        "pitchFitDelta": -2.9,
+        "bvpContextDelta": 0,
+        "hrForceDelta": -1.6,
+        "maxHrForce": 1,
+        "sp1PitcherName": "Spencer Arrighetti",
+        "sp1CollapseRiskScore": 41.4,
+        "sp1OffenseRunDelta": -0.16,
+        "sp1WeightedPitcherAllowedOps": 0.58,
+        "sp1WeightedHitterSplitOps": 0.701,
+        "rp2SideHoldDelta": -3.9,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": -0.05,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "neutral_run_environment",
+          "expectedTotalRunsDelta": -0.05,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": -0.22,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": 0,
+          "parkHrDelta": -0.2,
+          "weatherHrForce": 1.2,
+          "weatherSignal": "lower_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "+100 / -120",
+            "awayOdds": 100,
+            "homeOdds": -120,
+            "awayImpliedPct": 50,
+            "homeImpliedPct": 54.5
+          },
+          "first5Moneyline": {
+            "raw": "-105 / -125"
+          },
+          "total": {
+            "raw": "8.5 Runs",
+            "postedLine": 8.5
+          },
+          "first5Total": {
+            "raw": "4.5 Runs",
+            "postedLine": 4.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 4.1,
+            "homeProjectedRuns": 3.5,
+            "runDiffAwayMinusHome": 0.6,
+            "awayFirst5ProjectedRuns": 1.9,
+            "homeFirst5ProjectedRuns": 2.4,
+            "first5RunDiffAwayMinusHome": -0.5,
+            "edgeTeam": "Astros",
+            "edgeHits": 2.1,
+            "modelEdge": 7,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Astros",
+              "opponent": "Royals",
+              "pickProjectedRuns": 4.1,
+              "opponentProjectedRuns": 3.5,
+              "projectedTotalRuns": 7.6,
+              "runDiff": 0.6,
+              "absoluteRunDiff": 0.6,
+              "runDiffSharePct": 7.9,
+              "confidence": 52,
+              "marketProbabilityPct": 47.8,
+              "grade": "Thin ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Astros projects 0.6 runs better in a 7.6-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 1.9,
+            "homeProjectedRuns": 2.4,
+            "runDiffAwayMinusHome": -0.5,
+            "projectedTotalRuns": 4.3,
+            "marketLine": 4.5,
+            "lean": "Pass"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 7.6,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": -0.9,
+            "first5Lean": "Pass",
+            "first5Edge": -0.2
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 56.4,
+            "noProbabilityPct": 43.6,
+            "edge": 6.4,
+            "strength": "Lean",
+            "awayRunProbabilityPct": 31.4,
+            "homeRunProbabilityPct": 36.5,
+            "projectedRuns": 0.9,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "dodgers-white-sox",
+      "title": "Dodgers @ White Sox",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 6,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 11.7,
+        "handednessSplitDelta": 3.4,
+        "pitchFitDelta": 20.3,
+        "bvpContextDelta": 1.2,
+        "hrForceDelta": 3.7,
+        "maxHrForce": 1.4,
+        "sp1PitcherName": "Erick Fedde",
+        "sp1CollapseRiskScore": 60.5,
+        "sp1OffenseRunDelta": 0.19,
+        "sp1WeightedPitcherAllowedOps": 0.751,
+        "sp1WeightedHitterSplitOps": 0.799,
+        "rp2SideHoldDelta": -3.6,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 0,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 1.5,
+        "handednessSplitDelta": 6.6,
+        "pitchFitDelta": 12.4,
+        "bvpContextDelta": 0,
+        "hrForceDelta": -4,
+        "maxHrForce": 1.4,
+        "sp1PitcherName": "Emmet Sheehan",
+        "sp1CollapseRiskScore": 60.7,
+        "sp1OffenseRunDelta": 0.19,
+        "sp1WeightedPitcherAllowedOps": 0.776,
+        "sp1WeightedHitterSplitOps": 0.765,
+        "rp2SideHoldDelta": 3.6,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0.13,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "neutral_run_environment",
+          "expectedTotalRunsDelta": 0.13,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": 0.06,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": -0.16,
+          "parkHrDelta": -0.06,
+          "weatherHrForce": 1.2,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "-205 / +168",
+            "awayOdds": -205,
+            "homeOdds": 168,
+            "awayImpliedPct": 67.2,
+            "homeImpliedPct": 37.3
+          },
+          "first5Moneyline": {
+            "raw": "-188 / +145"
+          },
+          "total": {
+            "raw": "9.5 Runs",
+            "postedLine": 9.5
+          },
+          "first5Total": {
+            "raw": "5.5 Runs",
+            "postedLine": 5.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 5.1,
+            "homeProjectedRuns": 3.9,
+            "runDiffAwayMinusHome": 1.2,
+            "awayFirst5ProjectedRuns": 2.7,
+            "homeFirst5ProjectedRuns": 2.2,
+            "first5RunDiffAwayMinusHome": 0.5,
+            "edgeTeam": "Dodgers",
+            "edgeHits": 2.4,
+            "modelEdge": 5.9,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Dodgers",
+              "opponent": "White Sox",
+              "pickProjectedRuns": 5.1,
+              "opponentProjectedRuns": 3.9,
+              "projectedTotalRuns": 9,
+              "runDiff": 1.2,
+              "absoluteRunDiff": 1.2,
+              "runDiffSharePct": 13.3,
+              "confidence": 65,
+              "marketProbabilityPct": 64.3,
+              "grade": "Playable ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Dodgers projects 1.2 runs better in a 9-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 2.7,
+            "homeProjectedRuns": 2.2,
+            "runDiffAwayMinusHome": 0.5,
+            "projectedTotalRuns": 4.9,
+            "marketLine": 5.5,
+            "lean": "Over"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 9,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": -0.5,
+            "first5Lean": "Over",
+            "first5Edge": -0.6
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 69.6,
+            "noProbabilityPct": 30.4,
+            "edge": 19.6,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 49.9,
+            "homeRunProbabilityPct": 39.4,
+            "projectedRuns": 1.2,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "phillies-brewers",
+      "title": "Phillies @ Brewers",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 6,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 11.4,
+        "handednessSplitDelta": 10.8,
+        "pitchFitDelta": -5.8,
+        "bvpContextDelta": 2.4,
+        "hrForceDelta": 4,
+        "maxHrForce": 1.4,
+        "sp1PitcherName": "Kyle Harrison",
+        "sp1CollapseRiskScore": 45.6,
+        "sp1OffenseRunDelta": -0.08,
+        "sp1WeightedPitcherAllowedOps": 0.666,
+        "sp1WeightedHitterSplitOps": 0.745,
+        "rp2SideHoldDelta": 2.2,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 5,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 14.6,
+        "handednessSplitDelta": 6,
+        "pitchFitDelta": 1.8,
+        "bvpContextDelta": 2.4,
+        "hrForceDelta": 4,
+        "maxHrForce": 1.4,
+        "sp1PitcherName": "Cristopher Sánchez",
+        "sp1CollapseRiskScore": 46.9,
+        "sp1OffenseRunDelta": -0.06,
+        "sp1WeightedPitcherAllowedOps": 0.607,
+        "sp1WeightedHitterSplitOps": 0.759,
+        "rp2SideHoldDelta": -2.2,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": -0.32,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "lower_run_environment",
+          "expectedTotalRunsDelta": -0.32,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": 0.03,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": -0.24,
+          "parkHrDelta": 0.07,
+          "weatherHrForce": 0,
+          "weatherSignal": "lower_runs_dome_na",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "-131 / +109",
+            "awayOdds": -131,
+            "homeOdds": 109,
+            "awayImpliedPct": 56.7,
+            "homeImpliedPct": 47.8
+          },
+          "first5Moneyline": {
+            "raw": "-135 / +105"
+          },
+          "total": {
+            "raw": "6.5 Runs",
+            "postedLine": 6.5
+          },
+          "first5Total": {
+            "raw": "3.5 Runs",
+            "postedLine": 3.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 3,
+            "homeProjectedRuns": 3.5,
+            "runDiffAwayMinusHome": -0.5,
+            "awayFirst5ProjectedRuns": 1.8,
+            "homeFirst5ProjectedRuns": 2.3,
+            "first5RunDiffAwayMinusHome": -0.5,
+            "edgeTeam": "Phillies",
+            "edgeHits": 0,
+            "modelEdge": 6,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Phillies",
+              "opponent": "Brewers",
+              "pickProjectedRuns": 3,
+              "opponentProjectedRuns": 3.5,
+              "projectedTotalRuns": 6.5,
+              "runDiff": -0.5,
+              "absoluteRunDiff": 0.5,
+              "runDiffSharePct": 7.7,
+              "confidence": 68,
+              "marketProbabilityPct": 54.2,
+              "grade": "Thin ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Phillies projects -0.5 runs better in a 6.5-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 1.8,
+            "homeProjectedRuns": 2.3,
+            "runDiffAwayMinusHome": -0.5,
+            "projectedTotalRuns": 4.1,
+            "marketLine": 3.5,
+            "lean": "Over"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 6.5,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": 0,
+            "first5Lean": "Over",
+            "first5Edge": 0.6
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 58.1,
+            "noProbabilityPct": 41.9,
+            "edge": 8.1,
+            "strength": "Clear",
+            "awayRunProbabilityPct": 30.8,
+            "homeRunProbabilityPct": 39.4,
+            "projectedRuns": 0.9,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "cardinals-twins",
+      "title": "Cardinals @ Twins",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 2,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 25.5,
+        "handednessSplitDelta": 6.7,
+        "pitchFitDelta": 26,
+        "bvpContextDelta": 0,
+        "hrForceDelta": 3,
+        "maxHrForce": 1.4,
+        "sp1PitcherName": "Taj Bradley",
+        "sp1CollapseRiskScore": 58.6,
+        "sp1OffenseRunDelta": 0.15,
+        "sp1WeightedPitcherAllowedOps": 0.736,
+        "sp1WeightedHitterSplitOps": 0.846,
+        "rp2SideHoldDelta": 7.6,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 0,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 7,
+        "handednessSplitDelta": 5.5,
+        "pitchFitDelta": -7.7,
+        "bvpContextDelta": 0,
+        "hrForceDelta": -4,
+        "maxHrForce": 1.4,
+        "sp1PitcherName": "Michael McGreevy",
+        "sp1CollapseRiskScore": 51.1,
+        "sp1OffenseRunDelta": 0.02,
+        "sp1WeightedPitcherAllowedOps": 0.654,
+        "sp1WeightedHitterSplitOps": 0.742,
+        "rp2SideHoldDelta": -7.6,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0.55,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "higher_run_environment",
+          "expectedTotalRunsDelta": 0.55,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": 0.07,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": 0.32,
+          "parkHrDelta": -0.02,
+          "weatherHrForce": 1.3,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "-103 / -117",
+            "awayOdds": -103,
+            "homeOdds": -117,
+            "awayImpliedPct": 50.7,
+            "homeImpliedPct": 53.9
+          },
+          "first5Moneyline": {
+            "raw": "-110 / -120"
+          },
+          "total": {
+            "raw": "9.5 Runs",
+            "postedLine": 9.5
+          },
+          "first5Total": {
+            "raw": "5.5 Runs",
+            "postedLine": 5.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 6,
+            "homeProjectedRuns": 3.5,
+            "runDiffAwayMinusHome": 2.5,
+            "awayFirst5ProjectedRuns": 3,
+            "homeFirst5ProjectedRuns": 1.8,
+            "first5RunDiffAwayMinusHome": 1.2,
+            "edgeTeam": "Cardinals",
+            "edgeHits": 3.8,
+            "modelEdge": 6.6,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Cardinals",
+              "opponent": "Twins",
+              "pickProjectedRuns": 6,
+              "opponentProjectedRuns": 3.5,
+              "projectedTotalRuns": 9.5,
+              "runDiff": 2.5,
+              "absoluteRunDiff": 2.5,
+              "runDiffSharePct": 26.3,
+              "confidence": 64,
+              "marketProbabilityPct": 48.5,
+              "grade": "Separated ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Cardinals projects 2.5 runs better in a 9.5-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 3,
+            "homeProjectedRuns": 1.8,
+            "runDiffAwayMinusHome": 1.2,
+            "projectedTotalRuns": 4.8,
+            "marketLine": 5.5,
+            "lean": "Pass"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 9.5,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": 0,
+            "first5Lean": "Pass",
+            "first5Edge": -0.7
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 64.7,
+            "noProbabilityPct": 35.3,
+            "edge": 14.7,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 47.9,
+            "homeRunProbabilityPct": 32.2,
+            "projectedRuns": 1,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "rockies-athletics",
+      "title": "Rockies @ Athletics",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 1,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 7.3,
+        "handednessSplitDelta": -13,
+        "pitchFitDelta": 4.8,
+        "bvpContextDelta": -1.2,
+        "hrForceDelta": 0.8,
+        "maxHrForce": 1.3,
+        "sp1PitcherName": "Jeffrey Springs",
+        "sp1CollapseRiskScore": 52.5,
+        "sp1OffenseRunDelta": 0.04,
+        "sp1WeightedPitcherAllowedOps": 0.793,
+        "sp1WeightedHitterSplitOps": 0.65,
+        "rp2SideHoldDelta": -5.4,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 5,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 15.5,
+        "handednessSplitDelta": -3,
+        "pitchFitDelta": 9.5,
+        "bvpContextDelta": 2.4,
+        "hrForceDelta": 0.8,
+        "maxHrForce": 1.3,
+        "sp1PitcherName": "Tomoyuki Sugano",
+        "sp1CollapseRiskScore": 59.1,
+        "sp1OffenseRunDelta": 0.16,
+        "sp1WeightedPitcherAllowedOps": 0.871,
+        "sp1WeightedHitterSplitOps": 0.754,
+        "rp2SideHoldDelta": 5.4,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0.35,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "higher_run_environment",
+          "expectedTotalRunsDelta": 0.35,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": 0.14,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": 0,
+          "parkHrDelta": 0,
+          "weatherHrForce": 1.5,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "+163 / -199",
+            "awayOdds": 163,
+            "homeOdds": -199,
+            "awayImpliedPct": 38,
+            "homeImpliedPct": 66.6
+          },
+          "first5Moneyline": {
+            "raw": "+140 / -180"
+          },
+          "total": {
+            "raw": "14.0 Runs",
+            "postedLine": 14
+          },
+          "first5Total": {
+            "raw": "8.5 Runs",
+            "postedLine": 8.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 4.1,
+            "homeProjectedRuns": 5.7,
+            "runDiffAwayMinusHome": -1.6,
+            "awayFirst5ProjectedRuns": 2.2,
+            "homeFirst5ProjectedRuns": 3.1,
+            "first5RunDiffAwayMinusHome": -0.9,
+            "edgeTeam": "Athletics",
+            "edgeHits": 1.8,
+            "modelEdge": 0.1,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Athletics",
+              "opponent": "Rockies",
+              "pickProjectedRuns": 5.7,
+              "opponentProjectedRuns": 4.1,
+              "projectedTotalRuns": 9.8,
+              "runDiff": 1.6,
+              "absoluteRunDiff": 1.6,
+              "runDiffSharePct": 16.3,
+              "confidence": 52,
+              "marketProbabilityPct": 63.6,
+              "grade": "Playable ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Athletics projects 1.6 runs better in a 9.8-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 2.2,
+            "homeProjectedRuns": 3.1,
+            "runDiffAwayMinusHome": -0.9,
+            "projectedTotalRuns": 5.3,
+            "marketLine": 8.5,
+            "lean": "Pass"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 9.8,
+            "marketLine": null,
+            "fullGameLean": "Under",
+            "fullGameEdge": -4.2,
+            "first5Lean": "Pass",
+            "first5Edge": -3.2
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 69.5,
+            "noProbabilityPct": 30.5,
+            "edge": 19.5,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 39.7,
+            "homeRunProbabilityPct": 49.5,
+            "projectedRuns": 1.2,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "cubs-giants",
+      "title": "Cubs @ Giants",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 4,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 4.3,
+        "handednessSplitDelta": -1.6,
+        "pitchFitDelta": 2.9,
+        "bvpContextDelta": 2.4,
+        "hrForceDelta": 4.4,
+        "maxHrForce": 1.4,
+        "sp1PitcherName": "Logan Webb",
+        "sp1CollapseRiskScore": 51.9,
+        "sp1OffenseRunDelta": 0.03,
+        "sp1WeightedPitcherAllowedOps": 0.65,
+        "sp1WeightedHitterSplitOps": 0.752,
+        "rp2SideHoldDelta": 6.2,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 6,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 8.1,
+        "handednessSplitDelta": 4.5,
+        "pitchFitDelta": 17.6,
+        "bvpContextDelta": 2.4,
+        "hrForceDelta": 3.7,
+        "maxHrForce": 1.4,
+        "sp1PitcherName": "Colin Rea",
+        "sp1CollapseRiskScore": 58.8,
+        "sp1OffenseRunDelta": 0.16,
+        "sp1WeightedPitcherAllowedOps": 0.773,
+        "sp1WeightedHitterSplitOps": 0.78,
+        "rp2SideHoldDelta": -6.2,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": -0.01,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "neutral_run_environment",
+          "expectedTotalRunsDelta": -0.01,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": -0.17,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": -0.24,
+          "parkHrDelta": -0.26,
+          "weatherHrForce": 1.4,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "+113 / -136",
+            "awayOdds": 113,
+            "homeOdds": -136,
+            "awayImpliedPct": 46.9,
+            "homeImpliedPct": 57.6
+          },
+          "first5Moneyline": {
+            "raw": "+120 / -154"
+          },
+          "total": {
+            "raw": "8.0 Runs",
+            "postedLine": 8
+          },
+          "first5Total": {
+            "raw": "4.5 Runs",
+            "postedLine": 4.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 3.5,
+            "homeProjectedRuns": 5.2,
+            "runDiffAwayMinusHome": -1.7,
+            "awayFirst5ProjectedRuns": 1.6,
+            "homeFirst5ProjectedRuns": 3.4,
+            "first5RunDiffAwayMinusHome": -1.8,
+            "edgeTeam": "Giants",
+            "edgeHits": 2.1,
+            "modelEdge": 8.3,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Giants",
+              "opponent": "Cubs",
+              "pickProjectedRuns": 5.2,
+              "opponentProjectedRuns": 3.5,
+              "projectedTotalRuns": 8.7,
+              "runDiff": 1.7,
+              "absoluteRunDiff": 1.7,
+              "runDiffSharePct": 19.5,
+              "confidence": 71,
+              "marketProbabilityPct": 55.1,
+              "grade": "Separated ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Giants projects 1.7 runs better in a 8.7-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 1.6,
+            "homeProjectedRuns": 3.4,
+            "runDiffAwayMinusHome": -1.8,
+            "projectedTotalRuns": 5,
+            "marketLine": 4.5,
+            "lean": "Over"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 8.7,
+            "marketLine": null,
+            "fullGameLean": "Over",
+            "fullGameEdge": 0.7,
+            "first5Lean": "Over",
+            "first5Edge": 0.5
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 66.1,
+            "noProbabilityPct": 33.9,
+            "edge": 16.1,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 30,
+            "homeRunProbabilityPct": 51.5,
+            "projectedRuns": 1,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "rays-angels",
+      "title": "Rays @ Angels",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 4,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 6.5,
+        "handednessSplitDelta": 11,
+        "pitchFitDelta": 16.9,
+        "bvpContextDelta": 0,
+        "hrForceDelta": 0.8,
+        "maxHrForce": 1.3,
+        "sp1PitcherName": "Grayson Rodriguez",
+        "sp1CollapseRiskScore": 67.2,
+        "sp1OffenseRunDelta": 0.31,
+        "sp1WeightedPitcherAllowedOps": 0.949,
+        "sp1WeightedHitterSplitOps": 0.746,
+        "rp2SideHoldDelta": -1.7,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 8,
+        "playersWithPitchFit": 8,
+        "playersWithBvpH2h": 3,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 5.8,
+        "handednessSplitDelta": -5.6,
+        "pitchFitDelta": -0.5,
+        "bvpContextDelta": 0,
+        "hrForceDelta": 0.8,
+        "maxHrForce": 1.3,
+        "sp1PitcherName": "Ian Seymour",
+        "sp1CollapseRiskScore": 57,
+        "sp1OffenseRunDelta": 0.13,
+        "sp1WeightedPitcherAllowedOps": 0.708,
+        "sp1WeightedHitterSplitOps": 0.717,
+        "rp2SideHoldDelta": 1.7,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0.29,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "higher_run_environment",
+          "expectedTotalRunsDelta": 0.29,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": 0.12,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": 0,
+          "parkHrDelta": 0,
+          "weatherHrForce": 1.4,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "-120 / -101",
+            "awayOdds": -120,
+            "homeOdds": -101,
+            "awayImpliedPct": 54.5,
+            "homeImpliedPct": 50.2
+          },
+          "first5Moneyline": {
+            "raw": "-115 / -115"
+          },
+          "total": {
+            "raw": "9.0 Runs",
+            "postedLine": 9
+          },
+          "first5Total": {
+            "raw": "4.5 Runs",
+            "postedLine": 4.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 4.6,
+            "homeProjectedRuns": 3.2,
+            "runDiffAwayMinusHome": 1.4,
+            "awayFirst5ProjectedRuns": 2.8,
+            "homeFirst5ProjectedRuns": 1.9,
+            "first5RunDiffAwayMinusHome": 0.9,
+            "edgeTeam": "Rays",
+            "edgeHits": 2.9,
+            "modelEdge": 6.7,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Rays",
+              "opponent": "Angels",
+              "pickProjectedRuns": 4.6,
+              "opponentProjectedRuns": 3.2,
+              "projectedTotalRuns": 7.8,
+              "runDiff": 1.4,
+              "absoluteRunDiff": 1.4,
+              "runDiffSharePct": 17.9,
+              "confidence": 57,
+              "marketProbabilityPct": 52.1,
+              "grade": "Playable ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Rays projects 1.4 runs better in a 7.8-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 2.8,
+            "homeProjectedRuns": 1.9,
+            "runDiffAwayMinusHome": 0.9,
+            "projectedTotalRuns": 4.7,
+            "marketLine": 4.5,
+            "lean": "Pass"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 7.8,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": -1.2,
+            "first5Lean": "Pass",
+            "first5Edge": 0.2
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 65.6,
+            "noProbabilityPct": 34.4,
+            "edge": 15.6,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 47,
+            "homeRunProbabilityPct": 35.1,
+            "projectedRuns": 1,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    },
+    {
+      "id": "rangers-red-sox",
+      "title": "Rangers @ Red Sox",
+      "eligible": true,
+      "failures": [],
+      "ledgerVersion": "mlb-causal-ledger-v0.1",
+      "sourcesUsed": [
+        "lineupBoard",
+        "lineupContext",
+        "FantasyInfoCentral Daily Matchups",
+        "MLB-ENV1",
+        "MLB-RP2",
+        "MLB-SP1",
+        "market board",
+        "MLB-M2 projection"
+      ],
+      "away": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 1,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": 9.9,
+        "handednessSplitDelta": 9,
+        "pitchFitDelta": 11.6,
+        "bvpContextDelta": 1.2,
+        "hrForceDelta": -4,
+        "maxHrForce": 1.7,
+        "sp1PitcherName": "Connelly Early",
+        "sp1CollapseRiskScore": 56.3,
+        "sp1OffenseRunDelta": 0.11,
+        "sp1WeightedPitcherAllowedOps": 0.703,
+        "sp1WeightedHitterSplitOps": 0.749,
+        "rp2SideHoldDelta": -1.9,
+        "openerPrimaryDelta": 0
+      },
+      "home": {
+        "lineupPlayers": 9,
+        "playerFactors": 9,
+        "playersWithSelectedSplits": 9,
+        "playersWithEspnSplits": 9,
+        "playersWithPitchFit": 9,
+        "playersWithBvpH2h": 6,
+        "playersWithStarterKernel": 9,
+        "lineupDelta": -2.7,
+        "handednessSplitDelta": -2.2,
+        "pitchFitDelta": -5.2,
+        "bvpContextDelta": 1.2,
+        "hrForceDelta": 10,
+        "maxHrForce": 1.7,
+        "sp1PitcherName": "Nathan Eovaldi",
+        "sp1CollapseRiskScore": 52.3,
+        "sp1OffenseRunDelta": 0.04,
+        "sp1WeightedPitcherAllowedOps": 0.729,
+        "sp1WeightedHitterSplitOps": 0.698,
+        "rp2SideHoldDelta": 1.9,
+        "openerPrimaryDelta": 0
+      },
+      "gameDeltas": {
+        "env1": {
+          "delta": 0.57,
+          "source": "MLB-ENV1",
+          "sourceStatus": "present",
+          "signal": "higher_run_environment",
+          "expectedTotalRunsDelta": 0.57,
+          "expectedHitsDelta": 0,
+          "expectedHrDelta": -0.02,
+          "expectedStrikeoutsDelta": 0,
+          "expectedWalksDelta": 0,
+          "parkRunDelta": 0.16,
+          "parkHrDelta": -0.19,
+          "weatherHrForce": 1.6,
+          "weatherSignal": "higher_runs",
+          "umpireRunsDelta": 0,
+          "umpireAssignmentStatus": "missing_or_unresolved",
+          "visibility": {
+            "lateLocalStart": false,
+            "hitsMultiplier": 1,
+            "hrMultiplier": 1,
+            "runsMultiplier": 1
+          }
+        },
+        "market": {
+          "source": "DraftKings typed MLB board",
+          "moneyline": {
+            "raw": "-105 / -114",
+            "awayOdds": -105,
+            "homeOdds": -114,
+            "awayImpliedPct": 51.2,
+            "homeImpliedPct": 53.3
+          },
+          "first5Moneyline": {
+            "raw": "-120 / -110"
+          },
+          "total": {
+            "raw": "9.0 Runs",
+            "postedLine": 9
+          },
+          "first5Total": {
+            "raw": "4.5 Runs",
+            "postedLine": 4.5
+          }
+        },
+        "projections": {
+          "moneyline": {
+            "awayProjectedRuns": 3.9,
+            "homeProjectedRuns": 4,
+            "runDiffAwayMinusHome": -0.1,
+            "awayFirst5ProjectedRuns": 2.3,
+            "homeFirst5ProjectedRuns": 2.5,
+            "first5RunDiffAwayMinusHome": -0.2,
+            "edgeTeam": "Rangers",
+            "edgeHits": 0.7,
+            "modelEdge": 0,
+            "moneylineShape": {
+              "marketType": "ML shape",
+              "selection": "Rangers",
+              "opponent": "Red Sox",
+              "pickProjectedRuns": 3.9,
+              "opponentProjectedRuns": 4,
+              "projectedTotalRuns": 7.9,
+              "runDiff": -0.1,
+              "absoluteRunDiff": 0.1,
+              "runDiffSharePct": 1.3,
+              "confidence": 52,
+              "marketProbabilityPct": 49,
+              "grade": "Thin ML shape",
+              "source": "MLB-M2 mlbProjection",
+              "note": "Rangers projects -0.1 runs better in a 7.9-run environment."
+            },
+            "first5Moneyline": null
+          },
+          "firstFive": {
+            "awayProjectedRuns": 2.3,
+            "homeProjectedRuns": 2.5,
+            "runDiffAwayMinusHome": -0.2,
+            "projectedTotalRuns": 4.8,
+            "marketLine": 4.5,
+            "lean": "Over"
+          },
+          "totals": {
+            "projectedFullTotalRuns": 7.9,
+            "marketLine": null,
+            "fullGameLean": "Pass",
+            "fullGameEdge": -1.1,
+            "first5Lean": "Over",
+            "first5Edge": 0.3
+          },
+          "yrfi": {
+            "pick": "YRFI",
+            "yesProbabilityPct": 70.2,
+            "noProbabilityPct": 29.8,
+            "edge": 20.2,
+            "strength": "Strong",
+            "awayRunProbabilityPct": 43.6,
+            "homeRunProbabilityPct": 47.2,
+            "projectedRuns": 1.1,
+            "weatherAdjustment": null
+          }
+        }
+      }
+    }
+  ],
+  "hardFailures": [],
+  "status": "passed"
+}

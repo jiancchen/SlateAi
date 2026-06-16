@@ -11,7 +11,7 @@ export const rawGames = [
       "id": 676974,
       "fullName": "Max Meyer",
       "pitchHand": "R",
-      "wins": 6,
+      "wins": 7,
       "losses": 0,
       "era": "2.75",
       "strikeOuts": 95,
@@ -179,45 +179,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/max-meyer-vs-pirates",
-        "answerText": "Max Meyer with an ERA of 1.42 and 8 strikeouts in 2 appearances against the Pirates in his career.",
+        "answerText": "Max Meyer is 1-0 with an ERA of 1.46 and 17 strikeouts in 3 appearances versus the Pirates in his career.",
         "pitcherName": "Max Meyer",
         "pitcherTeam": "Marlins",
         "opponentTeam": "Pirates",
-        "appearances": 2,
-        "gamesStarted": 2,
-        "wins": null,
-        "losses": null,
-        "era": 1.42,
-        "strikeouts": 8,
-        "inningsPitched": "6.1",
-        "hitsAllowed": 5,
-        "earnedRuns": 1,
-        "runsAllowed": 2,
+        "appearances": 3,
+        "gamesStarted": 3,
+        "wins": 1,
+        "losses": 0,
+        "era": 1.46,
+        "strikeouts": 17,
+        "inningsPitched": "12.1",
+        "hitsAllowed": 11,
+        "earnedRuns": 2,
+        "runsAllowed": 3,
         "homeRunsAllowed": 1,
-        "walks": 2,
-        "battersFaced": 26,
+        "walks": 5,
+        "battersFaced": 54,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "2",
-          "ERA": "1.42",
-          "SO": "8",
+          "GS": "3",
+          "ERA": "1.46",
+          "SO": "17",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "6.1",
-          "H": "5",
-          "ER": "1",
-          "R": "2",
+          "IP": "12.1",
+          "H": "11",
+          "ER": "2",
+          "R": "3",
           "HR": "1",
-          "BB": "2",
-          "HBP": "0",
+          "BB": "5",
+          "HBP": "1",
           "GF": "0",
           "IBB": "0",
-          "TBF": "26",
+          "TBF": "54",
           "WP": "0",
           "_isTotal": true
         },
@@ -269,9 +269,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "23",
             "WP": "0"
+          },
+          {
+            "NAME": "Max Meyer M. Meyer",
+            "DATE": "6/14/2026",
+            "TM": "MIA",
+            "OPP": "PIT",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "1.50",
+            "SO": "9",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "6",
+            "ER": "1",
+            "R": "1",
+            "HR": "0",
+            "BB": "3",
+            "HBP": "1",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "28",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:43.594Z"
+        "fetchedAt": "2026-06-15T10:34:53.975Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -330,12 +354,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.85"
+                    "value": "2.75"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "L",
@@ -355,12 +379,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -370,22 +394,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "79.0"
+                    "value": "85.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "57"
+                    "value": "63"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "27"
+                    "value": "28"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "25"
+                    "value": "26"
                   },
                   {
                     "label": "HR",
@@ -395,17 +419,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "29"
+                    "value": "32"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "86"
+                    "value": "95"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".197"
+                    "value": ".201"
                   }
                 ]
               }
@@ -458,17 +482,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "289"
+                    "value": "313"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "27"
+                    "value": "28"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "57"
+                    "value": "63"
                   },
                   {
                     "label": "2B",
@@ -488,22 +512,22 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "24"
+                    "value": "25"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "29"
+                    "value": "32"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "86"
+                    "value": "95"
                   },
                   {
                     "label": "SB",
@@ -513,27 +537,27 @@ export const rawGames = [
                   {
                     "label": "CS",
                     "name": "caughtStealing",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".197"
+                    "value": ".201"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".281"
+                    "value": ".287"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".315"
+                    "value": ".310"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".596"
+                    "value": ".597"
                   }
                 ]
               }
@@ -671,12 +695,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.05"
+                    "value": "3.66"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "L",
@@ -696,12 +720,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "CG",
@@ -711,22 +735,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "33.1"
+                    "value": "39.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "27"
+                    "value": "33"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "17"
+                    "value": "18"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "HR",
@@ -736,17 +760,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "12"
+                    "value": "15"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "38"
+                    "value": "47"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".213"
+                    "value": ".219"
                   }
                 ]
               },
@@ -1437,12 +1461,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.19"
+                    "value": "1.96"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -1462,12 +1486,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -1477,22 +1501,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "12.1"
+                    "value": "18.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "9"
+                    "value": "15"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "HR",
@@ -1502,17 +1526,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "12"
+                    "value": "21"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".209"
+                    "value": ".224"
                   }
                 ]
               },
@@ -1522,12 +1546,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.38"
+                    "value": "2.38"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -1547,12 +1571,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -1562,22 +1586,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "5.1"
+                    "value": "11.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "7"
+                    "value": "13"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "HR",
@@ -1587,17 +1611,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "5"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "5"
+                    "value": "14"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".333"
+                    "value": ".289"
                   }
                 ]
               },
@@ -2580,6 +2604,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "Pittsburgh Pirates",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "1.50"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "6"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "1"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "3"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "9"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".250"
+                  }
+                ]
+              },
+              {
                 "label": "San Francisco Giants",
                 "stats": [
                   {
@@ -2883,12 +2992,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.85"
+                    "value": "2.75"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "L",
@@ -2908,12 +3017,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -2923,22 +3032,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "79.0"
+                    "value": "85.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "57"
+                    "value": "63"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "27"
+                    "value": "28"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "25"
+                    "value": "26"
                   },
                   {
                     "label": "HR",
@@ -2948,17 +3057,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "29"
+                    "value": "32"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "86"
+                    "value": "95"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".197"
+                    "value": ".201"
                   }
                 ]
               },
@@ -3299,6 +3408,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".091"
+                  }
+                ]
+              },
+              {
+                "label": "PNC Park",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "1.50"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "6"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "1"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "3"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "9"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".250"
                   }
                 ]
               },
@@ -5180,17 +5374,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "289"
+                    "value": "313"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "27"
+                    "value": "28"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "57"
+                    "value": "63"
                   },
                   {
                     "label": "2B",
@@ -5210,22 +5404,22 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "24"
+                    "value": "25"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "29"
+                    "value": "32"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "86"
+                    "value": "95"
                   },
                   {
                     "label": "SB",
@@ -5235,27 +5429,27 @@ export const rawGames = [
                   {
                     "label": "CS",
                     "name": "caughtStealing",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".197"
+                    "value": ".201"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".281"
+                    "value": ".287"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".315"
+                    "value": ".310"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".596"
+                    "value": ".597"
                   }
                 ]
               }
@@ -5266,10 +5460,11 @@ export const rawGames = [
           "Third time through: .194 AVG / .589 OPS allowed with 2 HR.",
           "First look baseline: .294 OBP / .597 OPS allowed.",
           "Day split: 1.25 ERA / .137 OBA.",
-          "Away split: 4.05 ERA / 4 HR allowed.",
-          "vs. Right: .214 AVG / .634 OPS allowed."
+          "Away split: 3.66 ERA / 4 HR allowed.",
+          "vs. Right: .214 AVG / .634 OPS allowed.",
+          "PNC Park: 1.50 ERA / .250 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -5295,7 +5490,7 @@ export const rawGames = [
       "fullName": "Paul Skenes",
       "pitchHand": "R",
       "wins": 6,
-      "losses": 5,
+      "losses": 6,
       "era": "2.85",
       "strikeOuts": 99,
       "inningsPitched": "82.0",
@@ -5462,45 +5657,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/paul-skenes-vs-marlins",
-        "answerText": "Paul Skenes has a record of 1-0 with an ERA of 2.38 and 16 strikeouts in 2 appearances versus the Marlins in his career.",
+        "answerText": "Paul Skenes is 1-1 with an ERA of 2.60 and 26 strikeouts in 3 appearances against the Marlins in his career.",
         "pitcherName": "Paul Skenes",
         "pitcherTeam": "Pirates",
         "opponentTeam": "Marlins",
-        "appearances": 2,
-        "gamesStarted": 2,
-        "wins": null,
-        "losses": null,
-        "era": 2.38,
-        "strikeouts": 16,
-        "inningsPitched": "11.1",
-        "hitsAllowed": 9,
-        "earnedRuns": 3,
-        "runsAllowed": 3,
-        "homeRunsAllowed": 0,
-        "walks": 3,
-        "battersFaced": 44,
+        "appearances": 3,
+        "gamesStarted": 3,
+        "wins": 1,
+        "losses": 1,
+        "era": 2.6,
+        "strikeouts": 26,
+        "inningsPitched": "17.1",
+        "hitsAllowed": 13,
+        "earnedRuns": 5,
+        "runsAllowed": 5,
+        "homeRunsAllowed": 2,
+        "walks": 4,
+        "battersFaced": 67,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "2",
-          "ERA": "2.38",
-          "SO": "16",
+          "GS": "3",
+          "ERA": "2.60",
+          "SO": "26",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "11.1",
-          "H": "9",
-          "ER": "3",
-          "R": "3",
-          "HR": "0",
-          "BB": "3",
+          "IP": "17.1",
+          "H": "13",
+          "ER": "5",
+          "R": "5",
+          "HR": "2",
+          "BB": "4",
           "HBP": "0",
           "GF": "0",
           "IBB": "0",
-          "TBF": "44",
+          "TBF": "67",
           "WP": "0",
           "_isTotal": true
         },
@@ -5552,9 +5747,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "20",
             "WP": "0"
+          },
+          {
+            "NAME": "Paul Skenes P. Skenes",
+            "DATE": "6/14/2026",
+            "TM": "PIT",
+            "OPP": "MIA",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "3.00",
+            "SO": "10",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "4",
+            "ER": "2",
+            "R": "2",
+            "HR": "2",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "23",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:43.975Z"
+        "fetchedAt": "2026-06-15T10:34:54.360Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -5613,7 +5832,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.84"
+                    "value": "2.85"
                   },
                   {
                     "label": "W",
@@ -5623,7 +5842,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "SV",
@@ -5638,12 +5857,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -5653,42 +5872,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "76.0"
+                    "value": "82.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "56"
+                    "value": "60"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "30"
+                    "value": "32"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "6"
+                    "value": "8"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "89"
+                    "value": "99"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".200"
+                    "value": ".199"
                   }
                 ]
               }
@@ -5741,17 +5960,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "280"
+                    "value": "302"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "30"
+                    "value": "32"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "56"
+                    "value": "60"
                   },
                   {
                     "label": "2B",
@@ -5766,17 +5985,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "6"
+                    "value": "8"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "25"
+                    "value": "27"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "HBP",
@@ -5786,7 +6005,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "89"
+                    "value": "99"
                   },
                   {
                     "label": "SB",
@@ -5801,22 +6020,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".200"
+                    "value": ".199"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".249"
+                    "value": ".247"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".318"
+                    "value": ".328"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".567"
+                    "value": ".575"
                   }
                 ]
               }
@@ -5869,7 +6088,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.56"
+                    "value": "2.61"
                   },
                   {
                     "label": "W",
@@ -5879,7 +6098,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "SV",
@@ -5894,12 +6113,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "CG",
@@ -5909,42 +6128,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "45.2"
+                    "value": "51.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "31"
+                    "value": "35"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "17"
+                    "value": "19"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "13"
+                    "value": "15"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "5"
+                    "value": "7"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "60"
+                    "value": "70"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".189"
+                    "value": ".188"
                   }
                 ]
               },
@@ -6720,7 +6939,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.53"
+                    "value": "2.70"
                   },
                   {
                     "label": "W",
@@ -6730,7 +6949,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -6745,12 +6964,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -6760,42 +6979,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "10.2"
+                    "value": "16.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "12"
+                    "value": "16"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "5"
+                    "value": "7"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "0"
+                    "value": "2"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "14"
+                    "value": "24"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".273"
+                    "value": ".242"
                   }
                 ]
               },
@@ -6815,7 +7034,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -6830,12 +7049,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -6845,42 +7064,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "6.0"
+                    "value": "12.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "6"
+                    "value": "10"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "2"
+                    "value": "4"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "2"
+                    "value": "4"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "0"
+                    "value": "2"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "7"
+                    "value": "17"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".273"
+                    "value": ".227"
                   }
                 ]
               },
@@ -7604,6 +7823,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".273"
+                  }
+                ]
+              },
+              {
+                "label": "Miami Marlins",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "3.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "4"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "2"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "10"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".182"
                   }
                 ]
               },
@@ -8336,7 +8640,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.84"
+                    "value": "2.85"
                   },
                   {
                     "label": "W",
@@ -8346,7 +8650,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "SV",
@@ -8361,12 +8665,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -8376,42 +8680,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "76.0"
+                    "value": "82.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "56"
+                    "value": "60"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "30"
+                    "value": "32"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "6"
+                    "value": "8"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "89"
+                    "value": "99"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".200"
+                    "value": ".199"
                   }
                 ]
               },
@@ -10498,6 +10802,91 @@ export const rawGames = [
                     "value": ".937"
                   }
                 ]
+              },
+              {
+                "label": "4th+ Time Faced In Game",
+                "stats": [
+                  {
+                    "label": "AB",
+                    "name": "atBats",
+                    "value": "0"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "0"
+                  },
+                  {
+                    "label": "2B",
+                    "name": "doubles",
+                    "value": "0"
+                  },
+                  {
+                    "label": "3B",
+                    "name": "triples",
+                    "value": "0"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "RBI",
+                    "name": "RBIs",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "0"
+                  },
+                  {
+                    "label": "HBP",
+                    "name": "hitByPitch",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SO",
+                    "name": "strikeouts",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SB",
+                    "name": "stolenBases",
+                    "value": "0"
+                  },
+                  {
+                    "label": "CS",
+                    "name": "caughtStealing",
+                    "value": "0"
+                  },
+                  {
+                    "label": "AVG",
+                    "name": "avg",
+                    "value": ".000"
+                  },
+                  {
+                    "label": "OBP",
+                    "name": "onBasePct",
+                    "value": ".000"
+                  },
+                  {
+                    "label": "SLG",
+                    "name": "slugAvg",
+                    "value": ".000"
+                  },
+                  {
+                    "label": "OPS",
+                    "name": "OPS",
+                    "value": ".000"
+                  }
+                ]
               }
             ]
           },
@@ -10548,17 +10937,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "280"
+                    "value": "302"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "30"
+                    "value": "32"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "56"
+                    "value": "60"
                   },
                   {
                     "label": "2B",
@@ -10573,17 +10962,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "6"
+                    "value": "8"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "25"
+                    "value": "27"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "HBP",
@@ -10593,7 +10982,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "89"
+                    "value": "99"
                   },
                   {
                     "label": "SB",
@@ -10608,22 +10997,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".200"
+                    "value": ".199"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".249"
+                    "value": ".247"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".318"
+                    "value": ".328"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".567"
+                    "value": ".575"
                   }
                 ]
               }
@@ -10638,7 +11027,7 @@ export const rawGames = [
           "vs. Left: .206 AVG / .581 OPS allowed.",
           "PNC Park: 2.56 ERA / .189 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -13680,14 +14069,14 @@ export const rawGames = [
       "fullName": "Emerson Hancock",
       "pitchHand": "R",
       "wins": 5,
-      "losses": 2,
-      "era": "2.76",
+      "losses": 3,
+      "era": "3.28",
       "strikeOuts": 75,
-      "inningsPitched": "78.1",
-      "hitsAllowed": 58,
+      "inningsPitched": "79.2",
+      "hitsAllowed": 64,
       "walks": 17,
       "homeRunsAllowed": 11,
-      "whip": "0.96",
+      "whip": "1.02",
       "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
@@ -13847,24 +14236,48 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/emerson-hancock-vs-nationals",
-        "answerText": "Emerson Hancock has given up 2 runs on 2 hits with 3 walks and 4 strikeouts in 5.1 innings against the Nationals in his career.",
+        "answerText": "Emerson Hancock is 0-1 with an ERA of 7.71 and 6 strikeouts in 2 appearances against the Nationals in his career.",
         "pitcherName": "Emerson Hancock",
         "pitcherTeam": "Mariners",
         "opponentTeam": "Nationals",
-        "appearances": 1,
-        "gamesStarted": 0,
-        "wins": null,
-        "losses": null,
-        "era": null,
-        "strikeouts": null,
-        "inningsPitched": null,
-        "hitsAllowed": null,
-        "earnedRuns": null,
-        "runsAllowed": null,
-        "homeRunsAllowed": null,
-        "walks": null,
-        "battersFaced": null,
-        "totalRow": null,
+        "appearances": 2,
+        "gamesStarted": 2,
+        "wins": 0,
+        "losses": 1,
+        "era": 7.71,
+        "strikeouts": 6,
+        "inningsPitched": "9.1",
+        "hitsAllowed": 11,
+        "earnedRuns": 8,
+        "runsAllowed": 8,
+        "homeRunsAllowed": 1,
+        "walks": 3,
+        "battersFaced": 40,
+        "totalRow": {
+          "NAME": "Total",
+          "DATE": "",
+          "TM": "",
+          "OPP": "",
+          "DEC": "",
+          "GS": "2",
+          "ERA": "7.71",
+          "SO": "6",
+          "CG": "0",
+          "SHO": "0",
+          "SV": "0",
+          "IP": "9.1",
+          "H": "11",
+          "ER": "8",
+          "R": "8",
+          "HR": "1",
+          "BB": "3",
+          "HBP": "0",
+          "GF": "0",
+          "IBB": "0",
+          "TBF": "40",
+          "WP": "0",
+          "_isTotal": true
+        },
         "gameRows": [
           {
             "NAME": "Emerson Hancock E. Hancock",
@@ -13889,9 +14302,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "19",
             "WP": "0"
+          },
+          {
+            "NAME": "Emerson Hancock E. Hancock",
+            "DATE": "6/14/2026",
+            "TM": "SEA",
+            "OPP": "WSH",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "13.50",
+            "SO": "2",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "4.0",
+            "H": "9",
+            "ER": "6",
+            "R": "6",
+            "HR": "1",
+            "BB": "0",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "21",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:45.585Z"
+        "fetchedAt": "2026-06-15T10:34:54.753Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -13950,7 +14387,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.74"
+                    "value": "3.28"
                   },
                   {
                     "label": "W",
@@ -13960,7 +14397,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "SV",
@@ -13975,12 +14412,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -13990,27 +14427,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "75.2"
+                    "value": "79.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "55"
+                    "value": "64"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "23"
+                    "value": "29"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "23"
+                    "value": "29"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "BB",
@@ -14020,12 +14457,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "73"
+                    "value": "75"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".204"
+                    "value": ".220"
                   }
                 ]
               }
@@ -14078,22 +14515,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "270"
+                    "value": "291"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "23"
+                    "value": "29"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "55"
+                    "value": "64"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "9"
+                    "value": "12"
                   },
                   {
                     "label": "3B",
@@ -14103,12 +14540,12 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "23"
+                    "value": "29"
                   },
                   {
                     "label": "BB",
@@ -14123,7 +14560,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "73"
+                    "value": "75"
                   },
                   {
                     "label": "SB",
@@ -14138,22 +14575,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".204"
+                    "value": ".220"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".260"
+                    "value": ".272"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".348"
+                    "value": ".375"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".608"
+                    "value": ".646"
                   }
                 ]
               }
@@ -14291,7 +14728,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.78"
+                    "value": "3.86"
                   },
                   {
                     "label": "W",
@@ -14301,7 +14738,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SV",
@@ -14316,12 +14753,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "CG",
@@ -14331,27 +14768,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "35.2"
+                    "value": "39.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "26"
+                    "value": "35"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "11"
+                    "value": "17"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "11"
+                    "value": "17"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "BB",
@@ -14361,12 +14798,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "25"
+                    "value": "27"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".202"
+                    "value": ".233"
                   }
                 ]
               },
@@ -15057,7 +15494,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.45"
+                    "value": "5.40"
                   },
                   {
                     "label": "W",
@@ -15067,7 +15504,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -15082,12 +15519,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -15097,27 +15534,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "11.0"
+                    "value": "15.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "5"
+                    "value": "14"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "3"
+                    "value": "9"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "3"
+                    "value": "9"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
@@ -15127,12 +15564,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "10"
+                    "value": "12"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".135"
+                    "value": ".241"
                   }
                 ]
               },
@@ -15142,7 +15579,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.80"
+                    "value": "7.00"
                   },
                   {
                     "label": "W",
@@ -15152,7 +15589,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -15167,12 +15604,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -15182,27 +15619,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "5.0"
+                    "value": "9.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "3"
+                    "value": "12"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "1"
+                    "value": "7"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "1"
+                    "value": "7"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "BB",
@@ -15212,12 +15649,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".176"
+                    "value": ".316"
                   }
                 ]
               },
@@ -16283,6 +16720,91 @@ export const rawGames = [
                     "value": ".292"
                   }
                 ]
+              },
+              {
+                "label": "Washington Nationals",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "13.50"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "4.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "9"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "6"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "6"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "0"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "2"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".429"
+                  }
+                ]
               }
             ]
           },
@@ -16333,7 +16855,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.74"
+                    "value": "3.28"
                   },
                   {
                     "label": "W",
@@ -16343,7 +16865,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "SV",
@@ -16358,12 +16880,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -16373,27 +16895,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "75.2"
+                    "value": "79.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "55"
+                    "value": "64"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "23"
+                    "value": "29"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "23"
+                    "value": "29"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "BB",
@@ -16403,12 +16925,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "73"
+                    "value": "75"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".204"
+                    "value": ".220"
                   }
                 ]
               },
@@ -16664,6 +17186,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".176"
+                  }
+                ]
+              },
+              {
+                "label": "Nationals Park",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "13.50"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "4.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "9"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "6"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "6"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "0"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "2"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".429"
                   }
                 ]
               },
@@ -18545,22 +19152,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "270"
+                    "value": "291"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "23"
+                    "value": "29"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "55"
+                    "value": "64"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "9"
+                    "value": "12"
                   },
                   {
                     "label": "3B",
@@ -18570,12 +19177,12 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "23"
+                    "value": "29"
                   },
                   {
                     "label": "BB",
@@ -18590,7 +19197,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "73"
+                    "value": "75"
                   },
                   {
                     "label": "SB",
@@ -18605,22 +19212,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".204"
+                    "value": ".220"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".260"
+                    "value": ".272"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".348"
+                    "value": ".375"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".608"
+                    "value": ".646"
                   }
                 ]
               }
@@ -18631,10 +19238,11 @@ export const rawGames = [
           "Third time through: .273 AVG / .819 OPS allowed with 4 HR.",
           "First look baseline: .222 OBP / .479 OPS allowed.",
           "Day split: 2.12 ERA / .200 OBA.",
-          "Away split: 2.78 ERA / 5 HR allowed.",
-          "vs. Right: .217 AVG / .633 OPS allowed."
+          "Away split: 3.86 ERA / 6 HR allowed.",
+          "vs. Right: .217 AVG / .633 OPS allowed.",
+          "Nationals Park: 13.50 ERA / .429 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -18659,15 +19267,15 @@ export const rawGames = [
       "id": 571945,
       "fullName": "Miles Mikolas",
       "pitchHand": "R",
-      "wins": 1,
+      "wins": 2,
       "losses": 5,
-      "era": "5.71",
-      "strikeOuts": 40,
-      "inningsPitched": "63.0",
-      "hitsAllowed": 67,
+      "era": "5.29",
+      "strikeOuts": 41,
+      "inningsPitched": "68.0",
+      "hitsAllowed": 69,
       "walks": 16,
       "homeRunsAllowed": 14,
-      "whip": "1.32",
+      "whip": "1.25",
       "gamesStarted": 6,
       "probableSource": "rotowire-primary",
       "savant": {
@@ -18823,7 +19431,175 @@ export const rawGames = [
       ],
       "opponentHistoryThisSeason": [],
       "strikeoutMarket": null,
-      "statmuseVsOpponent": null,
+      "statmuseVsOpponent": {
+        "source": "StatMuse",
+        "sourceUrl": "https://www.statmuse.com/mlb/ask/miles-mikolas-vs-mariners",
+        "answerText": "Miles Mikolas has a record of 2-1 with an ERA of 3.62 and 17 strikeouts in 5 appearances against the Mariners in his career.",
+        "pitcherName": "Miles Mikolas",
+        "pitcherTeam": "Nationals",
+        "opponentTeam": "Mariners",
+        "appearances": 4,
+        "gamesStarted": 4,
+        "wins": null,
+        "losses": null,
+        "era": 3.62,
+        "strikeouts": 17,
+        "inningsPitched": "27.1",
+        "hitsAllowed": 24,
+        "earnedRuns": 11,
+        "runsAllowed": 12,
+        "homeRunsAllowed": 3,
+        "walks": 4,
+        "battersFaced": 106,
+        "totalRow": {
+          "NAME": "Total",
+          "DATE": "",
+          "TM": "",
+          "OPP": "",
+          "DEC": "",
+          "GS": "4",
+          "ERA": "3.62",
+          "SO": "17",
+          "CG": "0",
+          "SHO": "0",
+          "SV": "0",
+          "IP": "27.1",
+          "H": "24",
+          "ER": "11",
+          "R": "12",
+          "HR": "3",
+          "BB": "4",
+          "HBP": "0",
+          "GF": "0",
+          "IBB": "0",
+          "TBF": "106",
+          "WP": "0",
+          "_isTotal": true
+        },
+        "gameRows": [
+          {
+            "NAME": "Miles Mikolas M. Mikolas",
+            "DATE": "8/25/2014",
+            "TM": "TEX",
+            "OPP": "SEA",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "0.00",
+            "SO": "5",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "8.0",
+            "H": "3",
+            "ER": "0",
+            "R": "0",
+            "HR": "0",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "26",
+            "WP": "0"
+          },
+          {
+            "NAME": "Miles Mikolas M. Mikolas",
+            "DATE": "4/22/2023",
+            "TM": "STL",
+            "OPP": "SEA",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "5.06",
+            "SO": "4",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.1",
+            "H": "5",
+            "ER": "3",
+            "R": "3",
+            "HR": "2",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "23",
+            "WP": "0"
+          },
+          {
+            "NAME": "Miles Mikolas M. Mikolas",
+            "DATE": "9/8/2024",
+            "TM": "STL",
+            "OPP": "SEA",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "27.00",
+            "SO": "3",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "2.0",
+            "H": "9",
+            "ER": "6",
+            "R": "7",
+            "HR": "1",
+            "BB": "0",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "15",
+            "WP": "0"
+          },
+          {
+            "NAME": "Miles Mikolas M. Mikolas",
+            "DATE": "9/8/2025",
+            "TM": "STL",
+            "OPP": "SEA",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "3.60",
+            "SO": "2",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.0",
+            "H": "4",
+            "ER": "2",
+            "R": "2",
+            "HR": "0",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "19",
+            "WP": "0"
+          },
+          {
+            "NAME": "Miles Mikolas M. Mikolas",
+            "DATE": "6/14/2026",
+            "TM": "WSH",
+            "OPP": "SEA",
+            "DEC": "W",
+            "GS": "0",
+            "ERA": "0.00",
+            "SO": "3",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "7.0",
+            "H": "3",
+            "ER": "0",
+            "R": "0",
+            "HR": "0",
+            "BB": "0",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "23",
+            "WP": "0"
+          }
+        ],
+        "fetchedAt": "2026-06-15T10:34:55.150Z"
+      },
       "espnSplits": {
         "source": "ESPN player splits",
         "sourceUrl": "https://www.espn.com/mlb/player/splits/_/id/32116/miles-mikolas",
@@ -18881,12 +19657,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.90"
+                    "value": "5.29"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -18906,7 +19682,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
@@ -18921,12 +19697,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "61.0"
+                    "value": "68.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "66"
+                    "value": "69"
                   },
                   {
                     "label": "R",
@@ -18951,12 +19727,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "38"
+                    "value": "41"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".272"
+                    "value": ".259"
                   }
                 ]
               }
@@ -19009,7 +19785,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "243"
+                    "value": "266"
                   },
                   {
                     "label": "R",
@@ -19019,7 +19795,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "66"
+                    "value": "69"
                   },
                   {
                     "label": "2B",
@@ -19054,7 +19830,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "38"
+                    "value": "41"
                   },
                   {
                     "label": "SB",
@@ -19069,22 +19845,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".272"
+                    "value": ".259"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".313"
+                    "value": ".298"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".490"
+                    "value": ".459"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".803"
+                    "value": ".757"
                   }
                 ]
               }
@@ -19137,12 +19913,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "7.94"
+                    "value": "6.37"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -19162,7 +19938,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "GS",
@@ -19177,12 +19953,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "28.1"
+                    "value": "35.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "35"
+                    "value": "38"
                   },
                   {
                     "label": "R",
@@ -19207,12 +19983,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "22"
+                    "value": "25"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".297"
+                    "value": ".270"
                   }
                 ]
               },
@@ -19988,12 +20764,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.06"
+                    "value": "3.06"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -20013,7 +20789,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
@@ -20028,12 +20804,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "10.2"
+                    "value": "17.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "9"
+                    "value": "12"
                   },
                   {
                     "label": "R",
@@ -20058,12 +20834,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "9"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".225"
+                    "value": ".190"
                   }
                 ]
               },
@@ -20078,7 +20854,7 @@ export const rawGames = [
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -20098,7 +20874,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
@@ -20113,12 +20889,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "4.2"
+                    "value": "11.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "3"
+                    "value": "6"
                   },
                   {
                     "label": "R",
@@ -20143,12 +20919,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "2"
+                    "value": "5"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".176"
+                    "value": ".150"
                   }
                 ]
               },
@@ -21386,6 +22162,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "Seattle Mariners",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "0.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "0"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "7.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "3"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "0"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "0"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "3"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".130"
+                  }
+                ]
+              },
+              {
                 "label": "St. Louis Cardinals",
                 "stats": [
                   {
@@ -21519,12 +22380,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.90"
+                    "value": "5.29"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -21544,7 +22405,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
@@ -21559,12 +22420,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "61.0"
+                    "value": "68.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "66"
+                    "value": "69"
                   },
                   {
                     "label": "R",
@@ -21589,12 +22450,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "38"
+                    "value": "41"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".272"
+                    "value": ".259"
                   }
                 ]
               },
@@ -23986,7 +24847,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "136"
+                    "value": "159"
                   },
                   {
                     "label": "R",
@@ -23996,7 +24857,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "35"
+                    "value": "38"
                   },
                   {
                     "label": "2B",
@@ -24031,7 +24892,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "19"
+                    "value": "22"
                   },
                   {
                     "label": "SB",
@@ -24046,22 +24907,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".257"
+                    "value": ".239"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".285"
+                    "value": ".263"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".471"
+                    "value": ".421"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".755"
+                    "value": ".685"
                   }
                 ]
               }
@@ -24076,7 +24937,7 @@ export const rawGames = [
           "vs. Left: .281 AVG / .818 OPS allowed.",
           "Nationals Park: 7.94 ERA / .297 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -27088,14 +27949,14 @@ export const rawGames = [
       "id": 621111,
       "fullName": "Walker Buehler",
       "pitchHand": "R",
-      "wins": 3,
+      "wins": 4,
       "losses": 3,
-      "era": "4.20",
-      "strikeOuts": 57,
-      "inningsPitched": "64.1",
-      "hitsAllowed": 64,
+      "era": "4.14",
+      "strikeOuts": 58,
+      "inningsPitched": "67.1",
+      "hitsAllowed": 68,
       "walks": 22,
-      "homeRunsAllowed": 4,
+      "homeRunsAllowed": 5,
       "whip": "1.34",
       "gamesStarted": 14,
       "probableSource": "mlb-api",
@@ -27256,45 +28117,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/walker-buehler-vs-orioles",
-        "answerText": "Walker Buehler is 1-1 with an ERA of 2.61 and 22 strikeouts in 4 appearances versus the Orioles in his career.",
+        "answerText": "Walker Buehler has a 2-1 record with an ERA of 2.45 and 27 strikeouts in 5 appearances versus the Orioles in his career.",
         "pitcherName": "Walker Buehler",
         "pitcherTeam": "Padres",
         "opponentTeam": "Orioles",
-        "appearances": 4,
-        "gamesStarted": 4,
-        "wins": 1,
+        "appearances": 5,
+        "gamesStarted": 5,
+        "wins": 2,
         "losses": 1,
-        "era": 2.61,
-        "strikeouts": 22,
-        "inningsPitched": "20.2",
-        "hitsAllowed": 17,
-        "earnedRuns": 6,
-        "runsAllowed": 8,
-        "homeRunsAllowed": 1,
+        "era": 2.45,
+        "strikeouts": 27,
+        "inningsPitched": "25.2",
+        "hitsAllowed": 23,
+        "earnedRuns": 7,
+        "runsAllowed": 9,
+        "homeRunsAllowed": 2,
         "walks": 7,
-        "battersFaced": 88,
+        "battersFaced": 109,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "4",
-          "ERA": "2.61",
-          "SO": "22",
+          "GS": "5",
+          "ERA": "2.45",
+          "SO": "27",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "20.2",
-          "H": "17",
-          "ER": "6",
-          "R": "8",
-          "HR": "1",
+          "IP": "25.2",
+          "H": "23",
+          "ER": "7",
+          "R": "9",
+          "HR": "2",
           "BB": "7",
           "HBP": "1",
           "GF": "0",
           "IBB": "0",
-          "TBF": "88",
+          "TBF": "109",
           "WP": "1",
           "_isTotal": true
         },
@@ -27394,9 +28255,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "20",
             "WP": "0"
+          },
+          {
+            "NAME": "Walker Buehler W. Buehler",
+            "DATE": "6/14/2026",
+            "TM": "SDP",
+            "OPP": "BAL",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "1.80",
+            "SO": "5",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.0",
+            "H": "6",
+            "ER": "1",
+            "R": "1",
+            "HR": "1",
+            "BB": "0",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "21",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:47.985Z"
+        "fetchedAt": "2026-06-15T10:34:55.542Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -27455,12 +28340,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.33"
+                    "value": "4.14"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "L",
@@ -27480,12 +28365,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -27495,27 +28380,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "62.1"
+                    "value": "67.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "62"
+                    "value": "68"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "30"
+                    "value": "31"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "30"
+                    "value": "31"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "BB",
@@ -27525,12 +28410,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "58"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".257"
+                    "value": ".260"
                   }
                 ]
               }
@@ -27583,17 +28468,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "241"
+                    "value": "262"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "30"
+                    "value": "31"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "62"
+                    "value": "68"
                   },
                   {
                     "label": "2B",
@@ -27608,12 +28493,12 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "26"
+                    "value": "27"
                   },
                   {
                     "label": "BB",
@@ -27628,7 +28513,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "58"
                   },
                   {
                     "label": "SB",
@@ -27643,22 +28528,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".257"
+                    "value": ".260"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".327"
+                    "value": ".324"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".361"
+                    "value": ".366"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".688"
+                    "value": ".690"
                   }
                 ]
               }
@@ -27796,12 +28681,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.23"
+                    "value": "5.40"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "L",
@@ -27821,12 +28706,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "CG",
@@ -27836,27 +28721,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "21.2"
+                    "value": "26.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "27"
+                    "value": "33"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
@@ -27866,12 +28751,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "23"
+                    "value": "28"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".293"
+                    "value": ".292"
                   }
                 ]
               },
@@ -28562,12 +29447,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.69"
+                    "value": "1.72"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -28587,12 +29472,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -28602,27 +29487,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "10.2"
+                    "value": "15.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "12"
+                    "value": "18"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "BB",
@@ -28632,7 +29517,7 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "10"
+                    "value": "15"
                   },
                   {
                     "label": "OBA",
@@ -28647,12 +29532,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.93"
+                    "value": "1.86"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -28672,12 +29557,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -28687,27 +29572,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "4.2"
+                    "value": "9.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "8"
+                    "value": "14"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "BB",
@@ -28717,12 +29602,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "4"
+                    "value": "9"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".400"
+                    "value": ".341"
                   }
                 ]
               },
@@ -28939,6 +29824,91 @@ export const rawGames = [
               "opponentAvg"
             ],
             "rows": [
+              {
+                "label": "Baltimore Orioles",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "1.80"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "5.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "6"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "1"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "0"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "5"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".286"
+                  }
+                ]
+              },
               {
                 "label": "Boston Red Sox",
                 "stats": [
@@ -29753,12 +30723,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.33"
+                    "value": "4.14"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "L",
@@ -29778,12 +30748,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -29793,27 +30763,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "62.1"
+                    "value": "67.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "62"
+                    "value": "68"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "30"
+                    "value": "31"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "30"
+                    "value": "31"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "BB",
@@ -29823,12 +30793,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "58"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".257"
+                    "value": ".260"
                   }
                 ]
               },
@@ -29914,6 +30884,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".304"
+                  }
+                ]
+              },
+              {
+                "label": "Camden Yards",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "1.80"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "5.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "6"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "1"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "0"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "5"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".286"
                   }
                 ]
               },
@@ -31965,17 +33020,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "241"
+                    "value": "262"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "30"
+                    "value": "31"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "62"
+                    "value": "68"
                   },
                   {
                     "label": "2B",
@@ -31990,12 +33045,12 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "26"
+                    "value": "27"
                   },
                   {
                     "label": "BB",
@@ -32010,7 +33065,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "58"
                   },
                   {
                     "label": "SB",
@@ -32025,22 +33080,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".257"
+                    "value": ".260"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".327"
+                    "value": ".324"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".361"
+                    "value": ".366"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".688"
+                    "value": ".690"
                   }
                 ]
               }
@@ -32051,10 +33106,10 @@ export const rawGames = [
           "Third time through: .375 AVG / .944 OPS allowed with 1 HR.",
           "First look baseline: .297 OBP / .605 OPS allowed.",
           "Day split: 4.74 ERA / .203 OBA.",
-          "Away split: 6.23 ERA / 2 HR allowed.",
+          "Away split: 5.40 ERA / 3 HR allowed.",
           "vs. Left: .304 AVG / .771 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -32080,14 +33135,14 @@ export const rawGames = [
       "fullName": "Trevor Rogers",
       "pitchHand": "L",
       "wins": 3,
-      "losses": 6,
-      "era": "6.14",
-      "strikeOuts": 47,
-      "inningsPitched": "63.0",
-      "hitsAllowed": 73,
-      "walks": 21,
+      "losses": 7,
+      "era": "5.86",
+      "strikeOuts": 48,
+      "inningsPitched": "66.0",
+      "hitsAllowed": 74,
+      "walks": 22,
       "homeRunsAllowed": 9,
-      "whip": "1.49",
+      "whip": "1.45",
       "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
@@ -32247,45 +33302,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/trevor-rogers-vs-padres",
-        "answerText": "Trevor Rogers with an ERA of 0.87 and 6 strikeouts in 2 appearances against the Padres in his career.",
+        "answerText": "Trevor Rogers has a record of 0-1 with an ERA of 1.65 and 10 strikeouts in 3 appearances against the Padres in his career.",
         "pitcherName": "Trevor Rogers",
         "pitcherTeam": "Orioles",
         "opponentTeam": "Padres",
-        "appearances": 2,
-        "gamesStarted": 2,
+        "appearances": 3,
+        "gamesStarted": 3,
         "wins": null,
         "losses": null,
-        "era": 0.87,
-        "strikeouts": 6,
-        "inningsPitched": "10.1",
-        "hitsAllowed": 11,
-        "earnedRuns": 1,
-        "runsAllowed": 1,
+        "era": 1.65,
+        "strikeouts": 10,
+        "inningsPitched": "16.1",
+        "hitsAllowed": 16,
+        "earnedRuns": 3,
+        "runsAllowed": 3,
         "homeRunsAllowed": 1,
-        "walks": 4,
-        "battersFaced": 45,
+        "walks": 6,
+        "battersFaced": 69,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "2",
-          "ERA": "0.87",
-          "SO": "6",
+          "GS": "3",
+          "ERA": "1.65",
+          "SO": "10",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "10.1",
-          "H": "11",
-          "ER": "1",
-          "R": "1",
+          "IP": "16.1",
+          "H": "16",
+          "ER": "3",
+          "R": "3",
           "HR": "1",
-          "BB": "4",
+          "BB": "6",
           "HBP": "0",
           "GF": "0",
           "IBB": "0",
-          "TBF": "45",
+          "TBF": "69",
           "WP": "0",
           "_isTotal": true
         },
@@ -32337,9 +33392,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "23",
             "WP": "0"
+          },
+          {
+            "NAME": "Trevor Rogers T. Rogers",
+            "DATE": "6/14/2026",
+            "TM": "BAL",
+            "OPP": "SDP",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "3.00",
+            "SO": "4",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "5",
+            "ER": "2",
+            "R": "2",
+            "HR": "0",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "24",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:49.624Z"
+        "fetchedAt": "2026-06-15T10:34:55.931Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -32398,7 +33477,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.15"
+                    "value": "5.86"
                   },
                   {
                     "label": "W",
@@ -32408,7 +33487,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "SV",
@@ -32423,12 +33502,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CG",
@@ -32438,22 +33517,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "60.0"
+                    "value": "66.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "69"
+                    "value": "74"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "43"
+                    "value": "45"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "41"
+                    "value": "43"
                   },
                   {
                     "label": "HR",
@@ -32463,17 +33542,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "44"
+                    "value": "48"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".284"
+                    "value": ".279"
                   }
                 ]
               }
@@ -32526,22 +33605,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "243"
+                    "value": "265"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "43"
+                    "value": "45"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "69"
+                    "value": "74"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "3B",
@@ -32556,12 +33635,12 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "42"
+                    "value": "44"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "HBP",
@@ -32571,12 +33650,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "44"
+                    "value": "48"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "5"
+                    "value": "7"
                   },
                   {
                     "label": "CS",
@@ -32586,22 +33665,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".284"
+                    "value": ".279"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".338"
+                    "value": ".334"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".473"
+                    "value": ".457"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".812"
+                    "value": ".791"
                   }
                 ]
               }
@@ -32654,7 +33733,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.90"
+                    "value": "5.52"
                   },
                   {
                     "label": "W",
@@ -32664,7 +33743,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "SV",
@@ -32679,12 +33758,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "CG",
@@ -32694,22 +33773,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "39.2"
+                    "value": "45.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "44"
+                    "value": "49"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "26"
+                    "value": "28"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "26"
+                    "value": "28"
                   },
                   {
                     "label": "HR",
@@ -32719,17 +33798,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "27"
+                    "value": "31"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".280"
+                    "value": ".274"
                   }
                 ]
               },
@@ -33505,7 +34584,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.18"
+                    "value": "3.12"
                   },
                   {
                     "label": "W",
@@ -33515,7 +34594,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -33530,12 +34609,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -33545,22 +34624,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "11.1"
+                    "value": "17.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "11"
+                    "value": "16"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "HR",
@@ -33570,17 +34649,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "4"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "10"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".250"
+                    "value": ".242"
                   }
                 ]
               },
@@ -33590,7 +34669,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.76"
+                    "value": "3.86"
                   },
                   {
                     "label": "W",
@@ -33600,7 +34679,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -33615,12 +34694,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -33630,22 +34709,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "5.2"
+                    "value": "11.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "6"
+                    "value": "11"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "HR",
@@ -33655,17 +34734,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "7"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".261"
+                    "value": ".244"
                   }
                 ]
               },
@@ -34478,6 +35557,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "San Diego Padres",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "3.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "5"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "2"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "4"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".227"
+                  }
+                ]
+              },
+              {
                 "label": "Seattle Mariners",
                 "stats": [
                   {
@@ -34866,7 +36030,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.15"
+                    "value": "5.86"
                   },
                   {
                     "label": "W",
@@ -34876,7 +36040,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "SV",
@@ -34891,12 +36055,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CG",
@@ -34906,22 +36070,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "60.0"
+                    "value": "66.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "69"
+                    "value": "74"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "43"
+                    "value": "45"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "41"
+                    "value": "43"
                   },
                   {
                     "label": "HR",
@@ -34931,17 +36095,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "44"
+                    "value": "48"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".284"
+                    "value": ".279"
                   }
                 ]
               },
@@ -36993,22 +38157,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "243"
+                    "value": "265"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "43"
+                    "value": "45"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "69"
+                    "value": "74"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "3B",
@@ -37023,12 +38187,12 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "42"
+                    "value": "44"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "HBP",
@@ -37038,12 +38202,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "44"
+                    "value": "48"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "5"
+                    "value": "7"
                   },
                   {
                     "label": "CS",
@@ -37053,22 +38217,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".284"
+                    "value": ".279"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".338"
+                    "value": ".334"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".473"
+                    "value": ".457"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".812"
+                    "value": ".791"
                   }
                 ]
               }
@@ -37082,7 +38246,7 @@ export const rawGames = [
           "Away split: 6.64 ERA / 2 HR allowed.",
           "vs. Right: .305 AVG / .857 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -40183,13 +41347,13 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 7,
       "losses": 1,
-      "era": "3.34",
-      "strikeOuts": 75,
-      "inningsPitched": "70.0",
-      "hitsAllowed": 64,
-      "walks": 23,
+      "era": "3.47",
+      "strikeOuts": 76,
+      "inningsPitched": "72.2",
+      "hitsAllowed": 70,
+      "walks": 24,
       "homeRunsAllowed": 7,
-      "whip": "1.24",
+      "whip": "1.29",
       "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
@@ -40376,45 +41540,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/will-warren-vs-blue-jays",
-        "answerText": "Will Warren is 1-0 with an ERA of 11.00 and 7 strikeouts in 2 appearances versus the Blue Jays in his career.",
+        "answerText": "Will Warren is 1-0 with an ERA of 9.00 and 8 strikeouts in 3 appearances versus the Blue Jays in his career.",
         "pitcherName": "Will Warren",
         "pitcherTeam": "Yankees",
         "opponentTeam": "Blue Jays",
-        "appearances": 2,
-        "gamesStarted": 2,
+        "appearances": 3,
+        "gamesStarted": 3,
         "wins": 1,
         "losses": 0,
-        "era": 11,
-        "strikeouts": 7,
-        "inningsPitched": "9.0",
-        "hitsAllowed": 16,
-        "earnedRuns": 11,
-        "runsAllowed": 11,
+        "era": 9,
+        "strikeouts": 8,
+        "inningsPitched": "13.0",
+        "hitsAllowed": 24,
+        "earnedRuns": 13,
+        "runsAllowed": 13,
         "homeRunsAllowed": 2,
-        "walks": 5,
-        "battersFaced": 47,
+        "walks": 8,
+        "battersFaced": 68,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "2",
-          "ERA": "11.00",
-          "SO": "7",
+          "GS": "3",
+          "ERA": "9.00",
+          "SO": "8",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "9.0",
-          "H": "16",
-          "ER": "11",
-          "R": "11",
+          "IP": "13.0",
+          "H": "24",
+          "ER": "13",
+          "R": "13",
           "HR": "2",
-          "BB": "5",
+          "BB": "8",
           "HBP": "0",
           "GF": "0",
           "IBB": "0",
-          "TBF": "47",
+          "TBF": "68",
           "WP": "0",
           "_isTotal": true
         },
@@ -40466,9 +41630,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "22",
             "WP": "0"
+          },
+          {
+            "NAME": "Will Warren W. Warren",
+            "DATE": "6/14/2026",
+            "TM": "NYY",
+            "OPP": "TOR",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "4.50",
+            "SO": "1",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "4.0",
+            "H": "8",
+            "ER": "2",
+            "R": "2",
+            "HR": "0",
+            "BB": "3",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "21",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:51.467Z"
+        "fetchedAt": "2026-06-15T10:34:56.365Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -40527,7 +41715,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.41"
+                    "value": "3.47"
                   },
                   {
                     "label": "W",
@@ -40552,12 +41740,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -40567,22 +41755,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "68.2"
+                    "value": "72.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "62"
+                    "value": "70"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "34"
+                    "value": "36"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "26"
+                    "value": "28"
                   },
                   {
                     "label": "HR",
@@ -40592,17 +41780,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "21"
+                    "value": "24"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "75"
+                    "value": "76"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".235"
+                    "value": ".248"
                   }
                 ]
               }
@@ -40655,22 +41843,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "264"
+                    "value": "282"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "34"
+                    "value": "36"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "62"
+                    "value": "70"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "3B",
@@ -40685,12 +41873,12 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "28"
+                    "value": "30"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "21"
+                    "value": "24"
                   },
                   {
                     "label": "HBP",
@@ -40700,7 +41888,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "75"
+                    "value": "76"
                   },
                   {
                     "label": "SB",
@@ -40715,22 +41903,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".235"
+                    "value": ".248"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".294"
+                    "value": ".310"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".360"
+                    "value": ".369"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".654"
+                    "value": ".678"
                   }
                 ]
               }
@@ -40868,7 +42056,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.78"
+                    "value": "2.97"
                   },
                   {
                     "label": "W",
@@ -40893,12 +42081,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "CG",
@@ -40908,22 +42096,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "32.1"
+                    "value": "36.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "29"
+                    "value": "37"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "13"
+                    "value": "15"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "10"
+                    "value": "12"
                   },
                   {
                     "label": "HR",
@@ -40933,17 +42121,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "12"
+                    "value": "15"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "28"
+                    "value": "29"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".236"
+                    "value": ".262"
                   }
                 ]
               },
@@ -41634,7 +42822,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.23"
+                    "value": "5.40"
                   },
                   {
                     "label": "W",
@@ -41659,12 +42847,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -41674,22 +42862,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "4.1"
+                    "value": "8.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "4"
+                    "value": "12"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "HR",
@@ -41699,17 +42887,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "5"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".250"
+                    "value": ".353"
                   }
                 ]
               },
@@ -41719,7 +42907,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.23"
+                    "value": "5.40"
                   },
                   {
                     "label": "W",
@@ -41744,12 +42932,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -41759,22 +42947,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "4.1"
+                    "value": "8.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "4"
+                    "value": "12"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "HR",
@@ -41784,17 +42972,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "5"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".250"
+                    "value": ".353"
                   }
                 ]
               },
@@ -42782,7 +43970,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.40"
+                    "value": "5.00"
                   },
                   {
                     "label": "W",
@@ -42807,12 +43995,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -42822,22 +44010,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "5.0"
+                    "value": "9.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "6"
+                    "value": "14"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "HR",
@@ -42847,17 +44035,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "1"
+                    "value": "4"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".300"
+                    "value": ".368"
                   }
                 ]
               }
@@ -42910,7 +44098,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.41"
+                    "value": "3.47"
                   },
                   {
                     "label": "W",
@@ -42935,12 +44123,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -42950,22 +44138,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "68.2"
+                    "value": "72.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "62"
+                    "value": "70"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "34"
+                    "value": "36"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "26"
+                    "value": "28"
                   },
                   {
                     "label": "HR",
@@ -42975,17 +44163,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "21"
+                    "value": "24"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "75"
+                    "value": "76"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".235"
+                    "value": ".248"
                   }
                 ]
               },
@@ -43411,6 +44599,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".250"
+                  }
+                ]
+              },
+              {
+                "label": "Rogers Centre",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "4.50"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "4.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "8"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "2"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "3"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "1"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".444"
                   }
                 ]
               },
@@ -45122,22 +46395,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "264"
+                    "value": "282"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "34"
+                    "value": "36"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "62"
+                    "value": "70"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "3B",
@@ -45152,12 +46425,12 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "28"
+                    "value": "30"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "21"
+                    "value": "24"
                   },
                   {
                     "label": "HBP",
@@ -45167,7 +46440,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "75"
+                    "value": "76"
                   },
                   {
                     "label": "SB",
@@ -45182,22 +46455,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".235"
+                    "value": ".248"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".294"
+                    "value": ".310"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".360"
+                    "value": ".369"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".654"
+                    "value": ".678"
                   }
                 ]
               }
@@ -45208,10 +46481,11 @@ export const rawGames = [
           "Third time through: .294 AVG / .821 OPS allowed with 2 HR.",
           "First look baseline: .256 OBP / .554 OPS allowed.",
           "Day split: 2.17 ERA / .215 OBA.",
-          "Away split: 2.78 ERA / 1 HR allowed.",
-          "vs. Left: .247 AVG / .694 OPS allowed."
+          "Away split: 2.97 ERA / 1 HR allowed.",
+          "vs. Left: .247 AVG / .694 OPS allowed.",
+          "Rogers Centre: 4.50 ERA / .444 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -45238,13 +46512,13 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 2,
       "losses": 3,
-      "era": "4.70",
-      "strikeOuts": 42,
-      "inningsPitched": "59.1",
-      "hitsAllowed": 69,
+      "era": "4.57",
+      "strikeOuts": 43,
+      "inningsPitched": "61.0",
+      "hitsAllowed": 70,
       "walks": 20,
       "homeRunsAllowed": 7,
-      "whip": "1.50",
+      "whip": "1.48",
       "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
@@ -45431,45 +46705,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/patrick-corbin-vs-yankees",
-        "answerText": "Patrick Corbin has a record of 2-1 with an ERA of 3.53 and 39 strikeouts in 8 appearances versus the Yankees in his career.",
+        "answerText": "Patrick Corbin has a record of 2-1 with an ERA of 3.64 and 42 strikeouts in 9 appearances against the Yankees in his career.",
         "pitcherName": "Patrick Corbin",
         "pitcherTeam": "Blue Jays",
         "opponentTeam": "Yankees",
-        "appearances": 8,
-        "gamesStarted": 8,
+        "appearances": 9,
+        "gamesStarted": 9,
         "wins": null,
         "losses": null,
-        "era": 3.53,
-        "strikeouts": 39,
-        "inningsPitched": "43.1",
-        "hitsAllowed": 34,
-        "earnedRuns": 17,
-        "runsAllowed": 17,
+        "era": 3.64,
+        "strikeouts": 42,
+        "inningsPitched": "47.0",
+        "hitsAllowed": 41,
+        "earnedRuns": 19,
+        "runsAllowed": 19,
         "homeRunsAllowed": 10,
         "walks": 16,
-        "battersFaced": 174,
+        "battersFaced": 192,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "8",
-          "ERA": "3.53",
-          "SO": "39",
+          "GS": "9",
+          "ERA": "3.64",
+          "SO": "42",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "43.1",
-          "H": "34",
-          "ER": "17",
-          "R": "17",
+          "IP": "47.0",
+          "H": "41",
+          "ER": "19",
+          "R": "19",
           "HR": "10",
           "BB": "16",
           "HBP": "0",
           "GF": "0",
           "IBB": "1",
-          "TBF": "174",
+          "TBF": "192",
           "WP": "2",
           "_isTotal": true
         },
@@ -45665,9 +46939,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "20",
             "WP": "0"
+          },
+          {
+            "NAME": "Patrick Corbin P. Corbin",
+            "DATE": "6/14/2026",
+            "TM": "TOR",
+            "OPP": "NYY",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "4.91",
+            "SO": "3",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "3.2",
+            "H": "7",
+            "ER": "2",
+            "R": "2",
+            "HR": "0",
+            "BB": "0",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "18",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:52.287Z"
+        "fetchedAt": "2026-06-15T10:34:56.764Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -45726,7 +47024,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.55"
+                    "value": "4.57"
                   },
                   {
                     "label": "W",
@@ -45751,12 +47049,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CG",
@@ -45766,22 +47064,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "57.1"
+                    "value": "61.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "63"
+                    "value": "70"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "HR",
@@ -45796,12 +47094,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "40"
+                    "value": "43"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".283"
+                    "value": ".290"
                   }
                 ]
               }
@@ -45854,22 +47152,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "223"
+                    "value": "241"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "63"
+                    "value": "70"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "3B",
@@ -45884,7 +47182,7 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "BB",
@@ -45899,7 +47197,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "40"
+                    "value": "43"
                   },
                   {
                     "label": "SB",
@@ -45914,22 +47212,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".283"
+                    "value": ".290"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".351"
+                    "value": ".353"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".444"
+                    "value": ".448"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".795"
+                    "value": ".801"
                   }
                 ]
               }
@@ -45982,7 +47280,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.14"
+                    "value": "5.96"
                   },
                   {
                     "label": "W",
@@ -46007,12 +47305,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "CG",
@@ -46022,22 +47320,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "22.0"
+                    "value": "25.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "30"
+                    "value": "37"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "HR",
@@ -46052,12 +47350,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "18"
+                    "value": "21"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".323"
+                    "value": ".333"
                   }
                 ]
               },
@@ -46748,7 +48046,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "10.13"
+                    "value": "8.49"
                   },
                   {
                     "label": "W",
@@ -46773,12 +48071,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -46788,22 +48086,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "8.0"
+                    "value": "11.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "10"
+                    "value": "17"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "9"
+                    "value": "11"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "9"
+                    "value": "11"
                   },
                   {
                     "label": "HR",
@@ -46818,12 +48116,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".294"
+                    "value": ".327"
                   }
                 ]
               },
@@ -46833,7 +48131,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "15.00"
+                    "value": "9.45"
                   },
                   {
                     "label": "W",
@@ -46858,12 +48156,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -46873,22 +48171,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "3.0"
+                    "value": "6.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "4"
+                    "value": "11"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "5"
+                    "value": "7"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "5"
+                    "value": "7"
                   },
                   {
                     "label": "HR",
@@ -46903,12 +48201,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "6"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".308"
+                    "value": ".355"
                   }
                 ]
               },
@@ -47641,7 +48939,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.75"
+                    "value": "5.87"
                   },
                   {
                     "label": "W",
@@ -47666,12 +48964,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -47681,22 +48979,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "4.0"
+                    "value": "7.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "6"
+                    "value": "13"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "HR",
@@ -47711,12 +49009,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "6"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".375"
+                    "value": ".382"
                   }
                 ]
               },
@@ -48024,7 +49322,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.55"
+                    "value": "4.57"
                   },
                   {
                     "label": "W",
@@ -48049,12 +49347,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CG",
@@ -48064,22 +49362,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "57.1"
+                    "value": "61.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "63"
+                    "value": "70"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "HR",
@@ -48094,12 +49392,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "40"
+                    "value": "43"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".283"
+                    "value": ".290"
                   }
                 ]
               },
@@ -50236,22 +51534,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "223"
+                    "value": "241"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "63"
+                    "value": "70"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "3B",
@@ -50266,7 +51564,7 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "BB",
@@ -50281,7 +51579,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "40"
+                    "value": "43"
                   },
                   {
                     "label": "SB",
@@ -50296,22 +51594,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".283"
+                    "value": ".290"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".351"
+                    "value": ".353"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".444"
+                    "value": ".448"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".795"
+                    "value": ".801"
                   }
                 ]
               }
@@ -50326,7 +51624,7 @@ export const rawGames = [
           "vs. Right: .287 AVG / .837 OPS allowed.",
           "Rogers Centre: 6.14 ERA / .323 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -54163,14 +55461,14 @@ export const rawGames = [
       "fullName": "Bryce Elder",
       "pitchHand": "R",
       "wins": 5,
-      "losses": 3,
-      "era": "3.03",
-      "strikeOuts": 72,
-      "inningsPitched": "86.0",
-      "hitsAllowed": 68,
-      "walks": 26,
-      "homeRunsAllowed": 7,
-      "whip": "1.09",
+      "losses": 4,
+      "era": "3.15",
+      "strikeOuts": 73,
+      "inningsPitched": "88.2",
+      "hitsAllowed": 74,
+      "walks": 27,
+      "homeRunsAllowed": 9,
+      "whip": "1.14",
       "gamesStarted": 15,
       "probableSource": "mlb-api",
       "savant": {
@@ -54330,45 +55628,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/bryce-elder-vs-mets",
-        "answerText": "Bryce Elder has a 3-0 record with an ERA of 3.94 and 31 strikeouts in 6 appearances against the Mets in his career.",
+        "answerText": "Bryce Elder is 3-1 with an ERA of 5.00 and 33 strikeouts in 7 appearances versus the Mets in his career.",
         "pitcherName": "Bryce Elder",
         "pitcherTeam": "Braves",
         "opponentTeam": "Mets",
-        "appearances": 5,
-        "gamesStarted": 5,
+        "appearances": 6,
+        "gamesStarted": 6,
         "wins": 3,
-        "losses": 0,
-        "era": 3.94,
-        "strikeouts": 31,
-        "inningsPitched": "32.0",
-        "hitsAllowed": 26,
-        "earnedRuns": 14,
-        "runsAllowed": 15,
-        "homeRunsAllowed": 4,
-        "walks": 9,
-        "battersFaced": 130,
+        "losses": 1,
+        "era": 5,
+        "strikeouts": 33,
+        "inningsPitched": "36.0",
+        "hitsAllowed": 36,
+        "earnedRuns": 20,
+        "runsAllowed": 21,
+        "homeRunsAllowed": 6,
+        "walks": 11,
+        "battersFaced": 154,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "5",
-          "ERA": "3.94",
-          "SO": "31",
+          "GS": "6",
+          "ERA": "5.00",
+          "SO": "33",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "32.0",
-          "H": "26",
-          "ER": "14",
-          "R": "15",
-          "HR": "4",
-          "BB": "9",
+          "IP": "36.0",
+          "H": "36",
+          "ER": "20",
+          "R": "21",
+          "HR": "6",
+          "BB": "11",
           "HBP": "3",
           "GF": "1",
           "IBB": "0",
-          "TBF": "130",
+          "TBF": "154",
           "WP": "0",
           "_isTotal": true
         },
@@ -54516,9 +55814,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "24",
             "WP": "0"
+          },
+          {
+            "NAME": "Bryce Elder B. Elder",
+            "DATE": "6/14/2026",
+            "TM": "ATL",
+            "OPP": "NYM",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "13.50",
+            "SO": "2",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "4.0",
+            "H": "10",
+            "ER": "6",
+            "R": "6",
+            "HR": "2",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "24",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:53.050Z"
+        "fetchedAt": "2026-06-15T10:34:57.147Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -54577,7 +55899,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.66"
+                    "value": "3.15"
                   },
                   {
                     "label": "W",
@@ -54587,7 +55909,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "SV",
@@ -54602,12 +55924,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -54617,42 +55939,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "84.2"
+                    "value": "88.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "64"
+                    "value": "74"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "35"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "25"
+                    "value": "31"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "7"
+                    "value": "9"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "25"
+                    "value": "27"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "71"
+                    "value": "73"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".206"
+                    "value": ".222"
                   }
                 ]
               }
@@ -54705,22 +56027,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "311"
+                    "value": "333"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "35"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "64"
+                    "value": "74"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "3B",
@@ -54730,17 +56052,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "7"
+                    "value": "9"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "21"
+                    "value": "26"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "25"
+                    "value": "27"
                   },
                   {
                     "label": "HBP",
@@ -54750,7 +56072,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "71"
+                    "value": "73"
                   },
                   {
                     "label": "SB",
@@ -54765,22 +56087,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".206"
+                    "value": ".222"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".268"
+                    "value": ".283"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".309"
+                    "value": ".339"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".576"
+                    "value": ".622"
                   }
                 ]
               }
@@ -55684,7 +57006,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.55"
+                    "value": "5.94"
                   },
                   {
                     "label": "W",
@@ -55694,7 +57016,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -55709,12 +57031,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -55724,42 +57046,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "12.2"
+                    "value": "16.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "8"
+                    "value": "18"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "5"
+                    "value": "11"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "5"
+                    "value": "11"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "4"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "10"
+                    "value": "12"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".178"
+                    "value": ".269"
                   }
                 ]
               },
@@ -56572,6 +57894,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "New York Mets",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "13.50"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "4.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "10"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "6"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "6"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "2"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".455"
+                  }
+                ]
+              },
+              {
                 "label": "Oakland Athletics",
                 "stats": [
                   {
@@ -57130,7 +58537,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.66"
+                    "value": "3.15"
                   },
                   {
                     "label": "W",
@@ -57140,7 +58547,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "SV",
@@ -57155,12 +58562,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -57170,42 +58577,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "84.2"
+                    "value": "88.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "64"
+                    "value": "74"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "35"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "25"
+                    "value": "31"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "7"
+                    "value": "9"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "25"
+                    "value": "27"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "71"
+                    "value": "73"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".206"
+                    "value": ".222"
                   }
                 ]
               },
@@ -57291,6 +58698,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".174"
+                  }
+                ]
+              },
+              {
+                "label": "Citi Field",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "13.50"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "4.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "10"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "6"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "6"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "2"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".455"
                   }
                 ]
               },
@@ -59342,22 +60834,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "311"
+                    "value": "333"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "35"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "64"
+                    "value": "74"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "3B",
@@ -59367,17 +60859,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "7"
+                    "value": "9"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "21"
+                    "value": "26"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "25"
+                    "value": "27"
                   },
                   {
                     "label": "HBP",
@@ -59387,7 +60879,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "71"
+                    "value": "73"
                   },
                   {
                     "label": "SB",
@@ -59402,22 +60894,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".206"
+                    "value": ".222"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".268"
+                    "value": ".283"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".309"
+                    "value": ".339"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".576"
+                    "value": ".622"
                   }
                 ]
               }
@@ -59429,9 +60921,10 @@ export const rawGames = [
           "First look baseline: .248 OBP / .511 OPS allowed.",
           "Day split: 1.09 ERA / .155 OBA.",
           "Away split: 3.14 ERA / 2 HR allowed.",
-          "vs. Right: .291 AVG / .735 OPS allowed."
+          "vs. Right: .291 AVG / .735 OPS allowed.",
+          "Citi Field: 13.50 ERA / .455 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -59456,15 +60949,15 @@ export const rawGames = [
       "id": 642547,
       "fullName": "Freddy Peralta",
       "pitchHand": "R",
-      "wins": 4,
+      "wins": 5,
       "losses": 5,
-      "era": "4.05",
+      "era": "3.90",
       "strikeOuts": 81,
-      "inningsPitched": "80.0",
-      "hitsAllowed": 74,
-      "walks": 32,
+      "inningsPitched": "83.0",
+      "hitsAllowed": 75,
+      "walks": 33,
       "homeRunsAllowed": 10,
-      "whip": "1.33",
+      "whip": "1.30",
       "gamesStarted": 15,
       "probableSource": "mlb-api",
       "savant": {
@@ -59624,45 +61117,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/freddy-peralta-vs-braves",
-        "answerText": "Freddy Peralta is 5-2 with an ERA of 4.26 and 54 strikeouts in 9 appearances versus the Braves in his career.",
+        "answerText": "Freddy Peralta has a record of 6-2 with an ERA of 4.01 and 56 strikeouts in 10 appearances versus the Braves in his career.",
         "pitcherName": "Freddy Peralta",
         "pitcherTeam": "Mets",
         "opponentTeam": "Braves",
-        "appearances": 8,
-        "gamesStarted": 8,
-        "wins": 5,
-        "losses": 2,
-        "era": 4.26,
-        "strikeouts": 54,
-        "inningsPitched": "44.1",
-        "hitsAllowed": 36,
-        "earnedRuns": 21,
-        "runsAllowed": 21,
+        "appearances": 9,
+        "gamesStarted": 9,
+        "wins": null,
+        "losses": null,
+        "era": 4.01,
+        "strikeouts": 56,
+        "inningsPitched": "49.1",
+        "hitsAllowed": 40,
+        "earnedRuns": 22,
+        "runsAllowed": 22,
         "homeRunsAllowed": 6,
-        "walks": 23,
-        "battersFaced": 188,
+        "walks": 24,
+        "battersFaced": 208,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "8",
-          "ERA": "4.26",
-          "SO": "54",
+          "GS": "9",
+          "ERA": "4.01",
+          "SO": "56",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "44.1",
-          "H": "36",
-          "ER": "21",
-          "R": "21",
+          "IP": "49.1",
+          "H": "40",
+          "ER": "22",
+          "R": "22",
           "HR": "6",
-          "BB": "23",
+          "BB": "24",
           "HBP": "1",
           "GF": "0",
           "IBB": "1",
-          "TBF": "188",
+          "TBF": "208",
           "WP": "0",
           "_isTotal": true
         },
@@ -59882,9 +61375,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "22",
             "WP": "0"
+          },
+          {
+            "NAME": "Freddy Peralta F. Peralta",
+            "DATE": "6/14/2026",
+            "TM": "NYM",
+            "OPP": "ATL",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "1.80",
+            "SO": "2",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.0",
+            "H": "4",
+            "ER": "1",
+            "R": "1",
+            "HR": "0",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "20",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:53.924Z"
+        "fetchedAt": "2026-06-15T10:34:57.564Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -59943,12 +61460,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.04"
+                    "value": "3.90"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "L",
@@ -59968,12 +61485,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -59983,22 +61500,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "78.0"
+                    "value": "83.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "71"
+                    "value": "75"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "37"
+                    "value": "38"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "35"
+                    "value": "36"
                   },
                   {
                     "label": "HR",
@@ -60008,12 +61525,12 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "32"
+                    "value": "33"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "79"
+                    "value": "81"
                   },
                   {
                     "label": "OBA",
@@ -60071,17 +61588,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "299"
+                    "value": "317"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "37"
+                    "value": "38"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "71"
+                    "value": "75"
                   },
                   {
                     "label": "2B",
@@ -60101,12 +61618,12 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "28"
+                    "value": "29"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "32"
+                    "value": "33"
                   },
                   {
                     "label": "HBP",
@@ -60116,7 +61633,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "79"
+                    "value": "81"
                   },
                   {
                     "label": "SB",
@@ -60136,17 +61653,17 @@ export const rawGames = [
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".318"
+                    "value": ".315"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".395"
+                    "value": ".385"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".713"
+                    "value": ".699"
                   }
                 ]
               }
@@ -60199,12 +61716,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.78"
+                    "value": "4.50"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "L",
@@ -60224,12 +61741,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "CG",
@@ -60239,22 +61756,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "49.0"
+                    "value": "54.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "47"
+                    "value": "51"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "28"
+                    "value": "29"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "26"
+                    "value": "27"
                   },
                   {
                     "label": "HR",
@@ -60264,17 +61781,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "22"
+                    "value": "23"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "55"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".246"
+                    "value": ".244"
                   }
                 ]
               },
@@ -60369,12 +61886,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.73"
+                    "value": "3.56"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "L",
@@ -60394,12 +61911,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "CG",
@@ -60409,22 +61926,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "50.2"
+                    "value": "55.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "39"
+                    "value": "43"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "23"
+                    "value": "24"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "21"
+                    "value": "22"
                   },
                   {
                     "label": "HR",
@@ -60434,17 +61951,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "23"
+                    "value": "24"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "55"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".207"
+                    "value": ".209"
                   }
                 ]
               },
@@ -60582,17 +62099,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "201"
+                    "value": "212"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "23"
+                    "value": "24"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "50"
+                    "value": "53"
                   },
                   {
                     "label": "2B",
@@ -60612,12 +62129,12 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "22"
+                    "value": "23"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "21"
                   },
                   {
                     "label": "HBP",
@@ -60627,7 +62144,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "52"
+                    "value": "54"
                   },
                   {
                     "label": "SB",
@@ -60642,22 +62159,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".249"
+                    "value": ".250"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".317"
+                    "value": ".316"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".448"
+                    "value": ".439"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".765"
+                    "value": ".755"
                   }
                 ]
               },
@@ -60667,7 +62184,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "98"
+                    "value": "105"
                   },
                   {
                     "label": "R",
@@ -60677,7 +62194,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "21"
+                    "value": "22"
                   },
                   {
                     "label": "2B",
@@ -60727,22 +62244,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".214"
+                    "value": ".210"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".322"
+                    "value": ".311"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".286"
+                    "value": ".276"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".607"
+                    "value": ".588"
                   }
                 ]
               }
@@ -61050,12 +62567,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.25"
+                    "value": "4.24"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -61075,12 +62592,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -61090,22 +62607,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "12.0"
+                    "value": "17.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "12"
+                    "value": "16"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "HR",
@@ -61115,97 +62632,12 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "4"
-                  },
-                  {
-                    "label": "K",
-                    "name": "strikeouts",
-                    "value": "11"
-                  },
-                  {
-                    "label": "OBA",
-                    "name": "opponentAvg",
-                    "value": ".261"
-                  }
-                ]
-              },
-              {
-                "label": "Last 7 Days",
-                "stats": [
-                  {
-                    "label": "ERA",
-                    "name": "ERA",
-                    "value": "9.00"
-                  },
-                  {
-                    "label": "W",
-                    "name": "wins",
-                    "value": "0"
-                  },
-                  {
-                    "label": "L",
-                    "name": "losses",
-                    "value": "1"
-                  },
-                  {
-                    "label": "SV",
-                    "name": "saves",
-                    "value": "0"
-                  },
-                  {
-                    "label": "SVOP",
-                    "name": "saveOpportunities",
-                    "value": "0"
-                  },
-                  {
-                    "label": "GP",
-                    "name": "gamesPlayed",
-                    "value": "1"
-                  },
-                  {
-                    "label": "GS",
-                    "name": "gamesStarted",
-                    "value": "1"
-                  },
-                  {
-                    "label": "CG",
-                    "name": "completeGames",
-                    "value": "0"
-                  },
-                  {
-                    "label": "IP",
-                    "name": "innings",
-                    "value": "6.0"
-                  },
-                  {
-                    "label": "H",
-                    "name": "hits",
-                    "value": "6"
-                  },
-                  {
-                    "label": "R",
-                    "name": "runs",
-                    "value": "6"
-                  },
-                  {
-                    "label": "ER",
-                    "name": "earnedRuns",
-                    "value": "6"
-                  },
-                  {
-                    "label": "HR",
-                    "name": "homeRuns",
-                    "value": "1"
-                  },
-                  {
-                    "label": "BB",
-                    "name": "walks",
-                    "value": "2"
-                  },
-                  {
-                    "label": "K",
-                    "name": "strikeouts",
                     "value": "5"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "13"
                   },
                   {
                     "label": "OBA",
@@ -61215,12 +62647,12 @@ export const rawGames = [
                 ]
               },
               {
-                "label": "Last 15 Days",
+                "label": "Last 7 Days",
                 "stats": [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.25"
+                    "value": "5.73"
                   },
                   {
                     "label": "W",
@@ -61260,12 +62692,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "12.0"
+                    "value": "11.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "12"
+                    "value": "10"
                   },
                   {
                     "label": "R",
@@ -61280,22 +62712,107 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "3"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "7"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".238"
+                  }
+                ]
+              },
+              {
+                "label": "Last 15 Days",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "4.24"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "2"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "3"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "3"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "17.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "16"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "8"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "8"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
                     "value": "2"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "11"
+                    "value": "13"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".261"
+                    "value": ".250"
                   }
                 ]
               },
@@ -61305,12 +62822,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.65"
+                    "value": "5.08"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -61330,12 +62847,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "CG",
@@ -61345,22 +62862,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "28.2"
+                    "value": "33.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "30"
+                    "value": "34"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "18"
+                    "value": "19"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "18"
+                    "value": "19"
                   },
                   {
                     "label": "HR",
@@ -61370,17 +62887,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".268"
+                    "value": ".262"
                   }
                 ]
               }
@@ -61509,6 +63026,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".176"
+                  }
+                ]
+              },
+              {
+                "label": "Atlanta Braves",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "1.80"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "5.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "4"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "1"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "2"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".222"
                   }
                 ]
               },
@@ -62411,12 +64013,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.04"
+                    "value": "3.90"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "L",
@@ -62436,12 +64038,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -62451,22 +64053,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "78.0"
+                    "value": "83.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "71"
+                    "value": "75"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "37"
+                    "value": "38"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "35"
+                    "value": "36"
                   },
                   {
                     "label": "HR",
@@ -62476,12 +64078,12 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "32"
+                    "value": "33"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "79"
+                    "value": "81"
                   },
                   {
                     "label": "OBA",
@@ -62581,12 +64183,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.78"
+                    "value": "4.50"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "L",
@@ -62606,12 +64208,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "CG",
@@ -62621,22 +64223,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "49.0"
+                    "value": "54.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "47"
+                    "value": "51"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "28"
+                    "value": "29"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "26"
+                    "value": "27"
                   },
                   {
                     "label": "HR",
@@ -62646,17 +64248,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "22"
+                    "value": "23"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "55"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".246"
+                    "value": ".244"
                   }
                 ]
               },
@@ -63049,7 +64651,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "42"
+                    "value": "44"
                   },
                   {
                     "label": "R",
@@ -63059,7 +64661,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "2B",
@@ -63084,7 +64686,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "HBP",
@@ -63109,22 +64711,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".286"
+                    "value": ".295"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".318"
+                    "value": ".340"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".429"
+                    "value": ".432"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".747"
+                    "value": ".772"
                   }
                 ]
               },
@@ -63134,7 +64736,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "36"
+                    "value": "39"
                   },
                   {
                     "label": "R",
@@ -63144,7 +64746,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "2B",
@@ -63194,22 +64796,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".278"
+                    "value": ".282"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".395"
+                    "value": ".391"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".806"
+                    "value": ".769"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": "1.201"
+                    "value": "1.161"
                   }
                 ]
               },
@@ -63219,7 +64821,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "39"
+                    "value": "41"
                   },
                   {
                     "label": "R",
@@ -63229,7 +64831,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "2B",
@@ -63279,27 +64881,112 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".205"
+                    "value": ".220"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".279"
+                    "value": ".289"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".333"
+                    "value": ".341"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".612"
+                    "value": ".630"
                   }
                 ]
               },
               {
                 "label": "Batting #4",
+                "stats": [
+                  {
+                    "label": "AB",
+                    "name": "atBats",
+                    "value": "33"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "4"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "8"
+                  },
+                  {
+                    "label": "2B",
+                    "name": "doubles",
+                    "value": "3"
+                  },
+                  {
+                    "label": "3B",
+                    "name": "triples",
+                    "value": "0"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "RBI",
+                    "name": "RBIs",
+                    "value": "4"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "7"
+                  },
+                  {
+                    "label": "HBP",
+                    "name": "hitByPitch",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SO",
+                    "name": "strikeouts",
+                    "value": "11"
+                  },
+                  {
+                    "label": "SB",
+                    "name": "stolenBases",
+                    "value": "0"
+                  },
+                  {
+                    "label": "CS",
+                    "name": "caughtStealing",
+                    "value": "0"
+                  },
+                  {
+                    "label": "AVG",
+                    "name": "avg",
+                    "value": ".242"
+                  },
+                  {
+                    "label": "OBP",
+                    "name": "onBasePct",
+                    "value": ".390"
+                  },
+                  {
+                    "label": "SLG",
+                    "name": "slugAvg",
+                    "value": ".424"
+                  },
+                  {
+                    "label": "OPS",
+                    "name": "OPS",
+                    "value": ".814"
+                  }
+                ]
+              },
+              {
+                "label": "Batting #5",
                 "stats": [
                   {
                     "label": "AB",
@@ -63314,91 +65001,6 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "8"
-                  },
-                  {
-                    "label": "2B",
-                    "name": "doubles",
-                    "value": "3"
-                  },
-                  {
-                    "label": "3B",
-                    "name": "triples",
-                    "value": "0"
-                  },
-                  {
-                    "label": "HR",
-                    "name": "homeRuns",
-                    "value": "1"
-                  },
-                  {
-                    "label": "RBI",
-                    "name": "RBIs",
-                    "value": "4"
-                  },
-                  {
-                    "label": "BB",
-                    "name": "walks",
-                    "value": "7"
-                  },
-                  {
-                    "label": "HBP",
-                    "name": "hitByPitch",
-                    "value": "1"
-                  },
-                  {
-                    "label": "SO",
-                    "name": "strikeouts",
-                    "value": "10"
-                  },
-                  {
-                    "label": "SB",
-                    "name": "stolenBases",
-                    "value": "0"
-                  },
-                  {
-                    "label": "CS",
-                    "name": "caughtStealing",
-                    "value": "0"
-                  },
-                  {
-                    "label": "AVG",
-                    "name": "avg",
-                    "value": ".258"
-                  },
-                  {
-                    "label": "OBP",
-                    "name": "onBasePct",
-                    "value": ".410"
-                  },
-                  {
-                    "label": "SLG",
-                    "name": "slugAvg",
-                    "value": ".452"
-                  },
-                  {
-                    "label": "OPS",
-                    "name": "OPS",
-                    "value": ".862"
-                  }
-                ]
-              },
-              {
-                "label": "Batting #5",
-                "stats": [
-                  {
-                    "label": "AB",
-                    "name": "atBats",
-                    "value": "30"
-                  },
-                  {
-                    "label": "R",
-                    "name": "runs",
-                    "value": "3"
-                  },
-                  {
-                    "label": "H",
-                    "name": "hits",
                     "value": "4"
                   },
                   {
@@ -63419,7 +65021,7 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "BB",
@@ -63449,22 +65051,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".133"
+                    "value": ".129"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".297"
+                    "value": ".282"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".267"
+                    "value": ".258"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".564"
+                    "value": ".540"
                   }
                 ]
               },
@@ -63474,7 +65076,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "33"
+                    "value": "35"
                   },
                   {
                     "label": "R",
@@ -63534,22 +65136,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".242"
+                    "value": ".229"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".286"
+                    "value": ".270"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".242"
+                    "value": ".229"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".528"
+                    "value": ".499"
                   }
                 ]
               },
@@ -63559,7 +65161,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "33"
+                    "value": "35"
                   },
                   {
                     "label": "R",
@@ -63619,22 +65221,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".273"
+                    "value": ".257"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".294"
+                    "value": ".278"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".364"
+                    "value": ".343"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".658"
+                    "value": ".621"
                   }
                 ]
               },
@@ -63644,7 +65246,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "26"
+                    "value": "28"
                   },
                   {
                     "label": "R",
@@ -63704,22 +65306,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".192"
+                    "value": ".179"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".290"
+                    "value": ".273"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".269"
+                    "value": ".250"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".560"
+                    "value": ".523"
                   }
                 ]
               },
@@ -63729,7 +65331,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "R",
@@ -63739,7 +65341,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "2B",
@@ -63774,7 +65376,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "SB",
@@ -63789,22 +65391,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".241"
+                    "value": ".258"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".267"
+                    "value": ".281"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".310"
+                    "value": ".323"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".577"
+                    "value": ".604"
                   }
                 ]
               }
@@ -63857,7 +65459,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "180"
+                    "value": "193"
                   },
                   {
                     "label": "R",
@@ -63867,7 +65469,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "43"
+                    "value": "45"
                   },
                   {
                     "label": "2B",
@@ -63902,7 +65504,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "42"
+                    "value": "43"
                   },
                   {
                     "label": "SB",
@@ -63917,22 +65519,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".239"
+                    "value": ".233"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".305"
+                    "value": ".295"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".406"
+                    "value": ".389"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".710"
+                    "value": ".684"
                   }
                 ]
               },
@@ -63942,17 +65544,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "118"
+                    "value": "123"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "21"
+                    "value": "22"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "28"
+                    "value": "30"
                   },
                   {
                     "label": "2B",
@@ -63972,12 +65574,12 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "20"
+                    "value": "21"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "17"
+                    "value": "18"
                   },
                   {
                     "label": "HBP",
@@ -63987,7 +65589,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "36"
+                    "value": "37"
                   },
                   {
                     "label": "SB",
@@ -64002,22 +65604,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".237"
+                    "value": ".244"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".341"
+                    "value": ".345"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".381"
+                    "value": ".382"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".722"
+                    "value": ".727"
                   }
                 ]
               },
@@ -64027,17 +65629,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "67"
+                    "value": "71"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "2B",
@@ -64057,7 +65659,7 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "BB",
@@ -64072,7 +65674,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "20"
+                    "value": "21"
                   },
                   {
                     "label": "SB",
@@ -64087,12 +65689,12 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".164"
+                    "value": ".169"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".250"
+                    "value": ".247"
                   },
                   {
                     "label": "SLG",
@@ -64102,7 +65704,7 @@ export const rawGames = [
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".504"
+                    "value": ".500"
                   }
                 ]
               },
@@ -64112,12 +65714,12 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "H",
@@ -64142,7 +65744,7 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "BB",
@@ -64157,7 +65759,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SB",
@@ -64197,7 +65799,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "30"
+                    "value": "32"
                   },
                   {
                     "label": "R",
@@ -64257,22 +65859,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".133"
+                    "value": ".125"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".257"
+                    "value": ".243"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".200"
+                    "value": ".188"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".457"
+                    "value": ".431"
                   }
                 ]
               }
@@ -64325,17 +65927,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "112"
+                    "value": "120"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "24"
+                    "value": "27"
                   },
                   {
                     "label": "2B",
@@ -64355,7 +65957,7 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "BB",
@@ -64370,7 +65972,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "35"
+                    "value": "37"
                   },
                   {
                     "label": "SB",
@@ -64385,22 +65987,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".214"
+                    "value": ".225"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".288"
+                    "value": ".291"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".357"
+                    "value": ".358"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".645"
+                    "value": ".649"
                   }
                 ]
               },
@@ -64410,7 +66012,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "115"
+                    "value": "124"
                   },
                   {
                     "label": "R",
@@ -64420,7 +66022,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "31"
+                    "value": "32"
                   },
                   {
                     "label": "2B",
@@ -64470,22 +66072,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".270"
+                    "value": ".258"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".333"
+                    "value": ".319"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".470"
+                    "value": ".444"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".803"
+                    "value": ".762"
                   }
                 ]
               },
@@ -64495,7 +66097,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "68"
+                    "value": "69"
                   },
                   {
                     "label": "R",
@@ -64530,7 +66132,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "HBP",
@@ -64555,22 +66157,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".235"
+                    "value": ".232"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".358"
+                    "value": ".361"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".353"
+                    "value": ".348"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".711"
+                    "value": ".709"
                   }
                 ]
               },
@@ -64708,17 +66310,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "299"
+                    "value": "317"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "37"
+                    "value": "38"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "71"
+                    "value": "75"
                   },
                   {
                     "label": "2B",
@@ -64738,12 +66340,12 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "28"
+                    "value": "29"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "32"
+                    "value": "33"
                   },
                   {
                     "label": "HBP",
@@ -64753,7 +66355,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "79"
+                    "value": "81"
                   },
                   {
                     "label": "SB",
@@ -64773,17 +66375,17 @@ export const rawGames = [
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".318"
+                    "value": ".315"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".395"
+                    "value": ".385"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".713"
+                    "value": ".699"
                   }
                 ]
               }
@@ -64791,14 +66393,14 @@ export const rawGames = [
           }
         ],
         "insights": [
-          "Third time through: .235 AVG / .711 OPS allowed with 2 HR.",
-          "First look baseline: .288 OBP / .645 OPS allowed.",
-          "Day split: 3.73 ERA / .207 OBA.",
+          "Third time through: .232 AVG / .709 OPS allowed with 2 HR.",
+          "First look baseline: .291 OBP / .649 OPS allowed.",
+          "Day split: 3.56 ERA / .209 OBA.",
           "Away split: 2.79 ERA / 4 HR allowed.",
-          "vs. Left: .249 AVG / .765 OPS allowed.",
-          "Citi Field: 4.78 ERA / .246 OBA in stored ESPN split."
+          "vs. Left: .250 AVG / .755 OPS allowed.",
+          "Citi Field: 4.50 ERA / .244 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -67877,13 +69479,13 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 3,
       "losses": 5,
-      "era": "5.40",
-      "strikeOuts": 49,
-      "inningsPitched": "71.2",
-      "hitsAllowed": 90,
-      "walks": 22,
-      "homeRunsAllowed": 12,
-      "whip": "1.56",
+      "era": "5.35",
+      "strikeOuts": 50,
+      "inningsPitched": "75.2",
+      "hitsAllowed": 93,
+      "walks": 23,
+      "homeRunsAllowed": 13,
+      "whip": "1.53",
       "gamesStarted": 15,
       "probableSource": "mlb-api",
       "savant": {
@@ -68043,45 +69645,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/zac-gallen-vs-reds",
-        "answerText": "Zac Gallen has a record of 1-2 with an ERA of 3.16 and 34 strikeouts in 6 appearances versus the Reds in his career.",
+        "answerText": "Zac Gallen has a record of 1-2 with an ERA of 3.35 and 38 strikeouts in 7 appearances versus the Reds in his career.",
         "pitcherName": "Zac Gallen",
         "pitcherTeam": "Diamondbacks",
         "opponentTeam": "Reds",
-        "appearances": 6,
-        "gamesStarted": 6,
+        "appearances": 7,
+        "gamesStarted": 7,
         "wins": null,
         "losses": null,
-        "era": 3.16,
-        "strikeouts": 34,
-        "inningsPitched": "37.0",
-        "hitsAllowed": 22,
-        "earnedRuns": 13,
-        "runsAllowed": 13,
-        "homeRunsAllowed": 6,
-        "walks": 13,
-        "battersFaced": 147,
+        "era": 3.35,
+        "strikeouts": 38,
+        "inningsPitched": "43.0",
+        "hitsAllowed": 28,
+        "earnedRuns": 16,
+        "runsAllowed": 16,
+        "homeRunsAllowed": 8,
+        "walks": 15,
+        "battersFaced": 172,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "6",
-          "ERA": "3.16",
-          "SO": "34",
+          "GS": "7",
+          "ERA": "3.35",
+          "SO": "38",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "37.0",
-          "H": "22",
-          "ER": "13",
-          "R": "13",
-          "HR": "6",
-          "BB": "13",
-          "HBP": "4",
+          "IP": "43.0",
+          "H": "28",
+          "ER": "16",
+          "R": "16",
+          "HR": "8",
+          "BB": "15",
+          "HBP": "5",
           "GF": "0",
           "IBB": "0",
-          "TBF": "147",
+          "TBF": "172",
           "WP": "3",
           "_isTotal": true
         },
@@ -68229,9 +69831,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "23",
             "WP": "1"
+          },
+          {
+            "NAME": "Zac Gallen Z. Gallen",
+            "DATE": "6/14/2026",
+            "TM": "AZ",
+            "OPP": "CIN",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "4.50",
+            "SO": "4",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "6",
+            "ER": "3",
+            "R": "3",
+            "HR": "2",
+            "BB": "2",
+            "HBP": "1",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "25",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:54.743Z"
+        "fetchedAt": "2026-06-15T10:34:57.957Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -68290,7 +69916,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.43"
+                    "value": "5.35"
                   },
                   {
                     "label": "W",
@@ -68315,12 +69941,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -68330,42 +69956,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "69.2"
+                    "value": "75.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "87"
+                    "value": "93"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "47"
+                    "value": "50"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "42"
+                    "value": "45"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "11"
+                    "value": "13"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "21"
+                    "value": "23"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "46"
+                    "value": "50"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".305"
+                    "value": ".303"
                   }
                 ]
               }
@@ -68418,22 +70044,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "285"
+                    "value": "307"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "47"
+                    "value": "50"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "87"
+                    "value": "93"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "3B",
@@ -68443,27 +70069,27 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "11"
+                    "value": "13"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "39"
+                    "value": "42"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "21"
+                    "value": "23"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "46"
+                    "value": "50"
                   },
                   {
                     "label": "SB",
@@ -68478,7 +70104,7 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".305"
+                    "value": ".303"
                   },
                   {
                     "label": "OBP",
@@ -68488,12 +70114,12 @@ export const rawGames = [
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".481"
+                    "value": ".489"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".834"
+                    "value": ".843"
                   }
                 ]
               }
@@ -68631,7 +70257,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "7.44"
+                    "value": "6.98"
                   },
                   {
                     "label": "W",
@@ -68656,12 +70282,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "CG",
@@ -68671,42 +70297,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "32.2"
+                    "value": "38.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "48"
+                    "value": "54"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "34"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "27"
+                    "value": "30"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "7"
+                    "value": "9"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "14"
+                    "value": "16"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "21"
+                    "value": "25"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".345"
+                    "value": ".335"
                   }
                 ]
               },
@@ -69397,7 +71023,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.97"
+                    "value": "6.06"
                   },
                   {
                     "label": "W",
@@ -69422,12 +71048,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -69437,42 +71063,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "10.1"
+                    "value": "16.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "18"
+                    "value": "24"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "9"
+                    "value": "12"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "8"
+                    "value": "11"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "4"
+                    "value": "8"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".383"
+                    "value": ".348"
                   }
                 ]
               },
@@ -69482,7 +71108,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.75"
+                    "value": "5.56"
                   },
                   {
                     "label": "W",
@@ -69507,12 +71133,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -69522,42 +71148,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "5.1"
+                    "value": "11.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "9"
+                    "value": "15"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "0"
+                    "value": "2"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "7"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".375"
+                    "value": ".326"
                   }
                 ]
               },
@@ -69856,6 +71482,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".389"
+                  }
+                ]
+              },
+              {
+                "label": "Cincinnati Reds",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "4.50"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "6"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "3"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "3"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "4"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".273"
                   }
                 ]
               },
@@ -70928,7 +72639,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.43"
+                    "value": "5.35"
                   },
                   {
                     "label": "W",
@@ -70953,12 +72664,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -70968,42 +72679,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "69.2"
+                    "value": "75.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "87"
+                    "value": "93"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "47"
+                    "value": "50"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "42"
+                    "value": "45"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "11"
+                    "value": "13"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "21"
+                    "value": "23"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "46"
+                    "value": "50"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".305"
+                    "value": ".303"
                   }
                 ]
               },
@@ -71344,6 +73055,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".294"
+                  }
+                ]
+              },
+              {
+                "label": "Great American",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "4.50"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "6"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "3"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "3"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "4"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".273"
                   }
                 ]
               },
@@ -73310,22 +75106,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "285"
+                    "value": "307"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "47"
+                    "value": "50"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "87"
+                    "value": "93"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "3B",
@@ -73335,27 +75131,27 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "11"
+                    "value": "13"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "39"
+                    "value": "42"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "21"
+                    "value": "23"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "46"
+                    "value": "50"
                   },
                   {
                     "label": "SB",
@@ -73370,7 +75166,7 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".305"
+                    "value": ".303"
                   },
                   {
                     "label": "OBP",
@@ -73380,12 +75176,12 @@ export const rawGames = [
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".481"
+                    "value": ".489"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".834"
+                    "value": ".843"
                   }
                 ]
               }
@@ -73396,10 +75192,10 @@ export const rawGames = [
           "Third time through: .367 AVG / 1.056 OPS allowed with 3 HR.",
           "First look baseline: .305 OBP / .730 OPS allowed.",
           "Day split: 4.40 ERA / .274 OBA.",
-          "Away split: 7.44 ERA / 7 HR allowed.",
+          "Away split: 6.98 ERA / 9 HR allowed.",
           "vs. Left: .316 AVG / .837 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -73426,12 +75222,12 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 4,
       "losses": 4,
-      "era": "3.99",
-      "strikeOuts": 55,
-      "inningsPitched": "76.2",
-      "hitsAllowed": 73,
-      "walks": 35,
-      "homeRunsAllowed": 10,
+      "era": "3.95",
+      "strikeOuts": 58,
+      "inningsPitched": "79.2",
+      "hitsAllowed": 76,
+      "walks": 36,
+      "homeRunsAllowed": 11,
       "whip": "1.41",
       "gamesStarted": 15,
       "probableSource": "mlb-api",
@@ -73592,45 +75388,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/andrew-abbott-vs-diamondbacks",
-        "answerText": "Andrew Abbott has a 0-1 record with an ERA of 5.73 and 10 strikeouts in 2 appearances against the Diamondbacks in his career.",
+        "answerText": "Andrew Abbott has a 0-1 record with an ERA of 4.50 and 15 strikeouts in 3 appearances versus the Diamondbacks in his career.",
         "pitcherName": "Andrew Abbott",
         "pitcherTeam": "Reds",
         "opponentTeam": "Diamondbacks",
-        "appearances": 2,
-        "gamesStarted": 2,
+        "appearances": 3,
+        "gamesStarted": 3,
         "wins": 0,
         "losses": 1,
-        "era": 5.73,
-        "strikeouts": 10,
-        "inningsPitched": "11.0",
-        "hitsAllowed": 12,
-        "earnedRuns": 7,
-        "runsAllowed": 8,
-        "homeRunsAllowed": 3,
-        "walks": 2,
-        "battersFaced": 47,
+        "era": 4.5,
+        "strikeouts": 15,
+        "inningsPitched": "16.0",
+        "hitsAllowed": 16,
+        "earnedRuns": 8,
+        "runsAllowed": 9,
+        "homeRunsAllowed": 4,
+        "walks": 5,
+        "battersFaced": 68,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "2",
-          "ERA": "5.73",
-          "SO": "10",
+          "GS": "3",
+          "ERA": "4.50",
+          "SO": "15",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "11.0",
-          "H": "12",
-          "ER": "7",
-          "R": "8",
-          "HR": "3",
-          "BB": "2",
+          "IP": "16.0",
+          "H": "16",
+          "ER": "8",
+          "R": "9",
+          "HR": "4",
+          "BB": "5",
           "HBP": "0",
           "GF": "0",
           "IBB": "0",
-          "TBF": "47",
+          "TBF": "68",
           "WP": "0",
           "_isTotal": true
         },
@@ -73682,9 +75478,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "21",
             "WP": "0"
+          },
+          {
+            "NAME": "Andrew Abbott A. Abbott",
+            "DATE": "6/14/2026",
+            "TM": "CIN",
+            "OPP": "AZ",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "1.80",
+            "SO": "5",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.0",
+            "H": "4",
+            "ER": "1",
+            "R": "1",
+            "HR": "1",
+            "BB": "3",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "21",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:56.398Z"
+        "fetchedAt": "2026-06-15T10:34:58.353Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -73743,7 +75563,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.10"
+                    "value": "3.95"
                   },
                   {
                     "label": "W",
@@ -73768,12 +75588,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -73783,42 +75603,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "74.2"
+                    "value": "79.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "72"
+                    "value": "76"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "36"
+                    "value": "37"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "34"
+                    "value": "35"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "33"
+                    "value": "36"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "58"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".252"
+                    "value": ".250"
                   }
                 ]
               }
@@ -73871,17 +75691,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "286"
+                    "value": "304"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "36"
+                    "value": "37"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "72"
+                    "value": "76"
                   },
                   {
                     "label": "2B",
@@ -73896,17 +75716,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "32"
+                    "value": "33"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "33"
+                    "value": "36"
                   },
                   {
                     "label": "HBP",
@@ -73916,22 +75736,22 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "58"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CS",
                     "name": "caughtStealing",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".252"
+                    "value": ".250"
                   },
                   {
                     "label": "OBP",
@@ -73946,7 +75766,7 @@ export const rawGames = [
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".715"
+                    "value": ".716"
                   }
                 ]
               }
@@ -73999,7 +75819,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.15"
+                    "value": "4.75"
                   },
                   {
                     "label": "W",
@@ -74024,12 +75844,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "CG",
@@ -74039,42 +75859,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "36.2"
+                    "value": "41.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "39"
+                    "value": "43"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "21"
+                    "value": "22"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "21"
+                    "value": "22"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "15"
+                    "value": "18"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "29"
+                    "value": "34"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".275"
+                    "value": ".269"
                   }
                 ]
               },
@@ -74850,7 +76670,92 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.50"
+                    "value": "3.71"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "3"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "3"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "17.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "13"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "7"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "7"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "9"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "16"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".206"
+                  }
+                ]
+              },
+              {
+                "label": "Last 7 Days",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "3.27"
                   },
                   {
                     "label": "W",
@@ -74890,32 +76795,32 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "12.0"
+                    "value": "11.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "9"
+                    "value": "8"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "6"
+                    "value": "4"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "6"
+                    "value": "4"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "6"
+                    "value": "5"
                   },
                   {
                     "label": "K",
@@ -74926,91 +76831,6 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".200"
-                  }
-                ]
-              },
-              {
-                "label": "Last 7 Days",
-                "stats": [
-                  {
-                    "label": "ERA",
-                    "name": "ERA",
-                    "value": "4.50"
-                  },
-                  {
-                    "label": "W",
-                    "name": "wins",
-                    "value": "0"
-                  },
-                  {
-                    "label": "L",
-                    "name": "losses",
-                    "value": "1"
-                  },
-                  {
-                    "label": "SV",
-                    "name": "saves",
-                    "value": "0"
-                  },
-                  {
-                    "label": "SVOP",
-                    "name": "saveOpportunities",
-                    "value": "0"
-                  },
-                  {
-                    "label": "GP",
-                    "name": "gamesPlayed",
-                    "value": "1"
-                  },
-                  {
-                    "label": "GS",
-                    "name": "gamesStarted",
-                    "value": "1"
-                  },
-                  {
-                    "label": "CG",
-                    "name": "completeGames",
-                    "value": "0"
-                  },
-                  {
-                    "label": "IP",
-                    "name": "innings",
-                    "value": "6.0"
-                  },
-                  {
-                    "label": "H",
-                    "name": "hits",
-                    "value": "4"
-                  },
-                  {
-                    "label": "R",
-                    "name": "runs",
-                    "value": "3"
-                  },
-                  {
-                    "label": "ER",
-                    "name": "earnedRuns",
-                    "value": "3"
-                  },
-                  {
-                    "label": "HR",
-                    "name": "homeRuns",
-                    "value": "1"
-                  },
-                  {
-                    "label": "BB",
-                    "name": "walks",
-                    "value": "2"
-                  },
-                  {
-                    "label": "K",
-                    "name": "strikeouts",
-                    "value": "6"
-                  },
-                  {
-                    "label": "OBA",
-                    "name": "opponentAvg",
-                    "value": ".182"
                   }
                 ]
               },
@@ -75227,6 +77047,91 @@ export const rawGames = [
               "opponentAvg"
             ],
             "rows": [
+              {
+                "label": "Arizona Diamondbacks",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "1.80"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "5.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "4"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "1"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "3"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "5"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".222"
+                  }
+                ]
+              },
               {
                 "label": "Boston Red Sox",
                 "stats": [
@@ -76466,7 +78371,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.10"
+                    "value": "3.95"
                   },
                   {
                     "label": "W",
@@ -76491,12 +78396,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -76506,42 +78411,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "74.2"
+                    "value": "79.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "72"
+                    "value": "76"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "36"
+                    "value": "37"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "34"
+                    "value": "35"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "33"
+                    "value": "36"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "58"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".252"
+                    "value": ".250"
                   }
                 ]
               },
@@ -78933,17 +80838,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "286"
+                    "value": "304"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "36"
+                    "value": "37"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "72"
+                    "value": "76"
                   },
                   {
                     "label": "2B",
@@ -78958,17 +80863,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "32"
+                    "value": "33"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "33"
+                    "value": "36"
                   },
                   {
                     "label": "HBP",
@@ -78978,22 +80883,22 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "58"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CS",
                     "name": "caughtStealing",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".252"
+                    "value": ".250"
                   },
                   {
                     "label": "OBP",
@@ -79008,7 +80913,7 @@ export const rawGames = [
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".715"
+                    "value": ".716"
                   }
                 ]
               }
@@ -79022,7 +80927,7 @@ export const rawGames = [
           "Away split: 3.08 ERA / 5 HR allowed.",
           "vs. Left: .284 AVG / .721 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -82096,14 +84001,14 @@ export const rawGames = [
       "fullName": "Spencer Arrighetti",
       "pitchHand": "R",
       "wins": 7,
-      "losses": 1,
-      "era": "2.18",
-      "strikeOuts": 55,
-      "inningsPitched": "57.2",
-      "hitsAllowed": 38,
-      "walks": 31,
+      "losses": 2,
+      "era": "2.57",
+      "strikeOuts": 60,
+      "inningsPitched": "63.0",
+      "hitsAllowed": 45,
+      "walks": 32,
       "homeRunsAllowed": 3,
-      "whip": "1.20",
+      "whip": "1.22",
       "gamesStarted": 11,
       "probableSource": "mlb-api",
       "savant": {
@@ -82263,24 +84168,48 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/spencer-arrighetti-vs-royals",
-        "answerText": "Spencer Arrighetti has allowed 7 runs on 7 hits with 3 walks and 3 strikeouts in 3 innings versus the Royals in his career. He has been charged with the loss.",
+        "answerText": "Spencer Arrighetti is 0-2 with an ERA of 11.00 and 10 strikeouts in 2 appearances versus the Royals in his career.",
         "pitcherName": "Spencer Arrighetti",
         "pitcherTeam": "Astros",
         "opponentTeam": "Royals",
-        "appearances": 1,
-        "gamesStarted": 0,
-        "wins": null,
-        "losses": null,
-        "era": null,
-        "strikeouts": null,
-        "inningsPitched": null,
-        "hitsAllowed": null,
-        "earnedRuns": null,
-        "runsAllowed": null,
-        "homeRunsAllowed": null,
-        "walks": null,
-        "battersFaced": null,
-        "totalRow": null,
+        "appearances": 2,
+        "gamesStarted": 2,
+        "wins": 0,
+        "losses": 2,
+        "era": 11,
+        "strikeouts": 10,
+        "inningsPitched": "9.0",
+        "hitsAllowed": 15,
+        "earnedRuns": 11,
+        "runsAllowed": 11,
+        "homeRunsAllowed": 0,
+        "walks": 4,
+        "battersFaced": 45,
+        "totalRow": {
+          "NAME": "Total",
+          "DATE": "",
+          "TM": "",
+          "OPP": "",
+          "DEC": "",
+          "GS": "2",
+          "ERA": "11.00",
+          "SO": "10",
+          "CG": "0",
+          "SHO": "0",
+          "SV": "0",
+          "IP": "9.0",
+          "H": "15",
+          "ER": "11",
+          "R": "11",
+          "HR": "0",
+          "BB": "4",
+          "HBP": "0",
+          "GF": "0",
+          "IBB": "0",
+          "TBF": "45",
+          "WP": "0",
+          "_isTotal": true
+        },
         "gameRows": [
           {
             "NAME": "Spencer Arrighetti S. Arrighetti",
@@ -82305,9 +84234,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "19",
             "WP": "0"
+          },
+          {
+            "NAME": "Spencer Arrighetti S. Arrighetti",
+            "DATE": "6/14/2026",
+            "TM": "HOU",
+            "OPP": "KCR",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "6.00",
+            "SO": "7",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "8",
+            "ER": "4",
+            "R": "4",
+            "HR": "0",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "26",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:47:59.453Z"
+        "fetchedAt": "2026-06-15T10:34:58.751Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -82366,7 +84319,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.21"
+                    "value": "2.57"
                   },
                   {
                     "label": "W",
@@ -82376,7 +84329,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SV",
@@ -82391,12 +84344,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "CG",
@@ -82406,22 +84359,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "57.0"
+                    "value": "63.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "37"
+                    "value": "45"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "16"
+                    "value": "20"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "14"
+                    "value": "18"
                   },
                   {
                     "label": "HR",
@@ -82431,17 +84384,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "31"
+                    "value": "32"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "60"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".185"
+                    "value": ".200"
                   }
                 ]
               }
@@ -82494,22 +84447,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "200"
+                    "value": "225"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "16"
+                    "value": "20"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "37"
+                    "value": "45"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "3B",
@@ -82524,12 +84477,12 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "16"
+                    "value": "20"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "31"
+                    "value": "32"
                   },
                   {
                     "label": "HBP",
@@ -82539,12 +84492,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "60"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "10"
+                    "value": "14"
                   },
                   {
                     "label": "CS",
@@ -82554,22 +84507,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".185"
+                    "value": ".200"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".322"
+                    "value": ".325"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".260"
+                    "value": ".271"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".582"
+                    "value": ".596"
                   }
                 ]
               }
@@ -82707,7 +84660,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.20"
+                    "value": "2.79"
                   },
                   {
                     "label": "W",
@@ -82717,7 +84670,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SV",
@@ -82732,12 +84685,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "CG",
@@ -82747,22 +84700,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "32.2"
+                    "value": "38.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "24"
+                    "value": "32"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "10"
+                    "value": "14"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "8"
+                    "value": "12"
                   },
                   {
                     "label": "HR",
@@ -82772,17 +84725,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "21"
+                    "value": "22"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "27"
+                    "value": "34"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".209"
+                    "value": ".229"
                   }
                 ]
               },
@@ -83388,7 +85341,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.30"
+                    "value": "6.19"
                   },
                   {
                     "label": "W",
@@ -83398,7 +85351,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -83413,12 +85366,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -83428,22 +85381,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "10.0"
+                    "value": "16.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "10"
+                    "value": "18"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "7"
+                    "value": "11"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "7"
+                    "value": "11"
                   },
                   {
                     "label": "HR",
@@ -83453,17 +85406,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "10"
+                    "value": "17"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".263"
+                    "value": ".286"
                   }
                 ]
               },
@@ -83473,7 +85426,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.50"
+                    "value": "5.25"
                   },
                   {
                     "label": "W",
@@ -83483,7 +85436,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -83498,12 +85451,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -83513,22 +85466,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "6.0"
+                    "value": "12.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "4"
+                    "value": "12"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "3"
+                    "value": "7"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "3"
+                    "value": "7"
                   },
                   {
                     "label": "HR",
@@ -83538,17 +85491,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "7"
+                    "value": "14"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".190"
+                    "value": ".261"
                   }
                 ]
               },
@@ -84191,6 +86144,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "Kansas City Royals",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "6.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "8"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "4"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "4"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "7"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".320"
+                  }
+                ]
+              },
+              {
                 "label": "Los Angeles Angels",
                 "stats": [
                   {
@@ -84579,7 +86617,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.21"
+                    "value": "2.57"
                   },
                   {
                     "label": "W",
@@ -84589,7 +86627,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SV",
@@ -84604,12 +86642,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "CG",
@@ -84619,22 +86657,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "57.0"
+                    "value": "63.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "37"
+                    "value": "45"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "16"
+                    "value": "20"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "14"
+                    "value": "18"
                   },
                   {
                     "label": "HR",
@@ -84644,17 +86682,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "31"
+                    "value": "32"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "60"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".185"
+                    "value": ".200"
                   }
                 ]
               },
@@ -84910,6 +86948,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".250"
+                  }
+                ]
+              },
+              {
+                "label": "Kauffman Stadium",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "6.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "8"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "4"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "4"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "7"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".320"
                   }
                 ]
               },
@@ -86791,22 +88914,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "200"
+                    "value": "225"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "16"
+                    "value": "20"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "37"
+                    "value": "45"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "3B",
@@ -86821,12 +88944,12 @@ export const rawGames = [
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "16"
+                    "value": "20"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "31"
+                    "value": "32"
                   },
                   {
                     "label": "HBP",
@@ -86836,12 +88959,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "53"
+                    "value": "60"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "10"
+                    "value": "14"
                   },
                   {
                     "label": "CS",
@@ -86851,22 +88974,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".185"
+                    "value": ".200"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".322"
+                    "value": ".325"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".260"
+                    "value": ".271"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".582"
+                    "value": ".596"
                   }
                 ]
               }
@@ -86877,10 +89000,11 @@ export const rawGames = [
           "Third time through: .163 AVG / .556 OPS allowed with 1 HR.",
           "First look baseline: .297 OBP / .593 OPS allowed.",
           "Day split: 1.19 ERA / .192 OBA.",
-          "Away split: 2.20 ERA / 1 HR allowed.",
-          "vs. Right: .198 AVG / .603 OPS allowed."
+          "Away split: 2.79 ERA / 1 HR allowed.",
+          "vs. Right: .198 AVG / .603 OPS allowed.",
+          "Kauffman Stadium: 6.00 ERA / .320 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -86905,15 +89029,15 @@ export const rawGames = [
       "id": 663568,
       "fullName": "Stephen Kolek",
       "pitchHand": "R",
-      "wins": 3,
+      "wins": 4,
       "losses": 1,
-      "era": "3.07",
-      "strikeOuts": 30,
-      "inningsPitched": "44.0",
-      "hitsAllowed": 37,
-      "walks": 9,
+      "era": "2.68",
+      "strikeOuts": 34,
+      "inningsPitched": "50.1",
+      "hitsAllowed": 42,
+      "walks": 10,
       "homeRunsAllowed": 5,
-      "whip": "1.05",
+      "whip": "1.03",
       "gamesStarted": 8,
       "probableSource": "mlb-api",
       "savant": {
@@ -87073,11 +89197,11 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/stephen-kolek-vs-astros",
-        "answerText": "Stephen Kolek: no StatMuse matchup history found vs Astros.",
+        "answerText": "Stephen Kolek has not allowed any runs on 5 hits with 1 walk and 4 strikeouts in 7.1 innings against the Astros in his career. He has been credited with the win.",
         "pitcherName": "Stephen Kolek",
         "pitcherTeam": "Royals",
         "opponentTeam": "Astros",
-        "appearances": 0,
+        "appearances": 1,
         "gamesStarted": 0,
         "wins": null,
         "losses": null,
@@ -87091,8 +89215,33 @@ export const rawGames = [
         "walks": null,
         "battersFaced": null,
         "totalRow": null,
-        "gameRows": [],
-        "fetchedAt": "2026-06-14T15:48:00.354Z"
+        "gameRows": [
+          {
+            "NAME": "Stephen Kolek S. Kolek",
+            "DATE": "6/14/2026",
+            "TM": "KCR",
+            "OPP": "HOU",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "0.00",
+            "SO": "4",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "7.1",
+            "H": "5",
+            "ER": "0",
+            "R": "0",
+            "HR": "0",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "26",
+            "WP": "0"
+          }
+        ],
+        "fetchedAt": "2026-06-15T10:34:59.139Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -87151,12 +89300,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.14"
+                    "value": "2.68"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "L",
@@ -87176,12 +89325,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "CG",
@@ -87191,12 +89340,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "43.0"
+                    "value": "50.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "37"
+                    "value": "42"
                   },
                   {
                     "label": "R",
@@ -87216,17 +89365,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "30"
+                    "value": "34"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".228"
+                    "value": ".225"
                   }
                 ]
               }
@@ -87279,7 +89428,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "162"
+                    "value": "187"
                   },
                   {
                     "label": "R",
@@ -87289,12 +89438,12 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "37"
+                    "value": "42"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "3B",
@@ -87314,7 +89463,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "HBP",
@@ -87324,7 +89473,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "30"
+                    "value": "34"
                   },
                   {
                     "label": "SB",
@@ -87339,22 +89488,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".228"
+                    "value": ".225"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".273"
+                    "value": ".268"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".364"
+                    "value": ".348"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".637"
+                    "value": ".615"
                   }
                 ]
               }
@@ -87407,12 +89556,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.80"
+                    "value": "1.32"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "L",
@@ -87432,12 +89581,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "CG",
@@ -87447,12 +89596,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "20.0"
+                    "value": "27.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "16"
+                    "value": "21"
                   },
                   {
                     "label": "R",
@@ -87472,17 +89621,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "8"
+                    "value": "12"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".222"
+                    "value": ".216"
                   }
                 ]
               },
@@ -88088,12 +90237,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.25"
+                    "value": "1.40"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -88113,12 +90262,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -88128,12 +90277,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "12.0"
+                    "value": "19.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "14"
+                    "value": "19"
                   },
                   {
                     "label": "R",
@@ -88153,17 +90302,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "11"
+                    "value": "15"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".292"
+                    "value": ".260"
                   }
                 ]
               },
@@ -88173,12 +90322,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.80"
+                    "value": "0.73"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -88198,12 +90347,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -88213,12 +90362,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "5.0"
+                    "value": "12.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "8"
+                    "value": "13"
                   },
                   {
                     "label": "R",
@@ -88238,17 +90387,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "7"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".364"
+                    "value": ".277"
                   }
                 ]
               },
@@ -88721,6 +90870,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "Houston Astros",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "0.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "7.1"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "5"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "0"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "4"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".200"
+                  }
+                ]
+              },
+              {
                 "label": "Seattle Mariners",
                 "stats": [
                   {
@@ -89024,12 +91258,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.14"
+                    "value": "2.68"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "L",
@@ -89049,12 +91283,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "CG",
@@ -89064,12 +91298,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "43.0"
+                    "value": "50.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "37"
+                    "value": "42"
                   },
                   {
                     "label": "R",
@@ -89089,17 +91323,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "30"
+                    "value": "34"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".228"
+                    "value": ".225"
                   }
                 ]
               },
@@ -91151,7 +93385,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "162"
+                    "value": "187"
                   },
                   {
                     "label": "R",
@@ -91161,12 +93395,12 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "37"
+                    "value": "42"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "3B",
@@ -91186,7 +93420,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "HBP",
@@ -91196,7 +93430,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "30"
+                    "value": "34"
                   },
                   {
                     "label": "SB",
@@ -91211,22 +93445,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".228"
+                    "value": ".225"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".273"
+                    "value": ".268"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".364"
+                    "value": ".348"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".637"
+                    "value": ".615"
                   }
                 ]
               }
@@ -91241,7 +93475,7 @@ export const rawGames = [
           "vs. Right: .246 AVG / .756 OPS allowed.",
           "Kauffman Stadium: 1.80 ERA / .222 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -94327,13 +96561,13 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 3,
       "losses": 5,
-      "era": "2.97",
-      "strikeOuts": 49,
-      "inningsPitched": "72.2",
-      "hitsAllowed": 62,
-      "walks": 17,
-      "homeRunsAllowed": 10,
-      "whip": "1.09",
+      "era": "2.99",
+      "strikeOuts": 51,
+      "inningsPitched": "78.1",
+      "hitsAllowed": 68,
+      "walks": 19,
+      "homeRunsAllowed": 11,
+      "whip": "1.11",
       "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
@@ -94493,11 +96727,11 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/michael-mcgreevy-vs-twins",
-        "answerText": "Michael McGreevy: no StatMuse matchup history found vs Twins.",
+        "answerText": "Michael McGreevy has allowed 2 runs on 7 hits with 2 walks and 2 strikeouts in 6 innings versus the Twins in his career.",
         "pitcherName": "Michael McGreevy",
         "pitcherTeam": "Cardinals",
         "opponentTeam": "Twins",
-        "appearances": 0,
+        "appearances": 1,
         "gamesStarted": 0,
         "wins": null,
         "losses": null,
@@ -94511,8 +96745,33 @@ export const rawGames = [
         "walks": null,
         "battersFaced": null,
         "totalRow": null,
-        "gameRows": [],
-        "fetchedAt": "2026-06-14T15:48:01.458Z"
+        "gameRows": [
+          {
+            "NAME": "Michael McGreevy M. McGreevy",
+            "DATE": "6/14/2026",
+            "TM": "STL",
+            "OPP": "MIN",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "3.00",
+            "SO": "2",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "7",
+            "ER": "2",
+            "R": "2",
+            "HR": "1",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "25",
+            "WP": "0"
+          }
+        ],
+        "fetchedAt": "2026-06-15T10:34:59.530Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -94596,12 +96855,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -94611,42 +96870,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "72.1"
+                    "value": "78.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "68"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "17"
+                    "value": "19"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "49"
+                    "value": "51"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".228"
+                    "value": ".234"
                   }
                 ]
               }
@@ -94699,22 +96958,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "268"
+                    "value": "291"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "68"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "3B",
@@ -94724,17 +96983,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "17"
+                    "value": "19"
                   },
                   {
                     "label": "HBP",
@@ -94744,12 +97003,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "49"
+                    "value": "51"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CS",
@@ -94759,22 +97018,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".228"
+                    "value": ".234"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".274"
+                    "value": ".281"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".381"
+                    "value": ".388"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".654"
+                    "value": ".669"
                   }
                 ]
               }
@@ -94912,7 +97171,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.90"
+                    "value": "3.76"
                   },
                   {
                     "label": "W",
@@ -94937,12 +97196,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "CG",
@@ -94952,42 +97211,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "32.1"
+                    "value": "38.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "29"
+                    "value": "36"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "14"
+                    "value": "16"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "14"
+                    "value": "16"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "8"
+                    "value": "10"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "26"
+                    "value": "28"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".238"
+                    "value": ".248"
                   }
                 ]
               },
@@ -95703,12 +97962,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -95718,42 +97977,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "12.0"
+                    "value": "18.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "10"
+                    "value": "17"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "4"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "8"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".227"
+                    "value": ".254"
                   }
                 ]
               },
@@ -95808,7 +98067,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "5"
+                    "value": "7"
                   },
                   {
                     "label": "R",
@@ -95823,22 +98082,22 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "1"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "0"
+                    "value": "2"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "5"
+                    "value": "2"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".217"
+                    "value": ".304"
                   }
                 ]
               },
@@ -96566,6 +98825,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "Minnesota Twins",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "3.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "7"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "2"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "2"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".304"
+                  }
+                ]
+              },
+              {
                 "label": "Oakland Athletics",
                 "stats": [
                   {
@@ -97234,12 +99578,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -97249,42 +99593,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "72.1"
+                    "value": "78.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "68"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "17"
+                    "value": "19"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "49"
+                    "value": "51"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".228"
+                    "value": ".234"
                   }
                 ]
               },
@@ -97710,6 +100054,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".053"
+                  }
+                ]
+              },
+              {
+                "label": "Target Field",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "3.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "7"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "2"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "2"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".304"
                   }
                 ]
               }
@@ -99336,22 +101765,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "268"
+                    "value": "291"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "68"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "3B",
@@ -99361,17 +101790,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "17"
+                    "value": "19"
                   },
                   {
                     "label": "HBP",
@@ -99381,12 +101810,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "49"
+                    "value": "51"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CS",
@@ -99396,22 +101825,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".228"
+                    "value": ".234"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".274"
+                    "value": ".281"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".381"
+                    "value": ".388"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".654"
+                    "value": ".669"
                   }
                 ]
               }
@@ -99422,10 +101851,11 @@ export const rawGames = [
           "Third time through: .298 AVG / .757 OPS allowed with 0 HR.",
           "First look baseline: .231 OBP / .608 OPS allowed.",
           "Day split: 2.08 ERA / .205 OBA.",
-          "Away split: 3.90 ERA / 4 HR allowed.",
-          "vs. Right: .228 AVG / .657 OPS allowed."
+          "Away split: 3.76 ERA / 5 HR allowed.",
+          "vs. Right: .228 AVG / .657 OPS allowed.",
+          "Target Field: 3.00 ERA / .304 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -99452,13 +101882,13 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 5,
       "losses": 3,
-      "era": "3.95",
-      "strikeOuts": 75,
-      "inningsPitched": "66.0",
-      "hitsAllowed": 61,
-      "walks": 29,
-      "homeRunsAllowed": 9,
-      "whip": "1.36",
+      "era": "4.14",
+      "strikeOuts": 80,
+      "inningsPitched": "71.2",
+      "hitsAllowed": 66,
+      "walks": 30,
+      "homeRunsAllowed": 11,
+      "whip": "1.34",
       "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
@@ -99618,24 +102048,48 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/taj-bradley-vs-cardinals",
-        "answerText": "Taj Bradley has given up 5 runs on 9 hits with 3 walks and 3 strikeouts in 4.2 innings against the Cardinals in his career. He has been charged with the loss.",
+        "answerText": "Taj Bradley is 0-1 with an ERA of 7.15 and 10 strikeouts in 2 appearances against the Cardinals in his career.",
         "pitcherName": "Taj Bradley",
         "pitcherTeam": "Twins",
         "opponentTeam": "Cardinals",
-        "appearances": 1,
-        "gamesStarted": 0,
-        "wins": null,
-        "losses": null,
-        "era": null,
-        "strikeouts": null,
-        "inningsPitched": null,
-        "hitsAllowed": null,
-        "earnedRuns": null,
-        "runsAllowed": null,
-        "homeRunsAllowed": null,
-        "walks": null,
-        "battersFaced": null,
-        "totalRow": null,
+        "appearances": 2,
+        "gamesStarted": 2,
+        "wins": 0,
+        "losses": 1,
+        "era": 7.15,
+        "strikeouts": 10,
+        "inningsPitched": "11.1",
+        "hitsAllowed": 14,
+        "earnedRuns": 9,
+        "runsAllowed": 9,
+        "homeRunsAllowed": 2,
+        "walks": 4,
+        "battersFaced": 53,
+        "totalRow": {
+          "NAME": "Total",
+          "DATE": "",
+          "TM": "",
+          "OPP": "",
+          "DEC": "",
+          "GS": "2",
+          "ERA": "7.15",
+          "SO": "10",
+          "CG": "0",
+          "SHO": "0",
+          "SV": "0",
+          "IP": "11.1",
+          "H": "14",
+          "ER": "9",
+          "R": "9",
+          "HR": "2",
+          "BB": "4",
+          "HBP": "0",
+          "GF": "0",
+          "IBB": "0",
+          "TBF": "53",
+          "WP": "0",
+          "_isTotal": true
+        },
         "gameRows": [
           {
             "NAME": "Taj Bradley T. Bradley",
@@ -99660,9 +102114,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "26",
             "WP": "0"
+          },
+          {
+            "NAME": "Taj Bradley T. Bradley",
+            "DATE": "6/14/2026",
+            "TM": "MIN",
+            "OPP": "STL",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "5.40",
+            "SO": "7",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.2",
+            "H": "5",
+            "ER": "4",
+            "R": "4",
+            "HR": "2",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "27",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:48:03.043Z"
+        "fetchedAt": "2026-06-15T10:34:59.905Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -99721,7 +102199,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.02"
+                    "value": "4.14"
                   },
                   {
                     "label": "W",
@@ -99746,12 +102224,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CG",
@@ -99761,42 +102239,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "65.0"
+                    "value": "71.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "66"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "33"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "29"
+                    "value": "33"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "9"
+                    "value": "11"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "29"
+                    "value": "30"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "73"
+                    "value": "80"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".244"
+                    "value": ".239"
                   }
                 ]
               }
@@ -99849,17 +102327,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "250"
+                    "value": "276"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "33"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "66"
                   },
                   {
                     "label": "2B",
@@ -99874,17 +102352,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "9"
+                    "value": "11"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "27"
+                    "value": "30"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "29"
+                    "value": "30"
                   },
                   {
                     "label": "HBP",
@@ -99894,12 +102372,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "73"
+                    "value": "80"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "CS",
@@ -99909,22 +102387,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".244"
+                    "value": ".239"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".325"
+                    "value": ".316"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".412"
+                    "value": ".413"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".737"
+                    "value": ".729"
                   }
                 ]
               }
@@ -99977,7 +102455,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.38"
+                    "value": "3.82"
                   },
                   {
                     "label": "W",
@@ -100002,12 +102480,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "CG",
@@ -100017,42 +102495,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "24.0"
+                    "value": "30.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "22"
+                    "value": "27"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "9"
+                    "value": "13"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "9"
+                    "value": "13"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "27"
+                    "value": "34"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".239"
+                    "value": ".229"
                   }
                 ]
               },
@@ -100828,7 +103306,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "9.00"
+                    "value": "7.47"
                   },
                   {
                     "label": "W",
@@ -100853,12 +103331,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -100868,42 +103346,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "9.0"
+                    "value": "15.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "14"
+                    "value": "19"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "9"
+                    "value": "13"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "9"
+                    "value": "13"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "8"
+                    "value": "15"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".359"
+                    "value": ".292"
                   }
                 ]
               },
@@ -100913,7 +103391,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "10.38"
+                    "value": "7.36"
                   },
                   {
                     "label": "W",
@@ -100938,12 +103416,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -100953,42 +103431,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "4.1"
+                    "value": "11.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "7"
+                    "value": "12"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "5"
+                    "value": "9"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "5"
+                    "value": "9"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "10"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".368"
+                    "value": ".267"
                   }
                 ]
               },
@@ -101886,6 +104364,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "St. Louis Cardinals",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "5.40"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.2"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "5"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "4"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "4"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "7"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".192"
+                  }
+                ]
+              },
+              {
                 "label": "Tampa Bay Rays",
                 "stats": [
                   {
@@ -102189,7 +104752,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.02"
+                    "value": "4.14"
                   },
                   {
                     "label": "W",
@@ -102214,12 +104777,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CG",
@@ -102229,42 +104792,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "65.0"
+                    "value": "71.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "66"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "33"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "29"
+                    "value": "33"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "9"
+                    "value": "11"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "29"
+                    "value": "30"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "73"
+                    "value": "80"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".244"
+                    "value": ".239"
                   }
                 ]
               },
@@ -104741,17 +107304,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "250"
+                    "value": "276"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "33"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "66"
                   },
                   {
                     "label": "2B",
@@ -104766,17 +107329,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "9"
+                    "value": "11"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "27"
+                    "value": "30"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "29"
+                    "value": "30"
                   },
                   {
                     "label": "HBP",
@@ -104786,12 +107349,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "73"
+                    "value": "80"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "CS",
@@ -104801,22 +107364,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".244"
+                    "value": ".239"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".325"
+                    "value": ".316"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".412"
+                    "value": ".413"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".737"
+                    "value": ".729"
                   }
                 ]
               }
@@ -104831,7 +107394,7 @@ export const rawGames = [
           "vs. Right: .278 AVG / .778 OPS allowed.",
           "Target Field: 3.38 ERA / .239 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -108019,14 +110582,14 @@ export const rawGames = [
       "fullName": "Emmet Sheehan",
       "pitchHand": "R",
       "wins": 3,
-      "losses": 3,
-      "era": "4.62",
-      "strikeOuts": 65,
-      "inningsPitched": "60.1",
-      "hitsAllowed": 56,
-      "walks": 16,
-      "homeRunsAllowed": 11,
-      "whip": "1.19",
+      "losses": 4,
+      "era": "4.76",
+      "strikeOuts": 72,
+      "inningsPitched": "64.1",
+      "hitsAllowed": 60,
+      "walks": 17,
+      "homeRunsAllowed": 12,
+      "whip": "1.20",
       "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
@@ -108186,11 +110749,11 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/emmet-sheehan-vs-white-sox",
-        "answerText": "Emmet Sheehan: no StatMuse matchup history found vs White Sox.",
+        "answerText": "Emmet Sheehan has given up 3 runs on 4 hits with 1 walk and 8 strikeouts in 5 innings versus the White Sox in his career. He has been charged with the loss.",
         "pitcherName": "Emmet Sheehan",
         "pitcherTeam": "Dodgers",
         "opponentTeam": "White Sox",
-        "appearances": 0,
+        "appearances": 1,
         "gamesStarted": 0,
         "wins": null,
         "losses": null,
@@ -108204,8 +110767,33 @@ export const rawGames = [
         "walks": null,
         "battersFaced": null,
         "totalRow": null,
-        "gameRows": [],
-        "fetchedAt": "2026-06-14T15:48:03.956Z"
+        "gameRows": [
+          {
+            "NAME": "Emmet Sheehan E. Sheehan",
+            "DATE": "6/14/2026",
+            "TM": "LAD",
+            "OPP": "CWS",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "5.40",
+            "SO": "8",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.0",
+            "H": "4",
+            "ER": "3",
+            "R": "3",
+            "HR": "1",
+            "BB": "1",
+            "HBP": "1",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "21",
+            "WP": "0"
+          }
+        ],
+        "fetchedAt": "2026-06-15T10:35:00.297Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -108264,7 +110852,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.70"
+                    "value": "4.76"
                   },
                   {
                     "label": "W",
@@ -108274,7 +110862,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "SV",
@@ -108289,12 +110877,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CG",
@@ -108304,42 +110892,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "59.1"
+                    "value": "64.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "56"
+                    "value": "60"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "34"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "31"
+                    "value": "34"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "16"
+                    "value": "17"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "64"
+                    "value": "72"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".247"
+                    "value": ".244"
                   }
                 ]
               }
@@ -108392,22 +110980,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "227"
+                    "value": "246"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "34"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "56"
+                    "value": "60"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "16"
+                    "value": "18"
                   },
                   {
                     "label": "3B",
@@ -108417,32 +111005,32 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "27"
+                    "value": "29"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "16"
+                    "value": "17"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "64"
+                    "value": "72"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CS",
@@ -108452,12 +111040,12 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".247"
+                    "value": ".244"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".302"
+                    "value": ".301"
                   },
                   {
                     "label": "SLG",
@@ -108605,7 +111193,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.61"
+                    "value": "5.58"
                   },
                   {
                     "label": "W",
@@ -108615,7 +111203,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "SV",
@@ -108630,12 +111218,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "CG",
@@ -108645,42 +111233,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "25.2"
+                    "value": "30.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "27"
+                    "value": "31"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "16"
+                    "value": "19"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "16"
+                    "value": "19"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "19"
+                    "value": "27"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".262"
+                    "value": ".254"
                   }
                 ]
               },
@@ -109371,7 +111959,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.70"
+                    "value": "4.97"
                   },
                   {
                     "label": "W",
@@ -109381,7 +111969,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "SV",
@@ -109396,12 +111984,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -109411,42 +111999,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "7.2"
+                    "value": "12.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "6"
+                    "value": "10"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "5"
+                    "value": "13"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".207"
+                    "value": ".208"
                   }
                 ]
               },
@@ -109456,7 +112044,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "13.50"
+                    "value": "5.40"
                   },
                   {
                     "label": "W",
@@ -109496,42 +112084,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "1.1"
+                    "value": "5.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "1"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "2"
+                    "value": "8"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".429"
+                    "value": ".211"
                   }
                 ]
               },
@@ -110000,6 +112588,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".182"
+                  }
+                ]
+              },
+              {
+                "label": "Chicago White Sox",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "5.40"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "5.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "4"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "3"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "3"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "8"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".211"
                   }
                 ]
               },
@@ -110647,7 +113320,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.70"
+                    "value": "4.76"
                   },
                   {
                     "label": "W",
@@ -110657,7 +113330,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "SV",
@@ -110672,12 +113345,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CG",
@@ -110687,42 +113360,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "59.1"
+                    "value": "64.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "56"
+                    "value": "60"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "34"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "31"
+                    "value": "34"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "16"
+                    "value": "17"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "64"
+                    "value": "72"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".247"
+                    "value": ".244"
                   }
                 ]
               },
@@ -111233,6 +113906,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".294"
+                  }
+                ]
+              },
+              {
+                "label": "U.S. Cellular Field",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "5.40"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "5.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "4"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "3"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "3"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "8"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".211"
                   }
                 ]
               }
@@ -112945,10 +115703,10 @@ export const rawGames = [
           "Third time through: .200 AVG / .688 OPS allowed with 3 HR.",
           "First look baseline: .275 OBP / .681 OPS allowed.",
           "Day split: 7.71 ERA / .323 OBA.",
-          "Away split: 5.61 ERA / 7 HR allowed.",
+          "Away split: 5.58 ERA / 8 HR allowed.",
           "vs. Left: .248 AVG / .803 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -112973,15 +115731,15 @@ export const rawGames = [
       "id": 607200,
       "fullName": "Erick Fedde",
       "pitchHand": "R",
-      "wins": 1,
+      "wins": 2,
       "losses": 5,
-      "era": "4.69",
-      "strikeOuts": 40,
-      "inningsPitched": "63.1",
-      "hitsAllowed": 64,
-      "walks": 24,
+      "era": "4.50",
+      "strikeOuts": 44,
+      "inningsPitched": "66.0",
+      "hitsAllowed": 67,
+      "walks": 26,
       "homeRunsAllowed": 14,
-      "whip": "1.39",
+      "whip": "1.41",
       "gamesStarted": 8,
       "probableSource": "rotowire-primary",
       "savant": {
@@ -113137,7 +115895,175 @@ export const rawGames = [
       ],
       "opponentHistoryThisSeason": [],
       "strikeoutMarket": null,
-      "statmuseVsOpponent": null,
+      "statmuseVsOpponent": {
+        "source": "StatMuse",
+        "sourceUrl": "https://www.statmuse.com/mlb/ask/erick-fedde-vs-dodgers",
+        "answerText": "Erick Fedde is 2-1 with an ERA of 1.71 and 17 strikeouts in 5 appearances versus the Dodgers in his career.",
+        "pitcherName": "Erick Fedde",
+        "pitcherTeam": "White Sox",
+        "opponentTeam": "Dodgers",
+        "appearances": 3,
+        "gamesStarted": 3,
+        "wins": 2,
+        "losses": 1,
+        "era": 1.71,
+        "strikeouts": 17,
+        "inningsPitched": "21.0",
+        "hitsAllowed": 16,
+        "earnedRuns": 4,
+        "runsAllowed": 4,
+        "homeRunsAllowed": 1,
+        "walks": 9,
+        "battersFaced": 87,
+        "totalRow": {
+          "NAME": "Total",
+          "DATE": "",
+          "TM": "",
+          "OPP": "",
+          "DEC": "",
+          "GS": "3",
+          "ERA": "1.71",
+          "SO": "17",
+          "CG": "0",
+          "SHO": "0",
+          "SV": "0",
+          "IP": "21.0",
+          "H": "16",
+          "ER": "4",
+          "R": "4",
+          "HR": "1",
+          "BB": "9",
+          "HBP": "0",
+          "GF": "1",
+          "IBB": "1",
+          "TBF": "87",
+          "WP": "0",
+          "_isTotal": true
+        },
+        "gameRows": [
+          {
+            "NAME": "Erick Fedde E. Fedde",
+            "DATE": "5/10/2019",
+            "TM": "WSH",
+            "OPP": "LAD",
+            "DEC": "",
+            "GS": "0",
+            "ERA": "0.00",
+            "SO": "0",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "1.0",
+            "H": "0",
+            "ER": "0",
+            "R": "0",
+            "HR": "0",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "1",
+            "IBB": "0",
+            "TBF": "4",
+            "WP": "0"
+          },
+          {
+            "NAME": "Erick Fedde E. Fedde",
+            "DATE": "5/25/2022",
+            "TM": "WSH",
+            "OPP": "LAD",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "0.00",
+            "SO": "6",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "4",
+            "ER": "0",
+            "R": "0",
+            "HR": "0",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "22",
+            "WP": "0"
+          },
+          {
+            "NAME": "Erick Fedde E. Fedde",
+            "DATE": "6/26/2024",
+            "TM": "CWS",
+            "OPP": "LAD",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "6.00",
+            "SO": "5",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "5",
+            "ER": "4",
+            "R": "4",
+            "HR": "1",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "24",
+            "WP": "0"
+          },
+          {
+            "NAME": "Erick Fedde E. Fedde",
+            "DATE": "6/7/2025",
+            "TM": "STL",
+            "OPP": "LAD",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "0.00",
+            "SO": "2",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.1",
+            "H": "4",
+            "ER": "0",
+            "R": "0",
+            "HR": "0",
+            "BB": "4",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "24",
+            "WP": "0"
+          },
+          {
+            "NAME": "Erick Fedde E. Fedde",
+            "DATE": "6/14/2026",
+            "TM": "CWS",
+            "OPP": "LAD",
+            "DEC": "W",
+            "GS": "0",
+            "ERA": "0.00",
+            "SO": "4",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "2.2",
+            "H": "3",
+            "ER": "0",
+            "R": "0",
+            "HR": "0",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "1",
+            "TBF": "13",
+            "WP": "0"
+          }
+        ],
+        "fetchedAt": "2026-06-15T10:35:00.678Z"
+      },
       "espnSplits": {
         "source": "ESPN player splits",
         "sourceUrl": "https://www.espn.com/mlb/player/splits/_/id/33793/erick-fedde",
@@ -113195,12 +116121,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.69"
+                    "value": "4.50"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -113220,7 +116146,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
@@ -113235,12 +116161,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "63.1"
+                    "value": "66.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "64"
+                    "value": "67"
                   },
                   {
                     "label": "R",
@@ -113260,17 +116186,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "40"
+                    "value": "44"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".262"
+                    "value": ".263"
                   }
                 ]
               }
@@ -113323,7 +116249,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "244"
+                    "value": "255"
                   },
                   {
                     "label": "R",
@@ -113333,12 +116259,12 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "64"
+                    "value": "67"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "3B",
@@ -113358,7 +116284,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "HBP",
@@ -113368,12 +116294,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "40"
+                    "value": "44"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "CS",
@@ -113383,22 +116309,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".262"
+                    "value": ".263"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".332"
+                    "value": ".334"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".471"
+                    "value": ".467"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".803"
+                    "value": ".801"
                   }
                 ]
               }
@@ -113451,12 +116377,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.53"
+                    "value": "3.29"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -113476,7 +116402,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "GS",
@@ -113491,12 +116417,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "35.2"
+                    "value": "38.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "35"
+                    "value": "38"
                   },
                   {
                     "label": "R",
@@ -113516,17 +116442,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "13"
+                    "value": "15"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "22"
+                    "value": "26"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".255"
+                    "value": ".257"
                   }
                 ]
               },
@@ -113621,12 +116547,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.79"
+                    "value": "5.28"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -113646,7 +116572,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "GS",
@@ -113661,12 +116587,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "28.0"
+                    "value": "30.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "28"
+                    "value": "31"
                   },
                   {
                     "label": "R",
@@ -113686,17 +116612,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "12"
+                    "value": "14"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "20"
+                    "value": "24"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".257"
+                    "value": ".258"
                   }
                 ]
               },
@@ -113834,7 +116760,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "120"
+                    "value": "128"
                   },
                   {
                     "label": "R",
@@ -113844,12 +116770,12 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "3B",
@@ -113869,7 +116795,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "14"
+                    "value": "16"
                   },
                   {
                     "label": "HBP",
@@ -113879,12 +116805,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "21"
+                    "value": "25"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CS",
@@ -113899,7 +116825,7 @@ export const rawGames = [
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".321"
+                    "value": ".327"
                   },
                   {
                     "label": "SLG",
@@ -113909,7 +116835,7 @@ export const rawGames = [
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".688"
+                    "value": ".694"
                   }
                 ]
               },
@@ -113919,7 +116845,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "124"
+                    "value": "127"
                   },
                   {
                     "label": "R",
@@ -113929,7 +116855,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "35"
+                    "value": "36"
                   },
                   {
                     "label": "2B",
@@ -113979,7 +116905,7 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".282"
+                    "value": ".283"
                   },
                   {
                     "label": "OBP",
@@ -113989,12 +116915,12 @@ export const rawGames = [
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".573"
+                    "value": ".567"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".916"
+                    "value": ".910"
                   }
                 ]
               }
@@ -114302,12 +117228,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "0.90"
+                    "value": "0.71"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -114327,7 +117253,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
@@ -114342,12 +117268,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "10.0"
+                    "value": "12.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "8"
+                    "value": "11"
                   },
                   {
                     "label": "R",
@@ -114367,17 +117293,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "10"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".216"
+                    "value": ".229"
                   }
                 ]
               },
@@ -114387,12 +117313,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.80"
+                    "value": "1.17"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -114412,7 +117338,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
@@ -114427,12 +117353,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "5.0"
+                    "value": "7.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "6"
+                    "value": "9"
                   },
                   {
                     "label": "R",
@@ -114452,17 +117378,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "0"
+                    "value": "2"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "4"
+                    "value": "8"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".300"
+                    "value": ".290"
                   }
                 ]
               },
@@ -114472,12 +117398,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "0.90"
+                    "value": "0.71"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -114497,7 +117423,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
@@ -114512,12 +117438,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "10.0"
+                    "value": "12.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "8"
+                    "value": "11"
                   },
                   {
                     "label": "R",
@@ -114537,17 +117463,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "10"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".216"
+                    "value": ".229"
                   }
                 ]
               },
@@ -114557,12 +117483,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.64"
+                    "value": "5.87"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -114582,7 +117508,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "GS",
@@ -114597,12 +117523,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "20.1"
+                    "value": "23.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "28"
+                    "value": "31"
                   },
                   {
                     "label": "R",
@@ -114622,17 +117548,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "10"
+                    "value": "12"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "14"
+                    "value": "18"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".326"
+                    "value": ".320"
                   }
                 ]
               }
@@ -115190,6 +118116,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "Los Angeles Dodgers",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "0.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "0"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "2.2"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "3"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "0"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "4"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".273"
+                  }
+                ]
+              },
+              {
                 "label": "Miami Marlins",
                 "stats": [
                   {
@@ -115663,12 +118674,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.69"
+                    "value": "4.50"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -115688,7 +118699,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
@@ -115703,12 +118714,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "63.1"
+                    "value": "66.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "64"
+                    "value": "67"
                   },
                   {
                     "label": "R",
@@ -115728,17 +118739,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "40"
+                    "value": "44"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".262"
+                    "value": ".263"
                   }
                 ]
               },
@@ -116173,12 +119184,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.53"
+                    "value": "3.29"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -116198,7 +119209,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "GS",
@@ -116213,12 +119224,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "35.2"
+                    "value": "38.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "35"
+                    "value": "38"
                   },
                   {
                     "label": "R",
@@ -116238,17 +119249,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "13"
+                    "value": "15"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "22"
+                    "value": "26"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".255"
+                    "value": ".257"
                   }
                 ]
               }
@@ -116336,7 +119347,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "HBP",
@@ -116366,7 +119377,7 @@ export const rawGames = [
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".257"
+                    "value": ".278"
                   },
                   {
                     "label": "SLG",
@@ -116376,7 +119387,7 @@ export const rawGames = [
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".602"
+                    "value": ".623"
                   }
                 ]
               },
@@ -116386,7 +119397,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "27"
+                    "value": "28"
                   },
                   {
                     "label": "R",
@@ -116446,22 +119457,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".444"
+                    "value": ".429"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".531"
+                    "value": ".515"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": "1.185"
+                    "value": "1.143"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": "1.716"
+                    "value": "1.658"
                   }
                 ]
               },
@@ -116506,7 +119517,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "HBP",
@@ -116536,7 +119547,7 @@ export const rawGames = [
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".290"
+                    "value": ".313"
                   },
                   {
                     "label": "SLG",
@@ -116546,7 +119557,7 @@ export const rawGames = [
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".809"
+                    "value": ".831"
                   }
                 ]
               },
@@ -116556,7 +119567,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "27"
+                    "value": "29"
                   },
                   {
                     "label": "R",
@@ -116566,7 +119577,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "2B",
@@ -116616,17 +119627,17 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".333"
+                    "value": ".345"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".357"
+                    "value": ".367"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".630"
+                    "value": ".621"
                   },
                   {
                     "label": "OPS",
@@ -116641,7 +119652,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "R",
@@ -116686,7 +119697,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "SB",
@@ -116701,22 +119712,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".276"
+                    "value": ".258"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".300"
+                    "value": ".281"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".414"
+                    "value": ".387"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".714"
+                    "value": ".668"
                   }
                 ]
               },
@@ -116726,7 +119737,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "25"
+                    "value": "27"
                   },
                   {
                     "label": "R",
@@ -116736,7 +119747,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "2B",
@@ -116771,12 +119782,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "CS",
@@ -116786,22 +119797,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".240"
+                    "value": ".259"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".367"
+                    "value": ".375"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".240"
+                    "value": ".259"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".607"
+                    "value": ".634"
                   }
                 ]
               },
@@ -116811,7 +119822,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "29"
+                    "value": "31"
                   },
                   {
                     "label": "R",
@@ -116821,12 +119832,12 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "3B",
@@ -116856,7 +119867,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "SB",
@@ -116871,22 +119882,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".310"
+                    "value": ".323"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".355"
+                    "value": ".364"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".448"
+                    "value": ".484"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".803"
+                    "value": ".848"
                   }
                 ]
               },
@@ -116896,7 +119907,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "27"
+                    "value": "28"
                   },
                   {
                     "label": "R",
@@ -116956,22 +119967,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".185"
+                    "value": ".179"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".233"
+                    "value": ".226"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".185"
+                    "value": ".179"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".419"
+                    "value": ".404"
                   }
                 ]
               },
@@ -116981,7 +119992,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "24"
+                    "value": "25"
                   },
                   {
                     "label": "R",
@@ -117026,7 +120037,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SB",
@@ -117041,22 +120052,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".208"
+                    "value": ".200"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".296"
+                    "value": ".286"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".250"
+                    "value": ".240"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".546"
+                    "value": ".526"
                   }
                 ]
               }
@@ -117109,7 +120120,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "163"
+                    "value": "165"
                   },
                   {
                     "label": "R",
@@ -117119,12 +120130,12 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "41"
+                    "value": "43"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "3B",
@@ -117144,7 +120155,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "HBP",
@@ -117169,22 +120180,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".252"
+                    "value": ".261"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".322"
+                    "value": ".333"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".485"
+                    "value": ".497"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".807"
+                    "value": ".830"
                   }
                 ]
               },
@@ -117194,7 +120205,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "81"
+                    "value": "90"
                   },
                   {
                     "label": "R",
@@ -117204,7 +120215,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "23"
+                    "value": "24"
                   },
                   {
                     "label": "2B",
@@ -117239,12 +120250,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "14"
+                    "value": "18"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "CS",
@@ -117254,22 +120265,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".284"
+                    "value": ".267"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".351"
+                    "value": ".330"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".444"
+                    "value": ".411"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".796"
+                    "value": ".741"
                   }
                 ]
               },
@@ -117279,7 +120290,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "36"
+                    "value": "41"
                   },
                   {
                     "label": "R",
@@ -117324,7 +120335,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "9"
+                    "value": "12"
                   },
                   {
                     "label": "SB",
@@ -117339,22 +120350,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".139"
+                    "value": ".122"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".261"
+                    "value": ".235"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".167"
+                    "value": ".146"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".428"
+                    "value": ".382"
                   }
                 ]
               },
@@ -117449,7 +120460,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "19"
+                    "value": "22"
                   },
                   {
                     "label": "R",
@@ -117484,7 +120495,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "HBP",
@@ -117494,7 +120505,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "SB",
@@ -117514,7 +120525,7 @@ export const rawGames = [
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".208"
+                    "value": ".214"
                   },
                   {
                     "label": "SLG",
@@ -117524,7 +120535,7 @@ export const rawGames = [
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".208"
+                    "value": ".214"
                   }
                 ]
               }
@@ -117577,7 +120588,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "107"
+                    "value": "114"
                   },
                   {
                     "label": "R",
@@ -117587,12 +120598,12 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "24"
+                    "value": "26"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "3B",
@@ -117612,7 +120623,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "6"
+                    "value": "8"
                   },
                   {
                     "label": "HBP",
@@ -117622,12 +120633,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "21"
+                    "value": "24"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CS",
@@ -117637,22 +120648,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".224"
+                    "value": ".228"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".274"
+                    "value": ".286"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".514"
+                    "value": ".509"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".788"
+                    "value": ".794"
                   }
                 ]
               },
@@ -117662,7 +120673,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "101"
+                    "value": "105"
                   },
                   {
                     "label": "R",
@@ -117672,7 +120683,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "31"
+                    "value": "32"
                   },
                   {
                     "label": "2B",
@@ -117707,7 +120718,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "15"
+                    "value": "16"
                   },
                   {
                     "label": "SB",
@@ -117722,22 +120733,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".307"
+                    "value": ".305"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".388"
+                    "value": ".383"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".426"
+                    "value": ".419"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".814"
+                    "value": ".802"
                   }
                 ]
               },
@@ -118045,7 +121056,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "93"
+                    "value": "104"
                   },
                   {
                     "label": "R",
@@ -118055,12 +121066,12 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "28"
+                    "value": "31"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "3B",
@@ -118080,7 +121091,7 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "10"
+                    "value": "12"
                   },
                   {
                     "label": "HBP",
@@ -118090,12 +121101,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "15"
+                    "value": "19"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CS",
@@ -118105,22 +121116,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".301"
+                    "value": ".298"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".368"
+                    "value": ".370"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".473"
+                    "value": ".462"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".841"
+                    "value": ".831"
                   }
                 ]
               }
@@ -118129,12 +121140,12 @@ export const rawGames = [
         ],
         "insights": [
           "Third time through: .250 AVG / .814 OPS allowed with 2 HR.",
-          "First look baseline: .274 OBP / .788 OPS allowed.",
-          "Day split: 5.79 ERA / .257 OBA.",
+          "First look baseline: .286 OBP / .794 OPS allowed.",
+          "Day split: 5.28 ERA / .258 OBA.",
           "Away split: 6.18 ERA / 6 HR allowed.",
-          "vs. Right: .282 AVG / .916 OPS allowed."
+          "vs. Right: .283 AVG / .910 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -121204,14 +124215,14 @@ export const rawGames = [
       "fullName": "Cristopher Sánchez",
       "pitchHand": "L",
       "wins": 8,
-      "losses": 2,
-      "era": "1.63",
-      "strikeOuts": 113,
-      "inningsPitched": "93.2",
-      "hitsAllowed": 83,
-      "walks": 18,
-      "homeRunsAllowed": 5,
-      "whip": "1.08",
+      "losses": 3,
+      "era": "1.82",
+      "strikeOuts": 116,
+      "inningsPitched": "99.0",
+      "hitsAllowed": 89,
+      "walks": 19,
+      "homeRunsAllowed": 6,
+      "whip": "1.09",
       "gamesStarted": 15,
       "probableSource": "mlb-api",
       "savant": {
@@ -121371,45 +124382,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/cristopher-sanchez-vs-brewers",
-        "answerText": "Cristopher Sánchez with an ERA of 2.03 and 8 strikeouts in 3 appearances versus the Brewers in his career.",
+        "answerText": "Cristopher Sánchez is 0-1 with an ERA of 3.32 and 11 strikeouts in 4 appearances against the Brewers in his career.",
         "pitcherName": "Cristopher Sánchez",
         "pitcherTeam": "Phillies",
         "opponentTeam": "Brewers",
-        "appearances": 2,
-        "gamesStarted": 2,
-        "wins": null,
-        "losses": null,
-        "era": 2.03,
-        "strikeouts": 8,
-        "inningsPitched": "13.1",
-        "hitsAllowed": 11,
-        "earnedRuns": 3,
-        "runsAllowed": 5,
-        "homeRunsAllowed": 1,
-        "walks": 3,
-        "battersFaced": 51,
+        "appearances": 3,
+        "gamesStarted": 3,
+        "wins": 0,
+        "losses": 1,
+        "era": 3.32,
+        "strikeouts": 11,
+        "inningsPitched": "19.0",
+        "hitsAllowed": 19,
+        "earnedRuns": 7,
+        "runsAllowed": 9,
+        "homeRunsAllowed": 3,
+        "walks": 4,
+        "battersFaced": 76,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "2",
-          "ERA": "2.03",
-          "SO": "8",
+          "GS": "3",
+          "ERA": "3.32",
+          "SO": "11",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "13.1",
-          "H": "11",
-          "ER": "3",
-          "R": "5",
-          "HR": "1",
-          "BB": "3",
+          "IP": "19.0",
+          "H": "19",
+          "ER": "7",
+          "R": "9",
+          "HR": "3",
+          "BB": "4",
           "HBP": "0",
           "GF": "0",
           "IBB": "0",
-          "TBF": "51",
+          "TBF": "76",
           "WP": "0",
           "_isTotal": true
         },
@@ -121485,9 +124496,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "21",
             "WP": "0"
+          },
+          {
+            "NAME": "Cristopher Sánchez C. Sánchez",
+            "DATE": "6/14/2026",
+            "TM": "PHI",
+            "OPP": "MIL",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "6.35",
+            "SO": "3",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.2",
+            "H": "8",
+            "ER": "4",
+            "R": "4",
+            "HR": "2",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "25",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:48:07.748Z"
+        "fetchedAt": "2026-06-15T10:35:01.075Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -121546,7 +124581,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.54"
+                    "value": "1.82"
                   },
                   {
                     "label": "W",
@@ -121556,7 +124591,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "SV",
@@ -121571,12 +124606,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -121586,42 +124621,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "93.1"
+                    "value": "99.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "81"
+                    "value": "89"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "21"
+                    "value": "25"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "16"
+                    "value": "20"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "18"
+                    "value": "19"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "113"
+                    "value": "116"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".229"
+                    "value": ".235"
                   }
                 ]
               }
@@ -121674,22 +124709,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "354"
+                    "value": "378"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "21"
+                    "value": "25"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "81"
+                    "value": "89"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "18"
+                    "value": "20"
                   },
                   {
                     "label": "3B",
@@ -121699,17 +124734,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "18"
+                    "value": "22"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "18"
+                    "value": "19"
                   },
                   {
                     "label": "HBP",
@@ -121719,7 +124754,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "113"
+                    "value": "116"
                   },
                   {
                     "label": "SB",
@@ -121729,27 +124764,27 @@ export const rawGames = [
                   {
                     "label": "CS",
                     "name": "caughtStealing",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".229"
+                    "value": ".235"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".267"
+                    "value": ".273"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".314"
+                    "value": ".336"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".581"
+                    "value": ".609"
                   }
                 ]
               }
@@ -121887,7 +124922,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.70"
+                    "value": "3.23"
                   },
                   {
                     "label": "W",
@@ -121897,7 +124932,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SV",
@@ -121912,12 +124947,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "CG",
@@ -121927,42 +124962,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "33.1"
+                    "value": "39.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "39"
+                    "value": "47"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "12"
+                    "value": "16"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "10"
+                    "value": "14"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "42"
+                    "value": "45"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".289"
+                    "value": ".296"
                   }
                 ]
               },
@@ -122653,7 +125688,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.93"
+                    "value": "3.20"
                   },
                   {
                     "label": "W",
@@ -122663,7 +125698,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -122678,12 +125713,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -122693,42 +125728,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "14.0"
+                    "value": "19.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "8"
+                    "value": "16"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "3"
+                    "value": "7"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "3"
+                    "value": "7"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "18"
+                    "value": "21"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".160"
+                    "value": ".216"
                   }
                 ]
               },
@@ -122738,7 +125773,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.57"
+                    "value": "4.26"
                   },
                   {
                     "label": "W",
@@ -122748,7 +125783,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -122763,12 +125798,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -122778,42 +125813,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "7.0"
+                    "value": "12.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "4"
+                    "value": "12"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "2"
+                    "value": "6"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "2"
+                    "value": "6"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "10"
+                    "value": "13"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".160"
+                    "value": ".245"
                   }
                 ]
               },
@@ -123367,6 +126402,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".222"
+                  }
+                ]
+              },
+              {
+                "label": "Milwaukee Brewers",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "6.35"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "5.2"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "8"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "4"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "4"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "3"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".333"
                   }
                 ]
               },
@@ -124014,7 +127134,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.54"
+                    "value": "1.82"
                   },
                   {
                     "label": "W",
@@ -124024,7 +127144,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "SV",
@@ -124039,12 +127159,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -124054,42 +127174,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "93.1"
+                    "value": "99.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "81"
+                    "value": "89"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "21"
+                    "value": "25"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "16"
+                    "value": "20"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "18"
+                    "value": "19"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "113"
+                    "value": "116"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".229"
+                    "value": ".235"
                   }
                 ]
               },
@@ -126311,22 +129431,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "354"
+                    "value": "378"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "21"
+                    "value": "25"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "81"
+                    "value": "89"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "18"
+                    "value": "20"
                   },
                   {
                     "label": "3B",
@@ -126336,17 +129456,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "18"
+                    "value": "22"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "18"
+                    "value": "19"
                   },
                   {
                     "label": "HBP",
@@ -126356,7 +129476,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "113"
+                    "value": "116"
                   },
                   {
                     "label": "SB",
@@ -126366,27 +129486,27 @@ export const rawGames = [
                   {
                     "label": "CS",
                     "name": "caughtStealing",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".229"
+                    "value": ".235"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".267"
+                    "value": ".273"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".314"
+                    "value": ".336"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".581"
+                    "value": ".609"
                   }
                 ]
               }
@@ -126397,10 +129517,10 @@ export const rawGames = [
           "Third time through: .245 AVG / .620 OPS allowed with 1 HR.",
           "First look baseline: .271 OBP / .558 OPS allowed.",
           "Day split: 1.75 ERA / .230 OBA.",
-          "Away split: 2.70 ERA / 3 HR allowed.",
+          "Away split: 3.23 ERA / 5 HR allowed.",
           "vs. Right: .259 AVG / .656 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -126425,15 +129545,15 @@ export const rawGames = [
       "id": 690986,
       "fullName": "Kyle Harrison",
       "pitchHand": "L",
-      "wins": 7,
+      "wins": 8,
       "losses": 1,
-      "era": "2.67",
-      "strikeOuts": 77,
-      "inningsPitched": "60.2",
-      "hitsAllowed": 51,
+      "era": "2.47",
+      "strikeOuts": 80,
+      "inningsPitched": "65.2",
+      "hitsAllowed": 54,
       "walks": 18,
       "homeRunsAllowed": 7,
-      "whip": "1.14",
+      "whip": "1.10",
       "gamesStarted": 13,
       "probableSource": "mlb-api",
       "savant": {
@@ -126593,45 +129713,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/kyle-harrison-vs-phillies",
-        "answerText": "Kyle Harrison is 0-1 with an ERA of 6.48 and 10 strikeouts in 2 appearances against the Phillies in his career.",
+        "answerText": "Kyle Harrison has a 1-1 record with an ERA of 3.77 and 13 strikeouts in 3 appearances versus the Phillies in his career.",
         "pitcherName": "Kyle Harrison",
         "pitcherTeam": "Brewers",
         "opponentTeam": "Phillies",
-        "appearances": 2,
-        "gamesStarted": 2,
-        "wins": 0,
+        "appearances": 3,
+        "gamesStarted": 3,
+        "wins": 1,
         "losses": 1,
-        "era": 6.48,
-        "strikeouts": 10,
-        "inningsPitched": "8.1",
-        "hitsAllowed": 17,
+        "era": 3.77,
+        "strikeouts": 13,
+        "inningsPitched": "14.1",
+        "hitsAllowed": 20,
         "earnedRuns": 6,
         "runsAllowed": 6,
         "homeRunsAllowed": 3,
         "walks": 2,
-        "battersFaced": 43,
+        "battersFaced": 64,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "2",
-          "ERA": "6.48",
-          "SO": "10",
+          "GS": "3",
+          "ERA": "3.77",
+          "SO": "13",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "8.1",
-          "H": "17",
+          "IP": "14.1",
+          "H": "20",
           "ER": "6",
           "R": "6",
           "HR": "3",
           "BB": "2",
-          "HBP": "1",
+          "HBP": "2",
           "GF": "0",
           "IBB": "0",
-          "TBF": "43",
+          "TBF": "64",
           "WP": "0",
           "_isTotal": true
         },
@@ -126683,9 +129803,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "27",
             "WP": "0"
+          },
+          {
+            "NAME": "Kyle Harrison K. Harrison",
+            "DATE": "6/14/2026",
+            "TM": "MIL",
+            "OPP": "PHI",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "0.00",
+            "SO": "3",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "3",
+            "ER": "0",
+            "R": "0",
+            "HR": "0",
+            "BB": "0",
+            "HBP": "1",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "21",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:48:08.648Z"
+        "fetchedAt": "2026-06-15T10:35:01.474Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -126744,12 +129888,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.72"
+                    "value": "2.47"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "L",
@@ -126769,12 +129913,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CG",
@@ -126784,12 +129928,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "59.2"
+                    "value": "65.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "51"
+                    "value": "54"
                   },
                   {
                     "label": "R",
@@ -126814,12 +129958,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "77"
+                    "value": "80"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".227"
+                    "value": ".220"
                   }
                 ]
               }
@@ -126872,7 +130016,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "225"
+                    "value": "245"
                   },
                   {
                     "label": "R",
@@ -126882,7 +130026,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "51"
+                    "value": "54"
                   },
                   {
                     "label": "2B",
@@ -126912,12 +130056,12 @@ export const rawGames = [
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "77"
+                    "value": "80"
                   },
                   {
                     "label": "SB",
@@ -126932,22 +130076,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".227"
+                    "value": ".220"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".293"
+                    "value": ".285"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".369"
+                    "value": ".351"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".662"
+                    "value": ".636"
                   }
                 ]
               }
@@ -127000,12 +130144,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.50"
+                    "value": "1.29"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "L",
@@ -127025,12 +130169,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "CG",
@@ -127040,12 +130184,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "36.0"
+                    "value": "42.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "27"
+                    "value": "30"
                   },
                   {
                     "label": "R",
@@ -127070,12 +130214,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "48"
+                    "value": "51"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".201"
+                    "value": ".195"
                   }
                 ]
               },
@@ -127851,12 +130995,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "10.13"
+                    "value": "5.79"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -127876,12 +131020,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -127891,12 +131035,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "8.0"
+                    "value": "14.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "12"
+                    "value": "15"
                   },
                   {
                     "label": "R",
@@ -127921,12 +131065,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "16"
+                    "value": "19"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".333"
+                    "value": ".268"
                   }
                 ]
               },
@@ -127936,12 +131080,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "30.86"
+                    "value": "8.64"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -127961,12 +131105,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -127976,12 +131120,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "2.1"
+                    "value": "8.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "8"
+                    "value": "11"
                   },
                   {
                     "label": "R",
@@ -128006,12 +131150,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".533"
+                    "value": ".314"
                   }
                 ]
               },
@@ -128654,6 +131798,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "Philadelphia Phillies",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "0.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "6.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "3"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "0"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "0"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "3"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".150"
+                  }
+                ]
+              },
+              {
                 "label": "Pittsburgh Pirates",
                 "stats": [
                   {
@@ -129212,12 +132441,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.72"
+                    "value": "2.47"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "L",
@@ -129237,12 +132466,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "CG",
@@ -129252,12 +132481,12 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "59.2"
+                    "value": "65.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "51"
+                    "value": "54"
                   },
                   {
                     "label": "R",
@@ -129282,12 +132511,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "77"
+                    "value": "80"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".227"
+                    "value": ".220"
                   }
                 ]
               },
@@ -131254,7 +134483,7 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "225"
+                    "value": "245"
                   },
                   {
                     "label": "R",
@@ -131264,7 +134493,7 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "51"
+                    "value": "54"
                   },
                   {
                     "label": "2B",
@@ -131294,12 +134523,12 @@ export const rawGames = [
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "77"
+                    "value": "80"
                   },
                   {
                     "label": "SB",
@@ -131314,22 +134543,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".227"
+                    "value": ".220"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".293"
+                    "value": ".285"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".369"
+                    "value": ".351"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".662"
+                    "value": ".636"
                   }
                 ]
               }
@@ -131343,7 +134572,7 @@ export const rawGames = [
           "Away split: 4.56 ERA / 4 HR allowed.",
           "vs. Left: .254 AVG / .674 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -134394,16 +137623,16 @@ export const rawGames = [
       "id": 608372,
       "fullName": "Tomoyuki Sugano",
       "pitchHand": "R",
-      "wins": 6,
+      "wins": 7,
       "losses": 4,
-      "era": "4.08",
-      "strikeOuts": 39,
-      "inningsPitched": "68.1",
-      "hitsAllowed": 68,
-      "walks": 20,
-      "homeRunsAllowed": 12,
-      "whip": "1.29",
-      "gamesStarted": 13,
+      "era": "4.79",
+      "strikeOuts": 41,
+      "inningsPitched": "73.1",
+      "hitsAllowed": 77,
+      "walks": 22,
+      "homeRunsAllowed": 13,
+      "whip": "1.35",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 608372,
@@ -134562,45 +137791,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/tomoyuki-sugano-vs-athletics",
-        "answerText": "Tomoyuki Sugano has a record of 1-1 with an ERA of 3.18 and 6 strikeouts in 2 appearances versus the Athletics in his career.",
+        "answerText": "Tomoyuki Sugano has a 2-1 record with an ERA of 6.61 and 8 strikeouts in 3 appearances against the Athletics in his career.",
         "pitcherName": "Tomoyuki Sugano",
         "pitcherTeam": "Rockies",
         "opponentTeam": "Athletics",
-        "appearances": 2,
-        "gamesStarted": 2,
-        "wins": null,
-        "losses": null,
-        "era": 3.18,
-        "strikeouts": 6,
-        "inningsPitched": "11.1",
-        "hitsAllowed": 13,
-        "earnedRuns": 4,
-        "runsAllowed": 5,
-        "homeRunsAllowed": 0,
-        "walks": 3,
-        "battersFaced": 50,
+        "appearances": 3,
+        "gamesStarted": 3,
+        "wins": 2,
+        "losses": 1,
+        "era": 6.61,
+        "strikeouts": 8,
+        "inningsPitched": "16.1",
+        "hitsAllowed": 22,
+        "earnedRuns": 12,
+        "runsAllowed": 13,
+        "homeRunsAllowed": 1,
+        "walks": 5,
+        "battersFaced": 76,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "2",
-          "ERA": "3.18",
-          "SO": "6",
+          "GS": "3",
+          "ERA": "6.61",
+          "SO": "8",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "11.1",
-          "H": "13",
-          "ER": "4",
-          "R": "5",
-          "HR": "0",
-          "BB": "3",
+          "IP": "16.1",
+          "H": "22",
+          "ER": "12",
+          "R": "13",
+          "HR": "1",
+          "BB": "5",
           "HBP": "1",
           "GF": "0",
           "IBB": "0",
-          "TBF": "50",
+          "TBF": "76",
           "WP": "0",
           "_isTotal": true
         },
@@ -134652,9 +137881,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "28",
             "WP": "0"
+          },
+          {
+            "NAME": "Tomoyuki Sugano T. Sugano",
+            "DATE": "6/14/2026",
+            "TM": "COL",
+            "OPP": "ATH",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "14.40",
+            "SO": "2",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.0",
+            "H": "9",
+            "ER": "8",
+            "R": "8",
+            "HR": "1",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "26",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:48:10.028Z"
+        "fetchedAt": "2026-06-15T10:35:01.868Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -134713,12 +137966,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.08"
+                    "value": "4.79"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "L",
@@ -134738,12 +137991,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -134753,42 +138006,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "68.1"
+                    "value": "73.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "68"
+                    "value": "77"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "39"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "31"
+                    "value": "39"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "39"
+                    "value": "41"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".262"
+                    "value": ".272"
                   }
                 ]
               }
@@ -134841,22 +138094,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "260"
+                    "value": "283"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "39"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "68"
+                    "value": "77"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "22"
+                    "value": "25"
                   },
                   {
                     "label": "3B",
@@ -134866,17 +138119,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "26"
+                    "value": "34"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "HBP",
@@ -134886,7 +138139,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "39"
+                    "value": "41"
                   },
                   {
                     "label": "SB",
@@ -134901,22 +138154,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".262"
+                    "value": ".272"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".314"
+                    "value": ".323"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".485"
+                    "value": ".498"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".798"
+                    "value": ".821"
                   }
                 ]
               }
@@ -135054,12 +138307,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.62"
+                    "value": "4.89"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "L",
@@ -135079,12 +138332,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "CG",
@@ -135094,42 +138347,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "37.1"
+                    "value": "42.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "34"
+                    "value": "43"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "15"
+                    "value": "23"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "15"
+                    "value": "23"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "10"
+                    "value": "12"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "22"
+                    "value": "24"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".241"
+                    "value": ".262"
                   }
                 ]
               },
@@ -135820,7 +139073,92 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.50"
+                    "value": "7.80"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "3"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "3"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "3"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "15.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "20"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "13"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "13"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "6"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "10"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".323"
+                  }
+                ]
+              },
+              {
+                "label": "Last 7 Days",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "9.90"
                   },
                   {
                     "label": "W",
@@ -135865,22 +139203,22 @@ export const rawGames = [
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "11"
+                    "value": "15"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "5"
+                    "value": "11"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "5"
+                    "value": "11"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "BB",
@@ -135890,97 +139228,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "8"
+                    "value": "5"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".282"
-                  }
-                ]
-              },
-              {
-                "label": "Last 7 Days",
-                "stats": [
-                  {
-                    "label": "ERA",
-                    "name": "ERA",
-                    "value": "5.40"
-                  },
-                  {
-                    "label": "W",
-                    "name": "wins",
-                    "value": "1"
-                  },
-                  {
-                    "label": "L",
-                    "name": "losses",
-                    "value": "0"
-                  },
-                  {
-                    "label": "SV",
-                    "name": "saves",
-                    "value": "0"
-                  },
-                  {
-                    "label": "SVOP",
-                    "name": "saveOpportunities",
-                    "value": "0"
-                  },
-                  {
-                    "label": "GP",
-                    "name": "gamesPlayed",
-                    "value": "1"
-                  },
-                  {
-                    "label": "GS",
-                    "name": "gamesStarted",
-                    "value": "1"
-                  },
-                  {
-                    "label": "CG",
-                    "name": "completeGames",
-                    "value": "0"
-                  },
-                  {
-                    "label": "IP",
-                    "name": "innings",
-                    "value": "5.0"
-                  },
-                  {
-                    "label": "H",
-                    "name": "hits",
-                    "value": "6"
-                  },
-                  {
-                    "label": "R",
-                    "name": "runs",
-                    "value": "3"
-                  },
-                  {
-                    "label": "ER",
-                    "name": "earnedRuns",
-                    "value": "3"
-                  },
-                  {
-                    "label": "HR",
-                    "name": "homeRuns",
-                    "value": "1"
-                  },
-                  {
-                    "label": "BB",
-                    "name": "walks",
-                    "value": "2"
-                  },
-                  {
-                    "label": "K",
-                    "name": "strikeouts",
-                    "value": "3"
-                  },
-                  {
-                    "label": "OBA",
-                    "name": "opponentAvg",
-                    "value": ".316"
+                    "value": ".357"
                   }
                 ]
               },
@@ -136708,6 +139961,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "Oakland Athletics",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "14.40"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "5.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "9"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "8"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "8"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "2"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".391"
+                  }
+                ]
+              },
+              {
                 "label": "Philadelphia Phillies",
                 "stats": [
                   {
@@ -137011,12 +140349,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.08"
+                    "value": "4.79"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "L",
@@ -137036,12 +140374,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -137051,42 +140389,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "68.1"
+                    "value": "73.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "68"
+                    "value": "77"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "39"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "31"
+                    "value": "39"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "39"
+                    "value": "41"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".262"
+                    "value": ".272"
                   }
                 ]
               },
@@ -139393,22 +142731,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "260"
+                    "value": "283"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "39"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "68"
+                    "value": "77"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "22"
+                    "value": "25"
                   },
                   {
                     "label": "3B",
@@ -139418,17 +142756,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "26"
+                    "value": "34"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "HBP",
@@ -139438,7 +142776,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "39"
+                    "value": "41"
                   },
                   {
                     "label": "SB",
@@ -139453,22 +142791,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".262"
+                    "value": ".272"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".314"
+                    "value": ".323"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".485"
+                    "value": ".498"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".798"
+                    "value": ".821"
                   }
                 ]
               }
@@ -139479,10 +142817,10 @@ export const rawGames = [
           "Third time through: .313 AVG / .865 OPS allowed with 1 HR.",
           "First look baseline: .319 OBP / .869 OPS allowed.",
           "Day split: 5.06 ERA / .266 OBA.",
-          "Away split: 3.62 ERA / 8 HR allowed.",
+          "Away split: 4.89 ERA / 9 HR allowed.",
           "vs. Left: .272 AVG / .925 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -139508,15 +142846,15 @@ export const rawGames = [
       "fullName": "Jeffrey Springs",
       "pitchHand": "L",
       "wins": 3,
-      "losses": 6,
-      "era": "4.68",
-      "strikeOuts": 63,
-      "inningsPitched": "75.0",
-      "hitsAllowed": 74,
+      "losses": 7,
+      "era": "5.13",
+      "strikeOuts": 68,
+      "inningsPitched": "79.0",
+      "hitsAllowed": 81,
       "walks": 23,
-      "homeRunsAllowed": 16,
-      "whip": "1.29",
-      "gamesStarted": 14,
+      "homeRunsAllowed": 19,
+      "whip": "1.32",
+      "gamesStarted": 15,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 605488,
@@ -139675,11 +143013,11 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/jeffrey-springs-vs-rockies",
-        "answerText": "Jeffrey Springs: no StatMuse matchup history found vs Rockies.",
+        "answerText": "Jeffrey Springs has allowed 8 runs on 7 hits with 5 strikeouts in 4 innings versus the Rockies in his career. He has been charged with the loss.",
         "pitcherName": "Jeffrey Springs",
         "pitcherTeam": "Athletics",
         "opponentTeam": "Rockies",
-        "appearances": 0,
+        "appearances": 1,
         "gamesStarted": 0,
         "wins": null,
         "losses": null,
@@ -139693,8 +143031,33 @@ export const rawGames = [
         "walks": null,
         "battersFaced": null,
         "totalRow": null,
-        "gameRows": [],
-        "fetchedAt": "2026-06-14T15:48:10.767Z"
+        "gameRows": [
+          {
+            "NAME": "Jeffrey Springs J. Springs",
+            "DATE": "6/14/2026",
+            "TM": "ATH",
+            "OPP": "COL",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "13.50",
+            "SO": "5",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "4.0",
+            "H": "7",
+            "ER": "6",
+            "R": "8",
+            "HR": "3",
+            "BB": "0",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "20",
+            "WP": "0"
+          }
+        ],
+        "fetchedAt": "2026-06-15T10:35:02.261Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -139753,7 +143116,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.68"
+                    "value": "5.13"
                   },
                   {
                     "label": "W",
@@ -139763,7 +143126,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "SV",
@@ -139778,12 +143141,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -139793,27 +143156,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "75.0"
+                    "value": "79.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "74"
+                    "value": "81"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "43"
+                    "value": "51"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "39"
+                    "value": "45"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "16"
+                    "value": "19"
                   },
                   {
                     "label": "BB",
@@ -139823,12 +143186,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "63"
+                    "value": "68"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".253"
+                    "value": ".260"
                   }
                 ]
               }
@@ -139881,22 +143244,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "292"
+                    "value": "312"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "43"
+                    "value": "51"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "74"
+                    "value": "81"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "3B",
@@ -139906,12 +143269,12 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "16"
+                    "value": "19"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "42"
+                    "value": "50"
                   },
                   {
                     "label": "BB",
@@ -139926,7 +143289,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "63"
+                    "value": "68"
                   },
                   {
                     "label": "SB",
@@ -139941,22 +143304,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".253"
+                    "value": ".260"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".309"
+                    "value": ".312"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".483"
+                    "value": ".506"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".792"
+                    "value": ".818"
                   }
                 ]
               }
@@ -140009,7 +143372,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.01"
+                    "value": "5.76"
                   },
                   {
                     "label": "W",
@@ -140019,7 +143382,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "SV",
@@ -140034,12 +143397,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "CG",
@@ -140049,27 +143412,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "41.1"
+                    "value": "45.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "45"
+                    "value": "52"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "27"
+                    "value": "35"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "23"
+                    "value": "29"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "9"
+                    "value": "12"
                   },
                   {
                     "label": "BB",
@@ -140079,12 +143442,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "41"
+                    "value": "46"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".269"
+                    "value": ".278"
                   }
                 ]
               },
@@ -140860,7 +144223,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "9.35"
+                    "value": "10.66"
                   },
                   {
                     "label": "W",
@@ -140870,7 +144233,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -140885,12 +144248,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -140900,27 +144263,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "8.2"
+                    "value": "12.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "15"
+                    "value": "22"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "9"
+                    "value": "17"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "9"
+                    "value": "15"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "BB",
@@ -140930,12 +144293,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "11"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".375"
+                    "value": ".367"
                   }
                 ]
               },
@@ -140945,7 +144308,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "9.00"
+                    "value": "11.00"
                   },
                   {
                     "label": "W",
@@ -140955,7 +144318,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SV",
@@ -140970,12 +144333,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -140985,27 +144348,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "5.0"
+                    "value": "9.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "8"
+                    "value": "15"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "5"
+                    "value": "13"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "5"
+                    "value": "11"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "5"
                   },
                   {
                     "label": "BB",
@@ -141015,12 +144378,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "8"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".348"
+                    "value": ".349"
                   }
                 ]
               },
@@ -141404,6 +144767,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".391"
+                  }
+                ]
+              },
+              {
+                "label": "Colorado Rockies",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "13.50"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "4.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "7"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "8"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "6"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "3"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "0"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "5"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".350"
                   }
                 ]
               },
@@ -142391,7 +145839,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.68"
+                    "value": "5.13"
                   },
                   {
                     "label": "W",
@@ -142401,7 +145849,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "SV",
@@ -142416,12 +145864,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "CG",
@@ -142431,27 +145879,27 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "75.0"
+                    "value": "79.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "74"
+                    "value": "81"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "43"
+                    "value": "51"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "39"
+                    "value": "45"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "16"
+                    "value": "19"
                   },
                   {
                     "label": "BB",
@@ -142461,12 +145909,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "63"
+                    "value": "68"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".253"
+                    "value": ".260"
                   }
                 ]
               },
@@ -144603,22 +148051,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "292"
+                    "value": "312"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "43"
+                    "value": "51"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "74"
+                    "value": "81"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "3B",
@@ -144628,12 +148076,12 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "16"
+                    "value": "19"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "42"
+                    "value": "50"
                   },
                   {
                     "label": "BB",
@@ -144648,7 +148096,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "63"
+                    "value": "68"
                   },
                   {
                     "label": "SB",
@@ -144663,22 +148111,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".253"
+                    "value": ".260"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".309"
+                    "value": ".312"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".483"
+                    "value": ".506"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".792"
+                    "value": ".818"
                   }
                 ]
               }
@@ -144692,7 +148140,7 @@ export const rawGames = [
           "Away split: 4.28 ERA / 7 HR allowed.",
           "vs. Right: .256 AVG / .803 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -147728,14 +151176,14 @@ export const rawGames = [
       "fullName": "Colin Rea",
       "pitchHand": "R",
       "wins": 5,
-      "losses": 4,
-      "era": "5.19",
-      "strikeOuts": 54,
-      "inningsPitched": "69.1",
-      "hitsAllowed": 74,
-      "walks": 25,
-      "homeRunsAllowed": 11,
-      "whip": "1.43",
+      "losses": 5,
+      "era": "5.35",
+      "strikeOuts": 56,
+      "inningsPitched": "74.0",
+      "hitsAllowed": 80,
+      "walks": 28,
+      "homeRunsAllowed": 12,
+      "whip": "1.46",
       "gamesStarted": 11,
       "probableSource": "rotowire-primary",
       "savant": {
@@ -147891,7 +151339,223 @@ export const rawGames = [
       ],
       "opponentHistoryThisSeason": [],
       "strikeoutMarket": null,
-      "statmuseVsOpponent": null,
+      "statmuseVsOpponent": {
+        "source": "StatMuse",
+        "sourceUrl": "https://www.statmuse.com/mlb/ask/colin-rea-vs-giants",
+        "answerText": "Colin Rea has a record of 1-5 with an ERA of 8.66 and 22 strikeouts in 7 appearances versus the Giants in his career.",
+        "pitcherName": "Colin Rea",
+        "pitcherTeam": "Cubs",
+        "opponentTeam": "Giants",
+        "appearances": 6,
+        "gamesStarted": 6,
+        "wins": null,
+        "losses": null,
+        "era": 8.66,
+        "strikeouts": 22,
+        "inningsPitched": "35.1",
+        "hitsAllowed": 46,
+        "earnedRuns": 34,
+        "runsAllowed": 36,
+        "homeRunsAllowed": 10,
+        "walks": 11,
+        "battersFaced": 163,
+        "totalRow": {
+          "NAME": "Total",
+          "DATE": "",
+          "TM": "",
+          "OPP": "",
+          "DEC": "",
+          "GS": "6",
+          "ERA": "8.66",
+          "SO": "22",
+          "CG": "0",
+          "SHO": "0",
+          "SV": "0",
+          "IP": "35.1",
+          "H": "46",
+          "ER": "34",
+          "R": "36",
+          "HR": "10",
+          "BB": "11",
+          "HBP": "2",
+          "GF": "0",
+          "IBB": "0",
+          "TBF": "163",
+          "WP": "0",
+          "_isTotal": true
+        },
+        "gameRows": [
+          {
+            "NAME": "Colin Rea C. Rea",
+            "DATE": "5/17/2016",
+            "TM": "SDP",
+            "OPP": "SFG",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "5.40",
+            "SO": "3",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.0",
+            "H": "4",
+            "ER": "3",
+            "R": "3",
+            "HR": "1",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "21",
+            "WP": "0"
+          },
+          {
+            "NAME": "Colin Rea C. Rea",
+            "DATE": "5/6/2023",
+            "TM": "MIL",
+            "OPP": "SFG",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "4.50",
+            "SO": "4",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "4",
+            "ER": "3",
+            "R": "3",
+            "HR": "1",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "23",
+            "WP": "0"
+          },
+          {
+            "NAME": "Colin Rea C. Rea",
+            "DATE": "5/28/2023",
+            "TM": "MIL",
+            "OPP": "SFG",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "6.00",
+            "SO": "6",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "6.0",
+            "H": "5",
+            "ER": "4",
+            "R": "4",
+            "HR": "2",
+            "BB": "0",
+            "HBP": "1",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "24",
+            "WP": "0"
+          },
+          {
+            "NAME": "Colin Rea C. Rea",
+            "DATE": "9/11/2024",
+            "TM": "MIL",
+            "OPP": "SFG",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "22.50",
+            "SO": "1",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "4.0",
+            "H": "11",
+            "ER": "10",
+            "R": "10",
+            "HR": "3",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "23",
+            "WP": "0"
+          },
+          {
+            "NAME": "Colin Rea C. Rea",
+            "DATE": "5/6/2025",
+            "TM": "CHC",
+            "OPP": "SFG",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "7.20",
+            "SO": "4",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "5.0",
+            "H": "8",
+            "ER": "4",
+            "R": "5",
+            "HR": "1",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "24",
+            "WP": "0"
+          },
+          {
+            "NAME": "Colin Rea C. Rea",
+            "DATE": "8/27/2025",
+            "TM": "CHC",
+            "OPP": "SFG",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "11.57",
+            "SO": "2",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "4.2",
+            "H": "8",
+            "ER": "6",
+            "R": "7",
+            "HR": "1",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "24",
+            "WP": "0"
+          },
+          {
+            "NAME": "Colin Rea C. Rea",
+            "DATE": "6/14/2026",
+            "TM": "CHC",
+            "OPP": "SFG",
+            "DEC": "L",
+            "GS": "0",
+            "ERA": "7.71",
+            "SO": "2",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "4.2",
+            "H": "6",
+            "ER": "4",
+            "R": "4",
+            "HR": "1",
+            "BB": "3",
+            "HBP": "1",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "24",
+            "WP": "0"
+          }
+        ],
+        "fetchedAt": "2026-06-15T10:35:02.656Z"
+      },
       "espnSplits": {
         "source": "ESPN player splits",
         "sourceUrl": "https://www.espn.com/mlb/player/splits/_/id/33950/colin-rea",
@@ -147949,7 +151613,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.19"
+                    "value": "5.35"
                   },
                   {
                     "label": "W",
@@ -147959,7 +151623,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "SV",
@@ -147974,7 +151638,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
@@ -147989,42 +151653,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "69.1"
+                    "value": "74.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "74"
+                    "value": "80"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "41"
+                    "value": "45"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "40"
+                    "value": "44"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "25"
+                    "value": "28"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "54"
+                    "value": "56"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".271"
+                    "value": ".274"
                   }
                 ]
               }
@@ -148077,22 +151741,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "273"
+                    "value": "292"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "41"
+                    "value": "45"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "74"
+                    "value": "80"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "11"
+                    "value": "13"
                   },
                   {
                     "label": "3B",
@@ -148102,27 +151766,27 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "35"
+                    "value": "38"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "25"
+                    "value": "28"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "54"
+                    "value": "56"
                   },
                   {
                     "label": "SB",
@@ -148137,22 +151801,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".271"
+                    "value": ".274"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".340"
+                    "value": ".347"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".440"
+                    "value": ".449"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".779"
+                    "value": ".795"
                   }
                 ]
               }
@@ -148290,7 +151954,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "7.12"
+                    "value": "7.19"
                   },
                   {
                     "label": "W",
@@ -148300,7 +151964,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "SV",
@@ -148315,7 +151979,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "GS",
@@ -148330,42 +151994,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "36.2"
+                    "value": "41.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "42"
+                    "value": "48"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "29"
+                    "value": "33"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "29"
+                    "value": "33"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "15"
+                    "value": "18"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "27"
+                    "value": "29"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".290"
+                    "value": ".293"
                   }
                 ]
               },
@@ -149056,7 +152720,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "8.10"
+                    "value": "7.98"
                   },
                   {
                     "label": "W",
@@ -149066,7 +152730,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SV",
@@ -149081,7 +152745,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
@@ -149096,37 +152760,37 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "10.0"
+                    "value": "14.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "13"
+                    "value": "19"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "9"
+                    "value": "13"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "9"
+                    "value": "13"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "5"
+                    "value": "8"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "5"
+                    "value": "7"
                   },
                   {
                     "label": "OBA",
@@ -149141,7 +152805,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "13.50"
+                    "value": "10.61"
                   },
                   {
                     "label": "W",
@@ -149151,7 +152815,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SV",
@@ -149166,7 +152830,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
@@ -149181,42 +152845,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "4.2"
+                    "value": "9.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "9"
+                    "value": "15"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "7"
+                    "value": "11"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "7"
+                    "value": "11"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "3"
+                    "value": "6"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "2"
+                    "value": "4"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".409"
+                    "value": ".366"
                   }
                 ]
               },
@@ -150454,6 +154118,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "San Francisco Giants",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "7.71"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "0"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "4.2"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "6"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "4"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "4"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "3"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "2"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".316"
+                  }
+                ]
+              },
+              {
                 "label": "Tampa Bay Rays",
                 "stats": [
                   {
@@ -150587,7 +154336,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.19"
+                    "value": "5.35"
                   },
                   {
                     "label": "W",
@@ -150597,7 +154346,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "SV",
@@ -150612,7 +154361,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "GS",
@@ -150627,42 +154376,127 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "69.1"
+                    "value": "74.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "74"
+                    "value": "80"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "41"
+                    "value": "45"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "40"
+                    "value": "44"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "25"
+                    "value": "28"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "54"
+                    "value": "56"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".271"
+                    "value": ".274"
+                  }
+                ]
+              },
+              {
+                "label": "AT&T Park",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "7.71"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "0"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "4.2"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "6"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "4"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "4"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "3"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "2"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".316"
                   }
                 ]
               },
@@ -153139,22 +156973,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "47"
+                    "value": "66"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "6"
+                    "value": "10"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "12"
+                    "value": "18"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "3B",
@@ -153164,27 +156998,27 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "5"
+                    "value": "8"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "1"
+                    "value": "4"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "13"
+                    "value": "15"
                   },
                   {
                     "label": "SB",
@@ -153199,22 +157033,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".255"
+                    "value": ".273"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".271"
+                    "value": ".324"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".404"
+                    "value": ".455"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".675"
+                    "value": ".778"
                   }
                 ]
               }
@@ -153225,10 +157059,10 @@ export const rawGames = [
           "Third time through: .246 AVG / .652 OPS allowed with 1 HR.",
           "First look baseline: .346 OBP / .804 OPS allowed.",
           "Day split: 6.08 ERA / .292 OBA.",
-          "Away split: 7.12 ERA / 7 HR allowed.",
+          "Away split: 7.19 ERA / 8 HR allowed.",
           "vs. Left: .305 AVG / .817 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -153253,16 +157087,16 @@ export const rawGames = [
       "id": 657277,
       "fullName": "Logan Webb",
       "pitchHand": "R",
-      "wins": 3,
+      "wins": 4,
       "losses": 4,
-      "era": "3.88",
-      "strikeOuts": 58,
-      "inningsPitched": "67.1",
-      "hitsAllowed": 61,
+      "era": "3.46",
+      "strikeOuts": 65,
+      "inningsPitched": "75.1",
+      "hitsAllowed": 68,
       "walks": 19,
       "homeRunsAllowed": 4,
-      "whip": "1.19",
-      "gamesStarted": 11,
+      "whip": "1.15",
+      "gamesStarted": 12,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 657277,
@@ -153421,46 +157255,46 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/logan-webb-vs-cubs",
-        "answerText": "Logan Webb has a 2-1 record with an ERA of 4.01 and 27 strikeouts in 5 appearances versus the Cubs in his career.",
+        "answerText": "Logan Webb is 3-1 with an ERA of 3.24 and 34 strikeouts in 6 appearances versus the Cubs in his career.",
         "pitcherName": "Logan Webb",
         "pitcherTeam": "Giants",
         "opponentTeam": "Cubs",
-        "appearances": 5,
-        "gamesStarted": 5,
-        "wins": 2,
+        "appearances": 6,
+        "gamesStarted": 6,
+        "wins": 3,
         "losses": 1,
-        "era": 4.01,
-        "strikeouts": 27,
-        "inningsPitched": "33.2",
-        "hitsAllowed": 31,
+        "era": 3.24,
+        "strikeouts": 34,
+        "inningsPitched": "41.2",
+        "hitsAllowed": 38,
         "earnedRuns": 15,
-        "runsAllowed": 15,
+        "runsAllowed": 16,
         "homeRunsAllowed": 5,
         "walks": 4,
-        "battersFaced": 133,
+        "battersFaced": 163,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "5",
-          "ERA": "4.01",
-          "SO": "27",
+          "GS": "6",
+          "ERA": "3.24",
+          "SO": "34",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "33.2",
-          "H": "31",
+          "IP": "41.2",
+          "H": "38",
           "ER": "15",
-          "R": "15",
+          "R": "16",
           "HR": "5",
           "BB": "4",
           "HBP": "0",
           "GF": "0",
           "IBB": "0",
-          "TBF": "133",
-          "WP": "0",
+          "TBF": "163",
+          "WP": "1",
           "_isTotal": true
         },
         "gameRows": [
@@ -153607,9 +157441,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "25",
             "WP": "0"
+          },
+          {
+            "NAME": "Logan Webb L. Webb",
+            "DATE": "6/14/2026",
+            "TM": "SFG",
+            "OPP": "CHC",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "0.00",
+            "SO": "7",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "8.0",
+            "H": "7",
+            "ER": "0",
+            "R": "1",
+            "HR": "0",
+            "BB": "0",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "30",
+            "WP": "1"
           }
         ],
-        "fetchedAt": "2026-06-14T15:48:12.749Z"
+        "fetchedAt": "2026-06-15T10:35:03.498Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -153668,12 +157526,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.88"
+                    "value": "3.46"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "L",
@@ -153693,12 +157551,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "CG",
@@ -153708,17 +157566,17 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "67.1"
+                    "value": "75.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "68"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "32"
                   },
                   {
                     "label": "ER",
@@ -153738,12 +157596,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "58"
+                    "value": "65"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".240"
+                    "value": ".239"
                   }
                 ]
               }
@@ -153796,22 +157654,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "254"
+                    "value": "284"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "32"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "68"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "3B",
@@ -153841,12 +157699,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "58"
+                    "value": "65"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "CS",
@@ -153856,22 +157714,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".240"
+                    "value": ".239"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".303"
+                    "value": ".296"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".343"
+                    "value": ".335"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".646"
+                    "value": ".631"
                   }
                 ]
               }
@@ -153924,12 +157782,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.94"
+                    "value": "3.92"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -153949,12 +157807,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "CG",
@@ -153964,17 +157822,17 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "31.0"
+                    "value": "39.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "35"
+                    "value": "42"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "18"
+                    "value": "19"
                   },
                   {
                     "label": "ER",
@@ -153994,12 +157852,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "26"
+                    "value": "33"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".287"
+                    "value": ".276"
                   }
                 ]
               },
@@ -154775,12 +158633,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "0.60"
+                    "value": "0.39"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "L",
@@ -154800,12 +158658,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -154815,17 +158673,17 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "15.0"
+                    "value": "23.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "6"
+                    "value": "13"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "ER",
@@ -154845,12 +158703,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "11"
+                    "value": "18"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".122"
+                    "value": ".165"
                   }
                 ]
               },
@@ -154860,12 +158718,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "1.13"
+                    "value": "0.56"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -154885,12 +158743,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -154900,17 +158758,17 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "8.0"
+                    "value": "16.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "5"
+                    "value": "12"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "ER",
@@ -154930,12 +158788,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "7"
+                    "value": "14"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".185"
+                    "value": ".211"
                   }
                 ]
               },
@@ -155234,6 +159092,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".217"
+                  }
+                ]
+              },
+              {
+                "label": "Chicago Cubs",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "0.00"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "8.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "7"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "1"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "0"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "7"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".233"
                   }
                 ]
               },
@@ -155966,12 +159909,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.88"
+                    "value": "3.46"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "L",
@@ -155991,12 +159934,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "CG",
@@ -156006,17 +159949,17 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "67.1"
+                    "value": "75.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "68"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "32"
                   },
                   {
                     "label": "ER",
@@ -156036,12 +159979,12 @@ export const rawGames = [
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "58"
+                    "value": "65"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".240"
+                    "value": ".239"
                   }
                 ]
               },
@@ -158263,22 +162206,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "254"
+                    "value": "284"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "31"
+                    "value": "32"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "61"
+                    "value": "68"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "label": "3B",
@@ -158308,12 +162251,12 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "58"
+                    "value": "65"
                   },
                   {
                     "label": "SB",
                     "name": "stolenBases",
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "label": "CS",
@@ -158323,22 +162266,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".240"
+                    "value": ".239"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".303"
+                    "value": ".296"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".343"
+                    "value": ".335"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".646"
+                    "value": ".631"
                   }
                 ]
               }
@@ -158352,7 +162295,7 @@ export const rawGames = [
           "Away split: 2.97 ERA / 3 HR allowed.",
           "vs. Left: .272 AVG / .707 OPS allowed."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -161877,13 +165820,13 @@ export const rawGames = [
       "pitchHand": "L",
       "wins": 3,
       "losses": 0,
-      "era": "4.89",
-      "strikeOuts": 38,
-      "inningsPitched": "35.0",
-      "hitsAllowed": 28,
-      "walks": 16,
-      "homeRunsAllowed": 5,
-      "whip": "1.26",
+      "era": "4.93",
+      "strikeOuts": 41,
+      "inningsPitched": "38.1",
+      "hitsAllowed": 30,
+      "walks": 19,
+      "homeRunsAllowed": 6,
+      "whip": "1.28",
       "gamesStarted": 2,
       "probableSource": "rotowire-primary",
       "savant": {
@@ -161935,7 +165878,127 @@ export const rawGames = [
       ],
       "opponentHistoryThisSeason": [],
       "strikeoutMarket": null,
-      "statmuseVsOpponent": null,
+      "statmuseVsOpponent": {
+        "source": "StatMuse",
+        "sourceUrl": "https://www.statmuse.com/mlb/ask/ian-seymour-vs-angels",
+        "answerText": "Ian Seymour with an ERA of 4.05 and 7 strikeouts in 3 appearances against the Angels in his career.",
+        "pitcherName": "Ian Seymour",
+        "pitcherTeam": "Rays",
+        "opponentTeam": "Angels",
+        "appearances": 3,
+        "gamesStarted": 0,
+        "wins": null,
+        "losses": null,
+        "era": 4.05,
+        "strikeouts": 7,
+        "inningsPitched": "6.2",
+        "hitsAllowed": 2,
+        "earnedRuns": 3,
+        "runsAllowed": 3,
+        "homeRunsAllowed": 1,
+        "walks": 5,
+        "battersFaced": 28,
+        "totalRow": {
+          "NAME": "Total",
+          "DATE": "",
+          "TM": "",
+          "OPP": "",
+          "DEC": "",
+          "GS": "0",
+          "ERA": "4.05",
+          "SO": "7",
+          "CG": "0",
+          "SHO": "0",
+          "SV": "0",
+          "IP": "6.2",
+          "H": "2",
+          "ER": "3",
+          "R": "3",
+          "HR": "1",
+          "BB": "5",
+          "HBP": "1",
+          "GF": "1",
+          "IBB": "0",
+          "TBF": "28",
+          "WP": "1",
+          "_isTotal": true
+        },
+        "gameRows": [
+          {
+            "NAME": "Ian Seymour I. Seymour",
+            "DATE": "8/4/2025",
+            "TM": "TBR",
+            "OPP": "LAA",
+            "DEC": "",
+            "GS": "0",
+            "ERA": "0.00",
+            "SO": "3",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "2.1",
+            "H": "0",
+            "ER": "0",
+            "R": "0",
+            "HR": "0",
+            "BB": "0",
+            "HBP": "0",
+            "GF": "1",
+            "IBB": "0",
+            "TBF": "7",
+            "WP": "0"
+          },
+          {
+            "NAME": "Ian Seymour I. Seymour",
+            "DATE": "5/30/2026",
+            "TM": "TBR",
+            "OPP": "LAA",
+            "DEC": "",
+            "GS": "0",
+            "ERA": "9.00",
+            "SO": "1",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "1.0",
+            "H": "0",
+            "ER": "1",
+            "R": "1",
+            "HR": "0",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "5",
+            "WP": "1"
+          },
+          {
+            "NAME": "Ian Seymour I. Seymour",
+            "DATE": "6/14/2026",
+            "TM": "TBR",
+            "OPP": "LAA",
+            "DEC": "",
+            "GS": "0",
+            "ERA": "5.40",
+            "SO": "3",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "3.1",
+            "H": "2",
+            "ER": "2",
+            "R": "2",
+            "HR": "1",
+            "BB": "3",
+            "HBP": "1",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "16",
+            "WP": "0"
+          }
+        ],
+        "fetchedAt": "2026-06-15T10:35:03.895Z"
+      },
       "espnSplits": {
         "source": "ESPN player splits",
         "sourceUrl": "https://www.espn.com/mlb/player/splits/_/id/4669425/ian-seymour",
@@ -161993,7 +166056,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.89"
+                    "value": "4.93"
                   },
                   {
                     "label": "W",
@@ -162018,7 +166081,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "27"
+                    "value": "28"
                   },
                   {
                     "label": "GS",
@@ -162033,42 +166096,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "35.0"
+                    "value": "38.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "28"
+                    "value": "30"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "21"
+                    "value": "23"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "19"
+                    "value": "21"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "16"
+                    "value": "19"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "38"
+                    "value": "41"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".222"
+                    "value": ".217"
                   }
                 ]
               }
@@ -162121,17 +166184,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "126"
+                    "value": "138"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "21"
+                    "value": "23"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "28"
+                    "value": "30"
                   },
                   {
                     "label": "2B",
@@ -162146,27 +166209,27 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "17"
+                    "value": "19"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "16"
+                    "value": "19"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "38"
+                    "value": "41"
                   },
                   {
                     "label": "SB",
@@ -162181,12 +166244,12 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".222"
+                    "value": ".217"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".308"
+                    "value": ".315"
                   },
                   {
                     "label": "SLG",
@@ -162196,7 +166259,7 @@ export const rawGames = [
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".721"
+                    "value": ".728"
                   }
                 ]
               }
@@ -162334,7 +166397,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "7.90"
+                    "value": "7.41"
                   },
                   {
                     "label": "W",
@@ -162359,7 +166422,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "label": "GS",
@@ -162374,42 +166437,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "13.2"
+                    "value": "17.0"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "18"
+                    "value": "20"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "14"
+                    "value": "16"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "12"
+                    "value": "14"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "8"
+                    "value": "11"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "18"
+                    "value": "21"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".327"
+                    "value": ".299"
                   }
                 ]
               },
@@ -163100,7 +167163,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.00"
+                    "value": "5.79"
                   },
                   {
                     "label": "W",
@@ -163125,7 +167188,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
@@ -163140,42 +167203,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "6.0"
+                    "value": "9.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "9"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".158"
+                    "value": ".161"
                   }
                 ]
               },
@@ -163185,7 +167248,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "2.25"
+                    "value": "3.68"
                   },
                   {
                     "label": "W",
@@ -163210,7 +167273,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
@@ -163225,42 +167288,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "4.0"
+                    "value": "7.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "1"
+                    "value": "4"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "5"
+                    "value": "8"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".077"
+                    "value": ".120"
                   }
                 ]
               },
@@ -164078,7 +168141,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "9.00"
+                    "value": "6.23"
                   },
                   {
                     "label": "W",
@@ -164103,7 +168166,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
@@ -164118,42 +168181,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "1.0"
+                    "value": "4.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "0"
+                    "value": "2"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "5"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "1"
+                    "value": "4"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".000"
+                    "value": ".133"
                   }
                 ]
               },
@@ -164801,7 +168864,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.89"
+                    "value": "4.93"
                   },
                   {
                     "label": "W",
@@ -164826,7 +168889,7 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "27"
+                    "value": "28"
                   },
                   {
                     "label": "GS",
@@ -164841,42 +168904,127 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "35.0"
+                    "value": "38.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "28"
+                    "value": "30"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "21"
+                    "value": "23"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "19"
+                    "value": "21"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "16"
+                    "value": "19"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "38"
+                    "value": "41"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".222"
+                    "value": ".217"
+                  }
+                ]
+              },
+              {
+                "label": "Angel Stadium",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "5.40"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "0"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "3.1"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "2"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "2"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "1"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "3"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "3"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".167"
                   }
                 ]
               },
@@ -167353,17 +171501,17 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "105"
+                    "value": "117"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "19"
+                    "value": "21"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "25"
+                    "value": "27"
                   },
                   {
                     "label": "2B",
@@ -167378,27 +171526,27 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "15"
+                    "value": "18"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "31"
+                    "value": "34"
                   },
                   {
                     "label": "SB",
@@ -167413,12 +171561,12 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".238"
+                    "value": ".231"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".331"
+                    "value": ".336"
                   },
                   {
                     "label": "SLG",
@@ -167428,7 +171576,7 @@ export const rawGames = [
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".740"
+                    "value": ".746"
                   }
                 ]
               }
@@ -167439,10 +171587,11 @@ export const rawGames = [
           "Third time through: .000 AVG / .000 OPS allowed with 0 HR.",
           "First look baseline: .326 OBP / .767 OPS allowed.",
           "Day split: 5.54 ERA / .280 OBA.",
-          "Away split: 7.90 ERA / 2 HR allowed.",
-          "vs. Left: .228 AVG / .748 OPS allowed."
+          "Away split: 7.41 ERA / 3 HR allowed.",
+          "vs. Left: .228 AVG / .748 OPS allowed.",
+          "Angel Stadium: 5.40 ERA / .167 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -167469,14 +171618,14 @@ export const rawGames = [
       "pitchHand": "R",
       "wins": 2,
       "losses": 2,
-      "era": "8.10",
-      "strikeOuts": 23,
-      "inningsPitched": "23.1",
-      "hitsAllowed": 29,
-      "walks": 13,
+      "era": "8.06",
+      "strikeOuts": 24,
+      "inningsPitched": "25.2",
+      "hitsAllowed": 32,
+      "walks": 15,
       "homeRunsAllowed": 4,
-      "whip": "1.80",
-      "gamesStarted": 5,
+      "whip": "1.83",
+      "gamesStarted": 6,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 680570,
@@ -167609,45 +171758,45 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/grayson-rodriguez-vs-rays",
-        "answerText": "Grayson Rodriguez is 3-0 with an ERA of 2.16 and 23 strikeouts in 4 appearances against the Rays in his career.",
+        "answerText": "Grayson Rodriguez has a 3-0 record with an ERA of 2.63 and 24 strikeouts in 5 appearances versus the Rays in his career.",
         "pitcherName": "Grayson Rodriguez",
         "pitcherTeam": "Angels",
         "opponentTeam": "Rays",
-        "appearances": 4,
-        "gamesStarted": 4,
+        "appearances": 5,
+        "gamesStarted": 5,
         "wins": 3,
         "losses": 0,
-        "era": 2.16,
-        "strikeouts": 23,
-        "inningsPitched": "25.0",
-        "hitsAllowed": 17,
-        "earnedRuns": 6,
-        "runsAllowed": 6,
+        "era": 2.63,
+        "strikeouts": 24,
+        "inningsPitched": "27.1",
+        "hitsAllowed": 20,
+        "earnedRuns": 8,
+        "runsAllowed": 8,
         "homeRunsAllowed": 2,
-        "walks": 5,
-        "battersFaced": 93,
+        "walks": 7,
+        "battersFaced": 105,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "4",
-          "ERA": "2.16",
-          "SO": "23",
+          "GS": "5",
+          "ERA": "2.63",
+          "SO": "24",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "25.0",
-          "H": "17",
-          "ER": "6",
-          "R": "6",
+          "IP": "27.1",
+          "H": "20",
+          "ER": "8",
+          "R": "8",
           "HR": "2",
-          "BB": "5",
-          "HBP": "0",
+          "BB": "7",
+          "HBP": "1",
           "GF": "0",
           "IBB": "0",
-          "TBF": "93",
+          "TBF": "105",
           "WP": "0",
           "_isTotal": true
         },
@@ -167747,9 +171896,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "20",
             "WP": "0"
+          },
+          {
+            "NAME": "Grayson Rodriguez G. Rodriguez",
+            "DATE": "6/14/2026",
+            "TM": "LAA",
+            "OPP": "TBR",
+            "DEC": "",
+            "GS": "1",
+            "ERA": "7.71",
+            "SO": "1",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "2.1",
+            "H": "3",
+            "ER": "2",
+            "R": "2",
+            "HR": "0",
+            "BB": "2",
+            "HBP": "1",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "12",
+            "WP": "0"
           }
         ],
-        "fetchedAt": "2026-06-14T15:48:14.372Z"
+        "fetchedAt": "2026-06-15T10:35:04.283Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -167808,7 +171981,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "8.10"
+                    "value": "8.06"
                   },
                   {
                     "label": "W",
@@ -167833,12 +172006,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "CG",
@@ -167848,22 +172021,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "23.1"
+                    "value": "25.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "29"
+                    "value": "32"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "23"
+                    "value": "25"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "21"
+                    "value": "23"
                   },
                   {
                     "label": "HR",
@@ -167873,17 +172046,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "13"
+                    "value": "15"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "23"
+                    "value": "24"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".302"
+                    "value": ".305"
                   }
                 ]
               }
@@ -167936,22 +172109,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "96"
+                    "value": "105"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "23"
+                    "value": "25"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "29"
+                    "value": "32"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "3B",
@@ -167971,17 +172144,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "13"
+                    "value": "15"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "23"
+                    "value": "24"
                   },
                   {
                     "label": "SB",
@@ -167996,22 +172169,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".302"
+                    "value": ".305"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".378"
+                    "value": ".390"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".542"
+                    "value": ".533"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".920"
+                    "value": ".924"
                   }
                 ]
               }
@@ -168064,7 +172237,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "9.82"
+                    "value": "9.58"
                   },
                   {
                     "label": "W",
@@ -168089,12 +172262,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "CG",
@@ -168104,22 +172277,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "18.1"
+                    "value": "20.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "27"
+                    "value": "30"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "22"
+                    "value": "24"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "20"
+                    "value": "22"
                   },
                   {
                     "label": "HR",
@@ -168129,17 +172302,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "11"
+                    "value": "13"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "18"
+                    "value": "19"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".342"
+                    "value": ".341"
                   }
                 ]
               },
@@ -168745,7 +172918,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "9.00"
+                    "value": "8.74"
                   },
                   {
                     "label": "W",
@@ -168770,12 +172943,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -168785,22 +172958,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "9.0"
+                    "value": "11.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "13"
+                    "value": "16"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "11"
+                    "value": "13"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "9"
+                    "value": "11"
                   },
                   {
                     "label": "HR",
@@ -168810,17 +172983,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "5"
+                    "value": "7"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".325"
+                    "value": ".327"
                   }
                 ]
               },
@@ -168830,7 +173003,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.38"
+                    "value": "4.70"
                   },
                   {
                     "label": "W",
@@ -168855,12 +173028,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -168870,22 +173043,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "5.1"
+                    "value": "7.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "6"
+                    "value": "9"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "2"
+                    "value": "4"
                   },
                   {
                     "label": "HR",
@@ -168895,17 +173068,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "2"
+                    "value": "4"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".261"
+                    "value": ".281"
                   }
                 ]
               },
@@ -169463,6 +173636,91 @@ export const rawGames = [
                 ]
               },
               {
+                "label": "Tampa Bay Rays",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "7.71"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "2.1"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "3"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "2"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "0"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "1"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".333"
+                  }
+                ]
+              },
+              {
                 "label": "Texas Rangers",
                 "stats": [
                   {
@@ -169596,7 +173854,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "8.10"
+                    "value": "8.06"
                   },
                   {
                     "label": "W",
@@ -169621,12 +173879,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "CG",
@@ -169636,22 +173894,22 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "23.1"
+                    "value": "25.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "29"
+                    "value": "32"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "23"
+                    "value": "25"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "21"
+                    "value": "23"
                   },
                   {
                     "label": "HR",
@@ -169661,17 +173919,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "13"
+                    "value": "15"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "23"
+                    "value": "24"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".302"
+                    "value": ".305"
                   }
                 ]
               },
@@ -171468,22 +175726,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "96"
+                    "value": "105"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "23"
+                    "value": "25"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "29"
+                    "value": "32"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "3B",
@@ -171503,17 +175761,17 @@ export const rawGames = [
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "13"
+                    "value": "15"
                   },
                   {
                     "label": "HBP",
                     "name": "hitByPitch",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "23"
+                    "value": "24"
                   },
                   {
                     "label": "SB",
@@ -171528,22 +175786,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".302"
+                    "value": ".305"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".378"
+                    "value": ".390"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".542"
+                    "value": ".533"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".920"
+                    "value": ".924"
                   }
                 ]
               }
@@ -171558,7 +175816,7 @@ export const rawGames = [
           "vs. Left: .333 AVG / 1.032 OPS allowed.",
           "Angel Stadium: 9.82 ERA / .342 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -175059,16 +179317,16 @@ export const rawGames = [
       "id": 543135,
       "fullName": "Nathan Eovaldi",
       "pitchHand": "R",
-      "wins": 5,
+      "wins": 6,
       "losses": 7,
-      "era": "4.26",
-      "strikeOuts": 77,
-      "inningsPitched": "80.1",
-      "hitsAllowed": 75,
-      "walks": 20,
-      "homeRunsAllowed": 15,
-      "whip": "1.18",
-      "gamesStarted": 13,
+      "era": "4.23",
+      "strikeOuts": 83,
+      "inningsPitched": "87.1",
+      "hitsAllowed": 81,
+      "walks": 21,
+      "homeRunsAllowed": 17,
+      "whip": "1.17",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 543135,
@@ -175227,46 +179485,46 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/nathan-eovaldi-vs-red-sox",
-        "answerText": "Nathan Eovaldi has a record of 4-1 with an ERA of 4.68 and 46 strikeouts in 12 appearances versus the Red Sox in his career.",
+        "answerText": "Nathan Eovaldi has a 5-1 record with an ERA of 4.59 and 52 strikeouts in 13 appearances versus the Red Sox in his career.",
         "pitcherName": "Nathan Eovaldi",
         "pitcherTeam": "Rangers",
         "opponentTeam": "Red Sox",
-        "appearances": 11,
-        "gamesStarted": 11,
-        "wins": null,
-        "losses": null,
-        "era": 4.68,
-        "strikeouts": 46,
-        "inningsPitched": "59.2",
-        "hitsAllowed": 64,
-        "earnedRuns": 31,
-        "runsAllowed": 31,
-        "homeRunsAllowed": 6,
-        "walks": 14,
-        "battersFaced": 252,
+        "appearances": 12,
+        "gamesStarted": 12,
+        "wins": 5,
+        "losses": 1,
+        "era": 4.59,
+        "strikeouts": 52,
+        "inningsPitched": "66.2",
+        "hitsAllowed": 70,
+        "earnedRuns": 34,
+        "runsAllowed": 34,
+        "homeRunsAllowed": 8,
+        "walks": 15,
+        "battersFaced": 278,
         "totalRow": {
           "NAME": "Total",
           "DATE": "",
           "TM": "",
           "OPP": "",
           "DEC": "",
-          "GS": "11",
-          "ERA": "4.68",
-          "SO": "46",
+          "GS": "12",
+          "ERA": "4.59",
+          "SO": "52",
           "CG": "0",
           "SHO": "0",
           "SV": "0",
-          "IP": "59.2",
-          "H": "64",
-          "ER": "31",
-          "R": "31",
-          "HR": "6",
-          "BB": "14",
+          "IP": "66.2",
+          "H": "70",
+          "ER": "34",
+          "R": "34",
+          "HR": "8",
+          "BB": "15",
           "HBP": "3",
           "GF": "0",
           "IBB": "0",
-          "TBF": "252",
-          "WP": "5",
+          "TBF": "278",
+          "WP": "6",
           "_isTotal": true
         },
         "gameRows": [
@@ -175557,9 +179815,33 @@ export const rawGames = [
             "IBB": "0",
             "TBF": "23",
             "WP": "1"
+          },
+          {
+            "NAME": "Nathan Eovaldi N. Eovaldi",
+            "DATE": "6/14/2026",
+            "TM": "TEX",
+            "OPP": "BOS",
+            "DEC": "W",
+            "GS": "1",
+            "ERA": "3.86",
+            "SO": "6",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "7.0",
+            "H": "6",
+            "ER": "3",
+            "R": "3",
+            "HR": "2",
+            "BB": "1",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "26",
+            "WP": "1"
           }
         ],
-        "fetchedAt": "2026-06-14T15:48:15.160Z"
+        "fetchedAt": "2026-06-15T10:35:04.680Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -175618,12 +179900,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.26"
+                    "value": "4.23"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "L",
@@ -175643,12 +179925,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -175658,37 +179940,37 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "80.1"
+                    "value": "87.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "75"
+                    "value": "81"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "40"
+                    "value": "43"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "38"
+                    "value": "41"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "21"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "77"
+                    "value": "83"
                   },
                   {
                     "label": "OBA",
@@ -175746,22 +180028,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "309"
+                    "value": "334"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "40"
+                    "value": "43"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "75"
+                    "value": "81"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "3B",
@@ -175771,17 +180053,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "38"
+                    "value": "41"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "21"
                   },
                   {
                     "label": "HBP",
@@ -175791,7 +180073,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "77"
+                    "value": "83"
                   },
                   {
                     "label": "SB",
@@ -175811,17 +180093,17 @@ export const rawGames = [
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".301"
+                    "value": ".298"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".430"
+                    "value": ".437"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".731"
+                    "value": ".735"
                   }
                 ]
               }
@@ -175959,12 +180241,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.14"
+                    "value": "4.11"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "L",
@@ -175984,12 +180266,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "label": "CG",
@@ -175999,42 +180281,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "54.1"
+                    "value": "61.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "55"
+                    "value": "61"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "27"
+                    "value": "30"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "25"
+                    "value": "28"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "8"
+                    "value": "10"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "54"
+                    "value": "60"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".259"
+                    "value": ".257"
                   }
                 ]
               },
@@ -176725,12 +181007,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.17"
+                    "value": "5.30"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -176750,12 +181032,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -176765,42 +181047,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "11.2"
+                    "value": "18.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "15"
+                    "value": "21"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "8"
+                    "value": "11"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "8"
+                    "value": "11"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "2"
+                    "value": "4"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "10"
+                    "value": "16"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".313"
+                    "value": ".288"
                   }
                 ]
               },
@@ -176810,12 +181092,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "6.35"
+                    "value": "4.97"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "label": "L",
@@ -176835,12 +181117,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -176850,42 +181132,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "5.2"
+                    "value": "12.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "4"
+                    "value": "10"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "3"
+                    "value": "9"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".200"
+                    "value": ".222"
                   }
                 ]
               },
@@ -177184,6 +181466,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".421"
+                  }
+                ]
+              },
+              {
+                "label": "Boston Red Sox",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "3.86"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "7.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "6"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "3"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "3"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "6"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".240"
                   }
                 ]
               },
@@ -177916,12 +182283,12 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "4.26"
+                    "value": "4.23"
                   },
                   {
                     "label": "W",
                     "name": "wins",
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "label": "L",
@@ -177941,12 +182308,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -177956,37 +182323,37 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "80.1"
+                    "value": "87.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "75"
+                    "value": "81"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "40"
+                    "value": "43"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "38"
+                    "value": "41"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "21"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "77"
+                    "value": "83"
                   },
                   {
                     "label": "OBA",
@@ -178332,6 +182699,91 @@ export const rawGames = [
                     "label": "OBA",
                     "name": "opponentAvg",
                     "value": ".364"
+                  }
+                ]
+              },
+              {
+                "label": "Fenway Park",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "3.86"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "1"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "7.0"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "6"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "3"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "3"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "1"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "6"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".240"
                   }
                 ]
               },
@@ -180383,22 +184835,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "309"
+                    "value": "334"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "40"
+                    "value": "43"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "75"
+                    "value": "81"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "label": "3B",
@@ -180408,17 +184860,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "38"
+                    "value": "41"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "20"
+                    "value": "21"
                   },
                   {
                     "label": "HBP",
@@ -180428,7 +184880,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "77"
+                    "value": "83"
                   },
                   {
                     "label": "SB",
@@ -180448,17 +184900,17 @@ export const rawGames = [
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".301"
+                    "value": ".298"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".430"
+                    "value": ".437"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".731"
+                    "value": ".735"
                   }
                 ]
               }
@@ -180469,10 +184921,11 @@ export const rawGames = [
           "Third time through: .216 AVG / .740 OPS allowed with 5 HR.",
           "First look baseline: .314 OBP / .804 OPS allowed.",
           "Day split: 4.23 ERA / .292 OBA.",
-          "Away split: 4.14 ERA / 8 HR allowed.",
-          "vs. Left: .260 AVG / .781 OPS allowed."
+          "Away split: 4.11 ERA / 10 HR allowed.",
+          "vs. Left: .260 AVG / .781 OPS allowed.",
+          "Fenway Park: 3.86 ERA / .240 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {
@@ -180498,15 +184951,15 @@ export const rawGames = [
       "fullName": "Connelly Early",
       "pitchHand": "L",
       "wins": 5,
-      "losses": 4,
-      "era": "3.30",
-      "strikeOuts": 69,
-      "inningsPitched": "71.0",
-      "hitsAllowed": 60,
-      "walks": 27,
-      "homeRunsAllowed": 12,
-      "whip": "1.23",
-      "gamesStarted": 13,
+      "losses": 5,
+      "era": "3.81",
+      "strikeOuts": 72,
+      "inningsPitched": "75.2",
+      "hitsAllowed": 71,
+      "walks": 29,
+      "homeRunsAllowed": 14,
+      "whip": "1.32",
+      "gamesStarted": 14,
       "probableSource": "mlb-api",
       "savant": {
         "playerId": 813349,
@@ -180665,11 +185118,11 @@ export const rawGames = [
       "statmuseVsOpponent": {
         "source": "StatMuse",
         "sourceUrl": "https://www.statmuse.com/mlb/ask/connelly-early-vs-rangers",
-        "answerText": "Connelly Early: no StatMuse matchup history found vs Rangers.",
+        "answerText": "Connelly Early has allowed 6 runs on 11 hits with 2 walks and 3 strikeouts in 4.2 innings against the Rangers in his career. He has been charged with the loss.",
         "pitcherName": "Connelly Early",
         "pitcherTeam": "Red Sox",
         "opponentTeam": "Rangers",
-        "appearances": 0,
+        "appearances": 1,
         "gamesStarted": 0,
         "wins": null,
         "losses": null,
@@ -180683,8 +185136,33 @@ export const rawGames = [
         "walks": null,
         "battersFaced": null,
         "totalRow": null,
-        "gameRows": [],
-        "fetchedAt": "2026-06-14T15:48:15.934Z"
+        "gameRows": [
+          {
+            "NAME": "Connelly Early C. Early",
+            "DATE": "6/14/2026",
+            "TM": "BOS",
+            "OPP": "TEX",
+            "DEC": "L",
+            "GS": "1",
+            "ERA": "11.57",
+            "SO": "3",
+            "CG": "0",
+            "SHO": "0",
+            "SV": "0",
+            "IP": "4.2",
+            "H": "11",
+            "ER": "6",
+            "R": "6",
+            "HR": "2",
+            "BB": "2",
+            "HBP": "0",
+            "GF": "0",
+            "IBB": "0",
+            "TBF": "27",
+            "WP": "0"
+          }
+        ],
+        "fetchedAt": "2026-06-15T10:35:05.066Z"
       },
       "espnSplits": {
         "source": "ESPN player splits",
@@ -180743,7 +185221,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.30"
+                    "value": "3.81"
                   },
                   {
                     "label": "W",
@@ -180753,7 +185231,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "SV",
@@ -180768,12 +185246,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -180783,42 +185261,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "71.0"
+                    "value": "75.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "60"
+                    "value": "71"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "26"
+                    "value": "32"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "26"
+                    "value": "32"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "12"
+                    "value": "14"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "27"
+                    "value": "29"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "69"
+                    "value": "72"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".227"
+                    "value": ".246"
                   }
                 ]
               }
@@ -180871,22 +185349,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "264"
+                    "value": "289"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "26"
+                    "value": "32"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "60"
+                    "value": "71"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "9"
+                    "value": "11"
                   },
                   {
                     "label": "3B",
@@ -180896,17 +185374,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "12"
+                    "value": "14"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "25"
+                    "value": "31"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "27"
+                    "value": "29"
                   },
                   {
                     "label": "HBP",
@@ -180916,7 +185394,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "69"
+                    "value": "72"
                   },
                   {
                     "label": "SB",
@@ -180931,22 +185409,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".227"
+                    "value": ".246"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".311"
+                    "value": ".325"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".398"
+                    "value": ".429"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".709"
+                    "value": ".754"
                   }
                 ]
               }
@@ -180999,7 +185477,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.86"
+                    "value": "4.82"
                   },
                   {
                     "label": "W",
@@ -181009,7 +185487,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "label": "SV",
@@ -181024,12 +185502,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "label": "CG",
@@ -181039,42 +185517,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "32.2"
+                    "value": "37.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "28"
+                    "value": "39"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "14"
+                    "value": "20"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "14"
+                    "value": "20"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "15"
+                    "value": "17"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "32"
+                    "value": "35"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".233"
+                    "value": ".269"
                   }
                 ]
               },
@@ -181850,7 +186328,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "5.40"
+                    "value": "7.36"
                   },
                   {
                     "label": "W",
@@ -181860,7 +186338,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "SV",
@@ -181875,12 +186353,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "label": "CG",
@@ -181890,42 +186368,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "10.0"
+                    "value": "14.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "11"
+                    "value": "22"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "6"
+                    "value": "12"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "6"
+                    "value": "12"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "5"
+                    "value": "7"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "12"
+                    "value": "15"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".289"
+                    "value": ".349"
                   }
                 ]
               },
@@ -181935,7 +186413,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.86"
+                    "value": "7.71"
                   },
                   {
                     "label": "W",
@@ -181945,7 +186423,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "SV",
@@ -181960,12 +186438,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "label": "CG",
@@ -181975,42 +186453,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "4.2"
+                    "value": "9.1"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "5"
+                    "value": "16"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "2"
+                    "value": "8"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "2"
+                    "value": "8"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "1"
+                    "value": "3"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "4"
+                    "value": "6"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "6"
+                    "value": "9"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".278"
+                    "value": ".372"
                   }
                 ]
               },
@@ -183076,6 +187554,91 @@ export const rawGames = [
                     "value": ".214"
                   }
                 ]
+              },
+              {
+                "label": "Texas Rangers",
+                "stats": [
+                  {
+                    "label": "ERA",
+                    "name": "ERA",
+                    "value": "11.57"
+                  },
+                  {
+                    "label": "W",
+                    "name": "wins",
+                    "value": "0"
+                  },
+                  {
+                    "label": "L",
+                    "name": "losses",
+                    "value": "1"
+                  },
+                  {
+                    "label": "SV",
+                    "name": "saves",
+                    "value": "0"
+                  },
+                  {
+                    "label": "SVOP",
+                    "name": "saveOpportunities",
+                    "value": "0"
+                  },
+                  {
+                    "label": "GP",
+                    "name": "gamesPlayed",
+                    "value": "1"
+                  },
+                  {
+                    "label": "GS",
+                    "name": "gamesStarted",
+                    "value": "1"
+                  },
+                  {
+                    "label": "CG",
+                    "name": "completeGames",
+                    "value": "0"
+                  },
+                  {
+                    "label": "IP",
+                    "name": "innings",
+                    "value": "4.2"
+                  },
+                  {
+                    "label": "H",
+                    "name": "hits",
+                    "value": "11"
+                  },
+                  {
+                    "label": "R",
+                    "name": "runs",
+                    "value": "6"
+                  },
+                  {
+                    "label": "ER",
+                    "name": "earnedRuns",
+                    "value": "6"
+                  },
+                  {
+                    "label": "HR",
+                    "name": "homeRuns",
+                    "value": "2"
+                  },
+                  {
+                    "label": "BB",
+                    "name": "walks",
+                    "value": "2"
+                  },
+                  {
+                    "label": "K",
+                    "name": "strikeouts",
+                    "value": "3"
+                  },
+                  {
+                    "label": "OBA",
+                    "name": "opponentAvg",
+                    "value": ".440"
+                  }
+                ]
               }
             ]
           },
@@ -183126,7 +187689,7 @@ export const rawGames = [
                   {
                     "label": "ERA",
                     "name": "ERA",
-                    "value": "3.30"
+                    "value": "3.81"
                   },
                   {
                     "label": "W",
@@ -183136,7 +187699,7 @@ export const rawGames = [
                   {
                     "label": "L",
                     "name": "losses",
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "label": "SV",
@@ -183151,12 +187714,12 @@ export const rawGames = [
                   {
                     "label": "GP",
                     "name": "gamesPlayed",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "GS",
                     "name": "gamesStarted",
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "label": "CG",
@@ -183166,42 +187729,42 @@ export const rawGames = [
                   {
                     "label": "IP",
                     "name": "innings",
-                    "value": "71.0"
+                    "value": "75.2"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "60"
+                    "value": "71"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "26"
+                    "value": "32"
                   },
                   {
                     "label": "ER",
                     "name": "earnedRuns",
-                    "value": "26"
+                    "value": "32"
                   },
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "12"
+                    "value": "14"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "27"
+                    "value": "29"
                   },
                   {
                     "label": "K",
                     "name": "strikeouts",
-                    "value": "69"
+                    "value": "72"
                   },
                   {
                     "label": "OBA",
                     "name": "opponentAvg",
-                    "value": ".227"
+                    "value": ".246"
                   }
                 ]
               },
@@ -185508,22 +190071,22 @@ export const rawGames = [
                   {
                     "label": "AB",
                     "name": "atBats",
-                    "value": "264"
+                    "value": "289"
                   },
                   {
                     "label": "R",
                     "name": "runs",
-                    "value": "26"
+                    "value": "32"
                   },
                   {
                     "label": "H",
                     "name": "hits",
-                    "value": "60"
+                    "value": "71"
                   },
                   {
                     "label": "2B",
                     "name": "doubles",
-                    "value": "9"
+                    "value": "11"
                   },
                   {
                     "label": "3B",
@@ -185533,17 +190096,17 @@ export const rawGames = [
                   {
                     "label": "HR",
                     "name": "homeRuns",
-                    "value": "12"
+                    "value": "14"
                   },
                   {
                     "label": "RBI",
                     "name": "RBIs",
-                    "value": "25"
+                    "value": "31"
                   },
                   {
                     "label": "BB",
                     "name": "walks",
-                    "value": "27"
+                    "value": "29"
                   },
                   {
                     "label": "HBP",
@@ -185553,7 +190116,7 @@ export const rawGames = [
                   {
                     "label": "SO",
                     "name": "strikeouts",
-                    "value": "69"
+                    "value": "72"
                   },
                   {
                     "label": "SB",
@@ -185568,22 +190131,22 @@ export const rawGames = [
                   {
                     "label": "AVG",
                     "name": "avg",
-                    "value": ".227"
+                    "value": ".246"
                   },
                   {
                     "label": "OBP",
                     "name": "onBasePct",
-                    "value": ".311"
+                    "value": ".325"
                   },
                   {
                     "label": "SLG",
                     "name": "slugAvg",
-                    "value": ".398"
+                    "value": ".429"
                   },
                   {
                     "label": "OPS",
                     "name": "OPS",
-                    "value": ".709"
+                    "value": ".754"
                   }
                 ]
               }
@@ -185598,7 +190161,7 @@ export const rawGames = [
           "vs. Right: .235 AVG / .724 OPS allowed.",
           "Fenway Park: 3.86 ERA / .233 OBA in stored ESPN split."
         ],
-        "fetchedAt": "2026-06-14T17:20:05.132Z"
+        "fetchedAt": "2026-06-15T10:25:18.981Z"
       },
       "recentForm": null,
       "usageContext": {

@@ -1,0 +1,531 @@
+{
+  "backtest": "mlb-sp1-shadow",
+  "dateRange": {
+    "startDate": "2026-06-14",
+    "endDate": "2026-06-14"
+  },
+  "generatedAt": "2026-06-15T21:31:49.828Z",
+  "modelVersions": [
+    "MLB-SP1.2026-06-15.v0.1"
+  ],
+  "rows": 28,
+  "matchedActualRows": 28,
+  "missingActualRows": 0,
+  "actualBaselines": {
+    "avgStarterRunsAllowed": 2.79,
+    "avgStarterHitsAllowed": 5.93,
+    "avgStarterHrAllowed": 0.89
+  },
+  "correlations": {
+    "collapseRiskToRunsAllowed": -0.115,
+    "collapseRiskToOutsRecorded": -0.31,
+    "expectedRunDeltaToRunsAllowed": -0.122,
+    "expectedHitDeltaToHitsAllowed": -0.398,
+    "expectedHrDeltaToHrAllowed": 0.269,
+    "hrForceToRunsAllowed": 0.185
+  },
+  "directionalScores": {
+    "collapseRisk": {
+      "graded": 8,
+      "hits": 4,
+      "hitRatePct": 50
+    },
+    "expectedRunsAllowedDelta": {
+      "graded": 16,
+      "hits": 6,
+      "hitRatePct": 37.5
+    },
+    "expectedHitsAllowedDelta": {
+      "graded": 19,
+      "hits": 6,
+      "hitRatePct": 31.6
+    },
+    "expectedHrAllowedDelta": {
+      "graded": 21,
+      "hits": 15,
+      "hitRatePct": 71.4
+    }
+  },
+  "buckets": {
+    "byCollapseRisk": {
+      "elevated": {
+        "rows": 10,
+        "collapseRatePct": 60,
+        "survivalRatePct": 30,
+        "avgCollapseRisk": 60.6,
+        "avgActualStarterRuns": 2.6,
+        "avgActualStarterHits": 5.3,
+        "avgActualStarterHr": 0.9,
+        "avgActualOuts": 15.2,
+        "avgOpponentRuns": 4.7,
+        "avgOpponentF5Runs": 2
+      },
+      "high": {
+        "rows": 1,
+        "collapseRatePct": 100,
+        "survivalRatePct": 0,
+        "avgCollapseRisk": 67.2,
+        "avgActualStarterRuns": 2,
+        "avgActualStarterHits": 3,
+        "avgActualStarterHr": 0,
+        "avgActualOuts": 7,
+        "avgOpponentRuns": 8,
+        "avgOpponentF5Runs": 3
+      },
+      "low": {
+        "rows": 7,
+        "collapseRatePct": 57.1,
+        "survivalRatePct": 42.9,
+        "avgCollapseRisk": 46.3,
+        "avgActualStarterRuns": 2.43,
+        "avgActualStarterHits": 6.86,
+        "avgActualStarterHr": 0.57,
+        "avgActualOuts": 16.7,
+        "avgOpponentRuns": 3,
+        "avgOpponentF5Runs": 2.43
+      },
+      "neutral": {
+        "rows": 10,
+        "collapseRatePct": 60,
+        "survivalRatePct": 50,
+        "avgCollapseRisk": 53.5,
+        "avgActualStarterRuns": 3.3,
+        "avgActualStarterHits": 6.2,
+        "avgActualStarterHr": 1.2,
+        "avgActualOuts": 16.2,
+        "avgOpponentRuns": 6.2,
+        "avgOpponentF5Runs": 3.8
+      }
+    },
+    "byHrForce": {
+      "carry": {
+        "rows": 4,
+        "collapseRatePct": 50,
+        "survivalRatePct": 50,
+        "avgCollapseRisk": 55.1,
+        "avgActualStarterRuns": 2.75,
+        "avgActualStarterHits": 6.25,
+        "avgActualStarterHr": 1,
+        "avgActualOuts": 19,
+        "avgOpponentRuns": 3.75,
+        "avgOpponentF5Runs": 1.5
+      },
+      "extreme_carry": {
+        "rows": 8,
+        "collapseRatePct": 62.5,
+        "survivalRatePct": 50,
+        "avgCollapseRisk": 53.3,
+        "avgActualStarterRuns": 3.13,
+        "avgActualStarterHits": 6.63,
+        "avgActualStarterHr": 1.13,
+        "avgActualOuts": 16.4,
+        "avgOpponentRuns": 4.5,
+        "avgOpponentF5Runs": 3.13
+      },
+      "high_carry": {
+        "rows": 10,
+        "collapseRatePct": 60,
+        "survivalRatePct": 30,
+        "avgCollapseRisk": 59.6,
+        "avgActualStarterRuns": 3,
+        "avgActualStarterHits": 4.9,
+        "avgActualStarterHr": 1,
+        "avgActualOuts": 13.3,
+        "avgOpponentRuns": 6.8,
+        "avgOpponentF5Runs": 3.5
+      },
+      "low_or_dome": {
+        "rows": 6,
+        "collapseRatePct": 66.7,
+        "survivalRatePct": 33.3,
+        "avgCollapseRisk": 48.2,
+        "avgActualStarterRuns": 2,
+        "avgActualStarterHits": 6.5,
+        "avgActualStarterHr": 0.33,
+        "avgActualOuts": 16.3,
+        "avgOpponentRuns": 3.17,
+        "avgOpponentF5Runs": 2
+      }
+    }
+  },
+  "misses": {
+    "missingActualPitchers": [],
+    "highRiskSurvivals": [
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-822722",
+        "team": "Washington Nationals",
+        "opponent": "Seattle Mariners",
+        "pitcher": "Miles Mikolas",
+        "role": "reliever",
+        "collapseRisk": 65.2,
+        "expectedRunsDelta": 0.27,
+        "expectedHitsDelta": 0.58,
+        "expectedHrDelta": 0.35,
+        "hrForce": 1.8,
+        "actualRunsAllowed": 0,
+        "actualHitsAllowed": 3,
+        "actualHrAllowed": 0,
+        "actualOuts": 21,
+        "opponentRuns": 1,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag",
+          "weather_profile_conflict_flag"
+        ]
+      }
+    ],
+    "lowRiskCollapses": [
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-822722",
+        "team": "Seattle Mariners",
+        "opponent": "Washington Nationals",
+        "pitcher": "Emerson Hancock",
+        "role": "starter",
+        "collapseRisk": 50.7,
+        "expectedRunsDelta": 0.01,
+        "expectedHitsDelta": -0.54,
+        "expectedHrDelta": 0.21,
+        "hrForce": 1.8,
+        "actualRunsAllowed": 6,
+        "actualHitsAllowed": 9,
+        "actualHrAllowed": 1,
+        "actualOuts": 12,
+        "opponentRuns": 10,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-823615",
+        "team": "Atlanta Braves",
+        "opponent": "New York Mets",
+        "pitcher": "Bryce Elder",
+        "role": "starter",
+        "collapseRisk": 46.6,
+        "expectedRunsDelta": -0.06,
+        "expectedHitsDelta": -0.7,
+        "expectedHrDelta": 0.16,
+        "hrForce": 1.7,
+        "actualRunsAllowed": 6,
+        "actualHitsAllowed": 10,
+        "actualHrAllowed": 2,
+        "actualOuts": 12,
+        "opponentRuns": 8,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-823777",
+        "team": "Philadelphia Phillies",
+        "opponent": "Milwaukee Brewers",
+        "pitcher": "Cristopher Sánchez",
+        "role": "starter",
+        "collapseRisk": 46.9,
+        "expectedRunsDelta": -0.06,
+        "expectedHitsDelta": -0.28,
+        "expectedHrDelta": -0.12,
+        "hrForce": 0,
+        "actualRunsAllowed": 4,
+        "actualHitsAllowed": 8,
+        "actualHrAllowed": 2,
+        "actualOuts": 17,
+        "opponentRuns": 4,
+        "flags": []
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-824099",
+        "team": "Houston Astros",
+        "opponent": "Kansas City Royals",
+        "pitcher": "Spencer Arrighetti",
+        "role": "starter",
+        "collapseRisk": 41.4,
+        "expectedRunsDelta": -0.16,
+        "expectedHitsDelta": -0.86,
+        "expectedHrDelta": -0.13,
+        "hrForce": 1.2,
+        "actualRunsAllowed": 4,
+        "actualHitsAllowed": 8,
+        "actualHrAllowed": 0,
+        "actualOuts": 18,
+        "opponentRuns": 4,
+        "flags": []
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-822801",
+        "team": "New York Yankees",
+        "opponent": "Toronto Blue Jays",
+        "pitcher": "Will Warren",
+        "role": "starter",
+        "collapseRisk": 48.5,
+        "expectedRunsDelta": -0.03,
+        "expectedHitsDelta": -0.32,
+        "expectedHrDelta": -0.05,
+        "hrForce": 0,
+        "actualRunsAllowed": 2,
+        "actualHitsAllowed": 8,
+        "actualHrAllowed": 0,
+        "actualOuts": 12,
+        "opponentRuns": 3,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "repeat_opponent_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-823368",
+        "team": "Pittsburgh Pirates",
+        "opponent": "Miami Marlins",
+        "pitcher": "Paul Skenes",
+        "role": "starter",
+        "collapseRisk": 50.7,
+        "expectedRunsDelta": 0.01,
+        "expectedHitsDelta": -0.59,
+        "expectedHrDelta": 0.03,
+        "hrForce": 1.7,
+        "actualRunsAllowed": 2,
+        "actualHitsAllowed": 4,
+        "actualHrAllowed": 2,
+        "actualOuts": 18,
+        "opponentRuns": 4,
+        "flags": []
+      }
+    ],
+    "runDeltaMisses": [
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-824021",
+        "team": "Los Angeles Angels",
+        "opponent": "Tampa Bay Rays",
+        "pitcher": "Grayson Rodriguez",
+        "role": "starter",
+        "collapseRisk": 67.2,
+        "expectedRunsDelta": 0.31,
+        "expectedHitsDelta": 1.01,
+        "expectedHrDelta": 0.25,
+        "hrForce": 1.5,
+        "actualRunsAllowed": 2,
+        "actualHitsAllowed": 3,
+        "actualHrAllowed": 0,
+        "actualOuts": 7,
+        "opponentRuns": 8,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "handedness_mismatch_flag",
+          "starter_collapse_risk_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-822722",
+        "team": "Washington Nationals",
+        "opponent": "Seattle Mariners",
+        "pitcher": "Miles Mikolas",
+        "role": "reliever",
+        "collapseRisk": 65.2,
+        "expectedRunsDelta": 0.27,
+        "expectedHitsDelta": 0.58,
+        "expectedHrDelta": 0.35,
+        "hrForce": 1.8,
+        "actualRunsAllowed": 0,
+        "actualHitsAllowed": 3,
+        "actualHrAllowed": 0,
+        "actualOuts": 21,
+        "opponentRuns": 1,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag",
+          "weather_profile_conflict_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-824506",
+        "team": "Cincinnati Reds",
+        "opponent": "Arizona Diamondbacks",
+        "pitcher": "Andrew Abbott",
+        "role": "starter",
+        "collapseRisk": 61.6,
+        "expectedRunsDelta": 0.21,
+        "expectedHitsDelta": 0.76,
+        "expectedHrDelta": 0.25,
+        "hrForce": 1.5,
+        "actualRunsAllowed": 1,
+        "actualHitsAllowed": 4,
+        "actualHrAllowed": 1,
+        "actualOuts": 15,
+        "opponentRuns": 5,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "handedness_mismatch_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-824586",
+        "team": "Chicago White Sox",
+        "opponent": "Los Angeles Dodgers",
+        "pitcher": "Erick Fedde",
+        "role": "reliever",
+        "collapseRisk": 60.5,
+        "expectedRunsDelta": 0.19,
+        "expectedHitsDelta": 0.97,
+        "expectedHrDelta": 0.1,
+        "hrForce": 1.5,
+        "actualRunsAllowed": 0,
+        "actualHitsAllowed": 3,
+        "actualHrAllowed": 0,
+        "actualOuts": 8,
+        "opponentRuns": 4,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "opener_or_bulk_primary_flag",
+          "handedness_mismatch_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-822801",
+        "team": "Toronto Blue Jays",
+        "opponent": "New York Yankees",
+        "pitcher": "Patrick Corbin",
+        "role": "starter",
+        "collapseRisk": 60.2,
+        "expectedRunsDelta": 0.18,
+        "expectedHitsDelta": 1.1,
+        "expectedHrDelta": 0,
+        "hrForce": 0,
+        "actualRunsAllowed": 2,
+        "actualHitsAllowed": 7,
+        "actualHrAllowed": 0,
+        "actualOuts": 11,
+        "opponentRuns": 8,
+        "flags": [
+          "repeat_opponent_flag",
+          "handedness_mismatch_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-824099",
+        "team": "Houston Astros",
+        "opponent": "Kansas City Royals",
+        "pitcher": "Spencer Arrighetti",
+        "role": "starter",
+        "collapseRisk": 41.4,
+        "expectedRunsDelta": -0.16,
+        "expectedHitsDelta": -0.86,
+        "expectedHrDelta": -0.13,
+        "hrForce": 1.2,
+        "actualRunsAllowed": 4,
+        "actualHitsAllowed": 8,
+        "actualHrAllowed": 0,
+        "actualOuts": 18,
+        "opponentRuns": 4,
+        "flags": []
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-824823",
+        "team": "San Diego Padres",
+        "opponent": "Baltimore Orioles",
+        "pitcher": "Walker Buehler",
+        "role": "starter",
+        "collapseRisk": 58.9,
+        "expectedRunsDelta": 0.16,
+        "expectedHitsDelta": 0.34,
+        "expectedHrDelta": 0.23,
+        "hrForce": 1.6,
+        "actualRunsAllowed": 1,
+        "actualHitsAllowed": 6,
+        "actualHrAllowed": 1,
+        "actualOuts": 15,
+        "opponentRuns": 2,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-824021",
+        "team": "Tampa Bay Rays",
+        "opponent": "Los Angeles Angels",
+        "pitcher": "Ian Seymour",
+        "role": "reliever",
+        "collapseRisk": 57,
+        "expectedRunsDelta": 0.13,
+        "expectedHitsDelta": -0.07,
+        "expectedHrDelta": 0.15,
+        "hrForce": 1.5,
+        "actualRunsAllowed": 2,
+        "actualHitsAllowed": 2,
+        "actualHrAllowed": 1,
+        "actualOuts": 10,
+        "opponentRuns": 3,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "opener_or_bulk_primary_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-824823",
+        "team": "Baltimore Orioles",
+        "opponent": "San Diego Padres",
+        "pitcher": "Trevor Rogers",
+        "role": "starter",
+        "collapseRisk": 56.8,
+        "expectedRunsDelta": 0.12,
+        "expectedHitsDelta": 0.12,
+        "expectedHrDelta": 0.27,
+        "hrForce": 1.6,
+        "actualRunsAllowed": 2,
+        "actualHitsAllowed": 5,
+        "actualHrAllowed": 0,
+        "actualOuts": 18,
+        "opponentRuns": 5,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "date": "2026-06-14",
+        "gameId": "mlb-823615",
+        "team": "New York Mets",
+        "opponent": "Atlanta Braves",
+        "pitcher": "Freddy Peralta",
+        "role": "starter",
+        "collapseRisk": 55.9,
+        "expectedRunsDelta": 0.11,
+        "expectedHitsDelta": 0.16,
+        "expectedHrDelta": 0.23,
+        "hrForce": 1.7,
+        "actualRunsAllowed": 1,
+        "actualHitsAllowed": 4,
+        "actualHrAllowed": 0,
+        "actualOuts": 15,
+        "opponentRuns": 1,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      }
+    ]
+  },
+  "promotionRead": {
+    "status": "shadow_only",
+    "note": "This report measures SP1 signal direction. It does not promote SP1 into public scoring without a larger settled window and lane-specific calibration."
+  }
+}

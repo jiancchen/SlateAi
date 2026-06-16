@@ -1,0 +1,380 @@
+{
+  "generated_at": "2026-06-15T19:48:44.445Z",
+  "script": "data-migration/scripts/prediction_preflight.mjs",
+  "sport": "mlb",
+  "source_date": "2026-06-15",
+  "lane": "prediction",
+  "degraded": false,
+  "db_path": "data-private/warehouse/sports/mlb/sql-mlb.db",
+  "required_sources_checked": 15,
+  "passed_sources": 12,
+  "stale_sources": [],
+  "warnings": [
+    "mlb_lineups: Partial source: missing 1 item(s)",
+    "mlb_probables: Partial source: missing 1 item(s)",
+    "mlb_sp1_starter_profile: Unresolved source rows: 1"
+  ],
+  "blocking_errors": [
+    "mlb_lineups: Partial source is not allowed",
+    "mlb_lineups: Incomplete source completeness: partial",
+    "mlb_lineups: Missing source items: 1",
+    "mlb_probables: Partial source is not allowed",
+    "mlb_probables: Incomplete source completeness: partial",
+    "mlb_probables: Missing source items: 1",
+    "mlb_sp1_starter_profile: Incomplete source completeness: partial",
+    "mlb_sp1_starter_profile: Missing source items: 1",
+    "mlb_sp1_starter_profile: Unresolved source rows: 1"
+  ],
+  "sources": [
+    {
+      "source_name": "mlb_schedule",
+      "source_family": "schedule",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:41:53.603048+00:00",
+        "cache_valid_until": "2026-06-16T01:41:53.603048+00:00",
+        "expected_item_count": 10,
+        "actual_item_count": 10,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-15.json\",\"schedule_path\":\"data-private/raw/mlb/2026-06-15/schedule.json\"}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_game_feed",
+      "source_family": "game-feed",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:41:53.609609+00:00",
+        "cache_valid_until": "2026-06-16T01:41:53.609609+00:00",
+        "expected_item_count": 10,
+        "actual_item_count": 10,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_schedule_game_feed_raw_to_typed\",\"dry_run\":false,\"feed_file_count\":10,\"missing_schedule_games\":0,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_prepare_mlb_day_schedule_game_feed_2026-06-15.json\"}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_lineups",
+      "source_family": "lineups",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "partial",
+        "last_completeness_status": "partial",
+        "last_success_at": "2026-06-15T19:46:19.718099+00:00",
+        "cache_valid_until": "2026-06-16T07:46:19.718099+00:00",
+        "expected_item_count": 180,
+        "actual_item_count": 179,
+        "missing_item_count": 1,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_lineup_board_raw_to_typed\",\"expected_lineup_slots\":180,\"games\":10,\"lineup_matchup_snapshots\":179,\"lineup_slots\":179,\"lineups\":20,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-15.json\",\"source_snapshot_id\":\"mlb-41ef73600377b6d4698c1e731f750b66\",\"unresolved_count\":0}"
+      },
+      "stale": false,
+      "errors": [
+        "Partial source is not allowed",
+        "Incomplete source completeness: partial",
+        "Missing source items: 1"
+      ],
+      "warnings": [
+        "Partial source: missing 1 item(s)"
+      ],
+      "ok": false
+    },
+    {
+      "source_name": "mlb_probables",
+      "source_family": "probables",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "partial",
+        "last_completeness_status": "partial",
+        "last_success_at": "2026-06-15T19:46:19.719009+00:00",
+        "cache_valid_until": "2026-06-16T01:46:19.719009+00:00",
+        "expected_item_count": 10,
+        "actual_item_count": 9,
+        "missing_item_count": 1,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_lineup_board_raw_to_typed\",\"probable_pitcher_rows\":19,\"report_path\":\"data-migration/reports/mlb_typed_warehouse_ingest_hitter_lineup_splits_2026-06-15.json\",\"source_kind\":\"lineup_board_opposing_starters\",\"source_snapshot_id\":\"mlb-8c83ccf6bbf5af9185fa0ad2149ec376\",\"unresolved_count\":0}"
+      },
+      "stale": false,
+      "errors": [
+        "Partial source is not allowed",
+        "Incomplete source completeness: partial",
+        "Missing source items: 1"
+      ],
+      "warnings": [
+        "Partial source: missing 1 item(s)"
+      ],
+      "ok": false
+    },
+    {
+      "source_name": "mlb_odds",
+      "source_family": "markets",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:48:32.125295+00:00",
+        "cache_valid_until": "2026-06-15T20:48:32.125295+00:00",
+        "expected_item_count": 112,
+        "actual_item_count": 112,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"adapter\":\"mlb_markets_raw_to_typed\",\"by_file\":{\"data-private/odds/draftkings/mlb/2026-06-15-draftkings-mlb-lines.json\":{\"parsed_contracts\":112,\"parsed_prop_snapshots\":42,\"parsed_snapshots\":112,\"parsed_ticks\":112,\"source_games\":4,\"source_prop_rows\":42,\"source_rows\":112,\"unmapped_games\":0,\"unmapped_prop_players\":0}},\"parsed_contracts\":112,\"parsed_prop_snapshots\":42,\"parsed_snapshots\":112,\"parsed_ticks\":112,\"report_path\":\"data-migration/reports/ingest_mlb_markets_props_raw_to_typed_2026-06-15_draftkings_final.json\",\"source_files\":1,\"source_games\":4,\"source_prop_rows\":42,\"source_rows\":112,\"unmapped_games\":0,\"unmapped_prop_players\":0}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "fantasyinfocentral_weather",
+      "source_family": "weather-run-environment",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:43:12.411Z",
+        "cache_valid_until": null,
+        "expected_item_count": 10,
+        "actual_item_count": 10,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"artifactPath\":\"data-private/warehouse/mlb/fantasyinfocentral-weather/2026-06-15.json\",\"rawPath\":\"data-private/raw/fantasyinfocentral/mlb/weather/2026-06-15.html\",\"gameCount\":10,\"hourlyCount\":21,\"exactGameMatches\":10,\"unresolvedCount\":0,\"highHrForceCount\":6,\"lowHrForceCount\":4,\"domeNaCount\":3,\"warning\":null}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "fantasyinfocentral_daily_matchups",
+      "source_family": "batter-vs-pitcher",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:43:19.079Z",
+        "cache_valid_until": null,
+        "expected_item_count": 64,
+        "actual_item_count": 64,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"artifactPath\":\"data-private/warehouse/mlb/fantasyinfocentral-daily-matchups/2026-06-15.json\",\"rawPath\":\"data-private/raw/fantasyinfocentral/mlb/daily-matchups/2026-06-15.html\",\"rowCount\":64,\"passCount\":6}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "fantasyinfocentral_umpire_factors",
+      "source_family": "umpire-factor-profile",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:43:22.345Z",
+        "cache_valid_until": null,
+        "expected_item_count": 157,
+        "actual_item_count": 157,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"artifactPath\":\"data-private/warehouse/mlb/fantasyinfocentral-umpire-factors/2026-06-15.json\",\"rawPath\":\"data-private/raw/fantasyinfocentral/mlb/umpires/2026-06-15.html\",\"rowCount\":157,\"favorites\":{\"hitters\":20,\"pitchers\":65,\"neutral\":72}}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "fangraphs_roster_resource_bullpen_depth",
+      "source_family": "bullpen-depth",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:43:39.212Z",
+        "cache_valid_until": null,
+        "expected_item_count": 30,
+        "actual_item_count": 30,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"teamCount\":30,\"depthRows\":243,\"usageRows\":1458,\"reliefRosterRows\":1425,\"structuredUsageRows\":4145,\"transactionRows\":300,\"teamRankingRows\":30,\"cacheFallbackTeams\":0,\"closerRows\":329,\"closerUsageRows\":573,\"teams\":[{\"teamSlug\":\"athletics\",\"teamAbbr\":\"ATH\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":9,\"usageRows\":54,\"reliefRosterRows\":52,\"structuredUsageRows\":148,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/athletics.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/athletics.json\"},{\"teamSlug\":\"blue-jays\",\"teamAbbr\":\"TOR\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":43,\"structuredUsageRows\":146,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/blue-jays.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/blue-jays.json\"},{\"teamSlug\":\"orioles\",\"teamAbbr\":\"BAL\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":59,\"structuredUsageRows\":129,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/orioles.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/orioles.json\"},{\"teamSlug\":\"rays\",\"teamAbbr\":\"TBR\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":58,\"structuredUsageRows\":145,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/rays.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/rays.json\"},{\"teamSlug\":\"red-sox\",\"teamAbbr\":\"BOS\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":36,\"structuredUsageRows\":143,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/red-sox.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/red-sox.json\"},{\"teamSlug\":\"yankees\",\"teamAbbr\":\"NYY\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":49,\"structuredUsageRows\":151,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/yankees.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/yankees.json\"},{\"teamSlug\":\"guardians\",\"teamAbbr\":\"CLE\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":49,\"structuredUsageRows\":168,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/guardians.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/guardians.json\"},{\"teamSlug\":\"royals\",\"teamAbbr\":\"KCR\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":45,\"structuredUsageRows\":132,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/royals.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/royals.json\"},{\"teamSlug\":\"tigers\",\"teamAbbr\":\"DET\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":51,\"structuredUsageRows\":151,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/tigers.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/tigers.json\"},{\"teamSlug\":\"twins\",\"teamAbbr\":\"MIN\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":40,\"structuredUsageRows\":129,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/twins.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/twins.json\"},{\"teamSlug\":\"white-sox\",\"teamAbbr\":\"CHW\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":9,\"usageRows\":54,\"reliefRosterRows\":51,\"structuredUsageRows\":140,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/white-sox.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/white-sox.json\"},{\"teamSlug\":\"angels\",\"teamAbbr\":\"LAA\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":46,\"structuredUsageRows\":147,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/angels.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/angels.json\"},{\"teamSlug\":\"astros\",\"teamAbbr\":\"HOU\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":36,\"structuredUsageRows\":147,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/astros.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/astros.json\"},{\"teamSlug\":\"mariners\",\"teamAbbr\":\"SEA\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":7,\"usageRows\":42,\"reliefRosterRows\":42,\"structuredUsageRows\":126,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/mariners.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/mariners.json\"},{\"teamSlug\":\"rangers\",\"teamAbbr\":\"TEX\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":53,\"structuredUsageRows\":123,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/rangers.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/rangers.json\"},{\"teamSlug\":\"braves\",\"teamAbbr\":\"ATL\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":40,\"structuredUsageRows\":136,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/braves.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/braves.json\"},{\"teamSlug\":\"marlins\",\"teamAbbr\":\"MIA\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":9,\"usageRows\":54,\"reliefRosterRows\":53,\"structuredUsageRows\":130,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/marlins.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/marlins.json\"},{\"teamSlug\":\"mets\",\"teamAbbr\":\"NYM\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":9,\"usageRows\":54,\"reliefRosterRows\":51,\"structuredUsageRows\":128,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/mets.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/mets.json\"},{\"teamSlug\":\"nationals\",\"teamAbbr\":\"WSN\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":50,\"structuredUsageRows\":143,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/nationals.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/nationals.json\"},{\"teamSlug\":\"phillies\",\"teamAbbr\":\"PHI\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":44,\"structuredUsageRows\":146,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/phillies.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/phillies.json\"},{\"teamSlug\":\"brewers\",\"teamAbbr\":\"MIL\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":48,\"structuredUsageRows\":140,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/brewers.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/brewers.json\"},{\"teamSlug\":\"cardinals\",\"teamAbbr\":\"STL\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":42,\"structuredUsageRows\":128,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/cardinals.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/cardinals.json\"},{\"teamSlug\":\"cubs\",\"teamAbbr\":\"CHC\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":46,\"structuredUsageRows\":128,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/cubs.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/cubs.json\"},{\"teamSlug\":\"pirates\",\"teamAbbr\":\"PIT\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":48,\"structuredUsageRows\":123,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/pirates.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/pirates.json\"},{\"teamSlug\":\"reds\",\"teamAbbr\":\"CIN\",\"sourceLoadedAt\":\"2026-06-15T15:31:12.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":35,\"structuredUsageRows\":148,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/reds.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/reds.json\"},{\"teamSlug\":\"diamondbacks\",\"teamAbbr\":\"ARI\",\"sourceLoadedAt\":\"2026-06-15T15:31:12.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":54,\"structuredUsageRows\":126,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/diamondbacks.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/diamondbacks.json\"},{\"teamSlug\":\"dodgers\",\"teamAbbr\":\"LAD\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":53,\"structuredUsageRows\":130,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/dodgers.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/dodgers.json\"},{\"teamSlug\":\"giants\",\"teamAbbr\":\"SFG\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":47,\"structuredUsageRows\":143,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/giants.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/giants.json\"},{\"teamSlug\":\"padres\",\"teamAbbr\":\"SDP\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":53,\"structuredUsageRows\":148,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/padres.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/padres.json\"},{\"teamSlug\":\"rockies\",\"teamAbbr\":\"COL\",\"sourceLoadedAt\":\"2026-06-15T15:42:05.000Z\",\"cacheFallback\":null,\"depthRows\":8,\"usageRows\":48,\"reliefRosterRows\":51,\"structuredUsageRows\":123,\"transactionRows\":10,\"teamRankingRows\":1,\"rawPath\":\"data-private/raw/fangraphs/mlb/depth-charts/2026-06-15/rockies.html\",\"artifactPath\":\"data-private/warehouse/mlb/fangraphs-bullpen-depth/2026-06-15/rockies.json\"}]}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "statmuse_starter_vs_team",
+      "source_family": "starter-history",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:46:53.664Z",
+        "cache_valid_until": "2026-06-16T07:46:53.664Z",
+        "expected_item_count": 19,
+        "actual_item_count": 19,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"starterCount\":19,\"inserted\":19,\"noHistoryCount\":6,\"errorCount\":0}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "espn_pitcher_splits",
+      "source_family": "pitcher-splits",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:47:19.425Z",
+        "cache_valid_until": "2026-06-16T07:47:19.425Z",
+        "expected_item_count": 19,
+        "actual_item_count": 19,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"artifactPath\":\"data-private/predictions/mlb-espn-pitcher-splits/2026-06-15-pitcher-splits.json\",\"totalStarters\":19,\"fetchedStarters\":19,\"statusCounts\":{\"fetched\":19}}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_player_split_families",
+      "source_family": "player-splits",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:47:53.804Z",
+        "cache_valid_until": "2026-06-16T07:47:53.804Z",
+        "expected_item_count": 472,
+        "actual_item_count": 472,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"warehouse\":\"mlb-player-split-families\",\"date\":\"2026-06-15\",\"generatedAt\":\"2026-06-15T19:47:53.803Z\",\"table\":\"mlb_player_split_family_snapshots\",\"lineupPath\":\"data-private/lineups/mlb/2026-06-15-lineup-board.json\",\"hitter\":{\"players\":179,\"rows\":358,\"unavailableRows\":4},\"pitcher\":{\"pitchers\":19,\"rows\":114,\"unavailableRows\":4,\"familyCounts\":{\"home_away\":38,\"day_night\":38,\"handedness\":38}},\"inserted\":472}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_sp1_starter_profile",
+      "source_family": "starter-profile",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "partial",
+        "last_success_at": "2026-06-15T19:48:17.174Z",
+        "cache_valid_until": "2026-06-16T07:48:17.174Z",
+        "expected_item_count": 20,
+        "actual_item_count": 19,
+        "missing_item_count": 1,
+        "unresolved_count": 1,
+        "notes": "{\"build\":\"mlb-starter-profile-addendum\",\"modelVersion\":\"MLB-SP1.2026-06-15.v0.1\",\"date\":\"2026-06-15\",\"generatedAt\":\"2026-06-15T19:48:17.165Z\",\"expectedProfiles\":20,\"insertedProfiles\":19,\"sourceStatus\":\"success\",\"warnings\":[\"mlb-822887:away-starter-missing\",\"mlb-825071:home-lineup-incomplete:8\"],\"byGame\":{\"mlb-823452\":[{\"teamRole\":\"away\",\"teamName\":\"Miami Marlins\",\"pitcherName\":\"Ryan Gusto\",\"collapseRiskScore\":58.7,\"starterProfileScore\":45.9,\"handednessFragilityScore\":49,\"weatherFragilityScore\":52.7,\"pitchMixFitScore\":60.2,\"confidenceScore\":98,\"flags\":[\"tiny_sample_pitcher_flag\",\"opener_or_bulk_primary_flag\"]},{\"teamRole\":\"home\",\"teamName\":\"Philadelphia Phillies\",\"pitcherName\":\"Zack Wheeler\",\"collapseRiskScore\":45.9,\"starterProfileScore\":55.7,\"handednessFragilityScore\":33.1,\"weatherFragilityScore\":52.7,\"pitchMixFitScore\":51.4,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\",\"repeat_opponent_flag\"]}],\"mlb-822724\":[{\"teamRole\":\"away\",\"teamName\":\"Kansas City Royals\",\"pitcherName\":\"Mitch Spence\",\"collapseRiskScore\":66.8,\"starterProfileScore\":32.6,\"handednessFragilityScore\":94,\"weatherFragilityScore\":53.4,\"pitchMixFitScore\":62.5,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\",\"handedness_mismatch_flag\",\"starter_collapse_risk_flag\"]},{\"teamRole\":\"home\",\"teamName\":\"Washington Nationals\",\"pitcherName\":\"Andrew Alvarez\",\"collapseRiskScore\":54.5,\"starterProfileScore\":48.3,\"handednessFragilityScore\":49.3,\"weatherFragilityScore\":53.4,\"pitchMixFitScore\":55.6,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\"]}],\"mlb-824505\":[{\"teamRole\":\"away\",\"teamName\":\"New York Mets\",\"pitcherName\":\"Tobias Myers\",\"collapseRiskScore\":58.1,\"starterProfileScore\":42.9,\"handednessFragilityScore\":62.5,\"weatherFragilityScore\":69.2,\"pitchMixFitScore\":53.8,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\"]},{\"teamRole\":\"home\",\"teamName\":\"Cincinnati Reds\",\"pitcherName\":\"Chase Burns\",\"collapseRiskScore\":51.7,\"starterProfileScore\":50.7,\"handednessFragilityScore\":39,\"weatherFragilityScore\":69.2,\"pitchMixFitScore\":57.3,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\",\"repeat_opponent_flag\"]}],\"mlb-823046\":[{\"teamRole\":\"away\",\"teamName\":\"San Diego Padres\",\"pitcherName\":\"Lucas Giolito\",\"collapseRiskScore\":58.1,\"starterProfileScore\":43,\"handednessFragilityScore\":58.2,\"weatherFragilityScore\":60.6,\"pitchMixFitScore\":60.8,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\"]},{\"teamRole\":\"home\",\"teamName\":\"St. Louis Cardinals\",\"pitcherName\":\"Dustin May\",\"collapseRiskScore\":49.9,\"starterProfileScore\":53.1,\"handednessFragilityScore\":28.3,\"weatherFragilityScore\":60.6,\"pitchMixFitScore\":58.8,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\",\"repeat_opponent_flag\"]}],\"mlb-824666\":[{\"teamRole\":\"away\",\"teamName\":\"Colorado Rockies\",\"pitcherName\":\"Michael Lorenzen\",\"collapseRiskScore\":66.2,\"starterProfileScore\":36.6,\"handednessFragilityScore\":74.1,\"weatherFragilityScore\":64.7,\"pitchMixFitScore\":60.5,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\",\"high_hrforce_fragility_flag\",\"handedness_mismatch_flag\",\"starter_collapse_risk_flag\"]},{\"teamRole\":\"home\",\"teamName\":\"Chicago Cubs\",\"pitcherName\":\"Shota Imanaga\",\"collapseRiskScore\":52.4,\"starterProfileScore\":49.4,\"handednessFragilityScore\":45.4,\"weatherFragilityScore\":64.9,\"pitchMixFitScore\":53.4,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\",\"high_hrforce_fragility_flag\"]}],\"mlb-822887\":[{\"teamRole\":\"home\",\"teamName\":\"Texas Rangers\",\"pitcherName\":\"MacKenzie Gore\",\"collapseRiskScore\":47.8,\"starterProfileScore\":52.8,\"handednessFragilityScore\":48.7,\"weatherFragilityScore\":32.8,\"pitchMixFitScore\":53.9,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\"]}],\"mlb-824181\":[{\"teamRole\":\"away\",\"teamName\":\"Detroit Tigers\",\"pitcherName\":\"Troy Melton\",\"collapseRiskScore\":51.6,\"starterProfileScore\":47.6,\"handednessFragilityScore\":55.2,\"weatherFragilityScore\":49,\"pitchMixFitScore\":57,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\"]},{\"teamRole\":\"home\",\"teamName\":\"Houston Astros\",\"pitcherName\":\"Kai-Wei Teng\",\"collapseRiskScore\":53.9,\"starterProfileScore\":46.4,\"handednessFragilityScore\":57.7,\"weatherFragilityScore\":49,\"pitchMixFitScore\":58.9,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\"]}],\"mlb-825071\":[{\"teamRole\":\"away\",\"teamName\":\"Los Angeles Angels\",\"pitcherName\":\"Walbert Ureña\",\"collapseRiskScore\":47.9,\"starterProfileScore\":53.4,\"handednessFragilityScore\":37,\"weatherFragilityScore\":48,\"pitchMixFitScore\":57.1,\"confidenceScore\":96.2,\"flags\":[\"opener_or_bulk_primary_flag\"]},{\"teamRole\":\"home\",\"teamName\":\"Arizona Diamondbacks\",\"pitcherName\":\"Ryne Nelson\",\"collapseRiskScore\":55,\"starterProfileScore\":45.4,\"handednessFragilityScore\":57.7,\"weatherFragilityScore\":48,\"pitchMixFitScore\":60,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\"]}],\"mlb-824993\":[{\"teamRole\":\"away\",\"teamName\":\"Pittsburgh Pirates\",\"pitcherName\":\"Jared Jones\",\"collapseRiskScore\":60.2,\"starterProfileScore\":40,\"handednessFragilityScore\":70.1,\"weatherFragilityScore\":72.7,\"pitchMixFitScore\":59.1,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\",\"high_hrforce_fragility_flag\",\"weather_profile_conflict_flag\",\"handedness_mismatch_flag\"]},{\"teamRole\":\"home\",\"teamName\":\"Athletics\",\"pitcherName\":\"J.T. Ginn\",\"collapseRiskScore\":57,\"starterProfileScore\":43.7,\"handednessFragilityScore\":60.4,\"weatherFragilityScore\":67.6,\"pitchMixFitScore\":57.9,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\",\"high_hrforce_fragility_flag\"]}],\"mlb-823938\":[{\"teamRole\":\"away\",\"teamName\":\"Tampa Bay Rays\",\"pitcherName\":\"Nick Martinez\",\"collapseRiskScore\":58.3,\"starterProfileScore\":39.9,\"handednessFragilityScore\":67.5,\"weatherFragilityScore\":72.1,\"pitchMixFitScore\":61.9,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\",\"high_hrforce_fragility_flag\",\"handedness_mismatch_flag\"]},{\"teamRole\":\"home\",\"teamName\":\"Los Angeles Dodgers\",\"pitcherName\":\"Eric Lauer\",\"collapseRiskScore\":58.7,\"starterProfileScore\":43.5,\"handednessFragilityScore\":55.5,\"weatherFragilityScore\":71.9,\"pitchMixFitScore\":53.1,\"confidenceScore\":98,\"flags\":[\"opener_or_bulk_primary_flag\",\"repeat_opponent_flag\",\"high_hrforce_fragility_flag\"]}]}}"
+      },
+      "stale": false,
+      "errors": [
+        "Incomplete source completeness: partial",
+        "Missing source items: 1",
+        "Unresolved source rows: 1"
+      ],
+      "warnings": [
+        "Unresolved source rows: 1"
+      ],
+      "ok": false
+    },
+    {
+      "source_name": "mlb_env1",
+      "source_family": "environment-addendum",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:43:35.798Z",
+        "cache_valid_until": "2026-06-16T07:43:35.798Z",
+        "expected_item_count": 10,
+        "actual_item_count": 10,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"modelId\":\"MLB-ENV1\",\"modelVersion\":\"MLB-ENV1.2026-06-13.v3\",\"artifactPath\":\"data-private/warehouse/mlb/environment-adjustments/2026-06-15.json\",\"table\":\"mlb_game_environment_adjustments_daily\",\"summary\":{\"games\":10,\"withGamePk\":10,\"withFicWeather\":10,\"withFicHourlyWeather\":7,\"withExactUmpire\":0,\"withLocalStartContext\":10,\"eveningLocalStarts\":10,\"nightLocalStarts\":5,\"lateLocalStarts\":0,\"weakGameTimeCarrySignals\":0,\"fadingGameTimeCarrySignals\":4,\"higherRunSignals\":5,\"lowerRunSignals\":1,\"avgExpectedHitsDelta\":0,\"avgExpectedHrDelta\":0.126,\"avgExpectedTotalRunsDelta\":0.177,\"maxExpectedTotalRunsDelta\":0.472,\"minExpectedTotalRunsDelta\":-0.68}}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    },
+    {
+      "source_name": "mlb_rp2",
+      "source_family": "bullpen-addendum",
+      "required_for_prediction": true,
+      "required_for_lane": true,
+      "status": {
+        "source_date": "2026-06-15",
+        "last_status": "success",
+        "last_completeness_status": "complete",
+        "last_success_at": "2026-06-15T19:45:08.391Z",
+        "cache_valid_until": "2026-06-16T07:45:08.391Z",
+        "expected_item_count": 20,
+        "actual_item_count": 20,
+        "missing_item_count": 0,
+        "unresolved_count": 0,
+        "notes": "{\"modelId\":\"MLB-RP2\",\"modelVersion\":\"MLB-RP2.2026-06-12.v3\",\"artifactPath\":\"data-private/warehouse/mlb/relief-projections-v1/2026-06-15.json\",\"table\":\"mlb_relief_pitcher_projection_v1_daily\",\"summary\":{\"teamSides\":20,\"games\":10,\"legacyRows\":0,\"fangraphsRows\":20,\"missingRows\":0,\"avgProjectedReliefRunsAllowed\":2.159,\"avgBridgeStressScore\":42.2,\"taxedBridgeRows\":0,\"watchBridgeRows\":4}}"
+      },
+      "stale": false,
+      "errors": [],
+      "warnings": [],
+      "ok": true
+    }
+  ],
+  "ok": false,
+  "publish_allowed": false
+}

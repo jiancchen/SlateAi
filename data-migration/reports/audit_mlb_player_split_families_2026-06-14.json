@@ -1,0 +1,74 @@
+{
+  "audit": "mlb-player-split-families",
+  "date": "2026-06-14",
+  "generatedAt": "2026-06-15T18:47:57.725Z",
+  "table": "mlb_player_split_family_snapshots",
+  "expectedLineupPlayers": 252,
+  "expectedPitchers": 32,
+  "counts": {
+    "totalRows": 696,
+    "hitterHandednessRows": 504,
+    "hitterPlayersWithHandedness": 252,
+    "pitcherHandednessRows": 64,
+    "pitcherDayNightRows": 64,
+    "pitcherHomeAwayRows": 64,
+    "byFamily": [
+      {
+        "player_role": "hitter",
+        "split_family": "handedness",
+        "split_key": "vs_lhp",
+        "rows": 252
+      },
+      {
+        "player_role": "hitter",
+        "split_family": "handedness",
+        "split_key": "vs_rhp",
+        "rows": 252
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "day_night",
+        "split_key": "day",
+        "rows": 32
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "day_night",
+        "split_key": "night",
+        "rows": 32
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "handedness",
+        "split_key": "vs_lhb",
+        "rows": 32
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "handedness",
+        "split_key": "vs_rhb",
+        "rows": 32
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "home_away",
+        "split_key": "away",
+        "rows": 32
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "home_away",
+        "split_key": "home",
+        "rows": 32
+      }
+    ]
+  },
+  "missing": {
+    "hitterHandedness": [],
+    "unusableSelectedHitterHandedness": [],
+    "pitcherListedAsHitter": []
+  },
+  "hardFailures": [],
+  "warnings": [],
+  "status": "passed"
+}

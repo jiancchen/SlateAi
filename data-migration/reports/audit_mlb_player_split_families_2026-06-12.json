@@ -1,0 +1,121 @@
+{
+  "audit": "mlb-player-split-families",
+  "date": "2026-06-12",
+  "generatedAt": "2026-06-15T17:44:14.873Z",
+  "table": "mlb_player_split_family_snapshots",
+  "expectedLineupPlayers": 270,
+  "expectedPitchers": 30,
+  "counts": {
+    "totalRows": 447,
+    "hitterHandednessRows": 267,
+    "hitterPlayersWithHandedness": 267,
+    "pitcherHandednessRows": 60,
+    "pitcherDayNightRows": 60,
+    "pitcherHomeAwayRows": 60,
+    "byFamily": [
+      {
+        "player_role": "hitter",
+        "split_family": "handedness",
+        "split_key": "vs_lhp",
+        "rows": 80
+      },
+      {
+        "player_role": "hitter",
+        "split_family": "handedness",
+        "split_key": "vs_rhp",
+        "rows": 187
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "day_night",
+        "split_key": "day",
+        "rows": 30
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "day_night",
+        "split_key": "night",
+        "rows": 30
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "handedness",
+        "split_key": "vs_lhb",
+        "rows": 30
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "handedness",
+        "split_key": "vs_rhb",
+        "rows": 30
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "home_away",
+        "split_key": "away",
+        "rows": 30
+      },
+      {
+        "player_role": "pitcher",
+        "split_family": "home_away",
+        "split_key": "home",
+        "rows": 30
+      }
+    ]
+  },
+  "missing": {
+    "hitterHandedness": [
+      {
+        "gameId": "dodgers-white-sox",
+        "gameTitle": "Dodgers @ White Sox",
+        "teamRole": "away",
+        "teamName": "Dodgers",
+        "playerId": "642020",
+        "playerName": "Chuckie Robinson",
+        "battingOrder": 9,
+        "position": "C",
+        "bats": "R",
+        "opposingStarter": "Anthony Kay",
+        "opposingStarterHand": "L",
+        "hasSelectedSplit": false,
+        "hasFullEspnSplits": false
+      },
+      {
+        "gameId": "phillies-brewers",
+        "gameTitle": "Phillies @ Brewers",
+        "teamRole": "away",
+        "teamName": "Phillies",
+        "playerId": "687282",
+        "playerName": "Gabriel Rincones Jr.",
+        "battingOrder": 7,
+        "position": "RF",
+        "bats": "L",
+        "opposingStarter": "Jacob Misiorowski",
+        "opposingStarterHand": "R",
+        "hasSelectedSplit": false,
+        "hasFullEspnSplits": false
+      },
+      {
+        "gameId": "cardinals-twins",
+        "gameTitle": "Cardinals @ Twins",
+        "teamRole": "away",
+        "teamName": "Cardinals",
+        "playerId": "691458",
+        "playerName": "Blaze Jordan",
+        "battingOrder": 8,
+        "position": "3B",
+        "bats": "R",
+        "opposingStarter": "Joe Ryan",
+        "opposingStarterHand": "R",
+        "hasSelectedSplit": false,
+        "hasFullEspnSplits": false
+      }
+    ],
+    "pitcherListedAsHitter": []
+  },
+  "hardFailures": [
+    "hitter-handedness-player-coverage-low:267/270"
+  ],
+  "warnings": [],
+  "status": "failed"
+}

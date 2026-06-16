@@ -1,0 +1,1576 @@
+{
+  "audit": "public-mlb-slate",
+  "date": "2026-06-15",
+  "baseUrl": null,
+  "generatedAt": "2026-06-15T21:54:17.976Z",
+  "status": "pass",
+  "summary": {
+    "totalGames": 10,
+    "mlbGames": 10,
+    "nonMlbGames": 0
+  },
+  "games": [
+    {
+      "id": "marlins-phillies",
+      "title": "Marlins @ Phillies",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 17,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": false,
+      "hasReliefProjection": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "predictionEligibility": {
+        "version": "mlb-prediction-eligibility-v1",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "side": "away",
+            "teamName": "Marlins",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.653Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          },
+          "home": {
+            "side": "home",
+            "teamName": "Phillies",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.653Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          }
+        },
+        "pitchers": {
+          "away": {
+            "side": "away",
+            "name": "Ryan Gusto",
+            "id": 687473,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "tiny-sample",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          },
+          "home": {
+            "side": "home",
+            "name": "Zack Wheeler",
+            "id": 554430,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "sp1": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18,
+          "hitterContext": {
+            "away": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            },
+            "home": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            }
+          },
+          "pitcherSlotHitters": [],
+          "missingPitchFitHitters": [],
+          "missingBatterProjectionHitters": [],
+          "missingHandednessSplitHitters": []
+        }
+      },
+      "failures": []
+    },
+    {
+      "id": "royals-nationals",
+      "title": "Royals @ Nationals",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": false,
+      "hasReliefProjection": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "predictionEligibility": {
+        "version": "mlb-prediction-eligibility-v1",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "side": "away",
+            "teamName": "Royals",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.654Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          },
+          "home": {
+            "side": "home",
+            "teamName": "Nationals",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.654Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          }
+        },
+        "pitchers": {
+          "away": {
+            "side": "away",
+            "name": "Mitch Spence",
+            "id": 687765,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "debut-window",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          },
+          "home": {
+            "side": "home",
+            "name": "Andrew Alvarez",
+            "id": 674841,
+            "hand": "L",
+            "complete": true,
+            "usageStatus": "tiny-sample",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "sp1": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18,
+          "hitterContext": {
+            "away": {
+              "totalHitters": 9,
+              "opposingStarterHand": "L",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            },
+            "home": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            }
+          },
+          "pitcherSlotHitters": [],
+          "missingPitchFitHitters": [],
+          "missingBatterProjectionHitters": [],
+          "missingHandednessSplitHitters": []
+        }
+      },
+      "failures": []
+    },
+    {
+      "id": "mets-reds",
+      "title": "Mets @ Reds",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": false,
+      "hasReliefProjection": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "predictionEligibility": {
+        "version": "mlb-prediction-eligibility-v1",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "side": "away",
+            "teamName": "Mets",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.655Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          },
+          "home": {
+            "side": "home",
+            "teamName": "Reds",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.655Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          }
+        },
+        "pitchers": {
+          "away": {
+            "side": "away",
+            "name": "Tobias Myers",
+            "id": 668964,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "long-layoff",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          },
+          "home": {
+            "side": "home",
+            "name": "Chase Burns",
+            "id": 695505,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "sp1": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18,
+          "hitterContext": {
+            "away": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            },
+            "home": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            }
+          },
+          "pitcherSlotHitters": [],
+          "missingPitchFitHitters": [],
+          "missingBatterProjectionHitters": [],
+          "missingHandednessSplitHitters": []
+        }
+      },
+      "failures": []
+    },
+    {
+      "id": "padres-cardinals",
+      "title": "Padres @ Cardinals",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 15,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": false,
+      "hasReliefProjection": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": true,
+      "hasDraftKingsFullGameLines": true,
+      "hasDraftKingsFirstFiveLines": true,
+      "first5TotalLineSource": "posted",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "predictionEligibility": {
+        "version": "mlb-prediction-eligibility-v1",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "side": "away",
+            "teamName": "Padres",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.656Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          },
+          "home": {
+            "side": "home",
+            "teamName": "Cardinals",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.656Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          }
+        },
+        "pitchers": {
+          "away": {
+            "side": "away",
+            "name": "Lucas Giolito",
+            "id": 608337,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-primary",
+              "role": "primary",
+              "roleLabel": "PRIM",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": true,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          },
+          "home": {
+            "side": "home",
+            "name": "Dustin May",
+            "id": 669160,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "sp1": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18,
+          "hitterContext": {
+            "away": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            },
+            "home": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            }
+          },
+          "pitcherSlotHitters": [],
+          "missingPitchFitHitters": [],
+          "missingBatterProjectionHitters": [],
+          "missingHandednessSplitHitters": []
+        }
+      },
+      "failures": []
+    },
+    {
+      "id": "rockies-cubs",
+      "title": "Rockies @ Cubs",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 17,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": false,
+      "hasReliefProjection": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "predictionEligibility": {
+        "version": "mlb-prediction-eligibility-v1",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "side": "away",
+            "teamName": "Rockies",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.657Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          },
+          "home": {
+            "side": "home",
+            "teamName": "Cubs",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.657Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          }
+        },
+        "pitchers": {
+          "away": {
+            "side": "away",
+            "name": "Michael Lorenzen",
+            "id": 547179,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          },
+          "home": {
+            "side": "home",
+            "name": "Shota Imanaga",
+            "id": 684007,
+            "hand": "L",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "sp1": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18,
+          "hitterContext": {
+            "away": {
+              "totalHitters": 9,
+              "opposingStarterHand": "L",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            },
+            "home": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            }
+          },
+          "pitcherSlotHitters": [],
+          "missingPitchFitHitters": [],
+          "missingBatterProjectionHitters": [],
+          "missingHandednessSplitHitters": []
+        }
+      },
+      "failures": []
+    },
+    {
+      "id": "twins-rangers",
+      "title": "Twins @ Rangers",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 16,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": false,
+      "hasReliefProjection": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "predictionEligibility": {
+        "version": "mlb-prediction-eligibility-v1",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "side": "away",
+            "teamName": "Twins",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.659Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          },
+          "home": {
+            "side": "home",
+            "teamName": "Rangers",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.659Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          }
+        },
+        "pitchers": {
+          "away": {
+            "side": "away",
+            "name": "Mike Paredes",
+            "id": 702474,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "tiny-sample",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          },
+          "home": {
+            "side": "home",
+            "name": "MacKenzie Gore",
+            "id": 669022,
+            "hand": "L",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "sp1": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18,
+          "hitterContext": {
+            "away": {
+              "totalHitters": 9,
+              "opposingStarterHand": "L",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            },
+            "home": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            }
+          },
+          "pitcherSlotHitters": [],
+          "missingPitchFitHitters": [],
+          "missingBatterProjectionHitters": [],
+          "missingHandednessSplitHitters": []
+        }
+      },
+      "failures": []
+    },
+    {
+      "id": "tigers-astros",
+      "title": "Tigers @ Astros",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": false,
+      "hasReliefProjection": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "predictionEligibility": {
+        "version": "mlb-prediction-eligibility-v1",
+        "eligible": true,
+        "status": "official",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "side": "away",
+            "teamName": "Tigers",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.660Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          },
+          "home": {
+            "side": "home",
+            "teamName": "Astros",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.660Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          }
+        },
+        "pitchers": {
+          "away": {
+            "side": "away",
+            "name": "Troy Melton",
+            "id": 675512,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "new-look",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          },
+          "home": {
+            "side": "home",
+            "name": "Kai-Wei Teng",
+            "id": 678906,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "sp1": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18,
+          "hitterContext": {
+            "away": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            },
+            "home": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            }
+          },
+          "pitcherSlotHitters": [],
+          "missingPitchFitHitters": [],
+          "missingBatterProjectionHitters": [],
+          "missingHandednessSplitHitters": []
+        }
+      },
+      "failures": []
+    },
+    {
+      "id": "angels-diamondbacks",
+      "title": "Angels @ Diamondbacks",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 16,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": false,
+      "hasReliefProjection": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "predictionEligibility": {
+        "version": "mlb-prediction-eligibility-v1",
+        "eligible": true,
+        "status": "projected",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "side": "away",
+            "teamName": "Angels",
+            "status": "partial",
+            "normalizedStatus": "projected",
+            "source": "rotowire-supplement",
+            "snapshot": "2026-06-15T21:51:34.661Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": true,
+            "official": false,
+            "partial": false,
+            "missing": false
+          },
+          "home": {
+            "side": "home",
+            "teamName": "Diamondbacks",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.661Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          }
+        },
+        "pitchers": {
+          "away": {
+            "side": "away",
+            "name": "Walbert Ureña",
+            "id": 700712,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          },
+          "home": {
+            "side": "home",
+            "name": "Ryne Nelson",
+            "id": 669194,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "sp1": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18,
+          "hitterContext": {
+            "away": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            },
+            "home": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            }
+          },
+          "pitcherSlotHitters": [],
+          "missingPitchFitHitters": [],
+          "missingBatterProjectionHitters": [],
+          "missingHandednessSplitHitters": []
+        }
+      },
+      "failures": []
+    },
+    {
+      "id": "pirates-athletics",
+      "title": "Pirates @ Athletics",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": false,
+      "hasReliefProjection": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "predictionEligibility": {
+        "version": "mlb-prediction-eligibility-v1",
+        "eligible": true,
+        "status": "projected",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "side": "away",
+            "teamName": "Pirates",
+            "status": "partial",
+            "normalizedStatus": "projected",
+            "source": "rotowire-supplement",
+            "snapshot": "2026-06-15T21:51:34.662Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": true,
+            "official": false,
+            "partial": false,
+            "missing": false
+          },
+          "home": {
+            "side": "home",
+            "teamName": "Athletics",
+            "status": "partial",
+            "normalizedStatus": "projected",
+            "source": "rotowire-supplement",
+            "snapshot": "2026-06-15T21:51:34.662Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": true,
+            "official": false,
+            "partial": false,
+            "missing": false
+          }
+        },
+        "pitchers": {
+          "away": {
+            "side": "away",
+            "name": "Jared Jones",
+            "id": 683003,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "new-look",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          },
+          "home": {
+            "side": "home",
+            "name": "J.T. Ginn",
+            "id": 669372,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "sp1": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18,
+          "hitterContext": {
+            "away": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            },
+            "home": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            }
+          },
+          "pitcherSlotHitters": [],
+          "missingPitchFitHitters": [],
+          "missingBatterProjectionHitters": [],
+          "missingHandednessSplitHitters": []
+        }
+      },
+      "failures": []
+    },
+    {
+      "id": "rays-dodgers",
+      "title": "Rays @ Dodgers",
+      "players": 18,
+      "awayPlayers": 9,
+      "homePlayers": 9,
+      "summaries": 18,
+      "savantLinks": 18,
+      "matchupGrades": 18,
+      "splitRows": 18,
+      "pitchFits": 18,
+      "xwobaBubbles": 18,
+      "starterSplitStatuses": [
+        "fetched",
+        "fetched"
+      ],
+      "hasBridgeChain": true,
+      "hasRelieverShadow": false,
+      "hasReliefProjection": true,
+      "hasParkContext": true,
+      "hasFirstFive": true,
+      "hasFirstFivePush": true,
+      "hasDraftKingsBoard": false,
+      "hasDraftKingsFullGameLines": false,
+      "hasDraftKingsFirstFiveLines": false,
+      "first5TotalLineSource": "full-game-derived",
+      "hasMoneylineShape": true,
+      "hasFirstInning": true,
+      "predictionEligibility": {
+        "version": "mlb-prediction-eligibility-v1",
+        "eligible": true,
+        "status": "projected",
+        "hardFailures": [],
+        "warnings": [],
+        "lineup": {
+          "away": {
+            "side": "away",
+            "teamName": "Rays",
+            "status": "partial",
+            "normalizedStatus": "projected",
+            "source": "rotowire-supplement",
+            "snapshot": "2026-06-15T21:51:34.663Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": true,
+            "official": false,
+            "partial": false,
+            "missing": false
+          },
+          "home": {
+            "side": "home",
+            "teamName": "Dodgers",
+            "status": "posted",
+            "normalizedStatus": "official",
+            "source": "official-feed",
+            "snapshot": "2026-06-15T21:51:34.663Z",
+            "hitterCount": 9,
+            "complete": true,
+            "projected": false,
+            "official": true,
+            "partial": false,
+            "missing": false
+          }
+        },
+        "pitchers": {
+          "away": {
+            "side": "away",
+            "name": "Nick Martinez",
+            "id": 607259,
+            "hand": "R",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          },
+          "home": {
+            "side": "home",
+            "name": "Eric Lauer",
+            "id": 641778,
+            "hand": "L",
+            "complete": true,
+            "usageStatus": "season-only",
+            "roleContext": {
+              "source": "rotowire-listed",
+              "role": "starter",
+              "roleLabel": "",
+              "note": "",
+              "opener": null,
+              "hasContext": true
+            },
+            "isPrimaryBulk": false,
+            "hasOpener": false,
+            "espnSplitStatus": "fetched",
+            "hasStatMuse": true
+          }
+        },
+        "addendums": {
+          "park": true,
+          "environment": true,
+          "ficDailyMatchups": true,
+          "rp2": true,
+          "sp1": true,
+          "bridgeChain": true,
+          "relieverShadow": false,
+          "firstFive": true,
+          "firstInning": true,
+          "pitchFitHitters": 18,
+          "batterProjectionHitters": 18,
+          "handednessSplitHitters": 18,
+          "totalHitters": 18,
+          "hitterContext": {
+            "away": {
+              "totalHitters": 9,
+              "opposingStarterHand": "L",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            },
+            "home": {
+              "totalHitters": 9,
+              "opposingStarterHand": "R",
+              "pitchFitHitters": 9,
+              "batterProjectionHitters": 9,
+              "handednessSplitHitters": 9,
+              "pitcherSlotHitters": [],
+              "missingPitchFitHitters": [],
+              "missingBatterProjectionHitters": [],
+              "missingHandednessSplitHitters": []
+            }
+          },
+          "pitcherSlotHitters": [],
+          "missingPitchFitHitters": [],
+          "missingBatterProjectionHitters": [],
+          "missingHandednessSplitHitters": []
+        }
+      },
+      "failures": []
+    }
+  ],
+  "props": {
+    "total": 380,
+    "byType": {
+      "pitcherStrikeouts": 4,
+      "hitRunRbi": 74,
+      "walks": 46,
+      "totalBases": 54,
+      "singles": 52,
+      "hits": 52,
+      "runs": 54,
+      "rbi": 44
+    },
+    "pitcherStrikeoutDraftKings": 4,
+    "sources": [
+      "typed MLB DB day-game loader",
+      "models/mlb/app-model.js",
+      "sql-mlb.db prop_market_snapshots"
+    ],
+    "mergedFrom": [
+      "mlb-player-props",
+      "mlb-player-props-legacy"
+    ]
+  },
+  "valueBoard": {
+    "moneylineRows": 10,
+    "first5MoneylineRows": 10,
+    "first5TotalRows": 10,
+    "firstInningRows": 10,
+    "fullGameTotalRows": 10,
+    "totalBaseRows": 54,
+    "pitcherStrikeoutRows": 4,
+    "gameCount": 10
+  },
+  "draftKingsLineCoverage": {
+    "expectedGames": 4,
+    "boardGames": 4,
+    "fullGameLineGames": 4,
+    "firstFiveLineGames": 4,
+    "postedFirst5TotalGames": 4
+  },
+  "failureCount": 0,
+  "hardFailures": []
+}

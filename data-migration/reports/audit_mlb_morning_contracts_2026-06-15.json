@@ -1,0 +1,12 @@
+{
+  "audit": "mlb-morning-contracts",
+  "date": "2026-06-15",
+  "generatedAt": "2026-06-15T21:54:04.116Z",
+  "status": "pass",
+  "gameCount": 10,
+  "propCount": 4,
+  "failureCount": 0,
+  "warningCount": 0,
+  "warnings": [],
+  "failures": []
+}

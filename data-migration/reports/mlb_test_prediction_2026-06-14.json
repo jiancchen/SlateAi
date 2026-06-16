@@ -1,0 +1,736 @@
+{
+  "run": "mlb-test-prediction",
+  "runId": "mlb-test-prediction-2026-06-14-20260615184808",
+  "date": "2026-06-14",
+  "generatedAt": "2026-06-15T18:48:09.103Z",
+  "skipRun": true,
+  "allowSourceGaps": true,
+  "maxPicks": 8,
+  "currentSummaryId": "2026-06-14",
+  "steps": [],
+  "eligibility": {
+    "totalGames": 14,
+    "eligibleGames": 12,
+    "pendingGames": 2,
+    "officialLineupGames": 11,
+    "projectedLineupGames": 1,
+    "blockedGames": [
+      {
+        "gameId": "astros-royals",
+        "title": "Astros @ Royals",
+        "status": "pending",
+        "hardFailures": [
+          "pitch-fit-hitters-missing",
+          "hitter-handedness-splits-missing"
+        ],
+        "missingPitchFitHitters": [
+          "away:8:Raynel Delgado"
+        ],
+        "missingBatterProjectionHitters": [],
+        "missingHandednessSplitHitters": [
+          "away:8:Raynel Delgado"
+        ],
+        "pitcherSlotHitters": []
+      },
+      {
+        "gameId": "rays-angels",
+        "title": "Rays @ Angels",
+        "status": "pending",
+        "hardFailures": [
+          "pitch-fit-hitters-missing",
+          "hitter-handedness-splits-missing"
+        ],
+        "missingPitchFitHitters": [
+          "home:9:Logan Porter"
+        ],
+        "missingBatterProjectionHitters": [],
+        "missingHandednessSplitHitters": [
+          "home:9:Logan Porter"
+        ],
+        "pitcherSlotHitters": []
+      }
+    ]
+  },
+  "bestPicks": [
+    {
+      "gameId": "diamondbacks-reds",
+      "title": "Diamondbacks @ Reds",
+      "start": "10:40 AM PT",
+      "market": "First Inning",
+      "pick": "YRFI",
+      "edge": 41.5,
+      "probability": "91.5%",
+      "score": 132,
+      "detail": "Diamondbacks top order is driving early pressure (77.6); Diamondbacks handedness splits fit the starter (64)",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "dodgers-white-sox",
+      "title": "Dodgers @ White Sox",
+      "start": "11:10 AM PT",
+      "market": "First Inning",
+      "pick": "YRFI",
+      "edge": 41.5,
+      "probability": "91.5%",
+      "score": 132,
+      "detail": "Dodgers top order is driving early pressure (72); Dodgers handedness splits fit the starter (70.1)",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "rockies-athletics",
+      "title": "Rockies @ Athletics",
+      "start": "12:05 PM PT",
+      "market": "First Inning",
+      "pick": "YRFI",
+      "edge": 40.6,
+      "probability": "90.6%",
+      "score": 130,
+      "detail": "Rockies top order is driving early pressure (63.2); Rockies batter-vs-starter kernel fits (62.8)",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "rangers-red-sox",
+      "title": "Rangers @ Red Sox",
+      "start": "4:20 PM PT",
+      "market": "First Inning",
+      "pick": "YRFI",
+      "edge": 40.6,
+      "probability": "90.6%",
+      "score": 130,
+      "detail": "Rangers starter has leaked 1st-inning runs in 40% of recent starts; Rangers starter has real season 1st-inning damage (50% run games, 1/start)",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "padres-orioles",
+      "title": "Padres @ Orioles",
+      "start": "10:35 AM PT",
+      "market": "First Inning",
+      "pick": "YRFI",
+      "edge": 34.7,
+      "probability": "84.7%",
+      "score": 114,
+      "detail": "Padres top order is driving early pressure (94); Padres batter-vs-starter kernel fits (91.9)",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "cardinals-twins",
+      "title": "Cardinals @ Twins",
+      "start": "11:10 AM PT",
+      "market": "First Inning",
+      "pick": "YRFI",
+      "edge": 34.2,
+      "probability": "84.2%",
+      "score": 113,
+      "detail": "Cardinals top order is driving early pressure (85.1); Cardinals handedness splits fit the starter (65.4)",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "cubs-giants",
+      "title": "Cubs @ Giants",
+      "start": "12:10 PM PT",
+      "market": "First 5 ML",
+      "pick": "Giants",
+      "edge": 2.7,
+      "probability": "80.9% lead / 9.3% push",
+      "score": 96,
+      "detail": "1.9-4.6 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "cubs-giants",
+      "title": "Cubs @ Giants",
+      "start": "12:10 PM PT",
+      "market": "First Inning",
+      "pick": "YRFI",
+      "edge": 27.8,
+      "probability": "77.8%",
+      "score": 96,
+      "detail": "Giants top order is driving early pressure (86.4); Giants top third has multiple strong split bats",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "cardinals-twins",
+      "title": "Cardinals @ Twins",
+      "start": "11:10 AM PT",
+      "market": "First 5 ML",
+      "pick": "Cardinals",
+      "edge": 2.6,
+      "probability": "79.6% lead / 9.7% push",
+      "score": 92,
+      "detail": "4.6-2 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "marlins-pirates",
+      "title": "Marlins @ Pirates",
+      "start": "9:15 AM PT",
+      "market": "First Inning",
+      "pick": "YRFI",
+      "edge": 23.2,
+      "probability": "73.2%",
+      "score": 84,
+      "detail": "Pirates top order is driving early pressure (68.6); Pirates handedness splits fit the starter (68.1)",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "cubs-giants",
+      "title": "Cubs @ Giants",
+      "start": "12:10 PM PT",
+      "market": "Full Game Total",
+      "pick": "Over 8",
+      "edge": 2.8,
+      "probability": null,
+      "score": 74,
+      "detail": "Over lean with a 2.8-run edge against 8.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "phillies-brewers",
+      "title": "Phillies @ Brewers",
+      "start": "11:10 AM PT",
+      "market": "First 5 ML",
+      "pick": "Brewers",
+      "edge": 1.9,
+      "probability": "75.6% lead / 13.7% push",
+      "score": 71,
+      "detail": "1.1-3 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "mariners-nationals",
+      "title": "Mariners @ Nationals",
+      "start": "10:35 AM PT",
+      "market": "Full Game Total",
+      "pick": "Over 10.5",
+      "edge": 2.5,
+      "probability": null,
+      "score": 69,
+      "detail": "Over lean with a 2.5-run edge against 10.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "rockies-athletics",
+      "title": "Rockies @ Athletics",
+      "start": "12:05 PM PT",
+      "market": "First 5 ML",
+      "pick": "Athletics",
+      "edge": 2,
+      "probability": "70.9% lead / 11.6% push",
+      "score": 69,
+      "detail": "2.7-4.7 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "diamondbacks-reds",
+      "title": "Diamondbacks @ Reds",
+      "start": "10:40 AM PT",
+      "market": "Full Game Total",
+      "pick": "Over 10",
+      "edge": 2.2,
+      "probability": null,
+      "score": 64,
+      "detail": "Over lean with a 2.2-run edge against 10.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "phillies-brewers",
+      "title": "Phillies @ Brewers",
+      "start": "11:10 AM PT",
+      "market": "First Inning",
+      "pick": "NRFI",
+      "edge": 14,
+      "probability": "64%",
+      "score": 60,
+      "detail": "Phillies starter has stayed clean in the 1st across recent starts; Phillies starter is in the green this year (4.6 WAR)",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "cubs-giants",
+      "title": "Cubs @ Giants",
+      "start": "12:10 PM PT",
+      "market": "First 5 Total",
+      "pick": "Over 4.5",
+      "edge": 2,
+      "probability": null,
+      "score": 60,
+      "detail": "Over lean with a 2.0-run edge against 4.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "cardinals-twins",
+      "title": "Cardinals @ Twins",
+      "start": "11:10 AM PT",
+      "market": "Full Game Total",
+      "pick": "Over 9.5",
+      "edge": 1.9,
+      "probability": null,
+      "score": 58,
+      "detail": "Over lean with a 1.9-run edge against 9.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "dodgers-white-sox",
+      "title": "Dodgers @ White Sox",
+      "start": "11:10 AM PT",
+      "market": "Full Game Total",
+      "pick": "Over 9.5",
+      "edge": 1.7,
+      "probability": null,
+      "score": 55,
+      "detail": "Over lean with a 1.7-run edge against 9.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "mariners-nationals",
+      "title": "Mariners @ Nationals",
+      "start": "10:35 AM PT",
+      "market": "First 5 Total",
+      "pick": "Over 5.5",
+      "edge": 1.6,
+      "probability": null,
+      "score": 53,
+      "detail": "Over lean with a 1.6-run edge against 5.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "diamondbacks-reds",
+      "title": "Diamondbacks @ Reds",
+      "start": "10:40 AM PT",
+      "market": "First 5 Total",
+      "pick": "Over 5.5",
+      "edge": 1.5,
+      "probability": null,
+      "score": 51,
+      "detail": "Over lean with a 1.5-run edge against 5.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "yankees-blue-jays",
+      "title": "Yankees @ Blue Jays",
+      "start": "10:37 AM PT",
+      "market": "Full Game Total",
+      "pick": "Under 8.5",
+      "edge": 1.3,
+      "probability": null,
+      "score": 47,
+      "detail": "Under lean with a 1.3-run edge against 8.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "cardinals-twins",
+      "title": "Cardinals @ Twins",
+      "start": "11:10 AM PT",
+      "market": "First 5 Total",
+      "pick": "Over 5.5",
+      "edge": 1.1,
+      "probability": null,
+      "score": 34,
+      "detail": "Over lean with a 1.1-run edge against 5.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "padres-orioles",
+      "title": "Padres @ Orioles",
+      "start": "10:35 AM PT",
+      "market": "Full Game Total",
+      "pick": "Over 10.5",
+      "edge": 0.9,
+      "probability": null,
+      "score": 30,
+      "detail": "Over lean with a 0.9-run edge against 10.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "padres-orioles",
+      "title": "Padres @ Orioles",
+      "start": "10:35 AM PT",
+      "market": "First 5 Total",
+      "pick": "Over 5.5",
+      "edge": 0.9,
+      "probability": null,
+      "score": 30,
+      "detail": "Over lean with a 0.9-run edge against 5.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "marlins-pirates",
+      "title": "Marlins @ Pirates",
+      "start": "9:15 AM PT",
+      "market": "First 5 ML",
+      "pick": "Pirates",
+      "edge": 0.9,
+      "probability": "57.7% lead / 19.7% push",
+      "score": 29,
+      "detail": "1.4-2.3 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "dodgers-white-sox",
+      "title": "Dodgers @ White Sox",
+      "start": "11:10 AM PT",
+      "market": "First 5 Total",
+      "pick": "Over 5.5",
+      "edge": 0.7,
+      "probability": null,
+      "score": 27,
+      "detail": "Over lean with a 0.7-run edge against 5.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "mariners-nationals",
+      "title": "Mariners @ Nationals",
+      "start": "10:35 AM PT",
+      "market": "First Inning",
+      "pick": "YRFI",
+      "edge": 4.7,
+      "probability": "54.7%",
+      "score": 26,
+      "detail": "Nationals top order is driving early pressure (68.7); Mariners starter did not carry positive WAR last year",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "dodgers-white-sox",
+      "title": "Dodgers @ White Sox",
+      "start": "11:10 AM PT",
+      "market": "First 5 ML",
+      "pick": "Dodgers",
+      "edge": 0.8,
+      "probability": "54.6% lead / 15.6% push",
+      "score": 24,
+      "detail": "3.5-2.7 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "marlins-pirates",
+      "title": "Marlins @ Pirates",
+      "start": "9:15 AM PT",
+      "market": "Full Game Total",
+      "pick": "Over 6.5",
+      "edge": 0.5,
+      "probability": null,
+      "score": 23,
+      "detail": "Over lean with a 0.5-run edge against 6.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "braves-mets",
+      "title": "Braves @ Mets",
+      "start": "10:40 AM PT",
+      "market": "First 5 Total",
+      "pick": "Over 4.5",
+      "edge": 0.5,
+      "probability": null,
+      "score": 23,
+      "detail": "Over lean with a 0.5-run edge against 4.5.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "rockies-athletics",
+      "title": "Rockies @ Athletics",
+      "start": "12:05 PM PT",
+      "market": "First 5 Total",
+      "pick": "Over 8.5",
+      "edge": 1.1,
+      "probability": null,
+      "score": 20,
+      "detail": "Under lean with a 1.1-run edge against 8.5. ENV/RP2 addendum veto: ENV1/FIC HR-run carry conflicts with a fragile under (100°F | 1% precip | weather helps carry; ENV1 HRForce 1.6; material HRForce 1.6; repeat-opponent starter damage; RP2 bridge can enter early). Tail overlay keeps the over alive because the failure mode is an actual run-explosion path, not a clean under.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "yankees-blue-jays",
+      "title": "Yankees @ Blue Jays",
+      "start": "10:37 AM PT",
+      "market": "First 5 ML",
+      "pick": "Yankees",
+      "edge": 0.6,
+      "probability": "51.5% lead / 18.1% push",
+      "score": 16,
+      "detail": "2.7-2.1 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "braves-mets",
+      "title": "Braves @ Mets",
+      "start": "10:40 AM PT",
+      "market": "First Inning",
+      "pick": "NRFI",
+      "edge": 2.1,
+      "probability": "52.1%",
+      "score": 10,
+      "detail": "Mets handedness splits are weak against the starter (34.8); Braves starter has stayed clean in the 1st across recent starts",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "diamondbacks-reds",
+      "title": "Diamondbacks @ Reds",
+      "start": "10:40 AM PT",
+      "market": "First 5 ML",
+      "pick": "Reds",
+      "edge": 0.4,
+      "probability": "48.3% lead / 15.2% push",
+      "score": 8,
+      "detail": "3.3-3.7 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "yankees-blue-jays",
+      "title": "Yankees @ Blue Jays",
+      "start": "10:37 AM PT",
+      "market": "First Inning",
+      "pick": "YRFI",
+      "edge": 0.8,
+      "probability": "50.8%",
+      "score": 7,
+      "detail": "Yankees starter has leaked 1st-inning runs in 40% of recent starts; Yankees starter has real season 1st-inning damage (25% run games, 0.4/start)",
+      "source": "M2 first-inning model"
+    },
+    {
+      "gameId": "rangers-red-sox",
+      "title": "Rangers @ Red Sox",
+      "start": "4:20 PM PT",
+      "market": "First 5 Total",
+      "pick": "Over 4.5",
+      "edge": 0.3,
+      "probability": null,
+      "score": 5,
+      "detail": "Model projection 4.8 is essentially on the posted 4.5. Tail overlay keeps the over alive because the failure mode is an actual run-explosion path, not a clean under.",
+      "source": "M2 totals"
+    },
+    {
+      "gameId": "padres-orioles",
+      "title": "Padres @ Orioles",
+      "start": "10:35 AM PT",
+      "market": "First 5 ML",
+      "pick": "Orioles",
+      "edge": 0.2,
+      "probability": "45.1% lead / 16.1% push",
+      "score": 0,
+      "detail": "3.1-3.3 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "braves-mets",
+      "title": "Braves @ Mets",
+      "start": "10:40 AM PT",
+      "market": "First 5 ML",
+      "pick": "Mets",
+      "edge": 0.2,
+      "probability": "44.3% lead / 18.3% push",
+      "score": -1,
+      "detail": "2.4-2.6 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "rangers-red-sox",
+      "title": "Rangers @ Red Sox",
+      "start": "4:20 PM PT",
+      "market": "First 5 ML",
+      "pick": "Rangers",
+      "edge": 0.2,
+      "probability": "44.2% lead / 18.7% push",
+      "score": -1,
+      "detail": "2.5-2.3 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "mariners-nationals",
+      "title": "Mariners @ Nationals",
+      "start": "10:35 AM PT",
+      "market": "First 5 ML",
+      "pick": "Mariners",
+      "edge": 0.1,
+      "probability": "43.8% lead / 15.3% push",
+      "score": -4,
+      "detail": "3.6-3.5 projected F5 runs",
+      "source": "M2 first-five projected runs; tie is a first-five ML push"
+    },
+    {
+      "gameId": "mariners-nationals",
+      "title": "Mariners @ Nationals",
+      "start": "10:35 AM PT",
+      "market": "Moneyline",
+      "pick": "Mariners",
+      "edge": 8.6,
+      "probability": "56.9%",
+      "score": -85,
+      "detail": "Swingy; confidence 63; safety -85",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "marlins-pirates",
+      "title": "Marlins @ Pirates",
+      "start": "9:15 AM PT",
+      "market": "Moneyline",
+      "pick": "Marlins",
+      "edge": 0.1,
+      "probability": "70.7%",
+      "score": -101,
+      "detail": "Pass; confidence 52; safety -101",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "cardinals-twins",
+      "title": "Cardinals @ Twins",
+      "start": "11:10 AM PT",
+      "market": "Moneyline",
+      "pick": "Cardinals",
+      "edge": 10.2,
+      "probability": "50.7%",
+      "score": -110,
+      "detail": "Swingy; confidence 65; safety -110",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "phillies-brewers",
+      "title": "Phillies @ Brewers",
+      "start": "11:10 AM PT",
+      "market": "Moneyline",
+      "pick": "Brewers",
+      "edge": 13.1,
+      "probability": "48.1%",
+      "score": -111,
+      "detail": "Swingy; confidence 64; safety -111",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "padres-orioles",
+      "title": "Padres @ Orioles",
+      "start": "10:35 AM PT",
+      "market": "Moneyline",
+      "pick": "Padres",
+      "edge": 0.1,
+      "probability": "46.7%",
+      "score": -111,
+      "detail": "Pass; confidence 52; safety -111",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "dodgers-white-sox",
+      "title": "Dodgers @ White Sox",
+      "start": "11:10 AM PT",
+      "market": "Moneyline",
+      "pick": "Dodgers",
+      "edge": 5.6,
+      "probability": "67.2%",
+      "score": -119,
+      "detail": "Swingy; confidence 57; safety -119",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "braves-mets",
+      "title": "Braves @ Mets",
+      "start": "10:40 AM PT",
+      "market": "Moneyline",
+      "pick": "Braves",
+      "edge": 11.1,
+      "probability": "48.8%",
+      "score": -122,
+      "detail": "Pass; confidence 52; safety -122",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "rangers-red-sox",
+      "title": "Rangers @ Red Sox",
+      "start": "4:20 PM PT",
+      "market": "Moneyline",
+      "pick": "Rangers",
+      "edge": 3.7,
+      "probability": "51.2%",
+      "score": -132,
+      "detail": "Swingy; confidence 52; safety -132",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "rockies-athletics",
+      "title": "Rockies @ Athletics",
+      "start": "12:05 PM PT",
+      "market": "Moneyline",
+      "pick": "Athletics",
+      "edge": 4.4,
+      "probability": "66.6%",
+      "score": -139,
+      "detail": "Swingy; confidence 59; safety -139",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "yankees-blue-jays",
+      "title": "Yankees @ Blue Jays",
+      "start": "10:37 AM PT",
+      "market": "Moneyline",
+      "pick": "Yankees",
+      "edge": 7.8,
+      "probability": "56.7%",
+      "score": -140,
+      "detail": "Pass; confidence 56; safety -140",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "cubs-giants",
+      "title": "Cubs @ Giants",
+      "start": "12:10 PM PT",
+      "market": "Moneyline",
+      "pick": "Giants",
+      "edge": 3.4,
+      "probability": "56.9%",
+      "score": -162,
+      "detail": "Pass; confidence 52; safety -162",
+      "source": "M2 pick rankings"
+    },
+    {
+      "gameId": "diamondbacks-reds",
+      "title": "Diamondbacks @ Reds",
+      "start": "10:40 AM PT",
+      "market": "Moneyline",
+      "pick": "Reds",
+      "edge": 0.1,
+      "probability": "52.2%",
+      "score": -187,
+      "detail": "Pass; confidence 52; safety -187",
+      "source": "M2 pick rankings"
+    }
+  ],
+  "sourceSnapshot": {
+    "morning": {
+      "status": "missing",
+      "hardFailures": null,
+      "warnings": null,
+      "path": "data-migration/reports/mlb_morning_predictions_2026-06-14.json"
+    },
+    "predictionContract": {
+      "status": "fail",
+      "hardFailures": 3,
+      "warnings": 6,
+      "path": "data-migration/reports/audit_mlb_prediction_contract_2026-06-14.json"
+    },
+    "morningContracts": {
+      "status": "fail",
+      "hardFailures": 2,
+      "warnings": 0,
+      "path": "data-migration/reports/audit_mlb_morning_contracts_2026-06-14.json"
+    },
+    "publicAudit": {
+      "status": "fail",
+      "hardFailures": 14,
+      "warnings": 0,
+      "path": "data-migration/reports/audit_public_mlb_slate_2026-06-14_local.json"
+    },
+    "causalLedger": {
+      "status": "passed",
+      "hardFailures": 0,
+      "warnings": 0,
+      "path": "data-migration/reports/audit_mlb_causal_ledger_2026-06-14.json"
+    },
+    "splitFamilies": {
+      "status": "passed",
+      "hardFailures": 0,
+      "warnings": 0,
+      "path": "data-migration/reports/audit_mlb_player_split_families_2026-06-14.json"
+    },
+    "sp1": {
+      "status": "passed",
+      "hardFailures": 0,
+      "warnings": 0,
+      "path": "data-migration/reports/audit_mlb_sp1_2026-06-14.json"
+    }
+  }
+}

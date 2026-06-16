@@ -1,0 +1,438 @@
+{
+  "build": "mlb-starter-profile-addendum",
+  "modelVersion": "MLB-SP1.2026-06-15.v0.1",
+  "date": "2026-06-14",
+  "generatedAt": "2026-06-15T17:45:00.134Z",
+  "expectedProfiles": 28,
+  "insertedProfiles": 28,
+  "sourceStatus": "success",
+  "warnings": [],
+  "byGame": {
+    "mlb-823368": [
+      {
+        "teamRole": "away",
+        "teamName": "Miami Marlins",
+        "pitcherName": "Max Meyer",
+        "collapseRiskScore": 48.6,
+        "starterProfileScore": 51.5,
+        "handednessFragilityScore": 43.4,
+        "weatherFragilityScore": 59.6,
+        "pitchMixFitScore": 56.1,
+        "confidenceScore": 97.6,
+        "flags": []
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Pittsburgh Pirates",
+        "pitcherName": "Paul Skenes",
+        "collapseRiskScore": 50.7,
+        "starterProfileScore": 53.7,
+        "handednessFragilityScore": 32.6,
+        "weatherFragilityScore": 59.6,
+        "pitchMixFitScore": 51,
+        "confidenceScore": 97.6,
+        "flags": []
+      }
+    ],
+    "mlb-824823": [
+      {
+        "teamRole": "away",
+        "teamName": "San Diego Padres",
+        "pitcherName": "Walker Buehler",
+        "collapseRiskScore": 58.9,
+        "starterProfileScore": 42.7,
+        "handednessFragilityScore": 54.6,
+        "weatherFragilityScore": 74,
+        "pitchMixFitScore": 61.7,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Baltimore Orioles",
+        "pitcherName": "Trevor Rogers",
+        "collapseRiskScore": 56.8,
+        "starterProfileScore": 44.6,
+        "handednessFragilityScore": 50.6,
+        "weatherFragilityScore": 73.8,
+        "pitchMixFitScore": 56.8,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-822722": [
+      {
+        "teamRole": "away",
+        "teamName": "Seattle Mariners",
+        "pitcherName": "Emerson Hancock",
+        "collapseRiskScore": 50.7,
+        "starterProfileScore": 51.4,
+        "handednessFragilityScore": 32.4,
+        "weatherFragilityScore": 76.2,
+        "pitchMixFitScore": 55.4,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Washington Nationals",
+        "pitcherName": "Miles Mikolas",
+        "collapseRiskScore": 65.2,
+        "starterProfileScore": 37.9,
+        "handednessFragilityScore": 62.7,
+        "weatherFragilityScore": 80.5,
+        "pitchMixFitScore": 59.2,
+        "confidenceScore": 97.6,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag",
+          "weather_profile_conflict_flag"
+        ]
+      }
+    ],
+    "mlb-822801": [
+      {
+        "teamRole": "away",
+        "teamName": "New York Yankees",
+        "pitcherName": "Will Warren",
+        "collapseRiskScore": 48.5,
+        "starterProfileScore": 53.2,
+        "handednessFragilityScore": 38.1,
+        "weatherFragilityScore": 47.6,
+        "pitchMixFitScore": 56.6,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "repeat_opponent_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Toronto Blue Jays",
+        "pitcherName": "Patrick Corbin",
+        "collapseRiskScore": 60.2,
+        "starterProfileScore": 39.3,
+        "handednessFragilityScore": 76.7,
+        "weatherFragilityScore": 47.6,
+        "pitchMixFitScore": 61.3,
+        "confidenceScore": 97.6,
+        "flags": [
+          "repeat_opponent_flag",
+          "handedness_mismatch_flag"
+        ]
+      }
+    ],
+    "mlb-824506": [
+      {
+        "teamRole": "away",
+        "teamName": "Arizona Diamondbacks",
+        "pitcherName": "Zac Gallen",
+        "collapseRiskScore": 62,
+        "starterProfileScore": 39.4,
+        "handednessFragilityScore": 64,
+        "weatherFragilityScore": 76.1,
+        "pitchMixFitScore": 57.6,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "weather_profile_conflict_flag",
+          "handedness_mismatch_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Cincinnati Reds",
+        "pitcherName": "Andrew Abbott",
+        "collapseRiskScore": 61.6,
+        "starterProfileScore": 38.9,
+        "handednessFragilityScore": 66,
+        "weatherFragilityScore": 74.6,
+        "pitchMixFitScore": 63,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "handedness_mismatch_flag"
+        ]
+      }
+    ],
+    "mlb-823615": [
+      {
+        "teamRole": "away",
+        "teamName": "Atlanta Braves",
+        "pitcherName": "Bryce Elder",
+        "collapseRiskScore": 46.6,
+        "starterProfileScore": 54.1,
+        "handednessFragilityScore": 27.8,
+        "weatherFragilityScore": 71.8,
+        "pitchMixFitScore": 54.9,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "New York Mets",
+        "pitcherName": "Freddy Peralta",
+        "collapseRiskScore": 55.9,
+        "starterProfileScore": 45.5,
+        "handednessFragilityScore": 51.1,
+        "weatherFragilityScore": 73.2,
+        "pitchMixFitScore": 58,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      }
+    ],
+    "mlb-824099": [
+      {
+        "teamRole": "away",
+        "teamName": "Houston Astros",
+        "pitcherName": "Spencer Arrighetti",
+        "collapseRiskScore": 41.4,
+        "starterProfileScore": 59.4,
+        "handednessFragilityScore": 24.5,
+        "weatherFragilityScore": 43,
+        "pitchMixFitScore": 51.9,
+        "confidenceScore": 97.6,
+        "flags": []
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Kansas City Royals",
+        "pitcherName": "Stephen Kolek",
+        "collapseRiskScore": 46.7,
+        "starterProfileScore": 51,
+        "handednessFragilityScore": 53.7,
+        "weatherFragilityScore": 43,
+        "pitchMixFitScore": 54,
+        "confidenceScore": 95,
+        "flags": []
+      }
+    ],
+    "mlb-824586": [
+      {
+        "teamRole": "away",
+        "teamName": "Los Angeles Dodgers",
+        "pitcherName": "Emmet Sheehan",
+        "collapseRiskScore": 60.7,
+        "starterProfileScore": 43.1,
+        "handednessFragilityScore": 58.3,
+        "weatherFragilityScore": 58.4,
+        "pitchMixFitScore": 60,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Chicago White Sox",
+        "pitcherName": "Erick Fedde",
+        "collapseRiskScore": 60.5,
+        "starterProfileScore": 39,
+        "handednessFragilityScore": 72,
+        "weatherFragilityScore": 58.4,
+        "pitchMixFitScore": 63.3,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "opener_or_bulk_primary_flag",
+          "handedness_mismatch_flag"
+        ]
+      }
+    ],
+    "mlb-823777": [
+      {
+        "teamRole": "away",
+        "teamName": "Philadelphia Phillies",
+        "pitcherName": "Cristopher Sánchez",
+        "collapseRiskScore": 46.9,
+        "starterProfileScore": 54.6,
+        "handednessFragilityScore": 38.6,
+        "weatherFragilityScore": 42.2,
+        "pitchMixFitScore": 57.9,
+        "confidenceScore": 97.6,
+        "flags": []
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Milwaukee Brewers",
+        "pitcherName": "Kyle Harrison",
+        "collapseRiskScore": 45.6,
+        "starterProfileScore": 54.5,
+        "handednessFragilityScore": 42.2,
+        "weatherFragilityScore": 42.2,
+        "pitchMixFitScore": 58,
+        "confidenceScore": 97.6,
+        "flags": []
+      }
+    ],
+    "mlb-823693": [
+      {
+        "teamRole": "away",
+        "teamName": "St. Louis Cardinals",
+        "pitcherName": "Michael McGreevy",
+        "collapseRiskScore": 51.1,
+        "starterProfileScore": 49.1,
+        "handednessFragilityScore": 44.7,
+        "weatherFragilityScore": 64.6,
+        "pitchMixFitScore": 55,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Minnesota Twins",
+        "pitcherName": "Taj Bradley",
+        "collapseRiskScore": 58.6,
+        "starterProfileScore": 41,
+        "handednessFragilityScore": 67.7,
+        "weatherFragilityScore": 64.6,
+        "pitchMixFitScore": 65,
+        "confidenceScore": 97.6,
+        "flags": [
+          "handedness_mismatch_flag",
+          "pitch_mix_lineup_mismatch_flag"
+        ]
+      }
+    ],
+    "mlb-824994": [
+      {
+        "teamRole": "away",
+        "teamName": "Colorado Rockies",
+        "pitcherName": "Tomoyuki Sugano",
+        "collapseRiskScore": 59.1,
+        "starterProfileScore": 42.3,
+        "handednessFragilityScore": 58.6,
+        "weatherFragilityScore": 66,
+        "pitchMixFitScore": 58.1,
+        "confidenceScore": 98,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Athletics",
+        "pitcherName": "Jeffrey Springs",
+        "collapseRiskScore": 52.5,
+        "starterProfileScore": 50.1,
+        "handednessFragilityScore": 39.3,
+        "weatherFragilityScore": 66.8,
+        "pitchMixFitScore": 51,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-823212": [
+      {
+        "teamRole": "away",
+        "teamName": "Chicago Cubs",
+        "pitcherName": "Colin Rea",
+        "collapseRiskScore": 58.8,
+        "starterProfileScore": 43.3,
+        "handednessFragilityScore": 59.3,
+        "weatherFragilityScore": 51.9,
+        "pitchMixFitScore": 60.1,
+        "confidenceScore": 97.6,
+        "flags": [
+          "opener_or_bulk_primary_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "San Francisco Giants",
+        "pitcherName": "Logan Webb",
+        "collapseRiskScore": 51.9,
+        "starterProfileScore": 48.9,
+        "handednessFragilityScore": 50.6,
+        "weatherFragilityScore": 51.9,
+        "pitchMixFitScore": 55.1,
+        "confidenceScore": 97.6,
+        "flags": []
+      }
+    ],
+    "mlb-824021": [
+      {
+        "teamRole": "away",
+        "teamName": "Tampa Bay Rays",
+        "pitcherName": "Ian Seymour",
+        "collapseRiskScore": 57,
+        "starterProfileScore": 47.3,
+        "handednessFragilityScore": 46,
+        "weatherFragilityScore": 65.5,
+        "pitchMixFitScore": 54.4,
+        "confidenceScore": 95,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "opener_or_bulk_primary_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Los Angeles Angels",
+        "pitcherName": "Grayson Rodriguez",
+        "collapseRiskScore": 67.2,
+        "starterProfileScore": 36.4,
+        "handednessFragilityScore": 74.6,
+        "weatherFragilityScore": 64.6,
+        "pitchMixFitScore": 60,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "handedness_mismatch_flag",
+          "starter_collapse_risk_flag"
+        ]
+      }
+    ],
+    "mlb-824751": [
+      {
+        "teamRole": "away",
+        "teamName": "Texas Rangers",
+        "pitcherName": "Nathan Eovaldi",
+        "collapseRiskScore": 52.3,
+        "starterProfileScore": 50.3,
+        "handednessFragilityScore": 36.9,
+        "weatherFragilityScore": 73.6,
+        "pitchMixFitScore": 52.6,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Boston Red Sox",
+        "pitcherName": "Connelly Early",
+        "collapseRiskScore": 56.3,
+        "starterProfileScore": 45,
+        "handednessFragilityScore": 53.5,
+        "weatherFragilityScore": 72.1,
+        "pitchMixFitScore": 57.8,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag"
+        ]
+      }
+    ]
+  }
+}

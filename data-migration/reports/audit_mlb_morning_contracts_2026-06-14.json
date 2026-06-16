@@ -1,8 +1,28 @@
 {
   "audit": "mlb-morning-contracts",
   "date": "2026-06-14",
-  "generatedAt": "2026-06-14T16:06:25.995Z",
-  "gameCount": 15,
-  "propCount": 653,
-  "failures": []
+  "generatedAt": "2026-06-15T18:14:18.014Z",
+  "status": "fail",
+  "gameCount": 14,
+  "propCount": 691,
+  "failureCount": 2,
+  "failures": [
+    {
+      "failure": "prediction-eligibility-failed",
+      "gameId": "astros-royals",
+      "title": "Astros @ Royals",
+      "hardFailures": [
+        "pitch-fit-hitters-missing",
+        "hitter-handedness-splits-missing"
+      ]
+    },
+    {
+      "failure": "prediction-eligibility-failed",
+      "gameId": "rays-angels",
+      "title": "Rays @ Angels",
+      "hardFailures": [
+        "pitch-fit-hitters-missing"
+      ]
+    }
+  ]
 }

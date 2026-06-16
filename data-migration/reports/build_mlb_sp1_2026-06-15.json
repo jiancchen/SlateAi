@@ -1,0 +1,330 @@
+{
+  "build": "mlb-starter-profile-addendum",
+  "modelVersion": "MLB-SP1.2026-06-15.v0.1",
+  "date": "2026-06-15",
+  "generatedAt": "2026-06-15T21:51:48.638Z",
+  "expectedProfiles": 20,
+  "insertedProfiles": 20,
+  "sourceStatus": "success",
+  "warnings": [],
+  "byGame": {
+    "mlb-823452": [
+      {
+        "teamRole": "away",
+        "teamName": "Miami Marlins",
+        "pitcherName": "Ryan Gusto",
+        "collapseRiskScore": 58.7,
+        "starterProfileScore": 45.9,
+        "handednessFragilityScore": 49,
+        "weatherFragilityScore": 52.7,
+        "pitchMixFitScore": 60.2,
+        "confidenceScore": 98,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "opener_or_bulk_primary_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Philadelphia Phillies",
+        "pitcherName": "Zack Wheeler",
+        "collapseRiskScore": 45.9,
+        "starterProfileScore": 55.7,
+        "handednessFragilityScore": 33.1,
+        "weatherFragilityScore": 52.7,
+        "pitchMixFitScore": 51.4,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "repeat_opponent_flag"
+        ]
+      }
+    ],
+    "mlb-822724": [
+      {
+        "teamRole": "away",
+        "teamName": "Kansas City Royals",
+        "pitcherName": "Mitch Spence",
+        "collapseRiskScore": 65.8,
+        "starterProfileScore": 33.5,
+        "handednessFragilityScore": 94,
+        "weatherFragilityScore": 47.1,
+        "pitchMixFitScore": 62.5,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "handedness_mismatch_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Washington Nationals",
+        "pitcherName": "Andrew Alvarez",
+        "collapseRiskScore": 53.5,
+        "starterProfileScore": 49.1,
+        "handednessFragilityScore": 49.3,
+        "weatherFragilityScore": 47.1,
+        "pitchMixFitScore": 55.6,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag"
+        ]
+      }
+    ],
+    "mlb-824505": [
+      {
+        "teamRole": "away",
+        "teamName": "New York Mets",
+        "pitcherName": "Tobias Myers",
+        "collapseRiskScore": 58.1,
+        "starterProfileScore": 42.9,
+        "handednessFragilityScore": 62.5,
+        "weatherFragilityScore": 69.2,
+        "pitchMixFitScore": 53.8,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Cincinnati Reds",
+        "pitcherName": "Chase Burns",
+        "collapseRiskScore": 51.7,
+        "starterProfileScore": 50.7,
+        "handednessFragilityScore": 39,
+        "weatherFragilityScore": 69.2,
+        "pitchMixFitScore": 57.3,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "repeat_opponent_flag"
+        ]
+      }
+    ],
+    "mlb-823046": [
+      {
+        "teamRole": "away",
+        "teamName": "San Diego Padres",
+        "pitcherName": "Lucas Giolito",
+        "collapseRiskScore": 58.1,
+        "starterProfileScore": 43,
+        "handednessFragilityScore": 58.2,
+        "weatherFragilityScore": 60.6,
+        "pitchMixFitScore": 60.8,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "St. Louis Cardinals",
+        "pitcherName": "Dustin May",
+        "collapseRiskScore": 48.2,
+        "starterProfileScore": 55.3,
+        "handednessFragilityScore": 20.5,
+        "weatherFragilityScore": 60.6,
+        "pitchMixFitScore": 58.9,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "repeat_opponent_flag"
+        ]
+      }
+    ],
+    "mlb-824666": [
+      {
+        "teamRole": "away",
+        "teamName": "Colorado Rockies",
+        "pitcherName": "Michael Lorenzen",
+        "collapseRiskScore": 66.9,
+        "starterProfileScore": 35.6,
+        "handednessFragilityScore": 76.8,
+        "weatherFragilityScore": 64.7,
+        "pitchMixFitScore": 61.5,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "high_hrforce_fragility_flag",
+          "handedness_mismatch_flag",
+          "starter_collapse_risk_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Chicago Cubs",
+        "pitcherName": "Shota Imanaga",
+        "collapseRiskScore": 52.4,
+        "starterProfileScore": 49.4,
+        "handednessFragilityScore": 45.4,
+        "weatherFragilityScore": 64.9,
+        "pitchMixFitScore": 53.4,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-822887": [
+      {
+        "teamRole": "away",
+        "teamName": "Minnesota Twins",
+        "pitcherName": "Mike Paredes",
+        "collapseRiskScore": 42.1,
+        "starterProfileScore": 59.2,
+        "handednessFragilityScore": 24,
+        "weatherFragilityScore": 32.8,
+        "pitchMixFitScore": 53.8,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "opener_or_bulk_primary_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Texas Rangers",
+        "pitcherName": "MacKenzie Gore",
+        "collapseRiskScore": 48,
+        "starterProfileScore": 52.6,
+        "handednessFragilityScore": 49.4,
+        "weatherFragilityScore": 32.8,
+        "pitchMixFitScore": 53.9,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag"
+        ]
+      }
+    ],
+    "mlb-824181": [
+      {
+        "teamRole": "away",
+        "teamName": "Detroit Tigers",
+        "pitcherName": "Troy Melton",
+        "collapseRiskScore": 51.2,
+        "starterProfileScore": 48,
+        "handednessFragilityScore": 54.5,
+        "weatherFragilityScore": 49,
+        "pitchMixFitScore": 55.6,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Houston Astros",
+        "pitcherName": "Kai-Wei Teng",
+        "collapseRiskScore": 54.8,
+        "starterProfileScore": 45.2,
+        "handednessFragilityScore": 62,
+        "weatherFragilityScore": 49,
+        "pitchMixFitScore": 58.7,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag"
+        ]
+      }
+    ],
+    "mlb-825071": [
+      {
+        "teamRole": "away",
+        "teamName": "Los Angeles Angels",
+        "pitcherName": "Walbert Ureña",
+        "collapseRiskScore": 46.1,
+        "starterProfileScore": 55.7,
+        "handednessFragilityScore": 30.4,
+        "weatherFragilityScore": 48,
+        "pitchMixFitScore": 55.2,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Arizona Diamondbacks",
+        "pitcherName": "Ryne Nelson",
+        "collapseRiskScore": 55,
+        "starterProfileScore": 45.4,
+        "handednessFragilityScore": 57.7,
+        "weatherFragilityScore": 48,
+        "pitchMixFitScore": 60,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag"
+        ]
+      }
+    ],
+    "mlb-824993": [
+      {
+        "teamRole": "away",
+        "teamName": "Pittsburgh Pirates",
+        "pitcherName": "Jared Jones",
+        "collapseRiskScore": 60.2,
+        "starterProfileScore": 40,
+        "handednessFragilityScore": 70.1,
+        "weatherFragilityScore": 72.7,
+        "pitchMixFitScore": 59.1,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "high_hrforce_fragility_flag",
+          "weather_profile_conflict_flag",
+          "handedness_mismatch_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Athletics",
+        "pitcherName": "J.T. Ginn",
+        "collapseRiskScore": 57,
+        "starterProfileScore": 43.7,
+        "handednessFragilityScore": 60.4,
+        "weatherFragilityScore": 67.6,
+        "pitchMixFitScore": 57.9,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-823938": [
+      {
+        "teamRole": "away",
+        "teamName": "Tampa Bay Rays",
+        "pitcherName": "Nick Martinez",
+        "collapseRiskScore": 58.3,
+        "starterProfileScore": 39.9,
+        "handednessFragilityScore": 67.5,
+        "weatherFragilityScore": 72.1,
+        "pitchMixFitScore": 61.9,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "high_hrforce_fragility_flag",
+          "handedness_mismatch_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Los Angeles Dodgers",
+        "pitcherName": "Eric Lauer",
+        "collapseRiskScore": 58.7,
+        "starterProfileScore": 43.5,
+        "handednessFragilityScore": 55.5,
+        "weatherFragilityScore": 71.9,
+        "pitchMixFitScore": 53.1,
+        "confidenceScore": 98,
+        "flags": [
+          "opener_or_bulk_primary_flag",
+          "repeat_opponent_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ]
+  }
+}

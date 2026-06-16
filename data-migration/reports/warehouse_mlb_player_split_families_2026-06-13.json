@@ -1,0 +1,21 @@
+{
+  "warehouse": "mlb-player-split-families",
+  "date": "2026-06-13",
+  "generatedAt": "2026-06-15T17:44:28.278Z",
+  "table": "mlb_player_split_family_snapshots",
+  "lineupPath": "data-private/lineups/mlb/2026-06-13-lineup-board.json",
+  "hitter": {
+    "players": 270,
+    "rows": 538
+  },
+  "pitcher": {
+    "pitchers": 29,
+    "rows": 174,
+    "familyCounts": {
+      "home_away": 58,
+      "day_night": 58,
+      "handedness": 58
+    }
+  },
+  "inserted": 712
+}

@@ -1,0 +1,63 @@
+{
+  "run": "mlb-sp1-shadow-calibration",
+  "runId": "mlb-sp1-calibration-2026-06-14-20260615173636",
+  "slug": "2026-06-14",
+  "startDate": "2026-06-14",
+  "endDate": "2026-06-14",
+  "dates": [
+    "2026-06-14"
+  ],
+  "generatedAt": "2026-06-15T17:36:54.342Z",
+  "dryRun": false,
+  "continueOnError": false,
+  "skipped": {
+    "splits": false,
+    "splitAudit": false,
+    "build": false,
+    "sp1Audit": false,
+    "backtest": false
+  },
+  "backtestReport": "data-migration/reports/backtest_mlb_sp1_2026-06-14.json",
+  "steps": [
+    {
+      "label": "Warehouse canonical split families 2026-06-14",
+      "command": "npm run data:warehouse:mlb-player-split-families -- --date 2026-06-14",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:36:36.825Z",
+      "finishedAt": "2026-06-15T17:36:48.350Z",
+      "durationMs": 11525
+    },
+    {
+      "label": "Audit canonical split families 2026-06-14",
+      "command": "npm run data:audit:mlb-player-split-families -- --date 2026-06-14",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:36:48.350Z",
+      "finishedAt": "2026-06-15T17:36:48.534Z",
+      "durationMs": 184
+    },
+    {
+      "label": "Build MLB-SP1 profiles 2026-06-14",
+      "command": "npm run data:build:mlb-sp1 -- --date 2026-06-14",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:36:48.534Z",
+      "finishedAt": "2026-06-15T17:36:52.538Z",
+      "durationMs": 4004
+    },
+    {
+      "label": "Audit MLB-SP1 profiles 2026-06-14",
+      "command": "npm run data:audit:mlb-sp1 -- --date 2026-06-14",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:36:52.538Z",
+      "finishedAt": "2026-06-15T17:36:52.944Z",
+      "durationMs": 406
+    },
+    {
+      "label": "Backtest MLB-SP1 shadow 2026-06-14",
+      "command": "npm run data:backtest:mlb-sp1 -- --start-date 2026-06-14 --end-date 2026-06-14",
+      "status": "passed",
+      "startedAt": "2026-06-15T17:36:52.944Z",
+      "finishedAt": "2026-06-15T17:36:54.341Z",
+      "durationMs": 1397
+    }
+  ]
+}

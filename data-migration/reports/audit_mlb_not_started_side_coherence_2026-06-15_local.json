@@ -1,0 +1,487 @@
+{
+  "audit": "mlb-not-started-side-coherence",
+  "date": "2026-06-15",
+  "base": "local",
+  "generatedAt": "2026-06-15T21:54:17.516Z",
+  "cutoffMinutes": 894,
+  "gamesAudited": 10,
+  "status": "pass",
+  "hardFailures": [],
+  "warnings": [],
+  "games": [
+    {
+      "gameId": "marlins-phillies",
+      "title": "Marlins @ Phillies",
+      "start": "3:40 PM PT",
+      "startMinutes": 940,
+      "pick": "Phillies",
+      "tier": "Swingy",
+      "confidence": 67,
+      "modelEdge": 17.3,
+      "volatility": 89,
+      "moneylineShape": {
+        "grade": "Separated ML shape",
+        "runDiff": 1.6,
+        "projectedTotalRuns": 5.6,
+        "confidence": 67
+      },
+      "projectedRuns": {
+        "away": 2,
+        "home": 3.6
+      },
+      "projectedHits": {
+        "away": 5.2,
+        "home": 8.5
+      },
+      "phases": {
+        "full": "Phillies",
+        "first5": "Phillies",
+        "late": "Phillies",
+        "bridge": "Phillies"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": false,
+        "promoteFullGameSide": true,
+        "confidenceFloor": 62,
+        "bestExpression": "No taxed ML; require early conversion or better live price",
+        "reasons": [
+          "Phillies owns full game, first five, late, and bridge phases",
+          "Phillies projects 1.6 runs better",
+          "Phillies owns a 3.3-hit edge"
+        ]
+      },
+      "sideCoherencePromoteFlag": true,
+      "sideCoherencePassFlag": false,
+      "tierOnePassFlag": false,
+      "tierOneRawPassFlag": false,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": [
+        "separated-all-phase-side-promoted"
+      ]
+    },
+    {
+      "gameId": "royals-nationals",
+      "title": "Royals @ Nationals",
+      "start": "3:45 PM PT",
+      "startMinutes": 945,
+      "pick": "Nationals",
+      "tier": "Pass",
+      "confidence": 52,
+      "modelEdge": 10.5,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Thin ML shape",
+        "runDiff": 1,
+        "projectedTotalRuns": 11.4,
+        "confidence": 52
+      },
+      "projectedRuns": {
+        "away": 5.2,
+        "home": 6.2
+      },
+      "projectedHits": {
+        "away": 10.9,
+        "home": 11.8
+      },
+      "phases": {
+        "full": "Nationals",
+        "first5": "Nationals",
+        "late": "Royals",
+        "bridge": "Nationals"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": false,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "Nationals first-five side",
+        "reasons": []
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": false,
+      "tierOnePassFlag": true,
+      "tierOneRawPassFlag": true,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "gameId": "mets-reds",
+      "title": "Mets @ Reds",
+      "start": "4:10 PM PT",
+      "startMinutes": 970,
+      "pick": "Reds",
+      "tier": "Pass",
+      "confidence": 52,
+      "modelEdge": 4,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Thin ML shape",
+        "runDiff": 0.1,
+        "projectedTotalRuns": 7.3,
+        "confidence": 52
+      },
+      "projectedRuns": {
+        "away": 3.6,
+        "home": 3.7
+      },
+      "projectedHits": {
+        "away": 7.5,
+        "home": 6.7
+      },
+      "phases": {
+        "full": "Mets",
+        "first5": "Reds",
+        "late": "Mets",
+        "bridge": "Mets"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": false,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "Reds first-five side",
+        "reasons": []
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": false,
+      "tierOnePassFlag": true,
+      "tierOneRawPassFlag": true,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "gameId": "padres-cardinals",
+      "title": "Padres @ Cardinals",
+      "start": "4:45 PM PT",
+      "startMinutes": 1005,
+      "pick": "Cardinals",
+      "tier": "Pass",
+      "confidence": 52,
+      "modelEdge": 5.9,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Separated ML shape",
+        "runDiff": 3.2,
+        "projectedTotalRuns": 9.8,
+        "confidence": 52
+      },
+      "projectedRuns": {
+        "away": 3.3,
+        "home": 6.5
+      },
+      "projectedHits": {
+        "away": 7.8,
+        "home": 12
+      },
+      "phases": {
+        "full": "Cardinals",
+        "first5": "Cardinals",
+        "late": "Cardinals",
+        "bridge": "Cardinals"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": false,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
+        "reasons": []
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": false,
+      "tierOnePassFlag": true,
+      "tierOneRawPassFlag": true,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "gameId": "rockies-cubs",
+      "title": "Rockies @ Cubs",
+      "start": "5:05 PM PT",
+      "startMinutes": 1025,
+      "pick": "Cubs",
+      "tier": "Pass",
+      "confidence": 52,
+      "modelEdge": 4.5,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Thin ML shape",
+        "runDiff": 0.8,
+        "projectedTotalRuns": 10.8,
+        "confidence": 52
+      },
+      "projectedRuns": {
+        "away": 5,
+        "home": 5.8
+      },
+      "projectedHits": {
+        "away": 10.2,
+        "home": 11.9
+      },
+      "phases": {
+        "full": "Cubs",
+        "first5": "Cubs",
+        "late": "Rockies",
+        "bridge": "Rockies"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": false,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "No taxed ML; require early conversion or better live price",
+        "reasons": []
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": false,
+      "tierOnePassFlag": true,
+      "tierOneRawPassFlag": true,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "gameId": "twins-rangers",
+      "title": "Twins @ Rangers",
+      "start": "5:05 PM PT",
+      "startMinutes": 1025,
+      "pick": "Rangers",
+      "tier": "Swingy",
+      "confidence": 53,
+      "modelEdge": 5.1,
+      "volatility": 91,
+      "moneylineShape": {
+        "grade": "Thin ML shape",
+        "runDiff": 0,
+        "projectedTotalRuns": 6.6,
+        "confidence": 53
+      },
+      "projectedRuns": {
+        "away": 3.3,
+        "home": 3.3
+      },
+      "projectedHits": {
+        "away": 7.7,
+        "home": 7.1
+      },
+      "phases": {
+        "full": "Twins",
+        "first5": "Twins",
+        "late": "Rangers",
+        "bridge": "Rangers"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": false,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "Live side after starter exit",
+        "reasons": []
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": false,
+      "tierOnePassFlag": false,
+      "tierOneRawPassFlag": false,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "gameId": "tigers-astros",
+      "title": "Tigers @ Astros",
+      "start": "5:10 PM PT",
+      "startMinutes": 1030,
+      "pick": "Tigers",
+      "tier": "Swingy",
+      "confidence": 64,
+      "modelEdge": 9.9,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Separated ML shape",
+        "runDiff": 2.8,
+        "projectedTotalRuns": 8.6,
+        "confidence": 64
+      },
+      "projectedRuns": {
+        "away": 5.7,
+        "home": 2.9
+      },
+      "projectedHits": {
+        "away": 11,
+        "home": 6.8
+      },
+      "phases": {
+        "full": "Tigers",
+        "first5": "Tigers",
+        "late": "Tigers",
+        "bridge": "Tigers"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": false,
+        "promoteFullGameSide": true,
+        "confidenceFloor": 64,
+        "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
+        "reasons": [
+          "Tigers owns full game, first five, late, and bridge phases",
+          "Tigers projects 2.8 runs better",
+          "Tigers owns a 4.2-hit edge"
+        ]
+      },
+      "sideCoherencePromoteFlag": true,
+      "sideCoherencePassFlag": false,
+      "tierOnePassFlag": false,
+      "tierOneRawPassFlag": true,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": [
+        "separated-all-phase-side-promoted"
+      ]
+    },
+    {
+      "gameId": "angels-diamondbacks",
+      "title": "Angels @ Diamondbacks",
+      "start": "6:40 PM PT",
+      "startMinutes": 1120,
+      "pick": "Angels",
+      "tier": "Pass",
+      "confidence": 52,
+      "modelEdge": 0,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Thin ML shape",
+        "runDiff": 0.4,
+        "projectedTotalRuns": 8.2,
+        "confidence": 52
+      },
+      "projectedRuns": {
+        "away": 4.3,
+        "home": 3.9
+      },
+      "projectedHits": {
+        "away": 8.2,
+        "home": 8
+      },
+      "phases": {
+        "full": "Angels",
+        "first5": "Angels",
+        "late": "Diamondbacks",
+        "bridge": "Diamondbacks"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": true,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "Angels first-five side",
+        "reasons": [
+          "best expression is Angels first-five side",
+          "Angels does not own late or bridge phases",
+          "Angels is still sitting at the confidence floor",
+          "full-game model edge is thin (0)"
+        ]
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": true,
+      "tierOnePassFlag": true,
+      "tierOneRawPassFlag": true,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": []
+    },
+    {
+      "gameId": "pirates-athletics",
+      "title": "Pirates @ Athletics",
+      "start": "6:40 PM PT",
+      "startMinutes": 1120,
+      "pick": "Athletics",
+      "tier": "Pass",
+      "confidence": 52,
+      "modelEdge": 4,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Thin ML shape",
+        "runDiff": 1,
+        "projectedTotalRuns": 10,
+        "confidence": 52
+      },
+      "projectedRuns": {
+        "away": 4.5,
+        "home": 5.5
+      },
+      "projectedHits": {
+        "away": 8.9,
+        "home": 10.4
+      },
+      "phases": {
+        "full": "Athletics",
+        "first5": "Athletics",
+        "late": "Athletics",
+        "bridge": "Athletics"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": false,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "Full-game side only if early traffic appears; live entry preferred",
+        "reasons": []
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": false,
+      "tierOnePassFlag": true,
+      "tierOneRawPassFlag": true,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": [
+        "all-phases-owned-but-thin-ml-shape-pass"
+      ]
+    },
+    {
+      "gameId": "rays-dodgers",
+      "title": "Rays @ Dodgers",
+      "start": "7:10 PM PT",
+      "startMinutes": 1150,
+      "pick": "Rays",
+      "tier": "Pass",
+      "confidence": 52,
+      "modelEdge": 0.1,
+      "volatility": 92,
+      "moneylineShape": {
+        "grade": "Thin ML shape",
+        "runDiff": 0.4,
+        "projectedTotalRuns": 10.6,
+        "confidence": 52
+      },
+      "projectedRuns": {
+        "away": 5.5,
+        "home": 5.1
+      },
+      "projectedHits": {
+        "away": 10,
+        "home": 10.6
+      },
+      "phases": {
+        "full": "Dodgers",
+        "first5": "Rays",
+        "late": "Dodgers",
+        "bridge": "Dodgers"
+      },
+      "sideCoherenceGate": {
+        "demoteFullGameSide": true,
+        "promoteFullGameSide": false,
+        "confidenceFloor": null,
+        "bestExpression": "Rays first-five side",
+        "reasons": [
+          "best expression is Rays first-five side",
+          "Rays does not own late or bridge phases",
+          "Rays is still sitting at the confidence floor",
+          "full-game model edge is thin (0.6)"
+        ]
+      },
+      "sideCoherencePromoteFlag": false,
+      "sideCoherencePassFlag": true,
+      "tierOnePassFlag": true,
+      "tierOneRawPassFlag": true,
+      "hardFailures": [],
+      "warnings": [],
+      "notes": []
+    }
+  ]
+}

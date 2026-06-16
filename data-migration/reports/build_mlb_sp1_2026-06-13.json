@@ -1,0 +1,475 @@
+{
+  "build": "mlb-starter-profile-addendum",
+  "modelVersion": "MLB-SP1.2026-06-15.v0.1",
+  "date": "2026-06-13",
+  "generatedAt": "2026-06-15T17:44:33.923Z",
+  "expectedProfiles": 30,
+  "insertedProfiles": 30,
+  "sourceStatus": "success",
+  "warnings": [],
+  "byGame": {
+    "mlb-823694": [
+      {
+        "teamRole": "away",
+        "teamName": "St. Louis Cardinals",
+        "pitcherName": "Matthew Liberatore",
+        "collapseRiskScore": 54,
+        "starterProfileScore": 48.9,
+        "handednessFragilityScore": 40,
+        "weatherFragilityScore": 71,
+        "pitchMixFitScore": 54.3,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag",
+          "weather_profile_conflict_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Minnesota Twins",
+        "pitcherName": "Connor Prielipp",
+        "collapseRiskScore": 54.8,
+        "starterProfileScore": 47.2,
+        "handednessFragilityScore": 46.6,
+        "weatherFragilityScore": 73,
+        "pitchMixFitScore": 58.2,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "weather_profile_conflict_flag"
+        ]
+      }
+    ],
+    "mlb-822802": [
+      {
+        "teamRole": "away",
+        "teamName": "New York Yankees",
+        "pitcherName": "Cam Schlittler",
+        "collapseRiskScore": 45.3,
+        "starterProfileScore": 56.4,
+        "handednessFragilityScore": 23.8,
+        "weatherFragilityScore": 69.2,
+        "pitchMixFitScore": 53.6,
+        "confidenceScore": 97.6,
+        "flags": [
+          "repeat_opponent_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Toronto Blue Jays",
+        "pitcherName": "Kevin Gausman",
+        "collapseRiskScore": 53.5,
+        "starterProfileScore": 47.6,
+        "handednessFragilityScore": 49.5,
+        "weatherFragilityScore": 73.8,
+        "pitchMixFitScore": 52.8,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-823369": [
+      {
+        "teamRole": "away",
+        "teamName": "Miami Marlins",
+        "pitcherName": "Lake Bachar",
+        "collapseRiskScore": 55.4,
+        "starterProfileScore": 48.2,
+        "handednessFragilityScore": 46,
+        "weatherFragilityScore": 70.1,
+        "pitchMixFitScore": 53.1,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag",
+          "weather_profile_conflict_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Pittsburgh Pirates",
+        "pitcherName": "Bubba Chandler",
+        "collapseRiskScore": 55.5,
+        "starterProfileScore": 47,
+        "handednessFragilityScore": 48.1,
+        "weatherFragilityScore": 64.1,
+        "pitchMixFitScore": 56.2,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-824828": [
+      {
+        "teamRole": "away",
+        "teamName": "San Diego Padres",
+        "pitcherName": "Randy Vásquez",
+        "collapseRiskScore": 57.5,
+        "starterProfileScore": 43.5,
+        "handednessFragilityScore": 52.9,
+        "weatherFragilityScore": 73.2,
+        "pitchMixFitScore": 61.1,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Baltimore Orioles",
+        "pitcherName": "Trey Gibson",
+        "collapseRiskScore": 53.9,
+        "starterProfileScore": 48.1,
+        "handednessFragilityScore": 30.8,
+        "weatherFragilityScore": 75.1,
+        "pitchMixFitScore": 58.5,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-822725": [
+      {
+        "teamRole": "away",
+        "teamName": "Seattle Mariners",
+        "pitcherName": "Luis Castillo",
+        "collapseRiskScore": 51.3,
+        "starterProfileScore": 51,
+        "handednessFragilityScore": 38.2,
+        "weatherFragilityScore": 60.6,
+        "pitchMixFitScore": 55.6,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Washington Nationals",
+        "pitcherName": "Cade Cavalli",
+        "collapseRiskScore": 53.2,
+        "starterProfileScore": 48.5,
+        "handednessFragilityScore": 48.4,
+        "weatherFragilityScore": 60.6,
+        "pitchMixFitScore": 54.5,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      }
+    ],
+    "mlb-824508": [
+      {
+        "teamRole": "away",
+        "teamName": "Arizona Diamondbacks",
+        "pitcherName": "Michael Soroka",
+        "collapseRiskScore": 52.4,
+        "starterProfileScore": 51.3,
+        "handednessFragilityScore": 32,
+        "weatherFragilityScore": 71.8,
+        "pitchMixFitScore": 54.1,
+        "confidenceScore": 97.6,
+        "flags": []
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Cincinnati Reds",
+        "pitcherName": "Rhett Lowder",
+        "collapseRiskScore": 54.8,
+        "starterProfileScore": 49,
+        "handednessFragilityScore": 35.6,
+        "weatherFragilityScore": 71.8,
+        "pitchMixFitScore": 54.3,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      }
+    ],
+    "mlb-823616": [
+      {
+        "teamRole": "away",
+        "teamName": "Atlanta Braves",
+        "pitcherName": "Martín Pérez",
+        "collapseRiskScore": 50.7,
+        "starterProfileScore": 52.6,
+        "handednessFragilityScore": 26.4,
+        "weatherFragilityScore": 68.3,
+        "pitchMixFitScore": 57,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "New York Mets",
+        "pitcherName": "Sean Manaea",
+        "collapseRiskScore": 58.4,
+        "starterProfileScore": 43.7,
+        "handednessFragilityScore": 60.5,
+        "weatherFragilityScore": 67.2,
+        "pitchMixFitScore": 53.5,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-824426": [
+      {
+        "teamRole": "away",
+        "teamName": "Detroit Tigers",
+        "pitcherName": "Tarik Skubal",
+        "collapseRiskScore": 48.4,
+        "starterProfileScore": 52.9,
+        "handednessFragilityScore": 37.7,
+        "weatherFragilityScore": 64.9,
+        "pitchMixFitScore": 52.5,
+        "confidenceScore": 95,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Cleveland Guardians",
+        "pitcherName": "Joey Cantillo",
+        "collapseRiskScore": 55.1,
+        "starterProfileScore": 46.7,
+        "handednessFragilityScore": 54.9,
+        "weatherFragilityScore": 66.7,
+        "pitchMixFitScore": 48.9,
+        "confidenceScore": 97.6,
+        "flags": [
+          "repeat_opponent_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-824587": [
+      {
+        "teamRole": "away",
+        "teamName": "Los Angeles Dodgers",
+        "pitcherName": "Yoshinobu Yamamoto",
+        "collapseRiskScore": 45.3,
+        "starterProfileScore": 55.9,
+        "handednessFragilityScore": 29.5,
+        "weatherFragilityScore": 53.5,
+        "pitchMixFitScore": 55.3,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Chicago White Sox",
+        "pitcherName": "Sean Burke",
+        "collapseRiskScore": 53.8,
+        "starterProfileScore": 45.7,
+        "handednessFragilityScore": 59.9,
+        "weatherFragilityScore": 53.5,
+        "pitchMixFitScore": 60.5,
+        "confidenceScore": 97.6,
+        "flags": []
+      }
+    ],
+    "mlb-824749": [
+      {
+        "teamRole": "away",
+        "teamName": "Texas Rangers",
+        "pitcherName": "Jacob deGrom",
+        "collapseRiskScore": 43.4,
+        "starterProfileScore": 59.1,
+        "handednessFragilityScore": 20.6,
+        "weatherFragilityScore": 59,
+        "pitchMixFitScore": 51.3,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Boston Red Sox",
+        "pitcherName": "Ranger Suarez",
+        "collapseRiskScore": 55.1,
+        "starterProfileScore": 46.5,
+        "handednessFragilityScore": 52.3,
+        "weatherFragilityScore": 59,
+        "pitchMixFitScore": 59,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      }
+    ],
+    "mlb-824100": [
+      {
+        "teamRole": "away",
+        "teamName": "Houston Astros",
+        "pitcherName": "Mike Burrows",
+        "collapseRiskScore": 55.2,
+        "starterProfileScore": 46.7,
+        "handednessFragilityScore": 48.6,
+        "weatherFragilityScore": 66.3,
+        "pitchMixFitScore": 54.1,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Kansas City Royals",
+        "pitcherName": "Noah Cameron",
+        "collapseRiskScore": 53.3,
+        "starterProfileScore": 47.7,
+        "handednessFragilityScore": 49.4,
+        "weatherFragilityScore": 65.6,
+        "pitchMixFitScore": 57.4,
+        "confidenceScore": 97.6,
+        "flags": [
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ],
+    "mlb-823776": [
+      {
+        "teamRole": "away",
+        "teamName": "Philadelphia Phillies",
+        "pitcherName": "Aaron Nola",
+        "collapseRiskScore": 60.2,
+        "starterProfileScore": 40.4,
+        "handednessFragilityScore": 78.6,
+        "weatherFragilityScore": 42.2,
+        "pitchMixFitScore": 60.5,
+        "confidenceScore": 97.6,
+        "flags": [
+          "handedness_mismatch_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Milwaukee Brewers",
+        "pitcherName": "Shane Drohan",
+        "collapseRiskScore": 43.7,
+        "starterProfileScore": 57.1,
+        "handednessFragilityScore": 29.9,
+        "weatherFragilityScore": 42.2,
+        "pitchMixFitScore": 55.3,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      }
+    ],
+    "mlb-823213": [
+      {
+        "teamRole": "away",
+        "teamName": "Chicago Cubs",
+        "pitcherName": "Ben Brown",
+        "collapseRiskScore": 45.1,
+        "starterProfileScore": 55.5,
+        "handednessFragilityScore": 29.7,
+        "weatherFragilityScore": 51.9,
+        "pitchMixFitScore": 61.1,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "San Francisco Giants",
+        "pitcherName": "Trevor McDonald",
+        "collapseRiskScore": 50.9,
+        "starterProfileScore": 51,
+        "handednessFragilityScore": 42.3,
+        "weatherFragilityScore": 51.9,
+        "pitchMixFitScore": 55.8,
+        "confidenceScore": 97.6,
+        "flags": []
+      }
+    ],
+    "mlb-824995": [
+      {
+        "teamRole": "away",
+        "teamName": "Colorado Rockies",
+        "pitcherName": "Kyle Freeland",
+        "collapseRiskScore": 72.9,
+        "starterProfileScore": 30,
+        "handednessFragilityScore": 82.6,
+        "weatherFragilityScore": 80.8,
+        "pitchMixFitScore": 67.5,
+        "confidenceScore": 98,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag",
+          "handedness_mismatch_flag",
+          "pitch_mix_lineup_mismatch_flag",
+          "starter_collapse_risk_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Athletics",
+        "pitcherName": "Joey Estes",
+        "collapseRiskScore": 49,
+        "starterProfileScore": 55.1,
+        "handednessFragilityScore": 12,
+        "weatherFragilityScore": 80.1,
+        "pitchMixFitScore": 57.7,
+        "confidenceScore": 71.6,
+        "flags": [
+          "high_hrforce_fragility_flag",
+          "extreme_hrforce_flag",
+          "stale_or_missing_source_flag"
+        ]
+      }
+    ],
+    "mlb-824019": [
+      {
+        "teamRole": "away",
+        "teamName": "Tampa Bay Rays",
+        "pitcherName": "Griffin Jax",
+        "collapseRiskScore": 55.2,
+        "starterProfileScore": 46.5,
+        "handednessFragilityScore": 51.5,
+        "weatherFragilityScore": 64.7,
+        "pitchMixFitScore": 55.7,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      },
+      {
+        "teamRole": "home",
+        "teamName": "Los Angeles Angels",
+        "pitcherName": "José Soriano",
+        "collapseRiskScore": 52.3,
+        "starterProfileScore": 49.3,
+        "handednessFragilityScore": 44.8,
+        "weatherFragilityScore": 64.6,
+        "pitchMixFitScore": 54.8,
+        "confidenceScore": 97.6,
+        "flags": [
+          "tiny_sample_pitcher_flag",
+          "high_hrforce_fragility_flag"
+        ]
+      }
+    ]
+  }
+}

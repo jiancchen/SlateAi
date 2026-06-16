@@ -1,0 +1,13 @@
+{
+  "audit": "mlb-started-game-locks",
+  "mode": "audit",
+  "date": "2026-06-14",
+  "source": "slate",
+  "generatedAt": "2026-06-15T15:16:18.848Z",
+  "cutoffMinutes": 1440,
+  "status": "pass",
+  "slateSource": "web/public/data/slates/2026-06-14",
+  "lockCount": 14,
+  "hardFailures": [],
+  "warnings": []
+}

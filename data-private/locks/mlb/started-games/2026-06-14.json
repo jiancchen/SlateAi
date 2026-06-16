@@ -1,0 +1,162 @@
+{
+  "audit": "mlb-started-game-locks",
+  "date": "2026-06-14",
+  "updatedAt": "2026-06-15T15:16:11.990Z",
+  "lockCount": 14,
+  "locks": [
+    {
+      "gameId": "marlins-pirates",
+      "gamePk": 823368,
+      "title": "Marlins @ Pirates",
+      "start": "9:15 AM PT",
+      "startMinutes": 555,
+      "summaryHash": "2508d805f4eb7fdd3489cb0a0783050ad0a352e7af3b58e225cefe039aa8def5",
+      "detailHash": "2508d805f4eb7fdd3489cb0a0783050ad0a352e7af3b58e225cefe039aa8def5",
+      "lockedAt": "2026-06-15T15:15:20.083Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "mariners-nationals",
+      "gamePk": 822722,
+      "title": "Mariners @ Nationals",
+      "start": "10:35 AM PT",
+      "startMinutes": 635,
+      "summaryHash": "e03f62302ec615493be258430de57b7a4ddad4b92aed37bc782047a859578a52",
+      "detailHash": "e03f62302ec615493be258430de57b7a4ddad4b92aed37bc782047a859578a52",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "padres-orioles",
+      "gamePk": 824823,
+      "title": "Padres @ Orioles",
+      "start": "10:35 AM PT",
+      "startMinutes": 635,
+      "summaryHash": "4ef8520bfe0697e42b4bd2357a18c0490b7060c0ddb3fcde3b92b1be497f9ec4",
+      "detailHash": "4ef8520bfe0697e42b4bd2357a18c0490b7060c0ddb3fcde3b92b1be497f9ec4",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "yankees-blue-jays",
+      "gamePk": 822801,
+      "title": "Yankees @ Blue Jays",
+      "start": "10:37 AM PT",
+      "startMinutes": 637,
+      "summaryHash": "86b31086d13d277d5c7e5cb4d7662dbc3c43fb5ed5b01f8e25ee91ea507dcc24",
+      "detailHash": "86b31086d13d277d5c7e5cb4d7662dbc3c43fb5ed5b01f8e25ee91ea507dcc24",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "braves-mets",
+      "gamePk": 823615,
+      "title": "Braves @ Mets",
+      "start": "10:40 AM PT",
+      "startMinutes": 640,
+      "summaryHash": "c21d7ba0106b46d25d1699c60637dd89ebb15a5eb9f4d582517d338ba4f28bf8",
+      "detailHash": "c21d7ba0106b46d25d1699c60637dd89ebb15a5eb9f4d582517d338ba4f28bf8",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "diamondbacks-reds",
+      "gamePk": 824506,
+      "title": "Diamondbacks @ Reds",
+      "start": "10:40 AM PT",
+      "startMinutes": 640,
+      "summaryHash": "354cca51d89541adfb91cf927f3837758aa25223e9281efdffc96cb634948916",
+      "detailHash": "354cca51d89541adfb91cf927f3837758aa25223e9281efdffc96cb634948916",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "astros-royals",
+      "gamePk": 824099,
+      "title": "Astros @ Royals",
+      "start": "11:10 AM PT",
+      "startMinutes": 670,
+      "summaryHash": "6e43e28405f7e440de4d24cba92d384080ba8aaa42517593d8072e114218adcf",
+      "detailHash": "6e43e28405f7e440de4d24cba92d384080ba8aaa42517593d8072e114218adcf",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "cardinals-twins",
+      "gamePk": 823693,
+      "title": "Cardinals @ Twins",
+      "start": "11:10 AM PT",
+      "startMinutes": 670,
+      "summaryHash": "3fb10a00154605268b533e5fa70626f022b6f89009ad5984767d57ba062c8d0d",
+      "detailHash": "3fb10a00154605268b533e5fa70626f022b6f89009ad5984767d57ba062c8d0d",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "dodgers-white-sox",
+      "gamePk": 824586,
+      "title": "Dodgers @ White Sox",
+      "start": "11:10 AM PT",
+      "startMinutes": 670,
+      "summaryHash": "8b71ee991d468219fe82cb7717f73dbf49fbfc83d2157ec0ad5eaed6dcce0429",
+      "detailHash": "8b71ee991d468219fe82cb7717f73dbf49fbfc83d2157ec0ad5eaed6dcce0429",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "phillies-brewers",
+      "gamePk": 823777,
+      "title": "Phillies @ Brewers",
+      "start": "11:10 AM PT",
+      "startMinutes": 670,
+      "summaryHash": "92874eb96a78944d9d3ac902f9a11e952f970fb87d011c5ba69a3f48a5551df6",
+      "detailHash": "92874eb96a78944d9d3ac902f9a11e952f970fb87d011c5ba69a3f48a5551df6",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "rockies-athletics",
+      "gamePk": 824994,
+      "title": "Rockies @ Athletics",
+      "start": "12:05 PM PT",
+      "startMinutes": 725,
+      "summaryHash": "629803e3c8e56099f60dc119a3c9317cf695460df7852f83dac4b39833bf2454",
+      "detailHash": "629803e3c8e56099f60dc119a3c9317cf695460df7852f83dac4b39833bf2454",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "cubs-giants",
+      "gamePk": 823212,
+      "title": "Cubs @ Giants",
+      "start": "12:10 PM PT",
+      "startMinutes": 730,
+      "summaryHash": "0038053974286338e390f2f073c1852f27fb75a6eb19a14825c5c0da98e2cc2b",
+      "detailHash": "0038053974286338e390f2f073c1852f27fb75a6eb19a14825c5c0da98e2cc2b",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "rays-angels",
+      "gamePk": 824021,
+      "title": "Rays @ Angels",
+      "start": "1:07 PM PT",
+      "startMinutes": 787,
+      "summaryHash": "11d08c959be41e34ec4c87db39a2148ec966316b3b63a15d57358b51a1d57a4b",
+      "detailHash": "11d08c959be41e34ec4c87db39a2148ec966316b3b63a15d57358b51a1d57a4b",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    },
+    {
+      "gameId": "rangers-red-sox",
+      "gamePk": 824751,
+      "title": "Rangers @ Red Sox",
+      "start": "4:20 PM PT",
+      "startMinutes": 980,
+      "summaryHash": "5d88bebb48a2551531efff4d8e123ed83eee3350024f5534a2dac008ed44b016",
+      "detailHash": "5d88bebb48a2551531efff4d8e123ed83eee3350024f5534a2dac008ed44b016",
+      "lockedAt": "2026-06-15T15:15:20.084Z",
+      "source": "web/public/data/slates/2026-06-14"
+    }
+  ]
+}
